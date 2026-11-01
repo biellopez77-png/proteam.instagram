@@ -2,6 +2,7 @@
 
 | Fecha | Pieza | Tipo | Resultado |
 | --- | --- | --- | --- |
+| 2026-11-01 13:24 | Ejecución programada | — | nada en ventana (siguiente: 001 reel, 2 nov 13:30) |
 | 2026-11-01 11:30 | Prueba: stories/s7-a.jpg | story | publicado, media_id 18122012644959227 |
 | 2026-11-01 10:58 | Ejecución programada | — | nada en ventana (primera pieza pendiente: 001 reel, 2 nov 13:30) |
 
@@ -13,3 +14,7 @@
 
 ### Comentarios
 - 17922644775443380 (Reel 18161870296506713, provocación futbolera, no spam): respondido con tono neutro (respuesta 17995604640052587).
+
+### Revisión 1 nov 13:24
+- Métricas de los 8 Reels de los últimos 7 días sin cambios frente a la revisión de las 10:58 (máx. alcance 1.619, saltos 33–52 %).
+- Comentarios: ninguno nuevo (el único, 17922644775443380, ya respondido).
