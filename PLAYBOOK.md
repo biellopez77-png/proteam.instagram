@@ -25,7 +25,7 @@ avisa de problemas o decisiones que no se pueden deshacer.
 story), `files`, `caption`, `cover`, `status` (`pending`, `published`, `failed`), y tras
 publicar `media_id`, `published_at` o `error`.
 
-Publicar = cada pieza `pending` con `when` <= ahora + 10 min y no más de 6 h en el pasado.
+Publicar = cada pieza `pending` con `when` <= ahora + 20 min y no más de 6 h en el pasado.
 Una pieza con más de 6 h de retraso se reprograma al siguiente hueco libre del mismo tipo.
 Tras cada publicación, actualizar su estado en `queue.json` y añadir una línea a `log.md`;
 hacer commit y push.

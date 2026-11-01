@@ -263,7 +263,7 @@
  },
  {
   "id": "022",
-  "when": "2026-11-09T15:30:00+01:00",
+  "when": "2026-11-09T13:40:00+01:00",
   "kind": "story",
   "files": [
    "reels/p01-por-que-juega-uno-y-no-otro.mp4"
@@ -287,7 +287,7 @@
  },
  {
   "id": "024",
-  "when": "2026-11-10T22:30:00+01:00",
+  "when": "2026-11-10T20:40:00+01:00",
   "kind": "story",
   "files": [
    "reels/p02-que-se-decide-en-el-descanso.mp4"
@@ -311,7 +311,7 @@
  },
  {
   "id": "026",
-  "when": "2026-11-11T15:30:00+01:00",
+  "when": "2026-11-11T13:40:00+01:00",
   "kind": "story",
   "files": [
    "reels/p03-cuantas-ocasiones-para-un-gol.mp4"
@@ -335,7 +335,7 @@
  },
  {
   "id": "028",
-  "when": "2026-11-12T22:30:00+01:00",
+  "when": "2026-11-12T20:40:00+01:00",
   "kind": "story",
   "files": [
    "reels/p04-cuando-se-sienta-por-faltas.mp4"
@@ -359,7 +359,7 @@
  },
  {
   "id": "030",
-  "when": "2026-11-13T15:30:00+01:00",
+  "when": "2026-11-13T13:40:00+01:00",
   "kind": "story",
   "files": [
    "reels/p05-donde-para-mas-un-portero.mp4"
@@ -383,7 +383,7 @@
  },
  {
   "id": "032",
-  "when": "2026-11-14T22:30:00+01:00",
+  "when": "2026-11-14T20:40:00+01:00",
   "kind": "story",
   "files": [
    "reels/p06-que-queda-de-un-partido.mp4"
@@ -407,7 +407,7 @@
  },
  {
   "id": "034",
-  "when": "2026-11-15T15:30:00+01:00",
+  "when": "2026-11-15T13:40:00+01:00",
   "kind": "story",
   "files": [
    "reels/p07-vienen-11-de-18.mp4"
@@ -431,7 +431,7 @@
  },
  {
   "id": "036",
-  "when": "2026-11-16T22:30:00+01:00",
+  "when": "2026-11-16T20:40:00+01:00",
   "kind": "story",
   "files": [
    "reels/e04-antes-de-cada-entreno.mp4"
@@ -455,7 +455,7 @@
  },
  {
   "id": "038",
-  "when": "2026-11-17T15:30:00+01:00",
+  "when": "2026-11-17T13:40:00+01:00",
   "kind": "story",
   "files": [
    "reels/p08-minutos-del-que-menos-juega.mp4"
@@ -479,7 +479,7 @@
  },
  {
   "id": "040",
-  "when": "2026-11-18T22:30:00+01:00",
+  "when": "2026-11-18T20:40:00+01:00",
   "kind": "story",
   "files": [
    "reels/p09-faltar-uno-a-la-semana.mp4"
@@ -503,7 +503,7 @@
  },
  {
   "id": "042",
-  "when": "2026-11-19T15:30:00+01:00",
+  "when": "2026-11-19T13:40:00+01:00",
   "kind": "story",
   "files": [
    "reels/p10-cuando-vuelve-un-lesionado.mp4"
@@ -527,7 +527,7 @@
  },
  {
   "id": "044",
-  "when": "2026-11-20T22:30:00+01:00",
+  "when": "2026-11-20T20:40:00+01:00",
   "kind": "story",
   "files": [
    "reels/p11-que-hay-en-la-ficha.mp4"
@@ -551,7 +551,7 @@
  },
  {
   "id": "046",
-  "when": "2026-11-21T15:30:00+01:00",
+  "when": "2026-11-21T13:40:00+01:00",
   "kind": "story",
   "files": [
    "reels/p12-como-se-reparte-el-staff.mp4"
@@ -575,7 +575,7 @@
  },
  {
   "id": "048",
-  "when": "2026-11-22T22:30:00+01:00",
+  "when": "2026-11-22T20:40:00+01:00",
   "kind": "story",
   "files": [
    "reels/p13-por-que-el-dia-antes-mas-suave.mp4"
@@ -599,7 +599,7 @@
  },
  {
   "id": "050",
-  "when": "2026-11-23T15:30:00+01:00",
+  "when": "2026-11-23T13:40:00+01:00",
   "kind": "story",
   "files": [
    "reels/p14-semanas-con-piernas-pesadas.mp4"
@@ -623,7 +623,7 @@
  },
  {
   "id": "052",
-  "when": "2026-11-24T22:30:00+01:00",
+  "when": "2026-11-24T20:40:00+01:00",
   "kind": "story",
   "files": [
    "reels/p15-cuanto-tarda-en-recuperarse.mp4"
@@ -647,7 +647,7 @@
  },
  {
   "id": "054",
-  "when": "2026-11-25T15:30:00+01:00",
+  "when": "2026-11-25T13:40:00+01:00",
   "kind": "story",
   "files": [
    "reels/e09-lo-que-no-recuerdas-del-partido.mp4"
@@ -671,7 +671,7 @@
  },
  {
   "id": "056",
-  "when": "2026-11-26T22:30:00+01:00",
+  "when": "2026-11-26T20:40:00+01:00",
   "kind": "story",
   "files": [
    "reels/p16-el-mismo-entreno-cansa-igual.mp4"
@@ -695,7 +695,7 @@
  },
  {
   "id": "058",
-  "when": "2026-11-27T15:30:00+01:00",
+  "when": "2026-11-27T13:40:00+01:00",
   "kind": "story",
   "files": [
    "reels/p17-para-que-sirve-un-test-de-salto.mp4"
@@ -719,7 +719,7 @@
  },
  {
   "id": "060",
-  "when": "2026-11-28T22:30:00+01:00",
+  "when": "2026-11-28T20:40:00+01:00",
   "kind": "story",
   "files": [
    "reels/p18-que-se-apunta-en-el-gimnasio.mp4"
@@ -743,7 +743,7 @@
  },
  {
   "id": "062",
-  "when": "2026-11-29T15:30:00+01:00",
+  "when": "2026-11-29T13:40:00+01:00",
   "kind": "story",
   "files": [
    "reels/p19-volver-de-un-paron-a-tope.mp4"
@@ -767,7 +767,7 @@
  },
  {
   "id": "064",
-  "when": "2026-11-30T22:30:00+01:00",
+  "when": "2026-11-30T20:40:00+01:00",
   "kind": "story",
   "files": [
    "reels/p20-repetir-la-misma-semana.mp4"
@@ -791,7 +791,7 @@
  },
  {
   "id": "066",
-  "when": "2026-12-01T15:30:00+01:00",
+  "when": "2026-12-01T13:40:00+01:00",
   "kind": "story",
   "files": [
    "reels/p21-nunca-da-tiempo-a-todo.mp4"
@@ -815,7 +815,7 @@
  },
  {
   "id": "068",
-  "when": "2026-12-02T22:30:00+01:00",
+  "when": "2026-12-02T20:40:00+01:00",
   "kind": "story",
   "files": [
    "reels/p22-dos-partidos-en-una-semana.mp4"
@@ -839,7 +839,7 @@
  },
  {
   "id": "070",
-  "when": "2026-12-03T15:30:00+01:00",
+  "when": "2026-12-03T13:40:00+01:00",
   "kind": "story",
   "files": [
    "reels/p23-que-se-trabaja-en-pretemporada.mp4"
@@ -863,7 +863,7 @@
  },
  {
   "id": "072",
-  "when": "2026-12-04T22:30:00+01:00",
+  "when": "2026-12-04T20:40:00+01:00",
   "kind": "story",
   "files": [
    "reels/e11-tres-deportes.mp4"
@@ -887,7 +887,7 @@
  },
  {
   "id": "074",
-  "when": "2026-12-05T15:30:00+01:00",
+  "when": "2026-12-05T13:40:00+01:00",
   "kind": "story",
   "files": [
    "reels/p24-como-se-prepara-un-partido.mp4"
@@ -911,7 +911,7 @@
  },
  {
   "id": "076",
-  "when": "2026-12-06T22:30:00+01:00",
+  "when": "2026-12-06T20:40:00+01:00",
   "kind": "story",
   "files": [
    "reels/p25-ha-mejorado-desde-septiembre.mp4"
@@ -935,7 +935,7 @@
  },
  {
   "id": "078",
-  "when": "2026-12-07T15:30:00+01:00",
+  "when": "2026-12-07T13:40:00+01:00",
   "kind": "story",
   "files": [
    "reels/p26-un-mal-dia-de-entreno.mp4"
@@ -959,7 +959,7 @@
  },
  {
   "id": "080",
-  "when": "2026-12-08T22:30:00+01:00",
+  "when": "2026-12-08T20:40:00+01:00",
   "kind": "story",
   "files": [
    "reels/p27-cuanto-tarda-la-fuerza.mp4"
@@ -983,7 +983,7 @@
  },
  {
   "id": "082",
-  "when": "2026-12-09T15:30:00+01:00",
+  "when": "2026-12-09T13:40:00+01:00",
   "kind": "story",
   "files": [
    "reels/p28-como-se-sabe-si-esta-aprendido.mp4"
@@ -1007,7 +1007,7 @@
  },
  {
   "id": "084",
-  "when": "2026-12-10T22:30:00+01:00",
+  "when": "2026-12-10T20:40:00+01:00",
   "kind": "story",
   "files": [
    "reels/p29-para-que-objetivos-individuales.mp4"
@@ -1031,7 +1031,7 @@
  },
  {
   "id": "086",
-  "when": "2026-12-11T15:30:00+01:00",
+  "when": "2026-12-11T13:40:00+01:00",
   "kind": "story",
   "files": [
    "reels/p30-ha-salido-bien-el-entreno.mp4"
