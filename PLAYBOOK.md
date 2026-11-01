@@ -35,6 +35,9 @@ publicación falla, un reintento como máximo; después `failed` con el error.
 
 ## Estrategia (resumen)
 
+- **Modo crecimiento máximo (decidido por Biel el 1 nov):** 2 Reels al día (13:30 y 20:30), cada uno también en Story 10 min después; feed a las 11:00. Prioridad absoluta: alcance en el público objetivo (entrenadores de fútbol, baloncesto y balonmano en España).
+- Textos con palabras clave que la gente busca (entrenador de fútbol base, planificación de entrenamientos, estadística de balonmano, control de carga…), porque Instagram también funciona como buscador.
+
 - Reels = alcance. Gancho de pregunta, dato o conflicto en el primer segundo; nunca empezar
   por la pantalla de la app. Objetivo: saltos en 3 s < 40 %.
 - Feed (carruseles e imágenes) = seguidores y feed completo: 3 por semana, guardables,
@@ -67,6 +70,6 @@ publicación falla, un reintento como máximo; después `failed` con el error.
 ## Límites conocidos
 
 - Los Reels con voz nueva se producen en sesiones con el ordenador de Biel conectado
-  (descarga de voces de ElevenLabs). El backlog de Reels en `reels/` cubre hasta el 11 de
-  diciembre de 2026; avisar a Biel cuando queden menos de 10.
+  (descarga de voces de ElevenLabs). El backlog de Reels en `reels/` cubre hasta el 21 de
+  noviembre de 2026 a 2 por día; avisar a Biel cuando queden menos de 14 (una semana).
 - Instagram no da seguidores por Reel ni datos demográficos por debajo de 100 seguidores.

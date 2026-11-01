@@ -37,7 +37,31 @@
  },
  {
   "id": "004",
-  "when": "2026-11-03T13:30:00+01:00",
+  "when": "2026-11-02T20:30:00+01:00",
+  "kind": "reel",
+  "files": [
+   "reels/p01-por-que-juega-uno-y-no-otro.mp4"
+  ],
+  "caption": "¿Por qué juega uno y no otro? 🤔\nLa convocatoria no es solo nivel: asistencia, estado físico, rendimiento en los entrenos y minutos acumulados.\n¿Qué pesa más en tu equipo? 👇\n#entrenadores #futbolbase #baloncesto #balonmano",
+  "cover": "covers/p01-por-que-juega-uno-y-no-otro.jpg",
+  "status": "pending",
+  "note": "backlog"
+ },
+ {
+  "id": "005",
+  "when": "2026-11-02T20:40:00+01:00",
+  "kind": "story",
+  "files": [
+   "reels/p01-por-que-juega-uno-y-no-otro.mp4"
+  ],
+  "caption": null,
+  "cover": null,
+  "status": "pending",
+  "note": "reel en story"
+ },
+ {
+  "id": "006",
+  "when": "2026-11-03T11:00:00+01:00",
   "kind": "carousel",
   "files": [
    "feed/c1-1.jpg",
@@ -51,7 +75,31 @@
   "note": ""
  },
  {
-  "id": "005",
+  "id": "007",
+  "when": "2026-11-03T13:30:00+01:00",
+  "kind": "reel",
+  "files": [
+   "reels/p02-que-se-decide-en-el-descanso.mp4"
+  ],
+  "caption": "15 minutos para cambiar un partido ⏱️\nEn el descanso, la sensación dice una cosa y los datos, a veces, otra.\n¿Qué se mira en vuestro vestuario? 👇\n#entrenadores #futbolbase #baloncesto #balonmano",
+  "cover": "covers/p02-que-se-decide-en-el-descanso.jpg",
+  "status": "pending",
+  "note": "backlog"
+ },
+ {
+  "id": "008",
+  "when": "2026-11-03T13:40:00+01:00",
+  "kind": "story",
+  "files": [
+   "reels/p02-que-se-decide-en-el-descanso.mp4"
+  ],
+  "caption": null,
+  "cover": null,
+  "status": "pending",
+  "note": "reel en story"
+ },
+ {
+  "id": "009",
   "when": "2026-11-03T20:30:00+01:00",
   "kind": "reel",
   "files": [
@@ -63,7 +111,7 @@
   "note": ""
  },
  {
-  "id": "006",
+  "id": "010",
   "when": "2026-11-03T20:40:00+01:00",
   "kind": "story",
   "files": [
@@ -75,7 +123,7 @@
   "note": ""
  },
  {
-  "id": "007",
+  "id": "011",
   "when": "2026-11-04T13:30:00+01:00",
   "kind": "reel",
   "files": [
@@ -87,7 +135,7 @@
   "note": ""
  },
  {
-  "id": "008",
+  "id": "012",
   "when": "2026-11-04T13:40:00+01:00",
   "kind": "story",
   "files": [
@@ -99,7 +147,7 @@
   "note": ""
  },
  {
-  "id": "009",
+  "id": "013",
   "when": "2026-11-04T18:00:00+01:00",
   "kind": "story",
   "files": [
@@ -111,8 +159,32 @@
   "note": ""
  },
  {
-  "id": "010",
-  "when": "2026-11-05T13:30:00+01:00",
+  "id": "014",
+  "when": "2026-11-04T20:30:00+01:00",
+  "kind": "reel",
+  "files": [
+   "reels/p03-cuantas-ocasiones-para-un-gol.mp4"
+  ],
+  "caption": "14 tiros y 0,6 goles esperados. 6 tiros y 1,9. ¿Quién mereció más? ⚽\nLos goles esperados (xG) dan a cada tiro su probabilidad de gol. Datos de ejemplo.\n¿Lo miráis en vuestro equipo? 👇\n#entrenadores #futbolbase #baloncesto #balonmano",
+  "cover": "covers/p03-cuantas-ocasiones-para-un-gol.jpg",
+  "status": "pending",
+  "note": "backlog"
+ },
+ {
+  "id": "015",
+  "when": "2026-11-04T20:40:00+01:00",
+  "kind": "story",
+  "files": [
+   "reels/p03-cuantas-ocasiones-para-un-gol.mp4"
+  ],
+  "caption": null,
+  "cover": null,
+  "status": "pending",
+  "note": "reel en story"
+ },
+ {
+  "id": "016",
+  "when": "2026-11-05T11:00:00+01:00",
   "kind": "carousel",
   "files": [
    "feed/c2-1.jpg",
@@ -127,7 +199,31 @@
   "note": ""
  },
  {
-  "id": "011",
+  "id": "017",
+  "when": "2026-11-05T13:30:00+01:00",
+  "kind": "reel",
+  "files": [
+   "reels/p04-cuando-se-sienta-por-faltas.mp4"
+  ],
+  "caption": "Dos faltas en el primer cuarto: ¿banquillo o se arriesga? 🏀\nCon 5 faltas personales se acaba el partido (FIBA). Saber cuántas lleva cada uno cambia los minutos.\n¿Qué haríais? 👇\n#entrenadores #futbolbase #baloncesto #balonmano",
+  "cover": "covers/p04-cuando-se-sienta-por-faltas.jpg",
+  "status": "pending",
+  "note": "backlog"
+ },
+ {
+  "id": "018",
+  "when": "2026-11-05T13:40:00+01:00",
+  "kind": "story",
+  "files": [
+   "reels/p04-cuando-se-sienta-por-faltas.mp4"
+  ],
+  "caption": null,
+  "cover": null,
+  "status": "pending",
+  "note": "reel en story"
+ },
+ {
+  "id": "019",
   "when": "2026-11-05T20:30:00+01:00",
   "kind": "reel",
   "files": [
@@ -139,7 +235,7 @@
   "note": ""
  },
  {
-  "id": "012",
+  "id": "020",
   "when": "2026-11-05T20:40:00+01:00",
   "kind": "story",
   "files": [
@@ -151,7 +247,7 @@
   "note": ""
  },
  {
-  "id": "013",
+  "id": "021",
   "when": "2026-11-06T13:30:00+01:00",
   "kind": "reel",
   "files": [
@@ -163,7 +259,7 @@
   "note": ""
  },
  {
-  "id": "014",
+  "id": "022",
   "when": "2026-11-06T13:40:00+01:00",
   "kind": "story",
   "files": [
@@ -175,8 +271,32 @@
   "note": ""
  },
  {
-  "id": "015",
-  "when": "2026-11-07T13:30:00+01:00",
+  "id": "023",
+  "when": "2026-11-06T20:30:00+01:00",
+  "kind": "reel",
+  "files": [
+   "reels/p05-donde-para-mas-un-portero.mp4"
+  ],
+  "caption": "¿Por dónde le meten los goles a vuestro portero? 🧤\nDividir la portería en 9 zonas enseña dónde para más y dónde menos. Datos de ejemplo.\n👇\n#entrenadores #futbolbase #baloncesto #balonmano",
+  "cover": "covers/p05-donde-para-mas-un-portero.jpg",
+  "status": "pending",
+  "note": "backlog"
+ },
+ {
+  "id": "024",
+  "when": "2026-11-06T20:40:00+01:00",
+  "kind": "story",
+  "files": [
+   "reels/p05-donde-para-mas-un-portero.mp4"
+  ],
+  "caption": null,
+  "cover": null,
+  "status": "pending",
+  "note": "reel en story"
+ },
+ {
+  "id": "025",
+  "when": "2026-11-07T11:00:00+01:00",
   "kind": "image",
   "files": [
    "feed/q1.jpg"
@@ -187,7 +307,31 @@
   "note": ""
  },
  {
-  "id": "016",
+  "id": "026",
+  "when": "2026-11-07T13:30:00+01:00",
+  "kind": "reel",
+  "files": [
+   "reels/p06-que-queda-de-un-partido.mp4"
+  ],
+  "caption": "Del partido del domingo, el lunes quedan 3 o 4 jugadas en la memoria 🧠\nUn informe guarda el resto: datos, lo que funcionó y lo que hay que cambiar.\n¿Repasáis el partido? 👇\n#entrenadores #futbolbase #baloncesto #balonmano",
+  "cover": "covers/p06-que-queda-de-un-partido.jpg",
+  "status": "pending",
+  "note": "backlog"
+ },
+ {
+  "id": "027",
+  "when": "2026-11-07T13:40:00+01:00",
+  "kind": "story",
+  "files": [
+   "reels/p06-que-queda-de-un-partido.mp4"
+  ],
+  "caption": null,
+  "cover": null,
+  "status": "pending",
+  "note": "reel en story"
+ },
+ {
+  "id": "028",
   "when": "2026-11-07T20:30:00+01:00",
   "kind": "reel",
   "files": [
@@ -199,7 +343,7 @@
   "note": ""
  },
  {
-  "id": "017",
+  "id": "029",
   "when": "2026-11-07T20:40:00+01:00",
   "kind": "story",
   "files": [
@@ -211,7 +355,7 @@
   "note": ""
  },
  {
-  "id": "018",
+  "id": "030",
   "when": "2026-11-08T11:00:00+01:00",
   "kind": "story",
   "files": [
@@ -219,12 +363,14 @@
   ],
   "caption": null,
   "cover": null,
-  "status": "pending",
-  "note": ""
+  "status": "published",
+  "note": "publicada como prueba el 1 nov",
+  "media_id": "18122012644959227",
+  "published_at": "2026-11-01T11:30:00+01:00"
  },
  {
-  "id": "019",
-  "when": "2026-11-08T13:30:00+01:00",
+  "id": "031",
+  "when": "2026-11-08T11:00:00+01:00",
   "kind": "carousel",
   "files": [
    "feed/c3-1.jpg",
@@ -238,7 +384,31 @@
   "note": ""
  },
  {
-  "id": "020",
+  "id": "032",
+  "when": "2026-11-08T13:30:00+01:00",
+  "kind": "reel",
+  "files": [
+   "reels/p07-vienen-11-de-18.mp4"
+  ],
+  "caption": "Entreno preparado para 18… y vienen 11 😅\nSaber antes quién viene permite adaptar grupos y espacios sin improvisar.\n¿Os pasa a menudo? 👇\n#entrenadores #futbolbase #baloncesto #balonmano",
+  "cover": "covers/p07-vienen-11-de-18.jpg",
+  "status": "pending",
+  "note": "backlog"
+ },
+ {
+  "id": "033",
+  "when": "2026-11-08T13:40:00+01:00",
+  "kind": "story",
+  "files": [
+   "reels/p07-vienen-11-de-18.mp4"
+  ],
+  "caption": null,
+  "cover": null,
+  "status": "pending",
+  "note": "reel en story"
+ },
+ {
+  "id": "034",
   "when": "2026-11-08T19:00:00+01:00",
   "kind": "story",
   "files": [
@@ -250,176 +420,8 @@
   "note": ""
  },
  {
-  "id": "021",
-  "when": "2026-11-09T13:30:00+01:00",
-  "kind": "reel",
-  "files": [
-   "reels/p01-por-que-juega-uno-y-no-otro.mp4"
-  ],
-  "caption": "¿Por qué juega uno y no otro? 🤔\nLa convocatoria no es solo nivel: asistencia, estado físico, rendimiento en los entrenos y minutos acumulados.\n¿Qué pesa más en tu equipo? 👇\n#entrenadores #futbolbase #baloncesto #balonmano",
-  "cover": "covers/p01-por-que-juega-uno-y-no-otro.jpg",
-  "status": "pending",
-  "note": "backlog"
- },
- {
-  "id": "022",
-  "when": "2026-11-09T13:40:00+01:00",
-  "kind": "story",
-  "files": [
-   "reels/p01-por-que-juega-uno-y-no-otro.mp4"
-  ],
-  "caption": null,
-  "cover": null,
-  "status": "pending",
-  "note": "reel en story"
- },
- {
-  "id": "023",
-  "when": "2026-11-10T20:30:00+01:00",
-  "kind": "reel",
-  "files": [
-   "reels/p02-que-se-decide-en-el-descanso.mp4"
-  ],
-  "caption": "15 minutos para cambiar un partido ⏱️\nEn el descanso, la sensación dice una cosa y los datos, a veces, otra.\n¿Qué se mira en vuestro vestuario? 👇\n#entrenadores #futbolbase #baloncesto #balonmano",
-  "cover": "covers/p02-que-se-decide-en-el-descanso.jpg",
-  "status": "pending",
-  "note": "backlog"
- },
- {
-  "id": "024",
-  "when": "2026-11-10T20:40:00+01:00",
-  "kind": "story",
-  "files": [
-   "reels/p02-que-se-decide-en-el-descanso.mp4"
-  ],
-  "caption": null,
-  "cover": null,
-  "status": "pending",
-  "note": "reel en story"
- },
- {
-  "id": "025",
-  "when": "2026-11-11T13:30:00+01:00",
-  "kind": "reel",
-  "files": [
-   "reels/p03-cuantas-ocasiones-para-un-gol.mp4"
-  ],
-  "caption": "14 tiros y 0,6 goles esperados. 6 tiros y 1,9. ¿Quién mereció más? ⚽\nLos goles esperados (xG) dan a cada tiro su probabilidad de gol. Datos de ejemplo.\n¿Lo miráis en vuestro equipo? 👇\n#entrenadores #futbolbase #baloncesto #balonmano",
-  "cover": "covers/p03-cuantas-ocasiones-para-un-gol.jpg",
-  "status": "pending",
-  "note": "backlog"
- },
- {
-  "id": "026",
-  "when": "2026-11-11T13:40:00+01:00",
-  "kind": "story",
-  "files": [
-   "reels/p03-cuantas-ocasiones-para-un-gol.mp4"
-  ],
-  "caption": null,
-  "cover": null,
-  "status": "pending",
-  "note": "reel en story"
- },
- {
-  "id": "027",
-  "when": "2026-11-12T20:30:00+01:00",
-  "kind": "reel",
-  "files": [
-   "reels/p04-cuando-se-sienta-por-faltas.mp4"
-  ],
-  "caption": "Dos faltas en el primer cuarto: ¿banquillo o se arriesga? 🏀\nCon 5 faltas personales se acaba el partido (FIBA). Saber cuántas lleva cada uno cambia los minutos.\n¿Qué haríais? 👇\n#entrenadores #futbolbase #baloncesto #balonmano",
-  "cover": "covers/p04-cuando-se-sienta-por-faltas.jpg",
-  "status": "pending",
-  "note": "backlog"
- },
- {
-  "id": "028",
-  "when": "2026-11-12T20:40:00+01:00",
-  "kind": "story",
-  "files": [
-   "reels/p04-cuando-se-sienta-por-faltas.mp4"
-  ],
-  "caption": null,
-  "cover": null,
-  "status": "pending",
-  "note": "reel en story"
- },
- {
-  "id": "029",
-  "when": "2026-11-13T13:30:00+01:00",
-  "kind": "reel",
-  "files": [
-   "reels/p05-donde-para-mas-un-portero.mp4"
-  ],
-  "caption": "¿Por dónde le meten los goles a vuestro portero? 🧤\nDividir la portería en 9 zonas enseña dónde para más y dónde menos. Datos de ejemplo.\n👇\n#entrenadores #futbolbase #baloncesto #balonmano",
-  "cover": "covers/p05-donde-para-mas-un-portero.jpg",
-  "status": "pending",
-  "note": "backlog"
- },
- {
-  "id": "030",
-  "when": "2026-11-13T13:40:00+01:00",
-  "kind": "story",
-  "files": [
-   "reels/p05-donde-para-mas-un-portero.mp4"
-  ],
-  "caption": null,
-  "cover": null,
-  "status": "pending",
-  "note": "reel en story"
- },
- {
-  "id": "031",
-  "when": "2026-11-14T20:30:00+01:00",
-  "kind": "reel",
-  "files": [
-   "reels/p06-que-queda-de-un-partido.mp4"
-  ],
-  "caption": "Del partido del domingo, el lunes quedan 3 o 4 jugadas en la memoria 🧠\nUn informe guarda el resto: datos, lo que funcionó y lo que hay que cambiar.\n¿Repasáis el partido? 👇\n#entrenadores #futbolbase #baloncesto #balonmano",
-  "cover": "covers/p06-que-queda-de-un-partido.jpg",
-  "status": "pending",
-  "note": "backlog"
- },
- {
-  "id": "032",
-  "when": "2026-11-14T20:40:00+01:00",
-  "kind": "story",
-  "files": [
-   "reels/p06-que-queda-de-un-partido.mp4"
-  ],
-  "caption": null,
-  "cover": null,
-  "status": "pending",
-  "note": "reel en story"
- },
- {
-  "id": "033",
-  "when": "2026-11-15T13:30:00+01:00",
-  "kind": "reel",
-  "files": [
-   "reels/p07-vienen-11-de-18.mp4"
-  ],
-  "caption": "Entreno preparado para 18… y vienen 11 😅\nSaber antes quién viene permite adaptar grupos y espacios sin improvisar.\n¿Os pasa a menudo? 👇\n#entrenadores #futbolbase #baloncesto #balonmano",
-  "cover": "covers/p07-vienen-11-de-18.jpg",
-  "status": "pending",
-  "note": "backlog"
- },
- {
-  "id": "034",
-  "when": "2026-11-15T13:40:00+01:00",
-  "kind": "story",
-  "files": [
-   "reels/p07-vienen-11-de-18.mp4"
-  ],
-  "caption": null,
-  "cover": null,
-  "status": "pending",
-  "note": "reel en story"
- },
- {
   "id": "035",
-  "when": "2026-11-16T20:30:00+01:00",
+  "when": "2026-11-08T20:30:00+01:00",
   "kind": "reel",
   "files": [
    "reels/e04-antes-de-cada-entreno.mp4"
@@ -431,7 +433,7 @@
  },
  {
   "id": "036",
-  "when": "2026-11-16T20:40:00+01:00",
+  "when": "2026-11-08T20:40:00+01:00",
   "kind": "story",
   "files": [
    "reels/e04-antes-de-cada-entreno.mp4"
@@ -443,7 +445,7 @@
  },
  {
   "id": "037",
-  "when": "2026-11-17T13:30:00+01:00",
+  "when": "2026-11-09T13:30:00+01:00",
   "kind": "reel",
   "files": [
    "reels/p08-minutos-del-que-menos-juega.mp4"
@@ -455,7 +457,7 @@
  },
  {
   "id": "038",
-  "when": "2026-11-17T13:40:00+01:00",
+  "when": "2026-11-09T13:40:00+01:00",
   "kind": "story",
   "files": [
    "reels/p08-minutos-del-que-menos-juega.mp4"
@@ -467,7 +469,7 @@
  },
  {
   "id": "039",
-  "when": "2026-11-18T20:30:00+01:00",
+  "when": "2026-11-09T20:30:00+01:00",
   "kind": "reel",
   "files": [
    "reels/p09-faltar-uno-a-la-semana.mp4"
@@ -479,7 +481,7 @@
  },
  {
   "id": "040",
-  "when": "2026-11-18T20:40:00+01:00",
+  "when": "2026-11-09T20:40:00+01:00",
   "kind": "story",
   "files": [
    "reels/p09-faltar-uno-a-la-semana.mp4"
@@ -491,7 +493,7 @@
  },
  {
   "id": "041",
-  "when": "2026-11-19T13:30:00+01:00",
+  "when": "2026-11-10T13:30:00+01:00",
   "kind": "reel",
   "files": [
    "reels/p10-cuando-vuelve-un-lesionado.mp4"
@@ -503,7 +505,7 @@
  },
  {
   "id": "042",
-  "when": "2026-11-19T13:40:00+01:00",
+  "when": "2026-11-10T13:40:00+01:00",
   "kind": "story",
   "files": [
    "reels/p10-cuando-vuelve-un-lesionado.mp4"
@@ -515,7 +517,7 @@
  },
  {
   "id": "043",
-  "when": "2026-11-20T20:30:00+01:00",
+  "when": "2026-11-10T20:30:00+01:00",
   "kind": "reel",
   "files": [
    "reels/p11-que-hay-en-la-ficha.mp4"
@@ -527,7 +529,7 @@
  },
  {
   "id": "044",
-  "when": "2026-11-20T20:40:00+01:00",
+  "when": "2026-11-10T20:40:00+01:00",
   "kind": "story",
   "files": [
    "reels/p11-que-hay-en-la-ficha.mp4"
@@ -539,7 +541,7 @@
  },
  {
   "id": "045",
-  "when": "2026-11-21T13:30:00+01:00",
+  "when": "2026-11-11T13:30:00+01:00",
   "kind": "reel",
   "files": [
    "reels/p12-como-se-reparte-el-staff.mp4"
@@ -551,7 +553,7 @@
  },
  {
   "id": "046",
-  "when": "2026-11-21T13:40:00+01:00",
+  "when": "2026-11-11T13:40:00+01:00",
   "kind": "story",
   "files": [
    "reels/p12-como-se-reparte-el-staff.mp4"
@@ -563,7 +565,7 @@
  },
  {
   "id": "047",
-  "when": "2026-11-22T20:30:00+01:00",
+  "when": "2026-11-11T20:30:00+01:00",
   "kind": "reel",
   "files": [
    "reels/p13-por-que-el-dia-antes-mas-suave.mp4"
@@ -575,7 +577,7 @@
  },
  {
   "id": "048",
-  "when": "2026-11-22T20:40:00+01:00",
+  "when": "2026-11-11T20:40:00+01:00",
   "kind": "story",
   "files": [
    "reels/p13-por-que-el-dia-antes-mas-suave.mp4"
@@ -587,7 +589,7 @@
  },
  {
   "id": "049",
-  "when": "2026-11-23T13:30:00+01:00",
+  "when": "2026-11-12T13:30:00+01:00",
   "kind": "reel",
   "files": [
    "reels/p14-semanas-con-piernas-pesadas.mp4"
@@ -599,7 +601,7 @@
  },
  {
   "id": "050",
-  "when": "2026-11-23T13:40:00+01:00",
+  "when": "2026-11-12T13:40:00+01:00",
   "kind": "story",
   "files": [
    "reels/p14-semanas-con-piernas-pesadas.mp4"
@@ -611,7 +613,7 @@
  },
  {
   "id": "051",
-  "when": "2026-11-24T20:30:00+01:00",
+  "when": "2026-11-12T20:30:00+01:00",
   "kind": "reel",
   "files": [
    "reels/p15-cuanto-tarda-en-recuperarse.mp4"
@@ -623,7 +625,7 @@
  },
  {
   "id": "052",
-  "when": "2026-11-24T20:40:00+01:00",
+  "when": "2026-11-12T20:40:00+01:00",
   "kind": "story",
   "files": [
    "reels/p15-cuanto-tarda-en-recuperarse.mp4"
@@ -635,7 +637,7 @@
  },
  {
   "id": "053",
-  "when": "2026-11-25T13:30:00+01:00",
+  "when": "2026-11-13T13:30:00+01:00",
   "kind": "reel",
   "files": [
    "reels/e09-lo-que-no-recuerdas-del-partido.mp4"
@@ -647,7 +649,7 @@
  },
  {
   "id": "054",
-  "when": "2026-11-25T13:40:00+01:00",
+  "when": "2026-11-13T13:40:00+01:00",
   "kind": "story",
   "files": [
    "reels/e09-lo-que-no-recuerdas-del-partido.mp4"
@@ -659,7 +661,7 @@
  },
  {
   "id": "055",
-  "when": "2026-11-26T20:30:00+01:00",
+  "when": "2026-11-13T20:30:00+01:00",
   "kind": "reel",
   "files": [
    "reels/p16-el-mismo-entreno-cansa-igual.mp4"
@@ -671,7 +673,7 @@
  },
  {
   "id": "056",
-  "when": "2026-11-26T20:40:00+01:00",
+  "when": "2026-11-13T20:40:00+01:00",
   "kind": "story",
   "files": [
    "reels/p16-el-mismo-entreno-cansa-igual.mp4"
@@ -683,7 +685,7 @@
  },
  {
   "id": "057",
-  "when": "2026-11-27T13:30:00+01:00",
+  "when": "2026-11-14T13:30:00+01:00",
   "kind": "reel",
   "files": [
    "reels/p17-para-que-sirve-un-test-de-salto.mp4"
@@ -695,7 +697,7 @@
  },
  {
   "id": "058",
-  "when": "2026-11-27T13:40:00+01:00",
+  "when": "2026-11-14T13:40:00+01:00",
   "kind": "story",
   "files": [
    "reels/p17-para-que-sirve-un-test-de-salto.mp4"
@@ -707,7 +709,7 @@
  },
  {
   "id": "059",
-  "when": "2026-11-28T20:30:00+01:00",
+  "when": "2026-11-14T20:30:00+01:00",
   "kind": "reel",
   "files": [
    "reels/p18-que-se-apunta-en-el-gimnasio.mp4"
@@ -719,7 +721,7 @@
  },
  {
   "id": "060",
-  "when": "2026-11-28T20:40:00+01:00",
+  "when": "2026-11-14T20:40:00+01:00",
   "kind": "story",
   "files": [
    "reels/p18-que-se-apunta-en-el-gimnasio.mp4"
@@ -731,7 +733,7 @@
  },
  {
   "id": "061",
-  "when": "2026-11-29T13:30:00+01:00",
+  "when": "2026-11-15T13:30:00+01:00",
   "kind": "reel",
   "files": [
    "reels/p19-volver-de-un-paron-a-tope.mp4"
@@ -743,7 +745,7 @@
  },
  {
   "id": "062",
-  "when": "2026-11-29T13:40:00+01:00",
+  "when": "2026-11-15T13:40:00+01:00",
   "kind": "story",
   "files": [
    "reels/p19-volver-de-un-paron-a-tope.mp4"
@@ -755,7 +757,7 @@
  },
  {
   "id": "063",
-  "when": "2026-11-30T20:30:00+01:00",
+  "when": "2026-11-15T20:30:00+01:00",
   "kind": "reel",
   "files": [
    "reels/p20-repetir-la-misma-semana.mp4"
@@ -767,7 +769,7 @@
  },
  {
   "id": "064",
-  "when": "2026-11-30T20:40:00+01:00",
+  "when": "2026-11-15T20:40:00+01:00",
   "kind": "story",
   "files": [
    "reels/p20-repetir-la-misma-semana.mp4"
@@ -779,7 +781,7 @@
  },
  {
   "id": "065",
-  "when": "2026-12-01T13:30:00+01:00",
+  "when": "2026-11-16T13:30:00+01:00",
   "kind": "reel",
   "files": [
    "reels/p21-nunca-da-tiempo-a-todo.mp4"
@@ -791,7 +793,7 @@
  },
  {
   "id": "066",
-  "when": "2026-12-01T13:40:00+01:00",
+  "when": "2026-11-16T13:40:00+01:00",
   "kind": "story",
   "files": [
    "reels/p21-nunca-da-tiempo-a-todo.mp4"
@@ -803,7 +805,7 @@
  },
  {
   "id": "067",
-  "when": "2026-12-02T20:30:00+01:00",
+  "when": "2026-11-16T20:30:00+01:00",
   "kind": "reel",
   "files": [
    "reels/p22-dos-partidos-en-una-semana.mp4"
@@ -815,7 +817,7 @@
  },
  {
   "id": "068",
-  "when": "2026-12-02T20:40:00+01:00",
+  "when": "2026-11-16T20:40:00+01:00",
   "kind": "story",
   "files": [
    "reels/p22-dos-partidos-en-una-semana.mp4"
@@ -827,7 +829,7 @@
  },
  {
   "id": "069",
-  "when": "2026-12-03T13:30:00+01:00",
+  "when": "2026-11-17T13:30:00+01:00",
   "kind": "reel",
   "files": [
    "reels/p23-que-se-trabaja-en-pretemporada.mp4"
@@ -839,7 +841,7 @@
  },
  {
   "id": "070",
-  "when": "2026-12-03T13:40:00+01:00",
+  "when": "2026-11-17T13:40:00+01:00",
   "kind": "story",
   "files": [
    "reels/p23-que-se-trabaja-en-pretemporada.mp4"
@@ -851,7 +853,7 @@
  },
  {
   "id": "071",
-  "when": "2026-12-04T20:30:00+01:00",
+  "when": "2026-11-17T20:30:00+01:00",
   "kind": "reel",
   "files": [
    "reels/e11-tres-deportes.mp4"
@@ -863,7 +865,7 @@
  },
  {
   "id": "072",
-  "when": "2026-12-04T20:40:00+01:00",
+  "when": "2026-11-17T20:40:00+01:00",
   "kind": "story",
   "files": [
    "reels/e11-tres-deportes.mp4"
@@ -875,7 +877,7 @@
  },
  {
   "id": "073",
-  "when": "2026-12-05T13:30:00+01:00",
+  "when": "2026-11-18T13:30:00+01:00",
   "kind": "reel",
   "files": [
    "reels/p24-como-se-prepara-un-partido.mp4"
@@ -887,7 +889,7 @@
  },
  {
   "id": "074",
-  "when": "2026-12-05T13:40:00+01:00",
+  "when": "2026-11-18T13:40:00+01:00",
   "kind": "story",
   "files": [
    "reels/p24-como-se-prepara-un-partido.mp4"
@@ -899,7 +901,7 @@
  },
  {
   "id": "075",
-  "when": "2026-12-06T20:30:00+01:00",
+  "when": "2026-11-18T20:30:00+01:00",
   "kind": "reel",
   "files": [
    "reels/p25-ha-mejorado-desde-septiembre.mp4"
@@ -911,7 +913,7 @@
  },
  {
   "id": "076",
-  "when": "2026-12-06T20:40:00+01:00",
+  "when": "2026-11-18T20:40:00+01:00",
   "kind": "story",
   "files": [
    "reels/p25-ha-mejorado-desde-septiembre.mp4"
@@ -923,7 +925,7 @@
  },
  {
   "id": "077",
-  "when": "2026-12-07T13:30:00+01:00",
+  "when": "2026-11-19T13:30:00+01:00",
   "kind": "reel",
   "files": [
    "reels/p26-un-mal-dia-de-entreno.mp4"
@@ -935,7 +937,7 @@
  },
  {
   "id": "078",
-  "when": "2026-12-07T13:40:00+01:00",
+  "when": "2026-11-19T13:40:00+01:00",
   "kind": "story",
   "files": [
    "reels/p26-un-mal-dia-de-entreno.mp4"
@@ -947,7 +949,7 @@
  },
  {
   "id": "079",
-  "when": "2026-12-08T20:30:00+01:00",
+  "when": "2026-11-19T20:30:00+01:00",
   "kind": "reel",
   "files": [
    "reels/p27-cuanto-tarda-la-fuerza.mp4"
@@ -959,7 +961,7 @@
  },
  {
   "id": "080",
-  "when": "2026-12-08T20:40:00+01:00",
+  "when": "2026-11-19T20:40:00+01:00",
   "kind": "story",
   "files": [
    "reels/p27-cuanto-tarda-la-fuerza.mp4"
@@ -971,7 +973,7 @@
  },
  {
   "id": "081",
-  "when": "2026-12-09T13:30:00+01:00",
+  "when": "2026-11-20T13:30:00+01:00",
   "kind": "reel",
   "files": [
    "reels/p28-como-se-sabe-si-esta-aprendido.mp4"
@@ -983,7 +985,7 @@
  },
  {
   "id": "082",
-  "when": "2026-12-09T13:40:00+01:00",
+  "when": "2026-11-20T13:40:00+01:00",
   "kind": "story",
   "files": [
    "reels/p28-como-se-sabe-si-esta-aprendido.mp4"
@@ -995,7 +997,7 @@
  },
  {
   "id": "083",
-  "when": "2026-12-10T20:30:00+01:00",
+  "when": "2026-11-20T20:30:00+01:00",
   "kind": "reel",
   "files": [
    "reels/p29-para-que-objetivos-individuales.mp4"
@@ -1007,7 +1009,7 @@
  },
  {
   "id": "084",
-  "when": "2026-12-10T20:40:00+01:00",
+  "when": "2026-11-20T20:40:00+01:00",
   "kind": "story",
   "files": [
    "reels/p29-para-que-objetivos-individuales.mp4"
@@ -1019,7 +1021,7 @@
  },
  {
   "id": "085",
-  "when": "2026-12-11T13:30:00+01:00",
+  "when": "2026-11-21T13:30:00+01:00",
   "kind": "reel",
   "files": [
    "reels/p30-ha-salido-bien-el-entreno.mp4"
@@ -1031,7 +1033,7 @@
  },
  {
   "id": "086",
-  "when": "2026-12-11T13:40:00+01:00",
+  "when": "2026-11-21T13:40:00+01:00",
   "kind": "story",
   "files": [
    "reels/p30-ha-salido-bien-el-entreno.mp4"
