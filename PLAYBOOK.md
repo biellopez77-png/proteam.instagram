@@ -35,7 +35,7 @@ publicación falla, un reintento como máximo; después `failed` con el error.
 
 ## Estrategia (resumen)
 
-- **Modo crecimiento máximo (decidido por Biel el 1 nov):** 2 Reels al día (13:30 y 20:30), cada uno también en Story 10 min después; feed a las 11:00. Prioridad absoluta: alcance en el público objetivo (entrenadores de fútbol, baloncesto y balonmano en España).
+- **Modo crecimiento máximo (decidido por Biel el 1 nov):** 2 Reels al día (13:30 y 20:30), cada uno también en Story 10 min después; feed a las 11:00. Prioridad absoluta: alcance en el público objetivo (entrenadores de fútbol, baloncesto y balonmano en España). **Solo crecimiento orgánico: nada de promoción pagada ni anuncios** (decidido por Biel el 1 nov).
 - Textos con palabras clave que la gente busca (entrenador de fútbol base, planificación de entrenamientos, estadística de balonmano, control de carga…), porque Instagram también funciona como buscador.
 
 - Reels = alcance. Gancho de pregunta, dato o conflicto en el primer segundo; nunca empezar
