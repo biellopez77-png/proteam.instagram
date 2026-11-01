@@ -1,11 +1,10 @@
 import asyncio, os, json
 from playwright.async_api import async_playwright
-B = '/home/claude/feed'; A = '/home/claude/m2'
+B = os.path.dirname(os.path.abspath(__file__))
 os.makedirs(f'{B}/out', exist_ok=True)
-for f in ('fonts', 'proteam-mark.webp'):
-    if not os.path.exists(f'{B}/{f}'): os.symlink(f'{A}/{f}', f'{B}/{f}')
-if not os.path.exists(f'{B}/app'): os.symlink(f'{A}/out/rb2/app', f'{B}/app')
-os.makedirs(f'{B}/cov', exist_ok=True)
+if not os.path.exists(f'{B}/cov'): os.symlink(os.path.join(B, '..', 'covers'), f'{B}/cov')
+# Plantillas: cada entrada de S es una pieza (clave = nombre de archivo). Las de la semana 1 sirven de ejemplo; para semanas nuevas, sustituye S por las piezas nuevas.
+
 
 CSS = '''
 @font-face{font-family:M;font-weight:600;src:url(fonts/manrope-latin-700-normal.woff2)}
@@ -86,14 +85,14 @@ def story_q(tit, em, ans):
     return page(1080, 1920, top('Pregunta <b>rápida</b>') + f'<div class="h" style="top:560px;font-size:120px">{tit} <em>{em}</em></div><div class="p" style="top:1180px;font-size:48px">{ans}</div>', True)
 def story_app(tit, em, img, sub):
     return page(1080, 1920, top('Dentro de <b>ProTeam</b>') + f'<div class="h" style="top:220px;font-size:92px">{tit} <em>{em}</em></div><div class="ph" style="left:220px;top:600px;width:640px;height:1150px"><img src="app/{img}.jpg"></div><div class="src" style="top:1800px;text-align:center;color:var(--ink);font-size:28px">{sub}</div>')
-S['s1-a'] = story_reel('corners.jpg', '¿Cuántos córners hacen falta', 'para un gol?', 'Ya en el perfil · @app.proteam')
+S['s1-a'] = story_reel('d1-corners.jpg', '¿Cuántos córners hacen falta', 'para un gol?', 'Ya en el perfil · @app.proteam')
 S['s1-b'] = story_q('¿Cuántos córners crees que hacen falta', 'para un gol?', 'La respuesta te sorprenderá. Está en nuestro último Reel.')
 S['s2-a'] = story_app('Tiros que nadie ve:', '«No lo he visto».', 'nlv-3', 'Estadística de balonmano · pro-team.app')
-S['s3-a'] = story_reel('penaltis.jpg', '¿Un penalti es', 'gol seguro?', 'Ya en el perfil · @app.proteam')
+S['s3-a'] = story_reel('d2-penaltis.jpg', '¿Un penalti es', 'gol seguro?', 'Ya en el perfil · @app.proteam')
 S['s3-b'] = story_q('En tu equipo, ¿quién tira', 'los penaltis?', 'Respóndenos por mensaje: el que más mete o el que más quiere.')
 S['s4-a'] = story_app('Golpes francos', 'con un toque.', 'gf-2', 'Estadística de balonmano · pro-team.app')
-S['s5-a'] = story_reel('primergol.jpg', '¿Quién marca primero,', 'gana?', 'Ya en el perfil · @app.proteam')
-S['s6-a'] = story_reel('pases.jpg', '¿Cuántos pases hacen falta', 'para un gol?', 'Ya en el perfil · @app.proteam')
+S['s5-a'] = story_reel('d3-primer-gol.jpg', '¿Quién marca primero,', 'gana?', 'Ya en el perfil · @app.proteam')
+S['s6-a'] = story_reel('d4-pases.jpg', '¿Cuántos pases hacen falta', 'para un gol?', 'Ya en el perfil · @app.proteam')
 S['s7-a'] = story_app('Tu temporada,', 'planificada.', 'mo-plan', 'Planifica, controla la carga y analiza · pro-team.app')
 S['s7-b'] = story_q('¿De qué tema quieres', 'el próximo Reel?', 'Escríbenos por mensaje. Leemos todo.')
 
