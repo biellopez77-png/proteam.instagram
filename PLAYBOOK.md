@@ -14,8 +14,8 @@ avisa de problemas o decisiones que no se pueden deshacer.
     `create_carousel_post` (`image_urls` 2–10 JPEG, `caption`),
     `create_image_post` (`image_url`, `caption`), `create_story`
     (`image_url` o `video_url`, sin texto). Comentarios: `reply_to_comment`.
-- **URLs públicas** de los archivos: `https://cdn.jsdelivr.net/gh/OWNER/REPO@main/<ruta>`.
-  Si Instagram no la acepta, probar `https://raw.githubusercontent.com/OWNER/REPO/main/<ruta>`.
+- **URLs públicas** de los archivos: `https://cdn.jsdelivr.net/gh/biellopez77-png/proteam.instagram@main/<ruta>`.
+  Si Instagram no la acepta, probar `https://raw.githubusercontent.com/biellopez77-png/proteam.instagram/main/<ruta>`.
 - **Plantillas visuales**: `tools/gen.py` (Playwright + fuentes + capturas reales de la app en
   `tools/app/`). Formato feed 1080×1350, Stories 1080×1920.
 
