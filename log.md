@@ -2,6 +2,7 @@
 
 | Fecha | Pieza | Tipo | Resultado |
 | --- | --- | --- | --- |
+| 2026-11-01 20:23 | Ejecución programada | — | nada en ventana (siguiente: 001 reel, 2 nov 13:30); sin comentarios nuevos |
 | 2026-11-01 17:54 | Ejecución programada | — | nada en ventana (siguiente: 001 reel, 2 nov 13:30); sin comentarios nuevos |
 | 2026-11-01 13:24 | Ejecución programada | — | nada en ventana (siguiente: 001 reel, 2 nov 13:30) |
 | 2026-11-01 11:30 | Prueba: stories/s7-a.jpg | story | publicado, media_id 18122012644959227 |
@@ -19,3 +20,7 @@
 ### Revisión 1 nov 13:24
 - Métricas de los 8 Reels de los últimos 7 días sin cambios frente a la revisión de las 10:58 (máx. alcance 1.619, saltos 33–52 %).
 - Comentarios: ninguno nuevo (el único, 17922644775443380, ya respondido).
+
+### Revisión 1 nov 20:23
+- Métricas de los 8 Reels de los últimos 7 días prácticamente sin cambios (máx. alcance 1.619 / 1.808 vistas en 18161870296506713; saltos 33–52 %; guardados máx. 5, compartidos máx. 3).
+- Comentarios: ninguno nuevo.
