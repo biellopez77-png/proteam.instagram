@@ -2,6 +2,7 @@
 
 | Fecha | Pieza | Tipo | Resultado |
 | --- | --- | --- | --- |
+| 2026-11-01 17:54 | Ejecución programada | — | nada en ventana (siguiente: 001 reel, 2 nov 13:30); sin comentarios nuevos |
 | 2026-11-01 13:24 | Ejecución programada | — | nada en ventana (siguiente: 001 reel, 2 nov 13:30) |
 | 2026-11-01 11:30 | Prueba: stories/s7-a.jpg | story | publicado, media_id 18122012644959227 |
 | 2026-11-01 10:58 | Ejecución programada | — | nada en ventana (primera pieza pendiente: 001 reel, 2 nov 13:30) |
