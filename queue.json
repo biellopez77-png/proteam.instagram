@@ -36,8 +36,10 @@
   ],
   "caption": null,
   "cover": null,
-  "status": "pending",
-  "note": ""
+  "status": "published",
+  "note": "",
+  "media_id": "17992921665027638",
+  "published_at": "2026-11-02T18:23:00+01:00"
  },
  {
   "id": "004",
