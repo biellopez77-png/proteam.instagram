@@ -2,6 +2,8 @@
 
 | Fecha | Pieza | Tipo | Resultado |
 | --- | --- | --- | --- |
+| 2026-11-02 13:40 | 002 stories/s1-a.jpg | story | publicado, media_id 18100072433541589 |
+| 2026-11-02 13:30 | 001 reels/d1-corners.mp4 | reel | publicado, media_id 18116944760273127 |
 | 2026-11-02 10:58 | Ejecución programada | — | nada en ventana (siguiente: 001 reel, 2 nov 13:30); sin comentarios nuevos |
 | 2026-11-01 20:23 | Ejecución programada | — | nada en ventana (siguiente: 001 reel, 2 nov 13:30); sin comentarios nuevos |
 | 2026-11-01 17:54 | Ejecución programada | — | nada en ventana (siguiente: 001 reel, 2 nov 13:30); sin comentarios nuevos |
@@ -29,3 +31,8 @@
 ### Revisión 2 nov 10:58
 - Métricas de los 8 Reels de los últimos 7 días sin cambios (máx. alcance 1.619 / 1.808 vistas en 18161870296506713; saltos 33–52 %; guardados máx. 5, compartidos máx. 3).
 - Comentarios: ninguno nuevo (recuento estable en 2 en 18161870296506713, ya respondido).
+
+### Revisión 2 nov 13:40
+- Publicados 001 (Reel córners, 18116944760273127) y 002 (Story s1-a, 18100072433541589). Siguiente: 003 story, 18:00.
+- Métricas de los 8 Reels de los últimos 7 días sin cambios (máx. alcance 1.619 / 1.808 vistas en 18161870296506713; saltos 33–52 %; guardados máx. 5, compartidos máx. 3). El Reel nuevo aún sin datos (caché de Windsor).
+- Comentarios: ninguno nuevo.
