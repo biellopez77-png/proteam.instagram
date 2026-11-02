@@ -43,3 +43,9 @@
 - Reel 001 (córners, 18116944760273127): alcance 1.370, 1.511 vistas, 5 guardados, 0 compartidos, 0 comentarios en sus primeras ~5 h; ya en la franja alta de los Reels de la semana pasada.
 - Resto de Reels de los últimos 7 días sin cambios (máx. alcance 1.619 en 18161870296506713).
 - Comentarios: ninguno nuevo.
+
+### Revisión 2 nov 20:40
+- Publicada 004 (Reel p01 "¿Por qué juega uno y no otro?", 18124882051937183) a las 20:30 y 005 (el Reel en Story, 18066332501717281) a las 20:40.
+- Reel 001 (córners, 18116944760273127) a las ~8 h: alcance 1.379, 1.517 vistas, saltos 41 %, visionado medio 12,4 s (el más alto de la semana), 5 guardados, 0 compartidos, 56 interacciones.
+- Resto de Reels de los últimos 7 días sin cambios en la caché de Windsor (máx. alcance 1.619 en 18161870296506713; saltos 33–52 %). El Reel 004 aún sin datos.
+- Comentarios: ninguno nuevo (el único de la semana ya estaba respondido).
