@@ -96,10 +96,44 @@ S['s6-a'] = story_reel('d4-pases.jpg', '¿Cuántos pases hacen falta', 'para un 
 S['s7-a'] = story_app('Tu temporada,', 'planificada.', 'mo-plan', 'Planifica, controla la carga y analiza · pro-team.app')
 S['s7-b'] = story_q('¿De qué tema quieres', 'el próximo Reel?', 'Escríbenos por mensaje. Leemos todo.')
 
+# ========== Semana 9–15 nov 2026 ==========
+def story_post(img, lab, tit, em, sub):
+    return page(1080, 1920, top(lab) + f'<div class="h" style="top:230px;font-size:92px">{tit} <em>{em}</em></div><div class="ph" style="left:170px;top:640px;width:740px;height:925px;border-radius:40px"><img src="out/{img}.jpg"></div><div class="src" style="top:1680px;text-align:center;color:var(--ink);font-size:30px">{sub}</div>')
+# carrusel 4: Lo que dicen los datos #3 (edad relativa)
+L4 = 'Lo que dicen los datos · <b>#3</b>'
+SRC4 = 'Fuente: González Aramendi · Archivos de Medicina del Deporte, 2007'
+S['c4-1'] = page(1080, 1350, top(L4) + '<div class="h" style="top:330px;font-size:128px">¿Eliges a los mejores… <em>o a los mayores?</em></div><div class="p" style="top:900px">El mes en que nace un jugador pesa más de lo que parece.</div>' + foot(1, 5))
+S['c4-2'] = page(1080, 1350, top(L4) + '<div class="big" style="top:290px;font-size:330px">89<span style="font-size:170px"> %</span></div><div class="h" style="top:670px;font-size:80px">de la selección vasca sub-18 había nacido <em>entre enero y junio.</em></div><div class="p" style="top:1000px">Solo el 11 %, en la segunda mitad del año.</div><div class="src" style="bottom:150px">' + SRC4 + ' · temporada 02/03</div>' + foot(2, 5))
+S['c4-3'] = page(1080, 1350, top(L4) + '<div class="big" style="top:290px;font-size:250px">55<span style="font-size:150px"> / 45</span></div><div class="h" style="top:620px;font-size:84px">en Primera División. <em>La ventaja casi desaparece.</em></div><div class="p" style="top:930px">Nacidos en la primera mitad del año frente a la segunda.</div><div class="src" style="bottom:150px">' + SRC4 + '</div>' + foot(3, 5))
+S['c4-4'] = page(1080, 1350, top(L4) + '<div class="h" style="top:250px;font-size:96px">Qué puede hacer <em>el entrenador:</em></div><div class="li" style="top:620px"><div class="it"><i>1</i>Recordar que en una misma categoría puede haber casi un año de diferencia.</div><div class="it"><i>2</i>Valorar el progreso, no solo el físico de hoy.</div><div class="it"><i>3</i>Mirar los minutos de cada jugador a lo largo de la temporada.</div></div>' + foot(4, 5))
+S['c4-5'] = page(1080, 1350, top('ProTeam') + '<div class="h" style="top:300px;font-size:112px">Reparte minutos <em>con datos,</em> no a ojo.</div><div class="p" style="top:760px">ProTeam suma los minutos de cada jugador, partido a partido.</div><div style="position:absolute;left:84px;top:1000px"><span class="chip">Síguenos para el #4 →</span></div>' + foot(0, 0), True)
+# carrusel 5: Lo que dicen los datos #4 (balonmano, porteros)
+L5 = 'Los datos · <b>#4 · balonmano</b>'
+SRC5 = "Fuente: EHF · Men's EHF EURO 2026 analysis"
+S['c5-1'] = page(1080, 1350, top(L5) + '<div class="h" style="top:340px;font-size:136px">¿Tu portero para <em>poco?</em></div><div class="p" style="top:820px">Antes de responder, mira lo que pasa en el Europeo.</div>' + foot(1, 5))
+S['c5-2'] = page(1080, 1350, top(L5) + '<div class="big" style="top:290px;font-size:330px">65<span style="font-size:170px"> %</span></div><div class="h" style="top:670px;font-size:84px">de los tiros acabaron <em>en gol</em> en el EHF EURO 2026.</div><div class="p" style="top:1000px">4.046 goles en 6.253 lanzamientos. En 2024, el 62 %.</div><div class="src" style="bottom:150px">' + SRC5 + '</div>' + foot(2, 5))
+S['c5-3'] = page(1080, 1350, top(L5) + '<div class="big" style="top:290px;font-size:300px">31<span style="font-size:160px"> %</span></div><div class="h" style="top:650px;font-size:84px">de paradas de Emil Nielsen, portero de <em>la campeona.</em></div><div class="p" style="top:980px">Andreas Wolff, 31,9 %. Parar uno de cada tres ya es un gran torneo.</div><div class="src" style="bottom:150px">' + SRC5 + '</div>' + foot(3, 5))
+S['c5-4'] = page(1080, 1350, top(L5) + '<div class="h" style="top:230px;font-size:92px">Los goles encajados <em>no lo dicen todo.</em></div><div class="li" style="top:600px;right:520px"><div class="it" style="font-size:40px"><i>1</i>Mira el % de paradas.</div><div class="it" style="font-size:40px"><i>2</i>Sepáralo por zona de la portería.</div><div class="it" style="font-size:40px"><i>3</i>Y por posición: 6 m, 9 m, extremo, 7 m.</div></div><div class="ph" style="left:600px;top:560px;width:400px;height:640px"><img src="app/reg-3.jpg"></div>' + foot(4, 5))
+S['c5-5'] = page(1080, 1350, top('ProTeam') + '<div class="h" style="top:300px;font-size:112px">Cada tiro, <em>con su zona.</em></div><div class="p" style="top:720px">ProTeam registra dónde va cada lanzamiento y calcula el % de tu portero.</div><div style="position:absolute;left:84px;top:1000px"><span class="chip">Síguenos para el #5 →</span></div>' + foot(0, 0), True)
+# imagen: pregunta de la semana 2
+S['q2'] = page(1080, 1350, top('Pregunta de la <b>semana</b>') + '<div class="h" style="top:250px;font-size:92px">¿Cómo repartes los minutos <em>en fútbol base?</em></div><div class="li" style="top:690px;gap:26px"><div class="opt"><b>A</b>Por igual entre todos</div><div class="opt"><b>B</b>Según el rendimiento</div><div class="opt" style="font-size:38px"><b>C</b>Un mínimo para todos y el resto, según rendimiento</div></div><div class="src" style="top:1225px;color:var(--ink)">Responde con la letra en comentarios ↓</div>' + foot(0, 0))
+# stories 9–15 nov
+S['s8-a'] = story_q('¿Cuántos minutos lleva tu jugador', 'que menos juega?', 'Si no lo sabes de memoria, no eres el único. Respóndenos por mensaje.')
+S['s9-a'] = story_post('c4-1', 'Nuevo <b>post</b>', '¿Eliges a los mejores…', 'o a los mayores?', 'Lo que dicen los datos #3 · Ya en el perfil')
+S['s10-a'] = story_app('Toda la semana', 'en un vistazo.', 'mo-week', 'Planificación de entrenamientos · pro-team.app')
+S['s11-a'] = story_post('c5-1', 'Nuevo <b>post</b>', '¿Tu portero', 'para poco?', 'Lo que dicen los datos #4 · Ya en el perfil')
+S['s12-a'] = story_q('¿Sabes el % de paradas', 'de tu portero?', 'Respóndenos por mensaje con un sí o un no.')
+S['s13-a'] = story_post('q2', 'Pregunta de la <b>semana</b>', '¿Cómo repartes', 'los minutos?', 'Responde en el post · @app.proteam')
+S['s14-a'] = story_app('La convocatoria,', 'en dos toques.', 'fB', 'Partidos · pro-team.app')
+
+import sys
+ONLY = sys.argv[1:]
+
 async def main():
     async with async_playwright() as p:
         b = await p.chromium.launch()
         for k, html in S.items():
+            if ONLY and k not in ONLY: continue
             w, h = (1080, 1920) if k.startswith('s') else (1080, 1350)
             open(f'{B}/_t.html', 'w').write(html)
             pg = await b.new_page(viewport={'width': w, 'height': h})
