@@ -64,3 +64,10 @@
 - Reel 004 (p01, 18124882051937183): alcance 118, 139 vistas, saltos 51 %, visionado medio 7,5 s, 0 guardados. Reel 001 (córners): alcance 1.393, 1.532 vistas, saltos 41 %, 12,4 s, 5 guardados.
 - Resto de Reels de los últimos 7 días sin cambios (máx. alcance 1.619 en 18161870296506713; saltos 41–52 %).
 - Comentarios: ninguno nuevo (recuento estable en 2 en 18161870296506713, ya respondido).
+
+### Revisión 3 nov 17:55
+- Nada que publicar (siguiente: 009 Reel hb1 a las 20:30 y 010 Story a las 20:40).
+- Reel 007 (p02 "15 minutos para cambiar un partido", 18189706135408053) a las ~4,5 h: alcance 106, 112 vistas, saltos 57 %, visionado medio 5,8 s, 0 guardados. Arranque flojo, como 004: el gancho de pregunta de la serie p0x está por encima del objetivo de saltos (<40 %); revisar en la planificación del lunes.
+- Carrusel 006 (datos #1 córners, 18075831644750188): alcance 5, 17 vistas (caché de Windsor).
+- Reel 004 (p01): alcance 118, 139 vistas, saltos 51 %, 7,5 s. Reel 001 (córners): alcance 1.394, 1.533 vistas, saltos 41 %, 12,3 s, 5 guardados.
+- Comentarios: ninguno nuevo (los 2 de 18161870296506713 ya respondidos).
