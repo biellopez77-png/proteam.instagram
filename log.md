@@ -71,3 +71,12 @@
 - Carrusel 006 (datos #1 córners, 18075831644750188): alcance 5, 17 vistas (caché de Windsor).
 - Reel 004 (p01): alcance 118, 139 vistas, saltos 51 %, 7,5 s. Reel 001 (córners): alcance 1.394, 1.533 vistas, saltos 41 %, 12,3 s, 5 guardados.
 - Comentarios: ninguno nuevo (los 2 de 18161870296506713 ya respondidos).
+
+### Revisión 3 nov 20:40
+- Publicada 009 (Reel hb1 balonmano «No lo he visto», 17952203259344715) a las 20:30 y 010 (Story s2-a, 18129274280485145) a las 20:40. Siguiente: 011 Reel d2 penaltis, 4 nov 13:30.
+- Reel 007 (p02, 18189706135408053) a las ~7 h: alcance 107, 114 vistas, saltos 57 %, visionado medio 5,8 s, 0 guardados. Sigue flojo.
+- Carrusel 006 (datos #1 córners, 18075831644750188): alcance 6, 17 vistas (caché de Windsor).
+- Reel 004 (p01): alcance 118, 139 vistas, saltos 51 %, 7,5 s. Reel 001 (córners): alcance 1.394, 1.533 vistas, saltos 41 %, 12,3 s, 5 guardados.
+- Resto de Reels de los últimos 7 días sin cambios (máx. alcance 1.619 en 18161870296506713; saltos 42–52 %).
+- Panel: Plan sincronizado (007, 008, 009, 010 → Publicado con media_id). Analisis: nada nuevo con más de 24 h (carrusel 006 se evalúa mañana).
+- Comentarios: ninguno nuevo (los 2 de 18161870296506713 ya respondidos).
