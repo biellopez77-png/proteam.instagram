@@ -57,3 +57,10 @@
 - Reel 001 (córners, 18116944760273127): alcance 1.392, 1.532 vistas, saltos 41 %, visionado medio 12,4 s, 5 guardados. Sigue siendo el mejor en retención.
 - Resto de Reels de los últimos 7 días sin cambios (máx. alcance 1.619 en 18161870296506713). Caché de Windsor (plan de prueba: sin refresco forzado).
 - Comentarios: ninguno nuevo.
+
+### Revisión 3 nov 13:40
+- Publicada 007 (Reel p02 "15 minutos para cambiar un partido", 18189706135408053) a las 13:30 y 008 (el Reel en Story, 18113625515588337) a las 13:40. Siguiente: 009 reel hb1, 20:30.
+- Carrusel 006 (datos #1 córners, 18075831644750188) a las ~2,5 h: alcance 3, 8 vistas (caché de Windsor, aún sin datos reales).
+- Reel 004 (p01, 18124882051937183): alcance 118, 139 vistas, saltos 51 %, visionado medio 7,5 s, 0 guardados. Reel 001 (córners): alcance 1.393, 1.532 vistas, saltos 41 %, 12,4 s, 5 guardados.
+- Resto de Reels de los últimos 7 días sin cambios (máx. alcance 1.619 en 18161870296506713; saltos 41–52 %).
+- Comentarios: ninguno nuevo (recuento estable en 2 en 18161870296506713, ya respondido).
