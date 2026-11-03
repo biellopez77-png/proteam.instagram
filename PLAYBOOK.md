@@ -73,3 +73,33 @@ publicación falla, un reintento como máximo; después `failed` con el error.
   (descarga de voces de ElevenLabs). El backlog de Reels en `reels/` cubre hasta el 21 de
   noviembre de 2026 a 2 por día; avisar a Biel cuando queden menos de 14 (una semana).
 - Instagram no da seguidores por Reel ni datos demográficos por debajo de 100 seguidores.
+
+## Panel (ProTeam Instagram) — mantenerlo al día
+
+El panel de Biel está en https://claude.ai/artifact/GdqV6tqCq39FJVtTLNe8f7 y lee en vivo Instagram
+(Windsor.ai), la web (Lovable) y la hoja de Google **«ProTeam Instagram · Plan y análisis»**
+(id `1QS35fBtDK5yBM7KJntmFbG4JN_HLX2gY5IkDPRP3Ddo`, conector Google Sheets). Esa hoja es lo que hay
+que mantener; el panel se actualiza solo al leerla.
+
+- Pestaña **Plan** (columnas id, fecha, hora, tipo, pieza, pilar, estado, media_id, pred_min, pred,
+  pred_max, archivo): una fila por pieza de `queue.json`. `tipo` = Reel / Story / Carrusel / Imagen;
+  `estado` = Programado / Publicado / Fallido; `pilar` = Lo que dicen los datos / Problema del
+  entrenador / ProTeam en 30 s / Conversación / Fidelizar.
+  - **Tras publicar**: en la fila de esa pieza (misma fecha, hora y archivo) poner estado Publicado y el
+    media_id (como texto).
+  - **Al planificar**: añadir o reordenar filas para que coincidan con `queue.json`.
+- **Predicción** (pred_min, pred, pred_max = visualizaciones): para cada Reel programado, el mínimo,
+  la mediana y el máximo de las visualizaciones de los Reels ya publicados del mismo pilar, publicados
+  una sola vez (sin versiones de prueba de octubre). Recalcular cada lunes, y tras cada publicación si
+  cambia mucho. Carruseles e imágenes: igual con el feed publicado. Stories: sin predicción.
+- Pestaña **Analisis** (media_id, pieza, veredicto, funciona, falla, accion): cuando un Reel o carrusel
+  lleve 24 h publicado, añadir su fila. Veredicto = Muy bien / Bien / Regular / Flojo / Pendiente,
+  según saltos (objetivo < 40 %), visionado medio, visualizaciones frente a lo previsto, guardados y
+  compartidos. Frases cortas y con números reales; nunca inventar.
+- Pestaña **Aprendizajes** (fecha, aprendizaje, evidencia, accion, estado): cada lunes, 1–3 reglas
+  nuevas sacadas de los datos, con la acción aplicada en el calendario (estado Aplicado / En curso).
+- **Portadas**: si la planificación añade piezas nuevas, generar miniaturas (160 px de ancho, JPEG
+  calidad 70, data URL) de cada `files[0]` de `queue.json` (para vídeos, `covers/<nombre>.jpg`), como
+  JSON `[{archivo, img}]`; subirlo al panel con el Artifact tool (publish con `url` del panel,
+  `asset: true`) y actualizar el documento `datasets/portadas` (url, name, updated) con ArtifactData.
+  Si esas herramientas no están disponibles en la sesión, omitir este paso.
