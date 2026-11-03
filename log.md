@@ -2,6 +2,7 @@
 
 | Fecha | Pieza | Tipo | Resultado |
 | --- | --- | --- | --- |
+| 2026-11-03 10:58 | 006 feed/c1-1..4.jpg (Lo que dicen los datos #1: córners) | carousel | publicado, media_id 18075831644750188 |
 | 2026-11-02 18:23 | 003 stories/s1-b.jpg | story | publicado (22 min tarde), media_id 17992921665027638 |
 | 2026-11-02 13:40 | 002 stories/s1-a.jpg | story | publicado, media_id 18100072433541589 |
 | 2026-11-02 13:30 | 001 reels/d1-corners.mp4 | reel | publicado, media_id 18116944760273127 |
@@ -49,3 +50,10 @@
 - Reel 001 (córners, 18116944760273127) a las ~8 h: alcance 1.379, 1.517 vistas, saltos 41 %, visionado medio 12,4 s (el más alto de la semana), 5 guardados, 0 compartidos, 56 interacciones.
 - Resto de Reels de los últimos 7 días sin cambios en la caché de Windsor (máx. alcance 1.619 en 18161870296506713; saltos 33–52 %). El Reel 004 aún sin datos.
 - Comentarios: ninguno nuevo (el único de la semana ya estaba respondido).
+
+### Revisión 3 nov 10:58
+- Publicada 006 (carrusel "Lo que dicen los datos #1: los córners", 18075831644750188). Siguiente: 007 reel p02, 13:30.
+- Reel 004 (p01 "¿Por qué juega uno y no otro?", 18124882051937183) a las ~14 h: alcance 117, 137 vistas, saltos 51 %, visionado medio 7,4 s, 0 guardados, 1 interacción. Arranque flojo: gancho por encima del objetivo de saltos (<40 %); vigilar el formato "pregunta" en la planificación del lunes.
+- Reel 001 (córners, 18116944760273127): alcance 1.392, 1.532 vistas, saltos 41 %, visionado medio 12,4 s, 5 guardados. Sigue siendo el mejor en retención.
+- Resto de Reels de los últimos 7 días sin cambios (máx. alcance 1.619 en 18161870296506713). Caché de Windsor (plan de prueba: sin refresco forzado).
+- Comentarios: ninguno nuevo.
