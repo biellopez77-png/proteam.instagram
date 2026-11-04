@@ -151,8 +151,10 @@
   ],
   "caption": "Se marca alrededor del 78 %: uno de cada cinco no entra. 🎯\n¿Quién los tira en tu equipo: el que más mete o el que más ganas tiene? 👇\n#futbolbase #entrenadordefutbol #penalti",
   "cover": "covers/d2-penaltis.jpg",
-  "status": "pending",
-  "note": ""
+  "status": "published",
+  "note": "1.er intento con jsDelivr: container ERROR; publicado con raw.githubusercontent.com",
+  "media_id": "18109042844619543",
+  "published_at": "2026-11-04T13:31:00+01:00"
  },
  {
   "id": "012",
@@ -163,8 +165,10 @@
   ],
   "caption": null,
   "cover": null,
-  "status": "pending",
-  "note": ""
+  "status": "published",
+  "note": "",
+  "media_id": "17928758469431284",
+  "published_at": "2026-11-04T13:40:00+01:00"
  },
  {
   "id": "013",

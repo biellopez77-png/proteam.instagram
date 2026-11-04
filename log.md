@@ -88,3 +88,11 @@
 - Reel 001 (córners, 18116944760273127): alcance 1.396, 1.535 vistas, saltos 41 %, 12,3 s, 5 guardados.
 - Carrusel 006 (datos #1, 18075831644750188): alcance 6, 18 vistas (caché de Windsor; plan de prueba sin refresco forzado).
 - Comentarios: ninguno nuevo (los 2 de 18161870296506713 ya respondidos).
+
+### Revisión 4 nov 13:40
+- Publicada 011 (Reel d2 penaltis, 18109042844619543) a las 13:31: el 1.er intento con la URL de jsDelivr dio «container status: ERROR»; el reintento con raw.githubusercontent.com funcionó. Publicada 012 (Story s3-a, 17928758469431284) a las 13:40. Siguiente: 013 Story s3-b a las 18:00.
+- Reel 009 (hb1 balonmano, 17952203259344715) a las ~17 h: alcance 1.442, 1.644 vistas, saltos 29 %, 13,8 s, 6 guardados, 2 compartidos (muy por encima de lo previsto, 140–180–242; se evalúa a las 24 h).
+- Reel 007 (p02, 18189706135408053) a las 24 h: 123 vistas, alcance 111, saltos 57 %, 6,5 s, 0 guardados → Flojo (algo por debajo del mínimo previsto, 139). Reel 004 (p01): 143 vistas, saltos 51 %, 7,7 s. Reel 001 (córners): 1.535 vistas, saltos 41 %, 12,3 s, 5 guardados.
+- Carrusel 006 (datos #1, 18075831644750188) a las 27 h: 18 vistas, alcance 6, 0 guardados → Flojo (caché de Windsor; el plan de prueba no permite refresco forzado).
+- Panel: Plan sincronizado (011, 012 → Publicado). Analisis: 006 actualizado (Flojo) y 007 añadido (Flojo). Predicción de feed recalculada por quedar 006 muy por debajo: 18–62–73 (antes 39–62–73) en 016, 025, 031, 088, 091 y 094.
+- Comentarios: ninguno nuevo (solo los 2 de 18161870296506713, ya respondidos).
