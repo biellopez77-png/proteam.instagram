@@ -1,1198 +1,1200 @@
 [
- {
-  "id": "001",
-  "when": "2026-11-02T13:30:00+01:00",
-  "kind": "reel",
-  "files": [
-   "reels/d1-corners.mp4"
-  ],
-  "caption": "De cada 100 córners, solo unos 3 acaban en gol. ⚽\nEntonces, ¿por qué hay equipos que marcan tantos? Porque los trabajan y apuntan qué saque funciona.\n¿Tu equipo apunta sus córners? Te leemos 👇\n#futbolbase #entrenadordefutbol #balonparado #analisisdefutbol",
-  "cover": "covers/d1-corners.jpg",
-  "status": "published",
-  "note": "",
-  "media_id": "18116944760273127",
-  "published_at": "2026-11-02T13:30:20+01:00"
- },
- {
-  "id": "002",
-  "when": "2026-11-02T13:40:00+01:00",
-  "kind": "story",
-  "files": [
-   "stories/s1-a.jpg"
-  ],
-  "caption": null,
-  "cover": null,
-  "status": "published",
-  "note": "",
-  "media_id": "18100072433541589",
-  "published_at": "2026-11-02T13:40:15+01:00"
- },
- {
-  "id": "003",
-  "when": "2026-11-02T18:00:00+01:00",
-  "kind": "story",
-  "files": [
-   "stories/s1-b.jpg"
-  ],
-  "caption": null,
-  "cover": null,
-  "status": "published",
-  "note": "",
-  "media_id": "17992921665027638",
-  "published_at": "2026-11-02T18:23:00+01:00"
- },
- {
-  "id": "004",
-  "when": "2026-11-02T20:30:00+01:00",
-  "kind": "reel",
-  "files": [
-   "reels/p01-por-que-juega-uno-y-no-otro.mp4"
-  ],
-  "caption": "¿Por qué juega uno y no otro? 🤔\nLa convocatoria no es solo nivel: asistencia, estado físico, rendimiento en los entrenos y minutos acumulados.\n¿Qué pesa más en tu equipo? 👇\n#entrenadores #futbolbase #baloncesto #balonmano",
-  "cover": "covers/p01-por-que-juega-uno-y-no-otro.jpg",
-  "status": "published",
-  "note": "backlog",
-  "media_id": "18124882051937183",
-  "published_at": "2026-11-02T20:30:20+01:00"
- },
- {
-  "id": "005",
-  "when": "2026-11-02T20:40:00+01:00",
-  "kind": "story",
-  "files": [
-   "reels/p01-por-que-juega-uno-y-no-otro.mp4"
-  ],
-  "caption": null,
-  "cover": null,
-  "status": "published",
-  "note": "reel en story",
-  "media_id": "18066332501717281",
-  "published_at": "2026-11-02T20:40:15+01:00"
- },
- {
-  "id": "006",
-  "when": "2026-11-03T11:00:00+01:00",
-  "kind": "carousel",
-  "files": [
-   "feed/c1-1.jpg",
-   "feed/c1-2.jpg",
-   "feed/c1-3.jpg",
-   "feed/c1-4.jpg"
-  ],
-  "caption": "Lo que dicen los datos #1: los córners. ⚽\nDesliza y guárdalo para el próximo entreno de balón parado.\n¿Cuántos ensaya tu equipo por semana? 👇\n#futbolbase #balonparado #entrenadordefutbol",
-  "cover": null,
-  "status": "published",
-  "note": "",
-  "media_id": "18075831644750188",
-  "published_at": "2026-11-03T10:58:00+01:00"
- },
- {
-  "id": "007",
-  "when": "2026-11-03T13:30:00+01:00",
-  "kind": "reel",
-  "files": [
-   "reels/p02-que-se-decide-en-el-descanso.mp4"
-  ],
-  "caption": "15 minutos para cambiar un partido ⏱️\nEn el descanso, la sensación dice una cosa y los datos, a veces, otra.\n¿Qué se mira en vuestro vestuario? 👇\n#entrenadores #futbolbase #baloncesto #balonmano",
-  "cover": "covers/p02-que-se-decide-en-el-descanso.jpg",
-  "status": "published",
-  "note": "backlog",
-  "media_id": "18189706135408053",
-  "published_at": "2026-11-03T13:31:20+01:00"
- },
- {
-  "id": "008",
-  "when": "2026-11-03T13:40:00+01:00",
-  "kind": "story",
-  "files": [
-   "reels/p02-que-se-decide-en-el-descanso.mp4"
-  ],
-  "caption": null,
-  "cover": null,
-  "status": "published",
-  "note": "reel en story",
-  "media_id": "18113625515588337",
-  "published_at": "2026-11-03T13:40:15+01:00"
- },
- {
-  "id": "009",
-  "when": "2026-11-03T20:30:00+01:00",
-  "kind": "reel",
-  "files": [
-   "reels/hb1-no-lo-he-visto.mp4"
-  ],
-  "caption": "En balonmano hay tiros que nadie llega a ver. 🤾\nCon «No lo he visto» cuentan para el portero sin ensuciar los mapas.\nPruébalo 3 meses gratis, enlace en la bio.\n#balonmano #entrenadorbalonmano #estadistica",
-  "cover": "covers/hb1-no-lo-he-visto.jpg",
-  "status": "published",
-  "note": "",
-  "media_id": "17952203259344715",
-  "published_at": "2026-11-03T20:31:10+01:00"
- },
- {
-  "id": "010",
-  "when": "2026-11-03T20:40:00+01:00",
-  "kind": "story",
-  "files": [
-   "stories/s2-a.jpg"
-  ],
-  "caption": null,
-  "cover": null,
-  "status": "published",
-  "note": "",
-  "media_id": "18129274280485145",
-  "published_at": "2026-11-03T20:40:10+01:00"
- },
- {
-  "id": "011",
-  "when": "2026-11-04T13:30:00+01:00",
-  "kind": "reel",
-  "files": [
-   "reels/d2-penaltis.mp4"
-  ],
-  "caption": "Se marca alrededor del 78 %: uno de cada cinco no entra. 🎯\n¿Quién los tira en tu equipo: el que más mete o el que más ganas tiene? 👇\n#futbolbase #entrenadordefutbol #penalti",
-  "cover": "covers/d2-penaltis.jpg",
-  "status": "published",
-  "note": "1.er intento con jsDelivr: container ERROR; publicado con raw.githubusercontent.com",
-  "media_id": "18109042844619543",
-  "published_at": "2026-11-04T13:31:00+01:00"
- },
- {
-  "id": "012",
-  "when": "2026-11-04T13:40:00+01:00",
-  "kind": "story",
-  "files": [
-   "stories/s3-a.jpg"
-  ],
-  "caption": null,
-  "cover": null,
-  "status": "published",
-  "note": "",
-  "media_id": "17928758469431284",
-  "published_at": "2026-11-04T13:40:00+01:00"
- },
- {
-  "id": "013",
-  "when": "2026-11-04T18:00:00+01:00",
-  "kind": "story",
-  "files": [
-   "stories/s3-b.jpg"
-  ],
-  "caption": null,
-  "cover": null,
-  "status": "pending",
-  "note": ""
- },
- {
-  "id": "014",
-  "when": "2026-11-04T20:30:00+01:00",
-  "kind": "reel",
-  "files": [
-   "reels/p03-cuantas-ocasiones-para-un-gol.mp4"
-  ],
-  "caption": "14 tiros y 0,6 goles esperados. 6 tiros y 1,9. ¿Quién mereció más? ⚽\nLos goles esperados (xG) dan a cada tiro su probabilidad de gol. Datos de ejemplo.\n¿Lo miráis en vuestro equipo? 👇\n#entrenadores #futbolbase #baloncesto #balonmano",
-  "cover": "covers/p03-cuantas-ocasiones-para-un-gol.jpg",
-  "status": "pending",
-  "note": "backlog"
- },
- {
-  "id": "015",
-  "when": "2026-11-04T20:40:00+01:00",
-  "kind": "story",
-  "files": [
-   "reels/p03-cuantas-ocasiones-para-un-gol.mp4"
-  ],
-  "caption": null,
-  "cover": null,
-  "status": "pending",
-  "note": "reel en story"
- },
- {
-  "id": "016",
-  "when": "2026-11-05T11:00:00+01:00",
-  "kind": "carousel",
-  "files": [
-   "feed/c2-1.jpg",
-   "feed/c2-2.jpg",
-   "feed/c2-3.jpg",
-   "feed/c2-4.jpg",
-   "feed/c2-5.jpg"
-  ],
-  "caption": "3 cosas que la estadística de balonmano se pierde en directo, y cómo las registra ProTeam. 🤾\nGuárdalo y compártelo con tu cuerpo técnico.\n#balonmano #entrenadorbalonmano #estadistica",
-  "cover": null,
-  "status": "pending",
-  "note": ""
- },
- {
-  "id": "017",
-  "when": "2026-11-05T13:30:00+01:00",
-  "kind": "reel",
-  "files": [
-   "reels/p04-cuando-se-sienta-por-faltas.mp4"
-  ],
-  "caption": "Dos faltas en el primer cuarto: ¿banquillo o se arriesga? 🏀\nCon 5 faltas personales se acaba el partido (FIBA). Saber cuántas lleva cada uno cambia los minutos.\n¿Qué haríais? 👇\n#entrenadores #futbolbase #baloncesto #balonmano",
-  "cover": "covers/p04-cuando-se-sienta-por-faltas.jpg",
-  "status": "pending",
-  "note": "backlog"
- },
- {
-  "id": "018",
-  "when": "2026-11-05T13:40:00+01:00",
-  "kind": "story",
-  "files": [
-   "reels/p04-cuando-se-sienta-por-faltas.mp4"
-  ],
-  "caption": null,
-  "cover": null,
-  "status": "pending",
-  "note": "reel en story"
- },
- {
-  "id": "019",
-  "when": "2026-11-05T20:30:00+01:00",
-  "kind": "reel",
-  "files": [
-   "reels/hb2-golpes-francos.mp4"
-  ],
-  "caption": "Un toque y ProTeam cuenta los golpes francos y cada cambio de posesión. 🤾\nEscribe PLAN y te contamos cómo configurarlo para tu equipo.\n#balonmano #entrenadorbalonmano #balonmanobase",
-  "cover": "covers/hb2-golpes-francos.jpg",
-  "status": "pending",
-  "note": ""
- },
- {
-  "id": "020",
-  "when": "2026-11-05T20:40:00+01:00",
-  "kind": "story",
-  "files": [
-   "stories/s4-a.jpg"
-  ],
-  "caption": null,
-  "cover": null,
-  "status": "pending",
-  "note": ""
- },
- {
-  "id": "021",
-  "when": "2026-11-06T13:30:00+01:00",
-  "kind": "reel",
-  "files": [
-   "reels/d3-primer-gol.mp4"
-  ],
-  "caption": "Quien marca primero gana unos 7 de cada 10 partidos en las grandes ligas. ⏱️\n¿Y los otros 3? Ahí manda el minuto.\nSíguenos: cada semana, datos que cambian cómo entrenas.\n#futbol #entrenadordefutbol #datos",
-  "cover": "covers/d3-primer-gol.jpg",
-  "status": "pending",
-  "note": ""
- },
- {
-  "id": "022",
-  "when": "2026-11-06T13:40:00+01:00",
-  "kind": "story",
-  "files": [
-   "stories/s5-a.jpg"
-  ],
-  "caption": null,
-  "cover": null,
-  "status": "pending",
-  "note": ""
- },
- {
-  "id": "023",
-  "when": "2026-11-06T20:30:00+01:00",
-  "kind": "reel",
-  "files": [
-   "reels/p05-donde-para-mas-un-portero.mp4"
-  ],
-  "caption": "¿Por dónde le meten los goles a vuestro portero? 🧤\nDividir la portería en 9 zonas enseña dónde para más y dónde menos. Datos de ejemplo.\n👇\n#entrenadores #futbolbase #baloncesto #balonmano",
-  "cover": "covers/p05-donde-para-mas-un-portero.jpg",
-  "status": "pending",
-  "note": "backlog"
- },
- {
-  "id": "024",
-  "when": "2026-11-06T20:40:00+01:00",
-  "kind": "story",
-  "files": [
-   "reels/p05-donde-para-mas-un-portero.mp4"
-  ],
-  "caption": null,
-  "cover": null,
-  "status": "pending",
-  "note": "reel en story"
- },
- {
-  "id": "025",
-  "when": "2026-11-07T11:00:00+01:00",
-  "kind": "image",
-  "files": [
-   "feed/q1.jpg"
-  ],
-  "caption": "Pregunta de la semana: ¿qué te quita más tiempo fuera del campo?\nA) Convocatorias y asistencia\nB) Pasar a limpio la estadística\nC) Planificar la semana\nResponde con la letra 👇\n#entrenadores #futbolbase #baloncesto #balonmano",
-  "cover": null,
-  "status": "pending",
-  "note": ""
- },
- {
-  "id": "026",
-  "when": "2026-11-07T13:30:00+01:00",
-  "kind": "reel",
-  "files": [
-   "reels/p06-que-queda-de-un-partido.mp4"
-  ],
-  "caption": "Del partido del domingo, el lunes quedan 3 o 4 jugadas en la memoria 🧠\nUn informe guarda el resto: datos, lo que funcionó y lo que hay que cambiar.\n¿Repasáis el partido? 👇\n#entrenadores #futbolbase #baloncesto #balonmano",
-  "cover": "covers/p06-que-queda-de-un-partido.jpg",
-  "status": "pending",
-  "note": "backlog"
- },
- {
-  "id": "027",
-  "when": "2026-11-07T13:40:00+01:00",
-  "kind": "story",
-  "files": [
-   "reels/p06-que-queda-de-un-partido.mp4"
-  ],
-  "caption": null,
-  "cover": null,
-  "status": "pending",
-  "note": "reel en story"
- },
- {
-  "id": "028",
-  "when": "2026-11-07T20:30:00+01:00",
-  "kind": "reel",
-  "files": [
-   "reels/d4-pases.mp4"
-  ],
-  "caption": "En los años sesenta, Charles Reep vio que la mayoría de goles llegaban tras 3 pases o menos.\n¿Hay que jugar directo? No tan rápido.\nGuárdalo para tu próxima charla. 📌\n#futbolbase #tactica #entrenadordefutbol",
-  "cover": "covers/d4-pases.jpg",
-  "status": "pending",
-  "note": ""
- },
- {
-  "id": "029",
-  "when": "2026-11-07T20:40:00+01:00",
-  "kind": "story",
-  "files": [
-   "stories/s6-a.jpg"
-  ],
-  "caption": null,
-  "cover": null,
-  "status": "pending",
-  "note": ""
- },
- {
-  "id": "030",
-  "when": "2026-11-08T11:00:00+01:00",
-  "kind": "story",
-  "files": [
-   "stories/s7-a.jpg"
-  ],
-  "caption": null,
-  "cover": null,
-  "status": "published",
-  "note": "publicada como prueba el 1 nov",
-  "media_id": "18122012644959227",
-  "published_at": "2026-11-01T11:30:00+01:00"
- },
- {
-  "id": "031",
-  "when": "2026-11-08T11:00:00+01:00",
-  "kind": "carousel",
-  "files": [
-   "feed/c3-1.jpg",
-   "feed/c3-2.jpg",
-   "feed/c3-3.jpg",
-   "feed/c3-4.jpg"
-  ],
-  "caption": "Lo que dicen los datos #2: los penaltis. 🎯\n¿Quién los tira en tu equipo? Desliza.\n#futbolbase #entrenadordefutbol #penalti",
-  "cover": null,
-  "status": "pending",
-  "note": ""
- },
- {
-  "id": "032",
-  "when": "2026-11-08T13:30:00+01:00",
-  "kind": "reel",
-  "files": [
-   "reels/p07-vienen-11-de-18.mp4"
-  ],
-  "caption": "Entreno preparado para 18… y vienen 11 😅\nSaber antes quién viene permite adaptar grupos y espacios sin improvisar.\n¿Os pasa a menudo? 👇\n#entrenadores #futbolbase #baloncesto #balonmano",
-  "cover": "covers/p07-vienen-11-de-18.jpg",
-  "status": "pending",
-  "note": "backlog"
- },
- {
-  "id": "033",
-  "when": "2026-11-08T13:40:00+01:00",
-  "kind": "story",
-  "files": [
-   "reels/p07-vienen-11-de-18.mp4"
-  ],
-  "caption": null,
-  "cover": null,
-  "status": "pending",
-  "note": "reel en story"
- },
- {
-  "id": "034",
-  "when": "2026-11-08T19:00:00+01:00",
-  "kind": "story",
-  "files": [
-   "stories/s7-b.jpg"
-  ],
-  "caption": null,
-  "cover": null,
-  "status": "pending",
-  "note": ""
- },
- {
-  "id": "035",
-  "when": "2026-11-08T20:30:00+01:00",
-  "kind": "reel",
-  "files": [
-   "reels/e04-antes-de-cada-entreno.mp4"
-  ],
-  "caption": "¿Cuántas decisiones tomas antes de cada entreno? 🤯\nQuién viene, qué toca, cuánto cargar… mejor tenerlo todo en una pantalla.\n¿Dónde lo tienes tú ahora? 👇\n#entrenadores #organizacion #futbolbase #baloncesto #balonmano",
-  "cover": "covers/e04-antes-de-cada-entreno.jpg",
-  "status": "pending",
-  "note": "backlog"
- },
- {
-  "id": "036",
-  "when": "2026-11-08T20:40:00+01:00",
-  "kind": "story",
-  "files": [
-   "reels/e04-antes-de-cada-entreno.mp4"
-  ],
-  "caption": null,
-  "cover": null,
-  "status": "pending",
-  "note": "reel en story"
- },
- {
-  "id": "037",
-  "when": "2026-11-09T13:30:00+01:00",
-  "kind": "reel",
-  "files": [
-   "reels/p08-minutos-del-que-menos-juega.mp4"
-  ],
-  "caption": "95 minutos en 10 jornadas ⏱️\nEn un partido no se nota, en una temporada sí. Datos de ejemplo.\n¿Cómo se reparten los minutos en tu equipo? 👇\n#entrenadores #futbolbase #baloncesto #balonmano",
-  "cover": "covers/p08-minutos-del-que-menos-juega.jpg",
-  "status": "pending",
-  "note": "backlog"
- },
- {
-  "id": "038",
-  "when": "2026-11-09T13:40:00+01:00",
-  "kind": "story",
-  "files": [
-   "reels/p08-minutos-del-que-menos-juega.mp4"
-  ],
-  "caption": null,
-  "cover": null,
-  "status": "pending",
-  "note": "reel en story"
- },
- {
-  "id": "087",
-  "when": "2026-11-09T18:00:00+01:00",
-  "kind": "story",
-  "files": [
-   "stories/s8-a.jpg"
-  ],
-  "caption": null,
-  "cover": null,
-  "status": "pending",
-  "note": "pregunta rápida (minutos)"
- },
- {
-  "id": "039",
-  "when": "2026-11-09T20:30:00+01:00",
-  "kind": "reel",
-  "files": [
-   "reels/p21-nunca-da-tiempo-a-todo.mp4"
-  ],
-  "caption": "90 minutos planificados… 68 de ejercicio real ⏱️\nMedir cada bloque enseña dónde se va el tiempo. Datos de ejemplo.\n¿Os da tiempo a todo? 👇\n#entrenadores #futbolbase #baloncesto #balonmano",
-  "cover": "covers/p21-nunca-da-tiempo-a-todo.jpg",
-  "status": "pending",
-  "note": "backlog"
- },
- {
-  "id": "040",
-  "when": "2026-11-09T20:40:00+01:00",
-  "kind": "story",
-  "files": [
-   "reels/p21-nunca-da-tiempo-a-todo.mp4"
-  ],
-  "caption": null,
-  "cover": null,
-  "status": "pending",
-  "note": "reel en story"
- },
- {
-  "id": "088",
-  "when": "2026-11-10T11:00:00+01:00",
-  "kind": "carousel",
-  "files": [
-   "feed/c4-1.jpg",
-   "feed/c4-2.jpg",
-   "feed/c4-3.jpg",
-   "feed/c4-4.jpg",
-   "feed/c4-5.jpg"
-  ],
-  "caption": "Lo que dicen los datos #3: el efecto de la edad relativa en el fútbol base. 📅\nEn la selección vasca sub-18 estudiada, el 89 % había nacido entre enero y junio. En Primera División, la diferencia casi desaparece (55/45).\nFuente: González Aramendi, Archivos de Medicina del Deporte (2007).\nSíguenos para no perderte el #4 👉 @app.proteam\n#futbolbase #entrenadordefutbol #edadrelativa #formaciondeportiva",
-  "cover": null,
-  "status": "pending",
-  "note": "datos #3"
- },
- {
-  "id": "089",
-  "when": "2026-11-10T11:10:00+01:00",
-  "kind": "story",
-  "files": [
-   "stories/s9-a.jpg"
-  ],
-  "caption": null,
-  "cover": null,
-  "status": "pending",
-  "note": "aviso post datos #3"
- },
- {
-  "id": "041",
-  "when": "2026-11-10T13:30:00+01:00",
-  "kind": "reel",
-  "files": [
-   "reels/p10-cuando-vuelve-un-lesionado.mp4"
-  ],
-  "caption": "«¿Llega al sábado?» La pregunta de cada semana 🩹\nQué tiene, desde cuándo y cuándo vuelve, y una vuelta por fases. Datos de ejemplo.\n👇\n#entrenadores #futbolbase #baloncesto #balonmano",
-  "cover": "covers/p10-cuando-vuelve-un-lesionado.jpg",
-  "status": "pending",
-  "note": "backlog"
- },
- {
-  "id": "042",
-  "when": "2026-11-10T13:40:00+01:00",
-  "kind": "story",
-  "files": [
-   "reels/p10-cuando-vuelve-un-lesionado.mp4"
-  ],
-  "caption": null,
-  "cover": null,
-  "status": "pending",
-  "note": "reel en story"
- },
- {
-  "id": "043",
-  "when": "2026-11-10T20:30:00+01:00",
-  "kind": "reel",
-  "files": [
-   "reels/p09-faltar-uno-a-la-semana.mp4"
-  ],
-  "caption": "Faltar a 1 de 3 entrenos por semana = 36 entrenos menos en una temporada de 36 semanas. Unos 3 meses sin entrenar 📉\n¿Cuánto se falta en tu equipo? 👇\n#entrenadores #futbolbase #baloncesto #balonmano",
-  "cover": "covers/p09-faltar-uno-a-la-semana.jpg",
-  "status": "pending",
-  "note": "backlog"
- },
- {
-  "id": "044",
-  "when": "2026-11-10T20:40:00+01:00",
-  "kind": "story",
-  "files": [
-   "reels/p09-faltar-uno-a-la-semana.mp4"
-  ],
-  "caption": null,
-  "cover": null,
-  "status": "pending",
-  "note": "reel en story"
- },
- {
-  "id": "045",
-  "when": "2026-11-11T13:30:00+01:00",
-  "kind": "reel",
-  "files": [
-   "reels/p26-un-mal-dia-de-entreno.mp4"
-  ],
-  "caption": "2 de 8 hoy… pero 31 de 48 en el último mes 🎯\nUn día malo es un día. La tendencia es lo que cuenta. Datos de ejemplo.\n👇\n#entrenadores #futbolbase #baloncesto #balonmano",
-  "cover": "covers/p26-un-mal-dia-de-entreno.jpg",
-  "status": "pending",
-  "note": "backlog"
- },
- {
-  "id": "046",
-  "when": "2026-11-11T13:40:00+01:00",
-  "kind": "story",
-  "files": [
-   "reels/p26-un-mal-dia-de-entreno.mp4"
-  ],
-  "caption": null,
-  "cover": null,
-  "status": "pending",
-  "note": "reel en story"
- },
- {
-  "id": "090",
-  "when": "2026-11-11T18:00:00+01:00",
-  "kind": "story",
-  "files": [
-   "stories/s10-a.jpg"
-  ],
-  "caption": null,
-  "cover": null,
-  "status": "pending",
-  "note": "dentro de ProTeam"
- },
- {
-  "id": "047",
-  "when": "2026-11-11T20:30:00+01:00",
-  "kind": "reel",
-  "files": [
-   "reels/p13-por-que-el-dia-antes-mas-suave.mp4"
-  ],
-  "caption": "«Míster, ¿hoy tan suave?» 🙃\nEl día antes del partido se baja el volumen para activar sin cansar y llegar fresco.\n¿Cómo es vuestro último entreno? 👇\n#entrenadores #futbolbase #baloncesto #balonmano",
-  "cover": "covers/p13-por-que-el-dia-antes-mas-suave.jpg",
-  "status": "pending",
-  "note": "backlog"
- },
- {
-  "id": "048",
-  "when": "2026-11-11T20:40:00+01:00",
-  "kind": "story",
-  "files": [
-   "reels/p13-por-que-el-dia-antes-mas-suave.mp4"
-  ],
-  "caption": null,
-  "cover": null,
-  "status": "pending",
-  "note": "reel en story"
- },
- {
-  "id": "091",
-  "when": "2026-11-12T11:00:00+01:00",
-  "kind": "carousel",
-  "files": [
-   "feed/c5-1.jpg",
-   "feed/c5-2.jpg",
-   "feed/c5-3.jpg",
-   "feed/c5-4.jpg",
-   "feed/c5-5.jpg"
-  ],
-  "caption": "Lo que dicen los datos #4: porteros de balonmano. 🧤\nEn el EHF EURO 2026, el 65 % de los tiros acabaron en gol (4.046 de 6.253). Emil Nielsen, portero de la campeona, paró el 31 %.\nPor eso, para valorar a tu portero, mira su % de paradas por zona y por posición de lanzamiento, no solo los goles encajados.\nFuente: EHF, Men's EHF EURO 2026 analysis.\nSíguenos para no perderte el #5 👉 @app.proteam\n#balonmano #entrenadordebalonmano #porterodebalonmano #estadisticabalonmano",
-  "cover": null,
-  "status": "pending",
-  "note": "datos #4 balonmano"
- },
- {
-  "id": "092",
-  "when": "2026-11-12T11:10:00+01:00",
-  "kind": "story",
-  "files": [
-   "stories/s11-a.jpg"
-  ],
-  "caption": null,
-  "cover": null,
-  "status": "pending",
-  "note": "aviso post datos #4"
- },
- {
-  "id": "049",
-  "when": "2026-11-12T13:30:00+01:00",
-  "kind": "reel",
-  "files": [
-   "reels/p16-el-mismo-entreno-cansa-igual.mp4"
-  ],
-  "caption": "Mismo entreno, mismos minutos… y cargas muy distintas 💪\nCon el RPE (esfuerzo del 0 al 10 × minutos) se ve a quién le ha costado más. Datos de ejemplo.\n👇\n#entrenadores #futbolbase #baloncesto #balonmano",
-  "cover": "covers/p16-el-mismo-entreno-cansa-igual.jpg",
-  "status": "pending",
-  "note": "backlog"
- },
- {
-  "id": "050",
-  "when": "2026-11-12T13:40:00+01:00",
-  "kind": "story",
-  "files": [
-   "reels/p16-el-mismo-entreno-cansa-igual.mp4"
-  ],
-  "caption": null,
-  "cover": null,
-  "status": "pending",
-  "note": "reel en story"
- },
- {
-  "id": "051",
-  "when": "2026-11-12T20:30:00+01:00",
-  "kind": "reel",
-  "files": [
-   "reels/p25-ha-mejorado-desde-septiembre.mp4"
-  ],
-  "caption": "«Está más rápido»… ¿seguro? ⏱️\nMismo test, mismas condiciones, cada cierto tiempo: así se ve la mejora de verdad. Datos de ejemplo.\n👇\n#entrenadores #futbolbase #baloncesto #balonmano",
-  "cover": "covers/p25-ha-mejorado-desde-septiembre.jpg",
-  "status": "pending",
-  "note": "backlog"
- },
- {
-  "id": "052",
-  "when": "2026-11-12T20:40:00+01:00",
-  "kind": "story",
-  "files": [
-   "reels/p25-ha-mejorado-desde-septiembre.mp4"
-  ],
-  "caption": null,
-  "cover": null,
-  "status": "pending",
-  "note": "reel en story"
- },
- {
-  "id": "053",
-  "when": "2026-11-13T13:30:00+01:00",
-  "kind": "reel",
-  "files": [
-   "reels/p22-dos-partidos-en-una-semana.mp4"
-  ],
-  "caption": "Semana de dos partidos: el riesgo sube 📈\nEn un equipo profesional, la tasa de lesiones fue de 25,6 por 1.000 h con dos partidos por semana frente a 4,1 con uno (Dupont et al., 2010).\n👇\n#entrenadores #futbolbase #baloncesto #balonmano",
-  "cover": "covers/p22-dos-partidos-en-una-semana.jpg",
-  "status": "pending",
-  "note": "backlog"
- },
- {
-  "id": "054",
-  "when": "2026-11-13T13:40:00+01:00",
-  "kind": "story",
-  "files": [
-   "reels/p22-dos-partidos-en-una-semana.mp4"
-  ],
-  "caption": null,
-  "cover": null,
-  "status": "pending",
-  "note": "reel en story"
- },
- {
-  "id": "093",
-  "when": "2026-11-13T18:00:00+01:00",
-  "kind": "story",
-  "files": [
-   "stories/s12-a.jpg"
-  ],
-  "caption": null,
-  "cover": null,
-  "status": "pending",
-  "note": "pregunta rápida (portero)"
- },
- {
-  "id": "055",
-  "when": "2026-11-13T20:30:00+01:00",
-  "kind": "reel",
-  "files": [
-   "reels/p19-volver-de-un-paron-a-tope.mp4"
-  ],
-  "caption": "Dos semanas de parón y el lunes… ¿a tope? 🚦\nLas subidas bruscas de carga se asocian a más lesiones (Gabbett, 2016). Mejor volver poco a poco. Datos de ejemplo.\n👇\n#entrenadores #futbolbase #baloncesto #balonmano",
-  "cover": "covers/p19-volver-de-un-paron-a-tope.jpg",
-  "status": "pending",
-  "note": "backlog"
- },
- {
-  "id": "056",
-  "when": "2026-11-13T20:40:00+01:00",
-  "kind": "story",
-  "files": [
-   "reels/p19-volver-de-un-paron-a-tope.mp4"
-  ],
-  "caption": null,
-  "cover": null,
-  "status": "pending",
-  "note": "reel en story"
- },
- {
-  "id": "094",
-  "when": "2026-11-14T11:00:00+01:00",
-  "kind": "image",
-  "files": [
-   "feed/q2.jpg"
-  ],
-  "caption": "Pregunta de la semana: ¿cómo repartes los minutos en fútbol base?\nA) Por igual entre todos\nB) Según el rendimiento\nC) Un mínimo para todos y el resto, según rendimiento\nResponde con la letra 👇\n#futbolbase #entrenadordefutbol #baloncestoformativo #balonmano",
-  "cover": null,
-  "status": "pending",
-  "note": "pregunta de la semana"
- },
- {
-  "id": "095",
-  "when": "2026-11-14T11:10:00+01:00",
-  "kind": "story",
-  "files": [
-   "stories/s13-a.jpg"
-  ],
-  "caption": null,
-  "cover": null,
-  "status": "pending",
-  "note": "aviso pregunta de la semana"
- },
- {
-  "id": "057",
-  "when": "2026-11-14T13:30:00+01:00",
-  "kind": "reel",
-  "files": [
-   "reels/p15-cuanto-tarda-en-recuperarse.mp4"
-  ],
-  "caption": "Un partido no se recupera en una noche ⏳\nEn fútbol, el rendimiento físico puede tardar 72 horas o más en volver del todo (Nédélec et al.).\n¿Cómo recuperáis? 👇\n#entrenadores #futbolbase #baloncesto #balonmano",
-  "cover": "covers/p15-cuanto-tarda-en-recuperarse.jpg",
-  "status": "pending",
-  "note": "backlog"
- },
- {
-  "id": "058",
-  "when": "2026-11-14T13:40:00+01:00",
-  "kind": "story",
-  "files": [
-   "reels/p15-cuanto-tarda-en-recuperarse.mp4"
-  ],
-  "caption": null,
-  "cover": null,
-  "status": "pending",
-  "note": "reel en story"
- },
- {
-  "id": "059",
-  "when": "2026-11-14T20:30:00+01:00",
-  "kind": "reel",
-  "files": [
-   "reels/e09-lo-que-no-recuerdas-del-partido.mp4"
-  ],
-  "caption": "¿Qué recuerdas del último partido? ⚽🏀🤾\nLa memoria se queda con unas pocas jugadas. Apuntarlo en directo te deja el análisis hecho al acabar.\n¿Cómo analizas tus partidos? 👇\n#analisis #entrenadores #futbolbase #baloncesto #balonmano",
-  "cover": "covers/e09-lo-que-no-recuerdas-del-partido.jpg",
-  "status": "pending",
-  "note": "backlog"
- },
- {
-  "id": "060",
-  "when": "2026-11-14T20:40:00+01:00",
-  "kind": "story",
-  "files": [
-   "reels/e09-lo-que-no-recuerdas-del-partido.mp4"
-  ],
-  "caption": null,
-  "cover": null,
-  "status": "pending",
-  "note": "reel en story"
- },
- {
-  "id": "061",
-  "when": "2026-11-15T13:30:00+01:00",
-  "kind": "reel",
-  "files": [
-   "reels/p30-ha-salido-bien-el-entreno.mp4"
-  ],
-  "caption": "«Ha salido bien»… ¿según quién? 🤔\nIntensidad, calidad, atención y objetivo cumplido: un informe de 1 minuto al acabar. Datos de ejemplo.\n👇\n#entrenadores #futbolbase #baloncesto #balonmano",
-  "cover": "covers/p30-ha-salido-bien-el-entreno.jpg",
-  "status": "pending",
-  "note": "backlog"
- },
- {
-  "id": "062",
-  "when": "2026-11-15T13:40:00+01:00",
-  "kind": "story",
-  "files": [
-   "reels/p30-ha-salido-bien-el-entreno.mp4"
-  ],
-  "caption": null,
-  "cover": null,
-  "status": "pending",
-  "note": "reel en story"
- },
- {
-  "id": "096",
-  "when": "2026-11-15T18:00:00+01:00",
-  "kind": "story",
-  "files": [
-   "stories/s14-a.jpg"
-  ],
-  "caption": null,
-  "cover": null,
-  "status": "pending",
-  "note": "dentro de ProTeam"
- },
- {
-  "id": "063",
-  "when": "2026-11-15T20:30:00+01:00",
-  "kind": "reel",
-  "files": [
-   "reels/p12-como-se-reparte-el-staff.mp4"
-  ],
-  "caption": "WhatsApp, libreta, Excel y notas del móvil: cuatro sitios para un mismo equipo 🤯\nRepartir tareas y tenerlo todo en un solo sitio.\n¿Cuántos sois en el cuerpo técnico? 👇\n#entrenadores #futbolbase #baloncesto #balonmano",
-  "cover": "covers/p12-como-se-reparte-el-staff.jpg",
-  "status": "pending",
-  "note": "backlog"
- },
- {
-  "id": "064",
-  "when": "2026-11-15T20:40:00+01:00",
-  "kind": "story",
-  "files": [
-   "reels/p12-como-se-reparte-el-staff.mp4"
-  ],
-  "caption": null,
-  "cover": null,
-  "status": "pending",
-  "note": "reel en story"
- },
- {
-  "id": "065",
-  "when": "2026-11-16T13:30:00+01:00",
-  "kind": "reel",
-  "files": [
-   "reels/p28-como-se-sabe-si-esta-aprendido.mp4"
-  ],
-  "caption": "¿Cuándo está aprendida una salida de balón? ✅\nCon su porcentaje de avance, una fecha de revisión y un indicador claro. Datos de ejemplo.\n👇\n#entrenadores #futbolbase #baloncesto #balonmano",
-  "cover": "covers/p28-como-se-sabe-si-esta-aprendido.jpg",
-  "status": "pending",
-  "note": "backlog"
- },
- {
-  "id": "066",
-  "when": "2026-11-16T13:40:00+01:00",
-  "kind": "story",
-  "files": [
-   "reels/p28-como-se-sabe-si-esta-aprendido.mp4"
-  ],
-  "caption": null,
-  "cover": null,
-  "status": "pending",
-  "note": "reel en story"
- },
- {
-  "id": "067",
-  "when": "2026-11-16T20:30:00+01:00",
-  "kind": "reel",
-  "files": [
-   "reels/p17-para-que-sirve-un-test-de-salto.mp4"
-  ],
-  "caption": "Un salto dice más de lo que parece 🦘\nMide la potencia de piernas, y si baja respecto a lo habitual puede indicar fatiga (Claudino et al., 2017, sobre el salto con contramovimiento). Datos de ejemplo.\n👇\n#entrenadores #futbolbase #baloncesto #balonmano",
-  "cover": "covers/p17-para-que-sirve-un-test-de-salto.jpg",
-  "status": "pending",
-  "note": "backlog"
- },
- {
-  "id": "068",
-  "when": "2026-11-16T20:40:00+01:00",
-  "kind": "story",
-  "files": [
-   "reels/p17-para-que-sirve-un-test-de-salto.mp4"
-  ],
-  "caption": null,
-  "cover": null,
-  "status": "pending",
-  "note": "reel en story"
- },
- {
-  "id": "069",
-  "when": "2026-11-17T13:30:00+01:00",
-  "kind": "reel",
-  "files": [
-   "reels/p14-semanas-con-piernas-pesadas.mp4"
-  ],
-  "caption": "No siempre es entrenar más fuerte: a veces es entrenar siempre igual 🦵\nFoster (1998) lo llamó monotonía: media de la carga diaria ÷ su desviación. Alternar días duros y suaves la baja.\n👇\n#entrenadores #futbolbase #baloncesto #balonmano",
-  "cover": "covers/p14-semanas-con-piernas-pesadas.jpg",
-  "status": "pending",
-  "note": "backlog"
- },
- {
-  "id": "070",
-  "when": "2026-11-17T13:40:00+01:00",
-  "kind": "story",
-  "files": [
-   "reels/p14-semanas-con-piernas-pesadas.mp4"
-  ],
-  "caption": null,
-  "cover": null,
-  "status": "pending",
-  "note": "reel en story"
- },
- {
-  "id": "071",
-  "when": "2026-11-17T20:30:00+01:00",
-  "kind": "reel",
-  "files": [
-   "reels/p11-que-hay-en-la-ficha.mp4"
-  ],
-  "caption": "Una ficha es mucho más que nombre y dorsal 📋\nAsistencia, minutos, carga, tests con su evolución y notas del cuerpo técnico. Datos de ejemplo.\n👇\n#entrenadores #futbolbase #baloncesto #balonmano",
-  "cover": "covers/p11-que-hay-en-la-ficha.jpg",
-  "status": "pending",
-  "note": "backlog"
- },
- {
-  "id": "072",
-  "when": "2026-11-17T20:40:00+01:00",
-  "kind": "story",
-  "files": [
-   "reels/p11-que-hay-en-la-ficha.mp4"
-  ],
-  "caption": null,
-  "cover": null,
-  "status": "pending",
-  "note": "reel en story"
- },
- {
-  "id": "073",
-  "when": "2026-11-18T13:30:00+01:00",
-  "kind": "reel",
-  "files": [
-   "reels/p24-como-se-prepara-un-partido.mp4"
-  ],
-  "caption": "Un partido se empieza a jugar el lunes 📋\nRival, plan con pocas prioridades, entrenos que lo preparan y, al acabar, comparar plan y realidad. Datos de ejemplo.\n👇\n#entrenadores #futbolbase #baloncesto #balonmano",
-  "cover": "covers/p24-como-se-prepara-un-partido.jpg",
-  "status": "pending",
-  "note": "backlog"
- },
- {
-  "id": "074",
-  "when": "2026-11-18T13:40:00+01:00",
-  "kind": "story",
-  "files": [
-   "reels/p24-como-se-prepara-un-partido.mp4"
-  ],
-  "caption": null,
-  "cover": null,
-  "status": "pending",
-  "note": "reel en story"
- },
- {
-  "id": "075",
-  "when": "2026-11-18T20:30:00+01:00",
-  "kind": "reel",
-  "files": [
-   "reels/p20-repetir-la-misma-semana.mp4"
-  ],
-  "caption": "Martes fuerza, miércoles carga, jueves velocidad, viernes activación 🗓️\nUna semana tipo crea hábitos y permite comparar. Datos de ejemplo.\n¿Tenéis semana tipo? 👇\n#entrenadores #futbolbase #baloncesto #balonmano",
-  "cover": "covers/p20-repetir-la-misma-semana.jpg",
-  "status": "pending",
-  "note": "backlog"
- },
- {
-  "id": "076",
-  "when": "2026-11-18T20:40:00+01:00",
-  "kind": "story",
-  "files": [
-   "reels/p20-repetir-la-misma-semana.mp4"
-  ],
-  "caption": null,
-  "cover": null,
-  "status": "pending",
-  "note": "reel en story"
- },
- {
-  "id": "077",
-  "when": "2026-11-19T13:30:00+01:00",
-  "kind": "reel",
-  "files": [
-   "reels/p18-que-se-apunta-en-el-gimnasio.mp4"
-  ],
-  "caption": "Series, repeticiones, kilos, esfuerzo… y molestias 🏋️\nApuntarlo todo es lo que permite ver si se progresa. Datos de ejemplo.\n👇\n#entrenadores #futbolbase #baloncesto #balonmano",
-  "cover": "covers/p18-que-se-apunta-en-el-gimnasio.jpg",
-  "status": "pending",
-  "note": "backlog"
- },
- {
-  "id": "078",
-  "when": "2026-11-19T13:40:00+01:00",
-  "kind": "story",
-  "files": [
-   "reels/p18-que-se-apunta-en-el-gimnasio.mp4"
-  ],
-  "caption": null,
-  "cover": null,
-  "status": "pending",
-  "note": "reel en story"
- },
- {
-  "id": "079",
-  "when": "2026-11-19T20:30:00+01:00",
-  "kind": "reel",
-  "files": [
-   "reels/e11-tres-deportes.mp4"
-  ],
-  "caption": "Tres deportes, los mismos problemas 🏟️\nPlanificar, controlar la carga, saber quién está disponible y analizar el partido: cambia el campo, no el trabajo.\n¿Qué deporte entrenas? 👇\n#entrenadores #futbol #baloncesto #balonmano #planificacion",
-  "cover": "covers/e11-tres-deportes.jpg",
-  "status": "pending",
-  "note": "backlog"
- },
- {
-  "id": "080",
-  "when": "2026-11-19T20:40:00+01:00",
-  "kind": "story",
-  "files": [
-   "reels/e11-tres-deportes.mp4"
-  ],
-  "caption": null,
-  "cover": null,
-  "status": "pending",
-  "note": "reel en story"
- },
- {
-  "id": "081",
-  "when": "2026-11-20T13:30:00+01:00",
-  "kind": "reel",
-  "files": [
-   "reels/p27-cuanto-tarda-la-fuerza.mp4"
-  ],
-  "caption": "Las primeras semanas de fuerza se mejora rápido… y no es (solo) el músculo 🧠\nAl principio manda la adaptación nerviosa; el músculo crece más despacio (Moritani y deVries, 1979). Datos de ejemplo.\n👇\n#entrenadores #futbolbase #baloncesto #balonmano",
-  "cover": "covers/p27-cuanto-tarda-la-fuerza.jpg",
-  "status": "pending",
-  "note": "backlog"
- },
- {
-  "id": "082",
-  "when": "2026-11-20T13:40:00+01:00",
-  "kind": "story",
-  "files": [
-   "reels/p27-cuanto-tarda-la-fuerza.mp4"
-  ],
-  "caption": null,
-  "cover": null,
-  "status": "pending",
-  "note": "reel en story"
- },
- {
-  "id": "083",
-  "when": "2026-11-20T20:30:00+01:00",
-  "kind": "reel",
-  "files": [
-   "reels/p23-que-se-trabaja-en-pretemporada.mp4"
-  ],
-  "caption": "Pretemporada: la base de todo lo que viene 🏗️\nForma física poco a poco, tests de inicio, ideas de juego y amistosos. Datos de ejemplo.\n👇\n#entrenadores #futbolbase #baloncesto #balonmano",
-  "cover": "covers/p23-que-se-trabaja-en-pretemporada.jpg",
-  "status": "pending",
-  "note": "backlog"
- },
- {
-  "id": "084",
-  "when": "2026-11-20T20:40:00+01:00",
-  "kind": "story",
-  "files": [
-   "reels/p23-que-se-trabaja-en-pretemporada.mp4"
-  ],
-  "caption": null,
-  "cover": null,
-  "status": "pending",
-  "note": "reel en story"
- },
- {
-  "id": "085",
-  "when": "2026-11-21T13:30:00+01:00",
-  "kind": "reel",
-  "files": [
-   "reels/p29-para-que-objetivos-individuales.mp4"
-  ],
-  "caption": "Mismo equipo, retos distintos 🎯\nUn objetivo concreto, un nivel de partida y una fecha para revisarlo. Datos de ejemplo.\n¿Tenéis objetivos individuales? 👇\n#entrenadores #futbolbase #baloncesto #balonmano",
-  "cover": "covers/p29-para-que-objetivos-individuales.jpg",
-  "status": "pending",
-  "note": "backlog"
- },
- {
-  "id": "086",
-  "when": "2026-11-21T13:40:00+01:00",
-  "kind": "story",
-  "files": [
-   "reels/p29-para-que-objetivos-individuales.mp4"
-  ],
-  "caption": null,
-  "cover": null,
-  "status": "pending",
-  "note": "reel en story"
- }
+  {
+    "id": "001",
+    "when": "2026-11-02T13:30:00+01:00",
+    "kind": "reel",
+    "files": [
+      "reels/d1-corners.mp4"
+    ],
+    "caption": "De cada 100 córners, solo unos 3 acaban en gol. ⚽\nEntonces, ¿por qué hay equipos que marcan tantos? Porque los trabajan y apuntan qué saque funciona.\n¿Tu equipo apunta sus córners? Te leemos 👇\n#futbolbase #entrenadordefutbol #balonparado #analisisdefutbol",
+    "cover": "covers/d1-corners.jpg",
+    "status": "published",
+    "note": "",
+    "media_id": "18116944760273127",
+    "published_at": "2026-11-02T13:30:20+01:00"
+  },
+  {
+    "id": "002",
+    "when": "2026-11-02T13:40:00+01:00",
+    "kind": "story",
+    "files": [
+      "stories/s1-a.jpg"
+    ],
+    "caption": null,
+    "cover": null,
+    "status": "published",
+    "note": "",
+    "media_id": "18100072433541589",
+    "published_at": "2026-11-02T13:40:15+01:00"
+  },
+  {
+    "id": "003",
+    "when": "2026-11-02T18:00:00+01:00",
+    "kind": "story",
+    "files": [
+      "stories/s1-b.jpg"
+    ],
+    "caption": null,
+    "cover": null,
+    "status": "published",
+    "note": "",
+    "media_id": "17992921665027638",
+    "published_at": "2026-11-02T18:23:00+01:00"
+  },
+  {
+    "id": "004",
+    "when": "2026-11-02T20:30:00+01:00",
+    "kind": "reel",
+    "files": [
+      "reels/p01-por-que-juega-uno-y-no-otro.mp4"
+    ],
+    "caption": "¿Por qué juega uno y no otro? 🤔\nLa convocatoria no es solo nivel: asistencia, estado físico, rendimiento en los entrenos y minutos acumulados.\n¿Qué pesa más en tu equipo? 👇\n#entrenadores #futbolbase #baloncesto #balonmano",
+    "cover": "covers/p01-por-que-juega-uno-y-no-otro.jpg",
+    "status": "published",
+    "note": "backlog",
+    "media_id": "18124882051937183",
+    "published_at": "2026-11-02T20:30:20+01:00"
+  },
+  {
+    "id": "005",
+    "when": "2026-11-02T20:40:00+01:00",
+    "kind": "story",
+    "files": [
+      "reels/p01-por-que-juega-uno-y-no-otro.mp4"
+    ],
+    "caption": null,
+    "cover": null,
+    "status": "published",
+    "note": "reel en story",
+    "media_id": "18066332501717281",
+    "published_at": "2026-11-02T20:40:15+01:00"
+  },
+  {
+    "id": "006",
+    "when": "2026-11-03T11:00:00+01:00",
+    "kind": "carousel",
+    "files": [
+      "feed/c1-1.jpg",
+      "feed/c1-2.jpg",
+      "feed/c1-3.jpg",
+      "feed/c1-4.jpg"
+    ],
+    "caption": "Lo que dicen los datos #1: los córners. ⚽\nDesliza y guárdalo para el próximo entreno de balón parado.\n¿Cuántos ensaya tu equipo por semana? 👇\n#futbolbase #balonparado #entrenadordefutbol",
+    "cover": null,
+    "status": "published",
+    "note": "",
+    "media_id": "18075831644750188",
+    "published_at": "2026-11-03T10:58:00+01:00"
+  },
+  {
+    "id": "007",
+    "when": "2026-11-03T13:30:00+01:00",
+    "kind": "reel",
+    "files": [
+      "reels/p02-que-se-decide-en-el-descanso.mp4"
+    ],
+    "caption": "15 minutos para cambiar un partido ⏱️\nEn el descanso, la sensación dice una cosa y los datos, a veces, otra.\n¿Qué se mira en vuestro vestuario? 👇\n#entrenadores #futbolbase #baloncesto #balonmano",
+    "cover": "covers/p02-que-se-decide-en-el-descanso.jpg",
+    "status": "published",
+    "note": "backlog",
+    "media_id": "18189706135408053",
+    "published_at": "2026-11-03T13:31:20+01:00"
+  },
+  {
+    "id": "008",
+    "when": "2026-11-03T13:40:00+01:00",
+    "kind": "story",
+    "files": [
+      "reels/p02-que-se-decide-en-el-descanso.mp4"
+    ],
+    "caption": null,
+    "cover": null,
+    "status": "published",
+    "note": "reel en story",
+    "media_id": "18113625515588337",
+    "published_at": "2026-11-03T13:40:15+01:00"
+  },
+  {
+    "id": "009",
+    "when": "2026-11-03T20:30:00+01:00",
+    "kind": "reel",
+    "files": [
+      "reels/hb1-no-lo-he-visto.mp4"
+    ],
+    "caption": "En balonmano hay tiros que nadie llega a ver. 🤾\nCon «No lo he visto» cuentan para el portero sin ensuciar los mapas.\nPruébalo 3 meses gratis, enlace en la bio.\n#balonmano #entrenadorbalonmano #estadistica",
+    "cover": "covers/hb1-no-lo-he-visto.jpg",
+    "status": "published",
+    "note": "",
+    "media_id": "17952203259344715",
+    "published_at": "2026-11-03T20:31:10+01:00"
+  },
+  {
+    "id": "010",
+    "when": "2026-11-03T20:40:00+01:00",
+    "kind": "story",
+    "files": [
+      "stories/s2-a.jpg"
+    ],
+    "caption": null,
+    "cover": null,
+    "status": "published",
+    "note": "",
+    "media_id": "18129274280485145",
+    "published_at": "2026-11-03T20:40:10+01:00"
+  },
+  {
+    "id": "011",
+    "when": "2026-11-04T13:30:00+01:00",
+    "kind": "reel",
+    "files": [
+      "reels/d2-penaltis.mp4"
+    ],
+    "caption": "Se marca alrededor del 78 %: uno de cada cinco no entra. 🎯\n¿Quién los tira en tu equipo: el que más mete o el que más ganas tiene? 👇\n#futbolbase #entrenadordefutbol #penalti",
+    "cover": "covers/d2-penaltis.jpg",
+    "status": "published",
+    "note": "1.er intento con jsDelivr: container ERROR; publicado con raw.githubusercontent.com",
+    "media_id": "18109042844619543",
+    "published_at": "2026-11-04T13:31:00+01:00"
+  },
+  {
+    "id": "012",
+    "when": "2026-11-04T13:40:00+01:00",
+    "kind": "story",
+    "files": [
+      "stories/s3-a.jpg"
+    ],
+    "caption": null,
+    "cover": null,
+    "status": "published",
+    "note": "",
+    "media_id": "17928758469431284",
+    "published_at": "2026-11-04T13:40:00+01:00"
+  },
+  {
+    "id": "013",
+    "when": "2026-11-04T18:00:00+01:00",
+    "kind": "story",
+    "files": [
+      "stories/s3-b.jpg"
+    ],
+    "caption": null,
+    "cover": null,
+    "status": "published",
+    "note": "",
+    "media_id": "17907760623656738",
+    "published_at": "2026-11-04T18:00:00+01:00"
+  },
+  {
+    "id": "014",
+    "when": "2026-11-04T20:30:00+01:00",
+    "kind": "reel",
+    "files": [
+      "reels/p03-cuantas-ocasiones-para-un-gol.mp4"
+    ],
+    "caption": "14 tiros y 0,6 goles esperados. 6 tiros y 1,9. ¿Quién mereció más? ⚽\nLos goles esperados (xG) dan a cada tiro su probabilidad de gol. Datos de ejemplo.\n¿Lo miráis en vuestro equipo? 👇\n#entrenadores #futbolbase #baloncesto #balonmano",
+    "cover": "covers/p03-cuantas-ocasiones-para-un-gol.jpg",
+    "status": "pending",
+    "note": "backlog"
+  },
+  {
+    "id": "015",
+    "when": "2026-11-04T20:40:00+01:00",
+    "kind": "story",
+    "files": [
+      "reels/p03-cuantas-ocasiones-para-un-gol.mp4"
+    ],
+    "caption": null,
+    "cover": null,
+    "status": "pending",
+    "note": "reel en story"
+  },
+  {
+    "id": "016",
+    "when": "2026-11-05T11:00:00+01:00",
+    "kind": "carousel",
+    "files": [
+      "feed/c2-1.jpg",
+      "feed/c2-2.jpg",
+      "feed/c2-3.jpg",
+      "feed/c2-4.jpg",
+      "feed/c2-5.jpg"
+    ],
+    "caption": "3 cosas que la estadística de balonmano se pierde en directo, y cómo las registra ProTeam. 🤾\nGuárdalo y compártelo con tu cuerpo técnico.\n#balonmano #entrenadorbalonmano #estadistica",
+    "cover": null,
+    "status": "pending",
+    "note": ""
+  },
+  {
+    "id": "017",
+    "when": "2026-11-05T13:30:00+01:00",
+    "kind": "reel",
+    "files": [
+      "reels/p04-cuando-se-sienta-por-faltas.mp4"
+    ],
+    "caption": "Dos faltas en el primer cuarto: ¿banquillo o se arriesga? 🏀\nCon 5 faltas personales se acaba el partido (FIBA). Saber cuántas lleva cada uno cambia los minutos.\n¿Qué haríais? 👇\n#entrenadores #futbolbase #baloncesto #balonmano",
+    "cover": "covers/p04-cuando-se-sienta-por-faltas.jpg",
+    "status": "pending",
+    "note": "backlog"
+  },
+  {
+    "id": "018",
+    "when": "2026-11-05T13:40:00+01:00",
+    "kind": "story",
+    "files": [
+      "reels/p04-cuando-se-sienta-por-faltas.mp4"
+    ],
+    "caption": null,
+    "cover": null,
+    "status": "pending",
+    "note": "reel en story"
+  },
+  {
+    "id": "019",
+    "when": "2026-11-05T20:30:00+01:00",
+    "kind": "reel",
+    "files": [
+      "reels/hb2-golpes-francos.mp4"
+    ],
+    "caption": "Un toque y ProTeam cuenta los golpes francos y cada cambio de posesión. 🤾\nEscribe PLAN y te contamos cómo configurarlo para tu equipo.\n#balonmano #entrenadorbalonmano #balonmanobase",
+    "cover": "covers/hb2-golpes-francos.jpg",
+    "status": "pending",
+    "note": ""
+  },
+  {
+    "id": "020",
+    "when": "2026-11-05T20:40:00+01:00",
+    "kind": "story",
+    "files": [
+      "stories/s4-a.jpg"
+    ],
+    "caption": null,
+    "cover": null,
+    "status": "pending",
+    "note": ""
+  },
+  {
+    "id": "021",
+    "when": "2026-11-06T13:30:00+01:00",
+    "kind": "reel",
+    "files": [
+      "reels/d3-primer-gol.mp4"
+    ],
+    "caption": "Quien marca primero gana unos 7 de cada 10 partidos en las grandes ligas. ⏱️\n¿Y los otros 3? Ahí manda el minuto.\nSíguenos: cada semana, datos que cambian cómo entrenas.\n#futbol #entrenadordefutbol #datos",
+    "cover": "covers/d3-primer-gol.jpg",
+    "status": "pending",
+    "note": ""
+  },
+  {
+    "id": "022",
+    "when": "2026-11-06T13:40:00+01:00",
+    "kind": "story",
+    "files": [
+      "stories/s5-a.jpg"
+    ],
+    "caption": null,
+    "cover": null,
+    "status": "pending",
+    "note": ""
+  },
+  {
+    "id": "023",
+    "when": "2026-11-06T20:30:00+01:00",
+    "kind": "reel",
+    "files": [
+      "reels/p05-donde-para-mas-un-portero.mp4"
+    ],
+    "caption": "¿Por dónde le meten los goles a vuestro portero? 🧤\nDividir la portería en 9 zonas enseña dónde para más y dónde menos. Datos de ejemplo.\n👇\n#entrenadores #futbolbase #baloncesto #balonmano",
+    "cover": "covers/p05-donde-para-mas-un-portero.jpg",
+    "status": "pending",
+    "note": "backlog"
+  },
+  {
+    "id": "024",
+    "when": "2026-11-06T20:40:00+01:00",
+    "kind": "story",
+    "files": [
+      "reels/p05-donde-para-mas-un-portero.mp4"
+    ],
+    "caption": null,
+    "cover": null,
+    "status": "pending",
+    "note": "reel en story"
+  },
+  {
+    "id": "025",
+    "when": "2026-11-07T11:00:00+01:00",
+    "kind": "image",
+    "files": [
+      "feed/q1.jpg"
+    ],
+    "caption": "Pregunta de la semana: ¿qué te quita más tiempo fuera del campo?\nA) Convocatorias y asistencia\nB) Pasar a limpio la estadística\nC) Planificar la semana\nResponde con la letra 👇\n#entrenadores #futbolbase #baloncesto #balonmano",
+    "cover": null,
+    "status": "pending",
+    "note": ""
+  },
+  {
+    "id": "026",
+    "when": "2026-11-07T13:30:00+01:00",
+    "kind": "reel",
+    "files": [
+      "reels/p06-que-queda-de-un-partido.mp4"
+    ],
+    "caption": "Del partido del domingo, el lunes quedan 3 o 4 jugadas en la memoria 🧠\nUn informe guarda el resto: datos, lo que funcionó y lo que hay que cambiar.\n¿Repasáis el partido? 👇\n#entrenadores #futbolbase #baloncesto #balonmano",
+    "cover": "covers/p06-que-queda-de-un-partido.jpg",
+    "status": "pending",
+    "note": "backlog"
+  },
+  {
+    "id": "027",
+    "when": "2026-11-07T13:40:00+01:00",
+    "kind": "story",
+    "files": [
+      "reels/p06-que-queda-de-un-partido.mp4"
+    ],
+    "caption": null,
+    "cover": null,
+    "status": "pending",
+    "note": "reel en story"
+  },
+  {
+    "id": "028",
+    "when": "2026-11-07T20:30:00+01:00",
+    "kind": "reel",
+    "files": [
+      "reels/d4-pases.mp4"
+    ],
+    "caption": "En los años sesenta, Charles Reep vio que la mayoría de goles llegaban tras 3 pases o menos.\n¿Hay que jugar directo? No tan rápido.\nGuárdalo para tu próxima charla. 📌\n#futbolbase #tactica #entrenadordefutbol",
+    "cover": "covers/d4-pases.jpg",
+    "status": "pending",
+    "note": ""
+  },
+  {
+    "id": "029",
+    "when": "2026-11-07T20:40:00+01:00",
+    "kind": "story",
+    "files": [
+      "stories/s6-a.jpg"
+    ],
+    "caption": null,
+    "cover": null,
+    "status": "pending",
+    "note": ""
+  },
+  {
+    "id": "030",
+    "when": "2026-11-08T11:00:00+01:00",
+    "kind": "story",
+    "files": [
+      "stories/s7-a.jpg"
+    ],
+    "caption": null,
+    "cover": null,
+    "status": "published",
+    "note": "publicada como prueba el 1 nov",
+    "media_id": "18122012644959227",
+    "published_at": "2026-11-01T11:30:00+01:00"
+  },
+  {
+    "id": "031",
+    "when": "2026-11-08T11:00:00+01:00",
+    "kind": "carousel",
+    "files": [
+      "feed/c3-1.jpg",
+      "feed/c3-2.jpg",
+      "feed/c3-3.jpg",
+      "feed/c3-4.jpg"
+    ],
+    "caption": "Lo que dicen los datos #2: los penaltis. 🎯\n¿Quién los tira en tu equipo? Desliza.\n#futbolbase #entrenadordefutbol #penalti",
+    "cover": null,
+    "status": "pending",
+    "note": ""
+  },
+  {
+    "id": "032",
+    "when": "2026-11-08T13:30:00+01:00",
+    "kind": "reel",
+    "files": [
+      "reels/p07-vienen-11-de-18.mp4"
+    ],
+    "caption": "Entreno preparado para 18… y vienen 11 😅\nSaber antes quién viene permite adaptar grupos y espacios sin improvisar.\n¿Os pasa a menudo? 👇\n#entrenadores #futbolbase #baloncesto #balonmano",
+    "cover": "covers/p07-vienen-11-de-18.jpg",
+    "status": "pending",
+    "note": "backlog"
+  },
+  {
+    "id": "033",
+    "when": "2026-11-08T13:40:00+01:00",
+    "kind": "story",
+    "files": [
+      "reels/p07-vienen-11-de-18.mp4"
+    ],
+    "caption": null,
+    "cover": null,
+    "status": "pending",
+    "note": "reel en story"
+  },
+  {
+    "id": "034",
+    "when": "2026-11-08T19:00:00+01:00",
+    "kind": "story",
+    "files": [
+      "stories/s7-b.jpg"
+    ],
+    "caption": null,
+    "cover": null,
+    "status": "pending",
+    "note": ""
+  },
+  {
+    "id": "035",
+    "when": "2026-11-08T20:30:00+01:00",
+    "kind": "reel",
+    "files": [
+      "reels/e04-antes-de-cada-entreno.mp4"
+    ],
+    "caption": "¿Cuántas decisiones tomas antes de cada entreno? 🤯\nQuién viene, qué toca, cuánto cargar… mejor tenerlo todo en una pantalla.\n¿Dónde lo tienes tú ahora? 👇\n#entrenadores #organizacion #futbolbase #baloncesto #balonmano",
+    "cover": "covers/e04-antes-de-cada-entreno.jpg",
+    "status": "pending",
+    "note": "backlog"
+  },
+  {
+    "id": "036",
+    "when": "2026-11-08T20:40:00+01:00",
+    "kind": "story",
+    "files": [
+      "reels/e04-antes-de-cada-entreno.mp4"
+    ],
+    "caption": null,
+    "cover": null,
+    "status": "pending",
+    "note": "reel en story"
+  },
+  {
+    "id": "037",
+    "when": "2026-11-09T13:30:00+01:00",
+    "kind": "reel",
+    "files": [
+      "reels/p08-minutos-del-que-menos-juega.mp4"
+    ],
+    "caption": "95 minutos en 10 jornadas ⏱️\nEn un partido no se nota, en una temporada sí. Datos de ejemplo.\n¿Cómo se reparten los minutos en tu equipo? 👇\n#entrenadores #futbolbase #baloncesto #balonmano",
+    "cover": "covers/p08-minutos-del-que-menos-juega.jpg",
+    "status": "pending",
+    "note": "backlog"
+  },
+  {
+    "id": "038",
+    "when": "2026-11-09T13:40:00+01:00",
+    "kind": "story",
+    "files": [
+      "reels/p08-minutos-del-que-menos-juega.mp4"
+    ],
+    "caption": null,
+    "cover": null,
+    "status": "pending",
+    "note": "reel en story"
+  },
+  {
+    "id": "087",
+    "when": "2026-11-09T18:00:00+01:00",
+    "kind": "story",
+    "files": [
+      "stories/s8-a.jpg"
+    ],
+    "caption": null,
+    "cover": null,
+    "status": "pending",
+    "note": "pregunta rápida (minutos)"
+  },
+  {
+    "id": "039",
+    "when": "2026-11-09T20:30:00+01:00",
+    "kind": "reel",
+    "files": [
+      "reels/p21-nunca-da-tiempo-a-todo.mp4"
+    ],
+    "caption": "90 minutos planificados… 68 de ejercicio real ⏱️\nMedir cada bloque enseña dónde se va el tiempo. Datos de ejemplo.\n¿Os da tiempo a todo? 👇\n#entrenadores #futbolbase #baloncesto #balonmano",
+    "cover": "covers/p21-nunca-da-tiempo-a-todo.jpg",
+    "status": "pending",
+    "note": "backlog"
+  },
+  {
+    "id": "040",
+    "when": "2026-11-09T20:40:00+01:00",
+    "kind": "story",
+    "files": [
+      "reels/p21-nunca-da-tiempo-a-todo.mp4"
+    ],
+    "caption": null,
+    "cover": null,
+    "status": "pending",
+    "note": "reel en story"
+  },
+  {
+    "id": "088",
+    "when": "2026-11-10T11:00:00+01:00",
+    "kind": "carousel",
+    "files": [
+      "feed/c4-1.jpg",
+      "feed/c4-2.jpg",
+      "feed/c4-3.jpg",
+      "feed/c4-4.jpg",
+      "feed/c4-5.jpg"
+    ],
+    "caption": "Lo que dicen los datos #3: el efecto de la edad relativa en el fútbol base. 📅\nEn la selección vasca sub-18 estudiada, el 89 % había nacido entre enero y junio. En Primera División, la diferencia casi desaparece (55/45).\nFuente: González Aramendi, Archivos de Medicina del Deporte (2007).\nSíguenos para no perderte el #4 👉 @app.proteam\n#futbolbase #entrenadordefutbol #edadrelativa #formaciondeportiva",
+    "cover": null,
+    "status": "pending",
+    "note": "datos #3"
+  },
+  {
+    "id": "089",
+    "when": "2026-11-10T11:10:00+01:00",
+    "kind": "story",
+    "files": [
+      "stories/s9-a.jpg"
+    ],
+    "caption": null,
+    "cover": null,
+    "status": "pending",
+    "note": "aviso post datos #3"
+  },
+  {
+    "id": "041",
+    "when": "2026-11-10T13:30:00+01:00",
+    "kind": "reel",
+    "files": [
+      "reels/p10-cuando-vuelve-un-lesionado.mp4"
+    ],
+    "caption": "«¿Llega al sábado?» La pregunta de cada semana 🩹\nQué tiene, desde cuándo y cuándo vuelve, y una vuelta por fases. Datos de ejemplo.\n👇\n#entrenadores #futbolbase #baloncesto #balonmano",
+    "cover": "covers/p10-cuando-vuelve-un-lesionado.jpg",
+    "status": "pending",
+    "note": "backlog"
+  },
+  {
+    "id": "042",
+    "when": "2026-11-10T13:40:00+01:00",
+    "kind": "story",
+    "files": [
+      "reels/p10-cuando-vuelve-un-lesionado.mp4"
+    ],
+    "caption": null,
+    "cover": null,
+    "status": "pending",
+    "note": "reel en story"
+  },
+  {
+    "id": "043",
+    "when": "2026-11-10T20:30:00+01:00",
+    "kind": "reel",
+    "files": [
+      "reels/p09-faltar-uno-a-la-semana.mp4"
+    ],
+    "caption": "Faltar a 1 de 3 entrenos por semana = 36 entrenos menos en una temporada de 36 semanas. Unos 3 meses sin entrenar 📉\n¿Cuánto se falta en tu equipo? 👇\n#entrenadores #futbolbase #baloncesto #balonmano",
+    "cover": "covers/p09-faltar-uno-a-la-semana.jpg",
+    "status": "pending",
+    "note": "backlog"
+  },
+  {
+    "id": "044",
+    "when": "2026-11-10T20:40:00+01:00",
+    "kind": "story",
+    "files": [
+      "reels/p09-faltar-uno-a-la-semana.mp4"
+    ],
+    "caption": null,
+    "cover": null,
+    "status": "pending",
+    "note": "reel en story"
+  },
+  {
+    "id": "045",
+    "when": "2026-11-11T13:30:00+01:00",
+    "kind": "reel",
+    "files": [
+      "reels/p26-un-mal-dia-de-entreno.mp4"
+    ],
+    "caption": "2 de 8 hoy… pero 31 de 48 en el último mes 🎯\nUn día malo es un día. La tendencia es lo que cuenta. Datos de ejemplo.\n👇\n#entrenadores #futbolbase #baloncesto #balonmano",
+    "cover": "covers/p26-un-mal-dia-de-entreno.jpg",
+    "status": "pending",
+    "note": "backlog"
+  },
+  {
+    "id": "046",
+    "when": "2026-11-11T13:40:00+01:00",
+    "kind": "story",
+    "files": [
+      "reels/p26-un-mal-dia-de-entreno.mp4"
+    ],
+    "caption": null,
+    "cover": null,
+    "status": "pending",
+    "note": "reel en story"
+  },
+  {
+    "id": "090",
+    "when": "2026-11-11T18:00:00+01:00",
+    "kind": "story",
+    "files": [
+      "stories/s10-a.jpg"
+    ],
+    "caption": null,
+    "cover": null,
+    "status": "pending",
+    "note": "dentro de ProTeam"
+  },
+  {
+    "id": "047",
+    "when": "2026-11-11T20:30:00+01:00",
+    "kind": "reel",
+    "files": [
+      "reels/p13-por-que-el-dia-antes-mas-suave.mp4"
+    ],
+    "caption": "«Míster, ¿hoy tan suave?» 🙃\nEl día antes del partido se baja el volumen para activar sin cansar y llegar fresco.\n¿Cómo es vuestro último entreno? 👇\n#entrenadores #futbolbase #baloncesto #balonmano",
+    "cover": "covers/p13-por-que-el-dia-antes-mas-suave.jpg",
+    "status": "pending",
+    "note": "backlog"
+  },
+  {
+    "id": "048",
+    "when": "2026-11-11T20:40:00+01:00",
+    "kind": "story",
+    "files": [
+      "reels/p13-por-que-el-dia-antes-mas-suave.mp4"
+    ],
+    "caption": null,
+    "cover": null,
+    "status": "pending",
+    "note": "reel en story"
+  },
+  {
+    "id": "091",
+    "when": "2026-11-12T11:00:00+01:00",
+    "kind": "carousel",
+    "files": [
+      "feed/c5-1.jpg",
+      "feed/c5-2.jpg",
+      "feed/c5-3.jpg",
+      "feed/c5-4.jpg",
+      "feed/c5-5.jpg"
+    ],
+    "caption": "Lo que dicen los datos #4: porteros de balonmano. 🧤\nEn el EHF EURO 2026, el 65 % de los tiros acabaron en gol (4.046 de 6.253). Emil Nielsen, portero de la campeona, paró el 31 %.\nPor eso, para valorar a tu portero, mira su % de paradas por zona y por posición de lanzamiento, no solo los goles encajados.\nFuente: EHF, Men's EHF EURO 2026 analysis.\nSíguenos para no perderte el #5 👉 @app.proteam\n#balonmano #entrenadordebalonmano #porterodebalonmano #estadisticabalonmano",
+    "cover": null,
+    "status": "pending",
+    "note": "datos #4 balonmano"
+  },
+  {
+    "id": "092",
+    "when": "2026-11-12T11:10:00+01:00",
+    "kind": "story",
+    "files": [
+      "stories/s11-a.jpg"
+    ],
+    "caption": null,
+    "cover": null,
+    "status": "pending",
+    "note": "aviso post datos #4"
+  },
+  {
+    "id": "049",
+    "when": "2026-11-12T13:30:00+01:00",
+    "kind": "reel",
+    "files": [
+      "reels/p16-el-mismo-entreno-cansa-igual.mp4"
+    ],
+    "caption": "Mismo entreno, mismos minutos… y cargas muy distintas 💪\nCon el RPE (esfuerzo del 0 al 10 × minutos) se ve a quién le ha costado más. Datos de ejemplo.\n👇\n#entrenadores #futbolbase #baloncesto #balonmano",
+    "cover": "covers/p16-el-mismo-entreno-cansa-igual.jpg",
+    "status": "pending",
+    "note": "backlog"
+  },
+  {
+    "id": "050",
+    "when": "2026-11-12T13:40:00+01:00",
+    "kind": "story",
+    "files": [
+      "reels/p16-el-mismo-entreno-cansa-igual.mp4"
+    ],
+    "caption": null,
+    "cover": null,
+    "status": "pending",
+    "note": "reel en story"
+  },
+  {
+    "id": "051",
+    "when": "2026-11-12T20:30:00+01:00",
+    "kind": "reel",
+    "files": [
+      "reels/p25-ha-mejorado-desde-septiembre.mp4"
+    ],
+    "caption": "«Está más rápido»… ¿seguro? ⏱️\nMismo test, mismas condiciones, cada cierto tiempo: así se ve la mejora de verdad. Datos de ejemplo.\n👇\n#entrenadores #futbolbase #baloncesto #balonmano",
+    "cover": "covers/p25-ha-mejorado-desde-septiembre.jpg",
+    "status": "pending",
+    "note": "backlog"
+  },
+  {
+    "id": "052",
+    "when": "2026-11-12T20:40:00+01:00",
+    "kind": "story",
+    "files": [
+      "reels/p25-ha-mejorado-desde-septiembre.mp4"
+    ],
+    "caption": null,
+    "cover": null,
+    "status": "pending",
+    "note": "reel en story"
+  },
+  {
+    "id": "053",
+    "when": "2026-11-13T13:30:00+01:00",
+    "kind": "reel",
+    "files": [
+      "reels/p22-dos-partidos-en-una-semana.mp4"
+    ],
+    "caption": "Semana de dos partidos: el riesgo sube 📈\nEn un equipo profesional, la tasa de lesiones fue de 25,6 por 1.000 h con dos partidos por semana frente a 4,1 con uno (Dupont et al., 2010).\n👇\n#entrenadores #futbolbase #baloncesto #balonmano",
+    "cover": "covers/p22-dos-partidos-en-una-semana.jpg",
+    "status": "pending",
+    "note": "backlog"
+  },
+  {
+    "id": "054",
+    "when": "2026-11-13T13:40:00+01:00",
+    "kind": "story",
+    "files": [
+      "reels/p22-dos-partidos-en-una-semana.mp4"
+    ],
+    "caption": null,
+    "cover": null,
+    "status": "pending",
+    "note": "reel en story"
+  },
+  {
+    "id": "093",
+    "when": "2026-11-13T18:00:00+01:00",
+    "kind": "story",
+    "files": [
+      "stories/s12-a.jpg"
+    ],
+    "caption": null,
+    "cover": null,
+    "status": "pending",
+    "note": "pregunta rápida (portero)"
+  },
+  {
+    "id": "055",
+    "when": "2026-11-13T20:30:00+01:00",
+    "kind": "reel",
+    "files": [
+      "reels/p19-volver-de-un-paron-a-tope.mp4"
+    ],
+    "caption": "Dos semanas de parón y el lunes… ¿a tope? 🚦\nLas subidas bruscas de carga se asocian a más lesiones (Gabbett, 2016). Mejor volver poco a poco. Datos de ejemplo.\n👇\n#entrenadores #futbolbase #baloncesto #balonmano",
+    "cover": "covers/p19-volver-de-un-paron-a-tope.jpg",
+    "status": "pending",
+    "note": "backlog"
+  },
+  {
+    "id": "056",
+    "when": "2026-11-13T20:40:00+01:00",
+    "kind": "story",
+    "files": [
+      "reels/p19-volver-de-un-paron-a-tope.mp4"
+    ],
+    "caption": null,
+    "cover": null,
+    "status": "pending",
+    "note": "reel en story"
+  },
+  {
+    "id": "094",
+    "when": "2026-11-14T11:00:00+01:00",
+    "kind": "image",
+    "files": [
+      "feed/q2.jpg"
+    ],
+    "caption": "Pregunta de la semana: ¿cómo repartes los minutos en fútbol base?\nA) Por igual entre todos\nB) Según el rendimiento\nC) Un mínimo para todos y el resto, según rendimiento\nResponde con la letra 👇\n#futbolbase #entrenadordefutbol #baloncestoformativo #balonmano",
+    "cover": null,
+    "status": "pending",
+    "note": "pregunta de la semana"
+  },
+  {
+    "id": "095",
+    "when": "2026-11-14T11:10:00+01:00",
+    "kind": "story",
+    "files": [
+      "stories/s13-a.jpg"
+    ],
+    "caption": null,
+    "cover": null,
+    "status": "pending",
+    "note": "aviso pregunta de la semana"
+  },
+  {
+    "id": "057",
+    "when": "2026-11-14T13:30:00+01:00",
+    "kind": "reel",
+    "files": [
+      "reels/p15-cuanto-tarda-en-recuperarse.mp4"
+    ],
+    "caption": "Un partido no se recupera en una noche ⏳\nEn fútbol, el rendimiento físico puede tardar 72 horas o más en volver del todo (Nédélec et al.).\n¿Cómo recuperáis? 👇\n#entrenadores #futbolbase #baloncesto #balonmano",
+    "cover": "covers/p15-cuanto-tarda-en-recuperarse.jpg",
+    "status": "pending",
+    "note": "backlog"
+  },
+  {
+    "id": "058",
+    "when": "2026-11-14T13:40:00+01:00",
+    "kind": "story",
+    "files": [
+      "reels/p15-cuanto-tarda-en-recuperarse.mp4"
+    ],
+    "caption": null,
+    "cover": null,
+    "status": "pending",
+    "note": "reel en story"
+  },
+  {
+    "id": "059",
+    "when": "2026-11-14T20:30:00+01:00",
+    "kind": "reel",
+    "files": [
+      "reels/e09-lo-que-no-recuerdas-del-partido.mp4"
+    ],
+    "caption": "¿Qué recuerdas del último partido? ⚽🏀🤾\nLa memoria se queda con unas pocas jugadas. Apuntarlo en directo te deja el análisis hecho al acabar.\n¿Cómo analizas tus partidos? 👇\n#analisis #entrenadores #futbolbase #baloncesto #balonmano",
+    "cover": "covers/e09-lo-que-no-recuerdas-del-partido.jpg",
+    "status": "pending",
+    "note": "backlog"
+  },
+  {
+    "id": "060",
+    "when": "2026-11-14T20:40:00+01:00",
+    "kind": "story",
+    "files": [
+      "reels/e09-lo-que-no-recuerdas-del-partido.mp4"
+    ],
+    "caption": null,
+    "cover": null,
+    "status": "pending",
+    "note": "reel en story"
+  },
+  {
+    "id": "061",
+    "when": "2026-11-15T13:30:00+01:00",
+    "kind": "reel",
+    "files": [
+      "reels/p30-ha-salido-bien-el-entreno.mp4"
+    ],
+    "caption": "«Ha salido bien»… ¿según quién? 🤔\nIntensidad, calidad, atención y objetivo cumplido: un informe de 1 minuto al acabar. Datos de ejemplo.\n👇\n#entrenadores #futbolbase #baloncesto #balonmano",
+    "cover": "covers/p30-ha-salido-bien-el-entreno.jpg",
+    "status": "pending",
+    "note": "backlog"
+  },
+  {
+    "id": "062",
+    "when": "2026-11-15T13:40:00+01:00",
+    "kind": "story",
+    "files": [
+      "reels/p30-ha-salido-bien-el-entreno.mp4"
+    ],
+    "caption": null,
+    "cover": null,
+    "status": "pending",
+    "note": "reel en story"
+  },
+  {
+    "id": "096",
+    "when": "2026-11-15T18:00:00+01:00",
+    "kind": "story",
+    "files": [
+      "stories/s14-a.jpg"
+    ],
+    "caption": null,
+    "cover": null,
+    "status": "pending",
+    "note": "dentro de ProTeam"
+  },
+  {
+    "id": "063",
+    "when": "2026-11-15T20:30:00+01:00",
+    "kind": "reel",
+    "files": [
+      "reels/p12-como-se-reparte-el-staff.mp4"
+    ],
+    "caption": "WhatsApp, libreta, Excel y notas del móvil: cuatro sitios para un mismo equipo 🤯\nRepartir tareas y tenerlo todo en un solo sitio.\n¿Cuántos sois en el cuerpo técnico? 👇\n#entrenadores #futbolbase #baloncesto #balonmano",
+    "cover": "covers/p12-como-se-reparte-el-staff.jpg",
+    "status": "pending",
+    "note": "backlog"
+  },
+  {
+    "id": "064",
+    "when": "2026-11-15T20:40:00+01:00",
+    "kind": "story",
+    "files": [
+      "reels/p12-como-se-reparte-el-staff.mp4"
+    ],
+    "caption": null,
+    "cover": null,
+    "status": "pending",
+    "note": "reel en story"
+  },
+  {
+    "id": "065",
+    "when": "2026-11-16T13:30:00+01:00",
+    "kind": "reel",
+    "files": [
+      "reels/p28-como-se-sabe-si-esta-aprendido.mp4"
+    ],
+    "caption": "¿Cuándo está aprendida una salida de balón? ✅\nCon su porcentaje de avance, una fecha de revisión y un indicador claro. Datos de ejemplo.\n👇\n#entrenadores #futbolbase #baloncesto #balonmano",
+    "cover": "covers/p28-como-se-sabe-si-esta-aprendido.jpg",
+    "status": "pending",
+    "note": "backlog"
+  },
+  {
+    "id": "066",
+    "when": "2026-11-16T13:40:00+01:00",
+    "kind": "story",
+    "files": [
+      "reels/p28-como-se-sabe-si-esta-aprendido.mp4"
+    ],
+    "caption": null,
+    "cover": null,
+    "status": "pending",
+    "note": "reel en story"
+  },
+  {
+    "id": "067",
+    "when": "2026-11-16T20:30:00+01:00",
+    "kind": "reel",
+    "files": [
+      "reels/p17-para-que-sirve-un-test-de-salto.mp4"
+    ],
+    "caption": "Un salto dice más de lo que parece 🦘\nMide la potencia de piernas, y si baja respecto a lo habitual puede indicar fatiga (Claudino et al., 2017, sobre el salto con contramovimiento). Datos de ejemplo.\n👇\n#entrenadores #futbolbase #baloncesto #balonmano",
+    "cover": "covers/p17-para-que-sirve-un-test-de-salto.jpg",
+    "status": "pending",
+    "note": "backlog"
+  },
+  {
+    "id": "068",
+    "when": "2026-11-16T20:40:00+01:00",
+    "kind": "story",
+    "files": [
+      "reels/p17-para-que-sirve-un-test-de-salto.mp4"
+    ],
+    "caption": null,
+    "cover": null,
+    "status": "pending",
+    "note": "reel en story"
+  },
+  {
+    "id": "069",
+    "when": "2026-11-17T13:30:00+01:00",
+    "kind": "reel",
+    "files": [
+      "reels/p14-semanas-con-piernas-pesadas.mp4"
+    ],
+    "caption": "No siempre es entrenar más fuerte: a veces es entrenar siempre igual 🦵\nFoster (1998) lo llamó monotonía: media de la carga diaria ÷ su desviación. Alternar días duros y suaves la baja.\n👇\n#entrenadores #futbolbase #baloncesto #balonmano",
+    "cover": "covers/p14-semanas-con-piernas-pesadas.jpg",
+    "status": "pending",
+    "note": "backlog"
+  },
+  {
+    "id": "070",
+    "when": "2026-11-17T13:40:00+01:00",
+    "kind": "story",
+    "files": [
+      "reels/p14-semanas-con-piernas-pesadas.mp4"
+    ],
+    "caption": null,
+    "cover": null,
+    "status": "pending",
+    "note": "reel en story"
+  },
+  {
+    "id": "071",
+    "when": "2026-11-17T20:30:00+01:00",
+    "kind": "reel",
+    "files": [
+      "reels/p11-que-hay-en-la-ficha.mp4"
+    ],
+    "caption": "Una ficha es mucho más que nombre y dorsal 📋\nAsistencia, minutos, carga, tests con su evolución y notas del cuerpo técnico. Datos de ejemplo.\n👇\n#entrenadores #futbolbase #baloncesto #balonmano",
+    "cover": "covers/p11-que-hay-en-la-ficha.jpg",
+    "status": "pending",
+    "note": "backlog"
+  },
+  {
+    "id": "072",
+    "when": "2026-11-17T20:40:00+01:00",
+    "kind": "story",
+    "files": [
+      "reels/p11-que-hay-en-la-ficha.mp4"
+    ],
+    "caption": null,
+    "cover": null,
+    "status": "pending",
+    "note": "reel en story"
+  },
+  {
+    "id": "073",
+    "when": "2026-11-18T13:30:00+01:00",
+    "kind": "reel",
+    "files": [
+      "reels/p24-como-se-prepara-un-partido.mp4"
+    ],
+    "caption": "Un partido se empieza a jugar el lunes 📋\nRival, plan con pocas prioridades, entrenos que lo preparan y, al acabar, comparar plan y realidad. Datos de ejemplo.\n👇\n#entrenadores #futbolbase #baloncesto #balonmano",
+    "cover": "covers/p24-como-se-prepara-un-partido.jpg",
+    "status": "pending",
+    "note": "backlog"
+  },
+  {
+    "id": "074",
+    "when": "2026-11-18T13:40:00+01:00",
+    "kind": "story",
+    "files": [
+      "reels/p24-como-se-prepara-un-partido.mp4"
+    ],
+    "caption": null,
+    "cover": null,
+    "status": "pending",
+    "note": "reel en story"
+  },
+  {
+    "id": "075",
+    "when": "2026-11-18T20:30:00+01:00",
+    "kind": "reel",
+    "files": [
+      "reels/p20-repetir-la-misma-semana.mp4"
+    ],
+    "caption": "Martes fuerza, miércoles carga, jueves velocidad, viernes activación 🗓️\nUna semana tipo crea hábitos y permite comparar. Datos de ejemplo.\n¿Tenéis semana tipo? 👇\n#entrenadores #futbolbase #baloncesto #balonmano",
+    "cover": "covers/p20-repetir-la-misma-semana.jpg",
+    "status": "pending",
+    "note": "backlog"
+  },
+  {
+    "id": "076",
+    "when": "2026-11-18T20:40:00+01:00",
+    "kind": "story",
+    "files": [
+      "reels/p20-repetir-la-misma-semana.mp4"
+    ],
+    "caption": null,
+    "cover": null,
+    "status": "pending",
+    "note": "reel en story"
+  },
+  {
+    "id": "077",
+    "when": "2026-11-19T13:30:00+01:00",
+    "kind": "reel",
+    "files": [
+      "reels/p18-que-se-apunta-en-el-gimnasio.mp4"
+    ],
+    "caption": "Series, repeticiones, kilos, esfuerzo… y molestias 🏋️\nApuntarlo todo es lo que permite ver si se progresa. Datos de ejemplo.\n👇\n#entrenadores #futbolbase #baloncesto #balonmano",
+    "cover": "covers/p18-que-se-apunta-en-el-gimnasio.jpg",
+    "status": "pending",
+    "note": "backlog"
+  },
+  {
+    "id": "078",
+    "when": "2026-11-19T13:40:00+01:00",
+    "kind": "story",
+    "files": [
+      "reels/p18-que-se-apunta-en-el-gimnasio.mp4"
+    ],
+    "caption": null,
+    "cover": null,
+    "status": "pending",
+    "note": "reel en story"
+  },
+  {
+    "id": "079",
+    "when": "2026-11-19T20:30:00+01:00",
+    "kind": "reel",
+    "files": [
+      "reels/e11-tres-deportes.mp4"
+    ],
+    "caption": "Tres deportes, los mismos problemas 🏟️\nPlanificar, controlar la carga, saber quién está disponible y analizar el partido: cambia el campo, no el trabajo.\n¿Qué deporte entrenas? 👇\n#entrenadores #futbol #baloncesto #balonmano #planificacion",
+    "cover": "covers/e11-tres-deportes.jpg",
+    "status": "pending",
+    "note": "backlog"
+  },
+  {
+    "id": "080",
+    "when": "2026-11-19T20:40:00+01:00",
+    "kind": "story",
+    "files": [
+      "reels/e11-tres-deportes.mp4"
+    ],
+    "caption": null,
+    "cover": null,
+    "status": "pending",
+    "note": "reel en story"
+  },
+  {
+    "id": "081",
+    "when": "2026-11-20T13:30:00+01:00",
+    "kind": "reel",
+    "files": [
+      "reels/p27-cuanto-tarda-la-fuerza.mp4"
+    ],
+    "caption": "Las primeras semanas de fuerza se mejora rápido… y no es (solo) el músculo 🧠\nAl principio manda la adaptación nerviosa; el músculo crece más despacio (Moritani y deVries, 1979). Datos de ejemplo.\n👇\n#entrenadores #futbolbase #baloncesto #balonmano",
+    "cover": "covers/p27-cuanto-tarda-la-fuerza.jpg",
+    "status": "pending",
+    "note": "backlog"
+  },
+  {
+    "id": "082",
+    "when": "2026-11-20T13:40:00+01:00",
+    "kind": "story",
+    "files": [
+      "reels/p27-cuanto-tarda-la-fuerza.mp4"
+    ],
+    "caption": null,
+    "cover": null,
+    "status": "pending",
+    "note": "reel en story"
+  },
+  {
+    "id": "083",
+    "when": "2026-11-20T20:30:00+01:00",
+    "kind": "reel",
+    "files": [
+      "reels/p23-que-se-trabaja-en-pretemporada.mp4"
+    ],
+    "caption": "Pretemporada: la base de todo lo que viene 🏗️\nForma física poco a poco, tests de inicio, ideas de juego y amistosos. Datos de ejemplo.\n👇\n#entrenadores #futbolbase #baloncesto #balonmano",
+    "cover": "covers/p23-que-se-trabaja-en-pretemporada.jpg",
+    "status": "pending",
+    "note": "backlog"
+  },
+  {
+    "id": "084",
+    "when": "2026-11-20T20:40:00+01:00",
+    "kind": "story",
+    "files": [
+      "reels/p23-que-se-trabaja-en-pretemporada.mp4"
+    ],
+    "caption": null,
+    "cover": null,
+    "status": "pending",
+    "note": "reel en story"
+  },
+  {
+    "id": "085",
+    "when": "2026-11-21T13:30:00+01:00",
+    "kind": "reel",
+    "files": [
+      "reels/p29-para-que-objetivos-individuales.mp4"
+    ],
+    "caption": "Mismo equipo, retos distintos 🎯\nUn objetivo concreto, un nivel de partida y una fecha para revisarlo. Datos de ejemplo.\n¿Tenéis objetivos individuales? 👇\n#entrenadores #futbolbase #baloncesto #balonmano",
+    "cover": "covers/p29-para-que-objetivos-individuales.jpg",
+    "status": "pending",
+    "note": "backlog"
+  },
+  {
+    "id": "086",
+    "when": "2026-11-21T13:40:00+01:00",
+    "kind": "story",
+    "files": [
+      "reels/p29-para-que-objetivos-individuales.mp4"
+    ],
+    "caption": null,
+    "cover": null,
+    "status": "pending",
+    "note": "reel en story"
+  }
 ]

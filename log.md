@@ -96,3 +96,7 @@
 - Carrusel 006 (datos #1, 18075831644750188) a las 27 h: 18 vistas, alcance 6, 0 guardados → Flojo (caché de Windsor; el plan de prueba no permite refresco forzado).
 - Panel: Plan sincronizado (011, 012 → Publicado). Analisis: 006 actualizado (Flojo) y 007 añadido (Flojo). Predicción de feed recalculada por quedar 006 muy por debajo: 18–62–73 (antes 39–62–73) en 016, 025, 031, 088, 091 y 094.
 - Comentarios: ninguno nuevo (solo los 2 de 18161870296506713, ya respondidos).
+
+### Revisión 4 nov 18:00
+- Publicada 013 (Story s3-b, 17907760623656738) a las 18:00 con raw.githubusercontent.com. Siguiente: 014 Reel p03 a las 20:30 y 015 Story a las 20:40.
+- Comentarios: ninguno nuevo (solo los 2 de 18161870296506713, ya respondidos).
