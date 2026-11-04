@@ -80,3 +80,11 @@
 - Resto de Reels de los últimos 7 días sin cambios (máx. alcance 1.619 en 18161870296506713; saltos 42–52 %).
 - Panel: Plan sincronizado (007, 008, 009, 010 → Publicado con media_id). Analisis: nada nuevo con más de 24 h (carrusel 006 se evalúa mañana).
 - Comentarios: ninguno nuevo (los 2 de 18161870296506713 ya respondidos).
+
+### Revisión 4 nov 10:57
+- Nada que publicar (siguiente: 011 Reel d2 penaltis a las 13:30 y 012 Story a las 13:40).
+- Reel 009 (hb1 balonmano, 17952203259344715) a las ~15 h: alcance 1.428, 1.632 vistas, saltos 29 % (mejor hasta ahora, objetivo <40 % cumplido), visionado medio 13,8 s, 6 guardados, 2 compartidos, 80 interacciones. El balonmano funciona: priorizarlo en la planificación del lunes.
+- Reel 007 (p02, 18189706135408053): alcance 111, 123 vistas, saltos 57 %, 6,5 s, 0 guardados. Reel 004 (p01): alcance 121, 143 vistas, saltos 51 %, 7,7 s. La serie p0x sigue floja.
+- Reel 001 (córners, 18116944760273127): alcance 1.396, 1.535 vistas, saltos 41 %, 12,3 s, 5 guardados.
+- Carrusel 006 (datos #1, 18075831644750188): alcance 6, 18 vistas (caché de Windsor; plan de prueba sin refresco forzado).
+- Comentarios: ninguno nuevo (los 2 de 18161870296506713 ya respondidos).
