@@ -109,3 +109,8 @@
 - Reel 001 (córners): 1.537 vistas, saltos 41 %, 12,3 s, 5 guardados. Reel 004 (p01): 145 vistas, saltos 51 %, 7,8 s. Reel 007 (p02): 127 vistas, saltos 55 %, 6,7 s. Carrusel 006: 29 vistas, alcance 7, 0 guardados.
 - Panel: Plan sincronizado (021, 022 → Publicado; 014–020 con nuevas fechas y filas ordenadas). Analisis: añadidos 009 y 011 (Muy bien). Predicción de ProTeam en 30 s recalculada por quedar 009 muy por encima: 145–190–1.860 (antes 140–180–242 y 145–190–687) en 019, 035, 059 y 079.
 - Comentarios: ninguno nuevo (solo los 2 de 18161870296506713, ya respondidos).
+
+### Revisión 6 nov 17:54
+- Nada que publicar: siguiente pieza 023 Reel p05 a las 20:30 (+024 Story a las 20:40).
+- Reel 021 (d3 primer gol, 18017354096972425) a las ~4,5 h: 1.412 vistas, alcance 1.145, saltos 30,5 %, 15,4 s, 4 guardados, 0 compartidos (buen arranque).
+- Comentarios: 2 nuevos en 021, piques futboleros sobre el Madrid (no spam). Respondidos sin datos inventados: 18129188243316663 → 18113064575118104; 18195871357392502 → 18181301038435507.
