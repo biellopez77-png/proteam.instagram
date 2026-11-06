@@ -185,94 +185,6 @@
   "published_at": "2026-11-04T18:00:00+01:00"
  },
  {
-  "id": "014",
-  "when": "2026-11-04T20:30:00+01:00",
-  "kind": "reel",
-  "files": [
-   "reels/p03-cuantas-ocasiones-para-un-gol.mp4"
-  ],
-  "caption": "14 tiros y 0,6 goles esperados. 6 tiros y 1,9. ¿Quién mereció más? ⚽\nLos goles esperados (xG) dan a cada tiro su probabilidad de gol. Datos de ejemplo.\n¿Lo miráis en vuestro equipo? 👇\n#entrenadores #futbolbase #baloncesto #balonmano",
-  "cover": "covers/p03-cuantas-ocasiones-para-un-gol.jpg",
-  "status": "pending",
-  "note": "backlog"
- },
- {
-  "id": "015",
-  "when": "2026-11-04T20:40:00+01:00",
-  "kind": "story",
-  "files": [
-   "reels/p03-cuantas-ocasiones-para-un-gol.mp4"
-  ],
-  "caption": null,
-  "cover": null,
-  "status": "pending",
-  "note": "reel en story"
- },
- {
-  "id": "016",
-  "when": "2026-11-05T11:00:00+01:00",
-  "kind": "carousel",
-  "files": [
-   "feed/c2-1.jpg",
-   "feed/c2-2.jpg",
-   "feed/c2-3.jpg",
-   "feed/c2-4.jpg",
-   "feed/c2-5.jpg"
-  ],
-  "caption": "3 cosas que la estadística de balonmano se pierde en directo, y cómo las registra ProTeam. 🤾\nGuárdalo y compártelo con tu cuerpo técnico.\n#balonmano #entrenadorbalonmano #estadistica",
-  "cover": null,
-  "status": "pending",
-  "note": ""
- },
- {
-  "id": "017",
-  "when": "2026-11-05T13:30:00+01:00",
-  "kind": "reel",
-  "files": [
-   "reels/p04-cuando-se-sienta-por-faltas.mp4"
-  ],
-  "caption": "Dos faltas en el primer cuarto: ¿banquillo o se arriesga? 🏀\nCon 5 faltas personales se acaba el partido (FIBA). Saber cuántas lleva cada uno cambia los minutos.\n¿Qué haríais? 👇\n#entrenadores #futbolbase #baloncesto #balonmano",
-  "cover": "covers/p04-cuando-se-sienta-por-faltas.jpg",
-  "status": "pending",
-  "note": "backlog"
- },
- {
-  "id": "018",
-  "when": "2026-11-05T13:40:00+01:00",
-  "kind": "story",
-  "files": [
-   "reels/p04-cuando-se-sienta-por-faltas.mp4"
-  ],
-  "caption": null,
-  "cover": null,
-  "status": "pending",
-  "note": "reel en story"
- },
- {
-  "id": "019",
-  "when": "2026-11-05T20:30:00+01:00",
-  "kind": "reel",
-  "files": [
-   "reels/hb2-golpes-francos.mp4"
-  ],
-  "caption": "Un toque y ProTeam cuenta los golpes francos y cada cambio de posesión. 🤾\nEscribe PLAN y te contamos cómo configurarlo para tu equipo.\n#balonmano #entrenadorbalonmano #balonmanobase",
-  "cover": "covers/hb2-golpes-francos.jpg",
-  "status": "pending",
-  "note": ""
- },
- {
-  "id": "020",
-  "when": "2026-11-05T20:40:00+01:00",
-  "kind": "story",
-  "files": [
-   "stories/s4-a.jpg"
-  ],
-  "caption": null,
-  "cover": null,
-  "status": "pending",
-  "note": ""
- },
- {
   "id": "021",
   "when": "2026-11-06T13:30:00+01:00",
   "kind": "reel",
@@ -281,8 +193,10 @@
   ],
   "caption": "Quien marca primero gana unos 7 de cada 10 partidos en las grandes ligas. ⏱️\n¿Y los otros 3? Ahí manda el minuto.\nSíguenos: cada semana, datos que cambian cómo entrenas.\n#futbol #entrenadordefutbol #datos",
   "cover": "covers/d3-primer-gol.jpg",
-  "status": "pending",
-  "note": ""
+  "status": "published",
+  "note": "",
+  "media_id": "18017354096972425",
+  "published_at": "2026-11-06T13:30:20+01:00"
  },
  {
   "id": "022",
@@ -293,8 +207,10 @@
   ],
   "caption": null,
   "cover": null,
-  "status": "pending",
-  "note": ""
+  "status": "published",
+  "note": "",
+  "media_id": "18352535788281273",
+  "published_at": "2026-11-06T13:40:05+01:00"
  },
  {
   "id": "023",
@@ -982,6 +898,22 @@
   "note": "reel en story"
  },
  {
+  "id": "016",
+  "when": "2026-11-17T11:00:00+01:00",
+  "kind": "carousel",
+  "files": [
+   "feed/c2-1.jpg",
+   "feed/c2-2.jpg",
+   "feed/c2-3.jpg",
+   "feed/c2-4.jpg",
+   "feed/c2-5.jpg"
+  ],
+  "caption": "3 cosas que la estadística de balonmano se pierde en directo, y cómo las registra ProTeam. 🤾\nGuárdalo y compártelo con tu cuerpo técnico.\n#balonmano #entrenadorbalonmano #estadistica",
+  "cover": null,
+  "status": "pending",
+  "note": "reprogramada (antes 2026-11-05T11:00, >6 h de retraso)"
+ },
+ {
   "id": "069",
   "when": "2026-11-17T13:30:00+01:00",
   "kind": "reel",
@@ -1196,5 +1128,77 @@
   "cover": null,
   "status": "pending",
   "note": "reel en story"
+ },
+ {
+  "id": "014",
+  "when": "2026-11-21T20:30:00+01:00",
+  "kind": "reel",
+  "files": [
+   "reels/p03-cuantas-ocasiones-para-un-gol.mp4"
+  ],
+  "caption": "14 tiros y 0,6 goles esperados. 6 tiros y 1,9. ¿Quién mereció más? ⚽\nLos goles esperados (xG) dan a cada tiro su probabilidad de gol. Datos de ejemplo.\n¿Lo miráis en vuestro equipo? 👇\n#entrenadores #futbolbase #baloncesto #balonmano",
+  "cover": "covers/p03-cuantas-ocasiones-para-un-gol.jpg",
+  "status": "pending",
+  "note": "backlog; reprogramada (antes 2026-11-04T20:30, >6 h de retraso)"
+ },
+ {
+  "id": "015",
+  "when": "2026-11-21T20:40:00+01:00",
+  "kind": "story",
+  "files": [
+   "reels/p03-cuantas-ocasiones-para-un-gol.mp4"
+  ],
+  "caption": null,
+  "cover": null,
+  "status": "pending",
+  "note": "reel en story; reprogramada (antes 2026-11-04T20:40, >6 h de retraso)"
+ },
+ {
+  "id": "017",
+  "when": "2026-11-22T13:30:00+01:00",
+  "kind": "reel",
+  "files": [
+   "reels/p04-cuando-se-sienta-por-faltas.mp4"
+  ],
+  "caption": "Dos faltas en el primer cuarto: ¿banquillo o se arriesga? 🏀\nCon 5 faltas personales se acaba el partido (FIBA). Saber cuántas lleva cada uno cambia los minutos.\n¿Qué haríais? 👇\n#entrenadores #futbolbase #baloncesto #balonmano",
+  "cover": "covers/p04-cuando-se-sienta-por-faltas.jpg",
+  "status": "pending",
+  "note": "backlog; reprogramada (antes 2026-11-05T13:30, >6 h de retraso)"
+ },
+ {
+  "id": "018",
+  "when": "2026-11-22T13:40:00+01:00",
+  "kind": "story",
+  "files": [
+   "reels/p04-cuando-se-sienta-por-faltas.mp4"
+  ],
+  "caption": null,
+  "cover": null,
+  "status": "pending",
+  "note": "reel en story; reprogramada (antes 2026-11-05T13:40, >6 h de retraso)"
+ },
+ {
+  "id": "019",
+  "when": "2026-11-22T20:30:00+01:00",
+  "kind": "reel",
+  "files": [
+   "reels/hb2-golpes-francos.mp4"
+  ],
+  "caption": "Un toque y ProTeam cuenta los golpes francos y cada cambio de posesión. 🤾\nEscribe PLAN y te contamos cómo configurarlo para tu equipo.\n#balonmano #entrenadorbalonmano #balonmanobase",
+  "cover": "covers/hb2-golpes-francos.jpg",
+  "status": "pending",
+  "note": "reprogramada (antes 2026-11-05T20:30, >6 h de retraso)"
+ },
+ {
+  "id": "020",
+  "when": "2026-11-22T20:40:00+01:00",
+  "kind": "story",
+  "files": [
+   "stories/s4-a.jpg"
+  ],
+  "caption": null,
+  "cover": null,
+  "status": "pending",
+  "note": "reprogramada (antes 2026-11-05T20:40, >6 h de retraso)"
  }
 ]

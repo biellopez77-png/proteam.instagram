@@ -100,3 +100,12 @@
 ### Revisión 4 nov 18:00
 - Publicada 013 (Story s3-b, 17907760623656738) a las 18:00 con raw.githubusercontent.com. Siguiente: 014 Reel p03 a las 20:30 y 015 Story a las 20:40.
 - Comentarios: ninguno nuevo (solo los 2 de 18161870296506713, ya respondidos).
+
+### Revisión 6 nov 13:40
+- No hubo ejecuciones entre el 4 nov 18:00 y hoy: 014–020 se quedaron sin publicar (más de 6 h de retraso). Reprogramadas al siguiente hueco libre: 014 Reel p03 → 21 nov 20:30 (+015 Story 20:40), 017 Reel p04 → 22 nov 13:30 (+018), 019 Reel hb2 balonmano → 22 nov 20:30 (+020 Story s4-a), 016 carrusel balonmano → 17 nov 11:00. Revisar en la planificación del lunes: el balonmano es lo que mejor funciona y hb2/016 deberían adelantarse.
+- Publicada 021 (Reel d3 primer gol, 18017354096972425) a las 13:30 y 022 (Story s5-a, 18352535788281273) a las 13:40, ambas con jsDelivr al primer intento. Siguiente: 023 Reel p05 a las 20:30 y 024 Story a las 20:40.
+- Reel 009 (hb1 balonmano, 17952203259344715) a las ~65 h: 1.860 vistas, alcance 1.634, saltos 29 %, 14,3 s, 10 guardados, 3 compartidos → Muy bien (previsto 140–180–242).
+- Reel 011 (d2 penaltis, 18109042844619543) a las ~48 h: 1.704 vistas, alcance 1.496, saltos 35 %, 19,2 s, 4 guardados, 0 compartidos → Muy bien (previsto 687–1.532–1.896).
+- Reel 001 (córners): 1.537 vistas, saltos 41 %, 12,3 s, 5 guardados. Reel 004 (p01): 145 vistas, saltos 51 %, 7,8 s. Reel 007 (p02): 127 vistas, saltos 55 %, 6,7 s. Carrusel 006: 29 vistas, alcance 7, 0 guardados.
+- Panel: Plan sincronizado (021, 022 → Publicado; 014–020 con nuevas fechas y filas ordenadas). Analisis: añadidos 009 y 011 (Muy bien). Predicción de ProTeam en 30 s recalculada por quedar 009 muy por encima: 145–190–1.860 (antes 140–180–242 y 145–190–687) en 019, 035, 059 y 079.
+- Comentarios: ninguno nuevo (solo los 2 de 18161870296506713, ya respondidos).
