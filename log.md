@@ -117,3 +117,7 @@
 
 ### Revisión 6 nov 20:30
 - Publicada 023 (Reel p05 portero, 18106249946036344) a las 20:30 con jsDelivr al primer intento.
+- Publicada 024 (Story con el Reel p05, 18346872487284970) a las 20:40: el 1.er intento con jsDelivr dio «container status: ERROR»; el reintento con raw.githubusercontent.com funcionó. Siguiente: 025 imagen «Pregunta de la semana» mañana a las 11:00.
+- Métricas últimos 7 días: Reel 021 (d3 primer gol, ~7 h) 1.639 vistas, alcance 1.402, saltos 33 %, 14,8 s, 5 guardados. Reel 009 (hb1) 1.864 vistas, saltos 29 %, 14,3 s, 10 guardados, 3 compartidos. Reel 011 (d2) 1.708 vistas, saltos 35 %, 19,1 s, 4 guardados. Reel 001: 1.537 vistas, saltos 41 %. Reel 004 (p01): 145, saltos 51 %. Reel 007 (p02): 127, saltos 55 %. Carrusel 006: 29 vistas, alcance 7. Los Reels de datos y balonmano superan con creces a la serie p0x.
+- Panel: Plan sincronizado (023, 024 → Publicado). Analisis: nada nuevo con más de 24 h (021 se evalúa mañana a partir de las 13:30). Sin recálculo de predicciones.
+- Comentarios: ninguno nuevo (los 2 de 021 ya respondidos).

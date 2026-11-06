@@ -224,7 +224,7 @@
   "status": "published",
   "note": "backlog",
   "media_id": "18106249946036344",
-  "published_at": "2026-11-06T20:31:21+01:00"
+  "published_at": "2026-11-06T20:31:07+01:00"
  },
  {
   "id": "024",
@@ -235,8 +235,10 @@
   ],
   "caption": null,
   "cover": null,
-  "status": "pending",
-  "note": "reel en story"
+  "status": "published",
+  "note": "reel en story; 1.er intento con jsDelivr: container ERROR; publicado con raw.githubusercontent.com",
+  "media_id": "18346872487284970",
+  "published_at": "2026-11-06T20:41:20+01:00"
  },
  {
   "id": "025",
