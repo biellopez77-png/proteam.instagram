@@ -114,3 +114,6 @@
 - Nada que publicar: siguiente pieza 023 Reel p05 a las 20:30 (+024 Story a las 20:40).
 - Reel 021 (d3 primer gol, 18017354096972425) a las ~4,5 h: 1.412 vistas, alcance 1.145, saltos 30,5 %, 15,4 s, 4 guardados, 0 compartidos (buen arranque).
 - Comentarios: 2 nuevos en 021, piques futboleros sobre el Madrid (no spam). Respondidos sin datos inventados: 18129188243316663 → 18113064575118104; 18195871357392502 → 18181301038435507.
+
+### Revisión 6 nov 20:30
+- Publicada 023 (Reel p05 portero, 18106249946036344) a las 20:30 con jsDelivr al primer intento.
