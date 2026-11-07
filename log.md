@@ -137,3 +137,10 @@
 - Nada que publicar: la siguiente pieza pendiente es 028 (Reel d4 pases) a las 20:30 (+029 Story 20:40), fuera de la ventana de 20 min.
 - Métricas (caché Windsor, plan gratuito sin refresco forzado): Reel 026 (p06, ~4,5 h) 138 vistas, alcance 125, saltos 55,6 %, 7,0 s, 0 guardados → arranque flojo, en línea con p01/p02. Reel 023 (p05) 1.524 vistas, saltos 41 %. Reel 021 (d3) 1.660 vistas, saltos 33 %. Reel 009 (hb1) 1.865. Imagen 025 (q1): 17 vistas, alcance 5.
 - Comentarios: ninguno nuevo (todos los de 021 ya respondidos). Sin spam.
+
+### Revisión 7 nov 20:30
+- Publicada 028 (Reel d4 «¿Cuántos pases para un gol?», 17952196920349785) a las 20:30 con jsDelivr al primer intento.
+- Publicada 029 (Story anuncio Reel pases, 18218266900360617) a las 20:40: el 1.er intento con jsDelivr dio «Media ID is not available»; el reintento con raw.githubusercontent.com funcionó (revisar en la app que no haya quedado una Story duplicada). Siguiente: 031 carrusel Datos #2 mañana a las 11:00.
+- Métricas últimos 7 días: Reel 023 (p05 portero, 24 h) 1.539 vistas, alcance 1.351, saltos 41 %, 11,6 s, 5 guardados, 1 compartido. Reel 026 (p06, ~7 h) 139 vistas, saltos 56 %, 6,9 s, 0 guardados → flojo. Reel 021 (d3) 1.661, saltos 33 %, 6 comentarios. Reel 011 (d2) 1.708, saltos 35 %, 19,1 s. Reel 009 (hb1) 1.865, 10 guardados, 3 compartidos. Reel 001: 1.537. Reel 004 (p01): 146. Reel 007 (p02): 127. Carrusel 006: 29 vistas, alcance 7. Imagen 025 (q1): 17 vistas, alcance 5.
+- Panel: Plan sincronizado (028, 029 → Publicado). Analisis: añadido 023 (Muy bien, 1.539 frente a 139–350–687). Predicción de Problema del entrenador recalculada por quedar 023 muy por encima: 127–350–1.539 (antes 139–350–687) en los 21 Reels programados del pilar.
+- Comentarios: ninguno nuevo (los 6 de 021 ya están respondidos). Sin spam.

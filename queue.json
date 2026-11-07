@@ -291,8 +291,10 @@
     ],
     "caption": "En los años sesenta, Charles Reep vio que la mayoría de goles llegaban tras 3 pases o menos.\n¿Hay que jugar directo? No tan rápido.\nGuárdalo para tu próxima charla. 📌\n#futbolbase #tactica #entrenadordefutbol",
     "cover": "covers/d4-pases.jpg",
-    "status": "pending",
-    "note": ""
+    "status": "published",
+    "note": "",
+    "media_id": "17952196920349785",
+    "published_at": "2026-11-07T20:30:00+01:00"
   },
   {
     "id": "029",
@@ -303,8 +305,10 @@
     ],
     "caption": null,
     "cover": null,
-    "status": "pending",
-    "note": ""
+    "status": "published",
+    "note": "",
+    "media_id": "18218266900360617",
+    "published_at": "2026-11-07T20:40:00+01:00"
   },
   {
     "id": "030",
