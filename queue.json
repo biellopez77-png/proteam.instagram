@@ -263,8 +263,10 @@
     ],
     "caption": "Del partido del domingo, el lunes quedan 3 o 4 jugadas en la memoria 🧠\nUn informe guarda el resto: datos, lo que funcionó y lo que hay que cambiar.\n¿Repasáis el partido? 👇\n#entrenadores #futbolbase #baloncesto #balonmano",
     "cover": "covers/p06-que-queda-de-un-partido.jpg",
-    "status": "pending",
-    "note": "backlog"
+    "status": "published",
+    "note": "backlog",
+    "media_id": "17873617110646897",
+    "published_at": "2026-11-07T13:30:00+01:00"
   },
   {
     "id": "027",
@@ -275,8 +277,10 @@
     ],
     "caption": null,
     "cover": null,
-    "status": "pending",
-    "note": "reel en story"
+    "status": "published",
+    "note": "reel en story",
+    "media_id": "18651070021049755",
+    "published_at": "2026-11-07T13:40:00+01:00"
   },
   {
     "id": "028",
