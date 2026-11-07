@@ -121,3 +121,8 @@
 - Métricas últimos 7 días: Reel 021 (d3 primer gol, ~7 h) 1.639 vistas, alcance 1.402, saltos 33 %, 14,8 s, 5 guardados. Reel 009 (hb1) 1.864 vistas, saltos 29 %, 14,3 s, 10 guardados, 3 compartidos. Reel 011 (d2) 1.708 vistas, saltos 35 %, 19,1 s, 4 guardados. Reel 001: 1.537 vistas, saltos 41 %. Reel 004 (p01): 145, saltos 51 %. Reel 007 (p02): 127, saltos 55 %. Carrusel 006: 29 vistas, alcance 7. Los Reels de datos y balonmano superan con creces a la serie p0x.
 - Panel: Plan sincronizado (023, 024 → Publicado). Analisis: nada nuevo con más de 24 h (021 se evalúa mañana a partir de las 13:30). Sin recálculo de predicciones.
 - Comentarios: ninguno nuevo (los 2 de 021 ya respondidos).
+
+### Revisión 7 nov 11:00
+- Publicada 025 (imagen «Pregunta de la semana» q1, 18359218744175985) a las ~11:00: el 1.er intento con jsDelivr dio «Only photo or video can be accepted as media type» (jsDelivr devuelve 403 desde aquí); el reintento con raw.githubusercontent.com funcionó. Siguiente: 026 Reel p06 a las 13:30 (+027 Story 13:40).
+- Métricas últimos 7 días: Reel 023 (p05 portero, ~14,5 h) 1.470 vistas, alcance 1.292, saltos 41,5 %, 11,5 s, 5 guardados, 1 compartido → la serie p0x despega cuando el gancho es concreto (antes p01 146 y p02 127). Reel 021 (d3) 1.654 vistas, saltos 33 %, 14,7 s, 5 guardados. Reel 009 (hb1) 1.865, saltos 29 %, 10 guardados, 3 compartidos. Reel 011 (d2) 1.708, saltos 35 %, 19,1 s. Reel 001: 1.537, saltos 41 %. Carrusel 006: 29 vistas, alcance 7.
+- Comentarios: 1 nuevo en 021 (17908843920668065, respuesta a nuestra réplica sobre remontar). Respondido en el hilo 18195871357392502 → 18120012527074583. Sin spam.
