@@ -160,3 +160,10 @@
 ### Revisión 8 nov 17:54
 - Nada que publicar: siguiente pieza 034 (Story «¿próximo tema?») a las 19:00, fuera de la ventana de 20 min. Después 035 (Reel e04) a las 20:30 y 036 (Story) a las 20:40.
 - Comentarios: ninguno nuevo (los de 021 y el de 001 ya respondidos). Sin spam.
+
+### Revisión 8 nov 20:40
+- Publicada 034 (Story «¿próximo tema?», 18081137114717480) a las 20:25, con 1 h 25 min de retraso (dentro del margen de 6 h), con jsDelivr al primer intento.
+- Publicada 035 (Reel e04 «Antes de cada entreno», 18088358024702797) a las 20:30 y 036 (Story con el Reel e04, 18639091864062979) a las 20:40, ambas con jsDelivr al primer intento. Siguiente: 037 Reel p08 mañana a las 13:30 (+038 Story 13:40).
+- Métricas últimos 7 días: Reel 032 (p07 «vienen 11 de 18», ~7 h) 807 vistas, alcance 669, saltos 36,7 %, 11,3 s, 3 guardados → buen arranque, ya por encima de la mediana prevista (127–350–1.539). Reel 028 (d4 pases, 24 h) 1.526 vistas, alcance 1.364, saltos 34,5 %, 13,3 s, 8 guardados. Reel 023 (p05) 1.546, saltos 41 %. Reel 021 (d3) 1.662, saltos 33 %, 6 comentarios. Reel 011 (d2) 1.708, 19,1 s. Reel 009 (hb1) 1.871, 10 guardados, 3 compartidos. Reel 001: 1.537. Reel 026 (p06): 140. Reel 004 (p01): 146. Reel 007 (p02): 127. Carrusel 031: 28 vistas, alcance 8. Carrusel 006: 33 vistas, alcance 9. Imagen 025: 18 vistas, alcance 6.
+- Panel: Plan sincronizado (034, 035, 036 → Publicado). Analisis: añadido 028 (Muy bien, 1.526 frente a 687–1.532–1.896). Sin recálculo de predicciones (028 dentro del rango).
+- Comentarios: ninguno nuevo (los 6 de 021 ya respondidos). Sin spam.
