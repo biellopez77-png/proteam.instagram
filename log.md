@@ -150,3 +150,9 @@
 - Métricas últimos 7 días: Reel 028 (d4 pases, ~14,5 h) 1.525 vistas, alcance 1.364, saltos 34,5 %, 13,4 s, 8 guardados → muy buen arranque (previsto 687–1.532–1.896). Reel 023 (p05) 1.543 vistas, saltos 41 %. Reel 021 (d3) 1.662, saltos 33 %. Reel 026 (p06, ~21 h) 140 vistas, saltos 56 %, 6,8 s, 0 guardados → flojo. Reel 011 (d2) 1.708. Reel 009 (hb1) 1.867, 10 guardados, 3 compartidos. Reel 001: 1.537. Reel 004 (p01): 146. Reel 007 (p02): 127. Carrusel 006: 33 vistas, alcance 9. Imagen 025 (q1): 17 vistas, alcance 5.
 - Panel: Plan sincronizado (031 → Publicado). Analisis: nada nuevo con 24 h (026 a partir de las 13:30, 028 a partir de las 20:30).
 - Comentarios: ninguno nuevo (solo 021 tiene comentarios, los 6 ya respondidos). Sin spam.
+
+### Revisión 8 nov 13:40
+- Publicada 032 (Reel p07 «vienen 11 de 18», 18108931505343090) a las 13:30 y 033 (Story con el Reel p07, 17945742099365843) a las 13:40, ambas con jsDelivr al primer intento. Siguiente: 034 Story «¿próximo tema?» a las 19:00.
+- Métricas últimos 7 días: Reel 028 (d4 pases, ~17 h) 1.525 vistas, alcance 1.364, saltos 34,5 %, 13,4 s, 8 guardados. Reel 026 (p06, 24 h) 140 vistas, saltos 56 %, 6,8 s, 0 guardados → Flojo. Reel 023 (p05) 1.543, saltos 41 %. Reel 021 (d3) 1.662, saltos 33 %, 6 comentarios. Reel 011 (d2) 1.708, 19,1 s. Reel 009 (hb1) 1.868, 10 guardados, 3 compartidos. Reel 001: 1.537. Reel 004 (p01): 146. Reel 007 (p02): 127. Carrusel 031 (~3,5 h): 13 vistas, alcance 4. Carrusel 006: 33 vistas, alcance 9. Imagen 025: 17 vistas, alcance 5.
+- Panel: Plan sincronizado (032, 033 → Publicado). Analisis: añadido 026 (Flojo, 140 frente a 139–350–687). Sin recálculo de predicciones (026 dentro del rango).
+- Comentarios: ninguno nuevo (los 6 de 021 ya respondidos). Sin spam.
