@@ -144,3 +144,9 @@
 - Métricas últimos 7 días: Reel 023 (p05 portero, 24 h) 1.539 vistas, alcance 1.351, saltos 41 %, 11,6 s, 5 guardados, 1 compartido. Reel 026 (p06, ~7 h) 139 vistas, saltos 56 %, 6,9 s, 0 guardados → flojo. Reel 021 (d3) 1.661, saltos 33 %, 6 comentarios. Reel 011 (d2) 1.708, saltos 35 %, 19,1 s. Reel 009 (hb1) 1.865, 10 guardados, 3 compartidos. Reel 001: 1.537. Reel 004 (p01): 146. Reel 007 (p02): 127. Carrusel 006: 29 vistas, alcance 7. Imagen 025 (q1): 17 vistas, alcance 5.
 - Panel: Plan sincronizado (028, 029 → Publicado). Analisis: añadido 023 (Muy bien, 1.539 frente a 139–350–687). Predicción de Problema del entrenador recalculada por quedar 023 muy por encima: 127–350–1.539 (antes 139–350–687) en los 21 Reels programados del pilar.
 - Comentarios: ninguno nuevo (los 6 de 021 ya están respondidos). Sin spam.
+
+### Revisión 8 nov 11:00
+- Publicada 031 (carrusel «Lo que dicen los datos #2: los penaltis», 4 imágenes, 18134411818775098) a las 10:59 con jsDelivr al primer intento. Siguiente: 032 Reel p07 «vienen 11 de 18» a las 13:30 (+033 Story 13:40).
+- Métricas últimos 7 días: Reel 028 (d4 pases, ~14,5 h) 1.525 vistas, alcance 1.364, saltos 34,5 %, 13,4 s, 8 guardados → muy buen arranque (previsto 687–1.532–1.896). Reel 023 (p05) 1.543 vistas, saltos 41 %. Reel 021 (d3) 1.662, saltos 33 %. Reel 026 (p06, ~21 h) 140 vistas, saltos 56 %, 6,8 s, 0 guardados → flojo. Reel 011 (d2) 1.708. Reel 009 (hb1) 1.867, 10 guardados, 3 compartidos. Reel 001: 1.537. Reel 004 (p01): 146. Reel 007 (p02): 127. Carrusel 006: 33 vistas, alcance 9. Imagen 025 (q1): 17 vistas, alcance 5.
+- Panel: Plan sincronizado (031 → Publicado). Analisis: nada nuevo con 24 h (026 a partir de las 13:30, 028 a partir de las 20:30).
+- Comentarios: ninguno nuevo (solo 021 tiene comentarios, los 6 ya respondidos). Sin spam.
