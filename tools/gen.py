@@ -126,6 +126,35 @@ S['s12-a'] = story_q('¿Sabes el % de paradas', 'de tu portero?', 'Respóndenos 
 S['s13-a'] = story_post('q2', 'Pregunta de la <b>semana</b>', '¿Cómo repartes', 'los minutos?', 'Responde en el post · @app.proteam')
 S['s14-a'] = story_app('La convocatoria,', 'en dos toques.', 'fB', 'Partidos · pro-team.app')
 
+# ========== Semana 16–22 nov 2026 ==========
+# carrusel 6: Lo que dicen los datos #5 (FIFA 11+)
+L6 = 'Lo que dicen los datos · <b>#5</b>'
+SRC6 = 'Fuente: Thorborg et al. · British Journal of Sports Medicine, 2017'
+S['c6-1'] = page(1080, 1350, top(L6) + '<div class="h" style="top:330px;font-size:128px">¿Tu calentamiento <em>previene lesiones?</em></div><div class="p" style="top:900px">Hay uno que lo ha demostrado en ensayos con equipos reales.</div>' + foot(1, 5))
+S['c6-2'] = page(1080, 1350, top(L6) + '<div class="big" style="top:290px;font-size:330px">39<span style="font-size:170px"> %</span></div><div class="h" style="top:670px;font-size:84px">menos lesiones en los equipos que hicieron <em>el FIFA 11+.</em></div><div class="p" style="top:1000px">Frente a los que no lo hicieron. Metaanálisis de 4 ensayos aleatorizados.</div><div class="src" style="bottom:150px">' + SRC6 + '</div>' + foot(2, 5))
+S['c6-3'] = page(1080, 1350, top(L6) + '<div class="h" style="top:250px;font-size:96px">¿Qué es <em>el FIFA 11+?</em></div><div class="p" style="top:440px">Un calentamiento de unos 20 minutos, antes de entrenar, en 3 partes:</div><div class="li" style="top:660px"><div class="it"><i>1</i>Carrera suave con movilidad y contactos.</div><div class="it"><i>2</i>Fuerza, equilibrio y saltos.</div><div class="it"><i>3</i>Carrera más intensa con cambios de dirección.</div></div>' + foot(3, 5))
+S['c6-4'] = page(1080, 1350, top(L6) + '<div class="h" style="top:300px;font-size:104px">No vale <em>cualquier</em> calentamiento.</div><div class="p" style="top:640px">En el mismo análisis, el programa anterior, el FIFA 11, no redujo las lesiones.</div><div class="p" style="top:900px;font-size:54px;font-weight:700;color:var(--ink)">Importa qué ejercicios haces.</div><div class="src" style="bottom:150px">' + SRC6 + '</div>' + foot(4, 5))
+S['c6-5'] = page(1080, 1350, top('ProTeam') + '<div class="h" style="top:230px;font-size:76px;right:520px">Tu rutina de prevención, <em>en cada semana.</em></div><div class="p" style="top:760px;right:520px;font-size:38px">Guárdala como rutina en ProTeam y prográmala en tu planificación.</div><div style="position:absolute;left:84px;top:1080px"><span class="chip">Síguenos para el #6 →</span></div><div class="ph" style="left:600px;top:250px;width:400px;height:860px;border-color:#fff"><img src="app/mo-routines.jpg"></div>' + foot(0, 0), True)
+# carrusel 7: Lo que dicen los datos #6 (balonmano, posesiones)
+L7 = 'Los datos · <b>#6 · balonmano</b>'
+SRC7 = "Fuente: EHF · Men's EHF EURO 2026 analysis"
+S['c7-1'] = page(1080, 1350, top(L7) + '<div class="h" style="top:330px;font-size:128px">¿Tu equipo ataca bien… <em>o ataca mucho?</em></div><div class="p" style="top:900px">Los goles totales engañan. Los mejores miden otra cosa.</div>' + foot(1, 6))
+S['c7-2'] = page(1080, 1350, top(L7) + '<div class="big" style="top:290px;font-size:300px">34,1</div><div class="h" style="top:640px;font-size:84px">goles por cada 50 posesiones: <em>Dinamarca,</em> el mejor ataque del EHF EURO 2026.</div><div class="src" style="bottom:150px">' + SRC7 + '</div>' + foot(2, 6))
+S['c7-3'] = page(1080, 1350, top(L7) + '<div class="big" style="top:290px;font-size:300px">71,1<span style="font-size:160px"> %</span></div><div class="h" style="top:640px;font-size:84px">de acierto en tiros de campo de Dinamarca, <em>el mejor del torneo.</em></div><div class="p" style="top:980px">En todo el Europeo, el 65 % de los tiros acabaron en gol.</div><div class="src" style="bottom:150px">' + SRC7 + '</div>' + foot(3, 6))
+S['c7-4'] = page(1080, 1350, top(L7) + '<div class="big" style="top:290px;font-size:300px">26,3</div><div class="h" style="top:640px;font-size:84px">goles encajados por cada 50 posesiones: <em>Alemania,</em> la mejor defensa.</div><div class="p" style="top:1040px">Dinamarca, la campeona, encajó 26,5: casi igual de bien.</div><div class="src" style="bottom:150px">' + SRC7 + '</div>' + foot(4, 6))
+S['c7-5'] = page(1080, 1350, top(L7) + '<div class="h" style="top:230px;font-size:92px">Cómo medirlo <em>en tu equipo:</em></div><div class="li" style="top:600px;right:520px"><div class="it" style="font-size:40px"><i>1</i>Cuenta las posesiones de cada partido.</div><div class="it" style="font-size:40px"><i>2</i>Divide los goles entre las posesiones.</div><div class="it" style="font-size:40px"><i>3</i>Haz lo mismo con los goles encajados.</div></div><div class="ph" style="left:600px;top:560px;width:400px;height:640px"><img src="app/res-1.jpg"></div>' + foot(5, 6))
+S['c7-6'] = page(1080, 1350, top('ProTeam') + '<div class="h" style="top:300px;font-size:112px">Cada posesión, <em>contada en directo.</em></div><div class="p" style="top:760px">ProTeam registra los cambios de posesión y te da la eficacia en ataque y en defensa.</div><div style="position:absolute;left:84px;top:1040px"><span class="chip">Síguenos para el #7 →</span></div>' + foot(0, 0), True)
+# imagen: pregunta de la semana 3
+S['q3'] = page(1080, 1350, top('Pregunta de la <b>semana</b>') + '<div class="h" style="top:250px;font-size:92px">¿Qué miras primero <em>después de un partido?</em></div><div class="li" style="top:690px;gap:26px"><div class="opt"><b>A</b>El % de acierto en el tiro</div><div class="opt"><b>B</b>Las pérdidas de balón</div><div class="opt"><b>C</b>Los minutos de cada jugador</div></div><div class="src" style="top:1170px;color:var(--ink)">Responde con la letra en comentarios ↓</div>' + foot(0, 0))
+# stories 16–22 nov
+S['s15-a'] = story_q('¿Cuándo das por aprendida', 'una jugada?', '¿Cuando sale en el entreno o cuando sale en el partido? Respóndenos por mensaje.')
+S['s16-a'] = story_post('c6-1', 'Nuevo <b>post</b>', '¿Tu calentamiento', 'previene lesiones?', 'Lo que dicen los datos #5 · Ya en el perfil')
+S['s17-a'] = story_app('Tu rutina de prevención,', 'siempre a mano.', 'mo-routines', 'Preparación física · pro-team.app')
+S['s18-a'] = story_post('c7-1', 'Nuevo <b>post</b>', '¿Atacas bien…', 'o atacas mucho?', 'Lo que dicen los datos #6 · Ya en el perfil')
+S['s19-a'] = story_q('¿Cuántas posesiones tuvo tu equipo', 'en el último partido?', 'Si lo sabes, respóndenos con el número por mensaje.')
+S['s20-a'] = story_post('q3', 'Pregunta de la <b>semana</b>', '¿Qué miras primero', 'tras un partido?', 'Responde en el post · @app.proteam')
+S['s21-a'] = story_app('La carga del partido,', 'jugador a jugador.', 'fF', 'RPE de partido · pro-team.app')
+
 import sys
 ONLY = sys.argv[1:]
 
