@@ -185,3 +185,9 @@
 - Métricas: Reel 037 (~4,5 h) 200 vistas, alcance 167, saltos 53,9 %, 7,4 s, 1 guardado → arranque flojo, por encima del mínimo previsto (127–146–1.665). Reel 035 (e04, ~22 h) 145 vistas, saltos 64,7 %. Reel 032 (p07) 1.667, saltos 35,8 %, 6 guardados. Reel 028 (d4) 1.528. Reel 026 (p06) 140. Carrusel 031: 30 vistas, alcance 8. Imagen 025: 18 vistas.
 - Panel: Plan → 037, 038 y 087 Publicado con media_id. Aviso: la pestaña Plan tiene filas duplicadas (filas 31–37 repiten 37–89 con predicciones antiguas; las buenas son 38–44); se han actualizado ambas copias, conviene borrar las 31–37 en la próxima planificación.
 - Comentarios: ninguno nuevo (los 6 de 021 ya respondidos). Sin spam.
+
+### Revisión 9 nov 20:40
+- Publicada 039 (Reel p21 «nunca da tiempo a todo», 17963810984997145) a las 20:30: jsDelivr dio error de procesado de vídeo y se publicó al reintento con raw.githubusercontent. Publicada 040 (Story con el Reel p21, 18168729625485888) a las 20:40 con jsDelivr al primer intento. Siguiente: 088 carrusel Datos #3 mañana a las 11:00 (+089 Story 11:10).
+- Métricas últimos 7 días (caché de Windsor): Reel 037 (p08, ~7 h) 236 vistas, alcance 203, saltos 50,7 %, 8,5 s, 1 guardado. Reel 032 (p07) 1.667, saltos 35,8 %, 6 guardados. Reel 035 (e04) 145, saltos 64,7 %. Reel 028 (d4) 1.528, 8 guardados. Reel 023 (p05) 1.546. Reel 021 (d3) 1.663, 6 comentarios. Reel 011 (d2) 1.708. Reel 009 (hb1) 1.876, 10 guardados, 3 compartidos. Reel 026 (p06) 140. Reel 007 (p02) 127. Carrusel 031: 30 vistas. Carrusel 006: 33. Imagen 025: 18.
+- Panel: Plan → 039 y 040 Publicado con media_id (en las dos copias de filas duplicadas, 34–35 y 41–42). Analisis: añadidos 032 (Muy bien, 1.667 frente a 127–350–1.539) y 035 (Flojo, 145 frente a 145–190–1.860). Sin recálculo: la predicción de Problema del entrenador (127–146–1.665) ya incluye 032 desde la planificación de hoy.
+- Comentarios: ninguno nuevo (los 6 de 021 ya respondidos). Sin spam.
