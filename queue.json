@@ -420,8 +420,10 @@
   ],
   "caption": "95 minutos en 10 jornadas ⏱️\nEn un partido no se nota, en una temporada sí. Datos de ejemplo.\n¿Cómo se reparten los minutos en tu equipo? 👇\n#entrenadores #futbolbase #baloncesto #balonmano",
   "cover": "covers/p08-minutos-del-que-menos-juega.jpg",
-  "status": "pending",
-  "note": "backlog"
+  "status": "published",
+  "note": "backlog",
+  "media_id": "17975673828178246",
+  "published_at": "2026-11-09T13:31:10+01:00"
  },
  {
   "id": "038",
@@ -432,8 +434,10 @@
   ],
   "caption": null,
   "cover": null,
-  "status": "pending",
-  "note": "reel en story"
+  "status": "published",
+  "note": "reel en story",
+  "media_id": "18179548651450592",
+  "published_at": "2026-11-09T17:55:00+01:00"
  },
  {
   "id": "087",
@@ -444,8 +448,10 @@
   ],
   "caption": null,
   "cover": null,
-  "status": "pending",
-  "note": "pregunta rápida (minutos)"
+  "status": "published",
+  "note": "pregunta rápida (minutos)",
+  "media_id": "18025453550712856",
+  "published_at": "2026-11-09T18:00:10+01:00"
  },
  {
   "id": "039",

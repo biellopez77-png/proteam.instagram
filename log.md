@@ -178,3 +178,10 @@
 - Métricas últimos 7 días: Reel 032 (p07 «vienen 11 de 18», ~22 h) 1.665 vistas, alcance 1.390, saltos 35,8 %, 11,8 s, 6 guardados → por encima de la mediana prevista (127–350–1.539). Reel 035 (e04 «antes de cada entreno», ~15 h) 144 vistas, alcance 132, saltos 64 %, 4,9 s, 2 guardados → flojo (gancho de producto). Reel 028 (d4 pases) 1.528, saltos 34,5 %, 8 guardados. Reel 023 (p05) 1.546, saltos 41 %. Reel 021 (d3) 1.663, saltos 33 %, 6 comentarios. Reel 011 (d2) 1.708, 19,1 s. Reel 009 (hb1) 1.875, saltos 29 %, 10 guardados, 3 compartidos. Reel 026 (p06): 140. Reel 007 (p02): 127. Carrusel 031: 28 vistas, alcance 8. Carrusel 006: 33 vistas, alcance 9. Imagen 025: 18 vistas, alcance 6.
 - Panel: Analisis: añadido 031 (Flojo, 28 frente a 28–30–33). Plan sin cambios (nada publicado).
 - Comentarios: ninguno nuevo (los 6 de 021 ya respondidos). Sin spam.
+
+### Revisión 9 nov 17:54
+- 037 (Reel p08 «minutos del que menos juega», 17975673828178246) ya estaba publicado en Instagram a las 13:31, pero la cola seguía en `pending` (la ejecución de las 13:30 no lo anotó); no se ha vuelto a publicar, solo se ha marcado como publicado.
+- Publicada 038 (Story con el Reel p08, 18179548651450592) a las 17:55, con 4 h 15 min de retraso (dentro del margen de 6 h), y 087 (Story s8-a, pregunta rápida de minutos, 18025453550712856) a las 18:00. Ambas con jsDelivr al primer intento. Siguiente: 039 Reel p21 a las 20:30 (+040 Story 20:40).
+- Métricas: Reel 037 (~4,5 h) 200 vistas, alcance 167, saltos 53,9 %, 7,4 s, 1 guardado → arranque flojo, por encima del mínimo previsto (127–146–1.665). Reel 035 (e04, ~22 h) 145 vistas, saltos 64,7 %. Reel 032 (p07) 1.667, saltos 35,8 %, 6 guardados. Reel 028 (d4) 1.528. Reel 026 (p06) 140. Carrusel 031: 30 vistas, alcance 8. Imagen 025: 18 vistas.
+- Panel: Plan → 037, 038 y 087 Publicado con media_id. Aviso: la pestaña Plan tiene filas duplicadas (filas 31–37 repiten 37–89 con predicciones antiguas; las buenas son 38–44); se han actualizado ambas copias, conviene borrar las 31–37 en la próxima planificación.
+- Comentarios: ninguno nuevo (los 6 de 021 ya respondidos). Sin spam.
