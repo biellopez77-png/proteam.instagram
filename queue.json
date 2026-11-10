@@ -555,7 +555,7 @@
  },
  {
   "id": "044",
-  "when": "2026-11-10T20:40:00+01:00",
+  "when": "2026-11-10T20:31:00+01:00",
   "kind": "story",
   "files": [
    "reels/p09-faltar-uno-a-la-semana.mp4"
@@ -564,6 +564,30 @@
   "cover": null,
   "status": "pending",
   "note": "reel en story"
+ },
+ {
+  "id": "c1a",
+  "when": "2026-11-11T13:25:00+01:00",
+  "kind": "image",
+  "files": [
+   "feed/t-cuenta-6.jpg"
+  ],
+  "caption": "Algo se está ordenando.\nUna línea. De momento, solo eso.\nFaltan 6 días.\n#entrenadordebase #futbolbase #baloncesto #balonmano #entrenadores",
+  "cover": null,
+  "status": "pending",
+  "note": "campaña «Algo se está ordenando», cuenta atrás con Trazo"
+ },
+ {
+  "id": "c1b",
+  "when": "2026-11-11T13:26:00+01:00",
+  "kind": "story",
+  "files": [
+   "stories/t-cuenta-6.jpg"
+  ],
+  "caption": null,
+  "cover": null,
+  "status": "pending",
+  "note": "cuenta atrás en Story"
  },
  {
   "id": "019",
@@ -579,7 +603,7 @@
  },
  {
   "id": "020",
-  "when": "2026-11-11T13:40:00+01:00",
+  "when": "2026-11-11T13:31:00+01:00",
   "kind": "story",
   "files": [
    "stories/s4-a.jpg"
@@ -591,7 +615,7 @@
  },
  {
   "id": "090",
-  "when": "2026-11-11T18:00:00+01:00",
+  "when": "2026-11-11T20:25:00+01:00",
   "kind": "story",
   "files": [
    "stories/s10-a.jpg"
@@ -615,7 +639,7 @@
  },
  {
   "id": "046",
-  "when": "2026-11-11T20:40:00+01:00",
+  "when": "2026-11-11T20:31:00+01:00",
   "kind": "story",
   "files": [
    "reels/p26-un-mal-dia-de-entreno.mp4"
@@ -626,32 +650,28 @@
   "note": "reel en story"
  },
  {
-  "id": "091",
-  "when": "2026-11-12T11:00:00+01:00",
-  "kind": "carousel",
+  "id": "c2a",
+  "when": "2026-11-12T13:25:00+01:00",
+  "kind": "image",
   "files": [
-   "feed/c5-1.jpg",
-   "feed/c5-2.jpg",
-   "feed/c5-3.jpg",
-   "feed/c5-4.jpg",
-   "feed/c5-5.jpg"
+   "feed/t-cuenta-5.jpg"
   ],
-  "caption": "Lo que dicen los datos #4: porteros de balonmano. 🧤\nEn el EHF EURO 2026, el 65 % de los tiros acabaron en gol (4.046 de 6.253). Emil Nielsen, portero de la campeona, paró el 31 %.\nPor eso, para valorar a tu portero, mira su % de paradas por zona y por posición de lanzamiento, no solo los goles encajados.\nFuente: EHF, Men's EHF EURO 2026 analysis.\nSíguenos para no perderte el #5 👉 @app.proteam\n#balonmano #entrenadordebalonmano #porterodebalonmano #estadisticabalonmano",
+  "caption": "Lleva años en tu pizarra y nunca le has puesto nombre.\nFaltan 5 días.\n#entrenadordebase #futbolbase #baloncesto #balonmano #entrenadores",
   "cover": null,
   "status": "pending",
-  "note": "datos #4 balonmano"
+  "note": "campaña «Algo se está ordenando», cuenta atrás con Trazo"
  },
  {
-  "id": "092",
-  "when": "2026-11-12T11:10:00+01:00",
+  "id": "c2b",
+  "when": "2026-11-12T13:26:00+01:00",
   "kind": "story",
   "files": [
-   "stories/s11-a.jpg"
+   "stories/t-cuenta-5.jpg"
   ],
   "caption": null,
   "cover": null,
   "status": "pending",
-  "note": "aviso post datos #4"
+  "note": "cuenta atrás en Story"
  },
  {
   "id": "017",
@@ -667,7 +687,7 @@
  },
  {
   "id": "018",
-  "when": "2026-11-12T13:40:00+01:00",
+  "when": "2026-11-12T13:31:00+01:00",
   "kind": "story",
   "files": [
    "reels/p04-cuando-se-sienta-por-faltas.mp4"
@@ -691,7 +711,7 @@
  },
  {
   "id": "048",
-  "when": "2026-11-12T20:40:00+01:00",
+  "when": "2026-11-12T20:31:00+01:00",
   "kind": "story",
   "files": [
    "reels/p13-por-que-el-dia-antes-mas-suave.mp4"
@@ -700,6 +720,30 @@
   "cover": null,
   "status": "pending",
   "note": "reel en story"
+ },
+ {
+  "id": "c3a",
+  "when": "2026-11-13T13:25:00+01:00",
+  "kind": "image",
+  "files": [
+   "feed/t-cuenta-4.jpg"
+  ],
+  "caption": "Ha visto muchos entrenos planificados a las 23:47, después de trabajar.\nYa va siendo hora de que algo se ordene.\nFaltan 4 días.\n#entrenadordebase #futbolbase #baloncesto #balonmano #entrenadores",
+  "cover": null,
+  "status": "pending",
+  "note": "campaña «Algo se está ordenando», cuenta atrás con Trazo"
+ },
+ {
+  "id": "c3b",
+  "when": "2026-11-13T13:26:00+01:00",
+  "kind": "story",
+  "files": [
+   "stories/t-cuenta-4.jpg"
+  ],
+  "caption": null,
+  "cover": null,
+  "status": "pending",
+  "note": "cuenta atrás en Story"
  },
  {
   "id": "041",
@@ -715,7 +759,7 @@
  },
  {
   "id": "042",
-  "when": "2026-11-13T13:40:00+01:00",
+  "when": "2026-11-13T13:31:00+01:00",
   "kind": "story",
   "files": [
    "reels/p10-cuando-vuelve-un-lesionado.mp4"
@@ -727,7 +771,7 @@
  },
  {
   "id": "093",
-  "when": "2026-11-13T18:00:00+01:00",
+  "when": "2026-11-13T20:25:00+01:00",
   "kind": "story",
   "files": [
    "stories/s12-a.jpg"
@@ -751,7 +795,7 @@
  },
  {
   "id": "050",
-  "when": "2026-11-13T20:40:00+01:00",
+  "when": "2026-11-13T20:31:00+01:00",
   "kind": "story",
   "files": [
    "reels/p16-el-mismo-entreno-cansa-igual.mp4"
@@ -762,28 +806,28 @@
   "note": "reel en story"
  },
  {
-  "id": "094",
-  "when": "2026-11-14T11:00:00+01:00",
+  "id": "c4a",
+  "when": "2026-11-14T13:25:00+01:00",
   "kind": "image",
   "files": [
-   "feed/q2.jpg"
+   "feed/t-cuenta-3.jpg"
   ],
-  "caption": "Pregunta de la semana: ¿cómo repartes los minutos en fútbol base?\nA) Por igual entre todos\nB) Según el rendimiento\nC) Un mínimo para todos y el resto, según rendimiento\nResponde con la letra 👇\n#futbolbase #entrenadordefutbol #baloncestoformativo #balonmano",
+  "caption": "Ya tiene piernas. Y paciencia, que con cuarenta mensajes en el grupo hace falta.\nFaltan 3 días.\n#entrenadordebase #futbolbase #baloncesto #balonmano #entrenadores",
   "cover": null,
   "status": "pending",
-  "note": "pregunta de la semana"
+  "note": "campaña «Algo se está ordenando», cuenta atrás con Trazo"
  },
  {
-  "id": "095",
-  "when": "2026-11-14T11:10:00+01:00",
+  "id": "c4b",
+  "when": "2026-11-14T13:26:00+01:00",
   "kind": "story",
   "files": [
-   "stories/s13-a.jpg"
+   "stories/t-cuenta-3.jpg"
   ],
   "caption": null,
   "cover": null,
   "status": "pending",
-  "note": "aviso pregunta de la semana"
+  "note": "cuenta atrás en Story"
  },
  {
   "id": "055",
@@ -799,7 +843,7 @@
  },
  {
   "id": "056",
-  "when": "2026-11-14T13:40:00+01:00",
+  "when": "2026-11-14T13:31:00+01:00",
   "kind": "story",
   "files": [
    "reels/p19-volver-de-un-paron-a-tope.mp4"
@@ -823,7 +867,7 @@
  },
  {
   "id": "064",
-  "when": "2026-11-14T20:40:00+01:00",
+  "when": "2026-11-14T20:31:00+01:00",
   "kind": "story",
   "files": [
    "reels/p12-como-se-reparte-el-staff.mp4"
@@ -832,6 +876,30 @@
   "cover": null,
   "status": "pending",
   "note": "reel en story"
+ },
+ {
+  "id": "c5a",
+  "when": "2026-11-15T13:25:00+01:00",
+  "kind": "image",
+  "files": [
+   "feed/t-cuenta-2.jpg"
+  ],
+  "caption": "Se está levantando. El caos, no tanto.\nFaltan 2 días. Activa las notificaciones de @app.proteam para no perdértelo.\n#entrenadordebase #futbolbase #baloncesto #balonmano #entrenadores",
+  "cover": null,
+  "status": "pending",
+  "note": "campaña «Algo se está ordenando», cuenta atrás con Trazo"
+ },
+ {
+  "id": "c5b",
+  "when": "2026-11-15T13:26:00+01:00",
+  "kind": "story",
+  "files": [
+   "stories/t-cuenta-2.jpg"
+  ],
+  "caption": null,
+  "cover": null,
+  "status": "pending",
+  "note": "cuenta atrás en Story"
  },
  {
   "id": "075",
@@ -847,7 +915,7 @@
  },
  {
   "id": "076",
-  "when": "2026-11-15T13:40:00+01:00",
+  "when": "2026-11-15T13:31:00+01:00",
   "kind": "story",
   "files": [
    "reels/p20-repetir-la-misma-semana.mp4"
@@ -859,7 +927,7 @@
  },
  {
   "id": "096",
-  "when": "2026-11-15T18:00:00+01:00",
+  "when": "2026-11-15T20:25:00+01:00",
   "kind": "story",
   "files": [
    "stories/s14-a.jpg"
@@ -883,7 +951,7 @@
  },
  {
   "id": "052",
-  "when": "2026-11-15T20:40:00+01:00",
+  "when": "2026-11-15T20:31:00+01:00",
   "kind": "story",
   "files": [
    "reels/p25-ha-mejorado-desde-septiembre.mp4"
@@ -892,6 +960,30 @@
   "cover": null,
   "status": "pending",
   "note": "reel en story"
+ },
+ {
+  "id": "c6a",
+  "when": "2026-11-16T13:25:00+01:00",
+  "kind": "image",
+  "files": [
+   "feed/t-cuenta-1.jpg"
+  ],
+  "caption": "Mañana a las 20:30 se presenta.\nSi entrenas en base, va por ti.\n#entrenadordebase #futbolbase #baloncesto #balonmano #entrenadores",
+  "cover": null,
+  "status": "pending",
+  "note": "campaña «Algo se está ordenando», cuenta atrás con Trazo"
+ },
+ {
+  "id": "c6b",
+  "when": "2026-11-16T13:26:00+01:00",
+  "kind": "story",
+  "files": [
+   "stories/t-cuenta-1.jpg"
+  ],
+  "caption": null,
+  "cover": null,
+  "status": "pending",
+  "note": "cuenta atrás en Story"
  },
  {
   "id": "053",
@@ -907,7 +999,7 @@
  },
  {
   "id": "054",
-  "when": "2026-11-16T13:40:00+01:00",
+  "when": "2026-11-16T13:31:00+01:00",
   "kind": "story",
   "files": [
    "reels/p22-dos-partidos-en-una-semana.mp4"
@@ -919,7 +1011,7 @@
  },
  {
   "id": "097",
-  "when": "2026-11-16T18:00:00+01:00",
+  "when": "2026-11-16T20:25:00+01:00",
   "kind": "story",
   "files": [
    "stories/s15-a.jpg"
@@ -943,7 +1035,7 @@
  },
  {
   "id": "066",
-  "when": "2026-11-16T20:40:00+01:00",
+  "when": "2026-11-16T20:31:00+01:00",
   "kind": "story",
   "files": [
    "reels/p28-como-se-sabe-si-esta-aprendido.mp4"
@@ -952,34 +1044,6 @@
   "cover": null,
   "status": "pending",
   "note": "reel en story"
- },
- {
-  "id": "098",
-  "when": "2026-11-17T11:00:00+01:00",
-  "kind": "carousel",
-  "files": [
-   "feed/c6-1.jpg",
-   "feed/c6-2.jpg",
-   "feed/c6-3.jpg",
-   "feed/c6-4.jpg",
-   "feed/c6-5.jpg"
-  ],
-  "caption": "Lo que dicen los datos #5: el calentamiento que previene lesiones. 🦵\nEn un metaanálisis de 4 ensayos, los equipos que hicieron el FIFA 11+ tuvieron un 39 % menos de lesiones que los que no lo hicieron.\nFuente: Thorborg et al., British Journal of Sports Medicine (2017).\nSíguenos para no perderte el #6 👉 @app.proteam\n#entrenadordefutbol #prevenciondelesiones #preparacionfisica #futbolbase",
-  "cover": null,
-  "status": "pending",
-  "note": "datos #5 FIFA 11+"
- },
- {
-  "id": "099",
-  "when": "2026-11-17T11:10:00+01:00",
-  "kind": "story",
-  "files": [
-   "stories/s16-a.jpg"
-  ],
-  "caption": null,
-  "cover": null,
-  "status": "pending",
-  "note": "aviso post datos #5"
  },
  {
   "id": "061",
@@ -995,7 +1059,7 @@
  },
  {
   "id": "062",
-  "when": "2026-11-17T13:40:00+01:00",
+  "when": "2026-11-17T13:31:00+01:00",
   "kind": "story",
   "files": [
    "reels/p30-ha-salido-bien-el-entreno.mp4"
@@ -1006,28 +1070,56 @@
   "note": "reel en story"
  },
  {
-  "id": "057",
+  "id": "t01",
   "when": "2026-11-17T20:30:00+01:00",
   "kind": "reel",
   "files": [
-   "reels/p15-cuanto-tarda-en-recuperarse.mp4"
+   "reels/t01-presentacion-trazo.mp4"
   ],
-  "caption": "Un partido no se recupera en una noche ⏳\nEn fútbol, el rendimiento físico puede tardar 72 horas o más en volver del todo (Nédélec et al.).\n¿Cómo recuperáis? 👇\n#entrenadores #futbolbase #baloncesto #balonmano",
-  "cover": "covers/p15-cuanto-tarda-en-recuperarse.jpg",
+  "caption": "Cuarenta mensajes. Tres Excel. Una libreta que ya no se lee.\nEl entrenador de base también trabaja. Merece orden. Merece su sitio.\nOs presentamos a Trazo: la línea azul de tu pizarra, ahora de tu lado. ✏️\nEnvíaselo a tu segundo entrenador 👉\n#entrenadordebase #futbolbase #baloncesto #balonmano #entrenadores",
+  "cover": "covers/t01-presentacion-trazo.jpg",
   "status": "pending",
-  "note": "backlog; reordenada 9 nov (antes 2026-11-14T13:30)"
+  "note": "campaña «Algo se está ordenando», día 7: presentación de Trazo (sin voz; rehacer con voz si se puede descargar)"
  },
  {
-  "id": "058",
-  "when": "2026-11-17T20:40:00+01:00",
+  "id": "t01s",
+  "when": "2026-11-17T20:31:00+01:00",
   "kind": "story",
   "files": [
-   "reels/p15-cuanto-tarda-en-recuperarse.mp4"
+   "reels/t01-presentacion-trazo.mp4"
   ],
   "caption": null,
   "cover": null,
   "status": "pending",
   "note": "reel en story"
+ },
+ {
+  "id": "091",
+  "when": "2026-11-18T13:25:00+01:00",
+  "kind": "carousel",
+  "files": [
+   "feed/c5-1.jpg",
+   "feed/c5-2.jpg",
+   "feed/c5-3.jpg",
+   "feed/c5-4.jpg",
+   "feed/c5-5.jpg"
+  ],
+  "caption": "Lo que dicen los datos #4: porteros de balonmano. 🧤\nEn el EHF EURO 2026, el 65 % de los tiros acabaron en gol (4.046 de 6.253). Emil Nielsen, portero de la campeona, paró el 31 %.\nPor eso, para valorar a tu portero, mira su % de paradas por zona y por posición de lanzamiento, no solo los goles encajados.\nFuente: EHF, Men's EHF EURO 2026 analysis.\nSíguenos para no perderte el #5 👉 @app.proteam\n#balonmano #entrenadordebalonmano #porterodebalonmano #estadisticabalonmano",
+  "cover": null,
+  "status": "pending",
+  "note": "datos #4 balonmano"
+ },
+ {
+  "id": "092",
+  "when": "2026-11-18T13:26:00+01:00",
+  "kind": "story",
+  "files": [
+   "stories/s11-a.jpg"
+  ],
+  "caption": null,
+  "cover": null,
+  "status": "pending",
+  "note": "aviso post datos #4"
  },
  {
   "id": "067",
@@ -1043,7 +1135,7 @@
  },
  {
   "id": "068",
-  "when": "2026-11-18T13:40:00+01:00",
+  "when": "2026-11-18T13:31:00+01:00",
   "kind": "story",
   "files": [
    "reels/p17-para-que-sirve-un-test-de-salto.mp4"
@@ -1055,7 +1147,7 @@
  },
  {
   "id": "100",
-  "when": "2026-11-18T18:00:00+01:00",
+  "when": "2026-11-18T20:25:00+01:00",
   "kind": "story",
   "files": [
    "stories/s17-a.jpg"
@@ -1079,7 +1171,7 @@
  },
  {
   "id": "078",
-  "when": "2026-11-18T20:40:00+01:00",
+  "when": "2026-11-18T20:31:00+01:00",
   "kind": "story",
   "files": [
    "reels/p18-que-se-apunta-en-el-gimnasio.mp4"
@@ -1091,7 +1183,7 @@
  },
  {
   "id": "101",
-  "when": "2026-11-19T11:00:00+01:00",
+  "when": "2026-11-19T13:25:00+01:00",
   "kind": "carousel",
   "files": [
    "feed/c7-1.jpg",
@@ -1108,7 +1200,7 @@
  },
  {
   "id": "102",
-  "when": "2026-11-19T11:10:00+01:00",
+  "when": "2026-11-19T13:26:00+01:00",
   "kind": "story",
   "files": [
    "stories/s18-a.jpg"
@@ -1132,7 +1224,7 @@
  },
  {
   "id": "070",
-  "when": "2026-11-19T13:40:00+01:00",
+  "when": "2026-11-19T13:31:00+01:00",
   "kind": "story",
   "files": [
    "reels/p14-semanas-con-piernas-pesadas.mp4"
@@ -1156,7 +1248,7 @@
  },
  {
   "id": "072",
-  "when": "2026-11-19T20:40:00+01:00",
+  "when": "2026-11-19T20:31:00+01:00",
   "kind": "story",
   "files": [
    "reels/p11-que-hay-en-la-ficha.mp4"
@@ -1165,6 +1257,30 @@
   "cover": null,
   "status": "pending",
   "note": "reel en story"
+ },
+ {
+  "id": "094",
+  "when": "2026-11-20T13:25:00+01:00",
+  "kind": "image",
+  "files": [
+   "feed/q2.jpg"
+  ],
+  "caption": "Pregunta de la semana: ¿cómo repartes los minutos en fútbol base?\nA) Por igual entre todos\nB) Según el rendimiento\nC) Un mínimo para todos y el resto, según rendimiento\nResponde con la letra 👇\n#futbolbase #entrenadordefutbol #baloncestoformativo #balonmano",
+  "cover": null,
+  "status": "pending",
+  "note": "pregunta de la semana"
+ },
+ {
+  "id": "095",
+  "when": "2026-11-20T13:26:00+01:00",
+  "kind": "story",
+  "files": [
+   "stories/s13-a.jpg"
+  ],
+  "caption": null,
+  "cover": null,
+  "status": "pending",
+  "note": "aviso pregunta de la semana"
  },
  {
   "id": "073",
@@ -1180,7 +1296,7 @@
  },
  {
   "id": "074",
-  "when": "2026-11-20T13:40:00+01:00",
+  "when": "2026-11-20T13:31:00+01:00",
   "kind": "story",
   "files": [
    "reels/p24-como-se-prepara-un-partido.mp4"
@@ -1192,7 +1308,7 @@
  },
  {
   "id": "103",
-  "when": "2026-11-20T18:00:00+01:00",
+  "when": "2026-11-20T20:25:00+01:00",
   "kind": "story",
   "files": [
    "stories/s19-a.jpg"
@@ -1216,7 +1332,7 @@
  },
  {
   "id": "082",
-  "when": "2026-11-20T20:40:00+01:00",
+  "when": "2026-11-20T20:31:00+01:00",
   "kind": "story",
   "files": [
    "reels/p27-cuanto-tarda-la-fuerza.mp4"
@@ -1228,7 +1344,7 @@
  },
  {
   "id": "104",
-  "when": "2026-11-21T11:00:00+01:00",
+  "when": "2026-11-21T13:25:00+01:00",
   "kind": "image",
   "files": [
    "feed/q3.jpg"
@@ -1240,7 +1356,7 @@
  },
  {
   "id": "105",
-  "when": "2026-11-21T11:10:00+01:00",
+  "when": "2026-11-21T13:26:00+01:00",
   "kind": "story",
   "files": [
    "stories/s20-a.jpg"
@@ -1264,7 +1380,7 @@
  },
  {
   "id": "084",
-  "when": "2026-11-21T13:40:00+01:00",
+  "when": "2026-11-21T13:31:00+01:00",
   "kind": "story",
   "files": [
    "reels/p23-que-se-trabaja-en-pretemporada.mp4"
@@ -1288,7 +1404,7 @@
  },
  {
   "id": "086",
-  "when": "2026-11-21T20:40:00+01:00",
+  "when": "2026-11-21T20:31:00+01:00",
   "kind": "story",
   "files": [
    "reels/p29-para-que-objetivos-individuales.mp4"
@@ -1297,6 +1413,34 @@
   "cover": null,
   "status": "pending",
   "note": "reel en story"
+ },
+ {
+  "id": "098",
+  "when": "2026-11-22T13:25:00+01:00",
+  "kind": "carousel",
+  "files": [
+   "feed/c6-1.jpg",
+   "feed/c6-2.jpg",
+   "feed/c6-3.jpg",
+   "feed/c6-4.jpg",
+   "feed/c6-5.jpg"
+  ],
+  "caption": "Lo que dicen los datos #5: el calentamiento que previene lesiones. 🦵\nEn un metaanálisis de 4 ensayos, los equipos que hicieron el FIFA 11+ tuvieron un 39 % menos de lesiones que los que no lo hicieron.\nFuente: Thorborg et al., British Journal of Sports Medicine (2017).\nSíguenos para no perderte el #6 👉 @app.proteam\n#entrenadordefutbol #prevenciondelesiones #preparacionfisica #futbolbase",
+  "cover": null,
+  "status": "pending",
+  "note": "datos #5 FIFA 11+"
+ },
+ {
+  "id": "099",
+  "when": "2026-11-22T13:26:00+01:00",
+  "kind": "story",
+  "files": [
+   "stories/s16-a.jpg"
+  ],
+  "caption": null,
+  "cover": null,
+  "status": "pending",
+  "note": "aviso post datos #5"
  },
  {
   "id": "079",
@@ -1312,7 +1456,7 @@
  },
  {
   "id": "080",
-  "when": "2026-11-22T13:40:00+01:00",
+  "when": "2026-11-22T13:31:00+01:00",
   "kind": "story",
   "files": [
    "reels/e11-tres-deportes.mp4"
@@ -1324,7 +1468,7 @@
  },
  {
   "id": "106",
-  "when": "2026-11-22T18:00:00+01:00",
+  "when": "2026-11-22T20:25:00+01:00",
   "kind": "story",
   "files": [
    "stories/s21-a.jpg"
@@ -1348,7 +1492,7 @@
  },
  {
   "id": "060",
-  "when": "2026-11-22T20:40:00+01:00",
+  "when": "2026-11-22T20:31:00+01:00",
   "kind": "story",
   "files": [
    "reels/e09-lo-que-no-recuerdas-del-partido.mp4"
@@ -1359,8 +1503,32 @@
   "note": "reel en story"
  },
  {
+  "id": "057",
+  "when": "2026-11-23T13:30:00+01:00",
+  "kind": "reel",
+  "files": [
+   "reels/p15-cuanto-tarda-en-recuperarse.mp4"
+  ],
+  "caption": "Un partido no se recupera en una noche ⏳\nEn fútbol, el rendimiento físico puede tardar 72 horas o más en volver del todo (Nédélec et al.).\n¿Cómo recuperáis? 👇\n#entrenadores #futbolbase #baloncesto #balonmano",
+  "cover": "covers/p15-cuanto-tarda-en-recuperarse.jpg",
+  "status": "pending",
+  "note": "backlog; reordenada 9 nov (antes 2026-11-14T13:30)"
+ },
+ {
+  "id": "058",
+  "when": "2026-11-23T13:31:00+01:00",
+  "kind": "story",
+  "files": [
+   "reels/p15-cuanto-tarda-en-recuperarse.mp4"
+  ],
+  "caption": null,
+  "cover": null,
+  "status": "pending",
+  "note": "reel en story"
+ },
+ {
   "id": "016",
-  "when": "2026-11-24T11:00:00+01:00",
+  "when": "2026-11-24T13:25:00+01:00",
   "kind": "carousel",
   "files": [
    "feed/c2-1.jpg",

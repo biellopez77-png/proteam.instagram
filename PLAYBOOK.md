@@ -25,17 +25,22 @@ avisa de problemas o decisiones que no se pueden deshacer.
 story), `files`, `caption`, `cover`, `status` (`pending`, `published`, `failed`), y tras
 publicar `media_id`, `published_at` o `error`.
 
-Publicar = cada pieza `pending` con `when` <= ahora + 20 min y no más de 6 h en el pasado.
-Una pieza con más de 6 h de retraso se reprograma al siguiente hueco libre del mismo tipo.
-Tras cada publicación, actualizar su estado en `queue.json` y añadir una línea a `log.md`;
-hacer commit y push.
+Publicar = cada pieza `pending` con `when` <= ahora + 25 min y no más de 6 h en el pasado.
+Usa `python3 tools/pub.py due` (lista exacta, en orden, con URLs) y, tras cada publicación,
+`python3 tools/pub.py done ID MEDIA_ID` (o `fail ID "error"`) **y haz commit y push enseguida**,
+pieza a pieza, para que una ejecución cortada no deje una pieza publicada como pendiente.
+`python3 tools/pub.py late` reprograma las que lleven más de 6 h de retraso.
 
 Nunca publicar dos veces la misma pieza: si `status` no es `pending`, no se toca. Si una
 publicación falla, un reintento como máximo; después `failed` con el error.
 
 ## Estrategia (resumen)
 
-- **Modo crecimiento máximo (decidido por Biel el 1 nov):** 2 Reels al día (13:30 y 20:30), cada uno también en Story 10 min después; feed a las 11:00. Prioridad absoluta: alcance en el público objetivo (entrenadores de fútbol, baloncesto y balonmano en España). **Solo crecimiento orgánico: nada de promoción pagada ni anuncios** (decidido por Biel el 1 nov).
+- **Modo crecimiento máximo (decidido por Biel el 1 nov):** 2 Reels al día (13:30 y 20:30).
+  **Horario de bajo consumo (desde el 10 nov):** solo hay 2 ejecuciones de publicación al día (13:23 y
+  20:23), así que todo se agrupa en esas dos franjas: feed a las 13:25, Reel a las 13:30 y su Story a
+  las 13:31; Stories sueltas a las 20:25, Reel a las 20:30 y su Story a las 20:31. No programar nada
+  fuera de 13:25–13:31 y 20:25–20:31. Prioridad absoluta: alcance en el público objetivo (entrenadores de fútbol, baloncesto y balonmano en España). **Solo crecimiento orgánico: nada de promoción pagada ni anuncios** (decidido por Biel el 1 nov).
 - Textos con palabras clave que la gente busca (entrenador de fútbol base, planificación de entrenamientos, estadística de balonmano, control de carga…), porque Instagram también funciona como buscador.
 
 - Reels = alcance. Gancho de pregunta, dato o conflicto en el primer segundo; nunca empezar
@@ -47,7 +52,7 @@ publicación falla, un reintento como máximo; después `failed` con el error.
   que invitan a responder por mensaje.
 - Pilares: Lo que dicen los datos 40 %, El problema del entrenador 20 %, ProTeam en 30 s
   25 %, Prueba real 15 %.
-- Una sola llamada a la acción por pieza. "3 meses gratis" solo en piezas de producto.
+- Una sola llamada a la acción por pieza. Nunca mencionar el precio ni «gratis».
 - Castellano revisado, sin catalanismos ni erratas, 3–5 hashtags.
 - Prohibido inventar testimonios, resultados o estadísticas. Los datos llevan fuente o
   "datos de ejemplo". No usar el caso de un club sin su permiso.
@@ -56,10 +61,11 @@ publicación falla, un reintento como máximo; después `failed` con el error.
 
 ## Rutina
 
-- **Cada ejecución de publicación**: publicar lo que toque, leer métricas de las últimas
-  piezas publicadas y anotarlas en `log.md`. Responder comentarios nuevos con respuestas
-  cortas y útiles en nombre de ProTeam (nunca prometer cosas que la app no hace, nunca datos
-  personales). Ocultar spam.
+- **Ejecución de las 13:23 (ligera)**: solo publicar lo que toque con `tools/pub.py`. Nada más
+  (sin métricas, sin hoja, sin comentarios) para gastar lo mínimo.
+- **Ejecución de las 20:23 (diaria)**: publicar; después métricas de los últimos 7 días en `log.md`,
+  hoja del panel (Plan y Analisis) y comentarios nuevos (respuestas cortas y útiles en nombre de
+  ProTeam, nunca prometer cosas que la app no hace, nunca datos personales; ocultar spam).
 - **Cada lunes (planificación)**: analizar la semana anterior con datos (alcance, saltos,
   visionado medio, guardados, compartidos, seguidores, comentarios), escribir el informe
   semanal en `reports/AAAA-MM-DD.md`, decidir qué potenciar y qué dejar, generar con
@@ -69,10 +75,65 @@ publicación falla, un reintento como máximo; después `failed` con el error.
 
 ## Límites conocidos
 
-- Los Reels con voz nueva se producen en sesiones con el ordenador de Biel conectado
-  (descarga de voces de ElevenLabs). El backlog de Reels en `reels/` cubre hasta el 21 de
-  noviembre de 2026 a 2 por día; avisar a Biel cuando queden menos de 14 (una semana).
+- Las voces de ElevenLabs no se pueden descargar desde la nube (el dominio
+  elevenlabsusercontent.com está bloqueado salvo que Biel lo permita en claude.ai > Ajustes >
+  Capacidades). Si `curl` a la URL de la toma funciona, úsala; si no, Reels de Trazo sin voz, con
+  texto en pantalla y `tools/trazo/sonido.py`. El backlog de Reels grabados acaba el 22 nov: desde
+  ahora las piezas nuevas se hacen con Trazo por código (ver «Marca y tono»).
 - Instagram no da seguidores por Reel ni datos demográficos por debajo de 100 seguidores.
+
+## Marca y tono (decidido por Biel el 10 nov 2026; manda sobre el resto si algo choca)
+
+**Tono** (referencias: jaquebue y unrespiro)
+- Vendemos la emoción y la identidad antes que el producto. El protagonista es el entrenador de base:
+  el que planifica de noche después de trabajar, sin que nadie se lo pague.
+- Frase de marca: «El entrenador de base también trabaja.» Es una firma: no en cada pieza.
+- Nada de vídeos con aspecto de IA genérica ni visualizaciones vacías. Mejor 1 pieza con alma que 3
+  de relleno. Si una pieza solo da números sin identidad, no se publica.
+- **Nunca mencionar el precio** (sustituye a lo de «3 meses gratis»).
+- Prohibido: atacar a la competencia, polémicas con clubes, menores reconocibles, comprar
+  seguidores, testimonios falsos, clickbait engañoso, política y cualquier cosa que no sea real.
+
+**Personaje: Trazo**
+- La línea azul (#2f6bff) de la pizarra táctica convertida en un muñeco de un solo trazo continuo,
+  extremos redondeados, fondo blanco con puntos. Es el ayudante del entrenador: habla poco, ordena el
+  caos y tiene humor seco. Hilo conductor de Reels, carruseles y Stories.
+- Se anima por código, nunca con IA de vídeo (coste 0 €):
+  - `tools/trazo/trazo.js`: librería (pizarra, Trazo con poses `line stand slump raise point sit`
+    y mezcla entre poses, tarjetas del caos `msg excel libreta nota alerta`, texto con remate en
+    cursiva azul, logo).
+  - Una escena es un JS con `window.SCENE = {w, h, dur, fps, draw(ctx, t, args)}` en
+    `tools/trazo/escenas/` (ejemplos: `presentacion.js` Reel de 25 s y `cuenta.js` imagen fija).
+  - `python3 tools/trazo/render.py video ESCENA.js reels/X.mp4 --audio X.wav` (25 s ≈ 30 s de
+    render) y `... still ESCENA.js feed/X.jpg --t N [--h 1920]`.
+  - Sonido: `python3 tools/trazo/sonido.py presentacion X.wav` (añade una función por escena).
+  - Portada del Reel: `render.py still` del momento más claro a `covers/`.
+- Voz de marca (cuando se pueda descargar): ElevenLabs «David – Cercano, Natural, Cálido»
+  (voice_id t4SIkzLfMpvYp7YkCOdU, modelo eleven_v4); tomas del Reel de presentación en el flow
+  kWmsY138KJibKJyg4mrE. Si se consigue, rehacer `reels/t01-presentacion-trazo.mp4` con la voz.
+
+**Campañas (en este orden)**
+1. «Algo se está ordenando»: cuenta atrás de 6 días (11–16 nov, imagen de feed 13:25 + Story
+   13:26, `cuenta.js`) y el día 7 (17 nov, 20:30) el Reel de presentación (`t01-presentacion-trazo`).
+2. «50 sitios en el banquillo»: plazas limitadas de equipo fundador, sin precio, y cada plaza ocupada
+   se marca en un banquillo dibujado. **Antes de lanzarla, preguntar a Biel qué incluye exactamente
+   la plaza fundadora; no inventar condiciones.** (Pendiente de su respuesta.)
+3. «Funeral del Excel»: humor; Trazo despide hojas de cálculo, libretas y grupos de WhatsApp
+   caóticos. Llamada a la acción: «Envíaselo a tu segundo entrenador».
+4. «Vota la próxima función»: tarjeta de pregunta en Stories con respuesta por mensaje directo.
+   **Solo opciones que estén de verdad en la hoja de ruta, confirmadas por Biel.** (Pendiente.)
+5. «Trazo analiza»: Trazo redibuja en la pizarra jugadas reales (NBA, Euroliga, ACB, Asobal,
+   Champions de balonmano y de fútbol, LaLiga, Premier, Bundesliga), siempre con datos reales y
+   fuente, sin imágenes de televisión.
+
+**Lo que ya sabemos (informe del 9 nov)**
+- Ganchos con cifra, dilema o escena concreta: ~1.440 de alcance. Preguntas abstractas o empezar
+  con el producto: ~124. Trazo entra siempre con un gancho concreto en el primer segundo, nunca con
+  la app.
+- El balonmano es el mejor pilar: darle más peso.
+- Ninguna pieza pedía compartir: en las piezas de humor, «Envíaselo a tu segundo entrenador», de
+  una en una.
+- Avisar a Biel solo para la plaza fundadora y las opciones de «Vota la próxima función».
 
 ## Panel (ProTeam Instagram) — mantenerlo al día
 
