@@ -116,12 +116,11 @@ publicación falla, un reintento como máximo; después `failed` con el error.
 1. «Algo se está ordenando»: cuenta atrás de 6 días (11–16 nov, imagen de feed 13:25 + Story
    13:26, `cuenta.js`) y el día 7 (17 nov, 20:30) el Reel de presentación (`t01-presentacion-trazo`).
 2. «50 sitios en el banquillo»: plazas limitadas de equipo fundador, sin precio, y cada plaza ocupada
-   se marca en un banquillo dibujado. **Antes de lanzarla, preguntar a Biel qué incluye exactamente
-   la plaza fundadora; no inventar condiciones.** (Pendiente de su respuesta.)
+   se marca en un banquillo dibujado. Condiciones decididas: ver «Decisiones comerciales».
 3. «Funeral del Excel»: humor; Trazo despide hojas de cálculo, libretas y grupos de WhatsApp
    caóticos. Llamada a la acción: «Envíaselo a tu segundo entrenador».
 4. «Vota la próxima función»: tarjeta de pregunta en Stories con respuesta por mensaje directo.
-   **Solo opciones que estén de verdad en la hoja de ruta, confirmadas por Biel.** (Pendiente.)
+   Opciones decididas: ver «Decisiones comerciales».
 5. «Trazo analiza»: Trazo redibuja en la pizarra jugadas reales (NBA, Euroliga, ACB, Asobal,
    Champions de balonmano y de fútbol, LaLiga, Premier, Bundesliga), siempre con datos reales y
    fuente, sin imágenes de televisión.
@@ -133,7 +132,7 @@ publicación falla, un reintento como máximo; después `failed` con el error.
 - El balonmano es el mejor pilar: darle más peso.
 - Ninguna pieza pedía compartir: en las piezas de humor, «Envíaselo a tu segundo entrenador», de
   una en una.
-- Avisar a Biel solo para la plaza fundadora y las opciones de «Vota la próxima función».
+- No hace falta avisar a Biel de nada de Instagram: lo resume el parte semanal de los lunes.
 
 ## Cambio de rumbo (Biel, 10 nov 2026, 14:00) — manda sobre todo lo anterior
 
@@ -174,6 +173,20 @@ que pase el control. Cada Reel también en Story 1 min después. La cuenta atrá
 ordenando» sigue (feed + Story 13:25) y el Reel de presentación el 17 nov 20:30, pero las Stories de la
 cuenta atrás y la presentación se rehacen con los encuadres de arriba.
 
+
+
+**Decisiones comerciales (10 nov 2026, Biel delega: «elige tú»). Ya no hay nada pendiente de Biel:**
+- **Plaza fundadora** («50 sitios en el banquillo»): 3 meses gratis del primer equipo (lo que ya da la
+  app, sin tarjeta), línea directa con Biel por email, voto en las próximas funciones y, si lo piden,
+  les preparamos su primera semana de entrenamientos. Sin descuentos ni precio. Se pide en
+  pro-team.app/prueba. Lanzar ya, tras la cuenta atrás (desde el 18 nov).
+- **«Vota la próxima función»**: opciones reales de la hoja de ruta de la app: (1) Modelo de juego
+  completo (identidad, ataque, defensa, transiciones, porteros, balón parado), (2) crear ejercicios
+  desde la sesión con un botón + y reutilizarlos, (3) filtros avanzados de estadística (competición,
+  rival, local/visitante), (4) exportar informes directos a Google Sheets. Respuestas por mensaje
+  directo; el resultado se publica y se pasa a Biel en el parte semanal.
+- **Black Friday y Navidad**: sin descuentos. El gancho es la plaza fundadora + «Viernes Negro del
+  Excel» + «Adviento del entrenador».
 
 **Calendario comercial (Biel quiere clientes antes de Navidad):**
 - **23–27 nov · «Viernes Negro del Excel»** (Black Friday es el 27 nov): serie «Funeral del Excel» con
