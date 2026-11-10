@@ -174,6 +174,16 @@ que pase el control. Cada Reel también en Story 1 min después. La cuenta atrá
 ordenando» sigue (feed + Story 13:25) y el Reel de presentación el 17 nov 20:30, pero las Stories de la
 cuenta atrás y la presentación se rehacen con los encuadres de arriba.
 
+
+**Calendario comercial (Biel quiere clientes antes de Navidad):**
+- **23–27 nov · «Viernes Negro del Excel»** (Black Friday es el 27 nov): serie «Funeral del Excel» con
+  Trazo, 1 pieza al día, cerrando el viernes 27 con la llamada a pedir plaza en pro-team.app/prueba.
+  Sin descuentos ni precio salvo que Biel confirme una oferta (si la confirma, se añade aquí).
+- **1–24 dic · «Adviento del entrenador»**: cada día un ejercicio real (ficha de /ejercicios) en Story
+  con Trazo, y un Reel resumen cada domingo. Llamada a la acción: el calendario completo en la web.
+- **Navidad · «Regala orden»**: idea para clubes — regalar a su cuerpo técnico la temporada
+  organizada. Solo cuando Biel confirme las condiciones.
+
 **Producción:** la tarea programada «Instagram ProTeam · producción diaria (Trazo analiza)» produce y
 programa cada mañana la pieza del día. La revisión de los lunes analiza y ajusta, no rellena.
 
