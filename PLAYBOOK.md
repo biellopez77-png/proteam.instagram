@@ -246,6 +246,12 @@ que mantener; el panel se actualiza solo al leerla.
   compartidos. Frases cortas y con números reales; nunca inventar.
 - Pestaña **Aprendizajes** (fecha, aprendizaje, evidencia, accion, estado): cada lunes, 1–3 reglas
   nuevas sacadas de los datos, con la acción aplicada en el calendario (estado Aplicado / En curso).
+- **Vídeos de los próximos Reels** (botón «Ver vídeo» en la pestaña Próximos): cada vez que se programa un
+  Reel nuevo, `python3 tools/panel_videos.py clean` y `python3 tools/panel_videos.py prep` (crea la vista
+  previa ligera en `.panel_videos/`); súbela al panel con el Artifact tool (publish con `url` del panel,
+  `asset: true`, `file_path`), apunta la URL devuelta con `python3 tools/panel_videos.py add ARCHIVO /_blob/…`,
+  sube `panel_videos.json` igual y pon su URL en `datasets/videos` (`source.url` y `updated`) con
+  ArtifactData update. Si esas herramientas no están en la sesión, omitir y decirlo en el resumen.
 - **Portadas**: si la planificación añade piezas nuevas, generar miniaturas (160 px de ancho, JPEG
   calidad 70, data URL) de cada `files[0]` de `queue.json` (para vídeos, `covers/<nombre>.jpg`), como
   JSON `[{archivo, img}]`; subirlo al panel con el Artifact tool (publish con `url` del panel,
