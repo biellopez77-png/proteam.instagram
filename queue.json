@@ -536,8 +536,10 @@
   ],
   "caption": null,
   "cover": null,
-  "status": "pending",
-  "note": "reel en story; reprogramada (antes 2026-11-04T20:40, >6 h de retraso)"
+  "status": "published",
+  "note": "reel en story; reprogramada (antes 2026-11-04T20:40, >6 h de retraso)",
+  "media_id": "18014399888766469",
+  "published_at": "2026-11-10T13:28:11+0100"
  },
  {
   "id": "043",
