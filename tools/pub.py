@@ -31,9 +31,13 @@ def log(line):
 
 
 def due():
-    n = now(); out = []
-    for i in sorted(load(), key=when):
+    n = now(); out = []; q = load()
+    # Nunca repetir: un archivo ya publicado en el feed (reel, carrusel, imagen) no se vuelve a publicar.
+    feed = {i['files'][0] for i in q if i['status'] == 'published' and i['kind'] != 'story'}
+    for i in sorted(q, key=when):
         if i['status'] != 'pending': continue
+        if i['kind'] != 'story' and i['files'][0] in feed:
+            i['status'] = 'cancelled'; i['cancel_reason'] = 'repetido: ya publicado'; save(q); continue
         w = when(i)
         if n - timedelta(hours=6) <= w <= n + timedelta(minutes=25):
             out.append({'id': i['id'], 'kind': i['kind'], 'when': i['when'],

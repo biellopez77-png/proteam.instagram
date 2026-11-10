@@ -134,6 +134,28 @@ publicación falla, un reintento como máximo; después `failed` con el error.
   una en una.
 - No hace falta avisar a Biel de nada de Instagram: lo resume el parte semanal de los lunes.
 
+## REGLAS DE BIEL (10 nov 2026, 16:25) — mandan sobre TODO lo demás
+
+1. **Un solo formato de vídeo: «pizarra animada»** — el de los Reels que mejor funcionaron (d1–d4, hb1)
+   y ta01: campo/pista dibujado que se mueve, fichas y flechas que se dibujan, Trazo como guía, texto
+   grande y poco. **Prohibido el formato «diapositivas»** (rótulos pequeños tipo «•01 · EL PLAN» y
+   frases fijas que van cambiando, como la serie p y e). Nada de vídeos que sean texto sobre fondo.
+2. **Solo análisis de partidos REALES y RECIENTES**: del día anterior o del mismo día (máximo 36 h).
+   Barça, Madrid, LaLiga, Premier, Champions, NBA, Euroliga, ACB, Asobal, EHF… Qué ha pasado, por qué
+   (el patrón táctico o el dato que lo explica) y **cómo ayuda ProTeam** si te pasa lo mismo en tu
+   equipo, mencionando solo funciones reales de la app: registro de partido en directo, estadística por
+   parciales (5'/10'/partes) y rachas, mapas de tiro y de portería, eficacia por jugador y por tipo de
+   acción, planificación de la semana (microciclo) y control de carga con RPE. También vale «por qué la
+   liga/NBA/Euroliga está así» con la clasificación real del día. Datos con fuente, contrastados.
+3. **Nunca repetir un vídeo.** `tools/pub.py due` cancela solo cualquier Reel/carrusel/imagen cuyo
+   archivo ya se publicó. Nunca se vuelve a subir un archivo con otro nombre.
+4. **No petar la cuenta:** 1 Reel al día (13:30, el análisis de lo de anoche) + su Story. Un segundo
+   Reel solo si hay un partido enorme ese día. Feed estático: máximo 2 por semana, y solo si aporta.
+5. **Quién hace qué (para que nunca se suba nada dos veces):** solo la tarea «Instagram ProTeam ·
+   publicar» publica, y solo lo que está en `queue.json`. La tarea «producción diaria (Trazo analiza)»
+   produce y programa. La revisión de los lunes analiza y ajusta. Ningún chat ni tarea publica a mano
+   fuera de la cola.
+
 ## Cambio de rumbo (Biel, 10 nov 2026, 14:00) — manda sobre todo lo anterior
 
 **Qué se ha quitado:** todos los Reels informativos antiguos (series p, e, d, hb) y las Stories y carruseles
