@@ -12,6 +12,22 @@ const STEP = { 6: ['line', .32], 5: ['line', 1], 4: ['stand', .2], 3: ['stand', 
 window.SCENE = { w: 1080, h: 1350, dur: 0, draw(ctx, n, a) {
   n = Math.round(n); const W = a.w, H = a.h, story = H > 1500;
   T.board(ctx, W, H);
+  if (story) { // Story 1080x1920: composición centrada en la zona útil (x 0–940, y 250–1580)
+    const CX = 500;
+    ctx.save(); T.font(ctx, 40, 500, 'P'); const lw = ctx.measureText('ALGO SE ESTÁ ORDENANDO').width; ctx.restore();
+    T.logo(ctx, window.LOGO, CX - (lw + 86) / 2 + 30, 320, 64);
+    T.mono(ctx, 'Algo se está ordenando', CX - (lw + 86) / 2 + 86, 320, 40, INK, 'left');
+    ctx.save(); T.font(ctx, 400, 800); const nw = ctx.measureText(String(n)).width;
+    T.font(ctx, 120, 'i'); const dw = ctx.measureText(n === 1 ? 'día' : 'días').width;
+    const x0 = CX - (nw + 28 + dw) / 2, ny = 760;
+    T.font(ctx, 400, 800); ctx.fillStyle = BLUE; ctx.textBaseline = 'alphabetic'; ctx.fillText(String(n), x0, ny);
+    T.font(ctx, 120, 'i'); ctx.fillStyle = INK; ctx.fillText(n === 1 ? 'día' : 'días', x0 + nw + 28, ny); ctx.restore();
+    T.text(ctx, LINES[n], CX, 900, 62);
+    const [p, prog] = STEP[n]; const sz = 430, hy = 1265;
+    T.trazo(ctx, T.POSES[p], CX + (p === 'line' ? .02 * sz : 0), hy, sz, { prog, eyes: false });
+    T.mono(ctx, '@app.proteam  ·  ' + (n === 1 ? 'Mañana, 20:30' : `Faltan ${n}`), CX, 1530, 40, MUTE);
+    return;
+  }
   const top = story ? 230 : 90;
   T.logo(ctx, window.LOGO, 110, top, 64);
   T.mono(ctx, 'Algo se está ordenando', 162, top, 28, INK, 'left');

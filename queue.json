@@ -555,6 +555,18 @@
     "cancel_reason": "Biel 10 nov: fuera Reels informativos/IA antiguos; se sustituyen por «Trazo analiza»"
   },
   {
+    "id": "ta01",
+    "when": "2026-11-10T20:30:00+01:00",
+    "kind": "reel",
+    "files": [
+      "reels/ta01-atm-fcb-fermin.mp4"
+    ],
+    "caption": "19 tiros. 4 a puerta. Y los dos goles, del que llegaba desde atrás. ✏️\nAtlético 1–2 Barça (LaLiga, 8 nov). El Barça tiró 19 veces y solo 4 fueron entre palos, las mismas que el Atlético. Lo decidió Fermín López, con goles en el 45 y en el 66.\nEn el primero, Pedri conduce hacia el área y arrastra a la defensa. En el segundo, Lamine Yamal filtra el pase. En los dos, Fermín llega desde la segunda línea y remata.\nPara el martes: 3 contra 2 + el que llega. Dos atacantes fijan a los centrales, el tercero sale desde 20 m y solo vale su gol. Se entrena el momento de llegar, no solo el remate.\nJugadas recreadas en pizarra. Fuentes: 365Scores, 101 Great Goals y Goal.\nGuárdalo para el próximo entreno.\n#LaLiga #futbol #futbolbase #entrenadordefutbol #tacticafutbol",
+    "cover": "covers/ta01-atm-fcb-fermin.jpg",
+    "status": "pending",
+    "note": "Trazo analiza #1: Atlético 1–2 Barça (8 nov), llegadas de Fermín desde segunda línea"
+  },
+  {
     "id": "044",
     "when": "2026-11-10T20:31:00+01:00",
     "kind": "story",
@@ -566,6 +578,18 @@
     "status": "cancelled",
     "note": "reel en story",
     "cancel_reason": "Biel 10 nov: fuera Reels informativos/IA antiguos; se sustituyen por «Trazo analiza»"
+  },
+  {
+    "id": "ta01s",
+    "when": "2026-11-10T20:31:00+01:00",
+    "kind": "story",
+    "files": [
+      "reels/ta01-atm-fcb-fermin.mp4"
+    ],
+    "caption": null,
+    "cover": null,
+    "status": "pending",
+    "note": "reel en story"
   },
   {
     "id": "c1a",

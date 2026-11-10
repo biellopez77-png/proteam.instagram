@@ -53,6 +53,37 @@ def presentacion(dur=25.0):
     return b
 
 
+def rotulador(dur, amp=.06):
+    """Roce de rotulador sobre la pizarra mientras se dibuja una flecha."""
+    n = int(dur * SR); t = np.arange(n) / SR
+    x = noise_burst(dur, 1, r=10, lp=.35)
+    return amp * x * (0.6 + 0.4 * np.sin(2 * np.pi * 7 * t) ** 2) * np.minimum(1, t / .05) * np.minimum(1, (dur - t) / .08)
+
+
+def analiza(dur=31.0, golpes=(), flechas=(), pases=(), tiros=(), goles=(), reglas=(), cierre=28.2):
+    """«Trazo analiza»: base en re menor que se abre a fa mayor en la lección; eventos de pizarra."""
+    b = np.zeros(int(dur * SR))
+    add(b, pad([146.8, 174.6, 220], 19.8, .08, fade=1.0), 0)           # análisis (re menor)
+    add(b, pad([174.6, 220, 261.6, 349.2], 8.2, .085, fade=1.0), 19.6)  # lección (fa mayor)
+    for t0 in golpes: add(b, tone(73.4, 1.2, .22, a=.004, r=.35, harm=(1, .5, .2)), t0); add(b, noise_burst(.2, .12, r=.04), t0)
+    for t0, d in flechas: add(b, rotulador(d), t0)
+    for t0 in pases: add(b, tone(880, .18, .07, r=.06), t0)
+    for t0 in tiros: add(b, noise_burst(.18, .3, r=.03, lp=.4), t0); add(b, tone(98, .3, .18, a=.002, r=.08), t0)
+    for t0 in goles:
+        for i, f in enumerate([587.3, 740, 880]): add(b, tone(f, 1.2, .07, r=.5), t0 + i * .07)
+    for t0 in reglas: add(b, tone(1174.7, .3, .06, r=.12), t0)
+    add(b, tone(65.4, 3.0, .2, a=.005, r=1.1, harm=(1, .5, .2)), cierre)
+    add(b, tone(1046.5, 2.4, .05, r=1.0), cierre + .05); add(b, pad([261.6, 329.6, 392], dur - cierre, .07, fade=.6), cierre)
+    return b
+
+
+def analiza_atm_fcb():
+    return analiza(31.0, golpes=(0.0, 0.3, 3.7, 19.7),
+                   flechas=((4.0, 1.3), (5.8, 1.8), (6.6, 2.0), (11.8, 1.6), (12.2, 2.0), (16.2, 1.0), (23.0, 1.6)),
+                   pases=(8.6, 14.0, 24.4), tiros=(9.0, 14.5, 25.0), goles=(9.35, 14.85),
+                   reglas=(0.7, 5.0, 11.3, 16.4, 21.0, 23.0, 25.0), cierre=28.2)
+
+
 if __name__ == '__main__':
     b = globals()[sys.argv[1]]()
     b = b / (np.abs(b).max() + 1e-9) * .8
