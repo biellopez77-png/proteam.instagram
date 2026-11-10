@@ -135,6 +135,48 @@ publicación falla, un reintento como máximo; después `failed` con el error.
   una en una.
 - Avisar a Biel solo para la plaza fundadora y las opciones de «Vota la próxima función».
 
+## Cambio de rumbo (Biel, 10 nov 2026, 14:00) — manda sobre todo lo anterior
+
+**Qué se ha quitado:** todos los Reels informativos antiguos (series p, e, d, hb) y las Stories y carruseles
+antiguos pendientes están `cancelled` en `queue.json`. No se vuelven a programar. Biel considera que la
+cuenta no representa la marca: nada de vídeos informativos genéricos, nada de piezas sin novedad.
+
+**Pilar principal: «Trazo analiza» (análisis de las grandes ligas).** 1 pieza al día como mínimo,
+del partido más comentado de las últimas 48 h: LaLiga, Premier, Bundesliga, Champions (fútbol),
+NBA, Euroliga, ACB, Asobal, EHF Champions (balonmano). Rotar deportes; el balonmano rinde mejor.
+- Estructura del Reel (20–35 s): **0–1 s** gancho con un dato real y concreto del partido en texto
+  grande («4 goles en 11 minutos», «0 triples en el último cuarto»); **1–20 s** Trazo redibuja la
+  jugada o el patrón en una pizarra (campo/pista dibujado por código, jugadores como fichas con dorsal,
+  flechas que se dibujan, marcado como «recreación»); **20–30 s** la lección para el entrenador de
+  base: qué se entrena el martes para eso (1 ejercicio concreto); **final** logo + «Guárdalo para el
+  próximo entreno» o «Envíaselo a tu segundo entrenador».
+- Datos SOLO de fuentes oficiales o fiables (web de la liga, acb.com, euroleaguebasketball.net, nba.com,
+  asobal, ehfcl.eurohandball.com, fbref, sofascore...). Fuente en el texto de la publicación. Sin
+  imágenes ni vídeo de televisión, sin escudos ni fotos de jugadores: todo se redibuja.
+- Se pueden usar herramientas de IA para apoyar el vídeo si mejoran el resultado, pero el aspecto
+  final tiene que ser el de la marca (pizarra, línea azul, Trazo), nunca un vídeo genérico de IA.
+
+**Formato y encuadres (obligatorio, se comprueba antes de programar):**
+- Reel y Story: 1080×1920. Zona segura: nada importante en los **250 px de arriba**, en los **420 px de
+  abajo** (Reel) / **340 px** (Story) ni en los **140 px de la derecha** (botones del Reel). La
+  composición se centra en la zona útil; no se deja medio lienzo vacío.
+- Portada del Reel: lo esencial dentro del recorte central 1080×1440 (cuadrícula del perfil, 3:4).
+- Feed: 1080×1350 (4:5), con el contenido centrado y legible en el recorte 3:4 de la cuadrícula.
+- Texto grande: titular ≥ 90 px en vertical, nada por debajo de 40 px. Máximo 12 palabras en pantalla
+  a la vez.
+- **Control de calidad:** antes de programar una pieza, saca 4 fotogramas (inicio, 2 intermedios,
+  final) a tamaño completo, míralos y comprueba: zona segura, nada cortado, nada descentrado, Trazo
+  entero y bien proporcionado, texto legible, sin huecos vacíos enormes, sin erratas. Si falla una
+  sola cosa, se corrige y se vuelve a comprobar. Si no se puede arreglar, no se publica.
+
+**Ritmo:** mejor 1 Reel muy bueno al día (20:30) que 2 flojos. 13:30 solo si hay una segunda pieza
+que pase el control. Cada Reel también en Story 1 min después. La cuenta atrás «Algo se está
+ordenando» sigue (feed + Story 13:25) y el Reel de presentación el 17 nov 20:30, pero las Stories de la
+cuenta atrás y la presentación se rehacen con los encuadres de arriba.
+
+**Producción:** la tarea programada «Instagram ProTeam · producción diaria (Trazo analiza)» produce y
+programa cada mañana la pieza del día. La revisión de los lunes analiza y ajusta, no rellena.
+
 ## Panel (ProTeam Instagram) — mantenerlo al día
 
 El panel de Biel está en https://claude.ai/artifact/GdqV6tqCq39FJVtTLNe8f7 y lee en vivo Instagram
