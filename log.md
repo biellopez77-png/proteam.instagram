@@ -2,6 +2,7 @@
 
 | Fecha | Pieza | Tipo | Resultado |
 | --- | --- | --- | --- |
+| 2026-11-10 13:27 | 014 reels/p03-cuantas-ocasiones-para-un-gol.mp4 | reel | publicado, media_id 18101489396093683 |
 | 2026-11-03 10:58 | 006 feed/c1-1..4.jpg (Lo que dicen los datos #1: córners) | carousel | publicado, media_id 18075831644750188 |
 | 2026-11-02 18:23 | 003 stories/s1-b.jpg | story | publicado (22 min tarde), media_id 17992921665027638 |
 | 2026-11-02 13:40 | 002 stories/s1-a.jpg | story | publicado, media_id 18100072433541589 |
