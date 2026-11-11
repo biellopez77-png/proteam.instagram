@@ -222,6 +222,37 @@ cuenta atrás y la presentación se rehacen con los encuadres de arriba.
 **Producción:** la tarea programada «Instagram ProTeam · producción diaria (Trazo analiza)» produce y
 programa cada mañana la pieza del día. La revisión de los lunes analiza y ajusta, no rellena.
 
+## Voz y relación con la app (decidido por Biel el 11 nov 2026; obligatorio en cada Reel)
+
+**Todos los Reels llevan voz en off.** Se hace gratis y en la nube con `tools/trazo/voz.py` (motor Piper, voz
+masculina en castellano «davefx»; no gasta créditos de ElevenLabs, que están agotados y además no se pueden
+descargar desde la nube):
+1. Escribe el guion en `tools/trazo/guiones/<escena>.json`: `[[segundo, "frase"], ...]`, una frase por momento de
+   la escena, empezando cuando aparece en pantalla lo que se dice. Números con letras («dieciocho a ocho»,
+   «minuto cuarenta y cinco»), «ProTeam» escrito «ProTim» para que lo pronuncie bien, nombres extranjeros como suenan.
+2. `python3 tools/trazo/voz.py guiones/X.json voz.wav --dur <duración> [--vel 1.05]`. Si una línea sale «SOLAPA»,
+   acorta la frase o mueve los tiempos de la escena. Nunca publiques con solapes.
+3. `python3 tools/trazo/sonido.py <función> musica.wav` y `python3 tools/trazo/voz.py --mezclar voz.wav musica.wav mezcla.wav`
+   (baja la música bajo la voz). Renderiza con `render.py video ... --audio mezcla.wav`.
+4. La voz dice lo mismo que se ve: el dato, qué pasó, cómo se ve en ProTeam y el ejercicio. Sin relleno.
+Un Reel sin voz no se programa.
+
+**Cada análisis se relaciona con la app de forma concreta, no genérica.** El tramo «en tu equipo» (5–8 s, antes
+del ejercicio o después) enseña en pantalla la pantalla o la estadística de ProTeam que habría detectado ESE
+patrón, con la etiqueta «datos de ejemplo», y la voz lo dice. Elige la función por el patrón del partido:
+| Lo que pasó en el partido | Función real de ProTeam que lo enseña |
+| --- | --- |
+| Un parcial que rompe el partido, una racha | Estadística por parciales (5'/10'/partes) y rachas |
+| Un portero que para mucho, o al que le marcan siempre por el mismo sitio | Mapa de portería |
+| Muchos tiros y pocos a puerta, tiros desde mala zona | Mapa de tiro |
+| Un jugador que decide (o que tira mucho y no acierta) | Eficacia por jugador y por tipo de acción |
+| Un equipo que se cae al final, rotaciones cortas, cansancio | Control de carga con RPE y minutos |
+| Un plan de partido que se ve trabajado en la semana | Planificación de la semana (microciclo) |
+| Lo que el entrenador «no vio» en directo | Registro de partido en directo |
+Solo estas funciones. Prohibido: frases vacías («ProTeam te ayuda a mejorar»), funciones que no existen, o
+enseñar la app sin que tenga que ver con lo que pasó en el partido. Si ninguna función encaja con el patrón,
+elige otro patrón u otro partido. El texto de la publicación lleva la misma línea concreta.
+
 ## Panel (ProTeam Instagram) — mantenerlo al día
 
 El panel de Biel está en https://claude.ai/artifact/GdqV6tqCq39FJVtTLNe8f7 y lee en vivo Instagram

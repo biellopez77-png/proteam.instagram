@@ -2,6 +2,7 @@
 // Dato: 19 tiros del Barça, 4 a puerta (los mismos que el Atlético); los dos goles, de Fermín López (45' y 66'),
 // llegando al área desde segunda línea. Fuentes: Sofascore/365Scores y 101 Great Goals / Goal.
 // Zona útil: x 0–940, y 250–1500. Centro de composición CX = 500.
+// 27.6–35.4 s: «en tu equipo», cómo se ve con ProTeam (registro en directo -> eficacia por jugador). Voz: voz.py.
 (() => {
 const W = 1080, H = 1920, CX = 500;
 const S = T.seg, E = T.ease, O = T.out;
@@ -137,7 +138,40 @@ function trazoAt(ctx, pose, x, y, s, o = {}) {
   else T.trazo(ctx, pose, x, y, s, o);
 }
 
-window.SCENE = { w: W, h: H, dur: 31, fps: 30, draw(ctx, t) {
+// En tu equipo: tarjeta «Eficacia por jugador» (datos de ejemplo), como la da ProTeam tras apuntar el partido en directo.
+const EF = [['9', 7, 1, 0], ['11', 4, 2, 0], ['8', 5, 4, 2], ['7', 3, 1, 0]];   // dorsal, tiros, a puerta, goles
+function eficacia(ctx, t, a) {
+  if (a <= 0) return;
+  const x0 = 90, y0 = 620, w = 820, h = 500, rh = 92;
+  ctx.save(); ctx.globalAlpha = a;
+  ctx.shadowColor = 'rgba(13,15,20,.12)'; ctx.shadowBlur = 40; ctx.shadowOffsetY = 14;
+  T.rr(ctx, x0, y0, w, h, 36); ctx.fillStyle = '#fff'; ctx.fill(); ctx.shadowColor = 'transparent'; ctx.lineWidth = 4; ctx.strokeStyle = '#d7e0f5'; ctx.stroke();
+  T.logo(ctx, window.LOGO, x0 + 62, y0 + 58, 56, a);
+  T.font(ctx, 40, 800); ctx.fillStyle = INK; ctx.textAlign = 'left'; ctx.textBaseline = 'middle'; ctx.fillText('Eficacia por jugador', x0 + 104, y0 + 60);
+  ctx.restore();
+  mono(ctx, 'Tiros', x0 + 300, y0 + 122, 40, MUTE, a, 'left'); mono(ctx, 'A puerta', x0 + 300 + 170, y0 + 122, 40, BLUE, a, 'left'); mono(ctx, 'Gol', x0 + w - 40, y0 + 122, 40, INK, a, 'right');
+  EF.forEach(([n, ti, ap, g], i) => {
+    const k = O(S(t, 29.0 + i * .35, 29.8 + i * .35)); if (k <= 0) return;
+    const y = y0 + 190 + i * rh, hot = n === '8', hk = hot ? E(S(t, 31.4, 32.0)) : 0;
+    ctx.save(); ctx.globalAlpha = a * k;
+    if (hk > 0) { T.rr(ctx, x0 + 18, y - rh / 2 + 6, w - 36, rh - 12, 22); ctx.fillStyle = `rgba(47,107,255,${.12 * hk})`; ctx.fill(); ctx.lineWidth = 5; ctx.strokeStyle = `rgba(47,107,255,${hk})`; ctx.stroke(); }
+    ctx.restore();
+    chip(ctx, x0 + 76, y, 'b', n, a * k, .92 + .1 * hk);
+    const bx = x0 + 150, bw = 470, u = bw / 7;
+    ctx.save(); ctx.globalAlpha = a * k; ctx.lineCap = 'round';
+    ctx.strokeStyle = '#d5dbe8'; ctx.lineWidth = 26; ctx.beginPath(); ctx.moveTo(bx, y); ctx.lineTo(bx + u * ti * k, y); ctx.stroke();
+    ctx.strokeStyle = BLUE; ctx.beginPath(); ctx.moveTo(bx, y); ctx.lineTo(bx + Math.max(1, u * ap * k), y); ctx.stroke();
+    T.font(ctx, 40, 800); ctx.fillStyle = INK; ctx.textAlign = 'left'; ctx.textBaseline = 'middle'; ctx.fillText(`${ap}/${ti}`, bx + bw + 26, y + 2);
+    T.font(ctx, 46, 800); ctx.fillStyle = g ? BLUE : '#b9c3d8'; ctx.textAlign = 'right'; ctx.fillText(String(g), x0 + w - 44, y + 2);
+    ctx.restore();
+  });
+}
+const APP = [
+  [28.0, 31.3, [['Apunta el partido '], ['en directo.', true]]],
+  [31.3, 35.3, [['Mira quién tira '], ['y quién acierta.', true]]],
+];
+
+window.SCENE = { w: W, h: H, dur: 39, fps: 30, draw(ctx, t) {
   T.board(ctx, W, H);
   const P_ = T.POSES;
 
@@ -153,7 +187,7 @@ window.SCENE = { w: W, h: H, dur: 31, fps: 30, draw(ctx, t) {
 
   // ---------- Trazo (hilo conductor) ----------
   // posiciones: gancho (centro abajo) -> pizarra (abajo izquierda) -> lección (abajo derecha) -> cierre (línea)
-  const toBoard = E(S(t, 3.6, 4.8)), toDrill = E(S(t, 19.4, 20.6)), fin = E(S(t, 27.4, 28.4));
+  const toBoard = E(S(t, 3.6, 4.8)), toDrill = E(S(t, 19.4, 20.6)), fin = E(S(t, 35.3, 36.3));
   let hx = T.lerp(CX, 210, toBoard), hy = T.lerp(1310, 1350, toBoard), s = T.lerp(300, 270, toBoard);
   hx = T.lerp(hx, 800, toDrill); hy = T.lerp(hy, 1392, toDrill); s = T.lerp(s, 190, toDrill);
   const RAISE = { ...P_.raise, elbowR: [.22, -.56], handR: [.3, -.8] };
@@ -162,10 +196,11 @@ window.SCENE = { w: W, h: H, dur: 31, fps: 30, draw(ctx, t) {
   const pt = Math.max(fadeIO(t, 8.3, 10.6, .4), fadeIO(t, 13.8, 16.0, .4), fadeIO(t, 17.0, 19.3, .4));
   pose = T.mix(pose, P_.point, E(pt));
   pose = T.mix(pose, P_.point, E(fadeIO(t, 21.0, 27.3, .4)));
+  pose = T.mix(pose, P_.point, E(fadeIO(t, 29.0, 35.1, .4)));
   const flip = t > 20.0;
-  if (t > 27.4) { pose = T.mix(pose, P_.line, fin); hx = T.lerp(800, CX + 10, fin); hy = T.lerp(1392, 950, fin); s = T.lerp(190, 170, fin); }
-  const nod = Math.sin(t * 2.2) * 4 * (t < 27 ? 1 : 0);
-  const blink = [1.9, 6.4, 12.7, 18.1, 23.6].some(b => t > b && t < b + .12);
+  if (t > 35.3) { pose = T.mix(pose, P_.line, fin); hx = T.lerp(800, CX + 10, fin); hy = T.lerp(1392, 950, fin); s = T.lerp(190, 170, fin); }
+  const nod = Math.sin(t * 2.2) * 4 * (t < 35 ? 1 : 0);
+  const blink = [1.9, 6.4, 12.7, 18.1, 23.6, 30.2, 33.4].some(b => t > b && t < b + .12);
   const look = t < 3.5 ? -.6 : (t < 19.5 ? .7 : -.7);
   trazoAt(ctx, pose, hx, hy + nod, s, { flip, blink, look: flip ? -look : look, eyes: fin < .3 });
 
@@ -218,15 +253,25 @@ window.SCENE = { w: W, h: H, dur: 31, fps: 30, draw(ctx, t) {
     for (const [a, b, segs] of RULES) { const k = fadeIO(t, a, b, .25); if (k > 0) T.text(ctx, segs, CX, 1200 + (1 - k) * 16, 60, { a: k * lessA }); }
   }
 
-  // ---------- 27.6–31 s · cierre ----------
-  if (t > 27.6) {
-    const lk = T.back(S(t, 28.2, 28.9));
-    T.logo(ctx, window.LOGO, CX, 690, 260 * lk, S(t, 28.2, 28.6));
-    const wk = O(S(t, 28.7, 29.3));
+  // ---------- 27.6–35.4 s · en tu equipo, con ProTeam ----------
+  const appA = Math.min(O(S(t, 27.6, 28.2)), 1 - S(t, 35.1, 35.5));
+  if (appA > 0) {
+    mono(ctx, 'En tu equipo · con ProTeam', CX, 290, 40, BLUE, appA);
+    T.text(ctx, [['¿Quién llega'], ['\n'], ['al área?', true]], CX, 410, 90, { a: appA });
+    eficacia(ctx, t, appA * O(S(t, 28.2, 28.9)));
+    for (const [a, b, segs] of APP) { const k = fadeIO(t, a, b, .25); if (k > 0) T.text(ctx, segs, CX, 1200 + (1 - k) * 16, 60, { a: k * appA }); }
+    mono(ctx, 'Datos de ejemplo', 120, 1300, 40, MUTE, appA * O(S(t, 29.0, 29.6)), 'left');
+  }
+
+  // ---------- 35.5–39 s · cierre ----------
+  if (t > 35.5) {
+    const lk = T.back(S(t, 36.1, 36.8));
+    T.logo(ctx, window.LOGO, CX, 690, 260 * lk, S(t, 36.1, 36.5));
+    const wk = O(S(t, 36.6, 37.2));
     T.text(ctx, [['ProTeam']], CX, 960 + (1 - wk) * 30, 120, { a: wk });
-    const ck = O(S(t, 29.3, 29.9));
-    T.text(ctx, [['Guárdalo para '], ['el próximo entreno.', true]], CX, 1130 + (1 - ck) * 20, 58, { a: ck });
-    mono(ctx, '@app.proteam', CX, 1250, 40, MUTE, O(S(t, 29.8, 30.3)));
+    const ck = O(S(t, 37.1, 37.7));
+    T.text(ctx, [['Guárdalo para '], ['el martes.', true]], CX, 1130 + (1 - ck) * 20, 58, { a: ck });
+    mono(ctx, '@app.proteam', CX, 1250, 40, MUTE, O(S(t, 37.6, 38.1)));
   }
 } };
 })();

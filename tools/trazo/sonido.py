@@ -78,10 +78,10 @@ def analiza(dur=31.0, golpes=(), flechas=(), pases=(), tiros=(), goles=(), regla
 
 
 def analiza_atm_fcb():
-    return analiza(31.0, golpes=(0.0, 0.3, 3.7, 19.7),
+    return analiza(39.0, golpes=(0.0, 0.3, 3.7, 19.7, 27.7),
                    flechas=((4.0, 1.3), (5.8, 1.8), (6.6, 2.0), (11.8, 1.6), (12.2, 2.0), (16.2, 1.0), (23.0, 1.6)),
-                   pases=(8.6, 14.0, 24.4), tiros=(9.0, 14.5, 25.0), goles=(9.35, 14.85),
-                   reglas=(0.7, 5.0, 11.3, 16.4, 21.0, 23.0, 25.0), cierre=28.2)
+                   pases=(8.6, 14.0, 24.4, 29.0, 29.35, 29.7, 30.05), tiros=(9.0, 14.5, 25.0), goles=(9.35, 14.85, 31.5),
+                   reglas=(0.7, 5.0, 11.3, 16.4, 21.0, 23.0, 25.0, 28.0, 31.3), cierre=36.1)
 
 
 def analiza_bcn_ccr():
