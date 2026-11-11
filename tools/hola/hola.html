@@ -9,7 +9,7 @@ html,body{width:1080px;height:1920px;overflow:hidden;background:#000}
 .ph{position:absolute;left:0;top:0;width:560px;height:1180px;border-radius:92px;background:#0b0c10;padding:18px;
   box-shadow:0 60px 120px rgba(0,0,0,.45),inset 0 0 0 3px #2a2d36;transform-style:preserve-3d;will-change:transform}
 .ph .sc{width:100%;height:100%;border-radius:76px;overflow:hidden;position:relative;background:#fff}
-.ph .sc img{position:absolute;left:0;top:0;width:100%;height:auto}
+.ph .sc img{position:absolute;left:0;top:70px;width:100%;height:auto}
 .ph .di{position:absolute;left:50%;top:40px;width:150px;height:44px;margin-left:-75px;border-radius:22px;background:#000;z-index:3}
 .t{position:absolute;left:0;width:1080px;text-align:center;font-weight:800;letter-spacing:-.035em;line-height:.98;white-space:pre}
 .t em{font-family:S;font-weight:400;font-style:italic;letter-spacing:-.01em}
@@ -86,7 +86,7 @@ window.render = (t) => {
     const k = back(seg(t, 6.1, 6.9));
     P[0] = { img: 'mo-plan', x: lerp(540, 330, sw), y: 1150, s: .98 * k, ry: lerp(0, 16, sw), rz: lerp(-2, -4, sw), a: f, z: 1, scroll: ease(seg(t, 6.8, 7.8)) * .18 };
     if (t > 7.9) P[1] = { img: 'mo-week', x: lerp(1100, 760, sw), y: 1150 + (1 - sw) * 80, s: .98, ry: lerp(-30, -16, sw), rz: lerp(6, 4, sw), a: sw * f, z: 2, scroll: ease(seg(t, 8.5, 9.8)) * .15 };
-    mm = ['Sesiones · microciclos · temporada', { y: 1720, size: 32, a: seg(t, 6.6, 7.1) * f, c: '#8a8f9c' }];
+    mm = ['Sesiones · microciclos · temporada', { y: 395, size: 32, a: seg(t, 6.6, 7.1) * f, c: '#8a8f9c' }];
   }
   // 4 · 10–15 · Registra en directo (fondo azul, cortes al golpe)
   else if (t < 15) {
@@ -98,8 +98,8 @@ window.render = (t) => {
     const cuts = ['reg-0', 'nlv-0', 'nlv-1', 'nlv-3', 'nlv-4', 'reg-4', 'res-0', 'res-1'];
     const i = Math.min(cuts.length - 1, Math.max(0, Math.floor((t - 10.9) / .5)));
     const k = back(seg(t, 10.2, 11.0)), pulse = 1 + .025 * Math.exp(-((t - 10.9) % .5) * 10);
-    P[0] = { img: t < 10.9 ? 'reg-0' : cuts[i], x: 540, y: 1220, s: 1.08 * k * pulse, rx: 4, ry: Math.sin(t * 1.2) * 6, a: f };
-    mm = ['Tiro · parada · pérdida · cambio', { y: 1720, size: 32, a: seg(t, 11, 11.5) * f, c: 'rgba(255,255,255,.8)' }];
+    P[0] = { img: t < 10.9 ? 'reg-0' : cuts[i], x: 540, y: 1270, s: 1.0 * k * pulse, rx: 4, ry: Math.sin(t * 1.2) * 6, a: f };
+    mm = ['Tiro · parada · pérdida · cambio', { y: 540, size: 32, a: seg(t, 11, 11.5) * f, c: 'rgba(255,255,255,.8)' }];
   }
   // 5 · 15–19.5 · Analiza (abanico de 3 móviles sobre negro)
   else if (t < 19.5) {
@@ -121,8 +121,8 @@ window.render = (t) => {
     const w2 = inw(t, 19.95, .4);
     tx2 = ['<em style="color:' + BLUE + '">la carga.</em>', { y: 350, size: 160, ...w2, a: w2.a * f, c: INK }];
     const k = out(seg(t, 19.6, 20.6)), sw = ease(seg(t, 21.2, 21.7));
-    P[0] = { img: t < 21.45 ? 'fF' : 'mo-tests', x: 540 + (1 - k) * 600, y: 1240, s: 1.0, ry: lerp(-35, -8, k) + sw * 0, rz: 3 * (1 - k), a: f };
-    mm = ['RPE · minutos · test físicos', { y: 1720, size: 32, a: seg(t, 20.2, 20.7) * f, c: '#8a8f9c' }];
+    P[0] = { img: t < 21.45 ? 'fF' : 'mo-tests', x: 540 + (1 - k) * 600, y: 1260, s: 1.0, ry: lerp(-35, -8, k) + sw * 0, rz: 3 * (1 - k), a: f };
+    mm = ['RPE · minutos · test físicos', { y: 540, size: 32, a: seg(t, 20.2, 20.7) * f, c: '#8a8f9c' }];
   }
   // 7 · 23–26 · tres deportes, tres colores, a golpe
   else if (t < 26) {
