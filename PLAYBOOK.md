@@ -10,7 +10,7 @@ avisa de problemas o decisiones que no se pueden deshacer.
 - **Instagram**: conector Windsor.ai, cuenta `17841445998297098`.
   - Leer: `get_data` connector `instagram` (campos con `get_fields`).
   - Publicar: `execute_action` connector `instagram` con `create_video_post`
-    (Reel; `video_url`, `caption`, `cover_url`, `share_to_feed: true`),
+    (Reel; `video_url`, `caption`, `cover_url`, `share_to_feed: false` — solo en la pestaña de Reels),
     `create_carousel_post` (`image_urls` 2–10 JPEG, `caption`),
     `create_image_post` (`image_url`, `caption`), `create_story`
     (`image_url` o `video_url`, sin texto). Comentarios: `reply_to_comment`.
@@ -221,6 +221,13 @@ cuenta atrás y la presentación se rehacen con los encuadres de arriba.
 
 **Producción:** la tarea programada «Instagram ProTeam · producción diaria (Trazo analiza)» produce y
 programa cada mañana la pieza del día. La revisión de los lunes analiza y ajusta, no rellena.
+
+## Solo Reels (decidido por Biel el 11 nov 2026, 12:35; manda sobre lo anterior)
+
+- No se publican más posts de feed: ni imágenes, ni carruseles. Solo Reels (y las Stories que acompañan al Reel).
+- Los Reels se publican con `share_to_feed: false`: aparecen solo en la pestaña de Reels, no en la cuadrícula.
+- `tools/pub.py` cancela solo cualquier imagen o carrusel que quede en la cola y marca cada Reel con
+  `share_to_feed: false`. Nadie debe programar piezas `image` ni `carousel`.
 
 ## Voz y relación con la app (decidido por Biel el 11 nov 2026; obligatorio en cada Reel)
 

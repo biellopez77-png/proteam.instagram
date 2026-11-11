@@ -38,12 +38,17 @@ def due():
         if i['status'] != 'pending': continue
         if i['kind'] != 'story' and i['files'][0] in feed:
             i['status'] = 'cancelled'; i['cancel_reason'] = 'repetido: ya publicado'; save(q); continue
+        # Solo Reels (decidido por Biel el 11 nov): nada de imágenes ni carruseles en el feed.
+        if i['kind'] in ('image', 'carousel'):
+            i['status'] = 'cancelled'; i['cancel_reason'] = 'solo Reels: no se publican posts de feed'; save(q); continue
         w = when(i)
         if n - timedelta(hours=6) <= w <= n + timedelta(minutes=25):
             out.append({'id': i['id'], 'kind': i['kind'], 'when': i['when'],
                         'urls': [CDN + f for f in i['files']], 'urls_raw': [RAW + f for f in i['files']],
                         'cover_url': CDN + i['cover'] if i.get('cover') else None,
-                        'video': i['files'][0].endswith('.mp4'), 'caption': i.get('caption')})
+                        'video': i['files'][0].endswith('.mp4'), 'caption': i.get('caption'),
+                        # Los Reels van solo a la pestaña de Reels, nunca a la cuadrícula del feed.
+                        **({'share_to_feed': False} if i['kind'] == 'reel' else {})})
     print(json.dumps(out, ensure_ascii=False, indent=1))
 
 
