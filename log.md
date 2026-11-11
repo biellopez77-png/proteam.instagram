@@ -207,3 +207,10 @@
 - Programado: ta01 Reel hoy 20:30 y ta01s Story 20:31. Sin segunda pieza para mañana 13:30 (calidad antes que cantidad).
 - **Arreglos pendientes HECHOS (no repetir):** Stories `stories/t-cuenta-1..6.jpg` rehechas con composición centrada en la zona útil (rótulo a y=320, número + texto centrados, Trazo centrado y entero, pie a y=1530, textos ≥ 40 px). Reel `reels/t01-presentacion-trazo.mp4` y su portada rehechos: rótulo fuera de los 250 px de arriba, microciclo centrado dentro de x ≤ 940, tarjetas del caos sin pasar del margen derecho, Trazo siempre por encima de y=1500, titulares a 80 px. Control de calidad pasado.
 - Hoja Plan: 66 filas de piezas canceladas pasadas a «Cancelado»; añadidas ta01 y ta01s.
+
+### Producción 11 nov 08:55 · «Trazo analiza» #2
+- Partido: Barça 34–18 Caserío Ciudad Real (Liga Asobal, aplazado de la 3.ª jornada, 10 nov). Dato contrastado en 3 fuentes (fcbarcelona.es, EFE/Infobae, Lanza Digital): 18–8 al descanso; Sergey Hernández, 8 paradas (50 %) en la primera parte y tres 7 metros parados; marcador cada 5' de la ficha (3-2, 9-3, 10-4, 12-5, 15-7, 18-8): 6–1 entre el 5 y el 10. Patrón: parada y contraataque. ProTeam: registro en directo, parciales de 5' y rachas, mapa de portería (ejemplo). Ejercicio: «Parada y salida» (6c6, salen los dos extremos, gol en 3 pases o menos).
+- Escena `tools/trazo/escenas/analiza-bcn-ccr.js`, sonido `analiza_bcn_ccr` (`analiza` admite ahora `leccion`). Reel `reels/ta02-barca-caserio-parada-y-salida.mp4` (34,6 s), portada `covers/ta02-barca-caserio-parada-y-salida.jpg`.
+- Control de calidad: 2 pasadas (1.ª: cifras de los contadores pisando su título, etiqueta «Sergey» sobre una ficha, Trazo tapando el «30'» del gráfico, dos puntos montados en el mapa; 2.ª: OK). Fotogramas 7,8 / 13,2 / 22,0 / 30,0 s + 9,6 / 25,6 / 34,2 s y portada revisados.
+- Programado: ta02 Reel hoy 13:30 y ta02s Story 13:31.
+- **Aviso:** ta01 (Atlético–Barça) y ta01s siguen `pending` desde ayer 20:30: no hay commit de publicación de la ejecución de las 20:23. No se han tocado.

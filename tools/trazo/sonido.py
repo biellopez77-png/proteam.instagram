@@ -60,11 +60,11 @@ def rotulador(dur, amp=.06):
     return amp * x * (0.6 + 0.4 * np.sin(2 * np.pi * 7 * t) ** 2) * np.minimum(1, t / .05) * np.minimum(1, (dur - t) / .08)
 
 
-def analiza(dur=31.0, golpes=(), flechas=(), pases=(), tiros=(), goles=(), reglas=(), cierre=28.2):
+def analiza(dur=31.0, golpes=(), flechas=(), pases=(), tiros=(), goles=(), reglas=(), cierre=28.2, leccion=19.6):
     """«Trazo analiza»: base en re menor que se abre a fa mayor en la lección; eventos de pizarra."""
     b = np.zeros(int(dur * SR))
-    add(b, pad([146.8, 174.6, 220], 19.8, .08, fade=1.0), 0)           # análisis (re menor)
-    add(b, pad([174.6, 220, 261.6, 349.2], 8.2, .085, fade=1.0), 19.6)  # lección (fa mayor)
+    add(b, pad([146.8, 174.6, 220], leccion + .2, .08, fade=1.0), 0)           # análisis (re menor)
+    add(b, pad([174.6, 220, 261.6, 349.2], cierre - leccion - .4, .085, fade=1.0), leccion)  # lección (fa mayor)
     for t0 in golpes: add(b, tone(73.4, 1.2, .22, a=.004, r=.35, harm=(1, .5, .2)), t0); add(b, noise_burst(.2, .12, r=.04), t0)
     for t0, d in flechas: add(b, rotulador(d), t0)
     for t0 in pases: add(b, tone(880, .18, .07, r=.06), t0)
@@ -82,6 +82,14 @@ def analiza_atm_fcb():
                    flechas=((4.0, 1.3), (5.8, 1.8), (6.6, 2.0), (11.8, 1.6), (12.2, 2.0), (16.2, 1.0), (23.0, 1.6)),
                    pases=(8.6, 14.0, 24.4), tiros=(9.0, 14.5, 25.0), goles=(9.35, 14.85),
                    reglas=(0.7, 5.0, 11.3, 16.4, 21.0, 23.0, 25.0), cierre=28.2)
+
+
+def analiza_bcn_ccr():
+    return analiza(34.6, golpes=(0.0, 0.3, 3.5, 14.4, 20.2, 26.4),
+                   flechas=((3.6, 1.1), (6.9, 2.4), (15.0, 2.6), (20.7, 2.3), (23.4, 1.0), (26.4, .6), (28.7, 2.0)),
+                   pases=(5.1, 5.8, 7.4, 9.1, 27.22, 27.78, 29.06, 30.42), tiros=(6.6, 9.7, 11.3, 12.2, 13.1, 28.42, 30.9),
+                   goles=(10.0, 31.14), reglas=(0.8, 6.9, 11.55, 12.45, 13.35, 17.6, 20.3, 23.4, 26.6, 28.5, 30.2),
+                   cierre=32.1, leccion=20.2)
 
 
 if __name__ == '__main__':
