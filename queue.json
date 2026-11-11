@@ -615,8 +615,10 @@
   ],
   "caption": null,
   "cover": null,
-  "status": "pending",
-  "note": "cuenta atrás en Story"
+  "status": "published",
+  "note": "cuenta atrás en Story",
+  "media_id": "18021492020950131",
+  "published_at": "2026-11-11T13:25:00+0100"
  },
  {
   "id": "019",
