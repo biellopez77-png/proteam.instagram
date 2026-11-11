@@ -2,3 +2,6 @@ tools/_t.html
 tools/cov
 tools/out/
 .panel_videos/
+__pycache__/
+tools/wurtz/out/
+tools/wurtz/node_modules/
