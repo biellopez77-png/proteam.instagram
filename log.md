@@ -2,6 +2,7 @@
 
 | Fecha | Pieza | Tipo | Resultado |
 | --- | --- | --- | --- |
+| 2026-11-11 13:27 | ta02s reels/ta02-barca-caserio-voz.mp4 | story | publicado, media_id 18124855793287338 |
 | 2026-11-11 13:26 | ta02 reels/ta02-barca-caserio-voz.mp4 | reel | publicado, media_id 17898390411681778 |
 | 2026-11-11 13:25 | c1b stories/t-cuenta-6.jpg | story | publicado, media_id 18021492020950131 |
 | 2026-11-10 13:28 | 015 reels/p03-cuantas-ocasiones-para-un-gol.mp4 | story | publicado, media_id 18014399888766469 |

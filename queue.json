@@ -1667,7 +1667,9 @@
   ],
   "caption": null,
   "cover": null,
-  "status": "pending",
-  "note": "reel en story; con voz en off (voz.py)"
+  "status": "published",
+  "note": "reel en story; con voz en off (voz.py)",
+  "media_id": "18124855793287338",
+  "published_at": "2026-11-11T13:27:07+0100"
  }
 ]
