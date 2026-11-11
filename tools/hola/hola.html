@@ -1,0 +1,170 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:M;font-weight:500;src:url(../fonts/manrope-latin-500-normal.woff2)}
+@font-face{font-family:M;font-weight:800;src:url(../fonts/manrope-latin-800-normal.woff2)}
+@font-face{font-family:S;font-style:italic;src:url(../fonts/instrument-serif-latin-400-italic.woff2)}
+@font-face{font-family:P;font-weight:500;src:url(../fonts/ibm-plex-mono-latin-500-normal.woff2)}
+*{box-sizing:border-box;margin:0}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#000}
+#st{position:relative;width:1080px;height:1920px;overflow:hidden;background:#000;perspective:2400px;font-family:M}
+.ph{position:absolute;left:0;top:0;width:560px;height:1180px;border-radius:92px;background:#0b0c10;padding:18px;
+  box-shadow:0 60px 120px rgba(0,0,0,.45),inset 0 0 0 3px #2a2d36;transform-style:preserve-3d;will-change:transform}
+.ph .sc{width:100%;height:100%;border-radius:76px;overflow:hidden;position:relative;background:#fff}
+.ph .sc img{position:absolute;left:0;top:0;width:100%;height:auto}
+.ph .di{position:absolute;left:50%;top:40px;width:150px;height:44px;margin-left:-75px;border-radius:22px;background:#000;z-index:3}
+.t{position:absolute;left:0;width:1080px;text-align:center;font-weight:800;letter-spacing:-.035em;line-height:.98;white-space:pre}
+.t em{font-family:S;font-weight:400;font-style:italic;letter-spacing:-.01em}
+.m{position:absolute;left:0;width:1080px;text-align:center;font-family:P;font-weight:500;letter-spacing:.12em;text-transform:uppercase}
+#logo{position:absolute;left:50%;top:0;width:300px;height:300px;margin-left:-150px}
+</style></head><body><div id="st"></div>
+<script>
+const st = document.getElementById('st');
+const SH = (n) => '../app/' + n + '.jpg';
+const BLUE = '#2f6bff', INK = '#0d0f14';
+// ----- utilidades
+const cl = (x, a = 0, b = 1) => Math.max(a, Math.min(b, x));
+const seg = (t, a, b) => cl((t - a) / (b - a));
+const ease = (x) => (x = cl(x), x < .5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+const out = (x) => (x = cl(x), 1 - Math.pow(1 - x, 4));
+const back = (x) => { x = cl(x); const c = 1.4; return 1 + (c + 1) * Math.pow(x - 1, 3) + c * Math.pow(x - 1, 2); };
+const lerp = (a, b, k) => a + (b - a) * k;
+// ----- elementos
+const phones = [];
+function phone() { const p = document.createElement('div'); p.className = 'ph'; p.innerHTML = '<div class="sc"><div class="di"></div><img></div>'; st.appendChild(p); phones.push(p); return p; }
+for (let i = 0; i < 14; i++) phone();
+const texts = []; function txt(cls) { const e = document.createElement('div'); e.className = cls; st.appendChild(e); texts.push(e); return e; }
+const T1 = txt('t'), T2 = txt('t'), T3 = txt('t'), M1 = txt('m');
+const dim = document.createElement('div'); dim.style.cssText = 'position:absolute;inset:0;background:#000;opacity:0;z-index:10;pointer-events:none'; st.appendChild(dim);
+const logo = document.createElement('img'); logo.id = 'logo'; logo.src = '../proteam-mark.webp'; st.appendChild(logo);
+
+// coloca un móvil: x,y centro; s escala; rx,ry,rz grados; img; scroll (0..1 del alto sobrante)
+function put(p, o) {
+  if (!o) { p.style.display = 'none'; return; }
+  p.style.display = 'block';
+  const img = p.querySelector('img'); const src = SH(o.img); if (img.dataset.s !== src) { img.src = src; img.dataset.s = src; }
+  img.style.transform = `translateY(${-(o.scroll || 0) * 1300}px)`;
+  p.style.opacity = o.a ?? 1;
+  p.style.transform = `translate(${o.x - 280}px,${o.y - 590}px) scale(${o.s ?? 1}) rotateX(${o.rx || 0}deg) rotateY(${o.ry || 0}deg) rotateZ(${o.rz || 0}deg)`;
+  p.style.zIndex = o.z ?? 1;
+}
+function say(e, html, o) {
+  if (!o || (o.a ?? 1) <= 0) { e.style.display = 'none'; return; }
+  e.style.display = 'block'; if (e.dataset.h !== html) { e.innerHTML = html; e.dataset.h = html; }
+  e.style.top = o.y + 'px'; e.style.fontSize = o.size + 'px'; e.style.color = o.c || '#fff'; e.style.opacity = o.a ?? 1;
+  e.style.transform = `translateY(${o.dy || 0}px) scale(${o.s || 1})`; e.style.filter = o.blur ? `blur(${o.blur}px)` : 'none'; e.style.zIndex = 20;
+}
+// palabra que entra: aparece desde abajo con desenfoque
+const inw = (t, a, d = .45) => { const k = out(seg(t, a, a + d)); return { a: k, dy: (1 - k) * 60, blur: (1 - k) * 14 }; };
+const fadeOut = (t, b, d = .3) => 1 - seg(t, b - d, b);
+
+// ----- guion (segundos; el ritmo va a 120 ppm: un golpe cada 0,5 s)
+window.render = (t) => {
+  let bg = '#000';
+  const P = Array(phones.length).fill(null); let tx1 = null, tx2 = null, tx3 = null, mm = null, lg = null;
+
+  // 1 · 0–2.5 · «Hola.»
+  if (t < 2.5) {
+    const k = inw(t, .25, .6), f = fadeOut(t, 2.5, .35);
+    tx1 = ['Hola.', { y: 760, size: 230, ...k, a: k.a * f }];
+    const k2 = inw(t, 1.2, .5);
+    tx2 = ['Somos <em style="color:' + BLUE + '">ProTeam</em>.', { y: 1010, size: 92, ...k2, a: k2.a * f, c: '#cfd3dc' }];
+  }
+  // 2 · 2.5–6 · el móvil aparece girando, inicio
+  else if (t < 6) {
+    const k = out(seg(t, 2.5, 3.6)), r = ease(seg(t, 2.5, 4.2)), f = fadeOut(t, 6, .25);
+    P[0] = { img: 'mo-home', x: 540, y: lerp(1550, 1170, k), s: lerp(.8, 1.06, r), rx: lerp(55, 8, r), ry: lerp(-30, -14, r), rz: lerp(-10, 0, r), a: Math.min(1, k * 1.5) * f, scroll: ease(seg(t, 4.3, 5.8)) * .25 };
+    const k1 = inw(t, 3.3, .5);
+    tx1 = ['Toda tu temporada.', { y: 230, size: 96, ...k1, a: k1.a * f }];
+    const k2 = inw(t, 3.8, .5);
+    tx2 = ['<em style="color:' + BLUE + '">En un solo sitio.</em>', { y: 345, size: 104, ...k2, a: k2.a * f }];
+  }
+  // 3 · 6–10 · Planifica (fondo blanco, móvil y semana)
+  else if (t < 10) {
+    bg = '#fff'; const f = fadeOut(t, 10, .25);
+    const w = inw(t, 6.05, .4);
+    tx1 = ['Planifica.', { y: 210, size: 170, ...w, a: w.a * f, c: INK }];
+    const sw = ease(seg(t, 7.9, 8.4));
+    const k = back(seg(t, 6.1, 6.9));
+    P[0] = { img: 'mo-plan', x: lerp(540, 330, sw), y: 1150, s: .98 * k, ry: lerp(0, 16, sw), rz: lerp(-2, -4, sw), a: f, z: 1, scroll: ease(seg(t, 6.8, 7.8)) * .18 };
+    if (t > 7.9) P[1] = { img: 'mo-week', x: lerp(1100, 760, sw), y: 1150 + (1 - sw) * 80, s: .98, ry: lerp(-30, -16, sw), rz: lerp(6, 4, sw), a: sw * f, z: 2, scroll: ease(seg(t, 8.5, 9.8)) * .15 };
+    mm = ['Sesiones · microciclos · temporada', { y: 1720, size: 32, a: seg(t, 6.6, 7.1) * f, c: '#8a8f9c' }];
+  }
+  // 4 · 10–15 · Registra en directo (fondo azul, cortes al golpe)
+  else if (t < 15) {
+    bg = BLUE; const f = fadeOut(t, 15, .2);
+    const w = inw(t, 10.05, .4);
+    tx1 = ['Registra.', { y: 200, size: 170, ...w, a: w.a * f }];
+    const w2 = inw(t, 10.5, .4);
+    tx2 = ['<em>En directo.</em>', { y: 380, size: 120, ...w2, a: w2.a * f }];
+    const cuts = ['reg-0', 'nlv-0', 'nlv-1', 'nlv-3', 'nlv-4', 'reg-4', 'res-0', 'res-1'];
+    const i = Math.min(cuts.length - 1, Math.max(0, Math.floor((t - 10.9) / .5)));
+    const k = back(seg(t, 10.2, 11.0)), pulse = 1 + .025 * Math.exp(-((t - 10.9) % .5) * 10);
+    P[0] = { img: t < 10.9 ? 'reg-0' : cuts[i], x: 540, y: 1220, s: 1.08 * k * pulse, rx: 4, ry: Math.sin(t * 1.2) * 6, a: f };
+    mm = ['Tiro · parada · pérdida · cambio', { y: 1720, size: 32, a: seg(t, 11, 11.5) * f, c: 'rgba(255,255,255,.8)' }];
+  }
+  // 5 · 15–19.5 · Analiza (abanico de 3 móviles sobre negro)
+  else if (t < 19.5) {
+    const f = fadeOut(t, 19.5, .25), k = ease(seg(t, 15.1, 16.2));
+    const w = inw(t, 15.05, .4);
+    tx1 = ['Analiza.', { y: 200, size: 170, ...w, a: w.a * f }];
+    const w2 = inw(t, 16.6, .45);
+    tx2 = ['Lo que no viste <em style="color:#8fb0ff">desde el banquillo.</em>', { y: 395, size: 58, ...w2, a: w2.a * f, c: '#cfd3dc' }];
+    const drift = (t - 15) * 6;
+    P[1] = { img: 'fC', x: lerp(540, 250, k), y: 1250, s: .78, ry: lerp(0, 28, k), rz: lerp(0, -8, k), a: f * k, z: 1, scroll: .05 };
+    P[2] = { img: 'gf-0', x: lerp(540, 830, k), y: 1250, s: .78, ry: lerp(0, -28, k), rz: lerp(0, 8, k), a: f * k, z: 1 };
+    P[0] = { img: 'res-0', x: 540, y: 1200 - drift, s: .92, rx: 4, a: f, z: 2, scroll: ease(seg(t, 17, 19)) * .2 };
+  }
+  // 6 · 19.5–23 · Controla la carga
+  else if (t < 23) {
+    bg = '#fff'; const f = fadeOut(t, 23, .25);
+    const w = inw(t, 19.55, .4);
+    tx1 = ['Controla', { y: 190, size: 160, ...w, a: w.a * f, c: INK }];
+    const w2 = inw(t, 19.95, .4);
+    tx2 = ['<em style="color:' + BLUE + '">la carga.</em>', { y: 350, size: 160, ...w2, a: w2.a * f, c: INK }];
+    const k = out(seg(t, 19.6, 20.6)), sw = ease(seg(t, 21.2, 21.7));
+    P[0] = { img: t < 21.45 ? 'fF' : 'mo-tests', x: 540 + (1 - k) * 600, y: 1240, s: 1.0, ry: lerp(-35, -8, k) + sw * 0, rz: 3 * (1 - k), a: f };
+    mm = ['RPE · minutos · test físicos', { y: 1720, size: 32, a: seg(t, 20.2, 20.7) * f, c: '#8a8f9c' }];
+  }
+  // 7 · 23–26 · tres deportes, tres colores, a golpe
+  else if (t < 26) {
+    const words = [['Fútbol.', '#0e9f6e'], ['Baloncesto.', '#f97316'], ['Balonmano.', BLUE]];
+    const i = Math.min(2, Math.floor((t - 23) / 1)); bg = words[i][1];
+    const k = out(seg(t, 23 + i, 23.35 + i));
+    tx1 = [words[i][0], { y: 820, size: 150, a: k, s: lerp(1.25, 1, k) }];
+    mm = ['Un mismo método', { y: 1060, size: 34, a: .85, c: 'rgba(255,255,255,.85)' }];
+  }
+  // 8 · 26–29.5 · muro de pantallas
+  else if (t < 29.5) {
+    const all = ['mo-home', 'mo-plan', 'mo-week', 'mo-cal', 'reg-0', 'nlv-1', 'res-0', 'fC', 'gf-0', 'fF', 'mo-tests', 'mo-routines', 'fA', 'res-1'];
+    const f = fadeOut(t, 29.5, .3), z = ease(seg(t, 26, 29.5));
+    for (let j = 0; j < all.length; j++) {
+      const col = j % 4, row = Math.floor(j / 4), dir = col % 2 ? 1 : -1;
+      const yy = 300 + row * 640 + dir * (t - 26) * 70 - 180;
+      const kk = out(seg(t, 26 + j * .04, 26.5 + j * .04));
+      P[j] = { img: all[j], x: 150 + col * 260, y: yy, s: .44 * lerp(1.15, .95, z), rx: 18, rz: -12, a: kk * f, z: 1 };
+    }
+    const w = inw(t, 26.6, .45);
+    tx1 = ['Todo el equipo.', { y: 760, size: 112, ...w, a: w.a * f }];
+    const w2 = inw(t, 27.1, .45);
+    tx2 = ['<em style="color:#8fb0ff">Una sola app.</em>', { y: 890, size: 120, ...w2, a: w2.a * f }];
+  }
+  // 9 · 29.5–34 · cierre
+  else {
+    bg = '#000';
+    const lk = back(seg(t, 29.7, 30.5));
+    lg = { y: 640, s: lk, a: seg(t, 29.7, 30.1) };
+    const w = inw(t, 30.4, .5);
+    tx1 = ['ProTeam', { y: 1000, size: 150, ...w }];
+    const w2 = inw(t, 31.0, .5);
+    tx2 = ['<em style="color:#8fb0ff">El entrenador de base también trabaja.</em>', { y: 1200, size: 58, ...w2, c: '#cfd3dc' }];
+    mm = ['pro-team.app', { y: 1380, size: 44, a: out(seg(t, 31.6, 32.1)), c: '#fff' }];
+  }
+
+  st.style.background = bg;
+  phones.forEach((p, i) => put(p, P[i]));
+  say(T1, tx1 ? tx1[0] : '', tx1 ? tx1[1] : null); say(T2, tx2 ? tx2[0] : '', tx2 ? tx2[1] : null);
+  say(T3, '', null); say(M1, mm ? mm[0] : '', mm ? mm[1] : null);
+  dim.style.opacity = (t >= 26 && t < 29.5) ? .5 * seg(t, 26.3, 26.9) : 0;
+  if (lg) { logo.style.display = 'block'; logo.style.top = (lg.y - 150) + 'px'; logo.style.opacity = lg.a; logo.style.transform = `scale(${lg.s})`; } else logo.style.display = 'none';
+};
+window.DUR = 34;
+</script></body></html>
