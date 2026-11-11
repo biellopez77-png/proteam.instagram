@@ -1,0 +1,289 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:M;font-weight:500;src:url(../fonts/manrope-latin-500-normal.woff2)}
+@font-face{font-family:M;font-weight:700;src:url(../fonts/manrope-latin-700-normal.woff2)}
+@font-face{font-family:M;font-weight:800;src:url(../fonts/manrope-latin-800-normal.woff2)}
+@font-face{font-family:S;font-style:italic;src:url(../fonts/instrument-serif-latin-400-italic.woff2)}
+@font-face{font-family:P;font-weight:500;src:url(../fonts/ibm-plex-mono-latin-500-normal.woff2)}
+:root{--b:#2f6bff;--ink:#0d0f14;--mu:#eef1f6;--ln:#e3e7ef;--tx2:#6b7280;--ok:#10b981;--wa:#f59e0b}
+*{box-sizing:border-box;margin:0}
+html,body{width:1920px;height:1080px;overflow:hidden;background:#000}
+#st{position:relative;width:1920px;height:1080px;overflow:hidden;font-family:M;background:#000}
+#bg{position:absolute;inset:0}
+#glow{position:absolute;left:50%;top:55%;width:1800px;height:1100px;margin:-550px 0 0 -900px;border-radius:50%;filter:blur(90px);opacity:0}
+#world{position:absolute;inset:0;perspective:2600px;perspective-origin:50% 40%}
+#cam{position:absolute;inset:0;transform-style:preserve-3d}
+/* portátil */
+.lap{position:absolute;left:0;top:0;width:1120px;height:760px;transform-style:preserve-3d}
+.lid{position:absolute;left:0;top:0;width:1120px;height:720px;border-radius:30px;background:#111318;padding:22px 22px 30px;transform-origin:50% 100%;box-shadow:inset 0 0 0 2px #2b2f39,0 40px 120px rgba(0,0,0,.35);backface-visibility:hidden}
+.lid .scr{position:relative;width:100%;height:100%;border-radius:10px;overflow:hidden;background:#f7f8fb}
+.lid .cam{position:absolute;left:50%;top:9px;width:8px;height:8px;margin-left:-4px;border-radius:50%;background:#2a2e38}
+.base{position:absolute;left:-70px;top:716px;width:1260px;height:30px;border-radius:0 0 26px 26px;background:linear-gradient(#d9dce3,#a9aeb9 60%,#7d828d);box-shadow:0 30px 60px rgba(0,0,0,.35)}
+.base:before{content:"";position:absolute;left:50%;top:0;width:200px;height:10px;margin-left:-100px;border-radius:0 0 12px 12px;background:#8e939e}
+/* app de escritorio (1440x900 lógico, escalado a la pantalla) */
+.app{position:absolute;left:0;top:0;width:1440px;height:900px;transform-origin:0 0;display:grid;grid-template-columns:230px 1fr;background:#f7f8fb;color:var(--ink)}
+.sb{background:#fff;border-right:1px solid var(--ln);padding:22px 16px}
+.sb .lg{display:flex;align-items:center;gap:10px;font-weight:800;font-size:20px;margin-bottom:26px}
+.sb .lg img{width:30px;height:30px}
+.sb .it{display:flex;align-items:center;gap:12px;padding:11px 12px;border-radius:12px;font-weight:700;font-size:15px;color:#4b5263;margin-bottom:4px}
+.sb .it i{width:18px;height:18px;border-radius:6px;background:#dfe5f2}
+.sb .it.on{background:#eaf0ff;color:var(--b)}.sb .it.on i{background:var(--b)}
+.mn{position:relative;overflow:hidden}
+.tb{height:70px;display:flex;align-items:center;justify-content:space-between;padding:0 30px;border-bottom:1px solid var(--ln);background:#fff}
+.tb b{font-size:19px}.tb span{font-size:13px;color:var(--tx2);font-weight:700}
+.tb .pill{background:#eaf0ff;color:var(--b);border-radius:999px;padding:7px 14px;font-weight:800;font-size:13px}
+.pg{position:absolute;left:0;top:70px;right:0;bottom:0;padding:26px 30px;display:grid;gap:18px}
+.cd{background:#fff;border:1px solid var(--ln);border-radius:18px;padding:18px;box-shadow:0 10px 30px -22px rgba(47,107,255,.35)}
+.h{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--tx2);font-weight:800;font-family:P}
+.big{font-size:40px;font-weight:800;letter-spacing:-.02em}
+.sm{font-size:13px;color:var(--tx2);font-weight:700}
+.bar{height:10px;border-radius:9px;background:var(--mu);overflow:hidden}.bar>i{display:block;height:100%;border-radius:9px;background:var(--b)}
+.row{display:flex;align-items:center;gap:12px}
+.av{width:34px;height:34px;border-radius:50%;background:#dfe5f2;display:grid;place-items:center;font-size:13px;font-weight:800;color:#4b5263}
+.chip{display:inline-block;border-radius:999px;padding:5px 11px;font-size:12px;font-weight:800}
+/* móvil */
+.ph{position:absolute;left:0;top:0;width:380px;height:800px;border-radius:64px;background:#0b0c10;padding:13px;box-shadow:0 50px 100px rgba(0,0,0,.4),inset 0 0 0 2px #2a2d36;transform-style:preserve-3d}
+.ph .sc{width:100%;height:100%;border-radius:52px;overflow:hidden;position:relative;background:#fff}
+.ph .sc img{position:absolute;left:0;top:48px;width:100%;height:auto;transition:none}
+.ph .di{position:absolute;left:50%;top:26px;width:104px;height:30px;margin-left:-52px;border-radius:16px;background:#000;z-index:3}
+/* textos */
+.t{position:absolute;left:0;width:1920px;text-align:center;font-weight:800;letter-spacing:-.04em;line-height:1;white-space:nowrap;z-index:30}
+.t em{font-family:S;font-weight:400;font-style:italic;letter-spacing:-.01em}
+.w{display:inline-block;will-change:transform,filter,opacity}
+.m{position:absolute;left:0;width:1920px;text-align:center;font-family:P;font-weight:500;letter-spacing:.14em;text-transform:uppercase;z-index:30}
+#logo{position:absolute;left:50%;width:220px;height:220px;margin-left:-110px;z-index:30}
+#flash{position:absolute;inset:0;background:#fff;opacity:0;z-index:40;pointer-events:none}
+</style></head><body><div id="st"><div id="bg"></div><div id="glow"></div><div id="world"><div id="cam"></div></div><div id="veil" style="position:absolute;inset:0;z-index:25;pointer-events:none;background:radial-gradient(60% 45% at 50% 46%,rgba(0,0,0,.82),rgba(0,0,0,.35) 70%,transparent)"></div><div id="flash"></div></div>
+<script>
+const $ = (h) => { const d = document.createElement('div'); d.innerHTML = h.trim(); return d.firstChild; };
+const st = document.getElementById('st'), cam = document.getElementById('cam'), bgEl = document.getElementById('bg'), glow = document.getElementById('glow'), flash = document.getElementById('flash');
+const BLUE = '#2f6bff';
+const cl = (x, a = 0, b = 1) => Math.max(a, Math.min(b, x)), lerp = (a, b, k) => a + (b - a) * k;
+const seg = (t, a, b) => cl((t - a) / (b - a)), ease = (x) => (x = cl(x), x < .5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2);
+const out = (x) => (x = cl(x), 1 - Math.pow(1 - x, 4)), back = (x) => { x = cl(x); const c = 1.5; return 1 + (c + 1) * Math.pow(x - 1, 3) + c * Math.pow(x - 1, 2); };
+// ritmo: golpes reales de la canción (beats.json, inyectado por render)
+const BEATS = window.BEATS || [];
+const lastBeat = (t) => { let b = -9; for (const x of BEATS) { if (x <= t) b = x; else break; } return b; };
+const pulse = (t, k = 9) => Math.exp(-(t - lastBeat(t)) * k);
+// interpolación suave entre fotogramas clave (Catmull-Rom con tiempos): movimiento continuo, sin paradas
+function track(keys) {
+  return (t) => {
+    if (t <= keys[0][0]) return keys[0][1];
+    for (let i = 0; i < keys.length - 1; i++) {
+      const [t0, a] = keys[i], [t1, b] = keys[i + 1];
+      if (t <= t1) {
+        const p = keys[i - 1] ? keys[i - 1][1] : a, n = keys[i + 2] ? keys[i + 2][1] : b, u = (t - t0) / (t1 - t0);
+        const o = {}; for (const k in a) { const P0 = p[k] ?? a[k], P1 = a[k], P2 = b[k] ?? a[k], P3 = n[k] ?? P2;
+          o[k] = 0.5 * ((2 * P1) + (-P0 + P2) * u + (2 * P0 - 5 * P1 + 4 * P2 - P3) * u * u + (-P0 + 3 * P1 - 3 * P2 + P3) * u * u * u); }
+        return o;
+      }
+    }
+    return keys[keys.length - 1][1];
+  };
+}
+// ---------------- portátil y app de escritorio
+const lap = $(`<div class="lap"><div class="lid"><div class="cam"></div><div class="scr"></div></div><div class="base"></div></div>`); cam.appendChild(lap);
+const scr = lap.querySelector('.scr'), lid = lap.querySelector('.lid');
+const NAV = ['Inicio', 'Planificación', 'Calendario', 'Partidos', 'Jugadores', 'Físico'];
+const app = $(`<div class="app"><div class="sb"><div class="lg"><img src="../proteam-mark.webp">ProTeam</div>${NAV.map((n) => `<div class="it" data-n="${n}"><i></i>${n}</div>`).join('')}</div>
+<div class="mn"><div class="tb"><div><b id="tbT">Inicio</b><br><span>Infantil A · Balonmano · Temporada 2026-27</span></div><div class="pill">Semana 8 · Competición</div></div></div></div>`);
+scr.appendChild(app); const mn = app.querySelector('.mn');
+const PAGES = {
+  Inicio: `<div class="pg" style="grid-template-columns:1.45fr 1fr;grid-template-rows:auto 1fr">
+    <div class="cd"><div class="row" style="justify-content:space-between"><div><div class="sm">Hoy · 18:30</div><div style="font-size:26px;font-weight:800;margin-top:4px">Preparar la sesión</div></div><span class="chip" style="background:#eaf0ff;color:#2f6bff">Microciclo 08</span></div>
+      <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:22px">${[42,64,76,55,38].map((v,i)=>`<div><div style="height:180px;border-radius:12px;background:#eef1f6;display:flex;align-items:flex-end;padding:8px"><i class="gb" data-v="${v}" style="display:block;width:100%;border-radius:8px;background:#2f6bff;height:${v}%"></i></div><div class="sm" style="text-align:center;margin-top:8px">${['Lun','Mar','Mié','Jue','Vie'][i]}</div></div>`).join('')}</div>
+      <div class="row cd" style="margin-top:18px;padding:12px"><span style="width:6px;height:40px;border-radius:4px;background:#06b6d4"></span><div><b>Tarea principal · superioridad 6×5</b><div class="sm">25 min · intensidad alta</div></div></div></div>
+    <div style="display:grid;gap:18px"><div class="cd"><div class="h">Plantilla</div><div class="big" style="margin-top:6px">18 <span class="sm">disponibles</span></div>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:14px">${[['Disponibles','18','#10b981'],['A adaptar','2','#f59e0b'],['Revisión','1','#2f6bff']].map(([l,v,c])=>`<div class="cd" style="padding:10px"><i style="display:block;width:26px;height:4px;border-radius:3px;background:${c}"></i><div style="font-size:24px;font-weight:800;margin-top:6px">${v}</div><div class="sm">${l}</div></div>`).join('')}</div></div>
+      <div class="cd"><div class="h">Próximo partido</div><div style="font-size:22px;font-weight:800;margin-top:8px">Sábado · 17:00</div><div class="row" style="justify-content:space-between;margin-top:14px;font-weight:800"><span>ProTeam</span><span class="sm">vs</span><span>Rival</span></div></div></div></div>`,
+  'Planificación': `<div class="pg" style="grid-template-columns:1fr 1fr">
+    <div class="cd"><div class="h">Temporada 2026-27</div>${[['Pretemporada',100,'Sep'],['Competición',62,'Oct–Mar'],['Fase final',0,'Abr–Jun']].map(([n,p,m])=>`<div class="cd" style="margin-top:14px;padding:14px"><div class="row" style="justify-content:space-between"><b>${n}</b><span class="sm">${m}</span></div><div class="bar" style="margin-top:10px"><i class="gw" data-v="${p}" style="width:${p}%"></i></div><div style="display:flex;gap:6px;margin-top:10px">${Array.from({length:10},(_,i)=>`<span style="flex:1;height:18px;border-radius:5px;background:${i*10<p?'#c9d7ff':'#eef1f6'}"></span>`).join('')}</div></div>`).join('')}</div>
+    <div class="cd"><div class="h">Semana 8 · Microciclo</div><div style="display:grid;grid-template-columns:repeat(7,1fr);gap:8px;margin-top:14px">${['L','M','X','J','V','S','D'].map(d=>`<div class="sm" style="text-align:center">${d}</div>`).join('')}${['Recuperación','Fuerza','Táctica','Velocidad','Activación','PARTIDO','Descanso'].map((n,i)=>`<div class="wb" style="height:${[150,240,280,200,130,320,90][i]}px;border-radius:12px;background:${i==5?'#0d0f14':[0,4].includes(i)?'#eaf0ff':i==6?'#fff':'#2f6bff'};${i==6?'border:2px dashed #2f6bff;':''}display:flex;align-items:flex-end;justify-content:center;padding-bottom:10px"><span style="writing-mode:vertical-rl;transform:rotate(180deg);font-weight:800;font-size:14px;color:${[0,4,6].includes(i)?'#2f6bff':'#fff'}">${n}</span></div>`).join('')}</div></div></div>`,
+  Partidos: `<div class="pg" style="grid-template-columns:1.25fr 1fr">
+    <div class="cd" style="position:relative"><div class="row" style="justify-content:space-between"><div class="h">En directo · 2.ª parte</div><span class="chip" style="background:#fee2e2;color:#dc2626">● 38:12</span></div>
+      <div style="text-align:center;font-size:64px;font-weight:800;margin:6px 0">26 <span style="color:#c1c7d4">–</span> <span id="scoreR">17</span></div>
+      <svg viewBox="0 0 400 220" style="width:100%;height:330px;margin-top:4px"><rect x="2" y="2" width="396" height="216" rx="14" fill="#eef3ff" stroke="#c9d7ff" stroke-width="3"/><path d="M110 2 A108 108 0 0 1 110 218" fill="none" stroke="#2f6bff" stroke-width="3" opacity=".6"/><path d="M150 2 A148 148 0 0 1 150 218" fill="none" stroke="#2f6bff" stroke-width="2" stroke-dasharray="8 8" opacity=".5"/><rect x="2" y="85" width="10" height="50" fill="#2f6bff"/>
+      <g id="shots"></g></svg></div>
+    <div style="display:grid;gap:14px;align-content:start"><div class="cd"><div class="h">Registrar acción · #8 Pol V.</div><div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px">${['Gol','Tiro','Parada','Pérdida','Recuperación','1×1'].map((n,i)=>`<div class="act" style="border-radius:12px;padding:16px;text-align:center;font-weight:800;color:#fff;background:${i==0?'#10b981':i==3?'#ef4444':'#2f6bff'}">${n}</div>`).join('')}</div></div>
+      <div class="cd"><div class="h">Parciales cada 5′</div><div style="display:flex;gap:8px;align-items:flex-end;height:120px;margin-top:10px">${[3,6,1,2,3,4,5,2].map(v=>`<i class="gb" data-v="${v*15}" style="flex:1;border-radius:6px 6px 0 0;background:#2f6bff;height:${v*15}%"></i>`).join('')}</div></div></div></div>`,
+  Jugadores: `<div class="pg" style="grid-template-columns:1fr 1fr">
+    <div class="cd"><div class="h">Eficacia por jugador</div>${[['8','Pol V.',80,'4/5'],['9','Marc R.',14,'1/7'],['11','Leo N.',50,'2/4'],['7','Nil C.',33,'1/3'],['4','Àlex P.',66,'2/3']].map(([d,n,v,s])=>`<div class="row" style="margin-top:16px"><div class="av" style="background:#2f6bff;color:#fff">${d}</div><b style="width:90px">${n}</b><div class="bar" style="flex:1"><i class="gw" data-v="${v}" style="width:${v}%"></i></div><b style="width:44px;text-align:right">${s}</b></div>`).join('')}</div>
+    <div class="cd"><div class="h">Mapa de tiro</div><svg viewBox="0 0 300 240" style="width:100%;height:360px"><rect x="20" y="20" width="260" height="200" rx="10" fill="none" stroke="#0d0f14" stroke-width="8"/><g id="goal"></g></svg></div></div>`,
+  'Físico': `<div class="pg" style="grid-template-columns:1fr 1.2fr">
+    <div class="cd"><div class="h">RPE del partido</div><div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:12px">${[['RPE medio','6,8'],['Carga','1743'],['Pendientes','1']].map(([l,v])=>`<div class="cd" style="padding:12px"><div class="sm">${l}</div><div style="font-size:30px;font-weight:800">${v}</div></div>`).join('')}</div>
+      ${[['Marc R.',8,416],['Leo N.',7,378],['Pol V.',7,343],['Àlex P.',6,360]].map(([n,r,c])=>`<div class="row" style="margin-top:14px"><div class="av">${n[0]}</div><b style="flex:1">${n}</b><span class="chip" style="background:#eaf0ff;color:#2f6bff">RPE ${r}</span><b style="width:50px;text-align:right">${c}</b></div>`).join('')}</div>
+    <div class="cd"><div class="h">Carga semanal del equipo</div><div style="display:flex;gap:12px;align-items:flex-end;height:360px;margin-top:14px">${[38,52,47,66,60,78,72,58].map((v,i)=>`<i class="gb" data-v="${v}" style="flex:1;border-radius:10px 10px 0 0;background:${i==5?'#f59e0b':'#2f6bff'};height:${v}%"></i>`).join('')}</div></div></div>`,
+  Calendario: `<div class="pg"><div class="cd"><div class="h">Noviembre</div><div style="display:grid;grid-template-columns:repeat(7,1fr);gap:10px;margin-top:12px">${Array.from({length:28},(_,i)=>{const k=i%7==5?'#2f6bff':i%7==1||i%7==3?'#c9d7ff':i%7==2?'#eef1f6':null;return `<div style="height:96px;border:1px solid #e3e7ef;border-radius:12px;padding:8px;background:#fff"><div class="sm">${i+1}</div>${k?`<i class="cw" style="display:block;height:14px;border-radius:5px;background:${k};margin-top:8px"></i><i style="display:block;height:7px;width:60%;border-radius:4px;background:#eef1f6;margin-top:6px"></i>`:''}</div>`}).join('')}</div></div></div>`,
+};
+const pages = {};
+for (const k in PAGES) { const p = $(PAGES[k]); mn.appendChild(p); pages[k] = p; }
+// tiros en pista y portería (se van dibujando)
+const SH = [[150,60,1],[170,110,1],[130,170,0],[200,90,1],[160,140,1],[230,120,0],[140,95,1]];
+document.getElementById('shots').innerHTML = SH.map(([x,y,g],i)=>`<circle class="shot" data-i="${i}" cx="${x}" cy="${y}" r="9" fill="${g?'#10b981':'#ef4444'}"/>`).join('');
+const GP = [[60,55,1],[240,60,1],[70,190,0],[230,185,1],[150,120,0],[95,120,1],[205,110,1],[150,60,0],[250,140,1]];
+document.getElementById('goal').innerHTML = GP.map(([x,y,g],i)=>`<circle class="gp" data-i="${i}" cx="${x}" cy="${y}" r="13" fill="${g?'#2f6bff':'#ef4444'}"/>`).join('');
+function showPage(name, k, from) {   // k 0..1: entra la página «name», sale «from»
+  for (const n in pages) { const p = pages[n]; p.style.display = 'none'; }
+  const a = pages[name]; a.style.display = 'grid'; a.style.opacity = 1; a.style.transform = `translateY(${(1 - out(k)) * 60}px)`; a.style.opacity = out(k);
+  if (from && k < 1) { const b = pages[from]; b.style.display = 'grid'; b.style.opacity = 1 - out(k); b.style.transform = `translateY(${-out(k) * 40}px)`; }
+  app.querySelectorAll('.it').forEach((e) => e.classList.toggle('on', e.dataset.n === name));
+  document.getElementById('tbT').textContent = name;
+}
+function grow(page, k) {   // barras y puntos que crecen al entrar
+  pages[page].querySelectorAll('.gb').forEach((e, i) => { e.style.height = (+e.dataset.v * out(cl(k * 1.6 - i * .08))) + '%'; });
+  pages[page].querySelectorAll('.gw').forEach((e, i) => { e.style.width = (+e.dataset.v * out(cl(k * 1.4 - i * .1))) + '%'; });
+  pages[page].querySelectorAll('.wb').forEach((e, i) => { e.style.transform = `scaleY(${back(cl(k * 1.6 - i * .09))})`; e.style.transformOrigin = '50% 100%'; });
+  pages[page].querySelectorAll('.shot,.gp').forEach((e, i) => { const q = back(cl(k * 1.5 - i * .1)); e.setAttribute('r', (e.classList.contains('gp') ? 13 : 9) * q); });
+  pages[page].querySelectorAll('.act').forEach((e, i) => { e.style.transform = `scale(${lerp(.6, 1, back(cl(k * 2 - i * .12)))})`; e.style.opacity = cl(k * 2 - i * .12); });
+}
+// ---------------- móviles
+function phone() { const p = $(`<div class="ph"><div class="sc"><div class="di"></div><img><img></div></div>`); cam.appendChild(p); return p; }
+const PH = Array.from({ length: 12 }, phone);
+function putPhone(p, o) {
+  if (!o) { p.style.display = 'none'; return; } p.style.display = 'block';
+  const [i1, i2] = p.querySelectorAll('img'); const k = o.k ?? 1;
+  const s1 = '../app/' + o.img + '.jpg'; if (i1.dataset.s !== s1) { i1.src = s1; i1.dataset.s = s1; }
+  i1.style.transform = `translateY(${-(o.scroll || 0) * 900}px)`;
+  if (o.from && k < 1) { const s2 = '../app/' + o.from + '.jpg'; if (i2.dataset.s !== s2) { i2.src = s2; i2.dataset.s = s2; } i2.style.display = 'block'; i2.style.opacity = 1;
+    i2.style.transform = `translateX(${-out(k) * 100}%)`; i1.style.transform += ` translateX(${(1 - out(k)) * 100}%)`; } else i2.style.display = 'none';
+  p.style.opacity = o.a ?? 1; p.style.zIndex = o.z ?? 5;
+  p.style.transform = `translate3d(${o.x - 190}px,${o.y - 400}px,${o.zz || 0}px) scale(${o.s ?? 1}) rotateX(${o.rx || 0}deg) rotateY(${o.ry || 0}deg) rotateZ(${o.rz || 0}deg)`;
+}
+// ---------------- textos
+const T = []; for (let i = 0; i < 3; i++) { const e = $(`<div class="t"></div>`); st.appendChild(e); T.push(e); }
+const MM = $(`<div class="m"></div>`); st.appendChild(MM);
+const LOGO = $(`<img id="logo" src="../proteam-mark.webp">`); st.appendChild(LOGO);
+const CR = $(`<div class="m" style="font-size:18px;color:#7c8394;letter-spacing:.06em;text-transform:none"></div>`); st.appendChild(CR);
+// texto palabra a palabra: cada palabra entra en su golpe; sale toda junta en «out»
+function words(e, html, o) {
+  if (!o) { e.style.display = 'none'; return; }
+  e.style.display = 'block';
+  if (e.dataset.h !== html) { e.dataset.h = html; e.innerHTML = html.split('|').map((w) => `<span class="w">${w}</span>`).join(' '); }
+  e.style.top = o.y + 'px'; e.style.fontSize = o.size + 'px'; e.style.color = o.c || '#fff';
+  const ws = e.querySelectorAll('.w'), t = o.t;
+  ws.forEach((w, i) => {
+    const t0 = o.at[i] ?? o.at[o.at.length - 1]; const k = out(seg(t, t0, t0 + .32)), x = o.out ? out(seg(t, o.out, o.out + .3)) : 0;
+    w.style.opacity = k * (1 - x); w.style.transform = `translateY(${(1 - k) * 50 - x * 40}px) scale(${1 + (1 - k) * .08})`; w.style.filter = `blur(${(1 - k) * 16 + x * 14}px)`;
+  });
+}
+const B = (n) => BEATS[n] ?? (BEATS[BEATS.length - 1] + (n - BEATS.length + 1) * .4695);   // tiempo del golpe n
+// índice del primer golpe tras el corte (t>=0)
+const B0 = BEATS.findIndex((x) => x >= 0);
+const bt = (n) => B(B0 + n);   // golpe n desde el inicio del vídeo
+
+// ---------------- guion (golpes a 129 ppm; la caída llega en el golpe 19 ≈ 9,1 s)
+const DROP = bt(19);
+const S = { home: bt(19), plan: bt(27), live: bt(35), ana: bt(43), load: bt(51), brk: bt(59), wall: bt(71), end: bt(83) };
+const camK = track([
+  [0, { s: .78, rx: 26, ry: 0, x: 0, y: 160 }], [DROP - .2, { s: .86, rx: 10, ry: 0, x: 0, y: 110 }], [S.home + 1.8, { s: .9, rx: 6, ry: -10, x: -60, y: 130 }],
+  [S.plan, { s: .9, rx: 6, ry: 8, x: 40, y: 120 }], [S.plan + 1.9, { s: .93, rx: 5, ry: 14, x: 90, y: 120 }],
+  [S.live, { s: .98, rx: 4, ry: -16, x: -120, y: 110 }], [S.live + 1.9, { s: 1.02, rx: 4, ry: -20, x: -160, y: 110 }],
+  [S.ana, { s: .92, rx: 6, ry: 12, x: 80, y: 120 }], [S.ana + 1.9, { s: .95, rx: 5, ry: 16, x: 120, y: 120 }],
+  [S.load, { s: .92, rx: 6, ry: -10, x: -60, y: 120 }], [S.load + 1.9, { s: .95, rx: 4, ry: -6, x: -20, y: 120 }],
+  [S.brk, { s: .84, rx: 8, ry: 0, x: 0, y: 100 }], [S.wall - .5, { s: .8, rx: 10, ry: -24, x: 0, y: 100 }], [S.wall + 3, { s: .8, rx: 10, ry: -30, x: 0, y: 100 }],
+]);
+const phK = track([
+  [S.home - .4, { x: 2100, y: 740, rx: 0, ry: -40, rz: 10, s: 1 }], [S.home + 1.0, { x: 1560, y: 700, rx: 4, ry: -14, rz: 2, s: 1 }],
+  [S.plan, { x: 1580, y: 690, rx: 4, ry: -18, rz: 1, s: 1 }], [S.live - .2, { x: 1500, y: 700, rx: 4, ry: -10, rz: 0, s: .98 }],
+  [S.live + .6, { x: 1240, y: 690, rx: 2, ry: -4, rz: 0, s: 1.02 }], [S.ana - .2, { x: 1300, y: 700, rx: 2, ry: -6, rz: 0, s: 1.0 }],
+  [S.ana + .6, { x: 400, y: 700, rx: 4, ry: 18, rz: -2, s: 1 }], [S.load, { x: 380, y: 700, rx: 4, ry: 20, rz: -2, s: 1 }],
+  [S.load + .7, { x: 1560, y: 700, rx: 4, ry: -16, rz: 2, s: 1 }], [S.brk, { x: 1560, y: 700, rx: 4, ry: -16, rz: 2, s: 1 }],
+]);
+const SPORTS = [['Fútbol.', '#0e9f6e', 'mo-week'], ['Baloncesto.', '#f97316', 'mo-tests'], ['Balonmano.', BLUE, 'gf-0']];
+
+window.render = (t) => {
+  const pz = pulse(t);
+  document.getElementById('veil').style.opacity = t >= S.wall && t < S.end ? seg(t, S.wall, S.wall + .5) * (1 - seg(t, S.end - .3, S.end)) : 0;
+  // fondo: negro → blanco en el drop, color en el break, negro al final
+  let bg = '#000', gl = 0, glc = BLUE;
+  if (t >= DROP && t < S.brk) { bg = `radial-gradient(120% 90% at 50% 30%, #ffffff 0%, #eef2fa 60%, #dfe5f1 100%)`; }
+  if (t >= S.brk && t < S.wall) { const i = Math.min(2, Math.floor((t - S.brk) / (bt(4) - bt(0)))); bg = SPORTS[i][1]; }
+  if (t < DROP) { gl = .55 * seg(t, bt(10), DROP); }
+  bgEl.style.background = bg; glow.style.background = `radial-gradient(${glc}, transparent 65%)`; glow.style.opacity = gl;
+  flash.style.opacity = Math.max(0, .85 * Math.exp(-(t - DROP) * 6) * (t >= DROP ? 1 : 0), t >= S.wall ? .35 * Math.exp(-(t - S.wall) * 7) : 0);
+
+  // cámara: movimiento continuo + latido en cada golpe (después del drop)
+  const c = camK(t), bump = t >= DROP && t < S.end ? 1 + .012 * pz : 1;
+  cam.style.transform = `translate(${c.x}px,${c.y}px) scale(${c.s * bump}) rotateX(${c.rx}deg) rotateY(${c.ry}deg)`;
+
+  // portátil: se abre en la intro; visible hasta el muro
+  const lapOn = t < S.wall + .3;
+  lap.style.display = lapOn ? 'block' : 'none';
+  const open = ease(seg(t, bt(2), bt(14)));
+  lid.style.transform = `rotateX(${lerp(-88, 0, open)}deg)`;
+  const lapA = 1 - seg(t, S.wall - .2, S.wall + .3);
+  lap.style.opacity = Math.min(1, seg(t, 0, bt(2)) * 1.2) * lapA;
+  lap.style.transform = `translate3d(${400}px,${190}px,0)`;
+  scr.style.filter = `brightness(${lerp(.15, 1, seg(t, DROP - .4, DROP + .1))})`;
+  // escala de la app a la pantalla
+  app.style.transform = `scale(${(1120 - 44) / 1440})`;
+  // páginas al ritmo
+  const P = [['Inicio', S.home], ['Planificación', S.plan], ['Calendario', S.plan + (bt(4) - bt(0))], ['Partidos', S.live], ['Jugadores', S.ana], ['Físico', S.load]];
+  let cur = 0; for (let i = 0; i < P.length; i++) if (t >= P[i][1]) cur = i;
+  if (t >= S.brk) { // en el break, la pantalla enseña la planificación de cada deporte
+    showPage('Planificación', 1); grow('Planificación', 1);
+  } else {
+    const k = seg(t, P[cur][1], P[cur][1] + .45);
+    showPage(P[cur][0], k, cur > 0 ? P[cur - 1][0] : null); grow(P[cur][0], seg(t, P[cur][1], P[cur][1] + 1.6));
+  }
+  // marcador que cambia en el golpe
+  document.getElementById('scoreR').textContent = t > S.live + 2.3 ? '18' : '17';
+
+  // móvil principal
+  const ph = phK(t), PHS = [];
+  if (t >= S.home - .4 && t < S.wall) {
+    const scr2 = [['mo-home', S.home], ['mo-week', S.plan], ['reg-0', S.live], ['nlv-1', S.live + (bt(2) - bt(0))], ['nlv-4', S.live + (bt(4) - bt(0))], ['res-0', S.live + (bt(6) - bt(0))], ['gf-0', S.ana], ['res-1', S.ana + (bt(4) - bt(0))], ['fF', S.load], ['mo-tests', S.load + (bt(4) - bt(0))], ['mo-plan', S.brk]];
+    let j = 0; for (let i = 0; i < scr2.length; i++) if (t >= scr2[i][1]) j = i;
+    const k = seg(t, scr2[j][1], scr2[j][1] + .35);
+    PHS[0] = { img: scr2[j][0], from: j ? scr2[j - 1][0] : null, k, x: ph.x, y: ph.y + Math.sin(t * 1.3) * 8, rx: ph.rx, ry: ph.ry, rz: ph.rz, s: ph.s, zz: 160, a: 1 - seg(t, S.wall - .3, S.wall + .1), z: 8,
+      scroll: (scr2[j][0] === 'mo-home' || scr2[j][0] === 'res-1') ? ease(seg(t, scr2[j][1] + .4, scr2[j][1] + 3)) * .25 : 0 };
+  }
+  // muro de pantallas (después del break)
+  if (t >= S.wall - .4 && t < S.end + .4) {
+    const all = ['mo-home', 'mo-plan', 'reg-0', 'nlv-1', 'res-0', 'gf-0', 'fC', 'fF', 'mo-tests', 'mo-week', 'res-1', 'mo-cal'];
+    const f = 1 - seg(t, S.end - .2, S.end + .3);
+    for (let j = 0; j < 12; j++) {
+      const col = j % 6, row = Math.floor(j / 6), dir = col % 2 ? 1 : -1;
+      const kk = back(seg(t, S.wall + j * .05, S.wall + .5 + j * .05));
+      PHS[j] = { img: all[j], x: 210 + col * 300, y: 260 + row * 560 + dir * (t - S.wall) * 40 - 30, s: .62 * kk, rx: 12, ry: 0, rz: -8, a: Math.min(1, kk) * f, z: 2, zz: 0 };
+    }
+  }
+  PH.forEach((p, i) => putPhone(p, PHS[i]));
+
+  // ---------- textos
+  words(T[0], '', null); words(T[1], '', null); MM.style.display = 'none'; LOGO.style.display = 'none'; CR.style.display = 'none';
+  const ink = '#0d0f14';
+  if (t < DROP) {
+    words(T[0], 'Hola.', { t, y: 120, size: 150, at: [bt(4)], out: DROP - .35 });
+    words(T[1], 'Somos|<em style="color:#8fb0ff">ProTeam.</em>', { t, y: 290, size: 72, at: [bt(8), bt(9)], out: DROP - .35, c: '#cfd3dc' });
+  } else if (t < S.plan) {
+    words(T[0], 'Toda|tu|temporada.', { t, y: 60, size: 84, at: [bt(19), bt(20), bt(21)], out: S.plan - .3, c: ink });
+    words(T[1], '<em style="color:#2f6bff">En|un|solo|sitio.</em>', { t, y: 150, size: 84, at: [bt(22), bt(23), bt(23), bt(24)].map((x) => x), out: S.plan - .3, c: ink });
+  } else if (t < S.live) {
+    words(T[0], 'Planifica.', { t, y: 60, size: 120, at: [S.plan], out: S.live - .3, c: ink });
+    words(T[1], '<em style="color:#2f6bff">Semana|a|semana.</em>', { t, y: 185, size: 64, at: [bt(29), bt(30), bt(31)], out: S.live - .3, c: ink });
+  } else if (t < S.ana) {
+    words(T[0], 'Registra.', { t, y: 60, size: 120, at: [S.live], out: S.ana - .3, c: ink });
+    words(T[1], '<em style="color:#2f6bff">En|directo.</em>', { t, y: 185, size: 64, at: [bt(37), bt(38)], out: S.ana - .3, c: ink });
+  } else if (t < S.load) {
+    words(T[0], 'Analiza.', { t, y: 60, size: 120, at: [S.ana], out: S.load - .3, c: ink });
+    words(T[1], 'Lo|que|no|viste|<em style="color:#2f6bff">desde|el|banquillo.</em>', { t, y: 185, size: 56, at: [bt(45), bt(45), bt(46), bt(46), bt(47), bt(47), bt(48)], out: S.load - .3, c: ink });
+  } else if (t < S.brk) {
+    words(T[0], 'Controla|<em style="color:#2f6bff">la|carga.</em>', { t, y: 60, size: 120, at: [S.load, bt(53), bt(54)], out: S.brk - .3, c: ink });
+  } else if (t < S.wall) {
+    const i = Math.min(2, Math.floor((t - S.brk) / (bt(4) - bt(0)))), t0 = S.brk + i * (bt(4) - bt(0));
+    words(T[0], SPORTS[i][0], { t, y: 70, size: 130, at: [t0], out: t0 + (bt(4) - bt(0)) - .25 });
+  } else if (t < S.end) {
+    words(T[0], 'Todo|el|equipo.', { t, y: 380, size: 130, at: [S.wall + .3, bt(73), bt(74)], out: S.end - .35 });
+    words(T[1], '<em style="color:#8fb0ff">Una|sola|app.</em>', { t, y: 540, size: 130, at: [bt(76), bt(77), bt(78)], out: S.end - .35 });
+  } else {
+    const lk = back(seg(t, S.end, S.end + .6));
+    LOGO.style.display = 'block'; LOGO.style.top = '250px'; LOGO.style.opacity = seg(t, S.end, S.end + .3); LOGO.style.transform = `scale(${lk * (1 + .03 * pz)})`;
+    words(T[0], 'ProTeam', { t, y: 500, size: 120, at: [bt(85)] });
+    words(T[1], '<em style="color:#8fb0ff">El|entrenador|de|base|también|trabaja.</em>', { t, y: 650, size: 54, at: [bt(87), bt(87), bt(88), bt(88), bt(89), bt(89)], c: '#cfd3dc' });
+    MM.style.display = 'block'; MM.textContent = 'pro-team.app'; MM.style.top = '760px'; MM.style.fontSize = '34px'; MM.style.color = '#fff'; MM.style.opacity = out(seg(t, bt(91), bt(92)));
+    CR.style.display = 'block'; CR.textContent = window.CREDIT; CR.style.top = '1010px'; CR.style.opacity = .9 * seg(t, bt(91), bt(93));
+  }
+};
+window.DUR = 46.5;
+window.CREDIT = 'Música: «Thugs» de Tanner Helland (CC BY 4.0) · Pantallas con datos de ejemplo';
+</script></body></html>
