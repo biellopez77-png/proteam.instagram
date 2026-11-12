@@ -707,8 +707,9 @@
   ],
   "caption": null,
   "cover": null,
-  "status": "pending",
-  "note": "cuenta atrás en Story"
+  "status": "cancelled",
+  "note": "cuenta atrás en Story",
+  "cancel_reason": "sustituida por la cuenta atrás de Blackout Friday (no se mezclan dos cuentas atrás)"
  },
  {
   "id": "017",
@@ -784,8 +785,9 @@
   ],
   "caption": null,
   "cover": null,
-  "status": "pending",
-  "note": "cuenta atrás en Story"
+  "status": "cancelled",
+  "note": "cuenta atrás en Story",
+  "cancel_reason": "sustituida por la cuenta atrás de Blackout Friday (no se mezclan dos cuentas atrás)"
  },
  {
   "id": "041",
@@ -874,8 +876,9 @@
   ],
   "caption": null,
   "cover": null,
-  "status": "pending",
-  "note": "cuenta atrás en Story"
+  "status": "cancelled",
+  "note": "cuenta atrás en Story",
+  "cancel_reason": "sustituida por la cuenta atrás de Blackout Friday (no se mezclan dos cuentas atrás)"
  },
  {
   "id": "055",
@@ -951,8 +954,9 @@
   ],
   "caption": null,
   "cover": null,
-  "status": "pending",
-  "note": "cuenta atrás en Story"
+  "status": "cancelled",
+  "note": "cuenta atrás en Story",
+  "cancel_reason": "sustituida por la cuenta atrás de Blackout Friday (no se mezclan dos cuentas atrás)"
  },
  {
   "id": "075",
@@ -1041,8 +1045,9 @@
   ],
   "caption": null,
   "cover": null,
-  "status": "pending",
-  "note": "cuenta atrás en Story"
+  "status": "cancelled",
+  "note": "cuenta atrás en Story",
+  "cancel_reason": "sustituida por la cuenta atrás de Blackout Friday (no se mezclan dos cuentas atrás)"
  },
  {
   "id": "053",
@@ -1137,7 +1142,7 @@
  },
  {
   "id": "t01",
-  "when": "2026-11-17T20:30:00+01:00",
+  "when": "2026-11-28T20:30:00+01:00",
   "kind": "reel",
   "files": [
    "reels/t01-presentacion-trazo.mp4"
@@ -1145,11 +1150,11 @@
   "caption": "Cuarenta mensajes. Tres Excel. Una libreta que ya no se lee.\nEl entrenador de base también trabaja. Merece orden. Merece su sitio.\nOs presentamos a Trazo: la línea azul de tu pizarra, ahora de tu lado. ✏️\nEnvíaselo a tu segundo entrenador 👉\n#entrenadordebase #futbolbase #baloncesto #balonmano #entrenadores",
   "cover": "covers/t01-presentacion-trazo.jpg",
   "status": "pending",
-  "note": "campaña «Algo se está ordenando», día 7: presentación de Trazo (sin voz; rehacer con voz si se puede descargar)"
+  "note": "campaña «Algo se está ordenando», día 7: presentación de Trazo (sin voz; rehacer con voz si se puede descargar); movida al 28 nov por la campaña Blackout Friday"
  },
  {
   "id": "t01s",
-  "when": "2026-11-17T20:31:00+01:00",
+  "when": "2026-11-28T20:31:00+01:00",
   "kind": "story",
   "files": [
    "reels/t01-presentacion-trazo.mp4"
@@ -1157,7 +1162,7 @@
   "caption": null,
   "cover": null,
   "status": "pending",
-  "note": "reel en story"
+  "note": "reel en story; movida al 28 nov por la campaña Blackout Friday"
  },
  {
   "id": "091",
@@ -1681,8 +1686,9 @@
   ],
   "caption": "6 puntos en todo el último cuarto: así perdió el Baskonia en Belgrado. 🏀\nPartizan 80–66 Baskonia (Euroliga, jornada 11, 11 nov). Tres cuartos igualados: 23–18, 19–20 y 23–22. Al último se llegó 65–60.\nY ahí se acabó la gasolina: parcial de 15–6. Partizan castigó por dentro, con Jekiri mandando en la pintura, y el Baskonia se atascó en ataque. Es su décima derrota en once jornadas.\nSi te pasa en tu equipo: en ProTeam ves los puntos de cada cuarto y el control de carga (minutos y RPE de cada jugador), para saber qué cuarto se te cae y quién llega fundido al final.\nPara el martes: «El último cuarto». Dos idas y vueltas a tope y, sin parar, 4 contra 4 a tres posesiones. Se entrena a decidir cansado.\nJugadas recreadas en pizarra; las pantallas de ProTeam llevan datos de ejemplo. Fuentes: EFE (crónica y ficha del partido), EITB Kirolak y Gigantes del Basket.\nGuárdalo para el martes.\n#Euroliga #Baskonia #baloncesto #entrenadordebaloncesto #basket",
   "cover": "covers/ta03-partizan-baskonia-ultimo-cuarto.jpg",
-  "status": "pending",
-  "note": "Trazo analiza #3: Partizan 80–66 Baskonia (Euroliga, 11 nov), 6 puntos en el último cuarto; puntos por cuarto + control de carga (RPE); con voz en off (voz.py)"
+  "status": "cancelled",
+  "note": "Trazo analiza #3: Partizan 80–66 Baskonia (Euroliga, 11 nov), 6 puntos en el último cuarto; puntos por cuarto + control de carga (RPE); con voz en off (voz.py)",
+  "cancel_reason": "campaña Blackout Friday: el hueco de las 13:30 es para la campaña del 12 al 27 nov (1 Reel al día)"
  },
  {
   "id": "ta03s",
@@ -1693,7 +1699,32 @@
   ],
   "caption": null,
   "cover": null,
+  "status": "cancelled",
+  "note": "reel en story; con voz en off (voz.py)",
+  "cancel_reason": "campaña Blackout Friday: el hueco de las 13:30 es para la campaña del 12 al 27 nov (1 Reel al día)"
+ },
+ {
+  "id": "bf01",
+  "when": "2026-11-12T13:30:00+01:00",
+  "kind": "reel",
+  "files": [
+   "reels/bf01-se-va-la-luz.mp4"
+  ],
+  "cover": "covers/bf01-se-va-la-luz.jpg",
   "status": "pending",
-  "note": "reel en story; con voz en off (voz.py)"
+  "campana": "blackout",
+  "caption": "Quedan 15 días. El 27 se va la luz. 🌑\nY con ella, los Excels, los audios de WhatsApp y el caos del lunes.\nBlackout Friday: crea tu primer equipo en ProTeam antes del 27 de noviembre a las 23:59 y lo usas 6 meses gratis. Sin tarjeta.\nPlanificación de la semana, registro de partido en directo, estadística por parciales y control de carga con RPE, en un solo sitio.\n👉 pro-team.app\n#BlackoutFriday #BlackFriday #entrenadores #futbolbase #balonmano",
+  "note": "Blackout Friday · día 1 (15 días) · lanzamiento"
+ },
+ {
+  "id": "bf01s",
+  "when": "2026-11-12T13:31:00+01:00",
+  "kind": "story",
+  "files": [
+   "stories/bf-cuenta-15.jpg"
+  ],
+  "status": "pending",
+  "campana": "blackout",
+  "note": "Blackout Friday · cuenta atrás 15"
  }
 ]
