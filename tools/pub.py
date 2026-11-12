@@ -39,7 +39,8 @@ def due():
         if i['kind'] != 'story' and i['files'][0] in feed:
             i['status'] = 'cancelled'; i['cancel_reason'] = 'repetido: ya publicado'; save(q); continue
         # Solo Reels (decidido por Biel el 11 nov): nada de imágenes ni carruseles en el feed.
-        if i['kind'] in ('image', 'carousel'):
+        # Excepción (Biel, 12 nov): los posts de la campaña Blackout Friday (campana = 'blackout').
+        if i['kind'] in ('image', 'carousel') and i.get('campana') != 'blackout':
             i['status'] = 'cancelled'; i['cancel_reason'] = 'solo Reels: no se publican posts de feed'; save(q); continue
         w = when(i)
         if n - timedelta(hours=6) <= w <= n + timedelta(minutes=25):
