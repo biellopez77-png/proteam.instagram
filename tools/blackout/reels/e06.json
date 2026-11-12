@@ -1,0 +1,98 @@
+{
+ "retro": "ep",
+ "d": "6",
+ "dur": 15.4,
+ "voz_sid": 29,
+ "vel": 1.0,
+ "clunks": [],
+ "dark_at": 99,
+ "estatica": [
+  [
+   0,
+   0.6
+  ],
+  [
+   4.8,
+   4.88
+  ]
+ ],
+ "apagado": [
+  6.8
+ ],
+ "zumbido": [
+  0.6,
+  6.8
+ ],
+ "musica": {
+  "bpm": 112,
+  "vol": 0.7,
+  "desde": 7.3,
+  "duck": 0.5
+ },
+ "lineas": [],
+ "ep": {
+  "scenes": [
+   {
+    "type": "static",
+    "t0": 0
+   },
+   {
+    "type": "split",
+    "left": [
+     "3 EXCELS",
+     "UNA LIBRETA",
+     "47 AUDIOS",
+     "EL DOMINGO, PERDIDO"
+    ],
+    "right": [
+     "1 APP",
+     "LA SEMANA, HECHA",
+     "CONVOCATORIA, LISTA",
+     "EL DOMINGO, TUYO"
+    ],
+    "t0": 0.6
+   },
+   {
+    "type": "blue",
+    "lines": [
+     [
+      0,
+      "TU DOMINGO"
+     ],
+     [
+      0.5,
+      "NO ES DEL"
+     ],
+     [
+      0.9,
+      "EXCEL.",
+      190,
+      900
+     ]
+    ],
+    "t0": 4.8
+   },
+   {
+    "type": "off",
+    "t0": 6.8
+   },
+   {
+    "type": "future",
+    "sub": "Recupera tu domingo.",
+    "shots": [
+     [
+      0,
+      "mo-home",
+      "Tu día, en orden.",
+      0
+     ]
+    ],
+    "t0": 7.3
+   },
+   {
+    "type": "cierre",
+    "t0": 9.9
+   }
+  ]
+ }
+}

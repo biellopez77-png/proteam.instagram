@@ -1,0 +1,150 @@
+{
+ "retro": "ep",
+ "d": "4",
+ "dur": 19.27,
+ "voz_sid": 29,
+ "vel": 1.0,
+ "clunks": [],
+ "dark_at": 99,
+ "estatica": [
+  [
+   0,
+   0.6
+  ],
+  [
+   0.6,
+   0.6799999999999999
+  ],
+  [
+   4.06875,
+   4.14875
+  ]
+ ],
+ "apagado": [
+  7.678624999999999
+ ],
+ "zumbido": [
+  0.6,
+  7.678624999999999
+ ],
+ "musica": {
+  "bpm": 104,
+  "vol": 0.4,
+  "desde": 8.18,
+  "duck": 0.5
+ },
+ "lineas": [
+  [
+   0.8,
+   "Diciembre, enero, febrero, marzo, abril, mayo."
+  ],
+  [
+   4.27,
+   "Seis meses. Casi una temporada entera."
+  ],
+  [
+   8.38,
+   "Si creas tu primer equipo antes del veintisiete, la tienes en ProTim. Gratis."
+  ],
+  [
+   13.97,
+   "Seis meses gratis. Solo hasta el veintisiete."
+  ]
+ ],
+ "ep": {
+  "scenes": [
+   {
+    "type": "static",
+    "t0": 0
+   },
+   {
+    "type": "vhs",
+    "mode": "▶▶ AVANZANDO",
+    "lines": [
+     [
+      0.2,
+      "DIC",
+      130,
+      560
+     ],
+     [
+      0.6,
+      "ENE",
+      130,
+      700
+     ],
+     [
+      1.0,
+      "FEB",
+      130,
+      840
+     ],
+     [
+      1.4,
+      "MAR",
+      130,
+      980
+     ],
+     [
+      1.8,
+      "ABR",
+      130,
+      1120
+     ],
+     [
+      2.2,
+      "MAY",
+      130,
+      1260
+     ]
+    ],
+    "t0": 0.6
+   },
+   {
+    "type": "blue",
+    "lines": [
+     [
+      0,
+      "6 MESES.",
+      190,
+      600
+     ],
+     [
+      0.6,
+      "UNA",
+      150,
+      820
+     ],
+     [
+      0.9,
+      "TEMPORADA.",
+      150,
+      960
+     ]
+    ],
+    "t0": 4.07
+   },
+   {
+    "type": "off",
+    "t0": 7.68
+   },
+   {
+    "type": "future",
+    "sub": "Toda la temporada.",
+    "shots": [
+     [
+      0,
+      "mo-plan",
+      "De diciembre a mayo.",
+      0.05
+     ]
+    ],
+    "t0": 8.18
+   },
+   {
+    "type": "cierre",
+    "t0": 13.77
+   }
+  ]
+ }
+}

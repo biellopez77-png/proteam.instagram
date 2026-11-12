@@ -1,0 +1,150 @@
+{
+ "retro": "ep",
+ "d": "12",
+ "dur": 24.5,
+ "voz_sid": 29,
+ "vel": 1.0,
+ "clunks": [],
+ "dark_at": 99,
+ "estatica": [
+  [
+   0,
+   0.6
+  ],
+  [
+   0.6,
+   0.6799999999999999
+  ],
+  [
+   7.308166666666666,
+   7.388166666666666
+  ]
+ ],
+ "apagado": [
+  9.917666666666666
+ ],
+ "zumbido": [
+  0.6,
+  9.917666666666666
+ ],
+ "musica": {
+  "bpm": 104,
+  "vol": 0.4,
+  "desde": 10.42,
+  "duck": 0.5
+ },
+ "lineas": [
+  [
+   0.8,
+   "Has ganado de nueve. ¿Quién marcó? ¿Cuántos minutos jugó cada uno? Ni idea."
+  ],
+  [
+   7.51,
+   "Tu libreta no vio el partido."
+  ],
+  [
+   10.62,
+   "ProTim registra el partido en directo: jugador, acción, dónde va el tiro y si es gol o parada. Al acabar, la crónica ya está hecha."
+  ],
+  [
+   19.2,
+   "Seis meses gratis para tu primer equipo. Solo hasta el veintisiete."
+  ]
+ ],
+ "ep": {
+  "scenes": [
+   {
+    "type": "static",
+    "t0": 0
+   },
+   {
+    "type": "teletext",
+    "pag": 101,
+    "title": "RESULTADOS",
+    "lines": [
+     [
+      0.2,
+      "RIBES ....... 26",
+      "#fff"
+     ],
+     [
+      0.6,
+      "RIVAL ....... 17",
+      "#fff"
+     ],
+     [
+      1.2,
+      "¿GOLEADORES? ....... ???",
+      "#ff0"
+     ],
+     [
+      1.8,
+      "¿MINUTOS? ..... NI IDEA",
+      "#f0f"
+     ]
+    ],
+    "blink": "SIGUE EN LA LIBRETA",
+    "t0": 0.6
+   },
+   {
+    "type": "blue",
+    "lines": [
+     [
+      0,
+      "TU LIBRETA"
+     ],
+     [
+      0.5,
+      "NO VIO EL"
+     ],
+     [
+      0.9,
+      "PARTIDO.",
+      190,
+      900
+     ]
+    ],
+    "t0": 7.31
+   },
+   {
+    "type": "off",
+    "t0": 9.92
+   },
+   {
+    "type": "future",
+    "sub": "El partido, en directo.",
+    "shots": [
+     [
+      0,
+      "reg-1",
+      "Jugador y acción.",
+      0.45
+     ],
+     [
+      1.6,
+      "reg-3",
+      "Dónde va el tiro.",
+      0.5
+     ],
+     [
+      3.0,
+      "reg-4",
+      "¿Gol o parada?",
+      0.55
+     ],
+     [
+      4.4,
+      "cro-0",
+      "La crónica, hecha.",
+      0.1
+     ]
+    ],
+    "t0": 10.42
+   },
+   {
+    "type": "cierre",
+    "t0": 19.0
+   }
+  ]
+ }
+}

@@ -1,0 +1,136 @@
+{
+ "retro": "ep",
+ "d": "13",
+ "dur": 20.71,
+ "voz_sid": 29,
+ "vel": 1.0,
+ "clunks": [],
+ "dark_at": 99,
+ "estatica": [
+  [
+   0,
+   0.6
+  ],
+  [
+   0.6,
+   0.6799999999999999
+  ],
+  [
+   5.816583333333333,
+   5.896583333333333
+  ]
+ ],
+ "apagado": [
+  9.449916666666667
+ ],
+ "zumbido": [
+  0.6,
+  9.449916666666667
+ ],
+ "musica": {
+  "bpm": 104,
+  "vol": 0.4,
+  "desde": 9.95,
+  "duck": 0.5
+ },
+ "lineas": [
+  [
+   0.8,
+   "Cuarenta y siete audios de guasap. Y aún no sabes quién viene el sábado."
+  ],
+  [
+   6.02,
+   "Eso no es una convocatoria. Es ruido."
+  ],
+  [
+   10.15,
+   "En ProTim haces la convocatoria: convocados y titulares, en una sola pantalla."
+  ],
+  [
+   15.41,
+   "Seis meses gratis para tu primer equipo. Solo hasta el veintisiete."
+  ]
+ ],
+ "ep": {
+  "scenes": [
+   {
+    "type": "static",
+    "t0": 0
+   },
+   {
+    "type": "nokia",
+    "counter": [
+     1,
+     47,
+     22,
+     "AUDIOS<br>NUEVOS"
+    ],
+    "lines": [
+     [
+      1.4,
+      "«¿A QUÉ HORA<br>ES EL SÁBADO?»",
+      560,
+      60
+     ],
+     [
+      2.4,
+      "«¿Y DÓNDE<br>JUGAMOS?»",
+      800,
+      60
+     ]
+    ],
+    "t0": 0.6
+   },
+   {
+    "type": "blue",
+    "lines": [
+     [
+      0,
+      "47 AUDIOS",
+      150
+     ],
+     [
+      0.5,
+      "NO SON UNA",
+      120,
+      790
+     ],
+     [
+      0.9,
+      "CONVOCATORIA.",
+      112,
+      920
+     ]
+    ],
+    "t0": 5.82
+   },
+   {
+    "type": "off",
+    "t0": 9.45
+   },
+   {
+    "type": "future",
+    "sub": "Convoca en un toque.",
+    "shots": [
+     [
+      0,
+      "fA",
+      "Convocados y titulares.",
+      0.1
+     ],
+     [
+      2.2,
+      "grid-0",
+      "La lista, de un vistazo.",
+      0.3
+     ]
+    ],
+    "t0": 9.95
+   },
+   {
+    "type": "cierre",
+    "t0": 15.21
+   }
+  ]
+ }
+}

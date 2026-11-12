@@ -1,0 +1,147 @@
+{
+ "retro": "ep",
+ "d": "3",
+ "dur": 15.06,
+ "voz_sid": 29,
+ "vel": 1.0,
+ "clunks": [],
+ "dark_at": 99,
+ "estatica": [
+  [
+   0,
+   0.6
+  ],
+  [
+   0.6,
+   0.6799999999999999
+  ],
+  [
+   4.433166666666667,
+   4.513166666666667
+  ]
+ ],
+ "apagado": [
+  6.058166666666667
+ ],
+ "zumbido": [
+  0.6,
+  6.058166666666667
+ ],
+ "musica": {
+  "bpm": 104,
+  "vol": 0.4,
+  "desde": 6.56,
+  "duck": 0.5
+ },
+ "lineas": [
+  [
+   0.8,
+   "Puedes rebobinar. Excel, libreta, audios."
+  ],
+  [
+   4.63,
+   "O avanzar."
+  ],
+  [
+   6.76,
+   "Quedan tres días."
+  ],
+  [
+   9.76,
+   "Seis meses gratis para tu primer equipo. Solo hasta el veintisiete."
+  ]
+ ],
+ "ep": {
+  "scenes": [
+   {
+    "type": "static",
+    "t0": 0
+   },
+   {
+    "type": "vhs",
+    "mode": "◀◀ REBOBINA",
+    "lines": [
+     [
+      0.2,
+      "◀◀",
+      260,
+      600
+     ],
+     [
+      0.6,
+      "EXCEL.",
+      120,
+      900
+     ],
+     [
+      0.9,
+      "LIBRETA.",
+      120,
+      1030
+     ],
+     [
+      1.2,
+      "AUDIOS.",
+      120,
+      1160
+     ]
+    ],
+    "t0": 0.6
+   },
+   {
+    "type": "vhs",
+    "mode": "▶▶ O AVANZA",
+    "bg": "#1f3cff",
+    "lines": [
+     [
+      0.2,
+      "▶▶",
+      260,
+      600
+     ],
+     [
+      0.6,
+      "O AVANZAR.",
+      130,
+      900
+     ]
+    ],
+    "t0": 4.43
+   },
+   {
+    "type": "off",
+    "t0": 6.06
+   },
+   {
+    "type": "future",
+    "title": "ProTeam.",
+    "sub": "Avanza.",
+    "shots": [
+     [
+      0,
+      "mo-week",
+      null,
+      0.1
+     ],
+     [
+      1.0,
+      "reg-1",
+      null,
+      0.45
+     ],
+     [
+      2.0,
+      "res-0",
+      null,
+      0.2
+     ]
+    ],
+    "t0": 6.56
+   },
+   {
+    "type": "cierre",
+    "t0": 9.56
+   }
+  ]
+ }
+}

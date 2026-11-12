@@ -1,0 +1,133 @@
+{
+ "retro": "ep",
+ "d": "5",
+ "dur": 19.27,
+ "voz_sid": 29,
+ "vel": 1.0,
+ "clunks": [],
+ "dark_at": 99,
+ "estatica": [
+  [
+   0,
+   0.6
+  ],
+  [
+   0.6,
+   0.6799999999999999
+  ],
+  [
+   4.7965,
+   4.8765
+  ]
+ ],
+ "apagado": [
+  8.054833333333335
+ ],
+ "zumbido": [
+  0.6,
+  8.054833333333335
+ ],
+ "musica": {
+  "bpm": 104,
+  "vol": 0.4,
+  "desde": 8.55,
+  "duck": 0.5
+ },
+ "lineas": [
+  [
+   0.8,
+   "¿Cuántos grupos de guasap tiene tu equipo? ¿Tres? ¿Cuatro?"
+  ],
+  [
+   5.0,
+   "Tu equipo no cabe en un grupo de guasap."
+  ],
+  [
+   8.75,
+   "En ProTim abres la app y ves qué toca hoy, lo que tienes pendiente y lo que viene."
+  ],
+  [
+   13.97,
+   "Seis meses gratis para tu primer equipo. Solo hasta el veintisiete."
+  ]
+ ],
+ "ep": {
+  "scenes": [
+   {
+    "type": "static",
+    "t0": 0
+   },
+   {
+    "type": "nokia",
+    "lines": [
+     [
+      0,
+      "GRUPO<br>«INFANTIL A»",
+      340,
+      72
+     ],
+     [
+      0.8,
+      "GRUPO<br>«PADRES INF A»",
+      600,
+      60
+     ],
+     [
+      1.4,
+      "GRUPO<br>«STAFF»",
+      840,
+      60
+     ]
+    ],
+    "t0": 0.6
+   },
+   {
+    "type": "blue",
+    "lines": [
+     [
+      0,
+      "TU EQUIPO"
+     ],
+     [
+      0.5,
+      "NO CABE EN"
+     ],
+     [
+      0.9,
+      "UN GRUPO.",
+      170,
+      900
+     ]
+    ],
+    "t0": 4.8
+   },
+   {
+    "type": "off",
+    "t0": 8.05
+   },
+   {
+    "type": "future",
+    "sub": "Tu día, en orden.",
+    "shots": [
+     [
+      0,
+      "mo-home",
+      "Qué toca hoy.",
+      0
+     ],
+     [
+      2.2,
+      "mo-cal",
+      "Y lo que viene.",
+      0.15
+     ]
+    ],
+    "t0": 8.55
+   },
+   {
+    "type": "cierre",
+    "t0": 13.77
+   }
+  ]
+ }
+}

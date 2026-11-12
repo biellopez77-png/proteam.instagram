@@ -1,0 +1,126 @@
+{
+ "retro": "ep",
+ "d": "11",
+ "dur": 19.37,
+ "voz_sid": 29,
+ "vel": 1.0,
+ "clunks": [],
+ "dark_at": 99,
+ "estatica": [
+  [
+   0,
+   0.6
+  ],
+  [
+   0.6,
+   0.6799999999999999
+  ],
+  [
+   5.469291666666666,
+   5.549291666666666
+  ]
+ ],
+ "apagado": [
+  7.094291666666666
+ ],
+ "zumbido": [
+  0.6,
+  7.094291666666666
+ ],
+ "musica": {
+  "bpm": 104,
+  "vol": 0.4,
+  "desde": 7.59,
+  "duck": 0.5
+ },
+ "lineas": [
+  [
+   0.8,
+   "¿Cuándo se rompió el partido? Rebobinas la cinta y sigues sin saberlo."
+  ],
+  [
+   5.67,
+   "Ni idea."
+  ],
+  [
+   7.79,
+   "En ProTim tienes el marcador por partes, los últimos diez minutos y la eficacia, frente al rival."
+  ],
+  [
+   14.07,
+   "Seis meses gratis para tu primer equipo. Solo hasta el veintisiete."
+  ]
+ ],
+ "ep": {
+  "scenes": [
+   {
+    "type": "static",
+    "t0": 0
+   },
+   {
+    "type": "vhs",
+    "mode": "◀◀ REBOBINANDO",
+    "lines": [
+     [
+      0.3,
+      "¿CUÁNDO SE",
+      120,
+      620
+     ],
+     [
+      0.8,
+      "ROMPIÓ EL",
+      120,
+      760
+     ],
+     [
+      1.3,
+      "PARTIDO?",
+      150,
+      900
+     ]
+    ],
+    "t0": 0.6
+   },
+   {
+    "type": "blue",
+    "lines": [
+     [
+      0,
+      "NI IDEA.",
+      220,
+      760
+     ]
+    ],
+    "t0": 5.47
+   },
+   {
+    "type": "off",
+    "t0": 7.09
+   },
+   {
+    "type": "future",
+    "sub": "Lo ves en un segundo.",
+    "shots": [
+     [
+      0,
+      "res-0",
+      "Marcador por partes.",
+      0.18
+     ],
+     [
+      2.6,
+      "res-0",
+      "Eficacia y paradas.",
+      0.55
+     ]
+    ],
+    "t0": 7.59
+   },
+   {
+    "type": "cierre",
+    "t0": 13.87
+   }
+  ]
+ }
+}
