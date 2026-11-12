@@ -9,3 +9,5 @@ tools/blackout/reels/*.log
 tools/blackout/out/foto/m-*.png
 tools/blackout/out/foto/p-*.png
 tools/blackout/reels/*.mp4
+tools/blackout/out/foto/
+tools/blackout/out/tele/
