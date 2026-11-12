@@ -11,17 +11,22 @@ def page(p, port, d):
     b = p.chromium.launch(); pg = b.new_page(viewport={'width': W, 'height': H})
     pg.on('pageerror', lambda e: print('ERR', e))
     pg.goto(f'http://127.0.0.1:{port}/tools/blackout/retro.html?d={d}'); pg.wait_for_function('window.READY===true', timeout=60000); return b, pg
+def set_ep(pg, ep): pg.evaluate('(e) => { window.EP = e; }', ep)
 def frame(pg, rid, t, seed):
     pg.evaluate(f'window.render("{rid}", {t})'); a = pg.evaluate(f'window.crtAmount("{rid}", {t})')
     return crt(Image.open(io.BytesIO(pg.screenshot())), a, t, seed)
 if __name__ == '__main__':
     port = serve(); c = sys.argv[1]
     with sync_playwright() as p:
-        if c == 'still':
+        if c == 'epstill':  # epstill spec.json t1 t2 ... prefijo
+            spec = json.load(open(sys.argv[2])); *ts, pre = sys.argv[3:]; b, pg = page(p, port, spec['d']); set_ep(pg, spec['ep'])
+            for t in ts: frame(pg, 'ep', float(t), 0).save(f'{pre}-{t}.jpg', quality=88)
+        elif c == 'still':
             rid, d, *ts, pre = sys.argv[2:]; b, pg = page(p, port, d)
             for t in ts: frame(pg, rid, float(t), 0).save(f'{pre}-{t}.jpg', quality=90)
         else:
             spec = json.load(open(sys.argv[2])); out = sys.argv[3]; b, pg = page(p, port, spec['d'])
+            if 'ep' in spec: set_ep(pg, spec['ep'])
             N = int(spec['dur'] * FPS)
             ff = subprocess.Popen(['ffmpeg', '-v', 'error', '-y', '-f', 'rawvideo', '-pix_fmt', 'rgb24', '-s', f'{W}x{H}', '-r', str(FPS), '-i', '-',
                 '-i', sys.argv[2].replace('.json', '.wav'), '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '23', '-maxrate', '9M', '-bufsize', '18M',

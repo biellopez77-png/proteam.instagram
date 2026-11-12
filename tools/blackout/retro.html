@@ -58,7 +58,7 @@ function WIN95(t, o = {}) { const rows = ['Pau', 'Nico', 'Marc', 'Leo', 'Iker', 
     <div style="position:absolute;left:24px;top:110px;width:910px;height:870px;overflow:hidden;background:#fff">${g}</div></div>`;
   if (o.dialog) h += `<div class="a" style="left:170px;top:${o.dy ?? 760}px;width:740px;height:330px;background:#c0c0c0;border:4px solid;border-color:#fff #404040 #404040 #fff;box-shadow:12px 12px 0 rgba(0,0,0,.4)">
     <div style="position:absolute;left:6px;right:6px;top:6px;height:58px;background:linear-gradient(90deg,#000080,#1084d0);color:#fff;font-family:Px;font-weight:700;font-size:28px;display:flex;align-items:center;padding-left:16px">Excel</div>
-    <div style="position:absolute;left:40px;top:100px;font-family:VT;font-size:56px;color:#000;line-height:1.05">${o.dialog}</div>
+    <div style="position:absolute;left:40px;top:84px;font-family:VT;font-size:46px;color:#000;line-height:1.0">${o.dialog}</div>
     <div style="position:absolute;left:290px;bottom:30px;width:170px;height:64px;border:3px solid;border-color:#fff #404040 #404040 #fff;font-family:VT;font-size:44px;color:#000;display:flex;align-items:center;justify-content:center">Aceptar</div></div>`;
   return h; }
 // ruido de canal sin señal
@@ -112,6 +112,54 @@ R.story = { dur: 1, render(t) { let h = BLUE(3.4, { mode: DAYS === '0' ? 'REC �
   h += T('PRO-TEAM.APP', { x: 114, y: 1420, size: 78, font: 'VT', weight: 400, ls: '.08em', shadow: '0 0 12px rgba(255,255,255,.6)' });
   return h; } };
 CRT.story = () => 1;
+
+// ── Motor de episodios: R.ep pinta window.EP (escenas con tiempos) ──
+function TELETEXT(sc, u) { let h = `<div class="a" style="inset:0;background:#000"></div>`;
+  h += `<div class="a" style="left:60px;top:150px;width:960px;font-family:VT;font-size:56px;color:#fff;letter-spacing:.02em"><span style="color:#ff0">P${sc.pag ?? 888}</span> <span style="color:#0ff">PROTEAM TXT</span> ${sc.fecha ?? '12 NOV'} <span style="color:#ff0">23:40</span></div>`;
+  h += `<div class="a" style="left:60px;top:240px;width:960px;height:110px;background:${sc.band ?? '#00f'};color:#ff0;font-family:VT;font-size:96px;line-height:110px;padding-left:24px">${sc.title ?? ''}</div>`;
+  (sc.lines || []).forEach(([t0, txt, col], i) => { if (u >= t0) h += `<div class="a" style="left:70px;top:${430 + i * 120}px;width:940px;font-family:VT;font-size:${sc.size ?? 72}px;color:${col ?? '#fff'};line-height:1">${txt}</div>`; });
+  if (sc.blink && Math.floor(u * 3) % 2) h += `<div class="a" style="left:70px;top:1500px;font-family:VT;font-size:72px;color:#f0f">${sc.blink}</div>`;
+  return h; }
+function LCD(sc, u) { let h = `<div class="a" style="inset:0;background:#111"></div><div class="a" style="left:90px;top:520px;width:900px;height:620px;border-radius:28px;background:#9aa58a;box-shadow:inset 0 10px 40px rgba(0,0,0,.45),0 0 0 26px #2a2a2a"></div>`;
+  h += `<div class="a" style="left:130px;top:560px;font-family:Px;font-weight:700;font-size:38px;color:#262b1e">${sc.top ?? ''}</div>`;
+  (sc.lines || []).forEach(([t0, txt], i) => { if (u >= t0) h += `<div class="a" style="left:120px;top:${640 + i * 190}px;width:840px;text-align:right;font-family:VT;font-size:${sc.size ?? 190}px;color:#1c2116;line-height:1">${txt}</div>`; });
+  return h + (sc.sub ? T(sc.sub, { x: 90, y: 1300, size: 84, color: '#fff', a: u > (sc.subAt ?? 1) ? 1 : 0 }) : ''); }
+function VHS(sc, u) { let h = `<div class="a" style="inset:0;background:${sc.bg ?? '#05060a'}"></div>`;
+  h += T(sc.mode ?? '◀◀ REBOBINANDO', { x: 100, y: 150, size: 80, font: 'VT', weight: 400, ls: '.04em', shadow: '0 0 12px rgba(255,255,255,.6)', a: Math.floor(u * 2) % 2 ? 1 : .35 });
+  for (let i = 0; i < 6; i++) { const y = ((u * 900 + i * 337) % 2100) - 100; h += `<div class="a" style="left:0;right:0;top:${y}px;height:${8 + i * 3}px;background:rgba(255,255,255,${.06 + (i % 3) * .05})"></div>`; }
+  (sc.lines || []).forEach(([t0, txt, size, y], i) => { if (u >= t0) h += T(txt, { x: 100, y: y ?? 620 + i * 170, size: size ?? 120, shadow: '0 0 18px rgba(255,255,255,.55)' }); });
+  return h; }
+function SPLIT(sc, u) { let h = `<div class="a" style="left:0;top:0;width:540px;height:1920px;background:${TVBLUE}"></div><div class="a" style="left:540px;top:0;width:540px;height:1920px;background:${PAPER}"></div>`;
+  h += T('1998', { x: 50, y: 220, w: 460, size: 120, font: 'VT', weight: 400, color: OSDG }) + T('HOY', { x: 590, y: 220, w: 440, size: 120, color: INK });
+  sc.left.forEach((x, i) => { if (u > .3 + i * .55) h += T(x, { x: 50, y: 470 + i * 200, w: 460, size: 58, weight: 900, lh: 1, color: '#fff' }); });
+  sc.right.forEach((x, i) => { if (u > .55 + i * .55) h += T(x, { x: 590, y: 470 + i * 200, w: 440, size: 58, weight: 900, lh: 1, color: PTBLUE }); });
+  return h; }
+function FUTURE(sc, u) { let h = FUT(); const p = eo(cl(u / .6));
+  h += T(sc.title ?? 'ProTeam.', { x: 90, y: 160, size: sc.tsize ?? 120, color: INK });
+  if (sc.sub) h += T(sc.sub, { x: 92, y: 160 + (sc.tsize ?? 120) * 1.02, size: sc.ssize ?? 78, weight: 800, color: PTBLUE, a: cl((u - .3) / .2) });
+  let k = 0; (sc.shots || []).forEach((x, i) => { if (u >= x[0]) k = i; }); const sh = sc.shots[k], q = eo(cl((u - sh[0]) / .35));
+  h += PHONE(sh[1], { y: (sc.py ?? 560) + (k === 0 ? (1 - p) * 500 : (1 - q) * 30), w: sc.pw ?? 580, crop: sc.crop ?? .56, scroll: sh[3] ?? .05 });
+  if (sh[2]) h += T(sh[2], { x: 90, y: 1600, size: 64, weight: 900, color: INK, a: q, lh: 1 });
+  h += T('DATOS DE EJEMPLO', { x: 92, y: 1800, size: 26, weight: 700, color: '#8a8f9c', ls: '.14em' });
+  return h; }
+R.ep = { dur: 30, render(t) { const E = window.EP; let sc = E.scenes[0];
+  for (const x of E.scenes) if (t >= x.t0) sc = x; const u = t - sc.t0; let h = '';
+  switch (sc.type) {
+    case 'static': STATIC(Math.floor(t * 30)); return T(CH(), { x: 100, y: 150, size: 88, font: 'VT', weight: 400, color: OSDG });
+    case 'blue': { h = BLUE(t, { mode: sc.mode }); let yy = 560; (sc.lines || []).forEach(([t0, txt, size, y, col]) => { const sz = size ?? 150, Y = y ?? yy; yy = Y + sz * 1.0; if (u >= t0) h += T(txt, { x: 110, y: Y, size: size ?? 150, lh: .95, color: col ?? '#fff', shadow: '0 0 18px rgba(255,255,255,.55),0 0 50px rgba(160,190,255,.4)' }); }); return h; }
+    case 'nokia': { let inner = ''; if (sc.counter) inner += PXT(`${Math.min(sc.counter[1], Math.floor(u * sc.counter[2]) + sc.counter[0])} ${sc.counter[3]}`, 300, 78);
+      (sc.lines || []).forEach(([t0, txt, y, size]) => { if (u >= t0) inner += PXT(txt, y, size ?? 66); }); return NOKIA(inner, { hora: sc.hora }); }
+    case 'win95': return WIN95(t, { dialog: u > (sc.dialogAt ?? 1) ? sc.dialog : null });
+    case 'teletext': return TELETEXT(sc, u);
+    case 'lcd': return LCD(sc, u);
+    case 'vhs': return VHS(sc, u);
+    case 'split': return SPLIT(sc, u);
+    case 'off': { const k = seg(u, 0, .45); return `<div class="a" style="inset:0;background:#000"></div><div class="a" style="left:${540 - 540 * (1 - k * .9)}px;width:${1080 * (1 - k * .9)}px;top:${960 - 960 * (1 - k) - 3}px;height:${Math.max(6, 1920 * (1 - k))}px;background:#fff;box-shadow:0 0 60px #fff"></div>`; }
+    case 'future': return FUTURE(sc, u);
+    case 'cierre': return CIERRE(t, sc.t0);
+  } return h; } };
+CRT.ep = (t) => { const E = window.EP; let sc = E.scenes[0]; for (const x of E.scenes) if (t >= x.t0) sc = x;
+  return sc.type === 'future' ? 0 : sc.type === 'split' ? .45 : sc.type === 'cierre' ? .75 : sc.type === 'off' ? .8 : 1; };
 
 window.render = (id, t) => { NZ.style.display = 'none'; S.innerHTML = R[id].render(t); };
 window.crtAmount = (id, t) => (CRT[id] ? CRT[id](t) : 1);

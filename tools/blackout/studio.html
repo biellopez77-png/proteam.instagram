@@ -172,8 +172,34 @@ const SC = {
       C.position.y += Math.sin(t * 1.3) * .015; C.position.x += Math.sin(t * .9) * .012; C.lookAt(lk); };
     C.fov = 38; window.ANIM(+(Q.get('t') || 99)); },
 };
+SC.tele = () => { // tele de tubo de los 90 sobre fondo gris, como un bodegón de estudio
+  S.background = new THREE.Color('#e4e3df'); S.fog = null;
+  const plast = new THREE.MeshStandardMaterial({ color: '#0f0f10', roughness: .45, metalness: .05, envMapIntensity: .5 });
+  const g = new THREE.Group();
+  const body = new THREE.Mesh(new RoundedBoxGeometry(1.32, 1.04, .62, 8, .07), plast); body.position.set(0, .52, 0); g.add(body);
+  const back = new THREE.Mesh(new RoundedBoxGeometry(1.0, .8, .5, 6, .08), plast); back.position.set(0, .5, -.45); g.add(back);
+  // marco interior de la pantalla
+  const bez = new THREE.Mesh(new RoundedBoxGeometry(1.12, .78, .06, 6, .05), new THREE.MeshStandardMaterial({ color: '#1b1b1c', roughness: .7 })); bez.position.set(0, .6, .3); g.add(bez);
+  // pantalla abombada con la imagen
+  const tex = new THREE.TextureLoader().load(Q.get('img'), () => { window.render(0); window.READY = true; }); tex.encoding = THREE.sRGBEncoding;
+  const sg = new THREE.PlaneGeometry(.98, .735, 40, 30); const ps = sg.attributes.position;
+  for (let i = 0; i < ps.count; i++) { const x = ps.getX(i), y = ps.getY(i); ps.setZ(i, .022 * (1 - (x * x) / .3) * (1 - (y * y) / .17)); } sg.computeVertexNormals();
+  const scr = new THREE.Mesh(sg, new THREE.MeshBasicMaterial({ map: tex, toneMapped: false })); scr.position.set(0, .6, .336); g.add(scr);
+  const glass = new THREE.Mesh(sg, new THREE.MeshPhysicalMaterial({ color: '#ffffff', transparent: true, opacity: .1, roughness: .05, metalness: 0, clearcoat: 1 })); glass.position.set(0, .6, .34); g.add(glass);
+  // panel de mandos
+  const pan = new THREE.Mesh(new THREE.BoxGeometry(.62, .07, .02), new THREE.MeshStandardMaterial({ color: '#202021', roughness: .6 })); pan.position.set(.12, .12, .315); g.add(pan);
+  for (let i = 0; i < 6; i++) { const bt = new THREE.Mesh(new RoundedBoxGeometry(.065, .03, .02, 2, .006), new THREE.MeshStandardMaterial({ color: '#111', roughness: .4 })); bt.position.set(-.1 + i * .075, .12, .33); g.add(bt); }
+  const knob = new THREE.Mesh(new THREE.CylinderGeometry(.045, .045, .03, 32), new THREE.MeshStandardMaterial({ color: '#0e0e0e', roughness: .5 })); knob.rotation.x = Math.PI / 2; knob.position.set(-.48, .12, .33); g.add(knob);
+  const led = new THREE.Mesh(new THREE.CircleGeometry(.012, 20), new THREE.MeshBasicMaterial({ color: '#7cff9a' })); led.position.set(.47, .12, .32); g.add(led);
+  g.traverse((m) => { if (m.isMesh) { m.castShadow = true; } }); S.add(g);
+  const fl = new THREE.Mesh(new THREE.PlaneGeometry(20, 20), new THREE.ShadowMaterial({ opacity: .28 })); fl.rotation.x = -Math.PI / 2; fl.receiveShadow = true; S.add(fl);
+  const key = new THREE.DirectionalLight('#ffffff', 1.4); key.position.set(-2, 4, 3); key.castShadow = true; key.shadow.mapSize.set(2048, 2048); key.shadow.radius = 8;
+  key.shadow.camera.left = -2; key.shadow.camera.right = 2; key.shadow.camera.top = 2; key.shadow.camera.bottom = -2; S.add(key);
+  S.add(new THREE.HemisphereLight('#ffffff', '#bdbab3', .35));
+  C.position.set(0, .75, 5.6); C.lookAt(0, .5, 0); C.fov = 26; g.rotation.y = 0;
+  window.NOREADY = true; };
 SC[SCENE]();
 S.traverse((o) => { if (o.isMesh) [].concat(o.material).forEach((m) => { if ('envMapIntensity' in m) m.envMapIntensity = m.metalness > .5 ? .55 : .12; }); }); C.aspect = W / H; C.updateProjectionMatrix();
 window.render = (t = 0) => { if (window.ANIM) window.ANIM(t); R.render(S, C); };
-window.render(+(Q.get('t') || 0)); window.READY = true;
+if (!window.NOREADY) { window.render(+(Q.get('t') || 0)); window.READY = true; }
 </script></body></html>

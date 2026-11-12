@@ -134,6 +134,24 @@ publicación falla, un reintento como máximo; después `failed` con el error.
   una en una.
 - No hace falta avisar a Biel de nada de Instagram: lo resume el parte semanal de los lunes.
 
+## CAMPAÑA BLACK FRIDAY · «Tu equipo sigue en 1998» (Biel, 12 nov 2026; manda hasta el 27 nov)
+
+- **Oferta real (comprobada en la base de datos)**: las cuentas nuevas que crean su primer equipo antes del
+  27 nov 2026 a las 23:59 (Madrid) tienen 6 meses gratis en lugar de 3, sin tarjeta. Desde el 28 vuelve a 3.
+  La landing pro-team.app tiene la cuenta atrás. Durante la campaña SÍ se habla de «6 meses gratis» en Instagram.
+- **Identidad**: tele de tubo / VHS / Nokia / Windows 95 / teletexto = cómo trabaja un equipo sin ProTeam
+  (el pasado). Cuando entra ProTeam la imagen se limpia (fondo claro, capturas reales de la app) = el futuro.
+  Azul de tele #1f3cff, naranja Nokia #ff5a00, gris papel #e9e8e4, OSD verde #3dffa8. Tipos: Inter Tight 900,
+  VT323 y Silkscreen. Tono: directo, atrevido, sin rodeos («Un Excel no es un plan.»).
+- **Cuenta atrás = canal de la tele**: CH 15 (12 nov) → CH 00 (27 nov).
+- **Calendario**: 1 Reel al día a las 13:30 (bf01–bf16) + Story del canal a las 13:31; 4 posts de feed con la
+  tele 3D (13, 18 y 23 nov a las 20:30; 27 nov a las 13:25). Todo ya está en queue.json con "campana": "blackout".
+- **Herramientas**: tools/blackout/ — retro.html (escenas), episodios.py (guiones con voz), retro_video.py
+  (render con efecto CRT de crt.py), sonido.py (voz Kokoro «Alex» gratis + música y efectos sintetizados),
+  pantalla.py + studio.html escena «tele» + posts_retro.py (posts).
+- La producción diaria de análisis está PAUSADA del 12 al 27 nov; se reactiva sola el 28 nov a las 7:05.
+  La tarea «publicar» publica también los 4 posts de imagen de la campaña (excepción a «Solo Reels»).
+
 ## REGLAS DE BIEL (10 nov 2026, 16:25) — mandan sobre TODO lo demás
 
 1. **Un solo formato de vídeo: «pizarra animada»** — el de los Reels que mejor funcionaron (d1–d4, hb1)
