@@ -224,3 +224,9 @@
 - Escena `tools/trazo/escenas/analiza-par-bkn.js` (pista de baloncesto FIBA por código, media pista vertical y pista entera horizontal), guion `guiones/analiza-par-bkn.json`, sonido `analiza_par_bkn`. Reel `reels/ta03-partizan-baskonia-ultimo-cuarto.mp4` (38,1 s, con voz), portada `covers/ta03-partizan-baskonia-ultimo-cuarto.jpg`.
 - Control de calidad: 2 pasadas (1.ª: «15–6» pisando una barra y saliéndose del recuadro, brazo de Trazo cruzando la cabeza en la portada, cabeza de Trazo sobre el panel; 2.ª: OK). Fotogramas 9,3 / 13,4 / 18,3 / 21,9 / 26,2 / 31,4 / 34,5 / 37,5 s y portada revisados; ffprobe con pista de audio AAC; voz.py sin «SOLAPA»; sin tramos estáticos de más de 2 s (freezedetect).
 - Programado: ta03 Reel hoy 13:30 y ta03s Story 13:31. Hoja Plan: filas ta03 y ta03s añadidas.
+
+### Diario 12 nov 20:25
+- Publicado: nada (`due` vacío; bf01/bf01s siguen en «borrador», ta03/ta03s canceladas por la campaña).
+- Métricas 7 días (caché Windsor): ta02 (Barça–Caserío) 1.532 vistas, saltos 33,8 %, 11,5 s, 3 guardados → muy bien. p03 612 (48,8 %, 8,3 s). p08 388 (49 %, 9,3 s). p21 168 (49,6 %, 6,9 s, 0 guardados) → flojo. Carrusel 088: 19 vistas, alcance 5. Los Reels de dato/partido real siguen ~1.500; los de problema genérico, < 650.
+- Hoja: Plan ya al día (todo lo publicado con media_id). Analisis: añadidas p08, p21, p03, ta02 y carrusel 088. Ojo: Plan muestra bf01/bf01s como «Programado» aunque en la cola están en borrador.
+- Comentarios últimos 3 días: ninguno. Sin spam.
