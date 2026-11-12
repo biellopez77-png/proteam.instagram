@@ -1,0 +1,43 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face{font-family:VT;src:url(../fonts/vt323-latin-400-normal.woff2)}
+@font-face{font-family:VT;src:url(../fonts/vt323-latin-ext-400-normal.woff2);unicode-range:U+0100-024F}
+@font-face{font-family:Px;font-weight:700;src:url(../fonts/silkscreen-latin-700-normal.woff2)}
+@font-face{font-family:IT;font-weight:800;src:url(../fonts/inter-tight-latin-800-normal.woff2)}
+@font-face{font-family:IT;font-weight:900;src:url(../fonts/inter-tight-latin-900-normal.woff2)}
+*{box-sizing:border-box;margin:0}
+html,body{width:1200px;height:900px;overflow:hidden;background:#000}
+#s{position:absolute;inset:0;overflow:hidden}
+.a{position:absolute;white-space:pre}
+</style></head><body><div id="s"></div>
+<script>
+// Lo que emite la tele (4:3). Un fotograma = window.screen(spec, t). Todo se escribe letra a letra.
+const S = document.getElementById('s');
+const cl = (x, a = 0, b = 1) => Math.max(a, Math.min(b, x));
+const BG = { blue: 'radial-gradient(90% 80% at 40% 40%,#3a58ff 0%,#1f3cff 55%,#1328c8 100%)', black: '#020203', dos: '#000', red: 'radial-gradient(90% 80% at 40% 40%,#ff3355 0%,#c8102e 60%,#7a0014 100%)', orange: '#ff5a00', paper: '#e9e8e4' };
+const GLOW = { blue: '0 0 14px rgba(255,255,255,.6),0 0 40px rgba(170,195,255,.45)', dos: '0 0 10px rgba(80,255,140,.7)', black: '0 0 12px rgba(255,255,255,.5)', red: '0 0 14px rgba(255,255,255,.6)', orange: 'none', paper: 'none' };
+// una línea: {text, at, cps, x, y, size, font, color, w}
+function line(L, t, bg) { const n = Math.floor((t - (L.at ?? 0)) * (L.cps ?? 22)); if (n <= 0) return '';
+  const full = [...L.text], s = full.slice(0, n).join(''), done = n >= full.length;
+  const cur = (!done || (L.cursor && Math.floor(t * 2.2) % 2 === 0)) ? (L.cursorChar ?? '█') : '';
+  const font = L.font ?? 'IT', size = L.size ?? 96;
+  const fam = font === 'VT' ? 'VT' : font === 'Px' ? 'Px' : 'IT';
+  return `<div class="a" style="left:${L.x ?? 80}px;top:${L.y ?? 300}px;font-family:${fam};font-weight:${fam === 'IT' ? 900 : 700};font-size:${size}px;line-height:1;letter-spacing:${fam === 'IT' ? '-.03em' : '.03em'};color:${L.color ?? (bg === 'dos' ? '#52ff8f' : bg === 'orange' ? '#170700' : '#fff')};text-shadow:${GLOW[bg] ?? 'none'}">${s}<span style="opacity:.9">${cur}</span></div>`; }
+function bar(B, t) { if (t < B.t0) return ''; const p = cl((t - B.t0) / (B.t1 - B.t0)), n = 20, k = Math.floor(p * n);
+  let h = `<div class="a" style="left:${B.x ?? 80}px;top:${B.y ?? 640}px;display:flex;gap:6px">`;
+  for (let i = 0; i < n; i++) h += `<div style="width:40px;height:56px;background:${i < k ? '#fff' : 'rgba(255,255,255,.18)'};box-shadow:${i < k ? '0 0 12px rgba(255,255,255,.7)' : 'none'}"></div>`;
+  h += `</div><div class="a" style="left:${(B.x ?? 80) + 940}px;top:${(B.y ?? 640) - 2}px;font-family:VT;font-size:64px;color:#fff;text-shadow:0 0 10px #fff">${Math.floor(p * 100)}%</div>`; return h; }
+window.screen = (spec, t) => { let f = spec.frames[0]; for (const x of spec.frames) if (t >= x.t0) f = x; const u = t - f.t0, bg = f.bg ?? 'blue';
+  let h = `<div class="a" style="inset:0;background:${BG[bg]}"></div>`;
+  if (f.osd !== false && bg !== 'paper') { h += `<div class="a" style="left:60px;top:44px;font-family:VT;font-size:64px;color:#3dffa8;text-shadow:0 0 10px rgba(61,255,168,.7)">${spec.ch}</div>`;
+    if (f.mode) h += `<div class="a" style="right:60px;top:44px;font-family:VT;font-size:60px;color:#fff;text-shadow:0 0 10px #fff">${f.mode}</div>`; }
+  (f.lines || []).forEach((L) => { h += line(L, u, bg); });
+  if (f.bar) h += bar(f.bar, u);
+  if (f.static) { h += `<canvas id="nz" width="300" height="225" style="position:absolute;inset:0;width:1200px;height:900px;image-rendering:pixelated"></canvas>`; }
+  S.innerHTML = h;
+  if (f.static) { const c = document.getElementById('nz').getContext('2d'), d = c.createImageData(300, 225); let s = Math.floor(t * 30) * 9301 + 7;
+    for (let i = 0; i < d.data.length; i += 4) { s = (s * 16807) % 2147483647; const v = s % 255; d.data[i] = d.data[i + 1] = d.data[i + 2] = v; d.data[i + 3] = 255; } c.putImageData(d, 0, 0); } };
+window.READY = false;
+Promise.all([document.fonts.load('400 60px VT'), document.fonts.load('700 40px Px'), document.fonts.load('900 80px IT')]).then(() => { window.READY = true; });
+</script></body></html>
