@@ -46,7 +46,7 @@ POSTS = [  # id, fecha, hora, n.º de imágenes, texto
  ('p07', '11-25', '20:30', 5, 'Detrás de cada jugada hay una historia. 🎬\nMovimientos. Decisiones. Datos.', 1),
  ('p10', '11-27', '13:25', 3, 'Última transmisión. 🔴\nÚltima oportunidad para actualizar tu análisis: hoy a las 23:59.', 1),
  ('p01', '11-29', '20:30', 5, 'El juego ha cambiado. La forma de entrenar y de competir, también. ⚡\nLa forma de analizar debería cambiar con ellos. Bienvenido a la nueva era.', 0),
- ('p09', '12-01', '20:30', 1, 'El futuro no espera. 📺', 0),
+ ('p09', '11-26', '20:30', 1, 'El futuro no espera. 📺', 1),
 ]
 
 

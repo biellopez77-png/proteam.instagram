@@ -2145,6 +2145,18 @@
   "note": "Black Friday · Story CH 01"
  },
  {
+  "id": "bp09",
+  "when": "2026-11-26T20:30:00+01:00",
+  "kind": "image",
+  "files": [
+   "feed/p09-1.jpg"
+  ],
+  "status": "pending",
+  "campana": "blackout",
+  "caption": "El futuro no espera. 📺\n\n🖤 Black Friday: 6 meses gratis (en vez de 3) si creas tu primer equipo antes del 27 de noviembre a las 23:59 (hora de Madrid). Solo cuentas nuevas, sin tarjeta. Desde el 28 vuelven a ser 3 meses.\n\n👉 pro-team.app (enlace en la bio)\n\n#ProTeam #análisisdeportivo #entrenadores #BlackFriday",
+  "note": "Brief 12 nov · post p09"
+ },
+ {
   "id": "bp10",
   "when": "2026-11-27T13:25:00+01:00",
   "kind": "carousel",
@@ -2273,18 +2285,6 @@
   "campana": "blackout",
   "caption": "¿Solo una jugada? Piénsalo otra vez. 🎯\nDónde empezó, dónde acabó y en qué minuto pasó.\n\n👉 pro-team.app (enlace en la bio)\n\nMúsica: «Surreptitious» y «Deeper@192», de Tanner Helland (CC BY 4.0).\n\n#ProTeam #análisisdeportivo #entrenadores",
   "note": "Brief 12 nov · r12 · tele a pantalla completa → móvil 3D; voz en inglés (Kokoro), subtítulos en pantalla; en «borrador» hasta que acabe el render"
- },
- {
-  "id": "bp09",
-  "when": "2026-12-01T20:30:00+01:00",
-  "kind": "image",
-  "files": [
-   "feed/p09-1.jpg"
-  ],
-  "status": "pending",
-  "campana": "blackout",
-  "caption": "El futuro no espera. 📺\n\n👉 pro-team.app (enlace en la bio)\n\n#ProTeam #análisisdeportivo #entrenadores",
-  "note": "Brief 12 nov · post p09"
  },
  {
   "id": "br13",
