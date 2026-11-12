@@ -1,0 +1,18 @@
+{
+ "mg": "r03",
+ "d": "13",
+ "dur": 15,
+ "lineas": [],
+ "musica": {
+  "bpm": 104,
+  "vol": 0.7,
+  "golpes": [
+   7.6,
+   9.4
+  ]
+ },
+ "voz_sid": 29,
+ "vel": 0.95,
+ "clunks": [],
+ "dark_at": 0
+}

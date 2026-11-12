@@ -1,0 +1,38 @@
+{
+ "mg": "r05",
+ "d": "11",
+ "dur": 21.5,
+ "lineas": [
+  [
+   0.4,
+   "Lunes. Once y cuarenta de la noche."
+  ],
+  [
+   3.3,
+   "Cuarenta y siete mensajes. Y aún no sabes quién viene el sábado."
+  ],
+  [
+   9.7,
+   "En ProTim haces la convocatoria: convocados y titulares, en un solo sitio."
+  ],
+  [
+   14.5,
+   "Y sabes, de un vistazo, con quién cuentas."
+  ],
+  [
+   16.6,
+   "Seis meses gratis para tu primer equipo. Hasta el veintisiete."
+  ]
+ ],
+ "musica": {
+  "bpm": 92,
+  "vol": 0.35,
+  "golpes": [
+   8.8
+  ]
+ },
+ "voz_sid": 29,
+ "vel": 0.95,
+ "clunks": [],
+ "dark_at": 0
+}

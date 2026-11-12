@@ -1,0 +1,35 @@
+{
+ "mg": "r16",
+ "d": "0",
+ "dur": 18.5,
+ "lineas": [
+  [
+   0.6,
+   "Último día."
+  ],
+  [
+   2.3,
+   "Esta noche, a las doce, se va la luz."
+  ],
+  [
+   6.1,
+   "Mañana, los seis meses vuelven a ser tres."
+  ],
+  [
+   9.5,
+   "Si aún no has creado tu equipo, es ahora."
+  ],
+  [
+   14.6,
+   "Seis meses gratis. Hasta medianoche."
+  ]
+ ],
+ "musica": {
+  "bpm": 104,
+  "vol": 0.35
+ },
+ "voz_sid": 29,
+ "vel": 0.95,
+ "clunks": [],
+ "dark_at": 0
+}

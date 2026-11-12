@@ -110,8 +110,8 @@ function scoreboard(txt) { // marcador LED del pabellón
   const led = canvasTex(1600, 800, (c, w, h) => { c.fillStyle = '#050506'; c.fillRect(0, 0, w, h);
     const glyph = document.createElement('canvas'); glyph.width = w; glyph.height = h; const q = glyph.getContext('2d');
     q.fillStyle = '#fff'; q.textAlign = 'center'; q.font = 'bold 120px monospace'; q.fillText('LOCAL', 330, 150); q.fillText('VISIT.', 1270, 150);
-    q.font = 'bold 470px monospace'; q.fillText(txt, w / 2, 560);
-    q.font = 'bold 150px sans-serif'; q.fillText('DÍAS', w / 2, 770);
+    q.font = (txt.length > 3 ? 'bold 330px' : 'bold 470px') + ' monospace'; q.fillText(txt, w / 2, txt.length > 3 ? 500 : 560);
+    q.font = 'bold 150px sans-serif'; q.fillText(Q.get('lab') || 'DÍAS', w / 2, 770);
     const px = q.getImageData(0, 0, w, h).data, step = 14;
     for (let y = 0; y < h; y += step) for (let x = 0; x < w; x += step) { const on = px[(y * w + x) * 4] > 128;
       const centre = x > 480 && x < 1120 && y > 180; c.fillStyle = on ? (centre ? '#ffb02e' : '#ff3b2f') : '#17110e'; c.beginPath(); c.arc(x + 7, y + 7, on ? 5.4 : 4.2, 0, 7); c.fill(); } });
@@ -127,7 +127,10 @@ const SC = {
     S.add(lanyard([[-.06, .09, 0], [-.16, .02, .05], [-.32, .006, .2], [-.25, .006, .45], [.05, .006, .5], [.35, .006, .32], [.5, .006, .05], [.7, .006, -.2], [1.2, .006, -.4]]));
     spot('#fff4e6', 1.1, [-.3, 2.4, -.9], [.02, 0, 0], .08, .8);
     spot('#3d7bff', 2.2, [-2.2, .6, -1.8], [0, .05, 0], .5, .9, false);
-    C.position.set(.42, .14, .46); C.lookAt(.02, .05, 0); C.fov = 32; },
+    C.position.set(.42, .14, .46); C.lookAt(.02, .05, 0); C.fov = 32;
+    if (Q.get('anim') === '1') { // órbita lenta, como un travelling de producto
+      window.ANIM = (t) => { const a = -.25 + t * .04, r = 1.15 - t * .025; C.position.set(Math.sin(a) * r + .03, .34 - t * .008, Math.cos(a) * r);
+        C.lookAt(.03, .05, 0); }; window.ANIM(+(Q.get('t') || 0)); } },
   pizarra() { floor(4, 12); S.fog = new THREE.FogExp2('#040507', .2);
     const b = board(); b.rotation.y = .15; S.add(b);
     const w = whistle(); w.position.set(-.95, 0, .55); w.rotation.y = 1.2; S.add(w);

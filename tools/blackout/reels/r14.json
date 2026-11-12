@@ -1,0 +1,51 @@
+{
+ "mg": "r14",
+ "d": "2",
+ "dur": 21,
+ "lineas": [
+  [
+   0.9,
+   "¿Hace falta tarjeta?"
+  ],
+  [
+   2.7,
+   "No."
+  ],
+  [
+   4.8,
+   "¿Para qué deportes?"
+  ],
+  [
+   6.2,
+   "Fútbol, baloncesto y balonmano."
+  ],
+  [
+   8.8,
+   "¿A quién vale?"
+  ],
+  [
+   10.2,
+   "Al primer equipo de una cuenta nueva."
+  ],
+  [
+   12.8,
+   "¿Hasta cuándo?"
+  ],
+  [
+   14.2,
+   "Hasta el viernes veintisiete, a medianoche."
+  ],
+  [
+   17.4,
+   "Seis meses gratis. En ProTim."
+  ]
+ ],
+ "musica": {
+  "bpm": 94,
+  "vol": 0.3
+ },
+ "voz_sid": 29,
+ "vel": 0.95,
+ "clunks": [],
+ "dark_at": 0
+}

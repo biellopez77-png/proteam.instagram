@@ -1,0 +1,49 @@
+{
+ "escena": "s=marcador&d=1",
+ "d": "1",
+ "dur": 17,
+ "cierre_at": 11.2,
+ "clunks": [
+  1.6,
+  2.5,
+  3.4
+ ],
+ "dark_at": 3.4,
+ "lineas": [
+  [
+   4.3,
+   "Mañana."
+  ],
+  [
+   5.6,
+   "Mañana a medianoche se va la luz."
+  ],
+  [
+   8.4,
+   "Y con ella, los seis meses gratis."
+  ],
+  [
+   11.7,
+   "Crea tu primer equipo en ProTim. Hoy todavía puedes."
+  ]
+ ],
+ "subs": [
+  [
+   4.3,
+   5.5,
+   "Mañana."
+  ],
+  [
+   5.6,
+   8.2,
+   "Mañana a medianoche se va la luz."
+  ],
+  [
+   8.4,
+   11.0,
+   "Y con ella, los 6 meses gratis."
+  ]
+ ],
+ "voz_sid": 29,
+ "vel": 0.95
+}

@@ -1,0 +1,17 @@
+{
+ "mg": "r06",
+ "d": "10",
+ "dur": 13,
+ "lineas": [],
+ "musica": {
+  "bpm": 122.4,
+  "vol": 0.75,
+  "golpes": [
+   9.8
+  ]
+ },
+ "voz_sid": 29,
+ "vel": 0.95,
+ "clunks": [],
+ "dark_at": 0
+}

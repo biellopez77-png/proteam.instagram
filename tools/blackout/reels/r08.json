@@ -1,0 +1,38 @@
+{
+ "mg": "r08",
+ "d": "8",
+ "dur": 21.5,
+ "lineas": [
+  [
+   0.3,
+   "Ganaste de once."
+  ],
+  [
+   2.0,
+   "Pero, ¿sabes cuándo se rompió el partido?"
+  ],
+  [
+   5.1,
+   "En ProTim tienes el marcador por partes y los últimos diez minutos."
+  ],
+  [
+   10.0,
+   "Y la eficacia, las pérdidas y las paradas, frente al rival."
+  ],
+  [
+   16.8,
+   "Seis meses gratis para tu primer equipo. Hasta el veintisiete."
+  ]
+ ],
+ "musica": {
+  "bpm": 96,
+  "vol": 0.35,
+  "golpes": [
+   4.4
+  ]
+ },
+ "voz_sid": 29,
+ "vel": 0.95,
+ "clunks": [],
+ "dark_at": 0
+}

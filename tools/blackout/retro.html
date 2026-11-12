@@ -1,0 +1,122 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face{font-family:VT;src:url(../fonts/vt323-latin-400-normal.woff2)}
+@font-face{font-family:VT;src:url(../fonts/vt323-latin-ext-400-normal.woff2);unicode-range:U+0100-024F}
+@font-face{font-family:Px;font-weight:400;src:url(../fonts/silkscreen-latin-400-normal.woff2)}
+@font-face{font-family:Px;font-weight:700;src:url(../fonts/silkscreen-latin-700-normal.woff2)}
+@font-face{font-family:IT;font-weight:500;src:url(../fonts/inter-tight-latin-500-normal.woff2)}
+@font-face{font-family:IT;font-weight:700;src:url(../fonts/inter-tight-latin-700-normal.woff2)}
+@font-face{font-family:IT;font-weight:800;src:url(../fonts/inter-tight-latin-800-normal.woff2)}
+@font-face{font-family:IT;font-weight:900;src:url(../fonts/inter-tight-latin-900-normal.woff2)}
+*{box-sizing:border-box;margin:0}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#000}
+#s{position:absolute;inset:0;overflow:hidden;font-family:IT;color:#fff;background:#000}
+.a{position:absolute}
+canvas{position:absolute;inset:0}
+</style></head><body><div id="s"></div><canvas id="nz" width="270" height="480" style="display:none;width:1080px;height:1920px;image-rendering:pixelated"></canvas>
+<script>
+// Identidad «Tu equipo sigue en 1998»: lo viejo en tele de tubo, VHS y Nokia; ProTeam, limpio (el futuro).
+const S = document.getElementById('s'), NZ = document.getElementById('nz'), nzc = NZ.getContext('2d');
+const cl = (x, a = 0, b = 1) => Math.max(a, Math.min(b, x)), seg = (t, a, b) => cl((t - a) / (b - a));
+const ez = (x) => x * x * (3 - 2 * x), eo = (x) => 1 - Math.pow(1 - x, 3);
+const TVBLUE = '#1f3cff', ORANGE = '#ff5a00', PAPER = '#e9e8e4', INK = '#0b0c10', PTBLUE = '#2f6bff', OSDG = '#3dffa8';
+const Q = new URLSearchParams(location.search), DAYS = Q.get('d') || '15';
+const CH = () => 'CH ' + String(DAYS).padStart(2, '0');
+function T(s, o = {}) { const a = o.a ?? 1; if (a <= 0) return '';
+  return `<div class="a" style="left:${o.x ?? 90}px;top:${(o.y ?? 0) + (o.dy ?? 0)}px;width:${o.w ?? 900}px;font-family:${o.font ?? 'IT'};font-size:${o.size ?? 80}px;font-weight:${o.weight ?? 900};color:${o.color ?? '#fff'};text-align:${o.align ?? 'left'};letter-spacing:${o.ls ?? '-.035em'};line-height:${o.lh ?? .95};opacity:${a};${o.shadow ? 'text-shadow:' + o.shadow : ''};${o.extra ?? ''}">${s}</div>`; }
+// texto que aparece de golpe, como en un rótulo de tele (corte seco, sin fundidos)
+const CUT = (t, t0, t1, s, o) => (t >= t0 && t < t1) ? T(s, o) : '';
+// pantalla azul de VHS con OSD
+function BLUE(t, o = {}) { let h = `<div class="a" style="inset:0;background:radial-gradient(90% 70% at 45% 40%,#3150ff 0%,${TVBLUE} 55%,#1328c8 100%)"></div>`;
+  h += T(o.ch ?? CH(), { x: 100, y: 150, size: 88, font: 'VT', weight: 400, color: OSDG, ls: '.02em', shadow: '0 0 12px rgba(61,255,168,.7)' });
+  h += T(o.mode ?? 'PLAY ▶', { x: 580, w: 400, align: 'right', y: 150, size: 70, font: 'VT', weight: 400, ls: '.04em', shadow: '0 0 10px rgba(255,255,255,.6)' });
+  const tc = 12 + t, mm = Math.floor(tc / 60), ss = Math.floor(tc % 60), ff = Math.floor((tc % 1) * 25);
+  h += T(`SP ${String(mm).padStart(2, '0')}:${String(ss).padStart(2, '0')}:${String(ff).padStart(2, '0')}`, { x: 100, y: 1700, size: 62, font: 'VT', weight: 400, ls: '.04em', shadow: '0 0 10px rgba(255,255,255,.5)' });
+  return h; }
+const BIG = (s, o = {}) => T(s, { x: 110, y: 640, w: 900, size: 150, lh: .9, shadow: '0 0 18px rgba(255,255,255,.55),0 0 50px rgba(160,190,255,.45)', ...o });
+// pantalla de Nokia (naranja)
+function NOKIA(inner, o = {}) { const top = o.y ?? 360, hh = o.h ?? 1120;
+  return `<div class="a" style="inset:0;background:#000"></div>
+  <div class="a" style="left:70px;top:${top}px;width:940px;height:${hh}px;background:${ORANGE};border-radius:64px/90px;box-shadow:inset 0 0 120px rgba(120,30,0,.45)">
+    <div class="a" style="left:46px;top:34px;font-family:Px;font-weight:700;font-size:44px;color:#140600">▂▄▆█ ✉</div>
+    <div class="a" style="right:46px;top:34px;font-family:Px;font-weight:700;font-size:44px;color:#140600">${o.hora ?? '23:40'} ▮▮▮</div>
+    ${inner}
+    <div class="a" style="left:46px;bottom:34px;font-family:Px;font-weight:700;font-size:42px;color:#140600">Menú</div>
+    <div class="a" style="right:46px;bottom:34px;font-family:Px;font-weight:700;font-size:42px;color:#140600">Atrás</div>
+  </div>`; }
+const PXT = (s, y, size = 64, o = {}) => `<div class="a" style="left:40px;right:40px;top:${y}px;text-align:center;font-family:Px;font-weight:700;font-size:${size}px;line-height:1.15;color:#140600;${o.extra ?? ''}">${s}</div>`;
+// ventana de Windows 95 con una hoja de cálculo
+function WIN95(t, o = {}) { const rows = ['Pau', 'Nico', 'Marc', 'Leo', 'Iker', 'Hugo', 'Dani', 'Álex', 'Raúl'], marks = ['SÍ', '?', 'NO', '??', 'SÍ', '#¡REF!', '?', 'NO SÉ'];
+  let g = '';
+  ['', 'A', 'B', 'C', 'D', 'E'].forEach((c, i) => g += `<div style="position:absolute;left:${i * 150}px;top:0;width:150px;height:56px;background:#c0c0c0;border:2px solid;border-color:#fff #808080 #808080 #fff;font-family:VT;font-size:38px;color:#000;display:flex;align-items:center;justify-content:center">${c}</div>`);
+  rows.forEach((r, j) => { g += `<div style="position:absolute;left:0;top:${56 + j * 62}px;width:150px;height:62px;background:#c0c0c0;border:2px solid;border-color:#fff #808080 #808080 #fff;font-family:VT;font-size:38px;color:#000;display:flex;align-items:center;justify-content:center">${j + 1}</div>`;
+    for (let i = 1; i < 6; i++) { const v = i === 1 ? r : marks[(i * 3 + j * 5) % 8]; g += `<div style="position:absolute;left:${i * 150}px;top:${56 + j * 62}px;width:150px;height:62px;background:#fff;border-right:1px solid #c0c0c0;border-bottom:1px solid #c0c0c0;font-family:VT;font-size:40px;color:${v.startsWith('#') ? '#c00' : '#000'};display:flex;align-items:center;padding-left:12px">${v}</div>`; } });
+  let h = `<div class="a" style="inset:0;background:#008080"></div>
+  <div class="a" style="left:60px;top:300px;width:960px;height:1000px;background:#c0c0c0;border:4px solid;border-color:#fff #404040 #404040 #fff">
+    <div style="position:absolute;left:6px;right:6px;top:6px;height:64px;background:linear-gradient(90deg,#000080,#1084d0);color:#fff;font-family:Px;font-weight:700;font-size:30px;display:flex;align-items:center;padding-left:18px">CONVOCATORIA_FINAL_v3(2).XLS</div>
+    <div style="position:absolute;left:24px;top:110px;width:910px;height:870px;overflow:hidden;background:#fff">${g}</div></div>`;
+  if (o.dialog) h += `<div class="a" style="left:170px;top:${o.dy ?? 760}px;width:740px;height:330px;background:#c0c0c0;border:4px solid;border-color:#fff #404040 #404040 #fff;box-shadow:12px 12px 0 rgba(0,0,0,.4)">
+    <div style="position:absolute;left:6px;right:6px;top:6px;height:58px;background:linear-gradient(90deg,#000080,#1084d0);color:#fff;font-family:Px;font-weight:700;font-size:28px;display:flex;align-items:center;padding-left:16px">Excel</div>
+    <div style="position:absolute;left:40px;top:100px;font-family:VT;font-size:56px;color:#000;line-height:1.05">${o.dialog}</div>
+    <div style="position:absolute;left:290px;bottom:30px;width:170px;height:64px;border:3px solid;border-color:#fff #404040 #404040 #fff;font-family:VT;font-size:44px;color:#000;display:flex;align-items:center;justify-content:center">Aceptar</div></div>`;
+  return h; }
+// ruido de canal sin señal
+function STATIC(seed) { NZ.style.display = 'block'; const d = nzc.createImageData(270, 480); let s = seed * 9301 + 49297;
+  for (let i = 0; i < d.data.length; i += 4) { s = (s * 16807) % 2147483647; const v = s % 255; d.data[i] = d.data[i + 1] = d.data[i + 2] = v; d.data[i + 3] = 255; } nzc.putImageData(d, 0, 0); return ''; }
+// el futuro: limpio, claro, con la app de verdad
+function PHONE(img, o = {}) { const w = o.w ?? 560, h = w * 2410 / 1112 * (o.crop ?? 1);
+  return `<div class="a" style="left:${o.x ?? (1080 - w) / 2}px;top:${o.y ?? 300}px;width:${w}px;height:${h}px;border-radius:60px;background:#0b0d11;border:10px solid #0b0d11;box-shadow:0 40px 90px rgba(10,20,60,.28);overflow:hidden;transform:rotate(${o.rot ?? 0}deg) scale(${o.s ?? 1})">
+    <img src="../app/${img}.jpg" style="position:absolute;left:0;top:${-(w * 2410 / 1112 - h) * (o.scroll ?? 0)}px;width:100%;border-radius:48px"></div>`; }
+const FUT = () => `<div class="a" style="inset:0;background:${PAPER}"></div>`;
+const LOGO = (x, y, col = INK, size = 46) => `<div class="a" style="left:${x}px;top:${y}px;display:flex;align-items:center;font-family:IT;font-weight:800;font-size:${size}px;letter-spacing:-.03em;color:${col}"><img src="../proteam-mark.webp" style="width:${size * 1.3}px;height:${size * 1.3}px;margin-right:14px">ProTeam</div>`;
+// cierre: oferta en la tele azul
+function CIERRE(t, t0) { if (t < t0) return ''; const u = t - t0; let h = BLUE(t, { mode: (Math.floor(u * 2) % 2 ? 'REC ●' : 'REC ○') }); h += `<div class="a" style="inset:0;transform:scale(${1 + u * .012});transform-origin:30% 45%">`;
+  const d = DAYS === '0' ? 'ÚLTIMO DÍA' : DAYS === '1' ? 'QUEDA 1 DÍA' : `QUEDAN ${DAYS} DÍAS`;
+  h += CUT(u, 0, 99, d, { x: 110, y: 420, size: 64, font: 'VT', weight: 400, ls: '.06em', color: OSDG, shadow: '0 0 12px rgba(61,255,168,.7)' });
+  h += CUT(u, .15, 99, '6 MESES<br>GRATIS.', { x: 110, y: 560, size: 190, lh: .86, shadow: '0 0 18px rgba(255,255,255,.55),0 0 60px rgba(160,190,255,.45)' });
+  h += CUT(u, .7, 99, 'PARA TU PRIMER EQUIPO.<br>SOLO HASTA EL 27 · 23:59.', { x: 114, y: 960, size: 54, weight: 800, lh: 1.1, ls: '-.01em', shadow: '0 0 12px rgba(255,255,255,.5)' });
+  h += CUT(u, 1.1, 99, 'PRO-TEAM.APP' + (Math.floor(u * 2.5) % 2 ? '_' : '&nbsp;'), { x: 114, y: 1460, size: 84, font: 'VT', weight: 400, ls: '.08em', shadow: '0 0 12px rgba(255,255,255,.6)' });
+  return h + '</div>'; }
+const R = {}, CRT = {};
+
+// ── r01 · Canal 15: «Tu equipo sigue en 1998» (lanzamiento, voz) ──
+R.r01 = { dur: 23.5, render(t) { NZ.style.display = 'none'; let h = '';
+  if (t < 1.0) { STATIC(Math.floor(t * 30)); return T(CH(), { x: 100, y: 150, size: 88, font: 'VT', weight: 400, color: OSDG, ls: '.02em' }); }
+  if (t < 4.2) { h += BLUE(t); h += CUT(t, 1.05, 4.2, 'TU EQUIPO', { y: 560, size: 150, x: 110, shadow: '0 0 18px rgba(255,255,255,.55)' }); h += CUT(t, 1.6, 4.2, 'SIGUE EN', { y: 715, size: 150, x: 110, shadow: '0 0 18px rgba(255,255,255,.55)' }); h += CUT(t, 2.3, 4.2, '1998.', { y: 875, size: 300, x: 100, lh: .85, shadow: '0 0 24px rgba(255,255,255,.6),0 0 70px rgba(160,190,255,.5)' }); return h; }
+  if (t < 8.2) { const n = Math.min(47, Math.floor((t - 4.2) * 30) + 1);
+    return NOKIA(PXT(`${n} MENSAJES<br>NUEVOS`, 300, 78) + (t > 5.8 ? PXT('¿QUIÉN VIENE<br>EL SÁBADO?', 620, 66) : '') + (t > 7.0 ? PXT('¿¿??', 860, 66) : '')); }
+  if (t < 10.3) return WIN95(t, { dialog: t > 9.0 ? 'El archivo no responde.<br>¿Quién tiene la última<br>versión?' : null });
+  if (t < 12.8) { h += BLUE(t, { mode: 'PAUSA ❚❚' }); h += CUT(t, 10.35, 12.8, 'ESTO NO ES<br>ENTRENAR.', { y: 600, size: 150, x: 110, lh: 1.0, shadow: '0 0 18px rgba(255,255,255,.55)' }); h += CUT(t, 11.5, 12.8, 'ES SOBREVIVIR.', { y: 940, size: 110, x: 112, color: '#b9c6ff', shadow: '0 0 18px rgba(255,255,255,.45)' }); return h; }
+  if (t < 13.3) { // apagado de tele: la imagen se colapsa en una línea
+    const k = seg(t, 12.8, 13.25); return `<div class="a" style="inset:0;background:#000"></div><div class="a" style="left:${540 - 540 * (1 - k * .9)}px;width:${1080 * (1 - k * .9)}px;top:${960 - 960 * (1 - k) - 3}px;height:${Math.max(6, 1920 * (1 - k))}px;background:#fff;box-shadow:0 0 60px #fff"></div>`; }
+  if (t < 17.0) { h += FUT(); const p = eo(seg(t, 13.3, 14.0));
+    h += T('ProTeam.', { x: 90, y: 170, size: 130, color: INK, a: 1 });
+    h += T('El futuro, ya.', { x: 92, y: 300, size: 96, weight: 800, color: PTBLUE, a: seg(t, 13.9, 14.1) });
+    h += PHONE(['mo-week', 'fA', 'reg-1', 'res-0'][Math.min(3, Math.floor((t - 13.3) / .95))], { y: 520 + (1 - p) * 500, w: 560, crop: .58, scroll: .1 });
+    h += T('PLANIFICACIÓN · PARTIDOS · CARGA', { x: 90, y: 1780, size: 30, font: 'IT', weight: 700, color: '#5b6070', ls: '.12em', a: seg(t, 14.3, 14.6) });
+    return h; }
+  return CIERRE(t, 17.0); } };
+CRT.r01 = (t) => t < 12.8 ? 1 : t < 13.3 ? .8 : t < 17.0 ? 0 : .75;
+
+// ── Story diaria de cuenta atrás: el canal es el número de días ──
+const FRASES = { 15: 'TU EQUIPO<br>SIGUE EN<br>1998.', 14: 'TU PIZARRA<br>NO GUARDA<br>NADA.', 13: 'UN EXCEL<br>NO ES<br>UN PLAN.', 12: 'UN SILBATO<br>NO LLEVA<br>UN EQUIPO.',
+  11: '47 AUDIOS<br>NO SON UNA<br>CONVOCATORIA.', 10: 'DEJA DE<br>ENTRENAR<br>COMO EN<br>LOS 90.', 9: 'TU LIBRETA<br>NO VIO EL<br>PARTIDO.', 8: '¿CUÁNDO SE<br>ROMPIÓ?<br>NI IDEA.',
+  7: 'LA SEMANA<br>NO SE<br>PLANIFICA<br>SOLA.', 6: '¿CUÁNTO<br>HA JUGADO?<br>¿SEGURO?', 5: 'TU DOMINGO<br>NO ES DEL<br>EXCEL.', 4: '6 MESES.<br>UNA<br>TEMPORADA.',
+  3: 'REBOBINA.<br>O AVANZA.', 2: 'SIN TARJETA.<br>SIN<br>EXCUSAS.', 1: 'MAÑANA SE<br>CORTA LA<br>SEÑAL.', 0: 'HOY SE<br>CORTA LA<br>SEÑAL.' };
+R.story = { dur: 1, render(t) { let h = BLUE(3.4, { mode: DAYS === '0' ? 'REC ●' : 'PLAY ▶' });
+  const d = DAYS === '0' ? 'ÚLTIMO DÍA · HASTA LAS 23:59' : DAYS === '1' ? 'QUEDA 1 DÍA' : `QUEDAN ${DAYS} DÍAS`;
+  h += T(d, { x: 110, y: 330, size: 64, font: 'VT', weight: 400, ls: '.06em', color: OSDG, shadow: '0 0 12px rgba(61,255,168,.7)' });
+  const fr = FRASES[+DAYS] || '', lw = Math.max(...fr.split('<br>').map((x) => x.length)); h += T(fr, { x: 110, y: 470, size: Math.min(132, Math.floor(880 / (.66 * lw))), lh: .92, shadow: '0 0 18px rgba(255,255,255,.55),0 0 60px rgba(160,190,255,.45)' });
+  h += T('6 MESES GRATIS<br>PARA TU PRIMER EQUIPO.', { x: 114, y: 1230, size: 60, weight: 900, lh: 1.02, ls: '-.02em', shadow: '0 0 12px rgba(255,255,255,.5)' });
+  h += T('PRO-TEAM.APP', { x: 114, y: 1420, size: 78, font: 'VT', weight: 400, ls: '.08em', shadow: '0 0 12px rgba(255,255,255,.6)' });
+  return h; } };
+CRT.story = () => 1;
+
+window.render = (id, t) => { NZ.style.display = 'none'; S.innerHTML = R[id].render(t); };
+window.crtAmount = (id, t) => (CRT[id] ? CRT[id](t) : 1);
+window.READY = false;
+Promise.all([document.fonts.load('400 80px VT'), document.fonts.load('700 40px Px'), document.fonts.load('900 80px IT'), document.fonts.load('800 80px IT'), document.fonts.load('700 30px IT'),
+  ...['mo-week', 'fA', 'reg-1', 'res-0', 'mo-home', 'mo-plan', 'mo-cal', 'grid-0', 'reg-0', 'reg-2', 'reg-3', 'reg-4', 'cro-0', 'fF'].map((n) => { const i = new Image(); i.src = '../app/' + n + '.jpg'; return i.decode().catch(() => 0); }),
+  (() => { const i = new Image(); i.src = '../proteam-mark.webp'; return i.decode().catch(() => 0); })()]).then(() => { window.READY = true; });
+</script></body></html>

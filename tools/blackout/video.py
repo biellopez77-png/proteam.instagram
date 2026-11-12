@@ -26,6 +26,8 @@ def cierre(u):
     a = min(1, u / .5)
     big = font('manrope-latin-800-normal', 96); ser = font('instrument-serif-latin-400-italic', 64); mono = font('ibm-plex-mono-latin-500-normal', 30)
     c = lambda v: tuple(int(x * a) for x in v)
+    dd = spec.get('d')
+    if dd is not None: d.text((92, 610), {'0': 'HOY, HASTA LAS 23:59', '1': 'QUEDA 1 DÍA'}.get(str(dd), f'QUEDAN {dd} DÍAS'), font=mono, fill=c((140, 148, 162)))
     d.text((90, 700), 'Apaga el caos.', font=big, fill=c((244, 246, 250)))
     d.text((90, 810), 'Enciende tu equipo.', font=big, fill=c((120, 170, 255)))
     if u > .8:

@@ -1,0 +1,54 @@
+{
+ "escena": "s=silbato&anim=1",
+ "d": "12",
+ "dur": 18,
+ "cierre_at": 12.4,
+ "clunks": [],
+ "dark_at": 0,
+ "lineas": [
+  [
+   0.6,
+   "Para entrenar, te basta con un silbato."
+  ],
+  [
+   3.6,
+   "Para llevar un equipo, no."
+  ],
+  [
+   6.0,
+   "La semana. La convocatoria. Los minutos. La carga."
+  ],
+  [
+   10.9,
+   "Todo eso, en ProTim."
+  ],
+  [
+   12.9,
+   "Seis meses gratis para tu primer equipo. Hasta el veintisiete."
+  ]
+ ],
+ "subs": [
+  [
+   0.6,
+   3.4,
+   "Para entrenar, te basta con un silbato."
+  ],
+  [
+   3.6,
+   5.8,
+   "Para llevar un equipo, no."
+  ],
+  [
+   6.0,
+   9.8,
+   "La semana. La convocatoria. Los minutos. La carga."
+  ],
+  [
+   10.9,
+   12.3,
+   "Todo eso, en ProTeam."
+  ]
+ ],
+ "voz_sid": 29,
+ "vel": 0.95
+}

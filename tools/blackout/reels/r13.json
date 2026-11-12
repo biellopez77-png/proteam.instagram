@@ -1,0 +1,27 @@
+{
+ "escena": "s=marcador&d=3",
+ "d": "3",
+ "dur": 13.5,
+ "cierre_at": 8.6,
+ "clunks": [
+  1.6,
+  2.5,
+  3.4
+ ],
+ "dark_at": 3.4,
+ "lineas": [],
+ "subs": [
+  [
+   4.2,
+   6.2,
+   "Tres días."
+  ],
+  [
+   6.3,
+   8.4,
+   "El 27 se va la luz."
+  ]
+ ],
+ "voz_sid": 29,
+ "vel": 0.95
+}

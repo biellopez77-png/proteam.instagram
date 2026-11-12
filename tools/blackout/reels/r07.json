@@ -1,0 +1,47 @@
+{
+ "mg": "r07",
+ "d": "9",
+ "dur": 21.5,
+ "lineas": [
+  [
+   0.3,
+   "Minuto veintiuno."
+  ],
+  [
+   2.0,
+   "Con ProTim registras el partido en directo."
+  ],
+  [
+   5.0,
+   "Tocas al jugador y la acción."
+  ],
+  [
+   7.2,
+   "Desde dónde tira."
+  ],
+  [
+   8.8,
+   "Dónde va."
+  ],
+  [
+   10.8,
+   "Y si es gol o parada."
+  ],
+  [
+   13.2,
+   "Al acabar, la crónica del partido ya está hecha."
+  ],
+  [
+   16.7,
+   "Seis meses gratis para tu primer equipo. Hasta el veintisiete."
+  ]
+ ],
+ "musica": {
+  "bpm": 100,
+  "vol": 0.35
+ },
+ "voz_sid": 29,
+ "vel": 0.95,
+ "clunks": [],
+ "dark_at": 0
+}

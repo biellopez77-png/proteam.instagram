@@ -1708,23 +1708,23 @@
   "when": "2026-11-12T13:30:00+01:00",
   "kind": "reel",
   "files": [
-   "reels/bf01-se-va-la-luz.mp4"
+   "reels/bf01-canal-15.mp4"
   ],
-  "cover": "covers/bf01-se-va-la-luz.jpg",
+  "cover": "covers/bf01-canal-15.jpg",
   "status": "pending",
   "campana": "blackout",
-  "caption": "Quedan 15 días. El 27 se va la luz. 🌑\nY con ella, los Excels, los audios de WhatsApp y el caos del lunes.\nBlackout Friday: crea tu primer equipo en ProTeam antes del 27 de noviembre a las 23:59 y lo usas 6 meses gratis. Sin tarjeta.\nPlanificación de la semana, registro de partido en directo, estadística por parciales y control de carga con RPE, en un solo sitio.\n👉 pro-team.app\n#BlackoutFriday #BlackFriday #entrenadores #futbolbase #balonmano",
-  "note": "Blackout Friday · día 1 (15 días) · lanzamiento"
+  "caption": "Tu equipo sigue en 1998. 📼\n47 mensajes para saber quién viene el sábado. Un Excel que ya no abre nadie. Una libreta que no vio el partido.\nEso no es entrenar. Es sobrevivir.\nProTeam: planificación de la semana, convocatoria, registro del partido en directo y control de carga, en una sola app.\nBlack Friday: crea tu primer equipo antes del 27 de noviembre a las 23:59 y tienes 6 meses gratis. Sin tarjeta.\n👉 pro-team.app\n#BlackFriday #entrenadores #futbolbase #baloncesto #balonmano",
+  "note": "Black Friday · CH 15 · lanzamiento (identidad retro «Tu equipo sigue en 1998»)"
  },
  {
   "id": "bf01s",
   "when": "2026-11-12T13:31:00+01:00",
   "kind": "story",
   "files": [
-   "stories/bf-cuenta-15.jpg"
+   "stories/bf-ch-15.jpg"
   ],
   "status": "pending",
   "campana": "blackout",
-  "note": "Blackout Friday · cuenta atrás 15"
+  "note": "Black Friday · Story CH 15"
  }
 ]

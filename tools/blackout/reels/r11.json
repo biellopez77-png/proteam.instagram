@@ -1,0 +1,18 @@
+{
+ "mg": "r11",
+ "d": "5",
+ "dur": 14,
+ "lineas": [],
+ "musica": {
+  "bpm": 110,
+  "vol": 0.7,
+  "golpes": [
+   4.2,
+   8.0
+  ]
+ },
+ "voz_sid": 29,
+ "vel": 0.95,
+ "clunks": [],
+ "dark_at": 0
+}

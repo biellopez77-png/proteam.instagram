@@ -1,0 +1,42 @@
+{
+ "mg": "r10",
+ "d": "6",
+ "dur": 21.5,
+ "lineas": [
+  [
+   0.3,
+   "Cincuenta y dos minutos."
+  ],
+  [
+   2.5,
+   "Por un ocho de esfuerzo."
+  ],
+  [
+   4.2,
+   "Cuatrocientos dieciséis de carga."
+  ],
+  [
+   6.5,
+   "ProTim calcula el RPE y la carga del partido."
+  ],
+  [
+   10.6,
+   "Jugador a jugador, igual que en los entrenos."
+  ],
+  [
+   16.8,
+   "Seis meses gratis para tu primer equipo. Hasta el veintisiete."
+  ]
+ ],
+ "musica": {
+  "bpm": 98,
+  "vol": 0.35,
+  "golpes": [
+   3.1
+  ]
+ },
+ "voz_sid": 29,
+ "vel": 0.95,
+ "clunks": [],
+ "dark_at": 0
+}

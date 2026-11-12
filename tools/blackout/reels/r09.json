@@ -1,0 +1,35 @@
+{
+ "mg": "r09",
+ "d": "7",
+ "dur": 21.5,
+ "lineas": [
+  [
+   0.3,
+   "Domingo, diez y diez de la noche. La semana, sin hacer."
+  ],
+  [
+   4.5,
+   "En ProTim planificas el microciclo."
+  ],
+  [
+   8.4,
+   "Ves el volumen y los días de trabajo."
+  ],
+  [
+   12.6,
+   "Y todo queda en el calendario del equipo."
+  ],
+  [
+   16.8,
+   "Seis meses gratis para tu primer equipo. Hasta el veintisiete."
+  ]
+ ],
+ "musica": {
+  "bpm": 90,
+  "vol": 0.35
+ },
+ "voz_sid": 29,
+ "vel": 0.95,
+ "clunks": [],
+ "dark_at": 0
+}
