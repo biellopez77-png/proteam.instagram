@@ -1,0 +1,171 @@
+{
+ "w": 1080,
+ "h": 1920,
+ "d": "0",
+ "dur": 18.91,
+ "on": true,
+ "vel": 1.0,
+ "cut": 6.89,
+ "trans": 1.9,
+ "pose": {
+  "ry0": -0.24,
+  "y": -0.014,
+  "far": 0.47
+ },
+ "dev": [
+  [
+   0,
+   "tvred",
+   0.8
+  ],
+  [
+   3.41,
+   "nokia",
+   0.8
+  ]
+ ],
+ "layers": [
+  {
+   "t0": 0.3,
+   "t1": 3.71,
+   "type": "osd",
+   "ch": "CH 00",
+   "mode": "REC ●",
+   "blink": true
+  },
+  {
+   "t0": 0.5,
+   "t1": 3.71,
+   "type": "text",
+   "valign": "flex-start",
+   "align": "left",
+   "pad": "300px 90px",
+   "gap": 16,
+   "lines": [
+    {
+     "text": "HOY",
+     "size": 150,
+     "cps": 16,
+     "at": 0.1
+    },
+    {
+     "text": "SE CORTA",
+     "size": 150,
+     "cps": 16,
+     "at": 0.47
+    },
+    {
+     "text": "LA SEÑAL.",
+     "size": 150,
+     "cps": 16,
+     "at": 1.15
+    }
+   ]
+  },
+  {
+   "t0": 3.31,
+   "t1": 7.09,
+   "type": "nokia",
+   "hora": "23:59"
+  },
+  {
+   "t0": 3.51,
+   "t1": 7.09,
+   "type": "text",
+   "valign": "center",
+   "align": "center",
+   "pad": "300px 90px",
+   "gap": 16,
+   "lines": [
+    {
+     "text": "3 LLAMADAS",
+     "font": "Px",
+     "size": 92,
+     "cps": 20,
+     "at": 0.1
+    },
+    {
+     "text": "PERDIDAS",
+     "font": "Px",
+     "size": 92,
+     "cps": 20,
+     "at": 0.78
+    },
+    {
+     "text": " ",
+     "size": 34,
+     "at": 1.36
+    },
+    {
+     "text": "TU FUTURO",
+     "font": "Px",
+     "size": 62,
+     "cps": 24,
+     "at": 1.36
+    }
+   ]
+  }
+ ],
+ "app": [
+  [
+   6.89,
+   "mo-home",
+   0,
+   0.1
+  ],
+  [
+   11.95,
+   "res-0",
+   0.1,
+   0.3
+  ]
+ ],
+ "words": [
+  [
+   8.29,
+   11.95,
+   "<div class=\"a\" style=\"left:0;right:0;top:150px;text-align:center;font-family:IT;font-weight:900;font-size:112px;letter-spacing:-.04em;color:#fff;line-height:1\">Contesta.</div>"
+  ],
+  [
+   12.05,
+   14.25,
+   "<div class=\"a\" style=\"left:0;right:0;top:150px;text-align:center;font-family:IT;font-weight:900;font-size:112px;letter-spacing:-.04em;color:#fff;line-height:1\">Hoy.</div>"
+  ],
+  [
+   14.35,
+   18.85,
+   "<div class=\"a\" style=\"left:0;right:0;top:150px;text-align:center;font-family:IT;font-weight:900;font-size:112px;letter-spacing:-.04em;color:#fff;line-height:1\">Hasta las 23:59.</div><div class=\"a\" style=\"left:0;right:0;top:285px;text-align:center;font-family:VT;font-size:54px;letter-spacing:.06em;color:#3dffa8\">6 MESES GRATIS · PRO-TEAM.APP</div>"
+  ]
+ ],
+ "audio": {
+  "cut": 6.89,
+  "old": [
+   "Honky-Tonk Villain.mp3",
+   40
+  ],
+  "new": [
+   "Thugs.mp3",
+   138.5
+  ],
+  "old_vol": 0.5,
+  "new_vol": 0.75
+ },
+ "lineas": [
+  [
+   0.8,
+   "Hoy, a medianoche, se corta la señal."
+  ],
+  [
+   3.81,
+   "Tienes tres llamadas perdidas de tu futuro."
+  ],
+  [
+   8.39,
+   "Contesta. Crea tu primer equipo en ProTim."
+  ],
+  [
+   14.45,
+   "Seis meses gratis. Hasta las doce de esta noche."
+  ]
+ ]
+}

@@ -1,0 +1,172 @@
+{
+ "w": 1080,
+ "h": 1920,
+ "d": "5",
+ "dur": 17.74,
+ "on": true,
+ "vel": 1.0,
+ "cut": 5.56,
+ "trans": 1.9,
+ "pose": {
+  "ry0": -0.24,
+  "y": -0.014,
+  "far": 0.47
+ },
+ "dev": [
+  [
+   0,
+   "tvblack",
+   0.8
+  ],
+  [
+   2.67,
+   "tvred",
+   0.8
+  ]
+ ],
+ "layers": [
+  {
+   "t0": 0.5,
+   "t1": 2.98,
+   "type": "text",
+   "valign": "flex-start",
+   "align": "left",
+   "pad": "300px 90px",
+   "gap": 16,
+   "lines": [
+    {
+     "text": "CARGANDO",
+     "font": "VT",
+     "size": 80,
+     "cps": 30,
+     "at": 0.1
+    },
+    {
+     "text": "TEMPORADA 26/27",
+     "font": "VT",
+     "size": 80,
+     "cps": 30,
+     "at": 0.55
+    }
+   ]
+  },
+  {
+   "t0": 0.5,
+   "t1": 2.98,
+   "type": "bar",
+   "at": 0.8,
+   "len": 1.2,
+   "bottom": 330
+  },
+  {
+   "t0": 2.57,
+   "t1": 5.76,
+   "type": "osd",
+   "ch": "CH 05",
+   "mode": "ERROR",
+   "blink": false
+  },
+  {
+   "t0": 2.77,
+   "t1": 5.76,
+   "type": "text",
+   "valign": "flex-start",
+   "align": "left",
+   "pad": "300px 90px",
+   "gap": 16,
+   "lines": [
+    {
+     "text": "ERROR:",
+     "size": 150,
+     "cps": 16,
+     "at": 0.1
+    },
+    {
+     "text": " ",
+     "size": 34,
+     "at": 0.65
+    },
+    {
+     "text": "TEMPORADA NO",
+     "font": "VT",
+     "size": 80,
+     "cps": 30,
+     "at": 0.65
+    },
+    {
+     "text": "PLANIFICADA",
+     "font": "VT",
+     "size": 80,
+     "cps": 30,
+     "at": 1.23
+    }
+   ]
+  }
+ ],
+ "app": [
+  [
+   5.56,
+   "mo-cal",
+   0.05,
+   0.2
+  ],
+  [
+   9.84,
+   "mo-week",
+   0.05,
+   0.2
+  ]
+ ],
+ "words": [
+  [
+   6.96,
+   9.84,
+   "<div class=\"a\" style=\"left:0;right:0;top:150px;text-align:center;font-family:IT;font-weight:900;font-size:112px;letter-spacing:-.04em;color:#fff;line-height:1\">Mes a mes.</div>"
+  ],
+  [
+   9.94,
+   12.14,
+   "<div class=\"a\" style=\"left:0;right:0;top:150px;text-align:center;font-family:IT;font-weight:900;font-size:112px;letter-spacing:-.04em;color:#fff;line-height:1\">Semana a semana.</div>"
+  ],
+  [
+   12.24,
+   17.64,
+   "<div class=\"a\" style=\"left:0;right:0;top:150px;text-align:center;font-family:IT;font-weight:900;font-size:112px;letter-spacing:-.04em;color:#fff;line-height:1\">Quedan 5 días.</div><div class=\"a\" style=\"left:0;right:0;top:285px;text-align:center;font-family:VT;font-size:54px;letter-spacing:.06em;color:#3dffa8\">6 MESES GRATIS · PRO-TEAM.APP</div>"
+  ]
+ ],
+ "audio": {
+  "cut": 5.56,
+  "old": [
+   "Surreptitious.mp3",
+   30
+  ],
+  "new": [
+   "Thugs.mp3",
+   138.5
+  ],
+  "old_vol": 0.5,
+  "new_vol": 0.75
+ },
+ "lineas": [
+  [
+   0.8,
+   "Cargando temporada."
+  ],
+  [
+   3.07,
+   "Error: temporada no planificada."
+  ],
+  [
+   7.06,
+   "Con ProTim, la temporada mes a mes."
+  ],
+  [
+   10.04,
+   "Y semana a semana."
+  ],
+  [
+   12.34,
+   "Seis meses gratis para tu primer equipo. Solo hasta el veintisiete."
+  ]
+ ]
+}

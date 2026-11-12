@@ -1,0 +1,180 @@
+{
+ "w": 1080,
+ "h": 1920,
+ "d": "3",
+ "dur": 22.87,
+ "on": true,
+ "vel": 1.0,
+ "cut": 9.34,
+ "trans": 1.9,
+ "pose": {
+  "ry0": -0.24,
+  "y": -0.014,
+  "far": 0.47
+ },
+ "dev": [
+  [
+   0,
+   "tv",
+   0.8
+  ],
+  [
+   6.08,
+   "tv",
+   0.8
+  ]
+ ],
+ "layers": [
+  {
+   "t0": 0.3,
+   "t1": 6.38,
+   "type": "osd",
+   "ch": "CH 03",
+   "mode": "MÉTODOS DE 1995",
+   "blink": false
+  },
+  {
+   "t0": 0.5,
+   "t1": 6.38,
+   "type": "text",
+   "valign": "flex-start",
+   "align": "left",
+   "pad": "300px 90px",
+   "gap": 16,
+   "lines": [
+    {
+     "text": "N.º 3",
+     "font": "VT",
+     "size": 72,
+     "color": "#3dffa8",
+     "glow": "0 0 10px rgba(61,255,168,.7)",
+     "cps": 30,
+     "at": 0.1
+    },
+    {
+     "text": " ",
+     "size": 34,
+     "at": 0.45
+    },
+    {
+     "text": "LA CARGA",
+     "size": 150,
+     "cps": 16,
+     "at": 0.45
+    },
+    {
+     "text": "A OJO.",
+     "size": 150,
+     "cps": 16,
+     "at": 1.13
+    }
+   ]
+  },
+  {
+   "t0": 5.98,
+   "t1": 9.54,
+   "type": "osd",
+   "ch": "CH 03",
+   "mode": "MÉTODOS DE 1995",
+   "blink": false
+  },
+  {
+   "t0": 6.18,
+   "t1": 9.54,
+   "type": "text",
+   "valign": "flex-start",
+   "align": "left",
+   "pad": "300px 90px",
+   "gap": 16,
+   "lines": [
+    {
+     "text": "«ESTE ESTÁ",
+     "font": "VT",
+     "size": 80,
+     "cps": 30,
+     "at": 0.1
+    },
+    {
+     "text": "CANSADO, SE",
+     "font": "VT",
+     "size": 80,
+     "cps": 30,
+     "at": 0.61
+    },
+    {
+     "text": "LE NOTA EN LA CARA.»",
+     "font": "VT",
+     "size": 80,
+     "cps": 30,
+     "at": 1.16
+    }
+   ]
+  }
+ ],
+ "app": [
+  [
+   9.34,
+   "fF",
+   0,
+   0.15
+  ],
+  [
+   14.37,
+   "mo-tests",
+   0,
+   0.12
+  ]
+ ],
+ "words": [
+  [
+   10.74,
+   14.37,
+   "<div class=\"a\" style=\"left:0;right:0;top:150px;text-align:center;font-family:IT;font-weight:900;font-size:112px;letter-spacing:-.04em;color:#fff;line-height:1\">Minutos × RPE.</div>"
+  ],
+  [
+   14.47,
+   17.27,
+   "<div class=\"a\" style=\"left:0;right:0;top:150px;text-align:center;font-family:IT;font-weight:900;font-size:112px;letter-spacing:-.04em;color:#fff;line-height:1\">Tests físicos.</div>"
+  ],
+  [
+   17.37,
+   22.77,
+   "<div class=\"a\" style=\"left:0;right:0;top:150px;text-align:center;font-family:IT;font-weight:900;font-size:112px;letter-spacing:-.04em;color:#fff;line-height:1\">Quedan 3 días.</div><div class=\"a\" style=\"left:0;right:0;top:285px;text-align:center;font-family:VT;font-size:54px;letter-spacing:.06em;color:#3dffa8\">6 MESES GRATIS · PRO-TEAM.APP</div>"
+  ]
+ ],
+ "audio": {
+  "cut": 9.34,
+  "old": [
+   "Clowns.mp3",
+   60
+  ],
+  "new": [
+   "Unknown.mp3",
+   60
+  ],
+  "old_vol": 0.5,
+  "new_vol": 0.75
+ },
+ "lineas": [
+  [
+   0.8,
+   "Métodos de mil novecientos noventa y cinco. Número tres: la carga a ojo."
+  ],
+  [
+   6.48,
+   "Este está cansado, se le nota en la cara."
+  ],
+  [
+   10.84,
+   "En ProTim, minutos por esfuerzo, jugador a jugador."
+  ],
+  [
+   14.57,
+   "Y los tests físicos, programados."
+  ],
+  [
+   17.47,
+   "Seis meses gratis para tu primer equipo. Solo hasta el veintisiete."
+  ]
+ ]
+}

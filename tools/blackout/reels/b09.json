@@ -1,0 +1,239 @@
+{
+ "w": 1080,
+ "h": 1920,
+ "d": "9",
+ "dur": 25.58,
+ "on": true,
+ "vel": 1.0,
+ "cut": 12.04,
+ "trans": 1.9,
+ "pose": {
+  "ry0": -0.24,
+  "y": -0.014,
+  "far": 0.47
+ },
+ "dev": [
+  [
+   0,
+   "tv",
+   0.8
+  ],
+  [
+   4.37,
+   "tv",
+   0.8
+  ],
+  [
+   7.96,
+   "tvred",
+   0.8
+  ]
+ ],
+ "layers": [
+  {
+   "t0": 0.3,
+   "t1": 4.67,
+   "type": "osd",
+   "ch": "CH 09",
+   "mode": "TEST 1/2",
+   "blink": false
+  },
+  {
+   "t0": 0.5,
+   "t1": 4.67,
+   "type": "text",
+   "valign": "flex-start",
+   "align": "left",
+   "pad": "300px 90px",
+   "gap": 16,
+   "lines": [
+    {
+     "text": "¿APUNTAS",
+     "size": 150,
+     "cps": 16,
+     "at": 0.1
+    },
+    {
+     "text": "LOS GOLES",
+     "size": 150,
+     "cps": 16,
+     "at": 0.78
+    },
+    {
+     "text": "EN UN PAPEL?",
+     "size": 112,
+     "cps": 16,
+     "at": 1.52
+    },
+    {
+     "text": " ",
+     "size": 34,
+     "at": 2.45
+    },
+    {
+     "text": "[SÍ]    NO",
+     "font": "VT",
+     "size": 80,
+     "cps": 30,
+     "at": 2.45
+    }
+   ]
+  },
+  {
+   "t0": 4.27,
+   "t1": 8.26,
+   "type": "osd",
+   "ch": "CH 09",
+   "mode": "TEST 2/2",
+   "blink": false
+  },
+  {
+   "t0": 4.47,
+   "t1": 8.26,
+   "type": "text",
+   "valign": "flex-start",
+   "align": "left",
+   "pad": "300px 90px",
+   "gap": 16,
+   "lines": [
+    {
+     "text": "¿CALCULAS",
+     "size": 150,
+     "cps": 16,
+     "at": 0.1
+    },
+    {
+     "text": "LA CARGA",
+     "size": 150,
+     "cps": 16,
+     "at": 0.84
+    },
+    {
+     "text": "A OJO?",
+     "size": 150,
+     "cps": 16,
+     "at": 1.52
+    },
+    {
+     "text": " ",
+     "size": 34,
+     "at": 2.08
+    },
+    {
+     "text": "[SÍ]    NO",
+     "font": "VT",
+     "size": 80,
+     "cps": 30,
+     "at": 2.08
+    }
+   ]
+  },
+  {
+   "t0": 7.86,
+   "t1": 12.24,
+   "type": "osd",
+   "ch": "CH 09",
+   "mode": "RESULTADO",
+   "blink": false
+  },
+  {
+   "t0": 8.06,
+   "t1": 12.24,
+   "type": "text",
+   "valign": "flex-start",
+   "align": "left",
+   "pad": "300px 90px",
+   "gap": 16,
+   "lines": [
+    {
+     "text": "VERSIÓN",
+     "size": 150,
+     "cps": 16,
+     "at": 0.1
+    },
+    {
+     "text": "1995",
+     "size": 150,
+     "cps": 16,
+     "at": 0.72
+    },
+    {
+     "text": "DETECTADA.",
+     "size": 128,
+     "cps": 16,
+     "at": 1.15
+    }
+   ]
+  }
+ ],
+ "app": [
+  [
+   12.04,
+   "reg-2",
+   0.4,
+   0.5
+  ],
+  [
+   16.7,
+   "fF",
+   0,
+   0.15
+  ]
+ ],
+ "words": [
+  [
+   13.44,
+   16.7,
+   "<div class=\"a\" style=\"left:0;right:0;top:150px;text-align:center;font-family:IT;font-weight:900;font-size:112px;letter-spacing:-.04em;color:#fff;line-height:1\">Cada tiro.</div>"
+  ],
+  [
+   16.8,
+   19.98,
+   "<div class=\"a\" style=\"left:0;right:0;top:150px;text-align:center;font-family:IT;font-weight:900;font-size:112px;letter-spacing:-.04em;color:#fff;line-height:1\">Cada carga.</div>"
+  ],
+  [
+   20.08,
+   25.48,
+   "<div class=\"a\" style=\"left:0;right:0;top:150px;text-align:center;font-family:IT;font-weight:900;font-size:112px;letter-spacing:-.04em;color:#fff;line-height:1\">6 meses gratis.</div><div class=\"a\" style=\"left:0;right:0;top:285px;text-align:center;font-family:VT;font-size:54px;letter-spacing:.06em;color:#3dffa8\">SOLO HASTA EL 27 · PRO-TEAM.APP</div>"
+  ]
+ ],
+ "audio": {
+  "cut": 12.04,
+  "old": [
+   "Clowns.mp3",
+   0
+  ],
+  "new": [
+   "Unknown.mp3",
+   60
+  ],
+  "old_vol": 0.5,
+  "new_vol": 0.75
+ },
+ "lineas": [
+  [
+   0.8,
+   "Test. ¿Apuntas los goles en un papel?"
+  ],
+  [
+   4.77,
+   "¿Calculas la carga a ojo?"
+  ],
+  [
+   8.36,
+   "Versión mil novecientos noventa y cinco detectada."
+  ],
+  [
+   13.54,
+   "ProTim registra cada tiro y desde dónde."
+  ],
+  [
+   16.9,
+   "Y calcula la carga: minutos por esfuerzo."
+  ],
+  [
+   20.18,
+   "Seis meses gratis para tu primer equipo. Solo hasta el veintisiete."
+  ]
+ ]
+}

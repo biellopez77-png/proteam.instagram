@@ -1,0 +1,78 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face{font-family:VT;src:url(../fonts/vt323-latin-400-normal.woff2)}
+@font-face{font-family:VT;src:url(../fonts/vt323-latin-ext-400-normal.woff2);unicode-range:U+0100-024F}
+@font-face{font-family:Px;font-weight:700;src:url(../fonts/silkscreen-latin-700-normal.woff2)}
+@font-face{font-family:IT;font-weight:800;src:url(../fonts/inter-tight-latin-800-normal.woff2)}
+@font-face{font-family:IT;font-weight:900;src:url(../fonts/inter-tight-latin-900-normal.woff2)}
+*{box-sizing:border-box;margin:0}
+html,body{width:100vw;height:100vh;overflow:hidden;background:#000}
+.a{position:absolute}
+</style></head><body><div id="s" class="a" style="inset:0"></div>
+<script>
+// Una sola pantalla sobre negro que se transforma: tele → Nokia → móvil → portátil. Todo interpolado, nada de cortes.
+const S = document.getElementById('s');
+const cl = (x, a = 0, b = 1) => Math.max(a, Math.min(b, x)), seg = (t, a, b) => cl((t - a) / (b - a));
+const io = (x) => x < .5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2;           // suave
+const spring = (x) => x >= 1 ? 1 : 1 - Math.pow(1 - x, 3) * Math.cos(x * 7.5) ;      // con un pequeño rebote
+const L = (a, b, k) => a + (b - a) * k;
+const hex = (h) => [1, 3, 5].map((i) => parseInt(h.slice(i, i + 2), 16));
+const lc = (a, b, k) => { const x = hex(a), y = hex(b); return `rgb(${x.map((v, i) => Math.round(L(v, y[i], k))).join(',')})`; };
+// aparatos: centro, tamaño, radios (horizontal/vertical), marco, color de fondo de la pantalla, base de portátil
+const VW = innerWidth, VH = innerHeight, FW = VW - 80, FH = VH - 120;
+const DEV = {
+  tv: { cy: VH / 2, w: FW, h: FH, rx: 46, ry: 70, bz: 0, bg: '#1f3cff', base: 0, crt: 1, curve: .16 },
+  tvred: { cy: VH / 2, w: FW, h: FH, rx: 46, ry: 70, bz: 0, bg: '#c8102e', base: 0, crt: 1, curve: .16 },
+  tvblack:{ cy: VH / 2, w: FW, h: FH, rx: 46, ry: 70, bz: 0, bg: '#050506', base: 0, crt: 1, curve: .16 },
+  nokia:  { cy: VH / 2, w: FW, h: FH, rx: 60, ry: 90, bz: 0, bg: '#ff5a00', base: 0, crt: .55, curve: .12 },
+  phone:  { cy: 960, w: 620, h: 1310, rx: 78, ry: 78, bz: 14, bg: '#f4f5f7', base: 0, crt: 0, curve: 0 },
+  laptop: { cy: 880, w: 1000, h: 640, rx: 22, ry: 22, bz: 18, bg: '#05070d', base: 1, crt: 0, curve: 0 },
+};
+function devAt(spec, t) { const D = spec.dev; let i = 0; for (let k = 0; k < D.length; k++) if (t >= D[k][0]) i = k;
+  const [t0, name, tr] = D[i], cur = DEV[name]; if (i === 0) return { ...cur, k: 1, name, prev: name };
+  const prev = DEV[D[i - 1][1]], u = seg(t, t0, t0 + (tr ?? .8)), k = (D[i][3] === 'spring') ? spring(u) : io(u);
+  const o = {}; for (const key of Object.keys(cur)) o[key] = key === 'bg' ? lc(prev.bg, cur.bg, cl(k)) : L(prev[key], cur[key], key === 'crt' || key === 'curve' || key === 'base' ? cl(io(u)) : k);
+  o.name = name; o.prev = D[i - 1][1]; o.k = u; return o; }
+// capas de contenido con fundidos
+const vis = (Ly, t) => { const fi = Ly.fi ?? .35, fo = Ly.fo ?? .35; return Math.min(seg(t, Ly.t0, Ly.t0 + fi), 1 - seg(t, Ly.t1 - fo, Ly.t1)); };
+function textLayer(Ly, t, dev) { const u = t - Ly.t0; let h = `<div class="a" style="inset:0;display:flex;flex-direction:column;justify-content:${Ly.valign ?? 'center'};align-items:${Ly.align === 'center' ? 'center' : 'flex-start'};padding:${Ly.pad ?? '60px 70px'};gap:${Ly.gap ?? 14}px">`;
+  for (const ln of Ly.lines) { const n = Math.floor((u - (ln.at ?? 0)) * (ln.cps ?? 24)); const full = [...ln.text]; const s = n > 0 ? full.slice(0, n).join('') : '';
+    const typing = n > 0 && n < full.length, done = n >= full.length, appear = cl((u - (ln.at ?? 0)) / .25);
+    const fam = ln.font ?? 'IT', size = ln.size ?? 96, col = ln.color ?? (dev.name === 'nokia' ? '#160700' : '#fff');
+    const glow = ln.glow ?? (dev.name === 'nokia' ? 'none' : '0 0 14px rgba(255,255,255,.55),0 0 40px rgba(170,195,255,.35)');
+    const cur = (typing || (ln.cursor && done && Math.floor(t * 2.2) % 2 === 0)) ? (fam === 'IT' ? '▍' : '█') : '';
+    h += `<div style="font-family:${fam};font-weight:${fam === 'IT' ? 900 : 700};font-size:${size}px;line-height:1.02;letter-spacing:${fam === 'IT' ? '-.03em' : '.02em'};color:${col};text-shadow:${glow};opacity:${n > 0 ? appear : 0};transform:translateY(${(1 - appear) * 14}px);white-space:pre;min-height:${size * 1.02}px;text-align:${Ly.align ?? 'left'}">${s}<span style="opacity:.85">${cur}</span></div>`; }
+  return h + '</div>'; }
+function barLayer(Ly, t) { const p = cl((t - Ly.t0 - (Ly.at ?? 0)) / (Ly.len ?? 1.5)); const e = io(p);
+  return `<div class="a" style="left:70px;right:70px;bottom:${Ly.bottom ?? 120}px;height:48px;border:4px solid rgba(255,255,255,.85);box-shadow:0 0 14px rgba(255,255,255,.4)"><div style="position:absolute;left:6px;top:6px;bottom:6px;width:calc(${e * 100}% - 12px);background:repeating-linear-gradient(90deg,#fff 0 34px,transparent 34px 42px);box-shadow:0 0 16px #fff"></div></div>
+    <div class="a" style="right:70px;bottom:${(Ly.bottom ?? 120) + 64}px;font-family:VT;font-size:60px;color:#fff;text-shadow:0 0 10px #fff">${Math.floor(e * 100)}%</div>`; }
+function appLayer(Ly, t, dev) { const u = t - Ly.t0; const imgs = Ly.imgs; let k = 0; imgs.forEach((x, i) => { if (u >= x[0]) k = i; });
+  // cada captura entra deslizándose desde abajo, con su scroll lento
+  let h = ''; for (let i = Math.max(0, k - 1); i <= k; i++) { const [t0, name, s0, s1] = imgs[i]; const inP = i === 0 ? 1 : io(seg(u, t0, t0 + .55)); const nextT = imgs[i + 1] ? imgs[i + 1][0] : 999;
+    const y = i === k ? (1 - inP) * 100 : -io(seg(u, imgs[k][0], imgs[k][0] + .55)) * 30; const sc = L(s0 ?? 0, s1 ?? (s0 ?? 0) + .08, seg(u, t0, nextT));
+    h += `<div class="a" style="inset:0;overflow:hidden;transform:translateY(${y}%);opacity:${i === k ? 1 : 1 - io(seg(u, imgs[k][0], imgs[k][0] + .55)) * .6}"><img src="../app/${name}.jpg" style="position:absolute;left:0;width:100%;top:${-sc * 100}%"></div>`; }
+  return h; }
+function imgLayer(Ly, t) { const u = t - Ly.t0, z = 1 + u * .012; return `<img src="../app/${Ly.src}" class="a" style="left:0;top:0;width:100%;height:100%;object-fit:${Ly.fit ?? 'cover'};transform:scale(${z})">`; }
+function osdLayer(Ly, t) { const tc = 12 + t, mm = Math.floor(tc / 60), ss = Math.floor(tc % 60), ff = Math.floor((tc % 1) * 25); return `<div class="a" style="left:90px;bottom:150px;font-family:VT;font-size:56px;color:#dfe5ff;text-shadow:0 0 10px rgba(255,255,255,.5)">SP ${String(mm).padStart(2, '0')}:${String(ss).padStart(2, '0')}:${String(ff).padStart(2, '0')}</div><div class="a" style="left:90px;top:150px;font-family:VT;font-size:76px;color:#3dffa8;text-shadow:0 0 10px rgba(61,255,168,.7)">${Ly.ch}</div>` + (Ly.mode ? `<div class="a" style="right:90px;top:150px;font-family:VT;font-size:70px;color:#fff;text-shadow:0 0 10px #fff;opacity:${Ly.blink ? (Math.floor(t * 2) % 2 ? 1 : .3) : 1}">${Ly.mode}</div>` : ''); }
+function nokiaBar(Ly, t) { return `<div class="a" style="left:90px;top:150px;font-family:Px;font-weight:700;font-size:56px;color:#160700">▂▄▆█ ✉</div><div class="a" style="right:90px;top:150px;font-family:Px;font-weight:700;font-size:56px;color:#160700">${Ly.hora ?? '23:40'} ▮▮▮</div><div class="a" style="left:90px;bottom:150px;font-family:Px;font-weight:700;font-size:54px;color:#160700">Menú</div><div class="a" style="right:90px;bottom:150px;font-family:Px;font-weight:700;font-size:54px;color:#160700">Atrás</div>`; }
+window.frame = (spec, t) => { const d = devAt(spec, t); const x = VW / 2 - d.w / 2, y = d.cy - d.h / 2;
+  // encendido de tubo al principio y apagado al final
+  const on = spec.on ? io(seg(t, 0, .55)) : 1, off = spec.off ? 1 - io(seg(t, spec.dur - .5, spec.dur)) : 1, pw = Math.min(on, off);
+  const sx = L(1, 1, pw), sy = L(.004, 1, pw);
+  let h = '';
+  if (d.base > .01) h += `<div class="a" style="left:${VW / 2 - d.w * .56}px;top:${y + d.h + d.bz * 2 - 4}px;width:${d.w * 1.12}px;height:34px;border-radius:4px 4px 26px 26px;background:linear-gradient(#2a2b30,#121215);opacity:${d.base};box-shadow:0 20px 50px rgba(0,0,0,.6)"></div>`;
+  h += `<div class="a" style="left:${x - d.bz}px;top:${y - d.bz}px;width:${d.w + d.bz * 2}px;height:${d.h + d.bz * 2}px;border-radius:${d.rx + d.bz}px/${d.ry + d.bz}px;background:#17171a;box-shadow:${d.bz > .5 ? 'inset 0 0 0 2px #2c2c31,0 30px 80px rgba(0,0,0,.7)' : 'none'};transform:scale(${sx},${sy});opacity:${pw > 0 ? 1 : 0}"></div>`;
+  h += `<div class="a" style="left:${x}px;top:${y}px;width:${d.w}px;height:${d.h}px;border-radius:${d.rx}px/${d.ry}px;overflow:hidden;background:${d.bg};transform:scale(${sx},${sy});filter:brightness(${L(4, 1, pw)})">`;
+  if (d.crt > .02) h += `<div class="a" style="inset:0;background:radial-gradient(90% 80% at 40% 38%,rgba(255,255,255,${.14 * d.crt}) 0%,transparent 60%),radial-gradient(120% 100% at 50% 50%,transparent 55%,rgba(0,0,0,${.35 * d.crt}) 100%)"></div>`;
+  for (const Ly of spec.layers) { if (t < Ly.t0 || t > Ly.t1) continue; const a = vis(Ly, t); if (a <= 0) continue;
+    const inner = Ly.type === 'text' ? textLayer(Ly, t, d) : Ly.type === 'bar' ? barLayer(Ly, t) : Ly.type === 'app' ? appLayer(Ly, t, d) : Ly.type === 'img' ? imgLayer(Ly, t) : Ly.type === 'osd' ? osdLayer(Ly, t) : Ly.type === 'nokia' ? nokiaBar(Ly, t) : '';
+    h += `<div class="a" style="inset:0;opacity:${a}">${inner}</div>`; }
+  if (d.name === 'phone' && d.k > .6) h += `<div class="a" style="left:50%;top:16px;width:120px;height:34px;margin-left:-60px;border-radius:20px;background:#000;opacity:${seg(d.k, .6, 1)}"></div>`;
+  h += '</div>'; S.innerHTML = h;
+  return { crt: d.crt * pw, curve: d.curve }; };
+window.READY = false;
+Promise.all([document.fonts.load('400 60px VT'), document.fonts.load('700 40px Px'), document.fonts.load('900 80px IT'),
+  ...['mo-week', 'mo-plan', 'mo-cal', 'mo-home', 'fA', 'grid-0', 'reg-1', 'reg-3', 'reg-4', 'cro-0', 'res-0', 'res-1', 'fF', 'mo-tests', 'mo-routines'].map((n) => { const i = new Image(); i.src = '../app/' + n + '.jpg'; return i.decode().catch(() => 0); }),
+  (() => { const i = new Image(); i.src = '../app/landing-bf.jpg'; return i.decode().catch(() => 0); })()]).then(() => { window.READY = true; });
+</script></body></html>

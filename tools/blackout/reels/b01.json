@@ -1,0 +1,162 @@
+{
+ "w": 1080,
+ "h": 1920,
+ "d": "1",
+ "dur": 17.26,
+ "on": true,
+ "vel": 1.0,
+ "cut": 7.82,
+ "trans": 1.9,
+ "pose": {
+  "ry0": -0.24,
+  "y": -0.014,
+  "far": 0.47
+ },
+ "dev": [
+  [
+   0,
+   "tvred",
+   0.8
+  ],
+  [
+   4.27,
+   "tvred",
+   0.8
+  ]
+ ],
+ "layers": [
+  {
+   "t0": 0.3,
+   "t1": 4.57,
+   "type": "osd",
+   "ch": "CH 01",
+   "mode": "AVISO",
+   "blink": false
+  },
+  {
+   "t0": 0.5,
+   "t1": 4.57,
+   "type": "text",
+   "valign": "flex-start",
+   "align": "left",
+   "pad": "300px 90px",
+   "gap": 16,
+   "lines": [
+    {
+     "text": "EMISIÓN FINAL",
+     "font": "VT",
+     "size": 72,
+     "color": "#3dffa8",
+     "glow": "0 0 10px rgba(61,255,168,.7)",
+     "cps": 30,
+     "at": 0.1
+    },
+    {
+     "text": " ",
+     "size": 34,
+     "at": 0.71
+    },
+    {
+     "text": "MAÑANA",
+     "size": 150,
+     "cps": 16,
+     "at": 0.71
+    },
+    {
+     "text": "23:59.",
+     "size": 150,
+     "cps": 16,
+     "at": 1.27
+    }
+   ]
+  },
+  {
+   "t0": 4.17,
+   "t1": 8.02,
+   "type": "osd",
+   "ch": "CH 01",
+   "mode": "AVISO",
+   "blink": false
+  },
+  {
+   "t0": 4.37,
+   "t1": 8.02,
+   "type": "text",
+   "valign": "flex-start",
+   "align": "left",
+   "pad": "300px 90px",
+   "gap": 16,
+   "lines": [
+    {
+     "text": "Y CON ELLA,",
+     "size": 128,
+     "cps": 16,
+     "at": 0.1
+    },
+    {
+     "text": "LOS 6 MESES",
+     "size": 128,
+     "cps": 16,
+     "at": 0.97
+    },
+    {
+     "text": "GRATIS.",
+     "size": 150,
+     "cps": 16,
+     "at": 1.83
+    }
+   ]
+  }
+ ],
+ "app": [
+  [
+   7.82,
+   "mo-week",
+   0.05,
+   0.2
+  ]
+ ],
+ "words": [
+  [
+   9.22,
+   12.66,
+   "<div class=\"a\" style=\"left:0;right:0;top:150px;text-align:center;font-family:IT;font-weight:900;font-size:112px;letter-spacing:-.04em;color:#fff;line-height:1\">Hoy todavía.</div>"
+  ],
+  [
+   12.76,
+   17.26,
+   "<div class=\"a\" style=\"left:0;right:0;top:150px;text-align:center;font-family:IT;font-weight:900;font-size:112px;letter-spacing:-.04em;color:#fff;line-height:1\">Mañana se corta.</div><div class=\"a\" style=\"left:0;right:0;top:285px;text-align:center;font-family:VT;font-size:54px;letter-spacing:.06em;color:#3dffa8\">6 MESES GRATIS · PRO-TEAM.APP</div>"
+  ]
+ ],
+ "audio": {
+  "cut": 7.82,
+  "old": [
+   "Surreptitious.mp3",
+   0
+  ],
+  "new": [
+   "Deeper.mp3",
+   192
+  ],
+  "old_vol": 0.5,
+  "new_vol": 0.75
+ },
+ "lineas": [
+  [
+   0.8,
+   "Aviso: mañana a las doce de la noche se corta la señal."
+  ],
+  [
+   4.67,
+   "Y con ella, los seis meses gratis."
+  ],
+  [
+   9.32,
+   "Hoy todavía puedes crear tu primer equipo en ProTim."
+  ],
+  [
+   12.86,
+   "Seis meses gratis. Hasta mañana a medianoche."
+  ]
+ ]
+}
