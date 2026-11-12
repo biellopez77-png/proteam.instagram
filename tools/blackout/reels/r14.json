@@ -1,51 +1,94 @@
 {
- "mg": "r14",
- "d": "2",
- "dur": 21,
- "lineas": [
+ "w": 1080,
+ "h": 1920,
+ "d": "0",
+ "dur": 15.27,
+ "on": true,
+ "vel": 1.0,
+ "voice": {
+  "sid": 16,
+  "lang": "en-us"
+ },
+ "cut": 5.07,
+ "trans": 1.9,
+ "pose": {
+  "ry0": -0.24,
+  "y": -0.01,
+  "far": 0.5
+ },
+ "dev": [
   [
-   0.9,
-   "¿Hace falta tarjeta?"
-  ],
-  [
-   2.7,
-   "No."
-  ],
-  [
-   4.8,
-   "¿Para qué deportes?"
-  ],
-  [
-   6.2,
-   "Fútbol, baloncesto y balonmano."
-  ],
-  [
-   8.8,
-   "¿A quién vale?"
-  ],
-  [
-   10.2,
-   "Al primer equipo de una cuenta nueva."
-  ],
-  [
-   12.8,
-   "¿Hasta cuándo?"
-  ],
-  [
-   14.2,
-   "Hasta el viernes veintisiete, a medianoche."
-  ],
-  [
-   17.4,
-   "Seis meses gratis. En ProTim."
+   0,
+   "tv",
+   0.7
   ]
  ],
- "musica": {
-  "bpm": 94,
-  "vol": 0.3
+ "layers": [
+  {
+   "t0": 0.3,
+   "t1": 5.27,
+   "type": "osd",
+   "ch": "CH 95",
+   "mode": "▶",
+   "blink": false
+  },
+  {
+   "t0": 0.5,
+   "t1": 5.27,
+   "type": "js",
+   "code": "TX(80,320,84,'THE OLD SCHOOL\\nANALYST.',{font:'IT'}) + DOODLE(W*.5-150,H*.42,1.5,{mood:u>2.5?'panic':'ok',t,glasses:true}) + Array.from({length:Math.min(14,Math.floor(u*4))},(_, i)=>BOX(80+(i*97)%(W-300), H*.86-Math.floor(i/5)*90-((i*53)%40), 200, 70, 'background:'+(i%3?'#eee':'#111')+';border:4px solid #fff;transform:rotate('+((i*37)%20-10)+'deg)', TX(14,8,36,i%3?'PAPER':'VHS',{color:i%3?'#000':'#fff',glow:'none'}))).join('')",
+   "fi": 0.3
+  }
+ ],
+ "app": [
+  [
+   5.07,
+   "mo-home",
+   0,
+   0.1
+  ],
+  [
+   8.07,
+   "res-1",
+   0.2,
+   0.45
+  ]
+ ],
+ "words": [
+  [
+   6.47,
+   8.07,
+   "<div class=\"a\" style=\"left:60px;right:60px;top:130px;text-align:center;font-family:IT;font-weight:900;font-size:96px;letter-spacing:-.04em;color:#fff;line-height:1.02\">Let's talk about<br>an upgrade.</div>"
+  ],
+  [
+   10.57,
+   15.27,
+   "<div class=\"a\" style=\"left:60px;right:60px;top:130px;text-align:center;font-family:IT;font-weight:900;font-size:96px;letter-spacing:-.04em;color:#fff;line-height:1.02\">Meet PROTEAM.</div><div class=\"a\" style=\"left:40px;right:40px;bottom:120px;text-align:center;font-family:VT;font-size:48px;letter-spacing:.05em;color:#3dffa8;line-height:1.15\">PRO-TEAM.APP</div>"
+  ]
+ ],
+ "audio": {
+  "cut": 5.07,
+  "old": [
+   "Honky-Tonk Villain.mp3",
+   25
+  ],
+  "new": [
+   "Unknown.mp3",
+   60
+  ],
+  "old_vol": 0.55,
+  "new_vol": 0.75
  },
- "voz_sid": 29,
- "vel": 0.95,
- "clunks": [],
- "dark_at": 0
+ "lineas": [
+  [
+   0.8,
+   "The old school analyst. Paper, pens, and a mountain of tapes.",
+   16
+  ],
+  [
+   10.67,
+   "Meet ProTeam.",
+   16
+  ]
+ ]
 }

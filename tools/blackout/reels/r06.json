@@ -1,17 +1,208 @@
 {
- "mg": "r06",
- "d": "10",
- "dur": 13,
- "lineas": [],
- "musica": {
-  "bpm": 122.4,
-  "vol": 0.75,
-  "golpes": [
-   9.8
-  ]
+ "w": 1080,
+ "h": 1920,
+ "d": "0",
+ "dur": 20.86,
+ "on": true,
+ "vel": 1.0,
+ "voice": {
+  "sid": 16,
+  "lang": "en-us"
  },
- "voz_sid": 29,
- "vel": 0.95,
- "clunks": [],
- "dark_at": 0
+ "cut": 10.66,
+ "trans": 1.9,
+ "pose": {
+  "ry0": -0.24,
+  "y": -0.01,
+  "far": 0.5
+ },
+ "dev": [
+  [
+   0,
+   "nokia",
+   0.7
+  ],
+  [
+   2.8,
+   "tv",
+   0.7
+  ],
+  [
+   6.26,
+   "tv",
+   0.7
+  ]
+ ],
+ "layers": [
+  {
+   "t0": 0.5,
+   "t1": 3.1,
+   "type": "text",
+   "valign": "center",
+   "align": "center",
+   "pad": "300px 90px",
+   "gap": 16,
+   "lines": [
+    {
+     "text": "INCOMING",
+     "font": "Px",
+     "size": 84,
+     "cps": 20,
+     "at": 0.1
+    },
+    {
+     "text": "CALL...",
+     "font": "Px",
+     "size": 84,
+     "cps": 20,
+     "at": 0.65
+    },
+    {
+     "text": " ",
+     "size": 30,
+     "at": 1.15
+    },
+    {
+     "text": "☎ THE FUTURE",
+     "font": "Px",
+     "size": 84,
+     "cps": 20,
+     "at": 1.15
+    }
+   ]
+  },
+  {
+   "t0": 2.7,
+   "t1": 6.56,
+   "type": "osd",
+   "ch": "CH 95",
+   "mode": "☎ RING",
+   "blink": false
+  },
+  {
+   "t0": 2.9,
+   "t1": 6.56,
+   "type": "js",
+   "code": "DOODLE(W*.5-160, H*.38, 1.6, {mood:'ok', arms:'phone', t})",
+   "fi": 0.3
+  },
+  {
+   "t0": 6.16,
+   "t1": 10.86,
+   "type": "osd",
+   "ch": "CH 95",
+   "mode": "☎ CALL",
+   "blink": false
+  },
+  {
+   "t0": 6.36,
+   "t1": 10.86,
+   "type": "text",
+   "valign": "flex-start",
+   "align": "left",
+   "pad": "300px 90px",
+   "gap": 16,
+   "lines": [
+    {
+     "text": "MESSAGE FROM THE FUTURE:",
+     "font": "VT",
+     "size": 72,
+     "color": "#3dffa8",
+     "glow": "0 0 10px rgba(61,255,168,.7)",
+     "cps": 30,
+     "at": 0.1
+    },
+    {
+     "text": " ",
+     "size": 30,
+     "at": 1.05
+    },
+    {
+     "text": "YOUR",
+     "size": 150,
+     "cps": 16,
+     "at": 1.05
+    },
+    {
+     "text": "ANALYSIS",
+     "size": 150,
+     "cps": 16,
+     "at": 1.45
+    },
+    {
+     "text": "NEEDS AN",
+     "size": 150,
+     "cps": 16,
+     "at": 2.1
+    },
+    {
+     "text": "UPGRADE.",
+     "size": 150,
+     "cps": 16,
+     "at": 2.75
+    }
+   ]
+  }
+ ],
+ "app": [
+  [
+   10.66,
+   "mo-home",
+   0,
+   0.1
+  ],
+  [
+   13.66,
+   "res-0",
+   0.1,
+   0.35
+  ]
+ ],
+ "words": [
+  [
+   12.06,
+   13.66,
+   "<div class=\"a\" style=\"left:60px;right:60px;top:130px;text-align:center;font-family:IT;font-weight:900;font-size:96px;letter-spacing:-.04em;color:#fff;line-height:1.02\">Answer.</div>"
+  ],
+  [
+   13.76,
+   16.06,
+   "<div class=\"a\" style=\"left:60px;right:60px;top:130px;text-align:center;font-family:IT;font-weight:900;font-size:96px;letter-spacing:-.04em;color:#fff;line-height:1.02\">The future.</div>"
+  ],
+  [
+   16.16,
+   20.86,
+   "<div class=\"a\" style=\"left:60px;right:60px;top:130px;text-align:center;font-family:IT;font-weight:900;font-size:96px;letter-spacing:-.04em;color:#fff;line-height:1.02\">Answer the call.</div><div class=\"a\" style=\"left:40px;right:40px;bottom:120px;text-align:center;font-family:VT;font-size:48px;letter-spacing:.05em;color:#3dffa8;line-height:1.15\">BLACK FRIDAY · 6 MONTHS FREE<br>FIRST TEAM · NO CARD · UNTIL 27 NOV 23:59</div>"
+  ]
+ ],
+ "audio": {
+  "cut": 10.66,
+  "old": [
+   "Honky-Tonk Villain.mp3",
+   35
+  ],
+  "new": [
+   "Syntheticity.mp3",
+   52
+  ],
+  "old_vol": 0.55,
+  "new_vol": 0.75
+ },
+ "lineas": [
+  [
+   3.2,
+   "Hello? The future? You're calling us?",
+   16
+  ],
+  [
+   6.66,
+   "Your analysis needs an upgrade.",
+   26
+  ],
+  [
+   16.26,
+   "Answer the call.",
+   16
+  ]
+ ]
 }

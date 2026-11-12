@@ -1,18 +1,144 @@
 {
- "mg": "r11",
- "d": "5",
- "dur": 14,
- "lineas": [],
- "musica": {
-  "bpm": 110,
-  "vol": 0.7,
-  "golpes": [
-   4.2,
-   8.0
-  ]
+ "w": 1080,
+ "h": 1920,
+ "d": "0",
+ "dur": 19.65,
+ "on": true,
+ "vel": 1.0,
+ "voice": {
+  "sid": 16,
+  "lang": "en-us"
  },
- "voz_sid": 29,
- "vel": 0.95,
- "clunks": [],
- "dark_at": 0
+ "cut": 9.45,
+ "trans": 1.9,
+ "pose": {
+  "ry0": -0.24,
+  "y": -0.01,
+  "far": 0.5
+ },
+ "dev": [
+  [
+   0,
+   "tvblack",
+   0.7
+  ],
+  [
+   5.0,
+   "tvblack",
+   0.7
+  ],
+  [
+   6.8,
+   "tv",
+   0.7
+  ]
+ ],
+ "layers": [
+  {
+   "t0": 0.5,
+   "t1": 5.3,
+   "type": "js",
+   "code": "TX(80,300,80,'ANALYSING MATCH...',{font:'IT'}) + BOX(80,420,W-160,70,'border:5px solid #fff', BOX(6,6,(W-180)*0.02,48,'background:#fff')) + TX(80,520,72,'2%') + TX(80,640,64,['MON','TUE','WED','THU','FRI','SAT','SUN','MON...'][Math.min(7,Math.floor(u*2))]+'  '+['09:00','13:00','18:00','23:59','03:12'][Math.floor(u*3)%5]) + DOODLE(W*.5-140,H*.5,1.4,{mood:u>2?'panic':'ok',t})",
+   "fi": 0.3
+  },
+  {
+   "t0": 5.1,
+   "t1": 7.1,
+   "type": "js",
+   "code": "TX(80,300,80,'ANALYSING MATCH...',{font:'IT'}) + BOX(80,420,W-160,70,'border:5px solid #fff', BOX(6,6,(W-180)*0.02,48,'background:#fff')) + TX(80,520,72,'2%') + TX(80,640,64,['MON','TUE','WED','THU','FRI','SAT','SUN','MON...'][Math.min(7,Math.floor(u*2))]+'  '+['09:00','13:00','18:00','23:59','03:12'][Math.floor(u*3)%5]) + DOODLE(W*.5-140,H*.5,1.4,{mood:'frozen',t})",
+   "fi": 0.3
+  },
+  {
+   "t0": 6.7,
+   "t1": 9.65,
+   "type": "osd",
+   "ch": "CH 95",
+   "mode": "PLAY ▶",
+   "blink": false
+  },
+  {
+   "t0": 6.9,
+   "t1": 9.65,
+   "type": "text",
+   "valign": "flex-start",
+   "align": "left",
+   "pad": "300px 90px",
+   "gap": 16,
+   "lines": [
+    {
+     "text": "THERE'S A",
+     "size": 150,
+     "cps": 16,
+     "at": 0.1
+    },
+    {
+     "text": "BETTER WAY.",
+     "size": 128,
+     "cps": 16,
+     "at": 0.81
+    }
+   ]
+  }
+ ],
+ "app": [
+  [
+   9.45,
+   "reg-1",
+   0.42,
+   0.5
+  ],
+  [
+   12.45,
+   "cro-0",
+   0,
+   0.2
+  ]
+ ],
+ "words": [
+  [
+   10.85,
+   12.45,
+   "<div class=\"a\" style=\"left:60px;right:60px;top:130px;text-align:center;font-family:IT;font-weight:900;font-size:96px;letter-spacing:-.04em;color:#fff;line-height:1.02\">Live.</div>"
+  ],
+  [
+   12.55,
+   14.85,
+   "<div class=\"a\" style=\"left:60px;right:60px;top:130px;text-align:center;font-family:IT;font-weight:900;font-size:96px;letter-spacing:-.04em;color:#fff;line-height:1.02\">Done.</div>"
+  ],
+  [
+   14.95,
+   19.65,
+   "<div class=\"a\" style=\"left:60px;right:60px;top:130px;text-align:center;font-family:IT;font-weight:900;font-size:96px;letter-spacing:-.04em;color:#fff;line-height:1.02\">Upgrade your<br>workflow.</div><div class=\"a\" style=\"left:40px;right:40px;bottom:120px;text-align:center;font-family:VT;font-size:48px;letter-spacing:.05em;color:#3dffa8;line-height:1.15\">BLACK FRIDAY · 6 MONTHS FREE<br>FIRST TEAM · NO CARD · UNTIL 27 NOV 23:59</div>"
+  ]
+ ],
+ "audio": {
+  "cut": 9.45,
+  "old": [
+   "Surreptitious.mp3",
+   30
+  ],
+  "new": [
+   "Thugs.mp3",
+   138.5
+  ],
+  "old_vol": 0.55,
+  "new_vol": 0.75
+ },
+ "lineas": [
+  [
+   0.8,
+   "Analysing match. Two percent.",
+   16
+  ],
+  [
+   7.2,
+   "There's a better way.",
+   16
+  ],
+  [
+   15.05,
+   "Upgrade your workflow.",
+   16
+  ]
+ ]
 }

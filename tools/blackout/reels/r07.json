@@ -1,47 +1,145 @@
 {
- "mg": "r07",
- "d": "9",
- "dur": 21.5,
- "lineas": [
+ "w": 1080,
+ "h": 1920,
+ "d": "0",
+ "dur": 22.9,
+ "on": true,
+ "vel": 1.0,
+ "voice": {
+  "sid": 16,
+  "lang": "en-us"
+ },
+ "cut": 10.3,
+ "trans": 1.9,
+ "pose": {
+  "ry0": -0.24,
+  "y": -0.01,
+  "far": 0.5
+ },
+ "dev": [
   [
-   0.3,
-   "Minuto veintiuno."
+   0,
+   "tv",
+   0.7
   ],
   [
-   2.0,
-   "Con ProTim registras el partido en directo."
+   3.4,
+   "tv",
+   0.7
   ],
   [
-   5.0,
-   "Tocas al jugador y la acción."
-  ],
-  [
-   7.2,
-   "Desde dónde tira."
-  ],
-  [
-   8.8,
-   "Dónde va."
-  ],
-  [
-   10.8,
-   "Y si es gol o parada."
-  ],
-  [
-   13.2,
-   "Al acabar, la crónica del partido ya está hecha."
-  ],
-  [
-   16.7,
-   "Seis meses gratis para tu primer equipo. Hasta el veintisiete."
+   7.8,
+   "tvblack",
+   0.7
   ]
  ],
- "musica": {
-  "bpm": 100,
-  "vol": 0.35
+ "layers": [
+  {
+   "t0": 0.3,
+   "t1": 3.7,
+   "type": "osd",
+   "ch": "CH 95",
+   "mode": "POV",
+   "blink": false
+  },
+  {
+   "t0": 0.5,
+   "t1": 3.7,
+   "type": "js",
+   "code": "TX(80,320,84,TYPE('POV: YOU\\'RE A\\nSPORTS ANALYST.',u,22),{font:'IT'}) + DOODLE(W*.5-140,H*.48,1.4,{mood:'ok',t,glasses:true}) + BOX(W*.5-210,H*.48+300,420,220,'border:6px solid #fff;border-radius:10px')",
+   "fi": 0.3
+  },
+  {
+   "t0": 3.3,
+   "t1": 8.1,
+   "type": "osd",
+   "ch": "CH 95",
+   "mode": "POV",
+   "blink": false
+  },
+  {
+   "t0": 3.5,
+   "t1": 8.1,
+   "type": "js",
+   "code": "['FINDING THAT ONE PLAY.','ORGANISING ENDLESS VIDEOS.','REVIEWING THE SAME SEQUENCE.','ANOTHER MATCH REPORT.'].map((s,i)=>TX(80,560+i*120,58,TYPE(s,u-i*.9,30))).join('') + DOODLE(W*.5-140,H*.55,1.3,{mood:u>3?'panic':'ok',t})",
+   "fi": 0.3
+  },
+  {
+   "t0": 7.7,
+   "t1": 10.5,
+   "type": "osd",
+   "ch": "CH 95",
+   "mode": "❚❚ FREEZE",
+   "blink": false
+  },
+  {
+   "t0": 7.9,
+   "t1": 10.5,
+   "type": "js",
+   "code": "DOODLE(W*.5-140,H*.4,1.4,{mood:'frozen',t:0}) + TX(80,330,96,'WE NEED\\nAN UPDATE.',{font:'IT'})",
+   "fi": 0.3
+  }
+ ],
+ "app": [
+  [
+   10.3,
+   "cro-0",
+   0,
+   0.2
+  ],
+  [
+   13.3,
+   "res-1",
+   0.2,
+   0.45
+  ],
+  [
+   15.7,
+   "mo-week",
+   0.05,
+   0.2
+  ]
+ ],
+ "words": [
+  [
+   11.7,
+   13.3,
+   "<div class=\"a\" style=\"left:60px;right:60px;top:130px;text-align:center;font-family:IT;font-weight:900;font-size:96px;letter-spacing:-.04em;color:#fff;line-height:1.02\">Every play.</div>"
+  ],
+  [
+   13.4,
+   15.7,
+   "<div class=\"a\" style=\"left:60px;right:60px;top:130px;text-align:center;font-family:IT;font-weight:900;font-size:96px;letter-spacing:-.04em;color:#fff;line-height:1.02\">Every player.</div>"
+  ],
+  [
+   15.8,
+   18.1,
+   "<div class=\"a\" style=\"left:60px;right:60px;top:130px;text-align:center;font-family:IT;font-weight:900;font-size:96px;letter-spacing:-.04em;color:#fff;line-height:1.02\">Every week.</div>"
+  ],
+  [
+   18.2,
+   22.9,
+   "<div class=\"a\" style=\"left:60px;right:60px;top:130px;text-align:center;font-family:IT;font-weight:900;font-size:96px;letter-spacing:-.04em;color:#fff;line-height:1.02\">Work smarter.<br>Analyse better.</div><div class=\"a\" style=\"left:40px;right:40px;bottom:120px;text-align:center;font-family:VT;font-size:48px;letter-spacing:.05em;color:#3dffa8;line-height:1.15\">PROTEAM · PRO-TEAM.APP</div>"
+  ]
+ ],
+ "audio": {
+  "cut": 10.3,
+  "old": [
+   "Surreptitious.mp3",
+   40
+  ],
+  "new": [
+   "Syntheticity.mp3",
+   52
+  ],
+  "old_vol": 0.55,
+  "new_vol": 0.75
  },
- "voz_sid": 29,
- "vel": 0.95,
- "clunks": [],
- "dark_at": 0
+ "lineas": [
+  [
+   18.3,
+   "Work smarter. Analyse better.",
+   16
+  ]
+ ]
 }

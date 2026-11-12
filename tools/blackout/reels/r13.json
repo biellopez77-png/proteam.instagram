@@ -1,27 +1,149 @@
 {
- "escena": "s=marcador&d=3",
- "d": "3",
- "dur": 13.5,
- "cierre_at": 8.6,
- "clunks": [
-  1.6,
-  2.5,
-  3.4
- ],
- "dark_at": 3.4,
- "lineas": [],
- "subs": [
+ "w": 1080,
+ "h": 1920,
+ "d": "0",
+ "dur": 20.96,
+ "on": true,
+ "vel": 1.0,
+ "voice": {
+  "sid": 16,
+  "lang": "en-us"
+ },
+ "cut": 8.36,
+ "trans": 1.9,
+ "pose": {
+  "ry0": -0.24,
+  "y": -0.01,
+  "far": 0.5
+ },
+ "dev": [
   [
-   4.2,
-   6.2,
-   "Tres días."
+   0,
+   "tvblack",
+   0.7
   ],
   [
-   6.3,
-   8.4,
-   "El 27 se va la luz."
+   5.0,
+   "tv",
+   0.7
   ]
  ],
- "voz_sid": 29,
- "vel": 0.95
+ "layers": [
+  {
+   "t0": 0.5,
+   "t1": 5.3,
+   "type": "js",
+   "code": "(()=>{const v=Math.floor(Math.min(1,u/1.2)*67);return TX(W*.5-240,H*.25,260,v+'%',{font:'IT'}) + TX(80,H*.55,80,TYPE('DATA IS\\nJUST DATA?',u-1.2,16),{font:'IT'}) + (u>2.6?'<svg class=\"a\" style=\"left:80px;top:'+(H*.72)+'px\" width=\"'+(W-160)+'\" height=\"300\"><polyline fill=\"none\" stroke=\"#3dffa8\" stroke-width=\"8\" points=\"'+[0,1,2,3,4,5,6,7,8].map(i=>(i*(W-160)/8)+','+(250-[40,80,60,140,120,200,170,230,210][i]*Math.min(1,(u-2.6)/1.2))).join(' ')+'\"/></svg>':'')})()",
+   "fi": 0.3
+  },
+  {
+   "t0": 4.9,
+   "t1": 8.56,
+   "type": "osd",
+   "ch": "CH 95",
+   "mode": "▶",
+   "blink": false
+  },
+  {
+   "t0": 5.1,
+   "t1": 8.56,
+   "type": "text",
+   "valign": "flex-start",
+   "align": "left",
+   "pad": "300px 90px",
+   "gap": 16,
+   "lines": [
+    {
+     "text": "UNTIL YOU",
+     "size": 150,
+     "cps": 16,
+     "at": 0.1
+    },
+    {
+     "text": "UNDERSTAND",
+     "size": 128,
+     "cps": 16,
+     "at": 0.81
+    },
+    {
+     "text": "THE STORY.",
+     "size": 128,
+     "cps": 16,
+     "at": 1.59
+    }
+   ]
+  }
+ ],
+ "app": [
+  [
+   8.36,
+   "res-0",
+   0.1,
+   0.35
+  ],
+  [
+   11.36,
+   "res-1",
+   0.2,
+   0.45
+  ],
+  [
+   13.76,
+   "reg-3",
+   0.45,
+   0.52
+  ]
+ ],
+ "words": [
+  [
+   9.76,
+   11.36,
+   "<div class=\"a\" style=\"left:60px;right:60px;top:130px;text-align:center;font-family:IT;font-weight:900;font-size:96px;letter-spacing:-.04em;color:#fff;line-height:1.02\">The story.</div>"
+  ],
+  [
+   11.46,
+   13.76,
+   "<div class=\"a\" style=\"left:60px;right:60px;top:130px;text-align:center;font-family:IT;font-weight:900;font-size:96px;letter-spacing:-.04em;color:#fff;line-height:1.02\">The players.</div>"
+  ],
+  [
+   13.86,
+   16.16,
+   "<div class=\"a\" style=\"left:60px;right:60px;top:130px;text-align:center;font-family:IT;font-weight:900;font-size:96px;letter-spacing:-.04em;color:#fff;line-height:1.02\">The shots.</div>"
+  ],
+  [
+   16.26,
+   20.96,
+   "<div class=\"a\" style=\"left:60px;right:60px;top:130px;text-align:center;font-family:IT;font-weight:900;font-size:96px;letter-spacing:-.04em;color:#fff;line-height:1.02\">Discover the story<br>behind the game.</div><div class=\"a\" style=\"left:40px;right:40px;bottom:120px;text-align:center;font-family:VT;font-size:48px;letter-spacing:.05em;color:#3dffa8;line-height:1.15\">PROTEAM · PRO-TEAM.APP</div>"
+  ]
+ ],
+ "audio": {
+  "cut": 8.36,
+  "old": [
+   "Surreptitious.mp3",
+   20
+  ],
+  "new": [
+   "Syntheticity.mp3",
+   52
+  ],
+  "old_vol": 0.55,
+  "new_vol": 0.75
+ },
+ "lineas": [
+  [
+   0.8,
+   "Data is just data?",
+   16
+  ],
+  [
+   5.4,
+   "Until you understand the story.",
+   16
+  ],
+  [
+   16.36,
+   "Discover the story behind the game.",
+   16
+  ]
+ ]
 }

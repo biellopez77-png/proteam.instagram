@@ -1,49 +1,99 @@
 {
- "escena": "s=marcador&d=1",
- "d": "1",
- "dur": 17,
- "cierre_at": 11.2,
- "clunks": [
-  1.6,
-  2.5,
-  3.4
+ "w": 1080,
+ "h": 1920,
+ "d": "0",
+ "dur": 18.03,
+ "on": true,
+ "vel": 1.0,
+ "voice": {
+  "sid": 16,
+  "lang": "en-us"
+ },
+ "cut": 7.83,
+ "trans": 1.9,
+ "pose": {
+  "ry0": -0.24,
+  "y": -0.01,
+  "far": 0.5
+ },
+ "dev": [
+  [
+   0,
+   "tv",
+   0.7
+  ]
  ],
- "dark_at": 3.4,
+ "layers": [
+  {
+   "t0": 0.3,
+   "t1": 8.03,
+   "type": "osd",
+   "ch": "CH 95",
+   "mode": "▶",
+   "blink": false
+  },
+  {
+   "t0": 0.5,
+   "t1": 8.03,
+   "type": "js",
+   "code": "TX(80,320,84,TYPE('WHAT IF YOUR\\nDATA COULD TALK?',u,20),{font:'IT'}) + ['EFFICIENCY 67%','SHOTS 39','SAVES 50%','LAST 10 MIN 5-3'].map((s,i)=>TX(80+Math.sin(t*2+i)*10,H*.5+i*110,64,s,{a:Math.min(1,Math.max(0,u-1.5-i*.3)),color:'#3dffa8'})).join('')",
+   "fi": 0.3
+  }
+ ],
+ "app": [
+  [
+   7.83,
+   "res-0",
+   0.1,
+   0.35
+  ],
+  [
+   10.83,
+   "reg-3",
+   0.45,
+   0.52
+  ]
+ ],
+ "words": [
+  [
+   9.23,
+   10.83,
+   "<div class=\"a\" style=\"left:60px;right:60px;top:130px;text-align:center;font-family:IT;font-weight:900;font-size:96px;letter-spacing:-.04em;color:#fff;line-height:1.02\">Look closer.</div>"
+  ],
+  [
+   10.93,
+   13.23,
+   "<div class=\"a\" style=\"left:60px;right:60px;top:130px;text-align:center;font-family:IT;font-weight:900;font-size:96px;letter-spacing:-.04em;color:#fff;line-height:1.02\">Understand more.</div>"
+  ],
+  [
+   13.33,
+   18.03,
+   "<div class=\"a\" style=\"left:60px;right:60px;top:130px;text-align:center;font-family:IT;font-weight:900;font-size:96px;letter-spacing:-.04em;color:#fff;line-height:1.02\">Listen to the game.</div><div class=\"a\" style=\"left:40px;right:40px;bottom:120px;text-align:center;font-family:VT;font-size:48px;letter-spacing:.05em;color:#3dffa8;line-height:1.15\">PROTEAM · PRO-TEAM.APP</div>"
+  ]
+ ],
+ "audio": {
+  "cut": 7.83,
+  "old": [
+   "Surreptitious.mp3",
+   0
+  ],
+  "new": [
+   "Deeper.mp3",
+   192
+  ],
+  "old_vol": 0.55,
+  "new_vol": 0.75
+ },
  "lineas": [
   [
-   4.3,
-   "Mañana."
+   0.8,
+   "What if your data could talk? Look closer. Understand more. Discover what happens behind every play.",
+   16
   ],
   [
-   5.6,
-   "Mañana a medianoche se va la luz."
-  ],
-  [
-   8.4,
-   "Y con ella, los seis meses gratis."
-  ],
-  [
-   11.7,
-   "Crea tu primer equipo en ProTim. Hoy todavía puedes."
+   13.43,
+   "Listen to the game.",
+   16
   ]
- ],
- "subs": [
-  [
-   4.3,
-   5.5,
-   "Mañana."
-  ],
-  [
-   5.6,
-   8.2,
-   "Mañana a medianoche se va la luz."
-  ],
-  [
-   8.4,
-   11.0,
-   "Y con ella, los 6 meses gratis."
-  ]
- ],
- "voz_sid": 29,
- "vel": 0.95
+ ]
 }

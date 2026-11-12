@@ -56,6 +56,25 @@ function appLayer(Ly, t, dev) { const u = t - Ly.t0; const imgs = Ly.imgs; let k
 function imgLayer(Ly, t) { const u = t - Ly.t0, z = 1 + u * .012; return `<img src="../app/${Ly.src}" class="a" style="left:0;top:0;width:100%;height:100%;object-fit:${Ly.fit ?? 'cover'};transform:scale(${z})">`; }
 function osdLayer(Ly, t) { const tc = 12 + t, mm = Math.floor(tc / 60), ss = Math.floor(tc % 60), ff = Math.floor((tc % 1) * 25); return `<div class="a" style="left:90px;bottom:150px;font-family:VT;font-size:56px;color:#dfe5ff;text-shadow:0 0 10px rgba(255,255,255,.5)">SP ${String(mm).padStart(2, '0')}:${String(ss).padStart(2, '0')}:${String(ff).padStart(2, '0')}</div><div class="a" style="left:90px;top:150px;font-family:VT;font-size:76px;color:#3dffa8;text-shadow:0 0 10px rgba(61,255,168,.7)">${Ly.ch}</div>` + (Ly.mode ? `<div class="a" style="right:90px;top:150px;font-family:VT;font-size:70px;color:#fff;text-shadow:0 0 10px #fff;opacity:${Ly.blink ? (Math.floor(t * 2) % 2 ? 1 : .3) : 1}">${Ly.mode}</div>` : ''); }
 function nokiaBar(Ly, t) { return `<div class="a" style="left:90px;top:150px;font-family:Px;font-weight:700;font-size:56px;color:#160700">▂▄▆█ ✉</div><div class="a" style="right:90px;top:150px;font-family:Px;font-weight:700;font-size:56px;color:#160700">${Ly.hora ?? '23:40'} ▮▮▮</div><div class="a" style="left:90px;bottom:150px;font-family:Px;font-weight:700;font-size:54px;color:#160700">Menú</div><div class="a" style="right:90px;bottom:150px;font-family:Px;font-weight:700;font-size:54px;color:#160700">Atrás</div>`; }
+
+// ── ayudas para escenas a medida (capas «js») ──
+const TX = (x, y, size, s, o = {}) => `<div class="a" style="left:${x}px;top:${y}px;${o.w ? 'width:' + o.w + 'px;' : ''}font-family:${o.font ?? 'VT'};font-weight:${(o.font ?? 'VT') === 'IT' ? 900 : 400};font-size:${size}px;line-height:1.05;color:${o.color ?? '#fff'};text-align:${o.align ?? 'left'};letter-spacing:${(o.font ?? 'VT') === 'IT' ? '-.03em' : '.03em'};opacity:${o.a ?? 1};text-shadow:${o.glow ?? '0 0 12px rgba(255,255,255,.5)'};white-space:pre">${s}</div>`;
+const TYPE = (s, u, cps = 24) => { const n = Math.max(0, Math.floor(u * cps)); return [...s].slice(0, n).join('') + (n < [...s].length && n > 0 ? '█' : ''); };
+const BOX = (x, y, w, h, st, inner = '') => `<div class="a" style="left:${x}px;top:${y}px;width:${w}px;height:${h}px;${st}">${inner}</div>`;
+// muñeco doodle de línea (el avatar): mood = 'ok' | 'panic' | 'frozen' | 'happy'
+function DOODLE(x, y, s, o = {}) { const c = o.color ?? '#fff', sw = 7, m = o.mood ?? 'ok', t = o.t ?? 0, wob = Math.sin(t * 6) * (m === 'panic' ? 6 : 1.5);
+  const arm = o.arms ?? (m === 'panic' ? 'up' : m === 'happy' ? 'up' : 'down');
+  const ar = arm === 'up' ? `M70 150 L30 ${95 + wob} M130 150 L170 ${95 - wob}` : arm === 'phone' ? `M70 150 L50 205 M130 150 L95 115` : `M70 150 L45 ${215 + wob} M130 150 L155 ${215 - wob}`;
+  const mouth = m === 'happy' ? 'M84 92 Q100 108 116 92' : m === 'panic' ? 'M92 98 Q100 86 108 98 Q100 110 92 98' : m === 'frozen' ? 'M86 98 L114 98' : 'M86 96 Q100 102 114 96';
+  const eyes = m === 'frozen' ? '<path d="M80 70 L90 80 M90 70 L80 80 M110 70 L120 80 M120 70 L110 80" stroke="' + c + '" stroke-width="5"/>' : `<circle cx="85" cy="${74 + (m === 'panic' ? -2 : 0)}" r="6" fill="${c}"/><circle cx="115" cy="74" r="6" fill="${c}"/>`;
+  return `<svg class="a" style="left:${x}px;top:${y}px;overflow:visible" width="${200 * s}" height="${330 * s}" viewBox="0 0 200 330"><g fill="none" stroke="${c}" stroke-width="${sw}" stroke-linecap="round" stroke-linejoin="round" style="filter:drop-shadow(0 0 6px ${c}88)">
+    <circle cx="100" cy="80" r="48"/>${eyes}<path d="${mouth}"/><path d="M100 128 L100 235"/><path d="${ar}"/><path d="M100 235 L72 ${310 + wob} M100 235 L128 ${310 - wob}"/>${o.glasses ? '<path d="M72 70 h22 v14 h-22 z M106 70 h22 v14 h-22 z M94 76 h12"/>' : ''}${m === 'panic' ? '<path d="M150 40 l10 -18 M165 55 l18 -6 M40 40 l-10 -18"/>' : ''}</g></svg>`; }
+function NOISE(seed, w = 270, h = 480) { return `<canvas class="a nz" data-seed="${seed}" width="${w}" height="${h}" style="inset:0;width:100%;height:100%;image-rendering:pixelated"></canvas>`; }
+function paintNoise() { document.querySelectorAll('canvas.nz').forEach((c) => { const g = c.getContext('2d'), d = g.createImageData(c.width, c.height); let s = +c.dataset.seed * 9301 + 7;
+  for (let i = 0; i < d.data.length; i += 4) { s = (s * 16807) % 2147483647; const v = s % 255; d.data[i] = d.data[i + 1] = d.data[i + 2] = v; d.data[i + 3] = 255; } g.putImageData(d, 0, 0); }); }
+const JSC = {};
+function jsLayer(Ly, t, dev) { if (!JSC[Ly.code]) JSC[Ly.code] = new Function('u', 't', 'Ly', 'W', 'H', 'return (' + Ly.code + ');'); return JSC[Ly.code](t - Ly.t0, t, Ly, dev.w, dev.h); }
+
 window.frame = (spec, t) => { const d = devAt(spec, t); const x = VW / 2 - d.w / 2, y = d.cy - d.h / 2;
   // encendido de tubo al principio y apagado al final
   const on = spec.on ? io(seg(t, 0, .55)) : 1, off = spec.off ? 1 - io(seg(t, spec.dur - .5, spec.dur)) : 1, pw = Math.min(on, off);
@@ -66,10 +85,10 @@ window.frame = (spec, t) => { const d = devAt(spec, t); const x = VW / 2 - d.w /
   h += `<div class="a" style="left:${x}px;top:${y}px;width:${d.w}px;height:${d.h}px;border-radius:${d.rx}px/${d.ry}px;overflow:hidden;background:${d.bg};transform:scale(${sx},${sy});filter:brightness(${L(4, 1, pw)})">`;
   if (d.crt > .02) h += `<div class="a" style="inset:0;background:radial-gradient(90% 80% at 40% 38%,rgba(255,255,255,${.14 * d.crt}) 0%,transparent 60%),radial-gradient(120% 100% at 50% 50%,transparent 55%,rgba(0,0,0,${.35 * d.crt}) 100%)"></div>`;
   for (const Ly of spec.layers) { if (t < Ly.t0 || t > Ly.t1) continue; const a = vis(Ly, t); if (a <= 0) continue;
-    const inner = Ly.type === 'text' ? textLayer(Ly, t, d) : Ly.type === 'bar' ? barLayer(Ly, t) : Ly.type === 'app' ? appLayer(Ly, t, d) : Ly.type === 'img' ? imgLayer(Ly, t) : Ly.type === 'osd' ? osdLayer(Ly, t) : Ly.type === 'nokia' ? nokiaBar(Ly, t) : '';
+    const inner = Ly.type === 'text' ? textLayer(Ly, t, d) : Ly.type === 'bar' ? barLayer(Ly, t) : Ly.type === 'app' ? appLayer(Ly, t, d) : Ly.type === 'img' ? imgLayer(Ly, t) : Ly.type === 'osd' ? osdLayer(Ly, t) : Ly.type === 'nokia' ? nokiaBar(Ly, t) : Ly.type === 'js' ? jsLayer(Ly, t, d) : Ly.type === 'noise' ? NOISE(Math.floor(t * 30)) : '';
     h += `<div class="a" style="inset:0;opacity:${a}">${inner}</div>`; }
   if (d.name === 'phone' && d.k > .6) h += `<div class="a" style="left:50%;top:16px;width:120px;height:34px;margin-left:-60px;border-radius:20px;background:#000;opacity:${seg(d.k, .6, 1)}"></div>`;
-  h += '</div>'; S.innerHTML = h;
+  h += '</div>'; S.innerHTML = h; paintNoise();
   return { crt: d.crt * pw, curve: d.curve }; };
 window.READY = false;
 Promise.all([document.fonts.load('400 60px VT'), document.fonts.load('700 40px Px'), document.fonts.load('900 80px IT'),

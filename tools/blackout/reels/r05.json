@@ -1,38 +1,140 @@
 {
- "mg": "r05",
- "d": "11",
- "dur": 21.5,
- "lineas": [
+ "w": 1080,
+ "h": 1920,
+ "d": "0",
+ "dur": 20.46,
+ "on": true,
+ "vel": 1.0,
+ "voice": {
+  "sid": 16,
+  "lang": "en-us"
+ },
+ "cut": 7.5,
+ "trans": 1.9,
+ "pose": {
+  "ry0": -0.24,
+  "y": -0.01,
+  "far": 0.5
+ },
+ "dev": [
   [
-   0.4,
-   "Lunes. Once y cuarenta de la noche."
+   0,
+   "tv",
+   0.7
   ],
   [
-   3.3,
-   "Cuarenta y siete mensajes. Y aún no sabes quién viene el sábado."
-  ],
-  [
-   9.7,
-   "En ProTim haces la convocatoria: convocados y titulares, en un solo sitio."
-  ],
-  [
-   14.5,
-   "Y sabes, de un vistazo, con quién cuentas."
-  ],
-  [
-   16.6,
-   "Seis meses gratis para tu primer equipo. Hasta el veintisiete."
+   4.55,
+   "tv",
+   0.7
   ]
  ],
- "musica": {
-  "bpm": 92,
-  "vol": 0.35,
-  "golpes": [
-   8.8
+ "layers": [
+  {
+   "t0": 0.3,
+   "t1": 4.85,
+   "type": "osd",
+   "ch": "CH 95",
+   "mode": "BEFORE",
+   "blink": false
+  },
+  {
+   "t0": 0.5,
+   "t1": 4.85,
+   "type": "js",
+   "code": "BOX(0,0,W,H,'',TX(80,300,90,'BEFORE',{font:'IT'}) + TX(80,430,62,TYPE('- PAPER STATS\\n- 3 SPREADSHEETS\\n- VHS TAPES\\n- MEMORY',u,26)) + DOODLE(W*.55,H*.55,1.3,{mood:'panic',t}))",
+   "fi": 0.3
+  },
+  {
+   "t0": 4.45,
+   "t1": 7.7,
+   "type": "osd",
+   "ch": "CH 95",
+   "mode": "VHS ▶▶",
+   "blink": false
+  },
+  {
+   "t0": 4.65,
+   "t1": 7.7,
+   "type": "js",
+   "code": "BOX(0,0,W,H,'',TX(80,H*.4,96,TYPE('SAME GAME.\\nDIFFERENT\\nWORKFLOW.',u,18),{font:'IT'}))",
+   "fi": 0.3
+  }
+ ],
+ "app": [
+  [
+   7.5,
+   "reg-1",
+   0.42,
+   0.5
+  ],
+  [
+   10.86,
+   "res-0",
+   0.1,
+   0.35
+  ],
+  [
+   13.26,
+   "fF",
+   0,
+   0.15
   ]
+ ],
+ "words": [
+  [
+   8.9,
+   10.86,
+   "<div class=\"a\" style=\"left:60px;right:60px;top:130px;text-align:center;font-family:IT;font-weight:900;font-size:96px;letter-spacing:-.04em;color:#fff;line-height:1.02\">After.</div>"
+  ],
+  [
+   10.96,
+   13.26,
+   "<div class=\"a\" style=\"left:60px;right:60px;top:130px;text-align:center;font-family:IT;font-weight:900;font-size:96px;letter-spacing:-.04em;color:#fff;line-height:1.02\">Same game.</div>"
+  ],
+  [
+   13.36,
+   15.66,
+   "<div class=\"a\" style=\"left:60px;right:60px;top:130px;text-align:center;font-family:IT;font-weight:900;font-size:96px;letter-spacing:-.04em;color:#fff;line-height:1.02\">Different workflow.</div>"
+  ],
+  [
+   15.76,
+   20.46,
+   "<div class=\"a\" style=\"left:60px;right:60px;top:130px;text-align:center;font-family:IT;font-weight:900;font-size:96px;letter-spacing:-.04em;color:#fff;line-height:1.02\">Upgrade your<br>analysis.</div><div class=\"a\" style=\"left:40px;right:40px;bottom:120px;text-align:center;font-family:VT;font-size:48px;letter-spacing:.05em;color:#3dffa8;line-height:1.15\">BLACK FRIDAY · 6 MONTHS FREE<br>FIRST TEAM · NO CARD · UNTIL 27 NOV 23:59</div>"
+  ]
+ ],
+ "audio": {
+  "cut": 7.5,
+  "old": [
+   "Surreptitious.mp3",
+   20
+  ],
+  "new": [
+   "Deeper.mp3",
+   192
+  ],
+  "old_vol": 0.55,
+  "new_vol": 0.75
  },
- "voz_sid": 29,
- "vel": 0.95,
- "clunks": [],
- "dark_at": 0
+ "lineas": [
+  [
+   0.8,
+   "Before: paper stats, three spreadsheets and a box of tapes.",
+   16
+  ],
+  [
+   4.95,
+   "Same game. Different workflow.",
+   16
+  ],
+  [
+   9.0,
+   "After: one app, live.",
+   16
+  ],
+  [
+   15.86,
+   "Upgrade your analysis.",
+   16
+  ]
+ ]
 }

@@ -1,38 +1,257 @@
 {
- "mg": "r08",
- "d": "8",
- "dur": 21.5,
- "lineas": [
+ "w": 1080,
+ "h": 1920,
+ "d": "0",
+ "dur": 25.5,
+ "on": true,
+ "vel": 1.0,
+ "voice": {
+  "sid": 16,
+  "lang": "en-us"
+ },
+ "cut": 10.5,
+ "trans": 1.9,
+ "pose": {
+  "ry0": -0.24,
+  "y": -0.01,
+  "far": 0.5
+ },
+ "dev": [
   [
-   0.3,
-   "Ganaste de once."
+   0,
+   "tvblack",
+   0.7
   ],
   [
-   2.0,
-   "Pero, ¿sabes cuándo se rompió el partido?"
+   1.2,
+   "tv",
+   0.7
   ],
   [
-   5.1,
-   "En ProTim tienes el marcador por partes y los últimos diez minutos."
+   4.18,
+   "tvblack",
+   0.7
   ],
   [
-   10.0,
-   "Y la eficacia, las pérdidas y las paradas, frente al rival."
-  ],
-  [
-   16.8,
-   "Seis meses gratis para tu primer equipo. Hasta el veintisiete."
+   7.07,
+   "tv",
+   0.7
   ]
  ],
- "musica": {
-  "bpm": 96,
-  "vol": 0.35,
-  "golpes": [
-   4.4
+ "layers": [
+  {
+   "t0": 0.5,
+   "t1": 1.3,
+   "type": "noise",
+   "fi": 0.05,
+   "fo": 0.1
+  },
+  {
+   "t0": 1.1,
+   "t1": 4.48,
+   "type": "osd",
+   "ch": "CH 95",
+   "mode": "PLAY ▶",
+   "blink": false
+  },
+  {
+   "t0": 1.3,
+   "t1": 4.48,
+   "type": "text",
+   "valign": "flex-start",
+   "align": "left",
+   "pad": "300px 90px",
+   "gap": 16,
+   "lines": [
+    {
+     "text": "BROADCAST · 1995",
+     "font": "VT",
+     "size": 72,
+     "color": "#3dffa8",
+     "glow": "0 0 10px rgba(61,255,168,.7)",
+     "cps": 30,
+     "at": 0.1
+    },
+    {
+     "text": " ",
+     "size": 30,
+     "at": 0.78
+    },
+    {
+     "text": "THE YEAR",
+     "size": 150,
+     "cps": 16,
+     "at": 0.78
+    },
+    {
+     "text": "IS 1995.",
+     "size": 150,
+     "cps": 16,
+     "at": 1.43
+    }
+   ]
+  },
+  {
+   "t0": 4.08,
+   "t1": 7.37,
+   "type": "osd",
+   "ch": "CH 95",
+   "mode": "◀◀ ERR",
+   "blink": false
+  },
+  {
+   "t0": 4.28,
+   "t1": 7.37,
+   "type": "text",
+   "valign": "flex-start",
+   "align": "left",
+   "pad": "300px 90px",
+   "gap": 16,
+   "lines": [
+    {
+     "text": "BUT THE",
+     "size": 150,
+     "cps": 16,
+     "at": 0.1
+    },
+    {
+     "text": "GAME HAS",
+     "size": 150,
+     "cps": 16,
+     "at": 0.69
+    },
+    {
+     "text": "CHANGED.",
+     "size": 150,
+     "cps": 16,
+     "at": 1.34
+    }
+   ]
+  },
+  {
+   "t0": 6.97,
+   "t1": 10.7,
+   "type": "osd",
+   "ch": "CH 95",
+   "mode": "⟳",
+   "blink": false
+  },
+  {
+   "t0": 7.17,
+   "t1": 10.7,
+   "type": "text",
+   "valign": "flex-start",
+   "align": "left",
+   "pad": "300px 90px",
+   "gap": 16,
+   "lines": [
+    {
+     "text": "SO SHOULD",
+     "size": 150,
+     "cps": 16,
+     "at": 0.1
+    },
+    {
+     "text": "THE WAY WE",
+     "size": 128,
+     "cps": 16,
+     "at": 0.81
+    },
+    {
+     "text": "ANALYSE IT.",
+     "size": 128,
+     "cps": 16,
+     "at": 1.59
+    }
+   ]
+  }
+ ],
+ "app": [
+  [
+   10.5,
+   "mo-plan",
+   0.02,
+   0.12
+  ],
+  [
+   13.5,
+   "reg-1",
+   0.42,
+   0.5
+  ],
+  [
+   15.9,
+   "res-0",
+   0.1,
+   0.35
+  ],
+  [
+   18.3,
+   "fF",
+   0,
+   0.15
   ]
+ ],
+ "words": [
+  [
+   11.9,
+   13.5,
+   "<div class=\"a\" style=\"left:60px;right:60px;top:130px;text-align:center;font-family:IT;font-weight:900;font-size:96px;letter-spacing:-.04em;color:#fff;line-height:1.02\">Plan.</div>"
+  ],
+  [
+   13.6,
+   15.9,
+   "<div class=\"a\" style=\"left:60px;right:60px;top:130px;text-align:center;font-family:IT;font-weight:900;font-size:96px;letter-spacing:-.04em;color:#fff;line-height:1.02\">Record.</div>"
+  ],
+  [
+   16.0,
+   18.3,
+   "<div class=\"a\" style=\"left:60px;right:60px;top:130px;text-align:center;font-family:IT;font-weight:900;font-size:96px;letter-spacing:-.04em;color:#fff;line-height:1.02\">Analyse.</div>"
+  ],
+  [
+   18.4,
+   20.7,
+   "<div class=\"a\" style=\"left:60px;right:60px;top:130px;text-align:center;font-family:IT;font-weight:900;font-size:96px;letter-spacing:-.04em;color:#fff;line-height:1.02\">Control.</div>"
+  ],
+  [
+   20.8,
+   25.5,
+   "<div class=\"a\" style=\"left:60px;right:60px;top:130px;text-align:center;font-family:IT;font-weight:900;font-size:96px;letter-spacing:-.04em;color:#fff;line-height:1.02\">PROTEAM.<br>The new era of<br>sports analysis.</div><div class=\"a\" style=\"left:40px;right:40px;bottom:120px;text-align:center;font-family:VT;font-size:48px;letter-spacing:.05em;color:#3dffa8;line-height:1.15\">DISCOVER PROTEAM · PRO-TEAM.APP</div>"
+  ]
+ ],
+ "audio": {
+  "cut": 10.5,
+  "old": [
+   "Honky-Tonk Villain.mp3",
+   0
+  ],
+  "new": [
+   "Thugs.mp3",
+   138.5
+  ],
+  "old_vol": 0.55,
+  "new_vol": 0.75
  },
- "voz_sid": 29,
- "vel": 0.95,
- "clunks": [],
- "dark_at": 0
+ "lineas": [
+  [
+   1.6,
+   "The year is nineteen ninety-five.",
+   16
+  ],
+  [
+   4.58,
+   "But the game has changed.",
+   16
+  ],
+  [
+   7.47,
+   "So should the way we analyse it.",
+   16
+  ],
+  [
+   20.9,
+   "ProTeam. The new era of sports analysis.",
+   16
+  ]
+ ]
 }

@@ -1,0 +1,319 @@
+{
+ "w": 1080,
+ "h": 1920,
+ "d": "0",
+ "dur": 59.89,
+ "on": true,
+ "vel": 1.0,
+ "voice": {
+  "sid": 16,
+  "lang": "en-us"
+ },
+ "cut": 17.75,
+ "trans": 1.9,
+ "pose": {
+  "ry0": -0.24,
+  "y": -0.01,
+  "far": 0.5
+ },
+ "dev": [
+  [
+   0,
+   "tvblack",
+   0.7
+  ],
+  [
+   1.2,
+   "tv",
+   0.7
+  ],
+  [
+   6.51,
+   "tv",
+   0.7
+  ],
+  [
+   13.45,
+   "tvblack",
+   0.7
+  ],
+  [
+   16.05,
+   "tv",
+   0.7
+  ]
+ ],
+ "layers": [
+  {
+   "t0": 0.5,
+   "t1": 1.3,
+   "type": "noise",
+   "fi": 0.05,
+   "fo": 0.1
+  },
+  {
+   "t0": 1.1,
+   "t1": 6.81,
+   "type": "osd",
+   "ch": "CH 95",
+   "mode": "TELESHOP ●",
+   "blink": true
+  },
+  {
+   "t0": 1.3,
+   "t1": 6.81,
+   "type": "text",
+   "valign": "flex-start",
+   "align": "left",
+   "pad": "300px 90px",
+   "gap": 16,
+   "lines": [
+    {
+     "text": "TELESHOP · BLACK FRIDAY 2026",
+     "font": "VT",
+     "size": 72,
+     "color": "#3dffa8",
+     "glow": "0 0 10px rgba(61,255,168,.7)",
+     "cps": 30,
+     "at": 0.1
+    },
+    {
+     "text": " ",
+     "size": 30,
+     "at": 1.18
+    },
+    {
+     "text": "WELCOME TO",
+     "size": 128,
+     "cps": 16,
+     "at": 1.18
+    },
+    {
+     "text": "THE OLD",
+     "size": 150,
+     "cps": 16,
+     "at": 1.96
+    },
+    {
+     "text": "SCHOOL OF",
+     "size": 150,
+     "cps": 16,
+     "at": 2.55
+    },
+    {
+     "text": "SPORTS ANALYSIS.",
+     "size": 92,
+     "cps": 16,
+     "at": 3.26
+    }
+   ]
+  },
+  {
+   "t0": 6.41,
+   "t1": 13.75,
+   "type": "osd",
+   "ch": "CH 95",
+   "mode": "TELESHOP ●",
+   "blink": true
+  },
+  {
+   "t0": 6.61,
+   "t1": 13.75,
+   "type": "js",
+   "code": "TX(80,320,84,'THE OLD SCHOOL\\nANALYST.',{font:'IT'}) + DOODLE(W*.5-150,H*.42,1.5,{mood:u>2.5?'panic':'ok',t,glasses:true}) + Array.from({length:Math.min(14,Math.floor(u*4))},(_, i)=>BOX(80+(i*97)%(W-300), H*.86-Math.floor(i/5)*90-((i*53)%40), 200, 70, 'background:'+(i%3?'#eee':'#111')+';border:4px solid #fff;transform:rotate('+((i*37)%20-10)+'deg)', TX(14,8,36,i%3?'PAPER':'VHS',{color:i%3?'#000':'#fff',glow:'none'}))).join('')",
+   "fi": 0.3
+  },
+  {
+   "t0": 13.35,
+   "t1": 16.35,
+   "type": "osd",
+   "ch": "CH 95",
+   "mode": "❚❚",
+   "blink": false
+  },
+  {
+   "t0": 13.55,
+   "t1": 16.35,
+   "type": "text",
+   "valign": "flex-start",
+   "align": "left",
+   "pad": "300px 90px",
+   "gap": 16,
+   "lines": [
+    {
+     "text": "WAIT...",
+     "size": 150,
+     "cps": 16,
+     "at": 0.1
+    },
+    {
+     "text": "THERE'S AN",
+     "size": 128,
+     "cps": 16,
+     "at": 0.69
+    },
+    {
+     "text": "UPDATE.",
+     "size": 150,
+     "cps": 16,
+     "at": 1.46
+    }
+   ]
+  },
+  {
+   "t0": 15.95,
+   "t1": 17.95,
+   "type": "osd",
+   "ch": "CH 95",
+   "mode": "⟳ UPDATE",
+   "blink": false
+  },
+  {
+   "t0": 16.15,
+   "t1": 17.95,
+   "type": "text",
+   "valign": "flex-start",
+   "align": "left",
+   "pad": "300px 90px",
+   "gap": 16,
+   "lines": [
+    {
+     "text": "INSTALLING PROTEAM",
+     "font": "VT",
+     "size": 72,
+     "color": "#3dffa8",
+     "glow": "0 0 10px rgba(61,255,168,.7)",
+     "cps": 30,
+     "at": 0.1
+    },
+    {
+     "text": " ",
+     "size": 30,
+     "at": 0.85
+    },
+    {
+     "text": "██████████ 100%",
+     "font": "VT",
+     "size": 78,
+     "cps": 30,
+     "at": 0.85
+    }
+   ]
+  }
+ ],
+ "app": [
+  [
+   17.75,
+   "mo-home",
+   0,
+   0.1
+  ],
+  [
+   23.77,
+   "reg-1",
+   0.42,
+   0.5
+  ],
+  [
+   28.97,
+   "reg-3",
+   0.45,
+   0.52
+  ],
+  [
+   34.17,
+   "res-0",
+   0.1,
+   0.35
+  ],
+  [
+   39.37,
+   "fF",
+   0,
+   0.15
+  ],
+  [
+   44.57,
+   "mo-week",
+   0.05,
+   0.2
+  ]
+ ],
+ "words": [
+  [
+   19.15,
+   23.77,
+   "<div class=\"a\" style=\"left:60px;right:60px;top:130px;text-align:center;font-family:IT;font-weight:900;font-size:96px;letter-spacing:-.04em;color:#fff;line-height:1.02\">Introducing<br>PROTEAM.</div>"
+  ],
+  [
+   23.87,
+   28.97,
+   "<div class=\"a\" style=\"left:60px;right:60px;top:130px;text-align:center;font-family:IT;font-weight:900;font-size:96px;letter-spacing:-.04em;color:#fff;line-height:1.02\">Live match<br>recording.</div>"
+  ],
+  [
+   29.07,
+   34.17,
+   "<div class=\"a\" style=\"left:60px;right:60px;top:130px;text-align:center;font-family:IT;font-weight:900;font-size:96px;letter-spacing:-.04em;color:#fff;line-height:1.02\">Shot maps.</div>"
+  ],
+  [
+   34.27,
+   39.37,
+   "<div class=\"a\" style=\"left:60px;right:60px;top:130px;text-align:center;font-family:IT;font-weight:900;font-size:96px;letter-spacing:-.04em;color:#fff;line-height:1.02\">Summary<br>by halves.</div>"
+  ],
+  [
+   39.47,
+   44.57,
+   "<div class=\"a\" style=\"left:60px;right:60px;top:130px;text-align:center;font-family:IT;font-weight:900;font-size:96px;letter-spacing:-.04em;color:#fff;line-height:1.02\">Load control.</div>"
+  ],
+  [
+   44.67,
+   55.09,
+   "<div class=\"a\" style=\"left:60px;right:60px;top:130px;text-align:center;font-family:IT;font-weight:900;font-size:96px;letter-spacing:-.04em;color:#fff;line-height:1.02\">BLACK FRIDAY 2026.<br>Time to upgrade.</div>"
+  ],
+  [
+   55.19,
+   59.89,
+   "<div class=\"a\" style=\"left:60px;right:60px;top:130px;text-align:center;font-family:IT;font-weight:900;font-size:96px;letter-spacing:-.04em;color:#fff;line-height:1.02\">Your team has evolved.<br>Your analysis should too.</div><div class=\"a\" style=\"left:40px;right:40px;bottom:120px;text-align:center;font-family:VT;font-size:48px;letter-spacing:.05em;color:#3dffa8;line-height:1.15\">BLACK FRIDAY · 6 MONTHS FREE<br>FIRST TEAM · NO CARD · UNTIL 27 NOV 23:59</div>"
+  ]
+ ],
+ "audio": {
+  "cut": 17.75,
+  "old": [
+   "Honky-Tonk Villain.mp3",
+   20
+  ],
+  "new": [
+   "Thugs.mp3",
+   138.5
+  ],
+  "old_vol": 0.55,
+  "new_vol": 0.75
+ },
+ "lineas": [
+  [
+   1.6,
+   "Are you still analysing the old way?",
+   26
+  ],
+  [
+   6.91,
+   "Still wasting time? Still using outdated workflows? Still doing things the hard way?",
+   26
+  ],
+  [
+   19.25,
+   "Introducing ProTeam. A smarter way to approach sports analysis.",
+   16
+  ],
+  [
+   44.77,
+   "This Black Friday, it's time to leave the old methods behind. Six months free for your first team. New accounts, no card, until November twenty-seventh at midnight.",
+   16
+  ],
+  [
+   55.29,
+   "Discover the Black Friday offer.",
+   16
+  ]
+ ]
+}

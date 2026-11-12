@@ -1,35 +1,136 @@
 {
- "mg": "r16",
+ "w": 1080,
+ "h": 1920,
  "d": "0",
- "dur": 18.5,
- "lineas": [
+ "dur": 16.53,
+ "on": true,
+ "vel": 1.0,
+ "voice": {
+  "sid": 16,
+  "lang": "en-us"
+ },
+ "cut": 8.73,
+ "trans": 1.9,
+ "pose": {
+  "ry0": -0.24,
+  "y": -0.01,
+  "far": 0.5
+ },
+ "dev": [
   [
-   0.6,
-   "Último día."
+   0,
+   "tvblack",
+   0.7
   ],
   [
-   2.3,
-   "Esta noche, a las doce, se va la luz."
-  ],
-  [
-   6.1,
-   "Mañana, los seis meses vuelven a ser tres."
-  ],
-  [
-   9.5,
-   "Si aún no has creado tu equipo, es ahora."
-  ],
-  [
-   14.6,
-   "Seis meses gratis. Hasta medianoche."
+   5.0,
+   "tv",
+   0.7
   ]
  ],
- "musica": {
-  "bpm": 104,
-  "vol": 0.35
+ "layers": [
+  {
+   "t0": 0.3,
+   "t1": 5.3,
+   "type": "osd",
+   "ch": "CH 95",
+   "mode": "P100 TXT",
+   "blink": false
+  },
+  {
+   "t0": 0.5,
+   "t1": 5.3,
+   "type": "js",
+   "code": "BOX(0,0,W,H,'background:#000', TX(60,140,58,'P100  PROTEAM TXT  27 NOV',{color:'#0ff'}) + BOX(60,230,W-120,110,'background:#00f', TX(20,10,90,'BLACK FRIDAY',{color:'#ff0'})) + TX(70,400,64,TYPE('TRANSMISSION STARTING...',u,26),{color:'#fff'}) + TX(70,H*.42,240,'00:0'+Math.max(0,9-Math.floor(Math.max(0,u-1.2)*3)),{color:'#ff0'}))",
+   "fi": 0.3
+  },
+  {
+   "t0": 4.9,
+   "t1": 8.93,
+   "type": "osd",
+   "ch": "CH 95",
+   "mode": "⟳",
+   "blink": false
+  },
+  {
+   "t0": 5.1,
+   "t1": 8.93,
+   "type": "text",
+   "valign": "flex-start",
+   "align": "left",
+   "pad": "300px 90px",
+   "gap": 16,
+   "lines": [
+    {
+     "text": "BLACK FRIDAY",
+     "size": 110,
+     "cps": 16,
+     "at": 0.1
+    },
+    {
+     "text": "IS COMING.",
+     "size": 128,
+     "cps": 16,
+     "at": 1.0
+    },
+    {
+     "text": " ",
+     "size": 30,
+     "at": 1.77
+    },
+    {
+     "text": "YOUR UPGRADE IS WAITING.",
+     "font": "VT",
+     "size": 78,
+     "cps": 30,
+     "at": 1.77
+    }
+   ]
+  }
+ ],
+ "app": [
+  [
+   8.73,
+   "mo-week",
+   0.05,
+   0.2
+  ]
+ ],
+ "words": [
+  [
+   10.13,
+   11.73,
+   "<div class=\"a\" style=\"left:60px;right:60px;top:130px;text-align:center;font-family:IT;font-weight:900;font-size:96px;letter-spacing:-.04em;color:#fff;line-height:1.02\">Stay tuned.</div>"
+  ],
+  [
+   11.83,
+   16.53,
+   "<div class=\"a\" style=\"left:60px;right:60px;top:130px;text-align:center;font-family:IT;font-weight:900;font-size:96px;letter-spacing:-.04em;color:#fff;line-height:1.02\">Stay tuned.</div><div class=\"a\" style=\"left:40px;right:40px;bottom:120px;text-align:center;font-family:VT;font-size:48px;letter-spacing:.05em;color:#3dffa8;line-height:1.15\">BLACK FRIDAY · 6 MONTHS FREE<br>FIRST TEAM · NO CARD · UNTIL 27 NOV 23:59</div>"
+  ]
+ ],
+ "audio": {
+  "cut": 8.73,
+  "old": [
+   "Clowns.mp3",
+   60
+  ],
+  "new": [
+   "Thugs.mp3",
+   138.5
+  ],
+  "old_vol": 0.55,
+  "new_vol": 0.75
  },
- "voz_sid": 29,
- "vel": 0.95,
- "clunks": [],
- "dark_at": 0
+ "lineas": [
+  [
+   5.4,
+   "Black Friday is coming. Your upgrade is waiting.",
+   16
+  ],
+  [
+   11.93,
+   "Stay tuned.",
+   16
+  ]
+ ]
 }

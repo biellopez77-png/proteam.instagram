@@ -1,0 +1,174 @@
+{
+ "w": 1080,
+ "h": 1920,
+ "d": "0",
+ "dur": 19.12,
+ "on": true,
+ "vel": 1.0,
+ "voice": {
+  "sid": 16,
+  "lang": "en-us"
+ },
+ "cut": 4.8,
+ "trans": 1.9,
+ "pose": {
+  "ry0": -0.24,
+  "y": -0.01,
+  "far": 0.5
+ },
+ "dev": [
+  [
+   0,
+   "tvblack",
+   0.7
+  ],
+  [
+   1.2,
+   "tv",
+   0.7
+  ]
+ ],
+ "layers": [
+  {
+   "t0": 0.5,
+   "t1": 1.3,
+   "type": "noise",
+   "fi": 0.05,
+   "fo": 0.1
+  },
+  {
+   "t0": 1.1,
+   "t1": 5.0,
+   "type": "osd",
+   "ch": "CH 95",
+   "mode": "SPECIAL ●",
+   "blink": true
+  },
+  {
+   "t0": 1.3,
+   "t1": 5.0,
+   "type": "text",
+   "valign": "flex-start",
+   "align": "left",
+   "pad": "300px 90px",
+   "gap": 16,
+   "lines": [
+    {
+     "text": "TONIGHT'S",
+     "font": "VT",
+     "size": 72,
+     "color": "#3dffa8",
+     "glow": "0 0 10px rgba(61,255,168,.7)",
+     "cps": 30,
+     "at": 0.1
+    },
+    {
+     "text": "SPECIAL",
+     "size": 150,
+     "cps": 16,
+     "at": 0.55
+    },
+    {
+     "text": "FEATURE:",
+     "size": 150,
+     "cps": 16,
+     "at": 1.14
+    },
+    {
+     "text": " ",
+     "size": 30,
+     "at": 1.79
+    },
+    {
+     "text": "LIVE MATCH RECORDING",
+     "font": "VT",
+     "size": 78,
+     "cps": 30,
+     "at": 1.79
+    }
+   ]
+  }
+ ],
+ "app": [
+  [
+   4.8,
+   "reg-1",
+   0.42,
+   0.5
+  ],
+  [
+   8.35,
+   "reg-3",
+   0.45,
+   0.52
+  ],
+  [
+   10.75,
+   "res-0",
+   0.1,
+   0.35
+  ]
+ ],
+ "words": [
+  [
+   6.2,
+   8.35,
+   "<div class=\"a\" style=\"left:60px;right:60px;top:130px;text-align:center;font-family:IT;font-weight:900;font-size:96px;letter-spacing:-.04em;color:#fff;line-height:1.02\">Tap the player.<br>Tap the action.</div>"
+  ],
+  [
+   8.45,
+   10.75,
+   "<div class=\"a\" style=\"left:60px;right:60px;top:130px;text-align:center;font-family:IT;font-weight:900;font-size:96px;letter-spacing:-.04em;color:#fff;line-height:1.02\">Mark where<br>the shot goes.</div>"
+  ],
+  [
+   10.85,
+   14.32,
+   "<div class=\"a\" style=\"left:60px;right:60px;top:130px;text-align:center;font-family:IT;font-weight:900;font-size:96px;letter-spacing:-.04em;color:#fff;line-height:1.02\">Get the summary<br>by halves.</div>"
+  ],
+  [
+   14.42,
+   19.12,
+   "<div class=\"a\" style=\"left:60px;right:60px;top:130px;text-align:center;font-family:IT;font-weight:900;font-size:96px;letter-spacing:-.04em;color:#fff;line-height:1.02\">Discover more<br>about PROTEAM.</div><div class=\"a\" style=\"left:40px;right:40px;bottom:120px;text-align:center;font-family:VT;font-size:48px;letter-spacing:.05em;color:#3dffa8;line-height:1.15\">BLACK FRIDAY · 6 MONTHS FREE<br>FIRST TEAM · NO CARD · UNTIL 27 NOV 23:59</div>"
+  ]
+ ],
+ "audio": {
+  "cut": 4.8,
+  "old": [
+   "Honky-Tonk Villain.mp3",
+   10
+  ],
+  "new": [
+   "Unknown.mp3",
+   60
+  ],
+  "old_vol": 0.55,
+  "new_vol": 0.75
+ },
+ "lineas": [
+  [
+   1.6,
+   "Tonight's special feature: live match recording.",
+   26
+  ],
+  [
+   6.3,
+   "Tap the player, then the action.",
+   16
+  ],
+  [
+   8.55,
+   "Mark where the shot goes.",
+   16
+  ],
+  [
+   10.95,
+   "Get the summary by halves, the moment the match ends.",
+   16
+  ],
+  [
+   14.52,
+   "Discover more about ProTeam.",
+   16
+  ]
+ ]
+}

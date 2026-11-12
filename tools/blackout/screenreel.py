@@ -47,8 +47,10 @@ def audio(spec, out):
                 if kk + LL < n: sfx[kk:kk + LL] += rng.normal(0, 1, LL) * np.exp(-np.arange(LL) / (SR * .003)) * .09
     sys.path.insert(0, '/home/claude/tts'); import kok
     duck = np.ones(n)
-    for at, txt in spec.get('lineas', []):
-        p = tempfile.mktemp(suffix='.wav'); kok.say(txt, 29, p, spec.get('vel', 1.0)); v, sr = sf.read(p); os.remove(p)
+    V = spec.get('voice', {'sid': 29, 'lang': 'es'})
+    for ln in spec.get('lineas', []):
+        at, txt = ln[0], ln[1]; sid = ln[2] if len(ln) > 2 else V['sid']
+        p = tempfile.mktemp(suffix='.wav'); kok.say(txt, sid, p, spec.get('vel', 1.0), V.get('lang', 'es')); v, sr = sf.read(p); os.remove(p)
         v = np.interp(np.arange(0, len(v), sr / SR), np.arange(len(v)), v); k = int(at * SR)
         voz[k:k + len(v)] += v[:n - k]; duck[max(0, k - int(.1 * SR)):k + len(v) + int(.1 * SR)] = .4
         print(f'{at:5.2f}-{at + len(v) / SR:5.2f} {txt}')

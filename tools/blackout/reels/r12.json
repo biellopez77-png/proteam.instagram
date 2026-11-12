@@ -1,55 +1,125 @@
 {
- "mg": "r12",
- "d": "4",
- "dur": 20.5,
+ "w": 1080,
+ "h": 1920,
+ "d": "0",
+ "dur": 18.3,
+ "on": true,
+ "vel": 1.0,
+ "voice": {
+  "sid": 16,
+  "lang": "en-us"
+ },
+ "cut": 5.7,
+ "trans": 1.9,
+ "pose": {
+  "ry0": -0.24,
+  "y": -0.01,
+  "far": 0.5
+ },
+ "dev": [
+  [
+   0,
+   "tv",
+   0.7
+  ]
+ ],
+ "layers": [
+  {
+   "t0": 0.3,
+   "t1": 5.9,
+   "type": "osd",
+   "ch": "CH 95",
+   "mode": "▶ PLAY",
+   "blink": false
+  },
+  {
+   "t0": 0.5,
+   "t1": 5.9,
+   "type": "js",
+   "code": "(()=>{const p=Math.min(1,u/2);return BOX(60,H*.22,W-120,H*.5,'border:5px solid #fff;border-radius:16px', '<svg class=\"a\" style=\"inset:0\" viewBox=\"0 0 800 900\"><g fill=\"none\" stroke=\"#fff\" stroke-width=\"5\"><rect x=\"40\" y=\"40\" width=\"720\" height=\"820\"/><path d=\"M40 450 H760\"/><circle cx=\"400\" cy=\"450\" r=\"90\"/></g>'+(u>2.4?'<g stroke=\"#ffd34d\" stroke-width=\"8\" fill=\"none\"><path d=\"M200 700 Q300 500 520 360\" stroke-dasharray=\"900\" stroke-dashoffset=\"'+(900-900*Math.min(1,(u-2.4)/1))+'\"/><circle cx=\"520\" cy=\"360\" r=\"'+(40*Math.min(1,(u-3)/.4))+'\"/><path d=\"M560 700 L600 420\" stroke-dasharray=\"300\" stroke-dashoffset=\"'+(300-300*Math.min(1,(u-3.2)/.8))+'\"/></g>':'')+'<g fill=\"#fff\">'+[[200,700],[560,700],[400,560],[300,300],[520,360]].map(([x,y])=>'<circle cx=\"'+x+'\" cy=\"'+(y-30*p)+'\" r=\"18\"/>').join('')+'</g></svg>') + TX(70,H*.75,90,u<2.2?TYPE('JUST ONE PLAY?',u,18):TYPE('THINK AGAIN.',u-2.2,18),{font:'IT'}) + (u>3.6?TX(70,H*.86,50,'xG 0.31 · 4 PASSES · 6.2 s',{color:'#ffd34d'}):'')})()",
+   "fi": 0.3
+  }
+ ],
+ "app": [
+  [
+   5.7,
+   "reg-2",
+   0.4,
+   0.5
+  ],
+  [
+   8.7,
+   "reg-3",
+   0.45,
+   0.52
+  ],
+  [
+   11.1,
+   "cro-0",
+   0,
+   0.2
+  ]
+ ],
+ "words": [
+  [
+   7.1,
+   8.7,
+   "<div class=\"a\" style=\"left:60px;right:60px;top:130px;text-align:center;font-family:IT;font-weight:900;font-size:96px;letter-spacing:-.04em;color:#fff;line-height:1.02\">Where.</div>"
+  ],
+  [
+   8.8,
+   11.1,
+   "<div class=\"a\" style=\"left:60px;right:60px;top:130px;text-align:center;font-family:IT;font-weight:900;font-size:96px;letter-spacing:-.04em;color:#fff;line-height:1.02\">How.</div>"
+  ],
+  [
+   11.2,
+   13.5,
+   "<div class=\"a\" style=\"left:60px;right:60px;top:130px;text-align:center;font-family:IT;font-weight:900;font-size:96px;letter-spacing:-.04em;color:#fff;line-height:1.02\">When.</div>"
+  ],
+  [
+   13.6,
+   18.3,
+   "<div class=\"a\" style=\"left:60px;right:60px;top:130px;text-align:center;font-family:IT;font-weight:900;font-size:96px;letter-spacing:-.04em;color:#fff;line-height:1.02\">See beyond<br>the game.</div><div class=\"a\" style=\"left:40px;right:40px;bottom:120px;text-align:center;font-family:VT;font-size:48px;letter-spacing:.05em;color:#3dffa8;line-height:1.15\">PROTEAM · PRO-TEAM.APP</div>"
+  ]
+ ],
+ "audio": {
+  "cut": 5.7,
+  "old": [
+   "Surreptitious.mp3",
+   0
+  ],
+  "new": [
+   "Deeper.mp3",
+   192
+  ],
+  "old_vol": 0.55,
+  "new_vol": 0.75
+ },
  "lineas": [
   [
-   0.3,
-   "Seis meses."
+   0.8,
+   "Just one play? Think again.",
+   16
   ],
   [
-   1.7,
-   "Casi una temporada entera."
-  ],
-  [
-   3.7,
-   "Diciembre."
-  ],
-  [
-   5.0,
-   "Enero."
-  ],
-  [
-   6.3,
-   "Febrero."
-  ],
-  [
-   7.6,
-   "Marzo."
+   7.2,
+   "Where it started.",
+   16
   ],
   [
    8.9,
-   "Abril."
-  ],
-  [
-   10.2,
-   "Mayo."
+   "Where it ended.",
+   16
   ],
   [
    11.3,
-   "Si creas tu primer equipo antes del veintisiete, la tienes en ProTim. Gratis."
+   "And when it happened.",
+   16
   ],
   [
-   16.8,
-   "Seis meses gratis para tu primer equipo."
+   13.7,
+   "See beyond the game.",
+   16
   ]
- ],
- "musica": {
-  "bpm": 96,
-  "vol": 0.35
- },
- "voz_sid": 29,
- "vel": 0.95,
- "clunks": [],
- "dark_at": 0
+ ]
 }

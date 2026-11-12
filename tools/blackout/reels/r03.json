@@ -1,18 +1,259 @@
 {
- "mg": "r03",
- "d": "13",
- "dur": 15,
- "lineas": [],
- "musica": {
-  "bpm": 104,
-  "vol": 0.7,
-  "golpes": [
-   7.6,
-   9.4
-  ]
+ "w": 1080,
+ "h": 1920,
+ "d": "0",
+ "dur": 29.34,
+ "on": true,
+ "vel": 1.0,
+ "voice": {
+  "sid": 16,
+  "lang": "en-us"
  },
- "voz_sid": 29,
- "vel": 0.95,
- "clunks": [],
- "dark_at": 0
+ "cut": 16.74,
+ "trans": 1.9,
+ "pose": {
+  "ry0": -0.24,
+  "y": -0.01,
+  "far": 0.5
+ },
+ "dev": [
+  [
+   0,
+   "tvblack",
+   0.7
+  ],
+  [
+   1.2,
+   "tv",
+   0.7
+  ],
+  [
+   5.71,
+   "tv",
+   0.7
+  ],
+  [
+   11.6,
+   "tv",
+   0.7
+  ]
+ ],
+ "layers": [
+  {
+   "t0": 0.5,
+   "t1": 1.3,
+   "type": "noise",
+   "fi": 0.05,
+   "fo": 0.1
+  },
+  {
+   "t0": 1.1,
+   "t1": 6.01,
+   "type": "osd",
+   "ch": "CH 95",
+   "mode": "TELESHOP ●",
+   "blink": true
+  },
+  {
+   "t0": 1.3,
+   "t1": 6.01,
+   "type": "text",
+   "valign": "flex-start",
+   "align": "left",
+   "pad": "300px 90px",
+   "gap": 16,
+   "lines": [
+    {
+     "text": "TELESHOP · CHANNEL 27",
+     "font": "VT",
+     "size": 72,
+     "color": "#3dffa8",
+     "glow": "0 0 10px rgba(61,255,168,.7)",
+     "cps": 30,
+     "at": 0.1
+    },
+    {
+     "text": " ",
+     "size": 30,
+     "at": 0.95
+    },
+    {
+     "text": "ARE YOU",
+     "size": 150,
+     "cps": 16,
+     "at": 0.95
+    },
+    {
+     "text": "STILL",
+     "size": 150,
+     "cps": 16,
+     "at": 1.54
+    },
+    {
+     "text": "ANALYSING",
+     "size": 150,
+     "cps": 16,
+     "at": 2.0
+    },
+    {
+     "text": "THE OLD WAY?",
+     "size": 110,
+     "cps": 16,
+     "at": 2.71
+    }
+   ]
+  },
+  {
+   "t0": 5.61,
+   "t1": 11.9,
+   "type": "osd",
+   "ch": "CH 95",
+   "mode": "TELESHOP ●",
+   "blink": true
+  },
+  {
+   "t0": 5.81,
+   "t1": 11.9,
+   "type": "js",
+   "code": "DOODLE(W*.5-150, H*.42, 1.5, {mood:'panic', t}) + TX(80,H*.2,80,TYPE('TIRED OF\\nOUTDATED WORKFLOWS?',u,22),{font:'IT'})",
+   "fi": 0.3
+  },
+  {
+   "t0": 11.5,
+   "t1": 16.94,
+   "type": "osd",
+   "ch": "CH 95",
+   "mode": "TELESHOP ●",
+   "blink": true
+  },
+  {
+   "t0": 11.7,
+   "t1": 16.94,
+   "type": "text",
+   "valign": "flex-start",
+   "align": "left",
+   "pad": "300px 90px",
+   "gap": 16,
+   "lines": [
+    {
+     "text": "INTRODUCING",
+     "font": "VT",
+     "size": 72,
+     "color": "#3dffa8",
+     "glow": "0 0 10px rgba(61,255,168,.7)",
+     "cps": 30,
+     "at": 0.1
+    },
+    {
+     "text": " ",
+     "size": 30,
+     "at": 0.62
+    },
+    {
+     "text": "PROTEAM.",
+     "size": 150,
+     "cps": 16,
+     "at": 0.62
+    },
+    {
+     "text": "A NEW WAY TO APPROACH",
+     "font": "VT",
+     "size": 78,
+     "cps": 30,
+     "at": 1.27
+    },
+    {
+     "text": "SPORTS ANALYSIS.",
+     "font": "VT",
+     "size": 78,
+     "cps": 30,
+     "at": 2.12
+    }
+   ]
+  },
+  {
+   "t0": 11.7,
+   "t1": 16.94,
+   "type": "js",
+   "code": "DOODLE(W*.62, H*.58, 1.2, {mood:'happy', t})",
+   "fi": 0.3
+  }
+ ],
+ "app": [
+  [
+   16.74,
+   "reg-0",
+   0.3,
+   0.4
+  ],
+  [
+   19.74,
+   "reg-4",
+   0.5,
+   0.56
+  ],
+  [
+   22.14,
+   "cro-0",
+   0,
+   0.15
+  ]
+ ],
+ "words": [
+  [
+   18.14,
+   19.74,
+   "<div class=\"a\" style=\"left:60px;right:60px;top:130px;text-align:center;font-family:IT;font-weight:900;font-size:96px;letter-spacing:-.04em;color:#fff;line-height:1.02\">Live match.</div>"
+  ],
+  [
+   19.84,
+   22.14,
+   "<div class=\"a\" style=\"left:60px;right:60px;top:130px;text-align:center;font-family:IT;font-weight:900;font-size:96px;letter-spacing:-.04em;color:#fff;line-height:1.02\">Goal or save.</div>"
+  ],
+  [
+   22.24,
+   24.54,
+   "<div class=\"a\" style=\"left:60px;right:60px;top:130px;text-align:center;font-family:IT;font-weight:900;font-size:96px;letter-spacing:-.04em;color:#fff;line-height:1.02\">Full timeline.</div>"
+  ],
+  [
+   24.64,
+   29.34,
+   "<div class=\"a\" style=\"left:60px;right:60px;top:130px;text-align:center;font-family:IT;font-weight:900;font-size:96px;letter-spacing:-.04em;color:#fff;line-height:1.02\">BLACK FRIDAY.<br>TIME TO UPGRADE.</div><div class=\"a\" style=\"left:40px;right:40px;bottom:120px;text-align:center;font-family:VT;font-size:48px;letter-spacing:.05em;color:#3dffa8;line-height:1.15\">BLACK FRIDAY · 6 MONTHS FREE<br>FIRST TEAM · NO CARD · UNTIL 27 NOV 23:59</div>"
+  ]
+ ],
+ "audio": {
+  "cut": 16.74,
+  "old": [
+   "Honky-Tonk Villain.mp3",
+   20
+  ],
+  "new": [
+   "Thugs.mp3",
+   138.5
+  ],
+  "old_vol": 0.55,
+  "new_vol": 0.75
+ },
+ "lineas": [
+  [
+   1.6,
+   "Are you still analysing the old way?",
+   26
+  ],
+  [
+   6.11,
+   "Are you tired of outdated workflows? Still wasting time with old methods?",
+   26
+  ],
+  [
+   12.0,
+   "Introducing ProTeam. A new way to approach sports analysis.",
+   26
+  ],
+  [
+   24.74,
+   "Discover our Black Friday offer.",
+   16
+  ]
+ ]
 }

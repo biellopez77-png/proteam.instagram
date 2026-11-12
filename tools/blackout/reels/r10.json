@@ -1,42 +1,216 @@
 {
- "mg": "r10",
- "d": "6",
- "dur": 21.5,
- "lineas": [
+ "w": 1080,
+ "h": 1920,
+ "d": "0",
+ "dur": 15.9,
+ "on": true,
+ "vel": 1.0,
+ "voice": {
+  "sid": 16,
+  "lang": "en-us"
+ },
+ "cut": 5.7,
+ "trans": 1.9,
+ "pose": {
+  "ry0": -0.24,
+  "y": -0.01,
+  "far": 0.5
+ },
+ "dev": [
   [
-   0.3,
-   "Cincuenta y dos minutos."
+   0,
+   "tv",
+   0.7
   ],
   [
-   2.5,
-   "Por un ocho de esfuerzo."
+   1.6,
+   "tvred",
+   0.7
   ],
   [
-   4.2,
-   "Cuatrocientos dieciséis de carga."
+   2.8,
+   "tvblack",
+   0.7
   ],
   [
-   6.5,
-   "ProTim calcula el RPE y la carga del partido."
-  ],
-  [
-   10.6,
-   "Jugador a jugador, igual que en los entrenos."
-  ],
-  [
-   16.8,
-   "Seis meses gratis para tu primer equipo. Hasta el veintisiete."
+   4.0,
+   "tv",
+   0.7
   ]
  ],
- "musica": {
-  "bpm": 98,
-  "vol": 0.35,
-  "golpes": [
-   3.1
+ "layers": [
+  {
+   "t0": 0.3,
+   "t1": 1.9,
+   "type": "osd",
+   "ch": "CH 01",
+   "mode": "CH 01",
+   "blink": false
+  },
+  {
+   "t0": 0.5,
+   "t1": 1.9,
+   "type": "text",
+   "valign": "flex-start",
+   "align": "left",
+   "pad": "300px 90px",
+   "gap": 16,
+   "lines": [
+    {
+     "text": "OLD",
+     "size": 150,
+     "cps": 16,
+     "at": 0.1
+    },
+    {
+     "text": "METHODS.",
+     "size": 150,
+     "cps": 16,
+     "at": 0.44
+    }
+   ]
+  },
+  {
+   "t0": 1.5,
+   "t1": 3.1,
+   "type": "osd",
+   "ch": "CH 02",
+   "mode": "CH 02",
+   "blink": false
+  },
+  {
+   "t0": 1.7,
+   "t1": 3.1,
+   "type": "text",
+   "valign": "flex-start",
+   "align": "left",
+   "pad": "300px 90px",
+   "gap": 16,
+   "lines": [
+    {
+     "text": "MANUAL",
+     "size": 150,
+     "cps": 16,
+     "at": 0.1
+    },
+    {
+     "text": "ANALYSIS.",
+     "size": 150,
+     "cps": 16,
+     "at": 0.62
+    }
+   ]
+  },
+  {
+   "t0": 2.7,
+   "t1": 4.3,
+   "type": "osd",
+   "ch": "CH 03",
+   "mode": "CH 03",
+   "blink": false
+  },
+  {
+   "t0": 2.9,
+   "t1": 4.3,
+   "type": "text",
+   "valign": "flex-start",
+   "align": "left",
+   "pad": "300px 90px",
+   "gap": 16,
+   "lines": [
+    {
+     "text": "OUTDATED",
+     "size": 150,
+     "cps": 16,
+     "at": 0.1
+    },
+    {
+     "text": "TECHNOLOGY.",
+     "size": 128,
+     "cps": 16,
+     "at": 0.75
+    }
+   ]
+  },
+  {
+   "t0": 3.9,
+   "t1": 5.9,
+   "type": "osd",
+   "ch": "CH 04",
+   "mode": "CH 04",
+   "blink": false
+  },
+  {
+   "t0": 4.1,
+   "t1": 5.9,
+   "type": "text",
+   "valign": "flex-start",
+   "align": "left",
+   "pad": "300px 90px",
+   "gap": 16,
+   "lines": [
+    {
+     "text": "CH 04",
+     "font": "VT",
+     "size": 72,
+     "color": "#3dffa8",
+     "glow": "0 0 10px rgba(61,255,168,.7)",
+     "cps": 30,
+     "at": 0.1
+    },
+    {
+     "text": "PROTEAM.",
+     "size": 150,
+     "cps": 16,
+     "at": 0.42
+    }
+   ]
+  }
+ ],
+ "app": [
+  [
+   5.7,
+   "mo-home",
+   0,
+   0.1
+  ],
+  [
+   8.7,
+   "reg-1",
+   0.42,
+   0.5
   ]
+ ],
+ "words": [
+  [
+   7.1,
+   8.7,
+   "<div class=\"a\" style=\"left:60px;right:60px;top:130px;text-align:center;font-family:IT;font-weight:900;font-size:96px;letter-spacing:-.04em;color:#fff;line-height:1.02\">Finally,<br>the right channel.</div>"
+  ],
+  [
+   11.2,
+   15.9,
+   "<div class=\"a\" style=\"left:60px;right:60px;top:130px;text-align:center;font-family:IT;font-weight:900;font-size:96px;letter-spacing:-.04em;color:#fff;line-height:1.02\">Tune into PROTEAM.</div><div class=\"a\" style=\"left:40px;right:40px;bottom:120px;text-align:center;font-family:VT;font-size:48px;letter-spacing:.05em;color:#3dffa8;line-height:1.15\">BLACK FRIDAY · 6 MONTHS FREE<br>FIRST TEAM · NO CARD · UNTIL 27 NOV 23:59</div>"
+  ]
+ ],
+ "audio": {
+  "cut": 5.7,
+  "old": [
+   "Clowns.mp3",
+   100
+  ],
+  "new": [
+   "Thugs.mp3",
+   138.5
+  ],
+  "old_vol": 0.55,
+  "new_vol": 0.75
  },
- "voz_sid": 29,
- "vel": 0.95,
- "clunks": [],
- "dark_at": 0
+ "lineas": [
+  [
+   11.3,
+   "Tune into ProTeam.",
+   16
+  ]
+ ]
 }
