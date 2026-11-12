@@ -1671,5 +1671,29 @@
   "note": "reel en story; con voz en off (voz.py)",
   "media_id": "18124855793287338",
   "published_at": "2026-11-11T13:27:07+0100"
+ },
+ {
+  "id": "ta03",
+  "when": "2026-11-12T13:30:00+01:00",
+  "kind": "reel",
+  "files": [
+   "reels/ta03-partizan-baskonia-ultimo-cuarto.mp4"
+  ],
+  "caption": "6 puntos en todo el último cuarto: así perdió el Baskonia en Belgrado. 🏀\nPartizan 80–66 Baskonia (Euroliga, jornada 11, 11 nov). Tres cuartos igualados: 23–18, 19–20 y 23–22. Al último se llegó 65–60.\nY ahí se acabó la gasolina: parcial de 15–6. Partizan castigó por dentro, con Jekiri mandando en la pintura, y el Baskonia se atascó en ataque. Es su décima derrota en once jornadas.\nSi te pasa en tu equipo: en ProTeam ves los puntos de cada cuarto y el control de carga (minutos y RPE de cada jugador), para saber qué cuarto se te cae y quién llega fundido al final.\nPara el martes: «El último cuarto». Dos idas y vueltas a tope y, sin parar, 4 contra 4 a tres posesiones. Se entrena a decidir cansado.\nJugadas recreadas en pizarra; las pantallas de ProTeam llevan datos de ejemplo. Fuentes: EFE (crónica y ficha del partido), EITB Kirolak y Gigantes del Basket.\nGuárdalo para el martes.\n#Euroliga #Baskonia #baloncesto #entrenadordebaloncesto #basket",
+  "cover": "covers/ta03-partizan-baskonia-ultimo-cuarto.jpg",
+  "status": "pending",
+  "note": "Trazo analiza #3: Partizan 80–66 Baskonia (Euroliga, 11 nov), 6 puntos en el último cuarto; puntos por cuarto + control de carga (RPE); con voz en off (voz.py)"
+ },
+ {
+  "id": "ta03s",
+  "when": "2026-11-12T13:31:00+01:00",
+  "kind": "story",
+  "files": [
+   "reels/ta03-partizan-baskonia-ultimo-cuarto.mp4"
+  ],
+  "caption": null,
+  "cover": null,
+  "status": "pending",
+  "note": "reel en story; con voz en off (voz.py)"
  }
 ]

@@ -217,3 +217,10 @@
 - Control de calidad: 2 pasadas (1.ª: cifras de los contadores pisando su título, etiqueta «Sergey» sobre una ficha, Trazo tapando el «30'» del gráfico, dos puntos montados en el mapa; 2.ª: OK). Fotogramas 7,8 / 13,2 / 22,0 / 30,0 s + 9,6 / 25,6 / 34,2 s y portada revisados.
 - Programado: ta02 Reel hoy 13:30 y ta02s Story 13:31.
 - **Aviso:** ta01 (Atlético–Barça) y ta01s siguen `pending` desde ayer 20:30: no hay commit de publicación de la ejecución de las 20:23. No se han tocado.
+
+### Producción 12 nov 08:50 · «Trazo analiza» #3
+- Partido: Partizan 80–66 Baskonia (Euroliga, jornada 11, Belgrado, 11 nov). Parón de selecciones en el fútbol; tocaba baloncesto (ta01 fútbol, ta02 balonmano). Dato contrastado en 3 fuentes (EFE vía Infobae con la ficha, EITB Kirolak, Gigantes del Basket): el Baskonia anotó 6 puntos en el último cuarto (parcial 15–6); parciales 23–18, 19–20, 23–22, 15–6 (42–38 al descanso, 65–60 al final del tercero); 1–10 en la clasificación. Patrón: Partizan castiga por dentro (Jekiri) y el Baskonia se queda sin gasolina. Los 17 puntos de Jekiri y las 17 pérdidas solo salen en EFE: no se usan en el vídeo.
+- ProTeam (datos de ejemplo): puntos por cuarto (estadística por parciales) y control de carga con minutos y RPE. Ejercicio: «El último cuarto» (2 idas y vueltas a tope y, sin parar, 4 contra 4 a tres posesiones).
+- Escena `tools/trazo/escenas/analiza-par-bkn.js` (pista de baloncesto FIBA por código, media pista vertical y pista entera horizontal), guion `guiones/analiza-par-bkn.json`, sonido `analiza_par_bkn`. Reel `reels/ta03-partizan-baskonia-ultimo-cuarto.mp4` (38,1 s, con voz), portada `covers/ta03-partizan-baskonia-ultimo-cuarto.jpg`.
+- Control de calidad: 2 pasadas (1.ª: «15–6» pisando una barra y saliéndose del recuadro, brazo de Trazo cruzando la cabeza en la portada, cabeza de Trazo sobre el panel; 2.ª: OK). Fotogramas 9,3 / 13,4 / 18,3 / 21,9 / 26,2 / 31,4 / 34,5 / 37,5 s y portada revisados; ffprobe con pista de audio AAC; voz.py sin «SOLAPA»; sin tramos estáticos de más de 2 s (freezedetect).
+- Programado: ta03 Reel hoy 13:30 y ta03s Story 13:31. Hoja Plan: filas ta03 y ta03s añadidas.
