@@ -5,3 +5,6 @@ tools/out/
 __pycache__/
 tools/wurtz/out/
 tools/wurtz/node_modules/
+tools/blackout/reels/*.log
+tools/blackout/out/foto/m-*.png
+tools/blackout/out/foto/p-*.png

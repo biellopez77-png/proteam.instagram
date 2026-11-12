@@ -1,0 +1,53 @@
+{
+ "dur": 19.6,
+ "voz_sid": 29,
+ "vel": 0.95,
+ "clunks": [
+  1.6,
+  2.5,
+  3.4
+ ],
+ "dark_at": 3.4,
+ "lineas": [
+  [
+   4.4,
+   "Quince días."
+  ],
+  [
+   6.2,
+   "El veintisiete se va la luz."
+  ],
+  [
+   8.5,
+   "Y con ella, los excels... los audios de guasap... y el caos del lunes."
+  ],
+  [
+   13.4,
+   "ProTim. Seis meses gratis para tu primer equipo. Hasta el Black Friday."
+  ]
+ ],
+ "escena": "s=marcador&d=15",
+ "cierre_at": 13.1,
+ "subs": [
+  [
+   4.4,
+   5.9,
+   "Quince días."
+  ],
+  [
+   6.2,
+   8.3,
+   "El 27 se va la luz."
+  ],
+  [
+   8.5,
+   10.3,
+   "Y con ella, los Excels,"
+  ],
+  [
+   10.3,
+   12.5,
+   "los audios de WhatsApp y el caos del lunes."
+  ]
+ ]
+}
