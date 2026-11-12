@@ -323,6 +323,7 @@ que mantener; el panel se actualiza solo al leerla.
   `asset: true`, `file_path`), apunta la URL devuelta con `python3 tools/panel_videos.py add ARCHIVO /_blob/…`,
   sube `panel_videos.json` igual y pon su URL en `datasets/videos` (`source.url` y `updated`) con
   ArtifactData update. Si esas herramientas no están en la sesión, omitir y decirlo en el resumen.
+- **Plan desde la cola** (12 nov): `python3 tools/plan_sheet.py old.json` (old.json = la respuesta de get_values de Plan) da todas las filas de Plan a partir de `queue.json` (publicadas y programadas, sin canceladas), conservando piezas y predicciones de lo publicado. Pilares nuevos: «Black Friday» (hasta el 27 nov) y «Marca» (desde el 28); aún sin predicción.
 - **Portadas**: si la planificación añade piezas nuevas, generar miniaturas (160 px de ancho, JPEG
   calidad 70, data URL) de cada `files[0]` de `queue.json` (para vídeos, `covers/<nombre>.jpg`), como
   JSON `[{archivo, img}]`; subirlo al panel con el Artifact tool (publish con `url` del panel,
