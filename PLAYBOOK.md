@@ -240,6 +240,21 @@ cuenta atrás y la presentación se rehacen con los encuadres de arriba.
 **Producción:** la tarea programada «Instagram ProTeam · producción diaria (Trazo analiza)» produce y
 programa cada mañana la pieza del día. La revisión de los lunes analiza y ajusta, no rellena.
 
+## Identidad retro y brief de 20 Reels + 10 posts (decidido por Biel el 12 nov 2026; manda sobre todo lo de abajo)
+
+- La cuenta cambia de estilo: **pasado = tele de tubo a pantalla completa** (VHS, teletexto, Windows 95, Nokia,
+  revista retro), **presente = móvil 3D girando despacio con capturas reales de ProTeam**. Fondo negro, sin logos extra.
+- Titulares y voz en inglés (Kokoro, gratis); los textos de la publicación, en castellano, con el crédito de la música
+  («Música: «X» y «Y», de Tanner Helland (CC BY 4.0)»).
+- Calendario 13 nov – 4 dic: un Reel al día a las 13:30 (ids `br01`–`br20`, `bv01`, `bv02`) y posts de feed a las
+  20:30 (ids `bp01`–`bp10`, carruseles e imágenes). **Excepción a «Solo Reels»: los posts con `campana: "blackout"` sí se
+  publican**, también los carruseles: `create_carousel_post` con `image_urls` = las `urls` que da `pub.py due`.
+- Los Reels de la cola salen en «borrador» hasta que su vídeo está renderizado; `python3 tools/blackout/queue_brief.py final`
+  los copia a `reels/` y `covers/` y los pasa a «pending». Nunca publiques un «borrador».
+- Oferta Black Friday (real, en la base de datos): cuentas nuevas que crean su primer equipo antes del 27 nov 2026
+  23:59 (Madrid) tienen 6 meses gratis en vez de 3, sin tarjeta. Desde el 28, 3 meses. Ningún texto la anuncia después del 27.
+- Producción diaria de análisis (Trazo) parada hasta que Biel diga lo contrario.
+
 ## Solo Reels (decidido por Biel el 11 nov 2026, 12:35; manda sobre lo anterior)
 
 - No se publican más posts de feed: ni imágenes, ni carruseles. Solo Reels (y las Stories que acompañan al Reel).
