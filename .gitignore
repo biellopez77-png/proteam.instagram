@@ -12,3 +12,5 @@ tools/blackout/reels/*.mp4
 tools/blackout/out/foto/
 tools/blackout/out/tele/
 tools/blackout/out/sb/
+tools/blackout/reels/*.wav
+tools/blackout/reels/*.log
