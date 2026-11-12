@@ -39,7 +39,7 @@ def cierre(u):
 
 port = serve()
 ff = subprocess.Popen(['ffmpeg', '-v', 'error', '-y', '-f', 'rawvideo', '-pix_fmt', 'rgb24', '-s', f'{W}x{H}', '-r', str(FPS), '-i', '-',
-    '-i', sys.argv[1].replace('.json', '.wav'), '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '18', '-pix_fmt', 'yuv420p',
+    '-i', sys.argv[1].replace('.json', '.wav'), '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '23', '-maxrate', '9M', '-bufsize', '18M', '-pix_fmt', 'yuv420p',
     '-c:a', 'aac', '-b:a', '192k', '-shortest', '-movflags', '+faststart', out], stdin=subprocess.PIPE)
 with sync_playwright() as p:
     b = p.chromium.launch(args=FLAGS); pg = b.new_page(viewport={'width': W, 'height': H})
