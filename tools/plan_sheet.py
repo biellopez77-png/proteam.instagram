@@ -18,13 +18,17 @@ for i in sorted(q, key=lambda x: x['when']):
     bf = i.get('campana') == 'blackout'
     pilar = p.get('pilar') or ('Black Friday' if i['when'] < '2026-11-28' else 'Marca') if bf else p.get('pilar', 'Fidelizar')
     if bf and not p: pilar = 'Black Friday' if i['when'] < '2026-11-28' else 'Marca'
+    if i.get('campana') == 'focos': pilar = 'Black Friday'
     if p and i['status'] == 'published': pieza = p['pieza']
     elif i['kind'] == 'story':
         m = re.search(r'bf-ch-(\d+)', i['files'][0]); pieza = f'Story: canal CH {m.group(1)} (cuenta atrás)' if m else 'Story'
+        if i.get('campana') == 'focos': pieza = 'Story · ' + {'k03': 'Se encienden los focos', 'k07': 'Crea tu cuenta. Sal al campo.'}.get(i['id'], 'Lista de espera')
     elif i['id'] == 'bf01': pieza = 'Lanzamiento Black Friday: actualización disponible (CH 15)'
     else:
         tag = {'br': 'R', 'bv': 'Vídeo de marca V', 'bp': 'P'}.get(i['id'][:2], '')
-        pieza = (tag + i['id'][2:] + ' · ' if tag else '') + first(i.get('caption'))
+        if i.get('campana') == 'focos' and i['kind'] == 'story': pieza = 'Story · ' + {'k03': 'Se encienden los focos', 'k07': 'Crea tu cuenta. Sal al campo.'}.get(i['id'], 'Lista de espera')
+        if not (i.get('campana') == 'focos' and i['kind'] == 'story'): pieza = (tag + i['id'][2:] + ' · ' if tag else '') + first(i.get('caption'))
+    if i['status'] == 'borrador' and i.get('campana') == 'focos': pieza += ' (borrador: falta tu visto bueno)'
     out.append([i['id'], fecha, hora, TIPO[i['kind']], pieza, pilar, EST[i['status']], str(i.get('media_id', '')),
                 p.get('pred_min', ''), p.get('pred', ''), p.get('pred_max', ''), i['files'][0]])
 print(json.dumps(out, ensure_ascii=False))
