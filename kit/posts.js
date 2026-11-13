@@ -19,7 +19,7 @@ const POSTS = [
     kick: 'Planificación', hl: 'La pizarra<br>se queda <em>corta.</em>', hs: 118, sub: 'Planifica la temporada, la semana y cada sesión desde el móvil.', cta: 'Crea tu cuenta', url: L, txtTop: 190 },
   // carrusel
   { id: 'c1-1', w: 1080, h: 1350, photo: F('img7.png'), pos: '50% 50%', chip: '1 / 3',
-    shade: 'linear-gradient(180deg,rgba(13,15,20,.75) 0%,rgba(13,15,20,0) 40%,rgba(13,15,20,0) 70%,rgba(13,15,20,.85) 100%)',
+    shade: 'linear-gradient(180deg,rgba(13,15,20,.95) 0%,rgba(13,15,20,.75) 30%,rgba(13,15,20,0) 52%,rgba(13,15,20,0) 70%,rgba(13,15,20,.85) 100%)',
     kick: 'Libreta · cronómetro · memoria', hl: '¿Así analizas<br><em>tus partidos?</em>', hs: 112, sub: '', cta: '', url: '<b>Desliza →</b>', txtTop: 190 },
   { id: 'c1-2', w: 1080, h: 1350, photo: F('img3-reg.png'), pos: '50% 50%', chip: '2 / 3',
     shade: 'linear-gradient(90deg,rgba(13,15,20,.92) 0%,rgba(13,15,20,.6) 45%,rgba(13,15,20,0) 70%),linear-gradient(180deg,rgba(13,15,20,0) 70%,rgba(13,15,20,.9) 100%)',
@@ -32,7 +32,7 @@ const POSTS = [
     shade: 'linear-gradient(180deg,rgba(13,15,20,.55) 0%,rgba(13,15,20,0) 30%,rgba(13,15,20,0) 45%,rgba(13,15,20,.9) 80%,rgba(13,15,20,.95) 100%)',
     kick: '27.11 · 23:59', hl: 'Se encienden<br>los <em>focos.</em>', hs: 132, sub: 'Crea tu cuenta y entra en la lista de espera.', cta: 'pro-team.app', url: '', txtBottom: 470 },
   { id: 's2-tunel', w: 1080, h: 1920, photo: F('img6.png'), pos: '50% 50%', chip: '27.11 · 23:59',
-    shade: 'linear-gradient(180deg,rgba(13,15,20,.7) 0%,rgba(13,15,20,0) 30%,rgba(13,15,20,0) 50%,rgba(13,15,20,.9) 80%,rgba(13,15,20,.95) 100%)',
+    shade: 'linear-gradient(180deg,rgba(13,15,20,.7) 0%,rgba(13,15,20,0) 25%,rgba(13,15,20,.55) 45%,rgba(13,15,20,.93) 62%,rgba(13,15,20,.97) 100%)',
     kick: 'Lista de espera', hl: 'Crea tu cuenta.<br><em>Sal al campo.</em>', hs: 120, sub: '6 meses gratis para quien esté en la lista antes del 27.11 a las 23:59.', cta: 'pro-team.app', url: '', txtBottom: 470 },
 ];
 (async () => {
