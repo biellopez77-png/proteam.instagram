@@ -38,7 +38,7 @@ REELS = {
     {'kind': 'video', 'src': 'vid102.mp4', 't': 1.35, 'd': 1.3, 'zoom': [1.1, 1.0], 'from': 1.2},
     {'kind': 'image', 'src': 'img2.png', 't': 2.65, 'd': 1.3, 'zoom': [1.0, 1.15], 'pos': '60% 60%'},
     {'kind': 'image', 'src': 'img1.png', 't': 3.95, 'd': 2.5, 'zoom': [1.2, 1.05], 'pos': '55% 60%'},
-    {'kind': 'image', 'src': 'img3-res.png', 't': 6.45, 'd': 2.6, 'zoom': [1.0, 1.12], 'pos': '60% 40%'},
+    {'kind': 'image', 'src': 'img3-res.png', 't': 6.45, 'd': 2.6, 'zoom': [1.0, 1.06], 'pos': '52% 40%'},
     {'kind': 'end', 't': 9.05, 'd': 2.95},
   ], 'text': [
     {'t': 0.1, 'd': 1.2, 'y': 760, 'cls': 'huge', 'html': 'Fútbol.'},
