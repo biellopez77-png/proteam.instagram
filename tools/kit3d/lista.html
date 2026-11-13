@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><link rel="stylesheet" href="/tools/kit3d/base.css">
+<script type="importmap">{"imports":{"three":"/tools/wurtz/node_modules/three/build/three.module.js","three/addons/":"/tools/wurtz/node_modules/three/examples/jsm/"}}</script>
+</head><body>
+<canvas id="gl" width="1080" height="1920"></canvas>
+<canvas id="grain" class="ov" width="540" height="960"></canvas>
+<div id="vig" class="ov"></div>
+<div class="ov">
+  <div class="dom" id="d0" style="top:1380px;font-size:120px">Algo se enciende.</div>
+  <div class="dom m" id="d1" style="top:330px;font-size:56px">Hasta entonces, la lista está abierta.</div>
+  <div class="dom m" id="d2" style="top:560px;font-size:70px">Los que estén dentro,</div>
+  <div class="dom b" id="d3" style="top:660px;font-size:250px">6 meses</div>
+  <div class="dom" id="d4" style="top:930px;font-size:150px">gratis.</div>
+  <div class="dom m" id="d5" style="top:1180px;font-size:60px">Los que no, se quedan fuera.</div>
+</div>
+<div id="endbg" class="ov"></div>
+<div class="ov">
+  <div class="dom" id="e1" style="top:520px;font-size:118px">El 27 se encienden</div>
+  <div class="dom b" id="e2" style="top:650px;font-size:236px">los focos.</div>
+  <img id="endmark" src="/kit/mark.png" style="top:960px" alt="">
+  <div class="dom p" id="e4" style="top:1140px">LISTA DE ESPERA ABIERTA</div>
+  <div class="dom cta" id="e5" style="top:1210px"><span>Entra en pro-team.app</span></div>
+  <div class="dom p" id="e6" style="top:1350px">HASTA EL 27.11 · 23:59</div>
+</div>
+<div id="flash" class="ov"></div>
+<script type="module">
+import { THREE, setup, label, photo, F, FS, FP, seg, win, ease, dust, domIn, grain, flash, cr, glowTex } from '/tools/kit3d/engine.js';
+const { renderer, scene, cam } = await setup({ fog: .006 });
+dust(scene, 1800, 40, -300, 120);
+const foco = await photo(scene, '/tools/kit3d/img/foco.jpg', 40, [0, 0, -40]);
+const tunel = await photo(scene, '/tools/kit3d/img/tunel.jpg', 60, [0, 0, -150]);
+// frases flotando dentro del túnel
+const L = [
+  label(scene, [{ t: 'No es una app más.', font: F(150), y: 110, glow: 'rgba(0,0,0,.85)' }], 1700, 220, 9, [0, 4.5, -70]),
+  label(scene, [{ t: 'Es el día en que', font: F(120, 500), y: 90, color: '#ffffff', glow: 'rgba(0,0,0,.85)' }, { t: 'dejas de improvisar.', font: FS(220), y: 280, color: '#ffffff', glow: 'rgba(0,10,40,.95)' }], 1800, 380, 10, [0, 3.2, -88]),
+];
+// fecha gigante
+const D1 = label(scene, [{ t: '27.11', font: F(420), y: 250, glow: 'rgba(150,190,255,.6)' }], 1500, 500, 8, [0, 3.2, -110]);
+const D2 = label(scene, [{ t: '23:59', font: FP(260), y: 160, color: '#4f86ff', glow: 'rgba(47,107,255,.9)' }], 1300, 320, 5.6, [0, -.6, -110]);
+// lo que llega
+const feats = ['Fútbol, baloncesto y balonmano.', 'Cada partido, registrado en directo.', 'Toda la temporada, planificada.'].map((t, i) => label(scene, [{ t: '●  ' + t, font: F(100, 500), y: 90, color: '#eef2fa', glow: 'rgba(150,190,255,.4)' }], 2000, 180, 8.5, [0, 3.4 - i * 2.2, -128 - i * 3]));
+const POS = [[0, 0, 0, 20], [2.2, 0, 0, 0], [4, 0, 1, -40], [6, 0, 2, -58], [8, 0, 3, -78], [10, 0, 3, -92], [12, 0, 2, -104], [14, 0, 1, -116], [16, 0, 1, -128], [18, 0, 2, -138], [20, 0, 2, -144], [23, 0, 2, -146]];
+const LOOK = [[0, 0, 2, -40], [2.2, 0, 1, -60], [4, 0, 2, -80], [6, 0, 3, -100], [8, 0, 3, -110], [10, 0, 3, -120], [12, 0, 2, -130], [14, 0, 1, -140], [16, 0, 1, -150], [18, 0, 2, -160], [20, 0, 2, -160], [23, 0, 2, -160]];
+window.frame = (t) => {
+  cam.position.set(...cr(POS, t)); cam.lookAt(...cr(LOOK, t));
+  cam.position.y += Math.sin(t * 5.2) * .12 * seg(t, 2.2, 3) * (1 - seg(t, 8, 9));   // pasos dentro del túnel
+  cam.rotation.z += Math.sin(t * 1.5) * .01;
+  cam.fov = 48 + 12 * Math.exp(-Math.pow((t - 1.0) / .12, 2)) - 6 * ease.inOut(seg(t, 8, 10)) + 6 * ease.inOut(seg(t, 18, 19)); cam.updateProjectionMatrix();
+  // el foco se enciende de golpe en el segundo 1
+  foco.material.opacity = (t > 1.0 ? 1 : .22) * (1 - seg(t, 2.6, 3.4)); flash(t, 1.0, .65, .35);
+  domIn('d0', t, .05, 2.9, .3);
+  tunel.material.opacity = seg(t, 2.5, 3.4) * (1 - seg(t, 9, 10.5)) * .95;
+  L[0].material.opacity = win(t, 3.2, 5.6, .35, .3); L[1].material.opacity = win(t, 4.8, 8.2, .35, .35);
+  // fecha: cae girando y se queda
+  const dk = seg(t, 8.6, 9.3); D1.material.opacity = dk * (1 - seg(t, 11.6, 12)); D1.rotation.x = (1 - ease.back(dk)) * 1.4;
+  const dk2 = seg(t, 9.1, 9.7); D2.material.opacity = dk2 * (1 - seg(t, 11.6, 12)); D2.rotation.x = (1 - ease.back(dk2)) * -1.4;
+  domIn('d1', t, 9.8, 12);
+  flash(t, 8.62, .35, .3);
+  feats.forEach((m, i) => { m.material.opacity = win(t, 12 + i * 1.1, 15.6 + i * .2, .35, .3); });
+  domIn('d2', t, 16.0, 19.2); domIn('d3', t, 16.4, 19.2); domIn('d4', t, 16.7, 19.2); domIn('d5', t, 17.6, 19.2);
+  flash(t, 16.4, .4, .3);
+  document.getElementById('endbg').style.opacity = seg(t, 19.1, 19.6) * .95;
+  domIn('e1', t, 19.4); domIn('e2', t, 19.6); domIn('e4', t, 20.2); domIn('e5', t, 20.35); domIn('e6', t, 20.5);
+  const mk = document.getElementById('endmark'); const mv = seg(t, 19.9, 20.3); mk.style.opacity = mv; mk.style.transform = `scale(${.4 + .6 * ease.back(mv)}) rotate(${(1 - mv) * -30}deg)`;
+  renderer.render(scene, cam); grain(t); return true;
+};
+window.frame(0); window.ready = true;
+</script>
+</body></html>

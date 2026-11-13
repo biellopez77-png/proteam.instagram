@@ -4,11 +4,11 @@
 import sys, os, subprocess, shutil
 from playwright.sync_api import sync_playwright
 from photo import serve, FLAGS
-mode, page = sys.argv[1], sys.argv[2]; port = serve(); FPS = 25
+mode, page = sys.argv[1], sys.argv[2]; port = serve(); FPS = int(os.environ.get('FPS', 25))
 with sync_playwright() as p:
     b = p.chromium.launch(args=FLAGS); pg = b.new_page(viewport={'width': 1080, 'height': 1920})
     pg.on('console', lambda m: print('console:', m.text) if m.type == 'error' else None)
-    pg.goto(f'http://127.0.0.1:{port}/tools/blackout/{page}'); pg.wait_for_function('window.ready', timeout=120000)
+    pg.goto(f'http://127.0.0.1:{port}/' + (page if '/' in page else 'tools/blackout/' + page)); pg.wait_for_function('window.ready', timeout=120000)
     if mode == 'still':
         pre = sys.argv[3]
         for t in sys.argv[4:]: pg.evaluate(f'frame({t})'); pg.screenshot(path=f'{pre}-{t}.png')

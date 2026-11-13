@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8">
+<style>
+@font-face{font-family:M;font-weight:800;src:url(/tools/fonts/manrope-latin-800-normal.woff2)}
+@font-face{font-family:M;font-weight:500;src:url(/tools/fonts/manrope-latin-500-normal.woff2)}
+@font-face{font-family:S;font-style:italic;src:url(/tools/fonts/instrument-serif-latin-400-italic.woff2)}
+@font-face{font-family:P;font-weight:500;src:url(/tools/fonts/ibm-plex-mono-latin-500-normal.woff2)}
+html,body{margin:0;width:1080px;height:1920px;overflow:hidden;background:#05070c}
+canvas{display:block}
+#grain{position:absolute;left:0;top:0;width:1080px;height:1920px;pointer-events:none;mix-blend-mode:overlay;opacity:.14}
+#vig{position:absolute;left:0;top:0;width:1080px;height:1920px;pointer-events:none;background:radial-gradient(120% 80% at 50% 50%,rgba(0,0,0,0) 55%,rgba(0,0,0,.6) 100%)}
+#labs .lb{position:absolute;left:0;width:1080px;top:1560px;text-align:center;font-size:130px;letter-spacing:-.045em;opacity:0;text-shadow:0 0 40px rgba(150,190,255,.5),0 6px 30px rgba(0,0,0,.8)}
+#end{position:absolute;left:0;top:0;width:1080px;height:1920px;opacity:0;background:radial-gradient(90% 60% at 50% 45%,#10204a 0%,#05070c 70%);color:#eef2fa;font-family:M}
+#end .a{position:absolute;left:0;width:1080px;text-align:center;font-weight:800;letter-spacing:-.045em;line-height:1;white-space:nowrap;text-shadow:0 0 40px rgba(150,190,255,.45)}
+#end .b{color:#4f86ff;font-family:S;font-style:italic;font-weight:400;letter-spacing:-.01em;text-shadow:0 0 50px rgba(47,107,255,.9)}
+#end img{position:absolute;left:470px;width:140px;height:140px}
+#end .m{position:absolute;left:0;width:1080px;text-align:center;font-family:P;font-weight:500;font-size:34px;letter-spacing:.12em;color:#c9d6f2}
+#end .cta{position:absolute;left:0;width:1080px;text-align:center}
+#end .cta span{display:inline-block;background:#2f6bff;color:#fff;font-weight:800;font-size:56px;padding:20px 38px 18px;border-radius:16px;box-shadow:0 0 60px rgba(47,107,255,.6)}
+</style>
+<script type="importmap">{"imports":{"three":"/tools/wurtz/node_modules/three/build/three.module.js","three/addons/":"/tools/wurtz/node_modules/three/examples/jsm/"}}</script>
+</head><body>
+<canvas id="gl" width="1080" height="1920"></canvas>
+<canvas id="grain" width="540" height="960"></canvas>
+<div id="vig"></div>
+<div id="labs" style="position:absolute;left:0;top:0;width:1080px;height:1920px;pointer-events:none;font-family:M;font-weight:800;color:#eef2fa"><div class="lb" id="l0">Registra.</div><div class="lb" id="l1">Analiza.</div><div class="lb" id="l2">Planifica.</div></div>
+<div id="end">
+  <div class="a" id="e1" style="top:520px;font-size:118px">El 27 se encienden</div>
+  <div class="a b" id="e2" style="top:650px;font-size:236px">los focos.</div>
+  <img id="e3" src="/kit/mark.png" style="top:960px" alt="">
+  <div class="m" id="e4" style="top:1140px">LISTA DE ESPERA ABIERTA</div>
+  <div class="cta" id="e5" style="top:1210px"><span>Crea tu cuenta · 6 meses gratis</span></div>
+  <div class="m" id="e6" style="top:1350px">PRO-TEAM.APP · HASTA EL 27.11 · 23:59</div>
+</div>
+<script type="module">
+import * as THREE from 'three';
+import { RoundedBoxGeometry } from 'three/addons/geometries/RoundedBoxGeometry.js';
+
+const W = 1080, H = 1920, DUR = 13.5;
+const renderer = new THREE.WebGLRenderer({ canvas: document.getElementById('gl'), antialias: true, preserveDrawingBuffer: true });
+renderer.setSize(W, H, false); renderer.setPixelRatio(1);
+renderer.outputEncoding = THREE.sRGBEncoding;
+const scene = new THREE.Scene();
+scene.background = new THREE.Color('#05070c');
+scene.fog = new THREE.FogExp2('#05070c', 0.0125);
+const cam = new THREE.PerspectiveCamera(48, W / H, 0.1, 600);
+
+// ---------- utilidades
+let seed = 27; const rnd = () => { seed = (seed * 16807) % 2147483647; return seed / 2147483647; };
+const ease = { out: (x) => 1 - Math.pow(1 - x, 3), inOut: (x) => x < .5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2, back: (x) => { const c = 1.9; return 1 + (c + 1) * Math.pow(x - 1, 3) + c * Math.pow(x - 1, 2); } };
+const clamp = (x) => Math.max(0, Math.min(1, x));
+const seg = (t, a, b) => clamp((t - a) / (b - a));
+
+// textura de texto: líneas [{t, font, color, glow}]
+function textTex(lines, w, h, opt = {}) {
+  const c = document.createElement('canvas'); c.width = w; c.height = h; const g = c.getContext('2d');
+  if (opt.bg) { g.fillStyle = opt.bg; const r = opt.radius || 0; g.beginPath(); g.roundRect(0, 0, w, h, r); g.fill(); }
+  if (opt.blur) g.filter = `blur(${opt.blur}px)`;
+  g.textAlign = opt.align || 'center'; g.textBaseline = 'middle';
+  const x = opt.align === 'left' ? (opt.pad || 40) : w / 2;
+  lines.forEach((l) => { g.font = l.font; g.fillStyle = l.color || '#eef2fa'; g.shadowColor = l.glow || 'rgba(0,0,0,0)'; g.shadowBlur = l.glow ? 40 : 0; g.fillText(l.t, x, l.y); if (l.glow) { g.shadowBlur = 12; g.fillText(l.t, x, l.y); } });
+  const t = new THREE.CanvasTexture(c); t.encoding = THREE.sRGBEncoding; t.anisotropy = 8; return t;
+}
+function plane(tex, w, h) {
+  const m = new THREE.MeshBasicMaterial({ map: tex, transparent: true, depthWrite: false, side: THREE.DoubleSide, fog: true });
+  return new THREE.Mesh(new THREE.PlaneGeometry(w, h), m);
+}
+const loadTex = (u) => new Promise((r) => new THREE.TextureLoader().load(u, (t) => { t.encoding = THREE.sRGBEncoding; t.anisotropy = 8; r(t); }));
+
+// Catmull-Rom en tiempo: la cámara no se para nunca en un punto clave
+function cr(keys, t) {
+  let i = 0; while (i < keys.length - 2 && t > keys[i + 1][0]) i++;
+  const k0 = keys[Math.max(0, i - 1)], k1 = keys[i], k2 = keys[i + 1], k3 = keys[Math.min(keys.length - 1, i + 2)];
+  const s = clamp((t - k1[0]) / (k2[0] - k1[0])), s2 = s * s, s3 = s2 * s;
+  return [1, 2, 3].map((j) => 0.5 * ((2 * k1[j]) + (-k0[j] + k2[j]) * s + (2 * k0[j] - 5 * k1[j] + 4 * k2[j] - k3[j]) * s2 + (-k0[j] + 3 * k1[j] - 3 * k2[j] + k3[j]) * s3));
+}
+
+await document.fonts.load('800 100px M'); await document.fonts.load('500 40px M'); await document.fonts.load('italic 100px S'); await document.fonts.load('500 30px P');
+const F = (s, w = 800) => `${w} ${s}px M`, FS = (s) => `italic ${s}px S`, FP = (s) => `500 ${s}px P`;
+
+// ---------- polvo en el aire (paralaje)
+{
+  const n = 1400, pos = new Float32Array(n * 3);
+  for (let i = 0; i < n; i++) { pos[i * 3] = (rnd() - .5) * 120; pos[i * 3 + 1] = (rnd() - .5) * 140; pos[i * 3 + 2] = 60 - rnd() * 360; }
+  const g = new THREE.BufferGeometry(); g.setAttribute('position', new THREE.BufferAttribute(pos, 3));
+  scene.add(new THREE.Points(g, new THREE.PointsMaterial({ color: '#8fb0ff', size: .16, transparent: true, opacity: .55, depthWrite: false })));
+}
+
+// ---------- 1 · ¿QUÉ RECUERDAS / DEL ÚLTIMO PARTIDO?
+const T1 = plane(textTex([{ t: '¿QUÉ', font: F(300), y: 180 }, { t: 'RECUERDAS', font: F(300), y: 470 }], 2000, 640), 17, 5.44); T1.position.set(0, 0, 0); scene.add(T1);
+const T2 = plane(textTex([{ t: 'del último', font: F(150, 500), y: 110, color: '#9aa6bd' }, { t: 'partido?', font: FS(330), y: 360, color: '#4f86ff', glow: 'rgba(47,107,255,.9)' }], 1600, 520), 14, 4.55); T2.position.set(0, -.5, -26); scene.add(T2);
+
+// ---------- 2 · recuerdos borrosos
+const frags = [['¿26–17?', -3.5, 5, -48], ['¿Quién marcó el 15?', 3.5, 1.5, -56], ['¿2 exclusiones?', -3, -4, -64], ['¿Minutos de Pol?', 4, -6.5, -71], ['¿Cuántas paradas?', -4, 7, -78], ['¿El 7 o el 9?', 3.5, 9, -84]];
+const fragMeshes = frags.map(([txt, x, y, z], i) => {
+  const tex = textTex([{ t: txt, font: FP(64), y: 110, color: '#0d0f14' }], 900, 220, { bg: '#e9e5dc', radius: 26, blur: i % 2 ? 1.5 : 0 });
+  const m = plane(tex, 8, 1.96); m.position.set(x, y, z); m.rotation.set((rnd() - .5) * .5, (rnd() - .5) * .9, (rnd() - .5) * .4); scene.add(m); return m;
+});
+const T3 = plane(textTex([{ t: 'Lo que no se apunta,', font: F(160, 500), y: 100, color: '#c7cfdd' }, { t: 'se olvida.', font: F(370), y: 340, glow: 'rgba(170,200,255,.5)' }], 1700, 460), 15, 4.06); T3.position.set(0, 0, -112); scene.add(T3);
+// la frase se deshace en partículas: copias desplazadas que se separan
+const T3ghosts = [0, 1, 2, 3].map(() => { const g = T3.clone(); g.material = T3.material.clone(); g.material.opacity = 0; scene.add(g); return g; });
+
+// ---------- 3 · pista 3D con los 7
+const court = new THREE.Group(); court.position.set(0, -12, -150); scene.add(court);
+{
+  const c = document.createElement('canvas'); c.width = 1400; c.height = 1400; const g = c.getContext('2d');
+  g.fillStyle = '#0c1a3a'; g.fillRect(0, 0, 1400, 1400); g.strokeStyle = '#cfe0ff'; g.lineWidth = 10; g.strokeRect(60, 60, 1280, 1280);
+  g.beginPath(); g.arc(700, 60, 420, 0, Math.PI); g.stroke(); g.setLineDash([30, 26]); g.beginPath(); g.arc(700, 60, 600, 0, Math.PI); g.stroke(); g.setLineDash([]);
+  g.beginPath(); g.moveTo(60, 1340); g.lineTo(1340, 1340); g.stroke();
+  const tex = new THREE.CanvasTexture(c); tex.encoding = THREE.sRGBEncoding;
+  const floor = new THREE.Mesh(new THREE.PlaneGeometry(40, 40), new THREE.MeshBasicMaterial({ map: tex, fog: true })); floor.rotation.x = -Math.PI / 2; court.add(floor);
+  const glowC = document.createElement('canvas'); glowC.width = 512; glowC.height = 512; const gg = glowC.getContext('2d'); const rg = gg.createRadialGradient(256, 256, 0, 256, 256, 256); rg.addColorStop(0, 'rgba(47,107,255,.55)'); rg.addColorStop(1, 'rgba(47,107,255,0)'); gg.fillStyle = rg; gg.fillRect(0, 0, 512, 512);
+  const halo = new THREE.Mesh(new THREE.PlaneGeometry(70, 70), new THREE.MeshBasicMaterial({ map: new THREE.CanvasTexture(glowC), transparent: true, depthWrite: false })); halo.rotation.x = -Math.PI / 2; halo.position.y = -.05; court.add(halo);
+}
+const players = [['ÀP', 12, 0, -14], ['NC', 7, -14, -6], ['BM', 14, 0, -3], ['JS', 10, 14, -6], ['PV', 4, -10, 8], ['LN', 11, 10, 8], ['MR', 17, 0, 12]].map(([n, num, x, z]) => {
+  const tex = textTex([{ t: n, font: F(150), y: 200, color: '#0d0f14' }, { t: String(num), font: F(70), y: 330, color: '#2f6bff' }], 400, 420, { bg: '#f4f2ec', radius: 200 });
+  const m = new THREE.Mesh(new THREE.CircleGeometry(2.2, 48), new THREE.MeshBasicMaterial({ map: tex, transparent: true, fog: true }));
+  m.position.set(x, 2.4, z); court.add(m); m.userData = { x, z, n }; return m;
+});
+const goal = plane(textTex([{ t: '+1 GOL · BM 14', font: F(120), y: 130, color: '#ffffff' }], 1200, 260, { bg: '#2f6bff', radius: 130 }), 12, 2.6); court.add(goal); goal.position.set(0, 4, -3);
+
+// ---------- 4 · móvil con la app real
+const phone = new THREE.Group(); phone.position.set(0, 0, -215); scene.add(phone);
+scene.add(new THREE.AmbientLight('#ffffff', .6)); const kl = new THREE.DirectionalLight('#9fc0ff', 1.6); kl.position.set(10, 20, -180); scene.add(kl);
+const body = new THREE.Mesh(new RoundedBoxGeometry(9.4, 19.6, .9, 8, 1.3), new THREE.MeshStandardMaterial({ color: '#111318', metalness: .6, roughness: .35 }));
+phone.add(body);
+const screens = await Promise.all(['/tools/app/reg-0.jpg', '/tools/app/res-0.jpg', '/tools/app/mo-plan.jpg'].map(loadTex));
+const scrMat = new THREE.MeshBasicMaterial({ map: screens[0], fog: false });
+const scrGeo = new THREE.PlaneGeometry(8.7, 18.85); const scr = new THREE.Mesh(scrGeo, scrMat); scr.position.z = .46; phone.add(scr);
+const scr2 = new THREE.Mesh(scrGeo, new THREE.MeshBasicMaterial({ map: screens[1], transparent: true, opacity: 0, fog: false })); scr2.position.z = .47; phone.add(scr2);
+// recorte de la imagen a la proporción de la pantalla (las capturas son más altas)
+screens.forEach((t) => { t.repeat.set(1, .93); t.offset.set(0, .07); });
+const labels = ['Registra.', 'Analiza.', 'Planifica.'].map((l, i) => { const m = plane(textTex([{ t: l, font: F(200), y: 150, glow: 'rgba(150,190,255,.5)' }], 1200, 300), 10, 2.5); m.position.set(0, 13.2, -215); m.material.opacity = 0; scene.add(m); return m; });
+
+// ---------- cámara: [t, x, y, z] y hacia dónde mira
+const POS = [[0, 0, 1.2, 36], [1.0, 0, 0.4, 3], [1.6, .4, -.3, -6], [2.4, -3, 1, -38], [3.2, 4, -2, -58], [4.0, -2, 2, -74], [4.8, 0, 0, -84], [5.6, .5, -.3, -92], [6.4, 0, 14, -122], [7.4, 6, 20, -134], [8.3, -12, 8, -176], [8.6, -14, 8, -180], [9.6, -9, 1, -188], [10.6, 9, 0, -190], [11.4, 3, 0, -200], [12.0, 0, 0, -209.6], [13.5, 0, 0, -210]];
+const LOOK = [[0, 0, 0, 0], [1.0, 0, -.5, -26], [1.6, 0, -1, -40], [2.4, -2, 0, -60], [3.2, 3, -2, -80], [4.0, 0, 0, -100], [4.8, 0, 0, -112], [5.6, 0, 0, -112], [6.4, 0, -6, -140], [7.4, 0, -12, -150], [8.3, 0, -4, -200], [8.6, 0, -2, -210], [9.6, 0, 0, -215], [10.6, 0, 0, -215], [11.4, 0, 0, -215], [12.0, 0, 0, -215], [13.5, 0, 0, -215]];
+
+window.frame = (t) => {
+  const p = cr(POS, t), l = cr(LOOK, t);
+  cam.position.set(...p); cam.lookAt(...l);
+  // ligero balanceo de cámara en mano
+  cam.rotation.z += Math.sin(t * 1.7) * .012;
+  // golpes de cámara en los cortes de música: FOV respira
+  cam.fov = 48 + 10 * Math.exp(-Math.pow((t - 1.0) / .12, 2)) - 6 * Math.exp(-Math.pow((t - 6.4) / .2, 2)) + 14 * ease.inOut(seg(t, 11.4, 12.1)); cam.updateProjectionMatrix();
+  // 1
+  T1.material.opacity = 1 - seg(t, .95, 1.05); T2.material.opacity = seg(t, .6, 1.0) * (1 - seg(t, 1.75, 1.95));
+  T1.scale.setScalar(1 + .15 * ease.out(seg(t, 0, 1)));
+  // 2: recuerdos que tiemblan y se borran al pasar
+  fragMeshes.forEach((m, i) => { const pass = seg(t, 1.6 + i * .32, 2.4 + i * .32); m.material.opacity = Math.min(seg(t, 1.2 + i * .25, 1.6 + i * .25), 1 - seg(t, 3.3 + i * .25, 3.9 + i * .25)); m.rotation.z += Math.sin(t * 9 + i) * .002; m.position.x += Math.sin(t * 13 + i * 3) * .01 * pass; });
+  const f3 = seg(t, 3.5, 3.9), d3 = seg(t, 5.7, 6.4);
+  T3.material.opacity = f3 * (1 - d3);
+  T3ghosts.forEach((g) => { g.visible = false; }); T3.scale.setScalar(1 + .6 * ease.inOut(d3));
+  // 3: pista, jugadores que saltan, el gol sube hacia la cámara
+  players.forEach((m, i) => { const k = seg(t, 6.45 + i * .07, 6.85 + i * .07); m.scale.setScalar(Math.max(.001, ease.back(k))); m.lookAt(cam.position); });
+  const hit = seg(t, 7.0, 7.15); players[2].material.color.setRGB(1 - .8 * hit, 1 - .6 * hit, 1);
+  const gk = seg(t, 7.05, 7.9); goal.position.set(0, 4 + 22 * ease.inOut(gk), -3 + 6 * gk); goal.material.opacity = seg(t, 7.05, 7.2) * (1 - seg(t, 7.8, 8.05)); goal.lookAt(cam.position);
+  court.rotation.y = -.25 + .25 * ease.out(seg(t, 6.2, 8.4));
+  // 4: móvil gira, pantallas cambian en cada golpe
+  phone.visible = t > 7.5;
+  phone.rotation.y = .5 - 1.0 * ease.inOut(seg(t, 8.4, 11.2)); phone.rotation.x = .08 * Math.sin(t);
+  const sw1 = seg(t, 9.75, 10.0), sw2 = seg(t, 10.75, 11.0);
+  if (t < 10.4) { scr.material.map = screens[0]; scr2.material.map = screens[1]; scr2.material.opacity = sw1; }
+  else { scr.material.map = screens[1]; scr2.material.map = screens[2]; scr2.material.opacity = sw2; }
+  scr2.position.y = -18.85 * (1 - ease.out(t < 10.4 ? sw1 : sw2)) * 0;
+  labels.forEach((m) => { m.visible = false; });
+  ['l0', 'l1', 'l2'].forEach((id, i) => { const a = 8.9 + i; const v = seg(t, a, a + .25) * (1 - seg(t, a + .8, a + 1.0)); const el = document.getElementById(id); el.style.opacity = v; el.style.filter = `blur(${(1 - seg(t, a, a + .25)) * 14}px)`; el.style.transform = `translateY(${(1 - ease.out(seg(t, a, a + .3))) * 60}px)`; });
+  // 5: la cámara entra en la pantalla y aparece el cierre
+  const e = seg(t, 11.85, 12.15); const endEl = document.getElementById('end'); endEl.style.opacity = e;
+  const k = (a) => ease.out(seg(t, a, a + .4));
+  [['e1', 12.0], ['e2', 12.15], ['e3', 12.45], ['e4', 12.6], ['e5', 12.7], ['e6', 12.85]].forEach(([id, a]) => { const el = document.getElementById(id); const v = k(a); el.style.opacity = v; el.style.filter = `blur(${(1 - v) * 14}px)`; el.style.transform = `translateY(${(1 - v) * 40}px) scale(${1 + (1 - v) * .2})`; });
+  document.getElementById('end').style.transform = `scale(${1.08 - .08 * ease.out(seg(t, 11.9, 13.5))})`;
+  renderer.render(scene, cam);
+  // grano
+  const gc = document.getElementById('grain').getContext('2d'); const id = gc.createImageData(540, 960); let s = Math.floor(t * 24) * 7919 + 1;
+  for (let i = 0; i < id.data.length; i += 4) { s = (s * 16807) % 2147483647; const v = s & 255; id.data[i] = id.data[i + 1] = id.data[i + 2] = v; id.data[i + 3] = 255; }
+  gc.putImageData(id, 0, 0);
+  return true;
+};
+window.frame(0);
+window.ready = true;
+</script>
+</body></html>
