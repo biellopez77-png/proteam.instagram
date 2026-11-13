@@ -329,3 +329,6 @@ que mantener; el panel se actualiza solo al leerla.
   JSON `[{archivo, img}]`; subirlo al panel con el Artifact tool (publish con `url` del panel,
   `asset: true`) y actualizar el documento `datasets/portadas` (url, name, updated) con ArtifactData.
   Si esas herramientas no están disponibles en la sesión, omitir este paso.
+
+## Oferta (13 nov 2026, decidido por Biel; manda sobre lo anterior)
+- La oferta es **3 meses gratis** (no 6). No habrá más ofertas. Ninguna pieza menciona 6 meses.
