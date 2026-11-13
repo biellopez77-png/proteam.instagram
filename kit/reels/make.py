@@ -62,14 +62,14 @@ html,body{width:1080px;height:1920px;overflow:hidden;background:#0d0f14}
 .sc{position:absolute;left:0;top:0;width:1080px;height:1920px;overflow:hidden}
 .cam{position:absolute;left:0;top:0;width:1080px;height:1920px}
 .cam video,.cam img.bgi{position:absolute;left:0;top:0;width:1080px;height:1920px;object-fit:cover}
-.shade{position:absolute;left:0;top:0;width:1080px;height:1920px;background:linear-gradient(180deg,rgba(13,15,20,.85) 0%,rgba(13,15,20,.35) 34%,rgba(13,15,20,0) 52%,rgba(13,15,20,.2) 78%,rgba(13,15,20,.8) 100%)}
-.tx{position:absolute;left:84px;width:912px;white-space:nowrap}
+.shade{position:absolute;left:0;top:0;width:1080px;height:1920px;background:linear-gradient(180deg,rgba(13,15,20,.85) 0%,rgba(13,15,20,.5) 40%,rgba(13,15,20,0) 58%,rgba(13,15,20,.2) 78%,rgba(13,15,20,.8) 100%)}
+.tx{position:absolute;left:84px;width:912px;white-space:nowrap;text-shadow:0 6px 40px rgba(0,0,0,.75)}
 .tx .w{display:inline-block;white-space:pre}
 .big{font-weight:800;font-size:128px;letter-spacing:-.04em;line-height:1}
 .big.s{font-size:112px}
 .huge{font-weight:800;font-size:172px;letter-spacing:-.05em;line-height:1;text-align:center;left:0;width:1080px}
 .kick{font-family:P;font-weight:500;font-size:34px;letter-spacing:.12em;color:#9db8ff}
-em{font-family:S;font-style:italic;font-weight:400;color:#2f6bff;font-size:1.1em;letter-spacing:-.01em;text-shadow:0 0 50px rgba(47,107,255,.45)}
+em{font-family:S;font-style:italic;font-weight:400;color:#4f84ff;font-size:1.1em;letter-spacing:-.01em;text-shadow:0 4px 30px rgba(0,0,0,.8),0 0 50px rgba(47,107,255,.5)}
 #logo{position:absolute;left:84px;top:170px;display:flex;align-items:center;gap:16px;font-weight:800;font-size:40px;letter-spacing:-.02em}
 #logo img{width:62px;height:62px}
 .phone{position:absolute;left:290px;top:430px;width:500px;height:1085px;border-radius:72px;background:#0a0b0f;box-shadow:0 0 0 4px #2a2f3a,0 60px 160px rgba(0,0,0,.7),0 0 140px rgba(47,107,255,.35);overflow:hidden}
