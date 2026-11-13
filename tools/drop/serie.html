@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8">
+<style>
+@font-face{font-family:M;font-weight:800;src:url(../fonts/manrope-latin-800-normal.woff2)}
+@font-face{font-family:M;font-weight:700;src:url(../fonts/manrope-latin-700-normal.woff2)}
+@font-face{font-family:M;font-weight:500;src:url(../fonts/manrope-latin-500-normal.woff2)}
+@font-face{font-family:S;font-style:italic;src:url(../fonts/instrument-serif-latin-400-italic.woff2)}
+@font-face{font-family:P;font-weight:500;src:url(../fonts/ibm-plex-mono-latin-500-normal.woff2)}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#000}
+.post{position:relative;width:1080px;height:1350px;overflow:hidden;background:#07080b;color:#f2f1ec;font-family:M}
+.ph{position:absolute;left:0;top:0;width:100%;height:100%;object-fit:cover;filter:saturate(.72) contrast(1.06) brightness(.92)}
+.tone{position:absolute;inset:0}
+.grain{position:absolute;inset:0;mix-blend-mode:overlay;opacity:.32}
+/* marco de serie */
+.lbl{position:absolute;font-family:P;font-weight:500;font-size:21px;letter-spacing:.14em;text-transform:uppercase;color:rgba(242,241,236,.82);white-space:nowrap}
+.tl{left:56px;top:52px}.tr{right:56px;top:52px;text-align:right}.bl{left:56px;bottom:50px}.br{right:56px;bottom:50px;text-align:right}
+.crop{position:absolute;width:26px;height:26px;border-color:rgba(242,241,236,.6);border-style:solid;border-width:0}
+.c1{left:28px;top:28px;border-left-width:2px;border-top-width:2px}.c2{right:28px;top:28px;border-right-width:2px;border-top-width:2px}
+.c3{left:28px;bottom:28px;border-left-width:2px;border-bottom-width:2px}.c4{right:28px;bottom:28px;border-right-width:2px;border-bottom-width:2px}
+.mark{display:inline-flex;align-items:center;gap:12px;font-family:M;font-weight:800;font-size:28px;letter-spacing:-.02em;text-transform:none;color:#f2f1ec}
+.mark img{width:40px;height:40px}
+.h{position:absolute;left:56px;right:56px;font-weight:800;letter-spacing:-.05em;line-height:.9}
+.it{font-family:S;font-style:italic;font-weight:400;letter-spacing:-.015em;color:#3f7bff}
+.copy{position:absolute;left:56px;font-weight:500;font-size:30px;line-height:1.35;color:rgba(242,241,236,.86);letter-spacing:-.01em}
+.rule{position:absolute;left:56px;right:56px;height:2px;background:rgba(242,241,236,.55)}
+.blue{color:#3f7bff}
+/* DROP */
+.date{position:absolute;left:40px;right:40px;bottom:190px;font-weight:800;font-size:330px;letter-spacing:-.07em;line-height:.8;white-space:nowrap}
+.tag{display:inline-block;background:#2f6bff;color:#fff;font-family:P;font-weight:500;font-size:22px;letter-spacing:.14em;padding:12px 18px 10px}
+/* WAITLIST: pase */
+.pass{position:absolute;left:56px;right:56px;bottom:118px;height:330px;background:#f2f1ec;color:#0b0c10;border-radius:18px;display:flex}
+.pass .l{flex:1;padding:34px 38px;display:flex;flex-direction:column;justify-content:space-between}
+.pass .r{width:250px;border-left:3px dashed #0b0c10;padding:34px 30px;display:flex;flex-direction:column;justify-content:space-between;align-items:flex-start;position:relative}
+.pass .r:before,.pass .r:after{content:"";position:absolute;left:-17px;width:32px;height:32px;border-radius:50%;background:#07080b}
+.pass .r:before{top:-16px}.pass .r:after{bottom:-16px}
+.pk{font-family:P;font-weight:500;font-size:19px;letter-spacing:.14em;text-transform:uppercase;color:#5d6270}
+.pv{font-weight:800;font-size:46px;letter-spacing:-.03em;line-height:1}
+.bar{width:180px;height:60px;background:repeating-linear-gradient(90deg,#0b0c10 0 3px,transparent 3px 6px,#0b0c10 6px 10px,transparent 10px 12px,#0b0c10 12px 13px,transparent 13px 18px)}
+</style></head><body>
+
+<!-- 001 · BRAND -->
+<div class="post" id="brand">
+  <img class="ph" src="../kit3d/img/estadio.jpg" style="object-position:50% 100%;transform:scale(1.06);transform-origin:48% 88%">
+  <div class="tone" style="background:linear-gradient(180deg,rgba(7,8,11,.88) 0%,rgba(7,8,11,.55) 30%,rgba(7,8,11,0) 52%,rgba(7,8,11,0) 80%,rgba(7,8,11,.7) 100%)"></div>
+  <canvas class="grain" width="540" height="675"></canvas>
+  <i class="crop c1"></i><i class="crop c2"></i><i class="crop c3"></i><i class="crop c4"></i>
+  <div class="lbl tl"><span class="mark"><img src="../../kit/mark.png">ProTeam</span></div>
+  <div class="lbl tr">001 — Brand</div>
+  <div class="copy" style="top:540px;width:640px">Para los que planifican de noche, apuntan cada partido y vuelven al campo el lunes. Sin que nadie se lo pague.</div>
+  <div class="h" style="top:150px;font-size:116px">El entrenador<br>de base<br><span class="it" style="font-size:140px">también trabaja.</span></div>
+  <div class="lbl bl">Fútbol · Baloncesto · Balonmano</div>
+  <div class="lbl br">pro-team.app</div>
+</div>
+
+<!-- 002 · DROP -->
+<div class="post" id="drop">
+  <img class="ph" src="../kit3d/img/foco.jpg" style="object-position:50% 40%">
+  <div class="tone" style="background:linear-gradient(180deg,rgba(7,8,11,.35) 0%,rgba(7,8,11,0) 30%,rgba(7,8,11,.25) 55%,rgba(7,8,11,.92) 82%,#07080b 100%)"></div>
+  <canvas class="grain" width="540" height="675"></canvas>
+  <i class="crop c1"></i><i class="crop c2"></i><i class="crop c3"></i><i class="crop c4"></i>
+  <div class="lbl tl"><span class="mark"><img src="../../kit/mark.png">ProTeam</span></div>
+  <div class="lbl tr">002 — Drop</div>
+  <div style="position:absolute;left:56px;top:150px"><span class="tag">DROP 01 · ACCESO ANTICIPADO</span></div>
+  <div class="h" style="top:230px;font-size:86px;width:560px">Se encienden<br><span class="it" style="font-size:104px">los focos.</span></div>
+  <div class="date" style="font-size:372px">27<span class="blue">.</span>11</div>
+  <div class="rule" style="bottom:160px"></div>
+  <div class="lbl" style="left:56px;bottom:110px;color:#f2f1ec">23:59 · Hora de España</div>
+  <div class="lbl" style="right:56px;bottom:110px;text-align:right;color:#f2f1ec">Solo para la lista de espera</div>
+  <div class="lbl bl">Fútbol · Baloncesto · Balonmano</div>
+  <div class="lbl br">pro-team.app</div>
+</div>
+
+<!-- 003 · WAITLIST -->
+<div class="post" id="waitlist">
+  <img class="ph" src="../kit3d/img/tunel.jpg" style="object-position:50% 58%">
+  <div class="tone" style="background:linear-gradient(180deg,rgba(7,8,11,.7) 0%,rgba(7,8,11,.15) 26%,rgba(7,8,11,0) 40%,rgba(7,8,11,.5) 58%,rgba(7,8,11,.95) 70%,#07080b 100%)"></div>
+  <canvas class="grain" width="540" height="675"></canvas>
+  <i class="crop c1"></i><i class="crop c2"></i><i class="crop c3"></i><i class="crop c4"></i>
+  <div class="lbl tl"><span class="mark"><img src="../../kit/mark.png">ProTeam</span></div>
+  <div class="lbl tr">003 — Waitlist</div>
+  <div class="h" style="top:150px;font-size:104px">Entra antes<br>de que <span class="it" style="font-size:124px">se cierre.</span></div>
+  <div class="copy" style="top:400px;width:620px">La lista de espera está abierta. Quien esté dentro el 27 a las 23:59, empieza con 6 meses gratis.</div>
+  <div class="pass">
+    <div class="l">
+      <div><div class="pk">Pase · Lista de espera</div><div class="pv" style="margin-top:10px">Acceso anticipado</div></div>
+      <div style="display:flex;gap:46px">
+        <div><div class="pk">Cierra</div><div class="pv" style="font-size:40px;margin-top:6px">27.11 · 23:59</div></div>
+        <div><div class="pk">Incluye</div><div class="pv" style="font-size:40px;margin-top:6px;color:#2f6bff">6 meses gratis</div></div>
+      </div>
+    </div>
+    <div class="r">
+      <img src="../../kit/mark.png" style="width:64px;height:64px">
+      <div><div class="pk">Entra en</div><div class="pv" style="font-size:34px;margin-top:6px">pro-team<br>.app</div></div>
+      <div class="bar"></div>
+    </div>
+  </div>
+  <div class="lbl bl">Crea tu cuenta · Sin tarjeta</div>
+  <div class="lbl br">pro-team.app</div>
+</div>
+
+<script>
+// grano de película: ruido gaussiano fijo por pieza
+document.querySelectorAll('canvas.grain').forEach((c, k) => {
+  const g = c.getContext('2d'), d = g.createImageData(c.width, c.height); let s = 9301 + k * 49297;
+  const r = () => { s = (s * 16807) % 2147483647; return s / 2147483647; };
+  for (let i = 0; i < d.data.length; i += 4) { const v = 128 + (r() + r() + r() - 1.5) * 95; d.data[i] = d.data[i + 1] = d.data[i + 2] = v; d.data[i + 3] = 255; }
+  g.putImageData(d, 0, 0); c.style.width = '100%'; c.style.height = '100%';
+});
+window.ready = true;
+</script>
+</body></html>
