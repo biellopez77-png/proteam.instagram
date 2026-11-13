@@ -230,3 +230,9 @@
 - Métricas 7 días (caché Windsor): ta02 (Barça–Caserío) 1.532 vistas, saltos 33,8 %, 11,5 s, 3 guardados → muy bien. p03 612 (48,8 %, 8,3 s). p08 388 (49 %, 9,3 s). p21 168 (49,6 %, 6,9 s, 0 guardados) → flojo. Carrusel 088: 19 vistas, alcance 5. Los Reels de dato/partido real siguen ~1.500; los de problema genérico, < 650.
 - Hoja: Plan ya al día (todo lo publicado con media_id). Analisis: añadidas p08, p21, p03, ta02 y carrusel 088. Ojo: Plan muestra bf01/bf01s como «Programado» aunque en la cola están en borrador.
 - Comentarios últimos 3 días: ninguno. Sin spam.
+
+### Diario 13 nov 20:25
+- Publicado: nada (`late` y `due` vacíos).
+- Métricas 7 días: p07 (vienen 11 de 18) 1.671 vistas, saltos 36 %, 11,8 s, 6 guardados; d4 (pases) 1.537, 34,6 %, 13,3 s, 8 guardados; ta02 1.532, 33,8 %, 11,5 s. p03 612, p08 388, p21 168, e04 152 (65 % saltos), p06 141. Feed (c3, c4, q1): ≤ 33 vistas. Sin cambios frente a ayer.
+- Hoja: sin publicaciones nuevas; Plan y Analisis ya al día desde ayer.
+- Comentarios últimos 3 días: ninguno.
