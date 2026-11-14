@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8">
+<style>
+@font-face{font-family:M;font-weight:800;src:url(/tools/fonts/manrope-latin-800-normal.woff2)}
+@font-face{font-family:M;font-weight:700;src:url(/tools/fonts/manrope-latin-700-normal.woff2)}
+@font-face{font-family:M;font-weight:500;src:url(/tools/fonts/manrope-latin-500-normal.woff2)}
+@font-face{font-family:S;font-style:italic;font-weight:400;src:url(/tools/fonts/instrument-serif-latin-400-italic.woff2)}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#000}
+#st{position:absolute;inset:0;overflow:hidden;background:#000}
+.L{position:absolute;inset:0;display:none}
+.ph{position:absolute;overflow:hidden;background:#111;display:none;will-change:transform}
+.ph img{position:absolute;left:0;top:0;width:100%;height:100%;object-fit:cover}
+.ph .sh{position:absolute;inset:0;pointer-events:none}
+.ph.ol{box-shadow:0 30px 60px rgba(0,0,0,.55)}
+.tx{position:absolute;left:0;width:1080px;text-align:center;white-space:nowrap;display:none;color:#fff}
+.M8{font-family:M;font-weight:800;letter-spacing:-.045em}
+.M7{font-family:M;font-weight:700}
+.M5{font-family:M;font-weight:500}
+.S{font-family:S;font-style:italic;font-weight:400;letter-spacing:-.01em}
+.blue{color:#4f86ff}
+.mask{display:inline-block;overflow:hidden;vertical-align:bottom;padding:0 .04em}
+.mask>span{display:inline-block}
+.kick{font-family:M;font-weight:700;font-size:40px;letter-spacing:.16em;color:#c9cfdb}
+.uline{position:absolute;left:0;right:0;height:10px;background:#2f6bff;transform-origin:0 50%;border-radius:2px}
+.shadow{text-shadow:0 4px 30px rgba(0,0,0,.65)}
+#grain{position:absolute;inset:-50%;opacity:.05;pointer-events:none;mix-blend-mode:screen;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}
+#sysL{background:#0d0f14}
+.node{position:absolute;border:2px solid #2a3040;background:#121620;border-radius:16px;display:none;font-family:M;font-weight:700;color:#aab2c3;font-size:24px;letter-spacing:.12em;text-align:center}
+.node b{position:absolute;left:0;right:0;bottom:16px}
+.node i{position:absolute;left:18px;top:16px;width:12px;height:12px;border-radius:50%;background:#2f6bff}
+.r{position:absolute;display:none;border-radius:10px;background:#151922;border:2px solid #232937;overflow:hidden}
+.r.on{background:#1b2b55;border-color:#2f6bff}
+.r span{position:absolute;left:12px;top:8px;font-family:M;font-weight:700;font-size:20px;color:#6d7588}
+.phone{position:absolute;width:500px;height:1080px;border-radius:64px;background:#0b0d12;border:3px solid #2a3040;padding:16px;display:none;box-shadow:0 40px 90px rgba(0,0,0,.6)}
+.phone .scr{position:relative;width:100%;height:100%;border-radius:50px;overflow:hidden;background:#f6f6f4}
+.phone .scr img{position:absolute;left:0;top:0;width:100%;display:block}
+</style></head><body>
+<div id="st">
+  <div class="L" id="sysL"></div>
+  <div id="phs" style="position:absolute;inset:0;z-index:1;isolation:isolate"></div>
+  <svg id="lines" width="1080" height="1920" style="position:absolute;inset:0;display:none"></svg>
+  <div id="nodes" style="position:absolute;inset:0"></div>
+  <div id="rects" style="position:absolute;inset:0"></div>
+  <svg id="chart" width="1080" height="1920" style="position:absolute;inset:0;display:none">
+    <polyline id="pl" fill="none" stroke="#4f86ff" stroke-width="7" stroke-linejoin="round" stroke-linecap="round"/>
+    <g id="tgt"><circle cx="540" cy="1030" r="150" fill="none" stroke="#2f6bff" stroke-width="3" opacity=".35"/><circle cx="540" cy="1030" r="95" fill="none" stroke="#2f6bff" stroke-width="3" opacity=".6"/><circle cx="540" cy="1030" r="40" fill="#2f6bff"/></g>
+    <g id="conn"></g>
+  </svg>
+  <div id="phones" style="position:absolute;inset:0;z-index:4"></div>
+  <div id="txt" style="position:absolute;inset:0;z-index:6"></div>
+  <div id="grain"></div>
+</div>
+<script src="/tools/reel2/times.js"></script>
+<script>
+const T = window.TIMES; window.DUR = T.END;
+const clamp = (x, a = 0, b = 1) => Math.max(a, Math.min(b, x));
+const seg = (t, a, b) => clamp((t - a) / (b - a));
+const lerp = (a, b, p) => a + (b - a) * p;
+const E = { out: p => 1 - Math.pow(1 - p, 3), out5: p => 1 - Math.pow(1 - p, 5), in: p => p * p * p, io: p => p < .5 ? 4 * p * p * p : 1 - Math.pow(-2 * p + 2, 3) / 2 };
+const $ = id => document.getElementById(id);
+const show = (el, v) => { el.style.display = v ? (el._d || 'block') : 'none'; };
+const IMG = n => `/tools/reel2/img/${n}.jpg`;
+
+function ph(src, pos = '50% 30%') {
+  const d = document.createElement('div'); d.className = 'ph';
+  const i = document.createElement('img'); i.src = IMG(src); i.style.objectPosition = pos; d.appendChild(i);
+  const s = document.createElement('div'); s.className = 'sh'; d.appendChild(s); d._img = i; d._sh = s;
+  $('phs').appendChild(d); return d;
+}
+function place(el, x, y, w, h, o = {}) {
+  el.style.left = x + 'px'; el.style.top = y + 'px'; el.style.width = w + 'px'; el.style.height = h + 'px';
+  el.style.transform = `translate(${o.dx || 0}px,${o.dy || 0}px) rotate(${o.rot || 0}deg) scale(${o.s || 1})`;
+  el.style.opacity = o.op == null ? 1 : o.op; el.style.zIndex = o.z || 1;
+  if (el._img) el._img.style.transform = `scale(${o.is || 1.06}) translate(${o.ix || 0}px,${o.iy || 0}px)`;
+  if (el._sh) el._sh.style.background = `rgba(0,0,0,${o.dark || 0})`;
+}
+function tx(html, y, cls, size) {
+  const d = document.createElement('div'); d.className = 'tx ' + cls; d.style.top = y + 'px'; d.style.fontSize = size + 'px'; d.innerHTML = html; $('txt').appendChild(d); return d;
+}
+// revela con máscara: el contenido sube/entra dentro de su caja
+function reveal(el, p, dir = 'up') {
+  el.querySelectorAll('.mask>span').forEach((s, i, a) => { const q = E.out5(clamp(p * (1 + .25 * (a.length - 1)) - .25 * i));
+    s.style.transform = dir === 'up' ? `translateY(${(1 - q) * 110}%)` : `translateX(${(q - 1) * 105}%)`; });
+}
+
+// ── 1 · GANCHO: una foto que se parte en tres ──
+const G = ph('e09', '50% 22%'), GL = ph('e05', '50% 20%'), GR = ph('e13', '45% 30%');
+const tGE = tx('<span class="mask"><span>LOS GRANDES</span></span><br><span class="mask"><span>EQUIPOS</span></span>', 1180, 'M8 shadow', 132);
+tGE.style.lineHeight = '.95';
+const tTU = tx('<span class="mask"><span class="S blue" style="font-size:190px">tú también</span></span>', 760, '', 190);
+const tPC = tx('<span class="mask"><span>PUEDES CONSTRUIRLO</span></span>', 990, 'M8', 78);
+function hook(t) {
+  const v = t < T.no - .02; [G, GL, GR].forEach(e => show(e, v)); show(tGE, v && t < T.tu + .25); show(tTU, v && t >= T.tu - .05); show(tPC, v && t >= T.tu + .2);
+  if (!v) return;
+  const a = E.out5(seg(t, 0, .4));                       // entrada lateral + zoom
+  const sp = E.io(seg(t, 1.05, 1.5));                     // se parte en tres franjas
+  const op = E.io(seg(t, T.tu - .15, T.tu + .3));         // se abren a los lados
+  const zoom = 1 + .05 * seg(t, T.tu, T.no);
+  const gap = 14, w3 = (1080 - 2 * gap) / 3;
+  // franja central: Guardiola
+  const cw = lerp(1080, w3, sp), cx = lerp(0, w3 + gap, sp);
+  place(G, cx, 0, cw, 1920, { dx: (1 - a) * 160 + 0, s: zoom * (1 + (1 - a) * .06), is: 1.12 - .06 * seg(t, 0, 3), ix: 0, z: 2, dark: .15 + .45 * op });
+  G.style.transform += ` translateX(0px)`; G.style.opacity = 1 - .35 * op;
+  // laterales: entran desde arriba y abajo
+  const lp = E.out5(seg(t, 1.1, 1.55)), rp = E.out5(seg(t, 1.22, 1.67));
+  place(GL, 0, 0, w3, 1920, { dy: (1 - lp) * -1920 + op * 0, dx: -op * 120, s: zoom, is: 1.15, z: 3, dark: .2 + .4 * op });
+  place(GR, 2 * (w3 + gap), 0, w3, 1920, { dy: (1 - rp) * 1920, dx: op * 120, s: zoom, is: 1.15, z: 3, dark: .2 + .4 * op });
+  show(GL, v && t > 1.08); show(GR, v && t > 1.2);
+  // textos
+  reveal(tGE, seg(t, .22, .62)); tGE.style.transform = `translateY(${-op * 140}px)`; tGE.style.opacity = 1 - op;
+  reveal(tTU, seg(t, T.tu - .05, T.tu + .35)); reveal(tPC, seg(t, T.tu + .25, T.tu + .6));
+  tTU.style.transform = tPC.style.transform = `scale(${zoom})`;
+  const out = seg(t, T.no - .2, T.no - .02); if (out > 0) { $('phs').style.transform = `scale(${1 + .12 * E.in(out)})`; $('phs').style.filter = `blur(${out * 6}px)`; }
+  else { $('phs').style.transform = 'none'; $('phs').style.filter = 'none'; }
+}
+
+// ── 2 · DESMONTANDO: talento / presupuesto / jugadores / veinte personas ──
+const P1 = ph('e06', '50% 25%'), P1b = ph('e10', '50% 25%');
+const P2 = ph('c13', '50% 50%'), P2b = ph('c12', '50% 50%');
+const P3 = ph('e04', '50% 40%'), P3b = ph('e12', '50% 40%');
+const word = (k, w, y) => tx(`<div class="kick" style="margin-bottom:10px"><span class="mask"><span>${k}</span></span></div><span class="mask" style="position:relative"><span>${w}</span></span>`, y, 'M8 shadow', 150);
+const tTAL = word('NO ES SOLO', 'TALENTO', 1150), tPRE = word('NI', 'PRESUPUESTO', 1150), tJUG = word('NI', 'JUGADORES', 1150);
+[tTAL, tPRE, tJUG].forEach(e => { const u = document.createElement('div'); u.className = 'uline'; u.style.bottom = '-6px'; u.style.left = '22%'; u.style.right = '22%'; e.appendChild(u); e._u = u; });
+tPRE.style.fontSize = '128px';
+function sub(t, P, Pb, a, b, tw, o) {
+  const v = t >= a - .02 && t < b; show(P, v); show(Pb, v && t > a + .12); show(tw, v && t > a + .08); if (!v) return;
+  const p = E.out5(seg(t, a, a + .35)), q = E.out5(seg(t, a + .12, a + .5)), loc = seg(t, a, b);
+  place(P, 0, 0, 1080, 1920, { dx: (1 - p) * o.from, is: 1.14 - .07 * loc, ix: -30 * loc, dark: .28, z: 2 });
+  place(Pb, o.bx, o.by, o.bw, o.bh, { dx: (1 - q) * o.bfrom, rot: o.rot * (1 - .3 * loc), is: 1.1 - .05 * loc, dark: .05, z: 3 }); Pb.classList.add('ol');
+  reveal(tw, seg(t, a + .1, a + .45), 'side'); tw._u.style.transform = `scaleX(${E.io(seg(t, a + .3, a + .6))})`;
+  tw.style.transform = `translateY(${-14 * loc}px)`;
+}
+// collage de cuerpo técnico
+const CT = [['e08', 60, 300, 420, 560, -3], ['e11', 560, 260, 460, 600, 2.5], ['e07', 120, 760, 400, 520, 1.5], ['e02', 600, 800, 380, 520, -2], ['e01', 330, 520, 420, 560, 0], ['e14', 60, 1180, 380, 470, 2], ['e03', 620, 1240, 400, 470, -2.5]]
+  .map(([s, x, y, w, h, r], i) => ({ el: ph(s, '50% 25%'), x, y, w, h, r, i }));
+const tVP = tx('<div class="kick" style="margin-bottom:10px"><span class="mask"><span>NI UN CUERPO TÉCNICO DE</span></span></div><span class="mask"><span><span class="S blue" style="font-size:190px">veinte</span> PERSONAS</span></span>', 860, 'M8 shadow', 120);
+function staff(t) {
+  const a = T.y1 - .02, b = T.los2 + .45, v = t >= a && t < b; CT.forEach(c => show(c.el, v && t >= a + c.i * .22)); show(tVP, v && t >= T.veinte - .45 && t < T.per + .25);
+  if (!v) return;
+  const conv = E.io(seg(t, T.per - .05, T.per + .45));     // se van al centro y se comprimen
+  CT.forEach(c => { const p = E.out5(seg(t, a + c.i * .22, a + c.i * .22 + .35));
+    const cx = 540 - c.w / 2, cy = 960 - c.h / 2;
+    place(c.el, lerp(c.x, cx, conv), lerp(c.y, cy, conv), c.w, c.h, { dy: (1 - p) * 90, s: (.9 + .1 * p) * (1 - .82 * conv), rot: c.r * (1 - conv), op: p * (1 - seg(t, T.per + .2, T.per + .45)), z: 2 + c.i, is: 1.1 - .04 * seg(t, a, b), dark: .1 + .35 * seg(t, T.veinte - .4, T.veinte) });
+    c.el.classList.add('ol'); });
+  reveal(tVP, seg(t, T.veinte - .45, T.veinte + .05)); tVP.style.opacity = 1 - seg(t, T.per, T.per + .25); tVP.style.transform = `scale(${1 - .1 * conv})`;
+}
+
+// ── 3 · SISTEMA: piezas sueltas que se conectan ──
+const AREAS = [['PLANIFICACIÓN', 120, 430], ['SESIONES', 640, 430], ['CARGA', 70, 900], ['PARTIDOS', 690, 900], ['ANÁLISIS', 120, 1370], ['PLANTILLA', 640, 1370]];
+const NW = 320, NH = 190;
+const NODES = AREAS.map(([n, x, y]) => { const d = document.createElement('div'); d.className = 'node'; d.innerHTML = `<i></i><b>${n}</b>`; $('nodes').appendChild(d);
+  for (let k = 0; k < 3; k++) { const l = document.createElement('div'); l.style.cssText = `position:absolute;left:20px;height:8px;border-radius:4px;background:#232937;top:${54 + k * 24}px;width:${[180, 230, 140][k]}px`; d.appendChild(l); }
+  return { d, x, y, cx: x + NW / 2, cy: y + NH / 2 }; });
+const HUB = { cx: 540, cy: 1000 };
+const LS = []; const svgNS = 'http://www.w3.org/2000/svg';
+const mkLine = () => { const l = document.createElementNS(svgNS, 'path'); l.setAttribute('stroke', '#2f6bff'); l.setAttribute('stroke-width', '3'); l.setAttribute('fill', 'none'); $('lines').appendChild(l); return l; };
+NODES.forEach((n, i) => LS.push({ l: mkLine(), a: n, b: HUB, k: i }));
+[[0, 1], [2, 3], [4, 5], [0, 2], [1, 3], [2, 4], [3, 5]].forEach(([i, j], k) => LS.push({ l: mkLine(), a: NODES[i], b: NODES[j], k: 6 + k, thin: 1 }));
+const hubEl = document.createElement('div'); hubEl.style.cssText = 'position:absolute;width:26px;height:26px;border-radius:50%;background:#2f6bff;left:527px;top:987px;display:none;box-shadow:0 0 0 10px rgba(47,107,255,.18)'; $('nodes').appendChild(hubEl);
+const tFD = tx('<span class="mask"><span>UNA FORMA DISTINTA</span></span><br><span class="mask"><span>DE TRABAJAR</span></span>', 240, 'M7', 54); tFD.style.color = '#c9cfdb'; tFD.style.lineHeight = '1.1'; tFD.style.letterSpacing = '.06em';
+const SIS = tx('', 880, 'M8', 210); SIS.innerHTML = [...'SISTEMA'].map(c => `<span style="display:inline-block">${c}</span>`).join(''); SIS.style.letterSpacing = '-.03em';
+const sisU = document.createElement('div'); sisU.className = 'uline'; sisU.style.cssText += ';bottom:-4px;left:21%;right:21%;height:12px'; SIS.appendChild(sisU);
+function system(t) {
+  const a = T.per + .2, b = T.pla + .35, v = t >= a && t < b; show($('sysL'), v); show($('lines'), v); show(tFD, v && t >= T.forma - .3 && t < T.sis - .15);
+  NODES.forEach(n => show(n.d, v && t < T.sis + .05)); show(hubEl, v && t > T.los2 + .9 && t < T.sis - .1); show(SIS, t >= T.sis - .25 && t < T.pla + .35);
+  if (!v) return;
+  const conv = E.in(seg(t, T.sis - .4, T.sis - .05));
+  NODES.forEach((n, i) => { const p = E.out5(seg(t, a + .05 + i * .12, a + .45 + i * .12)); const dx = (HUB.cx - n.cx) * conv, dy = (HUB.cy - n.cy) * conv;
+    n.d.style.left = n.x + 'px'; n.d.style.top = n.y + 'px'; n.d.style.width = NW + 'px'; n.d.style.height = NH + 'px';
+    n.d.style.transform = `translate(${dx}px,${dy + (1 - p) * 60}px) scale(${(.85 + .15 * p) * (1 - .9 * conv)})`; n.d.style.opacity = p * (1 - seg(t, T.sis - .12, T.sis + .02));
+    n.d.style.borderColor = seg(t, T.los2 + .7 + i * .25, T.los2 + .9 + i * .25) > .5 ? '#2f6bff' : '#2a3040'; });
+  LS.forEach(s => { const p = E.io(seg(t, T.los2 + .5 + s.k * .2, T.los2 + .9 + s.k * .2)) * (1 - conv);
+    const ax = lerp(s.a.cx, HUB.cx, conv), ay = lerp(s.a.cy, HUB.cy, conv), bx = lerp(s.b.cx, HUB.cx, conv), by = lerp(s.b.cy, HUB.cy, conv);
+    const mx = s.thin ? (ax + bx) / 2 : ax, my = s.thin ? (ay + by) / 2 : by;    // codos rectos, como un organigrama
+    s.l.setAttribute('d', s.thin ? `M${ax},${ay} L${bx},${by}` : `M${ax},${ay} L${ax},${by} L${bx},${by}`);
+    const L = s.l.getTotalLength(); s.l.setAttribute('stroke-dasharray', L); s.l.setAttribute('stroke-dashoffset', L * (1 - p));
+    s.l.setAttribute('opacity', s.thin ? .35 : .9); });
+  reveal(tFD, seg(t, T.forma - .3, T.forma + .2)); tFD.style.opacity = 1 - seg(t, T.sis - .4, T.sis - .15);
+  // SISTEMA: cada letra sale de una pieza
+  const sp = SIS.querySelectorAll('span');
+  sp.forEach((c, i) => { const n = NODES[i % 6]; const q = E.out5(seg(t, T.sis - .2 + i * .03, T.sis + .25 + i * .03));
+    const sx = (n.cx - 540) * .6 * (1 - q), sy = (n.cy - 1000) * .6 * (1 - q); c.style.transform = `translate(${sx}px,${sy}px) scale(${.4 + .6 * q})`; c.style.opacity = q; });
+  const after = seg(t, T.sis + .3, T.pla); const leave = E.io(seg(t, T.pla - .05, T.pla + .3));
+  SIS.style.transform = `translateY(${-leave * 640}px) scale(${(1 + .035 * after) * (1 - .55 * leave)})`; SIS.style.opacity = 1 - leave;
+  sisU.style.transform = `scaleX(${E.io(seg(t, T.sis + .35, T.sis + .7)) * (1 - leave)})`;
+}
+
+// ── 4 · CÓMO TRABAJAN: 28 piezas que pasan de calendario → registro → gráfica → objetivo ──
+const R = []; for (let i = 0; i < 28; i++) { const d = document.createElement('div'); d.className = 'r'; d.innerHTML = '<span></span>'; $('rects').appendChild(d); R.push(d); }
+const ON = new Set([2, 4, 9, 11, 15, 17, 20, 23, 25]);
+const BARS = [.35, .5, .42, .6, .55, .7, .48, .66, .74, .62, .8, .72, .86, .78, .9, .84, .7, .92, .88, .95, .8, .9, .97, .86, .93, 1, .9, .98];
+const GX = 110, GY = 640, GW = 860;
+const L_cal = i => { const c = i % 7, r = Math.floor(i / 7), w = (GW - 6 * 12) / 7; return [GX + c * (w + 12), GY + r * 170, w, 158]; };
+const L_reg = i => { const r = Math.floor(i / 4), c = i % 4, ws = [120, 330, 200, 162], xs = [0, 132, 474, 686]; return [GX + xs[c], GY + r * 92, ws[c], 80]; };
+const L_bar = i => { const w = (GW - 27 * 8) / 28, h = 520 * BARS[i]; return [GX + i * (w + 8), GY + 640 - h, w, h]; };
+const CL = [[200, 640], [880, 640], [540, 1450]];   // tres grupos alrededor del objetivo
+const L_dec = i => { const g = i % 3, k = Math.floor(i / 3), [cx, cy] = CL[g];
+  if (g === 0) { const c = k % 3, r = Math.floor(k / 3); return [cx - 75 + c * 52, cy - 75 + r * 52, 44, 44]; }            // mini calendario
+  if (g === 1) { return [cx - 80, cy - 90 + k * 20, 160, 14]; }                                                            // mini registro
+  const h = [40, 70, 55, 95, 80, 120, 105, 140, 125][k] || 60; return [cx - 90 + k * 20, cy + 70 - h, 14, h]; };          // mini gráfica
+const DAYS = ['L', 'M', 'X', 'J', 'V', 'S', 'D'], REG = [['12\'', 'Tiro', '#7', '✓'], ['18\'', 'Recuperación', '#4', '✓'], ['23\'', 'Pérdida', '#10', '·'], ['31\'', 'Tiro', '#9', '✓'], ['37\'', 'Falta', '#5', '·'], ['44\'', 'Gol', '#7', '✓'], ['52\'', 'Tiro', '#11', '✓']];
+const tW = { PLA: tx('<span class="mask"><span>PLANIFICAN</span></span>', 380, 'M8', 120), REG: tx('<span class="mask"><span>REGISTRAN</span></span>', 380, 'M8', 120), ANA: tx('<span class="mask"><span>ANALIZAN</span></span>', 380, 'M8', 120),
+  DEC: tx('<span class="mask"><span>DECISIONES</span></span><br><span class="mask"><span class="S blue" style="font-size:118px">con un objetivo</span></span>', 300, 'M8', 120) };
+tW.DEC.style.lineHeight = '1.02';
+const conn = []; for (let g = 0; g < 3; g++) { const l = document.createElementNS(svgNS, 'line'); l.setAttribute('stroke', '#4f86ff'); l.setAttribute('stroke-width', '4'); $('conn').appendChild(l); conn.push(l); }
+function method(t) {
+  const a = T.pla - .1, b = T.pt + .55, v = t >= a && t < b; R.forEach(r => show(r, v && t < T.pt + .5)); show($('chart'), v);
+  Object.values(tW).forEach(e => show(e, false)); if (!v) return;
+  show($('sysL'), true);
+  const k1 = E.io(seg(t, T.reg - .15, T.reg + .3)), k2 = E.io(seg(t, T.ana - .15, T.ana + .3)), k3 = E.io(seg(t, T.y2, T.y2 + .45));
+  const k4 = E.io(seg(t, T.pt - .1, T.pt + .4));      // se recogen hacia la pantalla del móvil
+  R.forEach((r, i) => {
+    const intro = E.out5(seg(t, a + (i % 7) * .03 + Math.floor(i / 7) * .05, a + .35 + (i % 7) * .03 + Math.floor(i / 7) * .05));
+    let g = L_cal(i).map((x, j) => lerp(x, L_reg(i)[j], k1)); g = g.map((x, j) => lerp(x, L_bar(i)[j], k2)); g = g.map((x, j) => lerp(x, L_dec(i)[j], k3));
+    const ph = [290 + 10, 470 + 30, 500 - 20, 1080 - 60]; g = g.map((x, j) => lerp(x, [ph[0] + (i % 4) * 120, ph[1] + Math.floor(i / 4) * 140, 110, 128][j], k4));
+    r.style.left = g[0] + 'px'; r.style.top = g[1] + 'px'; r.style.width = g[2] + 'px'; r.style.height = g[3] + 'px';
+    r.style.transform = `translateY(${(1 - intro) * 40}px)`; r.style.opacity = intro * (1 - seg(t, T.pt + .2, T.pt + .5));
+    r.style.borderRadius = lerp(lerp(10, 6, k2), 22, k3) + 'px';
+    const fill = seg(t, T.pla + .15 + i * .018, T.pla + .3 + i * .018) > .5 && ON.has(i);
+    r.className = 'r' + ((fill && k2 < .5) || (k2 > .5 && i > 20) || k3 > .5 ? ' on' : '');
+    const s = r.firstChild; const regOn = seg(t, T.reg + .05 + Math.floor(i / 4) * .07, T.reg + .15 + Math.floor(i / 4) * .07) > .5;
+    s.textContent = k1 < .5 ? (i < 7 ? DAYS[i] : '') : k2 < .5 ? (regOn ? REG[Math.floor(i / 4)][i % 4] : '') : '';
+    s.style.color = k1 >= .5 && i % 4 === 3 ? '#4f86ff' : k1 >= .5 ? '#c9cfdb' : '#6d7588'; s.style.fontSize = k1 >= .5 ? '30px' : '24px'; s.style.top = k1 >= .5 ? '20px' : '10px';
+  });
+  // gráfica de línea sobre las barras
+  const lp = seg(t, T.ana + .15, T.ana + .75) * (1 - k3);
+  const pts = BARS.map((h, i) => { const [x, y, w] = L_bar(i); return [x + w / 2, y - 40 - 30 * Math.sin(i * .7)]; });
+  const n = Math.max(1, Math.floor(lp * pts.length)); $('pl').setAttribute('points', pts.slice(0, n).map(p => p.join(',')).join(' ')); $('pl').setAttribute('opacity', lp > 0 ? 1 - k3 : 0);
+  // objetivo y conexiones
+  const tg = E.out5(seg(t, T.y2 + .25, T.y2 + .7)) * (1 - k4); $('tgt').setAttribute('opacity', tg); $('tgt').setAttribute('transform', `translate(540 1030) scale(${.6 + .4 * tg}) translate(-540 -1030)`);
+  conn.forEach((l, g) => { const p = E.io(seg(t, T.dec + g * .12, T.dec + .4 + g * .12)) * (1 - k4); const [cx, cy] = CL[g];
+    l.setAttribute('x1', cx); l.setAttribute('y1', cy); l.setAttribute('x2', lerp(cx, 540, p)); l.setAttribute('y2', lerp(cy, 1030, p)); l.setAttribute('opacity', p > 0 ? 1 : 0); });
+  // palabras
+  const W4 = [['PLA', T.pla - .05, T.reg - .1], ['REG', T.reg - .1, T.ana - .1], ['ANA', T.ana - .1, T.y2 + .05], ['DEC', T.y2 + .05, T.pt - .05]];
+  W4.forEach(([k, s, e]) => { const el = tW[k]; const vv = t >= s && t < e; show(el, vv); if (!vv) return; reveal(el, seg(t, s, s + .32));
+    const o = seg(t, e - .12, e); el.style.transform = `translateY(${-o * 60}px)`; el.style.opacity = 1 - o; });
+}
+
+// ── 5 · PROTEAM: todo en un solo sitio (capturas reales) ──
+function phone(srcs, x, y, s, rot) { const d = document.createElement('div'); d.className = 'phone'; const sc = document.createElement('div'); sc.className = 'scr'; d.appendChild(sc);
+  d._imgs = srcs.map(n => { const i = document.createElement('img'); i.src = IMG(n); sc.appendChild(i); return i; }); d._x = x; d._y = y; d._s = s; d._r = rot; $('phones').appendChild(d); return d; }
+const PH0 = phone(['mo-plan', 'nlv-0', 'res-0', 'mo-cal'], 290, 470, 1, 0), PHL = phone(['fE'], -30, 600, .78, -8), PHR = phone(['mo-week'], 610, 600, .78, 8);
+const tPT = tx('<span class="mask"><span>PROTEAM</span></span>', 250, 'M8', 96); tPT.style.letterSpacing = '.02em';
+const tSL = tx('<span class="mask"><span>EN UN</span></span> <span class="mask"><span class="S blue" style="font-size:150px">solo lugar</span></span>', 1590, 'M8', 92);
+function product(t) {
+  const a = T.pt + .1, b = T.une - .02, v = t >= a && t < b; [PH0, PHL, PHR].forEach(p => show(p, v)); show(tPT, v); show(tSL, v && t >= T.solo - .35); if (!v) return;
+  show($('sysL'), true);
+  const p0 = E.out5(seg(t, a, a + .45)), side = E.out5(seg(t, T.herr - .1, T.herr + .45)), cam = seg(t, a, b);
+  const steps = [a, T.herr + .1, T.herr + .75, T.sis2 + .05];
+  const cur = steps.filter(s => t >= s).length - 1;
+  PH0._imgs.forEach((im, i) => { const q = E.out5(seg(t, steps[i], steps[i] + .35)); im.style.transform = `translateY(${i === 0 ? -60 * seg(t, a, steps[1]) : (1 - q) * 1080 - 60 * seg(t, steps[i], steps[i] + 1.2)}px)`; im.style.display = i <= cur ? 'block' : 'none'; });
+  PH0.style.left = PH0._x + 'px'; PH0.style.top = PH0._y + 'px'; PH0.style.zIndex = 3;
+  PH0.style.transform = `translateY(${(1 - p0) * 200 - 40 * cam}px) scale(${(.92 + .08 * p0) * (1 - .1 * side) * (1 + .04 * cam)})`; PH0.style.opacity = p0;
+  [PHL, PHR].forEach((p, i) => { p.style.left = p._x + 'px'; p.style.top = p._y + 'px'; p.style.zIndex = 2;
+    p.style.transform = `translateX(${(1 - side) * (i ? 300 : -300)}px) rotate(${p._r * side}deg) scale(${p._s})`; p.style.opacity = side * .85; p.style.filter = 'brightness(.6)'; });
+  reveal(tPT, seg(t, a, a + .4)); reveal(tSL, seg(t, T.solo - .35, T.solo + .1));
+  const out = seg(t, b - .2, b); tPT.style.opacity = tSL.style.opacity = 1 - out; [PH0, PHL, PHR].forEach(p => p.style.opacity = parseFloat(p.style.opacity) * (1 - out));
+}
+
+// ── 6 · CTA ──
+const tLE = tx('<span class="mask"><span>LISTA DE ESPERA</span></span>', 560, 'M7', 46); tLE.style.letterSpacing = '.18em'; tLE.style.color = '#c9cfdb';
+const tAN = tx('<span class="mask"><span>ANTES DEL</span></span>', 700, 'M7', 54); tAN.style.color = '#c9cfdb'; tAN.style.letterSpacing = '.08em';
+const tDT = tx('<span id="d1" style="display:inline-block">2</span><span id="d2" style="display:inline-block">8</span> <span class="mask"><span>NOV</span></span>', 790, 'M8', 230);
+const t3M = tx('<span class="mask"><span>3 MESES</span></span><br><span class="mask"><span class="S blue" style="font-size:230px">gratis</span></span>', 860, 'M8', 190); t3M.style.lineHeight = '.92';
+const tFIN = tx('LISTA DE ESPERA · ANTES DEL 28 NOV', 1430, 'M7', 38); tFIN.style.color = '#7d8597'; tFIN.style.letterSpacing = '.12em';
+function cta(t) {
+  const v = t >= T.une - .02; show($('sysL'), v || $('sysL').style.display === 'block'); [tLE, tAN, tDT, t3M, tFIN].forEach(e => show(e, false)); if (!v) return;
+  show($('sysL'), true);
+  const back = E.io(seg(t, T.cons - .05, T.cons + .4));
+  show(tLE, t < T.cons + .4); reveal(tLE, seg(t, T.une, T.une + .4)); tLE.style.opacity = 1 - back;
+  show(tAN, t >= T.antes - .1 && t < T.cons + .4); reveal(tAN, seg(t, T.antes - .1, T.antes + .25));
+  show(tDT, t >= T.n28 - .1 && t < T.cons + .4);
+  [['d1', 2, T.n28 - .1], ['d2', 8, T.n28 + .05]].forEach(([id, n, s]) => { const q = seg(t, s, s + .35); const el = $(id); const k = Math.min(n, Math.floor(E.out(q) * (n + 1)));
+    el.textContent = q >= 1 ? n : (k + 0) % 10; el.style.transform = `translateY(${(1 - E.out5(q)) * 40}px)`; el.style.opacity = clamp(q * 3); });
+  reveal(tDT, seg(t, T.nov - .05, T.nov + .3), 'side');
+  [tAN, tDT].forEach(e => { e.style.transform = `translateY(${-back * 380}px) scale(${1 - .55 * back})`; e.style.opacity = 1 - back; });
+  show(t3M, t >= T.tres - .2); reveal(t3M, seg(t, T.tres - .2, T.tres + .35)); t3M.style.transform = `scale(${1 + .04 * seg(t, T.tres, T.END)})`;
+  show(tFIN, t >= T.gratis + .2); tFIN.style.opacity = E.out(seg(t, T.gratis + .2, T.gratis + .6)); tFIN.style.transform = `translateY(${(1 - E.out(seg(t, T.gratis + .2, T.gratis + .6))) * 30}px)`;
+}
+
+window.frame = t => {
+  show($('sysL'), false);
+  hook(t); sub(t, P1, P1b, T.no - .02, T.ni1 - .02, tTAL, { from: 0, bx: 600, by: 330, bw: 380, bh: 500, bfrom: 500, rot: -3 });
+  sub(t, P2, P2b, T.ni1 - .02, T.ni2 - .02, tPRE, { from: 1080, bx: 90, by: 320, bw: 460, bh: 340, bfrom: -600, rot: 2.5 });
+  sub(t, P3, P3b, T.ni2 - .02, T.y1 - .02, tJUG, { from: 0, bx: 620, by: 300, bw: 360, bh: 420, bfrom: 500, rot: -2 });
+  staff(t); system(t); method(t); product(t); cta(t);
+  $('grain').style.transform = `translate(${(Math.floor(t * 24) * 37) % 200 - 100}px,${(Math.floor(t * 24) * 53) % 200 - 100}px)`;
+};
+document.fonts.ready.then(() => Promise.all([...document.images].map(i => i.complete ? 1 : new Promise(r => { i.onload = i.onerror = r; })))).then(() => setTimeout(() => { window.frame(0); window.ready = true; }, 300));
+</script></body></html>

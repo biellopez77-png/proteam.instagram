@@ -2478,5 +2478,19 @@
   "campana": "unrespiro",
   "share_to_feed": false,
   "note": "Reel 1 estilo unrespiro (REEL_ESTILO.md). Versión final de Biel con música de fondo, aprobada el 14 nov."
+ },
+ {
+  "id": "u02",
+  "when": "2026-11-16T13:30:00+01:00",
+  "kind": "reel",
+  "files": [
+   "reels/u02-grandes-equipos-sistema.mp4"
+  ],
+  "cover": "covers/u02-grandes-equipos-sistema.jpg",
+  "caption": "Los grandes equipos tienen algo que tú también puedes construir.\nNo es solo talento, ni presupuesto, ni un cuerpo técnico de veinte personas. Es una forma de trabajar: planificar, registrar, analizar y decidir con un objetivo.\nÚnete a la lista de espera de ProTeam antes del 28 de noviembre y empieza con 3 meses gratis. Enlace en la bio.\n\n#entrenadordefutbol #fútbolbase #baloncesto #balonmano #planificaciondeportiva",
+  "status": "pending",
+  "campana": "unrespiro",
+  "share_to_feed": false,
+  "note": "Reel 2 (guion de Biel, 14 nov). Primer montaje de Claude; pendiente de correcciones de Biel."
  }
 ]
