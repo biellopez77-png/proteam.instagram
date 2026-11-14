@@ -40,7 +40,7 @@ import json
 T = json.loads(open(sys.argv[2]).read().split('=',1)[1].split(';')[0])
 DUR = T['END']; out = np.zeros(int(SR * (DUR + 1)))
 for k in range(26): put(.05 + k * (T['type1'] - .05) / 26, tick(.016, 3600), .09)
-for i in range(3): put(T['col0'] + i * T['colGap'], paper(.2), .22); put(T['col0'] + i * T['colGap'], thump(.3), .12)
+for i in range(4): put(T['col0'] + i * T['colGap'], paper(.2), .22); put(T['col0'] + i * T['colGap'], thump(.3), .12)
 for a in [T['s2'], T['g'], T['ta']]: put(a, swish(.3), .12); put(a + .02, tick(.03, 1500), .18)
 for h in range(24):
     p = (h + .5) / 24; tt = T['cnt0'] + (T['cnt1'] - T['cnt0']) * (np.cbrt(p / 4) if p < .5 else 1 - np.cbrt((1 - p) / 4))
@@ -48,13 +48,12 @@ for h in range(24):
 put(T['cnt1'], thump(), .35); put(T['s4'] + .05, swish(.3), .12)
 put(T['sino'] - .05, whoosh(.45, 2500, 300), .22); put(T['sino'] + .15, thump(), .35)
 put(T['como'], swish(.3), .12); put(T['uti'], swish(.3), .12)
-for i in range(8): put(T['s6'] + i * (T['s7'] - T['s6']) / 8, tick(.04, 900), .25)
+for i in range(6): put(T['s6'] + i * (T['s7'] - T['s6']) / 6, tick(.04, 900), .25)
 for w in [T['met'], T['her']]: put(w, swish(.28), .1)
 put(T['s7'], tick(.04, 900), .25)
-GR = [[T['c7'], T['wha'], 3], [T['wha'], T['lib'], 4], [T['lib'], T['doc'], 5], [T['doc'], T['cut'], 10]]
+GR = [[T['c7'], T['wha'], 2], [T['wha'], T['lib'], 3], [T['lib'], T['doc'], 4], [T['doc'], T['cut'], 10]]
 for a, b, n in GR:
     for i in range(n): g = (b - a) / n; put(a + i * g, paper(min(.22, g)), .18 + .1 * (1 - g))
-for k in range(22): put(T['eso'] + k * (T['sis'] - .1 - T['eso']) / 22, tick(.016, 3600), .08)
 put(T['sis'], thump(), .6); put(T['sis'] - .03, shimmer(.4), .08)
 put(T['pt'], swish(.4), .14); put(T['pt'] + .3, thump(.4), .3)
 put(T['web'] + .4, tick(.025, 2200), .25)
@@ -63,7 +62,7 @@ put(T['tap'], tick(.025, 2200), .35); put(T['tap'] + .06, tick(.02, 1500), .22);
 a, b = T['ok'] + .25, T['gal'] - .1
 for k in range(14): p = k / 14; put(a + (b - a) * (p ** .5), tick(.015, 3000 + 1500 * p), .08 + .06 * p)
 put(T['gal'] - .1, thump(.35), .3)
-for i in range(4): put(T['gal'] + i * (T['s11'] - T['gal']) / 4, tick(.04, 900), .25)
+for i in range(3): put(T['gal'] + i * (T['s11'] - T['gal']) / 3, tick(.04, 900), .25)
 put(T['d28'], thump(), .45); put(T['tres'], thump(), .5); put(T['tres'] + .05, shimmer(.6), .06)
 out = out[:int(SR * DUR)]
 out = out / max(1e-9, np.abs(out).max()) * .85

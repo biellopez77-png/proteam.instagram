@@ -110,7 +110,7 @@ function setClip(d, dt) {
 function build() {
   // 1 · máquina de escribir; las fotos entran cuando termina «ellos»
   const ty = document.createElement('div'); ty.className = 'w'; ty.id = 'type'; ty.style.top = '920px'; ty.innerHTML = '<span id="tyt"></span><span class="caret" id="tyc"></span>'; $('txt').appendChild(ty);
-  C1 = [['e01', 60, 250, 960, 1420, -2.5, '50% 8%'], ['e05', 40, 300, 1000, 1420, 2, '50% 6%'], ['e09', 70, 280, 940, 1360, -1.5, '50% 0%']]
+  C1 = [['e01', 60, 250, 960, 1420, -2.5, '50% 8%'], ['e05', 40, 300, 1000, 1420, 2, '50% 6%'], ['e02', 50, 260, 980, 1440, -1.5, '50% 6%'], ['e09', 70, 280, 940, 1360, 1.5, '50% 0%']]
     .map(([s, x, y, w, h, r, pos], i) => ({ el: ph(s, x, y, w, h, { pos, shadow: 1 }), t0: T.col0 + i * T.colGap, r, from: i % 2 ? 1 : -1 }));
   // 2 · tres franjas con subrayado
   B2 = [['e06', 0, '50% 14%', 'TIENES', T.s2], ['e03', 640, '50% 22%', 'GANAS', T.g], ['e04', 1280, '62% 30%', 'TALENTO', T.ta]]
@@ -138,13 +138,13 @@ function build() {
   word(T.como, T.uti, 760, 'cómo', 'it', 330, { color: '#0b0b0c', zoom: .06 });
   word(T.uti, T.s6, 760, 'utilizas', 'it', 300, { color: '#0b0b0c', zoom: .06 });
   // 6 · ellos en acción
-  S6 = ['v1', 'v2', 'v3', 'v4', 'v5', 'v6', 'v7', 'v8'].map((v, i) => ({ el: clip(v, 21, { shade: 'linear-gradient(180deg,rgba(0,0,0,0) 55%,rgba(0,0,0,.55) 100%)' }), t: T.s6 + i * ((T.s7 - T.s6) / 8) }));
+  S6 = ['v1', 'v2', 'v3', 'v4', 'v5', 'v6'].map((v, i) => ({ el: clip(v, 24, { shade: 'linear-gradient(180deg,rgba(0,0,0,0) 55%,rgba(0,0,0,.55) 100%)' }), t: T.s6 + i * ((T.s7 - T.s6) / 6) }));
   XL = clip('xl', 36, {});
   word(T.met, T.her - .02, 1460, 'metodología', 'sub', 92);
   word(T.her, T.s7, 1460, 'herramientas', 'sub', 92);
   // 7 · tú: collage de herramientas que se acelera hasta negro seco
-  const GR = [[T.c7, T.wha, ['t29', 't57', 't24']], [T.wha, T.lib, ['t35', 't38', 't34', 't35']], [T.lib, T.doc, ['t03', 't21', 't60', 't03', 't21']],
-    [T.doc, T.cut, ['t39', 't24', 't21', 't39', 't57', 't35', 't03', 't29', 't39', 't38']]];
+  const GR = [[T.c7, T.wha, ['g1', 'g2']], [T.wha, T.lib, ['g3', 'g4', 'g1']], [T.lib, T.doc, ['g5', 'g6', 'g3', 'g5']],
+    [T.doc, T.cut, ['g7', 'g8', 'g2', 'g6', 'g7', 'g4', 'g8', 'g5', 'g1', 'g7']]];
   C7 = []; GR.forEach(([a, b, L]) => L.forEach((s, i) => { const w = 980 + rnd() * 200, h = w * 1.62, x = 540 - w / 2 + (rnd() - .5) * 140, y = 960 - h / 2 + (rnd() - .5) * 180;
     C7.push({ el: ph(s, x, y, w, h, { shadow: 1 }), t0: a + i * (b - a) / L.length, r: (rnd() - .5) * 9 }); }));
   word(T.exc, T.wha - .02, 1500, 'Excel', 'sub', 84); word(T.wha, T.lib - .02, 1500, 'WhatsApp', 'sub', 84);
@@ -155,7 +155,7 @@ function build() {
   // 9 · ProTeam
   word(T.pt, T.web, 840, 'ProTeam', 'big', 200, { color: '#0b0b0c', spread: .45, zoom: .05, noshadow: 1 });
   // 10 · galería final con palabras encima
-  const G = [['e02', '50% 18%'], ['e03', '50% 20%'], ['e08', '50% 15%'], ['e11', '50% 15%']];
+  const G = [['e03', '50% 20%'], ['e08', '50% 15%'], ['e07', '45% 15%']];
   GAL = G.map(([s, p], i) => ({ el: ph(s, 0, 0, 1080, 1920, { pos: p, shade: 'rgba(0,0,0,.38)' }), t: T.gal + i * ((T.s11 - T.gal) / G.length) }));
   word(T.gal + .05, T.s11, 780, 'antes del', 'sub', 64);
   word(T.d28, T.s11, 860, '28.11', 'big', 300, { color: '#fff', zoom: .06 });
@@ -244,7 +244,7 @@ window.frame = t => {
   }
   // 10 · galería
   GAL.forEach((g, i) => { const b = i + 1 < GAL.length ? GAL[i + 1].t : T.s11; const v = t >= g.t && t < b; show(g.el, v); if (!v) return; g.el._img.style.transform = `scale(${1.12 - .06 * seg(t, g.t, b)})`; });
-  const t2v = t >= T.eso && t < T.s9; show(TY2, t2v);
+  const t2v = false; show(TY2, false);
   if (t2v) { const s2 = 'eso se llama tener un'; $('ty2').textContent = s2.slice(0, Math.floor(s2.length * seg(t, T.eso, T.sis - .1))); $('ty2c').style.opacity = Math.floor(t * 4) % 2 ? 1 : .15; }
   W.forEach(r => animW(r, t));
   return Promise.all(waits).then(() => true);
