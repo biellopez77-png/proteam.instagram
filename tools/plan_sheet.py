@@ -19,6 +19,7 @@ for i in sorted(q, key=lambda x: x['when']):
     pilar = p.get('pilar') or ('Black Friday' if i['when'] < '2026-11-28' else 'Marca') if bf else p.get('pilar', 'Fidelizar')
     if bf and not p: pilar = 'Black Friday' if i['when'] < '2026-11-28' else 'Marca'
     if i.get('campana') == 'focos': pilar = 'Black Friday'
+    if i.get('campana') == 'unrespiro': pilar = 'Lista de espera'
     if p and i['status'] == 'published': pieza = p['pieza']
     elif i['kind'] == 'story':
         m = re.search(r'bf-ch-(\d+)', i['files'][0]); pieza = f'Story: canal CH {m.group(1)} (cuenta atrás)' if m else 'Story'

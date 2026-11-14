@@ -332,3 +332,11 @@ que mantener; el panel se actualiza solo al leerla.
 
 ## Oferta (13 nov 2026, decidido por Biel; manda sobre lo anterior)
 - La oferta es **3 meses gratis** (no 6). No habrá más ofertas. Ninguna pieza menciona 6 meses.
+
+## Reels estilo unrespiro (14 nov, decidido por Biel; manda)
+- Un Reel al día a las 13:30, a partir de los guiones/prompts que envía Biel.
+- Producción con el sistema de `REEL_ESTILO.md` (voz Mateo, times.js, reel4.html como plantilla).
+- Cada Reel entra en queue.json como `pending` (campana `unrespiro`) y se sube al panel (vídeo + portada + fila en Plan). Biel corrige después; si hay corrección, se rehace antes de su hora.
+- Música de fondo permitida (Biel la añadió al Reel 1).
+- Oferta vigente: 3 meses gratis. Lista de espera hasta el 27/11 23:59.
+- Si la calidad se mantiene, Biel dará autonomía para proponer y producir Reels propios.
