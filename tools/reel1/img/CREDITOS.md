@@ -14,3 +14,8 @@ Se usan en blanco y negro, recortadas y sin caras reconocibles en primer plano. 
 | c16 | campo con niebla (fondo «tú sigues saltando entre») | CC0 |
 | c22 | ejercicio de escalera | foto del Ejército de EE. UU., dominio público |
 | d44 | libreta antigua | CC0 |
+
+## v5
+- e01–e14: fotos de entrenadores aportadas por Biel (uso bajo su responsabilidad).
+- clips/v1–v6, clips/xl: fragmentos de grabaciones aportadas por Biel.
+- g1–g8: imágenes generadas con ElevenLabs (Seedream 5 Pro) para «Excel / WhatsApp / libretas / documentos».
