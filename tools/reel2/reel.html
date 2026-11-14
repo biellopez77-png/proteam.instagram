@@ -84,35 +84,44 @@ function reveal(el, p, dir = 'up') {
     s.style.transform = dir === 'up' ? `translateY(${(1 - q) * 110}%)` : `translateX(${(q - 1) * 105}%)`; });
 }
 
-// ── 1 · GANCHO: una foto que se parte en tres ──
-const G = ph('e09', '50% 22%'), GL = ph('e05', '50% 20%'), GR = ph('e13', '45% 30%');
+// ── 1 · GANCHO: una foto de entrenador que se parte en 9 recuadros, cada uno otro referente ──
+const MAIN = 'e13', GRID = ['e14', 'e05', 'e11', 'e02', 'e09', 'e07', 'e01', 'e12', 'e08'];
+const G = ph(MAIN, '50% 30%');
+const TL = GRID.map((src, i) => { const d = document.createElement('div'); d.className = 'ph';
+  const sl = document.createElement('img'); sl.src = IMG(MAIN); sl.style.cssText = 'position:absolute;width:1080px;height:1920px;object-fit:cover;object-position:50% 30%;max-width:none';
+  const ot = document.createElement('div'); ot.style.cssText = 'position:absolute;inset:0;overflow:hidden';
+  const im = document.createElement('img'); im.src = IMG(src); im.style.objectPosition = '50% 25%'; ot.appendChild(im);
+  const sh = document.createElement('div'); sh.className = 'sh'; d.append(sl, ot, sh); $('phs').appendChild(d);
+  return { d, sl, ot, im, sh, c: i % 3, r: Math.floor(i / 3), i }; });
 const tGE = tx('<span class="mask"><span>LOS GRANDES</span></span><br><span class="mask"><span>EQUIPOS</span></span>', 1180, 'M8 shadow', 132);
 tGE.style.lineHeight = '.95';
-const tTU = tx('<span class="mask"><span class="S blue" style="font-size:190px">tú también</span></span>', 760, '', 190);
-const tPC = tx('<span class="mask"><span>PUEDES CONSTRUIRLO</span></span>', 990, 'M8', 78);
+const tTU = tx('<span class="mask"><span class="S blue" style="font-size:190px">tú también</span></span>', 760, 'shadow', 190);
+const tPC = tx('<span class="mask"><span>PUEDES CONSTRUIRLO</span></span>', 990, 'M8 shadow', 78);
 function hook(t) {
-  const v = t < T.no - .02; [G, GL, GR].forEach(e => show(e, v)); show(tGE, v && t < T.tu + .25); show(tTU, v && t >= T.tu - .05); show(tPC, v && t >= T.tu + .2);
-  if (!v) return;
-  const a = E.out5(seg(t, 0, .4));                       // entrada lateral + zoom
-  const sp = E.io(seg(t, 1.05, 1.5));                     // se parte en tres franjas
-  const op = E.io(seg(t, T.tu - .15, T.tu + .3));         // se abren a los lados
-  const zoom = 1 + .05 * seg(t, T.tu, T.no);
-  const gap = 14, w3 = (1080 - 2 * gap) / 3;
-  // franja central: Guardiola
-  const cw = lerp(1080, w3, sp), cx = lerp(0, w3 + gap, sp);
-  place(G, cx, 0, cw, 1920, { dx: (1 - a) * 160 + 0, s: zoom * (1 + (1 - a) * .06), is: 1.12 - .06 * seg(t, 0, 3), ix: 0, z: 2, dark: .15 + .45 * op });
-  G.style.transform += ` translateX(0px)`; G.style.opacity = 1 - .35 * op;
-  // laterales: entran desde arriba y abajo
-  const lp = E.out5(seg(t, 1.1, 1.55)), rp = E.out5(seg(t, 1.22, 1.67));
-  place(GL, 0, 0, w3, 1920, { dy: (1 - lp) * -1920 + op * 0, dx: -op * 120, s: zoom, is: 1.15, z: 3, dark: .2 + .4 * op });
-  place(GR, 2 * (w3 + gap), 0, w3, 1920, { dy: (1 - rp) * 1920, dx: op * 120, s: zoom, is: 1.15, z: 3, dark: .2 + .4 * op });
-  show(GL, v && t > 1.08); show(GR, v && t > 1.2);
-  // textos
-  reveal(tGE, seg(t, .22, .62)); tGE.style.transform = `translateY(${-op * 140}px)`; tGE.style.opacity = 1 - op;
+  const v = t < T.no - .02; show(G, v && t < 1.2); TL.forEach(k => show(k.d, v && t >= 1.0)); show(tGE, v && t < T.tu + .25); show(tTU, v && t >= T.tu - .05); show(tPC, v && t >= T.tu + .2);
+  if (!v) { $('phs').style.transform = 'none'; $('phs').style.filter = 'none'; return; }
+  const a = E.out5(seg(t, 0, .45));
+  place(G, 0, 0, 1080, 1920, { dx: (1 - a) * 160, s: 1 + (1 - a) * .06, is: 1.1 - .05 * seg(t, 0, 1.2), dark: .15, z: 1 });
+  const sp = E.io(seg(t, 1.0, 1.4));                       // la foto se separa en una cuadrícula 3×3
+  const dim = E.io(seg(t, T.tu - .2, T.tu + .3));           // se apaga para dejar paso al texto
+  const zoom = 1 + .06 * seg(t, 1.0, T.no);
+  const gap = 18 * sp, pad = 40 * sp, cw = (1080 - 2 * pad - 2 * gap) / 3, chh = (1920 - 2 * pad - 2 * gap) / 3;
+  TL.forEach(k => { const x = pad + k.c * (cw + gap), y = pad + k.r * (chh + gap);
+    k.d.style.left = x + 'px'; k.d.style.top = y + 'px'; k.d.style.width = cw + 'px'; k.d.style.height = chh + 'px'; k.d.style.zIndex = 2; k.d.style.opacity = 1;
+    k.d.style.borderRadius = 10 * sp + 'px';
+    // trozo de la foto original, en su sitio
+    const sx = 1080 / 1080, z0 = 1.05 - .05 * seg(t, 0, 1.2);
+    k.sl.style.left = (-k.c * 360 - (x - k.c * 360) * 0) + (k.c * 360 - x) - k.c * 360 + 'px'; k.sl.style.top = (-y) + 'px';
+    k.sl.style.left = (-x) + 'px';
+    // cada recuadro se convierte en otro entrenador (orden en diagonal)
+    const st = 1.2 + (k.c + k.r) * .1 + (k.i % 2) * .04; const q = E.out5(seg(t, st, st + .4));
+    k.ot.style.clipPath = `inset(${(1 - q) * 100}% 0 0 0)`; k.im.style.transform = `scale(${1.25 - .15 * q + .05 * seg(t, st, T.no)}) translateY(${(1 - q) * 40}px)`;
+    k.sh.style.background = `rgba(0,0,0,${.12 + .5 * dim})`;
+    const push = dim * 1; k.d.style.transform = `translate(${(k.c - 1) * 30 * push}px,${(k.r - 1) * 30 * push}px) scale(${zoom})`; });
+  reveal(tGE, seg(t, .22, .62)); tGE.style.transform = `translateY(${-dim * 140}px)`; tGE.style.opacity = 1 - seg(t, 1.0, 1.25);
   reveal(tTU, seg(t, T.tu - .05, T.tu + .35)); reveal(tPC, seg(t, T.tu + .25, T.tu + .6));
   tTU.style.transform = tPC.style.transform = `scale(${zoom})`;
-  const out = seg(t, T.no - .2, T.no - .02); if (out > 0) { $('phs').style.transform = `scale(${1 + .12 * E.in(out)})`; $('phs').style.filter = `blur(${out * 6}px)`; }
-  else { $('phs').style.transform = 'none'; $('phs').style.filter = 'none'; }
+  const out = seg(t, T.no - .2, T.no - .02); $('phs').style.transform = out > 0 ? `scale(${1 + .12 * E.in(out)})` : 'none'; $('phs').style.filter = out > 0 ? `blur(${out * 6}px)` : 'none';
 }
 
 // ── 2 · DESMONTANDO: talento / presupuesto / jugadores / veinte personas ──
@@ -201,11 +210,11 @@ const L_dec = i => { const g = i % 3, k = Math.floor(i / 3), [cx, cy] = CL[g];
   const h = [40, 70, 55, 95, 80, 120, 105, 140, 125][k] || 60; return [cx - 90 + k * 20, cy + 70 - h, 14, h]; };          // mini gráfica
 const DAYS = ['L', 'M', 'X', 'J', 'V', 'S', 'D'], REG = [['12\'', 'Tiro', '#7', '✓'], ['18\'', 'Recuperación', '#4', '✓'], ['23\'', 'Pérdida', '#10', '·'], ['31\'', 'Tiro', '#9', '✓'], ['37\'', 'Falta', '#5', '·'], ['44\'', 'Gol', '#7', '✓'], ['52\'', 'Tiro', '#11', '✓']];
 const tW = { PLA: tx('<span class="mask"><span>PLANIFICAN</span></span>', 380, 'M8', 120), REG: tx('<span class="mask"><span>REGISTRAN</span></span>', 380, 'M8', 120), ANA: tx('<span class="mask"><span>ANALIZAN</span></span>', 380, 'M8', 120),
-  DEC: tx('<span class="mask"><span>DECISIONES</span></span><br><span class="mask"><span class="S blue" style="font-size:118px">con un objetivo</span></span>', 300, 'M8', 120) };
+  DEC: tx('<span class="mask"><span>DECIDEN</span></span><br><span class="mask" style="margin:-58px 0 0 300px"><span class="S blue" style="font-size:150px">objetivo</span></span>', 300, 'M8', 150) };
 tW.DEC.style.lineHeight = '1.02';
 const conn = []; for (let g = 0; g < 3; g++) { const l = document.createElementNS(svgNS, 'line'); l.setAttribute('stroke', '#4f86ff'); l.setAttribute('stroke-width', '4'); $('conn').appendChild(l); conn.push(l); }
 function method(t) {
-  const a = T.pla - .1, b = T.pt + .55, v = t >= a && t < b; R.forEach(r => show(r, v && t < T.pt + .5)); show($('chart'), v);
+  const a = T.pla - .1, b = T.une - .02, v = t >= a && t < b; R.forEach(r => show(r, v)); show($('chart'), v);
   Object.values(tW).forEach(e => show(e, false)); if (!v) return;
   show($('sysL'), true);
   const k1 = E.io(seg(t, T.reg - .15, T.reg + .3)), k2 = E.io(seg(t, T.ana - .15, T.ana + .3)), k3 = E.io(seg(t, T.y2, T.y2 + .45));
@@ -213,12 +222,12 @@ function method(t) {
   R.forEach((r, i) => {
     const intro = E.out5(seg(t, a + (i % 7) * .03 + Math.floor(i / 7) * .05, a + .35 + (i % 7) * .03 + Math.floor(i / 7) * .05));
     let g = L_cal(i).map((x, j) => lerp(x, L_reg(i)[j], k1)); g = g.map((x, j) => lerp(x, L_bar(i)[j], k2)); g = g.map((x, j) => lerp(x, L_dec(i)[j], k3));
-    const ph = [290 + 10, 470 + 30, 500 - 20, 1080 - 60]; g = g.map((x, j) => lerp(x, [ph[0] + (i % 4) * 120, ph[1] + Math.floor(i / 4) * 140, 110, 128][j], k4));
+    g = g.map((x, j) => lerp(x, [240 + (i % 4) * 152, 670 + Math.floor(i / 4) * 96, 136, 82][j], k4));
     r.style.left = g[0] + 'px'; r.style.top = g[1] + 'px'; r.style.width = g[2] + 'px'; r.style.height = g[3] + 'px';
-    r.style.transform = `translateY(${(1 - intro) * 40}px)`; r.style.opacity = intro * (1 - seg(t, T.pt + .2, T.pt + .5));
+    r.style.transform = `translateY(${(1 - intro) * 40}px)`; r.style.opacity = intro * (1 - seg(t, T.une - .27, T.une - .02)) * (k4 > .5 ? (ON.has(i) || i % 5 === 0 ? 1 : .55) : 1);
     r.style.borderRadius = lerp(lerp(10, 6, k2), 22, k3) + 'px';
     const fill = seg(t, T.pla + .15 + i * .018, T.pla + .3 + i * .018) > .5 && ON.has(i);
-    r.className = 'r' + ((fill && k2 < .5) || (k2 > .5 && i > 20) || k3 > .5 ? ' on' : '');
+    r.className = 'r' + (k4 > .5 ? (ON.has(i) ? ' on' : '') : (fill && k2 < .5) || (k2 > .5 && i > 20) || k3 > .5 ? ' on' : '');
     const s = r.firstChild; const regOn = seg(t, T.reg + .05 + Math.floor(i / 4) * .07, T.reg + .15 + Math.floor(i / 4) * .07) > .5;
     s.textContent = k1 < .5 ? (i < 7 ? DAYS[i] : '') : k2 < .5 ? (regOn ? REG[Math.floor(i / 4)][i % 4] : '') : '';
     s.style.color = k1 >= .5 && i % 4 === 3 ? '#4f86ff' : k1 >= .5 ? '#c9cfdb' : '#6d7588'; s.style.fontSize = k1 >= .5 ? '30px' : '24px'; s.style.top = k1 >= .5 ? '20px' : '10px';
@@ -232,38 +241,30 @@ function method(t) {
   conn.forEach((l, g) => { const p = E.io(seg(t, T.dec + g * .12, T.dec + .4 + g * .12)) * (1 - k4); const [cx, cy] = CL[g];
     l.setAttribute('x1', cx); l.setAttribute('y1', cy); l.setAttribute('x2', lerp(cx, 540, p)); l.setAttribute('y2', lerp(cy, 1030, p)); l.setAttribute('opacity', p > 0 ? 1 : 0); });
   // palabras
-  const W4 = [['PLA', T.pla - .05, T.reg - .1], ['REG', T.reg - .1, T.ana - .1], ['ANA', T.ana - .1, T.y2 + .05], ['DEC', T.y2 + .05, T.pt - .05]];
+  const W4 = [['PLA', T.pla - .05, T.reg - .1], ['REG', T.reg - .1, T.ana - .1], ['ANA', T.ana - .1, T.y2 + .05], ['DEC', T.y2 + .05, T.pt - .1]];
   W4.forEach(([k, s, e]) => { const el = tW[k]; const vv = t >= s && t < e; show(el, vv); if (!vv) return; reveal(el, seg(t, s, s + .32));
     const o = seg(t, e - .12, e); el.style.transform = `translateY(${-o * 60}px)`; el.style.opacity = 1 - o; });
 }
 
-// ── 5 · PROTEAM: todo en un solo sitio (capturas reales) ──
-function phone(srcs, x, y, s, rot) { const d = document.createElement('div'); d.className = 'phone'; const sc = document.createElement('div'); sc.className = 'scr'; d.appendChild(sc);
-  d._imgs = srcs.map(n => { const i = document.createElement('img'); i.src = IMG(n); sc.appendChild(i); return i; }); d._x = x; d._y = y; d._s = s; d._r = rot; $('phones').appendChild(d); return d; }
-const PH0 = phone(['mo-plan', 'nlv-0', 'res-0', 'mo-cal'], 290, 470, 1, 0), PHL = phone(['fE'], -30, 600, .78, -8), PHR = phone(['mo-week'], 610, 600, .78, 8);
-const tPT = tx('<span class="mask"><span>PROTEAM</span></span>', 250, 'M8', 96); tPT.style.letterSpacing = '.02em';
-const tSL = tx('<span class="mask"><span>EN UN</span></span> <span class="mask"><span class="S blue" style="font-size:150px">solo lugar</span></span>', 1590, 'M8', 92);
+// ── 5 · PROTEAM: todo dentro de un mismo sitio (sin enseñar la app) ──
+const BOX = document.createElement('div'); BOX.style.cssText = 'position:absolute;left:190px;top:620px;width:700px;height:760px;border:3px solid #2f6bff;border-radius:40px;display:none;z-index:3';
+$('rects').appendChild(BOX);
+const tPT = tx('<span class="mask"><span>PROTEAM</span></span>', 380, 'M8', 120); tPT.style.letterSpacing = '.01em';
+const tSL = tx('<span class="mask"><span>EN UN</span></span> <span class="mask"><span class="S blue" style="font-size:150px">solo lugar</span></span>', 1470, 'M8', 92);
 function product(t) {
-  const a = T.pt + .1, b = T.une - .02, v = t >= a && t < b; [PH0, PHL, PHR].forEach(p => show(p, v)); show(tPT, v); show(tSL, v && t >= T.solo - .35); if (!v) return;
-  show($('sysL'), true);
-  const p0 = E.out5(seg(t, a, a + .45)), side = E.out5(seg(t, T.herr - .1, T.herr + .45)), cam = seg(t, a, b);
-  const steps = [a, T.herr + .1, T.herr + .75, T.sis2 + .05];
-  const cur = steps.filter(s => t >= s).length - 1;
-  PH0._imgs.forEach((im, i) => { const q = E.out5(seg(t, steps[i], steps[i] + .35)); im.style.transform = `translateY(${i === 0 ? -60 * seg(t, a, steps[1]) : (1 - q) * 1080 - 60 * seg(t, steps[i], steps[i] + 1.2)}px)`; im.style.display = i <= cur ? 'block' : 'none'; });
-  PH0.style.left = PH0._x + 'px'; PH0.style.top = PH0._y + 'px'; PH0.style.zIndex = 3;
-  PH0.style.transform = `translateY(${(1 - p0) * 200 - 40 * cam}px) scale(${(.92 + .08 * p0) * (1 - .1 * side) * (1 + .04 * cam)})`; PH0.style.opacity = p0;
-  [PHL, PHR].forEach((p, i) => { p.style.left = p._x + 'px'; p.style.top = p._y + 'px'; p.style.zIndex = 2;
-    p.style.transform = `translateX(${(1 - side) * (i ? 300 : -300)}px) rotate(${p._r * side}deg) scale(${p._s})`; p.style.opacity = side * .85; p.style.filter = 'brightness(.6)'; });
-  reveal(tPT, seg(t, a, a + .4)); reveal(tSL, seg(t, T.solo - .35, T.solo + .1));
-  const out = seg(t, b - .2, b); tPT.style.opacity = tSL.style.opacity = 1 - out; [PH0, PHL, PHR].forEach(p => p.style.opacity = parseFloat(p.style.opacity) * (1 - out));
+  const a = T.pt + .1, b = T.une - .02, v = t >= a && t < b; show(BOX, v); show(tPT, v); show(tSL, v && t >= T.solo - .35); if (!v) return;
+  const p = E.out5(seg(t, a + .2, a + .7)), cam = seg(t, a, b), out = seg(t, b - .25, b);
+  BOX.style.opacity = p * (1 - out); BOX.style.transform = `scale(${(1.25 - .25 * p) * (1 + .03 * cam)})`;
+  reveal(tPT, seg(t, a - .05, a + .35)); reveal(tSL, seg(t, T.solo - .35, T.solo + .1));
+  tPT.style.opacity = tSL.style.opacity = 1 - out;
 }
 
 // ── 6 · CTA ──
 const tLE = tx('<span class="mask"><span>LISTA DE ESPERA</span></span>', 560, 'M7', 46); tLE.style.letterSpacing = '.18em'; tLE.style.color = '#c9cfdb';
-const tAN = tx('<span class="mask"><span>ANTES DEL</span></span>', 700, 'M7', 54); tAN.style.color = '#c9cfdb'; tAN.style.letterSpacing = '.08em';
+const tAN = tx('<span class="mask"><span>HASTA EL</span></span>', 700, 'M7', 54); tAN.style.color = '#c9cfdb'; tAN.style.letterSpacing = '.08em';
 const tDT = tx('<span id="d1" style="display:inline-block">2</span><span id="d2" style="display:inline-block">8</span> <span class="mask"><span>NOV</span></span>', 790, 'M8', 230);
 const t3M = tx('<span class="mask"><span>3 MESES</span></span><br><span class="mask"><span class="S blue" style="font-size:230px">gratis</span></span>', 860, 'M8', 190); t3M.style.lineHeight = '.92';
-const tFIN = tx('LISTA DE ESPERA · ANTES DEL 28 NOV', 1430, 'M7', 38); tFIN.style.color = '#7d8597'; tFIN.style.letterSpacing = '.12em';
+const tFIN = tx('LISTA DE ESPERA · HASTA EL 28 NOV', 1430, 'M7', 38); tFIN.style.color = '#7d8597'; tFIN.style.letterSpacing = '.12em';
 function cta(t) {
   const v = t >= T.une - .02; show($('sysL'), v || $('sysL').style.display === 'block'); [tLE, tAN, tDT, t3M, tFIN].forEach(e => show(e, false)); if (!v) return;
   show($('sysL'), true);
