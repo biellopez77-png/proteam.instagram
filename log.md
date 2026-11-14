@@ -236,3 +236,9 @@
 - Métricas 7 días: p07 (vienen 11 de 18) 1.671 vistas, saltos 36 %, 11,8 s, 6 guardados; d4 (pases) 1.537, 34,6 %, 13,3 s, 8 guardados; ta02 1.532, 33,8 %, 11,5 s. p03 612, p08 388, p21 168, e04 152 (65 % saltos), p06 141. Feed (c3, c4, q1): ≤ 33 vistas. Sin cambios frente a ayer.
 - Hoja: sin publicaciones nuevas; Plan y Analisis ya al día desde ayer.
 - Comentarios últimos 3 días: ninguno.
+
+### Diario 14 nov 20:25
+- Publicado: nada (`late` y `due` vacíos).
+- Métricas 7 días: p07 1.671 vistas (36 % saltos, 11,8 s, 6 guardados); d4 1.537 (34,6 %, 13,3 s, 8 guardados); ta02 1.533 (33,8 %, 11,5 s, 3 guardados). p03 616, p08 388, p21 170, e04 155 (65 % saltos), p06 143. Feed (c3, c4, q1): ≤ 33 vistas. Prácticamente sin cambios.
+- Hoja: sin publicaciones nuevas; Plan y Analisis ya al día.
+- Comentarios últimos 3 días: ninguno.
