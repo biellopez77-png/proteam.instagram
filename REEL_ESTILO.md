@@ -49,3 +49,11 @@ Aprobado por Biel el 14/11/2026 («está perfecto»), con el último ajuste de S
 | Cuenta atrás | Pieza corta de 12 s solo con la UI | — | Cuenta atrás, registro, «Estás dentro» | 27.11 |
 
 Reglas para cualquier evolución: un solo mensaje por reel, una sola palabra de impacto, 4–6 palabras destacadas en todo el vídeo, CTA siempre a la lista de espera con la fecha y «3 meses gratis» (oferta vigente hasta el 27/11 23:59).
+
+## Actualización 14/11 (Biel): DIRECCION_CREATIVA.md manda
+- Cada Reel tiene su propia propuesta visual: la estructura del Reel 1 es una opción, no una plantilla.
+- Por cada guion se entrega primero un documento de producción (concepto, guion técnico por bloques, lista de recursos que busca Biel, notas de edición) y después el vídeo.
+- Textos: frases o conceptos completos integrados en la composición (nunca subtítulos palabra a palabra).
+- Se permiten efectos de luz suaves y zooms si tienen sentido narrativo.
+- Sin música en el montaje (voz y efectos). La música, si la hay, la pone Biel desde la biblioteca de Instagram.
+- La URL no va en pantalla: «enlace en la bio» en la descripción.
