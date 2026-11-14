@@ -147,7 +147,7 @@ function shots(list) { return list.map(s => ({ ...s, el: ph(s.s, 0, 0, 1080, 192
 function animShots(S, t, end) {
   S.forEach((s, i) => {
     const a = s.t, b = i + 1 < S.length ? S[i + 1].t : end; const v = t >= a && t < b; show(s.el, v); if (!v) return;
-    const p = seg(t, a, b + .6);
+    const p = seg(t, a, b + .6); if (s.og) s.el._img.style.transformOrigin = s.og;
     s.el._img.style.transform = `scale(${(s.z || 1.16) - .1 * p}) translate(${(s.px || 0) * p}px,${(s.py || 0) * p}px)`;
     s.el.style.opacity = 1;
   });
@@ -223,13 +223,13 @@ function build() {
 
   // 4 · ellos, en acción
   S4 = shots([
-    { s: 'c04', t: T.s4, pos: '55% 60%', z: 1.5, px: -30, py: -20 },
+    { s: 'c04', t: T.s4, pos: '56% 50%', og: '62% 88%', z: 1.9, px: -20, py: -20 },
     { s: 'a036', t: T.s4 + .55, pos: '35% 50%', z: 1.25, px: 40 },
-    { s: 'c07', t: T.s4 + 1.1, pos: '35% 85%', z: 1.35, py: -40 },
-    { s: 'c22', t: T.s4 + 1.65, pos: '40% 60%', z: 1.2, px: -40 },
-    { s: 'c00', t: T.s4 + 2.2, pos: '58% 62%', z: 1.45, py: -30 },
+    { s: 'c07', t: T.s4 + 1.1, pos: '24% 50%', og: '30% 96%', z: 2.4, py: -20 },
+    { s: 'a022', t: T.s4 + 1.65, pos: '25% 50%', z: 1.2, px: 40 },
+    { s: 'c00', t: T.s4 + 2.2, pos: '57% 50%', og: '55% 80%', z: 2.4, py: -10 },
   ]);
-  blk(T.s4 + .12, T.b7 - .08, 300, [['sm', 64, 'Mientras ellos tienen'], ['bg', 150, 'una metodología']]);
+  blk(T.s4 + .12, T.b7 - .3, 300, [['sm', 64, 'Mientras ellos tienen'], ['bg', 122, 'una metodología']]);
   blk(T.b7, T.s4out - .05, 300, [['it', 160, 'y herramientas'], ['sm', 60, 'para organizar su trabajo,']]);
 
   // 5 · tú, en el caos
