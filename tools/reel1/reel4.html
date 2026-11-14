@@ -208,23 +208,23 @@ window.frame = t => {
     [...$('wp').children].forEach((c, i) => { const q = E.out(seg(t, T.web + i * .07, T.web + .45 + i * .07)); c.style.opacity = q; c.style.transform = `translateY(${(1 - q) * 40}px)`; });
     const pg = (t * 1.4) % 1; $('ping').style.transform = `scale(${1 + pg * 1.6})`; $('ping').style.opacity = 1 - pg;
     const total0 = ((13 * 24 + 8) * 60 + 21) * 60 + 40 - Math.floor(t - T.web);
-    const acc = E.in(seg(t, T.ok + .35, T.gal - .12)); const rem = Math.max(0, Math.round(total0 * (1 - acc)));
+    const acc = E.in(seg(t, T.ok + .25, T.gal - .1)); const rem = Math.max(0, Math.round(total0 * (1 - acc)));
     const dd = Math.floor(rem / 86400), hh = Math.floor(rem % 86400 / 3600), mm = Math.floor(rem % 3600 / 60), ss = rem % 60;
     [[ 'cd1', dd], ['cd2', hh], ['cd3', mm], ['cd4', ss]].forEach(([id, v]) => { $(id).textContent = String(v).padStart(2, '0'); $(id).style.color = rem === 0 ? '#4f86ff' : '#f2f1ec'; });
     const z = seg(t, T.gal - .12, T.gal); $('wp').querySelector('.cd').style.transform = `scale(${1 + .05 * Math.sin(z * Math.PI)})`;
     // cursor
     const fl = $('fld'), bt = $('btn'), wp = $('wp'); const top = parseFloat(wp.style.top);
     const fy = top + fl.offsetTop + 75, by = top + bt.offsetTop + 80;
-    const P = [[T.web + .35, 900, 1760], [T.web + .7, 760, fy + 10], [T.web + 1.6, 760, fy + 10], [T.tap - .02, 560, by + 10], [T.gal, 560, by + 10]];
+    const P = [[T.web + .15, 900, 1760], [T.web + .38, 760, fy + 10], [T.web + .8, 760, fy + 10], [T.tap - .02, 560, by + 10], [T.gal, 560, by + 10]];
     let x = P[0][1], y = P[0][2];
     for (let i = 0; i < P.length - 1; i++) if (t >= P[i][0]) { const k = E.io(seg(t, P[i][0], P[i + 1][0])); x = P[i][1] + (P[i + 1][1] - P[i][1]) * k; y = P[i][2] + (P[i + 1][2] - P[i][2]) * k; }
-    const cu = $('cur'); show(cu, t > T.web + .5 && t < T.ok + .2); cu.style.left = x + 'px'; cu.style.top = y + 'px';
-    const click = Math.max(Math.exp(-Math.pow((t - (T.web + .72)) / .06, 2)), Math.exp(-Math.pow((t - T.tap) / .06, 2)));
+    const cu = $('cur'); show(cu, t > T.web + .15 && t < T.ok + .2); cu.style.left = x + 'px'; cu.style.top = y + 'px';
+    const click = Math.max(Math.exp(-Math.pow((t - (T.web + .4)) / .06, 2)), Math.exp(-Math.pow((t - T.tap) / .06, 2)));
     cu.style.transform = `scale(${1 - .2 * click})`; cu.style.opacity = 1 - seg(t, T.ok, T.ok + .2);
     // campo
-    const focus = t > T.web + .72;
-    fl.style.borderColor = focus ? '#2f6bff' : '#262b36'; fl.style.boxShadow = focus ? `0 0 0 ${8 * E.out(seg(t, T.web + .72, T.web + .95))}px rgba(47,107,255,.22)` : 'none';
-    const em = 'entrenador@miclub.es'; const ne = Math.floor(em.length * seg(t, T.web + .8, T.web + 1.55));
+    const focus = t > T.web + .4;
+    fl.style.borderColor = focus ? '#2f6bff' : '#262b36'; fl.style.boxShadow = focus ? `0 0 0 ${8 * E.out(seg(t, T.web + .4, T.web + .6))}px rgba(47,107,255,.22)` : 'none';
+    const em = 'entrenador@miclub.es'; const ne = Math.floor(em.length * seg(t, T.web + .45, T.web + .9));
     $('fldt').innerHTML = ne ? em.slice(0, ne) : (focus ? '' : '<span class="ph2">Tu email</span>');
     $('fc').style.opacity = focus && t < T.tap ? (Math.floor(t * 4) % 2 ? 1 : .15) : 0;
     if (t > T.tap) { fl.style.borderColor = '#262b36'; fl.style.boxShadow = 'none'; }
