@@ -198,7 +198,7 @@ window.frame = t => {
   const xv = t >= T.s7 && t < T.c7; show(XL, xv); if (xv) waits.push(setClip(XL, t - T.s7));
   // 7
   C7.forEach((c, i) => { const v = t >= c.t0 && t < T.cut; show(c.el, v); if (!v) return; const p = E.out(seg(t, c.t0, c.t0 + .12));
-    c.el.style.transform = `translateY(${(1 - p) * 220}px) rotate(${c.r}deg) scale(${1.06 - .06 * p})`; c.el.style.zIndex = i; });
+    c.el.style.transform = `translateY(${(1 - p) * 220 - 30 * seg(t, c.t0, c.t0 + 1.2)}px) rotate(${c.r + (c.r > 0 ? 1 : -1) * 1.2 * seg(t, c.t0, c.t0 + 1.2)}deg) scale(${1.06 - .06 * p + .07 * seg(t, c.t0, c.t0 + 1.2)})`; c.el.style.zIndex = i; });
   // 9 · web oscura
   const wv = t >= T.web && t < T.gal; show($('web'), wv);
   if (wv) {
