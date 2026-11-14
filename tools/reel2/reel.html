@@ -227,7 +227,7 @@ function method(t) {
     r.style.transform = `translateY(${(1 - intro) * 40}px)`; r.style.opacity = intro * (1 - seg(t, T.une - .27, T.une - .02)) * (k4 > .5 ? (ON.has(i) || i % 5 === 0 ? 1 : .55) : 1);
     r.style.borderRadius = lerp(lerp(10, 6, k2), 22, k3) + 'px';
     const fill = seg(t, T.pla + .15 + i * .018, T.pla + .3 + i * .018) > .5 && ON.has(i);
-    r.className = 'r' + (k4 > .5 ? (ON.has(i) ? ' on' : '') : (fill && k2 < .5) || (k2 > .5 && i > 20) || k3 > .5 ? ' on' : '');
+    r.className = 'r' + (k4 > .5 ? ((i * 7 + Math.floor(t * 7)) % 9 < 2 ? ' on' : '') : (fill && k2 < .5) || (k2 > .5 && i > 20) || k3 > .5 ? ' on' : '');
     const s = r.firstChild; const regOn = seg(t, T.reg + .05 + Math.floor(i / 4) * .07, T.reg + .15 + Math.floor(i / 4) * .07) > .5;
     s.textContent = k1 < .5 ? (i < 7 ? DAYS[i] : '') : k2 < .5 ? (regOn ? REG[Math.floor(i / 4)][i % 4] : '') : '';
     s.style.color = k1 >= .5 && i % 4 === 3 ? '#4f86ff' : k1 >= .5 ? '#c9cfdb' : '#6d7588'; s.style.fontSize = k1 >= .5 ? '30px' : '24px'; s.style.top = k1 >= .5 ? '20px' : '10px';
@@ -252,9 +252,9 @@ $('rects').appendChild(BOX);
 const tPT = tx('<span class="mask"><span>PROTEAM</span></span>', 380, 'M8', 120); tPT.style.letterSpacing = '.01em';
 const tSL = tx('<span class="mask"><span>EN UN</span></span> <span class="mask"><span class="S blue" style="font-size:150px">solo lugar</span></span>', 1470, 'M8', 92);
 function product(t) {
-  const a = T.pt + .1, b = T.une - .02, v = t >= a && t < b; show(BOX, v); show(tPT, v); show(tSL, v && t >= T.solo - .35); if (!v) return;
+  const a = T.pt + .1, b = T.une - .02, v = t >= a && t < b; show(BOX, v); if (!v) $('rects').style.transform = 'none'; show(tPT, v); show(tSL, v && t >= T.solo - .35); if (!v) return;
   const p = E.out5(seg(t, a + .2, a + .7)), cam = seg(t, a, b), out = seg(t, b - .25, b);
-  BOX.style.opacity = p * (1 - out); BOX.style.transform = `scale(${(1.25 - .25 * p) * (1 + .03 * cam)})`;
+  BOX.style.opacity = p * (1 - out); BOX.style.transform = `scale(${(1.25 - .25 * p) * (1 + .07 * cam)})`; $('rects').style.transform = `scale(${1 + .07 * cam})`; $('rects').style.transformOrigin = '540px 1000px';
   reveal(tPT, seg(t, a - .05, a + .35)); reveal(tSL, seg(t, T.solo - .35, T.solo + .1));
   tPT.style.opacity = tSL.style.opacity = 1 - out;
 }
