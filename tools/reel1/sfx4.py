@@ -51,9 +51,12 @@ put(T['como'], swish(.3), .12); put(T['uti'], swish(.3), .12)
 for i in range(6): put(T['s6'] + i * (T['s7'] - T['s6']) / 6, tick(.04, 900), .25)
 for w in [T['met'], T['her']]: put(w, swish(.28), .1)
 put(T['s7'], tick(.04, 900), .25)
-GR = [[T['c7'], T['wha'], 2], [T['wha'], T['lib'], 1], [T['lib'], T['doc'], 2], [T['doc'], T['cut'], 3]]
-for a, b, n in GR:
-    for i in range(n): g = (b - a) / n; put(a + i * g, paper(min(.22, g)), .18 + .1 * (1 - g))
+for k in range(26): put(T['c7'] + k * (T['wha'] - T['c7']) / 26, tick(.012, 3000 + 40 * k), .07)
+for k in range(12): put(T['wha'] + k * (T['lib'] - T['wha']) / 12.6, tick(.03, 1700), .2)
+put(T['lib'], paper(max(.2, T['doc'] + .15 - T['lib'])), .22)
+a4, b4 = T['doc'] + .15, T['cut']
+for i in range(26):
+    t0 = (i / 26) ** 1.4; put(a4 + t0 * (b4 - a4), paper(.12), .16)
 put(T['sis'], thump(), .6); put(T['sis'] - .03, shimmer(.4), .08)
 put(T['pt'], swish(.4), .14); put(T['pt'] + .3, thump(.4), .3)
 put(T['web'] + .4, tick(.025, 2200), .25)

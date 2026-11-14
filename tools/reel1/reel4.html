@@ -94,7 +94,81 @@ function animW(r, t) {
   r.chars.forEach((c, k) => { const a = r.tin + k * r.st; const p = E.out(seg(t, a, a + .3)); c.style.opacity = p; c.style.filter = p < .99 ? `blur(${(1 - p) * 14}px)` : 'none'; c.style.transform = `translateX(${(1 - p) * 26}px)`; });
 }
 
-let C1, B2, S4, S6, XL, C7, GAL, Q, CNT, TICKS, TY2;
+
+// ───── herramientas: Excel, WhatsApp, libretas, documentos ─────
+function scene() { const d = document.createElement('div'); d.style.cssText = 'position:absolute;inset:0;display:none;overflow:hidden;background:#0d0f14'; $('mid').appendChild(d); return d; }
+function buildTools() {
+  const R = {};
+  // Excel: hoja oscura que se llena de datos
+  R.xl = scene(); const sh = document.createElement('div');
+  sh.style.cssText = 'position:absolute;left:-120px;top:240px;width:1320px;height:1500px;background:#11141b;border:2px solid #262b36;border-radius:20px;transform-origin:50% 40%';
+  R.xl.appendChild(sh); R.xls = sh; R.cells = [];
+  const cols = 9, rows = 24, cw = 140, rh = 58, x0 = 90, y0 = 70;
+  let g = '';
+  for (let c = 0; c <= cols; c++) g += `<div style="position:absolute;left:${x0 + c * cw}px;top:0;width:2px;height:100%;background:#1f2430"></div>`;
+  for (let r = 0; r <= rows; r++) g += `<div style="position:absolute;top:${y0 + r * rh}px;left:0;height:2px;width:100%;background:#1f2430"></div>`;
+  for (let c = 0; c < cols; c++) g += `<div style="position:absolute;left:${x0 + c * cw}px;top:16px;width:${cw}px;text-align:center;font:700 26px M;color:#5d6475">${'ABCDEFGHI'[c]}</div>`;
+  for (let r = 0; r < rows; r++) g += `<div style="position:absolute;left:0;top:${y0 + r * rh + 12}px;width:${x0}px;text-align:center;font:700 24px M;color:#5d6475">${r + 1}</div>`;
+  sh.innerHTML = g;
+  const names = ['Pablo', 'Hugo', 'Leo', 'Mario', 'Dani', 'Álex', 'Iker', 'Nico', 'Marc', 'Pol', 'Adri', 'Sergi', 'Unai', 'Joel', 'Eric', 'Biel', 'Raúl', 'Jan', 'Aitor', 'Oier', 'Bruno', 'Gael', 'Saúl', 'Teo'];
+  for (let r = 0; r < rows; r++) for (let c = 0; c < cols; c++) {
+    const e = document.createElement('div'); const hi = rnd() < .16, bl = rnd() < .1;
+    const txt = c === 0 ? names[r] : (rnd() < .2 ? '' : String(Math.floor(rnd() * 90 + 5)) + (c === 3 ? "'" : ''));
+    e.style.cssText = `position:absolute;left:${x0 + c * cw + 4}px;top:${y0 + r * rh + 4}px;width:${cw - 6}px;height:${rh - 6}px;border-radius:6px;font:${c === 0 ? 700 : 500} 26px M;color:${hi ? '#fff' : '#c9cfdb'};background:${hi ? '#2f6bff' : bl ? '#262b36' : 'transparent'};display:flex;align-items:center;justify-content:${c === 0 ? 'flex-start' : 'center'};padding-left:${c === 0 ? 10 : 0}px;opacity:0`;
+    e.textContent = txt; sh.appendChild(e); R.cells.push({ e, k: rnd() });
+  }
+  // WhatsApp: chat que no para
+  R.wa = scene(); const ch = document.createElement('div'); ch.style.cssText = 'position:absolute;left:90px;right:90px;bottom:560px'; R.wa.appendChild(ch); R.chat = ch; R.bub = [];
+  const msgs = [['¿Mañana hay entreno?', 0], ['Mi hijo no puede ir 🙏', 0], ['A las 18:30 en el campo 2', 1], ['¿Quién juega el sábado?', 0], ['¿Se cambia el horario?', 0], ['¿Llevamos la equipación blanca?', 0], ['Pásame la convocatoria', 0], ['Hoy llega tarde, lo siento', 0], ['¿Hay que pagar la cuota?', 0], ['Os lo confirmo esta noche', 1], ['¿Partido a qué hora?', 0], ['¿Alguien lleva a Pablo?', 0]];
+  msgs.forEach(([m, me], i) => { const b = document.createElement('div');
+    b.style.cssText = `display:table;max-width:78%;margin:0 ${me ? '0 18px auto' : 'auto 18px 0'};padding:24px 30px;border-radius:30px;font:500 40px M;letter-spacing:-.01em;color:${me ? '#fff' : '#e9ebf0'};background:${me ? '#2f6bff' : '#1f2430'};margin-bottom:18px;opacity:0`;
+    b.textContent = m; ch.appendChild(b); R.bub.push(b); });
+  const bd = document.createElement('div'); bd.style.cssText = 'position:absolute;right:110px;top:260px;min-width:120px;height:120px;border-radius:60px;background:#2f6bff;color:#fff;font:800 60px M;display:flex;align-items:center;justify-content:center;padding:0 26px;opacity:0';
+  R.wa.appendChild(bd); R.badge = bd;
+  // libretas: página que se llena de notas, flechas y tachones
+  R.lb = scene(); const pg = document.createElement('div');
+  pg.style.cssText = 'position:absolute;left:120px;top:300px;width:840px;height:1240px;background:#f2f1ec;border-radius:10px;background-image:repeating-linear-gradient(180deg,transparent 0 62px,#c9d4ea 62px 64px);box-shadow:0 40px 90px rgba(0,0,0,.6);transform:rotate(-4deg)';
+  R.lb.appendChild(pg); R.page = pg;
+  const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg'); svg.setAttribute('width', 840); svg.setAttribute('height', 1240); svg.style.cssText = 'position:absolute;left:0;top:0';
+  let p = ''; for (let i = 0; i < 11; i++) { const y = 110 + i * 64; let d = `M70 ${y}`; let x = 70; const w = 300 + rnd() * 380; while (x < 70 + w) { const s = 18 + rnd() * 26; d += ` q${s / 2} ${-14 - rnd() * 16} ${s} 0`; x += s; } p += `<path d="${d}" stroke="#1c2a6b" stroke-width="5" fill="none" stroke-linecap="round"/>`; }
+  p += '<path d="M60 430 L560 450" stroke="#c0392b" stroke-width="7" fill="none" stroke-linecap="round"/><path d="M60 558 L480 548" stroke="#c0392b" stroke-width="7" fill="none" stroke-linecap="round"/>';
+  p += '<rect x="90" y="830" width="660" height="330" rx="8" stroke="#1c2a6b" stroke-width="5" fill="none"/><path d="M420 830 V1160 M90 995 H750" stroke="#1c2a6b" stroke-width="4" fill="none"/><circle cx="420" cy="995" r="60" stroke="#1c2a6b" stroke-width="4" fill="none"/>';
+  p += '<path d="M200 1100 C 260 980 330 960 380 900" stroke="#2f6bff" stroke-width="7" fill="none" stroke-linecap="round"/><path d="M560 1080 C 600 1000 650 960 700 900" stroke="#2f6bff" stroke-width="7" fill="none" stroke-linecap="round"/>';
+  svg.innerHTML = p; pg.appendChild(svg); R.strokes = [...svg.children].map(e => { const L = e.getTotalLength(); e.style.strokeDasharray = L; e.style.strokeDashoffset = L; return { e, L }; });
+  // documentos: hojas que caen y se amontonan
+  R.dc = scene(); R.docs = [];
+  for (let i = 0; i < 26; i++) { const d = document.createElement('div'); const w = 620 + rnd() * 160;
+    let bars = '<div style="height:26px;width:55%;background:#0d0f14;border-radius:4px;margin-bottom:34px"></div>';
+    for (let k = 0; k < 12; k++) bars += `<div style="height:14px;width:${40 + rnd() * 55}%;background:${k % 5 === 2 ? '#2f6bff' : '#c9ccd3'};border-radius:4px;margin-bottom:22px"></div>`;
+    d.style.cssText = `position:absolute;left:${540 - w / 2 + (rnd() - .5) * 300}px;top:${960 - w * .66 + (rnd() - .5) * 400}px;width:${w}px;height:${w * 1.32}px;background:#f5f5f3;border-radius:8px;padding:56px 50px;box-shadow:0 30px 70px rgba(0,0,0,.55);display:none`;
+    d.innerHTML = bars; R.dc.appendChild(d); R.docs.push({ d, r: (rnd() - .5) * 40, dx: (rnd() - .5) * 600 }); }
+  return R;
+}
+function animTools(t) {
+  const R = TL;
+  // Excel
+  const a = T.c7, b = T.wha; show(R.xl, t >= a && t < b);
+  if (t >= a && t < b) { const p = seg(t, a, b);
+    R.xls.style.transform = `perspective(2200px) rotateX(${22 - 8 * p}deg) rotateZ(${-7 + 3 * p}deg) translateY(${-60 * p}px) scale(${1.02 + .1 * p})`;
+    R.cells.forEach(c => { const q = seg(p, c.k * .75, c.k * .75 + .08); c.e.style.opacity = q; }); }
+  // WhatsApp
+  const a2 = T.wha, b2 = T.lib; show(R.wa, t >= a2 && t < b2);
+  if (t >= a2 && t < b2) { const p = seg(t, a2, b2); const n = Math.floor(1 + p * (R.bub.length - 1) * 1.05);
+    R.bub.forEach((e, i) => { const on = i < n; e.style.display = on ? 'table' : 'none'; if (on) { const q = i === n - 1 ? E.back(clamp((p * (R.bub.length - 1) * 1.05 - (n - 1)) * 1.6)) : 1; e.style.opacity = clamp(q * 1.4); e.style.transform = `scale(${.7 + .3 * q})`; e.style.transformOrigin = e.style.marginLeft === '0px' ? '0 100%' : '100% 100%'; } });
+    R.badge.style.opacity = 1; R.badge.textContent = String(12 + Math.floor(p * 87)); R.badge.style.transform = `scale(${1 + .08 * Math.sin(t * 40)})`; }
+  // libretas
+  const a3 = T.lib, b3 = T.doc + .15; show(R.lb, t >= a3 && t < b3);
+  if (t >= a3 && t < b3) { const p = seg(t, a3, b3);
+    R.page.style.transform = `rotate(${-4 + 3 * p}deg) scale(${1 + .08 * p})`;
+    R.strokes.forEach((s, i) => { const k = i / R.strokes.length; s.e.style.strokeDashoffset = s.L * (1 - E.out(seg(p, k * .7, k * .7 + .3))); }); }
+  // documentos
+  const a4 = T.doc + .15, b4 = T.cut; show(R.dc, t >= a4 && t < b4);
+  if (t >= a4 && t < b4) { const p = seg(t, a4, b4);
+    R.docs.forEach((o, i) => { const t0 = Math.pow(i / R.docs.length, 1.4); const q = E.out(seg(p, t0, t0 + .12)); const v = p >= t0; o.d.style.display = v ? 'block' : 'none';
+      if (v) o.d.style.transform = `translate(${(1 - q) * o.dx}px,${(1 - q) * -1400}px) rotate(${o.r * (.4 + .6 * q)}deg)`; }); }
+}
+
+let TL, C1, B2, S4, S6, XL, C7, GAL, Q, CNT, TICKS, TY2;
 function clip(name, n, o) {
   const d = document.createElement('div'); d.className = 'ph'; Object.assign(d.style, { left: 0, top: 0, width: '1080px', height: '1920px' });
   const im = document.createElement('img'); d.appendChild(im);
@@ -143,9 +217,8 @@ function build() {
   word(T.met, T.her - .02, 1460, 'metodología', 'sub', 92);
   word(T.her, T.s7, 1460, 'herramientas', 'sub', 92);
   // 7 · tú: collage de herramientas que se acelera hasta negro seco
-  const GR = [[T.c7, T.wha, ['b1', 'x1']], [T.wha, T.lib, ['b3']], [T.lib, T.doc, ['b5', 'b6']], [T.doc, T.cut, ['b7', 'b8', 'x3']]];
-  C7 = []; GR.forEach(([a, b, L]) => L.forEach((s, i) => { const w = 980 + rnd() * 200, h = w * 1.62, x = 540 - w / 2 + (rnd() - .5) * 140, y = 960 - h / 2 + (rnd() - .5) * 180;
-    C7.push({ el: ph(s, x, y, w, h, { shadow: 1 }), t0: a + i * (b - a) / L.length, r: (rnd() - .5) * 9 }); }));
+  // herramientas en motion graphics (modo oscuro, colores de marca)
+  TL = buildTools();
   word(T.exc, T.wha - .02, 1500, 'Excel', 'sub', 84); word(T.wha, T.lib - .02, 1500, 'WhatsApp', 'sub', 84);
   word(T.lib, T.doc - .02, 1500, 'libretas', 'sub', 84); word(T.doc, T.cut, 1500, 'documentos', 'sub', 84);
   // 8 · «eso se llama» a máquina y SISTEMA sobre negro
@@ -197,8 +270,7 @@ window.frame = t => {
   S6.forEach((s, i) => { const b = i + 1 < S6.length ? S6[i + 1].t : T.s7; const v = t >= s.t && t < b; show(s.el, v); if (v) waits.push(setClip(s.el, t - s.t)); });
   const xv = t >= T.s7 && t < T.c7; show(XL, xv); if (xv) waits.push(setClip(XL, t - T.s7));
   // 7
-  C7.forEach((c, i) => { const v = t >= c.t0 && t < T.cut; show(c.el, v); if (!v) return; const p = E.out(seg(t, c.t0, c.t0 + .12));
-    c.el.style.transform = `translateY(${(1 - p) * 220 - 30 * seg(t, c.t0, c.t0 + 1.2)}px) rotate(${c.r + (c.r > 0 ? 1 : -1) * 1.2 * seg(t, c.t0, c.t0 + 1.2)}deg) scale(${1.06 - .06 * p + .07 * seg(t, c.t0, c.t0 + 1.2)})`; c.el.style.zIndex = i; });
+  animTools(t);
   // 9 · web oscura
   const wv = t >= T.web && t < T.gal; show($('web'), wv);
   if (wv) {
