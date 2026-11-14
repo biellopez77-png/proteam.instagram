@@ -168,7 +168,7 @@ function animTools(t) {
       if (v) o.d.style.transform = `translate(${(1 - q) * o.dx}px,${(1 - q) * -1400}px) rotate(${o.r * (.4 + .6 * q)}deg)`; }); }
 }
 
-let TL, C1, B2, S4, S6, XL, C7, GAL, Q, CNT, TICKS, TY2;
+let PT = [], SY, TL, C1, B2, S4, S6, XL, C7, GAL, Q, CNT, TICKS, TY2;
 function clip(name, n, o) {
   const d = document.createElement('div'); d.className = 'ph'; Object.assign(d.style, { left: 0, top: 0, width: '1080px', height: '1920px' });
   const im = document.createElement('img'); d.appendChild(im);
@@ -223,9 +223,13 @@ function build() {
   word(T.lib, T.doc - .02, 1500, 'libretas', 'sub', 84); word(T.doc, T.cut, 1500, 'documentos', 'sub', 84);
   // 8 · «eso se llama» a máquina y SISTEMA sobre negro
   TY2 = document.createElement('div'); TY2.className = 'w'; TY2.style.cssText = 'top:700px;font-family:M;font-weight:500;font-size:66px;letter-spacing:-.02em;color:#fff'; TY2.innerHTML = '<span id="ty2"></span><span class="caret" id="ty2c"></span>'; $('txt').appendChild(TY2);
-  word(T.sis, T.s9, 860, 'SISTEMA', 'big', 210, { color: '#fff', spread: .25, zoom: .06 });
+  SY = document.createElement('div'); SY.className = 'w big'; SY.style.cssText = 'top:820px;font-size:236px;color:#fff;letter-spacing:-.04em;text-shadow:none';
+  SY.innerHTML = 'SISTEMA<div id="syu" style="position:absolute;left:150px;right:150px;top:270px;height:16px;background:#2f6bff;transform-origin:0 50%;transform:scaleX(0)"></div>'; $('txt').appendChild(SY);
+  const FL = document.createElement('div'); FL.id = 'sflash'; FL.style.cssText = 'position:absolute;inset:0;background:#fff;opacity:0;display:none'; $('txt').appendChild(FL);
   // 9 · ProTeam
-  word(T.pt, T.web, 840, 'ProTeam', 'big', 200, { color: '#0b0b0c', spread: .45, zoom: .05, noshadow: 1 });
+  PT = Array.from({ length: 22 }, () => { const o = document.createElement('div'); const a = rnd() * Math.PI * 2, r = 160 + rnd() * 260;
+    o.style.cssText = `position:absolute;left:0;top:0;width:${10 + rnd() * 10}px;height:${10 + rnd() * 10}px;border-radius:50%;background:${rnd() < .7 ? '#2f6bff' : '#f2f1ec'};display:none;margin-left:${470 + 70}px;margin-top:0px`;
+    o._dx = Math.cos(a) * r; o._dy = Math.sin(a) * r * .7; $('web').appendChild(o); return o; });
   // 10 · galería final con palabras encima
   const G = [['e03', '50% 20%'], ['e08', '50% 15%'], ['e07', '45% 15%']];
   GAL = G.map(([s, p], i) => ({ el: ph(s, 0, 0, 1080, 1920, { pos: p, shade: 'rgba(0,0,0,.38)' }), t: T.gal + i * ((T.s11 - T.gal) / G.length) }));
@@ -237,7 +241,14 @@ function build() {
 
 window.frame = t => {
   const waits = [];
-  show($('white'), (t >= T.s4 && t < T.s6) || (t >= T.s9 && t < T.web));
+  show($('white'), t >= T.s4 && t < T.s6);
+  // SISTEMA con impacto: golpe de escala, destello plano, temblor y subrayado
+  const syv = t >= T.sis - .02 && t < T.web; show(SY, syv);
+  if (syv) { const p = E.out5(seg(t, T.sis - .02, T.sis + .16)); const sh = (1 - seg(t, T.sis + .1, T.sis + .38)) * (t > T.sis + .1 ? 1 : 0);
+    SY.style.opacity = clamp(p * 1.5); SY.style.filter = p < .99 ? `blur(${(1 - p) * 18}px)` : 'none';
+    SY.style.transform = `translate(${Math.sin(t * 95) * 9 * sh}px,${Math.cos(t * 83) * 7 * sh}px) scale(${1.55 - .55 * p + .05 * seg(t, T.sis + .16, T.web)})`;
+    $('syu').style.transform = `scaleX(${E.io(seg(t, T.sis + .3, T.sis + .62))})`; }
+  const fv = seg(t, T.sis + .1, T.sis + .3); show($('sflash'), fv > 0 && fv < 1); $('sflash').style.opacity = .85 * (1 - fv);
   // 1
   const txt = 'no eres diferente a ellos.'; const n = Math.floor(txt.length * seg(t, T.type0, T.type1));
   show($('type'), t < T.col0 + .1); $('tyt').textContent = txt.slice(0, n); $('tyc').style.opacity = Math.floor(t * 4) % 2 ? 1 : .15;
@@ -281,29 +292,32 @@ window.frame = t => {
     const total0 = ((13 * 24 + 8) * 60 + 21) * 60 + 40 - Math.floor(t - T.web);
     const acc = E.in(seg(t, T.ok + .25, T.gal - .1)); const rem = Math.max(0, Math.round(total0 * (1 - acc)));
     const dd = Math.floor(rem / 86400), hh = Math.floor(rem % 86400 / 3600), mm = Math.floor(rem % 3600 / 60), ss = rem % 60;
-    [[ 'cd1', dd], ['cd2', hh], ['cd3', mm], ['cd4', ss]].forEach(([id, v]) => { $(id).textContent = String(v).padStart(2, '0'); $(id).style.color = rem === 0 ? '#4f86ff' : '#f2f1ec'; });
+    [[ 'cd1', dd], ['cd2', hh], ['cd3', mm], ['cd4', ss]].forEach(([id, v]) => { const el = $(id); const nv = String(v).padStart(2, '0'); if (el.textContent !== nv) { el._ch = t; el.textContent = nv; } el.style.color = rem === 0 ? '#4f86ff' : '#f2f1ec';
+      const q = E.out(seg(t, el._ch || -9, (el._ch || -9) + .18)); el.style.transform = `translateY(${(1 - q) * -22}px)`; el.style.opacity = .35 + .65 * q; });
+    PT.forEach((o, i) => { const q = seg(t, T.ok + .15, T.ok + .85); o.style.display = q > 0 && q < 1 ? 'block' : 'none'; if (q > 0 && q < 1) { const e = E.out(q); o.style.transform = `translate(${o._dx * e}px,${o._dy * e + 120 * q * q}px) scale(${1 - q})`; o.style.opacity = 1 - q; } });
     const z = seg(t, T.gal - .12, T.gal); $('wp').querySelector('.cd').style.transform = `scale(${1 + .05 * Math.sin(z * Math.PI)})`;
     // cursor
     const fl = $('fld'), bt = $('btn'), wp = $('wp'); const top = parseFloat(wp.style.top);
     const fy = top + fl.offsetTop + 75, by = top + bt.offsetTop + 80;
-    const P = [[T.web + .15, 900, 1760], [T.web + .38, 760, fy + 10], [T.web + .8, 760, fy + 10], [T.tap - .02, 560, by + 10], [T.gal, 560, by + 10]];
+    const P = [[T.web + .45, 980, 1800], [T.web + .9, 760, fy + 10], [T.web + 1.72, 740, fy + 14], [T.tap - .25, 560, by + 12], [T.tap - .02, 562, by + 14], [T.gal, 562, by + 14]];
     let x = P[0][1], y = P[0][2];
     for (let i = 0; i < P.length - 1; i++) if (t >= P[i][0]) { const k = E.io(seg(t, P[i][0], P[i + 1][0])); x = P[i][1] + (P[i + 1][1] - P[i][1]) * k; y = P[i][2] + (P[i + 1][2] - P[i][2]) * k; }
-    const cu = $('cur'); show(cu, t > T.web + .15 && t < T.ok + .2); cu.style.left = x + 'px'; cu.style.top = y + 'px';
-    const click = Math.max(Math.exp(-Math.pow((t - (T.web + .4)) / .06, 2)), Math.exp(-Math.pow((t - T.tap) / .06, 2)));
+    const cu = $('cur'); show(cu, t > T.web + .45 && t < T.ok + .2); cu.style.left = x + 'px'; cu.style.top = y + 'px';
+    const click = Math.max(Math.exp(-Math.pow((t - (T.web + .92)) / .06, 2)), Math.exp(-Math.pow((t - T.tap) / .06, 2)));
     cu.style.transform = `scale(${1 - .2 * click})`; cu.style.opacity = 1 - seg(t, T.ok, T.ok + .2);
     // campo
-    const focus = t > T.web + .4;
-    fl.style.borderColor = focus ? '#2f6bff' : '#262b36'; fl.style.boxShadow = focus ? `0 0 0 ${8 * E.out(seg(t, T.web + .4, T.web + .6))}px rgba(47,107,255,.22)` : 'none';
-    const em = 'entrenador@miclub.es'; const ne = Math.floor(em.length * seg(t, T.web + .45, T.web + .9));
+    const focus = t > T.web + .92;
+    fl.style.borderColor = focus ? '#2f6bff' : '#262b36'; fl.style.boxShadow = focus ? `0 0 0 ${(8 + 3 * Math.sin(t * 6)) * E.out(seg(t, T.web + .92, T.web + 1.15))}px rgba(47,107,255,.22)` : 'none';
+    const em = 'entrenador@miclub.es'; const tp = seg(t, T.web + 1.0, T.web + 1.7); const ne = Math.floor(em.length * clamp(tp + .06 * Math.sin(tp * 19)));
     $('fldt').innerHTML = ne ? em.slice(0, ne) : (focus ? '' : '<span class="ph2">Tu email</span>');
     $('fc').style.opacity = focus && t < T.tap ? (Math.floor(t * 4) % 2 ? 1 : .15) : 0;
     if (t > T.tap) { fl.style.borderColor = '#262b36'; fl.style.boxShadow = 'none'; }
     // botón
-    const press = Math.exp(-Math.pow((t - T.tap) / .08, 2)); const hov = seg(t, T.tap - .3, T.tap - .02);
+    const press = Math.exp(-Math.pow((t - T.tap) / .08, 2)); const hov = E.out(seg(t, T.tap - .35, T.tap - .1));
     const doneP = E.out5(seg(t, T.ok, T.ok + .45));
-    bt.style.transform = `scale(${1 - .05 * press + .015 * hov * (t < T.tap ? 1 : 0)})`;
+    bt.style.transform = `scale(${1 - .05 * press + .025 * hov * (t < T.tap ? 1 : 0)})`; bt.style.boxShadow = `0 0 ${60 * hov * (t < T.ok ? 1 : 0) + 50 * Math.exp(-Math.pow((t - T.ok - .3) / .25, 2))}px rgba(47,107,255,.6)`;
     bt.style.width = (940 - (940 - 560) * doneP) + 'px'; bt.style.borderRadius = (28 + 52 * doneP) + 'px';
+    PT.forEach(o => { o.style.left = '0px'; o.style.top = (top + bt.offsetTop + 70) + 'px'; });
     const rip = $('rip'); const rp = seg(t, T.tap, T.tap + .5); show(rip, rp > 0 && rp < 1);
     rip.style.left = (560 - 70 - 20) + 'px'; rip.style.top = '60px'; rip.style.transform = `scale(${1 + rp * 40})`; rip.style.opacity = .9 * (1 - rp);
     const busy = t >= T.tap + .1 && t < T.ok;

@@ -30,8 +30,8 @@ T['cnt0'] = T['s3'] + .06; T['hor'] = S(at('horas')); T['cnt1'] = S(at('dia', en
 T['rec'] = S(at('tus')); T['sino'] = S(at('sino')); T['como'] = S(at('como')); T['uti'] = S(at('utilizas'))
 T['s6'] = S(at('porque')); T['met'] = S(at('metodologia')); T['her'] = S(at('herramientas')); T['s7'] = S(at('tu'))
 T['c7'] = T['exc'] = S(at('excel')); T['wha'] = S(at('whatsapp')); T['lib'] = S(at('libretas')); T['doc'] = S(at('documentos'))
-T['cut'] = S(at('documentos', end=True)); T['eso'] = S(at('eso')); T['sis'] = S(at('sistema')); T['s9'] = S(at('con', 2)) if False else S(at('sistema', end=True)) + .35
-T['pt'] = T['s9'] + .15; T['web'] = S(at('puedes')) + .1; T['tap'] = T['web'] + 1.0; T['ok'] = T['tap'] + .45
+T['cut'] = S(at('documentos', end=True)); T['eso'] = S(at('eso')); T['sis'] = S(at('sistema')); T['s9'] = S(at('sistema', end=True)) + .45
+T['web'] = S(at('sistema', end=True)) + .45; T['pt'] = T['web']; T['tap'] = T['web'] + 2.05; T['ok'] = T['tap'] + .45
 T['gal'] = S(at('antes')) - .15; T['d28'] = S(at('28')) if any(w == '28' for _, _, w in W) else S(at('del', 1)) + .3
 T['s11'] = S(at('y', sum(1 for _, _, w in W if w == 'y'))); T['tres'] = T['s11'] + .12; T['END'] = S(W[-1][1]) + 1.8
 T = {k: round(v, 3) for k, v in T.items()}

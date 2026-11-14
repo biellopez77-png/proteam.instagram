@@ -58,9 +58,9 @@ a4, b4 = T['doc'] + .15, T['cut']
 for i in range(26):
     t0 = (i / 26) ** 1.4; put(a4 + t0 * (b4 - a4), paper(.12), .16)
 put(T['sis'], thump(), .6); put(T['sis'] - .03, shimmer(.4), .08)
-put(T['pt'], swish(.4), .14); put(T['pt'] + .3, thump(.4), .3)
-put(T['web'] + .4, tick(.025, 2200), .25)
-for k in range(20): put(T['web'] + .45 + k * .45 / 20, tick(.016, 3800), .09)
+put(T['sis'] - .35, whoosh(.4, 300, 3000), .3); put(T['sis'] + .1, thump(.7), .5); put(T['web'], swish(.4), .12)
+put(T['web'] + .92, tick(.025, 2200), .25)
+for k in range(20): put(T['web'] + 1.0 + k * .7 / 20 + .02 * np.sin(k * 1.7), tick(.016, 3800), .09)
 put(T['tap'], tick(.025, 2200), .35); put(T['tap'] + .06, tick(.02, 1500), .22); put(T['ok'], swish(.3), .14)
 a, b = T['ok'] + .25, T['gal'] - .1
 for k in range(14): p = k / 14; put(a + (b - a) * (p ** .5), tick(.015, 3000 + 1500 * p), .08 + .06 * p)
