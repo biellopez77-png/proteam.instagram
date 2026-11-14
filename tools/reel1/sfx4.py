@@ -65,7 +65,7 @@ put(T['tap'], tick(.025, 2200), .35); put(T['tap'] + .06, tick(.02, 1500), .22);
 a, b = T['ok'] + .25, T['gal'] - .1
 for k in range(14): p = k / 14; put(a + (b - a) * (p ** .5), tick(.015, 3000 + 1500 * p), .08 + .06 * p)
 put(T['gal'] - .1, thump(.35), .3)
-for i in range(3): put(T['gal'] + i * (T['s11'] - T['gal']) / 3, tick(.04, 900), .25)
+for i in range(2): put(T['gal'] + i * (T['s11'] - T['gal']) / 2, tick(.04, 900), .25)
 put(T['d28'], thump(), .45); put(T['tres'], thump(), .5); put(T['tres'] + .05, shimmer(.6), .06)
 out = out[:int(SR * DUR)]
 out = out / max(1e-9, np.abs(out).max()) * .85
