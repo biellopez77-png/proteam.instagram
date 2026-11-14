@@ -51,7 +51,7 @@ put(T['como'], swish(.3), .12); put(T['uti'], swish(.3), .12)
 for i in range(6): put(T['s6'] + i * (T['s7'] - T['s6']) / 6, tick(.04, 900), .25)
 for w in [T['met'], T['her']]: put(w, swish(.28), .1)
 put(T['s7'], tick(.04, 900), .25)
-GR = [[T['c7'], T['wha'], 2], [T['wha'], T['lib'], 3], [T['lib'], T['doc'], 4], [T['doc'], T['cut'], 10]]
+GR = [[T['c7'], T['wha'], 2], [T['wha'], T['lib'], 1], [T['lib'], T['doc'], 2], [T['doc'], T['cut'], 3]]
 for a, b, n in GR:
     for i in range(n): g = (b - a) / n; put(a + i * g, paper(min(.22, g)), .18 + .1 * (1 - g))
 put(T['sis'], thump(), .6); put(T['sis'] - .03, shimmer(.4), .08)

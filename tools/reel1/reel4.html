@@ -138,13 +138,12 @@ function build() {
   word(T.como, T.uti, 760, 'cómo', 'it', 330, { color: '#0b0b0c', zoom: .06 });
   word(T.uti, T.s6, 760, 'utilizas', 'it', 300, { color: '#0b0b0c', zoom: .06 });
   // 6 · ellos en acción
-  S6 = ['v1', 'v2', 'v3', 'v4', 'v5', 'v6'].map((v, i) => ({ el: clip(v, 24, { shade: 'linear-gradient(180deg,rgba(0,0,0,0) 55%,rgba(0,0,0,.55) 100%)' }), t: T.s6 + i * ((T.s7 - T.s6) / 6) }));
+  S6 = [['v1', 24], ['v2', 24], ['v3', 24], ['v4', 24], ['v5', 24], ['v6', 22]].map(([v, nf], i) => ({ el: clip(v, nf, { shade: 'linear-gradient(180deg,rgba(0,0,0,0) 55%,rgba(0,0,0,.55) 100%)' }), t: T.s6 + i * ((T.s7 - T.s6) / 6) }));
   XL = clip('xl', 36, {});
   word(T.met, T.her - .02, 1460, 'metodología', 'sub', 92);
   word(T.her, T.s7, 1460, 'herramientas', 'sub', 92);
   // 7 · tú: collage de herramientas que se acelera hasta negro seco
-  const GR = [[T.c7, T.wha, ['g1', 'g2']], [T.wha, T.lib, ['g3', 'g4', 'g1']], [T.lib, T.doc, ['g5', 'g6', 'g3', 'g5']],
-    [T.doc, T.cut, ['g7', 'g8', 'g2', 'g6', 'g7', 'g4', 'g8', 'g5', 'g1', 'g7']]];
+  const GR = [[T.c7, T.wha, ['b1', 'x1']], [T.wha, T.lib, ['b3']], [T.lib, T.doc, ['b5', 'b6']], [T.doc, T.cut, ['b7', 'b8', 'x3']]];
   C7 = []; GR.forEach(([a, b, L]) => L.forEach((s, i) => { const w = 980 + rnd() * 200, h = w * 1.62, x = 540 - w / 2 + (rnd() - .5) * 140, y = 960 - h / 2 + (rnd() - .5) * 180;
     C7.push({ el: ph(s, x, y, w, h, { shadow: 1 }), t0: a + i * (b - a) / L.length, r: (rnd() - .5) * 9 }); }));
   word(T.exc, T.wha - .02, 1500, 'Excel', 'sub', 84); word(T.wha, T.lib - .02, 1500, 'WhatsApp', 'sub', 84);
