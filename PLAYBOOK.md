@@ -351,3 +351,7 @@ que mantener; el panel se actualiza solo al leerla.
 - Agente 04 (skill `proteam-carousel-lab`, `agencia/PROMPT_AGENTE4.md`): 1 carrusel al día a las 11:00 (`campana: "carrusel"`), con su copy. Hasta el 27/11 más captación e identificación; después más fidelización.
 - 1 Story al día a las 19:00 que lleva al Reel o al carrusel del día o recuerda la lista de espera (1080×1920, misma identidad).
 - `tools/pub.py` deja pasar en el feed los Reels, los posts de la campaña `blackout` y los de la campaña `carrusel`.
+
+## Agentes 05 y 06 (15 nov, Biel)
+- 05 Critical Lab (`proteam-critical-lab`): puntúa sobre 100 guion y pieza final de cada Reel y carrusel; < 75 no se publica.
+- 06 Performance & Learning Lab (`proteam-performance-lab`): cada lunes analiza métricas, críticas y comentarios, actualiza `agencia/APRENDIZAJES.md` y propone 1 experimento; los demás agentes leen ese archivo antes de crear.

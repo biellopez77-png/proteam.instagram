@@ -15,6 +15,9 @@ Plantilla técnica: `tools/reel2/` (Reel 2, aprobado por Biel). Cada Reel nuevo 
 - Puntúalo con los 8 criterios y no sigas si la media baja de 4.
 - El cierre de campaña es fijo: «La app de ProTeam…» + «Únete a la lista de espera antes del 28 de noviembre y consigue tres meses gratis».
 
+## 1b. Crítica del guion (Agente 05 · skill proteam-critical-lab)
+MODO GUION sobre el guion: veredicto + nota sobre 100 con desglose. Si < 75, aplica la cirugía creativa y vuelve a puntuar (máx. 2 vueltas); si sigue < 75, cambia de hook o de idea. Guarda la crítica en `agencia/criticas/AAAA-MM-DD-uNN-guion.md`. Lee antes `agencia/APRENDIZAJES.md`.
+
 ## 2. Dirección (Agente 02 · skill proteam-creative-direction)
 - Escribe el documento A–F en `agencia/produccion/…`.
 - El concepto visual tiene que ser distinto de los «Recursos visuales ya usados» (HISTORIAL).
@@ -66,6 +69,9 @@ Plantilla técnica: `tools/reel2/` (Reel 2, aprobado por Biel). Cada Reel nuevo 
   3. Nada de más de 2 s de imagen quieta.
   4. Seis fotogramas a tamaño completo revisados con Read.
 - Si algo falla, se corrige y se vuelve a renderizar.
+
+## 7b. Auditoría prepublicación (Agente 05)
+MODO PREPUBLICACIÓN sobre el vídeo final (mira 8–10 fotogramas clave y escucha el plan de audio: tiempos de voz/música/SFX). Nota sobre 100. Si < 75 o hay un fallo objetivo (corte, texto ilegible, dato dudoso, CTA mal), corrige y vuelve a renderizar. Guarda en `agencia/criticas/AAAA-MM-DD-uNN-final.md` e incluye la nota en el mensaje a Biel.
 
 ## 8. Publicación y panel
 - `queue.json`: entrada `uNN` con `kind` reel, `status` pending, `campana` "unrespiro", `share_to_feed` false, `cover` y caption.
