@@ -85,12 +85,12 @@ function reveal(el, p, dir = 'up') {
 }
 
 // ── 1 · GANCHO: una foto de entrenador que se parte en 9 recuadros, cada uno otro referente ──
-const MAIN = 'e13', GRID = ['e14', 'e05', 'e11', 'e02', 'e09', 'e07', 'e01', 'e12', 'e08'];
+const MAIN = 'r2-main', GRID = ['r2-g1', 'r2-g2', 'r2-g3', 'r2-g4', 'r2-g5', 'r2-g6', 'r2-g7', 'r2-g8', 'r2-g9'];
 const G = ph(MAIN, '50% 30%');
 const TL = GRID.map((src, i) => { const d = document.createElement('div'); d.className = 'ph';
   const sl = document.createElement('img'); sl.src = IMG(MAIN); sl.style.cssText = 'position:absolute;width:1080px;height:1920px;object-fit:cover;object-position:50% 30%;max-width:none';
   const ot = document.createElement('div'); ot.style.cssText = 'position:absolute;inset:0;overflow:hidden';
-  const im = document.createElement('img'); im.src = IMG(src); im.style.objectPosition = '50% 25%'; ot.appendChild(im);
+  const im = document.createElement('img'); im.src = IMG(src); im.style.objectPosition = '50% 20%'; ot.appendChild(im);
   const sh = document.createElement('div'); sh.className = 'sh'; d.append(sl, ot, sh); $('phs').appendChild(d);
   return { d, sl, ot, im, sh, c: i % 3, r: Math.floor(i / 3), i }; });
 const tGE = tx('<span class="mask"><span>LOS GRANDES</span></span><br><span class="mask"><span>EQUIPOS</span></span>', 1180, 'M8 shadow', 132);
@@ -125,9 +125,9 @@ function hook(t) {
 }
 
 // ── 2 · DESMONTANDO: talento / presupuesto / jugadores / veinte personas ──
-const P1 = ph('e06', '50% 25%'), P1b = ph('e10', '50% 25%');
-const P2 = ph('c13', '50% 50%'), P2b = ph('c12', '50% 50%');
-const P3 = ph('e04', '50% 40%'), P3b = ph('e12', '50% 40%');
+const P1 = ph('r2-p1', '50% 30%'), P1b = ph('r2-p1b', '50% 20%');
+const P2 = ph('r2-p2', '50% 50%'), P2b = ph('r2-p2b', '50% 50%');
+const P3 = ph('r2-p3', '50% 35%'), P3b = ph('r2-p3b', '50% 20%');
 const word = (k, w, y) => tx(`<div class="kick" style="margin-bottom:10px"><span class="mask"><span>${k}</span></span></div><span class="mask" style="position:relative"><span>${w}</span></span>`, y, 'M8 shadow', 150);
 const tTAL = word('NO ES SOLO', 'TALENTO', 1150), tPRE = word('NI', 'PRESUPUESTO', 1150), tJUG = word('NI', 'JUGADORES', 1150);
 [tTAL, tPRE, tJUG].forEach(e => { const u = document.createElement('div'); u.className = 'uline'; u.style.bottom = '-6px'; u.style.left = '22%'; u.style.right = '22%'; e.appendChild(u); e._u = u; });
@@ -141,8 +141,8 @@ function sub(t, P, Pb, a, b, tw, o) {
   tw.style.transform = `translateY(${-14 * loc}px)`;
 }
 // collage de cuerpo técnico
-const CT = [['e08', 60, 300, 420, 560, -3], ['e11', 560, 260, 460, 600, 2.5], ['e07', 120, 760, 400, 520, 1.5], ['e02', 600, 800, 380, 520, -2], ['e01', 330, 520, 420, 560, 0], ['e14', 60, 1180, 380, 470, 2], ['e03', 620, 1240, 400, 470, -2.5]]
-  .map(([s, x, y, w, h, r], i) => ({ el: ph(s, '50% 25%'), x, y, w, h, r, i }));
+const CT = [['r2-c1', 60, 300, 420, 560, -3], ['r2-c2', 560, 260, 460, 600, 2.5], ['r2-c3', 120, 760, 400, 520, 1.5], ['r2-c4', 600, 800, 380, 520, -2], ['r2-c5', 330, 520, 420, 560, 0], ['r2-c6', 60, 1180, 380, 470, 2], ['r2-c7', 620, 1240, 400, 470, -2.5]]
+  .map(([s, x, y, w, h, r], i) => ({ el: ph(s, '50% 20%'), x, y, w, h, r, i }));
 const tVP = tx('<div class="kick" style="margin-bottom:10px"><span class="mask"><span>NI UN CUERPO TÉCNICO DE</span></span></div><span class="mask"><span><span class="S blue" style="font-size:190px">veinte</span> PERSONAS</span></span>', 860, 'M8 shadow', 120);
 function staff(t) {
   const a = T.y1 - .02, b = T.los2 + .45, v = t >= a && t < b; CT.forEach(c => show(c.el, v && t >= a + c.i * .22)); show(tVP, v && t >= T.veinte - .45 && t < T.per + .25);
