@@ -12,6 +12,7 @@ No reducir todo a «Excel y papeles»: también metodología, entrenamiento, an�
 Directo, natural, profesional, cercano e inteligente. Frases cortas y fáciles de locutar. Sin motivación genérica, sin clickbait vacío, sin promesas exageradas. Nunca inventar estadísticas, testimonios ni resultados.
 
 ## Oferta vigente (la decide Biel; no inventar otras)
+Hasta el 27/11: **hype máximo**, el máximo de contenido posible (son las semanas en las que más se vende).
 - Lista de espera hasta el **28 de noviembre** (cierra el 27 a las 23:59, Madrid). En voz: «antes del 28 de noviembre»; en pantalla: «HASTA EL 28 NOV».
 - Quien se apunte empieza con **3 meses gratis**. No hay más ofertas.
 - En la voz: «la app de ProTeam» (no «ProTeam» a secas, que suena a plantilla).
@@ -24,7 +25,12 @@ Directo, natural, profesional, cercano e inteligente. Frases cortas y fáciles d
 - Sin logos, sin marcas de agua, nada pegado a los márgenes; zona segura 9:16 (texto entre y≈260 y y≈1600 de 1920).
 - Textos: palabras o frases destacadas, nunca subtítulos palabra a palabra.
 - Herramientas (Excel, WhatsApp, libretas, documentos) y la UI de la lista de espera se hacen en motion graphics. Producto: solo capturas o grabaciones reales.
-- Personas: se pueden usar entrenadores reconocibles (fotos públicas) como ejemplo, nunca como respaldo de la app; nada político ni polémico.
+- **Personas: siempre reconocibles** (Biel, 15/11). Entrenadores, jugadores, equipos y estadios de primer nivel (LaLiga, Premier, Champions, NBA, Euroliga, ACB, Asobal, EHF, selecciones): Barça, Madrid, Atlético, grandes de la NBA, etc. Nada de entrenadores anónimos de banco de imágenes. Se usan como ejemplo para que el entrenador se identifique, nunca como respaldo de la app. Nada político ni polémico.
 
-## Sonido
-Voz en off (ElevenLabs, voz «Mateo») + efectos suaves sincronizados (sin campanas). La música la decide Biel por pieza: por defecto se entrega versión sin música y versión con música del estilo del Reel 1 (trap oscuro y minimalista, ~143 BPM) alineada con el montaje.
+## Sonido (Biel, 15/11 — fijo)
+- **Voz en off: siempre la misma**, ElevenLabs voz «Mateo» (`Rie0luvrYhyKLba1lK3c`, eleven_v4). No cambiarla nunca.
+- **Música: siempre del estilo de referencia y nunca la misma pista.** Referencia: la del Reel 1 (trap oscuro y minimalista, ~143 BPM, 808 profundo, hi-hats rápidos, pad oscuro, corte/silencio antes del golpe). Cada Reel lleva una pista nueva generada (ElevenLabs music) y alineada al montaje: silencio antes de la palabra de impacto, golpe en ella, final suave. Se entrega con música (la que se publica) y una copia sin música.
+- Efectos suaves sincronizados con lo que pasa en pantalla (sin campanas).
+
+## Después de la campaña (desde el 28/11)
+Mismo tipo de vídeo y misma identidad, pero sin oferta: concienciar y presentar la app. Cierre: «la app de ProTeam» + llamada a probarla (enlace en la bio), sin fechas ni «3 meses gratis» salvo que Biel diga otra cosa.

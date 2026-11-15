@@ -340,3 +340,9 @@ que mantener; el panel se actualiza solo al leerla.
 - Música de fondo permitida (Biel la añadió al Reel 1).
 - Oferta vigente: 3 meses gratis. Lista de espera hasta el 27/11 23:59.
 - Si la calidad se mantiene, Biel dará autonomía para proponer y producir Reels propios.
+
+## Agencia de Reels autónoma (15 nov, decidido por Biel; manda)
+- Cada Reel se hace con los 3 agentes (skills `proteam-content-lab`, `proteam-creative-direction`, `proteam-resource-bank`; base en `agencia/`) y se produce con el sistema de `REEL_ESTILO.md` y `tools/reel2/` como plantilla técnica.
+- Voz siempre Mateo. Música siempre nueva, del estilo del Reel 1, alineada al montaje. Personas/equipos siempre reconocibles de primer nivel (como ejemplo, no como respaldo).
+- Hasta el 27/11: 2 Reels al día (13:30 y 20:30), máximo hype. Desde el 28/11: mismo estilo sin oferta, presentando la app.
+- Biel revisa en el panel y corrige; si no dice nada, se publica.
