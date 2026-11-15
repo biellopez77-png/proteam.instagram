@@ -243,3 +243,9 @@
 - Métricas 7 días: p07 1.671 vistas (36 % saltos, 11,8 s, 6 guardados); d4 1.537 (34,6 %, 13,3 s, 8 guardados); ta02 1.533 (33,8 %, 11,5 s, 3 guardados). p03 616, p08 388, p21 170, e04 155 (65 % saltos), p06 143. Feed (c3, c4, q1): ≤ 33 vistas. Prácticamente sin cambios.
 - Hoja: sin publicaciones nuevas; Plan y Analisis ya al día.
 - Comentarios últimos 3 días: ninguno.
+
+### Diario 15 nov 20:25
+- Publicado en esta ejecución: nada (`late` y `due` vacíos). Hoy a las 13:30 salió u01 («No eres diferente a ellos»).
+- Métricas 7 días: ta02 1.534 vistas (33,8 % saltos, 11,5 s, 3 guardados); p03 616 (49,1 %, 8,3 s); p08 388 (49 %, 9,3 s); u01 177 en ~7 h (57 % saltos, 6,1 s, 0 guardados) → arranque flojo; p21 170 (50 %, 6,8 s). Carrusel 088: 26 vistas, alcance 8.
+- Hoja: Plan → u01 puesto como Publicado con su media_id. Analisis: u01 aún no lleva 24 h (mañana).
+- Comentarios últimos 3 días: ninguno.
