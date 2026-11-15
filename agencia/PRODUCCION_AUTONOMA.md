@@ -1,0 +1,83 @@
+# Producción autónoma de un Reel (paso a paso)
+
+Lo usa la tarea programada «Agencia ProTeam · producir Reel» y cualquier sesión que tenga que sacar un Reel sin Biel.
+Plantilla técnica: `tools/reel2/` (Reel 2, aprobado por Biel). Cada Reel nuevo va en su propia carpeta: `tools/reelNN/`.
+
+## 0. Hueco y número
+- `queue.json`: busca el próximo hueco de Reel libre (13:30 o 20:30, hora de Madrid) que empiece al menos 6 h después de ahora y que no tenga ya un Reel `pending`. Las piezas `borrador` no ocupan hueco.
+- Id: `uNN`, el siguiente libre después del mayor `u` que haya.
+- Fechas: hasta el 27/11, con la oferta (MARCA.md). Desde el 28/11, sin oferta.
+
+## 1. Guion (Agente 01 · skill proteam-content-lab)
+- Elige un hook sin usar de `agencia/HOOKS_BANCO.md` (prioriza el Top 30) y márcalo como `[usado uNN]`.
+- El tema y la conclusión no deben repetir nada de `HISTORIAL.md`.
+- Escribe el guion (60–80 palabras de voz, una sola idea) en `agencia/guiones/AAAA-MM-DD-uNN-<slug>.md`.
+- Puntúalo con los 8 criterios y no sigas si la media baja de 4.
+- El cierre de campaña es fijo: «La app de ProTeam…» + «Únete a la lista de espera antes del 28 de noviembre y consigue tres meses gratis».
+
+## 2. Dirección (Agente 02 · skill proteam-creative-direction)
+- Escribe el documento A–F en `agencia/produccion/…`.
+- El concepto visual tiene que ser distinto de los «Recursos visuales ya usados» (HISTORIAL).
+- El cierre de campaña se mantiene: UI de la lista de espera igual que en u01/u02, «hasta el 28.11» sobre foto y «3 meses gratis.» en serif azul.
+
+## 3. Recursos (Agente 03 · skill proteam-resource-bank)
+- Las personas y los equipos son siempre reconocibles, de primer nivel. Saca primero lo que ya haya en `banco/` y busca el resto en Commons, por nombre propio, desde el sandbox de Higgsfield.
+- Copia lo que vayas a usar a `tools/reelNN/img/` y apúntalo en `banco/INVENTARIO.csv` con el estado `usada en uNN`.
+
+## 4. Voz (siempre Mateo)
+- ElevenLabs: `creative_generate_speech`, voice_id `Rie0luvrYhyKLba1lK3c`, modelo `eleven_v4`, flow `hBYtrq1HJVmwM1XJaheU`. Salen 2 tomas.
+- Escribe «Pro Team» para que lo pronuncie bien y los números en letra («veintiocho», «tres»).
+- URLs con `creative_get_generations`.
+- Descarga desde el sandbox de Higgsfield (`sandbox_exec`), porque el contenedor local no llega a elevenlabsusercontent.com:
+  - Transcribe allí con faster-whisper (`word_timestamps=True`) e imprime los tiempos de cada palabra.
+  - Para traer el audio: pásalo a ogg/opus a 64k y mételo en un PNG en escala de grises de 1024 de ancho (4 bytes de longitud + bytes). Devuélvelo con `image_paths` (máximo 512 KB por llamada).
+  - El archivo llega a `~/.claude/projects/*/tool-results/mcp-Higgsfield-blob-*.png`. Decodifícalo con PIL.
+- Elige la toma más fluida y pronunciada.
+- Copia `tools/reel2/voz.py` y `mkt.py` y adáptalos: cuerpo con atempo ×1,1 y CTA a ×1,0.
+  - Pausas solo sobre silencios reales y nunca `silenceremove`.
+  - Pausa antes del CTA de ~0,2 s como máximo: Biel no quiere pausitas.
+- `mkt.py` genera `times.js` con snap por energía. Todas las animaciones van colgadas de `times.js`.
+
+## 5. Montaje
+- Parte de `tools/reel2/reel.html` y cambia bloques, fotos y textos según el documento del Agente 02.
+- Respeta MARCA.md:
+  - Manrope + Instrument Serif itálica azul.
+  - Oscuro, o papel para los bloques editoriales.
+  - Zona segura y nada en los márgenes.
+- Fotogramas de control: `cd tools/blackout && FPS=30 python3 htmlreel.py still tools/reelNN/reel.html <prefijo> t1 t2 …`. Mira la hoja de contacto con Read.
+- Render: `FPS=30 python3 htmlreel.py video tools/reelNN/reel.html <ruta>/v.mp4 <END>` en segundo plano, unos 5 minutos.
+
+## 6. Música (siempre nueva, mismo estilo)
+- ElevenLabs `creative_generate_in_flow`: node_type `music`, modelo `eleven_music_v2_5`, flow `hBYtrq1HJVmwM1XJaheU`, 2 variaciones.
+- Prompt base, que hay que variar en cada Reel (tonalidad, textura del pad, patrón de hi-hats) para que nunca suene igual: «Instrumental dark minimal trap beat at ~143 BPM, punchy deep 808 sub-bass, crisp fast hi-hats with rolls, tight snare, sparse moody synth pad, modern sports-motivational energy, no vocals; short breakdown then the beat drops back in hard; ~32 seconds».
+- Descárgala con el mismo truco del PNG.
+- Analízala con librosa (tempo, golpes y silencio).
+- Alinéala: desplázala para que el regreso del beat caiga en la palabra de impacto. Si se queda corta, repite 4 compases cortando en golpe de beat, con 30 ms de fundido cruzado. Fundido de salida de 1,2 s al final.
+- Iguala el nivel al de `tools/reel2/musica_r1.ogg` (la referencia).
+
+## 7. Mezcla y control de calidad
+- Voz: `loudnorm=I=-15:TP=-1.5:LRA=9`, en su propio paso.
+- `sfx.py`: efectos al 0,32 con `amix normalize=0` y `alimiter 0.95`, sin `apad`.
+- Música: entra con un segundo `amix`. Salen dos archivos: `reels/final/uNN-con-musica.mp4` y `reels/final/uNN-sin-musica.mp4`.
+- El archivo de la cola es `reels/uNN-<slug>.mp4` (con música, h264, menos de 20 MB). Portada en `covers/uNN-<slug>.jpg`.
+- Comprobaciones obligatorias:
+  1. Nivel de audio segundo a segundo hasta el final.
+  2. Saltos entre fotogramas: ningún fotograma suelto con una diferencia muy alta entre dos bajas; los únicos cortes son los cortes secos previstos.
+  3. Nada de más de 2 s de imagen quieta.
+  4. Seis fotogramas a tamaño completo revisados con Read.
+- Si algo falla, se corrige y se vuelve a renderizar.
+
+## 8. Publicación y panel
+- `queue.json`: entrada `uNN` con `kind` reel, `status` pending, `campana` "unrespiro", `share_to_feed` false, `cover` y caption.
+  - El caption lleva el gancho, 2–3 líneas, el CTA y «Enlace en la bio», más 4–5 hashtags.
+- Panel (https://claude.ai/artifact/GdqV6tqCq39FJVtTLNe8f7):
+  - Ejecuta `tools/panel_videos.py prep` y sube la vista previa con Artifact (`asset: true`).
+  - Ejecuta `panel_videos.py add`, sube `panel_videos.json` y actualiza `datasets/videos` con ArtifactData (`if_version`).
+  - Portada en `datasets/portadas`: descarga el blob, añade una miniatura de 160 px como data URL, súbelo y actualiza.
+- Hoja `1QS35fBtDK5yBM7KJntmFbG4JN_HLX2gY5IkDPRP3Ddo`, pestaña Plan: añade la fila (id, fecha, hora, Reel, pieza, «Lista de espera», Programado, archivo).
+- `agencia/HISTORIAL.md`: añade la fila del Reel.
+- `git add -A`, commit (termina en «Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>»), `git pull --rebase` y `git push`.
+
+## 9. Mensaje a Biel (corto)
+El hook, el concepto visual en una línea, la hora a la que sale y que lo tiene en el panel para corregirlo antes.
+Si algo no se ha podido hacer (por ejemplo, créditos de ElevenLabs agotados), dilo y no publiques un Reel incompleto.
