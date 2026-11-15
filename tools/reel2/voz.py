@@ -17,12 +17,12 @@ for p, d in ins: parts += [seg(t0, p), np.zeros(int(d*sr), np.float32)]; t0 = p
 parts.append(seg(t0, cut)); body = np.concatenate(parts)
 wavfile.write('body.wav', sr, body.astype(np.int16))
 subprocess.run(['ffmpeg','-loglevel','error','-y','-i','body.wav','-af',f'atempo={K}','body_f.wav'],check=True)
-_, B = wavfile.read('body_f.wav'); gap = np.zeros(int(.85*sr), np.int16)
-cta = seg(cut, len(X)/sr).astype(np.int16)
+_, B = wavfile.read('body_f.wav'); gap = np.zeros(int(.12*sr), np.int16)
+cta = seg(cut + .2, len(X)/sr).astype(np.int16)
 lead = np.zeros(int(.15*sr), np.int16)
 out = np.concatenate([lead, B, gap, cta]); wavfile.write('voz.wav', sr, out)
 def m(t):
-    if t >= cut: return .15 + len(B)/sr + .85 + (t - cut)
+    if t >= cut: return .15 + len(B)/sr + .12 + (t - cut - .2)
     return .15 + (t + sum(d for p, d in ins if t >= p)) / K
 open('voz.tsv','w').write(''.join(f'{m(a):.3f}\t{m(b):.3f}\t{w}\n' for a, b, w in W))
 print('dur', round(len(out)/sr, 2), 'cut', round(cut, 2), [round(p, 2) for p, _ in ins])
