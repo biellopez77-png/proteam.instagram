@@ -40,7 +40,8 @@ def due():
             i['status'] = 'cancelled'; i['cancel_reason'] = 'repetido: ya publicado'; save(q); continue
         # Solo Reels (decidido por Biel el 11 nov): nada de imágenes ni carruseles en el feed.
         # Excepción (Biel, 12 nov): los posts de la campaña Blackout Friday (campana = 'blackout').
-        if i['kind'] in ('image', 'carousel') and i.get('campana') != 'blackout':
+        # Excepción (Biel, 15 nov): carruseles y posts del Agente 04 (campana = 'carrusel'), 1 al día a las 11:00.
+        if i['kind'] in ('image', 'carousel') and i.get('campana') not in ('blackout', 'carrusel'):
             i['status'] = 'cancelled'; i['cancel_reason'] = 'solo Reels: no se publican posts de feed'; save(q); continue
         w = when(i)
         if n - timedelta(hours=6) <= w <= n + timedelta(minutes=25):

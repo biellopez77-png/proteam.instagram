@@ -346,3 +346,8 @@ que mantener; el panel se actualiza solo al leerla.
 - Voz siempre Mateo. Música siempre nueva, del estilo del Reel 1, alineada al montaje. Personas/equipos siempre reconocibles de primer nivel (como ejemplo, no como respaldo).
 - Hasta el 27/11: 2 Reels al día (13:30 y 20:30), máximo hype. Desde el 28/11: mismo estilo sin oferta, presentando la app.
 - Biel revisa en el panel y corrige; si no dice nada, se publica.
+
+## Carruseles, posts e historias (15 nov, Biel: «sí»; manda sobre «solo Reels»)
+- Agente 04 (skill `proteam-carousel-lab`, `agencia/PROMPT_AGENTE4.md`): 1 carrusel al día a las 11:00 (`campana: "carrusel"`), con su copy. Hasta el 27/11 más captación e identificación; después más fidelización.
+- 1 Story al día a las 19:00 que lleva al Reel o al carrusel del día o recuerda la lista de espera (1080×1920, misma identidad).
+- `tools/pub.py` deja pasar en el feed los Reels, los posts de la campaña `blackout` y los de la campaña `carrusel`.
