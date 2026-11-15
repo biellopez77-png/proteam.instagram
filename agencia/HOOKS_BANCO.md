@@ -770,7 +770,7 @@ _Mecanismo: contar la situación desde los ojos de otro (jugador, segundo, padre
 ## 15 · Empezar por el final (estructura nueva)
 _Mecanismo: primero el resultado, después la causa escondida días o semanas antes. Escenarios, nunca testimonios._
 
-- **H0701** Pierdes en el minuto 88. El problema empezó el martes. [entrenamiento · sorpresa · fútbol]
+- **H0701** Pierdes en el minuto 88. El problema empezó el martes. [entrenamiento · sorpresa · fútbol] [usado u03]
 - **H0702** Tu equipo llega fundido a mayo. Hay que mirar octubre. [rendimiento · sorpresa · general]
 - **H0703** Un chaval deja el equipo en enero. Las señales estaban en noviembre. [gestión de equipos · reconocimiento · general]
 - **H0704** Un padre se va enfadado de la grada. Empezó con una convocatoria sin explicar. [comunicación · reconocimiento · general]
@@ -1098,7 +1098,7 @@ _Los 30 más fuertes según los 8 criterios (atención, identificación, clarida
 1. **H0601** Domingo, 23:40. La semana todavía no existe. — Muy pocas palabras y una escena que todo entrenador ha vivido; abre un Reel sobre planificar la semana sin forzar nada.
 2. **H0162** Lo que más cansa de entrenar no es entrenar. — Paradoja que se entiende al instante y abre el tema del trabajo administrativo sin nombrar herramientas.
 3. **H0751** «Ya lo miramos el lunes» significa que no lo vas a mirar. — Frase que todos han dicho; la traducción provoca sonrisa culpable y lleva directo al análisis post-partido.
-4. **H0701** Pierdes en el minuto 88. El problema empezó el martes. — Empieza por el resultado y promete revelar la causa: tensión narrativa perfecta para hablar de planificación.
+4. **H0701** Pierdes en el minuto 88. El problema empezó el martes. — Empieza por el resultado y promete revelar la causa: tensión narrativa perfecta para hablar de planificación. [usado u03]
 5. **H0273** Hay victorias que te hacen peor entrenador. — Afirmación contraintuitiva y breve; obliga a quedarse para entender el porqué (ganar sin analizar).
 6. **H0662** Si tu Excel fuera un jugador, ¿lo convocarías? — Humor visual con potencial de motion graphics; habla de herramientas sin sonar a queja.
 7. **H0175** Tu metodología vive en tu cabeza. Y tu cabeza también juega el sábado. — Imagen nueva y verdadera: la memoria se satura en partido; conecta con registrar y con la app.

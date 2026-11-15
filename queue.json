@@ -2494,5 +2494,19 @@
   "campana": "unrespiro",
   "share_to_feed": false,
   "note": "Reel 2 (guion de Biel, 14 nov). Primer montaje de Claude; pendiente de correcciones de Biel."
+ },
+ {
+  "id": "u03",
+  "when": "2026-11-16T20:30:00+01:00",
+  "kind": "reel",
+  "files": [
+   "reels/u03-minuto-88.mp4"
+  ],
+  "cover": "covers/u03-minuto-88.jpg",
+  "caption": "Pierdes en el minuto 88. Pero el problema empezó el martes. ⏪\nEl entreno decidido en el coche, el cansancio que nadie apuntó, la sesión de siempre el jueves. El sábado solo ves el resultado: el partido se decide entre semana.\nÚnete a la lista de espera de la app de ProTeam antes del 28 de noviembre y empieza con 3 meses gratis. Enlace en la bio.\n\n#entrenadordefutbol #fútbolbase #planificaciondeportiva #baloncesto #balonmano",
+  "status": "pending",
+  "campana": "unrespiro",
+  "share_to_feed": false,
+  "note": "u03 · producción autónoma (Agencia, 15 nov): guion H0701, concepto «rebobinar la semana». Pendiente de revisión de Biel."
  }
 ]
