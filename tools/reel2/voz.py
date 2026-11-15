@@ -1,7 +1,7 @@
 """Voz del Reel 2: pausas solo en silencios reales, cuerpo x1.1, CTA x1.0. Escribe voz.wav y voz.tsv (tiempos de palabra ya mapeados)."""
 import numpy as np, subprocess, sys
 from scipy.io import wavfile
-SRC, TSV, K = 'voz_b.ogg', 'voz_b.tsv', 1.1
+SRC, TSV, K = 'voz_c.ogg', 'voz_c.tsv', 1.1
 subprocess.run(['ffmpeg','-loglevel','error','-y','-i',SRC,'-ac','1','-ar','44100','orig.wav'],check=True)
 sr, X = wavfile.read('orig.wav'); X = X.astype(np.float32)
 W = [l.split('\t') for l in open(TSV).read().strip().split('\n')]; W = [(float(a), float(b), w) for a, b, w in W]

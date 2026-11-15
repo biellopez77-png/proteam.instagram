@@ -20,3 +20,4 @@ tools/reel2/render.log
 tools/reel2/v*.mp4*
 tools/reel2/render*.log
 tools/reel2/*.mp3
+tools/reel2/app_*.mp3

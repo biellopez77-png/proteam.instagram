@@ -20,8 +20,8 @@ def at(word, n=1, end=False, s=True):
 T = dict(los=at('los'), tu=at('tu', s=False), con=at('construir', s=False), no=at('no'), tal=at('talento', s=False), ni1=at('ni'), ni2=at('ni', 2),
          y1=at('y'), veinte=at('20', s=False), per=at('personas', end=True), los2=at('los', 2), forma=at('forma', s=False), llama=at('llama', s=False),
          sis=at('sistema', s=False), pla=at('planifican'), reg=at('registran'), ana=at('analizan'), y2=at('y', 3), dec=at('decisiones', s=False),
-         obj=at('objetivo', s=False), pt=at('proteam'), herr=at('herramientas', s=False), sis2=at('sistema', 2, s=False), solo=at('solo', 2, s=False),
-         une=0, lug=at('lugar', end=True), antes=at('antes', s=False), n28=at('28', s=False), nov=at('noviembre', s=False), cons=at('consigue', s=False),
+         obj=at('objetivo', s=False), pt=at('la', 1), herr=at('herramientas', s=False), sis2=at('sistema', 2, s=False), solo=at('solo', 2, s=False),
+         une=0, lug=at('lugar', end=True), ptw=at('proteam', s=False), antes=at('antes', s=False), n28=at('28', s=False), nov=at('noviembre', s=False), cons=at('consigue', s=False),
          tres=at('3', s=False), gratis=at('gratis', s=False))
 def onset(t0, t1):
     for u in np.arange(t0, t1, .005):
