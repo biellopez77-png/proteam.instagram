@@ -13,3 +13,9 @@ córners que acaban en gol · por qué juega uno y no otro · qué se decide en 
 
 ## Recursos visuales ya usados (evitar repetir sin intención)
 collage a pantalla completa de entrenadores famosos (u01) · cuadrícula 3×3 (u02) · reloj 24 h (u01) · organigrama de nodos (u02) · morph de piezas (u02) · UI de lista de espera con cuenta atrás (u01, u02: es el cierre fijo de campaña) · «3 meses gratis.» en serif azul sobre negro (u01, u02).
+
+## Carruseles (Agente 04)
+| id | fecha | titular (diapo 1) | línea editorial | objetivo | estructura | tema | CTA | enfoque visual |
+|---|---|---|---|---|---|---|---|---|
+
+Carruseles antiguos (formato anterior, ya publicados): Lo que dicen los datos #1 córners · #2 penaltis · #3 efecto de la edad relativa · Pregunta de la semana 1.

@@ -1,11 +1,12 @@
 # Agencia creativa ProTeam
 
-Tres agentes que trabajan como dos departamentos de la misma productora:
+Cuatro agentes que trabajan como dos departamentos de la misma productora:
 
 | Agente | Qué hace | Entrega |
 |---|---|---|
 | **01 · ProTeam Content Lab** | Estrategia, ideas, hooks, guiones de Reels | `guiones/AAAA-MM-DD-<slug>.md` |
 | **02 · ProTeam Creative Direction** | Convierte un guion aprobado en documento de producción frame a frame | `produccion/AAAA-MM-DD-<slug>.md` |
+| **04 · ProTeam Carousel Lab** | Carruseles de valor, comunidad y fidelización (ficha, hooks, diapositivas, dirección visual, copy) | `carruseles/AAAA-MM-DD-<slug>.md` + imágenes en `../feed/` |
 | **03 · ProTeam Resource Bank** | Busca, clasifica y mantiene fotos, vídeos y capturas; prepara los recursos de cada Reel | `../banco/` + `recursos/AAAA-MM-DD-<slug>.md` |
 
 Después, la producción (voz, montaje, render, música, panel y cola) se hace con el sistema de `REEL_ESTILO.md` y `tools/reelN/`.
@@ -18,7 +19,7 @@ Después, la producción (voz, montaje, render, música, panel y cola) se hace c
 5. Producción monta el Reel, lo sube al panel y lo programa.
 
 ## Cómo se activan
-En cualquier conversación con Claude: «ACTIVAR AGENTE 1: PROTEAM CONTENT LAB» , «ACTIVAR AGENTE 2: PROTEAM CREATIVE DIRECTION» o «ACTIVAR AGENTE 3: PROTEAM RESOURCE BANK» (son dos skills guardadas en la cuenta de Biel). No son agentes autónomos que trabajen solos: se activan en una conversación o desde una tarea programada.
+En cualquier conversación con Claude: «ACTIVAR AGENTE 1: PROTEAM CONTENT LAB» , «ACTIVAR AGENTE 2: PROTEAM CREATIVE DIRECTION» , «ACTIVAR AGENTE 3: PROTEAM RESOURCE BANK» o «ACTIVAR AGENTE 4: PROTEAM CAROUSEL LAB» (son dos skills guardadas en la cuenta de Biel). No son agentes autónomos que trabajen solos: se activan en una conversación o desde una tarea programada.
 
 ## Base de conocimiento compartida (leer siempre)
 - `MARCA.md` — público, tono, identidad visual, oferta y prohibiciones.
