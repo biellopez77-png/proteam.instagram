@@ -3,6 +3,15 @@
 ## Producto (no inventar nada fuera de esto)
 ProTeam (pro-team.app) es una app para entrenadores y cuerpos técnicos de **fútbol, baloncesto y balonmano**: planificación de temporadas, semanas (microciclos) y sesiones, biblioteca de ejercicios, control de carga (RPE), registro de partidos en directo y análisis/estadísticas. No mencionar funciones que no estén comprobadas en la app.
 
+## Objetivo: visitas llenas, no visitas vacías (Biel, 15/11)
+Un formato único (el de la agencia: editorial, cinematográfico, referentes reconocibles, voz Mateo) y un objetivo: **visitas llenas**, de entrenadores que se quedan, se identifican y actúan. Una visita vacía es la de quien pasa por entretenimiento y se va: no cuenta como éxito aunque sume vistas.
+Qué mide una visita llena (por este orden):
+1. **Retención**: tiempo medio de visualización respecto a la duración y % de saltos en los 3 primeros segundos.
+2. **Guardados y compartidos** por cada 1.000 vistas.
+3. **Visitas al perfil, seguidores ganados y toques en el enlace** atribuibles a la pieza.
+4. **Altas en la lista de espera** (Lovable, `public.leads`) en las 48 h siguientes.
+Las vistas solas no deciden nada. Ningún agente propone volver a formatos antiguos (Trazo, pizarra, Reels de datos genéricos) para subir vistas: se mejora este formato.
+
 ## Público
 Entrenadores, sobre todo de base, que: dedican muchas horas a organizar el equipo; usan Excel, WhatsApp, libretas y documentos; tienen poco tiempo; necesitan planificar entrenos y temporadas; quieren analizar partidos, mejorar su metodología y dedicar más tiempo a entrenar y menos a lo administrativo. Objetivo emocional: «esto me pasa a mí».
 

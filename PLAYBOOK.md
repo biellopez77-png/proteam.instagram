@@ -1,5 +1,8 @@
 # ProTeam · Instagram autónomo (@app.proteam)
 
+> **15 nov · Biel: TRAZO ESTÁ ARCHIVADO.** Todo lo que en este manual habla de Trazo, «Trazo analiza», pizarra animada, retro/VHS o Reels informativos antiguos es historia y NO se aplica. El único formato vigente es el de la agencia (`agencia/`, `REEL_ESTILO.md`, `DIRECCION_CREATIVA.md`). Objetivo: **visitas llenas** (ver `agencia/MARCA.md`).
+
+
 Este repositorio es la fuente de todo lo que se publica en @app.proteam y el manual
 para las sesiones programadas que lo gestionan. El dueño (Biel) ha aprobado que la
 cuenta funcione sola: publicar, analizar y ajustar sin pedirle aprobación. Solo se le

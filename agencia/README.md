@@ -30,6 +30,7 @@ En cualquier conversación con Claude: «ACTIVAR AGENTE 1: PROTEAM CONTENT LAB»
 - `HOOKS_REFERENCIA.md` — los 12 patrones de hooks de referencia.
 - `REELS_REFERENCIA.md` — guiones de referencia y por qué funcionan.
 - `APRENDIZAJES.md` — lo aprendido de resultados y críticas; reglas vigentes para el próximo contenido (leer siempre).
+- `REFERENCIAS.md` — referencias (@unrespiro…) y competencia: patrones que aprendemos fuera.
 - `HISTORIAL.md` — todo lo ya hecho (hooks, temas, enfoques, CTA, conceptos visuales). Se actualiza al entregar.
 - `../DIRECCION_CREATIVA.md` y `../REEL_ESTILO.md` — dirección visual y sistema de producción.
 - `../banco/INDICE.md` y `../banco/INVENTARIO.csv` — banco de recursos (fotos, vídeos, capturas reales).
