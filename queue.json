@@ -2508,5 +2508,38 @@
   "campana": "unrespiro",
   "share_to_feed": false,
   "note": "u03 · producción autónoma (Agencia, 15 nov): guion H0701, concepto «rebobinar la semana». Pendiente de revisión de Biel."
+ },
+ {
+  "id": "c08",
+  "when": "2026-11-16T11:00:00+01:00",
+  "kind": "carousel",
+  "files": [
+   "feed/c08-1.jpg",
+   "feed/c08-2.jpg",
+   "feed/c08-3.jpg",
+   "feed/c08-4.jpg",
+   "feed/c08-5.jpg",
+   "feed/c08-6.jpg",
+   "feed/c08-7.jpg",
+   "feed/c08-8.jpg"
+  ],
+  "caption": "Haz la prueba: imagina que mañana no llegas al entreno.\n¿Tu ayudante sabría qué toca, quién no viene y qué salió del último partido? Si la respuesta es «más o menos», no es culpa de tu ayudante. Es que el equipo vive en tu cabeza.\n\nEn la diapositiva 7 tienes la hoja de relevo: cinco líneas para rellenar al planificar la semana. Guárdala.\n\nY mándaselo a tu segundo entrenador. A ver qué contesta. 👇\n\nSi quieres tenerlo todo en un sitio: lista de espera de la app de ProTeam, enlace en la bio. Antes del 28 de noviembre, 3 meses gratis.\n\nKerr y Walton (2015-16): datos de Associated Press.\n\n#entrenadores #futbolbase #baloncesto #balonmano #cuerpotecnico",
+  "cover": null,
+  "status": "pending",
+  "campana": "carrusel",
+  "note": "Agente 04 · «La prueba del relevo» · identificación · crítica 83/100 (agencia/criticas/2026-11-15-c08-final.md)"
+ },
+ {
+  "id": "c08s",
+  "when": "2026-11-16T19:00:00+01:00",
+  "kind": "story",
+  "files": [
+   "stories/st-1116-minuto-88.jpg"
+  ],
+  "caption": null,
+  "cover": null,
+  "status": "pending",
+  "campana": "carrusel",
+  "note": "Story diaria (Agente 04): lleva al Reel u03 de las 20:30 (88:01, «El problema empezó el martes»)"
  }
 ]

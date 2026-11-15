@@ -15,8 +15,14 @@ córners que acaban en gol · por qué juega uno y no otro · qué se decide en 
 ## Recursos visuales ya usados (evitar repetir sin intención)
 collage a pantalla completa de entrenadores famosos (u01) · cuadrícula 3×3 (u02) · reloj 24 h (u01) · organigrama de nodos (u02) · morph de piezas (u02) · UI de lista de espera con cuenta atrás (u01, u02: es el cierre fijo de campaña) · «3 meses gratis.» en serif azul sobre negro (u01, u02, u03) · marcador/reloj de partido que rebobina (u03) · tira de días de la semana (u03) · fichas de papel por día (u03) · móvil con capturas reales de Planificación y Semana (u03).
 
+## Stories diarias (Agente 04)
+| id | fecha | lleva a | concepto |
+|---|---|---|---|
+| c08s | 16/11 19:00 | Reel u03 (20:30) | Guardiola + 88:01 + «El problema empezó el martes.» + oferta en pie |
+
 ## Carruseles (Agente 04)
 | id | fecha | titular (diapo 1) | línea editorial | objetivo | estructura | tema | CTA | enfoque visual |
 |---|---|---|---|---|---|---|---|---|
+| c08 | 16/11 11:00 | Si mañana no puedes ir al entreno, ¿alguien sabría qué toca? | La realidad del entrenador | identificación | diagnóstico (3 señales) → causa → caso real (Kerr/Walton 39–4, AP) → herramienta (hoja de relevo) → cierre | el equipo depende de la cabeza del entrenador (plan, asistencia, correcciones) | compartir con el segundo entrenador + hacer la prueba | notificación, chat «¿Qué hacemos hoy?», cuadrícula de asistencia con «?», lista «solo en tu cabeza», 3 líneas que convergen, Kerr + 39–4, formulario «hoja de relevo». **Crítica 83/100** (texto 74→82) |
 
 Carruseles antiguos (formato anterior, ya publicados): Lo que dicen los datos #1 córners · #2 penaltis · #3 efecto de la edad relativa · Pregunta de la semana 1.
