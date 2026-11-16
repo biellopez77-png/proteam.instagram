@@ -69,3 +69,9 @@ La publicación (Laura) atiende «pedida» y «quitar» en cada ejecución antes
 - **Puntuación de Andrés desde el 16/11:** hook 15 · estrategia 15 · narrativa 15 · valor 15 · originalidad 15 · credibilidad y claridad 10 · ejecución visual 10 · CTA 5. Umbral 75 y bloqueantes de `agencia/skills/05-quality-gate.md`. En `score` se escribe la nota como siempre.
 - **Todo Reel montado se analiza antes de auditarse:** `python3 tools/video_intel.py analyze reels/<archivo> --id <id> --tema "…" --modo detalle`, `voz <id> tools/reelNN/voz.tsv` y `rasgos <id>`. Marta mira las láminas y corrige; Andrés audita el vídeo real con marcas de tiempo (`intel/videos/<id>/observaciones.md`); Pau cataloga (`recursos.md`); Samuel usa `intel/aprendizaje/CARACTERISTICAS.csv`. Guía: `intel/README.md`.
 - En la entrega de cada pieza van escritas las diez preguntas de control de `00_COMUN.md`.
+
+## 7. Trabajo continuo, consignas y resúmenes (Biel, 16/11)
+- No hay turnos de descanso: los encargos y consignas se revisan cada hora (7:49–23:49), los guiones cada hora (:08) y los carruseles y Stories cada hora (:31). El objetivo es tener la faena adelantada hasta 15 días.
+- Biel ya no cambia el estado de las tareas en la oficina. Deja **consignas** en `tasks/<id>.consignas` (lista de {text, at, by}). Una consigna con `at` posterior a `consignaVistaAt` es una orden nueva: se aplica antes que nada, se explica en `result` y se pone `consignaVistaAt` = ahora.
+- El estado (pendiente, en curso, hecha) lo pone siempre quien trabaja. Al cerrar una tarea se escribe `summary`: una línea de 15 palabras como máximo con lo entregado. Biel lee ese resumen; el detalle largo va en `result`.
+- En la oficina, quien tiene tareas abiertas aparece trabajando en su mesa aunque su estado diga «libre»; solo va a descanso quien no tiene nada abierto.
