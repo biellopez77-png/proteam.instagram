@@ -2598,5 +2598,21 @@
   "title": "¿Cuántas horas entrenas fuera del campo? También es entrenar (quedan 11 días)",
   "score": "77",
   "note": "Story de marca (Clara, 04) + cuenta atrás de la lista de espera (quedan 11 días). Sin aviso de Reel."
+ },
+ {
+  "id": "u04",
+  "when": "2026-11-16T17:00:00+01:00",
+  "kind": "reel",
+  "files": [
+   "reels/u04-mejor-entreno.mp4"
+  ],
+  "cover": "covers/u04-mejor-entreno.jpg",
+  "caption": "Tu mejor entreno de la temporada no lo podrías repetir. No lo apuntaste. 📝\nAquel día todo encajó. Hoy solo te queda una sensación, y las sensaciones no se repiten. Guárdalo: de cada entreno, apunta siempre el ejercicio, los tiempos y las parejas. Y mándaselo a tu segundo.\nCon la app de ProTeam guardas tus sesiones y ejercicios en una biblioteca. Únete a la lista de espera antes del 28 de noviembre y empieza con 3 meses gratis. Enlace en la bio.\n¿Cuál ha sido tu mejor entreno esta temporada?\n\n#entrenadordefutbol #fútbolbase #metodologia #baloncesto #balonmano",
+  "status": "pending",
+  "campana": "unrespiro",
+  "share_to_feed": false,
+  "note": "u04 · producción autónoma (turno de Reels, 16 nov): guion H0192, concepto «la memoria que se borra». Hueco nuevo de las 17:00.",
+  "score": "guion 82 · montaje 82",
+  "title": "Tu mejor entreno de la temporada no lo podrías repetir. No lo apuntaste."
  }
 ]
