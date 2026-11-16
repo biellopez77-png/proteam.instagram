@@ -292,3 +292,10 @@
 - Métricas 7 días (formato actual): u04 853 vistas, 38,8 % de saltos, 7,5 s, 1 guardado (el mejor). u01 183, 58,5 %, 6,1 s. u02 182, 71 %, 4,3 s (a las 7 h). c09 16 vistas (1 h). u03 recién salido. Antiguos: ta02 1.534, 014 616.
 - Hoja: Plan al día (u02, u03, c08s, c09, u04 → Publicado). Analisis: fila de u01 (Flojo). u02 aún no lleva 24 h.
 - Comentarios 3 días: solo los fijados de @app.proteam. Nada que responder ni ocultar.
+
+### Encargos 16 nov 21:00 (Laura 00 y Pau 03)
+- Pau: cinco fotos nuevas de Commons (licencia leída, miradas una a una) para los guiones del domingo 22. u24: córner junto al banderín (Barça, 2009) y córner en el Bernabéu (Champions, 2010). u23: portero del Barça y portero del Kiel, solos y en vertical. u22: banquillo de la NBA con toallas y hielo en las rodillas. Ficha: agencia/recursos/2026-11-16-fotograma0-u22-u23-u24.md. Tarea cerrada.
+- Commons desde el turno sigue dando «429»; se usó el sandbox de Higgsfield.
+- Descartada: portero del Gummersbach (sale con dos compañeros, no solo). Sin resultado: portero contra una pared y jugador de ACB o Euroliga con las manos en las rodillas.
+- Decidido: u22 va con NBA (el encargo admitía primer nivel) y el hielo hace de «cansancio»; el rótulo no dirá que están lesionados.
+- Sin tocar: «ProTeam por dentro» (turno de Reels de Marta, 21:37) y carrusel del viernes, Reels de datos y Stories (turno de Clara, cada hora). Sin tareas de relleno: Dani tiene 17 guiones en reserva, Andrés critica con cada guion y Samuel lee los experimentos a las 22:41.
