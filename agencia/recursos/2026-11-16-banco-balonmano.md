@@ -77,3 +77,31 @@ Pendiente mío: abrir las 30 capturas restantes y anotar en el inventario el dep
 Sin leer la página del archivo no hay licencia, autor ni dimensiones comprobados, así que no entra ninguna candidata, ni descargada ni en tabla: no se añade nada a `banco/fotos`, a `banco/INVENTARIO.csv` ni a `banco/INDICE.md`. Los buscadores sí devuelven copias de páginas de Commons en webs espejo, pero una licencia leída en un espejo no es una licencia leída en la fuente y no se ha usado.
 
 Siguen valiendo las consultas preparadas en el apartado 2. Hace falta una sesión con acceso real a Commons (la vía prevista en `03-visual-asset-discovery`) o que Biel abra las categorías en un navegador.
+
+## Fotos nuevas (16/11, tercer intento, 14:00)
+
+**Ninguna.** Commons sigue sin poder leerse con WebFetch. Intentos de esta sesión:
+1. API de búsqueda (`w/api.php?action=query&list=search…`): la petición no se envió (permiso de la herramienta sin respuesta).
+2. Página de archivo `File:Jordi_Ribera_01.jpg`: «url_not_found».
+3. Categoría `Category:Spain_national_handball_team`: «url_not_found».
+4. API `prop=imageinfo` del mismo archivo: no se envió (mismo motivo que el 1).
+
+No se ha rodeado con curl, espejos ni cachés. No se ha descargado nada y no cambian `banco/fotos`, `banco/INVENTARIO.csv` ni `banco/INDICE.md`.
+
+**Páginas que existen en Commons según el buscador, sin leer** (ni licencia, ni tamaño, ni imagen comprobados: no son candidatas aceptadas, solo por dónde empezar):
+- `File:Jordi_Ribera_01.jpg`, `File:Jordi_Ribera_03.jpg`, `File:Jordi_Ribera_Romans_2018.jpg`
+- `File:Jornada_de_las_Estrellas_de_Balonmano_2013_-_Selección_masculina_de_España_-_01.jpg`
+- `File:2012_Summer_Olympics_Handball_-_Spain_vs_Hungary.jpg`
+- `File:FC_Barcelona_Handbol_02.jpg`
+- Categorías: `Spain national handball team`, `Handball coaches from Spain`, `Handball in Spain`, `Valero Rivera`, `FC Barcelona Handbol`, `Players of FC Barcelona (handball)`, `EHF Champions League`, `Aitor Ariño`, `Ludovic Fabregas`.
+
+## Recuento por deporte (16/11, 14:00)
+Reserva = fotos con licencia leída y estado `disponible` (columna «deporte» de `banco/INVENTARIO.csv`; se cuenta como disponible `PROTEAM_STAFF_CHARLA_ENTRENAMIENTO_FOTO_002`, quitada de u04 antes de publicarse).
+
+| deporte | en reserva | usadas (deporte anotado) | faltan para 20 |
+|---|---|---|---|
+| Fútbol | 26 | 8 | 0 |
+| Baloncesto | 18 | 1 | 2 |
+| Balonmano | 17 | 1 | 3 |
+
+Fuera de la tabla: 2 objetos generales (cronómetro y silbatos) y 37 filas con la columna «deporte» vacía, todas ya usadas (23 con licencia leída, de u02, y 14 sin licencia comprobada, de u01). Balonmano no ha cambiado desde esta mañana: sigue en 17.

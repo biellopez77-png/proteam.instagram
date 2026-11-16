@@ -75,3 +75,11 @@ La publicación (Laura) atiende «pedida» y «quitar» en cada ejecución antes
 - Biel ya no cambia el estado de las tareas en la oficina. Deja **consignas** en `tasks/<id>.consignas` (lista de {text, at, by}). Una consigna con `at` posterior a `consignaVistaAt` es una orden nueva: se aplica antes que nada, se explica en `result` y se pone `consignaVistaAt` = ahora.
 - El estado (pendiente, en curso, hecha) lo pone siempre quien trabaja. Al cerrar una tarea se escribe `summary`: una línea de 15 palabras como máximo con lo entregado. Biel lee ese resumen; el detalle largo va en `result`.
 - En la oficina, quien tiene tareas abiertas aparece trabajando en su mesa aunque su estado diga «libre»; solo va a descanso quien no tiene nada abierto.
+
+## 8. Regla de alcance (Biel, 16/11 14:25) — manda sobre el «Ritmo» de arriba y sobre los textos antiguos
+- Cada Reel abre en el segundo 0 con un número, un partido real o una escena concreta de entreno. Prohibidos los Reels de marca o motivación.
+- Cada Reel acaba con una pregunta o reto para el cuerpo técnico; la descripción pide «Envíaselo a tu segundo entrenador» y lleva el CTA de comentar.
+- **Carruseles solo martes y viernes** (11:00 y 19:00). El resto de días Clara convierte su idea en un Reel de datos de 8–15 s.
+- **Una Story al día**, no tres.
+- En cada Reel publicado, el turno de publicación deja un primer comentario nuestro: «Comenta tu deporte, categoría y días y te preparo la semana».
+- Nadie crea tareas para Biel.

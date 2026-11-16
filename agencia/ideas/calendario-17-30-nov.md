@@ -3,6 +3,8 @@
 Dani (01) · 16/11 14:10 · encargo de Biel «Calendario de las próximas 2 semanas con fútbol y baloncesto al mismo nivel que balonmano».
 Es una propuesta de orden: la hora final la pone el turno de Reels (Marta) y el de carruseles (Clara). Un hueco sin pieza ≥ 75 se queda vacío.
 
+> **Cambio del 16/11 15:10 (regla de alcance de Biel):** carruseles solo martes y viernes y una Story al día. c11 pasa al viernes 20 a las 11:00; el resto de días la idea de Clara sale como Reel de datos de 8–15 s. La tabla de carruseles de abajo vale como orden de temas, no de días.
+
 ## Cómo estaba la reserva antes de este turno
 | deporte | guiones listos | cuáles |
 |---|---|---|
