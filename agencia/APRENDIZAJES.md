@@ -26,14 +26,14 @@ Todos leen esto antes de crear. Actualizado el lunes 16/11/2026. Distingue regla
 4. **Descripción**: segunda línea con «Guárdalo» o «Mándaselo a tu segundo»; «la app de ProTeam»; «enlace en la bio», sin URL escrita.
 
 ## Nota de visita llena (0–100)
-Retención media (25) + saltos en 3 s (25) + guardados y compartidos por 1.000 vistas (30) + acción (20). Fórmula y umbrales en el informe. u01: **17**.
+Retención media (25) + saltos en 3 s (25) + guardados y compartidos por 1.000 vistas (30) + acción (20). Fórmula y umbrales en el informe. u01: **17** (33 h). Provisionales del 16/11 a las 22:42, con menos de 24 h: u04 44 · u03 44 · u02 7.
 
 ## Experimentos
 | id | hipótesis | variable que cambia | piezas | cómo se mide | estado |
 |---|---|---|---|---|---|
-| E1 | Una cara reconocible a pantalla completa en el fotograma 0 baja los saltos | primer segundo: foto + texto grande frente a negro + texto a máquina | u02 y u03 frente a u01 | % de saltos en 3 s y tiempo medio | en curso: u02 y u03 salen el 16/11; se lee el 17–18/11 |
-| E2 | Empezar por el resultado y rebobinar a la causa retiene más | estructura | u03 frente a u02 | tiempo medio / duración, guardados | en curso: se lee el 18/11 |
-| E3 | Una «ficha guardable» visible (ejercicio · tiempos · parejas) sube guardados y compartidos | ficha de 1,5–2 s sobre la voz + «Guárdalo» en la descripción | u04 frente a u01–u03 | guardados + compartidos por 1.000 vistas a las 48 h | nuevo: lo ejecuta Marta en u04 (17/11) |
+| E1 | Una cara reconocible a pantalla completa en el fotograma 0 baja los saltos | primer segundo: foto + texto grande frente a negro + texto a máquina | u02 y u03 frente a u01 | % de saltos en 3 s y tiempo medio | en curso (dato del 16/11, 22:42): saltos en 3 s u01 58,5 % · u02 71 % (9 h) · u03 36,3 % (2 h). La cara sola no basta: u02 la tiene y es el peor; u02 abre con frase de marca. Se cierra el 17–18/11 con 24 h |
+| E2 | Empezar por el resultado y rebobinar a la causa retiene más | estructura | u03 frente a u02 | tiempo medio / duración, guardados | en curso (16/11, 22:42): u03 8,2 s de 25,2 s (33 %) y 1 guardado en 2 h; u02 4,3 s de 30,6 s (14 %) y 0. Se lee el 18/11 |
+| E3 | Una «ficha guardable» visible (ejercicio · tiempos · parejas) sube guardados y compartidos | ficha de 1,5–2 s sobre la voz + «Guárdalo» en la descripción | u04 frente a u01–u03 | guardados + compartidos por 1.000 vistas a las 48 h | en curso (16/11, 22:42): u04 lleva 4 guardados y 0 compartidos en 1.488 vistas (2,7 por 1.000) a las 5 h; u03, sin ficha, 2,1 por 1.000; u01 y u02, 0. Se lee a las 48 h (18/11 17:30) |
 
 ## Críticas de Andrés: clasificación
 - **Confirmadas**: «repetir» tres veces en u04 (no subrayar las tres en montaje); puente abstracto a la app (corregido en u04 v2).
@@ -51,3 +51,7 @@ Retención media (25) + saltos en 3 s (25) + guardados y compartidos por 1.000 v
 - Hechos medidos en u04 con el sistema de vídeo (`intel/videos/u04/`): la voz acaba en 00:23,70 y el vídeo en 00:25,30 (cola de 1,6 s); hay un plano de 0,23 s en 00:22,03; 9,4 s (37 %) son tramos sin movimiento; la app no se lee entre 00:13,87 y 00:16,53.
 - Hipótesis nuevas (sin datos todavía): acabar ≤ 0,8 s tras la última palabra y ampliar antes el producto sube la proporción de retención.
 - Pendiente de Biel: rótulo de la fecha («HASTA EL 28 NOV» en MARCA.md frente a «hasta el 28.11» en los Reels).
+
+## Bucle diario 16/11 (22:42)
+- Hecho: los Reels que abren con una pérdida concreta del entrenador (u04, u03) tienen 36–38 % de saltos en 3 s; los que abren con una frase de marca (u01, u02), 58–71 % y unas 180 vistas. u04 y u03 llevan menos de 24 h: se confirma el 17/11.
+- Ganadora provisional: u04. Perdedora: u02 (provisional) y u01 (única con 24 h, nota 17). Detalle: `reports/diario-2026-11-16.md`.
