@@ -16,19 +16,21 @@ Estado: `disponible`, `usada en uNN` o `pendiente`.
 ## Recuento actual
 | Categoría | Recursos |
 |---|---|
-| ENTRENADOR | 46 |
-| EQUIPO | 9 |
-| INSTALACION | 8 |
-| JUGADOR | 18 |
+| ENTRENADOR | 51 |
+| EQUIPO | 17 |
+| INSTALACION | 9 |
+| JUGADOR | 20 |
 | OBJETO | 6 |
+| PARTIDO | 4 |
 | PRODUCTO | 38 |
-| STAFF | 13 |
+| STAFF | 15 |
 
 ## Reserva de «primer fotograma» (16/11)
 Fotos de 1080 px de ancho o más, cara reconocible en el tercio superior y aire abajo para el texto. En el inventario llevan «primer fotograma» en la columna de uso.
 - **Baloncesto:** `PROTEAM_ENTRENADOR_REFERENTE_FOTO_018` (Pablo Laso, 2026) y `_019` (Šarūnas Jasikevičius, 2024). Sin usar.
 - **Balonmano:** `PROTEAM_JUGADOR_REFERENTE_FOTO_002` (Nikola Karabatić, 2019), `_003` (Dika Mem, 2019) y `PROTEAM_ENTRENADOR_REFERENTE_FOTO_020` (Talant Dujshebaev, 2012). Sin usar.
 - **Fútbol:** `PROTEAM_ENTRENADOR_REFERENTE_FOTO_015` (Ancelotti, usada en u04), `_016` y `_017` (Luis de la Fuente, usadas en u05) y `PROTEAM_JUGADOR_REFERENTE_FOTO_001` (Lamine Yamal, usada en u05). **Faltan dos de fútbol sin usar**: en Commons, de Flick y Simeone solo hay ruedas de prensa y alfombras rojas recientes; se buscan con los recursos de u06 y u07. **16/11, tarde:** esa búsqueda no se ha podido hacer (sin acceso a Commons en la sesión); siguen faltando. Para u06 faltan además jugadores de un grande en carrera con chaleco GPS y un campo de base con petos; para u07, un entrenador de fútbol al final de un partido. Detalle y consultas preparadas en `agencia/recursos/2026-11-16-u06-…` y `…-u07-…`.
+- **Nuevas del 16/11, 19:10 (Commons, licencia leída, miradas):** balonmano `PROTEAM_PARTIDO_EXCLUSION_ARBITRO_FOTO_001` (árbitro con los dos dedos, u25; con ella el banco de balonmano llega a 20 de 20). Baloncesto: `PROTEAM_PARTIDO_TIRO_LIBRE_NBA_FOTO_001` (u16), `PROTEAM_EQUIPO_TIEMPO_MUERTO_SELECCION_FOTO_001` y `PROTEAM_EQUIPO_TIEMPO_MUERTO_ACB_FOTO_001` (u20), `PROTEAM_JUGADOR_PIVOT_EUROLIGA_FOTO_001` (u26), `PROTEAM_EQUIPO_ENTRENAMIENTO_SELECCION_BALONCESTO_FOTO_001` (u13) y `PROTEAM_STAFF_BANQUILLO_NBA_FOTO_001` (u12). Ficha: `agencia/recursos/2026-11-16-fotograma0-fotos-nuevas.md`.
 - Todas son de Wikimedia Commons con licencia leída en la fuente (CC BY o CC BY-SA: atribución al publicar). Referentes como ejemplo, nunca como aval.
 
 ## Huecos por cubrir (prioridad)

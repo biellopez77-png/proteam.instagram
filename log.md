@@ -272,3 +272,9 @@
 - Guion u25 «Tres exclusiones el sábado. Seis minutos con uno menos.» listo · 82/100 · balonmano (captura real de la cronología con las exclusiones).
 - Guion u26 «Ocho rebotes en octubre. Tres el sábado. ¿Salta menos o llega tarde?» listo · 77/100 · baloncesto (captura real de tests físicos).
 - Decidido: B-4 (faltas del pívot) no se hace porque las faltas personales de baloncesto no están comprobadas en la app (todas las capturas de partido son de balonmano); en su hueco va u26.
+
+### Encargos 16 nov 19:10 (Laura 00 y Pau 03)
+- Laura: parche 0005 aplicado y subido (guiones u25 y u26 con sus críticas ya están en el repositorio).
+- Pau: siete fotos nuevas de Commons, licencia leída y miradas: árbitro con los dos dedos (u25; banco de balonmano 20 de 20), tiro libre NBA (u16), dos tiempos muertos (selección 2019 y Estudiantes ACB, u20), pívot de Euroliga (u26), entrenamiento de la selección (u13) y banquillo NBA con hojas (u12). Ficha: agencia/recursos/2026-11-16-fotograma0-fotos-nuevas.md.
+- Commons desde el turno dio «429: demasiadas peticiones»; se usó el sandbox de Higgsfield, como dice el procedimiento.
+- Sin tocar: Reels con voz y «ProTeam por dentro» (turno de Reels de Marta), carrusel del viernes, Reels de datos y Stories (turno de Clara). No se crean tareas de relleno para Dani (reserva de 18 guiones criticados), Andrés ni Samuel (bucle de las 22:41).
