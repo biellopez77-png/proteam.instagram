@@ -2,6 +2,7 @@
 
 | Fecha | Pieza | Tipo | Resultado |
 | --- | --- | --- | --- |
+| 2026-11-16 22:25 | u08 reels/u08-tu-seis-cero.mp4 | reel | publicado, media_id 18122633071968620 |
 | 2026-11-16 20:26 | u03 reels/u03-minuto-88-v2.mp4 | reel | publicado, media_id 18053686727607096 |
 | 2026-11-16 19:26 | c09 feed/c09-1.jpg | carousel | publicado, media_id 18658474033041477 |
 | 2026-11-16 17:26 | u04 reels/u04-mejor-entreno.mp4 | reel | publicado, media_id 17999178872868049 |
