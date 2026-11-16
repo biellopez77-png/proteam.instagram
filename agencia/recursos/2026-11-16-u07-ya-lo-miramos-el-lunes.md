@@ -46,3 +46,11 @@ G. Lo que no he encontrado y alternativa
 - Con lo que hay, la opción 1 (Laso mirando al marcador) es la que mejor cuenta «el partido ya está, y se va sin apuntarlo»; cubre además la variedad de deportes que pide Biel. Es interpretación mía, no un hecho: quien decide si pasa el filtro de «referente al final de un partido» es Andrés.
 - Alternativas: repetir la búsqueda con acceso a Commons (consultas de C) o que Biel aporte una foto con licencia clara.
 - Créditos al publicar: «Zafer, CC BY-SA 4.0» (opción 1), «Doha Stadium Plus Qatar, CC BY 2.0» (opción 2), «Zafer, CC BY 4.0» (opción 3), en la descripción. Referentes como ejemplo, nunca como aval.
+
+---
+## Actualización 16/11 · 13:15 (turno de encargos, con acceso a Commons desde el sandbox de Higgsfield)
+**Descargada al banco:** `PROTEAM_ENTRENADOR_REFERENTE_FOTO_021.jpg` (1080×2050, vertical; original 1678×3186). Diego Simeone de pie en la banda, de perfil, abrigo largo y mano en el bolsillo, con el banquillo del Atlético detrás (Salzburgo–Atlético, Champions, 29/1/2025). CC BY-SA 4.0 · Werner100359 · https://commons.wikimedia.org/wiki/File:FC_Salzburg_vs._Atletico_Madrid_(2025-01-29_UEFA_Championsleague)_60.jpg. Mirada a tamaño completo: cara reconocible en el tercio superior, ya es vertical y deja aire para el texto en la parte baja del abrigo.
+- **Pasa a ser la opción principal del fotograma 0**: entrenador de fútbol de primer nivel, en partido, cuerpo entero. Límite: está en la banda durante el partido, no camino del túnel; cuenta «el partido se le queda dentro», no «se va».
+- Las tres del banco (Laso, Dujshebaev, Jasikevičius) quedan como alternativas 2 a 4.
+- Buscado y no encontrado con licencia libre y tamaño suficiente: Ancelotti al final de un partido (solo la celebración de la Copa del Rey 2023, plano general del podio) y Kerr saliendo de la pista.
+- Crédito en la descripción: «Foto: Werner100359 (CC BY-SA 4.0)».

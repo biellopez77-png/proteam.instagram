@@ -15,10 +15,10 @@ Pau (03) · consulta: 16/11/2026 · plan de crecimiento, semana 1.
 |---|---|
 | a) escuelas y federaciones (área de formación) | 17 |
 | b) cursos nivel I / II con fechas publicadas | 4 |
-| c) clubes con base | 3 |
-| **total** | **24 de 30** |
+| c) clubes con base | 5 |
+| **total** | **26 de 30** |
 
-Faltan 6: sobre todo de tipo c (clubes) y de tipo b (cursos con fechas). Motivo y siguiente paso, al final.
+Faltan 4 (actualizado el 16/11 a las 13:15 con los n.º 25 y 26): sobre todo de tipo c (clubes) y de tipo b (cursos con fechas). Motivo y siguiente paso, al final.
 
 ## a) Escuelas de entrenadores y federaciones (17)
 
@@ -53,13 +53,15 @@ Faltan 6: sobre todo de tipo c (clubes) y de tipo b (cursos con fechas). Motivo 
 
 Los tres cursos en marcha (18, 19 y 20) son los más útiles: hay un grupo de entrenadores en formación ahora mismo, hasta enero y abril.
 
-## c) Clubes con varios equipos de base (3)
+## c) Clubes con varios equipos de base (5)
 
 | n.º | club | comunidad | base | persona o cargo publicado | contacto institucional | fuente |
 |---|---|---|---|---|---|---|
 | 22 | S.C.D.R. Anaitasuna (balonmano) | Navarra (Pamplona) | «más de 400 niños y niñas repartidos entre sus 27 equipos de la escuela» | no aparece | balonmano@anaitasuna.com | https://www.torneobalonmanoanaitasuna.com/docs/dossier2024.pdf (dosier de 2024: la cifra puede haber cambiado) |
 | 23 | Club Deportivo Balonmano Castellón | C. Valenciana (Castellón) | categorías de benjamín a juvenil; no da número de equipos | no aparece | informacion@balonmanocastellon.com | https://www.balonmanocastellon.com/wp-content/uploads/2026/05/dosier-informativo.pdf |
 | 24 | Club Balonmano Elche · proyecto «Colegios Balonmaneros» | C. Valenciana (Elche) | proyecto con colegios; no da número de equipos | no aparece | colegiosbalonmaneros@cbmelche.es · 966 672 600 | https://cbmelche.es/wp-content/uploads/2026/02/COLEGIOS-BALONMANEROS-EL-BALONMANO-SE-VIVE-DESDE-EL-COLEGIO.pdf |
+| 25 | Club Balonmano Huesca | Aragón (Huesca) | la página «Equipos base» lista 11 equipos; 8 son de base (juvenil masculino, cadete masculino A y B, cadete femenino, infantil masculino A, B y C, infantil femenino) y 3 son sénior o filiales | no aparece | contacto@bmhuesca.com · 974 230 271 | https://bmhuesca.com/equipos-base-del-cb-huesca/ · https://bmhuesca.com/ |
+| 26 | Club Balonmano Torrelavega | Cantabria (Torrelavega) | portada: «Cantera Balonmano Torrelavega 2026. 31 equipos, 409 jugadores» | no aparece | administracion@torrebalonmano.com · 942 800 231 · OJO: el dominio del correo no coincide con el de la web (balonmanotorrelavega.com); comprobar en la fuente | https://balonmanotorrelavega.com/ |
 
 ## Sin verificar (no cuentan para los 30)
 
@@ -72,11 +74,14 @@ Los tres cursos en marcha (18, 19 y 20) son los más útiles: hay un grupo de en
 | Federación Aragonesa: «Curso Monitor Tarazona y Ejea» | anunciado en la portada, sin fechas ni enlace. |
 | Listado de cursos de la plataforma de la RFEBM (https://balonmano.misquad.es/istudy_dashboard_web.php?amBit=1&tipo=1) | es donde se publican los cursos de todas las territoriales, pero la lista se carga dinámicamente y WebFetch no la ve. |
 | Madrid, Andalucía, Galicia, Castilla y León, Asturias, Baleares, Canarias, Murcia, Navarra, Extremadura, La Rioja | sus webs no anuncian hoy ningún curso de nivel I o II con fechas (en Andalucía el listado solo tiene campus). |
+| Club Balonmano Ademar León (https://www.ademar.com/club/contacto/) | tel. 987 263 171; los correos salen ofuscados en la página y no se han podido leer con seguridad; la web no dice cuántos equipos de base tiene. No cuenta hasta comprobarlo a mano. |
+| Handbol Sant Quirze (https://www.handbolsantquirze.cat/) | la portada lista 16 equipos de base y mini, pero la página de contacto dio error dos veces. Es el más fácil de cerrar abriéndola en un navegador. |
+| BM Granollers, Bidasoa Irun, BM Alcobendas, OAR Gràcia Sabadell, BM Sinfín | sus webs no permiten la lectura automática; no se ha rodeado. |
 | FC Barcelona (balonmano formativo) | la web tiene sección de base, pero no se vio un contacto institucional de la base. |
 
 Fuera del criterio (nivel III, no cuenta): Curso de Entrenador Superior 2026/27 de la ENE, sedes de León y Alcalá de Henares, de marzo de 2026 a mayo de 2027; contacto formacion@rfebm.com.
 
 ## Qué falta y cómo completarlo
-- **Tipo c (faltan unos 5):** las búsquedas devuelven sobre todo PDF y prensa; las webs de club no salen. Hace falta ir club por club a su página de contacto. Una sesión con navegador lo resuelve en poco tiempo; candidatos lógicos son los clubes con cantera de las ligas ASOBAL y Guerreras, pero no los he abierto y por eso no figuran.
+- **Tipo c (faltan 3 tras la actualización del 16/11):** las búsquedas devuelven sobre todo PDF y prensa; las webs de club no salen. Hace falta ir club por club a su página de contacto. Una sesión con navegador lo resuelve en poco tiempo; candidatos lógicos son los clubes con cantera de las ligas ASOBAL y Guerreras, pero no los he abierto y por eso no figuran.
 - **Tipo b (falta 1 o más):** la fuente buena es el listado de cursos de la plataforma de la RFEBM, que necesita navegador.
 - **Nombres de responsables:** ninguna web los publica en las páginas leídas. Si Biel quiere dirigirse a una persona, lo correcto es pedir el nombre a la propia federación por su correo institucional.

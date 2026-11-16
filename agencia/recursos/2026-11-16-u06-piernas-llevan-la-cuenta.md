@@ -1,6 +1,7 @@
 # Recursos u06 · «Las piernas de tus jugadores llevan la cuenta» (Agente 03 · Pau)
 
-> **Estado: incompleto.** El 16/11 no he podido buscar ni descargar nada nuevo: el contenedor no llega a Wikimedia Commons ni a ninguna otra fuente libre (Openverse, Flickr, Unsplash, Pexels, Pixabay: todas rechazadas por la red) y el sandbox de Higgsfield que indica la skill `03-visual-asset-discovery` fue denegado en esta sesión. No lo he rodeado. Lo que sigue sale **solo del banco**, mirado imagen por imagen. **No hay ninguna opción que cumpla el encargo entero** (grande + piernas en carrera + chaleco GPS + 1080 px útiles en vertical).
+> **Estado: actualizado el 16/11 a las 13:15 (ver el final): 2 opciones de fotograma 0 y el plano de petos ya están en el banco; sigue sin haber foto con chaleco GPS.** Lo que sigue es la ficha de la mañana.
+> **Estado anterior: incompleto.** El 16/11 no he podido buscar ni descargar nada nuevo: el contenedor no llega a Wikimedia Commons ni a ninguna otra fuente libre (Openverse, Flickr, Unsplash, Pexels, Pixabay: todas rechazadas por la red) y el sandbox de Higgsfield que indica la skill `03-visual-asset-discovery` fue denegado en esta sesión. No lo he rodeado. Lo que sigue sale **solo del banco**, mirado imagen por imagen. **No hay ninguna opción que cumpla el encargo entero** (grande + piernas en carrera + chaleco GPS + 1080 px útiles en vertical).
 
 A. Qué tiene que transmitir
 - Fotograma 0 (0–2 s, «SUS PIERNAS LLEVAN LA CUENTA. / Tú no.»): esfuerzo en las piernas de jugadores de un grande; mejor con el chaleco GPS a la vista. Andrés (05) condiciona el aprobado a esto: piernas y esfuerzo, no un plano general.
@@ -43,3 +44,17 @@ G. Lo que no he encontrado y alternativa
 - Faltan las **3 opciones** de primer fotograma (grande, piernas en carrera, GPS visible) y la foto de base con petos. No las invento.
 - Alternativas: (1) repetir la búsqueda en una sesión con acceso a Commons, con las consultas de C; (2) que Biel aporte una foto con licencia clara; (3) fotografiar nosotros un entreno de base con petos, que además cubre un hueco del banco.
 - Créditos al publicar si se usa algún apaño: «Real Madrid, CC BY 3.0» o «Froztbyte, CC BY-SA 3.0», en la descripción. Referentes como ejemplo, nunca como aval.
+
+---
+## Actualización 16/11 · 13:15 (turno de encargos, con acceso a Commons desde el sandbox de Higgsfield)
+Búsqueda hecha con las consultas de C y por categorías de Commons. Licencia leída en la ficha de cada archivo; todas las imágenes miradas a tamaño completo.
+
+**Descargadas al banco (`banco/fotos/`)**
+| opción | archivo | qué se ve | licencia · autor · enlace | para qué sirve | límite |
+|---|---|---|---|---|---|
+| 1 (fotograma 0) | `PROTEAM_EQUIPO_ENTRENAMIENTO_FOTO_002.jpg` (1920×1080) | Real Madrid entrenando en el Johan Cruijff ArenA (2019): un jugador de espaldas en primer término, piernas completas a la vista, el grupo detrás y la grada roja | CC BY 3.0 · Real Madrid · https://commons.wikimedia.org/wiki/File:Ajax_v_Real_Madrid_2019_Real_training_1.jpg | Es otro fotograma de la misma sesión que se usó en u04, pero distinto y a 1920 px: el recorte vertical de la columna izquierda (x 230–840) deja las piernas del jugador en el tercio inferior y sitio para el texto arriba | Piernas paradas, no en carrera; **sin chaleco GPS**; misma sesión que u04 |
+| 2 (fotograma 0, alternativa) | `PROTEAM_ENTRENADOR_REFERENTE_FOTO_022.jpg` (1920×1309) | Dunga golpea un balón con la pierna extendida en un entrenamiento de Brasil (2010) | CC BY 3.0 br · Marcello Casal Jr/ABr · https://commons.wikimedia.org/wiki/File:Brazil_national_football_team_training_at_Dobsonville_Stadium_2010-06-03_6.jpg | Pierna en acción en primer plano, selección reconocible por la ropa | Es el seleccionador, no un jugador; foto de 2010; sin GPS |
+| contraste «tú» | `PROTEAM_EQUIPO_ENTRENAMIENTO_PETOS_FOTO_001.jpg` (1920×1280) | Dos jugadores con peto amarillo en un campo de hierba artificial de un club modesto | CC BY-SA 4.0 · Kmreykjavik · https://commons.wikimedia.org/wiki/File:Entrenamiento_KM.jpg | Cubre el plano de petos que no existía en el banco (BCL 1, «Tú tienes una pregunta») | Son adultos de un club modesto, no fútbol base |
+
+**Lo que sigue sin existir:** ninguna foto libre con el **chaleco GPS** a la vista (cuatro consultas, cero resultados válidos) ni de Barça o Atlético entrenando a 1080 px o más (las del Barça de 2015 están a 900 px; las del Atlético de 2018, a 1.145×1.000 y con Simeone, no con jugadores). Son 2 opciones de fotograma 0, no 3.
+**Recomendación para Marta:** opción 1 en el fotograma 0 con el texto «SUS PIERNAS LLEVAN LA CUENTA.» sobre la grada, y el GPS resuelto en motion graphics (un punto y una cifra sobre la espalda del jugador) en «En la élite llevan GPS», dicho como recurso gráfico y no como foto. Créditos en la descripción: «Fotos: Real Madrid (CC BY 3.0), Kmreykjavik (CC BY-SA 4.0)».

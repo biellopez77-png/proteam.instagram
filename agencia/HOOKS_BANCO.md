@@ -1150,3 +1150,12 @@ Salen de las 16 aperturas de u08 y u09 (puntuación sobre 15 de la skill 01-hook
 - **H1018** Darle minutos al final no es darle minutos. [minutos · contradicción · base] (13/15)
 - **H1019** Mira cuándo entra el que menos juega. Siempre al final. [minutos · observación · base] (12/15)
 - **H1020** Cumples la norma de los minutos. Y aun así le quitas el partido. [minutos · provocación · base] (12/15)
+
+## Nuevos · 16/11 mediodía (Dani, serie «Balonmano base», capítulos 3 y 4)
+Fuente de las normas: Normativa de Balonmano 2025, Juegos Deportivos Escolares de Euskadi (infantil); en pantalla, siempre con el ámbito.
+- **H1021** [usado u10] Entra a defender. Sale a atacar. Tiene doce años. [balonmano · escena · infantil] (15/15)
+- **H1022** Tu mejor defensor de infantiles no ha atacado en todo el año. [balonmano · contradicción · infantil] (13/15)
+- **H1023** En Euskadi, un infantil no puede salir solo porque toca atacar. [balonmano · sorpresa · infantil] (12/15)
+- **H1024** [usado u11] Ganas de treinta y el árbitro pita el final. [balonmano · situación real · infantil] (14/15)
+- **H1025** En Euskadi, un partido de infantiles se acaba si ganas de treinta. [balonmano · sorpresa · infantil] (13/15)
+- **H1026** Tres reglas para el día que ganes de diez. [método · utilidad · base] (12/15)

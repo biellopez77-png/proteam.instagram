@@ -30,3 +30,10 @@ Las deja Dani (01) en cada turno de guiones por adelantado. Clara elige, marca �
 - **Objetivo:** envíos al segundo entrenador y utilidad el sábado.
 - **Arquitectura:** portada «¿Cuándo juegan tus menos habituales?» → la norma (Euskadi infantil: 12 min mínimos por jugador del acta; en otras federaciones cambia) → la escena del final con el partido decidido → tres momentos para dar esos minutos (antes del descanso, con el marcador ajustado, en una situación concreta: defensa o contraataque) → hoja del segundo: dorsal · entra · sale · minutos · momento → «Mándaselo a tu segundo».
 - **Ojo:** no repetir c09 (talento y reparto); aquí es el cuándo. No el mismo día que u09.
+
+## 16/11 mediodía (serie «Balonmano base», capítulos 3 y 4)
+### 6. «Cuando ganes de 10: tres retos para que el partido siga enseñando»
+- **Insight de origen:** I-005. **Objetivo:** guardados y envíos al segundo.
+- **Arquitectura:** portada «Ganas de 30 y el partido se acaba» → la norma, con ámbito y año (Juegos Escolares de Euskadi, infantil, 2025) → por qué una goleada no enseña (interpretación, marcada como tal) → reto 1: gol tras 5 pases → reto 2: defensa individual → reto 3: lanzar con la otra mano → cuándo activarlos y quién avisa (el segundo, a partir de +10) → ficha guardable → «Mándaselo a tu segundo».
+- **Ojo:** no el mismo día que u11. Los retos son recomendación, no norma.
+
