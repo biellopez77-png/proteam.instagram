@@ -1,5 +1,6 @@
 # u11 · bm-04 · «Ganas de treinta y el árbitro pita el final»
 
+> **Oficina, 16/11 13:15:** el cierre pide **comentar** (nadie puede leer los mensajes privados) y la fecha es «hasta el 27 de noviembre» (HASTA EL 27 NOV). Ya aplicado en la voz, la pantalla y la descripción de este guion.
 - **Estado: listo para producir** · **Crítica de Andrés: 78/100** (guion, escala 16/11) · riesgo de salto medio
 - **Serie:** «Balonmano base» (plan de crecimiento, encargo t-20261116-crec-01), capítulo 4 de 4.
 - **Insight:** I-005 (`intel/insights/INSIGHTS.md`) · **Territorio:** entrenar mucho frente a entrenar con intención.
@@ -26,8 +27,8 @@ Todos dan por hecho que una goleada es un sábado tranquilo, pero es un partido 
 | 2 | BCL 1 | En los Juegos Escolares de Euskadi, treinta goles y se acaba. | realidad verificable |
 | 3 | BCL 2 | Antes, tres retos cuando ganes de diez: gol tras cinco pases, defensa individual y lanzar con la otra mano. | lo guardable |
 | 4 | Cierre | Que el final lo pite el reloj. | contesta al hook |
-| 5 | CTA | Respóndeme tu categoría y tus días: te preparo la semana en la app de Pro Team. | experimento E4 |
-| 6 | CTA FINAL | Lista de espera antes del veintiocho de noviembre: tres meses gratis. | campaña (solo hasta el 27/11) |
+| 5 | CTA | Comenta tu categoría y tus días: te preparo la semana en la app de Pro Team. | experimento E4 |
+| 6 | CTA FINAL | Lista de espera hasta el veintisiete de noviembre: tres meses gratis. | campaña (solo hasta el 27/11) |
 
 **73 palabras · ≈24,5 s.** Sin pausa antes del CTA. Silencio corto antes de «pita el final».
 Desde el 28/11: se quita la línea 6.
@@ -38,7 +39,7 @@ Desde el 28/11: se quita la línea 6.
 - Fotograma 0: **GANAS DE 30.** / *Y el árbitro pita el final.* (serif azul) + nota pequeña «Infantil · Juegos Escolares de Euskadi · normativa 2025».
 - Ficha guardable (2 s, sobre la imagen): **SI GANAS DE 10** · 1. gol tras 5 pases · 2. defensa individual · 3. lanzar con la otra mano.
 - Cierre: **QUE EL FINAL LO PITE EL RELOJ.**
-- CTA: **RESPÓNDEME: CATEGORÍA + DÍAS** · rótulo de fecha vigente + **3 MESES GRATIS**.
+- CTA: **COMENTA: CATEGORÍA + DÍAS** · rótulo de fecha vigente + **3 MESES GRATIS**.
 
 ## Línea útil (para guardar o enviar)
 Tres reglas para cuando el partido está ganado: solo vale el gol después de cinco pases, se defiende individual y se lanza con la mano no dominante. Se manda al segundo, que es quien avisa del momento de aplicarlas.
@@ -47,7 +48,7 @@ Tres reglas para cuando el partido está ganado: solo vale el gol después de ci
 Ganas de 30 y el partido se acaba. 🤾
 Guárdalo: cuando ganes de 10, tres retos para tu equipo (gol tras 5 pases, defensa individual, lanzar con la otra mano). Mándaselo a tu segundo.
 En los Juegos Escolares de Euskadi, en infantiles, el partido termina si la diferencia llega a 30 goles (normativa 2025). En otras federaciones la norma cambia.
-Respóndeme tu categoría y tus días y te preparo la semana en la app de ProTeam. Lista de espera hasta el 28 de noviembre: 3 meses gratis. Enlace en la bio.
+Comenta tu categoría y tus días y te preparo la semana en la app de ProTeam. Lista de espera hasta el 27 de noviembre: 3 meses gratis. Enlace en la bio.
 ¿Qué le pides a tu equipo cuando el partido está decidido? 👇
 
 ## Hooks (0–3 en curiosidad · relevancia · tensión · claridad · coherencia)

@@ -1,5 +1,6 @@
 # u09 · bm-02 · «Siempre los últimos doce»
 
+> **Oficina, 16/11 13:15:** el cierre pide **comentar** (nadie puede leer los mensajes privados) y la fecha es «hasta el 27 de noviembre» (HASTA EL 27 NOV). Ya aplicado en la voz, la pantalla y la descripción de este guion.
 - **Estado: listo para producir** · **Crítica de Andrés: 80/100** (guion, escala 16/11) · riesgo de salto medio-bajo
 - **Serie:** «Balonmano base» (plan de crecimiento, encargo t-20261116-crec-01), capítulo 2 de 4. Cuenta también como u09 de la reserva (encargo t-01-reserva-u08-u09).
 - **Insight:** I-003 (`intel/insights/INSIGHTS.md`) · **Territorio:** decisiones pequeñas que condicionan la temporada.
@@ -18,8 +19,8 @@ Todos dan por hecho que con cumplir los minutos obligatorios basta, pero si lleg
 | 3 | BCL 2 | Cumples la norma. Él aprende que sus minutos no cuentan. | consecuencia que no se ve |
 | 4 | BCL 3 | Este sábado, sus doce antes del descanso, con el marcador vivo. | salida (lo guardable) y vuelta al hook |
 | 5 | BCL 4 | Mándaselo a tu segundo: que él lleve el reloj. | motivo para enviar + reparto de tareas |
-| 6 | CTA | Respóndeme tu categoría y tus días: te preparo la semana en la app de Pro Team. | experimento E4 |
-| 7 | CTA FINAL | Lista de espera antes del veintiocho de noviembre: tres meses gratis. | campaña (solo hasta el 27/11) |
+| 6 | CTA | Comenta tu categoría y tus días: te preparo la semana en la app de Pro Team. | experimento E4 |
+| 7 | CTA FINAL | Lista de espera hasta el veintisiete de noviembre: tres meses gratis. | campaña (solo hasta el 27/11) |
 
 **75 palabras · ≈25 s.** Sin pausa antes del CTA. Silencio corto antes de «últimos» (golpe de música).
 Desde el 28/11: se quita la línea 7.
@@ -30,7 +31,7 @@ Desde el 28/11: se quita la línea 7.
 - Fotograma 0: **SUS 12 MINUTOS.** / *Siempre los últimos.* (serif azul) + nota pequeña «Infantil, Juegos Escolares de Euskadi: mínimo 12 min por jugador del acta».
 - Línea 2: un marcador roto (p. ej. **24–11**) en grande, marcado como ejemplo.
 - Ficha guardable (1,5–2 s, sobre la imagen): **SUS 12 MINUTOS** · antes del descanso · con el marcador vivo · el segundo lleva el reloj.
-- CTA: **RESPÓNDEME: CATEGORÍA + DÍAS** · **HASTA EL 28 NOV · 3 MESES GRATIS** (rótulo de fecha según lo que decida Biel; mientras, el vigente).
+- CTA: **COMENTA: CATEGORÍA + DÍAS** · **HASTA EL 27 NOV · 3 MESES GRATIS** (rótulo de fecha según lo que decida Biel; mientras, el vigente).
 
 ## Línea útil (para guardar o enviar)
 Los minutos del que menos juega, antes del descanso y con el partido en juego; el ayudante lleva la cuenta para que el primer entrenador no tenga que hacerlo de cabeza.
@@ -39,7 +40,7 @@ Los minutos del que menos juega, antes del descanso y con el partido en juego; e
 Juega sus 12 minutos. Siempre los últimos. ⏱️
 Guárdalo: este sábado, que sus minutos lleguen antes del descanso y con el marcador vivo. Mándaselo a tu segundo y que lleve él el reloj.
 En los Juegos Escolares de Euskadi cada infantil del acta juega al menos 12 minutos (normativa 2025); en otras federaciones la norma cambia o no existe, pero la pregunta es la misma: ¿cuándo se los das?
-Respóndeme tu categoría y tus días y te preparo la semana en la app de ProTeam. Lista de espera hasta el 28 de noviembre: 3 meses gratis. Enlace en la bio.
+Comenta tu categoría y tus días y te preparo la semana en la app de ProTeam. Lista de espera hasta el 27 de noviembre: 3 meses gratis. Enlace en la bio.
 ¿Cuándo entran tus menos habituales: primera parte o al final? 👇
 
 ## Pista para Marta (02)

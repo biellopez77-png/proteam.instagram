@@ -1,5 +1,6 @@
 # u10 · bm-03 · «Entra a defender. Sale a atacar.»
 
+> **Oficina, 16/11 13:15:** el cierre pide **comentar** (nadie puede leer los mensajes privados) y la fecha es «hasta el 27 de noviembre» (HASTA EL 27 NOV). Ya aplicado en la voz, la pantalla y la descripción de este guion.
 - **Estado: listo para producir** · **Crítica de Andrés: 80/100** (guion, escala 16/11) · riesgo de salto medio
 - **Serie:** «Balonmano base» (plan de crecimiento, encargo t-20261116-crec-01), capítulo 3 de 4.
 - **Insight:** I-004 (`intel/insights/INSIGHTS.md`) · **Territorio:** decisiones pequeñas que condicionan la temporada.
@@ -8,7 +9,7 @@
 - **Publicación propuesta:** jueves 19/11 o viernes 20/11, nunca el mismo día que u08 (misma fuente y misma serie). La decide el turno de Reels.
 
 ## 1. Objetivo estratégico
-Contacto (E4: respuesta por mensaje con categoría y días) y envíos entre entrenadores del mismo club. Público que ya usa la app: 5 de las 8 cuentas son de balonmano.
+Contacto (E4: comentario con categoría y días) y envíos entre entrenadores del mismo club. Público que ya usa la app: 5 de las 8 cuentas son de balonmano.
 
 ## 2. Público y escena
 Entrenador de infantiles de balonmano. Sábado, pabellón, su equipo recupera el balón: mira al banquillo, hace el gesto y entra el que ataca mientras sale el que solo defiende. Lo hace diez veces por partido sin pensarlo.
@@ -27,8 +28,8 @@ Todos dan por hecho que cambiar al especialista es «gestionar el partido», per
 | 3 | BCL 2 | En los Juegos Escolares de Euskadi, ese cambio no se permite. | realidad verificable |
 | 4 | BCL 3 | Esta semana, en el partidillo: quien defiende, ataca la siguiente. | qué hacer (lo guardable) |
 | 5 | Cierre | A los doce, nadie es especialista. | contesta al hook |
-| 6 | CTA | Respóndeme tu categoría y tus días: te preparo la semana en la app de Pro Team. | experimento E4 |
-| 7 | CTA FINAL | Lista de espera antes del veintiocho de noviembre: tres meses gratis. | campaña (solo hasta el 27/11) |
+| 6 | CTA | Comenta tu categoría y tus días: te preparo la semana en la app de Pro Team. | experimento E4 |
+| 7 | CTA FINAL | Lista de espera hasta el veintisiete de noviembre: tres meses gratis. | campaña (solo hasta el 27/11) |
 
 **73 palabras · ≈24,5 s** (a 2,97 palabras/s, medido en u04). Sin pausa antes del CTA. Silencio corto antes de «doce años» (golpe de música).
 Desde el 28/11: se quita la línea 7.
@@ -39,7 +40,7 @@ Desde el 28/11: se quita la línea 7.
 - Fotograma 0: **ENTRA A DEFENDER. SALE A ATACAR.** / *Tiene 12 años.* (serif azul)
 - Línea 3: **CAMBIO ATAQUE-DEFENSA: NO PERMITIDO** + nota pequeña «Infantil · Juegos Escolares de Euskadi · normativa 2025».
 - Ficha guardable (1,5–2 s, sobre la imagen): **ESTA SEMANA** · en el partidillo, quien defiende ataca la siguiente · nadie sale al recuperar.
-- CTA: **RESPÓNDEME: CATEGORÍA + DÍAS** · rótulo de fecha vigente + **3 MESES GRATIS**.
+- CTA: **COMENTA: CATEGORÍA + DÍAS** · rótulo de fecha vigente + **3 MESES GRATIS**.
 
 ## Línea útil (para guardar o enviar)
 En el partido de entrenamiento no hay cambios al recuperar el balón: el que ha defendido ataca la jugada siguiente. Se manda al segundo entrenador o a quien lleva el otro infantil del club.
@@ -48,7 +49,7 @@ En el partido de entrenamiento no hay cambios al recuperar el balón: el que ha 
 Entra a defender, sale a atacar. Y tiene 12 años. 🤾
 Guárdalo: esta semana, en el partidillo, quien defiende ataca la siguiente. Mándaselo a tu segundo.
 En los Juegos Escolares de Euskadi, en infantiles, no se permiten los cambios de especialistas solo en ataque o solo en defensa (normativa 2025). En otras federaciones la norma cambia.
-Respóndeme tu categoría y tus días y te preparo la semana en la app de ProTeam. Lista de espera hasta el 28 de noviembre: 3 meses gratis. Enlace en la bio.
+Comenta tu categoría y tus días y te preparo la semana en la app de ProTeam. Lista de espera hasta el 27 de noviembre: 3 meses gratis. Enlace en la bio.
 ¿Cambias ataque-defensa con tus infantiles? 👇
 
 ## Hooks (skill 01-hook-engineering; 0–3 en curiosidad · relevancia · tensión · claridad · coherencia)

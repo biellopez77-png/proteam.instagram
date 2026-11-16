@@ -22,7 +22,8 @@ Directo, natural, profesional, cercano e inteligente. Frases cortas y fáciles d
 
 ## Oferta vigente (la decide Biel; no inventar otras)
 Hasta el 27/11: **hype máximo**, el máximo de contenido posible (son las semanas en las que más se vende).
-- Lista de espera hasta el **28 de noviembre** (cierra el 27 a las 23:59, Madrid). En voz: «antes del 28 de noviembre»; en pantalla: «HASTA EL 28 NOV».
+- Lista de espera **hasta el 27 de noviembre** (cierra el 27 a las 23:59, Madrid). En voz: «hasta el 27 de noviembre»; en pantalla: «HASTA EL 27 NOV». (Decisión de la oficina del 16/11, con el «sí» de Biel a la fecha única; antes se decía «antes del 28». Las piezas ya programadas no se tocan.)
+- Las llamadas «te preparo la semana» piden **comentar** («Comenta tu categoría y tus días»), nunca mensaje privado: nadie del equipo puede leer los privados (oficina, 16/11).
 - Quien se apunte empieza con **3 meses gratis**. No hay más ofertas.
 - En la voz: «la app de ProTeam» (no «ProTeam» a secas, que suena a plantilla).
 - Enlace: «enlace en la bio» en la descripción; nunca URL en pantalla.
