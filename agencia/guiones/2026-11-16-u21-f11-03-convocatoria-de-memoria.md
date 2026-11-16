@@ -38,7 +38,7 @@ Todos hacen la convocatoria el viernes de memoria, pero lo que la decide ha pasa
 | 7 | CTA FINAL | Lista de espera hasta el veintisiete de noviembre: tres meses gratis. | campaña (solo hasta el 27/11) |
 | 8 | Reto | Y pregúntale a tu segundo: ¿quién lleva dos semanas sin ir convocado? | reto para el cuerpo técnico |
 
-**102 palabras · ≈34 s.** Sin pausa antes del CTA. Silencio corto antes de «de memoria».
+**97 palabras · ≈32 s.** Sin pausa antes del CTA. Silencio corto antes de «de memoria».
 Desde el 28/11: se quita la línea 7.
 
 **Estructura:** escena con hora y número → dos preguntas → consecuencia del sábado → hoja de tres columnas → sentencia que devuelve el hook → CTA → reto. Distinta de u18 (hora → método de tres versiones, sin consecuencia), u15 (contraste numérico) y u19 (escena → giro).
