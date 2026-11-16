@@ -39,7 +39,7 @@ Las deja Dani (01) en cada turno de guiones por adelantado. Clara elige, marca �
 
 
 ## 16/11 14:10 (tres deportes por igual · calendario en `agencia/ideas/calendario-17-30-nov.md`)
-### 7. «Fútbol 7: cada tiempo, una línea» (hoja de rotación)
+### 7. «Fútbol 7: cada tiempo, una línea» (hoja de rotación) [usada c11]
 - **Deporte:** fútbol 7 (benjamín y alevín). **Insight de origen:** I-008. **Objetivo:** envíos al coordinador y guardados.
 - **Arquitectura:** portada «Tiene 9 años y ya es "el lateral"» → por qué pasa (ordena el sábado; interpretación) → el partido ya viene en cuatro tiempos (Juegos Municipales de Sevilla, circular 2025-26: 4 tiempos de 12 minutos; en otras competiciones cambia) → la regla: cada tiempo una línea, nadie repite dos seguidos → ejemplo con siete dorsales en una tabla tiempo × línea (ejemplo inventado y marcado como ejemplo) → qué hacer con el portero (rota también: propuesta) → hoja guardable → «Mándaselo a tu coordinador».
 - **Ojo:** no el mismo día que u14. La rotación es propuesta, no norma. Sin primeros planos de menores.

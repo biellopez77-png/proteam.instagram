@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8">
+<style>
+@font-face{font-family:M;src:url(../fonts/manrope-latin-500-normal.woff2);font-weight:500}
+@font-face{font-family:M;src:url(../fonts/manrope-latin-700-normal.woff2);font-weight:700}
+@font-face{font-family:M;src:url(../fonts/manrope-latin-800-normal.woff2);font-weight:800}
+@font-face{font-family:S;src:url(../fonts/instrument-serif-latin-400-italic.woff2);font-style:italic}
+:root{--ink:#0d0f14;--paper:#f2f1ec;--blue:#2f6bff;--blue2:#4f86ff}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#333;font-family:M;-webkit-font-smoothing:antialiased}
+.s{width:1080px;height:1350px;position:relative;overflow:hidden;margin-bottom:20px}
+.dark{background:var(--ink);color:#f5f5f3}
+.paper{background:var(--paper);color:var(--ink)}
+.in{position:absolute;inset:90px;display:flex;flex-direction:column;z-index:2}
+.top{display:flex;justify-content:space-between;font-weight:700;font-size:24px;letter-spacing:.12em;text-transform:uppercase}
+.top>span{opacity:.6}.top>span.k{opacity:1}
+.k{font-weight:800;font-size:26px;letter-spacing:.14em;text-transform:uppercase;color:var(--blue)}
+.dark .k{color:var(--blue2)}
+.sr{font-family:S;font-style:italic;font-weight:400;color:var(--blue);letter-spacing:0}
+.dark .sr{color:var(--blue2)}
+h1,h2{font-weight:800;letter-spacing:-.025em;line-height:1.0}
+p.b{font-weight:500;font-size:34px;line-height:1.38}
+.dark p.b{color:#c9ccd4}.paper p.b{color:#3a3e48}
+.cap{font-weight:500;font-size:20px;opacity:.6}
+.photo{position:absolute;background-size:cover;background-position:center}
+/* días */
+.day{font-weight:800;font-size:150px;letter-spacing:-.04em;line-height:.9}
+.chips{display:flex;gap:16px;margin-top:30px}
+.chip{font-weight:800;font-size:28px;padding:12px 22px;border-radius:999px;border:3px solid currentColor}
+.chip.f{background:var(--blue);border-color:var(--blue);color:#fff}
+.tbar{display:flex;height:34px;gap:5px;margin:46px 0 16px}
+.tbar i{display:block;border-radius:6px;background:#c9c6bc}
+.dark .tbar i{background:#2b313d}
+.tbar i.o{background:var(--blue)}
+.tbl{font-weight:700;font-size:22px;letter-spacing:.08em;text-transform:uppercase;opacity:.55;display:flex;justify-content:space-between}
+.tasks{margin-top:22px}
+.t{display:grid;grid-template-columns:150px 1fr;align-items:baseline;padding:20px 0;border-top:2px solid #d9d7cf}
+.dark .t{border-top-color:#262b36}
+.t .m{font-weight:800;font-size:56px;letter-spacing:-.03em;line-height:1}
+.t .x{font-weight:700;font-size:36px;line-height:1.2}
+.t.o .m,.t.o .x{color:var(--blue)}
+.dark .t.o .m,.dark .t.o .x{color:var(--blue2)}
+.note{margin-top:auto;font-weight:500;font-size:30px;line-height:1.35}
+.paper .note{color:#3a3e48}.dark .note{color:#c9ccd4}
+.r3{display:grid;grid-template-columns:80px 1fr;align-items:baseline;padding:22px 0;border-top:2px solid #262b36}
+.r3 .n{font-weight:800;font-size:34px;color:var(--blue2)}
+.r3 .x{font-weight:700;font-size:40px;line-height:1.18}
+.wk{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;align-items:end;height:400px;margin-top:70px}
+.wk .c{display:flex;flex-direction:column;justify-content:flex-end;height:100%}
+.wk .bar{border-radius:12px;background:#2b313d}
+.wk .bar.o{background:var(--blue)}
+.wk .l{font-weight:800;font-size:40px;margin-top:18px}
+.wk .s2{font-weight:500;font-size:24px;color:#a9adb7;margin-top:4px}
+.cta{border:3px solid var(--blue2);border-radius:28px;padding:40px 44px;margin-top:56px}
+
+.big{font-weight:800;letter-spacing:-.045em;line-height:.85}
+.q{display:grid;grid-template-columns:70px 1fr;padding:26px 0;border-top:2px solid #262b36;align-items:baseline}
+.q .n{width:6px;height:100%;min-height:44px;background:var(--blue2);border-radius:3px}.q{align-items:stretch!important}
+.q .x{font-weight:700;font-size:36px;line-height:1.22}
+.q .x small{display:block;font-weight:500;font-size:24px;color:#a9adb7;margin-top:8px;letter-spacing:.02em}
+.st{display:grid;grid-template-columns:96px 1fr;padding:28px 0;border-top:2px solid #d9d7cf;align-items:baseline}
+.st .n{font-weight:800;font-size:64px;color:var(--blue);line-height:1}
+.st .x{font-weight:800;font-size:42px;line-height:1.15}
+.st .x span{display:block;font-weight:500;font-size:32px;color:#3a3e48;margin-top:6px;line-height:1.3}
+.grid{display:grid;grid-template-columns:120px repeat(4,1fr);text-align:center}
+.grid div{font-weight:800}
+.grid .h{font-size:24px;letter-spacing:.12em;text-transform:uppercase;opacity:.6;padding-bottom:14px}
+.ex .c{font-size:44px;padding:9px 0;border-top:2px solid #262b36}
+.ex .d{color:#a9adb7;text-align:left}
+.ex .P{color:var(--blue2)}.ex .r{color:#4a505d}
+.row{display:flex;gap:14px;margin-top:10px}
+.row div{flex:1;height:96px;border-radius:16px;background:var(--blue);color:#fff;font-weight:800;font-size:52px;display:flex;align-items:center;justify-content:center}
+.row div.r{background:#d9d7cf;color:#8a8d95}.row div.dn{background:transparent;color:var(--ink);border:3px solid var(--ink)}
+.blank .c{height:51px;border-top:2px solid #cfccc2;border-left:2px solid #cfccc2}
+.blank .c:nth-child(5n+1){border-left:none}
+</style></head><body>
+
+<!-- 1 PORTADA -->
+<div class="s dark">
+  <div class="photo" style="inset:0;background-image:url(../../banco/fotos/PROTEAM_ENTRENADOR_REFERENTE_FOTO_011.jpg);background-position:center 8%"></div>
+  <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(13,15,20,.75) 0%,rgba(13,15,20,0) 16%,rgba(13,15,20,0) 34%,rgba(13,15,20,.9) 56%,#0d0f14 74%)"></div>
+  <div class="in">
+    <div class="top"><span class="k">Fútbol 7 · 4 tiempos</span><span>01 / 06</span></div>
+    <div style="margin-top:auto">
+      <div class="k" style="margin-bottom:26px">Benjamín y alevín</div>
+      <h1 style="font-size:112px">No haces una<br>alineación.<br><span class="sr" style="font-size:132px">Haces cuatro.</span></h1>
+      <p class="b" style="margin-top:34px;color:#e4e6ea">Y en cada una, el niño puede jugar en otra línea. Te dejo la hoja.</p>
+      <div style="display:flex;justify-content:space-between;margin-top:40px;align-items:flex-end">
+        <span style="font-weight:800;font-size:24px;letter-spacing:.14em">DESLIZA →</span>
+        <span class="cap">Johan Cruyff</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 2 ESCENA -->
+<div class="s paper">
+  <div class="in">
+    <div class="top"><span class="k">El sábado</span><span>02 / 06</span></div>
+    <div class="big" style="font-size:330px;margin-top:70px">9:50</div>
+    <h2 style="font-size:66px;margin-top:50px">Petos en la mano y las posiciones de memoria.<br><span class="sr" style="font-size:78px">Las mismas desde septiembre.</span></h2>
+    <p class="b" style="margin-top:44px">Así el partido sale ordenado. Pero el que juega atrás lleva desde septiembre sin tirar a puerta.</p>
+    <div style="margin-top:auto">
+      <div style="font-weight:700;font-size:28px;color:#3a3e48">Su fila, tiempo a tiempo:</div>
+      <div class="row"><div class="dn">12</div><div class="dn">D</div><div class="dn">D</div><div class="dn">D</div><div class="dn">D</div></div>
+      <div style="margin-top:44px;font-weight:800;font-size:32px;color:var(--blue)">Y el orden ya te lo da el reglamento →</div>
+    </div>
+  </div>
+</div>
+
+<!-- 3 NORMA -->
+<div class="s dark">
+  <div class="in">
+    <div class="top"><span class="k">Lo que ya dice la norma</span><span>03 / 06</span></div>
+    <div class="big" style="font-size:250px;margin-top:40px">4 × 12′</div>
+    <div style="margin-top:44px">
+      <div class="q"><div class="n"></div><div class="x">«4 tiempos de 12 minutos»<small>Prebenjamín, benjamín y alevín</small></div></div>
+      <div class="q"><div class="n"></div><div class="x">«Todos los jugadores inscritos en el acta deberán participar en, al menos, un período completo»</div></div>
+      <div class="q"><div class="n" style="background:#3a404c"></div><div class="x" style="font-weight:500;color:#c9ccd4">Hasta que todos han jugado uno entero, no hay cambios dentro de los tiempos.</div></div>
+    </div>
+    <h2 style="font-size:54px;margin-top:30px;line-height:1.08">Cada tiempo empieza con una alineación tuya: <span class="sr" style="font-size:64px">ya haces cuatro.</span></h2>
+    <div class="cap" style="margin-top:auto;line-height:1.35;font-size:26px;opacity:.75">Fuente: Circular de Fútbol Siete 2025-26, JDM de Sevilla (IMD), apdos. 10 y 12. En otras competiciones cambia.</div>
+  </div>
+</div>
+
+<!-- 4 METODO -->
+<div class="s paper">
+  <div class="in">
+    <div class="top"><span class="k">El viernes · La regla, en orden</span><span>04 / 06</span></div>
+    <h2 style="font-size:96px;margin-top:56px">Tres pasos,<br><span class="sr" style="font-size:112px">en este orden.</span></h2>
+    <div style="margin-top:40px">
+      <div class="st"><div class="n">1</div><div class="x">Los descansos.<span>Con 10 convocados, 3 por tiempo. Nadie descansa dos seguidos.</span></div></div>
+      <div class="st"><div class="n">2</div><div class="x">Los porteros.<span>Uno en el 1.º y el 3.º; otro en el 2.º y el 4.º.</span></div></div>
+      <div class="st"><div class="n">3</div><div class="x">Las líneas.<span>Cada jugador, en una distinta de la anterior.</span></div></div>
+    </div>
+    <div style="margin-top:auto">
+      <div style="font-weight:700;font-size:28px;color:#3a3e48">Para comprobarlo, lee cada fila:<br>nunca la misma letra dos veces seguidas.</div>
+      <div class="row"><div class="dn">4</div><div>A</div><div>D</div><div>M</div><div class="r">—</div></div>
+      <div style="margin-top:20px;font-weight:700;font-size:27px;color:#3a3e48">Es una propuesta, no una norma.</div>
+    </div>
+  </div>
+</div>
+
+<!-- 5 EJEMPLO -->
+<div class="s dark">
+  <div class="in">
+    <div class="top"><span class="k">Ejemplo · 10 convocados · 1-3-2-1</span><span>05 / 06</span></div>
+    <div class="grid ex" style="margin-top:56px">
+      <div class="h" style="text-align:left">Dorsal</div><div class="h">1.º</div><div class="h">2.º</div><div class="h">3.º</div><div class="h">4.º</div>
+      <div class="c d">1</div><div class="c P">P</div><div class="c r">—</div><div class="c P">P</div><div class="c ">D</div><div class="c d">2</div><div class="c ">D</div><div class="c P">P</div><div class="c r">—</div><div class="c P">P</div><div class="c d">3</div><div class="c r">—</div><div class="c ">M</div><div class="c ">D</div><div class="c r">—</div><div class="c d">4</div><div class="c ">A</div><div class="c ">D</div><div class="c ">M</div><div class="c r">—</div><div class="c d">5</div><div class="c ">M</div><div class="c ">A</div><div class="c ">D</div><div class="c r">—</div><div class="c d">6</div><div class="c ">D</div><div class="c ">M</div><div class="c r">—</div><div class="c ">D</div><div class="c d">7</div><div class="c ">M</div><div class="c r">—</div><div class="c ">D</div><div class="c ">A</div><div class="c d">8</div><div class="c ">D</div><div class="c r">—</div><div class="c ">M</div><div class="c ">D</div><div class="c d">9</div><div class="c r">—</div><div class="c ">D</div><div class="c r">—</div><div class="c ">M</div><div class="c d">10</div><div class="c r">—</div><div class="c ">D</div><div class="c ">A</div><div class="c ">M</div>
+    </div>
+    <div style="font-weight:700;font-size:24px;letter-spacing:.06em;color:#a9adb7;margin-top:22px">P PORTERO · D DEFENSA · M MEDIO · A ATAQUE · — DESCANSA</div>
+    <p class="b" style="margin-top:auto;font-size:32px">Todos juegan 2 o 3 tiempos completos y los 8 de campo pasan por <span class="sr" style="font-size:40px">al menos dos líneas.</span></p>
+    <div class="cap" style="margin-top:16px">Ejemplo inventado para enseñar la hoja.</div>
+  </div>
+</div>
+
+<!-- 6 HOJA + CTA -->
+<div class="s paper">
+  <div class="in">
+    <div class="top"><span class="k">Tu hoja · Guárdala</span><span>06 / 06</span></div>
+    <div class="grid blank" style="margin-top:46px;background:#fff;border-radius:22px;padding:26px 28px 10px">
+      <div class="h" style="text-align:left">Dorsal</div><div class="h">1.º</div><div class="h">2.º</div><div class="h">3.º</div><div class="h">4.º</div>
+      <div class="c"></div><div class="c"></div><div class="c"></div><div class="c"></div><div class="c"></div><div class="c"></div><div class="c"></div><div class="c"></div><div class="c"></div><div class="c"></div><div class="c"></div><div class="c"></div><div class="c"></div><div class="c"></div><div class="c"></div><div class="c"></div><div class="c"></div><div class="c"></div><div class="c"></div><div class="c"></div><div class="c"></div><div class="c"></div><div class="c"></div><div class="c"></div><div class="c"></div><div class="c"></div><div class="c"></div><div class="c"></div><div class="c"></div><div class="c"></div><div class="c"></div><div class="c"></div><div class="c"></div><div class="c"></div><div class="c"></div><div class="c"></div><div class="c"></div><div class="c"></div><div class="c"></div><div class="c"></div><div class="c"></div><div class="c"></div><div class="c"></div><div class="c"></div><div class="c"></div><div class="c"></div><div class="c"></div><div class="c"></div><div class="c"></div><div class="c"></div><div class="c"></div><div class="c"></div><div class="c"></div><div class="c"></div><div class="c"></div><div class="c"></div><div class="c"></div><div class="c"></div><div class="c"></div><div class="c"></div><div class="c"></div><div class="c"></div><div class="c"></div><div class="c"></div><div class="c"></div><div class="c"></div><div class="c"></div><div class="c"></div><div class="c"></div><div class="c"></div>
+    </div>
+    <div style="margin-top:auto;border:3px solid var(--blue);border-radius:26px;padding:30px 36px">
+      <div style="font-weight:800;font-size:44px;line-height:1.15"><span class="sr" style="font-size:52px">Comenta tu deporte, tu categoría y tus días</span> y te preparo la semana.</div>
+    </div>
+  </div>
+</div>
+</body></html>
