@@ -30,9 +30,9 @@ collage a pantalla completa de entrenadores famosos (u01) · cuadrícula 3×3 (u
 | c08s | 16/11 13:00 | comunidad (respuesta por mensaje) | La pregunta del entrenador: ¿qué te cuesta más apuntar? A asistencia · B cansancio · C último partido · D correcciones. La más votada será carrusel esta semana. 80/100 |
 | c09s | 16/11 17:00 | valor | Pequeños cambios: «¿Qué funcionó en tu último entreno? Apúntalo en 2 minutos» (3 líneas antes de irte del campo). 81/100 |
 | c09s2 | 16/11 20:00 | marca + lista de espera | «¿Cuántas horas entrenas fuera del campo?» + «Planificar. Apuntar. Revisar. También es entrenar.» + quedan 11 días · 3 meses gratis. 77/100 |
-| c10s | 17/11 13:00 | comunidad (respuesta por mensaje) | Tu equipo en 3 datos: ficha de ejemplo (Balonmano · Infantil · L·X·V); el próximo plan semanal será para la combinación más repetida. 78/100, escala 16/11 |
+| c10s | 17/11 13:00 | comunidad (respuesta en comentarios de c10) | v2 16/11: encuesta «¿Qué deporte entrenas?» Fútbol · Baloncesto · Balonmano + categoría y días, se contesta en el post de las 11:00; lo más repetido decide el próximo plan semanal. 78/100, escala 16/11 |
 | c10s2 | 17/11 17:00 | producto (pantalla real) | ¿Quién se quedó sin jugar el sábado? Informe real con SIN MINUTOS 4 resaltado · «Mejor saberlo tú que enterarte por un padre». 83/100, escala 16/11 |
-| c10s3 | 17/11 20:00 | dudas + lista de espera | 3 dudas antes de apuntarte: deportes, qué hace, 3 meses gratis hasta el 28 nov · quedan 10 días · «¿Te queda otra? Escríbenosla». 76/100, escala 16/11 |
+| c10s3 | 17/11 20:00 | dudas + lista de espera | 3 dudas antes de apuntarte: deportes, qué hace, 3 meses gratis hasta el 27 nov · quedan 10 días · «¿Te queda otra? Déjala en el último post» (v2 16/11). 76/100, escala 16/11 |
 
 ## Carruseles (Agente 04)
 | id | fecha | titular (diapo 1) | línea editorial | objetivo | estructura | tema | CTA | enfoque visual |
