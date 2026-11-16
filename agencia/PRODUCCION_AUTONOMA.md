@@ -34,6 +34,7 @@ MODO GUION sobre el guion: veredicto + nota sobre 100 con desglose. Si < 75, apl
 - Copia lo que vayas a usar a `tools/reelNN/img/` y apúntalo en `banco/INVENTARIO.csv` con el estado `usada en uNN`.
 
 ## 4. Voz (siempre Mateo)
+- **Desde el 16/11 16:55 los turnos descargan el audio directamente**: `curl -L -o voz.mp3 '<url de creative_get_generations>'` (Biel permitió elevenlabsusercontent.com). Ya no hace falta el sandbox ni el truco del PNG; la transcripción con faster-whisper puede hacerse aquí (`pip install faster-whisper`) o en el sandbox.
 - ElevenLabs: `creative_generate_speech`, voice_id `Rie0luvrYhyKLba1lK3c` (Mateo original; desde el 16/11 está desactivada: si falla, usa `gpMzl7dbkfC9dIxAqQZT`, «Mateo – News & Digital Stories» de la biblioteca, sin preguntar), modelo `eleven_v4`, flow `hBYtrq1HJVmwM1XJaheU`. Salen 2 tomas.
 - Escribe «Pro Team» para que lo pronuncie bien y los números en letra («veintiocho», «tres»).
 - URLs con `creative_get_generations`.

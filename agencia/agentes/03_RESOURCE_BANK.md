@@ -37,6 +37,7 @@ BANCO · REEL · FOTOGRAFÍA · FOOTAGE · VISUAL · PROTEAM · AUDITORÍA (dupl
 `banco/INVENTARIO.csv` e `INDICE.md` al día; commit y push. Oficina: ENTRADA y SALIDA del protocolo. A Biel: qué se ha añadido, qué falta y qué tiene que grabar o pasar él.
 
 ## Cómo llegar a Wikimedia Commons (16/11, arreglado)
+**Desde el 16/11 16:55 Commons se lee directamente desde los turnos** (Biel permitió commons.wikimedia.org y upload.wikimedia.org): `python3 tools/commons_sandbox.py search|get …` funciona igual en local y deja la foto en `bank/`; copia a `banco/fotos/`. El sandbox de Higgsfield queda solo como plan B.
 Los turnos programados **no** llegan a Commons (la red del contenedor lo bloquea: WebFetch da «url_not_found» y curl «connect_rejected»). **Sí llega el sandbox de Higgsfield** (`mcp__Higgsfield__sandbox_exec`). Procedimiento, siempre:
 1. En el sandbox: `curl -s https://raw.githubusercontent.com/biellopez77-png/proteam.instagram/main/tools/commons_sandbox.py -o cs.py`
 2. `python3 cs.py search "<consulta en inglés o con el nombre propio>" 15` → candidatas con tamaño, licencia y autor (solo ≥ 1000 px; `free` true = licencia libre).
