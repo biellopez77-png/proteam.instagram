@@ -35,3 +35,11 @@ BANCO · REEL · FOTOGRAFÍA · FOOTAGE · VISUAL · PROTEAM · AUDITORÍA (dupl
 
 ## 9. Registro
 `banco/INVENTARIO.csv` e `INDICE.md` al día; commit y push. Oficina: ENTRADA y SALIDA del protocolo. A Biel: qué se ha añadido, qué falta y qué tiene que grabar o pasar él.
+
+## Cómo llegar a Wikimedia Commons (16/11, arreglado)
+Los turnos programados **no** llegan a Commons (la red del contenedor lo bloquea: WebFetch da «url_not_found» y curl «connect_rejected»). **Sí llega el sandbox de Higgsfield** (`mcp__Higgsfield__sandbox_exec`). Procedimiento, siempre:
+1. En el sandbox: `curl -s https://raw.githubusercontent.com/biellopez77-png/proteam.instagram/main/tools/commons_sandbox.py -o cs.py`
+2. `python3 cs.py search "<consulta en inglés o con el nombre propio>" 15` → candidatas con tamaño, licencia y autor (solo ≥ 1000 px; `free` true = licencia libre).
+3. `python3 cs.py get "File:…" PROTEAM_<CATEGORIA>_<TEMA>_FOTO_NNN` → `bank/<nombre>.jpg` (1080 px de ancho, ≤ 250 KB) y `.json` con licencia, autor y página. Rechaza solo las licencias no libres.
+4. Para traerla al repositorio: otra llamada a `sandbox_exec` en primer plano con `image_paths: ["bank/<nombre>.jpg", …]` (máx. 2 fotos, 512 KB por llamada). Cada imagen vuelve como archivo en `~/.claude/projects/*/tool-results/mcp-Higgsfield-blob-*.jpg` (el resultado dice la ruta exacta): cópiala a `banco/fotos/<nombre>.jpg`, mírala y añade su fila a `banco/INVENTARIO.csv` con los datos del `.json`.
+Con esto ya no hay bloqueo por Commons: si una búsqueda no da nada, se cambia la consulta (nombre del club, competición o jugador en inglés) antes de dar el recurso por imposible.
