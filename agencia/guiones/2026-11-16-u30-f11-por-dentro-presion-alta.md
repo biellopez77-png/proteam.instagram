@@ -1,6 +1,6 @@
 # u30 · «ProTeam por dentro» 2 de 3 (fútbol 11) · «Sábado: presión alta. Martes: rondo.»
 
-- **Estado: listo para producir** (reserva) · **Crítica de Andrés: 77/100** (guion, escala 16/11) · riesgo de salto medio · crítica en `agencia/criticas/2026-11-16-u30-guion.md`
+- **Estado: producido** (u30, mié 18/11 9:30, montaje 81) · **Crítica de Andrés: 77/100** (guion, escala 16/11) · riesgo de salto medio · crítica en `agencia/criticas/2026-11-16-u30-guion.md`
 - **Deporte:** fútbol 11 de base (cadete, juvenil) · **Encargo:** t-20261116-01-por-dentro-fut-bq (el de fútbol; modelo: u29 de balonmano).
 - **Insight:** I-019 (`intel/insights/INSIGHTS.md`) · **Territorio:** lo que pasa entre partido y entreno (u03, u22, u25 en las últimas diez: 3/10 = 30 %, dentro del 40 %).
 - **Idea en una frase:** si el objetivo del sábado está escrito arriba de la semana, el martes deja de ser «lo de siempre»; en la app la semana lleva esa frase arriba y las actividades debajo.
