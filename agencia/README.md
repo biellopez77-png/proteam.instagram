@@ -18,17 +18,18 @@ Después, la producción (voz, montaje, render, música, panel y cola) se hace c
 ## Dónde se gestiona
 Todo se manda y se ve desde la oficina (https://claude.ai/artifact/CEbj9fsPQPUvVtRsp1S18o). Los agentes son las personas de la oficina (01 Dani, 02 Marta, 03 Pau, 04 Clara, 05 Andrés, 06 Samuel, 00 Laura) y las tareas programadas son sus turnos. Protocolo obligatorio: `../oficina/PROTOCOLO.md`.
 
-## Flujo
-1. Biel da un tema, objetivo o idea (o pide «MODO IDEAS / HOOKS / GUIONES / MEJORA / SERIES / ESTRATEGIA»).
-2. Content Lab propone hooks, conceptos y guiones → Biel elige o aprueba.
-3. Creative Direction recibe el guion aprobado y escribe el documento técnico (A–F).
-4. Resource Bank cruza el documento con el banco, busca lo que falta y deja la lista de pendientes (lo que tiene que grabar o pasar Biel).
-5. Critical Lab puntúa el guion (antes de producir) y el montaje final (antes de programar): por debajo de 75/100 no se publica; se corrige y se vuelve a puntuar.
-6. Producción monta el Reel, lo sube al panel y lo programa.
-7. Performance & Learning analiza resultados y críticas y actualiza `APRENDIZAJES.md`, que todos los agentes leen antes de crear.
+## Flujo (sin esperar el OK de Biel; detalle en `agentes/00_COMUN.md` §10)
+1. **Idea:** Content Lab parte de un insight con escena y entrega concepto, hooks puntuados y guion.
+2. **Puerta 1:** Critical Lab audita el guion (escala del 16/11; por debajo de 75 o con bloqueante, vuelve).
+3. **Dirección:** Creative Direction compara con los cinco últimos Reels y escribe el documento de producción (15 puntos).
+4. **Recursos:** Resource Bank localiza, clasifica o pide el material, con origen y licencia.
+5. **Producción:** voz, música, montaje y render con `REEL_ESTILO.md` y `tools/reelNN/`.
+6. **Análisis y puerta 2:** el vídeo real se analiza con `tools/video_intel.py`; Critical Lab lo audita con marcas de tiempo. Solo entonces se programa.
+7. **Aprendizaje:** Performance & Learning lee resultados a 24 y 48 h y actualiza `APRENDIZAJES.md`.
+Carruseles y Stories: Carousel Lab hace la pieza, con las mismas dos puertas. Lo que falte y solo pueda dar Biel queda como tarea «FALTA (Biel): …» en la oficina.
 
 ## Cómo se activan
-En cualquier conversación con Claude: «ACTIVAR AGENTE 1: PROTEAM CONTENT LAB» , «ACTIVAR AGENTE 2: PROTEAM CREATIVE DIRECTION» , «ACTIVAR AGENTE 3: PROTEAM RESOURCE BANK» , «ACTIVAR AGENTE 4: PROTEAM CAROUSEL LAB», «ACTIVAR AGENTE 5: PROTEAM CRITICAL LAB» o «ACTIVAR AGENTE 6: PROTEAM PERFORMANCE & LEARNING LAB» (son dos skills guardadas en la cuenta de Biel). Trabajan solos en sus turnos programados y también ejecutan los encargos que Biel deja en la oficina (turno de Laura, cada 2 h).
+En cualquier conversación con Claude: «ACTIVAR AGENTE 1: PROTEAM CONTENT LAB» , «ACTIVAR AGENTE 2: PROTEAM CREATIVE DIRECTION» , «ACTIVAR AGENTE 3: PROTEAM RESOURCE BANK» , «ACTIVAR AGENTE 4: PROTEAM CAROUSEL LAB», «ACTIVAR AGENTE 5: PROTEAM CRITICAL LAB» o «ACTIVAR AGENTE 6: PROTEAM PERFORMANCE & LEARNING LAB» (son seis skills guardadas en la cuenta de Biel, que cargan las instrucciones de `agentes/`). Trabajan solos en sus turnos programados y también ejecutan los encargos que Biel deja en la oficina (turno de Laura, cada 2 h).
 
 ## Base de conocimiento compartida (leer siempre)
 - `MARCA.md` — público, tono, identidad visual, oferta y prohibiciones.
@@ -39,3 +40,5 @@ En cualquier conversación con Claude: «ACTIVAR AGENTE 1: PROTEAM CONTENT LAB»
 - `HISTORIAL.md` — todo lo ya hecho (hooks, temas, enfoques, CTA, conceptos visuales). Se actualiza al entregar.
 - `../DIRECCION_CREATIVA.md` y `../REEL_ESTILO.md` — dirección visual y sistema de producción.
 - `../banco/INDICE.md` y `../banco/INVENTARIO.csv` — banco de recursos (fotos, vídeos, capturas reales).
+- `agentes/` y `skills/` — instrucciones completas y procedimientos de cada agente.
+- `../intel/` — sistema de vídeo, vídeos analizados, competencia, insights y características (`../intel/README.md`).
