@@ -753,7 +753,7 @@ _Mecanismo: contar la situación desde los ojos de otro (jugador, segundo, padre
 - **H0685** Tu cuerpo técnico tiene tres versiones distintas de lo que pasó el sábado. [análisis · contradicción · general]
 - **H0686** Así ve un jugador de dieciséis años una semana sin plan. [planificación · reconocimiento · general]
 - **H0687** Así verá tu temporada el entrenador que venga detrás de ti. [temporadas · duda · general]
-- **H0688** Las piernas de tus jugadores llevan la cuenta de la carga. Tú no. [rendimiento · sorpresa · general]
+- **H0688** Las piernas de tus jugadores llevan la cuenta de la carga. Tú no. [rendimiento · sorpresa · general] [reservado u06]
 - **H0689** El portero rival estudió tus penaltis. ¿Tú estudiaste los suyos? [análisis · curiosidad · fútbol]
 - **H0690** Para el delegado, el partido empieza el miércoles. [trabajo invisible · curiosidad · general]
 - **H0691** Mira tu semana como la miraría un staff de primera: ¿dónde está el plan? [planificación · curiosidad · general]
@@ -824,7 +824,7 @@ _Mecanismo: primero el resultado, después la causa escondida días o semanas an
 ## 16 · El diccionario del entrenador (estructura nueva)
 _Mecanismo: se cita una frase que todo entrenador ha dicho y se traduce lo que significa de verdad. Humor cómplice + verdad incómoda._
 
-- **H0751** «Ya lo miramos el lunes» significa que no lo vas a mirar. [análisis · complicidad · general]
+- **H0751** «Ya lo miramos el lunes» significa que no lo vas a mirar. [análisis · complicidad · general] [reservado u07]
 - **H0752** «Hoy hacemos algo suave» muchas veces significa «no lo he preparado». [planificación · complicidad · general]
 - **H0753** «Lo llevo en la cabeza» quiere decir que dentro de tres semanas no estará. [organización · complicidad · general]
 - **H0754** «Jugamos como entrenamos». ¿Y cómo entrenasteis? [entrenamiento · duda · general]
@@ -1125,3 +1125,15 @@ _Los 30 más fuertes según los 8 criterios (atención, identificación, clarida
 28. **H0421** Los equipos que progresan convierten el partido en el primer entreno de la semana. — Promete un método observable y concreto; conecta registro de partido con planificación del microciclo.
 29. **H0785** «No me da la vida». La frase más sincera de un entrenador de base. — Expresión coloquial española que genera complicidad inmediata; abre el tema del tiempo.
 30. **H0254** Ganar tapa errores. Perder solo los hace visibles. — Verdad compacta y discutible; base sólida para un Reel de análisis tras victorias.
+
+## Nuevos · 16/11 (Dani, turno de guiones por adelantado)
+- **H1001** [P1 espejo] El Barça también entrena con 14 un martes de lluvia. La diferencia es que lo tenía previsto. [planificación · identificación · fútbol]
+- **H1002** [P2 reloj] Te quedan 11 días para dejar de planificar en el coche. [oferta · urgencia · general] (ajustar los días a la fecha; solo hasta el 27/11)
+- **H1003** [P13 hora exacta] Hoy tu central ha corrido como si fuera viernes. Y es lunes. [carga · sorpresa · fútbol]
+- **H1004** [P4 lo que no se cuenta] Nadie te enseñó a hacer una convocatoria. Y la haces cada semana. [gestión de equipos · identificación · general]
+- **H1005** [P6 ganar no es mejorar] Ganaste de veinte. ¿Qué aprendió tu equipo? [análisis · duda · baloncesto]
+- **H1006** [P15 empezar por el final] El pitido final no acaba tu partido. Lo acaba lo que apuntas después. [análisis · reconocimiento · general]
+- **H1007** [P17 ¿y si…?] ¿Y si tus jugadores pudieran ver lo que entrenaron en septiembre? [evolución · curiosidad · general]
+- **H1008** [P19 inventario] Una pizarra, un silbato y treinta notas de voz sin escuchar. [organización · complicidad · general]
+- **H1009** [P20 dilema] ¿Repetir el ejercicio que salió bien o cambiarlo antes de que se aburran? [entrenamiento · duda · general]
+- **H1010** [P18 la pregunta que te hacen] «Míster, ¿qué tenemos mañana?». Y tú todavía no lo sabes. [planificación · frustración · balonmano]
