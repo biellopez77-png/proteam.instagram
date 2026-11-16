@@ -25,7 +25,7 @@ Los nombres pueden cambiar (campo `name` de `agents/<id>`): usa el que haya en l
 5. **Decisiones de Biel** sin atender (ver punto 4 de abajo) que afecten a tu turno: atiéndelas antes de producir.
 
 ## 2. DURANTE
-- Al empezar cada fase: `agents/<id>` → `status: "trabajando"`, `currentTask` con una frase («Guion u05», «Montaje u05»…). Tarea encargada → `state: "en-curso"`.
+- Al empezar cada fase: `agents/<id>` → `status: "trabajando"`, `currentTask` con una frase («Guion u05», «Montaje u05»…). Tarea encargada → `state: "en curso"` (así, con espacio: es como lo lee la oficina, aunque algún turno diga «en-curso»).
 - Escribe siempre con `if_version` (la `version` que acabas de leer); si falla, vuelve a leer y repite. Usa `update`, nunca `set`, sobre documentos que existen (para no borrar el aspecto ni las instrucciones de la persona).
 
 ## 3. SALIDA (siempre, aunque algo falle)
@@ -37,7 +37,7 @@ Los nombres pueden cambiar (campo `name` de `agents/<id>`): usa el que haya en l
 - **Si hace falta una decisión de Biel** (voz, dato dudoso, idea arriesgada): `approvals/a-<tema>` con `state: "pendiente"`, la pregunta en `title` y las opciones en `detail`; la persona queda en `status: "esperando"`.
 - **Log**: `log/l-<AAAAMMDDHHMMSS>-<id>` `{agentId, text, at, by}` por cada entrega (una línea, sin jerga).
 - **Aprendizajes**: `learnings/<id>` con `type: "hecho"` o `"hipotesis"` y `evidence`. Las reglas solo las pone Biel.
-- **Agenda**: `meta/office.agenda` = próximas 8 piezas `pending` de `queue.json` (`{when: "Lun 16/11 · 20:30", text, agentId}`) + «Cierra la lista de espera · Jue 27/11 · 23:59» hasta ese día. Comprueba el día de la semana con el calendario, no de memoria.
+- **Agenda**: `meta/office.agenda` = próximas 8 piezas `pending` de `queue.json` (`{when: "Lun 16/11 · 20:30", text, agentId}`) + «Cierra la lista de espera · Vie 27/11 · 23:59» hasta ese día. Comprueba el día de la semana con el calendario, no de memoria.
 
 ## 4. Decisiones de Biel sobre una pieza (`approvals/a-<id>` con `pieceId`)
 Una decisión está «sin atender» si `state` no es «pendiente» y no tiene `handledAt` (o `handledAt` < `decidedAt`).
