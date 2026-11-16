@@ -60,3 +60,10 @@ Decisiones fijas: fecha de campaña «hasta el 27 de noviembre» (rótulo HASTA 
 - Rótulos y CTAs hablan de «tu equipo». CTA estándar: «Comenta tu deporte, tu categoría y tus días y te preparo la semana».
 - La prospección escribe a escuelas y coordinadores de los tres deportes (máx. 6 emails/día, 2 por deporte).
 - Nadie crea tareas para Biel ni le pide confirmación: si falta algo, se decide lo razonable y se hace.
+
+## Cambio del 16/11 (14:30): plan de alcance (datos de 30 días)
+- Reels con dato, partido real o escena concreta en el segundo 0: 1.500–2.000 vistas. Reels de marca o motivación: 25–200. Carruseles: alcance ~10. Compartidos: ~0.
+- Prohibidos los Reels de marca o motivación; la campaña solo va en el cierre.
+- Cada pieza acaba con pregunta o reto para el cuerpo técnico; caption con «Envíaselo a tu segundo entrenador» + «Comenta tu deporte, tu categoría y tus días y te preparo la semana».
+- Carruseles solo martes y viernes 19:00; el resto de días Clara publica un Reel de datos (8–15 s) a las 11:00. Una Story al día (13:00).
+- En cada Reel publicado dejamos un primer comentario con el CTA (turno «Respuestas en Instagram»).
