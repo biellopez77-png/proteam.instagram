@@ -1,2 +1,3 @@
 id,marca,tipo,formato,tema,fecha_analisis,fuente,archivo,sha256,duracion_s,resolucion,fps,cortes,modo,cobertura,ruta
 u04,proteam,propio,reel,"Tu mejor entreno no lo podrías repetir (v2, correcciones de la auditoría)",2026-11-16,queue.json u04,reels/u04-mejor-entreno.mp4,f19a309399340ecd5d6c5c5960dcc55949c47e7cb96db1d35834b1ac418b00eb,24.433,1080x1920,30.0,7,detalle,8/8 láminas · 17.1 % de fotogramas,intel/videos/u04
+u17,proteam,propio,reel,Reel de datos: defensa en zona prohibida en minibasket (JEEB Barcelona),2026-11-16,,reels/u17-defensa-zona-minibasket.mp4,6f7fa95522bdd975435811f6b278033dd2b49321e64dbbc57a827482700c7b54,13.4,1080x1920,30.0,4,detalle,5/5 láminas · 17.7 % de fotogramas,intel/videos/u17

@@ -2715,5 +2715,21 @@
   "when": "2026-11-20T11:00:00+01:00",
   "cover": null,
   "note": "Agente 04 · encargo t-20261116-04-rotacion-mie-dom · idea 7 (I-008) · identificación + guardados/envíos al coordinador · norma verificada en el PDF del IMD de Sevilla (apdos. 10 y 12) · Andrés puerta 1 75 con bloqueante → corregido; final 83 (agencia/criticas/2026-11-16-c11-*.md); reprogramada desde la oficina"
+ },
+ {
+  "id": "u17",
+  "when": "2026-11-16T22:30:00+01:00",
+  "kind": "reel",
+  "files": [
+   "reels/u17-defensa-zona-minibasket.mp4"
+  ],
+  "cover": "covers/u17-defensa-zona-minibasket.jpg",
+  "caption": "¿Defiendes en zona con tu equipo de minibasket? En los Juegos Escolares de Barcelona no se puede. 🏀\nReglamento de minibàsquet 2023-24 (art. 4.4): «No és permès realitzar cap tipus de defensa en zona». Primero aviso al entrenador; si sigue, 2 tiros libres y saque de banda. En otras federaciones la norma cambia.\nEnvíaselo a tu segundo entrenador: ¿cuántos de los vuestros defienden solos al que bota?\nComenta tu deporte, tu categoría y tus días y te preparo la semana en la app de ProTeam. Lista de espera hasta el 27 de noviembre: 3 meses gratis. Enlace en la bio.\n\n#baloncesto #minibasket #entrenadordebaloncesto #baloncestoformativo #proteam",
+  "status": "pending",
+  "campana": "unrespiro",
+  "share_to_feed": false,
+  "note": "u17 · turno de Reels 16/11 15:37: Reel de datos sin voz (baloncesto). Sustituye a u08 porque el audio de ElevenLabs no se pudo traer (ficha a-audio-elevenlabs). Música sintetizada en el turno. Fuente: JEEB minibàsquet 2023-24 art. 4.4.",
+  "score": "78",
+  "title": "¿Defiendes en zona? En Barcelona, no se puede."
  }
 ]

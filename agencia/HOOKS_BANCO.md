@@ -665,7 +665,7 @@ _Mecanismo: día + hora + escena. El espectador está dentro del momento antes d
 - **H0601** Domingo, 23:40. La semana todavía no existe. [planificación · identificación · general]
 - **H0602** Viernes, 21:15. Faltan dos nombres en la convocatoria y nadie contesta. [organización · frustración · general]
 - **H0603** Lunes, 8:00. Te acuerdas del gol del último minuto. ¿Y del resto del partido? [análisis · duda · general]
-- **H0604** Martes, 18:55. Cinco minutos para el entreno y faltan siete jugadores. [improvisación · frustración · general]
+- **H0604** [usado u18] Martes, 18:55. Cinco minutos para el entreno y faltan siete jugadores. [improvisación · frustración · general]
 - **H0605** Sábado, 12:47. Descanso. Perdéis de dos y tienes quince minutos. [partidos · urgencia · fútbol]
 - **H0606** Jueves, 00:30. Viendo el vídeo del rival con el volumen al mínimo. [análisis · identificación · general]
 - **H0607** 1 de julio. La pretemporada empieza en seis semanas y ya vas tarde. [planificación · urgencia · general]
