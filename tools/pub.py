@@ -5,6 +5,9 @@
   python3 tools/pub.py done ID MEDIA  -> marca publicada, escribe log.md
   python3 tools/pub.py fail ID "error"
   python3 tools/pub.py late           -> reprograma piezas con más de 6 h de retraso al siguiente hueco libre
+  python3 tools/pub.py hold ID "motivo"       -> la saca de la cola (borrador) porque Biel ha pedido cambios en la oficina
+  python3 tools/pub.py cancel ID "motivo"     -> la cancela (Biel la ha rechazado en la oficina)
+  python3 tools/pub.py requeue ID ISO         -> la vuelve a programar (pending) en esa fecha, ya corregida
   python3 tools/pub.py sheet          -> filas del Plan que deben quedar como Publicado/Fallido (id, fecha, hora, media_id)
 """
 import json, sys, os
@@ -75,6 +78,16 @@ def late():
     save(q)
 
 
+def office(iid, status, val):
+    q = load(); i = next(x for x in q if x['id'] == iid)
+    if i['status'] == 'published': print('ya publicada', iid); return
+    if status == 'pending':
+        datetime.fromisoformat(val); i['when'] = val; i['note'] = (i.get('note') or '') + '; reprogramada desde la oficina'
+    elif status == 'cancelled': i['cancel_reason'] = val
+    else: i['note'] = (i.get('note') or '') + '; oficina: ' + val
+    i['status'] = status; save(q); print('ok', iid, status)
+
+
 def sheet():
     for i in load():
         if i['status'] in ('published', 'failed'):
@@ -88,3 +101,6 @@ if __name__ == '__main__':
     elif c == 'fail': mark(sys.argv[2], 'failed', sys.argv[3])
     elif c == 'late': late()
     elif c == 'sheet': sheet()
+    elif c == 'hold': office(sys.argv[2], 'borrador', sys.argv[3])
+    elif c == 'cancel': office(sys.argv[2], 'cancelled', sys.argv[3])
+    elif c == 'requeue': office(sys.argv[2], 'pending', sys.argv[3])

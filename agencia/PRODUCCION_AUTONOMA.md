@@ -3,6 +3,9 @@
 Lo usa la tarea programada «Agencia ProTeam · producir Reel» y cualquier sesión que tenga que sacar un Reel sin Biel.
 Plantilla técnica: `tools/reel2/` (Reel 2, aprobado por Biel). Cada Reel nuevo va en su propia carpeta: `tools/reelNN/`.
 
+## Antes de nada: la oficina
+Este paso a paso es el turno de Dani (01), Marta (02), Pau (03) y Andrés (05). Aplica `oficina/PROTOCOLO.md` entero: ENTRADA antes del punto 0 (reglas, instrucciones, pausa, encargos y decisiones de Biel), estado de cada persona en cada fase y SALIDA al terminar (ficha de revisión de la pieza, log, agenda).
+
 ## 0. Hueco y número
 - `queue.json`: busca el próximo hueco de Reel libre (13:30 o 20:30, hora de Madrid) que empiece al menos 6 h después de ahora y que no tenga ya un Reel `pending`. Las piezas `borrador` no ocupan hueco.
 - Id: `uNN`, el siguiente libre después del mayor `u` que haya.

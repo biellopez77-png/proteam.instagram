@@ -13,6 +13,9 @@ Seis agentes que trabajan como dos departamentos de la misma productora:
 
 Después, la producción (voz, montaje, render, música, panel y cola) se hace con el sistema de `REEL_ESTILO.md` y `tools/reelN/`.
 
+## Dónde se gestiona
+Todo se manda y se ve desde la oficina (https://claude.ai/artifact/CEbj9fsPQPUvVtRsp1S18o). Los agentes son las personas de la oficina (01 Dani, 02 Marta, 03 Pau, 04 Clara, 05 Andrés, 06 Samuel, 00 Laura) y las tareas programadas son sus turnos. Protocolo obligatorio: `../oficina/PROTOCOLO.md`.
+
 ## Flujo
 1. Biel da un tema, objetivo o idea (o pide «MODO IDEAS / HOOKS / GUIONES / MEJORA / SERIES / ESTRATEGIA»).
 2. Content Lab propone hooks, conceptos y guiones → Biel elige o aprueba.
@@ -23,7 +26,7 @@ Después, la producción (voz, montaje, render, música, panel y cola) se hace c
 7. Performance & Learning analiza resultados y críticas y actualiza `APRENDIZAJES.md`, que todos los agentes leen antes de crear.
 
 ## Cómo se activan
-En cualquier conversación con Claude: «ACTIVAR AGENTE 1: PROTEAM CONTENT LAB» , «ACTIVAR AGENTE 2: PROTEAM CREATIVE DIRECTION» , «ACTIVAR AGENTE 3: PROTEAM RESOURCE BANK» , «ACTIVAR AGENTE 4: PROTEAM CAROUSEL LAB», «ACTIVAR AGENTE 5: PROTEAM CRITICAL LAB» o «ACTIVAR AGENTE 6: PROTEAM PERFORMANCE & LEARNING LAB» (son dos skills guardadas en la cuenta de Biel). No son agentes autónomos que trabajen solos: se activan en una conversación o desde una tarea programada.
+En cualquier conversación con Claude: «ACTIVAR AGENTE 1: PROTEAM CONTENT LAB» , «ACTIVAR AGENTE 2: PROTEAM CREATIVE DIRECTION» , «ACTIVAR AGENTE 3: PROTEAM RESOURCE BANK» , «ACTIVAR AGENTE 4: PROTEAM CAROUSEL LAB», «ACTIVAR AGENTE 5: PROTEAM CRITICAL LAB» o «ACTIVAR AGENTE 6: PROTEAM PERFORMANCE & LEARNING LAB» (son dos skills guardadas en la cuenta de Biel). Trabajan solos en sus turnos programados y también ejecutan los encargos que Biel deja en la oficina (turno de Laura, cada 2 h).
 
 ## Base de conocimiento compartida (leer siempre)
 - `MARCA.md` — público, tono, identidad visual, oferta y prohibiciones.
