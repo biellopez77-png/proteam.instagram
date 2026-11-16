@@ -286,7 +286,7 @@ _Mecanismo: tensión entre el marcador inmediato y el progreso real._
 
 - **H0251** Ganaste el sábado. ¿Pero tu equipo es mejor que hace un mes? [progresión · duda · general]
 - **H0252** Puedes ganar jugando peor que la semana pasada y no darte cuenta. [análisis · sorpresa · general]
-- **H0253** Un 3-0 puede esconder más problemas que un 0-1. [análisis · contradicción · fútbol]
+- **H0253** Un 3-0 puede esconder más problemas que un 0-1. [análisis · contradicción · fútbol] [usado u05]
 - **H0254** Ganar tapa errores. Perder solo los hace visibles. [análisis · contradicción · general]
 - **H0255** ¿Celebras las victorias o las analizas? [análisis · duda · general]
 - **H0256** En alevines el marcador es lo que menos importa. ¿Por qué lo miras tanto? [progresión · contradicción · general]
@@ -1111,7 +1111,7 @@ _Los 30 más fuertes según los 8 criterios (atención, identificación, clarida
 14. **H0001** ¿Crees que Guardiola decide el entreno del martes en el aparcamiento? — Referente reconocible en forma de pregunta, sin atribuirle nada; contraste cómico con la improvisación propia.
 15. **H0802** Imagina que te pones enfermo el viernes. ¿Tu segundo podría hacer la convocatoria? — Escenario hipotético muy plausible que destapa la dependencia de la cabeza del primer entrenador.
 16. **H0209** Todos los años cambias de libreta. Nunca cambias de sistema. — Bucle reconocible en dos frases; la palabra «sistema» enlaza con los Reels de campaña sin repetirlos.
-17. **H0253** Un 3-0 puede esconder más problemas que un 0-1. — Marcadores concretos, contradicción inmediata; abre el contraste ganar/mejorar con autoridad.
+17. **H0253** Un 3-0 puede esconder más problemas que un 0-1. — Marcadores concretos, contradicción inmediata; abre el contraste ganar/mejorar con autoridad. [usado u05]
 18. **H0688** Las piernas de tus jugadores llevan la cuenta de la carga. Tú no. — Cambio de punto de vista potente y físico; justifica controlar la carga sin cifras inventadas.
 19. **H0901** Tres conos, dos petos y una idea que no apuntaste. — Ritmo de inventario muy locutable; el giro final convierte material de entreno en problema de organización.
 20. **H0870** «¿Cuál es tu metodología?», en la entrevista con el club nuevo. — Situación de alto riesgo real (cambio de club); genera urgencia de tener la metodología escrita.
