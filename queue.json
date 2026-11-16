@@ -2514,25 +2514,22 @@
  },
  {
   "id": "c08",
-  "when": "2026-11-16T11:00:00+01:00",
+  "when": "2026-11-17T19:00:00+01:00",
   "kind": "carousel",
   "files": [
    "feed/c08-1.jpg",
    "feed/c08-2.jpg",
    "feed/c08-3.jpg",
    "feed/c08-4.jpg",
-   "feed/c08-5.jpg",
-   "feed/c08-6.jpg",
-   "feed/c08-7.jpg",
-   "feed/c08-8.jpg"
+   "feed/c08-5.jpg"
   ],
-  "caption": "Haz la prueba: imagina que mañana no llegas al entreno.\n¿Tu ayudante sabría qué toca, quién no viene y qué salió del último partido? Si la respuesta es «más o menos», no es culpa de tu ayudante. Es que el equipo vive en tu cabeza.\n\nEn la diapositiva 7 tienes la hoja de relevo: cinco líneas para rellenar al planificar la semana. Guárdala.\n\nY mándaselo a tu segundo entrenador. A ver qué contesta. 👇\n\nSi quieres tenerlo todo en un sitio: lista de espera de la app de ProTeam, enlace en la bio. Antes del 28 de noviembre, 3 meses gratis.\n\nKerr y Walton (2015-16): datos de Associated Press.\n\n#entrenadores #futbolbase #baloncesto #balonmano #cuerpotecnico",
+  "caption": "39 victorias y 4 derrotas con el entrenador de baja. La pregunta es para ti: si mañana no llegas al entreno, ¿tu ayudante sabría qué toca?\n\nEn la diapositiva 4 tienes la hoja de relevo: cinco líneas para rellenar al planificar la semana. Guárdala.\n\nY mándaselo a tu segundo entrenador. A ver qué contesta. 👇\n\nSi quieres tenerlo todo en un sitio: lista de espera de la app de ProTeam, enlace en la bio. Antes del 28 de noviembre, 3 meses gratis.\n\nKerr y Walton (Warriors, 2015-16): datos de Associated Press.\n\n#entrenadores #futbolbase #baloncesto #balonmano #cuerpotecnico",
   "cover": null,
-  "status": "borrador",
+  "status": "pending",
   "campana": "carrusel",
-  "note": "Agente 04 · «La prueba del relevo» · identificación · crítica 83/100 (agencia/criticas/2026-11-15-c08-final.md); oficina: cambios: más imagen, menos texto, estructura hook → desarrollo → CTA (Biel en la oficina)",
-  "score": "83",
-  "title": "Si mañana no puedes ir al entreno, ¿alguien sabría qué toca?"
+  "note": "Agente 04 · «La prueba del relevo» v2 (corrección de Biel 16/11): 5 diapositivas con foto, menos texto, hook → bucle → herramienta → CTA · crítica 80/100 (agencia/criticas/2026-11-16-c08-v2.md). Pasa al martes 17/11 a las 19:00 (las 11:00 son de c10).",
+  "score": "80",
+  "title": "39 victorias, 4 derrotas. Sin su entrenador."
  },
  {
   "id": "c08s",

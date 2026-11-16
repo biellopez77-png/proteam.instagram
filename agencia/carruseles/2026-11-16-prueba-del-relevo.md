@@ -39,3 +39,15 @@ Ver `queue.json` (id c08).
 ## 6. Control de calidad
 Hook claro y concreto ✔ · promesa entendida (una prueba y una herramienta) ✔ · cada diapositiva aporta (se quitó la de contexto) ✔ · progresión señal→causa→caso→herramienta ✔ · útil (hoja de relevo) ✔ · lectura fácil ✔ · variedad visual coherente ✔ · cierre responde al hook ✔ · CTA coherente con identificación (compartir) ✔ · no se parece a carruseles anteriores (datos) ✔.
 Crítica: `agencia/criticas/2026-11-15-c08-carrusel.md` (74 → 82) y `2026-11-15-c08-final.md` (83/100).
+
+## 7. Versión 2 (16/11, corrección de Biel)
+Biel: «haz el post atractivo a primera vista, con buena estructura (hook, bucle, CTA); hay mucho texto y 0 imágenes».
+Rehecho en 5 diapositivas, todas con foto del banco y una sola idea:
+| # | Función | Texto | Foto |
+|---|---|---|---|
+| 1 | Hook | NBA · 2015-16 / «39 victorias. 4 derrotas. *Sin su entrenador.*» / «Steve Kerr, de baja. Dirigía su ayudante.» / Fuente: Associated Press, 26/04/2016 | Kerr (`ENTRENADOR_REFERENTE_FOTO_008`) |
+| 2 | Bucle: la pregunta pasa al lector | «¿Y si mañana faltas *tú?*» / «¿Tu ayudante sabría qué toca?» | `STAFF_ENTRENADORES_CONVERSAN_FOTO_001` |
+| 3 | Problema | El plan · Quién falta · Qué corregir / «Si todo está en tu cabeza, *nadie puede relevarte.*» | `ENTRENADOR_BANDA_PENSATIVO_FOTO_001` |
+| 4 | Herramienta guardable | «La hoja de *relevo*» · Cinco líneas. Dos minutos antes del entreno. · 01 Objetivo de la semana · 02 Sesión de hoy, con tiempos · 03 Quién no está y por qué · 04 Qué dejó el último partido · 05 A quién vigilar hoy | `STAFF_PIZARRA_TIEMPO_MUERTO_FOTO_001` |
+| 5 | Cierre que vuelve al hook + CTA | «Su equipo sabía qué tocaba sin él. *¿Y el tuyo?*» / «Mándaselo a tu segundo entrenador →» / «Todo el equipo en un mismo sitio: la app de ProTeam. Lista de espera en la bio.» | `STAFF_CHARLA_ENTRENAMIENTO_FOTO_001` |
+La v1 queda en `tools/carrusel08/index-v1.html`. Crítica: `agencia/criticas/2026-11-16-c08-v2.md` (80/100). Programado: martes 17/11 · 19:00 (a las 11:00 sale c10).
