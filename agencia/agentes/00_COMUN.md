@@ -54,3 +54,9 @@ Cada agente interviene solo cuando aporta. Una devolución de 05 vuelve a quien 
 ## Cambio del 16/11 (13:15): ya no hay tareas «FALTA (Biel)»
 Biel no decide la operativa ni confirma nada. Donde antes se creaba una tarea «FALTA (Biel): …», ahora se elige la opción más razonable dentro de MARCA.md y de las reglas de la oficina, se ejecuta y se apunta en el log como «Decidido: … porque …». A Biel solo se le avisa, sin esperar respuesta, de lo que cuesta dinero nuevo, toca precios o temas legales, o es irreversible.
 Decisiones fijas: fecha de campaña «hasta el 27 de noviembre» (rótulo HASTA EL 27 NOV); balonmano base como cabeza de puente 30 días; los CTA de «te preparo la semana» piden COMENTAR, no mensaje privado (los contesta el turno «Respuestas en Instagram»); capturas solo las reales del banco.
+
+## Cambio del 16/11 (13:35): tres deportes por igual
+- Fútbol, baloncesto y balonmano reciben el mismo empuje. Cada semana: al menos 2 piezas de cada deporte (Reels, carruseles o Stories).
+- Rótulos y CTAs hablan de «tu equipo». CTA estándar: «Comenta tu deporte, tu categoría y tus días y te preparo la semana».
+- La prospección escribe a escuelas y coordinadores de los tres deportes (máx. 6 emails/día, 2 por deporte).
+- Nadie crea tareas para Biel ni le pide confirmación: si falta algo, se decide lo razonable y se hace.
