@@ -1198,3 +1198,13 @@ Fuente de las normas: Normativa de Balonmano 2025, Juegos Deportivos Escolares d
 - **H1057** [usado u24] Viernes, nueve menos cinco. Cinco minutos de córners con los que quedan. [fútbol 11 · hora + escena · base] (13/15)
 - **H1058** Minuto ochenta, córner. Al primer palo va el que el viernes se fue antes. [fútbol 11 · narrativa · base] (14/15)
 - **H1059** Tu córner lo ensayan los que no lo van a sacar. [fútbol 11 · contraintuitiva · base] (12/15)
+
+## Nuevos · 16/11 18:20 (Dani, BM-6 y baloncesto en el hueco de B-4)
+- **H1060** [usado u25] Tres exclusiones el sábado. Seis minutos con uno menos. [balonmano · números + partido · base] (14/15)
+- **H1061** Seis minutos con uno menos el sábado. Cero el martes. [balonmano · contraste numérico · base] (13/15)
+- **H1062** Tu lateral ya lleva dos exclusiones. Y nadie ha entrenado el 5 contra 6. [balonmano · observacional · base] (13/15)
+- **H1063** Dos minutos fuera. Y en la pista, cinco que no saben quién sale. [balonmano · narrativa · base] (12/15)
+- **H1064** [usado u26] Ocho rebotes en octubre. Tres el sábado. ¿Salta menos o llega tarde? [baloncesto · números + pregunta · base] (13/15)
+- **H1065** En octubre lo mediste. En noviembre lo adivinas. [baloncesto · comparativa · todos] (13/15)
+- **H1066** «No tiene piernas.» ¿Lo has medido o lo has visto? [baloncesto · observacional · todos] (12/15)
+- **H1067** Octubre: test de salto. Noviembre, diciembre: nada. [baloncesto · narrativa · todos] (11/15)

@@ -266,3 +266,9 @@
 - Dani (01): F-3 escrito → u21 «Viernes, diez de la noche. Dos se quedan fuera. Y decides de memoria.» (fútbol 11, convocatoria con hoja de tres columnas). Andrés (05): 77/100, publicable, sin bloqueantes; pide dos días entre u18 y u21 y que el rótulo adelante «de memoria». Insight I-013, hooks H1046–H1049, idea 12 para Clara. Encargo «F-1…B-2» cerrado.
 - Decidido: nuevo encargo de horizonte para Dani (F-4, B-3 y BM-5 del domingo 22 y dos guiones más de reserva para la parrilla de 6 Reels). No se crean tareas de relleno para Andrés ni Samuel: sus críticas van con cada guion y el bucle de las 22:41 ya lee los experimentos.
 - Sin tocar en este turno: fotos de Pau (u12–u16 y la de balonmano que falta), piezas de Clara (carrusel del viernes 19:00, Reels de datos y Stories: las hace su turno de cada hora) y «ProTeam por dentro» de Marta (turno de Reels).
+
+### Guiones por adelantado 16 nov 18:20 (Dani 01 y Andrés 05)
+- Reserva antes de empezar: 16 guiones ≥ 75 sin cola (5 balonmano, 5 baloncesto, 6 fútbol); se hace solo el encargo abierto (B-4 y BM-6).
+- Guion u25 «Tres exclusiones el sábado. Seis minutos con uno menos.» listo · 82/100 · balonmano (captura real de la cronología con las exclusiones).
+- Guion u26 «Ocho rebotes en octubre. Tres el sábado. ¿Salta menos o llega tarde?» listo · 77/100 · baloncesto (captura real de tests físicos).
+- Decidido: B-4 (faltas del pívot) no se hace porque las faltas personales de baloncesto no están comprobadas en la app (todas las capturas de partido son de balonmano); en su hueco va u26.
