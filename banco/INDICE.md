@@ -17,11 +17,11 @@ Estado: `disponible`, `usada en uNN` o `pendiente`.
 | Categoría | Recursos |
 |---|---|
 | ENTRENADOR | 51 |
-| EQUIPO | 18 |
+| EQUIPO | 22 |
 | INSTALACION | 12 |
-| JUGADOR | 20 |
+| JUGADOR | 23 |
 | OBJETO | 6 |
-| PARTIDO | 4 |
+| PARTIDO | 5 |
 | PRODUCTO | 38 |
 | STAFF | 15 |
 
@@ -33,6 +33,7 @@ Fotos de 1080 px de ancho o más, cara reconocible en el tercio superior y aire 
 - **Nuevas del 16/11, 19:10 (Commons, licencia leída, miradas):** balonmano `PROTEAM_PARTIDO_EXCLUSION_ARBITRO_FOTO_001` (árbitro con los dos dedos, u25; con ella el banco de balonmano llega a 20 de 20). Baloncesto: `PROTEAM_PARTIDO_TIRO_LIBRE_NBA_FOTO_001` (u16), `PROTEAM_EQUIPO_TIEMPO_MUERTO_SELECCION_FOTO_001` y `PROTEAM_EQUIPO_TIEMPO_MUERTO_ACB_FOTO_001` (u20), `PROTEAM_JUGADOR_PIVOT_EUROLIGA_FOTO_001` (u26), `PROTEAM_EQUIPO_ENTRENAMIENTO_SELECCION_BALONCESTO_FOTO_001` (u13) y `PROTEAM_STAFF_BANQUILLO_NBA_FOTO_001` (u12). Ficha: `agencia/recursos/2026-11-16-fotograma0-fotos-nuevas.md`.
 - **Nuevas del 16/11, 20:00 (Commons, licencia leída, miradas):** baloncesto `PROTEAM_EQUIPO_ENTRENAMIENTO_NBA_FOTO_001` (entrenamiento del All-Star de la NBA 2022, vertical; u13, segunda opción). Fútbol: `PROTEAM_INSTALACION_CANTERA_BARCA_FOTO_001` (campos de la cantera del Barça con porterías pequeñas, vertical 1080×1920; u14), `_002` (la misma entera en horizontal) y `PROTEAM_INSTALACION_LA_MASIA_FOTO_001` (letrero «LA MASIA»; u14). Sin menores reconocibles en ninguna.
 - **Nuevas del 16/11, 21:00 (Commons, licencia leída, miradas):** fútbol `PROTEAM_JUGADOR_CORNER_BANDERIN_FOTO_001` (córner junto al banderín, Barça 2009; u24) y `PROTEAM_JUGADOR_CORNER_CHAMPIONS_FOTO_001` (córner en el Bernabéu, Champions 2010; u24). Balonmano: `PROTEAM_JUGADOR_PORTERO_SOLO_FOTO_001` (portero del Barça) y `_002` (portero del Kiel), los dos solos y en vertical (u23). Baloncesto: `PROTEAM_EQUIPO_BANQUILLO_NBA_HIELO_FOTO_001` (banquillo de la NBA con hielo en las rodillas; u22). Ficha: `agencia/recursos/2026-11-16-fotograma0-u22-u23-u24.md`.
+- **Nuevas del 16/11, 23:55 (Commons, licencia leída, miradas):** baloncesto `PROTEAM_JUGADOR_REBOTE_NBA_FOTO_001` (pívot de los Lakers cerrando el rebote, vertical), `_002` (balón en el aire junto al aro) y `_003` (rebote cogido y rival que llega tarde, vertical), las tres para u26; `PROTEAM_EQUIPO_CALENTAMIENTO_SELECCION_USA_FOTO_001` (selección de EE. UU. tirando en media pista, u13); `PROTEAM_EQUIPO_BANQUILLO_SELECCION_USA_FOTO_001` y `PROTEAM_EQUIPO_TIEMPO_MUERTO_NBA_FOTO_001` (arranque del «ProTeam por dentro» de baloncesto). Fútbol: `PROTEAM_EQUIPO_ENTRENAMIENTO_REAL_MADRID_FOTO_001` (calentamiento en el Bernabéu, vertical; arranque de u30). Balonmano: `PROTEAM_PARTIDO_ARBITRO_EHF_FOTO_001` (árbitras de la EHF ante el vídeo; u25, opción 2).
 - Todas son de Wikimedia Commons con licencia leída en la fuente (CC BY o CC BY-SA: atribución al publicar). Referentes como ejemplo, nunca como aval.
 
 ## Huecos por cubrir (prioridad)

@@ -321,3 +321,11 @@
 - Parche 0006 (guion u30) subido a GitHub.
 - Sin tocar en este turno: las dos tareas de fotos de Pau (siguen pendientes para el turno siguiente) y los «por dentro» de fútbol y baloncesto de Marta.
 - Horizonte de 15 días: nada nuevo para Andrés ni Samuel (no hay críticas pendientes; Samuel confirma u04 mañana con 24 h).
+
+## 16/11 · 23:49 · Encargos (Laura y Pau)
+- Pau: ocho fotos nuevas de Commons (licencia leída, miradas una a una). u26: tres de rebote en la NBA (pívot de los Lakers cerrando el rebote, balón en el aire junto al aro, y rebote cogido con el rival que llega tarde). u13: selección de EE. UU. tirando en media pista. u25: árbitras de la EHF ante el vídeo (segunda opción). «Por dentro» de fútbol (u30): calentamiento del Real Madrid en el Bernabéu, vertical. «Por dentro» de baloncesto: banquillo de la selección de EE. UU. y tiempo muerto de los Knicks. Ficha: agencia/recursos/2026-11-16-fotograma0-u13-u25-u26-por-dentro.md. Las dos tareas de fotos, cerradas.
+- Commons desde el turno sigue dando «429»; se usó el sandbox de Higgsfield. La herramienta falló en cuatro archivos (miniatura de 1080 px: errores 404 y 503) y se bajaron por otra dirección de Commons con el mismo control de licencia.
+- Descartadas: entreno del Barça de 2012 (solo se ve la grada) y árbitras con banderas de la EHF (pequeña, 960 px). Sin resultado: jugador de balonmano saliendo excluido; u25 se queda con dos opciones, no tres.
+- Decidido: la foto del Real Madrid es un calentamiento con público aunque Commons la titule «entrenamiento»; queda escrito para que el rótulo no diga «entreno del martes».
+- Sin tocar: el «por dentro» de fútbol (u30) ya tiene guion (77) y foto; lo monta el turno de Reels de las 0:37 para no pisarse con él (ya pasó con u28 y u29). El de baloncesto sigue esperando una captura real de baloncesto.
+- Horizonte de 15 días: nada nuevo para Dani (19 guiones en reserva y turno cada hora), Andrés (sin críticas pendientes) ni Samuel (confirma u04 mañana con 24 h).
