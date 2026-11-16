@@ -55,6 +55,8 @@ put(T['aquel'] - .1, whoosh(.45, 300, 2500), .14); put(T['aquel'] + .1, tick(.03
 put(T['todo'] - .1, swish(.25), .08)
 # rotulador: pases, tiempos, parejas
 for i in range(3): put(T['ejer'] - .05 + i * .18, paper(.22), .16)
+put(T['ej'] - .1, paper(.3), .16)
+for s0 in (T['ejer'], T['tie'], T['par']): put(s0, tick(.025, 2600), .12)
 put(T['tie'] - .05, tick(.03, 1800), .2); put(T['tie'], thump(.2), .1)
 for i in range(4): put(T['par'] - .05 + i * .1, paper(.2), .13)
 # se borra: viento que se apaga
@@ -70,7 +72,7 @@ web = T['une'] - .05; tap = web + .62
 put(web - .05, whoosh(.4, 2500, 400), .14); put(web + .24, tick(.03, 1500), .18)
 for i in range(8): put(web + .27 + i * .03, tick(.012, 3000), .06)
 put(tap, tick(.03, 1300), .22); put(tap + .22, shimmer(.4), .05)
-put(T['n28'] - .3, thump(.4), .3); put(T['n28'] - .2, tick(.03, 2000), .18); put(T['nov'], swish(.25), .1)
+put(T['n28'] + .26, thump(.4), .3); put(T['n28'] + .3, tick(.03, 2000), .18)
 put(T['cons'], whoosh(.4, 300, 2500), .14); put(T['tres'] - .2, thump(.5), .42); put(T['tres'] - .15, shimmer(.6), .05)
 out = out[:int(SR * DUR)]
 out = out / max(1e-9, np.abs(out).max()) * .85

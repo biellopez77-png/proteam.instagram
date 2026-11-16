@@ -159,16 +159,18 @@ const LINKS = [sp('M475 420 L 595 400', 7), sp('M1095 390 L 1085 410', 7)];
 const CHIP = mk('div', 'position:absolute;left:740px;top:430px;padding:14px 24px;background:#2f6bff;border-radius:16px;font-family:M;font-weight:800;font-size:52px;color:#fff;display:none;letter-spacing:-.02em;box-shadow:0 10px 30px rgba(0,0,0,.35)', '⏱ 4 × 6′', CARD);
 const tOCT = tx(`<div class="kick">${M('UN DÍA DE')}</div>${M('OCTUBRE')}`, 330, 'M8', 120);
 const tENC = tx(M('<span class="S blue">todo encajó.</span>'), 1330, '', 150);
-const LBL = ['EJERCICIO', 'TIEMPOS', 'PAREJAS'].map((s, i) => { const d = tx(M(s), 1325 + i * 92, 'M8', 76); d.style.letterSpacing = '.02em'; return d; });
-const tAPS = tx(M('APÚNTALO SIEMPRE:'), 1262, 'M7', 42); tAPS.style.letterSpacing = '.16em'; tAPS.style.color = '#9db8ff';
+const FICHA = mk('div', 'position:absolute;left:110px;top:1255px;width:860px;height:350px;background:#fbfaf6;border-radius:22px;box-shadow:0 30px 70px rgba(0,0,0,.45);display:none;overflow:hidden');
+mk('div', 'position:absolute;left:48px;top:30px;font-family:M;font-weight:800;font-size:25px;letter-spacing:.12em;color:#8a877e', 'APUNTA DESPUÉS DE CADA BUEN ENTRENO', FICHA);
+mk('div', 'position:absolute;left:48px;right:48px;top:78px;height:3px;background:#e4e0d4', '', FICHA);
+const ROWS = ['Ejercicio', 'Tiempos', 'Parejas'].map((w, i) => { const r = mk('div', `position:absolute;left:48px;top:${100 + i * 74}px;font-family:M;font-weight:800;font-size:58px;letter-spacing:-.03em;color:#0d0f14`, `<span style="color:#2f6bff;margin-right:22px">${i + 1}</span>${w}`, FICHA);
+  const ck = mk('div', 'position:absolute;right:52px;font-family:M;font-weight:800;font-size:52px;color:#2f6bff', '✓', FICHA); ck.style.top = (102 + i * 74) + 'px'; r._ck = ck; return r; });
 const tSEN = tx(M('<span class="S blue" style="font-size:230px">sensación.</span>'), 1320, '', 230);
 const tQUE = tx(M('HOY SOLO TE QUEDA UNA'), 1262, 'M7', 46); tQUE.style.letterSpacing = '.14em';
 function memory(t) {
   const a = T.aquel - .05, b = T.y - .05, v = t >= a && t < T.la - .05;
   show(CARD, v); show(tOCT, t >= a && t < T.hoy); show(tENC, t >= T.todo - .1 && t < T.ej - .05);
-  LBL.forEach((l, i) => show(l, t >= [T.ejer, T.tie, T.par][i] - .1 && t < T.hoy + .2));
-  show(tQUE, t >= T.queda - .25 && t < b); show(tAPS, t >= T.ejer - .1 && t < T.hoy + .2);
-  reveal(tAPS, seg(t, T.ejer - .1, T.ejer + .25)); tAPS.style.opacity = 1 - seg(t, T.hoy - .05, T.hoy + .2); show(tSEN, t >= T.sens - .05 && t < T.la - .05);
+  show(FICHA, t >= T.ej - .1 && t < T.queda - .1);
+  show(tQUE, t >= T.queda - .25 && t < b); show(tSEN, t >= T.sens - .05 && t < T.la - .05);
   if (!v) return;
   // fondo: tinta → papel (la memoria se vacía)
   const fog = E.io(seg(t, T.hoy - .05, T.sens - .05));
@@ -193,8 +195,10 @@ function memory(t) {
   PAIR.forEach((c, i) => draw(c, T.par - .05 + i * .1, .3, T.hoy - .05 + i * .05)); LINKS.forEach((l, i) => draw(l, T.par + .3 + i * .1, .15, T.hoy - .05));
   reveal(tOCT, seg(t, a + .05, a + .45)); tOCT.style.opacity = 1 - seg(t, T.hoy - .2, T.hoy + .1);
   reveal(tENC, seg(t, T.todo - .1, T.todo + .25)); tENC.style.opacity = 1 - seg(t, T.ej - .2, T.ej - .05);
-  LBL.forEach((l, i) => { const s0 = [T.ejer, T.tie, T.par][i]; reveal(l, seg(t, s0 - .1, s0 + .2)); const er = seg(t, T.hoy - .05 + (2 - i) * .12, T.hoy + .2 + (2 - i) * .12);
-    l.style.opacity = 1 - er; l.style.filter = `blur(${10 * er}px)`; l.style.color = fog > .45 ? '#0d0f14' : '#fff'; });
+  { const fi = E.out5(seg(t, T.ej - .1, T.ej + .3)), fo = E.io(seg(t, T.queda - .45, T.queda - .1));
+    FICHA.style.transform = `translateY(${(1 - fi) * 120}px) rotate(${-1 + fi}deg)`; FICHA.style.opacity = fi * (1 - fo); FICHA.style.filter = `blur(${10 * fo}px)`;
+    ROWS.forEach((r, i) => { const q = E.out5(seg(t, T.ej + i * .1, T.ej + .3 + i * .1)); r.style.opacity = q; r.style.transform = `translateX(${(1 - q) * -30}px)`;
+      const s0 = [T.ejer, T.tie, T.par][i], c = E.out5(seg(t, s0, s0 + .25)); r._ck.style.opacity = c; r._ck.style.transform = `scale(${1.6 - .6 * c})`; }); }
   reveal(tQUE, seg(t, T.queda - .25, T.queda + .1)); tQUE.style.color = '#6d6a62'; tQUE.style.opacity = 1 - seg(t, b - .1, b);
   // «sensación»: entra desenfocada y golpea
   reveal(tSEN, seg(t, T.sens - .05, T.sens + .2));
@@ -241,7 +245,7 @@ function app(t) {
 // ── 5 · CTA fijo de campaña (igual que u01/u02) ──
 // ── 6 · CTA: la misma entrada en la lista de espera del Reel 1 ──
 let rs = 11; const rnd = () => (rs = (rs * 16807) % 2147483647) / 2147483647;
-const W = { web: T.une - .05 }; W.tap = W.web + .62; W.ok = W.tap + .22; W.gal = T.n28 - .25;
+const W = { web: T.une - .05 }; W.tap = W.web + .62; W.ok = W.tap + .22; W.gal = T.n28 + .28;
 const PT = Array.from({ length: 22 }, () => { const o = document.createElement('div'); const a = rnd() * Math.PI * 2, r = 160 + rnd() * 260;
   o.style.cssText = `position:absolute;left:0;top:0;width:${10 + rnd() * 10}px;height:${10 + rnd() * 10}px;border-radius:50%;background:${rnd() < .7 ? '#2f6bff' : '#f2f1ec'};display:none;margin-left:${470 + 70}px;margin-top:0px`;
   o._dx = Math.cos(a) * r; o._dy = Math.sin(a) * r * .7; $('web').appendChild(o); return o; });
