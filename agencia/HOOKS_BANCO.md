@@ -217,7 +217,7 @@ _Mecanismo: decir en voz alta lo que todos viven y nadie admite. Complicidad._
 - **H0189** Hay ejercicios que pones porque te gustan, no porque el equipo los necesite. [entrenamiento · reconocimiento · general]
 - **H0190** El cambio del minuto sesenta lo decidiste por intuición, no por el partido. [toma de decisiones · duda · fútbol]
 - **H0191** Lo que nadie dice en la reunión de entrenadores: no llego a todo. [tiempo · identificación · general]
-- **H0192** Tu mejor entreno de la temporada no lo podrías repetir. No lo apuntaste. [entrenamiento · frustración · general]
+- **H0192** Tu mejor entreno de la temporada no lo podrías repetir. No lo apuntaste. [entrenamiento · frustración · general] [usado u04]
 - **H0193** Nadie te pregunta cuántas horas dedicas fuera del campo. Y son muchas. [trabajo invisible · injusticia · general]
 - **H0194** Hay semanas en las que entrenas solo para llegar al partido. [planificación · identificación · general]
 - **H0195** El jugador que más mejora a veces es el que menos has mirado. [progresión · sorpresa · general]
@@ -1104,7 +1104,7 @@ _Los 30 más fuertes según los 8 criterios (atención, identificación, clarida
 7. **H0175** Tu metodología vive en tu cabeza. Y tu cabeza también juega el sábado. — Imagen nueva y verdadera: la memoria se satura en partido; conecta con registrar y con la app.
 8. **H0851** «Míster, ¿por qué no juego?». ¿Tienes una respuesta o una sensación? — Pregunta real que todo entrenador teme; contrapone dato y sensación sin inventar nada.
 9. **H0178** Lo que llamas intuición a veces son datos que nunca apuntaste. — Reencuadra la intuición sin atacarla; muy citable y coherente con registrar partidos y sesiones.
-10. **H0192** Tu mejor entreno de la temporada no lo podrías repetir. No lo apuntaste. — Pérdida concreta y dolorosa; lleva a la biblioteca de ejercicios y sesiones de forma natural.
+10. **H0192** Tu mejor entreno de la temporada no lo podrías repetir. No lo apuntaste. — Pérdida concreta y dolorosa; lleva a la biblioteca de ejercicios y sesiones de forma natural. [usado u04]
 11. **H0034** Ellos tienen GPS en cada jugador. Tú puedes tener, al menos, un RPE apuntado. — Espejo con la élite con salida realista y una función verificada de la app (RPE).
 12. **H0345** La élite cuenta con todo. La base cuenta contigo. — Juego de palabras limpio, emotivo sin ser motivación vacía; reconoce al entrenador de base.
 13. **H0486** El trabajo invisible tiene un problema: si no lo registras, tampoco lo ves tú. — Da una vuelta nueva al patrón 10: el entrenador también es víctima de no ver su trabajo.
