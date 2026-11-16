@@ -2,6 +2,7 @@
 
 | Fecha | Pieza | Tipo | Resultado |
 | --- | --- | --- | --- |
+| 2026-11-16 19:26 | c09 feed/c09-1.jpg | carousel | publicado, media_id 18658474033041477 |
 | 2026-11-16 17:26 | u04 reels/u04-mejor-entreno.mp4 | reel | publicado, media_id 17999178872868049 |
 | 2026-11-16 13:27 | u02 reels/u02-grandes-equipos-sistema.mp4 | reel | publicado, media_id 17979817902140004 |
 | 2026-11-16 13:25 | c08s stories/st-1116-pregunta-apuntar.jpg | story | publicado, media_id 18041732705853859 |
