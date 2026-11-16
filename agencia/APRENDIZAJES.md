@@ -1,25 +1,47 @@
-# Aprendizajes vigentes (Agente 06)
+# Aprendizajes vigentes (Samuel, 06)
 
-Todos los agentes leen esto antes de crear. Lo mantiene el Agente 06; cada regla lleva evidencia y cómo se comprobará. Distingue hechos, hipótesis y recomendaciones.
+Todos leen esto antes de crear. Actualizado el lunes 16/11/2026. Distingue reglas de Biel, hechos, hipótesis y recomendaciones. Informe completo: `reports/2026-11-16.md`.
 
-## Reglas vigentes (decididas por Biel; no son hipótesis)
-- Personas y equipos reconocibles de primer nivel; voz Mateo fija; música nueva cada Reel del estilo de referencia; sin pausas antes del CTA; «la app de ProTeam».
+## Reglas de Biel (fijas; no son hipótesis)
+- Personas y equipos reconocibles de primer nivel, como ejemplo y nunca como aval.
+- Voz Mateo fija; música nueva en cada Reel del estilo de referencia, con silencio antes de la palabra de impacto.
+- «La app de ProTeam» en la voz; sin pausas antes del CTA.
+- Objetivo: **visitas llenas** (retención, guardados y compartidos por 1.000 vistas, perfil/seguidores/enlace, altas en la lista). Las vistas solas no deciden nada.
+- Trazo y los formatos antiguos están archivados: ni referencia ni alternativa.
+- Todo se hace solo y se gestiona desde la oficina; Biel solo corrige en «Contenido».
+- **Stories (corrección de Biel, 16/11)**: no sirven las que solo avisan de un Reel; tienen que fidelizar y hacer marca.
 
-- Objetivo: **visitas llenas** (retención, guardados/compartidos por 1.000 vistas, perfil/seguidores/enlace, altas en la lista). Las vistas solas no cuentan.
-- Trazo y los formatos antiguos están archivados: sus métricas NO son referencia ni se proponen como alternativa. Se compara cada pieza nueva con las anteriores del formato actual y con las referencias externas (`REFERENCIAS.md`).
+## Hechos (con evidencia)
+| hecho | evidencia |
+|---|---|
+| Abrir en negro con texto pequeño no retiene | u01 (20 h): 58,5 % de saltos en 3 s, 6,0 s de 30,7 s (19 %), 183 vistas |
+| u01 no dio ningún motivo para guardar ni compartir | 0 guardados, 0 compartidos, 0 comentarios |
+| La campaña aún no ha generado acción medible | 0 toques en el enlace (2–16/11), 0 altas en `public.leads`, 1 visita a la web desde Instagram en la semana, 35 seguidores |
+| Instagram no da visitas al perfil ni seguidores por Reel | Windsor: «no disponible para Reels» |
 
-## Aprendizajes con evidencia
-- u01 (15/11, primeras ~7 h): 177 vistas, 57 % de saltos en 3 s, 6,1 s de media, 0 guardados. **Hecho**: la entrada (texto a máquina sobre negro) no retiene. Pendiente de confirmar con u02–u03.
+## Recomendaciones vigentes (aplicar ya; se revisan con datos)
+1. **Fotograma 0**: cara o escena reconocible a pantalla completa y texto grande legible desde el primer fotograma. Nunca negro, nunca texto a máquina como entrada.
+2. **Algo que llevarse**: cada Reel y cada carrusel deja una pieza útil a la vista (lista, plantilla, pregunta para el ayudante).
+3. **Duración**: 25 s o menos mientras el tiempo medio esté por debajo de 10 s; la oferta se ve en pantalla antes del último tramo.
+4. **Descripción**: segunda línea con «Guárdalo» o «Mándaselo a tu segundo»; «la app de ProTeam»; «enlace en la bio», sin URL escrita.
 
-## Hipótesis en prueba (experimentos)
-| id | hipótesis | variable que cambia | Reels | cómo se mide | estado |
+## Nota de visita llena (0–100)
+Retención media (25) + saltos en 3 s (25) + guardados y compartidos por 1.000 vistas (30) + acción (20). Fórmula y umbrales en el informe. u01: **17**.
+
+## Experimentos
+| id | hipótesis | variable que cambia | piezas | cómo se mide | estado |
 |---|---|---|---|---|---|
-| E1 | Una imagen reconocible a pantalla completa en el primer fotograma (antes que texto) baja los saltos en 3 s | primer segundo: foto de referente + palabra vs. texto sobre negro | u02 (foto) frente a u01 (texto) | % saltos 3 s, tiempo medio | en curso |
-| E2 | Empezar por el resultado y rebobinar a la causa retiene más | estructura narrativa | u03 frente a u02 | tiempo medio / duración, guardados | en curso |
+| E1 | Una cara reconocible a pantalla completa en el fotograma 0 baja los saltos | primer segundo: foto + texto grande frente a negro + texto a máquina | u02 y u03 frente a u01 | % de saltos en 3 s y tiempo medio | en curso: u02 y u03 salen el 16/11; se lee el 17–18/11 |
+| E2 | Empezar por el resultado y rebobinar a la causa retiene más | estructura | u03 frente a u02 | tiempo medio / duración, guardados | en curso: se lee el 18/11 |
+| E3 | Una «ficha guardable» visible (ejercicio · tiempos · parejas) sube guardados y compartidos | ficha de 1,5–2 s sobre la voz + «Guárdalo» en la descripción | u04 frente a u01–u03 | guardados + compartidos por 1.000 vistas a las 48 h | nuevo: lo ejecuta Marta en u04 (17/11) |
 
-## Hipótesis en prueba (experimentos)
-| id | hipótesis | variable que cambia | Reels | cómo se mide | estado |
-|---|---|---|---|---|---|
+## Críticas de Andrés: clasificación
+- **Confirmadas**: «repetir» tres veces en u04 (no subrayar las tres en montaje); puente abstracto a la app (corregido en u04 v2).
+- **Probables**: foto de Guardiola blanda en el primer fotograma de u03; web de la lista de espera demasiado rápida (~1,45 s); c08 flojo en comunidad.
+- **Subjetivas**: «No lo apuntaste» anticipa la respuesta (u04).
+- **Descartadas**: ninguna.
+- **Lo que falta en la auditoría**: control del segundo 0 y del motivo para guardar.
 
-## Críticas: confirmadas / probables / subjetivas / descartadas
-_(se rellena con cada análisis)_
+## Pendiente de comprobar
+- Si el formulario de la lista de espera guarda en `public.leads` (0 altas en la campaña).
+- Reels de referencia y competencia: Instagram bloquea la lectura; pedidos a Biel enlaces o vídeos.

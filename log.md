@@ -249,3 +249,11 @@
 - Métricas 7 días: ta02 1.534 vistas (33,8 % saltos, 11,5 s, 3 guardados); p03 616 (49,1 %, 8,3 s); p08 388 (49 %, 9,3 s); u01 177 en ~7 h (57 % saltos, 6,1 s, 0 guardados) → arranque flojo; p21 170 (50 %, 6,8 s). Carrusel 088: 26 vistas, alcance 8.
 - Hoja: Plan → u01 puesto como Publicado con su media_id. Analisis: u01 aún no lleva 24 h (mañana).
 - Comentarios últimos 3 días: ninguno.
+
+### Análisis semanal 16 nov 08:20 UTC (Samuel, 06)
+- Formato actual: solo u01 publicado (20 h): 183 vistas, 58,5 % de saltos, 6,0 s de 30,7 s, 0 guardados, 0 compartidos. Nota de visita llena 17/100. Informe `reports/2026-11-16.md`, registro `agencia/aprendizaje/2026-11-15-u01.md`, APRENDIZAJES y REFERENCIAS reescritos.
+- Lista de espera: 0 altas en `public.leads` en la campaña (la tabla solo tiene 2 filas, una de prueba). 0 toques en el enlace. Hay que comprobar el formulario.
+- c08s sacada de la cola por la corrección de Biel (Stories de fidelización y marca, no de aviso de Reel). Encargo a Clara.
+- Competencia: cuentas verificadas (unrespiro.app, coachbetter_ltd, 360player, sporteasy.app, xpsnetwork, xpshandball, teamsnapapp); Instagram bloquea la lectura. Ficha a Biel pidiendo enlaces.
+- Experimento E3 «ficha guardable» en u04. Encargos a Marta, Clara, Dani, Andrés y Pau.
+- Comentarios 7 días: ninguno. Analisis de u01 en la hoja: aún no lleva 24 h.

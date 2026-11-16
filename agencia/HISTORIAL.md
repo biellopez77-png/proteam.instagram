@@ -19,7 +19,7 @@ collage a pantalla completa de entrenadores famosos (u01) · cuadrícula 3×3 (u
 ## Stories diarias (Agente 04)
 | id | fecha | lleva a | concepto |
 |---|---|---|---|
-| c08s | 16/11 19:00 | Reel u03 (20:30) | Guardiola + 88:01 + «El problema empezó el martes.» + oferta en pie |
+| c08s | 16/11 19:00 (NO publicada: parada por corrección de Biel) | Reel u03 (20:30) | Guardiola + 88:01 + «El problema empezó el martes.» + oferta en pie. Biel: las Stories de aviso de Reel no valen; fidelización y marca |
 
 ## Carruseles (Agente 04)
 | id | fecha | titular (diapo 1) | línea editorial | objetivo | estructura | tema | CTA | enfoque visual |
