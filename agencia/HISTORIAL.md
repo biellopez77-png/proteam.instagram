@@ -21,13 +21,13 @@ collage a pantalla completa de entrenadores famosos (u01) · cuadrícula 3×3 (u
 |---|---|---|---|
 | ~~c08s~~ | ~~16/11 19:00~~ | ~~Reel u03~~ | Retirada por Biel (16/11): las Stories no avisan de Reels; fidelizan y crean marca |
 | c08s | 16/11 13:00 | comunidad (respuesta por mensaje) | La pregunta del entrenador: ¿qué te cuesta más apuntar? A asistencia · B cansancio · C último partido · D correcciones. La más votada será carrusel esta semana. 80/100 |
-| c09s | 16/11 17:00 | valor | Pequeños cambios: la regla de los 2 minutos (3 líneas antes de irte del campo). 81/100 |
-| c09s2 | 16/11 20:00 | marca + lista de espera | «Planificar. Apuntar. Revisar. También es entrenar.» + quedan 11 días · 3 meses gratis. 77/100 |
+| c09s | 16/11 17:00 | valor | Pequeños cambios: «¿Qué funcionó en tu último entreno? Apúntalo en 2 minutos» (3 líneas antes de irte del campo). 81/100 |
+| c09s2 | 16/11 20:00 | marca + lista de espera | «¿Cuántas horas entrenas fuera del campo?» + «Planificar. Apuntar. Revisar. También es entrenar.» + quedan 11 días · 3 meses gratis. 77/100 |
 
 ## Carruseles (Agente 04)
 | id | fecha | titular (diapo 1) | línea editorial | objetivo | estructura | tema | CTA | enfoque visual |
 |---|---|---|---|---|---|---|---|---|
 | c08 | 16/11 11:00 | Si mañana no puedes ir al entreno, ¿alguien sabría qué toca? | La realidad del entrenador | identificación | diagnóstico (3 señales) → causa → caso real (Kerr/Walton 39–4, AP) → herramienta (hoja de relevo) → cierre | el equipo depende de la cabeza del entrenador (plan, asistencia, correcciones) | compartir con el segundo entrenador + hacer la prueba | notificación, chat «¿Qué hacemos hoy?», cuadrícula de asistencia con «?», lista «solo en tu cabeza», 3 líneas que convergen, Kerr + 39–4, formulario «hoja de relevo». **Crítica 83/100** (texto 74→82) |
-| c09 | 16/11 19:00 | Casi 9 de cada 10 deportistas que llegan a la élite no estaban entre los mejores de su edad | Ideas que cuestionan | captación | creencia → dato → qué hicieron distinto → por qué (hipótesis) → caso Vardy → 3 cambios → cierre | destacar de joven no predice llegar; repartir minutos y atención | compartir con quien hace los equipos | tipográfico: 10 puntos, barras de minutos, dos filas de puntos con uno compartido, línea de edades de Vardy, listas. Fuente: Science (dic. 2025). **Crítica 82/100** (texto 72→81) |
+| c09 | 16/11 19:00 | 3 reglas para no descartar talento demasiado pronto | Ideas que cuestionan | captación | promesa (3 reglas) + Jordan → creencia → dato → qué hicieron distinto → por qué (hipótesis) → caso Vardy → 3 cambios → cierre | destacar de joven no predice llegar; repartir minutos y atención | compartir con quien hace los equipos | Jordan y Phil Jackson en portada (Jordan fuera del primer equipo de su instituto a los 15, SI 2012), barras de minutos, dos filas de puntos con uno compartido, línea de edades de Vardy, listas. Fuente: Science (dic. 2025). **Crítica 84/100** (texto 72→81; render 82→84 con el plan de alcance) |
 
 Carruseles antiguos (formato anterior, ya publicados): Lo que dicen los datos #1 córners · #2 penaltis · #3 efecto de la edad relativa · Pregunta de la semana 1.
