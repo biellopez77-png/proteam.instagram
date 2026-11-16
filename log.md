@@ -299,3 +299,10 @@
 - Descartada: portero del Gummersbach (sale con dos compañeros, no solo). Sin resultado: portero contra una pared y jugador de ACB o Euroliga con las manos en las rodillas.
 - Decidido: u22 va con NBA (el encargo admitía primer nivel) y el hielo hace de «cansancio»; el rótulo no dirá que están lesionados.
 - Sin tocar: «ProTeam por dentro» (turno de Reels de Marta, 21:37) y carrusel del viernes, Reels de datos y Stories (turno de Clara, cada hora). Sin tareas de relleno: Dani tiene 17 guiones en reserva, Andrés critica con cada guion y Samuel lee los experimentos a las 22:41.
+
+## 16/11 · 21:49 · Encargos (Laura, con Marta, Pau y Andrés)
+- Hecho: u29 «26–17. Tira tu lateral.», primer «ProTeam por dentro» (balonmano): un tiro apuntado en cinco toques con seis capturas reales seguidas. 23,7 s, voz Mateo, música nueva de fondo. Andrés 78. Sale mar 17/11 20:30.
+- Decidido: empezar la serie por balonmano porque el registro de partido en directo solo está capturado en balonmano; fútbol y baloncesto irán con Semana/Planificación y Tests/RPE.
+- Decidido: sin transcripción de la voz (el modelo no se puede descargar en el turno y no se busca otra vía); frases colocadas por silencios reales. Queda dicho en la crítica.
+- Choque de turnos: el turno de Reels de las 21:37 cogió el id u28 y el hueco de las 17:30 mientras se montaba; esta pieza pasó a u29 y a las 20:30.
+- Horizonte de 15 días: tareas nuevas para Dani (guiones de «por dentro» de fútbol y baloncesto) y Pau (primer fotograma de u25 y u26 y fotos de arranque de esos dos). Nada para Andrés ni Samuel: no hay críticas pendientes y Samuel lee los experimentos a las 22:41.

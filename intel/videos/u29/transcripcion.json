@@ -1,0 +1,157 @@
+{
+ "origen": "tools/reel29/voz.tsv",
+ "tipo": "locución generada con tiempos por palabra (exacta, no reconocida por oído)",
+ "palabras": 18,
+ "primera_palabra_s": 0.127,
+ "ultima_palabra_s": 23.01,
+ "ritmo_palabras_por_s": 0.79,
+ "frases": [
+  {
+   "desde": 0.127,
+   "hasta": 1.681,
+   "texto": "Veintiséis a diecisiete.",
+   "palabras_por_s": 0.64
+  },
+  {
+   "desde": 1.968,
+   "hasta": 2.794,
+   "texto": "Tira tu lateral.",
+   "palabras_por_s": 1.21
+  },
+  {
+   "desde": 3.121,
+   "hasta": 8.578,
+   "texto": "Cinco toques: quién, tiro, desde dónde, adónde va, y gol o parada.",
+   "palabras_por_s": 1.1
+  },
+  {
+   "desde": 8.945,
+   "hasta": 9.709,
+   "texto": "Veintisiete.",
+   "palabras_por_s": 1.31
+  },
+  {
+   "desde": 10.036,
+   "hasta": 13.393,
+   "texto": "Al acabar, ya sabes quién tiró diez veces y metió seis.",
+   "palabras_por_s": 0.89
+  },
+  {
+   "desde": 13.721,
+   "hasta": 15.648,
+   "texto": "¿En tu banquillo, quién apunta los tiros?",
+   "palabras_por_s": 1.04
+  },
+  {
+   "desde": 15.976,
+   "hasta": 18.575,
+   "texto": "Así se registra un partido en la app de ProTeam.",
+   "palabras_por_s": 0.38
+  },
+  {
+   "desde": 18.783,
+   "hasta": 23.01,
+   "texto": "Comenta tu deporte, tu categoría y tus días, y te preparo la primera semana.",
+   "palabras_por_s": 0.71
+  }
+ ],
+ "pausas": [
+  {
+   "desde": 8.578,
+   "hasta": 8.945,
+   "duracion_s": 0.37
+  }
+ ],
+ "por_palabra": [
+  {
+   "desde": 0.127,
+   "hasta": 1.681,
+   "palabra": "Veintiséis a diecisiete."
+  },
+  {
+   "desde": 1.968,
+   "hasta": 2.794,
+   "palabra": "Tira tu lateral."
+  },
+  {
+   "desde": 3.121,
+   "hasta": 3.871,
+   "palabra": "Cinco toques:"
+  },
+  {
+   "desde": 4.119,
+   "hasta": 4.477,
+   "palabra": "quién,"
+  },
+  {
+   "desde": 4.764,
+   "hasta": 5.107,
+   "palabra": "tiro,"
+  },
+  {
+   "desde": 5.374,
+   "hasta": 6.123,
+   "palabra": "desde dónde,"
+  },
+  {
+   "desde": 6.37,
+   "hasta": 6.948,
+   "palabra": "adónde va,"
+  },
+  {
+   "desde": 7.195,
+   "hasta": 8.578,
+   "palabra": "y gol o parada."
+  },
+  {
+   "desde": 8.945,
+   "hasta": 9.709,
+   "palabra": "Veintisiete."
+  },
+  {
+   "desde": 10.036,
+   "hasta": 10.547,
+   "palabra": "Al acabar,"
+  },
+  {
+   "desde": 10.674,
+   "hasta": 12.453,
+   "palabra": "ya sabes quién tiró diez veces"
+  },
+  {
+   "desde": 12.57,
+   "hasta": 13.393,
+   "palabra": "y metió seis."
+  },
+  {
+   "desde": 13.721,
+   "hasta": 14.402,
+   "palabra": "¿En tu banquillo,"
+  },
+  {
+   "desde": 14.589,
+   "hasta": 15.648,
+   "palabra": "quién apunta los tiros?"
+  },
+  {
+   "desde": 15.976,
+   "hasta": 18.575,
+   "palabra": "Así se registra un partido en la app de ProTeam."
+  },
+  {
+   "desde": 18.783,
+   "hasta": 19.771,
+   "palabra": "Comenta tu deporte,"
+  },
+  {
+   "desde": 19.92,
+   "hasta": 21.245,
+   "palabra": "tu categoría y tus días,"
+  },
+  {
+   "desde": 21.363,
+   "hasta": 23.01,
+   "palabra": "y te preparo la primera semana."
+  }
+ ]
+}
