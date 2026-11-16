@@ -57,3 +57,6 @@ Límites: la voz de Claude no está en la app móvil ni en Safari; el dictado so
 - `meta/office`: `briefNote`, `briefAt`, `agenda`, `metrics`, `metricsAt`.
 
 Cualquier agente activado a mano en un chat sigue también `oficina/PROTOCOLO.md` (ENTRADA y SALIDA).
+
+## Calidad y análisis de vídeo (16/11)
+El equipo trabaja con las instrucciones de `agencia/agentes/` y los procedimientos de `agencia/skills/`. Nada sale por debajo de 75 (escala nueva de Andrés) ni con un bloqueante; un hueco sin pieza válida queda vacío y anotado. Cada Reel se analiza con `tools/video_intel.py` y Andrés audita el vídeo real con marcas de tiempo (`intel/videos/<id>/observaciones.md`). Lo que el equipo no puede resolver sin Biel aparece como tarea de Laura titulada «FALTA (Biel): …».

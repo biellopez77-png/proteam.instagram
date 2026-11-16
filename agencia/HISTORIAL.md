@@ -1,5 +1,7 @@
 # Historial de contenidos (no repetir sin ángulo nuevo)
 
+> **Notas de Andrés:** hasta u05/c09 usan la escala antigua (hook 20…). Desde el 16/11 la escala es la de `oficina/PROTOCOLO.md` §6 y cada fila nueva lleva «escala 16/11». No se comparan entre sí. Auditoría de vídeo real de u04 con la escala nueva: 77 (`intel/videos/u04/observaciones.md`).
+
 Al entregar un guion o una producción, añadir una fila. Un hook que solo cambia una palabra de otro NO es nuevo.
 
 ## Reels estilo agencia

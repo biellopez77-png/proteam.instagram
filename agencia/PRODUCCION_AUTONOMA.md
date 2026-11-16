@@ -1,5 +1,8 @@
 # Producción autónoma de un Reel (paso a paso)
 
+> **Desde el 16/11:** este paso a paso técnico sigue valiendo, con tres cambios que mandan sobre lo que diga abajo: (1) las instrucciones de cada persona son las de `agentes/` y sus procedimientos los de `skills/`; (2) el control de calidad del montaje ya no son «6 fotogramas»: todo Reel se analiza con `tools/video_intel.py` (analyze en modo detalle, voz y rasgos), Marta mira todas las láminas y Andrés audita el vídeo real con marcas de tiempo (`../intel/README.md`); (3) la nota de Andrés usa la escala nueva de `../oficina/PROTOCOLO.md` §6.
+
+
 Lo usa la tarea programada «Agencia ProTeam · producir Reel» y cualquier sesión que tenga que sacar un Reel sin Biel.
 Plantilla técnica: `tools/reel2/` (Reel 2, aprobado por Biel). Cada Reel nuevo va en su propia carpeta: `tools/reelNN/`.
 
