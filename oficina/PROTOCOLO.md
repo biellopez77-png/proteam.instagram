@@ -7,13 +7,15 @@ Las tareas programadas no son un sistema aparte: son **los turnos de trabajo de 
 ## Quién es quién
 | id | persona | puesto | turno programado |
 |---|---|---|---|
-| 00 | Laura | Secretaria | encargos y correcciones (cada 2 h) y publicación |
-| 01 | Dani | Guionista | Reels (guion) |
+| 00 | Laura | Secretaria | encargos y correcciones (cada 2 h, 8:49–22:49) y publicación (11:23, 13:23, 17:23, 19:23, 20:23) |
+| 01 | Dani | Guionista | Reels (7:37, 11:37, 16:37) y guiones por adelantado (9:53, 13:53, 18:53) |
 | 02 | Marta | Directora creativa | Reels (dirección, voz, montaje, música) |
 | 03 | Pau | Archivero | Reels y carruseles (recursos) |
-| 04 | Clara | Editora de carruseles | Carrusel y Story diarios |
-| 05 | Andrés | Crítica y calidad | Crítica de guion y auditoría final de cada pieza |
-| 06 | Samuel | Analista | Análisis de los lunes y diario de métricas |
+| 04 | Clara | Editora de carruseles | 2 carruseles y 3 Stories al día (9:07 y 21:07) |
+| 05 | Andrés | Crítica y calidad | Crítica de cada guion y auditoría final de cada pieza |
+| 06 | Samuel | Analista | Análisis de los lunes (9:13) y diario de métricas (20:23) |
+
+**Ritmo desde el 16/11 (Biel: «más contenido, más clientes»):** 3 Reels al día (13:30, 17:00, 20:30), 2 carruseles (11:00, 19:00) y 3 Stories (13:00, 17:00, 20:00), con una reserva de 4 guiones criticados (≥ 75) siempre lista.
 
 Los nombres pueden cambiar (campo `name` de `agents/<id>`): usa el que haya en la oficina. R1–R4 (equipo técnico de la app) no entran en estos turnos.
 
