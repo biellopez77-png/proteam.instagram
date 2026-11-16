@@ -1,6 +1,6 @@
 # Recursos u13 · «Tu entreno está pensado para pista entera. Los martes tienes media.» (Agente 03 · Pau)
 
-> **Estado: sin resolver (16/11, 14:00).** WebFetch no ha podido leer Wikimedia Commons en esta sesión («url_not_found» en página de archivo y en categoría; la API no llegó a enviarse). No se ha rodeado y no se ha descargado nada.
+> **Estado: RESUELTO el 16/11 a las 20:00 (ver la actualización al final).** Texto original de las 14:00: WebFetch no ha podido leer Wikimedia Commons en esta sesión («url_not_found» en página de archivo y en categoría; la API no llegó a enviarse). No se ha rodeado y no se ha descargado nada.
 > **En el banco no hay ninguna foto de un entrenamiento de baloncesto**, ni de un grande ni de nadie: las 19 de baloncesto son de partido (banda, tiempo muerto, banquillo, piña, acción) o de objeto. **Opciones válidas: 0 de 3.**
 
 A. Qué tiene que transmitir
@@ -19,3 +19,15 @@ C. De terceros por descargar: **pendiente, sin leer**. Consultas preparadas: «R
 E. Por producir: una foto propia de un pabellón de base con dos equipos compartiendo pista (plano general, sin caras de menores en primer término) serviría para el golpe 2 y cubre un hueco del banco.
 
 G. Lo que no he encontrado: las tres opciones. No las invento.
+
+---
+## Actualización 16/11, 20:00 (Pau): resuelto, dos opciones con foto
+| opción | archivo | qué se ve (mirada) | encuadre 9:16 | autor · licencia · enlace | límite |
+|---|---|---|---|---|---|
+| 1 | `PROTEAM_EQUIPO_ENTRENAMIENTO_NBA_FOTO_001.jpg` (1080×1620, vertical) | Entrenamiento abierto del All-Star de la NBA (Cleveland, 2022): un técnico con camiseta «ALL-STAR BASKETBALL» da indicaciones señalando; a su lado, un jugador con peto blanco y balón levanta el dedo. Parqué y público al fondo | Ya es vertical. Técnico y jugador en la mitad superior; «PLANIFICAS PISTA ENTERA.» cabe abajo, sobre las dos personas desenfocadas del primer término | Erik Drost · CC BY 2.0 · https://commons.wikimedia.org/wiki/File:NBA_All-Star_2022_Practice_Cleveland_(51914016087).jpg | Es un entrenamiento de exhibición del All-Star, no de un club; no se ve la pista entera. Sirve para «ellos entrenan así»; la pista partida sigue en motion graphics. Rótulo genérico, sin nombres. Marca de patrocinador en el peto |
+| 2 | `PROTEAM_EQUIPO_ENTRENAMIENTO_SELECCION_BALONCESTO_FOTO_001.jpg` (1080×665) | Entrenamiento de la selección española antes del Eurobasket 2017 (ver ficha `2026-11-16-fotograma0-fotos-nuevas.md`) | Columna central (x ≈ 350–725) | Diario de Madrid · CC BY 4.0 | Es una charla; hay que ampliar ≈ 2,9× |
+| 3 | Gráfico de la pista partida adelantado al segundo 0 | — | — | propio | Sin cara ni escudo reconocible |
+
+Recomendación para Marta: abrir con la opción 1 (única vertical y con un entrenamiento de primer nivel que se reconoce) y cortar a la pista partida en el segundo 2.
+Descartada (mirada): `File:NBA All-Star 2022 Practice Cleveland (51913701307).jpg`: es un espectáculo de mates con trampolín, no un entrenamiento.
+Buscado sin resultado en Commons: entrenamientos del Real Madrid, del Barça, de la Euroliga y de la Final Four.

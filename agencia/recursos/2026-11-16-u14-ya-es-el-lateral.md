@@ -1,6 +1,6 @@
 # Recursos u14 · «Tiene nueve años y ya es "el lateral".» (Agente 03 · Pau)
 
-> **Estado: sin resolver (16/11, 14:00).** WebFetch no ha podido leer Wikimedia Commons en esta sesión («url_not_found» en página de archivo y en categoría; la API no llegó a enviarse). No se ha rodeado y no se ha descargado nada.
+> **Estado: RESUELTO el 16/11 a las 20:00 (ver la actualización al final).** Texto original de las 14:00: WebFetch no ha podido leer Wikimedia Commons en esta sesión («url_not_found» en página de archivo y en categoría; la API no llegó a enviarse). No se ha rodeado y no se ha descargado nada.
 > **En el banco no hay ninguna foto de la cantera de un grande.** **Opciones válidas: 0 de 3.** Abajo, lo más cercano y por qué no llega.
 
 A. Qué tiene que transmitir
@@ -20,3 +20,14 @@ C. De terceros por descargar: **pendiente, sin leer**. Consultas preparadas: «L
 E. Por producir: foto propia de un campo de fútbol 7 de base desde la grada, jugadores lejos y de espaldas (vertical). Es la vía más segura con menores.
 
 G. Lo que no he encontrado: las tres opciones. No las invento.
+
+---
+## Actualización 16/11, 20:00 (Pau): resuelto, tres opciones de la cantera del Barça y ningún menor reconocible
+| opción | archivo | qué se ve (mirada) | encuadre 9:16 | autor · licencia · enlace | límite |
+|---|---|---|---|---|---|
+| 1 | `PROTEAM_INSTALACION_CANTERA_BARCA_FOTO_001.jpg` (1080×1920, ya vertical) | Campos de la Ciutat Esportiva Joan Gamper: porterías pequeñas de fútbol base en primer término, lonas «FCBARCELONA.COM», banderín de córner, Estadi Johan Cruyff y marcador con el escudo del Barça al fondo. Cuatro personas muy lejos, a la izquierda, del tamaño de un banderín: no se reconoce a nadie | Lista para usar. «9 AÑOS.» sobre el cielo (tercio superior) y «Y ya es "el lateral".» sobre el césped del centro | Enric · CC BY-SA 4.0 · https://commons.wikimedia.org/wiki/File:008_Ciutat_Esportiva_Joan_Gamper_(Sant_Joan_Desp%C3%AD),_camp_de_gespa_i_estadi_Johan_Cruyff.jpg | Campo vacío: no hay niños jugando (es lo que pedía la condición de menores). Hay una valla metálica en primer término. Marca de patrocinador en el marcador. Es un recorte de la foto original (2816×2112) |
+| 2 | `PROTEAM_INSTALACION_LA_MASIA_FOTO_001.jpg` (1080×810) | Fachada granate con el letrero «LA MASIA» en dorado y, abajo, «LA MASIA · CENTRE DE FORMACIÓ ORIOL TORT». Sin personas | El letrero es horizontal: usarla a todo el ancho en una franja con fondo desenfocado arriba y abajo, o como segundo plano (segundos 1–2) tras la opción 1. No llena 9:16 sin cortar la palabra | Enric · CC BY-SA 4.0 · https://commons.wikimedia.org/wiki/File:027_La_Masia,_centre_de_formaci%C3%B3_Oriol_Tort,_ciutat_esportiva_Joan_Gamper_(Sant_Joan_Desp%C3%AD).jpg | 810 px de lado corto. Es un edificio, no un campo |
+| 3 | `PROTEAM_INSTALACION_CANTERA_BARCA_FOTO_002.jpg` (1080×810) | La foto de la opción 1 entera, en horizontal: se ven más campos y más porterías pequeñas | Para un paneo lateral lento sobre la opción 1 | Enric · CC BY-SA 4.0 · mismo enlace que la 1 | 810 px de lado corto |
+
+Recomendación para Marta: abrir con la opción 1 (escudo y porterías pequeñas en el mismo plano, sin ningún menor) y, si hace falta un segundo golpe visual antes del segundo 2, el letrero de la opción 2.
+Buscado sin resultado útil: Valdebebas (solo el estadio Di Stéfano en partido) y Lezama (vistas aéreas y fotos históricas).

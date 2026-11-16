@@ -279,3 +279,9 @@
 - Pau: siete fotos nuevas de Commons, licencia leída y miradas: árbitro con los dos dedos (u25; banco de balonmano 20 de 20), tiro libre NBA (u16), dos tiempos muertos (selección 2019 y Estudiantes ACB, u20), pívot de Euroliga (u26), entrenamiento de la selección (u13) y banquillo NBA con hojas (u12). Ficha: agencia/recursos/2026-11-16-fotograma0-fotos-nuevas.md.
 - Commons desde el turno dio «429: demasiadas peticiones»; se usó el sandbox de Higgsfield, como dice el procedimiento.
 - Sin tocar: Reels con voz y «ProTeam por dentro» (turno de Reels de Marta), carrusel del viernes, Reels de datos y Stories (turno de Clara). No se crean tareas de relleno para Dani (reserva de 18 guiones criticados), Andrés ni Samuel (bucle de las 22:41).
+
+### Encargos 16 nov 20:00 (Laura 00 y Pau 03)
+- Pau: cuatro fotos nuevas de Commons (licencia leída, miradas una a una), con el sandbox de Higgsfield porque Commons seguía respondiendo «429» desde el turno. u13: entrenamiento del All-Star de la NBA 2022, vertical (segunda opción). u14: campos de la cantera del Barça con porterías pequeñas y escudo al fondo (vertical, 1080×1920), la misma en horizontal y el letrero «LA MASIA». Ningún menor reconocible. Fichas de u13 y u14 actualizadas; tarea «Primer fotograma de u12, u13 y u14» cerrada.
+- Descartada: foto del All-Star con un espectáculo de mates (no es un entrenamiento). Sin resultado: entrenamientos de Real Madrid, Barça o Euroliga de baloncesto; Valdebebas y Lezama.
+- Decidido: la foto del entrenamiento de la NBA se describe sin nombres (el archivo de Commons no dice quién sale).
+- Sin tocar: «ProTeam por dentro» (turno de Reels de Marta, 21:37) y carrusel del viernes, Reels de datos y Stories (turno de Clara, cada hora). Sin tareas de relleno: Dani tiene 17 guiones en reserva, Andrés critica con cada guion y Samuel lee los experimentos a las 22:41.

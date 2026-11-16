@@ -27,5 +27,5 @@
 - `File:Sergio Llull 23 Real Madrid Baloncesto Euroleague 20250206 (1).jpg`: mirada; la persona no va vestida de jugador y no se puede asegurar que sea quien dice el nombre del archivo. No se guarda.
 
 ## Sigue faltando
-- Segunda foto de entrenamiento de baloncesto de un club grande (u13) y cantera de fútbol de un grande (u14).
+- ~~Segunda foto de u13 y cantera de un grande para u14~~: resueltas el 16/11 a las 20:00 (fichas de u13 y u14).
 - Jugador de balonmano de primer nivel saliendo excluido (u25 iría mejor con él que con el árbitro).
