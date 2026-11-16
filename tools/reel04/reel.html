@@ -128,7 +128,7 @@ function hook(t) {
   const b = T.aquel - .05, v = t < b; show(ANC, v); show(tMEJ, v && t < T.no2 - .1); show(tREP, v && t >= .45 && t < T.no2 - .1); show(SHEET, v && t >= T.no2 - .15); show(tAPU, v && t >= T.no2 - .05);
   if (!v) return;
   const p = E.out5(seg(t, 0, .45)), sh = E.out5(seg(t, T.no2 - .15, T.no2 + .2));
-  place(ANC, 0, 0, 1080, 1920, { s: 1 + (1 - p) * .08, is: 1.14 - .06 * seg(t, 0, b), iy: 30 * seg(t, 0, b), dark: .32 + .16 * seg(t, .3, .7) + .2 * sh, blur: 3 * sh, z: 1 });
+  place(ANC, 0, 0, 1080, 1920, { s: 1 + (1 - p) * .08, is: 1.26 - .18 * seg(t, 0, b), iy: 70 * seg(t, 0, b), dark: .32 + .16 * seg(t, .3, .7) + .2 * sh, blur: 3 * sh, z: 1 });
   reveal(tMEJ, seg(t, -.3, .25)); $('umej').style.transform = `scaleX(${E.io(seg(t, T.mejor, T.mejor + .35))})`;
   reveal(tREP, seg(t, .45, .8)); tREP.style.transform = `scale(${1 + .06 * Math.exp(-Math.pow((t - T.rep - .1) / .15, 2)) + .03 * seg(t, T.rep, T.no2)})`;
   tMEJ.style.transform = `translateY(${-30 * E.io(seg(t, .3, .6))}px)`;
@@ -160,7 +160,7 @@ const CHIP = mk('div', 'position:absolute;left:740px;top:430px;padding:14px 24px
 const tOCT = tx(`<div class="kick">${M('UN DÍA DE')}</div>${M('OCTUBRE')}`, 330, 'M8', 120);
 const tENC = tx(M('<span class="S blue">todo encajó.</span>'), 1330, '', 150);
 const FICHA = mk('div', 'position:absolute;left:110px;top:1255px;width:860px;height:350px;background:#fbfaf6;border-radius:22px;box-shadow:0 30px 70px rgba(0,0,0,.45);display:none;overflow:hidden');
-mk('div', 'position:absolute;left:48px;top:30px;font-family:M;font-weight:800;font-size:25px;letter-spacing:.12em;color:#8a877e', 'APUNTA DESPUÉS DE CADA BUEN ENTRENO', FICHA);
+mk('div', 'position:absolute;left:48px;top:30px;font-family:M;font-weight:800;font-size:34px;letter-spacing:.02em;color:#5e5b54;white-space:nowrap', 'APUNTA DESPUÉS DE CADA ENTRENO', FICHA);
 mk('div', 'position:absolute;left:48px;right:48px;top:78px;height:3px;background:#e4e0d4', '', FICHA);
 const ROWS = ['Ejercicio', 'Tiempos', 'Parejas'].map((w, i) => { const r = mk('div', `position:absolute;left:48px;top:${100 + i * 74}px;font-family:M;font-weight:800;font-size:58px;letter-spacing:-.03em;color:#0d0f14`, `<span style="color:#2f6bff;margin-right:22px">${i + 1}</span>${w}`, FICHA);
   const ck = mk('div', 'position:absolute;right:52px;font-family:M;font-weight:800;font-size:52px;color:#2f6bff', '✓', FICHA); ck.style.top = (102 + i * 74) + 'px'; r._ck = ck; return r; });
@@ -225,21 +225,21 @@ function copies(t) {
 const PHN = mk('div', 'position:absolute;left:310px;top:500px;width:460px;height:940px;border-radius:60px;background:#0b0d12;border:3px solid #2a3040;padding:14px;display:none;box-shadow:0 40px 90px rgba(0,0,0,.6)',
   '<div style="position:relative;width:100%;height:100%;border-radius:46px;overflow:hidden;background:#f6f6f4"><div id="sA" style="position:absolute;left:0;top:0;width:100%;transform-origin:4% 20%"><img src="/tools/reel04/img/rutinas.jpg" style="width:100%;display:block"><div id="hlA" style="position:absolute;left:2.5%;top:19.3%;width:30%;height:3.6%;border:4px solid #2f6bff;border-radius:10px;opacity:0"></div></div><div id="sB" style="position:absolute;left:0;top:0;width:100%;transform-origin:4% 55%"><img src="/tools/reel04/img/plan.jpg" style="width:100%;display:block"><div id="ripB" style="position:absolute;left:25.9%;top:54.9%;width:40px;height:40px;margin:-20px 0 0 -20px;border-radius:50%;background:rgba(47,107,255,.45);opacity:0"></div></div></div>', $('phones'));
 const tPT = tx(`<div class="kick" style="margin-bottom:0">${M('LA APP DE')}</div>${M('<span class="S blue">ProTeam</span>')}`, 262, '', 140);
-const tBIB = tx(`<span style="position:relative;display:inline-block">${M('BIBLIOTECA')}<span id="ubib" class="uline" style="bottom:-8px"></span></span>`, 1500, 'M8', 100);
-const tLRP = tx(M('<span class="S blue">la abres y lo repites.</span>'), 1500, '', 110);
+const tBIB = tx(`<span style="position:relative;display:inline-block">${M('BIBLIOTECA')}<span id="ubib" class="uline" style="bottom:-8px"></span></span>`, 262, 'M8', 104);
+const tLRP = tx(M('<span class="S blue">la abres y lo repites.</span>'), 262, '', 104);
 function app(t) {
-  const a = T.la - .05, b = T.une - .05, v = t >= a && t < b; show(PHN, v); show(tPT, v); show(tBIB, v && t >= T.bib - .1 && t < T.la2 - .1); show(tLRP, v && t >= T.la2 - .1); if (!v) return;
+  const a = T.la - .05, b = T.une - .05, v = t >= a && t < b; show(PHN, v); show(tPT, v && t < T.pt + .6); show(tBIB, v && t >= T.bib - .45 && t < T.la2 - .1); show(tLRP, v && t >= T.la2 - .1); if (!v) return;
   show($('sysL'), true);
   const p = E.out5(seg(t, a, a + .5)), cam = seg(t, a, b), out = seg(t, b - .15, b);
-  PHN.style.transform = `translateY(${(1 - p) * 600 - 30 * cam}px) scale(${1 + .03 * cam})`; PHN.style.opacity = 1 - out;
-  const z = E.io(seg(t, T.bib - .15, T.bib + .5)), sw = E.io(seg(t, T.la2 - .2, T.la2 + .2)), z2 = E.io(seg(t, T.abres - .05, T.abres + .5));
+  const big = E.io(seg(t, T.pt + .12, T.pt + .7)); PHN.style.transform = `translateY(${(1 - p) * 600 + 170 * big}px) scale(${1 + .55 * big + .03 * cam})`; PHN.style.opacity = 1 - out;
+  const z = E.io(seg(t, T.pt + .3, T.pt + 1.0)), sw = E.io(seg(t, T.la2 - .2, T.la2 + .2)), z2 = E.io(seg(t, T.abres - .05, T.abres + .5));
   $('sA').style.transform = `translateX(${-sw * 100}%) translateY(${-40 * seg(t, a, T.bib)}px) scale(${1 + .45 * z})`;
   $('hlA').style.opacity = E.out(seg(t, T.bib + .2, T.bib + .4));
   $('sB').style.transform = `translateX(${(1 - sw) * 100}%) scale(${1 + .45 * z2})`;
   const rp = seg(t, T.repi - .05, T.repi + .45); $('ripB').style.opacity = rp > 0 && rp < 1 ? .9 * (1 - rp) : 0; $('ripB').style.transform = `scale(${1 + rp * 6})`;
-  reveal(tPT, seg(t, a, a + .4)); reveal(tBIB, seg(t, T.bib - .1, T.bib + .2)); $('ubib').style.transform = `scaleX(${E.io(seg(t, T.bib + .15, T.bib + .45))})`;
+  reveal(tPT, seg(t, a, a + .4)); reveal(tBIB, seg(t, T.bib - .45, T.bib - .15)); $('ubib').style.transform = `scaleX(${E.io(seg(t, T.bib + .15, T.bib + .45))})`;
   reveal(tLRP, seg(t, T.la2 - .1, T.la2 + .3)); tBIB.style.opacity = 1 - seg(t, T.la2 - .25, T.la2 - .1);
-  tPT.style.opacity = tLRP.style.opacity = 1 - out;
+  tPT.style.opacity = 1 - seg(t, T.pt + .35, T.pt + .6); tLRP.style.opacity = 1 - out;
 }
 
 // ── 5 · CTA fijo de campaña (igual que u01/u02) ──
@@ -300,10 +300,10 @@ function webcta(t) {
     bt.style.background = '#2f6bff';
   }
 
-  const g0 = W.gal, g1 = T.cons + .1, g2 = T.tres - .1;
-  GA.forEach((g, i) => { const a = i ? g1 : g0, b = i ? g2 : g1, v = t >= a && t < b; show(g, v); if (v) place(g, 0, 0, 1080, 1920, { is: 1.12 - .06 * seg(t, a, b), dark: .4, z: 2 }); });
+  const g0 = W.gal, g2 = T.tres - .1;
+  GA.forEach((g, i) => { const a = g0, b = i ? g0 : g2, v = t >= a && t < b; show(g, v); if (v) place(g, 0, 0, 1080, 1920, { is: 1.12 - .06 * seg(t, a, b), dark: .4, z: 2 }); });
   show(tHE, t >= g0 && t < g2); show(t28, t >= g0 + .1 && t < g2); reveal(tHE, seg(t, g0, g0 + .3)); reveal(t28, seg(t, g0 + .1, g0 + .45));
-  show(t3M, t >= T.tres - .1); reveal(t3M, seg(t, T.tres - .1, T.tres + .3)); t3M.style.transform = `scale(${1 + .06 * seg(t, T.tres, T.END)})`;
+  show(t3M, t >= T.tres - .1); reveal(t3M, seg(t, T.tres - .1, T.tres + .3)); t3M.style.transform = `translateY(${-60 * seg(t, T.tres, T.END)}px) scale(${1 + .16 * seg(t, T.tres, T.END)})`;
   if (t >= W.gal) show($('web'), false);
 }
 

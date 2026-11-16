@@ -53,3 +53,13 @@ Sin voz no se publica (regla 5 de la tarea): se dejan guion, crítica y este doc
 - Audio traído por el sandbox de Higgsfield (truco del PNG).
 - Cambios de recursos frente al documento (decisión de Marta y Pau, apuntada en el log): no hay en Commons fotos libres de Flick entrenando al Barça ni de Ancelotti en Valdebebas. Gancho = **Ancelotti dirigiendo un entrenamiento** (Säbener Straße, 2017, vertical a pantalla completa); recuerdo = **entrenamiento del Real Madrid** (Johan Cruijff ArenA, Champions 2019), presentado como foto impresa con borde de papel; galería del CTA = Flick (banco) y charla del Real Madrid. Mismo concepto «la memoria que se borra».
 - Música nueva (ElevenLabs music v2.5, fa menor, pad de campanas frías con wobble de cinta, hi-hats en tresillos): variación 2, desplazada 2,85 s para que el regreso del beat caiga en «sensación», con el breakdown casi en silencio justo antes; intro +5 dB para el gancho; fundido final 1,2 s.
+
+
+## v2 · correcciones tras la auditoría del vídeo real (Marta, 16/11 11:55)
+Encargo de Andrés (tarea «Cambios en u04 antes de las 17:00», 77/100). Cambios en `tools/reel04/reel.html`, `times.js` y `mkt.py`:
+1. Cierre: fuera la segunda foto (charla del Real Madrid, 0,23 s); Flick sostiene «hasta el 28.11» de 00:20,93 a 00:22,27.
+2. Final: `END` = última palabra + 0,75 s (24,45 s). Audio: la misma mezcla de la v1 (voz, música, efectos) recortada con fundido de 0,67 s; copia con y sin música.
+3. App: el móvil crece ×1,55 desde 00:14,46 y el contenido se amplía desde 00:14,64; «LA APP DE ProTeam» se va a 00:14,9 y «BIBLIOTECA» y «la abres y lo repites.» pasan arriba, sobre fondo oscuro. «BIBLIOTECA» ≈ 1,25 s.
+4. Ficha: cabecera a 34 px, más oscura; texto «APUNTA DESPUÉS DE CADA ENTRENO» (sin «BUEN», para que quepa a ese tamaño).
+Extra: empuje del arranque al 17 % (el detector ya no marca el tramo parado de 00:00,7–02,4) y «3 meses gratis.» sube y crece en el cierre.
+Análisis nuevo en `intel/videos/u04/` (8 láminas miradas); auditoría v2: 81.

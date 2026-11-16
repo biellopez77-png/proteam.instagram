@@ -23,6 +23,6 @@ T = dict(tu=at('tu'), mejor=at('mejor', s=False), rep=at('repetir', s=False), er
          la=at('la', 2), pt=at('proteam', s=False), guarda=at('guarda', s=False), ses=at('sesiones', s=False), ejs=at('ejercicios', s=False), bib=at('biblioteca', s=False), ebib=at('biblioteca', end=True),
          la2=at('la', 3), abres=at('abres', s=False), repi=at('repites', s=False), erepi=at('repites', end=True),
          une=at('unete'), antes=at('antes', s=False), n28=at('28', s=False), nov=at('noviembre', s=False), cons=at('consigue', s=False), tres=at('tres', s=False), gratis=at('gratis', s=False))
-T['END'] = W[-1][1] + 1.6
+T['END'] = W[-1][1] + .75  # auditoría 16/11: acaba ≤ 0,8 s tras la última palabra
 T = {k: round(v, 3) for k, v in T.items()}
 open('times.js', 'w').write('window.TIMES = ' + json.dumps(T) + ';\n'); print(T)
