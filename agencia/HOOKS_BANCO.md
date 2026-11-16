@@ -1137,3 +1137,16 @@ _Los 30 más fuertes según los 8 criterios (atención, identificación, clarida
 - **H1008** [P19 inventario] Una pizarra, un silbato y treinta notas de voz sin escuchar. [organización · complicidad · general]
 - **H1009** [P20 dilema] ¿Repetir el ejercicio que salió bien o cambiarlo antes de que se aburran? [entrenamiento · duda · general]
 - **H1010** [P18 la pregunta que te hacen] «Míster, ¿qué tenemos mañana?». Y tú todavía no lo sabes. [planificación · frustración · balonmano]
+
+## Nuevos · 16/11 tarde (Dani, serie «Balonmano base», pensados para enviarse)
+Salen de las 16 aperturas de u08 y u09 (puntuación sobre 15 de la skill 01-hook-engineering). Fuente de las normas: Eskubaloia 2025 (Euskadi) y JDEE Aragón; en pantalla, siempre con la región.
+- **H1011** En Euskadi, un infantil no puede defender en 6:0. [balonmano · sorpresa · infantil] (13/15)
+- **H1012** La defensa que más partidos te gana es la que menos enseña. [formación · contradicción · general] (13/15)
+- **H1013** Ganaste de diez con la 6:0. En cadetes, ninguno sabe defender solo. [balonmano · consecuencia · infantil] (12/15)
+- **H1014** Mira la defensa de tus infantiles: seis en la línea y nadie fuera. [balonmano · observación · infantil] (12/15)
+- **H1015** Sábado, 11:00. Ganas de siete y tus centrales no han salido de los 6 metros. [balonmano · situación real · infantil] (12/15)
+- **H1016** Diez minutos de uno contra uno valen más que tu muralla. [balonmano · método · infantil] (11/15)
+- **H1017** Doce minutos con 8–8 no son doce minutos con 20–10. [minutos · comparación · base] (13/15)
+- **H1018** Darle minutos al final no es darle minutos. [minutos · contradicción · base] (13/15)
+- **H1019** Mira cuándo entra el que menos juega. Siempre al final. [minutos · observación · base] (12/15)
+- **H1020** Cumples la norma de los minutos. Y aun así le quitas el partido. [minutos · provocación · base] (12/15)

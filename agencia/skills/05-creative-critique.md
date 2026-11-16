@@ -8,6 +8,7 @@ La entrega del agente (con sus diez respuestas de control), `agencia/HISTORIAL.m
 1. **Primera impresión en frío** (antes de leer la justificación del autor): ¿seguiría mirando?, ¿qué he entendido?, ¿qué recordaré? Tres líneas, escritas antes de seguir.
 2. **Reconstruye la idea** en una frase. Si no puedes, el problema es de idea, no de ejecución: se devuelve a 01 o 04 sin entrar en detalles.
 3. **Las doce dimensiones** (`05_CRITICAL_LAB.md` §2), cada una con evidencia: la frase, la diapositiva o el segundo concreto.
+3b. **Control de crecimiento (encargo de la oficina, 16/11):** antes de puntuar, escribe en la crítica: 1) ¿a qué entrenador concreto va dirigida?; 2) ¿por qué la mandaría a su segundo o a su grupo? (si «no la mandaría», resta en Estrategia); 3) ¿qué motor alimenta (atención, contacto, captura o activación) y con qué llamada? Samuel cruza estas respuestas con los envíos reales.
 4. **Pruebas duras:**
    - Otra cuenta: ¿la publicaría igual otra marca deportiva?
    - Recorte: ¿qué frase o diapositiva se puede quitar sin pérdida? (Sobra.)

@@ -17,3 +17,16 @@ Las deja Dani (01) en cada turno de guiones por adelantado. Clara elige, marca �
 - **Objetivo:** valor + empuje de campaña (hasta el 27/11; después, sin oferta).
 - **Estructura:** portada «Noviembre es el mejor mes para corregir la temporada» → por qué ahora (primer tercio jugado, aún queda casi todo) → 1. minutos repartidos → 2. asistencia → 3. objetivos del grupo de septiembre → 4. lo que no funciona en los entrenos → plantilla guardable de revisión (4 casillas) → «La app de ProTeam: lista de espera hasta el 28 nov, 3 meses gratis. Enlace en la bio».
 - **Ojo:** «primer tercio» es una situación orientativa de la temporada de base, no una estadística.
+
+## 16/11 tarde (serie «Balonmano base»)
+### 4. «Qué defiende cada categoría: lo que ya dicen las normas de base»
+- **Insight de origen:** I-002 (la 6:0 cerrada da partidos en infantiles y no forma defensores).
+- **Objetivo:** guardados y envíos al coordinador del club (conversación de club: qué enseñamos en cada categoría).
+- **Arquitectura:** portada «Tu 6:0 de infantiles sería falta en Euskadi» → qué dicen dos normas reales, citadas con región y año: Aragón alevín (JDEE 2022-23, art. 10.3.3: 1.º y 3.º tiempo individual, 2.º y 4.º 3:3) y Euskadi infantil (Eskubaloia 2025: mínimo dos líneas, sin mixtas; aviso y golpe franco, 7 m si se repite) → por qué tiene sentido (defender a un rival antes que un espacio: interpretación, marcada como tal) → progresión propuesta alevín → infantil → cadete (recomendación, no norma) → 3 ejercicios de 10′ (1×1 sin ayudas, 2×2 con ayuda, 3:3 en dos líneas) → ficha guardable «qué defendemos en cada categoría» → «Mándaselo a tu coordinador».
+- **Ojo:** no salir el mismo día que el Reel u08. No generalizar la norma a otras federaciones: decir que cambia.
+
+### 5. «Los minutos del que menos juega: una hoja para el segundo entrenador»
+- **Insight de origen:** I-003 (los minutos obligatorios se cumplen al final, cuando ya no pesan).
+- **Objetivo:** envíos al segundo entrenador y utilidad el sábado.
+- **Arquitectura:** portada «¿Cuándo juegan tus menos habituales?» → la norma (Euskadi infantil: 12 min mínimos por jugador del acta; en otras federaciones cambia) → la escena del final con el partido decidido → tres momentos para dar esos minutos (antes del descanso, con el marcador ajustado, en una situación concreta: defensa o contraataque) → hoja del segundo: dorsal · entra · sale · minutos · momento → «Mándaselo a tu segundo».
+- **Ojo:** no repetir c09 (talento y reparto); aquí es el cuándo. No el mismo día que u09.
