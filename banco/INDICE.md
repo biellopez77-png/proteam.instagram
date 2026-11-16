@@ -26,9 +26,9 @@ Estado: `disponible`, `usada en uNN` o `pendiente`.
 
 ## Reserva de «primer fotograma» (16/11)
 Fotos de 1080 px de ancho o más, cara reconocible en el tercio superior y aire abajo para el texto. En el inventario llevan «primer fotograma» en la columna de uso.
-- **Baloncesto:**  (Pablo Laso, 2026) y  (Šarūnas Jasikevičius, 2024). Sin usar.
-- **Balonmano:**  (Nikola Karabatić, 2019),  (Dika Mem, 2019) y  (Talant Dujshebaev, 2012). Sin usar.
-- **Fútbol:**  (Ancelotti, usada en u04),  y  (Luis de la Fuente, usadas en u05) y  (Lamine Yamal, usada en u05). **Faltan dos de fútbol sin usar**: en Commons, de Flick y Simeone solo hay ruedas de prensa y alfombras rojas recientes; se buscan con los recursos de u06 y u07.
+- **Baloncesto:** `PROTEAM_ENTRENADOR_REFERENTE_FOTO_018` (Pablo Laso, 2026) y `_019` (Šarūnas Jasikevičius, 2024). Sin usar.
+- **Balonmano:** `PROTEAM_JUGADOR_REFERENTE_FOTO_002` (Nikola Karabatić, 2019), `_003` (Dika Mem, 2019) y `PROTEAM_ENTRENADOR_REFERENTE_FOTO_020` (Talant Dujshebaev, 2012). Sin usar.
+- **Fútbol:** `PROTEAM_ENTRENADOR_REFERENTE_FOTO_015` (Ancelotti, usada en u04), `_016` y `_017` (Luis de la Fuente, usadas en u05) y `PROTEAM_JUGADOR_REFERENTE_FOTO_001` (Lamine Yamal, usada en u05). **Faltan dos de fútbol sin usar**: en Commons, de Flick y Simeone solo hay ruedas de prensa y alfombras rojas recientes; se buscan con los recursos de u06 y u07.
 - Todas son de Wikimedia Commons con licencia leída en la fuente (CC BY o CC BY-SA: atribución al publicar). Referentes como ejemplo, nunca como aval.
 
 ## Huecos por cubrir (prioridad)
