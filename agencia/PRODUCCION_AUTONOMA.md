@@ -29,6 +29,15 @@ MODO GUION sobre el guion: veredicto + nota sobre 100 con desglose. Si < 75, apl
 - El concepto visual tiene que ser distinto de los «Recursos visuales ya usados» (HISTORIAL).
 - El cierre de campaña se mantiene: UI de la lista de espera igual que en u01/u02, «hasta el 28.11» sobre foto y «3 meses gratis.» en serif azul.
 
+## 2b. Arranque de cada Reel (Marta, 16/11 · bucle diario de Samuel; provisional hasta que u04 tenga 24 h)
+Antes de montar, comprueba estas cinco cosas. Salen de u04 y u03 (36–38 % de saltos en 3 s) frente a u02 y u01 (71 % y 58,5 %, unas 180 vistas). Datos del 16/11 a las 22:42; u04 llevaba 5 h y u03 2 h.
+1. **Fotograma 0:** cara o escena reconocible a pantalla completa con el texto grande ya puesto. Nunca negro, nunca texto pequeño.
+2. **Voz:** entra en 0,1 s y lo primero que dice es la pérdida concreta del entrenador (lo que tenía y ya no tiene), no una frase general.
+3. **Duración:** 24–25 s como mucho en los Reels con voz.
+4. **Ficha para guardar a la vista** (qué apuntar, tres pasos), al menos 3 s en pantalla.
+5. **Prohibido** abrir con una frase de marca o motivación y cerrar sin nada que guardar (lo de u02 y u01).
+En el documento de producción de cada Reel se escribe una línea «Arranque: 1 ✔ 2 ✔ 3 ✔ 4 ✔ 5 ✔» y, si Samuel tiene un experimento abierto, qué única cosa cambia respecto a u04. Si los datos de 24 h desmienten a u04, Samuel cambia este apartado.
+
 ## 3. Recursos (Agente 03 · skill proteam-resource-bank)
 - Las personas y los equipos son siempre reconocibles, de primer nivel. Saca primero lo que ya haya en `banco/` y busca el resto en Commons, por nombre propio, desde el sandbox de Higgsfield.
 - Copia lo que vayas a usar a `tools/reelNN/img/` y apúntalo en `banco/INVENTARIO.csv` con el estado `usada en uNN`.

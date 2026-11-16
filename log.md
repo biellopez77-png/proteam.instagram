@@ -307,3 +307,17 @@
 - Decidido: sin transcripción de la voz (el modelo no se puede descargar en el turno y no se busca otra vía); frases colocadas por silencios reales. Queda dicho en la crítica.
 - Choque de turnos: el turno de Reels de las 21:37 cogió el id u28 y el hueco de las 17:30 mientras se montaba; esta pieza pasó a u29 y a las 20:30.
 - Horizonte de 15 días: tareas nuevas para Dani (guiones de «por dentro» de fútbol y baloncesto) y Pau (primer fotograma de u25 y u26 y fotos de arranque de esos dos). Nada para Andrés ni Samuel: no hay críticas pendientes y Samuel lee los experimentos a las 22:41.
+
+## 16/11 22:15 · Turno de guiones por adelantado (Dani y Andrés) — subido en el turno de las 22:49 (parche 0006)
+- Guion u30 «Sábado: presión alta. Martes: rondo.» listo · 77/100 · fútbol («ProTeam por dentro» 2 de 3, captura real Semana 8).
+- Decidido: el «por dentro» de baloncesto no se hace en este turno. Tests físicos ya lo enseña u26 y Rutinas u28 (los dos de baloncesto); el RPE de partido tiene minutos de 52′ a 60′ y la convocatoria seis titulares (son de balonmano: imposibles en baloncesto). Repetir captura y función no pasaría la diferenciación; se hace cuando haya una captura real de baloncesto.
+- Reserva: 17 guiones criticados ≥ 75 sin producir (6 de fútbol, 6 de baloncesto, 4 de balonmano + u30). No hacían falta más.
+
+## 16/11 · 22:49 · Encargos (Laura, con Clara, Dani, Andrés y Marta)
+- Consigna de Biel («hazla») en «Comprobar las Stories de hoy»: hecha. Comprobado: 13:00 c08s salió (13:25). 17:00 c09s no salió (reprogramada al jue 19/11 17:00). 20:00 c09s2 no salió (borrador: regla de una Story al día y «quedan 11 días»). 10:30, 14:30, 16:30, 18:30 y 21:30 (parrilla nueva desde las 15:30): sin Story registrada, no salió ninguna, sin causa escrita. Para el turno de las :31: faltan las Stories del martes a las 14:30 y 18:30.
+- Dani y Andrés: dos variaciones de u04 pedidas por el bucle diario. u31 «En octubre defendían el bloqueo directo. Hoy no. No apuntaste la semana.» (baloncesto, plantillas semanales, 78) y u32 «Minuto 46. Pierdes de tres. Tiempo muerto. Ganas de cuatro.» (balonmano, cronología, 77). A la reserva.
+- Decidido: en u31 y u32 el CTA de comentar va en pantalla y en la descripción, no en la voz, para no pasar de 25 s. En u32 el marcador de la captura (26–17) queda fuera del zoom porque no encaja con la escena.
+- Marta: el arranque de u04 queda escrito como comprobación de cinco puntos en agencia/PRODUCCION_AUTONOMA.md (apartado 2b). Provisional hasta que u04 tenga 24 h.
+- Parche 0006 (guion u30) subido a GitHub.
+- Sin tocar en este turno: las dos tareas de fotos de Pau (siguen pendientes para el turno siguiente) y los «por dentro» de fútbol y baloncesto de Marta.
+- Horizonte de 15 días: nada nuevo para Andrés ni Samuel (no hay críticas pendientes; Samuel confirma u04 mañana con 24 h).
