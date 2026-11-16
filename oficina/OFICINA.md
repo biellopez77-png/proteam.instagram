@@ -11,12 +11,13 @@ Decisión de Biel: el sistema de creación de contenido y la oficina son lo mism
 | Producir un Reel | Dani, Andrés, Marta y Pau | 7:37 y 16:37 |
 | Carrusel y Story del día siguiente | Clara (con Pau y Andrés) | 21:07 |
 | Publicar y diario de métricas | Laura | 11:23, 13:23, 19:23 y 20:23 |
-| Encargos y decisiones de Biel, parte del día | Laura reparte, cada persona ejecuta | cada 2 h, de 8:49 a 22:49 |
+| Correcciones de Contenido, encargos y parte del día | Laura reparte, cada persona ejecuta | cada 2 h, de 8:49 a 22:49 |
 | Análisis y aprendizaje | Samuel | lunes 9:13 |
 
 Qué puede hacer Biel desde la oficina y qué pasa después:
 - **Encargar** (pestaña Tareas de una persona, o pidiéndoselo en el chat): lo ejecuta esa persona en el siguiente turno de encargos y el resultado aparece en la tarea («Entregado: …»). Un encargo de Reel o de carrusel lo recoge su turno fijo.
-- **Decidir sobre cada pieza** (su ficha en «te necesitan»): si no dice nada o aprueba, sale a su hora; «Pedir cambios» la saca de la cola y crea la corrección; «Rechazar» la cancela.
+- **Nada se aprueba: todo sale solo.** El equipo no pregunta; ante una duda elige lo más razonable y lo apunta en el historial.
+- **Contenido** (pestaña «Contenido» o tocando el estudio creativo en la planta): todo lo pendiente de subir (Reels con su vídeo, carruseles diapositiva a diapositiva, Stories y posts), agrupado por día, con su hora, su texto y la nota de Andrés, y lo publicado en los últimos 7 días con sus vistas. En cada pieza: «Corregir» (escribes qué cambiar: se para antes de salir y la rehace quien la hizo; vuelve a la cola corregida) o «No publicar». Hay que corregir antes de la ejecución de publicación que la sacaría (11:23, 13:23, 19:23 o 20:23); la propia tarjeta dice la hora límite.
 - **Reglas** (Aprendizajes → Regla) e **instrucciones extra** de cada persona (Más): obligatorias para todos los turnos; mandan sobre los documentos del repositorio.
 - **Parar**: tarea para Laura cuyo título empiece por «PAUSA» (o «PAUSA REELS», «PAUSA CARRUSELES», «PAUSA PUBLICACIÓN»). Se reanuda al marcarla como hecha.
 - El equipo técnico (R1–R4) no entra en estos turnos.
@@ -49,7 +50,8 @@ Límites: la voz de Claude no está en la app móvil ni en Safari; el dictado so
 ## Datos (ArtifactData con la url de la oficina)
 - `agents/<id>`: `status` (libre, trabajando, esperando, bloqueado), `currentTask`, `lastDelivery`, `instructions`, aspecto y voz.
 - `tasks/<id>`: `{agentId, title, detail, priority, state: pendiente | en curso | hecha, by, createdAt, result, doneAt, pieceId}`.
-- `approvals/a-<id>`: `{agentId, pieceId, kind, when, title, detail, state: pendiente | aprobada | cambios | rechazada, comment, decidedAt, handledAt, publishedAt, mediaId}`.
+- `pieces/<id>`: lo que sale (sincronizado desde `queue.json` con `tools/office_pieces.py`): `kind, when, status, title, caption, agentId, score, media[], cover, mediaId` + lo que escribe Biel (`fix`, `fixState: pedida | quitar`, `fixAt`) + lo que escribe el equipo (`fixState: en curso | corregida | quitada`, `fixNote`, `fixDoneAt`).
+- `approvals/<id>`: solo para lo que de verdad no se puede resolver sin Biel (créditos, credenciales).
 - `learnings/<id>`: `{agentId, text, type: regla | hecho | hipotesis, evidence, at, by}` (las reglas solo las pone Biel).
 - `log/<id>`: `{agentId, text, at, by}`. `chats/<id>`: conversaciones.
 - `meta/office`: `briefNote`, `briefAt`, `agenda`, `metrics`, `metricsAt`.
