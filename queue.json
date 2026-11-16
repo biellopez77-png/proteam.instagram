@@ -2649,5 +2649,47 @@
   "when": "2026-11-17T11:00:00+01:00",
   "cover": null,
   "note": "Agente 04 · «Te lo dejo hecho» (plan de crecimiento, t-20261116-crec-04) · captación + contacto (E4) · Andrés texto 77→81, final 83 (agencia/criticas/2026-11-16-c10-*.md)"
+ },
+ {
+  "id": "c10s",
+  "when": "2026-11-17T13:00:00+01:00",
+  "kind": "story",
+  "files": [
+   "stories/st-1117-tu-equipo-3-datos.jpg"
+  ],
+  "cover": null,
+  "status": "pending",
+  "campana": "carrusel",
+  "title": "Tu equipo en 3 datos: ¿para qué equipo hacemos el próximo plan semanal?",
+  "score": "78",
+  "note": "Story de comunidad (Clara, 04): conocer deporte, categoría y días; respuesta por mensaje; el siguiente «Te lo dejo hecho» será para la combinación más repetida. Doc agencia/carruseles/2026-11-17-stories.md · crítica agencia/criticas/2026-11-17-stories.md"
+ },
+ {
+  "id": "c10s2",
+  "when": "2026-11-17T17:00:00+01:00",
+  "kind": "story",
+  "files": [
+   "stories/st-1117-sin-minutos.jpg"
+  ],
+  "cover": null,
+  "status": "pending",
+  "campana": "carrusel",
+  "title": "¿Quién se quedó sin jugar el sábado? (informe real: SIN MINUTOS 4)",
+  "score": "83",
+  "note": "Story de producto con pantalla real (Clara, 04): informe de partido, datos de ejemplo. Sin oferta."
+ },
+ {
+  "id": "c10s3",
+  "when": "2026-11-17T20:00:00+01:00",
+  "kind": "story",
+  "files": [
+   "stories/st-1117-3-dudas.jpg"
+  ],
+  "cover": null,
+  "status": "pending",
+  "campana": "carrusel",
+  "title": "3 dudas antes de apuntarte (quedan 10 días)",
+  "score": "76",
+  "note": "Story de dudas + lista de espera (Clara, 04): deporte, qué hace, 3 meses gratis hasta el 28 nov. Pide dudas por mensaje."
  }
 ]
