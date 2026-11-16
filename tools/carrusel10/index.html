@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8">
+<style>
+@font-face{font-family:M;src:url(../fonts/manrope-latin-500-normal.woff2);font-weight:500}
+@font-face{font-family:M;src:url(../fonts/manrope-latin-700-normal.woff2);font-weight:700}
+@font-face{font-family:M;src:url(../fonts/manrope-latin-800-normal.woff2);font-weight:800}
+@font-face{font-family:S;src:url(../fonts/instrument-serif-latin-400-italic.woff2);font-style:italic}
+:root{--ink:#0d0f14;--paper:#f2f1ec;--blue:#2f6bff;--blue2:#4f86ff}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#333;font-family:M;-webkit-font-smoothing:antialiased}
+.s{width:1080px;height:1350px;position:relative;overflow:hidden;margin-bottom:20px}
+.dark{background:var(--ink);color:#f5f5f3}
+.paper{background:var(--paper);color:var(--ink)}
+.in{position:absolute;inset:90px;display:flex;flex-direction:column;z-index:2}
+.top{display:flex;justify-content:space-between;font-weight:700;font-size:24px;letter-spacing:.12em;text-transform:uppercase}
+.top>span{opacity:.6}.top>span.k{opacity:1}
+.k{font-weight:800;font-size:26px;letter-spacing:.14em;text-transform:uppercase;color:var(--blue)}
+.dark .k{color:var(--blue2)}
+.sr{font-family:S;font-style:italic;font-weight:400;color:var(--blue);letter-spacing:0}
+.dark .sr{color:var(--blue2)}
+h1,h2{font-weight:800;letter-spacing:-.025em;line-height:1.0}
+p.b{font-weight:500;font-size:34px;line-height:1.38}
+.dark p.b{color:#c9ccd4}.paper p.b{color:#3a3e48}
+.cap{font-weight:500;font-size:20px;opacity:.6}
+.photo{position:absolute;background-size:cover;background-position:center}
+/* días */
+.day{font-weight:800;font-size:150px;letter-spacing:-.04em;line-height:.9}
+.chips{display:flex;gap:16px;margin-top:30px}
+.chip{font-weight:800;font-size:28px;padding:12px 22px;border-radius:999px;border:3px solid currentColor}
+.chip.f{background:var(--blue);border-color:var(--blue);color:#fff}
+.tbar{display:flex;height:34px;gap:5px;margin:46px 0 16px}
+.tbar i{display:block;border-radius:6px;background:#c9c6bc}
+.dark .tbar i{background:#2b313d}
+.tbar i.o{background:var(--blue)}
+.tbl{font-weight:700;font-size:22px;letter-spacing:.08em;text-transform:uppercase;opacity:.55;display:flex;justify-content:space-between}
+.tasks{margin-top:22px}
+.t{display:grid;grid-template-columns:150px 1fr;align-items:baseline;padding:20px 0;border-top:2px solid #d9d7cf}
+.dark .t{border-top-color:#262b36}
+.t .m{font-weight:800;font-size:56px;letter-spacing:-.03em;line-height:1}
+.t .x{font-weight:700;font-size:36px;line-height:1.2}
+.t.o .m,.t.o .x{color:var(--blue)}
+.dark .t.o .m,.dark .t.o .x{color:var(--blue2)}
+.note{margin-top:auto;font-weight:500;font-size:30px;line-height:1.35}
+.paper .note{color:#3a3e48}.dark .note{color:#c9ccd4}
+.r3{display:grid;grid-template-columns:80px 1fr;align-items:baseline;padding:22px 0;border-top:2px solid #262b36}
+.r3 .n{font-weight:800;font-size:34px;color:var(--blue2)}
+.r3 .x{font-weight:700;font-size:40px;line-height:1.18}
+.wk{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;align-items:end;height:400px;margin-top:70px}
+.wk .c{display:flex;flex-direction:column;justify-content:flex-end;height:100%}
+.wk .bar{border-radius:12px;background:#2b313d}
+.wk .bar.o{background:var(--blue)}
+.wk .l{font-weight:800;font-size:40px;margin-top:18px}
+.wk .s2{font-weight:500;font-size:24px;color:#a9adb7;margin-top:4px}
+.cta{border:3px solid var(--blue2);border-radius:28px;padding:40px 44px;margin-top:56px}
+</style></head><body>
+
+<!-- 1 PORTADA -->
+<div class="s dark">
+  <div class="photo" style="inset:0;background-image:url(../../banco/fotos/PROTEAM_JUGADOR_REFERENTE_FOTO_003.jpg);background-position:center 18%"></div>
+  <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(13,15,20,.8) 0%,rgba(13,15,20,0) 20%,rgba(13,15,20,0) 38%,rgba(13,15,20,.92) 62%,#0d0f14 80%)"></div>
+  <div class="in">
+    <div class="top"><span class="k">Te lo dejo hecho</span><span>01 / 08</span></div>
+    <div style="margin-top:auto">
+      <div class="k" style="margin-bottom:26px">Balonmano · Infantil</div>
+      <h1 style="font-size:104px">Tu semana<br>de entrenos,<br><span class="sr" style="font-size:118px">ya hecha.</span></h1>
+      <p class="b" style="margin-top:34px;color:#e4e6ea">Lunes, miércoles y viernes con minutos y carga. Y qué mirar el sábado.</p>
+      <div style="display:flex;justify-content:space-between;margin-top:34px;align-items:flex-end">
+        <span class="cap">Dika Mem con Francia, Mundial 2019 · Foto: dronepicr (Wikimedia Commons)</span>
+        <span style="font-weight:800;font-size:24px;letter-spacing:.14em">DESLIZA →</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 2 PROBLEMA -->
+<div class="s dark">
+  <div class="photo" style="right:0;top:0;width:480px;height:1350px;background-image:url(../../banco/fotos/PROTEAM_ENTRENADOR_REFERENTE_FOTO_020.jpg);background-position:42% center"></div>
+  <div style="position:absolute;right:0;top:0;width:480px;height:1350px;background:linear-gradient(90deg,#0d0f14 0%,rgba(13,15,20,.0) 30%,rgba(13,15,20,0) 70%,rgba(13,15,20,.75) 100%)"></div>
+  <div class="in" style="right:auto;width:500px">
+    <div class="top"><span class="k">El problema</span></div>
+    <div style="margin-top:150px;font-weight:800;font-size:150px;letter-spacing:-.04em;line-height:.9">22:40</div>
+    <div class="k" style="margin-top:18px">Domingo</div>
+    <h2 style="font-size:72px;margin-top:70px">Mañana entrenas y&nbsp;aún <span class="sr" style="font-size:82px">no sabes qué.</span></h2>
+    <p class="b" style="margin-top:44px">En la élite, la semana la prepara un cuerpo técnico entero. En la base, la preparas tú.</p>
+    <div class="cap" style="margin-top:auto;margin-bottom:28px">Talant Dujshebaev · Foto: Doha Stadium Plus Qatar (CC BY 2.0)</div>
+    <div style="font-weight:800;font-size:30px">Aquí la tienes →</div>
+  </div>
+  <div style="position:absolute;right:90px;top:90px;z-index:3;font-weight:700;font-size:24px;letter-spacing:.12em;opacity:.6">02 / 08</div>
+  
+</div>
+
+<!-- 3 OBJETIVO -->
+<div class="s paper">
+  <div class="in">
+    <div class="top"><span class="k">Objetivo de la semana · guárdalo</span><span>03 / 08</span></div>
+    <h2 style="font-size:96px;margin-top:56px">Fijar antes<br><span class="sr" style="font-size:108px">de pasar.</span></h2>
+    <svg viewBox="0 0 900 600" width="900" height="600" style="margin-top:40px">
+      <defs>
+        <marker id="ab" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#2f6bff"/></marker>
+        <marker id="ak" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#0d0f14"/></marker>
+      </defs>
+      <rect x="2" y="2" width="896" height="596" rx="18" fill="#e8e6df"/>
+      <line x1="2" y1="30" x2="898" y2="30" stroke="#0d0f14" stroke-width="4"/>
+      <rect x="383" y="10" width="134" height="20" fill="none" stroke="#0d0f14" stroke-width="4"/>
+      <!-- 6 m -->
+      <path d="M113 30 A270 270 0 0 0 383 300 L517 300 A270 270 0 0 0 787 30" fill="#d6d3ca" stroke="#0d0f14" stroke-width="4"/>
+      <!-- 9 m -->
+      <path d="M2 248 A405 405 0 0 0 383 435 L517 435 A405 405 0 0 0 898 248" fill="none" stroke="#0d0f14" stroke-width="3" stroke-dasharray="14 12"/>
+      <!-- recorrido atacante con balón -->
+      <path d="M660 540 L612 412" stroke="#0d0f14" stroke-width="5" fill="none" marker-end="url(#ak)"/>
+      <!-- defensor sale -->
+      <path d="M560 300 L590 352" stroke="#0d0f14" stroke-width="4" fill="none" stroke-dasharray="8 8" marker-end="url(#ak)"/>
+      <!-- pase -->
+      <path d="M600 396 Q470 360 352 386" stroke="#2f6bff" stroke-width="6" fill="none" stroke-dasharray="16 12" marker-end="url(#ab)"/>
+      <!-- lanzamiento -->
+      <path d="M330 362 L430 50" stroke="#2f6bff" stroke-width="6" fill="none" marker-end="url(#ab)"/>
+      <!-- jugadores -->
+      <circle cx="660" cy="552" r="26" fill="#0d0f14"/><text x="660" y="562" font-family="M" font-weight="800" font-size="26" fill="#fff" text-anchor="middle">1</text>
+      <circle cx="330" cy="392" r="26" fill="#2f6bff"/><text x="330" y="402" font-family="M" font-weight="800" font-size="26" fill="#fff" text-anchor="middle">2</text>
+      <g transform="translate(548 282)"><line x1="-18" y1="-18" x2="18" y2="18" stroke="#0d0f14" stroke-width="7"/><line x1="18" y1="-18" x2="-18" y2="18" stroke="#0d0f14" stroke-width="7"/></g>
+      <text x="40" y="568" font-family="M" font-weight="700" font-size="22" fill="#5a5e68">1 ataca al defensor · cuando sale, pasa · 2 lanza libre</text>
+    </svg>
+    <p class="b" style="margin-top:auto">Con balón, ve a por el defensor. Cuando salga a por ti, pasa al que se queda libre. <b style="color:#0d0f14">Es la base del 2×1.</b></p>
+  </div>
+</div>
+
+<!-- 4 LUNES -->
+<div class="s paper">
+  <div class="in">
+    <div class="top"><span class="k">Sesión 1</span><span>04 / 08</span></div>
+    <div class="day" style="margin-top:50px">Lunes</div>
+    <div class="chips"><span class="chip">90 min</span><span class="chip">Carga media · RPE 5–6</span></div>
+    <div class="tbar"><i style="flex:12"></i><i class="o" style="flex:18"></i><i class="o" style="flex:20"></i><i style="flex:12"></i><i class="o" style="flex:20"></i><i style="flex:8"></i></div>
+    <div class="tbl"><span>0′</span><span>en azul, el objetivo</span><span>90′</span></div>
+    <div class="tasks">
+      <div class="t"><span class="m">12′</span><span class="x">Pases en carrera por parejas</span></div>
+      <div class="t o"><span class="m">18′</span><span class="x">1×1 con apoyo: ataca y pasa</span></div>
+      <div class="t o"><span class="m">20′</span><span class="x">2×1 en oleadas desde medio campo</span></div>
+      <div class="t"><span class="m">12′</span><span class="x">Lanzamiento tras pase, con portero</span></div>
+      <div class="t o"><span class="m">20′</span><span class="x">4×4: el gol tras un 2×1 vale doble</span></div>
+      <div class="t"><span class="m">8′</span><span class="x">Qué ha salido y qué no</span></div>
+    </div>
+    <p class="note"><b>RPE:</b> del 1 al 10, cuánto les ha costado. Se pregunta a cada uno al acabar.</p>
+  </div>
+</div>
+
+<!-- 5 MIÉRCOLES -->
+<div class="s dark">
+  <div class="in">
+    <div class="top"><span class="k">Sesión 2 · el día fuerte</span><span>05 / 08</span></div>
+    <div class="day" style="margin-top:50px">Miércoles</div>
+    <div class="chips"><span class="chip">90 min</span><span class="chip f">Carga alta · RPE 7</span></div>
+    <div class="tbar"><i style="flex:12"></i><i class="o" style="flex:20"></i><i style="flex:15"></i><i class="o" style="flex:15"></i><i class="o" style="flex:20"></i><i style="flex:8"></i></div>
+    <div class="tbl"><span>0′</span><span>90′</span></div>
+    <div class="tasks">
+      <div class="t"><span class="m">12′</span><span class="x">Juego de los 10 pases</span></div>
+      <div class="t o"><span class="m">20′</span><span class="x">3×2: encontrar al libre fijando</span></div>
+      <div class="t"><span class="m">15′</span><span class="x">Defensa 1×1: pies antes que manos</span></div>
+      <div class="t o"><span class="m">15′</span><span class="x">Contraataque 3×2 que acaba en 2×1</span></div>
+      <div class="t o"><span class="m">20′</span><span class="x">6×6 con defensa individual o 3:3</span></div>
+      <div class="t"><span class="m">8′</span><span class="x">Qué ha salido y qué no</span></div>
+    </div>
+    <p class="note">El objetivo, con oposición y a ritmo de partido.</p>
+  </div>
+</div>
+
+<!-- 6 VIERNES -->
+<div class="s paper">
+  <div class="in">
+    <div class="top"><span class="k">Sesión 3 · antes del partido</span><span>06 / 08</span></div>
+    <div class="day" style="margin-top:50px">Viernes</div>
+    <div class="chips"><span class="chip">70 min</span><span class="chip">Carga baja · RPE 4</span></div>
+    <div class="tbar" style="width:77.8%"><i style="flex:12"></i><i class="o" style="flex:18"></i><i style="flex:15"></i><i style="flex:18"></i><i style="flex:7"></i></div>
+    <div class="tbl" style="width:77.8%"><span>0′</span><span>70′</span></div>
+    <div class="tasks">
+      <div class="t"><span class="m">12′</span><span class="x">Juegos de reacción con balón</span></div>
+      <div class="t o"><span class="m">18′</span><span class="x">2×1 en oleadas cortas, sin prisa</span></div>
+      <div class="t"><span class="m">15′</span><span class="x">7 metros (2 cada uno) y saque de centro</span></div>
+      <div class="t"><span class="m">18′</span><span class="x">6×6: dos partes de 7′, pausa larga</span></div>
+      <div class="t"><span class="m">7′</span><span class="x">Una consigna para el sábado</span></div>
+    </div>
+    <p class="note">Llegar fresco: menos minutos y nada nuevo.</p>
+  </div>
+</div>
+
+<!-- 7 SÁBADO -->
+<div class="s dark">
+  <div class="photo" style="left:0;top:0;width:1080px;height:560px;background-image:url(../../banco/fotos/PROTEAM_INSTALACION_PABELLON_PARTIDO_FOTO_001.jpg);background-position:center 35%"></div>
+  <div style="position:absolute;left:0;top:0;width:1080px;height:560px;background:linear-gradient(180deg,rgba(13,15,20,.55) 0%,rgba(13,15,20,0) 25%,rgba(13,15,20,0) 60%,#0d0f14 100%)"></div>
+  <div class="in">
+    <div class="top"><span class="k" style="color:#fff">Sábado · partido</span><span>07 / 08</span></div>
+    <div style="margin-top:auto">
+      <h2 style="font-size:72px">Una consigna:<br><span class="sr" style="font-size:84px">fija antes de pasar.</span></h2>
+      <p class="b" style="margin-top:30px;margin-bottom:14px">Y tu segundo apunta tres cosas:</p>
+      <div class="r3"><span class="n">1</span><span class="x">2×1 que acaban en lanzamiento claro</span></div>
+      <div class="r3"><span class="n">2</span><span class="x">Balones perdidos por pasar sin fijar</span></div>
+      <div class="r3"><span class="n">3</span><span class="x">Minutos de cada jugador</span></div>
+      <p class="note" style="margin-top:28px">El lunes, eso decide el objetivo de la semana siguiente.</p>
+    </div>
+  </div>
+  <div class="cap" style="position:absolute;right:90px;top:500px;z-index:3">Foto: Steffen Prößdorf (CC BY-SA 4.0)</div>
+</div>
+
+<!-- 8 CIERRE -->
+<div class="s dark">
+  <div class="in">
+    <div class="top"><span class="k">Tu semana · guárdala</span><span>08 / 08</span></div>
+    <div class="wk">
+      <div class="c"><div class="bar o" style="height:58%"></div><div class="l">Lun</div><div class="s2">90′ · media</div></div>
+      <div class="c"><div class="bar o" style="height:82%"></div><div class="l">Mié</div><div class="s2">90′ · alta</div></div>
+      <div class="c"><div class="bar o" style="height:36%"></div><div class="l">Vie</div><div class="s2">70′ · baja</div></div>
+      <div class="c"><div class="bar" style="height:100%;background:repeating-linear-gradient(135deg,#2b313d 0 14px,#1c2029 14px 28px)"></div><div class="l">Sáb</div><div class="s2">partido</div></div>
+    </div>
+    <p style="font-weight:700;font-size:34px;margin-top:40px;color:#c9ccd4">Toda la semana, un objetivo: <span class="sr" style="font-size:42px">fijar antes de pasar.</span></p>
+    <div class="cta" style="margin-top:44px">
+      <p style="font-weight:700;font-size:40px;line-height:1.2">¿Otra categoría u otros días?</p>
+      <p class="sr" style="font-size:84px;line-height:1.05;margin-top:12px">Respóndeme y<br>te la preparo.</p>
+    </div>
+    <p class="note" style="font-size:24px;opacity:.75">Propuesta orientativa para infantil (12–13 años): ajusta los minutos a tu pista y a tu grupo. En la app de ProTeam, la semana, la carga y el partido quedan en un mismo sitio.</p>
+  </div>
+</div>
+
+</body></html>
