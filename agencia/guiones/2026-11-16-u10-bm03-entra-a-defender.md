@@ -2,6 +2,7 @@
 
 > **Oficina, 16/11 13:15:** el cierre pide **comentar** (nadie puede leer los mensajes privados) y la fecha es «hasta el 27 de noviembre» (HASTA EL 27 NOV). Ya aplicado en la voz, la pantalla y la descripción de este guion.
 - **Estado: listo para producir** · **Crítica de Andrés: 80/100** (guion, escala 16/11) · riesgo de salto medio
+- **Alcance 16/11 (Dani, 16/11 14:30):** revisado. Abre con número o escena ✔. Añadido el reto final al cuerpo técnico (línea 8, +12 palabras ≈ +3,5 s) y «Envíaselo a tu segundo entrenador» en la descripción.
 - **Serie:** «Balonmano base» (plan de crecimiento, encargo t-20261116-crec-01), capítulo 3 de 4.
 - **Insight:** I-004 (`intel/insights/INSIGHTS.md`) · **Territorio:** decisiones pequeñas que condicionan la temporada.
 - **Tema:** el cambio ataque-defensa en infantiles · **Problema:** el entrenador gana una defensa cada vez que lo hace y el jugador se queda sin aprender la otra mitad del juego.
@@ -30,6 +31,7 @@ Todos dan por hecho que cambiar al especialista es «gestionar el partido», per
 | 5 | Cierre | A los doce, nadie es especialista. | contesta al hook |
 | 6 | CTA | Comenta tu categoría y tus días: te preparo la semana en la app de Pro Team. | experimento E4 |
 | 7 | CTA FINAL | Lista de espera hasta el veintisiete de noviembre: tres meses gratis. | campaña (solo hasta el 27/11) |
+| 8 | Reto | Pregúntale a tu segundo: ¿quién no ha atacado en todo el año? | reto para el cuerpo técnico (alcance 16/11) |
 
 **73 palabras · ≈24,5 s** (a 2,97 palabras/s, medido en u04). Sin pausa antes del CTA. Silencio corto antes de «doce años» (golpe de música).
 Desde el 28/11: se quita la línea 7.
@@ -49,6 +51,7 @@ En el partido de entrenamiento no hay cambios al recuperar el balón: el que ha 
 Entra a defender, sale a atacar. Y tiene 12 años. 🤾
 Guárdalo: esta semana, en el partidillo, quien defiende ataca la siguiente. Mándaselo a tu segundo.
 En los Juegos Escolares de Euskadi, en infantiles, no se permiten los cambios de especialistas solo en ataque o solo en defensa (normativa 2025). En otras federaciones la norma cambia.
+Envíaselo a tu segundo entrenador.
 Comenta tu categoría y tus días y te preparo la semana en la app de ProTeam. Lista de espera hasta el 27 de noviembre: 3 meses gratis. Enlace en la bio.
 ¿Cambias ataque-defensa con tus infantiles? 👇
 

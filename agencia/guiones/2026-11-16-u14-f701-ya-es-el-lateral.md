@@ -1,6 +1,7 @@
 # u14 · f7-01 · «Tiene nueve años y ya es «el lateral».»
 
 - **Estado: listo para producir** · **Crítica de Andrés: 79/100** (guion, escala 16/11) · riesgo de salto bajo
+- **Alcance 16/11 (Dani, 16/11 14:30):** revisado. Abre con número o escena ✔. Añadido el reto final al cuerpo técnico (línea 7, +14 palabras ≈ +3,5 s) y «Envíaselo a tu segundo entrenador» en la descripción.
 - **Deporte:** fútbol 7 (benjamín y alevín) · **Encargos:** t-20261116-multideporte-01 (tres deportes por igual) y t-20261116-01-reserva-jue-sab.
 - **Insight:** I-008 (`intel/insights/INSIGHTS.md`) · **Territorio:** decisiones pequeñas que condicionan la temporada; errores normalizados.
 - **Tema:** rotar posiciones en fútbol 7 usando los cuatro tiempos · **Problema:** al niño se le fija una posición en septiembre porque así el equipo funciona el sábado, y se queda sin conocer el resto del campo.
@@ -28,6 +29,7 @@ Todos fijan posiciones a los nueve años porque ordena el sábado, pero el parti
 | 4 | Cierre | A los nueve no se es lateral. Se es futbolista. | contesta al hook |
 | 5 | CTA | Comenta deporte, categoría y días: te preparo la semana en la app de Pro Team. | contacto (E4), tres deportes |
 | 6 | CTA FINAL | Lista de espera hasta el veintisiete de noviembre: tres meses gratis. | campaña (solo hasta el 27/11) |
+| 7 | Reto | Pregúntale a tu segundo: ¿quién de tu equipo solo ha jugado en una línea? | reto para el cuerpo técnico (alcance 16/11) |
 
 **70 palabras · ≈23,5 s** (contadas sobre la tabla, al ritmo de u11). Sin pausa antes del CTA. Silencio corto antes de «el lateral».
 Desde el 28/11: se quita la línea 6.
@@ -48,6 +50,7 @@ Una regla para el sábado: en cada tiempo el jugador cambia de línea (defensa, 
 Tiene 9 años y ya es «el lateral». ⚽
 Guárdalo: en fútbol 7, cada tiempo una línea distinta (defensa, medio, ataque) y nadie repite dos tiempos seguidos. Es una propuesta, no una norma. Mándaselo a tu coordinador.
 En los Juegos Deportivos Municipales de Sevilla (circular 2025-26), benjamines y alevines juegan 4 tiempos de 12 minutos y todos participan al menos en uno completo. En otras competiciones cambia.
+Envíaselo a tu segundo entrenador.
 Comenta tu deporte, tu categoría y tus días y te preparo la semana en la app de ProTeam. Lista de espera hasta el 27 de noviembre: 3 meses gratis. Enlace en la bio.
 ¿A qué edad fijas las posiciones en tu equipo? 👇
 

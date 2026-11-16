@@ -21,7 +21,7 @@ Cada semana, como mínimo 2 piezas de fútbol, 2 de baloncesto y 2 de balonmano;
 | día | 13:30 | 17:00 | 20:30 |
 |---|---|---|---|
 | Mar 17 | u05 «Un 3-0…» (programado) | u06 carga · fútbol (por montar) | u07 «Ya lo miramos el lunes» · fútbol (por montar) |
-| Mié 18 | u08 · balonmano | F-1 · fútbol 11 (por escribir) | B-1 · baloncesto (por escribir) |
+| Mié 18 | u08 · balonmano | **u15 · fútbol 11** (F-1) | **u16 · baloncesto** (B-1) |
 | Jue 19 | u09 · balonmano | **u12 · minibasket** | F-2 · fútbol 7 (por escribir) |
 | Vie 20 | F-3 · fútbol (por escribir) | **u13 · baloncesto** | u10 · balonmano |
 | Sáb 21 | **u14 · fútbol 7** | u11 · balonmano | B-2 · baloncesto (por escribir) |
@@ -81,4 +81,4 @@ Ningún carrusel sale el mismo día que el Reel del mismo tema (u14 ↔ idea 7, 
 ## Lo que falta para cumplirlo
 - Montaje: hay 9 guiones listos y ninguno montado después de u05. El cuello de botella es la producción, no los guiones.
 - Fotograma 0 de u12, u13 y u14: banquillo de baloncesto, entrenamiento de un grande y cantera (sin menores en primer plano). Para Pau.
-- Guiones por escribir en la semana 1: F-1, F-2, F-3, F-4, B-1, B-2, B-3 y BM-5.
+- Guiones por escribir en la semana 1: F-2, F-3, F-4, B-2, B-3 y BM-5 (F-1 = u15 y B-1 = u16, escritos el 16/11 14:30). u06 y u07 descartados por la regla de alcance.

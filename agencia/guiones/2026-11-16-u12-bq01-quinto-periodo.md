@@ -1,6 +1,7 @@
 # u12 · bq-01 · «Quinto periodo. Y tú, contando cruces en el acta.»
 
 - **Estado: listo para producir** · **Crítica de Andrés: 80/100** (guion, escala 16/11) · riesgo de salto medio
+- **Alcance 16/11 (Dani, 16/11 14:30):** revisado. Abre con número o escena ✔. Añadido el reto final al cuerpo técnico (línea 7, +12 palabras ≈ +3,5 s) y «Envíaselo a tu segundo entrenador» en la descripción.
 - **Deporte:** baloncesto (minibasket) · **Encargos:** t-20261116-multideporte-01 (tres deportes por igual) y t-20261116-01-reserva-jue-sab.
 - **Insight:** I-006 (`intel/insights/INSIGHTS.md`) · **Territorio:** lo que pasa entre entreno y partido; apagar fuegos.
 - **Tema:** repartir los periodos de minibasket antes del partido · **Problema:** el reparto obligatorio se resuelve durante el partido, con el acta en la mano, y el entrenador deja de mirar el juego.
@@ -28,6 +29,7 @@ Todos tratan el reparto de periodos como algo que se va cumpliendo durante el pa
 | 4 | Cierre | Y el sábado miras el partido, no el acta. | contesta al hook |
 | 5 | CTA | Comenta deporte, categoría y días: te preparo la semana en la app de Pro Team. | contacto (E4), tres deportes |
 | 6 | CTA FINAL | Lista de espera hasta el veintisiete de noviembre: tres meses gratis. | campaña (solo hasta el 27/11) |
+| 7 | Reto | Pregúntale a tu segundo: ¿quién llevaba el acta en el quinto periodo? | reto para el cuerpo técnico (alcance 16/11) |
 
 **70 palabras · ≈23,5 s** (contadas sobre la tabla, al ritmo de u11). Sin pausa antes del CTA. Silencio corto antes de «contando cruces».
 Desde el 28/11: se quita la línea 6.
@@ -48,6 +50,7 @@ Una hoja con seis casillas (una por periodo) y los doce nombres: se colocan prim
 Quinto periodo, partido igualado y tú contando cruces en el acta. 🏀
 Guárdalo: el viernes, una hoja con seis casillas. Coloca primero los dos periodos de los que menos juegan; el sexto, libre. Mándaselo a tu delegado.
 En el minibasket de Extremadura (normativa 2024-25, ligas locales) cada jugador juega al menos 2 periodos completos de los 5 primeros y no hay cambios en ellos. En otras federaciones la norma cambia.
+Envíaselo a tu segundo entrenador.
 Comenta tu deporte, tu categoría y tus días y te preparo la semana en la app de ProTeam. Lista de espera hasta el 27 de noviembre: 3 meses gratis. Enlace en la bio.
 ¿Llevas los quintetos hechos de casa o los decides en el banquillo? 👇
 

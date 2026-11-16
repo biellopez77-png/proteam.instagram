@@ -2,6 +2,7 @@
 
 > **Oficina, 16/11 13:15:** el cierre pide **comentar** (nadie puede leer los mensajes privados) y la fecha es «hasta el 27 de noviembre» (HASTA EL 27 NOV). Ya aplicado en la voz, la pantalla y la descripción de este guion.
 - **Estado: listo para producir** · **Crítica de Andrés: 80/100** (guion, escala 16/11) · riesgo de salto medio-bajo
+- **Alcance 16/11 (Dani, 16/11 14:30):** revisado. Abre con número o escena ✔. Añadido el reto final al cuerpo técnico (línea 8, +10 palabras ≈ +3,5 s) y «Envíaselo a tu segundo entrenador» en la descripción.
 - **Serie:** «Balonmano base» (plan de crecimiento, encargo t-20261116-crec-01), capítulo 2 de 4. Cuenta también como u09 de la reserva (encargo t-01-reserva-u08-u09).
 - **Insight:** I-003 (`intel/insights/INSIGHTS.md`) · **Territorio:** decisiones pequeñas que condicionan la temporada.
 - **Tema:** minutos obligatorios en infantiles · **Problema:** se cumplen al final, cuando ya no pesan, y el jugador aprende que sus minutos no cuentan.
@@ -21,6 +22,7 @@ Todos dan por hecho que con cumplir los minutos obligatorios basta, pero si lleg
 | 5 | BCL 4 | Mándaselo a tu segundo: que él lleve el reloj. | motivo para enviar + reparto de tareas |
 | 6 | CTA | Comenta tu categoría y tus días: te preparo la semana en la app de Pro Team. | experimento E4 |
 | 7 | CTA FINAL | Lista de espera hasta el veintisiete de noviembre: tres meses gratis. | campaña (solo hasta el 27/11) |
+| 8 | Reto | Pregúntale a tu segundo: ¿cuándo entró el último el sábado? | reto para el cuerpo técnico (alcance 16/11) |
 
 **75 palabras · ≈25 s.** Sin pausa antes del CTA. Silencio corto antes de «últimos» (golpe de música).
 Desde el 28/11: se quita la línea 7.
@@ -40,6 +42,7 @@ Los minutos del que menos juega, antes del descanso y con el partido en juego; e
 Juega sus 12 minutos. Siempre los últimos. ⏱️
 Guárdalo: este sábado, que sus minutos lleguen antes del descanso y con el marcador vivo. Mándaselo a tu segundo y que lleve él el reloj.
 En los Juegos Escolares de Euskadi cada infantil del acta juega al menos 12 minutos (normativa 2025); en otras federaciones la norma cambia o no existe, pero la pregunta es la misma: ¿cuándo se los das?
+Envíaselo a tu segundo entrenador.
 Comenta tu categoría y tus días y te preparo la semana en la app de ProTeam. Lista de espera hasta el 27 de noviembre: 3 meses gratis. Enlace en la bio.
 ¿Cuándo entran tus menos habituales: primera parte o al final? 👇
 

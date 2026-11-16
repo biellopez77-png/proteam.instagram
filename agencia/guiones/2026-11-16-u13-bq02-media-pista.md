@@ -1,6 +1,7 @@
 # u13 · bq-02 · «Tu entreno está pensado para pista entera. Los martes tienes media.»
 
 - **Estado: listo para producir** · **Crítica de Andrés: 76/100** (guion, escala 16/11) · riesgo de salto medio
+- **Alcance 16/11 (Dani, 16/11 14:30):** revisado. Abre con número o escena ✔. Añadido el reto final al cuerpo técnico (línea 7, +11 palabras ≈ +3,5 s) y «Envíaselo a tu segundo entrenador» en la descripción.
 - **Deporte:** baloncesto (base, cualquier categoría) · **Encargos:** t-20261116-multideporte-01 (tres deportes por igual) y t-20261116-01-reserva-jue-sab.
 - **Insight:** I-007 (`intel/insights/INSIGHTS.md`) · **Territorio:** lo que el entrenador quiere hacer frente a lo que acaba haciendo.
 - **Tema:** planificar la sesión para el espacio que de verdad hay · **Problema:** la sesión se escribe para una pista entera y se entrena en media: sobran filas y faltan repeticiones.
@@ -28,6 +29,7 @@ Todos escriben la sesión ideal y la recortan al llegar, pero la sesión buena e
 | 4 | Cierre | Media pista, sesión entera. | contesta al hook |
 | 5 | CTA | Comenta deporte, categoría y días: te preparo la semana en la app de Pro Team. | contacto (E4), tres deportes |
 | 6 | CTA FINAL | Lista de espera hasta el veintisiete de noviembre: tres meses gratis. | campaña (solo hasta el 27/11) |
+| 7 | Reto | Reto para tu segundo: ¿qué tarea vuestra cabe en media pista? | reto para el cuerpo técnico (alcance 16/11) |
 
 **70 palabras · ≈23,5 s** (contadas sobre la tabla, al ritmo de u11). Sin pausa antes del CTA. Silencio corto antes de «tienes media».
 Desde el 28/11: se quita la línea 6.
@@ -47,6 +49,7 @@ Tres tareas que caben en media pista con una canasta y sin filas largas: uno con
 ## Descripción propuesta
 Planificas para pista entera y los martes tienes media. 🏀
 Guárdalo: tres tareas que caben en media pista sin filas (1×1 desde bote, 3×3 sin bote, tiro con rebote). Son una propuesta, adáptalas a tu categoría.
+Envíaselo a tu segundo entrenador.
 Comenta tu deporte, tu categoría y tus días y te preparo la semana en la app de ProTeam. Lista de espera hasta el 27 de noviembre: 3 meses gratis. Enlace en la bio.
 ¿Cuántos días a la semana entrenas con media pista? 👇
 

@@ -2,6 +2,7 @@
 
 > **Oficina, 16/11 13:15:** el cierre pide **comentar** (nadie puede leer los mensajes privados) y la fecha es «hasta el 27 de noviembre» (HASTA EL 27 NOV). Ya aplicado en la voz, la pantalla y la descripción de este guion.
 - **Estado: listo para producir** · **Crítica de Andrés: 81/100** (guion, escala 16/11) · riesgo de salto medio
+- **Alcance 16/11 (Dani, 16/11 14:30):** revisado. Abre con número o escena ✔. Añadido el reto final al cuerpo técnico (línea 8, +11 palabras ≈ +3,5 s) y «Envíaselo a tu segundo entrenador» en la descripción.
 - **Serie:** «Balonmano base» (plan de crecimiento, encargo t-20261116-crec-01), capítulo 1 de 4. Cuenta también como u08 de la reserva (encargo t-01-reserva-u08-u09).
 - **Insight:** I-002 (`intel/insights/INSIGHTS.md`) · **Territorio:** creencias que merecen cuestionarse (entrenar para ganar frente a entrenar para formar).
 - **Tema:** sistema defensivo en infantiles · **Problema:** la 6:0 cerrada da partidos y no forma defensores.
@@ -21,6 +22,7 @@ Todos dan por hecho que la 6:0 es «la defensa del balonmano», pero en infantil
 | 5 | Cierre | El seis cero puede esperar a cadetes. | contesta al hook |
 | 6 | CTA | Comenta tu categoría y tus días: te preparo la semana en la app de Pro Team. | experimento E4 |
 | 7 | CTA FINAL | Lista de espera hasta el veintisiete de noviembre: tres meses gratis. | campaña (solo hasta el 27/11) |
+| 8 | Reto | Pregúntale a tu segundo: ¿cuántos uno contra uno defendieron el sábado? | reto para el cuerpo técnico (alcance 16/11) |
 
 **75 palabras · ≈25 s** (2,97 palabras/s medido en u04). Sin pausa antes del CTA. Silencio corto antes de «problema» (golpe de música).
 Desde el 28/11: se quita la línea 7 y la 6 queda igual.
@@ -40,6 +42,7 @@ Diez minutos de uno contra uno sin ayudas esta semana, y la defensa en dos líne
 Tu 6:0 te da partidos en infantiles. Y a nadie le enseña a defender solo. 🤾
 Guárdalo: esta semana, 10 minutos de 1×1 sin ayudas. Mándaselo a quien lleva los alevines del club.
 En los Juegos Escolares de Euskadi, un infantil está obligado a defender en dos líneas (normativa 2025). En otras federaciones la norma cambia.
+Envíaselo a tu segundo entrenador.
 Comenta tu categoría y tus días y te preparo la semana en la app de ProTeam. Lista de espera hasta el 27 de noviembre: 3 meses gratis. Enlace en la bio.
 ¿Qué defiendes tú con infantiles? 👇
 

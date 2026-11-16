@@ -1,6 +1,6 @@
 # u06 · «Las piernas de tus jugadores llevan la cuenta»
 
-- **Estado: listo para producir** · **Crítica de Andrés: 81/100** (guion) · riesgo de salto medio
+- **Estado: descartado (alcance 16/11)** · motivo: abre con una metáfora («las piernas llevan la cuenta») y no con número, partido o escena; sin deporte; cierra con «únete a la lista» y fecha del 28. Antes: listo para producir · **Crítica de Andrés: 81/100** (guion) · riesgo de salto medio
 - **Hook:** H0688 (banco, Top 30 n.º 18) · Patrón 14 (otra cámara) + 7 (su mundo y el tuyo) + 9 (método).
 - **Tema:** control de la carga (RPE) · **Problema:** la fatiga se acumula aunque el entrenador no la mida; solo se ve cuando ya hay lesiones o piernas vacías.
 - **Emoción:** sorpresa → reconocimiento → alivio (hay una forma simple). **Palabra de impacto:** CUENTA.

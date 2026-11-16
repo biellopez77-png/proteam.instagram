@@ -2,6 +2,7 @@
 
 > **Oficina, 16/11 13:15:** el cierre pide **comentar** (nadie puede leer los mensajes privados) y la fecha es «hasta el 27 de noviembre» (HASTA EL 27 NOV). Ya aplicado en la voz, la pantalla y la descripción de este guion.
 - **Estado: listo para producir** · **Crítica de Andrés: 78/100** (guion, escala 16/11) · riesgo de salto medio
+- **Alcance 16/11 (Dani, 16/11 14:30):** revisado. Abre con número o escena ✔. Añadido el reto final al cuerpo técnico (línea 7, +13 palabras ≈ +3,5 s) y «Envíaselo a tu segundo entrenador» en la descripción.
 - **Serie:** «Balonmano base» (plan de crecimiento, encargo t-20261116-crec-01), capítulo 4 de 4.
 - **Insight:** I-005 (`intel/insights/INSIGHTS.md`) · **Territorio:** entrenar mucho frente a entrenar con intención.
 - **Tema:** qué hacer con un partido que ya está ganado · **Problema:** cuando la diferencia se dispara, el partido deja de enseñar a los dos equipos y el entrenador que gana no cambia nada.
@@ -29,6 +30,7 @@ Todos dan por hecho que una goleada es un sábado tranquilo, pero es un partido 
 | 4 | Cierre | Que el final lo pite el reloj. | contesta al hook |
 | 5 | CTA | Comenta tu categoría y tus días: te preparo la semana en la app de Pro Team. | experimento E4 |
 | 6 | CTA FINAL | Lista de espera hasta el veintisiete de noviembre: tres meses gratis. | campaña (solo hasta el 27/11) |
+| 7 | Reto | Reto para tu cuerpo técnico: ¿qué tres retos ponéis cuando ganáis de diez? | reto para el cuerpo técnico (alcance 16/11) |
 
 **73 palabras · ≈24,5 s.** Sin pausa antes del CTA. Silencio corto antes de «pita el final».
 Desde el 28/11: se quita la línea 6.
@@ -48,6 +50,7 @@ Tres reglas para cuando el partido está ganado: solo vale el gol después de ci
 Ganas de 30 y el partido se acaba. 🤾
 Guárdalo: cuando ganes de 10, tres retos para tu equipo (gol tras 5 pases, defensa individual, lanzar con la otra mano). Mándaselo a tu segundo.
 En los Juegos Escolares de Euskadi, en infantiles, el partido termina si la diferencia llega a 30 goles (normativa 2025). En otras federaciones la norma cambia.
+Envíaselo a tu segundo entrenador.
 Comenta tu categoría y tus días y te preparo la semana en la app de ProTeam. Lista de espera hasta el 27 de noviembre: 3 meses gratis. Enlace en la bio.
 ¿Qué le pides a tu equipo cuando el partido está decidido? 👇
 

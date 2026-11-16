@@ -1,6 +1,6 @@
 # u07 · «"Ya lo miramos el lunes"»
 
-- **Estado: listo para producir** · **Crítica de Andrés: 79/100** (guion) · riesgo de salto medio
+- **Estado: descartado (alcance 16/11)** · motivo: abre con una frase y no con número, partido o escena concreta; sin deporte; cierra con «únete a la lista» y fecha del 28, sin reto al cuerpo técnico. Antes: listo para producir · **Crítica de Andrés: 79/100** (guion) · riesgo de salto medio
 - **Hook:** H0751 (banco, Top 30 n.º 3) · Patrón 16 (diccionario del entrenador) + 5 (el bucle) + 9 (método).
 - **Tema:** análisis después del partido · **Problema:** el análisis se aplaza al lunes y el lunes nunca llega; del sábado solo queda el resultado.
 - **Emoción:** complicidad (sonrisa culpable) → reconocimiento → alivio. **Palabra de impacto:** RESULTADO.
