@@ -1,3 +1,5 @@
 id,marca,tipo,formato,duracion_s,planos,cortes_por_10s,plano_medio_s,plano_mas_largo_s,plano_mas_corto_s,tramos_estaticos,s_estaticos,primera_palabra_s,ultima_palabra_s,cola_tras_voz_s,palabras,palabras_por_s,lufs,apertura,tipo_hook,estructura,territorio,ficha_guardable_s,producto,cta,saltos_3s_pct,tiempo_medio_s,retencion_pct,guardados_x1000,compartidos_x1000,visita_llena,leido_el
 u04,proteam,propio,reel,24.433,8,2.86,3.05,7.467,1.133,2,4.54,0.12,23.702,0.73,70,2.97,-14.59,,,,,,,,,,,,,,
+u08,proteam,propio,reel,29.5,9,2.71,3.28,6.833,1.1,5,10.09,0.12,28.801,0.7,85,2.96,-14.73,,,,,,,,,,,,,,
 u17,proteam,propio,reel,13.4,5,2.99,2.68,3.5,2.3,3,4.87,,,,,,-19.28,,,,,,,,,,,,,,
+u27,proteam,propio,reel,13.5,4,2.22,3.37,3.9,2.933,0,0,,,,,,-14.09,,,,,,,,,,,,,,

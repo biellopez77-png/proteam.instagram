@@ -1,7 +1,7 @@
 # u08 · bm-01 · «Tu 6:0 gana en infantiles»
 
 > **Oficina, 16/11 13:15:** el cierre pide **comentar** (nadie puede leer los mensajes privados) y la fecha es «hasta el 27 de noviembre» (HASTA EL 27 NOV). Ya aplicado en la voz, la pantalla y la descripción de este guion.
-- **Estado: listo para producir** · **Crítica de Andrés: 81/100** (guion, escala 16/11) · riesgo de salto medio
+- **Estado: producido el 16/11 (turno 18:37), sale lun 16/11 22:30 · montaje 79** · **Crítica de Andrés: 81/100** (guion, escala 16/11) · riesgo de salto medio
 - **Alcance 16/11 (Dani, 16/11 14:30):** revisado. Abre con número o escena ✔. Añadido el reto final al cuerpo técnico (línea 8, +11 palabras ≈ +3,5 s) y «Envíaselo a tu segundo entrenador» en la descripción.
 - **Serie:** «Balonmano base» (plan de crecimiento, encargo t-20261116-crec-01), capítulo 1 de 4. Cuenta también como u08 de la reserva (encargo t-01-reserva-u08-u09).
 - **Insight:** I-002 (`intel/insights/INSIGHTS.md`) · **Territorio:** creencias que merecen cuestionarse (entrenar para ganar frente a entrenar para formar).
