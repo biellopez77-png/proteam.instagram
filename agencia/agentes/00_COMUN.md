@@ -50,3 +50,7 @@ Cada agente interviene solo cuando aporta. Una devolución de 05 vuelve a quien 
 - Procedimientos de cada agente: `agencia/skills/` (un archivo por skill; el índice está en `agencia/skills/README.md`).
 - Sistema de vídeo compartido: `tools/video_intel.py` y `intel/README.md`. Un vídeo se analiza **una vez**; los demás leen `intel/videos/<id>/`.
 - Nadie dice que ha visto un vídeo si no ha mirado sus láminas: la cobertura real está en `informe.md`.
+
+## Cambio del 16/11 (13:15): ya no hay tareas «FALTA (Biel)»
+Biel no decide la operativa ni confirma nada. Donde antes se creaba una tarea «FALTA (Biel): …», ahora se elige la opción más razonable dentro de MARCA.md y de las reglas de la oficina, se ejecuta y se apunta en el log como «Decidido: … porque …». A Biel solo se le avisa, sin esperar respuesta, de lo que cuesta dinero nuevo, toca precios o temas legales, o es irreversible.
+Decisiones fijas: fecha de campaña «hasta el 27 de noviembre» (rótulo HASTA EL 27 NOV); balonmano base como cabeza de puente 30 días; los CTA de «te preparo la semana» piden COMENTAR, no mensaje privado (los contesta el turno «Respuestas en Instagram»); capturas solo las reales del banco.
