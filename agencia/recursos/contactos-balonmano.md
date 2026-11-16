@@ -8,17 +8,17 @@ Pau (03) · consulta: 16/11/2026 · plan de crecimiento, semana 1.
 - Todo dato sale de la página oficial indicada en «fuente», leída el 16/11/2026 con WebFetch. Nada de memoria ni correos deducidos.
 - WebFetch devuelve el texto de la página resumido por un modelo auxiliar, no el HTML en bruto: **antes de usar un correo o teléfono, abrir la fuente y comprobar el carácter exacto**. Los casos en los que vi una incoherencia están marcados con «OJO».
 - En ninguna web aparece publicado el nombre del director o responsable de la escuela de entrenadores. La columna «persona o cargo» recoge solo lo que la web dice; «no aparece» es literal.
-- No se han recogido móviles ni perfiles personales. Donde la fuente publicaba un móvil junto al fijo (Extremeña, CBM Elche) lo he dejado fuera.
+- No se han recogido móviles ni perfiles personales. Donde la fuente publicaba un móvil junto al fijo (Extremeña, CBM Elche, BM Ciudad Encantada) o solo un móvil (BM Nava) lo he dejado fuera.
 
 ## Recuento
 | tipo | verificados |
 |---|---|
 | a) escuelas y federaciones (área de formación) | 17 |
 | b) cursos nivel I / II con fechas publicadas | 4 |
-| c) clubes con base | 5 |
-| **total** | **26 de 30** |
+| c) clubes con base | 9 |
+| **total** | **30 de 30** |
 
-Faltan 4 (actualizado el 16/11 a las 13:15 con los n.º 25 y 26): sobre todo de tipo c (clubes) y de tipo b (cursos con fechas). Motivo y siguiente paso, al final.
+No falta ninguno para los 30 (actualizado el 16/11 a las 14:00 con los n.º 27 a 30, los cuatro de tipo c). El cuarto hueco estaba pensado para un curso de tipo b: no hay hoy ningún curso nuevo de nivel I o II con fechas publicadas y se ha cubierto con un club. Los n.º 27 a 30 son más flojos en el dato de base que el 25 y el 26: ninguno publica el número de equipos. Motivo y siguiente paso, al final.
 
 ## a) Escuelas de entrenadores y federaciones (17)
 
@@ -53,7 +53,7 @@ Faltan 4 (actualizado el 16/11 a las 13:15 con los n.º 25 y 26): sobre todo de 
 
 Los tres cursos en marcha (18, 19 y 20) son los más útiles: hay un grupo de entrenadores en formación ahora mismo, hasta enero y abril.
 
-## c) Clubes con varios equipos de base (5)
+## c) Clubes con varios equipos de base (9)
 
 | n.º | club | comunidad | base | persona o cargo publicado | contacto institucional | fuente |
 |---|---|---|---|---|---|---|
@@ -62,6 +62,10 @@ Los tres cursos en marcha (18, 19 y 20) son los más útiles: hay un grupo de en
 | 24 | Club Balonmano Elche · proyecto «Colegios Balonmaneros» | C. Valenciana (Elche) | proyecto con colegios; no da número de equipos | no aparece | colegiosbalonmaneros@cbmelche.es · 966 672 600 | https://cbmelche.es/wp-content/uploads/2026/02/COLEGIOS-BALONMANEROS-EL-BALONMANO-SE-VIVE-DESDE-EL-COLEGIO.pdf |
 | 25 | Club Balonmano Huesca | Aragón (Huesca) | la página «Equipos base» lista 11 equipos; 8 son de base (juvenil masculino, cadete masculino A y B, cadete femenino, infantil masculino A, B y C, infantil femenino) y 3 son sénior o filiales | no aparece | contacto@bmhuesca.com · 974 230 271 | https://bmhuesca.com/equipos-base-del-cb-huesca/ · https://bmhuesca.com/ |
 | 26 | Club Balonmano Torrelavega | Cantabria (Torrelavega) | portada: «Cantera Balonmano Torrelavega 2026. 31 equipos, 409 jugadores» | no aparece | administracion@torrebalonmano.com · 942 800 231 · OJO: el dominio del correo no coincide con el de la web (balonmanotorrelavega.com); comprobar en la fuente | https://balonmanotorrelavega.com/ |
+| 27 | C.D.B. Balonmano Ciudad Encantada (Cuenca; equipo ASOBAL) | Castilla-La Mancha (Cuenca) | el menú «Equipos» lista, además del primer equipo, «Juvenil», «Cadete» e «Infantil»; no da número de equipos ni usa la palabra cantera | no aparece | cbmciudadencantada@gmail.com · 969 239 050 | https://www.bmciudadencantada.es/ · https://www.bmciudadencantada.es/index.php?sec=equipos |
+| 28 | CD BM. Atlético Valladolid (equipo ASOBAL) | Castilla y León (Valladolid) | la portada habla de «equipos base» y de «equipos cadetes y juveniles» en noticias de cantera; no da número de equipos ni tiene página de cantera en el menú | no aparece | info@atleticovalladolid.es · 983 841 712 (oficinas de lunes a viernes, 9:30-13:30) · formulario: https://www.atleticovalladolid.es/contacto | https://www.atleticovalladolid.es/ · https://www.atleticovalladolid.es/contacto |
+| 29 | Club Deportivo Balonmano Nava (equipo ASOBAL) | Castilla y León (Nava de la Asunción, Segovia) | portada: apartado «Nuestra Cantera» con cuatro equipos nombrados por patrocinador (Herrero Bodega, Hiperhierros, Educación Caja Rural e Innoporc BM Nava); no dice la categoría de cada uno. OJO: la página de cantera (https://balonmanonava.com/cantera/) dio error y no se leyó | no aparece | balonmanonava@balonmanonava.com («Información general»; horario de sede, lunes a viernes de 17:00 a 20:00) | https://www.balonmanonava.com/ |
+| 30 | Club Balonmán Cangas (equipo ASOBAL) | Galicia (Cangas do Morrazo) | la web tiene sección «A nosa base» y la portada dice «Canteira, base e primeiro equipo»; OJO: la página de la base dio error dos veces y no se sabe cuántos equipos tiene: es el más débil de los cuatro en este dato | no aparece | info@balonmancangas.com · comunicacion@balonmancangas.com · formulario en la misma página de contacto (la página no publica teléfono) | https://balonmancangas.com/contacto · https://www.balonmancangas.com/ |
 
 ## Sin verificar (no cuentan para los 30)
 
@@ -77,11 +81,16 @@ Los tres cursos en marcha (18, 19 y 20) son los más útiles: hay un grupo de en
 | Club Balonmano Ademar León (https://www.ademar.com/club/contacto/) | tel. 987 263 171; los correos salen ofuscados en la página y no se han podido leer con seguridad; la web no dice cuántos equipos de base tiene. No cuenta hasta comprobarlo a mano. |
 | Handbol Sant Quirze (https://www.handbolsantquirze.cat/) | la portada lista 16 equipos de base y mini, pero la página de contacto dio error dos veces. Es el más fácil de cerrar abriéndola en un navegador. |
 | BM Granollers, Bidasoa Irun, BM Alcobendas, OAR Gràcia Sabadell, BM Sinfín | sus webs no permiten la lectura automática; no se ha rodeado. |
+| BM Guadalajara (https://www.bmguadalajara.es/contacto) | 16/11, 14:00: la página de contacto solo tiene formulario (sin correo ni teléfono a la vista) y la de base (https://www.bmguadalajara.es/cantera-y-escuelas) solo muestra los rótulos «Cantera» y «Escuelas», sin equipos. No cuenta. |
+| Balonmano Puente Genil (https://clubbalonmanopuentegenil.es/) | 16/11, 14:00: la portada no menciona base ni equipos; no se siguió. |
+| Federación de Balonmano de Ceuta (https://fbmceuta.es/contacto/) | 16/11, 14:00: ya consultada. Publica secretaria@fbmceuta.net (OJO: dominio .net, la web es .es), un formulario y solo un móvil (no recogido). Su apartado «Formación» habla de aprendizaje del deporte y campus de verano, no de cursos de entrenador; por eso no se ha contado como tipo a. |
+| Cursos de nivel I / II nuevos (repaso del 16/11, 14:00) | Cataluña: la página de formación solo enlaza convocatorias subidas en abril de 2025. Aragón: la página «Curso entrenadores» solo lista ediciones antiguas (2012 a 2017); Tarazona y Ejea siguen sin fechas. Cantabria: sigue solo el borrador de horario del nivel II 2026-27, sin fechas. Ningún curso nuevo con fechas. |
 | FC Barcelona (balonmano formativo) | la web tiene sección de base, pero no se vio un contacto institucional de la base. |
 
 Fuera del criterio (nivel III, no cuenta): Curso de Entrenador Superior 2026/27 de la ENE, sedes de León y Alcalá de Henares, de marzo de 2026 a mayo de 2027; contacto formacion@rfebm.com.
 
 ## Qué falta y cómo completarlo
-- **Tipo c (faltan 3 tras la actualización del 16/11):** las búsquedas devuelven sobre todo PDF y prensa; las webs de club no salen. Hace falta ir club por club a su página de contacto. Una sesión con navegador lo resuelve en poco tiempo; candidatos lógicos son los clubes con cantera de las ligas ASOBAL y Guerreras, pero no los he abierto y por eso no figuran.
-- **Tipo b (falta 1 o más):** la fuente buena es el listado de cursos de la plataforma de la RFEBM, que necesita navegador.
-- **Nombres de responsables:** ninguna web los publica en las páginas leídas. Si Biel quiere dirigirse a una persona, lo correcto es pedir el nombre a la propia federación por su correo institucional.
+- **Los 30 están cubiertos (16/11, 14:00)**, pero conviene saber con qué: los n.º 27 a 30 salen de las fichas de equipo de asobal.es (que dan la web oficial de cada club) y los datos se han leído después en la web del propio club. Los datos que da asobal.es no se han usado como fuente; donde no coincidían con la web del club (teléfono de BM Nava, dirección de Cangas) vale lo que publica el club.
+- **Tipo c, mejora pendiente:** ninguno de los cuatro nuevos publica cuántos equipos de base tiene. Siguiente paso: abrir en un navegador las páginas de base de Cangas (https://balonmancangas.com/a-nosa-base) y de Nava (https://balonmanonava.com/cantera/), que dieron error a WebFetch, y sustituir la frase de la columna «base» por la cifra real. Si Cangas resultase no tener base propia, el recambio más fácil sigue siendo Handbol Sant Quirze (16 equipos; falta solo su página de contacto).
+- **Tipo b (sigue en 4):** no hay ningún curso nuevo de nivel I o II con fechas publicadas en las webs leídas; por eso el hueco se ha cubierto con un club. La fuente buena es el listado de cursos de la plataforma de la RFEBM, que necesita navegador.
+- **Nombres de responsables:** ninguna web los publica en las páginas leídas. Si Biel quiere dirigirse a una persona, lo correcto es pedir el nombre a la propia federación o club por su correo institucional. En la página de contacto de Cangas aparece además un correo con inicial y apellido: es un buzón personal y no se ha recogido.

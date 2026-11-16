@@ -37,3 +37,29 @@ Las deja Dani (01) en cada turno de guiones por adelantado. Clara elige, marca �
 - **Arquitectura:** portada «Ganas de 30 y el partido se acaba» → la norma, con ámbito y año (Juegos Escolares de Euskadi, infantil, 2025) → por qué una goleada no enseña (interpretación, marcada como tal) → reto 1: gol tras 5 pases → reto 2: defensa individual → reto 3: lanzar con la otra mano → cuándo activarlos y quién avisa (el segundo, a partir de +10) → ficha guardable → «Mándaselo a tu segundo».
 - **Ojo:** no el mismo día que u11. Los retos son recomendación, no norma.
 
+
+## 16/11 14:10 (tres deportes por igual · calendario en `agencia/ideas/calendario-17-30-nov.md`)
+### 7. «Fútbol 7: cada tiempo, una línea» (hoja de rotación)
+- **Deporte:** fútbol 7 (benjamín y alevín). **Insight de origen:** I-008. **Objetivo:** envíos al coordinador y guardados.
+- **Arquitectura:** portada «Tiene 9 años y ya es "el lateral"» → por qué pasa (ordena el sábado; interpretación) → el partido ya viene en cuatro tiempos (Juegos Municipales de Sevilla, circular 2025-26: 4 tiempos de 12 minutos; en otras competiciones cambia) → la regla: cada tiempo una línea, nadie repite dos seguidos → ejemplo con siete dorsales en una tabla tiempo × línea (ejemplo inventado y marcado como ejemplo) → qué hacer con el portero (rota también: propuesta) → hoja guardable → «Mándaselo a tu coordinador».
+- **Ojo:** no el mismo día que u14. La rotación es propuesta, no norma. Sin primeros planos de menores.
+
+### 8. «Minibasket: los seis periodos se deciden el viernes»
+- **Deporte:** baloncesto (minibasket). **Insight de origen:** I-006. **Objetivo:** guardados y envíos al delegado.
+- **Arquitectura:** portada «Quinto periodo y tú contando cruces en el acta» → la norma con ámbito y temporada (Fed. Extremeña, minibasket 2024-25, ligas locales: mínimo 2 periodos completos entre el 1.º y el 5.º, sin cambios en los 5 primeros) → paso 1: los que menos juegan, primero → paso 2: reparte a tus dos mejores en quintetos distintos (propuesta) → paso 3: el sexto, libre → hoja de seis casillas rellena con doce nombres de ejemplo → hoja vacía guardable → «Mándaselo a tu delegado».
+- **Ojo:** no el mismo día que u12. Ninguna pantalla de la app que no exista.
+
+### 9. «Sesión de media pista: 60 minutos sin filas»
+- **Deporte:** baloncesto. **Insight de origen:** I-007 (inferido). **Objetivo:** guardados.
+- **Arquitectura:** portada «Planificas pista entera. Tienes media.» → qué se pierde (filas, esperas) → bloque 1: 1×1 desde bote → bloque 2: 3×3 sin bote → bloque 3: tiro por parejas con rebote → cómo repartir los minutos (propuesta, marcada como tal) → sesión entera en una imagen guardable → pregunta: «¿Cuántos días tienes media pista?».
+- **Ojo:** no el mismo día que u13. Sin cifras de «tiempo perdido».
+
+### 10. «Fútbol 11: el martes del que jugó 90 y el del que jugó 0»
+- **Deporte:** fútbol 11 (cadete y juvenil). **Objetivo:** valor y envíos al preparador físico.
+- **Arquitectura:** portada con la contradicción → por qué no pueden hacer lo mismo (carga del partido; principio general, sin cifras) → grupo A (jugaron mucho): qué hacen → grupo B (jugaron poco): qué hacen → cómo saber quién va a cada grupo (minutos del partido + una pregunta del 1 al 10) → hoja del martes guardable → CTA de comentar.
+- **Ojo:** por escribir el Reel gemelo (F-1); que no coincidan el mismo día.
+
+### Stories con deporte (una idea, una pregunta)
+- Fútbol: «¿A qué edad fijas las posiciones?» (benjamín · alevín · infantil · nunca).
+- Baloncesto: «¿Llevas los quintetos hechos de casa?» (sí · en el banquillo).
+- Balonmano: «¿Quién lanza tus siete metros?» (siempre el mismo · rota).

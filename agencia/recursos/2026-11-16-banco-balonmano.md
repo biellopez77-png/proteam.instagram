@@ -69,3 +69,11 @@ El inventario las marca todas como deporte «todos» y no dice qué deporte ense
 | Planificar la semana | 2 capturas (SEMANA, PLANIFICACION), las dos ya usadas en u03 y sin contenido de balonmano | la semana de un equipo de balonmano: tablero con los días a la vista, una sesión abierta con tareas de balonmano y el objetivo semanal escrito en términos de balonmano; grabación de pantalla creando la semana desde una plantilla |
 
 Pendiente mío: abrir las 30 capturas restantes y anotar en el inventario el deporte que muestra cada una.
+
+## Fotos nuevas (16/11 14:00)
+
+**Ninguna.** Segundo intento del día y mismo resultado: WebFetch no llega a `commons.wikimedia.org` (tres pruebas: una categoría, la página de un archivo que ya está en el banco y la API; las tres devuelven «url_not_found»). No se ha rodeado por otra vía.
+
+Sin leer la página del archivo no hay licencia, autor ni dimensiones comprobados, así que no entra ninguna candidata, ni descargada ni en tabla: no se añade nada a `banco/fotos`, a `banco/INVENTARIO.csv` ni a `banco/INDICE.md`. Los buscadores sí devuelven copias de páginas de Commons en webs espejo, pero una licencia leída en un espejo no es una licencia leída en la fuente y no se ha usado.
+
+Siguen valiendo las consultas preparadas en el apartado 2. Hace falta una sesión con acceso real a Commons (la vía prevista en `03-visual-asset-discovery`) o que Biel abra las categorías en un navegador.
