@@ -45,3 +45,9 @@ Retención media (25) + saltos en 3 s (25) + guardados y compartidos por 1.000 v
 ## Pendiente de comprobar
 - Si el formulario de la lista de espera guarda en `public.leads` (0 altas en la campaña).
 - Reels de referencia y competencia: Instagram bloquea la lectura; pedidos a Biel enlaces o vídeos.
+
+## Añadido el 16/11 (reconstrucción del sistema; pendiente de que Samuel lo integre en su próxima lectura)
+- Puntuación de Andrés cambia de escala desde hoy (ver `oficina/PROTOCOLO.md` §6): las notas anteriores no son comparables.
+- Hechos medidos en u04 con el sistema de vídeo (`intel/videos/u04/`): la voz acaba en 00:23,70 y el vídeo en 00:25,30 (cola de 1,6 s); hay un plano de 0,23 s en 00:22,03; 9,4 s (37 %) son tramos sin movimiento; la app no se lee entre 00:13,87 y 00:16,53.
+- Hipótesis nuevas (sin datos todavía): acabar ≤ 0,8 s tras la última palabra y ampliar antes el producto sube la proporción de retención.
+- Pendiente de Biel: rótulo de la fecha («HASTA EL 28 NOV» en MARCA.md frente a «hasta el 28.11» en los Reels).

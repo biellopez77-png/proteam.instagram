@@ -61,3 +61,11 @@ La publicación (Laura) atiende «pedida» y «quitar» en cada ejecución antes
 - El trabajo se sigue guardando en el repositorio (`queue.json`, `agencia/`, `reels/`, `feed/`, `stories/`) y el vídeo se ve en el panel de piezas; la oficina es desde donde se manda y donde se ve el estado.
 - Calidad: por debajo de 75/100 de Andrés no se programa nada. MARCA.md sigue siendo la identidad.
 - Nunca se inventan métricas ni se marcan como hechas cosas que no se han hecho.
+
+## 6. Estándar de calidad y skills (Biel, 16/11) — manda sobre las instrucciones anteriores de cada agente
+- Cada persona trabaja con sus **instrucciones nuevas** de `agencia/agentes/` (empezando por `00_COMUN.md`) y con sus procedimientos de `agencia/skills/`. Si chocan con un texto antiguo, mandan estas.
+- **Con música. Se mantiene la cuota** (3 Reels, 2 carruseles, 3 Stories): la cuota se cubre con la reserva de piezas aprobadas, nunca aprobando peor. Hueco sin pieza ≥ 75 = hueco vacío, anotado en el log.
+- **No se pregunta y no se inventa:** si falta un dato esencial, esa pieza no se hace, se elige otra y se deja una tarea para Laura con el título «FALTA (Biel): …».
+- **Puntuación de Andrés desde el 16/11:** hook 15 · estrategia 15 · narrativa 15 · valor 15 · originalidad 15 · credibilidad y claridad 10 · ejecución visual 10 · CTA 5. Umbral 75 y bloqueantes de `agencia/skills/05-quality-gate.md`. En `score` se escribe la nota como siempre.
+- **Todo Reel montado se analiza antes de auditarse:** `python3 tools/video_intel.py analyze reels/<archivo> --id <id> --tema "…" --modo detalle`, `voz <id> tools/reelNN/voz.tsv` y `rasgos <id>`. Marta mira las láminas y corrige; Andrés audita el vídeo real con marcas de tiempo (`intel/videos/<id>/observaciones.md`); Pau cataloga (`recursos.md`); Samuel usa `intel/aprendizaje/CARACTERISTICAS.csv`. Guía: `intel/README.md`.
+- En la entrega de cada pieza van escritas las diez preguntas de control de `00_COMUN.md`.

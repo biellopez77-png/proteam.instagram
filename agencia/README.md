@@ -1,5 +1,7 @@
 # Agencia creativa ProTeam
 
+> **Desde el 16/11:** las instrucciones completas de cada agente están en `agentes/` (primero `agentes/00_COMUN.md`), sus procedimientos en `skills/` y el sistema de vídeo y la biblioteca en `../intel/README.md`. Los `PROMPT_AGENTE*.md` son los encargos originales de Biel y quedan como referencia. No se espera el OK de Biel para nada: donde este archivo diga «Biel aprueba», vale el protocolo de la oficina.
+
 Seis agentes que trabajan como dos departamentos de la misma productora:
 
 | Agente | Qué hace | Entrega |

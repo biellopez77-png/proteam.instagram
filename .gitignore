@@ -22,3 +22,7 @@ tools/reel2/render*.log
 tools/reel2/*.mp3
 tools/reel2/app_*.mp3
 .office_media/
+intel/.frames/
+intel/videos/*/audio_16k.wav
+intel/entrada/*
+!intel/entrada/LEEME.md

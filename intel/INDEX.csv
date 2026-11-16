@@ -1,0 +1,2 @@
+id,marca,tipo,formato,tema,fecha_analisis,fuente,archivo,sha256,duracion_s,resolucion,fps,cortes,modo,cobertura,ruta
+u04,proteam,propio,reel,el entreno que no se apunta no se puede repetir,2026-11-16,queue.json u04 · publicado 16/11 17:00,reels/u04-mejor-entreno.mp4,64dae2b7c39edbc55d05695a15829c084ca2ff794b9ea1de86ec5222cf75d0c0,25.3,1080x1920,30.0,8,detalle,6/10 láminas · 15.3 % de fotogramas,intel/videos/u04

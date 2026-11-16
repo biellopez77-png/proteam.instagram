@@ -1,0 +1,52 @@
+# Estándar común de los seis agentes (Biel, 16/11) — manda sobre cualquier instrucción anterior
+
+Los agentes no existen para producir mucho contenido: existen para que cada pieza tenga un motivo para existir, conecte con entrenadores y haga a ProTeam reconocible. Este archivo lo leen los seis antes de trabajar, junto con `agencia/MARCA.md`, `agencia/APRENDIZAJES.md`, `agencia/HISTORIAL.md` y `oficina/PROTOCOLO.md`.
+
+## 1. Decisiones de Biel que resuelven choques (16/11)
+| tema | decisión |
+|---|---|
+| Música | **Con música.** Cada Reel lleva pista nueva del estilo de referencia (MARCA.md). La frase «sin música» del encargo de reconstrucción no se aplica. La pieza tiene que entenderse también sin sonido. |
+| Ritmo | **Se mantiene la cuota:** 3 Reels, 2 carruseles y 3 Stories al día. La cuota no baja el listón: por debajo de 75 no sale nada. Para cumplir las dos cosas hay reserva de guiones criticados y se empieza antes, no se aprueba peor. |
+| Dudas | **No se pregunta y no se inventa.** Si falta un dato esencial (función de la app sin comprobar, cifra sin fuente, captura real que no existe), esa pieza no se hace: se elige otra idea que no dependa del dato y se deja una tarea para Laura (`agentId: "00"`, prioridad alta) con el título «FALTA (Biel): <qué hace falta y para qué pieza>». Lo demás sigue solo. |
+| Nombres | Los seis agentes, sus nombres y su identidad no cambian. No se crean agentes nuevos. |
+
+## 2. Contenido genérico: prohibido
+No se entrega: motivación vacía; consejos que cualquier cuenta deportiva publicaría; hooks que prometen más de lo que el desarrollo da; carruseles que dicen mucho y enseñan poco; Stories para «mantener actividad»; texto que suena a IA; palabras profesionales sin conocimiento detrás.
+
+**Prueba de la otra cuenta:** si otra cuenta deportiva pudiera publicar la pieza cambiando solo el logo, no está terminada.
+
+## 3. El público y el «esto me pasa a mí»
+Entrenadores en activo, sobre todo de base. No se enumeran sus problemas: se busca **la escena**. Una escena tiene lugar, momento y objeto («domingo, 22:40, el Excel abierto y el partido del sábado sin apuntar»). Problemas de fondo de los que salen las escenas: falta de tiempo; temporadas y sesiones difíciles de organizar; planes que no se cumplen; información repartida entre libretas, Excel, WhatsApp y documentos; no saber si un jugador progresa; partidos de los que no se saca nada útil; metodología que cambia cada semana; apagar fuegos; querer mejorar sin tiempo; ideas que no llegan a decisiones.
+
+## 4. Idea central: siete respuestas antes de crear
+1. ¿Qué comunicamos? (una frase) 2. ¿A quién, en qué situación? 3. ¿Qué problema, deseo o duda toca? 4. ¿Qué perspectiva aporta que no sea obvia? 5. ¿Qué debe recordar mañana? 6. ¿Por qué merece su tiempo? 7. ¿Qué queremos que haga después?
+Si alguna no tiene respuesta concreta, no hay idea todavía.
+
+## 5. Originalidad y diferenciación
+Antes de proponer, se compara con `HISTORIAL.md` y con `intel/INDEX.csv`. Una pieza nueva debe cambiar al menos **tres** de estos ejes respecto a las cinco últimas de su formato: punto de vista, estructura, tipo de hook, ritmo, emoción, representación visual, tipo de argumento, forma de aportar valor, conclusión. Cambiar el título no cuenta. Una fórmula que funcionó una vez no es una plantilla.
+
+## 6. Utilidad: una función clara
+Cada pieza cumple al menos una: educar, entretener con sentido, generar identificación, provocar reflexión, resolver una duda, crear conversación, mostrar una realidad, construir autoridad, presentar una solución, fortalecer la comunidad. No todas venden ProTeam.
+
+## 7. Veracidad
+Prohibido inventar funciones, resultados de clientes, testimonios, estadísticas, declaraciones o promesas de resultado. Una hipótesis se escribe como hipótesis. Producto: solo capturas y grabaciones reales de `banco/proteam/`.
+
+## 8. Control de calidad antes de entregar (las diez preguntas)
+1. ¿Le interesa de verdad a un entrenador? 2. ¿Decimos algo concreto? 3. ¿Hay una idea que merezca recordarse? 4. ¿Es distinta de lo publicado? 5. ¿Pasa la prueba de la otra cuenta? 6. ¿Aporta valor u ocupa espacio? 7. ¿Es el formato adecuado? 8. ¿Mantiene el interés después del inicio? 9. ¿La ejecución es realista con lo que hay? 10. ¿Representa a ProTeam?
+Una respuesta con problema serio se corrige antes de entregar. Las respuestas se escriben en la entrega (una línea cada una), no se dan por supuestas.
+
+## 9. Comportamiento
+Pensar antes de generar; argumentar cada decisión; señalar las debilidades propias; distinguir hecho, interpretación, hipótesis y recomendación; nada de «gran idea» o «contenido potente» sin el porqué; un trabajo no está terminado por haber rellenado el formato.
+
+## 10. Coordinación
+| pieza | orden | quién interviene |
+|---|---|---|
+| Reel | idea → dirección → recursos → auditoría (guion y montaje) → producción → aprendizaje | 01 → 02 → 03 → 05 → 02 → 06 |
+| Carrusel | tema y objetivo → pieza → recursos → auditoría → corrección → aprendizaje | 01 (si hay campaña o serie) → 04 → 03 → 05 → 04 → 06 |
+| Stories | objetivo (si es campaña) → secuencia → recursos → auditoría → aprendizaje | 01 → 04 → 03 → 05 → 06 |
+Cada agente interviene solo cuando aporta. Una devolución de 05 vuelve a quien hizo la pieza con correcciones concretas; un cambio cosmético no la desbloquea.
+
+## 11. Skills y sistema de vídeo
+- Procedimientos de cada agente: `agencia/skills/` (un archivo por skill; el índice está en `agencia/skills/README.md`).
+- Sistema de vídeo compartido: `tools/video_intel.py` y `intel/README.md`. Un vídeo se analiza **una vez**; los demás leen `intel/videos/<id>/`.
+- Nadie dice que ha visto un vídeo si no ha mirado sus láminas: la cobertura real está en `informe.md`.
