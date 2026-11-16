@@ -2536,16 +2536,67 @@
  },
  {
   "id": "c08s",
-  "when": "2026-11-16T19:00:00+01:00",
+  "when": "2026-11-16T13:00:00+01:00",
   "kind": "story",
   "files": [
-   "stories/st-1116-minuto-88.jpg"
+   "stories/st-1116-pregunta-apuntar.jpg"
   ],
   "caption": null,
   "cover": null,
-  "status": "borrador",
+  "status": "pending",
   "campana": "carrusel",
-  "note": "Story diaria (Agente 04): lleva al Reel u03 de las 20:30 (88:01, «El problema empezó el martes»); oficina: cambios: Stories de fidelización y marca, no de aviso de Reel (Biel 16/11)",
-  "title": "Story que lleva al Reel u03 de las 20:30"
+  "note": "Story rehecha por Clara (04) tras la corrección de Biel del 16/11 08:05: comunidad y fidelización, ya no avisa de ningún Reel. Pregunta con 4 opciones (A–D) y respuesta por mensaje; la opción más repetida será un carrusel esta semana. Movida al hueco de Stories de las 13:00. Crítica agencia/criticas/2026-11-16-c09-final.md",
+  "title": "La pregunta del entrenador: ¿qué es lo que más te cuesta apuntar cada semana?",
+  "score": "80"
+ },
+ {
+  "id": "c09",
+  "when": "2026-11-16T19:00:00+01:00",
+  "kind": "carousel",
+  "files": [
+   "feed/c09-1.jpg",
+   "feed/c09-2.jpg",
+   "feed/c09-3.jpg",
+   "feed/c09-4.jpg",
+   "feed/c09-5.jpg",
+   "feed/c09-6.jpg",
+   "feed/c09-7.jpg",
+   "feed/c09-8.jpg"
+  ],
+  "cover": null,
+  "status": "pending",
+  "campana": "carrusel",
+  "title": "Casi 9 de cada 10 deportistas que llegan a la élite no estaban entre los mejores de su edad",
+  "score": "82",
+  "caption": "El mejor de tu equipo con 12 años no tiene por qué ser el que llegue. Y el que hoy va por detrás no está descartado.\n\nNo es una frase de ánimo: es lo que recoge una revisión publicada en Science en diciembre de 2025 (Güllich, Barth, Hambrick y Macnamara). Casi 9 de cada 10 internacionales absolutos y juveniles son deportistas distintos, y el 82 % de los internacionales juveniles no llega a serlo de adulto (meta-análisis de más de 50.000 deportistas).\n\nLos que sí llegaron hicieron, de media, dos deportes más durante su infancia y mejoraron poco a poco.\n\nEn la diapositiva 7 tienes tres cambios para aplicar esta temporada. Mándaselo a quien hace los equipos en tu club 👇\n\nY si quieres seguir la evolución de cada jugador en un solo sitio: lista de espera de la app de ProTeam, enlace en la bio. Antes del 28 de noviembre, 3 meses gratis.\n\nVardy: datos de Leicester City FC y Wikipedia.\n\n#entrenadores #futbolbase #formaciondeportiva #baloncesto #balonmano",
+  "note": "Agente 04 · «Los que llegan tarde» · Ideas que cuestionan · captación · crítica 81 texto / 82 final (agencia/criticas/2026-11-16-c09-*.md)"
+ },
+ {
+  "id": "c09s",
+  "when": "2026-11-16T17:00:00+01:00",
+  "kind": "story",
+  "files": [
+   "stories/st-1116-regla-2-minutos.jpg"
+  ],
+  "cover": null,
+  "status": "pending",
+  "campana": "carrusel",
+  "title": "Pequeños cambios: la regla de los 2 minutos",
+  "score": "81",
+  "note": "Story de valor (Clara, 04): tres líneas antes de irte del campo. Sin aviso de Reel (corrección de Biel 16/11)."
+ },
+ {
+  "id": "c09s2",
+  "when": "2026-11-16T20:00:00+01:00",
+  "kind": "story",
+  "files": [
+   "stories/st-1116-tambien-es-entrenar.jpg"
+  ],
+  "cover": null,
+  "status": "pending",
+  "campana": "carrusel",
+  "title": "Planificar, apuntar, revisar: también es entrenar (quedan 11 días de lista de espera)",
+  "score": "77",
+  "note": "Story de marca (Clara, 04) + cuenta atrás de la lista de espera (quedan 11 días). Sin aviso de Reel."
  }
 ]

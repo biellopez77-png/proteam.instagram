@@ -1,0 +1,17 @@
+@font-face{font-family:M;src:url(../fonts/manrope-latin-500-normal.woff2);font-weight:500}
+@font-face{font-family:M;src:url(../fonts/manrope-latin-700-normal.woff2);font-weight:700}
+@font-face{font-family:M;src:url(../fonts/manrope-latin-800-normal.woff2);font-weight:800}
+@font-face{font-family:S;src:url(../fonts/instrument-serif-latin-400-italic.woff2);font-style:italic}
+*{margin:0;padding:0;box-sizing:border-box}body{font-family:M;-webkit-font-smoothing:antialiased}
+.s{width:1080px;height:1920px;position:relative;overflow:hidden}
+.dark{background:#0d0f14;color:#f5f5f3}.paper{background:#f2f1ec;color:#0d0f14}
+.in{position:absolute;left:90px;right:90px;top:260px;bottom:320px;display:flex;flex-direction:column}
+.k{font-weight:800;font-size:30px;letter-spacing:.14em;text-transform:uppercase;color:#2f6bff}.dark .k{color:#4f86ff}
+.sr{font-family:S;font-style:italic;font-weight:400;color:#2f6bff}.dark .sr{color:#4f86ff}
+h1{font-weight:800;letter-spacing:-.02em;line-height:1.04}
+.op{display:flex;align-items:center;gap:30px;padding:24px 34px;border-radius:26px;background:#fff;margin-bottom:20px}
+.op b{width:72px;height:72px;border-radius:50%;background:#0d0f14;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:34px;flex:none}
+.op span{font-weight:700;font-size:40px}
+.ln{display:grid;grid-template-columns:90px 1fr;padding:34px 0;border-top:2px solid #262b36;align-items:baseline}
+.ln .n{font-weight:800;font-size:44px;color:#4f86ff}.ln .t{font-weight:800;font-size:52px}
+.sm{font-weight:500;font-size:34px;line-height:1.4}
