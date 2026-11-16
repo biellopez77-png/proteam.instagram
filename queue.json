@@ -2540,11 +2540,13 @@
   ],
   "caption": null,
   "cover": null,
-  "status": "pending",
+  "status": "published",
   "campana": "carrusel",
   "note": "Story rehecha por Clara (04) tras la corrección de Biel del 16/11 08:05: comunidad y fidelización, ya no avisa de ningún Reel. Pregunta con 4 opciones (A–D) y respuesta por mensaje; la opción más repetida será un carrusel esta semana. Movida al hueco de Stories de las 13:00. Crítica agencia/criticas/2026-11-16-c09-final.md",
   "title": "La pregunta del entrenador: ¿qué es lo que más te cuesta apuntar cada semana?",
-  "score": "80"
+  "score": "80",
+  "media_id": "18041732705853859",
+  "published_at": "2026-11-16T13:25:31+0100"
  },
  {
   "id": "c09",

@@ -2,6 +2,7 @@
 
 | Fecha | Pieza | Tipo | Resultado |
 | --- | --- | --- | --- |
+| 2026-11-16 13:25 | c08s stories/st-1116-pregunta-apuntar.jpg | story | publicado, media_id 18041732705853859 |
 | 2026-11-15 13:25 | u01 reels/u01-no-eres-diferente.mp4 | reel | publicado, media_id 17924626998445949 |
 | 2026-11-11 13:27 | ta02s reels/ta02-barca-caserio-voz.mp4 | story | publicado, media_id 18124855793287338 |
 | 2026-11-11 13:26 | ta02 reels/ta02-barca-caserio-voz.mp4 | reel | publicado, media_id 17898390411681778 |
