@@ -10,7 +10,7 @@ Plantilla técnica: `tools/reel2/` (Reel 2, aprobado por Biel). Cada Reel nuevo 
 Este paso a paso es el turno de Dani (01), Marta (02), Pau (03) y Andrés (05). Aplica `oficina/PROTOCOLO.md` entero: ENTRADA antes del punto 0 (reglas, instrucciones, pausa, encargos y decisiones de Biel), estado de cada persona en cada fase y SALIDA al terminar (ficha de revisión de la pieza, log, agenda).
 
 ## 0. Hueco y número
-- `queue.json`: busca el próximo hueco de Reel libre (13:30 o 20:30, hora de Madrid) que empiece al menos 6 h después de ahora y que no tenga ya un Reel `pending`. Las piezas `borrador` no ocupan hueco.
+- `queue.json`: busca el próximo hueco de Reel libre de la parrilla (9:30, 11:30, 13:30, 17:30, 20:30 o 22:30, hora de Madrid; ver `oficina/PROTOCOLO.md`) que empiece al menos 3 h después de ahora y que no tenga ya un Reel `pending`. Las piezas `borrador` no ocupan hueco.
 - Id: `uNN`, el siguiente libre después del mayor `u` que haya.
 - Fechas: hasta el 27/11, con la oferta (MARCA.md). Desde el 28/11, sin oferta.
 

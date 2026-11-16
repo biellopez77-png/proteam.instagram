@@ -6,7 +6,7 @@ Los agentes no existen para producir mucho contenido: existen para que cada piez
 | tema | decisión |
 |---|---|
 | Música | **Con música.** Cada Reel lleva pista nueva del estilo de referencia (MARCA.md). La frase «sin música» del encargo de reconstrucción no se aplica. La pieza tiene que entenderse también sin sonido. |
-| Ritmo | **Se mantiene la cuota:** 3 Reels, 2 carruseles y 3 Stories al día. La cuota no baja el listón: por debajo de 75 no sale nada. Para cumplir las dos cosas hay reserva de guiones criticados y se empieza antes, no se aprueba peor. |
+| Ritmo | **Volumen máximo (16/11 15:30):** 6 Reels, 2 carruseles y 5 Stories al día (parrilla al final de este archivo). La cuota no baja el listón: por debajo de 75 no sale nada. Para cumplir las dos cosas hay reserva de guiones criticados y se empieza antes, no se aprueba peor. |
 | Dudas | **No se pregunta y no se inventa.** Si falta un dato esencial (función de la app sin comprobar, cifra sin fuente, captura real que no existe), esa pieza no se hace: se elige otra idea que no dependa del dato y se deja una tarea para Laura (`agentId: "00"`, prioridad alta) con el título «FALTA (Biel): <qué hace falta y para qué pieza>». Lo demás sigue solo. |
 | Nombres | Los seis agentes, sus nombres y su identidad no cambian. No se crean agentes nuevos. |
 
@@ -67,3 +67,16 @@ Decisiones fijas: fecha de campaña «hasta el 27 de noviembre» (rótulo HASTA 
 - Cada pieza acaba con pregunta o reto para el cuerpo técnico; caption con «Envíaselo a tu segundo entrenador» + «Comenta tu deporte, tu categoría y tus días y te preparo la semana».
 - Carruseles solo martes y viernes 19:00; el resto de días Clara publica un Reel de datos (8–15 s) a las 11:00. Una Story al día (13:00).
 - En cada Reel publicado dejamos un primer comentario con el CTA (turno «Respuestas en Instagram»).
+
+## Cambio del 16/11 (15:30): volumen máximo — manda sobre el plan de alcance en cantidad
+Biel: «necesitamos muchísimo contenido, cuanto más mejor». Parrilla diaria (hora de Madrid, todo en :30 para que la publicación de cada hora a las :23 lo saque a su hora):
+| formato | horas | al día |
+|---|---|---|
+| Reels | 9:30 · 11:30 · 13:30 · 17:30 · 20:30 · 22:30 | 6 |
+| Carruseles | 12:30 · 19:30 | 2 (todos los días) |
+| Stories | 10:30 · 14:30 · 16:30 · 18:30 · 21:30 | 5 |
+- Lo que sigue igual: umbral 75 de Andrés, nada inventado, tres deportes por igual, nada de Reels de marca o motivación vacía. Más volumen = más piezas buenas, no piezas peores. Un hueco sin pieza ≥ 75 se rellena con la siguiente de la reserva; si no hay, se queda vacío y se anota.
+- Cómo se llega: el turno de Reels corre cada 3 horas (0:37, 3:37, 6:37, 9:37, 12:37, 15:37, 18:37, 21:37) y saca 1 Reel por turno, 2 si el segundo es un Reel de datos corto (8–15 s); el turno de Clara corre a las 9:07 y a las 21:07 (1 carrusel + hasta 3 Stories por turno); se mantiene una reserva de guiones criticados de al menos 8.
+- Variedad obligatoria con tanto volumen: dos piezas seguidas no repiten deporte ni estructura; mezcla de Reels con voz (escena, dato, partido real) y Reels de datos cortos; Stories con encuestas, preguntas y avisos de lo que sale.
+- Samuel mide cada semana si más piezas bajan las vistas medias por pieza (canibalización) y lo dice en su resumen con números; mientras tanto, se sigue el volumen máximo.
+- Del plan de alcance se mantiene todo lo que es calidad (escena o dato en el segundo 0, pregunta o reto al final, CTA de comentar, primer comentario); lo que limitaba la cantidad (carruseles solo martes y viernes, una Story al día) queda anulado.

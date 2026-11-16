@@ -17,7 +17,16 @@ Las tareas programadas no son un sistema aparte: son **los turnos de trabajo de 
 
 **Plan de alcance (16/11):** cada persona tiene en `agents/<id>.instructions` sus reglas para conseguir visitas llenas (primer segundo, motivo para guardar o enviar, portada, series de la ganadora). `meta/office.winner` = `{id, title, why, at}` con la pieza ganadora del día.
 
-**Ritmo desde el 16/11 (Biel: «más contenido, más clientes»):** 3 Reels al día (13:30, 17:00, 20:30), 2 carruseles (11:00, 19:00) y 3 Stories (13:00, 17:00, 20:00), con una reserva de 4 guiones criticados (≥ 75) siempre lista.
+**VOLUMEN MÁXIMO (Biel, 16/11 15:30) — manda sobre cualquier cuota, ritmo o regla de alcance anterior.** Biel: «necesitamos muchísimo contenido, cuanto más mejor». Parrilla diaria (hora de Madrid, todo en :30 para que la publicación de cada hora a las :23 lo saque a su hora):
+| formato | horas | al día |
+|---|---|---|
+| Reels | 9:30 · 11:30 · 13:30 · 17:30 · 20:30 · 22:30 | 6 |
+| Carruseles | 12:30 · 19:30 | 2 (todos los días) |
+| Stories | 10:30 · 14:30 · 16:30 · 18:30 · 21:30 | 5 |
+- Lo que sigue igual: umbral 75 de Andrés, nada inventado, tres deportes por igual, nada de Reels de marca o motivación vacía. Más volumen = más piezas buenas, no piezas peores. Un hueco sin pieza ≥ 75 se rellena con la siguiente de la reserva; si no hay, se queda vacío y se anota.
+- Cómo se llega: el turno de Reels corre cada 3 horas (0:37, 3:37, 6:37, 9:37, 12:37, 15:37, 18:37, 21:37) y saca 1 Reel por turno, 2 si el segundo es un Reel de datos corto (8–15 s); el turno de Clara corre a las 9:07 y a las 21:07 (1 carrusel + hasta 3 Stories por turno); se mantiene una reserva de guiones criticados de al menos 8.
+- Variedad obligatoria con tanto volumen: dos piezas seguidas no repiten deporte ni estructura; mezcla de Reels con voz (escena, dato, partido real) y Reels de datos cortos; Stories con encuestas, preguntas y avisos de lo que sale.
+- Samuel mide cada semana si más piezas bajan las vistas medias por pieza (canibalización) y lo dice en su resumen con números; mientras tanto, se sigue el volumen máximo.
 
 Los nombres pueden cambiar (campo `name` de `agents/<id>`): usa el que haya en la oficina. R1–R4 (equipo técnico de la app) no entran en estos turnos.
 
@@ -64,7 +73,7 @@ La publicación (Laura) atiende «pedida» y «quitar» en cada ejecución antes
 
 ## 6. Estándar de calidad y skills (Biel, 16/11) — manda sobre las instrucciones anteriores de cada agente
 - Cada persona trabaja con sus **instrucciones nuevas** de `agencia/agentes/` (empezando por `00_COMUN.md`) y con sus procedimientos de `agencia/skills/`. Si chocan con un texto antiguo, mandan estas.
-- **Con música. Se mantiene la cuota** (3 Reels, 2 carruseles, 3 Stories): la cuota se cubre con la reserva de piezas aprobadas, nunca aprobando peor. Hueco sin pieza ≥ 75 = hueco vacío, anotado en el log.
+- **Con música. Volumen máximo** (6 Reels, 2 carruseles y 5 Stories al día, ver la parrilla de arriba): se cubre con la reserva de piezas aprobadas, nunca aprobando peor. Hueco sin pieza ≥ 75 = hueco vacío, anotado en el log.
 - **No se pregunta y no se inventa:** si falta un dato esencial, esa pieza no se hace, se elige otra y se deja una tarea para Laura con el título «FALTA (Biel): …».
 - **Puntuación de Andrés desde el 16/11:** hook 15 · estrategia 15 · narrativa 15 · valor 15 · originalidad 15 · credibilidad y claridad 10 · ejecución visual 10 · CTA 5. Umbral 75 y bloqueantes de `agencia/skills/05-quality-gate.md`. En `score` se escribe la nota como siempre.
 - **Todo Reel montado se analiza antes de auditarse:** `python3 tools/video_intel.py analyze reels/<archivo> --id <id> --tema "…" --modo detalle`, `voz <id> tools/reelNN/voz.tsv` y `rasgos <id>`. Marta mira las láminas y corrige; Andrés audita el vídeo real con marcas de tiempo (`intel/videos/<id>/observaciones.md`); Pau cataloga (`recursos.md`); Samuel usa `intel/aprendizaje/CARACTERISTICAS.csv`. Guía: `intel/README.md`.
