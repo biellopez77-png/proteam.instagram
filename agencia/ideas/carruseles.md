@@ -59,6 +59,16 @@ Las deja Dani (01) en cada turno de guiones por adelantado. Clara elige, marca �
 - **Arquitectura:** portada con la contradicción → por qué no pueden hacer lo mismo (carga del partido; principio general, sin cifras) → grupo A (jugaron mucho): qué hacen → grupo B (jugaron poco): qué hacen → cómo saber quién va a cada grupo (minutos del partido + una pregunta del 1 al 10) → hoja del martes guardable → CTA de comentar.
 - **Ojo:** por escribir el Reel gemelo (F-1); que no coincidan el mismo día.
 
+### Idea 11 · Baloncesto: el tiempo muerto en una pizarra (16/11, Dani; Reel de datos o carrusel)
+- **Titular:** «1 minuto. 1 consigna.» · **Número de apertura:** 1 minuto (duración del tiempo muerto). · **Fuente:** Reglas Oficiales FIBA, art. 18 (comprobado el 16/11). · **Deporte:** baloncesto (no minibasket).
+- **Arquitectura:** portada con el reloj de 1:00 → qué pasa en ese minuto (beber, respirar, escuchar) → la regla: una consigna, la última frase, dibujada → reparto con el segundo (agua y cambios) → plantilla de pizarra vacía para guardar.
+- **Ojo:** gemela de u20; que no salgan el mismo día. Sin cifras de cuántas consignas se recuerdan (no hay dato).
+
+### Idea 12 · Fútbol: la hoja de la convocatoria en tres columnas (16/11, Dani; carrusel de viernes)
+- **Titular:** «La convocatoria no se decide el viernes. Se mira.» · **Apertura:** viernes, 22:00, dos se quedan fuera. · **Fuente:** ninguna cifra; es una propuesta de método. · **Deporte:** fútbol 11 (vale para fútbol 7 cambiando el número de plazas).
+- **Arquitectura:** portada con la lista y dos nombres tachados → el problema (se decide de memoria y el sábado no se puede explicar) → columna 1: entrenos de la semana → columna 2: minutos del último partido → columna 3: a quién le toca → hoja vacía para guardar → CTA de comentar.
+- **Ojo:** gemela de u21; que no salgan el mismo día. No dar criterios «correctos» de convocatoria: la hoja ordena la decisión, no la toma.
+
 ### Stories con deporte (una idea, una pregunta)
 - Fútbol: «¿A qué edad fijas las posiciones?» (benjamín · alevín · infantil · nunca).
 - Baloncesto: «¿Llevas los quintetos hechos de casa?» (sí · en el banquillo).

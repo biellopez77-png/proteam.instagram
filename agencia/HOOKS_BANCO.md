@@ -1171,3 +1171,18 @@ Fuente de las normas: Normativa de Balonmano 2025, Juegos Deportivos Escolares d
 - **H1036** «Ahora no lo puedo sentar.» Lo dijiste en el primer cuarto. [baloncesto · diccionario del entrenador · base] (12/15)
 - **H1037** El descanso de tu base se decide antes del salto, no en el tercer cuarto. [baloncesto · método · base] (11/15)
 - **H1038** Tu mejor jugador decide el final con cuarenta minutos en las piernas. [baloncesto · consecuencia · base] (11/15)
+
+## Nuevos · 16/11 tarde (Dani, F-2 y B-2)
+- **H1039** [usado u19] Rondo de diez minutos. Todos dentro menos uno: tu portero. [fútbol 7 · número + escena · base] (14/15)
+- **H1040** El primer pase de tu ataque lo da quien no hace rondos. [fútbol 7 · contraintuitiva · base] (13/15)
+- **H1041** Sábado, minuto tres. Tu portero bloca, mira y no sabe a quién dársela. [fútbol 7 · narrativa · base] (12/15)
+- **H1042** Tu portero de fútbol 7 pasa el jueves parando tiros del que espera turno. [fútbol 7 · observacional · base] (12/15)
+- **H1043** [usado u20] Tiempo muerto: un minuto. Tú hablas de cinco cosas. [baloncesto · cifra + escena · base] (15/15)
+- **H1044** Sesenta segundos. Cinco consignas. Una posesión igual que la anterior. [baloncesto · comparativa · base] (13/15)
+- **H1045** Mientras hablas, tu base está mirando el marcador. [baloncesto · observacional · base] (12/15)
+
+## Nuevos · 16/11 17:00 (Dani, F-3)
+- **H1046** [usado u21] Viernes, diez de la noche. Dos se quedan fuera. Y decides de memoria. [fútbol 11 · hora + número · base] (13/15)
+- **H1047** ¿Quién vino el martes? El viernes ya no te acuerdas. [fútbol 11 · observacional · base] (12/15)
+- **H1048** El sábado te preguntan por qué no va convocado. Y no tienes la hoja. [fútbol 11 · narrativa · base] (12/15)
+- **H1049** Tu convocatoria tiene tres columnas. Tú solo miras una. [fútbol 11 · contraintuitiva · base] (11/15)
