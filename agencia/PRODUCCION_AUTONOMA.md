@@ -31,7 +31,7 @@ MODO GUION sobre el guion: veredicto + nota sobre 100 con desglose. Si < 75, apl
 - Copia lo que vayas a usar a `tools/reelNN/img/` y apúntalo en `banco/INVENTARIO.csv` con el estado `usada en uNN`.
 
 ## 4. Voz (siempre Mateo)
-- ElevenLabs: `creative_generate_speech`, voice_id `Rie0luvrYhyKLba1lK3c`, modelo `eleven_v4`, flow `hBYtrq1HJVmwM1XJaheU`. Salen 2 tomas.
+- ElevenLabs: `creative_generate_speech`, voice_id `Rie0luvrYhyKLba1lK3c` (Mateo original; desde el 16/11 está desactivada: si falla, usa `gpMzl7dbkfC9dIxAqQZT`, «Mateo – News & Digital Stories» de la biblioteca, sin preguntar), modelo `eleven_v4`, flow `hBYtrq1HJVmwM1XJaheU`. Salen 2 tomas.
 - Escribe «Pro Team» para que lo pronuncie bien y los números en letra («veintiocho», «tres»).
 - URLs con `creative_get_generations`.
 - Descarga desde el sandbox de Higgsfield (`sandbox_exec`), porque el contenedor local no llega a elevenlabsusercontent.com:
@@ -76,7 +76,8 @@ MODO GUION sobre el guion: veredicto + nota sobre 100 con desglose. Si < 75, apl
 ## 7b. Auditoría prepublicación (Agente 05)
 MODO PREPUBLICACIÓN sobre el vídeo final (mira 8–10 fotogramas clave y escucha el plan de audio: tiempos de voz/música/SFX). Nota sobre 100. Si < 75 o hay un fallo objetivo (corte, texto ilegible, dato dudoso, CTA mal), corrige y vuelve a renderizar. Guarda en `agencia/criticas/AAAA-MM-DD-uNN-final.md` e incluye la nota en el mensaje a Biel.
 
-## 8. Publicación y panel
+## 8. Publicación, oficina y panel
+- En la entrada de `queue.json` pon también `title` (el hook) y `score` (nota de Andrés). Después sincroniza «Contenido» de la oficina (`oficina/PROTOCOLO.md`, SALIDA): es donde Biel lo ve y lo corrige.
 - `queue.json`: entrada `uNN` con `kind` reel, `status` pending, `campana` "unrespiro", `share_to_feed` false, `cover` y caption.
   - El caption lleva el gancho, 2–3 líneas, el CTA y «Enlace en la bio», más 4–5 hashtags.
 - Panel (https://claude.ai/artifact/GdqV6tqCq39FJVtTLNe8f7):

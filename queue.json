@@ -2493,7 +2493,8 @@
   "status": "pending",
   "campana": "unrespiro",
   "share_to_feed": false,
-  "note": "Reel 2 (guion de Biel, 14 nov). Primer montaje de Claude; pendiente de correcciones de Biel."
+  "note": "Reel 2 (guion de Biel, 14 nov). Primer montaje de Claude; pendiente de correcciones de Biel.",
+  "title": "Los grandes equipos tienen algo que tú también puedes construir"
  },
  {
   "id": "u03",
@@ -2507,7 +2508,9 @@
   "status": "pending",
   "campana": "unrespiro",
   "share_to_feed": false,
-  "note": "u03 · producción autónoma (Agencia, 15 nov): guion H0701, concepto «rebobinar la semana». Pendiente de revisión de Biel."
+  "note": "u03 · producción autónoma (Agencia, 15 nov): guion H0701, concepto «rebobinar la semana». Pendiente de revisión de Biel.",
+  "score": "guion 84 · montaje 82",
+  "title": "Pierdes en el minuto 88. Pero el problema empezó el martes."
  },
  {
   "id": "c08",
@@ -2527,7 +2530,9 @@
   "cover": null,
   "status": "pending",
   "campana": "carrusel",
-  "note": "Agente 04 · «La prueba del relevo» · identificación · crítica 83/100 (agencia/criticas/2026-11-15-c08-final.md)"
+  "note": "Agente 04 · «La prueba del relevo» · identificación · crítica 83/100 (agencia/criticas/2026-11-15-c08-final.md)",
+  "score": "83",
+  "title": "Si mañana no puedes ir al entreno, ¿alguien sabría qué toca?"
  },
  {
   "id": "c08s",
@@ -2540,6 +2545,7 @@
   "cover": null,
   "status": "pending",
   "campana": "carrusel",
-  "note": "Story diaria (Agente 04): lleva al Reel u03 de las 20:30 (88:01, «El problema empezó el martes»)"
+  "note": "Story diaria (Agente 04): lleva al Reel u03 de las 20:30 (88:01, «El problema empezó el martes»)",
+  "title": "Story que lleva al Reel u03 de las 20:30"
  }
 ]
