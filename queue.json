@@ -2503,15 +2503,15 @@
   "when": "2026-11-16T20:30:00+01:00",
   "kind": "reel",
   "files": [
-   "reels/u03-minuto-88.mp4"
+   "reels/u03-minuto-88-v2.mp4"
   ],
   "cover": "covers/u03-minuto-88.jpg",
-  "caption": "Pierdes en el minuto 88. Pero el problema empezó el martes. ⏪\nEl entreno decidido en el coche, el cansancio que nadie apuntó, la sesión de siempre el jueves. El sábado solo ves el resultado: el partido se decide entre semana.\nÚnete a la lista de espera de la app de ProTeam antes del 28 de noviembre y empieza con 3 meses gratis. Enlace en la bio.\nEnvíaselo a tu segundo entrenador. Y comenta tu deporte, tu categoría y tus días y te preparo la semana. 👇\n\n#entrenadordefutbol #fútbolbase #planificaciondeportiva #baloncesto #balonmano",
-  "status": "borrador",
+  "caption": "Pierdes en el minuto 88. Pero el problema empezó el martes. ⏪\nEl entreno decidido en el coche, el cansancio que nadie apuntó, la sesión de siempre el jueves. El sábado solo ves el resultado: el partido se decide entre semana.\nLista de espera de la app de ProTeam hasta el 27 de noviembre: 3 meses gratis. Enlace en la bio.\nEnvíaselo a tu segundo entrenador. Y comenta tu deporte, tu categoría y tus días y te preparo la semana. 👇\n\n#entrenadordefutbol #fútbolbase #planificaciondeportiva #baloncesto #balonmano",
+  "status": "pending",
   "campana": "unrespiro",
   "share_to_feed": false,
-  "note": "u03 · producción autónoma (Agencia, 15 nov): guion H0701, concepto «rebobinar la semana». Pendiente de revisión de Biel. · 16/11 15:10: descripción con «Envíaselo a tu segundo entrenador» y el CTA de comentar (regla de alcance de Biel).; oficina: cambios: cambia la musica, es muy impactante",
-  "score": "guion 84 · montaje 82",
+  "note": "u03 · producción autónoma (Agencia, 15 nov): guion H0701, concepto «rebobinar la semana». Pendiente de revisión de Biel. · 16/11 15:10: descripción con «Envíaselo a tu segundo entrenador» y el CTA de comentar (regla de alcance de Biel).; oficina: cambios: cambia la musica, es muy impactante · 16/11 18:00: música cambiada por corrección de Biel («es muy impactante»): base tranquila a 92 BPM (piano eléctrico, sin 808 ni subidón), 10 dB por debajo de la voz; imagen y voz sin tocar. Archivo nuevo (-v2) para que la publicación no coja el antiguo. Auditoría de Andrés 81 (agencia/criticas/2026-11-16-u03-final-v2.md).; reprogramada desde la oficina",
+  "score": "guion 84 · montaje 81",
   "title": "Pierdes en el minuto 88. Pero el problema empezó el martes."
  },
  {
@@ -2727,11 +2727,12 @@
   ],
   "cover": "covers/u17-defensa-zona-minibasket.jpg",
   "caption": "¿Defiendes en zona con tu equipo de minibasket? En los Juegos Escolares de Barcelona no se puede. 🏀\nReglamento de minibàsquet 2023-24 (art. 4.4): «No és permès realitzar cap tipus de defensa en zona». Primero aviso al entrenador; si sigue, 2 tiros libres y saque de banda. En otras federaciones la norma cambia.\nEnvíaselo a tu segundo entrenador: ¿cuántos de los vuestros defienden solos al que bota?\nComenta tu deporte, tu categoría y tus días y te preparo la semana en la app de ProTeam. Lista de espera hasta el 27 de noviembre: 3 meses gratis. Enlace en la bio.\n\n#baloncesto #minibasket #entrenadordebaloncesto #baloncestoformativo #proteam",
-  "status": "borrador",
+  "status": "cancelled",
   "campana": "unrespiro",
   "share_to_feed": false,
   "note": "u17 · turno de Reels 16/11 15:37: Reel de datos sin voz (baloncesto). Sustituye a u08 porque el audio de ElevenLabs no se pudo traer (ficha a-audio-elevenlabs). Música sintetizada en el turno. Fuente: JEEB minibàsquet 2023-24 art. 4.4.; oficina: cambios: creo que no aporta nada a la app asi que no lo subas, no tiene valor este reel",
   "score": "78",
-  "title": "¿Defiendes en zona? En Barcelona, no se puede."
+  "title": "¿Defiendes en zona? En Barcelona, no se puede.",
+  "cancel_reason": "quitada por Biel (16/11): «no aporta nada a la app, no tiene valor»"
  }
 ]
