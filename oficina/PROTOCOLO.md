@@ -13,7 +13,9 @@ Las tareas programadas no son un sistema aparte: son **los turnos de trabajo de 
 | 03 | Pau | Archivero | Reels y carruseles (recursos) |
 | 04 | Clara | Editora de carruseles | 2 carruseles y 3 Stories al día (9:07 y 21:07) |
 | 05 | Andrés | Crítica y calidad | Crítica de cada guion y auditoría final de cada pieza |
-| 06 | Samuel | Analista | Análisis de los lunes (9:13) y diario de métricas (20:23) |
+| 06 | Samuel | Analista | Radar de actualidad (6:47), bucle viral diario (22:41: ganadora, perdedora y encargos para mañana) y análisis de los lunes (9:13) |
+
+**Plan de alcance (16/11):** cada persona tiene en `agents/<id>.instructions` sus reglas para conseguir visitas llenas (primer segundo, motivo para guardar o enviar, portada, series de la ganadora). `meta/office.winner` = `{id, title, why, at}` con la pieza ganadora del día.
 
 **Ritmo desde el 16/11 (Biel: «más contenido, más clientes»):** 3 Reels al día (13:30, 17:00, 20:30), 2 carruseles (11:00, 19:00) y 3 Stories (13:00, 17:00, 20:00), con una reserva de 4 guiones criticados (≥ 75) siempre lista.
 
