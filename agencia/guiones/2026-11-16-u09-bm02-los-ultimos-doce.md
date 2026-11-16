@@ -1,7 +1,7 @@
 # u09 · bm-02 · «Siempre los últimos doce»
 
 > **Oficina, 16/11 13:15:** el cierre pide **comentar** (nadie puede leer los mensajes privados) y la fecha es «hasta el 27 de noviembre» (HASTA EL 27 NOV). Ya aplicado en la voz, la pantalla y la descripción de este guion.
-- **Estado: listo para producir** · **Crítica de Andrés: 80/100** (guion, escala 16/11) · riesgo de salto medio-bajo
+- **Estado: producido el 16/11 (turno de Reels 21:37), sale el mar 17/11 11:30** · **Crítica de Andrés: 80/100** (montaje 81) (guion, escala 16/11) · riesgo de salto medio-bajo
 - **Alcance 16/11 (Dani, 16/11 14:30):** revisado. Abre con número o escena ✔. Añadido el reto final al cuerpo técnico (línea 8, +10 palabras ≈ +3,5 s) y «Envíaselo a tu segundo entrenador» en la descripción.
 - **Serie:** «Balonmano base» (plan de crecimiento, encargo t-20261116-crec-01), capítulo 2 de 4. Cuenta también como u09 de la reserva (encargo t-01-reserva-u08-u09).
 - **Insight:** I-003 (`intel/insights/INSIGHTS.md`) · **Territorio:** decisiones pequeñas que condicionan la temporada.

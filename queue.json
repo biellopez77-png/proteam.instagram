@@ -2820,5 +2820,37 @@
   "title": "«Soy el lateral». ¿En qué categoría fijas las posiciones? (fútbol 7)",
   "score": "77",
   "note": "Story de conversación de Clara (04): pregunta abierta, respuesta en comentarios del último post; adelanta c11 (vie 20/11) con valor. Cantera del Barça (Ciutat Esportiva)."
+ },
+ {
+  "id": "u09",
+  "when": "2026-11-17T11:30:00+01:00",
+  "kind": "reel",
+  "files": [
+   "reels/u09-los-ultimos-doce.mp4"
+  ],
+  "cover": "covers/u09-los-ultimos-doce.jpg",
+  "caption": "Juega sus 12 minutos. Siempre los últimos. ⏱️\nGuárdalo: este sábado, que sus minutos lleguen antes del descanso y con el marcador vivo. Mándaselo a tu segundo y que lleve él el reloj.\nEn los Juegos Escolares de Euskadi cada infantil del acta juega al menos 12 minutos (normativa 2025); en otras federaciones la norma cambia o no existe, pero la pregunta es la misma: ¿cuándo se los das?\nEnvíaselo a tu segundo entrenador.\nComenta tu categoría y tus días y te preparo la semana en la app de ProTeam. Lista de espera hasta el 27 de noviembre: 3 meses gratis. Enlace en la bio.\n¿Cuándo entran tus menos habituales: primera parte o al final? 👇\n\nFotos: Talant Dujshebaev (Doha Stadium Plus Qatar, CC BY 2.0), España en Londres 2012 (hissingteakettle, CC BY 2.0), FC Barcelona Champions EHF 2011 (Peter Klassmann, CC BY-SA 3.0), Wikimedia Commons.\n\n#balonmano #balonmanobase #entrenadordebalonmano #handball #proteam",
+  "status": "pending",
+  "campana": "unrespiro",
+  "share_to_feed": false,
+  "note": "u09 · turno de Reels 16/11 21:37: guion bm-02 (Dani, Andrés 80), voz Mateo de la biblioteca, música nueva de fondo (beat entra en «últimos»), barra de partido con el dorsal 9, capturas reales de Partido en directo e Informe 1.ª parte, reto final. Auditoría 81.",
+  "score": "guion 80 · montaje 81",
+  "title": "Juega sus doce minutos. Siempre los últimos doce."
+ },
+ {
+  "id": "u28",
+  "when": "2026-11-17T17:30:00+01:00",
+  "kind": "reel",
+  "files": [
+   "reels/u28-tobillo.mp4"
+  ],
+  "cover": "covers/u28-tobillo.jpg",
+  "caption": "La lesión más frecuente en baloncesto: el esguince de tobillo. 🏀\nGuárdalo: 16 temporadas de baloncesto universitario en EE. UU. (NCAA, Dick et al., Journal of Athletic Training, 2007) y el tobillo, el primero de la lista.\nEn la app de ProTeam tienes tu rutina de prevención (isquios y tobillo) con sus ejercicios y sesiones, dentro de la preparación física del equipo.\nEnvíaselo a tu segundo entrenador: ¿cuándo entrenasteis el tobillo por última vez?\nComenta tu deporte, tu categoría y tus días y te preparo la semana en la app de ProTeam. Lista de espera hasta el 27 de noviembre: 3 meses gratis. Enlace en la bio.\n\nFotos: Edy Tavares, Real Madrid (Zafer, CC BY 4.0), selección española de baloncesto (Diario de Madrid, CC BY 4.0), Wikimedia Commons.\n\n#baloncesto #entrenadordebaloncesto #preparacionfisica #prevenciondelesiones #proteam",
+  "status": "pending",
+  "campana": "unrespiro",
+  "share_to_feed": false,
+  "note": "u28 · turno de Reels 16/11 21:37: Reel de datos sin voz (13,6 s), música nueva de fondo, dato con fuente (Dick et al., 2007) y captura real de Rutinas. Guion 78, auditoría 78.",
+  "score": "guion 78 · montaje 78",
+  "title": "Lesión nº 1 en baloncesto: el tobillo."
  }
 ]
