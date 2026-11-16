@@ -2690,17 +2690,17 @@
  },
  {
   "id": "c10s3",
-  "when": "2026-11-17T20:00:00+01:00",
+  "when": "2026-11-17T21:30:00+01:00",
   "kind": "story",
   "files": [
    "stories/st-1117-3-dudas.jpg"
   ],
   "cover": null,
-  "status": "borrador",
+  "status": "pending",
   "campana": "carrusel",
   "title": "3 dudas antes de apuntarte (quedan 10 días)",
   "score": "76",
-  "note": "Story de dudas + lista de espera (Clara, 04) v2: deporte, qué hace, 3 meses gratis hasta el 27 nov. Pide dejar dudas en el último post (no por privado).; oficina: regla de alcance 16/11: una Story al día (el martes sale c10s); lleva «quedan 10 días», Clara le cambia la cuenta atrás y la reprograma"
+  "note": "Story de dudas + lista de espera (Clara, 04) v2: deporte, qué hace, 3 meses gratis hasta el 27 nov. Pide dejar dudas en el último post (no por privado).; oficina: regla de alcance 16/11: una Story al día (el martes sale c10s); lleva «quedan 10 días», Clara le cambia la cuenta atrás y la reprograma; reprogramada desde la oficina"
  },
  {
   "id": "c11",
@@ -2770,5 +2770,55 @@
   "note": "u27 · turno de Reels 16/11 18:37: Reel de datos sin voz (13,5 s), música nueva de fondo, captura real de RPE de partido con la fórmula de la app. Guion 77, auditoría 77.",
   "score": "guion 77 · montaje 77",
   "title": "90′ a RPE 6 pesan más que 60′ a RPE 8."
+ },
+ {
+  "id": "c12",
+  "kind": "carousel",
+  "files": [
+   "feed/c12-1.jpg",
+   "feed/c12-2.jpg",
+   "feed/c12-3.jpg",
+   "feed/c12-4.jpg",
+   "feed/c12-5.jpg",
+   "feed/c12-6.jpg",
+   "feed/c12-7.jpg",
+   "feed/c12-8.jpg"
+  ],
+  "title": "+30. El marcador se para. El partido, no. (balonmano infantil)",
+  "score": "82",
+  "caption": "+30 y el marcador se para. El partido, no.\nGuárdalo y mándaselo a tu segundo: es quien avisa del escalón.\n\nEn los Juegos Deportivos Escolares de Euskadi, en infantiles, con 30 goles de diferencia «se dará por finalizado el encuentro con el resultado que exista ese momento», pero se sigue jugando hasta el final y esos goles ya no cuentan (normativa de balonmano 2025 y 2026). En otras federaciones cambia.\n\nLa propuesta (no es norma): no esperes a +30. A +10, solo vale el gol tras 5 pases; a +15, defensa individual; a +20, solo marca quien aún no ha marcado. Y si vas perdiendo de 15 o más, cambia de marcador: robos, pases antes de lanzar y paradas, cada 5 minutos.\n\n¿Qué le pides tú a tu equipo cuando el partido ya está decidido? Déjalo en comentarios 👇\nEnvíaselo a tu segundo entrenador.\n\nComenta tu deporte, tu categoría y tus días y te preparo la semana en la app de ProTeam. Lista de espera hasta el 27 de noviembre, con 3 meses gratis. Enlace en la bio.\n\n#balonmano #balonmanobase #entrenadores",
+  "status": "pending",
+  "campana": "carrusel",
+  "when": "2026-11-18T12:30:00+01:00",
+  "cover": null,
+  "note": "Agente 04 · turno 16/11 21:07 · idea 6 (I-005) con ángulo nuevo: los minutos que ya no cuentan y también el que pierde · marco de decisión (estructura nueva) · norma verificada en las normativas de balonmano 2025 y 2026 de los JDE de Euskadi (euskadi.eus) · Andrés texto 79 → final 82 (agencia/criticas/2026-11-16-c12-*.md) · gemelo u11: que no salga el mismo día"
+ },
+ {
+  "id": "c12s",
+  "kind": "story",
+  "files": [
+   "stories/st-1117-un-minuto-una-consigna.jpg"
+  ],
+  "cover": null,
+  "status": "pending",
+  "campana": "carrusel",
+  "when": "2026-11-17T10:30:00+01:00",
+  "title": "1 minuto. 1 consigna. (tiempo muerto, baloncesto)",
+  "score": "79",
+  "note": "Story de valor (minitutorial) de Clara (04): FIBA art. 18, tiempo muerto de 1 minuto; selección española, final del Mundial 2019. Sin oferta."
+ },
+ {
+  "id": "c12s2",
+  "kind": "story",
+  "files": [
+   "stories/st-1117-soy-el-lateral.jpg"
+  ],
+  "cover": null,
+  "status": "pending",
+  "campana": "carrusel",
+  "when": "2026-11-17T16:30:00+01:00",
+  "title": "«Soy el lateral». ¿En qué categoría fijas las posiciones? (fútbol 7)",
+  "score": "77",
+  "note": "Story de conversación de Clara (04): pregunta abierta, respuesta en comentarios del último post; adelanta c11 (vie 20/11) con valor. Cantera del Barça (Ciutat Esportiva)."
  }
 ]
