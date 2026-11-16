@@ -286,3 +286,9 @@
 - Descartada: foto del All-Star con un espectáculo de mates (no es un entrenamiento). Sin resultado: entrenamientos de Real Madrid, Barça o Euroliga de baloncesto; Valdebebas y Lezama.
 - Decidido: la foto del entrenamiento de la NBA se describe sin nombres (el archivo de Commons no dice quién sale).
 - Sin tocar: «ProTeam por dentro» (turno de Reels de Marta, 21:37) y carrusel del viernes, Reels de datos y Stories (turno de Clara, cada hora). Sin tareas de relleno: Dani tiene 17 guiones en reserva, Andrés critica con cada guion y Samuel lee los experimentos a las 22:41.
+
+### Publicación y diario 16 nov 20:23 (Laura, 00)
+- Publicado u03 «Pierdes en el minuto 88» (Reel, 20:30, media 18053686727607096). jsDelivr dio «container status: ERROR»; salió con raw de GitHub.
+- Métricas 7 días (formato actual): u04 853 vistas, 38,8 % de saltos, 7,5 s, 1 guardado (el mejor). u01 183, 58,5 %, 6,1 s. u02 182, 71 %, 4,3 s (a las 7 h). c09 16 vistas (1 h). u03 recién salido. Antiguos: ta02 1.534, 014 616.
+- Hoja: Plan al día (u02, u03, c08s, c09, u04 → Publicado). Analisis: fila de u01 (Flojo). u02 aún no lleva 24 h.
+- Comentarios 3 días: solo los fijados de @app.proteam. Nada que responder ni ocultar.
