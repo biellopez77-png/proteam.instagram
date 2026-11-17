@@ -1,5 +1,6 @@
 # u35 · bq · actualidad · «Volvía de lesión. Jugó 16 minutos. Metió 18 puntos.» (baloncesto)
 
+- **fase: solución (mar 24 tarde – mié 25; enseña la app)** (lanzamiento, `agencia/LANZAMIENTO.md`; marcado por Dani el 17/11 21:10)
 - **Estado: guion en reserva, sin producir** · **Crítica de Andrés: 78/100** (guion, escala 16/11) · riesgo de salto bajo · crítica en `agencia/criticas/2026-11-17-u35-guion.md`
 - **Deporte:** baloncesto · **Encargo:** t-20261117-01-radar-2 (Radar de Samuel) · ficha: `agencia/ideas/radar-2026-11-17.md`, idea 2.
 - **Vigencia:** el partido es del domingo 15/11; tiene sentido hasta el domingo 22/11.

@@ -1,5 +1,6 @@
 # u39 · bq-08 · «Paris ganaba de 15 a Fenerbahce. Acabó necesitando una canasta sobre la bocina.» (baloncesto)
 
+- **fase: solución (mar 24 tarde – mié 25; enseña la app)** (lanzamiento, `agencia/LANZAMIENTO.md`; marcado por Dani el 17/11 21:10)
 - **Estado: listo para producir** (reserva) · **Crítica de Andrés: 80/100** (guion, escala 16/11) · riesgo de salto bajo · crítica en `agencia/criticas/2026-11-17-u39-guion.md`
 - **Deporte:** baloncesto (cadete, júnior y sénior de base) · **Encargo:** t-20261117-01-guiones-23-24 (3.º de 9; 1.º de baloncesto).
 - **Cuándo:** semana del 23/11, franja de baloncesto. Mejor en las 48 h siguientes a una jornada de Euroliga (el partido es del 11/11; si se publica después del 25/11, la frase sigue siendo cierta pero ya no es «de esta semana»).

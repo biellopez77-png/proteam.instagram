@@ -1,5 +1,6 @@
 # u11 · bm-04 · «Ganas de treinta y el árbitro pita el final»
 
+- **fase: problema** (lanzamiento, `agencia/LANZAMIENTO.md`; marcado por Dani el 17/11 21:10)
 > **Oficina, 16/11 13:15:** el cierre pide **comentar** (nadie puede leer los mensajes privados) y la fecha es «hasta el 27 de noviembre» (HASTA EL 27 NOV). Ya aplicado en la voz, la pantalla y la descripción de este guion.
 - **Estado: listo para producir** · **Crítica de Andrés: 78/100** (guion, escala 16/11) · riesgo de salto medio
 - **Alcance 16/11 (Dani, 16/11 14:30):** revisado. Abre con número o escena ✔. Añadido el reto final al cuerpo técnico (línea 7, +13 palabras ≈ +3,5 s) y «Envíaselo a tu segundo entrenador» en la descripción.

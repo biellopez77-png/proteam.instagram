@@ -1,5 +1,6 @@
 # u37 · bm-08 · «Siete metros. Minuto 58. Lo tira el de siempre.» (balonmano)
 
+- **fase: solución (mar 24 tarde – mié 25; enseña la app)** (lanzamiento, `agencia/LANZAMIENTO.md`; marcado por Dani el 17/11 21:10)
 - **Estado: guion en reserva, sin producir** · **Crítica de Andrés: 79/100** (guion, escala 16/11) · riesgo de salto bajo · crítica en `agencia/criticas/2026-11-17-u37-guion.md`
 - **Deporte:** balonmano · **Encargo:** t-20261117-01-guiones-23-24 (horizonte de 15 días) · semilla BM-7 del calendario.
 - **Cuándo:** semana del 23/11. **No antes del martes 24**: el sábado 21 sale el carrusel de la idea 23 (mismo tema, otro ángulo) y hacen falta dos días entre los dos.

@@ -1,5 +1,6 @@
 # u38 · f11-06 · «18:10. Entrenas a las 18:30. La sesión la estás pensando en el coche.» (fútbol)
 
+- **fase: solución (mar 24 tarde – mié 25; enseña la app)** (lanzamiento, `agencia/LANZAMIENTO.md`; marcado por Dani el 17/11 21:10)
 - **Estado: guion en reserva, sin producir** · **Crítica de Andrés: 77/100** (guion, escala 16/11) · riesgo de salto medio-bajo · crítica en `agencia/criticas/2026-11-17-u38-guion.md`
 - **Deporte:** fútbol (11 y 7) · **Encargo:** t-20261117-01-guiones-23-24 (horizonte de 15 días).
 - **Cuándo:** semana del 23/11, mejor un lunes o un martes por la tarde (día de entreno). No el mismo día que u30 (objetivo de la semana).

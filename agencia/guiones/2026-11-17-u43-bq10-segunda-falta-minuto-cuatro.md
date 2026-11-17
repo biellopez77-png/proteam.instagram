@@ -1,5 +1,6 @@
 # u43 · bq-10 · «Minuto 4. Segunda falta de tu pívot.» (baloncesto)
 
+- **fase: problema** (lanzamiento, `agencia/LANZAMIENTO.md`; marcado por Dani el 17/11 21:10)
 - **Estado: listo para producir** · **Crítica de Andrés: 80/100** (guion, escala 16/11) · riesgo de salto bajo · crítica en `agencia/criticas/2026-11-17-u43-guion.md`
 - **Deporte:** baloncesto (cadete, júnior y sénior: cuatro cuartos de 10 minutos) · **Encargo:** t-20261117-01-guiones-23-24 (semilla B-4 del calendario: «tu pívot hace dos faltas en el primer cuarto y no hay plan»).
 - **Cuándo:** semana del 23/11, cierre de campaña con la **animación del contador de la lista de espera** (como u28 v3) y «HASTA EL 27 NOV». Desde el 28/11, cierre C de `CIERRE_DESDE_28N.md`. No el mismo día que u26 (mismo pívot de foto alternativa) ni que u10 (otro «quién entra por quién»).

@@ -1,5 +1,6 @@
 # u13 · bq-02 · «Tu entreno está pensado para pista entera. Los martes tienes media.»
 
+- **fase: nutrición** (lanzamiento, `agencia/LANZAMIENTO.md`; marcado por Dani el 17/11 21:10)
 - **Estado: listo para producir** · **Crítica de Andrés: 76/100** (guion, escala 16/11) · riesgo de salto medio
 - **Alcance 16/11 (Dani, 16/11 14:30):** revisado. Abre con número o escena ✔. Añadido el reto final al cuerpo técnico (línea 7, +11 palabras ≈ +3,5 s) y «Envíaselo a tu segundo entrenador» en la descripción.
 - **Deporte:** baloncesto (base, cualquier categoría) · **Encargos:** t-20261116-multideporte-01 (tres deportes por igual) y t-20261116-01-reserva-jue-sab.

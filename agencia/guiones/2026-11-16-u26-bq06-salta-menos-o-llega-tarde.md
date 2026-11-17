@@ -1,5 +1,6 @@
 # u26 · bq-06 · «Ocho rebotes en octubre. Tres el sábado. ¿Salta menos o llega tarde?» (baloncesto)
 
+- **fase: solución (mar 24 tarde – mié 25; enseña la app)** (lanzamiento, `agencia/LANZAMIENTO.md`; marcado por Dani el 17/11 21:10)
 - **Estado: listo para producir** (reserva) · **Crítica de Andrés: 77/100** (guion, escala 16/11) · riesgo de salto medio
 - **Deporte:** baloncesto de base (cadete y júnior) · **Encargo:** t-20261116-01-reserva-dom-22 (en el hueco de B-4).
 - **Por qué no B-4 («dos faltas del pívot en el primer cuarto»):** necesitaba enseñar las faltas personales por jugador en el registro de baloncesto, y todas las capturas reales del banco son de balonmano (Sanciones existe como acción, pero no hemos visto faltas personales de baloncesto). Idea que depende de una función sin comprobar → no se hace; se elige otra con captura real.

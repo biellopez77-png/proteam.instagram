@@ -1,5 +1,6 @@
 # u24 · f11-04 · «Viernes, nueve menos cinco. Cinco minutos de córners con los que quedan.» (fútbol 11)
 
+- **fase: problema** (lanzamiento, `agencia/LANZAMIENTO.md`; marcado por Dani el 17/11 21:10)
 - **Estado: listo para producir** (reserva) · **Crítica de Andrés: 79/100** (guion, escala 16/11) · riesgo de salto medio-bajo
 - **Deporte:** fútbol 11 de base (infantil, cadete, juvenil) · **Encargo:** t-20261116-01-reserva-dom-22 (F-5, en el hueco de F-4, que no va antes del 25/11).
 - **Insight:** I-016 (`intel/insights/INSIGHTS.md`) · **Territorio:** decisiones pequeñas que condicionan el partido (cuándo se ensaya la jugada a balón parado). Sin relación con la asistencia (u18, u21) ni con la carga (u15).

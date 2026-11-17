@@ -1,5 +1,6 @@
 # u16 · bq-03 · «Cuarenta minutos de cuarenta. Tu base no se ha sentado.»
 
+- **fase: problema** (lanzamiento, `agencia/LANZAMIENTO.md`; marcado por Dani el 17/11 21:10)
 - **Estado: listo para producir** · **Crítica de Andrés: 77/100** (guion, escala 16/11) · riesgo de salto medio-bajo
 - **Deporte:** baloncesto (cadete y júnior) · **Encargo:** t-20261116-01-guiones-mie-vie (B-1).
 - **Insight:** I-010 (`intel/insights/INSIGHTS.md`) · **Territorio:** gestión del partido / reparto de minutos. Últimas 10 piezas en el territorio: u09 y u12 (con esta, 3 de 10 = 30 %).

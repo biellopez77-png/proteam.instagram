@@ -1,5 +1,6 @@
 # u20 · bq-04 · «Tiempo muerto: un minuto. Tú hablas de cinco cosas.» (baloncesto)
 
+- **fase: nutrición** (lanzamiento, `agencia/LANZAMIENTO.md`; marcado por Dani el 17/11 21:10)
 - **Estado: listo para producir** (reserva) · **Crítica de Andrés: 81/100** (guion, escala 16/11) · riesgo de salto medio-bajo
 - **Deporte:** baloncesto (infantil, cadete, júnior y sénior de base; reglas FIBA) · **Encargo:** t-20261116-01-guiones-mie-vie (B-2).
 - **Insight:** I-012 (`intel/insights/INSIGHTS.md`) · **Territorio:** decisiones durante el partido (comunicación del entrenador). Últimas 10 piezas: 0 sobre tiempos muertos.

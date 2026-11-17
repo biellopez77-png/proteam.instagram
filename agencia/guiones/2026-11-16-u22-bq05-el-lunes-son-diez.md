@@ -1,5 +1,6 @@
 # u22 · bq-05 · «Sábado a las diez. Domingo a las doce. Y el lunes, entreno normal.» (baloncesto)
 
+- **fase: problema** (lanzamiento, `agencia/LANZAMIENTO.md`; marcado por Dani el 17/11 21:10)
 - **Estado: listo para producir** (reserva) · **Crítica de Andrés: 78/100** (guion, escala 16/11) · riesgo de salto medio-bajo
 - **Deporte:** baloncesto de base (infantil, cadete, junior con doble jornada) · **Encargo:** t-20261116-01-reserva-dom-22 (B-3).
 - **Insight:** I-014 (`intel/insights/INSIGHTS.md`) · **Territorio:** lo que pasa entre partido y entreno (la carga del lunes). Comparte territorio con u15 (fútbol 11, el martes según minutos); aquí el criterio no son los minutos sino lo que dice cada jugador.

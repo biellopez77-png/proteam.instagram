@@ -1,5 +1,6 @@
 # u32 · bm-07 · «Minuto 46. Pierdes de tres. Tiempo muerto. Ganas de cuatro. ¿Qué cambiaste?» (balonmano)
 
+- **fase: solución (mar 24 tarde – mié 25; enseña la app)** (lanzamiento, `agencia/LANZAMIENTO.md`; marcado por Dani el 17/11 21:10)
 - **Estado: listo para producir** (reserva) · **Crítica de Andrés: 77/100** (guion, escala 16/11) · riesgo de salto bajo · crítica en `agencia/criticas/2026-11-16-u32-guion.md`
 - **Deporte:** balonmano de base (cadete, juvenil; partes de 30 minutos) · **Encargo:** t-20261116-diario-01 (Samuel, bucle diario): variación 2 de 2 de u04.
 - **Qué se mantiene de u04:** segunda persona, algo bueno que tuviste y perdiste + la causa («No lo apuntaste»), escena concreta, ≤ 25 s, ficha para guardar, pregunta final al cuerpo técnico.

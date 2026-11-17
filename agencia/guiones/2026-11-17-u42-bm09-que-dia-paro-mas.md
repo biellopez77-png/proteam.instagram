@@ -1,5 +1,6 @@
 # u42 · bm-09 · «Sábado: le meten 28. Domingo: le meten 20. ¿Qué día paró más?» (balonmano)
 
+- **fase: solución (mar 24 tarde – mié 25; enseña la app)** (lanzamiento, `agencia/LANZAMIENTO.md`; marcado por Dani el 17/11 21:10)
 - **Estado: listo para producir** · **Crítica de Andrés: 81/100** (guion, escala 16/11) · riesgo de salto bajo · crítica en `agencia/criticas/2026-11-17-u42-guion.md`
 - **Deporte:** balonmano · **Encargo:** t-20261117-01-guiones-23-24 (horizonte de 15 días).
 - **Cuándo:** semana del 23/11 (lunes 23 a viernes 27), cierre de campaña con la **animación del contador de la lista de espera** (como u28 v3) y «HASTA EL 27 NOV». Desde el 28/11, cierre A de `CIERRE_DESDE_28N.md`. No el mismo día que u23 (también va de portero) ni que u29 (mismo registro «gol o parada»).

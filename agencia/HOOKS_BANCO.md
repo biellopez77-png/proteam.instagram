@@ -1248,3 +1248,7 @@ Fuente de las normas: Normativa de Balonmano 2025, Juegos Deportivos Escolares d
 - **H1097** Al descanso no se lee una libreta. Se lee una línea. [balonmano · provocadora · registro] (12/15)
 - **H1098** Cuarenta rayas en la libreta. Una decisión al descanso. [balonmano · comparativa · registro] (11/15)
 - **H1099** Antes del partido, elige qué no vas a apuntar. [balonmano · educativa · registro] (11/15)
+## Nuevos · 17/11 21:00 (Dani, lanzamiento u51–u53; valen también para problema)
+- **H1104** El partido no acaba con el pitido. Acaba cuando tú lo sueltas. [fútbol · contraintuitiva · post-partido] (12/15)
+- **H1105** Tres deportes. El mismo lunes. [los tres · comparativa · organización] (12/15)
+- **H1106** Viernes. Convocatoria en el grupo, el siete en la cabeza. [balonmano · situación real · organización] (11/15)

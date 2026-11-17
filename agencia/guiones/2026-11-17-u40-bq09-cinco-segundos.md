@@ -1,5 +1,6 @@
 # u40 · bq-09 · «Cinco segundos. Es lo que tiene para tirar el libre.» (baloncesto)
 
+- **fase: solución (mar 24 tarde – mié 25; enseña la app)** (lanzamiento, `agencia/LANZAMIENTO.md`; marcado por Dani el 17/11 21:10)
 - **Estado: listo para producir** (reserva) · **Crítica de Andrés: 77/100** (guion, escala 16/11) · riesgo de salto medio · crítica en `agencia/criticas/2026-11-17-u40-guion.md`
 - **Deporte:** baloncesto (infantil, cadete y júnior; reglas FIBA) · **Encargo:** t-20261117-01-guiones-23-24 (4.º de 9; 2.º de baloncesto) · semilla B-6 del calendario.
 - **Cuándo:** semana del 23/11, franja de baloncesto. No el mismo día que u39 ni que u16 (el base cansado en el tiro libre).

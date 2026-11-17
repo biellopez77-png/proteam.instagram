@@ -1,5 +1,6 @@
 # u21 · f11-03 · «Viernes, diez de la noche. Dos se quedan fuera.» (fútbol 11)
 
+- **fase: problema** (lanzamiento, `agencia/LANZAMIENTO.md`; marcado por Dani el 17/11 21:10)
 - **Estado: listo para producir** (reserva) · **Crítica de Andrés: 77/100** (guion, escala 16/11) · riesgo de salto medio
 - **Deporte:** fútbol 11 de base (infantil, cadete, juvenil) · **Encargo:** t-20261116-01-guiones-mie-vie (F-3).
 - **Insight:** I-013 (`intel/insights/INSIGHTS.md`) · **Territorio:** decisiones antes del partido (la convocatoria). Comparte la asistencia con u18, pero u18 es la sesión del martes y este es la decisión del viernes.

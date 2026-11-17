@@ -1,5 +1,6 @@
 # u45 · bm-10 · «Quedan treinta segundos. Ganas de uno. Tu central no suelta el balón.» (balonmano)
 
+- **fase: problema** (lanzamiento, `agencia/LANZAMIENTO.md`; marcado por Dani el 17/11 21:10)
 - **Estado: listo para producir** · **Crítica de Andrés: 81/100** (guion, escala 16/11) · riesgo de salto bajo · crítica en `agencia/criticas/2026-11-17-u45-guion.md`
 - **Deporte:** balonmano de base federado (infantil, cadete, juvenil) y sénior · **Encargo:** t-20261117-01-guiones-23-24 (guion 9 de 9; el de balonmano que faltaba).
 - **Cuándo:** semana del 23/11, cierre de campaña con la **animación del contador de la lista de espera** (como u28 v3) y «HASTA EL 27 NOV». Desde el 28/11, cierre C de `CIERRE_DESDE_28N.md`. No el mismo día que u37 (siete metros en el último minuto) ni que u33 (juego pasivo, final de ataque).

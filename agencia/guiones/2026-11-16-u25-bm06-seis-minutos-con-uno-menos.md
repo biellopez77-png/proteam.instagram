@@ -1,5 +1,6 @@
 # u25 · bm-06 · «Tres exclusiones el sábado. Seis minutos con uno menos.» (balonmano)
 
+- **fase: solución (mar 24 tarde – mié 25; enseña la app)** (lanzamiento, `agencia/LANZAMIENTO.md`; marcado por Dani el 17/11 21:10)
 - **Estado: listo para producir** (reserva) · **Crítica de Andrés: 82/100** (guion, escala 16/11) · riesgo de salto bajo
 - **Deporte:** balonmano de base (infantil, cadete, juvenil) · **Encargo:** t-20261116-01-reserva-dom-22 (BM-6, «la inferioridad que nadie entrena»).
 - **Insight:** I-017 (`intel/insights/INSIGHTS.md`) · **Territorio:** lo que pasa entre partido y entreno (el sábado no llega al martes). Primer Reel de la cuenta sobre exclusiones e inferioridad.

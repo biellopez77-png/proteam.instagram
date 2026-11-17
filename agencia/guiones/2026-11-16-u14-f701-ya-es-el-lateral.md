@@ -1,5 +1,6 @@
 # u14 · f7-01 · «Tiene nueve años y ya es «el lateral».»
 
+- **fase: problema** (lanzamiento, `agencia/LANZAMIENTO.md`; marcado por Dani el 17/11 21:10)
 - **Estado: listo para producir** · **Crítica de Andrés: 79/100** (guion, escala 16/11) · riesgo de salto bajo
 - **Alcance 16/11 (Dani, 16/11 14:30):** revisado. Abre con número o escena ✔. Añadido el reto final al cuerpo técnico (línea 7, +14 palabras ≈ +3,5 s) y «Envíaselo a tu segundo entrenador» en la descripción.
 - **Deporte:** fútbol 7 (benjamín y alevín) · **Encargos:** t-20261116-multideporte-01 (tres deportes por igual) y t-20261116-01-reserva-jue-sab.
