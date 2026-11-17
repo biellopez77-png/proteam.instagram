@@ -58,7 +58,7 @@ Fotos: (créditos de Pau).
 
 #futbolbase #baloncestobase #balonmanobase #entrenadores #proteam
 
-Primer comentario fijo: «Día 1 de 10. El 28 abre ProTeam. ¿Cuál de los tres banquillos es el tuyo?»
+Primer comentario fijo: «El 28 abre ProTeam. ¿Cuál de los tres banquillos es el tuyo?»
 
 ## 8. Hooks (0–3 en curiosidad · relevancia · tensión · claridad · coherencia; ≥ 11 pasa)
 | # | tipo | hook | total |

@@ -8,7 +8,7 @@
 - **Idea en una frase:** «Sale el 28» deja de ser un aviso y se convierte en una decisión: este sábado lo preparas como siempre, y desde esta tarde te enseñamos por qué no hace falta.
 
 ## 1. Objetivo estratégico
-Fase DECISIÓN: «subirse al carro». Fecha firme («Vamos a sacarla. Sale el 28») y transición a PROBLEMA, que empieza esa tarde. Lore: «Día 3 de 10».
+Fase DECISIÓN: «subirse al carro». Fecha firme («Vamos a sacarla. Sale el 28») y transición a PROBLEMA, que empieza esa tarde.
 
 ## 2. Público y escena
 Entrenador de balonmano de base. Viernes. Mañana juega a las 12:00. La convocatoria está en el grupo, el siete inicial en la cabeza, la libreta en la mochila.
@@ -38,7 +38,7 @@ Silencio de 0,4 s antes de «Vamos a sacarla» (golpe ahí).
 |---|---|
 | 0–3,0 | Foto a sangre: calentamiento de un equipo de primer nivel de balonmano (Asobal, EHF o selección; Commons, licencia leída; Pau) · desde el fotograma 0: **8 DÍAS** · *y mañana, partido* |
 | 3,0–8,5 | motion graphics: tres objetos que entran: burbuja «Convocados» · cabeza con «7 inicial» · libreta en la mochila · **COMO SIEMPRE** |
-| 8,5–13,5 | fondo tinta · **SALE EL 28** (serif azul *28*) · pequeño: «Día 3 de 10» |
+| 8,5–13,5 | fondo tinta · **SALE EL 28** (serif azul *28*) |
 | 13,5–20,0 | **DESDE ESTA TARDE:** *lo que pasa cada semana* · BALONMANO · FÚTBOL · BALONCESTO |
 | 20,0–24,5 | vuelve la foto del principio (bucle) · RETO PARA TU STAFF · **¿Qué dejaríais** *de hacer a mano?* |
 | 24,5–31,0 | **LISTA DE ESPERA · HASTA EL 27 NOV** · *3 meses gratis* · pequeño: «Enlace en la bio» |
