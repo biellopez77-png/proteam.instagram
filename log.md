@@ -376,3 +376,10 @@
 - Pau: vuelto a probar a las 9:50. thumb.wikimedia.org sigue sin estar permitido y el original de Commons devuelve «demasiadas peticiones». La tarea sigue abierta.
 - Sin tocar: «por dentro» de baloncesto (falta captura real y música) y la parrilla de Clara (su turno de las :31).
 - Nada nuevo para Andrés (sin críticas pendientes) ni Samuel (bucle de las 22:41).
+
+## 17/11 · 10:49 · Encargos (Laura, con Pau)
+- Sin correcciones ni consignas nuevas de Biel.
+- Pau: Commons vuelve a dejar bajar fotos (la miniatura de siempre, con ancho estándar y pausa; ya no hace falta permitir thumb.wikimedia.org). Bajadas y miradas 6 de Maledon y 2 del Metropolitano. Entran en el banco 3 de Maledon con el Madrid (PROTEAM_JUGADOR_BASE_REAL_MADRID_FOTO_001 a 003) para u35. Las del Metropolitano no entran: bandera del Atlético y panorámica demasiado apaisada; u34 sigue con Lamine Yamal en plano cerrado. Tarea de fotos de u34–u36 cerrada.
+- Pau (horizonte de 15 días): nueva tarea, portadas de los 7 carruseles del jue 19 al dom 22.
+- Siguen parados u28 y u33 (sin voz de Mateo: ElevenLabs sin créditos hasta el 14/12) y el «por dentro» de baloncesto. La parrilla de Clara, en su turno de las :31.
+- Nada nuevo para Dani (su turno de las :08), Andrés (sin críticas pendientes) ni Samuel (bucle de las 22:41).
