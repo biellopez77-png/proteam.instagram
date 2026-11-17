@@ -2,6 +2,7 @@
 
 | Fecha | Pieza | Tipo | Resultado |
 | --- | --- | --- | --- |
+| 2026-11-17 18:25 | c13s2 stories/st-1117-media-pista.jpg | story | publicado, media_id 18094188128507241 |
 | 2026-11-17 17:26 | u28 reels/u28-tobillo.mp4 | reel | fallo: Error calling tool 'execute_action': Instagram could not process the video for account 17841445998297098 (container status: ERROR). Check that the media URL(s) are publicly accessible and meet Instagram's requirements (MP4 or MOV, max 1 GB, duration between 3 seconds and 15 minutes). (jsDelivr y raw; MP4 h264 1080x1920 17,9 s 4 MB) |
 | 2026-11-17 16:24 | c12s2 stories/st-1117-soy-el-lateral.jpg | story | publicado, media_id 18137105878742939 |
 | 2026-11-17 14:27 | c13s stories/st-1117-siete-metros.jpg | story | publicado, media_id 17953368129055450 |

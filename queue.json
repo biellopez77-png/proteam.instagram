@@ -2977,12 +2977,14 @@
    "stories/st-1117-media-pista.jpg"
   ],
   "cover": null,
-  "status": "pending",
+  "status": "published",
   "campana": "carrusel",
   "when": "2026-11-17T18:30:00+01:00",
   "title": "El martes te dan media pista. ¿Y tu sesión? (baloncesto)",
   "score": "79",
-  "note": "Story de conversación + aviso de c13 (mié 19:30) de Clara (04); respuesta en comentarios.; oficina: cambios: mejora el cta; reprogramada desde la oficina · 17/11 16:00 (corrección de Biel: «mejora el cta»): CTA en un bloque azul con una sola acción y su premio («Comenta tu número en nuestro último post y te preparo la sesión de 60 minutos para tus días»). Andrés 79."
+  "note": "Story de conversación + aviso de c13 (mié 19:30) de Clara (04); respuesta en comentarios.; oficina: cambios: mejora el cta; reprogramada desde la oficina · 17/11 16:00 (corrección de Biel: «mejora el cta»): CTA en un bloque azul con una sola acción y su premio («Comenta tu número en nuestro último post y te preparo la sesión de 60 minutos para tus días»). Andrés 79.",
+  "media_id": "18094188128507241",
+  "published_at": "2026-11-17T18:25:05+0100"
  },
  {
   "id": "c13s3",
