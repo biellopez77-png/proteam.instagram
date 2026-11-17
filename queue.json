@@ -2670,11 +2670,13 @@
    "stories/st-1117-tu-equipo-3-datos.jpg"
   ],
   "cover": null,
-  "status": "pending",
+  "status": "published",
   "campana": "carrusel",
   "title": "¿Qué deporte entrenas? Fútbol, baloncesto o balonmano (se contesta en el post de hoy)",
   "score": "78",
-  "note": "Story de comunidad (Clara, 04) v2 del 16/11 13:40: encuesta de deporte (encargo de Biel, tres deportes); respuesta en comentarios de c10, no por privado. Doc agencia/carruseles/2026-11-17-stories.md · crítica agencia/criticas/2026-11-17-stories.md"
+  "note": "Story de comunidad (Clara, 04) v2 del 16/11 13:40: encuesta de deporte (encargo de Biel, tres deportes); respuesta en comentarios de c10, no por privado. Doc agencia/carruseles/2026-11-17-stories.md · crítica agencia/criticas/2026-11-17-stories.md",
+  "media_id": "18100278824656813",
+  "published_at": "2026-11-17T13:25:05+0100"
  },
  {
   "id": "c10s2",
