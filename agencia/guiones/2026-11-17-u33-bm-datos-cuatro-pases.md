@@ -49,3 +49,8 @@ Fotos: Dika Mem (dronepicr, CC BY 2.0) y selección española de balonmano, Mund
 
 ## Diez preguntas de control
 1. ¿Interesa? Sí: el pasivo decide partidos igualados. 2. ¿Concreto? 4 pases, 6 antes, 2022, IHF. 3. ¿Idea para recordar? «Brazo arriba = 4 pases.» 4. ¿Distinta? Primer Reel de datos de balonmano. 5. ¿Prueba de la otra cuenta? La pasa por las capturas de pérdida y cronología. 6. ¿Valor? Regla exacta + una cifra que contar el lunes. 7. ¿Formato? Datos 14 s. 8. ¿Interés? Cambio cada ~3,5 s y conteo animado. 9. ¿Realista? Banco + dos capturas reales. 10. ¿Representa a ProTeam? Sí: partido en directo.
+
+## Voz de Mateo (17/11, turno de Reels 12:37 · Dani)
+Regla de Biel del 17/11: todo Reel lleva la voz de Mateo. Guion de voz corto sobre las mismas cuatro pantallas:
+> Brazo arriba: cuatro pases, y a tirar. Hasta dos mil veintidós eran seis. Ahora, cuatro. Pasivo pitado, balón perdido: en la app de Pro Team lo apuntas en directo, y el lunes está en la cronología. ¿Cuántos perdisteis por pasivo el sábado? Lista de espera hasta el veintisiete de noviembre: tres meses gratis.
+- 52 palabras, 309 caracteres. Duración final 17,9 s (antes 13,3 s); el golpe de la música cae en «cuatro» (el 6 que pasa a 4). Se dice «lo apuntas en directo» (como pérdida, que es lo que muestra la captura), nunca que la app tenga una acción «pasivo».

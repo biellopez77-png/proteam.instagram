@@ -33,3 +33,9 @@ Comenta tu deporte, tu categoría y tus días y te preparo la semana en la app d
 
 ## Diez preguntas de control
 1. Sí: todos los entrenadores de baloncesto han tenido un tobillo torcido en el equipo. 2. Un dato con fuente y una rutina real. 3. «El tobillo, el primero de la lista.» 4. Primer Reel sobre prevención y primera vez que sale Preparación física → Rutinas. 5. La pasa: fuente con nombre y pantalla real. 6. Se guarda (la pregunta para el staff). 7. Datos de 13 s: una idea. 8. Cambio de plano cada 3,3 s con movimiento. 9. Todo existe. 10. La app es la solución que se ve.
+
+## Voz de Mateo (17/11, turno de Reels 12:37 · Dani)
+Regla de Biel del 17/11: todo Reel lleva la voz de Mateo. Se añade un guion de voz corto que sigue las cuatro pantallas sin cambiar lo que ya funcionaba (fotos, dato, captura, reto y cierre):
+> Lesión número uno en baloncesto: el tobillo. ¿Está en tu semana? Dieciséis temporadas universitarias en Estados Unidos: el esguince de tobillo, el primero de la lista. En la app de Pro Team tienes tu rutina de tobillo. ¿Cuándo lo entrenasteis por última vez? Lista de espera hasta el veintisiete de noviembre: tres meses gratis.
+- 51 palabras, 328 caracteres. Duración final 18,0 s (antes 13,6 s): pasa de los 15 s de un Reel de datos por el cierre de campaña en voz; se acepta (cierre obligatorio, un dato por frase). La voz entra en 0,08 s con el dato («Lesión número uno»).
+- No cambia el dato ni se añade nada que la fuente no diga (no hay porcentajes ni promesa de evitar lesiones).

@@ -1,22 +1,22 @@
 {
  "meta": {
   "contenedor": "mov,mp4,m4a,3gp,3g2,mj2",
-  "duracion_s": 13.6,
-  "tamano_bytes": 3002344,
-  "bitrate_kbps": 1766,
+  "duracion_s": 18.0,
+  "tamano_bytes": 4027216,
+  "bitrate_kbps": 1790,
   "ancho": 1080,
   "alto": 1920,
   "relacion": "9:16",
   "fps": 30.0,
-  "fotogramas_declarados": 408,
+  "fotogramas_declarados": 540,
   "codec_video": "h264",
   "pix_fmt": "yuv420p",
   "pistas_audio": [
    {
     "codec": "aac",
-    "canales": 2,
+    "canales": 1,
     "hz": 48000,
-    "bitrate_kbps": 198
+    "bitrate_kbps": 216
    }
   ],
   "etiquetas": {
@@ -26,102 +26,107 @@
    "encoder": "Lavf60.16.100"
   },
   "id": "u28",
-  "fotogramas_leidos": 408,
-  "sha256": "b810c049eb626bfdb2036798ed32e40d86ab0ddcf3ecb1074554787ec2772787",
+  "fotogramas_leidos": 540,
+  "sha256": "6608c2aeb12935fa6c3bd36888a57f43ea82acab39c4f588ddd2f76e882e078e",
   "archivo": "reels/u28-tobillo.mp4",
   "fuente": "",
   "marca": "proteam",
   "tipo": "propio",
   "formato": "reel",
-  "tema": "lesión nº 1 en baloncesto: el tobillo (datos)",
-  "analizado": "2026-11-16 20:58"
+  "tema": "Lesión nº 1 en baloncesto: el tobillo (con voz de Mateo)",
+  "analizado": "2026-11-17 11:53"
  },
  "montaje": {
   "cortes_duros": 3,
   "transiciones_o_movimientos_fuertes": 0,
   "planos": 4,
-  "duracion_media_plano_s": 3.4,
-  "plano_mas_largo_s": 3.667,
-  "plano_mas_corto_s": 3.133,
-  "cortes_por_10s": 2.21,
+  "duracion_media_plano_s": 4.5,
+  "plano_mas_largo_s": 6.433,
+  "plano_mas_corto_s": 2.467,
+  "cortes_por_10s": 1.67,
   "tramos_estaticos": [
    {
-    "desde": 4.5,
-    "hasta": 6.53,
-    "duracion_s": 2.03
+    "desde": 0.23,
+    "hasta": 1.9,
+    "duracion_s": 1.67
    },
    {
-    "desde": 8.33,
-    "hasta": 9.9,
-    "duracion_s": 1.57
+    "desde": 4.9,
+    "hasta": 6.57,
+    "duracion_s": 1.67
+   },
+   {
+    "desde": 12.43,
+    "hasta": 17.97,
+    "duracion_s": 5.53
    }
   ],
   "nota": "Detección automática por histograma y diferencia de imagen sobre TODOS los fotogramas. Un motion graphic continuo cuenta como un solo plano; un cambio de fondo brusco dentro de una animación puede contarse como corte. Confirmar en las láminas."
  },
  "cortes": [
   {
-   "fotograma": 94,
-   "t": 3.133,
+   "fotograma": 109,
+   "t": 3.633,
    "tipo": "corte",
-   "fuerza": 0.422
+   "fuerza": 0.404
   },
   {
-   "fotograma": 198,
-   "t": 6.6,
+   "fotograma": 273,
+   "t": 9.1,
    "tipo": "corte",
-   "fuerza": 0.844
+   "fuerza": 0.908
   },
   {
-   "fotograma": 298,
-   "t": 9.933,
+   "fotograma": 347,
+   "t": 11.567,
    "tipo": "corte",
-   "fuerza": 0.497
+   "fuerza": 0.487
   }
  ],
  "escenas": [
   {
    "escena": 1,
    "desde_fotograma": 0,
-   "hasta_fotograma": 93,
+   "hasta_fotograma": 108,
    "desde": 0.0,
-   "hasta": 3.133,
-   "duracion_s": 3.133,
-   "movimiento_medio": 0.003,
+   "hasta": 3.633,
+   "duracion_s": 3.633,
+   "movimiento_medio": 0.0028,
    "luz_media": 0.22,
-   "saturacion_media": 0.262
+   "saturacion_media": 0.261
   },
   {
    "escena": 2,
-   "desde_fotograma": 94,
-   "hasta_fotograma": 197,
-   "desde": 3.133,
-   "hasta": 6.6,
-   "duracion_s": 3.467,
-   "movimiento_medio": 0.0117,
-   "luz_media": 0.898,
-   "saturacion_media": 0.043
+   "desde_fotograma": 109,
+   "hasta_fotograma": 272,
+   "desde": 3.633,
+   "hasta": 9.1,
+   "duracion_s": 5.467,
+   "movimiento_medio": 0.0083,
+   "luz_media": 0.905,
+   "saturacion_media": 0.041
   },
   {
    "escena": 3,
-   "desde_fotograma": 198,
-   "hasta_fotograma": 297,
-   "desde": 6.6,
-   "hasta": 9.933,
-   "duracion_s": 3.333,
-   "movimiento_medio": 0.0137,
+   "desde_fotograma": 273,
+   "hasta_fotograma": 346,
+   "desde": 9.1,
+   "hasta": 11.567,
+   "duracion_s": 2.467,
+   "movimiento_medio": 0.0174,
    "luz_media": 0.293,
-   "saturacion_media": 0.244
+   "saturacion_media": 0.243
   },
   {
    "escena": 4,
-   "desde_fotograma": 298,
-   "hasta_fotograma": 407,
-   "desde": 9.933,
-   "hasta": 13.6,
-   "duracion_s": 3.667,
-   "movimiento_medio": 0.0046,
-   "luz_media": 0.15,
-   "saturacion_media": 0.454
+   "desde_fotograma": 347,
+   "hasta_fotograma": 539,
+   "desde": 11.567,
+   "hasta": 18.0,
+   "duracion_s": 6.433,
+   "movimiento_medio": 0.003,
+   "luz_media": 0.153,
+   "saturacion_media": 0.453
   }
  ],
  "laminas": [
@@ -135,35 +140,36 @@
     20,
     25,
     45,
-    46,
+    54,
     90,
-    93,
-    94,
-    139,
-    145,
-    184,
-    197,
-    198,
-    243,
-    247
+    108,
+    109,
+    154,
+    190,
+    199,
+    244,
+    272,
+    273,
+    309
    ],
    "desde": 0.0,
-   "hasta": 8.233,
+   "hasta": 10.3,
    "modo": "general"
   },
   {
    "lamina": "general_002.jpg",
    "fotogramas": [
-    288,
-    297,
-    298,
-    343,
-    352,
-    388,
-    407
+    346,
+    347,
+    392,
+    437,
+    443,
+    482,
+    527,
+    539
    ],
-   "desde": 9.6,
-   "hasta": 13.567,
+   "desde": 11.533,
+   "hasta": 17.967,
    "modo": "general"
   },
   {
@@ -181,10 +187,10 @@
     72,
     80,
     88,
-    93,
-    94,
     96,
     104,
+    108,
+    109,
     112,
     120,
     128,
@@ -204,8 +210,6 @@
     176,
     184,
     192,
-    197,
-    198,
     200,
     208,
     216,
@@ -216,35 +220,61 @@
     256,
     264,
     272,
+    273,
     280,
     288,
     296,
-    297,
-    298,
     304,
     312,
     320,
-    328
+    328,
+    336,
+    344,
+    346
    ],
    "desde": 5.867,
-   "hasta": 10.933,
+   "hasta": 11.533,
    "modo": "detalle"
   },
   {
    "lamina": "detalle_003.jpg",
    "fotogramas": [
-    336,
-    344,
+    347,
     352,
     360,
     368,
     376,
     384,
     392,
-    400
+    400,
+    408,
+    416,
+    424,
+    432,
+    440,
+    448,
+    456,
+    464,
+    472,
+    480,
+    488,
+    496,
+    504,
+    512,
+    520,
+    528
    ],
-   "desde": 11.2,
-   "hasta": 13.333,
+   "desde": 11.567,
+   "hasta": 17.6,
+   "modo": "detalle"
+  },
+  {
+   "lamina": "detalle_004.jpg",
+   "fotogramas": [
+    536
+   ],
+   "desde": 17.867,
+   "hasta": 17.867,
    "modo": "detalle"
   }
  ],
@@ -255,132 +285,132 @@
    {
     "fotograma": 0,
     "t": 0.0,
-    "texto": "we ON TO ELTOB trates"
+    "texto": "we ON TO EL JB trates fl"
    },
    {
     "fotograma": 5,
     "t": 0.167,
-    "texto": "we LONCESTO EL LLO. EN"
+    "texto": "LO. ELTOB at ee"
    },
    {
     "fotograma": 8,
     "t": 0.267,
-    "texto": "ELTC LO. trates TER ls"
+    "texto": "we PS EL OBILLO."
    },
    {
     "fotograma": 10,
     "t": 0.333,
-    "texto": "eee ELTC LLO. at"
+    "texto": "ELTC LO."
    },
    {
     "fotograma": 15,
     "t": 0.5,
-    "texto": "we an ELTC tates LLO. ENTER ed"
+    "texto": "ELTO LLO. ed"
    },
    {
     "fotograma": 16,
     "t": 0.533,
-    "texto": "we an ELTC LLO. ls el"
+    "texto": "Ds ELTO LLO. ls"
    },
    {
     "fotograma": 20,
     "t": 0.667,
-    "texto": "we ELTOBILLO."
+    "texto": "we Ds ELTC LLO. ls"
    },
    {
     "fotograma": 24,
     "t": 0.8,
-    "texto": "we ELTC LLO."
+    "texto": "Ys ELTC LLO. ENTER at"
    },
    {
     "fotograma": 25,
     "t": 0.833,
-    "texto": "we pen ELTC LLO. trates ENTER"
+    "texto": "en ELTOBILLO. ENTER"
    },
    {
     "fotograma": 32,
     "t": 1.067,
-    "texto": "we ELTC _LO. ls ENTER"
+    "texto": "be ELTO _LO. ENTER at"
    },
    {
     "fotograma": 40,
     "t": 1.333,
-    "texto": "we LO ELTOBILLO el"
+    "texto": "EL OBILLO. Que ed"
    },
    {
     "fotograma": 45,
     "t": 1.5,
-    "texto": "LONCESTO ELTOB viales Le"
-   },
-   {
-    "fotograma": 46,
-    "t": 1.533,
-    "texto": "LONCESTO ELTOB trates ed"
+    "texto": "te LONCESTO Lo. ENTER Le"
    },
    {
     "fotograma": 48,
     "t": 1.6,
-    "texto": "we nn LONCESTO EL” trates _LO. Cl na"
+    "texto": "LO CESTO _LO. at"
+   },
+   {
+    "fotograma": 54,
+    "t": 1.8,
+    "texto": "ESTO EL’ LLO trates ed"
    },
    {
     "fotograma": 56,
     "t": 1.867,
-    "texto": "Ya ESTO EL: LO. ¿Está semana?"
+    "texto": "ao ESTO EL” OB LLO ls"
    },
    {
     "fotograma": 64,
     "t": 2.133,
-    "texto": "we pan LO EL” Esta"
+    "texto": "we ao LONCESTO EL” LO. trates ls el"
    },
    {
     "fotograma": 72,
     "t": 2.4,
-    "texto": "we LESI LO LO. Esta ana?"
+    "texto": "ESTO ELTO LLO. trates ls"
    },
    {
     "fotograma": 80,
     "t": 2.667,
-    "texto": "we LESI LONCESTO ELT OB LL Mana?"
+    "texto": "an LESI LONCESTO JD LLO."
    },
    {
     "fotograma": 88,
     "t": 2.933,
-    "texto": "we LO EL: LL ¿Est oe! ana? Sf"
+    "texto": "we ao LESI LONCESTO LLO. nar"
    },
    {
     "fotograma": 90,
     "t": 3.0,
-    "texto": "ww LO STO EL LLO. anal"
-   },
-   {
-    "fotograma": 93,
-    "t": 3.1,
-    "texto": "ao LONCESTO EL; 'OBILLO. NANA. ¿Está"
-   },
-   {
-    "fotograma": 94,
-    "t": 3.133,
-    "texto": "be STO EL; LLO. ¿Está Dra"
+    "texto": "LESI LONCESTO EL” LLO. Está ana?"
    },
    {
     "fotograma": 96,
     "t": 3.2,
-    "texto": "ue"
+    "texto": "LONCESTO EL: nO ILLO. mana? at Sf ra"
    },
    {
     "fotograma": 104,
     "t": 3.467,
-    "texto": "MPORADAS El esguince da tahilla"
+    "texto": "LO EL; ¿Están einana?"
+   },
+   {
+    "fotograma": 108,
+    "t": 3.6,
+    "texto": "we LO EL;"
+   },
+   {
+    "fotograma": 109,
+    "t": 3.633,
+    "texto": "STO DA EL; na?"
    },
    {
     "fotograma": 112,
     "t": 3.733,
-    "texto": "El esguince No1"
+    "texto": "tee"
    },
    {
     "fotograma": 120,
     "t": 4.0,
-    "texto": "El esguince de"
+    "texto": ""
    },
    {
     "fotograma": 128,
@@ -390,378 +420,449 @@
    {
     "fotograma": 136,
     "t": 4.533,
-    "texto": "16 TEMPORADAS NCAA (EE. UU.) El esguince fue la lesión más frecuente No"
-   },
-   {
-    "fotograma": 139,
-    "t": 4.633,
-    "texto": "16 TEMPORADAS NCAA (EE. UU.) El esguince fue la lesión más frecuente No"
+    "texto": "16 temporadas"
    },
    {
     "fotograma": 144,
     "t": 4.8,
-    "texto": "16 TEMPORADAS NCAA (EE. UU.) fue la lesión más frecuente."
-   },
-   {
-    "fotograma": 145,
-    "t": 4.833,
-    "texto": "16 TEMPORADAS NCAA (EE. UU.) fue la lesión más frecuente."
+    "texto": "16 TEMPORADAS NCAA (EE. UU de baloncesto universitario"
    },
    {
     "fotograma": 152,
     "t": 5.067,
-    "texto": "16 TEMPORADAS NCAA (EE. UU.) El esguince fue la lesión más frecuente."
+    "texto": "16 TEMPORADAS NCAA (EE. UU.) 16temporadas de baloncesto universitario"
+   },
+   {
+    "fotograma": 154,
+    "t": 5.133,
+    "texto": "16 TEMPORADAS NCAA (EE. UU.) de baloncesto universitario No1"
    },
    {
     "fotograma": 160,
     "t": 5.333,
-    "texto": "16 TEMPORADAS NCAA (EE. UU.) fue la lesión más frecuente."
+    "texto": "16 TEMPORADAS NCAA (EE. UU.) de baloncesto universitario."
    },
    {
     "fotograma": 168,
     "t": 5.6,
-    "texto": "16 TEMPORADAS NCAA (EE. UU.) de fue la lesión más frecuente"
+    "texto": "16 TEMPORADAS NCAA (EE. UU.) de baloncesto universitario."
    },
    {
     "fotograma": 176,
     "t": 5.867,
-    "texto": "16 TEMPORADAS NCAA (EE. UU.) fue la lesión más frecuente,"
+    "texto": "16 TEMPORADAS NCAA (EE. UU.) de baloncesto universitario. No"
    },
    {
     "fotograma": 184,
     "t": 6.133,
-    "texto": "16 TEMPORADAS NCAA (EE. UU.) Elesguince fue la lesión más frecuente"
+    "texto": "16 TEMPORADAS NCAA (EE. UU.) de baloncesto universitario. No"
+   },
+   {
+    "fotograma": 190,
+    "t": 6.333,
+    "texto": "16 TEMPORADAS NCAA (EE. UU.) de baloncesto universitario. No"
    },
    {
     "fotograma": 192,
     "t": 6.4,
-    "texto": "16 TEMPORADAS NCAA (EE. UU.) fue la lesión más frecuente."
+    "texto": "16 TEMPORADAS NCAA (EE. UU.) de baloncesto universitario. No"
    },
    {
-    "fotograma": 197,
-    "t": 6.567,
-    "texto": "16 TEMPORADAS NCAA (EE. UU fue la lesión más frecuente."
-   },
-   {
-    "fotograma": 198,
-    "t": 6.6,
-    "texto": "Preparación fisica Rutinas Fuerza general: de"
+    "fotograma": 199,
+    "t": 6.633,
+    "texto": "16 TEMPORADAS NCAA (EE. UU.) El esauince No"
    },
    {
     "fotograma": 200,
     "t": 6.667,
-    "texto": "FN 14 ADP NE Preparació Rutinas Fuerza general"
+    "texto": "16 TEMPORADAS NCAA (EE. UU.) El esquince"
    },
    {
     "fotograma": 208,
     "t": 6.933,
-    "texto": "EN LA APP DE ProTea Preparación Rutinas Fuerza Prevención de Potencia saltos"
+    "texto": "16 TEMPORADAS NCAA (EE. UU"
    },
    {
     "fotograma": 216,
     "t": 7.2,
-    "texto": "EN LA APP DE ProTeam Preparación Rutinas Prevención de Potencia saltos"
+    "texto": "16 TEMPORADAS NCAA (EE. UU Elesguince"
    },
    {
     "fotograma": 224,
     "t": 7.467,
-    "texto": "EN LA APP DE ProTeam Preparación física Rutinas Fuerza pretemporada Prevención de Potencia saltos"
+    "texto": "16 TEMPORADAS NCAA (EE. UU de"
    },
    {
     "fotograma": 232,
     "t": 7.733,
-    "texto": "EN LA APP DE ProTeam Rutinas Fuerza general de tobillo Potencia saltos"
+    "texto": "16 TEMPORADAS NCAA (EE. UU de tobillo"
    },
    {
     "fotograma": 240,
     "t": 8.0,
-    "texto": "EN LA APP DE Prolean inas Noevarut Fuerza general pretemporada Prevención de isquios tobillo 10 Potencia saltos"
+    "texto": "16 TEMPORADAS NCAA (EE. UU.) fue la lesión más frecuente. No"
    },
    {
-    "fotograma": 243,
-    "t": 8.1,
-    "texto": "EN LA APP DE Proleam inas Fuerza general pretemporada Prevención de isquios tobillo 10 Potenciay saltos"
-   },
-   {
-    "fotograma": 247,
-    "t": 8.233,
-    "texto": "EN LA APP DE Proleam Nuevana Fuerza general pretemporada Prevención de isquios tobillo 10 tu rutina de tobillo."
+    "fotograma": 244,
+    "t": 8.133,
+    "texto": "16 TEMPORADAS NCAA (EE. UU.) fue la lesión más frecuente,"
    },
    {
     "fotograma": 248,
     "t": 8.267,
-    "texto": "EN LA APP DE Proleam Nuevana Fuerza general pretemporada Prevención de isquios tobillo Potencia saltos tu rutina de tobillo."
+    "texto": "16 TEMPORADAS NCAA (EE. UU.) fue la lesión más frecuente"
    },
    {
     "fotograma": 256,
     "t": 8.533,
-    "texto": "EN LA APP DE Proleam inas Fuerza general pretemporada Prevención de isquios tobillo Potencia saltos tu rutina de tobillo."
+    "texto": "16 TEMPORADAS NCAA (EE. UU.) de fue la lesión más frecuente"
    },
    {
     "fotograma": 264,
     "t": 8.8,
-    "texto": "EN LA APP DE Proleam inas Nuevarut Fuerza general pretemporada fa] Prevención de isquios tobillo tu rutina de tobillo."
+    "texto": "16 TEMPORADAS NCAA (EE. UU.) fue la lesión más frecuente."
    },
    {
     "fotograma": 272,
     "t": 9.067,
-    "texto": "EN LA APP DE Proleam inas Nuevarub Fuerza general pretemporada Prevención de isquios tobillo Potencia saltos tu rutina de tobillo."
+    "texto": "16 TEMPORADAS NCAA (EE. UU.) fue la lesión más frecuente"
+   },
+   {
+    "fotograma": 273,
+    "t": 9.1,
+    "texto": "Preparación fisica Rutinas general: dn de salto"
    },
    {
     "fotograma": 280,
     "t": 9.333,
-    "texto": "EN LA APP DE Proleam inas Nuevarut Fuerza general pretemporada Prevención de Isquios tobillo Potencia saltos tu rutina de tobillo."
+    "texto": "EN LA APP DE ProTeam Preparación física Rutinas Fuerza general: pretemporada Potencia saltos"
    },
    {
     "fotograma": 288,
     "t": 9.6,
-    "texto": "EN LA APP DE Proleam Nuavana Fuerza general pretemporada Prevencién de isquios tobillo 10 tu rutina de tobillo."
+    "texto": "EN LA APP DE ProTeam Rutinas Prevención de isquios"
    },
    {
     "fotograma": 296,
     "t": 9.867,
-    "texto": "EN LA APP DE Proleam Fuerza general pretemporada Prevención de isquios tobillo 10 Potencia saltos tu rutina de tobillo."
-   },
-   {
-    "fotograma": 297,
-    "t": 9.9,
-    "texto": "EN LA APP DE inas Fuerza general pretemporada Prevención de isquios tobillo 10 Potencia saltos tu rutina de tobillo."
-   },
-   {
-    "fotograma": 298,
-    "t": 9.933,
-    "texto": "EN LA APP DE ro lea Til Fuerza general pretemporada Prevención de isquios tobillo 10 Potencia saltos tu rutina de tobillo"
+    "texto": "EN LA APP DE Proleam Preparación fisica Rutinas Fuerza general Prevención de Potencia"
    },
    {
     "fotograma": 304,
     "t": 10.133,
-    "texto": "PARATUS"
+    "texto": "EN LA APP DE Proleam Prepar Rutinas Fuerza pe Prevención de tobilo Potencia saltos"
+   },
+   {
+    "fotograma": 309,
+    "t": 10.3,
+    "texto": "EN LA APP DE Proleam Rutinas Fuerza general pretemporada Prevenció Potencia salt"
    },
    {
     "fotograma": 312,
     "t": 10.4,
-    "texto": "RETO PARA TU STAFF ¿Cuándo entrenasteis"
+    "texto": "EN LA APP DE utinas Fuerza general pretemporada de isquios tobillo 10 Potencia saltos"
    },
    {
     "fotograma": 320,
     "t": 10.667,
-    "texto": "RETO PARA TU STAFF ¿Cuándo entrenasteis"
+    "texto": "EN LA APP DE Proleam inas Nuevarut Fuerza general pretemporada Prevención delsq tobillo Potencia saltos do tahilla"
    },
    {
     "fotograma": 328,
     "t": 10.933,
-    "texto": "RETO PARA TU STAFF ¿Cuándo entrenasteis el tobillo por última vez?"
+    "texto": "EN LA APP DE HAA Prolec AL! inas Nuevarut Fuerza general pretemporada Prevención de isquios tobillo tu rutina de tobillo"
    },
    {
     "fotograma": 336,
     "t": 11.2,
-    "texto": "RETO PARA TU STAFF ¿Cuándo entrenasteis el tobillo por última vez?"
-   },
-   {
-    "fotograma": 343,
-    "t": 11.433,
-    "texto": "RETO PARA TU STAFF ¿Cuándo entrenasteis el tobillo por última vez?"
+    "texto": "EN LA APP DE HAA Prolec AL! inas Nuevarut Fuerza general pretemporada Prevención de isquios tobillo 10 tu rutina de tobillo"
    },
    {
     "fotograma": 344,
     "t": 11.467,
-    "texto": "RETO PARA TU STAFF ¿Cuándo entrenasteis el tobillo por última vez?"
+    "texto": "EN LA APP DE HAA Prolec AL! inas Fuerza general pretemporada Prevención de isquios tobillo 10 tu rutina de tobillo"
+   },
+   {
+    "fotograma": 346,
+    "t": 11.533,
+    "texto": "EN LA APP DE HAA Lec AL! inas Fuerza general pretemporada Prevención de isquios tobillo 10 tu rutina de tobillo"
+   },
+   {
+    "fotograma": 347,
+    "t": 11.567,
+    "texto": "EN LA APP DE leam Fuerza general pretemporada Prevención de isquios tobillo 10 Potencia saltos tu rutina de tobillo"
    },
    {
     "fotograma": 352,
     "t": 11.733,
-    "texto": "RETO PARA TU STAFF ¿Cuándo entrenasteis el tobillo por última vez? LISTA DE ESPERA HASTA EL 27 NOV"
+    "texto": "FTO ESPAÑA mia el"
    },
    {
     "fotograma": 360,
     "t": 12.0,
-    "texto": "RETO PARA TU STAFF ¿Cuándo entrenasteis el tobillo por última vez? LISTA DE ESPERA HASTA EL 27 NOV"
+    "texto": "RETO PARA TU STAFF ¿Cuándo entrenasteis"
    },
    {
     "fotograma": 368,
     "t": 12.267,
-    "texto": "RETO PARA TU STAFF ¿Cuándo entrenasteis el tobillo por última vez? LISTA DE ESPERA HASTA EL 27 NOV 35 meses miento pre:"
+    "texto": "RETO PARA TU STAFF ¿Cuándo entrenasteis"
    },
    {
     "fotograma": 376,
     "t": 12.533,
-    "texto": "RETO PARA TU STAFF ¿Cuándo entrenasteis el tobillo por última vez? LISTA DE ESPERA HASTA EL 27 NOV meses niento pre:"
+    "texto": "RETO PARA TU STAFF ¿Cuándo entrenasteis el tobillo por última vez?"
    },
    {
     "fotograma": 384,
     "t": 12.8,
-    "texto": "RETO PARA TU STAFF ¿Cuándo entrenasteis el tobillo por última vez? LISTA DE ESPERA HASTA EL 27 NOV meses pre:"
-   },
-   {
-    "fotograma": 388,
-    "t": 12.933,
-    "texto": "RETO PARA TU STAFF ¿Cuándo entrenasteis el tobillo por última vez? LISTA DE ESPERA HASTA EL 27 NOV 35 meses miento pre"
+    "texto": "RETO PARA TU STAFF ¿Cuándo entrenasteis el tobillo por última vez?"
    },
    {
     "fotograma": 392,
     "t": 13.067,
-    "texto": "RETO PARA TU STAFF ¿Cuándo entrenasteis el tobillo por última vez? LISTA DE ESPERA HASTA EL 27 NOV 35 meses ento pre"
+    "texto": "RETO PARA TU STAFF ¿Cuándo entrenasteis el tobillo por última vez?"
    },
    {
     "fotograma": 400,
     "t": 13.333,
-    "texto": "RETO PARA TU STAFF ¿Cuándo entrenasteis el tobillo por última vez? LISTA DE ESPERA HASTA EL 27 NOV 35 meses nto pre:"
+    "texto": "RETO PARA TU STAFF ¿Cuándo entrenasteis el tobillo por última vez?"
    },
    {
-    "fotograma": 407,
-    "t": 13.567,
-    "texto": "RETO PARA TU STAFF ¿Cuándo entrenasteis el tobillo por última vez? LISTA DE ESPERA HASTA EL 27 NOV meses nto pre 01"
+    "fotograma": 408,
+    "t": 13.6,
+    "texto": "RETO PARA TU STAFF ¿Cuándo entrenasteis el tobillo por última vez? LISTA DE ESPERA HASTA EL 27 NOV"
+   },
+   {
+    "fotograma": 416,
+    "t": 13.867,
+    "texto": "RETO PARA TU STAFF ¿Cuándo entrenasteis el tobillo por última vez? LISTA DE ESPERA HASTA EL 27 NOV"
+   },
+   {
+    "fotograma": 424,
+    "t": 14.133,
+    "texto": "RETO PARA TU STAFF ¿Cuándo entrenasteis el tobillo por última vez? LISTA DE ESPERA HASTA EL 27 NOV Sel gratis."
+   },
+   {
+    "fotograma": 432,
+    "t": 14.4,
+    "texto": "RETO PARA TU STAFF ¿Cuándo entrenasteis el tobillo por última vez? LISTA DE ESPERA HASTA EL 27 NOV Sel"
+   },
+   {
+    "fotograma": 437,
+    "t": 14.567,
+    "texto": "RETO PARA TU STAFF ¿Cuándo entrenasteis el tobillo por última vez? LISTA DE ESPERA HASTA EL 27 NOV Sel gratis."
+   },
+   {
+    "fotograma": 440,
+    "t": 14.667,
+    "texto": "RETO PARA TU STAFF ¿Cuándo entrenasteis el tobillo por última vez? LISTA DE ESPERA HASTA EL 27 NOV ses gratis. Sel ti"
+   },
+   {
+    "fotograma": 443,
+    "t": 14.767,
+    "texto": "RETO PARA TU STAFF ¿Cuándo entrenasteis el tobillo por última vez? LISTA DE ESPERA HASTA EL 27 NOV Sel"
+   },
+   {
+    "fotograma": 448,
+    "t": 14.933,
+    "texto": "RETO PARA TU STAFF ¿Cuándo entrenasteis el tobillo por última vez? LISTA DE ESPERA HASTA EL 27 NOV Sel gratis."
+   },
+   {
+    "fotograma": 456,
+    "t": 15.2,
+    "texto": "RETO PARA TU STAFF ¿Cuándo entrenasteis el tobillo por última vez? LISTA DE ESPERA HASTA EL 27 NOV 35 meses into pre"
+   },
+   {
+    "fotograma": 464,
+    "t": 15.467,
+    "texto": "RETO PARA TU STAFF ¿Cuándo entrenasteis el tobillo por última vez? LISTA DE ESPERA HASTA EL 27 NOV meses nto pre"
+   },
+   {
+    "fotograma": 472,
+    "t": 15.733,
+    "texto": "RETO PARA TU STAFF ¿Cuándo entrenasteis el tobillo por última vez? LISTA DE ESPERA HASTA EL 27 NOV meses miento pre"
+   },
+   {
+    "fotograma": 480,
+    "t": 16.0,
+    "texto": "RETO PARA TU STAFF ¿Cuándo entrenasteis el tobillo por última vez? LISTA DE ESPERA HASTA EL 27 NOV meses pre:"
+   },
+   {
+    "fotograma": 482,
+    "t": 16.067,
+    "texto": "RETO PARA TU STAFF ¿Cuándo entrenasteis el tobillo por última vez? LISTA DE ESPERA HASTA EL 27 NOV meses niento pre:"
+   },
+   {
+    "fotograma": 488,
+    "t": 16.267,
+    "texto": "RETO PARA TU STAFF ¿Cuándo entrenasteis el tobillo por última vez? LISTA DE ESPERA HASTA EL 27 NOV meses españo miento pre:"
+   },
+   {
+    "fotograma": 496,
+    "t": 16.533,
+    "texto": "RETO PARA TU STAFF ¿Cuándo entrenasteis el tobillo por última vez? LISTA DE ESPERA HASTA EL 27 NOV meses miento pre:"
+   },
+   {
+    "fotograma": 504,
+    "t": 16.8,
+    "texto": "RETO PARA TU STAFF ¿Cuándo entrenasteis el tobillo por última vez? LISTA DE ESPERA HASTA EL 27 NOV 35 meses miento pre"
+   },
+   {
+    "fotograma": 512,
+    "t": 17.067,
+    "texto": "RETO PARA TU STAFF ¿Cuándo entrenasteis el tobillo por última vez? LISTA DE ESPERA HASTA EL 27 NOV meses 18. miento pre"
+   },
+   {
+    "fotograma": 520,
+    "t": 17.333,
+    "texto": "RETO PARA TU STAFF ¿Cuándo entrenasteis el tobillo por última vez? LISTA DE ESPERA HASTA EL 27 NOV Sel gratis."
+   },
+   {
+    "fotograma": 527,
+    "t": 17.567,
+    "texto": "RETO PARA TU STAFF ¿Cuándo entrenasteis el tobillo por última vez? LISTA DE ESPERA HASTA EL 27 NOV meses nto pre"
+   },
+   {
+    "fotograma": 528,
+    "t": 17.6,
+    "texto": "RETO PARA TU STAFF ¿Cuándo entrenasteis el tobillo por última vez? LISTA DE ESPERA HASTA EL 27 NOV Se gratis. top 01"
+   },
+   {
+    "fotograma": 536,
+    "t": 17.867,
+    "texto": "RETO PARA TU STAFF ¿Cuándo entrenasteis el tobillo por última vez? LISTA DE ESPERA HASTA EL 27 NOV Se je gratis."
+   },
+   {
+    "fotograma": 539,
+    "t": 17.967,
+    "texto": "RETO PARA TU STAFF ¿Cuándo entrenasteis el tobillo por última vez? LISTA DE ESPERA HASTA EL 27 NOV Se gratis. to pl"
    }
   ],
   "bloques": [
    {
     "desde": 0.0,
     "hasta": 0.0,
-    "texto": "we ON TO ELTOB trates",
-    "palabras": 5
-   },
-   {
-    "desde": 0.167,
-    "hasta": 0.167,
-    "texto": "we LONCESTO EL LLO. EN",
-    "palabras": 5
-   },
-   {
-    "desde": 0.267,
-    "hasta": 0.267,
-    "texto": "ELTC LO. trates TER ls",
-    "palabras": 5
-   },
-   {
-    "desde": 0.5,
-    "hasta": 0.5,
-    "texto": "we an ELTC tates LLO. ENTER ed",
+    "texto": "we ON TO EL JB trates fl",
     "palabras": 7
    },
    {
-    "desde": 0.533,
-    "hasta": 0.533,
-    "texto": "we an ELTC LLO. ls el",
-    "palabras": 6
+    "desde": 0.667,
+    "hasta": 0.667,
+    "texto": "we Ds ELTC LLO. ls",
+    "palabras": 5
    },
    {
-    "desde": 0.833,
-    "hasta": 0.833,
-    "texto": "we pen ELTC LLO. trates ENTER",
-    "palabras": 6
+    "desde": 0.8,
+    "hasta": 0.8,
+    "texto": "Ys ELTC LLO. ENTER at",
+    "palabras": 5
    },
    {
     "desde": 1.067,
     "hasta": 1.067,
-    "texto": "we ELTC _LO. ls ENTER",
+    "texto": "be ELTO _LO. ENTER at",
     "palabras": 5
    },
    {
     "desde": 1.5,
-    "hasta": 1.533,
-    "texto": "LONCESTO ELTOB viales Le",
-    "palabras": 4
+    "hasta": 1.5,
+    "texto": "te LONCESTO Lo. ENTER Le",
+    "palabras": 5
    },
    {
-    "desde": 1.6,
-    "hasta": 1.6,
-    "texto": "we nn LONCESTO EL” trates _LO. Cl na",
-    "palabras": 8
+    "desde": 1.8,
+    "hasta": 1.8,
+    "texto": "ESTO EL’ LLO trates ed",
+    "palabras": 5
    },
    {
     "desde": 1.867,
     "hasta": 1.867,
-    "texto": "Ya ESTO EL: LO. ¿Está semana?",
+    "texto": "ao ESTO EL” OB LLO ls",
     "palabras": 6
    },
    {
     "desde": 2.133,
     "hasta": 2.133,
-    "texto": "we pan LO EL” Esta",
-    "palabras": 5
+    "texto": "we ao LONCESTO EL” LO. trates ls el",
+    "palabras": 8
    },
    {
     "desde": 2.4,
     "hasta": 2.4,
-    "texto": "we LESI LO LO. Esta ana?",
-    "palabras": 6
+    "texto": "ESTO ELTO LLO. trates ls",
+    "palabras": 5
    },
    {
     "desde": 2.667,
     "hasta": 2.667,
-    "texto": "we LESI LONCESTO ELT OB LL Mana?",
-    "palabras": 7
+    "texto": "an LESI LONCESTO JD LLO.",
+    "palabras": 5
    },
    {
     "desde": 2.933,
     "hasta": 2.933,
-    "texto": "we LO EL: LL ¿Est oe! ana? Sf",
-    "palabras": 8
+    "texto": "we ao LESI LONCESTO LLO. nar",
+    "palabras": 6
    },
    {
     "desde": 3.0,
     "hasta": 3.0,
-    "texto": "ww LO STO EL LLO. anal",
+    "texto": "LESI LONCESTO EL” LLO. Está ana?",
     "palabras": 6
    },
    {
-    "desde": 3.1,
-    "hasta": 3.1,
-    "texto": "ao LONCESTO EL; 'OBILLO. NANA. ¿Está",
-    "palabras": 6
-   },
-   {
-    "desde": 3.133,
-    "hasta": 3.133,
-    "texto": "be STO EL; LLO. ¿Está Dra",
-    "palabras": 6
-   },
-   {
-    "desde": 3.467,
-    "hasta": 3.467,
-    "texto": "MPORADAS El esguince da tahilla",
-    "palabras": 5
-   },
-   {
-    "desde": 4.533,
-    "hasta": 6.567,
-    "texto": "16 TEMPORADAS NCAA (EE. UU.) El esguince fue la lesión más frecuente No",
-    "palabras": 13
-   },
-   {
-    "desde": 6.6,
-    "hasta": 6.6,
-    "texto": "Preparación fisica Rutinas Fuerza general: de",
-    "palabras": 6
-   },
-   {
-    "desde": 6.667,
-    "hasta": 6.667,
-    "texto": "FN 14 ADP NE Preparació Rutinas Fuerza general",
+    "desde": 3.2,
+    "hasta": 3.2,
+    "texto": "LONCESTO EL: nO ILLO. mana? at Sf ra",
     "palabras": 8
    },
    {
-    "desde": 6.933,
-    "hasta": 9.867,
-    "texto": "EN LA APP DE Proleam inas Nuevarub Fuerza general pretemporada Prevención de isquios tobillo Potencia saltos tu rutina de tobillo.",
-    "palabras": 20
+    "desde": 4.533,
+    "hasta": 9.067,
+    "texto": "16 TEMPORADAS NCAA (EE. UU.) 16temporadas de baloncesto universitario",
+    "palabras": 9
    },
    {
-    "desde": 9.9,
-    "hasta": 9.9,
-    "texto": "EN LA APP DE inas Fuerza general pretemporada Prevención de isquios tobillo 10 Potencia saltos tu rutina de tobillo.",
-    "palabras": 19
+    "desde": 9.1,
+    "hasta": 9.1,
+    "texto": "Preparación fisica Rutinas general: dn de salto",
+    "palabras": 7
    },
    {
-    "desde": 9.933,
-    "hasta": 9.933,
-    "texto": "EN LA APP DE ro lea Til Fuerza general pretemporada Prevención de isquios tobillo 10 Potencia saltos tu rutina de tobillo",
-    "palabras": 21
+    "desde": 9.333,
+    "hasta": 10.3,
+    "texto": "EN LA APP DE ProTeam Preparación física Rutinas Fuerza general: pretemporada Potencia saltos",
+    "palabras": 13
    },
    {
     "desde": 10.4,
-    "hasta": 13.567,
-    "texto": "RETO PARA TU STAFF ¿Cuándo entrenasteis el tobillo por última vez? LISTA DE ESPERA HASTA EL 27 NOV 35 meses miento pre:",
+    "hasta": 10.4,
+    "texto": "EN LA APP DE utinas Fuerza general pretemporada de isquios tobillo 10 Potencia saltos",
+    "palabras": 14
+   },
+   {
+    "desde": 10.667,
+    "hasta": 10.667,
+    "texto": "EN LA APP DE Proleam inas Nuevarut Fuerza general pretemporada Prevención delsq tobillo Potencia saltos do tahilla",
+    "palabras": 17
+   },
+   {
+    "desde": 10.933,
+    "hasta": 11.533,
+    "texto": "EN LA APP DE HAA Prolec AL! inas Nuevarut Fuerza general pretemporada Prevención de isquios tobillo 10 tu rutina de tobillo",
+    "palabras": 21
+   },
+   {
+    "desde": 11.567,
+    "hasta": 11.567,
+    "texto": "EN LA APP DE leam Fuerza general pretemporada Prevención de isquios tobillo 10 Potencia saltos tu rutina de tobillo",
+    "palabras": 19
+   },
+   {
+    "desde": 12.0,
+    "hasta": 17.967,
+    "texto": "RETO PARA TU STAFF ¿Cuándo entrenasteis el tobillo por última vez? LISTA DE ESPERA HASTA EL 27 NOV meses españo miento pre:",
     "palabras": 22
    }
   ]
@@ -769,160 +870,208 @@
  "audio": {
   "tiene_audio": true,
   "wav": "intel/videos/u28/audio_16k.wav",
-  "volumen_integrado_lufs": "-14.84",
-  "pico_real_db": "-1.44",
+  "volumen_integrado_lufs": "-14.50",
+  "pico_real_db": "0.01",
   "rango_lra": "1.30",
   "silencios": [],
   "subidas_bruscas_s": [
-   2.1
+   2.0,
+   7.8,
+   10.6,
+   12.8,
+   16.2
   ],
   "energia_db_cada_0_1s": [
-   -13.0,
-   -11.9,
-   -13.8,
-   -13.7,
-   -14.4,
-   -15.6,
-   -13.2,
-   -12.7,
-   -13.1,
-   -14.4,
-   -14.7,
-   -15.7,
-   -14.7,
-   -12.8,
-   -13.2,
-   -13.9,
-   -14.2,
-   -15.1,
-   -16.2,
-   -18.9,
-   -25.5,
-   -12.7,
-   -13.1,
-   -13.4,
-   -14.0,
-   -13.9,
-   -16.7,
-   -13.0,
-   -13.0,
-   -13.7,
-   -13.6,
-   -14.6,
-   -15.9,
    -14.1,
-   -12.8,
-   -13.1,
-   -13.8,
-   -14.0,
-   -15.5,
-   -16.0,
-   -12.1,
-   -13.1,
-   -14.0,
-   -14.4,
-   -15.2,
-   -16.2,
-   -13.4,
-   -13.1,
-   -13.3,
-   -14.2,
-   -14.6,
-   -15.7,
-   -16.7,
-   -21.7,
-   -16.2,
-   -12.6,
-   -13.1,
-   -13.6,
-   -13.9,
-   -15.6,
-   -16.3,
-   -12.3,
-   -13.6,
-   -13.9,
-   -14.2,
-   -12.1,
-   -12.5,
-   -11.8,
-   -12.7,
-   -13.5,
-   -13.7,
-   -14.4,
-   -15.9,
-   -13.7,
-   -12.7,
-   -12.6,
-   -14.3,
-   -14.5,
-   -15.4,
-   -15.2,
-   -12.5,
-   -13.3,
-   -13.7,
-   -14.0,
-   -14.9,
-   -16.5,
-   -17.8,
-   -24.8,
    -13.0,
-   -12.8,
-   -13.2,
-   -13.9,
-   -13.9,
-   -16.6,
-   -13.4,
-   -12.9,
-   -13.2,
-   -13.6,
-   -14.3,
-   -15.5,
-   -14.9,
-   -12.6,
-   -12.8,
-   -13.7,
-   -14.1,
-   -15.1,
-   -16.6,
-   -12.3,
-   -12.8,
-   -13.3,
-   -14.9,
-   -16.3,
-   -16.6,
-   -14.3,
-   -12.8,
+   -11.0,
+   -18.3,
+   -10.9,
    -12.4,
-   -12.8,
-   -13.7,
-   -14.0,
-   -16.3,
-   -20.6,
-   -17.4,
-   -11.5,
-   -12.2,
+   -8.0,
+   -10.9,
+   -11.3,
+   -10.1,
+   -12.4,
+   -12.4,
    -13.5,
-   -14.6,
-   -15.9,
+   -11.6,
+   -12.4,
+   -16.7,
+   -20.3,
+   -23.0,
+   -24.0,
+   -28.2,
+   -12.8,
+   -15.8,
+   -13.4,
+   -12.8,
+   -16.0,
+   -22.2,
+   -25.8,
+   -22.7,
    -19.3,
+   -22.2,
+   -13.8,
+   -14.5,
+   -13.6,
+   -12.6,
+   -12.1,
+   -14.7,
+   -23.2,
+   -23.3,
+   -19.5,
+   -11.4,
+   -14.0,
+   -12.0,
+   -14.7,
+   -19.6,
+   -10.3,
+   -12.8,
+   -11.5,
+   -12.6,
+   -15.1,
+   -11.0,
+   -13.7,
+   -20.2,
+   -18.9,
+   -11.8,
+   -14.6,
+   -14.4,
+   -12.3,
+   -15.4,
+   -15.7,
+   -12.0,
    -14.4,
    -16.4,
+   -19.7,
+   -22.6,
+   -22.9,
+   -21.4,
+   -22.1,
+   -11.7,
+   -12.6,
+   -18.0,
+   -11.8,
+   -16.0,
+   -12.9,
+   -12.9,
+   -11.6,
    -18.9,
-   -21.8,
-   -22.4,
-   -24.5,
-   -28.7,
-   -37.9
+   -27.3,
+   -32.4,
+   -13.0,
+   -13.5,
+   -13.7,
+   -13.5,
+   -11.7,
+   -13.0,
+   -14.3,
+   -11.4,
+   -12.8,
+   -22.5,
+   -21.9,
+   -21.4,
+   -22.7,
+   -23.3,
+   -11.3,
+   -12.5,
+   -9.4,
+   -16.5,
+   -12.9,
+   -16.1,
+   -10.7,
+   -13.2,
+   -13.1,
+   -13.8,
+   -20.9,
+   -9.4,
+   -14.0,
+   -22.7,
+   -10.2,
+   -14.1,
+   -16.0,
+   -11.3,
+   -12.9,
+   -15.7,
+   -18.3,
+   -21.0,
+   -21.9,
+   -21.0,
+   -22.3,
+   -23.0,
+   -11.7,
+   -14.1,
+   -11.7,
+   -16.7,
+   -11.9,
+   -11.5,
+   -21.7,
+   -16.1,
+   -22.3,
+   -11.6,
+   -9.9,
+   -13.1,
+   -10.2,
+   -16.9,
+   -21.1,
+   -21.1,
+   -21.1,
+   -15.6,
+   -11.5,
+   -14.9,
+   -11.7,
+   -14.0,
+   -13.3,
+   -21.0,
+   -10.1,
+   -12.8,
+   -13.6,
+   -19.9,
+   -10.8,
+   -14.9,
+   -13.5,
+   -15.7,
+   -17.5,
+   -19.2,
+   -9.6,
+   -14.1,
+   -13.8,
+   -10.9,
+   -11.9,
+   -11.6,
+   -20.3,
+   -22.8,
+   -25.1,
+   -22.2,
+   -12.1,
+   -12.6,
+   -19.3,
+   -7.8,
+   -9.1,
+   -15.1,
+   -11.3,
+   -21.9,
+   -15.5,
+   -22.6,
+   -25.0,
+   -26.1,
+   -27.4,
+   -30.1,
+   -34.0,
+   -37.6,
+   -42.0
   ],
-  "transcripcion": "PENDIENTE: no hay transcriptor local. Usa la herramienta de transcripción de ElevenLabs con audio_16k.wav, o el guion/voz.tsv si es un Reel propio, y guarda el resultado en transcripcion.json.",
+  "transcripcion": "transcripcion.json (tools/reel28/voz.tsv)",
   "nota": "Esto son medidas. Entonación, claridad de la locución, timbre o si hay música NO se pueden afirmar sin escuchar o transcribir."
  },
  "vistas": [
   "detalle_001.jpg",
   "detalle_002.jpg",
   "detalle_003.jpg",
+  "detalle_004.jpg",
   "general_001.jpg",
   "general_002.jpg"
  ],
- "orden": "python3 tools/video_intel.py analyze reels/u28-tobillo.mp4 --id u28 --tema lesión nº 1 en baloncesto: el tobillo (datos) --modo detalle"
+ "orden": "python3 tools/video_intel.py analyze reels/u28-tobillo.mp4 --id u28 --tema Lesión nº 1 en baloncesto: el tobillo (con voz de Mateo) --modo detalle"
 }

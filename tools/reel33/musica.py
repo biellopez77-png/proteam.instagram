@@ -1,4 +1,4 @@
-"""Música del u33: pista nueva (ElevenLabs music v2.5, do menor, 143 BPM, 808 distorsionado, arpegio frío y tic de reloj).
+"""Música del u33 (17/11, con voz: realineada a los nuevos tiempos; misma pista nueva que no sale en otro Reel): pista nueva (ElevenLabs music v2.5, do menor, 143 BPM, 808 distorsionado, arpegio frío y tic de reloj).
 Toma m1: intro tensa con silencio; el golpe (6,705 s de la pista) cae en el 6 que pasa a 4 (T.drop). Como la pista acaba en ~14 s, se repiten dos compases desde el golpe (corte en beat, 30 ms). Fundido de salida de 1,2 s."""
 import json, numpy as np, librosa
 from scipy.io import wavfile

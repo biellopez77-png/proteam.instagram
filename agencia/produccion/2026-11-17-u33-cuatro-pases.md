@@ -19,3 +19,6 @@ Pista nueva (ElevenLabs music v2.5, do menor, 143,5 BPM, 808 distorsionado, arpe
 
 ## Diez preguntas
 1 Sí. 2 4 pases, 6 antes, 2022, IHF. 3 «Brazo arriba = 4 pases». 4 Primer dato de balonmano. 5 La pasa por las capturas. 6 Regla + cifra que contar. 7 Datos 13 s. 8 Cambio cada ≤ 2 s. 9 Banco + capturas reales. 10 Sí: partido en directo.
+
+## Versión con voz (17/11, Marta)
+Voz de Mateo (biblioteca) sobre las mismas pantallas; tiempos colgados de `times.js` (voz.py). Música: la misma pista nueva del Reel, realineada (hueco/golpe en la palabra de impacto). Arranque: 1 ✔ 2 ✔ (voz en 0,08 s con el dato) 3 ✔ (18 s) 4 ✔ 5 ✔.
