@@ -2,6 +2,7 @@
 
 | Fecha | Pieza | Tipo | Resultado |
 | --- | --- | --- | --- |
+| 2026-11-17 13:26 | u05 reels/u05-tres-a-cero.mp4 | reel | publicado, media_id 17934010398161249 |
 | 2026-11-17 13:25 | c10s stories/st-1117-tu-equipo-3-datos.jpg | story | publicado, media_id 18100278824656813 |
 | 2026-11-17 11:29 | u09 reels/u09-los-ultimos-doce.mp4 | reel | publicado, media_id 17913738696309039 |
 | 2026-11-17 11:28 | c10 feed/c10-1.jpg | carousel | publicado, media_id 18118441639840043 |
