@@ -112,10 +112,9 @@ function tx(html, y, cls, size) { const d = document.createElement('div'); d.cla
 function reveal(el, p) { el.querySelectorAll('.mask>span').forEach((s, i, a) => { const q = E.out5(clamp(p * (1 + .25 * (a.length - 1)) - .25 * i)); s.style.transform = `translateY(${(1 - q) * 110}%)`; }); }
 const M = s => `<span class="mask"><span>${s}</span></span>`;
 
-// u49 · IMPACTO (día 1 de 10) · concepto: «rótulos de retransmisión con la casilla en blanco» — tres banquillos de primer nivel, cada uno con
+// u49 · IMPACTO · concepto: «rótulos de retransmisión con la casilla en blanco» — tres banquillos de primer nivel, cada uno con
 // el rótulo de TV que le falta el dato (— —, cursor parpadeando); los tres se apilan en «el mismo sábado» y el calendario de noviembre
-// rodea el 28 a mano en azul. Cortes secos cada ~5 s. «DÍA 1 DE 10» fijo arriba (hilo del lanzamiento). Ninguna pantalla de la app.
-const DAYK = tx('<div class="kick" style="color:#e6e8ee;letter-spacing:.22em">DÍA 1 DE 10 · SÁB 28 NOV</div>', 262, 'shadow', 34);
+// rodea el 28 a mano en azul. Cortes secos cada ~5 s. Ninguna pantalla de la app. (17/11: fuera «Día 1 de 10» y «Hoy no te contamos más», corrección de Biel.)
 const GR = 'linear-gradient(180deg,rgba(0,0,0,.55) 0%,rgba(0,0,0,.05) 26%,rgba(0,0,0,0) 45%,rgba(0,0,0,.55) 62%,rgba(0,0,0,.88) 100%)';
 // rótulo de retransmisión: [dorsal/puesto | etiqueta | valor]
 function rot(tag, label, y) {
@@ -212,10 +211,10 @@ const e0 = tx('<div class="kick ink" style="letter-spacing:.2em">APUNTA OTRO</di
 const e1 = tx(M('SÁB 28 NOV'), 1290, 'M8 ink', 170);
 const e2 = tx(M('<span class="S blue">abre ProTeam.</span>'), 1470, '', 132);
 function sE(t) {
-  const a = T.apu - .04, b = T.hoy - .04, v = t >= a + .3 && t < b; show($('paper'), v); [CAL, e0, e1, e2].forEach(e => show(e, v));
+  const a = T.apu - .04, b = T.qued - .14, v = t >= a + .3 && t < b; show($('paper'), v); [CAL, e0, e1, e2].forEach(e => show(e, v));
   if (t >= a && t < a + .3) show($('sysL'), true);   // el único negro (0,3 s), nunca al principio
   if (!v) { show(RING, false); show(HOY, false); return; }
-  show(DAYK, false); const p = E.out5(seg(t, a + .3, a + .75)); CAL.style.transform = `translateY(${(1 - p) * 60}px)`; CAL.style.opacity = p;
+  const p = E.out5(seg(t, a + .3, a + .75)); CAL.style.transform = `translateY(${(1 - p) * 60}px)`; CAL.style.opacity = p;
   reveal(e0, seg(t, a + .3, a + .6));
   const c18 = CELL[18]; show(HOY, true); HOY.style.left = (c18.offsetLeft + 65) + 'px'; HOY.style.top = (c18.offsetTop + 56) + 'px'; c18.style.color = '#f2f1ec';
   for (let d = 19; d <= 27; d++) { const q = seg(t, a + .5 + (d - 19) * .1, a + .6 + (d - 19) * .1); CELL[d].style.opacity = 1 - .6 * q; }
@@ -225,15 +224,13 @@ function sE(t) {
   show(e1, t >= T.v28); reveal(e1, seg(t, T.v28, T.v28 + .3)); e1.style.transform = `scale(${pulse(t, T.v28, .05)})`;
   show(e2, t >= T.abre + .3); reveal(e2, seg(t, T.abre + .3, T.abre + .6));
 }
-// ── G · «Hoy no te contamos más.» → 10 DÍAS ──
-const g1 = tx(M('HOY NO TE'), 560, 'M8', 120), g2 = tx(M('CONTAMOS MÁS.'), 690, 'M8', 120);
-const g3 = tx('<div class="kick">QUEDAN</div>', 930, '', 40);
-const g4 = tx('10', 960, 'M8', 470), g5 = tx(M('<span class="S blue">días.</span>'), 1420, '', 160);
+// ── G · QUEDAN 10 DÍAS ──
+const g3 = tx('<div class="kick">QUEDAN</div>', 640, '', 40);
+const g4 = tx('10', 670, 'M8', 470), g5 = tx(M('<span class="S blue">días.</span>'), 1130, '', 160);
 function sG(t) {
-  const a = T.hoy - .04, b = T.mand - .04, v = t >= a && t < b; [g1, g2, g3, g4, g5].forEach(e => show(e, v)); if (!v) return;
-  show($('sysL'), true); reveal(g1, seg(t, a, a + .3)); reveal(g2, seg(t, a + .12, a + .42));
-  const up = E.out5(seg(t, T.qued - .1, T.qued + .3)); [g1, g2].forEach(e => { e.style.transform = `translateY(${-200 * up}px)`; e.style.opacity = 1 - .65 * up; });
-  show(g3, t >= T.qued); show(g4, t >= T.diez - .05); g4.style.transform = `scale(${pulse(t, T.diez - .05, .1)})`; g4.style.opacity = E.out(seg(t, T.diez - .05, T.diez + .1));
+  const a = T.qued - .14, b = T.mand - .04, v = t >= a && t < b; [g3, g4, g5].forEach(e => show(e, v)); if (!v) return;
+  show($('sysL'), true);
+  show(g3, t >= T.qued - .1); show(g4, t >= T.diez - .05); g4.style.transform = `scale(${pulse(t, T.diez - .05, .1)})`; g4.style.opacity = E.out(seg(t, T.diez - .05, T.diez + .1));
   show(g5, t >= T.diez + .25); reveal(g5, seg(t, T.diez + .25, T.diez + .55));
 }
 
@@ -297,7 +294,7 @@ function webcta(t) {
 }
 
 window.frame = t => {
-  show($('sysL'), false); show($('paper'), false); show(DAYK, t < T.mand - .04 && !(t >= T.apu - .04 && t < T.hoy - .04));
+  show($('sysL'), false); show($('paper'), false); 
   sA(t); sB(t); sC(t); sD(t); sE(t); sG(t); webcta(t);
   $('grain').style.transform = `translate(${(Math.floor(t * 24) * 37) % 200 - 100}px,${(Math.floor(t * 24) * 53) % 200 - 100}px)`;
 };
