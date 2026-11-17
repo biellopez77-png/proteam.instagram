@@ -1,7 +1,7 @@
 # u49 · impacto-01 · «Minuto setenta. ¿Cuántos minutos lleva tu nueve? No lo sabes.» (fútbol, baloncesto y balonmano)
 
 - **fase: impacto** (mié 18/11, día 1 de 10 del lanzamiento, `agencia/LANZAMIENTO.md`)
-- **Estado: listo para producir** · **Crítica de Andrés: 82/100** · encaje de fase: **sí** · riesgo de salto bajo · `agencia/criticas/2026-11-17-u49-u50-impacto.md`
+- **Estado: PRODUCIDO y programado mié 18/11 9:30 (montaje 83, `reels/u49-minuto-setenta.mp4`)** · **Crítica de Andrés: 82/100** · encaje de fase: **sí** · riesgo de salto bajo · `agencia/criticas/2026-11-17-u49-u50-impacto.md`
 - **Encargo:** t-lanz-01-guiones (impacto 1 de 2). **Es el Reel del mié 18 a las 9:30** (el mejor de los dos). Si no llega a las 9:30, sale en el siguiente hueco del 18. Si se pasara al jue 19, no sale: el 19 es contexto (y «diez días» ya no sería verdad).
 - **Idea en una frase:** tres banquillos, tres deportes, el mismo sábado sin datos; y una fecha que apuntar: el sábado 28 abre la app de ProTeam. Hoy no se explica nada más.
 - **Lo que NO lleva (regla de la fase):** ninguna pantalla de la app, ninguna función, ningún «con ProTeam lo haces en…», ni el nombre de nadie del equipo, ni el precio.

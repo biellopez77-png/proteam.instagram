@@ -3173,5 +3173,24 @@
   "fase": "impacto",
   "fase_dia": "Mié 18/11",
   "note": "Story de impacto de Clara (04): aviso del carrusel c15 con tres fechas dentro (jue 19, vie 20, sáb 28) y recordatorio de la lista con la oferta exacta. Tipográfica (papel). Solo vale el mié 18."
+ },
+ {
+  "id": "u49",
+  "when": "2026-11-18T09:30:00+01:00",
+  "kind": "reel",
+  "files": [
+   "reels/u49-minuto-setenta.mp4"
+  ],
+  "cover": "covers/u49-minuto-setenta.jpg",
+  "caption": "Minuto 70. ¿Cuántos minutos lleva tu nueve? ⚽🏀🤾\nTres banquillos, tres deportes y el mismo sábado: decidir sin saber.\nApunta una fecha: sábado 28 de noviembre. Abre la app de ProTeam, para entrenadores de fútbol, baloncesto y balonmano. Quedan 10 días y hoy no contamos más.\nEnvíaselo a tu segundo entrenador: ¿cuál de los tres sois?\nApúntate a la lista de espera hasta el 27 de noviembre y el 28 empiezas con 3 meses gratis. Enlace en la bio.\n\nFoto de balonmano: Armin Kübelbeck (Kuebi), CC BY-SA 3.0, vía Wikimedia Commons.\n\n#futbolbase #baloncestobase #balonmanobase #entrenadores #proteam",
+  "title": "Minuto 70. ¿Cuántos minutos lleva tu nueve? No lo sabes.",
+  "score": "guion 82 · montaje 83",
+  "status": "pending",
+  "campana": "unrespiro",
+  "share_to_feed": false,
+  "fase": "impacto",
+  "fase_dia": "Mié 18/11 · día 1 de 10",
+  "first_comment": "Día 1 de 10. El 28 abre ProTeam. ¿Cuál de los tres banquillos es el tuyo?",
+  "note": "FASE: IMPACTO (Mié 18/11, día 1 de 10). u49 · turno de Reels 17/11 21:37 (Dani, Andrés, Marta, Pau): Reel de impacto del lanzamiento. Concepto: rótulos de retransmisión con la casilla en blanco (Zidane, Pat Riley, tiempo muerto del THW Kiel) → tres franjas → calendario de noviembre con el 28 rodeado en azul → 10 días → reto → lista de espera con contador real (9 d 14 h). Voz Mateo de la biblioteca en UNA toma entera a velocidad natural (482 caracteres, sin trocear ni acelerar), música nueva con el golpe en «veintiocho». 33,1 s. Solo vale el 18: no se reprograma a otro día."
  }
 ]
