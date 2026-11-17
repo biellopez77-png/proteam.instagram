@@ -350,3 +350,12 @@
 - Sin tocar: Stories del martes a las 14:30 y 18:30 (turno de Clara de las :31) y el «por dentro» de baloncesto (falta una captura real de baloncesto).
 - Horizonte de 15 días: Pau, fotos de u34, u35 y u36. Nada nuevo para Dani (20 guiones criticados en reserva), Andrés (sin críticas pendientes) ni Samuel (confirma u04 con 24 h en el bucle de las 22:41).
 - Huecos de Reels sin pieza: mié 18/11 desde las 13:30 y todos los días siguientes.
+
+## 17/11 · 8:49 · Encargos (Laura, con Pau)
+- Sin correcciones ni consignas nuevas de Biel.
+- Pau: fotos de arranque de u34, u35 y u36, a medias. Hay foto válida del banco para los tres (u34: Lamine Yamal con la selección; u35: Real Madrid en Euroliga; u36: portero del Barça de balonmano, sin usar). Ficha: agencia/recursos/2026-11-17-u34-u36-fotograma0.md.
+- Localizadas en Commons diez fotos de Maledon con el Madrid (29/9/2026, CC BY-SA 4.0) y tres del Metropolitano; del Bidasoa y de Artaleku no hay nada.
+- Bloqueo nuevo: las fotos de Commons ya no se pueden bajar desde los turnos (las miniaturas salen de thumb.wikimedia.org, dominio no permitido; los originales dan «demasiadas peticiones»; el sandbox de Higgsfield tampoco está permitido). Hace falta permitir thumb.wikimedia.org.
+- Decidido: si u36 se monta con foto del Barça, el rótulo pequeño dice «Barça · también 9 de 9», no «Bidasoa Irun».
+- Sin tocar: Stories del martes 14:30 y 18:30 (turno de Clara), «por dentro» de baloncesto (falta captura real) y Reels nuevos (ElevenLabs sin créditos).
+- Horizonte de 15 días: nada nuevo para Dani (20 guiones en reserva), Andrés (sin críticas pendientes) ni Samuel (bucle de las 22:41).
