@@ -3063,5 +3063,43 @@
   "title": "Entra a defender. Sale a atacar. Tiene 12 años.",
   "fase": "solución",
   "fase_dia": "Mié 25/11"
+ },
+ {
+  "id": "c14",
+  "kind": "carousel",
+  "files": [
+   "feed/c14-1.jpg",
+   "feed/c14-2.jpg",
+   "feed/c14-3.jpg",
+   "feed/c14-4.jpg",
+   "feed/c14-5.jpg",
+   "feed/c14-6.jpg"
+  ],
+  "title": "28 NOV. Apunta la fecha. (lo que llega el 28)",
+  "score": "79",
+  "status": "pending",
+  "campana": "carrusel",
+  "when": "2026-11-18T12:30:00+01:00",
+  "cover": null,
+  "caption": "28 de noviembre. Apunta la fecha. 🗓️\nTres banquillos, tres deportes y la misma duda cada sábado: decidir sin saber.\nEl sábado 28 abre la app de ProTeam, para entrenadores de fútbol, baloncesto y balonmano. Hoy no contamos más. Quedan 10 días.\n\nLo que sí te contamos: si estás en la lista de espera antes del 27, el 28 empiezas con 3 meses gratis, asesoramiento 1 a 1 esos tres meses y tu semana montada.\n\n¿Cuál de los tres banquillos es el tuyo? Déjalo en comentarios 👇 y envíaselo a tu segundo entrenador.\n\nApúntate a la lista de espera hasta el 27 de noviembre: enlace en la bio.\n\nFotos: Luis de la Fuente (Bryan Berlin, CC BY-SA 4.0), Euroliga 2026 (Zafer, CC BY-SA 4.0) y Talant Dujshebaev (Doha Stadium Plus Qatar, CC BY 2.0), Wikimedia Commons.\n\n#futbolbase #baloncestobase #balonmanobase #entrenadores #proteam",
+  "fase": "impacto",
+  "fase_dia": "Mié 18/11",
+  "note": "Clara (04) · encargo de Biel t-lanz-04-carruseles · lanzamiento, día 1 de 10 · fecha → tres banquillos → qué abre → oferta de la lista → cuenta atrás → pregunta · sin pantallas de la app · Andrés 79, encaje de fase sí (agencia/criticas/2026-11-17-c14-c14s-impacto.md) · solo vale el mié 18 («10 días»)"
+ },
+ {
+  "id": "c14s",
+  "kind": "story",
+  "files": [
+   "stories/st-1118-diez-dias.jpg"
+  ],
+  "cover": null,
+  "status": "pending",
+  "campana": "carrusel",
+  "when": "2026-11-18T10:30:00+01:00",
+  "title": "10 días. El sábado 28 abre ProTeam. ¿Qué no quieres volver a hacer un domingo por la noche?",
+  "score": "77",
+  "fase": "impacto",
+  "fase_dia": "Mié 18/11",
+  "note": "Story de impacto de Clara (04): contador «10 días», día 1 de 10, pregunta con respuesta en comentarios. Solo vale el mié 18. Foto: Šarūnas Jasikevičius (Zafer, CC BY 4.0, Wikimedia Commons)."
  }
 ]
