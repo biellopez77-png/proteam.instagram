@@ -1,0 +1,30 @@
+Arreglo A-003: el PDF del partido cuenta paradas y goles encajados
+
+Las paradas (`save`) y los goles encajados (`goal_against`) se guardan con
+`side: "them"` (BD 17/11: 126 save:them, 266 goal_against:them, 0 con side us),
+pero `teamTotals` los contaba solo entre las acciones propias, así que
+«Aturades de porteria» y «Gols encaixats» salían siempre a 0.
+
+--- a/src/lib/reports/match-report.ts
++++ b/src/lib/reports/match-report.ts
+@@ -88,6 +88,9 @@ function teamTotals(events: MatchEvent[], period?: number) {
+   const ev = period ? events.filter((e) => e.period === period) : events;
+   const ours = ev.filter((e) => e.side !== "them");
+   const count = (t: string) => ours.filter((e) => e.type === t).length;
++  // Paradas y goles encajados se registran sobre el tiro rival (side "them"):
++  // se cuentan en todas las acciones del periodo, no solo en las propias.
++  const countAll = (t: string) => ev.filter((e) => e.type === t).length;
+   const shots = ours.filter((e) => SHOT_TYPES.includes(e.type)).length;
+   const goals = count("goal") + count("goal_7m") + count("fb_pen_scored") + count("fb_fk_scored");
+   const gkFbOk = count("gk_fastbreak_ok");
+@@ -104,8 +107,8 @@ function teamTotals(events: MatchEvent[], period?: number) {
+     yellow: count("yellow"),
+     red: count("red"),
+     fastbreaks: count("fastbreak"),
+-    saves: count("save"),
+-    against: count("goal_against"),
++    saves: countAll("save"),
++    against: countAll("goal_against"),
+     duelWon: count("one_v_one_won"),
+     duelLost: count("one_v_one_lost"),
+     gkFbOk,

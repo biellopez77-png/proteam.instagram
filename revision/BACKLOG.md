@@ -2,6 +2,11 @@
 
 Estados: pendiente · en curso · hecho · bloqueado · a verificar · en PR
 
+## Bloqueo (17/11 16:17)
+Las sesiones programadas del equipo técnico no tienen `add_repo` ni acceso a biellopez77-png/proteamapp (GitHub responde «not configured for this session»; `git clone` pide credenciales). Mientras dure, los arreglos se dejan como parches en `revision/pendiente-push/` (aplicar con `git apply <parche>` en proteamapp, `bun run build`, commit en `main`, push y `deploy_project`). Para quitar el bloqueo: añadir proteamapp a los repositorios de la tarea programada.
+
+Última zona auditada: ninguna todavía (la siguiente es «landing y lista de espera»).
+
 ## Tareas abiertas
 | ID | Tarea | Agente | Estado | Notas |
 |---|---|---|---|---|
@@ -28,11 +33,11 @@ Pequeño = 1–2 archivos, sin BD/auth/permisos/pagos → `main`. Grande → ram
 
 | ID | Severidad | Resumen | Estado | Lote |
 |---|---|---|---|---|
-| A-003 | Alta | PDF del partido: «Aturades» y «Gols encaixats» siempre 0. `match-report.ts` `teamTotals` cuenta `save`/`goal_against` solo en `ours` (`side !== "them"`), pero se guardan con `side: them` (BD: 126 `save:them`, 266 `goal_against:them`, 0 propios). Reproducir: partido con paradas → PDF | pendiente | Pequeño (1 archivo): contar sobre `ev` como `teamMetrics` |
+| A-003 | Alta | PDF del partido: «Aturades» y «Gols encaixats» siempre 0. `match-report.ts` `teamTotals` cuenta `save`/`goal_against` solo en `ours` (`side !== "them"`), pero se guardan con `side: them` (BD: 126 `save:them`, 266 `goal_against:them`, 0 propios). Reproducir: partido con paradas → PDF | parche listo | Pequeño (1 archivo): contar sobre `ev` como `teamMetrics`. 17/11 16:17: parche listo y probado contra el código actual → `revision/pendiente-push/A-003-paradas-y-goles-encajados-pdf.patch` (SQL de nuevo: 126 save:them, 266 goal_against:them). Falta aplicarlo: sin acceso a proteamapp |
 | A-004 | Alta | PDF del partido ignora el deporte: `buildMatchReport` lee `m.sport_code` (no existe en `matches`) y `coach.matches.$id.tsx` no pasa `sportCode` de `getMatchLive` → baloncesto/fútbol con plantilla de balonmano («Gols 0», cuartos 3–4 como prórrogas en `absoluteSecond`) | pendiente | Pequeño (2 archivos): pasar `sportCode` |
 | A-005 | Alta | Excel convierte miles en decimales: `workbook.ts` `typedValue`/`unitColumns` → «12.500» = 12,5 (es/ca) y «1,500» = 1,5 (en). Afecta a «Càrrega (kg·rep)» de `progress-report.ts` (`toLocaleString`) | pendiente | Pequeño (2 archivos) + caso en `workbook.test.ts` |
 | A-011 | Alta | Equipo activo en cookie global `proteam_team` (`team-access.ts` `resolveMembership`, `selectTeam` `Path=/` 1 año): con dos pestañas en equipos distintos, lo creado en una se guarda en el otro equipo y las ediciones responden `ok` sin cambiar nada | pendiente | Grande (teamId explícito en funciones y claves de consulta) → PR |
-| A-012 | Alta | Directo: reenvío desde la cola reaplica sanciones. `addMatchEvents` (`live-match.functions.ts`) llama a `match_apply_sanction` también con eventos duplicados ignorados → saca de pista y reexcluye; si falla, el `catch` borra por `client_id` eventos ya guardados | pendiente | Pequeño (1 archivo): sancionar solo filas nuevas |
+| A-012 | Alta | Directo: reenvío desde la cola reaplica sanciones. `addMatchEvents` (`live-match.functions.ts`) llama a `match_apply_sanction` también con eventos duplicados ignorados → saca de pista y reexcluye; si falla, el `catch` borra por `client_id` eventos ya guardados | parche listo | Pequeño (1 archivo): sancionar solo filas nuevas. 17/11 16:17: `revision/pendiente-push/A-012-sanciones-reenvio-cola.patch` (`upsert…select("client_id")` → solo se sancionan y deshacen las filas nuevas). Falta aplicarlo: sin acceso a proteamapp |
 | A-006 | Media | PDF: minutos de jugadores en pista a 0 en el periodo actual: `aggregate(events, stints, {period, sec: 0})` sin duración (`stintSecondsResolver` en `match-model.ts`); la pantalla usa `clock_sec` | pendiente | Pequeño (1 archivo) |
 | A-007 | Media | Informe → filtro «1.ª/2.ª parte»: «Min» sigue siendo el partido entero (`coach.matches.$id.tsx` pasa `stints` sin filtrar; `rAggs` no se usa) | pendiente | Pequeño (1 archivo) |
 | A-008 | Media | Informe de rendimiento de pista: dos % de asistencia distintos (`progress-report.ts` `pct(present+late, total)` frente a `attendanceSummary` del resumen) | pendiente | Pequeño (1 archivo) |
