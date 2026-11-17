@@ -1253,3 +1253,9 @@ Fuente de las normas: Normativa de Balonmano 2025, Juegos Deportivos Escolares d
 - **H1104** El partido no acaba con el pitido. Acaba cuando tú lo sueltas. [fútbol · contraintuitiva · post-partido] (12/15)
 - **H1105** Tres deportes. El mismo lunes. [los tres · comparativa · organización] (12/15)
 - **H1106** Viernes. Convocatoria en el grupo, el siete en la cabeza. [balonmano · situación real · organización] (11/15)
+
+## Nuevos · 17/11 21:30 (Dani, u54)
+- **H1107** Tu libreta no tiene huecos. Por eso no te puedes fiar de ella. [balonmano · contraintuitiva · análisis] (12/15)
+- **H1108** Nueve de tus zonas de tiro las ha puesto tu memoria. [balonmano · provocadora · análisis] (12/15)
+- **H1109** Cambio ataque-defensa. Y justo ahí, lanza tu extremo. [balonmano · situación real · partidos] (11/15)
+- **H1110** Un lanzamiento sin zona vale más que uno inventado. [general · educativa · análisis] (11/15)
