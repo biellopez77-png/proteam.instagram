@@ -49,7 +49,7 @@ Las deja Dani (01) en cada turno de guiones por adelantado. Clara elige, marca �
 - **Arquitectura:** portada «Quinto periodo y tú contando cruces en el acta» → la norma con ámbito y temporada (Fed. Extremeña, minibasket 2024-25, ligas locales: mínimo 2 periodos completos entre el 1.º y el 5.º, sin cambios en los 5 primeros) → paso 1: los que menos juegan, primero → paso 2: reparte a tus dos mejores en quintetos distintos (propuesta) → paso 3: el sexto, libre → hoja de seis casillas rellena con doce nombres de ejemplo → hoja vacía guardable → «Mándaselo a tu delegado».
 - **Ojo:** no el mismo día que u12. Ninguna pantalla de la app que no exista.
 
-### 9. «Sesión de media pista: 60 minutos sin filas»
+### 9. «Sesión de media pista: 60 minutos sin filas» [usada c13]
 - **Deporte:** baloncesto. **Insight de origen:** I-007 (inferido). **Objetivo:** guardados.
 - **Arquitectura:** portada «Planificas pista entera. Tienes media.» → qué se pierde (filas, esperas) → bloque 1: 1×1 desde bote → bloque 2: 3×3 sin bote → bloque 3: tiro por parejas con rebote → cómo repartir los minutos (propuesta, marcada como tal) → sesión entera en una imagen guardable → pregunta: «¿Cuántos días tienes media pista?».
 - **Ojo:** no el mismo día que u13. Sin cifras de «tiempo perdido».
