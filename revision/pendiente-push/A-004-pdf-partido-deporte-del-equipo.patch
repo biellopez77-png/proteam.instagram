@@ -1,0 +1,32 @@
+diff --git a/src/lib/reports/match-report.ts b/src/lib/reports/match-report.ts
+--- a/src/lib/reports/match-report.ts
++++ b/src/lib/reports/match-report.ts
+@@ -73,6 +73,8 @@ export type MatchReportInput = {
+   comparison?: {matches:{id:string;date:string}[];events:MatchEvent[]};
+   /** Build a single-player report instead of a team one. */
+   playerId?: string;
++  /** Sport of the team (the `matches` table has no sport column): scoring rules and period labels. */
++  sportCode?: string | null;
+ };
+ 
+ const STATUS_LABEL: Record<string, string> = {
+@@ -310,7 +312,7 @@ function recoBlocks(recos: Reco[]): ReportBlock[] {
+ 
+ export function buildMatchReport(input: MatchReportInput, variant: MatchVariant): ReportSpec {
+   const { match: m, events, stints, players, teamName } = input;
+-  const sportCode = (m as { sport_code?: string | null }).sport_code ?? null;
++  const sportCode = input.sportCode ?? (m as { sport_code?: string | null }).sport_code ?? null;
+   const computed = computeResult(
+     { our_score: m.our_score ?? null, their_score: m.their_score ?? null },
+     events,
+diff --git a/src/routes/_authenticated/coach.matches.$id.tsx b/src/routes/_authenticated/coach.matches.$id.tsx
+--- a/src/routes/_authenticated/coach.matches.$id.tsx
++++ b/src/routes/_authenticated/coach.matches.$id.tsx
+@@ -137,6 +137,7 @@ function MatchSheetPage() {
+                     adjustments: data.adjustments,
+                     stints: data.stints,
+                     staff: data.staff,
++                    sportCode,
+                     comparison: seasonData ? { matches: seasonData.matches.filter(x => x.id !== id && x.state === "played" && x.has_events).map(x => ({ id:x.id, date:x.match_date })), events: seasonData.events } : undefined,
+                   },
+                   v,

@@ -2,10 +2,10 @@
 
 Estados: pendiente · en curso · hecho · bloqueado · a verificar · en PR
 
-## Bloqueo (17/11 16:17)
+## Bloqueo (17/11 16:17; sigue igual a las 18:17)
 Las sesiones programadas del equipo técnico no tienen `add_repo` ni acceso a biellopez77-png/proteamapp (GitHub responde «not configured for this session»; `git clone` pide credenciales). Mientras dure, los arreglos se dejan como parches en `revision/pendiente-push/` (aplicar con `git apply <parche>` en proteamapp, `bun run build`, commit en `main`, push y `deploy_project`). Para quitar el bloqueo: añadir proteamapp a los repositorios de la tarea programada.
 
-Última zona auditada: landing y lista de espera (17/11, turno manual; leído `src/routes/index.tsx`, `src/components/landing/blackout-friday.tsx`, `src/lib/blackout-friday.ts`; falta `auth-overlay.tsx`, el alta en la lista). Siguiente: registro e inicio del entrenador.
+Última zona auditada: registro e inicio del entrenador (17/11 18:17; leído `src/components/auth-overlay.tsx`; falta la pantalla de equipos `/teams` y el primer inicio). Siguiente: planificación (macro/meso/micro y plantillas).
 
 ## Tareas abiertas
 | ID | Tarea | Agente | Estado | Notas |
@@ -34,7 +34,7 @@ Pequeño = 1–2 archivos, sin BD/auth/permisos/pagos → `main`. Grande → ram
 | ID | Severidad | Resumen | Estado | Lote |
 |---|---|---|---|---|
 | A-003 | Alta | PDF del partido: «Aturades» y «Gols encaixats» siempre 0. `match-report.ts` `teamTotals` cuenta `save`/`goal_against` solo en `ours` (`side !== "them"`), pero se guardan con `side: them` (BD: 126 `save:them`, 266 `goal_against:them`, 0 propios). Reproducir: partido con paradas → PDF | parche listo | Pequeño (1 archivo): contar sobre `ev` como `teamMetrics`. 17/11 16:17: parche listo y probado contra el código actual → `revision/pendiente-push/A-003-paradas-y-goles-encajados-pdf.patch` (SQL de nuevo: 126 save:them, 266 goal_against:them). Falta aplicarlo: sin acceso a proteamapp |
-| A-004 | Alta | PDF del partido ignora el deporte: `buildMatchReport` lee `m.sport_code` (no existe en `matches`) y `coach.matches.$id.tsx` no pasa `sportCode` de `getMatchLive` → baloncesto/fútbol con plantilla de balonmano («Gols 0», cuartos 3–4 como prórrogas en `absoluteSecond`) | pendiente | Pequeño (2 archivos): pasar `sportCode` |
+| A-004 | Alta | PDF del partido ignora el deporte: `buildMatchReport` lee `m.sport_code` (no existe en `matches`) y `coach.matches.$id.tsx` no pasa `sportCode` de `getMatchLive` → baloncesto/fútbol con plantilla de balonmano («Gols 0», cuartos 3–4 como prórrogas en `absoluteSecond`) | parche listo | 17/11 18:17: `revision/pendiente-push/A-004-pdf-partido-deporte-del-equipo.patch` (campo `sportCode` en `MatchReportInput`; la página pasa el `sportCode` del equipo que ya usa en pantalla). SQL: `matches` sin columna de deporte; hoy los 18 partidos son de balonmano, así que afecta al primer equipo de fútbol o baloncesto. Falta aplicarlo: sin acceso a proteamapp |
 | A-005 | Alta | Excel convierte miles en decimales: `workbook.ts` `typedValue`/`unitColumns` → «12.500» = 12,5 (es/ca) y «1,500» = 1,5 (en). Afecta a «Càrrega (kg·rep)» de `progress-report.ts` (`toLocaleString`) | pendiente | Pequeño (2 archivos) + caso en `workbook.test.ts` |
 | A-011 | Alta | Equipo activo en cookie global `proteam_team` (`team-access.ts` `resolveMembership`, `selectTeam` `Path=/` 1 año): con dos pestañas en equipos distintos, lo creado en una se guarda en el otro equipo y las ediciones responden `ok` sin cambiar nada | pendiente | Grande (teamId explícito en funciones y claves de consulta) → PR |
 | A-012 | Alta | Directo: reenvío desde la cola reaplica sanciones. `addMatchEvents` (`live-match.functions.ts`) llama a `match_apply_sanction` también con eventos duplicados ignorados → saca de pista y reexcluye; si falla, el `catch` borra por `client_id` eventos ya guardados | parche listo | Pequeño (1 archivo): sancionar solo filas nuevas. 17/11 16:17: `revision/pendiente-push/A-012-sanciones-reenvio-cola.patch` (`upsert…select("client_id")` → solo se sancionan y deshacen las filas nuevas). Falta aplicarlo: sin acceso a proteamapp |
@@ -57,11 +57,13 @@ Pequeño = 1–2 archivos, sin BD/auth/permisos/pagos → `main`. Grande → ram
 | ID | Tipo | Resumen | Estado | Notas |
 |---|---|---|---|---|
 | M-001 | Error (rendimiento) | Portada: la cuenta atrás solo se pinta en el navegador (`useBlackoutRemaining` empieza en `null`, `src/routes/index.tsx` líneas del hero y de «Quedan»), así que al cargar aparece de golpe y empuja hacia abajo los botones «Apúntate…» e «Iniciar sesión» (salto de diseño) | parche listo | `revision/pendiente-push/M-001-landing-cuenta-atras-sin-salto.patch`: reserva el hueco con una cuenta atrás invisible mientras dura la campaña |
+| M-002 | Error (accesibilidad) | Acceso: las pestañas «Iniciar sesión» / «Crear cuenta» de `src/components/auth-overlay.tsx` (`AuthForm`, bloque `flex gap-1 rounded-lg bg-muted`) no dicen cuál está activa al lector de pantalla (sin `aria-pressed`) y miden menos de 44 px de alto (`py-2` sin `min-h-11`) | parche listo | `revision/pendiente-push/M-002-acceso-pestanas-entrar-crear-cuenta.patch`: `aria-pressed`, `min-h-11` e iconos `aria-hidden` |
 
 ## Propuestas (funciones o cambios de texto; no se publican solas)
 | ID | Propuesta | De | Notas |
 |---|---|---|---|
 | P-001 | En campaña, el subtítulo de la portada (`src/routes/index.tsx`, «Apúntate a la lista de espera antes del 27 de noviembre y consigue 3 meses gratis.») no dice para quién es; solo fuera de campaña aparece «fútbol, baloncesto y balonmano». Propuesta: «La app para entrenadores de fútbol, baloncesto y balonmano. Apúntate antes del 27 de noviembre y consigue 3 meses gratis.» (regla de los tres deportes por igual) | Óscar (R3) | Clave nueva en los 7 diccionarios → PR cuando haya acceso al repo |
+| P-002 | Acceso con prisa desde el móvil: botón «Mostrar contraseña» en el campo de `AuthForm` (`auth-overlay.tsx`, `Field` de contraseña) y, si falla el acceso, mensaje propio («Correo o contraseña incorrectos») en vez de pasar `err.message` de Supabase por `t()` (`submit`, `catch`), que solo sale traducido si el texto inglés exacto está en los diccionarios | Óscar (R3) | Pequeña función nueva + clave en los 7 diccionarios → PR cuando haya acceso al repo. Nuria: comprobar en `dict/es.json` si existe «Invalid login credentials» |
 
 ## Ideas aparcadas (no pedidas por Biel; no se hacen sin su OK)
 -
