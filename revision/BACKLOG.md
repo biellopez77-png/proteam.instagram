@@ -11,7 +11,7 @@ Las sesiones programadas del equipo técnico no tienen `add_repo` ni acceso a bi
 | ID | Tarea | Agente | Estado | Notas |
 |---|---|---|---|---|
 | T-04 | Revisión de errores: corrección y textos (encargo de Biel 17/11) | R4 | pendiente | Siguiente turno; se suma a la lista de abajo |
-| T-08 | PRIORIDAD 1 (Biel): apartado «Análisis» en el admin (cuentas, lista de espera, facturación) | R4 | listo para aplicar | 17/11 16:48: código completo en `revision/pendiente-push/T-admin-analisis/` (`aplicar.py` + README con qué significa cada número). Biel lo aprobó sin PR: en cuanto haya acceso, aplicar, `bun run build`, push a `main` y `deploy_project`. Falta el build completo y las capturas |
+| T-08 | PRIORIDAD 1 (Biel): apartado «Análisis» en el admin (cuentas, lista de espera, facturación) | R4 | listo para aplicar | 17/11 16:48: código completo en `revision/pendiente-push/T-admin-analisis/` (`aplicar.py` + README con qué significa cada número). Biel lo aprobó sin PR: en cuanto haya acceso, aplicar, `bun run build`, push a `main` y `deploy_project`. 16:56: capturas a 375/1280 px y prueba de «solo admin» hechas; tabla adaptada a móvil. Falta solo `bun run build`, push y `deploy_project` (sin acceso al repo) |
 
 ## Tareas cerradas
 | ID | Tarea | Agente | Estado | Notas |

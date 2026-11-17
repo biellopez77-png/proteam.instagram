@@ -22,7 +22,7 @@ const SHORTCUTS: { days: number | null; label: string }[] = [
   { days: null, label: "Tot" },
 ];
 
-const TABLE_LIMIT = 50;
+const TABLE_LIMIT = 20;
 const tooltipStyle = { background: "var(--popover)", border: "1px solid var(--border)", borderRadius: 12, fontSize: 12, color: "var(--popover-foreground)" };
 const tick = { fontSize: 10, fill: "var(--muted-foreground)" };
 const field = "h-11 w-full rounded-lg border border-input bg-background px-3 text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring";
@@ -137,11 +137,11 @@ export function AnalyticsSection() {
           <p className="mt-3 text-sm text-muted-foreground">{t("Cap compte amb aquests filtres.")}</p>
         ) : (
           <div className="mt-3 overflow-x-auto">
-            <table className="w-full min-w-[520px] text-left text-sm">
+            <table className="w-full text-left text-sm">
               <thead className="text-xs text-muted-foreground">
                 <tr>
                   <th scope="col" className="py-2 pr-3 font-medium">{t("Nom")}</th>
-                  <th scope="col" className="py-2 pr-3 font-medium">{t("Email")}</th>
+                  <th scope="col" className="hidden py-2 pr-3 font-medium sm:table-cell">{t("Email")}</th>
                   <th scope="col" className="py-2 pr-3 font-medium">{t("Alta")}</th>
                   <th scope="col" className="py-2 font-medium">{t("Estat")}</th>
                 </tr>
@@ -149,9 +149,9 @@ export function AnalyticsSection() {
               <tbody className="divide-y divide-border">
                 {view.accounts.slice(0, TABLE_LIMIT).map((a) => (
                   <tr key={a.id}>
-                    <td className="max-w-40 truncate py-2 pr-3 font-medium" data-i18n-skip>{a.name || "—"}</td>
-                    <td className="max-w-56 truncate py-2 pr-3 text-muted-foreground" data-i18n-skip>{a.email ?? "—"}</td>
-                    <td className="whitespace-nowrap py-2 pr-3 tabular-nums">{new Date(a.createdAt).toLocaleDateString(locale)}</td>
+                    <td className="max-w-[9rem] py-2 pr-3 sm:max-w-40" data-i18n-skip><span className="block truncate font-medium">{a.name || "—"}</span><span className="block truncate text-xs text-muted-foreground sm:hidden">{a.email ?? "—"}</span></td>
+                    <td className="hidden max-w-56 truncate py-2 pr-3 text-muted-foreground sm:table-cell" data-i18n-skip>{a.email ?? "—"}</td>
+                    <td className="whitespace-nowrap py-2 pr-2 text-xs tabular-nums sm:pr-3 sm:text-sm">{new Date(a.createdAt).toLocaleDateString(locale, { day: "numeric", month: "short", year: "2-digit" }).replace(/\./g, "")}</td>
                     <td className="py-2"><BillingBadge category={a.billing} label={t(BILLING_LABELS[a.billing])} /></td>
                   </tr>
                 ))}
@@ -167,7 +167,7 @@ export function AnalyticsSection() {
 function StatCard({ icon, label, value, help }: { icon: ReactNode; label: string; value: number; help: string }) {
   return (
     <div className="min-w-0 rounded-lg border border-border bg-card p-3">
-      <p className="flex items-center gap-1.5 text-xs font-medium text-muted-foreground"><span className="text-primary" aria-hidden="true">{icon}</span><span className="truncate">{label}</span></p>
+      <p className="flex items-start gap-1.5 text-xs font-medium text-muted-foreground"><span className="text-primary" aria-hidden="true">{icon}</span><span className="min-w-0 leading-tight">{label}</span></p>
       <p className="mt-1 text-2xl font-semibold tabular-nums">{value}</p>
       <p className="mt-1 text-[11px] leading-snug text-muted-foreground">{help}</p>
     </div>
@@ -181,5 +181,5 @@ function BillingBadge({ category, label }: { category: BillingCategory; label: s
     trial: "bg-muted text-foreground",
     none: "bg-muted text-muted-foreground",
   };
-  return <span className={`inline-flex rounded-full px-2 py-0.5 text-xs font-medium ${tone[category]}`}>{label}</span>;
+  return <span className={`inline-flex rounded-full px-2 py-0.5 leading-tight sm:whitespace-nowrap text-xs font-medium ${tone[category]}`}>{label}</span>;
 }

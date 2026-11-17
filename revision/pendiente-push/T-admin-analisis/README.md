@@ -29,5 +29,11 @@ Después `deploy_project` y comprobar con un usuario no admin que `/admin` → �
 - **Sin plan**: sin club, prueba caducada o suscripción cancelada.
 Una cuenta con varios clubs toma el mejor estado (pagando > código > prueba > sin plan). Los cupones de descuento de Stripe sobre una suscripción pagada cuentan como «pagando».
 
+## Capturas (turno 16:56)
+`capturas/analisis-375.png`, `analisis-1280.png` y `analisis-375-filtros.png` (filtro «En prueba» + «7 días»). Son del componente real con datos ficticios, montado aparte con Tailwind y colores aproximados del tema oscuro, no de la app publicada. A 375 px no hay scroll horizontal; en móvil el email va debajo del nombre y la tabla enseña las 20 primeras cuentas. 0 errores de consola.
+
+## Solo admin
+`prueba-solo-admin.local.test.ts` (fuera del repo): un usuario no admin recibe «Accés denegat.» y la función no llega a leer ni usuarios ni tablas; el admin recibe los datos. Pasa.
+
 ## Sin comprobar aquí
-`bun run build` completo y las capturas a 375 y 1280 px (hace falta el repositorio). Sí comprobado: tipos con `tsc --strict` contra stubs, las 10 pruebas, el escáner de i18n del repo sobre los archivos nuevos (0 textos sin clave, 0 plantillas con prosa) y el aviso de idioma cruzado de es/ca.
+`bun run build` completo dentro de proteamapp (hace falta el repositorio). Sí comprobado: tipos con `tsc --strict` contra stubs, las 10 pruebas, el escáner de i18n del repo sobre los archivos nuevos (0 textos sin clave, 0 plantillas con prosa) y el aviso de idioma cruzado de es/ca.
