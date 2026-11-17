@@ -329,3 +329,10 @@
 - Decidido: la foto del Real Madrid es un calentamiento con público aunque Commons la titule «entrenamiento»; queda escrito para que el rótulo no diga «entreno del martes».
 - Sin tocar: el «por dentro» de fútbol (u30) ya tiene guion (77) y foto; lo monta el turno de Reels de las 0:37 para no pisarse con él (ya pasó con u28 y u29). El de baloncesto sigue esperando una captura real de baloncesto.
 - Horizonte de 15 días: nada nuevo para Dani (19 guiones en reserva y turno cada hora), Andrés (sin críticas pendientes) ni Samuel (confirma u04 mañana con 24 h).
+
+## 17/11 · 6:37 · Turno de Reels (Dani, Andrés, Marta y Pau)
+- No sale ningún Reel en este turno. ElevenLabs se quedó sin créditos: quedan 66 de 30.011 y se renuevan el 14/12. Salió una toma de voz de u12; la segunda toma y las dos músicas fallaron por saldo.
+- u12 «Quinto periodo. Y tú, contando cruces en el acta.» (baloncesto, guion 80): voz, montaje y vídeo mudo hechos (tools/reel12/), en pausa hasta tener música nueva. Cita comprobada en el PDF de la FEXB (art. 5.1 y 6.1).
+- Decidido: la música se probó en Higgsfield (mismo modelo, 4,36 créditos). Se generó, pero las descargas de Higgsfield no están permitidas en los turnos y no se rodea; tampoco hay Reel de datos de recambio, porque también necesita música nueva.
+- Hueco vacío: mié 18/11 13:30. Marta queda «bloqueado»; ficha para Biel en approvals (a-creditos-elevenlabs-1117) y aviso al móvil.
+- Reserva: 17 guiones criticados sin producir; no hacían falta más.
