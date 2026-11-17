@@ -5,7 +5,7 @@ Estados: pendiente · en curso · hecho · bloqueado · a verificar · en PR
 ## Bloqueo (17/11 16:17)
 Las sesiones programadas del equipo técnico no tienen `add_repo` ni acceso a biellopez77-png/proteamapp (GitHub responde «not configured for this session»; `git clone` pide credenciales). Mientras dure, los arreglos se dejan como parches en `revision/pendiente-push/` (aplicar con `git apply <parche>` en proteamapp, `bun run build`, commit en `main`, push y `deploy_project`). Para quitar el bloqueo: añadir proteamapp a los repositorios de la tarea programada.
 
-Última zona auditada: ninguna todavía (la siguiente es «landing y lista de espera»).
+Última zona auditada: landing y lista de espera (17/11, turno manual; leído `src/routes/index.tsx`, `src/components/landing/blackout-friday.tsx`, `src/lib/blackout-friday.ts`; falta `auth-overlay.tsx`, el alta en la lista). Siguiente: registro e inicio del entrenador.
 
 ## Tareas abiertas
 | ID | Tarea | Agente | Estado | Notas |
@@ -25,8 +25,8 @@ Las sesiones programadas del equipo técnico no tienen `add_repo` ni acceso a bi
 ## Hallazgos abiertos
 | ID | Severidad | Resumen | Estado | Lote |
 |---|---|---|---|---|
-| A-001 | Baja | `src/components/shell.tsx`: aria-labels fijos fuera de `t()` («Menú», «Tancar menú», «Obrir menú», «Menú de navegació», «Navegació principal» en la barra inferior del jugador). Solo afecta a lectores de pantalla | pendiente | Arreglo pequeño. 17/11 12:20: no se pudo hacer, el turno no tenía acceso a biellopez77-png/proteamapp (sin `add_repo`) |
-| A-002 | Baja | Confirmado (R2, 17/11): `src/lib/match-presentation.ts` (`matchPresentationSections`) devuelve «Jugadores» y «Comparativa» con `blocks: []`, y `src/lib/reports/pdf.ts` (`buildReportPdf`, bucle de secciones: `if (!s.blocks.length) text(ctx, EMPTY…)`) las imprime igualmente: el PDF del partido sale con dos apartados con título y «sin datos». Arreglo propuesto: rellenarlas con los datos que ya calcula `matchPresentation` (`positions`, `comparison`) o quitarlas del informe | a verificar | R2 17/11 14:30: en el `match-report.ts` actual «Jugadores» y «Comparativa» se rellenan y los apartados vacíos se filtran (`presentation.filter(s => s.blocks.length > 0)`); comprobar si `matchPresentationSections` se usa en otra ruta antes de tocar nada |
+| A-001 | Baja | `src/components/shell.tsx`: aria-labels fijos fuera de `t()` («Menú», «Tancar menú», «Obrir menú», «Menú de navegació», «Navegació principal» en la barra inferior del jugador). Solo afecta a lectores de pantalla | parche listo | Arreglo pequeño. 17/11 (turno manual): `revision/pendiente-push/A-001-aria-labels-menu-traducidos.patch` — los 6 `aria-label` pasan por `translate()`; las 6 claves ya existen en `dict/es.json`, no hace falta tocar diccionarios |
+| A-002 | Baja | Confirmado (R2, 17/11): `src/lib/match-presentation.ts` (`matchPresentationSections`) devuelve «Jugadores» y «Comparativa» con `blocks: []`, y `src/lib/reports/pdf.ts` (`buildReportPdf`, bucle de secciones: `if (!s.blocks.length) text(ctx, EMPTY…)`) las imprime igualmente: el PDF del partido sale con dos apartados con título y «sin datos». Arreglo propuesto: rellenarlas con los datos que ya calcula `matchPresentation` (`positions`, `comparison`) o quitarlas del informe | cerrado (R1) | R1 17/11 (turno manual): no se reproduce. `matchPresentationSections` deja «Jugadores» y «Comparativa» vacías a propósito y su único uso conocido, `buildMatchReport` (`src/lib/reports/match-report.ts`), las rellena y filtra las vacías (`presentation.filter(s => s.blocks.length > 0)`). No se pudo hacer grep en todo el repo (sin acceso): si aparece otro uso, se reabre |
 
 ### Revisión de errores 17/11 (R1: lista única por gravedad; ningún bloqueante)
 Pequeño = 1–2 archivos, sin BD/auth/permisos/pagos → `main`. Grande → rama `revision/<tema>` + PR para Biel.
@@ -52,6 +52,16 @@ Pequeño = 1–2 archivos, sin BD/auth/permisos/pagos → `main`. Grande → ram
 | A-019 | Baja | Comparativa del PDF sin correcciones manuales de marcador (`teamMetrics` frente a `m.result.us` en pantalla) y etiquetas mezcladas ca/es («Mitjana», «Goles por partido») | pendiente | Pequeño |
 | A-020 | Baja | Contadores «leer y escribir»: `coachAddSet` (`set_number = count+1`, renumera al reenviar) y `joinTeamWithCode` (`uses+1`, se pasa `max_uses`) | pendiente | Primero pequeño; segundo toca BD → PR |
 | A-021 | Baja | Rendimiento: `createLiveSession` ~200 consultas sin transacción; `syncMatchResult` sin `fetchAll` (>1000 eventos); `invalidateQueries()` sin clave en `coach.matches.index.tsx` y `teams.tsx` | pendiente | Mixto |
+
+### Mejora continua
+| ID | Tipo | Resumen | Estado | Notas |
+|---|---|---|---|---|
+| M-001 | Error (rendimiento) | Portada: la cuenta atrás solo se pinta en el navegador (`useBlackoutRemaining` empieza en `null`, `src/routes/index.tsx` líneas del hero y de «Quedan»), así que al cargar aparece de golpe y empuja hacia abajo los botones «Apúntate…» e «Iniciar sesión» (salto de diseño) | parche listo | `revision/pendiente-push/M-001-landing-cuenta-atras-sin-salto.patch`: reserva el hueco con una cuenta atrás invisible mientras dura la campaña |
+
+## Propuestas (funciones o cambios de texto; no se publican solas)
+| ID | Propuesta | De | Notas |
+|---|---|---|---|
+| P-001 | En campaña, el subtítulo de la portada (`src/routes/index.tsx`, «Apúntate a la lista de espera antes del 27 de noviembre y consigue 3 meses gratis.») no dice para quién es; solo fuera de campaña aparece «fútbol, baloncesto y balonmano». Propuesta: «La app para entrenadores de fútbol, baloncesto y balonmano. Apúntate antes del 27 de noviembre y consigue 3 meses gratis.» (regla de los tres deportes por igual) | Óscar (R3) | Clave nueva en los 7 diccionarios → PR cuando haya acceso al repo |
 
 ## Ideas aparcadas (no pedidas por Biel; no se hacen sin su OK)
 -
