@@ -1,10 +1,10 @@
 {
  "origen": "tools/reel29/voz.tsv",
  "tipo": "locución generada con tiempos por palabra (exacta, no reconocida por oído)",
- "palabras": 18,
+ "palabras": 20,
  "primera_palabra_s": 0.127,
- "ultima_palabra_s": 23.01,
- "ritmo_palabras_por_s": 0.79,
+ "ultima_palabra_s": 27.13,
+ "ritmo_palabras_por_s": 0.74,
  "frases": [
   {
    "desde": 0.127,
@@ -53,6 +53,12 @@
    "hasta": 23.01,
    "texto": "Comenta tu deporte, tu categoría y tus días, y te preparo la primera semana.",
    "palabras_por_s": 0.71
+  },
+  {
+   "desde": 23.14,
+   "hasta": 27.13,
+   "texto": "Lista de espera hasta el veintisiete de noviembre: tres meses gratis.",
+   "palabras_por_s": 0.5
   }
  ],
  "pausas": [
@@ -152,6 +158,16 @@
    "desde": 21.363,
    "hasta": 23.01,
    "palabra": "y te preparo la primera semana."
+  },
+  {
+   "desde": 23.14,
+   "hasta": 25.68,
+   "palabra": "Lista de espera hasta el veintisiete de noviembre:"
+  },
+  {
+   "desde": 25.76,
+   "hasta": 27.13,
+   "palabra": "tres meses gratis."
   }
  ]
 }

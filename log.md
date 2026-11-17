@@ -399,3 +399,9 @@
 - No encontrado: ninguna foto de un cambio de jugadores para u10; lo cuenta la animación del guion.
 - Dani (horizonte de 15 días): tarea nueva, 9 guiones (3 por deporte) para el lun 23 y el mar 24. Motivo: con la voz de vuelta salen hasta 6 Reels al día y los 22 guiones de reserva se acaban el sábado 21.
 - Decidido: nada nuevo para Andrés (sin críticas pendientes). Sin tocar: «por dentro» de baloncesto (sigue sin captura real de baloncesto), la parrilla de Clara (turno de las :31) y el recuento de Stories de Samuel (toca el miércoles por la tarde).
+
+## 17/11 · 16:49 · Encargos (Laura, con Marta y Andrés)
+- Sin correcciones ni consignas nuevas de Biel. Nadie bloqueado y ninguna ficha pendiente.
+- Marta: u29 «26–17. Tira tu lateral.» ya cierra con el contador de la lista de espera (el de u28): web con el contador que corre, el correo, el toque y «Estás dentro», y luego «HASTA EL 27 NOV · 3 meses gratis» con la voz de Mateo. Dura 27,6 s. Andrés: 79. Sale hoy a las 20:30, a su hora.
+- Decidido: la frase de voz del cierre («Lista de espera hasta el veintisiete de noviembre: tres meses gratis») es un corte de la toma de u28, misma voz; no se gastan caracteres. No se ha podido escuchar aquí.
+- Parche 0009 subido: guiones u41 (fútbol, 77) y u42 (balonmano, 81), sus críticas, la revisión de Andrés de hook y contador, 7 hooks y 2 insights.

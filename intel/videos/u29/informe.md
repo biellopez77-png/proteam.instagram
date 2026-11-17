@@ -1,23 +1,25 @@
 # u29 · informe técnico (medido, no opinado)
 
-- **Archivo:** `reels/u29-por-dentro-cinco-toques.mp4` · sha256 `f801524416354649…` · fuente: —
-- **Marca / tipo / formato / tema:** proteam / propio / reel / ProTeam por dentro (balonmano): un tiro apuntado en cinco toques
-- **Técnica:** 23.7 s · 1080×1920 (9:16) · 30.0 fps · 711 fotogramas leídos · h264 · 1506 kbps
+- **Archivo:** `reels/u29-por-dentro-cinco-toques.mp4` · sha256 `e4d05dab8909f817…` · fuente: —
+- **Marca / tipo / formato / tema:** proteam / propio / reel / ProTeam por dentro: un tiro en cinco toques (balonmano) · v2 con el contador de la lista de espera
+- **Técnica:** 27.6 s · 1080×1920 (9:16) · 30.0 fps · 828 fotogramas leídos · h264 · 1518 kbps
 - **Audio:** aac 1 canales 48000 Hz
-- **Analizado:** 2026-11-16 21:07 · orden: `python3 tools/video_intel.py analyze reels/u29-por-dentro-cinco-toques.mp4 --id u29 --tema ProTeam por dentro (balonmano): un tiro apuntado en cinco toques --modo detalle`
+- **Analizado:** 2026-11-17 15:57 · orden: `python3 tools/video_intel.py analyze reels/u29-por-dentro-cinco-toques.mp4 --id u29 --tema ProTeam por dentro: un tiro en cinco toques (balonmano) · v2 con el contador de la lista de espera --modo detalle`
 
 ## Montaje (automático; confirmar en láminas)
-5 planos · 4 cortes duros · 0 transiciones o movimientos fuertes · plano medio 4.74 s (más largo 10.533 s, más corto 2.3 s) · 1.69 cortes cada 10 s
+7 planos · 6 cortes duros · 0 transiciones o movimientos fuertes · plano medio 3.94 s (más largo 10.533 s, más corto 1.933 s) · 2.17 cortes cada 10 s
 
-Tramos sin movimiento (≥ 1,5 s): 00:00.00–00:01.77 (1.77 s); 00:10.33–00:13.53 (3.2 s); 00:16.27–00:18.57 (2.3 s); 00:19.97–00:21.70 (1.73 s)
+Tramos sin movimiento (≥ 1,5 s): 00:00.00–00:01.77 (1.77 s); 00:10.33–00:13.53 (3.2 s); 00:16.27–00:18.57 (2.3 s); 00:19.97–00:21.70 (1.73 s); 00:26.03–00:27.57 (1.53 s)
 
 | plano | desde | hasta | dura | movimiento | luz |
 |---|---|---|---|---|---|
 | E1 | 00:00.00 | 00:03.00 | 3.0 s | 0.0045 | 0.191 |
 | E2 | 00:03.00 | 00:13.53 | 10.533 s | 0.0089 | 0.459 |
 | E3 | 00:13.53 | 00:15.83 | 2.3 s | 0.0127 | 0.159 |
-| E4 | 00:15.83 | 00:18.60 | 2.767 s | 0.0076 | 0.191 |
-| E5 | 00:18.60 | 00:23.70 | 5.1 s | 0.0027 | 0.084 |
+| E4 | 00:15.83 | 00:18.60 | 2.767 s | 0.0074 | 0.191 |
+| E5 | 00:18.60 | 00:23.10 | 4.5 s | 0.0029 | 0.081 |
+| E6 | 00:23.10 | 00:25.67 | 2.567 s | 0.0041 | 0.091 |
+| E7 | 00:25.67 | 00:27.60 | 1.933 s | 0.0075 | 0.156 |
 
 ## Texto en pantalla (OCR; verificar)
 | desde | hasta | palabras | texto leído |
@@ -60,29 +62,34 @@ Tramos sin movimiento (≥ 1,5 s): 00:00.00–00:01.77 (1.77 s); 00:10.33–00:1
 | 00:14.93 | 00:14.93 | 15 | PR PROIN RA TU STAFF GE Qu ie {HAIN apunt SUR los ti Yz Az, |
 | 00:15.20 | 00:15.20 | 14 | PRG PROIN PR EG UNT 'ARA TU STAFF Qu ie apunt INS los tí |
 | 00:15.47 | 00:15.47 | 12 | es PR PRO RA TU STAFF Qu apunt fe los UT MBER |
-| 00:15.73 | 00:15.73 | 18 | pa PR PR EG UN? RA TU STA HO) ERSS Qu ie napunt Si los ti? IMBER An |
+| 00:15.73 | 00:15.73 | 17 | ea PR PR EG UN? STA HO} ERSS Qu ie napunt Si los ti? banquill IMBER An |
 | 00:15.80 | 00:15.83 | 11 | PREGUNTA PARA TU STAFF ¿Quién apunta los tiros en tu banquillo? |
-| 00:16.00 | 00:18.60 | 11 | ASÍ SE REGISTRA UN PARTIDO EN la app de Proleam WEN) |
-| 00:18.67 | 00:18.67 | 7 | RTIDO EN ASÍ sE am 27 digits |
-| 00:19.20 | 00:23.67 | 21 | Comenta tu deporte tu categoría tus días le preparo la primera semana. LISTA DE ESPERA HASTA EL 27 NOV meses g |
+| 00:16.00 | 00:18.60 | 11 | ASÍ SE REGISTRA UN PARTIDO EN la app de Proleam ED |
+| 00:18.67 | 00:18.67 | 7 | ASÍ SE REGI RTIDO-EN Me. 27 digits |
+| 00:19.20 | 00:22.93 | 12 | Comenta tu deporte tu categoría tus días le preparo la primera semana |
+| 00:23.07 | 00:23.07 | 5 | Be ay gor tucat la |
+| 00:23.20 | 00:25.63 | 13 | LISTA DE ESPERA 00 00 00 00 DÍAS HORAS MIN SEG entrenador@miclub.es CE |
+| 00:26.13 | 00:26.13 | 5 | VAN HASTA EL 27 NOV |
+| 00:26.40 | 00:26.40 | 5 | MESES HASTA EL 27 NOV |
+| 00:26.93 | 00:27.57 | 4 | HASTA EL 27 NOV |
 
 ## Audio (medido)
-Volumen integrado -15.02 LUFS · pico real -0.02 dB · rango 1.80 LU
+Volumen integrado -14.87 LUFS · pico real 0.03 dB · rango 2.10 LU
 Silencios (< −38 dB, ≥ 0,25 s): ninguno
-Subidas bruscas de energía (posibles golpes o efectos): 00:02.00, 00:03.20, 00:05.80, 00:07.20, 00:07.70, 00:08.90, 00:10.00, 00:13.70, 00:16.70, 00:18.80, 00:19.90, 00:21.30
+Subidas bruscas de energía (posibles golpes o efectos): 00:02.00, 00:03.20, 00:05.80, 00:07.20, 00:07.70, 00:08.90, 00:10.00, 00:13.70, 00:16.70, 00:18.80, 00:19.90, 00:21.30, 00:23.20, 00:23.80
 Transcripción: ver `transcripcion.json`
 
 ## Láminas y cobertura visual
-Fotogramas mirados por un agente: **97 de 711 (13.6 %)**.
+Fotogramas mirados por un agente: **134 de 828 (16.2 %)**.
 
 | lámina | modo | tramo | fotogramas | vista |
 |---|---|---|---|---|
-| `laminas/general_001.jpg` | general | 00:00.00–00:13.53 | 18 | NO |
-| `laminas/general_002.jpg` | general | 00:14.67–00:23.67 | 11 | NO |
+| `laminas/general_001.jpg` | general | 00:00.00–00:13.53 | 18 | sí |
+| `laminas/general_002.jpg` | general | 00:14.67–00:27.57 | 16 | sí |
 | `laminas/detalle_001.jpg` | detalle | 00:00.00–00:05.60 | 24 | sí |
 | `laminas/detalle_002.jpg` | detalle | 00:05.87–00:12.00 | 24 | sí |
 | `laminas/detalle_003.jpg` | detalle | 00:12.27–00:17.33 | 24 | sí |
-| `laminas/detalle_004.jpg` | detalle | 00:17.60–00:23.20 | 24 | sí |
-| `laminas/detalle_005.jpg` | detalle | 00:23.47–00:23.47 | 1 | sí |
+| `laminas/detalle_004.jpg` | detalle | 00:17.60–00:23.07 | 24 | sí |
+| `laminas/detalle_005.jpg` | detalle | 00:23.10–00:27.47 | 20 | sí |
 
 Los juicios (qué funciona, qué falla y por qué) van en `observaciones.md`, cada uno con su marca de tiempo y la lámina donde se ve.
