@@ -2804,12 +2804,14 @@
    "stories/st-1117-un-minuto-una-consigna.jpg"
   ],
   "cover": null,
-  "status": "pending",
+  "status": "published",
   "campana": "carrusel",
   "when": "2026-11-17T10:30:00+01:00",
   "title": "1 minuto. 1 consigna. (tiempo muerto, baloncesto)",
   "score": "79",
-  "note": "Story de valor (minitutorial) de Clara (04): FIBA art. 18, tiempo muerto de 1 minuto; selección española, final del Mundial 2019. Sin oferta."
+  "note": "Story de valor (minitutorial) de Clara (04): FIBA art. 18, tiempo muerto de 1 minuto; selección española, final del Mundial 2019. Sin oferta.",
+  "media_id": "18114928430222030",
+  "published_at": "2026-11-17T10:25:00+0100"
  },
  {
   "id": "c12s2",
