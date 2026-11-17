@@ -1199,6 +1199,12 @@ Fuente de las normas: Normativa de Balonmano 2025, Juegos Deportivos Escolares d
 - **H1058** Minuto ochenta, córner. Al primer palo va el que el viernes se fue antes. [fútbol 11 · narrativa · base] (14/15)
 - **H1059** Tu córner lo ensayan los que no lo van a sacar. [fútbol 11 · contraintuitiva · base] (12/15)
 
+## Nuevos · 17/11 20:15 (Dani, u48, sin oferta desde el 28/11)
+- **H1100** No te falta un plan. Te falta el siguiente bloque. [baloncesto · contraintuitiva · planificación] (12/15)
+- **H1101** Septiembre: todo escrito. Noviembre: lo decide el último resultado. [baloncesto · comparativa · planificación] (12/15)
+- **H1102** ¿En qué bloque de la temporada estás? ¿Y cuándo acaba? [baloncesto · pregunta directa · planificación] (11/15)
+- **H1103** Si el lunes decides la semana por el marcador, no planificas: reaccionas. [baloncesto · provocadora · planificación] (11/15)
+
 ## Nuevos · 16/11 18:20 (Dani, BM-6 y baloncesto en el hueco de B-4)
 - **H1060** [usado u25] Tres exclusiones el sábado. Seis minutos con uno menos. [balonmano · números + partido · base] (14/15)
 - **H1061** Seis minutos con uno menos el sábado. Cero el martes. [balonmano · contraste numérico · base] (13/15)
