@@ -422,3 +422,4 @@
 - Parche 0010 subido: guion u43 (baloncesto, 80) y su crítica, el cierre con contador escrito en 23 guiones de reserva, la tabla de Andrés, 3 hooks, 1 insight y la fila de u43 en el historial. El parche no se pudo aplicar con git am desde aquí; el contenido se ha escrito igual, archivo por archivo.
 - Quedan para los siguientes turnos los contadores de u33 (mié 11:30) y u12 (mié 13:30). Guion: tools/reel30/cierre_contador.py.
 - Andrés (horizonte de 15 días): tarea nueva, repasar los carruseles y Stories ya programados del 18 al 20 (fecha, cuenta atrás y CTA correctos el día en que salen).
+- Laura 17/11 20:10: Biel pide cambios en u12 (la voz se corta) y u10 (la norma del cambio ataque-defensa es de toda España hasta juvenil, no solo de Euskadi). Los dos fuera de la cola; encargos de prioridad alta para Marta. Pau: 11 fotos nuevas de primer fotograma para u41, u42, u44 (2 opciones) y u45; faltan los tres de baloncesto (u39, u40, u43).
