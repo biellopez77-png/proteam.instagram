@@ -2929,8 +2929,8 @@
   "status": "pending",
   "campana": "unrespiro",
   "share_to_feed": false,
-  "note": "u33 · turno de Reels 17/11 3:37: Reel de datos corto (13,3 s, sin voz) de balonmano para el mié 11:30, detrás de u30 (fútbol). Dato IHF 6 → 4 pases, capturas reales de Partido en directo (Pérdida) y Cronología. Música nueva con golpe en el 4.; oficina: Sin voz: regla de Biel 17/11, todo Reel lleva la voz de Mateo; reprogramada desde la oficina · 17/11 12:37 (turno de Reels): con voz de Mateo (biblioteca, una toma, 309 caracteres), 17,9 s; misma música nueva del u33 realineada con el golpe en «cuatro». Auditoría de Andrés 80.",
-  "score": "voz 80 · montaje 80",
+  "note": "u33 · turno de Reels 17/11 3:37: Reel de datos corto (13,3 s, sin voz) de balonmano para el mié 11:30, detrás de u30 (fútbol). Dato IHF 6 → 4 pases, capturas reales de Partido en directo (Pérdida) y Cronología. Música nueva con golpe en el 4.; oficina: Sin voz: regla de Biel 17/11, todo Reel lleva la voz de Mateo; reprogramada desde la oficina · 17/11 12:37 (turno de Reels): con voz de Mateo (biblioteca, una toma, 309 caracteres), 17,9 s; misma música nueva del u33 realineada con el golpe en «cuatro». Auditoría de Andrés 80. · 17/11 18:50 v3 (encargo de Andrés): cierre con la animación del contador de la lista de espera (9 d 12 h → 27 NOV) bajo la voz «Lista de espera hasta el veintisiete de noviembre»; sin voz nueva; 17,9 s; auditoría 81 (agencia/criticas/2026-11-17-u33-u12-contador.md)",
+  "score": "voz 80 · montaje 81",
   "title": "Brazo arriba: te quedan 4 pases."
  },
  {
@@ -3012,7 +3012,7 @@
   "status": "pending",
   "campana": "unrespiro",
   "share_to_feed": false,
-  "note": "u12 · turno de Reels 17/11 15:37: encargo t-u12-musica (montado con voz el 17/11 6:37, sin música por falta de créditos). Música nueva (ElevenLabs music v2.5, re menor, campanas con vinilo, 900 créditos) con silencio antes de «acta» y golpe en la palabra; sfx.py y mezcla como u31. Banquillo de los Heat (Spoelstra), acta con cruces, columnas de periodo, hoja de 6 casillas. Voz Mateo de la biblioteca.",
+  "note": "u12 · turno de Reels 17/11 15:37: encargo t-u12-musica (montado con voz el 17/11 6:37, sin música por falta de créditos). Música nueva (ElevenLabs music v2.5, re menor, campanas con vinilo, 900 créditos) con silencio antes de «acta» y golpe en la palabra; sfx.py y mezcla como u31. Banquillo de los Heat (Spoelstra), acta con cruces, columnas de periodo, hoja de 6 casillas. Voz Mateo de la biblioteca. · 17/11 18:50 v2 (encargo de Andrés): cierre con la animación del contador de la lista de espera (9 d 10 h → 27 NOV) bajo la voz de la campaña, antes del reto; sin voz nueva; 25,2 s; auditoría 82 (agencia/criticas/2026-11-17-u33-u12-contador.md)",
   "score": "guion 80 · montaje 82",
   "title": "Quinto periodo. Y tú, contando cruces en el acta."
  }

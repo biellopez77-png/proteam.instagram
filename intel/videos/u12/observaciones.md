@@ -12,3 +12,13 @@ Vídeo: `reels/u12-quinto-periodo.mp4` (25,20 s, 1080×1920, 30 fps, −14,5 LUF
 - 00:21,63 — 1 fotograma oscuro de fundido al plano del principio (bucle); no bloquea.
 - 00:22,9–25,2 — RETO PARA TU STAFF · ¿Quién llevaba el acta / *en el quinto periodo?* · última palabra 24,71, cola 0,5 s ✔.
 - Audio: voz de Mateo de 0,08 a 24,71 s (pista de voz medida −14 a −19 dB cada segundo); música nueva hasta el final con fundido de 1,2 s; mezcla −12 a −16 dB cada segundo hasta 24 s.
+
+## v2 · cierre con el contador de la lista de espera (Marta y Andrés, 17/11 18:50)
+Cambia solo el tramo 18,3–21,7 s; duración igual (25,2 s). Láminas detalle 4 y 5 miradas.
+- 00:14,5–00:18,3 — «Comenta · Tu deporte, categoría y días · y te preparo la semana · en la app de ProTeam» sobre el banquillo; se quita el rótulo pequeño «LISTA DE ESPERA · HASTA EL 27 NOV». ✔
+- 00:18,33–00:20,37 — web de la lista de espera: contador desde 09 d 10 h 29 min (lo que falta de verdad el mié 18/11 a las 13:30), correo, toque, «Estás dentro», contador a 00 con la voz «Lista de espera hasta el veintisiete de noviembre». ✔
+- 00:20,40–00:21,6 — Spoelstra: «3 meses gratis.» + «HASTA EL 27 NOV» con la voz. ✔
+- 00:21,63–00:25,2 — reto «¿Quién llevaba el acta en el quinto periodo?» sobre el plano del principio (bucle); ya sin el rótulo de oferta debajo. ✔
+- Voz medida en la copia sin música: de 0,08 a 24,71 s, −20,8 dB de media, pausa máxima 0,3 s. Con música: −14,5 LUFS, sonido hasta el final.
+
+**Andrés · auditoría prepublicación v2: 82/100 · PUBLICABLE.** Bloqueantes: ninguno. Riesgo de salto: medio (arranque igual, sin número en 0 s).

@@ -2,8 +2,8 @@
  "meta": {
   "contenedor": "mov,mp4,m4a,3gp,3g2,mj2",
   "duracion_s": 25.2,
-  "tamano_bytes": 4706018,
-  "bitrate_kbps": 1494,
+  "tamano_bytes": 4734141,
+  "bitrate_kbps": 1503,
   "ancho": 1080,
   "alto": 1920,
   "relacion": "9:16",
@@ -27,23 +27,23 @@
   },
   "id": "u12",
   "fotogramas_leidos": 756,
-  "sha256": "9561d63cd423282db3c0dc2dd437c87f6ba092ddcef971103879e3aafbd7ed76",
+  "sha256": "e57ff4d4c283784216576e680ac9147e832670d324ac9b278111a3b84fd5b2ed",
   "archivo": "reels/u12-quinto-periodo.mp4",
   "fuente": "",
   "marca": "proteam",
   "tipo": "propio",
   "formato": "reel",
-  "tema": "repartir los periodos de minibasket antes del partido",
-  "analizado": "2026-11-17 14:44"
+  "tema": "minibasket: quinto periodo · v2 con contador",
+  "analizado": "2026-11-17 17:45"
  },
  "montaje": {
-  "cortes_duros": 7,
+  "cortes_duros": 8,
   "transiciones_o_movimientos_fuertes": 0,
-  "planos": 8,
-  "duracion_media_plano_s": 3.15,
+  "planos": 9,
+  "duracion_media_plano_s": 2.8,
   "plano_mas_largo_s": 4.733,
   "plano_mas_corto_s": 1.2,
-  "cortes_por_10s": 2.78,
+  "cortes_por_10s": 3.17,
   "tramos_estaticos": [
    {
     "desde": 9.27,
@@ -57,13 +57,8 @@
    },
    {
     "desde": 16.63,
-    "hasta": 18.27,
-    "duracion_s": 1.63
-   },
-   {
-    "desde": 18.3,
-    "hasta": 21.63,
-    "duracion_s": 3.33
+    "hasta": 18.23,
+    "duracion_s": 1.6
    }
   ],
   "nota": "Detección automática por histograma y diferencia de imagen sobre TODOS los fotogramas. Un motion graphic continuo cuenta como un solo plano; un cambio de fondo brusco dentro de una animación puede contarse como corte. Confirmar en las láminas."
@@ -97,19 +92,25 @@
    "fotograma": 435,
    "t": 14.5,
    "tipo": "corte",
-   "fuerza": 0.37
+   "fuerza": 0.371
   },
   {
-   "fotograma": 548,
-   "t": 18.267,
+   "fotograma": 550,
+   "t": 18.333,
    "tipo": "corte",
-   "fuerza": 0.302
+   "fuerza": 0.869
+  },
+  {
+   "fotograma": 612,
+   "t": 20.4,
+   "tipo": "corte",
+   "fuerza": 0.749
   },
   {
    "fotograma": 649,
    "t": 21.633,
    "tipo": "corte",
-   "fuerza": 0.472
+   "fuerza": 0.565
   }
  ],
  "escenas": [
@@ -171,35 +172,46 @@
   {
    "escena": 6,
    "desde_fotograma": 435,
-   "hasta_fotograma": 547,
+   "hasta_fotograma": 549,
    "desde": 14.5,
-   "hasta": 18.267,
-   "duracion_s": 3.767,
-   "movimiento_medio": 0.0018,
+   "hasta": 18.333,
+   "duracion_s": 3.833,
+   "movimiento_medio": 0.002,
    "luz_media": 0.101,
-   "saturacion_media": 0.339
+   "saturacion_media": 0.338
   },
   {
    "escena": 7,
-   "desde_fotograma": 548,
-   "hasta_fotograma": 648,
-   "desde": 18.267,
-   "hasta": 21.633,
-   "duracion_s": 3.367,
-   "movimiento_medio": 0.0012,
-   "luz_media": 0.108,
-   "saturacion_media": 0.363
+   "desde_fotograma": 550,
+   "hasta_fotograma": 611,
+   "desde": 18.333,
+   "hasta": 20.4,
+   "duracion_s": 2.067,
+   "movimiento_medio": 0.0052,
+   "luz_media": 0.092,
+   "saturacion_media": 0.409
   },
   {
    "escena": 8,
+   "desde_fotograma": 612,
+   "hasta_fotograma": 648,
+   "desde": 20.4,
+   "hasta": 21.633,
+   "duracion_s": 1.233,
+   "movimiento_medio": 0.0076,
+   "luz_media": 0.117,
+   "saturacion_media": 0.384
+  },
+  {
+   "escena": 9,
    "desde_fotograma": 649,
    "hasta_fotograma": 755,
    "desde": 21.633,
    "hasta": 25.2,
    "duracion_s": 3.567,
    "movimiento_medio": 0.0034,
-   "luz_media": 0.152,
-   "saturacion_media": 0.346
+   "luz_media": 0.151,
+   "saturacion_media": 0.345
   }
  ],
  "laminas": [
@@ -241,29 +253,30 @@
     434,
     435,
     480,
-    491,
+    492,
     525,
-    547,
-    548,
-    593,
-    598,
-    638,
-    648,
-    649
+    549,
+    550,
+    580,
+    611,
+    612,
+    630,
+    648
    ],
    "desde": 9.467,
-   "hasta": 21.633,
+   "hasta": 21.6,
    "modo": "general"
   },
   {
    "lamina": "general_003.jpg",
    "fotogramas": [
+    649,
     694,
     702,
     739,
     755
    ],
-   "desde": 23.133,
+   "desde": 21.633,
    "hasta": 25.167,
    "modo": "general"
   },
@@ -372,8 +385,8 @@
     528,
     536,
     544,
-    547,
-    548,
+    549,
+    550,
     552,
     560,
     568,
@@ -382,22 +395,24 @@
     592,
     600,
     608,
+    611,
+    612,
     616,
     624,
     632,
     640,
     648,
-    649,
-    656,
-    664
+    649
    ],
    "desde": 16.8,
-   "hasta": 22.133,
+   "hasta": 21.633,
    "modo": "detalle"
   },
   {
    "lamina": "detalle_005.jpg",
    "fotogramas": [
+    656,
+    664,
     672,
     680,
     688,
@@ -410,7 +425,7 @@
     744,
     752
    ],
-   "desde": 22.4,
+   "desde": 21.867,
    "hasta": 25.067,
    "modo": "detalle"
   }
@@ -797,12 +812,12 @@
    {
     "fotograma": 432,
     "t": 14.4,
-    "texto": "MIRAS ELPARTIDO, No ebacta:"
+    "texto": "MIRAS ELPARTIDO, No"
    },
    {
     "fotograma": 434,
     "t": 14.467,
-    "texto": "EL SÁBADO MI EL DO. No"
+    "texto": "MI EL DO. No"
    },
    {
     "fotograma": 435,
@@ -812,262 +827,267 @@
    {
     "fotograma": 440,
     "t": 14.667,
-    "texto": "OMENTA catenoría dias"
+    "texto": "catenoriav dias"
    },
    {
     "fotograma": 448,
     "t": 14.933,
-    "texto": "COMENTA Tu depo ME"
+    "texto": "COMENTA Tu depo"
    },
    {
     "fotograma": 456,
     "t": 15.2,
-    "texto": "COMENTA Tu categoría días ue"
+    "texto": "COMENTA Tu deporte, categoría días"
    },
    {
     "fotograma": 464,
     "t": 15.467,
-    "texto": "COMENTA Tu dias rhe"
+    "texto": "COMENTA Tu dias ue"
    },
    {
     "fotograma": 472,
     "t": 15.733,
-    "texto": "COMENTA Tu"
+    "texto": "COMENTA Tudepo dias"
    },
    {
     "fotograma": 480,
     "t": 16.0,
-    "texto": "COMENTA alee"
+    "texto": "COMENTA Tu depo categoría días ve"
    },
    {
     "fotograma": 488,
     "t": 16.267,
-    "texto": "COMENTA Tu alas ME"
+    "texto": "COMENTA Tudepo categoría días Me"
    },
    {
-    "fotograma": 491,
-    "t": 16.367,
-    "texto": "COMENTA Tu alas ME CE"
+    "fotograma": 492,
+    "t": 16.4,
+    "texto": "COMENTA Tu depo categoría días"
    },
    {
     "fotograma": 496,
     "t": 16.533,
-    "texto": "COMENTA Tu categoría dias vara la semana. ME,"
+    "texto": "COMENTA Tu depo categoría días to: Me PT) arn la semana."
    },
    {
     "fotograma": 504,
     "t": 16.8,
-    "texto": "¿COMENTA Tu deporte, categoría días reparo la semana. va"
+    "texto": "Tu deporte, categoría días yt la semana. fle"
    },
    {
     "fotograma": 512,
     "t": 17.067,
-    "texto": "COMENTA Tu deporte, categoría días la semana. MED, the"
+    "texto": "Tu deporte, categoría días ye, breparo la semana. MED, th"
    },
    {
     "fotograma": 520,
     "t": 17.333,
-    "texto": "¿COMENTA Tu deporte, categoría días la semana. ay"
+    "texto": "COMENTA Tu deporte, categoría días yt breparo la semana. flo"
    },
    {
     "fotograma": 525,
     "t": 17.5,
-    "texto": "Tu deporte, categoría días preparo la semana. app de ProTeam Me"
+    "texto": "Tu deporte, categoria dias ye, DYe] la semana. app de ProTeam tle"
    },
    {
     "fotograma": 528,
     "t": 17.6,
-    "texto": "COMENTA Tu deporte, categoría dias la semana. enla app de ProTeam"
+    "texto": "COMENTA Tu deporte, categoría dias enla app de ProTeam"
    },
    {
     "fotograma": 536,
     "t": 17.867,
-    "texto": "COMENTA Tu deporte, categoría dias la semana. la app de “egy"
+    "texto": "COMENTA Tu deporte, categoría dias la semana. El la app de ProTeam"
    },
    {
     "fotograma": 544,
     "t": 18.133,
-    "texto": "COMENTA Tu deporte, categoría dias tepreparo la semana. enla app de ProTeam"
+    "texto": "COMENTA Tu deporte, categoría días la semana. enla app de ProTeam"
    },
    {
-    "fotograma": 547,
-    "t": 18.233,
-    "texto": "COMENTA Tu deporte, categoría dias tepreparo la semana. enla app de ProTeam “ey"
+    "fotograma": 549,
+    "t": 18.3,
+    "texto": "if TÍ"
    },
    {
-    "fotograma": 548,
-    "t": 18.267,
-    "texto": "COMENTA Tu deporte, categoría días te preparo la semana, enla app de ProTeam hy"
+    "fotograma": 550,
+    "t": 18.333,
+    "texto": "LISTA DEESPERA"
    },
    {
     "fotograma": 552,
     "t": 18.4,
-    "texto": "COMENTA Tu deporte, categoría días te preparo la semana, enla app de ProTeam LISTA DE ESPERA HASTA EL 27 NOV"
+    "texto": "LISTA DE ESPERA 09 10 29 59"
    },
    {
     "fotograma": 560,
     "t": 18.667,
-    "texto": "COMENTA Tu deporte, categoría días te preparo la semana, eñla app de ProTeam LISTA DE ESPERA HASTA EL 27 NOV"
+    "texto": "LISTA DE ESPERA 09 14 DÍAS SEG entrenado"
    },
    {
     "fotograma": 568,
     "t": 18.933,
-    "texto": "COMENTA Tu deporte, categoría días te preparo la semana, enla app de ProTeam LISTA DE ESPERA HASTA EL NOV"
+    "texto": "LISTA DE ESPERA 09 08 49 22 DÍAS HORAS SEG entrenador@miclub.es|"
    },
    {
     "fotograma": 576,
     "t": 19.2,
-    "texto": "COMENTA Tu deporte, categoría días te preparo la semana, enla app de ProTeam LISTA DE ESPERA HASTA EL 27 NOV"
+    "texto": "LISTA DE ESPERA 09 00 38 27 DÍAS HORAS SEG entrenador@miclub.es"
+   },
+   {
+    "fotograma": 580,
+    "t": 19.333,
+    "texto": "LISTA DE ESPERA 08 16 59 DÍAS HORAS MIN SEG entrenador@miclub.es|"
    },
    {
     "fotograma": 584,
     "t": 19.467,
-    "texto": "COMENTA Tu deporte, categoría días te preparo la semana, enla app de ProTeam LISTA DE ESPERA HASTA EL 27 NOV"
+    "texto": "LISTA DE ESPERA 46 og 04 41 DÍAS HORAS MIN SEG entrenador@miclub.es"
    },
    {
     "fotograma": 592,
     "t": 19.733,
-    "texto": "COMENTA Tu deporte, categoría días te preparo la semana. eñ la app de ProTeam LISTA DE ESPERA HASTA EL 27 NOV"
-   },
-   {
-    "fotograma": 593,
-    "t": 19.767,
-    "texto": "COMENTA Tu deporte, categoría días te preparo la semana. eñ la app de ProTeam LISTA DE ESPERA HASTA EL 27 NOV"
-   },
-   {
-    "fotograma": 598,
-    "t": 19.933,
-    "texto": "COMENTA Tu deporte, categoria dias te preparo la semana. enla app ProTeam LISTA DE ESPERA HASTA EL 27 NOV"
+    "texto": "LISTA DE ESPERA 15 44 35 06 DÍAS HORAS MIN SEG entrenador@miclub.es"
    },
    {
     "fotograma": 600,
     "t": 20.0,
-    "texto": "COMENTA Tu deporte, categoria dias te preparo la semana. enla app de ProTeam LISTA DE ESPERA HASTA EL NOV"
+    "texto": "LISTA DE ESPERA 04 04 12 DÍAS HORAS SEG entrenador@miclub.es"
    },
    {
     "fotograma": 608,
     "t": 20.267,
-    "texto": "COMENTA Tu deporte, categoría días te preparo la semana, enla app de ProTeam ss LISTA DE ESPERA HASTA EL NOV"
+    "texto": "LISTA DE ESPERA 00 13 49 53 Dias HORAS MIN SEG entrenador@miclub.es"
+   },
+   {
+    "fotograma": 611,
+    "t": 20.367,
+    "texto": "LISTA DE ESPERA 00 00 OO 00 Dias HORAS MIN SEG entrenador@miclub.es"
+   },
+   {
+    "fotograma": 612,
+    "t": 20.4,
+    "texto": "ic"
    },
    {
     "fotograma": 616,
     "t": 20.533,
-    "texto": "COMENTA Tu deporte, categoría dias te preparo la semana. en la app de ProTeam LISTA DE ESPERA HASTA EL 27 NOV meses gratis"
+    "texto": "Meses gratis. HASTA EL PT"
    },
    {
     "fotograma": 624,
     "t": 20.8,
-    "texto": "COMENTA Tu deporte, categoria dias te preparo la semana. la app de ProTeam LISTA DE ESPERA HASTA EL 27 NOV meses gratis."
+    "texto": "meses gratis. HASTA EL 27 NOV"
+   },
+   {
+    "fotograma": 630,
+    "t": 21.0,
+    "texto": "meses gratis. HASTA NOV"
    },
    {
     "fotograma": 632,
     "t": 21.067,
-    "texto": "COMENTA Tu deporte, categoría días te preparo la semana. de ProTeam LISTA DE ESPERA HASTA EL NOV meses gratis."
-   },
-   {
-    "fotograma": 638,
-    "t": 21.267,
-    "texto": "COMENTA Tu deporte, categoria dias te preparo la semana. en la app de ProTeam Nas LISTA DE ESPERA HASTA EL NOV meses gratis."
+    "texto": "meses gratis. HASTA EL 27 NOV"
    },
    {
     "fotograma": 640,
     "t": 21.333,
-    "texto": "COMENTA Tu deporte, categoría días le preparo la semana. enlaapp ProTeam LISTA DE ESPERA HASTA EL NOV meses gratis."
+    "texto": "meses gratis. HASTA NOV"
    },
    {
     "fotograma": 648,
     "t": 21.6,
-    "texto": "COMENTA Tu deporte, categoría días te preparo la semana. eñla app de ProTeam LISTA DE ESPERA HASTA EL NOV meses gratis."
+    "texto": "meses gratis. HASTA NOV"
    },
    {
     "fotograma": 649,
     "t": 21.633,
-    "texto": "oly le"
+    "texto": "aly"
    },
    {
     "fotograma": 656,
     "t": 21.867,
-    "texto": "RETO PARA TU ly of DE"
+    "texto": "RETO PARA TU"
    },
    {
     "fotograma": 664,
     "t": 22.133,
-    "texto": "RETO PARA TU Sj ISTA DE HA ese ÉS"
+    "texto": "RETO PARA TU fe"
    },
    {
     "fotograma": 672,
     "t": 22.4,
-    "texto": "RETO PARA UN de 1h eS Were AEl AEL ISTA DE HAS 3Meses gra"
+    "texto": "RETO PARA TU PAS af"
    },
    {
     "fotograma": 680,
     "t": 22.667,
-    "texto": "RETO PARA TU STAFF. uf ISTA DE HAS El meses gratis."
+    "texto": "RETO PARA TU af"
    },
    {
     "fotograma": 688,
     "t": 22.933,
-    "texto": "RETO PARA TU STAFF el acta ic LISTA DE ESPERA HASTA EL 27 NOV"
+    "texto": "RETO PARA TU STAFF. ¿Quien llev ba el cta PAR AS"
    },
    {
     "fotograma": 694,
     "t": 23.133,
-    "texto": "RETO PARA TU STAFF acta ic LISTA DE ESPERA HASTA EL 27 NOV"
+    "texto": "RETO PARA TU STAFF. ¿Quién llev: aelacta"
    },
    {
     "fotograma": 696,
     "t": 23.2,
-    "texto": "RETO PARA TU STAFF el acta By LISTA DE ESPERA HASTA EL 27 NOV"
+    "texto": "RETO PARA TU STAFF. lev AS"
    },
    {
     "fotograma": 702,
     "t": 23.4,
-    "texto": "RETO PARA TU STAFF ¿Quién llevaba elacta By aG LISTA DE ESPERA HASTA EL 27 NOV"
+    "texto": "RETO PARA TU el Ws"
    },
    {
     "fotograma": 704,
     "t": 23.467,
-    "texto": "RETO PARA TU STAFF ¿Quién llevaba elacta By se LISTA DE ESPERA HASTA EL 27 NOV"
+    "texto": "ly RETO PARA,TU STAFF. elacta FA AS"
    },
    {
     "fotograma": 712,
     "t": 23.733,
-    "texto": "RETO PARA TU STAFF ¿Quién el acta en periodo?, LISTA DE ESPERA HASTA EL 27 NOV"
+    "texto": "RETO PARA TU STAFF ¿Quién elacta periodo aG"
    },
    {
     "fotograma": 720,
     "t": 24.0,
-    "texto": "RETO PARA TU STAFF ¿Quién llevaba elacta periodo? By aG LISTA DE ESPERA HASTA EL 27 NOV"
+    "texto": "RETO PARA TU STAFF ¿Quien llevaba el acta en periodo? ic By"
    },
    {
     "fotograma": 728,
     "t": 24.267,
-    "texto": "RETO PARA TU STAFF ¿Quién llevaba elacta en elquiñ periodo: ka ¡pr LISTA DE ESPERA HASTA EL 27 NOV"
+    "texto": "RETO PARA TU STAFF ¿Quién llevaba el acta en periodo? ic"
    },
    {
     "fotograma": 736,
     "t": 24.533,
-    "texto": "RETO PARA TU STAFF ¿Quién llevaba el en By ic LISTA DE ESPERA HASTA EL 27 NOV Meses gratis"
+    "texto": "RETO PARA TU STAFF ¿Quien llevaba elacta en ic By"
    },
    {
     "fotograma": 739,
     "t": 24.633,
-    "texto": "RETO PARA TU STAFF ¿Quién llevaba el acta en gs LISTA DE ESPERA HASTA EL 27 NOV"
+    "texto": "RETO PARA TU STAFF ¿Quién llevaba el acta en periodo:,, By"
    },
    {
     "fotograma": 744,
     "t": 24.8,
-    "texto": "RETO PARA TU STAFF ¿Quién llevaba el acta en hs periodo? LISTA DE ESPERA: HASTA EL 27 NOV meses gratis"
+    "texto": "RETO PARA TU STAFF ¿Quién llevaba el acta periodo. en By"
    },
    {
     "fotograma": 752,
     "t": 25.067,
-    "texto": "RETO PARA TU STAFF ¿Quién llevaba elacta en periodo? LISTA DE HASTA EL 27 NOV meses gratis"
+    "texto": "RETO PARA TU STAFF ¿Quien llevaba elacta en aqu periodo? aG"
    },
    {
     "fotograma": 755,
     "t": 25.167,
-    "texto": "RETO PARA TU STAFF ¿Quién llevaba elacta periodo? LISTA DE ESPERA HASTA EL 27 NOV meses gratis"
+    "texto": "RETO PARA TU STAFF ¿Quién llevaba el acta periodo en By"
    }
   ],
   "bloques": [
@@ -1138,78 +1158,90 @@
     "palabras": 6
    },
    {
-    "desde": 14.467,
-    "hasta": 14.467,
-    "texto": "EL SÁBADO MI EL DO. No",
-    "palabras": 6
-   },
-   {
-    "desde": 15.2,
+    "desde": 14.933,
     "hasta": 15.2,
-    "texto": "COMENTA Tu categoría días ue",
+    "texto": "COMENTA Tu deporte, categoría días",
     "palabras": 5
    },
    {
-    "desde": 16.267,
-    "hasta": 16.367,
-    "texto": "COMENTA Tu alas ME CE",
-    "palabras": 5
-   },
-   {
-    "desde": 16.533,
+    "desde": 15.733,
     "hasta": 16.533,
-    "texto": "COMENTA Tu categoría dias vara la semana. ME,",
-    "palabras": 8
+    "texto": "COMENTA Tu depo categoría días to: Me PT) arn la semana.",
+    "palabras": 11
    },
    {
     "desde": 16.8,
+    "hasta": 17.067,
+    "texto": "Tu deporte, categoría días ye, breparo la semana. MED, th",
+    "palabras": 10
+   },
+   {
+    "desde": 17.333,
     "hasta": 17.333,
-    "texto": "¿COMENTA Tu deporte, categoría días reparo la semana. va",
-    "palabras": 9
+    "texto": "COMENTA Tu deporte, categoría días yt breparo la semana. flo",
+    "palabras": 10
    },
    {
     "desde": 17.5,
     "hasta": 17.5,
-    "texto": "Tu deporte, categoría días preparo la semana. app de ProTeam Me",
-    "palabras": 11
+    "texto": "Tu deporte, categoria dias ye, DYe] la semana. app de ProTeam tle",
+    "palabras": 12
    },
    {
     "desde": 17.6,
+    "hasta": 18.133,
+    "texto": "COMENTA Tu deporte, categoría dias la semana. El la app de ProTeam",
+    "palabras": 12
+   },
+   {
+    "desde": 18.333,
+    "hasta": 20.367,
+    "texto": "LISTA DE ESPERA 46 og 04 41 DÍAS HORAS MIN SEG entrenador@miclub.es",
+    "palabras": 12
+   },
+   {
+    "desde": 20.533,
     "hasta": 21.6,
-    "texto": "COMENTA Tu deporte, categoria dias te preparo la semana. en la app de ProTeam Nas LISTA DE ESPERA HASTA EL NOV meses gratis.",
-    "palabras": 23
-   },
-   {
-    "desde": 21.867,
-    "hasta": 21.867,
-    "texto": "RETO PARA TU ly of DE",
+    "texto": "meses gratis. HASTA EL 27 NOV",
     "palabras": 6
-   },
-   {
-    "desde": 22.133,
-    "hasta": 22.133,
-    "texto": "RETO PARA TU Sj ISTA DE HA ese ÉS",
-    "palabras": 9
    },
    {
     "desde": 22.4,
     "hasta": 22.4,
-    "texto": "RETO PARA UN de 1h eS Were AEl AEL ISTA DE HAS 3Meses gra",
-    "palabras": 14
+    "texto": "RETO PARA TU PAS af",
+    "palabras": 5
    },
    {
-    "desde": 22.667,
+    "desde": 22.933,
+    "hasta": 23.2,
+    "texto": "RETO PARA TU STAFF. ¿Quien llev ba el cta PAR AS",
+    "palabras": 11
+   },
+   {
+    "desde": 23.4,
+    "hasta": 23.4,
+    "texto": "RETO PARA TU el Ws",
+    "palabras": 5
+   },
+   {
+    "desde": 23.467,
+    "hasta": 23.467,
+    "texto": "ly RETO PARA,TU STAFF. elacta FA AS",
+    "palabras": 7
+   },
+   {
+    "desde": 23.733,
     "hasta": 25.167,
-    "texto": "RETO PARA TU STAFF ¿Quién llevaba el acta en hs periodo? LISTA DE ESPERA: HASTA EL 27 NOV meses gratis",
-    "palabras": 20
+    "texto": "RETO PARA TU STAFF ¿Quien llevaba el acta en periodo? ic By",
+    "palabras": 12
    }
   ]
  },
  "audio": {
   "tiene_audio": true,
   "wav": "intel/videos/u12/audio_16k.wav",
-  "volumen_integrado_lufs": "-14.53",
-  "pico_real_db": "0.10",
+  "volumen_integrado_lufs": "-14.52",
+  "pico_real_db": "0.12",
   "rango_lra": "1.60",
   "silencios": [],
   "subidas_bruscas_s": [
@@ -1238,7 +1270,7 @@
    -44.0,
    -20.8,
    -11.4,
-   -11.1,
+   -11.2,
    -16.7,
    -22.5,
    -23.5,
@@ -1295,11 +1327,11 @@
    -14.3,
    -12.8,
    -18.2,
-   -13.3,
+   -13.4,
    -12.9,
    -14.4,
    -18.6,
-   -22.6,
+   -22.7,
    -26.5,
    -24.2,
    -35.4,
@@ -1349,7 +1381,7 @@
    -9.8,
    -19.0,
    -11.5,
-   -11.7,
+   -11.9,
    -10.7,
    -14.2,
    -9.4,
@@ -1379,7 +1411,7 @@
    -14.4,
    -14.0,
    -14.1,
-   -15.0,
+   -14.9,
    -16.0,
    -14.3,
    -16.6,
@@ -1398,7 +1430,7 @@
    -17.4,
    -12.0,
    -12.4,
-   -12.7,
+   -12.6,
    -14.1,
    -13.5,
    -15.8,
@@ -1407,7 +1439,7 @@
    -15.9,
    -16.0,
    -25.9,
-   -24.9,
+   -25.1,
    -11.2,
    -12.0,
    -11.3,
@@ -1421,20 +1453,20 @@
    -11.6,
    -16.4,
    -14.9,
-   -9.8,
-   -14.2,
+   -9.9,
+   -14.3,
    -13.9,
    -11.3,
    -12.0,
    -15.5,
-   -20.3,
-   -23.0,
-   -11.8,
-   -13.7,
+   -19.4,
+   -18.0,
+   -11.6,
+   -13.8,
    -10.5,
    -10.9,
    -14.9,
-   -12.6,
+   -12.5,
    -12.9,
    -16.4,
    -21.6,
@@ -1448,7 +1480,7 @@
    -11.1,
    -11.6,
    -13.7,
-   -15.0,
+   -15.1,
    -16.6,
    -19.8,
    -22.3,
@@ -1457,8 +1489,8 @@
    -15.3,
    -13.4,
    -10.5,
-   -10.1,
-   -12.6,
+   -10.0,
+   -12.7,
    -11.6,
    -16.2,
    -10.5,
@@ -1480,11 +1512,8 @@
   "nota": "Esto son medidas. Entonación, claridad de la locución, timbre o si hay música NO se pueden afirmar sin escuchar o transcribir."
  },
  "vistas": [
-  "detalle_001.jpg",
-  "detalle_002.jpg",
-  "detalle_003.jpg",
   "detalle_004.jpg",
   "detalle_005.jpg"
  ],
- "orden": "python3 tools/video_intel.py analyze reels/u12-quinto-periodo.mp4 --id u12 --tema repartir los periodos de minibasket antes del partido --modo detalle"
+ "orden": "python3 tools/video_intel.py analyze reels/u12-quinto-periodo.mp4 --id u12 --tema minibasket: quinto periodo · v2 con contador --modo detalle"
 }

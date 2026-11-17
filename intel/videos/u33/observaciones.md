@@ -12,3 +12,12 @@ Cobertura: láminas de detalle 1–4 (4 fps) y generales; audio por segundo; pis
 - Audio: −14,9 LUFS, sonido hasta el final, cola de 0,47 s. Sin pausas antes del CTA.
 
 **Andrés · auditoría prepublicación: 80/100 · PUBLICABLE.** Bloqueantes: ninguno. Riesgo de salto: medio-bajo.
+
+## v3 · cierre con el contador de la lista de espera (Marta y Andrés, 17/11 18:50)
+Cambia solo el cierre (13,5–17,9 s); duración igual (17,9 s). Láminas detalle 3 y 4 miradas.
+- 00:11,53–00:13,50 — corro de España con el reto y «Comenta tu deporte, categoría y días» (entra a 12,4 s); el rótulo pequeño de la lista de espera se quita. ✔
+- 00:13,53–00:15,93 — web de la lista de espera: contador desde 09 d 12 h 29 min (lo que falta de verdad el mié 18/11 a las 11:30), correo que se escribe, toque, «Estás dentro», el contador corre a 00 mientras Mateo dice «Lista de espera hasta el veintisiete de noviembre». ✔
+- 00:15,97–00:17,9 — vuelve Dika Mem (bucle con el fotograma 0): «HASTA EL 27 NOV» y «3 meses gratis.» en serif azul con la voz. ✔
+- Voz medida en la copia sin música: de 0,08 a 17,40 s, −20,7 dB de media, ninguna pausa de más de 0,1 s bajo −45 dB. Con música: sonido hasta el último segundo, −15,0 LUFS.
+
+**Andrés · auditoría prepublicación v3: 81/100 · PUBLICABLE.** Bloqueantes: ninguno. Riesgo de salto: bajo (arranque igual).

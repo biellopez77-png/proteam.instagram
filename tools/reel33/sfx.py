@@ -33,6 +33,9 @@ for i in range(4): put(D + .5 + .38 * i, tick(.03, 1500 + 150 * i), .15)
 put(D + .5 + .38 * 4, thump(.3), .14)
 put(T['s3'] - .15, whoosh(.45, 300, 2400), .12); put(T['s3'] + .28, tick(.03, 1500), .16)
 put(T['m'] - .05, swish(.3), .08); put(T['m'] + .05, tick(.03, 1500), .16)
-put(T['s4'] - .1, whoosh(.45, 2400, 400), .11); put(T['camp'], thump(.4), .18); put(T['gra'], shimmer(.5), .04)
+put(T['s4'] - .1, whoosh(.45, 2400, 400), .11)
+# cierre v3: entra la web de la lista, clic en el campo, toque en el botón, «Estás dentro» y golpe en «tres meses gratis»
+put(T['camp'] - .05, whoosh(.45, 300, 2200), .12); put(T['camp'] + .19, tick(.03, 1500), .14); put(T['camp'] + 1.1, tick(.03, 1300), .2); put(T['camp'] + 1.32, shimmer(.6), .05)
+put(T['gra'] - .1, thump(.45), .24)
 out = out[:int(SR * DUR)]; out = out / max(1e-9, np.abs(out).max()) * .85
 wavfile.write(sys.argv[1], SR, (out * 32767).astype(np.int16)); print('ok')

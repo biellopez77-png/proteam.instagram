@@ -1,11 +1,12 @@
 """Música del u12: pista nueva (ElevenLabs music v2.5, re menor, 143,5 BPM, pad de campanas con textura de vinilo, rimshot seco).
 Tramo contenido de la toma (0–13,75 s) bajo la escena, la norma y la hoja; corte seco ~0,38 s antes de «acta» (en «no el acta»);
 el regreso del beat de la toma (30,90 s) cae exactamente en «acta» y sigue hasta el final. Fundido de salida de 1,2 s."""
-import json, numpy as np, librosa
+import json, subprocess, numpy as np
 from scipy.io import wavfile
 SR = 44100
 T = json.loads(open('times.js').read().split('=', 1)[1].split(';')[0]); END = T['END']
-a, _ = librosa.load('m1.mp3', sr=SR, mono=False); a = a.T.astype(np.float32)
+subprocess.run(['ffmpeg', '-loglevel', 'error', '-y', '-i', 'm1.mp3', '-ar', str(SR), '-ac', '2', '_m1.wav'], check=True)
+a = wavfile.read('_m1.wav')[1].astype(np.float32) / 32768
 HIT = 30.90; IMP = T['acta2']; cut = IMP - .38
 A = a[:int(cut * SR)].copy(); f = int(.18 * SR); A[-f:] *= np.linspace(1, 0, f)[:, None]
 B = a[int((HIT - .01) * SR):]
