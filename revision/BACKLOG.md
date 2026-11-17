@@ -2,7 +2,7 @@
 
 Estados: pendiente · en curso · hecho · bloqueado · a verificar · en PR
 
-## Bloqueo (17/11 16:17; sigue igual a las 18:17)
+## Bloqueo (17/11 16:17; sigue igual a las 18:17 y en el turno de las 16:48)
 Las sesiones programadas del equipo técnico no tienen `add_repo` ni acceso a biellopez77-png/proteamapp (GitHub responde «not configured for this session»; `git clone` pide credenciales). Mientras dure, los arreglos se dejan como parches en `revision/pendiente-push/` (aplicar con `git apply <parche>` en proteamapp, `bun run build`, commit en `main`, push y `deploy_project`). Para quitar el bloqueo: añadir proteamapp a los repositorios de la tarea programada.
 
 Última zona auditada: registro e inicio del entrenador (17/11 18:17; leído `src/components/auth-overlay.tsx`; falta la pantalla de equipos `/teams` y el primer inicio). Siguiente: planificación (macro/meso/micro y plantillas).
@@ -11,6 +11,7 @@ Las sesiones programadas del equipo técnico no tienen `add_repo` ni acceso a bi
 | ID | Tarea | Agente | Estado | Notas |
 |---|---|---|---|---|
 | T-04 | Revisión de errores: corrección y textos (encargo de Biel 17/11) | R4 | pendiente | Siguiente turno; se suma a la lista de abajo |
+| T-08 | PRIORIDAD 1 (Biel): apartado «Análisis» en el admin (cuentas, lista de espera, facturación) | R4 | listo para aplicar | 17/11 16:48: código completo en `revision/pendiente-push/T-admin-analisis/` (`aplicar.py` + README con qué significa cada número). Biel lo aprobó sin PR: en cuanto haya acceso, aplicar, `bun run build`, push a `main` y `deploy_project`. Falta el build completo y las capturas |
 
 ## Tareas cerradas
 | ID | Tarea | Agente | Estado | Notas |
