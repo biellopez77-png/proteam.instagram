@@ -44,12 +44,13 @@ def rewind(d=1.1):  # cinta hacia atrás: ruido filtrado con barrido descendente
     for j in range(k):
         f = 4000 * (300 / 4000) ** (j / (k - 1)); w = np.exp(-((t / d - j / (k - 1)) ** 2) / (2 * .07 ** 2)); y += bp(x, f * .6, min(f * 1.5, SR / 2 - 100)) * w
     y *= (.6 + .4 * np.sin(2 * np.pi * 28 * t)); return y * env(n, 1.2, .5) / (np.abs(y).max() + 1e-9)
-put(0, thump(.45), .26); put(T['b1'], tick(.03, 1800), .12)
+put(0, thump(.45), .26); put(T['p2'], tick(.03, 1800), .1); put(T['b1'], thump(.4), .2)
 put(T['s2'] - .1, whoosh(.45, 2500, 400), .12); put(T['s2'] + .1, paper(.3), .18)
 put(T['d3'], whoosh(.7, 300, 2600), .09); put(T['d3'] + .7, tick(.03, 1500), .16)
 put(T['s3'] - .1, whoosh(.45, 300, 2200), .13); put(T['h1'], tick(.03, 1300), .18); put(T['jug'], swish(.28), .08)
 put(T['s4'] - .1, whoosh(.45, 2500, 400), .12); put(T['r1'], tick(.03, 1800), .12); put(T['r2'], tick(.03, 1800), .12)
-put(T['camp'], thump(.45), .24); put(T['camp'] + .3, shimmer(.6), .04)
+put(T['camp'], whoosh(.45, 300, 2200), .12); put(T['camp'] + .19, tick(.03, 1500), .14); put(T['camp'] + 1.1, tick(.03, 1300), .2); put(T['camp'] + 1.32, shimmer(.6), .05)
+put(T['gra'] - .1, thump(.45), .24)
 out = out[:int(SR * DUR)]
 out = out / max(1e-9, np.abs(out).max()) * .85
 wavfile.write(sys.argv[1], SR, (out * 32767).astype(np.int16)); print('ok')

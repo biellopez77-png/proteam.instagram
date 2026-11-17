@@ -1,44 +1,44 @@
 {
  "origen": "tools/reel28/voz.tsv",
  "tipo": "locución generada con tiempos por palabra (exacta, no reconocida por oído)",
- "palabras": 10,
+ "palabras": 11,
  "primera_palabra_s": 0.08,
- "ultima_palabra_s": 17.532,
- "ritmo_palabras_por_s": 0.57,
+ "ultima_palabra_s": 17.434,
+ "ritmo_palabras_por_s": 0.63,
  "frases": [
   {
    "desde": 0.08,
-   "hasta": 2.678,
-   "texto": "Lesión número uno en baloncesto: el tobillo.",
-   "palabras_por_s": 0.77
+   "hasta": 2.011,
+   "texto": "Cae del rebote, pisa un pie...",
+   "palabras_por_s": 1.04
   },
   {
-   "desde": 2.846,
-   "hasta": 3.629,
-   "texto": "¿Está en tu semana?",
-   "palabras_por_s": 1.28
+   "desde": 2.158,
+   "hasta": 3.415,
+   "texto": "y tu pívot, fuera.",
+   "palabras_por_s": 1.59
   },
   {
-   "desde": 3.816,
-   "hasta": 9.038,
-   "texto": "Dieciséis temporadas universitarias en Estados Unidos: el esguince de tobillo, el primero de la lista.",
-   "palabras_por_s": 0.57
+   "desde": 3.662,
+   "hasta": 9.026,
+   "texto": "Dieciséis temporadas universitarias en Estados Unidos: el esguince de tobillo, la lesión número uno.",
+   "palabras_por_s": 0.56
   },
   {
-   "desde": 9.206,
-   "hasta": 11.632,
+   "desde": 9.193,
+   "hasta": 11.588,
    "texto": "En la app de Pro Team tienes tu rutina de tobillo.",
-   "palabras_por_s": 0.41
+   "palabras_por_s": 0.42
   },
   {
-   "desde": 11.779,
-   "hasta": 13.382,
+   "desde": 11.735,
+   "hasta": 13.273,
    "texto": "¿Cuándo lo entrenasteis por última vez?",
-   "palabras_por_s": 0.62
+   "palabras_por_s": 0.65
   },
   {
-   "desde": 13.552,
-   "hasta": 17.532,
+   "desde": 13.443,
+   "hasta": 17.434,
    "texto": "Lista de espera hasta el veintisiete de noviembre: tres meses gratis.",
    "palabras_por_s": 0.5
   }
@@ -47,52 +47,57 @@
  "por_palabra": [
   {
    "desde": 0.08,
-   "hasta": 1.926,
-   "palabra": "Lesión número uno en baloncesto:"
+   "hasta": 1.184,
+   "palabra": "Cae del rebote,"
   },
   {
-   "desde": 2.014,
-   "hasta": 2.678,
-   "palabra": "el tobillo."
+   "desde": 1.252,
+   "hasta": 2.011,
+   "palabra": "pisa un pie..."
   },
   {
-   "desde": 2.846,
-   "hasta": 3.629,
-   "palabra": "¿Está en tu semana?"
+   "desde": 2.158,
+   "hasta": 2.826,
+   "palabra": "y tu pívot,"
   },
   {
-   "desde": 3.816,
-   "hasta": 6.61,
+   "desde": 2.934,
+   "hasta": 3.415,
+   "palabra": "fuera."
+  },
+  {
+   "desde": 3.662,
+   "hasta": 6.413,
    "palabra": "Dieciséis temporadas universitarias en Estados Unidos:"
   },
   {
-   "desde": 6.697,
-   "hasta": 7.769,
+   "desde": 6.5,
+   "hasta": 7.598,
    "palabra": "el esguince de tobillo,"
   },
   {
-   "desde": 7.836,
-   "hasta": 9.038,
-   "palabra": "el primero de la lista."
+   "desde": 7.676,
+   "hasta": 9.026,
+   "palabra": "la lesión número uno."
   },
   {
-   "desde": 9.206,
-   "hasta": 11.632,
+   "desde": 9.193,
+   "hasta": 11.588,
    "palabra": "En la app de Pro Team tienes tu rutina de tobillo."
   },
   {
-   "desde": 11.779,
-   "hasta": 13.382,
+   "desde": 11.735,
+   "hasta": 13.273,
    "palabra": "¿Cuándo lo entrenasteis por última vez?"
   },
   {
-   "desde": 13.552,
-   "hasta": 16.122,
+   "desde": 13.443,
+   "hasta": 15.983,
    "palabra": "Lista de espera hasta el veintisiete de noviembre:"
   },
   {
-   "desde": 16.202,
-   "hasta": 17.532,
+   "desde": 16.063,
+   "hasta": 17.434,
    "palabra": "tres meses gratis."
   }
  ]

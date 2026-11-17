@@ -11,3 +11,12 @@ Cobertura: láminas de detalle 1–4 (4 fps) y generales; audio por segundo; pis
 - Audio: voz −15 LUFS, música nueva del u28 (la misma pista que no ha salido en otro Reel, realineada) al fondo, efectos suaves; −14,5 LUFS en total, sonido hasta el final; cola de 0,47 s tras la última palabra. Sin pausas antes del CTA.
 
 **Andrés · auditoría prepublicación: 79/100 · PUBLICABLE.** Bloqueantes: ninguno (dato con fuente, fecha y oferta de MARCA.md, captura real, fotograma 0 legible, voz presente de principio a fin). Riesgo de salto: medio.
+
+## v3 · 17/11 16:00 (corrección de Biel: hook y contador final) — visto
+- 0,0–3,5 s: Tavares a sangre; «CAE DEL REBOTE. / PISA UN PIE.» desde el fotograma 0; 2,2 s «Tu pívot,»; 2,9 s «fuera.» con golpe grave y oscurecido; 3,0 s «LESIÓN Nº 1 EN BALONCESTO». De 0 a 2,1 s solo cambia el zoom.
+- 3,6–9,1 s: ficha del dato sobre papel (sin cambios; el tercer renglón dice «la lesión nº 1 en baloncesto»).
+- 9,1–11,6 s: captura real de Rutinas con el recuadro en «Prevención de isquios y tobillo».
+- 11,6–13,4 s: reto al staff sobre la selección española.
+- 13,4–16,0 s: web de la lista de espera con contador (10 d 06 h → corre), correo, toque, «Estás dentro».
+- 16,0–17,9 s: «3 meses gratis. · HASTA EL 27 NOV».
+- Cortes: 3,57 · 9,10 · 11,6 · 13,4 · 15,97 (todos previstos). Imagen quieta máx. 0,1 s. Audio −14,6 LUFS.
