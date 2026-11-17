@@ -1,0 +1,142 @@
+{
+ "origen": "tools/reel12/voz.tsv",
+ "tipo": "locución generada con tiempos por palabra (exacta, no reconocida por oído)",
+ "palabras": 15,
+ "primera_palabra_s": 0.08,
+ "ultima_palabra_s": 24.705,
+ "ritmo_palabras_por_s": 0.61,
+ "frases": [
+  {
+   "desde": 0.08,
+   "hasta": 1.144,
+   "texto": "Quinto periodo.",
+   "palabras_por_s": 0.94
+  },
+  {
+   "desde": 1.23,
+   "hasta": 3.225,
+   "texto": "Y tú, contando cruces en el acta.",
+   "palabras_por_s": 0.5
+  },
+  {
+   "desde": 3.411,
+   "hasta": 7.896,
+   "texto": "En Extremadura, cada jugador de minibasket juega dos periodos completos de los cinco primeros.",
+   "palabras_por_s": 0.45
+  },
+  {
+   "desde": 8.082,
+   "hasta": 10.026,
+   "texto": "Guárdatelo: el viernes, seis casillas.",
+   "palabras_por_s": 1.03
+  },
+  {
+   "desde": 10.153,
+   "hasta": 11.885,
+   "texto": "Primero colocas a los que menos juegan.",
+   "palabras_por_s": 0.58
+  },
+  {
+   "desde": 12.091,
+   "hasta": 14.452,
+   "texto": "Y el sábado miras el partido, no el acta.",
+   "palabras_por_s": 0.85
+  },
+  {
+   "desde": 14.598,
+   "hasta": 18.226,
+   "texto": "Comenta deporte, categoría y días: te preparo la semana en la app de ProTeam.",
+   "palabras_por_s": 0.55
+  },
+  {
+   "desde": 18.352,
+   "hasta": 21.573,
+   "texto": "Lista de espera hasta el veintisiete de noviembre: tres meses gratis.",
+   "palabras_por_s": 0.62
+  },
+  {
+   "desde": 21.74,
+   "hasta": 24.705,
+   "texto": "Pregúntale a tu segundo: ¿quién llevaba el acta en el quinto periodo?",
+   "palabras_por_s": 0.67
+  }
+ ],
+ "pausas": [],
+ "por_palabra": [
+  {
+   "desde": 0.08,
+   "hasta": 1.144,
+   "palabra": "Quinto periodo."
+  },
+  {
+   "desde": 1.23,
+   "hasta": 3.225,
+   "palabra": "Y tú, contando cruces en el acta."
+  },
+  {
+   "desde": 3.411,
+   "hasta": 3.991,
+   "palabra": "En Extremadura,"
+  },
+  {
+   "desde": 4.068,
+   "hasta": 7.896,
+   "palabra": "cada jugador de minibasket juega dos periodos completos de los cinco primeros."
+  },
+  {
+   "desde": 8.082,
+   "hasta": 8.603,
+   "palabra": "Guárdatelo:"
+  },
+  {
+   "desde": 8.689,
+   "hasta": 10.026,
+   "palabra": "el viernes, seis casillas."
+  },
+  {
+   "desde": 10.153,
+   "hasta": 11.885,
+   "palabra": "Primero colocas a los que menos juegan."
+  },
+  {
+   "desde": 12.091,
+   "hasta": 13.51,
+   "palabra": "Y el sábado miras el partido,"
+  },
+  {
+   "desde": 13.836,
+   "hasta": 14.452,
+   "palabra": "no el acta."
+  },
+  {
+   "desde": 14.598,
+   "hasta": 16.475,
+   "palabra": "Comenta deporte, categoría y días:"
+  },
+  {
+   "desde": 16.561,
+   "hasta": 18.226,
+   "palabra": "te preparo la semana en la app de ProTeam."
+  },
+  {
+   "desde": 18.352,
+   "hasta": 20.416,
+   "palabra": "Lista de espera hasta el veintisiete de noviembre:"
+  },
+  {
+   "desde": 20.482,
+   "hasta": 21.573,
+   "palabra": "tres meses gratis."
+  },
+  {
+   "desde": 21.74,
+   "hasta": 22.768,
+   "palabra": "Pregúntale a tu segundo:"
+  },
+  {
+   "desde": 22.855,
+   "hasta": 24.705,
+   "palabra": "¿quién llevaba el acta en el quinto periodo?"
+  }
+ ]
+}

@@ -1,6 +1,6 @@
 # u12 · Documento de producción (Marta, 02) · «Quinto periodo. Y tú, contando cruces en el acta.» (baloncesto · minibasket)
 
-**Estado (17/11, turno de Reels de las 6:37): EN PAUSA — falta la música.** Voz grabada y montaje hecho (vídeo mudo en `tools/reel12/mudo.mp4`), pero sin pista nueva no se mezcla ni se programa.
+**Estado (17/11, turno de Reels de las 15:37): TERMINADO — música nueva, mezcla y auditoría (82). Programado mié 18/11 13:30.** Antes (6:37): EN PAUSA — falta la música. Voz grabada y montaje hecho (vídeo mudo en `tools/reel12/mudo.mp4`), pero sin pista nueva no se mezcla ni se programa.
 - ElevenLabs se quedó sin créditos en este turno (29.945 de 30.011 caracteres del mes; quedan 66; se renuevan el 14/12). La voz salió (una toma; la segunda y las dos de música fallaron por saldo).
 - Probada la música por Higgsfield (mismo modelo, ElevenLabs Music v2.5, 4,36 créditos de Higgsfield): se generó, pero su servidor de descarga (cloudfront de Higgsfield) no está permitido en los turnos y no se rodea. Pista en Higgsfield, sin traer.
 - Hueco previsto: mié 18/11 13:30 (detrás de u33, balonmano de datos). Queda **vacío** y anotado.
@@ -33,3 +33,8 @@ Mateo – News & Digital Stories (gpMzl7dbkfC9dIxAqQZT, eleven_v4), única toma;
 
 ## Para terminar (siguiente turno con saldo)
 Música nueva (estilo de referencia, golpe en «acta» de «no el acta», t = 14,13 s), `sfx.py` y `mezcla.sh` como en `tools/reel31/`, análisis con `video_intel.py`, auditoría final de Andrés. La voz dice «hasta el veintisiete»: solo vale hasta el 27/11.
+
+## Cierre (turno de Reels 17/11 15:37)
+- Música nueva: ElevenLabs music v2.5, re menor, 143,5 BPM, pad de campanas con textura de vinilo y rimshot seco (una toma, 900 créditos). Tramo contenido 0–13,75 s; corte seco 0,38 s antes de «acta»; el regreso del beat de la toma (30,90 s) cae en «acta» (14,13 s). `musica.py`, `sfx.py`, `mezcla.sh`.
+- Salidas: `reels/u12-quinto-periodo.mp4` (cola), `reels/final/u12-con-musica.mp4`, `reels/final/u12-sin-musica.mp4`, `covers/u12-quinto-periodo.jpg`.
+- Control: audio cada segundo hasta el final ✔; cortes solo en 1,2 / 7,97 / 14,5 s (previstos) ✔; sin fotogramas sueltos ✔; tramo más quieto 2,1 s en el CTA (límite). Análisis en `intel/videos/u12/`. Auditoría: `agencia/criticas/2026-11-17-u12-final.md` (82).

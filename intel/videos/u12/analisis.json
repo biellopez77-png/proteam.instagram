@@ -1,0 +1,1490 @@
+{
+ "meta": {
+  "contenedor": "mov,mp4,m4a,3gp,3g2,mj2",
+  "duracion_s": 25.2,
+  "tamano_bytes": 4706018,
+  "bitrate_kbps": 1494,
+  "ancho": 1080,
+  "alto": 1920,
+  "relacion": "9:16",
+  "fps": 30.0,
+  "fotogramas_declarados": 756,
+  "codec_video": "h264",
+  "pix_fmt": "yuv420p",
+  "pistas_audio": [
+   {
+    "codec": "aac",
+    "canales": 1,
+    "hz": 48000,
+    "bitrate_kbps": 215
+   }
+  ],
+  "etiquetas": {
+   "major_brand": "isom",
+   "minor_version": "512",
+   "compatible_brands": "isomiso2avc1mp41",
+   "encoder": "Lavf60.16.100"
+  },
+  "id": "u12",
+  "fotogramas_leidos": 756,
+  "sha256": "9561d63cd423282db3c0dc2dd437c87f6ba092ddcef971103879e3aafbd7ed76",
+  "archivo": "reels/u12-quinto-periodo.mp4",
+  "fuente": "",
+  "marca": "proteam",
+  "tipo": "propio",
+  "formato": "reel",
+  "tema": "repartir los periodos de minibasket antes del partido",
+  "analizado": "2026-11-17 14:44"
+ },
+ "montaje": {
+  "cortes_duros": 7,
+  "transiciones_o_movimientos_fuertes": 0,
+  "planos": 8,
+  "duracion_media_plano_s": 3.15,
+  "plano_mas_largo_s": 4.733,
+  "plano_mas_corto_s": 1.2,
+  "cortes_por_10s": 2.78,
+  "tramos_estaticos": [
+   {
+    "desde": 9.27,
+    "hasta": 12.33,
+    "duracion_s": 3.07
+   },
+   {
+    "desde": 14.77,
+    "hasta": 16.57,
+    "duracion_s": 1.8
+   },
+   {
+    "desde": 16.63,
+    "hasta": 18.27,
+    "duracion_s": 1.63
+   },
+   {
+    "desde": 18.3,
+    "hasta": 21.63,
+    "duracion_s": 3.33
+   }
+  ],
+  "nota": "Detección automática por histograma y diferencia de imagen sobre TODOS los fotogramas. Un motion graphic continuo cuenta como un solo plano; un cambio de fondo brusco dentro de una animación puede contarse como corte. Confirmar en las láminas."
+ },
+ "cortes": [
+  {
+   "fotograma": 36,
+   "t": 1.2,
+   "tipo": "corte",
+   "fuerza": 0.348
+  },
+  {
+   "fotograma": 97,
+   "t": 3.233,
+   "tipo": "corte",
+   "fuerza": 0.508
+  },
+  {
+   "fotograma": 239,
+   "t": 7.967,
+   "tipo": "corte",
+   "fuerza": 1.0
+  },
+  {
+   "fotograma": 374,
+   "t": 12.467,
+   "tipo": "corte",
+   "fuerza": 1.0
+  },
+  {
+   "fotograma": 435,
+   "t": 14.5,
+   "tipo": "corte",
+   "fuerza": 0.37
+  },
+  {
+   "fotograma": 548,
+   "t": 18.267,
+   "tipo": "corte",
+   "fuerza": 0.302
+  },
+  {
+   "fotograma": 649,
+   "t": 21.633,
+   "tipo": "corte",
+   "fuerza": 0.472
+  }
+ ],
+ "escenas": [
+  {
+   "escena": 1,
+   "desde_fotograma": 0,
+   "hasta_fotograma": 35,
+   "desde": 0.0,
+   "hasta": 1.2,
+   "duracion_s": 1.2,
+   "movimiento_medio": 0.002,
+   "luz_media": 0.161,
+   "saturacion_media": 0.34
+  },
+  {
+   "escena": 2,
+   "desde_fotograma": 36,
+   "hasta_fotograma": 96,
+   "desde": 1.2,
+   "hasta": 3.233,
+   "duracion_s": 2.033,
+   "movimiento_medio": 0.0108,
+   "luz_media": 0.269,
+   "saturacion_media": 0.303
+  },
+  {
+   "escena": 3,
+   "desde_fotograma": 97,
+   "hasta_fotograma": 238,
+   "desde": 3.233,
+   "hasta": 7.967,
+   "duracion_s": 4.733,
+   "movimiento_medio": 0.0035,
+   "luz_media": 0.101,
+   "saturacion_media": 0.328
+  },
+  {
+   "escena": 4,
+   "desde_fotograma": 239,
+   "hasta_fotograma": 373,
+   "desde": 7.967,
+   "hasta": 12.467,
+   "duracion_s": 4.5,
+   "movimiento_medio": 0.008,
+   "luz_media": 0.934,
+   "saturacion_media": 0.035
+  },
+  {
+   "escena": 5,
+   "desde_fotograma": 374,
+   "hasta_fotograma": 434,
+   "desde": 12.467,
+   "hasta": 14.5,
+   "duracion_s": 2.033,
+   "movimiento_medio": 0.0192,
+   "luz_media": 0.149,
+   "saturacion_media": 0.341
+  },
+  {
+   "escena": 6,
+   "desde_fotograma": 435,
+   "hasta_fotograma": 547,
+   "desde": 14.5,
+   "hasta": 18.267,
+   "duracion_s": 3.767,
+   "movimiento_medio": 0.0018,
+   "luz_media": 0.101,
+   "saturacion_media": 0.339
+  },
+  {
+   "escena": 7,
+   "desde_fotograma": 548,
+   "hasta_fotograma": 648,
+   "desde": 18.267,
+   "hasta": 21.633,
+   "duracion_s": 3.367,
+   "movimiento_medio": 0.0012,
+   "luz_media": 0.108,
+   "saturacion_media": 0.363
+  },
+  {
+   "escena": 8,
+   "desde_fotograma": 649,
+   "hasta_fotograma": 755,
+   "desde": 21.633,
+   "hasta": 25.2,
+   "duracion_s": 3.567,
+   "movimiento_medio": 0.0034,
+   "luz_media": 0.152,
+   "saturacion_media": 0.346
+  }
+ ],
+ "laminas": [
+  {
+   "lamina": "general_001.jpg",
+   "fotogramas": [
+    0,
+    5,
+    10,
+    15,
+    17,
+    20,
+    25,
+    35,
+    36,
+    66,
+    96,
+    97,
+    142,
+    167,
+    187,
+    232,
+    238,
+    239
+   ],
+   "desde": 0.0,
+   "hasta": 7.967,
+   "modo": "general"
+  },
+  {
+   "lamina": "general_002.jpg",
+   "fotogramas": [
+    284,
+    306,
+    329,
+    373,
+    374,
+    404,
+    434,
+    435,
+    480,
+    491,
+    525,
+    547,
+    548,
+    593,
+    598,
+    638,
+    648,
+    649
+   ],
+   "desde": 9.467,
+   "hasta": 21.633,
+   "modo": "general"
+  },
+  {
+   "lamina": "general_003.jpg",
+   "fotogramas": [
+    694,
+    702,
+    739,
+    755
+   ],
+   "desde": 23.133,
+   "hasta": 25.167,
+   "modo": "general"
+  },
+  {
+   "lamina": "detalle_001.jpg",
+   "fotogramas": [
+    0,
+    8,
+    16,
+    24,
+    32,
+    35,
+    36,
+    40,
+    48,
+    56,
+    64,
+    72,
+    80,
+    88,
+    96,
+    97,
+    104,
+    112,
+    120,
+    128,
+    136,
+    144,
+    152,
+    160
+   ],
+   "desde": 0.0,
+   "hasta": 5.333,
+   "modo": "detalle"
+  },
+  {
+   "lamina": "detalle_002.jpg",
+   "fotogramas": [
+    168,
+    176,
+    184,
+    192,
+    200,
+    208,
+    216,
+    224,
+    232,
+    238,
+    239,
+    240,
+    248,
+    256,
+    264,
+    272,
+    280,
+    288,
+    296,
+    304,
+    312,
+    320,
+    328,
+    336
+   ],
+   "desde": 5.6,
+   "hasta": 11.2,
+   "modo": "detalle"
+  },
+  {
+   "lamina": "detalle_003.jpg",
+   "fotogramas": [
+    344,
+    352,
+    360,
+    368,
+    373,
+    374,
+    376,
+    384,
+    392,
+    400,
+    408,
+    416,
+    424,
+    432,
+    434,
+    435,
+    440,
+    448,
+    456,
+    464,
+    472,
+    480,
+    488,
+    496
+   ],
+   "desde": 11.467,
+   "hasta": 16.533,
+   "modo": "detalle"
+  },
+  {
+   "lamina": "detalle_004.jpg",
+   "fotogramas": [
+    504,
+    512,
+    520,
+    528,
+    536,
+    544,
+    547,
+    548,
+    552,
+    560,
+    568,
+    576,
+    584,
+    592,
+    600,
+    608,
+    616,
+    624,
+    632,
+    640,
+    648,
+    649,
+    656,
+    664
+   ],
+   "desde": 16.8,
+   "hasta": 22.133,
+   "modo": "detalle"
+  },
+  {
+   "lamina": "detalle_005.jpg",
+   "fotogramas": [
+    672,
+    680,
+    688,
+    696,
+    704,
+    712,
+    720,
+    728,
+    736,
+    744,
+    752
+   ],
+   "desde": 22.4,
+   "hasta": 25.067,
+   "modo": "detalle"
+  }
+ ],
+ "texto_en_pantalla": {
+  "idioma": "spa+eng",
+  "nota": "OCR automático sobre los fotogramas muestreados: puede fallar con tipografía fina, texto animado o sobre foto. La exposición es aproximada (resolución = intervalo de muestreo). Verificar siempre en las láminas.",
+  "por_fotograma": [
+   {
+    "fotograma": 0,
+    "t": 0.0,
+    "texto": "SÁBADO MINIBASKET QUINTO PERIODO as"
+   },
+   {
+    "fotograma": 5,
+    "t": 0.167,
+    "texto": "SÁBADO MINIBASKET QUINTO PERIODO"
+   },
+   {
+    "fotograma": 8,
+    "t": 0.267,
+    "texto": "SÁBADO MINIBASKET QUINTO PERIODO lo"
+   },
+   {
+    "fotograma": 10,
+    "t": 0.333,
+    "texto": "SÁBADO MINIBASKET QUINTO PERIODO BG bs"
+   },
+   {
+    "fotograma": 15,
+    "t": 0.5,
+    "texto": "SÁBADO MINIBASKET QUINTO PERIODO. By ka"
+   },
+   {
+    "fotograma": 16,
+    "t": 0.533,
+    "texto": "SÁBADO MINIBASKET QUINTO PERIODO. By ka 20"
+   },
+   {
+    "fotograma": 17,
+    "t": 0.567,
+    "texto": "SÁBADO MINIBASKET QUINTO PERIODO. ka 20"
+   },
+   {
+    "fotograma": 20,
+    "t": 0.667,
+    "texto": "SÁBADO MINIBASKET QUINTO PERIODO. ka Mi Fed. de 2024-25"
+   },
+   {
+    "fotograma": 24,
+    "t": 0.8,
+    "texto": "SÁBADO MINIBASKET QUINTO PERIODO. ka Mi Fed. Extreméña de mormativa 2024-25"
+   },
+   {
+    "fotograma": 25,
+    "t": 0.833,
+    "texto": "SÁBADO MINIBASKET QUINTO PERIODO. ty Mi Fed. Extreméña de mormativa 2024-25"
+   },
+   {
+    "fotograma": 32,
+    "t": 1.067,
+    "texto": "SÁBADO MINIBASKET QUINTO PERIODO. BG Mi Fed. Extraméña de mormativa 2024-25"
+   },
+   {
+    "fotograma": 35,
+    "t": 1.167,
+    "texto": "SÁBADO MINIBASKET QUINTO PERIODO. ka Mi Fed. Extreméña de mormativa 2024-25"
+   },
+   {
+    "fotograma": 36,
+    "t": 1.2,
+    "texto": "SÁBADO MINIBASKET QUINTOPERIODO. Vt tran “SG Minibasket Fed. Extremeña de Baloncesto normativa 2024-25"
+   },
+   {
+    "fotograma": 40,
+    "t": 1.333,
+    "texto": "SÁBADO MINIBASKET QUINTO PERIODO. tu, contando Minibi Ge normativa 2024-25"
+   },
+   {
+    "fotograma": 48,
+    "t": 1.6,
+    "texto": "SÁBADO MINIBASKET QUINTO PERIODO. tu, contando Cruces. Minibasket Fed. Extremeña de normativa 2024-25"
+   },
+   {
+    "fotograma": 56,
+    "t": 1.867,
+    "texto": "SABADO MINIBASKET QUINTO PERIODO. COT! tando Cru UL pa #10"
+   },
+   {
+    "fotograma": 64,
+    "t": 2.133,
+    "texto": "SABADO MINIBASKET QUINTO PERIODO. TUC 60N tando pa Ji eS #10"
+   },
+   {
+    "fotograma": 66,
+    "t": 2.2,
+    "texto": "SABADO MINIBASKET QUINTO PERIODO. tu HC contando pa eS #1C"
+   },
+   {
+    "fotograma": 72,
+    "t": 2.4,
+    "texto": "SÁBADO MINIBASKET QUINTO PERIODO tu, contando Cruces pa Ji EH"
+   },
+   {
+    "fotograma": 80,
+    "t": 2.667,
+    "texto": "SABADO MINIBASKET QUINTO PERIODO. contando cri pa Ji eS #1C"
+   },
+   {
+    "fotograma": 88,
+    "t": 2.933,
+    "texto": "SABADO MINIBASKET QUINTO PERIODO. tt Ye contando pa Ji eS"
+   },
+   {
+    "fotograma": 96,
+    "t": 3.2,
+    "texto": "SABADO MINIBASKET QUINTO ARI Gi Ul"
+   },
+   {
+    "fotograma": 97,
+    "t": 3.233,
+    "texto": "SÁBADO MINIBASKET QUINTO PERIODO tu, contand"
+   },
+   {
+    "fotograma": 104,
+    "t": 3.467,
+    "texto": "EXTREMADURA MINIBASKET"
+   },
+   {
+    "fotograma": 112,
+    "t": 3.733,
+    "texto": "EXTREMADURA MINIBASKET Minibasket Fed. Extremeña de Baloncesto normativa 2024-25"
+   },
+   {
+    "fotograma": 120,
+    "t": 4.0,
+    "texto": "EXTREMADURA MINIBASKET LIBRE Minibasket Fed. Extremeña de Baloncesto normativa 2024-25"
+   },
+   {
+    "fotograma": 128,
+    "t": 4.267,
+    "texto": "EXTREMADURA MINIBASKET 5e LIBRE Minibasket Fed. Extremeña de Baloncesto normativa 2024-25"
+   },
+   {
+    "fotograma": 136,
+    "t": 4.533,
+    "texto": "EXTREMADURA MINIBASKET 5e LIBRE Minibasket Fed. Extremeña de Baloncesto normativa 2024-25"
+   },
+   {
+    "fotograma": 142,
+    "t": 4.733,
+    "texto": "EXTREMADURA MINIBASKET PERIODOS"
+   },
+   {
+    "fotograma": 144,
+    "t": 4.8,
+    "texto": "EXTREMADURA MINIBASKET PERIODOS"
+   },
+   {
+    "fotograma": 152,
+    "t": 5.067,
+    "texto": "EXTREMADURA MINIBASKET"
+   },
+   {
+    "fotograma": 160,
+    "t": 5.333,
+    "texto": "EXTREMADURA MINIBASKET PERIODOS"
+   },
+   {
+    "fotograma": 167,
+    "t": 5.567,
+    "texto": "EXTREMADURA MINIBASKET PERIODOS"
+   },
+   {
+    "fotograma": 168,
+    "t": 5.6,
+    "texto": "EXTREMADURA MINIBASKET PERIODOS"
+   },
+   {
+    "fotograma": 176,
+    "t": 5.867,
+    "texto": "EXTREMADURA MINIBASKET PERIODOS"
+   },
+   {
+    "fotograma": 184,
+    "t": 6.133,
+    "texto": "EXTREMADURA MINIBASKET"
+   },
+   {
+    "fotograma": 187,
+    "t": 6.233,
+    "texto": "EXTREMADURA MINIBASKET"
+   },
+   {
+    "fotograma": 192,
+    "t": 6.4,
+    "texto": "EXTREMADURA MINIBASKET"
+   },
+   {
+    "fotograma": 200,
+    "t": 6.667,
+    "texto": "EXTREMADURA MINIBASKET"
+   },
+   {
+    "fotograma": 208,
+    "t": 6.933,
+    "texto": "EXTREMADURA MINIBASKET"
+   },
+   {
+    "fotograma": 216,
+    "t": 7.2,
+    "texto": "EXTREMADURA MINIBASKET de los primeros."
+   },
+   {
+    "fotograma": 224,
+    "t": 7.467,
+    "texto": "EXTREMADURA MINIBASKET de los primeros. LIBRE SIN CAMBIOS DEL AL"
+   },
+   {
+    "fotograma": 232,
+    "t": 7.733,
+    "texto": "EXTREMADURA MINIBASKET de los primeros. LIBR, SIN CAMBIOS DEL AL"
+   },
+   {
+    "fotograma": 238,
+    "t": 7.933,
+    "texto": "EXTREMADURA MINIBASKET de los primeros. 3o be LIBRE SIN CAMBIOS DEL AL"
+   },
+   {
+    "fotograma": 239,
+    "t": 7.967,
+    "texto": "MU ba"
+   },
+   {
+    "fotograma": 240,
+    "t": 8.0,
+    "texto": ""
+   },
+   {
+    "fotograma": 248,
+    "t": 8.267,
+    "texto": "GUÁRDALO EL VIERNES"
+   },
+   {
+    "fotograma": 256,
+    "t": 8.533,
+    "texto": "GUÁRDALO EL VIERNES"
+   },
+   {
+    "fotograma": 264,
+    "t": 8.8,
+    "texto": "GUÁRDALO EL VIERNES 20"
+   },
+   {
+    "fotograma": 272,
+    "t": 9.067,
+    "texto": "GUÁRDALO EL VIERNES casillas."
+   },
+   {
+    "fotograma": 280,
+    "t": 9.333,
+    "texto": "GUÁRDALO EL VIERNES casillas. 5o"
+   },
+   {
+    "fotograma": 284,
+    "t": 9.467,
+    "texto": "GUÁRDALO EL VIERNES casillas. 5o"
+   },
+   {
+    "fotograma": 288,
+    "t": 9.6,
+    "texto": "GUÁRDALO EL VIERNES casillas. 5o"
+   },
+   {
+    "fotograma": 296,
+    "t": 9.867,
+    "texto": "GUÁRDALO EL VIERNES casillas. 5o"
+   },
+   {
+    "fotograma": 304,
+    "t": 10.133,
+    "texto": "GUÁRDALO EL VIERNES casillas. bo 5o Primero, los que menos juegan"
+   },
+   {
+    "fotograma": 306,
+    "t": 10.2,
+    "texto": "GUÁRDALO EL VIERNES casillas. bo 5o Primero, los que menos juegan"
+   },
+   {
+    "fotograma": 312,
+    "t": 10.4,
+    "texto": "GUÁRDALO EL VIERNES casillas. Primero, los que menos juegan"
+   },
+   {
+    "fotograma": 320,
+    "t": 10.667,
+    "texto": "GUÁRDALO EL VIERNES casillas. Primero, los que menos juegan"
+   },
+   {
+    "fotograma": 328,
+    "t": 10.933,
+    "texto": "GUÁRDALO EL VIERNES casillas. Primero, los que menos juegan Dos periodos cada uno, del al"
+   },
+   {
+    "fotograma": 329,
+    "t": 10.967,
+    "texto": "GUÁRDALO EL VIERNES casillas. Primero, los que menos juegan Dos periodos cada uno, del al"
+   },
+   {
+    "fotograma": 336,
+    "t": 11.2,
+    "texto": "GUARDALO EL VIERNES casillas. Primero, los que menos juegan Dos periodos cada uno, del al"
+   },
+   {
+    "fotograma": 344,
+    "t": 11.467,
+    "texto": "GUÁRDALO EL VIERNES casillas. GB Primero, los que menos juegan Dos periodos cada uno, del al El libre"
+   },
+   {
+    "fotograma": 352,
+    "t": 11.733,
+    "texto": "GUÁRDALO EL VIERNES casillas. #15] #10 #12 #11 #15] libre #10 Primero, los que menos juegan Dos periodos cada uno, del al El libre"
+   },
+   {
+    "fotograma": 360,
+    "t": 12.0,
+    "texto": "GUÁRDALO EL VIERNES casillas. #15] #11 #10 #12 #11 #15] libre #12 #10 Primero, los que menos juegan Dos periodos cada uno, del al El libre"
+   },
+   {
+    "fotograma": 368,
+    "t": 12.267,
+    "texto": "GUÁRDALO EL VIERNES casillas. #15] #11 #10 #12 #11 #15] libre #12 #10 Primero, los que menos juegan Dos periodos cada uno, del al El libre"
+   },
+   {
+    "fotograma": 373,
+    "t": 12.433,
+    "texto": "GUÁRDALO EL VIERNES casillas. on #12 ws m2 Primero, los que menos juegan Dos periodos cada uno, del al libre"
+   },
+   {
+    "fotograma": 374,
+    "t": 12.467,
+    "texto": "BG"
+   },
+   {
+    "fotograma": 376,
+    "t": 12.533,
+    "texto": "EL BG"
+   },
+   {
+    "fotograma": 384,
+    "t": 12.8,
+    "texto": "GT”"
+   },
+   {
+    "fotograma": 392,
+    "t": 13.067,
+    "texto": "MIRAS ELPARTIDO."
+   },
+   {
+    "fotograma": 400,
+    "t": 13.333,
+    "texto": "EL SÁBADO MIRAS ELPARTIDO"
+   },
+   {
+    "fotograma": 404,
+    "t": 13.467,
+    "texto": "EL SÁBADO MIRAS ELPARTIDO. An"
+   },
+   {
+    "fotograma": 408,
+    "t": 13.6,
+    "texto": "EL SÁBADO MIRASEL PARTIDO. An Ne"
+   },
+   {
+    "fotograma": 416,
+    "t": 13.867,
+    "texto": "EL SÁBADO Ml RAS EL PARTIDO."
+   },
+   {
+    "fotograma": 424,
+    "t": 14.133,
+    "texto": "RAS ELPARTÍ DO. No"
+   },
+   {
+    "fotograma": 432,
+    "t": 14.4,
+    "texto": "MIRAS ELPARTIDO, No ebacta:"
+   },
+   {
+    "fotograma": 434,
+    "t": 14.467,
+    "texto": "EL SÁBADO MI EL DO. No"
+   },
+   {
+    "fotograma": 435,
+    "t": 14.5,
+    "texto": ""
+   },
+   {
+    "fotograma": 440,
+    "t": 14.667,
+    "texto": "OMENTA catenoría dias"
+   },
+   {
+    "fotograma": 448,
+    "t": 14.933,
+    "texto": "COMENTA Tu depo ME"
+   },
+   {
+    "fotograma": 456,
+    "t": 15.2,
+    "texto": "COMENTA Tu categoría días ue"
+   },
+   {
+    "fotograma": 464,
+    "t": 15.467,
+    "texto": "COMENTA Tu dias rhe"
+   },
+   {
+    "fotograma": 472,
+    "t": 15.733,
+    "texto": "COMENTA Tu"
+   },
+   {
+    "fotograma": 480,
+    "t": 16.0,
+    "texto": "COMENTA alee"
+   },
+   {
+    "fotograma": 488,
+    "t": 16.267,
+    "texto": "COMENTA Tu alas ME"
+   },
+   {
+    "fotograma": 491,
+    "t": 16.367,
+    "texto": "COMENTA Tu alas ME CE"
+   },
+   {
+    "fotograma": 496,
+    "t": 16.533,
+    "texto": "COMENTA Tu categoría dias vara la semana. ME,"
+   },
+   {
+    "fotograma": 504,
+    "t": 16.8,
+    "texto": "¿COMENTA Tu deporte, categoría días reparo la semana. va"
+   },
+   {
+    "fotograma": 512,
+    "t": 17.067,
+    "texto": "COMENTA Tu deporte, categoría días la semana. MED, the"
+   },
+   {
+    "fotograma": 520,
+    "t": 17.333,
+    "texto": "¿COMENTA Tu deporte, categoría días la semana. ay"
+   },
+   {
+    "fotograma": 525,
+    "t": 17.5,
+    "texto": "Tu deporte, categoría días preparo la semana. app de ProTeam Me"
+   },
+   {
+    "fotograma": 528,
+    "t": 17.6,
+    "texto": "COMENTA Tu deporte, categoría dias la semana. enla app de ProTeam"
+   },
+   {
+    "fotograma": 536,
+    "t": 17.867,
+    "texto": "COMENTA Tu deporte, categoría dias la semana. la app de “egy"
+   },
+   {
+    "fotograma": 544,
+    "t": 18.133,
+    "texto": "COMENTA Tu deporte, categoría dias tepreparo la semana. enla app de ProTeam"
+   },
+   {
+    "fotograma": 547,
+    "t": 18.233,
+    "texto": "COMENTA Tu deporte, categoría dias tepreparo la semana. enla app de ProTeam “ey"
+   },
+   {
+    "fotograma": 548,
+    "t": 18.267,
+    "texto": "COMENTA Tu deporte, categoría días te preparo la semana, enla app de ProTeam hy"
+   },
+   {
+    "fotograma": 552,
+    "t": 18.4,
+    "texto": "COMENTA Tu deporte, categoría días te preparo la semana, enla app de ProTeam LISTA DE ESPERA HASTA EL 27 NOV"
+   },
+   {
+    "fotograma": 560,
+    "t": 18.667,
+    "texto": "COMENTA Tu deporte, categoría días te preparo la semana, eñla app de ProTeam LISTA DE ESPERA HASTA EL 27 NOV"
+   },
+   {
+    "fotograma": 568,
+    "t": 18.933,
+    "texto": "COMENTA Tu deporte, categoría días te preparo la semana, enla app de ProTeam LISTA DE ESPERA HASTA EL NOV"
+   },
+   {
+    "fotograma": 576,
+    "t": 19.2,
+    "texto": "COMENTA Tu deporte, categoría días te preparo la semana, enla app de ProTeam LISTA DE ESPERA HASTA EL 27 NOV"
+   },
+   {
+    "fotograma": 584,
+    "t": 19.467,
+    "texto": "COMENTA Tu deporte, categoría días te preparo la semana, enla app de ProTeam LISTA DE ESPERA HASTA EL 27 NOV"
+   },
+   {
+    "fotograma": 592,
+    "t": 19.733,
+    "texto": "COMENTA Tu deporte, categoría días te preparo la semana. eñ la app de ProTeam LISTA DE ESPERA HASTA EL 27 NOV"
+   },
+   {
+    "fotograma": 593,
+    "t": 19.767,
+    "texto": "COMENTA Tu deporte, categoría días te preparo la semana. eñ la app de ProTeam LISTA DE ESPERA HASTA EL 27 NOV"
+   },
+   {
+    "fotograma": 598,
+    "t": 19.933,
+    "texto": "COMENTA Tu deporte, categoria dias te preparo la semana. enla app ProTeam LISTA DE ESPERA HASTA EL 27 NOV"
+   },
+   {
+    "fotograma": 600,
+    "t": 20.0,
+    "texto": "COMENTA Tu deporte, categoria dias te preparo la semana. enla app de ProTeam LISTA DE ESPERA HASTA EL NOV"
+   },
+   {
+    "fotograma": 608,
+    "t": 20.267,
+    "texto": "COMENTA Tu deporte, categoría días te preparo la semana, enla app de ProTeam ss LISTA DE ESPERA HASTA EL NOV"
+   },
+   {
+    "fotograma": 616,
+    "t": 20.533,
+    "texto": "COMENTA Tu deporte, categoría dias te preparo la semana. en la app de ProTeam LISTA DE ESPERA HASTA EL 27 NOV meses gratis"
+   },
+   {
+    "fotograma": 624,
+    "t": 20.8,
+    "texto": "COMENTA Tu deporte, categoria dias te preparo la semana. la app de ProTeam LISTA DE ESPERA HASTA EL 27 NOV meses gratis."
+   },
+   {
+    "fotograma": 632,
+    "t": 21.067,
+    "texto": "COMENTA Tu deporte, categoría días te preparo la semana. de ProTeam LISTA DE ESPERA HASTA EL NOV meses gratis."
+   },
+   {
+    "fotograma": 638,
+    "t": 21.267,
+    "texto": "COMENTA Tu deporte, categoria dias te preparo la semana. en la app de ProTeam Nas LISTA DE ESPERA HASTA EL NOV meses gratis."
+   },
+   {
+    "fotograma": 640,
+    "t": 21.333,
+    "texto": "COMENTA Tu deporte, categoría días le preparo la semana. enlaapp ProTeam LISTA DE ESPERA HASTA EL NOV meses gratis."
+   },
+   {
+    "fotograma": 648,
+    "t": 21.6,
+    "texto": "COMENTA Tu deporte, categoría días te preparo la semana. eñla app de ProTeam LISTA DE ESPERA HASTA EL NOV meses gratis."
+   },
+   {
+    "fotograma": 649,
+    "t": 21.633,
+    "texto": "oly le"
+   },
+   {
+    "fotograma": 656,
+    "t": 21.867,
+    "texto": "RETO PARA TU ly of DE"
+   },
+   {
+    "fotograma": 664,
+    "t": 22.133,
+    "texto": "RETO PARA TU Sj ISTA DE HA ese ÉS"
+   },
+   {
+    "fotograma": 672,
+    "t": 22.4,
+    "texto": "RETO PARA UN de 1h eS Were AEl AEL ISTA DE HAS 3Meses gra"
+   },
+   {
+    "fotograma": 680,
+    "t": 22.667,
+    "texto": "RETO PARA TU STAFF. uf ISTA DE HAS El meses gratis."
+   },
+   {
+    "fotograma": 688,
+    "t": 22.933,
+    "texto": "RETO PARA TU STAFF el acta ic LISTA DE ESPERA HASTA EL 27 NOV"
+   },
+   {
+    "fotograma": 694,
+    "t": 23.133,
+    "texto": "RETO PARA TU STAFF acta ic LISTA DE ESPERA HASTA EL 27 NOV"
+   },
+   {
+    "fotograma": 696,
+    "t": 23.2,
+    "texto": "RETO PARA TU STAFF el acta By LISTA DE ESPERA HASTA EL 27 NOV"
+   },
+   {
+    "fotograma": 702,
+    "t": 23.4,
+    "texto": "RETO PARA TU STAFF ¿Quién llevaba elacta By aG LISTA DE ESPERA HASTA EL 27 NOV"
+   },
+   {
+    "fotograma": 704,
+    "t": 23.467,
+    "texto": "RETO PARA TU STAFF ¿Quién llevaba elacta By se LISTA DE ESPERA HASTA EL 27 NOV"
+   },
+   {
+    "fotograma": 712,
+    "t": 23.733,
+    "texto": "RETO PARA TU STAFF ¿Quién el acta en periodo?, LISTA DE ESPERA HASTA EL 27 NOV"
+   },
+   {
+    "fotograma": 720,
+    "t": 24.0,
+    "texto": "RETO PARA TU STAFF ¿Quién llevaba elacta periodo? By aG LISTA DE ESPERA HASTA EL 27 NOV"
+   },
+   {
+    "fotograma": 728,
+    "t": 24.267,
+    "texto": "RETO PARA TU STAFF ¿Quién llevaba elacta en elquiñ periodo: ka ¡pr LISTA DE ESPERA HASTA EL 27 NOV"
+   },
+   {
+    "fotograma": 736,
+    "t": 24.533,
+    "texto": "RETO PARA TU STAFF ¿Quién llevaba el en By ic LISTA DE ESPERA HASTA EL 27 NOV Meses gratis"
+   },
+   {
+    "fotograma": 739,
+    "t": 24.633,
+    "texto": "RETO PARA TU STAFF ¿Quién llevaba el acta en gs LISTA DE ESPERA HASTA EL 27 NOV"
+   },
+   {
+    "fotograma": 744,
+    "t": 24.8,
+    "texto": "RETO PARA TU STAFF ¿Quién llevaba el acta en hs periodo? LISTA DE ESPERA: HASTA EL 27 NOV meses gratis"
+   },
+   {
+    "fotograma": 752,
+    "t": 25.067,
+    "texto": "RETO PARA TU STAFF ¿Quién llevaba elacta en periodo? LISTA DE HASTA EL 27 NOV meses gratis"
+   },
+   {
+    "fotograma": 755,
+    "t": 25.167,
+    "texto": "RETO PARA TU STAFF ¿Quién llevaba elacta periodo? LISTA DE ESPERA HASTA EL 27 NOV meses gratis"
+   }
+  ],
+  "bloques": [
+   {
+    "desde": 0.0,
+    "hasta": 1.6,
+    "texto": "SÁBADO MINIBASKET QUINTOPERIODO. Vt tran “SG Minibasket Fed. Extremeña de Baloncesto normativa 2024-25",
+    "palabras": 13
+   },
+   {
+    "desde": 1.867,
+    "hasta": 2.2,
+    "texto": "SABADO MINIBASKET QUINTO PERIODO. TUC 60N tando pa Ji eS #10",
+    "palabras": 11
+   },
+   {
+    "desde": 2.4,
+    "hasta": 2.4,
+    "texto": "SÁBADO MINIBASKET QUINTO PERIODO tu, contando Cruces pa Ji EH",
+    "palabras": 10
+   },
+   {
+    "desde": 2.667,
+    "hasta": 3.2,
+    "texto": "SABADO MINIBASKET QUINTO PERIODO. contando cri pa Ji eS #1C",
+    "palabras": 10
+   },
+   {
+    "desde": 3.233,
+    "hasta": 3.233,
+    "texto": "SÁBADO MINIBASKET QUINTO PERIODO tu, contand",
+    "palabras": 6
+   },
+   {
+    "desde": 3.467,
+    "hasta": 7.933,
+    "texto": "EXTREMADURA MINIBASKET 5e LIBRE Minibasket Fed. Extremeña de Baloncesto normativa 2024-25",
+    "palabras": 11
+   },
+   {
+    "desde": 8.267,
+    "hasta": 10.967,
+    "texto": "GUÁRDALO EL VIERNES casillas. Primero, los que menos juegan Dos periodos cada uno, del al",
+    "palabras": 15
+   },
+   {
+    "desde": 11.2,
+    "hasta": 11.2,
+    "texto": "GUARDALO EL VIERNES casillas. Primero, los que menos juegan Dos periodos cada uno, del al",
+    "palabras": 15
+   },
+   {
+    "desde": 11.467,
+    "hasta": 12.433,
+    "texto": "GUÁRDALO EL VIERNES casillas. #15] #11 #10 #12 #11 #15] libre #12 #10 Primero, los que menos juegan Dos periodos cada uno, del al El libre",
+    "palabras": 26
+   },
+   {
+    "desde": 13.333,
+    "hasta": 13.6,
+    "texto": "EL SÁBADO MIRASEL PARTIDO. An Ne",
+    "palabras": 6
+   },
+   {
+    "desde": 13.867,
+    "hasta": 13.867,
+    "texto": "EL SÁBADO Ml RAS EL PARTIDO.",
+    "palabras": 6
+   },
+   {
+    "desde": 14.467,
+    "hasta": 14.467,
+    "texto": "EL SÁBADO MI EL DO. No",
+    "palabras": 6
+   },
+   {
+    "desde": 15.2,
+    "hasta": 15.2,
+    "texto": "COMENTA Tu categoría días ue",
+    "palabras": 5
+   },
+   {
+    "desde": 16.267,
+    "hasta": 16.367,
+    "texto": "COMENTA Tu alas ME CE",
+    "palabras": 5
+   },
+   {
+    "desde": 16.533,
+    "hasta": 16.533,
+    "texto": "COMENTA Tu categoría dias vara la semana. ME,",
+    "palabras": 8
+   },
+   {
+    "desde": 16.8,
+    "hasta": 17.333,
+    "texto": "¿COMENTA Tu deporte, categoría días reparo la semana. va",
+    "palabras": 9
+   },
+   {
+    "desde": 17.5,
+    "hasta": 17.5,
+    "texto": "Tu deporte, categoría días preparo la semana. app de ProTeam Me",
+    "palabras": 11
+   },
+   {
+    "desde": 17.6,
+    "hasta": 21.6,
+    "texto": "COMENTA Tu deporte, categoria dias te preparo la semana. en la app de ProTeam Nas LISTA DE ESPERA HASTA EL NOV meses gratis.",
+    "palabras": 23
+   },
+   {
+    "desde": 21.867,
+    "hasta": 21.867,
+    "texto": "RETO PARA TU ly of DE",
+    "palabras": 6
+   },
+   {
+    "desde": 22.133,
+    "hasta": 22.133,
+    "texto": "RETO PARA TU Sj ISTA DE HA ese ÉS",
+    "palabras": 9
+   },
+   {
+    "desde": 22.4,
+    "hasta": 22.4,
+    "texto": "RETO PARA UN de 1h eS Were AEl AEL ISTA DE HAS 3Meses gra",
+    "palabras": 14
+   },
+   {
+    "desde": 22.667,
+    "hasta": 25.167,
+    "texto": "RETO PARA TU STAFF ¿Quién llevaba el acta en hs periodo? LISTA DE ESPERA: HASTA EL 27 NOV meses gratis",
+    "palabras": 20
+   }
+  ]
+ },
+ "audio": {
+  "tiene_audio": true,
+  "wav": "intel/videos/u12/audio_16k.wav",
+  "volumen_integrado_lufs": "-14.53",
+  "pico_real_db": "0.10",
+  "rango_lra": "1.60",
+  "silencios": [],
+  "subidas_bruscas_s": [
+   1.2,
+   3.4,
+   5.4,
+   8.1,
+   10.2,
+   12.2,
+   13.8,
+   18.4,
+   21.8
+  ],
+  "energia_db_cada_0_1s": [
+   -13.9,
+   -12.3,
+   -11.5,
+   -12.5,
+   -11.2,
+   -13.2,
+   -19.7,
+   -25.0,
+   -24.7,
+   -34.3,
+   -41.0,
+   -44.0,
+   -20.8,
+   -11.4,
+   -11.1,
+   -16.7,
+   -22.5,
+   -23.5,
+   -12.8,
+   -12.8,
+   -16.8,
+   -9.3,
+   -13.1,
+   -12.8,
+   -12.8,
+   -10.8,
+   -12.5,
+   -12.5,
+   -12.0,
+   -20.5,
+   -26.7,
+   -25.3,
+   -38.3,
+   -39.6,
+   -12.8,
+   -11.6,
+   -19.8,
+   -10.9,
+   -11.4,
+   -13.3,
+   -19.3,
+   -10.8,
+   -14.8,
+   -12.0,
+   -15.1,
+   -14.2,
+   -15.4,
+   -14.2,
+   -17.7,
+   -16.0,
+   -13.2,
+   -13.5,
+   -14.0,
+   -25.5,
+   -11.7,
+   -14.1,
+   -13.6,
+   -16.4,
+   -11.8,
+   -22.5,
+   -12.4,
+   -12.0,
+   -13.9,
+   -22.4,
+   -15.9,
+   -15.7,
+   -12.5,
+   -13.6,
+   -14.3,
+   -12.8,
+   -18.2,
+   -13.3,
+   -12.9,
+   -14.4,
+   -18.6,
+   -22.6,
+   -26.5,
+   -24.2,
+   -35.4,
+   -41.8,
+   -28.7,
+   -11.8,
+   -14.1,
+   -12.2,
+   -12.4,
+   -20.9,
+   -24.3,
+   -13.1,
+   -12.5,
+   -9.4,
+   -11.8,
+   -15.1,
+   -21.2,
+   -19.4,
+   -12.2,
+   -15.2,
+   -13.5,
+   -19.3,
+   -20.2,
+   -29.2,
+   -32.7,
+   -44.6,
+   -11.4,
+   -10.6,
+   -10.5,
+   -18.1,
+   -10.4,
+   -16.3,
+   -13.9,
+   -13.4,
+   -13.8,
+   -20.3,
+   -15.0,
+   -11.2,
+   -14.5,
+   -22.3,
+   -16.2,
+   -21.1,
+   -20.6,
+   -22.3,
+   -23.0,
+   -15.9,
+   -9.8,
+   -19.0,
+   -11.5,
+   -11.7,
+   -10.7,
+   -14.2,
+   -9.4,
+   -13.0,
+   -13.3,
+   -11.6,
+   -14.1,
+   -17.5,
+   -12.0,
+   -20.6,
+   -28.8,
+   -41.0,
+   -11.6,
+   -11.2,
+   -14.4,
+   -12.4,
+   -18.6,
+   -17.2,
+   -19.7,
+   -21.0,
+   -11.9,
+   -12.3,
+   -14.4,
+   -11.2,
+   -15.4,
+   -12.1,
+   -14.4,
+   -14.0,
+   -14.1,
+   -15.0,
+   -16.0,
+   -14.3,
+   -16.6,
+   -14.0,
+   -11.4,
+   -12.2,
+   -13.6,
+   -17.3,
+   -19.0,
+   -14.3,
+   -12.4,
+   -12.0,
+   -11.8,
+   -12.8,
+   -12.9,
+   -17.4,
+   -12.0,
+   -12.4,
+   -12.7,
+   -14.1,
+   -13.5,
+   -15.8,
+   -12.4,
+   -16.4,
+   -15.9,
+   -16.0,
+   -25.9,
+   -24.9,
+   -11.2,
+   -12.0,
+   -11.3,
+   -11.3,
+   -14.3,
+   -9.6,
+   -12.2,
+   -16.0,
+   -10.4,
+   -13.6,
+   -11.6,
+   -16.4,
+   -14.9,
+   -9.8,
+   -14.2,
+   -13.9,
+   -11.3,
+   -12.0,
+   -15.5,
+   -20.3,
+   -23.0,
+   -11.8,
+   -13.7,
+   -10.5,
+   -10.9,
+   -14.9,
+   -12.6,
+   -12.9,
+   -16.4,
+   -21.6,
+   -22.5,
+   -24.4,
+   -26.2,
+   -14.5,
+   -13.4,
+   -14.2,
+   -13.2,
+   -11.1,
+   -11.6,
+   -13.7,
+   -15.0,
+   -16.6,
+   -19.8,
+   -22.3,
+   -25.0,
+   -15.1,
+   -15.3,
+   -13.4,
+   -10.5,
+   -10.1,
+   -12.6,
+   -11.6,
+   -16.2,
+   -10.5,
+   -11.9,
+   -19.0,
+   -10.4,
+   -11.5,
+   -12.2,
+   -13.9,
+   -20.3,
+   -25.0,
+   -25.1,
+   -30.4,
+   -33.8,
+   -37.8,
+   -43.6
+  ],
+  "transcripcion": "transcripcion.json (tools/reel12/voz.tsv)",
+  "nota": "Esto son medidas. Entonación, claridad de la locución, timbre o si hay música NO se pueden afirmar sin escuchar o transcribir."
+ },
+ "vistas": [
+  "detalle_001.jpg",
+  "detalle_002.jpg",
+  "detalle_003.jpg",
+  "detalle_004.jpg",
+  "detalle_005.jpg"
+ ],
+ "orden": "python3 tools/video_intel.py analyze reels/u12-quinto-periodo.mp4 --id u12 --tema repartir los periodos de minibasket antes del partido --modo detalle"
+}
