@@ -29,7 +29,7 @@ El entrenador de base decide en el partido sin los datos de su propio equipo (mi
 | 3 | Balonmano | Descanso. Tu portero lleva catorce goles. ¿Y paradas? Nadie las ha contado. | el tercero |
 | 4 | Giro | Tres banquillos. El mismo sábado. | une las tres |
 | 5 | Fecha | Apunta otro: sábado veintiocho de noviembre. Abre la app de ProTeam. | lo que viene |
-| 6 | Impacto | Hoy no te contamos más. Quedan diez días. | intriga + contador |
+| 6 | Impacto | Quedan diez días. (17/11: fuera «Hoy no te contamos más», corrección de Biel) | intriga + contador |
 | 7 | Reto | Mándaselo a tu segundo: ¿cuál de los tres sois? | reto para el cuerpo técnico |
 | 8 | Lista | Lista de espera hasta el veintisiete de noviembre: tres meses gratis. | CTA único |
 
@@ -50,7 +50,7 @@ Silencio de 0,4 s antes de «sábado veintiocho de noviembre» y golpe de músic
 ## 7. Descripción
 Minuto 70. ¿Cuántos minutos lleva tu nueve? ⚽🏀🤾
 Tres banquillos, tres deportes y el mismo sábado: decidir sin saber.
-Apunta una fecha: sábado 28 de noviembre. Abre la app de ProTeam, para entrenadores de fútbol, baloncesto y balonmano. Quedan 10 días y hoy no contamos más.
+Apunta una fecha: sábado 28 de noviembre. Abre la app de ProTeam, para entrenadores de fútbol, baloncesto y balonmano. Quedan 10 días.
 Envíaselo a tu segundo entrenador: ¿cuál de los tres sois?
 Apúntate a la lista de espera hasta el 27 de noviembre y el 28 empiezas con 3 meses gratis. Enlace en la bio.
 
