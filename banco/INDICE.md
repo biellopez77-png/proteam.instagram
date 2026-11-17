@@ -17,11 +17,11 @@ Estado: `disponible`, `usada en uNN` o `pendiente`.
 | Categoría | Recursos |
 |---|---|
 | ENTRENADOR | 51 |
-| EQUIPO | 22 |
+| EQUIPO | 23 |
 | INSTALACION | 12 |
-| JUGADOR | 26 |
+| JUGADOR | 28 |
 | OBJETO | 6 |
-| PARTIDO | 5 |
+| PARTIDO | 8 |
 | PRODUCTO | 38 |
 | STAFF | 15 |
 
