@@ -41,7 +41,7 @@ I-040: «El entrenador de base cree que su problema es de su deporte, pero fuera
 | 12,0–16,0 | **PARA ENTRENAR MÁS** · *y apuntar menos* |
 | 16,0–21,0 | **FÚTBOL · BALONCESTO · BALONMANO** · *una app para los tres* |
 | 21,0–25,5 | foto de balonmano (bucle) · RETO PARA TU STAFF · **¿Cuál os quita** *más tiempo?* · las cuatro casillas pequeñas |
-| 25,5–31,0 | **ABRE EL 28 · LISTA HASTA EL 27 NOV** · *3 meses gratis* · pequeño: «Enlace en la bio · Día 2 de 10» |
+| 25,5–31,0 | **ABRE EL 28 · LISTA HASTA EL 27 NOV** · *3 meses gratis* · pequeño: «Enlace en la bio» |
 
 ## 7. Descripción
 11 en el campo. 5 en la pista. 7 en la de balonmano. Tres deportes y el mismo lunes. ⚽🏀🤾

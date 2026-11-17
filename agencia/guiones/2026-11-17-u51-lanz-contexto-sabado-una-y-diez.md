@@ -43,7 +43,7 @@ I-039: «El partido del entrenador de base no acaba con el pitido: sigue despué
 | 16,0–21,0 | **FÚTBOL · BALONCESTO · BALONMANO** · *para después del partido* |
 | 21,0–24,0 | **HECHA EN EL BANQUILLO** |
 | 24,0–27,5 | vuelve la foto del principio (bucle) · RETO PARA TU STAFF · **¿Quién sigue** *con el partido?* |
-| 27,5–32,0 | **ABRE EL 28 · LISTA HASTA EL 27 NOV** · *3 meses gratis* · pequeño: «Enlace en la bio · Día 2 de 10» |
+| 27,5–32,0 | **ABRE EL 28 · LISTA HASTA EL 27 NOV** · *3 meses gratis* · pequeño: «Enlace en la bio» |
 
 ## 7. Descripción
 Sábado, 13:10. El partido acabó hace diez minutos. Los jugadores ya se van. Y el entrenador sigue con él. ⚽
