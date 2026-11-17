@@ -2,7 +2,7 @@
 
 Pau (03) · consulta: 16/11/2026 · plan de crecimiento, semana 1.
 
-**Nadie ha sido contactado.** Esto es solo una lista: no se ha escrito, llamado ni rellenado ningún formulario.
+**Estado de contacto:** los escritos llevan «escrito AAAA-MM-DD» en su fila (turno «Prospección de escuelas y coordinadores»). El resto no ha sido contactado.
 
 ## Cómo leerla
 - Todo dato sale de la página oficial indicada en «fuente», leída el 16/11/2026 con WebFetch. Nada de memoria ni correos deducidos.
@@ -46,8 +46,8 @@ No falta ninguno para los 30 (actualizado el 16/11 a las 14:00 con los n.º 27 a
 
 | n.º | curso | entidad | comunidad | fechas | inscripción | contacto | fuente |
 |---|---|---|---|---|---|---|---|
-| 18 | Monitor/a d'Handbol Nivell 1 · Mataró (Pavelló Teresa Maria Roca) | Federació Catalana d'Handbol | Cataluña | 9/11/2026 a 7/1/2027 (en línea hasta 15/12; presencial 19/12 a 7/1) | cerró el 4/11/2026; **en curso ahora** | formacio@fchandbol.com | https://www.fchandbol.cat/dues-noves-convocatories-del-curs-de-monitor-a-dhandbol-nivell-1-a-mataro-i-martorell/ |
-| 19 | Monitor/a d'Handbol Nivell 1 · Martorell (Pavelló Can Cases) | Federació Catalana d'Handbol | Cataluña | 9/11/2026 a 7/1/2027 | cerró el 4/11/2026; **en curso ahora** | formacio@fchandbol.com | misma página |
+| 18 | Monitor/a d'Handbol Nivell 1 · Mataró (Pavelló Teresa Maria Roca) | Federació Catalana d'Handbol | Cataluña | 9/11/2026 a 7/1/2027 (en línea hasta 15/12; presencial 19/12 a 7/1) | cerró el 4/11/2026; **en curso ahora** | formacio@fchandbol.com | https://www.fchandbol.cat/dues-noves-convocatories-del-curs-de-monitor-a-dhandbol-nivell-1-a-mataro-i-martorell/ | **escrito 2026-11-17** (formacio@fchandbol.com)
+| 19 | Monitor/a d'Handbol Nivell 1 · Martorell (Pavelló Can Cases) | Federació Catalana d'Handbol | Cataluña | 9/11/2026 a 7/1/2027 | cerró el 4/11/2026; **en curso ahora** | formacio@fchandbol.com | misma página | **escrito 2026-11-17** (mismo correo que el 18)
 | 20 | Entrenador de Balonmano Nivel II Aragón 2026-2027 (Stadium Casablanca, Zaragoza, y en línea) | Federación Aragonesa de Balonmano | Aragón | 25/10/2026 a 4/4/2027 | cerró el 11 de octubre; **en curso ahora** | farbm@farbm.com · 976560677 | https://farbm.com/curso-territorial-2026-2027/ · https://farbm.com/wp-content/uploads/2026/09/Informacion-Curso-Territorial-Nivel-II-2026-2027.pdf |
 | 21 | Entrenador Territorial Valencia 2026 (sala de formación FBMCV y Pabellón de la Petxina) | FBMCV · Escuela Territorial de Entrenadores | C. Valenciana | 8/5/2026 a 12/9/2026 | **ya terminado**; sirve como referencia de calendario (la edición de 2025 también fue en primavera) | entrenadores@fbmcv.com | https://balonmano.isquad.es/documentos/istudy/722_doc_bases_260330 TRIPTICO VALENCIA_2026.pdf |
 
@@ -58,9 +58,9 @@ Los tres cursos en marcha (18, 19 y 20) son los más útiles: hay un grupo de en
 | n.º | club | comunidad | base | persona o cargo publicado | contacto institucional | fuente |
 |---|---|---|---|---|---|---|
 | 22 | S.C.D.R. Anaitasuna (balonmano) | Navarra (Pamplona) | «más de 400 niños y niñas repartidos entre sus 27 equipos de la escuela» | no aparece | balonmano@anaitasuna.com | https://www.torneobalonmanoanaitasuna.com/docs/dossier2024.pdf (dosier de 2024: la cifra puede haber cambiado) |
-| 23 | Club Deportivo Balonmano Castellón | C. Valenciana (Castellón) | categorías de benjamín a juvenil; no da número de equipos | no aparece | informacion@balonmanocastellon.com | https://www.balonmanocastellon.com/wp-content/uploads/2026/05/dosier-informativo.pdf |
+| 23 | Club Deportivo Balonmano Castellón | C. Valenciana (Castellón) | categorías de benjamín a juvenil; no da número de equipos | no aparece | informacion@balonmanocastellon.com | https://www.balonmanocastellon.com/wp-content/uploads/2026/05/dosier-informativo.pdf | **ya escrito 2026-11-16** (otra campaña)
 | 24 | Club Balonmano Elche · proyecto «Colegios Balonmaneros» | C. Valenciana (Elche) | proyecto con colegios; no da número de equipos | no aparece | colegiosbalonmaneros@cbmelche.es · 966 672 600 | https://cbmelche.es/wp-content/uploads/2026/02/COLEGIOS-BALONMANEROS-EL-BALONMANO-SE-VIVE-DESDE-EL-COLEGIO.pdf |
-| 25 | Club Balonmano Huesca | Aragón (Huesca) | la página «Equipos base» lista 11 equipos; 8 son de base (juvenil masculino, cadete masculino A y B, cadete femenino, infantil masculino A, B y C, infantil femenino) y 3 son sénior o filiales | no aparece | contacto@bmhuesca.com · 974 230 271 | https://bmhuesca.com/equipos-base-del-cb-huesca/ · https://bmhuesca.com/ |
+| 25 | Club Balonmano Huesca | Aragón (Huesca) | la página «Equipos base» lista 11 equipos; 8 son de base (juvenil masculino, cadete masculino A y B, cadete femenino, infantil masculino A, B y C, infantil femenino) y 3 son sénior o filiales | no aparece | contacto@bmhuesca.com · 974 230 271 | https://bmhuesca.com/equipos-base-del-cb-huesca/ · https://bmhuesca.com/ | **escrito 2026-11-17**
 | 26 | Club Balonmano Torrelavega | Cantabria (Torrelavega) | portada: «Cantera Balonmano Torrelavega 2026. 31 equipos, 409 jugadores» | no aparece | administracion@torrebalonmano.com · 942 800 231 · OJO: el dominio del correo no coincide con el de la web (balonmanotorrelavega.com); comprobar en la fuente | https://balonmanotorrelavega.com/ |
 | 27 | C.D.B. Balonmano Ciudad Encantada (Cuenca; equipo ASOBAL) | Castilla-La Mancha (Cuenca) | el menú «Equipos» lista, además del primer equipo, «Juvenil», «Cadete» e «Infantil»; no da número de equipos ni usa la palabra cantera | no aparece | cbmciudadencantada@gmail.com · 969 239 050 | https://www.bmciudadencantada.es/ · https://www.bmciudadencantada.es/index.php?sec=equipos |
 | 28 | CD BM. Atlético Valladolid (equipo ASOBAL) | Castilla y León (Valladolid) | la portada habla de «equipos base» y de «equipos cadetes y juveniles» en noticias de cantera; no da número de equipos ni tiene página de cantera en el menú | no aparece | info@atleticovalladolid.es · 983 841 712 (oficinas de lunes a viernes, 9:30-13:30) · formulario: https://www.atleticovalladolid.es/contacto | https://www.atleticovalladolid.es/ · https://www.atleticovalladolid.es/contacto |
