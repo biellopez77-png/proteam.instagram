@@ -63,7 +63,8 @@ def doc(i, m):
     cap = i.get('caption') or ''
     title = i.get('title') or (cap.split('\n')[0] if cap else (i.get('note') or i['id']))
     d = {'kind': i['kind'], 'when': i['when'], 'status': i['status'], 'title': title[:200], 'caption': cap,
-         'note': i.get('note') or '', 'agentId': i.get('agentId') or AGENT.get(i['kind'], '02'),
+         'note': (('FASE: ' + i['fase'].upper() + (' (' + i['fase_dia'] + ')' if i.get('fase_dia') else '') + '. ') if i.get('fase') else '') + (i.get('note') or ''),
+         'fase': i.get('fase') or '', 'agentId': i.get('agentId') or AGENT.get(i['kind'], '02'),
          'media': [url(f) for f in i.get('files') or []], 'cover': url(i['cover']) if i.get('cover') else '',
          'score': i.get('score') or '', 'mediaId': i.get('media_id') or '', 'publishedAt': i.get('published_at') or '',
          'error': i.get('error') or i.get('cancel_reason') or '', 'syncedAt': datetime.now(TZ).isoformat(timespec='seconds')}

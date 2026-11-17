@@ -2580,7 +2580,7 @@
  },
  {
   "id": "c09s",
-  "when": "2026-11-19T17:00:00+01:00",
+  "when": "2026-11-24T10:30:00+01:00",
   "kind": "story",
   "files": [
    "stories/st-1116-regla-2-minutos.jpg"
@@ -2590,7 +2590,9 @@
   "campana": "carrusel",
   "title": "¿Qué funcionó en tu último entreno? Apúntalo en 2 minutos",
   "score": "81",
-  "note": "Story de valor (Clara, 04): tres líneas antes de irte del campo. Sin aviso de Reel (corrección de Biel 16/11).; reprogramada desde la oficina"
+  "note": "Story de valor (Clara, 04): tres líneas antes de irte del campo. Sin aviso de Reel (corrección de Biel 16/11).; reprogramada desde la oficina; reprogramada desde la oficina",
+  "fase": "nutrición",
+  "fase_dia": "Mar 24/11 mañana"
  },
  {
   "id": "c09s2",
@@ -2604,7 +2606,9 @@
   "campana": "carrusel",
   "title": "¿Cuántas horas entrenas fuera del campo? También es entrenar (quedan 11 días)",
   "score": "77",
-  "note": "Story de marca (Clara, 04) + cuenta atrás de la lista de espera (quedan 11 días). Sin aviso de Reel.; oficina: regla de alcance 16/11: una Story al día (hoy ya salió c08s); lleva «quedan 11 días», Clara decide si la rehace con otra fecha"
+  "note": "Story de marca (Clara, 04) + cuenta atrás de la lista de espera (quedan 11 días). Sin aviso de Reel.; oficina: regla de alcance 16/11: una Story al día (hoy ya salió c08s); lleva «quedan 11 días», Clara decide si la rehace con otra fecha",
+  "fase": "sin fase",
+  "fase_dia": ""
  },
  {
   "id": "u04",
@@ -2684,7 +2688,7 @@
  },
  {
   "id": "c10s2",
-  "when": "2026-11-18T17:00:00+01:00",
+  "when": "2026-11-24T18:30:00+01:00",
   "kind": "story",
   "files": [
    "stories/st-1117-sin-minutos.jpg"
@@ -2694,21 +2698,25 @@
   "campana": "carrusel",
   "title": "¿Quién se quedó sin jugar el sábado? (informe real: SIN MINUTOS 4)",
   "score": "83",
-  "note": "Story de producto con pantalla real (Clara, 04): informe de partido, datos de ejemplo. Sin oferta.; reprogramada desde la oficina"
+  "note": "Story de producto con pantalla real (Clara, 04): informe de partido, datos de ejemplo. Sin oferta.; reprogramada desde la oficina; reprogramada desde la oficina",
+  "fase": "solución",
+  "fase_dia": "Mar 24/11 tarde"
  },
  {
   "id": "c10s3",
-  "when": "2026-11-17T21:30:00+01:00",
+  "when": "2026-11-25T14:30:00+01:00",
   "kind": "story",
   "files": [
    "stories/st-1117-3-dudas.jpg"
   ],
   "cover": null,
-  "status": "pending",
+  "status": "borrador",
   "campana": "carrusel",
   "title": "3 dudas antes de apuntarte (quedan 10 días)",
   "score": "76",
-  "note": "Story de dudas + lista de espera (Clara, 04) v2: deporte, qué hace, 3 meses gratis hasta el 27 nov. Pide dejar dudas en el último post (no por privado).; oficina: regla de alcance 16/11: una Story al día (el martes sale c10s); lleva «quedan 10 días», Clara le cambia la cuenta atrás y la reprograma; reprogramada desde la oficina"
+  "note": "Story de dudas + lista de espera (Clara, 04) v2: deporte, qué hace, 3 meses gratis hasta el 27 nov. Pide dejar dudas en el último post (no por privado).; oficina: regla de alcance 16/11: una Story al día (el martes sale c10s); lleva «quedan 10 días», Clara le cambia la cuenta atrás y la reprograma; reprogramada desde la oficina; oficina: lanzamiento: explica qué hace la app y la oferta (fase solución); «quedan 10 días» solo valía el 17/11, Clara la rehace con la cuenta del día · 17/11 20:40 (Laura, lanzamiento): fecha prevista 2026-11-25T14:30 en su fase; sigue en borrador hasta que esté corregida (antes 2026-11-17T21:30)",
+  "fase": "solución",
+  "fase_dia": "Mié 25/11"
  },
  {
   "id": "c11",
@@ -2726,9 +2734,11 @@
   "caption": "No haces una alineación: haces cuatro.\nGuárdalo y mándaselo a tu coordinador: si todo el club usa la misma hoja, ningún niño se queda en una sola línea.\n\nEn los Juegos Deportivos Municipales de Sevilla (circular de fútbol 7, temporada 2025-26), prebenjamines, benjamines y alevines juegan 4 tiempos de 12 minutos, y todos los del acta tienen que jugar al menos un tiempo completo: hasta que se cumple, no hay cambios dentro de los tiempos. Cada tiempo empieza con una alineación que decides tú.\n\nLa propuesta (no es norma): cada tiempo, una línea distinta; los porteros, en tiempos alternos; nadie descansa dos seguidos. Ejemplo resuelto en la diapositiva 5 y hoja vacía en la 6. Si tu competición va en dos partes, usa dos columnas.\n\nComenta tu deporte, tu categoría y tus días y te preparo la semana 👇\n\nLista de espera de la app de ProTeam hasta el 27 de noviembre, con 3 meses gratis. Enlace en la bio.\n\n#futbolbase #futbol7",
   "status": "pending",
   "campana": "carrusel",
-  "when": "2026-11-20T11:00:00+01:00",
+  "when": "2026-11-20T19:30:00+01:00",
   "cover": null,
-  "note": "Agente 04 · encargo t-20261116-04-rotacion-mie-dom · idea 7 (I-008) · identificación + guardados/envíos al coordinador · norma verificada en el PDF del IMD de Sevilla (apdos. 10 y 12) · Andrés puerta 1 75 con bloqueante → corregido; final 83 (agencia/criticas/2026-11-16-c11-*.md); reprogramada desde la oficina"
+  "note": "Agente 04 · encargo t-20261116-04-rotacion-mie-dom · idea 7 (I-008) · identificación + guardados/envíos al coordinador · norma verificada en el PDF del IMD de Sevilla (apdos. 10 y 12) · Andrés puerta 1 75 con bloqueante → corregido; final 83 (agencia/criticas/2026-11-16-c11-*.md); reprogramada desde la oficina; reprogramada desde la oficina",
+  "fase": "problema",
+  "fase_dia": "Vie 20/11 tarde"
  },
  {
   "id": "u17",
@@ -2801,9 +2811,11 @@
   "caption": "+30 y el marcador se para. El partido, no.\nGuárdalo y mándaselo a tu segundo: es quien avisa del escalón.\n\nEn los Juegos Deportivos Escolares de Euskadi, en infantiles, con 30 goles de diferencia «se dará por finalizado el encuentro con el resultado que exista ese momento», pero se sigue jugando hasta el final y esos goles ya no cuentan (normativa de balonmano 2025 y 2026). En otras federaciones cambia.\n\nLa propuesta (no es norma): no esperes a +30. A +10, solo vale el gol tras 5 pases; a +15, defensa individual; a +20, solo marca quien aún no ha marcado. Y si vas perdiendo de 15 o más, cambia de marcador: robos, pases antes de lanzar y paradas, cada 5 minutos.\n\n¿Qué le pides tú a tu equipo cuando el partido ya está decidido? Déjalo en comentarios 👇\nEnvíaselo a tu segundo entrenador.\n\nComenta tu deporte, tu categoría y tus días y te preparo la semana en la app de ProTeam. Lista de espera hasta el 27 de noviembre, con 3 meses gratis. Enlace en la bio.\n\n#balonmano #balonmanobase #entrenadores",
   "status": "pending",
   "campana": "carrusel",
-  "when": "2026-11-18T12:30:00+01:00",
+  "when": "2026-11-23T12:30:00+01:00",
   "cover": null,
-  "note": "Agente 04 · turno 16/11 21:07 · idea 6 (I-005) con ángulo nuevo: los minutos que ya no cuentan y también el que pierde · marco de decisión (estructura nueva) · norma verificada en las normativas de balonmano 2025 y 2026 de los JDE de Euskadi (euskadi.eus) · Andrés texto 79 → final 82 (agencia/criticas/2026-11-16-c12-*.md) · gemelo u11: que no salga el mismo día"
+  "note": "Agente 04 · turno 16/11 21:07 · idea 6 (I-005) con ángulo nuevo: los minutos que ya no cuentan y también el que pierde · marco de decisión (estructura nueva) · norma verificada en las normativas de balonmano 2025 y 2026 de los JDE de Euskadi (euskadi.eus) · Andrés texto 79 → final 82 (agencia/criticas/2026-11-16-c12-*.md) · gemelo u11: que no salga el mismo día; reprogramada desde la oficina",
+  "fase": "nutrición",
+  "fase_dia": "Lun 23/11"
  },
  {
   "id": "c12s",
@@ -2857,19 +2869,21 @@
  },
  {
   "id": "u28",
-  "when": "2026-11-18T17:30:00+01:00",
+  "when": "2026-11-25T09:30:00+01:00",
   "kind": "reel",
   "files": [
    "reels/u28-tobillo-v3.mp4"
   ],
   "cover": "covers/u28-tobillo.jpg",
   "caption": "Cae del rebote, pisa un pie y tu pívot, fuera. Es la lesión más frecuente en baloncesto: el esguince de tobillo. 🏀\nGuárdalo: 16 temporadas de baloncesto universitario en EE. UU. (NCAA, Dick et al., Journal of Athletic Training, 2007) y el tobillo, el primero de la lista.\nEn la app de ProTeam tienes tu rutina de prevención (isquios y tobillo) con sus ejercicios y sesiones, dentro de la preparación física del equipo.\nEnvíaselo a tu segundo entrenador: ¿cuándo entrenasteis el tobillo por última vez?\nComenta tu deporte, tu categoría y tus días y te preparo la semana en la app de ProTeam. Lista de espera hasta el 27 de noviembre: 3 meses gratis. Enlace en la bio.\n\nFotos: Edy Tavares, Real Madrid (Zafer, CC BY 4.0), selección española de baloncesto (Diario de Madrid, CC BY 4.0), Wikimedia Commons.\n\n#baloncesto #entrenadordebaloncesto #preparacionfisica #prevenciondelesiones #proteam",
-  "status": "pending",
+  "status": "borrador",
   "campana": "unrespiro",
   "share_to_feed": false,
-  "note": "u28 · turno de Reels 16/11 21:37: Reel de datos sin voz (13,6 s), música nueva de fondo, dato con fuente (Dick et al., 2007) y captura real de Rutinas. Guion 78, auditoría 78.; oficina: Sin voz: regla de Biel 17/11, todo Reel lleva la voz de Mateo; reprogramada desde la oficina · 17/11 12:37 (turno de Reels): con voz de Mateo (biblioteca, una toma, 328 caracteres), 18,0 s; misma música nueva del u28 realineada; dato grande «16 temporadas» y anillo que se llena. Auditoría de Andrés 79.; oficina: cambios: Mejora el hook y al final falta la animacion con el contador; reprogramada desde la oficina · 17/11 16:00 (corrección de Biel: «mejora el hook y al final falta la animación con el contador»): hook nuevo de escena («Cae del rebote. Pisa un pie. Tu pívot, fuera.»), voz de Mateo regrabada entera (una toma, 311 caracteres), 17,9 s; cierre con la entrada a la lista de espera y el contador (10 d 6 h → 27 NOV) como en u09. Misma música del u28 realineada. Auditoría de Andrés 81.; reprogramada desde la oficina · 17/11 18:20 (Laura): Instagram no procesó el vídeo a las 17:26 (causa sin confirmar: el archivo es MP4 h264 válido, igual que otros publicados). Se reintenta el mié 18/11 17:30 con el mismo vídeo reempaquetado (archivo nuevo, índice al principio y audio estéreo); la imagen no cambia.",
+  "note": "u28 · turno de Reels 16/11 21:37: Reel de datos sin voz (13,6 s), música nueva de fondo, dato con fuente (Dick et al., 2007) y captura real de Rutinas. Guion 78, auditoría 78.; oficina: Sin voz: regla de Biel 17/11, todo Reel lleva la voz de Mateo; reprogramada desde la oficina · 17/11 12:37 (turno de Reels): con voz de Mateo (biblioteca, una toma, 328 caracteres), 18,0 s; misma música nueva del u28 realineada; dato grande «16 temporadas» y anillo que se llena. Auditoría de Andrés 79.; oficina: cambios: Mejora el hook y al final falta la animacion con el contador; reprogramada desde la oficina · 17/11 16:00 (corrección de Biel: «mejora el hook y al final falta la animación con el contador»): hook nuevo de escena («Cae del rebote. Pisa un pie. Tu pívot, fuera.»), voz de Mateo regrabada entera (una toma, 311 caracteres), 17,9 s; cierre con la entrada a la lista de espera y el contador (10 d 6 h → 27 NOV) como en u09. Misma música del u28 realineada. Auditoría de Andrés 81.; reprogramada desde la oficina · 17/11 18:20 (Laura): Instagram no procesó el vídeo a las 17:26 (causa sin confirmar: el archivo es MP4 h264 válido, igual que otros publicados). Se reintenta el mié 18/11 17:30 con el mismo vídeo reempaquetado (archivo nuevo, índice al principio y audio estéreo); la imagen no cambia.; oficina: lanzamiento: enseña una pantalla de la app (fase solución); falta poner el contador al día · 17/11 20:40 (Laura, lanzamiento): fecha prevista 2026-11-25T09:30 en su fase; sigue en borrador hasta que esté corregida (antes 2026-11-18T17:30)",
   "score": "voz 80 · montaje 81",
-  "title": "Cae del rebote, pisa un pie… y tu pívot, fuera."
+  "title": "Cae del rebote, pisa un pie… y tu pívot, fuera.",
+  "fase": "solución",
+  "fase_dia": "Mié 25/11"
  },
  {
   "id": "u29",
@@ -2891,51 +2905,57 @@
  },
  {
   "id": "u30",
-  "when": "2026-11-18T09:30:00+01:00",
+  "when": "2026-11-24T17:30:00+01:00",
   "kind": "reel",
   "files": [
    "reels/u30-por-dentro-presion-alta.mp4"
   ],
   "cover": "covers/u30-por-dentro-presion-alta.jpg",
   "caption": "Sábado: presión alta. Martes: rondo. Jueves: físico. ¿Cuándo se entrena la presión? ⚽\nGuárdalo: escribe arriba de la semana el objetivo del sábado en una frase y que el martes vaya a por él. En la app de ProTeam la semana lleva esa frase arriba y las actividades debajo.\nEnvíaselo a tu segundo entrenador: ¿qué frase pondríais arriba de esta semana?\nComenta tu deporte, tu categoría y tus días y te preparo la primera semana en la app de ProTeam. Lista de espera hasta el 27 de noviembre: 3 meses gratis. Enlace en la bio.\n\nFotos: Real Madrid en el Bernabéu (Ruben Ortega, CC BY-SA 4.0) y Diego Simeone (Werner100359, CC BY-SA 4.0), Wikimedia Commons.\n\n#futbolbase #entrenadordefutbol #planificacion #microciclo #proteam",
-  "status": "pending",
+  "status": "borrador",
   "campana": "unrespiro",
   "share_to_feed": false,
-  "note": "u30 · turno de Reels 17/11 0:37: «ProTeam por dentro» 2 de 3 (fútbol), encargo del plan de crecimiento. Captura real de Planificación (Semana 8) en tres zooms, voz Mateo de la biblioteca (frases por silencios), música nueva con el regreso del beat en «el martes». Va el miércoles 9:30 y no el martes 22:30 para no ir pegado a u29 (mismo formato). · 17/11 18:15 v2 (encargo de Andrés tras la corrección de Biel en u28): cierre con la animación del contador de la lista de espera (9 d 14 h → 27 NOV) y la voz de Mateo «Lista de espera hasta el veintisiete de noviembre: tres meses gratis» (corte de la toma de u28 v3); 28,3 s; auditoría 81 (agencia/criticas/2026-11-17-u30-final-v2.md)",
+  "note": "u30 · turno de Reels 17/11 0:37: «ProTeam por dentro» 2 de 3 (fútbol), encargo del plan de crecimiento. Captura real de Planificación (Semana 8) en tres zooms, voz Mateo de la biblioteca (frases por silencios), música nueva con el regreso del beat en «el martes». Va el miércoles 9:30 y no el martes 22:30 para no ir pegado a u29 (mismo formato). · 17/11 18:15 v2 (encargo de Andrés tras la corrección de Biel en u28): cierre con la animación del contador de la lista de espera (9 d 14 h → 27 NOV) y la voz de Mateo «Lista de espera hasta el veintisiete de noviembre: tres meses gratis» (corte de la toma de u28 v3); 28,3 s; auditoría 81 (agencia/criticas/2026-11-17-u30-final-v2.md); oficina: lanzamiento: «ProTeam por dentro» (fase solución); falta poner el contador al día · 17/11 20:40 (Laura, lanzamiento): fecha prevista 2026-11-24T17:30 en su fase; sigue en borrador hasta que esté corregida (antes 2026-11-18T09:30)",
   "score": "guion 77 · montaje 81",
-  "title": "Sábado: presión alta. Martes: rondo. (ProTeam por dentro: la frase de arriba)"
+  "title": "Sábado: presión alta. Martes: rondo. (ProTeam por dentro: la frase de arriba)",
+  "fase": "solución",
+  "fase_dia": "Mar 24/11 tarde"
  },
  {
   "id": "u31",
-  "when": "2026-11-17T22:30:00+01:00",
+  "when": "2026-11-24T20:30:00+01:00",
   "kind": "reel",
   "files": [
    "reels/u31-bloqueo-directo-octubre.mp4"
   ],
   "cover": "covers/u31-bloqueo-directo-octubre.jpg",
   "caption": "En octubre tu equipo defendía el bloqueo directo. Hoy no. ¿Qué hiciste aquella semana? 🏀\nGuárdalo: cada domingo, tres apuntes de la semana (qué hiciste, cuánto y en qué orden). En la app de ProTeam la semana que funciona se queda como plantilla semanal y la aplicas cuando la necesites.\nEnvíaselo a tu segundo entrenador: ¿qué semana de octubre repetiríais mañana?\nComenta tu deporte, tu categoría y tus días y te preparo la primera semana en la app de ProTeam. Lista de espera hasta el 27 de noviembre: 3 meses gratis. Enlace en la bio.\n\nFoto: Trevor Booker, Tony Parker y Kirk Hinrich (Keith Allison, CC BY-SA 2.0), Wikimedia Commons.\n\n#baloncestobase #entrenadordebaloncesto #planificacion #bloqueodirecto #proteam",
-  "status": "pending",
+  "status": "borrador",
   "campana": "unrespiro",
   "share_to_feed": false,
-  "note": "u31 · turno de Reels 17/11 3:37: encargo de Marta (hueco mar 22:30, baloncesto con voz, variación de u04). Tony Parker en el bloqueo de Booker, tiras de sesión que se voltean en blanco, captura real de Plantillas semanales con «Aplicar a esta semana» recuadrado, ficha de 3 apuntes. Voz Mateo de la biblioteca (la original sigue desactivada), música nueva con golpe en «no vuelve». · 17/11 17:40 v2 (encargo de Andrés tras la corrección de Biel en u28): rótulo de escena en 0 s («2×2 CONTRA EL BLOQUEO · 10′ · L · X · V») y cierre con la animación del contador de la lista de espera y la voz de Mateo (corte de la toma de u28 v3); 27,8 s; auditoría 82 (agencia/criticas/2026-11-17-u31-final-v2.md)",
+  "note": "u31 · turno de Reels 17/11 3:37: encargo de Marta (hueco mar 22:30, baloncesto con voz, variación de u04). Tony Parker en el bloqueo de Booker, tiras de sesión que se voltean en blanco, captura real de Plantillas semanales con «Aplicar a esta semana» recuadrado, ficha de 3 apuntes. Voz Mateo de la biblioteca (la original sigue desactivada), música nueva con golpe en «no vuelve». · 17/11 17:40 v2 (encargo de Andrés tras la corrección de Biel en u28): rótulo de escena en 0 s («2×2 CONTRA EL BLOQUEO · 10′ · L · X · V») y cierre con la animación del contador de la lista de espera y la voz de Mateo (corte de la toma de u28 v3); 27,8 s; auditoría 82 (agencia/criticas/2026-11-17-u31-final-v2.md); oficina: lanzamiento: enseña una pantalla de la app (fase solución); falta poner el contador al día · 17/11 20:40 (Laura, lanzamiento): fecha prevista 2026-11-24T20:30 en su fase; sigue en borrador hasta que esté corregida (antes 2026-11-17T22:30)",
   "score": "guion 78 · montaje 82",
-  "title": "En octubre tu equipo defendía el bloqueo directo. Hoy no."
+  "title": "En octubre tu equipo defendía el bloqueo directo. Hoy no.",
+  "fase": "solución",
+  "fase_dia": "Mar 24/11 tarde"
  },
  {
   "id": "u33",
-  "when": "2026-11-18T11:30:00+01:00",
+  "when": "2026-11-24T22:30:00+01:00",
   "kind": "reel",
   "files": [
    "reels/u33-cuatro-pases.mp4"
   ],
   "cover": "covers/u33-cuatro-pases.jpg",
   "caption": "Brazo arriba: te quedan 4 pases. Hasta 2022 eran 6. 🤾\nGuárdalo: desde el 1 de julio de 2022 la regla IHF deja 4 pases como máximo tras el aviso de juego pasivo. Cada pasivo pitado es un balón perdido: en la app de ProTeam lo apuntas en directo como pérdida y el lunes lo tienes en la cronología del partido.\nEnvíaselo a tu segundo entrenador: ¿cuántos balones perdisteis por pasivo el sábado?\nComenta tu deporte, tu categoría y tus días y te preparo la semana en la app de ProTeam. Lista de espera hasta el 27 de noviembre: 3 meses gratis. Enlace en la bio.\n\nFotos: Dika Mem y selección española de balonmano, Mundial 2019 (dronepicr, CC BY 2.0), Wikimedia Commons. Regla: IHF, en vigor desde el 1/7/2022.\n\n#balonmano #balonmanobase #entrenadordebalonmano #handball #proteam",
-  "status": "pending",
+  "status": "borrador",
   "campana": "unrespiro",
   "share_to_feed": false,
-  "note": "u33 · turno de Reels 17/11 3:37: Reel de datos corto (13,3 s, sin voz) de balonmano para el mié 11:30, detrás de u30 (fútbol). Dato IHF 6 → 4 pases, capturas reales de Partido en directo (Pérdida) y Cronología. Música nueva con golpe en el 4.; oficina: Sin voz: regla de Biel 17/11, todo Reel lleva la voz de Mateo; reprogramada desde la oficina · 17/11 12:37 (turno de Reels): con voz de Mateo (biblioteca, una toma, 309 caracteres), 17,9 s; misma música nueva del u33 realineada con el golpe en «cuatro». Auditoría de Andrés 80. · 17/11 18:50 v3 (encargo de Andrés): cierre con la animación del contador de la lista de espera (9 d 12 h → 27 NOV) bajo la voz «Lista de espera hasta el veintisiete de noviembre»; sin voz nueva; 17,9 s; auditoría 81 (agencia/criticas/2026-11-17-u33-u12-contador.md)",
+  "note": "u33 · turno de Reels 17/11 3:37: Reel de datos corto (13,3 s, sin voz) de balonmano para el mié 11:30, detrás de u30 (fútbol). Dato IHF 6 → 4 pases, capturas reales de Partido en directo (Pérdida) y Cronología. Música nueva con golpe en el 4.; oficina: Sin voz: regla de Biel 17/11, todo Reel lleva la voz de Mateo; reprogramada desde la oficina · 17/11 12:37 (turno de Reels): con voz de Mateo (biblioteca, una toma, 309 caracteres), 17,9 s; misma música nueva del u33 realineada con el golpe en «cuatro». Auditoría de Andrés 80. · 17/11 18:50 v3 (encargo de Andrés): cierre con la animación del contador de la lista de espera (9 d 12 h → 27 NOV) bajo la voz «Lista de espera hasta el veintisiete de noviembre»; sin voz nueva; 17,9 s; auditoría 81 (agencia/criticas/2026-11-17-u33-u12-contador.md); oficina: lanzamiento: enseña pantallas de la app (fase solución); falta poner el contador al día · 17/11 20:40 (Laura, lanzamiento): fecha prevista 2026-11-24T22:30 en su fase; sigue en borrador hasta que esté corregida (antes 2026-11-18T11:30)",
   "score": "voz 80 · montaje 81",
-  "title": "Brazo arriba: te quedan 4 pases."
+  "title": "Brazo arriba: te quedan 4 pases.",
+  "fase": "solución",
+  "fase_dia": "Mar 24/11 tarde"
  },
  {
   "id": "c13",
@@ -2954,9 +2974,11 @@
   "caption": "Media pista. 60 minutos. Sin filas.\nGuárdalo y mándaselo a tu segundo: es quien lleva el reloj de los cambios.\n\nLa pista mide 28 × 15 metros (Reglas FIBA, regla 2). Muchos martes te dan la mitad y la sesión sigue escrita para entera: dos filas de seis y cada uno esperando a cinco compañeros para tocar balón.\n\nLa propuesta (no es norma): grupos de tres, dos juegan a la canasta y los otros dos trabajan con balón en la banda, cambio cada 3 minutos. Si en una tarea hay más de tres esperando sin balón, está mal pensada.\n\n¿Cuántos días a la semana entrenáis en media pista? Déjalo en comentarios 👇\nEnvíaselo a tu segundo entrenador.\n\nComenta tu deporte, tu categoría y tus días y te preparo la semana en la app de ProTeam. Lista de espera hasta el 27 de noviembre, con 3 meses gratis. Enlace en la bio.\n\n#baloncesto #baloncestobase #entrenadores",
   "status": "pending",
   "campana": "carrusel",
-  "when": "2026-11-18T19:30:00+01:00",
+  "when": "2026-11-23T19:30:00+01:00",
   "cover": null,
-  "note": "Agente 04 · turno 17/11 9:07 · idea 9 (media pista) · antes/después conceptual (estructura nueva) · dato 28 × 15 m (FIBA, regla 2) · Andrés texto 78 → final 80 (agencia/criticas/2026-11-17-c13-*.md) · gemelo u13 en reserva: que no salga el mismo día"
+  "note": "Agente 04 · turno 17/11 9:07 · idea 9 (media pista) · antes/después conceptual (estructura nueva) · dato 28 × 15 m (FIBA, regla 2) · Andrés texto 78 → final 80 (agencia/criticas/2026-11-17-c13-*.md) · gemelo u13 en reserva: que no salga el mismo día; reprogramada desde la oficina",
+  "fase": "nutrición",
+  "fase_dia": "Lun 23/11"
  },
  {
   "id": "c13s",
@@ -2999,14 +3021,16 @@
   "cover": null,
   "status": "pending",
   "campana": "carrusel",
-  "when": "2026-11-18T10:30:00+01:00",
+  "when": "2026-11-23T10:30:00+01:00",
   "title": "En un saque de banda no hay fuera de juego. ¿Lo usas? (fútbol)",
   "score": "78",
-  "note": "Story de valor de Clara (04): IFAB, regla 11; pregunta con respuesta en comentarios."
+  "note": "Story de valor de Clara (04): IFAB, regla 11; pregunta con respuesta en comentarios.; reprogramada desde la oficina",
+  "fase": "nutrición",
+  "fase_dia": "Lun 23/11"
  },
  {
   "id": "u12",
-  "when": "2026-11-18T13:30:00+01:00",
+  "when": "2026-11-21T13:30:00+01:00",
   "kind": "reel",
   "files": [
    "reels/u12-quinto-periodo.mp4"
@@ -3016,13 +3040,15 @@
   "status": "borrador",
   "campana": "unrespiro",
   "share_to_feed": false,
-  "note": "u12 · turno de Reels 17/11 15:37: encargo t-u12-musica (montado con voz el 17/11 6:37, sin música por falta de créditos). Música nueva (ElevenLabs music v2.5, re menor, campanas con vinilo, 900 créditos) con silencio antes de «acta» y golpe en la palabra; sfx.py y mezcla como u31. Banquillo de los Heat (Spoelstra), acta con cruces, columnas de periodo, hoja de 6 casillas. Voz Mateo de la biblioteca. · 17/11 18:50 v2 (encargo de Andrés): cierre con la animación del contador de la lista de espera (9 d 10 h → 27 NOV) bajo la voz de la campaña, antes del reto; sin voz nueva; 25,2 s; auditoría 82 (agencia/criticas/2026-11-17-u33-u12-contador.md); oficina: cambios: la voz se corta mucho, falta fluidez",
+  "note": "u12 · turno de Reels 17/11 15:37: encargo t-u12-musica (montado con voz el 17/11 6:37, sin música por falta de créditos). Música nueva (ElevenLabs music v2.5, re menor, campanas con vinilo, 900 créditos) con silencio antes de «acta» y golpe en la palabra; sfx.py y mezcla como u31. Banquillo de los Heat (Spoelstra), acta con cruces, columnas de periodo, hoja de 6 casillas. Voz Mateo de la biblioteca. · 17/11 18:50 v2 (encargo de Andrés): cierre con la animación del contador de la lista de espera (9 d 10 h → 27 NOV) bajo la voz de la campaña, antes del reto; sin voz nueva; 25,2 s; auditoría 82 (agencia/criticas/2026-11-17-u33-u12-contador.md); oficina: cambios: la voz se corta mucho, falta fluidez · 17/11 20:40 (Laura, lanzamiento): fecha prevista 2026-11-21T13:30 en su fase; sigue en borrador hasta que esté corregida (antes 2026-11-18T13:30)",
   "score": "guion 80 · montaje 82",
-  "title": "Quinto periodo. Y tú, contando cruces en el acta."
+  "title": "Quinto periodo. Y tú, contando cruces en el acta.",
+  "fase": "problema",
+  "fase_dia": "Sáb 21/11"
  },
  {
   "id": "u10",
-  "when": "2026-11-18T20:30:00+01:00",
+  "when": "2026-11-25T11:30:00+01:00",
   "kind": "reel",
   "files": [
    "reels/u10-entra-a-defender.mp4"
@@ -3032,8 +3058,10 @@
   "status": "borrador",
   "campana": "unrespiro",
   "share_to_feed": false,
-  "note": "u10 · turno de Reels 17/11 18:37: guion más antiguo de la reserva (Dani, Andrés 80) para el mié 20:30, detrás de u28 (baloncesto). Pista cenital partida en dos (la ficha 12 solo defiende; en el partidillo cruza), norma de Euskadi con sello NO PERMITIDO, captura real de Semana y cierre con el contador de la lista de espera (9 d 3 h). Voz Mateo de la biblioteca (la original da «disabled»), una toma, 477 caracteres; música nueva con el golpe en «nadie es especialista». 27,2 s. Auditoría 80 (agencia/criticas/2026-11-17-u10-final.md).; oficina: cambios: la norma es de toda la federación española (sin cambios ataque-defensa hasta juvenil), no solo de Euskadi",
+  "note": "u10 · turno de Reels 17/11 18:37: guion más antiguo de la reserva (Dani, Andrés 80) para el mié 20:30, detrás de u28 (baloncesto). Pista cenital partida en dos (la ficha 12 solo defiende; en el partidillo cruza), norma de Euskadi con sello NO PERMITIDO, captura real de Semana y cierre con el contador de la lista de espera (9 d 3 h). Voz Mateo de la biblioteca (la original da «disabled»), una toma, 477 caracteres; música nueva con el golpe en «nadie es especialista». 27,2 s. Auditoría 80 (agencia/criticas/2026-11-17-u10-final.md).; oficina: cambios: la norma es de toda la federación española (sin cambios ataque-defensa hasta juvenil), no solo de Euskadi · 17/11 20:40 (Laura, lanzamiento): fecha prevista 2026-11-25T11:30 en su fase; sigue en borrador hasta que esté corregida (antes 2026-11-18T20:30)",
   "score": "guion 80 · montaje 80",
-  "title": "Entra a defender. Sale a atacar. Tiene 12 años."
+  "title": "Entra a defender. Sale a atacar. Tiene 12 años.",
+  "fase": "solución",
+  "fase_dia": "Mié 25/11"
  }
 ]
