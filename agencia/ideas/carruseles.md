@@ -73,3 +73,119 @@ Las deja Dani (01) en cada turno de guiones por adelantado. Clara elige, marca �
 - Fútbol: «¿A qué edad fijas las posiciones?» (benjamín · alevín · infantil · nunca).
 - Baloncesto: «¿Llevas los quintetos hechos de casa?» (sí · en el banquillo).
 - Balonmano: «¿Quién lanza tus siete metros?» (siempre el mismo · rota).
+
+## 17/11 9:55 · Horizonte 19 nov – 2 dic (Dani; encargo de Laura)
+**Por qué ahora (hecho):** no se pueden montar Reels nuevos hasta que haya música (ElevenLabs sin créditos hasta el 14/12), así que los carruseles y las Stories llevan la cuenta estas dos semanas. Con dos carruseles al día hacen falta 27 entre el jue 19/11 y el mié 2/12 y había 9 ideas sin usar (1, 2, 3, 4, 5, 8, 10, 11 y 12) más los tres «Te lo dejo hecho». Con estas 13 hay 25: faltan dos, que se cubren con la respuesta más votada de las Stories.
+**Criterio (hipótesis de la oficina, sin datos todavía):** un carrusel que deja una sesión o una hoja ya rellena se guarda más que uno que deja una plantilla vacía (c13), y el que habla también al que pierde se envía más (c12). Por eso cada idea deja algo hecho, no solo una ficha en blanco.
+**Reglas de siempre:** ninguna cifra sin fuente; lo marcado «comprobar regla» se lee en el reglamento el día que Clara la haga y, si no se confirma, esa diapositiva se quita; los nombres y dorsales de los ejemplos son inventados y se rotulan «ejemplo»; minutos de sesión = propuesta, dicha como propuesta. Hasta el 27/11, cierre con lista de espera y 3 meses gratis; desde el 28/11, sin oferta.
+
+### Fútbol
+### 13. «Córner en contra. ¿Quién marca al 9 de ellos?» (fútbol 11)
+- **Escena / insight:** sábado, córner en contra, tres jugadores se miran y nadie coge al delantero. Las marcas se dijeron una vez en septiembre (observación de banquillo; interpretación, sin dato).
+- **Objetivo:** guardados y envío al segundo entrenador.
+- **Arquitectura:** portada con la pregunta → por qué pasa (cambia el once y nadie rehace las marcas) → la hoja: primer palo · segundo palo · frontal · el que se queda arriba · quién avisa → la misma hoja rellena con once dorsales de ejemplo → qué cambia si sale un cambio (regla: el que entra hereda la marca del que sale) → hoja para el vestuario → «Mándaselo a tu segundo».
+- **Ojo:** gemela defensiva de u24 (córner a favor); no el mismo día. No decir que zona es mejor que hombre ni al revés: la hoja sirve para las dos.
+
+### 14. «60 minutos, 14 niños, medio campo» (fútbol 7, benjamín y alevín)
+- **Escena / insight:** I-007 llevado al fútbol: compartes campo con otro equipo y la sesión pensada para campo entero se convierte en filas.
+- **Objetivo:** guardados (sesión entera, como c13).
+- **Arquitectura:** portada con los tres números → qué se pierde con filas (sin cifras) → bloque 1: rondos 4×2 en tres cuadrados → bloque 2: 2×2 con miniporterías, cuatro campos → bloque 3: partido 7×7 con una sola regla → cómo rotan los porteros → la sesión entera en una imagen con minutos (propuesta) → pregunta: «¿Cuántos días compartes campo?».
+- **Ojo:** sin primeros planos de menores. No repetir la portada de c13 (otra foto, otro encuadre).
+
+### 15. «Descanso. Vas 0-2. ¿Qué dices primero?» (fútbol 11)
+- **Escena / insight:** en el descanso se habla de todo lo que ha salido mal y el equipo sale con cinco consignas y ninguna clara (misma raíz que u20 en baloncesto).
+- **Objetivo:** envío al segundo; habla al que pierde y al que gana.
+- **Arquitectura:** portada → lo que suele pasar (lista de errores) → el descanso en cuatro tiempos: callar y beber · una cosa que va bien · una cosa que cambia, dibujada · quién la repite al salir → versión 0-2 y versión 2-0 de la misma charla (ejemplo) → tarjeta de descanso para llevar en el bolsillo → «¿Qué dices tú primero? Coméntalo».
+- **Ojo:** sin minutos de descanso (cambian por categoría). No atribuir el método a ningún entrenador.
+
+### 16. «Lunes después del 5-0: la sesión» (fútbol, cualquier categoría)
+- **Escena / insight:** tras una goleada el lunes se castiga con físico o se hace como si nada; en los dos casos el sábado no se aprovecha (interpretación).
+- **Objetivo:** guardados y envíos; dos puntos de vista (el que perdió 5-0 y el que ganó 5-0).
+- **Arquitectura:** portada → los dos lunes que no sirven → sesión del que perdió: 10′ de hablar con una sola pregunta · un ejercicio sobre el gol que más se repitió · partido corto con marcador a cero → sesión del que ganó: lo que no salió aunque ganaras → las dos sesiones en una imagen → «Mándaselo a tu segundo».
+- **Ojo:** no usar un 5-0 real. Nada de «mentalidad»: ejercicios concretos.
+
+### Baloncesto
+### 17. «Dos faltas en el primer cuarto. ¿Y ahora?» (cadete y júnior)
+- **Escena / insight:** semilla B-4. El plan con el pívot cargado de faltas se improvisa en el banquillo.
+- **Objetivo:** guardados y envío al segundo.
+- **Arquitectura:** portada con el marcador de faltas → la regla (a la quinta personal, fuera: comprobar regla FIBA el día que se haga) → lo que se decide el viernes y no el sábado: quién entra · cuándo vuelve · qué deja de defender → tabla rellena con un quinteto de ejemplo → qué hace el segundo (lleva la cuenta y avisa a la tercera) → tabla para la carpeta → «¿Lo sientas o lo dejas? Coméntalo».
+- **Ojo:** no dar una respuesta «correcta» a sentar o no sentar: la tabla ordena la decisión.
+
+### 18. «Tiros libres al final: 10 minutos que sí cuentan» (todas las categorías)
+- **Escena / insight:** semilla B-6. Los tiros libres se tiran descansados y sin consecuencia; en el partido llegan cansados y con el marcador encima (interpretación).
+- **Objetivo:** guardados (bloque de sesión hecho).
+- **Arquitectura:** portada → por qué el tiro libre del entreno no se parece al del partido → el bloque de 10′: parejas, esfuerzo corto antes de cada serie, dos tiros, se apunta → la consecuencia (de equipo, no castigo individual) → hoja de la semana con cuatro nombres de ejemplo → qué mirar al mes → pregunta: «¿Los apuntáis?».
+- **Ojo:** sin porcentajes de acierto de nadie. La pantalla de la app, solo si existe una real de tiros; si no, sin app.
+
+### 19. «Sábado y domingo. ¿Qué entrenas el lunes?» (semana de dos partidos)
+- **Escena / insight:** I de u22 (dos partidos en 26 horas y lunes de entreno normal).
+- **Objetivo:** guardados; semana entera hecha.
+- **Arquitectura:** portada → el error (lunes igual que siempre) → la pregunta del 1 al 10 al acabar el domingo → lunes: dos grupos según minutos y respuesta → miércoles: el objetivo de la semana → viernes: corto y con balón → la semana entera en una imagen (propuesta) → captura real de RPE recortada a las tres casillas → «Comenta tu categoría y tus días».
+- **Ojo:** gemela de u22; no el mismo día. Sin cifras de lesiones.
+
+### 20. «Último ataque. 24 segundos. ¿Quién lo sabe?» (cadete en adelante)
+- **Escena / insight:** la última posesión se dibuja en el tiempo muerto por primera vez; nadie la ha ensayado.
+- **Objetivo:** envío al segundo y guardados.
+- **Arquitectura:** portada con el reloj → qué pasa cuando se improvisa → la hoja: quién saca · primera opción · segunda opción · quién va al rebote · quién baja a defender → hoja rellena con una jugada de ejemplo dibujada → cuándo se ensaya (5′ el viernes, propuesta) → hoja para la pizarra → «¿La tenéis ensayada? Coméntalo».
+- **Ojo:** comprobar regla (24 segundos de posesión, FIBA). No copiar una jugada con nombre de un equipo real.
+
+### Balonmano
+### 21. «Dos minutos con uno menos: 20 minutos de sesión»
+- **Escena / insight:** I de u25. La inferioridad se juega cada sábado y no se entrena ningún martes.
+- **Objetivo:** guardados; dos puntos de vista (el que defiende con cinco y el que ataca con uno más).
+- **Arquitectura:** portada → cuántas veces pasa (cuenta tus exclusiones del último partido: no damos cifra) → bloque 1: 5×6 defendiendo, 2′ reales con reloj → bloque 2: 6×5 atacando, misma duración → bloque 3: la vuelta del excluido, quién entra por dónde → los 20′ en una imagen → fila real de la cronología de la app con una exclusión → «Mándaselo a tu segundo».
+- **Ojo:** comprobar regla (exclusión de 2 minutos, IHF). Gemela de u25; no el mismo día.
+
+### 22. «El calentamiento de partido en 20 minutos, con el portero dentro»
+- **Escena / insight:** I de u23 (el portero calienta solo contra la pared) llevado al sábado: calentamiento largo, sin orden y con el portero recibiendo tiros a la cara al final.
+- **Objetivo:** guardados (se usa el mismo sábado).
+- **Arquitectura:** portada → lo que suele verse → minuto a minuto: movilidad con balón · pases en movimiento · portero: manos, ángulos, lanzamientos por zonas en orden · 3×3 corto · últimos lanzamientos → quién lo dirige (el segundo, con la hoja) → el calentamiento entero en una imagen → pregunta: «¿Quién calienta a tu portero?».
+- **Ojo:** minutos = propuesta. Foto de portero de primer nivel (hay una del Barça sin usar).
+
+### 23. «Siete metros: quién lanza se decide antes» (se alimenta de la Story c13s)
+- **Escena / insight:** semilla BM-7. Último minuto, siete metros, y lanza el de siempre o el que coge el balón.
+- **Objetivo:** comunidad: usa las respuestas reales de la Story c13s (mar 17/11 14:30).
+- **Arquitectura:** portada con el resultado real de la encuesta, si hay respuestas (si no hay, la portada es la pregunta) → por qué decidirlo en caliente sale mal → la lista: primero · segundo · quién lanza si falla el primero · quién va al rechace → lista rellena de ejemplo → cómo se entrena (dos lanzamientos cada uno al acabar, apuntados) → «¿Rota o siempre el mismo? Coméntalo».
+- **Ojo:** el porcentaje de la encuesta solo si es real y con el número de respuestas a la vista. No antes del vie 20/11.
+
+### 24. «Cadete: la primera línea ataca siempre por el mismo lado» (lectura de partido)
+- **Escena / insight:** el entrenador nota que «algo se repite» pero no sabe decir qué; apuntando desde dónde se lanza, se ve en un descanso.
+- **Objetivo:** valor y demostración de producto con captura real (mapa de portería / registro de acción).
+- **Arquitectura:** portada → la sensación sin dato → qué apuntar (desde dónde y a dónde, nada más) → captura real del mapa de portería → qué se decide con eso en el descanso (una sola cosa) → versión en papel para quien no tenga la app → «Comenta tu deporte, tu categoría y tus días».
+- **Ojo:** las cifras de la captura son de un partido de ejemplo: rotularlo. Ninguna pantalla que no esté en el banco.
+
+### Para los tres deportes (desde el 28/11, sin oferta)
+### 25. «Antes del parón: un folio, cuatro preguntas»
+- **Escena / insight:** semilla F-6 abierta a los tres deportes. Diciembre se va entre partidos aplazados y cenas, y enero empieza donde acabó noviembre.
+- **Objetivo:** guardados; primera pieza sin oferta.
+- **Arquitectura:** portada → por qué ahora → 1. quién ha jugado menos · 2. qué entreno repetirías · 3. qué objetivo de septiembre sigue vivo · 4. qué semana preparas para la vuelta → el folio relleno con un equipo de ejemplo → cierre «la app de ProTeam», enlace en la bio, sin fechas.
+- **Ojo:** que no se parezca a la idea 3 (noviembre): si la 3 sale antes del 27/11, esta va en diciembre.
+
+### Orden propuesto (12:30 · 19:30). Clara puede moverlo; nunca dos seguidos del mismo deporte ni el mismo día que su Reel gemelo
+| día | 12:30 | 19:30 |
+|---|---|---|
+| Jue 19 | idea 4 · balonmano | idea 14 · fútbol 7 |
+| Vie 20 | (c11 a las 11:00) | idea 8 · minibasket |
+| Sáb 21 | idea 23 · balonmano (con la encuesta) | idea 10 · fútbol 11 |
+| Dom 22 | idea 18 · baloncesto | idea 5 · balonmano |
+| Lun 23 | Te lo dejo hecho · fútbol 7 alevín | idea 17 · baloncesto |
+| Mar 24 | idea 21 · balonmano | idea 13 · fútbol 11 |
+| Mié 25 | Te lo dejo hecho · baloncesto infantil | idea 22 · balonmano |
+| Jue 26 | idea 15 · fútbol 11 | idea 19 · baloncesto |
+| Vie 27 | Te lo dejo hecho · balonmano cadete | idea 3 · noviembre (último día de la lista) |
+| Sáb 28 | idea 20 · baloncesto | idea 16 · fútbol (sin oferta desde hoy) |
+| Dom 29 | idea 24 · balonmano | idea 12 · fútbol |
+| Lun 30 | idea 11 · baloncesto | idea 1 · carga en una pregunta |
+| Mar 1 | idea 25 · tres deportes | idea 2 · cinco frases |
+| Mié 2 | la más votada de las Stories | la más votada de las Stories |
+
+### Stories 19 nov – 2 dic (una idea, una pregunta; ninguna anuncia un Reel)
+- Fútbol: «Córner en contra: ¿zona o al hombre?» · «¿Cuántos días compartes campo?» (1 · 2 · todos) · «En el descanso, ¿qué dices primero?» (lo que va mal · lo que va bien) · «Después de perder por mucho, ¿el lunes hay físico?» (sí · no).
+- Baloncesto: «Dos faltas en el primer cuarto: ¿lo sientas?» (sí · sigue) · «¿Apuntáis los tiros libres del entreno?» (sí · no) · «¿Tenéis ensayado el último ataque?» (sí · se dibuja en el tiempo muerto) · «Dos partidos en un fin de semana: ¿cambias el lunes?».
+- Balonmano: «¿Entrenáis con uno menos?» (cada semana · alguna vez · nunca) · «¿Quién calienta a tu portero?» (el segundo · un compañero · solo) · «¿Desde dónde os meten más goles?» (extremos · seis metros · nueve metros · no lo sé) · «Falla el primero: ¿quién lanza el siguiente siete metros?».
+- Con pantalla real de la app (una cada dos días, por la hipótesis de c10s2): RPE recortado a las tres casillas, cronología con una exclusión, mapa de portería, planificación de la semana.
+- La del vie 20/11 ya está pedida: reparto de respuestas de c13s. Cada lunes, una Story con la respuesta más votada de la semana anterior y el aviso de que saldrá como carrusel.
+
+### Las diez preguntas de control (para el lote)
+1. ¿Le interesa a un entrenador? Sí: son escenas de sábado y de martes, no temas. 2. ¿Algo concreto? Cada una deja una hoja o una sesión rellena. 3. ¿Idea para recordar? Una por pieza, dicha en la portada. 4. ¿Distinta de lo publicado? Ninguna repite c08–c13; las gemelas de Reels (13, 19, 21, 22) están avisadas. 5. ¿Prueba de la otra cuenta? Pasa en las que llevan hoja de segundo entrenador o captura real; la 16 es la más floja y solo se hace si los ejercicios son concretos. 6. ¿Valor? Se puede usar esa misma semana. 7. ¿Formato? Carrusel: pasos y hojas que se releen. 8. ¿Aguanta tras la portada? Depende de que la diapositiva 2 nombre el problema en una frase (regla de Clara). 9. ¿Realista? Sí, sin voz ni música; la 23 depende de que la encuesta tenga respuestas y la 24 de las capturas del banco. 10. ¿Representa a ProTeam? Criterio de entrenador, sin motivación.
+**Debilidades que veo:** cuatro ideas dependen de leer una regla el día que se hagan; la 14 se parece en estructura a c13 (hay que separarlas una semana, como está en la tabla); no hay todavía datos de guardados que confirmen que «sesión entera» funciona mejor.
