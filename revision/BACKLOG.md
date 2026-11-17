@@ -17,8 +17,8 @@ Estados: pendiente · en curso · hecho · bloqueado · a verificar · en PR
 ## Hallazgos abiertos
 | ID | Severidad | Resumen | Estado | Lote |
 |---|---|---|---|---|
-| A-001 | Baja | `src/components/shell.tsx`: aria-labels fijos fuera de `t()` («Menú», «Tancar menú», «Obrir menú», «Menú de navegació», «Navegació principal» en la barra inferior del jugador). Solo afecta a lectores de pantalla | pendiente | Arreglo pequeño: ya se puede hacer en el código (APP_REPO.md) |
-| A-002 | A verificar | `src/lib/match-presentation.ts` (`matchPresentationSections`): «Jugadores» y «Comparativa» van con `blocks: []` en el informe descargable. Mirar si el PDF los oculta o salen vacíos | a verificar | R2, leyendo `src/lib/reports/pdf.ts` en el repositorio |
+| A-001 | Baja | `src/components/shell.tsx`: aria-labels fijos fuera de `t()` («Menú», «Tancar menú», «Obrir menú», «Menú de navegació», «Navegació principal» en la barra inferior del jugador). Solo afecta a lectores de pantalla | pendiente | Arreglo pequeño. 17/11 12:20: no se pudo hacer, el turno no tenía acceso a biellopez77-png/proteamapp (sin `add_repo`) |
+| A-002 | Baja | Confirmado (R2, 17/11): `src/lib/match-presentation.ts` (`matchPresentationSections`) devuelve «Jugadores» y «Comparativa» con `blocks: []`, y `src/lib/reports/pdf.ts` (`buildReportPdf`, bucle de secciones: `if (!s.blocks.length) text(ctx, EMPTY…)`) las imprime igualmente: el PDF del partido sale con dos apartados con título y «sin datos». Arreglo propuesto: rellenarlas con los datos que ya calcula `matchPresentation` (`positions`, `comparison`) o quitarlas del informe | pendiente | Arreglo pequeño (1 archivo); necesita acceso al repositorio de la app |
 
 ## Ideas aparcadas (no pedidas por Biel; no se hacen sin su OK)
 -
