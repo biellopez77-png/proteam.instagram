@@ -1259,3 +1259,13 @@ Fuente de las normas: Normativa de Balonmano 2025, Juegos Deportivos Escolares d
 - **H1108** Nueve de tus zonas de tiro las ha puesto tu memoria. [balonmano · provocadora · análisis] (12/15)
 - **H1109** Cambio ataque-defensa. Y justo ahí, lanza tu extremo. [balonmano · situación real · partidos] (11/15)
 - **H1110** Un lanzamiento sin zona vale más que uno inventado. [general · educativa · análisis] (11/15)
+
+## Nuevos · 17/11 22:30 (Dani, u55 y u56)
+- **H1111** Una semana, un entreno, un partido. La del 8 de diciembre. [baloncesto · número · planificación] (12/15)
+- **H1112** La sesión del festivo no se pierde el festivo. Se pierde hoy. [general · contraintuitiva · planificación] (12/15)
+- **H1113** Viernes, grupo del club: «el martes, pabellón cerrado». [baloncesto · situación real · planificación] (11/15)
+- **H1114** Planificas la semana. El pabellón planifica el mes. [baloncesto · provocadora · planificación] (11/15)
+- **H1115** No se te olvidó. No tenía dónde quedarse. [general · contraintuitiva · jugadores] (12/15)
+- **H1116** Viernes, convocatoria. La rodilla no está en el grupo. [fútbol · situación real · convocatoria] (12/15)
+- **H1117** Lo más importante de tu semana te lo dijeron en el aparcamiento. [general · provocadora · jugadores] (11/15)
+- **H1118** ¿Quién de tu plantilla tiene hoy una molestia? ¿Desde cuándo? [fútbol · pregunta · jugadores] (11/15)
