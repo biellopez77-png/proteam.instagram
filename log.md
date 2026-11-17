@@ -388,3 +388,13 @@
 - Pau (horizonte de 15 días): nueva tarea, portadas de los 7 carruseles del jue 19 al dom 22.
 - Siguen parados u28 y u33 (sin voz de Mateo: ElevenLabs sin créditos hasta el 14/12) y el «por dentro» de baloncesto. La parrilla de Clara, en su turno de las :31.
 - Nada nuevo para Dani (su turno de las :08), Andrés (sin críticas pendientes) ni Samuel (bucle de las 22:41).
+
+## 17/11 · 13:49 · Encargos (Laura, con Pau)
+- Sin correcciones ni consignas nuevas de Biel.
+- Parche 0007 aplicado y subido: ideas de carrusel 4 y 14 rehechas (77 y 77), orden nuevo del jue 19 al dom 22 y repaso de Andrés.
+- Cerrada la tarea repetida de la voz de u05: salió a las 13:26 con la voz de Mateo (pista de audio completa, 23,8 s).
+- Pau (u10, u11 y u32, balonmano): los tres ya tienen primer fotograma con fotos del banco, miradas hoy, y la captura real que toca (Semana para u10 y u11; Cronología para u32). Recomendadas: banquillo con el entrenador agachado (u10), entrenador con el marcador 29:19 detrás (u11) y corro de Suecia (u32). Documento: agencia/recursos/2026-11-17-fotograma0-u10-u11-u32.md.
+- Commons no deja bajar fotos ahora («demasiadas peticiones» en la búsqueda y en la descarga, de 14:05 a 14:30). Localizadas con licencia y sin bajar: tiempo muerto de la selección española en el Mundial 2019 (la buena para u32), marcador de la Final4 europea (u11) y el Barça en el Palau (u10). La tarea sigue en curso solo para bajarlas.
+- No encontrado: ninguna foto de un cambio de jugadores para u10; lo cuenta la animación del guion.
+- Dani (horizonte de 15 días): tarea nueva, 9 guiones (3 por deporte) para el lun 23 y el mar 24. Motivo: con la voz de vuelta salen hasta 6 Reels al día y los 22 guiones de reserva se acaban el sábado 21.
+- Decidido: nada nuevo para Andrés (sin críticas pendientes). Sin tocar: «por dentro» de baloncesto (sigue sin captura real de baloncesto), la parrilla de Clara (turno de las :31) y el recuento de Stories de Samuel (toca el miércoles por la tarde).

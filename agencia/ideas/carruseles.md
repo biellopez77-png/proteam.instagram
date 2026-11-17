@@ -19,16 +19,18 @@ Las deja Dani (01) en cada turno de guiones por adelantado. Clara elige, marca �
 - **Ojo:** «primer tercio» es una situación orientativa de la temporada de base, no una estadística.
 
 ## 16/11 tarde (serie «Balonmano base»)
-### 4. «Qué defiende cada categoría: lo que ya dicen las normas de base»
+### 4. «En Euskadi, tu 6:0 de infantiles no vale.» (rehecha el 17/11 con la criba de Andrés; antes «Qué defiende cada categoría»)
 - **Insight de origen:** I-002 (la 6:0 cerrada da partidos en infantiles y no forma defensores).
-- **Objetivo:** guardados y envíos al coordinador del club (conversación de club: qué enseñamos en cada categoría).
-- **Arquitectura:** portada «Tu 6:0 de infantiles sería falta en Euskadi» → qué dicen dos normas reales, citadas con región y año: Aragón alevín (JDEE 2022-23, art. 10.3.3: 1.º y 3.º tiempo individual, 2.º y 4.º 3:3) y Euskadi infantil (Eskubaloia 2025: mínimo dos líneas, sin mixtas; aviso y golpe franco, 7 m si se repite) → por qué tiene sentido (defender a un rival antes que un espacio: interpretación, marcada como tal) → progresión propuesta alevín → infantil → cadete (recomendación, no norma) → 3 ejercicios de 10′ (1×1 sin ayudas, 2×2 con ayuda, 3:3 en dos líneas) → ficha guardable «qué defendemos en cada categoría» → «Mándaselo a tu coordinador».
-- **Ojo:** no salir el mismo día que el Reel u08. No generalizar la norma a otras federaciones: decir que cambia.
+- **Objetivo:** guardados y envíos al coordinador del club (qué defendemos en cada categoría).
+- **Portada:** «En Euskadi, tu 6:0 de infantiles no vale.» y debajo «Qué defender en cada categoría». Foto `PARTIDO_DEFENSA_EUROPEO_FOTO_001` (1×1 de frente), vallas oscurecidas.
+- **Arquitectura (7 diapositivas, ninguna solo de texto):** 2) la tabla alevín → infantil → cadete, rotulada «propuesta» (qué se defiende en cada una: 1×1 sin ayudas · dos líneas · la defensa del equipo) → 3) la norma, con ámbito y año: «Juegos Escolares de Euskadi · infantil · normativa 2025: mínimo dos líneas, sin mixtas» y «en otras federaciones cambia»; la sanción («aviso y golpe franco; si se repite, 7 m») solo si se lee ese día en el PDF de I-002 → 4) por qué tiene sentido: defender a un rival antes que un espacio (interpretación, marcada como tal) → 5) los tres ejercicios de 10′ en una sola diapositiva con diagrama de pista (1×1 sin ayudas · 2×2 con ayuda · 3:3 en dos líneas) → 6) lo que resuelve la app: la captura real de Semana (`PROTEAM_PRODUCTO_SEMANA_CAPTURA_001`, la de u08) con los 10′ colocados en la semana, solo si la captura lo enseña tal cual; si no, la diapositiva se quita y la pieza sale sin app (se anota) → 7) ficha guardable «qué defendemos en cada categoría» y «Mándaselo a tu coordinador».
+- **Fuera:** Aragón (sin fuente suficiente), «sería falta» (no está en la cita) y cualquier frase en presente general sobre la norma.
+- **Ojo:** no el mismo día que u08 ni pegada a c12 (mié 18). «En otras federaciones cambia» también en la descripción.
 
 ### 5. «Los minutos del que menos juega: una hoja para el segundo entrenador»
 - **Insight de origen:** I-003 (los minutos obligatorios se cumplen al final, cuando ya no pesan).
 - **Objetivo:** envíos al segundo entrenador y utilidad el sábado.
-- **Arquitectura:** portada «¿Cuándo juegan tus menos habituales?» → la norma (Euskadi infantil: 12 min mínimos por jugador del acta; en otras federaciones cambia) → la escena del final con el partido decidido → tres momentos para dar esos minutos (antes del descanso, con el marcador ajustado, en una situación concreta: defensa o contraataque) → hoja del segundo: dorsal · entra · sale · minutos · momento → «Mándaselo a tu segundo».
+- **Arquitectura:** portada «¿Cuándo juegan tus menos habituales?» → la norma (Euskadi infantil: 12 min mínimos por jugador del acta; en otras federaciones cambia) → la escena del final con el partido decidido (sin minutos concretos: la duración del partido infantil no tiene fuente; nada de «minuto 44» ni «le quedan 6») → tres momentos para dar esos minutos (antes del descanso, con el marcador ajustado, en una situación concreta: defensa o contraataque) → hoja del segundo: dorsal · entra · sale · minutos · momento → «Mándaselo a tu segundo».
 - **Ojo:** no repetir c09 (talento y reparto); aquí es el cuándo. No el mismo día que u09.
 
 ## 16/11 mediodía (serie «Balonmano base», capítulos 3 y 4)
@@ -55,7 +57,8 @@ Las deja Dani (01) en cada turno de guiones por adelantado. Clara elige, marca �
 - **Ojo:** no el mismo día que u13. Sin cifras de «tiempo perdido».
 
 ### 10. «Fútbol 11: el martes del que jugó 90 y el del que jugó 0»
-- **Deporte:** fútbol 11 (cadete y juvenil). **Objetivo:** valor y envíos al preparador físico.
+- **Deporte:** fútbol 11 (juvenil y amateur; «cadete» fuera, su duración de partido no tiene fuente). **Objetivo:** valor y envíos al preparador físico.
+- **Sin duraciones sin fuente (17/11):** en la pieza se dice «el que lo jugó todo y el que no salió»; el «90′ / 0′» de la portada va rotulado «juvenil y amateur» y se comprueba ese día en el reglamento; si no se confirma para juvenil, se rotula solo «amateur».
 - **Arquitectura:** portada con la contradicción → por qué no pueden hacer lo mismo (carga del partido; principio general, sin cifras) → grupo A (jugaron mucho): qué hacen → grupo B (jugaron poco): qué hacen → cómo saber quién va a cada grupo (minutos del partido + una pregunta del 1 al 10) → hoja del martes guardable → CTA de comentar.
 - **Ojo:** por escribir el Reel gemelo (F-1); que no coincidan el mismo día.
 
@@ -86,11 +89,18 @@ Las deja Dani (01) en cada turno de guiones por adelantado. Clara elige, marca �
 - **Arquitectura:** portada con la pregunta → por qué pasa (cambia el once y nadie rehace las marcas) → la hoja: primer palo · segundo palo · frontal · el que se queda arriba · quién avisa → la misma hoja rellena con once dorsales de ejemplo → qué cambia si sale un cambio (regla: el que entra hereda la marca del que sale) → hoja para el vestuario → «Mándaselo a tu segundo».
 - **Ojo:** gemela defensiva de u24 (córner a favor); no el mismo día. No decir que zona es mejor que hombre ni al revés: la hoja sirve para las dos.
 
-### 14. «60 minutos, 14 niños, medio campo» (fútbol 7, benjamín y alevín)
-- **Escena / insight:** I-007 llevado al fútbol: compartes campo con otro equipo y la sesión pensada para campo entero se convierte en filas.
-- **Objetivo:** guardados (sesión entera, como c13).
-- **Arquitectura:** portada con los tres números → qué se pierde con filas (sin cifras) → bloque 1: rondos 4×2 en tres cuadrados → bloque 2: 2×2 con miniporterías, cuatro campos → bloque 3: partido 7×7 con una sola regla → cómo rotan los porteros → la sesión entera en una imagen con minutos (propuesta) → pregunta: «¿Cuántos días compartes campo?».
-- **Ojo:** sin primeros planos de menores. No repetir la portada de c13 (otra foto, otro encuadre).
+### 14. «Martes, 18:00. Te toca medio campo. Y sois 14.» (fútbol 7, benjamín y alevín; rehecha el 17/11 con la criba de Andrés)
+- **Escena / insight:** I-007 llevado al fútbol: compartes campo con otro equipo y la sesión pensada para campo entero se convierte en filas (inferido, sin dato).
+- **Objetivo:** guardados (sesión entera que se usa el martes sin la app).
+- **Portada:** la escena, no tres datos: «Martes, 18:00. Te toca medio campo. Y sois 14.» Foto `INSTALACION_CANTERA_BARCA_FOTO_002` con rótulo pequeño «Ciutat Esportiva Joan Gamper», recortada para conservar el marcador y la valla que parte el campo.
+- **Esqueleto distinto de c13:** se abre con el plano del medio campo ya partido en tres zonas (A, B y C) y de él cuelgan los bloques; nada de «problema → tres bloques → resumen».
+- **Las cuentas con 14 (12 de campo y 2 porteros); minutos = propuesta, 60 en total:**
+  - Bloque 1 · 15′ · zonas A y B: dos rondos 4×2 (12 jugadores). Zona C: los dos porteros con el segundo entrenador (blocajes y saque con la mano).
+  - Bloque 2 · 20′ · zonas A, B y C: tres 2×2 con miniporterías (12 jugadores), cambio de rival cada 3′. Los porteros, en la portería grande de su mitad: uno tira y el otro para, y cambian.
+  - Bloque 3 · 20′ · medio campo entero: 7×7 (6 + portero por equipo = 14), con una sola regla: el gol vale si el equipo ha pasado el balón por dos zonas.
+  - 5′ · agua y cambio de montaje entre bloques.
+- **Diapositivas:** portada → plano de las tres zonas → bloque 1 (diagrama) → bloque 2 (diagrama) → bloque 3 (diagrama) → la sesión entera en una imagen con los minutos y dónde está cada portero → pregunta: «Cuando compartes campo, ¿dónde pones a los porteros?».
+- **Ojo:** sin primeros planos de menores. No antes del dom 22 (c13 sale el mié 18). Pregunta distinta de la de c13.
 
 ### 15. «Descanso. Vas 0-2. ¿Qué dices primero?» (fútbol 11)
 - **Escena / insight:** en el descanso se habla de todo lo que ha salido mal y el equipo sale con cinco consignas y ninguna clara (misma raíz que u20 en baloncesto).
@@ -162,12 +172,13 @@ Las deja Dani (01) en cada turno de guiones por adelantado. Clara elige, marca �
 - **Ojo:** que no se parezca a la idea 3 (noviembre): si la 3 sale antes del 27/11, esta va en diciembre.
 
 ### Orden propuesto (12:30 · 19:30). Clara puede moverlo; nunca dos seguidos del mismo deporte ni el mismo día que su Reel gemelo
+Del jue 19 al dom 22, el orden de Andrés (criba del 17/11): la 14 a cuatro días de c13 y la 8 lejos de c11.
 | día | 12:30 | 19:30 |
 |---|---|---|
-| Jue 19 | idea 4 · balonmano | idea 14 · fútbol 7 |
-| Vie 20 | (c11 a las 11:00) | idea 8 · minibasket |
-| Sáb 21 | idea 23 · balonmano (con la encuesta) | idea 10 · fútbol 11 |
-| Dom 22 | idea 18 · baloncesto | idea 5 · balonmano |
+| Jue 19 | idea 4 · balonmano | idea 18 · baloncesto |
+| Vie 20 | (c11 a las 11:00) | idea 23 · balonmano (con la encuesta) |
+| Sáb 21 | idea 10 · fútbol 11 | idea 8 · minibasket |
+| Dom 22 | idea 14 · fútbol 7 | idea 5 · balonmano |
 | Lun 23 | Te lo dejo hecho · fútbol 7 alevín | idea 17 · baloncesto |
 | Mar 24 | idea 21 · balonmano | idea 13 · fútbol 11 |
 | Mié 25 | Te lo dejo hecho · baloncesto infantil | idea 22 · balonmano |

@@ -261,3 +261,11 @@ Si el 2 y el 5 no se hacen, la sustituye la **idea 13** (fútbol 11, «Córner e
 Ninguna queda en NO PASA. Las dos que hoy están por debajo de 75 (la 4 y la 14) solo salen con sus cambios; si no, entran la 21 y la 13.
 
 **Para Clara.** Cambia el orden: la 14 no puede ir a 24 horas de c13 ni la 8 pegada a c11; con la tabla de arriba no se repite deporte ni estructura y no hace falta ninguna foto nueva. Antes de escribir cada pieza con norma, abre el documento: Euskadi y Extremadura están en el repositorio (con el año, nunca en presente general); Aragón, la duración de los partidos y el recuento de la Story no están, y lo que no se confirme se quita. Las siete portadas necesitan titular de escena, no de tema: la 18, la 5 y la 14 son las que más lo piden. Y recuerda c08: ninguna diapositiva solo de texto, hoja rellena antes que hoja vacía, y la app solo donde hay captura real (la 10 y la 5 la tienen; la 18, la 23 y la 8, no).
+
+---
+
+## Repaso de Andrés a las ideas 4 y 14 rehechas por Dani (17/11, 13:15)
+
+- **Idea 4 · balonmano · «En Euskadi, tu 6:0 de infantiles no vale.» — 77/100 · PASA.** Hecho el cambio 1 (titular con lo que dice la norma) y el 2 (la tabla por categorías en la diapositiva 2, la norma en la 3 con ámbito y año). Aragón y «sería falta», fuera. Ejercicios en una diapositiva con diagrama. App solo con la captura real de Semana y solo si la enseña tal cual. Riesgo de salto: medio (quien vio u08). Sigue pendiente el día que se haga: leer la sanción en el PDF de I-002 o no ponerla.
+- **Idea 14 · fútbol 7 · «Martes, 18:00. Te toca medio campo. Y sois 14.» — 77/100 · PASA.** Portada de escena y esqueleto que abre con el plano de zonas (cambios 2 y 5). Las cuentas cuadran: 2 rondos 4×2 = 12, tres 2×2 = 12, 7×7 = 14, siempre con los dos porteros ubicados; 60′ como propuesta. Pregunta distinta de c13, rótulo de la foto y hueco del dom 22. Riesgo de salto: medio.
+- Ninguna de las dos se sustituye (no entran la 21 ni la 13). En la 10 queda fuera «cadete» y el 90′ va rotulado y por comprobar; en la 5, ningún minuto de partido.
