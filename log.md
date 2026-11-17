@@ -360,3 +360,10 @@
 - Decidido: si u36 se monta con foto del Barça, el rótulo pequeño dice «Barça · también 9 de 9», no «Bidasoa Irun».
 - Sin tocar: Stories del martes 14:30 y 18:30 (turno de Clara), «por dentro» de baloncesto (falta captura real) y Reels nuevos (ElevenLabs sin créditos).
 - Horizonte de 15 días: nada nuevo para Dani (20 guiones en reserva), Andrés (sin críticas pendientes) ni Samuel (bucle de las 22:41).
+
+## 17/11 · 9:37 · Turno de Reels (Dani, Andrés, Marta y Pau)
+- Sin correcciones ni encargos nuevos de Biel para Reels.
+- No sale ningún Reel. ElevenLabs sigue con 66 créditos (se renuevan el 14/12) y la pista generada en Higgsfield a las 6:37 sigue sin poder descargarse (cloudfront: 403 en el proxy). Sin música nueva no se programa ni un Reel con voz ni uno de datos.
+- Decidido: no se sintetiza música en el turno; se mantiene la decisión de las 6:37 (estilo de referencia generado, y Biel ya corrigió una música en u03).
+- Hueco vacío: mié 18/11 13:30 (y los siguientes). La ficha a-creditos-elevenlabs-1117 sigue abierta; no se crea otra.
+- Reserva: 21 guiones criticados sin producir (u12 montado y en pausa); no hacían falta más.
