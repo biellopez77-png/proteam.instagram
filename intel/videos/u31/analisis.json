@@ -1,14 +1,14 @@
 {
  "meta": {
   "contenedor": "mov,mp4,m4a,3gp,3g2,mj2",
-  "duracion_s": 23.767,
-  "tamano_bytes": 4880449,
-  "bitrate_kbps": 1643,
+  "duracion_s": 27.8,
+  "tamano_bytes": 5960700,
+  "bitrate_kbps": 1715,
   "ancho": 1080,
   "alto": 1920,
   "relacion": "9:16",
   "fps": 30.0,
-  "fotogramas_declarados": 713,
+  "fotogramas_declarados": 834,
   "codec_video": "h264",
   "pix_fmt": "yuv420p",
   "pistas_audio": [
@@ -16,7 +16,7 @@
     "codec": "aac",
     "canales": 1,
     "hz": 48000,
-    "bitrate_kbps": 214
+    "bitrate_kbps": 212
    }
   ],
   "etiquetas": {
@@ -26,24 +26,24 @@
    "encoder": "Lavf60.16.100"
   },
   "id": "u31",
-  "fotogramas_leidos": 713,
-  "sha256": "2497c4768cfa2e711c8b624c5aa7bfe4f4544d42e29fecee3eca9c8ffb2b95d0",
+  "fotogramas_leidos": 834,
+  "sha256": "bf27fe84819d15f5b617569b46417ac86adb7b13e0e11ac8ebc57227a914ede7",
   "archivo": "reels/u31-bloqueo-directo-octubre.mp4",
   "fuente": "",
   "marca": "proteam",
   "tipo": "propio",
   "formato": "reel",
-  "tema": "bloqueo directo de octubre, plantillas semanales (baloncesto)",
-  "analizado": "2026-11-17 02:51"
+  "tema": "En octubre tu equipo defendía el bloqueo directo. Hoy no. (baloncesto) · v2: rótulo de escena en 0 s y contador de la lista de espera",
+  "analizado": "2026-11-17 16:04"
  },
  "montaje": {
-  "cortes_duros": 4,
+  "cortes_duros": 6,
   "transiciones_o_movimientos_fuertes": 0,
-  "planos": 5,
-  "duracion_media_plano_s": 4.75,
+  "planos": 7,
+  "duracion_media_plano_s": 3.97,
   "plano_mas_largo_s": 7.167,
-  "plano_mas_corto_s": 3.733,
-  "cortes_por_10s": 1.68,
+  "plano_mas_corto_s": 1.933,
+  "cortes_por_10s": 2.16,
   "tramos_estaticos": [
    {
     "desde": 0.0,
@@ -66,9 +66,9 @@
     "duracion_s": 3.37
    },
    {
-    "desde": 21.97,
-    "hasta": 23.73,
-    "duracion_s": 1.77
+    "desde": 26.2,
+    "hasta": 27.77,
+    "duracion_s": 1.57
    }
   ],
   "nota": "Detección automática por histograma y diferencia de imagen sobre TODOS los fotogramas. Un motion graphic continuo cuenta como un solo plano; un cambio de fondo brusco dentro de una animación puede contarse como corte. Confirmar en las láminas."
@@ -78,7 +78,7 @@
    "fotograma": 135,
    "t": 4.5,
    "tipo": "corte",
-   "fuerza": 0.955
+   "fuerza": 0.957
   },
   {
    "fotograma": 350,
@@ -97,6 +97,18 @@
    "t": 20.033,
    "tipo": "corte",
    "fuerza": 1.0
+  },
+  {
+   "fotograma": 697,
+   "t": 23.233,
+   "tipo": "corte",
+   "fuerza": 0.419
+  },
+  {
+   "fotograma": 776,
+   "t": 25.867,
+   "tipo": "corte",
+   "fuerza": 0.911
   }
  ],
  "escenas": [
@@ -107,9 +119,9 @@
    "desde": 0.0,
    "hasta": 4.5,
    "duracion_s": 4.5,
-   "movimiento_medio": 0.005,
-   "luz_media": 0.258,
-   "saturacion_media": 0.189
+   "movimiento_medio": 0.0049,
+   "luz_media": 0.252,
+   "saturacion_media": 0.181
   },
   {
    "escena": 2,
@@ -147,13 +159,35 @@
   {
    "escena": 5,
    "desde_fotograma": 601,
-   "hasta_fotograma": 712,
+   "hasta_fotograma": 696,
    "desde": 20.033,
-   "hasta": 23.767,
-   "duracion_s": 3.733,
-   "movimiento_medio": 0.0115,
-   "luz_media": 0.221,
-   "saturacion_media": 0.257
+   "hasta": 23.233,
+   "duracion_s": 3.2,
+   "movimiento_medio": 0.0137,
+   "luz_media": 0.213,
+   "saturacion_media": 0.256
+  },
+  {
+   "escena": 6,
+   "desde_fotograma": 697,
+   "hasta_fotograma": 775,
+   "desde": 23.233,
+   "hasta": 25.867,
+   "duracion_s": 2.633,
+   "movimiento_medio": 0.0054,
+   "luz_media": 0.09,
+   "saturacion_media": 0.398
+  },
+  {
+   "escena": 7,
+   "desde_fotograma": 776,
+   "hasta_fotograma": 833,
+   "desde": 25.867,
+   "hasta": 27.8,
+   "duracion_s": 1.933,
+   "movimiento_medio": 0.0075,
+   "luz_media": 0.224,
+   "saturacion_media": 0.246
   }
  ],
  "laminas": [
@@ -198,12 +232,26 @@
     600,
     601,
     646,
-    656,
+    648,
     691,
-    712
+    696,
+    697,
+    736,
+    775
    ],
    "desde": 13.167,
-   "hasta": 23.733,
+   "hasta": 25.833,
+   "modo": "general"
+  },
+  {
+   "lamina": "general_003.jpg",
+   "fotogramas": [
+    776,
+    804,
+    833
+   ],
+   "desde": 25.867,
+   "hasta": 27.767,
    "modo": "general"
   },
   {
@@ -327,11 +375,36 @@
     680,
     688,
     696,
-    704,
-    712
+    697,
+    704
    ],
    "desde": 17.867,
-   "hasta": 23.733,
+   "hasta": 23.467,
+   "modo": "detalle"
+  },
+  {
+   "lamina": "detalle_005.jpg",
+   "fotogramas": [
+    712,
+    720,
+    728,
+    736,
+    744,
+    752,
+    760,
+    768,
+    775,
+    776,
+    784,
+    792,
+    800,
+    808,
+    816,
+    824,
+    832
+   ],
+   "desde": 23.733,
+   "hasta": 27.733,
    "modo": "detalle"
   }
  ],
@@ -342,132 +415,132 @@
    {
     "fotograma": 0,
     "t": 0.0,
-    "texto": "ha EN OCTUBRE LO DEFENDIAN"
+    "texto": "RF ES ip 2x2 CONTRA ELBLOQUEO 10’-L-X-V"
    },
    {
     "fotograma": 5,
     "t": 0.167,
-    "texto": "[OCTUBRE EN OCTUBRE LO DEFENDIAN"
+    "texto": "RF OCTUBRE 2x2 CONTRA ELBLOQUEO 10’-L-X-V"
    },
    {
     "fotograma": 8,
     "t": 0.267,
-    "texto": "ENOCTUB LO DEFENDIAN"
+    "texto": "2x2 CONTRA ELBLOQUEO 10’-L-X-V"
    },
    {
     "fotograma": 10,
     "t": 0.333,
-    "texto": "DY ENOCTUBRE LO DEFENDIAN"
+    "texto": "RF We 2x2 CONTRA ELBLOQUEO 10’-L-X-V"
    },
    {
     "fotograma": 15,
     "t": 0.5,
-    "texto": "Af [OCTUBRE EN OCTUBRE LO DEFENDIAN"
+    "texto": "ST BRE 2x2 CONTRA ELBLOQUEO 10’-L-X-V"
    },
    {
     "fotograma": 16,
     "t": 0.533,
-    "texto": "Af [OCTUBRE EN OCTUBRE LO DEFENDIAN"
+    "texto": "We ST BRE 2x2 CONTRA ELBLOQUEO 10’-L-X-V"
    },
    {
     "fotograma": 20,
     "t": 0.667,
-    "texto": "[OCTUBRE EN OCTUBRE LO DEFENDIAN"
+    "texto": "RF 2x2 CONTRA ELBLOQUEO 10’-L-X-V"
    },
    {
     "fotograma": 24,
     "t": 0.8,
-    "texto": "EN OCTUBRE LO DEFENDIAN"
+    "texto": "2x2 CONTRA ELBLOQUEO 10’-L-X-V"
    },
    {
     "fotograma": 25,
     "t": 0.833,
-    "texto": "EN OCTUBRE LO DEFENDIAN"
+    "texto": "(OCTUBRE 2x2 CONTRA ELBLOQUEO 10’-L-X-V"
    },
    {
     "fotograma": 32,
     "t": 1.067,
-    "texto": "EN OCTUBRE LO DEFENDIAN"
+    "texto": "Jo 15 ip 2x2 CONTRA ELBLOQUEO 10’-L-X-V"
    },
    {
     "fotograma": 40,
     "t": 1.333,
-    "texto": "AF TUB RE LO DEFENDIAN"
+    "texto": "2x2 CONTRA ELBLOQUEO 10’-L-X-V"
    },
    {
     "fotograma": 45,
     "t": 1.5,
-    "texto": "AF EN OCTUBRE LO DEFENDIAN"
+    "texto": "2x2 CONTRA ELBLOQUEO 10’-L-X:V"
    },
    {
     "fotograma": 48,
     "t": 1.6,
-    "texto": "CTUBRE EN OCTUBRE LO DEFENDIAN"
+    "texto": "Ny 2x2 CONTRA ELBLOQUEO 10’-L-X-V"
    },
    {
     "fotograma": 56,
     "t": 1.867,
-    "texto": "[OCTUBRE EN OCTUBRE LO DEFENDIAN"
+    "texto": "2x2 CONTRA ELBLOQUEO"
    },
    {
     "fotograma": 64,
     "t": 2.133,
-    "texto": "WN OCTUBRE LO DEFENDIAN EN"
+    "texto": "RF we 2x2 CONTRA ELBLOQUEO 10'-L-X-V"
    },
    {
     "fotograma": 67,
     "t": 2.233,
-    "texto": "(OCTUBRE EN OCTUBRE LO DEFENDIAN"
+    "texto": "(OCTUBRE 2x2 CONTRA ELBLOQUEO 10'-L-X-V"
    },
    {
     "fotograma": 72,
     "t": 2.4,
-    "texto": "Cu ENOC TUB RE LO DEFENDIAN"
+    "texto": "AZ SR CA 2x2 CONTRA ELBLOQUEO 10'-L-X-V"
    },
    {
     "fotograma": 80,
     "t": 2.667,
-    "texto": "EA EN OCTUB Él LODEFENDIAN Hoy no"
+    "texto": "NOVIEMBRE 2x2 CONTRA ELBLOQUEO 10'-L-X-V Hoy no"
    },
    {
     "fotograma": 88,
     "t": 2.933,
-    "texto": "NOVIEMBRE ENOCTU BRE Hoy no."
+    "texto": "(NOVIEMBRE 2x2 Hoy no."
    },
    {
     "fotograma": 90,
     "t": 3.0,
-    "texto": "EA OVIEMBRE EN OCTUBRE Hoy no"
+    "texto": "NOVIEMBRE ELBLOQUEO Hoy no."
    },
    {
     "fotograma": 96,
     "t": 3.2,
-    "texto": "EN OCTUBRE. Hoy no"
+    "texto": "EA NOVIEMBRE 2x2 EL Hoy no."
    },
    {
     "fotograma": 104,
     "t": 3.467,
-    "texto": "EN OCTUBRE Hoy no No apuntaste la semana"
+    "texto": "EA Ny (NOVIEMBRE CONTRA ELBLOQUEO Hoy no. No apuntaste la semana."
    },
    {
     "fotograma": 112,
     "t": 3.733,
-    "texto": "we ASS NN (NOVIEMBRE ENOCTUBRE Hoy no. No apuntaste la semana."
+    "texto": "ASS (NOVIEMBRE 2x2 CONTRA ELBLOQUEO Hoy no. No apuntaste la semana."
    },
    {
     "fotograma": 120,
     "t": 4.0,
-    "texto": "NOVIEMBRE ENOCTUBRE Hoy no. No apuntaste la semana."
+    "texto": "NOVIEMBRE 2x2 CONTRA ELBLOQUEO Hoy no. No apuntaste la semana."
    },
    {
     "fotograma": 128,
     "t": 4.267,
-    "texto": "ae (NOVIEMBRE EN OCTUBRE Hoy no. No apuntaste la semana"
+    "texto": "(NOVIEMBRE 2x2 CONTRA ELBLOQUEO Hoy no. No apuntaste la semana."
    },
    {
     "fotograma": 134,
     "t": 4.467,
-    "texto": "AS NOVIEMBRE) EN OCTUBRE LO DEFENDIAN No apuntaste la semana Hoy no"
+    "texto": "AA NOVIEMBRE 2x2 CONTRA ELBLOQUEO 10'-L-X-V Hoy no. No apuntaste la semana."
    },
    {
     "fotograma": 135,
@@ -842,7 +915,7 @@
    {
     "fotograma": 601,
     "t": 20.033,
-    "texto": ""
+    "texto": "fo"
    },
    {
     "fotograma": 608,
@@ -852,198 +925,287 @@
    {
     "fotograma": 616,
     "t": 20.533,
-    "texto": "sr EA RETO PARA TU STAFF Comenta tu deporte, categoría días LISTA DE ESPERA HASTA EL 27 NOV"
+    "texto": "bl RETO PARA TU STAFF Comenta tu deporte, categoria dias"
    },
    {
     "fotograma": 624,
     "t": 20.8,
-    "texto": ">is RETO PARA TU Comenta tu deporte, categoria dias LISTA DE ESPERA HASTA EL 27 NOV 35 meses gratis."
+    "texto": "RETO PARA TU STAFF Comenta tu deporte, categoria dias"
    },
    {
     "fotograma": 632,
     "t": 21.067,
-    "texto": "RETO PARA TU STAFF ¿Qué semana de octubre Comenta tu deporte, categoría días LISTA DE ESPERA HASTA EL 27 NOV 35 meses gratis."
+    "texto": "RETO PARA TU STAFF ¿Qué semana de octubre Comenta tu deporte, categoría días"
    },
    {
     "fotograma": 640,
     "t": 21.333,
-    "texto": "LF RETO PARA TU STAFF ¿Qué semana de octubre Comenta tu deporte, categoria dias LISTA DE ESPERA HASTA EL 27 NOV meses gratis."
+    "texto": "RETO PARA TU STAFF ¿Qué semana de octubre Comenta tu deporte, categoria dias"
    },
    {
     "fotograma": 646,
     "t": 21.533,
-    "texto": "RETO PARA TU STAFF ¿Qué semana de octubre Comenta tu deporte, categoría días LISTA DE ESPERA HASTA EL 27 NOV meses gratis."
+    "texto": "we RETO PARA TU STAFF ¿Qué semana de octubre Comenta tu deporte, categoria dias"
    },
    {
     "fotograma": 648,
     "t": 21.6,
-    "texto": "yA Ws RETO PARA TU STAFF ¿Qué semana de octubre Comenta tu deporte, categoria dias LISTA DE ESPERA HASTA EL 27 NOV meses gratis."
+    "texto": "ES RETO PARA TU STAFF ¿Qué semana de octubre Comenta tu deporte, categoría días"
    },
    {
     "fotograma": 656,
     "t": 21.867,
-    "texto": "RETO PARA TU STAFF ¿Qué semana de octubre repetiriais mañana? Comenta tu deporte, categoría días LISTA DE ESPERA HASTA EL 27 NOV meses gratis."
+    "texto": "Ws AS RETO PARA TU STAFF ¿Qué semana de octubre repetiriais mañana? Comenta tu deporte, categoría días"
    },
    {
     "fotograma": 664,
     "t": 22.133,
-    "texto": "EA RETO PARA TU STAFF ¿Qué semana de octubre repetiriais mañana? Comenta tu deporte, categoría días LISTA DE ESPERA HASTA EL 27 NOV meses gratis."
+    "texto": "Ae EA RETO PARA TU STAFF ¿Qué semana de octubre repetiriais mañana? Comenta tu deporte, categoría días"
    },
    {
     "fotograma": 672,
     "t": 22.4,
-    "texto": "RETO PARA TU STAFF ¿Qué semana de octubre repetiriais mañana? Comenta tu deporte, categoría días LISTA DE ESPERA HASTA EL 27 NOV meses gratis."
+    "texto": "wi RETO PARA TU STAFF ¿Qué semana de octubre repetiriais mañana? Comenta tu deporte, categoría días"
    },
    {
     "fotograma": 680,
     "t": 22.667,
-    "texto": "RETO PARA TU ¿Qué semana de octubre repetiriais manana? Comenta tu deporte, categoria dias LISTA DE ESPERA HASTA EL 27 NOV meses gratis."
+    "texto": "RETO PARA TU STAFF ¿Qué semana de octubre repetiriais mañana? Comenta tu deporte, categoría días"
    },
    {
     "fotograma": 688,
     "t": 22.933,
-    "texto": "Es. ZA RETO PARA TU STAFF ¿Qué semana de octubre repetiriais mañana? Comenta tu deporte, categoría días LISTA DE ESPERA HASTA EL 27 NOV meses gratis."
+    "texto": "RETO PARA TU STAFF ¿Qué semana de octubre repetiriais mañana? Comenta tu deporte, categoría días"
    },
    {
     "fotograma": 691,
     "t": 23.033,
-    "texto": "ZA RETO PARA TU STAFF ¿Qué semana de octubre repetiríais mañana? Comenta tu deporte, categoría días LISTA DE ESPERA HASTA EL 27 NOV meses gratis."
+    "texto": "EA RETO PARA TU STAFF ¿Qué semana de octubre repetiriais mañana? Comenta tu deporte, categoría días"
    },
    {
     "fotograma": 696,
     "t": 23.2,
-    "texto": "AS RETO PARA TU STAFF ¿Qué semana de octubre repetiríais mañana? Comenta tu deporte, categoría días LISTA DE ESPERA HASTA EL 27 NOV meses gratis."
+    "texto": "yA RETO PARA TU STAFF ¿Qué semana de octubre repetiriais mañana? Comenta tu deporte, categoría días"
+   },
+   {
+    "fotograma": 697,
+    "t": 23.233,
+    "texto": "AF ES AS RETO PARA TU ¿Qué semana de octubre repetiriais mañana? Comenta tu deporte, categoría días"
    },
    {
     "fotograma": 704,
     "t": 23.467,
-    "texto": "we RETO PARA TU STAFF ¿Qué semana de octubre repetiriais mañana? Comenta tu deporte, categoría días LISTA DE ESPERA HASTA EL 27 NOV meses gratis."
+    "texto": "LISTA DE ESPERA 01 HORAS Tu email"
    },
    {
     "fotograma": 712,
     "t": 23.733,
-    "texto": "y4 EA RETO PARA TU ¿Qué semana de octubre repetiriais mañana? Comenta tu deporte, categoría días LISTA DE ESPERA HASTA EL 27 NOV meses gratis."
+    "texto": "LISTA DE ESPERA 10 01 11 DÍAS HORAS SEG entrenadoremiclu"
+   },
+   {
+    "fotograma": 720,
+    "t": 24.0,
+    "texto": "LISTA DE ESPERA 09 23 41 49 DÍAS HORAS MIN SEG entrenador@miclub.es"
+   },
+   {
+    "fotograma": 728,
+    "t": 24.267,
+    "texto": "LISTA DE ESPERA 17 32 09 DÍAS HORAS SEG"
+   },
+   {
+    "fotograma": 736,
+    "t": 24.533,
+    "texto": "LISTA DE ESPERA 09 05 21 DÍAS HORAS SEG entrenador@miclub.es"
+   },
+   {
+    "fotograma": 744,
+    "t": 24.8,
+    "texto": "LISTA DE ESPERA 19 og 06 DÍAS HORAS MIN SEG entrenador@miclub.es"
+   },
+   {
+    "fotograma": 752,
+    "t": 25.067,
+    "texto": "LISTA DE ESPERA 06 20 43 30 DÍAS HORAS MIN SEG"
+   },
+   {
+    "fotograma": 760,
+    "t": 25.333,
+    "texto": "LISTA DE ESPERA 04 19 54 DÍAS HORAS MIN SEG entrenador@miclub.es"
+   },
+   {
+    "fotograma": 768,
+    "t": 25.6,
+    "texto": "LISTA DE ESPERA o2 01 35 DÍAS HORAS SEG entrenador@miclub.es CE"
+   },
+   {
+    "fotograma": 775,
+    "t": 25.833,
+    "texto": "LISTA DE ESPERA 00 00 00 00 DÍAS HORAS MIN SEO entrenador@miclub.es CE"
+   },
+   {
+    "fotograma": 776,
+    "t": 25.867,
+    "texto": "ES"
+   },
+   {
+    "fotograma": 784,
+    "t": 26.133,
+    "texto": "27 NOV"
+   },
+   {
+    "fotograma": 792,
+    "t": 26.4,
+    "texto": "27 NOV"
+   },
+   {
+    "fotograma": 800,
+    "t": 26.667,
+    "texto": "27 NOV"
+   },
+   {
+    "fotograma": 804,
+    "t": 26.8,
+    "texto": "27 NOV"
+   },
+   {
+    "fotograma": 808,
+    "t": 26.933,
+    "texto": "27 NOV"
+   },
+   {
+    "fotograma": 816,
+    "t": 27.2,
+    "texto": "27 NOV"
+   },
+   {
+    "fotograma": 824,
+    "t": 27.467,
+    "texto": "27 NOV"
+   },
+   {
+    "fotograma": 832,
+    "t": 27.733,
+    "texto": "27 NOV"
+   },
+   {
+    "fotograma": 833,
+    "t": 27.767,
+    "texto": "27 NOV"
    }
   ],
   "bloques": [
    {
     "desde": 0.0,
     "hasta": 0.0,
-    "texto": "ha EN OCTUBRE LO DEFENDIAN",
-    "palabras": 5
+    "texto": "RF ES ip 2x2 CONTRA ELBLOQUEO 10’-L-X-V",
+    "palabras": 7
    },
    {
     "desde": 0.167,
     "hasta": 0.167,
-    "texto": "[OCTUBRE EN OCTUBRE LO DEFENDIAN",
-    "palabras": 5
+    "texto": "RF OCTUBRE 2x2 CONTRA ELBLOQUEO 10’-L-X-V",
+    "palabras": 6
+   },
+   {
+    "desde": 0.333,
+    "hasta": 0.333,
+    "texto": "RF We 2x2 CONTRA ELBLOQUEO 10’-L-X-V",
+    "palabras": 6
    },
    {
     "desde": 0.5,
-    "hasta": 0.533,
-    "texto": "Af [OCTUBRE EN OCTUBRE LO DEFENDIAN",
+    "hasta": 0.5,
+    "texto": "ST BRE 2x2 CONTRA ELBLOQUEO 10’-L-X-V",
     "palabras": 6
+   },
+   {
+    "desde": 0.533,
+    "hasta": 0.533,
+    "texto": "We ST BRE 2x2 CONTRA ELBLOQUEO 10’-L-X-V",
+    "palabras": 7
    },
    {
     "desde": 0.667,
     "hasta": 0.667,
-    "texto": "[OCTUBRE EN OCTUBRE LO DEFENDIAN",
+    "texto": "RF 2x2 CONTRA ELBLOQUEO 10’-L-X-V",
     "palabras": 5
    },
    {
-    "desde": 0.8,
+    "desde": 0.833,
+    "hasta": 0.833,
+    "texto": "(OCTUBRE 2x2 CONTRA ELBLOQUEO 10’-L-X-V",
+    "palabras": 5
+   },
+   {
+    "desde": 1.067,
     "hasta": 1.067,
-    "texto": "EN OCTUBRE LO DEFENDIAN",
-    "palabras": 4
+    "texto": "Jo 15 ip 2x2 CONTRA ELBLOQUEO 10’-L-X-V",
+    "palabras": 7
    },
    {
     "desde": 1.333,
-    "hasta": 1.333,
-    "texto": "AF TUB RE LO DEFENDIAN",
-    "palabras": 5
-   },
-   {
-    "desde": 1.5,
     "hasta": 1.5,
-    "texto": "AF EN OCTUBRE LO DEFENDIAN",
-    "palabras": 5
+    "texto": "2x2 CONTRA ELBLOQUEO 10’-L-X-V",
+    "palabras": 4
    },
    {
     "desde": 1.6,
     "hasta": 1.6,
-    "texto": "CTUBRE EN OCTUBRE LO DEFENDIAN",
-    "palabras": 5
-   },
-   {
-    "desde": 1.867,
-    "hasta": 1.867,
-    "texto": "[OCTUBRE EN OCTUBRE LO DEFENDIAN",
+    "texto": "Ny 2x2 CONTRA ELBLOQUEO 10’-L-X-V",
     "palabras": 5
    },
    {
     "desde": 2.133,
     "hasta": 2.133,
-    "texto": "WN OCTUBRE LO DEFENDIAN EN",
-    "palabras": 5
+    "texto": "RF we 2x2 CONTRA ELBLOQUEO 10'-L-X-V",
+    "palabras": 6
    },
    {
     "desde": 2.233,
     "hasta": 2.233,
-    "texto": "(OCTUBRE EN OCTUBRE LO DEFENDIAN",
+    "texto": "(OCTUBRE 2x2 CONTRA ELBLOQUEO 10'-L-X-V",
     "palabras": 5
    },
    {
     "desde": 2.4,
     "hasta": 2.4,
-    "texto": "Cu ENOC TUB RE LO DEFENDIAN",
-    "palabras": 6
-   },
-   {
-    "desde": 2.667,
-    "hasta": 2.667,
-    "texto": "EA EN OCTUB Él LODEFENDIAN Hoy no",
+    "texto": "AZ SR CA 2x2 CONTRA ELBLOQUEO 10'-L-X-V",
     "palabras": 7
    },
    {
-    "desde": 2.933,
+    "desde": 2.667,
     "hasta": 2.933,
-    "texto": "NOVIEMBRE ENOCTU BRE Hoy no.",
-    "palabras": 5
-   },
-   {
-    "desde": 3.0,
-    "hasta": 3.0,
-    "texto": "EA OVIEMBRE EN OCTUBRE Hoy no",
-    "palabras": 6
+    "texto": "NOVIEMBRE 2x2 CONTRA ELBLOQUEO 10'-L-X-V Hoy no",
+    "palabras": 7
    },
    {
     "desde": 3.2,
+    "hasta": 3.2,
+    "texto": "EA NOVIEMBRE 2x2 EL Hoy no.",
+    "palabras": 6
+   },
+   {
+    "desde": 3.467,
     "hasta": 3.467,
-    "texto": "EN OCTUBRE Hoy no No apuntaste la semana",
-    "palabras": 8
+    "texto": "EA Ny (NOVIEMBRE CONTRA ELBLOQUEO Hoy no. No apuntaste la semana.",
+    "palabras": 11
    },
    {
     "desde": 3.733,
     "hasta": 3.733,
-    "texto": "we ASS NN (NOVIEMBRE ENOCTUBRE Hoy no. No apuntaste la semana.",
+    "texto": "ASS (NOVIEMBRE 2x2 CONTRA ELBLOQUEO Hoy no. No apuntaste la semana.",
     "palabras": 11
    },
    {
     "desde": 4.0,
-    "hasta": 4.0,
-    "texto": "NOVIEMBRE ENOCTUBRE Hoy no. No apuntaste la semana.",
-    "palabras": 8
-   },
-   {
-    "desde": 4.267,
     "hasta": 4.267,
-    "texto": "ae (NOVIEMBRE EN OCTUBRE Hoy no. No apuntaste la semana",
+    "texto": "(NOVIEMBRE 2x2 CONTRA ELBLOQUEO Hoy no. No apuntaste la semana.",
     "palabras": 10
    },
    {
     "desde": 4.467,
     "hasta": 4.467,
-    "texto": "AS NOVIEMBRE) EN OCTUBRE LO DEFENDIAN No apuntaste la semana Hoy no",
+    "texto": "AA NOVIEMBRE 2x2 CONTRA ELBLOQUEO 10'-L-X-V Hoy no. No apuntaste la semana.",
     "palabras": 12
    },
    {
@@ -1091,92 +1253,80 @@
    {
     "desde": 20.533,
     "hasta": 20.533,
-    "texto": "sr EA RETO PARA TU STAFF Comenta tu deporte, categoría días LISTA DE ESPERA HASTA EL 27 NOV",
-    "palabras": 18
+    "texto": "bl RETO PARA TU STAFF Comenta tu deporte, categoria dias",
+    "palabras": 10
    },
    {
     "desde": 20.8,
-    "hasta": 20.8,
-    "texto": ">is RETO PARA TU Comenta tu deporte, categoria dias LISTA DE ESPERA HASTA EL 27 NOV 35 meses gratis.",
-    "palabras": 19
-   },
-   {
-    "desde": 21.067,
-    "hasta": 21.067,
-    "texto": "RETO PARA TU STAFF ¿Qué semana de octubre Comenta tu deporte, categoría días LISTA DE ESPERA HASTA EL 27 NOV 35 meses gratis.",
-    "palabras": 23
-   },
-   {
-    "desde": 21.333,
     "hasta": 21.333,
-    "texto": "LF RETO PARA TU STAFF ¿Qué semana de octubre Comenta tu deporte, categoria dias LISTA DE ESPERA HASTA EL 27 NOV meses gratis.",
-    "palabras": 23
+    "texto": "RETO PARA TU STAFF ¿Qué semana de octubre Comenta tu deporte, categoría días",
+    "palabras": 13
    },
    {
     "desde": 21.533,
     "hasta": 21.533,
-    "texto": "RETO PARA TU STAFF ¿Qué semana de octubre Comenta tu deporte, categoría días LISTA DE ESPERA HASTA EL 27 NOV meses gratis.",
-    "palabras": 22
+    "texto": "we RETO PARA TU STAFF ¿Qué semana de octubre Comenta tu deporte, categoria dias",
+    "palabras": 14
    },
    {
     "desde": 21.6,
     "hasta": 21.6,
-    "texto": "yA Ws RETO PARA TU STAFF ¿Qué semana de octubre Comenta tu deporte, categoria dias LISTA DE ESPERA HASTA EL 27 NOV meses gratis.",
-    "palabras": 24
+    "texto": "ES RETO PARA TU STAFF ¿Qué semana de octubre Comenta tu deporte, categoría días",
+    "palabras": 14
    },
    {
     "desde": 21.867,
     "hasta": 21.867,
-    "texto": "RETO PARA TU STAFF ¿Qué semana de octubre repetiriais mañana? Comenta tu deporte, categoría días LISTA DE ESPERA HASTA EL 27 NOV meses gratis.",
-    "palabras": 24
+    "texto": "Ws AS RETO PARA TU STAFF ¿Qué semana de octubre repetiriais mañana? Comenta tu deporte, categoría días",
+    "palabras": 17
    },
    {
     "desde": 22.133,
     "hasta": 22.133,
-    "texto": "EA RETO PARA TU STAFF ¿Qué semana de octubre repetiriais mañana? Comenta tu deporte, categoría días LISTA DE ESPERA HASTA EL 27 NOV meses gratis.",
-    "palabras": 25
+    "texto": "Ae EA RETO PARA TU STAFF ¿Qué semana de octubre repetiriais mañana? Comenta tu deporte, categoría días",
+    "palabras": 17
    },
    {
     "desde": 22.4,
     "hasta": 22.4,
-    "texto": "RETO PARA TU STAFF ¿Qué semana de octubre repetiriais mañana? Comenta tu deporte, categoría días LISTA DE ESPERA HASTA EL 27 NOV meses gratis.",
-    "palabras": 24
+    "texto": "wi RETO PARA TU STAFF ¿Qué semana de octubre repetiriais mañana? Comenta tu deporte, categoría días",
+    "palabras": 16
    },
    {
     "desde": 22.667,
-    "hasta": 22.667,
-    "texto": "RETO PARA TU ¿Qué semana de octubre repetiriais manana? Comenta tu deporte, categoria dias LISTA DE ESPERA HASTA EL 27 NOV meses gratis.",
-    "palabras": 23
-   },
-   {
-    "desde": 22.933,
     "hasta": 22.933,
-    "texto": "Es. ZA RETO PARA TU STAFF ¿Qué semana de octubre repetiriais mañana? Comenta tu deporte, categoría días LISTA DE ESPERA HASTA EL 27 NOV meses gratis.",
-    "palabras": 26
+    "texto": "RETO PARA TU STAFF ¿Qué semana de octubre repetiriais mañana? Comenta tu deporte, categoría días",
+    "palabras": 15
    },
    {
     "desde": 23.033,
     "hasta": 23.033,
-    "texto": "ZA RETO PARA TU STAFF ¿Qué semana de octubre repetiríais mañana? Comenta tu deporte, categoría días LISTA DE ESPERA HASTA EL 27 NOV meses gratis.",
-    "palabras": 25
+    "texto": "EA RETO PARA TU STAFF ¿Qué semana de octubre repetiriais mañana? Comenta tu deporte, categoría días",
+    "palabras": 16
    },
    {
     "desde": 23.2,
     "hasta": 23.2,
-    "texto": "AS RETO PARA TU STAFF ¿Qué semana de octubre repetiríais mañana? Comenta tu deporte, categoría días LISTA DE ESPERA HASTA EL 27 NOV meses gratis.",
-    "palabras": 25
+    "texto": "yA RETO PARA TU STAFF ¿Qué semana de octubre repetiriais mañana? Comenta tu deporte, categoría días",
+    "palabras": 16
+   },
+   {
+    "desde": 23.233,
+    "hasta": 23.233,
+    "texto": "AF ES AS RETO PARA TU ¿Qué semana de octubre repetiriais mañana? Comenta tu deporte, categoría días",
+    "palabras": 17
    },
    {
     "desde": 23.467,
-    "hasta": 23.467,
-    "texto": "we RETO PARA TU STAFF ¿Qué semana de octubre repetiriais mañana? Comenta tu deporte, categoría días LISTA DE ESPERA HASTA EL 27 NOV meses gratis.",
-    "palabras": 25
+    "hasta": 25.833,
+    "texto": "LISTA DE ESPERA 00 00 00 00 DÍAS HORAS MIN SEO entrenador@miclub.es CE",
+    "palabras": 13
    },
    {
-    "desde": 23.733,
-    "hasta": 23.733,
-    "texto": "y4 EA RETO PARA TU ¿Qué semana de octubre repetiriais mañana? Comenta tu deporte, categoría días LISTA DE ESPERA HASTA EL 27 NOV meses gratis.",
-    "palabras": 25
+    "desde": 26.133,
+    "hasta": 27.767,
+    "texto": "27 NOV",
+    "palabras": 2
    }
   ]
  },
@@ -1185,11 +1335,15 @@
   "wav": "intel/videos/u31/audio_16k.wav",
   "volumen_integrado_lufs": "-14.54",
   "pico_real_db": "0.08",
-  "rango_lra": "1.70",
+  "rango_lra": "1.80",
   "silencios": [
    {
     "desde": 10.69,
     "hasta": 10.97
+   },
+   {
+    "desde": 27.3,
+    "hasta": 27.8
    }
   ],
   "subidas_bruscas_s": [
@@ -1203,7 +1357,8 @@
    15.6,
    18.7,
    20.2,
-   21.7
+   21.7,
+   25.9
   ],
   "energia_db_cada_0_1s": [
    -17.9,
@@ -1408,20 +1563,20 @@
    -20.6,
    -24.2,
    -14.2,
-   -9.4,
-   -15.8,
-   -13.4,
+   -9.6,
+   -15.9,
+   -13.0,
    -12.3,
-   -10.4,
+   -10.3,
    -19.7,
    -18.7,
    -17.9,
-   -12.6,
+   -12.5,
    -14.6,
    -14.0,
    -15.8,
    -15.6,
-   -12.2,
+   -12.3,
    -25.1,
    -8.8,
    -16.1,
@@ -1433,16 +1588,56 @@
    -12.7,
    -10.6,
    -14.6,
+   -10.0,
+   -15.9,
+   -18.8,
+   -18.3,
+   -19.7,
+   -18.4,
+   -13.3,
+   -12.5,
+   -18.5,
+   -11.4,
+   -12.3,
+   -14.7,
+   -21.9,
    -10.1,
-   -16.5,
-   -21.1,
-   -21.7,
-   -24.7,
-   -24.8,
-   -33.5,
-   -36.4,
-   -38.2,
-   -44.1
+   -11.9,
+   -13.2,
+   -12.6,
+   -10.7,
+   -12.8,
+   -13.3,
+   -23.1,
+   -16.3,
+   -18.2,
+   -10.2,
+   -15.6,
+   -12.4,
+   -11.6,
+   -13.0,
+   -14.8,
+   -27.5,
+   -29.1,
+   -21.0,
+   -12.3,
+   -10.5,
+   -17.1,
+   -13.4,
+   -9.3,
+   -10.9,
+   -18.8,
+   -12.5,
+   -22.0,
+   -14.5,
+   -25.4,
+   -31.1,
+   -33.4,
+   -31.3,
+   -62.3,
+   -180.0,
+   -119.3,
+   -180.0
   ],
   "transcripcion": "transcripcion.json (tools/reel31/voz.tsv)",
   "nota": "Esto son medidas. Entonación, claridad de la locución, timbre o si hay música NO se pueden afirmar sin escuchar o transcribir."
@@ -1451,7 +1646,11 @@
   "detalle_001.jpg",
   "detalle_002.jpg",
   "detalle_003.jpg",
-  "detalle_004.jpg"
+  "detalle_004.jpg",
+  "detalle_005.jpg",
+  "general_001.jpg",
+  "general_002.jpg",
+  "general_003.jpg"
  ],
- "orden": "python3 tools/video_intel.py analyze reels/u31-bloqueo-directo-octubre.mp4 --id u31 --tema bloqueo directo de octubre, plantillas semanales (baloncesto) --modo detalle"
+ "orden": "python3 tools/video_intel.py analyze reels/u31-bloqueo-directo-octubre.mp4 --id u31 --tema En octubre tu equipo defendía el bloqueo directo. Hoy no. (baloncesto) · v2: rótulo de escena en 0 s y contador de la lista de espera --modo detalle"
 }

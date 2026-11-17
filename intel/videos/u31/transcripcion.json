@@ -1,10 +1,10 @@
 {
  "origen": "tools/reel31/voz.tsv",
  "tipo": "locución generada con tiempos por palabra (exacta, no reconocida por oído)",
- "palabras": 17,
+ "palabras": 19,
  "primera_palabra_s": 0.107,
- "ultima_palabra_s": 23.172,
- "ritmo_palabras_por_s": 0.74,
+ "ultima_palabra_s": 27.312,
+ "ritmo_palabras_por_s": 0.7,
  "frases": [
   {
    "desde": 0.107,
@@ -71,6 +71,12 @@
    "hasta": 23.172,
    "texto": "Y a tu segundo: ¿qué semana de octubre repetiríais mañana?",
    "palabras_por_s": 0.66
+  },
+  {
+   "desde": 23.322,
+   "hasta": 27.312,
+   "texto": "Lista de espera hasta el veintisiete de noviembre: tres meses gratis.",
+   "palabras_por_s": 0.5
   }
  ],
  "pausas": [],
@@ -159,6 +165,16 @@
    "desde": 20.993,
    "hasta": 23.172,
    "palabra": "¿qué semana de octubre repetiríais mañana?"
+  },
+  {
+   "desde": 23.322,
+   "hasta": 25.862,
+   "palabra": "Lista de espera hasta el veintisiete de noviembre:"
+  },
+  {
+   "desde": 25.942,
+   "hasta": 27.312,
+   "palabra": "tres meses gratis."
   }
  ]
 }

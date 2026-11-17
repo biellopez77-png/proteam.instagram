@@ -39,5 +39,8 @@ put(T['guarda'] - .2, whoosh(.45, 2400, 400), .11)                      # papel
 for k in ('q1', 'q2', 'q3'): put(T[k] - .05, tick(.03, 1300), .16)
 put(T['seg'] - .2, whoosh(.45, 2400, 400), .11)                         # vuelve la foto
 put(T['seg'] + .4, shimmer(.5), .03)
+# cierre v2: entra la web de la lista, clic en el campo, toque en el botón, «Estás dentro» y golpe en «tres meses gratis»
+put(T['camp'] - .05, whoosh(.45, 300, 2200), .12); put(T['camp'] + .19, tick(.03, 1500), .14); put(T['camp'] + 1.1, tick(.03, 1300), .2); put(T['camp'] + 1.32, shimmer(.6), .05)
+put(T['gra'] - .1, thump(.45), .24)
 out = out[:int(SR * DUR)]; out = out / max(1e-9, np.abs(out).max()) * .85
 wavfile.write(sys.argv[1], SR, (out * 32767).astype(np.int16)); print('ok')

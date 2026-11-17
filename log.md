@@ -405,3 +405,7 @@
 - Marta: u29 «26–17. Tira tu lateral.» ya cierra con el contador de la lista de espera (el de u28): web con el contador que corre, el correo, el toque y «Estás dentro», y luego «HASTA EL 27 NOV · 3 meses gratis» con la voz de Mateo. Dura 27,6 s. Andrés: 79. Sale hoy a las 20:30, a su hora.
 - Decidido: la frase de voz del cierre («Lista de espera hasta el veintisiete de noviembre: tres meses gratis») es un corte de la toma de u28, misma voz; no se gastan caracteres. No se ha podido escuchar aquí.
 - Parche 0009 subido: guiones u41 (fútbol, 77) y u42 (balonmano, 81), sus críticas, la revisión de Andrés de hook y contador, 7 hooks y 2 insights.
+- Marta: u31 «En octubre tu equipo defendía el bloqueo directo. Hoy no.» abre ahora con la escena en pantalla («OCTUBRE · 2×2 CONTRA EL BLOQUEO · 10′ · L · X · V») en vez del titular, y cierra con el contador de la lista de espera y la voz de Mateo. Dura 27,8 s. Andrés: 82. Sale hoy a las 22:30, a su hora.
+- Decidido: el rótulo dice «Hoy no.» (lo que dice la voz) y no «Hoy ya no lo defienden»; la portada no se cambia (en miniatura se lee mejor la antigua).
+- Quedan para los siguientes turnos los contadores de u30 (mié 9:30), u33 (mié 11:30) y u12 (mié 13:30). Guion: tools/reel29/cierre_contador.py y tools/reel31/cierre_contador.py (la frase del cierre se corta de la toma de u28; no gasta voz).
+- Andrés (horizonte de 15 días): tarea nueva, dejar escrito el cierre con contador en los guiones de reserva que aún no lo llevan.

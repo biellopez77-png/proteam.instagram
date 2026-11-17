@@ -2,7 +2,7 @@
 const T = window.TIMES; window.DUR = T.END;
 const clamp = (x, a = 0, b = 1) => Math.max(a, Math.min(b, x));
 const seg = (t, a, b) => clamp((t - a) / (b - a));
-const E = { out: p => 1 - Math.pow(1 - p, 3), out5: p => 1 - Math.pow(1 - p, 5), io: p => p < .5 ? 4 * p * p * p : 1 - Math.pow(-2 * p + 2, 3) / 2 };
+const E = { out: p => 1 - Math.pow(1 - p, 3), out5: p => 1 - Math.pow(1 - p, 5), in: p => p * p * p, io: p => p < .5 ? 4 * p * p * p : 1 - Math.pow(-2 * p + 2, 3) / 2 };
 const $ = id => document.getElementById(id);
 const show = (el, v) => { el.style.display = v ? (el._d || 'block') : 'none'; };
 const IMG = n => `/tools/reel31/img/${n}.jpg`;

@@ -35,3 +35,13 @@ Vídeo auditado: `reels/u31-bloqueo-directo-octubre.mp4` (23,77 s, 1080×1920, 3
 
 ## Diez preguntas
 1 Sí. 2 Sí (bloqueo directo, 2×2, 10′). 3 «Lo que funcionó y no está escrito no vuelve». 4 Sí. 5 Sí. 6 Aporta. 7 Sí. 8 Sí (cambio ≤ 2 s). 9 Sí. 10 Sí.
+
+## v2 · 17/11 17:40 · rótulo de escena en 0 s y cierre con el contador (Marta 02 y Andrés 05, turno de encargos)
+Cobertura: láminas detalle 001 y general 003 miradas, más 11 fotogramas sueltos del arranque y del cierre a tamaño completo; de 4,5 a 23,2 s no cambia nada respecto a la v1. Audio medido segundo a segundo. La frase del cierre es un corte de la toma de u28 v3 (misma voz de Mateo), igualada de nivel; no se ha podido escuchar aquí.
+- 00:00,00 — Parker en el bloqueo de Booker a sangre; pastilla OCTUBRE, **2×2 CONTRA EL BLOQUEO** y, en azul, **10′ · L · X · V** desde el fotograma 0 (antes «EN OCTUBRE / LO DEFENDÍAN»). Son los apuntes que el propio vídeo enseña en 4,8–7 s y en la ficha; no hay cifras nuevas. La primera línea va a 80 px: se lee, pero es más pequeña que el titular anterior.
+- 00:02,66 — la pastilla pasa a NOVIEMBRE, la foto se va a gris y entra *Hoy no.*; 3,3 s **No apuntaste la semana.** (igual que antes).
+- 00:20,0–23,2 — reto sobre la foto: «¿Qué semana de octubre repetiríais mañana?» + «Comenta tu deporte, categoría y días». Ya no lleva debajo «LISTA DE ESPERA · HASTA EL 27 NOV · 3 meses gratis».
+- 00:23,3–25,8 — web de la lista de espera: contador desde 10 d 01 h 29 min 59 s (lo que falta a las 22:30 de hoy) que corre hasta cero, correo, toque y «Estás dentro». Voz: «Lista de espera hasta el veintisiete de noviembre:».
+- 00:25,9–27,8 — vuelve la foto (bucle): **HASTA EL 27 NOV** y *3 meses gratis.* con la voz.
+- Audio: nivel estable (−12 a −16 dB por segundo) hasta 27 s y fundido final. Ningún tramo quieto de más de 2 s. Duración 27,8 s (antes 23,8 s).
+
