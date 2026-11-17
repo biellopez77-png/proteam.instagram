@@ -1232,3 +1232,13 @@ Fuente de las normas: Normativa de Balonmano 2025, Juegos Deportivos Escolares d
 - **H1089** Dos faltas en cuatro minutos. Dieciséis minutos en el banquillo. [baloncesto · comparativa · faltas] (12/15)
 - **H1090** Sentarlo con dos faltas no es el error. El error es el jueves. [baloncesto · provocadora · faltas] (12/15)
 - **H1091** Tu pívot con dos faltas no es un problema. Tu equipo sin él, sí. [baloncesto · contraintuitiva · faltas] (11/15)
+
+## Nuevos · 17/11 19:30 (Dani, u46 y u47, sin oferta desde el 28/11)
+- **H1092** 12 % en 2001. 24 % hoy. Las lesiones de isquio. [fútbol · comparativa · prevención] (12/15)
+- **H1093** Martes de octubre: «hoy, nórdicos». Martes de noviembre: nadie se acuerda. [fútbol · situación real · prevención] (12/15)
+- **H1094** El nórdico funciona. Lo que falla es noviembre. [fútbol · contraintuitiva · prevención] (11/15)
+- **H1095** Tu equipo hace nórdicos. Pregunta desde cuándo. [fútbol · provocadora · prevención] (11/15)
+- **H1096** Tu segundo apunta demasiado. Por eso al descanso no sabes nada. [balonmano · contraintuitiva · registro] (12/15)
+- **H1097** Al descanso no se lee una libreta. Se lee una línea. [balonmano · provocadora · registro] (12/15)
+- **H1098** Cuarenta rayas en la libreta. Una decisión al descanso. [balonmano · comparativa · registro] (11/15)
+- **H1099** Antes del partido, elige qué no vas a apuntar. [balonmano · educativa · registro] (11/15)
