@@ -3101,5 +3101,77 @@
   "fase": "impacto",
   "fase_dia": "Mié 18/11",
   "note": "Story de impacto de Clara (04): contador «10 días», día 1 de 10, pregunta con respuesta en comentarios. Solo vale el mié 18. Foto: Šarūnas Jasikevičius (Zafer, CC BY 4.0, Wikimedia Commons)."
+ },
+ {
+  "id": "c15",
+  "kind": "carousel",
+  "files": [
+   "feed/c15-1.jpg",
+   "feed/c15-2.jpg",
+   "feed/c15-3.jpg",
+   "feed/c15-4.jpg",
+   "feed/c15-5.jpg",
+   "feed/c15-6.jpg",
+   "feed/c15-7.jpg",
+   "feed/c15-8.jpg"
+  ],
+  "title": "10 días. Este es el mapa. (del 18 al 28)",
+  "score": "78",
+  "status": "pending",
+  "campana": "carrusel",
+  "when": "2026-11-18T19:30:00+01:00",
+  "cover": null,
+  "caption": "10 días hasta que abra ProTeam. Este es el mapa. 🗺️\nGuárdalo: así sabes qué te contamos cada día y no te pierdes nada.\n\nJueves 19, de dónde sale ProTeam. Viernes 20, por qué ahora. El fin de semana, tus sábados en el banquillo de base. El lunes y el martes, cómo sería tu temporada si… Y el martes por la tarde, por fin, ProTeam por dentro. El miércoles 25 decides tú qué metemos primero, el jueves 26 capturas reales y vuestras respuestas, y el viernes 27 cierra la lista a las 23:59.\n\nEl sábado 28 abre la app de ProTeam, para entrenadores de fútbol, baloncesto y balonmano.\n\n¿Qué día no te quieres perder? Comenta la fecha 👇 y envíaselo a tu segundo entrenador.\n\nApúntate a la lista de espera hasta el 27 de noviembre: el 28 empiezas con 3 meses gratis. Enlace en la bio.\n\nFoto: tiempo muerto del Estudiantes en la Liga ACB (Carlos Delgado, CC BY-SA 3.0, Wikimedia Commons).\n\n#futbolbase #baloncestobase #balonmanobase #entrenadores #proteam",
+  "fase": "impacto",
+  "fase_dia": "Mié 18/11",
+  "note": "Clara (04) · encargo t-lanz-04-carruseles · lanzamiento, día 1 de 10 · calendario público del lanzamiento (hilo para quien llega tarde) · 8 diapositivas, mapa entero guardable en la 7 · sin pantallas · Andrés 78, encaje de fase sí (agencia/criticas/2026-11-17-c15-c15s-impacto-guion.md) · solo vale el mié 18"
+ },
+ {
+  "id": "c15s",
+  "kind": "story",
+  "files": [
+   "stories/st-1118-que-categoria.jpg"
+  ],
+  "title": "¿Qué categoría entrenas? A–D en comentarios (fútbol, Guardiola)",
+  "score": "77",
+  "status": "pending",
+  "campana": "carrusel",
+  "when": "2026-11-18T14:30:00+01:00",
+  "cover": null,
+  "fase": "impacto",
+  "fase_dia": "Mié 18/11",
+  "note": "Story de impacto de Clara (04): encuesta A–D por comentarios; con la respuesta se eligen los ejemplos de los próximos días y se cuenta el resultado real el jue 19–vie 20. Foto: Pep Guardiola (Tsutomu Takasu, CC BY 2.0, Wikimedia Commons). Solo vale el mié 18."
+ },
+ {
+  "id": "c15s2",
+  "kind": "story",
+  "files": [
+   "stories/st-1118-mandasela.jpg"
+  ],
+  "title": "¿A quién de tu club le tiene que llegar esto? Mándale esta Story (balonmano, Karabatić)",
+  "score": "76",
+  "status": "pending",
+  "campana": "carrusel",
+  "when": "2026-11-18T16:30:00+01:00",
+  "cover": null,
+  "fase": "impacto",
+  "fase_dia": "Mié 18/11",
+  "note": "Story de impacto de Clara (04): pide reenviarla a otro entrenador del club; quedan 10 días; lista en una línea. Foto: Nikola Karabatić (dronepicr, CC BY 2.0, Wikimedia Commons). Solo vale el mié 18."
+ },
+ {
+  "id": "c15s3",
+  "kind": "story",
+  "files": [
+   "stories/st-1118-mapa-hoy.jpg"
+  ],
+  "title": "Hoy 19:30: el mapa de los 10 días + ¿ya estás en la lista?",
+  "score": "76",
+  "status": "pending",
+  "campana": "carrusel",
+  "when": "2026-11-18T18:30:00+01:00",
+  "cover": null,
+  "fase": "impacto",
+  "fase_dia": "Mié 18/11",
+  "note": "Story de impacto de Clara (04): aviso del carrusel c15 con tres fechas dentro (jue 19, vie 20, sáb 28) y recordatorio de la lista con la oferta exacta. Tipográfica (papel). Solo vale el mié 18."
  }
 ]
