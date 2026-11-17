@@ -1,0 +1,50 @@
+Arreglo M-003: crear ciclo — duración por defecto exacta y no se guarda si la fecha de fin es anterior
+
+1) `CreateCycleDialog` (`src/components/planning/create-cycle-dialog.tsx`) ponía
+   por defecto `end_date = inicio + 28` días para un mesociclo (29 días) y
+   `inicio + 60` para un macrociclo (61), mientras que las plantillas del mismo
+   diálogo usan `días - 1`. Como el siguiente mesociclo empieza el día después
+   del último, cada mesociclo creado sin tocar fechas corre un día la semana:
+   si el primero empieza en lunes, el segundo empieza en martes y los
+   microciclos dejan de cuadrar con la semana. BD 17/11: 5 mesociclos de 29
+   días exactos (el valor por defecto). Ahora: 28 días (4 semanas) y 60 días.
+   El microciclo sigue igual (7 días).
+2) Si la fecha de fin es anterior a la de inicio, el aviso «Revisa les dates»
+   salía pero «Crear» seguía activo y la BD lo acepta (no hay CHECK en
+   macrocycles/mesocycles/microcycles). Ahora «Crear» se desactiva en ese caso.
+
+Cómo probarlo: Planificación → nuevo mesociclo dentro de un macro → vista
+previa «28 dies (4 setmanes)»; poner fin antes del inicio → «Crear» desactivado.
+
+--- a/src/components/planning/create-cycle-dialog.tsx
++++ b/src/components/planning/create-cycle-dialog.tsx
+@@ -73,7 +73,8 @@
+   onSubmit: (p: CreatePayload) => void;
+ }) {
+   const defaults = useMemo<CreatePayload>(() => {
+-    const days = level === "macro" ? 60 : level === "meso" ? 28 : 6;
++    // Duración en días naturales, igual que las plantillas (fin = inicio + días - 1).
++    const days = level === "macro" ? 60 : level === "meso" ? 28 : 7;
+     let start = todayISO();
+     if (level === "meso" && parentId) {
+       const siblings = mesos.filter((m) => m.macrocycle_id === parentId).sort((a, b) => a.end_date.localeCompare(b.end_date));
+@@ -91,7 +92,7 @@
+       level, parentId,
+       name: level === "micro" ? `Setmana ${count + 1}` : "",
+       start_date: start,
+-      end_date: addDaysISO(start, days),
++      end_date: addDaysISO(start, days - 1),
+       objective: "",
+       status: "esborrany",
+       microStatus: "planificat",
+@@ -144,7 +145,9 @@
+     if (clash.length) warnings.push(tr("Se solapa amb: {0}.", clash.map((c) => c.name).join(", ")));
+   }
+
+-  const canSave = form.name.trim().length > 0 && (level === "macro" || !!form.parentId);
++  const canSave = form.name.trim().length > 0
++    && (level === "macro" || !!form.parentId)
++    && form.end_date >= form.start_date;
+
+   return (
+     <Dialog open onOpenChange={(o) => { if (!o) onClose(); }}>
