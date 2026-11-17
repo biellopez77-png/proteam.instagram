@@ -2862,12 +2862,13 @@
   ],
   "cover": "covers/u28-tobillo.jpg",
   "caption": "Cae del rebote, pisa un pie y tu pívot, fuera. Es la lesión más frecuente en baloncesto: el esguince de tobillo. 🏀\nGuárdalo: 16 temporadas de baloncesto universitario en EE. UU. (NCAA, Dick et al., Journal of Athletic Training, 2007) y el tobillo, el primero de la lista.\nEn la app de ProTeam tienes tu rutina de prevención (isquios y tobillo) con sus ejercicios y sesiones, dentro de la preparación física del equipo.\nEnvíaselo a tu segundo entrenador: ¿cuándo entrenasteis el tobillo por última vez?\nComenta tu deporte, tu categoría y tus días y te preparo la semana en la app de ProTeam. Lista de espera hasta el 27 de noviembre: 3 meses gratis. Enlace en la bio.\n\nFotos: Edy Tavares, Real Madrid (Zafer, CC BY 4.0), selección española de baloncesto (Diario de Madrid, CC BY 4.0), Wikimedia Commons.\n\n#baloncesto #entrenadordebaloncesto #preparacionfisica #prevenciondelesiones #proteam",
-  "status": "pending",
+  "status": "failed",
   "campana": "unrespiro",
   "share_to_feed": false,
   "note": "u28 · turno de Reels 16/11 21:37: Reel de datos sin voz (13,6 s), música nueva de fondo, dato con fuente (Dick et al., 2007) y captura real de Rutinas. Guion 78, auditoría 78.; oficina: Sin voz: regla de Biel 17/11, todo Reel lleva la voz de Mateo; reprogramada desde la oficina · 17/11 12:37 (turno de Reels): con voz de Mateo (biblioteca, una toma, 328 caracteres), 18,0 s; misma música nueva del u28 realineada; dato grande «16 temporadas» y anillo que se llena. Auditoría de Andrés 79.; oficina: cambios: Mejora el hook y al final falta la animacion con el contador; reprogramada desde la oficina · 17/11 16:00 (corrección de Biel: «mejora el hook y al final falta la animación con el contador»): hook nuevo de escena («Cae del rebote. Pisa un pie. Tu pívot, fuera.»), voz de Mateo regrabada entera (una toma, 311 caracteres), 17,9 s; cierre con la entrada a la lista de espera y el contador (10 d 6 h → 27 NOV) como en u09. Misma música del u28 realineada. Auditoría de Andrés 81.",
   "score": "voz 80 · montaje 81",
-  "title": "Cae del rebote, pisa un pie… y tu pívot, fuera."
+  "title": "Cae del rebote, pisa un pie… y tu pívot, fuera.",
+  "error": "Error calling tool 'execute_action': Instagram could not process the video for account 17841445998297098 (container status: ERROR). Check that the media URL(s) are publicly accessible and meet Instagram's requirements (MP4 or MOV, max 1 GB, duration between 3 seconds and 15 minutes). (jsDelivr y raw; MP4 h264 1080x1920 17,9 s 4 MB)"
  },
  {
   "id": "u29",
