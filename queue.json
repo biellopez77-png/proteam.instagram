@@ -3015,5 +3015,21 @@
   "note": "u12 · turno de Reels 17/11 15:37: encargo t-u12-musica (montado con voz el 17/11 6:37, sin música por falta de créditos). Música nueva (ElevenLabs music v2.5, re menor, campanas con vinilo, 900 créditos) con silencio antes de «acta» y golpe en la palabra; sfx.py y mezcla como u31. Banquillo de los Heat (Spoelstra), acta con cruces, columnas de periodo, hoja de 6 casillas. Voz Mateo de la biblioteca. · 17/11 18:50 v2 (encargo de Andrés): cierre con la animación del contador de la lista de espera (9 d 10 h → 27 NOV) bajo la voz de la campaña, antes del reto; sin voz nueva; 25,2 s; auditoría 82 (agencia/criticas/2026-11-17-u33-u12-contador.md)",
   "score": "guion 80 · montaje 82",
   "title": "Quinto periodo. Y tú, contando cruces en el acta."
+ },
+ {
+  "id": "u10",
+  "when": "2026-11-18T20:30:00+01:00",
+  "kind": "reel",
+  "files": [
+   "reels/u10-entra-a-defender.mp4"
+  ],
+  "cover": "covers/u10-entra-a-defender.jpg",
+  "caption": "Entra a defender, sale a atacar. Y tiene 12 años. 🤾\nGuárdalo: esta semana, en el partidillo, quien defiende ataca la siguiente. Nadie sale al recuperar.\nEn los Juegos Escolares de Euskadi, en infantiles, no se permiten los cambios de especialistas solo en ataque o solo en defensa (normativa 2025). En otras federaciones la norma cambia.\nEnvíaselo a tu segundo entrenador: ¿quién no ha atacado en todo el año?\nComenta tu categoría y tus días y te preparo la semana en la app de ProTeam. Lista de espera hasta el 27 de noviembre: 3 meses gratis. Enlace en la bio.\n\nFotos: banquillo de la selección española (Carlos Delgado, CC BY-SA 3.0) y Bundesliga femenina (Steffen Prößdorf, CC BY-SA 4.0), Wikimedia Commons.\n\n#balonmano #balonmanobase #entrenadordebalonmano #infantiles #proteam",
+  "status": "pending",
+  "campana": "unrespiro",
+  "share_to_feed": false,
+  "note": "u10 · turno de Reels 17/11 18:37: guion más antiguo de la reserva (Dani, Andrés 80) para el mié 20:30, detrás de u28 (baloncesto). Pista cenital partida en dos (la ficha 12 solo defiende; en el partidillo cruza), norma de Euskadi con sello NO PERMITIDO, captura real de Semana y cierre con el contador de la lista de espera (9 d 3 h). Voz Mateo de la biblioteca (la original da «disabled»), una toma, 477 caracteres; música nueva con el golpe en «nadie es especialista». 27,2 s. Auditoría 80 (agencia/criticas/2026-11-17-u10-final.md).",
+  "score": "guion 80 · montaje 80",
+  "title": "Entra a defender. Sale a atacar. Tiene 12 años."
  }
 ]

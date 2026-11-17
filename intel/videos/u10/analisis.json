@@ -1,0 +1,1654 @@
+{
+ "meta": {
+  "contenedor": "mov,mp4,m4a,3gp,3g2,mj2",
+  "duracion_s": 27.133,
+  "tamano_bytes": 4765805,
+  "bitrate_kbps": 1405,
+  "ancho": 1080,
+  "alto": 1920,
+  "relacion": "9:16",
+  "fps": 30.0,
+  "fotogramas_declarados": 814,
+  "codec_video": "h264",
+  "pix_fmt": "yuv420p",
+  "pistas_audio": [
+   {
+    "codec": "aac",
+    "canales": 1,
+    "hz": 48000,
+    "bitrate_kbps": 219
+   }
+  ],
+  "etiquetas": {
+   "major_brand": "isom",
+   "minor_version": "512",
+   "compatible_brands": "isomiso2avc1mp41",
+   "encoder": "Lavf60.16.100"
+  },
+  "id": "u10",
+  "fotogramas_leidos": 814,
+  "sha256": "d665f6bbd9f116c38e5cb8e304eefb66f73690df011f173f40532dd370e2accd",
+  "archivo": "reels/u10-entra-a-defender.mp4",
+  "fuente": "",
+  "marca": "proteam",
+  "tipo": "propio",
+  "formato": "reel",
+  "tema": "cambio ataque-defensa en infantiles (balonmano)",
+  "analizado": "2026-11-17 18:01"
+ },
+ "montaje": {
+  "cortes_duros": 8,
+  "transiciones_o_movimientos_fuertes": 0,
+  "planos": 9,
+  "duracion_media_plano_s": 3.01,
+  "plano_mas_largo_s": 3.833,
+  "plano_mas_corto_s": 1.867,
+  "cortes_por_10s": 2.95,
+  "tramos_estaticos": [
+   {
+    "desde": 6.93,
+    "hasta": 8.93,
+    "duracion_s": 2.0
+   },
+   {
+    "desde": 10.07,
+    "hasta": 11.67,
+    "duracion_s": 1.6
+   },
+   {
+    "desde": 20.63,
+    "hasta": 22.6,
+    "duracion_s": 1.97
+   },
+   {
+    "desde": 25.6,
+    "hasta": 27.1,
+    "duracion_s": 1.5
+   }
+  ],
+  "nota": "Detección automática por histograma y diferencia de imagen sobre TODOS los fotogramas. Un motion graphic continuo cuenta como un solo plano; un cambio de fondo brusco dentro de una animación puede contarse como corte. Confirmar en las láminas."
+ },
+ "cortes": [
+  {
+   "fotograma": 107,
+   "t": 3.567,
+   "tipo": "corte",
+   "fuerza": 0.4
+  },
+  {
+   "fotograma": 200,
+   "t": 6.667,
+   "tipo": "corte",
+   "fuerza": 1.0
+  },
+  {
+   "fotograma": 297,
+   "t": 9.9,
+   "tipo": "corte",
+   "fuerza": 1.0
+  },
+  {
+   "fotograma": 410,
+   "t": 13.667,
+   "tipo": "corte",
+   "fuerza": 0.991
+  },
+  {
+   "fotograma": 472,
+   "t": 15.733,
+   "tipo": "corte",
+   "fuerza": 0.654
+  },
+  {
+   "fotograma": 563,
+   "t": 18.767,
+   "tipo": "corte",
+   "fuerza": 0.895
+  },
+  {
+   "fotograma": 678,
+   "t": 22.6,
+   "tipo": "corte",
+   "fuerza": 0.603
+  },
+  {
+   "fotograma": 758,
+   "t": 25.267,
+   "tipo": "corte",
+   "fuerza": 0.905
+  }
+ ],
+ "escenas": [
+  {
+   "escena": 1,
+   "desde_fotograma": 0,
+   "hasta_fotograma": 106,
+   "desde": 0.0,
+   "hasta": 3.567,
+   "duracion_s": 3.567,
+   "movimiento_medio": 0.002,
+   "luz_media": 0.222,
+   "saturacion_media": 0.514
+  },
+  {
+   "escena": 2,
+   "desde_fotograma": 107,
+   "hasta_fotograma": 199,
+   "desde": 3.567,
+   "hasta": 6.667,
+   "duracion_s": 3.1,
+   "movimiento_medio": 0.0039,
+   "luz_media": 0.111,
+   "saturacion_media": 0.388
+  },
+  {
+   "escena": 3,
+   "desde_fotograma": 200,
+   "hasta_fotograma": 296,
+   "desde": 6.667,
+   "hasta": 9.9,
+   "duracion_s": 3.233,
+   "movimiento_medio": 0.0115,
+   "luz_media": 0.932,
+   "saturacion_media": 0.031
+  },
+  {
+   "escena": 4,
+   "desde_fotograma": 297,
+   "hasta_fotograma": 409,
+   "desde": 9.9,
+   "hasta": 13.667,
+   "duracion_s": 3.767,
+   "movimiento_medio": 0.0098,
+   "luz_media": 0.099,
+   "saturacion_media": 0.386
+  },
+  {
+   "escena": 5,
+   "desde_fotograma": 410,
+   "hasta_fotograma": 471,
+   "desde": 13.667,
+   "hasta": 15.733,
+   "duracion_s": 2.067,
+   "movimiento_medio": 0.0067,
+   "luz_media": 0.289,
+   "saturacion_media": 0.32
+  },
+  {
+   "escena": 6,
+   "desde_fotograma": 472,
+   "hasta_fotograma": 562,
+   "desde": 15.733,
+   "hasta": 18.767,
+   "duracion_s": 3.033,
+   "movimiento_medio": 0.006,
+   "luz_media": 0.195,
+   "saturacion_media": 0.513
+  },
+  {
+   "escena": 7,
+   "desde_fotograma": 563,
+   "hasta_fotograma": 677,
+   "desde": 18.767,
+   "hasta": 22.6,
+   "duracion_s": 3.833,
+   "movimiento_medio": 0.0071,
+   "luz_media": 0.414,
+   "saturacion_media": 0.222
+  },
+  {
+   "escena": 8,
+   "desde_fotograma": 678,
+   "hasta_fotograma": 757,
+   "desde": 22.6,
+   "hasta": 25.267,
+   "duracion_s": 2.667,
+   "movimiento_medio": 0.0081,
+   "luz_media": 0.096,
+   "saturacion_media": 0.398
+  },
+  {
+   "escena": 9,
+   "desde_fotograma": 758,
+   "hasta_fotograma": 813,
+   "desde": 25.267,
+   "hasta": 27.133,
+   "duracion_s": 1.867,
+   "movimiento_medio": 0.0061,
+   "luz_media": 0.173,
+   "saturacion_media": 0.547
+  }
+ ],
+ "laminas": [
+  {
+   "lamina": "general_001.jpg",
+   "fotogramas": [
+    0,
+    5,
+    10,
+    15,
+    20,
+    25,
+    45,
+    53,
+    90,
+    106,
+    107,
+    152,
+    153,
+    197,
+    199,
+    200,
+    245,
+    248
+   ],
+   "desde": 0.0,
+   "hasta": 8.267,
+   "modo": "general"
+  },
+  {
+   "lamina": "general_002.jpg",
+   "fotogramas": [
+    290,
+    296,
+    297,
+    342,
+    353,
+    387,
+    409,
+    410,
+    440,
+    471,
+    472,
+    517,
+    562,
+    563,
+    608,
+    620,
+    653,
+    677
+   ],
+   "desde": 9.667,
+   "hasta": 22.567,
+   "modo": "general"
+  },
+  {
+   "lamina": "general_003.jpg",
+   "fotogramas": [
+    678,
+    717,
+    757,
+    758,
+    785,
+    813
+   ],
+   "desde": 22.6,
+   "hasta": 27.1,
+   "modo": "general"
+  },
+  {
+   "lamina": "detalle_001.jpg",
+   "fotogramas": [
+    0,
+    8,
+    16,
+    24,
+    32,
+    40,
+    48,
+    56,
+    64,
+    72,
+    80,
+    88,
+    96,
+    104,
+    106,
+    107,
+    112,
+    120,
+    128,
+    136,
+    144,
+    152,
+    160,
+    168
+   ],
+   "desde": 0.0,
+   "hasta": 5.6,
+   "modo": "detalle"
+  },
+  {
+   "lamina": "detalle_002.jpg",
+   "fotogramas": [
+    176,
+    184,
+    192,
+    199,
+    200,
+    208,
+    216,
+    224,
+    232,
+    240,
+    248,
+    256,
+    264,
+    272,
+    280,
+    288,
+    296,
+    297,
+    304,
+    312,
+    320,
+    328,
+    336,
+    344
+   ],
+   "desde": 5.867,
+   "hasta": 11.467,
+   "modo": "detalle"
+  },
+  {
+   "lamina": "detalle_003.jpg",
+   "fotogramas": [
+    352,
+    360,
+    368,
+    376,
+    384,
+    392,
+    400,
+    408,
+    409,
+    410,
+    416,
+    424,
+    432,
+    440,
+    448,
+    456,
+    464,
+    471,
+    472,
+    480,
+    488,
+    496,
+    504,
+    512
+   ],
+   "desde": 11.733,
+   "hasta": 17.067,
+   "modo": "detalle"
+  },
+  {
+   "lamina": "detalle_004.jpg",
+   "fotogramas": [
+    520,
+    528,
+    536,
+    544,
+    552,
+    560,
+    562,
+    563,
+    568,
+    576,
+    584,
+    592,
+    600,
+    608,
+    616,
+    624,
+    632,
+    640,
+    648,
+    656,
+    664,
+    672,
+    677,
+    678
+   ],
+   "desde": 17.333,
+   "hasta": 22.6,
+   "modo": "detalle"
+  },
+  {
+   "lamina": "detalle_005.jpg",
+   "fotogramas": [
+    680,
+    688,
+    696,
+    704,
+    712,
+    720,
+    728,
+    736,
+    744,
+    752,
+    757,
+    758,
+    760,
+    768,
+    776,
+    784,
+    792,
+    800,
+    808
+   ],
+   "desde": 22.667,
+   "hasta": 26.933,
+   "modo": "detalle"
+  }
+ ],
+ "texto_en_pantalla": {
+  "idioma": "spa+eng",
+  "nota": "OCR automático sobre los fotogramas muestreados: puede fallar con tipografía fina, texto animado o sobre foto. La exposición es aproximada (resolución = intervalo de muestreo). Verificar siempre en las láminas.",
+  "por_fotograma": [
+   {
+    "fotograma": 0,
+    "t": 0.0,
+    "texto": "BALONMANO INFANTIL DEFENDER SALE ATACAR."
+   },
+   {
+    "fotograma": 5,
+    "t": 0.167,
+    "texto": "BALONMANO INFANTIL ENTRA DEFENDER. SALE ATACAR."
+   },
+   {
+    "fotograma": 8,
+    "t": 0.267,
+    "texto": "BALONMANO INFANTIL ENTRA DEFENDER. SALE ATACAR."
+   },
+   {
+    "fotograma": 10,
+    "t": 0.333,
+    "texto": "ES BALONMANO INFANTIL DEFENDER SALE ATACAR."
+   },
+   {
+    "fotograma": 15,
+    "t": 0.5,
+    "texto": "EN BALONMANO INFANTILE ENTRA DEFENDER SALE ATACAR."
+   },
+   {
+    "fotograma": 16,
+    "t": 0.533,
+    "texto": "BALONMANO INFANTILE ENTRA DEFENDER SALE ATACAR."
+   },
+   {
+    "fotograma": 20,
+    "t": 0.667,
+    "texto": "BALONMANO INFANTILE ENTRA DEFENDER SALE ATACAR."
+   },
+   {
+    "fotograma": 24,
+    "t": 0.8,
+    "texto": "BALONMANO INFANTILES DEFENDER SALE ATACAR."
+   },
+   {
+    "fotograma": 25,
+    "t": 0.833,
+    "texto": "ES BALONMANO INFANTILE ENTRA DEFENDER SALE ATACAR."
+   },
+   {
+    "fotograma": 32,
+    "t": 1.067,
+    "texto": "BALONMANO INFANTILE ENTRA DEFENDER SALE ATACAR."
+   },
+   {
+    "fotograma": 40,
+    "t": 1.333,
+    "texto": "ES BALONMANO INFANTIL ENTRA DEFENDER SALE ATACAR."
+   },
+   {
+    "fotograma": 45,
+    "t": 1.5,
+    "texto": "BALONMANO INFANTILE ENTRA DEFENDER. SALE ATACAR."
+   },
+   {
+    "fotograma": 48,
+    "t": 1.6,
+    "texto": "BALONMANO INFANTILE ENTRA DEFENDER SALE ATACAR."
+   },
+   {
+    "fotograma": 53,
+    "t": 1.767,
+    "texto": "BALONMANO INFANTILE ENTRA DEFENDER. SALE ATACAR."
+   },
+   {
+    "fotograma": 56,
+    "t": 1.867,
+    "texto": "BALONMANO INFANTIL ENTRA DEFENDER SALE ATACAR."
+   },
+   {
+    "fotograma": 64,
+    "t": 2.133,
+    "texto": "DA BALONMANO INFANTIL ENTRA DEFENDER SALE ATACAR."
+   },
+   {
+    "fotograma": 72,
+    "t": 2.4,
+    "texto": "El BALONMANO INFANTIL ENTRA DEFENDER SALE ATACAR."
+   },
+   {
+    "fotograma": 80,
+    "t": 2.667,
+    "texto": "BALONMANO INFANTIL ENTRA DEFENDER SALE ATACAR. Tiene 12 anos."
+   },
+   {
+    "fotograma": 88,
+    "t": 2.933,
+    "texto": "BALONMANO INFANTIL ENTRA DEFENDER SALE ATACAR. Tiene 12 anos."
+   },
+   {
+    "fotograma": 90,
+    "t": 3.0,
+    "texto": "BAG BALONMANO INFANTIL ENTRA DEFENDER SALE ATACAR. Tiene 12 anos."
+   },
+   {
+    "fotograma": 96,
+    "t": 3.2,
+    "texto": "BALONMANO INFANTIL ENTRA DEFENDER SALE ATACAR. Tiene 12 anos."
+   },
+   {
+    "fotograma": 104,
+    "t": 3.467,
+    "texto": "El BALONMANO INFANTIL ENTRA DEFENDER SALE ATACAR. Tiene 12 años."
+   },
+   {
+    "fotograma": 106,
+    "t": 3.533,
+    "texto": "El BALONMANO INFANTILE ENTRA DEFENDER SALE ATACAR. Tiene 12 anos."
+   },
+   {
+    "fotograma": 107,
+    "t": 3.567,
+    "texto": "BALONMANO INFANTILES ENTRA DEFENDER. SALE ATACAR. Tiene 12 años."
+   },
+   {
+    "fotograma": 112,
+    "t": 3.733,
+    "texto": "Tú ganas una defensa."
+   },
+   {
+    "fotograma": 120,
+    "t": 4.0,
+    "texto": "Tu ganas una defensa AQUE defensa DEFENSA"
+   },
+   {
+    "fotograma": 128,
+    "t": 4.267,
+    "texto": "Tu ganas una defensa ATAQUE defensa DEFENSA"
+   },
+   {
+    "fotograma": 136,
+    "t": 4.533,
+    "texto": "Tu ganas una defensa ATAQUE defensa DEFENSA"
+   },
+   {
+    "fotograma": 144,
+    "t": 4.8,
+    "texto": "Tu ganas una defensa ATAQUE defensa DEFENSA"
+   },
+   {
+    "fotograma": 152,
+    "t": 5.067,
+    "texto": "Tu ganas una defensa Él se queda sin TAQUE defensa DEFENSA"
+   },
+   {
+    "fotograma": 153,
+    "t": 5.1,
+    "texto": "Tu ganas una defensa Él se queda sin TAQUE defensa DEFENSA"
+   },
+   {
+    "fotograma": 160,
+    "t": 5.333,
+    "texto": "Tu ganas una defensa Él se queda sin TAQUE defensa DEFENSA"
+   },
+   {
+    "fotograma": 168,
+    "t": 5.6,
+    "texto": "Tu ganas una defensa Él se queda sin medio balonmano. Omin defensa DEFENSA"
+   },
+   {
+    "fotograma": 176,
+    "t": 5.867,
+    "texto": "Tu ganas una defensa Él se queda sin medio balonmano. Omin defensa DEFENSA"
+   },
+   {
+    "fotograma": 184,
+    "t": 6.133,
+    "texto": "Tu ganas una defensa Él se queda sin medio balonmano. Omin +1defensa DEFENSA"
+   },
+   {
+    "fotograma": 192,
+    "t": 6.4,
+    "texto": "Tu ganas una defensa Él se queda sin medio balonmano. Omin +1defensa DEFENSA"
+   },
+   {
+    "fotograma": 197,
+    "t": 6.567,
+    "texto": "Tú ganas una defensa Él se queda sin medio balonmano. Omin DEFENSA"
+   },
+   {
+    "fotograma": 199,
+    "t": 6.633,
+    "texto": "Tú ganas una defensa Él se queda sin medio balonmano. Omin DEFENSA"
+   },
+   {
+    "fotograma": 200,
+    "t": 6.667,
+    "texto": "BAL Cambio ataque-defensa"
+   },
+   {
+    "fotograma": 208,
+    "t": 6.933,
+    "texto": "LA NORMA JUEGOS ESCOLARES DE EUSKADI BALONMANO INFANTIL 2025 Cambio ataque-defensa"
+   },
+   {
+    "fotograma": 216,
+    "t": 7.2,
+    "texto": "LA NORMA JUEGOS ESCOLARES DE EUSKADI BALONMANO INFANTIL 2025 Cambio ataque-defensa Ji."
+   },
+   {
+    "fotograma": 224,
+    "t": 7.467,
+    "texto": "LA NORMA JUEGOS ESCOLARES DE EUSKADI BALONMANO INFANTIL 2025 Cambio ataque-defensa Normativa de Euskadi. En otras federaciones cambia"
+   },
+   {
+    "fotograma": 232,
+    "t": 7.733,
+    "texto": "LA NORMA JUEGOS ESCOLARES DE EUSKADI BALONMANO INFANTIL 2025 Cambio ataque-defensa Normativa de Euskadi. En otras federaciones cambia"
+   },
+   {
+    "fotograma": 240,
+    "t": 8.0,
+    "texto": "LA NORMA JUEGOS ESCOLARES DE EUSKADI BALONMANO INFANTIL 2025 Cambio ataque-defensa Normativa de Euskadi. En otras federaciones cambia"
+   },
+   {
+    "fotograma": 245,
+    "t": 8.167,
+    "texto": "LA NORMA JUEGOS ESCOLARES DE EUSKADI BALONMANO INFANTIL 2025 Cambio ataque-defensa Normativa de Euskadi. En otras federaciones cambia"
+   },
+   {
+    "fotograma": 248,
+    "t": 8.267,
+    "texto": "LA NORMA JUEGOS ESCOLARES DE EUSKADI BALONMANO INFANTIL 2025 Cambio ataque-defensa Normativa de Euskadi. En otras federaciones cambia"
+   },
+   {
+    "fotograma": 256,
+    "t": 8.533,
+    "texto": "LA NORMA JUEGOS ESCOLARES DE EUSKADI BALONMANO INFANTIL 2025 Cambio ataque-defensa Normativa de Euskadi. En otras federaciones cambia"
+   },
+   {
+    "fotograma": 264,
+    "t": 8.8,
+    "texto": "LA NORMA JUEGOS ESCOLARES DE EUSKADI BALONMANO INFANTIL 2025 Cambio ataque-defensa Normativa de Euskadi. En otras federaciones cambia"
+   },
+   {
+    "fotograma": 272,
+    "t": 9.067,
+    "texto": "LA NORMA JUEGOS ESCOLARES DE EUSKADI BALONMANO INFANTIL 2025 Cambio ataque-defensa NO PERMITIDO Normativa de Euskadi. En otras federaciones cambia"
+   },
+   {
+    "fotograma": 280,
+    "t": 9.333,
+    "texto": "LA NORMA JUEGOS ESCOLARES DE EUSKADI BALONMANO INFANTIL 2025 Cambio ataque-defensa No) PERMITIDO Normativa de Euskadi. En otras federaciones cambia"
+   },
+   {
+    "fotograma": 288,
+    "t": 9.6,
+    "texto": "LA NORMA JUEGOS ESCOLARES DE EUSKADI BALONMANO INFANTIL 2025 Cambio ataque-defensa NO PERMITIDO Normativa de Euskadi. En otras federaciones cambia"
+   },
+   {
+    "fotograma": 290,
+    "t": 9.667,
+    "texto": "LA NORMA JUEGOS ESCOLARES DE EUSKADI BALONMANO INFANTIL 2025 Cambio ataque-defensa NO PERMITIDO Normativa de Euskadi. En otras federaciones cambia"
+   },
+   {
+    "fotograma": 296,
+    "t": 9.867,
+    "texto": "LA NORMA JUEGOS ESCOLARES DE EUSKADI BALONMANO INFANTIL 2025 Cambio ataque-defensa NO PERMITIDO Normativa de Euskadi. En otras federaciones cambia"
+   },
+   {
+    "fotograma": 297,
+    "t": 9.9,
+    "texto": "TAQI"
+   },
+   {
+    "fotograma": 304,
+    "t": 10.133,
+    "texto": "ESTA SEMANA EN EL PARTIDILLO ATAQUE DEFENSA"
+   },
+   {
+    "fotograma": 312,
+    "t": 10.4,
+    "texto": "ESTA SEMANA EN EL PARTIDILLO ATAQUE DEFENSA"
+   },
+   {
+    "fotograma": 320,
+    "t": 10.667,
+    "texto": "ESTA SEMANA EN EL PARTIDILLO ATAQUE DEFENSA"
+   },
+   {
+    "fotograma": 328,
+    "t": 10.933,
+    "texto": "ESTA SEMANA EN EL PARTIDILLO ATAQUE DEFENSA"
+   },
+   {
+    "fotograma": 336,
+    "t": 11.2,
+    "texto": "ESTA SEMANA EN EL PARTIDILLO ATAQUE DEFENSA"
+   },
+   {
+    "fotograma": 342,
+    "t": 11.4,
+    "texto": "ESTA SEMANA EN EL PARTIDILLO ATAQUE DEFENSA"
+   },
+   {
+    "fotograma": 344,
+    "t": 11.467,
+    "texto": "ESTA SEMANA EN EL PARTIDILLO ATAQUE DEFENSA"
+   },
+   {
+    "fotograma": 352,
+    "t": 11.733,
+    "texto": "ESTA SEMANA EN EL PARTIDILLO Quien defiende, ATAQUE DEFENSA"
+   },
+   {
+    "fotograma": 353,
+    "t": 11.767,
+    "texto": "ESTA SEMANA EN EL PARTIDILLO Quien defiende, ATAQUE DEFENSA"
+   },
+   {
+    "fotograma": 360,
+    "t": 12.0,
+    "texto": "ESTA SEMANA EN EL PARTIDILLO Quien defiende, ATAQUE DEFENSA"
+   },
+   {
+    "fotograma": 368,
+    "t": 12.267,
+    "texto": "ESTA SEMANA EN EL PARTIDILLO Quien defiende, ATAQUE DEFENSA"
+   },
+   {
+    "fotograma": 376,
+    "t": 12.533,
+    "texto": "ESTA SEMANA EN EL PARTIDILLO Quien defiende, ataca la siguiente. ATAQUE DEFENSA"
+   },
+   {
+    "fotograma": 384,
+    "t": 12.8,
+    "texto": "ESTA SEMANA EN EL PARTIDILLO Quien defiende, ataca la siguiente. ATAQUE DEFENSA"
+   },
+   {
+    "fotograma": 387,
+    "t": 12.9,
+    "texto": "ESTA SEMANA EN EL PARTIDILLO Quien defiende, ataca la siguiente. ATAQUE DEFENSA"
+   },
+   {
+    "fotograma": 392,
+    "t": 13.067,
+    "texto": "ESTA SEMANA EN EL PARTIDILLO Quien defiende, ataca la siguiente. ATAQUE DEFENSA"
+   },
+   {
+    "fotograma": 400,
+    "t": 13.333,
+    "texto": "ESTA SEMANA EN EL PARTIDILLO Quien defiende, ataca la siguiente. ATAQUE DEFENSA Nadie sale al recuperar."
+   },
+   {
+    "fotograma": 408,
+    "t": 13.6,
+    "texto": "ESTA EN EL PARTIDILLO Quien defiende, ataca la siguiente. ATAQUE DEFENSA Nadie sale al recuperar."
+   },
+   {
+    "fotograma": 409,
+    "t": 13.633,
+    "texto": "li"
+   },
+   {
+    "fotograma": 410,
+    "t": 13.667,
+    "texto": "añ."
+   },
+   {
+    "fotograma": 416,
+    "t": 13.867,
+    "texto": "ALOS12,"
+   },
+   {
+    "fotograma": 424,
+    "t": 14.133,
+    "texto": ""
+   },
+   {
+    "fotograma": 432,
+    "t": 14.4,
+    "texto": "ALOS 12, nadie es especialista."
+   },
+   {
+    "fotograma": 440,
+    "t": 14.667,
+    "texto": "ALOS1 nadie es especialista"
+   },
+   {
+    "fotograma": 448,
+    "t": 14.933,
+    "texto": "ALOS1 nadie es especialista."
+   },
+   {
+    "fotograma": 456,
+    "t": 15.2,
+    "texto": "ALOS1 nadie es especialista."
+   },
+   {
+    "fotograma": 464,
+    "t": 15.467,
+    "texto": "ALOS12. nadie es especialista."
+   },
+   {
+    "fotograma": 471,
+    "t": 15.7,
+    "texto": "ALOS12, nadie es especialista."
+   },
+   {
+    "fotograma": 472,
+    "t": 15.733,
+    "texto": ""
+   },
+   {
+    "fotograma": 480,
+    "t": 16.0,
+    "texto": "qe FA RETO PARA TU STAFF"
+   },
+   {
+    "fotograma": 488,
+    "t": 16.267,
+    "texto": "Me RETO PARA TU STAFF"
+   },
+   {
+    "fotograma": 496,
+    "t": 16.533,
+    "texto": "Me RETO PARA TU STAFF"
+   },
+   {
+    "fotograma": 504,
+    "t": 16.8,
+    "texto": "he RETO PARA TU STAFF"
+   },
+   {
+    "fotograma": 512,
+    "t": 17.067,
+    "texto": "We RETO PARA TU STAFF ¿Quién no ha atacado"
+   },
+   {
+    "fotograma": 517,
+    "t": 17.233,
+    "texto": "we RETO PARA TU STAFF ¿Quién no ha atacado"
+   },
+   {
+    "fotograma": 520,
+    "t": 17.333,
+    "texto": "RETO PARA TU STAFF ¿Quién no ha atacado"
+   },
+   {
+    "fotograma": 528,
+    "t": 17.6,
+    "texto": "El we RETO PARA TU STAFF ¿Quién no ha atacado"
+   },
+   {
+    "fotograma": 536,
+    "t": 17.867,
+    "texto": "RETO PARA TU STAFF ¿Quién no ha atacado en todo el año?"
+   },
+   {
+    "fotograma": 544,
+    "t": 18.133,
+    "texto": "RETO PARA TU STAFF ¿Quién no ha atacado en todo el año?"
+   },
+   {
+    "fotograma": 552,
+    "t": 18.4,
+    "texto": "RETO PARA TU STAFF ¿Quién no ha atacado en todo el año?"
+   },
+   {
+    "fotograma": 560,
+    "t": 18.667,
+    "texto": "RETO PARA TU STAFF ¿Quién no ha atacado en todo el año?"
+   },
+   {
+    "fotograma": 562,
+    "t": 18.733,
+    "texto": "Me RETO PARA TU STAFF ¿Quién no ha atacado en todo el año?"
+   },
+   {
+    "fotograma": 563,
+    "t": 18.767,
+    "texto": "Planificación"
+   },
+   {
+    "fotograma": 568,
+    "t": 18.933,
+    "texto": "COMENTA Planificación Semana del dap Hoy min"
+   },
+   {
+    "fotograma": 576,
+    "t": 19.2,
+    "texto": "COMENTA Tu categoría tus días Planificación Semana Hoy 9h15 min 6/17"
+   },
+   {
+    "fotograma": 584,
+    "t": 19.467,
+    "texto": "COMENTA Tu categoría tus días Planificación mana Semana 9h15 min"
+   },
+   {
+    "fotograma": 592,
+    "t": 19.733,
+    "texto": "COMENTA Tu categoría tus días Planificación Semana 9h15 min"
+   },
+   {
+    "fotograma": 600,
+    "t": 20.0,
+    "texto": "COMENTA Tu categoría tus días Planificación Semana"
+   },
+   {
+    "fotograma": 608,
+    "t": 20.267,
+    "texto": "COMENTA Tu categoría tus días Planificación Semana 9h15 min"
+   },
+   {
+    "fotograma": 616,
+    "t": 20.533,
+    "texto": "COMENTA Tu categoria dias NA DYEDATO Planificación emana Semana 9h15 min"
+   },
+   {
+    "fotograma": 620,
+    "t": 20.667,
+    "texto": "COMENTA Tu categoria dias OLAS 19 Planificación Semana 9h15 min"
+   },
+   {
+    "fotograma": 624,
+    "t": 20.8,
+    "texto": "COMENTA Tu categoría tus días pu la NAL UL Ye Planificación Sem Semana 9h15 min"
+   },
+   {
+    "fotograma": 632,
+    "t": 21.067,
+    "texto": "COMENTA Tu categoría tus días YN iN. DYE la NAL Planificación Semana Hoy 9h15 min"
+   },
+   {
+    "fotograma": 640,
+    "t": 21.333,
+    "texto": "COMENTA Tu categoría tus días YN iN. DYE la NAL Planificación Semana toy 9h15 min"
+   },
+   {
+    "fotograma": 648,
+    "t": 21.6,
+    "texto": "COMENTA Tu categoría tus días YN le preparo la sen UL en la app de ProTeam captura real Planificación Semana Semana Hoy 9h15 min"
+   },
+   {
+    "fotograma": 653,
+    "t": 21.767,
+    "texto": "COMENTA Tu categoría tus días YN le pre Paro la sen UL en la app de ProTeam captura real Planificación sana Semana alta salida por Hoy 9h15 min"
+   },
+   {
+    "fotograma": 656,
+    "t": 21.867,
+    "texto": "COMENTA Tu categoría tus días YN le pre Paro la sen UL en la app de ProTeam captura real Planificación Semana arelp Hoy ang Bi 9h15 min 6/17"
+   },
+   {
+    "fotograma": 664,
+    "t": 22.133,
+    "texto": "COMENTA Tu categoría tus días YN le pre Paro la sen UL en la app de ProTeam captura real Planificación Semana arelp ra Hoy 9h15 min"
+   },
+   {
+    "fotograma": 672,
+    "t": 22.4,
+    "texto": "COMENTA Tu categoría tus días YN le pre Paro la sen UL en la app de ProTeam captura real Planificación Semana Hoy 9h15 min"
+   },
+   {
+    "fotograma": 677,
+    "t": 22.567,
+    "texto": "COMENTA Tu categoría tus días YN le pre Paro la sen UL en la app de ProTeam captura real Planificación Semana Hoy ana PDF 9h15 min"
+   },
+   {
+    "fotograma": 678,
+    "t": 22.6,
+    "texto": "COMENTA aytus días Tucategor en la app de ProTeam captura real Planificación Semana da Hoy ana PDF 9h15 min"
+   },
+   {
+    "fotograma": 680,
+    "t": 22.667,
+    "texto": "COMENTA Tu categoría tus días Dreparo ta semana. enla app de ProTeam real Planificación Semana Hoy 9h15 6/17 mín"
+   },
+   {
+    "fotograma": 688,
+    "t": 22.933,
+    "texto": "LISTA DE ESPERA 03 29 59 HORAS Mi Ly"
+   },
+   {
+    "fotograma": 696,
+    "t": 23.2,
+    "texto": "LISTA DE ESPERA 23 09 03 DÍAS HORAS SEG entrenador@miclub.es"
+   },
+   {
+    "fotograma": 704,
+    "t": 23.467,
+    "texto": "LISTA DE ESPERA 09 09 01 DÍAS HORAS SEG entrenador@miclub.es|"
+   },
+   {
+    "fotograma": 712,
+    "t": 23.733,
+    "texto": "LISTA DE ESPERA 08 18 52 bias HORAS SEG"
+   },
+   {
+    "fotograma": 717,
+    "t": 23.9,
+    "texto": "LISTA DE ESPERA 11 07 08 DÍAS HORAS SEG entrenador@miclub.es"
+   },
+   {
+    "fotograma": 720,
+    "t": 24.0,
+    "texto": "LISTA DE ESPERA 08 05 29 56 bias HORAS SEG entrenador@miclub.es"
+   },
+   {
+    "fotograma": 728,
+    "t": 24.267,
+    "texto": "LISTA DE ESPERA 41 07 07 DÍAS HORAS SEG entrenador@miclub.es EE"
+   },
+   {
+    "fotograma": 736,
+    "t": 24.533,
+    "texto": "LISTA DE ESPERA 05 20 50 29 bias HORAS SEG entrenador@miclub.es CE"
+   },
+   {
+    "fotograma": 744,
+    "t": 24.8,
+    "texto": "LISTA DE ESPERA 03 20 32 40 DÍAS HORAS MIN SEG entrenador@miclub.es CE"
+   },
+   {
+    "fotograma": 752,
+    "t": 25.067,
+    "texto": "LISTA DE ESPERA 03 37 01 bias HORAS SEG entrenador@miclub.es CE"
+   },
+   {
+    "fotograma": 757,
+    "t": 25.233,
+    "texto": "LISTA DE ESPERA 00 00 00 00 DÍAS HORAS MIN SEO entrenador@miclub.es CE"
+   },
+   {
+    "fotograma": 758,
+    "t": 25.267,
+    "texto": "AR"
+   },
+   {
+    "fotograma": 760,
+    "t": 25.333,
+    "texto": ""
+   },
+   {
+    "fotograma": 768,
+    "t": 25.6,
+    "texto": ""
+   },
+   {
+    "fotograma": 776,
+    "t": 25.867,
+    "texto": ""
+   },
+   {
+    "fotograma": 784,
+    "t": 26.133,
+    "texto": ""
+   },
+   {
+    "fotograma": 785,
+    "t": 26.167,
+    "texto": ""
+   },
+   {
+    "fotograma": 792,
+    "t": 26.4,
+    "texto": ""
+   },
+   {
+    "fotograma": 800,
+    "t": 26.667,
+    "texto": ""
+   },
+   {
+    "fotograma": 808,
+    "t": 26.933,
+    "texto": ""
+   },
+   {
+    "fotograma": 813,
+    "t": 27.1,
+    "texto": ""
+   }
+  ],
+  "bloques": [
+   {
+    "desde": 0.0,
+    "hasta": 0.267,
+    "texto": "BALONMANO INFANTIL ENTRA DEFENDER. SALE ATACAR.",
+    "palabras": 6
+   },
+   {
+    "desde": 0.333,
+    "hasta": 0.333,
+    "texto": "ES BALONMANO INFANTIL DEFENDER SALE ATACAR.",
+    "palabras": 6
+   },
+   {
+    "desde": 0.5,
+    "hasta": 0.5,
+    "texto": "EN BALONMANO INFANTILE ENTRA DEFENDER SALE ATACAR.",
+    "palabras": 7
+   },
+   {
+    "desde": 0.533,
+    "hasta": 0.8,
+    "texto": "BALONMANO INFANTILE ENTRA DEFENDER SALE ATACAR.",
+    "palabras": 6
+   },
+   {
+    "desde": 0.833,
+    "hasta": 0.833,
+    "texto": "ES BALONMANO INFANTILE ENTRA DEFENDER SALE ATACAR.",
+    "palabras": 7
+   },
+   {
+    "desde": 1.067,
+    "hasta": 1.067,
+    "texto": "BALONMANO INFANTILE ENTRA DEFENDER SALE ATACAR.",
+    "palabras": 6
+   },
+   {
+    "desde": 1.333,
+    "hasta": 1.333,
+    "texto": "ES BALONMANO INFANTIL ENTRA DEFENDER SALE ATACAR.",
+    "palabras": 7
+   },
+   {
+    "desde": 1.5,
+    "hasta": 1.867,
+    "texto": "BALONMANO INFANTILE ENTRA DEFENDER. SALE ATACAR.",
+    "palabras": 6
+   },
+   {
+    "desde": 2.133,
+    "hasta": 2.133,
+    "texto": "DA BALONMANO INFANTIL ENTRA DEFENDER SALE ATACAR.",
+    "palabras": 7
+   },
+   {
+    "desde": 2.4,
+    "hasta": 2.4,
+    "texto": "El BALONMANO INFANTIL ENTRA DEFENDER SALE ATACAR.",
+    "palabras": 7
+   },
+   {
+    "desde": 2.667,
+    "hasta": 2.933,
+    "texto": "BALONMANO INFANTIL ENTRA DEFENDER SALE ATACAR. Tiene 12 anos.",
+    "palabras": 9
+   },
+   {
+    "desde": 3.0,
+    "hasta": 3.0,
+    "texto": "BAG BALONMANO INFANTIL ENTRA DEFENDER SALE ATACAR. Tiene 12 anos.",
+    "palabras": 10
+   },
+   {
+    "desde": 3.2,
+    "hasta": 3.2,
+    "texto": "BALONMANO INFANTIL ENTRA DEFENDER SALE ATACAR. Tiene 12 anos.",
+    "palabras": 9
+   },
+   {
+    "desde": 3.467,
+    "hasta": 3.533,
+    "texto": "El BALONMANO INFANTILE ENTRA DEFENDER SALE ATACAR. Tiene 12 anos.",
+    "palabras": 10
+   },
+   {
+    "desde": 3.567,
+    "hasta": 3.567,
+    "texto": "BALONMANO INFANTILES ENTRA DEFENDER. SALE ATACAR. Tiene 12 años.",
+    "palabras": 9
+   },
+   {
+    "desde": 4.0,
+    "hasta": 6.4,
+    "texto": "Tu ganas una defensa Él se queda sin medio balonmano. Omin +1defensa DEFENSA",
+    "palabras": 13
+   },
+   {
+    "desde": 6.567,
+    "hasta": 6.633,
+    "texto": "Tú ganas una defensa Él se queda sin medio balonmano. Omin DEFENSA",
+    "palabras": 12
+   },
+   {
+    "desde": 6.933,
+    "hasta": 9.867,
+    "texto": "LA NORMA JUEGOS ESCOLARES DE EUSKADI BALONMANO INFANTIL 2025 Cambio ataque-defensa No) PERMITIDO Normativa de Euskadi. En otras federaciones cambia",
+    "palabras": 20
+   },
+   {
+    "desde": 10.133,
+    "hasta": 13.333,
+    "texto": "ESTA SEMANA EN EL PARTIDILLO Quien defiende, ataca la siguiente. ATAQUE DEFENSA Nadie sale al recuperar.",
+    "palabras": 16
+   },
+   {
+    "desde": 13.6,
+    "hasta": 13.6,
+    "texto": "ESTA EN EL PARTIDILLO Quien defiende, ataca la siguiente. ATAQUE DEFENSA Nadie sale al recuperar.",
+    "palabras": 15
+   },
+   {
+    "desde": 14.4,
+    "hasta": 14.4,
+    "texto": "ALOS 12, nadie es especialista.",
+    "palabras": 5
+   },
+   {
+    "desde": 14.667,
+    "hasta": 15.2,
+    "texto": "ALOS1 nadie es especialista.",
+    "palabras": 4
+   },
+   {
+    "desde": 15.467,
+    "hasta": 15.7,
+    "texto": "ALOS12. nadie es especialista.",
+    "palabras": 4
+   },
+   {
+    "desde": 16.0,
+    "hasta": 16.0,
+    "texto": "qe FA RETO PARA TU STAFF",
+    "palabras": 6
+   },
+   {
+    "desde": 16.267,
+    "hasta": 16.533,
+    "texto": "Me RETO PARA TU STAFF",
+    "palabras": 5
+   },
+   {
+    "desde": 16.8,
+    "hasta": 16.8,
+    "texto": "he RETO PARA TU STAFF",
+    "palabras": 5
+   },
+   {
+    "desde": 17.067,
+    "hasta": 17.233,
+    "texto": "We RETO PARA TU STAFF ¿Quién no ha atacado",
+    "palabras": 9
+   },
+   {
+    "desde": 17.333,
+    "hasta": 17.333,
+    "texto": "RETO PARA TU STAFF ¿Quién no ha atacado",
+    "palabras": 8
+   },
+   {
+    "desde": 17.6,
+    "hasta": 17.6,
+    "texto": "El we RETO PARA TU STAFF ¿Quién no ha atacado",
+    "palabras": 10
+   },
+   {
+    "desde": 17.867,
+    "hasta": 18.667,
+    "texto": "RETO PARA TU STAFF ¿Quién no ha atacado en todo el año?",
+    "palabras": 12
+   },
+   {
+    "desde": 18.733,
+    "hasta": 18.733,
+    "texto": "Me RETO PARA TU STAFF ¿Quién no ha atacado en todo el año?",
+    "palabras": 13
+   },
+   {
+    "desde": 18.933,
+    "hasta": 18.933,
+    "texto": "COMENTA Planificación Semana del dap Hoy min",
+    "palabras": 7
+   },
+   {
+    "desde": 19.2,
+    "hasta": 22.567,
+    "texto": "COMENTA Tu categoría tus días YN le pre Paro la sen UL en la app de ProTeam captura real Planificación sana Semana alta salida por Hoy 9h15 min",
+    "palabras": 28
+   },
+   {
+    "desde": 22.6,
+    "hasta": 22.6,
+    "texto": "COMENTA aytus días Tucategor en la app de ProTeam captura real Planificación Semana da Hoy ana PDF 9h15 min",
+    "palabras": 19
+   },
+   {
+    "desde": 22.667,
+    "hasta": 22.667,
+    "texto": "COMENTA Tu categoría tus días Dreparo ta semana. enla app de ProTeam real Planificación Semana Hoy 9h15 6/17 mín",
+    "palabras": 19
+   },
+   {
+    "desde": 22.933,
+    "hasta": 25.233,
+    "texto": "LISTA DE ESPERA 03 20 32 40 DÍAS HORAS MIN SEG entrenador@miclub.es CE",
+    "palabras": 13
+   }
+  ]
+ },
+ "audio": {
+  "tiene_audio": true,
+  "wav": "intel/videos/u10/audio_16k.wav",
+  "volumen_integrado_lufs": "-14.79",
+  "pico_real_db": "0.04",
+  "rango_lra": "1.70",
+  "silencios": [],
+  "subidas_bruscas_s": [
+   2.5,
+   3.7,
+   4.9,
+   6.7,
+   8.0,
+   10.0,
+   10.7,
+   11.7,
+   13.7,
+   14.4,
+   17.1,
+   18.1,
+   18.8,
+   20.5
+  ],
+  "energia_db_cada_0_1s": [
+   -17.3,
+   -11.7,
+   -15.8,
+   -16.1,
+   -11.1,
+   -12.4,
+   -13.8,
+   -16.4,
+   -14.6,
+   -15.0,
+   -26.3,
+   -24.4,
+   -21.0,
+   -15.4,
+   -13.0,
+   -14.7,
+   -12.4,
+   -12.3,
+   -15.5,
+   -18.7,
+   -17.2,
+   -23.2,
+   -25.1,
+   -25.2,
+   -16.5,
+   -10.5,
+   -13.7,
+   -18.3,
+   -13.8,
+   -11.0,
+   -16.2,
+   -14.4,
+   -22.4,
+   -25.7,
+   -23.9,
+   -29.6,
+   -28.7,
+   -13.1,
+   -16.8,
+   -11.4,
+   -12.9,
+   -14.8,
+   -10.8,
+   -13.0,
+   -18.2,
+   -18.3,
+   -23.5,
+   -24.2,
+   -25.1,
+   -13.1,
+   -14.6,
+   -20.7,
+   -13.7,
+   -13.6,
+   -12.8,
+   -16.6,
+   -12.5,
+   -12.4,
+   -10.2,
+   -14.4,
+   -14.8,
+   -15.2,
+   -16.2,
+   -17.5,
+   -26.7,
+   -26.8,
+   -28.6,
+   -16.0,
+   -11.2,
+   -12.8,
+   -11.5,
+   -13.0,
+   -14.3,
+   -13.1,
+   -14.6,
+   -12.4,
+   -14.2,
+   -18.3,
+   -20.2,
+   -26.6,
+   -13.0,
+   -12.9,
+   -16.5,
+   -14.3,
+   -15.1,
+   -15.8,
+   -12.7,
+   -15.6,
+   -12.2,
+   -10.0,
+   -9.4,
+   -10.8,
+   -18.3,
+   -16.0,
+   -20.3,
+   -21.8,
+   -26.5,
+   -24.8,
+   -26.6,
+   -21.5,
+   -10.6,
+   -14.9,
+   -14.8,
+   -12.2,
+   -18.7,
+   -26.7,
+   -27.9,
+   -14.1,
+   -12.3,
+   -14.1,
+   -12.9,
+   -21.6,
+   -16.3,
+   -12.6,
+   -11.7,
+   -17.3,
+   -24.5,
+   -12.3,
+   -12.2,
+   -14.6,
+   -16.1,
+   -11.3,
+   -12.4,
+   -13.0,
+   -25.7,
+   -14.8,
+   -24.5,
+   -13.1,
+   -17.8,
+   -15.1,
+   -18.4,
+   -16.5,
+   -17.0,
+   -26.5,
+   -24.9,
+   -26.8,
+   -27.0,
+   -13.9,
+   -11.5,
+   -14.6,
+   -10.9,
+   -15.9,
+   -11.7,
+   -32.1,
+   -9.8,
+   -10.3,
+   -12.7,
+   -13.2,
+   -13.8,
+   -16.8,
+   -19.2,
+   -15.0,
+   -17.5,
+   -20.4,
+   -22.7,
+   -22.7,
+   -21.5,
+   -21.8,
+   -12.3,
+   -15.5,
+   -16.1,
+   -14.2,
+   -12.3,
+   -13.6,
+   -13.7,
+   -13.6,
+   -18.9,
+   -21.8,
+   -22.8,
+   -25.1,
+   -16.4,
+   -11.3,
+   -13.1,
+   -13.9,
+   -15.3,
+   -12.9,
+   -14.5,
+   -12.6,
+   -10.4,
+   -10.2,
+   -26.0,
+   -9.5,
+   -11.8,
+   -12.3,
+   -19.1,
+   -24.7,
+   -23.7,
+   -25.1,
+   -11.6,
+   -13.1,
+   -15.0,
+   -12.5,
+   -13.5,
+   -11.8,
+   -14.3,
+   -15.7,
+   -14.1,
+   -12.8,
+   -13.5,
+   -14.2,
+   -14.1,
+   -13.8,
+   -23.6,
+   -24.3,
+   -27.7,
+   -11.9,
+   -15.4,
+   -14.1,
+   -11.4,
+   -12.2,
+   -11.3,
+   -15.5,
+   -13.0,
+   -13.2,
+   -13.7,
+   -13.4,
+   -16.9,
+   -9.7,
+   -20.3,
+   -13.3,
+   -14.1,
+   -13.0,
+   -15.0,
+   -12.2,
+   -20.0,
+   -23.0,
+   -21.1,
+   -17.4,
+   -11.8,
+   -16.8,
+   -11.6,
+   -13.3,
+   -13.0,
+   -20.2,
+   -9.8,
+   -13.0,
+   -15.0,
+   -13.2,
+   -11.4,
+   -13.0,
+   -12.1,
+   -18.9,
+   -17.4,
+   -13.9,
+   -10.6,
+   -13.9,
+   -11.8,
+   -11.5,
+   -12.0,
+   -13.9,
+   -22.7,
+   -21.8,
+   -17.3,
+   -12.5,
+   -13.0,
+   -16.7,
+   -11.2,
+   -9.5,
+   -12.9,
+   -14.2,
+   -18.3,
+   -14.7,
+   -18.6,
+   -27.3,
+   -27.6,
+   -30.1,
+   -29.3,
+   -31.4,
+   -41.9,
+   -44.9,
+   -48.2
+  ],
+  "transcripcion": "transcripcion.json (tools/reel10/voz.tsv)",
+  "nota": "Esto son medidas. Entonación, claridad de la locución, timbre o si hay música NO se pueden afirmar sin escuchar o transcribir."
+ },
+ "vistas": [
+  "general_001.jpg",
+  "general_002.jpg",
+  "general_003.jpg"
+ ],
+ "orden": "python3 tools/video_intel.py analyze reels/u10-entra-a-defender.mp4 --id u10 --tema cambio ataque-defensa en infantiles (balonmano) --modo detalle"
+}
