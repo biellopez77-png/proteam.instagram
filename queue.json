@@ -2959,12 +2959,14 @@
    "stories/st-1117-siete-metros.jpg"
   ],
   "cover": null,
-  "status": "pending",
+  "status": "published",
   "campana": "carrusel",
   "when": "2026-11-17T14:30:00+01:00",
   "title": "Siete metros, último minuto: ¿quién lo tira? (balonmano)",
   "score": "77",
-  "note": "Story de comunidad de Clara (04): pregunta con 4 opciones, respuesta en comentarios; el viernes 20/11 se cuenta el reparto en otra Story."
+  "note": "Story de comunidad de Clara (04): pregunta con 4 opciones, respuesta en comentarios; el viernes 20/11 se cuenta el reparto en otra Story.",
+  "media_id": "17953368129055450",
+  "published_at": "2026-11-17T14:27:03+0100"
  },
  {
   "id": "c13s2",
