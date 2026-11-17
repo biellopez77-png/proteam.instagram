@@ -367,3 +367,11 @@
 - Decidido: no se sintetiza música en el turno; se mantiene la decisión de las 6:37 (estilo de referencia generado, y Biel ya corrigió una música en u03).
 - Hueco vacío: mié 18/11 13:30 (y los siguientes). La ficha a-creditos-elevenlabs-1117 sigue abierta; no se crea otra.
 - Reserva: 21 guiones criticados sin producir (u12 montado y en pausa); no hacían falta más.
+
+## 17/11 · 9:49 · Encargos (Laura, con Dani)
+- Sin correcciones ni consignas nuevas de Biel.
+- Dani (horizonte de 15 días): 13 ideas de carrusel nuevas (4 de fútbol, 4 de baloncesto, 4 de balonmano y una común para después del 27/11), 12 preguntas de Story y el orden propuesto del jue 19/11 al mié 2/12, en agencia/ideas/carruseles.md. Motivo: sin música no hay Reels nuevos y los carruseles llevan la cuenta; había 9 ideas para 27 huecos.
+- Decidido: las ideas que citan una regla (quinta falta, 24 segundos, exclusión de 2 minutos) se comprueban en el reglamento el día que se hagan; si no se confirma, esa diapositiva se quita.
+- Pau: vuelto a probar a las 9:50. thumb.wikimedia.org sigue sin estar permitido y el original de Commons devuelve «demasiadas peticiones». La tarea sigue abierta.
+- Sin tocar: «por dentro» de baloncesto (falta captura real y música) y la parrilla de Clara (su turno de las :31).
+- Nada nuevo para Andrés (sin críticas pendientes) ni Samuel (bucle de las 22:41).
