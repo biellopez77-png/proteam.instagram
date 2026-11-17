@@ -2918,5 +2918,68 @@
   "note": "u33 · turno de Reels 17/11 3:37: Reel de datos corto (13,3 s, sin voz) de balonmano para el mié 11:30, detrás de u30 (fútbol). Dato IHF 6 → 4 pases, capturas reales de Partido en directo (Pérdida) y Cronología. Música nueva con golpe en el 4.",
   "score": "guion 77 · montaje 78",
   "title": "Brazo arriba: te quedan 4 pases."
+ },
+ {
+  "id": "c13",
+  "kind": "carousel",
+  "files": [
+   "feed/c13-1.jpg",
+   "feed/c13-2.jpg",
+   "feed/c13-3.jpg",
+   "feed/c13-4.jpg",
+   "feed/c13-5.jpg",
+   "feed/c13-6.jpg",
+   "feed/c13-7.jpg"
+  ],
+  "title": "Media pista. 60 minutos. Sin filas. (baloncesto)",
+  "score": "80",
+  "caption": "Media pista. 60 minutos. Sin filas.\nGuárdalo y mándaselo a tu segundo: es quien lleva el reloj de los cambios.\n\nLa pista mide 28 × 15 metros (Reglas FIBA, regla 2). Muchos martes te dan la mitad y la sesión sigue escrita para entera: dos filas de seis y cada uno esperando a cinco compañeros para tocar balón.\n\nLa propuesta (no es norma): grupos de tres, dos juegan a la canasta y los otros dos trabajan con balón en la banda, cambio cada 3 minutos. Si en una tarea hay más de tres esperando sin balón, está mal pensada.\n\n¿Cuántos días a la semana entrenáis en media pista? Déjalo en comentarios 👇\nEnvíaselo a tu segundo entrenador.\n\nComenta tu deporte, tu categoría y tus días y te preparo la semana en la app de ProTeam. Lista de espera hasta el 27 de noviembre, con 3 meses gratis. Enlace en la bio.\n\n#baloncesto #baloncestobase #entrenadores",
+  "status": "pending",
+  "campana": "carrusel",
+  "when": "2026-11-18T19:30:00+01:00",
+  "cover": null,
+  "note": "Agente 04 · turno 17/11 9:07 · idea 9 (media pista) · antes/después conceptual (estructura nueva) · dato 28 × 15 m (FIBA, regla 2) · Andrés texto 78 → final 80 (agencia/criticas/2026-11-17-c13-*.md) · gemelo u13 en reserva: que no salga el mismo día"
+ },
+ {
+  "id": "c13s",
+  "kind": "story",
+  "files": [
+   "stories/st-1117-siete-metros.jpg"
+  ],
+  "cover": null,
+  "status": "pending",
+  "campana": "carrusel",
+  "when": "2026-11-17T14:30:00+01:00",
+  "title": "Siete metros, último minuto: ¿quién lo tira? (balonmano)",
+  "score": "77",
+  "note": "Story de comunidad de Clara (04): pregunta con 4 opciones, respuesta en comentarios; el viernes 20/11 se cuenta el reparto en otra Story."
+ },
+ {
+  "id": "c13s2",
+  "kind": "story",
+  "files": [
+   "stories/st-1117-media-pista.jpg"
+  ],
+  "cover": null,
+  "status": "pending",
+  "campana": "carrusel",
+  "when": "2026-11-17T18:30:00+01:00",
+  "title": "El martes te dan media pista. ¿Y tu sesión? (baloncesto)",
+  "score": "76",
+  "note": "Story de conversación + aviso de c13 (mié 19:30) de Clara (04); respuesta en comentarios."
+ },
+ {
+  "id": "c13s3",
+  "kind": "story",
+  "files": [
+   "stories/st-1118-saque-de-banda.jpg"
+  ],
+  "cover": null,
+  "status": "pending",
+  "campana": "carrusel",
+  "when": "2026-11-18T10:30:00+01:00",
+  "title": "En un saque de banda no hay fuera de juego. ¿Lo usas? (fútbol)",
+  "score": "78",
+  "note": "Story de valor de Clara (04): IFAB, regla 11; pregunta con respuesta en comentarios."
  }
 ]
