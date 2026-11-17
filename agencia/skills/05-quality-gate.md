@@ -10,8 +10,12 @@ Críticas en `agencia/criticas/`, `queue.json` (`score`, `status`), `tools/pub.p
 | 1 · Idea/guion (antes de producir) | concepto, hook, guion o mapa de diapositivas | ≥ 75 y ningún bloqueante |
 | 2 · Pieza final (antes de programar) | vídeo real analizado, o JPG finales mirados | ≥ 75, ningún bloqueante y cobertura declarada |
 
+## Encaje de fase (lanzamiento 18→28/11, Biel 17/11) — va antes que la nota
+Cada crítica empieza con dos líneas: **Fase del día en que sale** (según `agencia/LANZAMIENTO.md`) y **Encaje de fase: sí / no**, con el porqué. Si es «no», la pieza no se programa ese día aunque pase de 75: se mueve al día de su fase (`pub.py requeue`) o pasa a borrador (`pub.py hold`). En `queue.json` cada pieza lleva `fase`.
+Cómo se reconoce la fase: pantalla de la app, «en la app de ProTeam se hace así» o «ProTeam por dentro» → solución (nunca antes del mar 24 por la tarde); escena o dato del problema sin la app → problema; algo que se puede usar sin vender → nutrición; qué llega el 28 sin explicar la app → impacto. Stories: solo la fase del día. Un contador o un «quedan N días» tiene que ser verdad el día en que sale.
+
 ## Bloqueantes (devuelven la pieza aunque la nota sea alta)
-Dato, función, testimonio o resultado inventado · fecha u oferta distinta de MARCA.md (en voz o en pantalla) · interfaz inventada · texto con error ortográfico en pantalla · texto necesario ilegible o fuera de zona segura · fotograma 0 en negro o con texto pequeño · persona como aval · Reel sin análisis en `intel/videos/` · concepto repetido sin ángulo nuevo.
+Dato, función, testimonio o resultado inventado · fecha u oferta distinta de MARCA.md (en voz o en pantalla) · interfaz inventada · texto con error ortográfico en pantalla · texto necesario ilegible o fuera de zona segura · fotograma 0 en negro o con texto pequeño · persona como aval · Reel sin análisis en `intel/videos/` · pieza fuera de la fase de su día · el nombre de Biel o «el fundador» · precio · concepto repetido sin ángulo nuevo.
 
 ## Veredictos
 - **PUBLICABLE** (≥ 75, sin bloqueantes): `score` en `queue.json`; sigue su hora.

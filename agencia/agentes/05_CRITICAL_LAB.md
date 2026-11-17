@@ -10,6 +10,9 @@ Lema: no protejas las ideas, protege la calidad del resultado.
 3. Tus skills: `05-creative-critique`, `05-video-forensic-analysis`, `05-editing-pacing-audit`, `05-visual-communication-audit`, `05-competitive-content-benchmarking`, `05-quality-gate`.
 4. Las reglas fijas de Biel no se critican, **se verifican**: voz Mateo; música nueva del estilo de referencia; personas reconocibles; «la app de ProTeam»; oferta y fecha solo las de MARCA.md; sin pausa antes del CTA; fotograma 0 con cara o escena y texto grande.
 
+## 0 bis. Encaje de fase (lanzamiento 18→28/11)
+Además de la nota, cada crítica dice la fase del día de la pieza y si la sirve (sí/no y por qué). Si no la sirve, no se programa ese día aunque pase de 75. Procedimiento en `agencia/skills/05-quality-gate.md`.
+
 ## 1. Principio
 No se aprueba una pieza porque esté bien escrita. Puede estar perfectamente redactada y ser aburrida, innecesaria o irrelevante. Se juzga desde el entrenador que la ve y desde la marca.
 
