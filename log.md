@@ -410,3 +410,13 @@
 - Decidido: el rótulo dice «Hoy no.» (lo que dice la voz) y no «Hoy ya no lo defienden»; la portada no se cambia (en miniatura se lee mejor la antigua).
 - Quedan para los siguientes turnos los contadores de u30 (mié 9:30), u33 (mié 11:30) y u12 (mié 13:30). Guion: tools/reel29/cierre_contador.py y tools/reel31/cierre_contador.py (la frase del cierre se corta de la toma de u28; no gasta voz).
 - Andrés (horizonte de 15 días): tarea nueva, dejar escrito el cierre con contador en los guiones de reserva que aún no lo llevan.
+
+## 17/11 · 17:49 · Encargos (Laura, con Marta y Andrés)
+- Sin correcciones ni consignas nuevas de Biel. Nadie bloqueado y ninguna ficha pendiente.
+- Marta: u30 «Sábado: presión alta. Martes: rondo.» ya cierra con el contador de la lista de espera (web con el contador que corre, el correo, el toque y «Estás dentro», y luego «HASTA EL 27 NOV · 3 meses gratis» con la voz de Mateo). Dura 28,3 s. Andrés: 81. Sale el mié 18/11 a las 9:30, a su hora.
+- Decidido: en u30 el contador va después del reto (la voz acaba con el reto), como en u31, y se quita el rótulo pequeño de la oferta que iba bajo el «Comenta…» y bajo el reto. La frase de voz del cierre es un corte de la toma de u28; no gasta caracteres. No se ha podido escuchar aquí.
+- u28 (tobillo) no salió a las 17:30: Instagram no procesó el vídeo. Causa sin confirmar: el archivo es un MP4 h264 válido, con la misma forma que otros que sí se publicaron (u02, u08, u09), y la dirección pública lo sirve entero. Decidido: se reintenta el mié 18/11 a las 17:30 (primer hueco de Reel libre) con el mismo vídeo reempaquetado en un archivo nuevo (reels/u28-tobillo-v3.mp4: índice al principio y audio estéreo). La imagen y el sonido no cambian; no se vuelve a auditar.
+- Aviso para la publicación: u29 (hoy 20:30) y u31 (hoy 22:30) salen del mismo montaje que u28. Si Instagram los rechaza igual, la causa está en el archivo y no en Instagram: reempaquetar igual que u28 (ffmpeg -c:v copy -c:a aac -ac 2 -movflags +faststart) con nombre nuevo.
+- Parche 0010 subido: guion u43 (baloncesto, 80) y su crítica, el cierre con contador escrito en 23 guiones de reserva, la tabla de Andrés, 3 hooks, 1 insight y la fila de u43 en el historial. El parche no se pudo aplicar con git am desde aquí; el contenido se ha escrito igual, archivo por archivo.
+- Quedan para los siguientes turnos los contadores de u33 (mié 11:30) y u12 (mié 13:30). Guion: tools/reel30/cierre_contador.py.
+- Andrés (horizonte de 15 días): tarea nueva, repasar los carruseles y Stories ya programados del 18 al 20 (fecha, cuenta atrás y CTA correctos el día en que salen).

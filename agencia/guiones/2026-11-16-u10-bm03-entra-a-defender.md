@@ -99,3 +99,15 @@ Señala una costumbre que el entrenador de base no se cuestiona, con una norma r
 8. ¿Mantiene el interés? Giro en el segundo 3, norma en el 9; punto débil: la línea 4 es larga para decirla sin prisa.
 9. ¿Realista con lo que hay? Motion graphics y captura real sí; la foto del cambio está por confirmar.
 10. ¿Representa a ProTeam? Sí: criterio formativo, la app solo en el CTA.
+
+## Cierre con contador (Andrés, 17/11 · encargo t-20261117-05-cierre-contador-reserva · manda sobre el cierre anterior hasta el 27/11)
+**Voz, orden del final:** «Pregúntale a tu segundo: ¿quién no ha atacado en todo el año?» → «Comenta tu categoría y tus días: te preparo la semana en la app de Pro Team.» → «Lista de espera hasta el veintisiete de noviembre: tres meses gratis.» (sobre la web del contador). Sin pausa entre ellos.
+**Pantallas (sustituyen al rótulo final de la lista de espera):**
+| tramo | pantalla |
+|---|---|
+| tras el reto y el «Comenta…» (≈ 2,6 s) | **web de la lista de espera con el contador** (animación de u28 v3 / u09: contador que corre, correo que se escribe, toque, «Estás dentro»), con la voz de la campaña |
+| final (≈ 1,5 s) | foto del principio · **HASTA EL 27 NOV** · *3 meses gratis* (serif azul) |
+
+**Hook sin sonido (1,5 s):** bien (número o escena en el fotograma 0, se lee en 1,5 s).
+**Duración estimada con el cierre nuevo:** ≈ 29,8 s (85 palabras a 3 por segundo + 1,5 s de cierre).
+**Desde el 28/11:** esta sección no se usa; cierre de `CIERRE_DESDE_28N.md`.

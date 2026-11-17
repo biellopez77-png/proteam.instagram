@@ -91,3 +91,15 @@ Es la escena más repetida del final de un entreno de baloncesto, el número sal
 ## Debilidades que conozco
 - Sin partido real; el número es una regla, no un dato de actualidad.
 - El enlace con la app es el calendario, no algo propio del tiro libre.
+
+## Cierre con contador (Andrés, 17/11 · encargo t-20261117-05-cierre-contador-reserva · manda sobre el cierre anterior hasta el 27/11)
+**Voz, orden del final:** «Mira con tu segundo la última sesión: ¿los libres iban después de correr, o en la pausa del agua?» → «Comenta…» solo en pantalla, como estaba → «Lista de espera hasta el veintisiete de noviembre: tres meses gratis.» (sobre la web del contador). Sin pausa entre ellos.
+**Pantallas (sustituyen al rótulo final de la lista de espera):**
+| tramo | pantalla |
+|---|---|
+| tras el reto y el «Comenta…» (≈ 2,6 s) | **web de la lista de espera con el contador** (animación de u28 v3 / u09: contador que corre, correo que se escribe, toque, «Estás dentro»), con la voz de la campaña |
+| final (≈ 1,5 s) | foto del principio · **HASTA EL 27 NOV** · *3 meses gratis* (serif azul) |
+
+**Hook sin sonido (1,5 s):** aceptable («5″» solo puede no leerse como tiro libre). Rótulo propuesto: «TIRO LIBRE: 5″» en el fotograma 0 (la foto ya es la línea de tiro).
+**Duración estimada con el cierre nuevo:** ≈ 38,5 s (111 palabras a 3 por segundo + 1,5 s de cierre). Pasa de 30 s: se recorta «Con el partido en juego y sin aire. Mientras los demás beben agua. (lo cuentan la foto y la escena)» → ≈ 34,2 s.
+**Desde el 28/11:** esta sección no se usa; cierre de `CIERRE_DESDE_28N.md`.

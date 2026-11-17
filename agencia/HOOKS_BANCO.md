@@ -1229,3 +1229,6 @@ Fuente de las normas: Normativa de Balonmano 2025, Juegos Deportivos Escolares d
 - **H1086** 28 goles encajados. 40 % de paradas. [balonmano · número · portero] (12/15)
 - **H1087** «Veintiocho goles, tenemos que hablar.» Y paró diecinueve. [balonmano · frase oída · portero] (12/15)
 - **H1088** ¿Cuántos tiros recibió tu portero el sábado? [balonmano · pregunta directa · portero] (11/15)
+- **H1089** Dos faltas en cuatro minutos. Dieciséis minutos en el banquillo. [baloncesto · comparativa · faltas] (12/15)
+- **H1090** Sentarlo con dos faltas no es el error. El error es el jueves. [baloncesto · provocadora · faltas] (12/15)
+- **H1091** Tu pívot con dos faltas no es un problema. Tu equipo sin él, sí. [baloncesto · contraintuitiva · faltas] (11/15)

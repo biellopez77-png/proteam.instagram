@@ -1,10 +1,10 @@
 {
  "origen": "tools/reel30/voz.tsv",
  "tipo": "locución generada con tiempos por palabra (exacta, no reconocida por oído)",
- "palabras": 16,
+ "palabras": 18,
  "primera_palabra_s": 0.127,
- "ultima_palabra_s": 23.635,
- "ritmo_palabras_por_s": 0.68,
+ "ultima_palabra_s": 27.775,
+ "ritmo_palabras_por_s": 0.65,
  "frases": [
   {
    "desde": 0.127,
@@ -53,6 +53,12 @@
    "hasta": 23.635,
    "texto": "Y a tu segundo: ¿qué frase va arriba de esta semana?",
    "palabras_por_s": 0.74
+  },
+  {
+   "desde": 23.785,
+   "hasta": 27.775,
+   "texto": "Lista de espera hasta el veintisiete de noviembre: tres meses gratis.",
+   "palabras_por_s": 0.5
   }
  ],
  "pausas": [],
@@ -136,6 +142,16 @@
    "desde": 21.867,
    "hasta": 23.635,
    "palabra": "¿qué frase va arriba de esta semana?"
+  },
+  {
+   "desde": 23.785,
+   "hasta": 26.325,
+   "palabra": "Lista de espera hasta el veintisiete de noviembre:"
+  },
+  {
+   "desde": 26.405,
+   "hasta": 27.775,
+   "palabra": "tres meses gratis."
   }
  ]
 }

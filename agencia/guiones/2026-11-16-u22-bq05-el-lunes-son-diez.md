@@ -112,3 +112,15 @@ Cualquier entrenador de base con doble jornada ha puesto el lunes la sesión de 
 8. ¿Mantiene el interés? La pregunta llega en el segundo 8 y las franjas en el 12.
 9. ¿Realista? Foto del banco + motion graphics; sin datos.
 10. ¿Representa a ProTeam? Sí: control de carga y planificación de la semana.
+
+## Cierre con contador (Andrés, 17/11 · encargo t-20261117-05-cierre-contador-reserva · manda sobre el cierre anterior hasta el 27/11)
+**Voz, orden del final:** «Y reta a tu segundo: que adivine el número de cada uno.» → «Comenta deporte, categoría y días: te preparo la semana en la app de Pro Team.» → «Lista de espera hasta el veintisiete de noviembre: tres meses gratis.» (sobre la web del contador). Sin pausa entre ellos.
+**Pantallas (sustituyen al rótulo final de la lista de espera):**
+| tramo | pantalla |
+|---|---|
+| tras el reto y el «Comenta…» (≈ 2,6 s) | **web de la lista de espera con el contador** (animación de u28 v3 / u09: contador que corre, correo que se escribe, toque, «Estás dentro»), con la voz de la campaña |
+| final (≈ 1,5 s) | foto del principio · **HASTA EL 27 NOV** · *3 meses gratis* (serif azul) |
+
+**Hook sin sonido (1,5 s):** bien (número o escena en el fotograma 0, se lee en 1,5 s).
+**Duración estimada con el cierre nuevo:** ≈ 34,5 s (99 palabras a 3 por segundo + 1,5 s de cierre). Pasa de 30 s: se recorta «El cansancio de cada uno no se ve. (se queda «Tú ves caras.»)» → ≈ 31,8 s.
+**Desde el 28/11:** esta sección no se usa; cierre de `CIERRE_DESDE_28N.md`.

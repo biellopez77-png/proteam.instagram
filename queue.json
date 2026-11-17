@@ -2855,20 +2855,19 @@
  },
  {
   "id": "u28",
-  "when": "2026-11-17T17:30:00+01:00",
+  "when": "2026-11-18T17:30:00+01:00",
   "kind": "reel",
   "files": [
-   "reels/u28-tobillo.mp4"
+   "reels/u28-tobillo-v3.mp4"
   ],
   "cover": "covers/u28-tobillo.jpg",
   "caption": "Cae del rebote, pisa un pie y tu pívot, fuera. Es la lesión más frecuente en baloncesto: el esguince de tobillo. 🏀\nGuárdalo: 16 temporadas de baloncesto universitario en EE. UU. (NCAA, Dick et al., Journal of Athletic Training, 2007) y el tobillo, el primero de la lista.\nEn la app de ProTeam tienes tu rutina de prevención (isquios y tobillo) con sus ejercicios y sesiones, dentro de la preparación física del equipo.\nEnvíaselo a tu segundo entrenador: ¿cuándo entrenasteis el tobillo por última vez?\nComenta tu deporte, tu categoría y tus días y te preparo la semana en la app de ProTeam. Lista de espera hasta el 27 de noviembre: 3 meses gratis. Enlace en la bio.\n\nFotos: Edy Tavares, Real Madrid (Zafer, CC BY 4.0), selección española de baloncesto (Diario de Madrid, CC BY 4.0), Wikimedia Commons.\n\n#baloncesto #entrenadordebaloncesto #preparacionfisica #prevenciondelesiones #proteam",
-  "status": "failed",
+  "status": "pending",
   "campana": "unrespiro",
   "share_to_feed": false,
-  "note": "u28 · turno de Reels 16/11 21:37: Reel de datos sin voz (13,6 s), música nueva de fondo, dato con fuente (Dick et al., 2007) y captura real de Rutinas. Guion 78, auditoría 78.; oficina: Sin voz: regla de Biel 17/11, todo Reel lleva la voz de Mateo; reprogramada desde la oficina · 17/11 12:37 (turno de Reels): con voz de Mateo (biblioteca, una toma, 328 caracteres), 18,0 s; misma música nueva del u28 realineada; dato grande «16 temporadas» y anillo que se llena. Auditoría de Andrés 79.; oficina: cambios: Mejora el hook y al final falta la animacion con el contador; reprogramada desde la oficina · 17/11 16:00 (corrección de Biel: «mejora el hook y al final falta la animación con el contador»): hook nuevo de escena («Cae del rebote. Pisa un pie. Tu pívot, fuera.»), voz de Mateo regrabada entera (una toma, 311 caracteres), 17,9 s; cierre con la entrada a la lista de espera y el contador (10 d 6 h → 27 NOV) como en u09. Misma música del u28 realineada. Auditoría de Andrés 81.",
+  "note": "u28 · turno de Reels 16/11 21:37: Reel de datos sin voz (13,6 s), música nueva de fondo, dato con fuente (Dick et al., 2007) y captura real de Rutinas. Guion 78, auditoría 78.; oficina: Sin voz: regla de Biel 17/11, todo Reel lleva la voz de Mateo; reprogramada desde la oficina · 17/11 12:37 (turno de Reels): con voz de Mateo (biblioteca, una toma, 328 caracteres), 18,0 s; misma música nueva del u28 realineada; dato grande «16 temporadas» y anillo que se llena. Auditoría de Andrés 79.; oficina: cambios: Mejora el hook y al final falta la animacion con el contador; reprogramada desde la oficina · 17/11 16:00 (corrección de Biel: «mejora el hook y al final falta la animación con el contador»): hook nuevo de escena («Cae del rebote. Pisa un pie. Tu pívot, fuera.»), voz de Mateo regrabada entera (una toma, 311 caracteres), 17,9 s; cierre con la entrada a la lista de espera y el contador (10 d 6 h → 27 NOV) como en u09. Misma música del u28 realineada. Auditoría de Andrés 81.; reprogramada desde la oficina · 17/11 18:20 (Laura): Instagram no procesó el vídeo a las 17:26 (causa sin confirmar: el archivo es MP4 h264 válido, igual que otros publicados). Se reintenta el mié 18/11 17:30 con el mismo vídeo reempaquetado (archivo nuevo, índice al principio y audio estéreo); la imagen no cambia.",
   "score": "voz 80 · montaje 81",
-  "title": "Cae del rebote, pisa un pie… y tu pívot, fuera.",
-  "error": "Error calling tool 'execute_action': Instagram could not process the video for account 17841445998297098 (container status: ERROR). Check that the media URL(s) are publicly accessible and meet Instagram's requirements (MP4 or MOV, max 1 GB, duration between 3 seconds and 15 minutes). (jsDelivr y raw; MP4 h264 1080x1920 17,9 s 4 MB)"
+  "title": "Cae del rebote, pisa un pie… y tu pívot, fuera."
  },
  {
   "id": "u29",
@@ -2898,7 +2897,7 @@
   "status": "pending",
   "campana": "unrespiro",
   "share_to_feed": false,
-  "note": "u30 · turno de Reels 17/11 0:37: «ProTeam por dentro» 2 de 3 (fútbol), encargo del plan de crecimiento. Captura real de Planificación (Semana 8) en tres zooms, voz Mateo de la biblioteca (frases por silencios), música nueva con el regreso del beat en «el martes». Va el miércoles 9:30 y no el martes 22:30 para no ir pegado a u29 (mismo formato).",
+  "note": "u30 · turno de Reels 17/11 0:37: «ProTeam por dentro» 2 de 3 (fútbol), encargo del plan de crecimiento. Captura real de Planificación (Semana 8) en tres zooms, voz Mateo de la biblioteca (frases por silencios), música nueva con el regreso del beat en «el martes». Va el miércoles 9:30 y no el martes 22:30 para no ir pegado a u29 (mismo formato). · 17/11 18:15 v2 (encargo de Andrés tras la corrección de Biel en u28): cierre con la animación del contador de la lista de espera (9 d 14 h → 27 NOV) y la voz de Mateo «Lista de espera hasta el veintisiete de noviembre: tres meses gratis» (corte de la toma de u28 v3); 28,3 s; auditoría 81 (agencia/criticas/2026-11-17-u30-final-v2.md)",
   "score": "guion 77 · montaje 81",
   "title": "Sábado: presión alta. Martes: rondo. (ProTeam por dentro: la frase de arriba)"
  },
