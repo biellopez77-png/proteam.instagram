@@ -2,6 +2,7 @@
 
 | Fecha | Pieza | Tipo | Resultado |
 | --- | --- | --- | --- |
+| 2026-11-17 16:24 | c12s2 stories/st-1117-soy-el-lateral.jpg | story | publicado, media_id 18137105878742939 |
 | 2026-11-17 14:27 | c13s stories/st-1117-siete-metros.jpg | story | publicado, media_id 17953368129055450 |
 | 2026-11-17 13:26 | u05 reels/u05-tres-a-cero.mp4 | reel | publicado, media_id 17934010398161249 |
 | 2026-11-17 13:25 | c10s stories/st-1117-tu-equipo-3-datos.jpg | story | publicado, media_id 18100278824656813 |

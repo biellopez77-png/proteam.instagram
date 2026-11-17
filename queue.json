@@ -2826,12 +2826,14 @@
    "stories/st-1117-soy-el-lateral.jpg"
   ],
   "cover": null,
-  "status": "pending",
+  "status": "published",
   "campana": "carrusel",
   "when": "2026-11-17T16:30:00+01:00",
   "title": "«Soy el lateral». ¿En qué categoría fijas las posiciones? (fútbol 7)",
   "score": "77",
-  "note": "Story de conversación de Clara (04): pregunta abierta, respuesta en comentarios del último post; adelanta c11 (vie 20/11) con valor. Cantera del Barça (Ciutat Esportiva)."
+  "note": "Story de conversación de Clara (04): pregunta abierta, respuesta en comentarios del último post; adelanta c11 (vie 20/11) con valor. Cantera del Barça (Ciutat Esportiva).",
+  "media_id": "18137105878742939",
+  "published_at": "2026-11-17T16:24:52+0100"
  },
  {
   "id": "u09",
