@@ -336,3 +336,17 @@
 - Decidido: la música se probó en Higgsfield (mismo modelo, 4,36 créditos). Se generó, pero las descargas de Higgsfield no están permitidas en los turnos y no se rodea; tampoco hay Reel de datos de recambio, porque también necesita música nueva.
 - Hueco vacío: mié 18/11 13:30. Marta queda «bloqueado»; ficha para Biel en approvals (a-creditos-elevenlabs-1117) y aviso al móvil.
 - Reserva: 17 guiones criticados sin producir; no hacían falta más.
+
+## 17/11 · 7:49 · Encargos (Laura, con Dani y Andrés)
+- Sin correcciones ni consignas nuevas de Biel.
+- Dani y Andrés: los tres Reels de actualidad del Radar, escritos y criticados (a la reserva, sin producir):
+  - u34 «Minuto 45: 0-1. Minuto 57: 0-3.» (fútbol, España 2-3 Inglaterra, cronología) · 79. Caduca el jueves 19/11.
+  - u35 «Volvía de lesión. Jugó 16 minutos. Metió 18 puntos.» (baloncesto, Maledon, RPE de partido) · 78. Vigente hasta el domingo 22/11.
+  - u36 «Nueve de nueve. Y esta semana, dos partidos: Europa y el Barça.» (balonmano, Bidasoa, semana de dos partidos) · 77. Caduca el sábado 21/11 a las 17:30.
+- Decidido: en u34 la captura de la cronología es de un partido de balonmano; solo entra la fila «Gol encajado» con su minuto (sin marcador 26–17 ni 30:00). Si el marcador se ve en el montaje, Andrés lo bloquea.
+- Decidido: en u35 la captura de RPE se recorta a las tres casillas y a la fórmula «Carga = minutos × RPE»; las filas con 52'–60' son de balonmano y no entran. No se dice que el Madrid limitara los minutos; la descripción remite al médico o al fisio.
+- Decidido: en u36 no se da el día del partido europeo del Bidasoa (la fuente no lo deja claro y no se ha confirmado): «entre semana».
+- Los tres dependen de dos cosas: foto de arranque (tarea nueva para Pau, prioridad alta) y música nueva (ElevenLabs sin créditos hasta el 14/12; ficha ya abierta para Biel). Sin música, u34 y u36 caducan sin salir.
+- Sin tocar: Stories del martes a las 14:30 y 18:30 (turno de Clara de las :31) y el «por dentro» de baloncesto (falta una captura real de baloncesto).
+- Horizonte de 15 días: Pau, fotos de u34, u35 y u36. Nada nuevo para Dani (20 guiones criticados en reserva), Andrés (sin críticas pendientes) ni Samuel (confirma u04 con 24 h en el bucle de las 22:41).
+- Huecos de Reels sin pieza: mié 18/11 desde las 13:30 y todos los días siguientes.
