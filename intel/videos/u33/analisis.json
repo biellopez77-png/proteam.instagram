@@ -1,0 +1,912 @@
+{
+ "meta": {
+  "contenedor": "mov,mp4,m4a,3gp,3g2,mj2",
+  "duracion_s": 13.3,
+  "tamano_bytes": 2637021,
+  "bitrate_kbps": 1586,
+  "ancho": 1080,
+  "alto": 1920,
+  "relacion": "9:16",
+  "fps": 30.0,
+  "fotogramas_declarados": 399,
+  "codec_video": "h264",
+  "pix_fmt": "yuv420p",
+  "pistas_audio": [
+   {
+    "codec": "aac",
+    "canales": 2,
+    "hz": 48000,
+    "bitrate_kbps": 196
+   }
+  ],
+  "etiquetas": {
+   "major_brand": "isom",
+   "minor_version": "512",
+   "compatible_brands": "isomiso2avc1mp41",
+   "encoder": "Lavf60.16.100"
+  },
+  "id": "u33",
+  "fotogramas_leidos": 399,
+  "sha256": "32c08aafbad5c92619cd968293e012ef70ebc0c794fd2c827946ab076f5982b3",
+  "archivo": "reels/u33-cuatro-pases.mp4",
+  "fuente": "",
+  "marca": "proteam",
+  "tipo": "propio",
+  "formato": "reel",
+  "tema": "juego pasivo: 4 pases (balonmano, datos)",
+  "analizado": "2026-11-17 02:59"
+ },
+ "montaje": {
+  "cortes_duros": 4,
+  "transiciones_o_movimientos_fuertes": 0,
+  "planos": 5,
+  "duracion_media_plano_s": 2.66,
+  "plano_mas_largo_s": 4.067,
+  "plano_mas_corto_s": 1.433,
+  "cortes_por_10s": 3.01,
+  "tramos_estaticos": [
+   {
+    "desde": 0.0,
+    "hasta": 1.5,
+    "duracion_s": 1.5
+   },
+   {
+    "desde": 4.33,
+    "hasta": 6.23,
+    "duracion_s": 1.9
+   },
+   {
+    "desde": 11.03,
+    "hasta": 13.27,
+    "duracion_s": 2.23
+   }
+  ],
+  "nota": "Detección automática por histograma y diferencia de imagen sobre TODOS los fotogramas. Un motion graphic continuo cuenta como un solo plano; un cambio de fondo brusco dentro de una animación puede contarse como corte. Confirmar en las láminas."
+ },
+ "cortes": [
+  {
+   "fotograma": 88,
+   "t": 2.933,
+   "tipo": "corte",
+   "fuerza": 0.365
+  },
+  {
+   "fotograma": 210,
+   "t": 7.0,
+   "tipo": "corte",
+   "fuerza": 0.479
+  },
+  {
+   "fotograma": 263,
+   "t": 8.767,
+   "tipo": "corte",
+   "fuerza": 0.42
+  },
+  {
+   "fotograma": 306,
+   "t": 10.2,
+   "tipo": "corte",
+   "fuerza": 0.6
+  }
+ ],
+ "escenas": [
+  {
+   "escena": 1,
+   "desde_fotograma": 0,
+   "hasta_fotograma": 87,
+   "desde": 0.0,
+   "hasta": 2.933,
+   "duracion_s": 2.933,
+   "movimiento_medio": 0.0027,
+   "luz_media": 0.162,
+   "saturacion_media": 0.542
+  },
+  {
+   "escena": 2,
+   "desde_fotograma": 88,
+   "hasta_fotograma": 209,
+   "desde": 2.933,
+   "hasta": 7.0,
+   "duracion_s": 4.067,
+   "movimiento_medio": 0.0028,
+   "luz_media": 0.1,
+   "saturacion_media": 0.321
+  },
+  {
+   "escena": 3,
+   "desde_fotograma": 210,
+   "hasta_fotograma": 262,
+   "desde": 7.0,
+   "hasta": 8.767,
+   "duracion_s": 1.767,
+   "movimiento_medio": 0.0219,
+   "luz_media": 0.358,
+   "saturacion_media": 0.312
+  },
+  {
+   "escena": 4,
+   "desde_fotograma": 263,
+   "hasta_fotograma": 305,
+   "desde": 8.767,
+   "hasta": 10.2,
+   "duracion_s": 1.433,
+   "movimiento_medio": 0.0046,
+   "luz_media": 0.393,
+   "saturacion_media": 0.222
+  },
+  {
+   "escena": 5,
+   "desde_fotograma": 306,
+   "hasta_fotograma": 398,
+   "desde": 10.2,
+   "hasta": 13.3,
+   "duracion_s": 3.1,
+   "movimiento_medio": 0.0074,
+   "luz_media": 0.223,
+   "saturacion_media": 0.528
+  }
+ ],
+ "laminas": [
+  {
+   "lamina": "general_001.jpg",
+   "fotogramas": [
+    0,
+    5,
+    10,
+    15,
+    20,
+    25,
+    43,
+    87,
+    88,
+    133,
+    148,
+    178,
+    209,
+    210,
+    236,
+    262,
+    263,
+    284
+   ],
+   "desde": 0.0,
+   "hasta": 9.467,
+   "modo": "general"
+  },
+  {
+   "lamina": "general_002.jpg",
+   "fotogramas": [
+    305,
+    306,
+    351,
+    352,
+    396,
+    398
+   ],
+   "desde": 10.167,
+   "hasta": 13.267,
+   "modo": "general"
+  },
+  {
+   "lamina": "detalle_001.jpg",
+   "fotogramas": [
+    0,
+    8,
+    16,
+    24,
+    32,
+    40,
+    48,
+    56,
+    64,
+    72,
+    80,
+    87,
+    88,
+    96,
+    104,
+    112,
+    120,
+    128,
+    136,
+    144,
+    152,
+    160,
+    168,
+    176
+   ],
+   "desde": 0.0,
+   "hasta": 5.867,
+   "modo": "detalle"
+  },
+  {
+   "lamina": "detalle_002.jpg",
+   "fotogramas": [
+    184,
+    192,
+    200,
+    208,
+    209,
+    210,
+    216,
+    224,
+    232,
+    240,
+    248,
+    256,
+    262,
+    263,
+    264,
+    272,
+    280,
+    288,
+    296,
+    304,
+    305,
+    306,
+    312,
+    320
+   ],
+   "desde": 6.133,
+   "hasta": 10.667,
+   "modo": "detalle"
+  },
+  {
+   "lamina": "detalle_003.jpg",
+   "fotogramas": [
+    328,
+    336,
+    344,
+    352,
+    360,
+    368,
+    376,
+    384,
+    392
+   ],
+   "desde": 10.933,
+   "hasta": 13.067,
+   "modo": "detalle"
+  }
+ ],
+ "texto_en_pantalla": {
+  "idioma": "spa+eng",
+  "nota": "OCR automático sobre los fotogramas muestreados: puede fallar con tipografía fina, texto animado o sobre foto. La exposición es aproximada (resolución = intervalo de muestreo). Verificar siempre en las láminas.",
+  "por_fotograma": [
+   {
+    "fotograma": 0,
+    "t": 0.0,
+    "texto": "10 Brazo arriba: PASES"
+   },
+   {
+    "fotograma": 5,
+    "t": 0.167,
+    "texto": "YA 10 arriba: PASES"
+   },
+   {
+    "fotograma": 8,
+    "t": 0.267,
+    "texto": "YA 10 Brazo arriba: PASES"
+   },
+   {
+    "fotograma": 10,
+    "t": 0.333,
+    "texto": "YA 10 Brbzd arriba: PASES"
+   },
+   {
+    "fotograma": 15,
+    "t": 0.5,
+    "texto": "10 Brazo arriba: PASES."
+   },
+   {
+    "fotograma": 16,
+    "t": 0.533,
+    "texto": "24 Brazo arriba: PASES."
+   },
+   {
+    "fotograma": 20,
+    "t": 0.667,
+    "texto": "10 arriba: PASES"
+   },
+   {
+    "fotograma": 24,
+    "t": 0.8,
+    "texto": "wa 24 10 Brbzd arriba: PASES"
+   },
+   {
+    "fotograma": 25,
+    "t": 0.833,
+    "texto": "10 arriba: PASES"
+   },
+   {
+    "fotograma": 32,
+    "t": 1.067,
+    "texto": "10 Brbzd arriba: PASES"
+   },
+   {
+    "fotograma": 40,
+    "t": 1.333,
+    "texto": "Brazo arriba: PASES."
+   },
+   {
+    "fotograma": 43,
+    "t": 1.433,
+    "texto": "Brbzd arriba: PASES"
+   },
+   {
+    "fotograma": 48,
+    "t": 1.6,
+    "texto": "he arriba: PASES"
+   },
+   {
+    "fotograma": 56,
+    "t": 1.867,
+    "texto": "27 ha arriba: PASES yatirar"
+   },
+   {
+    "fotograma": 64,
+    "t": 2.133,
+    "texto": "arriba: yatirar"
+   },
+   {
+    "fotograma": 72,
+    "t": 2.4,
+    "texto": "27 le arriba: PASES yatirar"
+   },
+   {
+    "fotograma": 80,
+    "t": 2.667,
+    "texto": "ae arriba: PASES yatirar"
+   },
+   {
+    "fotograma": 87,
+    "t": 2.9,
+    "texto": "arriba: PASES"
+   },
+   {
+    "fotograma": 88,
+    "t": 2.933,
+    "texto": "27 arriba: PASES yatirar"
+   },
+   {
+    "fotograma": 96,
+    "t": 3.2,
+    "texto": "REGLAS IHF DESDE EL 1/7/2022 Hasta 2022 eran"
+   },
+   {
+    "fotograma": 104,
+    "t": 3.467,
+    "texto": "REGLAS IHF DESDE EL 1/7/2022 Hasta 2022 eran"
+   },
+   {
+    "fotograma": 112,
+    "t": 3.733,
+    "texto": "REGLAS IHF DESDE EL 1/7/2022 Hasta 2022 eran má"
+   },
+   {
+    "fotograma": 120,
+    "t": 4.0,
+    "texto": "REGLAS IHF DESDE EL 1/7/2022 Desde 2022, solo"
+   },
+   {
+    "fotograma": 128,
+    "t": 4.267,
+    "texto": "REGLAS IHF DESDE EL 1/7/2022 Desde 2022, solo pases, como máximo."
+   },
+   {
+    "fotograma": 133,
+    "t": 4.433,
+    "texto": "REGLAS IHF DESDE EL 1/7/2022 Desde 2022, solo pases, como máximo. TIRO Fuente: IHF de pases tras el aviso"
+   },
+   {
+    "fotograma": 136,
+    "t": 4.533,
+    "texto": "REGLAS IHF DESDE EL 1/7/2022 Desde 2022, solo pases, como máximo. TIRO Fuente: IHF de pases tras el aviso"
+   },
+   {
+    "fotograma": 144,
+    "t": 4.8,
+    "texto": "REGLAS IHF DESDE EL 1/7/2022 Desde 2022, solo pases, como máximo. TIRO Fuente: IHF de pases tras el aviso"
+   },
+   {
+    "fotograma": 148,
+    "t": 4.933,
+    "texto": "REGLAS IHF DESDE EL 1/7/2022 Desde 2022, solo pases, como máximo. TIRO Fuente: IHF de pases tras el aviso"
+   },
+   {
+    "fotograma": 152,
+    "t": 5.067,
+    "texto": "REGLAS IHF DESDE EL 1/7/2022 Desde 2022, solo pases, como máximo. TIRO Fuente: IHF de pases tras el aviso"
+   },
+   {
+    "fotograma": 160,
+    "t": 5.333,
+    "texto": "REGLAS IHF DESDE EL 1/7/2022 Desde 2022, solo pases, como máximo. TIRO 00 Fuente: IHF de tras el aviso"
+   },
+   {
+    "fotograma": 168,
+    "t": 5.6,
+    "texto": "REGLAS IHF DESDE EL 1/7/2022 Desde 2022, solo pases, como maximo. 000. Fuente: IHF de pases tras el aviso"
+   },
+   {
+    "fotograma": 176,
+    "t": 5.867,
+    "texto": "REGLAS IHF DESDE EL 1/7/2022 Desde 2022, solo pases, como maximo. Fuente: IHF de tras el aviso"
+   },
+   {
+    "fotograma": 178,
+    "t": 5.933,
+    "texto": "REGLAS IHF DESDE EL 1/7/2022 Desde 2022, solo pases, como MÁXIMO. Fuente: IHF de pases tras el aviso"
+   },
+   {
+    "fotograma": 184,
+    "t": 6.133,
+    "texto": "REGLAS IHF DESDE EL 1/7/2022 Desde 2022, solo pases, como maximo. Fuente: IHF de pases el aviso"
+   },
+   {
+    "fotograma": 192,
+    "t": 6.4,
+    "texto": "REGLAS IHF DESDE EL 1/7/2022 Desde 2022, solo pases, como maximo. Fuente: IHF de pases tras el aviso"
+   },
+   {
+    "fotograma": 200,
+    "t": 6.667,
+    "texto": "REGLAS IHF DESDE EL 1/7/2022 Desde 2022, solo pases, como máximo. 00000 Fuente: IHF de pases el aviso"
+   },
+   {
+    "fotograma": 208,
+    "t": 6.933,
+    "texto": "REGLAS IHF DESDE EL 1/7/2022 Desde 2022, solo pases, como máximo. 00000 Fuente: IHF pases tras el aviso"
+   },
+   {
+    "fotograma": 209,
+    "t": 6.967,
+    "texto": "REGLAS IHF DESDE EL 1/7/2022 Desde 2022, solo pases, como máximo. Fuente: IHF de pases tras"
+   },
+   {
+    "fotograma": 210,
+    "t": 7.0,
+    "texto": "Pasivo pitado 26-17"
+   },
+   {
+    "fotograma": 216,
+    "t": 7.2,
+    "texto": "EN LA APP DE PROTEAM CAPTURA REAL Pasivo pitado JS BM PV"
+   },
+   {
+    "fotograma": 224,
+    "t": 7.467,
+    "texto": "EN LA APP DE PROTEAM CAPTURA REAL Pasivo pitado BM JS PV #4PolV. Tiro Más acci Cambio"
+   },
+   {
+    "fotograma": 232,
+    "t": 7.733,
+    "texto": "EN LA APP DE PROTEAM CAPTURA REAL Pasivo pitado NC BM JS PV #4PolV. Tiro Pérdida Más accii Cambio"
+   },
+   {
+    "fotograma": 236,
+    "t": 7.867,
+    "texto": "EN LA APP DE PROTEAM CAPTURA REAL Pasivo pitado NC BM JS PV #4PolV. Tiro Pérdida Más accii Cambio"
+   },
+   {
+    "fotograma": 240,
+    "t": 8.0,
+    "texto": "EN LA APP DE PROTEAM CAPTURA REAL Pasivo pitado NC BM JS PV #4PolV. Tiro Pérdida Más accii Cambio"
+   },
+   {
+    "fotograma": 248,
+    "t": 8.267,
+    "texto": "EN LA APP DE PROTEAM CAPTURA REAL Pasivo pitado NC BM JS PV #4PolV. Tiro Pérdida Más accii Cambio"
+   },
+   {
+    "fotograma": 256,
+    "t": 8.533,
+    "texto": "EN LA APP DE PROTEAM CAPTURA REAL Pasivo pitado NC BM JS PV #4PolV. Tiro Pérdida Más accii Cambio"
+   },
+   {
+    "fotograma": 262,
+    "t": 8.733,
+    "texto": "EN LA APP DE PROTEAM CAPTURA REAL Pasivo pitado NC BM JS PV #4PolV. Tiro Pérdida Más accii Cambio"
+   },
+   {
+    "fotograma": 263,
+    "t": 8.767,
+    "texto": "EN LA APP DE PROTEAM CAPTURA REAL Tiempo Tiempor val opio Parada Pérdida ajado GF del rival"
+   },
+   {
+    "fotograma": 264,
+    "t": 8.8,
+    "texto": "EN LA APP DE PROTEAM CAPTURA REAL Ellunes, Tiempc pio rival Tiempo pio Parada Pérdida Golencajado GF del rival"
+   },
+   {
+    "fotograma": 272,
+    "t": 9.067,
+    "texto": "EN LA APP DE PROTEAM CAPTURA REAL El lunes, 271 crono Tiempo Tiempo mu: rival Tiempon pio Parada GF del rival"
+   },
+   {
+    "fotograma": 280,
+    "t": 9.333,
+    "texto": "EN LA APP DE PROTEAM CAPTURA REAL El lunes, Tiempo mu: rival pio Parada GF di"
+   },
+   {
+    "fotograma": 284,
+    "t": 9.467,
+    "texto": "EN LA APP DE PROTEAM CAPTURA REAL El lunes, Tiempo mu: rival pio Parada GF di"
+   },
+   {
+    "fotograma": 288,
+    "t": 9.6,
+    "texto": "EN LA APP DE PROTEAM CAPTURA REAL El lunes, Tiempo mu: rival pio Parada GF di"
+   },
+   {
+    "fotograma": 296,
+    "t": 9.867,
+    "texto": "EN LA APP DE PROTEAM CAPTURA REAL El lunes, Tiempo mu: rival pio Parada GF di"
+   },
+   {
+    "fotograma": 304,
+    "t": 10.133,
+    "texto": "EN LA APP DE PROTEAM CAPTURA REAL El lunes, Tiempo mu: rival pio Parada GF di"
+   },
+   {
+    "fotograma": 305,
+    "t": 10.167,
+    "texto": "EN LA APP DE PROTEAM CAPTURA REAL El lunes, Tiempo mu: rival pio Parada GF di"
+   },
+   {
+    "fotograma": 306,
+    "t": 10.2,
+    "texto": "EN LA APP DE PROTEAM CAPTURA REAL El lunes, 27. cronologia. Tiempo propio Tiempor rival Tierr Parada"
+   },
+   {
+    "fotograma": 312,
+    "t": 10.4,
+    "texto": "pe Seen\" RETO PARA TU STAFF"
+   },
+   {
+    "fotograma": 320,
+    "t": 10.667,
+    "texto": "fia RETO PARA TU STAFF ¿Cuántos balones perdisteis"
+   },
+   {
+    "fotograma": 328,
+    "t": 10.933,
+    "texto": "RETO PARA TU STAFF ¿Cuántos balones perdisteis por pasivo el sábado?"
+   },
+   {
+    "fotograma": 336,
+    "t": 11.2,
+    "texto": "Mery” RETO PARA TU STAFF ¿Cuántos balones perdisteis por pasivo el sábado?"
+   },
+   {
+    "fotograma": 344,
+    "t": 11.467,
+    "texto": "gon” RETO PARA TU STAFF ¿Cuántos balones perdisteis por pasivo el sábado? Comenta tu deporte, categoría días LISTA DE ESPERA HASTA EL 27 NOV meses gratis."
+   },
+   {
+    "fotograma": 351,
+    "t": 11.7,
+    "texto": "acu\" RETO PARA TU STAFF ¿Cuántos balones perdisteis por pasivo el sábado? Comenta tu deporte, categoría días LISTA DE ESPERA HASTA EL 27 NOV meses gratis."
+   },
+   {
+    "fotograma": 352,
+    "t": 11.733,
+    "texto": "Fe RETO PARA TU STAFF ¿Cuántos balones perdisteis por pasivo el sábado? Comenta tu deporte, categoría días LISTA DE ESPERA HASTA EL 27 NOV meses gratis."
+   },
+   {
+    "fotograma": 360,
+    "t": 12.0,
+    "texto": "RETO PARA TU STAFF ¿Cuántos balones perdisteis por pasivo el sábado? Comenta tu deporte, categoría días LISTA DE ESPERA HASTA EL 27 NOV meses gratis."
+   },
+   {
+    "fotograma": 368,
+    "t": 12.267,
+    "texto": "RETO PARA TU STAFF ¿Cuántos balones perdisteis por pasivo el sábado? Comenta tu deporte, categoría días LISTA DE ESPERA HASTA EL 27 NOV meses gratis."
+   },
+   {
+    "fotograma": 376,
+    "t": 12.533,
+    "texto": "ay econ” RETO PARA TU STAFF ¿Cuántos balones perdisteis por pasivo el sábado? Comenta tu deporte, categoría días LISTA DE ESPERA HASTA EL 27 NOV meses gratis."
+   },
+   {
+    "fotograma": 384,
+    "t": 12.8,
+    "texto": "ecw RETO PARA TU STAFF ¿Cuántos balones perdisteis por pasivo el sábado? Comenta tu deporte, categoría días LISTA DE ESPERA HASTA EL 27 NOV meses gratis."
+   },
+   {
+    "fotograma": 392,
+    "t": 13.067,
+    "texto": "RETO PARA TU STAFF ¿Cuántos balones perdisteis por pasivo el sábado? Comenta tu deporte, categoría días LISTA DE ESPERA HASTA EL 27 NOV meses gratis."
+   },
+   {
+    "fotograma": 396,
+    "t": 13.2,
+    "texto": "ag oN RETO PARA TU STAFF ¿Cuántos balones perdisteis por pasivo el sábado? Comenta tu deporte, categoría días LISTA DE ESPERA HASTA EL 27 NOV meses gratis."
+   },
+   {
+    "fotograma": 398,
+    "t": 13.267,
+    "texto": "acu\" RETO PARA TU STAFF ¿Cuántos balones perdisteis por pasivo el sábado? Comenta tu deporte, categoría días LISTA DE ESPERA HASTA EL 27 NOV meses gratis."
+   }
+  ],
+  "bloques": [
+   {
+    "desde": 0.267,
+    "hasta": 0.267,
+    "texto": "YA 10 Brazo arriba: PASES",
+    "palabras": 5
+   },
+   {
+    "desde": 0.333,
+    "hasta": 0.333,
+    "texto": "YA 10 Brbzd arriba: PASES",
+    "palabras": 5
+   },
+   {
+    "desde": 0.8,
+    "hasta": 0.8,
+    "texto": "wa 24 10 Brbzd arriba: PASES",
+    "palabras": 6
+   },
+   {
+    "desde": 1.867,
+    "hasta": 1.867,
+    "texto": "27 ha arriba: PASES yatirar",
+    "palabras": 5
+   },
+   {
+    "desde": 2.4,
+    "hasta": 2.4,
+    "texto": "27 le arriba: PASES yatirar",
+    "palabras": 5
+   },
+   {
+    "desde": 3.2,
+    "hasta": 6.967,
+    "texto": "REGLAS IHF DESDE EL 1/7/2022 Desde 2022, solo pases, como máximo. TIRO Fuente: IHF de pases tras el aviso",
+    "palabras": 19
+   },
+   {
+    "desde": 7.2,
+    "hasta": 10.2,
+    "texto": "EN LA APP DE PROTEAM CAPTURA REAL Ellunes, Tiempc pio rival Tiempo pio Parada Pérdida Golencajado GF del rival",
+    "palabras": 19
+   },
+   {
+    "desde": 10.4,
+    "hasta": 10.4,
+    "texto": "pe Seen\" RETO PARA TU STAFF",
+    "palabras": 6
+   },
+   {
+    "desde": 10.667,
+    "hasta": 10.667,
+    "texto": "fia RETO PARA TU STAFF ¿Cuántos balones perdisteis",
+    "palabras": 8
+   },
+   {
+    "desde": 10.933,
+    "hasta": 10.933,
+    "texto": "RETO PARA TU STAFF ¿Cuántos balones perdisteis por pasivo el sábado?",
+    "palabras": 11
+   },
+   {
+    "desde": 11.2,
+    "hasta": 11.2,
+    "texto": "Mery” RETO PARA TU STAFF ¿Cuántos balones perdisteis por pasivo el sábado?",
+    "palabras": 12
+   },
+   {
+    "desde": 11.467,
+    "hasta": 11.467,
+    "texto": "gon” RETO PARA TU STAFF ¿Cuántos balones perdisteis por pasivo el sábado? Comenta tu deporte, categoría días LISTA DE ESPERA HASTA EL 27 NOV meses gratis.",
+    "palabras": 26
+   },
+   {
+    "desde": 11.7,
+    "hasta": 11.7,
+    "texto": "acu\" RETO PARA TU STAFF ¿Cuántos balones perdisteis por pasivo el sábado? Comenta tu deporte, categoría días LISTA DE ESPERA HASTA EL 27 NOV meses gratis.",
+    "palabras": 26
+   },
+   {
+    "desde": 11.733,
+    "hasta": 11.733,
+    "texto": "Fe RETO PARA TU STAFF ¿Cuántos balones perdisteis por pasivo el sábado? Comenta tu deporte, categoría días LISTA DE ESPERA HASTA EL 27 NOV meses gratis.",
+    "palabras": 26
+   },
+   {
+    "desde": 12.0,
+    "hasta": 12.267,
+    "texto": "RETO PARA TU STAFF ¿Cuántos balones perdisteis por pasivo el sábado? Comenta tu deporte, categoría días LISTA DE ESPERA HASTA EL 27 NOV meses gratis.",
+    "palabras": 25
+   },
+   {
+    "desde": 12.533,
+    "hasta": 12.533,
+    "texto": "ay econ” RETO PARA TU STAFF ¿Cuántos balones perdisteis por pasivo el sábado? Comenta tu deporte, categoría días LISTA DE ESPERA HASTA EL 27 NOV meses gratis.",
+    "palabras": 27
+   },
+   {
+    "desde": 12.8,
+    "hasta": 12.8,
+    "texto": "ecw RETO PARA TU STAFF ¿Cuántos balones perdisteis por pasivo el sábado? Comenta tu deporte, categoría días LISTA DE ESPERA HASTA EL 27 NOV meses gratis.",
+    "palabras": 26
+   },
+   {
+    "desde": 13.067,
+    "hasta": 13.067,
+    "texto": "RETO PARA TU STAFF ¿Cuántos balones perdisteis por pasivo el sábado? Comenta tu deporte, categoría días LISTA DE ESPERA HASTA EL 27 NOV meses gratis.",
+    "palabras": 25
+   },
+   {
+    "desde": 13.2,
+    "hasta": 13.2,
+    "texto": "ag oN RETO PARA TU STAFF ¿Cuántos balones perdisteis por pasivo el sábado? Comenta tu deporte, categoría días LISTA DE ESPERA HASTA EL 27 NOV meses gratis.",
+    "palabras": 27
+   },
+   {
+    "desde": 13.267,
+    "hasta": 13.267,
+    "texto": "acu\" RETO PARA TU STAFF ¿Cuántos balones perdisteis por pasivo el sábado? Comenta tu deporte, categoría días LISTA DE ESPERA HASTA EL 27 NOV meses gratis.",
+    "palabras": 26
+   }
+  ]
+ },
+ "audio": {
+  "tiene_audio": true,
+  "wav": "intel/videos/u33/audio_16k.wav",
+  "volumen_integrado_lufs": "-14.02",
+  "pico_real_db": "-0.13",
+  "rango_lra": "2.90",
+  "silencios": [],
+  "subidas_bruscas_s": [
+   4.0,
+   5.4,
+   8.8,
+   12.1
+  ],
+  "energia_db_cada_0_1s": [
+   -15.3,
+   -18.2,
+   -16.9,
+   -22.2,
+   -16.4,
+   -18.3,
+   -15.1,
+   -17.5,
+   -20.3,
+   -19.5,
+   -18.1,
+   -19.9,
+   -20.5,
+   -22.2,
+   -19.7,
+   -15.8,
+   -22.6,
+   -18.5,
+   -18.9,
+   -18.0,
+   -22.2,
+   -16.3,
+   -21.5,
+   -24.4,
+   -24.2,
+   -26.8,
+   -26.6,
+   -24.1,
+   -27.9,
+   -29.6,
+   -27.7,
+   -29.6,
+   -29.1,
+   -32.9,
+   -32.8,
+   -32.4,
+   -33.6,
+   -35.1,
+   -37.7,
+   -36.7,
+   -8.9,
+   -8.8,
+   -8.8,
+   -8.4,
+   -9.0,
+   -11.1,
+   -14.2,
+   -17.6,
+   -16.1,
+   -23.5,
+   -21.4,
+   -21.1,
+   -22.0,
+   -28.3,
+   -14.5,
+   -8.8,
+   -8.2,
+   -9.4,
+   -10.7,
+   -12.3,
+   -14.8,
+   -9.0,
+   -8.6,
+   -9.7,
+   -10.9,
+   -11.6,
+   -14.6,
+   -10.6,
+   -9.3,
+   -10.0,
+   -10.9,
+   -10.9,
+   -9.9,
+   -9.4,
+   -10.1,
+   -9.9,
+   -10.3,
+   -11.8,
+   -13.2,
+   -15.6,
+   -17.9,
+   -22.1,
+   -15.8,
+   -28.7,
+   -23.0,
+   -24.7,
+   -23.4,
+   -29.8,
+   -11.7,
+   -9.4,
+   -9.9,
+   -11.3,
+   -12.1,
+   -14.7,
+   -12.5,
+   -10.2,
+   -10.3,
+   -11.3,
+   -12.2,
+   -13.3,
+   -15.9,
+   -10.2,
+   -10.4,
+   -10.9,
+   -10.7,
+   -10.8,
+   -10.9,
+   -10.7,
+   -10.8,
+   -11.0,
+   -12.3,
+   -13.7,
+   -16.0,
+   -18.4,
+   -22.4,
+   -16.5,
+   -29.0,
+   -24.1,
+   -25.2,
+   -24.2,
+   -28.5,
+   -13.2,
+   -11.0,
+   -12.1,
+   -14.4,
+   -16.4,
+   -19.8,
+   -20.4,
+   -19.0,
+   -20.9,
+   -24.3,
+   -29.9,
+   -37.7
+  ],
+  "transcripcion": "PENDIENTE: no hay transcriptor local. Usa la herramienta de transcripción de ElevenLabs con audio_16k.wav, o el guion/voz.tsv si es un Reel propio, y guarda el resultado en transcripcion.json.",
+  "nota": "Esto son medidas. Entonación, claridad de la locución, timbre o si hay música NO se pueden afirmar sin escuchar o transcribir."
+ },
+ "vistas": [
+  "detalle_001.jpg",
+  "detalle_002.jpg",
+  "detalle_003.jpg"
+ ],
+ "orden": "python3 tools/video_intel.py analyze reels/u33-cuatro-pases.mp4 --id u33 --tema juego pasivo: 4 pases (balonmano, datos) --modo detalle"
+}

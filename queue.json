@@ -2886,5 +2886,37 @@
   "note": "u30 · turno de Reels 17/11 0:37: «ProTeam por dentro» 2 de 3 (fútbol), encargo del plan de crecimiento. Captura real de Planificación (Semana 8) en tres zooms, voz Mateo de la biblioteca (frases por silencios), música nueva con el regreso del beat en «el martes». Va el miércoles 9:30 y no el martes 22:30 para no ir pegado a u29 (mismo formato).",
   "score": "guion 77 · montaje 81",
   "title": "Sábado: presión alta. Martes: rondo. (ProTeam por dentro: la frase de arriba)"
+ },
+ {
+  "id": "u31",
+  "when": "2026-11-17T22:30:00+01:00",
+  "kind": "reel",
+  "files": [
+   "reels/u31-bloqueo-directo-octubre.mp4"
+  ],
+  "cover": "covers/u31-bloqueo-directo-octubre.jpg",
+  "caption": "En octubre tu equipo defendía el bloqueo directo. Hoy no. ¿Qué hiciste aquella semana? 🏀\nGuárdalo: cada domingo, tres apuntes de la semana (qué hiciste, cuánto y en qué orden). En la app de ProTeam la semana que funciona se queda como plantilla semanal y la aplicas cuando la necesites.\nEnvíaselo a tu segundo entrenador: ¿qué semana de octubre repetiríais mañana?\nComenta tu deporte, tu categoría y tus días y te preparo la primera semana en la app de ProTeam. Lista de espera hasta el 27 de noviembre: 3 meses gratis. Enlace en la bio.\n\nFoto: Trevor Booker, Tony Parker y Kirk Hinrich (Keith Allison, CC BY-SA 2.0), Wikimedia Commons.\n\n#baloncestobase #entrenadordebaloncesto #planificacion #bloqueodirecto #proteam",
+  "status": "pending",
+  "campana": "unrespiro",
+  "share_to_feed": false,
+  "note": "u31 · turno de Reels 17/11 3:37: encargo de Marta (hueco mar 22:30, baloncesto con voz, variación de u04). Tony Parker en el bloqueo de Booker, tiras de sesión que se voltean en blanco, captura real de Plantillas semanales con «Aplicar a esta semana» recuadrado, ficha de 3 apuntes. Voz Mateo de la biblioteca (la original sigue desactivada), música nueva con golpe en «no vuelve».",
+  "score": "guion 78 · montaje 81",
+  "title": "En octubre tu equipo defendía el bloqueo directo. Hoy no."
+ },
+ {
+  "id": "u33",
+  "when": "2026-11-18T11:30:00+01:00",
+  "kind": "reel",
+  "files": [
+   "reels/u33-cuatro-pases.mp4"
+  ],
+  "cover": "covers/u33-cuatro-pases.jpg",
+  "caption": "Brazo arriba: te quedan 4 pases. Hasta 2022 eran 6. 🤾\nGuárdalo: desde el 1 de julio de 2022 la regla IHF deja 4 pases como máximo tras el aviso de juego pasivo. Cada pasivo pitado es un balón perdido: en la app de ProTeam lo apuntas en directo como pérdida y el lunes lo tienes en la cronología del partido.\nEnvíaselo a tu segundo entrenador: ¿cuántos balones perdisteis por pasivo el sábado?\nComenta tu deporte, tu categoría y tus días y te preparo la semana en la app de ProTeam. Lista de espera hasta el 27 de noviembre: 3 meses gratis. Enlace en la bio.\n\nFotos: Dika Mem y selección española de balonmano, Mundial 2019 (dronepicr, CC BY 2.0), Wikimedia Commons. Regla: IHF, en vigor desde el 1/7/2022.\n\n#balonmano #balonmanobase #entrenadordebalonmano #handball #proteam",
+  "status": "pending",
+  "campana": "unrespiro",
+  "share_to_feed": false,
+  "note": "u33 · turno de Reels 17/11 3:37: Reel de datos corto (13,3 s, sin voz) de balonmano para el mié 11:30, detrás de u30 (fútbol). Dato IHF 6 → 4 pases, capturas reales de Partido en directo (Pérdida) y Cronología. Música nueva con golpe en el 4.",
+  "score": "guion 77 · montaje 78",
+  "title": "Brazo arriba: te quedan 4 pases."
  }
 ]

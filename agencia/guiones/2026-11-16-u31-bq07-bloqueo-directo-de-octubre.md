@@ -1,6 +1,6 @@
 # u31 · bq-07 · «En octubre defendían el bloqueo directo. Hoy no. No apuntaste la semana.» (baloncesto)
 
-- **Estado: listo para producir** (reserva) · **Crítica de Andrés: 78/100** (guion, escala 16/11) · riesgo de salto medio-bajo · crítica en `agencia/criticas/2026-11-16-u31-guion.md`
+- **Estado: producido el 17/11 (turno de Reels 3:37), sale el mar 17/11 22:30** · montaje 81 (`agencia/criticas/2026-11-17-u31-final.md`) · **Crítica de Andrés: 78/100** (guion, escala 16/11) · riesgo de salto medio-bajo · crítica en `agencia/criticas/2026-11-16-u31-guion.md`
 - **Deporte:** baloncesto de base (cadete, júnior) · **Encargo:** t-20261116-diario-01 (Samuel, bucle diario): variación 1 de 2 de u04, mismo mecanismo, otro deporte y otra situación.
 - **Qué se mantiene de u04:** arranque en frases cortas en segunda persona (algo bueno que tuviste y perdiste + la causa: «No apuntaste…»), una escena concreta de entreno, ≤ 25 s, ficha para guardar, pregunta final al cuerpo técnico.
 - **Qué cambia:** deporte (baloncesto), lo que se pierde (no un entreno suelto: una semana entera que funcionó), función de la app (plantillas semanales, no la biblioteca de ejercicios) y el titular (no se copia).

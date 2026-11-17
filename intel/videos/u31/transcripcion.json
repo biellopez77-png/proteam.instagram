@@ -1,0 +1,164 @@
+{
+ "origen": "tools/reel31/voz.tsv",
+ "tipo": "locución generada con tiempos por palabra (exacta, no reconocida por oído)",
+ "palabras": 17,
+ "primera_palabra_s": 0.107,
+ "ultima_palabra_s": 23.172,
+ "ritmo_palabras_por_s": 0.74,
+ "frases": [
+  {
+   "desde": 0.107,
+   "hasta": 2.533,
+   "texto": "En octubre tu equipo defendía el bloqueo directo.",
+   "palabras_por_s": 0.41
+  },
+  {
+   "desde": 2.66,
+   "hasta": 3.112,
+   "texto": "Hoy no.",
+   "palabras_por_s": 2.21
+  },
+  {
+   "desde": 3.259,
+   "hasta": 4.335,
+   "texto": "No apuntaste la semana.",
+   "palabras_por_s": 0.93
+  },
+  {
+   "desde": 4.582,
+   "hasta": 7.136,
+   "texto": "Tres entrenos, un dos contra dos, diez minutos.",
+   "palabras_por_s": 0.78
+  },
+  {
+   "desde": 7.303,
+   "hasta": 8.634,
+   "texto": "¿Al principio o al final?",
+   "palabras_por_s": 0.75
+  },
+  {
+   "desde": 8.881,
+   "hasta": 10.706,
+   "texto": "Lo que funcionó y no está escrito…",
+   "palabras_por_s": 0.55
+  },
+  {
+   "desde": 10.972,
+   "hasta": 11.627,
+   "texto": "no vuelve.",
+   "palabras_por_s": 1.53
+  },
+  {
+   "desde": 11.854,
+   "hasta": 15.503,
+   "texto": "En la app de ProTeam la dejas como plantilla semanal y la aplicas a esta.",
+   "palabras_por_s": 0.27
+  },
+  {
+   "desde": 15.67,
+   "hasta": 17.793,
+   "texto": "Guárdatelo: el domingo, tres apuntes.",
+   "palabras_por_s": 1.41
+  },
+  {
+   "desde": 17.94,
+   "hasta": 20.003,
+   "texto": "Qué hiciste, cuánto y en qué orden.",
+   "palabras_por_s": 1.45
+  },
+  {
+   "desde": 20.131,
+   "hasta": 23.172,
+   "texto": "Y a tu segundo: ¿qué semana de octubre repetiríais mañana?",
+   "palabras_por_s": 0.66
+  }
+ ],
+ "pausas": [],
+ "por_palabra": [
+  {
+   "desde": 0.107,
+   "hasta": 2.533,
+   "palabra": "En octubre tu equipo defendía el bloqueo directo."
+  },
+  {
+   "desde": 2.66,
+   "hasta": 3.112,
+   "palabra": "Hoy no."
+  },
+  {
+   "desde": 3.259,
+   "hasta": 4.335,
+   "palabra": "No apuntaste la semana."
+  },
+  {
+   "desde": 4.582,
+   "hasta": 5.354,
+   "palabra": "Tres entrenos,"
+  },
+  {
+   "desde": 5.441,
+   "hasta": 7.136,
+   "palabra": "un dos contra dos, diez minutos."
+  },
+  {
+   "desde": 7.303,
+   "hasta": 8.634,
+   "palabra": "¿Al principio o al final?"
+  },
+  {
+   "desde": 8.881,
+   "hasta": 10.706,
+   "palabra": "Lo que funcionó y no está escrito…"
+  },
+  {
+   "desde": 10.972,
+   "hasta": 11.627,
+   "palabra": "no vuelve."
+  },
+  {
+   "desde": 11.854,
+   "hasta": 15.503,
+   "palabra": "En la app de ProTeam la dejas como plantilla semanal y la aplicas a esta."
+  },
+  {
+   "desde": 15.67,
+   "hasta": 16.273,
+   "palabra": "Guárdatelo:"
+  },
+  {
+   "desde": 16.38,
+   "hasta": 16.968,
+   "palabra": "el domingo,"
+  },
+  {
+   "desde": 17.025,
+   "hasta": 17.793,
+   "palabra": "tres apuntes."
+  },
+  {
+   "desde": 17.94,
+   "hasta": 18.58,
+   "palabra": "Qué hiciste,"
+  },
+  {
+   "desde": 18.657,
+   "hasta": 19.089,
+   "palabra": "cuánto"
+  },
+  {
+   "desde": 19.166,
+   "hasta": 20.003,
+   "palabra": "y en qué orden."
+  },
+  {
+   "desde": 20.131,
+   "hasta": 20.914,
+   "palabra": "Y a tu segundo:"
+  },
+  {
+   "desde": 20.993,
+   "hasta": 23.172,
+   "palabra": "¿qué semana de octubre repetiríais mañana?"
+  }
+ ]
+}
