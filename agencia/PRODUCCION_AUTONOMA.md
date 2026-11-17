@@ -1,5 +1,7 @@
 # Producción autónoma de un Reel (paso a paso)
 
+**TODO REEL LLEVA LA VOZ DE MATEO (Biel, 17/11; manda sobre cualquier otro texto).** No existen los «Reels de datos sin voz»: un Reel sin voz no se programa ni se publica. Un Reel de datos corto (8–15 s) también lleva voz. Si no hay voz (créditos de ElevenLabs agotados, voz desactivada, audio que no se puede traer), el Reel no sale: el hueco queda vacío, agents/02 en «bloqueado» con el motivo y una línea en el log. Para ahorrar voz: 1 sola toma (`generations_count: 1`) y solo se regenera si la toma tiene un fallo objetivo.
+
 > **Desde el 16/11:** este paso a paso técnico sigue valiendo, con tres cambios que mandan sobre lo que diga abajo: (1) las instrucciones de cada persona son las de `agentes/` y sus procedimientos los de `skills/`; (2) el control de calidad del montaje ya no son «6 fotogramas»: todo Reel se analiza con `tools/video_intel.py` (analyze en modo detalle, voz y rasgos), Marta mira todas las láminas y Andrés audita el vídeo real con marcas de tiempo (`../intel/README.md`); (3) la nota de Andrés usa la escala nueva de `../oficina/PROTOCOLO.md` §6.
 
 
@@ -44,7 +46,7 @@ En el documento de producción de cada Reel se escribe una línea «Arranque: 1 
 
 ## 4. Voz (siempre Mateo)
 - **Desde el 16/11 16:55 los turnos descargan el audio directamente**: `curl -L -o voz.mp3 '<url de creative_get_generations>'` (Biel permitió elevenlabsusercontent.com). Ya no hace falta el sandbox ni el truco del PNG; la transcripción con faster-whisper puede hacerse aquí (`pip install faster-whisper`) o en el sandbox.
-- ElevenLabs: `creative_generate_speech`, voice_id `Rie0luvrYhyKLba1lK3c` (Mateo original; desde el 16/11 está desactivada: si falla, usa `gpMzl7dbkfC9dIxAqQZT`, «Mateo – News & Digital Stories» de la biblioteca, sin preguntar), modelo `eleven_v4`, flow `hBYtrq1HJVmwM1XJaheU`. Salen 2 tomas.
+- ElevenLabs: `creative_generate_speech`, voice_id `Rie0luvrYhyKLba1lK3c` (Mateo original; desde el 16/11 está desactivada: si falla, usa `gpMzl7dbkfC9dIxAqQZT`, «Mateo – News & Digital Stories» de la biblioteca, sin preguntar), modelo `eleven_v4`, flow `hBYtrq1HJVmwM1XJaheU`, `generations_count: 1` (una toma; la cuenta Starter tiene 30.000 caracteres al mes y se agotó el 17/11).
 - Escribe «Pro Team» para que lo pronuncie bien y los números en letra («veintiocho», «tres»).
 - URLs con `creative_get_generations`.
 - Descarga desde el sandbox de Higgsfield (`sandbox_exec`), porque el contenedor local no llega a elevenlabsusercontent.com:

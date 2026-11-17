@@ -1,5 +1,7 @@
 # Protocolo de la oficina (manda sobre todo el sistema de contenido)
 
+**TODO REEL LLEVA LA VOZ DE MATEO (Biel, 17/11; manda sobre cualquier otro texto).** No existen los «Reels de datos sin voz»: un Reel sin voz no se programa ni se publica. Un Reel de datos corto (8–15 s) también lleva voz. Si no hay voz (créditos de ElevenLabs agotados, voz desactivada, audio que no se puede traer), el Reel no sale: el hueco queda vacío, agents/02 en «bloqueado» con el motivo y una línea en el log. Para ahorrar voz: 1 sola toma (`generations_count: 1`) y solo se regenera si la toma tiene un fallo objetivo.
+
 Desde el 16/11 (decisión de Biel) **todo el contenido de ProTeam se gestiona desde la oficina**:
 https://claude.ai/artifact/CEbj9fsPQPUvVtRsp1S18o (base de datos con `ArtifactData`, siempre con esa `url`).
 Las tareas programadas no son un sistema aparte: son **los turnos de trabajo de las personas de la oficina**. Lo que Biel escribe allí (reglas, instrucciones, encargos, decisiones) es lo que se hace; lo que el equipo hace queda escrito allí.
@@ -24,8 +26,8 @@ Las tareas programadas no son un sistema aparte: son **los turnos de trabajo de 
 | Carruseles | 12:30 · 19:30 | 2 (todos los días) |
 | Stories | 10:30 · 14:30 · 16:30 · 18:30 · 21:30 | 5 |
 - Lo que sigue igual: umbral 75 de Andrés, nada inventado, tres deportes por igual, nada de Reels de marca o motivación vacía. Más volumen = más piezas buenas, no piezas peores. Un hueco sin pieza ≥ 75 se rellena con la siguiente de la reserva; si no hay, se queda vacío y se anota.
-- Cómo se llega: el turno de Reels corre cada 3 horas (0:37, 3:37, 6:37, 9:37, 12:37, 15:37, 18:37, 21:37) y saca 1 Reel por turno, 2 si el segundo es un Reel de datos corto (8–15 s); el turno de Clara corre a las 9:07 y a las 21:07 (1 carrusel + hasta 3 Stories por turno); se mantiene una reserva de guiones criticados de al menos 8.
-- Variedad obligatoria con tanto volumen: dos piezas seguidas no repiten deporte ni estructura; mezcla de Reels con voz (escena, dato, partido real) y Reels de datos cortos; Stories con encuestas, preguntas y avisos de lo que sale.
+- Cómo se llega: el turno de Reels corre cada 3 horas (0:37, 3:37, 6:37, 9:37, 12:37, 15:37, 18:37, 21:37) y saca 1 Reel por turno, 2 si el segundo es un Reel de datos corto (8–15 s, también con voz); el turno de Clara corre a las 9:07 y a las 21:07 (1 carrusel + hasta 3 Stories por turno); se mantiene una reserva de guiones criticados de al menos 8.
+- Variedad obligatoria con tanto volumen: dos piezas seguidas no repiten deporte ni estructura; todos los Reels con voz de Mateo (escena, dato, partido real o dato corto de 8–15 s); Stories con encuestas, preguntas y avisos de lo que sale.
 - Samuel mide cada semana si más piezas bajan las vistas medias por pieza (canibalización) y lo dice en su resumen con números; mientras tanto, se sigue el volumen máximo.
 
 Los nombres pueden cambiar (campo `name` de `agents/<id>`): usa el que haya en la oficina. R1–R4 (equipo técnico de la app) no entran en estos turnos.
