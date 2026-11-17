@@ -1,5 +1,8 @@
 # Protocolo de la oficina (manda sobre todo el sistema de contenido)
 
+**LANZAMIENTO 18→28/11 (Biel, 17/11; manda sobre todo lo demás de contenido):** cada día tiene su fase y todo lo que sale ese día sirve a esa fase. Orden innegociable: problema → nutrición → solución → prueba social (la app por dentro nunca antes de su día). Calendario y reglas en `agencia/LANZAMIENTO.md`: léelo en cada turno antes de escribir, producir, programar, publicar o contestar.
+
+
 **TODO REEL LLEVA LA VOZ DE MATEO (Biel, 17/11; manda sobre cualquier otro texto).** No existen los «Reels de datos sin voz»: un Reel sin voz no se programa ni se publica. Un Reel de datos corto (8–15 s) también lleva voz. Si no hay voz (créditos de ElevenLabs agotados, voz desactivada, audio que no se puede traer), el Reel no sale: el hueco queda vacío, agents/02 en «bloqueado» con el motivo y una línea en el log. Para ahorrar voz: 1 sola toma (`generations_count: 1`) y solo se regenera si la toma tiene un fallo objetivo.
 
 Desde el 16/11 (decisión de Biel) **todo el contenido de ProTeam se gestiona desde la oficina**:

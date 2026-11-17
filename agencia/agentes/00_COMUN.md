@@ -1,5 +1,8 @@
 # Estándar común de los seis agentes (Biel, 16/11) — manda sobre cualquier instrucción anterior
 
+**LANZAMIENTO 18→28/11 (Biel, 17/11; manda sobre todo lo demás de contenido):** cada día tiene su fase y todo lo que sale ese día sirve a esa fase. Orden innegociable: problema → nutrición → solución → prueba social (la app por dentro nunca antes de su día). Calendario y reglas en `agencia/LANZAMIENTO.md`: léelo en cada turno antes de escribir, producir, programar, publicar o contestar.
+
+
 **TODO REEL LLEVA LA VOZ DE MATEO (Biel, 17/11; manda sobre cualquier otro texto).** No existen los «Reels de datos sin voz»: un Reel sin voz no se programa ni se publica. Un Reel de datos corto (8–15 s) también lleva voz. Si no hay voz (créditos de ElevenLabs agotados, voz desactivada, audio que no se puede traer), el Reel no sale: el hueco queda vacío, agents/02 en «bloqueado» con el motivo y una línea en el log. Para ahorrar voz: 1 sola toma (`generations_count: 1`) y solo se regenera si la toma tiene un fallo objetivo.
 
 Los agentes no existen para producir mucho contenido: existen para que cada pieza tenga un motivo para existir, conecte con entrenadores y haga a ProTeam reconocible. Este archivo lo leen los seis antes de trabajar, junto con `agencia/MARCA.md`, `agencia/APRENDIZAJES.md`, `agencia/HISTORIAL.md` y `oficina/PROTOCOLO.md`.
