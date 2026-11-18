@@ -36,3 +36,15 @@ Guardar y mandar al segundo (diapositiva 8) + comentar qué pides tú (conversac
 1. ¿Le interesa? Sí: el partido desigual es semanal en base escolar. 2. ¿Concreto? Tres retos con umbral y un marcador alternativo. 3. ¿Idea que recordar? «El marcador se para, el partido no». 4. ¿Distinta? Estructura nueva (marco de decisión), deporte distinto de los carruseles vecinos y ángulo que no tiene u11 (el que pierde). 5. ¿Otra cuenta? La norma citada y la escalera de retos no son genéricas. 6. ¿Valor? Ficha guardable para el banquillo. 7. ¿Formato? Carrusel: se guarda y se enseña al segundo. 8. ¿Interés tras la portada? La 2 confirma con la norma y la 3 pone la escena. 9. ¿Realista? Solo fotos del banco y texto. 10. ¿ProTeam? Identidad de MARCA.md; la app solo en el copy.
 **Auditoría visual:** ocho JPG mirados con Read. Corregido tras la primera pasada: la portada recortaba solo las bengalas (ahora se ve al Barça entero); etiquetas ilegibles sobre foto en 1 y 6 (fondo tinta); escalones mal proporcionados en la 4; **marcador 31–6 incoherente con «minutos que no cuentan»** (+25 no cierra el partido) → 36–6; promesa de «ponerlos en la ficha» imposible en un post publicado → «saldrán en una Story».
 **Debilidades:** la norma es solo de Euskadi (dicho en la 2 y en el copy); el gemelo u11 usa los mismos tres retos de base (aquí cambian el tercero y el escalonado, y se añade el que pierde); la 5 y la 7 repiten los retos (la 7 es la versión de banquillo).
+
+## 18/11 15:10 · Versión con texto mínimo (encargo de Biel)
+Archivos: `feed/c12b-1…8.jpg`. Una idea y una o dos frases por diapositiva:
+1. «+30. El marcador se para. El partido, no.» · «Qué pedirle a tu equipo en esos minutos.»
+2. +30 · «En infantiles, a +30 el resultado se cierra. Se sigue jugando.» · fuente.
+3. Minuto 38 de 50 · 36–6 · «Quedan 12 minutos. Ya no cuentan.» · escena de ejemplo.
+4. «No esperes a que lo pare la norma.» · «Pon tú el límite antes.» · escalones.
+5. +10 Gol solo tras 5 pases · +15 Defensa individual · +20 Marca quien aún no ha marcado.
+6. «Cambia de marcador.» · «Cada 5 minutos, contad lo vuestro.» · Robos · Pases · Paradas.
+7. Ficha guardable (igual).
+8. «Partido decidido. Cuatro escalones.» · «Guárdalo y mándaselo a tu segundo.»
+La pregunta para comentar pasa a la descripción, que ahora dice qué es la app y cuándo abre. Andrés: 81 (`agencia/criticas/2026-11-18-c12-texto-minimo.md`).

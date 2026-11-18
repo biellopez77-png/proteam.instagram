@@ -478,3 +478,9 @@
 - Clara y Andrés: carrusel c11 «No haces una alineación. Haces cuatro.» (vie 20, 19:30) rehecho con mucho menos texto (feed/c11b-1…6.jpg); descripción más corta. Andrés: 82 (agencia/criticas/2026-11-18-c11-texto-minimo.md). Faltan c13s3, c12, c13, c09s, c10s2, c10s3 y las encuestas del 25.
 - Samuel: recuento de las Stories con pregunta (reports/2026-11-18-respuestas-stories.md): 0 respuestas en siete Stories, 65–85 cuentas cada una. La Story del vie 20 y la portada del sáb 21 van con la pregunta, sin resultado.
 - Decidido: el CTA de comentar de c11 pasa de la última diapositiva a la descripción; la última pide guardar y enviar (regla de texto mínimo de Biel).
+
+## 18/11 15:00 · Laura (encargos)
+- Bloqueos revisados: Marta sigue sin voz hasta las 0:00 (ElevenLabs: 6.838 gastados del mes, el día empezó en 3.573: 3.265 de 3.500 hoy; quedan 235). Ninguna ficha pendiente. Sin correcciones ni consignas nuevas de Biel.
+- Clara y Andrés: carrusel c12 «+30. El marcador se para. El partido, no.» (lun 23, 12:30) rehecho con mucho menos texto (feed/c12b-1…8.jpg); descripción más corta, con qué es la app y cuándo abre. Andrés: 81 (agencia/criticas/2026-11-18-c12-texto-minimo.md). Faltan c13s3 y c13 (lun 23), c09s, c10s2 y c10s3 (mar 24) y las encuestas del 25.
+- Ficha de las encuestas del mié 25: Biel pidió poder descargar las tres imágenes desde el panel. El panel no tiene todavía botón de descarga y no ha cabido añadirlo en este turno: queda como tarea de prioridad alta para Laura (botón «Descargar» en cada pieza de «Contenido»). Las tres imágenes están en stories/ del repositorio.
+- Decidido: la pregunta para comentar de c12 pasa de la última diapositiva a la descripción; la última resume y pide guardar y enviar (regla de texto mínimo de Biel). Pau (fotos de baloncesto u39, u40 y u43) no entra en este turno: sigue en el siguiente.
