@@ -3371,5 +3371,77 @@
   "fase": "contexto",
   "fase_dia": "Jue 19/11",
   "note": "Story de contexto de Clara (04): problema → buscábamos → así nació la app; sin personas ni «fundador». Pregunta por comentarios (Excel, libreta, WhatsApp u otra) para que Samuel la cuente. Foto: campos de la cantera del Barça (Enric, CC BY-SA 4.0, Wikimedia Commons). 18/11 10:00 · Clara: rehecha con mucho menos texto (encargo de Biel: una idea, una pregunta, foto más grande); Andrés 78 con el criterio de texto mínimo (agencia/criticas/2026-11-18-texto-minimo-stories-carruseles.md)."
+ },
+ {
+  "id": "c18",
+  "kind": "carousel",
+  "files": [
+   "feed/c18-1.jpg",
+   "feed/c18-2.jpg",
+   "feed/c18-3.jpg",
+   "feed/c18-4.jpg",
+   "feed/c18-5.jpg",
+   "feed/c18-6.jpg",
+   "feed/c18-7.jpg",
+   "feed/c18-8.jpg"
+  ],
+  "title": "No es para todos los banquillos. (seis casillas: ¿es para el tuyo?)",
+  "score": "81",
+  "status": "pending",
+  "campana": "carrusel",
+  "when": "2026-11-19T12:30:00+01:00",
+  "cover": null,
+  "caption": "No es para todos los banquillos. Y está bien que no lo sea.\nGuárdala y mándasela a tu segundo: ¿cuántas casillas marcáis?\n\nLa sesión en el Excel, los minutos en la libreta, la convocatoria en el grupo de WhatsApp y todo lo demás en tu cabeza. Para eso nació la app de ProTeam: un solo sitio para la semana del entrenador de fútbol, baloncesto y balonmano.\n\nSi marcas tres o más, apúntate a la lista de espera hasta el 27 de noviembre: el sábado 28 entras con 3 meses gratis. Enlace en la bio.\n\nFoto: FC Barcelona de balonmano en el Palau Blaugrana (Kuebi = Armin Kübelbeck, CC BY-SA 3.0, Wikimedia Commons).\n\n#entrenadores #balonmano #futbolbase #baloncestobase",
+  "fase": "contexto",
+  "fase_dia": "Jue 19/11",
+  "note": "Clara (04) · turno 18/11 21:07 · contexto: para quién es la app y por qué existe (cuatro sitios → uno), sin pantallas · marco de decisión: 3+3 casillas → «no es para ti si…» → hoja guardable → cierre · sin datos externos · Andrés texto 80, final 81, encaje de fase sí (agencia/criticas/2026-11-18-c18-c18s-guion.md) · documento agencia/carruseles/2026-11-18-c18-no-es-para-todos.md"
+ },
+ {
+  "id": "c18s",
+  "kind": "story",
+  "files": [
+   "stories/st-1119-solo-o-con-segundo.jpg"
+  ],
+  "title": "¿Entrenas solo o con segundo? A/B/C (baloncesto, banquillo de los Heat)",
+  "score": "76",
+  "status": "pending",
+  "campana": "carrusel",
+  "when": "2026-11-19T14:30:00+01:00",
+  "cover": null,
+  "fase": "contexto",
+  "fase_dia": "Jue 19/11",
+  "note": "Story de contexto de Clara (04): encuesta por comentarios del último post (A solo · B con un segundo · C con dos o más). Samuel cuenta las respuestas reales; si gana «solo», las piezas de problema del sáb 21–dom 22 se escriben para quien entrena solo. Foto: banquillo de los Miami Heat, playoffs NBA 2012 (Marta Sand, CC BY 2.0, Commons). Andrés 76."
+ },
+ {
+  "id": "c18s2",
+  "kind": "story",
+  "files": [
+   "stories/st-1119-tres-deportes-misma-semana.jpg"
+  ],
+  "title": "Tres deportes. La misma semana. ¿Y la tuya? (fútbol, Mourinho)",
+  "score": "78",
+  "status": "pending",
+  "campana": "carrusel",
+  "when": "2026-11-19T16:30:00+01:00",
+  "cover": null,
+  "fase": "contexto",
+  "fase_dia": "Jue 19/11",
+  "note": "Story de contexto de Clara (04): por qué la app es una sola para los tres deportes (rejilla entreno · entreno · partido como ejemplo) + CTA estándar (deporte, categoría y días en el último post; Lucía prepara la semana). Foto: José Mourinho, Chelsea (Brian Minkoff, CC BY-SA 4.0, Commons). Andrés 78."
+ },
+ {
+  "id": "c18s3",
+  "kind": "story",
+  "files": [
+   "stories/st-1119-nueve-dias-lista.jpg"
+  ],
+  "title": "9 días. ¿Entrenas en base? La lista es para ti. (balonmano)",
+  "score": "75",
+  "status": "pending",
+  "campana": "carrusel",
+  "when": "2026-11-19T18:30:00+01:00",
+  "cover": null,
+  "fase": "contexto",
+  "fase_dia": "Jue 19/11",
+  "note": "Story de contexto de Clara (04): recordatorio de la lista de espera con cuenta atrás (9 días, cierto el jue 19) · lista hasta el 27 nov 23:59 → el 28 con 3 meses gratis y la semana montada; sin precio. Solo vale el jue 19. Foto: Steffen Weinhold, selección alemana (Man77, CC BY-SA 3.0, Commons). Andrés 75."
  }
 ]
