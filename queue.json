@@ -3283,5 +3283,77 @@
   "fase_dia": "Mié 25/11",
   "agentId": "04",
   "note": "SE SUBE A MANO: es el fondo de una encuesta nativa de Instagram y el sticker no se puede poner desde la publicación automática. Por eso está en borrador y no sale sola. Pregunta y opciones del sticker en agencia/carruseles/2026-11-25-stories-encuestas.md. Foto: tiempo muerto de España, Mundial 2019 (dronepicr, CC BY 2.0)."
+ },
+ {
+  "id": "c17",
+  "kind": "carousel",
+  "files": [
+   "feed/c17-1.jpg",
+   "feed/c17-2.jpg",
+   "feed/c17-3.jpg",
+   "feed/c17-4.jpg",
+   "feed/c17-5.jpg",
+   "feed/c17-6.jpg",
+   "feed/c17-7.jpg",
+   "feed/c17-8.jpg"
+  ],
+  "title": "Entrenas 3 horas. ¿Y las otras? (baloncesto, la hoja de tu semana)",
+  "score": "81",
+  "status": "pending",
+  "campana": "carrusel",
+  "when": "2026-11-18T19:30:00+01:00",
+  "cover": null,
+  "caption": "Entrenas 3 horas. ¿Y las otras?\nGuárdalo y pásaselo a tu segundo: que haga su hoja.\n\nDos entrenos de hora y media es lo que sale en el horario del club. La sesión montada el domingo por la noche, rehacerla porque vienen ocho, la convocatoria, las familias, los minutos apuntados de memoria o volver a ver el partido no salen en ningún horario.\n\nEsta semana, ponle minutos a cada casilla. A ojo vale.\n\n¿Qué casilla te sale más alta? Cuéntanoslo en comentarios 👇\n\nEl sábado 28 abre la app de ProTeam, para entrenadores de fútbol, baloncesto y balonmano. En la lista de espera hasta el 27 de noviembre empiezas con 3 meses gratis. Enlace en la bio.\n\nFoto: Šarūnas Jasikevičius (Zafer, CC BY 4.0, Wikimedia Commons).\n\n#baloncesto #baloncestobase #entrenadores #entrenadordebaloncesto",
+  "fase": "impacto",
+  "fase_dia": "Mié 18/11",
+  "note": "Clara (04) · turno 18/11 9:07 · hueco de c15 (quitado por Biel) · auditoría guiada: 7 casillas de minutos fuera de la pista → hoja guardable → «esto es para ti» + sábado 28 · sin datos externos · Andrés texto 80, final 81, encaje de fase sí (agencia/criticas/2026-11-18-c17-c17s-guion.md) · documento agencia/carruseles/2026-11-18-c17-entrenas-3-horas.md"
+ },
+ {
+  "id": "c17s",
+  "kind": "story",
+  "files": [
+   "stories/st-1118-lo-que-no-se-ve.jpg"
+  ],
+  "title": "El sábado se ve el partido. Lo demás, no. (fútbol, Simeone; aviso de la hoja de las 19:30)",
+  "score": "77",
+  "status": "pending",
+  "campana": "carrusel",
+  "when": "2026-11-18T18:30:00+01:00",
+  "cover": null,
+  "fase": "impacto",
+  "fase_dia": "Mié 18/11",
+  "note": "Story de Clara (04): comparación, tres tareas que no se ven + aviso con contenido del carrusel c17 (19:30). Foto: Diego Simeone (Werner100359, CC BY-SA 4.0, Wikimedia Commons). Solo vale el mié 18."
+ },
+ {
+  "id": "c17s2",
+  "kind": "story",
+  "files": [
+   "stories/st-1118-entra-antes.jpg"
+  ],
+  "title": "Quedan 10 días. Entra antes. (balonmano; 3 pasos para entrar en la lista)",
+  "score": "78",
+  "status": "pending",
+  "campana": "carrusel",
+  "when": "2026-11-18T21:30:00+01:00",
+  "cover": null,
+  "fase": "impacto",
+  "fase_dia": "Mié 18/11",
+  "note": "Story de Clara (04): recordatorio de la lista en tres pasos (bio → lista hasta el 27 nov 23:59 → el 28 con 3 meses gratis, 1 a 1 y semana montada). Si se puede, sticker de enlace a la lista al publicar. Foto: portero del THW Kiel (Wenflou, CC0, Wikimedia Commons). Solo vale el mié 18 («quedan 10 días»)."
+ },
+ {
+  "id": "c17s3",
+  "kind": "story",
+  "files": [
+   "stories/st-1119-hecha-en-el-banquillo.jpg"
+  ],
+  "title": "Hecha en el banquillo. No en una oficina. (por qué existe ProTeam; ¿con qué planificas?)",
+  "score": "78",
+  "status": "pending",
+  "campana": "carrusel",
+  "when": "2026-11-19T10:30:00+01:00",
+  "cover": null,
+  "fase": "contexto",
+  "fase_dia": "Jue 19/11",
+  "note": "Story de contexto de Clara (04): problema → buscábamos → así nació la app; sin personas ni «fundador». Pregunta por comentarios (Excel, libreta, WhatsApp u otra) para que Samuel la cuente. Foto: campos de la cantera del Barça (Enric, CC BY-SA 4.0, Wikimedia Commons)."
  }
 ]
