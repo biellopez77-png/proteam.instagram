@@ -33,7 +33,7 @@ I-048: «El entrenador de base escribe la semana siguiente el domingo, dos días
 
 Silencio de 0,4 s antes de «Y hoy» (golpe ahí). Sin pausa antes del reto.
 
-## 6. Pantallas
+## 6. Pantallas (máx. 5 palabras por golpe; recortadas el 18/11, encargo de Biel de menos texto)
 | s | pantalla |
 |---|---|
 | 0–3,5 | Foto a sangre: pabellón de primer nivel (ACB o Euroliga) después de un entreno, balones en el carro o en la pista (Commons, licencia leída; Pau) · desde el fotograma 0: **VIE 21:30** · *ahora lo sabes* |

@@ -35,15 +35,15 @@ I-047: «El entrenador de base mide el tiempo en semanas de entreno, no en días
 
 Silencio de 0,4 s antes de «tres meses» (golpe ahí). Sin pausa antes del reto. «23:59» se dice «las doce menos un minuto» (Mateo no lee bien cifras con dos puntos).
 
-## 6. Pantallas
+## 6. Pantallas (máx. 5 palabras por golpe; recortadas el 18/11, encargo de Biel de menos texto)
 | s | pantalla |
 |---|---|
 | 0–3,0 | Foto a sangre: estadio o campo de primer nivel vacío en invierno (LaLiga o Premier; Commons, licencia leída; Pau) · desde el fotograma 0: **28 DIC** · *campo cerrado* |
 | 3,0–9,0 | motion graphics: tira de calendario del 28/11 al 28/12; se encienden 30/11, 7/12 y 14/12 (entrenos), el 21/12 a medias y el resto en gris · **1 MES = 3 SEMANAS** |
-| 9,0–15,5 | la tira sigue hasta el 28/02 y se llena; marca *vuelta del parón* en enero · **HOY: 3 MESES** · pequeño: «la lista cierra hoy a las 23:59» |
+| 9,0–15,5 | la tira sigue hasta el 28/02 y se llena; marca *vuelta del parón* en enero · **HOY: 3 MESES** · pequeño: «cierra hoy, 23:59» |
 | 15,5–21,0 | tres líneas que entran: 3 meses gratis · asesoramiento 1 a 1 · tu semana montada |
-| 21,0–24,0 | vuelve la foto del principio (bucle) · *que no se acabe* **con el campo cerrado** |
-| 24,0–29,0 | RETO PARA TU STAFF · **¿Qué día volvéis** *después de Navidad?* · pequeño: «Enlace en la bio» |
+| 21,0–24,0 | vuelve la foto del principio (bucle) · **NO CON EL CAMPO CERRADO** |
+| 24,0–29,0 | RETO PARA TU STAFF · **¿Qué día volvéis** *tras Navidad?* · pequeño: «Enlace en la bio» |
 
 ## 7. Descripción
 28 de diciembre. El campo, cerrado por Navidad. ⚽

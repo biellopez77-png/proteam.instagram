@@ -36,16 +36,17 @@ I-050: «El día que el entrenador estrena una herramienta quiere empezar por lo
 
 Silencio de 0,4 s antes de «No lo hagas» (golpe ahí). Sin pausa antes del reto ni antes de la oferta.
 
-## 6. Pantallas
+## 6. Pantallas (máx. 5 palabras por golpe; recortadas el 18/11, encargo de Biel de menos texto)
 | s | pantalla |
 |---|---|
-| 0–3,5 | Foto a sangre: pabellón de primer nivel antes de un partido (Palau Blaugrana o una pista de la Asobal/EHF, calentamiento con balones; Commons, licencia leída; Pau) · desde el fotograma 0: **SÁB 9:30 · JUEGAS 11:00** · *hoy abre* |
+| 0–3,5 | Foto a sangre: pabellón de primer nivel antes de un partido (Palau Blaugrana o una pista de la Asobal/EHF, calentamiento con balones; Commons, licencia leída; Pau) · desde el fotograma 0: **SÁB 9:30 · JUEGAS 11:00** |
 | 3,5–7,5 | tinta: una lista enorme que se va llenando (PLANTILLA · CALENDARIO · TEMPORADA · OBJETIVOS…) y se tacha de golpe en «No lo hagas» |
 | 7,5–12,0 | papel: un solo rectángulo · **PARTIDO 11:00** · *en directo* |
-| 12,0–15,5 | tinta · *Un partido apuntado* **vale más que una temporada a medias** |
-| 15,5–18,5 | **ABRE HOY · 1 MES DE PRUEBA** · pequeño: «¿Te apuntaste? Tus 3 meses ya están dentro» · «Enlace en la bio» |
+| 12,0–13,7 | tinta · **UN PARTIDO APUNTADO** |
+| 13,7–15,5 | tinta · *> una temporada a medias* |
+| 15,5–18,5 | **ABRE HOY · 1 MES DE PRUEBA** · pequeño: «¿En la lista? 3 meses dentro» · «Enlace en la bio» |
 | 18,5–21,0 | vuelve la foto del principio (bucle) · **11:00** · *empiezas* |
-| 21,0–24,0 | RETO PARA TU SEGUNDO · **Hoy, ¿quién lo apunta?** *¿Tú o él?* · pequeño: «Enlace en la bio» |
+| 21,0–24,0 | RETO PARA TU SEGUNDO · **Hoy apunta:** *¿tú o él?* · pequeño: «Enlace en la bio» |
 
 ## 7. Descripción
 Sábado, partido a las once. Y hoy abre la app de ProTeam. 🤾

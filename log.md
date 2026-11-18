@@ -463,3 +463,4 @@
 - Clara: c12 (lun 23) sin la frase que prometía una Story; c10s3 (mar 24) dice «Con la lista (hasta el 27 nov): 3 meses gratis». Misma hora, vista previa nueva.
 - Laura: parche 0020 de Dani aplicado (pantallas a 5 palabras en u34–u42).
 - Revisión de Biel (poner en marcha a quien esté parado): nadie parado. Dani sigue con el texto de u43–u66; Marta espera la voz de las 0:00 (u68, u67, u64, u50); Pau, recursos; Clara, texto mínimo; Samuel, recuento de Stories esta tarde; Andrés acaba de entregar.
+- Dani: menos texto, tercera tanda: pantallas a 5 palabras por golpe en u43–u48, u54–u56, u62, u63, u65 y u66. Voz y mensajes sin tocar. Encargo cerrado (parche 0021). Reserva: más de 6 guiones ≥ 75 por producir, con los tres deportes; hoy no hacen falta guiones nuevos.

@@ -39,16 +39,16 @@ En base se repite «haced correr el reloj» en los finales igualados, pero nadie
 Silencio de 0,4 s después de «no suelta el balón» (el silbato suena en ese hueco). Sin pausa antes del CTA.
 La regla 8:11 va solo en pantalla. Si pasa de 35 s en la toma: se recorta «del rival» (bloque 2) y el bloque 3 se queda a «Nadie les ha dicho dónde está la línea».
 
-## 6. Pantallas (máx. 7 palabras por golpe)
+## 6. Pantallas (máx. 5 palabras por golpe; recortadas el 18/11, encargo de Biel de menos texto)
 | s | pantalla |
 |---|---|
 | 0–3,5 | Foto a sangre: jugador de balonmano de primer nivel con el balón en la mano y el árbitro delante (Commons, licencia leída; Pau) · desde el fotograma 0: **0:30 · GANAS DE 1** · en el 2,0: *no lo suelta* |
 | 3,5–4,0 | sonido de silbato (efecto, no voz) · flash blanco |
 | 4,0–8,0 | tarjeta roja en motion graphics (no es de la app) · **ROJA + 7 METROS** · pequeño: «Regla 8:11 · últimos 30″» |
-| 8,0–12,0 | pizarra: banquillo, entrenador con la mano en el reloj · **«HACED CORRER EL RELOJ»** tachado a medias · *¿y la línea?* (serif azul) |
-| 12,0–20,0 | ficha guardable: **ÚLTIMOS 30 SEGUNDOS** · 1 Falta en contra: balón al suelo · 2 Ni tocar el saque ni el pase · 3 Jueves: partidillo que acaba en 0:30 |
-| 20,0–23,5 | vuelve la foto del principio (bucle) · RETO PARA TU STAFF · **0:30, ganamos de 1.** *¿Qué les decimos?* |
-| 23,5–27,0 | **COMENTA: CATEGORÍA + DÍAS** · *y te preparo la semana* |
+| 8,0–12,0 | pizarra: banquillo, entrenador con la mano en el reloj · **«HACED CORRER EL RELOJ»** tachado a medias |
+| 12,0–20,0 | ficha guardable: **ÚLTIMOS 30 SEGUNDOS** · 1 Falta: balón al suelo · 2 No tocar saque ni pase · 3 Jueves: partidillo hasta 0:30 |
+| 20,0–23,5 | vuelve la foto del principio (bucle) · RETO PARA TU STAFF · **0:30 y +1:** *¿qué les decimos?* |
+| 23,5–27,0 | **COMENTA: CATEGORÍA + DÍAS** |
 | 27,0–29,6 | **web de la lista de espera con el contador** (animación de u28 v3), ≈ 2,6 s, con la voz del bloque 7 |
 | 29,6–32,0 | foto del principio · **HASTA EL 27 NOV** · *3 meses gratis* |
 

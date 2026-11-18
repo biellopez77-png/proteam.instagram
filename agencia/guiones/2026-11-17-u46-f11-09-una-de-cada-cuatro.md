@@ -37,17 +37,17 @@ I-034: «El entrenador de fútbol de base mete el nórdico después de la primer
 
 Silencio de 0,3 s después de «en el isquio» (golpe de música en «duplicado»). Sin pausa antes del CTA. Si la toma pasa de 35 s: fuera «Y se ha duplicado en veinte años» (queda en pantalla).
 
-## 6. Pantallas (máx. 7 palabras por golpe)
+## 6. Pantallas (máx. 5 palabras por golpe; recortadas el 18/11, encargo de Biel de menos texto)
 | s | pantalla |
 |---|---|
-| 0–3,5 | Foto a sangre: jugador de un grande de LaLiga o la Premier en carrera a máxima velocidad, en vertical (Commons, licencia leída; Pau) · desde el fotograma 0: **1 DE CADA 4** · *lesiones: isquio* |
+| 0–3,5 | Foto a sangre: jugador de un grande de LaLiga o la Premier en carrera a máxima velocidad, en vertical (Commons, licencia leída; Pau) · desde el fotograma 0: **ISQUIO: 1 DE CADA 4** |
 | 3,5–5,5 | barra que crece de 12 % a **24 %** · pequeño: «UEFA · 2001/02 → 2021/22» |
 | 5,5–10,5 | motion graphics: calendario de octubre con «nórdicos» el martes 7 y el jueves 9; las casillas siguientes vacías · *y en noviembre, nadie* (serif azul) |
 | 10,5–13,5 | **HASTA −51 %** · pequeño: «15 estudios · BJSM 2019» |
-| 13,5–19,0 | ficha guardable: **NÓRDICO** · 1 Después del calentamiento · 2 Dos días por semana · 3 Fecha de inicio y de fin |
+| 13,5–19,0 | ficha guardable: **NÓRDICO** · 1 Después del calentamiento · 2 Dos días por semana · 3 Fecha de inicio y fin |
 | 19,0–23,5 | móvil con la captura real RUTINAS_001: tarjeta «Prevención de isquios y tobillo» recuadrada; zoom a «10 Sesiones» y «2026-09-29 → 2026-12-01» (≥ 2 s cada uno) |
 | 23,5–27,0 | vuelve la foto del principio (bucle) · RETO PARA TU STAFF · **¿Cuántas sesiones** *desde septiembre?* |
-| 27,0–31,0 | **COMENTA: CATEGORÍA + DÍAS** · *y te preparo la semana* |
+| 27,0–31,0 | **COMENTA: CATEGORÍA + DÍAS** |
 | 31,0–35,0 | **LA APP DE PROTEAM** · pequeño: «Enlace en la bio» |
 
 ## 7. Descripción

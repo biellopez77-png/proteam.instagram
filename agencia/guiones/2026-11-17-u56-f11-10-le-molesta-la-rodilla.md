@@ -36,16 +36,16 @@ I-044: «Lo que el entrenador de base sabe del estado de sus jugadores le llega 
 
 Silencio de 0,3 s antes de «Y la rodilla no está en el grupo». Sin pausa antes del CTA. Si la toma pasa de 35 s: fuera «Nadie lo apuntó.» (la idea ya está en el giro).
 
-## 6. Pantallas (máx. 7 palabras por golpe)
+## 6. Pantallas (máx. 5 palabras por golpe; recortadas el 18/11, encargo de Biel de menos texto)
 | s | pantalla |
 |---|---|
-| 0–2,5 | Foto a sangre: aparcamiento junto a un campo de fútbol de base al anochecer, focos encendidos al fondo (banco o Commons; Pau; sin caras de menores) · desde el fotograma 0: **MARTES: «LE MOLESTA LA RODILLA»** y debajo **SÁBADO: 70′** |
+| 0–2,5 | Foto a sangre: aparcamiento junto a un campo de fútbol de base al anochecer, focos encendidos al fondo (banco o Commons; Pau; sin caras de menores) · desde el fotograma 0: **MARTES: «LE MOLESTA LA RODILLA»** · en el 1,5, debajo: **SÁBADO: 70′** |
 | 2,5–5,0 | motion graphics: un bocadillo de voz que se va desvaneciendo mientras pasa la semana (mar → mié → jue) · *nadie lo apuntó* |
 | 5,0–9,0 | maqueta de un grupo de WhatsApp del equipo (sin nombres reales): «falta Hugo», «Marcos sancionado» · el rótulo **LA RODILLA NO ESTÁ** |
-| 9,0–17,0 | ficha guardable: **LO QUE TE CUENTAN, SE APUNTA** · 1 Ese día: quién, qué, desde cuándo · 2 Un día para volver a preguntar · 3 Antes de convocar, esa lista · pequeño: *y si duele, que lo vea quien sepa* |
+| 9,0–17,0 | ficha guardable: **LO QUE TE CUENTAN, APÚNTALO** · 1 Quién, qué, desde cuándo · 2 Día para volver a preguntar · 3 Antes de convocar, esa lista · pequeño: *si duele, a un profesional* |
 | 17,0–21,5 | móvil con la captura real INICIO_001, desplazada hasta abajo: zoom a **«Pendiente · Ver todo (4)»** y a **«1 jugador con incidencia activa»** con un círculo azul (≥ 2 s) |
 | 21,5–25,5 | vuelve la foto del aparcamiento (bucle) · RETO PARA TU STAFF · *¿Cuántas nos han dicho aquí?* |
-| 25,5–29,5 | **COMENTA: CATEGORÍA + DÍAS** · *y te preparo la semana* |
+| 25,5–29,5 | **COMENTA: CATEGORÍA + DÍAS** |
 | 29,5–36,0 | **LA APP DE PROTEAM** · pequeño: «Enlace en la bio» |
 
 ## 7. Descripción

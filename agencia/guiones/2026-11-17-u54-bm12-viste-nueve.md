@@ -36,17 +36,17 @@ I-042: «El entrenador de base rellena de memoria lo que no vio durante el parti
 
 Silencio de 0,4 s antes de «de memoria» (golpe de música ahí). Sin pausa antes del CTA. Si la toma pasa de 35 s: fuera «Un lanzamiento sin zona sigue contando.» y queda en la ficha.
 
-## 6. Pantallas (máx. 7 palabras por golpe)
+## 6. Pantallas (máx. 5 palabras por golpe; recortadas el 18/11, encargo de Biel de menos texto)
 | s | pantalla |
 |---|---|
 | 0–2,5 | Foto a sangre: lanzamiento en suspensión de un partido de primer nivel de balonmano (Asobal, EHF o selección; Commons, licencia leída; Pau) · desde el fotograma 0: **39 LANZAMIENTOS · VISTE 30** |
 | 2,5–6,0 | motion graphics: cancha vista desde el banquillo; flechas de cambio (sale defensor, entra atacante) y, a la vez, lanzamientos que se apagan en gris · *mientras cambiabas* |
 | 6,0–10,5 | página de libreta con 39 cruces en la portería; nueve parpadean y se vuelven de lápiz · **9 ZONAS DE MEMORIA** · al final: *y el martes entrenas eso* |
-| 10,5–18,0 | ficha guardable: **LO QUE NO VISTE** · 1 Se apunta como «no visto» · 2 Sin zona, sigue contando · 3 Si son muchos: ¿desde dónde miras? |
+| 10,5–18,0 | ficha guardable: **LO QUE NO VISTE** · 1 Apúntalo como «no visto» · 2 Sin zona, cuenta igual · 3 ¿Muchos? Cambia desde dónde miras |
 | 18,0–22,0 | móvil con la captura real REGISTRO_ACCION_003, zoom a «¿Desde dónde chuta?» y a los botones; **«No lo he visto»** con un círculo azul (≥ 2 s) |
 | 22,0–24,0 | captura real CONFIG_PARTIDO_003 con zoom a la casilla «No lo he visto» marcada · **SE ACTIVA ANTES DEL PARTIDO** |
 | 24,0–28,0 | vuelve la foto del principio (bucle) · RETO PARA TU STAFF · *¿Cuántos no vimos ninguno?* |
-| 28,0–31,5 | **COMENTA: CATEGORÍA + DÍAS** · *y te preparo la semana* |
+| 28,0–31,5 | **COMENTA: CATEGORÍA + DÍAS** |
 | 31,5–36,0 | **LA APP DE PROTEAM** · pequeño: «Enlace en la bio» |
 
 ## 7. Descripción

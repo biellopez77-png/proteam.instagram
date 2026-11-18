@@ -37,15 +37,15 @@ Sentar al jugador con dos faltas en el primer cuarto es una costumbre de banquil
 Silencio de 0,4 s antes de «Dieciséis». Sin pausa antes del CTA.
 Si pasa de 34 s en la toma: se recorta «con esos diez minutos dentro» (bloque 6).
 
-## 6. Pantallas (máx. 7 palabras por golpe)
+## 6. Pantallas (máx. 5 palabras por golpe; recortadas el 18/11, encargo de Biel de menos texto)
 | s | pantalla |
 |---|---|
-| 0–4,5 | Foto a sangre: pívot de primer nivel sentado en el banquillo con la toalla (Euroliga, ACB o NBA; Pau) · desde el fotograma 0: **MIN 4 · 2.ª FALTA** · en el 2,5: **LE QUEDAN 3 · 36 MIN** |
+| 0–4,5 | Foto a sangre: pívot de primer nivel sentado en el banquillo con la toalla (Euroliga, ACB o NBA; Pau) · desde el fotograma 0: **MIN 4 · 2.ª FALTA** · en el 2,5: **QUEDAN 36 MIN** |
 | 4,5–7,0 | marcador de faltas en motion graphics (no es la app): dorsal del pívot con dos puntos rojos de cinco · **AL BANQUILLO** |
-| 7,0–11,5 | reloj que corre de 6:00 (1.er cuarto) a 10:00 (2.º) · **16 MIN SIN TU CINCO** · *ni uno entrenado* (serif azul) |
-| 11,5–18,5 | ficha guardable: **2 FALTAS EN EL 1.er CUARTO** · 1 Tu regla, escrita antes · 2 Jueves: 10′ de 5×5 sin pívot · 3 El segundo cuenta faltas |
-| 18,5–22,0 | vuelve la foto del principio (bucle) · RETO PARA TU STAFF · **Minuto 4, 2.ª falta.** *¿Quién juega de cinco?* |
-| 22,0–25,5 | **COMENTA: CATEGORÍA + DÍAS** · *y te preparo la semana* |
+| 7,0–11,5 | reloj que corre de 6:00 (1.er cuarto) a 10:00 (2.º) · **16 MIN SIN TU CINCO** |
+| 11,5–18,5 | ficha guardable: **2 FALTAS, 1.er CUARTO** · 1 Regla escrita antes · 2 Jueves: 5×5 sin pívot · 3 El segundo cuenta faltas |
+| 18,5–22,0 | vuelve la foto del principio (bucle) · RETO PARA TU STAFF · **Minuto 4:** *¿quién juega de cinco?* |
+| 22,0–25,5 | **COMENTA: CATEGORÍA + DÍAS** |
 | 25,5–28,1 | **web de la lista de espera con el contador** (la animación de u28 v3: contador que corre, correo, toque, «Estás dentro»), ≈ 2,6 s, con la voz del bloque 7 |
 | 28,1–30,5 | foto del principio · **HASTA EL 27 NOV** · *3 meses gratis* |
 

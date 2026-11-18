@@ -36,17 +36,17 @@ I-036: «El entrenador de base planifica con detalle la pretemporada y las prime
 
 Silencio de 0,3 s después de «acababa en octubre». Golpe de música en «el siguiente bloque». Sin pausa antes del CTA. Si la toma pasa de 35 s: fuera «Desde entonces,» (queda «Cada lunes decides la semana mirando el último resultado»).
 
-## 6. Pantallas (máx. 7 palabras por golpe)
+## 6. Pantallas (máx. 5 palabras por golpe; recortadas el 18/11, encargo de Biel de menos texto)
 | s | pantalla |
 |---|---|
-| 0–3,5 | Foto a sangre: banquillo o tiempo muerto de un equipo de primer nivel de baloncesto (ACB o Euroliga), entrenador de pie con la pizarra (Commons, licencia leída; Pau) · desde el fotograma 0: **SEMANA 14** · *tu plan: hasta octubre* · pequeño: «si empezaste el 1 de septiembre» |
+| 0–3,5 | Foto a sangre: banquillo o tiempo muerto de un equipo de primer nivel de baloncesto (ACB o Euroliga), entrenador de pie con la pizarra (Commons, licencia leída; Pau) · desde el fotograma 0: **SEMANA 14** · *plan: hasta octubre* · pequeño: «desde el 1 sep» |
 | 3,5–7,5 | motion graphics: hoja de planificación de septiembre con tres líneas («pretemporada», «defensa individual», «correr») que se acaban en una raya en octubre; noviembre en blanco |
 | 7,5–11,5 | calendario de lunes: «perdimos por rebote → rebote», «perdimos por pérdidas → pase» (motion graphics, rótulo pequeño «ejemplo») · *cada lunes, otra semana* (serif azul) |
 | 11,5–14,0 | **TE FALTA EL SIGUIENTE BLOQUE** |
 | 14,0–20,0 | ficha guardable: **BLOQUES** · 1 De 4 a 6 semanas · 2 Un objetivo por bloque · 3 Fecha de fin para revisar |
 | 20,0–24,5 | móvil con la captura real PLANIFICACION_001: zoom a «Pretemporada · 4 semanas» e «Inicio de competición · 6 semanas» (≥ 2 s) y luego a «Semana 11 · Transformación» con la barra (≥ 2 s). Sin la línea «Siguiente: … UE Vall» |
-| 24,5–28,0 | vuelve la foto del principio (bucle) · RETO PARA TU STAFF · **¿En qué bloque estamos?** *¿Y cuándo acaba?* |
-| 28,0–31,5 | **COMENTA: CATEGORÍA + DÍAS** · *y te preparo la semana* |
+| 24,5–28,0 | vuelve la foto del principio (bucle) · RETO PARA TU STAFF · **¿Qué bloque?** *¿Y cuándo acaba?* |
+| 28,0–31,5 | **COMENTA: CATEGORÍA + DÍAS** |
 | 31,5–35,0 | **LA APP DE PROTEAM** · pequeño: «Enlace en la bio» |
 
 ## 7. Descripción

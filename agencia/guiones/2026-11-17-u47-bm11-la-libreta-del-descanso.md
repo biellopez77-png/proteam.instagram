@@ -36,17 +36,17 @@ I-035: «El cuerpo técnico de base apunta todo lo que puede durante el partido 
 
 Silencio de 0,4 s antes de «Se lee una línea» (golpe de música ahí). Sin pausa antes del CTA. Si la toma pasa de 35 s: fuera «Si la semana fue de perder menos balones,» y queda «pérdidas y recuperaciones» en pantalla.
 
-## 6. Pantallas (máx. 7 palabras por golpe)
+## 6. Pantallas (máx. 5 palabras por golpe; recortadas el 18/11, encargo de Biel de menos texto)
 | s | pantalla |
 |---|---|
-| 0–3,0 | Foto a sangre: tiempo muerto o descanso de un equipo de primer nivel de balonmano, el entrenador con un papel o una tablilla delante (Commons, licencia leída; Pau) · desde el fotograma 0: **DESCANSO · 12–14** · *la libreta, llena* |
+| 0–3,0 | Foto a sangre: tiempo muerto o descanso de un equipo de primer nivel de balonmano, el entrenador con un papel o una tablilla delante (Commons, licencia leída; Pau) · desde el fotograma 0: **DESCANSO · 12–14** · *libreta llena* |
 | 3,0–6,5 | motion graphics: página de libreta que se llena de rayas, flechas y dorsales a toda velocidad · **¿Y QUÉ CAMBIO?** |
-| 6,5–11,0 | la página se borra y queda una sola línea: «Pérdidas: 7 · 5 del central» (ejemplo, rótulo pequeño «ejemplo») · *una línea* (serif azul) · al final: **SE ELIGE EL JUEVES** |
-| 11,0–18,0 | ficha guardable: **QUÉ SE APUNTA** · 1 Lo decide el objetivo de la semana · 2 Dos acciones, no más · 3 Ej.: pérdidas + recuperaciones |
+| 6,5–11,0 | la página se borra y queda una sola línea: «Pérdidas: 7 · 5 del central» (ejemplo, rótulo pequeño «ejemplo») · al final: **SE ELIGE EL JUEVES** |
+| 11,0–18,0 | ficha guardable: **QUÉ SE APUNTA** · 1 Manda el objetivo semanal · 2 Dos acciones, no más · 3 Ej.: pérdidas + recuperaciones |
 | 18,0–21,5 | móvil con la captura real CONFIG_PARTIDO_002: bloque «Acciones activas» recuadrado; «Pérdida» y «Recuperación» marcadas con un círculo azul (≥ 2 s) |
 | 21,5–24,0 | captura real MAPA_PORTERIA_002 (pista en directo) con zoom a «registra una acción con uno o dos toques» · **1 O 2 TOQUES** |
-| 24,0–27,5 | vuelve la foto del principio (bucle) · RETO PARA TU STAFF · **El sábado,** *¿qué dos cosas apuntamos?* |
-| 27,5–31,0 | **COMENTA: CATEGORÍA + DÍAS** · *y te preparo la semana* |
+| 24,0–27,5 | vuelve la foto del principio (bucle) · RETO PARA TU STAFF · **Sábado:** *¿qué dos apuntamos?* |
+| 27,5–31,0 | **COMENTA: CATEGORÍA + DÍAS** |
 | 31,0–35,0 | **LA APP DE PROTEAM** · pequeño: «Enlace en la bio» |
 
 ## 7. Descripción

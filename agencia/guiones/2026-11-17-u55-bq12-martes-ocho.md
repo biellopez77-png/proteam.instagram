@@ -37,16 +37,16 @@ I-043: «El entrenador de base planifica semana a semana y se entera de los fest
 
 Silencio de 0,3 s antes de «Se pierde hoy» (golpe de música). Sin pausa antes del CTA. Si la toma pasa de 35 s: fuera «y partidos» del paso 1 (queda en la ficha).
 
-## 6. Pantallas (máx. 7 palabras por golpe)
+## 6. Pantallas (máx. 5 palabras por golpe; recortadas el 18/11, encargo de Biel de menos texto)
 | s | pantalla |
 |---|---|
 | 0–2,5 | Foto a sangre: pabellón de baloncesto vacío, luces apagadas o puerta cerrada (Commons o banco; Pau; sin menores) · desde el fotograma 0: **MARTES 8 DIC · FESTIVO** y debajo, pequeño, *tu día de pista* |
 | 2,5–5,5 | motion graphics: semana del 7 al 13 con dos casillas «PISTA» (mar y jue) y un sábado «PARTIDO»; la del martes se tacha · **1 ENTRENO ANTES DEL PARTIDO** |
 | 5,5–9,0 | móvil con el grupo del club (maqueta, sin nombres reales): «el martes el pabellón está cerrado» · fecha del mensaje: viernes · *te enteras tarde* |
-| 9,0–17,5 | ficha guardable: **EL MES, ANTES QUE LA SEMANA** · 1 Primer lunes: festivos y partidos · 2 La sesión se mueve, no se borra · 3 Si no cabe: decide hoy qué sale |
-| 17,5–22,0 | móvil con la captura real CALENDARIO_001: primero la cabecera «Toda la actividad del equipo, organizada por mes» y después un barrido hacia abajo por las filas «Semana 8 · 9 · 10» (≥ 2 s); rótulo **EL MES ENTERO, A SU HORA** |
-| 22,0–25,5 | vuelve la foto del pabellón (bucle) · RETO PARA TU STAFF · *El martes 8: ¿qué y dónde?* |
-| 25,5–29,0 | **COMENTA: CATEGORÍA + DÍAS** · *y te preparo la semana* |
+| 9,0–17,5 | ficha guardable: **PRIMERO EL MES** · 1 Primer lunes: festivos y partidos · 2 Se mueve, no se borra · 3 ¿No cabe? Decide qué sale |
+| 17,5–22,0 | móvil con la captura real CALENDARIO_001: primero la cabecera «Toda la actividad del equipo, organizada por mes» y después un barrido hacia abajo por las filas «Semana 8 · 9 · 10» (≥ 2 s); rótulo **EL MES ENTERO** |
+| 22,0–25,5 | vuelve la foto del pabellón (bucle) · RETO PARA TU STAFF · *Martes 8: ¿qué y dónde?* |
+| 25,5–29,0 | **COMENTA: CATEGORÍA + DÍAS** |
 | 29,0–35,0 | **LA APP DE PROTEAM** · pequeño: «Enlace en la bio» |
 
 ## 7. Descripción

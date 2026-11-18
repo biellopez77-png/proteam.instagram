@@ -35,16 +35,16 @@ I-051: «El entrenador de base deja la semana para el domingo por la noche porqu
 
 Silencio de 0,4 s antes de «Esta vez no» (golpe ahí). Sin pausa antes de la oferta ni del reto.
 
-## 6. Pantallas
+## 6. Pantallas (máx. 5 palabras por golpe; recortadas el 18/11, encargo de Biel de menos texto)
 | s | pantalla |
 |---|---|
-| 0–4,0 | Foto a sangre: estadio de primer nivel al anochecer después de un partido (focos encendidos, grada vacía; Commons, licencia leída; Pau) · desde el fotograma 0: **SÁB 20:30 · 2–2** · *mañana es domingo* |
-| 4,0–7,0 | el reloj salta a **DOM 23:00** y la foto se apaga · *la semana, sin preparar* (mismo rótulo que u50) |
+| 0–4,0 | Foto a sangre: estadio de primer nivel al anochecer después de un partido (focos encendidos, grada vacía; Commons, licencia leída; Pau) · desde el fotograma 0: **SÁB 20:30 · 2–2** |
+| 4,0–7,0 | el reloj salta a **DOM 23:00** y la foto se apaga · *semana sin preparar* (como el rótulo de u50) |
 | 7,0–9,5 | corte a negro · **ESTA VEZ NO** · *hoy abre* |
 | 9,5–15,5 | papel: semana de lunes a domingo; solo **LUNES** se rellena: *objetivo* ___ · *sesión* ___ ; el resto, gris |
-| 15,5–19,0 | **ABRE HOY · 1 MES DE PRUEBA** · pequeño: «¿Te apuntaste? Tus 3 meses ya están dentro» · «Enlace en la bio» |
-| 19,0–24,0 | vuelve la foto del principio (bucle) · **2–2** · *el lunes, hecho* · **DOM 23:00** con un sofá en motion graphics |
-| 24,0–29,0 | RETO PARA TU SEGUNDO · **Mañana a las 23:00,** *¿qué vais a estar haciendo?* · pequeño: «Enlace en la bio» |
+| 15,5–19,0 | **ABRE HOY · 1 MES DE PRUEBA** · pequeño: «¿En la lista? 3 meses dentro» · «Enlace en la bio» |
+| 19,0–24,0 | vuelve la foto del principio (bucle) · **2–2** · *el lunes, hecho* · un sofá en motion graphics |
+| 24,0–29,0 | RETO PARA TU SEGUNDO · **Domingo 23:00:** *¿qué estaréis haciendo?* · pequeño: «Enlace en la bio» |
 
 ## 7. Descripción
 Sábado por la noche. El partido de esta mañana, todavía en la cabeza. Y mañana es domingo. ⚽
