@@ -426,3 +426,9 @@
 - Laura 17/11 20:10: Biel pide cambios en u12 (la voz se corta) y u10 (la norma del cambio ataque-defensa es de toda España hasta juvenil, no solo de Euskadi). Los dos fuera de la cola; encargos de prioridad alta para Marta. Pau: 11 fotos nuevas de primer fotograma para u41, u42, u44 (2 opciones) y u45; faltan los tres de baloncesto (u39, u40, u43).
 - Laura 17/11 20:26: publicado u29 (Reel 20:30, media 18117369581105351; jsDelivr dio ERROR de contenedor, salió con raw). Métricas 7 días: u08 (6:0 infantiles) se dispara: 12.401 vistas, 28,8 % saltos, 14 s de media, 84 guardados y 57 envíos. Siguen u09 2.323 (36,7 %, 11,6 s), u05 2.276 (37,3 %), u03 2.027, u04 1.970 (5 guardados). u01/u02 flojos (211/274, 60–63 % saltos). Carruseles c08–c10: 28–68 vistas.
 - Comentarios 3 días: respondidos 2 nuevos (manubirlng, norma de Murcia; mnt1972, base técnica) en el debate de u08; el resto ya tenía respuesta. Sin spam. Hoja: Plan al día (c08, u05, c10, c10s, u08, u27, u09, c12s, c12s2, c13s, c13s2 a Publicado; fila nueva u29). Analisis: filas de u02, u03 y u04 (sin predicción en el Plan).
+
+## 18/11 · 3:37 · Turno de Reels (Marta, con Dani y Andrés)
+- Corrección de Biel en u10 aplicada: la norma es de toda España hasta juvenil (voz, hoja de la norma, nota y descripción, sin Euskadi). Voz nueva de Mateo (biblioteca; la original sigue «disabled») en una toma seguida, 467 caracteres; música nueva; contador del mié 25/11 11:30. 30,6 s. Andrés 81. Sale mié 25/11 a las 11:30 (fase solución).
+- Fuente: no se encontró el artículo exacto del reglamento de la RFEBM; no se cita artículo ni año.
+- Voz gastada hoy: 2.332 de 3.500 (este turno 977 con la música).
+- Decidido: sin segundo Reel de datos (el hueco de las 11:30 es de impacto, que ya cubren u49 y u50); queda para el turno de las 6:37. Reserva de guiones criticados sin producir: más de 30.

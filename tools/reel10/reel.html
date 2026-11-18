@@ -163,16 +163,16 @@ function conse(t) {
   const out = seg(t, b - .12, b); [COURT, FICHA, cA, cB, cC, CHIP].forEach(e => e.style.opacity = Math.min(+(e.style.opacity || 1), 1 - out));
 }
 
-// ── 3 · LA NORMA (papel): Juegos Escolares de Euskadi, infantil · NO PERMITIDO ──
+// ── 3 · LA NORMA (papel): balonmano base en España, hasta juvenil · NO PERMITIDO ──
 const DOC = mk('div', 'position:absolute;left:110px;top:560px;width:860px;height:760px;background:#fbfaf6;border:3px solid #d6d2c6;border-radius:22px;box-shadow:0 30px 60px rgba(0,0,0,.18);display:none',
-  `<div style="position:absolute;left:60px;top:60px;font-family:M;font-weight:700;font-size:30px;letter-spacing:.14em;color:#6d6a60">JUEGOS ESCOLARES DE EUSKADI</div>
-   <div style="position:absolute;left:60px;top:108px;font-family:M;font-weight:700;font-size:30px;letter-spacing:.14em;color:#6d6a60">BALONMANO · INFANTIL · 2025</div>
+  `<div style="position:absolute;left:60px;top:60px;font-family:M;font-weight:700;font-size:30px;letter-spacing:.14em;color:#6d6a60">BALONMANO BASE · ESPAÑA</div>
+   <div style="position:absolute;left:60px;top:108px;font-family:M;font-weight:700;font-size:30px;letter-spacing:.14em;color:#6d6a60">HASTA JUVENIL</div>
    <div style="position:absolute;left:60px;right:60px;top:170px;height:3px;background:#e1ddd1"></div>
    <div style="position:absolute;left:60px;top:220px;font-family:M;font-weight:800;font-size:80px;letter-spacing:-.04em;line-height:1.02;color:#0d0f14">Cambio<br>ataque-defensa</div>
    ${[0, 1, 2].map(r => `<div style="position:absolute;left:60px;width:${[640, 700, 520][r]}px;top:${440 + r * 46}px;height:14px;border-radius:7px;background:#e4e0d4"></div>`).join('')}
    <div id="stamp" style="position:absolute;left:150px;top:560px;padding:14px 34px;border:8px solid #2f6bff;border-radius:16px;color:#2f6bff;font-family:M;font-weight:800;font-size:72px;letter-spacing:.04em;transform:rotate(-6deg);opacity:0">NO PERMITIDO</div>`, $('cards'));
 const nK = tx(`<div class="kick ink" style="color:#0d0f14">${M('LA NORMA')}</div>`, 400, '', 40);
-const nN = tx(`<div class="M5" style="font-size:34px;color:#6d6a60">Normativa de Euskadi. En otras federaciones cambia.</div>`, 1400, '', 34);
+const nN = tx(`<div class="M5" style="font-size:34px;color:#6d6a60">Balonmano base · hasta juvenil</div>`, 1400, '', 34);
 function norma(t) {
   const a = T.eus - .1, b = T.sem - .1, v = t >= a && t < b; [DOC, nK, nN].forEach(e => show(e, v)); if (!v) return;
   show($('paper'), true);
@@ -247,7 +247,7 @@ function appc(t) {
 }
 
 // ── 8 · CIERRE: la entrada en la lista de espera con el contador (misma animación de u28 v3, u30, u33 y u09) ──
-// el contador sale de lo que falta de verdad cuando se publica (mié 18/11 20:30 → vie 27/11 23:59:59 = 9 d 3 h 29 min 59 s)
+// el contador sale de lo que falta de verdad cuando se publica (mié 25/11 11:30 → vie 27/11 23:59:59 = 2 d 12 h 29 min 59 s)
 let rs = 11; const rnd = () => (rs = (rs * 16807) % 2147483647) / 2147483647;
 const W = { web: T.camp - .05 }; W.tap = W.web + 1.15; W.ok = W.tap + .22; W.gal = T.gra - .1;
 const PT = Array.from({ length: 22 }, () => { const o = document.createElement('div'); const a = rnd() * Math.PI * 2, r = 160 + rnd() * 260;
@@ -264,7 +264,7 @@ function webcta(t) {
     $('wp').style.top = (470 + (1 - p) * 120) + 'px'; $('wp').style.opacity = p;
     [...$('wp').children].forEach((c, i) => { const q = E.out(seg(t, W.web + i * .04, W.web + .28 + i * .04)); c.style.opacity = q; c.style.transform = `translateY(${(1 - q) * 40}px)`; });
     const pg = (t * 1.4) % 1; $('ping').style.transform = `scale(${1 + pg * 1.6})`; $('ping').style.opacity = 1 - pg;
-    const total0 = ((9 * 24 + 3) * 60 + 29) * 60 + 59 - Math.floor(t - W.web);
+    const total0 = ((2 * 24 + 12) * 60 + 29) * 60 + 59 - Math.floor(t - W.web);
     const acc = E.in(seg(t, W.web + .3, W.gal - .08)); const rem = Math.max(0, Math.round(total0 * (1 - acc)));
     const dd = Math.floor(rem / 86400), hh = Math.floor(rem % 86400 / 3600), mm = Math.floor(rem % 3600 / 60), ss = rem % 60;
     [['cd1', dd], ['cd2', hh], ['cd3', mm], ['cd4', ss]].forEach(([id, v]) => { const el = $(id); const nv = String(v).padStart(2, '0'); if (el.textContent !== nv) { el._ch = t; el.textContent = nv; } el.style.color = rem === 0 ? '#4f86ff' : '#f2f1ec';

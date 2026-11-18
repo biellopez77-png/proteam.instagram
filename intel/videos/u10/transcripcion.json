@@ -3,171 +3,171 @@
  "tipo": "locución generada con tiempos por palabra (exacta, no reconocida por oído)",
  "palabras": 19,
  "primera_palabra_s": 0.08,
- "ultima_palabra_s": 26.652,
- "ritmo_palabras_por_s": 0.72,
+ "ultima_palabra_s": 30.24,
+ "ritmo_palabras_por_s": 0.63,
  "frases": [
   {
    "desde": 0.08,
-   "hasta": 1.141,
+   "hasta": 1.2,
    "texto": "Entra a defender.",
-   "palabras_por_s": 0.94
+   "palabras_por_s": 0.89
   },
   {
-   "desde": 1.228,
-   "hasta": 2.212,
+   "desde": 1.4,
+   "hasta": 2.72,
    "texto": "Sale a atacar.",
-   "palabras_por_s": 1.02
+   "palabras_por_s": 0.76
   },
   {
-   "desde": 2.459,
-   "hasta": 3.576,
+   "desde": 2.88,
+   "hasta": 4.16,
    "texto": "Tiene doce años.",
-   "palabras_por_s": 0.9
+   "palabras_por_s": 0.78
   },
   {
-   "desde": 3.723,
-   "hasta": 4.837,
+   "desde": 4.32,
+   "hasta": 5.68,
    "texto": "Tú ganas una defensa.",
-   "palabras_por_s": 0.9
+   "palabras_por_s": 0.74
   },
   {
-   "desde": 4.924,
-   "hasta": 6.597,
+   "desde": 5.84,
+   "hasta": 7.6,
    "texto": "Él se queda sin medio balonmano.",
-   "palabras_por_s": 0.6
+   "palabras_por_s": 0.57
   },
   {
-   "desde": 6.764,
-   "hasta": 9.821,
-   "texto": "En los Juegos Escolares de Euskadi, ese cambio no se permite.",
-   "palabras_por_s": 0.65
+   "desde": 7.92,
+   "hasta": 11.12,
+   "texto": "En España, hasta juvenil, ese cambio no se permite.",
+   "palabras_por_s": 0.63
   },
   {
-   "desde": 9.988,
-   "hasta": 13.567,
+   "desde": 11.44,
+   "hasta": 15.52,
    "texto": "Esta semana, en el partidillo: quien defiende, ataca la siguiente.",
-   "palabras_por_s": 1.12
+   "palabras_por_s": 0.98
   },
   {
-   "desde": 13.734,
-   "hasta": 15.676,
+   "desde": 15.68,
+   "hasta": 17.88,
    "texto": "A los doce, nadie es especialista.",
-   "palabras_por_s": 1.03
+   "palabras_por_s": 0.91
   },
   {
-   "desde": 15.824,
-   "hasta": 18.714,
+   "desde": 18.0,
+   "hasta": 21.2,
    "texto": "Pregúntale a tu segundo: ¿quién no ha atacado en todo el año?",
-   "palabras_por_s": 0.69
+   "palabras_por_s": 0.63
   },
   {
-   "desde": 18.842,
-   "hasta": 22.612,
+   "desde": 21.52,
+   "hasta": 25.92,
    "texto": "Comenta tu categoría y tus días: te preparo la semana en la app de Pro Team.",
-   "palabras_por_s": 0.53
+   "palabras_por_s": 0.45
   },
   {
-   "desde": 22.742,
-   "hasta": 26.652,
+   "desde": 26.08,
+   "hasta": 30.24,
    "texto": "Lista de espera hasta el veintisiete de noviembre: tres meses gratis.",
-   "palabras_por_s": 0.51
+   "palabras_por_s": 0.48
   }
  ],
  "pausas": [],
  "por_palabra": [
   {
    "desde": 0.08,
-   "hasta": 1.141,
+   "hasta": 1.2,
    "palabra": "Entra a defender."
   },
   {
-   "desde": 1.228,
-   "hasta": 2.212,
+   "desde": 1.4,
+   "hasta": 2.72,
    "palabra": "Sale a atacar."
   },
   {
-   "desde": 2.459,
-   "hasta": 3.576,
+   "desde": 2.88,
+   "hasta": 4.16,
    "palabra": "Tiene doce años."
   },
   {
-   "desde": 3.723,
-   "hasta": 4.837,
+   "desde": 4.32,
+   "hasta": 5.68,
    "palabra": "Tú ganas una defensa."
   },
   {
-   "desde": 4.924,
-   "hasta": 6.597,
+   "desde": 5.84,
+   "hasta": 7.6,
    "palabra": "Él se queda sin medio balonmano."
   },
   {
-   "desde": 6.764,
-   "hasta": 8.285,
-   "palabra": "En los Juegos Escolares de Euskadi,"
+   "desde": 7.92,
+   "hasta": 9.52,
+   "palabra": "En España, hasta juvenil,"
   },
   {
-   "desde": 8.353,
-   "hasta": 9.821,
+   "desde": 9.64,
+   "hasta": 11.12,
    "palabra": "ese cambio no se permite."
   },
   {
-   "desde": 9.988,
-   "hasta": 10.67,
+   "desde": 11.44,
+   "hasta": 12.24,
    "palabra": "Esta semana,"
   },
   {
-   "desde": 10.738,
-   "hasta": 11.623,
+   "desde": 12.32,
+   "hasta": 13.36,
    "palabra": "en el partidillo:"
   },
   {
-   "desde": 11.71,
-   "hasta": 12.436,
+   "desde": 13.4,
+   "hasta": 14.24,
    "palabra": "quien defiende,"
   },
   {
-   "desde": 12.503,
-   "hasta": 13.567,
+   "desde": 14.4,
+   "hasta": 15.52,
    "palabra": "ataca la siguiente."
   },
   {
-   "desde": 13.734,
-   "hasta": 14.325,
+   "desde": 15.68,
+   "hasta": 16.48,
    "palabra": "A los doce,"
   },
   {
-   "desde": 14.393,
-   "hasta": 15.676,
+   "desde": 16.56,
+   "hasta": 17.88,
    "palabra": "nadie es especialista."
   },
   {
-   "desde": 15.824,
-   "hasta": 16.941,
+   "desde": 18.0,
+   "hasta": 19.2,
    "palabra": "Pregúntale a tu segundo:"
   },
   {
-   "desde": 17.019,
-   "hasta": 18.714,
+   "desde": 19.44,
+   "hasta": 21.2,
    "palabra": "¿quién no ha atacado en todo el año?"
   },
   {
-   "desde": 18.842,
-   "hasta": 20.46,
+   "desde": 21.52,
+   "hasta": 23.44,
    "palabra": "Comenta tu categoría y tus días:"
   },
   {
-   "desde": 20.528,
-   "hasta": 22.612,
+   "desde": 23.52,
+   "hasta": 25.92,
    "palabra": "te preparo la semana en la app de Pro Team."
   },
   {
-   "desde": 22.742,
-   "hasta": 25.262,
+   "desde": 26.08,
+   "hasta": 28.64,
    "palabra": "Lista de espera hasta el veintisiete de noviembre:"
   },
   {
-   "desde": 25.342,
-   "hasta": 26.652,
+   "desde": 28.76,
+   "hasta": 30.24,
    "palabra": "tres meses gratis."
   }
  ]

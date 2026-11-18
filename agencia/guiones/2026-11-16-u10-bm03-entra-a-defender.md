@@ -26,7 +26,7 @@ Todos dan por hecho que cambiar al especialista es «gestionar el partido», per
 |---|---|---|---|
 | 1 | H | Entra a defender. Sale a atacar. Tiene doce años. | escena + giro (la edad) |
 | 2 | BCL 1 | Tú ganas una defensa. Él se queda sin medio balonmano. | consecuencia que no se ve |
-| 3 | BCL 2 | En los Juegos Escolares de Euskadi, ese cambio no se permite. | realidad verificable |
+| 3 | BCL 2 | En España, hasta juvenil, ese cambio no se permite. | realidad verificable |
 | 4 | BCL 3 | Esta semana, en el partidillo: quien defiende, ataca la siguiente. | qué hacer (lo guardable) |
 | 5 | Cierre | A los doce, nadie es especialista. | contesta al hook |
 | 6 | CTA | Comenta tu categoría y tus días: te preparo la semana en la app de Pro Team. | experimento E4 |
@@ -40,7 +40,7 @@ Desde el 28/11: se quita la línea 7.
 
 ## En pantalla (máx. 7 palabras por golpe)
 - Fotograma 0: **ENTRA A DEFENDER. SALE A ATACAR.** / *Tiene 12 años.* (serif azul)
-- Línea 3: **CAMBIO ATAQUE-DEFENSA: NO PERMITIDO** + nota pequeña «Infantil · Juegos Escolares de Euskadi · normativa 2025».
+- Línea 3: **CAMBIO ATAQUE-DEFENSA: NO PERMITIDO** + nota pequeña «Balonmano base · hasta juvenil».
 - Ficha guardable (1,5–2 s, sobre la imagen): **ESTA SEMANA** · en el partidillo, quien defiende ataca la siguiente · nadie sale al recuperar.
 - CTA: **COMENTA: CATEGORÍA + DÍAS** · rótulo de fecha vigente + **3 MESES GRATIS**.
 
@@ -111,3 +111,10 @@ Señala una costumbre que el entrenador de base no se cuestiona, con una norma r
 **Hook sin sonido (1,5 s):** bien (número o escena en el fotograma 0, se lee en 1,5 s).
 **Duración estimada con el cierre nuevo:** ≈ 29,8 s (85 palabras a 3 por segundo + 1,5 s de cierre).
 **Desde el 28/11:** esta sección no se usa; cierre de `CIERRE_DESDE_28N.md`.
+
+## Corrección de Biel (17/11 19:34 → aplicada 18/11 3:50, Marta y Dani)
+Biel: «en toda la federación española no se puede hacer cambio en ataque-defensa hasta juvenil». La norma deja de contarse como solo de Euskadi.
+- Voz: «En los Juegos Escolares de Euskadi, ese cambio no se permite» → «En España, hasta juvenil, ese cambio no se permite». Resto igual. Toma nueva entera y seguida.
+- Pantalla: documento «BALONMANO BASE · ESPAÑA / HASTA JUVENIL» y nota «Balonmano base · hasta juvenil».
+- Descripción: fuera Euskadi y «en otras federaciones cambia»; la norma con las palabras de Biel.
+- Fuente: no se ha encontrado el artículo exacto del reglamento de la RFEBM (búsqueda 18/11 3:45); no se cita artículo ni año. Se cuenta como lo afirma Biel. La normativa de Euskadi 2025 dice lo mismo para infantil.

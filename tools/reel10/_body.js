@@ -49,16 +49,16 @@ function conse(t) {
   const out = seg(t, b - .12, b); [COURT, FICHA, cA, cB, cC, CHIP].forEach(e => e.style.opacity = Math.min(+(e.style.opacity || 1), 1 - out));
 }
 
-// ── 3 · LA NORMA (papel): Juegos Escolares de Euskadi, infantil · NO PERMITIDO ──
+// ── 3 · LA NORMA (papel): balonmano base en España, hasta juvenil · NO PERMITIDO ──
 const DOC = mk('div', 'position:absolute;left:110px;top:560px;width:860px;height:760px;background:#fbfaf6;border:3px solid #d6d2c6;border-radius:22px;box-shadow:0 30px 60px rgba(0,0,0,.18);display:none',
-  `<div style="position:absolute;left:60px;top:60px;font-family:M;font-weight:700;font-size:30px;letter-spacing:.14em;color:#6d6a60">JUEGOS ESCOLARES DE EUSKADI</div>
-   <div style="position:absolute;left:60px;top:108px;font-family:M;font-weight:700;font-size:30px;letter-spacing:.14em;color:#6d6a60">BALONMANO · INFANTIL · 2025</div>
+  `<div style="position:absolute;left:60px;top:60px;font-family:M;font-weight:700;font-size:30px;letter-spacing:.14em;color:#6d6a60">BALONMANO BASE · ESPAÑA</div>
+   <div style="position:absolute;left:60px;top:108px;font-family:M;font-weight:700;font-size:30px;letter-spacing:.14em;color:#6d6a60">HASTA JUVENIL</div>
    <div style="position:absolute;left:60px;right:60px;top:170px;height:3px;background:#e1ddd1"></div>
    <div style="position:absolute;left:60px;top:220px;font-family:M;font-weight:800;font-size:80px;letter-spacing:-.04em;line-height:1.02;color:#0d0f14">Cambio<br>ataque-defensa</div>
    ${[0, 1, 2].map(r => `<div style="position:absolute;left:60px;width:${[640, 700, 520][r]}px;top:${440 + r * 46}px;height:14px;border-radius:7px;background:#e4e0d4"></div>`).join('')}
    <div id="stamp" style="position:absolute;left:150px;top:560px;padding:14px 34px;border:8px solid #2f6bff;border-radius:16px;color:#2f6bff;font-family:M;font-weight:800;font-size:72px;letter-spacing:.04em;transform:rotate(-6deg);opacity:0">NO PERMITIDO</div>`, $('cards'));
 const nK = tx(`<div class="kick ink" style="color:#0d0f14">${M('LA NORMA')}</div>`, 400, '', 40);
-const nN = tx(`<div class="M5" style="font-size:34px;color:#6d6a60">Normativa de Euskadi. En otras federaciones cambia.</div>`, 1400, '', 34);
+const nN = tx(`<div class="M5" style="font-size:34px;color:#6d6a60">Balonmano base · hasta juvenil</div>`, 1400, '', 34);
 function norma(t) {
   const a = T.eus - .1, b = T.sem - .1, v = t >= a && t < b; [DOC, nK, nN].forEach(e => show(e, v)); if (!v) return;
   show($('paper'), true);
