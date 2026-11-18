@@ -35,15 +35,15 @@ Cuando aparece un segundo partido en la semana, el entrenador de base mantiene s
 
 Sin pausa antes del reto. Silencio corto antes de «y el Barça».
 
-## 6. Pantallas (máx. 7 palabras por golpe)
+## 6. Pantallas (máx. 5 palabras por golpe; recortadas el 18/11, encargo de Biel de menos texto)
 | s | pantalla |
 |---|---|
 | 0–3,5 | Foto a sangre: Artaleku o el Bidasoa de amarillo; alternativa, el Barça de balonmano (Pau) · **9 DE 9** gigante desde el fotograma 0; en el 1,5 entra **2 PARTIDOS ESTA SEMANA** · abajo, pequeño: Bidasoa Irun · Asobal |
 | 3,5–7,0 | tira de la semana en motion graphics (L a D) con dos pelotas: una entre semana (EUROPA) y otra el sábado (BARÇA · 20:00) |
 | 7,0–10,0 | la misma tira con los entrenos de siempre encima; uno choca con la pelota de entre semana · **UN APLAZADO AL MIÉRCOLES** |
-| 10,0–16,5 | ficha guardable: **SEMANA DE 2 PARTIDOS** · QUITA la sesión más dura · DEJA una cosa del rival · MIDE el RPE tras el primero |
+| 10,0–16,5 | ficha guardable: **SEMANA DE 2 PARTIDOS** · QUITA la más dura · DEJA una cosa del rival · MIDE el RPE |
 | 16,5–21,0 | móvil con la captura real «RPE de partido»: zoom a «RPE MEDIO DEL EQUIPO 6.8» y a una fila de jugador; después, plantillas semanales |
-| 21,0–24,0 | vuelve la foto del principio (bucle) · RETO PARA TU STAFF · **¿Qué entreno** *quitamos?* · abajo: Comenta tu deporte, categoría y días · HASTA EL 27 NOV |
+| 21,0–24,0 | vuelve la foto del principio (bucle) · RETO PARA TU STAFF · **¿Qué entreno** *quitamos?* · abajo: **HASTA EL 27 NOV** · pequeño: Comenta tu deporte |
 
 ## 7. Descripción
 Nueve de nueve. Y esta semana, dos partidos: Europa entre semana y el Barça el sábado. 🤾

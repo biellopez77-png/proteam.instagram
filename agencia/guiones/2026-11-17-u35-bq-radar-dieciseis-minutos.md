@@ -35,15 +35,15 @@ Al jugador que vuelve se le dice un tope de palabra y el marcador lo rompe, porq
 
 Sin pausa antes del reto. Silencio corto antes de «no con los dieciocho».
 
-## 6. Pantallas (máx. 7 palabras por golpe)
+## 6. Pantallas (máx. 5 palabras por golpe; recortadas el 18/11, encargo de Biel de menos texto)
 | s | pantalla |
 |---|---|
 | 0–3,5 | Foto a sangre: Maledon con el Real Madrid o el banquillo del Madrid de baloncesto (Pau) · **16:02** gigante desde el fotograma 0; en el 2,0 entra **18 PTS** · abajo, pequeño: Baskonia 84-98 Real Madrid · 15/11 |
 | 3,5–6,0 | «18 PTS» se apaga y «16:02» crece y pasa a azul · **QUÉDATE CON LOS 16** |
-| 6,0–11,0 | marcador en motion graphics que se aprieta (58–57) y un contador de minutos de un jugador que pasa de 10 y sigue subiendo · **¿ANTES O CON EL MARCADOR DELANTE?** |
-| 11,0–17,5 | ficha guardable: **VUELVE DE LESIÓN** · 1 Minutos tope, escritos antes · 2 RPE al acabar · 3 Solo sube si el RPE no se dispara |
+| 6,0–11,0 | marcador en motion graphics que se aprieta (58–57) y un contador de minutos de un jugador que pasa de 10 y sigue subiendo · **¿ANTES O CON EL MARCADOR?** |
+| 11,0–17,5 | ficha guardable: **VUELVE DE LESIÓN** · 1 Tope de minutos, antes · 2 RPE al acabar · 3 Sube si el RPE aguanta |
 | 17,5–21,0 | móvil con la captura real: «RPE de partido», las tres casillas y, recuadrada ≥ 2 s, «Carga = minutos × RPE» |
-| 21,0–24,5 | vuelve la foto del principio (bucle) · RETO PARA TU STAFF · **¿Cuántos minutos** *juega el sábado?* · abajo: Comenta tu deporte, categoría y días · HASTA EL 27 NOV |
+| 21,0–24,5 | vuelve la foto del principio (bucle) · RETO PARA TU STAFF · **¿Cuántos minutos** *juega el sábado?* · abajo: **HASTA EL 27 NOV** · pequeño: Comenta tu deporte |
 
 ## 7. Descripción
 Volvía de lesión. Jugó 16 minutos. Metió 18 puntos. Quédate con los 16. 🏀

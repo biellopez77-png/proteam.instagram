@@ -457,3 +457,8 @@
 - Clara: Story c10s3 «3 dudas antes de apuntarte» sin «quedan 10 días»; ahora dice «cierra el vie 27 nov» (cierto cualquier día). Programada el mar 24 a las 21:30 (solución). Andrés: 76. Repasada el resto de la cola: ninguna otra cuenta atrás descuadra con su fecha.
 - Aviso: el jue 19 no tiene todavía ninguna pieza programada y el vie 20 solo el carrusel de las 19:30. Guiones listos (u51, u52, u53, u64); hoy no queda voz (3.265 de 3.500).
 - Tareas nuevas: Marta, producir u64; Pau, foto de u64; Andrés, repaso de la cola del 23 al 25.
+- Laura 18/11 12:20: Pau desbloqueado de la ficha de Higgsfield: Biel ha decidido que no se usa IA de pago; u67 y u68 se montan con el banco y motion graphics. Aviso de Pau en su tarea: libreta, Excel, WhatsApp, pizarra, manos y persona de espaldas no tienen foto válida.
+- Andrés: crítica de los guiones de contexto: u68 «Cuatro sitios» 78 (se monta primero), u67 «Se cierra el 27» 74 (pasa con tres correcciones al montar), u69 reserva. agencia/criticas/2026-11-18-u67-u69-guion.md
+- Clara: c12 (lun 23) sin la frase que prometía una Story; c10s3 (mar 24) dice «Con la lista (hasta el 27 nov): 3 meses gratis». Misma hora, vista previa nueva.
+- Laura: parche 0020 de Dani aplicado (pantallas a 5 palabras en u34–u42).
+- Revisión de Biel (poner en marcha a quien esté parado): nadie parado. Dani sigue con el texto de u43–u66; Marta espera la voz de las 0:00 (u68, u67, u64, u50); Pau, recursos; Clara, texto mínimo; Samuel, recuento de Stories esta tarde; Andrés acaba de entregar.

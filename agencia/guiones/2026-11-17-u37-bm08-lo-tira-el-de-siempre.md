@@ -35,15 +35,15 @@ El lanzador se hereda («lo tiraba el año pasado») y no se revisa porque los s
 
 Silencio corto antes de «No lo sabes». Sin pausa antes del reto.
 
-## 6. Pantallas (máx. 7 palabras por golpe)
+## 6. Pantallas (máx. 5 palabras por golpe; recortadas el 18/11, encargo de Biel de menos texto)
 | s | pantalla |
 |---|---|
 | 0–3,5 | Foto a sangre: lanzador de primer nivel en la línea de siete metros frente al portero (Asobal, EHF o selección; Pau) · **7 M · MIN 58** gigante desde el fotograma 0 · en el 2,0: **LO TIRA EL DE SIEMPRE** |
 | 3,5–7,0 | contador en motion graphics «7 M ESTA TEMPORADA: ? / ?» con los interrogantes parpadeando · **¿CUÁNTOS HA METIDO?** |
 | 7,0–11,0 | fila de siete dorsales; uno encendido con marcas de lanzamiento, los otros seis a cero · **LOS DEMÁS, NI UNO** |
-| 11,0–18,0 | ficha guardable: **SIETE METROS** · 1 Apunta cada uno: quién, dónde, gol o parada · 2 Segundo lanzador, decidido antes · abajo, en serif azul: *se decide con la cuenta, no con la costumbre* |
+| 11,0–18,0 | ficha guardable: **SIETE METROS** · 1 Quién tira y si entra · 2 Segundo lanzador, decidido antes · abajo, en serif azul: *la cuenta, no la costumbre* |
 | 18,0–22,5 | móvil con captura real 004: se recuadra «7 metros» ≥ 2 s; corte a la captura del informe con «GOLES 7M» recuadrado ≥ 1,5 s |
-| 22,5–26,0 | vuelve la foto del principio (bucle) · RETO PARA TU STAFF · **¿Quién tira** *el siguiente?* · abajo: Comenta tu deporte, categoría y días · HASTA EL 27 NOV |
+| 22,5–26,0 | vuelve la foto del principio (bucle) · RETO PARA TU STAFF · **¿Quién tira** *el siguiente?* · abajo: **HASTA EL 27 NOV** · pequeño: Comenta tu deporte |
 
 ## 7. Descripción
 Siete metros, minuto 58, y lo tira el de siempre. ¿Cuántos ha metido este año? 🤾

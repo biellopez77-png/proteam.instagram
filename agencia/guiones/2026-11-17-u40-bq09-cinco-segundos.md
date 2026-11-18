@@ -34,15 +34,15 @@ El entrenador de base deja los tiros libres para el final del entreno porque es 
 
 Silencio corto antes de «No el momento». Golpe de música en «sin aire».
 
-## 6. Pantallas (máx. 7 palabras por golpe)
+## 6. Pantallas (máx. 5 palabras por golpe; recortadas el 18/11, encargo de Biel de menos texto)
 | s | pantalla |
 |---|---|
 | 0–4,5 | Foto a sangre: jugador de primer nivel en la línea de tiro libre, último minuto (ACB, Euroliga o NBA; Pau) · **5″** gigante desde el fotograma 0, como cuenta atrás 5-4-3 · en el 2: **SIN AIRE** |
 | 4,5–8,5 | motion graphics: **MARTES · 20:50** · diez balones en fila · un vaso de agua · **DESCANSADO** |
 | 8,5–11,0 | **EL GESTO** ✔ · **EL** *momento* ✘ |
-| 11,0–18,5 | ficha guardable: **TIROS LIBRES QUE SIRVEN** · 1 Nunca diez seguidos · 2 Dos, tras un ida y vuelta · 3 Cuentan en el partidillo |
+| 11,0–18,5 | ficha guardable: **TIROS LIBRES QUE SIRVEN** · 1 Nunca diez seguidos · 2 Dos, tras ida y vuelta · 3 Cuentan en el partidillo |
 | 18,5–22,5 | móvil con la captura real del calendario: se recuadra el martes con «18:30» ≥ 1,5 s |
-| 22,5–27,0 | vuelve la foto del principio (bucle) · RETO PARA TU STAFF · **¿Después de correr** *o con agua?* · abajo: Comenta tu deporte, categoría y días · HASTA EL 27 NOV |
+| 22,5–27,0 | vuelve la foto del principio (bucle) · RETO PARA TU STAFF · **¿Cansados** *o con agua?* · abajo: **HASTA EL 27 NOV** · pequeño: Comenta tu deporte |
 
 ## 7. Descripción
 Cinco segundos para tirar el libre (reglas FIBA, art. 43). En partido, sin aire. En tu entreno, descansado y al final. 🏀

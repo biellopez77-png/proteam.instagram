@@ -34,15 +34,15 @@ El entrenador de base no repite sesión por falta de ideas, sino porque la decid
 
 Silencio corto antes de «Te falta haberlo decidido ayer». Sin pausa antes del reto.
 
-## 6. Pantallas (máx. 7 palabras por golpe)
+## 6. Pantallas (máx. 5 palabras por golpe; recortadas el 18/11, encargo de Biel de menos texto)
 | s | pantalla |
 |---|---|
 | 0–4,5 | Foto a sangre: entrenador de primer nivel mirando el reloj en la banda (LaLiga, Premier o Champions; Pau) · **18:10** gigante desde el fotograma 0 · en el 1,5: **ENTRENAS A LAS 18:30** |
 | 4,5–8,0 | tres etiquetas que caen como sellos, iguales a las de la semana pasada: RONDO · POSESIÓN · PARTIDILLO · **LA DE SIEMPRE** |
 | 8,0–11,5 | reloj en motion graphics que retrocede de 18:10 a «AYER · 22:00» · **DECIDIRLO** *ayer* |
-| 11,5–19,0 | ficha guardable: **LA NOCHE ANTES · 3 RENGLONES** · 1 Qué quiero ver el sábado · 2 La tarea que lo entrena · 3 Cómo acaba |
+| 11,5–19,0 | ficha guardable: **LA NOCHE ANTES · 3 RENGLONES** · 1 Qué ver el sábado · 2 La tarea que lo entrena · 3 Cómo acaba |
 | 19,0–23,5 | móvil con la captura real de Inicio: se recuadra «Siguiente: Preparar entrenamiento · 18:30» ≥ 2 s y después la fila «Salida de balón 3+1 · 18:30» |
-| 23,5–28,0 | vuelve la foto del principio (bucle) · RETO PARA TU STAFF · **¿Qué toca** *mañana?* · abajo: Comenta tu deporte, categoría y días · HASTA EL 27 NOV |
+| 23,5–28,0 | vuelve la foto del principio (bucle) · RETO PARA TU STAFF · **¿Qué toca** *mañana?* · abajo: **HASTA EL 27 NOV** · pequeño: Comenta tu deporte |
 
 ## 7. Descripción
 Son las 18:10, entrenas a las 18:30 y la sesión la estás pensando en el coche. ⚽

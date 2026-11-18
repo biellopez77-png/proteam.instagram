@@ -57,7 +57,6 @@
  "feed/c12-5.jpg": "/_blob/150ddcbfdbb7d561bff8527b5b607cac",
  "feed/c12-6.jpg": "/_blob/21bc12cbeed575939f2fe488f8ca33b1",
  "feed/c12-7.jpg": "/_blob/afa611efc50fcd1e9b5523866de77f02",
- "feed/c12-8.jpg": "/_blob/6ef39198fb86edcbf783bda0ac267904",
  "stories/st-1117-un-minuto-una-consigna.jpg": "/_blob/2129173cf09b39576f2dadb913f29ac5",
  "stories/st-1117-soy-el-lateral.jpg": "/_blob/3026e0fd9ed543e0acba41dcc0ef5cb1",
  "reels/u09-los-ultimos-doce.mp4": "/_blob/b15b4852c147ca689294eaa9468218df",
@@ -117,7 +116,6 @@
  "stories/st-1125-encuesta-tiempo.jpg": "/_blob/89d11c7807ec5da5c1fde66345bf4320",
  "stories/st-1125-encuesta-carga.jpg": "/_blob/6d3747b06e66bccc5de4543c035a20cb",
  "stories/st-1125-encuesta-planificar.jpg": "/_blob/8e43b456d78ae1b04f22f961da48b396",
- "stories/st-1124-3-dudas.jpg": "/_blob/28db4e1a00b7fdda0aedcfd230547f4a",
  "feed/c17-1.jpg": "/_blob/28047ffd7b0a6cb0542742a99009feba",
  "feed/c17-2.jpg": "/_blob/3367d1a73d4fe3ebc83c4eb7b6ea81b1",
  "feed/c17-3.jpg": "/_blob/5d9ec7dff27f81c699c46af7e17bf20b",
@@ -148,5 +146,7 @@
  "feed/c17b-8.jpg": "/_blob/ed83b388728196dccadb8d0290501f46",
  "stories/st-1118-lo-que-no-se-ve-v2.jpg": "/_blob/645b650476f255a09bb0a9b0f6f7ff12",
  "stories/st-1118-entra-antes-v2.jpg": "/_blob/00b8b6930295c318dd017db415011452",
- "stories/st-1119-hecha-en-el-banquillo-v2.jpg": "/_blob/437d68442003f84bef3db3ff35d7c3e6"
+ "stories/st-1119-hecha-en-el-banquillo-v2.jpg": "/_blob/437d68442003f84bef3db3ff35d7c3e6",
+ "stories/st-1124-3-dudas.jpg": "/_blob/1bf6e256cdb4827a3fb406db03795b5f",
+ "feed/c12-8.jpg": "/_blob/58492708c30955fbe36aaf77bc96e812"
 }

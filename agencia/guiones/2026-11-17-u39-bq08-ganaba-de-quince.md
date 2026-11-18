@@ -35,15 +35,15 @@ El entrenador de base entrena remontar (ejercicios de «vas perdiendo») mucho m
 
 Silencio corto antes de «Ir ganando, casi nunca». Golpe de música en «quince».
 
-## 6. Pantallas (máx. 7 palabras por golpe)
+## 6. Pantallas (máx. 5 palabras por golpe; recortadas el 18/11, encargo de Biel de menos texto)
 | s | pantalla |
 |---|---|
 | 0–4,5 | Foto a sangre de Paris o Fenerbahce en Euroliga (Pau; jugadores reconocibles) · **+15** gigante desde el fotograma 0 · en el 1,8: **PARIS · FENERBAHCE** · en el 3,2 el +15 se vacía hasta **111–109 · PRÓRROGA** |
 | 4,5–9,0 | marcador en motion graphics: **3.er CUARTO · +12** que baja a +8, +4 al ritmo de la voz |
 | 9,0–11,5 | **REMONTAR:** ✔ · **IR GANANDO:** *casi nunca* |
-| 11,5–19,0 | ficha guardable: **MARTES · ÚLTIMO BLOQUE** · 4 minutos · empieza **+8** · unos cierran, otros remontan · cambian |
+| 11,5–19,0 | ficha guardable: **MARTES · ÚLTIMO BLOQUE** · 4 minutos · empieza **+8** · unos cierran, otros remontan |
 | 19,0–23,0 | móvil con la captura real de la semana: se recuadra «4 Pista» ≥ 1,5 s y el botón «+» |
-| 23,0–28,0 | vuelve la foto del principio (bucle) · RETO PARA TU STAFF · **¿Cuándo entrenasteis** *ir ganando?* · abajo: Comenta tu deporte, categoría y días · HASTA EL 27 NOV |
+| 23,0–28,0 | vuelve la foto del principio (bucle) · RETO PARA TU STAFF · **¿Cuándo entrenasteis** *ir ganando?* · abajo: **HASTA EL 27 NOV** · pequeño: Comenta tu deporte |
 
 ## 7. Descripción
 Paris ganaba de 15 a Fenerbahce y acabó necesitando una canasta sobre la bocina en la prórroga (Euroliga, 11/11). 🏀

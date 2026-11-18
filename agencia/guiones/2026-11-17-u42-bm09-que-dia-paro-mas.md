@@ -37,15 +37,15 @@ En base se cuenta lo que se ve en el marcador (goles encajados) y no lo que no s
 
 Silencio de 0,4 s antes de «El sábado». Sin pausa antes del reto.
 
-## 6. Pantallas (máx. 7 palabras por golpe)
+## 6. Pantallas (máx. 5 palabras por golpe; recortadas el 18/11, encargo de Biel de menos texto)
 | s | pantalla |
 |---|---|
 | 0–3,8 | Foto a sangre: portero de primer nivel en estirada (Asobal, EHF o selección; Pau) · desde el fotograma 0, a dos columnas: **SÁB 28 · DOM 20** · en el 2,5: **¿QUÉ DÍA PARÓ MÁS?** |
 | 3,8–11,0 | las dos columnas se rellenan en motion graphics (no es la app): **SÁB 47 tiros · 19 paradas → 40 %** / **DOM 30 tiros · 10 paradas → 33 %**; el 40 % se enciende en azul |
 | 11,0–14,0 | foto del portero, más oscura · **LE RIÑES EL MEJOR DÍA** |
-| 14,0–20,5 | ficha guardable: **PORTERO, EL LUNES** · 1 Cada tiro a puerta, apuntado · 2 Paradas ÷ tiros · 3 Al portero, el porcentaje · abajo, serif azul: *los goles dicen cuánto le tiraron* |
+| 14,0–20,5 | ficha guardable: **PORTERO, EL LUNES** · 1 Cada tiro, apuntado · 2 Paradas ÷ tiros · 3 Dile el porcentaje · abajo, serif azul: *porcentaje, no goles* |
 | 20,5–26,5 | móvil: captura real REGISTRO_ACCION_005 («¿Gol o parada?») 1 s → captura real RESULTADOS_001 con «% portero» recuadrado ≥ 2,5 s |
-| 26,5–30,0 | vuelve la foto del principio (bucle) · RETO PARA TU STAFF · **¿Qué día paró más** *el vuestro?* |
+| 26,5–30,0 | vuelve la foto del principio (bucle) · RETO PARA TU STAFF · **¿Y el vuestro?** |
 | 30,0–33,0 | **cierre de campaña con la animación del contador de la lista de espera** (la de u28 v3 / u09: contador que corre, correo, toque, «Estás dentro») → «3 meses gratis · HASTA EL 27 NOV» |
 
 ## 7. Descripción
