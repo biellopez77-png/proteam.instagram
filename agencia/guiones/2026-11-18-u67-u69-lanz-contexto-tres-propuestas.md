@@ -18,7 +18,7 @@
   - Nunca el nombre de Biel ni su cara; habla ProTeam («nosotros»).
   - Nunca el precio. No se cuenta el plan.
   - Voz de Mateo en una sola toma.
-  - Nada inventado. **[DATO]** es lo que Biel tiene que confirmar.
+  - Nada inventado. Dato confirmado por Biel: llevamos 6 meses construyendo ProTeam.
 
 ## Estilo común (lo que copiamos de la referencia)
 - **Planos de 0,8 a 1,5 s.** Detalles reales y objetos del entrenador: libreta, pizarra con imanes, Excel en el portátil, WhatsApp, cronómetro, silbato, conos, bolsa de balones, llaves del coche, banquillo vacío.
@@ -37,7 +37,7 @@
 > El 27 de noviembre se cierra. Y después, ya no vuelve.
 > Pero antes de eso, deja que te contemos quiénes somos.
 > Somos entrenadores. Y teníamos el mismo problema que tú: la libreta en el coche, el Excel en el ordenador, la convocatoria en WhatsApp… y el equipo, en la cabeza.
-> Buscábamos cómo resolverlo. Hasta que, después de **[DATO: N temporadas]** en el banquillo, decidimos crearlo nosotros.
+> Buscábamos cómo resolverlo. Hasta que decidimos crearlo nosotros. Llevamos seis meses construyéndolo, para entrenadores como tú.
 > Se llama ProTeam. Planificas la semana, convocas y sigues a cada jugador. Todo en un sitio.
 > Y no la hicimos solo para nosotros. La hicimos para ti.
 > Hasta el 27, quien entra en la lista empieza con tres meses gratis. Después, ya no. Enlace en la bio.
@@ -50,7 +50,7 @@
 | 2,5–5 | Manos que dejan las llaves y una libreta en el banquillo | *quiénes somos* |
 | 5–7 | Banquillo vacío desde atrás, con una persona de espaldas | **ENTRENADORES** |
 | 7–12 | Libreta → Excel → WhatsApp → una cabeza de espaldas, un plano por palabra | libreta · Excel · WhatsApp · **en la cabeza** |
-| 12–17 | Pizarra borrada a mano; un portátil que se abre | *buscábamos* → **DECIDIMOS CREARLO** |
+| 12–17 | Pizarra borrada a mano; un portátil que se abre | *buscábamos* → **DECIDIMOS CREARLO** · *6 meses* |
 | 17–23 | App real: Semana → Convocatoria → Jugador | **PROTEAM** · semana · convocatoria · jugador |
 | 23–27 | Otro banquillo y otro entrenador de espaldas | *para ti* |
 | 27–36 | Vuelve el calendario, tachado hasta el 27 | **LISTA HASTA EL 27** · *3 meses gratis* · «Enlace en la bio» |
@@ -68,7 +68,7 @@
 > Y cada semana era igual: apuntar en un sitio, buscar en otro, avisar en otro… y que siempre se perdiera algo.
 > Buscábamos cómo arreglarlo. Para nosotros, y para todos los entrenadores que estaban igual.
 > Hasta que decidimos crearlo. ProTeam: una app para entrenadores. La semana, la convocatoria y cada jugador, en el mismo sitio.
-> Llevamos **[DATO: tiempo]** construyéndola. Y el 28 abre.
+> Llevamos seis meses construyéndola. Y el 28 abre.
 > Pero la lista se cierra el 27. Quien está dentro, empieza con tres meses gratis. Enlace en la bio.
 
 **Pantallas**
@@ -81,7 +81,7 @@
 | 9–14 | Montaje rápido: apuntar, buscar, avisar, una hoja que se cae | apuntar · buscar · avisar · **SE PIERDE** |
 | 14–18 | Las manos recogen los objetos | *para todos* |
 | 18–24 | Los cuatro objetos «entran» en el móvil; corte a la app real | **PROTEAM** · *el mismo sitio* |
-| 24–28 | Taquilla o banquillo vacío y luz que se enciende | **[TIEMPO]** construyéndola · *el 28 abre* |
+| 24–28 | Taquilla o banquillo vacío y luz que se enciende | **6 MESES** construyéndola · *el 28 abre* |
 | 28–38 | Vuelven los cuatro objetos en el suelo (bucle) | **SE CIERRA EL 27** · *3 meses gratis* · «Enlace en la bio» |
 
 ---
@@ -94,8 +94,8 @@
 > En ocho días se cierra. Y va por los entrenadores que nadie ve.
 > Los que preparan el entreno a las once de la noche. Los que cuadran la convocatoria en el descanso del trabajo. Los que se llevan el partido a casa.
 > Lo sabemos porque somos de esos. Somos entrenadores.
-> Llevamos **[DATO: N temporadas]** así. Y un día dijimos: esto tiene que ser más fácil. Para nosotros, y para todos los demás.
-> Así nació ProTeam: una app para planificar, convocar y seguir a tu equipo, en un solo sitio.
+> Y un día dijimos: esto tiene que ser más fácil. Para nosotros, y para todos los demás.
+> Llevamos seis meses construyéndolo. Así nació ProTeam: una app para planificar, convocar y seguir a tu equipo, en un solo sitio.
 > Abre el 28. La lista se cierra el 27, y quien entra empieza con tres meses gratis.
 > Si eres de esos entrenadores, enlace en la bio.
 
@@ -110,7 +110,7 @@
 | 5–7 | Móvil con WhatsApp abierto en una taquilla o una mesa de trabajo | *en el descanso del trabajo* |
 | 7–10 | Coche aparcado de noche con la bolsa de balones en el asiento | *el partido, a casa* |
 | 10–14 | Persona de espaldas en el banquillo, vacío | **SOMOS DE ESOS** |
-| 14–20 | Libreta que se cierra fuerte; un portátil que se abre | **[N] TEMPORADAS** · *más fácil* |
+| 14–20 | Libreta que se cierra fuerte; un portátil que se abre | *más fácil* · **6 MESES** |
 | 20–26 | App real: Semana → Convocatoria → Jugador | **PROTEAM** |
 | 26–36 | Vuelve la cocina de noche, ahora con el móvil y la semana ya hecha | **CIERRA EL 27** · *3 meses gratis* · «Enlace en la bio» |
 
@@ -129,6 +129,6 @@ Abre el 28 de noviembre. Lista de espera hasta el 27: entras con 3 meses gratis.
 Si solo sale una, **B**: es la que más se parece al ritmo de la referencia y la que mejor se reconoce.
 
 ## Qué hay que confirmar antes de producir
-1. **[DATO]** cuánto tiempo lleváis: temporadas entrenando, y tiempo construyendo la app.
+1. ~~Cuánto tiempo lleváis~~ → **confirmado por Biel (18/11): 6 meses construyendo la app para entrenadores.**
 2. ¿Podemos grabar planos propios (manos, objetos, alguien de espaldas en un banquillo), o se hace con banco de imágenes e IA? El ritmo de la referencia pide planos reales.
 3. u51 y u52 (contexto, ya escritos) se quedan de reserva: estos tres los sustituyen.
