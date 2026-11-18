@@ -1,4 +1,4 @@
-"""Render tools/carrusel13/index.html -> feed/c13-N.jpg (1080x1350, JPEG 90)."""
+"""Render tools/carrusel13/index.html -> feed/c13b-N.jpg (1080x1350, JPEG 90)."""
 import os, io
 from playwright.sync_api import sync_playwright
 from PIL import Image
@@ -10,5 +10,5 @@ with sync_playwright() as p:
     n = pg.locator('.s').count()
     for i in range(n):
         png = pg.locator('.s').nth(i).screenshot()
-        Image.open(io.BytesIO(png)).convert('RGB').save(os.path.join(R, 'feed', f'c13-{i+1}.jpg'), quality=90)
+        Image.open(io.BytesIO(png)).convert('RGB').save(os.path.join(R, 'feed', f'c13b-{i+1}.jpg'), quality=90)
     b.close(); print(n, 'diapositivas')
