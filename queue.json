@@ -3090,17 +3090,17 @@
   "id": "c14s",
   "kind": "story",
   "files": [
-   "stories/st-1118-diez-dias-v2.jpg"
+   "stories/st-1118-diez-dias-v3.jpg"
   ],
   "cover": null,
   "status": "pending",
   "campana": "carrusel",
   "when": "2026-11-18T10:30:00+01:00",
-  "title": "10 días. El sábado 28 abre ProTeam. ¿Qué no quieres volver a hacer un domingo por la noche?",
-  "score": "77",
+  "title": "10 días. ¿Qué no quieres volver a hacer un domingo por la noche?",
+  "score": "79",
   "fase": "impacto",
   "fase_dia": "Mié 18/11",
-  "note": "Story de impacto de Clara (04): contador «10 días», día 1 de 10, pregunta con respuesta en comentarios. Solo vale el mié 18. Foto: Šarūnas Jasikevičius (Zafer, CC BY 4.0, Wikimedia Commons). 18/11 8:05 · Laura y Clara: fuera «Día 1 de 10», los diez puntos y «Hoy no te contamos más» (regla del plan interno); repasada por Andrés (77, sin cambios de nota)."
+  "note": "Story de impacto de Clara (04): contador «10 días», día 1 de 10, pregunta con respuesta en comentarios. Solo vale el mié 18. Foto: Šarūnas Jasikevičius (Zafer, CC BY 4.0, Wikimedia Commons). 18/11 8:05 · Laura y Clara: fuera «Día 1 de 10», los diez puntos y «Hoy no te contamos más» (regla del plan interno); repasada por Andrés (77, sin cambios de nota). 18/11 10:00 · Clara: rehecha con mucho menos texto (encargo de Biel: una idea, una pregunta, foto más grande); Andrés 79 con el criterio de texto mínimo (agencia/criticas/2026-11-18-texto-minimo-stories-carruseles.md)."
  },
  {
   "id": "c15",
@@ -3131,33 +3131,33 @@
   "id": "c15s",
   "kind": "story",
   "files": [
-   "stories/st-1118-que-categoria-v2.jpg"
+   "stories/st-1118-que-categoria-v3.jpg"
   ],
-  "title": "¿Qué categoría entrenas? A–D en comentarios (fútbol, Guardiola)",
-  "score": "77",
+  "title": "¿Qué categoría entrenas? A–D en el último post (fútbol, Guardiola)",
+  "score": "79",
   "status": "pending",
   "campana": "carrusel",
   "when": "2026-11-18T14:30:00+01:00",
   "cover": null,
   "fase": "impacto",
   "fase_dia": "Mié 18/11",
-  "note": "Story de impacto de Clara (04): encuesta A–D por comentarios; con la respuesta se eligen los ejemplos de los próximos días y se cuenta el resultado real el jue 19–vie 20. Foto: Pep Guardiola (Tsutomu Takasu, CC BY 2.0, Wikimedia Commons). Solo vale el mié 18. 18/11 8:05 · Laura y Clara: «Día 1 de 10» cambiado por «Quedan 10 días» (regla del plan interno); repasada por Andrés (77)."
+  "note": "Story de impacto de Clara (04): encuesta A–D por comentarios; con la respuesta se eligen los ejemplos de los próximos días y se cuenta el resultado real el jue 19–vie 20. Foto: Pep Guardiola (Tsutomu Takasu, CC BY 2.0, Wikimedia Commons). Solo vale el mié 18. 18/11 8:05 · Laura y Clara: «Día 1 de 10» cambiado por «Quedan 10 días» (regla del plan interno); repasada por Andrés (77). 18/11 10:00 · Clara: rehecha con mucho menos texto (encargo de Biel: una idea, una pregunta, foto más grande); Andrés 79 con el criterio de texto mínimo (agencia/criticas/2026-11-18-texto-minimo-stories-carruseles.md)."
  },
  {
   "id": "c15s2",
   "kind": "story",
   "files": [
-   "stories/st-1118-mandasela.jpg"
+   "stories/st-1118-mandasela-v2.jpg"
   ],
-  "title": "¿A quién de tu club le tiene que llegar esto? Mándale esta Story (balonmano, Karabatić)",
-  "score": "76",
+  "title": "¿Quién de tu club lleva siempre la libreta? Mándale esta Story (balonmano, Karabatić)",
+  "score": "78",
   "status": "pending",
   "campana": "carrusel",
   "when": "2026-11-18T16:30:00+01:00",
   "cover": null,
   "fase": "impacto",
   "fase_dia": "Mié 18/11",
-  "note": "Story de impacto de Clara (04): pide reenviarla a otro entrenador del club; quedan 10 días; lista en una línea. Foto: Nikola Karabatić (dronepicr, CC BY 2.0, Wikimedia Commons). Solo vale el mié 18."
+  "note": "Story de impacto de Clara (04): pide reenviarla a otro entrenador del club; quedan 10 días; lista en una línea. Foto: Nikola Karabatić (dronepicr, CC BY 2.0, Wikimedia Commons). Solo vale el mié 18. 18/11 10:00 · Clara: rehecha con mucho menos texto (encargo de Biel: una idea, una pregunta, foto más grande); Andrés 78 con el criterio de texto mínimo (agencia/criticas/2026-11-18-texto-minimo-stories-carruseles.md)."
  },
  {
   "id": "c15s3",
@@ -3314,41 +3314,41 @@
   "id": "c17s",
   "kind": "story",
   "files": [
-   "stories/st-1118-lo-que-no-se-ve.jpg"
+   "stories/st-1118-lo-que-no-se-ve-v2.jpg"
   ],
-  "title": "El sábado se ve el partido. Lo demás, no. (fútbol, Simeone; aviso de la hoja de las 19:30)",
-  "score": "77",
+  "title": "El sábado se ve el partido. Lo demás, no. ¿Cuántas horas te lleva? (fútbol, Simeone)",
+  "score": "78",
   "status": "pending",
   "campana": "carrusel",
   "when": "2026-11-18T18:30:00+01:00",
   "cover": null,
   "fase": "impacto",
   "fase_dia": "Mié 18/11",
-  "note": "Story de Clara (04): comparación, tres tareas que no se ven + aviso con contenido del carrusel c17 (19:30). Foto: Diego Simeone (Werner100359, CC BY-SA 4.0, Wikimedia Commons). Solo vale el mié 18."
+  "note": "Story de Clara (04): comparación, tres tareas que no se ven + aviso con contenido del carrusel c17 (19:30). Foto: Diego Simeone (Werner100359, CC BY-SA 4.0, Wikimedia Commons). Solo vale el mié 18. 18/11 10:00 · Clara: rehecha con mucho menos texto (encargo de Biel: una idea, una pregunta, foto más grande); Andrés 78 con el criterio de texto mínimo (agencia/criticas/2026-11-18-texto-minimo-stories-carruseles.md)."
  },
  {
   "id": "c17s2",
   "kind": "story",
   "files": [
-   "stories/st-1118-entra-antes.jpg"
+   "stories/st-1118-entra-antes-v2.jpg"
   ],
-  "title": "Quedan 10 días. Entra antes. (balonmano; 3 pasos para entrar en la lista)",
-  "score": "78",
+  "title": "¿Ya estás dentro? Tres pasos para la lista (balonmano)",
+  "score": "79",
   "status": "pending",
   "campana": "carrusel",
   "when": "2026-11-18T21:30:00+01:00",
   "cover": null,
   "fase": "impacto",
   "fase_dia": "Mié 18/11",
-  "note": "Story de Clara (04): recordatorio de la lista en tres pasos (bio → lista hasta el 27 nov 23:59 → el 28 con 3 meses gratis, 1 a 1 y semana montada). Si se puede, sticker de enlace a la lista al publicar. Foto: portero del THW Kiel (Wenflou, CC0, Wikimedia Commons). Solo vale el mié 18 («quedan 10 días»)."
+  "note": "Story de Clara (04): recordatorio de la lista en tres pasos (bio → lista hasta el 27 nov 23:59 → el 28 con 3 meses gratis, 1 a 1 y semana montada). Si se puede, sticker de enlace a la lista al publicar. Foto: portero del THW Kiel (Wenflou, CC0, Wikimedia Commons). Solo vale el mié 18 («quedan 10 días»). 18/11 10:00 · Clara: rehecha con mucho menos texto (encargo de Biel: una idea, una pregunta, foto más grande); Andrés 79 con el criterio de texto mínimo (agencia/criticas/2026-11-18-texto-minimo-stories-carruseles.md)."
  },
  {
   "id": "c17s3",
   "kind": "story",
   "files": [
-   "stories/st-1119-hecha-en-el-banquillo.jpg"
+   "stories/st-1119-hecha-en-el-banquillo-v2.jpg"
   ],
-  "title": "Hecha en el banquillo. No en una oficina. (por qué existe ProTeam; ¿con qué planificas?)",
+  "title": "Hecha en el banquillo. No en una oficina. ¿Con qué planificas hoy?",
   "score": "78",
   "status": "pending",
   "campana": "carrusel",
@@ -3356,6 +3356,6 @@
   "cover": null,
   "fase": "contexto",
   "fase_dia": "Jue 19/11",
-  "note": "Story de contexto de Clara (04): problema → buscábamos → así nació la app; sin personas ni «fundador». Pregunta por comentarios (Excel, libreta, WhatsApp u otra) para que Samuel la cuente. Foto: campos de la cantera del Barça (Enric, CC BY-SA 4.0, Wikimedia Commons)."
+  "note": "Story de contexto de Clara (04): problema → buscábamos → así nació la app; sin personas ni «fundador». Pregunta por comentarios (Excel, libreta, WhatsApp u otra) para que Samuel la cuente. Foto: campos de la cantera del Barça (Enric, CC BY-SA 4.0, Wikimedia Commons). 18/11 10:00 · Clara: rehecha con mucho menos texto (encargo de Biel: una idea, una pregunta, foto más grande); Andrés 78 con el criterio de texto mínimo (agencia/criticas/2026-11-18-texto-minimo-stories-carruseles.md)."
  }
 ]
