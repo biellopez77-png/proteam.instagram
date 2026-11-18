@@ -3213,5 +3213,24 @@
   "fase_dia": "Mié 18/11",
   "first_comment": "El sábado 28 abre la app de ProTeam. ¿Quién te escribe a ti los domingos a las once?",
   "note": "FASE: IMPACTO (Mié 18/11). u50 · turno de Reels 18/11 0:37 (Dani, Andrés, Marta, Pau): segundo Reel de impacto. Concepto: la pantalla de bloqueo del domingo (Pablo Laso de fondo, reloj 23:00, notificación genérica del segundo con vibración, widget de fecha que salta a SÁB 28 NOV con el golpe de música, 10 días, la notificación vuelve para el reto, lista de espera con contador real 9 d 6 h). Voz Mateo de la biblioteca en UNA toma entera a velocidad natural (391 caracteres), música nueva con golpe en «veintiocho». 25,5 s. Sin «día N de 10» ni «hoy, solo la fecha». Solo vale el 18: no se reprograma a otro día."
+ },
+ {
+  "id": "u59",
+  "when": "2026-11-18T11:30:00+01:00",
+  "kind": "reel",
+  "files": [
+   "reels/u59-diez-dias.mp4"
+  ],
+  "cover": "covers/u59-diez-dias.jpg",
+  "caption": "Diez días. Para un equipo de balonmano que entrena tres días: cinco entrenos y dos partidos. 🤾\n¿Cuántos de esos cinco tienes ya escritos?\nEl sábado 28 de noviembre abre la app de ProTeam, para entrenadores de fútbol, baloncesto y balonmano.\nEnvíaselo a tu segundo entrenador y comenta vuestro número.\nApúntate a la lista de espera hasta el 27 de noviembre y el 28 empiezas con 3 meses gratis. Enlace en la bio.\n\nFoto: Gronholm.87, CC0, vía Wikimedia Commons.\n\n#balonmanobase #balonmano #entrenadores #entrenadordebalonmano #proteam",
+  "title": "Diez días. Cinco entrenos y dos partidos.",
+  "score": "guion 78 · montaje 80",
+  "status": "pending",
+  "campana": "unrespiro",
+  "share_to_feed": false,
+  "fase": "impacto",
+  "fase_dia": "Mié 18/11",
+  "first_comment": "Comenta tu deporte, categoría y días y te preparo la semana. ¿Cuántos de los cinco tenéis ya escritos?",
+  "note": "FASE: IMPACTO (Mié 18/11). u59 · turno de Reels 18/11 6:37 (Dani, Andrés, Marta, Pau): tercer Reel de impacto, el hueco de las 11:30 que dejó libre el turno de las 3:37. Balonmano y número (u49 y u50 son de los tres deportes y de escena). Concepto: la tira de los diez días (Jordi Ribera a sangre, 11 casillas del 18 al 28; se encienden 5 entrenos y 2 partidos, garabatos «de memoria» e interrogaciones «de cabeza»; la casilla del 28 crece a pantalla completa con el golpe de música; reto _/5; lista de espera con contador real 9 d 12 h). Voz Mateo de la biblioteca en UNA toma entera (453 caracteres), música nueva con golpe en «veintiocho». 29 s. Solo vale el 18: no se reprograma a otro día."
  }
 ]
