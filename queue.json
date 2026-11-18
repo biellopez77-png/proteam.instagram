@@ -3328,13 +3328,15 @@
   ],
   "title": "El sábado se ve el partido. Lo demás, no. ¿Cuántas horas te lleva? (fútbol, Simeone)",
   "score": "78",
-  "status": "pending",
+  "status": "published",
   "campana": "carrusel",
   "when": "2026-11-18T18:30:00+01:00",
   "cover": null,
   "fase": "impacto",
   "fase_dia": "Mié 18/11",
-  "note": "Story de Clara (04): comparación, tres tareas que no se ven + aviso con contenido del carrusel c17 (19:30). Foto: Diego Simeone (Werner100359, CC BY-SA 4.0, Wikimedia Commons). Solo vale el mié 18. 18/11 10:00 · Clara: rehecha con mucho menos texto (encargo de Biel: una idea, una pregunta, foto más grande); Andrés 78 con el criterio de texto mínimo (agencia/criticas/2026-11-18-texto-minimo-stories-carruseles.md)."
+  "note": "Story de Clara (04): comparación, tres tareas que no se ven + aviso con contenido del carrusel c17 (19:30). Foto: Diego Simeone (Werner100359, CC BY-SA 4.0, Wikimedia Commons). Solo vale el mié 18. 18/11 10:00 · Clara: rehecha con mucho menos texto (encargo de Biel: una idea, una pregunta, foto más grande); Andrés 78 con el criterio de texto mínimo (agencia/criticas/2026-11-18-texto-minimo-stories-carruseles.md).",
+  "media_id": "18149912188576190",
+  "published_at": "2026-11-18T18:26:10+0100"
  },
  {
   "id": "c17s2",
