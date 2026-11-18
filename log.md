@@ -444,3 +444,13 @@
 - Marta: concepto «la tira de los diez días» (11 casillas del 18 al 28, 5 entrenos y 2 partidos, garabatos «de memoria», casilla del 28 que crece a pantalla completa con el golpe de música, reto _/5, cierre con contador real 9 d 12 h). Voz de Mateo de la biblioteca (la original sigue «disabled») en una toma, 453 caracteres; música nueva. 29 s. Andrés: montaje 80, voz comprobada.
 - Voz gastada hoy: 3.265 de 3.500 (este turno 933 con la música). Sin segundo Reel: no cabe otra voz con música. Huecos de hoy 13:30, 20:30 y 22:30 vacíos.
 - Reserva de guiones criticados sin producir: más de 30.
+
+## 18/11 · 8:49 · Encargos (Laura, con Samuel, Dani, Andrés y Clara)
+- Sin correcciones ni consignas nuevas de Biel. Nadie bloqueado. La única ficha pendiente (encuestas del mié 25, se suben a mano) sigue vigente: el sticker de encuesta no se puede poner desde la publicación automática.
+- Parche 0017 aplicado con git am y subido: guiones u62 y u63 (urgencia del vie 27), sus críticas, historial, insights y hooks.
+- Samuel: métrica de diciembre definida (reports/2026-11-18-metrica-primera-semana.md). «Primera semana creada» = el equipo tiene por primera vez una semana con al menos una sesión de entreno dentro. Hoy: lista de espera 0 de 15. El dato no sale todavía del apartado «Análisis» del admin (no tiene esa tarjeta): se lee cada noche con una consulta de solo lectura.
+- Las dos cifras de la lista: la buena es 15. El 9 de la revisión técnica es la misma cuenta leída el 17/11 entre las 20 h y las 22:00; entre las 22:00 y las 23:15 entraron 6 equipos más. Los 15 son de balonmano y del martes 17.
+- Dani y Andrés: guion u64 «Cinco jugadores fuera. Vuelven en cuatro días distintos. El último entrena una vez.» (fútbol, problema, 79). Para el vie 20 por la tarde; caduca el sáb 21 a las 14:00. Decidido: la fuente (web del Deportivo) no se pudo reabrir en este turno; vale la lectura del Radar de las 6:58 y Marta la reabre antes de montar.
+- Clara: Story c10s3 «3 dudas antes de apuntarte» sin «quedan 10 días»; ahora dice «cierra el vie 27 nov» (cierto cualquier día). Programada el mar 24 a las 21:30 (solución). Andrés: 76. Repasada el resto de la cola: ninguna otra cuenta atrás descuadra con su fecha.
+- Aviso: el jue 19 no tiene todavía ninguna pieza programada y el vie 20 solo el carrusel de las 19:30. Guiones listos (u51, u52, u53, u64); hoy no queda voz (3.265 de 3.500).
+- Tareas nuevas: Marta, producir u64; Pau, foto de u64; Andrés, repaso de la cola del 23 al 25.

@@ -1273,3 +1273,5 @@ Fuente de las normas: Normativa de Balonmano 2025, Juegos Deportivos Escolares d
 - **H1120** Entrar mañana te da un mes. Y diciembre no tiene un mes de entrenos. [general · contraintuitiva · lanzamiento, solo vie 27] (11/15)
 - **H1121** El mejor momento para planificar la semana es el viernes, no el domingo. [general · contraintuitiva · planificación] (12/15)
 - **H1122** El viernes lo sabes. El domingo, ya no. [general · comparativa · planificación] (11/15)
+- **H1123** Escribes la sesión para dieciocho. ¿Qué día vienen los dieciocho? [fútbol · contraintuitiva · planificación] (12/15)
+- **H1124** El Deportivo sabe qué día vuelve cada jugador. ¿Y tú? [fútbol · comparativa · actualidad, caduca 21/11] (11/15)
