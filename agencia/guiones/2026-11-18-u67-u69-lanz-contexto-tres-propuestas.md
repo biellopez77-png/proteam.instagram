@@ -130,5 +130,5 @@ Si solo sale una, **B**: es la que más se parece al ritmo de la referencia y la
 
 ## Qué hay que confirmar antes de producir
 1. ~~Cuánto tiempo lleváis~~ → **confirmado por Biel (18/11): 6 meses construyendo la app para entrenadores.**
-2. ¿Podemos grabar planos propios (manos, objetos, alguien de espaldas en un banquillo), o se hace con banco de imágenes e IA? El ritmo de la referencia pide planos reales.
+2. ~~Planos propios~~ → **Biel (18/11): no.** Todo sale de banco de imágenes con licencia o de IA (Higgsfield); la persona sin cara también se genera.
 3. u51 y u52 (contexto, ya escritos) se quedan de reserva: estos tres los sustituyen.
