@@ -1269,3 +1269,7 @@ Fuente de las normas: Normativa de Balonmano 2025, Juegos Deportivos Escolares d
 - **H1116** Viernes, convocatoria. La rodilla no está en el grupo. [fútbol · situación real · convocatoria] (12/15)
 - **H1117** Lo más importante de tu semana te lo dijeron en el aparcamiento. [general · provocadora · jugadores] (11/15)
 - **H1118** ¿Quién de tu plantilla tiene hoy una molestia? ¿Desde cuándo? [fútbol · pregunta · jugadores] (11/15)
+- **H1119** Un mes de prueba son tres semanas de entrenos. [general · comparativa · lanzamiento, solo vie 27] (12/15)
+- **H1120** Entrar mañana te da un mes. Y diciembre no tiene un mes de entrenos. [general · contraintuitiva · lanzamiento, solo vie 27] (11/15)
+- **H1121** El mejor momento para planificar la semana es el viernes, no el domingo. [general · contraintuitiva · planificación] (12/15)
+- **H1122** El viernes lo sabes. El domingo, ya no. [general · comparativa · planificación] (11/15)
