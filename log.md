@@ -436,3 +436,11 @@
 ## 18/11 · 6:58 · Radar de actualidad (Samuel, con Dani)
 - Radar: 3 ideas de actualidad para Dani; la principal, los cinco internacionales del Deportivo que vuelven en cuatro días distintos antes de jugar el sábado 21 a las 14:00 (fútbol, planificar la semana). Las otras: Bidasoa 35-33 Limoges tras perder la ida de cuatro (balonmano, registro de partido) y el triple de Vezenkov desde medio campo que forzó la prórroga (baloncesto, final de partido en la sesión). Ficha: `agencia/ideas/radar-2026-11-18.md`.
 - Decidido: se descartan Barça 86-89 Paris y Baskonia 82-85 Hapoel porque repiten la lección de u39 y u34. Ninguna tarea de actualidad anterior estaba sin hacer: nada que caducar.
+
+## 18/11 · 6:37 · Turno de Reels (Marta, con Dani, Andrés y Pau)
+- Sin correcciones de Biel ni encargos nuevos. u28 y u33 ya llevan la voz de Mateo (siguen en borrador hasta la fase de solución).
+- Dani: guion nuevo u59 «Diez días. Cinco entrenos y dos partidos.» (impacto, balonmano) para el hueco libre de hoy 11:30; ningún guion de la reserva era de impacto. Andrés: 78.
+- Pau: foto nueva de Jordi Ribera con la selección española (Commons, CC0).
+- Marta: concepto «la tira de los diez días» (11 casillas del 18 al 28, 5 entrenos y 2 partidos, garabatos «de memoria», casilla del 28 que crece a pantalla completa con el golpe de música, reto _/5, cierre con contador real 9 d 12 h). Voz de Mateo de la biblioteca (la original sigue «disabled») en una toma, 453 caracteres; música nueva. 29 s. Andrés: montaje 80, voz comprobada.
+- Voz gastada hoy: 3.265 de 3.500 (este turno 933 con la música). Sin segundo Reel: no cabe otra voz con música. Huecos de hoy 13:30, 20:30 y 22:30 vacíos.
+- Reserva de guiones criticados sin producir: más de 30.
