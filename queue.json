@@ -2704,7 +2704,7 @@
  },
  {
   "id": "c10s3",
-  "when": "2026-11-25T14:30:00+01:00",
+  "when": "2026-11-24T21:30:00+01:00",
   "kind": "story",
   "files": [
    "stories/st-1117-3-dudas.jpg"
@@ -2714,7 +2714,7 @@
   "campana": "carrusel",
   "title": "3 dudas antes de apuntarte (quedan 10 días)",
   "score": "76",
-  "note": "Story de dudas + lista de espera (Clara, 04) v2: deporte, qué hace, 3 meses gratis hasta el 27 nov. Pide dejar dudas en el último post (no por privado).; oficina: regla de alcance 16/11: una Story al día (el martes sale c10s); lleva «quedan 10 días», Clara le cambia la cuenta atrás y la reprograma; reprogramada desde la oficina; oficina: lanzamiento: explica qué hace la app y la oferta (fase solución); «quedan 10 días» solo valía el 17/11, Clara la rehace con la cuenta del día · 17/11 20:40 (Laura, lanzamiento): fecha prevista 2026-11-25T14:30 en su fase; sigue en borrador hasta que esté corregida (antes 2026-11-17T21:30)",
+  "note": "Story de dudas + lista de espera (Clara, 04) v2: deporte, qué hace, 3 meses gratis hasta el 27 nov. Pide dejar dudas en el último post (no por privado).; oficina: regla de alcance 16/11: una Story al día (el martes sale c10s); lleva «quedan 10 días», Clara le cambia la cuenta atrás y la reprograma; reprogramada desde la oficina; oficina: lanzamiento: explica qué hace la app y la oferta (fase solución); «quedan 10 días» solo valía el 17/11, Clara la rehace con la cuenta del día · 17/11 20:40 (Laura, lanzamiento): fecha prevista 2026-11-25T14:30 en su fase; sigue en borrador hasta que esté corregida (antes 2026-11-17T21:30) · 18/11 (Laura): el mié 25 solo salen las tres encuestas (regla de Biel); pasa al mar 24 21:30 (solución) y sigue en borrador.",
   "fase": "solución",
   "fase_dia": "Mié 25/11"
  },
@@ -3232,5 +3232,56 @@
   "fase_dia": "Mié 18/11",
   "first_comment": "Comenta tu deporte, categoría y días y te preparo la semana. ¿Cuántos de los cinco tenéis ya escritos?",
   "note": "FASE: IMPACTO (Mié 18/11). u59 · turno de Reels 18/11 6:37 (Dani, Andrés, Marta, Pau): tercer Reel de impacto, el hueco de las 11:30 que dejó libre el turno de las 3:37. Balonmano y número (u49 y u50 son de los tres deportes y de escena). Concepto: la tira de los diez días (Jordi Ribera a sangre, 11 casillas del 18 al 28; se encienden 5 entrenos y 2 partidos, garabatos «de memoria» e interrogaciones «de cabeza»; la casilla del 28 crece a pantalla completa con el golpe de música; reto _/5; lista de espera con contador real 9 d 12 h). Voz Mateo de la biblioteca en UNA toma entera (453 caracteres), música nueva con golpe en «veintiocho». 29 s. Solo vale el 18: no se reprograma a otro día."
+ },
+ {
+  "id": "c16s",
+  "when": "2026-11-25T14:30:00+01:00",
+  "files": [
+   "stories/st-1125-encuesta-tiempo.jpg"
+  ],
+  "title": "ENCUESTA · ¿Qué te quita más tiempo a la semana? Montar la sesión / Buscar ejercicios (fútbol)",
+  "score": "79",
+  "kind": "story",
+  "cover": null,
+  "status": "borrador",
+  "campana": "carrusel",
+  "fase": "ayuda y conexión",
+  "fase_dia": "Mié 25/11",
+  "agentId": "04",
+  "note": "SE SUBE A MANO: es el fondo de una encuesta nativa de Instagram y el sticker no se puede poner desde la publicación automática. Por eso está en borrador y no sale sola. Pregunta y opciones del sticker en agencia/carruseles/2026-11-25-stories-encuestas.md. Foto: Mourinho (banco, disponible)."
+ },
+ {
+  "id": "c16s2",
+  "when": "2026-11-25T18:30:00+01:00",
+  "files": [
+   "stories/st-1125-encuesta-carga.jpg"
+  ],
+  "title": "ENCUESTA · ¿Cómo llevas hoy el control de carga? Excel / Libreta o WhatsApp (baloncesto)",
+  "score": "77",
+  "kind": "story",
+  "cover": null,
+  "status": "borrador",
+  "campana": "carrusel",
+  "fase": "ayuda y conexión",
+  "fase_dia": "Mié 25/11",
+  "agentId": "04",
+  "note": "SE SUBE A MANO: es el fondo de una encuesta nativa de Instagram y el sticker no se puede poner desde la publicación automática. Por eso está en borrador y no sale sola. Pregunta y opciones del sticker en agencia/carruseles/2026-11-25-stories-encuestas.md. Foto: tiempo muerto del Estudiantes, ACB (Carlos Delgado, CC BY-SA 3.0)."
+ },
+ {
+  "id": "c16s3",
+  "when": "2026-11-25T21:30:00+01:00",
+  "files": [
+   "stories/st-1125-encuesta-planificar.jpg"
+  ],
+  "title": "ENCUESTA · Al planificar la sesión, ¿qué prefieres? Lo decido todo yo / Reviso una propuesta (balonmano)",
+  "score": "76",
+  "kind": "story",
+  "cover": null,
+  "status": "borrador",
+  "campana": "carrusel",
+  "fase": "ayuda y conexión",
+  "fase_dia": "Mié 25/11",
+  "agentId": "04",
+  "note": "SE SUBE A MANO: es el fondo de una encuesta nativa de Instagram y el sticker no se puede poner desde la publicación automática. Por eso está en borrador y no sale sola. Pregunta y opciones del sticker en agencia/carruseles/2026-11-25-stories-encuestas.md. Foto: tiempo muerto de España, Mundial 2019 (dronepicr, CC BY 2.0)."
  }
 ]
