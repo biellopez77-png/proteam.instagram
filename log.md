@@ -432,3 +432,7 @@
 - Fuente: no se encontró el artículo exacto del reglamento de la RFEBM; no se cita artículo ni año.
 - Voz gastada hoy: 2.332 de 3.500 (este turno 977 con la música).
 - Decidido: sin segundo Reel de datos (el hueco de las 11:30 es de impacto, que ya cubren u49 y u50); queda para el turno de las 6:37. Reserva de guiones criticados sin producir: más de 30.
+
+## 18/11 · 6:58 · Radar de actualidad (Samuel, con Dani)
+- Radar: 3 ideas de actualidad para Dani; la principal, los cinco internacionales del Deportivo que vuelven en cuatro días distintos antes de jugar el sábado 21 a las 14:00 (fútbol, planificar la semana). Las otras: Bidasoa 35-33 Limoges tras perder la ida de cuatro (balonmano, registro de partido) y el triple de Vezenkov desde medio campo que forzó la prórroga (baloncesto, final de partido en la sesión). Ficha: `agencia/ideas/radar-2026-11-18.md`.
+- Decidido: se descartan Barça 86-89 Paris y Baskonia 82-85 Hapoel porque repiten la lección de u39 y u34. Ninguna tarea de actualidad anterior estaba sin hacer: nada que caducar.
