@@ -471,3 +471,9 @@
 - Andrés y Marta: repaso del texto en pantalla de los Reels que faltan por salir (agencia/criticas/2026-11-18-texto-minimo-reels.md). Los guiones por producir ya cumplen. En los montados quedan cinco rótulos por recortar (u12, u10, u31, u33), sin voz nueva: u30, u31, u33 y u28 en el remontaje del contador; u12 y u10 en el turno de Reels.
 - Decidido: la ficha para guardar se mantiene en los Reels (es el motivo para guardar), con líneas de 5 palabras como mucho.
 - Decidido: no se le crea tarea nueva a Dani. Hay más de 30 guiones criticados sin producir, con los tres deportes y reserva hasta el 3/12; lo que frena los Reels es la voz, no los guiones.
+
+## 18/11 14:00 · Laura (encargos)
+- Bloqueos revisados: Marta sigue sin voz hasta las 0:00 (ElevenLabs: 3.265 de 3.500 gastados hoy; quedan 235). Ninguna ficha pendiente. Sin correcciones ni consignas nuevas de Biel.
+- Clara y Andrés: carrusel c11 «No haces una alineación. Haces cuatro.» (vie 20, 19:30) rehecho con mucho menos texto (feed/c11b-1…6.jpg); descripción más corta. Andrés: 82 (agencia/criticas/2026-11-18-c11-texto-minimo.md). Faltan c13s3, c12, c13, c09s, c10s2, c10s3 y las encuestas del 25.
+- Samuel: recuento de las Stories con pregunta (reports/2026-11-18-respuestas-stories.md): 0 respuestas en siete Stories, 65–85 cuentas cada una. La Story del vie 20 y la portada del sáb 21 van con la pregunta, sin resultado.
+- Decidido: el CTA de comentar de c11 pasa de la última diapositiva a la descripción; la última pide guardar y enviar (regla de texto mínimo de Biel).

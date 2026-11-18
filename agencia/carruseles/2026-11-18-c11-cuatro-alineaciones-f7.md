@@ -59,3 +59,13 @@ Puerta 1: `agencia/criticas/2026-11-16-c11-texto.md`. Puerta 2: `agencia/critica
 
 ## Auditoría
 Puerta 1: 75 con bloqueante (diapositiva 3 exageraba la norma) → corregido. Puerta 2: **83/100, PUBLICABLE** (`agencia/criticas/2026-11-16-c11-final.md`). Aplicadas después las recomendaciones no bloqueantes 1, 2, 3 y 5 (pie de fuente a 26 px, «propuesta» a 27 px, fila de la 2 con el dorsal 12, «usa dos columnas» en el copy). La 4 no: «Foto: Johan Cruyff» se leería como autor de la foto; el pie queda «Johan Cruyff».
+
+## Versión 3 · texto mínimo (Clara, 18/11 14:10 · encargo de Biel)
+Sale el vie 20/11 a las 19:30. Archivos `feed/c11b-1…6.jpg`. Texto exacto:
+1. FÚTBOL 7 · BENJAMÍN Y ALEVÍN / No haces una alineación. *Haces cuatro.* / Te dejo la hoja para rotarlas. / Johan Cruyff · DESLIZA →
+2. EL SÁBADO / 9:50 / Las posiciones, de memoria. *Las mismas desde septiembre.* / El 12: defensa los cuatro tiempos. [12 · D D D D]
+3. LA NORMA / 4 × 12′ / Cuatro tiempos. Todos juegan uno entero. / Cada tiempo empieza con *una alineación tuya.* / Circular de Fútbol 7 2025-26, Juegos Municipales de Sevilla. En otras competiciones cambia.
+4. EL VIERNES / Tres pasos, *en este orden.* / 1 Descansos. Nadie descansa dos seguidos. · 2 Porteros. Uno en el 1.º y el 3.º. Otro en el 2.º y el 4.º. · 3 Líneas. Cada tiempo, una distinta. / El dorsal 4: ataque, defensa, medio, descansa. [4 · A D M —] / Es una propuesta, no una norma.
+5. EJEMPLO · 10 CONVOCADOS / [tabla igual] / Todos pasan por *dos líneas o más.* / Ejemplo inventado.
+6. TU HOJA / [hoja vacía] / Cuatro tiempos, cuatro alineaciones. *Guárdala y pásasela a tu coordinador.*
+Descripción acortada, con qué es la app de ProTeam y cuándo abre; la llamada a comentar va en la descripción con una pregunta («¿En qué línea juega siempre tu dorsal 12?»). Auditoría: `agencia/criticas/2026-11-18-c11-texto-minimo.md` (82, publicable).
