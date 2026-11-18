@@ -38,16 +38,16 @@ I-046: «El entrenador de infantil presiona a toda pista porque le da robos y ba
 Silencio de 0,3 s antes de «En media pista» (golpe de música ahí). Sin pausa antes del bloque 7. Toma entera y seguida.
 **Estructura:** creencia → grieta → consecuencia → qué hacer → cierre que vuelve al hook.
 
-## 6. Pantallas (máx. 7 palabras por golpe)
+## 6. Pantallas (máx. 5 palabras por golpe; recortadas el 18/11, encargo de Biel de menos texto)
 | s | pantalla |
 |---|---|
 | 0–4,0 | Foto a sangre de un base de primer nivel subiendo el balón (banco: Théo Maledon con el Real Madrid en Euroliga, `PROTEAM_JUGADOR_BASE_REAL_MADRID_FOTO_003`, vertical; comprobar que no coincide el mismo día con u52) · arriba, pequeño y fijo: BALONCESTO · INFANTIL · desde el fotograma 0: **TU PRESIÓN GANA DE 30** · en el 2,8: *en media pista, nada* (serif azul) |
-| 4,0–8,0 | pista cenital en motion graphics: cinco puntos presionando arriba, robo, flecha al aro; se repite dos veces y el marcador de ejemplo sube · **ROBO · BANDEJA** · pequeño: «ejemplo» |
+| 4,0–8,0 | pista cenital en motion graphics: cinco puntos presionando arriba, robo, flecha al aro; se repite dos veces y el marcador de ejemplo sube · **ROBO · BANDEJA** |
 | 8,0–11,0 | la misma pista: el balón pasa de medio campo y los cinco puntos se quedan quietos · **¿Y SI NO LA PIERDE?** |
-| 11,0–19,0 | ficha guardable (≥ 6 s): **ESTA SEMANA · 10′ DE 5×5** · 1 Solo media pista · 2 La canasta vale tras 4 pases |
+| 11,0–19,0 | ficha guardable (≥ 6 s): **10′ DE 5×5** · 1 Media pista · 2 Canasta tras 4 pases |
 | 19,0–22,0 | media pista con cuatro pases que se encienden en azul antes del tiro · **QUE NO SEA LO ÚNICO** |
 | 22,0–27,5 | vuelve la foto del principio (bucle) · RETO PARA TU STAFF · *¿Cuántas canastas en 5 contra 5?* |
-| 27,5–34,0 | **ABRE EL SÁBADO 28 NOV** · **LISTA DE ESPERA HASTA EL 27 NOV** · *3 meses gratis* · pequeño: «Enlace en la bio» |
+| 27,5–34,0 | **ABRE EL 28 NOV** · *lista hasta el 27: 3 meses gratis* · pequeño: «Enlace en la bio» |
 
 Sin contador con cifra de días. Sin pantallas de la app.
 

@@ -32,16 +32,16 @@ I-040: «El entrenador de base cree que su problema es de su deporte, pero fuera
 | 6 | Reto | Pregunta para tu staff: de esas cuatro cosas, ¿cuál os quita más tiempo? Comentadla. | reto + conversación |
 | 7 | CTA | Abre el 28. Lista de espera hasta el 27 de noviembre, con tres meses gratis. Enlace en la bio. | hilo + CTA único |
 
-## 6. Pantallas
+## 6. Pantallas (máx. 5 palabras por golpe; recortadas el 18/11, encargo de Biel de menos texto)
 | s | pantalla |
 |---|---|
 | 0–3,5 | tríptico a sangre: tres fotos verticales de primer nivel (fútbol, baloncesto, balonmano; Commons, licencia leída; Pau) · desde el fotograma 0: **11 · 5 · 7** |
 | 3,5–6,0 | las tres fotos se funden en una · **EL MISMO LUNES** (serif azul *lunes*) |
-| 6,0–12,0 | motion graphics: cuatro casillas de lunes que se encienden: SEMANA · CONVOCATORIA · MINUTOS · CÓMO LLEGA CADA UNO |
+| 6,0–12,0 | motion graphics: cuatro casillas de lunes que se encienden: SEMANA · CONVOCATORIA · MINUTOS · CÓMO LLEGAN |
 | 12,0–16,0 | **PARA ENTRENAR MÁS** · *y apuntar menos* |
-| 16,0–21,0 | **FÚTBOL · BALONCESTO · BALONMANO** · *una app para los tres* |
-| 21,0–25,5 | foto de balonmano (bucle) · RETO PARA TU STAFF · **¿Cuál os quita** *más tiempo?* · las cuatro casillas pequeñas |
-| 25,5–31,0 | **ABRE EL 28 · LISTA HASTA EL 27 NOV** · *3 meses gratis* · pequeño: «Enlace en la bio» |
+| 16,0–21,0 | **FÚTBOL · BALONCESTO · BALONMANO** |
+| 21,0–25,5 | foto de balonmano (bucle) · RETO PARA TU STAFF · **¿Cuál os quita** *más tiempo?* |
+| 25,5–31,0 | **ABRE EL 28 NOV** · *lista hasta el 27: 3 meses gratis* · pequeño: «Enlace en la bio» |
 
 ## 7. Descripción
 11 en el campo. 5 en la pista. 7 en la de balonmano. Tres deportes y el mismo lunes. ⚽🏀🤾

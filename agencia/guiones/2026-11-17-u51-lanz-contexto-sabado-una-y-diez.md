@@ -33,17 +33,17 @@ I-039: «El partido del entrenador de base no acaba con el pitido: sigue despué
 | 7 | Reto | Pregunta para tu staff: cuando acaba el partido, ¿quién de vosotros sigue con él? | reto que vuelve al hook |
 | 8 | CTA | Abre el 28. Lista de espera hasta el 27 de noviembre, con tres meses gratis. Enlace en la bio. | hilo + CTA único |
 
-## 6. Pantallas
+## 6. Pantallas (máx. 5 palabras por golpe; recortadas el 18/11, encargo de Biel de menos texto)
 | s | pantalla |
 |---|---|
-| 0–3,0 | Foto a sangre: banquillo de un estadio de primer nivel recién acabado el partido, gradas vaciándose (Commons, licencia leída; Pau) · desde el fotograma 0: **SÁBADO, 13:10** · *el partido acabó a las 13:00* |
+| 0–3,0 | Foto a sangre: banquillo de un estadio de primer nivel recién acabado el partido, gradas vaciándose (Commons, licencia leída; Pau) · desde el fotograma 0: **SÁBADO, 13:10** · *acabó a las 13:00* |
 | 3,0–8,0 | motion graphics sobre la foto: tres notas que aparecen: «¿minutos?» · «¿qué falló?» · «¿martes?» |
 | 8,0–13,0 | **NO EN UNA OFICINA.** · *en el banquillo* (serif azul) |
 | 13,0–16,0 | **ASÍ NACIÓ PROTEAM** |
-| 16,0–21,0 | **FÚTBOL · BALONCESTO · BALONMANO** · *para después del partido* |
+| 16,0–21,0 | **FÚTBOL · BALONCESTO · BALONMANO** |
 | 21,0–24,0 | **HECHA EN EL BANQUILLO** |
 | 24,0–27,5 | vuelve la foto del principio (bucle) · RETO PARA TU STAFF · **¿Quién sigue** *con el partido?* |
-| 27,5–32,0 | **ABRE EL 28 · LISTA HASTA EL 27 NOV** · *3 meses gratis* · pequeño: «Enlace en la bio» |
+| 27,5–32,0 | **ABRE EL 28 NOV** · *lista hasta el 27: 3 meses gratis* · pequeño: «Enlace en la bio» |
 
 ## 7. Descripción
 Sábado, 13:10. El partido acabó hace diez minutos. Los jugadores ya se van. Y el entrenador sigue con él. ⚽

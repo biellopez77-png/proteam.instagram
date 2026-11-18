@@ -1279,3 +1279,5 @@ Fuente de las normas: Normativa de Balonmano 2025, Juegos Deportivos Escolares d
 - **H1126** Una temporada a medias o un partido apuntado. [general · comparativa · partido] (11/15)
 - **H1127** Sábado: el partido fresco. Domingo: la semana en blanco. [general · comparativa · planificación] (11/15)
 - **H1128** Mañana a las once de la noche ya sabes qué vas a estar haciendo. [general · provocadora · planificación] (11/15)
+- **H1129** Ganas de tres, quedan cinco segundos. ¿Falta o defiendes? [baloncesto · provocadora · final de partido] (12/15)
+- **H1130** De la ida solo te acuerdas del resultado. [balonmano · provocadora · partido] (11/15)

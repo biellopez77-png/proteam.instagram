@@ -33,15 +33,15 @@ I-041: «El entrenador de base sabe que prepara el partido de memoria y con tres
 
 Silencio de 0,4 s antes de «Vamos a sacarla» (golpe ahí).
 
-## 6. Pantallas
+## 6. Pantallas (máx. 5 palabras por golpe; recortadas el 18/11, encargo de Biel de menos texto)
 | s | pantalla |
 |---|---|
 | 0–3,0 | Foto a sangre: calentamiento de un equipo de primer nivel de balonmano (Asobal, EHF o selección; Commons, licencia leída; Pau) · desde el fotograma 0: **8 DÍAS** · *y mañana, partido* |
 | 3,0–8,5 | motion graphics: tres objetos que entran: burbuja «Convocados» · cabeza con «7 inicial» · libreta en la mochila · **COMO SIEMPRE** |
 | 8,5–13,5 | fondo tinta · **SALE EL 28** (serif azul *28*) |
-| 13,5–20,0 | **DESDE ESTA TARDE:** *lo que pasa cada semana* · BALONMANO · FÚTBOL · BALONCESTO |
+| 13,5–20,0 | **LO QUE PASA** *cada semana* |
 | 20,0–24,5 | vuelve la foto del principio (bucle) · RETO PARA TU STAFF · **¿Qué dejaríais** *de hacer a mano?* |
-| 24,5–31,0 | **LISTA DE ESPERA · HASTA EL 27 NOV** · *3 meses gratis* · pequeño: «Enlace en la bio» |
+| 24,5–31,0 | **LISTA HASTA EL 27 NOV** · *3 meses gratis* · pequeño: «Enlace en la bio» |
 
 ## 7. Descripción
 8 días. Mañana juegas, y lo vas a preparar como siempre: convocatoria en el grupo, el siete en la cabeza, la libreta en la mochila. 🤾

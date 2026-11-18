@@ -36,15 +36,15 @@ I-049: «El entrenador de base escribe la semana para la plantilla entera, pero 
 Silencio de 0,3 s antes de «Tú no tienes internacionales» (golpe ahí). Sin pausa antes del bloque 6. Una sola toma seguida.
 **Estructura:** partido real · tres números → de quién es → giro al entrenador → lista → reto → fecha.
 
-## 6. Pantallas (máx. 7 palabras por golpe)
+## 6. Pantallas (máx. 5 palabras por golpe; recortadas el 18/11, encargo de Biel de menos texto)
 | s | pantalla |
 |---|---|
 | 0–3,5 | Foto a sangre: Riazor o jugadores del Deportivo de blanquiazul (Commons, licencia leída; Pau); alternativa, Mendizorroza · desde el fotograma 0: **5 FUERA · 4 DÍAS** · en el 2,5: *el último entrena una vez* (serif azul) |
 | 3,5–6,0 | tira de la semana en motion graphics: MAR · MIÉ · JUE · VIE con 1 · 2 · 1 · 1 puntos que entran y **SÁB 14:00** al final |
-| 6,0–13,0 | la misma tira, ahora «la tuya»: MAR *examen* · MIÉ *llega tarde* · VIE *solo viene hoy*; encima, tachado, **18** → *los que vienen* |
-| 13,0–21,0 | ficha guardable (≥ 6 s): **ANTES DE ESCRIBIR LA SEMANA** · 1 Quién viene cada día · 2 Lo de todos, el día que más sois · 3 Al que falta, por escrito lo trabajado |
-| 21,0–25,5 | vuelve la foto del principio (bucle) · RETO PARA TU STAFF · **¿Qué día** *entrenáis con todos?* |
-| 25,5–32,0 | **ABRE EL SÁBADO 28 NOV** · **LISTA DE ESPERA HASTA EL 27 NOV** · *3 meses gratis* · pequeño: «Enlace en la bio» |
+| 6,0–13,0 | la misma tira, ahora «la tuya»: MAR *examen* · MIÉ *tarde* · VIE *solo hoy* |
+| 13,0–21,0 | ficha guardable (≥ 6 s): **ANTES DE LA SEMANA** · 1 Quién viene cada día · 2 Lo de todos: el día lleno |
+| 21,0–25,5 | vuelve la foto del principio (bucle) · RETO PARA TU STAFF · **¿Qué día** *estáis todos?* |
+| 25,5–32,0 | **ABRE EL 28 NOV** · *lista hasta el 27: 3 meses gratis* · pequeño: «Enlace en la bio» |
 
 La tira de la semana es motion graphics propio: que no parezca una pantalla de la app. Sin contador con cifra de días (vale viernes y sábado).
 

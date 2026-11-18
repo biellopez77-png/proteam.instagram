@@ -37,15 +37,15 @@ I-045: «El entrenador de fútbol 7 juega en largo a su jugador más rápido por
 Silencio de 0,3 s antes de «Los otros cinco» (golpe de música en «cinco»). Sin pausa antes del bloque 6. Toma entera y seguida, sin trocear ni acelerar frase a frase.
 **Estructura:** creencia → grieta → qué hacer → cierre que vuelve al hook (la de u08, sin el bloque de la norma).
 
-## 6. Pantallas (máx. 7 palabras por golpe)
+## 6. Pantallas (máx. 5 palabras por golpe; recortadas el 18/11, encargo de Biel de menos texto)
 | s | pantalla |
 |---|---|
 | 0–3,5 | Foto a sangre de un extremo de primer nivel en carrera con el balón (banco: Lamine Yamal, `PROTEAM_JUGADOR_REFERENTE_FOTO_001`, ya usada en u05; mejor una nueva de Pau) · arriba, pequeño y fijo: FÚTBOL 7 · ALEVÍN · desde el fotograma 0: **BALÓN LARGO AL MÁS RÁPIDO** · en el 2,5: *los otros cinco, ni la tocan* (serif azul) |
-| 3,5–8,0 | campo de fútbol 7 cenital en motion graphics: una flecha larga del portero al punto de arriba; los otros cinco puntos se quedan en gris y quietos · **HOY: +2 METROS** → **CADETES: CORREN TODOS** |
-| 8,0–16,0 | ficha guardable sobre la imagen (≥ 6 s para leerla): **ESTA SEMANA · 10′ DE PARTIDILLO** · 1 El portero saca en corto · 2 El balón no sube de la cintura |
+| 3,5–8,0 | campo de fútbol 7 cenital en motion graphics: una flecha larga del portero al punto de arriba; los otros cinco puntos se quedan en gris y quietos · **HOY: +2 METROS** |
+| 8,0–16,0 | ficha guardable sobre la imagen (≥ 6 s para leerla): **10′ DE PARTIDILLO** · 1 Saque en corto · 2 Balón por abajo |
 | 16,0–19,0 | el mismo campo: ahora la jugada pasa por los siete puntos, que se encienden uno a uno en azul · **QUE JUEGUEN LOS SIETE** |
 | 19,0–24,5 | vuelve la foto del principio (bucle) · RETO PARA TU STAFF · *¿Cuántos goles, de balón largo al mismo?* |
-| 24,5–31,0 | **ABRE EL SÁBADO 28 NOV** · **LISTA DE ESPERA HASTA EL 27 NOV** · *3 meses gratis* · pequeño: «Enlace en la bio» |
+| 24,5–31,0 | **ABRE EL 28 NOV** · *lista hasta el 27: 3 meses gratis* · pequeño: «Enlace en la bio» |
 
 Sin contador con cifra de días (así vale tanto el sábado 21 como el domingo 22). Sin pantallas de la app.
 
