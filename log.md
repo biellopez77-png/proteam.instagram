@@ -2,6 +2,7 @@
 
 | Fecha | Pieza | Tipo | Resultado |
 | --- | --- | --- | --- |
+| 2026-11-18 12:27 | c14 feed/c14b-1.jpg | carousel | publicado, media_id 17953748589349180 |
 | 2026-11-18 11:25 | u59 reels/u59-diez-dias.mp4 | reel | publicado, media_id 18399203359161403 |
 | 2026-11-18 10:25 | c14s stories/st-1118-diez-dias-v3.jpg | story | publicado, media_id 17883439380545989 |
 | 2026-11-18 09:26 | u49 reels/u49-minuto-setenta.mp4 | reel | publicado, media_id 18181542154429235 |
