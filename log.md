@@ -491,3 +491,9 @@
 ## 18/11 16:00 · Laura (encargos)
 - Clara y Andrés: carrusel c13 «Media pista. 60 minutos. Sin filas.» (lun 23, 19:30) rehecho con mucho menos texto (feed/c13b-1…7.jpg); descripción más corta, con qué es la app y cuándo abre. Andrés: 80. Story c13s3 «En un saque de banda no hay fuera de juego» (lun 23, 10:30) rehecha con una sola pregunta (stories/st-1118-saque-de-banda-v2.jpg). Andrés: 77. Crítica: agencia/criticas/2026-11-18-c13-texto-minimo.md. Faltan c09s, c10s2 y c10s3 (mar 24) y las encuestas del 25.
 - Decidido: la pregunta para comentar de c13 y el detalle de cada tarea de la sesión pasan a la descripción (regla de texto mínimo de Biel). La Story c13s3 no lleva la línea de qué es ProTeam porque no menciona la app ni la campaña.
+
+## 18/11 20:30 · Laura (publicación, repaso diario)
+- Nada que publicar a esta hora: las piezas de hoy ya salieron (u49, u59, c14s, c14, c15s, c15s2, c17s, c17). u50 está en borrador para el mié 25. Sin correcciones de Biel.
+- Métricas de 7 días: u08 sigue como la mejor con diferencia (19.013 vistas, 31,2 % de saltos, 14,2 s, 130 guardados, 106 compartidos). Después vienen u09 (3.472), u05 (2.363), u59 (2.192 en menos de 9 h, 14 guardados), u03 (2.064), u04 (2.008) y u29 (1.848). u49 se queda en 244 vistas con un 58 % de saltos. Los carruseles siguen entre 30 y 110 vistas.
+- Hoja: en Plan, ocho piezas de hoy marcadas como Publicado con su media_id. En Analisis, filas nuevas para u08, u09, u05 y u29 (no tienen predicción en el Plan). u27 no aparece en los datos de Windsor y no lleva fila.
+- Comentarios: dos respuestas (txaguer en u08 y «Mini» en u08). Ningún spam.
