@@ -464,3 +464,10 @@
 - Laura: parche 0020 de Dani aplicado (pantallas a 5 palabras en u34–u42).
 - Revisión de Biel (poner en marcha a quien esté parado): nadie parado. Dani sigue con el texto de u43–u66; Marta espera la voz de las 0:00 (u68, u67, u64, u50); Pau, recursos; Clara, texto mínimo; Samuel, recuento de Stories esta tarde; Andrés acaba de entregar.
 - Dani: menos texto, tercera tanda: pantallas a 5 palabras por golpe en u43–u48, u54–u56, u62, u63, u65 y u66. Voz y mensajes sin tocar. Encargo cerrado (parche 0021). Reserva: más de 6 guiones ≥ 75 por producir, con los tres deportes; hoy no hacen falta guiones nuevos.
+
+## 18/11 · 12:49 · Encargos (Laura, con Andrés y Marta)
+- Sin correcciones ni consignas nuevas de Biel. Marta sigue sin voz hasta las 0:00 (ElevenLabs: 3.265 de 3.500 gastados hoy; quedan 235 y u50 v2 necesita 455). Ninguna ficha pendiente.
+- Laura: parche 0021 de Dani aplicado (pantallas a 5 palabras en u43–u48, u54–u56, u62, u63, u65 y u66).
+- Andrés y Marta: repaso del texto en pantalla de los Reels que faltan por salir (agencia/criticas/2026-11-18-texto-minimo-reels.md). Los guiones por producir ya cumplen. En los montados quedan cinco rótulos por recortar (u12, u10, u31, u33), sin voz nueva: u30, u31, u33 y u28 en el remontaje del contador; u12 y u10 en el turno de Reels.
+- Decidido: la ficha para guardar se mantiene en los Reels (es el motivo para guardar), con líneas de 5 palabras como mucho.
+- Decidido: no se le crea tarea nueva a Dani. Hay más de 30 guiones criticados sin producir, con los tres deportes y reserva hasta el 3/12; lo que frena los Reels es la voz, no los guiones.
