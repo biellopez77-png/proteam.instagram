@@ -3093,14 +3093,16 @@
    "stories/st-1118-diez-dias-v3.jpg"
   ],
   "cover": null,
-  "status": "pending",
+  "status": "published",
   "campana": "carrusel",
   "when": "2026-11-18T10:30:00+01:00",
   "title": "10 días. ¿Qué no quieres volver a hacer un domingo por la noche?",
   "score": "79",
   "fase": "impacto",
   "fase_dia": "Mié 18/11",
-  "note": "Story de impacto de Clara (04): contador «10 días», día 1 de 10, pregunta con respuesta en comentarios. Solo vale el mié 18. Foto: Šarūnas Jasikevičius (Zafer, CC BY 4.0, Wikimedia Commons). 18/11 8:05 · Laura y Clara: fuera «Día 1 de 10», los diez puntos y «Hoy no te contamos más» (regla del plan interno); repasada por Andrés (77, sin cambios de nota). 18/11 10:00 · Clara: rehecha con mucho menos texto (encargo de Biel: una idea, una pregunta, foto más grande); Andrés 79 con el criterio de texto mínimo (agencia/criticas/2026-11-18-texto-minimo-stories-carruseles.md)."
+  "note": "Story de impacto de Clara (04): contador «10 días», día 1 de 10, pregunta con respuesta en comentarios. Solo vale el mié 18. Foto: Šarūnas Jasikevičius (Zafer, CC BY 4.0, Wikimedia Commons). 18/11 8:05 · Laura y Clara: fuera «Día 1 de 10», los diez puntos y «Hoy no te contamos más» (regla del plan interno); repasada por Andrés (77, sin cambios de nota). 18/11 10:00 · Clara: rehecha con mucho menos texto (encargo de Biel: una idea, una pregunta, foto más grande); Andrés 79 con el criterio de texto mínimo (agencia/criticas/2026-11-18-texto-minimo-stories-carruseles.md).",
+  "media_id": "17883439380545989",
+  "published_at": "2026-11-18T10:25:36+0100"
  },
  {
   "id": "c15",
