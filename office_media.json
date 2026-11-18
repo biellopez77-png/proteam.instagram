@@ -76,7 +76,6 @@
  "stories/st-1118-saque-de-banda.jpg": "/_blob/4d85227bcd5562894347fad57430baf9",
  "covers/u28-tobillo.jpg": "/_blob/051af760f549bf17a98fb0169f552dbc",
  "covers/u33-cuatro-pases.jpg": "/_blob/755713c105ecb4c7ce49c32f7950bc4f",
- "covers/u12-quinto-periodo.jpg": "/_blob/1121f74933c46bf371b1208ee0a92ff1",
  "reels/u28-tobillo.mp4": "/_blob/e9881062b4fb0418ae1a6ca85b975dd3",
  "stories/st-1117-media-pista.jpg": "/_blob/e62af6d1dabd3af626e3233b4a6576e2",
  "reels/u29-por-dentro-cinco-toques.mp4": "/_blob/31258ad071da1ebe8c2cf54cc76461ca",
@@ -84,7 +83,6 @@
  "reels/u28-tobillo-v3.mp4": "/_blob/016600ae958f8bd0c579c5c2a1c8b9ff",
  "reels/u30-por-dentro-presion-alta.mp4": "/_blob/4e2121a47f551f72c481778d6651bf19",
  "reels/u33-cuatro-pases.mp4": "/_blob/cf53c86793807280f023730c9de99a68",
- "reels/u12-quinto-periodo.mp4": "/_blob/1efb85046c8599eedac0870d888fbae7",
  "reels/u10-entra-a-defender.mp4": "/_blob/53bb770cb0f28de7e3c4e017d35d96bd",
  "covers/u10-entra-a-defender.jpg": "/_blob/a4395d9444378e75e4773485b0e8ac9e",
  "stories/st-1118-diez-dias.jpg": "/_blob/238e2e07383165f0903561560c4c036d",
@@ -106,5 +104,9 @@
  "feed/c14-5.jpg": "/_blob/c0b8b7ef6e3bdc24e27ebb0cfdf10a8e",
  "feed/c14-6.jpg": "/_blob/78a58366492b85ec99ed06a3c75717ff",
  "reels/u49-minuto-setenta.mp4": "/_blob/74f13785065e4a6b1309142907341723",
- "covers/u49-minuto-setenta.jpg": "/_blob/3df0facfd7b6379fee08d022f99e3c7f"
+ "covers/u49-minuto-setenta.jpg": "/_blob/3df0facfd7b6379fee08d022f99e3c7f",
+ "reels/u12-quinto-periodo.mp4": "/_blob/e67f7b00ef0c4d9c5885a175f60d2798",
+ "covers/u12-quinto-periodo.jpg": "/_blob/8b6fd9cbea0f76dfcd9ee0fc06a9323f",
+ "reels/u50-domingo-once.mp4": "/_blob/4458f492f85a2c044dc41e136c6d6cce",
+ "covers/u50-domingo-once.jpg": "/_blob/0301e364ffbef0ab8e414e31faef1d16"
 }

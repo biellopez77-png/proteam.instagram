@@ -10,6 +10,12 @@ a = wavfile.read('_m1.wav')[1].astype(np.float32) / 32768
 HIT = 30.90; IMP = T['acta2']; cut = IMP - .38
 A = a[:int(cut * SR)].copy(); f = int(.18 * SR); A[-f:] *= np.linspace(1, 0, f)[:, None]
 B = a[int((HIT - .01) * SR):]
+NEED = END - IMP + .2
+if len(B) / SR < NEED:   # v2 (18/11): con la toma seguida el Reel dura 0,4 s más; se repiten 4 compases (143,5 BPM) cortando en golpe, con 30 ms de fundido cruzado
+    bar4 = int(4 * 4 * 60 / 143.5 * SR); xf = int(.03 * SR); src = B[-bar4 - xf:-xf] if False else B[len(B) - int(1.5 * SR) - bar4:len(B) - int(1.5 * SR)]
+    head = B[:len(B) - int(1.5 * SR)]; r = np.linspace(0, 1, xf)[:, None]
+    tail = src.copy(); tail[:xf] = head[-xf:] * (1 - r) + tail[:xf] * r
+    B = np.concatenate([head[:-xf], tail, B[len(B) - int(1.5 * SR):]])
 x = np.zeros((int(END * SR), 2), np.float32); x[:len(A)] += A[:len(x)]
 i0 = int((IMP - .01) * SR); n = min(len(B), len(x) - i0); x[i0:i0 + n] += B[:n]
 t = np.arange(len(x)) / SR; g = np.clip(t / .05, 0, 1) * np.clip((END - t) / 1.2, 0, 1); x *= g[:, None]

@@ -1,0 +1,127 @@
+{
+ "origen": "tools/reel50/voz.tsv",
+ "tipo": "locución generada con tiempos por palabra (exacta, no reconocida por oído)",
+ "palabras": 12,
+ "primera_palabra_s": 0.06,
+ "ultima_palabra_s": 24.94,
+ "ritmo_palabras_por_s": 0.48,
+ "frases": [
+  {
+   "desde": 0.06,
+   "hasta": 1.9,
+   "texto": "Domingo, once de la noche.",
+   "palabras_por_s": 0.54
+  },
+  {
+   "desde": 2.22,
+   "hasta": 3.94,
+   "texto": "La semana, sin preparar.",
+   "palabras_por_s": 0.58
+  },
+  {
+   "desde": 4.14,
+   "hasta": 7.18,
+   "texto": "Y tu segundo te escribe: ¿qué hacemos el martes?",
+   "palabras_por_s": 0.66
+  },
+  {
+   "desde": 7.34,
+   "hasta": 9.34,
+   "texto": "Este puede ser el último domingo así.",
+   "palabras_por_s": 0.5
+  },
+  {
+   "desde": 9.74,
+   "hasta": 16.14,
+   "texto": "El sábado veintiocho de noviembre abre la app de ProTeam, para entrenadores de fútbol, baloncesto y balonmano.",
+   "palabras_por_s": 0.47
+  },
+  {
+   "desde": 16.38,
+   "hasta": 17.9,
+   "texto": "Quedan diez días.",
+   "palabras_por_s": 0.66
+  },
+  {
+   "desde": 17.94,
+   "hasta": 20.7,
+   "texto": "Mándaselo al que te escribe los domingos a las once.",
+   "palabras_por_s": 0.36
+  },
+  {
+   "desde": 20.86,
+   "hasta": 24.94,
+   "texto": "Lista de espera hasta el veintisiete de noviembre: tres meses gratis.",
+   "palabras_por_s": 0.49
+  }
+ ],
+ "pausas": [
+  {
+   "desde": 9.34,
+   "hasta": 9.74,
+   "duracion_s": 0.4
+  }
+ ],
+ "por_palabra": [
+  {
+   "desde": 0.06,
+   "hasta": 1.9,
+   "palabra": "Domingo, once de la noche."
+  },
+  {
+   "desde": 2.22,
+   "hasta": 3.94,
+   "palabra": "La semana, sin preparar."
+  },
+  {
+   "desde": 4.14,
+   "hasta": 5.42,
+   "palabra": "Y tu segundo te escribe:"
+  },
+  {
+   "desde": 5.74,
+   "hasta": 7.18,
+   "palabra": "¿qué hacemos el martes?"
+  },
+  {
+   "desde": 7.34,
+   "hasta": 9.34,
+   "palabra": "Este puede ser el último domingo así."
+  },
+  {
+   "desde": 9.74,
+   "hasta": 11.5,
+   "palabra": "El sábado veintiocho de noviembre"
+  },
+  {
+   "desde": 11.66,
+   "hasta": 13.34,
+   "palabra": "abre la app de ProTeam,"
+  },
+  {
+   "desde": 13.42,
+   "hasta": 16.14,
+   "palabra": "para entrenadores de fútbol, baloncesto y balonmano."
+  },
+  {
+   "desde": 16.38,
+   "hasta": 17.9,
+   "palabra": "Quedan diez días."
+  },
+  {
+   "desde": 17.94,
+   "hasta": 20.7,
+   "palabra": "Mándaselo al que te escribe los domingos a las once."
+  },
+  {
+   "desde": 20.86,
+   "hasta": 23.34,
+   "palabra": "Lista de espera hasta el veintisiete de noviembre:"
+  },
+  {
+   "desde": 23.42,
+   "hasta": 24.94,
+   "palabra": "tres meses gratis."
+  }
+ ]
+}

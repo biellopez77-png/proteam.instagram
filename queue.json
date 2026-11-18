@@ -3037,10 +3037,10 @@
   ],
   "cover": "covers/u12-quinto-periodo.jpg",
   "caption": "Quinto periodo, partido igualado y tú contando cruces en el acta. 🏀\nGuárdalo: el viernes, una hoja con seis casillas. Coloca primero los dos periodos de los que menos juegan; el sexto, libre. Mándasela a tu delegado.\nEn el minibasket de Extremadura (normativa FEXB 2024-25, ligas locales) cada jugador juega al menos 2 periodos completos de los 5 primeros y no hay cambios en ellos. En otras federaciones la norma cambia.\nEnvíaselo a tu segundo entrenador: ¿quién llevaba el acta en el quinto periodo?\nComenta tu deporte, tu categoría y tus días y te preparo la semana en la app de ProTeam. Lista de espera hasta el 27 de noviembre: 3 meses gratis. Enlace en la bio.\n\nFoto: Erik Spoelstra en «Heat vs Pacers, 2012» (Marta Sand, CC BY 2.0), Wikimedia Commons.\n\n#minibasket #baloncestobase #entrenadordebaloncesto #planificacion #proteam",
-  "status": "borrador",
+  "status": "pending",
   "campana": "unrespiro",
   "share_to_feed": false,
-  "note": "u12 · turno de Reels 17/11 15:37: encargo t-u12-musica (montado con voz el 17/11 6:37, sin música por falta de créditos). Música nueva (ElevenLabs music v2.5, re menor, campanas con vinilo, 900 créditos) con silencio antes de «acta» y golpe en la palabra; sfx.py y mezcla como u31. Banquillo de los Heat (Spoelstra), acta con cruces, columnas de periodo, hoja de 6 casillas. Voz Mateo de la biblioteca. · 17/11 18:50 v2 (encargo de Andrés): cierre con la animación del contador de la lista de espera (9 d 10 h → 27 NOV) bajo la voz de la campaña, antes del reto; sin voz nueva; 25,2 s; auditoría 82 (agencia/criticas/2026-11-17-u33-u12-contador.md); oficina: cambios: la voz se corta mucho, falta fluidez · 17/11 20:40 (Laura, lanzamiento): fecha prevista 2026-11-21T13:30 en su fase; sigue en borrador hasta que esté corregida (antes 2026-11-18T13:30)",
+  "note": "u12 · turno de Reels 17/11 15:37: encargo t-u12-musica (montado con voz el 17/11 6:37, sin música por falta de créditos). Música nueva (ElevenLabs music v2.5, re menor, campanas con vinilo, 900 créditos) con silencio antes de «acta» y golpe en la palabra; sfx.py y mezcla como u31. Banquillo de los Heat (Spoelstra), acta con cruces, columnas de periodo, hoja de 6 casillas. Voz Mateo de la biblioteca. · 17/11 18:50 v2 (encargo de Andrés): cierre con la animación del contador de la lista de espera (9 d 10 h → 27 NOV) bajo la voz de la campaña, antes del reto; sin voz nueva; 25,2 s; auditoría 82 (agencia/criticas/2026-11-17-u33-u12-contador.md); oficina: cambios: la voz se corta mucho, falta fluidez · 17/11 20:40 (Laura, lanzamiento): fecha prevista 2026-11-21T13:30 en su fase; sigue en borrador hasta que esté corregida (antes 2026-11-18T13:30); reprogramada desde la oficina · 18/11 0:37 corregido (Biel 17/11: «la voz se corta mucho, falta fluidez»): toma nueva de Mateo entera y seguida a velocidad natural (484 caracteres), sin trocear ni acelerar; 30,5 s; contador del sáb 21 13:30 (6 d 10 h); reauditado 80 · 82. Fase problema.",
   "score": "guion 80 · montaje 82",
   "title": "Quinto periodo. Y tú, contando cruces en el acta.",
   "fase": "problema",
@@ -3194,5 +3194,24 @@
   "fase_dia": "Mié 18/11",
   "first_comment": "El sábado 28 abre la app de ProTeam. ¿Cuál de los tres banquillos es el tuyo?",
   "note": "FASE: IMPACTO (Mié 18/11). u49 · turno de Reels 17/11 21:37 (Dani, Andrés, Marta, Pau): Reel de impacto del lanzamiento. Concepto: rótulos de retransmisión con la casilla en blanco (Zidane, Pat Riley, tiempo muerto del THW Kiel) → tres franjas → calendario de noviembre con el 28 rodeado en azul → 10 días → reto → lista de espera con contador real (9 d 14 h). Voz Mateo de la biblioteca en UNA toma entera a velocidad natural (482 caracteres, sin trocear ni acelerar), música nueva con el golpe en «veintiocho». 31,5 s. Solo vale el 18: no se reprograma a otro día. · 17/11 23:25 corregido por Biel: fuera «Hoy no te contamos más» (voz y pantalla) y «Día 1 de 10»; misma toma con un corte sobre silencio; reauditado 82 · 83."
+ },
+ {
+  "id": "u50",
+  "when": "2026-11-18T17:30:00+01:00",
+  "kind": "reel",
+  "files": [
+   "reels/u50-domingo-once.mp4"
+  ],
+  "cover": "covers/u50-domingo-once.jpg",
+  "caption": "Domingo, 23:00. La semana, sin preparar. Y tu segundo: «¿qué hacemos el martes?» 📲\nEste puede ser el último domingo así. El sábado 28 de noviembre abre la app de ProTeam, para entrenadores de fútbol, baloncesto y balonmano. Quedan 10 días.\nEnvíaselo a tu segundo entrenador, al que te escribe los domingos a las once.\nApúntate a la lista de espera hasta el 27 de noviembre y el 28 empiezas con 3 meses gratis. Enlace en la bio.\n¿A qué hora preparas tú la semana? Comenta.\n\nFoto: Zafer, CC BY-SA 4.0, vía Wikimedia Commons.\n\n#futbolbase #baloncestobase #balonmanobase #entrenadores #proteam",
+  "title": "Domingo, once de la noche. La semana, sin preparar.",
+  "score": "guion 78 · montaje 80",
+  "status": "pending",
+  "campana": "unrespiro",
+  "share_to_feed": false,
+  "fase": "impacto",
+  "fase_dia": "Mié 18/11",
+  "first_comment": "El sábado 28 abre la app de ProTeam. ¿Quién te escribe a ti los domingos a las once?",
+  "note": "FASE: IMPACTO (Mié 18/11). u50 · turno de Reels 18/11 0:37 (Dani, Andrés, Marta, Pau): segundo Reel de impacto. Concepto: la pantalla de bloqueo del domingo (Pablo Laso de fondo, reloj 23:00, notificación genérica del segundo con vibración, widget de fecha que salta a SÁB 28 NOV con el golpe de música, 10 días, la notificación vuelve para el reto, lista de espera con contador real 9 d 6 h). Voz Mateo de la biblioteca en UNA toma entera a velocidad natural (391 caracteres), música nueva con golpe en «veintiocho». 25,5 s. Sin «día N de 10» ni «hoy, solo la fecha». Solo vale el 18: no se reprograma a otro día."
  }
 ]

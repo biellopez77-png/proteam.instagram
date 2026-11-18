@@ -1,9 +1,10 @@
 # u50 · impacto-02 · «Domingo, once de la noche. La semana, sin preparar.» (los tres deportes)
 
-- **fase: impacto** (mié 18/11, día 1 de 10 del lanzamiento, `agencia/LANZAMIENTO.md`)
+- **fase: impacto** (mié 18/11, `agencia/LANZAMIENTO.md`)
+- **18/11 0:45 · cambio antes de producir (Dani y Andrés):** fuera «Hoy, solo la fecha» (voz y descripción) y el rótulo «DÍA 1 DE 10»: el plan del lanzamiento es interno y no se dice que no se habla (regla de Biel del 17/11). Queda la fecha y «Quedan diez días». Voz final: 67 palabras, 391 caracteres.
 - **Estado: listo para producir** · **Crítica de Andrés: 78/100** · encaje de fase: **sí** · riesgo de salto medio · `agencia/criticas/2026-11-17-u49-u50-impacto.md`
 - **Encargo:** t-lanz-01-guiones (impacto 2 de 2). **Segundo Reel del mié 18** (17:30 o 20:30), nunca pegado a u49. Solo vale el 18.
-- **Idea en una frase:** el domingo a las once, con la semana sin preparar, y un mensaje del segundo: «¿qué hacemos el martes?». El sábado 28 abre la app de ProTeam. Hoy, solo la fecha.
+- **Idea en una frase:** el domingo a las once, con la semana sin preparar, y un mensaje del segundo: «¿qué hacemos el martes?». El sábado 28 abre la app de ProTeam.
 - **Lo que NO lleva:** pantallas de la app, funciones, nombres del equipo, precio.
 
 ## 1. Objetivo estratégico
@@ -27,7 +28,7 @@ La semana se prepara el domingo por la noche, tarde y de memoria, porque entre e
 | 2 | Escena | Y tu segundo te escribe: «¿qué hacemos el martes?» | el detalle que se reconoce |
 | 3 | Giro | Este puede ser el último domingo así. | tensión |
 | 4 | Fecha | El sábado veintiocho de noviembre abre la app de ProTeam, para entrenadores de fútbol, baloncesto y balonmano. | lo que viene y para quién |
-| 5 | Impacto | Quedan diez días. Hoy, solo la fecha. | contador |
+| 5 | Impacto | Quedan diez días. | contador |
 | 6 | Reto | Mándaselo al que te escribe los domingos a las once. | reto; vuelve al hook |
 | 7 | Lista | Lista de espera hasta el veintisiete de noviembre: tres meses gratis. | CTA único |
 
@@ -36,7 +37,7 @@ Silencio de 0,3 s después del mensaje del segundo (suena la vibración del móv
 ## 6. Pantallas (máx. 7 palabras por golpe · sin pantallas de la app)
 | s | pantalla |
 |---|---|
-| 0–3,0 | Foto a sangre: entrenador reconocible con gesto de cansancio o manos en la cara (`PROTEAM_ENTRENADOR_TENSION_FOTO_001` si es de primer nivel; si no, la de Pau para el encargo t-lanz-03) · desde el fotograma 0: **DOM 23:00** · *la semana, sin preparar* · arriba, pequeño: «DÍA 1 DE 10» |
+| 0–3,0 | Foto a sangre: entrenador reconocible con gesto de cansancio o manos en la cara (`PROTEAM_ENTRENADOR_TENSION_FOTO_001` si es de primer nivel; si no, la de Pau para el encargo t-lanz-03) · desde el fotograma 0: **DOM 23:00** · *la semana, sin preparar* |
 | 3,0–6,5 | notificación de mensaje en motion graphics (no es de la app ni imita a WhatsApp con su logo): «¿Qué hacemos el martes?» · vibración |
 | 6,5–9,0 | **¿EL ÚLTIMO DOMINGO ASÍ?** |
 | 9,0–15,0 | **SÁB 28 NOV** enorme · *abre ProTeam* · abajo, tres palabras que entran una a una: FÚTBOL · BALONCESTO · BALONMANO |
@@ -46,7 +47,7 @@ Silencio de 0,3 s después del mensaje del segundo (suena la vibración del móv
 
 ## 7. Descripción
 Domingo, 23:00. La semana, sin preparar. Y tu segundo: «¿qué hacemos el martes?» 📲
-Este puede ser el último domingo así. El sábado 28 de noviembre abre la app de ProTeam, para entrenadores de fútbol, baloncesto y balonmano. Quedan 10 días. Hoy, solo la fecha.
+Este puede ser el último domingo así. El sábado 28 de noviembre abre la app de ProTeam, para entrenadores de fútbol, baloncesto y balonmano. Quedan 10 días.
 Envíaselo al que te escribe los domingos a las once.
 Apúntate a la lista de espera hasta el 27 de noviembre y el 28 empiezas con 3 meses gratis. Enlace en la bio.
 

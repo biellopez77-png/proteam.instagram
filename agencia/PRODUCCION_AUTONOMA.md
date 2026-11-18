@@ -54,7 +54,8 @@ En el documento de producción de cada Reel se escribe una línea «Arranque: 1 
   - Para traer el audio: pásalo a ogg/opus a 64k y mételo en un PNG en escala de grises de 1024 de ancho (4 bytes de longitud + bytes). Devuélvelo con `image_paths` (máximo 512 KB por llamada).
   - El archivo llega a `~/.claude/projects/*/tool-results/mcp-Higgsfield-blob-*.png`. Decodifícalo con PIL.
 - Elige la toma más fluida y pronunciada.
-- Copia `tools/reel2/voz.py` y `mkt.py` y adáptalos: cuerpo con atempo ×1,1 y CTA a ×1,0.
+- **Desde el 18/11 (corrección de Biel en u12, «la voz se corta mucho»): UNA toma entera y seguida a velocidad natural, sin trocear frase a frase, sin atempo y sin silencios añadidos** (modelo: `tools/reel50/voz.py`; tiempos de palabra con ElevenLabs Scribe, coste 0). Como mucho un corte sobre un silencio real si hay que quitar una frase. Lo de abajo (atempo, trocear) ya no se hace.
+- (Antiguo) Copia `tools/reel2/voz.py` y `mkt.py` y adáptalos: cuerpo con atempo ×1,1 y CTA a ×1,0.
   - Pausas solo sobre silencios reales y nunca `silenceremove`.
   - Pausa antes del CTA de ~0,2 s como máximo: Biel no quiere pausitas.
 - `mkt.py` genera `times.js` con snap por energía. Todas las animaciones van colgadas de `times.js`.

@@ -1,3 +1,19 @@
+# u12 v2 · Observaciones (Marta 02 y Andrés 05, turno de Reels 18/11 0:37) — corrección de Biel: voz fluida
+Vídeo: `reels/u12-quinto-periodo.mp4` (30,53 s, 1080×1920, 30 fps, −14,6 LUFS). Miradas las 3 láminas generales (todo el vídeo).
+- Voz: UNA toma nueva de Mateo entera y seguida (484 caracteres), a velocidad natural, sin trocear ni acelerar ni pegar silencios. Transcripción de Scribe idéntica al guion. Única pausa larga de la toma: la natural tras «periodo» (0,4 s). Ya no hay saltos: lo que Biel oía eran las 15 frases aceleradas y pegadas de la v1.
+- Dura 5,3 s más que la v1 (30,5 s): imagen, música y efectos cuelgan de times.js y se han recolocado solos; mirado en las láminas que cada rótulo entra con su palabra.
+- 00:00,00 — fotograma 0: Spoelstra (Heat) a sangre con SÁBADO · MINIBASKET / QUINTO PERIODO. ✔ · 00:01,30 corte a los asistentes y *Y tú, contando cruces.* · acta con la columna del 5º.
+- 00:05,37–00:09,43 — EXTREMADURA · MINIBASKET · 2 PERIODOS, columnas, el #7 en dos, *de los 5 primeros.*, SIN CAMBIOS DEL 1º AL 5º.
+- 00:09,47–00:14,97 — papel: GUÁRDALO · EL VIERNES · 6 casillas, pasos 1-2-3 y 6º «libre»: ficha en pantalla 5,5 s ✔.
+- 00:15,00–00:17,53 — MIRAS EL PARTIDO. → *No el acta.* con el golpe de la música (regreso del beat en «acta», 17,06 s).
+- 00:17,57–00:22,47 — COMENTA · Tu deporte, categoría y días · *y te preparo la semana.* · en la app de ProTeam (texto, sin pantallas de la app: vale en fase problema).
+- 00:22,50–00:24,93 — web de la lista con contador real del sáb 21 a las 13:30 (06 d 10 h 29 min 59 s) y «Estás dentro»; HASTA EL 27 NOV · *3 meses gratis.*
+- 00:26,40–00:30,50 — RETO PARA TU STAFF · ¿Quién llevaba el **acta** *en el quinto periodo?* sobre el plano del principio (bucle).
+- Música: la pista nueva del u12 (re menor, 143,5 BPM); para cubrir los 30,5 s se repiten 4 compases antes del final de la toma con 30 ms de fundido cruzado. Audio medido segundo a segundo: −12 a −17 dB hasta el 30 (fundido final).
+- Medido: 3 cortes secos (1,27 · 9,43 · 17,53, previstos). video_intel marca tramos «estáticos» de 1,5–2,2 s en el CTA (texto sobre foto con zoom lento): sin fotograma congelado.
+
+---
+## Versión anterior (v1, 17/11)
 # u12 · Observaciones (Marta 02 y Andrés 05, turno de Reels 17/11 15:37)
 Vídeo: `reels/u12-quinto-periodo.mp4` (25,20 s, 1080×1920, 30 fps, −14,5 LUFS). Miradas las 5 láminas de detalle a 4 fps (100 % del vídeo) y 7 fotogramas a tamaño de móvil.
 - 00:00,00–00:01,17 — fotograma 0: Spoelstra (Heat, NBA) de pie en la banda, QUINTO PERIODO. grande desde el primer fotograma. Funciona sin sonido.
