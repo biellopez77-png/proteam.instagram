@@ -1,3 +1,46 @@
+# u50 · v2 (18/11 9:45, corrección de Biel) · «Domingo, once de la noche. La semana, sin preparar.»
+
+- **Corrección de Biel (oficina, 18/11 8:25):** «reestructura bien el guion: problema, nutrición, CTA + solución». Estructura nueva: problema (bloques 1–2) → nutrición con algo para guardar (3–4) → CTA + solución (5–7).
+- **fase: solución** · **mié 25/11 13:30** (decidido: la solución no puede salir antes del mar 24 por la tarde, y hoy ya no queda voz para regrabarla a tiempo de las 17:30; el «domingo» funciona igual entre semana porque es la escena que se repite cada semana). La versión de impacto del 18 queda descartada.
+- **Estado: listo para producir (voz nueva)** · Crítica de Andrés v2: **78/100** · encaje de fase: sí · `agencia/criticas/2026-11-18-u50-v2-guion.md`
+- **Lo que NO lleva:** precio, «día N», calendario del lanzamiento, funciones que no estén en MARCA.md.
+
+## Voz v2 (voz Mateo · una toma seguida · ≈ 27 s · 84 palabras · 455 caracteres)
+| # | Bloque | Texto |
+|---|---|---|
+| 1 | Problema · hook | Domingo, once de la noche. La semana, sin preparar. |
+| 2 | Problema | Y tu segundo te escribe: «¿qué hacemos el martes?» |
+| 3 | Nutrición | Entre el partido y el lunes no hay otro hueco. |
+| 4 | Nutrición · para guardar | Hazlo el sábado, al recoger: qué falló, qué toca el martes y qué repites el jueves. Tres líneas. |
+| 5 | Solución | Y si la quieres montada: la app de Pro Team, para planificar la semana y cada sesión. |
+| 6 | Reto | Mándaselo al que te escribe los domingos a las once. |
+| 7 | CTA | Lista de espera hasta el veintisiete de noviembre: tres meses gratis. |
+
+Sin pausa antes del CTA. Golpe de música en «Tres líneas».
+
+## Pantallas v2 (un titular corto por plano, encargo de Biel de menos texto)
+| bloque | pantalla |
+|---|---|
+| 1 | la foto a sangre de v1 (Pablo Laso) · **DOM 23:00** |
+| 2 | notificación en motion graphics: «¿Qué hacemos el martes?» |
+| 3 | **NO HAY OTRO HUECO** |
+| 4 | ficha para guardar, ≥ 3 s: **SÁBADO, AL RECOGER** · 1 qué falló · 2 qué toca el martes · 3 qué repites el jueves |
+| 5 | captura real de la semana en la app si hay en el banco (la de u30); si no, rótulo *tu semana, montada* sin pantallas |
+| 6 | vuelve la notificación · **MÁNDASELO** |
+| 7 | lista de espera en motion graphics · **HASTA EL 27 NOV** · *3 meses gratis* · contador del 25 (2 días) |
+
+## Descripción v2
+Domingo, 23:00. La semana, sin preparar. Y tu segundo: «¿qué hacemos el martes?» 📲
+Guárdate esto: el sábado, al recoger, tres líneas. Qué falló, qué toca el martes y qué repites el jueves.
+Y si la quieres montada, la app de ProTeam te deja planificar la semana y cada sesión. Abre el sábado 28.
+Envíaselo a tu segundo entrenador, al que te escribe los domingos a las once.
+Apúntate a la lista de espera hasta el 27 de noviembre y el 28 empiezas con 3 meses gratis. Enlace en la bio.
+¿A qué hora preparas tú la semana? Comenta.
+
+#futbolbase #baloncestobase #balonmanobase #entrenadores #proteam
+
+---
+
 # u50 · impacto-02 · «Domingo, once de la noche. La semana, sin preparar.» (los tres deportes)
 
 - **fase: impacto** (mié 18/11, `agencia/LANZAMIENTO.md`)
