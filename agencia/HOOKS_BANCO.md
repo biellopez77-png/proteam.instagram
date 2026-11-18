@@ -1275,3 +1275,7 @@ Fuente de las normas: Normativa de Balonmano 2025, Juegos Deportivos Escolares d
 - **H1122** El viernes lo sabes. El domingo, ya no. [general · comparativa · planificación] (11/15)
 - **H1123** Escribes la sesión para dieciocho. ¿Qué día vienen los dieciocho? [fútbol · contraintuitiva · planificación] (12/15)
 - **H1124** El Deportivo sabe qué día vuelve cada jugador. ¿Y tú? [fútbol · comparativa · actualidad, caduca 21/11] (11/15)
+- **H1125** La temporada entera, esta tarde, con calma. Esa tarde no llega. [general · provocadora · lanzamiento/empezar] (11/15)
+- **H1126** Una temporada a medias o un partido apuntado. [general · comparativa · partido] (11/15)
+- **H1127** Sábado: el partido fresco. Domingo: la semana en blanco. [general · comparativa · planificación] (11/15)
+- **H1128** Mañana a las once de la noche ya sabes qué vas a estar haciendo. [general · provocadora · planificación] (11/15)
