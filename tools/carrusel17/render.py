@@ -10,5 +10,5 @@ with sync_playwright() as p:
     n = pg.locator('.s').count()
     for i in range(n):
         png = pg.locator('.s').nth(i).screenshot()
-        Image.open(io.BytesIO(png)).convert('RGB').save(os.path.join(R, 'feed', f'c17-{i+1}.jpg'), quality=90)
+        Image.open(io.BytesIO(png)).convert('RGB').save(os.path.join(R, 'feed', f'c17b-{i+1}.jpg'), quality=90)
     b.close(); print(n, 'diapositivas')

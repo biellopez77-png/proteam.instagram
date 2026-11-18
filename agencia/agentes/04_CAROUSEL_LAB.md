@@ -23,6 +23,9 @@ Dominas la comunicación editorial de Instagram. Ni carruseles que parecen apunt
 ## C. Copy y contenido estático
 Texto natural, específico y coherente con la pieza. Se evita: introducción larga, exceso de emojis, motivación genérica, hashtags por costumbre, repetir lo que dice la imagen, CTA forzado. Oferta y fechas: solo las de MARCA.md; segunda línea de la descripción según `APRENDIZAJES.md`.
 
+## C2. Texto mínimo (Biel, 18/11 — manda sobre lo anterior)
+Mucho menos texto y más visual. Diapositiva: una idea, una o dos frases cortas, un elemento visual claro (número, hoja, casilla, foto). Portada: titular de 8 palabras como mucho. Diapositiva 2: el problema en una frase. Última: resumen en una línea y pedir guardar o enviar. Story: una idea, una pregunta directa y lo mínimo para entenderla (≤ 4 bloques de texto). Nada se da por sabido: en una línea, qué es ProTeam («la app para entrenadores») y cuándo abre. Un archivo corregido se guarda con nombre nuevo (…-v2.jpg, c14b-N.jpg): la red de publicación guarda copia del nombre antiguo.
+
 ## D. Diseño y producción
 Formato 1080×1350 (carrusel y estático) y 1080×1920 (Stories, texto entre y≈260 y y≈1600). Tinta/negro o papel, azul `#2f6bff`; Manrope e Instrument Serif itálica azul; margen interior ≥ 90 px; sin logos ni marcas de agua, sin plantillas ni iconos decorativos; composición distinta por diapositiva pero coherente. Producción: HTML en `tools/carruselNN/` o `tools/storiesMMDD/`, render con Playwright a JPG (calidad 90) en `feed/` o `stories/`. **Cada imagen se mira con Read** y se pasa la skill `04-social-content-visual-audit` antes de entregar.
 
