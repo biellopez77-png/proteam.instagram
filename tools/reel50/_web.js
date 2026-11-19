@@ -1,5 +1,5 @@
 // ── 5 · CIERRE (v3, 17/11, encargo de Andrés): la entrada en la lista de espera con el contador (misma animación de u28 v3, u30 y u09) ──
-// el contador sale de lo que falta de verdad cuando se publica (mié 18/11 17:30 → vie 27/11 23:59:59 = 9 d 6 h 29 min 59 s)
+// el contador sale de lo que falta de verdad cuando se publica (mié 25/11 13:30 → vie 27/11 23:59:59 = 2 d 10 h 29 min 59 s)
 let rs = 11; const rnd = () => (rs = (rs * 16807) % 2147483647) / 2147483647;
 const W = { web: T.camp - .05 }; W.tap = W.web + 1.15; W.ok = W.tap + .22; W.gal = T.gra - .1;
 const PT = Array.from({ length: 22 }, () => { const o = document.createElement('div'); const a = rnd() * Math.PI * 2, r = 160 + rnd() * 260;
@@ -16,7 +16,7 @@ function webcta(t) {
     $('wp').style.top = (470 + (1 - p) * 120) + 'px'; $('wp').style.opacity = p;
     [...$('wp').children].forEach((c, i) => { const q = E.out(seg(t, W.web + i * .04, W.web + .28 + i * .04)); c.style.opacity = q; c.style.transform = `translateY(${(1 - q) * 40}px)`; });
     const pg = (t * 1.4) % 1; $('ping').style.transform = `scale(${1 + pg * 1.6})`; $('ping').style.opacity = 1 - pg;
-    const total0 = ((9 * 24 + 6) * 60 + 29) * 60 + 59 - Math.floor(t - W.web);
+    const total0 = ((2 * 24 + 10) * 60 + 29) * 60 + 59 - Math.floor(t - W.web);
     const acc = E.in(seg(t, W.web + .3, W.gal - .08)); const rem = Math.max(0, Math.round(total0 * (1 - acc)));
     const dd = Math.floor(rem / 86400), hh = Math.floor(rem % 86400 / 3600), mm = Math.floor(rem % 3600 / 60), ss = rem % 60;
     [['cd1', dd], ['cd2', hh], ['cd3', mm], ['cd4', ss]].forEach(([id, v]) => { const el = $(id); const nv = String(v).padStart(2, '0'); if (el.textContent !== nv) { el._ch = t; el.textContent = nv; } el.style.color = rem === 0 ? '#4f86ff' : '#f2f1ec';

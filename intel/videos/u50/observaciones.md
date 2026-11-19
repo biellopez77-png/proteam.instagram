@@ -1,12 +1,11 @@
-# u50 · Observaciones (Marta 02 y Andrés 05, turno de Reels 18/11 0:37)
-Vídeo: `reels/u50-domingo-once.mp4` (25,53 s, 1080×1920, 30 fps, −14,4 LUFS). Miradas las 2 láminas generales (todo el vídeo) y 12 fotogramas sueltos a tamaño de móvil en dos pasadas de montaje.
-- 00:00,00 — fotograma 0: Pablo Laso (Anadolu Efes, Euroliga) a sangre, DOMINGO · **23:00** grande arriba y *la semana, sin preparar.* abajo: el hook se entiende sin sonido ✔. Reloj con los dos puntos parpadeando y acercamiento lento.
-- 00:04,00 — baja la notificación «Tu segundo · Escribiendo…» con vibración; 00:05,70 se escribe «¿Qué hacemos el martes?»; 00:06,30 el reloj pasa a 23:01.
-- 00:07,30 — corte: Laso más cerca y oscuro, **¿EL ÚLTIMO** *domingo así?* (reloj atenuado arriba).
-- 00:09,73 — fondo desenfocado, EL SÁBADO → 00:10,34 **SÁB 28 / NOV** con el golpe de música (el beat entra justo en «veintiocho») → *abre ProTeam.* → FÚTBOL · BALONCESTO · BALONMANO al ritmo de la voz.
-- 00:16,27 — QUEDAN **10** *días.* (1,7 s).
-- 00:17,93 — vuelve Laso y la notificación (bucle con el principio): RETO PARA TU STAFF · **MÁNDASELO** *al de los domingos a las once.*
-- 00:20,83 — web de la lista con contador real (09 d 06 h 29 min 59 s a las 17:30 del 18) → «Estás dentro» → 00:23,33 HASTA EL **27 NOV** · *3 meses gratis.*
-- Voz: una toma entera y seguida, sin cortes; única pausa > 0,3 s la natural de 0,4 s tras «así». Sin pausa antes del CTA. Audio −12 a −20 dB hasta el final.
-- Medido: 4 cortes secos previstos (7,27 · 16,23 · 17,9 · 20,8), ningún fotograma suelto. video_intel marca tramos «estáticos» de 1,5–4,3 s: son acercamientos lentos con texto (en la segunda pasada se aceleró el zoom de 0–7 s y el del bloque del 28, se añadió deriva vertical y el parpadeo del reloj); ningún fotograma congelado más de 1,5 s en la medida propia.
-- Sin «día N de 10», sin «hoy solo la fecha», sin pantallas de la app, sin logos de terceros en la notificación.
+# u50 v2 · observaciones con marcas de tiempo (Marta 02 y Andrés 05 · 19/11 3:55)
+Láminas miradas: detalle_001 a detalle_005 (todo el vídeo, 0–28,2 s, a 4 fps). La v1 (impacto del 18) queda sustituida.
+
+- 0,00: Pablo Laso a sangre con DOMINGO **23:00** y *la semana, sin preparar.* ya puestos; se entiende sin sonido. ✔ Zoom lento y los dos puntos del reloj parpadean (0–2,2 s: el único tramo de poco movimiento de más de 2 s).
+- 4,0: entra la notificación «Tu segundo · Escribiendo…» con vibración; 5,6–6,0 se escribe «¿Qué hacemos el martes?»; 6,0: el reloj salta a **23:01** en «martes». ✔
+- 6,77: corte al fondo desenfocado; SÁB · **DOM** (azul, 23:00) · LUN entran uno a uno; 8,2: **NO HAY** · 8,8: *otro hueco.* ✔ (los primeros 0,15 s del plano solo llevan el fondo).
+- 9,47–15,9: papel · GUÁRDALO · **Sábado, al recoger.** · ficha de 3 líneas; cada línea se pone azul cuando Mateo la dice (11,3 · 12,0 · 13,0). 14,9: *Tres líneas.* con el golpe de la música. Ficha 6,4 s en pantalla. ✔
+- 15,9–17,3: *¿La quieres montada?* sobre oscuro; 17,3: sube el móvil con la captura real de Planificación (Semana 8); PLANIFICACIÓN · CAPTURA REAL · Tu semana, *montada.*; 19,0–20,4: la tarjeta de la semana marcada en azul. Captura 3,6 s (dentro de los 4 s que pidió Andrés). ✔
+- 20,87: corte seco a Laso (bucle con el principio) · RETO PARA TU STAFF · **MÁNDASELO** · *al de los domingos a las once.* · vuelve la notificación.
+- 23,7–26,1: lista de espera con el contador de su día (mié 25 13:30 → **02 d 10 h 29 min 59 s**), email, «Estás dentro». 26,17: un fotograma de Laso sin texto (0,2 s) y *3 meses gratis.* · HASTA EL **27 NOV** hasta el final.
+- Audio: voz de principio a fin (0,06–27,58 s; correlación de la envolvente con la pista sin música 0,98); voz unos 8–10 dB por encima de la música; música hasta el final con fundido; −13,8 LUFS.

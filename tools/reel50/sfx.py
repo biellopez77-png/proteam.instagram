@@ -1,4 +1,5 @@
-"""Efectos del u50 (suaves): golpe de entrada, vibración del móvil al llegar la notificación (dos veces), tic del reloj a 23:01, fecha del 28, deportes, 10 días, reto y cierre de la lista de espera.
+"""Efectos del u50 v2 (suaves): golpe de entrada, vibración del móvil con la notificación, tic del reloj, los tres días, «no hay otro hueco», las tres líneas de la ficha, golpe en «Tres líneas», la captura, el reto y el cierre.
+(antes) Efectos del u50 (suaves): golpe de entrada, vibración del móvil al llegar la notificación (dos veces), tic del reloj a 23:01, fecha del 28, deportes, 10 días, reto y cierre de la lista de espera.
 python3 sfx.py sfx.wav times.js"""
 
 import sys, json, numpy as np
@@ -30,10 +31,13 @@ def vib(d=.42):
 put(0, thump(.45), .22)
 put(T['seg'] - .05, vib(.42), .2); put(T['seg'] - .1, swish(.25), .05)
 put(T['martes'], tick(.03, 2200), .12)
-put(T['ult'] - .1, whoosh(.4, 2400, 400), .09); put(T['ultimo'] - .1, swish(.25), .05)
-put(T['sab'] - .1, whoosh(.45, 300, 2600), .08); put(T['v28'] - .05, thump(.5), .24); put(T['v28'] + .05, shimmer(.6), .05)
-for k in ('fut', 'bal', 'bm'): put(T[k] - .05, tick(.03, 1800), .1)
-put(T['qued'] - .2, whoosh(.4, 2400, 400), .09); put(T['diez'] - .05, thump(.5), .24)
+put(T['entre'] - .1, whoosh(.4, 2400, 400), .09)
+for k, d in (('entre', .05), ('entre', .25), ('entre', .45)): put(T[k] + d, tick(.03, 1800), .08)
+put(T['nohay'] - .05, thump(.4), .14)
+put(T['hazlo'] - .12, whoosh(.45, 300, 2600), .08)
+for k in ('falla', 'toca', 'rep'): put(T[k] - .05, tick(.03, 1600), .12)
+put(T['tres'] - .05, thump(.5), .24); put(T['tres'] + .05, shimmer(.6), .05)
+put(T['ysi'] - .1, whoosh(.4, 2400, 400), .09); put(T['app'] - .25, whoosh(.45, 300, 2400), .08); put(T['planif'] + .2, tick(.03, 1500), .12)
 put(T['mand'] - .05, whoosh(.45, 300, 2400), .1); put(T['mand'] + .1, vib(.42), .16)
 put(T['camp'] - .05, whoosh(.45, 300, 2200), .12); put(T['camp'] + .19, tick(.03, 1500), .14); put(T['camp'] + 1.1, tick(.03, 1300), .2); put(T['camp'] + 1.32, shimmer(.6), .05)
 put(T['gra'] - .1, thump(.45), .24)

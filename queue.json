@@ -3210,19 +3210,19 @@
   "when": "2026-11-25T13:30:00+01:00",
   "kind": "reel",
   "files": [
-   "reels/u50-domingo-once.mp4"
+   "reels/u50-domingo-once-v2.mp4"
   ],
-  "cover": "covers/u50-domingo-once.jpg",
-  "caption": "Domingo, 23:00. La semana, sin preparar. Y tu segundo: «¿qué hacemos el martes?» 📲\nEste puede ser el último domingo así. El sábado 28 de noviembre abre la app de ProTeam, para entrenadores de fútbol, baloncesto y balonmano. Quedan 10 días.\nEnvíaselo a tu segundo entrenador, al que te escribe los domingos a las once.\nApúntate a la lista de espera hasta el 27 de noviembre y el 28 empiezas con 3 meses gratis. Enlace en la bio.\n¿A qué hora preparas tú la semana? Comenta.\n\nFoto: Zafer, CC BY-SA 4.0, vía Wikimedia Commons.\n\n#futbolbase #baloncestobase #balonmanobase #entrenadores #proteam",
+  "cover": "covers/u50-domingo-once-v2.jpg",
+  "caption": "Domingo, 23:00. La semana, sin preparar. Y tu segundo: «¿qué hacemos el martes?» 📲\nGuárdate esto: el sábado, al recoger, tres líneas. Qué falló, qué toca el martes y qué repites el jueves.\nY si la quieres montada, la app de ProTeam te deja planificar la semana y cada sesión. Abre el sábado 28.\nEnvíaselo a tu segundo entrenador, al que te escribe los domingos a las once.\nComenta tu deporte, tu categoría y tus días y te preparo la semana. Lista de espera hasta el 27 de noviembre: el 28 empiezas con 3 meses gratis. Enlace en la bio.\n\nFoto: Pablo Laso (Zafer, CC BY-SA 4.0), vía Wikimedia Commons.\n\n#futbolbase #baloncestobase #balonmanobase #entrenadores #proteam",
   "title": "Domingo, once de la noche. La semana, sin preparar.",
   "score": "guion 78 · montaje 80",
-  "status": "borrador",
+  "status": "pending",
   "campana": "unrespiro",
   "share_to_feed": false,
   "fase": "solución",
   "fase_dia": "Mié 25/11",
-  "first_comment": "El sábado 28 abre la app de ProTeam. ¿Quién te escribe a ti los domingos a las once?",
-  "note": "CAMBIOS DE BIEL 18/11 (problema, nutrición, CTA + solución): guion v2 escrito y criticado (78) en agencia/guiones/2026-11-17-u50-impacto-domingo-once.md; falta regrabar voz (455 caracteres) y remontar; destino mié 25 13:30 (solución). El vídeo actual (impacto del 18) NO vale. FASE: IMPACTO (Mié 18/11). u50 · turno de Reels 18/11 0:37 (Dani, Andrés, Marta, Pau): segundo Reel de impacto. Concepto: la pantalla de bloqueo del domingo (Pablo Laso de fondo, reloj 23:00, notificación genérica del segundo con vibración, widget de fecha que salta a SÁB 28 NOV con el golpe de música, 10 días, la notificación vuelve para el reto, lista de espera con contador real 9 d 6 h). Voz Mateo de la biblioteca en UNA toma entera a velocidad natural (391 caracteres), música nueva con golpe en «veintiocho». 25,5 s. Sin «día N de 10» ni «hoy, solo la fecha». Solo vale el 18: no se reprograma a otro día.; oficina: cambios: reestructura bien el guion: problema, nutricion, CTA + solucion"
+  "first_comment": "Comenta tu deporte, categoría y días y te preparo la semana.",
+  "note": "u50 v2 · turno de Reels 19/11 3:37 (corrección de Biel del 18/11 «problema, nutrición, CTA + solución»): voz de Mateo regrabada entera (biblioteca, una toma, 453 caracteres), 28,2 s; problema (DOM 23:00 + notificación del segundo + «no hay otro hueco» sobre SÁB·DOM·LUN) → ficha para guardar (sábado, al recoger: 3 líneas) → solución con la captura real de la Semana 8 (3,6 s) → reto en bucle → lista de espera con el contador de su día (2 d 10 h). Música nueva (fa sostenido menor, golpe en «Tres líneas»). Andrés: final 80. CAMBIOS DE BIEL 18/11 (problema, nutrición, CTA + solución): guion v2 escrito y criticado (78) en agencia/guiones/2026-11-17-u50-impacto-domingo-once.md; falta regrabar voz (455 caracteres) y remontar; destino mié 25 13:30 (solución). El vídeo actual (impacto del 18) NO vale. FASE: IMPACTO (Mié 18/11). u50 · turno de Reels 18/11 0:37 (Dani, Andrés, Marta, Pau): segundo Reel de impacto. Concepto: la pantalla de bloqueo del domingo (Pablo Laso de fondo, reloj 23:00, notificación genérica del segundo con vibración, widget de fecha que salta a SÁB 28 NOV con el golpe de música, 10 días, la notificación vuelve para el reto, lista de espera con contador real 9 d 6 h). Voz Mateo de la biblioteca en UNA toma entera a velocidad natural (391 caracteres), música nueva con golpe en «veintiocho». 25,5 s. Sin «día N de 10» ni «hoy, solo la fecha». Solo vale el 18: no se reprograma a otro día.; oficina: cambios: reestructura bien el guion: problema, nutricion, CTA + solucion; reprogramada desde la oficina"
  },
  {
   "id": "u59",
