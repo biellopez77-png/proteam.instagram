@@ -498,3 +498,11 @@
 - Métricas de 7 días: u08 sigue como la mejor con diferencia (19.013 vistas, 31,2 % de saltos, 14,2 s, 130 guardados, 106 compartidos). Después vienen u09 (3.472), u05 (2.363), u59 (2.192 en menos de 9 h, 14 guardados), u03 (2.064), u04 (2.008) y u29 (1.848). u49 se queda en 244 vistas con un 58 % de saltos. Los carruseles siguen entre 30 y 110 vistas.
 - Hoja: en Plan, ocho piezas de hoy marcadas como Publicado con su media_id. En Analisis, filas nuevas para u08, u09, u05 y u29 (no tienen predicción en el Plan). u27 no aparece en los datos de Windsor y no lleva fila.
 - Comentarios: dos respuestas (txaguer en u08 y «Mini» en u08). Ningún spam.
+
+## 19/11 6:37 · Turno de Reels (Dani, Andrés, Marta, Pau)
+- Sin correcciones de Biel pendientes en Reels; u28 y u33 ya tienen voz de Mateo (están en borrador por la fase de solución y el contador, tarea aparte de Marta).
+- u68 «Libreta. Pizarra. Excel. WhatsApp. Cuatro sitios para un solo equipo.» (encargo de Biel, propuesta B, guion 78) → jue 19/11 13:30, fase contexto. Concepto: cuatro fichas dibujadas (sin IA ni logotipos) que se juntan, se caen («SE PIERDE») y vuelan a un punto → ProTeam.; banquillos del Bernabéu y del Camp Nou; tres planos cortos de la app real; 6 MESES; 28 NOV; lista con contador real; bucle. Voz de Mateo de la biblioteca (la original sigue «disabled») en una toma entera de 640 caracteres, comprobada con Scribe; música nueva corta (15 s) en fa menor con golpe en «Pro Team». 43,6 s. Andrés 80.
+- Decidido: u68 el jueves y no el viernes (Andrés: «si solo sale una, esta, y el jueves»; el viernes es decisión/problema). u67 (74) sigue pendiente de voz y de sus tres correcciones; u69 de reserva.
+- Decidido: pista de música de 15 s en bucle (dos compases) en vez de 32 s, para no pasar del tope diario de voz.
+- Voz gastada hoy: 3.399 de 3.500 (este turno 865: voz 640 + música). Sin segundo Reel: no cabe otra voz. Huecos de hoy 17:30, 20:30 y 22:30 vacíos.
+- Reserva: 48 guiones criticados sin producir (más de 8); Dani no escribe más en este turno.

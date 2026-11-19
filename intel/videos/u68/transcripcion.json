@@ -1,0 +1,243 @@
+{
+ "origen": "tools/reel68/voz.tsv",
+ "tipo": "locución generada con tiempos por palabra (exacta, no reconocida por oído)",
+ "palabras": 20,
+ "primera_palabra_s": 0.06,
+ "ultima_palabra_s": 42.94,
+ "ritmo_palabras_por_s": 0.47,
+ "frases": [
+  {
+   "desde": 0.06,
+   "hasta": 0.7,
+   "texto": "Libreta.",
+   "palabras_por_s": 1.56
+  },
+  {
+   "desde": 1.02,
+   "hasta": 1.58,
+   "texto": "Pizarra.",
+   "palabras_por_s": 1.79
+  },
+  {
+   "desde": 1.98,
+   "hasta": 2.62,
+   "texto": "Excel.",
+   "palabras_por_s": 1.56
+  },
+  {
+   "desde": 2.78,
+   "hasta": 3.34,
+   "texto": "WhatsApp.",
+   "palabras_por_s": 1.79
+  },
+  {
+   "desde": 3.74,
+   "hasta": 5.74,
+   "texto": "Cuatro sitios para un solo equipo.",
+   "palabras_por_s": 0.5
+  },
+  {
+   "desde": 6.14,
+   "hasta": 8.14,
+   "texto": "Si entrenas, sabes de lo que hablamos.",
+   "palabras_por_s": 0.5
+  },
+  {
+   "desde": 8.38,
+   "hasta": 10.58,
+   "texto": "Porque nosotros también entrenamos.",
+   "palabras_por_s": 0.45
+  },
+  {
+   "desde": 10.78,
+   "hasta": 15.98,
+   "texto": "Y cada semana era igual: apuntar en un sitio, buscar en otro, avisar en otro…",
+   "palabras_por_s": 0.38
+  },
+  {
+   "desde": 16.02,
+   "hasta": 17.82,
+   "texto": "y que siempre se perdiera algo.",
+   "palabras_por_s": 0.56
+  },
+  {
+   "desde": 18.14,
+   "hasta": 19.66,
+   "texto": "Buscábamos cómo arreglarlo.",
+   "palabras_por_s": 0.66
+  },
+  {
+   "desde": 19.9,
+   "hasta": 23.42,
+   "texto": "Para nosotros, y para todos los entrenadores que estaban igual.",
+   "palabras_por_s": 0.28
+  },
+  {
+   "desde": 23.74,
+   "hasta": 25.66,
+   "texto": "Hasta que decidimos crearlo.",
+   "palabras_por_s": 0.52
+  },
+  {
+   "desde": 25.74,
+   "hasta": 28.3,
+   "texto": "Pro Team: una app para entrenadores.",
+   "palabras_por_s": 0.39
+  },
+  {
+   "desde": 28.46,
+   "hasta": 32.54,
+   "texto": "La semana, la convocatoria y cada jugador, en el mismo sitio.",
+   "palabras_por_s": 0.25
+  },
+  {
+   "desde": 32.58,
+   "hasta": 34.78,
+   "texto": "Llevamos seis meses construyéndola.",
+   "palabras_por_s": 0.45
+  },
+  {
+   "desde": 34.82,
+   "hasta": 36.46,
+   "texto": "Y el veintiocho abre.",
+   "palabras_por_s": 0.61
+  },
+  {
+   "desde": 36.513,
+   "hasta": 38.62,
+   "texto": "Pero la lista se cierra el veintisiete.",
+   "palabras_por_s": 0.47
+  },
+  {
+   "desde": 38.66,
+   "hasta": 41.74,
+   "texto": "Quien está dentro, empieza con tres meses gratis.",
+   "palabras_por_s": 0.32
+  },
+  {
+   "desde": 41.82,
+   "hasta": 42.94,
+   "texto": "Enlace en la bio.",
+   "palabras_por_s": 0.89
+  }
+ ],
+ "pausas": [
+  {
+   "desde": 1.58,
+   "hasta": 1.98,
+   "duracion_s": 0.4
+  },
+  {
+   "desde": 3.34,
+   "hasta": 3.74,
+   "duracion_s": 0.4
+  },
+  {
+   "desde": 5.74,
+   "hasta": 6.14,
+   "duracion_s": 0.4
+  }
+ ],
+ "por_palabra": [
+  {
+   "desde": 0.06,
+   "hasta": 0.7,
+   "palabra": "Libreta."
+  },
+  {
+   "desde": 1.02,
+   "hasta": 1.58,
+   "palabra": "Pizarra."
+  },
+  {
+   "desde": 1.98,
+   "hasta": 2.62,
+   "palabra": "Excel."
+  },
+  {
+   "desde": 2.78,
+   "hasta": 3.34,
+   "palabra": "WhatsApp."
+  },
+  {
+   "desde": 3.74,
+   "hasta": 5.74,
+   "palabra": "Cuatro sitios para un solo equipo."
+  },
+  {
+   "desde": 6.14,
+   "hasta": 8.14,
+   "palabra": "Si entrenas, sabes de lo que hablamos."
+  },
+  {
+   "desde": 8.38,
+   "hasta": 10.58,
+   "palabra": "Porque nosotros también entrenamos."
+  },
+  {
+   "desde": 10.78,
+   "hasta": 12.38,
+   "palabra": "Y cada semana era igual:"
+  },
+  {
+   "desde": 12.46,
+   "hasta": 15.98,
+   "palabra": "apuntar en un sitio, buscar en otro, avisar en otro…"
+  },
+  {
+   "desde": 16.02,
+   "hasta": 17.82,
+   "palabra": "y que siempre se perdiera algo."
+  },
+  {
+   "desde": 18.14,
+   "hasta": 19.66,
+   "palabra": "Buscábamos cómo arreglarlo."
+  },
+  {
+   "desde": 19.9,
+   "hasta": 23.42,
+   "palabra": "Para nosotros, y para todos los entrenadores que estaban igual."
+  },
+  {
+   "desde": 23.74,
+   "hasta": 25.66,
+   "palabra": "Hasta que decidimos crearlo."
+  },
+  {
+   "desde": 25.74,
+   "hasta": 28.3,
+   "palabra": "Pro Team: una app para entrenadores."
+  },
+  {
+   "desde": 28.46,
+   "hasta": 32.54,
+   "palabra": "La semana, la convocatoria y cada jugador, en el mismo sitio."
+  },
+  {
+   "desde": 32.58,
+   "hasta": 34.78,
+   "palabra": "Llevamos seis meses construyéndola."
+  },
+  {
+   "desde": 34.82,
+   "hasta": 36.46,
+   "palabra": "Y el veintiocho abre."
+  },
+  {
+   "desde": 36.513,
+   "hasta": 38.62,
+   "palabra": "Pero la lista se cierra el veintisiete."
+  },
+  {
+   "desde": 38.66,
+   "hasta": 41.74,
+   "palabra": "Quien está dentro, empieza con tres meses gratis."
+  },
+  {
+   "desde": 41.82,
+   "hasta": 42.94,
+   "palabra": "Enlace en la bio."
+  }
+ ]
+}

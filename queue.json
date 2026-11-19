@@ -3483,5 +3483,24 @@
   "fase_dia": "Jue 19/11",
   "first_comment": "Comenta tu deporte, categoría y días y te preparo la semana. De semana, convocatoria y minutos, ¿cuál os quita más tiempo?",
   "note": "FASE: CONTEXTO (Jue 19/11). u72 · turno de Reels 19/11 0:37: segundo Reel del turno, de datos corto (versión corta del guion u52 de Dani; Andrés 77). Tres deportes después de u51 (fútbol, escena). Concepto: tres franjas, un lunes (Unai Simón, Kawhi Leonard y Reichmann en tres franjas con 11 · 5 · 7; en «lunes» se juntan y cae la hoja SEMANA · CONVOCATORIA · MINUTOS; ProTeam. para los tres; lista con contador real 8 d 12 h). Voz Mateo de la biblioteca en una toma (251 caracteres), música nueva sol menor con golpe en «lunes». 17,1 s (la toma dura 16,4 s y no se acelera). Contador calculado para el jue 19 11:30."
+ },
+ {
+  "id": "u68",
+  "when": "2026-11-19T13:30:00+01:00",
+  "kind": "reel",
+  "files": [
+   "reels/u68-cuatro-sitios.mp4"
+  ],
+  "cover": "covers/u68-cuatro-sitios.jpg",
+  "caption": "Libreta, pizarra, Excel y WhatsApp. Cuatro sitios para un solo equipo. ⚽🏀🤾\nNosotros también entrenamos, y cada semana era igual: apuntar en un sitio, buscar en otro, avisar en otro… y siempre se perdía algo. Por eso decidimos crear ProTeam, la app para entrenadores de fútbol, baloncesto y balonmano: la semana, la convocatoria y cada jugador, en el mismo sitio. Llevamos seis meses construyéndola.\nAbre el sábado 28 de noviembre. Lista de espera hasta el 27: entras con 3 meses gratis. Enlace en la bio.\nEnvíaselo a tu segundo entrenador: ¿qué usáis hoy para el equipo, libreta, Excel o WhatsApp? Y comenta tu deporte, tu categoría y tus días y te preparo la semana. 👇\n\nFotos: banquillo del Bernabéu (Daniel R. Walker, CC BY-SA 3.0) y del Camp Nou (Dnklr, CC BY 3.0), vía Wikimedia Commons. Objetos dibujados por ProTeam.\n\n#entrenador #futbolbase #baloncestobase #balonmanobase #proteam",
+  "title": "Libreta. Pizarra. Excel. WhatsApp. Cuatro sitios para un solo equipo.",
+  "score": "guion 78 · montaje 80",
+  "status": "pending",
+  "campana": "unrespiro",
+  "share_to_feed": false,
+  "fase": "contexto",
+  "fase_dia": "Jue 19/11",
+  "first_comment": "Comenta tu deporte, categoría y días y te preparo la semana. Y hoy, ¿qué usáis para el equipo: libreta, Excel o WhatsApp?",
+  "note": "FASE: CONTEXTO (Jue 19/11). u68 · turno de Reels 19/11 6:37 (Marta, Pau, Andrés): encargo de Biel del 18/11 (propuesta B «Cuatro sitios», guion de Dani, Andrés 78), al hueco libre del jueves 13:30 porque Andrés pidió que, si solo salía una, fuera esta y el jueves. Concepto: cuatro fichas dibujadas (libreta, pizarra, hoja de cálculo, chat; sin IA ni logotipos) una por palabra → 2×2 «4 SITIOS» → banquillo del Bernabéu «nosotros también» → apuntar/buscar/avisar → se caen: SE PIERDE en rojo → Camp Nou «y para todos» → vuelan a un punto: ProTeam. → tres planos cortos de la app real → 6 MESES → 28 NOV → lista con contador real (8 d 10 h 29 min) → bucle con las cuatro fichas. Píldora «LISTA: SE CIERRA EL 27» arriba desde el fotograma 0. Voz Mateo de la biblioteca en una toma entera (640 caracteres), música nueva fa menor con golpe en «Pro Team». 43,6 s. Andrés 80. Contador calculado para el jue 19 13:30: si se mueve, rehacer el contador."
  }
 ]
