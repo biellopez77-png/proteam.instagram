@@ -3445,5 +3445,43 @@
   "fase": "contexto",
   "fase_dia": "Jue 19/11",
   "note": "Story de contexto de Clara (04): recordatorio de la lista de espera con cuenta atrás (9 días, cierto el jue 19) · lista hasta el 27 nov 23:59 → el 28 con 3 meses gratis y la semana montada; sin precio. Solo vale el jue 19. Foto: Steffen Weinhold, selección alemana (Man77, CC BY-SA 3.0, Commons). Andrés 75."
+ },
+ {
+  "id": "u51",
+  "when": "2026-11-19T09:30:00+01:00",
+  "kind": "reel",
+  "files": [
+   "reels/u51-sabado-una-y-diez.mp4"
+  ],
+  "cover": "covers/u51-sabado-una-y-diez.jpg",
+  "caption": "Sábado, 13:10. El partido acabó hace diez minutos. Y el entrenador sigue con él: quién jugó cuánto, qué falló, qué toca el martes. ⚽\nEse problema no lo vimos desde una oficina: lo vivimos en el banquillo. Buscábamos cómo resolverlo y así nació ProTeam, la app para entrenadores de fútbol, baloncesto y balonmano. Hecha en el banquillo, no en una oficina.\nAbre el sábado 28 de noviembre. Lista de espera hasta el 27: entras con 3 meses gratis. Enlace en la bio.\nEnvíaselo a tu segundo entrenador: cuando acaba el partido, ¿quién de vosotros sigue con él? Y comenta tu deporte, tu categoría y tus días y te preparo la semana. 👇\n\nFotos: banquillo del Camp Nou (Dnklr, CC BY 3.0) y del Bernabéu (Daniel R. Walker, CC BY-SA 3.0), vía Wikimedia Commons.\n\n#futbolbase #entrenadordefutbol #entrenador #entrenadores #proteam",
+  "title": "Sábado, una y diez. El partido acabó hace diez minutos.",
+  "score": "guion 78 · montaje 80",
+  "status": "pending",
+  "campana": "unrespiro",
+  "share_to_feed": false,
+  "fase": "contexto",
+  "fase_dia": "Jue 19/11",
+  "first_comment": "Comenta tu deporte, categoría y días y te preparo la semana. Y cuando acaba el partido, ¿quién de vosotros sigue con él?",
+  "note": "FASE: CONTEXTO (Jue 19/11). u51 · turno de Reels 19/11 0:37 (Dani, Andrés, Marta, Pau): primer Reel del jueves (no había ninguno). Guion de Dani (Andrés 78). Concepto: el reloj que no se para (banquillo vacío del Camp Nou con marcador 13:10 → FINAL 13:00 → sigue corriendo; tres avisos ¿minutos? ¿qué falló? ¿martes?; «OFICINA» tachada en papel; corte al banquillo del Bernabéu; golpe en «nació»: ProTeam.; reto «¿quién sigue con el partido?»; lista con contador real 8 d 14 h). Voz Mateo de la biblioteca en una toma (570 caracteres; un corte sobre silencio real para quitar «Los jugadores ya se van»), música nueva re menor con golpe en «nació». 35,6 s. Contador calculado para el jue 19 9:30: si se mueve, rehacer el contador."
+ },
+ {
+  "id": "u72",
+  "when": "2026-11-19T11:30:00+01:00",
+  "kind": "reel",
+  "files": [
+   "reels/u72-once-cinco-siete.mp4"
+  ],
+  "cover": "covers/u72-once-cinco-siete.jpg",
+  "caption": "11 en el campo. 5 en la pista. 7 en la de balonmano. Tres deportes y el mismo lunes: la semana, la convocatoria, los minutos. ⚽🏀🤾\nEnvíaselo a tu segundo entrenador: de esas tres, ¿cuál os quita más tiempo el lunes?\nPor eso la app de ProTeam es para los tres. Abre el sábado 28 de noviembre.\nLista de espera hasta el 27 de noviembre: entras con 3 meses gratis. Enlace en la bio. Y comenta tu deporte, tu categoría y tus días y te preparo la semana. 👇\n\nFotos: Unai Simón (Bryan Berlin, CC BY-SA 4.0), Kawhi Leonard (Chensiyuan, CC BY-SA 4.0) y Tobias Reichmann (Michael Frey, CC BY-SA 3.0), vía Wikimedia Commons.\n\n#entrenador #futbolbase #baloncestobase #balonmanobase #proteam",
+  "title": "11 · 5 · 7. Tres deportes, el mismo lunes.",
+  "score": "guion 77 · montaje 78",
+  "status": "pending",
+  "campana": "unrespiro",
+  "share_to_feed": false,
+  "fase": "contexto",
+  "fase_dia": "Jue 19/11",
+  "first_comment": "Comenta tu deporte, categoría y días y te preparo la semana. De semana, convocatoria y minutos, ¿cuál os quita más tiempo?",
+  "note": "FASE: CONTEXTO (Jue 19/11). u72 · turno de Reels 19/11 0:37: segundo Reel del turno, de datos corto (versión corta del guion u52 de Dani; Andrés 77). Tres deportes después de u51 (fútbol, escena). Concepto: tres franjas, un lunes (Unai Simón, Kawhi Leonard y Reichmann en tres franjas con 11 · 5 · 7; en «lunes» se juntan y cae la hoja SEMANA · CONVOCATORIA · MINUTOS; ProTeam. para los tres; lista con contador real 8 d 12 h). Voz Mateo de la biblioteca en una toma (251 caracteres), música nueva sol menor con golpe en «lunes». 17,1 s (la toma dura 16,4 s y no se acelera). Contador calculado para el jue 19 11:30."
  }
 ]

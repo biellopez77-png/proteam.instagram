@@ -1,6 +1,6 @@
 # u52 · lanzamiento · CONTEXTO · «Once en el campo. Cinco en la pista. Siete en la de balonmano.» (los tres deportes; imagen de balonmano)
 
-- **Estado: listo para producir** · **Crítica de Andrés: 79/100** (guion, escala 16/11) · **encaje de fase: sí** · riesgo de salto bajo · crítica en `agencia/criticas/2026-11-17-u52-guion.md`
+- **Estado: usado como base de u72 (versión corta de datos, jue 19/11 11:30); el largo NO se produce** · **Crítica de Andrés: 79/100** (guion, escala 16/11) · **encaje de fase: sí** · riesgo de salto bajo · crítica en `agencia/criticas/2026-11-17-u52-guion.md`
 - **fase: contexto** · **Cuándo:** jue 19/11, segundo Reel del día (13:30 o 17:30; no seguido de u51). Vale del 19 al 21.
 - **Deporte:** los tres; foto de cierre y bucle de balonmano (para que la semana tenga balonmano con u53 y la reserva) · **Encargo:** t-lanz-01-guiones (contexto 2 de 2). Consigna de Biel aplicada: sin su nombre; habla ProTeam.
 - **Pantalla de la app:** ninguna.

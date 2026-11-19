@@ -1,6 +1,6 @@
 # u51 · lanzamiento · CONTEXTO · «Sábado, una y diez. El partido acabó hace diez minutos.» (fútbol)
 
-- **Estado: listo para producir** · **Crítica de Andrés: 78/100** (guion, escala 16/11) · **encaje de fase: sí** · riesgo de salto medio · crítica en `agencia/criticas/2026-11-17-u51-guion.md`
+- **Estado: producido (jue 19/11 9:30, `reels/u51-sabado-una-y-diez.mp4`)** · **Crítica de Andrés: 78/100** (guion, escala 16/11) · **encaje de fase: sí** · riesgo de salto medio · crítica en `agencia/criticas/2026-11-17-u51-guion.md`
 - **fase: contexto** · **Cuándo:** jue 19/11, primer Reel del día (9:30). Vale del 19 al 21 («El 28 abre ProTeam»).
 - **Deporte:** fútbol (base) · **Encargo:** t-lanz-01-guiones (contexto 1 de 2). Consigna de Biel 17/11 20:30 aplicada: **habla de la app, no de Biel; su nombre no aparece en ningún sitio** (ni cara, ni «el fundador», ni historia personal). Quien habla es ProTeam («nosotros»).
 - **Pantalla de la app:** ninguna (contexto: de dónde viene, no qué hace).
