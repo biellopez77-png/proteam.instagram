@@ -514,3 +514,7 @@
 - u73 «Tres exclusiones. Seis minutos con uno menos.» (balonmano, datos corto, versión corta del problema de u25) → vie 20/11 20:30. Concepto: dos cronómetros. Voz 222 caracteres, música nueva si bemol menor. 15,4 s. Andrés: guion 77 · montaje 78.
 - Decidido: la web del Deportivo no se pudo reabrir (WebFetch sin permiso en el turno desatendido); la búsqueda confirma el artículo oficial y el partido del sábado a las 14:00.
 - Voz gastada hoy: 1.319 de 3.500. Reserva: más de 40 guiones criticados sin producir; Dani no escribe más. Hueco de hoy 22:30 libre para el turno de las 6:37 o siguientes.
+
+## 20/11 6:47 · Radar de actualidad (Samuel y Dani)
+- Radar: 3 ideas de actualidad para Dani; la principal, fútbol: la jornada 13 de LaLiga va del viernes a las 21:00 (Athletic–Espanyol) al lunes a las 21:00 (Levante–Elche) → «lo primero que se escribe en la semana es el día del partido». Las otras dos: Barça de balonmano (jueves en Polonia, sábado 20:00 en Irun por el liderato → el primer entreno tras el partido se escribe con el RPE) y Valencia Basket (siete seguidas → qué se apunta cuando ganas). Ficha: `agencia/ideas/radar-2026-11-20.md`.
+- Decidido: descartados Paris–Hapoel (repite u70 y u39), Baskonia (tema negativo) y la NBA (sin resultados a la hora del turno). No se usa el récord de victorias del Barça en Champions (un solo medio, sin fuente) ni se nombra a Cikusa en el guion (pendiente de pruebas).
