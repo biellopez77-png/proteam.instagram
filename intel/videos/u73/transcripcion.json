@@ -1,0 +1,73 @@
+{
+ "origen": "tools/reel73/voz.tsv",
+ "tipo": "locución generada con tiempos por palabra (exacta, no reconocida por oído)",
+ "palabras": 6,
+ "primera_palabra_s": 0.06,
+ "ultima_palabra_s": 14.7,
+ "ritmo_palabras_por_s": 0.41,
+ "frases": [
+  {
+   "desde": 0.06,
+   "hasta": 1.9,
+   "texto": "Tres exclusiones el sábado.",
+   "palabras_por_s": 0.54
+  },
+  {
+   "desde": 2.14,
+   "hasta": 3.9,
+   "texto": "Seis minutos con uno menos.",
+   "palabras_por_s": 0.57
+  },
+  {
+   "desde": 4.06,
+   "hasta": 7.14,
+   "texto": "Y el martes, ni un minuto de cinco contra seis.",
+   "palabras_por_s": 0.32
+  },
+  {
+   "desde": 7.34,
+   "hasta": 8.86,
+   "texto": "¿Cuántas lleváis este mes?",
+   "palabras_por_s": 0.66
+  },
+  {
+   "desde": 9.18,
+   "hasta": 14.7,
+   "texto": "Lista de espera de la app de Pro Team hasta el veintisiete de noviembre: tres meses gratis.",
+   "palabras_por_s": 0.36
+  }
+ ],
+ "pausas": [],
+ "por_palabra": [
+  {
+   "desde": 0.06,
+   "hasta": 1.9,
+   "palabra": "Tres exclusiones el sábado."
+  },
+  {
+   "desde": 2.14,
+   "hasta": 3.9,
+   "palabra": "Seis minutos con uno menos."
+  },
+  {
+   "desde": 4.06,
+   "hasta": 7.14,
+   "palabra": "Y el martes, ni un minuto de cinco contra seis."
+  },
+  {
+   "desde": 7.34,
+   "hasta": 8.86,
+   "palabra": "¿Cuántas lleváis este mes?"
+  },
+  {
+   "desde": 9.18,
+   "hasta": 13.1,
+   "palabra": "Lista de espera de la app de Pro Team hasta el veintisiete de noviembre:"
+  },
+  {
+   "desde": 13.18,
+   "hasta": 14.7,
+   "palabra": "tres meses gratis."
+  }
+ ]
+}
