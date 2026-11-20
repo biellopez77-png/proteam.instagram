@@ -1,0 +1,2033 @@
+{
+ "meta": {
+  "contenedor": "mov,mp4,m4a,3gp,3g2,mj2",
+  "duracion_s": 36.309,
+  "tamano_bytes": 8258750,
+  "bitrate_kbps": 1820,
+  "ancho": 1080,
+  "alto": 1920,
+  "relacion": "9:16",
+  "fps": 30.0,
+  "fotogramas_declarados": 1085,
+  "codec_video": "h264",
+  "pix_fmt": "yuv420p",
+  "pistas_audio": [
+   {
+    "codec": "aac",
+    "canales": 1,
+    "hz": 48000,
+    "bitrate_kbps": 211
+   }
+  ],
+  "etiquetas": {
+   "major_brand": "isom",
+   "minor_version": "512",
+   "compatible_brands": "isomiso2avc1mp41",
+   "encoder": "Lavf60.16.100"
+  },
+  "id": "u75",
+  "fotogramas_leidos": 1085,
+  "sha256": "94a29c3401101f676f267a2a16cd2c0473c2efb678936ff1fff43b4e8d5c7503",
+  "archivo": "reels/u75-un-entreno-y-un-avion.mp4",
+  "fuente": "",
+  "marca": "proteam",
+  "tipo": "propio",
+  "formato": "reel",
+  "tema": "dos partidos del Barça de balonmano y el lunes a ciegas del entrenador de base",
+  "analizado": "2026-11-20 10:00"
+ },
+ "montaje": {
+  "cortes_duros": 5,
+  "transiciones_o_movimientos_fuertes": 0,
+  "planos": 6,
+  "duracion_media_plano_s": 6.03,
+  "plano_mas_largo_s": 10.133,
+  "plano_mas_corto_s": 1.867,
+  "cortes_por_10s": 1.38,
+  "tramos_estaticos": [
+   {
+    "desde": 0.0,
+    "hasta": 2.47,
+    "duracion_s": 2.47
+   },
+   {
+    "desde": 3.2,
+    "hasta": 5.33,
+    "duracion_s": 2.13
+   },
+   {
+    "desde": 7.93,
+    "hasta": 12.27,
+    "duracion_s": 4.33
+   },
+   {
+    "desde": 12.4,
+    "hasta": 14.47,
+    "duracion_s": 2.07
+   },
+   {
+    "desde": 15.4,
+    "hasta": 21.27,
+    "duracion_s": 5.87
+   },
+   {
+    "desde": 21.43,
+    "hasta": 23.07,
+    "duracion_s": 1.63
+   },
+   {
+    "desde": 26.63,
+    "hasta": 29.27,
+    "duracion_s": 2.63
+   },
+   {
+    "desde": 34.63,
+    "hasta": 36.13,
+    "duracion_s": 1.5
+   }
+  ],
+  "nota": "Detección automática por histograma y diferencia de imagen sobre TODOS los fotogramas. Un motion graphic continuo cuenta como un solo plano; un cambio de fondo brusco dentro de una animación puede contarse como corte. Confirmar en las láminas."
+ },
+ "cortes": [
+  {
+   "fotograma": 223,
+   "t": 7.433,
+   "tipo": "corte",
+   "fuerza": 0.947
+  },
+  {
+   "fotograma": 434,
+   "t": 14.467,
+   "tipo": "corte",
+   "fuerza": 0.968
+  },
+  {
+   "fotograma": 738,
+   "t": 24.6,
+   "tipo": "corte",
+   "fuerza": 0.954
+  },
+  {
+   "fotograma": 878,
+   "t": 29.267,
+   "tipo": "corte",
+   "fuerza": 0.924
+  },
+  {
+   "fotograma": 1029,
+   "t": 34.3,
+   "tipo": "corte",
+   "fuerza": 0.986
+  }
+ ],
+ "escenas": [
+  {
+   "escena": 1,
+   "desde_fotograma": 0,
+   "hasta_fotograma": 222,
+   "desde": 0.0,
+   "hasta": 7.433,
+   "duracion_s": 7.433,
+   "movimiento_medio": 0.0026,
+   "luz_media": 0.215,
+   "saturacion_media": 0.332
+  },
+  {
+   "escena": 2,
+   "desde_fotograma": 223,
+   "hasta_fotograma": 433,
+   "desde": 7.433,
+   "hasta": 14.467,
+   "duracion_s": 7.033,
+   "movimiento_medio": 0.0023,
+   "luz_media": 0.125,
+   "saturacion_media": 0.324
+  },
+  {
+   "escena": 3,
+   "desde_fotograma": 434,
+   "hasta_fotograma": 737,
+   "desde": 14.467,
+   "hasta": 24.6,
+   "duracion_s": 10.133,
+   "movimiento_medio": 0.0045,
+   "luz_media": 0.937,
+   "saturacion_media": 0.029
+  },
+  {
+   "escena": 4,
+   "desde_fotograma": 738,
+   "hasta_fotograma": 877,
+   "desde": 24.6,
+   "hasta": 29.267,
+   "duracion_s": 4.667,
+   "movimiento_medio": 0.0075,
+   "luz_media": 0.178,
+   "saturacion_media": 0.344
+  },
+  {
+   "escena": 5,
+   "desde_fotograma": 878,
+   "hasta_fotograma": 1028,
+   "desde": 29.267,
+   "hasta": 34.3,
+   "duracion_s": 5.033,
+   "movimiento_medio": 0.0041,
+   "luz_media": 0.09,
+   "saturacion_media": 0.369
+  },
+  {
+   "escena": 6,
+   "desde_fotograma": 1029,
+   "hasta_fotograma": 1084,
+   "desde": 34.3,
+   "hasta": 36.167,
+   "duracion_s": 1.867,
+   "movimiento_medio": 0.0196,
+   "luz_media": 0.901,
+   "saturacion_media": 0.046
+  }
+ ],
+ "laminas": [
+  {
+   "lamina": "general_001.jpg",
+   "fotogramas": [
+    0,
+    5,
+    10,
+    15,
+    20,
+    25,
+    45,
+    90,
+    111,
+    135,
+    180,
+    222,
+    223,
+    268,
+    313,
+    328,
+    358,
+    403
+   ],
+   "desde": 0.0,
+   "hasta": 13.433,
+   "modo": "general"
+  },
+  {
+   "lamina": "general_002.jpg",
+   "fotogramas": [
+    433,
+    434,
+    479,
+    524,
+    569,
+    585,
+    614,
+    659,
+    704,
+    737,
+    738,
+    783,
+    807,
+    828,
+    873,
+    877,
+    878,
+    923
+   ],
+   "desde": 14.433,
+   "hasta": 30.767,
+   "modo": "general"
+  },
+  {
+   "lamina": "general_003.jpg",
+   "fotogramas": [
+    953,
+    968,
+    1013,
+    1028,
+    1029,
+    1056,
+    1084
+   ],
+   "desde": 31.767,
+   "hasta": 36.133,
+   "modo": "general"
+  },
+  {
+   "lamina": "detalle_001.jpg",
+   "fotogramas": [
+    0,
+    8,
+    16,
+    24,
+    32,
+    40,
+    48,
+    56,
+    64,
+    72,
+    80,
+    88,
+    96,
+    104,
+    112,
+    120,
+    128,
+    136,
+    144,
+    152,
+    160,
+    168,
+    176,
+    184
+   ],
+   "desde": 0.0,
+   "hasta": 6.133,
+   "modo": "detalle"
+  },
+  {
+   "lamina": "detalle_002.jpg",
+   "fotogramas": [
+    192,
+    200,
+    208,
+    216,
+    222,
+    223,
+    224,
+    232,
+    240,
+    248,
+    256,
+    264,
+    272,
+    280,
+    288,
+    296,
+    304,
+    312,
+    320,
+    328,
+    336,
+    344,
+    352,
+    360
+   ],
+   "desde": 6.4,
+   "hasta": 12.0,
+   "modo": "detalle"
+  },
+  {
+   "lamina": "detalle_003.jpg",
+   "fotogramas": [
+    368,
+    376,
+    384,
+    392,
+    400,
+    408,
+    416,
+    424,
+    432,
+    433,
+    434,
+    440,
+    448,
+    456,
+    464,
+    472,
+    480,
+    488,
+    496,
+    504,
+    512,
+    520,
+    528,
+    536
+   ],
+   "desde": 12.267,
+   "hasta": 17.867,
+   "modo": "detalle"
+  },
+  {
+   "lamina": "detalle_004.jpg",
+   "fotogramas": [
+    544,
+    552,
+    560,
+    568,
+    576,
+    584,
+    592,
+    600,
+    608,
+    616,
+    624,
+    632,
+    640,
+    648,
+    656,
+    664,
+    672,
+    680,
+    688,
+    696,
+    704,
+    712,
+    720,
+    728
+   ],
+   "desde": 18.133,
+   "hasta": 24.267,
+   "modo": "detalle"
+  },
+  {
+   "lamina": "detalle_005.jpg",
+   "fotogramas": [
+    736,
+    737,
+    738,
+    744,
+    752,
+    760,
+    768,
+    776,
+    784,
+    792,
+    800,
+    808,
+    816,
+    824,
+    832,
+    840,
+    848,
+    856,
+    864,
+    872,
+    877,
+    878,
+    880,
+    888
+   ],
+   "desde": 24.533,
+   "hasta": 29.6,
+   "modo": "detalle"
+  },
+  {
+   "lamina": "detalle_006.jpg",
+   "fotogramas": [
+    896,
+    904,
+    912,
+    920,
+    928,
+    936,
+    944,
+    952,
+    960,
+    968,
+    976,
+    984,
+    992,
+    1000,
+    1008,
+    1016,
+    1024,
+    1028,
+    1029,
+    1032,
+    1040,
+    1048,
+    1056,
+    1064
+   ],
+   "desde": 29.867,
+   "hasta": 35.467,
+   "modo": "detalle"
+  },
+  {
+   "lamina": "detalle_007.jpg",
+   "fotogramas": [
+    1072,
+    1080
+   ],
+   "desde": 35.733,
+   "hasta": 36.0,
+   "modo": "detalle"
+  }
+ ],
+ "texto_en_pantalla": {
+  "idioma": "spa+eng",
+  "nota": "OCR automático sobre los fotogramas muestreados: puede fallar con tipografía fina, texto animado o sobre foto. La exposición es aproximada (resolución = intervalo de muestreo). Verificar siempre en las láminas.",
+  "por_fotograma": [
+   {
+    "fotograma": 0,
+    "t": 0.0,
+    "texto": "KIELCE IRUN “JUE 24-32"
+   },
+   {
+    "fotograma": 5,
+    "t": 0.167,
+    "texto": "BARCA KIELCE IRUN JUE ARABAYA"
+   },
+   {
+    "fotograma": 8,
+    "t": 0.267,
+    "texto": "32 kee 19"
+   },
+   {
+    "fotograma": 10,
+    "t": 0.333,
+    "texto": "KIELCE IRUN 24-32 19"
+   },
+   {
+    "fotograma": 15,
+    "t": 0.5,
+    "texto": "BARCA KIELCE IRUN JUE 24-32 ARABAYA 19"
+   },
+   {
+    "fotograma": 16,
+    "t": 0.533,
+    "texto": "BARCA KIELCE IRUN ÉS NAGY ARABAYA 19"
+   },
+   {
+    "fotograma": 20,
+    "t": 0.667,
+    "texto": "BARCA KIELCE IRUN ARABAYA 19"
+   },
+   {
+    "fotograma": 24,
+    "t": 0.8,
+    "texto": "BARCA KIELCE IRUN ARABAYA 19"
+   },
+   {
+    "fotograma": 25,
+    "t": 0.833,
+    "texto": "BARCA KIELCE IRUN ARABAYA 19"
+   },
+   {
+    "fotograma": 32,
+    "t": 1.067,
+    "texto": "BARCA KIELCE IRUN JUE ARABAYA"
+   },
+   {
+    "fotograma": 40,
+    "t": 1.333,
+    "texto": "BARCA KIELCE IRUN UE ARABAYA"
+   },
+   {
+    "fotograma": 45,
+    "t": 1.5,
+    "texto": "BARCA KIELCE IRUN ARABAYA nacy"
+   },
+   {
+    "fotograma": 48,
+    "t": 1.6,
+    "texto": "BARGA KIELCE IRUN 24-32 ¡RABAYA 19"
+   },
+   {
+    "fotograma": 56,
+    "t": 1.867,
+    "texto": "BARCA KIELCE IRUN ARABAYA"
+   },
+   {
+    "fotograma": 64,
+    "t": 2.133,
+    "texto": "BARCA KIELCE IRUN UE nacy ss"
+   },
+   {
+    "fotograma": 72,
+    "t": 2.4,
+    "texto": "BARCA KIELCE IRUN"
+   },
+   {
+    "fotograma": 80,
+    "t": 2.667,
+    "texto": "BARCA KIELCE IRUN JUE 24-52 SAB RABAYA 200€"
+   },
+   {
+    "fotograma": 88,
+    "t": 2.933,
+    "texto": "BARCA KIELCE IRUN JUE 24-52 200€ Pi"
+   },
+   {
+    "fotograma": 90,
+    "t": 3.0,
+    "texto": "BARCA KIELCE IRUN JUE 24-52 RABAYA 200€"
+   },
+   {
+    "fotograma": 96,
+    "t": 3.2,
+    "texto": "JUE 24-32 SAB AGY RABAYA"
+   },
+   {
+    "fotograma": 104,
+    "t": 3.467,
+    "texto": "BARCA KIELCE IRUN JUE 24-52 SAB 20:00 RABAYA AGY"
+   },
+   {
+    "fotograma": 111,
+    "t": 3.7,
+    "texto": "BARCA KIELCE IRUN JUE 24-32 SAB 20:00 RABAYA"
+   },
+   {
+    "fotograma": 112,
+    "t": 3.733,
+    "texto": "BARCA KIELCE IRUN JUE 24-52 SAB 20:00 va RABAYA 2006"
+   },
+   {
+    "fotograma": 120,
+    "t": 4.0,
+    "texto": "JUE 24-52 NAGY RABAYA"
+   },
+   {
+    "fotograma": 128,
+    "t": 4.267,
+    "texto": "JUE 24-52 20:00 NAGY RABAYA"
+   },
+   {
+    "fotograma": 135,
+    "t": 4.5,
+    "texto": "BARCA KIELCE IRUN JUE 24-32 20:00 RABAYA NAGY"
+   },
+   {
+    "fotograma": 136,
+    "t": 4.533,
+    "texto": "ELC JUE 24-52 SAB20:00 NAGY RABAYA"
+   },
+   {
+    "fotograma": 144,
+    "t": 4.8,
+    "texto": "JUE 24-52 SAB20:00 RABAYA NAGY Va"
+   },
+   {
+    "fotograma": 152,
+    "t": 5.067,
+    "texto": "JUE 24-52 SAB 20:00 NAGY Va"
+   },
+   {
+    "fotograma": 160,
+    "t": 5.333,
+    "texto": "BARCA KIELCE IRUN JUE 24-52 SAB20:00 NAGY Va un entreno vun amón"
+   },
+   {
+    "fotograma": 168,
+    "t": 5.6,
+    "texto": "BARCA KIELCE IRUN JUE 24-52 SAB20:00 CA un entreno un avión"
+   },
+   {
+    "fotograma": 176,
+    "t": 5.867,
+    "texto": "BARCA KIELCE IRUN JUE 24-52 SAB20:00 un entreno un avión"
+   },
+   {
+    "fotograma": 180,
+    "t": 6.0,
+    "texto": "BARCA KIELCE IRUN JUE 24-52 SAB 20:00 af NAG' un entreno un avión"
+   },
+   {
+    "fotograma": 184,
+    "t": 6.133,
+    "texto": "BARCA KIELCE IRUN JUE 24-52 SAB20:00 un entreno un avión"
+   },
+   {
+    "fotograma": 192,
+    "t": 6.4,
+    "texto": "BARCA KIELCE IRUN JUE 24-32 SAB20:00 ABAYA YY un entreno un avión"
+   },
+   {
+    "fotograma": 200,
+    "t": 6.667,
+    "texto": "BARCA KIELCE IRUN JUE 24-32 SAB 20:00 ABAYA nas Em un entreno un avión"
+   },
+   {
+    "fotograma": 208,
+    "t": 6.933,
+    "texto": "BARCA KIELCE IRUN JUE 24-52 SAB20:00 nas ABAYA un entreno un avión"
+   },
+   {
+    "fotograma": 216,
+    "t": 7.2,
+    "texto": "BARCA KIELCE IRUN JUE 24-32 SAB20:00 ABAYA nas We unentreno un avion"
+   },
+   {
+    "fotograma": 222,
+    "t": 7.4,
+    "texto": "BARCA KIELCE IRUN JUE 24-32 SAB20:00 ABAYA nas un entreno un avión"
+   },
+   {
+    "fotograma": 223,
+    "t": 7.433,
+    "texto": "il"
+   },
+   {
+    "fotograma": 224,
+    "t": 7.467,
+    "texto": ""
+   },
+   {
+    "fotograma": 232,
+    "t": 7.733,
+    "texto": "TU NOVUELAS."
+   },
+   {
+    "fotograma": 240,
+    "t": 8.0,
+    "texto": "TÚNO VUELAS. AA"
+   },
+   {
+    "fotograma": 248,
+    "t": 8.267,
+    "texto": "TU VUELAS. aa"
+   },
+   {
+    "fotograma": 256,
+    "t": 8.533,
+    "texto": "TU VUELAS. AA"
+   },
+   {
+    "fotograma": 264,
+    "t": 8.8,
+    "texto": "TÚNO VUELAS. aa"
+   },
+   {
+    "fotograma": 268,
+    "t": 8.933,
+    "texto": "TÚNO VUELAS. aa"
+   },
+   {
+    "fotograma": 272,
+    "t": 9.067,
+    "texto": "TU VUELAS. AA"
+   },
+   {
+    "fotograma": 280,
+    "t": 9.333,
+    "texto": "TÚNO VUELAS. AA"
+   },
+   {
+    "fotograma": 288,
+    "t": 9.6,
+    "texto": "TU VUELAS."
+   },
+   {
+    "fotograma": 296,
+    "t": 9.867,
+    "texto": "TU VUELAS. 50’"
+   },
+   {
+    "fotograma": 304,
+    "t": 10.133,
+    "texto": "TU VUELAS. 50’"
+   },
+   {
+    "fotograma": 312,
+    "t": 10.4,
+    "texto": "TU NO VUELAS. 50’"
+   },
+   {
+    "fotograma": 313,
+    "t": 10.433,
+    "texto": "TÚNO VUELAS. 50' an"
+   },
+   {
+    "fotograma": 320,
+    "t": 10.667,
+    "texto": "TU NO VUELAS. 50’ an"
+   },
+   {
+    "fotograma": 328,
+    "t": 10.933,
+    "texto": "TU VUELAS. 50’"
+   },
+   {
+    "fotograma": 336,
+    "t": 11.2,
+    "texto": "TÚNO VUELAS. 50'"
+   },
+   {
+    "fotograma": 344,
+    "t": 11.467,
+    "texto": "TÚNO VUELAS. 50'"
+   },
+   {
+    "fotograma": 352,
+    "t": 11.733,
+    "texto": "TU VUELAS. 50’ LUNES: MISMA SESIÓN"
+   },
+   {
+    "fotograma": 358,
+    "t": 11.933,
+    "texto": "TU VUELAS. 50’ LUNES: MISMA SESION"
+   },
+   {
+    "fotograma": 360,
+    "t": 12.0,
+    "texto": "TU VUELAS. LUNES: MISMA SESIÓN"
+   },
+   {
+    "fotograma": 368,
+    "t": 12.267,
+    "texto": "TÚNO VUELAS 50' LUNES: MISMA SESIÓN cómo acabaron"
+   },
+   {
+    "fotograma": 376,
+    "t": 12.533,
+    "texto": "TU NOVUELAS 50’ “LUNES: MISMA SESION sin saber como acabaron."
+   },
+   {
+    "fotograma": 384,
+    "t": 12.8,
+    "texto": "TU NOVUELAS 50’ AA MISMA SESION sin saber como acabaron"
+   },
+   {
+    "fotograma": 392,
+    "t": 13.067,
+    "texto": "TUNOVUELAS aa LUNES: MISMA SESION sin saber como acabaron"
+   },
+   {
+    "fotograma": 400,
+    "t": 13.333,
+    "texto": "TUNOVUELAS LUNES: MISMA sin saber cómo acabaron"
+   },
+   {
+    "fotograma": 403,
+    "t": 13.433,
+    "texto": "TUNOVUELAS aa LUNES: MISMA SESION sin saber como acabaron"
+   },
+   {
+    "fotograma": 408,
+    "t": 13.6,
+    "texto": "TU NOVUELAS 50’ LUNES: MISMA SESION sin saber como acabaron"
+   },
+   {
+    "fotograma": 416,
+    "t": 13.867,
+    "texto": "TU NOVUELAS 50’ LUNES: MISMA SESIÓN sin saber cómo acabaron"
+   },
+   {
+    "fotograma": 424,
+    "t": 14.133,
+    "texto": "TÚNO VUELAS. 50' LUNES: MISMA SESIÓN sin saber cómo acabaron."
+   },
+   {
+    "fotograma": 432,
+    "t": 14.4,
+    "texto": "TU NOVUELAS 50’ af LUNES: MISMA SESION sin saber como acabaron"
+   },
+   {
+    "fotograma": 433,
+    "t": 14.433,
+    "texto": "TÚNO VUELAS 50' ‘LUNES: MISMA SESION sin saber como acabaron"
+   },
+   {
+    "fotograma": 434,
+    "t": 14.467,
+    "texto": "PARTIDO"
+   },
+   {
+    "fotograma": 440,
+    "t": 14.667,
+    "texto": "AL ACABAR EL PARTIDO"
+   },
+   {
+    "fotograma": 448,
+    "t": 14.933,
+    "texto": "AL ACABAR EL PARTIDO"
+   },
+   {
+    "fotograma": 456,
+    "t": 15.2,
+    "texto": "AL ACABAR EL PARTIDO"
+   },
+   {
+    "fotograma": 464,
+    "t": 15.467,
+    "texto": "AL ACABAR EL PARTIDO Del1al10: ¿cuánto costó?"
+   },
+   {
+    "fotograma": 472,
+    "t": 15.733,
+    "texto": "AL ACABAR EL PARTIDO Del1al 10: ¿cuánto costó?"
+   },
+   {
+    "fotograma": 479,
+    "t": 15.967,
+    "texto": "AL ACABAR EL PARTIDO Del1al10: ¿cuánto costó?"
+   },
+   {
+    "fotograma": 480,
+    "t": 16.0,
+    "texto": "AL ACABAR EL PARTIDO Del1al10: ¿cuánto costó?"
+   },
+   {
+    "fotograma": 488,
+    "t": 16.267,
+    "texto": "AL ACABAR EL PARTIDO Del1al10: ¿cuánto costó?"
+   },
+   {
+    "fotograma": 496,
+    "t": 16.533,
+    "texto": "AL ACABAR EL PARTIDO Del1al10: ¿cuánto costó?"
+   },
+   {
+    "fotograma": 504,
+    "t": 16.8,
+    "texto": "AL ACABAR EL PARTIDO Del1al 10: ¿cuánto costó?"
+   },
+   {
+    "fotograma": 512,
+    "t": 17.067,
+    "texto": "AL ACABAR EL PARTIDO Del1al10: ¿cuánto costó?"
+   },
+   {
+    "fotograma": 520,
+    "t": 17.333,
+    "texto": "AL ACABAR EL PARTIDO 10: ¿cuánto costó?"
+   },
+   {
+    "fotograma": 524,
+    "t": 17.467,
+    "texto": "AL ACABAR EL PARTIDO ¿cuánto costó?"
+   },
+   {
+    "fotograma": 528,
+    "t": 17.6,
+    "texto": "AL ACABAR EL PARTIDO Del1al10: ¿cuánto costó?"
+   },
+   {
+    "fotograma": 536,
+    "t": 17.867,
+    "texto": "AL ACABAR EL PARTIDO Del1al10: ¿cuánto costó?"
+   },
+   {
+    "fotograma": 544,
+    "t": 18.133,
+    "texto": "AL ACABAR EL PARTIDO Del1al10: ¿cuánto costó?"
+   },
+   {
+    "fotograma": 552,
+    "t": 18.4,
+    "texto": "AL ACABAR EL PARTIDO Del1al10: ¿cuánto costó?"
+   },
+   {
+    "fotograma": 560,
+    "t": 18.667,
+    "texto": "AL ACABAR EL PARTIDO ¿cuánto costó?"
+   },
+   {
+    "fotograma": 568,
+    "t": 18.933,
+    "texto": "AL ACABAR EL PARTIDO ED Del1al10: ¿cuánto costó?"
+   },
+   {
+    "fotograma": 569,
+    "t": 18.967,
+    "texto": "AL ACABAR EL PARTIDO Del1al10: ¿cuánto costo?"
+   },
+   {
+    "fotograma": 576,
+    "t": 19.2,
+    "texto": "AL ACABAR EL PARTIDO 10: ¿cuánto costo"
+   },
+   {
+    "fotograma": 584,
+    "t": 19.467,
+    "texto": "AL ACABAR EL PARTIDO Del1al10: ¿cuánto costo?"
+   },
+   {
+    "fotograma": 585,
+    "t": 19.5,
+    "texto": "AL ACABAR EL PARTIDO Del1al10: ¿cuánto costó?"
+   },
+   {
+    "fotograma": 592,
+    "t": 19.733,
+    "texto": "AL ACABAR EL PARTIDO Del1al10: ¿cuánto costo?"
+   },
+   {
+    "fotograma": 600,
+    "t": 20.0,
+    "texto": "AL ACABAR EL PARTIDO Del1al10: ¿cuánto costó?"
+   },
+   {
+    "fotograma": 608,
+    "t": 20.267,
+    "texto": "AL ACABAR EL PARTIDO Del1al10: ¿cuánto costó?"
+   },
+   {
+    "fotograma": 614,
+    "t": 20.467,
+    "texto": "AL ACABAR EL PARTIDO ¿cuánto costó?"
+   },
+   {
+    "fotograma": 616,
+    "t": 20.533,
+    "texto": "AL ACABAR EL PARTIDO Del1al10: ¿cuánto costó?"
+   },
+   {
+    "fotograma": 624,
+    "t": 20.8,
+    "texto": "AL ACABAR EL PARTIDO Del1al10: ¿cuánto costó?"
+   },
+   {
+    "fotograma": 632,
+    "t": 21.067,
+    "texto": "AL ACABAR EL PARTIDO Del1al10: ¿cuánto costó?"
+   },
+   {
+    "fotograma": 640,
+    "t": 21.333,
+    "texto": "AL ACABAR EL PARTIDO Del1al10: ¿cuánto costó? Jugó poco: más."
+   },
+   {
+    "fotograma": 648,
+    "t": 21.6,
+    "texto": "AL ACABAR EL PARTIDO Del1al10: ¿cuánto costó? Jugó poco: más."
+   },
+   {
+    "fotograma": 656,
+    "t": 21.867,
+    "texto": "AL ACABAR EL PARTIDO Del1al10: ¿cuánto costó? Jugó poco: más."
+   },
+   {
+    "fotograma": 659,
+    "t": 21.967,
+    "texto": "AL ACABAR EL PARTIDO ¿cuánto costó? Jugó poco: más."
+   },
+   {
+    "fotograma": 664,
+    "t": 22.133,
+    "texto": "AL ACABAR EL PARTIDO Del1al10: ¿cuánto costó? Jugó poco: más."
+   },
+   {
+    "fotograma": 672,
+    "t": 22.4,
+    "texto": "AL ACABAR EL PARTIDO Del1al10: ¿cuánto costó? Jugó poco: más."
+   },
+   {
+    "fotograma": 680,
+    "t": 22.667,
+    "texto": "AL ACABAR EL PARTIDO Del1al10: ¿cuánto costó? Jugó poco: más."
+   },
+   {
+    "fotograma": 688,
+    "t": 22.933,
+    "texto": "AL ACABAR EL PARTIDO Del1al10: ¿cuánto costó? Jugó poco: más."
+   },
+   {
+    "fotograma": 696,
+    "t": 23.2,
+    "texto": "AL ACABAR EL PARTIDO Del1al10: ¿cuánto costó? Jugó poco: más. Jugótodo: MeNOS."
+   },
+   {
+    "fotograma": 704,
+    "t": 23.467,
+    "texto": "AL ACABAR EL PARTIDO Del 1al10: ¿cuánto costó? Jugó poco: más. Jugótodo: menos."
+   },
+   {
+    "fotograma": 712,
+    "t": 23.733,
+    "texto": "AL ACABAR EL PARTIDO Del1al10: ¿cuánto costó? Jugó poco: más. Jugótodo: menos."
+   },
+   {
+    "fotograma": 720,
+    "t": 24.0,
+    "texto": "AL ACABAR EL PARTIDO ¿cuánto costó? Jugó poco: más. Jugótodo: menos."
+   },
+   {
+    "fotograma": 728,
+    "t": 24.267,
+    "texto": "AL ACABAR EL PARTIDO 10: ¿cuánto costó? Jugó poco: más. todo: menos."
+   },
+   {
+    "fotograma": 736,
+    "t": 24.533,
+    "texto": "AL ACABAR EL PARTIDO ¿cuánto costó? Jugó poco: mas. Jugótodo: menos."
+   },
+   {
+    "fotograma": 737,
+    "t": 24.567,
+    "texto": "AL ACABAR EL PARTIDO Del 1al10: ¿cuánto costó? Jugó poco: mas. Jug6 todo: menos."
+   },
+   {
+    "fotograma": 738,
+    "t": 24.6,
+    "texto": "TIEN BARCA KIELCE NE NAGY"
+   },
+   {
+    "fotograma": 744,
+    "t": 24.8,
+    "texto": "ur) BARCA KIELCE NAGY RET PARA TU STAF!"
+   },
+   {
+    "fotograma": 752,
+    "t": 25.067,
+    "texto": "BARCA KIELCE IRUN NAGY mE RETO PARA TU STAF"
+   },
+   {
+    "fotograma": 760,
+    "t": 25.333,
+    "texto": "an BARCA KIELCE IRUN 2006 ‘S80 ne RETO PARA TU STAFF"
+   },
+   {
+    "fotograma": 768,
+    "t": 25.6,
+    "texto": "BARGA KIELCE ¡ABAYA"
+   },
+   {
+    "fotograma": 776,
+    "t": 25.867,
+    "texto": "BARGA KIELCE RUN 12 RETO PARA TUS ¿QUIEN ACABO"
+   },
+   {
+    "fotograma": 783,
+    "t": 26.1,
+    "texto": "wr) BARCA KIELCE RUN hd RETO PARA TU STAF ¿QUIEN ACABO"
+   },
+   {
+    "fotograma": 784,
+    "t": 26.133,
+    "texto": "BARCA KIELCE vi fy Nass hd RETO PARA TU STAF ¿QUIEN ACABO"
+   },
+   {
+    "fotograma": 792,
+    "t": 26.4,
+    "texto": "BARCA KIELCE IRUN RETO PARA TU STAFF ¿QUIÉN ACABÓ"
+   },
+   {
+    "fotograma": 800,
+    "t": 26.667,
+    "texto": "BARCA KIELCE IRUN ABAYA nas' RETO PARA TU STAFF ¿QUIÉN ACABÓ más cargado?"
+   },
+   {
+    "fotograma": 807,
+    "t": 26.9,
+    "texto": "BARCA KIELCE IRUN vi NA ABAYA nas' Le RETO PARA TU STAFF ¿QUIÉN ACABÓ más cargado?"
+   },
+   {
+    "fotograma": 808,
+    "t": 26.933,
+    "texto": "BARCA KIELCE IRUN nas' Le RETO PARA TU STAFF ZQUIEN ACABO más cargado?"
+   },
+   {
+    "fotograma": 816,
+    "t": 27.2,
+    "texto": "BARCA KIELCE IRUN SS vi RETO PARA TU STAFF ¿QUIÉN ACABÓ más cargado?"
+   },
+   {
+    "fotograma": 824,
+    "t": 27.467,
+    "texto": "BARCA KIELCE IRUN BOA RETO PARA TU STAFF ¿QUIÉN ACABÓ más cargado?"
+   },
+   {
+    "fotograma": 828,
+    "t": 27.6,
+    "texto": "BARCA KIELCE IRUN ABAYA NAG' Ww RETO PARA TU STAFF ZQUIEN ACABO más cargado?"
+   },
+   {
+    "fotograma": 832,
+    "t": 27.733,
+    "texto": "aa BARCA KIELCE ABAYA nas RETO PARA TU STAFF ZQUIEN ACABO más cargado?"
+   },
+   {
+    "fotograma": 840,
+    "t": 28.0,
+    "texto": "aT BARCA KIELCE [RUN ABAYA RETO PARA TU STAFF ZQUIEN ACABO más cargado?"
+   },
+   {
+    "fotograma": 848,
+    "t": 28.267,
+    "texto": "BARCA nas RETO PARA TU STAFF ACABO más cargado? SIN MIRAR"
+   },
+   {
+    "fotograma": 856,
+    "t": 28.533,
+    "texto": "BARCA ,IRUN RETO TU STAFF ¿QUIÉN ACABÓ más cargado? SIN MIRAR"
+   },
+   {
+    "fotograma": 864,
+    "t": 28.8,
+    "texto": "BARGA KIELCE nas RETO PARA ‘TU STAFF ACABO más cargado? SIN MIRAR"
+   },
+   {
+    "fotograma": 872,
+    "t": 29.067,
+    "texto": "BARCA ¡RUN fy CE RETO TU STAFF ACABO más cargado? SIN MIRAR"
+   },
+   {
+    "fotograma": 873,
+    "t": 29.1,
+    "texto": "DN BARC KIELCE nas RETO PARA ‘TU STAFF ACABO más cargado? SIN MIRAR"
+   },
+   {
+    "fotograma": 877,
+    "t": 29.233,
+    "texto": "BARCA KIELCE fiv NAS RETO PARA TU STAFF ¿QUIÉN ACABÓ más cargado? SIN MIRAR."
+   },
+   {
+    "fotograma": 878,
+    "t": 29.267,
+    "texto": "ABRE EL SÁBADO"
+   },
+   {
+    "fotograma": 880,
+    "t": 29.333,
+    "texto": "ABRE EL SÁBADO"
+   },
+   {
+    "fotograma": 888,
+    "t": 29.6,
+    "texto": "28 NOV"
+   },
+   {
+    "fotograma": 896,
+    "t": 29.867,
+    "texto": "28 NOV"
+   },
+   {
+    "fotograma": 904,
+    "t": 30.133,
+    "texto": "28 NOV"
+   },
+   {
+    "fotograma": 912,
+    "t": 30.4,
+    "texto": "28 NOV"
+   },
+   {
+    "fotograma": 920,
+    "t": 30.667,
+    "texto": "ABRE EL SÁBADO 28 NOV LA APP DE PROTEAM"
+   },
+   {
+    "fotograma": 923,
+    "t": 30.767,
+    "texto": "ABRE EL SÁBADO 28 NOV LA APP DE PROTEAM"
+   },
+   {
+    "fotograma": 928,
+    "t": 30.933,
+    "texto": "ABRE EL SÁBADO 28 NOV LA APP DE PROTEAM"
+   },
+   {
+    "fotograma": 936,
+    "t": 31.2,
+    "texto": "LISTA DE ESPERA 06 12 29 59"
+   },
+   {
+    "fotograma": 944,
+    "t": 31.467,
+    "texto": "LISTA DE ESPERA 06 HORAS 12 29 59 Mi"
+   },
+   {
+    "fotograma": 952,
+    "t": 31.733,
+    "texto": "LISTA DE ESPERA 06 12 43 DÍAS HORAS SEG entrenador@miclub.es"
+   },
+   {
+    "fotograma": 953,
+    "t": 31.767,
+    "texto": "LISTA DE ESPERA 06 12 39 DÍAS HORAS SEG entrenador@miclub.es|"
+   },
+   {
+    "fotograma": 960,
+    "t": 32.0,
+    "texto": "LISTA DE ESPERA 06 11 52 DÍAS HORAS SEG entrenador@miclub.es"
+   },
+   {
+    "fotograma": 968,
+    "t": 32.267,
+    "texto": "LISTA DE ESPERA 06 08 03 DÍAS HORAS SEG entrenador@miclub.es|"
+   },
+   {
+    "fotograma": 976,
+    "t": 32.533,
+    "texto": "LISTA DE ESPERA 06 02 55 DÍAS HORAS SEG entrenador@miclub.es"
+   },
+   {
+    "fotograma": 984,
+    "t": 32.8,
+    "texto": "LISTA DE ESPERA 05 17 05 DÍAS HORAS SEG"
+   },
+   {
+    "fotograma": 992,
+    "t": 33.067,
+    "texto": "LISTA DE ESPERA 11 05 04 DÍAS HORAS MIN SEG"
+   },
+   {
+    "fotograma": 1000,
+    "t": 33.333,
+    "texto": "LISTA DE ESPERA 04 10 13 51 DÍAS HORAS MIN SEG entrenador@miclub.es CE"
+   },
+   {
+    "fotograma": 1008,
+    "t": 33.6,
+    "texto": "LISTA DE ESPERA 03 09 42 DÍAS HORAS SEG entrenador@miclub.es CE"
+   },
+   {
+    "fotograma": 1013,
+    "t": 33.767,
+    "texto": "LISTA DE ESPERA 02 14 10 DÍAS HORAS MIN SEG entrenador@miclub.es VEZ"
+   },
+   {
+    "fotograma": 1016,
+    "t": 33.867,
+    "texto": "LISTA DE ESPERA o2 02 17 22 DÍAS HORAS MIN SEG entrenador@miclub.es"
+   },
+   {
+    "fotograma": 1024,
+    "t": 34.133,
+    "texto": "LISTA DE ESPERA 11 29 00 DÍAS HORAS SEG entrenador@miclub.es CE"
+   },
+   {
+    "fotograma": 1028,
+    "t": 34.267,
+    "texto": "LISTA DE ESPERA 00 00 00 00 HORAS MIN SEO entrenador@miclub.es CE"
+   },
+   {
+    "fotograma": 1029,
+    "t": 34.3,
+    "texto": ""
+   },
+   {
+    "fotograma": 1032,
+    "t": 34.4,
+    "texto": "LISTA: SE CIERRA EL orntis"
+   },
+   {
+    "fotograma": 1040,
+    "t": 34.667,
+    "texto": "LISTA: SE CIERRA EL 27 NOV meses gratis."
+   },
+   {
+    "fotograma": 1048,
+    "t": 34.933,
+    "texto": "LISTA: SE CIERRA EL 27 NOV JI meses gratis."
+   },
+   {
+    "fotograma": 1056,
+    "t": 35.2,
+    "texto": "LISTA: SE CIERRA EL 27 NOV Meses gratis."
+   },
+   {
+    "fotograma": 1064,
+    "t": 35.467,
+    "texto": "LISTA: SE CIERRA EL 27 NOV meses gratis."
+   },
+   {
+    "fotograma": 1072,
+    "t": 35.733,
+    "texto": "LISTA: SE CIERRA EL 27 NOV meses"
+   },
+   {
+    "fotograma": 1080,
+    "t": 36.0,
+    "texto": "LISTA: SE CIERRA EL 27 NOV meses gratis."
+   },
+   {
+    "fotograma": 1084,
+    "t": 36.133,
+    "texto": "LISTA: SE CIERRA EL 27 NOV meses gratis."
+   }
+  ],
+  "bloques": [
+   {
+    "desde": 0.167,
+    "hasta": 0.167,
+    "texto": "BARCA KIELCE IRUN JUE ARABAYA",
+    "palabras": 5
+   },
+   {
+    "desde": 0.5,
+    "hasta": 1.5,
+    "texto": "BARCA KIELCE IRUN JUE 24-32 ARABAYA 19",
+    "palabras": 7
+   },
+   {
+    "desde": 1.6,
+    "hasta": 1.6,
+    "texto": "BARGA KIELCE IRUN 24-32 ¡RABAYA 19",
+    "palabras": 6
+   },
+   {
+    "desde": 1.867,
+    "hasta": 3.0,
+    "texto": "BARCA KIELCE IRUN JUE 24-52 SAB RABAYA 200€",
+    "palabras": 8
+   },
+   {
+    "desde": 3.2,
+    "hasta": 3.2,
+    "texto": "JUE 24-32 SAB AGY RABAYA",
+    "palabras": 5
+   },
+   {
+    "desde": 3.467,
+    "hasta": 3.733,
+    "texto": "BARCA KIELCE IRUN JUE 24-52 SAB 20:00 va RABAYA 2006",
+    "palabras": 10
+   },
+   {
+    "desde": 4.267,
+    "hasta": 4.267,
+    "texto": "JUE 24-52 20:00 NAGY RABAYA",
+    "palabras": 5
+   },
+   {
+    "desde": 4.5,
+    "hasta": 4.5,
+    "texto": "BARCA KIELCE IRUN JUE 24-32 20:00 RABAYA NAGY",
+    "palabras": 8
+   },
+   {
+    "desde": 4.533,
+    "hasta": 4.533,
+    "texto": "ELC JUE 24-52 SAB20:00 NAGY RABAYA",
+    "palabras": 6
+   },
+   {
+    "desde": 4.8,
+    "hasta": 5.067,
+    "texto": "JUE 24-52 SAB20:00 RABAYA NAGY Va",
+    "palabras": 6
+   },
+   {
+    "desde": 5.333,
+    "hasta": 7.4,
+    "texto": "BARCA KIELCE IRUN JUE 24-32 SAB 20:00 ABAYA nas Em un entreno un avión",
+    "palabras": 14
+   },
+   {
+    "desde": 8.267,
+    "hasta": 8.533,
+    "texto": "TU VUELAS. aa",
+    "palabras": 3
+   },
+   {
+    "desde": 8.8,
+    "hasta": 8.933,
+    "texto": "TÚNO VUELAS. aa",
+    "palabras": 3
+   },
+   {
+    "desde": 9.867,
+    "hasta": 10.133,
+    "texto": "TU VUELAS. 50’",
+    "palabras": 3
+   },
+   {
+    "desde": 10.667,
+    "hasta": 10.667,
+    "texto": "TU NO VUELAS. 50’ an",
+    "palabras": 5
+   },
+   {
+    "desde": 11.2,
+    "hasta": 11.467,
+    "texto": "TÚNO VUELAS. 50'",
+    "palabras": 3
+   },
+   {
+    "desde": 11.733,
+    "hasta": 11.933,
+    "texto": "TU VUELAS. 50’ LUNES: MISMA SESIÓN",
+    "palabras": 6
+   },
+   {
+    "desde": 12.0,
+    "hasta": 12.0,
+    "texto": "TU VUELAS. LUNES: MISMA SESIÓN",
+    "palabras": 5
+   },
+   {
+    "desde": 12.267,
+    "hasta": 12.267,
+    "texto": "TÚNO VUELAS 50' LUNES: MISMA SESIÓN cómo acabaron",
+    "palabras": 8
+   },
+   {
+    "desde": 12.533,
+    "hasta": 12.8,
+    "texto": "TU NOVUELAS 50’ “LUNES: MISMA SESION sin saber como acabaron.",
+    "palabras": 10
+   },
+   {
+    "desde": 13.067,
+    "hasta": 13.067,
+    "texto": "TUNOVUELAS aa LUNES: MISMA SESION sin saber como acabaron",
+    "palabras": 9
+   },
+   {
+    "desde": 13.333,
+    "hasta": 13.333,
+    "texto": "TUNOVUELAS LUNES: MISMA sin saber cómo acabaron",
+    "palabras": 7
+   },
+   {
+    "desde": 13.433,
+    "hasta": 13.433,
+    "texto": "TUNOVUELAS aa LUNES: MISMA SESION sin saber como acabaron",
+    "palabras": 9
+   },
+   {
+    "desde": 13.6,
+    "hasta": 13.867,
+    "texto": "TU NOVUELAS 50’ LUNES: MISMA SESION sin saber como acabaron",
+    "palabras": 10
+   },
+   {
+    "desde": 14.133,
+    "hasta": 14.133,
+    "texto": "TÚNO VUELAS. 50' LUNES: MISMA SESIÓN sin saber cómo acabaron.",
+    "palabras": 10
+   },
+   {
+    "desde": 14.4,
+    "hasta": 14.4,
+    "texto": "TU NOVUELAS 50’ af LUNES: MISMA SESION sin saber como acabaron",
+    "palabras": 11
+   },
+   {
+    "desde": 14.433,
+    "hasta": 14.433,
+    "texto": "TÚNO VUELAS 50' ‘LUNES: MISMA SESION sin saber como acabaron",
+    "palabras": 10
+   },
+   {
+    "desde": 14.667,
+    "hasta": 24.567,
+    "texto": "AL ACABAR EL PARTIDO Del 1al10: ¿cuánto costó? Jugó poco: mas. Jug6 todo: menos.",
+    "palabras": 14
+   },
+   {
+    "desde": 24.6,
+    "hasta": 24.6,
+    "texto": "TIEN BARCA KIELCE NE NAGY",
+    "palabras": 5
+   },
+   {
+    "desde": 24.8,
+    "hasta": 24.8,
+    "texto": "ur) BARCA KIELCE NAGY RET PARA TU STAF!",
+    "palabras": 8
+   },
+   {
+    "desde": 25.067,
+    "hasta": 25.067,
+    "texto": "BARCA KIELCE IRUN NAGY mE RETO PARA TU STAF",
+    "palabras": 9
+   },
+   {
+    "desde": 25.333,
+    "hasta": 25.333,
+    "texto": "an BARCA KIELCE IRUN 2006 ‘S80 ne RETO PARA TU STAFF",
+    "palabras": 11
+   },
+   {
+    "desde": 25.867,
+    "hasta": 25.867,
+    "texto": "BARGA KIELCE RUN 12 RETO PARA TUS ¿QUIEN ACABO",
+    "palabras": 9
+   },
+   {
+    "desde": 26.1,
+    "hasta": 26.1,
+    "texto": "wr) BARCA KIELCE RUN hd RETO PARA TU STAF ¿QUIEN ACABO",
+    "palabras": 11
+   },
+   {
+    "desde": 26.133,
+    "hasta": 26.133,
+    "texto": "BARCA KIELCE vi fy Nass hd RETO PARA TU STAF ¿QUIEN ACABO",
+    "palabras": 12
+   },
+   {
+    "desde": 26.4,
+    "hasta": 27.6,
+    "texto": "BARCA KIELCE IRUN vi NA ABAYA nas' Le RETO PARA TU STAFF ¿QUIÉN ACABÓ más cargado?",
+    "palabras": 16
+   },
+   {
+    "desde": 27.733,
+    "hasta": 27.733,
+    "texto": "aa BARCA KIELCE ABAYA nas RETO PARA TU STAFF ZQUIEN ACABO más cargado?",
+    "palabras": 13
+   },
+   {
+    "desde": 28.0,
+    "hasta": 28.0,
+    "texto": "aT BARCA KIELCE [RUN ABAYA RETO PARA TU STAFF ZQUIEN ACABO más cargado?",
+    "palabras": 13
+   },
+   {
+    "desde": 28.267,
+    "hasta": 28.267,
+    "texto": "BARCA nas RETO PARA TU STAFF ACABO más cargado? SIN MIRAR",
+    "palabras": 11
+   },
+   {
+    "desde": 28.533,
+    "hasta": 28.533,
+    "texto": "BARCA ,IRUN RETO TU STAFF ¿QUIÉN ACABÓ más cargado? SIN MIRAR",
+    "palabras": 11
+   },
+   {
+    "desde": 28.8,
+    "hasta": 28.8,
+    "texto": "BARGA KIELCE nas RETO PARA ‘TU STAFF ACABO más cargado? SIN MIRAR",
+    "palabras": 12
+   },
+   {
+    "desde": 29.067,
+    "hasta": 29.067,
+    "texto": "BARCA ¡RUN fy CE RETO TU STAFF ACABO más cargado? SIN MIRAR",
+    "palabras": 12
+   },
+   {
+    "desde": 29.1,
+    "hasta": 29.1,
+    "texto": "DN BARC KIELCE nas RETO PARA ‘TU STAFF ACABO más cargado? SIN MIRAR",
+    "palabras": 13
+   },
+   {
+    "desde": 29.233,
+    "hasta": 29.233,
+    "texto": "BARCA KIELCE fiv NAS RETO PARA TU STAFF ¿QUIÉN ACABÓ más cargado? SIN MIRAR.",
+    "palabras": 14
+   },
+   {
+    "desde": 29.267,
+    "hasta": 29.333,
+    "texto": "ABRE EL SÁBADO",
+    "palabras": 3
+   },
+   {
+    "desde": 29.6,
+    "hasta": 30.4,
+    "texto": "28 NOV",
+    "palabras": 2
+   },
+   {
+    "desde": 30.667,
+    "hasta": 30.933,
+    "texto": "ABRE EL SÁBADO 28 NOV LA APP DE PROTEAM",
+    "palabras": 9
+   },
+   {
+    "desde": 31.2,
+    "hasta": 34.267,
+    "texto": "LISTA DE ESPERA 04 10 13 51 DÍAS HORAS MIN SEG entrenador@miclub.es CE",
+    "palabras": 13
+   },
+   {
+    "desde": 34.4,
+    "hasta": 36.133,
+    "texto": "LISTA: SE CIERRA EL 27 NOV JI meses gratis.",
+    "palabras": 9
+   }
+  ]
+ },
+ "audio": {
+  "tiene_audio": true,
+  "wav": "intel/videos/u75/audio_16k.wav",
+  "volumen_integrado_lufs": "-14.95",
+  "pico_real_db": "0.09",
+  "rango_lra": "2.20",
+  "silencios": [
+   {
+    "desde": 7.18,
+    "hasta": 7.47
+   }
+  ],
+  "subidas_bruscas_s": [
+   0.2,
+   0.8,
+   2.6,
+   3.2,
+   4.1,
+   5.2,
+   5.9,
+   7.4,
+   8.5,
+   11.2,
+   13.0,
+   18.1,
+   28.4,
+   32.2,
+   34.3
+  ],
+  "energia_db_cada_0_1s": [
+   -16.7,
+   -22.0,
+   -9.7,
+   -14.1,
+   -26.8,
+   -29.1,
+   -34.0,
+   -41.3,
+   -19.6,
+   -17.9,
+   -10.8,
+   -13.0,
+   -14.8,
+   -11.3,
+   -11.7,
+   -13.7,
+   -11.3,
+   -14.5,
+   -11.8,
+   -14.2,
+   -25.4,
+   -22.5,
+   -32.1,
+   -26.9,
+   -35.0,
+   -24.2,
+   -9.7,
+   -14.5,
+   -12.4,
+   -16.1,
+   -11.3,
+   -24.3,
+   -11.9,
+   -17.4,
+   -24.4,
+   -12.4,
+   -12.6,
+   -13.1,
+   -22.0,
+   -29.3,
+   -21.9,
+   -10.9,
+   -12.7,
+   -14.6,
+   -13.7,
+   -14.2,
+   -14.6,
+   -26.0,
+   -28.8,
+   -27.7,
+   -33.7,
+   -27.1,
+   -14.8,
+   -11.3,
+   -10.8,
+   -18.2,
+   -11.6,
+   -24.9,
+   -35.2,
+   -12.4,
+   -14.1,
+   -12.8,
+   -18.6,
+   -10.8,
+   -15.1,
+   -14.3,
+   -12.0,
+   -10.0,
+   -16.2,
+   -23.4,
+   -23.7,
+   -29.8,
+   -58.4,
+   -77.3,
+   -19.0,
+   -11.3,
+   -12.2,
+   -18.5,
+   -18.7,
+   -20.1,
+   -20.0,
+   -20.7,
+   -22.3,
+   -21.9,
+   -24.6,
+   -10.6,
+   -11.5,
+   -11.4,
+   -14.0,
+   -11.7,
+   -13.4,
+   -19.8,
+   -11.2,
+   -15.7,
+   -12.1,
+   -11.3,
+   -14.5,
+   -12.6,
+   -13.2,
+   -14.8,
+   -13.8,
+   -15.3,
+   -14.2,
+   -15.2,
+   -17.9,
+   -15.0,
+   -20.2,
+   -11.1,
+   -19.5,
+   -17.2,
+   -23.6,
+   -14.1,
+   -10.2,
+   -9.1,
+   -18.8,
+   -17.4,
+   -14.5,
+   -14.6,
+   -12.1,
+   -13.6,
+   -12.4,
+   -15.0,
+   -13.4,
+   -17.2,
+   -11.8,
+   -14.6,
+   -13.5,
+   -12.2,
+   -19.3,
+   -23.1,
+   -9.1,
+   -12.1,
+   -12.2,
+   -17.3,
+   -12.0,
+   -11.6,
+   -19.8,
+   -14.4,
+   -19.6,
+   -19.9,
+   -21.0,
+   -19.1,
+   -21.5,
+   -18.9,
+   -18.2,
+   -10.4,
+   -12.6,
+   -12.7,
+   -21.2,
+   -21.5,
+   -23.1,
+   -23.9,
+   -24.5,
+   -16.6,
+   -13.8,
+   -19.4,
+   -10.9,
+   -10.2,
+   -16.8,
+   -21.7,
+   -14.8,
+   -11.7,
+   -15.2,
+   -11.7,
+   -11.7,
+   -13.1,
+   -14.5,
+   -16.3,
+   -13.7,
+   -12.2,
+   -18.0,
+   -19.6,
+   -16.8,
+   -10.4,
+   -13.7,
+   -12.1,
+   -16.0,
+   -10.7,
+   -18.2,
+   -23.7,
+   -14.1,
+   -11.6,
+   -16.5,
+   -12.9,
+   -12.9,
+   -12.3,
+   -20.6,
+   -20.5,
+   -22.9,
+   -29.4,
+   -20.0,
+   -21.5,
+   -22.0,
+   -15.5,
+   -10.5,
+   -12.4,
+   -12.0,
+   -12.1,
+   -22.6,
+   -12.3,
+   -12.1,
+   -16.4,
+   -14.9,
+   -19.2,
+   -21.5,
+   -22.2,
+   -23.1,
+   -20.0,
+   -23.3,
+   -15.4,
+   -12.6,
+   -13.9,
+   -21.5,
+   -14.2,
+   -10.3,
+   -16.0,
+   -11.0,
+   -12.9,
+   -11.5,
+   -22.9,
+   -18.9,
+   -12.1,
+   -13.7,
+   -23.0,
+   -22.2,
+   -24.0,
+   -23.8,
+   -15.4,
+   -16.4,
+   -17.5,
+   -22.9,
+   -20.5,
+   -11.0,
+   -12.9,
+   -10.5,
+   -11.9,
+   -18.2,
+   -22.6,
+   -22.6,
+   -15.6,
+   -11.4,
+   -14.1,
+   -20.3,
+   -23.4,
+   -23.0,
+   -23.0,
+   -15.3,
+   -11.9,
+   -16.0,
+   -17.0,
+   -10.3,
+   -9.2,
+   -13.9,
+   -14.8,
+   -14.8,
+   -20.9,
+   -21.7,
+   -20.1,
+   -21.9,
+   -23.4,
+   -24.2,
+   -13.9,
+   -15.1,
+   -18.7,
+   -12.1,
+   -11.2,
+   -12.8,
+   -18.6,
+   -10.3,
+   -12.4,
+   -11.7,
+   -8.7,
+   -10.0,
+   -12.1,
+   -11.5,
+   -9.7,
+   -13.4,
+   -22.0,
+   -20.9,
+   -21.6,
+   -22.4,
+   -23.6,
+   -22.9,
+   -17.5,
+   -9.2,
+   -9.1,
+   -11.1,
+   -11.0,
+   -21.8,
+   -25.1,
+   -21.9,
+   -21.2,
+   -23.3,
+   -11.7,
+   -18.4,
+   -11.1,
+   -11.4,
+   -10.8,
+   -12.1,
+   -11.8,
+   -18.6,
+   -14.0,
+   -14.2,
+   -18.3,
+   -11.9,
+   -24.1,
+   -12.7,
+   -14.2,
+   -15.1,
+   -14.9,
+   -11.5,
+   -10.1,
+   -19.4,
+   -14.1,
+   -14.3,
+   -12.8,
+   -18.2,
+   -14.6,
+   -19.8,
+   -21.8,
+   -23.9,
+   -21.8,
+   -11.4,
+   -15.7,
+   -13.2,
+   -13.0,
+   -12.1,
+   -18.3,
+   -10.5,
+   -13.3,
+   -14.0,
+   -12.0,
+   -13.0,
+   -12.8,
+   -11.7,
+   -14.7,
+   -16.7,
+   -13.8,
+   -23.4,
+   -23.7,
+   -25.1,
+   -28.2,
+   -16.6,
+   -11.7,
+   -13.2,
+   -13.4,
+   -9.0,
+   -14.5,
+   -12.4,
+   -16.0,
+   -14.1,
+   -19.1,
+   -23.8,
+   -22.8,
+   -24.6,
+   -26.2,
+   -27.8,
+   -29.8,
+   -32.1,
+   -34.1,
+   -38.0,
+   -37.7,
+   -49.1
+  ],
+  "transcripcion": "transcripcion.json (tools/reel75/voz.tsv)",
+  "nota": "Esto son medidas. Entonación, claridad de la locución, timbre o si hay música NO se pueden afirmar sin escuchar o transcribir."
+ },
+ "vistas": [],
+ "orden": "python3 tools/video_intel.py analyze reels/u75-un-entreno-y-un-avion.mp4 --id u75 --tema dos partidos del Barça de balonmano y el lunes a ciegas del entrenador de base --modo detalle"
+}

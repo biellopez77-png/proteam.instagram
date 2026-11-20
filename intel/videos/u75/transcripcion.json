@@ -1,0 +1,176 @@
+{
+ "origen": "tools/reel75/voz.tsv",
+ "tipo": "locución generada con tiempos por palabra (exacta, no reconocida por oído)",
+ "palabras": 17,
+ "primera_palabra_s": 0.1,
+ "ultima_palabra_s": 35.78,
+ "ritmo_palabras_por_s": 0.48,
+ "frases": [
+  {
+   "desde": 0.1,
+   "hasta": 2.26,
+   "texto": "Jueves, gana de ocho en Polonia.",
+   "palabras_por_s": 0.46
+  },
+  {
+   "desde": 2.58,
+   "hasta": 4.9,
+   "texto": "Hoy a las ocho, Irun, por el liderato.",
+   "palabras_por_s": 0.43
+  },
+  {
+   "desde": 5.22,
+   "hasta": 7.46,
+   "texto": "En medio, un entreno y un avión.",
+   "palabras_por_s": 0.45
+  },
+  {
+   "desde": 7.487,
+   "hasta": 8.34,
+   "texto": "Tú no vuelas.",
+   "palabras_por_s": 1.17
+  },
+  {
+   "desde": 8.5,
+   "hasta": 11.02,
+   "texto": "Pero el lunes también entrenas pegado al partido.",
+   "palabras_por_s": 0.4
+  },
+  {
+   "desde": 11.14,
+   "hasta": 14.42,
+   "texto": "Y lo escribes el domingo sin saber cómo acabó cada uno.",
+   "palabras_por_s": 0.3
+  },
+  {
+   "desde": 14.5,
+   "hasta": 19.18,
+   "texto": "Guárdatelo: al acabar, cada jugador te dice del uno al diez cuánto le ha costado.",
+   "palabras_por_s": 0.43
+  },
+  {
+   "desde": 19.3,
+   "hasta": 22.62,
+   "texto": "Con eso escribes el lunes: el que jugó poco, más.",
+   "palabras_por_s": 0.6
+  },
+  {
+   "desde": 22.74,
+   "hasta": 24.54,
+   "texto": "El que jugó todo, menos.",
+   "palabras_por_s": 0.56
+  },
+  {
+   "desde": 24.66,
+   "hasta": 28.26,
+   "texto": "Pregúntale a tu segundo: ¿quién acabó más cargado el último partido?",
+   "palabras_por_s": 0.56
+  },
+  {
+   "desde": 28.34,
+   "hasta": 29.1,
+   "texto": "Sin mirar.",
+   "palabras_por_s": 1.32
+  },
+  {
+   "desde": 29.3,
+   "hasta": 32.18,
+   "texto": "El sábado veintiocho abre la app de Pro Team.",
+   "palabras_por_s": 0.35
+  },
+  {
+   "desde": 32.34,
+   "hasta": 35.78,
+   "texto": "Lista de espera hasta el veintisiete: tres meses gratis.",
+   "palabras_por_s": 0.58
+  }
+ ],
+ "pausas": [],
+ "por_palabra": [
+  {
+   "desde": 0.1,
+   "hasta": 2.26,
+   "palabra": "Jueves, gana de ocho en Polonia."
+  },
+  {
+   "desde": 2.58,
+   "hasta": 4.9,
+   "palabra": "Hoy a las ocho, Irun, por el liderato."
+  },
+  {
+   "desde": 5.22,
+   "hasta": 7.46,
+   "palabra": "En medio, un entreno y un avión."
+  },
+  {
+   "desde": 7.487,
+   "hasta": 8.34,
+   "palabra": "Tú no vuelas."
+  },
+  {
+   "desde": 8.5,
+   "hasta": 11.02,
+   "palabra": "Pero el lunes también entrenas pegado al partido."
+  },
+  {
+   "desde": 11.14,
+   "hasta": 14.42,
+   "palabra": "Y lo escribes el domingo sin saber cómo acabó cada uno."
+  },
+  {
+   "desde": 14.5,
+   "hasta": 15.3,
+   "palabra": "Guárdatelo:"
+  },
+  {
+   "desde": 15.38,
+   "hasta": 19.18,
+   "palabra": "al acabar, cada jugador te dice del uno al diez cuánto le ha costado."
+  },
+  {
+   "desde": 19.3,
+   "hasta": 20.9,
+   "palabra": "Con eso escribes el lunes:"
+  },
+  {
+   "desde": 20.98,
+   "hasta": 22.62,
+   "palabra": "el que jugó poco, más."
+  },
+  {
+   "desde": 22.74,
+   "hasta": 24.54,
+   "palabra": "El que jugó todo, menos."
+  },
+  {
+   "desde": 24.66,
+   "hasta": 25.86,
+   "palabra": "Pregúntale a tu segundo:"
+  },
+  {
+   "desde": 26.02,
+   "hasta": 28.26,
+   "palabra": "¿quién acabó más cargado el último partido?"
+  },
+  {
+   "desde": 28.34,
+   "hasta": 29.1,
+   "palabra": "Sin mirar."
+  },
+  {
+   "desde": 29.3,
+   "hasta": 32.18,
+   "palabra": "El sábado veintiocho abre la app de Pro Team."
+  },
+  {
+   "desde": 32.34,
+   "hasta": 34.26,
+   "palabra": "Lista de espera hasta el veintisiete:"
+  },
+  {
+   "desde": 34.38,
+   "hasta": 35.78,
+   "palabra": "tres meses gratis."
+  }
+ ]
+}

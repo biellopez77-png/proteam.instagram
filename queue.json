@@ -3758,5 +3758,24 @@
   "fase_dia": "Dom 22/11",
   "note": "Story de Clara (04): pregunta de problema + recordatorio de la lista con cuenta atrás real (dom 22 → sáb 28 = 6 días), HASTA EL 27 NOV y 3 meses gratis. Foto: Pablo Laso con el Anadolu Efes, 2026 (Zafer, CC BY-SA 4.0, Commons). Andrés 76.",
   "agentId": "04"
+ },
+ {
+  "id": "u75",
+  "when": "2026-11-21T11:30:00+01:00",
+  "kind": "reel",
+  "files": [
+   "reels/u75-un-entreno-y-un-avion.mp4"
+  ],
+  "cover": "covers/u75-un-entreno-y-un-avion.jpg",
+  "caption": "Jueves, gana de ocho en Polonia. Hoy a las ocho, en Irun, por el liderato. En medio, un entreno y un avión. 🤾\nTú no vuelas, pero el lunes también entrenas pegado al partido. Y lo escribes el domingo sin saber cómo acabó cada uno.\nGuárdalo para el primer entreno de la semana: 1) al acabar el partido, cada jugador te dice del 1 al 10 cuánto le ha costado; 2) con esos números escribes el lunes, no antes; 3) el que jugó poco hace más; el que jugó todo, menos.\nEnvíaselo a tu segundo entrenador: ¿quién acabó más cargado el último partido? Sin mirar.\nEl sábado 28 abre la app de ProTeam. Lista de espera hasta el 27 de noviembre: entras con 3 meses gratis. Enlace en la bio.\nComenta tu deporte, tu categoría y tus días y te preparo la semana. 👇\n\nFoto: el Barça de balonmano en el Palau Blaugrana (Kuebi = Armin Kübelbeck, CC BY-SA 3.0), vía Wikimedia Commons. Aparece como ejemplo; no usa ProTeam. Datos: crónica del FC Barcelona (Kielce 24-32 Barça, 19/11) y EFE (Bidasoa–Barça, sáb 21/11, 20:00).\n\n#balonmanobase #entrenadordebalonmano #balonmano #handball #proteam",
+  "title": "Jueves, gana de ocho en Polonia. Hoy, Irun. En medio, un entreno y un avión.",
+  "score": "guion 77 · montaje 80",
+  "status": "pending",
+  "campana": "unrespiro",
+  "share_to_feed": false,
+  "fase": "problema",
+  "fase_dia": "Sáb 21/11",
+  "first_comment": "Comenta tu deporte, categoría y días y te preparo la semana. ¿Quién acabó más cargado vuestro último partido?",
+  "note": "FASE: PROBLEMA (Sáb 21/11). u75 · turno de Reels 20/11 9:37 (Dani, Andrés, Marta, Pau): guion de Dani (Andrés 77), Radar 20/11. Caduca el sáb 21 a las 20:00 (empieza el Bidasoa–Barça): si no sale antes de las 17:30 del sábado, cancelar. Concepto: «dos partidos y un lunes a ciegas» (Barça de balonmano en el Palau con JUE 24-32 · SÁB 20:00 → TÚ NO VUELAS: siluetas 50′/5′ y barra LUNES: MISMA SESIÓN → ficha del 1 al 10, 10 s → reto sobre la foto (bucle) → 28 NOV → lista con contador real 6 d 12 h 29 min → 27 NOV). Voz Mateo de la biblioteca en una toma entera (564 caracteres), música nueva re menor con silencio y golpe en «Tú». 36,3 s. Contador calculado para el sáb 21 11:30: si se mueve, rehacer el contador."
  }
 ]
