@@ -16,7 +16,7 @@ function webcta(t) {
     $('wp').style.top = (470 + (1 - p) * 120) + 'px'; $('wp').style.opacity = p;
     [...$('wp').children].forEach((c, i) => { const q = E.out(seg(t, W.web + i * .04, W.web + .28 + i * .04)); c.style.opacity = q; c.style.transform = `translateY(${(1 - q) * 40}px)`; });
     const pg = (t * 1.4) % 1; $('ping').style.transform = `scale(${1 + pg * 1.6})`; $('ping').style.opacity = 1 - pg;
-    const total0 = ((8 * 24 + 14) * 60 + 29) * 60 + 59 - Math.floor(t - W.web);
+    const total0 = ((7 * 24 + 14) * 60 + 29) * 60 + 59 - Math.floor(t - W.web);
     const acc = E.in(seg(t, W.web + .3, W.gal - .08)); const rem = Math.max(0, Math.round(total0 * (1 - acc)));
     const dd = Math.floor(rem / 86400), hh = Math.floor(rem % 86400 / 3600), mm = Math.floor(rem % 3600 / 60), ss = rem % 60;
     [['cd1', dd], ['cd2', hh], ['cd3', mm], ['cd4', ss]].forEach(([id, v]) => { const el = $(id); const nv = String(v).padStart(2, '0'); if (el.textContent !== nv) { el._ch = t; el.textContent = nv; } el.style.color = rem === 0 ? '#4f86ff' : '#f2f1ec';

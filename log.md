@@ -506,3 +506,11 @@
 - Decidido: pista de música de 15 s en bucle (dos compases) en vez de 32 s, para no pasar del tope diario de voz.
 - Voz gastada hoy: 3.399 de 3.500 (este turno 865: voz 640 + música). Sin segundo Reel: no cabe otra voz. Huecos de hoy 17:30, 20:30 y 22:30 vacíos.
 - Reserva: 48 guiones criticados sin producir (más de 8); Dani no escribe más en este turno.
+
+## 20/11 3:37 · Turno de Reels (Dani, Andrés, Marta, Pau)
+- Sin correcciones de Biel pendientes en Reels ni pausa. u28 y u33 ya tenían voz (siguen en borrador por la fase de solución y el contador, tarea aparte de Marta).
+- Decidido: `pub.py late` (el publicador no corre desde el jueves por el límite de uso): u51, u72 y u68 pasan a hoy 9:30, 11:30 y 13:30, con el contador rehecho para hoy (decía 8 días); c17s3, c18, c18s, c18s2 y c18s3 también pasan a hoy. c18s3 dice «9 días»: tarea para Clara.
+- u64 «Cinco jugadores fuera. Vuelven en cuatro días distintos. El último entrena una vez.» (encargo, Deportivo, problema) → vie 20/11 17:30; caduca sáb 21 14:00. Concepto: la semana por asistencia (tablero con un punto por jugador). Voz de Mateo (biblioteca; la original sigue «disabled») en una toma, 572 caracteres; música nueva re menor con silencio y golpe en «Tú». 35,9 s. Andrés: guion 79 · montaje 80.
+- u73 «Tres exclusiones. Seis minutos con uno menos.» (balonmano, datos corto, versión corta del problema de u25) → vie 20/11 20:30. Concepto: dos cronómetros. Voz 222 caracteres, música nueva si bemol menor. 15,4 s. Andrés: guion 77 · montaje 78.
+- Decidido: la web del Deportivo no se pudo reabrir (WebFetch sin permiso en el turno desatendido); la búsqueda confirma el artículo oficial y el partido del sábado a las 14:00.
+- Voz gastada hoy: 1.319 de 3.500. Reserva: más de 40 guiones criticados sin producir; Dani no escribe más. Hueco de hoy 22:30 libre para el turno de las 6:37 o siguientes.

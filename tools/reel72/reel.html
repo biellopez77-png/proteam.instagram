@@ -75,7 +75,7 @@ html,body{width:1080px;height:1920px;overflow:hidden;background:#000}
   <div id="phones" style="position:absolute;inset:0;z-index:4"></div>
   <div class="L" id="web"><div id="wp">
     <div class="pill"><span class="dot"><i id="ping"></i></span>LISTA DE ESPERA</div>
-    <div class="cd"><div><b id="cd1">08</b><span>DÍAS</span></div><div><b id="cd2">12</b><span>HORAS</span></div><div><b id="cd3">29</b><span>MIN</span></div><div><b id="cd4">59</b><span>SEG</span></div></div>
+    <div class="cd"><div><b id="cd1">07</b><span>DÍAS</span></div><div><b id="cd2">12</b><span>HORAS</span></div><div><b id="cd3">29</b><span>MIN</span></div><div><b id="cd4">59</b><span>SEG</span></div></div>
     <div id="fld"><span id="fldt"><span class="ph2">Tu email</span></span><span class="caret" id="fc" style="opacity:0"></span></div>
     <div id="btn"><div id="rip"></div><span id="btt">Unirme a la lista de espera</span><div id="spin"></div>
       <div id="ok"><svg id="okc" viewBox="0 0 84 84"><circle cx="42" cy="42" r="38" fill="none" stroke="#fff" stroke-width="6" stroke-dasharray="239" stroke-dashoffset="239" id="okr"/><path d="M26 43l11 11 21-23" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="60" stroke-dashoffset="60" id="okp"/></svg><span>Estás dentro</span></div></div>
@@ -199,7 +199,7 @@ function webcta(t) {
     $('wp').style.top = (470 + (1 - p) * 120) + 'px'; $('wp').style.opacity = p;
     [...$('wp').children].forEach((c, i) => { const q = E.out(seg(t, W.web + i * .04, W.web + .28 + i * .04)); c.style.opacity = q; c.style.transform = `translateY(${(1 - q) * 40}px)`; });
     const pg = (t * 1.4) % 1; $('ping').style.transform = `scale(${1 + pg * 1.6})`; $('ping').style.opacity = 1 - pg;
-    const total0 = ((8 * 24 + 12) * 60 + 29) * 60 + 59 - Math.floor(t - W.web);
+    const total0 = ((7 * 24 + 12) * 60 + 29) * 60 + 59 - Math.floor(t - W.web);
     const acc = E.in(seg(t, W.web + .3, W.gal - .08)); const rem = Math.max(0, Math.round(total0 * (1 - acc)));
     const dd = Math.floor(rem / 86400), hh = Math.floor(rem % 86400 / 3600), mm = Math.floor(rem % 3600 / 60), ss = rem % 60;
     [['cd1', dd], ['cd2', hh], ['cd3', mm], ['cd4', ss]].forEach(([id, v]) => { const el = $(id); const nv = String(v).padStart(2, '0'); if (el.textContent !== nv) { el._ch = t; el.textContent = nv; } el.style.color = rem === 0 ? '#4f86ff' : '#f2f1ec';
