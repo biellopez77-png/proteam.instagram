@@ -1,5 +1,7 @@
 # Lanzamiento ProTeam · 18 → 28 de noviembre (manda sobre cualquier otro plan de contenido)
 
+> **20/11 11:16: Instagram suspendido. Mientras dure, manda `agencia/REORGANIZACION_20-11.md`:** audiovisual en pausa, no se publica nada sin Biel, y las prioridades son web, Club Fundador y piezas informativas.
+
 Decidido por Biel el 17/11. Base: el documento de fases de lanzamiento que pasó Biel (resumen abajo). El calentamiento se ha saltado (poca audiencia todavía: se hará en el próximo lanzamiento). Arrancamos en **IMPACTO** el miércoles 18 y todo termina en el **DÍA 0: sábado 28 de noviembre**, cuando abre ProTeam y la lista de espera entra con 3 meses gratis.
 
 ## ACTUALIZACIÓN 20/11 · misión de Biel (manda sobre lo de abajo si chocan)
