@@ -1290,3 +1290,4 @@ Fuente de las normas: Normativa de Balonmano 2025, Juegos Deportivos Escolares d
 - **H1137** Del central hablarías diez minutos. Del extremo suplente, ni uno. [balonmano · comparativa · seguimiento] (11/15)
 - **H1138** «¿Qué hemos entrenado hoy?» «De todo, míster.» [fútbol · narrativa · sesión] (12/15)
 - **H1139** Cuantas más cosas entrenas en una sesión, menos se queda. [general · contraintuitiva · sesión] (11/15)
+- **H1140** Desde el banquillo, el que no sale no se ve. [general · observacional · minutos] (12/15)
