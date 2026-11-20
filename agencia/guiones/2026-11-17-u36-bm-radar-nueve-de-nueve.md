@@ -1,7 +1,7 @@
 # u36 · bm · actualidad · «Nueve de nueve. Y esta semana, dos partidos: Europa y el Barça.» (balonmano)
 
 - **fase: solución (mar 24 tarde – mié 25; enseña la app)** (lanzamiento, `agencia/LANZAMIENTO.md`; marcado por Dani el 17/11 21:10)
-- **Estado: guion en reserva, sin producir** · **Crítica de Andrés: 77/100** (guion, escala 16/11) · riesgo de salto medio · crítica en `agencia/criticas/2026-11-17-u36-guion.md`
+- **Estado: descartado (20/11)** · motivo: caduca el sáb 21/11 a las 20:00, antes de su fase (solución, desde el mar 24); el mismo partido lo cubre u75 en fase de problema. Antes: guion en reserva, sin producir · **Crítica de Andrés: 77/100** (guion, escala 16/11) · riesgo de salto medio · crítica en `agencia/criticas/2026-11-17-u36-guion.md`
 - **Deporte:** balonmano · **Encargo:** t-20261117-01-radar-3 (Radar de Samuel) · ficha: `agencia/ideas/radar-2026-11-17.md`, idea 3.
 - **Caduca el sábado 21/11 a las 20:00** (empieza el Bidasoa-Barça). Último hueco útil: sábado 21/11 a las 17:30. Después no se publica.
 - **Insight:** I-024 (`intel/insights/INSIGHTS.md`) · **Territorio:** lo que pasa entre entreno y partido.

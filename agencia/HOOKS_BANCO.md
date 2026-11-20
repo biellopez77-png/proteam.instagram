@@ -1281,3 +1281,7 @@ Fuente de las normas: Normativa de Balonmano 2025, Juegos Deportivos Escolares d
 - **H1128** Mañana a las once de la noche ya sabes qué vas a estar haciendo. [general · provocadora · planificación] (11/15)
 - **H1129** Ganas de tres, quedan cinco segundos. ¿Falta o defiendes? [baloncesto · provocadora · final de partido] (12/15)
 - **H1130** De la ida solo te acuerdas del resultado. [balonmano · provocadora · partido] (11/15)
+- **H1131** Tu jueves no es el mismo entreno si juegas el sábado o el domingo. [fútbol · provocadora · planificación] (12/15)
+- **H1132** Tu semana no empieza el lunes. Empieza el día del partido. [general · contraintuitiva · planificación] (11/15)
+- **H1133** El que jugó 50 minutos y el que jugó 5 hacen lo mismo el lunes. [balonmano · provocadora · carga] (12/15)
+- **H1134** El entreno del lunes se escribe el sábado, al acabar. [general · contraintuitiva · carga] (11/15)
