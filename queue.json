@@ -3682,5 +3682,81 @@
   "fase_dia": "Mié 25/11",
   "agentId": "04",
   "note": "SE SUBE A MANO (Biel), en este orden y seguidas: fondo de una encuesta nativa de Instagram; el sticker va en el hueco de abajo, con las mismas palabras que las etiquetas. Por eso está en borrador y no sale sola. Pack de cocreación (stories/cocreacion1120/LEEME.md). Ninguna encuesta promete cambios; el jue 26 se enseñan los resultados reales. Crítica: agencia/criticas/2026-11-20-cocreacion-club-pov.md."
+ },
+ {
+  "id": "c20",
+  "kind": "carousel",
+  "files": [
+   "feed/c20-1.jpg",
+   "feed/c20-2.jpg",
+   "feed/c20-3.jpg",
+   "feed/c20-4.jpg",
+   "feed/c20-5.jpg",
+   "feed/c20-6.jpg",
+   "feed/c20-7.jpg",
+   "feed/c20-8.jpg"
+  ],
+  "title": "La convocatoria que no deja preguntas. (balonmano: seis líneas)",
+  "score": "82",
+  "status": "pending",
+  "campana": "carrusel",
+  "when": "2026-11-21T19:30:00+01:00",
+  "cover": null,
+  "caption": "La convocatoria se manda una vez. Y se contesta toda la noche.\nGuárdala y pásasela a tu segundo: el jueves la mandáis en seis líneas.\n\nCada pregunta que te llega al grupo («¿a qué hora?», «¿dónde es?», «¿qué camiseta?») es una línea que faltaba en el mensaje. Llegada, pabellón, equipación, qué traer, a quién avisar si no vienes y vuelta. Y si aún te llega una, la añades como línea siete.\n\n¿Qué pregunta te hacen siempre después de mandarla? Escríbela en comentarios.\n\nProTeam es la app para entrenadores de fútbol, baloncesto y balonmano. Abre el sábado 28: apúntate a la lista de espera hasta el 27 de noviembre y empiezas con 3 meses gratis. Enlace en la bio.\n\nFoto: Nikola Karabatić con el PSG ante el THW Kiel, 2018 (Wenflou, CC0, Wikimedia Commons).\n\n#entrenadores #balonmano #balonmanobase #deportebase",
+  "fase": "problema",
+  "fase_dia": "Sáb 21/11",
+  "note": "Clara (04) · turno 20/11 9:07 · problema: el trabajo que nadie ve (el grupo de WhatsApp tras la convocatoria), sin la app · error y corrección: 21:40 → chat → cada pregunta es una línea que faltaba → seis líneas (guardable) → ejemplo → línea siete → cierre · sin datos externos · Andrés texto 82, final 82, encaje de fase sí (agencia/criticas/2026-11-20-c20-guion.md y -final.md) · documento agencia/carruseles/2026-11-20-c20-convocatoria-seis-lineas.md · a las 19:30 y no a las 12:30 para no ir pegado a u75 (balonmano, 11:30)",
+  "agentId": "04"
+ },
+ {
+  "id": "c20s",
+  "kind": "story",
+  "files": [
+   "stories/st-1121-no-puedo-ir.jpg"
+  ],
+  "title": "¿Cuándo te llegó el último «no puedo ir»? A/B/C (fútbol, Liverpool camino del banquillo)",
+  "score": "77",
+  "status": "pending",
+  "campana": "carrusel",
+  "when": "2026-11-21T10:30:00+01:00",
+  "cover": null,
+  "fase": "problema",
+  "fase_dia": "Sáb 21/11",
+  "note": "Story de problema de Clara (04): encuesta por comentarios del último post (A el jueves · B el viernes por la noche · C esta mañana). Samuel cuenta las respuestas reales; deciden la hora del «avísame antes de…» y el ángulo de las bajas en las piezas de problema. Foto: jugadores del Liverpool camino del banquillo, 4/1/2026 (Timmy96, CC0, Commons). Andrés 77.",
+  "agentId": "04"
+ },
+ {
+  "id": "c20s2",
+  "kind": "story",
+  "files": [
+   "stories/st-1121-convocatoria-preguntas.jpg"
+  ],
+  "title": "¿Te suena? La convocatoria y las tres preguntas (tres deportes, aviso de c20)",
+  "score": "76",
+  "status": "pending",
+  "campana": "carrusel",
+  "when": "2026-11-21T16:30:00+01:00",
+  "cover": null,
+  "fase": "problema",
+  "fase_dia": "Sáb 21/11",
+  "note": "Story de problema de Clara (04): escena del grupo (convocatoria a las 20:00 y tres preguntas) + aviso con contenido del carrusel c20 de las 19:30. Sin foto (papel). Andrés 76.",
+  "agentId": "04"
+ },
+ {
+  "id": "c20s3",
+  "kind": "story",
+  "files": [
+   "stories/st-1122-seis-dias-lista.jpg"
+  ],
+  "title": "¿Ya sabes qué entrenas el martes? 6 días para el sábado 28 (baloncesto, Pablo Laso)",
+  "score": "76",
+  "status": "pending",
+  "campana": "carrusel",
+  "when": "2026-11-22T10:30:00+01:00",
+  "cover": null,
+  "fase": "problema",
+  "fase_dia": "Dom 22/11",
+  "note": "Story de Clara (04): pregunta de problema + recordatorio de la lista con cuenta atrás real (dom 22 → sáb 28 = 6 días), HASTA EL 27 NOV y 3 meses gratis. Foto: Pablo Laso con el Anadolu Efes, 2026 (Zafer, CC BY-SA 4.0, Commons). Andrés 76.",
+  "agentId": "04"
  }
 ]
