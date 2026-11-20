@@ -2704,7 +2704,7 @@
  },
  {
   "id": "c10s3",
-  "when": "2026-11-24T21:30:00+01:00",
+  "when": "2026-11-27T14:30:00+01:00",
   "kind": "story",
   "files": [
    "stories/st-1124-3-dudas.jpg"
@@ -2714,9 +2714,9 @@
   "campana": "carrusel",
   "title": "3 dudas antes de apuntarte (la lista cierra el vie 27)",
   "score": "76",
-  "note": "Story de dudas + lista de espera (Clara, 04) v2: deporte, qué hace, 3 meses gratis hasta el 27 nov. Pide dejar dudas en el último post (no por privado).; oficina: regla de alcance 16/11: una Story al día (el martes sale c10s); lleva «quedan 10 días», Clara le cambia la cuenta atrás y la reprograma; reprogramada desde la oficina; oficina: lanzamiento: explica qué hace la app y la oferta (fase solución); «quedan 10 días» solo valía el 17/11, Clara la rehace con la cuenta del día · 17/11 20:40 (Laura, lanzamiento): fecha prevista 2026-11-25T14:30 en su fase; sigue en borrador hasta que esté corregida (antes 2026-11-17T21:30) · 18/11 (Laura): el mié 25 solo salen las tres encuestas (regla de Biel); pasa al mar 24 21:30 (solución) y sigue en borrador. · 18/11 8:49 (Clara): quitada la cuenta atrás «quedan 10 días»; ahora dice «cierra el vie 27 nov», cierto cualquier día. Andrés: 76, sin cambios de fondo; cumple la regla del plan interno.; reprogramada desde la oficina · 18/11 12:15 (Clara): «¿Cuánto cuesta?» ahora dice «Con la lista (hasta el 27 nov): 3 meses gratis». Andrés: 76.",
-  "fase": "solución",
-  "fase_dia": "Mar 24/11"
+  "note": "Story de dudas + lista de espera (Clara, 04) v2: deporte, qué hace, 3 meses gratis hasta el 27 nov. Pide dejar dudas en el último post (no por privado).; oficina: regla de alcance 16/11: una Story al día (el martes sale c10s); lleva «quedan 10 días», Clara le cambia la cuenta atrás y la reprograma; reprogramada desde la oficina; oficina: lanzamiento: explica qué hace la app y la oferta (fase solución); «quedan 10 días» solo valía el 17/11, Clara la rehace con la cuenta del día · 17/11 20:40 (Laura, lanzamiento): fecha prevista 2026-11-25T14:30 en su fase; sigue en borrador hasta que esté corregida (antes 2026-11-17T21:30) · 18/11 (Laura): el mié 25 solo salen las tres encuestas (regla de Biel); pasa al mar 24 21:30 (solución) y sigue en borrador. · 18/11 8:49 (Clara): quitada la cuenta atrás «quedan 10 días»; ahora dice «cierra el vie 27 nov», cierto cualquier día. Andrés: 76, sin cambios de fondo; cumple la regla del plan interno.; reprogramada desde la oficina · 18/11 12:15 (Clara): «¿Cuánto cuesta?» ahora dice «Con la lista (hasta el 27 nov): 3 meses gratis». Andrés: 76. · 20/11 (Laura, nueva distribución de Biel): el mar 24 llevaba tres Stories y el máximo es dos; pasa al vie 27 14:30 (resuelve dudas el día que cierra la lista; «cierra el vie 27 nov» es cierto ese día).",
+  "fase": "deseo y urgencia",
+  "fase_dia": "Vie 27/11"
  },
  {
   "id": "c11",
@@ -2974,11 +2974,11 @@
   "caption": "Media pista. 60 minutos. Sin filas.\nGuárdalo y mándaselo a tu segundo: es quien lleva el reloj de los cambios.\n\nLa pista mide 28 × 15 metros (Reglas FIBA, regla 2). Muchos días te dan la mitad y la sesión sigue escrita para entera.\n\nLa propuesta (no es norma), para 12: pases en movimiento por parejas (0–10′), 1×1 en tres carriles (10–25′), 3×3 sin bote con cambio cada 3 minutos (25–45′) y tiro por tríos (45–60′). Quien no juega, con balón en la banda.\n\n¿Cuántos días a la semana entrenáis en media pista? Cuéntanoslo en comentarios 👇\n\nEl sábado 28 abre la app de ProTeam, para entrenadores de fútbol, baloncesto y balonmano. En la lista de espera hasta el 27 de noviembre empiezas con 3 meses gratis. Enlace en la bio.\n\n#baloncesto #baloncestobase #entrenadores",
   "status": "pending",
   "campana": "carrusel",
-  "when": "2026-11-23T19:30:00+01:00",
+  "when": "2026-11-22T19:30:00+01:00",
   "cover": null,
-  "note": "Agente 04 · turno 17/11 9:07 · idea 9 (media pista) · antes/después conceptual (estructura nueva) · dato 28 × 15 m (FIBA, regla 2) · Andrés texto 78 → final 80 (agencia/criticas/2026-11-17-c13-*.md) · gemelo u13 en reserva: que no salga el mismo día; reprogramada desde la oficina · 18/11 16:00 Clara: menos texto (encargo de Biel): una idea y una o dos frases por diapositiva, la sesión sin subtítulos (el detalle pasa a la descripción), cierre con resumen en una línea y «guárdalo y mándaselo a tu segundo», descripción más corta con qué es la app y cuándo abre; archivos c13b-N; Andrés 80 con el criterio de texto mínimo (agencia/criticas/2026-11-18-c13-texto-minimo.md)",
+  "note": "Agente 04 · turno 17/11 9:07 · idea 9 (media pista) · antes/después conceptual (estructura nueva) · dato 28 × 15 m (FIBA, regla 2) · Andrés texto 78 → final 80 (agencia/criticas/2026-11-17-c13-*.md) · gemelo u13 en reserva: que no salga el mismo día; reprogramada desde la oficina · 18/11 16:00 Clara: menos texto (encargo de Biel): una idea y una o dos frases por diapositiva, la sesión sin subtítulos (el detalle pasa a la descripción), cierre con resumen en una línea y «guárdalo y mándaselo a tu segundo», descripción más corta con qué es la app y cuándo abre; archivos c13b-N; Andrés 80 con el criterio de texto mínimo (agencia/criticas/2026-11-18-c13-texto-minimo.md) · 20/11 (Laura, nueva distribución de Biel): pasa del lun 23 19:30 al dom 22 19:30 para que ningún día lleve dos carruseles (el lun 23 se queda c12); el fin de semana cierra problema → nutrición.",
   "fase": "nutrición",
-  "fase_dia": "Lun 23/11"
+  "fase_dia": "Dom 22/11"
  },
  {
   "id": "c13s",
@@ -3255,12 +3255,13 @@
   "score": "79",
   "kind": "story",
   "cover": null,
-  "status": "borrador",
+  "status": "cancelled",
   "campana": "carrusel",
   "fase": "ayuda y conexión",
   "fase_dia": "Mié 25/11",
   "agentId": "04",
-  "note": "SE SUBE A MANO: es el fondo de una encuesta nativa de Instagram y el sticker no se puede poner desde la publicación automática. Por eso está en borrador y no sale sola. Pregunta y opciones del sticker en agencia/carruseles/2026-11-25-stories-encuestas.md. Foto: Mourinho (banco, disponible)."
+  "note": "SE SUBE A MANO: es el fondo de una encuesta nativa de Instagram y el sticker no se puede poner desde la publicación automática. Por eso está en borrador y no sale sola. Pregunta y opciones del sticker en agencia/carruseles/2026-11-25-stories-encuestas.md. Foto: Mourinho (banco, disponible).",
+  "cancel_reason": "sustituida por el pack de cocreación (misión de Biel 20/11)"
  },
  {
   "id": "c16s2",
@@ -3272,12 +3273,13 @@
   "score": "77",
   "kind": "story",
   "cover": null,
-  "status": "borrador",
+  "status": "cancelled",
   "campana": "carrusel",
   "fase": "ayuda y conexión",
   "fase_dia": "Mié 25/11",
   "agentId": "04",
-  "note": "SE SUBE A MANO: es el fondo de una encuesta nativa de Instagram y el sticker no se puede poner desde la publicación automática. Por eso está en borrador y no sale sola. Pregunta y opciones del sticker en agencia/carruseles/2026-11-25-stories-encuestas.md. Foto: tiempo muerto del Estudiantes, ACB (Carlos Delgado, CC BY-SA 3.0)."
+  "note": "SE SUBE A MANO: es el fondo de una encuesta nativa de Instagram y el sticker no se puede poner desde la publicación automática. Por eso está en borrador y no sale sola. Pregunta y opciones del sticker en agencia/carruseles/2026-11-25-stories-encuestas.md. Foto: tiempo muerto del Estudiantes, ACB (Carlos Delgado, CC BY-SA 3.0).",
+  "cancel_reason": "sustituida por el pack de cocreación (misión de Biel 20/11)"
  },
  {
   "id": "c16s3",
@@ -3289,12 +3291,13 @@
   "score": "76",
   "kind": "story",
   "cover": null,
-  "status": "borrador",
+  "status": "cancelled",
   "campana": "carrusel",
   "fase": "ayuda y conexión",
   "fase_dia": "Mié 25/11",
   "agentId": "04",
-  "note": "SE SUBE A MANO: es el fondo de una encuesta nativa de Instagram y el sticker no se puede poner desde la publicación automática. Por eso está en borrador y no sale sola. Pregunta y opciones del sticker en agencia/carruseles/2026-11-25-stories-encuestas.md. Foto: tiempo muerto de España, Mundial 2019 (dronepicr, CC BY 2.0)."
+  "note": "SE SUBE A MANO: es el fondo de una encuesta nativa de Instagram y el sticker no se puede poner desde la publicación automática. Por eso está en borrador y no sale sola. Pregunta y opciones del sticker en agencia/carruseles/2026-11-25-stories-encuestas.md. Foto: tiempo muerto de España, Mundial 2019 (dronepicr, CC BY 2.0).",
+  "cancel_reason": "sustituida por el pack de cocreación (misión de Biel 20/11)"
  },
  {
   "id": "c17",
@@ -3434,17 +3437,17 @@
   "id": "c18s3",
   "kind": "story",
   "files": [
-   "stories/st-1119-nueve-dias-lista.jpg"
+   "stories/st-1120-ocho-dias-lista.jpg"
   ],
-  "title": "9 días. ¿Entrenas en base? La lista es para ti. (balonmano)",
+  "title": "8 días. ¿Entrenas en base? La lista es para ti. (balonmano)",
   "score": "75",
   "status": "pending",
   "campana": "carrusel",
   "when": "2026-11-20T18:30:00+01:00",
   "cover": null,
   "fase": "contexto",
-  "fase_dia": "Jue 19/11",
-  "note": "Story de contexto de Clara (04): recordatorio de la lista de espera con cuenta atrás (9 días, cierto el jue 19) · lista hasta el 27 nov 23:59 → el 28 con 3 meses gratis y la semana montada; sin precio. Solo vale el jue 19. Foto: Steffen Weinhold, selección alemana (Man77, CC BY-SA 3.0, Commons). Andrés 75.; reprogramada (antes 2026-11-19T18:30:00+01:00)"
+  "fase_dia": "Vie 20/11",
+  "note": "Story de contexto de Clara (04): recordatorio de la lista de espera con cuenta atrás (9 días, cierto el jue 19) · lista hasta el 27 nov 23:59 → el 28 con 3 meses gratis y la semana montada; sin precio. Solo vale el jue 19. Foto: Steffen Weinhold, selección alemana (Man77, CC BY-SA 3.0, Commons). Andrés 75.; reprogramada (antes 2026-11-19T18:30:00+01:00) · 20/11 7:55 (Clara con Laura): la cifra pasa de 9 a 8 (cierto el vie 20, día en que sale); nada más cambia. Andrés mantiene el 75. Solo vale el vie 20."
  },
  {
   "id": "u51",
@@ -3560,5 +3563,124 @@
   "fase_dia": "Vie 20/11",
   "first_comment": "Comenta tu deporte, categoría y días y te preparo la semana. ¿Cuántos goles salieron de un balón largo al mismo en vuestro último partido?",
   "note": "FASE: PROBLEMA (Vie 20/11). u57 · turno de Reels 20/11 6:37 (Dani, Andrés, Marta, Pau): encargo t-20261117-02-producir-u57-u58 (variación 1 de u08; guion de Dani, Andrés 77), en el siguiente hueco libre (el encargo decía sáb 21). Concepto: «el saque de puerta visto desde arriba» (Emiliano Martínez con el balón → campo de fútbol 7 cenital: flecha larga al más rápido, los otros cinco grises → +2 m hoy, en cadetes lo alcanzan → ficha del partidillo del martes 6,9 s → los siete en azul con pases cortos → reto sobre Martínez (bucle) → 28 NOV → lista con contador real 7 d 1 h 29 min → 27 NOV). Voz Mateo de la biblioteca en una toma entera (561 caracteres), música nueva sol menor con silencio y golpe en «cinco». 36,2 s. Contador calculado para el vie 20 22:30: si se mueve, rehacer el contador."
+ },
+ {
+  "id": "c19s1",
+  "when": "2026-11-25T14:30:00+01:00",
+  "kind": "story",
+  "files": [
+   "stories/cocreacion1120/s1.jpg"
+  ],
+  "cover": null,
+  "status": "borrador",
+  "campana": "carrusel",
+  "title": "Entrenador, te necesitamos. (entrada 1 de 2)",
+  "score": "80",
+  "fase": "ayuda y conexión",
+  "fase_dia": "Mié 25/11",
+  "agentId": "04",
+  "note": "SE SUBE A MANO (Biel), en este orden y seguidas: Story de entrada, sin sticker. Por eso está en borrador y no sale sola. Pack de cocreación (stories/cocreacion1120/LEEME.md). Ninguna encuesta promete cambios; el jue 26 se enseñan los resultados reales. Crítica: agencia/criticas/2026-11-20-cocreacion-club-pov.md."
+ },
+ {
+  "id": "c19s2",
+  "when": "2026-11-25T14:31:00+01:00",
+  "kind": "story",
+  "files": [
+   "stories/cocreacion1120/s2.jpg"
+  ],
+  "cover": null,
+  "status": "borrador",
+  "campana": "carrusel",
+  "title": "Queremos construir ProTeam contigo. Cinco preguntas rápidas. (entrada 2 de 2)",
+  "score": "80",
+  "fase": "ayuda y conexión",
+  "fase_dia": "Mié 25/11",
+  "agentId": "04",
+  "note": "SE SUBE A MANO (Biel), en este orden y seguidas: Story de entrada, sin sticker. Por eso está en borrador y no sale sola. Pack de cocreación (stories/cocreacion1120/LEEME.md). Ninguna encuesta promete cambios; el jue 26 se enseñan los resultados reales. Crítica: agencia/criticas/2026-11-20-cocreacion-club-pov.md."
+ },
+ {
+  "id": "c19s3",
+  "when": "2026-11-25T14:32:00+01:00",
+  "kind": "story",
+  "files": [
+   "stories/cocreacion1120/p1.jpg"
+  ],
+  "cover": null,
+  "status": "borrador",
+  "campana": "carrusel",
+  "title": "ENCUESTA 1 de 5 · ¿Qué combinación de colores prefieres? La actual / Con lila",
+  "score": "79",
+  "fase": "ayuda y conexión",
+  "fase_dia": "Mié 25/11",
+  "agentId": "04",
+  "note": "SE SUBE A MANO (Biel), en este orden y seguidas: fondo de una encuesta nativa de Instagram; el sticker va en el hueco de abajo, con las mismas palabras que las etiquetas. Por eso está en borrador y no sale sola. Pack de cocreación (stories/cocreacion1120/LEEME.md). Ninguna encuesta promete cambios; el jue 26 se enseñan los resultados reales. Crítica: agencia/criticas/2026-11-20-cocreacion-club-pov.md."
+ },
+ {
+  "id": "c19s4",
+  "when": "2026-11-25T14:33:00+01:00",
+  "kind": "story",
+  "files": [
+   "stories/cocreacion1120/p2.jpg"
+  ],
+  "cover": null,
+  "status": "borrador",
+  "campana": "carrusel",
+  "title": "ENCUESTA 2 de 5 · ¿Cómo prefieres navegar por la app? Menú lateral / Menú inferior",
+  "score": "80",
+  "fase": "ayuda y conexión",
+  "fase_dia": "Mié 25/11",
+  "agentId": "04",
+  "note": "SE SUBE A MANO (Biel), en este orden y seguidas: fondo de una encuesta nativa de Instagram; el sticker va en el hueco de abajo, con las mismas palabras que las etiquetas. Por eso está en borrador y no sale sola. Pack de cocreación (stories/cocreacion1120/LEEME.md). Ninguna encuesta promete cambios; el jue 26 se enseñan los resultados reales. Crítica: agencia/criticas/2026-11-20-cocreacion-club-pov.md."
+ },
+ {
+  "id": "c19s5",
+  "when": "2026-11-25T14:34:00+01:00",
+  "kind": "story",
+  "files": [
+   "stories/cocreacion1120/p3.jpg"
+  ],
+  "cover": null,
+  "status": "borrador",
+  "campana": "carrusel",
+  "title": "ENCUESTA 3 de 5 · ¿Qué color prefieres para la insignia del Club Fundador? Azul / Oro / Lila (diseño provisional)",
+  "score": "76",
+  "fase": "ayuda y conexión",
+  "fase_dia": "Mié 25/11",
+  "agentId": "04",
+  "note": "SE SUBE A MANO (Biel), en este orden y seguidas: fondo de una encuesta nativa de Instagram; el sticker va en el hueco de abajo, con las mismas palabras que las etiquetas. Por eso está en borrador y no sale sola. Pack de cocreación (stories/cocreacion1120/LEEME.md). Ninguna encuesta promete cambios; el jue 26 se enseñan los resultados reales. Crítica: agencia/criticas/2026-11-20-cocreacion-club-pov.md. Diseño provisional de la insignia: se rehace con el prototipo de Biel."
+ },
+ {
+  "id": "c19s6",
+  "when": "2026-11-25T14:35:00+01:00",
+  "kind": "story",
+  "files": [
+   "stories/cocreacion1120/p4.jpg"
+  ],
+  "cover": null,
+  "status": "borrador",
+  "campana": "carrusel",
+  "title": "ENCUESTA 4 de 5 · ¿Qué prefieres para encontrar jugadores, datos o ejercicios? Buscador / Filtros",
+  "score": "79",
+  "fase": "ayuda y conexión",
+  "fase_dia": "Mié 25/11",
+  "agentId": "04",
+  "note": "SE SUBE A MANO (Biel), en este orden y seguidas: fondo de una encuesta nativa de Instagram; el sticker va en el hueco de abajo, con las mismas palabras que las etiquetas. Por eso está en borrador y no sale sola. Pack de cocreación (stories/cocreacion1120/LEEME.md). Ninguna encuesta promete cambios; el jue 26 se enseñan los resultados reales. Crítica: agencia/criticas/2026-11-20-cocreacion-club-pov.md."
+ },
+ {
+  "id": "c19s7",
+  "when": "2026-11-25T14:36:00+01:00",
+  "kind": "story",
+  "files": [
+   "stories/cocreacion1120/p5.jpg"
+  ],
+  "cover": null,
+  "status": "borrador",
+  "campana": "carrusel",
+  "title": "ENCUESTA 5 de 5 · ¿Cómo prefieres consultar la información? Más visual / Más datos",
+  "score": "80",
+  "fase": "ayuda y conexión",
+  "fase_dia": "Mié 25/11",
+  "agentId": "04",
+  "note": "SE SUBE A MANO (Biel), en este orden y seguidas: fondo de una encuesta nativa de Instagram; el sticker va en el hueco de abajo, con las mismas palabras que las etiquetas. Por eso está en borrador y no sale sola. Pack de cocreación (stories/cocreacion1120/LEEME.md). Ninguna encuesta promete cambios; el jue 26 se enseñan los resultados reales. Crítica: agencia/criticas/2026-11-20-cocreacion-club-pov.md."
  }
 ]

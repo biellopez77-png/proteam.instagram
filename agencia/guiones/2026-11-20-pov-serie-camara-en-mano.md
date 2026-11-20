@@ -77,7 +77,7 @@
 
 | s | Imagen | Voz | Gráfico |
 |---|---|---|---|
-| 0–3 | Puño cerrado delante de la pantalla | «Si entras en la lista de espera antes del 27, esto es lo que tienes.» | g07 |
+| 0–3 | Puño cerrado delante de la pantalla | «Si entras en la lista de espera hasta el 27, esto es lo que tienes.» | g07 |
 | 3–8 | Un dedo | «Uno: tu insignia de fundador, con tu número.» | g06-dedo1 |
 | 8–13 | Dos dedos | «Dos: tres meses gratis.» | g06-dedo2 |
 | 13–18 | Tres dedos | «Tres: una persona que te acompaña de tú a tú esos meses.» | g06-dedo3 |

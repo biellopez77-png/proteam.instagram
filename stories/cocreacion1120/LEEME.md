@@ -22,3 +22,7 @@ Diseñadas, **sin publicar**. Las sube Biel a mano, porque las encuestas nativas
 Las fuentes están en `tools/cocreacion1120/` (`gen.py` y `render.py`). Cuando llegue el prototipo de la insignia, se cambia la función `badge()` y se vuelve a renderizar todo.
 
 Ninguna encuesta cambia la app por sí sola. Se usan para escuchar; solo se propondrá un cambio si la demanda es muy clara y después de analizarla.
+
+
+## 20/11 · en la cola
+La serie está en `queue.json` como c19s1–c19s7 (mié 25, 14:30 en adelante, en borrador: se sube a mano). Sustituye a c16s, c16s2 y c16s3. Cambios tras la crítica de Andrés (`agencia/criticas/2026-11-20-cocreacion-club-pov.md`): s2 dice «ProTeam · la app para entrenadores» y `anuncio.jpg` dice «Entra desde el enlace de la bio». `club.jpg` no está en la cola: espera el visto bueno de Biel.

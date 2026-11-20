@@ -30,7 +30,7 @@ def page(name,body,extra=''):
 page('s1','''<div class="s dark"><div style="position:absolute;left:50%;top:430px;transform:translateX(-50%);width:760px;height:760px;border-radius:50%;background:radial-gradient(circle,#2f6bff55,#2f6bff00 70%)"></div>
 <img src="proteam-mark.webp" style="position:absolute;left:50%;top:560px;transform:translateX(-50%);width:420px">
 <div class="in" style="justify-content:flex-end"><h1 style="font-size:132px;letter-spacing:-.04em">Entrenador,<br><span class="sr" style="letter-spacing:0">te necesitamos.</span></h1></div></div>''')
-page('s2','''<div class="s paper"><div class="in"><div class="k">ProTeam · Club Fundador</div>
+page('s2','''<div class="s paper"><div class="in"><div class="k">ProTeam · la app para entrenadores</div>
 <h1 style="font-size:116px;margin-top:40px;letter-spacing:-.03em">Queremos construir ProTeam <span class="sr" style="letter-spacing:0">contigo.</span></h1>
 <div class="sm" style="font-size:44px;margin-top:50px;color:#3a4150">Cinco preguntas rápidas.<br>Tu opinión nos ayuda a decidir.</div>
 <div style="margin-top:auto;display:flex;align-items:center;gap:26px;font-weight:800;font-size:40px">Toca para empezar <svg width="120" height="40" viewBox="0 0 120 40"><path d="M0 20h108M90 4l18 16-18 16" stroke="#2f6bff" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div></div></div>''')
@@ -61,7 +61,7 @@ page('share','''<div class="s dark"><div style="position:absolute;inset:0;backgr
 page('anuncio','''<div class="s paper"><div class="in"><div class="k">Lista de espera</div>
 <h1 style="font-size:104px;margin-top:36px;letter-spacing:-.03em">¡Ya estás dentro de la lista de espera de <span class="sr" style="letter-spacing:0">ProTeam!</span></h1>
 <div style="display:flex;align-items:center;gap:40px;margin-top:70px">'''+badge(size=300,glow=False)+'''<div class="sm" style="font-size:44px;font-weight:700">Ahora, consigue tu insignia del <b style="color:#2f6bff">Club Fundador.</b></div></div>
-<div class="sm" style="margin-top:60px;font-size:40px;color:#3a4150">Entra en pro-team.app, comparte tu imagen en una historia y menciónanos.</div>
+<div class="sm" style="margin-top:60px;font-size:40px;color:#3a4150">Entra desde el enlace de la bio, comparte tu imagen en una historia y menciónanos.</div>
 <div style="margin-top:auto;font-weight:800;font-size:40px">Enlace en la bio →</div></div></div>''')
 # Presentación del Club Fundador (sin precio ni condiciones sin aprobar)
 ben=[('Insignia verificada y numerada','Con tu número de fundador.'),('3 meses gratis','Para la lista de espera.'),('Soporte de tú a tú','Te acompañamos los 3 meses.'),('Tu voz en ProTeam','Votaciones solo para fundadores.'),('3 tickets regalo','Para tus amigos. Pronto, más.'),('Precio fundador','Condiciones muy pronto.')]

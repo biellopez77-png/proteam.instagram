@@ -3,7 +3,7 @@ import os, io
 from playwright.sync_api import sync_playwright
 from PIL import Image
 H=os.path.dirname(os.path.abspath(__file__)); R=os.path.dirname(os.path.dirname(H))
-out={'a':'st-1119-solo-o-con-segundo.jpg','b':'st-1119-tres-deportes-misma-semana.jpg','c':'st-1119-nueve-dias-lista.jpg'}
+out={'a':'st-1119-solo-o-con-segundo.jpg','b':'st-1119-tres-deportes-misma-semana.jpg','c':'st-1120-ocho-dias-lista.jpg'}
 with sync_playwright() as p:
     b=p.chromium.launch(); pg=b.new_page(viewport={'width':1080,'height':1920},device_scale_factor=1)
     for k,f in out.items():
