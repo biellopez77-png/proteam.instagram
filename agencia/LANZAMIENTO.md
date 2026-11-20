@@ -2,6 +2,42 @@
 
 Decidido por Biel el 17/11. Base: el documento de fases de lanzamiento que pasó Biel (resumen abajo). El calentamiento se ha saltado (poca audiencia todavía: se hará en el próximo lanzamiento). Arrancamos en **IMPACTO** el miércoles 18 y todo termina en el **DÍA 0: sábado 28 de noviembre**, cuando abre ProTeam y la lista de espera entra con 3 meses gratis.
 
+## ACTUALIZACIÓN 20/11 · misión de Biel (manda sobre lo de abajo si chocan)
+**Dónde estamos de verdad:** el miércoles 18 fue el impacto y el jueves 19 el contexto (u67 y u68). Hoy, viernes 20, toca decisión e inicio del problema. No se reinicia nada.
+
+**Este fin de semana (sáb 21 – lun 23), cerrar bien PROBLEMA → NUTRICIÓN → SOLUCIÓN:**
+- **Problema:** la parte del trabajo que nadie ve, demasiadas herramientas, el tiempo que se pierde organizando, entrenar frente a gestionar. Sin repetir mensajes: cada pieza aporta un ángulo nuevo.
+- **Nutrición:** organización semanal, planificación de entrenos, temporada (temporada › mesociclo › semana › sesión), seguimiento del equipo, gestión de la información, consejos.
+- **Solución** (desde el martes 24): la app de verdad. Demos, recorridos y antes/ahora, solo con funciones comprobadas.
+
+**Después:**
+- Miércoles 25: cocreación. Pack de 2 Stories de entrada + 5 encuestas nativas, en `stories/cocreacion1120/`; las sube Biel a mano.
+- Jueves 26: prueba social, solo real, y presentación del Club Fundador.
+- Viernes 27: urgencia con el contador real hasta las 23:59.
+- Sábado 28: día 0.
+
+**Nueva distribución:**
+- Más o menos la **mitad de lo que se publica son Reels**.
+- **Menos Stories y menos imágenes estáticas**: como máximo 3 Stories al día y 1 carrusel al día.
+- Nada que repita el mensaje del día anterior.
+
+**Dos líneas de Reels:**
+1. Los estéticos y visuales de siempre.
+2. **POV con cámara en mano** de Biel: guiones y gráficos en `agencia/guiones/2026-11-20-pov-serie-camara-en-mano.md` y `agencia/recursos/pov/`. Se montan cuando llegue su grabación.
+
+**Regla creativa nueva (para todo: Reels, Stories, imágenes, web y app): menos ruido, más claridad.**
+- Menos texto en pantalla, menos decoración y menos información a la vez.
+- Una sola idea por escena, mensajes cortos y animaciones suaves que explican.
+- No se quita información importante: se presenta mejor.
+
+**Club Fundador** (detalle en `agencia/CLUB_FUNDADOR.md`):
+- Los primeros entrenadores tienen reconocimiento, ventajas y voz.
+- Se comunica desde el jueves 26, y antes en Stories con la insignia en cuanto esté publicada.
+- Nada de plazas limitadas ni escasez inventada.
+- Nunca el importe del precio fundador ni el detalle de los tickets sin aprobar.
+
+**Urgencia (del 26 al 27):** solo cosas ciertas. Se acerca el lanzamiento, la lista tiene ventajas, hay 3 meses gratis y el Club Fundador da reconocimiento. Contador real.
+
 ## Regla de oro (innegociable)
 1. **Orden fijo: PROBLEMA → NUTRICIÓN → SOLUCIÓN → PRUEBA SOCIAL.** Nunca se enseña la solución (la app por dentro, sus pantallas, «con ProTeam lo haces en 2 minutos») antes de que hayan pasado el problema y la nutrición. Impacto, contexto, decisión, ayuda y conexión, y deseo/urgencia pueden mezclarse un poco; esos cuatro no.
 2. **Cada día tiene su fase** (calendario de abajo). Todo lo que sale ese día (Reels, carruseles, Stories, comentario fijo, respuestas de Lucía, emails) sirve a esa fase. En **Stories**, solo la fase del día. En un **Reel o carrusel** suelto se puede cerrar con un guiño a la fase siguiente (transición), nunca saltarse una.
@@ -9,7 +45,7 @@ Decidido por Biel el 17/11. Base: el documento de fases de lanzamiento que pasó
 4. **Visitas llenas, no vacías.** Nada de piezas para hacer números: cada pieza conecta con el entrenador de base de fútbol, baloncesto o balonmano.
 5. **Verdad siempre.** Nada inventado: ni testimonios, ni resultados de encuestas, ni cifras, ni «los primeros X» si no es real. Las encuestas se enseñan con sus resultados reales. La urgencia solo con cosas ciertas: el contador al 27/11 23:59 y los 3 meses gratis para la lista.
 6. **El precio no se dice** en ningún canal. La oferta es: lista de espera antes del 27/11 → el 28 empiezas con 3 meses gratis + asesoramiento 1 a 1 esos 3 meses + tu semana montada en la app.
-7. **Nunca aparece el nombre de Biel** (ni su cara, ni «el fundador», ni historias personales) en ningún Reel, carrusel, Story, caption ni comentario: la que habla y protagoniza es ProTeam (Biel, 17/11).
+7. **Nunca aparece el nombre de Biel** en Reels, carruseles, Stories, captions ni comentarios: la que habla es ProTeam (Biel, 17/11). **Excepciones de Biel (20/11):** (a) en los vídeos POV con cámara en mano sale él trabajando en su escritorio (manos, mesa y pantalla), sin decir su nombre; (b) la carta de bienvenida del Club Fundador, privada y dentro de la app, la firma «Biel, creador de ProTeam».
 8. **Todo CTA lleva al mismo sitio:** apuntarse a la lista (enlace de la bio, pro-team.app/?auth=register).
 
 ## Calendario
