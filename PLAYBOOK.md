@@ -237,6 +237,43 @@ cuenta atrás y la presentación se rehacen con los encuadres de arriba.
   Sin descuentos ni precio salvo que Biel confirme una oferta (si la confirma, se añade aquí).
 - **1–24 dic · «Adviento del entrenador»**: cada día un ejercicio real (ficha de /ejercicios) en Story
   con Trazo, y un Reel resumen cada domingo. Llamada a la acción: el calendario completo en la web.
+  - **Web (montada el 20 nov 2026): https://pro-team.app/adviento** — 24 casillas que se desbloquean cada día
+    (hora de Madrid), formulario para recibir el ejercicio por email (leads con source `adviento`; el origen se
+    mide con `?o=`: usar **pro-team.app/adviento?o=instagram** en Stories y bio) y enlace a /prueba. Sin precios.
+  - **Story de cada día** (la hace la producción diaria): el ejercicio de la tabla, con su ficha real; la
+    llamada a la acción es «El calendario completo: pro-team.app/adviento». La ficha de cada día no se abre
+    en la web hasta ese día: no publicar la Story antes de las 00:00 de Madrid ni adelantar ejercicios.
+    Los 24 van de menos a más exigentes y alternan fútbol, baloncesto y balonmano.
+
+  | Día | Deporte | Ejercicio | Ficha |
+  |---|---|---|---|
+  | 1 dic (mar) | Fútbol | Rueda de pases con control orientado | pro-team.app/ejercicios/futbol-rueda-pases-control-orientado |
+  | 2 dic (mié) | Baloncesto | Rueda de tiro con fatiga | pro-team.app/ejercicios/baloncesto-rueda-tiro-fatiga |
+  | 3 dic (jue) | Balonmano | Pases en carrera por tríos con lanzamiento | pro-team.app/ejercicios/balonmano-pases-carrera-trios-lanzamiento |
+  | 4 dic (vie) | Fútbol | Rondo 4x2 con transición | pro-team.app/ejercicios/futbol-rondo-4x2-transicion |
+  | 5 dic (sáb) | Baloncesto | Tiros libres con fatiga y consecuencia | pro-team.app/ejercicios/baloncesto-tiros-libres-fatiga-consecuencia |
+  | 6 dic (dom) | Balonmano | 1x1 con finta en carril central | pro-team.app/ejercicios/balonmano-1x1-finta-carril |
+  | 7 dic (lun) | Fútbol | Finalización 2x1 + portero en zona central | pro-team.app/ejercicios/futbol-finalizacion-2x1-portero |
+  | 8 dic (mar) | Baloncesto | 1x1 tras cierre defensivo | pro-team.app/ejercicios/baloncesto-1x1-tras-cierre |
+  | 9 dic (mié) | Balonmano | 2x1 en el lateral para liberar al extremo | pro-team.app/ejercicios/balonmano-2x1-lateral-extremo |
+  | 10 dic (jue) | Fútbol | Centros y remate en oleadas con ocupación de zonas | pro-team.app/ejercicios/futbol-centros-remate-oleadas |
+  | 11 dic (vie) | Baloncesto | 3x3 sin bote para cuidar el balón | pro-team.app/ejercicios/baloncesto-3x3-sin-bote |
+  | 12 dic (sáb) | Balonmano | 3x3 con transición a contraataque | pro-team.app/ejercicios/balonmano-3x3-transicion-contraataque |
+  | 13 dic (dom) | Fútbol | 4x4 + porteros con tiro rápido | pro-team.app/ejercicios/futbol-4x4-porteros-tiro-rapido |
+  | 14 dic (lun) | Baloncesto | Cierre de rebote 3x3 con puntuación | pro-team.app/ejercicios/baloncesto-cierre-rebote-3x3 |
+  | 15 dic (mar) | Balonmano | Contraataque en oleadas 3x2 con repliegue | pro-team.app/ejercicios/balonmano-contraataque-oleadas-3x2 |
+  | 16 dic (mié) | Fútbol | Salida de balón 4+portero contra 3 | pro-team.app/ejercicios/futbol-salida-balon-4x3-portero |
+  | 17 dic (jue) | Baloncesto | Contraataque 3x2 y 2x1 continuo | pro-team.app/ejercicios/baloncesto-contraataque-3x2-2x1-continuo |
+  | 18 dic (vie) | Balonmano | 4x4 con pivote: bloqueo y continuación | pro-team.app/ejercicios/balonmano-4x4-juego-con-pivote |
+  | 19 dic (sáb) | Fútbol | Juego de posición 5x5+3 | pro-team.app/ejercicios/futbol-juego-posicion-5x5-3 |
+  | 20 dic (dom) | Baloncesto | 2x2 desde bloqueo directo | pro-team.app/ejercicios/baloncesto-2x2-bloqueo-directo |
+  | 21 dic (lun) | Balonmano | Defensa 6:0: basculación y salida al lanzador | pro-team.app/ejercicios/balonmano-defensa-6-0-basculacion-salidas |
+  | 22 dic (mar) | Fútbol | Posesión 6x6 con presión tras pérdida | pro-team.app/ejercicios/futbol-posesion-6x6-presion-tras-perdida |
+  | 23 dic (mié) | Baloncesto | Penetrar y doblar 3x3 con tiro tras pase | pro-team.app/ejercicios/baloncesto-penetrar-doblar-3x3 |
+  | 24 dic (jue) | Balonmano | Circulación contra 6:0 con cruce | pro-team.app/ejercicios/balonmano-circulacion-contra-6-0-cruce |
+
+  - Email diario a los inscritos (7:43, texto plano, firmado «Equipo ProTeam», bajas con «baja»): el texto
+    de la tarea está en `agencia/emails/adviento-tarea-diaria.md`.
 - **Navidad · «Regala orden»**: idea para clubes — regalar a su cuerpo técnico la temporada
   organizada. Solo cuando Biel confirme las condiciones.
 
