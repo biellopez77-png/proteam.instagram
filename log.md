@@ -535,3 +535,12 @@
 - Decidido: las capturas nuevas de la app (t-mis20-03-capturas) no se pueden hacer desde los turnos: pro-team.app no se abre desde aquí y no hay sesión de entrenador. Tarea «FALTA (Biel)». De ellas dependen el carrusel de solución del mar 24 y P3.
 - Decidido: u30, u31, u33 y u28 (solución, mar 24–mié 25) usan capturas del 16–17/11; Biel dijo el 20/11 «nada de capturas viejas». No se rehace su contador hasta saber si valen; queda anotado en la tarea de Marta.
 - Voz de hoy: 3.237 de 3.500 a las 9:50.
+
+## 20/11 10:55 · Encargos y correcciones (Laura)
+- Sin correcciones de Biel, sin consignas nuevas, sin fichas pendientes ni nadie bloqueado.
+- Parche 0024 de Dani aplicado y subido: guion u78 «Minuto 53. Tu diecisiete lleva un minuto en pista.» (balonmano, solución, 79), con crítica, HISTORIAL, I-058 y H1140.
+- Decidido: u67 «Se cierra el 27» no se monta (guion 74, era para el jueves 19 y el contexto ya pasó; hoy no queda voz). u68 sale hoy a las 13:30; u69 sigue en reserva. Cerrados los encargos de montaje y de recursos de u67–u69.
+- Cerrado el encargo de Samuel sobre el arranque de los Reels: u57 abre como u08 y queda como norma para u58.
+- Tarea nueva para Andrés: piezas de solución que enseñan pantallas del 13–17/11 (c10s2, u10, u50, borradores u30/u31/u33/u28 y guiones u78, u38, u26). Si el mar 24 a las 12:00 no han llegado las capturas nuevas, las programadas pasan a borrador.
+- Tarea nueva para Dani: guiones de Reel para el jue 26 (prueba social real y Club Fundador), el único día del lanzamiento sin guion.
+- Instagram sigue desconectado en Windsor.ai (ninguna cuenta conectada): hoy no ha salido nada. Voz de hoy: 3.237 de 3.500.
