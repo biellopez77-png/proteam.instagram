@@ -1,7 +1,8 @@
 # u57 · f7-02 · «Fútbol 7, alevines. El balón largo a tu más rápido gana partidos. Los otros cinco ni la tocan.» (fútbol 7)
 
 - **fase: problema** (lanzamiento, `agencia/LANZAMIENTO.md`). **Cuándo: sábado 21/11** (u12, baloncesto, va ese día a las 13:30: este, a otra hora y no pegado). No enseña ninguna pantalla de la app.
-- **Estado: listo para producir** · **Crítica de Andrés: 77/100** (guion, escala 16/11) · riesgo de salto bajo · crítica en `agencia/criticas/2026-11-17-u57-u58-guion.md`
+- **Estado: PRODUCIDO el 20/11 6:37 (turno de Reels) → vie 20/11 22:30.** Cambios de producción (Dani y Marta): sale el viernes por la noche, así que «Esta semana, diez minutos» pasa a «El martes, diez minutos» y «el sábado, ¿cuántos goles…?» pasa a «en el último partido, ¿cuántos goles…?» (el sábado sería mañana); cierre de voz el de u64 («El sábado veintiocho abre la app de Pro Team. Apúntate a la lista de espera hasta el veintisiete de noviembre: tres meses gratis.»). Fotograma 0: Emiliano Martínez (el portero que la pega), no un extremo.
+- **Estado anterior: listo para producir** · **Crítica de Andrés: 77/100** (guion, escala 16/11) · riesgo de salto bajo · crítica en `agencia/criticas/2026-11-17-u57-u58-guion.md`
 - **Deporte:** fútbol 7 (benjamín y alevín) · **Encargo:** t-20261117-diario-01 (Samuel, bucle diario del 17/11): variación 1 de 2 de u08, la ganadora (nota 79; 100 guardados y 71 compartidos en 24 h).
 - **Qué se mantiene de u08:** titular en dos golpes (algo que el entrenador hace y hoy le da resultado → la vuelta en la segunda frase) · deporte y categoría dichos en el segundo 0 · una tarea con minutos a la vista hacia el segundo 10–14 · envío a una persona concreta del club · pregunta final sobre el último partido.
 - **Qué cambia:** deporte (fútbol 7), decisión (el balón largo al más rápido, no un sistema defensivo), argumento (no hay norma: es una escena) y la vuelta (no se repite «Ese es el problema»).

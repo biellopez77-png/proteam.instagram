@@ -3541,5 +3541,24 @@
   "fase_dia": "Vie 20/11",
   "first_comment": "Comenta tu deporte, categoría y días y te preparo la semana. ¿Cuántas exclusiones lleváis este mes?",
   "note": "FASE: PROBLEMA (Vie 20/11). u73 · turno de Reels 20/11 3:37: segundo Reel del turno, de datos corto (versión corta del problema de u25, que sigue de reserva para solución; Andrés 77). Balonmano después de u64 (fútbol). Concepto: «dos cronómetros» (corro del Barça de balonmano con 3 EXCLUSIONES → cronómetro rojo 0:00→6:00 «con uno menos» → papel: EL MARTES 0:00 quieto «5 contra 6: NI UN MINUTO» → ¿CUÁNTAS lleváis este mes? sobre el corro → lista con contador real 7 d 3 h 29 min → 27 NOV). Voz Mateo de la biblioteca en una toma (222 caracteres), música nueva si bemol menor con golpe en «martes». 15,4 s. Contador calculado para el vie 20 20:30: si se mueve, rehacer el contador."
+ },
+ {
+  "id": "u57",
+  "when": "2026-11-20T22:30:00+01:00",
+  "kind": "reel",
+  "files": [
+   "reels/u57-balon-largo.mp4"
+  ],
+  "cover": "covers/u57-balon-largo.jpg",
+  "caption": "Fútbol 7, alevines. El balón largo a tu más rápido te gana partidos. Y los otros cinco ni la tocan. ⚽\nHoy le saca dos metros a cualquiera. En cadetes, los demás también corren.\nGuárdalo para el martes: 10 minutos de partidillo con dos reglas. 1) El portero saca en corto. 2) El balón no sube de la cintura.\nEnvíaselo a tu segundo entrenador: en el último partido, ¿cuántos goles salieron de un balón largo al mismo?\nEl sábado 28 abre la app de ProTeam. Lista de espera hasta el 27 de noviembre: entras con 3 meses gratis. Enlace en la bio.\nComenta tu deporte, tu categoría y tus días y te preparo la semana. 👇\n\nFoto: Emiliano Martínez, final del Mundial 2026 (Bryan Berlin, CC BY-SA 4.0), vía Wikimedia Commons. Aparece como ejemplo; no usa ProTeam.\n\n#futbol7 #futbolbase #entrenadordefutbol #alevines #proteam",
+  "title": "Fútbol 7, alevines. El balón largo a tu más rápido gana partidos. Los otros cinco ni la tocan.",
+  "score": "guion 77 · montaje 80",
+  "status": "pending",
+  "campana": "unrespiro",
+  "share_to_feed": false,
+  "fase": "problema",
+  "fase_dia": "Vie 20/11",
+  "first_comment": "Comenta tu deporte, categoría y días y te preparo la semana. ¿Cuántos goles salieron de un balón largo al mismo en vuestro último partido?",
+  "note": "FASE: PROBLEMA (Vie 20/11). u57 · turno de Reels 20/11 6:37 (Dani, Andrés, Marta, Pau): encargo t-20261117-02-producir-u57-u58 (variación 1 de u08; guion de Dani, Andrés 77), en el siguiente hueco libre (el encargo decía sáb 21). Concepto: «el saque de puerta visto desde arriba» (Emiliano Martínez con el balón → campo de fútbol 7 cenital: flecha larga al más rápido, los otros cinco grises → +2 m hoy, en cadetes lo alcanzan → ficha del partidillo del martes 6,9 s → los siete en azul con pases cortos → reto sobre Martínez (bucle) → 28 NOV → lista con contador real 7 d 1 h 29 min → 27 NOV). Voz Mateo de la biblioteca en una toma entera (561 caracteres), música nueva sol menor con silencio y golpe en «cinco». 36,2 s. Contador calculado para el vie 20 22:30: si se mueve, rehacer el contador."
  }
 ]
