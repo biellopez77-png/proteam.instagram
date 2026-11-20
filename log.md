@@ -525,3 +525,5 @@
 - Decidido: u57 hoy a las 22:30 y no el sábado (primer hueco libre con 3 h de margen; sigue siendo problema). Primer fotograma: Martínez (el portero que la pega) en vez de un extremo, porque no hay ninguno nuevo en el banco y Lamine Yamal ya abrió u05. Texto: «El martes, diez minutos» y «en el último partido» (sale un viernes por la noche).
 - Decidido: no se ha vuelto a probar la voz original de Mateo (desactivada desde el 16/11) para no gastar una llamada; se usa la de la biblioteca, como en los turnos anteriores.
 - Sin segundo Reel: en las próximas 24 h ya hay 6 Reels programados. Voz gastada hoy: 2.373 de 3.500 (este turno 1.054: voz, música y Scribe). Reserva: 45 guiones sin producir; Dani no escribe más.
+
+- 2026-11-20 09:26 Laura: u51 no publicado. Windsor.ai/Instagram: "Error validating access token: Session key is malformed because of invalid user id." (2 intentos, cdn y raw). Pieza sigue pending; tarea a Biel para reconectar Instagram en Windsor.ai.
