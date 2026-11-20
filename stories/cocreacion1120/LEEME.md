@@ -26,3 +26,6 @@ Ninguna encuesta cambia la app por sí sola. Se usan para escuchar; solo se prop
 
 ## 20/11 · en la cola
 La serie está en `queue.json` como c19s1–c19s7 (mié 25, 14:30 en adelante, en borrador: se sube a mano). Sustituye a c16s, c16s2 y c16s3. Cambios tras la crítica de Andrés (`agencia/criticas/2026-11-20-cocreacion-club-pov.md`): s2 dice «ProTeam · la app para entrenadores» y `anuncio.jpg` dice «Entra desde el enlace de la bio». `club.jpg` no está en la cola: espera el visto bueno de Biel.
+
+## 20/11 · cuenta suspendida
+`share.jpg` ya no nombra @app.proteam: lleva un hueco en ese sitio. Con la cuenta provisional: `HANDLE=@cuenta python3 tools/cocreacion1120/gen.py && python3 tools/cocreacion1120/render.py share`. El resto del pack no nombra la cuenta.

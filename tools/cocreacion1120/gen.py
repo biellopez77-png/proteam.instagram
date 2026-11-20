@@ -1,6 +1,8 @@
 """Genera las Stories de cocreación, encuestas, Club Fundador e imagen para compartir (20/11)."""
 import os, math
 H=os.path.dirname(os.path.abspath(__file__))
+# 20/11: @app.proteam está suspendida. Sin HANDLE queda un hueco; con la cuenta provisional: HANDLE=@cuenta python3 gen.py
+HANDLE=os.environ.get('HANDLE','')
 def badge(c1='#2f6bff',c2='#1b46c9',size=420,num=None,glow=True):
     # roseta de verificado: 12 lóbulos
     pts=[];n=12;R=100;r=88
@@ -57,7 +59,7 @@ page('share','''<div class="s dark"><div style="position:absolute;inset:0;backgr
 <div style="position:absolute;left:0;right:0;top:330px;display:flex;justify-content:center">'''+badge(size=520,num='CLUB FUNDADOR')+'''</div>
 <div class="in" style="top:930px;align-items:center;text-align:center"><h1 style="font-size:104px;letter-spacing:-.03em">¡Ya estoy <span class="sr" style="letter-spacing:0">dentro!</span></h1>
 <div class="sm" style="font-size:44px;margin-top:34px;color:#c9ccd4">Formo parte del Club Fundador de ProTeam,<br>la app para entrenadores.</div>
-<div style="margin-top:auto;font-weight:800;font-size:46px">@app.proteam</div><div class="sm" style="color:#8d93a1;margin-top:10px">pro-team.app</div></div></div>''')
+<div style="margin-top:auto;font-weight:800;font-size:46px;min-height:63px">'''+HANDLE+'''</div><div class="sm" style="color:#8d93a1;margin-top:10px">pro-team.app</div></div></div>''')
 page('anuncio','''<div class="s paper"><div class="in"><div class="k">Lista de espera</div>
 <h1 style="font-size:104px;margin-top:36px;letter-spacing:-.03em">¡Ya estás dentro de la lista de espera de <span class="sr" style="letter-spacing:0">ProTeam!</span></h1>
 <div style="display:flex;align-items:center;gap:40px;margin-top:70px">'''+badge(size=300,glow=False)+'''<div class="sm" style="font-size:44px;font-weight:700">Ahora, consigue tu insignia del <b style="color:#2f6bff">Club Fundador.</b></div></div>

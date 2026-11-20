@@ -3777,5 +3777,124 @@
   "fase_dia": "Sáb 21/11",
   "first_comment": "Comenta tu deporte, categoría y días y te preparo la semana. ¿Quién acabó más cargado vuestro último partido?",
   "note": "FASE: PROBLEMA (Sáb 21/11). u75 · turno de Reels 20/11 9:37 (Dani, Andrés, Marta, Pau): guion de Dani (Andrés 77), Radar 20/11. Caduca el sáb 21 a las 20:00 (empieza el Bidasoa–Barça): si no sale antes de las 17:30 del sábado, cancelar. Concepto: «dos partidos y un lunes a ciegas» (Barça de balonmano en el Palau con JUE 24-32 · SÁB 20:00 → TÚ NO VUELAS: siluetas 50′/5′ y barra LUNES: MISMA SESIÓN → ficha del 1 al 10, 10 s → reto sobre la foto (bucle) → 28 NOV → lista con contador real 6 d 12 h 29 min → 27 NOV). Voz Mateo de la biblioteca en una toma entera (564 caracteres), música nueva re menor con silencio y golpe en «Tú». 36,3 s. Contador calculado para el sáb 21 11:30: si se mueve, rehacer el contador."
+ },
+ {
+  "id": "ir1",
+  "when": "2026-11-21T12:00:00+01:00",
+  "kind": "story",
+  "files": [
+   "stories/reorg1120/r1.jpg"
+  ],
+  "cover": null,
+  "status": "borrador",
+  "campana": "carrusel",
+  "title": "PARA APROBAR · Seguimos aquí. (Instagram ha suspendido la cuenta)",
+  "score": "80",
+  "fase": "informativa (cuenta suspendida)",
+  "fase_dia": "sin fecha",
+  "agentId": "04",
+  "note": "BORRADOR PARA APROBACIÓN DE BIEL: no está programada y no sale sola (la fecha es solo para ordenarla). Se sube a mano en la cuenta provisional. Primera de la serie. Solo vale en la cuenta provisional. Crítica: agencia/criticas/2026-11-20-informativas-reorg.md."
+ },
+ {
+  "id": "ir2",
+  "when": "2026-11-21T12:01:00+01:00",
+  "kind": "story",
+  "files": [
+   "stories/reorg1120/r2.jpg"
+  ],
+  "cover": null,
+  "status": "borrador",
+  "campana": "carrusel",
+  "title": "PARA APROBAR · Cuenta provisional: Club Fundador ProTeam (falta el @)",
+  "score": "78",
+  "fase": "informativa (cuenta suspendida)",
+  "fase_dia": "sin fecha",
+  "agentId": "04",
+  "note": "BORRADOR PARA APROBACIÓN DE BIEL: no está programada y no sale sola (la fecha es solo para ordenarla). Se sube a mano en la cuenta provisional. NO PUEDE SALIR ASÍ: lleva «@cuenta_provisional» de relleno. Se regenera cuando Biel dé el @. Crítica: agencia/criticas/2026-11-20-informativas-reorg.md."
+ },
+ {
+  "id": "ir3",
+  "when": "2026-11-21T12:02:00+01:00",
+  "kind": "story",
+  "files": [
+   "stories/reorg1120/r3.jpg"
+  ],
+  "cover": null,
+  "status": "borrador",
+  "campana": "carrusel",
+  "title": "PARA APROBAR · Nada cambia. Lista hasta el 27, 3 meses gratis, sábado 28",
+  "score": "79",
+  "fase": "informativa (cuenta suspendida)",
+  "fase_dia": "sin fecha",
+  "agentId": "04",
+  "note": "BORRADOR PARA APROBACIÓN DE BIEL: no está programada y no sale sola (la fecha es solo para ordenarla). Se sube a mano en la cuenta provisional. Tercera del primer día. Crítica: agencia/criticas/2026-11-20-informativas-reorg.md."
+ },
+ {
+  "id": "ib2",
+  "when": "2026-11-21T12:03:00+01:00",
+  "kind": "story",
+  "files": [
+   "stories/reorg1120/b2.jpg"
+  ],
+  "cover": null,
+  "status": "borrador",
+  "campana": "carrusel",
+  "title": "PARA APROBAR · 3 meses gratis. (lista de espera hasta el 27)",
+  "score": "82",
+  "fase": "informativa (cuenta suspendida)",
+  "fase_dia": "sin fecha",
+  "agentId": "04",
+  "note": "BORRADOR PARA APROBACIÓN DE BIEL: no está programada y no sale sola (la fecha es solo para ordenarla). Se sube a mano en la cuenta provisional. Una idea: la lista de espera. Crítica: agencia/criticas/2026-11-20-informativas-reorg.md."
+ },
+ {
+  "id": "ib1",
+  "when": "2026-11-21T12:04:00+01:00",
+  "kind": "story",
+  "files": [
+   "stories/reorg1120/b1.jpg"
+  ],
+  "cover": null,
+  "status": "borrador",
+  "campana": "carrusel",
+  "title": "PARA APROBAR · Tu insignia. Tu número. (Club Fundador)",
+  "score": "80",
+  "fase": "informativa (cuenta suspendida)",
+  "fase_dia": "sin fecha",
+  "agentId": "04",
+  "note": "BORRADOR PARA APROBACIÓN DE BIEL: no está programada y no sale sola (la fecha es solo para ordenarla). Se sube a mano en la cuenta provisional. Una idea: la insignia numerada. El número va en blanco: nadie tiene número todavía. Crítica: agencia/criticas/2026-11-20-informativas-reorg.md."
+ },
+ {
+  "id": "ib3",
+  "when": "2026-11-21T12:05:00+01:00",
+  "kind": "story",
+  "files": [
+   "stories/reorg1120/b3.jpg"
+  ],
+  "cover": null,
+  "status": "borrador",
+  "campana": "carrusel",
+  "title": "PARA APROBAR · Votas en lo que construimos. (Club Fundador)",
+  "score": "78",
+  "fase": "informativa (cuenta suspendida)",
+  "fase_dia": "sin fecha",
+  "agentId": "04",
+  "note": "BORRADOR PARA APROBACIÓN DE BIEL: no está programada y no sale sola (la fecha es solo para ordenarla). Se sube a mano en la cuenta provisional. Una idea: las votaciones. No promete cambios. Crítica: agencia/criticas/2026-11-20-informativas-reorg.md."
+ },
+ {
+  "id": "ir4",
+  "when": "2026-11-21T12:06:00+01:00",
+  "kind": "story",
+  "files": [
+   "stories/reorg1120/r4.jpg"
+  ],
+  "cover": null,
+  "status": "borrador",
+  "campana": "carrusel",
+  "title": "PARA APROBAR · Club Fundador: cinco ventajas (resumen de cierre)",
+  "score": "76",
+  "fase": "informativa (cuenta suspendida)",
+  "fase_dia": "sin fecha",
+  "agentId": "04",
+  "note": "BORRADOR PARA APROBACIÓN DE BIEL: no está programada y no sale sola (la fecha es solo para ordenarla). Se sube a mano en la cuenta provisional. Resumen de cierre, sin precio fundador. «Invitaciones para amigos» necesita el visto bueno de Biel. Crítica: agencia/criticas/2026-11-20-informativas-reorg.md."
  }
 ]
