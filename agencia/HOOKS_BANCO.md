@@ -1285,3 +1285,8 @@ Fuente de las normas: Normativa de Balonmano 2025, Juegos Deportivos Escolares d
 - **H1132** Tu semana no empieza el lunes. Empieza el día del partido. [general · contraintuitiva · planificación] (11/15)
 - **H1133** El que jugó 50 minutos y el que jugó 5 hacen lo mismo el lunes. [balonmano · provocadora · carga] (12/15)
 - **H1134** El entreno del lunes se escribe el sábado, al acabar. [general · contraintuitiva · carga] (11/15)
+- **H1135** Del séptimo de tu lista no sabes nada desde septiembre. [balonmano · provocadora · seguimiento] (12/15)
+- **H1136** Lunes, grada del pabellón. Vas nombre por nombre. Al séptimo, te paras. [general · narrativa · seguimiento] (11/15)
+- **H1137** Del central hablarías diez minutos. Del extremo suplente, ni uno. [balonmano · comparativa · seguimiento] (11/15)
+- **H1138** «¿Qué hemos entrenado hoy?» «De todo, míster.» [fútbol · narrativa · sesión] (12/15)
+- **H1139** Cuantas más cosas entrenas en una sesión, menos se queda. [general · contraintuitiva · sesión] (11/15)
