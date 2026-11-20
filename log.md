@@ -527,3 +527,11 @@
 - Sin segundo Reel: en las próximas 24 h ya hay 6 Reels programados. Voz gastada hoy: 2.373 de 3.500 (este turno 1.054: voz, música y Scribe). Reserva: 45 guiones sin producir; Dani no escribe más.
 
 - 2026-11-20 09:26 Laura: u51 no publicado. Windsor.ai/Instagram: "Error validating access token: Session key is malformed because of invalid user id." (2 intentos, cdn y raw). Pieza sigue pending; tarea a Biel para reconectar Instagram en Windsor.ai.
+
+## 20/11 9:49 · Encargos y correcciones (Laura)
+- Sin correcciones de Biel, sin consignas nuevas, sin fichas pendientes ni nadie bloqueado.
+- Parche 0023 de Dani aplicado y subido: guiones u76 (balonmano) y u77 (fútbol), nutrición, con sus críticas; u34 descartado.
+- Marta: montaje base de la serie POV en `tools/reelPOV/` (`montar.py`, `planes.json`, `LEEME.md`). Probado con fondo de prueba (P1, P2, P3) y con tomas de prueba y música. Falta la grabación de Biel.
+- Decidido: las capturas nuevas de la app (t-mis20-03-capturas) no se pueden hacer desde los turnos: pro-team.app no se abre desde aquí y no hay sesión de entrenador. Tarea «FALTA (Biel)». De ellas dependen el carrusel de solución del mar 24 y P3.
+- Decidido: u30, u31, u33 y u28 (solución, mar 24–mié 25) usan capturas del 16–17/11; Biel dijo el 20/11 «nada de capturas viejas». No se rehace su contador hasta saber si valen; queda anotado en la tarea de Marta.
+- Voz de hoy: 3.237 de 3.500 a las 9:50.
