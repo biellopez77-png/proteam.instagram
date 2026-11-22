@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8">
+<!-- T01-1-r2 «El vestuario te mira» (fútbol). Plantilla a3.html: planos fijos, la cámara solo se mueve al cambiar de zona.
+     Fotos reales: papel de Lehmann (Andreas Köpke, dominio público) y Jens Lehmann (ronmacphotos, CC BY 2.0). El resto, dibujado. Fuente: FIFA, 6/7/2016. -->
+<style>
+@font-face{font-family:M;font-weight:800;src:url(/tools/fonts/manrope-latin-800-normal.woff2)}
+@font-face{font-family:M;font-weight:700;src:url(/tools/fonts/manrope-latin-700-normal.woff2)}
+@font-face{font-family:M;font-weight:500;src:url(/tools/fonts/manrope-latin-500-normal.woff2)}
+@font-face{font-family:S;font-style:italic;font-weight:400;src:url(/tools/fonts/instrument-serif-latin-400-italic.woff2)}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#fbfaf7}
+#st{position:absolute;inset:0;overflow:hidden;background:#fbfaf7}
+#world{position:absolute;left:0;top:0;transform-origin:0 0;will-change:transform}
+.o{position:absolute;left:0;top:0;transform-origin:50% 50%}
+.paper{background:#fff;box-shadow:0 18px 50px rgba(20,18,12,.10)}
+.frame{background:#fff;padding:14px;box-shadow:0 18px 50px rgba(20,18,12,.10)}
+.frame img{display:block;width:100%;height:100%;object-fit:cover}
+.board{background:#fdfdfc;border:10px solid #d9dcdf;border-radius:10px;box-shadow:0 18px 50px rgba(20,18,12,.10)}
+.num{position:absolute;font-family:M;font-weight:800;letter-spacing:-.05em;color:#121212;white-space:nowrap;line-height:1}
+.hand{position:absolute;font-family:S;font-style:italic;white-space:nowrap;line-height:1}
+.lab{position:absolute;font-family:M;font-weight:800;letter-spacing:.14em;color:#121212;white-space:nowrap}
+#cap{position:absolute;left:90px;right:90px;top:1330px;text-align:center;font-family:M;font-weight:800;font-size:58px;line-height:1.12;letter-spacing:-.03em;color:#121212;padding:18px 26px;border-radius:22px;background:rgba(251,250,247,.94)}
+#cap em{font-family:S;font-style:italic;font-weight:400;font-size:1.14em;letter-spacing:0}
+#cap .b{color:#2f6bff}#cap .r{color:#d23a2a}
+#gr,#gr2{position:absolute;inset:0;pointer-events:none;mix-blend-mode:multiply;opacity:0}
+#ink{position:absolute;inset:0;background:#0e0e10;opacity:0;pointer-events:none}
+#title{position:absolute;left:0;right:0;top:170px;text-align:center;font-family:M;font-weight:800;font-size:112px;letter-spacing:-.05em;color:#121212;display:none}
+</style></head><body><div id="st">
+<div id="world">
+  <!-- V · el vestuario: pizarra, once jugadores, dos manos -->
+  <svg class="o" id="VS" width="1000" height="1300" viewBox="0 0 1000 1300" style="overflow:visible">
+    <rect x="220" y="80" width="560" height="300" rx="10" fill="#fdfdfc" stroke="#d9dcdf" stroke-width="10"/>
+    <g fill="none" stroke="#b9bec4" stroke-width="4"><path d="M250 230 H750"/><circle cx="500" cy="230" r="60"/><rect x="230" y="160" width="70" height="140"/><rect x="700" y="160" width="70" height="140"/></g>
+    <circle id="wGlow" cx="500" cy="230" r="95" fill="#d23a2a" opacity="0"/>
+    <g id="wh" transform="translate(500 230)"><path d="M-62 -4 A44 44 0 1 0 2 -30 L 70 -30 L 70 -4 Z" fill="#fff" stroke="#121212" stroke-width="7" stroke-linejoin="round"/><circle cx="-26" cy="8" r="12" fill="#121212"/></g>
+    <path d="M60 760 H940" stroke="#c9c3b6" stroke-width="26" stroke-linecap="round"/>
+    <g id="looks" stroke="#8a9099" stroke-width="2.5" stroke-linecap="round" opacity=".75"></g>
+    <g id="dots"></g>
+    <g id="hands" transform="translate(500 1050)">
+      <g transform="translate(-215 -120)"><path d="M50 230 L50 130 L40 62 Q38 40 56 40 Q70 40 72 60 L78 112 L80 30 Q80 12 97 12 Q114 12 114 30 L114 106 L120 40 Q122 22 138 24 Q152 26 150 44 L144 114 L158 74 Q164 58 178 64 Q190 70 184 88 L162 172 Q150 230 110 230 Z" fill="#fff" stroke="#121212" stroke-width="6" stroke-linejoin="round"/></g>
+      <g transform="translate(215 -120) scale(-1 1)"><path d="M50 230 L50 130 L40 62 Q38 40 56 40 Q70 40 72 60 L78 112 L80 30 Q80 12 97 12 Q114 12 114 30 L114 106 L120 40 Q122 22 138 24 Q152 26 150 44 L144 114 L158 74 Q164 58 178 64 Q190 70 184 88 L162 172 Q150 230 110 230 Z" fill="#fff" stroke="#121212" stroke-width="6" stroke-linejoin="round"/></g>
+    </g>
+  </svg>
+  <!-- K · 2006 -->
+  <div class="o num" id="K6" style="width:700px;height:260px;font-size:260px;text-align:center">2006</div>
+  <svg class="o" id="SW" width="300" height="300" viewBox="0 0 360 360">
+    <path d="M120 20 L60 40 L10 110 L60 150 L80 130 L80 340 L280 340 L280 130 L300 150 L350 110 L300 40 L240 20 C 225 55 135 55 120 20Z" fill="#fff" stroke="#121212" stroke-width="4"/>
+    <path d="M120 20 C 135 55 225 55 240 20" fill="none" stroke="#121212" stroke-width="10"/></svg>
+  <svg class="o" id="SA" width="300" height="300" viewBox="0 0 360 360">
+    <defs><clipPath id="cs"><path d="M120 20 L60 40 L10 110 L60 150 L80 130 L80 340 L280 340 L280 130 L300 150 L350 110 L300 40 L240 20 C 225 55 135 55 120 20Z"/></clipPath></defs>
+    <g clip-path="url(#cs)"><rect width="360" height="360" fill="#fff"/><g fill="#8fbce6"><rect x="40" width="40" height="360"/><rect x="120" width="40" height="360"/><rect x="200" width="40" height="360"/><rect x="280" width="40" height="360"/></g></g>
+    <path d="M120 20 L60 40 L10 110 L60 150 L80 130 L80 340 L280 340 L280 130 L300 150 L350 110 L300 40 L240 20 C 225 55 135 55 120 20Z" fill="none" stroke="#121212" stroke-width="4"/></svg>
+  <div class="o lab" id="KL" style="width:640px;height:40px;font-size:30px;text-align:center;color:#8a857a">MUNDIAL · CUARTOS DE FINAL</div>
+  <!-- L · Lehmann y su papel -->
+  <div class="o frame" id="LH" style="width:380px;height:600px;padding-bottom:70px">
+    <img src="/tools/reel_v2/img/lehmann.jpg" style="object-position:50% 25%">
+    <div class="hand" style="left:0;right:0;bottom:16px;text-align:center;font-size:46px;color:#55524b">Jens Lehmann</div></div>
+  <div class="o frame" id="LP" style="width:360px;height:465px"><img src="/tools/reel_v2/img/papel.jpg"></div>
+  <!-- P · el papel grande y el nombre fuera -->
+  <div class="o frame" id="PG" style="width:640px;height:826px"><img src="/tools/reel_v2/img/papel.jpg">
+    <div id="HLS" style="position:absolute;left:0;top:0;width:100%;height:100%"></div></div>
+  <div class="o paper" id="CB" style="width:520px;height:150px">
+    <div class="hand" style="left:0;right:0;top:30px;text-align:center;font-size:100px;color:#3b3b3b">Cambiasso</div>
+    <svg width="520" height="150" style="position:absolute;left:0;top:0;overflow:visible"><path id="cbu" d="M60 128 C 200 120 340 124 470 116" fill="none" stroke="#d23a2a" stroke-width="6" stroke-linecap="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/></svg></div>
+  <!-- H · la cabeza a trazos que asiente -->
+  <svg class="o" id="HD" width="520" height="640" viewBox="0 0 520 640" style="overflow:visible">
+    <g fill="none" stroke="#3b3b3b" stroke-linecap="round">
+      <path d="M30 640 C 40 520 120 470 260 468 C 400 470 480 520 490 640" stroke-width="5"/>
+      <path d="M36 636 C 50 528 126 478 262 476 C 396 478 474 526 484 632" stroke-width="2.5" opacity=".6"/>
+      <path d="M215 470 L220 400 M305 470 L300 400" stroke-width="5"/>
+      <g id="hdh"><ellipse cx="260" cy="250" rx="132" ry="162" stroke-width="5"/><ellipse cx="256" cy="246" rx="128" ry="158" stroke-width="2.5" opacity=".55"/>
+        <path d="M140 200 C 170 110 340 100 386 210" stroke-width="3" opacity=".5"/><path d="M128 250 C 116 248 116 290 132 292 M392 250 C 404 248 404 290 388 292" stroke-width="4"/></g>
+    </g></svg>
+  <div class="o frame" id="HP" style="width:260px;height:336px"><img src="/tools/reel_v2/img/papel.jpg"></div>
+  <!-- G · lo paró -->
+  <svg class="o" id="GC" width="560" height="560" viewBox="0 0 560 560" style="overflow:visible">
+    <g transform="translate(250 230) scale(1.35)"><path d="M50 230 L50 130 L40 62 Q38 40 56 40 Q70 40 72 60 L78 112 L80 30 Q80 12 97 12 Q114 12 114 30 L114 106 L120 40 Q122 22 138 24 Q152 26 150 44 L144 114 L158 74 Q164 58 178 64 Q190 70 184 88 L162 172 Q150 230 110 230 Z" fill="#fff" stroke="#3b3b3b" stroke-width="5" stroke-linejoin="round"/>
+      <path d="M50 196 H158" stroke="#3b3b3b" stroke-width="4"/></g>
+    <g id="gball"><circle cx="0" cy="0" r="78" fill="#fff" stroke="#121212" stroke-width="6"/><path d="M0 -30 L28 -9 L18 24 L-18 24 L-28 -9 Z" fill="#121212"/>
+      <path d="M0 -30 V-76 M28 -9 L72 -24 M18 24 L44 62 M-18 24 L-44 62 M-28 -9 L-72 -24" stroke="#121212" stroke-width="4"/></g>
+  </svg>
+  <!-- C · el 45 y la hoja en blanco -->
+  <svg class="o" id="CC" width="360" height="360" viewBox="0 0 320 320" style="overflow:visible">
+    <circle cx="160" cy="160" r="140" fill="#fff" stroke="#121212" stroke-width="6"/>
+    <path id="cArc" d="M160 20 A140 140 0 1 1 159.9 20" fill="none" stroke="#d23a2a" stroke-width="10" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100" opacity=".35"/>
+    <g stroke="#121212" stroke-width="5" stroke-linecap="round"><path d="M160 30 V48 M290 160 H272 M160 290 V272 M30 160 H48"/></g>
+    <path id="cHand" d="M160 160 L160 52" stroke="#121212" stroke-width="9" stroke-linecap="round"/><circle cx="160" cy="160" r="10" fill="#121212"/></svg>
+  <div class="o num" id="C45" style="width:400px;height:200px;font-size:200px;text-align:center">45′</div>
+  <div class="o paper" id="CH" style="width:460px;height:600px">
+    <div class="lab" style="left:40px;top:40px;font-size:24px;color:#9a958b">DESCANSO</div>
+    <svg width="460" height="600" style="position:absolute;left:0;top:0"><g stroke="#ece8df" stroke-width="3"><path d="M40 170 H420 M40 270 H420 M40 370 H420 M40 470 H420"/></g></svg></div>
+  <!-- S · solución: la hoja llega a las manos -->
+  <svg class="o" id="SH" width="600" height="420" viewBox="0 0 600 420" style="overflow:visible">
+    <g transform="translate(300 300)">
+      <g transform="translate(-215 -120)"><path d="M50 230 L50 130 L40 62 Q38 40 56 40 Q70 40 72 60 L78 112 L80 30 Q80 12 97 12 Q114 12 114 30 L114 106 L120 40 Q122 22 138 24 Q152 26 150 44 L144 114 L158 74 Q164 58 178 64 Q190 70 184 88 L162 172 Q150 230 110 230 Z" fill="#fff" stroke="#121212" stroke-width="6" stroke-linejoin="round"/></g>
+      <g transform="translate(215 -120) scale(-1 1)"><path d="M50 230 L50 130 L40 62 Q38 40 56 40 Q70 40 72 60 L78 112 L80 30 Q80 12 97 12 Q114 12 114 30 L114 106 L120 40 Q122 22 138 24 Q152 26 150 44 L144 114 L158 74 Q164 58 178 64 Q190 70 184 88 L162 172 Q150 230 110 230 Z" fill="#fff" stroke="#121212" stroke-width="6" stroke-linejoin="round"/></g>
+    </g></svg>
+  <div class="o paper" id="FS" style="width:300px;height:200px">
+    <svg width="300" height="200" style="position:absolute;left:0;top:0"><path d="M150 0 V200" stroke="#e4e0d6" stroke-width="3"/><g stroke="#cfcac0" stroke-width="5" stroke-linecap="round"><path d="M30 60 H120 M30 100 H110 M30 140 H125"/></g><path d="M30 152 H125" stroke="#2f6bff" stroke-width="4" stroke-linecap="round"/></svg></div>
+  <!-- S2 · desde el 35: tres líneas -->
+  <svg class="o" id="C35" width="230" height="230" viewBox="0 0 320 320" style="overflow:visible">
+    <circle cx="160" cy="160" r="140" fill="#fff" stroke="#121212" stroke-width="7"/>
+    <g stroke="#121212" stroke-width="6" stroke-linecap="round"><path d="M160 30 V48 M290 160 H272 M160 290 V272 M30 160 H48"/></g>
+    <path d="M160 160 L160 52" stroke="#121212" stroke-width="11" stroke-linecap="round" transform="rotate(210 160 160)"/><circle cx="160" cy="160" r="12" fill="#121212"/></svg>
+  <div class="o num" id="N35" style="width:220px;height:120px;font-size:120px;text-align:center">35′</div>
+  <div class="o paper" id="TL" style="width:700px;height:760px">
+    <div class="lab" style="left:50px;top:48px;font-size:24px;color:#9a958b">PARA EL DESCANSO</div>
+    <svg width="700" height="760" style="position:absolute;left:0;top:0;overflow:visible"><g stroke="#ece8df" stroke-width="3"><path d="M50 250 H650 M50 420 H650 M50 590 H650"/></g>
+      <path id="tlu" d="M60 612 C 250 604 440 608 640 600" fill="none" stroke="#2f6bff" stroke-width="10" stroke-linecap="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/></svg>
+    <div class="num" id="tn1" style="left:54px;top:170px;font-size:40px;color:#9a958b;opacity:0">1</div><div class="hand" id="tw1" style="left:104px;top:166px;font-size:66px;color:#121212;clip-path:inset(0 100% 0 0)">funciona: presión arriba</div>
+    <div class="num" id="tn2" style="left:54px;top:340px;font-size:40px;color:#9a958b;opacity:0">2</div><div class="hand" id="tw2" style="left:104px;top:336px;font-size:66px;color:#121212;clip-path:inset(0 100% 0 0)">falla: su banda derecha</div>
+    <div class="num" id="tn3" style="left:54px;top:510px;font-size:40px;color:#2f6bff;opacity:0">3</div><div class="hand" id="tw3" style="left:104px;top:506px;font-size:66px;color:#121212;clip-path:inset(0 100% 0 0)">cambio: doblar por fuera</div>
+  </div>
+  <svg class="o" id="PC" width="40" height="300" viewBox="0 0 40 300" style="overflow:visible">
+    <g><path d="M20 300 L6 252 L34 252 Z" fill="#e9c99a" stroke="#121212" stroke-width="3" stroke-linejoin="round"/><path d="M20 300 L15 284 L25 284 Z" fill="#121212"/>
+      <rect x="6" y="40" width="28" height="212" fill="#f2c94c" stroke="#121212" stroke-width="3"/><rect x="6" y="10" width="28" height="32" rx="4" fill="#e8a0a0" stroke="#121212" stroke-width="3"/></g></svg>
+  <!-- S3 · léelo, luego habla -->
+  <div class="o board" id="SB" style="width:900px;height:1000px">
+    <svg width="880" height="980" viewBox="0 0 880 980" style="position:absolute;left:0;top:0;overflow:visible">
+      <g fill="none" stroke="#c9cdd2" stroke-width="4"><path d="M40 760 H840"/><circle cx="440" cy="760" r="90"/></g>
+      <circle id="sGlow" cx="700" cy="760" r="90" fill="#d23a2a" opacity=".22"/>
+      <g id="swh" transform="translate(700 760) scale(.9)"><path d="M-62 -4 A44 44 0 1 0 2 -30 L 70 -30 L 70 -4 Z" fill="#fff" stroke="#d23a2a" stroke-width="7" stroke-linejoin="round"/><circle cx="-26" cy="8" r="12" fill="#d23a2a"/></g>
+    </svg>
+    <div class="paper" style="position:absolute;left:120px;top:90px;width:640px;height:470px;transform:rotate(-1deg)">
+      <div style="position:absolute;left:270px;top:-18px;width:100px;height:36px;background:rgba(214,206,186,.8)"></div>
+      <div class="hand" style="left:46px;top:70px;font-size:60px;color:#121212">1 · funciona: presión arriba</div>
+      <div class="hand" style="left:46px;top:190px;font-size:60px;color:#121212">2 · falla: su banda derecha</div>
+      <div class="hand" style="left:46px;top:310px;font-size:60px;color:#121212">3 · cambio: doblar por fuera</div>
+      <svg width="640" height="470" style="position:absolute;left:0;top:0;overflow:visible"><path d="M46 388 C 230 382 420 386 600 378" fill="none" stroke="#2f6bff" stroke-width="9" stroke-linecap="round"/>
+        <path id="sbr" d="M30 50 H610 V420 H30 Z" fill="none" stroke="#2f6bff" stroke-width="6" stroke-linejoin="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/></svg>
+    </div>
+  </div>
+  <!-- marca -->
+  <div class="o" id="B" style="width:900px;height:500px;text-align:center">
+    <div class="num" style="position:static;font-size:170px;margin-top:120px">Pro<span style="color:#2f6bff">Team</span></div>
+    <div style="margin-top:30px;font-family:M;font-weight:500;font-size:38px;color:#77736b">la app del entrenador · enlace en la bio</div>
+  </div>
+</div>
+<div id="gr" style="background:#f1e4c8"></div><div id="gr2" style="background:#d9e3f0"></div>
+<div id="title">El vestuario<br>te mira</div>
+<div id="cap"></div>
+<div id="ink"></div>
+</div>
+<script src="/tools/reel_v4/T01-1-r2/times.js"></script>
+<script>
+const $=id=>document.getElementById(id), W=window.WORDS, NS='http://www.w3.org/2000/svg';
+const at=(w,n=1)=>{let c=0;for(const x of W)if(x[0]===w&&++c===n)return x[1];throw 'no '+w+n};
+const cl=(x,a=0,b=1)=>Math.min(b,Math.max(a,x)), r=(t,a,b)=>cl((t-a)/(b-a));
+const io=x=>x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2, eo=x=>1-Math.pow(1-x,3), lerp=(a,b,k)=>a+(b-a)*k;
+const T={manos:at('manos'),vacias:at('vacias'),en:at('en'),lehmann:at('lehmann'),penalti:at('penalti'),apuntado:at('apuntado'),cambiasso:at('cambiasso'),siete:at('siete'),
+ miro:at('miro'),segun:at('segun'),asintio:at('asintio'),lo2:at('lo',2),paro:at('paro'),volvemos:at('volvemos'),has:at('has'),cuarenta:at('cuarenta'),minutos:at('minutos'),
+ ni:at('ni'),asi:at('asi'),arbitro:at('arbitro'),y4:at('y',4),alta:at('alta'),papel2:at('papel',2),voz2:at('voz',2),desde2:at('desde',2),tres:at('tres'),
+ que5:at('que',5),que6:at('que',6),un3:at('un',3),cambio:at('cambio'),leelo:at('leelo'),luego:at('luego'),apunt:at('apuntalo'),porque:at('porque'),manos2:at('manos',2),tiene:at('tiene'),END:window.VEND+.25};
+// zonas del mundo
+const V=[0,0],K=[1500,0],L=[3000,0],P=[4500,0],H=[6000,0],G=[7500,0],C=[9000,0],S=[10500,0],S2=[12000,0],S3=[13500,0],BP=[15000,0];
+const CUT=T.papel2-.2;
+// cámara: planos FIJOS; solo se mueve al cambiar de zona (0,6 s, entrada y salida suaves)
+const SH=[ // [inicio del movimiento, cx, cy, zoom, duración]
+ [0,V[0],V[1]-40,1.0],
+ [T.manos-.25,V[0],V[1]+290,1.9],
+ [T.en-.35,K[0],K[1]+20,1.0,.7],
+ [T.lehmann-.35,L[0],L[1]+20,1.05],
+ [T.penalti+.25,L[0]+250,L[1]+115,1.9],
+ [T.cambiasso-.35,P[0]+60,P[1]+80,.95],
+ [T.miro-.35,H[0],H[1]+20,1.0,.7],
+ [T.segun-.2,H[0]-150,H[1]-40,1.6],
+ [T.lo2-.35,G[0],G[1]+10,1.15,.7],
+ [T.volvemos-.4,V[0],V[1]-40,1.0,.75],
+ [T.has-.3,C[0]-300,C[1]-100,1.25,.7],
+ [T.ni-.3,C[0]+370,C[1]+40,1.35],
+ [T.asi-.35,V[0],V[1]-420,1.45,.75],
+ [T.y4-.2,V[0],V[1]-40,1.0],
+ [CUT,S[0],S[1]+40,1.25],
+ [T.desde2-.35,S2[0],S2[1]+20,.95],
+ [T.tres-.3,S2[0]+40,S2[1]+150,1.3],
+ [T.leelo-.35,S3[0],S3[1]+20,1.0],
+ [T.apunt-.35,BP[0],BP[1],1.0],
+ [T.porque+.05,V[0],V[1]-40,1.0,.9]];
+const CUTS=new Set([CUT]);
+function cam(t){let i=0;while(i+1<SH.length&&SH[i+1][0]<=t)i++;const s=SH[i];
+ if(i===0||CUTS.has(s[0]))return [s[1],s[2],s[3],0];
+ const p=SH[i-1],Dd=s[4]||.62,k=r(t,s[0],s[0]+Dd),e=io(k);
+ const lz=lerp(Math.log(p[3]),Math.log(s[3]),e)-.12*Math.sin(Math.PI*k)*(Math.hypot(s[1]-p[1],s[2]-p[2])>600?1:0);
+ return [lerp(p[1],s[1],e),lerp(p[2],s[2],e),Math.exp(lz),k>0&&k<1?Math.sin(Math.PI*k):0]}
+const sz=el=>[el.offsetWidth||+el.getAttribute('width'),el.offsetHeight||+el.getAttribute('height')];
+function place(el,x,y,rot=0,sc=1){const [w,h]=sz(el);el.style.transform=`translate(${x-w/2}px,${y-h/2}px) rotate(${rot}deg) scale(${sc})`}
+const drawK=(el,k)=>{el.setAttribute('stroke-dashoffset',100-100*k);el.style.visibility=k>0?'visible':'hidden'};
+const draw=(el,a,b,f=io)=>drawK(el,f(r(window._t,a,b)));
+const mk=(tag,a,par)=>{const e=document.createElementNS(NS,tag);for(const k in a)e.setAttribute(k,a[k]);par.appendChild(e);return e};
+// once jugadores (coordenadas locales del svg VS: mundo + [500,750])
+const DOTS=[];[-375,-225,-75,75,225,375].forEach(x=>DOTS.push([500+x,560]));[-300,-150,0,150,300].forEach(x=>DOTS.push([500+x,670]));
+const LK=[];DOTS.forEach(([x,y])=>{mk('circle',{cx:x,cy:y,r:34,fill:'#5b6168'},$('dots'));LK.push(mk('line',{},$('looks')))});
+const HAND=[500,980],WH=[500,262];
+// siete renglones del papel real (imagen 1080×1395 → marco 612 px)
+const HL=[];{const f=612/1080;[355,465,650,750,965,1070,1165].forEach(y=>{const d=document.createElement('div');
+ d.style.cssText=`position:absolute;left:22px;width:596px;top:${14+y*f-28}px;height:56px;border-radius:10px;background:#2f6bff;opacity:0`;$('HLS').appendChild(d);HL.push(d)})}
+const CAPS=[[.3,T.vacias-.15,'Once miradas. <em>Tus manos.</em>'],[T.vacias,T.en-.2,'<em>Vacías.</em>'],
+ [T.en,T.cambiasso-.15,'2006: un penalti <em>sin apuntar.</em>'],[T.cambiasso,T.miro-.15,'Cambiasso <em>no estaba en la lista.</em>'],
+ [T.miro,T.asintio-.15,'Miró el papel <em>igual.</em>'],[T.asintio,T.lo2-.15,'Y asintió, <em>con calma.</em>'],[T.lo2,T.volvemos-.2,'<em>Lo paró.</em>'],
+ [T.volvemos,T.has-.15,'Ahora, <em>tu vestuario.</em>'],[T.has,T.ni-.15,'45 minutos <em>para pensarlo.</em>'],[T.ni,T.asi-.15,'<em>Ni una línea.</em>'],
+ [T.asi,T.y4-.15,'Empiezas por <span class="r">el árbitro.</span>'],[T.y4,CUT-.45,'Y ellos buscan <em>un plan.</em>'],
+ [T.papel2,T.desde2-.15,'Papel primero. <em>Voz después.</em>'],[T.desde2,T.que5-.15,'Desde el 35, <em>tres líneas.</em>'],
+ [T.que5,T.leelo-.15,'Qué funciona, qué falla, <em>un cambio.</em>'],[T.leelo,T.apunt-.15,'Léelo. <em>Luego habla.</em>'],
+ [T.apunt,T.porque-.15,'Apúntalo en la app.'],[T.porque+.05,T.tiene-.12,'Si te miran las manos…'],[T.tiene-.05,T.END-.45,'<em>que haya algo.</em>']];
+window.frame=function(t){window._t=t;
+  const [cx,cy,z,mv]=cam(t);
+  const wd=$('world');wd.style.transform=`translate(540px,760px) scale(${z}) translate(${-cx}px,${-cy}px)`;
+  wd.style.filter=mv>.35?`blur(${(2.6*(mv-.35)/.65).toFixed(2)}px)`:'none';
+  // V · vestuario: las miradas van a las manos; en «y ellos te miran» vuelven a la pizarra (estado inicial restaurado tras el giro)
+  place($('VS'),V[0],V[1]-100);
+  const look=t<CUT?io(r(t,T.y4-.1,T.y4+.8)):0;
+  LK.forEach((l,i)=>{const [x,y]=DOTS[i];const tx=lerp(HAND[0]+(x-500)*.18,WH[0]+(x-500)*.12,look),ty=lerp(HAND[1],WH[1]+40,look);
+   const dx=tx-x,dy=ty-y,d=Math.hypot(dx,dy);l.setAttribute('x1',x+dx/d*46);l.setAttribute('y1',y+dy/d*46);l.setAttribute('x2',tx-dx/d*(look>.5?110:90));l.setAttribute('y2',ty-dy/d*(look>.5?110:90))});
+  const red=t<CUT?r(t,T.arbitro-.15,T.arbitro+.3):0;$('wGlow').setAttribute('opacity',.22*red);
+  $('wh').querySelector('path').setAttribute('stroke',red>.5?'#d23a2a':'#121212');$('wh').querySelector('circle').setAttribute('fill',red>.5?'#d23a2a':'#121212');
+  // K · 2006
+  place($('K6'),K[0],K[1]-260);place($('SW'),K[0]-190,K[1]+120);place($('SA'),K[0]+190,K[1]+120);place($('KL'),K[0],K[1]+340);
+  $('K6').style.opacity=r(t,T.en-.3,T.en+.05);$('SW').style.opacity=r(t,T.en-.1,T.en+.25);$('SA').style.opacity=r(t,T.en+.1,T.en+.45);$('KL').style.opacity=r(t,T.en+.2,T.en+.55);
+  // L · Lehmann (blanco y negro → color al nombrarlo) y su papel
+  place($('LH'),L[0]-200,L[1]-60,-2);place($('LP'),L[0]+250,L[1]+120,3);
+  $('LH').querySelector('img').style.filter=`grayscale(${1-r(t,T.lehmann-.1,T.lehmann+.6)})`;
+  // P · el papel grande: siete renglones; el nombre, fuera
+  place($('PG'),P[0]-60,P[1]-60,-1);place($('CB'),P[0]+190,P[1]+440,4);
+  $('CB').style.opacity=eo(r(t,T.cambiasso-.1,T.cambiasso+.3));
+  HL.forEach((d,i)=>{const a=T.siete-.15+i*.07;d.style.opacity=.2*r(t,a,a+.15)});
+  draw($('cbu'),T.estaba-.1,T.estaba+.4);
+  // H · cabeza a trazos: asiente dos veces
+  place($('HD'),H[0]-120,H[1]-40);place($('HP'),H[0]+320,H[1]+180,4);
+  const nod=r(t,T.asintio,T.asintio+1.1);$('hdh').setAttribute('transform',`rotate(0) translate(0 ${(16*Math.sin(nod*Math.PI*2)**2).toFixed(2)})`);
+  // G · el balón entra en la mano
+  place($('GC'),G[0],G[1]);const bk=io(r(t,T.lo2-.05,T.paro+.15));$('gball').setAttribute('transform',`translate(${lerp(-60,250+1.35*112,bk)} ${lerp(80,230+1.35*95,bk)}) rotate(${-200*(1-bk)})`);
+  // C · el 45 y la hoja en blanco
+  place($('CC'),C[0]-300,C[1]-260);place($('C45'),C[0]-300,C[1]+70);place($('CH'),C[0]+370,C[1]+40,2);
+  const hk=io(r(t,T.cuarenta-.1,T.minutos+.3));$('cHand').setAttribute('transform',`rotate(${270*hk} 160 160)`);$('cArc').setAttribute('stroke-dashoffset',100-75*hk);
+  // S · la hoja doblada llega a las manos
+  place($('SH'),S[0],S[1]+160);const fk=io(r(t,T.papel2-.05,T.papel2+.7));place($('FS'),S[0],lerp(S[1]-520,S[1]+80,fk),lerp(-12,-3,fk));$('FS').style.opacity=r(t,T.papel2-.05,T.papel2+.25);
+  // S2 · desde el 35, tres líneas
+  place($('C35'),S2[0]-230,S2[1]-560);place($('N35'),S2[0]+40,S2[1]-560);place($('TL'),S2[0],S2[1]+150,-1);
+  const lines=[[T.que5-.05,T.que6-.15],[T.que6-.05,T.un3-.1],[T.un3-.05,T.cambio+.5]];let tip=null;
+  lines.forEach(([a,b],i)=>{const k=r(t,a,b);$('tw'+(i+1)).style.clipPath=`inset(0 ${(100-100*k).toFixed(1)}% 0 0)`;$('tn'+(i+1)).style.opacity=r(t,a-.15,a+.05);if(k>0&&k<1)tip=[104+560*k,166+i*170+70]});
+  draw($('tlu'),T.cambio+.3,T.cambio+.8);
+  const pk=r(t,T.que5-.4,T.que5-.1)*(1-r(t,T.cambio+.5,T.cambio+.8));$('PC').style.opacity=pk;
+  if(!tip)tip=t<T.que6?[104,236]:t<T.un3?[664,406]:[664,576];
+  if(t<T.que5)tip=[104,236];
+place($('PC'),S2[0]-350+tip[0]+6,S2[1]+150-380+tip[1]-150,18);
+  // S3 · léelo: el silbato se apaga
+  place($('SB'),S3[0],S3[1]);draw($('sbr'),T.leelo-.1,T.leelo+.5);
+  const off=r(t,T.luego-.2,T.luego+.3);$('sGlow').setAttribute('opacity',.22*(1-off));
+  $('swh').querySelector('path').setAttribute('stroke',off>.5?'#b9bec4':'#d23a2a');$('swh').querySelector('circle').setAttribute('fill',off>.5?'#b9bec4':'#d23a2a');
+  place($('B'),BP[0],BP[1]);
+  // color por escena: vestuario en frío, 2006 en sepia suave, solución en blanco; al volver al principio, frío otra vez
+  const sep=r(t,T.en-.35,T.en+.25)*(1-r(t,T.volvemos-.4,T.volvemos+.3));
+  const cold=t<CUT?Math.max(1-r(t,T.en-.35,T.en+.25),r(t,T.volvemos-.4,T.volvemos+.3)):r(t,T.porque+.05,T.porque+.95);
+  $('gr').style.opacity=.42*sep;$('gr2').style.opacity=.55*cold;
+  // rótulo
+  let html='',a=0;for(const [s,e,h] of CAPS)if(t>=s-.2&&t<e+.25){html=h;a=Math.min(r(t,s-.2,s+.15),1-r(t,e-.05,e+.25))}
+  const cp=$('cap');if(cp.dataset.h!==html){cp.innerHTML=html;cp.dataset.h=html}
+  cp.style.opacity=a;cp.style.transform=`translateY(${(1-a)*12}px)`;
+  // giro: fundido a negro y salida a blanco
+  $('ink').style.opacity=r(t,CUT-.35,CUT-.03)*(1-r(t,CUT+.03,CUT+.4));
+};
+T.estaba=at('estaba');
+window.cover=function(t){frame(t);[...$('VS').children].slice(0,4).forEach(e=>e.style.display='none');$('title').style.display='block';$('cap').style.opacity=1};
+Promise.all([...document.images].map(i=>i.decode().catch(()=>{}))).then(()=>document.fonts.ready).then(()=>{frame(0);window.ready=true});
+</script></body></html>
