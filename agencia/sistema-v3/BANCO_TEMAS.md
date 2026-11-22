@@ -52,7 +52,7 @@ Lista viva. **Cada tema tiene muchas ideas; cada idea da 3 reels; cada reel llev
 12. E · Tres semanas, una gráfica, una decisión · baloncesto
 
 ## T04 · Porteros y porteras
-1. D · Paró doce y fue su mejor partido (D2) → versión fútbol: porcentaje de paradas · fútbol
+1. D · Paró doce y fue su mejor partido (D2) → versión fútbol: porcentaje de paradas · fútbol [hecha → T04-1-r1, r2, r3 · Dani A · fuentes: MLSsoccer 1/7/2014 (Howard); Opta en Stadium Astro 28/5/2022 (Courtois); MLSsoccer 17/6/2014 (Ochoa)]
 2. H · El portero que estudiaba a los lanzadores (casos de penaltis documentados) · fútbol [hecha → T04-2-r1, r2, r3 · Dani B · fuentes: AP/Al Jazeera y SI, 6/7/2014 (Krul); FourFourTwo, 6/7/2024 (Pickford, Suiza); CNBC 11/7/2021 y GiveMeSport 14/7/2021 (Pickford, final de 2021)]
 3. E · Contar tiros, no goles · general
 4. E · El entreno del portero que no tiene entrenador de porteros · fútbol
