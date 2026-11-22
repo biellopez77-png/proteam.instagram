@@ -39,7 +39,7 @@ Lista viva. **Cada tema tiene muchas ideas; cada idea da 3 reels; cada reel llev
 
 ## T03 · Carga y fatiga (RPE)
 1. E · Una pregunta del 1 al 10 (B2) · baloncesto
-2. H · El tercer cuarto se gana el jueves · baloncesto [en curso 2026-11-22 · Dani B]
+2. H · El tercer cuarto se gana el jueves · baloncesto [hecha → T03-2-r1, r2, r3 · Dani B · fuente del método: Foster et al. 2001, JSCR 15(1)]
 3. D · El RPE de sesión: de dónde sale (Foster, 2001) · general
 4. E · El jugador que siempre dice «7» · general
 5. E · Semana de carga vs semana de descarga: cómo se ve en una gráfica · fútbol
@@ -165,6 +165,11 @@ Rotación fija: un tema real de la semana por deporte (LaLiga, Champions, ACB, E
 4. C · Club Fundador: los primeros entrenadores deciden la app (solo lo aprobado en CLUB_FUNDADOR.md)
 5. C · Siete idiomas, tres deportes, una app
 6. C · El informe del partido en PDF para el coordinador
+7. C · El esfuerzo del equipo tras el entreno sin preguntarlo uno a uno (RPE en la app) [validar captura publicada]
+8. C · La convocatoria del sábado: quién viene, sin el grupo de mensajes [validar función]
+9. C · La ficha del rival guardada para la segunda vuelta [validar función]
+10. C · Los minutos de cada jugador al final de la temporada, sin sumar a mano [validar función]
+11. C · Del ejercicio de la pizarra a la sesión del martes, en un sitio [validar función]
 
 ---
 
