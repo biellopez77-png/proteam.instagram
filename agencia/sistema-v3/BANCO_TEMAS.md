@@ -65,7 +65,7 @@ Lista viva. **Cada tema tiene muchas ideas; cada idea da 3 reels; cada reel llev
 
 ## T05 · Datos y estadísticas que sí sirven
 1. H · Moneyball: el equipo que fichaba con una hoja de cálculo · béisbol → general
-2. E · Tres números que valen más que el marcador · fútbol
+2. E · Tres números que valen más que el marcador · fútbol [en curso 2026-11-23 · Dani B]
 3. D · Posesión y victorias: lo que dicen los datos (verificar estudios) · fútbol
 4. E · Un dato por partido: el que vas a mirar siempre · general
 5. H · El entrenador que apuntaba cada pérdida (casos documentados) · fútbol
