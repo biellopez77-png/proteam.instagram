@@ -1,7 +1,7 @@
 """Voz ×1.08 (REEL_ESTILO) y tiempos de palabra (Scribe) → <id>/voz.wav y <id>/times.js.
 python3 tiempos.py bq|bm"""
 import json, sys, subprocess, re, unicodedata
-k = sys.argv[1]; SP = 1.08; O = .06
+k = sys.argv[1]; SP = float(__import__("os").environ.get("SP", 1.08)); O = .06
 subprocess.run(['mkdir', '-p', k]); subprocess.run(f'ffmpeg -v error -y -i {k}_voz.mp3 -af "adelay=60|60,atempo={SP}" -ar 44100 -ac 2 {k}/voz.wav', shell=True, check=True)
 W = [w for w in json.load(open(f'{k}_words.json'))['words'] if w['type'] == 'word']
 norm = lambda s: re.sub(r'[^a-z0-9]', '', unicodedata.normalize('NFD', s.lower()).encode('ascii', 'ignore').decode())

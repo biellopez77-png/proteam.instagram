@@ -6,4 +6,5 @@
 | ../reel_v2/img/portera.jpg | portera de balonmano | banco de Pau | ver banco/INVENTARIO.csv |
 Voz: Mateo (ElevenLabs, eleven_v4, ×1,08). Música: eleven_music_v2_5. Efectos: sfx_a1.py (sintetizados).
 Crédito en la descripción: «Fotos: Andreas Köpke (DP), ronmacphotos (CC BY 2.0)».
+Versión 2 (a2.html): todo en fútbol, planos variados en el gancho (detalle → papel → Lehmann → media → 2006 → camisetas → penaltis), color por escena, silencio antes de «Alemania pasó» y de la solución, final circular sobre el papel.
 Nota: la foto de Lehmann es de 2007 con el Arsenal; en pantalla solo pone «Jens Lehmann».
