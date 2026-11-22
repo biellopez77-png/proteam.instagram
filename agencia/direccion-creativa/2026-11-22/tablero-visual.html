@@ -36,26 +36,27 @@ h2{font-size:clamp(26px,3.4vw,36px);margin:0 0 6px;line-height:1.1}
 .cap{font-size:13px;color:var(--mute);margin-top:6px;line-height:1.35}
 .cap b{color:var(--text)}
 /* fotograma */
-.fr{position:relative;container-type:inline-size;overflow:hidden;border-radius:10px;background:var(--ink);border:1px solid var(--line);display:flex;flex-direction:column;justify-content:center;padding:9cqw;gap:3cqw}
-.v916{width:168px;aspect-ratio:9/16}
-.slide{width:220px;aspect-ratio:var(--ar,4/5)}
-.fr .h{font-weight:800;font-size:10cqw;line-height:1.05;text-transform:uppercase;letter-spacing:-.01em}
-.slide .h{text-transform:none;font-size:9.5cqw}
+.fr{position:relative;overflow:hidden;border-radius:10px;background:var(--ink);border:1px solid var(--line);display:flex;flex-direction:column;justify-content:center;padding:calc(var(--w) * 0.09);gap:calc(var(--w) * 0.03)}
+.v916{--w:168px;width:var(--w);aspect-ratio:9/16}
+.slide{--w:220px;width:var(--w);aspect-ratio:var(--ar,4/5)}
+.fr .h{font-weight:800;font-size:calc(var(--w) * 0.14);line-height:1.05;text-transform:uppercase;letter-spacing:-.01em}
+.slide .h{text-transform:none;font-size:calc(var(--w) * 0.11)}
+.fr .h.l{font-size:calc(var(--w) * .085)}.slide .phone{width:30%}.fr .t,.fr .tag,.fr .ex,.phone{font-family:Manrope,system-ui,sans-serif}
 .fr .h em,.fr .s em{font-family:'Instrument Serif',serif;font-weight:400;text-transform:none;color:var(--blue);font-size:1.12em}
-.fr .s{font-weight:500;font-size:6.2cqw;line-height:1.25;opacity:.9}
-.fr .sm{font-weight:500;font-size:4.6cqw;opacity:.7}
-.fr .t{position:absolute;top:4cqw;left:5cqw;font:700 4.4cqw Manrope;opacity:.55}
-.fr .tag{position:absolute;bottom:4cqw;left:5cqw;right:5cqw;font:500 4cqw/1.2 Manrope;opacity:.6}
+.fr .s{font-weight:500;font-size:calc(var(--w) * 0.08);line-height:1.25;opacity:.9}
+.fr .sm{font-weight:500;font-size:calc(var(--w) * 0.046);opacity:.7}
+.fr .t{position:absolute;top:calc(var(--w) * 0.04);left:calc(var(--w) * 0.05);font:700 calc(var(--w) * 0.044) Manrope;opacity:.55}
+.fr .tag{position:absolute;bottom:calc(var(--w) * 0.04);left:calc(var(--w) * 0.05);right:calc(var(--w) * 0.05);font:500 calc(var(--w) * 0.04)/1.2 Manrope;opacity:.6}
 .paper{background:var(--paper);color:var(--ink)}.paper .tag,.paper .t{color:var(--ink)}
 .blk{background:#000}
 .photo{background:radial-gradient(120% 70% at 60% 30%,#3a4252 0,#1b1f28 45%,#08090c 100%)}
-.photo::after{content:'foto real pendiente';position:absolute;top:4cqw;right:5cqw;font:500 4cqw Manrope;opacity:.5}
-.court{background:#0f1a2e;background-image:linear-gradient(90deg,transparent 49.6%,rgba(255,255,255,.18) 49.6% 50.4%,transparent 50.4%),radial-gradient(circle at 50% 50%,transparent 17cqw,rgba(255,255,255,.18) 17cqw 17.8cqw,transparent 18cqw)}
+.photo::after{content:'foto real pendiente';position:absolute;top:calc(var(--w) * 0.04);right:calc(var(--w) * 0.05);font:500 calc(var(--w) * 0.04) Manrope;opacity:.5}
+.court{background:#0f1a2e;background-image:linear-gradient(90deg,transparent 49.6%,rgba(255,255,255,.18) 49.6% 50.4%,transparent 50.4%),radial-gradient(circle at 50% 50%,transparent calc(var(--w) * 0.17),rgba(255,255,255,.18) calc(var(--w) * 0.17) calc(var(--w) * 0.178),transparent calc(var(--w) * 0.18))}
 .app{background:#05060a}
-.phone{align-self:center;width:52cqw;aspect-ratio:9/18;border:1.4cqw solid #2a2f3a;border-radius:7cqw;display:grid;place-items:center;text-align:center;font:500 4.2cqw/1.25 Manrope;color:var(--mute);padding:4cqw;margin-bottom:2cqw}
-.ex{position:absolute;top:4cqw;right:5cqw;font:700 4cqw Manrope;letter-spacing:.04em;opacity:.55}
-.sticker{background:#fff;color:#111;border-radius:4cqw;padding:4cqw;font:700 5cqw/1.2 Manrope;text-align:center;box-shadow:0 2cqw 6cqw rgba(0,0,0,.4)}
-.sticker span{display:block;margin-top:2.5cqw;padding:2.4cqw;border-radius:3cqw;background:#eee;font-weight:700}
+.phone{align-self:center;width:calc(var(--w) * 0.52);aspect-ratio:9/18;border:calc(var(--w) * 0.014) solid #2a2f3a;border-radius:calc(var(--w) * 0.07);display:grid;place-items:center;text-align:center;font:500 calc(var(--w) * 0.042)/1.25 Manrope;color:var(--mute);padding:calc(var(--w) * 0.04);margin-bottom:calc(var(--w) * 0.02)}
+.ex{position:absolute;top:calc(var(--w) * 0.04);right:calc(var(--w) * 0.05);font:700 calc(var(--w) * 0.04) Manrope;letter-spacing:.04em;opacity:.55}
+.sticker{background:#fff;color:#111;border-radius:calc(var(--w) * 0.04);padding:calc(var(--w) * 0.04);font:700 calc(var(--w) * 0.05)/1.2 Manrope;text-align:center;box-shadow:0 calc(var(--w) * 0.02) calc(var(--w) * 0.06) rgba(0,0,0,.4)}
+.sticker span{display:block;margin-top:calc(var(--w) * 0.025);padding:calc(var(--w) * 0.024);border-radius:calc(var(--w) * 0.03);background:#eee;font-weight:700}
 .voz{font-size:12.5px;color:var(--mute);max-width:168px;margin-top:6px;line-height:1.35;font-style:italic}
 .tog{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:0 0 18px}
 .tog span{color:var(--mute);font-size:14px;margin-right:4px}
@@ -84,11 +85,11 @@ th{color:var(--mute);font-weight:700}
 td.rc{background:rgba(47,107,255,.12)}
 .scroll{overflow-x:auto}
 foot,footer{display:block;color:var(--mute);font-size:14px}
-@media(max-width:600px){.v916{width:140px}.slide{width:190px}.voz{max-width:140px}table{font-size:13px}.stack thead{display:none}.stack tr{display:grid;padding-block:10px}.stack td{display:flow-root;border:0;padding:3px 0;padding-inline-start:8em}.stack td::before{content:attr(data-l);float:inline-start;width:7.5em;margin-inline-start:-8em;color:var(--mute)}}
+@media(max-width:600px){.v916{--w:140px}.slide{--w:190px}.voz{max-width:140px}table{font-size:13px}.stack thead{display:none}.stack tr{display:grid;padding-block:10px}.stack td{display:flow-root;border:0;padding:3px 0;padding-inline-start:8em}.stack td::before{content:attr(data-l);float:inline-start;width:7.5em;margin-inline-start:-8em;color:var(--mute)}}
 @media(prefers-reduced-motion:no-preference){.fr{transition:transform .2s}.fr:hover{transform:translateY(-3px)}}
 </style><script>new MutationObserver(()=>{for(const c of document.querySelectorAll('.stack td:not([data-l])')){let i=0,p=c;while(p=p.previousElementSibling)i+=p.colSpan;c.dataset.l=c.closest('table').rows[0].cells[i]?.textContent||''}}).observe(document,{childList:true,subtree:true})</script></head><body>
 <header class="band">
-<h1>Las 33 versiones, <em>para verlas</em></h1>
+<h1>Las 33 versiones, <em>para verlas</em></h1><p style="color:var(--text)"><b>Actualizado 22/11, 12:00:</b> los 9 hooks de los Reels rehechos con la teoría del encargo y los 3 Reels de referencia.</p>
 <p>Todo lo que escribió el equipo anoche, dibujado con la marca: fotogramas clave de cada Reel, diapositivas de cada carrusel, Stories, bio, comentarios y emails. La versión recomendada lleva la nota en azul. Donde pone «foto real pendiente» o «captura real», va una foto o una captura de verdad, no se genera.</p>
 </header>
 <nav aria-label="Formatos">
@@ -115,7 +116,7 @@ foot,footer{display:block;color:var(--mute);font-size:14px}
 const R=s=>s.replace(/\*(.+?)\*/g,'<em>$1</em>');
 const fr=(f,cls)=>{const bg=f.b||'ink';let inner='';
  if(bg==='app')inner+=`<div class="phone">captura real:<br>${f.cap||'app'}</div>`;
- if(f.h)inner+=`<div class="h">${R(f.h)}</div>`;
+ if(f.h)inner+=`<div class="h${f.h.length>26?' l':''}">${R(f.h)}</div>`;
  if(f.s)inner+=`<div class="s">${R(f.s)}</div>`;
  if(f.st)inner+=`<div class="sticker">${f.st.q}${(f.st.o||[]).map(o=>`<span>${o}</span>`).join('')}</div>`;
  if(f.sm)inner+=`<div class="sm">${R(f.sm)}</div>`;
@@ -129,7 +130,7 @@ const reels=[
 {t:'16–23 s',h:'Jueves',s:'el más largo · ¿cómo acabaron? —',v:'Lo único que se repetía: el jueves. Y nadie apuntó cómo acabaron.'},
 {t:'23–29 s',b:'paper',h:'Al acabar cada entreno',s:'¿Cómo de duro? 1 — 10 · *el sábado, compara*',v:'Del uno al diez, ¿cómo de duro? Apúntalo.'},
 {t:'29–33 s',b:'app',cap:'RPE',h:'La app de ProTeam',sm:'Enlace en la bio',v:'Eso ya lo hace la app de ProTeam. Pruébala.'}]},
-{id:'D1-B',n:'Desde dónde',sc:85,rec:1,m:'Balonmano infantil · 28 s · montaje M1',w:'Reto al espectador: cuatro pistas, un segundo para elegir y una quinta que no estaba. Andrés: cambiar el hook a «Cuatro pistas. ¿Cuál es?».',f:[
+{id:'D1-B',n:'Desde dónde',sc:85,rec:1,m:'Balonmano infantil · 28 s · montaje M1',w:'Reto al espectador: cuatro pistas, un segundo para elegir y una quinta que no estaba. ',f:[
 {t:'0–3 s',b:'photo',h:'12 paradas · 20 goles',s:'Cuatro pistas. *¿Cuál es?*',v:'Tu portera paró doce. Le marcaron veinte.'},
 {t:'3–10 s',b:'paper',h:'1 Defensa hundida · 2 Desde 9 m · 3 Contraataques · 4 Extremos',v:'¿La defensa? ¿De lejos? ¿Contraataques? ¿Los extremos?'},
 {t:'10–12 s',b:'blk',h:'2 · 1',s:'*Elige una.*',v:'[1 s de silencio] Elige una.'},
@@ -168,7 +169,7 @@ const reels=[
 {t:'12–19 s',b:'court',h:'Extremos: corren',s:'El que roba: primer pase · El resto: acompaña',v:'Decide antes quién sale.'},
 {t:'19–26 s',b:'paper',h:'Tarea · 10′ · 6×6',s:'el robo vale si cruzáis en *3 s*',v:'Tarea del jueves.'},
 {t:'26–29 s',b:'court',h:'La app de ProTeam',v:'Prepáralo en la app de ProTeam.'}]},
-{id:'D3-B',n:'Haz la cuenta',sc:76,m:'Fútbol 11 infantil · 26 s · montaje M3',w:'<span class="warn">Dato falso: el infantil de F11 no juega 90 minutos.</span> Si se recupera, se pasa a juvenil.',f:[
+{id:'D3-B',n:'Haz la cuenta',sc:76,m:'Fútbol 11 infantil · 26 s · montaje M3',w:'Dato corregido: en infantil de F11 son 70 minutos (11 × 70 = 770), pendiente de validar por federación.',f:[
 {t:'0–3 s',b:'court',h:'14 convocados',v:'Once en el campo. Noventa minutos.'},
 {t:'3–7 s',b:'court',h:'11 × 90 = 990',v:'Haz la cuenta.'},
 {t:'7–10 s',b:'court',h:'990 ÷ 14 ≈ 70',v:'Unos setenta por cabeza.'},
@@ -182,7 +183,17 @@ const reels=[
 {t:'11–18 s',b:'court',h:'El primer pase no puede ir al base',v:'Misma jugada, una regla.'},
 {t:'18–24 s',b:'paper',h:'10′ · 5×5 · presión',s:'cada 2′ cambia *el prohibido*',v:'Cada dos minutos cambia quién no puede recibir.'},
 {t:'24–33 s',h:'La app de ProTeam',sm:'Comenta el dorsal · Enlace en la bio',v:'¿Quién sacaría el balón si mañana falta tu base?'}]}];
-document.getElementById('reelsL').innerHTML=reels.map(v=>`<div class="ver${v.rec?' rec':''}">${head(v)}<div class="strip">${v.f.map(f=>`<div class="cell">${fr(f,'v916')}<div class="voz">«${f.v}»</div></div>`).join('')}</div></div>`).join('');
+const HK={
+'D1-A':{old:'No era el tercer cuarto. Era el jueves.',v:'Kawhi Leonard se perdió 22 partidos. La mayoría, para descansar. Ese año ganó el anillo.',f:[{b:'photo',h:'22 partidos sin jugar',tag:'Kawhi Leonard, Raptors 2019'},{b:'photo',h:'22 partidos sin jugar',s:'*y ganó el anillo.*'}],fin:'En la NBA lo llaman load management. Tú puedes empezar con una pregunta.',alt:['Tu cadete no pierde el tercer cuarto. Lo perdió el jueves.','En la NBA lo llaman load management. En tu cadete, nadie lo apunta.']},
+'D1-B':{old:'Tu portera paró doce. Le marcaron veinte.',v:'Este papel se vendió por un millón de euros. Un portero lo llevaba escondido en la media.',f:[{b:'photo',h:'1.000.000 €',tag:'la chuleta de Lehmann, Mundial 2006'},{b:'paper',h:'1.000.000 €',s:'*por un papel.*'}],fin:'Tu papel no vale un millón. Pero el sábado vale un partido.',alt:['Alemania eliminó a Argentina de un Mundial con una chuleta.','Tu portera paró doce, le marcaron veinte y nadie sabe desde dónde.']},
+'D1-C':{old:'Final de Champions, 2005. Al descanso, Milan tres, Liverpool cero.',v:'Perdían 3-0 al descanso de una final de Champions. Seis minutos después, 3-3.',f:[{b:'blk',h:'3-0',s:'*al descanso de una final*'},{b:'blk',h:'3-3',s:'*seis minutos después*'}],fin:'Ellos llevaban un plan B. ¿Tú llevas uno este sábado?',alt:['¿Qué se dice en un vestuario que pierde 3-0 una final? Nadie lo sabe. Lo que hicieron, sí.','En una final de Champions, el partido cambió en el descanso.']},
+'D2-A':{old:'Lunes, ocho y cuarto. Antes del trabajo, intento acordarme del sábado.',v:'Mañana a esta hora ya habrás olvidado la mitad de este partido.',f:[{b:'photo',h:'Mañana habrás olvidado',s:'*la mitad de este partido.*',tag:'imagen del partido del sábado'},{b:'photo',h:'Lunes · 8:15',s:'¿Qué mitad?'}],fin:'Tres líneas el sábado. Y el lunes recuerdas el partido entero.',alt:['Apuntaste «minuto 60» y una flecha. Hoy es lunes y no sabes qué significa.','El sábado lo tenías clarísimo. El lunes ya es una sensación.']},
+'D2-B':{old:'Lunes. La semana de tu cadete, en una pantalla.',v:'Con uno de los presupuestos más bajos de su liga ganaron 20 partidos seguidos. Su arma era una hoja de cálculo.',f:[{b:'photo',h:'20 seguidos',tag:'Oakland Athletics, 2002'},{b:'paper',h:'20 seguidos',s:'*con una hoja de cálculo.*'}],fin:'Ellos tenían una hoja. Tú puedes tener un sitio.',alt:['Tu temporada está en cuatro sitios y ninguno sabe lo que hay en los otros tres.','Lunes. La semana de tu cadete, en una pantalla.']},
+'D2-C':{old:'Nadie me enseñó a organizar un equipo. Solo a entrenarlo.',v:'José Mourinho empezó en un banquillo como traductor de otro entrenador.',f:[{b:'photo',h:'Mourinho empezó',s:'*como traductor.*'},{b:'paper',h:'¿Qué aprendió',s:'*allí?*'}],fin:'Él aprendió mirando a otro. Tú puedes empezar por la semana.',alt:['Te enseñaron cien ejercicios. Nadie te enseñó a organizar una semana.','Tu primer año como entrenador no lo pierdes por la táctica.']},
+'D3-A':{old:'Robas el balón. Y tu equipo se para a mirar quién sale.',v:'Robas el balón. Tres segundos después, ya no vale nada.',f:[{b:'court',h:'Robo',s:'3 · 2 · 1'},{b:'court',h:'Ya no vale',s:'*nada.*'}],fin:'Ahora cuenta hasta tres. Y que ya estén corriendo.',alt:['Tu equipo roba balones. Y no marca ni uno al contraataque.','El mejor momento para marcar en balonmano dura tres segundos.']},
+'D3-B':{old:'Catorce convocados. Once en el campo. Noventa minutos. (dato falso en infantil)',v:'Cada sábado repartes 770 minutos. ¿Cuántos le has dado a tu número 14?',f:[{b:'court',h:'770',s:'*minutos cada sábado*'},{b:'court',h:'¿Y el 14?',s:'*¿cuántos le has dado?*'}],fin:'En un mes, mira quién está abajo. Seguramente es el 14.',alt:['Hay un jugador en tu equipo que lleva tres semanas jugando 20 minutos. Y no sabes quién es.','Haz la cuenta: once por setenta.']},
+'D3-C':{old:'Os presionan. El balón siempre acaba en tu base.',v:'Sin Michael Jordan, los Bulls ganaron solo dos partidos menos que con él.',f:[{b:'photo',h:'Sin Jordan',tag:'Jordan, temporada de béisbol, 1994'},{b:'blk',h:'57 → 55',s:'*sin su mejor jugador*'}],fin:'Los Bulls sabían jugar sin Jordan. ¿Tu equipo sabe jugar sin su base?',alt:['El año que Jordan se fue a jugar al béisbol, los Bulls ganaron 55 partidos.','¿Quién saca el balón si mañana falta tu base?']}};
+document.getElementById('reelsL').innerHTML=`<div class="card" style="margin-bottom:8px"><h3>Hooks v2: shock con algo conocido</h3><ul><li>El primer segundo enseña algo que el entrenador ya conoce (Jordan, Kawhi, Lehmann, Estambul) y dice de ello algo que no cuadra.</li><li>Deja una pregunta abierta que solo se cierra viendo el vídeo.</li><li>Baja al banquillo de base: problema, subproblema, conexión y solución (regla del embudo).</li><li>El final vuelve al hook con todo el contexto.</li></ul></div>`+reels.map(v=>{const k=HK[v.id];const fs=[...k.f.map((f,i)=>({...f,t:i?'1–3 s':'0–1 s',v:i?'':k.v})),...v.f.slice(1)];return `<div class="ver${v.rec?' rec':''}">${head(v)}<p class="why"><b style="color:var(--blue)">Hook nuevo:</b> «${k.v}»<br><span class="meta">Antes: <s>«${k.old}»</s></span><br><span class="meta">Final que vuelve al hook: «${k.fin}»</span><br><span class="meta">Alternativas: «${k.alt.join('» · «')}»</span></p><div class="strip">${fs.map(f=>`<div class="cell">${fr(f,'v916')}${f.tag?`<div class="cap">${f.tag}</div>`:''}<div class="voz">${f.v?'«'+f.v+'»':''}</div></div>`).join('')}</div></div>`}).join('');
 const mont=[
 {n:'M1 · Plano secuencia',sc:86,rec:1,u:'Para D1 (el tablero)',l:['Cámara 2,5D que viaja por un tablero de notas','Un solo corte, a negro, antes de la revelación','El texto vive escrito en las notas','Se puede producir con lo que ya hay']},
 {n:'M2 · Documental respirado',sc:78,u:'Para D2 (a pie de pista)',l:['Cámara real en mano y saltos de corte','Silencios con sonido ambiente','Depende de grabaciones que hoy no existen']},
