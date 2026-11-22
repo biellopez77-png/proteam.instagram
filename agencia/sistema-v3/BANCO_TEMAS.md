@@ -53,7 +53,7 @@ Lista viva. **Cada tema tiene muchas ideas; cada idea da 3 reels; cada reel llev
 
 ## T04 · Porteros y porteras
 1. D · Paró doce y fue su mejor partido (D2) → versión fútbol: porcentaje de paradas · fútbol
-2. H · El portero que estudiaba a los lanzadores (casos de penaltis documentados) · fútbol [en curso 2026-11-22 · Dani B]
+2. H · El portero que estudiaba a los lanzadores (casos de penaltis documentados) · fútbol [hecha → T04-2-r1, r2, r3 · Dani B · fuentes: AP/Al Jazeera y SI, 6/7/2014 (Krul); FourFourTwo, 6/7/2024 (Pickford, Suiza); CNBC 11/7/2021 y GiveMeSport 14/7/2021 (Pickford, final de 2021)]
 3. E · Contar tiros, no goles · general
 4. E · El entreno del portero que no tiene entrenador de porteros · fútbol
 5. H · El penalti de Panenka y lo que nos enseña sobre leer al portero · fútbol
