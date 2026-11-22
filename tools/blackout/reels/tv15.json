@@ -1,0 +1,277 @@
+{
+ "d": "15",
+ "ch": "CH 15",
+ "dur": 23.0,
+ "vel": 1.0,
+ "back": 17.1,
+ "seg": [
+  [
+   "tv",
+   0,
+   10.8
+  ],
+  [
+   "in",
+   10.8,
+   11.4
+  ],
+  [
+   "fut",
+   11.4,
+   16.6
+  ],
+  [
+   "out",
+   16.6,
+   17.1
+  ],
+  [
+   "tv",
+   17.1,
+   23.0
+  ]
+ ],
+ "audio": {
+  "cut": 10.8,
+  "old": [
+   "Honky-Tonk Villain.mp3",
+   0
+  ],
+  "new": [
+   "Thugs.mp3",
+   138.5
+  ],
+  "old_vol": 0.55,
+  "new_vol": 0.7
+ },
+ "tv": {
+  "ch": "CH 15",
+  "frames": [
+   {
+    "t0": 0,
+    "static": true,
+    "len": 0.5,
+    "osd": true
+   },
+   {
+    "t0": 0.5,
+    "bg": "blue",
+    "mode": "PLAY ▶",
+    "lines": [
+     {
+      "text": "AVISO DEL SISTEMA",
+      "font": "VT",
+      "size": 60,
+      "y": 170,
+      "at": 0.1,
+      "cps": 30
+     },
+     {
+      "text": "TU EQUIPO",
+      "size": 130,
+      "y": 300,
+      "at": 0.7,
+      "cps": 16
+     },
+     {
+      "text": "SIGUE EN 1998.",
+      "size": 130,
+      "y": 440,
+      "at": 1.4,
+      "cps": 16,
+      "cursor": true
+     }
+    ]
+   },
+   {
+    "t0": 4.2,
+    "bg": "dos",
+    "osd": false,
+    "lines": [
+     {
+      "text": "C:\\> ENTRENO.EXE",
+      "font": "VT",
+      "size": 72,
+      "y": 110,
+      "at": 0.1,
+      "cps": 16
+     },
+     {
+      "text": "EXCEL 97 ........ OBSOLETO",
+      "font": "VT",
+      "size": 62,
+      "y": 260,
+      "at": 1.1,
+      "cps": 40
+     },
+     {
+      "text": "LIBRETA ......... OBSOLETO",
+      "font": "VT",
+      "size": 62,
+      "y": 340,
+      "at": 1.9,
+      "cps": 40
+     },
+     {
+      "text": "47 AUDIOS ....... OBSOLETO",
+      "font": "VT",
+      "size": 62,
+      "y": 420,
+      "at": 2.7,
+      "cps": 40
+     },
+     {
+      "text": "C:\\> _",
+      "font": "VT",
+      "size": 72,
+      "y": 560,
+      "at": 3.4,
+      "cps": 20
+     }
+    ]
+   },
+   {
+    "t0": 7.9,
+    "bg": "blue",
+    "mode": "⟳ UPDATE",
+    "lines": [
+     {
+      "text": "ACTUALIZACIÓN",
+      "size": 110,
+      "y": 190,
+      "at": 0.05,
+      "cps": 28
+     },
+     {
+      "text": "DISPONIBLE",
+      "size": 110,
+      "y": 310,
+      "at": 0.55,
+      "cps": 24
+     },
+     {
+      "text": "PROTEAM 2026 · ¿INSTALAR? [SÍ]",
+      "font": "VT",
+      "size": 60,
+      "y": 470,
+      "at": 1.0,
+      "cps": 40
+     }
+    ],
+    "bar": {
+     "t0": 1.6,
+     "t1": 2.8,
+     "y": 580
+    }
+   },
+   {
+    "t0": 16.6,
+    "bg": "blue",
+    "mode": "REC ●",
+    "lines": [
+     {
+      "text": "QUEDAN 15 DÍAS",
+      "font": "VT",
+      "size": 60,
+      "y": 150,
+      "at": 0.6,
+      "cps": 30
+     },
+     {
+      "text": "6 MESES",
+      "size": 160,
+      "y": 250,
+      "at": 0.8,
+      "cps": 14
+     },
+     {
+      "text": "GRATIS.",
+      "size": 160,
+      "y": 410,
+      "at": 1.4,
+      "cps": 14
+     },
+     {
+      "text": "PARA TU PRIMER EQUIPO.",
+      "size": 56,
+      "y": 610,
+      "at": 2.1,
+      "cps": 30
+     },
+     {
+      "text": "HASTA EL 27 · 23:59",
+      "font": "VT",
+      "size": 60,
+      "y": 690,
+      "at": 3.0,
+      "cps": 30
+     },
+     {
+      "text": "PRO-TEAM.APP",
+      "font": "VT",
+      "size": 76,
+      "y": 780,
+      "at": 3.7,
+      "cps": 20,
+      "cursor": true
+     }
+    ]
+   }
+  ]
+ },
+ "future": {
+  "scenes": [
+   {
+    "t0": 11.4,
+    "type": "future",
+    "title": "ProTeam.",
+    "sub": "Actualizado.",
+    "shots": [
+     [
+      0,
+      "mo-week",
+      "Planifica la semana.",
+      0.1
+     ],
+     [
+      1.7,
+      "reg-1",
+      "Registra el partido.",
+      0.45
+     ],
+     [
+      3.4,
+      "fF",
+      "Controla la carga.",
+      0.02
+     ]
+    ],
+    "pw": 680,
+    "crop": 0.6,
+    "py": 470
+   }
+  ]
+ },
+ "lineas": [
+  [
+   0.7,
+   "Aviso del sistema: tu equipo sigue en mil novecientos noventa y ocho."
+  ],
+  [
+   4.8,
+   "Excel, libreta y cuarenta y siete audios. Todo obsoleto."
+  ],
+  [
+   8.75,
+   "Actualización disponible."
+  ],
+  [
+   11.6,
+   "ProTim. Planifica la semana, registra el partido y controla la carga."
+  ],
+  [
+   17.4,
+   "Seis meses gratis para tu primer equipo. Solo hasta el veintisiete."
+  ]
+ ]
+}

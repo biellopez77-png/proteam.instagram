@@ -1,0 +1,184 @@
+{
+ "w": 1080,
+ "h": 1920,
+ "d": "7",
+ "dur": 22.15,
+ "on": true,
+ "vel": 1.0,
+ "cut": 7.09,
+ "trans": 1.9,
+ "pose": {
+  "ry0": -0.24,
+  "y": -0.014,
+  "far": 0.47
+ },
+ "dev": [
+  [
+   0,
+   "tv",
+   0.8
+  ],
+  [
+   4.66,
+   "tv",
+   0.8
+  ]
+ ],
+ "layers": [
+  {
+   "t0": 0.3,
+   "t1": 4.96,
+   "type": "osd",
+   "ch": "CH 07",
+   "mode": "TELETIENDA",
+   "blink": false
+  },
+  {
+   "t0": 0.5,
+   "t1": 4.96,
+   "type": "text",
+   "valign": "flex-start",
+   "align": "left",
+   "pad": "300px 90px",
+   "gap": 16,
+   "lines": [
+    {
+     "text": "¿QUIERE",
+     "size": 150,
+     "cps": 16,
+     "at": 0.1
+    },
+    {
+     "text": "SABER CUÁNDO",
+     "size": 112,
+     "cps": 16,
+     "at": 0.72
+    },
+    {
+     "text": "SE ROMPIÓ SU",
+     "size": 112,
+     "cps": 16,
+     "at": 1.65
+    },
+    {
+     "text": "PARTIDO?",
+     "size": 150,
+     "cps": 16,
+     "at": 2.58
+    }
+   ]
+  },
+  {
+   "t0": 4.56,
+   "t1": 7.29,
+   "type": "osd",
+   "ch": "CH 07",
+   "mode": "TELETIENDA",
+   "blink": false
+  },
+  {
+   "t0": 4.76,
+   "t1": 7.29,
+   "type": "text",
+   "valign": "flex-start",
+   "align": "left",
+   "pad": "300px 90px",
+   "gap": 16,
+   "lines": [
+    {
+     "text": "¡Y NO",
+     "size": 150,
+     "cps": 16,
+     "at": 0.1
+    },
+    {
+     "text": "SOLO ESO!",
+     "size": 150,
+     "cps": 16,
+     "at": 0.59
+    }
+   ]
+  }
+ ],
+ "app": [
+  [
+   7.09,
+   "res-0",
+   0.1,
+   0.35
+  ],
+  [
+   11.77,
+   "reg-3",
+   0.45,
+   0.52
+  ],
+  [
+   14.07,
+   "res-1",
+   0.2,
+   0.45
+  ]
+ ],
+ "words": [
+  [
+   8.49,
+   11.77,
+   "<div class=\"a\" style=\"left:0;right:0;top:150px;text-align:center;font-family:IT;font-weight:900;font-size:112px;letter-spacing:-.04em;color:#fff;line-height:1\">Por partes.</div>"
+  ],
+  [
+   11.87,
+   14.07,
+   "<div class=\"a\" style=\"left:0;right:0;top:150px;text-align:center;font-family:IT;font-weight:900;font-size:112px;letter-spacing:-.04em;color:#fff;line-height:1\">Cada tiro.</div>"
+  ],
+  [
+   14.17,
+   16.55,
+   "<div class=\"a\" style=\"left:0;right:0;top:150px;text-align:center;font-family:IT;font-weight:900;font-size:112px;letter-spacing:-.04em;color:#fff;line-height:1\">Por jugador.</div>"
+  ],
+  [
+   16.65,
+   22.05,
+   "<div class=\"a\" style=\"left:0;right:0;top:150px;text-align:center;font-family:IT;font-weight:900;font-size:112px;letter-spacing:-.04em;color:#fff;line-height:1\">6 meses gratis.</div><div class=\"a\" style=\"left:0;right:0;top:285px;text-align:center;font-family:VT;font-size:54px;letter-spacing:.06em;color:#3dffa8\">SOLO HASTA EL 27 · PRO-TEAM.APP</div>"
+  ]
+ ],
+ "audio": {
+  "cut": 7.09,
+  "old": [
+   "Clowns.mp3",
+   30
+  ],
+  "new": [
+   "Deeper.mp3",
+   192
+  ],
+  "old_vol": 0.5,
+  "new_vol": 0.75
+ },
+ "lineas": [
+  [
+   0.8,
+   "¿Quiere saber cuándo se rompió su partido?"
+  ],
+  [
+   5.06,
+   "¡Y no solo eso!"
+  ],
+  [
+   8.59,
+   "Marcador por partes y últimos diez minutos."
+  ],
+  [
+   11.97,
+   "Dónde va cada tiro."
+  ],
+  [
+   14.27,
+   "Y los números de cada jugador."
+  ],
+  [
+   16.75,
+   "Seis meses gratis para tu primer equipo. Solo hasta el veintisiete."
+  ]
+ ]
+}

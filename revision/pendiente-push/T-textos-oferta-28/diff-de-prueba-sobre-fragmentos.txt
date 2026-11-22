@@ -1,0 +1,275 @@
+diff --git a/src/components/landing/sport-page.tsx b/src/components/landing/sport-page.tsx
+index 19e95c6..a2c6638 100644
+--- a/src/components/landing/sport-page.tsx
++++ b/src/components/landing/sport-page.tsx
+@@ -5,8 +5,10 @@ import { PublicHeader } from "@/components/public-header";
+ import { Button } from "@/components/ui/button";
+ import { PublicFooter } from "@/components/public-footer";
+ import { absoluteUrl, publicHead } from "@/lib/site";
++import { blackoutActive } from "@/lib/blackout-friday";
+ 
+ export function SportPage({ c }: { c: SportPageContent }) {
++  const offer = blackoutActive(Date.now());
+   return (
+     <div className="landing-theme min-h-screen overflow-x-hidden bg-background text-foreground antialiased">
+       <PublicHeader />
+@@ -18,9 +20,10 @@ export function SportPage({ c }: { c: SportPageContent }) {
+             <h1 className="mt-5 text-4xl font-semibold leading-tight sm:text-6xl">{c.h1}</h1>
+             <p className="mt-5 max-w-2xl text-base leading-7 text-muted-foreground sm:text-lg">{c.intro}</p>
+             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+-              <Button asChild size="lg"><Link to="/" search={{ auth: "register" }}>Empieza gratis 3 meses <ArrowRight /></Link></Button>
++              <Button asChild size="lg"><Link to="/" search={{ auth: "register" }}>{offer ? "Apúntate a la lista de espera" : "Empieza con 1 mes de prueba"} <ArrowRight /></Link></Button>
+               <Button asChild size="lg" variant="outline"><Link to="/pricing">Ver precios</Link></Button>
+             </div>
++            {offer && <p className="mt-3 text-sm text-muted-foreground">3 meses gratis si te apuntas antes del 28 de noviembre</p>}
+             <ul className="mt-8 flex flex-wrap gap-2">
+               {c.metrics.map((m) => <li key={m} className="rounded-full border border-border bg-card/60 px-3 py-1.5 text-xs font-semibold">{m}</li>)}
+             </ul>
+@@ -36,6 +39,10 @@ export function SportPage({ c }: { c: SportPageContent }) {
+                 <p className="mt-2 text-sm leading-6 text-muted-foreground">{f.a}</p>
+               </div>
+             ))}
++            <div className="rounded-xl border border-border bg-card/60 p-4">
++              <h3 className="font-semibold">¿Hay prueba gratis?</h3>
++              <p className="mt-2 text-sm leading-6 text-muted-foreground">{offer ? "3 meses gratis si te apuntas antes del 28 de noviembre" : "1 mes de prueba"}</p>
++            </div>
+           </div>
+         </section>
+       </main>
+diff --git a/src/components/public/content-shell.tsx b/src/components/public/content-shell.tsx
+index af7daa8..bc5efd0 100644
+--- a/src/components/public/content-shell.tsx
++++ b/src/components/public/content-shell.tsx
+@@ -4,9 +4,11 @@ import { PublicFooter } from '@/components/public-footer';
+ import { Button } from '@/components/ui/button';
+ import { Link } from '@tanstack/react-router';
+ import { ArrowRight, Download } from 'lucide-react';
++import { blackoutActive } from '@/lib/blackout-friday';
+ export function ContentShell({ label, title, description, children }: {label:string;title:string;description:string;children:ReactNode}) {
+  return <div className="landing-theme min-h-screen overflow-x-hidden bg-background text-foreground antialiased"><PublicHeader/><main><section className="relative border-b border-border px-5 py-16 sm:py-20"><div className="landing-grid absolute inset-0 -z-10"/><div className="mx-auto max-w-4xl"><p className="section-label text-primary">{label}</p><h1 className="mt-5 text-4xl font-semibold leading-tight sm:text-5xl">{title}</h1><p className="mt-5 max-w-3xl text-lg leading-7 text-muted-foreground">{description}</p></div></section><div className="mx-auto max-w-6xl px-5 py-12 sm:py-16">{children}</div></main><PublicFooter/></div>;
+ }
+ export function PublicCta({ template = false }: {template?:boolean}) {
+- return <section className="mt-12 border-t border-border pt-10"><h2 className="text-2xl font-semibold">Llévalo a tu equipo con ProTeam App</h2><div className="mt-6 flex flex-wrap gap-3">{template && <Button asChild size="lg" variant="outline"><Link to="/recursos/plantilla-planificacion"><Download/>Descargar plantilla gratis</Link></Button>}<Button asChild size="lg" className="h-auto min-h-11 whitespace-normal py-3"><Link to="/" search={{auth:'register'}}>{template ? 'Probar ProTeam: primer equipo 3 meses gratis' : 'Planifícalo en ProTeam'}<ArrowRight className="shrink-0"/></Link></Button></div></section>;
++ const offer = blackoutActive(Date.now());
++ return <section className="mt-12 border-t border-border pt-10"><h2 className="text-2xl font-semibold">Llévalo a tu equipo con ProTeam App</h2><div className="mt-6 flex flex-wrap gap-3">{template && <Button asChild size="lg" variant="outline"><Link to="/recursos/plantilla-planificacion"><Download/>Descargar plantilla gratis</Link></Button>}<Button asChild size="lg" className="h-auto min-h-11 whitespace-normal py-3"><Link to="/" search={{auth:'register'}}>{template ? (offer ? 'Apúntate a la lista de espera' : 'Empieza con 1 mes de prueba') : 'Planifícalo en ProTeam'}<ArrowRight className="shrink-0"/></Link></Button></div>{template && offer && <p className="mt-3 text-sm text-muted-foreground">3 meses gratis si te apuntas antes del 28 de noviembre</p>}</section>;
+ }
+diff --git a/src/lib/blackout-friday.ts b/src/lib/blackout-friday.ts
+index 58deb1e..4468095 100644
+--- a/src/lib/blackout-friday.ts
++++ b/src/lib/blackout-friday.ts
+@@ -5,6 +5,13 @@ export function blackoutActive(now: number) {
+   return now < BLACKOUT_FRIDAY_END;
+ }
+ 
++/** Oferta pública (Biel, 18/11): 3 meses solo con la lista de espera hasta el 27/11;
++ *  desde el 28/11, 1 mes de prueba. Nunca se pone el precio. Solo para textos en castellano
++ *  (blog, Excel); en pantalla se usan literales para que pasen por los diccionarios. */
++export function publicOffer(now: number) {
++  return blackoutActive(now) ? "3 meses gratis si te apuntas antes del 28 de noviembre" : "1 mes de prueba";
++}
++
+ export function blackoutRemaining(now: number) {
+   const total = Math.max(0, Math.ceil((BLACKOUT_FRIDAY_END - now) / 1000));
+   if (total === 0) return null;
+diff --git a/src/lib/blog-posts.ts b/src/lib/blog-posts.ts
+index f6d13a4..6dd87a0 100644
+--- a/src/lib/blog-posts.ts
++++ b/src/lib/blog-posts.ts
+@@ -1,11 +1,12 @@
++import { publicOffer } from '@/lib/blackout-friday';
+ export const BLOG_DATE = '2026-11-04';
+ export const blogPosts = [
+-  { markdown: `x Así llegas al lunes con el análisis hecho. **Prueba ProTeam App: tu primer equipo, 3 meses gratis.**
++  { markdown: `x Así llegas al lunes con el análisis hecho. **Prueba ProTeam App: {oferta}.**
+ 
+ y` },
+-  { markdown: `Y si quieres hacer todo esto sin fórmulas, con biblioteca de ejercicios y análisis de partido, **prueba ProTeam App: tu primer equipo, 3 meses gratis**.` },
+-  { markdown: `En ProTeam registras el RPE de entrenos y partidos y ves la carga de cada jugador sin hojas de cálculo. **Pruébalo gratis 3 meses con tu primer equipo.**` },
++  { markdown: `Y si quieres hacer todo esto sin fórmulas, con biblioteca de ejercicios y análisis de partido, **prueba ProTeam App: {oferta}**.` },
++  { markdown: `En ProTeam registras el RPE de entrenos y partidos y ves la carga de cada jugador sin hojas de cálculo. **Pruébalo con tu primer equipo: {oferta}.**` },
+ ];
+ export function normalizeBlogMarkdown(markdown: string) {
+-  return markdown.replaceAll('{enlace_plantilla}', '/recursos/plantilla-planificacion').replace(/https:\/\/pro-team\.app(?=\/|\b)/g, '');
++  return markdown.replaceAll('{oferta}', publicOffer(Date.now())).replaceAll('{enlace_plantilla}', '/recursos/plantilla-planificacion').replace(/https:\/\/pro-team\.app(?=\/|\b)/g, '');
+ }
+diff --git a/src/lib/i18n/dict/ca.json b/src/lib/i18n/dict/ca.json
+index b71966c..cba66d7 100644
+--- a/src/lib/i18n/dict/ca.json
++++ b/src/lib/i18n/dict/ca.json
+@@ -4606,5 +4606,12 @@
+   "Sense club, prova acabada o subscripció cancel·lada.": "Sense club, prova acabada o subscripció cancel·lada.",
+   "Sense pla": "Sense pla",
+   "Subscripció de Stripe activa.": "Subscripció de Stripe activa.",
+-  "7 dies": "7 dies"
++  "7 dies": "7 dies",
++  "3 meses gratis si te apuntas antes del 28 de noviembre": "3 mesos gratis si t'apuntes abans del 28 de novembre",
++  "1 mes de prueba": "1 mes de prova",
++  "Empieza con 1 mes de prueba": "Comença amb 1 mes de prova",
++  "¿Hay prueba gratis?": "Hi ha prova gratuïta?",
++  "App para entrenadores de fútbol y fútbol 7: planifica la temporada, prepara entrenamientos, controla la carga y analiza partidos con xG y duelos.": "App per a entrenadors de futbol i futbol 7: planifica la temporada, prepara entrenaments, controla la càrrega i analitza partits amb xG i duels.",
++  "App para entrenadores de baloncesto: planifica la temporada, prepara entrenamientos y sigue eFG%, +/− y faltas en el partido en directo.": "App per a entrenadors de bàsquet: planifica la temporada, prepara entrenaments i segueix eFG%, +/− i faltes al partit en directe.",
++  "App para entrenadores de balonmano: planifica la temporada, prepara entrenamientos y analiza paradas por zona, contraataques y exclusiones.": "App per a entrenadors d’handbol: planifica la temporada, prepara entrenaments i analitza aturades per zona, contraatacs i exclusions."
+ }
+\ No newline at end of file
+diff --git a/src/lib/i18n/dict/de.json b/src/lib/i18n/dict/de.json
+index 8b4cda2..a15cce6 100644
+--- a/src/lib/i18n/dict/de.json
++++ b/src/lib/i18n/dict/de.json
+@@ -5245,5 +5245,12 @@
+   "Sense club, prova acabada o subscripció cancel·lada.": "Kein Verein, Testphase beendet oder Abo gekündigt.",
+   "Sense pla": "Kein Tarif",
+   "Subscripció de Stripe activa.": "Aktives Stripe-Abo.",
+-  "7 dies": "7 Tage"
++  "7 dies": "7 Tage",
++  "3 meses gratis si te apuntas antes del 28 de noviembre": "3 Monate kostenlos bei Anmeldung vor dem 28. November",
++  "1 mes de prueba": "1 Monat Testphase",
++  "Empieza con 1 mes de prueba": "Mit 1 Monat Testphase starten",
++  "¿Hay prueba gratis?": "Gibt es eine kostenlose Testphase?",
++  "App para entrenadores de fútbol y fútbol 7: planifica la temporada, prepara entrenamientos, controla la carga y analiza partidos con xG y duelos.": "App für Fußball- und 7er-Fußballtrainer: Saison planen, Training vorbereiten, Belastung kontrollieren und Spiele mit xG und Zweikämpfen analysieren.",
++  "App para entrenadores de baloncesto: planifica la temporada, prepara entrenamientos y sigue eFG%, +/− y faltas en el partido en directo.": "App für Basketballtrainer: Saison planen, Training vorbereiten und eFG%, +/− und Fouls live verfolgen.",
++  "App para entrenadores de balonmano: planifica la temporada, prepara entrenamientos y analiza paradas por zona, contraataques y exclusiones.": "App für Handballtrainer: Saison planen, Training vorbereiten und Paraden nach Zone, Gegenangriffe und Zeitstrafen analysieren."
+ }
+\ No newline at end of file
+diff --git a/src/lib/i18n/dict/en.json b/src/lib/i18n/dict/en.json
+index 05eaf5e..8bd3965 100644
+--- a/src/lib/i18n/dict/en.json
++++ b/src/lib/i18n/dict/en.json
+@@ -5245,5 +5245,12 @@
+   "Sense club, prova acabada o subscripció cancel·lada.": "No club, trial ended or subscription cancelled.",
+   "Sense pla": "No plan",
+   "Subscripció de Stripe activa.": "Active Stripe subscription.",
+-  "7 dies": "7 days"
++  "7 dies": "7 days",
++  "3 meses gratis si te apuntas antes del 28 de noviembre": "3 months free if you sign up before 28 November",
++  "1 mes de prueba": "1-month trial",
++  "Empieza con 1 mes de prueba": "Start with a 1-month trial",
++  "¿Hay prueba gratis?": "Is there a free trial?",
++  "App para entrenadores de fútbol y fútbol 7: planifica la temporada, prepara entrenamientos, controla la carga y analiza partidos con xG y duelos.": "App for football and 7-a-side coaches: plan the season, prepare training, monitor load and analyze matches with xG and duels.",
++  "App para entrenadores de baloncesto: planifica la temporada, prepara entrenamientos y sigue eFG%, +/− y faltas en el partido en directo.": "App for basketball coaches: plan the season, prepare training and track eFG%, +/− and fouls live.",
++  "App para entrenadores de balonmano: planifica la temporada, prepara entrenamientos y analiza paradas por zona, contraataques y exclusiones.": "App for handball coaches: plan the season, prepare training and analyze saves by area, counterattacks and suspensions."
+ }
+\ No newline at end of file
+diff --git a/src/lib/i18n/dict/es.json b/src/lib/i18n/dict/es.json
+index 3b58190..dbd7f96 100644
+--- a/src/lib/i18n/dict/es.json
++++ b/src/lib/i18n/dict/es.json
+@@ -5245,5 +5245,12 @@
+   "Sense club, prova acabada o subscripció cancel·lada.": "Sin club, prueba terminada o suscripción cancelada.",
+   "Sense pla": "Sin plan",
+   "Subscripció de Stripe activa.": "Suscripción de Stripe activa.",
+-  "7 dies": "7 días"
++  "7 dies": "7 días",
++  "3 meses gratis si te apuntas antes del 28 de noviembre": "3 meses gratis si te apuntas antes del 28 de noviembre",
++  "1 mes de prueba": "1 mes de prueba",
++  "Empieza con 1 mes de prueba": "Empieza con 1 mes de prueba",
++  "¿Hay prueba gratis?": "¿Hay prueba gratis?",
++  "App para entrenadores de fútbol y fútbol 7: planifica la temporada, prepara entrenamientos, controla la carga y analiza partidos con xG y duelos.": "App para entrenadores de fútbol y fútbol 7: planifica la temporada, prepara entrenamientos, controla la carga y analiza partidos con xG y duelos.",
++  "App para entrenadores de baloncesto: planifica la temporada, prepara entrenamientos y sigue eFG%, +/− y faltas en el partido en directo.": "App para entrenadores de baloncesto: planifica la temporada, prepara entrenamientos y sigue eFG%, +/− y faltas en el partido en directo.",
++  "App para entrenadores de balonmano: planifica la temporada, prepara entrenamientos y analiza paradas por zona, contraataques y exclusiones.": "App para entrenadores de balonmano: planifica la temporada, prepara entrenamientos y analiza paradas por zona, contraataques y exclusiones."
+ }
+\ No newline at end of file
+diff --git a/src/lib/i18n/dict/fr.json b/src/lib/i18n/dict/fr.json
+index e8b7436..14b301c 100644
+--- a/src/lib/i18n/dict/fr.json
++++ b/src/lib/i18n/dict/fr.json
+@@ -5245,5 +5245,12 @@
+   "Sense club, prova acabada o subscripció cancel·lada.": "Sans club, essai terminé ou abonnement annulé.",
+   "Sense pla": "Sans formule",
+   "Subscripció de Stripe activa.": "Abonnement Stripe actif.",
+-  "7 dies": "7 jours"
++  "7 dies": "7 jours",
++  "3 meses gratis si te apuntas antes del 28 de noviembre": "3 mois gratuits si vous vous inscrivez avant le 28 novembre",
++  "1 mes de prueba": "1 mois d'essai",
++  "Empieza con 1 mes de prueba": "Commencez avec 1 mois d'essai",
++  "¿Hay prueba gratis?": "Y a-t-il un essai gratuit ?",
++  "App para entrenadores de fútbol y fútbol 7: planifica la temporada, prepara entrenamientos, controla la carga y analiza partidos con xG y duelos.": "Application pour entraîneurs de football et football à 7 : planifiez la saison, préparez les entraînements, gérez la charge et analysez les matchs avec xG et duels.",
++  "App para entrenadores de baloncesto: planifica la temporada, prepara entrenamientos y sigue eFG%, +/− y faltas en el partido en directo.": "Application pour entraîneurs de basketball : planifiez la saison, préparez les entraînements et suivez l’eFG%, le +/− et les fautes en direct.",
++  "App para entrenadores de balonmano: planifica la temporada, prepara entrenamientos y analiza paradas por zona, contraataques y exclusiones.": "Application pour entraîneurs de handball : planifiez la saison, préparez les entraînements et analysez les arrêts par zone, contre-attaques et exclusions."
+ }
+\ No newline at end of file
+diff --git a/src/lib/i18n/dict/it.json b/src/lib/i18n/dict/it.json
+index 5a1f384..0db3136 100644
+--- a/src/lib/i18n/dict/it.json
++++ b/src/lib/i18n/dict/it.json
+@@ -5245,5 +5245,12 @@
+   "Sense club, prova acabada o subscripció cancel·lada.": "Senza club, prova terminata o abbonamento annullato.",
+   "Sense pla": "Nessun piano",
+   "Subscripció de Stripe activa.": "Abbonamento Stripe attivo.",
+-  "7 dies": "7 giorni"
++  "7 dies": "7 giorni",
++  "3 meses gratis si te apuntas antes del 28 de noviembre": "3 mesi gratis se ti iscrivi prima del 28 novembre",
++  "1 mes de prueba": "1 mese di prova",
++  "Empieza con 1 mes de prueba": "Inizia con 1 mese di prova",
++  "¿Hay prueba gratis?": "C'è una prova gratuita?",
++  "App para entrenadores de fútbol y fútbol 7: planifica la temporada, prepara entrenamientos, controla la carga y analiza partidos con xG y duelos.": "App per allenatori di calcio e calcio a 7: pianifica la stagione, prepara allenamenti, controlla il carico e analizza partite con xG e duelli.",
++  "App para entrenadores de baloncesto: planifica la temporada, prepara entrenamientos y sigue eFG%, +/− y faltas en el partido en directo.": "App per allenatori di basket: pianifica la stagione, prepara allenamenti e segui eFG%, +/− e falli in diretta.",
++  "App para entrenadores de balonmano: planifica la temporada, prepara entrenamientos y analiza paradas por zona, contraataques y exclusiones.": "App per allenatori di pallamano: pianifica la stagione, prepara allenamenti e analizza parate per zona, contropiedi ed esclusioni."
+ }
+\ No newline at end of file
+diff --git a/src/lib/i18n/dict/pt.json b/src/lib/i18n/dict/pt.json
+index 1a4b8c9..23db490 100644
+--- a/src/lib/i18n/dict/pt.json
++++ b/src/lib/i18n/dict/pt.json
+@@ -5245,5 +5245,12 @@
+   "Sense club, prova acabada o subscripció cancel·lada.": "Sem clube, teste terminado ou subscrição cancelada.",
+   "Sense pla": "Sem plano",
+   "Subscripció de Stripe activa.": "Subscrição Stripe ativa.",
+-  "7 dies": "7 dias"
++  "7 dies": "7 dias",
++  "3 meses gratis si te apuntas antes del 28 de noviembre": "3 meses grátis se se inscrever antes de 28 de novembro",
++  "1 mes de prueba": "1 mês de teste",
++  "Empieza con 1 mes de prueba": "Comece com 1 mês de teste",
++  "¿Hay prueba gratis?": "Existe teste grátis?",
++  "App para entrenadores de fútbol y fútbol 7: planifica la temporada, prepara entrenamientos, controla la carga y analiza partidos con xG y duelos.": "App para treinadores de futebol e futebol de 7: planeie a época, prepare treinos, controle a carga e analise jogos com xG e duelos.",
++  "App para entrenadores de baloncesto: planifica la temporada, prepara entrenamientos y sigue eFG%, +/− y faltas en el partido en directo.": "App para treinadores de basquetebol: planeie a época, prepare treinos e acompanhe eFG%, +/− e faltas em direto.",
++  "App para entrenadores de balonmano: planifica la temporada, prepara entrenamientos y analiza paradas por zona, contraataques y exclusiones.": "App para treinadores de andebol: planeie a época, prepare treinos e analise defesas por zona, contra-ataques e exclusões."
+ }
+\ No newline at end of file
+diff --git a/src/lib/planning-template.ts b/src/lib/planning-template.ts
+index cbb56cd..c515a56 100644
+--- a/src/lib/planning-template.ts
++++ b/src/lib/planning-template.ts
+@@ -1,5 +1,6 @@
+ import type ExcelJS from 'exceljs';
++import { publicOffer } from '@/lib/blackout-friday';
+  [
+  'Rojo > 1,5; verde entre 0,8 y 1,3. El ratio es orientativo, no un diagnóstico de lesión.',
+- '¿Quieres hacerlo sin fórmulas y para todo el club? Prueba ProTeam App: tu primer equipo, 3 meses gratis en pro-team.app',
++ '¿Quieres hacerlo sin fórmulas y para todo el club? Prueba ProTeam App en pro-team.app: ' + publicOffer(Date.now()) + '.',
+  ].forEach((s,i)=>{});
+diff --git a/src/routes/baloncesto.tsx b/src/routes/baloncesto.tsx
+index 7711a08..0b5a986 100644
+--- a/src/routes/baloncesto.tsx
++++ b/src/routes/baloncesto.tsx
+@@ -1,6 +1,5 @@
+-  description: "App para entrenadores de baloncesto: planifica la temporada, prepara entrenamientos y sigue eFG%, +/− y faltas en el partido en directo. 3 meses gratis.",
++  description: "App para entrenadores de baloncesto: planifica la temporada, prepara entrenamientos y sigue eFG%, +/− y faltas en el partido en directo.",
+   faq: [
+     { q: "¿Controla las faltas personales?", a: "Sí, en el partido en directo se registran las faltas y el jugador eliminado sale de la pista." },
+-    { q: "¿Cuánto cuesta?", a: "El primer equipo cuesta 9,90 € al mes o 95 € al año, con 3 meses gratis. Los equipos adicionales cuestan 7,50 € al mes." },
+     { q: "¿Lo puede usar mi ayudante?", a: "Sí, todo el cuerpo técnico comparte el mismo espacio del equipo." },
+   ],
+diff --git a/src/routes/balonmano.tsx b/src/routes/balonmano.tsx
+index 51860f0..0694ced 100644
+--- a/src/routes/balonmano.tsx
++++ b/src/routes/balonmano.tsx
+@@ -1,6 +1,5 @@
+-  description: "App para entrenadores de balonmano: planifica la temporada, prepara entrenamientos y analiza paradas por zona, contraataques y exclusiones. 3 meses gratis.",
++  description: "App para entrenadores de balonmano: planifica la temporada, prepara entrenamientos y analiza paradas por zona, contraataques y exclusiones.",
+   faq: [
+     { q: "¿Sirve para equipos de base y amateur?", a: "Sí. ProTeam está pensado para el cuerpo técnico de cualquier equipo de balonmano, desde base hasta sénior." },
+-    { q: "¿Cuánto cuesta?", a: "El primer equipo cuesta 9,90 € al mes o 95 € al año, y el primer equipo tiene 3 meses gratis. Los equipos adicionales cuestan 7,50 € al mes." },
+     { q: "¿Puedo compartirlo con mi staff?", a: "Sí, todo el cuerpo técnico trabaja en el mismo espacio del equipo." },
+   ],
+diff --git a/src/routes/futbol.tsx b/src/routes/futbol.tsx
+index bd93670..4828197 100644
+--- a/src/routes/futbol.tsx
++++ b/src/routes/futbol.tsx
+@@ -1,6 +1,5 @@
+-  description: "App para entrenadores de fútbol y fútbol 7: planifica la temporada, prepara entrenamientos, controla la carga y analiza partidos con xG y duelos. 3 meses gratis.",
++  description: "App para entrenadores de fútbol y fútbol 7: planifica la temporada, prepara entrenamientos, controla la carga y analiza partidos con xG y duelos.",
+   faq: [
+     { q: "¿Funciona para fútbol 7?", a: "Sí, ProTeam admite fútbol y fútbol 7." },
+-    { q: "¿Cuánto cuesta?", a: "El primer equipo cuesta 9,90 € al mes o 95 € al año, con 3 meses gratis. Los equipos adicionales cuestan 7,50 € al mes." },
+     { q: "¿Puedo gestionar varios equipos del club?", a: "Sí, puedes añadir equipos y cada uno mantiene sus datos separados." },
+   ],

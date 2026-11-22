@@ -1,0 +1,122 @@
+{
+ "retro": "ep",
+ "d": "8",
+ "dur": 21.46,
+ "voz_sid": 29,
+ "vel": 1.0,
+ "clunks": [],
+ "dark_at": 99,
+ "estatica": [
+  [
+   0,
+   0.6
+  ],
+  [
+   0.6,
+   0.6799999999999999
+  ],
+  [
+   6.531124999999999,
+   6.6111249999999995
+  ]
+ ],
+ "apagado": [
+  9.781125
+ ],
+ "zumbido": [
+  0.6,
+  9.781125
+ ],
+ "musica": {
+  "bpm": 104,
+  "vol": 0.4,
+  "desde": 10.28,
+  "duck": 0.5
+ },
+ "lineas": [
+  [
+   0.8,
+   "Tus tests físicos: un cronómetro de mil novecientos noventa y cinco y un papel que se pierde."
+  ],
+  [
+   6.73,
+   "El papel se moja. Y se pierde."
+  ],
+  [
+   10.48,
+   "En ProTim programas los tests físicos y las rutinas de preparación física del equipo."
+  ],
+  [
+   16.16,
+   "Seis meses gratis para tu primer equipo. Solo hasta el veintisiete."
+  ]
+ ],
+ "ep": {
+  "scenes": [
+   {
+    "type": "static",
+    "t0": 0
+   },
+   {
+    "type": "lcd",
+    "top": "CRONO · 1995",
+    "lines": [
+     [
+      0.2,
+      "00:30.27"
+     ],
+     [
+      1.2,
+      "LAP 3"
+     ]
+    ],
+    "sub": "Tus tests físicos,<br>en un papel.",
+    "subAt": 1.8,
+    "t0": 0.6
+   },
+   {
+    "type": "blue",
+    "lines": [
+     [
+      0,
+      "EL PAPEL"
+     ],
+     [
+      0.5,
+      "SE MOJA.",
+      190,
+      790
+     ]
+    ],
+    "t0": 6.53
+   },
+   {
+    "type": "off",
+    "t0": 9.78
+   },
+   {
+    "type": "future",
+    "sub": "Preparación física.",
+    "shots": [
+     [
+      0,
+      "mo-tests",
+      "Tests programados.",
+      0.05
+     ],
+     [
+      2.4,
+      "mo-routines",
+      "Rutinas y ejercicios.",
+      0.05
+     ]
+    ],
+    "t0": 10.28
+   },
+   {
+    "type": "cierre",
+    "t0": 15.96
+   }
+  ]
+ }
+}

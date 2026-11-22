@@ -1,0 +1,70 @@
+{
+ "retro": "r01",
+ "d": "15",
+ "dur": 23.5,
+ "voz_sid": 29,
+ "vel": 1.0,
+ "clunks": [],
+ "dark_at": 99,
+ "estatica": [
+  [
+   0,
+   1.0
+  ],
+  [
+   4.15,
+   4.25
+  ],
+  [
+   8.15,
+   8.25
+  ],
+  [
+   10.25,
+   10.35
+  ]
+ ],
+ "apagado": [
+  12.8
+ ],
+ "zumbido": [
+  1.0,
+  12.8
+ ],
+ "musica": {
+  "bpm": 112,
+  "vol": 0.45,
+  "desde": 13.3,
+  "duck": 0.5
+ },
+ "lineas": [
+  [
+   1.1,
+   "Tu equipo sigue en mil novecientos noventa y ocho."
+  ],
+  [
+   4.4,
+   "Cuarenta y siete mensajes para saber quién viene el sábado."
+  ],
+  [
+   8.4,
+   "Y un Excel que ya no abre nadie."
+  ],
+  [
+   10.65,
+   "Esto no es entrenar. Es sobrevivir."
+  ],
+  [
+   13.75,
+   "ProTim. El futuro, ya."
+  ],
+  [
+   16.1,
+   "Todo tu equipo, en una sola app."
+  ],
+  [
+   18.3,
+   "Seis meses gratis para tu primer equipo. Solo hasta el veintisiete."
+  ]
+ ]
+}

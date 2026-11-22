@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8">
+<!-- T01-3-r3 «Primera posesión» (baloncesto). Plantilla a3.html: planos fijos, la cámara solo se mueve al cambiar de zona. Todo dibujado (sin fotos ni caras). -->
+<style>
+@font-face{font-family:M;font-weight:800;src:url(/tools/fonts/manrope-latin-800-normal.woff2)}
+@font-face{font-family:M;font-weight:700;src:url(/tools/fonts/manrope-latin-700-normal.woff2)}
+@font-face{font-family:M;font-weight:500;src:url(/tools/fonts/manrope-latin-500-normal.woff2)}
+@font-face{font-family:S;font-style:italic;font-weight:400;src:url(/tools/fonts/instrument-serif-latin-400-italic.woff2)}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#fbfaf7}
+#st{position:absolute;inset:0;overflow:hidden;background:#fbfaf7}
+#world{position:absolute;left:0;top:0;transform-origin:0 0;will-change:transform}
+.o{position:absolute;left:0;top:0;transform-origin:50% 50%}
+.paper{background:#fff;box-shadow:0 18px 50px rgba(20,18,12,.10)}
+.board{background:#fdfdfc;border:10px solid #d9dcdf;border-radius:10px;box-shadow:0 18px 50px rgba(20,18,12,.10)}
+.num{position:absolute;font-family:M;font-weight:800;letter-spacing:-.05em;color:#121212;white-space:nowrap;line-height:1}
+.hand{position:absolute;font-family:S;font-style:italic;white-space:nowrap;line-height:1}
+.lab{position:absolute;font-family:M;font-weight:800;letter-spacing:.14em;color:#121212;white-space:nowrap}
+.sc{width:300px;height:200px;background:#121212;border-radius:22px;display:flex;align-items:center;justify-content:center;font-family:M;font-weight:800;font-size:150px;letter-spacing:-.04em;color:#fbfaf7}
+.dot{position:absolute;width:120px;height:120px;border-radius:50%;border:5px solid #121212;font-family:M;font-weight:800;font-size:60px;display:flex;align-items:center;justify-content:center;color:#121212;background:#fff}
+#cap{position:absolute;left:90px;right:90px;top:1330px;text-align:center;font-family:M;font-weight:800;font-size:58px;line-height:1.12;letter-spacing:-.03em;color:#121212;padding:18px 26px;border-radius:22px;background:rgba(251,250,247,.94)}
+#cap em{font-family:S;font-style:italic;font-weight:400;font-size:1.14em;letter-spacing:0}
+#cap .r{color:#d23a2a}
+#hook{position:absolute;left:0;right:0;top:130px;text-align:center;font-family:M;font-weight:800;font-size:104px;letter-spacing:-.05em;color:#121212}
+#gr{position:absolute;inset:0;pointer-events:none;mix-blend-mode:multiply;opacity:0}
+#ink{position:absolute;inset:0;background:#0e0e10;opacity:0;pointer-events:none}
+#wash{position:absolute;inset:0;background:#fbfaf7;opacity:0;pointer-events:none}
+</style></head><body><div id="st">
+<div id="world">
+  <!-- 1 · media pista (R) -->
+  <svg class="o" id="C" width="1000" height="940" viewBox="0 0 1000 940" style="overflow:visible">
+    <rect x="0" y="0" width="1000" height="940" fill="#fff"/>
+    <g fill="none" stroke="#121212" stroke-width="4" stroke-linecap="round" opacity=".8">
+      <rect x="0" y="0" width="1000" height="940"/><path d="M320 0 A180 180 0 0 0 680 0"/>
+      <rect x="336" y="553" width="328" height="387"/><path d="M336 553 A164 164 0 0 1 664 553"/>
+      <path d="M60 940 L60 760 A450 450 0 0 1 940 760 L940 940"/>
+      <path d="M440 880 L560 880"/><circle cx="500" cy="835" r="15"/>
+    </g>
+    <circle id="rc" cx="930" cy="850" r="125" fill="none" stroke="#d23a2a" stroke-width="7" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/>
+    <g id="trapC" opacity="0" font-family="M" font-weight="800" font-size="74" text-anchor="middle">
+      <text x="950" y="912" fill="#121212">O</text><text x="845" y="828" fill="#d23a2a">X</text><text x="955" y="770" fill="#d23a2a">X</text></g>
+    <g id="ball"><circle r="34" fill="#efebe2" stroke="#121212" stroke-width="4"/><path d="M-34 0 L34 0 M0 -34 L0 34 M-24 -24 C-10 -8 -10 8 -24 24 M24 -24 C10 -8 10 8 24 24" stroke="#121212" stroke-width="3" fill="none"/></g>
+  </svg>
+  <div class="o sc" id="SC">24</div>
+  <!-- la pizarra del descanso, pequeña, junto a la pista -->
+  <div class="o board" id="MP" style="width:760px;height:720px">
+    <svg width="740" height="700" viewBox="0 0 1000 940" style="position:absolute;left:0;top:0">
+      <g fill="none" stroke="#7d848c" stroke-width="5" opacity=".8"><rect x="40" y="40" width="920" height="860"/><path d="M335 40 A165 165 0 0 0 665 40"/>
+        <rect x="350" y="545" width="300" height="355"/><path d="M95 900 L95 735 A415 415 0 0 1 905 735 L905 900"/></g>
+      <g font-family="M" font-weight="800" font-size="86" text-anchor="middle"><text x="905" y="885" fill="#121212">O</text><text x="800" y="805" fill="#d23a2a">X</text><text x="912" y="745" fill="#d23a2a">X</text></g>
+    </svg></div>
+  <!-- 2 · descanso (D): reloj que rebobina y hoja del reglamento -->
+  <div class="o" id="RW" style="width:560px;height:300px">
+    <svg style="position:absolute;left:-60px;top:-70px;overflow:visible" width="680" height="440" viewBox="0 0 680 440">
+      <path id="rwa" d="M600 120 C 560 20 120 20 80 120" fill="none" stroke="#7a5a35" stroke-width="7" stroke-linecap="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/>
+      <path id="rwh" d="M80 120 L60 80 M80 120 L120 100" fill="none" stroke="#7a5a35" stroke-width="7" stroke-linecap="round" opacity="0"/></svg>
+    <div style="position:absolute;inset:40px 0 0 0;background:#2a221a;border-radius:26px;display:flex;align-items:center;justify-content:center">
+      <div id="rwd" style="font-family:M;font-weight:800;font-size:170px;letter-spacing:-.03em;color:#f6ecd9">00:00</div></div>
+  </div>
+  <div class="o" id="FB" style="width:600px;height:360px;background:#f6ecd9;box-shadow:0 18px 50px rgba(60,40,10,.12)">
+    <div class="lab" style="left:46px;top:44px;font-size:24px;color:#5a4630">REGLAMENTO FIBA · ART. 8.4</div>
+    <div class="hand" style="left:46px;top:120px;font-size:150px;color:#5a4630">15′</div>
+    <div class="hand" style="left:250px;top:175px;font-size:72px;color:#7a5a35">de descanso</div>
+  </div>
+  <!-- 3 · lo que traes al descanso (T) -->
+  <div class="o" id="CI" style="width:520px;height:320px"></div>
+  <div class="o paper" id="ST" style="width:600px;height:420px">
+    <div class="lab" style="left:40px;top:36px;font-size:22px">ESTADÍSTICA · 1.ª PARTE</div>
+    <div class="lab" style="right:34px;top:30px;font-size:20px;color:#2f6bff;border:3px solid #2f6bff;padding:6px 10px;border-radius:8px;letter-spacing:.18em">EJEMPLO</div>
+    <svg style="position:absolute;left:0;top:0" width="600" height="420" viewBox="0 0 600 420" id="STg"></svg>
+  </div>
+  <svg class="o" id="HA" width="300" height="440" viewBox="0 0 300 440" style="overflow:visible">
+    <g id="HAg" style="transform-origin:150px 430px">
+      <path d="M95 300 L95 190 Q95 170 112 170 Q128 170 128 190 L128 120 Q128 98 145 98 Q162 98 162 120 L162 92 Q162 70 179 70 Q196 70 196 92 L196 112 Q196 94 212 94 Q228 94 228 114 L228 140 Q228 124 243 124 Q258 124 258 144 L258 280 Q258 300 240 320 L215 345 L215 430 L120 430 L120 345 Q95 330 95 300 Z" fill="#fff" stroke="#121212" stroke-width="6" stroke-linejoin="round"/>
+      <path d="M95 236 Q70 210 52 222 Q40 234 60 262 L95 300" fill="#fff" stroke="#121212" stroke-width="6" stroke-linejoin="round"/>
+    </g></svg>
+  <!-- 4 · la pizarra llena (P) -->
+  <div class="o board" id="PZ" style="width:900px;height:860px">
+    <svg width="880" height="840" viewBox="0 0 900 860" style="position:absolute;left:0;top:0;overflow:visible" id="PZs">
+      <g fill="none" stroke="#9aa1a8" stroke-width="4" transform="translate(40 45) scale(.82)"><rect x="0" y="0" width="1000" height="940"/><path d="M320 0 A180 180 0 0 0 680 0"/>
+        <rect x="336" y="553" width="328" height="387"/><path d="M60 940 L60 760 A450 450 0 0 1 940 760 L940 940"/><circle cx="500" cy="835" r="15"/></g>
+      <g id="pzO" font-family="M" font-weight="800" font-size="52" text-anchor="middle" fill="#121212"><text x="450" y="200">1</text><text x="190" y="330">2</text><text x="710" y="330">3</text><text x="300" y="560">4</text><text x="600" y="560">5</text></g>
+      <g id="pzB" fill="none" stroke="#121212" stroke-width="7" stroke-linecap="round"></g>
+      <g id="pzP" fill="none" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"></g>
+      <g id="pzN" font-family="S" font-style="italic" font-size="70"></g>
+      <g id="pzX" fill="none" stroke-width="5" stroke-linecap="round"></g>
+      <g id="pzT" opacity="0" font-family="M" font-weight="800" font-size="40" text-anchor="middle"><text x="842" y="808" fill="#121212">O</text><text x="790" y="770" fill="#d23a2a">X</text><text x="848" y="742" fill="#d23a2a">X</text></g>
+    </svg></div>
+  <div class="o" id="WC" style="width:280px;height:160px;background:#121212;border-radius:22px;display:flex;align-items:center;justify-content:center">
+    <div id="wcd" style="font-family:M;font-weight:800;font-size:96px;letter-spacing:-.03em;color:#fbfaf7">01:00</div></div>
+  <svg class="o" id="HB" width="300" height="440" viewBox="0 0 300 440" style="overflow:visible">
+    <g id="HBg" style="transform-origin:150px 430px">
+      <path d="M95 300 L95 190 Q95 170 112 170 Q128 170 128 190 L128 120 Q128 98 145 98 Q162 98 162 120 L162 92 Q162 70 179 70 Q196 70 196 92 L196 112 Q196 94 212 94 Q228 94 228 114 L228 140 Q228 124 243 124 Q258 124 258 144 L258 280 Q258 300 240 320 L215 345 L215 430 L120 430 L120 345 Q95 330 95 300 Z" fill="#fff" stroke="#121212" stroke-width="6" stroke-linejoin="round"/>
+      <path d="M95 236 Q70 210 52 222 Q40 234 60 262 L95 300" fill="#fff" stroke="#121212" stroke-width="6" stroke-linejoin="round"/>
+    </g></svg>
+  <div class="o" id="BN" style="width:980px;height:46px;background:#c9c3b6;border-radius:8px;box-shadow:0 10px 24px rgba(20,18,12,.10)"></div>
+  <svg class="o" id="MK" width="360" height="60" viewBox="0 0 360 60"><rect x="40" y="12" width="260" height="36" rx="10" fill="#121212"/><rect x="300" y="16" width="44" height="28" rx="6" fill="#2f6bff"/><path d="M40 20 L10 30 L40 40Z" fill="#121212"/><rect x="200" y="12" width="20" height="36" fill="#2f6bff"/></svg>
+  <!-- 5 · la solución (S) -->
+  <div class="o" id="CI2" style="width:520px;height:320px"></div>
+  <div class="o paper" id="LB" style="width:400px;height:500px;background:#fffdf8">
+    <svg width="400" height="500" style="position:absolute;left:0;top:0"><g stroke="#cfd8e8" stroke-width="2">
+      <path d="M30 120 H370 M30 190 H370 M30 260 H370 M30 330 H370 M30 400 H370"/></g><path d="M70 30 V470" stroke="#efb3ac" stroke-width="2"/></svg>
+    <div class="hand" style="left:90px;top:62px;font-size:56px;color:#8a8f98">jugada 4</div>
+    <div class="hand" style="left:90px;top:132px;font-size:56px;color:#8a8f98">cambio en la 2</div>
+    <div class="hand" style="left:90px;top:202px;font-size:56px;color:#8a8f98">zona 2-3</div>
+    <div class="hand" id="ltr" style="left:110px;top:272px;font-size:76px;color:#121212">trampa</div>
+    <svg style="position:absolute;left:0;top:0;overflow:visible" width="400" height="500"><path id="loop" d="M300 300 C 330 250 250 245 160 262 C 70 280 70 350 170 356 C 260 362 340 340 310 285" fill="none" stroke="#2f6bff" stroke-width="7" stroke-linecap="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/></svg>
+  </div>
+  <div class="o sc" id="SC2" style="width:240px;height:160px;font-size:120px">24</div>
+  <div class="o board" id="SP" style="width:600px;height:620px">
+    <svg width="580" height="600" viewBox="0 0 580 600" style="position:absolute;left:0;top:0;overflow:visible">
+      <g fill="none" stroke="#9aa1a8" stroke-width="4"><path d="M20 20 H560 V580 M560 580 H20"/><path d="M500 580 V430 A330 330 0 0 0 200 120"/><rect x="60" y="400" width="200" height="180"/></g>
+      <g font-family="M" font-weight="800" font-size="56" text-anchor="middle"><text x="520" y="560" fill="#121212">O</text><text x="440" y="500" fill="#b9bdc2">X</text><text x="525" y="440" fill="#b9bdc2">X</text></g>
+      <g id="help"><circle r="40" fill="#2f6bff"/><text y="20" font-family="M" font-weight="800" font-size="54" fill="#fff" text-anchor="middle">4</text></g>
+      <path id="hpath" d="M200 260 C 300 300 360 330 380 380" fill="none" stroke="#2f6bff" stroke-width="5" stroke-dasharray="2.5 2.5" pathLength="100" opacity="0"/>
+      <path id="pass" d="M505 525 C 470 470 430 420 395 395" fill="none" stroke="#2f6bff" stroke-width="9" stroke-linecap="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/>
+      <path id="passh" d="M395 395 L425 400 M395 395 L402 425" fill="none" stroke="#2f6bff" stroke-width="9" stroke-linecap="round" opacity="0"/>
+      <text id="ok" x="60" y="110" font-family="S" font-style="italic" font-size="66" fill="#2f6bff" opacity="0">1.ª posesión</text>
+    </svg></div>
+  <!-- marca -->
+  <div class="o" id="B" style="width:900px;height:500px;text-align:center">
+    <div class="num" style="position:static;font-size:170px;margin-top:120px">Pro<span style="color:#2f6bff">Team</span></div>
+    <div style="margin-top:30px;font-family:M;font-weight:500;font-size:38px;color:#77736b">la app del entrenador · enlace en la bio</div>
+  </div>
+</div>
+<div id="gr"></div>
+<div id="hook">Tercer cuarto</div>
+<div id="cap"></div>
+<div id="ink"></div>
+<div id="wash"></div>
+</div>
+<script src="/tools/reel_v4/T01-3-r3/times.js"></script>
+<script>
+const $=id=>document.getElementById(id), W=window.WORDS, NS='http://www.w3.org/2000/svg';
+const at=(w,n=1)=>{let c=0;for(const x of W)if(x[0]===w&&++c===n)return x[1];throw 'no '+w};
+const cl=(x,a=0,b=1)=>Math.min(b,Math.max(a,x)), r=(t,a,b)=>cl((t-a)/(b-a));
+const io=x=>x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2, eo=x=>1-Math.pow(1-x,3), lerp=(a,b,k)=>a+(b-a)*k;
+const T={perdida:at('perdida'),contra:at('contra'),trampa1:at('trampa'),rebobina:at('rebobina'),quince:at('quince'),segun:at('segun'),fiba:at('fiba'),parece:at('parece'),pero:at('pero'),
+ cinco:at('cinco'),hoja:at('hoja'),y1:at('y'),base:at('base'),encierran:at('encierran'),empiezas:at('empiezas'),jugadas2:at('jugadas',2),uno:at('uno'),dos:at('dos'),tres:at('tres'),
+ cuando:at('cuando'),trampa2:at('trampa',2),arbitro:at('arbitro'),miran:at('miran'),reloj:at('reloj'),y3:at('y',3),respuesta1:at('respuesta'),sales:at('sales'),llena:at('llena'),
+ y4:at('y',4),esquina:at('esquina'),en2:at('en',2),inventa:at('inventa'),elige:at('elige'),la_resp:at('respuesta',2)-.15,quien:at('quien'),ayuda:at('ayuda'),balon:at('balon'),
+ primera2:at('primera',2),decidida:at('decidida'),apunt:at('apuntalo'),porque:at('porque'),primera3:at('primera',3),juega:at('juega'),END:window.VEND+.25};
+// zonas del mundo
+const R=[0,0], MPp=[1250,-80], D=[2700,0], TT=[2700,1500], P=[0,3300], S=[2700,4000], BP=[4100,4000];
+const CUT1=T.empiezas-.2, CUT2=T.en2-.15;
+// cámara: planos FIJOS; solo se mueve al cambiar de zona (0,6 s, entrada y salida suaves)
+const SH=[ // [inicio del movimiento, cx, cy, zoom, duración]
+ [0,0,-600,1.8],
+ [T.perdida-.35,300,250,1.35],
+ [T.contra-.3,600,-40,.47,.8],
+ [at('dibujado')-.3,MPp[0],MPp[1]+60,1.05],
+ [T.rebobina-.3,D[0],D[1]+40,.95,.7],
+ [T.parece-.3,D[0],D[1]-250,1.7],
+ [T.cinco-.45,TT[0],TT[1]-400,1.5],
+ [T.hoja-.4,TT[0],TT[1]+150,1.45],
+ [T.base-.4,TT[0],TT[1]+700,1.6],
+ [CUT1,P[0],P[1],.95],
+ [T.uno-.3,P[0],P[1]-40,1.08],
+ [T.cuando-.3,P[0]+450,P[1]+260,1.35],
+ [T.y3-.35,P[0]-700,P[1]+100,1.5],
+ [T.sales-.35,P[0],P[1]+400,1.3],
+ [T.y4-.3,330,300,1.55],
+ [CUT2,S[0],S[1]-1200,1.4],
+ [T.elige-.35,S[0]-260,S[1]-60,1.6],
+ [T.la_resp-.3,S[0]+200,S[1]+480,1.25],
+ [T.primera2-.3,S[0]-20,S[1]+150,.7,.7],
+ [T.apunt-.35,BP[0],BP[1],1.0],
+ [T.porque+.05,0,-600,1.8,.9]];
+const CUTS=new Set([CUT1,CUT2]);
+function cam(t){let i=0;while(i+1<SH.length&&SH[i+1][0]<=t)i++;const s=SH[i];
+ if(i===0||CUTS.has(s[0]))return [s[1],s[2],s[3],0];
+ const p=SH[i-1],Dd=s[4]||.62,k=r(t,s[0],s[0]+Dd),e=io(k);
+ const lz=lerp(Math.log(p[3]),Math.log(s[3]),e)-.12*Math.sin(Math.PI*k)*(Math.hypot(s[1]-p[1],s[2]-p[2])>600?1:0);
+ return [lerp(p[1],s[1],e),lerp(p[2],s[2],e),Math.exp(lz),k>0&&k<1?Math.sin(Math.PI*k):0]}
+const sz=el=>[el.offsetWidth||+el.getAttribute('width'),el.offsetHeight||+el.getAttribute('height')];
+function place(el,x,y,rot=0,sc=1){const [w,h]=sz(el);el.style.transform=`translate(${x-w/2}px,${y-h/2}px) rotate(${rot}deg) scale(${sc})`}
+const draw=(el,a,b,f=io)=>{const k=f(r(window._t,a,b));el.setAttribute('stroke-dashoffset',100-100*k);el.style.visibility=k>0?'visible':'hidden'};
+const mk=(tag,at,par)=>{const e=document.createElementNS(NS,tag);for(const k in at)e.setAttribute(k,at[k]);par.appendChild(e);return e};
+// cinco círculos (dos copias: el descanso y la solución)
+for(const id of ['CI','CI2']){const c=$(id);[[60,20],[200,20],[340,20],[130,180],[270,180]].forEach(([x,y],i)=>{const d=document.createElement('div');d.className='dot';d.style.left=x+'px';d.style.top=y+'px';d.textContent=i+1;if(id==='CI2'){d.style.borderColor='#b9bdc2';d.style.color='#b9bdc2'}c.appendChild(d)})}
+const DOTS=[...$('CI').children], DOTS2=[...$('CI2').children];
+// hoja de estadística (ejemplo)
+{const g=$('STg');const cols=['','PTS','REB','AS','PÉR'];cols.forEach((c,i)=>{const t=mk('text',{x:150+i*95,y:118,'font-family':'M','font-weight':800,'font-size':22,fill:'#77736b','text-anchor':'middle'},g);t.textContent=c});
+ const rows=[['4',12,3,2,1],['7',8,5,1,3],['9',6,2,4,2],['11',4,7,0,1],['15',2,4,1,2]];
+ rows.forEach((rw,j)=>{mk('path',{d:`M40 ${140+j*52} H560`,stroke:'#e4e1da','stroke-width':2},g);rw.forEach((v,i)=>{const t=mk('text',{x:i?150+i*95:70,y:178+j*52,'font-family':'M','font-weight':i?700:800,'font-size':28,fill:'#121212','text-anchor':'middle'},g);t.textContent=v})})}
+// pizarra: bloqueos, tres jugadas, garabatos de saturación
+const BL=[],PL=[],XL=[];
+{const g=$('pzB');[[420,240,480,240],[230,360,260,400],[640,360,680,330],[330,520,370,500],[560,520,600,540]].forEach(([a,b,c,d])=>BL.push(mk('path',{d:`M${a} ${b} L${c} ${d}`,pathLength:100,'stroke-dasharray':100,'stroke-dashoffset':100},g)));
+ const P3=[['M450 220 C 420 320 330 380 300 520 L250 700','#121212'],['M190 350 C 300 420 520 420 640 520 L720 700','#5c636b'],['M710 350 C 640 300 470 300 380 420 C 330 500 420 640 470 720','#2b3440']];
+ const nn=$('pzN');P3.forEach(([d,c],i)=>{PL.push(mk('path',{d,stroke:c,pathLength:100,'stroke-dasharray':100,'stroke-dashoffset':100},$('pzP')));const t=mk('text',{x:[230,760,520][i],y:[720,720,770][i],fill:c,opacity:0},nn);t.textContent=i+1;PL.push(t)});
+ let s=11;const rnd=()=>(s=(s*16807)%2147483647)/2147483647;
+ for(let k=0;k<16;k++){const x=80+rnd()*700,y=80+rnd()*640;const d=`M${x|0} ${y|0} C ${(x+80-rnd()*160)|0} ${(y-90+rnd()*180)|0} ${(x+60+rnd()*120)|0} ${(y-60+rnd()*120)|0} ${(x+90+rnd()*120)|0} ${(y+40-rnd()*80)|0}`;
+  XL.push(mk('path',{d,stroke:['#121212','#5c636b','#2b3440'][k%3],opacity:.75,pathLength:100,'stroke-dasharray':100,'stroke-dashoffset':100},$('pzX')))}}
+const CAPS=[[.35,T.perdida-.15,'Primera posesión.'],[T.perdida,T.contra-.15,'<span class="r">Pérdida.</span>'],[T.contra,T.rebobina-.2,'Contra <em>la misma trampa.</em>'],
+ [T.rebobina,T.parece-.15,'Descanso: <em>quince minutos.</em>'],[T.parece,T.pero-.1,'<em>Parece mucho.</em>'],[T.cinco-.1,T.hoja-.25,'Cinco jugadas nuevas.'],
+ [T.hoja-.1,T.base-.2,'La hoja de estadística.'],[T.base-.1,T.empiezas-.55,'«¿Y si me encierran?»'],[T.empiezas,T.uno-.15,'Empiezas por las jugadas.'],
+ [T.uno-.1,T.cuando-.15,'La uno, la dos, <em>la tres.</em>'],[T.cuando,T.arbitro-.1,'Por fin, <em>la trampa.</em>'],[T.arbitro,T.miran-.1,'El árbitro ya llama.'],
+ [T.miran,T.y3-.15,'El reloj, <em>no la pizarra.</em>'],[T.y3,T.sales-.15,'Y la pregunta, <em>sin respuesta.</em>'],[T.sales,T.y4-.15,'Sales con la pizarra llena.'],
+ [T.y4,CUT2-.35,'<em>Y la esquina, igual.</em>'],[T.en2+.05,T.elige-.15,'<em>No se inventa.</em>'],[T.elige-.1,T.la_resp-.15,'<em>Se elige.</em>'],
+ [T.la_resp,T.quien-.1,'La respuesta a la trampa:'],[T.quien,T.primera2-.15,'Quién ayuda. <em>Adónde va.</em>'],[T.primera2,T.apunt-.2,'Primera posesión, <em>decidida.</em>'],
+ [T.apunt,T.porque-.15,'Apúntalo en la app.'],[T.porque+.05,T.juega-.15,'Porque el tercer cuarto'],[T.juega-.1,T.END-.4,'se juega <em>en el vestuario.</em>']];
+window.frame=function(t){window._t=t;
+  const [cx,cy,z,mv]=cam(t);
+  const wd=$('world');wd.style.transform=`translate(540px,760px) scale(${z}) translate(${-cx}px,${-cy}px)`;
+  wd.style.filter=mv>.35?`blur(${(2.6*(mv-.35)/.65).toFixed(2)}px)`:'none';
+  const late=t>=CUT2; // la pista vuelve a su estado inicial para el final circular
+  // 1 · pista
+  place($('C'),R[0],R[1]);place($('SC'),R[0],R[1]-720);
+  $('SC').textContent=late?24:String(24-Math.floor(cl((t-.6)/1,0,3)));
+  const bk=late?0:eo(r(t,T.perdida-.1,T.perdida+.6));
+  $('ball').setAttribute('transform',`translate(${lerp(500,1065,bk)} ${lerp(0,800,bk)+(-60*Math.sin(Math.PI*bk))}) rotate(${300*bk})`);
+  $('rc').setAttribute('stroke-dashoffset',late?100:100-100*io(r(t,T.perdida+.15,T.perdida+.7)));
+  $('trapC').setAttribute('opacity',late?0:r(t,T.contra-.1,T.contra+.35));
+  $('hook').style.opacity=t<20?1-r(t,T.perdida-.35,T.perdida-.05):r(t,T.primera3+.4,T.primera3+.9);
+  place($('MP'),MPp[0],MPp[1],1.5);$('MP').style.opacity=.35+.65*r(t,T.contra-.2,T.contra+.4);
+  // 2 · descanso
+  place($('RW'),D[0],D[1]-250);place($('FB'),D[0]+10,D[1]+300,-2);
+  const rk=io(r(t,T.rebobina+.1,T.quince+.35));$('rwd').textContent=(String(Math.floor(15*rk)).padStart(2,'0'))+':00';
+  draw($('rwa'),T.rebobina-.1,T.rebobina+.6);$('rwh').setAttribute('opacity',r(t,T.rebobina+.45,T.rebobina+.6));
+  $('FB').style.opacity=r(t,T.segun-.2,T.segun+.3);
+  // 3 · lo que traes
+  place($('CI'),TT[0],TT[1]-400);DOTS.forEach((d,i)=>{const k=eo(r(t,T.cinco-.15+i*.16,T.cinco+.2+i*.16));d.style.opacity=k;d.style.transform=`scale(${.8+.2*k})`});
+  place($('ST'),TT[0],TT[1]+150,1.5);$('ST').style.opacity=r(t,T.hoja-.35,T.hoja);
+  const hu=eo(r(t,T.base-.15,T.base+.45));place($('HA'),TT[0],TT[1]+700+90*(1-hu));$('HA').style.opacity=hu;
+  // 4 · pizarra
+  place($('PZ'),P[0],P[1]);BL.forEach((p,i)=>draw(p,T.empiezas+.05+i*.13,T.empiezas+.35+i*.13));
+  const pt=[T.uno,T.dos,T.tres];for(let i=0;i<3;i++){draw(PL[2*i],pt[i]-.15,pt[i]+.5);PL[2*i+1].setAttribute('opacity',r(t,pt[i],pt[i]+.3))}
+  $('pzT').setAttribute('opacity',r(t,T.trampa2-.15,T.trampa2+.25));
+  XL.forEach((p,i)=>draw(p,T.sales+i*.09,T.sales+.3+i*.09));
+  const foc=r(t,T.reloj-.25,T.reloj+.25)*(1-r(t,T.y3-.35,T.y3-.1));$('PZs').style.filter=foc>0?`blur(${(4*foc).toFixed(2)}px)`:'none';
+  place($('WC'),P[0]+640,P[1]+80);$('WC').style.opacity=r(t,T.cuando-.3,T.cuando+.2);const sec=60-Math.floor(cl(t-T.cuando,0,9));$('wcd').textContent=sec===60?'01:00':'00:'+String(sec).padStart(2,'0');
+  $('WC').style.filter=foc<1?`blur(${(3*(1-foc)*r(t,T.cuando-.3,T.cuando)).toFixed(2)}px)`:'none';
+  const hd=io(r(t,T.respuesta1-.4,T.respuesta1+.6));place($('HB'),P[0]-700,P[1]+100+120*hd);$('HBg').style.transform=`rotate(${-62*hd}deg)`;$('HB').style.opacity=1-.55*hd;
+  place($('BN'),P[0],P[1]+560);place($('MK'),P[0]+80,P[1]+515,-4);
+  // 5 · solución
+  place($('CI2'),S[0],S[1]-1200);const fd=1-r(t,T.en2+.4,T.inventa+.5);DOTS2.forEach((d,i)=>{d.style.opacity=fd*(1-.0*i);d.style.transform=`translateY(${-30*(1-fd)}px)`});
+  place($('LB'),S[0]-260,S[1]-60,-2);draw($('loop'),T.elige-.05,T.elige+.6);
+  place($('SC2'),S[0]+230,S[1]-120,2);const sb=r(t,T.primera2-.1,T.primera2+.3);$('SC2').style.background=sb?`rgb(${lerp(18,47,sb)},${lerp(18,107,sb)},${lerp(18,255,sb)})`:'#121212';
+  place($('SP'),S[0]+200,S[1]+480,1);
+  const hp=io(r(t,T.ayuda-.3,T.ayuda+.5));$('help').setAttribute('transform',`translate(${lerp(200,385,hp)} ${lerp(260,385,hp)})`);$('hpath').setAttribute('opacity',.8*r(t,T.ayuda-.3,T.ayuda));
+  draw($('pass'),T.balon-.2,T.balon+.4);$('passh').setAttribute('opacity',r(t,T.balon+.3,T.balon+.45));$('ok').setAttribute('opacity',r(t,T.decidida-.1,T.decidida+.3));
+  place($('B'),BP[0],BP[1]);
+  // color por escena: descanso cálido, problema frío
+  const g=$('gr');const warm=(t<CUT1)?r(t,T.rebobina-.3,T.rebobina+.3)*(1-r(t,T.pero+.4,T.pero+.41)*0):0;
+  if(t<CUT1&&warm>0){g.style.background='#f1dcb4';g.style.opacity=.5*warm}else if(t>=CUT1&&t<CUT2){g.style.background='#d9e3f0';g.style.opacity=.55}else g.style.opacity=0;
+  // rótulo
+  let html='',a=0;for(const [s,e,h] of CAPS)if(t>=s-.2&&t<e+.25){html=h;a=Math.min(r(t,s-.2,s+.15),1-r(t,e-.05,e+.25))}
+  const cp=$('cap');if(cp.dataset.h!==html){cp.innerHTML=html;cp.dataset.h=html}
+  cp.style.opacity=a;cp.style.transform=`translateY(${(1-a)*12}px)`;
+  // giros: fundido a negro (6→7) y a blanco (12→13)
+  $('ink').style.opacity=r(t,CUT1-.35,CUT1-.03)*(1-r(t,CUT1+.03,CUT1+.4));
+  $('wash').style.opacity=r(t,CUT2-.35,CUT2-.03)*(1-r(t,CUT2+.03,CUT2+.4));
+};
+Promise.all([...document.images].map(i=>i.decode().catch(()=>{}))).then(()=>document.fonts.ready).then(()=>{frame(0);window.ready=true});
+</script></body></html>

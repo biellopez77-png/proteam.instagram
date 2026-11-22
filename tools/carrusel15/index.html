@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8">
+<link rel="stylesheet" href="base.css">
+<style>
+.tag{background:rgba(13,15,20,.88);padding:10px 16px;border-radius:10px;opacity:1!important}
+.cal{display:grid;grid-template-columns:repeat(11,1fr);gap:8px;margin-top:34px}
+.cal div{border-radius:12px;padding:12px 0 10px;text-align:center;background:#1b2029;color:#6d7380}
+.paper .cal div{background:#e2e0d8;color:#8a8d95}
+.cal b{display:block;font-weight:800;font-size:34px;letter-spacing:-.02em;line-height:1}
+.cal small{display:block;font-weight:700;font-size:16px;letter-spacing:.08em;margin-top:6px;text-transform:uppercase}
+.cal div.p{background:#262c38;color:#a9adb7}
+.paper .cal div.p{background:#d3d0c6;color:#5d616b}
+.cal div.o{background:var(--blue);color:#fff}
+.cal div.z{outline:3px solid var(--blue2);outline-offset:-3px}
+.blk{padding:40px 0 36px;border-top:2px solid #262b36}
+.paper .blk{border-top-color:#d9d7cf}
+.blk .d{font-weight:800;font-size:26px;letter-spacing:.14em;text-transform:uppercase;color:var(--blue2)}
+.paper .blk .d{color:var(--blue)}
+.blk .x{font-weight:800;font-size:66px;line-height:1.06;margin-top:14px;letter-spacing:-.025em}
+.blk .y{font-weight:500;font-size:34px;line-height:1.35;margin-top:14px;color:#c9ccd4}
+.paper .blk .y{color:#3a3e48}
+.map{margin-top:30px}
+.mr{display:grid;grid-template-columns:300px 1fr;padding:23px 0;border-top:2px solid #d9d7cf;align-items:baseline}
+.mr .d{font-weight:800;font-size:24px;letter-spacing:.08em;text-transform:uppercase;color:var(--blue)}
+.mr .x{font-weight:700;font-size:36px;line-height:1.2}
+.mr.o .x{color:var(--blue);font-weight:800}
+.rng{font-weight:800;font-size:250px;letter-spacing:-.05em;line-height:.85;margin-top:70px;color:#1f2531}
+.rng i{font-style:normal;color:var(--blue2)}
+</style></head><body>
+
+<!-- 1 PORTADA -->
+<div class="s dark">
+  <div class="photo" style="left:0;right:0;top:0;height:720px;background-image:url(../../banco/fotos/PROTEAM_EQUIPO_TIEMPO_MUERTO_ACB_FOTO_001.jpg);background-position:50% 30%"></div>
+  <div style="position:absolute;left:0;right:0;top:0;height:722px;background:linear-gradient(180deg,rgba(13,15,20,.7) 0%,rgba(13,15,20,0) 18%,rgba(13,15,20,0) 55%,#0d0f14 100%);z-index:1"></div>
+  <div class="in">
+    <div class="top" style="margin:-10px -16px 0"><span class="k tag">Día 1 de 10</span><span class="tag">01 / 08</span></div>
+    <div style="margin-top:auto">
+      <h1 class="big" style="font-size:250px;margin-left:-8px">10 días.</h1>
+      <h1 style="font-size:104px;margin-top:18px"><span class="sr" style="font-size:128px">Este es el mapa.</span></h1>
+      <p class="b" style="margin-top:26px;font-size:36px;color:#e4e6ea">Del miércoles 18 al sábado 28: lo que te vamos a contar cada día.</p>
+      <div style="margin-top:28px"><span style="font-weight:800;font-size:24px;letter-spacing:.14em">DESLIZA →</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- 2 SI LLEGAS TARDE -->
+<div class="s paper">
+  <div class="in">
+    <div class="top"><span class="k">Si llegas tarde, empieza aquí</span><span>02 / 08</span></div>
+    <div class="cal"><div class="o"><b>18</b><small>hoy</small></div><div><b>19</b><small>jue</small></div><div><b>20</b><small>vie</small></div><div><b>21</b><small>sáb</small></div><div><b>22</b><small>dom</small></div><div><b>23</b><small>lun</small></div><div><b>24</b><small>mar</small></div><div><b>25</b><small>mié</small></div><div><b>26</b><small>jue</small></div><div><b>27</b><small>vie</small></div><div class="z"><b>28</b><small>sáb</small></div></div>
+    <div style="margin-top:auto;margin-bottom:auto">
+      <div style="font-weight:800;font-size:40px;letter-spacing:.14em;color:#3a3e48">SÁBADO</div>
+      <div class="big" style="font-size:300px;color:var(--blue);margin-top:10px;margin-left:-12px">28.11</div>
+      <h2 style="font-size:92px;margin-top:36px">Abre <span class="sr" style="font-size:114px">ProTeam.</span></h2>
+      <p class="b" style="margin-top:28px;font-size:38px">La app para entrenadores de fútbol, baloncesto y balonmano.</p>
+      <p class="b" style="margin-top:22px;font-size:38px;color:var(--ink);font-weight:700">Hasta ese día, cada día una cosa. En este orden.</p>
+    </div>
+  </div>
+</div>
+
+<!-- 3 JUE 19 · VIE 20 -->
+<div class="s dark">
+  <div class="in">
+    <div class="top"><span class="k">Esta semana</span><span>03 / 08</span></div>
+    <div class="cal"><div class="p"><b>18</b><small>mié</small></div><div class="o"><b>19</b><small>jue</small></div><div class="o"><b>20</b><small>vie</small></div><div><b>21</b><small>sáb</small></div><div><b>22</b><small>dom</small></div><div><b>23</b><small>lun</small></div><div><b>24</b><small>mar</small></div><div><b>25</b><small>mié</small></div><div><b>26</b><small>jue</small></div><div><b>27</b><small>vie</small></div><div class="z"><b>28</b><small>sáb</small></div></div>
+    <div class="rng"><i>19</i>·20</div>
+    <div style="margin-top:auto">
+      <div class="blk"><div class="d">Jueves 19</div><div class="x">De dónde sale <span class="sr" style="font-size:80px">ProTeam.</span></div><div class="y">Para quién es y por qué existe. Hecho en el banquillo, no en una oficina.</div></div>
+      <div class="blk" style="border-bottom:2px solid #262b36"><div class="d">Viernes 20</div><div class="x">Por qué ahora.</div><div class="y">Y por qué el 28 y no otro día.</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- 4 SÁB 21 · MAR 24 -->
+<div class="s dark">
+  <div class="in">
+    <div class="top"><span class="k">El fin de semana</span><span>04 / 08</span></div>
+    <div class="cal"><div class="p"><b>18</b><small>mié</small></div><div class="p"><b>19</b><small>jue</small></div><div class="p"><b>20</b><small>vie</small></div><div class="o"><b>21</b><small>sáb</small></div><div class="o"><b>22</b><small>dom</small></div><div class="o"><b>23</b><small>lun</small></div><div class="o"><b>24</b><small>mar</small></div><div><b>25</b><small>mié</small></div><div><b>26</b><small>jue</small></div><div><b>27</b><small>vie</small></div><div class="z"><b>28</b><small>sáb</small></div></div>
+    <div class="rng"><i>21</i>→24</div>
+    <div style="margin-top:auto">
+      <div class="blk"><div class="d">Sábado 21 · domingo 22</div><div class="x">Tus <span class="sr" style="font-size:80px">sábados.</span></div><div class="y">Lo que pasa en un banquillo de base de fútbol, baloncesto y balonmano, y casi nadie apunta.</div></div>
+      <div class="blk" style="border-bottom:2px solid #262b36"><div class="d">Lunes 23 · martes 24 por la mañana</div><div class="x">Cómo sería tu temporada si…</div><div class="y">Con partidos y datos reales.</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- 5 MAR 24 TARDE · MIÉ 25 -->
+<div class="s dark">
+  <div class="in">
+    <div class="top"><span class="k">Por fin, por dentro</span><span>05 / 08</span></div>
+    <div class="cal"><div class="p"><b>18</b><small>mié</small></div><div class="p"><b>19</b><small>jue</small></div><div class="p"><b>20</b><small>vie</small></div><div class="p"><b>21</b><small>sáb</small></div><div class="p"><b>22</b><small>dom</small></div><div class="p"><b>23</b><small>lun</small></div><div class="o"><b>24</b><small>mar</small></div><div class="o"><b>25</b><small>mié</small></div><div><b>26</b><small>jue</small></div><div><b>27</b><small>vie</small></div><div class="z"><b>28</b><small>sáb</small></div></div>
+    <div class="rng"><i>24</i>·25</div>
+    <div style="margin-top:auto">
+      <div class="blk"><div class="d">Martes 24 por la tarde · miércoles 25</div><div class="x">ProTeam <span class="sr" style="font-size:80px">por dentro.</span></div><div class="y">Qué es, qué hace y cómo funciona. Sin dar nada por sabido.</div></div>
+      <div class="blk" style="border-bottom:2px solid #262b36"><div class="d">Miércoles 25</div><div class="x">Tú decides.</div><div class="y">Votaciones de verdad sobre qué metemos primero.</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- 6 JUE 26 · SÁB 28 -->
+<div class="s dark">
+  <div class="in">
+    <div class="top"><span class="k">El final</span><span>06 / 08</span></div>
+    <div class="cal"><div class="p"><b>18</b><small>mié</small></div><div class="p"><b>19</b><small>jue</small></div><div class="p"><b>20</b><small>vie</small></div><div class="p"><b>21</b><small>sáb</small></div><div class="p"><b>22</b><small>dom</small></div><div class="p"><b>23</b><small>lun</small></div><div class="p"><b>24</b><small>mar</small></div><div class="p"><b>25</b><small>mié</small></div><div class="o"><b>26</b><small>jue</small></div><div class="o"><b>27</b><small>vie</small></div><div class="o"><b>28</b><small>sáb</small></div></div>
+    <div class="rng" style="font-size:170px;margin-top:40px;margin-bottom:36px"><i>26</i>→28</div>
+    <div style="margin-top:auto">
+      <div class="blk"><div class="d">Jueves 26</div><div class="x">Sin adornos.</div><div class="y">Capturas reales y lo que nos habéis respondido estos días.</div></div>
+      <div class="blk"><div class="d">Viernes 27</div><div class="x">Último día de la lista.</div><div class="y">Hasta las 23:59.</div></div>
+      <div class="blk" style="border-bottom:2px solid #262b36"><div class="d">Sábado 28</div><div class="x" style="font-size:84px">Abre <span class="sr" style="font-size:102px">ProTeam.</span></div></div>
+    </div>
+  </div>
+</div>
+
+<!-- 7 EL MAPA ENTERO -->
+<div class="s paper">
+  <div class="in">
+    <div class="top"><span class="k">El mapa entero</span><span>07 / 08</span></div>
+    <h2 style="font-size:96px;margin-top:30px"><span class="sr" style="font-size:118px">Guárdalo.</span></h2>
+    <div class="map">
+      <div class="mr"><div class="d">Mié 18</div><div class="x">Lo que llega el 28</div></div>
+      <div class="mr"><div class="d">Jue 19</div><div class="x">De dónde sale ProTeam</div></div>
+      <div class="mr"><div class="d">Vie 20</div><div class="x">Por qué ahora</div></div>
+      <div class="mr"><div class="d">Sáb 21 · Dom 22</div><div class="x">Tus sábados</div></div>
+      <div class="mr"><div class="d">Lun 23 · Mar 24</div><div class="x">Cómo sería tu temporada si…</div></div>
+      <div class="mr"><div class="d">Mar 24 · Mié 25</div><div class="x">ProTeam por dentro</div></div>
+      <div class="mr"><div class="d">Mié 25</div><div class="x">Tú decides qué metemos primero</div></div>
+      <div class="mr"><div class="d">Jue 26</div><div class="x">Capturas reales y respuestas</div></div>
+      <div class="mr"><div class="d">Vie 27</div><div class="x">Último día de la lista (23:59)</div></div>
+      <div class="mr o" style="border-bottom:2px solid #d9d7cf"><div class="d">Sáb 28</div><div class="x">Abre ProTeam</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- 8 CTA -->
+<div class="s dark">
+  <div class="in">
+    <div class="top"><span class="k">Para tu cuerpo técnico</span><span>08 / 08</span></div>
+    <h2 style="font-size:100px;margin-top:40px">¿Qué día no te quieres <span class="sr" style="font-size:122px">perder?</span></h2>
+    <p class="b" style="margin-top:34px;font-size:40px">Comenta la fecha y mándaselo a tu segundo.</p>
+    <div style="margin-top:50px;border-top:2px solid #262b36;padding-top:34px"><div style="font-weight:800;font-size:26px;letter-spacing:.14em;color:#4f86ff">MAÑANA · JUEVES 19</div><div style="font-weight:800;font-size:52px;margin-top:12px;letter-spacing:-.02em">De dónde sale ProTeam.</div></div>
+    <div class="cta" style="margin-top:auto">
+      <div style="font-weight:800;font-size:52px;line-height:1.12">Apúntate a la lista de espera.</div>
+      <div class="sr" style="font-size:64px;margin-top:10px">Enlace en la bio.</div>
+      <div style="font-weight:700;font-size:28px;letter-spacing:.12em;margin-top:22px;color:#c9ccd4">HASTA EL 27 NOV · 3 MESES GRATIS</div>
+    </div>
+  </div>
+</div>
+</body></html>

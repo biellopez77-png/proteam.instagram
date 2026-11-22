@@ -1,0 +1,196 @@
+{
+ "w": 1080,
+ "h": 1920,
+ "d": "0",
+ "dur": 21.92,
+ "on": true,
+ "vel": 1.0,
+ "voice": {
+  "sid": 16,
+  "lang": "en-us"
+ },
+ "cut": 9.62,
+ "trans": 1.9,
+ "pose": {
+  "ry0": -0.24,
+  "y": -0.01,
+  "far": 0.5
+ },
+ "dev": [
+  [
+   0,
+   "tvred",
+   0.7
+  ],
+  [
+   3.14,
+   "tvred",
+   0.7
+  ],
+  [
+   5.54,
+   "tvred",
+   0.7
+  ]
+ ],
+ "layers": [
+  {
+   "t0": 0.3,
+   "t1": 3.44,
+   "type": "osd",
+   "ch": "CH 95",
+   "mode": "REC ●",
+   "blink": true
+  },
+  {
+   "t0": 0.5,
+   "t1": 3.44,
+   "type": "text",
+   "valign": "flex-start",
+   "align": "left",
+   "pad": "300px 90px",
+   "gap": 16,
+   "lines": [
+    {
+     "text": "CH 00",
+     "font": "VT",
+     "size": 72,
+     "color": "#3dffa8",
+     "glow": "0 0 10px rgba(61,255,168,.7)",
+     "cps": 30,
+     "at": 0.1
+    },
+    {
+     "text": " ",
+     "size": 30,
+     "at": 0.42
+    },
+    {
+     "text": "FINAL",
+     "size": 150,
+     "cps": 16,
+     "at": 0.42
+    },
+    {
+     "text": "TRANSMISSION.",
+     "size": 110,
+     "cps": 16,
+     "at": 0.88
+    }
+   ]
+  },
+  {
+   "t0": 3.04,
+   "t1": 5.84,
+   "type": "osd",
+   "ch": "CH 95",
+   "mode": "CH ▲▼",
+   "blink": false
+  },
+  {
+   "t0": 3.24,
+   "t1": 5.84,
+   "type": "js",
+   "code": "DOODLE(W*.5-150,H*.4,1.5,{mood:'panic',arms:'phone',t}) + TX(80,320,72,'CHANNEL '+String(Math.floor(u*6)%99).padStart(2,'0'),{color:'#fff'})",
+   "fi": 0.3
+  },
+  {
+   "t0": 5.44,
+   "t1": 9.82,
+   "type": "osd",
+   "ch": "CH 95",
+   "mode": "REC ●",
+   "blink": true
+  },
+  {
+   "t0": 5.64,
+   "t1": 9.82,
+   "type": "text",
+   "valign": "flex-start",
+   "align": "left",
+   "pad": "300px 90px",
+   "gap": 16,
+   "lines": [
+    {
+     "text": "YOUR BLACK",
+     "size": 128,
+     "cps": 16,
+     "at": 0.1
+    },
+    {
+     "text": "FRIDAY",
+     "size": 150,
+     "cps": 16,
+     "at": 0.88
+    },
+    {
+     "text": "UPGRADE IS",
+     "size": 128,
+     "cps": 16,
+     "at": 1.4
+    },
+    {
+     "text": "ALMOST OVER.",
+     "size": 110,
+     "cps": 16,
+     "at": 2.17
+    }
+   ]
+  }
+ ],
+ "app": [
+  [
+   9.62,
+   "mo-home",
+   0,
+   0.1
+  ]
+ ],
+ "words": [
+  [
+   11.02,
+   17.12,
+   "<div class=\"a\" style=\"left:60px;right:60px;top:130px;text-align:center;font-family:IT;font-weight:900;font-size:96px;letter-spacing:-.04em;color:#fff;line-height:1.02\">6 months free.</div>"
+  ],
+  [
+   17.22,
+   21.92,
+   "<div class=\"a\" style=\"left:60px;right:60px;top:130px;text-align:center;font-family:IT;font-weight:900;font-size:96px;letter-spacing:-.04em;color:#fff;line-height:1.02\">Don't miss your<br>chance to upgrade.</div><div class=\"a\" style=\"left:40px;right:40px;bottom:120px;text-align:center;font-family:VT;font-size:48px;letter-spacing:.05em;color:#3dffa8;line-height:1.15\">BLACK FRIDAY · 6 MONTHS FREE<br>FIRST TEAM · NO CARD · UNTIL 27 NOV 23:59</div>"
+  ]
+ ],
+ "audio": {
+  "cut": 9.62,
+  "old": [
+   "Honky-Tonk Villain.mp3",
+   40
+  ],
+  "new": [
+   "Thugs.mp3",
+   138.5
+  ],
+  "old_vol": 0.55,
+  "new_vol": 0.75
+ },
+ "lineas": [
+  [
+   0.8,
+   "Final transmission.",
+   16
+  ],
+  [
+   5.94,
+   "Your Black Friday upgrade is almost over.",
+   16
+  ],
+  [
+   11.12,
+   "Six months free for your first team. New accounts, no card, until the twenty-seventh at midnight.",
+   16
+  ],
+  [
+   17.32,
+   "Don't miss your chance to upgrade.",
+   16
+  ]
+ ]
+}

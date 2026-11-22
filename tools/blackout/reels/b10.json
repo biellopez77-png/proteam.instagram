@@ -1,0 +1,395 @@
+{
+ "w": 1080,
+ "h": 1920,
+ "d": "10",
+ "dur": 27.17,
+ "on": true,
+ "vel": 1.0,
+ "cut": 12.67,
+ "trans": 1.9,
+ "pose": {
+  "ry0": -0.24,
+  "y": -0.014,
+  "far": 0.47
+ },
+ "dev": [
+  [
+   0,
+   "tv",
+   0.8
+  ],
+  [
+   1.98,
+   "tvblack",
+   0.8
+  ],
+  [
+   3.6,
+   "tv",
+   0.8
+  ],
+  [
+   4.92,
+   "nokia",
+   0.8
+  ],
+  [
+   6.28,
+   "tvblack",
+   0.8
+  ],
+  [
+   7.59,
+   "tv",
+   0.8
+  ],
+  [
+   9.42,
+   "tvred",
+   0.8
+  ],
+  [
+   10.99,
+   "tv",
+   0.8
+  ]
+ ],
+ "layers": [
+  {
+   "t0": 0.3,
+   "t1": 2.28,
+   "type": "osd",
+   "ch": "CH 10",
+   "mode": "PLAY ▶",
+   "blink": false
+  },
+  {
+   "t0": 0.5,
+   "t1": 2.28,
+   "type": "text",
+   "valign": "flex-start",
+   "align": "left",
+   "pad": "300px 90px",
+   "gap": 16,
+   "lines": [
+    {
+     "text": "CH 01",
+     "font": "VT",
+     "size": 72,
+     "color": "#3dffa8",
+     "glow": "0 0 10px rgba(61,255,168,.7)",
+     "cps": 30,
+     "at": 0.1
+    },
+    {
+     "text": "LIBRETA.",
+     "size": 150,
+     "cps": 16,
+     "at": 0.45
+    }
+   ]
+  },
+  {
+   "t0": 1.88,
+   "t1": 3.9,
+   "type": "osd",
+   "ch": "CH 10",
+   "mode": "PLAY ▶",
+   "blink": false
+  },
+  {
+   "t0": 2.08,
+   "t1": 3.9,
+   "type": "text",
+   "valign": "flex-start",
+   "align": "left",
+   "pad": "300px 90px",
+   "gap": 16,
+   "lines": [
+    {
+     "text": "CH 02",
+     "font": "VT",
+     "size": 62,
+     "color": "#52ff8f",
+     "glow": "0 0 10px rgba(80,255,140,.6)",
+     "cps": 34,
+     "at": 0.1
+    },
+    {
+     "text": "EXCEL 97.",
+     "size": 150,
+     "cps": 16,
+     "at": 0.43
+    }
+   ]
+  },
+  {
+   "t0": 3.5,
+   "t1": 5.22,
+   "type": "osd",
+   "ch": "CH 10",
+   "mode": "PLAY ▶",
+   "blink": false
+  },
+  {
+   "t0": 3.7,
+   "t1": 5.22,
+   "type": "text",
+   "valign": "flex-start",
+   "align": "left",
+   "pad": "300px 90px",
+   "gap": 16,
+   "lines": [
+    {
+     "text": "CH 03",
+     "font": "VT",
+     "size": 72,
+     "color": "#3dffa8",
+     "glow": "0 0 10px rgba(61,255,168,.7)",
+     "cps": 30,
+     "at": 0.1
+    },
+    {
+     "text": "VHS.",
+     "size": 150,
+     "cps": 16,
+     "at": 0.45
+    }
+   ]
+  },
+  {
+   "t0": 4.82,
+   "t1": 6.58,
+   "type": "nokia",
+   "hora": "23:59"
+  },
+  {
+   "t0": 5.02,
+   "t1": 6.58,
+   "type": "text",
+   "valign": "center",
+   "align": "center",
+   "pad": "300px 90px",
+   "gap": 16,
+   "lines": [
+    {
+     "text": "CH 04",
+     "font": "Px",
+     "size": 92,
+     "cps": 20,
+     "at": 0.1
+    },
+    {
+     "text": "SMS.",
+     "font": "Px",
+     "size": 92,
+     "cps": 20,
+     "at": 0.53
+    }
+   ]
+  },
+  {
+   "t0": 6.18,
+   "t1": 7.89,
+   "type": "osd",
+   "ch": "CH 10",
+   "mode": "PLAY ▶",
+   "blink": false
+  },
+  {
+   "t0": 6.38,
+   "t1": 7.89,
+   "type": "text",
+   "valign": "flex-start",
+   "align": "left",
+   "pad": "300px 90px",
+   "gap": 16,
+   "lines": [
+    {
+     "text": "CH 05",
+     "font": "VT",
+     "size": 62,
+     "color": "#52ff8f",
+     "glow": "0 0 10px rgba(80,255,140,.6)",
+     "cps": 34,
+     "at": 0.1
+    },
+    {
+     "text": "FAX.",
+     "size": 150,
+     "cps": 16,
+     "at": 0.43
+    }
+   ]
+  },
+  {
+   "t0": 7.49,
+   "t1": 9.72,
+   "type": "osd",
+   "ch": "CH 10",
+   "mode": "PLAY ▶",
+   "blink": false
+  },
+  {
+   "t0": 7.69,
+   "t1": 9.72,
+   "type": "text",
+   "valign": "flex-start",
+   "align": "left",
+   "pad": "300px 90px",
+   "gap": 16,
+   "lines": [
+    {
+     "text": "CH 06",
+     "font": "VT",
+     "size": 72,
+     "color": "#3dffa8",
+     "glow": "0 0 10px rgba(61,255,168,.7)",
+     "cps": 30,
+     "at": 0.1
+    },
+    {
+     "text": "CALCULADORA.",
+     "size": 112,
+     "cps": 16,
+     "at": 0.45
+    }
+   ]
+  },
+  {
+   "t0": 9.32,
+   "t1": 11.29,
+   "type": "osd",
+   "ch": "CH 10",
+   "mode": "PLAY ▶",
+   "blink": false
+  },
+  {
+   "t0": 9.52,
+   "t1": 11.29,
+   "type": "text",
+   "valign": "flex-start",
+   "align": "left",
+   "pad": "300px 90px",
+   "gap": 16,
+   "lines": [
+    {
+     "text": "CH 07",
+     "font": "VT",
+     "size": 72,
+     "color": "#3dffa8",
+     "glow": "0 0 10px rgba(61,255,168,.7)",
+     "cps": 30,
+     "at": 0.1
+    },
+    {
+     "text": "MEMORIA.",
+     "size": 150,
+     "cps": 16,
+     "at": 0.45
+    }
+   ]
+  },
+  {
+   "t0": 10.89,
+   "t1": 12.87,
+   "type": "osd",
+   "ch": "CH 10",
+   "mode": "⟳ UPDATE",
+   "blink": true
+  },
+  {
+   "t0": 11.09,
+   "t1": 12.87,
+   "type": "text",
+   "valign": "flex-start",
+   "align": "left",
+   "pad": "300px 90px",
+   "gap": 16,
+   "lines": [
+    {
+     "text": "CH 10",
+     "font": "VT",
+     "size": 72,
+     "color": "#3dffa8",
+     "glow": "0 0 10px rgba(61,255,168,.7)",
+     "cps": 30,
+     "at": 0.1
+    },
+    {
+     "text": "PROTEAM.",
+     "size": 150,
+     "cps": 16,
+     "at": 0.45
+    }
+   ]
+  }
+ ],
+ "app": [
+  [
+   12.67,
+   "mo-plan",
+   0.02,
+   0.1
+  ],
+  [
+   15.67,
+   "reg-1",
+   0.42,
+   0.5
+  ],
+  [
+   17.97,
+   "res-0",
+   0.1,
+   0.3
+  ],
+  [
+   20.27,
+   "fF",
+   0,
+   0.12
+  ]
+ ],
+ "words": [
+  [
+   14.07,
+   15.67,
+   "<div class=\"a\" style=\"left:0;right:0;top:150px;text-align:center;font-family:IT;font-weight:900;font-size:112px;letter-spacing:-.04em;color:#fff;line-height:1\">Planifica.</div>"
+  ],
+  [
+   15.77,
+   17.97,
+   "<div class=\"a\" style=\"left:0;right:0;top:150px;text-align:center;font-family:IT;font-weight:900;font-size:112px;letter-spacing:-.04em;color:#fff;line-height:1\">Registra.</div>"
+  ],
+  [
+   18.07,
+   20.27,
+   "<div class=\"a\" style=\"left:0;right:0;top:150px;text-align:center;font-family:IT;font-weight:900;font-size:112px;letter-spacing:-.04em;color:#fff;line-height:1\">Analiza.</div>"
+  ],
+  [
+   20.37,
+   22.57,
+   "<div class=\"a\" style=\"left:0;right:0;top:150px;text-align:center;font-family:IT;font-weight:900;font-size:112px;letter-spacing:-.04em;color:#fff;line-height:1\">Controla.</div>"
+  ],
+  [
+   22.67,
+   27.17,
+   "<div class=\"a\" style=\"left:0;right:0;top:150px;text-align:center;font-family:IT;font-weight:900;font-size:112px;letter-spacing:-.04em;color:#fff;line-height:1\">Quedan 10 días.</div><div class=\"a\" style=\"left:0;right:0;top:285px;text-align:center;font-family:VT;font-size:54px;letter-spacing:.06em;color:#3dffa8\">6 MESES GRATIS · PRO-TEAM.APP</div>"
+  ]
+ ],
+ "audio": {
+  "cut": 12.67,
+  "old": [
+   "Clowns.mp3",
+   100
+  ],
+  "new": [
+   "Thugs.mp3",
+   138.5
+  ],
+  "old_vol": 0.5,
+  "new_vol": 0.75
+ },
+ "lineas": []
+}

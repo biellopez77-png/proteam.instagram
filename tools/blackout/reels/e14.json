@@ -1,0 +1,115 @@
+{
+ "retro": "ep",
+ "d": "14",
+ "dur": 21.25,
+ "voz_sid": 29,
+ "vel": 1.0,
+ "clunks": [],
+ "dark_at": 99,
+ "estatica": [
+  [
+   0,
+   0.6
+  ],
+  [
+   0.6,
+   0.6799999999999999
+  ],
+  [
+   4.783458333333333,
+   4.863458333333333
+  ]
+ ],
+ "apagado": [
+  9.141791666666666
+ ],
+ "zumbido": [
+  0.6,
+  9.141791666666666
+ ],
+ "musica": {
+  "bpm": 104,
+  "vol": 0.4,
+  "desde": 9.64,
+  "duck": 0.5
+ },
+ "lineas": [
+  [
+   0.8,
+   "¿Sigues planificando la temporada en un Excel de dos mil tres?"
+  ],
+  [
+   4.98,
+   "Un Excel no es un plan. Es un archivo que nadie abre."
+  ],
+  [
+   9.84,
+   "En ProTim planificas el microciclo y ves el volumen y los días de trabajo de cada semana."
+  ],
+  [
+   15.95,
+   "Seis meses gratis para tu primer equipo. Solo hasta el veintisiete."
+  ]
+ ],
+ "ep": {
+  "scenes": [
+   {
+    "type": "static",
+    "t0": 0
+   },
+   {
+    "type": "win95",
+    "dialog": "Error 404:<br>planificación<br>no encontrada.",
+    "dialogAt": 1.2,
+    "t0": 0.6
+   },
+   {
+    "type": "blue",
+    "lines": [
+     [
+      0,
+      "UN EXCEL"
+     ],
+     [
+      0.5,
+      "NO ES"
+     ],
+     [
+      0.9,
+      "UN PLAN.",
+      190,
+      900
+     ]
+    ],
+    "t0": 4.78
+   },
+   {
+    "type": "off",
+    "t0": 9.14
+   },
+   {
+    "type": "future",
+    "sub": "La semana, planificada.",
+    "shots": [
+     [
+      0,
+      "mo-plan",
+      "Planifica el microciclo.",
+      0.05
+     ],
+     [
+      2.4,
+      "mo-week",
+      "Volumen y días de trabajo.",
+      0.1
+     ]
+    ],
+    "t0": 9.64
+   },
+   {
+    "type": "cierre",
+    "t0": 15.75
+   }
+  ]
+ }
+}

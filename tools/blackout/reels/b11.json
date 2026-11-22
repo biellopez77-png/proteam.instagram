@@ -1,0 +1,252 @@
+{
+ "w": 1080,
+ "h": 1920,
+ "d": "11",
+ "dur": 24.7,
+ "on": true,
+ "vel": 1.0,
+ "cut": 9.7,
+ "trans": 1.9,
+ "pose": {
+  "ry0": -0.24,
+  "y": -0.014,
+  "far": 0.47
+ },
+ "dev": [
+  [
+   0,
+   "nokia",
+   0.8
+  ],
+  [
+   3.25,
+   "nokia",
+   0.8
+  ],
+  [
+   6.48,
+   "tv",
+   0.8
+  ]
+ ],
+ "layers": [
+  {
+   "t0": 0.3,
+   "t1": 3.55,
+   "type": "nokia",
+   "hora": "23:59"
+  },
+  {
+   "t0": 0.5,
+   "t1": 3.55,
+   "type": "text",
+   "valign": "center",
+   "align": "center",
+   "pad": "300px 90px",
+   "gap": 16,
+   "lines": [
+    {
+     "text": "LLAMADA",
+     "font": "Px",
+     "size": 92,
+     "cps": 20,
+     "at": 0.1
+    },
+    {
+     "text": "ENTRANTE",
+     "font": "Px",
+     "size": 92,
+     "cps": 20,
+     "at": 0.63
+    },
+    {
+     "text": " ",
+     "size": 34,
+     "at": 1.21
+    },
+    {
+     "text": "☎ TU FUTURO",
+     "font": "Px",
+     "size": 62,
+     "cps": 24,
+     "at": 1.21
+    }
+   ]
+  },
+  {
+   "t0": 3.15,
+   "t1": 6.78,
+   "type": "nokia",
+   "hora": "23:59"
+  },
+  {
+   "t0": 3.35,
+   "t1": 6.78,
+   "type": "text",
+   "valign": "center",
+   "align": "center",
+   "pad": "300px 90px",
+   "gap": 16,
+   "lines": [
+    {
+     "text": "TU FUTURO",
+     "font": "Px",
+     "size": 62,
+     "cps": 24,
+     "at": 0.1
+    },
+    {
+     "text": "TE ESTÁ LLAMANDO",
+     "font": "Px",
+     "size": 62,
+     "cps": 24,
+     "at": 0.65
+    },
+    {
+     "text": " ",
+     "size": 34,
+     "at": 1.5
+    },
+    {
+     "text": "¿DESCOLGAR?",
+     "font": "Px",
+     "size": 92,
+     "cps": 20,
+     "at": 1.5
+    }
+   ]
+  },
+  {
+   "t0": 6.38,
+   "t1": 9.9,
+   "type": "osd",
+   "ch": "CH 11",
+   "mode": "CONECTANDO",
+   "blink": false
+  },
+  {
+   "t0": 6.58,
+   "t1": 9.9,
+   "type": "text",
+   "valign": "flex-start",
+   "align": "left",
+   "pad": "300px 90px",
+   "gap": 16,
+   "lines": [
+    {
+     "text": "LLAMADA ACEPTADA",
+     "font": "VT",
+     "size": 72,
+     "color": "#3dffa8",
+     "glow": "0 0 10px rgba(61,255,168,.7)",
+     "cps": 30,
+     "at": 0.1
+    },
+    {
+     "text": " ",
+     "size": 34,
+     "at": 0.81
+    },
+    {
+     "text": "YOUR",
+     "size": 150,
+     "cps": 16,
+     "at": 0.81
+    },
+    {
+     "text": "FUTURE",
+     "size": 150,
+     "cps": 16,
+     "at": 1.24
+    },
+    {
+     "text": "IS CALLING.",
+     "size": 128,
+     "cps": 16,
+     "at": 1.8
+    }
+   ]
+  }
+ ],
+ "app": [
+  [
+   9.7,
+   "mo-home",
+   0,
+   0.1
+  ],
+  [
+   14.16,
+   "mo-plan",
+   0.02,
+   0.12
+  ],
+  [
+   16.47,
+   "res-0",
+   0.1,
+   0.4
+  ]
+ ],
+ "words": [
+  [
+   11.1,
+   14.16,
+   "<div class=\"a\" style=\"left:0;right:0;top:150px;text-align:center;font-family:IT;font-weight:900;font-size:112px;letter-spacing:-.04em;color:#fff;line-height:1\">Tu día.</div>"
+  ],
+  [
+   14.26,
+   16.47,
+   "<div class=\"a\" style=\"left:0;right:0;top:150px;text-align:center;font-family:IT;font-weight:900;font-size:112px;letter-spacing:-.04em;color:#fff;line-height:1\">Tu semana.</div>"
+  ],
+  [
+   16.57,
+   19.1,
+   "<div class=\"a\" style=\"left:0;right:0;top:150px;text-align:center;font-family:IT;font-weight:900;font-size:112px;letter-spacing:-.04em;color:#fff;line-height:1\">Tus partidos.</div>"
+  ],
+  [
+   19.2,
+   24.6,
+   "<div class=\"a\" style=\"left:0;right:0;top:150px;text-align:center;font-family:IT;font-weight:900;font-size:112px;letter-spacing:-.04em;color:#fff;line-height:1\">6 meses gratis.</div><div class=\"a\" style=\"left:0;right:0;top:285px;text-align:center;font-family:VT;font-size:54px;letter-spacing:.06em;color:#3dffa8\">SOLO HASTA EL 27 · PRO-TEAM.APP</div>"
+  ]
+ ],
+ "audio": {
+  "cut": 9.7,
+  "old": [
+   "Honky-Tonk Villain.mp3",
+   35
+  ],
+  "new": [
+   "Syntheticity.mp3",
+   52
+  ],
+  "old_vol": 0.5,
+  "new_vol": 0.75
+ },
+ "lineas": [
+  [
+   0.8,
+   "Llamada entrante."
+  ],
+  [
+   3.65,
+   "Es tu futuro. ¿Lo coges?"
+  ],
+  [
+   11.2,
+   "ProTim. Abres la app y ves tu día."
+  ],
+  [
+   14.36,
+   "Tu semana, planificada."
+  ],
+  [
+   16.67,
+   "Y tus partidos, analizados."
+  ],
+  [
+   19.3,
+   "Seis meses gratis para tu primer equipo. Solo hasta el veintisiete."
+  ]
+ ]
+}

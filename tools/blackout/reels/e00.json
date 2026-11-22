@@ -1,0 +1,139 @@
+{
+ "retro": "ep",
+ "d": "0",
+ "dur": 15.82,
+ "voz_sid": 29,
+ "vel": 1.0,
+ "clunks": [],
+ "dark_at": 99,
+ "estatica": [
+  [
+   0,
+   0.6
+  ],
+  [
+   0.6,
+   0.6799999999999999
+  ],
+  [
+   3.4583333333333335,
+   3.5383333333333336
+  ]
+ ],
+ "apagado": [
+  6.816666666666666
+ ],
+ "zumbido": [
+  0.6,
+  6.816666666666666
+ ],
+ "musica": {
+  "bpm": 104,
+  "vol": 0.4,
+  "desde": 7.32,
+  "duck": 0.5
+ },
+ "lineas": [
+  [
+   0.8,
+   "Hoy, a medianoche, se corta la señal."
+  ],
+  [
+   3.66,
+   "Mañana, los seis meses vuelven a ser tres."
+  ],
+  [
+   7.52,
+   "Si aún no has creado tu equipo, es ahora."
+  ],
+  [
+   10.52,
+   "Seis meses gratis. Hasta las doce de esta noche."
+  ]
+ ],
+ "ep": {
+  "scenes": [
+   {
+    "type": "static",
+    "t0": 0
+   },
+   {
+    "type": "blue",
+    "mode": "REC ●",
+    "lines": [
+     [
+      0,
+      "HOY",
+      220,
+      520
+     ],
+     [
+      0.4,
+      "SE CORTA",
+      150,
+      740
+     ],
+     [
+      0.8,
+      "LA SEÑAL.",
+      150,
+      880
+     ]
+    ],
+    "t0": 0.6
+   },
+   {
+    "type": "vhs",
+    "mode": "● ÚLTIMAS HORAS",
+    "lines": [
+     [
+      0.2,
+      "MAÑANA",
+      130,
+      640
+     ],
+     [
+      0.6,
+      "6 MESES",
+      150,
+      790
+     ],
+     [
+      1.0,
+      "SERÁN 3.",
+      150,
+      940
+     ]
+    ],
+    "t0": 3.46
+   },
+   {
+    "type": "off",
+    "t0": 6.82
+   },
+   {
+    "type": "future",
+    "sub": "Es ahora.",
+    "shots": [
+     [
+      0,
+      "mo-week",
+      "Tu temporada, en orden.",
+      0.1
+     ],
+     [
+      1.6,
+      "reg-1",
+      null,
+      0.45
+     ]
+    ],
+    "t0": 7.32
+   },
+   {
+    "type": "cierre",
+    "t0": 10.32
+   }
+  ]
+ }
+}

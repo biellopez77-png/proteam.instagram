@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><link rel="stylesheet" href="/tools/kit3d/base.css">
+<script type="importmap">{"imports":{"three":"/tools/wurtz/node_modules/three/build/three.module.js","three/addons/":"/tools/wurtz/node_modules/three/examples/jsm/"}}</script>
+</head><body>
+<canvas id="gl" width="1080" height="1920"></canvas>
+<canvas id="grain" class="ov" width="540" height="960"></canvas>
+<div id="vig" class="ov"></div>
+<div class="ov">
+  <div class="dom m" id="d0" style="top:1180px;font-size:58px">Acabas de llegar del entreno.</div>
+  <div class="dom m" id="d1" style="top:1260px;font-size:58px">Y todavía te queda…</div>
+  <div class="dom" id="d2" style="top:300px;font-size:116px">Nadie te paga esto.</div>
+  <div class="dom b" id="d3" style="top:1450px;font-size:190px">Pero lo haces.</div>
+  <div class="dom m" id="d4" style="top:300px;font-size:72px">El entrenador de base</div>
+  <div class="dom b" id="d5" style="top:390px;font-size:170px">también trabaja.</div>
+  <div class="dom" id="d6" style="top:820px;font-size:104px">Y merece algo mejor</div>
+  <div class="dom" id="d7" style="top:950px;font-size:104px">que una libreta.</div>
+</div>
+<div id="endbg" class="ov"></div>
+<div class="ov">
+  <div class="dom" id="e1" style="top:500px;font-size:110px">Lista de espera</div>
+  <div class="dom b" id="e2" style="top:620px;font-size:236px">abierta.</div>
+  <img id="endmark" src="/kit/mark.png" style="top:960px" alt="">
+  <div class="dom m" id="e3" style="top:1140px;font-size:46px">6 meses gratis para los que entren antes del 27.</div>
+  <div class="dom cta" id="e5" style="top:1220px"><span>Crea tu cuenta en pro-team.app</span></div>
+  <div class="dom p" id="e6" style="top:1360px">27.11 · 23:59</div>
+</div>
+<div id="flash" class="ov"></div>
+<script type="module">
+import { THREE, setup, label, plane, textTex, photo, F, FS, FP, seg, win, ease, dust, domIn, grain, flash, glowTex, rnd } from '/tools/kit3d/engine.js';
+const { renderer, scene, cam } = await setup({ fog: .009 });
+dust(scene, 1500, 40, -260, 140);
+// 1 · reloj
+const clock = label(scene, [{ t: '23:47', font: F(420), y: 250, glow: 'rgba(120,170,255,.6)' }], 1500, 500, 11, [0, 4, 0]);
+const colon = label(scene, [{ t: '23 47', font: F(420), y: 250, glow: 'rgba(120,170,255,.6)' }], 1500, 500, 11, [0, 4, .01]);
+// 2 · la torre de tareas
+const tasks = ['Planificar la semana', 'Notas del partido', '¿Quién faltó hoy?', 'Minutos de cada uno', 'Preparar el rival', 'Revisar el vídeo', 'Ejercicios del jueves', 'Cargas de la semana', 'Convocatoria del sábado', 'Grupo de padres', 'Otro Excel nuevo', 'Lesiones y molestias'];
+const TZ = -60;
+const cards = tasks.map((t, i) => {
+  const m = plane(textTex([{ t, font: FP(70), y: 120, color: '#0d0f14' }], 1100, 240, { bg: '#ebe7de', radius: 30 }), 11, 2.4);
+  const slot = { x: (rnd() - .5) * 2.2, y: -10 + i * 2.15, ry: (rnd() - .5) * 1.2, rz: (rnd() - .5) * .18 };
+  m.userData = { slot, t0: 2.6 + i * .42 }; m.material.opacity = 0; scene.add(m); return m;
+});
+// 3 · foto del estadio al fondo
+const stadium = await photo(scene, '/tools/kit3d/img/estadio.jpg', 56, [0, 22, -185]);
+// 4 · punto de luz azul
+const spark = new THREE.Sprite(new THREE.SpriteMaterial({ map: glowTex(), transparent: true, depthWrite: false })); spark.position.set(0, 30, -160); spark.scale.set(.1, .1, 1); scene.add(spark);
+
+const POSK = [[0, 0, 4, 26], [1.2, 0, 4, 20], [2.4, 3, 2, -30], [4, 16, 0, -48], [5.6, 14, 8, -78], [7.2, -12, 14, -74], [8.8, -16, 20, -48], [10.4, 0, 28, -38], [12.0, 0, 30, -80], [13.6, 0, 27, -104], [15.4, 0, 25, -118], [17.0, 0, 24, -126], [18.4, 0, 24, -130], [20, 0, 24, -132], [24.5, 0, 24, -134]];
+const LOOKK = [[0, 0, 4, 0], [1.2, 0, 4, 0], [2.4, 0, -2, TZ], [4, 0, -2, TZ], [5.6, 0, 2, TZ], [7.2, 0, 6, TZ], [8.8, 0, 10, TZ], [10.4, 0, 18, TZ], [12.0, 0, 24, -185], [13.6, 0, 24, -185], [15.4, 0, 24, -185], [17.0, 0, 24, -185], [18.4, 0, 24, -185], [20, 0, 24, -185], [24.5, 0, 24, -185]];
+import { cr } from '/tools/kit3d/engine.js';
+window.frame = (t) => {
+  cam.position.set(...cr(POSK, t)); cam.lookAt(...cr(LOOKK, t)); cam.rotation.z += Math.sin(t * 1.3) * .012;
+  cam.fov = 46 - 4 * seg(t, 0, 2.2) + 10 * Math.exp(-Math.pow((t - 17.4) / .25, 2)); cam.updateProjectionMatrix();
+  // reloj: los dos puntos parpadean
+  const cv = win(t, .1, 2.9, .5, .4); const blink = Math.floor(t * 2) % 2 === 0; clock.material.opacity = blink ? cv : 0; colon.material.opacity = blink ? 0 : cv;
+  domIn('d0', t, .7, 2.3); domIn('d1', t, 1.5, 2.9);
+  // torre: cada tarea cae a su sitio; la torre se tambalea al crecer; al final salen volando hacia la cámara
+  const wob = .05 * seg(t, 6, 8.5);
+  const burst = seg(t, 17.3, 18.4);
+  cards.forEach((m, i) => {
+    const { slot, t0 } = m.userData; const k = ease.back(seg(t, t0, t0 + .5));
+    const fall = (1 - ease.out(seg(t, t0, t0 + .5))) * 14;
+    const sway = Math.sin(t * 2.2 + i * .3) * wob * (i + 1) * .5;
+    m.position.set(slot.x + sway, slot.y + fall, TZ + slot.x * .3);
+    m.lookAt(cam.position.x * .7, m.position.y, cam.position.z); m.rotation.y += slot.ry * .35 + sway * .5; m.rotation.z += slot.rz + sway * .1;
+    m.material.opacity = seg(t, t0, t0 + .15) * (1 - seg(t, 12, 13.5)) + burst * 0;
+    if (t > 12) m.material.opacity = (1 - seg(t, 12, 13.2)) * .9;
+  });
+  domIn('d2', t, 8.4, 10.6); domIn('d3', t, 10.4, 12.6);
+  // foto del estadio: aparece y la cámara se acerca
+  stadium.material.opacity = seg(t, 11.8, 13.2) * (1 - seg(t, 17.2, 17.6));
+  domIn('d4', t, 13.4, 17.2); domIn('d5', t, 13.7, 17.2);
+  // destello: el foco se convierte en luz azul que llena la pantalla
+  flash(t, 17.35, .7, .45);
+  spark.material.opacity = seg(t, 17.3, 17.5); const sp = ease.expo(seg(t, 17.3, 20)); spark.scale.set(.1 + 34 * sp, .1 + 34 * sp, 1);
+  domIn('d6', t, 17.7, 20.2); domIn('d7', t, 18.0, 20.2);
+  // cierre
+  document.getElementById('endbg').style.opacity = seg(t, 20.1, 20.6) * .95;
+  domIn('e1', t, 20.4); domIn('e2', t, 20.6); domIn('e3', t, 21.2); domIn('e5', t, 21.4); domIn('e6', t, 21.6);
+  const mk = document.getElementById('endmark'); const mv = seg(t, 20.9, 21.3); mk.style.opacity = mv; mk.style.transform = `scale(${.4 + .6 * ease.back(mv)}) rotate(${(1 - mv) * -30}deg)`;
+  renderer.render(scene, cam); grain(t); return true;
+};
+window.frame(0); window.ready = true;
+</script>
+</body></html>

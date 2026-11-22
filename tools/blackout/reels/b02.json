@@ -1,0 +1,186 @@
+{
+ "w": 1080,
+ "h": 1920,
+ "d": "2",
+ "dur": 19.81,
+ "on": true,
+ "vel": 1.0,
+ "cut": 8.84,
+ "trans": 1.9,
+ "pose": {
+  "ry0": -0.24,
+  "y": -0.014,
+  "far": 0.47
+ },
+ "dev": [
+  [
+   0,
+   "tv",
+   0.8
+  ],
+  [
+   4.63,
+   "tv",
+   0.8
+  ]
+ ],
+ "layers": [
+  {
+   "t0": 0.3,
+   "t1": 4.93,
+   "type": "osd",
+   "ch": "CH 02",
+   "mode": "TELETIENDA",
+   "blink": false
+  },
+  {
+   "t0": 0.5,
+   "t1": 4.93,
+   "type": "text",
+   "valign": "flex-start",
+   "align": "left",
+   "pad": "300px 90px",
+   "gap": 16,
+   "lines": [
+    {
+     "text": "¡ÚLTIMAS",
+     "size": 150,
+     "cps": 16,
+     "at": 0.1
+    },
+    {
+     "text": "UNIDADES!",
+     "size": 150,
+     "cps": 16,
+     "at": 0.78
+    },
+    {
+     "text": " ",
+     "size": 34,
+     "at": 1.52
+    },
+    {
+     "text": "(ES SOFTWARE, NO SE AGOTA)",
+     "font": "VT",
+     "size": 72,
+     "color": "#3dffa8",
+     "glow": "0 0 10px rgba(61,255,168,.7)",
+     "cps": 30,
+     "at": 1.52
+    }
+   ]
+  },
+  {
+   "t0": 4.53,
+   "t1": 9.04,
+   "type": "osd",
+   "ch": "CH 02",
+   "mode": "TELETIENDA",
+   "blink": false
+  },
+  {
+   "t0": 4.73,
+   "t1": 9.04,
+   "type": "text",
+   "valign": "flex-start",
+   "align": "left",
+   "pad": "300px 90px",
+   "gap": 16,
+   "lines": [
+    {
+     "text": "6 MESES",
+     "size": 150,
+     "cps": 16,
+     "at": 0.1
+    },
+    {
+     "text": "GRATIS.",
+     "size": 150,
+     "cps": 16,
+     "at": 0.72
+    },
+    {
+     "text": " ",
+     "size": 34,
+     "at": 1.33
+    },
+    {
+     "text": "SIN TARJETA",
+     "font": "VT",
+     "size": 80,
+     "cps": 30,
+     "at": 1.33
+    },
+    {
+     "text": "SIN LETRA PEQUEÑA",
+     "font": "VT",
+     "size": 80,
+     "cps": 30,
+     "at": 1.88
+    }
+   ]
+  }
+ ],
+ "app": [
+  [
+   8.84,
+   "mo-home",
+   0,
+   0.1
+  ],
+  [
+   12.91,
+   "reg-1",
+   0.42,
+   0.5
+  ]
+ ],
+ "words": [
+  [
+   10.24,
+   12.91,
+   "<div class=\"a\" style=\"left:0;right:0;top:150px;text-align:center;font-family:IT;font-weight:900;font-size:112px;letter-spacing:-.04em;color:#fff;line-height:1\">Hasta el viernes.</div>"
+  ],
+  [
+   13.01,
+   15.21,
+   "<div class=\"a\" style=\"left:0;right:0;top:150px;text-align:center;font-family:IT;font-weight:900;font-size:112px;letter-spacing:-.04em;color:#fff;line-height:1\">Sin tarjeta.</div>"
+  ],
+  [
+   15.31,
+   19.81,
+   "<div class=\"a\" style=\"left:0;right:0;top:150px;text-align:center;font-family:IT;font-weight:900;font-size:112px;letter-spacing:-.04em;color:#fff;line-height:1\">Quedan 2 días.</div><div class=\"a\" style=\"left:0;right:0;top:285px;text-align:center;font-family:VT;font-size:54px;letter-spacing:.06em;color:#3dffa8\">6 MESES GRATIS · PRO-TEAM.APP</div>"
+  ]
+ ],
+ "audio": {
+  "cut": 8.84,
+  "old": [
+   "Honky-Tonk Villain.mp3",
+   25
+  ],
+  "new": [
+   "Thugs.mp3",
+   138.5
+  ],
+  "old_vol": 0.5,
+  "new_vol": 0.75
+ },
+ "lineas": [
+  [
+   0.8,
+   "¡Últimas unidades! Bueno, es software, no se agota."
+  ],
+  [
+   5.03,
+   "Pero los seis meses gratis, sí. Y sin tarjeta."
+  ],
+  [
+   10.34,
+   "Solo hasta el viernes veintisiete."
+  ],
+  [
+   15.41,
+   "Crea tu primer equipo en ProTim."
+  ]
+ ]
+}

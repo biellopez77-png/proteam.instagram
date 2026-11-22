@@ -1,0 +1,133 @@
+{
+ "retro": "ep",
+ "d": "1",
+ "dur": 16.78,
+ "voz_sid": 29,
+ "vel": 1.0,
+ "clunks": [],
+ "dark_at": 99,
+ "estatica": [
+  [
+   0,
+   0.6
+  ],
+  [
+   0.6,
+   0.6799999999999999
+  ],
+  [
+   3.46775,
+   3.54775
+  ]
+ ],
+ "apagado": [
+  6.4677500000000006
+ ],
+ "zumbido": [
+  0.6,
+  6.4677500000000006
+ ],
+ "musica": {
+  "bpm": 104,
+  "vol": 0.4,
+  "desde": 6.97,
+  "duck": 0.5
+ },
+ "lineas": [
+  [
+   0.8,
+   "Mañana a medianoche se corta la señal."
+  ],
+  [
+   3.67,
+   "Y con ella, los seis meses gratis."
+  ],
+  [
+   7.17,
+   "Hoy todavía puedes. Crea tu primer equipo en ProTim."
+  ],
+  [
+   11.48,
+   "Seis meses gratis. Hasta mañana a medianoche."
+  ]
+ ],
+ "ep": {
+  "scenes": [
+   {
+    "type": "static",
+    "t0": 0
+   },
+   {
+    "type": "blue",
+    "mode": "REC ●",
+    "lines": [
+     [
+      0,
+      "MAÑANA",
+      170,
+      560
+     ],
+     [
+      0.5,
+      "SE CORTA",
+      150,
+      720
+     ],
+     [
+      0.9,
+      "LA SEÑAL.",
+      150,
+      860
+     ]
+    ],
+    "t0": 0.6
+   },
+   {
+    "type": "vhs",
+    "mode": "■ STOP",
+    "lines": [
+     [
+      0.2,
+      "Y CON ELLA,",
+      110,
+      640
+     ],
+     [
+      0.7,
+      "LOS 6 MESES",
+      130,
+      790
+     ],
+     [
+      1.1,
+      "GRATIS.",
+      160,
+      940
+     ]
+    ],
+    "t0": 3.47
+   },
+   {
+    "type": "off",
+    "t0": 6.47
+   },
+   {
+    "type": "future",
+    "sub": "Hoy todavía puedes.",
+    "shots": [
+     [
+      0,
+      "mo-home",
+      "Crea tu primer equipo.",
+      0
+     ]
+    ],
+    "t0": 6.97
+   },
+   {
+    "type": "cierre",
+    "t0": 11.28
+   }
+  ]
+ }
+}

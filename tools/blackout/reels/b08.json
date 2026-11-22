@@ -1,0 +1,202 @@
+{
+ "w": 1080,
+ "h": 1920,
+ "d": "8",
+ "dur": 23.9,
+ "on": true,
+ "vel": 1.0,
+ "cut": 11.67,
+ "trans": 1.9,
+ "pose": {
+  "ry0": -0.24,
+  "y": -0.014,
+  "far": 0.47
+ },
+ "dev": [
+  [
+   0,
+   "tv",
+   0.8
+  ],
+  [
+   6.42,
+   "tv",
+   0.8
+  ]
+ ],
+ "layers": [
+  {
+   "t0": 0.3,
+   "t1": 6.72,
+   "type": "osd",
+   "ch": "CH 08",
+   "mode": "MÉTODOS DE 1995",
+   "blink": false
+  },
+  {
+   "t0": 0.5,
+   "t1": 6.72,
+   "type": "text",
+   "valign": "flex-start",
+   "align": "left",
+   "pad": "300px 90px",
+   "gap": 16,
+   "lines": [
+    {
+     "text": "N.º 1",
+     "font": "VT",
+     "size": 72,
+     "color": "#3dffa8",
+     "glow": "0 0 10px rgba(61,255,168,.7)",
+     "cps": 30,
+     "at": 0.1
+    },
+    {
+     "text": " ",
+     "size": 34,
+     "at": 0.45
+    },
+    {
+     "text": "LA LIBRETA",
+     "size": 128,
+     "cps": 16,
+     "at": 0.45
+    },
+    {
+     "text": "DE",
+     "size": 150,
+     "cps": 16,
+     "at": 1.25
+    },
+    {
+     "text": "ESTADÍSTICAS.",
+     "size": 112,
+     "cps": 16,
+     "at": 1.56
+    }
+   ]
+  },
+  {
+   "t0": 6.32,
+   "t1": 11.87,
+   "type": "osd",
+   "ch": "CH 08",
+   "mode": "MÉTODOS DE 1995",
+   "blink": false
+  },
+  {
+   "t0": 6.52,
+   "t1": 11.87,
+   "type": "text",
+   "valign": "flex-start",
+   "align": "left",
+   "pad": "300px 90px",
+   "gap": 16,
+   "lines": [
+    {
+     "text": "VENTAJAS",
+     "font": "VT",
+     "size": 72,
+     "color": "#3dffa8",
+     "glow": "0 0 10px rgba(61,255,168,.7)",
+     "cps": 30,
+     "at": 0.1
+    },
+    {
+     "text": "- NO NECESITA BATERÍA",
+     "font": "VT",
+     "size": 80,
+     "cps": 30,
+     "at": 0.55
+    },
+    {
+     "text": " ",
+     "size": 34,
+     "at": 1.43
+    },
+    {
+     "text": "INCONVENIENTES",
+     "font": "VT",
+     "size": 72,
+     "color": "#3dffa8",
+     "glow": "0 0 10px rgba(61,255,168,.7)",
+     "cps": 30,
+     "at": 1.43
+    },
+    {
+     "text": "- TODO LO DEMÁS",
+     "font": "VT",
+     "size": 80,
+     "cps": 30,
+     "at": 2.07
+    }
+   ]
+  }
+ ],
+ "app": [
+  [
+   11.67,
+   "res-1",
+   0.2,
+   0.45
+  ],
+  [
+   15.88,
+   "res-0",
+   0.1,
+   0.35
+  ]
+ ],
+ "words": [
+  [
+   13.07,
+   15.88,
+   "<div class=\"a\" style=\"left:0;right:0;top:150px;text-align:center;font-family:IT;font-weight:900;font-size:112px;letter-spacing:-.04em;color:#fff;line-height:1\">Por jugador.</div>"
+  ],
+  [
+   15.98,
+   18.3,
+   "<div class=\"a\" style=\"left:0;right:0;top:150px;text-align:center;font-family:IT;font-weight:900;font-size:112px;letter-spacing:-.04em;color:#fff;line-height:1\">Por partes.</div>"
+  ],
+  [
+   18.4,
+   23.8,
+   "<div class=\"a\" style=\"left:0;right:0;top:150px;text-align:center;font-family:IT;font-weight:900;font-size:112px;letter-spacing:-.04em;color:#fff;line-height:1\">6 meses gratis.</div><div class=\"a\" style=\"left:0;right:0;top:285px;text-align:center;font-family:VT;font-size:54px;letter-spacing:.06em;color:#3dffa8\">SOLO HASTA EL 27 · PRO-TEAM.APP</div>"
+  ]
+ ],
+ "audio": {
+  "cut": 11.67,
+  "old": [
+   "Honky-Tonk Villain.mp3",
+   0
+  ],
+  "new": [
+   "Syntheticity.mp3",
+   52
+  ],
+  "old_vol": 0.5,
+  "new_vol": 0.75
+ },
+ "lineas": [
+  [
+   0.8,
+   "Métodos de mil novecientos noventa y cinco. Número uno: la libreta de estadísticas."
+  ],
+  [
+   6.82,
+   "Ventajas: no necesita batería. Inconvenientes: todo lo demás."
+  ],
+  [
+   13.17,
+   "En ProTim, los números de cada jugador."
+  ],
+  [
+   16.08,
+   "Y el partido, por partes."
+  ],
+  [
+   18.5,
+   "Seis meses gratis para tu primer equipo. Solo hasta el veintisiete."
+  ]
+ ]
+}

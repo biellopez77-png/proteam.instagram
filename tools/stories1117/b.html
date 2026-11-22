@@ -1,0 +1,27 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><link rel="stylesheet" href="base.css"><style>
+.ph{flex:none;margin-top:56px;background:#fff;border-radius:34px;overflow:hidden;position:relative}
+.ph img{display:block;width:100%}
+.mk{padding:0}
+.mk img{width:100%;display:block}
+.hl{position:absolute;border:7px solid #2f6bff;border-radius:22px}
+</style></head><body>
+<div class="s dark"><div class="in">
+<div class="k">Después del partido</div>
+<h1 style="font-size:96px;margin-top:50px">¿Quién se quedó sin jugar el sábado?</h1>
+<div class="ph">
+<div class="mk"><img src="informe-marcador.jpg"></div>
+<img src="informe-resumen.jpg" id="r">
+<div class="hl" id="h"></div>
+</div>
+<div class="sm" style="color:#8d93a1;margin-top:22px;font-size:28px">Informe de partido en la app de ProTeam · datos de ejemplo</div>
+<div style="margin-top:auto">
+<div class="sr" style="font-size:96px;line-height:1.02">Mejor saberlo tú que enterarte por un padre.</div>
+</div>
+</div></div>
+<script>
+// resalta «SIN MINUTOS 4» (coordenadas sobre el recorte original 1112×880)
+const r=document.getElementById('r'),h=document.getElementById('h');
+function place(){const k=r.width/1112;const top=r.offsetTop;
+h.style.left=(548*k)+'px';h.style.top=(top+272*k)+'px';h.style.width=(500*k)+'px';h.style.height=(130*k)+'px';}
+r.complete?place():r.onload=place;
+</script></body></html>

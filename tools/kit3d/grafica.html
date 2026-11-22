@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><link rel="stylesheet" href="/tools/kit3d/base.css">
+<script type="importmap">{"imports":{"three":"/tools/wurtz/node_modules/three/build/three.module.js","three/addons/":"/tools/wurtz/node_modules/three/examples/jsm/"}}</script>
+</head><body>
+<canvas id="gl" width="1080" height="1920"></canvas>
+<canvas id="grain" class="ov" width="540" height="960"></canvas>
+<div id="vig" class="ov"></div>
+<div class="ov" id="txt">
+  <div class="dom m" id="d1" style="top:330px;font-size:66px">Mientras tanto,</div>
+  <div class="dom" id="d2" style="top:410px;font-size:110px">nosotros…</div>
+  <div class="dom" id="d3" style="top:300px;font-size:120px">Nos quedamos</div>
+  <div class="dom b" id="d4" style="top:420px;font-size:200px">aquí.</div>
+  <div class="dom m" id="d5" style="top:1500px;font-size:56px">Y esa distancia se nota cada domingo.</div>
+  <div class="dom b" id="d6" style="top:820px;font-size:230px">Hasta ahora.</div>
+</div>
+<div id="endbg" class="ov"></div>
+<div class="ov" id="end">
+  <div class="dom" id="e1" style="top:520px;font-size:118px">El 27 se encienden</div>
+  <div class="dom b" id="e2" style="top:650px;font-size:236px">los focos.</div>
+  <img id="endmark" src="/kit/mark.png" style="top:960px" alt="">
+  <div class="dom p" id="e4" style="top:1140px">LISTA DE ESPERA ABIERTA</div>
+  <div class="dom cta" id="e5" style="top:1210px"><span>Crea tu cuenta · 6 meses gratis</span></div>
+  <div class="dom p" id="e6" style="top:1350px">PRO-TEAM.APP · HASTA EL 27.11 · 23:59</div>
+</div>
+<div id="flash" class="ov"></div>
+<script type="module">
+import { THREE, setup, label, F, FS, FP, seg, win, ease, tube, drawTo, dust, domIn, grain, flash, glowTex } from '/tools/kit3d/engine.js';
+const { renderer, scene, cam } = await setup({ fog: .0042 });
+const SX = .4, SY = 1.5; const WP = (p) => [p[0] * SX, p[1] * SY, p[2]];
+dust(scene, 1600, 60, -200, 260).position.x = 80;
+const Z = -50;
+// gancho
+const H1 = label(scene, [{ t: 'En 20 años', font: F(260), y: 160 }], 1800, 320, 16, [0, 0, 0]);
+const H2 = label(scene, [{ t: 'el deporte lo ha', font: F(140, 500), y: 100, color: '#c7cfdd' }, { t: 'cambiado todo.', font: FS(300), y: 330, color: '#4f86ff', glow: 'rgba(47,107,255,.9)' }], 1800, 470, 15, [0, -.3, -18]);
+// rejilla y años
+const grid = new THREE.Group(); grid.position.z = Z; scene.add(grid);
+const gm = new THREE.LineBasicMaterial({ color: '#2a3550', transparent: true, opacity: .55 });
+for (let x = 0; x <= 180; x += 15) grid.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(x * SX, -12 * SY, 0), new THREE.Vector3(x * SX, 46 * SY, 0)]), gm));
+for (let y = -12; y <= 46; y += 8) grid.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(-5 * SX, y * SY, 0), new THREE.Vector3(185 * SX, y * SY, 0)]), gm));
+const years = [2006, 2010, 2014, 2018, 2022, 2026].map((y, i) => label(scene, [{ t: String(y), font: FP(90), y: 70, color: '#8fa0c2' }], 400, 140, 8, [i * 30 * SX, -15 * SY - 2, Z]));
+// línea A: el juego
+const A = [[0, -8, Z], [30, -1, Z], [60, 7, Z], [90, 15, Z], [120, 25, Z], [150, 36, Z]];
+const lineA = tube(scene, A.map(WP), .7, '#eef2fa'); const lineAg = tube(scene, A.map(WP), 2.4, '#9fc0ff', .16);
+const tagA = label(scene, [{ t: 'EL JUEGO', font: FP(90), y: 70, color: '#eef2fa' }], 600, 140, 15, [150 * SX, 36 * SY + 7, Z]);
+const miles = [['Vídeo de cada partido', 30, -1], ['GPS en los entrenos', 60, 7], ['Datos en directo', 90, 15], ['Análisis con IA', 120, 25]].map(([t, x, y]) => {
+  const m = label(scene, [{ t, font: F(110, 500), y: 90, color: '#eef2fa' }], 1300, 180, 20, [x * SX - 2, y * SY + 6.5, Z + .5]);
+  const dot = new THREE.Mesh(new THREE.SphereGeometry(.9, 24, 16), new THREE.MeshBasicMaterial({ color: '#ffffff' })); dot.position.set(x * SX, y * SY, Z); dot.scale.setScalar(.001); scene.add(dot); m.userData.dot = dot; m.userData.x = x; return m;
+});
+// línea B: cómo lo analizamos
+const B = [[0, -8, Z + .2], [12, -5, Z + .2], [24, -4, Z + .2], [60, -4.3, Z + .2], [90, -4, Z + .2], [120, -4.2, Z + .2], [150, -4, Z + .2]];
+const lineB = tube(scene, B.map(WP), .7, '#8a93a6'); const tagB = label(scene, [{ t: 'CÓMO LO ANALIZAMOS', font: FP(80), y: 70, color: '#8a93a6' }], 1100, 140, 22, [140 * SX - 4, -4 * SY - 6, Z]);
+const bl = [['Pizarra', 2], ['Libreta', 14], ['Excel', 30], ['Excel', 60], ['Excel', 90], ['Excel', 120]].map(([t, x], i) => label(scene, [{ t, font: F(130, 500), y: 90, color: i > 1 ? '#a7b0c2' : '#c7cfdd' }], 700, 180, 13, [x * SX, -4 * SY + 5.5 + (i % 2) * 3.2, Z + .5]));
+// la ruptura: línea azul que sube
+const Bk = [[150, -4, Z + .3], [158, -1, Z + .3], [164, 10, Z + .3], [170, 28, Z + .3], [176, 52, Z + .3]];
+const lineK = tube(scene, Bk.map(WP), .95, '#4f86ff'); const lineKg = tube(scene, Bk.map(WP), 3.4, '#2f6bff', .25);
+const tip = new THREE.Sprite(new THREE.SpriteMaterial({ map: glowTex(), transparent: true, depthWrite: false })); tip.scale.set(7, 7, 1); scene.add(tip);
+
+const pointOn = (pts, k) => { const c = new THREE.CatmullRomCurve3(pts.map((p) => new THREE.Vector3(...WP(p)))); return c.getPoint(Math.min(.999, Math.max(0, k))); };
+// fases de cámara: cada una devuelve [pos, mira]; se mezclan suavemente
+const C0 = [36, 22, Z];   // centro de la gráfica (mundo)
+const lerp3 = (a, b, w) => a.map((v, j) => v + (b[j] - v) * w);
+const track = (pts, k, d, mix, lift = 0) => { const p = pointOn(pts, k); const tp = [p.x, p.y, Z]; const look = lerp3(C0, tp, mix); return [[look[0] - 6, look[1] + lift, Z + d], look]; };
+const phases = [
+  [0, 2.4, (t) => [[0, .6 - .5 * seg(t, 0, 2.4), 30 - 50 * ease.inOut(seg(t, 0, 2.4))], [0, -.3, -24]]],
+  [2.4, 8.6, (t) => { const k = ease.inOut(seg(t, 3.0, 8.4)); return track(A, k, 70 + 50 * k, .55, 2); }],
+  [8.6, 10.2, (t) => { const k = ease.inOut(seg(t, 8.6, 10.2)); return [[34, 22, Z + 150 - 12 * k], [34, 22, Z]]; }],
+  [10.2, 15.0, (t) => { const k = ease.inOut(seg(t, 10.4, 14.8)); const [p, l] = track(B, k, 95, .5, 10); return [p, [l[0], l[1] + 8, l[2]]]; }],
+  [15.0, 17.4, (t) => { const k = ease.out(seg(t, 15.0, 17.4)); return [[38 + 4 * k, 20, Z + 140 + 10 * k], [38 + 4 * k, 20, Z]]; }],
+  [17.4, 20.2, (t) => { const k = ease.inOut(seg(t, 17.6, 19.8)); return track(Bk, k, 80 - 20 * k, .75, -6); }],
+  [20.2, 25, (t) => [[70, 78 + 24 * ease.out(seg(t, 20.2, 24)), Z + 50], [70, 110, Z - 40]]],
+];
+function camAt(t) {
+  let i = phases.findIndex(([a, b]) => t < b); if (i < 0) i = phases.length - 1;
+  let [p, l] = phases[i][2](t);
+  const [a] = phases[i]; const bw = .7;   // mezcla con la fase anterior
+  if (i > 0 && t < a + bw) { const [pp, pl] = phases[i - 1][2](t); const w = ease.inOut(seg(t, a, a + bw)); p = pp.map((v, j) => v + (p[j] - v) * w); l = pl.map((v, j) => v + (l[j] - v) * w); }
+  return [p, l];
+}
+window.frame = (t) => {
+  const [p, l] = camAt(t); cam.position.set(...p); cam.lookAt(...l); cam.rotation.z += Math.sin(t * 1.7) * .01;
+  cam.fov = 48 + 8 * Math.exp(-Math.pow((t - 1.2) / .15, 2)) + 18 * ease.inOut(seg(t, 17.6, 19.4)) * (1 - seg(t, 19.6, 20.4)); cam.updateProjectionMatrix();
+  H1.material.opacity = win(t, 0, 1.25, .2, .15); H2.material.opacity = win(t, .9, 2.8, .35, .4);
+  const kA = ease.inOut(seg(t, 3.0, 8.4)); drawTo(lineA, kA); drawTo(lineAg, kA);
+  miles.forEach((m) => { const x = m.userData.x / 150; const v = seg(kA, x - .02, x + .04); m.material.opacity = v * (1 - seg(t, 15, 16)) * .95; m.userData.dot.scale.setScalar(Math.max(.001, ease.back(v))); m.position.y += 0; });
+  tagA.material.opacity = seg(t, 8.0, 8.6); years.forEach((y, i) => { y.material.opacity = seg(t, 2.8 + i * .9, 3.4 + i * .9) * .9; });
+  const kB = ease.inOut(seg(t, 10.4, 14.8)); drawTo(lineB, Math.max(kB, seg(t, 3.0, 3.6) * .06));
+  bl.forEach((m, i) => { const xs = [2, 14, 30, 60, 90, 120][i] / 150; m.material.opacity = seg(kB, xs - .01, xs + .05) * (1 - seg(t, 19.5, 20.5)); });
+  tagB.material.opacity = seg(t, 14.4, 15);
+  const kK = ease.inOut(seg(t, 17.6, 19.8)); drawTo(lineK, kK); drawTo(lineKg, kK);
+  const tp = kK > 0 ? pointOn(Bk, kK) : pointOn(A, kA); tip.position.copy(tp); tip.material.opacity = (seg(t, 3, 3.3) * (1 - seg(t, 8.4, 8.8))) + seg(t, 17.6, 17.9);
+  lineB.material.color.set(t > 17.6 ? '#6b7ea8' : '#8a93a6');
+  // texto plano
+  domIn('d1', t, 9.0, 10.3); domIn('d2', t, 9.3, 10.3);
+  domIn('d3', t, 15.2, 17.4); domIn('d4', t, 15.5, 17.4); domIn('d5', t, 16.0, 17.4);
+  domIn('d6', t, 19.6, 20.6, .35); flash(t, 19.6, .55);
+  // cierre
+  const e = seg(t, 20.4, 20.9); document.getElementById('endbg').style.opacity = e * .92;
+  domIn('e1', t, 20.6); domIn('e2', t, 20.8); domIn('e4', t, 21.3); domIn('e5', t, 21.45); domIn('e6', t, 21.6);
+  const mk = document.getElementById('endmark'); const mv = seg(t, 21.1, 21.5); mk.style.opacity = mv; mk.style.transform = `scale(${.4 + .6 * ease.back(mv)}) rotate(${(1 - mv) * -30}deg)`;
+  renderer.render(scene, cam); grain(t); return true;
+};
+window.frame(0); window.ready = true;
+</script>
+</body></html>
