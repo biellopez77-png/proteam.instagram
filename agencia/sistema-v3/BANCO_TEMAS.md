@@ -25,7 +25,7 @@ Lista viva. **Cada tema tiene muchas ideas; cada idea da 3 reels; cada reel llev
 
 ## T02 · Planificación de la semana
 1. H · El parón de Navidad que dura cuatro semanas (C3) · fútbol
-2. E · El martes no es el día para correr: estructura de la semana con un partido · fútbol
+2. E · El martes no es el día para correr: estructura de la semana con un partido · fútbol [en curso 2026-11-22 · Dani B]
 3. D · Cuántos minutos reales de juego tiene un entreno de 90 · general
 4. H · El club que planificaba la temporada en un cuaderno (buscar caso real de libretas de entrenadores famosos: Bielsa, Cruyff) · fútbol
 5. E · Tres días de entreno: el orden que no falla · baloncesto
