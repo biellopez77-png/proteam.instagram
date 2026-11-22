@@ -1,4 +1,6 @@
-# Club Fundador (Biel, 20/11)
+# Club Fundador (Biel, 20/11; condiciones cerradas el 22/11)
+
+> **22/11 (manda sobre lo de abajo):** Biel ha cerrado las condiciones con el «Prompt maestro» (agencia/experiencia/PLAN.md). El verificado lleva un **rayo**, no un tick (hecho en el PR #1). El nombre de Biel aparece **dentro** (carta, lista privada, soporte) y nunca en Instagram ni en la portada. El número de apuntados **no** se enseña: se juega con el misterio.
 
 **Qué es.** No es un descuento ni un regalo por apuntarse a la lista: es formar parte de los comienzos de ProTeam. Debe transmitir reconocimiento, pertenencia, participación y cercanía.
 
@@ -7,11 +9,11 @@
 |---|---|---|---|
 | 1 | Insignia verificada y numerada | Implementada en el PR #1 de proteamapp. Falta aplicar la migración y fusionar (necesita a Biel) | «Insignia de fundador con tu número» |
 | 2 | 3 meses gratis | Activo para la lista de espera hasta el 27/11 23:59 | Sí, tal cual |
-| 3 | Precio fundador congelado | **Pendiente:** importe, duración y condiciones sin definir. No existe en Stripe | Solo «precio fundador», sin importe y sin decir que el precio general subirá. Mejor no publicarlo hasta tener condiciones |
+| 3 | Precio fundador congelado | **Condición cerrada (22/11):** el precio queda reservado desde que la persona entra en la lista privada durante el lanzamiento, no desde el primer pago; tras los 3 meses gratis paga ese precio aunque suba para los nuevos. **Importe pendiente.** No existe en Stripe | «Tu precio queda congelado desde hoy», sin importe, y solo cuando exista cómo guardarlo |
 | 4 | Soporte individual de tú a tú | Activo: Lucía por Gmail durante los 3 meses | «Una persona del equipo te acompaña» |
-| 5 | Participación y votaciones exclusivas | Diseñado. Primera tanda: las 5 encuestas del miércoles 25 (públicas) | «Votas en lo que construimos». Nunca prometer que cada voto cambia la app |
-| 6 | 3 tickets regalo para amigos | **Pendiente:** recompensas y condiciones | «3 invitaciones para tus amigos. Pronto, más». Sin detalles |
-| 7 | Carta de bienvenida personalizada | Implementada en el PR #1 (nombre, número y firma animada de Biel) | Puede aparecer en el Reel P4 |
+| 5 | Participación y votaciones exclusivas | Diseñado. Canales: Gmail, web e Instagram. Primera tanda: las 5 encuestas del miércoles 25 | «Votas en lo que construimos». Nunca prometer que cada voto cambia la app |
+| 6 | 3 tickets regalo | **Condiciones cerradas (22/11), sin construir:** máximo 3 por fundador; quien recibe un ticket tiene 1 mes gratis del plan base; el fundador gana 1 semana gratis por cada ticket usado (hasta 3 semanas). No se modifican | Las condiciones tal cual, cuando estén construidos |
+| 7 | Carta de bienvenida personalizada | Implementada en el PR #1 (nombre, número y firma animada de Biel). En el plan, pasa al recorrido inicial (paso 2) | Puede aparecer en el Reel P4 |
 
 ## Numeración
 - Los números del 1 al 10 están reservados. El 1 es de Biel; los demás, para quien él diga. Solo se asignan a mano desde `/admin` → Club Fundador.
