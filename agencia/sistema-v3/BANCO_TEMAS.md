@@ -39,7 +39,7 @@ Lista viva. **Cada tema tiene muchas ideas; cada idea da 3 reels; cada reel llev
 
 ## T03 · Carga y fatiga (RPE)
 1. E · Una pregunta del 1 al 10 (B2) · baloncesto
-2. H · El tercer cuarto se gana el jueves · baloncesto
+2. H · El tercer cuarto se gana el jueves · baloncesto [en curso 2026-11-22 · Dani B]
 3. D · El RPE de sesión: de dónde sale (Foster, 2001) · general
 4. E · El jugador que siempre dice «7» · general
 5. E · Semana de carga vs semana de descarga: cómo se ve en una gráfica · fútbol
