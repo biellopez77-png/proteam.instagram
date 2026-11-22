@@ -65,7 +65,7 @@ Lista viva. **Cada tema tiene muchas ideas; cada idea da 3 reels; cada reel llev
 
 ## T05 · Datos y estadísticas que sí sirven
 1. H · Moneyball: el equipo que fichaba con una hoja de cálculo · béisbol → general
-2. E · Tres números que valen más que el marcador · fútbol [en curso 2026-11-23 · Dani B]
+2. E · Tres números que valen más que el marcador · fútbol [hecha → T05-2-r1, r2, r3 · Dani B · fuentes (solo r1): ESPN, ficha de la final de 2012; Bleacher Report, «How the Blues Pulled Off the Impossible»]
 3. D · Posesión y victorias: lo que dicen los datos (verificar estudios) · fútbol
 4. E · Un dato por partido: el que vas a mirar siempre · general
 5. H · El entrenador que apuntaba cada pérdida (casos documentados) · fútbol
@@ -154,6 +154,11 @@ Lista viva. **Cada tema tiene muchas ideas; cada idea da 3 reels; cada reel llev
 6. E · Celebrar el proceso, no solo el resultado · general
 7. E · Cómo hablar después de una goleada en contra · general
 8. H · El equipo que perdía todos los partidos y siguió viniendo · general
+9. E · El jugador que se esconde después de fallar: cómo devolverle el balón en la siguiente jugada · general [añadida 23/11 · Dani B]
+10. E · Calentar los nervios: los 10 minutos antes de salir al campo · fútbol [añadida 23/11 · Dani B]
+11. E · El tiro libre del último segundo: quién lo tira y cómo se decide antes del partido · baloncesto [añadida 23/11 · Dani B]
+12. H · Una tanda de penaltis famosa y el orden de lanzadores (buscar caso documentado con fuente) · fútbol [añadida 23/11 · Dani B]
+13. E · Qué decirle al equipo cuando vais ganando al descanso · general [añadida 23/11 · Dani B]
 
 ## T13 · Actualidad (radar semanal)
 Rotación fija: un tema real de la semana por deporte (LaLiga, Champions, ACB, Euroliga, NBA, Asobal). Solo hechos con fuente y lección para la base. Las ideas se añaden aquí con fecha.
