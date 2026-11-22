@@ -10,7 +10,7 @@ Lista viva. **Cada tema tiene muchas ideas; cada idea da 3 reels; cada reel llev
 ---
 
 ## T01 · Leer el partido (análisis en directo y descanso)
-1. H · El papel de Lehmann (A1, hecho) → variante: el papel que Lehmann no tenía (Cambiasso no estaba en la lista) · fútbol
+1. H · El papel de Lehmann (A1, hecho) → variante: el papel que Lehmann no tenía (Cambiasso no estaba en la lista) · fútbol [hecha → T01-1-r1, r2, r3 · Dani A · fuente: FIFA, «El papel que liberó los complejos», 6/7/2016]
 2. H · La pizarra de un descanso que dio la vuelta a una final (buscar caso documentado: final de Champions 2005, Estambul) · fútbol [hecha → T01-2-r1, r2, r3 · Dani B]
 3. E · Los 15 minutos del descanso, minuto a minuto: qué decir y qué no · general [hecha → T01-3-r1, r2, r3 · Dani A]
 4. D · Cuántas cosas recuerda un entrenador del primer tiempo sin apuntar (buscar estudio sobre recuerdo de entrenadores) · general [hecha → T01-4-r1, r2, r3 · Dani B · fuente: Laird y Waters 2008, IJPAS 8(1)]
