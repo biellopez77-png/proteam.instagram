@@ -38,7 +38,7 @@ Lista viva. **Cada tema tiene muchas ideas; cada idea da 3 reels; cada reel llev
 12. D · Cuánto se olvida en una semana sin entrenar (curva del olvido aplicada) · general
 
 ## T03 · Carga y fatiga (RPE)
-1. E · Una pregunta del 1 al 10 (B2) · baloncesto
+1. E · Una pregunta del 1 al 10 (B2) · baloncesto [hecha → T03-1-r1, r2, r3 · Dani A · fuentes: Foster et al. 2001, JSCR 15(1); Haddad et al. 2017, Front. Neurosci. 11:612]
 2. H · El tercer cuarto se gana el jueves · baloncesto [hecha → T03-2-r1, r2, r3 · Dani B · fuente del método: Foster et al. 2001, JSCR 15(1)]
 3. D · El RPE de sesión: de dónde sale (Foster, 2001) · general
 4. E · El jugador que siempre dice «7» · general
