@@ -63,3 +63,33 @@ La historia se construye como un tablero: fotos pequeñas, recortes, notas y hil
 3. ¿El texto se lee sin sonido en cada plano?
 4. ¿Algún recorte con halo o borde raro? Se arregla o se cambia por marco.
 5. ¿Hay un cambio visual al menos cada 1,5 s?
+
+---
+
+## Receta de cine adaptada a ProTeam (Biel, 22/11, a partir de «Cómo hacer un vídeo así, al máximo nivel»)
+
+No rodamos, pero aplicamos lo que sirve para captar a la gente. Objetivo: diferenciarnos de los vídeos hechos con IA, que acaban siendo todos iguales. Material de archivo real, lápiz, papel, mano, y nada que parezca plantilla.
+
+**Preproducción**
+1. Parte de algo real y exagera el contraste (un papel de un millón contra la hoja de tu segundo).
+2. Empieza por el final, en el momento más fuerte; el espectador se pregunta «¿cómo se ha llegado aquí?».
+3. Storyboard por plano: cada frase tiene su plano, y si una frase no se puede ver, sobra.
+4. **Varía los planos en los primeros segundos.** Nunca 3 s seguidos de la misma escena: detalle → general → medio. Cuando se nombra a alguien o algo («Alemania contra Argentina»), se ve (camisetas, marcador, escudo genérico), siempre con animación fluida.
+5. Estilo de color por escena: el pasado o el recuerdo en cálido (sepia suave), el problema de hoy en frío y neutro, la amenaza con un acento rojo, la solución en blanco limpio con azul.
+6. **Un solo deporte por pieza, o un mensaje general para entrenadores.** Si el gancho es de fútbol, el problema y la solución también son de fútbol.
+
+**Puntos de vista (lo que sí nos sirve del rodaje)**
+- Plano general, plano medio y detalle de cada escena: la cámara virtual también «cubre» cada momento.
+- Detalle de objetos y manos: el papel, el lápiz, la raya.
+- El punto de vista del entrenador: lo que él vería en el descanso.
+
+**Postproducción**
+1. La voz va primero; las imágenes van encima. En el gancho, un cambio de plano cada 1-2 s, pero con movimientos encadenados, nunca cortes secos.
+2. Recursos de cine, siempre fluidos: imagen congelada con narrador, fundido a negro, acercamiento lento a una cara, paso rápido de cámara (barrido con desenfoque), **final circular**.
+3. Diseño de sonido: un silencio (la música baja) justo antes del momento clave; aire y lápiz; nada de golpes.
+4. Etalonaje por escena, según el punto 5.
+5. Subtítulos grandes dentro de la zona segura: entre y=1150 y y=1450 en 1080×1920, por encima de la interfaz de Instagram.
+6. **Final circular:** el último plano es el primero. El vídeo empieza en el final y acaba en el mismo encuadre, para que el bucle no se note.
+7. Revisa todos los cambios de escena fotograma a fotograma: ningún salto de cámara ni de capa a la vista.
+
+**Lo que NO copiamos:** partir el vídeo en capítulos. Se guarda para una futura miniserie.
