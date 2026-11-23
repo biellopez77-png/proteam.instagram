@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8">
+<!-- T09-2-r2 «El de siempre» (fútbol). Plantilla a3.html: planos fijos, la cámara solo se mueve al cambiar de zona. Dibujado a mano en SVG + una foto real CC0 (cartel de cambios, de espaldas). Escena de ejemplo. Marta B, 23/11. -->
+<style>
+@font-face{font-family:M;font-weight:800;src:url(/tools/fonts/manrope-latin-800-normal.woff2)}
+@font-face{font-family:M;font-weight:700;src:url(/tools/fonts/manrope-latin-700-normal.woff2)}
+@font-face{font-family:M;font-weight:500;src:url(/tools/fonts/manrope-latin-500-normal.woff2)}
+@font-face{font-family:S;font-style:italic;font-weight:400;src:url(/tools/fonts/instrument-serif-latin-400-italic.woff2)}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#fbfaf7}
+#st{position:absolute;inset:0;overflow:hidden;background:#fbfaf7}
+#world{position:absolute;left:0;top:0;transform-origin:0 0;will-change:transform}
+.o{position:absolute;left:0;top:0;transform-origin:50% 50%}
+.paper{background:#fff;box-shadow:0 18px 50px rgba(20,18,12,.10)}
+.frame{background:#fff;padding:14px;box-shadow:0 18px 50px rgba(20,18,12,.10)}
+.frame img{display:block;width:100%;height:100%;object-fit:cover}
+.num{position:absolute;font-family:M;font-weight:800;letter-spacing:-.05em;color:#121212;white-space:nowrap;line-height:1}
+.hand{position:absolute;font-family:S;font-style:italic;white-space:nowrap;line-height:1}
+.lab{position:absolute;font-family:M;font-weight:800;letter-spacing:.14em;color:#121212;white-space:nowrap}
+#cap{position:absolute;left:90px;right:90px;top:1330px;text-align:center;font-family:M;font-weight:800;font-size:58px;line-height:1.12;letter-spacing:-.03em;color:#121212;padding:18px 26px;border-radius:22px;background:rgba(251,250,247,.94)}
+#cap em{font-family:S;font-style:italic;font-weight:400;font-size:1.14em;letter-spacing:0}
+#hook{position:absolute;left:0;right:0;top:110px;text-align:center;font-family:M;font-weight:800;font-size:92px;letter-spacing:-.05em;color:#121212}
+#hook em{font-family:S;font-style:italic;font-weight:400;letter-spacing:0;color:#2f6bff}
+#gr{position:absolute;inset:0;pointer-events:none;mix-blend-mode:multiply;opacity:0;background:#d9e3f0}
+#ink{position:absolute;inset:0;background:#0e0e10;opacity:0;pointer-events:none}
+.card{background:#fff;border:6px solid #121212;border-radius:20px}
+</style></head><body><div id="st">
+<div id="world">
+  <!-- 1 · reloj 53′ (CK) -->
+  <div class="o paper" id="CK" style="width:620px;height:360px;border:6px solid #121212;border-radius:24px">
+    <div class="lab" style="left:34px;top:28px;font-size:22px;color:#77736b">RELOJ · 2.ª PARTE</div>
+    <div class="num" style="left:0;right:0;top:92px;text-align:center;font-size:220px">53′</div></div>
+  <!-- 2 · el cartel: foto real (CC0) + cartel dibujado 7 ↔ 16 -->
+  <div class="o frame" id="PH" style="width:500px;height:640px"><img src="/tools/reel_v4/T09-2-r2/img/cartel.jpg" style="object-position:50% 12%"></div>
+  <div class="o card" id="CB" style="width:470px;height:290px">
+    <div class="lab" style="left:40px;top:26px;font-size:18px;color:#9aa1a8">SALE</div><div class="lab" style="left:250px;top:26px;font-size:18px;color:#9aa1a8">ENTRA</div>
+    <div class="num" style="left:40px;top:70px;font-size:170px;color:#9aa1a8">7</div>
+    <div class="num" style="left:150px;top:118px;font-size:80px;color:#9aa1a8">↔</div>
+    <div class="num" id="n16" style="left:250px;top:70px;font-size:170px">16</div></div>
+  <!-- 3 · tres sábados, tres carteles con el 16 -->
+  <div class="o" id="C3" style="width:1100px;height:560px"></div>
+  <!-- 4 · contexto: marcador y medio campo cenital -->
+  <div class="o paper" id="SB" style="width:600px;height:230px;border:5px solid #121212;border-radius:18px">
+    <div class="lab" style="left:30px;top:22px;font-size:20px;color:#77736b">JUVENIL · 2.ª PARTE</div><div class="lab" style="right:30px;top:22px;font-size:18px;color:#9aa1a8">EJEMPLO</div>
+    <div class="num" style="left:0;right:0;top:72px;text-align:center;font-size:130px">1-1</div></div>
+  <svg class="o" id="PI" width="900" height="900" viewBox="0 0 900 900" style="overflow:visible"></svg>
+  <!-- 5 · la banda: el 16 cerca, tres al fondo -->
+  <svg class="o" id="BA" width="1100" height="1000" viewBox="0 0 1100 1000" style="overflow:visible"></svg>
+  <!-- 6 · los cambios se acaban -->
+  <div class="o" id="CA" style="width:1000px;height:600px"></div>
+  <!-- 7 · los petos limpios del 14 -->
+  <svg class="o" id="PT" width="1300" height="700" viewBox="0 0 1300 700" style="overflow:visible"></svg>
+  <!-- 8 · en negro: calentar no es jugar -->
+  <div class="o" id="DK" style="width:2400px;height:2600px;background:#0e0e10"></div>
+  <svg class="o" id="DS" width="1300" height="1100" viewBox="0 0 1300 1100" style="overflow:visible"></svg>
+  <!-- 9 · la solución: la hoja del descanso, la banda tapada y el reloj -->
+  <svg class="o" id="MB" width="560" height="560" viewBox="0 0 560 560" style="overflow:visible"></svg>
+  <div class="o paper" id="CK2" style="width:360px;height:210px;border:5px solid #121212;border-radius:18px">
+    <div class="lab" style="left:24px;top:18px;font-size:16px;color:#77736b">RELOJ</div>
+    <div class="num" style="left:0;right:0;top:56px;text-align:center;font-size:130px">53′</div></div>
+  <div class="o paper" id="HJ" style="width:760px;height:900px"></div>
+  <svg class="o" id="PC" width="40" height="300" viewBox="0 0 40 300" style="overflow:visible">
+    <path d="M20 300 L6 252 L34 252 Z" fill="#e9c99a" stroke="#121212" stroke-width="3" stroke-linejoin="round"/><path d="M20 300 L15 284 L25 284 Z" fill="#121212"/>
+    <rect x="6" y="40" width="28" height="212" fill="#f2c94c" stroke="#121212" stroke-width="3"/><rect x="6" y="10" width="28" height="32" rx="4" fill="#e8a0a0" stroke="#121212" stroke-width="3"/></svg>
+  <!-- marca -->
+  <div class="o" id="B" style="width:900px;height:500px;text-align:center">
+    <div class="num" style="position:static;font-size:170px;margin-top:120px">Pro<span style="color:#2f6bff">Team</span></div>
+    <div style="margin-top:30px;font-family:M;font-weight:500;font-size:38px;color:#77736b">la app del entrenador · enlace en la bio</div>
+  </div>
+</div>
+<div id="gr"></div>
+<div id="hook">El de <em>siempre</em></div>
+<div id="cap"></div>
+<div id="ink"></div>
+</div>
+<script src="/tools/reel_v4/T09-2-r2/times.js"></script>
+<script>
+const $=id=>document.getElementById(id), W=window.WORDS, NS='http://www.w3.org/2000/svg';
+const at=(w,n=1)=>{let c=0;for(const x of W)if(x[0]===w&&++c===n)return x[1];throw 'no '+w+n};
+const cl=(x,a=0,b=1)=>Math.min(b,Math.max(a,x)), r=(t,a,b)=>cl((t-a)/(b-a));
+const io=x=>x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2, eo=x=>1-Math.pow(1-x,3), lerp=(a,b,k)=>a+(b-a)*k;
+const T={primer:at('primer'),y1:at('y',2),d16:at('dieciseis'),como:at('como'),juvenil:at('juvenil'),empate:at('empate'),el9:at('el',3),d16b:at('dieciseis',2),
+ calienta:at('calienta'),levanta:at('levanta'),nunca:at('nunca'),pase:at('pase'),los:at('los'),pero:at('pero'),cambios:at('cambios'),acaban:at('acaban'),
+ y18:at('y',4),catorce:at('catorce'),limpio:at('limpio'),tres2:at('tres',2),no:at('no'),lo2:at('lo',2),minuto2:at('minuto',2),marcador:at('marcador'),
+ quien:at('quien'),mano2:at('mano',2),vuelta:at('vuelta'),calentar:at('calentar'),y30:at('y',6),mismo:at('mismo'),en33:at('en',4),escribe:at('escribe'),
+ minuto3:at('minuto',3),primero:at('primero'),catorce2:at('catorce',2),y38:at('y',7),hoja:at('hoja'),banda2:at('banda',2),apunt:at('apuntalo'),porque:at('porque'),END:window.VEND+.25};
+// zonas del mundo
+const CKz=[0,0], CBz=[1500,0], C3z=[3000,0], PIz=[0,2400], BAz=[1600,2400], CAz=[3200,2400], PTz=[0,4800], DKz=[1600,4800], HJz=[3400,4800], BP=[5200,4800];
+const PHp=[CBz[0]-250,CBz[1]-80], CBp=[CBz[0]+250,CBz[1]+250], N16=[CBp[0]+75,CBp[1]+20];
+const SBp=[PIz[0],PIz[1]-560];
+const NEAR=[360,560], FAR=[[720,380],[840,350],[960,385]];  // banda (coordenadas locales del svg BA)
+const LIB=[930,640]; // libreta en la zona negra (local DS)
+const HJp=[HJz[0]+120,HJz[1]+40], MBp=[HJz[0]-420,HJz[1]+60], CK2p=[HJz[0]-400,HJz[1]-460];
+const CUT1=T.calentar-.25, CUT2=T.en33-.2;
+// cámara: planos FIJOS; solo se mueve al cambiar de zona (0,6 s, entrada y salida suaves)
+const S0=[0,CKz[0],CKz[1]+40,1.45];
+const loc=(z,el,p)=>[z[0]-sz(el)[0]/2+p[0], z[1]-sz(el)[1]/2+p[1]];
+const SH=[ // [inicio, cx, cy, zoom, duración]
+ S0,
+ [T.primer-.3,CBz[0],CBz[1]+90,1.0],
+ [T.d16-.3,N16[0],N16[1]-20,2.1],
+ [T.como-.3,C3z[0],C3z[1],.9],
+ [T.juvenil-.45,PIz[0],PIz[1]-200,.85,.75],
+ [T.el9-.35,BAz[0]-40,BAz[1]-40,1.0,.75],
+ [T.pero-.3,CAz[0],CAz[1],1.0],
+ [T.y18-.3,PTz[0],PTz[1]-20,2.0,.7],
+ [T.tres2-.25,PTz[0],PTz[1]+10,.85,.8],
+ [T.no-.35,BAz[0]-40,BAz[1]-40,1.0,.75],
+ [CUT1,DKz[0]-250,DKz[1]-20,1.15],
+ [T.y30-.3,DKz[0]-650+LIB[0]-40,DKz[1]-550+LIB[1]-60,1.75,.7],
+ [CUT2,HJp[0]-40,HJp[1]-160,1.6],
+ [T.primero-.3,HJp[0]-150,HJp[1]-185,2.2],
+ [T.y38-.25,HJz[0]-60,HJz[1]-20,.82,.8],
+ [T.apunt-.35,BP[0],BP[1],1.0],
+ [T.porque+.05,S0[1],S0[2],S0[3],.95]];
+const CUTS=new Set([CUT1,CUT2]);
+function cam(t){let i=0;while(i+1<SH.length&&SH[i+1][0]<=t)i++;const s=SH[i];
+ if(i===0||CUTS.has(s[0]))return [s[1],s[2],s[3],0];
+ const p=SH[i-1],Dd=s[4]||.62,k=r(t,s[0],s[0]+Dd),e=io(k);
+ const lz=lerp(Math.log(p[3]),Math.log(s[3]),e)-.12*Math.sin(Math.PI*k)*(Math.hypot(s[1]-p[1],s[2]-p[2])>600?1:0);
+ return [lerp(p[1],s[1],e),lerp(p[2],s[2],e),Math.exp(lz),k>0&&k<1?Math.sin(Math.PI*k):0]}
+const sz=el=>[el.offsetWidth||+el.getAttribute('width'),el.offsetHeight||+el.getAttribute('height')];
+function place(el,x,y,rot=0,sc=1){const [w,h]=sz(el);el.style.transform=`translate(${x-w/2}px,${y-h/2}px) rotate(${rot}deg) scale(${sc})`}
+const drawK=(el,k)=>{el.setAttribute('stroke-dashoffset',100-100*k);el.style.visibility=k>0?'visible':'hidden'};
+const mk=(tag,a,par)=>{const e=document.createElementNS(NS,tag);for(const k in a)e.setAttribute(k,a[k]);par.appendChild(e);return e};
+const txt=(par,x,y,s,size,fill='#77736b',anchor='middle',font='M')=>{const e=mk('text',{x,y,'font-family':font,'font-weight':font==='M'?800:400,'font-style':font==='S'?'italic':'normal','font-size':size,'letter-spacing':font==='M'?4:0,fill,'text-anchor':anchor},par);e.textContent=s;return e};
+// silueta de pie, sin cara; con peto y dorsal opcional; brazo que se levanta
+function sil(par,x,y,s,num,fill='#121212'){const g=mk('g',{transform:`translate(${x} ${y}) scale(${s})`},par);
+ mk('circle',{cx:0,cy:-300,r:44,fill},g);
+ mk('path',{d:'M-70 -60 Q-78 -230 0 -240 Q78 -230 70 -60 Z',fill},g);
+ mk('rect',{x:-60,y:-70,width:50,height:200,rx:16,fill},g);mk('rect',{x:10,y:-70,width:50,height:200,rx:16,fill},g);
+ const arm=mk('rect',{x:-16,y:0,width:32,height:150,rx:14,fill,transform:'translate(66 -225) rotate(-10)'},g);
+ mk('rect',{x:-16,y:0,width:32,height:150,rx:14,fill,transform:'translate(-66 -225) rotate(10)'},g);
+ let peto=null;if(num){peto=mk('g',{},g);mk('path',{d:'M-50 -222 Q0 -196 50 -222 L60 -80 H-60 Z',fill:'#f4f6f8',stroke:'#121212','stroke-width':4},peto);
+  mk('text',{x:0,y:-110,'font-family':'M','font-weight':800,'font-size':74,fill:'#121212','text-anchor':'middle','letter-spacing':-3},peto).textContent=num}
+ return {g,arm}}
+// 3 · tres carteles con el 16 y su fecha (EJEMPLO)
+{const c=$('C3');['8 nov','15 nov','22 nov'].forEach((d,i)=>{const x=i*380;c.insertAdjacentHTML('beforeend',
+ `<div class="card" id="c3${i}" style="position:absolute;left:${x}px;top:80px;width:340px;height:230px;transform:rotate(${[-2,1,-1][i]}deg)"><div class="lab" style="left:26px;top:20px;font-size:15px;color:#9aa1a8">ENTRA</div><div class="num" style="left:0;right:0;top:56px;text-align:center;font-size:150px">16</div></div>
+  <div class="hand" id="c3d${i}" style="left:${x}px;width:340px;top:350px;text-align:center;font-size:72px;color:#55524c">${d}</div>`)});
+ c.insertAdjacentHTML('beforeend','<div class="lab" style="right:30px;top:470px;font-size:18px;color:#9aa1a8">EJEMPLO</div>')}
+// 4 · medio campo cenital
+const PD=[];{const s=$('PI');mk('rect',{x:0,y:0,width:900,height:900,fill:'#f2f4f1',stroke:'#121212','stroke-width':6},s);
+ mk('path',{d:'M0 900 H900 M330 900 A120 120 0 0 1 570 900 M190 0 V200 H710 V0 M330 0 V70 H570 V0',fill:'none',stroke:'#121212','stroke-width':5},s);
+ mk('path',{d:'M370 200 A90 90 0 0 0 530 200',fill:'none',stroke:'#121212','stroke-width':5},s);
+ [[300,300,'#121212'],[600,320,'#121212'],[450,520,'#121212'],[200,640,'#9aa1a8'],[700,600,'#9aa1a8'],[450,760,'#9aa1a8']].forEach(([x,y,f])=>PD.push([mk('circle',{cx:x,cy:y,r:24,fill:f},s),x,y]));
+ // banquillo junto a la banda
+ mk('rect',{x:-90,y:520,width:50,height:260,rx:10,fill:'#fff',stroke:'#121212','stroke-width':5},s);
+ for(let i=0;i<4;i++)mk('circle',{cx:-65,cy:560+i*60,r:17,fill:'#9aa1a8'},s);
+ txt(s,-65,830,'BANCO',20);}
+// 5 · la banda
+const BAs={};{const s=$('BA');
+ mk('rect',{x:-700,y:-900,width:2500,height:1600,fill:'#eef1ec'},s);
+ mk('path',{d:'M-40 700 H1140',stroke:'#121212','stroke-width':6},s);  // línea de banda
+ mk('path',{d:'M1050 700 V430',stroke:'#121212','stroke-width':5},s);mk('path',{d:'M1050 430 L1100 450 L1050 470 Z',fill:'#9aa1a8'},s); // banderín
+ // banquillo
+ mk('rect',{x:-60,y:720,width:260,height:120,rx:14,fill:'#fff',stroke:'#121212','stroke-width':5},s);txt(s,70,880,'BANQUILLO',22);
+ const far=mk('g',{},s);BAs.far=far;BAs.farS=FAR.map(([x,y])=>sil(far,x,y,.55,null,'#121212'));
+ const near=mk('g',{},s);BAs.near=near;BAs.n=sil(near,NEAR[0],NEAR[1]+130,1.05,'16');
+ // pase limpio (línea de puntos) en «nunca falla un pase»
+ BAs.pass=mk('path',{d:'M430 520 C 520 380 620 340 690 360',fill:'none',stroke:'#121212','stroke-width':5,'stroke-linecap':'round','stroke-dasharray':'2 14',opacity:0},s);
+ // notas del tablero (conexión): minuto, marcador, a mano
+ BAs.notes=[['53′',560,100],['1-1',730,80],['a mano',900,110]].map(([t,x,y],i)=>{const g=mk('g',{opacity:0},s);
+  const th=mk('path',{d:`M${x} ${y+60} L${NEAR[0]+30} ${NEAR[1]-300}`,stroke:'#55524c','stroke-width':3,pathLength:100,'stroke-dasharray':100,'stroke-dashoffset':100},g);
+  mk('rect',{x:x-80,y:y-55,width:160,height:110,rx:8,fill:'#fff',stroke:'#121212','stroke-width':4,transform:`rotate(${[-3,2,-2][i]} ${x} ${y})`},g);
+  mk('text',{x,y:y+24,'font-family':i<2?'M':'S','font-style':i<2?'normal':'italic','font-weight':i<2?800:400,'font-size':i<2?58:50,fill:'#121212','text-anchor':'middle'},g).textContent=t;
+  mk('circle',{cx:x,cy:y-50,r:9,fill:'#121212'},g);return [g,th]});}
+// 6 · fila de cambios que se vacía
+{const c=$('CA');c.insertAdjacentHTML('beforeend','<div class="lab" style="left:0;right:0;top:40px;text-align:center;font-size:24px;color:#77736b">CAMBIOS</div>');
+ for(let i=0;i<5;i++)c.insertAdjacentHTML('beforeend',`<div class="card" id="ca${i}" style="position:absolute;left:${10+i*200}px;top:200px;width:170px;height:190px;border-width:5px"><div style="position:absolute;left:30px;right:30px;top:80px;height:6px;background:#e3e6ea;border-radius:3px"></div></div><div id="cad${i}" style="position:absolute;left:${10+i*200}px;top:200px;width:170px;height:190px;border:5px dashed #c9ced4;border-radius:20px;opacity:0"></div>`)}
+// 7 · petos doblados del 14, sin una mancha
+{const s=$('PT');['8 nov','15 nov','22 nov'].forEach((d,i)=>{const x=230+i*420,g=mk('g',{id:'pt'+i},s);
+  mk('path',{d:`M${x-150} 140 L${x+150} 140 L${x+165} 420 L${x-165} 420 Z`,fill:'#f4f6f8',stroke:'#121212','stroke-width':6,'stroke-linejoin':'round'},g);
+  mk('path',{d:`M${x-150} 200 H${x+152}`,stroke:'#121212','stroke-width':3,opacity:.5},g);
+  mk('path',{d:`M${x-60} 140 Q${x} 175 ${x+60} 140`,fill:'none',stroke:'#121212','stroke-width':5},g);
+  mk('text',{x,y:370,'font-family':'M','font-weight':800,'font-size':150,fill:'#121212','text-anchor':'middle','letter-spacing':-6},g).textContent='14';
+  mk('text',{x,y:540,'font-family':'S','font-style':'italic','font-size':70,fill:'#55524c','text-anchor':'middle',id:'ptd'+i},g).textContent=d});
+ txt(s,1240,640,'EJEMPLO',18,'#9aa1a8','end');}
+// 8 · en negro: silueta calentando y la libreta del banquillo
+const DS={};{const s=$('DS');
+ DS.spot=mk('ellipse',{cx:LIB[0],cy:LIB[1]-40,rx:280,ry:240,fill:'#fff8e6',opacity:0},s);
+ DS.w=sil(mk('g',{},s),360,860,1.2,null,'#5d5f66');
+ const lb=mk('g',{transform:`translate(${LIB[0]-150} ${LIB[1]-150}) rotate(-4 150 130)`},s);DS.lib=lb;
+ mk('rect',{x:0,y:0,width:300,height:260,rx:10,fill:'#f6f4ef',stroke:'#2c2c31','stroke-width':5},lb);
+ mk('rect',{x:0,y:0,width:300,height:26,rx:6,fill:'#9aa1a8'},lb);
+ ['16','16','16'].forEach((n,i)=>{mk('text',{x:40,y:96+i*60,'font-family':'S','font-style':'italic','font-size':52,fill:'#2c2c31'},lb).textContent=['8 nov','15 nov','22 nov'][i];
+  mk('text',{x:250,y:96+i*60,'font-family':'M','font-weight':800,'font-size':50,fill:'#121212','text-anchor':'end'},lb).textContent='→ '+n});}
+// 9 · hoja del descanso, mini banda y reloj
+{const s=$('MB');mk('rect',{x:0,y:0,width:560,height:560,rx:6,fill:'#eef1ec',stroke:'#121212','stroke-width':5},s);mk('path',{d:'M0 420 H560',stroke:'#121212','stroke-width':5},s);
+ [[140,400,'16'],[330,250,null],[400,240,null],[470,255,null]].forEach(([x,y,n],i)=>sil(s,x,y,i?.35:.6,n));txt(s,280,520,'LA BANDA',20);}
+{const h=$('HJ');h.innerHTML=`<div class="lab" style="left:50px;top:48px;font-size:22px;color:#77736b">DESCANSO · CAMBIOS</div><div class="lab" style="right:50px;top:50px;font-size:16px;color:#9aa1a8">EJEMPLO</div>
+ <div style="position:absolute;left:50px;right:50px;top:96px;height:3px;background:#e3e6ea"></div>`+
+ [['55′','14','9'],['65′','18','11']].map(([m,a,b],i)=>`<div id="hr${i}" style="position:absolute;left:60px;top:${170+i*190}px;height:150px;width:660px;white-space:nowrap;font-family:S;font-style:italic;font-size:112px;line-height:150px;color:#121212">
+  <span style="color:#2f6bff">${m}</span>&nbsp;&nbsp;<span id="h14${i}">${a}</span> ↔ ${b}</div>`).join('')+
+ `<svg style="position:absolute;left:0;top:0;overflow:visible" width="760" height="900"><path id="rc14" d="M330 192 C 430 180 452 240 440 285 C 425 335 330 345 280 318 C 230 290 240 210 345 196" fill="none" stroke="#2f6bff" stroke-width="9" stroke-linecap="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/></svg>
+ <div class="hand" id="h1st" style="left:470px;top:560px;font-size:84px;color:#2f6bff;opacity:0">primero</div>`}
+const CAPS=[[.35,T.primer-.15,'Minuto <em>53.</em>'],[T.primer,T.y1-.12,'Primer cambio.'],[T.y1,T.como-.12,'Y vuelve a entrar <em>el 16.</em>'],
+ [T.como,T.juvenil-.4,'<em>Como el sábado pasado.</em>'],[T.juvenil,T.el9-.15,'Juvenil, 2.ª parte. <em>Empate a uno.</em>'],
+ [T.el9,T.levanta-.12,'El 16 calienta <em>más cerca de ti.</em>'],[T.levanta,T.los-.12,'Levanta la mano. <em>No falla un pase.</em>'],
+ [T.los,T.pero-.12,'Los del fondo, <em>también.</em>'],[T.pero,T.y18-.12,'Pero los cambios <em>se acaban.</em>'],
+ [T.y18,T.tres2-.12,'Y el 14 vuelve a casa <em>con el peto limpio.</em>'],[T.tres2,T.no-.2,'<em>Tres sábados.</em>'],
+ [T.no,T.lo2-.12,'No lo decidiste.'],[T.lo2,T.quien-.12,'Lo decidió el minuto, <em>el marcador…</em>'],[T.quien,CUT1-.35,'…y quién tenías <em>más a mano.</em>'],
+ [CUT1+.2,T.y30-.12,'<em>Calentar no es jugar.</em>','d'],[T.y30,CUT2-.4,'En caliente, <em>siempre entra el mismo.</em>','d'],
+ [CUT2+.2,T.primero-.12,'En el descanso, <em>escribe tus cambios.</em>'],[T.primero,T.y38-.12,'Primero, <em>el 14.</em>'],
+ [T.y38,T.apunt-.12,'En el 53 miras la hoja, <em>no la banda.</em>'],[T.apunt,T.porque-.12,'Apúntalo en la app de ProTeam.'],[T.porque,T.END-.7,'Porque el 53 <em>llega cada sábado.</em>']];
+window.frame=function(t){
+  const [cx,cy,z,mv]=cam(t);
+  const wd=$('world');wd.style.transform=`translate(540px,760px) scale(${z}) translate(${-cx}px,${-cy}px)`;
+  wd.style.filter=mv>.35?`blur(${(2.6*(mv-.35)/.65).toFixed(2)}px)`:'none';
+  // 1
+  place($('CK'),CKz[0],CKz[1],-1);
+  // 2 · foto y cartel; el 16 se ilumina
+  place($('PH'),PHp[0],PHp[1],-2.5);place($('CB'),CBp[0],CBp[1],2);
+  const l16=r(t,T.d16-.05,T.d16+.35);$('n16').style.color=`rgb(${lerp(18,47,l16)|0},${lerp(18,107,l16)|0},${lerp(18,255,l16)|0})`;
+  // 3 · tres carteles: entran uno a uno
+  place($('C3'),C3z[0],C3z[1]);for(let i=0;i<3;i++){const k=eo(r(t,T.como-.25+.35*i,T.como+.15+.35*i));const c=$('c3'+i);c.style.opacity=k;c.style.marginTop=(30*(1-k))+'px';$('c3d'+i).style.opacity=r(t,T.sabado2||T.como+.4+.35*i,(T.sabado2||T.como+.4+.35*i)+.4)}
+  // 4 · marcador y campo
+  place($('SB'),SBp[0],SBp[1]);place($('PI'),PIz[0],PIz[1]+80);
+  PD.forEach(([c,x,y],i)=>{const a=t*1.1+i*1.9;c.setAttribute('cx',(x+22*Math.sin(a)).toFixed(1));c.setAttribute('cy',(y+14*Math.cos(a*.8+i)).toFixed(1))});
+  // 5 · banda
+  place($('BA'),BAz[0],BAz[1]);
+  const bob=Math.sin(t*6.5)*6;BAs.n.g.setAttribute('transform',`translate(${NEAR[0]} ${NEAR[1]+130+bob}) scale(1.05)`);
+  const up=io(r(t,T.levanta-.1,T.levanta+.35))*(1-io(r(t,T.los-.3,T.los+.1)));BAs.n.arm.setAttribute('transform',`translate(66 -225) rotate(${lerp(-10,-165,up)})`);
+  const trot=r(t,T.los,T.los+.3);BAs.farS.forEach((f,i)=>{const [x,y]=FAR[i];f.g.setAttribute('transform',`translate(${x+trot*14*Math.sin(t*5+i*1.3)} ${y+trot*5*Math.abs(Math.sin(t*7+i))}) scale(.55)`)});
+  const foc=io(r(t,T.los-.15,T.los+.35))*(1-io(r(t,T.pero-.6,T.pero-.3)));       // cambio de foco: fondo nítido, primer término desenfocado
+  const conn=r(t,T.no-.4,T.no+.3);                                                  // conexión: luz sobre el cercano, el fondo se apaga
+  BAs.near.style.filter=`blur(${(5*foc).toFixed(2)}px)`;BAs.far.style.filter=`blur(${(4*(1-foc)*(1-conn)).toFixed(2)}px)`;BAs.far.style.opacity=1-.75*conn;
+  BAs.pass.setAttribute('opacity',r(t,T.nunca,T.nunca+.3)*(1-r(t,T.los-.3,T.los)));BAs.pass.setAttribute('stroke-dashoffset',-t*30);
+  const nt=[T.minuto2,T.marcador,T.mano2];BAs.notes.forEach(([g,th],i)=>{const k=r(t,nt[i]-.15,nt[i]+.25);g.setAttribute('opacity',t>T.no-.5?k:0);drawK(th,t>T.no-.5?io(r(t,nt[i],nt[i]+.5)):0)});
+  // 6 · cambios que se acaban
+  place($('CA'),CAz[0],CAz[1]);const c0=T.cambios-.1,c1=T.acaban+.5;for(let i=0;i<5;i++){const s=c0+(c1-c0)*i/5,k=io(r(t,s,s+.35));$('ca'+i).style.opacity=1-k;$('ca'+i).style.transform=`translateY(${-30*k}px)`;$('cad'+i).style.opacity=k}
+  // 7 · petos
+  place($('PT'),PTz[0]+0,PTz[1]+120-240);for(let i=0;i<3;i++){const g=$('pt'+i);const k=i===1?1:r(t,T.tres2-.1,T.tres2+.4);g.setAttribute('opacity',k);$('ptd'+i).setAttribute('opacity',r(t,T.tres2,T.tres2+.4))}
+  // 8 · negro
+  const dv=t>CUT1-.6&&t<CUT2+.6;['DK','DS'].forEach(k=>$(k).style.visibility=dv?'visible':'hidden');
+  place($('DK'),DKz[0],DKz[1]);place($('DS'),DKz[0],DKz[1]);
+  DS.w.g.setAttribute('transform',`translate(${360+Math.sin(t*3)*30} ${860-Math.abs(Math.sin(t*6))*18}) scale(1.2)`);
+  const lit=io(r(t,T.y30,T.y30+.8));DS.spot.setAttribute('opacity',(.2*lit).toFixed(3));DS.lib.setAttribute('opacity',lit);DS.w.g.setAttribute('opacity',1-.5*lit);
+  // 9 · solución
+  const cov=io(r(t,T.hoja-.2,T.banda2+.2));                                         // la hoja tapa la banda
+  place($('MB'),MBp[0],MBp[1],-2);$('MB').style.opacity=r(t,T.y38-.3,T.y38+.3);place($('CK2'),CK2p[0],CK2p[1],2);$('CK2').style.opacity=r(t,T.y38+.3,T.y38+.7);
+  place($('HJ'),lerp(HJp[0],MBp[0]+170,cov),lerp(HJp[1],MBp[1]+60,cov),lerp(0,-1,cov));
+  const w0=CUT2+.35,w1=T.minuto3+.4;for(let i=0;i<2;i++){const s=w0+(w1-w0)*i/2,e=w0+(w1-w0)*(i+1)/2-.05;$('hr'+i).style.clipPath=`inset(-10% ${(100-100*io(r(t,s,e))).toFixed(1)}% -10% -2%)`}
+  drawK($('rc14'),io(r(t,T.catorce2-.1,T.catorce2+.45)));$('h1st').style.opacity=r(t,T.y38+.4,T.y38+.8);
+  const pc=$('PC'),kk=r(t,w0,w1),row=Math.min(1,Math.floor(kk*2)),kr=io(cl(kk*2-row));
+  pc.style.opacity=r(t,w0-.3,w0)*(1-r(t,w1,w1+.3));
+  place(pc,HJp[0]-380+60+kr*560,HJp[1]-450+170+row*190-40+6*Math.sin(t*40),18);
+  place($('B'),BP[0],BP[1]);
+  // color: frío del «como el sábado pasado» al giro 2; blanco y azul en la solución
+  $('gr').style.opacity=t<CUT2?.5*r(t,T.como-.3,T.como+.3):0;
+  $('hook').style.opacity=t<10?1-r(t,T.primer-.4,T.primer-.1):r(t,T.porque+.6,T.porque+1.0);
+  // rótulo
+  let html='',a=0,dk=0;for(const [s,e,h,d] of CAPS)if(t>=s-.2&&t<e+.25){const aa=Math.min(r(t,s-.2,s+.15),1-r(t,e-.05,e+.25));if(aa>=a&&(aa>0||!html)){html=h;a=aa;dk=d?1:0}}
+  const cp=$('cap');if(cp.dataset.h!==html){cp.innerHTML=html;cp.dataset.h=html}
+  cp.style.opacity=a;cp.style.transform=`translateY(${(1-a)*12}px)`;cp.style.background=dk?'none':'rgba(251,250,247,.94)';cp.style.color=dk?'#f4f2ec':'#121212';
+  // giros: fundido a negro antes de «Calentar no es jugar»; de negro a blanco en «En el descanso»
+  $('ink').style.opacity=Math.max(r(t,CUT1-.35,CUT1-.03)*(1-r(t,CUT1+.03,CUT1+.45)), r(t,CUT2-.3,CUT2-.03)*(1-r(t,CUT2+.03,CUT2+.5)));
+};
+T.sabado2=null;
+Promise.all([...document.images].map(i=>i.decode().catch(()=>{}))).then(()=>document.fonts.ready).then(()=>{
+ const sp=$('h140'),x=60+sp.offsetLeft+sp.offsetWidth/2,y=170+75,a=sp.offsetWidth/2+44,b=70;
+ $('rc14').setAttribute('d',`M${x+10} ${y-b} C ${x+a*1.1} ${y-b} ${x+a*1.05} ${y+b} ${x} ${y+b} C ${x-a*1.1} ${y+b} ${x-a*1.05} ${y-b*.9} ${x+30} ${y-b-8}`);
+ const sh=SH.find(e=>e[0]===T.primero-.3);sh[1]=HJp[0]-380+x-20;sh[2]=HJp[1]-450+y+70;
+ frame(0);window.ready=true});
+</script></body></html>
