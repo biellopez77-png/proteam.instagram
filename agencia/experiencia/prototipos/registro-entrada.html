@@ -1,0 +1,388 @@
+<title>Registro y entrada ProTeam</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap">
+<style>
+/* Maqueta: el panel «Crear cuenta / Iniciar sesión» sobre la portada y la página de contraseña nueva. Una hoja blanca, tinta, un azul; el lápiz marca la pestaña y los avisos. */
+:root{
+  --paper:#ffffff; --paper-2:#f6f6f3; --ink:#0d0f14; --ink-2:#4a4f5a; --pencil:#8b8f97; --line:#e3e3de;
+  --blue:#2f6bff; --blue-soft:#e9efff; --blue-ink:#1d4fd8; --warn:#b4231b; --warn-soft:#fbecea; --ok:#1d7a46; --ok-soft:#e7f4ec;
+  --stage:#ecebe6; --veil:rgba(255,255,255,.78);
+  --display:"Instrument Serif", Georgia, "Times New Roman", serif;
+  --body:"Manrope", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#12151c; --paper-2:#171b23; --ink:#f2f1ec; --ink-2:#b9bcc4; --pencil:#8d929c; --line:#2a2f3a;
+  --blue:#5b8bff; --blue-soft:#1b2540; --blue-ink:#8eb0ff; --warn:#ff8a80; --warn-soft:#3a1d1c; --ok:#7fd6a2; --ok-soft:#16301f;
+  --stage:#0b0d12; --veil:rgba(18,21,28,.8); color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#12151c; --paper-2:#171b23; --ink:#f2f1ec; --ink-2:#b9bcc4; --pencil:#8d929c; --line:#2a2f3a;
+  --blue:#5b8bff; --blue-soft:#1b2540; --blue-ink:#8eb0ff; --warn:#ff8a80; --warn-soft:#3a1d1c; --ok:#7fd6a2; --ok-soft:#16301f;
+  --stage:#0b0d12; --veil:rgba(18,21,28,.8); color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--stage);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.55;-webkit-font-smoothing:antialiased;margin:0}
+button,input,select{font:inherit;color:inherit}
+button{cursor:pointer}
+:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
+@media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}}
+
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--paper)}
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--paper);border-bottom:1px solid var(--line);
+  padding-block:10px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.bar-in{max-width:1180px;margin:0 auto;display:flex;flex-wrap:wrap;gap:10px 16px;align-items:flex-end}
+.bar h1{font:400 22px/1 var(--display);margin:0 auto 4px 0;white-space:nowrap}
+.bar h1 i{color:var(--blue)}
+.ctl{display:flex;flex-direction:column;gap:3px;min-width:0}
+.ctl>span{font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--pencil);font-weight:700}
+.seg{display:flex;flex-wrap:wrap;gap:2px;background:var(--paper-2);border:1px solid var(--line);border-radius:9px;padding:2px}
+.seg button{border:0;background:transparent;padding:5px 10px;border-radius:7px;font-size:12.5px;font-weight:600;color:var(--ink-2)}
+.seg button[aria-pressed="true"]{background:var(--paper);color:var(--ink);box-shadow:0 1px 2px rgba(0,0,0,.08)}
+select.sel{font:600 12.5px var(--body);background:var(--paper-2);border:1px solid var(--line);border-radius:9px;padding:6px 8px;max-width:100%}
+.chk{display:flex;gap:6px;align-items:center;font-size:12.5px;font-weight:600;color:var(--ink-2);padding-bottom:5px}
+
+.stage{padding-block:28px 18px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.frame{margin:0 auto;background:var(--paper);border:1px solid var(--line);overflow:hidden;position:relative}
+.frame.mobile{max-width:375px;border-radius:34px;box-shadow:0 0 0 8px var(--ink),0 18px 50px rgba(0,0,0,.18);height:760px}
+.frame.desktop{max-width:1180px;border-radius:12px;box-shadow:0 18px 50px rgba(0,0,0,.10);height:720px}
+.urlbar{display:flex;align-items:center;gap:8px;padding:9px 14px;border-bottom:1px solid var(--line);font-size:12px;color:var(--pencil);background:var(--paper-2)}
+.urlbar b{font-weight:600;color:var(--ink-2)}
+.dots{display:flex;gap:5px}.dots i{width:9px;height:9px;border-radius:50%;background:var(--line)}
+.mobile .urlbar{display:none}
+.view{position:absolute;inset:0;overflow:hidden}
+.desktop .view{top:37px}
+
+/* Portada de fondo (solo contexto) */
+.land{position:absolute;inset:0;padding:34px 22px;display:grid;align-content:start;gap:14px;filter:blur(1.5px)}
+.land .lg{font:800 15px var(--body);color:var(--ink-2)}
+.land .lh{font:400 40px/1.02 var(--display);max-width:560px}
+.land .ll{height:12px;border-radius:6px;background:var(--paper-2);max-width:420px}
+.land .lb{width:230px;height:46px;border-radius:10px;background:var(--blue);opacity:.5}
+.desktop .land{padding:70px 80px}
+.desktop .land .lh{font-size:64px}
+.veil{position:absolute;inset:0;background:var(--veil);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.wrap{position:absolute;inset:0;overflow-y:auto;display:flex;align-items:flex-start;justify-content:center;padding:16px}
+.desktop .wrap{align-items:center;padding:24px}
+
+/* El panel */
+.sheet{position:relative;width:100%;max-width:448px;background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:22px 20px 20px;box-shadow:0 24px 60px rgba(13,15,20,.14);margin:auto 0}
+.desktop .sheet{padding:30px 32px 26px}
+.x{position:absolute;top:10px;right:10px;width:44px;height:44px;border:0;background:none;border-radius:10px;color:var(--pencil);display:grid;place-items:center}
+.x:hover{background:var(--paper-2);color:var(--ink)}
+.x svg{width:18px;height:18px}
+.brand{font:800 13px var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--pencil)}
+.h{font:400 34px/1.05 var(--display);margin:6px 44px 0 0;text-wrap:balance}
+.h em{color:var(--blue);font-style:italic}
+.stroke{display:block;width:120px;height:10px;margin-top:2px}
+.stroke path{fill:none;stroke:var(--blue);stroke-width:2.2;stroke-linecap:round;stroke-dasharray:160;stroke-dashoffset:160;animation:draw .8s .1s ease-in-out forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+.lead{margin:8px 0 0;color:var(--ink-2);font-size:14.5px;max-width:36ch}
+
+/* Pestañas a lápiz */
+.tabs{display:grid;grid-template-columns:1fr 1fr;margin-top:20px;border-bottom:1px solid var(--line)}
+.tab{border:0;background:none;min-height:46px;font-weight:700;font-size:14.5px;color:var(--pencil);position:relative}
+.tab[aria-selected="true"]{color:var(--ink)}
+.tab[aria-selected="true"]::after{content:"";position:absolute;left:18%;right:18%;bottom:-1px;height:2.5px;border-radius:2px;background:var(--blue)}
+
+form.f{display:grid;gap:14px;margin-top:18px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.two>*{min-width:0}
+label.fl{display:grid;gap:5px}
+label.fl>span{font-size:13.5px;font-weight:700}
+.inp{width:100%;min-height:46px;border:1px solid var(--line);border-radius:10px;padding:10px 12px;background:var(--paper);font-size:15px}
+.inp:focus{outline:2px solid var(--blue);outline-offset:0;border-color:transparent}
+.inp.bad{border-color:var(--warn)}
+.pw{position:relative}
+.pw .inp{padding-right:84px}
+.pw button{position:absolute;right:4px;top:4px;bottom:4px;border:0;background:none;color:var(--blue-ink);font-weight:700;font-size:13px;padding:0 10px;border-radius:8px}
+.hint{font-size:12.5px;color:var(--pencil);margin:0}
+.fe{font-size:13px;color:var(--warn);margin:0}
+.alert{display:grid;gap:3px;background:var(--warn-soft);color:var(--warn);border-radius:10px;padding:11px 13px;font-size:13.5px}
+.alert b{font-weight:800}
+.alert .acts{display:flex;flex-wrap:wrap;gap:4px 14px;margin-top:4px}
+.alert .acts button{border:0;background:none;padding:6px 0;font-weight:800;color:var(--warn);text-decoration:underline;text-underline-offset:3px;font-size:13.5px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:10px;padding:10px 16px;font-weight:700;font-size:14.5px;border:1px solid transparent;min-height:46px;width:100%}
+.btn-p{background:var(--blue);color:#fff}
+.btn-p[disabled]{opacity:.55;cursor:progress}
+.btn-o{background:var(--paper);border-color:var(--line);color:var(--ink)}
+.linkb{display:block;margin:2px auto 0;background:none;border:0;color:var(--blue-ink);font-weight:700;font-size:14px;min-height:44px}
+.spin{width:15px;height:15px;border-radius:50%;border:2px solid rgba(255,255,255,.4);border-top-color:#fff;animation:sp .8s linear infinite}
+@keyframes sp{to{transform:rotate(360deg)}}
+.small{font-size:12.5px;color:var(--pencil);margin:0;text-align:center}
+
+/* Sobre (correo enviado) */
+.env{display:block;width:84px;height:58px;margin:8px 0 4px}
+.env rect,.env path{fill:none;stroke:var(--ink-2);stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round}
+.env .b{stroke:var(--blue);stroke-width:2}
+.mail{font-weight:800;word-break:break-all;background:var(--paper-2);border-radius:8px;padding:8px 10px;font-size:14px}
+.note{font-size:13.5px;color:var(--ink-2);margin:0}
+.stack{display:grid;gap:12px;margin-top:16px}
+.ok{display:flex;gap:10px;align-items:center;background:var(--ok-soft);color:var(--ok);border-radius:10px;padding:10px 12px;font-weight:700;font-size:14px}
+
+/* Página de contraseña nueva */
+.page{position:absolute;inset:0;overflow-y:auto;display:flex;justify-content:center;align-items:flex-start;padding:40px 16px;background:var(--paper)}
+.desktop .page{align-items:center;background:var(--paper-2)}
+.card{width:100%;max-width:448px;background:var(--paper);border-radius:18px;padding:4px 4px 20px}
+.desktop .card{border:1px solid var(--line);padding:30px 32px 26px}
+.rules{list-style:none;margin:0;padding:0;display:grid;gap:4px;font-size:13px}
+.rules li{display:flex;gap:8px;align-items:center;color:var(--ink-2)}
+.rules li::before{content:"";width:14px;height:14px;border:1.4px solid var(--pencil);border-radius:50%;flex:none}
+.rules li.on{color:var(--ok)}
+.rules li.on::before{border-color:var(--ok);background:var(--ok);box-shadow:inset 0 0 0 2.5px var(--paper)}
+
+/* Actual (hoy) */
+.cur .sheet{border-radius:16px;text-align:center}
+.cur .seg2{display:flex;gap:4px;background:var(--paper-2);border-radius:10px;padding:4px;margin-top:18px}
+.cur .seg2 button{flex:1;border:0;min-height:42px;border-radius:8px;background:none;color:var(--ink-2);font-size:14px}
+.cur .seg2 button[aria-pressed="true"]{background:var(--paper);color:var(--ink);font-weight:600;box-shadow:0 1px 2px rgba(0,0,0,.08)}
+.cur form.f{text-align:left}
+.cur .h{font:600 20px/1.3 var(--body);margin:4px 30px 0}
+.toast{position:absolute;left:50%;bottom:18px;transform:translateX(-50%);background:var(--ink);color:var(--paper);border-radius:10px;padding:10px 14px;font-size:13.5px;font-weight:600;max-width:calc(100% - 32px);box-shadow:0 10px 30px rgba(0,0,0,.2);z-index:5}
+.toast.err::before{content:"● ";color:#ff6b61}
+.toast.good::before{content:"● ";color:#5fd38d}
+
+/* Propuesta resaltada */
+.show-prop [data-prop]{outline:1.5px dashed var(--blue);outline-offset:4px;border-radius:6px;position:relative}
+.show-prop [data-prop]::after{content:"Propuesta";position:absolute;top:-11px;right:6px;background:var(--blue);color:#fff;font:700 9.5px/1 var(--body);letter-spacing:.06em;text-transform:uppercase;padding:3px 6px;border-radius:4px;z-index:2;pointer-events:none}
+
+.legend{max-width:1180px;margin:18px auto 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px 26px;font-size:13.5px;color:var(--ink-2)}
+.legend>div{min-width:0}
+.legend b{color:var(--ink);display:block;font-size:12px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:4px}
+.legend ul{margin:0;padding-left:18px}
+.legend-wrap{padding-block:0 40px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+</style>
+
+<header class="bar"><div class="bar-in">
+  <h1>Registro y <i>entrada</i></h1>
+  <div class="ctl"><span>Versión</span><div class="seg" id="c-ver"><button data-v="prop">Propuesta</button><button data-v="act">Actual (hoy)</button></div></div>
+  <div class="ctl"><span>Cuándo</span><div class="seg" id="c-when"><button data-v="antes">Antes del 28/11</button><button data-v="despues">Desde el 28/11</button></div></div>
+  <div class="ctl"><span>Pantalla</span><select class="sel" id="c-screen">
+    <option value="register">Crear cuenta</option><option value="login">Iniciar sesión</option><option value="confirm">Revisa tu correo</option>
+    <option value="forgot">He olvidado la contraseña</option><option value="reset">Contraseña nueva (/reset-password)</option></select></div>
+  <div class="ctl"><span>Simular al pulsar</span><select class="sel" id="c-sim">
+    <option value="ok">Todo bien</option><option value="empty">Campos vacíos</option><option value="loading">Se queda cargando</option>
+    <option value="creds">Email o contraseña mal</option><option value="unconfirmed">Email sin confirmar</option><option value="exists">Email ya registrado</option>
+    <option value="rate">Demasiados correos</option><option value="network">Sin conexión</option><option value="expired">Enlace caducado</option></select></div>
+  <div class="ctl"><span>Pantalla de</span><div class="seg" id="c-dev"><button data-v="mobile">Móvil 375</button><button data-v="desktop">Escritorio</button></div></div>
+  <label class="chk"><input type="checkbox" id="c-mark"> Marcar lo propuesto</label>
+</div></header>
+
+<main class="stage"><div id="frame" class="frame mobile">
+  <div class="urlbar"><span class="dots"><i></i><i></i><i></i></span><b id="url">proteam.app/?auth=register</b></div>
+  <div class="view" id="view"></div>
+</div></main>
+
+<section class="legend-wrap"><div class="legend">
+  <div><b>Se conserva</b><ul><li>Panel sobre la portada (<code>?auth=register</code> / <code>?auth=login</code>), pestañas, cierre con la X, fuera o Escape.</li><li>Campos Nombre, Apellidos, Email y Contraseña (mínimo 8 al crear).</li><li>Correo de confirmación, «Revisa tu correo», enlace para restablecer y <code>/reset-password</code>.</li><li>A dónde lleva al entrar (<code>/admin</code>, <code>/teams</code> o <code>next</code>).</li></ul></div>
+  <div><b>Cambia (propuesto)</b><ul><li>Título según de dónde viene: lista de espera, mes de prueba o entrar.</li><li>Errores de Supabase en español, dentro del panel y con salida.</li><li>«He olvidado la contraseña» como paso propio, con su correo enviado.</li><li><code>/reset-password</code> en español, con las reglas a la vista y el enlace caducado resuelto.</li></ul></div>
+  <div><b>Fuera a propósito</b><ul><li>Precios, ofertas y condiciones: viven en la portada y en el onboarding.</li><li>Club Fundador, número de apuntados y nombre de Biel.</li><li>Entrar con Google u otros: no existe hoy.</li></ul></div>
+</div></section>
+
+<script>
+const S={ver:"prop",when:"antes",screen:"register",sim:"ok",dev:"mobile",mark:false,
+  busy:false,err:null,fields:{},showPw:false,toast:null,done:null,
+  name:"Marta",surname:"Ruiz",email:"marta.ruiz@ejemplo.es",pw:"pizarra-martes",pw2:"",newpw:"Pizarra-martes-7",newpw2:"Pizarra-martes-7"};
+const $=s=>document.querySelector(s);
+const esc=t=>String(t).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const P=()=>' data-prop';
+const X='<button class="x" type="button" aria-label="Cerrar panel" onclick="closeSheet()"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>';
+const STROKE='<svg class="stroke" viewBox="0 0 120 10" aria-hidden="true"><path d="M2 7 C 30 2, 70 9, 118 4"/></svg>';
+const ENV='<svg class="env" viewBox="0 0 84 58" aria-hidden="true"><rect x="2" y="6" width="70" height="46" rx="3"/><path d="M3 8 L37 32 L71 8"/><path class="b" d="M60 46 C 66 44, 72 40, 80 34"/></svg>';
+
+function setSeg(id,val){document.querySelectorAll(`#${id} button`).forEach(b=>b.setAttribute("aria-pressed",b.dataset.v===val))}
+function syncBar(){setSeg("c-ver",S.ver);setSeg("c-when",S.when);setSeg("c-dev",S.dev);$("#c-screen").value=S.screen;$("#c-sim").value=S.sim;$("#c-mark").checked=S.mark}
+function go(screen){S.screen=screen;S.err=null;S.fields={};S.busy=false;S.done=null;S.toast=null;render()}
+function closeSheet(){S.err=null;S.toast=null;S.done="closed";render()}
+
+/* ---------- PROPUESTA ---------- */
+function head(){
+  if(S.screen==="login") return `<p class="brand">ProTeam</p><h2 class="h" id="dlg-t">Entra en <em>ProTeam</em></h2>${STROKE}<p class="lead">Entrena, compite, evoluciona.</p>`;
+  if(S.when==="antes") return `<p class="brand"${P()}>Lista de espera</p><h2 class="h" id="dlg-t"${P()}>Apúntate a la <em>lista</em></h2>${STROKE}<p class="lead"${P()}>Crea tu cuenta para entrar en la lista de espera de ProTeam.</p>`;
+  return `<p class="brand"${P()}>Mes de prueba</p><h2 class="h" id="dlg-t"${P()}>Empieza tu <em>mes de prueba</em></h2>${STROKE}<p class="lead"${P()}>Crea tu cuenta. En el paso siguiente creas tu equipo o te unes al de tu club.</p>`;
+}
+function field(id,label,type,val,opts={}){
+  const bad=S.fields[id];
+  const input=`<input class="inp${bad?" bad":""}" id="f-${id}" type="${type}" value="${esc(val)}" ${opts.ac?`autocomplete="${opts.ac}"`:""} aria-invalid="${!!bad}" ${bad?`aria-describedby="e-${id}"`:""} oninput="S['${opts.key||id}']=this.value">`;
+  const body=opts.pw?`<div class="pw">${input}<button type="button" onclick="S.showPw=!S.showPw;render()" aria-label="${S.showPw?"Ocultar contraseña":"Mostrar contraseña"}"${P()}>${S.showPw?"Ocultar":"Mostrar"}</button></div>`:input;
+  return `<label class="fl" for="f-${id}"><span>${label}</span>${body}${opts.hint&&!bad?`<p class="hint"${P()}>${opts.hint}</p>`:""}${bad?`<p class="fe" id="e-${id}"${P()}>${bad}</p>`:""}</label>`;
+}
+function alertBox(){
+  if(!S.err) return "";
+  const a=S.err;
+  return `<div class="alert" role="alert"${P()}><b>${a.t}</b><span>${a.s}</span>${a.acts?`<div class="acts">${a.acts}</div>`:""}</div>`;
+}
+function submitBtn(label,busyLabel){
+  return `<button class="btn btn-p" type="submit" ${S.busy?"disabled":""}>${S.busy?`<span class="spin" aria-hidden="true"></span>${busyLabel}`:label}</button>`;
+}
+function tabs(){
+  return `<div class="tabs" role="tablist"${P()}><button class="tab" role="tab" type="button" aria-selected="${S.screen==="login"}" onclick="go('login')">Iniciar sesión</button><button class="tab" role="tab" type="button" aria-selected="${S.screen==="register"}" onclick="go('register')">Crear cuenta</button></div>`;
+}
+function propSheet(){
+  let inner="";
+  if(S.done==="in"){
+    inner=`<p class="brand">ProTeam</p><h2 class="h" id="dlg-t">Ya estás <em>dentro</em></h2>${STROKE}<div class="stack"><div class="ok" role="status">Sesión iniciada.</div><p class="note">Ahora se abre «Mis equipos» (o <code>/onboarding</code> si aún no tienes equipo). El panel se cierra solo.</p></div>`;
+  } else if(S.screen==="register"||S.screen==="login"){
+    const reg=S.screen==="register";
+    inner=head()+tabs()+`<form class="f" novalidate onsubmit="event.preventDefault();doSubmit()">
+      ${reg?`<div class="two">${field("name","Nombre","text",S.name,{ac:"given-name"})}${field("surname","Apellidos","text",S.surname,{ac:"family-name"})}</div>`:""}
+      ${field("email","Email","email",S.email,{ac:"email"})}
+      ${field("pw","Contraseña",S.showPw?"text":"password",S.pw,{pw:true,ac:reg?"new-password":"current-password",hint:reg?"Al menos 8 caracteres.":""})}
+      ${alertBox()}
+      ${submitBtn(reg?"Crear cuenta":"Entrar",reg?"Creando tu cuenta…":"Entrando…")}
+      ${reg?"":`<button type="button" class="linkb" onclick="go('forgot')"${P()}>¿Has olvidado tu contraseña?</button>`}
+    </form>`;
+  } else if(S.screen==="confirm"){
+    inner=`<p class="brand">${S.when==="antes"?"Lista de espera":"Mes de prueba"}</p><h2 class="h" id="dlg-t">Revisa tu <em>correo</em></h2>${STROKE}${ENV}
+    <div class="stack"><p class="note">Te hemos enviado un enlace para confirmar tu cuenta a:</p><div class="mail">${esc(S.email)}</div>
+    <p class="note"${P()}>Ábrelo desde este móvil u ordenador y después inicia sesión. Si no lo ves en unos minutos, mira en spam o en promociones.</p>
+    ${alertBox()}
+    <button class="btn btn-p" type="button" onclick="go('login')">Iniciar sesión</button>
+    <button class="btn btn-o" type="button" onclick="resend()" ${S.busy?"disabled":""}${P()}>${S.busy?"Enviando…":"Reenviar el correo"}</button>
+    <button class="linkb" type="button" onclick="go('register')"${P()}>Me he equivocado de email</button></div>`;
+  } else if(S.screen==="forgot"){
+    if(S.done==="sent"){
+      inner=`<p class="brand">Contraseña</p><h2 class="h" id="dlg-t">Mira tu <em>correo</em></h2>${STROKE}${ENV}<div class="stack"><p class="note">Si hay una cuenta con este email, te hemos enviado un enlace para crear una contraseña nueva:</p><div class="mail">${esc(S.email)}</div><p class="note">El enlace sirve una sola vez. Si caduca, pide otro aquí.</p><button class="btn btn-p" type="button" onclick="go('login')">Volver a iniciar sesión</button></div>`;
+    } else {
+      inner=`<p class="brand"${P()}>Contraseña</p><h2 class="h" id="dlg-t"${P()}>Crea una <em>nueva</em></h2>${STROKE}<p class="lead"${P()}>Escribe el email de tu cuenta y te mandamos un enlace para cambiarla.</p>
+      <form class="f" novalidate onsubmit="event.preventDefault();doSubmit()">${field("email","Email","email",S.email,{ac:"email"})}${alertBox()}${submitBtn("Enviar enlace","Enviando enlace…")}
+      <button type="button" class="linkb" onclick="go('login')">Volver</button></form>`;
+    }
+  }
+  return `<div class="land" aria-hidden="true"><div class="lg">ProTeam</div><div class="lh">${S.when==="antes"?"Blackout Friday":"ProTeam"}</div><div class="ll"></div><div class="ll" style="max-width:320px"></div><div class="lb"></div></div>
+  <div class="veil"></div><div class="wrap"><section class="sheet" role="dialog" aria-modal="true" aria-labelledby="dlg-t">${X}${inner}</section></div>`;
+}
+function propReset(){
+  const pw=S.newpw, rules=[[pw.length>=14,"14 caracteres o más"],[/[a-z]/.test(pw)&&/[A-Z]/.test(pw),"Mayúscula y minúscula"],[/[0-9]/.test(pw),"Un número"],[/[^A-Za-z0-9]/.test(pw),"Un símbolo (- . ! ?)"]];
+  let body;
+  if(S.done==="saved"){
+    body=`<h1 class="h">Contraseña <em>guardada</em></h1>${STROKE}<div class="stack"><div class="ok" role="status">Contraseña actualizada.</div><p class="note">Ahora entra con tu email y la contraseña nueva.</p><button class="btn btn-p" type="button" onclick="S.screen='login';S.done=null;S.err=null;render()">Iniciar sesión</button></div>`;
+  } else if(S.sim==="expired"){
+    body=`<p class="brand">Contraseña</p><h1 class="h">Este enlace ya <em>no sirve</em></h1>${STROKE}<div class="stack"${P()}><p class="note">Los enlaces para cambiar la contraseña caducan al rato y solo valen una vez. Pide otro y ábrelo en cuanto te llegue.</p><button class="btn btn-p" type="button" onclick="S.screen='forgot';S.done=null;S.err=null;render()">Pedir otro enlace</button><button class="linkb" type="button" onclick="go('login')">Iniciar sesión</button></div>`;
+  } else {
+    body=`<p class="brand">Contraseña</p><h1 class="h">Elige tu contraseña <em>nueva</em></h1>${STROKE}
+    <form class="f" novalidate onsubmit="event.preventDefault();saveReset()">
+      <label class="fl" for="f-np"><span>Contraseña nueva</span><div class="pw"><input class="inp" id="f-np" type="${S.showPw?"text":"password"}" value="${esc(S.newpw)}" autocomplete="new-password" oninput="S.newpw=this.value;render();keepFocus('f-np')"><button type="button" onclick="S.showPw=!S.showPw;render()"${P()}>${S.showPw?"Ocultar":"Mostrar"}</button></div></label>
+      <ul class="rules" aria-label="Lo que necesita"${P()}>${rules.map(([on,t])=>`<li class="${on?"on":""}">${t}</li>`).join("")}</ul>
+      <label class="fl" for="f-np2"><span>Repítela</span><input class="inp${S.fields.np2?" bad":""}" id="f-np2" type="${S.showPw?"text":"password"}" value="${esc(S.newpw2)}" autocomplete="new-password" oninput="S.newpw2=this.value">${S.fields.np2?`<p class="fe"${P()}>${S.fields.np2}</p>`:""}</label>
+      ${alertBox()}
+      ${submitBtn("Guardar contraseña","Guardando…")}
+    </form>`;
+  }
+  return `<div class="page"><div class="card">${body}</div></div>`;
+}
+
+/* ---------- ACTUAL (HOY) ---------- */
+function curSheet(){
+  let inner;
+  if(S.screen==="confirm"){
+    inner=`<div style="padding:8px 0"><div style="font-size:34px;color:var(--blue)">✉</div><p style="font-weight:600;margin:8px 0 2px">Revisa tu correo</p><p class="note" style="font-size:13.5px">Te hemos enviado un enlace para confirmar tu cuenta. Ábrelo y después inicia sesión.</p><p class="small" style="margin:6px 0 14px">${esc(S.email)}</p><button class="btn btn-p" onclick="go('login')">Iniciar sesión</button></div>`;
+  } else {
+    const reg=S.screen==="register";
+    inner=`<div class="seg2"><button aria-pressed="${!reg}" onclick="go('login')">↪ Iniciar sesión</button><button aria-pressed="${reg}" onclick="go('register')">＋ Crear cuenta</button></div>
+    <form class="f" onsubmit="event.preventDefault();submitCur()">
+      ${reg?`<div class="two"><label class="fl"><span>Nombre</span><input class="inp" value="${esc(S.name)}"></label><label class="fl"><span>Apellidos</span><input class="inp" value="${esc(S.surname)}"></label></div>`:""}
+      <label class="fl"><span>Email</span><input class="inp" type="email" value="${esc(S.email)}"></label>
+      <label class="fl"><span>Contraseña</span><input class="inp" type="password" value="${esc(S.pw)}"></label>
+      <button class="btn btn-p" type="submit" ${S.busy?"disabled":""}>${S.busy?"Cargando…":reg?"Crear cuenta":"Entrar"}</button>
+      ${reg?"":`<button type="button" class="linkb" style="font-size:12px;color:var(--ink-2);text-decoration:underline;font-weight:500" onclick="forgotCur()">¿Has olvidado tu contraseña?</button>`}
+    </form>`;
+  }
+  return `<div class="land" aria-hidden="true"><div class="lg">ProTeam</div><div class="lh">${S.when==="antes"?"Blackout Friday":"ProTeam"}</div><div class="ll"></div><div class="lb"></div></div>
+  <div class="veil"></div><div class="wrap cur"><section class="sheet" role="dialog" aria-modal="true" aria-label="Cuenta ProTeam">${X}<p class="brand" style="letter-spacing:.1em">ProTeam</p><h2 class="h">Entrena, compite, evoluciona.</h2>${inner}</section></div>${S.toast?`<div class="toast ${S.toast.k}">${esc(S.toast.t)}</div>`:""}`;
+}
+function curReset(){
+  if(S.screen!=="reset") return "";
+  return `<div class="page"><div class="card cur" style="border:1px solid var(--line);padding:24px">
+    <div style="display:flex;gap:12px;align-items:center;margin-bottom:18px"><span style="width:40px;height:40px;border-radius:12px;background:var(--blue-soft);color:var(--blue);display:grid;place-items:center">⚿</span><div><p style="font-weight:600;margin:0">Establir una contrasenya nova</p><p class="note" style="font-size:13px">Mínim 14 caràcters, amb majúscula, minúscula, número i símbol.</p></div></div>
+    ${S.sim==="expired"?`<p class="note" style="background:var(--paper-2);border:1px solid var(--line);border-radius:8px;padding:8px 10px;font-size:13px;margin-bottom:14px">Obre aquesta pàgina des de l'enllaç que has rebut per correu. Si l'enllaç ha caducat, torna a demanar-ne un de nou des de la pantalla d'inici de sessió.</p>`:""}
+    <form class="f" onsubmit="event.preventDefault();S.toast={k:'good',t:'Contrasenya actualitzada.'};render()"><label class="fl"><span>Contrasenya nova</span><input class="inp" type="password" ${S.sim==="expired"?"disabled":""}></label><label class="fl"><span>Confirmar contrasenya</span><input class="inp" type="password" ${S.sim==="expired"?"disabled":""}></label><button class="btn btn-p" ${S.sim==="expired"?"disabled":""}>Desar contrasenya</button></form>
+  </div>${S.toast?`<div class="toast ${S.toast.k}">${esc(S.toast.t)}</div>`:""}</div>`;
+}
+
+/* ---------- Comportamiento simulado ---------- */
+const ERR={
+  network:{t:"No hay conexión.",s:"Revisa tu conexión y vuelve a intentarlo; no se ha guardado nada."},
+  creds:{t:"El email o la contraseña no coinciden.",s:"Revisa que el email esté bien escrito. Si no recuerdas la contraseña, crea una nueva.",acts:`<button type="button" onclick="go('forgot')">Crear una contraseña nueva</button>`},
+  unconfirmed:{t:"Aún no has confirmado tu email.",s:"Busca el correo de ProTeam (también en spam) y abre el enlace. Después vuelve a entrar.",acts:`<button type="button" onclick="resend()">Reenviar el correo</button>`},
+  exists:{t:"Ya hay una cuenta con este email.",s:"Entra con tu contraseña o crea una nueva si no la recuerdas.",acts:`<button type="button" onclick="go('login')">Iniciar sesión</button><button type="button" onclick="go('forgot')">Crear una contraseña nueva</button>`},
+  rate:{t:"Has pedido varios correos seguidos.",s:"Espera unos minutos antes de pedir otro; el último que te llegue es el que vale."}
+};
+const CUR_ERR={network:"Failed to fetch",creds:"Invalid login credentials",unconfirmed:"Email not confirmed",exists:"User already registered",rate:"Email rate limit exceeded"};
+function validate(){
+  const f={};const reg=S.screen==="register";
+  if(S.sim==="empty"){S.name=S.surname=S.email=S.pw="";}
+  if(reg&&!S.name.trim()) f.name="Escribe tu nombre.";
+  if(reg&&!S.surname.trim()) f.surname="Escribe tus apellidos.";
+  if(!S.email.trim()) f.email="Escribe tu email.";
+  else if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(S.email.trim())) f.email="A este email le falta algo: revisa la @ y el dominio.";
+  if(S.screen!=="forgot"){ if(!S.pw) f.pw="Escribe tu contraseña."; else if(reg&&S.pw.length<8) f.pw="Tiene que tener al menos 8 caracteres."; }
+  S.fields=f;return !Object.keys(f).length;
+}
+function doSubmit(){
+  S.err=null;
+  if(!validate()){render();focusFirstBad();return}
+  S.busy=true;render();
+  if(S.sim==="loading") return;
+  setTimeout(()=>{
+    S.busy=false;
+    const s=S.screen;
+    const map={register:["exists","rate","network"],login:["creds","unconfirmed","network"],forgot:["rate","network"]};
+    if(map[s].includes(S.sim)){S.err=ERR[S.sim];render();return}
+    if(s==="register"){S.screen="confirm";}
+    else if(s==="login"){S.done="in";}
+    else if(s==="forgot"){S.done="sent";}
+    render();
+  },800);
+}
+function resend(){
+  S.busy=true;S.err=null;render();
+  if(S.sim==="loading")return;
+  setTimeout(()=>{S.busy=false;if(S.sim==="rate"||S.sim==="network"){S.err=ERR[S.sim]}else{S.err=null;S.screen="confirm";S.done=null}render();
+    if(!S.err){const v=$("#view .stack");if(v){const n=document.createElement("div");n.className="ok";n.setAttribute("role","status");n.textContent="Correo reenviado.";v.prepend(n)}}},700);
+}
+function saveReset(){
+  S.err=null;S.fields={};
+  const pw=S.newpw;const okRules=pw.length>=14&&/[a-z]/.test(pw)&&/[A-Z]/.test(pw)&&/[0-9]/.test(pw)&&/[^A-Za-z0-9]/.test(pw);
+  if(!okRules){S.err={t:"A la contraseña le falta algo.",s:"Mira la lista: lo que no está en verde es lo que falta."};render();return}
+  if(S.newpw2!==pw){S.fields.np2="No coincide con la de arriba.";render();return}
+  if(S.sim==="network"){S.err=ERR.network;render();return}
+  S.busy=true;render();if(S.sim==="loading")return;
+  setTimeout(()=>{S.busy=false;S.done="saved";render()},700);
+}
+function submitCur(){
+  S.busy=true;S.toast=null;render();if(S.sim==="loading")return;
+  setTimeout(()=>{S.busy=false;const s=S.screen;
+    const map={register:["exists","rate","network"],login:["creds","unconfirmed","network"]};
+    if(map[s]&&map[s].includes(S.sim)){S.toast={k:"err",t:CUR_ERR[S.sim]};render();return}
+    if(S.sim==="empty"){S.toast={k:"err",t:"(el navegador marca «Rellena este campo» en el primero vacío)"};render();return}
+    if(s==="register"){S.screen="confirm";S.toast={k:"good",t:"Cuenta creada. Revisa tu correo para confirmarla."}}
+    else S.toast={k:"good",t:"¡Bienvenido!"};
+    render()},700);
+}
+function forgotCur(){
+  S.toast=S.sim==="rate"?{k:"err",t:"Email rate limit exceeded"}:S.sim==="empty"?{k:"err",t:"Escribe tu email para recibir el enlace."}:{k:"good",t:"Si la dirección existe, hemos enviado un enlace para restablecer la contraseña."};render();
+}
+function focusFirstBad(){const el=document.querySelector('#view .inp.bad');if(el)el.focus()}
+function keepFocus(id){const el=document.getElementById(id);if(el){el.focus();const v=el.value;el.setSelectionRange(v.length,v.length)}}
+
+function render(){
+  syncBar();
+  const fr=$("#frame");fr.className="frame "+S.dev+(S.mark&&S.ver==="prop"?" show-prop":"");
+  const urls={register:"proteam.app/?auth=register",login:"proteam.app/?auth=login",confirm:"proteam.app/?auth=register",forgot:"proteam.app/?auth=login",reset:"proteam.app/reset-password"};
+  $("#url").textContent=urls[S.screen];
+  let html;
+  if(S.done==="closed"){html=`<div class="page"><div class="card"><p class="brand">Portada</p><h2 class="h">Panel <em>cerrado</em></h2>${STROKE}<p class="lead">Se ha cerrado con la X (o tocando fuera, o con Escape). Igual que hoy.</p><div class="stack"><button class="btn btn-p" onclick="go('register')">Volver a abrirlo</button></div></div></div>`}
+  else if(S.ver==="prop") html=S.screen==="reset"?propReset():propSheet();
+  else {
+    if(S.screen==="forgot"){S.screen="login"}
+    html=S.screen==="reset"?curReset():curSheet();
+  }
+  $("#view").innerHTML=html;
+}
+document.querySelectorAll(".seg").forEach(seg=>seg.addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;
+  const k={"c-ver":"ver","c-when":"when","c-dev":"dev"}[seg.id];S[k]=b.dataset.v;S.err=null;S.toast=null;S.busy=false;if(k!=="dev")S.done=null;render()}));
+$("#c-screen").addEventListener("change",e=>go(e.target.value));
+$("#c-sim").addEventListener("change",e=>{S.sim=e.target.value;S.err=null;S.toast=null;S.busy=false;S.done=null;
+  if(e.target.value!=="empty"&&!S.email){S.name="Marta";S.surname="Ruiz";S.email="marta.ruiz@ejemplo.es";S.pw="pizarra-martes"}render()});
+$("#c-mark").addEventListener("change",e=>{S.mark=e.target.checked;render()});
+render();
+</script>
