@@ -22,6 +22,11 @@ Lista viva. **Cada tema tiene muchas ideas; cada idea da 3 reels; cada reel llev
 10. D · Goles en los 5 minutos después del descanso: el mito y el dato (verificar) · fútbol
 11. E · La banda que más te ataca: cómo detectarla en 20 minutos · fútbol
 12. H · El tiempo muerto más famoso del baloncesto (pieza aparte, solo baloncesto) · baloncesto
+13. E · El córner en contra que se repite: cómo verlo antes del tercero · fútbol [añadida 23/11 · Dani B]
+14. E · Qué apuntar en el descanso cuando vas perdiendo de tres · general [añadida 23/11 · Dani B]
+15. E · El rival cambia de dibujo en el minuto 20: cómo darte cuenta desde la banda · fútbol [añadida 23/11 · Dani B]
+16. E · El cuarto en el que siempre os vais: encontrarlo con tus propios parciales (sin cifras externas) · baloncesto [añadida 23/11 · Dani B]
+17. E · El descanso de balonmano en tres frases: qué decir y qué callar · balonmano [añadida 23/11 · Dani B]
 
 ## T02 · Planificación de la semana
 1. H · El parón de Navidad que dura cuatro semanas (C3) · fútbol [hecha → T02-1-r1, r2, r3 · Dani A · fuente (solo r1): Joo 2018, PLoS ONE 13(5): e0196212]
@@ -127,7 +132,7 @@ Lista viva. **Cada tema tiene muchas ideas; cada idea da 3 reels; cada reel llev
 1. E · Cuatro sitios: libreta, Excel, grupo y pizarra (E1) · general
 2. H · El entrenador voluntario: 6 horas a la semana que nadie ve · general [descartada: sin fuente · 23/11 · Dani B · las encuestas encontradas (LiFEsports/Aspen, Central Ohio 2019 y National Coach Survey 2022, EE. UU.) no dan las horas de un entrenador voluntario de base; sin dato de España]
 3. D · Cuánto tiempo prepara un entrenador de base su semana (buscar encuesta; si no hay, no se usa) · general
-4. E · Domingo por la noche: la planificación que te come el fin de semana · general [en curso 2026-11-23 · Dani B]
+4. E · Domingo por la noche: la planificación que te come el fin de semana · general [hecha → T10-4-r1, r2, r3 · Dani B · 23/11 · sin hechos externos: escenas en segunda persona (r1 fútbol, r2 balonmano, r3 general)]
 5. E · Cómo preparar la semana en 20 minutos · general
 6. C · ProTeam: un sitio para todo · general
 7. H · Lo que un entrenador de base hace un lunes (POV con cámara en mano) · general
