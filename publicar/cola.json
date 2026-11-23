@@ -256,5 +256,22 @@
    "status": "pendiente"
   },
   "added": "2026-11-23T12:05:29.229886+01:00"
+ },
+ {
+  "id": "T01-5-r2",
+  "kind": "reel",
+  "files": [
+   "publicar/media/T01-5-r2-1.mp4",
+   "publicar/media/T01-5-r2-2.jpg"
+  ],
+  "caption": "La pregunta del descanso que casi nadie hace, y que te habría ahorrado dos goles.\n\nSu diez bajaba a recibir desde el minuto veinte. Tu segundo lo vio y lo apuntó, pero en el descanso le preguntaste por tarjetas y por cansancio. Antes del partido, cerrad tres preguntas, y la tercera siempre es la misma: ¿qué han cambiado ellos?\n\n(Escena de ejemplo: marcador, minutos y dorsales no son de ningún equipo.)\n\n¿En el descanso preguntas por el rival o solo por los tuyos?",
+  "state": "revisión",
+  "ig": {
+   "status": "pendiente"
+  },
+  "tiktok": {
+   "status": "pendiente"
+  },
+  "added": "2026-11-23T12:28:47.565206+01:00"
  }
 ]
