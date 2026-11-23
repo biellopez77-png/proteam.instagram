@@ -76,7 +76,7 @@ Lista viva. **Cada tema tiene muchas ideas; cada idea da 3 reels; cada reel llev
 10. E · Cuándo un dato no sirve: muestras pequeñas en base · general
 
 ## T06 · Gestión del grupo y vestuario
-1. H · La charla que Ferguson nunca daba (verificar anécdotas documentadas) · fútbol
+1. H · La charla que Ferguson nunca daba (verificar anécdotas documentadas) · fútbol [hecha → T06-1-r1, r2, r3 · Dani A · fuente: Elberse y Ferguson, «Ferguson's Formula», HBR oct. 2013 (cotejar el PDF original antes de montar)]
 2. E · El jugador que no juega: cómo mantenerlo dentro · general [hecha → T06-2-r1, r2, r3 · Dani B · sin hechos externos: escenas en segunda persona (r1 fútbol, r2 baloncesto, r3 balonmano)]
 3. E · Minutos justos en categorías de base: una regla simple · fútbol
 4. H · El capitán que no llevaba brazalete · general
