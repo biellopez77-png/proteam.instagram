@@ -60,7 +60,7 @@ Lista viva. **Cada tema tiene muchas ideas; cada idea da 3 reels; cada reel llev
 1. D · Paró doce y fue su mejor partido (D2) → versión fútbol: porcentaje de paradas · fútbol [hecha → T04-1-r1, r2, r3 · Dani A · fuentes: MLSsoccer 1/7/2014 (Howard); Opta en Stadium Astro 28/5/2022 (Courtois); MLSsoccer 17/6/2014 (Ochoa)]
 2. H · El portero que estudiaba a los lanzadores (casos de penaltis documentados) · fútbol [hecha → T04-2-r1, r2, r3 · Dani B · fuentes: AP/Al Jazeera y SI, 6/7/2014 (Krul); FourFourTwo, 6/7/2024 (Pickford, Suiza); CNBC 11/7/2021 y GiveMeSport 14/7/2021 (Pickford, final de 2021)]
 3. E · Contar tiros, no goles · general
-4. E · El entreno del portero que no tiene entrenador de porteros · fútbol
+4. E · El entreno del portero que no tiene entrenador de porteros · fútbol [en curso 2026-11-23 · Dani B]
 5. H · El penalti de Panenka y lo que nos enseña sobre leer al portero · fútbol
 6. I · Las tandas de penaltis: qué se sabe de quién chuta primero (estudios publicados, verificar) · fútbol
 7. E · El portero también tiene una banda débil · fútbol
