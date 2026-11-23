@@ -431,5 +431,22 @@
    "status": "pendiente"
   },
   "added": "2026-11-23T14:42:15.745140+01:00"
+ },
+ {
+  "id": "T07-2-r2",
+  "kind": "reel",
+  "files": [
+   "publicar/media/T07-2-r2-1.mp4",
+   "publicar/media/T07-2-r2-2.jpg"
+  ],
+  "caption": "Si tu delantero mete todas el martes y ninguna el sábado, la culpa puede ser de la fila.\n\nEn la fila tira uno y esperan cinco, y nadie le aprieta. El sábado, lo primero que tiene encima es un defensa. Prueba el martes: quita la fila, dos 4 contra 4 con el mismo objetivo, porterías pequeñas y gol solo si llega de pase y tiro. Tú, fuera.\n\n(Escena de ejemplo: marcas y cuentas no son de ningún equipo.)\n\n¿Cuántos tienes esperando en la fila de tu ejercicio de tiro?",
+  "state": "revisión",
+  "ig": {
+   "status": "pendiente"
+  },
+  "tiktok": {
+   "status": "pendiente"
+  },
+  "added": "2026-11-23T15:04:25.401148+01:00"
  }
 ]
