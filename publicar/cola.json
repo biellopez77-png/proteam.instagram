@@ -361,5 +361,58 @@
    "status": "pendiente"
   },
   "added": "2026-11-23T14:06:14.212896+01:00"
+ },
+ {
+  "id": "T01-1-r3-carrusel",
+  "kind": "carrusel",
+  "files": [
+   "publicar/media/T01-1-r3-carrusel-1.jpg",
+   "publicar/media/T01-1-r3-carrusel-2.jpg",
+   "publicar/media/T01-1-r3-carrusel-3.jpg",
+   "publicar/media/T01-1-r3-carrusel-4.jpg",
+   "publicar/media/T01-1-r3-carrusel-5.jpg",
+   "publicar/media/T01-1-r3-carrusel-6.jpg"
+  ],
+  "caption": "Tu primera vuelta ya es una base de datos. Solo falta apuntarla.\n\nAl acabar cada partido, tres líneas del rival: el peligroso, la banda y el balón parado. Pon la ficha en la semana en que vuelves a jugar contra él y léela antes de preparar el partido.\n\nPara el papel de Lehmann en el Mundial 2006 se usó una base de 13.000 penaltis (FIFA, 6/7/2016). Tú ya has visto a cada rival una vez.\n\nGuárdalo y pásaselo a tu segundo.\n\n(Foto del papel: Wikimedia Commons, dominio público.)",
+  "state": "revisión",
+  "ig": {
+   "status": "pendiente"
+  },
+  "tiktok": {
+   "status": "no"
+  },
+  "added": "2026-11-23T14:37:52.606906+01:00"
+ },
+ {
+  "id": "T01-1-r3-story1",
+  "kind": "story",
+  "files": [
+   "publicar/media/T01-1-r3-story1.png"
+  ],
+  "caption": "¿Contra quién vuelves a jugar este mes?",
+  "state": "revisión",
+  "ig": {
+   "status": "pendiente"
+  },
+  "tiktok": {
+   "status": "no"
+  },
+  "added": "2026-11-23T14:37:52.670041+01:00"
+ },
+ {
+  "id": "T01-1-r3-story2",
+  "kind": "story",
+  "files": [
+   "publicar/media/T01-1-r3-story2.png"
+  ],
+  "caption": "Del rival de la ida, ¿qué tienes? Lo que recuerdo / Tres líneas apuntadas",
+  "state": "revisión",
+  "ig": {
+   "status": "pendiente"
+  },
+  "tiktok": {
+   "status": "no"
+  },
+  "added": "2026-11-23T14:37:52.716583+01:00"
  }
 ]
