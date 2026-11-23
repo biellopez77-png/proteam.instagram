@@ -94,7 +94,7 @@ Lista viva. **Cada tema tiene muchas ideas; cada idea da 3 reels; cada reel llev
 1. H · La charla que Ferguson nunca daba (verificar anécdotas documentadas) · fútbol [hecha → T06-1-r1, r2, r3 · Dani A · fuente: Elberse y Ferguson, «Ferguson's Formula», HBR oct. 2013 (cotejar el PDF original antes de montar)]
 2. E · El jugador que no juega: cómo mantenerlo dentro · general [hecha → T06-2-r1, r2, r3 · Dani B · sin hechos externos: escenas en segunda persona (r1 fútbol, r2 baloncesto, r3 balonmano)]
 3. E · Minutos justos en categorías de base: una regla simple · fútbol
-4. H · El capitán que no llevaba brazalete · general [en curso 2026-11-23 · Dani B]
+4. H · El capitán que no llevaba brazalete · general [hecha → T06-4-r1, r2, r3 · Dani B · 23/11 · sin hechos externos: no hay caso documentado que encaje sin forzarlo, se cuenta como escena en segunda persona (r1 fútbol juvenil: tras un gol en contra todos miran al 6; r2 baloncesto cadete: el corro del tiempo muerto se cierra alrededor del 8; r3 balonmano juvenil: en la 6:0 canta los cambios el central, el capitán es extremo). Misma solución: mira a quién miran, dale un trabajo con nombre y díselo a los dos (r3, con un recambio). Solución entre el 68 % y el 74 %, máx. 2 L]
 5. I · Qué dicen los estudios sobre feedback positivo vs correctivo (verificar) · general
 6. E · Tres frases que no deberías decir en el vestuario · general
 7. E · El grupo de WhatsApp de padres: reglas en 5 líneas · general
