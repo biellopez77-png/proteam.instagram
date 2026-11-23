@@ -14,5 +14,58 @@
    "status": "pendiente"
   },
   "added": "2026-11-23T07:59:06.582636+01:00"
+ },
+ {
+  "id": "b2-rpe-carrusel",
+  "kind": "carrusel",
+  "files": [
+   "publicar/media/b2-rpe-carrusel-1.jpg",
+   "publicar/media/b2-rpe-carrusel-2.jpg",
+   "publicar/media/b2-rpe-carrusel-3.jpg",
+   "publicar/media/b2-rpe-carrusel-4.jpg",
+   "publicar/media/b2-rpe-carrusel-5.jpg",
+   "publicar/media/b2-rpe-carrusel-6.jpg"
+  ],
+  "caption": "Al acabar cada entreno, una pregunta a cada jugador: del 1 al 10, ¿cuánto te ha costado? Multiplícalo por los minutos y tienes la carga del día. Tres semanas comparando jueves y sábados.\nGuárdalo y pásaselo a tu segundo.\n\nLas cifras de las láminas son un EJEMPLO.\nMétodo: RPE de sesión (Foster et al., 2001).\nFoto: Steffen Prößdorf (CC BY-SA 4.0)\n#entrenadores #baloncesto #entrenamiento",
+  "state": "revisión",
+  "ig": {
+   "status": "pendiente"
+  },
+  "tiktok": {
+   "status": "no"
+  },
+  "added": "2026-11-23T08:33:44.019547+01:00"
+ },
+ {
+  "id": "b2-rpe-story1",
+  "kind": "story",
+  "files": [
+   "publicar/media/b2-rpe-story1.png"
+  ],
+  "caption": "Pregunta: ¿Qué día entrenas más fuerte? (sticker de pregunta a mano). Foto: DoD (DP).",
+  "state": "revisión",
+  "ig": {
+   "status": "pendiente"
+  },
+  "tiktok": {
+   "status": "no"
+  },
+  "added": "2026-11-23T08:33:44.052150+01:00"
+ },
+ {
+  "id": "b2-rpe-story2",
+  "kind": "story",
+  "files": [
+   "publicar/media/b2-rpe-story2.png"
+  ],
+  "caption": "Encuesta: ¿Les preguntas cuánto les ha costado? Lo pregunto / Lo intuyo (sticker de encuesta a mano).",
+  "state": "revisión",
+  "ig": {
+   "status": "pendiente"
+  },
+  "tiktok": {
+   "status": "no"
+  },
+  "added": "2026-11-23T08:33:44.101096+01:00"
  }
 ]
