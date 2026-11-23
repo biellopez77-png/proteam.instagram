@@ -273,5 +273,59 @@
    "status": "pendiente"
   },
   "added": "2026-11-23T12:28:47.565206+01:00"
+ },
+ {
+  "id": "T01-1-r2-carrusel",
+  "kind": "carrusel",
+  "files": [
+   "publicar/media/T01-1-r2-carrusel-1.jpg",
+   "publicar/media/T01-1-r2-carrusel-2.jpg",
+   "publicar/media/T01-1-r2-carrusel-3.jpg",
+   "publicar/media/T01-1-r2-carrusel-4.jpg",
+   "publicar/media/T01-1-r2-carrusel-5.jpg",
+   "publicar/media/T01-1-r2-carrusel-6.jpg",
+   "publicar/media/T01-1-r2-carrusel-7.jpg"
+  ],
+  "caption": "Entra al descanso con algo escrito. Tus jugadores te miran las manos.\n\nMundial 2006: Cambiasso no estaba en la lista de Lehmann. Según quien lo vio, miró el papel igual, se tomó su tiempo y se lo paró.\n\nDesde el minuto 35, tu segundo te escribe tres líneas: qué funciona, qué falla y un cambio. Las lees. Luego hablas.\n\nGuárdalo y pásaselo a tu segundo.\n\n(Fuente: FIFA, 6/7/2016. Papel de Lehmann: Andreas Köpke, dominio público. Las tres líneas de la lámina 5 son un ejemplo.)\n\n¿Qué es lo primero que dices al entrar al vestuario?",
+  "state": "revisión",
+  "ig": {
+   "status": "pendiente"
+  },
+  "tiktok": {
+   "status": "no"
+  },
+  "added": "2026-11-23T12:36:04.320909+01:00"
+ },
+ {
+  "id": "T01-1-r2-story1",
+  "kind": "story",
+  "files": [
+   "publicar/media/T01-1-r2-story1.png"
+  ],
+  "caption": "¿Qué es lo primero que dices al entrar al vestuario? (sticker de pregunta a mano)",
+  "state": "revisión",
+  "ig": {
+   "status": "pendiente"
+  },
+  "tiktok": {
+   "status": "no"
+  },
+  "added": "2026-11-23T12:36:04.360583+01:00"
+ },
+ {
+  "id": "T01-1-r2-story2",
+  "kind": "story",
+  "files": [
+   "publicar/media/T01-1-r2-story2.png"
+  ],
+  "caption": "En el descanso, ¿con qué entras? Con algo escrito / Con lo que me sale (sticker de encuesta a mano)",
+  "state": "revisión",
+  "ig": {
+   "status": "pendiente"
+  },
+  "tiktok": {
+   "status": "no"
+  },
+  "added": "2026-11-23T12:36:04.402032+01:00"
  }
 ]
