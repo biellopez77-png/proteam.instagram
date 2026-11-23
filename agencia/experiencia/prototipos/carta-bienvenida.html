@@ -1,0 +1,300 @@
+<title>Carta del Club Fundador</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap">
+<style>
+/* Maqueta: la carta de Biel como una hoja de papel (no un diálogo), con membrete, palabras intactas y la firma a lápiz azul. Blanco, tinta, un azul, lápiz, aire. */
+:root{
+  --paper:#ffffff; --paper-2:#f6f6f3; --sheet:#fffffd; --ink:#0d0f14; --ink-2:#4a4f5a; --pencil:#8b8f97; --line:#e3e3de; --rule:#ecebe6;
+  --blue:#2f6bff; --blue-soft:#e9efff; --blue-ink:#1d4fd8; --warn:#b4231b; --warn-soft:#fbecea;
+  --stage:#ecebe6; --scrim:rgba(13,15,20,.42);
+  --display:"Instrument Serif", Georgia, "Times New Roman", serif;
+  --body:"Manrope", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#12151c; --paper-2:#171b23; --sheet:#161a22; --ink:#f2f1ec; --ink-2:#b9bcc4; --pencil:#8d929c; --line:#2a2f3a; --rule:#222732;
+  --blue:#5b8bff; --blue-soft:#1b2540; --blue-ink:#8eb0ff; --warn:#ff8a80; --warn-soft:#3a1d1c; --stage:#0b0d12; --scrim:rgba(0,0,0,.6); color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#12151c; --paper-2:#171b23; --sheet:#161a22; --ink:#f2f1ec; --ink-2:#b9bcc4; --pencil:#8d929c; --line:#2a2f3a; --rule:#222732;
+  --blue:#5b8bff; --blue-soft:#1b2540; --blue-ink:#8eb0ff; --warn:#ff8a80; --warn-soft:#3a1d1c; --stage:#0b0d12; --scrim:rgba(0,0,0,.6); color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--stage);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.55;-webkit-font-smoothing:antialiased}
+button,select{font:inherit;color:inherit}
+button{cursor:pointer}
+:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
+
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--paper)}
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--paper);border-bottom:1px solid var(--line);
+  padding-block:10px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.bar-in{max-width:1180px;margin:0 auto;display:flex;flex-wrap:wrap;gap:10px 18px;align-items:flex-end}
+.bar h1{font:400 22px/1 var(--display);margin:0 auto 4px 0;white-space:nowrap}
+.bar h1 i{color:var(--blue)}
+.ctl{display:flex;flex-direction:column;gap:3px;min-width:0}
+.ctl>span{font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--pencil);font-weight:700}
+.seg{display:flex;flex-wrap:wrap;gap:2px;background:var(--paper-2);border:1px solid var(--line);border-radius:9px;padding:2px}
+.seg button{border:0;background:transparent;padding:5px 10px;border-radius:7px;font-size:12.5px;font-weight:600;color:var(--ink-2)}
+.seg button[aria-pressed="true"]{background:var(--paper);color:var(--ink);box-shadow:0 1px 2px rgba(0,0,0,.08)}
+select.sel{font:600 12.5px var(--body);background:var(--paper-2);border:1px solid var(--line);border-radius:9px;padding:6px 8px;max-width:100%}
+.chk{display:flex;gap:6px;align-items:center;font-size:12.5px;font-weight:600;color:var(--ink-2);padding-bottom:5px}
+
+.stage{padding-block:28px 24px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.frame{margin:0 auto;background:var(--paper);border:1px solid var(--line);overflow:hidden;position:relative}
+.frame.mobile{max-width:375px;border-radius:34px;box-shadow:0 0 0 8px var(--ink),0 18px 50px rgba(0,0,0,.18);height:760px}
+.frame.desktop{max-width:1180px;border-radius:12px;box-shadow:0 18px 50px rgba(0,0,0,.10);height:760px}
+.urlbar{display:flex;align-items:center;gap:8px;padding:9px 14px;border-bottom:1px solid var(--line);font-size:12px;color:var(--pencil);background:var(--paper-2)}
+.urlbar b{font-weight:600;color:var(--ink-2)}
+.dots{display:flex;gap:5px}.dots i{width:9px;height:9px;border-radius:50%;background:var(--line)}
+.mobile .urlbar{display:none}
+.screen{position:absolute;inset:0}
+.desktop .screen{top:37px}
+
+/* Fondo: la app detrás (Configuración · Club Fundador), atenuada */
+.behind{position:absolute;inset:0;padding:22px 24px;display:flex;flex-direction:column;gap:14px;color:var(--ink-2)}
+.behind .t{font:800 18px var(--body);color:var(--ink)}
+.behind .tabs{display:flex;gap:16px;font-size:13px;border-bottom:1px solid var(--line);padding-bottom:8px;flex-wrap:wrap}
+.behind .tabs b{color:var(--ink);border-bottom:2px solid var(--blue);padding-bottom:7px;margin-bottom:-9px}
+.behind .blk{border:1px solid var(--line);border-radius:14px;height:90px;background:var(--paper-2)}
+.scrim{position:absolute;inset:0;background:var(--scrim)}
+
+/* Propuesta resaltada */
+.show-prop [data-prop]{outline:1.5px dashed var(--blue);outline-offset:4px;border-radius:6px;position:relative}
+.show-prop [data-prop]::after{content:"Propuesta";position:absolute;top:-11px;right:6px;background:var(--blue);color:#fff;font:700 9.5px/1 var(--body);letter-spacing:.06em;text-transform:uppercase;padding:3px 6px;border-radius:4px;z-index:2;pointer-events:none}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:7px;border-radius:10px;padding:9px 16px;font-weight:700;font-size:14.5px;border:1px solid transparent;min-height:44px;white-space:nowrap}
+.btn-p{background:var(--blue);color:#fff}
+.btn-o{background:var(--paper);border-color:var(--line);color:var(--ink)}
+.btn-g{background:transparent;color:var(--ink-2);border:0;padding-inline:8px}
+
+/* LA HOJA (propuesta) */
+.sheet{position:absolute;background:var(--sheet);display:flex;flex-direction:column;overflow:hidden}
+.mobile .sheet{inset:0}
+.desktop .sheet{left:50%;top:50%;transform:translate(-50%,-50%);width:560px;max-height:calc(100% - 48px);border-radius:6px;box-shadow:0 1px 0 var(--line),0 30px 70px rgba(0,0,0,.22)}
+.sheet-scroll{flex:1;overflow-y:auto;padding:26px 26px 18px;position:relative}
+.desktop .sheet-scroll{padding:40px 52px 22px}
+/* margen a lápiz, como una hoja de libreta */
+.sheet-scroll::before{content:"";position:absolute;top:0;bottom:0;left:14px;width:1px;background:var(--rule)}
+.desktop .sheet-scroll::before{left:30px}
+.close{position:absolute;top:calc(10px + env(safe-area-inset-top,0px));right:10px;z-index:3;width:40px;height:40px;border-radius:50%;border:0;background:transparent;color:var(--pencil);display:grid;place-items:center}
+.close svg{width:18px;height:18px;stroke:currentColor;stroke-width:2;fill:none}
+.head{display:flex;align-items:center;gap:12px;padding-bottom:14px;border-bottom:1px solid var(--rule);margin-right:34px}
+.head .k{font-size:11px;letter-spacing:.12em;text-transform:uppercase;font-weight:700;color:var(--pencil);line-height:1.35}
+.head .k b{display:block;color:var(--blue-ink);letter-spacing:.14em;font-size:11.5px}
+.dateline{margin:14px 0 0;font-size:12.5px;color:var(--pencil);font-variant-numeric:tabular-nums}
+.title{font:400 34px/1.08 var(--display);margin:18px 0 6px;letter-spacing:-.005em;text-wrap:balance}
+.desktop .title{font-size:40px}
+.title em{font-style:italic;position:relative;white-space:nowrap}
+.title em svg{position:absolute;left:-2%;bottom:-8px;width:104%;height:12px;overflow:visible}
+.title em path{fill:none;stroke:var(--blue);stroke-width:2.4;stroke-linecap:round}
+.letter{display:flex;flex-direction:column;gap:14px;margin-top:20px;font-size:16px;line-height:1.72;max-width:62ch}
+.letter p{margin:0}
+.sign{margin-top:18px}
+.sig{width:150px;height:70px;display:block}
+.sig path{fill:none;stroke:var(--blue);stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round}
+.animate .sig path{stroke-dasharray:1;stroke-dashoffset:1;animation:sign 2.2s cubic-bezier(.6,.05,.3,1) .5s forwards}
+.animate .sig path:nth-child(2){animation-delay:2.6s;animation-duration:.2s}
+.animate .sig path:nth-child(3){animation-delay:2.7s;animation-duration:.7s}
+@keyframes sign{to{stroke-dashoffset:0}}
+.animate .title em path{stroke-dasharray:1;stroke-dashoffset:1;animation:sign .7s ease-in-out .2s forwards}
+.sign small{display:block;font:italic 400 16px var(--display);color:var(--ink-2);margin-top:2px}
+.foot{border-top:1px solid var(--rule);padding:12px 26px calc(14px + env(safe-area-inset-bottom,0px));display:flex;align-items:center;justify-content:space-between;gap:10px;background:var(--sheet)}
+.desktop .foot{padding:14px 52px 18px}
+.foot .hint{font-size:12.5px;color:var(--pencil);min-width:0}
+.mono{font-variant-numeric:tabular-nums}
+
+/* estados */
+.state{position:absolute;inset:0;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:10px;padding:32px 28px}
+.desktop .state{left:50%;top:50%;transform:translate(-50%,-50%);inset:auto;width:520px;background:var(--sheet);border-radius:6px;padding:40px 48px;box-shadow:0 30px 70px rgba(0,0,0,.22)}
+.mobile .state{background:var(--sheet)}
+.state h2{font:400 30px/1.1 var(--display);margin:6px 0 0;text-wrap:balance}
+.state p{margin:0;color:var(--ink-2);max-width:42ch}
+.state .row{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.sk{background:var(--paper-2);border-radius:6px;height:14px}
+.loading{justify-content:flex-start;padding-top:60px;gap:14px;width:100%}
+.loading .sk:nth-child(1){width:60%;height:12px}
+.loading .sk:nth-child(2){width:85%;height:34px;margin-top:10px}
+.loading .sk:nth-child(n+3){width:100%}
+.loading .sk:last-child{width:70%}
+.pulse .sk{animation:pl 1.2s ease-in-out infinite alternate}
+@keyframes pl{to{opacity:.45}}
+.warnbox{display:flex;gap:8px;align-items:flex-start;background:var(--warn-soft);color:var(--warn);border-radius:10px;padding:10px 12px;font-size:13px;font-weight:600}
+
+/* Nota de comportamiento (fuera de la hoja) */
+.note{max-width:1180px;margin:14px auto 0;font-size:13px;color:var(--ink-2);display:flex;gap:8px;align-items:flex-start}
+.note b{color:var(--ink)}
+.note .tag{flex:none;font:700 10px/1 var(--body);letter-spacing:.08em;text-transform:uppercase;color:#fff;background:var(--ink-2);border-radius:4px;padding:4px 6px;margin-top:2px}
+.mobile ~ .note{max-width:375px}
+
+/* ACTUAL (PR #1): diálogo */
+.dlg{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:calc(100% - 32px);max-width:512px;max-height:92%;overflow-y:auto;background:var(--paper);border-radius:12px;padding:24px;box-shadow:0 20px 50px rgba(0,0,0,.25);border:1px solid var(--line)}
+.dlg .c{display:flex;flex-direction:column;align-items:center;text-align:center}
+.dlg .lab{margin-top:8px;font-size:12px;font-weight:600;letter-spacing:.2em;color:var(--blue)}
+.dlg h3{margin:8px 0 0;text-align:center;font:600 24px/1.25 var(--body)}
+.dlg .tx{margin-top:12px;display:flex;flex-direction:column;gap:12px;font-size:15px;line-height:1.75}
+.dlg .tx p{margin:0}
+.dlg .ft{margin-top:6px;display:flex;align-items:flex-end;justify-content:space-between;gap:16px}
+.dlg .ft small{font:italic 14px var(--display);color:var(--ink-2)}
+.dlg .x{position:absolute;top:12px;right:12px;opacity:.6;border:0;background:none;font-size:18px}
+
+/* Leyenda */
+.legend{max-width:1180px;margin:22px auto 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px 28px;font-size:13.5px;color:var(--ink-2)}
+.legend h3{font:400 20px var(--display);color:var(--ink);margin:0 0 6px}
+.legend ul{margin:0;padding-left:18px;display:flex;flex-direction:column;gap:4px}
+.legend li{min-width:0}
+.toast{position:absolute;left:50%;bottom:calc(84px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:var(--paper);border-radius:10px;padding:10px 14px;font-size:13px;font-weight:600;width:max-content;max-width:calc(100% - 32px);z-index:5}
+
+@media (prefers-reduced-motion: reduce){ .animate .sig path,.animate .title em path{animation:none;stroke-dashoffset:0} .pulse .sk{animation:none} }
+.reduced .sig path,.reduced .title em path{animation:none!important;stroke-dashoffset:0!important}
+</style>
+
+<header class="bar">
+  <div class="bar-in">
+    <h1>Carta del <i>Club Fundador</i></h1>
+    <div class="ctl"><span>Pantalla</span><div class="seg" data-k="view"><button data-v="mobile" aria-pressed="true">Móvil 375</button><button data-v="desktop">Escritorio</button></div></div>
+    <div class="ctl"><span>Versión</span><div class="seg" data-k="ver"><button data-v="prop" aria-pressed="true">Propuesta</button><button data-v="now">Actual (PR #1)</button></div></div>
+    <div class="ctl"><span>Cuándo se abre</span><div class="seg" data-k="when"><button data-v="first" aria-pressed="true">Primera vez</button><button data-v="again">Releer</button></div></div>
+    <label class="ctl" for="who"><span>Fundador</span>
+      <select class="sel" id="who">
+        <option value="nn">Con nombre y número</option>
+        <option value="n0">Con nombre, sin número</option>
+        <option value="00">Sin nombre, sin número</option>
+      </select></label>
+    <label class="ctl" for="st"><span>Estado</span>
+      <select class="sel" id="st">
+        <option value="ok">Carta</option>
+        <option value="loading">Cargando</option>
+        <option value="error">Error al cargar</option>
+        <option value="savefail">Error al guardar «leída»</option>
+        <option value="empty">Sin verificar (vacío)</option>
+      </select></label>
+    <div class="ctl"><span>&nbsp;</span>
+      <div style="display:flex;gap:12px;flex-wrap:wrap">
+        <label class="chk" for="rm"><input type="checkbox" id="rm"> Sin animación</label>
+        <label class="chk" for="sp"><input type="checkbox" id="sp" checked> Marcar propuestas</label>
+      </div></div>
+    <button class="btn btn-o" id="replay" style="min-height:34px;padding:5px 12px;font-size:12.5px">Volver a firmar</button>
+  </div>
+</header>
+
+<main class="stage">
+  <div class="frame mobile" id="frame">
+    <div class="urlbar"><span class="dots"><i></i><i></i><i></i></span><b>proteam.app</b><span id="path">/app</span></div>
+    <div class="screen" id="screen"></div>
+  </div>
+  <p class="note" id="note"></p>
+
+  <section class="legend" aria-label="Qué cambia y qué se conserva">
+    <div>
+      <h3>Se conserva</h3>
+      <ul>
+        <li>Las palabras de Biel, tal cual: título, los 4 párrafos, «Biel · creador de ProTeam» y «Entrar».</li>
+        <li>La firma dibujada (<span class="mono">FounderSignature</span>, mismo trazo y mismos tiempos) y la quietud con <span class="mono">prefers-reduced-motion</span>.</li>
+        <li>Se abre sola una vez al verificarse (<span class="mono">shouldShowFounderWelcome</span>) y al cerrarla se llama a <span class="mono">mark_founder_welcome_seen</span>.</li>
+        <li>El número solo aparece cuando está asignado: «Fundador Nº 011».</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Propuesta</h3>
+      <ul>
+        <li>Una hoja, no un diálogo: en el móvil ocupa la pantalla; en el ordenador, 560 px sobre la app atenuada.</li>
+        <li>Membrete pequeño con la insignia y el número; el número deja de ir dentro de la roseta grande.</li>
+        <li>Fecha de verificación como fecha de la carta (sale de <span class="mono">reviewed_at</span>).</li>
+        <li>El nombre subrayado a lápiz azul; «Entrar» se puede pulsar desde el primer segundo, sin esperar a la firma.</li>
+        <li>Al releer, «Cerrar» en lugar de «Entrar».</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Fuera de la carta</h3>
+      <ul>
+        <li>Número de apuntados o cualquier recuento.</li>
+        <li>Precio fundador, importes o tickets regalo.</li>
+        <li>Ventajas en la carta: ya están en «Lo que tienes» (pestaña Club Fundador).</li>
+        <li>El nombre de Biel fuera de esta hoja.</li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<script>
+(function(){
+  var S={view:"mobile",ver:"prop",when:"first",who:"nn",st:"ok",rm:false,sp:true,run:0};
+  var people={nn:{name:"Marta",num:11,date:"24 de noviembre de 2026"},n0:{name:"Marta",num:null,date:"24 de noviembre de 2026"},"00":{name:"",num:null,date:"24 de noviembre de 2026"}};
+  var $=function(id){return document.getElementById(id)};
+
+  function rosette(){var p=[];for(var i=0;i<24;i++){var a=Math.PI*i/12-Math.PI/2,r=i%2===0?100:88;p.push((110+r*Math.cos(a)).toFixed(1)+","+(110+r*Math.sin(a)).toFixed(1))}return p.join(" ")}
+  var RO=rosette();
+  function badge(size,num,uid){var n=num?("Nº "+String(num).padStart(3,"0")):"";
+    return '<svg width="'+size+'" height="'+size+'" viewBox="0 0 220 220" role="img" aria-label="Insignia del Club Fundador"><defs><linearGradient id="g'+uid+'" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="var(--blue)"/><stop offset="1" stop-color="var(--blue-ink)"/></linearGradient></defs><polygon points="'+RO+'" fill="url(#g'+uid+')"/><circle cx="110" cy="110" r="70" fill="none" stroke="#fff" stroke-opacity=".35" stroke-width="2"/><path d="M122 52L78 120h30l-12 48 46-70h-30l10-46z" fill="#fff" stroke="#fff" stroke-width="6" stroke-linejoin="round"/>'+(n?'<text x="110" y="196" text-anchor="middle" font-weight="800" font-size="22" fill="#fff" font-family="Manrope, sans-serif">'+n+'</text>':'')+'</svg>'}
+  var SIG='<svg class="sig" viewBox="0 0 170 80" aria-hidden="true"><path pathLength="1" d="M18 62 C22 44 26 26 30 12 C42 9 52 18 41 29 C35 35 27 35 31 33 C47 30 57 42 45 54 C37 62 25 64 18 60 C32 58 44 52 52 46 C54 52 52 58 58 58 C66 58 74 50 72 44 C70 38 62 42 62 50 C62 60 74 62 84 54 C94 46 102 26 98 16 C94 8 88 20 88 34 C88 50 92 60 100 58 C108 56 116 50 124 46"/><path pathLength="1" d="M55 37 l1.5 1.5"/><path pathLength="1" d="M14 71 C60 66 118 68 152 61"/></svg>';
+  var X='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>';
+  var PARAS=["Soy Biel, creador de ProTeam. Gracias por estar aquí desde el principio.","ProTeam nace en el banquillo y queremos que crezca contigo: con lo que uses, con lo que eches de menos y con lo que nos cuentes.","Tu confianza es lo que da sentido a todo esto. Gracias por formar parte de este camino.","Nos vemos dentro de ProTeam."];
+  function lab(n){return n?"Nº "+String(n).padStart(3,"0"):null}
+
+  function behind(){return '<div class="behind" aria-hidden="true"><div class="t">Configuración</div><div class="tabs"><span>Cuenta</span><span>Equipo</span><b>Club Fundador</b><span>Facturación</span></div><div class="blk"></div><div class="blk" style="height:140px"></div></div><div class="scrim"></div>'}
+
+  function sheet(){
+    var p=people[S.who], n=lab(p.num), again=S.when==="again";
+    var title=p.name?'¡Bienvenido al Club Fundador, <em>'+p.name+'<svg viewBox="0 0 100 12" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M2 8 C30 3 66 4 98 7"/></svg></em>!':'¡Bienvenido al Club Fundador!';
+    var cls="sheet"+(S.rm?" reduced":" animate");
+    return '<article class="'+cls+'" role="dialog" aria-modal="true" aria-labelledby="ct" data-run="'+S.run+'">'+
+      '<button class="close" aria-label="Cerrar la carta">'+X+'</button>'+
+      '<div class="sheet-scroll">'+
+        '<div class="head" data-prop>'+badge(40,null,"h")+'<div class="k">ProTeam · Club Fundador'+(n?'<b>Fundador '+n+'</b>':'<b>Insignia verificada</b>')+'</div></div>'+
+        '<p class="dateline" data-prop>Verificada el '+p.date+'</p>'+
+        '<h2 class="title" id="ct">'+title+'</h2>'+
+        '<div class="letter">'+PARAS.map(function(t){return '<p>'+t+'</p>'}).join("")+'</div>'+
+        '<div class="sign">'+SIG+'<small>Biel · creador de ProTeam</small></div>'+
+        (!n?'<p class="dateline" style="margin-top:18px" data-prop>Tu número llegará muy pronto.</p>':'')+
+      '</div>'+
+      '<div class="foot"><span class="hint">'+(again?'':'Podrás volver a leerla en Configuración · Club Fundador.')+'</span>'+
+        (again?'<button class="btn btn-o" data-prop>Cerrar</button>':'<button class="btn btn-p">Entrar</button>')+'</div>'+
+    '</article>';
+  }
+
+  function nowDialog(){
+    var p=people[S.who], n=lab(p.num);
+    return '<div class="dlg'+(S.rm?" reduced":" animate")+'" role="dialog" aria-modal="true" aria-labelledby="dt" data-run="'+S.run+'"><button class="x" aria-label="Cerrar">×</button>'+
+      '<div class="c">'+badge(96,p.num,"d")+(n?'<p class="lab">FUNDADOR '+n+'</p>':'')+'</div>'+
+      '<h3 id="dt">'+(p.name?'¡Bienvenido al Club Fundador, '+p.name+'!':'¡Bienvenido al Club Fundador!')+'</h3>'+
+      '<div class="tx">'+PARAS.map(function(t){return '<p>'+t+'</p>'}).join("")+'</div>'+
+      '<div class="ft"><div>'+SIG.replace('class="sig"','class="sig" style="width:144px;height:64px"')+'<small>Biel · creador de ProTeam</small></div><button class="btn btn-p">Entrar</button></div></div>';
+  }
+
+  function stateView(){
+    var d=S.view==="desktop";
+    if(S.st==="loading") return '<div class="state loading pulse" aria-busy="true" aria-label="Cargando tu carta"><div class="sk"></div><div class="sk"></div><div class="sk"></div><div class="sk"></div><div class="sk"></div><div class="sk"></div></div>';
+    if(S.st==="error") return '<div class="state" role="alert">'+badge(44,null,"e")+'<h2>No hemos podido abrir tu carta.</h2><p>Revisa tu conexión y vuelve a intentarlo. Tu insignia sigue verificada.</p><div class="row"><button class="btn btn-p">Reintentar</button><button class="btn btn-g">Cerrar</button></div></div>';
+    if(S.st==="empty") return '<div class="state"><svg width="44" height="44" viewBox="0 0 220 220" aria-hidden="true"><polygon points="'+RO+'" fill="var(--pencil)" opacity=".3"/><path d="M122 52L78 120h30l-12 48 46-70h-30l10-46z" fill="var(--sheet)"/></svg><h2>Tu carta se abre cuando tu insignia esté verificada.</h2><p>Comparte la historia del Club, menciónanos y la revisamos a mano.</p><div class="row"><button class="btn btn-p">Conseguir mi insignia</button><button class="btn btn-g">Cerrar</button></div></div>';
+    return "";
+  }
+
+  function render(){
+    var f=$("frame"); f.className="frame "+S.view+(S.sp?" show-prop":"");
+    var again=S.when==="again";
+    $("path").textContent=again?"/app/settings · Club Fundador":"/app";
+    var html=behind();
+    if(S.ver==="now"){
+      html+=nowDialog();
+    } else if(S.st==="ok"||S.st==="savefail"){
+      html+=sheet();
+      if(S.st==="savefail") html+='<div class="toast" role="status">Simulado: falla mark_founder_welcome_seen al cerrar</div>';
+    } else html+=stateView();
+    $("screen").innerHTML=html;
+    var note={
+      ok: again?'<span class="tag">Releer</span><span>Desde <b>Configuración · Club Fundador → «Ver mi carta de bienvenida»</b>. No se abre sola. «Cerrar» y la X la cierran; la llamada a <b>mark_founder_welcome_seen</b> no cambia nada (ya estaba vista).</span>':'<span class="tag">Primera vez</span><span>Se abre sola una vez, al entrar en la app tras verificarse (o tras «Leer mi carta» del momento del rayo). <b>Entrar</b>, la X, Escape o tocar fuera la cierran y llaman a <b>mark_founder_welcome_seen</b>, como hoy.</span>',
+      savefail:'<span class="tag">Error</span><span>Si falla guardar que se ha leído, <b>el fundador no ve ningún aviso</b>: la carta se cierra igual y volverá a abrirse sola en su próxima visita. Propuesta: un reintento silencioso al cerrar (hoy no se gestiona el error).</span>',
+      loading:'<span class="tag">Cargando</span><span>Mientras llega <b>founder_members</b> (nombre, número y fecha). Solo si tarda más de 300 ms; si no, se pinta la carta directamente.</span>',
+      error:'<span class="tag">Error</span><span>No se pudo leer la ficha del fundador. No se llama a <b>mark_founder_welcome_seen</b>: la carta sigue pendiente y se abrirá en la próxima visita.</span>',
+      empty:'<span class="tag">Vacío</span><span>Alguien abre «Leer mi carta» sin estar verificado (enlace guardado o insignia rechazada). Mismo texto que la pestaña del Club: «Se abre cuando tu insignia esté verificada.»</span>'
+    };
+    $("note").innerHTML=S.ver==="now"?'<span class="tag">Actual</span><span>Diálogo de <b>founder-welcome.tsx</b> (PR #1): insignia de 96 px con el número dentro y encima, título en Manrope, firma y «Entrar» también al releer. En un móvil de 375 px la firma y «Entrar» quedan bajo el pliegue.</span>':note[S.st];
+  }
+
+  document.querySelectorAll(".seg").forEach(function(g){g.addEventListener("click",function(e){var b=e.target.closest("button");if(!b)return;S[g.dataset.k]=b.dataset.v;g.querySelectorAll("button").forEach(function(x){x.setAttribute("aria-pressed",x===b)});S.run++;render()})});
+  $("who").addEventListener("change",function(e){S.who=e.target.value;S.run++;render()});
+  $("st").addEventListener("change",function(e){S.st=e.target.value;render()});
+  $("rm").addEventListener("change",function(e){S.rm=e.target.checked;render()});
+  $("sp").addEventListener("change",function(e){S.sp=e.target.checked;render()});
+  $("replay").addEventListener("click",function(){S.run++;render()});
+  render();
+})();
+</script>
