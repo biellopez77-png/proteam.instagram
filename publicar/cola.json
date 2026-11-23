@@ -448,5 +448,22 @@
    "status": "pendiente"
   },
   "added": "2026-11-23T15:04:25.401148+01:00"
+ },
+ {
+  "id": "T07-2-r3",
+  "kind": "reel",
+  "files": [
+   "publicar/media/T07-2-r3-1.mp4",
+   "publicar/media/T07-2-r3-2.jpg"
+  ],
+  "caption": "Si tu central no ha pasado del medio en toda la temporada, está aprendiendo solo la mitad del fútbol.\n\nLe pusiste ahí porque el equipo encajaba menos, y funcionó. Pero nunca conduce, nunca regatea y nunca tira. Prueba un 4 contra 4 sin posiciones: si pierdes el balón defienden los cuatro, si lo recuperas atacan los cuatro, y el gol vale doble si han cruzado todos.\n\n(Escena de ejemplo: dorsales y marcador no son de ningún equipo.)\n\n¿Cuántos de tus jugadores no han pisado el otro campo este año?",
+  "state": "revisión",
+  "ig": {
+   "status": "pendiente"
+  },
+  "tiktok": {
+   "status": "pendiente"
+  },
+  "added": "2026-11-23T15:35:46.180923+01:00"
  }
 ]
