@@ -15,7 +15,7 @@ Lista viva. **Cada tema tiene muchas ideas; cada idea da 3 reels; cada reel llev
 3. E · Los 15 minutos del descanso, minuto a minuto: qué decir y qué no · general [hecha → T01-3-r1, r2, r3 · Dani A]
 4. D · Cuántas cosas recuerda un entrenador del primer tiempo sin apuntar (buscar estudio sobre recuerdo de entrenadores) · general [hecha → T01-4-r1, r2, r3 · Dani B · fuente: Laird y Waters 2008, IJPAS 8(1)]
 5. E · Tres preguntas que el segundo entrenador tiene que poder contestarte en el descanso · fútbol
-6. H · El entrenador que mandaba notas al campo en papel (casos documentados de notas en la banda) · fútbol
+6. H · El entrenador que mandaba notas al campo en papel (casos documentados de notas en la banda) · fútbol [en curso 2026-11-23 · Dani B]
 7. I · Qué mirar en los primeros 10 minutos de un rival que no conoces · fútbol
 8. E · Por qué el «hay que estar más intensos» no cambia nada en el descanso · general
 9. C · Tu descanso, en una pantalla (registro en directo de ProTeam) · fútbol
