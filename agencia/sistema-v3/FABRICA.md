@@ -32,6 +32,10 @@ Antes de trabajar, lee: SISTEMA_GUIONES.md, SISTEMA_VISUAL.md (con la «Receta d
 - **Revisión obligatoria:** contacto de fotogramas cada 1,5 s y el test de saltos (diferencia entre fotogramas: ningún pico de un solo fotograma). Si falla, se corrige antes de subir.
 - **Subir al feed:** `list_files` del feed, después `publish_files` en modo patch con `media/<id>.mp4` y `media/<id>.jpg`, y `db_write` de `posts/<id>` con `status: "listo"`.
 
+## Cola de publicación (Biel, 23/11)
+
+Al terminar una pieza, además de subirla al feed: `python3 tools/pub_v3.py add <id> reel|carrusel|story <caption.txt> <archivos>` (Clara exporta los carruseles también a JPEG 1080×1350). Queda en «revisión»: no se publica nada hasta que Biel encienda `publicar/ESTADO.json`. Detalle en PUBLICACION.md.
+
 ## Feed simulado: formato de `posts/<id>`
 
 `{order (número; más alto = más arriba), type: "reel" | "carrusel" | "story", title, tema, status: "idea" | "en guion" | "en montaje" | "listo", score, agent, hook, caption, video, cover, slides: [...], short (en Stories), updatedAt}`
