@@ -1,7 +1,7 @@
 # Ficha · Registro y entrada (panel «Crear cuenta / Iniciar sesión» y contraseña nueva): la primera puerta del 28/11
 
-**Agente:** Irene (P1) · **Fecha:** 23/11/2026 · **Tarea:** `exp-registro-entrada` (abierta por Irene, prioridad alta: no había tareas P1 pendientes ni comentarios de Biel o Álex en las 10 entregas; es la única puerta del Día 0 sin ficha, y va antes del onboarding)
-**Prototipo navegable:** https://claude.ai/artifact/JGyTmYkiSFQGr1Tw3a7mAS (móvil 375 y escritorio; selectores «Versión: Propuesta / Actual (hoy)», «Cuándo: antes del 28/11 / desde el 28/11», «Pantalla: Crear cuenta / Iniciar sesión / Revisa tu correo / He olvidado la contraseña / Contraseña nueva», «Simular al pulsar: todo bien / campos vacíos / se queda cargando / email o contraseña mal / email sin confirmar / email ya registrado / demasiados correos / sin conexión / enlace caducado»; casilla «Marcar lo propuesto»). Copia local: `agencia/experiencia/prototipos/registro-entrada.html`.
+**Agente:** Irene (P1) · **Fecha:** 23/11/2026, rehecha en v4 el 23/11 · **Tareas:** `exp-registro-entrada`, `irene-v4-paleta` (abierta por Irene, prioridad alta: no había tareas P1 pendientes ni comentarios de Biel o Álex en las 10 entregas; es la única puerta del Día 0 sin ficha, y va antes del onboarding)
+**Prototipo navegable:** https://claude.ai/artifact/JGyTmYkiSFQGr1Tw3a7mAS (versión 2, sistema v4; móvil 375 y escritorio; selectores «Versión: Propuesta / Actual (hoy)», «Cuándo: lista abierta / desde la apertura», «Fechas: 10/12 · 11/12 (por confirmar) / 27/11 · 28/11 (código hoy)», «Pantalla: Crear cuenta / Iniciar sesión / Revisa tu correo / He olvidado la contraseña / Contraseña nueva», «Simular al pulsar: todo bien / campos vacíos / se queda cargando / email o contraseña mal / email sin confirmar / email ya registrado / demasiados correos / sin conexión / enlace caducado»; casilla «Marcar lo propuesto»). Copia local: `agencia/experiencia/prototipos/registro-entrada.html`.
 **Base leída:** rama `revision/club-fundador` de proteamapp (5c7a6bd): `src/components/auth-overlay.tsx` (`AuthForm`, `AuthOverlay`, `Field`), `src/routes/auth.tsx` (solo redirige), `src/routes/reset-password.tsx`, `src/lib/platform-admin.ts` (`passwordProblems`, `MIN_PASSWORD_LENGTH = 14`), `src/components/public-account-panel.tsx` (reutiliza `AuthForm`), `src/routes/index.tsx` (`registerLabel`, `AuthOverlay`), `src/lib/i18n/translate.ts` y `dict/es.json`.
 
 **Por qué ahora:** el 28/11 todo entrenador nuevo y todo apuntado a la lista pasa por este panel antes que por nada. Lo que se ve hoy:
@@ -9,6 +9,25 @@
 2. **El panel no sabe de dónde vienes.** El botón de la portada dice «Apúntate a la lista de espera» (antes del 28) o «Empieza tu mes de prueba» (después), pero el panel siempre abre con «Entrena, compite, evoluciona.» y «Crear cuenta».
 3. **Recuperar la contraseña es un enlace que lanza un aviso.** Si el email está vacío solo sale un aviso; si no, otro aviso y nada más en pantalla.
 4. **`/reset-password` está entero en catalán** («Establir una contrasenya nova», «Desar contrasenya»…) sin `t()`, y pide las reglas de los administradores (`passwordProblems`: 14 caracteres, mayúscula, minúscula, número y símbolo), mientras que al crear la cuenta bastan 8. Un entrenador que olvida su contraseña se encuentra de golpe con otras reglas, y los errores también salen en catalán.
+
+## 0. Sistema v4 (23/11): qué cambia respecto a la versión v3
+Manda `agencia/sistema-v4/IDENTIDAD.md` y el apartado «La misma dirección en la web y la app» del documento de dirección audiovisual. **Funciones, flujos, campos, llamadas y textos no cambian**; solo la piel y las fechas. El estilo v3 (hoja blanca, Instrument Serif con trazo a lápiz, sobre dibujado) queda retirado en este prototipo.
+
+| Elemento | v3 | v4 |
+|---|---|---|
+| Fondo y capas | Hoja blanca sobre gris | Fondo `#02050F`; panel en `#060C19`; campos en `#02050F` con borde de luz tenue; correo en caja `#02050F` (tokens `--background` y `--card` del tema `.dark` de la app) |
+| Lo activo | Raya azul a lápiz | **Luz**: el panel es lo único iluminado (haz `#6AA8FF`→`#B9E0FF` desde arriba y filete de luz en el borde superior); la portada de detrás queda en penumbra. La pestaña activa lleva una raya `#6AA8FF` con halo; el campo con foco, borde eléctrico con halo; cada regla cumplida de la contraseña nueva **se enciende** (punto hielo con halo) en vez de ponerse verde |
+| Tipografía | Instrument Serif en el título + Manrope | Plus Jakarta Sans en todo (800 en el título, la palabra clave en azul hielo `#B9E0FF`). Sin voz serif: es pantalla de app |
+| Acción | Azul `#2F6BFF` | Botón principal `#636DFF`; secundario en contorno; enlaces en `#6AA8FF` |
+| Ultravioleta `#8B5CF6` | — | **Ninguno**: en el registro no hay rayo del verificado ni acceso al Club. Es el máximo de «una vez», no una obligación |
+| Objetos reales | Sobre dibujado a lápiz | «Revisa tu correo» y «Mira tu correo»: **móvil boca arriba** sobre la mesa del banquillo con el aviso del correo encendido. «Sin conexión» (dentro de la caja de error) y «Este enlace ya no sirve»: **móvil boca abajo**. Ilustraciones provisionales: en producto, foto propia o con licencia (Pau, biblioteca v4) |
+| Error y éxito | Rojo y verde | Sin rojo de alarma ni verde: errores en coral suave `#FF9B8F` solo en el título del aviso y el borde del campo; «Sesión iniciada.», «Correo reenviado.» y «Contraseña actualizada.» con un punto de luz hielo |
+| Movimiento | Trazo que se dibuja | Ninguno salvo el giro de carga del botón (claridad y rendimiento) |
+| «Actual (hoy)» | En papel | En la misma paleta oscura, para comparar estructura y textos, no estilo |
+
+**Texto que cambia por el v4:** en `/reset-password`, «Mira la lista: lo que no está en verde es lo que falta.» → «Mira la lista: lo que no está encendido es lo que falta.»
+
+**Fechas (supuesto por confirmar, `agencia/sistema-v4/RELANZAMIENTO.md`):** el panel no lleva fechas ni plazos (se queda así), pero el título depende del corte: «Apúntate a la lista» con la lista abierta (hasta el **jueves 10/12 a las 23:59**) y «Empieza tu mes de prueba» desde la apertura (**viernes 11/12**). El selector «Fechas» enseña también el corte del código actual (27/11 23:59 y 28/11). El corte sale del mismo sitio que `registerLabel` en `index.tsx`, así que se mueve solo cuando el equipo técnico cambie la fecha (por PR, no lo toco).
 
 ## 1. Qué se conserva (sin tocar)
 - **El panel sobre la portada:** `?auth=register` / `?auth=login`, `/auth` redirige igual, cierre con la X, tocando fuera o con Escape, `role="dialog"`.
@@ -29,8 +48,8 @@
 | **«He olvidado mi contraseña» como paso** | Pantalla propia en el panel: «Crea una nueva» + email + «Enviar enlace» → «Mira tu correo» con el email y «El enlace sirve una sola vez. Si caduca, pide otro aquí.» + «Volver a iniciar sesión». Misma llamada `resetPasswordForEmail`. |
 | **«Revisa tu correo» más útil** | Conserva el texto y el email; añade «Si no lo ves en unos minutos, mira en spam o en promociones.», «Reenviar el correo» (ver duda 3) y «Me he equivocado de email» (vuelve a «Crear cuenta» con los datos). |
 | **Sesión iniciada sin género** | «¡Bienvenido!» → «Sesión iniciada.» (o «Hola de nuevo»). |
-| **`/reset-password` en español** | Todo por `t()`. Las reglas, a la vista y en verde según se cumplen, en vez de una lista de errores en ámbar después. Enlace caducado o sin sesión: «Este enlace ya no sirve» + explicación + «Pedir otro enlace» (abre el paso de olvidar la contraseña). Al guardar: «Contraseña guardada» + «Iniciar sesión». |
-| **Estilo v3** | Hoja blanca, título en Instrument Serif con trazo azul a lápiz, pestañas con raya azul en vez de cápsula gris, un solo azul para la acción, sobre dibujado a lápiz en «Revisa tu correo». Escritorio: el mismo panel centrado de hoy (máx. 448 px). |
+| **`/reset-password` en español** | Todo por `t()`. Las reglas, a la vista y encendiéndose según se cumplen, en vez de una lista de errores en ámbar después. Enlace caducado o sin sesión: «Este enlace ya no sirve» + explicación + «Pedir otro enlace» (abre el paso de olvidar la contraseña). Al guardar: «Contraseña guardada» + «Iniciar sesión». |
+| **Estilo v4** (sustituye al v3) | Ver apartado 0: panel iluminado sobre la portada en penumbra, pestaña activa con luz, objetos reales en el correo enviado y los errores de conexión, sin ultravioleta. Escritorio: el mismo panel centrado de hoy (máx. 448 px). |
 
 ## 3. Textos (es) nuevos, propuestos
 - **Títulos:** «Lista de espera» · «Apúntate a la lista» · «Crea tu cuenta para entrar en la lista de espera de ProTeam.» · «Mes de prueba» · «Empieza tu mes de prueba» (ya existe en la portada) · «Crea tu cuenta. En el paso siguiente creas tu equipo o te unes al de tu club.» · «Entra en ProTeam».
@@ -44,7 +63,7 @@
   - Sin conexión: «No hay conexión.» + «Revisa tu conexión y vuelve a intentarlo; no se ha guardado nada.» (mismo texto que onboarding y recorrido inicial).
 - **Correo enviado:** «Si no lo ves en unos minutos, mira en spam o en promociones.» · «Reenviar el correo» · «Correo reenviado.» · «Me he equivocado de email».
 - **Olvidé la contraseña:** «Contraseña» · «Crea una nueva» · «Escribe el email de tu cuenta y te mandamos un enlace para cambiarla.» · «Enviar enlace» · «Mira tu correo» · «Si hay una cuenta con este email, te hemos enviado un enlace para crear una contraseña nueva:» · «El enlace sirve una sola vez. Si caduca, pide otro aquí.» · «Volver a iniciar sesión» · «Volver».
-- **Contraseña nueva:** «Elige tu contraseña nueva» · «Contraseña nueva» · «Repítela» · reglas («14 caracteres o más» · «Mayúscula y minúscula» · «Un número» · «Un símbolo (- . ! ?)»; cambian si se acepta la duda 1) · «A la contraseña le falta algo.» + «Mira la lista: lo que no está en verde es lo que falta.» · «No coincide con la de arriba.» · «Guardar contraseña» · «Guardando…» · «Contraseña guardada» · «Contraseña actualizada.» · «Ahora entra con tu email y la contraseña nueva.» · «Este enlace ya no sirve» · «Los enlaces para cambiar la contraseña caducan al rato y solo valen una vez. Pide otro y ábrelo en cuanto te llegue.» · «Pedir otro enlace».
+- **Contraseña nueva:** «Elige tu contraseña nueva» · «Contraseña nueva» · «Repítela» · reglas («14 caracteres o más» · «Mayúscula y minúscula» · «Un número» · «Un símbolo (- . ! ?)»; cambian si se acepta la duda 1) · «A la contraseña le falta algo.» + «Mira la lista: lo que no está encendido es lo que falta.» · «No coincide con la de arriba.» · «Guardar contraseña» · «Guardando…» · «Contraseña guardada» · «Contraseña actualizada.» · «Ahora entra con tu email y la contraseña nueva.» · «Este enlace ya no sirve» · «Los enlaces para cambiar la contraseña caducan al rato y solo valen una vez. Pide otro y ábrelo en cuanto te llegue.» · «Pedir otro enlace».
 - **Otros:** «Sesión iniciada.» Título de la pestaña de `/reset-password`: «Contraseña nueva — ProTeam».
 - Todos necesitan su traducción en los 7 idiomas de `lib/i18n/dict/`.
 
@@ -65,6 +84,8 @@
 3. **«Reenviar el correo» de confirmación.** No existe hoy; sería `supabase.auth.resend({ type: "signup", email })`, una llamada nueva aunque sin tocar la base de datos. ¿Lo añadimos o dejamos solo el consejo de mirar en spam?
 4. **Apuntarse antes del 28: ¿cuándo está uno «en la lista»?** ¿Al crear la cuenta o al confirmar el email? Según la respuesta, «Revisa tu correo» puede decir «Confirma tu email para quedar en la lista» (hoy no lo digo para no prometer algo que no sé).
 5. **Email ya registrado.** Si en Supabase está activa la confirmación por email, registrarse con un email que ya existe puede no dar error (devuelve un usuario sin identidades) y el panel enseñaría «Revisa tu correo» sin enviar nada. ¿Lo comprueba el equipo técnico (`data.user.identities.length === 0`) para enseñar «Ya hay una cuenta con este email»?
+6. **(v4) Fechas nuevas.** ¿Confirmas lista hasta el jueves 10/12 a las 23:59 y apertura el viernes 11/12? El panel cambia de «Apúntate a la lista» a «Empieza tu mes de prueba» en ese corte.
+7. **(v4) ¿Modo oscuro por defecto en la web y la app?** El prototipo da por hecho el tema `.dark`; pasarlo a tema por defecto se decide aparte (misma duda que en la espera y portada del Club).
 
 ## 6. Fuera a propósito
 Precio, ofertas, tarjeta y plazos (viven en la portada y el onboarding); Club Fundador, insignia y número de apuntados; el nombre de Biel; entrar con Google u otras cuentas (no existe hoy).

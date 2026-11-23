@@ -1,160 +1,163 @@
 <title>Registro y entrada ProTeam</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
 <style>
-/* Maqueta: el panel «Crear cuenta / Iniciar sesión» sobre la portada y la página de contraseña nueva. Una hoja blanca, tinta, un azul; el lápiz marca la pestaña y los avisos. */
+/* Sistema v4 (Biel, 23/11): paleta real de la app en modo oscuro. El panel es lo activo y es lo único iluminado; la portada de detrás queda en penumbra.
+   Ultravioleta: ninguno en esta pantalla (no hay rayo del verificado ni acceso al Club). */
 :root{
-  --paper:#ffffff; --paper-2:#f6f6f3; --ink:#0d0f14; --ink-2:#4a4f5a; --pencil:#8b8f97; --line:#e3e3de;
-  --blue:#2f6bff; --blue-soft:#e9efff; --blue-ink:#1d4fd8; --warn:#b4231b; --warn-soft:#fbecea; --ok:#1d7a46; --ok-soft:#e7f4ec;
-  --stage:#ecebe6; --veil:rgba(255,255,255,.78);
-  --display:"Instrument Serif", Georgia, "Times New Roman", serif;
-  --body:"Manrope", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --bg:#02050F; --s1:#060C19; --s2:#0C1323; --s3:#121B30;
+  --blue:#636DFF; --blue-2:#4469FA; --elec:#6AA8FF; --ice:#B9E0FF;
+  --white:#F4F7FB; --text-2:#A3AEC4; --text-3:#6F7A91;
+  --line:rgba(185,224,255,.09); --line-2:rgba(185,224,255,.16);
+  --err:#FF9B8F; --err-bg:rgba(255,155,143,.08);
+  --sans:"Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --r:16px; color-scheme:dark;
 }
-@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
-  --paper:#12151c; --paper-2:#171b23; --ink:#f2f1ec; --ink-2:#b9bcc4; --pencil:#8d929c; --line:#2a2f3a;
-  --blue:#5b8bff; --blue-soft:#1b2540; --blue-ink:#8eb0ff; --warn:#ff8a80; --warn-soft:#3a1d1c; --ok:#7fd6a2; --ok-soft:#16301f;
-  --stage:#0b0d12; --veil:rgba(18,21,28,.8); color-scheme:dark}}
-:root[data-theme="dark"]{
-  --paper:#12151c; --paper-2:#171b23; --ink:#f2f1ec; --ink-2:#b9bcc4; --pencil:#8d929c; --line:#2a2f3a;
-  --blue:#5b8bff; --blue-soft:#1b2540; --blue-ink:#8eb0ff; --warn:#ff8a80; --warn-soft:#3a1d1c; --ok:#7fd6a2; --ok-soft:#16301f;
-  --stage:#0b0d12; --veil:rgba(18,21,28,.8); color-scheme:dark}
 *{box-sizing:border-box}
-body{background:var(--stage);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.55;-webkit-font-smoothing:antialiased;margin:0}
+html,body{background:var(--bg)}
+body{margin:0;color:var(--white);font-family:var(--sans);font-size:15px;line-height:1.55;-webkit-font-smoothing:antialiased}
 button,input,select{font:inherit;color:inherit}
 button{cursor:pointer}
-:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
+:focus-visible{outline:2px solid var(--elec);outline-offset:2px}
 @media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}}
+code{font-size:12px;color:var(--ice);background:var(--s2);padding:1px 5px;border-radius:5px}
 
-body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--paper)}
-.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--paper);border-bottom:1px solid var(--line);
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--s1)}
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--s1);border-bottom:1px solid var(--line);
   padding-block:10px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
 .bar-in{max-width:1180px;margin:0 auto;display:flex;flex-wrap:wrap;gap:10px 16px;align-items:flex-end}
-.bar h1{font:400 22px/1 var(--display);margin:0 auto 4px 0;white-space:nowrap}
-.bar h1 i{color:var(--blue)}
+.bar h1{font-size:15px;font-weight:800;margin:0 auto 6px 0;letter-spacing:-.01em;white-space:nowrap}
+.bar h1 i{font-style:normal;color:var(--text-3);font-weight:600}
 .ctl{display:flex;flex-direction:column;gap:3px;min-width:0}
-.ctl>span{font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--pencil);font-weight:700}
-.seg{display:flex;flex-wrap:wrap;gap:2px;background:var(--paper-2);border:1px solid var(--line);border-radius:9px;padding:2px}
-.seg button{border:0;background:transparent;padding:5px 10px;border-radius:7px;font-size:12.5px;font-weight:600;color:var(--ink-2)}
-.seg button[aria-pressed="true"]{background:var(--paper);color:var(--ink);box-shadow:0 1px 2px rgba(0,0,0,.08)}
-select.sel{font:600 12.5px var(--body);background:var(--paper-2);border:1px solid var(--line);border-radius:9px;padding:6px 8px;max-width:100%}
-.chk{display:flex;gap:6px;align-items:center;font-size:12.5px;font-weight:600;color:var(--ink-2);padding-bottom:5px}
+.ctl>span{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--text-3);font-weight:700}
+.seg{display:flex;flex-wrap:wrap;gap:2px;background:var(--bg);border:1px solid var(--line);border-radius:9px;padding:2px}
+.seg button{border:0;background:transparent;padding:5px 10px;border-radius:7px;font-size:12.5px;font-weight:600;color:var(--text-2)}
+.seg button[aria-pressed="true"]{background:var(--s3);color:var(--white)}
+select.sel{font-size:12.5px;font-weight:600;background:var(--bg);border:1px solid var(--line);border-radius:9px;padding:6px 8px;max-width:100%}
+.chk{display:flex;gap:6px;align-items:center;font-size:12.5px;font-weight:600;color:var(--text-2);padding-bottom:5px}
 
 .stage{padding-block:28px 18px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
-.frame{margin:0 auto;background:var(--paper);border:1px solid var(--line);overflow:hidden;position:relative}
-.frame.mobile{max-width:375px;border-radius:34px;box-shadow:0 0 0 8px var(--ink),0 18px 50px rgba(0,0,0,.18);height:760px}
-.frame.desktop{max-width:1180px;border-radius:12px;box-shadow:0 18px 50px rgba(0,0,0,.10);height:720px}
-.urlbar{display:flex;align-items:center;gap:8px;padding:9px 14px;border-bottom:1px solid var(--line);font-size:12px;color:var(--pencil);background:var(--paper-2)}
-.urlbar b{font-weight:600;color:var(--ink-2)}
-.dots{display:flex;gap:5px}.dots i{width:9px;height:9px;border-radius:50%;background:var(--line)}
+.frame{margin:0 auto;background:var(--bg);border:1px solid var(--line-2);overflow:hidden;position:relative}
+.frame.mobile{max-width:375px;border-radius:34px;box-shadow:0 0 0 8px #0B0F1A,0 24px 60px rgba(0,0,0,.6);height:760px}
+.frame.desktop{max-width:1180px;border-radius:12px;box-shadow:0 24px 60px rgba(0,0,0,.5);height:720px}
+.urlbar{display:flex;align-items:center;gap:8px;padding:9px 14px;border-bottom:1px solid var(--line);font-size:12px;color:var(--text-3);background:var(--s1)}
+.urlbar b{font-weight:600;color:var(--text-2)}
+.dots{display:flex;gap:5px}.dots i{width:9px;height:9px;border-radius:50%;background:var(--line-2)}
 .mobile .urlbar{display:none}
 .view{position:absolute;inset:0;overflow:hidden}
 .desktop .view{top:37px}
 
-/* Portada de fondo (solo contexto) */
-.land{position:absolute;inset:0;padding:34px 22px;display:grid;align-content:start;gap:14px;filter:blur(1.5px)}
-.land .lg{font:800 15px var(--body);color:var(--ink-2)}
-.land .lh{font:400 40px/1.02 var(--display);max-width:560px}
-.land .ll{height:12px;border-radius:6px;background:var(--paper-2);max-width:420px}
-.land .lb{width:230px;height:46px;border-radius:10px;background:var(--blue);opacity:.5}
+/* Portada de fondo, en penumbra (solo contexto) */
+.land{position:absolute;inset:0;padding:34px 22px;display:grid;align-content:start;gap:14px;opacity:.55}
+.land .lg{font-weight:800;font-size:15px;color:var(--text-2)}
+.land .lh{font-weight:800;font-size:40px;line-height:1.02;letter-spacing:-.03em;max-width:560px;color:var(--text-3)}
+.land .ll{height:12px;border-radius:6px;background:var(--s2);max-width:420px}
+.land .lb{width:230px;height:46px;border-radius:12px;background:var(--s3)}
 .desktop .land{padding:70px 80px}
 .desktop .land .lh{font-size:64px}
-.veil{position:absolute;inset:0;background:var(--veil);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.veil{position:absolute;inset:0;background:rgba(2,5,15,.72);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
 .wrap{position:absolute;inset:0;overflow-y:auto;display:flex;align-items:flex-start;justify-content:center;padding:16px}
 .desktop .wrap{align-items:center;padding:24px}
 
-/* El panel */
-.sheet{position:relative;width:100%;max-width:448px;background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:22px 20px 20px;box-shadow:0 24px 60px rgba(13,15,20,.14);margin:auto 0}
+/* El panel: lo activo, iluminado desde arriba */
+.sheet{position:relative;width:100%;max-width:448px;border:1px solid var(--line-2);border-radius:20px;padding:22px 20px 20px;margin:auto 0;overflow:hidden;
+  background:radial-gradient(120% 55% at 50% -12%,rgba(106,168,255,.18),rgba(99,109,255,.05) 45%,transparent 70%),var(--s1);box-shadow:0 30px 80px rgba(0,0,0,.6)}
+.sheet::before{content:"";position:absolute;left:14%;right:14%;top:0;height:1px;background:linear-gradient(90deg,transparent,var(--ice),transparent);opacity:.7}
 .desktop .sheet{padding:30px 32px 26px}
-.x{position:absolute;top:10px;right:10px;width:44px;height:44px;border:0;background:none;border-radius:10px;color:var(--pencil);display:grid;place-items:center}
-.x:hover{background:var(--paper-2);color:var(--ink)}
+.x{position:absolute;top:10px;right:10px;width:44px;height:44px;border:0;background:none;border-radius:12px;color:var(--text-3);display:grid;place-items:center;z-index:1}
+.x:hover{background:var(--s2);color:var(--white)}
 .x svg{width:18px;height:18px}
-.brand{font:800 13px var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--pencil)}
-.h{font:400 34px/1.05 var(--display);margin:6px 44px 0 0;text-wrap:balance}
-.h em{color:var(--blue);font-style:italic}
-.stroke{display:block;width:120px;height:10px;margin-top:2px}
-.stroke path{fill:none;stroke:var(--blue);stroke-width:2.2;stroke-linecap:round;stroke-dasharray:160;stroke-dashoffset:160;animation:draw .8s .1s ease-in-out forwards}
-@keyframes draw{to{stroke-dashoffset:0}}
-.lead{margin:8px 0 0;color:var(--ink-2);font-size:14.5px;max-width:36ch}
+.brand{font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;font-weight:800;color:var(--elec);margin:0}
+.h{font-size:26px;font-weight:800;line-height:1.12;letter-spacing:-.02em;margin:8px 44px 0 0;text-wrap:balance}
+.h em{font-style:normal;color:var(--ice)}
+.lead{margin:8px 0 0;color:var(--text-2);font-size:14.5px;max-width:36ch}
 
-/* Pestañas a lápiz */
+/* Pestañas: la activa lleva la luz */
 .tabs{display:grid;grid-template-columns:1fr 1fr;margin-top:20px;border-bottom:1px solid var(--line)}
-.tab{border:0;background:none;min-height:46px;font-weight:700;font-size:14.5px;color:var(--pencil);position:relative}
-.tab[aria-selected="true"]{color:var(--ink)}
-.tab[aria-selected="true"]::after{content:"";position:absolute;left:18%;right:18%;bottom:-1px;height:2.5px;border-radius:2px;background:var(--blue)}
+.tab{border:0;background:none;min-height:46px;font-weight:700;font-size:14.5px;color:var(--text-3);position:relative}
+.tab[aria-selected="true"]{color:var(--white)}
+.tab[aria-selected="true"]::after{content:"";position:absolute;left:18%;right:18%;bottom:-1px;height:2px;border-radius:2px;background:var(--elec);box-shadow:0 0 12px 1px rgba(106,168,255,.6)}
 
 form.f{display:grid;gap:14px;margin-top:18px}
 .two{display:grid;grid-template-columns:1fr 1fr;gap:10px}
 .two>*{min-width:0}
-label.fl{display:grid;gap:5px}
-label.fl>span{font-size:13.5px;font-weight:700}
-.inp{width:100%;min-height:46px;border:1px solid var(--line);border-radius:10px;padding:10px 12px;background:var(--paper);font-size:15px}
-.inp:focus{outline:2px solid var(--blue);outline-offset:0;border-color:transparent}
-.inp.bad{border-color:var(--warn)}
+label.fl{display:grid;gap:6px}
+label.fl>span{font-size:13px;font-weight:700}
+.inp{width:100%;min-height:46px;border:1px solid var(--line-2);border-radius:12px;padding:10px 12px;background:var(--bg);font-size:15px}
+.inp:focus{outline:0;border-color:var(--elec);box-shadow:0 0 0 3px rgba(106,168,255,.15)}
+.inp.bad{border-color:var(--err)}
 .pw{position:relative}
 .pw .inp{padding-right:84px}
-.pw button{position:absolute;right:4px;top:4px;bottom:4px;border:0;background:none;color:var(--blue-ink);font-weight:700;font-size:13px;padding:0 10px;border-radius:8px}
-.hint{font-size:12.5px;color:var(--pencil);margin:0}
-.fe{font-size:13px;color:var(--warn);margin:0}
-.alert{display:grid;gap:3px;background:var(--warn-soft);color:var(--warn);border-radius:10px;padding:11px 13px;font-size:13.5px}
+.pw button{position:absolute;right:4px;top:4px;bottom:4px;border:0;background:none;color:var(--elec);font-weight:700;font-size:13px;padding:0 10px;border-radius:8px}
+.hint{font-size:12.5px;color:var(--text-3);margin:0}
+.fe{font-size:13px;color:var(--err);margin:0}
+.alert{display:grid;gap:3px;background:var(--err-bg);border:1px solid rgba(255,155,143,.18);color:var(--err);border-radius:12px;padding:11px 13px;font-size:13.5px}
 .alert b{font-weight:800}
+.alert .objw{margin:0 0 6px}.alert .objw svg{width:72px;height:45px}
+.alert span{color:var(--text-2)}
 .alert .acts{display:flex;flex-wrap:wrap;gap:4px 14px;margin-top:4px}
-.alert .acts button{border:0;background:none;padding:6px 0;font-weight:800;color:var(--warn);text-decoration:underline;text-underline-offset:3px;font-size:13.5px}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:10px;padding:10px 16px;font-weight:700;font-size:14.5px;border:1px solid transparent;min-height:46px;width:100%}
-.btn-p{background:var(--blue);color:#fff}
+.alert .acts button{border:0;background:none;padding:6px 0;font-weight:800;color:var(--white);text-decoration:underline;text-decoration-color:var(--err);text-underline-offset:3px;font-size:13.5px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:12px;padding:10px 16px;font-weight:700;font-size:14.5px;border:1px solid transparent;min-height:46px;width:100%}
+.btn-p{background:var(--blue);color:#fff;box-shadow:0 10px 28px -12px rgba(99,109,255,.8)}
 .btn-p[disabled]{opacity:.55;cursor:progress}
-.btn-o{background:var(--paper);border-color:var(--line);color:var(--ink)}
-.linkb{display:block;margin:2px auto 0;background:none;border:0;color:var(--blue-ink);font-weight:700;font-size:14px;min-height:44px}
-.spin{width:15px;height:15px;border-radius:50%;border:2px solid rgba(255,255,255,.4);border-top-color:#fff;animation:sp .8s linear infinite}
+.btn-o{background:transparent;border-color:var(--line-2);color:var(--white)}
+.linkb{display:block;margin:2px auto 0;background:none;border:0;color:var(--elec);font-weight:700;font-size:14px;min-height:44px}
+.spin{width:15px;height:15px;border-radius:50%;border:2px solid rgba(255,255,255,.35);border-top-color:#fff;animation:sp .8s linear infinite}
 @keyframes sp{to{transform:rotate(360deg)}}
-.small{font-size:12.5px;color:var(--pencil);margin:0;text-align:center}
+.small{font-size:12.5px;color:var(--text-3);margin:0;text-align:center}
 
-/* Sobre (correo enviado) */
-.env{display:block;width:84px;height:58px;margin:8px 0 4px}
-.env rect,.env path{fill:none;stroke:var(--ink-2);stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round}
-.env .b{stroke:var(--blue);stroke-width:2}
-.mail{font-weight:800;word-break:break-all;background:var(--paper-2);border-radius:8px;padding:8px 10px;font-size:14px}
-.note{font-size:13.5px;color:var(--ink-2);margin:0}
+/* Objeto real (ilustración provisional hasta tener foto propia o con licencia) */
+.objw{margin:14px 0 2px}
+.objw svg{display:block}
+.obj-cap{font-size:10.5px;color:var(--text-3);margin:6px 0 0}
+.mail{font-weight:800;word-break:break-all;background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:9px 11px;font-size:14px}
+.note{font-size:13.5px;color:var(--text-2);margin:0}
 .stack{display:grid;gap:12px;margin-top:16px}
-.ok{display:flex;gap:10px;align-items:center;background:var(--ok-soft);color:var(--ok);border-radius:10px;padding:10px 12px;font-weight:700;font-size:14px}
+/* «Hecho» sin verde: la luz confirma */
+.ok{display:flex;gap:10px;align-items:center;background:rgba(185,224,255,.07);border:1px solid rgba(185,224,255,.22);color:var(--ice);border-radius:12px;padding:10px 12px;font-weight:700;font-size:14px}
+.ok::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--ice);box-shadow:0 0 10px 2px rgba(185,224,255,.6);flex:none}
 
 /* Página de contraseña nueva */
-.page{position:absolute;inset:0;overflow-y:auto;display:flex;justify-content:center;align-items:flex-start;padding:40px 16px;background:var(--paper)}
-.desktop .page{align-items:center;background:var(--paper-2)}
-.card{width:100%;max-width:448px;background:var(--paper);border-radius:18px;padding:4px 4px 20px}
-.desktop .card{border:1px solid var(--line);padding:30px 32px 26px}
-.rules{list-style:none;margin:0;padding:0;display:grid;gap:4px;font-size:13px}
-.rules li{display:flex;gap:8px;align-items:center;color:var(--ink-2)}
-.rules li::before{content:"";width:14px;height:14px;border:1.4px solid var(--pencil);border-radius:50%;flex:none}
-.rules li.on{color:var(--ok)}
-.rules li.on::before{border-color:var(--ok);background:var(--ok);box-shadow:inset 0 0 0 2.5px var(--paper)}
+.page{position:absolute;inset:0;overflow-y:auto;display:flex;justify-content:center;align-items:flex-start;padding:40px 16px;background:var(--bg)}
+.desktop .page{align-items:center}
+.card{width:100%;max-width:448px;border-radius:20px;padding:4px 4px 20px}
+.desktop .card{border:1px solid var(--line-2);padding:30px 32px 26px;background:radial-gradient(120% 55% at 50% -12%,rgba(106,168,255,.14),transparent 65%),var(--s1)}
+.rules{list-style:none;margin:0;padding:0;display:grid;gap:5px;font-size:13px}
+.rules li{display:flex;gap:9px;align-items:center;color:var(--text-3)}
+.rules li::before{content:"";width:10px;height:10px;border:1.4px solid var(--text-3);border-radius:50%;flex:none}
+/* Regla cumplida = se enciende */
+.rules li.on{color:var(--white)}
+.rules li.on::before{border-color:var(--ice);background:var(--ice);box-shadow:0 0 8px 1px rgba(185,224,255,.6)}
 
-/* Actual (hoy) */
-.cur .sheet{border-radius:16px;text-align:center}
-.cur .seg2{display:flex;gap:4px;background:var(--paper-2);border-radius:10px;padding:4px;margin-top:18px}
-.cur .seg2 button{flex:1;border:0;min-height:42px;border-radius:8px;background:none;color:var(--ink-2);font-size:14px}
-.cur .seg2 button[aria-pressed="true"]{background:var(--paper);color:var(--ink);font-weight:600;box-shadow:0 1px 2px rgba(0,0,0,.08)}
+/* Actual (hoy): misma paleta oscura para comparar estructura, no estilo */
+.cur .sheet{border-radius:16px;text-align:center;background:var(--s1)}
+.cur .sheet::before{display:none}
+.cur .seg2{display:flex;gap:4px;background:var(--s2);border-radius:12px;padding:4px;margin-top:18px}
+.cur .seg2 button{flex:1;border:0;min-height:42px;border-radius:9px;background:none;color:var(--text-2);font-size:14px}
+.cur .seg2 button[aria-pressed="true"]{background:var(--s3);color:var(--white);font-weight:600}
 .cur form.f{text-align:left}
-.cur .h{font:600 20px/1.3 var(--body);margin:4px 30px 0}
-.toast{position:absolute;left:50%;bottom:18px;transform:translateX(-50%);background:var(--ink);color:var(--paper);border-radius:10px;padding:10px 14px;font-size:13.5px;font-weight:600;max-width:calc(100% - 32px);box-shadow:0 10px 30px rgba(0,0,0,.2);z-index:5}
-.toast.err::before{content:"● ";color:#ff6b61}
-.toast.good::before{content:"● ";color:#5fd38d}
+.cur .h{font-size:20px;font-weight:600;line-height:1.3;margin:4px 30px 0}
+.toast{position:absolute;left:50%;bottom:18px;transform:translateX(-50%);background:var(--white);color:var(--bg);border-radius:12px;padding:10px 14px;font-size:13.5px;font-weight:700;max-width:calc(100% - 32px);box-shadow:0 10px 30px rgba(0,0,0,.4);z-index:5}
+.toast.err::before{content:"● ";color:#d4574b}
+.toast.good::before{content:"● ";color:var(--blue)}
 
 /* Propuesta resaltada */
-.show-prop [data-prop]{outline:1.5px dashed var(--blue);outline-offset:4px;border-radius:6px;position:relative}
-.show-prop [data-prop]::after{content:"Propuesta";position:absolute;top:-11px;right:6px;background:var(--blue);color:#fff;font:700 9.5px/1 var(--body);letter-spacing:.06em;text-transform:uppercase;padding:3px 6px;border-radius:4px;z-index:2;pointer-events:none}
+.show-prop [data-prop]{outline:1.5px dashed var(--ice);outline-offset:4px;border-radius:8px;position:relative}
+.show-prop [data-prop]::after{content:"Propuesta";position:absolute;top:-11px;right:6px;background:var(--ice);color:var(--bg);font-size:9.5px;font-weight:800;line-height:1;letter-spacing:.06em;text-transform:uppercase;padding:3px 6px;border-radius:4px;z-index:2;pointer-events:none}
 
-.legend{max-width:1180px;margin:18px auto 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px 26px;font-size:13.5px;color:var(--ink-2)}
+.legend{max-width:1180px;margin:18px auto 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px 26px;font-size:13.5px;color:var(--text-2)}
 .legend>div{min-width:0}
-.legend b{color:var(--ink);display:block;font-size:12px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:4px}
+.legend b{color:var(--white);display:block;font-size:11px;letter-spacing:.1em;text-transform:uppercase;margin-bottom:4px}
 .legend ul{margin:0;padding-left:18px}
 .legend-wrap{padding-block:0 40px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
 </style>
 
 <header class="bar"><div class="bar-in">
-  <h1>Registro y <i>entrada</i></h1>
+  <h1>Registro y entrada <i>· v4</i></h1>
   <div class="ctl"><span>Versión</span><div class="seg" id="c-ver"><button data-v="prop">Propuesta</button><button data-v="act">Actual (hoy)</button></div></div>
-  <div class="ctl"><span>Cuándo</span><div class="seg" id="c-when"><button data-v="antes">Antes del 28/11</button><button data-v="despues">Desde el 28/11</button></div></div>
+  <div class="ctl"><span>Cuándo</span><div class="seg" id="c-when"><button data-v="antes" id="w-a">Lista abierta (hasta el 10/12 23:59)</button><button data-v="despues" id="w-d">Desde el 11/12</button></div></div>
+  <div class="ctl"><span>Fechas</span><div class="seg" id="c-dates"><button data-v="v4">10/12 · 11/12 (por confirmar)</button><button data-v="code">27/11 · 28/11 (código hoy)</button></div></div>
   <div class="ctl"><span>Pantalla</span><select class="sel" id="c-screen">
     <option value="register">Crear cuenta</option><option value="login">Iniciar sesión</option><option value="confirm">Revisa tu correo</option>
     <option value="forgot">He olvidado la contraseña</option><option value="reset">Contraseña nueva (/reset-password)</option></select></div>
@@ -172,24 +175,30 @@ label.fl>span{font-size:13.5px;font-weight:700}
 </div></main>
 
 <section class="legend-wrap"><div class="legend">
+  <div><b>Sistema v4</b><ul><li>Fondo <code>#02050F</code>, panel en <code>#060C19</code> iluminado desde arriba como lo único activo; la portada de detrás, en penumbra.</li><li>Plus Jakarta Sans en todo; la luz marca la pestaña activa, el campo con foco y cada regla cumplida de la contraseña.</li><li>Sin ultravioleta: aquí no hay rayo ni acceso al Club.</li><li>Objetos reales: móvil encendido en «Revisa tu correo», boca abajo sin conexión o con el enlace caducado. Errores en coral suave, sin rojo ni verde.</li></ul></div>
   <div><b>Se conserva</b><ul><li>Panel sobre la portada (<code>?auth=register</code> / <code>?auth=login</code>), pestañas, cierre con la X, fuera o Escape.</li><li>Campos Nombre, Apellidos, Email y Contraseña (mínimo 8 al crear).</li><li>Correo de confirmación, «Revisa tu correo», enlace para restablecer y <code>/reset-password</code>.</li><li>A dónde lleva al entrar (<code>/admin</code>, <code>/teams</code> o <code>next</code>).</li></ul></div>
-  <div><b>Cambia (propuesto)</b><ul><li>Título según de dónde viene: lista de espera, mes de prueba o entrar.</li><li>Errores de Supabase en español, dentro del panel y con salida.</li><li>«He olvidado la contraseña» como paso propio, con su correo enviado.</li><li><code>/reset-password</code> en español, con las reglas a la vista y el enlace caducado resuelto.</li></ul></div>
+  <div><b>Cambia (propuesto)</b><ul><li>Título según de dónde viene: lista de espera, mes de prueba o entrar (corte en la fecha de apertura: 11/12 por confirmar; hoy en el código, 28/11).</li><li>Errores de Supabase en español, dentro del panel y con salida.</li><li>«He olvidado la contraseña» como paso propio, con su correo enviado.</li><li><code>/reset-password</code> en español, con las reglas a la vista y el enlace caducado resuelto.</li></ul></div>
   <div><b>Fuera a propósito</b><ul><li>Precios, ofertas y condiciones: viven en la portada y en el onboarding.</li><li>Club Fundador, número de apuntados y nombre de Biel.</li><li>Entrar con Google u otros: no existe hoy.</li></ul></div>
 </div></section>
 
 <script>
-const S={ver:"prop",when:"antes",screen:"register",sim:"ok",dev:"mobile",mark:false,
+const S={ver:"prop",when:"antes",dates:"v4",screen:"register",sim:"ok",dev:"mobile",mark:false,
   busy:false,err:null,fields:{},showPw:false,toast:null,done:null,
   name:"Marta",surname:"Ruiz",email:"marta.ruiz@ejemplo.es",pw:"pizarra-martes",pw2:"",newpw:"Pizarra-martes-7",newpw2:"Pizarra-martes-7"};
 const $=s=>document.querySelector(s);
 const esc=t=>String(t).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const P=()=>' data-prop';
 const X='<button class="x" type="button" aria-label="Cerrar panel" onclick="closeSheet()"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>';
-const STROKE='<svg class="stroke" viewBox="0 0 120 10" aria-hidden="true"><path d="M2 7 C 30 2, 70 9, 118 4"/></svg>';
-const ENV='<svg class="env" viewBox="0 0 84 58" aria-hidden="true"><rect x="2" y="6" width="70" height="46" rx="3"/><path d="M3 8 L37 32 L71 8"/><path class="b" d="M60 46 C 66 44, 72 40, 80 34"/></svg>';
+const STROKE='';
+// Objetos reales (ilustraciones provisionales; en producto, foto propia o con licencia de la biblioteca v4)
+// Móvil boca arriba sobre la mesa del banquillo, con la pantalla encendida: ha llegado el correo
+const ENV='<div class="objw" data-prop><svg width="128" height="78" viewBox="0 0 128 78" aria-hidden="true"><defs><radialGradient id="glw" cx="50%" cy="50%" r="60%"><stop offset="0" stop-color="#6AA8FF" stop-opacity=".35"/><stop offset="1" stop-color="#6AA8FF" stop-opacity="0"/></radialGradient></defs><ellipse cx="64" cy="44" rx="60" ry="30" fill="url(#glw)"/><ellipse cx="64" cy="70" rx="50" ry="6" fill="#000" opacity=".55"/><rect x="22" y="18" width="84" height="46" rx="9" fill="#0C1323" stroke="#B9E0FF" stroke-opacity=".3"/><rect x="27" y="23" width="74" height="36" rx="6" fill="#121B30"/><rect x="33" y="29" width="62" height="14" rx="4" fill="#B9E0FF" fill-opacity=".9"/><rect x="37" y="33" width="6" height="6" rx="1.5" fill="#636DFF"/><path d="M47 34h30M47 38h20" stroke="#02050F" stroke-width="2" stroke-linecap="round" opacity=".6"/><path d="M33 50h40M33 54h26" stroke="#6AA8FF" stroke-width="2" stroke-linecap="round" opacity=".35"/></svg><p class="obj-cap">Ilustración provisional: foto propia de un móvil sobre la mesa del banquillo, con el aviso del correo.</p></div>';
+// Móvil boca abajo: sin conexión o enlace que ya no sirve
+const PHONE_DOWN='<div class="objw" data-prop><svg width="96" height="60" viewBox="0 0 74 58" aria-hidden="true"><ellipse cx="37" cy="50" rx="34" ry="5" fill="#000" opacity=".5"/><rect x="8" y="20" width="58" height="26" rx="6" fill="#0C1323" stroke="#B9E0FF" stroke-opacity=".25"/><rect x="14" y="25" width="10" height="10" rx="3" fill="#121B30" stroke="#B9E0FF" stroke-opacity=".2"/><circle cx="19" cy="30" r="2.4" fill="#02050F"/><path d="M10 46h54" stroke="#6AA8FF" stroke-width="1.5" opacity=".5"/></svg><p class="obj-cap">Ilustración provisional: foto propia de un móvil boca abajo sobre la mesa.</p></div>';
 
 function setSeg(id,val){document.querySelectorAll(`#${id} button`).forEach(b=>b.setAttribute("aria-pressed",b.dataset.v===val))}
-function syncBar(){setSeg("c-ver",S.ver);setSeg("c-when",S.when);setSeg("c-dev",S.dev);$("#c-screen").value=S.screen;$("#c-sim").value=S.sim;$("#c-mark").checked=S.mark}
+function syncBar(){setSeg("c-ver",S.ver);setSeg("c-when",S.when);setSeg("c-dates",S.dates);
+  $("#w-a").textContent=S.dates==="v4"?"Lista abierta (hasta el 10/12 23:59)":"Lista abierta (hasta el 27/11 23:59)";$("#w-d").textContent=S.dates==="v4"?"Desde el 11/12":"Desde el 28/11";setSeg("c-dev",S.dev);$("#c-screen").value=S.screen;$("#c-sim").value=S.sim;$("#c-mark").checked=S.mark}
 function go(screen){S.screen=screen;S.err=null;S.fields={};S.busy=false;S.done=null;S.toast=null;render()}
 function closeSheet(){S.err=null;S.toast=null;S.done="closed";render()}
 
@@ -208,7 +217,7 @@ function field(id,label,type,val,opts={}){
 function alertBox(){
   if(!S.err) return "";
   const a=S.err;
-  return `<div class="alert" role="alert"${P()}><b>${a.t}</b><span>${a.s}</span>${a.acts?`<div class="acts">${a.acts}</div>`:""}</div>`;
+  return `<div class="alert" role="alert"${P()}>${a.obj?PHONE_DOWN:""}<b>${a.t}</b><span>${a.s}</span>${a.acts?`<div class="acts">${a.acts}</div>`:""}</div>`;
 }
 function submitBtn(label,busyLabel){
   return `<button class="btn btn-p" type="submit" ${S.busy?"disabled":""}>${S.busy?`<span class="spin" aria-hidden="true"></span>${busyLabel}`:label}</button>`;
@@ -247,7 +256,7 @@ function propSheet(){
       <button type="button" class="linkb" onclick="go('login')">Volver</button></form>`;
     }
   }
-  return `<div class="land" aria-hidden="true"><div class="lg">ProTeam</div><div class="lh">${S.when==="antes"?"Blackout Friday":"ProTeam"}</div><div class="ll"></div><div class="ll" style="max-width:320px"></div><div class="lb"></div></div>
+  return `<div class="land" aria-hidden="true"><div class="lg">ProTeam</div><div class="lh">${S.when==="antes"&&S.dates==="code"?"Blackout Friday":"ProTeam"}</div><div class="ll"></div><div class="ll" style="max-width:320px"></div><div class="lb"></div></div>
   <div class="veil"></div><div class="wrap"><section class="sheet" role="dialog" aria-modal="true" aria-labelledby="dlg-t">${X}${inner}</section></div>`;
 }
 function propReset(){
@@ -256,7 +265,7 @@ function propReset(){
   if(S.done==="saved"){
     body=`<h1 class="h">Contraseña <em>guardada</em></h1>${STROKE}<div class="stack"><div class="ok" role="status">Contraseña actualizada.</div><p class="note">Ahora entra con tu email y la contraseña nueva.</p><button class="btn btn-p" type="button" onclick="S.screen='login';S.done=null;S.err=null;render()">Iniciar sesión</button></div>`;
   } else if(S.sim==="expired"){
-    body=`<p class="brand">Contraseña</p><h1 class="h">Este enlace ya <em>no sirve</em></h1>${STROKE}<div class="stack"${P()}><p class="note">Los enlaces para cambiar la contraseña caducan al rato y solo valen una vez. Pide otro y ábrelo en cuanto te llegue.</p><button class="btn btn-p" type="button" onclick="S.screen='forgot';S.done=null;S.err=null;render()">Pedir otro enlace</button><button class="linkb" type="button" onclick="go('login')">Iniciar sesión</button></div>`;
+    body=`<p class="brand">Contraseña</p><h1 class="h">Este enlace ya <em>no sirve</em></h1>${PHONE_DOWN}<div class="stack"${P()}><p class="note">Los enlaces para cambiar la contraseña caducan al rato y solo valen una vez. Pide otro y ábrelo en cuanto te llegue.</p><button class="btn btn-p" type="button" onclick="S.screen='forgot';S.done=null;S.err=null;render()">Pedir otro enlace</button><button class="linkb" type="button" onclick="go('login')">Iniciar sesión</button></div>`;
   } else {
     body=`<p class="brand">Contraseña</p><h1 class="h">Elige tu contraseña <em>nueva</em></h1>${STROKE}
     <form class="f" novalidate onsubmit="event.preventDefault();saveReset()">
@@ -283,24 +292,24 @@ function curSheet(){
       <label class="fl"><span>Email</span><input class="inp" type="email" value="${esc(S.email)}"></label>
       <label class="fl"><span>Contraseña</span><input class="inp" type="password" value="${esc(S.pw)}"></label>
       <button class="btn btn-p" type="submit" ${S.busy?"disabled":""}>${S.busy?"Cargando…":reg?"Crear cuenta":"Entrar"}</button>
-      ${reg?"":`<button type="button" class="linkb" style="font-size:12px;color:var(--ink-2);text-decoration:underline;font-weight:500" onclick="forgotCur()">¿Has olvidado tu contraseña?</button>`}
+      ${reg?"":`<button type="button" class="linkb" style="font-size:12px;color:var(--text-2);text-decoration:underline;font-weight:500" onclick="forgotCur()">¿Has olvidado tu contraseña?</button>`}
     </form>`;
   }
-  return `<div class="land" aria-hidden="true"><div class="lg">ProTeam</div><div class="lh">${S.when==="antes"?"Blackout Friday":"ProTeam"}</div><div class="ll"></div><div class="lb"></div></div>
+  return `<div class="land" aria-hidden="true"><div class="lg">ProTeam</div><div class="lh">${S.when==="antes"&&S.dates==="code"?"Blackout Friday":"ProTeam"}</div><div class="ll"></div><div class="lb"></div></div>
   <div class="veil"></div><div class="wrap cur"><section class="sheet" role="dialog" aria-modal="true" aria-label="Cuenta ProTeam">${X}<p class="brand" style="letter-spacing:.1em">ProTeam</p><h2 class="h">Entrena, compite, evoluciona.</h2>${inner}</section></div>${S.toast?`<div class="toast ${S.toast.k}">${esc(S.toast.t)}</div>`:""}`;
 }
 function curReset(){
   if(S.screen!=="reset") return "";
   return `<div class="page"><div class="card cur" style="border:1px solid var(--line);padding:24px">
-    <div style="display:flex;gap:12px;align-items:center;margin-bottom:18px"><span style="width:40px;height:40px;border-radius:12px;background:var(--blue-soft);color:var(--blue);display:grid;place-items:center">⚿</span><div><p style="font-weight:600;margin:0">Establir una contrasenya nova</p><p class="note" style="font-size:13px">Mínim 14 caràcters, amb majúscula, minúscula, número i símbol.</p></div></div>
-    ${S.sim==="expired"?`<p class="note" style="background:var(--paper-2);border:1px solid var(--line);border-radius:8px;padding:8px 10px;font-size:13px;margin-bottom:14px">Obre aquesta pàgina des de l'enllaç que has rebut per correu. Si l'enllaç ha caducat, torna a demanar-ne un de nou des de la pantalla d'inici de sessió.</p>`:""}
+    <div style="display:flex;gap:12px;align-items:center;margin-bottom:18px"><span style="width:40px;height:40px;border-radius:12px;background:rgba(99,109,255,.15);color:var(--blue);display:grid;place-items:center">⚿</span><div><p style="font-weight:600;margin:0">Establir una contrasenya nova</p><p class="note" style="font-size:13px">Mínim 14 caràcters, amb majúscula, minúscula, número i símbol.</p></div></div>
+    ${S.sim==="expired"?`<p class="note" style="background:var(--s2);border:1px solid var(--line);border-radius:8px;padding:8px 10px;font-size:13px;margin-bottom:14px">Obre aquesta pàgina des de l'enllaç que has rebut per correu. Si l'enllaç ha caducat, torna a demanar-ne un de nou des de la pantalla d'inici de sessió.</p>`:""}
     <form class="f" onsubmit="event.preventDefault();S.toast={k:'good',t:'Contrasenya actualitzada.'};render()"><label class="fl"><span>Contrasenya nova</span><input class="inp" type="password" ${S.sim==="expired"?"disabled":""}></label><label class="fl"><span>Confirmar contrasenya</span><input class="inp" type="password" ${S.sim==="expired"?"disabled":""}></label><button class="btn btn-p" ${S.sim==="expired"?"disabled":""}>Desar contrasenya</button></form>
   </div>${S.toast?`<div class="toast ${S.toast.k}">${esc(S.toast.t)}</div>`:""}</div>`;
 }
 
 /* ---------- Comportamiento simulado ---------- */
 const ERR={
-  network:{t:"No hay conexión.",s:"Revisa tu conexión y vuelve a intentarlo; no se ha guardado nada."},
+  network:{obj:true,t:"No hay conexión.",s:"Revisa tu conexión y vuelve a intentarlo; no se ha guardado nada."},
   creds:{t:"El email o la contraseña no coinciden.",s:"Revisa que el email esté bien escrito. Si no recuerdas la contraseña, crea una nueva.",acts:`<button type="button" onclick="go('forgot')">Crear una contraseña nueva</button>`},
   unconfirmed:{t:"Aún no has confirmado tu email.",s:"Busca el correo de ProTeam (también en spam) y abre el enlace. Después vuelve a entrar.",acts:`<button type="button" onclick="resend()">Reenviar el correo</button>`},
   exists:{t:"Ya hay una cuenta con este email.",s:"Entra con tu contraseña o crea una nueva si no la recuerdas.",acts:`<button type="button" onclick="go('login')">Iniciar sesión</button><button type="button" onclick="go('forgot')">Crear una contraseña nueva</button>`},
@@ -342,7 +351,7 @@ function resend(){
 function saveReset(){
   S.err=null;S.fields={};
   const pw=S.newpw;const okRules=pw.length>=14&&/[a-z]/.test(pw)&&/[A-Z]/.test(pw)&&/[0-9]/.test(pw)&&/[^A-Za-z0-9]/.test(pw);
-  if(!okRules){S.err={t:"A la contraseña le falta algo.",s:"Mira la lista: lo que no está en verde es lo que falta."};render();return}
+  if(!okRules){S.err={t:"A la contraseña le falta algo.",s:"Mira la lista: lo que no está encendido es lo que falta."};render();return}
   if(S.newpw2!==pw){S.fields.np2="No coincide con la de arriba.";render();return}
   if(S.sim==="network"){S.err=ERR.network;render();return}
   S.busy=true;render();if(S.sim==="loading")return;
@@ -379,7 +388,7 @@ function render(){
   $("#view").innerHTML=html;
 }
 document.querySelectorAll(".seg").forEach(seg=>seg.addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;
-  const k={"c-ver":"ver","c-when":"when","c-dev":"dev"}[seg.id];S[k]=b.dataset.v;S.err=null;S.toast=null;S.busy=false;if(k!=="dev")S.done=null;render()}));
+  const k={"c-ver":"ver","c-when":"when","c-dev":"dev","c-dates":"dates"}[seg.id];S[k]=b.dataset.v;S.err=null;S.toast=null;S.busy=false;if(k!=="dev")S.done=null;render()}));
 $("#c-screen").addEventListener("change",e=>go(e.target.value));
 $("#c-sim").addEventListener("change",e=>{S.sim=e.target.value;S.err=null;S.toast=null;S.busy=false;S.done=null;
   if(e.target.value!=="empty"&&!S.email){S.name="Marta";S.surname="Ruiz";S.email="marta.ruiz@ejemplo.es";S.pw="pizarra-martes"}render()});
