@@ -88,7 +88,7 @@ Lista viva. **Cada tema tiene muchas ideas; cada idea da 3 reels; cada reel llev
 10. E · Cómo comunicar una suplencia · general
 
 ## T07 · Formación y metodología
-1. H · Cruyff y el rondo (verificar origen y frases) · fútbol
+1. H · Cruyff y el rondo (verificar origen y frases) · fútbol [hecha → T07-1-r1, r2, r3 · Dani A · 23/11 · fuente: The FA, England Football, 17/1/2023 (cita del libro de Stan Baker); Wikipedia «Rondo (game)» (Townsend, These Football Times, 1/9/2014). Origen del rondo no verificado: no se usa]
 2. E · Juego reducido: por qué el 4 contra 4 enseña más · fútbol [hecha → T07-2-r1, r2, r3 · Dani B · 23/11 · fuente (solo r1): Fenoglio, «The Manchester United 4 v 4 Pilot Scheme for U9s: Part II – The Analysis», Insight (FA Coaches Association), pp. 21-24 (texto: websites.mygameday.app/get_file.cgi?id=1830463)]
 3. D · Cuántos toques de balón tiene un niño en un entreno con filas · fútbol
 4. E · El ejercicio que no tiene oposición no entrena el partido · general
