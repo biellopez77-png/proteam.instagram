@@ -327,5 +327,22 @@
    "status": "no"
   },
   "added": "2026-11-23T12:36:04.402032+01:00"
+ },
+ {
+  "id": "T06-2-r3",
+  "kind": "reel",
+  "files": [
+   "publicar/media/T06-2-r3-1.mp4",
+   "publicar/media/T06-2-r3-2.jpg"
+  ],
+  "caption": "Lo que hace que el que sale del banquillo falle el primer balón, y cómo evitarlo antes del partido.\n\nCuarenta minutos sentado, frío, mirando el partido como un espectador. No le faltaba nivel: le faltaba estar dentro del partido mientras estaba fuera. Antes del partido, dale una cosa que mirar desde el banquillo (el pivote rival, por ejemplo) y que la apunte.\n\n(Escena de ejemplo: marcador y minutos no son de ningún equipo.)\n\n¿Le das tarea a tu banquillo o solo a los que juegan?",
+  "state": "revisión",
+  "ig": {
+   "status": "pendiente"
+  },
+  "tiktok": {
+   "status": "pendiente"
+  },
+  "added": "2026-11-23T13:02:54.153130+01:00"
  }
 ]
