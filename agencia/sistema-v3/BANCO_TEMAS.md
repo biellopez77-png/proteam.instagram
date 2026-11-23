@@ -77,7 +77,7 @@ Lista viva. **Cada tema tiene muchas ideas; cada idea da 3 reels; cada reel llev
 
 ## T06 · Gestión del grupo y vestuario
 1. H · La charla que Ferguson nunca daba (verificar anécdotas documentadas) · fútbol
-2. E · El jugador que no juega: cómo mantenerlo dentro · general
+2. E · El jugador que no juega: cómo mantenerlo dentro · general [en curso 2026-11-23 · Dani B]
 3. E · Minutos justos en categorías de base: una regla simple · fútbol
 4. H · El capitán que no llevaba brazalete · general
 5. I · Qué dicen los estudios sobre feedback positivo vs correctivo (verificar) · general
