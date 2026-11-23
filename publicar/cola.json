@@ -101,5 +101,22 @@
    "status": "pendiente"
   },
   "added": "2026-11-23T08:58:50.468321+01:00"
+ },
+ {
+  "id": "T06-1-r2",
+  "kind": "reel",
+  "files": [
+   "publicar/media/T06-1-r2-1.mp4",
+   "publicar/media/T06-1-r2-2.jpg"
+  ],
+  "caption": "Hay dos palabras que tus jugadores casi nunca te oyen decir.\n\nTu lateral corre cuarenta metros hacia atrás y corta un contraataque. En el vestuario se habla del gol, del penalti y del cambio. De su carrera, nada. Ferguson lo contó en Harvard Business Review (2013): no hay nada mejor que oír «bien hecho», y sin superlativos. En la banda, apunta lo bueno de cada uno con su minuto y díselo al acabar con su nombre.\n\n(Escena de ejemplo. Foto de Ferguson: Austin Osuide, CC BY 2.0, Wikimedia Commons.)\n\n¿A quién de tu equipo le debes hoy un «bien hecho»?",
+  "state": "revisión",
+  "ig": {
+   "status": "pendiente"
+  },
+  "tiktok": {
+   "status": "pendiente"
+  },
+  "added": "2026-11-23T09:37:26.127235+01:00"
  }
 ]
