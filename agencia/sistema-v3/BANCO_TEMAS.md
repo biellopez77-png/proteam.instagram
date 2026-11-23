@@ -89,7 +89,7 @@ Lista viva. **Cada tema tiene muchas ideas; cada idea da 3 reels; cada reel llev
 
 ## T07 · Formación y metodología
 1. H · Cruyff y el rondo (verificar origen y frases) · fútbol
-2. E · Juego reducido: por qué el 4 contra 4 enseña más · fútbol
+2. E · Juego reducido: por qué el 4 contra 4 enseña más · fútbol [hecha → T07-2-r1, r2, r3 · Dani B · 23/11 · fuente (solo r1): Fenoglio, «The Manchester United 4 v 4 Pilot Scheme for U9s: Part II – The Analysis», Insight (FA Coaches Association), pp. 21-24 (texto: websites.mygameday.app/get_file.cgi?id=1830463)]
 3. D · Cuántos toques de balón tiene un niño en un entreno con filas · fútbol
 4. E · El ejercicio que no tiene oposición no entrena el partido · general
 5. H · La Masia y el balón en cada ejercicio (verificar) · fútbol
@@ -144,6 +144,11 @@ Lista viva. **Cada tema tiene muchas ideas; cada idea da 3 reels; cada reel llev
 6. H · El club que redujo lesiones midiendo la carga (caso documentado) · fútbol
 7. E · Crecimiento y dolor de rodillas en alevines (solo información oficial) · general
 8. C · Disponibilidad de la plantilla, de un vistazo · general
+9. E · Calentar con balón en 10 minutos sin comerte el entreno · fútbol [añadida 23/11 · Dani B]
+10. I · Golpe en la cabeza en un partido de base: qué dice el protocolo oficial (solo fuente oficial: FIFA, RFEF o similar) · general [añadida 23/11 · Dani B]
+11. E · El jugador que vuelve de lesión: cómo meterlo en el ejercicio sin que el grupo lo trate distinto · general [añadida 23/11 · Dani B]
+12. D · Esguinces de tobillo y trabajo de equilibrio: qué dicen los estudios (verificar) · baloncesto [añadida 23/11 · Dani B]
+13. E · Partidos de mañana con calor: pausas y agua según pautas oficiales · general [añadida 23/11 · Dani B]
 
 ## T12 · Psicología y competición
 1. E · La presión de los penaltis en base · fútbol
