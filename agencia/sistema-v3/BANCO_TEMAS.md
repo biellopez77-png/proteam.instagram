@@ -46,7 +46,7 @@ Lista viva. **Cada tema tiene muchas ideas; cada idea da 3 reels; cada reel llev
 1. E · Una pregunta del 1 al 10 (B2) · baloncesto [hecha → T03-1-r1, r2, r3 · Dani A · fuentes: Foster et al. 2001, JSCR 15(1); Haddad et al. 2017, Front. Neurosci. 11:612]
 2. H · El tercer cuarto se gana el jueves · baloncesto [hecha → T03-2-r1, r2, r3 · Dani B · fuente del método: Foster et al. 2001, JSCR 15(1)]
 3. D · El RPE de sesión: de dónde sale (Foster, 2001) · general
-4. E · El jugador que siempre dice «7» · general [en curso 2026-11-23 · Dani B]
+4. E · El jugador que siempre dice «7» · general [hecha → T03-4-r1, r2, r3 · Dani B · 23/11 · sin hechos externos: escenas en segunda persona (r1 fútbol: el corro y el primero que contesta; r2 baloncesto: un jugador sin anclas en la escala; r3 balonmano: el 7 como nota de examen). No se nombra método ni estudio; no se pudo recotejar Haddad et al. 2017 en este turno]
 5. E · Semana de carga vs semana de descarga: cómo se ve en una gráfica · fútbol
 6. H · Lesiones en enero: el patrón que se repite en base · fútbol
 7. E · Cómo preguntar el RPE a niños de 10 años · general
@@ -67,6 +67,11 @@ Lista viva. **Cada tema tiene muchas ideas; cada idea da 3 reels; cada reel llev
 8. C · Las paradas de tu portero, registradas en directo · fútbol
 9. E · Cómo hablarle a un portero después de un error · general
 10. D · El 37,5 %: cuándo un porcentaje de paradas es bueno · balonmano (pieza aparte)
+11. E · El portero que no toca balón en 40 minutos: cómo mantenerlo dentro del partido · fútbol [añadida 23/11 · Dani B]
+12. E · Saque del portero en fútbol 7: tres opciones antes de patear en largo · fútbol [añadida 23/11 · Dani B]
+13. E · La portera y el 7 metros: qué mirar antes del lanzamiento (sin cifras externas) · balonmano [añadida 23/11 · Dani B]
+14. E · Dos porteros y una portería: un reparto de minutos que se pueda explicar a los dos · general [añadida 23/11 · Dani B]
+15. E · El calentamiento del portero cuando llegáis 20 minutos antes del partido · fútbol [añadida 23/11 · Dani B]
 
 ## T05 · Datos y estadísticas que sí sirven
 1. H · Moneyball: el equipo que fichaba con una hoja de cálculo · béisbol → general [hecha → T05-1-r1, r2, r3 · Dani A · fuentes: MLB.com «2002 Twins-A's ALDS recap»; SI 8/9/2017; Wikipedia «Moneyball: The Art of Winning an Unfair Game»; matiz NPR 2013]
