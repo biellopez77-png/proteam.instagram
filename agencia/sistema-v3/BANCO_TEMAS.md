@@ -157,7 +157,7 @@ Lista viva. **Cada tema tiene muchas ideas; cada idea da 3 reels; cada reel llev
 
 ## T12 · Psicología y competición
 1. E · La presión de los penaltis en base · fútbol
-2. H · El penalti que falló Baggio y lo que pasó después (verificar) · fútbol
+2. H · El penalti que falló Baggio y lo que pasó después (verificar) · fútbol [en curso 2026-11-23 · Dani B]
 3. E · Rutina antes de un tiro libre · baloncesto
 4. E · El error que se repite por miedo · general
 5. I · Qué es la «mano caliente» y qué dicen los datos (verificar estudios) · baloncesto
