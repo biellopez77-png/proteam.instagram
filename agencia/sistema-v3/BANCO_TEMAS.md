@@ -14,7 +14,7 @@ Lista viva. **Cada tema tiene muchas ideas; cada idea da 3 reels; cada reel llev
 2. H · La pizarra de un descanso que dio la vuelta a una final (buscar caso documentado: final de Champions 2005, Estambul) · fútbol [hecha → T01-2-r1, r2, r3 · Dani B]
 3. E · Los 15 minutos del descanso, minuto a minuto: qué decir y qué no · general [hecha → T01-3-r1, r2, r3 · Dani A]
 4. D · Cuántas cosas recuerda un entrenador del primer tiempo sin apuntar (buscar estudio sobre recuerdo de entrenadores) · general [hecha → T01-4-r1, r2, r3 · Dani B · fuente: Laird y Waters 2008, IJPAS 8(1)]
-5. E · Tres preguntas que el segundo entrenador tiene que poder contestarte en el descanso · fútbol
+5. E · Tres preguntas que el segundo entrenador tiene que poder contestarte en el descanso · fútbol [hecha → T01-5-r1, r2, r3 · Dani A · 23/11 · sin hechos externos: escenas en segunda persona (r1 la pregunta abierta «¿cómo lo ves?», r2 el cambio del rival que nadie pregunta, r3 el camino de la banda al vestuario). Mismas tres preguntas en los tres: por dónde nos hacen daño, quién no llega, qué han cambiado ellos]
 6. H · El entrenador que mandaba notas al campo en papel (casos documentados de notas en la banda) · fútbol [hecha → T01-6-r1, r2, r3 · Dani B · 23/11 · fuentes: FourFourTwo 12/1/2017 y theScore (Klopp-Sturridge, Southampton 1-0 Liverpool, 11/1/2017; Sky Sports 12/1/2017); Goal 11/12/2023, Pulse Sports y beIN 10/12/2023 (Mourinho, recogepelotas y Rui Patrício, Roma 1-1 Fiorentina); Goal 26/2/2018 (Mourinho-Matić, United 2-1 Chelsea). Contenido de la nota de Roma no publicado: no se inventa]
 7. I · Qué mirar en los primeros 10 minutos de un rival que no conoces · fútbol
 8. E · Por qué el «hay que estar más intensos» no cambia nada en el descanso · general
