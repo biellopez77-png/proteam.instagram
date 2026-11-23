@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8">
+<!-- T06-2-r1 «Dieciséis en la lista» · fútbol · a partir de la plantilla a3.html (planos fijos, la cámara solo se mueve al cambiar de zona) -->
+<style>
+@font-face{font-family:M;font-weight:800;src:url(/tools/fonts/manrope-latin-800-normal.woff2)}
+@font-face{font-family:M;font-weight:700;src:url(/tools/fonts/manrope-latin-700-normal.woff2)}
+@font-face{font-family:M;font-weight:500;src:url(/tools/fonts/manrope-latin-500-normal.woff2)}
+@font-face{font-family:S;font-style:italic;font-weight:400;src:url(/tools/fonts/instrument-serif-latin-400-italic.woff2)}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#fbfaf7}
+#st{position:absolute;inset:0;overflow:hidden;background:#fbfaf7}
+#world{position:absolute;left:0;top:0;transform-origin:0 0}
+.o{position:absolute;left:0;top:0;transform-origin:50% 50%;overflow:visible}
+.ph{background:#fff;padding:22px;box-shadow:0 18px 50px rgba(0,0,0,.16)}
+.ph img{display:block;width:100%;height:100%;object-fit:cover}
+#cap{position:absolute;left:90px;right:90px;top:1330px;text-align:center;font-family:M;font-weight:800;font-size:58px;line-height:1.12;letter-spacing:-.03em;color:#121212;padding:18px 26px;border-radius:22px}
+#cap em{font-family:S;font-style:italic;font-weight:400;font-size:1.14em;letter-spacing:0}
+#ink{position:absolute;inset:0;background:#0e0e10;opacity:0;pointer-events:none}
+#lamp{position:absolute;left:240px;top:560px;width:600px;height:600px;opacity:0;pointer-events:none}
+</style></head><body><div id="st">
+<div id="world">
+  <div class="o" id="cold" style="width:3300px;height:5100px;background:#eef1f4"></div>
+  <div class="o" id="warm" style="width:1700px;height:1500px;background:#f4ede0"></div>
+  <svg class="o" id="HJ" width="640" height="1600" viewBox="0 0 640 1600" style="filter:drop-shadow(0 14px 30px rgba(0,0,0,.10))"></svg>
+  <svg class="o" id="CAL" width="900" height="1000" viewBox="0 0 900 1000"></svg>
+  <div class="o ph" id="WP" style="width:780px;height:590px;filter:saturate(.7) brightness(1.03)"><img src="/tools/reel_v4/T06-2-r1/img/campo_invierno.jpg"></div>
+  <svg class="o" id="LG" width="760" height="260" viewBox="0 0 760 260"></svg>
+  <svg class="o" id="MEM" width="1100" height="760" viewBox="0 0 1100 760" style="filter:sepia(.55) saturate(.8)"></svg>
+  <div class="o ph" id="CP" style="width:440px;height:290px;padding:16px;filter:sepia(.6) saturate(.75)"><img src="/tools/reel_v4/T06-2-r1/img/cono.jpg"></div>
+  <svg class="o" id="SAT" width="1060" height="340" viewBox="0 0 1060 340" style="filter:sepia(.55) saturate(.8)"></svg>
+  <svg class="o" id="Q" width="760" height="800" viewBox="0 0 760 800"></svg>
+  <svg class="o" id="TR" width="900" height="900" viewBox="0 0 900 900"></svg>
+  <svg class="o" id="TB" width="1000" height="900" viewBox="0 0 1000 900"></svg>
+  <svg class="o" id="CD" width="2200" height="1300" viewBox="0 0 2200 1300"></svg>
+  <div class="o" id="B" style="width:900px;height:500px;text-align:center">
+    <div style="font-family:M;font-weight:800;letter-spacing:-.05em;color:#121212;font-size:170px;margin-top:120px;line-height:1">Pro<span style="color:#2f6bff">Team</span></div>
+    <div style="margin-top:30px;font-family:M;font-weight:500;font-size:38px;color:#77736b">la app del entrenador · enlace en la bio</div>
+  </div>
+</div>
+<div id="ink"></div>
+<svg id="lamp" viewBox="0 0 600 600">
+  <defs><radialGradient id="gl"><stop offset="0" stop-color="#fff6e0" stop-opacity=".30"/><stop offset="1" stop-color="#fff6e0" stop-opacity="0"/></radialGradient></defs>
+  <circle cx="300" cy="300" r="290" fill="url(#gl)"/>
+  <g transform="translate(300 300) rotate(-28)">
+    <rect x="-200" y="-18" width="330" height="36" fill="#f2efe6"/><rect x="-232" y="-18" width="34" height="36" fill="#c9c4b8"/>
+    <path d="M130 -18 L200 0 L130 18 Z" fill="#e8dcc4"/><path d="M178 -6 L200 0 L178 6 Z" fill="#2a2a2a"/>
+  </g>
+</svg>
+<div id="cap"></div>
+</div>
+<script src="/tools/reel_v4/T06-2-r1/times.js"></script>
+<script>
+const $=id=>document.getElementById(id), W=window.WORDS, NS='http://www.w3.org/2000/svg';
+const at=(w,n=1)=>{let c=0;for(const x of W)if(x[0]===w&&++c===n)return x[1];throw 'no '+w+n};
+const cl=(x,a=0,b=1)=>Math.min(b,Math.max(a,x)), r=(t,a,b)=>cl((t-a)/(b-a));
+const io=x=>x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2, eo=x=>1-Math.pow(1-x,3), lerp=(a,b,k)=>a+(b-a)*k;
+const T={d16:at('dieciseis'),d17:at('diecisiete'),viene:at('viene'),nadie:at('nadie'),cuando:at('cuando'),juv:at('juvenil'),enero:at('enero'),segunda:at('segunda'),
+ primera:at('primera'),llegaba:at('llegaba'),conos:at('conos'),sabado:at('sabado'),salia:at('salia'),ninguno:at('ninguno'),al:at('al'),preguntaba:at('preguntaba'),
+ luego:at('luego'),dejo:at('dejo'),preguntar:at('preguntar'),despues:at('despues'),jueves:at('jueves'),martes:at('martes'),y2:at('y',2),dia:at('dia'),vino:at('vino'),
+ tu:at('tu'),compromiso:at('compromiso'),el3:at('el',3),como2:at('como',2),sobraba:at('sobraba'),y3:at('y',3),alta:at('alta'),paso:at('paso'),silencio:at('silencio'),
+ dile:at('dile'),frase:at('frase'),entrenar2:at('entrenar',2),una2:at('una',2),sola:at('sola'),el4:at('el',4),entrena:at('entrena'),eso:at('eso'),sabe2:at('sabe',2),y4:at('y',4),
+ dos2:at('dos',2),despues2:at('despues',2),juntos:at('juntos'),apunt:at('apuntalo'),para2:at('para',2),END:window.VEND+.25};
+// zonas del mundo
+const HJz=[0,0], CALz=[1500,0], WPz=[3000,-60], LGz=[3000,700], MEMz=[0,1900], CPz=[-330,1640], SATz=[0,2900], Qz=[1700,2000], TRz=[3300,2000], TBz=[1700,3800], CDz=[600,5700], Bz=[-1900,4000];
+const CUT=T.dile-.3;   // en negro: del tablero de notas a la tarjeta
+const S0=[0,HJz[0],HJz[1]-330,1.6];
+const SH=[ // [inicio del movimiento, cx, cy, zoom, duración]
+ S0,
+ [T.d17-.3,HJz[0],HJz[1]+600,1.45],
+ [T.nadie-.3,CALz[0],CALz[1]+20,.98,.7],
+ [T.juv-.3,WPz[0],WPz[1],1.22,.7],
+ [T.segunda-.25,LGz[0],LGz[1]-10,1.4],
+ [T.primera-.3,MEMz[0]-80,MEMz[1]-40,1.0,.7],
+ [T.sabado-.3,SATz[0],SATz[1],.98],
+ [T.al-.35,Qz[0],Qz[1],1.2,.7],
+ [T.despues-.3,TRz[0],TRz[1],1.05,.7],
+ [T.tu-.35,TBz[0]-240,TBz[1],1.4,.7],
+ [T.el3-.2,TBz[0]+240,TBz[1],1.4],
+ [T.y3-.2,TBz[0],TBz[1]+20,.95],
+ [CUT,CDz[0]-650,CDz[1]-280,1.35],
+ [T.el4-.3,CDz[0]+250,CDz[1]-240,1.3],
+ [T.dos2-.3,CDz[0],CDz[1],.48,.9],
+ [T.apunt-.35,Bz[0],Bz[1],1.0,.7],
+ [T.para2-.05,S0[1],S0[2],S0[3],.95]];
+const CUTS=new Set([CUT]);
+function cam(t){let i=0;while(i+1<SH.length&&SH[i+1][0]<=t)i++;const s=SH[i];
+ if(i===0||CUTS.has(s[0]))return [s[1],s[2],s[3],0];
+ const p=SH[i-1],Dd=s[4]||.62,k=r(t,s[0],s[0]+Dd),e=io(k);
+ const lz=lerp(Math.log(p[3]),Math.log(s[3]),e)-.12*Math.sin(Math.PI*k)*(Math.hypot(s[1]-p[1],s[2]-p[2])>600?1:0);
+ return [lerp(p[1],s[1],e),lerp(p[2],s[2],e),Math.exp(lz),k>0&&k<1?Math.sin(Math.PI*k):0]}
+const sz=el=>[el.offsetWidth||+el.getAttribute('width'),el.offsetHeight||+el.getAttribute('height')];
+function place(el,x,y,rot=0,sc=1){const [w,h]=sz(el);el.style.transform=`translate(${x-w/2}px,${y-h/2}px) rotate(${rot}deg) scale(${sc})`}
+const mk=(tag,a,par)=>{const e=document.createElementNS(NS,tag);for(const k in a)e.setAttribute(k,a[k]);par.appendChild(e);return e};
+const txt=(par,x,y,s,size,fill='#121212',anchor='middle',font='M',wt=800)=>{const e=mk('text',{x,y,'font-family':font,'font-weight':font==='M'?wt:400,'font-style':font==='S'?'italic':'normal','font-size':size,fill,'text-anchor':anchor},par);e.textContent=s;return e};
+const pen=(par,d,c='#121212',w=5,extra={})=>mk('path',Object.assign({d,fill:'none',stroke:c,'stroke-width':w,'stroke-linecap':'round','stroke-linejoin':'round',pathLength:100,'stroke-dasharray':100,'stroke-dashoffset':0},extra),par);
+const drawK=(el,k)=>{el.setAttribute('stroke-dashoffset',100-100*k);el.style.visibility=k>0?'visible':'hidden'};
+const SHIRT='M120 20 L60 40 L10 110 L60 150 L80 130 L80 340 L280 340 L280 130 L300 150 L350 110 L300 40 L240 20 C 225 55 135 55 120 20Z';
+const cone=(par,x,y,s=1)=>{const g=mk('g',{transform:`translate(${x} ${y}) scale(${s})`},par);mk('path',{d:'M-30 14 L-10 -26 L10 -26 L30 14 Z',fill:'#e98a3c',stroke:'#121212','stroke-width':3,'stroke-linejoin':'round'},g);mk('rect',{x:-36,y:12,width:72,height:8,rx:3,fill:'#e98a3c',stroke:'#121212','stroke-width':3},g);return g};
+// 1 · hoja de convocatoria (dieciséis dorsales; el 17 debajo, fuera del primer encuadre)
+const HJs={};{const s=$('HJ');mk('rect',{x:0,y:0,width:640,height:1600,fill:'#fff'},s);mk('rect',{x:1.5,y:1.5,width:637,height:1597,fill:'none',stroke:'#e5e2da','stroke-width':3},s);
+ txt(s,44,96,'CONVOCATORIA',40,'#121212','start');txt(s,44,140,'JUVENIL · SÁBADO',24,'#77736b','start','M',700);txt(s,604,140,'EJEMPLO',18,'#9aa1a8','end');
+ mk('path',{d:'M44 168 H596',stroke:'#121212','stroke-width':3},s);
+ for(let i=0;i<16;i++){const c=i<8?0:1,rw=i%8,x=c?350:56,y=262+rw*112;txt(s,x,y,String(i+1),66,'#121212','start','S');mk('path',{d:`M${x+80} ${y+6} H${x+230}`,stroke:'#dfe2e6','stroke-width':3},s)}
+ mk('path',{d:'M44 1240 H596',stroke:'#c9c6bf','stroke-width':3,'stroke-dasharray':'12 12'},s);
+ txt(s,60,1440,'17',96,'#121212','start','S');mk('path',{d:'M175 1446 H560',stroke:'#dfe2e6','stroke-width':3},s);
+ HJs.st=pen(s,'M40 1418 C 200 1404 420 1412 600 1398','#121212',8);}
+// 2 · temporada: semanas sin marcar
+const CALs={};{const s=$('CAL');mk('rect',{x:20,y:20,width:860,height:960,rx:22,fill:'#fff',stroke:'#121212','stroke-width':6},s);
+ txt(s,70,110,'TEMPORADA · DORSAL 17',34,'#121212','start');txt(s,850,958,'EJEMPLO',16,'#9aa1a8','end');
+ ['SEP','OCT','NOV','DIC','ENE'].forEach((m,i)=>{const y=190+i*150;txt(s,70,y+62,m,32,'#77736b','start','M',700);
+  for(let j=0;j<4;j++){const x=230+j*150;mk('rect',{x,y,width:110,height:100,rx:12,fill:'none',stroke:'#c9ced5','stroke-width':4},s);
+   if(i<1||(i===1&&j<2))pen(s,`M${x+28} ${y+52} L${x+48} ${y+72} L${x+84} ${y+30}`,'#121212',6)}});
+ CALs.q=txt(s,600,560,'?',360,'#121212','middle','S');}
+// 3 · liga: segunda vuelta
+const LGs={};{const s=$('LG');mk('rect',{x:10,y:10,width:740,height:240,rx:20,fill:'#fff',stroke:'#121212','stroke-width':5},s);
+ txt(s,60,100,'LIGA JUVENIL · ENERO',34,'#77736b','start','M',700);txt(s,60,190,'1.ª vuelta',62,'#9aa1a8','start','S');txt(s,420,190,'2.ª vuelta',70,'#121212','start','S');
+ LGs.c=pen(s,'M400 150 C 400 90 520 80 620 92 C 720 104 730 200 640 224 C 560 240 420 236 404 190 C 398 170 410 140 440 128','#121212',5);txt(s,740,240,'EJEMPLO',14,'#9aa1a8','end');}
+// 4 · recuerdo (sepia): conos en el campo
+const MEMs={};{const s=$('MEM');mk('rect',{x:0,y:0,width:1100,height:760,fill:'#dfe6d6'},s);
+ mk('rect',{x:60,y:60,width:980,height:640,fill:'none',stroke:'#fff','stroke-width':7},s);mk('path',{d:'M550 60 V700',stroke:'#fff','stroke-width':6},s);
+ mk('circle',{cx:550,cy:380,r:110,fill:'none',stroke:'#fff','stroke-width':6},s);mk('rect',{x:60,y:230,width:150,height:300,fill:'none',stroke:'#fff','stroke-width':6},s);mk('rect',{x:890,y:230,width:150,height:300,fill:'none',stroke:'#fff','stroke-width':6},s);
+ MEMs.c=[[360,170],[480,300],[360,430],[480,560],[700,200],[820,330],[700,460]].map(([x,y])=>cone(s,x,y,1.1));
+ MEMs.me=mk('circle',{cx:250,cy:620,r:20,fill:'#121212'},s);txt(s,1040,744,'EJEMPLO',16,'#77736b','end');}
+// 5 · sábados (sepia)
+const SATs={};{const s=$('SAT');const v=['5′','0′','5′','0′','0′','5′'];
+ SATs.c=v.map((n,i)=>{const x=20+i*172,g=mk('g',{transform:`translate(${x} 30)`},s);mk('rect',{x:0,y:0,width:150,height:250,rx:14,fill:'#fff',stroke:'#121212','stroke-width':4},g);
+  txt(g,75,58,'SÁB',30,'#77736b','middle','M',700);const nn=txt(g,75,190,n,104,'#121212','middle','S');return nn});txt(s,1040,326,'EJEMPLO',16,'#77736b','end');}
+// 6 · el 17 y su pregunta
+const Qs={};{const s=$('Q');const g=mk('g',{transform:'translate(40 150) scale(1.3)'},s);mk('path',{d:SHIRT,fill:'#fff',stroke:'#121212','stroke-width':4},g);txt(g,180,250,'17',120,'#121212');
+ Qs.q=txt(s,640,400,'?',300,'#121212','middle','S');
+ Qs.er=mk('g',{opacity:0},s);mk('rect',{x:-60,y:-34,width:120,height:68,rx:12,fill:'#e7c9b8',stroke:'#121212','stroke-width':4},Qs.er);mk('rect',{x:-60,y:-34,width:40,height:68,rx:10,fill:'#9fb2c9',stroke:'#121212','stroke-width':4},Qs.er);}
+// 7 · entrenos: martes y jueves
+const TRs={};{const s=$('TR');mk('rect',{x:20,y:20,width:860,height:860,rx:22,fill:'#fff',stroke:'#121212','stroke-width':6},s);
+ txt(s,70,110,'ENTRENOS · 17',36,'#121212','start');txt(s,850,862,'EJEMPLO',16,'#9aa1a8','end');
+ txt(s,430,190,'MAR',34,'#77736b','middle','M',700);txt(s,690,190,'JUE',34,'#77736b','middle','M',700);
+ TRs.cells=[];for(let i=0;i<4;i++){const y=230+i*150;txt(s,90,y+75,'S'+(i+1),32,'#9aa1a8','start','M',700);
+  for(let j=0;j<2;j++){const x=360+j*260;mk('rect',{x,y,width:140,height:110,rx:12,fill:'none',stroke:'#c9ced5','stroke-width':4},s);
+   const ck=mk('path',{d:`M${x+36} ${y+58} L${x+60} ${y+82} L${x+104} ${y+30}`,fill:'none',stroke:'#121212','stroke-width':7,'stroke-linecap':'round','stroke-linejoin':'round'},s);TRs.cells.push(ck)}}}
+// 8 · tablero: dos notas y un hueco
+const TBs={};{const s=$('TB');mk('rect',{x:20,y:20,width:960,height:860,rx:18,fill:'#fff',stroke:'#121212','stroke-width':8},s);
+ const note=(x,y,rot,str,font)=>{const g=mk('g',{transform:`translate(${x} ${y}) rotate(${rot})`},s);
+  mk('rect',{x:-180,y:-120,width:360,height:240,fill:'#f4eed9',stroke:'#e2dcc4','stroke-width':2},g);mk('circle',{cx:0,cy:-100,r:9,fill:'#d23a2a'},g);
+  font==='S'?txt(g,0,34,str,100,'#121212','middle','S'):txt(g,0,26,str,56,'#3a3d45','middle','M',500);return g};
+ TBs.n1=note(260,440,-4,'Compromiso','M');TBs.n2=note(740,440,3,'Sobro','S');
+ TBs.gap=mk('rect',{x:440,y:640,width:120,height:150,rx:10,fill:'none',stroke:'#9aa1a8','stroke-width':4,'stroke-dasharray':'12 10',opacity:0},s);
+ TBs.gq=txt(s,500,740,'…',70,'#9aa1a8','middle','S');TBs.gq.setAttribute('opacity',0);txt(s,970,868,'EJEMPLO',16,'#9aa1a8','end');}
+// 9 · solución: tarjeta, ejercicio del martes y calendario
+const CDs={};{const s=$('CD');
+ // tarjeta
+ mk('rect',{x:100,y:150,width:700,height:440,fill:'#fff',stroke:'#e5e2da','stroke-width':3},s);mk('rect',{x:100,y:150,width:700,height:14,fill:'#2f6bff'},s);
+ txt(s,150,250,'PARA JUGAR · 17',30,'#77736b','start','M',700);txt(s,770,570,'EJEMPLO',18,'#9aa1a8','end');
+ CDs.cp=mk('clipPath',{id:'wr'},mk('defs',{},s));CDs.cr=mk('rect',{x:140,y:300,width:0,height:180},CDs.cp);
+ CDs.w=txt(s,150,430,'Salir de cara',118,'#121212','start','S');CDs.w.setAttribute('clip-path','url(#wr)');
+ CDs.ul=pen(s,'M150 462 C 330 452 520 466 700 454','#2f6bff',10);
+ CDs.pc=mk('g',{},s);{const g=mk('g',{transform:'rotate(-35)'},CDs.pc);mk('rect',{x:0,y:-12,width:220,height:24,fill:'#f2c84b',stroke:'#121212','stroke-width':3},g);mk('path',{d:'M0 -12 L-44 0 L0 12 Z',fill:'#e8d3a8',stroke:'#121212','stroke-width':3},g);mk('path',{d:'M-30 -4 L-44 0 L-30 4 Z',fill:'#121212'},g)}
+ // ejercicio del martes
+ mk('rect',{x:1000,y:120,width:780,height:560,fill:'#fff',stroke:'#e5e2da','stroke-width':3},s);txt(s,1040,190,'MARTES · EJERCICIO',30,'#121212','start');txt(s,1750,660,'EJEMPLO',18,'#9aa1a8','end');
+ mk('rect',{x:1040,y:230,width:700,height:400,fill:'#eef3ea',stroke:'#121212','stroke-width':4},s);
+ cone(s,1200,330,.8);cone(s,1200,530,.8);cone(s,1560,430,.8);
+ CDs.p=mk('circle',{cx:1330,cy:430,r:20,fill:'#121212'},s);mk('circle',{cx:1110,cy:430,r:16,fill:'#9aa1a8'},s);
+ CDs.a1=pen(s,'M1130 430 H1300','#121212',5,{'stroke-dasharray':'100'});CDs.a2=pen(s,'M1350 430 C 1420 430 1470 400 1530 400','#2f6bff',7);
+ CDs.tag=txt(s,1440,370,'salir de cara',44,'#2f6bff','middle','S');
+ CDs.lk=pen(s,'M800 330 C 880 300 930 300 1000 330','#2f6bff',6,{'stroke-dasharray':'3 5'});
+ // calendario de dos semanas
+ const D=['L','M','X','J','V','S','D'];for(let i=0;i<15;i++){const x=100+i*132,y=1000;mk('rect',{x,y,width:118,height:150,rx:12,fill:'#fff',stroke:i===1?'#121212':'#c9ced5','stroke-width':4},s);
+  txt(s,x+59,y+50,D[i%7],26,'#77736b','middle','M',700);txt(s,x+59,y+122,String(9+i),56,'#121212','middle','S')}
+ txt(s,166,1200,'hoy',30,'#77736b','middle','S');
+ CDs.cc=pen(s,'M2040 990 C 2110 990 2128 1100 2120 1150 C 2110 1190 2010 1202 1960 1170 C 1910 1134 1920 1020 1990 996','#2f6bff',7);
+ CDs.ca=pen(s,'M450 600 C 700 880 1500 900 1960 1000','#2f6bff',7);
+ CDs.jt=txt(s,2030,1262,'juntos',54,'#2f6bff','middle','S');}
+const CAPS=[[T.d16+.12,T.d17-.12,'Dieciséis <em>en la lista.</em>'],[T.d17,T.nadie-.12,'El 17 <em>ya no viene.</em>'],[T.nadie,T.juv-.15,'Nadie sabe <em>desde cuándo.</em>'],
+ [T.juv,T.segunda-.12,'Juvenil. <em>Enero.</em>'],[T.segunda,T.primera-.4,'Empieza <em>la segunda vuelta.</em>'],[T.primera-.3,T.sabado-.12,'Llegaba el primero <em>a poner los conos.</em>'],
+ [T.sabado,T.ninguno+.45,'Cada sábado: <em>cinco minutos o ninguno.</em>'],[T.al,T.luego-.12,'Al principio <em>preguntaba.</em>'],[T.luego,T.despues-.15,'Luego <em>dejó de preguntar.</em>'],
+ [T.despues,T.y2-.1,'Faltó un jueves. <em>Un martes.</em>'],[T.y2,T.tu-.15,'Y un día <em>ya no vino.</em>'],[T.tu,T.el3-.12,'Tú lo viste como <em>poco compromiso.</em>'],
+ [T.el3,T.y3-.12,'Él, <em>como que sobraba.</em>'],[T.y3,T.alta+.45,'Y ninguno de los dos <em>lo dijo.</em>'],[T.paso,T.silencio+.65,'Pasó <em>en silencio.</em>'],
+ [T.dile,T.frase-.3,'Dile qué le falta <em>para jugar.</em>'],[T.frase-.3,T.una2-.12,'En una frase <em>que se pueda entrenar.</em>'],[T.una2,T.el4-.12,'<em>Una sola cosa.</em>'],
+ [T.el4,T.y4-.12,'El martes se entrena <em>eso.</em>'],[T.y4,T.dos2-.12,'<em>Y él lo sabe.</em>'],[T.dos2,T.apunt-.15,'Dos semanas después: <em>juntos.</em>'],
+ [T.apunt,T.para2-.12,'Apúntalo en la app de ProTeam.'],[T.para2,T.END-.75,'Para que el 17 <em>vuelva a la lista.</em>']];
+window.frame=function(t){
+  const [cx,cy,z,mv]=cam(t);
+  const wd=$('world');wd.style.transform=`translate(540px,760px) scale(${z}) translate(${-cx}px,${-cy}px)`;
+  wd.style.filter=mv>.35?`blur(${(2.6*(mv-.35)/.65).toFixed(2)}px)`:'none';
+  place($('cold'),2550,1750);place($('warm'),-100,2250);
+  // 1 · hoja (el último fotograma vuelve aquí: el 17 tachado queda fuera de cuadro)
+  place($('HJ'),HJz[0],HJz[1]);drawK(HJs.st,io(r(t,T.viene-.1,T.viene+.45)));
+  // 2 · temporada
+  place($('CAL'),CALz[0],CALz[1]);CALs.q.setAttribute('opacity',.85*eo(r(t,T.nadie+.2,T.nadie+.7)));
+  // 3 · foto de enero y liga
+  place($('WP'),WPz[0],WPz[1],-1.5);place($('LG'),LGz[0],LGz[1],1);drawK(LGs.c,io(r(t,T.segunda+.05,T.segunda+.75)));
+  // 4 · recuerdo: conos uno a uno
+  place($('MEM'),MEMz[0]+120,MEMz[1]);place($('CP'),CPz[0],CPz[1],-4);
+  MEMs.c.forEach((g,i)=>{const s0=T.llegaba-.1+i*(T.conos+.3-T.llegaba)/7,k=eo(r(t,s0,s0+.25));g.setAttribute('opacity',k)});
+  const km=io(r(t,T.llegaba-.2,T.conos+.2));MEMs.me.setAttribute('cx',lerp(250,640,km));MEMs.me.setAttribute('cy',lerp(620,560,km));
+  // 5 · sábados
+  place($('SAT'),SATz[0],SATz[1]);SATs.c.forEach((n,i)=>{const s0=T.salia-.1+i*(T.ninguno+.2-T.salia)/6;n.setAttribute('opacity',eo(r(t,s0,s0+.22)))});
+  // 6 · pregunta y goma
+  place($('Q'),Qz[0],Qz[1]);const kq=eo(r(t,T.preguntaba-.15,T.preguntaba+.3)),ke=r(t,T.dejo-.1,T.preguntar+.35);
+  Qs.q.setAttribute('opacity',kq*(1-io(ke)));Qs.er.setAttribute('opacity',r(t,T.dejo-.35,T.dejo-.05)*(1-r(t,T.preguntar+.35,T.preguntar+.7)));
+  Qs.er.setAttribute('transform',`translate(${640+70*Math.sin(ke*Math.PI*4)} ${lerp(260,380,ke)}) rotate(-20)`);
+  // 7 · entrenos: se vacía el jueves, luego el martes, luego todo
+  place($('TR'),TRz[0],TRz[1]);const order=[T.dia+.05,T.jueves+.1,T.martes+.1,T.dia+.13,T.dia+.21,T.dia+.29,T.dia+.37,T.dia+.45];
+  TRs.cells.forEach((c,i)=>c.setAttribute('opacity',1-r(t,order[i],order[i]+.3)));
+  // 8 · notas
+  place($('TB'),TBz[0],TBz[1]);TBs.n1.setAttribute('opacity',r(t,T.tu+.1,T.tu+.45));TBs.n2.setAttribute('opacity',r(t,T.el3+.1,T.el3+.4));
+  const ap=io(r(t,T.y3+.1,T.y3+.8));TBs.n1.setAttribute('transform',`translate(${lerp(260,215,ap)} ${lerp(440,400,ap)}) rotate(${lerp(-4,-7,ap)})`);
+  TBs.n2.setAttribute('transform',`translate(${lerp(740,785,ap)} ${lerp(440,400,ap)}) rotate(${lerp(3,6,ap)})`);TBs.gap.setAttribute('opacity',ap);TBs.gq.setAttribute('opacity',ap*.9);
+  // 9 · solución
+  place($('CD'),CDz[0],CDz[1]);const kw=io(r(t,T.dile+.15,T.entrenar2+.2));CDs.cr.setAttribute('width',640*kw);
+  CDs.pc.setAttribute('transform',`translate(${150+600*kw} ${lerp(420,400,kw)+8*Math.sin(kw*30)})`);CDs.pc.setAttribute('opacity',r(t,T.dile-.1,T.dile+.15)*(1-r(t,T.entrenar2+.2,T.entrenar2+.5)));
+  drawK(CDs.ul,io(r(t,T.una2-.05,T.sola+.35)));drawK(CDs.lk,io(r(t,T.el4+.1,T.entrena+.2)));
+  drawK(CDs.a1,io(r(t,T.entrena,T.eso)));drawK(CDs.a2,io(r(t,T.eso,T.sabe2+.1)));CDs.tag.setAttribute('opacity',r(t,T.eso+.1,T.eso+.4));
+  CDs.p.setAttribute('cx',lerp(1330,1520,io(r(t,T.eso+.1,T.sabe2+.2))));CDs.p.setAttribute('cy',lerp(430,400,io(r(t,T.eso+.1,T.sabe2+.2))));
+  drawK(CDs.ca,io(r(t,T.dos2+.4,T.despues2+.5)));drawK(CDs.cc,io(r(t,T.despues2+.3,T.juntos)));CDs.jt.setAttribute('opacity',r(t,T.juntos,T.juntos+.3));
+  place($('B'),Bz[0],Bz[1]);
+  // giros: a negro tras «en voz alta» (giro 1) y de negro a blanco en «Dile» (giro 2)
+  const k=r(t,T.alta+.15,T.alta+.6)*(1-r(t,T.dile-.3,T.dile+.25));$('ink').style.opacity=k;
+  $('lamp').style.opacity=r(t,T.paso-.2,T.paso+.35)*(1-r(t,T.dile-.45,T.dile-.1));
+  // rótulo
+  let html='',a=0;for(const [s,e,h] of CAPS)if(t>=s-.2&&t<e+.25){html=h;a=Math.min(r(t,s-.2,s+.15),1-r(t,e-.05,e+.25))}
+  const cp=$('cap');if(cp.dataset.h!==html){cp.innerHTML=html;cp.dataset.h=html}
+  cp.style.opacity=a;cp.style.transform=`translateY(${(1-a)*12}px)`;cp.style.color=k>.5?'#fbfaf7':'#121212';cp.style.background=`rgba(251,250,247,${(.9*(1-k)).toFixed(3)})`;
+};
+Promise.all([...document.images].map(i=>i.decode().catch(()=>{}))).then(()=>document.fonts.ready).then(()=>{frame(0);window.ready=true});
+</script></body></html>
