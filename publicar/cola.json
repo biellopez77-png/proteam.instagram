@@ -188,5 +188,22 @@
    "status": "no"
   },
   "added": "2026-11-23T10:34:31.130705+01:00"
+ },
+ {
+  "id": "T09-1-r1",
+  "kind": "reel",
+  "files": [
+   "publicar/media/T09-1-r1-1.mp4",
+   "publicar/media/T09-1-r1-2.jpg"
+  ],
+  "caption": "Tu primer cambio se decide en el minuto ocho, aunque lo hagas en el sesenta.\n\nCero a dos, los dos goles por tu banda izquierda. Lo raro es que en el minuto ocho su extremo ya había ganado tres carreras por ahí, y no lo apuntaste. En los primeros quince minutos, tres líneas: por dónde te atacan, qué duelo pierdes y quién va justo de piernas. Esa última línea es tu primer cambio.\n\n(Escena de ejemplo.)\n\n¿Por qué banda te atacaron el sábado?",
+  "state": "revisión",
+  "ig": {
+   "status": "pendiente"
+  },
+  "tiktok": {
+   "status": "pendiente"
+  },
+  "added": "2026-11-23T10:45:57.260880+01:00"
  }
 ]
