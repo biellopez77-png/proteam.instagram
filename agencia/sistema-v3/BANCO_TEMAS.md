@@ -64,7 +64,7 @@ Lista viva. **Cada tema tiene muchas ideas; cada idea da 3 reels; cada reel llev
 10. D · El 37,5 %: cuándo un porcentaje de paradas es bueno · balonmano (pieza aparte)
 
 ## T05 · Datos y estadísticas que sí sirven
-1. H · Moneyball: el equipo que fichaba con una hoja de cálculo · béisbol → general [en curso 2026-11-23 · Dani A]
+1. H · Moneyball: el equipo que fichaba con una hoja de cálculo · béisbol → general [hecha → T05-1-r1, r2, r3 · Dani A · fuentes: MLB.com «2002 Twins-A's ALDS recap»; SI 8/9/2017; Wikipedia «Moneyball: The Art of Winning an Unfair Game»; matiz NPR 2013]
 2. E · Tres números que valen más que el marcador · fútbol [hecha → T05-2-r1, r2, r3 · Dani B · fuentes (solo r1): ESPN, ficha de la final de 2012; Bleacher Report, «How the Blues Pulled Off the Impossible»]
 3. D · Posesión y victorias: lo que dicen los datos (verificar estudios) · fútbol
 4. E · Un dato por partido: el que vas a mirar siempre · general
