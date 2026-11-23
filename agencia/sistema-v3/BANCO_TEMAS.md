@@ -180,7 +180,7 @@ Rotación fija: un tema real de la semana por deporte (LaLiga, Champions, ACB, E
 
 ## T14 · Captación y ProTeam por dentro (C)
 1. C · «Lo que hace tu segundo con un papel, la app lo hace sola» (registro en directo)
-2. C · La semana preparada antes del lunes
+2. C · La semana preparada antes del lunes [en curso 2026-11-23 · Dani B]
 3. C · Del partido al entreno del martes, en un toque
 4. C · Club Fundador: los primeros entrenadores deciden la app (solo lo aprobado en CLUB_FUNDADOR.md)
 5. C · Siete idiomas, tres deportes, una app
