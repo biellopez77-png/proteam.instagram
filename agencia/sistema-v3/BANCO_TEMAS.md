@@ -46,7 +46,7 @@ Lista viva. **Cada tema tiene muchas ideas; cada idea da 3 reels; cada reel llev
 1. E · Una pregunta del 1 al 10 (B2) · baloncesto [hecha → T03-1-r1, r2, r3 · Dani A · fuentes: Foster et al. 2001, JSCR 15(1); Haddad et al. 2017, Front. Neurosci. 11:612]
 2. H · El tercer cuarto se gana el jueves · baloncesto [hecha → T03-2-r1, r2, r3 · Dani B · fuente del método: Foster et al. 2001, JSCR 15(1)]
 3. D · El RPE de sesión: de dónde sale (Foster, 2001) · general
-4. E · El jugador que siempre dice «7» · general
+4. E · El jugador que siempre dice «7» · general [en curso 2026-11-23 · Dani B]
 5. E · Semana de carga vs semana de descarga: cómo se ve en una gráfica · fútbol
 6. H · Lesiones en enero: el patrón que se repite en base · fútbol
 7. E · Cómo preguntar el RPE a niños de 10 años · general
