@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8">
+<!-- T01-3-r2 «El portero lo sabía» (balonmano). Plantilla a3.html: planos fijos, la cámara solo se mueve al cambiar de zona. Dibujado + 1 foto real con licencia (Commons). Marta B, 23/11. -->
+<style>
+@font-face{font-family:M;font-weight:800;src:url(/tools/fonts/manrope-latin-800-normal.woff2)}
+@font-face{font-family:M;font-weight:700;src:url(/tools/fonts/manrope-latin-700-normal.woff2)}
+@font-face{font-family:M;font-weight:500;src:url(/tools/fonts/manrope-latin-500-normal.woff2)}
+@font-face{font-family:S;font-style:italic;font-weight:400;src:url(/tools/fonts/instrument-serif-latin-400-italic.woff2)}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#fbfaf7}
+#st{position:absolute;inset:0;overflow:hidden;background:#fbfaf7}
+#world{position:absolute;left:0;top:0;transform-origin:0 0}
+.o{position:absolute;left:0;top:0;transform-origin:50% 50%}
+.paper{background:#fff;box-shadow:0 18px 50px rgba(20,18,12,.10)}
+.board{background:#fdfdfc;border:12px solid #d9dcdf;border-radius:12px;box-shadow:0 18px 50px rgba(20,18,12,.10)}
+.num{position:absolute;font-family:M;font-weight:800;letter-spacing:-.05em;color:#121212;white-space:nowrap;line-height:1}
+.hand{position:absolute;font-family:S;font-style:italic;white-space:nowrap;line-height:1}
+.lab{position:absolute;font-family:M;font-weight:800;letter-spacing:.14em;color:#121212;white-space:nowrap}
+#cap{position:absolute;left:90px;right:90px;top:1330px;text-align:center;font-family:M;font-weight:800;font-size:58px;line-height:1.12;letter-spacing:-.03em;color:#121212;padding:18px 26px;border-radius:22px;background:rgba(251,250,247,.94)}
+#cap em{font-family:S;font-style:italic;font-weight:400;font-size:1.14em;letter-spacing:0}
+#gr{position:absolute;inset:0;pointer-events:none;mix-blend-mode:multiply;opacity:0;background:#d9e3f0}
+#ink{position:absolute;inset:0;background:#0e0e10;opacity:0;pointer-events:none}
+#wh{position:absolute;inset:0;background:#fbfaf7;opacity:0;pointer-events:none}
+.sq{position:absolute;top:110px;width:70px;height:70px;border:3px solid #c9ccd1;border-radius:10px}
+</style></head><body><div id="st">
+<div id="world">
+  <!-- 1 · media pista cenital con el área de 6 m (CT) -->
+  <svg class="o" id="CT" width="960" height="960" viewBox="0 0 960 960" style="overflow:visible">
+    <defs><clipPath id="cc"><rect x="30" y="30" width="900" height="900"/></clipPath></defs>
+    <rect x="0" y="0" width="960" height="960" fill="#fff"/>
+    <path id="cone" fill="#2f6bff" opacity="0"/>
+    <g fill="none" stroke="#121212" stroke-width="3.5" opacity=".7" stroke-linejoin="round">
+      <rect x="30" y="30" width="900" height="900"/><path id="a6"/><path id="a9" stroke-dasharray="16 14" clip-path="url(#cc)"/>
+      <path d="M457.5 615 H502.5"/><rect x="412.5" y="930" width="135" height="16" stroke-width="6"/>
+    </g>
+    <g id="arw" fill="none" stroke="#d23a2a" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"></g>
+    <circle id="gk" cx="502" cy="895" r="20" fill="#121212"/>
+  </svg>
+  <!-- 2 · foto real de una portera (PH), enmarcada -->
+  <div class="o paper" id="PH" style="width:700px;height:760px;padding:26px 26px 60px">
+    <div style="width:100%;height:100%;background:url(/tools/reel_v4/T01-3-r2/portera.jpg) 48% 30%/cover"></div>
+  </div>
+  <!-- 3 · la puerta del vestuario y el banco con la camiseta (DR) -->
+  <svg class="o" id="DR" width="1000" height="1000" viewBox="0 0 1000 1000" style="overflow:visible">
+    <rect x="0" y="0" width="1000" height="1000" fill="#fbfaf7"/>
+    <path d="M0 860 H1000" stroke="#121212" stroke-width="3" opacity=".25"/>
+    <rect x="480" y="150" width="380" height="710" fill="#2a2c31"/>
+    <g id="dor"><rect x="480" y="150" width="380" height="710" fill="#eef0f2" stroke="#121212" stroke-width="5"/>
+      <rect x="590" y="250" width="160" height="56" rx="6" fill="#fff" stroke="#121212" stroke-width="3"/>
+      <text x="670" y="287" text-anchor="middle" font-family="M" font-weight="800" font-size="22" letter-spacing="4" fill="#121212">VESTUARIO</text>
+      <rect x="815" y="500" width="16" height="70" rx="6" fill="#121212"/></g>
+    <rect x="466" y="136" width="408" height="724" fill="none" stroke="#121212" stroke-width="8"/>
+    <!-- banco -->
+    <rect x="40" y="700" width="400" height="24" rx="6" fill="#c8b48a" stroke="#121212" stroke-width="4"/>
+    <path d="M80 724 V860 M400 724 V860" stroke="#121212" stroke-width="8"/>
+    <g id="jsB" transform="translate(120 560) scale(.6)"></g>
+  </svg>
+  <!-- 4 · el descanso: marcador del pabellón y la hoja de la regla (cálido) -->
+  <div class="o" id="CK" style="width:640px;height:300px;border-radius:26px;background:#141518;box-shadow:0 18px 50px rgba(20,18,12,.16)">
+    <div class="lab" style="left:0;right:0;top:34px;text-align:center;font-size:24px;color:#8b8f96">DESCANSO</div>
+    <div class="num" id="ckn" style="left:0;right:0;top:86px;text-align:center;font-size:150px;color:#fbfaf7;letter-spacing:0">10:00</div>
+  </div>
+  <div class="o paper" id="HJ" style="width:600px;height:360px">
+    <div class="lab" style="left:44px;top:40px;font-size:22px;color:#9aa1a8">BALONMANO · REGLAS DE JUEGO</div>
+    <div class="hand" style="left:44px;top:96px;font-size:84px;color:#121212">Regla 2:1</div>
+    <div class="num" id="q10" style="left:44px;top:214px;font-size:100px">10′</div>
+    <div class="lab" style="left:250px;top:250px;font-size:22px;color:#77736b;line-height:1.4">DE DESCANSO,<br>NORMALMENTE</div>
+  </div>
+  <!-- 5 · la pista desde el banquillo (PV) -->
+  <svg class="o" id="PV" width="1000" height="900" viewBox="0 0 1000 900" style="overflow:visible">
+    <path id="pvC" fill="#fff"/>
+    <g id="pvL" fill="none" stroke="#121212" stroke-width="3" opacity=".7" stroke-linejoin="round"></g>
+    <path id="pvA" fill="#2f6bff" opacity="0"/>
+    <g id="pvD"></g>
+    <path id="pvR" fill="none" stroke="#d23a2a" stroke-width="3" stroke-linecap="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/>
+    <text id="pvT" font-family="M" font-weight="800" font-size="14" letter-spacing="2" fill="#77736b" opacity="0">TU ÁREA</text>
+    <path d="M-80 900 Q500 800 1080 900 L1080 960 L-80 960 Z" fill="#121212" opacity=".9"/>
+    <text x="500" y="890" text-anchor="middle" font-family="M" font-weight="800" font-size="22" letter-spacing="5" fill="#77736b">DESDE TU BANQUILLO</text>
+  </svg>
+  <!-- 6 · la pizarra del vestuario (PZ) -->
+  <div class="o board" id="PZ" style="width:900px;height:1100px">
+    <svg width="876" height="1076" viewBox="0 0 876 1076" style="position:absolute;left:0;top:0;overflow:visible">
+      <g fill="none" stroke="#121212" stroke-width="3" opacity=".4">
+        <rect x="40" y="40" width="560" height="440"/><path d="M200 480 A120 120 0 0 1 440 480"/><path d="M280 480 V496 H360 V480"/></g>
+      <g fill="none" stroke="#121212" stroke-width="5" stroke-linecap="round" opacity=".75">
+        <path d="M120 140 C 200 200 260 260 300 340"/><path d="M480 130 L 380 250"/><path d="M320 120 L 320 260"/></g>
+      <path id="pzU" d="M70 940 L 520 934" fill="none" stroke="#2f6bff" stroke-width="5" stroke-linecap="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100" opacity="0"/>
+    </svg>
+    <div class="hand" id="w1" style="left:60px;top:600px;font-size:76px;color:#121212">ataque estático</div>
+    <div class="hand" id="w2" style="left:60px;top:710px;font-size:76px;color:#121212">pérdidas</div>
+    <div class="hand" id="w3" style="left:60px;top:820px;font-size:76px;color:#121212">pivote</div>
+    <svg id="mkr" style="position:absolute;left:0;top:0;overflow:visible" width="60" height="260" viewBox="0 -26 60 286"><path d="M20 0 H40 L44 20 V250 Q44 258 36 258 H24 Q16 258 16 250 V20 Z" fill="#121212"/><rect x="14" y="60" width="32" height="60" rx="4" fill="#2f6bff"/><path d="M24 -26 L36 -26 L40 0 H20 Z" fill="#121212"/></svg>
+    <div class="paper" id="card" style="position:absolute;left:640px;top:40px;width:190px;height:220px;transform:rotate(3deg)">
+      <svg width="190" height="220" viewBox="0 0 190 220"><g id="jsC" transform="translate(20 40) scale(.36)"></g></svg></div>
+  </div>
+  <!-- 7 · la solución: el descanso repartido (BAR), la pregunta (Q), la pizarra limpia (PL) -->
+  <div class="o paper" id="BAR" style="width:900px;height:300px">
+    <div class="lab" style="left:40px;top:40px;font-size:24px;color:#77736b">DESCANSO · 10′</div>
+    <div id="sqs"></div>
+    <svg id="bt" style="position:absolute;left:46px;top:196px" width="52" height="90" viewBox="0 0 240 460"><rect x="92" y="10" width="56" height="40" rx="8" fill="#2f6bff"/><path d="M84 50 H156 V90 C 190 110 196 140 196 170 V430 Q196 450 176 450 H64 Q44 450 44 430 V170 C 44 140 50 110 84 90 Z" fill="#eef3ff" stroke="#121212" stroke-width="14"/></svg>
+    <div class="hand" id="bt2" style="left:112px;top:206px;font-size:56px;color:#2f6bff">2′ de agua</div>
+  </div>
+  <div class="o paper" id="Q" style="width:700px;height:520px">
+    <svg width="700" height="520" viewBox="0 0 700 520" style="position:absolute;left:0;top:0"><g id="jsQ" transform="translate(40 60) scale(.8)"></g></svg>
+    <div class="num" id="qm" style="left:470px;top:60px;font-size:250px;color:#2f6bff">?</div>
+    <div class="hand" id="qt" style="left:40px;top:420px;font-size:58px;color:#2f6bff">¿por dónde nos entran?</div>
+  </div>
+  <div class="o board" id="PL" style="width:620px;height:700px">
+    <svg width="596" height="676" viewBox="0 0 596 676" style="position:absolute;left:0;top:0;overflow:visible">
+      <g fill="none" stroke="#121212" stroke-width="3" opacity=".45">
+        <rect x="30" y="30" width="536" height="616"/><path id="pl6"/><path d="M248 646 V658 H348 V646"/></g>
+      <path d="M50 470 C 120 560 180 620 266 640" fill="none" stroke="#d23a2a" stroke-width="5" stroke-linecap="round" stroke-dasharray="12 12" opacity=".45"/>
+      <path id="plA" d="M200 400 C 160 420 120 450 92 490" fill="none" stroke="#2f6bff" stroke-width="10" stroke-linecap="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/>
+      <path id="plH" d="M88 456 L90 494 L126 486" fill="none" stroke="#2f6bff" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" opacity="0"/>
+      <g id="d7" opacity="0"><circle cx="236" cy="382" r="36" fill="#121212"/><text x="236" y="394" text-anchor="middle" font-family="M" font-weight="800" font-size="34" fill="#fff">7</text></g>
+    </svg>
+  </div>
+  <!-- marca -->
+  <div class="o" id="B" style="width:900px;height:500px;text-align:center">
+    <div class="num" style="position:static;font-size:170px;margin-top:120px">Pro<span style="color:#2f6bff">Team</span></div>
+    <div style="margin-top:30px;font-family:M;font-weight:500;font-size:38px;color:#77736b">la app del entrenador · enlace en la bio</div>
+  </div>
+</div>
+<div id="gr"></div>
+<div id="cap"></div>
+<div id="ink"></div>
+<div id="wh"></div>
+</div>
+<script src="/tools/reel_v4/T01-3-r2/times.js"></script>
+<script>
+const $=id=>document.getElementById(id), W=window.WORDS, NS='http://www.w3.org/2000/svg';
+const at=(w,n=1)=>{let c=0;for(const x of W)if(x[0]===w&&++c===n)return x[1];throw 'no '+w+n};
+const cl=(x,a=0,b=1)=>Math.min(b,Math.max(a,x)), r=(t,a,b)=>cl((t-a)/(b-a));
+const io=x=>x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2, eo=x=>1-Math.pow(1-x,3), lerp=(a,b,k)=>a+(b-a)*k;
+const T={cinco:at('cinco'),extremo:at('extremo'),tu1:at('tu'),pero:at('pero'),descanso:at('descanso'),nadie:at('nadie'),descanso2:at('descanso',2),diez:at('diez'),
+ entras:at('entras'),banquillo:at('banquillo'),ataque:at('ataque'),no:at('no'),area:at('area'),y1:at('y'),hablas:at('hablas'),del:at('del'),estatico:at('estatico'),
+ perdidas:at('perdidas'),pivote:at('pivote'),mientras:at('mientras'),cerca:at('cerca'),callado:at('callado'),salis:at('salis'),y2:at('y',2),sexto:at('sexto'),sitio:at('sitio'),
+ tu5:at('tu',5),preguntarle:at('preguntarle'),dos:at('dos'),minutos2:at('minutos',2),agua:at('agua'),y3:at('y',3),antes:at('antes'),pregunta:at('pregunta'),
+ por2:at('por',2),entran:at('entran'),despues:at('despues'),decides:at('decides'),una2:at('una',2),cosa:at('cosa'),con2:at('con',2),nombre:at('nombre'),
+ apunt:at('apuntalo'),porque2:at('porque',2),ve:at('ve'),partido:at('partido'),donde2:at('donde',2),estas:at('estas'),END:window.VEND+.25};
+// zonas del mundo (centros)
+const CT=[0,0], PH=[1500,-100], DR=[1500,1300], CK=[3000,450], HJ=[3000,1100], PV=[3000,2600], PZ=[1500,3100],
+      BAR=[0,4700], Q=[900,4700], PL=[420,6050], BP=[2600,5500];
+const ct=(x,y)=>[CT[0]-480+x,CT[1]-480+y], dr=(x,y)=>[DR[0]-500+x,DR[1]-500+y], pv=(x,y)=>[PV[0]-500+x,PV[1]-450+y], pz=(x,y)=>[PZ[0]-450+12+x,PZ[1]-550+12+y];
+const CUT1=T.y1-.12, CUT2=T.dos-.15;
+const FIRST=[0,...ct(330,740),1.45];
+// cámara: planos FIJOS; solo se mueve al cambiar de zona (0,6 s, entrada y salida suaves)
+const SH=[ // [inicio del movimiento, cx, cy, zoom, duración]
+ FIRST,
+ [T.extremo-.2,...ct(130,690),2.3],                    // detalle: el extremo, de donde salen las cinco
+ [T.tu1-.25,PH[0],PH[1]+40,1.25,.7],                   // la portera (foto real)
+ [T.pero-.3,...dr(470,520),.92,.7],                     // alejarse: la puerta del vestuario y el banco
+ [T.descanso2-.35,CK[0],CK[1]+60,1.35,.7],              // marcador del pabellón 10:00 (cálido)
+ [T.diez-.3,HJ[0],HJ[1]+60,1.5],                        // Regla 2:1 · 10′
+ [T.entras-.25,PV[0],PV[1]-60,1.0,.7],                  // desde el banquillo
+ [T.ataque-.2,...pv(760,470),1.5],                      // lo que ves: el ataque
+ [T.no-.15,...pv(150,400),2.6,.65],                     // no tu área: lejos y pequeña
+ [CUT1,PZ[0],PZ[1]-60,.95],                             // giro 1: a negro · la pizarra
+ [T.del-.2,...pz(330,760),1.5],                         // las tres palabras
+ [T.mientras-.2,...pz(690,300),1.6],                    // la camiseta, pequeña, en la esquina
+ [T.salis-.35,...dr(560,520),1.05,.7],                  // salís: la puerta se abre
+ [T.y2-.15,...FIRST.slice(1),.7],                       // el sexto, por el mismo sitio
+ [T.tu5-.25,...dr(250,650),1.9,.7],                     // la camiseta sola en el banco
+ [CUT2,BAR[0],BAR[1]+40,1.15],                          // giro 2: a blanco · la solución
+ [T.y3-.15,Q[0],Q[1]+20,1.3],                           // una pregunta al portero
+ [T.despues-.25,PL[0]-90,PL[1]+170,2.0,.7],                      // después decides
+ [T.una2-.2,...[PL[0]-310+12+190,PL[1]-350+12+420],2.1],// el dorsal junto a la flecha
+ [T.con2-.15,400,5480,.6,.7],                           // el tablero entero de golpe
+ [T.apunt-.05,BP[0],BP[1],1.0,.7],
+ [T.porque2+.02,...ct(480,520),.98,.7],                 // la media pista entera: lo que ve el portero
+ [T.donde2-.3,...FIRST.slice(1),.9]];                   // vuelta al primer encuadre
+const CUTS=new Set([CUT1,CUT2]);
+function cam(t){let i=0;while(i+1<SH.length&&SH[i+1][0]<=t)i++;const s=SH[i];
+ if(i===0||CUTS.has(s[0]))return [s[1],s[2],s[3],0];
+ const p=SH[i-1],Dd=s[4]||.62,k=r(t,s[0],s[0]+Dd),e=io(k);
+ const lz=lerp(Math.log(p[3]),Math.log(s[3]),e)-.12*Math.sin(Math.PI*k)*(Math.hypot(s[1]-p[1],s[2]-p[2])>600?1:0);
+ return [lerp(p[1],s[1],e),lerp(p[2],s[2],e),Math.exp(lz),k>0&&k<1?Math.sin(Math.PI*k):0]}
+const sz=el=>[el.offsetWidth||+el.getAttribute('width'),el.offsetHeight||+el.getAttribute('height')];
+function place(el,x,y,rot=0,sc=1){const [w,h]=sz(el);el.style.transform=`translate(${x-w/2}px,${y-h/2}px) rotate(${rot}deg) scale(${sc})`}
+const drawK=(el,k)=>{el.setAttribute('stroke-dashoffset',100-100*k);el.style.visibility=k>0?'visible':'hidden'};
+const mk=(tag,a,par)=>{const e=document.createElementNS(NS,tag);for(const k in a)e.setAttribute(k,a[k]);par.appendChild(e);return e};
+const pts=a=>'M'+a.map(p=>p[0].toFixed(1)+' '+p[1].toFixed(1)).join(' L');
+// línea de área en metros (u: desde la línea de gol, v: a lo ancho, 0..20), radio R
+function areaLine(R,n=40){const P=[];for(let i=0;i<=n;i++){const a=Math.PI/2*i/n;P.push([8.5-R*Math.cos(a),R*Math.sin(a)])}
+ for(let i=0;i<=n;i++){const a=Math.PI/2*(1-i/n);P.push([11.5+R*Math.cos(a),R*Math.sin(a)])}return P}
+// 1 · pista cenital: 45 px/m, portería abajo
+const cm=(v,u)=>[30+45*v,930-45*u];
+$('a6').setAttribute('d',pts(areaLine(6).map(([v,u])=>cm(v,u))));$('a9').setAttribute('d',pts(areaLine(9).map(([v,u])=>cm(v,u))));
+const ORG=[[0.7,2.6],[1.5,4.0],[0.9,5.6],[2.3,3.1],[1.9,6.4],[1.2,4.6]], TGT=[[8.9,.35],[10.6,.3],[9.6,.4],[11.2,.35],[10.1,.3],[9.3,.3]], AW=[];
+ORG.forEach((o,i)=>{const a=cm(...o),b=cm(...TGT[i]),c=[lerp(a[0],b[0],.45)+(i%2?10:-6),lerp(a[1],b[1],.45)+55+i*6];
+ const g=mk('g',{},$('arw')),p=mk('path',{d:`M${a[0]} ${a[1]} Q${c[0]} ${c[1]} ${b[0]} ${b[1]}`,pathLength:100,'stroke-dasharray':100,'stroke-dashoffset':0},g);
+ const L=p.getTotalLength(),e=p.getPointAtLength(L),q=p.getPointAtLength(L-16),an=Math.atan2(e.y-q.y,e.x-q.x),pt=s=>[e.x-22*Math.cos(an+s),e.y-22*Math.sin(an+s)];
+ const [x1,y1]=pt(.55),[x2,y2]=pt(-.55);const h=mk('path',{d:`M${x1} ${y1} L${e.x} ${e.y} L${x2} ${y2}`},g);AW.push([g,p,h])});
+{const g=cm(10.5,.8),w1=cm(0,2.2),w2=cm(3.2,6.2);$('cone').setAttribute('d',`M${g[0]} ${g[1]} L${w1[0]} ${w1[1]} L${w2[0]} ${w2[1]} Z`)}
+// camiseta de portero (dibujada): manga larga, dorsal 12
+function jersey(par){mk('path',{d:'M110 0 Q160 30 210 0 L300 40 L340 330 L290 340 L262 120 L262 400 H58 L58 120 L30 340 L-20 330 L20 40 Z',fill:'#e9ebee',stroke:'#121212','stroke-width':8,'stroke-linejoin':'round'},par);
+ mk('path',{d:'M110 0 Q160 50 210 0',fill:'none',stroke:'#121212','stroke-width':8},par);
+ const t=mk('text',{x:160,y:280,'text-anchor':'middle','font-family':'M','font-weight':800,'font-size':150,fill:'#121212'},par);t.textContent='12'}
+['jsB','jsC','jsQ'].forEach(id=>jersey($(id)));
+// 5 · pista desde el banquillo: perspectiva (tu área lejos, a la izquierda)
+const pm=(u,v)=>{const s=Math.pow(u/40,1.35),top=lerp(330,150,s),bot=lerp(440,760,s);return [lerp(60,1000,s),lerp(top,bot,v/20)]};
+$('pvC').setAttribute('d',pts([pm(0,0),pm(40,0),pm(40,20),pm(0,20)])+' Z');
+const pl=(P)=>mk('path',{d:pts(P)},$('pvL'));
+pl([pm(0,0),pm(40,0),pm(40,20),pm(0,20),pm(0,0)]);pl([pm(20,0),pm(20,20)]);
+pl(areaLine(6).map(([v,u])=>pm(u,v)));pl(areaLine(6).map(([v,u])=>pm(40-u,v)));
+$('pvA').setAttribute('d',pts(areaLine(9).map(([v,u])=>pm(40-u,v)).concat([pm(40,20),pm(40,0)]))+' Z');
+const AT=[[31,3],[29,7.5],[28,12],[30,16.5],[34,10]], DF=[[34.5,4],[33.6,7],[33.3,10.5],[33.7,14],[34.5,17],[38.6,10]], ATC=[];
+AT.forEach(([u,v])=>{const [x,y]=pm(u,v),s=(y-150)/600;ATC.push([mk('circle',{cx:x,cy:y,r:12+14*s,fill:'#121212',opacity:.8},$('pvD')),mk('circle',{cx:x,cy:y,r:22+22*s,fill:'none',stroke:'#2f6bff','stroke-width':4,opacity:0},$('pvD'))])});
+DF.forEach(([u,v])=>{const [x,y]=pm(u,v),s=(y-150)/600;mk('circle',{cx:x,cy:y,r:11+12*s,fill:'#9aa1a8',opacity:.75},$('pvD'))});
+{const a=pm(1.8,1.2),b=pm(.3,9.4),c=pm(3.2,6);$('pvR').setAttribute('d',`M${a[0]} ${a[1]} Q${c[0]} ${c[1]} ${b[0]} ${b[1]}`);const p=pm(1,20);$('pvT').setAttribute('x',p[0]);$('pvT').setAttribute('y',p[1]+34)}
+{const g=pm(.6,10);mk('circle',{cx:g[0],cy:g[1],r:7,fill:'#121212'},$('pvD'))}
+// 7 · pizarra limpia: área de 6 m (escala 26,8 px/m)
+{const pc=(v,u)=>[30+26.8*v,646-26.8*u];$('pl6').setAttribute('d',pts(areaLine(6).map(([v,u])=>pc(v,u))))}
+// barra de 10 casillas
+const SQ=[];for(let i=0;i<10;i++){const d=document.createElement('div');d.className='sq';d.style.left=(40+i*84)+'px';$('sqs').appendChild(d);SQ.push(d)}
+const CAPS=[[T.cinco+.15,T.tu1-.15,'Cinco goles, <em>el mismo extremo.</em>'],[T.tu1,T.pero-.15,'Tu portero <em>lo sabía.</em>'],[T.pero,T.descanso2-.25,'<em>Nadie</em> se lo preguntó.'],
+ [T.descanso2,T.entras-.2,'Descanso: <em>diez minutos.</em>'],[T.entras,T.banquillo-.25,'Entras con <em>tu idea hecha.</em>'],[T.banquillo-.1,T.no-.15,'Desde el banquillo, <em>el ataque.</em>'],
+ [T.no,CUT1-.35,'No <em>tu área.</em>'],[CUT1+.25,T.del-.15,'Y hablas <em>tú.</em>'],[T.del,T.mientras-.2,'Ataque, pérdidas, <em>pivote.</em>'],
+ [T.mientras,T.salis-.25,'El que los vio, <em>callado.</em>'],[T.salis,T.y2-.1,'<em>Salís.</em>'],[T.y2,T.tu5-.2,'El sexto, <em>por el mismo sitio.</em>'],
+ [T.tu5,CUT2-.35,'Sin preguntar <em>a tu portero.</em>'],[CUT2+.2,T.y3-.12,'Dos minutos <em>de agua.</em>'],[T.y3,T.por2-.12,'Antes de hablar tú…'],
+ [T.por2,T.despues-.15,'<em>¿Por dónde nos entran?</em>'],[T.despues,T.una2-.15,'Después <em>decides.</em>'],[T.una2,T.apunt-.15,'Una cosa, <em>con nombre.</em>'],
+ [T.apunt,T.porque2-.12,'Apúntalo en la app.'],[T.porque2,T.donde2-.15,'Tu portero <em>ve el partido…</em>'],[T.donde2,T.END-.75,'…desde donde <em>tú no estás.</em>']];
+window.frame=function(t){
+  const [cx,cy,z,mv]=cam(t);
+  const wd=$('world');wd.style.transform=`translate(540px,760px) scale(${z}) translate(${-cx}px,${-cy}px)`;
+  // color por escena: el descanso (la regla) en cálido; el problema en frío; la solución en blanco
+  const warm=t<CUT1?r(t,T.descanso2-.35,T.descanso2+.2)*(1-r(t,T.entras-.25,T.entras+.35)):0;
+  const fl=[];if(mv>.35)fl.push(`blur(${(2.6*(mv-.35)/.65).toFixed(2)}px)`);if(warm>0)fl.push(`sepia(${(.45*warm).toFixed(3)})`);
+  wd.style.filter=fl.length?fl.join(' '):'none';
+  const cold=t<CUT1?r(t,.4,1.2)*(1-r(t,T.descanso2-.35,T.descanso2+.2))+r(t,T.entras-.25,T.entras+.35):(t<CUT2?1:0);
+  $('gr').style.opacity=(.42*cold).toFixed(3);
+  // 1 · pista: cinco flechas fijas; la sexta llega con «el sexto» y desaparece fuera de plano
+  place($('CT'),CT[0],CT[1]);
+  AW.forEach(([g,p,h],i)=>{if(i<5)return;const k=t<T.apunt?io(r(t,T.sexto-.15,T.sitio+.1)):0;drawK(p,k);h.setAttribute('opacity',k>.97?1:0)});
+  $('cone').setAttribute('opacity',(.14*r(t,T.ve-.15,T.ve+.35)*(1-r(t,T.donde2-.3,T.donde2+.25))).toFixed(3));
+  // 2 · foto
+  place($('PH'),PH[0],PH[1],-1.5);
+  // 3 · puerta: se cierra en el descanso, se abre al salir
+  place($('DR'),DR[0],DR[1]);
+  const shut=io(r(t,T.nadie-.5,T.pregunto+.2))*(1-io(r(t,T.salis-.1,T.salis+.5)));
+  const op=1-shut;$('dor').setAttribute('transform',`translate(480 0) scale(${(1-.82*op).toFixed(4)} 1) translate(-480 0)`);
+  // 4 · marcador del descanso y la regla
+  place($('CK'),CK[0],CK[1]);place($('HJ'),HJ[0],HJ[1],-1.5);$('HJ').style.opacity=eo(r(t,T.diez-.45,T.diez-.05));
+  $('q10').style.color=t>T.diez?'#2f6bff':'#121212';
+  // 5 · banquillo: el ataque se enciende; tu área, lejos, con la flecha roja
+  place($('PV'),PV[0],PV[1]);
+  const ah=r(t,T.ataque-.1,T.ataque+.3);ATC.forEach(([c,ring])=>ring.setAttribute('opacity',ah));$('pvA').setAttribute('opacity',(.08*ah).toFixed(3));
+  drawK($('pvR'),io(r(t,T.area-.2,T.area+.5)));$('pvT').setAttribute('opacity',r(t,T.no+.2,T.no+.5));
+  // 6 · pizarra: las palabras se escriben a rotulador; la camiseta en la esquina
+  place($('PZ'),PZ[0],PZ[1]);
+  const ws=[[$('w1'),at('ataque',2)-.1,T.estatico+.55],[$('w2'),T.perdidas-.1,T.perdidas+.45],[$('w3'),T.pivote-.1,T.pivote+.4]];
+  let tip=null;ws.forEach(([el,a,b])=>{const k=r(t,a,b);el.style.clipPath=`inset(-20px ${(100-100*k).toFixed(1)}% -20px 0)`;if(k>0)tip=[el.offsetLeft+el.offsetWidth*k+4,el.offsetTop+70]});
+  if(!tip)tip=[$('w1').offsetLeft+6,$('w1').offsetTop+70];
+  const mk1=$('mkr');mk1.style.opacity=t>CUT1-.1?1:0;mk1.style.transformOrigin='30px 0';mk1.style.transform=`translate(${tip[0]-30}px,${tip[1]}px) rotate(-24deg)`;
+  // 7 · solución
+  place($('BAR'),BAR[0],BAR[1]);
+  SQ.forEach((d,i)=>{const s=CUT2+.1+i*.04,k=eo(r(t,s,s+.25));d.style.opacity=k;const f=i<2?r(t,T.dos+i*.2,T.dos+.3+i*.2):0;
+    d.style.background=f>0?`rgba(47,107,255,${(.35*f).toFixed(3)})`:'transparent';d.style.borderColor=f>.5?'#2f6bff':'#c9ccd1'});
+  $('bt').style.opacity=eo(r(t,T.agua-.25,T.agua+.1));$('bt2').style.clipPath=`inset(0 ${(100-100*r(t,T.agua-.15,T.agua+.45)).toFixed(1)}% 0 0)`;
+  place($('Q'),Q[0],Q[1],1.2);
+  $('qm').style.opacity=eo(r(t,T.pregunta-.1,T.pregunta+.25));
+  $('qt').style.clipPath=`inset(-20px ${(100-100*r(t,T.por2-.05,T.entran+.45)).toFixed(1)}% -20px 0)`;
+  place($('PL'),PL[0],PL[1],0);
+  drawK($('plA'),io(r(t,T.decides-.1,T.decides+.45)));$('plH').setAttribute('opacity',r(t,T.decides+.35,T.decides+.5));
+  $('d7').setAttribute('opacity',eo(r(t,T.cosa-.1,T.cosa+.25)));
+  place($('B'),BP[0],BP[1]);
+  // rótulo
+  let html='',a=0;for(const [s,e,h] of CAPS)if(t>=s-.2&&t<e+.25){const aa=Math.min(r(t,s-.2,s+.15),1-r(t,e-.05,e+.25));if(aa>=a&&(aa>0||!html)){html=h;a=aa}}
+  const cp=$('cap');if(cp.dataset.h!==html){cp.innerHTML=html;cp.dataset.h=html}
+  cp.style.opacity=a;cp.style.transform=`translateY(${(1-a)*12}px)`;
+  // giros: a negro al entrar en la pizarra (giro 1); a blanco en la solución (giro 2)
+  $('ink').style.opacity=r(t,CUT1-.35,CUT1-.03)*(1-r(t,CUT1+.03,CUT1+.45));
+  $('wh').style.opacity=r(t,CUT2-.35,CUT2-.03)*(1-r(t,CUT2+.03,CUT2+.45));
+};
+T.pregunto=at('pregunto');
+Promise.all([...document.images].map(i=>i.decode().catch(()=>{}))).then(()=>document.fonts.ready).then(()=>{frame(0);window.ready=true});
+</script></body></html>

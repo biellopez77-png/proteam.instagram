@@ -1,0 +1,11 @@
+# Reel v4 · T01-3-r2 «El portero lo sabía» (balonmano, 23/11) · Marta B
+
+| recurso | qué es | autor | licencia |
+|---|---|---|---|
+| `portera.jpg` (plano 2, «Tu portero lo sabía») | Portera de balonmano con el balón delante de la portería (Jornada de las Estrellas de Balonmano 2013, San Sebastián de los Reyes). Recortada y enmarcada en blanco. https://commons.wikimedia.org/wiki/File:Silvia_Navarro_2013.jpg | Carlos Delgado | CC BY-SA 3.0 |
+| Media pista cenital con el área de 6 m y la línea de 9 m, las cinco flechas rojas desde el extremo y la sexta, el portero y su campo de visión; puerta del vestuario y banco; camiseta de portero 12; marcador del pabellón 10:00; hoja «Balonmano · Regla 2:1 · 10′»; la pista desde el banquillo en perspectiva (tu área lejos y pequeña); pizarra con «ataque estático · pérdidas · pivote» a rotulador; barra de 10 casillas (2 azules) y botella; tarjeta «¿por dónde nos entran?»; pizarra limpia con la flecha azul que cierra el extremo y el dorsal 7 | Dibujados en HTML/SVG (`../T01-3-r2.html`), trazo propio, sin IA | ProTeam | Propios |
+
+Cambio respecto al guion: el «guante de portero» pasa a ser la **camiseta de portero (12)**, porque en balonmano los porteros juegan sin guantes; el plano 2 usa una foto real con licencia en lugar del guante dibujado. Sin escudos de la IHF (la hoja de la regla va sin marcas). Crédito de la foto y fuente del dato (IHF, Reglas de juego, Regla 2:1) en la caption.
+
+Voz: Mateo (ElevenLabs, eleven_v4, 1 toma, 696 créditos, ×1,1 → 40,3 s). Tiempos: Scribe (0 créditos). Música: a3/m1.mp3 (reutilizada). Efectos: ../sfx_T01-3-r2.py (sintetizados: aire, papel, rotulador, lápiz). Mezcla: `mezcla2.sh T01-3-r2 22.61 27.84` (la música baja tras «Salís» y antes de «Dos minutos de agua»).
+Revisión: contacto cada 1,5 s y test de saltos sin picos aislados (los máximos, en los movimientos de zona y el fundido a negro, repartidos en 3-4 fotogramas); primer y último fotograma iguales (diferencia media 0,03). Corregido antes del render: flechas más abiertas, sin rótulo sobre la foto, rotulador que ya no tapa las palabras, tablero de la solución reordenado para que no asome detrás del subtítulo, y bloques de fondo que se colaban en el plano general (se quitó `will-change` del mundo).
