@@ -76,7 +76,7 @@ Lista viva. **Cada tema tiene muchas ideas; cada idea da 3 reels; cada reel llev
 ## T05 · Datos y estadísticas que sí sirven
 1. H · Moneyball: el equipo que fichaba con una hoja de cálculo · béisbol → general [hecha → T05-1-r1, r2, r3 · Dani A · fuentes: MLB.com «2002 Twins-A's ALDS recap»; SI 8/9/2017; Wikipedia «Moneyball: The Art of Winning an Unfair Game»; matiz NPR 2013]
 2. E · Tres números que valen más que el marcador · fútbol [hecha → T05-2-r1, r2, r3 · Dani B · fuentes (solo r1): ESPN, ficha de la final de 2012; Bleacher Report, «How the Blues Pulled Off the Impossible»]
-3. D · Posesión y victorias: lo que dicen los datos (verificar estudios) · fútbol
+3. D · Posesión y victorias: lo que dicen los datos (verificar estudios) · fútbol [en curso 2026-11-23 · Dani A]
 4. E · Un dato por partido: el que vas a mirar siempre · general [hecha → T05-4-r1, r2, r3 · Dani B · 23/11 · sin hechos externos: escenas en segunda persona (r1 F11 infantil: la libreta de doce columnas; dato, balones perdidos en tu campo tras entrenar salir desde el portero; r2 baloncesto cadete: rebotes que coge el rival en su ataque tras entrenar cerrar el rebote; r3 balonmano juvenil: goles a la contra, contados si llegan antes de que estéis seis atrás). Misma solución en los tres: un dato, el de lo que entrenas esa semana; una raya cada vez, siempre igual; mirar la línea de varias jornadas]
 5. H · El entrenador que apuntaba cada pérdida (casos documentados) · fútbol
 6. I · Qué es xG explicado para un entrenador de base · fútbol
