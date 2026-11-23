@@ -101,7 +101,7 @@ Lista viva. **Cada tema tiene muchas ideas; cada idea da 3 reels; cada reel llev
 
 ## T08 · Táctica sencilla para base
 1. E · Salir jugando sin miedo: tres apoyos · fútbol
-2. E · Presionar en grupo, no persiguiendo · fútbol
+2. E · Presionar en grupo, no persiguiendo · fútbol [en curso 2026-11-23 · Dani B]
 3. H · El catenaccio y su mala fama (verificar historia) · fútbol
 4. E · El balón parado que tu rival repite · fútbol
 5. E · Defender el contraataque en 3 segundos · fútbol
