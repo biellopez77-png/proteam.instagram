@@ -100,7 +100,7 @@ Lista viva. **Cada tema tiene muchas ideas; cada idea da 3 reels; cada reel llev
 10. E · Por qué tus ejercicios duran demasiado · general
 
 ## T08 · Táctica sencilla para base
-1. E · Salir jugando sin miedo: tres apoyos · fútbol
+1. E · Salir jugando sin miedo: tres apoyos · fútbol [hecha → T08-1-r1, r2, r3 · Dani A · 23/11 · sin hechos externos: escenas en segunda persona (r1 fútbol 7, r2 y r3 fútbol 11)]
 2. E · Presionar en grupo, no persiguiendo · fútbol [hecha → T08-2-r1, r2, r3 · Dani B · 23/11 · sin hechos externos: escenas en segunda persona (fútbol 7, fútbol 11 y fútbol 8)]
 3. H · El catenaccio y su mala fama (verificar historia) · fútbol
 4. E · El balón parado que tu rival repite · fútbol
