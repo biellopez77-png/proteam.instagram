@@ -1,10 +1,28 @@
-# Ficha · El Club Fundador dentro de la app (desde el 28/11): dónde viven la insignia y la carta
+# Ficha · El Club Fundador dentro de la app (desde la apertura): dónde viven la insignia y la carta
 
-**Agente:** Irene (P1) · **Fecha:** 23/11/2026 · **Tarea:** `exp-club-en-la-app` (abierta por Irene: no había tareas P1 pendientes ni comentarios de Biel o Álex en las 6 entregas en revisión; es el hueco que comparten el recorrido inicial, el verificado y la bienvenida diaria)
-**Prototipo navegable:** https://claude.ai/artifact/6yL9QHeddHkjQhkwfmhuhY (móvil 375 y escritorio; selectores «Versión: Propuesta / Actual tras el 28/11», «Estado» con 8 estados, «Acceso: Pestaña / Pestaña + menú»; casilla «Marcar lo propuesto»). Copia local: `agencia/experiencia/prototipos/club-en-la-app.html`.
+**Agente:** Irene (P1) · **Fecha:** 23/11/2026, rehecha en v4 el 24/11 · **Tareas:** `exp-club-en-la-app`, `irene-v4-paleta` (abierta por Irene: no había tareas P1 pendientes ni comentarios de Biel o Álex en las 6 entregas en revisión; es el hueco que comparten el recorrido inicial, el verificado y la bienvenida diaria)
+**Prototipo navegable:** https://claude.ai/artifact/6yL9QHeddHkjQhkwfmhuhY (versión 2, sistema v4; móvil 375 y escritorio; selectores «Versión: Propuesta / Actual tras la apertura», «Estado» con 8 estados, «Acceso: Pestaña / Pestaña + menú», «Fechas: 10/12–11/12 (por confirmar) / 27/11–28/11 (código)»; casilla «Marcar lo propuesto»; bajo el móvil, una línea explica dónde va el ultravioleta en cada estado). Copia local: `agencia/experiencia/prototipos/club-en-la-app.html`.
 **Base:** rama `revision/club-fundador` de proteamapp (PR #1, commit 5c7a6bd): `routes/_authenticated/coach.admin.tsx` (pestañas de Configuración), `components/shell.tsx` (`COACH_MAIN`, `COACH_SECONDARY`), `components/founder/founder-section.tsx`, `founder-welcome.tsx`, `founder-badge.tsx`, `lib/founder.ts`, `components/access-gate-screen.tsx`.
 
-**Por qué ahora:** el 28/11 la pantalla de espera deja de verse y con ella el único sitio donde viven el bloque del Club (`FounderSection`) y la carta (`FounderWelcomeDialog`). Las fichas del recorrido inicial y del verificado dicen «Tu insignia te espera en tu perfil» y «Ver mi carta de bienvenida… desde tu perfil», pero **el entrenador no tiene perfil**: `/app/profile` es del jugador; el menú del entrenador acaba en Progresión, Configuración y Facturación. Sin un sitio fijo, quien pida la insignia después del 28/11 o quiera releer la carta no tiene dónde ir.
+**Por qué ahora:** con la apertura (vie 11/12 por confirmar; 28/11 en el código) la pantalla de espera deja de verse y con ella el único sitio donde viven el bloque del Club (`FounderSection`) y la carta (`FounderWelcomeDialog`). Las fichas del recorrido inicial y del verificado dicen «Tu insignia te espera en tu perfil» y «Ver mi carta de bienvenida… desde tu perfil», pero **el entrenador no tiene perfil**: `/app/profile` es del jugador; el menú del entrenador acaba en Progresión, Configuración y Facturación. Sin un sitio fijo, quien pida la insignia después de la apertura o quiera releer la carta no tiene dónde ir.
+
+## 0. Sistema v4 (24/11): qué cambia respecto a la versión v3
+Manda `agencia/sistema-v4/IDENTIDAD.md` y el apartado «La misma dirección en la web y la app» del documento de dirección audiovisual. **Funciones, flujos, llamadas y textos no cambian**; solo la piel y la fecha de referencia. El estilo v3 (papel, Instrument Serif, el hueco del número «a lápiz») queda retirado en este prototipo.
+
+| Elemento | v3 | v4 |
+|---|---|---|
+| Fondo y capas | Papel blanco | Fondo `#02050F`; menú lateral, barra del móvil, tarjetas de Preferencias, filas de «Lo que tienes», ventanas y carta en `#060C19`; la cabecera del Club en `#0C1323` (tokens del tema `.dark` de la app) |
+| Lo activo | Píldora azul en la pestaña, sombra en el menú | **Luz.** La pestaña elegida en `#636DFF` con filo hielo y halo; el elemento del menú elegido en `#0C1323` con filete de luz arriba; dentro de la pestaña del Club, **la cabecera con la insignia es lo único iluminado** (luz que cae desde arriba y filete hielo), en todos los estados con contenido; el campo de Instagram con halo eléctrico al enfocarlo |
+| Tipografía | Instrument Serif + Manrope | Plus Jakarta Sans en todo (800 en títulos; cursiva 500 solo en «Biel · creador de ProTeam», bajo la firma) |
+| **Ultravioleta `#8B5CF6`, una vez por pantalla** | — | **Verificada (con o sin número):** el rayo de la insignia, con filo blanco. **Sin pedir y rechazada:** el botón «Conseguir mi insignia» (el acceso al Club). **En las otras pestañas de Configuración:** el rayo de la pestaña «Club Fundador». **En revisión, cargando, error y quien no viene de la lista:** ninguno. Con la carta abierta, el ultravioleta pasa a la insignia de la carta y la de detrás se queda en blanco; el rayo del menú lateral (opción «Pestaña + menú») va siempre en hielo |
+| Insignia | Roseta azul, rayo blanco; gris sin verificar | Sin verificar: roseta en penumbra (`#121B30`, borde hielo tenue) con el rayo apagado. Verificada: roseta `#636DFF` con halo y rayo ultravioleta (igual que en el verificado) |
+| Hueco del número | «Nº ___» a lápiz, inclinado | «Nº» y una línea de luz hielo que se apaga hacia la derecha. Mismo texto |
+| Estados | Error en tarjeta blanca; esqueleto gris | Error con **un móvil boca abajo** (ilustración provisional; en producto, foto propia o con licencia, Pau, biblioteca v4); esqueleto en penumbra sin luz. Motivo del rechazo y «Por repetir» en coral suave `#FF9B8F`, «En revisión» en ámbar suave `#E9C27A`; sin rojo |
+| Quien no viene de la lista | Bloque «Aquí no falta nada.» dentro de la pantalla | La pantalla es exactamente Configuración con sus 3 pestañas; la explicación pasa a la nota del prototipo, fuera del móvil, para que no parezca un texto de la app |
+| Fechas | 28/11 | «Tu prueba empezó el 11 de diciembre.» con las fechas nuevas (lista hasta el jue 10/12 23:59, apertura el vie 11/12, **por confirmar**, `RELANZAMIENTO.md`); con el selector en «código», «28 de noviembre», como hoy |
+| «Ver en Facturación» | Sin acción | Aviso que explica que abre `/coach/billing`, que ya existe |
+
+**Lo que no cambia con la paleta:** las 3 pestañas de Configuración y su contenido, el menú y la barra del móvil, los textos y botones de `FounderSection`, la ventana de solicitud del PR #1, la carta de `FounderWelcomeDialog` tal cual (el nombre de Biel solo ahí) y «Lo que tienes» con las mismas 4 ventajas + la carta.
 
 ## 1. Qué se conserva (sin tocar)
 - **Configuración** con sus 3 pestañas («Preferencias personales», «Partidos y estadística», «Equipo»), su contenido y su orden.
@@ -37,7 +55,7 @@ La entrada desde el inicio (píldora del Club) está en la ficha de la bienvenid
 - Rechazo (si se aprueba el motivo): «Motivo: {0}» · «Súbela de nuevo con la pegatina @Mención.»
 - «Lo que tienes» · «Por estar desde el principio. Solo lo que ya funciona.»
   - «Insignia verificada y numerada» · «Con el rayo y, cuando llegue, tu número.» / «La consigues compartiendo una historia que nos mencione. La revisamos a mano, una a una.» · «Verificada» · «En revisión» · «Por repetir» · «Sin pedir».
-  - «3 meses gratis» · «Tu prueba empezó el 28 de noviembre. No se cobra nada hasta que acaben los 3 meses y puedes cancelar antes.» · «Ver en Facturación» · «Activa».
+  - «3 meses gratis» · «Tu prueba empezó el {fecha de apertura} (11 de diciembre por confirmar; 28 de noviembre en el código). No se cobra nada hasta que acaben los 3 meses y puedes cancelar antes.» · «Ver en Facturación» · «Activa».
   - «Una persona del equipo te acompaña» · «Durante tus 3 meses, escríbenos por correo y te contesta una persona, de tú a tú.» · [dirección de correo pendiente] · «Activo».
   - «Votas en lo que construimos» · «Te llegan las votaciones por correo, en la web y en Instagram.» · «Activo».
   - «Tu carta de bienvenida» · «Para volver a leerla cuando quieras.» / «Se abre cuando tu insignia esté verificada.» · «Leer mi carta» · «Tuya» · «Al verificar».
@@ -57,8 +75,10 @@ Número de apuntados o cualquier recuento; precio fundador congelado (sin import
 
 ## 6. Dudas para Biel
 1. **¿Quién ve la pestaña?** ¿Solo quien ya tiene fila en `founder_members` (ha pedido la insignia) o todo el que estaba en la lista de espera? Lo segundo necesita saber quién estaba en la lista (misma duda 1 del recorrido inicial).
-2. **¿Se puede pedir la insignia después del 28/11?** Si sí, «Conseguir mi insignia» sigue en la pestaña; si no, quien no la pidió solo vería las demás ventajas.
+2. **¿Se puede pedir la insignia después de la apertura (11/12 por confirmar; 28/11 en el código)?** Si sí, «Conseguir mi insignia» sigue en la pestaña; si no, quien no la pidió solo vería las demás ventajas.
 3. **¿Pestaña en Configuración, o también en el menú?** (selector «Acceso» del prototipo).
 4. **¿Qué correo enseñamos para el soporte de tú a tú?** Lucía atiende por Gmail; hace falta la dirección que quieres que se vea.
 5. **¿«Lo que tienes» te vale con estas 4 ventajas + la carta?** El precio congelado y los tickets entrarán cuando existan.
 6. Sigue pendiente el **@ provisional** de Instagram (`FOUNDER_INSTAGRAM` sigue en `app.proteam`, suspendida): afecta a la ventana de solicitud.
+7. **(v4) ¿Ultravioleta en el botón «Conseguir mi insignia» dentro de la app?** Lo he puesto como el acceso al Club, igual que en la pantalla de espera. La alternativa es dejarlo en `#636DFF` y reservar el ultravioleta solo para el rayo verificado.
+8. **(v4) Objetos reales:** el móvil boca abajo del error es un dibujo provisional; ¿foto propia o dibujo para los estados de la app? (misma duda que en onboarding y verificado).
