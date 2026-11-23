@@ -112,7 +112,7 @@ Lista viva. **Cada tema tiene muchas ideas; cada idea da 3 reels; cada reel llev
 10. E · La banda débil del rival en tres pasos · fútbol
 
 ## T09 · Partido en directo
-1. E · Lo que pasa en los primeros 15 minutos decide tus cambios · fútbol
+1. E · Lo que pasa en los primeros 15 minutos decide tus cambios · fútbol [hecha → T09-1-r1, r2, r3 · Dani A · sin hechos externos: escenas en segunda persona (fútbol); r2 usa la regla 12 de la IFAB (segunda amarilla), fuente en la ficha]
 2. H · El cambio en el minuto 53 (u78 rehecho en formato v3) · general [hecha → T09-2-r1, r2, r3 · Dani B · sin hechos externos: escenas en segunda persona (r1 balonmano, r2 fútbol, r3 general)]
 3. E · Cambios: por minutos, por rendimiento o por plan · general
 4. D · Faltas del equipo y momentos del partido · baloncesto (pieza aparte)
