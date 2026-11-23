@@ -161,7 +161,7 @@ Lista viva. **Cada tema tiene muchas ideas; cada idea da 3 reels; cada reel llev
 13. E · Partidos de mañana con calor: pausas y agua según pautas oficiales · general [añadida 23/11 · Dani B]
 
 ## T12 · Psicología y competición
-1. E · La presión de los penaltis en base · fútbol
+1. E · La presión de los penaltis en base · fútbol [hecha → T12-1-r1, r2, r3 · Dani A · 23/11 · fuentes: Jordet y Hartman 2008, J Sport Exerc Psychol 30:450-457 (r1, r2); BPS Research Digest 10/9/2009 sobre Jordet, Hartman y Sigmundstad 2009, Psychol Sport Exerc 10(6):621-627 (r2, cotejar original antes de montar); r3 sin hechos externos (escena en segunda persona)]
 2. H · El penalti que falló Baggio y lo que pasó después (verificar) · fútbol [hecha → T12-2-r1, r2, r3 · Dani B · 23/11 · fuentes: ESPN, Ed Dove, «World Cup moments: Baggio's heartbreak, 1994», 8/5/2018 (final del 94, Baresi y Massaro, cita «Penalties are only missed by those who have the courage to take them»); DFB, centro de datos, Italia-Francia 3/7/1998 (Baggio, primer lanzador de Italia, gol; 3-4); Footy Almanac y TUDN (penalti contra Chile, 1998). Sin fuente y no se usa: número de su lanzamiento en el 94 y lesión]
 3. E · Rutina antes de un tiro libre · baloncesto
 4. E · El error que se repite por miedo · general
