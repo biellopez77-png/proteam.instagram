@@ -129,7 +129,7 @@ Lista viva. **Cada tema tiene muchas ideas; cada idea da 3 reels; cada reel llev
 10. E · El último cuarto de hora: gestionar el resultado · fútbol
 
 ## T10 · El entrenador (su vida, su tiempo)
-1. E · Cuatro sitios: libreta, Excel, grupo y pizarra (E1) · general
+1. E · Cuatro sitios: libreta, Excel, grupo y pizarra (E1) · general [hecha → T10-1-r1, r2, r3 · Dani A · 23/11 · ángulo nuevo (no «cuatro sitios» como tesis): r1 fútbol 7 (tres sábados sin jugar), r2 baloncesto (la jugada borrada), r3 balonmano (la convocatoria; fuente: IHF, Rules of the Game, regla 4:1)]
 2. H · El entrenador voluntario: 6 horas a la semana que nadie ve · general [descartada: sin fuente · 23/11 · Dani B · las encuestas encontradas (LiFEsports/Aspen, Central Ohio 2019 y National Coach Survey 2022, EE. UU.) no dan las horas de un entrenador voluntario de base; sin dato de España]
 3. D · Cuánto tiempo prepara un entrenador de base su semana (buscar encuesta; si no hay, no se usa) · general
 4. E · Domingo por la noche: la planificación que te come el fin de semana · general [hecha → T10-4-r1, r2, r3 · Dani B · 23/11 · sin hechos externos: escenas en segunda persona (r1 fútbol, r2 balonmano, r3 general)]
