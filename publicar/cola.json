@@ -222,5 +222,22 @@
    "status": "pendiente"
   },
   "added": "2026-11-23T11:03:21.054090+01:00"
+ },
+ {
+  "id": "T09-1-r3",
+  "kind": "reel",
+  "files": [
+   "publicar/media/T09-1-r3-1.mp4",
+   "publicar/media/T09-1-r3-2.jpg"
+  ],
+  "caption": "Si algo se repite tres veces antes del minuto quince, ya no es casualidad.\n\nSu extremo le gana la espalda a tu lateral: una la salva el portero, otra se va fuera, y la tercera la ves venir desde el banquillo. Esperas, porque un cambio en el doce parece exagerado. Pauta para el banquillo: una raya cada vez que algo se repite, y a la tercera cambias algo, aunque vayas cero a cero.\n\n(Escena de ejemplo. Foto: grassrootsgroundswell, CC BY 2.0, Wikimedia Commons.)\n\n¿Qué se te repitió el sábado antes del quince?",
+  "state": "revisión",
+  "ig": {
+   "status": "pendiente"
+  },
+  "tiktok": {
+   "status": "pendiente"
+  },
+  "added": "2026-11-23T11:31:57.975015+01:00"
  }
 ]
