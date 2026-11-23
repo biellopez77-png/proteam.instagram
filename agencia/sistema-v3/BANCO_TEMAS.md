@@ -125,9 +125,9 @@ Lista viva. **Cada tema tiene muchas ideas; cada idea da 3 reels; cada reel llev
 
 ## T10 · El entrenador (su vida, su tiempo)
 1. E · Cuatro sitios: libreta, Excel, grupo y pizarra (E1) · general
-2. H · El entrenador voluntario: 6 horas a la semana que nadie ve · general
+2. H · El entrenador voluntario: 6 horas a la semana que nadie ve · general [descartada: sin fuente · 23/11 · Dani B · las encuestas encontradas (LiFEsports/Aspen, Central Ohio 2019 y National Coach Survey 2022, EE. UU.) no dan las horas de un entrenador voluntario de base; sin dato de España]
 3. D · Cuánto tiempo prepara un entrenador de base su semana (buscar encuesta; si no hay, no se usa) · general
-4. E · Domingo por la noche: la planificación que te come el fin de semana · general
+4. E · Domingo por la noche: la planificación que te come el fin de semana · general [en curso 2026-11-23 · Dani B]
 5. E · Cómo preparar la semana en 20 minutos · general
 6. C · ProTeam: un sitio para todo · general
 7. H · Lo que un entrenador de base hace un lunes (POV con cámara en mano) · general
