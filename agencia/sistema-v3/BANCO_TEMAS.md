@@ -142,7 +142,7 @@ Lista viva. **Cada tema tiene muchas ideas; cada idea da 3 reels; cada reel llev
 
 ## T11 · Lesiones y prevención
 1. E · Calentamiento que sí previene (FIFA 11+, verificar) · fútbol
-2. D · Lesiones de isquios y sprint (verificar estudios) · fútbol [en curso 2026-11-23 · Dani B]
+2. D · Lesiones de isquios y sprint (verificar estudios) · fútbol [hecha → T11-2-r1, r2, r3 · Dani B · 23/11 · fuentes: van der Horst et al. 2015, Am J Sports Med 43(6):1316-1323 (PEDro 43009); Ekstrand et al. 2016, BJSM 50(12):731. Estudio con aficionados adultos: solo juvenil y aficionados]
 3. E · Volver de una lesión: el error de la semana 2 · general
 4. I · Qué hacer en los primeros 5 minutos tras un golpe (solo pautas oficiales) · general
 5. E · El jugador que juega en dos equipos · general
