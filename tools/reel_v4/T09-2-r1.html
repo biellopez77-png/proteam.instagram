@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8">
+<!-- T09-2-r1 «Siete minutos» (balonmano). Plantilla a3.html: planos fijos, la cámara solo se mueve al cambiar de zona. Todo dibujado (sin fotos, sin caras, sin IA). Escena de ejemplo. Marta A, 23/11. -->
+<style>
+@font-face{font-family:M;font-weight:800;src:url(/tools/fonts/manrope-latin-800-normal.woff2)}
+@font-face{font-family:M;font-weight:700;src:url(/tools/fonts/manrope-latin-700-normal.woff2)}
+@font-face{font-family:M;font-weight:500;src:url(/tools/fonts/manrope-latin-500-normal.woff2)}
+@font-face{font-family:S;font-style:italic;font-weight:400;src:url(/tools/fonts/instrument-serif-latin-400-italic.woff2)}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#fbfaf7}
+#st{position:absolute;inset:0;overflow:hidden;background:#fbfaf7}
+#world{position:absolute;left:0;top:0;transform-origin:0 0;will-change:transform}
+.o{position:absolute;left:0;top:0;transform-origin:50% 50%}
+.paper{background:#fff;box-shadow:0 18px 50px rgba(20,18,12,.10)}
+.board{background:#fdfdfc;border:10px solid #d9dcdf;border-radius:10px}
+.num{position:absolute;font-family:M;font-weight:800;letter-spacing:-.05em;color:#121212;white-space:nowrap;line-height:1}
+.hand{position:absolute;font-family:S;font-style:italic;white-space:nowrap;line-height:1}
+.lab{position:absolute;font-family:M;font-weight:800;letter-spacing:.14em;color:#121212;white-space:nowrap}
+.note{box-shadow:0 10px 26px rgba(20,18,12,.14)}
+#cap{position:absolute;left:90px;right:90px;top:1330px;text-align:center;font-family:M;font-weight:800;font-size:58px;line-height:1.12;letter-spacing:-.03em;color:#121212;padding:18px 26px;border-radius:22px;background:rgba(251,250,247,.94)}
+#cap em{font-family:S;font-style:italic;font-weight:400;font-size:1.14em;letter-spacing:0}
+#hook{position:absolute;left:0;right:0;top:110px;text-align:center;font-family:M;font-weight:800;font-size:92px;letter-spacing:-.05em;color:#121212}
+#hook em{font-family:S;font-style:italic;font-weight:400;letter-spacing:0;color:#2f6bff}
+#gr{position:absolute;inset:0;pointer-events:none;mix-blend-mode:multiply;opacity:0}
+#ink{position:absolute;inset:0;background:#0e0e10;opacity:0;pointer-events:none}
+svg .pn{fill:none;stroke:#121212;stroke-width:7;stroke-linecap:round;stroke-linejoin:round}
+.row{position:absolute;left:0;width:820px;height:150px}
+.row .d{position:absolute;left:70px;top:22px;font-family:M;font-weight:800;font-size:100px;letter-spacing:-.05em;color:#121212;line-height:1;width:140px;text-align:center}
+.row .l{position:absolute;left:250px;top:92px;width:260px;height:4px;background:#e3e6ea}
+.row .m{position:absolute;left:560px;top:30px;font-family:S;font-style:italic;font-size:92px;color:#2f6bff;line-height:1;white-space:nowrap}
+.row .z{position:absolute;left:720px;top:34px;font-family:S;font-style:italic;font-size:80px;color:#77736b;line-height:1}
+#RC .num{font-variant-numeric:tabular-nums}
+</style></head><body><div id="st">
+<div id="world">
+  <!-- 1 · tablero (TB): reloj 53:00, peto 9 cruzando la zona de cambios, el 7 en rojo -->
+  <div class="o board" id="TB" style="width:1000px;height:1620px"></div>
+  <div class="o paper" id="CK" style="width:640px;height:340px;border:6px solid #121212;border-radius:22px">
+    <div class="lab" style="left:34px;top:26px;font-size:22px;color:#77736b">RELOJ · 2.ª PARTE</div>
+    <div class="num" style="left:0;right:0;top:90px;text-align:center;font-size:200px">53:00</div></div>
+  <svg class="o" id="ZC" width="900" height="300" viewBox="0 0 900 300" style="overflow:visible">
+    <path d="M0 120 H900" stroke="#121212" stroke-width="6"/>
+    <path d="M300 90 V150 M600 90 V150" stroke="#121212" stroke-width="6" stroke-linecap="round"/>
+    <text x="450" y="70" font-family="M" font-weight="800" font-size="22" letter-spacing="4" fill="#9aa1a8" text-anchor="middle">ZONA DE CAMBIOS</text>
+    <text x="450" y="200" font-family="M" font-weight="800" font-size="22" letter-spacing="4" fill="#9aa1a8" text-anchor="middle">BANQUILLO</text></svg>
+  <svg class="o" id="PE" width="220" height="250" viewBox="0 0 220 250" style="overflow:visible">
+    <path d="M60 10 Q110 50 160 10 L205 40 L180 95 L180 240 H40 V95 L15 40 Z" fill="#fff" stroke="#121212" stroke-width="7" stroke-linejoin="round"/>
+    <text x="110" y="195" font-family="M" font-weight="800" font-size="110" letter-spacing="-4" fill="#121212" text-anchor="middle">9</text></svg>
+  <div class="o" id="SV" style="width:280px;height:300px">
+    <div class="lab" style="left:0;right:0;top:0;text-align:center;font-size:22px;color:#d23a2a">LE QUEDAN</div>
+    <div class="hand" style="left:0;right:0;top:50px;text-align:center;font-size:230px;color:#d23a2a">7</div>
+    <svg width="280" height="300" style="position:absolute;left:0;top:0;overflow:visible"><path id="svc" d="M140 70 C 240 70 260 150 250 190 C 236 260 150 290 90 270 C 20 246 10 150 50 110 C 80 80 120 66 170 74" fill="none" stroke="#d23a2a" stroke-width="8" stroke-linecap="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/></svg></div>
+  <!-- 2 · pista (PI): media pista cenital, marcador EJEMPLO, banquillo fuera de la banda -->
+  <div class="o paper" id="SB" style="width:640px;height:250px;border:5px solid #121212;border-radius:18px">
+    <div class="lab" style="left:30px;top:22px;font-size:20px;color:#77736b">SÁBADO · 2.ª PARTE</div><div class="lab" style="right:30px;top:22px;font-size:18px;color:#9aa1a8">EJEMPLO</div>
+    <div class="num" style="left:0;right:0;top:78px;text-align:center;font-size:140px">25-17</div></div>
+  <svg class="o" id="PI" width="1000" height="1200" viewBox="0 0 1000 1200" style="overflow:visible"></svg>
+  <!-- 3 · banquillo (BQ): cinco siluetas sin cara, el 9; libreta cerrada -->
+  <svg class="o" id="BQ" width="1100" height="760" viewBox="0 0 1100 760" style="overflow:visible"></svg>
+  <!-- 4 · reloj que corre (RC) -->
+  <div class="o paper" id="RC" style="width:680px;height:360px;border:6px solid #121212;border-radius:22px">
+    <div class="lab" style="left:34px;top:26px;font-size:22px;color:#77736b">RELOJ</div>
+    <div class="num" id="RCt" style="left:0;right:0;top:96px;text-align:center;font-size:200px">41:00</div><div class="num" id="RCn" style="left:0;right:0;top:96px;text-align:center;font-size:200px;opacity:0">42:00</div></div>
+  <!-- 5 · vestuario (VE): puerta y mochila -->
+  <svg class="o" id="VE" width="900" height="1100" viewBox="0 0 900 1100" style="overflow:visible"></svg>
+  <!-- 6 · en negro (QZ): la convocatoria se ilumina, luego solo el 9 -->
+  <div class="o" id="QZ" style="width:1600px;height:2600px;background:#0e0e10"></div>
+  <div class="o" id="SP" style="width:1300px;height:1300px;border-radius:50%;background:radial-gradient(closest-side,rgba(255,248,230,.30),rgba(255,248,230,.09) 60%,rgba(255,248,230,0))"></div>
+  <div class="o paper" id="FQ" style="width:820px;height:1180px;overflow:hidden"></div>
+  <!-- 7 · solución (CV): convocatoria con minutos mínimos, círculos azules y nota 31:00 -->
+  <div class="o paper" id="CV" style="width:820px;height:1180px"></div>
+  <div class="o paper note" id="CN" style="width:380px;height:220px;border:5px solid #2f6bff;border-radius:14px">
+    <div class="lab" style="left:30px;top:24px;font-size:20px;color:#77736b">2.ª PARTE · ENTRA</div>
+    <div class="num" style="left:30px;top:76px;font-size:120px">31:00</div></div>
+  <svg class="o" id="AR" width="400" height="600" viewBox="0 0 400 600" style="overflow:visible"><path id="arp" d="M60 10 C 30 200 120 380 300 560 M240 520 L302 562 L290 486" fill="none" stroke="#2f6bff" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/></svg>
+  <svg class="o" id="PC" width="40" height="300" viewBox="0 0 40 300" style="overflow:visible">
+    <g><path d="M20 300 L6 252 L34 252 Z" fill="#e9c99a" stroke="#121212" stroke-width="3" stroke-linejoin="round"/><path d="M20 300 L15 284 L25 284 Z" fill="#121212"/>
+      <rect x="6" y="40" width="28" height="212" fill="#f2c94c" stroke="#121212" stroke-width="3"/><rect x="6" y="10" width="28" height="32" rx="4" fill="#e8a0a0" stroke="#121212" stroke-width="3"/></g></svg>
+  <!-- marca -->
+  <div class="o" id="B" style="width:900px;height:500px;text-align:center">
+    <div class="num" style="position:static;font-size:170px;margin-top:120px">Pro<span style="color:#2f6bff">Team</span></div>
+    <div style="margin-top:30px;font-family:M;font-weight:500;font-size:38px;color:#77736b">la app del entrenador · enlace en la bio</div>
+  </div>
+</div>
+<div id="gr"></div>
+<div id="hook">Siete <em>minutos</em></div>
+<div id="cap"></div>
+<div id="ink"></div>
+</div>
+<script src="/tools/reel_v4/T09-2-r1/times.js"></script>
+<script>
+const $=id=>document.getElementById(id), W=window.WORDS, NS='http://www.w3.org/2000/svg';
+const at=(w,n=1)=>{let c=0;for(const x of W)if(x[0]===w&&++c===n)return x[1];throw 'no '+w+n};
+const cl=(x,a=0,b=1)=>Math.min(b,Math.max(a,x)), r=(t,a,b)=>cl((t-a)/(b-a));
+const io=x=>x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2, eo=x=>1-Math.pow(1-x,3), lerp=(a,b,k)=>a+(b-a)*k;
+const T={sale:at('sale'),le:at('le'),siete:at('siete'),sabado:at('sabado'),ocho:at('ocho'),y2:at('y',2),banquillo:at('banquillo'),nueve:at('nueve'),peto:at('peto'),
+ nadie:at('nadie'),ibas:at('ibas'),funciona:at('funciona'),reloj:at('reloj'),corre:at('corre'),eso:at('eso'),peor2:at('peor',2),pregunta:at('pregunta'),decirle:at('decirle'),
+ al:at('al'),tampoco:at('tampoco'),antes:at('antes'),apunta:at('apunta'),cada:at('cada'),jugar:at('jugar',2),descanso:at('descanso'),rodea:at('rodea'),cero:at('cero'),
+ ese:at('ese'),primero:at('primero'),apunt:at('apuntalo'),porque:at('porque'),END:window.VEND+.25};
+// zonas
+const CKp=[0,-380], ZCp=[0,330], PE0=[-200,470], PE1=[-200,190], SVp=[270,300];
+const PIz=[2000,0], SBp=[2000,-830], BQz=[0,2700], RCz=[-2000,0], VEz=[-2000,2700], QZz=[0,5400], CVz=[2000,5400], BP=[-2000,5400];
+const CNp=[CVz[0]+150,CVz[1]+860], ARp=[CVz[0]-200,CVz[1]+420];
+const SEAT=[-460,-300,-140,20,180], N9=3; // el 9 es la 4.ª silueta
+const LIBp=[BQz[0]+420,BQz[1]+62];
+const CUT1=T.al-.12, CUT2=T.antes-.12;
+// cámara: planos FIJOS; solo se mueve al cambiar de zona (0,6 s, entrada y salida suaves)
+const S0=[0,CKp[0],CKp[1]+20,1.45];
+const SH=[ // [inicio, cx, cy, zoom, duración]
+ S0,
+ [T.sale-.3,PE1[0]+60,ZCp[1]+20,1.45],
+ [T.le-.3,0,40,.8,.75],
+ [T.sabado-.3,PIz[0],PIz[1]-260,.66,.8],
+ [T.banquillo-.4,BQz[0],BQz[1]+10,.95,.8],
+ [T.peto-.3,BQz[0]+SEAT[N9],BQz[1]-40,1.55],
+ [T.nadie-.3,LIBp[0],LIBp[1]-10,1.9],
+ [T.ibas-.3,PIz[0]-120,PIz[1]+180,.78,.8],
+ [T.reloj-.3,RCz[0],RCz[1],1.25,.8],
+ [T.eso-.3,BQz[0],BQz[1]+10,.95,.8],
+ [T.peor2-.35,VEz[0],VEz[1]-40,.95,.8],
+ [T.pregunta-.3,VEz[0]+170,VEz[1]+230,1.45],
+ [CUT1,QZz[0],QZz[1]+20,.95],
+ [T.tampoco-.25,QZz[0],QZz[1]-590+200+150*N9+75,1.7],
+ [CUT2,CVz[0],CVz[1]-40,1.0],
+ [T.apunta-.25,CVz[0]+60,CVz[1]-120,1.2],
+ [T.descanso-.3,CVz[0],CVz[1]+20,1.0],
+ [T.ese-.3,CVz[0],CVz[1]+330,.74],
+ [T.apunt+.15,BP[0],BP[1],1.0,.8],
+ [T.porque+.05,S0[1],S0[2],S0[3],.95]];
+const CUTS=new Set([CUT1,CUT2]);
+function cam(t){let i=0;while(i+1<SH.length&&SH[i+1][0]<=t)i++;const s=SH[i];
+ if(i===0||CUTS.has(s[0]))return [s[1],s[2],s[3],0];
+ const p=SH[i-1],Dd=s[4]||.62,k=r(t,s[0],s[0]+Dd),e=io(k);
+ const lz=lerp(Math.log(p[3]),Math.log(s[3]),e)-.12*Math.sin(Math.PI*k)*(Math.hypot(s[1]-p[1],s[2]-p[2])>600?1:0);
+ return [lerp(p[1],s[1],e),lerp(p[2],s[2],e),Math.exp(lz),k>0&&k<1?Math.sin(Math.PI*k):0]}
+const sz=el=>[el.offsetWidth||+el.getAttribute('width'),el.offsetHeight||+el.getAttribute('height')];
+function place(el,x,y,rot=0,sc=1){const [w,h]=sz(el);el.style.transform=`translate(${x-w/2}px,${y-h/2}px) rotate(${rot}deg) scale(${sc})`}
+const drawK=(el,k)=>{el.setAttribute('stroke-dashoffset',100-100*k);el.style.visibility=k>0?'visible':'hidden'};
+const mk=(tag,a,par)=>{const e=document.createElementNS(NS,tag);for(const k in a)e.setAttribute(k,a[k]);par.appendChild(e);return e};
+const txt=(par,x,y,s,size,fill='#77736b',anchor='middle')=>{const e=mk('text',{x,y,'font-family':'M','font-weight':800,'font-size':size,'letter-spacing':4,fill,'text-anchor':anchor},par);e.textContent=s;return e};
+// media pista cenital: portería arriba, área de 6 m, 9 m discontinua, línea central abajo; banquillo fuera de la banda izquierda
+const PL=[],PB=[];{const s=$('PI');mk('rect',{x:120,y:0,width:820,height:1000,fill:'#f4f3ef',stroke:'#b9bfc6','stroke-width':6},s);
+ mk('path',{d:'M450 0 V-30 H610 V0',fill:'none',stroke:'#121212','stroke-width':10,'stroke-linejoin':'round'},s);
+ mk('path',{d:'M230 0 Q240 300 530 300 Q820 300 830 0',fill:'#e9edf3',stroke:'#121212','stroke-width':6},s);
+ mk('path',{d:'M150 0 Q160 450 530 450 Q900 450 910 0',fill:'none',stroke:'#9aa1a8','stroke-width':5,'stroke-dasharray':'22 18'},s);
+ mk('path',{d:'M120 1000 H940',stroke:'#121212','stroke-width':6},s);
+ mk('path',{d:'M90 850 H150 M90 1000 H150',stroke:'#121212','stroke-width':6,'stroke-linecap':'round'},s);
+ mk('rect',{x:20,y:640,width:60,height:340,rx:10,fill:'#fff',stroke:'#121212','stroke-width':5},s);
+ for(let i=0;i<5;i++){const c=mk('circle',{cx:50,cy:680+i*64,r:22,fill:i===N9?'#2f6bff':'#9aa1a8'},s);PB.push(c)}
+ txt(s,50,1060,'BANCO',22);
+ const P0=[[300,520],[460,380],[620,380],[780,520],[530,620],[420,800]];
+ P0.forEach(([x,y])=>{PL.push([mk('circle',{cx:x,cy:y,r:26,fill:'#121212'},s),x,y])});
+ txt(s,940,1060,'EJEMPLO',20,'#9aa1a8','end');}
+// banquillo: cinco siluetas sentadas, sin cara; la del 9 con peto blanco; libreta cerrada en el extremo
+const SIL=[];{const s=$('BQ');const cx=550;
+ mk('rect',{x:20,y:470,width:1060,height:36,rx:8,fill:'#d9dcdf',stroke:'#121212','stroke-width':5},s);
+ mk('path',{d:'M80 506 V640 M1020 506 V640',stroke:'#121212','stroke-width':8,'stroke-linecap':'round'},s);
+ SEAT.forEach((dx,i)=>{const x=cx+dx,g=mk('g',{},s);
+  mk('circle',{cx:x,cy:200,r:52,fill:'#121212'},g);
+  mk('path',{d:`M${x-78} 470 Q${x-86} 290 ${x} 280 Q${x+86} 290 ${x+78} 470 Z`,fill:'#121212'},g);
+  mk('rect',{x:x-70,y:470,width:58,height:200,rx:14,fill:'#121212'},g);mk('rect',{x:x+12,y:470,width:58,height:200,rx:14,fill:'#121212'},g);
+  if(i===N9){mk('path',{d:`M${x-52} 300 Q${x} 330 ${x+52} 300 L${x+62} 460 H${x-62} Z`,fill:'#fff',stroke:'#121212','stroke-width':4},g);
+   mk('text',{x,y:430,'font-family':'M','font-weight':800,'font-size':96,fill:'#121212','text-anchor':'middle'},g).textContent='9'}
+  SIL.push(g)});
+ const lb=mk('g',{transform:`translate(880 420) rotate(-4)`},s);
+ mk('rect',{x:0,y:0,width:180,height:44,rx:6,fill:'#fff',stroke:'#121212','stroke-width':5},lb);
+ mk('rect',{x:0,y:0,width:180,height:16,rx:4,fill:'#9aa1a8'},lb);
+ txt(s,550,740,'BANQUILLO',26);}
+// vestuario: puerta, banco bajo y mochila
+{const s=$('VE');mk('rect',{x:80,y:40,width:400,height:860,rx:8,fill:'#fff',stroke:'#121212','stroke-width':7},s);
+ mk('circle',{cx:430,cy:500,r:16,fill:'#121212'},s);mk('path',{d:'M0 900 H900',stroke:'#b9bfc6','stroke-width':6},s);
+ mk('text',{x:280,y:160,'font-family':'M','font-weight':800,'font-size':30,'letter-spacing':5,fill:'#77736b','text-anchor':'middle'},s).textContent='VESTUARIO';
+ const m=mk('g',{transform:'translate(560 560)'},s);
+ mk('path',{d:'M40 40 Q40 0 120 0 Q200 0 200 40 L215 330 Q120 352 25 330 Z',fill:'#e9edf3',stroke:'#121212','stroke-width':7,'stroke-linejoin':'round'},m);
+ mk('path',{d:'M85 0 Q90 -50 120 -50 Q150 -50 155 0',fill:'none',stroke:'#121212','stroke-width':7,'stroke-linecap':'round'},m);
+ mk('rect',{x:60,y:170,width:120,height:100,rx:14,fill:'#fff',stroke:'#121212','stroke-width':5},m);
+ mk('text',{x:120,y:240,'font-family':'M','font-weight':800,'font-size':54,fill:'#121212','text-anchor':'middle'},m).textContent='9';}
+// convocatorias: la de negro (FQ) y la de la solución (CV)
+const DOR=[1,4,7,9,12,14], ZERO=[3,5];
+function sheet(el,full){el.innerHTML=`<div class="lab" style="left:50px;top:50px;font-size:24px;color:#77736b">CONVOCATORIA · JUVENIL</div><div class="lab" style="right:50px;top:52px;font-size:18px;color:#9aa1a8">EJEMPLO</div>`+
+ (full?`<div class="lab" style="left:540px;top:130px;font-size:16px;color:#2f6bff">MÍNIMO</div>`:'')+
+ DOR.map((d,i)=>`<div class="row" style="top:${200+i*150}px"><div class="d">${d}</div><div class="l"></div>${full?`<div class="m" id="m${i}">10′</div>`+(ZERO.includes(i)?`<div class="z" id="z${i}">0</div>`:''):''}</div>`).join('');}
+sheet($('FQ'),false);sheet($('CV'),true);
+{const hl=document.createElement('div');hl.id='HL';hl.style.cssText='position:absolute;left:30px;top:'+(200+150*N9)+'px;width:760px;height:150px;border-radius:18px';$('FQ').appendChild(hl);
+ const d=document.createElement('div');d.id='FQd';d.style.cssText='position:absolute;inset:0;background:#0e0e10';$('FQ').appendChild(d);
+ const sv=document.createElementNS(NS,'svg');sv.setAttribute('width',820);sv.setAttribute('height',1180);sv.style.cssText='position:absolute;left:0;top:0;overflow:visible';$('CV').appendChild(sv);
+ ZERO.forEach((i,j)=>{const y=200+i*150+72;mk('path',{id:'rc'+j,d:`M140 ${y-70} C 230 ${y-70} 250 ${y-10} 240 ${y+30} C 225 ${y+80} 120 ${y+85} 70 ${y+50} C 20 ${y+10} 50 ${y-60} 160 ${y-66}`,fill:'none',stroke:'#2f6bff','stroke-width':8,'stroke-linecap':'round',pathLength:100,'stroke-dasharray':100,'stroke-dashoffset':100},sv)});}
+const CAPS=[[T.sale,T.le-.15,'Sale a pista <em>el que no había jugado.</em>'],[T.le,T.sabado-.3,'Le quedan <em>siete minutos.</em>'],
+ [T.sabado,T.y2-.15,'Sábado, segunda parte: <em>vais ganando de ocho.</em>'],[T.y2,T.peto-.15,'En el banquillo, el 9: <em>53 minutos sentado.</em>'],
+ [T.peto,T.nadie-.2,'Con el peto puesto, <em>mirando a los demás.</em>'],[T.nadie,T.ibas-.15,'<em>Nadie lo decidió.</em>'],
+ [T.ibas,T.reloj-.35,'Si vas ganando, <em>no tocas lo que funciona.</em>'],[T.reloj-.25,T.eso-.25,'<em>Y el reloj corre.</em>'],
+ [T.eso-.2,T.peor2-.3,'Y eso <em>no fue lo peor.</em>'],[T.peor2-.15,T.pregunta-.15,'Lo peor llega <em>en el vestuario.</em>'],
+ [T.pregunta,CUT1-.35,'Te pregunta si juega el sábado. <em>Y no sabes qué decirle.</em>'],
+ [CUT1+.15,T.tampoco-.15,'Al que no sale <em>no lo ve nadie.</em>'],[T.tampoco,CUT2-.3,'<em>Tampoco tú.</em>'],
+ [CUT2+.15,T.cada-.1,'Antes del partido…'],[T.cada,T.descanso-.35,'Junto a cada dorsal, <em>sus minutos mínimos.</em>'],
+ [T.descanso-.25,T.ese-.15,'En el descanso, <em>rodea al que siga en 0.</em>'],[T.ese,T.apunt-.15,'<em>Ese entra el primero.</em>'],
+ [T.apunt,T.porque-.15,'Apúntalo en la app de ProTeam.'],[T.porque,T.END-.45,'Porque en el 53 <em>ya no hay tiempo.</em>']];
+const mm=s=>{const m=Math.floor(s);return String(m).padStart(2,'0')+':00'};
+window.frame=function(t){
+  const [cx,cy,z,mv]=cam(t);
+  const wd=$('world');wd.style.transform=`translate(540px,760px) scale(${z}) translate(${-cx}px,${-cy}px)`;
+  wd.style.filter=mv>.35?`blur(${(2.6*(mv-.35)/.65).toFixed(2)}px)`:'none';
+  const gone=1-r(t,T.apunt+.2,T.apunt+.6);
+  // 1 · tablero
+  place($('TB'),0,60);place($('CK'),CKp[0],CKp[1],-1);place($('ZC'),ZCp[0],ZCp[1]);
+  const pk=io(r(t,T.sale-.05,T.jugado||T.sale+1.3))*gone;place($('PE'),lerp(PE0[0],PE1[0],pk),lerp(PE0[1],PE1[1],pk)-60,lerp(-4,3,pk));
+  const sv=eo(r(t,T.siete-.2,T.siete+.25))*gone;place($('SV'),SVp[0],SVp[1]+20*(1-sv),2);$('SV').style.opacity=sv;drawK($('svc'),io(r(t,T.siete+.05,T.siete+.6))*gone);
+  // 2 · pista y marcador
+  place($('SB'),SBp[0],SBp[1]);place($('PI'),PIz[0],PIz[1]);
+  PL.forEach(([c,x,y],i)=>{const a=t*1.3+i*1.7;c.setAttribute('cx',(x+28*Math.sin(a)).toFixed(1));c.setAttribute('cy',(y+18*Math.cos(a*.8+i)).toFixed(1))});
+  // 3 · banquillo: el 9 se ilumina y el resto se apaga
+  place($('BQ'),BQz[0],BQz[1]);
+  const dim=r(t,T.nueve-.1,T.nueve+.4);SIL.forEach((g,i)=>g.style.opacity=i===N9?1:1-.72*dim);
+  // 4 · reloj que corre 41 → 53
+  place($('RC'),RCz[0],RCz[1]);{const v=lerp(41,53,r(t,T.reloj-.15,T.corre+.4)),f=v>=53?0:io(cl((v%1-.35)/.65));$('RCt').textContent=mm(v);$('RCn').textContent=mm(Math.min(53,Math.floor(v)+1));$('RCt').style.opacity=1-f;$('RCn').style.opacity=f}
+  // 5 · vestuario
+  place($('VE'),VEz[0],VEz[1]);
+  // 6 · en negro
+  place($('QZ'),QZz[0],QZz[1]);place($('SP'),QZz[0],QZz[1]);place($('FQ'),QZz[0],QZz[1],0);
+  const qv=t>CUT1-.6&&t<CUT2+.6?1:0;['QZ','SP','FQ'].forEach(k=>$(k).style.visibility=qv?'visible':'hidden');
+  const li=io(r(t,T.al-.05,T.al+.9));$('FQd').style.opacity=(1-.9*li).toFixed(3);$('SP').style.opacity=li;
+  const nar=io(r(t,T.tampoco-.2,T.tampoco+.3));$('HL').style.boxShadow=`0 0 0 2000px rgba(14,14,16,${(.86*nar).toFixed(3)})`;
+  // 7 · solución
+  place($('CV'),CVz[0],CVz[1],0);
+  const w0=T.apunta-.05,w1=T.jugar+.2,n=DOR.length;
+  DOR.forEach((d,i)=>{const s=w0+(w1-w0)*i/n,e=w0+(w1-w0)*(i+1)/n-.05;$('m'+i).style.clipPath=`inset(-10% ${(100-100*io(r(t,s,e))).toFixed(1)}% -10% -2%)`});
+  ZERO.forEach((i,j)=>{$('z'+i).style.opacity=r(t,T.descanso-.1+.2*j,T.descanso+.2+.2*j);drawK($('rc'+j),io(r(t,T.rodea-.05+.3*j,T.rodea+.35+.3*j)))});
+  const cn=eo(r(t,T.ese-.1,T.ese+.3));place($('CN'),CNp[0],CNp[1]+30*(1-cn),2);$('CN').style.opacity=cn;
+  place($('AR'),ARp[0],ARp[1]);drawK($('arp'),io(r(t,T.entra||T.ese+.3,(T.primero||T.ese+.8)+.2)));
+  // lápiz: escribe los 10′ fila a fila
+  const pc=$('PC'),kk=r(t,w0,w1),row=Math.min(n-1,Math.floor(kk*n)),kr=io(cl(kk*n-row));
+  pc.style.opacity=r(t,w0-.3,w0)*(1-r(t,w1,w1+.3));
+  place(pc,CVz[0]-410+570+kr*150,CVz[1]-590+200+row*150-50+6*Math.sin(t*40),18);
+  place($('B'),BP[0],BP[1]);
+  // color: frío del sábado al giro 2 (el rojo solo en el 7); blanco y azul desde el giro 2
+  const g=$('gr');g.style.background='#d9e3f0';
+  g.style.opacity=t<CUT2?.5*r(t,T.sabado-.6,T.sabado-.1):0;
+  $('hook').style.opacity=t<10?1-r(t,T.sale-.35,T.sale-.05):r(t,T.porque+.6,T.porque+1.0);
+  // rótulo
+  let html='',a=0;for(const [s,e,h] of CAPS)if(t>=s-.2&&t<e+.25){const aa=Math.min(r(t,s-.2,s+.15),1-r(t,e-.05,e+.25));if(aa>=a&&(aa>0||!html)){html=h;a=aa}}
+  const cp=$('cap');if(cp.dataset.h!==html){cp.innerHTML=html;cp.dataset.h=html}
+  cp.style.opacity=a;cp.style.transform=`translateY(${(1-a)*12}px)`;
+  // giros: fundido a negro antes de «Al que no sale…»; de negro a blanco en «Antes del partido»
+  $('ink').style.opacity=Math.max(r(t,CUT1-.35,CUT1-.03)*(1-r(t,CUT1+.03,CUT1+.45)), r(t,CUT2-.3,CUT2-.03)*(1-r(t,CUT2+.03,CUT2+.5)));
+};
+T.jugado=at('jugado');T.entra=at('entra');
+document.fonts.ready.then(()=>{frame(0);window.ready=true});
+</script></body></html>

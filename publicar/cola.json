@@ -67,5 +67,22 @@
    "status": "no"
   },
   "added": "2026-11-23T08:33:44.101096+01:00"
+ },
+ {
+  "id": "T09-2-r1",
+  "kind": "reel",
+  "files": [
+   "publicar/media/T09-2-r1-1.mp4",
+   "publicar/media/T09-2-r1-2.jpg"
+  ],
+  "caption": "Si alguien de tu banquillo entra en el minuto 53, le has dejado siete minutos para todo un partido.\n\nNadie lo decide. Vas ganando, no tocas lo que funciona, y al que no sale no lo ve nadie. Antes del partido, apunta junto a cada dorsal los minutos mínimos. En el descanso, rodea al que siga en cero. Ese entra el primero.\n\n(Escena de ejemplo: marcador y dorsales no son de ningún equipo.)\n\n¿Cuántos minutos jugó tu último del banquillo el sábado?",
+  "state": "revisión",
+  "ig": {
+   "status": "pendiente"
+  },
+  "tiktok": {
+   "status": "pendiente"
+  },
+  "added": "2026-11-23T08:35:05.809926+01:00"
  }
 ]
