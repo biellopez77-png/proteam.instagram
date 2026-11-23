@@ -45,7 +45,7 @@ Lista viva. **Cada tema tiene muchas ideas; cada idea da 3 reels; cada reel llev
 ## T03 · Carga y fatiga (RPE)
 1. E · Una pregunta del 1 al 10 (B2) · baloncesto [hecha → T03-1-r1, r2, r3 · Dani A · fuentes: Foster et al. 2001, JSCR 15(1); Haddad et al. 2017, Front. Neurosci. 11:612]
 2. H · El tercer cuarto se gana el jueves · baloncesto [hecha → T03-2-r1, r2, r3 · Dani B · fuente del método: Foster et al. 2001, JSCR 15(1)]
-3. D · El RPE de sesión: de dónde sale (Foster, 2001) · general
+3. D · El RPE de sesión: de dónde sale (Foster, 2001) · general [hecha → T03-3-r1, r2, r3 · Dani A · 23/11 · fuentes: Foster et al. 2001, JSCR 15(1):109-115 (PubMed 11708692, resumen releído: comparado con un patrón de frecuencia cardiaca en bici y entrenos de baloncesto; «valid method… during a wide variety of types of exercise»); Haddad et al. 2017, Front. Neurosci. 11:612 (fórmula RPE × min en unidades arbitrarias; no se pudo releer en este turno: cotejar antes de montar). r1 baloncesto (el origen: la pregunta contra el pulsómetro), r2 fútbol (dos sietes: el número sin minutos engaña), r3 balonmano (las unidades arbitrarias no se comparan entre equipos). Sin fuente y no se usa: minutos de espera para preguntar, monotonía y tensión]
 4. E · El jugador que siempre dice «7» · general [hecha → T03-4-r1, r2, r3 · Dani B · 23/11 · sin hechos externos: escenas en segunda persona (r1 fútbol: el corro y el primero que contesta; r2 baloncesto: un jugador sin anclas en la escala; r3 balonmano: el 7 como nota de examen). No se nombra método ni estudio; no se pudo recotejar Haddad et al. 2017 en este turno]
 5. E · Semana de carga vs semana de descarga: cómo se ve en una gráfica · fútbol
 6. H · Lesiones en enero: el patrón que se repite en base · fútbol
