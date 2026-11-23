@@ -1,0 +1,435 @@
+<title>Onboarding ProTeam</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap">
+<style>
+/* Maqueta: /onboarding, la puerta del 28/11. Una sola columna de papel, tinta y un azul; el lápiz marca el camino y los huecos. */
+:root{
+  --paper:#ffffff; --paper-2:#f6f6f3; --ink:#0d0f14; --ink-2:#4a4f5a; --pencil:#8b8f97; --line:#e3e3de;
+  --blue:#2f6bff; --blue-soft:#e9efff; --blue-ink:#1d4fd8; --warn:#b4231b; --warn-soft:#fbecea; --amber:#8a5a00; --amber-soft:#fbf3e2;
+  --stage:#ecebe6;
+  --display:"Instrument Serif", Georgia, "Times New Roman", serif;
+  --body:"Manrope", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --r:14px;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#12151c; --paper-2:#171b23; --ink:#f2f1ec; --ink-2:#b9bcc4; --pencil:#8d929c; --line:#2a2f3a;
+  --blue:#5b8bff; --blue-soft:#1b2540; --blue-ink:#8eb0ff; --warn:#ff8a80; --warn-soft:#3a1d1c; --amber:#f0c060; --amber-soft:#33290f; --stage:#0b0d12; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#12151c; --paper-2:#171b23; --ink:#f2f1ec; --ink-2:#b9bcc4; --pencil:#8d929c; --line:#2a2f3a;
+  --blue:#5b8bff; --blue-soft:#1b2540; --blue-ink:#8eb0ff; --warn:#ff8a80; --warn-soft:#3a1d1c; --amber:#f0c060; --amber-soft:#33290f; --stage:#0b0d12; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--stage);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.55;-webkit-font-smoothing:antialiased}
+button,input,select{font:inherit;color:inherit}
+button{cursor:pointer}
+:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
+@media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}}
+
+/* Barra de control */
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--paper)}
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--paper);border-bottom:1px solid var(--line);
+  padding-block:10px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.bar-in{max-width:1180px;margin:0 auto;display:flex;flex-wrap:wrap;gap:10px 18px;align-items:flex-end}
+.bar h1{font:400 22px/1 var(--display);margin:0 auto 4px 0;white-space:nowrap}
+.bar h1 i{color:var(--blue)}
+.ctl{display:flex;flex-direction:column;gap:3px;min-width:0}
+.ctl>span{font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--pencil);font-weight:700}
+.seg{display:flex;flex-wrap:wrap;gap:2px;background:var(--paper-2);border:1px solid var(--line);border-radius:9px;padding:2px}
+.seg button{border:0;background:transparent;padding:5px 10px;border-radius:7px;font-size:12.5px;font-weight:600;color:var(--ink-2)}
+.seg button[aria-pressed="true"]{background:var(--paper);color:var(--ink);box-shadow:0 1px 2px rgba(0,0,0,.08)}
+select.sel{font:600 12.5px var(--body);background:var(--paper-2);border:1px solid var(--line);border-radius:9px;padding:6px 8px;max-width:100%}
+.chk{display:flex;gap:6px;align-items:center;font-size:12.5px;font-weight:600;color:var(--ink-2);padding-bottom:5px}
+
+/* Lienzo */
+.stage{padding-block:28px 24px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.frame{margin:0 auto;background:var(--paper);border:1px solid var(--line);overflow:hidden;position:relative}
+.frame.mobile{max-width:375px;border-radius:34px;box-shadow:0 0 0 8px var(--ink),0 18px 50px rgba(0,0,0,.18);height:760px}
+.frame.desktop{max-width:1180px;border-radius:12px;box-shadow:0 18px 50px rgba(0,0,0,.10);height:760px}
+.urlbar{display:flex;align-items:center;gap:8px;padding:9px 14px;border-bottom:1px solid var(--line);font-size:12px;color:var(--pencil);background:var(--paper-2)}
+.urlbar b{font-weight:600;color:var(--ink-2)}
+.dots{display:flex;gap:5px}.dots i{width:9px;height:9px;border-radius:50%;background:var(--line)}
+.mobile .urlbar{display:none}
+.app{position:absolute;inset:0;overflow-y:auto}
+.desktop .app{top:37px}
+.scr{max-width:448px;margin:0 auto;padding:40px 20px 60px}
+.desktop .scr{padding-top:64px}
+.brand{font:800 15px var(--body);letter-spacing:-.01em;color:var(--ink-2);margin-bottom:26px}
+.brand i{color:var(--blue);font-style:normal}
+
+/* Propuesta resaltada */
+.show-prop [data-prop]{outline:1.5px dashed var(--blue);outline-offset:4px;border-radius:6px;position:relative}
+.show-prop [data-prop]::after{content:"Propuesta";position:absolute;top:-11px;right:6px;background:var(--blue);color:#fff;font:700 9.5px/1 var(--body);letter-spacing:.06em;text-transform:uppercase;padding:3px 6px;border-radius:4px;z-index:2;pointer-events:none}
+
+/* Tipos */
+.h1{font:400 42px/1 var(--display);margin:0;letter-spacing:-.01em}
+.stroke{display:block;width:150px;height:12px;margin-top:2px}
+.stroke path{fill:none;stroke:var(--blue);stroke-width:2.2;stroke-linecap:round;stroke-dasharray:180;stroke-dashoffset:180;animation:draw .9s .15s ease-in-out forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+.lead{margin:10px 0 0;color:var(--ink-2)}
+.h2{font:400 28px/1.1 var(--display);margin:0;text-wrap:balance}
+.eyebrow{font-size:11px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--pencil)}
+.muted{color:var(--ink-2);margin:4px 0 0;font-size:14px}
+.foot{font-size:12.5px;color:var(--pencil);margin:0}
+
+/* Botones */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:7px;border-radius:10px;padding:10px 16px;font-weight:700;font-size:14.5px;border:1px solid transparent;min-height:46px;width:100%}
+.btn svg{width:16px;height:16px;flex:none}
+.btn-p{background:var(--blue);color:#fff}
+.btn-p[disabled]{opacity:.45;cursor:not-allowed}
+.btn-o{background:var(--paper);border-color:var(--line);color:var(--ink)}
+.btn-g{background:transparent;color:var(--ink-2);min-height:44px;font-weight:600}
+.spin{width:15px;height:15px;border-radius:50%;border:2px solid rgba(255,255,255,.4);border-top-color:#fff;animation:sp .8s linear infinite}
+@keyframes sp{to{transform:rotate(360deg)}}
+
+/* Oferta */
+.offer{margin-top:26px;padding:18px 18px 16px;border:1.5px dashed var(--pencil);border-radius:4px;display:grid;gap:6px;transform:rotate(-.4deg);background:var(--paper)}
+.offer .big{font:400 34px/1 var(--display)}
+.offer .big em{color:var(--blue);font-style:italic}
+.offer p{margin:0;color:var(--ink-2);font-size:14px}
+.offer .when{font:italic 400 17px var(--display);color:var(--blue-ink)}
+.offer .btn{margin-top:8px}
+.skel{display:grid;gap:10px;margin-top:26px}
+.skel i{display:block;height:14px;border-radius:6px;background:var(--paper-2);animation:sh 1.1s ease-in-out infinite alternate}
+@keyframes sh{to{opacity:.4}}
+.soft{margin-top:22px;font-size:13px;color:var(--ink-2);background:var(--paper-2);border-radius:8px;padding:10px 12px}
+
+/* Opciones */
+.opts{margin-top:28px;border-top:1px solid var(--line)}
+.opt{display:grid;grid-template-columns:36px 1fr 16px;gap:14px;align-items:center;width:100%;text-align:left;background:none;border:0;border-bottom:1px solid var(--line);padding:16px 2px}
+.opt:hover .t{color:var(--blue-ink)}
+.opt .ico{width:36px;height:36px;display:grid;place-items:center;color:var(--ink)}
+.opt svg{stroke:currentColor;fill:none;stroke-width:1.6}
+.opt .t{display:block;font-weight:800;font-size:15.5px}
+.opt .s{display:block;font-size:13.5px;color:var(--ink-2);margin-top:2px}
+.opt .chev{width:16px;height:16px;color:var(--pencil)}
+.linkb{display:block;margin:14px auto 0;background:none;border:0;color:var(--blue-ink);font-weight:700;font-size:14px;min-height:44px}
+
+/* Pasos a lápiz */
+.steps{display:flex;align-items:center;gap:8px;font-size:12px;font-weight:700;color:var(--pencil);margin:0 0 18px}
+.steps .on{color:var(--ink)}
+.steps .done{color:var(--blue-ink)}
+.steps svg{width:26px;height:8px;flex:none}
+.steps svg path{stroke:var(--pencil);stroke-width:1.4;fill:none;stroke-linecap:round}
+
+/* Deportes */
+.sports{margin-top:18px;border-top:1px solid var(--line)}
+.sport{display:grid;grid-template-columns:64px 1fr;gap:14px;align-items:center;width:100%;text-align:left;background:none;border:0;border-bottom:1px solid var(--line);padding:14px 2px}
+.sport:hover b{color:var(--blue-ink)}
+.sport b{display:block;font-size:16px;font-weight:800}
+.sport span{display:block;font-size:13.5px;color:var(--ink-2)}
+.court{width:64px;height:44px;display:grid;place-items:center}
+.court svg{max-width:64px;max-height:44px}
+.court rect,.court line,.court circle,.court path{fill:none;stroke:var(--ink-2);stroke-width:1.2}
+
+/* Formularios */
+.panel{margin-top:22px;display:grid;gap:16px}
+.chip{display:flex;align-items:center;justify-content:space-between;gap:10px;background:var(--paper-2);border-radius:10px;padding:10px 12px;font-size:14px;font-weight:600}
+.chip button{border:0;background:none;color:var(--blue-ink);font-weight:700;font-size:14px;min-height:36px}
+label.f{display:grid;gap:5px}
+label.f>span{font-size:13.5px;font-weight:700}
+label.f small{font-weight:500;color:var(--pencil)}
+.inp{width:100%;min-height:46px;border:1px solid var(--line);border-radius:10px;padding:10px 12px;background:var(--paper);font-size:15px}
+.inp:focus{outline:2px solid var(--blue);outline-offset:0;border-color:transparent}
+.inp.bad{border-color:var(--warn)}
+.inp.code{text-align:center;letter-spacing:.14em;font-weight:800;font-size:18px;text-transform:uppercase}
+.fe{font-size:13px;color:var(--warn);margin:-2px 0 0}
+.alert{display:grid;gap:2px;background:var(--warn-soft);color:var(--warn);border-radius:10px;padding:11px 13px;font-size:13.5px}
+.alert b{font-weight:800}
+.team{border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.team b{font-size:16px}
+.team p{margin:2px 0 0;color:var(--ink-2);font-size:13.5px}
+.roles{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.roles button{min-height:44px;border:1px solid var(--line);border-radius:10px;background:var(--paper);font-weight:700;font-size:14px}
+.roles button[aria-pressed="true"]{border-color:var(--blue);background:var(--blue-soft);color:var(--blue-ink)}
+.legend{font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--pencil);margin-bottom:6px}
+
+/* Éxito */
+.done{text-align:center;display:grid;gap:14px;justify-items:center;margin-top:8px}
+.bigcode{font:800 26px/1 var(--body);letter-spacing:.12em;padding:6px 4px 10px;position:relative;word-break:break-all}
+.bigcode svg{position:absolute;left:0;right:0;bottom:0;width:100%;height:8px}
+.bigcode path{stroke:var(--blue);stroke-width:2;fill:none;stroke-linecap:round}
+.trial{font:italic 400 18px var(--display);color:var(--ink-2)}
+
+/* Toast */
+.toast{position:absolute;left:50%;bottom:24px;transform:translateX(-50%);background:var(--ink);color:var(--paper);font-size:13.5px;font-weight:600;padding:10px 14px;border-radius:10px;max-width:calc(100% - 32px);z-index:5;box-shadow:0 8px 24px rgba(0,0,0,.2)}
+
+/* Versión actual (hoy), para comparar */
+.now .scr{padding-top:48px}
+.now .h1{font:800 30px/1.1 var(--body)}
+.now .card{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:20px}
+.now .nowopt{display:flex;gap:16px;align-items:flex-start;width:100%;text-align:left;background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:20px;margin-top:12px}
+.now .sq{width:40px;height:40px;border-radius:12px;background:var(--blue);display:grid;place-items:center;flex:none}
+.now .sq svg{width:20px;height:20px;stroke:#fff;fill:none;stroke-width:1.8}
+.now .nowopt b{display:block;font-weight:800}
+.now .nowopt span{display:block;font-size:13.5px;color:var(--ink-2);margin-top:2px}
+.now .gift{margin-top:24px;border-block:1px solid var(--blue);background:var(--blue-soft);padding:20px 16px}
+.cat{background:var(--amber-soft);color:var(--amber);border-radius:4px;padding:0 3px}
+
+/* Notas */
+.sec{padding-block:6px 48px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.wrap{max-width:1180px;margin:0 auto}
+.sec h2{font:400 30px/1.1 var(--display);margin:0 0 14px}
+.sec h2 em{color:var(--blue)}
+.notes{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:16px}
+.note{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:18px 20px;min-width:0}
+.note h3{margin:0 0 8px;font-size:14px;font-weight:800}
+.note ul{margin:0;padding-left:18px;display:grid;gap:6px;font-size:13.5px;color:var(--ink-2)}
+code{font-size:12.5px;background:var(--paper-2);padding:1px 4px;border-radius:4px;word-break:break-word}
+</style>
+
+<header class="bar"><div class="bar-in">
+  <h1>Onboarding <i>· la puerta del 28/11</i></h1>
+  <div class="ctl"><span>Vista</span><div class="seg" id="v-view"><button data-v="mobile" aria-pressed="true">Móvil 375</button><button data-v="desktop">Escritorio</button></div></div>
+  <div class="ctl"><span>Versión</span><div class="seg" id="v-ver"><button data-v="new" aria-pressed="true">Propuesta</button><button data-v="now">Actual (hoy)</button></div></div>
+  <div class="ctl"><span>Cuándo llega</span><div class="seg" id="v-date"><button data-v="wait" aria-pressed="true">Antes del 27/11 23:59</button><button data-v="open">Desde el 28/11</button></div></div>
+  <div class="ctl"><span>Quién</span><div class="seg" id="v-who"><button data-v="first" aria-pressed="true">Primer equipo</button><button data-v="has">Ya tiene equipo</button></div></div>
+  <div class="ctl"><label class="ctl" for="v-sim"><span>Simular</span></label>
+    <select class="sel" id="v-sim">
+      <option value="ok" selected>Todo bien</option>
+      <option value="slow">Carga lenta</option>
+      <option value="error">Error del servidor</option>
+      <option value="badcode">Código no válido</option>
+      <option value="approval">Unirse pide aprobación</option>
+    </select></div>
+  <label class="chk" for="v-prop"><input type="checkbox" id="v-prop" checked> Marcar lo propuesto</label>
+</div></header>
+
+<div class="stage"><div class="frame mobile" id="frame">
+  <div class="urlbar"><span class="dots"><i></i><i></i><i></i></span><b>proteam.app</b>/onboarding</div>
+  <div class="app" id="app"></div>
+</div></div>
+
+<section class="sec"><div class="wrap">
+  <h2>Lo que hay que saber <em>antes de mirar</em></h2>
+  <div class="notes">
+    <div class="note"><h3>Por qué ahora</h3><ul>
+      <li>Todo entrenador nuevo pasa por aquí el 28/11: sin equipo no se entra en la app.</li>
+      <li>Cambia «Cuándo llega» a «Desde el 28/11» con «Actual (hoy)»: el bloque sigue diciendo «3 meses gratis», pero la base de datos ya da 1 mes a quien crea su primer equipo después del 27/11 a las 23:59.</li>
+      <li>En «Actual (hoy)», lo marcado en ámbar sale en catalán a un entrenador en español: el deporte, la modalidad, el formulario, el éxito y «Handbol».</li>
+    </ul></div>
+    <div class="note"><h3>Confirmado / propuesto</h3><ul>
+      <li><b>Confirmado</b> (código y migración del 18/11): 3 meses desde el 28/11 para el primer equipo creado antes del 27/11 23:59; 1 mes de prueba después; las 4 vías (oferta, unirse, crear, canjear) y sus funciones de servidor; la fecha de fin de prueba que ya devuelve <code>createTeam</code>.</li>
+      <li><b>Propuesto</b> (marcado en azul): textos en español, oferta según la fecha, pasos a lápiz, campos con ayuda, errores dentro del formulario, «Copiar código» y la fecha de fin de prueba en el éxito.</li>
+      <li><b>Fuera a propósito:</b> precio, tarjeta, Club Fundador y número de apuntados. Esta pantalla solo abre la puerta.</li>
+    </ul></div>
+  </div>
+</div></section>
+
+<script>
+const S={view:"mobile",ver:"new",date:"wait",who:"first",sim:"ok",prop:true,
+  step:"menu",sport:null,summary:"ok",code:"",preview:false,role:null,pending:false,busy:false,err:null,
+  form:{name:"",category:"",season:"2026-27"},touched:false,created:null,act:{code:"",name:"",category:"",season:"2026-27"},toast:null};
+const N=()=>S.ver==="new";
+const P=()=>N()?"data-prop":"";
+const cat=t=>`<span class="cat">${t}</span>`;
+const SP={
+  football:{n:"Fútbol",d:"Campo de 105 × 68 m, dos partes de 45' y once jugadores.",w:105,h:68,var:true},
+  basketball:{n:"Baloncesto",d:"Cancha de 28 × 15 m, cuatro cuartos de 10' y cinco jugadores.",w:28,h:15},
+  handball:{n:"Balonmano",nNow:"Handbol",d:"Pista de 40 × 20 m, dos partes y siete jugadores en pista.",dNow:"Pista de 40 × 20 m, dues parts i set jugadors a pista.",w:40,h:20},
+  football7:{n:"Fútbol 7",d:"Campo de 65 × 45 m, siete jugadores y partes configurables.",w:65,h:45}
+};
+function court(k,W=60){const s=SP[k],H=Math.round(W*s.h/s.w);
+  return `<svg viewBox="-1 -1 ${W+2} ${H+2}" width="${W}" height="${H}" aria-hidden="true"><rect x="0" y="0" width="${W}" height="${H}" rx="1"/><line x1="${W/2}" y1="0" x2="${W/2}" y2="${H}"/><circle cx="${W/2}" cy="${H/2}" r="${Math.min(5,H/4)}"/>${k==="basketball"?`<path d="M0 ${H/2-5} a6 6 0 0 1 0 10 M${W} ${H/2-5} a6 6 0 0 0 0 10"/>`:k==="handball"?`<path d="M0 ${H/2-9} a9 9 0 0 1 0 18 M${W} ${H/2-9} a9 9 0 0 0 0 18"/>`:`<rect x="0" y="${H/2-H/5}" width="${W/9}" height="${H*2/5}"/><rect x="${W-W/9}" y="${H/2-H/5}" width="${W/9}" height="${H*2/5}"/>`}</svg>`;}
+const ICO={
+  key:'<circle cx="8" cy="15" r="4"/><path d="M11 12l9-9M17 6l3 3M14 9l2 2"/>',
+  board:'<rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4V3h6v1M9 10h6M9 14h6M9 18h3"/>',
+  chev:'<path d="M6 3l5 5-5 5"/>'};
+const svg=(k,cls="",vb="0 0 24 24")=>`<svg class="${cls}" viewBox="${vb}" aria-hidden="true">${ICO[k]}</svg>`;
+const stroke=`<svg class="stroke" viewBox="0 0 150 12" aria-hidden="true"><path d="M2 8 C 30 3, 70 10, 100 5 S 140 6, 148 4"/></svg>`;
+const pencilLine=`<svg viewBox="0 0 26 8" aria-hidden="true"><path d="M1 5 C 8 2, 16 7, 25 3"/></svg>`;
+const eligible=()=>S.who==="first";
+const offer3=()=>S.date==="wait";
+const trialEnd=()=>offer3()?"28 de febrero de 2027":"28 de diciembre de 2026";
+
+/* ---------- Propuesta ---------- */
+function steps(cur){
+  const list=SP[S.sport]?.var||S.step==="variant"||(S.sport==="football7")?["Deporte","Modalidad","Datos"]:["Deporte","Datos"];
+  const idx=list.indexOf(cur);
+  return `<div class="steps" ${P()} aria-label="Paso ${idx+1} de ${list.length}">${list.map((l,i)=>`<span class="${i<idx?"done":i===idx?"on":""}">${l}</span>`).join(pencilLine)}</div>`;
+}
+function offerBlock(){
+  if(!eligible()) return "";
+  if(S.summary==="loading") return `<div class="skel" ${P()} aria-label="Cargando"><i style="width:40%"></i><i style="width:70%"></i><i style="width:55%"></i></div>`;
+  if(S.summary==="error") return `<p class="soft" ${P()} role="status">No hemos podido comprobar tu oferta ahora. Puedes crear el equipo igualmente: la oferta se aplica sola al crearlo.</p>`;
+  const b=offer3()
+    ?`<span class="eyebrow">Para tu primer equipo</span><div class="big"><em>3 meses</em> gratis</div><p>Crea tu primer equipo y disfruta de acceso completo durante tres meses, sin pagar al crearlo.</p><span class="when" ${P()}>Cuentan desde el 28 de noviembre.</span>`
+    :`<span class="eyebrow">Para tu primer equipo</span><div class="big" ${P()}><em>1 mes</em> gratis</div><p ${P()}>Crea tu primer equipo y prueba la app completa durante un mes, sin pagar al crearlo.</p>`;
+  return `<div class="offer">${b}${S.step==="menu"?`<button class="btn btn-p" data-go="sport">Crear mi primer equipo</button>`:""}</div>`;
+}
+function menuNew(){
+  return `<h1 class="h1" ${P()}>Empezamos</h1>${stroke}
+  <p class="lead">Para entrar en la app necesitas formar parte de un equipo.</p>
+  ${offerBlock()}
+  <div class="opts">
+    <button class="opt" data-go="code"><span class="ico">${svg("key")}</span><span><span class="t">Unirme con código</span><span class="s">Introduce el código que te ha dado tu club o entrenador. Si requiere aprobación, la revisarán.</span></span>${svg("chev","chev","0 0 16 16")}</button>
+    <button class="opt" data-go="sport"><span class="ico">${svg("board")}</span><span><span class="t">Crear equipo</span><span class="s">Crea tu equipo, invita a los jugadores y elige después el plan mensual o anual.</span></span>${svg("chev","chev","0 0 16 16")}</button>
+  </div>
+  <button class="linkb" data-go="activation">Canjear código de activación</button>`;
+}
+function sportNew(){
+  return `${steps("Deporte")}<h2 class="h2" ${P()}>¿Qué deporte practica tu equipo?</h2>
+  <p class="muted">Elige el deporte antes de crear el equipo. Podrás cambiarlo después desde la configuración.</p>
+  <div class="sports">${["football","basketball","handball"].map(k=>`<button class="sport" data-sport="${k}"><span class="court">${court(k)}</span><span><b>${SP[k].n}</b><span>${SP[k].d}</span></span></button>`).join("")}</div>
+  <button class="btn btn-g" data-go="menu" style="margin-top:10px">Volver</button>`;
+}
+function variantNew(){
+  return `${steps("Modalidad")}<h2 class="h2" ${P()}>¿Qué modalidad juega el equipo?</h2>
+  <p class="muted">La modalidad define el campo, las posiciones, las alineaciones y las estadísticas de todo el equipo.</p>
+  <div class="sports">${["football","football7"].map(k=>`<button class="sport" data-variant="${k}"><span class="court">${court(k)}</span><span><b>${SP[k].n}</b><span>${SP[k].d}</span></span></button>`).join("")}</div>
+  <button class="btn btn-g" data-go="sport" style="margin-top:10px">Volver</button>`;
+}
+function fieldsErr(){const f=S.form,e={};if(!f.name.trim())e.name="Escribe el nombre del equipo.";if(!/^\d{4}-\d{2}$/.test(f.season.trim()))e.season="Escribe la temporada como 2026-27.";return e;}
+function createNew(){
+  if(S.created) return successNew();
+  const e=S.touched?fieldsErr():{};const f=S.form;
+  return `${steps("Datos")}<h2 class="h2">Crear equipo</h2>
+  <form class="panel" id="fc" novalidate>
+    <div class="chip"><span style="display:flex;gap:10px;align-items:center"><span class="court" style="width:36px;height:26px">${court(S.sport||"football",34)}</span>${SP[S.sport||"football"].n}</span><button type="button" data-go="sport">Cambiar</button></div>
+    <label class="f" for="c-name"><span>Nombre del equipo</span><input class="inp ${e.name?"bad":""}" id="c-name" value="${esc(f.name)}" placeholder="Alevín B" autocomplete="off" aria-invalid="${!!e.name}"></label>${e.name?`<p class="fe" ${P()}>${e.name}</p>`:""}
+    <label class="f" for="c-cat"><span>Categoría <small>· opcional</small></span><input class="inp" id="c-cat" value="${esc(f.category)}" placeholder="Cadete, Juvenil…" autocomplete="off"></label>
+    <label class="f" for="c-season"><span>Temporada</span><input class="inp ${e.season?"bad":""}" id="c-season" value="${esc(f.season)}" inputmode="numeric" aria-invalid="${!!e.season}"></label>${e.season?`<p class="fe" ${P()}>${e.season}</p>`:""}
+    ${S.err?`<div class="alert" role="alert" ${P()}><b>No se ha podido crear el equipo.</b>Revisa tu conexión y vuelve a intentarlo; no se ha guardado nada.</div>`:""}
+    <button class="btn btn-p" type="submit" ${S.busy?"disabled":""}>${S.busy?`<span class="spin"></span>Creando…`:"Crear equipo"}</button>
+    <button class="btn btn-g" type="button" data-go="menu">Volver</button>
+  </form>`;
+}
+function successNew(){
+  const code=S.created;
+  return `<div class="done">
+    <span class="eyebrow">${esc(S.form.name)} · ${SP[S.sport].n}</span>
+    <h2 class="h1" style="font-size:38px">Equipo creado</h2>
+    <p class="muted" style="margin:0">Comparte este código con tus jugadores:</p>
+    <div class="bigcode">${code}<svg viewBox="0 0 200 8" preserveAspectRatio="none" aria-hidden="true"><path d="M2 5 C 50 2, 120 7, 198 3"/></svg></div>
+    <button class="btn btn-o" data-copy style="width:auto" ${P()}>Copiar código</button>
+    ${eligible()?`<p class="trial" ${P()}>Tu prueba gratis dura hasta el ${trialEnd()}.</p>`:""}
+    <button class="btn btn-p" data-toast="Entrando en el panel…">Entrar al panel</button>
+    <p class="foot">Podrás ver el código cuando quieras en Configuración → Equipo.</p>
+  </div>`;
+}
+function codeNew(){
+  if(S.pending) return `<div class="done" style="text-align:left;justify-items:start">
+    <h2 class="h2">Solicitud enviada</h2><p class="muted">El equipo revisará tu solicitud. Cuando la aprueben podrás entrar desde «Mis equipos».</p>
+    <button class="btn btn-p" data-toast="Abriendo Mis equipos…">Ir a mis equipos</button><button class="btn btn-g" data-reset>Volver</button></div>`;
+  const ok=S.code.replace(/\s/g,"").length>=4;
+  return `<h2 class="h2">Código de equipo</h2>
+  <p class="muted" ${P()}>Lo encuentras en el mensaje que te ha enviado tu club o tu entrenador.</p>
+  <form class="panel" id="fj" novalidate>
+    <label class="f" for="j-code"><span class="eyebrow" style="font-size:10.5px">Código</span><input class="inp code" id="j-code" value="${esc(S.code)}" placeholder="ALEVINB-4F7A21C9" autocomplete="off" aria-label="Código de equipo"></label>
+    ${S.err?`<div class="alert" role="alert" ${P()}><b>${S.err}</b>${S.err.startsWith("Este código")?"Revisa las letras y los números o pide el código otra vez.":"Vuelve a intentarlo en un momento."}</div>`:""}
+    ${S.preview?`<div class="team"><b>Infantil A</b><p>Fútbol · Infantil · 2026-27</p></div>
+      <fieldset style="border:0;padding:0;margin:0"><legend class="legend">Entro como</legend><div class="roles">${[["player","Jugador"],["head_coach","Entrenador"],["assistant_coach","Asistente"],["delegate","Delegado"]].map(([r,l])=>`<button type="button" data-role="${r}" aria-pressed="${S.role===r}" ${r==="assistant_coach"?P():""}>${l}</button>`).join("")}</div></fieldset>
+      <button class="btn btn-p" type="button" data-join ${S.busy||!S.role?"disabled":""}>${S.busy?`<span class="spin"></span>Entrando…`:"Entrar en el equipo"}</button>`
+      :`<button class="btn btn-p" type="submit" ${S.busy||!ok?"disabled":""}>${S.busy?`<span class="spin"></span>Comprobando…`:"Comprobar código"}</button>
+      ${!ok?`<p class="foot" ${P()}>Escribe al menos 4 caracteres para comprobarlo.</p>`:""}`}
+    <button class="btn btn-g" type="button" data-reset>Volver</button>
+  </form>`;
+}
+function activationNew(){
+  const a=S.act;
+  return `<h2 class="h2">Canjear código de activación</h2>
+  <p class="muted" ${P()}>Si tu club te ha dado un código de licencia, escríbelo aquí.</p>
+  <form class="panel" id="fa" novalidate>
+    <label class="f" for="a-code"><span>Código</span><input class="inp code" id="a-code" value="${esc(a.code)}" placeholder="PT-XXXX-XXXX-XXXX" autocomplete="off"></label>
+    <label class="f" for="a-name"><span>Nombre del equipo, si el código permite crearlo</span><input class="inp" id="a-name" value="${esc(a.name)}" autocomplete="off"></label>
+    <label class="f" for="a-cat"><span>Categoría</span><input class="inp" id="a-cat" value="${esc(a.category)}" autocomplete="off"></label>
+    <label class="f" for="a-season"><span>Temporada</span><input class="inp" id="a-season" value="${esc(a.season)}"></label>
+    ${S.err?`<div class="alert" role="alert" ${P()}><b>No se ha podido validar el código.</b>Revisa que esté bien escrito; si sigue fallando, pide uno nuevo a tu club.</div>`:""}
+    <button class="btn btn-p" type="submit" ${S.busy?"disabled":""}>${S.busy?`<span class="spin"></span>Validando…`:"Activar licencia"}</button>
+    <button class="btn btn-g" type="button" data-go="menu">Volver</button>
+  </form>`;
+}
+
+/* ---------- Actual (hoy) ---------- */
+function nowScreen(){
+  const head=`<h1 class="h1">Empezamos</h1><p class="muted">Para entrar en la app necesitas formar parte de un equipo.</p>`;
+  const gift=eligible()&&S.summary==="ok"?`<div class="gift"><b>3 meses gratis para tu primer equipo</b><p class="muted">Crea tu primer equipo y disfruta de acceso completo durante tres meses, sin pagar al crearlo.</p>${S.step==="menu"?`<button class="btn btn-p" data-go="sport" style="margin-top:14px">Crear mi primer equipo</button>`:""}</div>`:"";
+  let body="";
+  if(S.step==="menu") body=`<div style="margin-top:28px"><button class="nowopt" data-go="code"><span class="sq">${svg("key")}</span><span><b>Unirme con código</b><span>Introduce el código que te ha dado tu club o entrenador. Si requiere aprobación, la revisarán.</span></span></button>
+    <button class="nowopt" data-go="sport"><span class="sq">${svg("board")}</span><span><b>Crear equipo</b><span>Crea tu equipo, invita a los jugadores y elige después el plan mensual o anual.</span></span></button>
+    <button class="linkb" data-go="activation">Canjear código de activación</button></div>`;
+  if(S.step==="sport") body=`<div style="margin-top:28px"><b style="font-size:18px">${cat("Quin esport practica el teu equip?")}</b><p class="muted">${cat("Tria l'esport abans de crear l'equip. Podràs canviar-ho després des de la configuració.")}</p>
+    ${["football","basketball","handball"].map(k=>`<button class="nowopt" data-sport="${k}"><span class="sq"></span><span><b>${k==="handball"?cat(SP[k].nNow):SP[k].n}</b><span>${k==="handball"?cat(SP[k].dNow):SP[k].d}</span></span></button>`).join("")}
+    <button class="btn btn-g" data-go="menu">${cat("Tornar")}</button></div>`;
+  if(S.step==="variant") body=`<div style="margin-top:28px"><b style="font-size:18px">${cat("Quina modalitat juga l'equip?")}</b><p class="muted">${cat("La modalitat defineix el camp, les posicions, les alineacions i les estadístiques de tot l'equip.")}</p>
+    ${["football","football7"].map(k=>`<button class="nowopt" data-variant="${k}"><span class="sq"></span><span><b>${SP[k].n}</b><span>${SP[k].d}</span></span></button>`).join("")}
+    <button class="btn btn-g" data-go="sport">${cat("Tornar")}</button></div>`;
+  if(S.step==="create") body=S.created?`<div class="card" style="margin-top:28px;text-align:center;display:grid;gap:10px"><b style="font-size:18px">${cat("Equip creat")}</b><p class="muted">${cat("Comparteix aquest codi amb els teus jugadors:")}</p><b style="font-size:24px;letter-spacing:.12em">${S.created}</b><button class="btn btn-p" data-toast="Entrando en el panel…">${cat("Entrar al panell")}</button></div>`
+    :`<form class="card panel" id="fc" novalidate style="margin-top:28px"><b>${cat("Crear equip")}</b><div class="chip"><span>${S.sport==="handball"?cat("Handbol"):SP[S.sport||"football"].n}</span><button type="button" data-go="sport">${cat("Canviar")}</button></div>
+      <label class="f" for="c-name"><span>${cat("Nom de l'equip")}</span><input class="inp" id="c-name" value="${esc(S.form.name)}"></label>
+      <label class="f" for="c-cat"><span>${cat("Categoria")}</span><input class="inp" id="c-cat" value="${esc(S.form.category)}" placeholder="Cadet, Juvenil…"></label>
+      <label class="f" for="c-season"><span>${cat("Temporada")}</span><input class="inp" id="c-season" value="${esc(S.form.season)}"></label>
+      <button class="btn btn-p" type="submit" ${S.busy?"disabled":""}>${S.busy?cat("Creant…"):cat("Crear equip")}</button><button class="btn btn-g" type="button" data-go="menu">${cat("Tornar")}</button></form>`;
+  if(S.step==="code") body=S.pending?`<div class="card" style="margin-top:28px;text-align:center"><b>Solicitud enviada</b><p class="muted">El equipo revisará tu solicitud. Cuando la aprueben podrás entrar desde «Mis equipos».</p><button class="btn btn-p" data-toast="Abriendo Mis equipos…">Ir a mis equipos</button><button class="btn btn-g" data-reset>Volver</button></div>`
+    :`<form class="card panel" id="fj" style="margin-top:28px" novalidate><b>Código de equipo</b><input class="inp code" id="j-code" value="${esc(S.code)}" placeholder="EQUIP-XXXX" aria-label="Código de equipo">
+      ${S.preview?`<div class="team"><b>Infantil A</b><p>Fútbol · Infantil · 2026-27</p></div><div class="legend">Entro como</div><div class="roles">${[["player","Jugador"],["head_coach","Entrenador"],["assistant_coach","Assistent"],["delegate","Delegado"]].map(([r,l])=>`<button type="button" data-role="${r}" aria-pressed="${S.role===r}">${r==="assistant_coach"?cat(l):l}</button>`).join("")}</div><button class="btn btn-p" type="button" data-join ${!S.role||S.busy?"disabled":""}>${S.busy?"Entrando…":"Entrar en el equipo"}</button>`
+      :`<button class="btn btn-p" type="submit" ${S.busy||S.code.length<4?"disabled":""}>${S.busy?"Comprobando…":"Comprobar código"}</button>`}
+      <button class="btn btn-g" type="button" data-reset>Volver</button></form>`;
+  if(S.step==="activation") body=`<form class="card panel" id="fa" style="margin-top:28px" novalidate><b>Canjear código de activación</b>
+      <label class="f" for="a-code"><span>Código</span><input class="inp" id="a-code" value="${esc(S.act.code)}" placeholder="PT-XXXX-XXXX-XXXX"></label>
+      <label class="f" for="a-name"><span>Nombre del equipo, si el código permite crearlo</span><input class="inp" id="a-name" value="${esc(S.act.name)}"></label>
+      <label class="f" for="a-cat"><span>Categoría</span><input class="inp" id="a-cat" value="${esc(S.act.category)}"></label>
+      <label class="f" for="a-season"><span>Temporada</span><input class="inp" id="a-season" value="${esc(S.act.season)}"></label>
+      <button class="btn btn-p" type="submit" ${S.busy?"disabled":""}>${S.busy?"Validando…":"Activar licencia"}</button><button class="btn btn-g" type="button" data-go="menu">Volver</button></form>`;
+  return head+gift+body;
+}
+
+function page(){
+  const inner=N()?({menu:menuNew,sport:sportNew,variant:variantNew,create:createNew,code:codeNew,activation:activationNew}[S.step])():nowScreen();
+  return `<div class="scr"><div class="brand">Pro<i>Team</i></div>${inner}</div>${S.toast?`<div class="toast" role="status">${S.toast}</div>`:""}`;
+}
+function esc(s){return String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));}
+
+const app=document.getElementById("app"),frame=document.getElementById("frame");
+function render(){
+  const f=document.activeElement&&app.contains(document.activeElement)?document.activeElement.id:null;
+  frame.className="frame "+S.view+(S.prop&&N()?" show-prop":"")+(N()?"":" now");
+  app.innerHTML=page();
+  if(f){const el=document.getElementById(f);if(el&&el.tagName==="INPUT"){el.focus();const v=el.value;try{el.setSelectionRange(v.length,v.length);}catch(e){}}}
+}
+function toast(t){S.toast=t;render();clearTimeout(toast.t);toast.t=setTimeout(()=>{S.toast=null;render();},2600);}
+const delay=()=>S.sim==="slow"?2200:700;
+function loadSummary(){S.summary=S.sim==="slow"?"loading":S.sim==="error"?"error":"ok";render();if(S.sim==="slow")setTimeout(()=>{S.summary="ok";render();},1800);}
+function go(step){S.step=step;S.err=null;S.busy=false;if(step==="menu"){S.created=null;S.touched=false;}app.scrollTop=0;render();}
+
+app.addEventListener("click",e=>{
+  const g=e.target.closest("[data-go]");if(g){go(g.dataset.go);return;}
+  const sp=e.target.closest("[data-sport]");if(sp){S.sport=sp.dataset.sport;go(SP[S.sport].var?"variant":"create");return;}
+  const v=e.target.closest("[data-variant]");if(v){S.sport=v.dataset.variant;go("create");return;}
+  const r=e.target.closest("[data-role]");if(r){S.role=r.dataset.role;render();return;}
+  if(e.target.closest("[data-reset]")){S.code="";S.preview=false;S.role=null;S.pending=false;go("menu");return;}
+  if(e.target.closest("[data-join]")){S.busy=true;render();setTimeout(()=>{S.busy=false;
+      if(S.sim==="error"){S.err="No se ha podido entrar en el equipo.";toast(S.err);return;}
+      if(S.sim==="approval"){S.pending=true;render();return;}
+      toast("¡Ya estás en el equipo!");},delay());return;}
+  const c=e.target.closest("[data-copy]");if(c){const t=S.created;
+    const done=()=>toast("Código copiado");
+    try{navigator.clipboard.writeText(t).then(done,done);}catch(err){done();}return;}
+  const tt=e.target.closest("[data-toast]");if(tt){toast(tt.dataset.toast);}
+});
+app.addEventListener("input",e=>{const id=e.target.id,v=e.target.value;
+  if(id==="j-code"){S.code=v.toUpperCase();S.preview=false;S.role=null;S.err=null;const pos=e.target.selectionStart;render();const el=document.getElementById("j-code");if(el){el.focus();try{el.setSelectionRange(pos,pos);}catch(x){}}return;}
+  if(id==="c-name")S.form.name=v; if(id==="c-cat")S.form.category=v; if(id==="c-season")S.form.season=v;
+  if(id==="a-code")S.act.code=v.toUpperCase(); if(id==="a-name")S.act.name=v; if(id==="a-cat")S.act.category=v; if(id==="a-season")S.act.season=v;
+});
+app.addEventListener("submit",e=>{e.preventDefault();const id=e.target.id;
+  if(id==="fj"){S.busy=true;S.err=null;render();setTimeout(()=>{S.busy=false;
+      if(S.sim==="badcode"){S.err="Este código no es válido.";if(!N())toast(S.err);else render();return;}
+      if(S.sim==="error"){S.err="No hemos podido comprobar el código.";if(!N())toast("Error");else render();return;}
+      S.preview=true;S.role="player";render();},delay());}
+  if(id==="fc"){
+    if(N()){S.touched=true;if(Object.keys(fieldsErr()).length){render();return;}}
+    else if(!S.form.name.trim()){toast("Completa este campo.");return;}
+    S.busy=true;S.err=null;render();setTimeout(()=>{S.busy=false;
+      if(S.sim==="error"){if(N()){S.err=true;render();}else toast("No s'ha pogut crear l'equip.");return;}
+      const base=(S.form.name||"EQUIPO").normalize("NFD").replace(/[̀-ͯ]/g,"").replace(/[^a-z0-9]/gi,"").slice(0,12).toUpperCase();
+      S.created=base+"-4F7A21C9";toast(N()?"¡Equipo creado!":"¡Equipo creado!");},delay());}
+  if(id==="fa"){S.busy=true;S.err=null;render();setTimeout(()=>{S.busy=false;
+      if(S.sim==="error"||S.sim==="badcode"){if(N()){S.err=true;render();}else toast("No se ha podido validar el código.");return;}
+      toast("Licencia activada.");},delay());}
+});
+function seg(id,key,after){document.getElementById(id).addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;S[key]=b.dataset.v;[...e.currentTarget.children].forEach(x=>x.setAttribute("aria-pressed",x===b));if(after)after();render();});}
+seg("v-view","view");seg("v-ver","ver",()=>{S.err=null;S.busy=false;});seg("v-date","date");seg("v-who","who");
+document.getElementById("v-sim").addEventListener("change",e=>{S.sim=e.target.value;S.err=null;S.pending=false;S.preview=false;loadSummary();});
+document.getElementById("v-prop").addEventListener("change",e=>{S.prop=e.target.checked;render();});
+render();
+</script>
