@@ -179,7 +179,7 @@ Lista viva. **Cada tema tiene muchas ideas; cada idea da 3 reels; cada reel llev
 Rotación fija: un tema real de la semana por deporte (LaLiga, Champions, ACB, Euroliga, NBA, Asobal). Solo hechos con fuente y lección para la base. Las ideas se añaden aquí con fecha.
 
 ## T14 · Captación y ProTeam por dentro (C)
-1. C · «Lo que hace tu segundo con un papel, la app lo hace sola» (registro en directo)
+1. C · «Lo que hace tu segundo con un papel, la app lo hace sola» (registro en directo) [hecha → T14-1-r1, r2, r3 · Dani A · 23/11 · sin hechos externos: escenas en segunda persona (r1 fútbol, r2 baloncesto, r3 balonmano). Función nombrada solo en el CTA: registro de partidos en directo con estadística (MARCA.md); no se promete que la app apunte sola; la app no se enseña en pantalla]
 2. C · La semana preparada antes del lunes [hecha → T14-2-r1, r2, r3 · Dani B · 23/11 · sin hechos externos: escenas en segunda persona (r1 fútbol, r2 baloncesto, r3 balonmano). Funciones nombradas solo las de MARCA.md: planificación por temporada, bloques y semanas, sesiones, biblioteca de ejercicios; la app no se enseña en pantalla]
 3. C · Del partido al entreno del martes, en un toque
 4. C · Club Fundador: los primeros entrenadores deciden la app (solo lo aprobado en CLUB_FUNDADOR.md)
