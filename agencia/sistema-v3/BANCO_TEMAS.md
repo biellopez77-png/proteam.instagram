@@ -139,6 +139,11 @@ Lista viva. **Cada tema tiene muchas ideas; cada idea da 3 reels; cada reel llev
 8. E · Tu cuaderno de entrenador: qué guardar de verdad · general
 9. E · Tres cosas que tu yo de septiembre agradecería · general
 10. I · Cursos de entrenador: qué no te enseñan · general
+11. E · El entreno que se cae por lluvia: el plan B que cabe en un vestuario · fútbol [añadida 23/11 · Dani B]
+12. E · Hablar con los padres en dos minutos al acabar el partido: qué contar y qué no · general [añadida 23/11 · Dani B]
+13. E · Cuando tienes 18 en la lista y solo caben 12 en el acta: cómo lo cuentas · baloncesto [añadida 23/11 · Dani B]
+14. E · El segundo entrenador que no sabe qué hacer: darle un trabajo concreto en el partido · balonmano [añadida 23/11 · Dani B]
+15. E · Final de temporada: la hoja de una página que te ahorra empezar de cero en septiembre · general [añadida 23/11 · Dani B]
 
 ## T11 · Lesiones y prevención
 1. E · Calentamiento que sí previene (FIFA 11+, verificar) · fútbol [hecha → T11-1-r1, r2, r3 · Dani A · 23/11 · fuente: Soligard et al. 2008, BMJ 337:a2469 (PMC2600961); Physiopedia «FIFA 11+». Estudio con jugadoras de 13-17 años; el objetivo principal (lesiones de pierna) no fue significativo: solo se usan lesiones graves, por sobrecarga y en general]
@@ -157,7 +162,7 @@ Lista viva. **Cada tema tiene muchas ideas; cada idea da 3 reels; cada reel llev
 
 ## T12 · Psicología y competición
 1. E · La presión de los penaltis en base · fútbol
-2. H · El penalti que falló Baggio y lo que pasó después (verificar) · fútbol [en curso 2026-11-23 · Dani B]
+2. H · El penalti que falló Baggio y lo que pasó después (verificar) · fútbol [hecha → T12-2-r1, r2, r3 · Dani B · 23/11 · fuentes: ESPN, Ed Dove, «World Cup moments: Baggio's heartbreak, 1994», 8/5/2018 (final del 94, Baresi y Massaro, cita «Penalties are only missed by those who have the courage to take them»); DFB, centro de datos, Italia-Francia 3/7/1998 (Baggio, primer lanzador de Italia, gol; 3-4); Footy Almanac y TUDN (penalti contra Chile, 1998). Sin fuente y no se usa: número de su lanzamiento en el 94 y lesión]
 3. E · Rutina antes de un tiro libre · baloncesto
 4. E · El error que se repite por miedo · general
 5. I · Qué es la «mano caliente» y qué dicen los datos (verificar estudios) · baloncesto
