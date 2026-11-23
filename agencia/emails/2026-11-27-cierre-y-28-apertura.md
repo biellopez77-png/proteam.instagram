@@ -1,3 +1,5 @@
+> **SUSTITUIDO (Lucía, 23/11, relanzamiento v4):** el cierre del 27–28/11 se aplaza. La versión vigente es `2026-12-10-cierre-y-2026-12-11-apertura.md` (jue 10/12 y vie 11/12, por confirmar). No se envía nada de este archivo.
+
 # Emails del vie 27 (cierre de la lista) y del sáb 28 (apertura) · borrador
 
 **Lucía (07) · 23/11/2026 · tarea `exp-emails-27-28` (Biel, 22/11).** Sustituye en voz, no en condiciones, a `2026-11-28-dia0.md` (Laura, 18/11): mismas promesas, mismo botón, misma frase de la tarjeta. **Nada se envía ni se programa** hasta que Biel lo apruebe en la tarea `t-20261118-07-emails-27-28`.
