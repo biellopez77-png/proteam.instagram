@@ -135,5 +135,58 @@
    "status": "pendiente"
   },
   "added": "2026-11-23T10:02:48.397624+01:00"
+ },
+ {
+  "id": "d2-portera-carrusel",
+  "kind": "carrusel",
+  "files": [
+   "publicar/media/d2-portera-carrusel-1.jpg",
+   "publicar/media/d2-portera-carrusel-2.jpg",
+   "publicar/media/d2-portera-carrusel-3.jpg",
+   "publicar/media/d2-portera-carrusel-4.jpg",
+   "publicar/media/d2-portera-carrusel-5.jpg",
+   "publicar/media/d2-portera-carrusel-6.jpg"
+  ],
+  "caption": "Le marcaron veinte. Y fue su mejor partido.\n\nPerdéis de seis y en el vestuario nadie la mira. Tú ves el 20; ella también.\n\n1. Durante el partido, una raya por parada y otra por gol.\n2. Paradas ÷ tiros: 12 de 32 es un 37,5 %.\n3. Cada partido, el mismo cálculo, para poder compararlo.\n4. El lunes, se lo enseñas a ella antes que a nadie.\n\nGuárdalo y pásaselo a tu segundo.\n\nEscena y cifras de ejemplo (no es un partido real).\nFotos: Steffen Prößdorf (CC BY-SA 4.0)\n\nLa app de ProTeam, para entrenadores de fútbol, baloncesto y balonmano. Enlace en la bio.",
+  "state": "revisión",
+  "ig": {
+   "status": "pendiente"
+  },
+  "tiktok": {
+   "status": "no"
+  },
+  "added": "2026-11-23T10:34:31.063742+01:00"
+ },
+ {
+  "id": "d2-portera-story1",
+  "kind": "story",
+  "files": [
+   "publicar/media/d2-portera-story1.png"
+  ],
+  "caption": "¿Cuántos tiros paró tu portera el sábado?",
+  "state": "revisión",
+  "ig": {
+   "status": "pendiente"
+  },
+  "tiktok": {
+   "status": "no"
+  },
+  "added": "2026-11-23T10:34:31.099568+01:00"
+ },
+ {
+  "id": "d2-portera-story2",
+  "kind": "story",
+  "files": [
+   "publicar/media/d2-portera-story2.png"
+  ],
+  "caption": "¿Qué cuentas de tu portera?",
+  "state": "revisión",
+  "ig": {
+   "status": "pendiente"
+  },
+  "tiktok": {
+   "status": "no"
+  },
+  "added": "2026-11-23T10:34:31.130705+01:00"
  }
 ]
