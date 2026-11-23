@@ -1,0 +1,495 @@
+<title>Verificado con rayo</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap">
+<style>
+/* Maqueta en dos lados: la cola de /admin (quien verifica) y lo que ve el fundador cuando llega el rayo. */
+:root{
+  --paper:#ffffff; --paper-2:#f6f6f3; --ink:#0d0f14; --ink-2:#4a4f5a; --pencil:#8b8f97; --line:#e3e3de;
+  --blue:#2f6bff; --blue-soft:#e9efff; --blue-ink:#1d4fd8; --warn:#b4231b; --warn-soft:#fbecea; --amber:#8a5a00; --amber-soft:#fbf3e2;
+  --stage:#ecebe6; --scrim:rgba(13,15,20,.42);
+  --display:"Instrument Serif", Georgia, "Times New Roman", serif;
+  --body:"Manrope", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --r:14px;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#12151c; --paper-2:#171b23; --ink:#f2f1ec; --ink-2:#b9bcc4; --pencil:#8d929c; --line:#2a2f3a;
+  --blue:#5b8bff; --blue-soft:#1b2540; --blue-ink:#8eb0ff; --warn:#ff8a80; --warn-soft:#3a1d1c; --amber:#f0c060; --amber-soft:#33290f; --stage:#0b0d12; --scrim:rgba(0,0,0,.6); color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#12151c; --paper-2:#171b23; --ink:#f2f1ec; --ink-2:#b9bcc4; --pencil:#8d929c; --line:#2a2f3a;
+  --blue:#5b8bff; --blue-soft:#1b2540; --blue-ink:#8eb0ff; --warn:#ff8a80; --warn-soft:#3a1d1c; --amber:#f0c060; --amber-soft:#33290f; --stage:#0b0d12; --scrim:rgba(0,0,0,.6); color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--stage);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.55;-webkit-font-smoothing:antialiased}
+button,input,select{font:inherit;color:inherit}
+button{cursor:pointer}
+button:disabled{cursor:not-allowed}
+:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
+
+/* Barra de control */
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--paper)}
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--paper);border-bottom:1px solid var(--line);
+  padding-block:10px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.bar-in{max-width:1180px;margin:0 auto;display:flex;flex-wrap:wrap;gap:10px 18px;align-items:flex-end}
+.bar h1{font:400 22px/1 var(--display);margin:0 auto 4px 0;white-space:nowrap}
+.bar h1 i{color:var(--blue)}
+.ctl{display:flex;flex-direction:column;gap:3px;min-width:0}
+.ctl>span{font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--pencil);font-weight:700}
+.seg{display:flex;flex-wrap:wrap;gap:2px;background:var(--paper-2);border:1px solid var(--line);border-radius:9px;padding:2px}
+.seg button{border:0;background:transparent;padding:5px 10px;border-radius:7px;font-size:12.5px;font-weight:600;color:var(--ink-2)}
+.seg button[aria-pressed="true"]{background:var(--paper);color:var(--ink);box-shadow:0 1px 2px rgba(0,0,0,.08)}
+select.sel{font:600 12.5px var(--body);background:var(--paper-2);border:1px solid var(--line);border-radius:9px;padding:6px 8px;max-width:100%}
+.chk{display:flex;gap:6px;align-items:center;font-size:12.5px;font-weight:600;color:var(--ink-2);padding-bottom:5px}
+
+/* Lienzo */
+.stage{padding-block:28px 24px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.frame{margin:0 auto;background:var(--paper);border:1px solid var(--line);overflow:hidden;position:relative}
+.frame.mobile{max-width:375px;border-radius:34px;box-shadow:0 0 0 8px var(--ink),0 18px 50px rgba(0,0,0,.18);height:760px}
+.frame.desktop{max-width:1180px;border-radius:12px;box-shadow:0 18px 50px rgba(0,0,0,.10);height:780px}
+.urlbar{display:flex;align-items:center;gap:8px;padding:9px 14px;border-bottom:1px solid var(--line);font-size:12px;color:var(--pencil);background:var(--paper-2)}
+.urlbar b{font-weight:600;color:var(--ink-2)}
+.dots{display:flex;gap:5px}.dots i{width:9px;height:9px;border-radius:50%;background:var(--line)}
+.mobile .urlbar{display:none}
+.scroll{position:absolute;inset:0;overflow-y:auto}
+.desktop .scroll{top:37px}
+
+/* Propuesta resaltada */
+.show-prop [data-prop]{outline:1.5px dashed var(--blue);outline-offset:4px;border-radius:6px;position:relative}
+.show-prop [data-prop]::after{content:"Propuesta";position:absolute;top:-11px;right:6px;background:var(--blue);color:#fff;font:700 9.5px/1 var(--body);letter-spacing:.06em;text-transform:uppercase;padding:3px 6px;border-radius:4px;z-index:2;pointer-events:none}
+
+/* Botones */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:7px;border-radius:10px;padding:9px 14px;font-weight:700;font-size:14px;border:1px solid transparent;min-height:42px;white-space:nowrap}
+.btn svg{width:16px;height:16px;flex:none}
+.btn-p{background:var(--blue);color:#fff}
+.btn-p:disabled{background:var(--line);color:var(--pencil)}
+.btn-o{background:var(--paper);border-color:var(--line);color:var(--ink)}
+.btn-g{background:transparent;color:var(--ink-2)}
+.btn-w{background:var(--paper);border-color:var(--line);color:var(--warn)}
+.btn-s{min-height:36px;padding:6px 11px;font-size:13px;border-radius:9px}
+
+/* ---------- ADMIN ---------- */
+.adm{max-width:980px;margin:0 auto;padding:20px 16px 60px}
+.desktop .adm{padding:32px 32px 60px}
+.adm-tabs{display:flex;gap:6px;overflow-x:auto;padding-bottom:4px;margin-bottom:16px;scrollbar-width:none}
+.adm-tabs span{flex:none;font-size:12.5px;font-weight:700;color:var(--pencil);border:1px solid var(--line);border-radius:999px;padding:5px 11px}
+.adm-tabs span.on{color:var(--ink);border-color:var(--ink)}
+.adm h2{font:400 30px/1.05 var(--display);margin:0;text-wrap:balance}
+.adm h2 em{color:var(--blue)}
+.mobile .adm h2 .dot{display:none}.mobile .adm h2 em{display:block}
+.adm .lead{margin:8px 0 0;color:var(--ink-2);font-size:14px;max-width:62ch}
+.rule{margin-top:14px;display:grid;gap:6px;font-size:13px;color:var(--ink-2);border-left:2px solid var(--ink);padding:2px 0 2px 12px}
+.rule b{color:var(--ink)}
+.filters{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:18px}
+.chip{border:1px solid var(--line);background:var(--paper);border-radius:999px;padding:6px 12px;font-size:13px;font-weight:700;color:var(--ink-2)}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.chip small{font-weight:600;opacity:.7;margin-left:3px}
+.search{flex:1;min-width:180px;display:flex;align-items:center;gap:6px;border:1px solid var(--line);border-radius:10px;padding:0 10px;background:var(--paper)}
+.search svg{width:15px;height:15px;color:var(--pencil);flex:none}
+.search input{border:0;outline:0;background:transparent;height:38px;min-width:0;flex:1;font-size:14px}
+.opts{display:flex;align-items:center;gap:8px;margin-top:12px;font-size:13px;color:var(--ink-2)}
+.sw{position:relative;width:36px;height:21px;flex:none}
+.sw input{position:absolute;opacity:0;inset:0;margin:0;cursor:pointer}
+.sw i{position:absolute;inset:0;border-radius:999px;background:var(--line);transition:background .2s}
+.sw i::after{content:"";position:absolute;left:3px;top:3px;width:15px;height:15px;border-radius:50%;background:#fff;transition:transform .2s}
+.sw input:checked+i{background:var(--blue)}
+.sw input:checked+i::after{transform:translateX(15px)}
+.list{margin-top:14px;display:grid;gap:10px}
+.row{border:1px solid var(--line);border-radius:var(--r);padding:14px;background:var(--paper);display:grid;gap:10px}
+.desktop .row{grid-template-columns:minmax(0,1.1fr) minmax(0,1fr) minmax(0,1.25fr);align-items:center}
+.who b{display:block;font-size:14.5px}
+.who small{display:block;color:var(--pencil);font-size:12.5px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.ig{display:flex;flex-direction:column;gap:3px;min-width:0}
+.ig a{color:var(--blue-ink);font-weight:700;text-decoration:none;display:inline-flex;align-items:center;gap:5px;font-size:14px}
+.ig a:hover{text-decoration:underline}
+.ig a svg{width:13px;height:13px}
+.clock{display:inline-flex;align-items:center;gap:5px;font-size:12px;font-weight:700;color:var(--ink-2)}
+.clock svg{width:13px;height:13px}
+.clock.soon{color:var(--amber)}
+.clock.gone{color:var(--warn)}
+.acts{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.desktop .acts{justify-content:flex-end}
+.pill{display:inline-flex;align-items:center;gap:5px;font-size:12px;font-weight:800;border-radius:999px;padding:3px 9px;background:var(--paper-2);color:var(--ink-2)}
+.pill svg{width:12px;height:12px}
+.pill.v{background:var(--blue-soft);color:var(--blue-ink)}
+.pill.r{background:var(--warn-soft);color:var(--warn)}
+.num{display:flex;gap:6px;align-items:center}
+.num input{width:64px;height:36px;border:1px solid var(--line);border-radius:9px;background:var(--paper);padding:0 8px;font-size:13px}
+.reject{grid-column:1/-1;border-top:1px dashed var(--line);padding-top:10px;display:grid;gap:8px}
+.reject p{margin:0;font-size:13px;font-weight:700}
+.reject label{display:flex;gap:8px;align-items:flex-start;font-size:13.5px;color:var(--ink-2)}
+.reject label input{margin-top:4px}
+.reject .acts{justify-content:flex-start}
+.undo{position:absolute;left:50%;bottom:18px;transform:translateX(-50%);background:var(--ink);color:var(--paper);font-size:13.5px;font-weight:600;padding:8px 8px 8px 14px;border-radius:12px;z-index:9;display:flex;gap:10px;align-items:center;box-shadow:0 8px 24px rgba(0,0,0,.2);width:max-content;max-width:calc(100% - 32px)}
+.undo button{border:0;background:transparent;color:var(--blue);font-weight:800;padding:6px 8px;border-radius:8px}
+.undo .bar-t{position:absolute;left:12px;right:12px;bottom:3px;height:2px;border-radius:2px;background:rgba(255,255,255,.18);overflow:hidden}
+.undo .bar-t i{display:block;height:100%;background:var(--blue);animation:shrink 5s linear forwards;transform-origin:left}
+@keyframes shrink{from{transform:scaleX(1)}to{transform:scaleX(0)}}
+.toast{position:absolute;left:50%;bottom:18px;transform:translateX(-50%);background:var(--ink);color:var(--paper);font-size:13px;font-weight:600;padding:10px 14px;border-radius:10px;z-index:9;max-width:calc(100% - 32px);text-align:center;box-shadow:0 8px 24px rgba(0,0,0,.2)}
+.toast.bad{background:var(--warn);color:#fff}
+.empty{border:1.5px dashed var(--pencil);border-radius:var(--r);padding:28px 18px;text-align:center;color:var(--ink-2);display:grid;gap:6px;justify-items:center}
+.empty h3{margin:0;font:400 24px/1.1 var(--display);color:var(--ink)}
+.empty p{margin:0;font-size:13.5px;max-width:42ch}
+.empty.err{border-color:var(--warn)}
+.empty.err h3{color:var(--warn)}
+.skel{height:76px;border-radius:var(--r);background:linear-gradient(90deg,var(--paper-2) 0,var(--line) 50%,var(--paper-2) 100%);background-size:200% 100%;animation:sk 1.2s ease-in-out infinite}
+@keyframes sk{to{background-position:-200% 0}}
+.old{border:1px solid var(--line);border-radius:10px;padding:14px;background:var(--paper)}
+.old h4{margin:0;font-size:15px}
+.old p{margin:6px 0 0;font-size:12px;color:var(--pencil)}
+.old .r{display:flex;flex-wrap:wrap;gap:8px;align-items:center;background:var(--paper-2);border-radius:8px;padding:8px 10px;margin-top:8px;font-size:13px}
+.old .r .b{border:1px solid var(--line);border-radius:7px;padding:3px 8px;font-size:12px;background:var(--paper)}
+.old .r .b.p{background:var(--ink);color:var(--paper)}
+
+/* ---------- FUNDADOR ---------- */
+.app{padding:22px 18px 40px;display:flex;flex-direction:column;gap:16px;max-width:720px;margin:0 auto}
+.desktop .app{padding:44px 24px}
+.top{display:flex;justify-content:space-between;align-items:center}
+.logo{font-weight:800;letter-spacing:-.02em;font-size:18px}
+.logo b{color:var(--blue)}
+.hello{font:400 30px/1.1 var(--display);margin:0}
+.hello em{color:var(--blue)}
+.muted{color:var(--ink-2);font-size:14px;margin:0}
+.card{border:1px solid var(--line);border-radius:var(--r);padding:20px;background:var(--paper)}
+.club{border-color:var(--ink)}
+.club-top{display:flex;gap:14px;align-items:center}
+.club h3{margin:0;font:400 25px/1.1 var(--display)}
+.club h3 em{color:var(--blue)}
+.club p{margin:6px 0 0;color:var(--ink-2);font-size:14px}
+.club .btn{margin-top:16px}
+.note-r{margin-top:12px;border-radius:10px;padding:10px 12px;font-size:13px;background:var(--warn-soft);color:var(--warn);display:flex;gap:8px}
+.note-r svg{width:15px;height:15px;flex:none;margin-top:2px}
+.ghost{height:64px;border-radius:var(--r);background:var(--paper-2)}
+.ghost.s{height:44px}
+.errc{border:1.5px dashed var(--warn);border-radius:var(--r);padding:18px;display:grid;gap:8px}
+.errc b{color:var(--warn)}
+.errc p{margin:0;font-size:13.5px;color:var(--ink-2)}
+
+/* El momento del rayo */
+.moment{position:absolute;inset:0;z-index:6;background:var(--paper);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:28px 24px;animation:fade .35s ease both}
+.desktop .moment{top:37px}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+.mbadge{position:relative;width:176px;height:176px}
+.mbadge svg{position:absolute;inset:0;width:100%;height:100%}
+.mbadge .ring path{fill:none;stroke:var(--pencil);stroke-width:2.4;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:1;animation:draw 1s cubic-bezier(.6,.05,.3,1) .15s forwards;opacity:.7}
+.mbadge .grey{opacity:1;animation:out .5s ease 1.1s forwards}
+.mbadge .blue{opacity:0;transform:scale(.92);animation:in .55s cubic-bezier(.2,.8,.2,1) 1.1s forwards}
+.mbadge .bolt{stroke-dasharray:1;stroke-dashoffset:1;animation:draw .5s ease-out 1.45s forwards}
+.mbadge .boltf{opacity:0;animation:in2 .3s ease 1.85s forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+@keyframes out{to{opacity:0}}
+@keyframes in{to{opacity:1;transform:none}}
+@keyframes in2{to{opacity:1}}
+.moment .k{font-size:11px;letter-spacing:.2em;text-transform:uppercase;font-weight:800;color:var(--pencil);margin-top:22px;opacity:0;animation:in2 .4s ease 1.9s forwards}
+.moment h3{font:400 40px/1.05 var(--display);margin:6px 0 0;opacity:0;animation:in2 .5s ease 2s forwards;text-wrap:balance}
+.moment h3 em{color:var(--blue)}
+.moment p{margin:10px 0 0;color:var(--ink-2);max-width:32ch;opacity:0;animation:in2 .5s ease 2.15s forwards}
+.moment .no{font:800 13px var(--body);letter-spacing:.16em;color:var(--blue);margin-top:10px;opacity:0;animation:in2 .4s ease 2.1s forwards}
+.moment .acts2{display:grid;gap:8px;margin-top:24px;width:100%;max-width:300px;opacity:0;animation:in2 .4s ease 2.3s forwards}
+.moment .acts2 .btn{width:100%}
+.ptag{display:none;position:absolute;top:18px;left:18px;background:var(--blue);color:#fff;font:700 9.5px/1 var(--body);letter-spacing:.06em;text-transform:uppercase;padding:3px 6px;border-radius:4px}
+.show-prop .ptag{display:block}
+.skip{position:absolute;top:14px;right:14px;border:0;background:transparent;color:var(--pencil);font-size:13px;font-weight:700;padding:8px}
+
+/* Carta (texto de founder-welcome.tsx, sin cambios) */
+.scrim{position:absolute;inset:0;background:var(--scrim);display:flex;align-items:flex-end;justify-content:center;z-index:7}
+.desktop .scrim{align-items:center;top:37px}
+.sheet{background:var(--paper);width:100%;max-height:92%;overflow-y:auto;border-radius:22px 22px 0 0;padding:20px 22px 24px;position:relative;animation:up .32s cubic-bezier(.2,.8,.2,1)}
+.desktop .sheet{max-width:520px;border-radius:16px;padding:28px 30px;max-height:calc(100% - 48px)}
+@keyframes up{from{transform:translateY(24px);opacity:.6}to{transform:none;opacity:1}}
+.letter .hd{display:flex;flex-direction:column;align-items:center;text-align:center}
+.letter .lab{margin-top:6px;font-size:12px;font-weight:800;letter-spacing:.16em;color:var(--blue)}
+.letter h3{font:400 28px/1.1 var(--display);text-align:center;margin:10px 0 0}
+.letter .body p{margin:12px 0 0;font-size:15px;line-height:1.7}
+.letter .sign{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;margin-top:14px}
+.letter .sign small{display:block;font:italic 400 15px var(--display);color:var(--ink-2)}
+.sigsvg{width:140px;height:62px}
+.sigsvg path{fill:none;stroke:var(--blue);stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:1;stroke-dashoffset:1;animation:draw 2.2s cubic-bezier(.6,.05,.3,1) .4s forwards}
+.sigsvg path:nth-child(2){animation-delay:2.4s;animation-duration:.2s}
+.sigsvg path:nth-child(3){animation-delay:2.5s;animation-duration:.7s}
+
+/* Notas */
+.wrap{max-width:1180px;margin:0 auto}
+.sec{padding-block:12px 8px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.sec h2{font:400 30px/1.1 var(--display);margin:0 0 12px;text-wrap:balance}
+.sec h2 em{color:var(--blue)}
+.notes{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.note{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:20px;min-width:0}
+.note h3{margin:0 0 10px;font-size:13px;letter-spacing:.1em;text-transform:uppercase;font-weight:800}
+.note.p h3{color:var(--blue)}
+.note.w h3{color:var(--warn)}
+.note ul{margin:0;padding-left:18px;display:grid;gap:7px;font-size:14px;color:var(--ink-2)}
+.note code{font-size:12.5px;background:var(--paper-2);padding:1px 5px;border-radius:4px;word-break:break-word}
+.foot{padding-block:24px 40px;color:var(--pencil);font-size:12.5px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+@media (max-width:820px){.notes{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-delay:0s!important}
+  .mbadge .ring path,.mbadge .bolt,.sigsvg path{stroke-dashoffset:0}
+}
+</style>
+
+<header class="bar"><div class="bar-in">
+  <h1>Verificado con <i>rayo</i></h1>
+  <div class="ctl"><span>Vista</span><div class="seg" id="seg-view"><button aria-pressed="true" data-v="mobile">Móvil 375</button><button aria-pressed="false" data-v="desktop">Escritorio</button></div></div>
+  <div class="ctl"><span>Lado</span><div class="seg" id="seg-side"><button aria-pressed="true" data-v="admin">Quien verifica (/admin)</button><button aria-pressed="false" data-v="founder">El fundador</button></div></div>
+  <div class="ctl"><span>Estado</span><select class="sel" id="sel-state"></select></div>
+  <label class="chk"><input type="checkbox" id="chk-prop" checked> Marcar lo propuesto</label>
+</div></header>
+
+<main>
+  <div class="stage"><div class="frame mobile show-prop" id="frame">
+    <div class="urlbar"><div class="dots"><i></i><i></i><i></i></div><b>pro-team.app</b><span id="path">/admin</span></div>
+    <div class="scroll" id="scroll"></div>
+    <div id="layer"></div>
+  </div></div>
+
+  <section class="sec"><div class="wrap">
+    <h2>Lo que hay y lo que <em>proponemos</em></h2>
+    <div class="notes">
+      <div class="note"><h3>Confirmado (se conserva)</h3><ul>
+        <li>La verificación es a mano: quien verifica abre el Instagram del usuario desde <code>/admin</code>, busca la historia con la mención y pulsa Verificar o Rechazar. Pulsar «Compartir» nunca verifica.</li>
+        <li>Las funciones de servidor del PR #1, sin cambios: <code>admin_list_founder_members</code>, <code>admin_review_founder_badge</code> (con nota de hasta 300 caracteres), <code>admin_assign_founder_number</code> (siguiente libre desde el 11, con bloqueo, o 1–10 a mano) y <code>admin_clear_founder_number</code>.</li>
+        <li>Orden de la cola: pendientes primero y, dentro, la más antigua arriba.</li>
+        <li>Para el fundador: los textos de estado de <code>founder-section.tsx</code>, «Ver mi carta de bienvenida» y la carta de <code>founder-welcome.tsx</code> tal cual (firma animada; el nombre de Biel solo ahí). La carta se abre una sola vez al verificarse (<code>shouldShowFounderWelcome</code> + <code>mark_founder_welcome_seen</code>).</li>
+        <li>Insignia con rayo; el número solo aparece cuando se asigna («Nº 011»). Nadie tiene número todavía.</li>
+      </ul></div>
+      <div class="note p"><h3>Propuesto (decide Biel)</h3><ul>
+        <li><b>Reloj de 24 horas</b> en cada solicitud: una historia dura 24 h, así que la cola avisa cuándo caduca (calculado desde que se envió la solicitud) y marca las que pueden haber caducado.</li>
+        <li><b>Deshacer</b> durante 5 s tras Verificar o Rechazar (la llamada se envía al acabar la cuenta).</li>
+        <li><b>Rechazar con motivo</b> en tres opciones, guardado en <code>review_note</code> y enseñado al fundador.</li>
+        <li><b>«Dar número al verificar»</b> (apagado por defecto: Biel decide cuándo empiezan los números), botón «Quitar número» y buscador por @, nombre o correo.</li>
+        <li><b>Error de carga</b> visible (hoy un fallo se ve como «No hi ha sol·licituds») y errores de acción en lenguaje claro.</li>
+        <li><b>El momento del rayo</b> para el fundador: la insignia gris se dibuja a lápiz y se enciende en azul, y desde ahí se abre la carta. Tras el 28/11, también al entrar en la app, no solo en la pantalla de espera.</li>
+        <li>Textos del panel en español con <code>t()</code> (hoy en catalán y fijos).</li>
+      </ul></div>
+    </div>
+  </div></section>
+  <p class="foot">Prototipo de Irene (P1) · 23/11/2026 · Ficha: agencia/experiencia/fichas/verificado.md · Nombres, correos y usuarios de la cola son inventados para el prototipo. La cuenta que hay que mencionar (@app.proteam) está pendiente de la provisional.</p>
+</main>
+
+<script>
+(function(){
+const IG="app.proteam";
+const $=s=>document.querySelector(s);
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const I={
+  bolt:'<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 2 4 14h7l-1.5 8L20 10h-7z"/></svg>',
+  check:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>',
+  x:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>',
+  ext:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg>',
+  clock:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>',
+  hash:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 9h14M5 15h14M10 4 8 20M16 4l-2 16"/></svg>',
+  search:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>',
+  info:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg>',
+  spark:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.5 2.5M15.5 15.5 18 18M6 18l2.5-2.5M15.5 8.5 18 6"/></svg>',
+  shield:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 5 6v6c0 4.5 3 7.5 7 9 4-1.5 7-4.5 7-9V6z"/></svg>',
+  retry:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12a8 8 0 1 0 2.3-5.6M4 4v4h4"/></svg>'
+};
+// Roseta de FounderBadge (founder-badge.tsx): 24 puntas, radios 100/88 sobre 220.
+const ROSETTE=(()=>{const p=[];for(let i=0;i<24;i++){const a=Math.PI*i/12-Math.PI/2,r=i%2?88:100;p.push((110+r*Math.cos(a)).toFixed(1)+","+(110+r*Math.sin(a)).toFixed(1));}return p.join(" ");})();
+const BOLT="M122 52L78 120h30l-12 48 46-70h-30l10-46z";
+function badge(size,muted,num){
+  const n=num?`<text x="110" y="196" text-anchor="middle" font-weight="800" font-size="22" fill="#fff" font-family="Manrope,sans-serif">Nº ${String(num).padStart(3,"0")}</text>`:"";
+  return `<svg width="${size}" height="${size}" viewBox="0 0 220 220" aria-hidden="true" style="flex:none"><polygon points="${ROSETTE}" fill="${muted?"var(--pencil)":"var(--blue)"}" opacity="${muted?.35:1}"/><circle cx="110" cy="110" r="70" fill="none" stroke="#fff" stroke-opacity=".35" stroke-width="2"/><path d="${BOLT}" fill="#fff" stroke="#fff" stroke-width="6" stroke-linejoin="round"/>${n}</svg>`;
+}
+const SIG='<svg viewBox="0 0 170 80" class="sigsvg" aria-hidden="true"><path pathLength="1" d="M18 62 C22 44 26 26 30 12 C42 9 52 18 41 29 C35 35 27 35 31 33 C47 30 57 42 45 54 C37 62 25 64 18 60 C32 58 44 52 52 46 C54 52 52 58 58 58 C66 58 74 50 72 44 C70 38 62 42 62 50 C62 60 74 62 84 54 C94 46 102 26 98 16 C94 8 88 20 88 34 C88 50 92 60 100 58 C108 56 116 50 124 46"/><path pathLength="1" d="M55 37 l1.5 1.5"/><path pathLength="1" d="M14 71 C60 66 118 68 152 61"/></svg>';
+
+// Hora simulada del prototipo: lunes 23/11, 16:10.
+const NOW=new Date(2026,10,23,16,10).getTime();
+const H=3600e3;
+function seed(){return [
+  {id:1,name:"Marc Soler",email:"marc.soler@example.com",ig:"marc.entrena",status:"requested",at:NOW-21.5*H,num:null},
+  {id:2,name:"Laura Gil",email:"laura.gil@example.com",ig:"lauragil_bm",status:"requested",at:NOW-26*H,num:null},
+  {id:3,name:"Iker Etxeberria",email:"iker.e@example.com",ig:"ikerbasket",status:"requested",at:NOW-3*H,num:null},
+  {id:4,name:"Nerea Ruiz",email:"nerea.ruiz@example.com",ig:"nerea.f7",status:"requested",at:NOW-0.6*H,num:null},
+  {id:5,name:"Pau Vidal",email:"pau.vidal@example.com",ig:"pauvidal.coach",status:"verified",at:NOW-30*H,num:null},
+  {id:6,name:"Sara Martín",email:"sara.martin@example.com",ig:"saramartin_cb",status:"verified",at:NOW-40*H,num:11},
+  {id:7,name:"Álvaro Prieto",email:"alvaro.p@example.com",ig:"alvaro.prieto",status:"rejected",at:NOW-28*H,num:null,note:"No encontramos la historia"}
+];}
+const MOT=["No encontramos la historia","La historia no menciona a @"+IG,"Ese usuario de Instagram no existe o es privado"];
+
+const ADMIN_STATES=[["normal","Cola con solicitudes"],["loading","Cargando"],["empty","Todo al día (vacío)"],["error","Error al cargar"],["actionerr","Error al verificar"],["actual","Actual (PR #1)"]];
+const FOUNDER_STATES=[["requested","En revisión"],["moment","Verificada · el momento del rayo"],["nonum","Verificada sin número"],["num","Verificada con número"],["rejected","Rechazada con motivo"],["error","Error al cargar"],["actualgap","Actual: tras el 28/11 no se entera"]];
+
+const S={view:"mobile",side:"admin",state:"normal",fstate:"moment",filter:"requested",q:"",autoNum:false,rows:seed(),rejecting:null,motive:0,manual:{},pending:null,toast:null,letter:false,moment:false};
+
+function fmtTime(t){const d=new Date(t);return d.toLocaleDateString("es-ES",{day:"numeric",month:"numeric"})+" · "+d.toLocaleTimeString("es-ES",{hour:"2-digit",minute:"2-digit"});}
+function clock(r){
+  const left=(r.at+24*H-NOW)/H;
+  if(left<=0)return `<span class="clock gone" data-prop>${I.clock} Puede haber caducado (enviada hace ${Math.round((NOW-r.at)/H)} h)</span>`;
+  const end=new Date(r.at+24*H).toLocaleTimeString("es-ES",{hour:"2-digit",minute:"2-digit"});
+  const txt=left<1?`Caduca en ${Math.max(1,Math.round(left*60))} min`:`Caduca hacia las ${end} · quedan ${Math.floor(left)} h`;
+  return `<span class="clock${left<4?" soon":""}" data-prop>${I.clock} ${txt}</span>`;
+}
+function label(n){return "Nº "+String(n).padStart(3,"0");}
+function nextFree(){for(let n=11;;n++){if(!S.rows.some(r=>r.num===n))return n;}}
+
+function adminTabs(){return `<div class="adm-tabs" aria-hidden="true"><span>Analítica</span><span class="on">Club Fundador</span><span>Cuentas</span><span>Equipos</span><span>Códigos</span><span>Seguridad</span></div>`;}
+
+function renderAdmin(){
+  if(S.state==="actual")return renderActual();
+  const counts=s=>S.rows.filter(r=>r.status===s).length;
+  let body="";
+  if(S.state==="loading"){body=`<div class="list" aria-busy="true"><div class="skel"></div><div class="skel"></div><div class="skel"></div></div>`;}
+  else if(S.state==="error"){body=`<div class="empty err" data-prop role="alert"><h3>No se ha podido cargar la cola.</h3><p>Puede ser la conexión o que la sesión haya caducado. No se ha cambiado nada.</p><button class="btn btn-o btn-s" data-a="retry">${I.retry} Reintentar</button></div>`;}
+  else{
+    const q=S.q.trim().toLowerCase().replace(/^@/,"");
+    const rows=(S.state==="empty"?S.rows.filter(r=>r.status!=="requested"):S.rows).filter(r=>(S.filter==="all"||r.status===S.filter)&&(!q||(r.ig+" "+r.name+" "+r.email).toLowerCase().includes(q)));
+    const list=rows.length?rows.map(row).join(""):(S.filter==="requested"&&!q
+      ?`<div class="empty" data-prop><h3>Todo al día.</h3><p>No queda ninguna historia por revisar. Cuando alguien envíe su usuario, aparecerá aquí, la más antigua arriba.</p></div>`
+      :`<div class="empty"><h3>Nada por aquí.</h3><p>${q?"Ninguna solicitud coincide con «"+esc(S.q)+"». Prueba con el @ sin espacios.":"No hay solicitudes en este estado."}</p></div>`);
+    const c=k=>S.state==="empty"&&k==="requested"?0:counts(k);
+    body=`<div class="filters">
+      ${[["requested","Por revisar"],["verified","Verificadas"],["rejected","Rechazadas"],["all","Todas"]].map(([k,t])=>`<button class="chip" aria-pressed="${S.filter===k}" data-f="${k}">${t}${k!=="all"?`<small>${c(k)}</small>`:""}</button>`).join("")}
+      <label class="search" data-prop>${I.search}<input id="q" type="search" placeholder="Buscar por @, nombre o correo" value="${esc(S.q)}" aria-label="Buscar solicitud"></label>
+    </div>
+    <div class="opts" data-prop><label class="sw"><input type="checkbox" id="auto" ${S.autoNum?"checked":""}><i></i></label><span><b>Dar número al verificar</b> · ${S.autoNum?"el siguiente libre: "+label(nextFree()):"apagado: los números aún no han empezado"}</span></div>
+    <div class="list">${list}</div>`;
+  }
+  return `<div class="adm">${adminTabs()}
+    <h2>Club Fundador<span class="dot"> ·</span> <em>verificaciones</em></h2>
+    <p class="lead">Abre el Instagram de cada persona, busca la historia que menciona a <b>@${IG}</b> y decide. Nadie se verifica solo.</p>
+    <div class="rule" data-prop><span><b>1.</b> Abre su perfil y mira las historias de hoy.</span><span><b>2.</b> ¿Sale la imagen del Club y la mención? Verificar. ¿No? Rechazar con el motivo.</span><span><b>3.</b> Las historias duran 24 horas: empieza por las que caducan antes.</span></div>
+    ${body}</div>`;
+}
+function row(r){
+  const pend=S.pending&&S.pending.id===r.id;
+  const st=r.status==="verified"?`<span class="pill v">${I.bolt} Verificada${r.num?" · "+label(r.num):""}</span>`:r.status==="rejected"?`<span class="pill r">${I.x} Rechazada</span>`:`<span class="pill">${I.clock} Por revisar</span>`;
+  let acts="";
+  if(pend){acts=`<span class="pill">Enviando en 5 s…</span>`;}
+  else if(r.status==="requested"){acts=`<button class="btn btn-p btn-s" data-a="verify" data-id="${r.id}">${I.check} Verificar</button><button class="btn btn-w btn-s" data-a="rejectopen" data-id="${r.id}">${I.x} Rechazar</button>`;}
+  else if(r.status==="rejected"){acts=`<button class="btn btn-o btn-s" data-a="verify" data-id="${r.id}">${I.check} Verificar igualmente</button>`;}
+  else if(!r.num){acts=`<button class="btn btn-o btn-s" data-a="next" data-id="${r.id}">${I.hash} Siguiente número</button><span class="num"><input type="number" min="1" max="10" placeholder="1–10" aria-label="Número reservado (1–10)" data-m="${r.id}" value="${esc(S.manual[r.id]||"")}"><button class="btn btn-g btn-s" data-a="reserved" data-id="${r.id}" ${valid(S.manual[r.id])?"":"disabled"}>Asignar reservado</button></span>`;}
+  else{acts=`<button class="btn btn-g btn-s" data-a="clear" data-id="${r.id}" data-prop>Quitar número</button>`;}
+  const rej=S.rejecting===r.id?`<div class="reject" data-prop><p>¿Por qué la rechazas? Se lo enseñamos tal cual.</p>${MOT.map((m,i)=>`<label><input type="radio" name="mot" value="${i}" ${S.motive===i?"checked":""}> ${esc(m)}</label>`).join("")}<div class="acts"><button class="btn btn-w btn-s" data-a="reject" data-id="${r.id}">Rechazar</button><button class="btn btn-g btn-s" data-a="rejectcancel">Cancelar</button></div></div>`:"";
+  const note=r.status==="rejected"&&r.note?`<small style="color:var(--warn)">Motivo: ${esc(r.note)}</small>`:"";
+  return `<article class="row"><div class="who"><b>${esc(r.name)}</b><small>${esc(r.email)} · enviada ${fmtTime(r.at)}</small></div>
+    <div class="ig"><a href="#" data-a="ig" data-id="${r.id}">@${esc(r.ig)} ${I.ext}</a>${r.status==="requested"?clock(r):note||`<span>${st}</span>`}</div>
+    <div class="acts">${acts}</div>${rej}</article>`;
+}
+function valid(v){const n=Number(v);return Number.isInteger(n)&&n>=1&&n<=10&&v!=="";}
+function renderActual(){
+  const R=S.rows.filter(r=>r.status==="requested");
+  return `<div class="adm">${adminTabs()}<div class="old"><h4>Club Fundador</h4><p>Comprova a Instagram que la història és publicada i menciona @app.proteam abans de verificar. Els números 1–10 estan reservats i només s'assignen a mà; «Següent número» comença a l'11 i mai repeteix.</p>
+    <div class="r"><span class="b p">Pendent de revisar (${R.length})</span><span class="b">Verificat (2)</span><span class="b">Rebutjat (1)</span><span class="b">Totes</span></div>
+    ${R.map(r=>`<div class="r"><span style="flex:1;min-width:160px"><b>${esc(r.name)}</b><br><small style="color:var(--pencil)">${esc(r.email)} · ${fmtTime(r.at)}</small></span><span style="color:var(--blue-ink)">@${esc(r.ig)} ↗</span><span class="b">Pendent de revisar</span><span class="b p">✓ Verificar</span><span class="b">✕ Rebutjar</span></div>`).join("")}
+    </div><p class="lead" style="margin-top:14px">Así es hoy (<code>founder-admin-section.tsx</code>): en catalán y sin <code>t()</code>; sin aviso de caducidad; Verificar y Rebutjar actúan al momento, sin deshacer; el rechazo guarda siempre «Sense història amb la menció»; si la lista falla, se ve «No hi ha sol·licituds»; no hay botón para <code>admin_clear_founder_number</code>.</p></div>`;
+}
+
+/* ---------- Fundador ---------- */
+function renderFounder(){
+  const after=S.fstate!=="requested"&&S.fstate!=="rejected"&&S.fstate!=="error";
+  const st=S.fstate;
+  let block;
+  if(st==="error"){
+    block=`<div class="errc" data-prop role="alert"><b>No hemos podido cargar tu insignia.</b><p>Revisa tu conexión. Tu solicitud no se ha perdido.</p><div><button class="btn btn-o btn-s" data-a="fretry">${I.retry} Reintentar</button></div></div>`;
+  }else if(st==="requested"){
+    block=clubCard(true,"Consigue tu insignia del Club Fundador","Estamos revisando tu historia.",`<button class="btn btn-p">${I.clock} Ver mi solicitud</button>`,`<p class="muted" style="margin-top:10px;font-size:13px" data-prop>La miramos a mano, una a una. Te avisamos aquí en cuanto esté.</p>`);
+  }else if(st==="rejected"){
+    block=clubCard(true,"Consigue tu insignia del Club Fundador","No hemos encontrado tu historia con la mención. Puedes volver a intentarlo.",`<button class="btn btn-p">${I.shield} Conseguir mi insignia</button>`,`<div class="note-r" data-prop>${I.info}<span><b>Motivo:</b> La historia no menciona a @${IG}. Súbela de nuevo con la pegatina @Mención.</span></div>`);
+  }else{
+    const n=st==="num"?11:null;
+    block=clubCard(false,"Eres del Club Fundador",n?`Fundador ${label(n)}. Gracias por estar desde el principio.`:"Insignia verificada. Tu número llegará muy pronto.",`<button class="btn btn-o" data-a="letter">${I.spark} Ver mi carta de bienvenida</button>`,"",n);
+  }
+  const hello=after&&st!=="actualgap"?`<p class="hello">Buenas tardes, <em>Pau</em>.</p>`:`<p class="hello">Buenas tardes, <em>Pau</em>.</p>`;
+  const place=st==="actualgap"
+    ?`<div class="card" style="border-style:dashed"><p class="muted"><b style="color:var(--warn)">Así sería hoy desde el 28/11:</b> la carta solo se abre dentro de <code>FounderSection</code>, que vive en la pantalla de espera (<code>access-gate-screen.tsx</code>). Cuando la app abra, quien se verifique ya no pasa por esa pantalla: no se entera del rayo ni ve la carta.</p></div><div class="ghost"></div><div class="ghost"></div><div class="ghost s"></div>`
+    :`${block}<div class="ghost"></div><div class="ghost s"></div>`;
+  return `<div class="app"><div class="top"><span class="logo">Pro<b>Team</b></span><span class="muted" style="font-size:12px">${S.where==="app"?"Inicio":"Lista de espera"}</span></div>${hello}${place}</div>`;
+}
+function clubCard(muted,title,text,btn,extra,num){
+  const h=muted?title.replace("Club Fundador","<em>Club Fundador</em>"):title.replace("Club Fundador","<em>Club Fundador</em>");
+  return `<section class="card club"><div class="club-top">${badge(64,muted,null)}<div><h3>${h}</h3><p>${text}</p></div></div>${extra||""}${btn}</section>`;
+}
+function momentHTML(){
+  return `<div class="moment" role="dialog" aria-modal="true" aria-labelledby="mt">
+    <button class="skip" data-a="mskip">Cerrar</button>
+    <span class="ptag">Propuesta</span>
+    <div class="mbadge">
+      <svg class="ring" viewBox="0 0 220 220" aria-hidden="true"><path pathLength="1" d="M112 8C52 6 8 52 10 112c2 58 48 102 104 100 58-2 98-48 96-104C208 52 164 10 104 12c-16 1-30 5-42 11"/></svg>
+      <svg class="grey" viewBox="0 0 220 220" aria-hidden="true"><polygon points="${ROSETTE}" fill="var(--pencil)" opacity=".3"/></svg>
+      <svg class="blue" viewBox="0 0 220 220" aria-hidden="true"><polygon points="${ROSETTE}" fill="var(--blue)"/><circle cx="110" cy="110" r="70" fill="none" stroke="#fff" stroke-opacity=".35" stroke-width="2"/></svg>
+      <svg viewBox="0 0 220 220" aria-hidden="true"><path class="bolt" pathLength="1" d="${BOLT}" fill="none" stroke="#fff" stroke-width="6" stroke-linejoin="round"/><path class="boltf" d="${BOLT}" fill="#fff"/></svg>
+    </div>
+    <div class="k">ProTeam · Club Fundador</div>
+    <h3 id="mt">Tu insignia, <em>verificada</em>.</h3>
+    <p>Hemos visto tu historia. Ya eres del Club Fundador.</p>
+    <div class="acts2"><button class="btn btn-p" data-a="mletter">Leer mi carta</button><button class="btn btn-g" data-a="mskip">Más tarde</button></div>
+  </div>`;
+}
+function letterHTML(){
+  const num=S.fstate==="num"?11:null;
+  return `<div class="scrim" data-a="lclose"><div class="sheet letter" role="dialog" aria-modal="true" aria-labelledby="lt" onclick="event.stopPropagation()">
+    <div class="hd">${badge(96,false,num)}${num?`<div class="lab">FUNDADOR ${label(num)}</div>`:""}</div>
+    <h3 id="lt">¡Bienvenido al Club Fundador, Pau!</h3>
+    <div class="body"><p>Soy Biel, creador de ProTeam. Gracias por estar aquí desde el principio.</p><p>ProTeam nace en el banquillo y queremos que crezca contigo: con lo que uses, con lo que eches de menos y con lo que nos cuentes.</p><p>Tu confianza es lo que da sentido a todo esto. Gracias por formar parte de este camino.</p><p>Nos vemos dentro de ProTeam.</p></div>
+    <div class="sign"><div>${SIG}<small>Biel · creador de ProTeam</small></div><button class="btn btn-p" data-a="lclose">Entrar</button></div>
+  </div></div>`;
+}
+
+/* ---------- Render ---------- */
+function fillStates(){
+  const opts=S.side==="admin"?ADMIN_STATES:FOUNDER_STATES;
+  const cur=S.side==="admin"?S.state:S.fstate;
+  $("#sel-state").innerHTML=opts.map(([v,t])=>`<option value="${v}" ${v===cur?"selected":""}>${t}</option>`).join("");
+}
+function render(keepFocus){
+  const f=$("#frame");f.className="frame "+S.view+($("#chk-prop").checked?" show-prop":"");
+  $("#path").textContent=S.side==="admin"?"/admin":(S.where==="app"?"/app":"/espera");
+  const sc=$("#scroll");const top=sc.scrollTop;
+  sc.innerHTML=S.side==="admin"?renderAdmin():renderFounder();
+  sc.scrollTop=top;
+  let layer="";
+  if(S.side==="founder"){if(S.moment)layer+=momentHTML();if(S.letter)layer+=letterHTML();}
+  if(S.side==="admin"&&S.pending)layer+=`<div class="undo" role="status">${esc(S.pending.msg)}<button data-a="undo">Deshacer</button><span class="bar-t"><i></i></span></div>`;
+  if(S.toast)layer+=`<div class="toast${S.toast.bad?" bad":""}" role="status">${esc(S.toast.m)}</div>`;
+  $("#layer").innerHTML=layer;
+  if(keepFocus){const q=$("#q");if(q){q.focus();q.setSelectionRange(q.value.length,q.value.length);}}
+}
+let tt;function toast(m,bad){S.toast={m,bad};render();clearTimeout(tt);tt=setTimeout(()=>{S.toast=null;render();},3200);}
+let pt;
+function schedule(id,apply,msg){
+  clearTimeout(pt);
+  S.pending={id,apply,msg};S.rejecting=null;render();
+  pt=setTimeout(()=>{const p=S.pending;S.pending=null;
+    if(S.state==="actionerr"){toast("No se ha podido guardar. Revisa la conexión y vuelve a intentarlo; no ha cambiado nada.",true);return;}
+    p.apply();render();},5000);
+}
+
+document.addEventListener("click",e=>{
+  const v=e.target.closest("#seg-view button");if(v){S.view=v.dataset.v;document.querySelectorAll("#seg-view button").forEach(b=>b.setAttribute("aria-pressed",b===v));render();return;}
+  const sd=e.target.closest("#seg-side button");if(sd){S.side=sd.dataset.v;document.querySelectorAll("#seg-side button").forEach(b=>b.setAttribute("aria-pressed",b===sd));fillStates();setFounder();render();return;}
+  const fb=e.target.closest("[data-f]");if(fb){S.filter=fb.dataset.f;S.rejecting=null;render();return;}
+  const a=e.target.closest("[data-a]");if(!a)return;
+  const id=Number(a.dataset.id),r=S.rows.find(x=>x.id===id);
+  switch(a.dataset.a){
+    case "ig":e.preventDefault();toast("Se abriría instagram.com/"+r.ig+" en otra pestaña.");break;
+    case "verify":{const auto=S.autoNum;schedule(id,()=>{r.status="verified";r.note=null;if(auto)r.num=nextFree();toast(auto?"Verificada · "+label(r.num):"Verificada. Verás la carta abrirse en su próxima visita.");},"Verificando a @"+r.ig+"…");break;}
+    case "rejectopen":S.rejecting=id;S.motive=0;render();break;
+    case "rejectcancel":S.rejecting=null;render();break;
+    case "reject":{const m=MOT[S.motive];schedule(id,()=>{r.status="rejected";r.num=null;r.note=m;toast("Rechazada. Le enseñamos el motivo y puede volver a enviarla.");},"Rechazando a @"+r.ig+"…");break;}
+    case "undo":clearTimeout(pt);S.pending=null;render();toast("Deshecho. No se ha enviado nada.");break;
+    case "next":if(S.state==="actionerr"){toast("No se ha podido asignar el número. Vuelve a intentarlo.",true);break;}r.num=nextFree();toast(label(r.num)+" asignado a @"+r.ig);render();break;
+    case "reserved":{const n=Number(S.manual[id]);if(S.rows.some(x=>x.num===n&&x.id!==id)){toast("Ese número ya es de otra persona.",true);break;}r.num=n;delete S.manual[id];toast(label(n)+" asignado a @"+r.ig);render();break;}
+    case "clear":r.num=null;toast("Número quitado. Vuelve a estar libre.");render();break;
+    case "retry":S.state="normal";fillStates();render();break;
+    case "letter":S.letter=true;render();break;
+    case "lclose":S.letter=false;render();break;
+    case "mletter":S.moment=false;S.letter=true;render();break;
+    case "mskip":S.moment=false;render();toast("Tu carta te espera en «Ver mi carta de bienvenida».");break;
+    case "fretry":S.fstate="nonum";fillStates();render();break;
+  }
+});
+document.addEventListener("input",e=>{
+  if(e.target.id==="q"){S.q=e.target.value;render(true);}
+  if(e.target.dataset&&e.target.dataset.m){S.manual[e.target.dataset.m]=e.target.value;const b=e.target.parentNode.querySelector("button");b.disabled=!valid(e.target.value);}
+});
+document.addEventListener("change",e=>{
+  if(e.target.id==="auto"){S.autoNum=e.target.checked;render();}
+  if(e.target.name==="mot"){S.motive=Number(e.target.value);}
+  if(e.target.id==="sel-state"){if(S.side==="admin"){S.state=e.target.value;S.rows=seed();S.pending=null;S.rejecting=null;clearTimeout(pt);}else{S.fstate=e.target.value;setFounder();}render();}
+  if(e.target.id==="chk-prop")render();
+});
+document.addEventListener("keydown",e=>{if(e.key==="Escape"&&(S.letter||S.moment)){S.letter=false;S.moment=false;render();}});
+function setFounder(){S.letter=false;S.moment=S.side==="founder"&&S.fstate==="moment";S.where=(S.fstate==="moment"||S.fstate==="nonum"||S.fstate==="num"||S.fstate==="actualgap")?"app":"espera";}
+fillStates();setFounder();render();
+})();
+</script>
