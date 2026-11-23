@@ -1,5 +1,8 @@
 # Propuestas v4 para el relanzamiento (23/11)
 
+> **PARADO (Biel, 23/11 16:27): «No quiero nada en 3D».** Nada de escenas 3D ni motion graphics. No se produce nada hasta que Biel decida de dónde sale la imagen real (grabación propia, vídeo de stock con licencia o vídeo generado).
+
+
 Doce conceptos audiovisuales, uno o dos por fase. Cada uno es una experiencia, no un guion de voz. Formato de ficha: sistema-v4/IDEACION.md. Piloto técnico ya hecho del territorio 8: `tools/reel_v5/base/luz.html` (vídeo en el panel).
 
 ---

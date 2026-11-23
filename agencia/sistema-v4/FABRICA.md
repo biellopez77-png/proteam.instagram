@@ -1,5 +1,8 @@
 # Fábrica v4 (Biel, 23/11; sustituye a sistema-v3/FABRICA.md)
 
+> **PARADO (Biel, 23/11 16:27): «No quiero nada en 3D».** Nada de escenas 3D ni motion graphics. No se produce nada hasta que Biel decida de dónde sale la imagen real (grabación propia, vídeo de stock con licencia o vídeo generado).
+
+
 Lee antes: IDENTIDAD.md, IDEACION.md, RELANZAMIENTO.md y agencia/fabrica-v4/PROPUESTAS.md. Todo es **propuesta**: no se publica nada hasta el OK de Biel. Se ve en el panel/feed: https://claude.ai/artifact/LgY44TbsUR1wkS79NrXksv (slug `9f62c74c-524c-4f00-8f55-c4c92432f775`, colección `posts`).
 
 ## Cadena

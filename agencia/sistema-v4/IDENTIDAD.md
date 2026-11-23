@@ -1,5 +1,8 @@
 # Identidad audiovisual ProTeam · sistema v4 (Biel, 23/11)
 
+> **PARADO (Biel, 23/11 16:27): «No quiero nada en 3D».** Nada de escenas 3D ni motion graphics. No se produce nada hasta que Biel decida de dónde sale la imagen real (grabación propia, vídeo de stock con licencia o vídeo generado).
+
+
 **Manda sobre todo lo anterior** (sistema v3, SISTEMA_VISUAL, REEL_ESTILO, MARCA en lo visual). El v3 (papel blanco, lápiz, tinta, texto que aparece frase a frase, una voz que explica mientras los dibujos ilustran) queda **retirado**: es justo lo que Biel no quiere.
 
 Documento completo de exploración (referencias, 9 territorios con ficha, temas, música): https://claude.ai/artifact/2Mw8HQi8GyYvcBY74KfAup
