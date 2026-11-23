@@ -1,6 +1,6 @@
 # Propuestas v4 para el relanzamiento (23/11)
 
-> **PARADO (Biel, 23/11 16:27): «No quiero nada en 3D».** Nada de escenas 3D ni motion graphics. No se produce nada hasta que Biel decida de dónde sale la imagen real (grabación propia, vídeo de stock con licencia o vídeo generado).
+> **DIRECCIÓN (Biel, 23/11): motion graphics EDITORIAL en 2D. Nada en 3D.** Cada reel es una revista que se mueve: retícula, folios, pies de foto y créditos; fotos con licencia de `banco/fotos` en duotono azul (#02050F → #636DFF → #F4F7FB), semitono y grano; Plus Jakarta Sans 800 en gigante y recortada, Instrument Serif cursiva para la frase que importa; cámara 2D (paneo, rampa de velocidad, desenfoque entre planos, paso de página); ultravioleta una sola vez tras un silencio; sonido sintetizado. Plantilla: `tools/reel_v5/base/editorial.html` (render con `tools/blackout/htmlreel.py`). Piloto: `v4-ED01` «El trabajo que no se ve». El piloto 3D (`luz.html`, v4-P01) queda retirado. No se produce la tanda hasta el OK de Biel al piloto.
 
 
 Doce conceptos audiovisuales, uno o dos por fase. Cada uno es una experiencia, no un guion de voz. Formato de ficha: sistema-v4/IDEACION.md. Piloto técnico ya hecho del territorio 8: `tools/reel_v5/base/luz.html` (vídeo en el panel).

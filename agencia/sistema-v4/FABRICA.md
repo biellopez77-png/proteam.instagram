@@ -1,6 +1,6 @@
 # Fábrica v4 (Biel, 23/11; sustituye a sistema-v3/FABRICA.md)
 
-> **PARADO (Biel, 23/11 16:27): «No quiero nada en 3D».** Nada de escenas 3D ni motion graphics. No se produce nada hasta que Biel decida de dónde sale la imagen real (grabación propia, vídeo de stock con licencia o vídeo generado).
+> **DIRECCIÓN (Biel, 23/11): motion graphics EDITORIAL en 2D. Nada en 3D.** Cada reel es una revista que se mueve: retícula, folios, pies de foto y créditos; fotos con licencia de `banco/fotos` en duotono azul (#02050F → #636DFF → #F4F7FB), semitono y grano; Plus Jakarta Sans 800 en gigante y recortada, Instrument Serif cursiva para la frase que importa; cámara 2D (paneo, rampa de velocidad, desenfoque entre planos, paso de página); ultravioleta una sola vez tras un silencio; sonido sintetizado. Plantilla: `tools/reel_v5/base/editorial.html` (render con `tools/blackout/htmlreel.py`). Piloto: `v4-ED01` «El trabajo que no se ve». El piloto 3D (`luz.html`, v4-P01) queda retirado. No se produce la tanda hasta el OK de Biel al piloto.
 
 
 Lee antes: IDENTIDAD.md, IDEACION.md, RELANZAMIENTO.md y agencia/fabrica-v4/PROPUESTAS.md. Todo es **propuesta**: no se publica nada hasta el OK de Biel. Se ve en el panel/feed: https://claude.ai/artifact/LgY44TbsUR1wkS79NrXksv (slug `9f62c74c-524c-4f00-8f55-c4c92432f775`, colección `posts`).
