@@ -32,7 +32,7 @@ Lista viva. **Cada tema tiene muchas ideas; cada idea da 3 reels; cada reel llev
 1. H · El parón de Navidad que dura cuatro semanas (C3) · fútbol [hecha → T02-1-r1, r2, r3 · Dani A · fuente (solo r1): Joo 2018, PLoS ONE 13(5): e0196212]
 2. E · El martes no es el día para correr: estructura de la semana con un partido · fútbol [hecha → T02-2-r1, r2, r3 · Dani B · fuentes: Silva et al. 2018, Sports Med 48(3); Akenhead et al. 2016, JSCR 30(9)]
 3. D · Cuántos minutos reales de juego tiene un entreno de 90 · general
-4. H · El club que planificaba la temporada en un cuaderno (buscar caso real de libretas de entrenadores famosos: Bielsa, Cruyff) · fútbol [en curso 2026-11-23 · Dani B]
+4. H · El club que planificaba la temporada en un cuaderno (buscar caso real de libretas de entrenadores famosos: Bielsa, Cruyff) · fútbol [hecha → T02-4-r1, r2, r3 · Dani B · 23/11 · caso documentado de análisis, no de cuaderno: Bielsa y el Leeds, 2019. Fuentes: SI 16/1/2019 (Leeds 2-0 Derby, 11/1/2019; rueda de prensa con PowerPoint); Sky Sports 16/1/2019 (una hora; empleado observando el entreno del Derby); transcripción del Yorkshire Evening Post (51 partidos del Derby, 4 horas por partido, balones parados numerados, «we feel guilty if we don't work enough»); Sky Sports 18/2/2019 (multa de la EFL de 200.000 libras). Sin fuente y no se usa: total de horas (Sky y YEP no coinciden), cómo vigilaba el empleado, cuadernos de Bielsa o de Cruyff]
 5. E · Tres días de entreno: el orden que no falla · baloncesto
 6. I · Semanas con dos partidos: qué quitar y qué no tocar · fútbol
 7. E · El entreno del día después de perder · general
