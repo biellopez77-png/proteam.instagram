@@ -1,10 +1,28 @@
 # Ficha · Verificado: cola de verificación en /admin y el momento del rayo
 
-**Agente:** Irene (P1) · **Fecha:** 23/11/2026 · **Tarea:** `exp-verificado` (abierta por Irene: «verificado» es un entregable suyo en `agencia/experiencia/PLAN.md` y no tenía tarea; las 5 entregas anteriores siguen en revisión sin comentarios)
-**Prototipo navegable:** https://claude.ai/artifact/CghzH9okSKD4Sa6ekJFq9U (móvil 375 y escritorio; selector «Lado»: quien verifica en `/admin` o el fundador; selector «Estado»; casilla «Marcar lo propuesto»). Copia local: `agencia/experiencia/prototipos/verificado.html`.
+**Agente:** Irene (P1) · **Fecha:** 23/11/2026, rehecha en v4 el 23/11 · **Tareas:** `exp-verificado`, `irene-v4-paleta` (abierta por Irene: «verificado» es un entregable suyo en `agencia/experiencia/PLAN.md` y no tenía tarea; las 5 entregas anteriores siguen en revisión sin comentarios)
+**Prototipo navegable:** https://claude.ai/artifact/CghzH9okSKD4Sa6ekJFq9U (versión 2, sistema v4; móvil 375 y escritorio; selector «Lado»: quien verifica en `/admin` o el fundador; selector «Estado»; casilla «Marcar lo propuesto»). Copia local: `agencia/experiencia/prototipos/verificado.html`.
 **Base:** rama `revision/club-fundador` de proteamapp (PR #1, commit 5c7a6bd): `components/admin/founder-admin-section.tsx`, `routes/_authenticated/admin.tsx` (pestaña «Club Fundador»), `supabase/migrations/20261120010000_club_fundador.sql`, `components/founder/founder-section.tsx`, `founder-welcome.tsx`, `founder-badge.tsx`, `lib/founder.ts`.
 
-**Por qué ahora:** hasta el 27/11 a las 23:59 habrá solicitudes y la verificación es a mano (Biel o quien él diga). Una historia de Instagram dura 24 horas: si la cola no avisa, se pierden historias y hay que pedir a la gente que la vuelva a subir. Y desde el 28/11, con la app abierta, quien se verifique ya no pasa por la pantalla de espera, que es el único sitio donde hoy se abre la carta.
+**Por qué ahora:** hasta el cierre de la lista (jue 10/12 23:59 por confirmar; en el código, 27/11 23:59) habrá solicitudes y la verificación es a mano (Biel o quien él diga). Una historia de Instagram dura 24 horas: si la cola no avisa, se pierden historias y hay que pedir a la gente que la vuelva a subir. Y desde la apertura (vie 11/12 por confirmar; en el código, 28/11), con la app abierta, quien se verifique ya no pasa por la pantalla de espera, que es el único sitio donde hoy se abre la carta.
+
+## 0. Sistema v4 (23/11): qué cambia respecto a la versión v3
+Manda `agencia/sistema-v4/IDENTIDAD.md` y el apartado «La misma dirección en la web y la app» del documento de dirección audiovisual. **Funciones, flujos, llamadas y textos no cambian**; solo la piel, el momento del rayo y las fechas de referencia. El estilo v3 (papel, Instrument Serif, la insignia «dibujada a lápiz») queda retirado en este prototipo.
+
+| Elemento | v3 | v4 |
+|---|---|---|
+| Fondo y capas | Papel blanco | Fondo `#02050F`; filas, tarjetas y carta en `#060C19`; bloque del Club y la fila destacada en `#0C1323` (tokens del tema `.dark` de la app) |
+| Lo activo | Borde negro, píldora negra | **Luz.** En `/admin`: la solicitud por revisar que caduca antes (y aún no ha caducado) va iluminada desde arriba con un filete hielo; el filtro elegido, con un brillo en el borde; buscador y número reservado, borde eléctrico con halo al enfocarlos; el interruptor «Dar número al verificar», con el punto encendido. Para el fundador: el bloque del Club es lo único iluminado de la pantalla, en todos sus estados |
+| Tipografía | Instrument Serif + Manrope | Plus Jakarta Sans en todo (800 en títulos; cursiva 500 solo en «Biel · creador de ProTeam», bajo la firma) |
+| Acción | Azul `#2F6BFF` | Botón principal `#636DFF`; secundario en contorno; enlaces de Instagram en `#6AA8FF` |
+| **Ultravioleta `#8B5CF6`** | — | **Solo en el lado del fundador y una vez por pantalla: el rayo de su insignia verificada** (inicio, carta y el momento). En `/admin`, **ninguno**: es una herramienta interna con muchas filas y el rayo de «Verificada» va en azul eléctrico |
+| Insignia | Roseta azul, rayo blanco | Sin verificar: roseta en penumbra (`#121B30`, borde hielo tenue) con el rayo apagado. Verificada: roseta `#636DFF` con halo y **rayo ultravioleta con filo blanco** |
+| **El momento del rayo** | Pantalla blanca; trazo a lápiz alrededor; se enciende en azul; el rayo se dibuja (≈2 s) | Sala a oscuras; un foco cae desde arriba y encuentra la insignia apagada; una **línea de luz hielo** la rodea (1 s); se enciende en azul; **silencio de 0,6 s**; **cae el rayo en ultravioleta** (≈2,4 s); después, «ProTeam · Club Fundador», el título y los botones. «Cerrar» y «Más tarde» se pueden tocar desde el primer segundo; con `prefers-reduced-motion`, todo aparece quieto. Textos sin cambios |
+| Objetos reales | — | «Todo al día.» en la cola: **una libreta cerrada bajo el foco**. Error al cargar la cola y error al cargar la insignia del fundador: **un móvil boca abajo**. Ilustraciones provisionales (en producto, foto propia o con licencia; Pau, biblioteca v4) |
+| Avisos | Rojo y ámbar sobre papel | Sin rojo de alarma: «Puede haber caducado», el motivo del rechazo y los errores en coral suave `#FF9B8F`; «quedan 2 h» (menos de 4 h) en ámbar suave `#E9C27A`. Deshacer y avisos en una pastilla `#121B30` con borde hielo; la barra de 5 s en eléctrico |
+| Fechas | 27/11 y 28/11 | Cierre jue 10/12 23:59 y apertura vie 11/12, **por confirmar** (`RELANZAMIENTO.md`); el código sigue en 27/11 y 28/11. En el prototipo solo aparece en el estado «Actual: tras la apertura no se entera» |
+
+**Lo que no cambia con la paleta:** los textos de `FounderSection`, la carta de `FounderWelcomeDialog` tal cual (el nombre de Biel solo ahí), las funciones del PR #1 y los recuentos de la cola solo en `/admin`.
 
 ## 1. Qué se conserva (sin tocar)
 - **Verificación manual.** Se abre el Instagram del usuario desde `/admin`, se comprueba la historia con la mención y se pulsa Verificar o Rechazar. Pulsar «Compartir» nunca verifica.
@@ -35,9 +53,9 @@
 ### Para el fundador
 | Cambio | Por qué |
 |---|---|
-| **El momento del rayo**, una sola vez al verificarse, en lugar de abrir la carta directamente: pantalla blanca, la insignia gris, un trazo a lápiz la rodea, se enciende en azul y el rayo se dibuja (≈2 s; sin animación con `prefers-reduced-motion`). Texto: «ProTeam · Club Fundador» · «Tu insignia, verificada.» · «Hemos visto tu historia. Ya eres del Club Fundador.» · «Leer mi carta» / «Más tarde» (y «Cerrar») | Es el momento de reconocimiento que promete el Club; hoy salta un diálogo con la carta sin contexto. Se puede tocar desde el primer segundo |
+| **El momento del rayo**, una sola vez al verificarse, en lugar de abrir la carta directamente: sala a oscuras, un foco encuentra la insignia apagada, una línea de luz la rodea, se enciende en azul y, tras un silencio de 0,6 s, cae el rayo en ultravioleta (≈2,4 s; sin animación con `prefers-reduced-motion`; ver apartado 0). Texto: «ProTeam · Club Fundador» · «Tu insignia, verificada.» · «Hemos visto tu historia. Ya eres del Club Fundador.» · «Leer mi carta» / «Más tarde» (y «Cerrar») | Es el momento de reconocimiento que promete el Club; hoy salta un diálogo con la carta sin contexto. Se puede tocar desde el primer segundo |
 | «Más tarde» deja la carta para luego: aviso «Tu carta te espera en «Ver mi carta de bienvenida».» | No obliga a leer en mal momento. `mark_founder_welcome_seen` se llama al cerrar el momento, igual que hoy al cerrar la carta |
-| **Desde el 28/11, el momento sale al entrar en la app** (inicio), no solo en la pantalla de espera | Hoy `shouldShowFounderWelcome` solo se evalúa dentro de `FounderSection`, que vive en `access-gate-screen.tsx`. Con la app abierta, quien se verifique después del 28/11 no se entera ni ve la carta (estado «Actual: tras el 28/11 no se entera» del prototipo) |
+| **Desde la apertura (11/12 por confirmar; 28/11 en el código), el momento sale al entrar en la app** (inicio), no solo en la pantalla de espera | Hoy `shouldShowFounderWelcome` solo se evalúa dentro de `FounderSection`, que vive en `access-gate-screen.tsx`. Con la app abierta, quien se verifique después de la apertura no se entera ni ve la carta (estado «Actual: tras la apertura no se entera» del prototipo) |
 | En revisión, línea bajo el texto: «La miramos a mano, una a una. Te avisamos aquí en cuanto esté.» | Explica la espera sin prometer plazos |
 | **Error de carga** del bloque: «No hemos podido cargar tu insignia. Revisa tu conexión. Tu solicitud no se ha perdido.» + «Reintentar» | Hoy, si la consulta de `founder_members` falla, el bloque enseña «Consigue tu insignia…», como si no hubiera pedido nada |
 
@@ -50,7 +68,7 @@ Número de apuntados fuera de `/admin` (los recuentos de la cola solo los ve qui
 
 ## 5. Componentes del código afectados
 - `src/components/admin/founder-admin-section.tsx`: textos con `t()`; reloj de 24 h (función pura en `lib/founder.ts`, p. ej. `founderStoryExpiry(requested_at, now)` con test); deshacer con temporizador antes de llamar a `admin_review_founder_badge`; selector de motivo para `_note`; interruptor «Dar número al verificar» (encadena `admin_assign_founder_number` con `_number` nulo); botón «Quitar número» (`admin_clear_founder_number`); buscador en cliente; `list.isError` con su estado y «Reintentar»; mensajes de error claros (ya se traduce `number_taken`).
-- `src/components/founder/founder-section.tsx`: leer `review_note` y enseñarlo en el rechazo; estado de error con `member.isError`; mover la apertura automática (`shouldShowFounderWelcome`) a un componente que también se monte en el inicio de la app (p. ej. `FounderVerifiedMoment` en `_authenticated` o en `assistant-home.tsx`) para que funcione después del 28/11.
+- `src/components/founder/founder-section.tsx`: leer `review_note` y enseñarlo en el rechazo; estado de error con `member.isError`; mover la apertura automática (`shouldShowFounderWelcome`) a un componente que también se monte en el inicio de la app (p. ej. `FounderVerifiedMoment` en `_authenticated` o en `assistant-home.tsx`) para que funcione después de la apertura.
 - Nuevo `src/components/founder/founder-verified-moment.tsx`: la pantalla del rayo (reutiliza la roseta y el rayo de `FounderBadge`; trazo con `pathLength` como `FounderSignature`), abre `FounderWelcomeDialog` con «Leer mi carta».
 - `src/styles.css`: animación del momento junto a `founder-pop` y `founder-sign`, con su bloque `prefers-reduced-motion`.
 - `src/lib/founder.ts`: constantes de los 3 motivos (clave + texto) y la función de caducidad. `FOUNDER_INSTAGRAM` sigue pendiente de la cuenta provisional.
@@ -64,3 +82,5 @@ Número de apuntados fuera de `/admin` (los recuentos de la cola solo los ve qui
 5. **El momento del rayo:** ¿lo quieres antes de la carta o prefieres que se abra la carta directamente, como hoy?
 6. **¿Aviso fuera de la app al verificar?** Hoy solo se entera al volver a entrar. Se podría avisar por correo (Lucía, a mano, como el soporte), pero no existe ningún envío automático y no lo damos por hecho.
 7. **@ provisional** de Instagram (sigue `app.proteam`, suspendida): cambia el texto de la cola, de los motivos y de la imagen.
+8. **(v4) Ultravioleta en `/admin`:** propongo ninguno (herramienta interna, muchas filas). ¿Te vale, o quieres el rayo de «Verificada» también en ultravioleta?
+9. **(v4) Objetos reales:** libreta bajo el foco y móvil boca abajo son ilustraciones provisionales; ¿foto propia (Pau) o dibujo en línea de luz?
