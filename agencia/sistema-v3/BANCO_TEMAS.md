@@ -141,7 +141,7 @@ Lista viva. **Cada tema tiene muchas ideas; cada idea da 3 reels; cada reel llev
 10. I · Cursos de entrenador: qué no te enseñan · general
 
 ## T11 · Lesiones y prevención
-1. E · Calentamiento que sí previene (FIFA 11+, verificar) · fútbol
+1. E · Calentamiento que sí previene (FIFA 11+, verificar) · fútbol [hecha → T11-1-r1, r2, r3 · Dani A · 23/11 · fuente: Soligard et al. 2008, BMJ 337:a2469 (PMC2600961); Physiopedia «FIFA 11+». Estudio con jugadoras de 13-17 años; el objetivo principal (lesiones de pierna) no fue significativo: solo se usan lesiones graves, por sobrecarga y en general]
 2. D · Lesiones de isquios y sprint (verificar estudios) · fútbol [hecha → T11-2-r1, r2, r3 · Dani B · 23/11 · fuentes: van der Horst et al. 2015, Am J Sports Med 43(6):1316-1323 (PEDro 43009); Ekstrand et al. 2016, BJSM 50(12):731. Estudio con aficionados adultos: solo juvenil y aficionados]
 3. E · Volver de una lesión: el error de la semana 2 · general
 4. I · Qué hacer en los primeros 5 minutos tras un golpe (solo pautas oficiales) · general
