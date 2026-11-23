@@ -77,13 +77,18 @@ Lista viva. **Cada tema tiene muchas ideas; cada idea da 3 reels; cada reel llev
 1. H · Moneyball: el equipo que fichaba con una hoja de cálculo · béisbol → general [hecha → T05-1-r1, r2, r3 · Dani A · fuentes: MLB.com «2002 Twins-A's ALDS recap»; SI 8/9/2017; Wikipedia «Moneyball: The Art of Winning an Unfair Game»; matiz NPR 2013]
 2. E · Tres números que valen más que el marcador · fútbol [hecha → T05-2-r1, r2, r3 · Dani B · fuentes (solo r1): ESPN, ficha de la final de 2012; Bleacher Report, «How the Blues Pulled Off the Impossible»]
 3. D · Posesión y victorias: lo que dicen los datos (verificar estudios) · fútbol
-4. E · Un dato por partido: el que vas a mirar siempre · general [en curso 2026-11-23 · Dani B]
+4. E · Un dato por partido: el que vas a mirar siempre · general [hecha → T05-4-r1, r2, r3 · Dani B · 23/11 · sin hechos externos: escenas en segunda persona (r1 F11 infantil: la libreta de doce columnas; dato, balones perdidos en tu campo tras entrenar salir desde el portero; r2 baloncesto cadete: rebotes que coge el rival en su ataque tras entrenar cerrar el rebote; r3 balonmano juvenil: goles a la contra, contados si llegan antes de que estéis seis atrás). Misma solución en los tres: un dato, el de lo que entrenas esa semana; una raya cada vez, siempre igual; mirar la línea de varias jornadas]
 5. H · El entrenador que apuntaba cada pérdida (casos documentados) · fútbol
 6. I · Qué es xG explicado para un entrenador de base · fútbol
 7. E · El dato que engaña: tiros a puerta · fútbol
 8. C · Estadísticas del partido sin estar pendiente del móvil · general
 9. D · Rebotes ofensivos y segundas oportunidades · baloncesto (pieza aparte)
 10. E · Cuándo un dato no sirve: muestras pequeñas en base · general
+11. E · El dato que eliges en septiembre y miras en enero: por qué no cambiarlo cada semana · general [añadida 23/11 · Dani B]
+12. E · Quién apunta en el banquillo: una sola persona, un solo dato, el mismo criterio · general [añadida 23/11 · Dani B]
+13. E · Goles encajados a balón parado: contarlos aparte cinco jornadas antes de entrenarlos · fútbol [añadida 23/11 · Dani B]
+14. E · Pérdidas en ataque posicional antes del primer lanzamiento: un dato para el ataque (sin cifras externas) · balonmano [añadida 23/11 · Dani B]
+15. E · Tiros libres en los últimos cinco minutos: contarlos aparte de los del resto del partido (sin cifras externas) · baloncesto [añadida 23/11 · Dani B]
 
 ## T06 · Gestión del grupo y vestuario
 1. H · La charla que Ferguson nunca daba (verificar anécdotas documentadas) · fútbol [hecha → T06-1-r1, r2, r3 · Dani A · fuente: Elberse y Ferguson, «Ferguson's Formula», HBR oct. 2013 (cotejar el PDF original antes de montar)]
