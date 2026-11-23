@@ -205,5 +205,22 @@
    "status": "pendiente"
   },
   "added": "2026-11-23T10:45:57.260880+01:00"
+ },
+ {
+  "id": "T09-1-r2",
+  "kind": "reel",
+  "files": [
+   "publicar/media/T09-1-r2-1.mp4",
+   "publicar/media/T09-1-r2-2.jpg"
+  ],
+  "caption": "La roja del minuto setenta casi siempre empieza mucho antes.\n\nTu central se va expulsado con 1-1. La primera amarilla fue en el doce, en la otra punta, y en el descanso nadie se acordó. Antes del minuto quince, abre la hoja: amarillas con dorsal y minuto, su banda fuerte y quién no llega. Esa lista, y no el marcador, es la que lees en el descanso para hacer el primer cambio.\n\n(Escena de ejemplo. Regla 12 de la IFAB: segunda amarilla, expulsión.)\n\n¿Apuntas las amarillas de tu equipo durante el partido?",
+  "state": "revisión",
+  "ig": {
+   "status": "pendiente"
+  },
+  "tiktok": {
+   "status": "pendiente"
+  },
+  "added": "2026-11-23T11:03:21.054090+01:00"
  }
 ]
