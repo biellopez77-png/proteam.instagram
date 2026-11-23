@@ -344,5 +344,22 @@
    "status": "pendiente"
   },
   "added": "2026-11-23T13:02:54.153130+01:00"
+ },
+ {
+  "id": "T01-6-r1",
+  "kind": "reel",
+  "files": [
+   "publicar/media/T01-6-r1-1.mp4",
+   "publicar/media/T01-6-r1-2.jpg"
+  ],
+  "caption": "Klopp cambió el sistema entero en mitad de una semifinal. Y luego dijo: «Ese fue nuestro error».\n\nLe dio un 3-5-2 en un papel a un solo jugador con el balón en juego, y él tuvo que explicárselo a otros diez. El cambio de dibujo no se inventa el sábado: el jueves, tres líneas (quién baja, quién sube, quién avisa), diez minutos de ensayo y una palabra en la primera pausa.\n\nFuentes: FourFourTwo y Sky Sports, enero de 2017. Fotos: Kevin Walsh (CC BY 2.0), Dan Kerins (CC BY-SA 4.0), Wikimedia Commons. El plan B de la libreta es un ejemplo.\n\n¿Tienes un plan B ensayado o lo improvisas en la banda?",
+  "state": "revisión",
+  "ig": {
+   "status": "pendiente"
+  },
+  "tiktok": {
+   "status": "pendiente"
+  },
+  "added": "2026-11-23T14:06:14.212896+01:00"
  }
 ]
