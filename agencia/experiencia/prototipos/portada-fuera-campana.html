@@ -1,0 +1,521 @@
+<title>Portada ProTeam desde el 28/11</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&family=Caveat:wght@500;600&display=swap">
+<style>
+/* Maqueta: barra de control arriba, lienzo (móvil 375 px o escritorio) en el centro, notas confirmado / propuesta debajo. */
+:root{
+  --paper:#ffffff; --paper-2:#f6f6f3; --ink:#0d0f14; --ink-2:#4a4f5a; --pencil:#8b8f97; --line:#e3e3de;
+  --blue:#2f6bff; --blue-soft:#e9efff; --blue-ink:#1d4fd8; --warn:#b4231b; --warn-soft:#fbecea; --stage:#ecebe6;
+  --display:"Instrument Serif", Georgia, "Times New Roman", serif;
+  --body:"Manrope", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --hand:"Caveat", "Segoe Print", "Bradley Hand", cursive;
+  --r:14px;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#12151c; --paper-2:#171b23; --ink:#f2f1ec; --ink-2:#b9bcc4; --pencil:#8d929c; --line:#2a2f3a;
+  --blue:#5b8bff; --blue-soft:#1b2540; --blue-ink:#8eb0ff; --warn:#ff8a80; --warn-soft:#3a1d1c; --stage:#0b0d12; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#12151c; --paper-2:#171b23; --ink:#f2f1ec; --ink-2:#b9bcc4; --pencil:#8d929c; --line:#2a2f3a;
+  --blue:#5b8bff; --blue-soft:#1b2540; --blue-ink:#8eb0ff; --warn:#ff8a80; --warn-soft:#3a1d1c; --stage:#0b0d12; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--stage);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.55;-webkit-font-smoothing:antialiased}
+button,input{font:inherit;color:inherit}
+button{cursor:pointer}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--paper)}
+@media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}}
+
+/* Barra de control */
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--paper);border-bottom:1px solid var(--line);
+  padding-block:10px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.bar-in{max-width:1180px;margin:0 auto;display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center}
+.bar h1{font:400 22px/1 var(--display);margin:0;margin-right:auto;white-space:nowrap}
+.bar h1 i{color:var(--blue)}
+.ctl{display:flex;flex-direction:column;gap:3px;min-width:0}
+.ctl>span{font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--pencil);font-weight:700}
+.seg{display:flex;flex-wrap:wrap;gap:2px;background:var(--paper-2);border:1px solid var(--line);border-radius:9px;padding:2px}
+.seg button{border:0;background:transparent;padding:5px 10px;border-radius:7px;font-size:12.5px;font-weight:600;color:var(--ink-2)}
+.seg button[aria-pressed="true"]{background:var(--paper);color:var(--ink);box-shadow:0 1px 2px rgba(0,0,0,.08)}
+select.sel{font:600 12.5px var(--body);background:var(--paper-2);border:1px solid var(--line);border-radius:9px;padding:6px 8px;color:var(--ink);max-width:100%}
+.chk{display:flex;gap:6px;align-items:center;font-size:12.5px;font-weight:600;color:var(--ink-2)}
+
+/* Lienzo */
+.stage{padding-block:28px 40px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.frame{margin:0 auto;background:var(--paper);border:1px solid var(--line);overflow:hidden;position:relative;transition:max-width .35s ease}
+.frame.mobile{max-width:375px;border-radius:34px;box-shadow:0 0 0 8px var(--ink),0 18px 50px rgba(0,0,0,.18)}
+.frame.desktop{max-width:1180px;border-radius:12px;box-shadow:0 18px 50px rgba(0,0,0,.10)}
+.urlbar{display:flex;align-items:center;gap:8px;padding:9px 14px;border-bottom:1px solid var(--line);font-size:12px;color:var(--pencil);background:var(--paper-2)}
+.urlbar b{font-weight:600;color:var(--ink-2)}
+.dots{display:flex;gap:5px}.dots i{width:9px;height:9px;border-radius:50%;background:var(--line)}
+.mobile .dots{display:none}
+.scroll{max-height:760px;overflow-y:auto;position:relative}
+.desktop .scroll{max-height:820px}
+
+/* Propuesta resaltada */
+.show-prop [data-prop]{outline:1.5px dashed var(--blue);outline-offset:4px;border-radius:6px;position:relative}
+.show-prop [data-prop]::after{content:"Propuesta";position:absolute;top:-11px;right:6px;background:var(--blue);color:#fff;font:700 9.5px/1 var(--body);letter-spacing:.06em;text-transform:uppercase;padding:3px 6px;border-radius:4px;z-index:2}
+
+/* ===== Portada propuesta ===== */
+.pg{color:var(--ink)}
+.wrap{max-width:1040px;margin:0 auto;padding-inline:20px}
+.desktop .wrap{padding-inline:48px}
+.top{display:flex;align-items:center;justify-content:space-between;padding-block:16px}
+.mark{font:800 17px/1 var(--body);letter-spacing:-.02em}
+.mark b{color:var(--blue)}
+.top a{font-size:13.5px;font-weight:600;text-decoration:none;color:var(--ink-2)}
+.hero{padding-block:28px 40px;display:grid;gap:30px}
+.desktop .hero{grid-template-columns:minmax(0,6fr) minmax(0,5fr);align-items:center;padding-block:64px 80px;gap:56px}
+.note{font:600 20px/1.1 var(--hand);color:var(--pencil);margin:0;transform:rotate(-1.5deg);transform-origin:left}
+.hero h2{font:400 44px/1.02 var(--display);letter-spacing:-.01em;margin:10px 0 0;text-wrap:balance}
+.desktop .hero h2{font-size:68px}
+.hero h2 em{font-style:italic;color:var(--blue);position:relative;white-space:nowrap}
+.hero h2 em svg{position:absolute;left:-2%;bottom:-.12em;width:104%;height:.3em;overflow:visible}
+.hero .sub{margin:18px 0 0;color:var(--ink-2);font-size:16px;max-width:30em}
+.cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:11px;padding:13px 18px;font-weight:700;font-size:15px;border:1px solid var(--ink);background:var(--paper);color:var(--ink);text-decoration:none}
+.btn.pri{background:var(--blue);border-color:var(--blue);color:#fff}
+.btn.pri:hover{background:var(--blue-ink);border-color:var(--blue-ink)}
+.mobile .cta .btn{flex:1 1 100%}
+.fine{font-size:12.5px;color:var(--pencil);margin:10px 0 0}
+.sports{display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:22px;font-size:13.5px;font-weight:700}
+.sports a{text-decoration:none;border-bottom:1.5px solid var(--line);padding-bottom:2px}
+.sports a:hover{border-color:var(--blue);color:var(--blue)}
+
+/* Semana a lápiz */
+.week{border:1px solid var(--line);border-radius:var(--r);padding:16px 16px 14px;background:var(--paper);position:relative}
+.week-h{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+.week-h b{font-size:13px}
+.tag{font-size:10px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--pencil)}
+.days{display:grid;grid-template-columns:repeat(7,1fr);gap:4px;margin-top:12px}
+.day{border-radius:8px;padding:8px 4px 10px;text-align:center;background:var(--paper-2);min-height:86px;display:flex;flex-direction:column;align-items:center;gap:6px}
+.day small{font-size:10.5px;font-weight:700;color:var(--pencil)}
+.day .s{width:100%;font-size:10.5px;font-weight:700;line-height:1.2}
+.day .bar-s{width:70%;border-radius:3px;background:var(--ink);opacity:.85}
+.day.match{background:var(--blue-soft)}
+.day.match .s{color:var(--blue-ink)}
+.day .dot{width:8px;height:8px;border-radius:50%;border:1.5px solid var(--blue)}
+.week .hand{font:600 18px/1 var(--hand);color:var(--blue);position:absolute;right:14px;bottom:-26px;transform:rotate(-3deg)}
+.week-f{display:flex;justify-content:space-between;margin-top:12px;font-size:12px;color:var(--ink-2)}
+
+/* Secciones */
+.sec{padding-block:44px;border-top:1px solid var(--line)}
+.desktop .sec{padding-block:80px}
+.kick{font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;font-weight:800;color:var(--blue);margin:0 0 8px}
+.sec h3{font:400 32px/1.08 var(--display);margin:0;text-wrap:balance}
+.desktop .sec h3{font-size:44px}
+.feats{display:grid;gap:34px;margin-top:30px}
+.desktop .feats{grid-template-columns:repeat(3,minmax(0,1fr));gap:40px}
+.feat h4{margin:14px 0 0;font-size:18px;font-weight:800;letter-spacing:-.01em}
+.feat p{margin:6px 0 0;color:var(--ink-2);font-size:14.5px}
+.mock{border:1px solid var(--line);border-radius:12px;background:var(--paper-2);padding:12px;height:150px;display:flex;flex-direction:column;gap:7px;overflow:hidden}
+.mock .ln{height:8px;border-radius:4px;background:var(--line)}
+.mock .row{display:flex;gap:6px;align-items:center}
+.mock .chip{font-size:10px;font-weight:700;padding:3px 7px;border-radius:20px;background:var(--paper);border:1px solid var(--line)}
+.mock .chip.b{border-color:var(--blue);color:var(--blue-ink)}
+.mock .blocks{display:flex;gap:4px;height:22px}
+.mock .blocks i{flex:1;border-radius:4px;background:var(--paper);border:1px solid var(--line)}
+.mock .blocks i.on{background:var(--blue);border-color:var(--blue)}
+.mock .grid{display:grid;grid-template-columns:repeat(5,1fr);gap:4px;flex:1}
+.mock .grid i{border-radius:4px;background:var(--paper);border:1px solid var(--line)}
+.mock .grid i.on{border-color:var(--ink)}
+.mock .num{font:400 30px/1 var(--display)}
+.mock small{font-size:10.5px;color:var(--pencil);font-weight:600}
+
+.steps{list-style:none;margin:30px 0 0;padding:0;display:grid;gap:0;position:relative}
+.desktop .steps{grid-template-columns:repeat(3,minmax(0,1fr));gap:32px}
+.steps li{display:grid;grid-template-columns:44px 1fr;gap:12px;padding-block:14px;position:relative}
+.desktop .steps li{grid-template-columns:1fr;padding:0}
+.steps .n{font:400 34px/1 var(--display);color:var(--blue)}
+.steps h4{margin:0;font-size:16px;font-weight:800}
+.steps p{margin:4px 0 0;color:var(--ink-2);font-size:14px}
+.pencil-line{display:none}
+.desktop .pencil-line{display:block;height:14px;margin-top:22px}
+.mobile .steps li+li{border-top:1px dashed var(--line)}
+
+.quote{margin:40px auto 0;max-width:34em;text-align:center}
+.quote p{font:italic 400 26px/1.2 var(--display);margin:0;text-wrap:balance}
+.desktop .quote p{font-size:34px}
+.quote small{display:block;margin-top:10px;color:var(--pencil);font-size:13px}
+
+.club{display:grid;gap:20px;align-items:center}
+.desktop .club{grid-template-columns:auto minmax(0,1fr) auto;gap:36px}
+.badge{width:92px;height:92px;border-radius:50%;border:1.5px solid var(--ink);display:grid;place-items:center;position:relative;background:var(--paper)}
+.badge::before{content:"";position:absolute;inset:6px;border-radius:50%;border:1px dashed var(--pencil)}
+.badge svg{width:34px;height:34px}
+.club h3 em{color:var(--blue)}
+.club p{margin:10px 0 0;color:var(--ink-2);max-width:34em;font-size:14.5px}
+.club .mystery{font-weight:800;color:var(--ink)}
+.club a.lnk{display:inline-block;margin-top:14px;font-weight:700;font-size:14px;color:var(--blue-ink);text-decoration:none;border-bottom:1.5px solid currentColor}
+
+.end{text-align:center}
+.end h3{font-size:40px}
+.end .cta{justify-content:center}
+.foot{border-top:1px solid var(--line);padding-block:26px 34px;font-size:12.5px;color:var(--ink-2)}
+.foot nav{display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:10px}
+.foot nav a{text-decoration:none}
+.foot .mail{margin-top:12px;color:var(--pencil)}
+
+/* Primer fotograma */
+.skel .sk{background:var(--paper-2);border-radius:8px;color:transparent!important;user-select:none}
+.skel .sk *{visibility:hidden}
+
+/* ===== Portada actual (para comparar) ===== */
+.cur{text-align:center}
+.cur .h{padding:56px 20px 44px}
+.cur .wm{font:800 15px var(--body);letter-spacing:.2em;text-transform:uppercase}
+.cur .bn{font:italic 400 18px var(--display);color:var(--ink-2);margin:6px 0 0}
+.cur h2{font-size:38px;font-weight:700;margin:14px 0 0;letter-spacing:-.02em}
+.cur .sub{color:var(--ink-2);margin:12px auto 0;max-width:30em}
+.cur .cta{justify-content:center}
+.cur .bf{font-size:12px;color:var(--warn);font-weight:700;margin-top:14px}
+.cur .timer{display:grid;grid-template-columns:repeat(4,1fr);max-width:360px;margin:22px auto 0}
+.cur .timer div+div{border-left:1px solid var(--line)}
+.cur .timer b{display:block;font-size:34px;font-variant-numeric:tabular-nums}
+.cur .timer span{font-size:11px;color:var(--pencil)}
+.cur .f{padding:30px 20px;border-top:1px solid var(--line);text-align:left;max-width:560px;margin:0 auto}
+.cur .f .d{font-weight:800;font-size:40px;color:var(--line);line-height:1}
+.cur .f h4{font-size:22px;margin:6px 0 0}
+.cur .f p{color:var(--ink-2);margin:6px 0 0}
+.cur .cards{display:grid;gap:10px;padding:0 20px 30px;max-width:900px;margin:0 auto;text-align:left}
+.desktop .cur .cards{grid-template-columns:repeat(3,1fr)}
+.cur .cards div{border:1px solid var(--line);border-radius:12px;padding:16px}
+.cur .cards b{color:var(--blue)}
+
+/* ===== Registro (AuthOverlay) ===== */
+.ov{position:absolute;inset:0;z-index:20;background:rgba(13,15,20,.45);display:flex;align-items:flex-end;justify-content:center}
+.desktop .ov{align-items:center;padding:24px}
+.sheet{background:var(--paper);width:100%;border-radius:20px 20px 0 0;padding:20px 20px 26px;max-height:92%;overflow:auto}
+.desktop .sheet{max-width:440px;border-radius:16px}
+.sheet .hd{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
+.sheet .hd small{font-size:10.5px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--pencil)}
+.sheet .hd h4{font:400 26px/1.1 var(--display);margin:4px 0 0}
+.x{border:1px solid var(--line);background:var(--paper);border-radius:9px;width:34px;height:34px;font-size:18px;line-height:1}
+.tabs{display:grid;grid-template-columns:1fr 1fr;gap:2px;background:var(--paper-2);border:1px solid var(--line);border-radius:10px;padding:2px;margin-top:16px}
+.tabs button{border:0;background:transparent;border-radius:8px;padding:8px;font-weight:700;font-size:13.5px;color:var(--ink-2)}
+.tabs button[aria-pressed="true"]{background:var(--paper);color:var(--ink);box-shadow:0 1px 2px rgba(0,0,0,.08)}
+form.f2{display:grid;gap:12px;margin-top:16px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.fld label{display:block;font-size:12.5px;font-weight:700;margin-bottom:5px}
+.fld input{width:100%;border:1px solid var(--line);border-radius:10px;padding:11px 12px;background:var(--paper);font-size:15px}
+.fld.err input{border-color:var(--warn)}
+.fld .msg{font-size:12px;color:var(--warn);margin-top:4px;font-weight:600}
+.fld .hint{font-size:12px;color:var(--pencil);margin-top:4px}
+.alert{border-radius:10px;background:var(--warn-soft);color:var(--warn);padding:11px 12px;font-size:13.5px;font-weight:600}
+.alert b{display:block;color:var(--ink);margin-bottom:2px}
+.sheet .btn{width:100%}
+.mailbox{text-align:center;padding:10px 0 4px}
+.mailbox svg{width:54px;height:54px}
+.mailbox p{color:var(--ink-2);margin:8px 0 18px}
+.spin{display:inline-block;width:14px;height:14px;border:2px solid rgba(255,255,255,.4);border-top-color:#fff;border-radius:50%;animation:sp .8s linear infinite}
+@keyframes sp{to{transform:rotate(360deg)}}
+
+/* Notas */
+.notes{max-width:1180px;margin:28px auto 0;display:grid;gap:16px}
+@media (min-width:860px){.notes{grid-template-columns:1fr 1fr 1fr}}
+.nb{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:18px 18px 14px;min-width:0}
+.nb h2{font:400 22px/1.1 var(--display);margin:0 0 8px}
+.nb h2 i{color:var(--blue)}
+.nb ul{margin:0;padding-left:18px;font-size:13.5px;color:var(--ink-2)}
+.nb li{margin:5px 0}
+.nb code{font-size:12px;background:var(--paper-2);padding:1px 4px;border-radius:4px}
+.state-line{max-width:1180px;margin:0 auto 12px;font-size:13px;color:var(--ink-2)}
+.state-line b{color:var(--ink)}
+</style>
+
+<header class="bar">
+  <div class="bar-in">
+    <h1>Portada <i>desde el 28/11</i></h1>
+    <div class="ctl"><span>Pantalla</span>
+      <div class="seg" id="segDev"><button id="dm" aria-pressed="true" data-dev="mobile">Móvil 375</button><button id="dd" aria-pressed="false" data-dev="desktop">Escritorio</button></div></div>
+    <div class="ctl"><span>Versión</span>
+      <div class="seg" id="segVer"><button id="vn" aria-pressed="true" data-ver="new">Propuesta</button><button id="va" aria-pressed="false" data-ver="cur">Actual</button></div></div>
+    <div class="ctl"><span>Estado</span>
+      <select class="sel" id="state" aria-label="Estado">
+        <option value="rest">Portada</option>
+        <option value="first">Primer fotograma (antes de cargar)</option>
+        <option value="reg">Registro abierto</option>
+        <option value="empty">Registro: campos vacíos</option>
+        <option value="sending">Registro: creando cuenta</option>
+        <option value="error">Registro: error</option>
+        <option value="mail">Registro: revisa tu correo</option>
+      </select></div>
+    <label class="chk"><input type="checkbox" id="prop"> Marcar lo propuesto</label>
+  </div>
+</header>
+
+<main class="stage">
+  <p class="state-line" id="stateLine"></p>
+  <div class="frame mobile" id="frame">
+    <div class="urlbar"><span class="dots"><i></i><i></i><i></i></span><b>pro-team.app</b><span id="urlTail"></span></div>
+    <div class="scroll" id="scroll">
+
+      <!-- ===== PROPUESTA ===== -->
+      <div class="pg" id="pgNew">
+        <div class="wrap top">
+          <span class="mark">Pro<b>Team</b></span>
+          <a href="#" data-open="login">Iniciar sesión</a>
+        </div>
+
+        <section class="wrap hero">
+          <div>
+            <p class="note sk">Hecho en el banquillo, no en una oficina.</p>
+            <h2 data-prop class="sk">La semana de tu equipo, <em>en un solo sitio<svg viewBox="0 0 100 10" preserveAspectRatio="none" aria-hidden="true"><path d="M1 7 C 25 3, 55 9, 99 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></em>.</h2>
+            <p class="sub sk">La app para entrenadores de fútbol, baloncesto y balonmano. Prueba 1 mes gratis.</p>
+            <div class="cta">
+              <a href="#" class="btn pri" data-open="register">Empieza tu mes de prueba <span aria-hidden="true">→</span></a>
+              <a href="#" class="btn" data-open="login">Iniciar sesión</a>
+            </div>
+            <p class="fine" data-prop>No se cobra nada antes y puedes cancelar.</p>
+            <nav class="sports" aria-label="Deportes" data-prop>
+              <a href="#" onclick="return false">Fútbol</a><a href="#" onclick="return false">Baloncesto</a><a href="#" onclick="return false">Balonmano</a>
+            </nav>
+          </div>
+
+          <figure class="week sk" data-prop aria-label="Ejemplo de semana en ProTeam" style="margin:0">
+            <div class="week-h"><b>Semana 14 · Cadete A</b><span class="tag">Ejemplo</span></div>
+            <div class="days">
+              <div class="day"><small>L</small><span class="s" style="color:var(--pencil)">Descanso</span></div>
+              <div class="day"><small>M</small><span class="bar-s" style="height:30px"></span><span class="s">75′</span></div>
+              <div class="day"><small>X</small><span class="s" style="color:var(--pencil)">—</span></div>
+              <div class="day"><small>J</small><span class="bar-s" style="height:24px"></span><span class="s">60′</span></div>
+              <div class="day"><small>V</small><span class="bar-s" style="height:12px;opacity:.45"></span><span class="s">45′</span></div>
+              <div class="day match"><small>S</small><span class="dot"></span><span class="s">Partido</span></div>
+              <div class="day"><small>D</small><span class="s" style="color:var(--pencil)">—</span></div>
+            </div>
+            <div class="week-f"><span>3 sesiones · 1 partido</span><span>18 jugadores</span></div>
+            <span class="hand" aria-hidden="true">el martes, la más larga</span>
+          </figure>
+        </section>
+
+        <section class="sec" id="producto">
+          <div class="wrap">
+            <p class="kick">Producto</p>
+            <h3>Prepara. Compite. Mejora.</h3>
+            <div class="feats">
+              <article class="feat">
+                <div class="mock" aria-hidden="true">
+                  <div class="row"><span class="chip b">Temporada</span><span class="chip">Ciclo 2</span><span class="chip">Semana 14</span></div>
+                  <div class="blocks"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></div>
+                  <div class="ln" style="width:80%"></div><div class="ln" style="width:55%"></div>
+                  <small>Temporada → ciclo → semana → sesión</small>
+                </div>
+                <h4>Temporada, ciclos y semanas</h4>
+                <p>Temporada, ciclos y semanas conectados con cada sesión.</p>
+              </article>
+              <article class="feat">
+                <div class="mock" aria-hidden="true">
+                  <div class="row"><b style="font-size:13px">Martes · 75′</b><span class="chip" style="margin-left:auto">16 / 18</span></div>
+                  <div class="ln" style="width:90%"></div><div class="ln" style="width:70%"></div><div class="ln" style="width:82%"></div>
+                  <div class="row" style="margin-top:auto"><small>Carga de la sesión</small><span class="chip b" style="margin-left:auto">Media</span></div>
+                </div>
+                <h4>Prepara y valora cada sesión</h4>
+                <p>Tareas, minutos, asistencia y carga en un solo lugar.</p>
+              </article>
+              <article class="feat">
+                <div class="mock" aria-hidden="true">
+                  <div class="row"><span class="num">12</span><small>tiros<br>a puerta</small><span class="num" style="margin-left:auto">4</span><small>pérdidas en<br>tu campo</small></div>
+                  <div class="grid"><i class="on"></i><i></i><i class="on"></i><i></i><i></i><i></i><i class="on"></i><i></i><i></i><i class="on"></i></div>
+                  <small>Desde el móvil, en el banquillo</small>
+                </div>
+                <h4>Tu equipo, en datos. Sin humo.</h4>
+                <p>Estadísticas desde el móvil para fútbol, baloncesto y balonmano.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="sec" id="como-funciona">
+          <div class="wrap">
+            <p class="kick">Cómo funciona</p>
+            <h3>Así funciona la prueba</h3>
+            <svg class="pencil-line" viewBox="0 0 1000 14" preserveAspectRatio="none" aria-hidden="true"><path d="M4 8 C 200 4, 420 11, 640 6 S 900 9, 996 6" fill="none" stroke="var(--pencil)" stroke-width="1.4" stroke-dasharray="5 6" stroke-linecap="round"/></svg>
+            <ol class="steps">
+              <li><span class="n">1</span><div><h4>Crea tu cuenta y tu equipo</h4><p>En un par de minutos.</p></div></li>
+              <li><span class="n">2</span><div><h4>Añade tu tarjeta</h4><p>1 mes de prueba. No se cobra nada antes y puedes cancelar.</p></div></li>
+              <li><span class="n">3</span><div><h4>Empieza a trabajar</h4><p>Planificación, sesiones y partidos desde el primer día.</p></div></li>
+            </ol>
+            <figure class="quote">
+              <p>«Sabemos lo que es planificar a las once de la noche, después del curro.»</p>
+              <small>— El equipo de ProTeam, entrenadores como tú</small>
+            </figure>
+          </div>
+        </section>
+
+        <section class="sec" data-prop aria-labelledby="clubT">
+          <div class="wrap club">
+            <div class="badge" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M13.5 2 5 13.2h5.6L9.8 22 19 10.4h-5.7z" fill="var(--blue)"/></svg></div>
+            <div>
+              <p class="kick">Club Fundador</p>
+              <h3 id="clubT">Los primeros <em>ya están dentro</em>.</h3>
+              <p>Entraron por la lista de espera, que se cerró el 27 de noviembre. Cada fundador tiene su insignia con su número. <span class="mystery">No contamos cuántos son.</span></p>
+              <a href="#" class="lnk" data-open="login">¿Eres fundador? Entra y mira tu insignia</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="sec end">
+          <div class="wrap">
+            <h3>Empieza hoy</h3>
+            <div class="cta"><a href="#" class="btn pri" data-open="register">Empieza tu mes de prueba <span aria-hidden="true">→</span></a><a href="#" class="btn" data-open="login">Iniciar sesión</a></div>
+          </div>
+        </section>
+
+        <footer class="foot"><div class="wrap">
+          <b style="color:var(--ink)">ProTeam</b> · Planificación y rendimiento para equipos.
+          <nav aria-label="Pie"><a href="#">Inicio</a><a href="#">Precios</a><a href="#">Fútbol</a><a href="#">Baloncesto</a><a href="#">Balonmano</a><a href="#">Blog</a><a href="#">Ejercicios</a><a href="#">Plantilla gratis</a></nav>
+          <p class="mail">Información: info@pro-team.app · Soporte: support@pro-team.app</p>
+        </div></footer>
+      </div>
+
+      <!-- ===== ACTUAL ===== -->
+      <div class="pg cur" id="pgCur" hidden>
+        <div class="h">
+          <p class="wm">ProTeam</p>
+          <p class="bn">Hecho en el banquillo, no en una oficina.</p>
+          <h2 id="curTitle">ProTeam</h2>
+          <p class="sub" id="curSub">La app para entrenadores de fútbol, baloncesto y balonmano. Prueba 1 mes gratis.</p>
+          <div id="curTimer" hidden>
+            <div class="timer" style="visibility:hidden"><div><b>00</b><span>Días</span></div><div><b>00</b><span>Horas</span></div><div><b>00</b><span>Minutos</span></div><div><b>00</b><span>Segundos</span></div></div>
+            <p class="bf">Hoy, tras el 28/11: este primer fotograma aún sale con «Blackout Friday» y el hueco de la cuenta atrás, y salta a «ProTeam» al cargar.</p>
+          </div>
+          <div class="cta" style="margin-top:26px"><a href="#" class="btn pri" data-open="register">Empieza tu mes de prueba →</a><a href="#" class="btn" data-open="login">Iniciar sesión</a></div>
+        </div>
+        <div class="f"><span class="d">01</span><h4>Prepara. Compite. Mejora.</h4><p>Temporada, ciclos y semanas conectados con cada sesión.</p></div>
+        <div class="f"><span class="d">02</span><h4>Prepara y valora cada sesión</h4><p>Tareas, minutos, asistencia y carga en un solo lugar.</p></div>
+        <div class="f"><span class="d">03</span><h4>Tu equipo, en datos. Sin humo.</h4><p>Estadísticas desde el móvil para fútbol, baloncesto y balonmano.</p></div>
+        <div class="f" style="text-align:center;max-width:none"><h4>Así funciona la prueba</h4></div>
+        <div class="cards">
+          <div><b>01</b><h4 style="margin:8px 0 0">Crea tu cuenta y tu equipo</h4><p style="color:var(--ink-2);margin:4px 0 0">En un par de minutos.</p></div>
+          <div><b>02</b><h4 style="margin:8px 0 0">Añade tu tarjeta</h4><p style="color:var(--ink-2);margin:4px 0 0">1 mes de prueba. No se cobra nada antes y puedes cancelar.</p></div>
+          <div><b>03</b><h4 style="margin:8px 0 0">Empieza a trabajar</h4><p style="color:var(--ink-2);margin:4px 0 0">Planificación, sesiones y partidos desde el primer día.</p></div>
+        </div>
+        <div class="f" style="text-align:center;max-width:none"><p style="font:italic 400 24px var(--display);color:var(--ink)">«Sabemos lo que es planificar a las once de la noche, después del curro.»</p><p>— El equipo de ProTeam, entrenadores como tú</p></div>
+        <div class="f" style="text-align:center;max-width:none"><h4>Empieza hoy</h4><div class="cta" style="margin-top:14px"><a href="#" class="btn pri" data-open="register">Empieza tu mes de prueba →</a><a href="#" class="btn" data-open="login">Iniciar sesión</a></div></div>
+        <footer class="foot"><div class="wrap">ProTeam · Planificación y rendimiento para equipos.</div></footer>
+      </div>
+
+      <!-- ===== Registro ===== -->
+      <div class="ov" id="ov" hidden role="dialog" aria-modal="true" aria-label="Cuenta ProTeam">
+        <div class="sheet">
+          <div class="hd">
+            <div><small>Cuenta ProTeam</small><h4>Entrena, compite, evoluciona.</h4></div>
+            <button class="x" id="close" aria-label="Cerrar panel">×</button>
+          </div>
+          <div id="formBox">
+            <div class="tabs"><button id="tLogin" aria-pressed="false">Iniciar sesión</button><button id="tReg" aria-pressed="true">Crear cuenta</button></div>
+            <form class="f2" id="f2" novalidate>
+              <div class="alert" id="alert" hidden data-prop><b>No hemos podido crear tu cuenta.</b>Revisa tu conexión y vuelve a intentarlo. Lo que has escrito sigue aquí.</div>
+              <div class="two" id="names">
+                <div class="fld" id="fN"><label for="iN">Nombre</label><input id="iN" autocomplete="given-name" value="Marta"><div class="msg" hidden>Escribe tu nombre.</div></div>
+                <div class="fld" id="fS"><label for="iS">Apellidos</label><input id="iS" autocomplete="family-name" value="Ruiz Peña"><div class="msg" hidden>Escribe tus apellidos.</div></div>
+              </div>
+              <div class="fld" id="fE"><label for="iE">Email</label><input id="iE" type="email" autocomplete="email" value="marta.entrena@ejemplo.com"><div class="msg" hidden>Escribe tu email.</div></div>
+              <div class="fld" id="fP"><label for="iP">Contraseña</label><input id="iP" type="password" autocomplete="new-password" value="banquillo14"><div class="hint" id="pHint" data-prop>Al menos 8 caracteres.</div><div class="msg" hidden>La contraseña necesita al menos 8 caracteres.</div></div>
+              <button class="btn pri" id="submit" type="submit">Crear cuenta</button>
+              <p class="fine" style="text-align:center;margin:0" id="formFine" data-prop>Después creas tu equipo. El mes de prueba empieza al añadir tu tarjeta.</p>
+            </form>
+          </div>
+          <div class="mailbox" id="mailBox" hidden>
+            <svg viewBox="0 0 54 54" aria-hidden="true"><rect x="6" y="13" width="42" height="29" rx="4" fill="none" stroke="var(--ink)" stroke-width="1.6"/><path d="M7 15 27 30 47 15" fill="none" stroke="var(--blue)" stroke-width="1.8" stroke-linecap="round"/></svg>
+            <h4 style="font:400 24px var(--display);margin:6px 0 0">Revisa tu correo</h4>
+            <p>Te hemos enviado un enlace para confirmar tu cuenta. Ábrelo y después inicia sesión.</p>
+            <button class="btn" id="toLogin" type="button">Iniciar sesión</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <section class="notes" aria-label="Notas">
+    <div class="nb"><h2>Se <i>conserva</i></h2><ul>
+      <li>Rama <code>campaign = false</code> de <code>routes/index.tsx</code>: «Hecho en el banquillo, no en una oficina.», «La app para entrenadores… Prueba 1 mes gratis.», «Empieza tu mes de prueba», «Iniciar sesión», «Empieza hoy».</li>
+      <li>Las 3 funciones con sus textos, los 3 pasos de la prueba y la cita del equipo, tal cual.</li>
+      <li><code>AuthButtons</code> y <code>AuthOverlay</code> (registro e inicio de sesión, «Revisa tu correo»), <code>PublicFooter</code>, rutas de deportes, SEO y <code>PRICE_OFFERS</code> en el JSON-LD.</li>
+      <li>Sin precio en pantalla (regla del 18/11 en <code>lib/blackout-friday.ts</code>).</li>
+    </ul></div>
+    <div class="nb"><h2>Se <i>propone</i></h2><ul>
+      <li>Titular en serif con trazo a lápiz en lugar de repetir «ProTeam».</li>
+      <li>Una semana de ejemplo dibujada en el hero (marcada «Ejemplo»).</li>
+      <li>«No se cobra nada antes y puedes cancelar.» bajo el botón y enlaces a Fútbol, Baloncesto y Balonmano.</li>
+      <li>Ids <code>#producto</code> y <code>#como-funciona</code>: el menú público ya enlaza a ellos y hoy no existen.</li>
+      <li>Bloque «Club Fundador» cerrado, sin número de apuntados ni ventajas nuevas.</li>
+      <li>Primer fotograma sin «Blackout Friday» después del 28/11, y descripción para Google sin Blackout.</li>
+      <li>Error del registro dentro del panel y pista de 8 caracteres.</li>
+    </ul></div>
+    <div class="nb"><h2>Dudas <i>para Biel</i></h2><ul>
+      <li>¿Titular nuevo o se queda «ProTeam»?</li>
+      <li>¿Bloque del Club en la portada? ¿Hasta cuándo?</li>
+      <li>¿Semana de ejemplo neutra o una por deporte?</li>
+      <li>¿Enlaces a deportes en el hero o solo en el pie?</li>
+      <li>¿Entra el 28/11 o dentro del primer mes?</li>
+    </ul></div>
+  </section>
+</main>
+
+<script>
+(() => {
+  const $ = (s) => document.querySelector(s);
+  const frame = $('#frame'), pgNew = $('#pgNew'), pgCur = $('#pgCur'), ov = $('#ov');
+  let ver = 'new', stateV = 'rest', tab = 'register';
+  const lines = {
+    rest: 'Portada fuera de campaña tal como se vería desde el <b>28 de noviembre a las 00:00</b>. Toca «Empieza tu mes de prueba» para abrir el registro.',
+    first: '<b>Primer fotograma</b>, antes de que cargue el script. Propuesta: misma maqueta con huecos en gris, sin texto de campaña. En «Actual» se ve el salto que hay hoy.',
+    reg: '<b>Registro abierto</b> desde cualquier botón de la portada (<code>?auth=register</code>), con datos de ejemplo.',
+    empty: '<b>Campos vacíos</b> al pulsar «Crear cuenta»: cada campo dice qué falta.',
+    sending: '<b>Creando cuenta</b>: el botón espera y no se puede pulsar dos veces.',
+    error: '<b>Error al crear la cuenta</b>: aviso dentro del panel (hoy solo un toast) y se conserva lo escrito.',
+    mail: '<b>Revisa tu correo</b>: estado que ya existe cuando la cuenta necesita confirmación.'
+  };
+  function setPressed(groupSel, attr, val){ document.querySelectorAll(groupSel+' button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset[attr] === val))); }
+  function render(){
+    pgNew.hidden = ver !== 'new'; pgCur.hidden = ver !== 'cur';
+    pgNew.classList.toggle('skel', stateV === 'first');
+    const firstCur = ver === 'cur' && stateV === 'first';
+    $('#curTitle').textContent = firstCur ? 'Blackout Friday' : 'ProTeam';
+    $('#curSub').textContent = firstCur ? 'Apúntate a la lista de espera antes del 27 de noviembre y consigue 3 meses gratis.' : 'La app para entrenadores de fútbol, baloncesto y balonmano. Prueba 1 mes gratis.';
+    $('#curTimer').hidden = !firstCur;
+    const showOv = ['reg','empty','sending','error','mail'].includes(stateV);
+    ov.hidden = !showOv;
+    $('#urlTail').textContent = showOv ? (tab === 'login' ? '/?auth=login' : '/?auth=register') : '/';
+    const isReg = tab === 'register';
+    $('#tReg').setAttribute('aria-pressed', String(isReg)); $('#tLogin').setAttribute('aria-pressed', String(!isReg));
+    $('#names').hidden = !isReg; $('#pHint').hidden = !isReg; $('#formFine').hidden = !isReg;
+    $('#formBox').hidden = stateV === 'mail'; $('#mailBox').hidden = stateV !== 'mail';
+    const empty = stateV === 'empty';
+    [['#fN','#iN','Marta'],['#fS','#iS','Ruiz Peña'],['#fE','#iE','marta.entrena@ejemplo.com'],['#fP','#iP','banquillo14']].forEach(([f,i,v]) => {
+      $(f).classList.toggle('err', empty); $(f+' .msg').hidden = !empty; $(i).value = empty ? '' : v;
+    });
+    $('#alert').hidden = stateV !== 'error';
+    const sb = $('#submit');
+    sb.disabled = stateV === 'sending';
+    sb.innerHTML = stateV === 'sending' ? '<span class="spin" aria-hidden="true"></span> Creando tu cuenta…' : (isReg ? 'Crear cuenta' : 'Iniciar sesión');
+    $('#stateLine').innerHTML = lines[stateV];
+    $('#state').value = stateV;
+  }
+  document.querySelectorAll('#segDev button').forEach(b => b.addEventListener('click', () => {
+    frame.className = 'frame ' + b.dataset.dev + ($('#prop').checked ? ' show-prop' : ''); setPressed('#segDev','dev',b.dataset.dev);
+  }));
+  document.querySelectorAll('#segVer button').forEach(b => b.addEventListener('click', () => { ver = b.dataset.ver; setPressed('#segVer','ver',ver); render(); }));
+  $('#state').addEventListener('change', (e) => { stateV = e.target.value; if (stateV !== 'rest' && stateV !== 'first') tab = 'register'; render(); });
+  $('#prop').addEventListener('change', (e) => frame.classList.toggle('show-prop', e.target.checked));
+  document.addEventListener('click', (e) => {
+    const o = e.target.closest('[data-open]'); if (!o) return;
+    e.preventDefault(); tab = o.dataset.open; stateV = 'reg'; render();
+  });
+  $('#close').addEventListener('click', () => { stateV = 'rest'; render(); });
+  $('#tLogin').addEventListener('click', () => { tab = 'login'; if (stateV === 'empty' || stateV === 'error') stateV = 'reg'; render(); });
+  $('#tReg').addEventListener('click', () => { tab = 'register'; render(); });
+  $('#toLogin').addEventListener('click', () => { tab = 'login'; stateV = 'reg'; render(); });
+  $('#f2').addEventListener('submit', (e) => {
+    e.preventDefault();
+    const blank = ['#iE','#iP'].concat(tab === 'register' ? ['#iN','#iS'] : []).some(s => !$(s).value.trim()) || (tab === 'register' && $('#iP').value.length < 8);
+    if (blank) { stateV = 'empty'; render(); return; }
+    stateV = 'sending'; render();
+    setTimeout(() => { stateV = tab === 'register' ? 'mail' : 'rest'; render(); }, 1200);
+  });
+  render();
+})();
+</script>
