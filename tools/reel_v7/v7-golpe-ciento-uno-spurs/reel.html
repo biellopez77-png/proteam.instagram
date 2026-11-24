@@ -1,0 +1,191 @@
+<!doctype html><html><head><meta charset="utf-8">
+<!-- v7 · El golpe ciento uno (Spurs, Popovich, Jacob Riis). Un solo plano sobre una pared grande; cada cosa que dice la voz se anima en su palabra. Base: tools/reel_v7/bielsa/reel3.html -->
+<style>
+@font-face{font-family:S;src:url(fonts/instrument-serif-latin-400-normal.woff2)}
+@font-face{font-family:SI;src:url(fonts/instrument-serif-latin-400-italic.woff2)}
+@font-face{font-family:J;font-weight:500;src:url(fonts/plus-jakarta-sans-latin-500-normal.woff2)}
+@font-face{font-family:J;font-weight:700;src:url(fonts/plus-jakarta-sans-latin-700-normal.woff2)}
+@font-face{font-family:J;font-weight:800;src:url(fonts/plus-jakarta-sans-latin-800-normal.woff2)}
+@font-face{font-family:J;font-weight:800;font-style:italic;src:url(fonts/plus-jakarta-sans-latin-800-italic.woff2)}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#02050F}
+#cam{position:absolute;left:0;top:0;width:2600px;height:6400px;transform-origin:0 0;background:url(wall2.jpg)}
+.a{position:absolute}
+.cut{filter:drop-shadow(0 30px 40px rgba(0,0,0,.6))}
+.serif{font-family:S;color:#F4F7FB;white-space:nowrap;line-height:1}
+.bold{font-family:J;font-weight:800;color:#F4F7FB;white-space:nowrap;letter-spacing:-.02em;line-height:1}
+.acc{font-family:J;font-weight:800;font-style:italic;color:#6AA8FF}
+.it{font-family:SI;color:#B9E0FF}
+.w{display:inline-block;margin-right:.24em}
+.c{text-align:center}
+.panel{background:#0C1323;border:1px solid #26335a;box-shadow:0 40px 90px rgba(0,0,0,.6)}
+.mat{background:#E9EEF6;padding:26px 26px 56px;border:6px solid #0b0f1a;box-shadow:0 30px 70px rgba(0,0,0,.6)}
+.mat small{position:absolute;left:30px;right:24px;bottom:14px;font:500 15px J;color:#5d6888;letter-spacing:.04em;line-height:1.3}
+.lbl{font:700 26px J;color:#8f9bb8;letter-spacing:.16em;white-space:nowrap}
+.rec{font:500 17px J;color:#5d6888;letter-spacing:.14em;line-height:1.6}
+.cart{position:absolute;top:0;width:170px;height:200px;background:#0C1323;border:5px solid #3a4770;box-shadow:0 18px 40px rgba(0,0,0,.55);padding:18px 14px}
+.cart b{display:block;font:800 17px J;color:#C9D3E6;letter-spacing:.1em;text-align:center}
+.cart i{display:block;height:6px;border-radius:3px;background:#26335a;margin-top:14px}
+.cart:before{content:'';position:absolute;left:50%;top:-34px;width:2px;height:30px;background:#3a4770}
+.mark{position:absolute;width:6px;height:70px;border-radius:3px;background:#26335a;transform-origin:50% 100%}
+#grain{position:absolute;inset:0;width:1080px;height:1920px;mix-blend-mode:screen;opacity:.09;pointer-events:none;image-rendering:pixelated}
+svg .dr{fill:none;stroke-linecap:round;stroke-linejoin:round}
+</style></head><body><div id="cam">
+
+<!-- A · vestuario de los Spurs, Popovich, cinco idiomas -->
+<div class="a lbl c" id="lbA" style="left:0;width:1080px;top:360px;font-size:24px">SAN ANTONIO SPURS · NBA</div>
+<div class="a serif c" id="l1" style="left:0;width:1080px;top:410px;font-size:64px"></div>
+<svg class="a" id="lockers" style="left:90px;top:520px" width="900" height="620" viewBox="0 0 900 620">
+ <g id="lk"></g>
+ <text x="896" y="612" text-anchor="end" font-family="J" font-weight="500" font-size="16" fill="#5d6888" letter-spacing="2.5">RECREACIÓN</text>
+</svg>
+<div class="a mat" id="printD" style="left:60px;top:640px;width:520px;opacity:0"><img src="img/duncan_g.jpg" style="display:block;width:100%"><small>SAN ANTONIO SPURS · NBA, 2009 · FOTO: KEITH ALLISON, CC BY-SA 2.0</small></div>
+<img class="a cut" id="pop" src="img/pop_cut_g.png" style="left:610px;top:560px;width:430px;opacity:0">
+<div class="a panel" id="fichaP" style="left:650px;top:1110px;width:380px;padding:22px 28px;border-radius:14px;opacity:0">
+ <div style="font:700 19px J;color:#8f9bb8;letter-spacing:.16em">ENTRENADOR</div>
+ <div style="font:800 42px J;color:#F4F7FB;letter-spacing:-.01em;margin-top:6px">GREGG POPOVICH</div>
+ <div style="font:500 14px J;color:#5d6888;letter-spacing:.06em;margin-top:8px">FOTO: MIKE (FLICKR), CC BY-SA 2.0</div>
+</div>
+<div class="a serif c" id="l2" style="left:0;width:1080px;top:1300px;font-size:56px"></div>
+<div class="a" id="carts" style="left:0;top:1420px;width:1080px;height:200px"></div>
+<div class="a bold c" id="l2b" style="left:0;width:1080px;top:1660px;font-size:96px"></div>
+
+<!-- B · el cantero (Jacob Riis) -->
+<div class="a serif c" id="l3" style="left:1160px;width:1080px;top:380px;font-size:72px"></div>
+<div class="a mat" id="printB" style="left:1300px;top:500px;width:640px;opacity:0"><img src="img/barr_g.jpg" style="display:block;width:100%"><small>CANTERO, NUEVA ZELANDA, h. 1930 · FOTO: J. W. CHAPMAN-TAYLOR · DOMINIO PÚBLICO</small></div>
+<div class="a mat" id="printR" style="left:1880px;top:1150px;width:290px;padding:16px 16px 64px;opacity:0"><img src="img/riis_g.jpg" style="display:block;width:100%"><small style="left:18px;font-size:12px;bottom:10px">JACOB RIIS · LIBRARY OF CONGRESS · DOMINIO PÚBLICO</small></div>
+<div class="a lbl c" id="src" style="left:1160px;width:1080px;top:1620px;font-size:22px;opacity:0">LA FRASE: JACOB RIIS, «THE MAKING OF AN AMERICAN», 1901</div>
+
+<!-- C · cien golpes, ni una grieta, el ciento uno -->
+<div class="a bold c" id="cnt" style="left:1160px;width:1080px;top:2330px;font-size:220px;color:#C9D3E6;letter-spacing:-.04em;opacity:0">1</div>
+<div class="a lbl c" id="cntl" style="left:1160px;width:1080px;top:2565px;font-size:22px;opacity:0">GOLPES</div>
+<div class="a serif c" id="l4a" style="left:1160px;width:1080px;top:2625px;font-size:58px"></div>
+<div class="a serif c" id="l4b" style="left:1160px;width:1080px;top:2695px;font-size:58px"></div>
+<svg class="a" id="stone" style="left:1300px;top:2780px" width="800" height="620" viewBox="0 0 800 620">
+ <line x1="60" y1="600" x2="740" y2="600" stroke="rgba(185,224,255,.3)" stroke-width="3"/>
+ <path d="M300 600 L320 560 L500 560 L520 600" fill="#0a1526" stroke="rgba(185,224,255,.35)" stroke-width="3"/>
+ <g id="halves">
+  <g id="hL"><path d="M410 140 L300 150 L140 210 L120 380 L150 520 L260 555 L410 540 L430 460 L395 380 L425 300 L390 230 Z" fill="#101a30" stroke="#B9E0FF" stroke-width="5" stroke-linejoin="round"/>
+   <path class="dr" d="M180 260 L240 250 M170 420 L230 440 M300 480 L350 470" stroke="rgba(185,224,255,.25)" stroke-width="3"/></g>
+  <g id="hR"><path d="M410 140 L560 160 L660 230 L680 380 L650 520 L520 560 L410 540 L430 460 L395 380 L425 300 L390 230 Z" fill="#101a30" stroke="#B9E0FF" stroke-width="5" stroke-linejoin="round"/>
+   <path class="dr" d="M560 230 L620 260 M600 420 L640 450 M480 500 L540 490" stroke="rgba(185,224,255,.25)" stroke-width="3"/></g>
+  <path id="seam" class="dr" d="M410 140 L390 230 L425 300 L395 380 L430 460 L410 540" stroke="#101a30" stroke-width="7"/>
+ </g>
+ <path id="crack" class="dr" d="M410 140 L390 230 L425 300 L395 380 L430 460 L410 540" stroke="#8B5CF6" stroke-width="7" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100" style="filter:drop-shadow(0 0 10px rgba(139,92,246,.9))"/>
+ <g id="hammer" transform="translate(780,330) rotate(41.6)">
+  <line x1="0" y1="0" x2="-232" y2="0" stroke="#C9D3E6" stroke-width="12" stroke-linecap="round"/>
+  <rect x="-276" y="-44" width="52" height="88" rx="8" fill="#0C1323" stroke="#F4F7FB" stroke-width="5"/>
+  <circle cx="0" cy="0" r="16" fill="#0C1323" stroke="#C9D3E6" stroke-width="4"/>
+ </g>
+ <g id="lupa" opacity="0"><circle cx="0" cy="0" r="58" fill="rgba(185,224,255,.06)" stroke="#F4F7FB" stroke-width="6"/><line x1="42" y1="42" x2="96" y2="96" stroke="#F4F7FB" stroke-width="12" stroke-linecap="round"/></g>
+ <text x="790" y="590" text-anchor="end" font-family="J" font-weight="500" font-size="16" fill="#5d6888" letter-spacing="2.5">RECREACIÓN</text>
+</svg>
+<div class="a serif c" id="l5" style="left:1160px;width:1080px;top:3420px;font-size:56px"></div>
+<div class="a serif c" id="l6a" style="left:1160px;width:1080px;top:3492px;font-size:54px"></div>
+<div class="a bold c" id="l6b" style="left:1160px;width:1080px;top:3560px;font-size:84px"></div>
+
+<!-- D · 101 rayitas: fueron todos los anteriores -->
+<div class="a serif c" id="l7" style="left:0;width:1080px;top:2290px;font-size:58px"></div>
+<div class="a" id="tally" style="left:120px;top:2420px;width:840px;height:640px"></div>
+<div class="a serif c" id="l8" style="left:0;width:1080px;top:3180px;font-size:64px"></div>
+<div class="a rec c" id="cred" style="left:0;width:1080px;top:3440px;opacity:0">FOTOS: KEITH ALLISON · MIKE (CC BY-SA 2.0) · J. W. CHAPMAN-TAYLOR ·<br>LIBRARY OF CONGRESS (DOMINIO PÚBLICO) · TAQUILLAS, CARTELAS,<br>PIEDRA Y CONTADOR: RECREACIÓN</div>
+
+</div>
+<canvas id="grain" width="360" height="640"></canvas>
+<script src="gsap.min.js"></script>
+<script src="words.js"></script>
+<script>
+const $=i=>document.getElementById(i), cl=x=>Math.min(1,Math.max(0,x)), P=(t,a,b)=>cl((t-a)/(b-a)), eo=x=>1-Math.pow(1-x,3), eb=x=>{const c=1.5;return 1+(c+1)*Math.pow(x-1,3)+c*Math.pow(x-1,2)};
+const W=window.WORDS, T=k=>W[k][1], E=k=>W[k][2];
+const L=[];
+function line(id,tokens){const el=$(id);for(const [txt,k,cls,st,off] of tokens){const s=document.createElement('span');s.className='w '+(cls||'');s.textContent=txt;if(st)s.style.cssText=st;el.appendChild(s);L.push([s,T(k)+(off||0)])}}
+// A
+line('l1',[['En',0],['el',1],['vestuario',2],['de',3],['los',4],['Spurs',5,'acc']]);
+line('l2',[['la',9],['misma',10],['frase',11],['estaba',12],['en',13]]);
+line('l2b',[['cinco',14,'acc'],['idiomas.',15]]);
+// B
+line('l3',[['Habla',16],['de',17],['un',18],['cantero.',19,'it']]);
+// C
+line('l4a',[['Golpea',20],['su',21],['piedra,',22]]);
+line('l4b',[['quizá',23],['cien',24,'bold','font-size:62px;color:#6AA8FF'],['veces,',25]]);
+line('l5',[['y',26,'it'],['ni',27,'it'],['una',28,'it'],['grieta.',29,'it']]);
+line('l6a',[['Al',30],['golpe',31],['ciento',32],['uno,',32,'',null,.24]]);
+line('l6b',[['se',33],['parte',34],['en',34,'',null,.2],['dos.',35,'acc']]);
+// D
+line('l7',[['Y',36],['sabe',37],['que',38],['no',39],['fue',40],['ese',41],['golpe...',42]]);
+line('l8',[['Fueron',43],['todos',44],['los',45],['anteriores.',46,'it']]);
+// ----- cámara: un solo plano -----
+const cam={cx:540,cy:1000,z:1.06};const tl=gsap.timeline({paused:true});
+const fly=(t,cx,cy,z,d=.9)=>{tl.to(cam,{cx,cy,duration:d,ease:'power2.inOut'},t);tl.to(cam,{keyframes:[{z:z*0.9,duration:d*.5,ease:'sine.out'},{z,duration:d*.5,ease:'sine.inOut'}]},t)};
+tl.set(cam,{cx:540,cy:1000,z:1.06},0).to(cam,{z:1.0,cy:1120,duration:4.95,ease:'sine.out'},0);
+fly(4.95,1700,1100,1.0); tl.to(cam,{z:1.03,cy:1130,duration:.9,ease:'sine.out'},5.85);
+fly(6.75,1700,3060,1.0); tl.to(cam,{z:1.03,cy:3080,duration:5.8,ease:'sine.out'},7.65);
+fly(13.45,540,2960,1.0); tl.to(cam,{z:.93,cy:2990,duration:4.6,ease:'sine.out'},14.35);
+// ----- elementos -----
+const NS='http://www.w3.org/2000/svg', mk=(tag,at,par)=>{const e=document.createElementNS(NS,tag);for(const k in at)e.setAttribute(k,at[k]);par.appendChild(e);return e};
+// taquillas (6)
+const LK=[];for(let i=0;i<6;i++){const g=mk('g',{},$('lk'));const x=i*150+6;
+ const r=mk('rect',{x,y:6,width:138,height:580,rx:6,fill:'#636DFF','fill-opacity':0,stroke:'rgba(185,224,255,.4)','stroke-width':4,pathLength:100,'stroke-dasharray':100,'stroke-dashoffset':100},g);
+ const v=[0,1,2].map(j=>mk('line',{x1:x+34,y1:40+j*18,x2:x+104,y2:40+j*18,stroke:'rgba(185,224,255,.3)','stroke-width':4,'stroke-linecap':'round',opacity:0},g));
+ const h=mk('line',{x1:x+118,y1:280,x2:x+118,y2:330,stroke:'rgba(185,224,255,.45)','stroke-width':5,'stroke-linecap':'round',opacity:0},g);LK.push([r,v,h])}
+// cartelas (5 idiomas)
+const LANG=['ESPAÑOL','FRANÇAIS','PORTUGUÊS','LATINE','ENGLISH'],CA=LANG.map((n,i)=>{const d=document.createElement('div');d.className='cart';d.style.left=(83+i*186)+'px';d.innerHTML=`<b>${n}</b><i style="width:100%"></i><i style="width:86%"></i><i style="width:94%"></i><i style="width:62%"></i>`;$('carts').appendChild(d);return d});
+// 101 rayitas
+const MKS=[];for(let i=0;i<100;i++){const d=document.createElement('div');d.className='mark';d.style.left=(i%20*42+18)+'px';d.style.top=(Math.floor(i/20)*100)+'px';$('tally').appendChild(d);MKS.push(d)}
+const m101=document.createElement('div');m101.className='mark';m101.style.cssText='left:417px;top:520px;width:10px;height:110px;border-radius:5px;background:#F4F7FB';$('tally').appendChild(m101);
+const l101=document.createElement('div');l101.className='bold';l101.style.cssText='position:absolute;left:452px;top:548px;font-size:56px;color:#F4F7FB';l101.textContent='101';$('tally').appendChild(l101);
+// grano
+const g=$('grain').getContext('2d'),gi=g.createImageData(360,640);let sd=1;const R=()=>(sd=(sd*16807)%2147483647)/2147483647;
+function camAt(t){tl.seek(t,false);return [cam.cx,cam.cy,cam.z]}
+const fade=(id,t0,dy=40,d=.45)=>{const p=eo(P(window._t,t0,t0+d));const e=$(id);e.style.opacity=p;e.style.transform=`translateY(${(1-p)*dy}px)`;return p};
+const mix=(a,b,p)=>a+(b-a)*p, hex=(c1,c2,p)=>{const f=c=>[1,3,5].map(i=>parseInt(c.substr(i,2),16));const A=f(c1),B=f(c2);return `rgb(${A.map((v,i)=>Math.round(mix(v,B[i],p))).join(',')})`};
+window.frame=function(t){window._t=t;
+ sd=1+Math.floor(t*30)*7919;const d=gi.data;for(let i=0;i<d.length;i+=4){const v=R()*255;d[i]=v*.8;d[i+1]=v*.85;d[i+2]=v;d[i+3]=255}g.putImageData(gi,0,0);
+ const p0=camAt(Math.max(0,t-1/30)),p1=camAt(t);const sp=Math.hypot(p1[0]-p0[0],p1[1]-p0[1]);
+ $('cam').style.transform=`translate(540px,960px) scale(${p1[2]}) translate(${-p1[0]}px,${-p1[1]}px)`;
+ $('cam').style.filter=sp>14?`blur(${Math.min(4,(sp-14)/30).toFixed(2)}px)`:'none';
+ for(const [s,t1] of L){const t0=t1<.3?t1-.4:t1;const p=eo(P(t,t0-.04,t0+.36));s.style.opacity=p;s.style.transform=`translateX(${(1-p)*24}px)`;s.style.filter=p<1?`blur(${(1-p)*6}px)`:'none'}
+ // A
+ fade('lbA',-.45,16,.5);
+ LK.forEach(([r,v,h],i)=>{const s=T(2)-.1+i*.07,q=eo(P(t,s,s+.55));r.setAttribute('stroke-dashoffset',100-100*q);v.forEach(x=>x.setAttribute('opacity',P(t,s+.35,s+.55)));h.setAttribute('opacity',P(t,s+.4,s+.6))});
+ const lit=eo(P(t,T(5),T(5)+.4));LK[4][0].setAttribute('fill-opacity',.2*lit);LK[4][0].setAttribute('stroke',lit>0?hex('#3a4770','#6AA8FF',lit):'rgba(185,224,255,.4)');
+ const pd=eo(P(t,T(5)-.15,T(5)+.3));$('printD').style.opacity=pd;$('printD').style.transform=`rotate(${-3-(1-pd)*4}deg) translateY(${(1-pd)*60}px)`;
+ const po=eo(P(t,T(7)-.15,T(7)+.35));$('pop').style.opacity=po;$('pop').style.transform=`translateY(${(1-po)*40}px) scale(${.97+.03*po})`;
+ const fp=eo(P(t,T(8)+.05,T(8)+.45));$('fichaP').style.opacity=fp;$('fichaP').style.transform=`rotate(${2+(1-fp)*3}deg) translateX(${(1-fp)*50}px)`;
+ CA.forEach((c,i)=>{const s=T(11)+i*.2,q=P(t,s,s+.3);c.style.opacity=eo(q);c.style.transform=`translateY(${(1-eb(q))*-40}px) rotate(${(1-eo(q))*(i%2?6:-6)}deg)`;c.style.borderColor=i==4?hex('#3a4770','#6AA8FF',eo(P(t,T(14),T(14)+.3))):'#3a4770'});
+ // B
+ const pb=eo(P(t,T(16)-.2,T(16)+.3));$('printB').style.opacity=pb;$('printB').style.transform=`rotate(${2-(1-pb)*3}deg) translateY(${(1-pb)*60}px)`;
+ const pr=eo(P(t,T(19)+.1,T(19)+.5));$('printR').style.opacity=pr;$('printR').style.transform=`rotate(${5+(1-pr)*4}deg) translateX(${(1-pr)*50}px)`;
+ fade('src',T(19)+.35,16,.5);
+ // C: contador, mazo, piedra
+ fade('cnt',T(20)-.25,20,.4);fade('cntl',T(20)-.15,12,.4);
+ const kp=P(t,T(20),E(25)), hits=Math.pow(kp,1.6);let n=Math.max(1,Math.round(1+99*hits));
+ let ang=0, shake=0;
+ if(t<T(20)) ang=30*eo(P(t,T(20)-.6,T(20)-.1));
+ else if(t<E(25)){const f=(12*Math.pow(kp,1.4))%1;ang=34*Math.sin(Math.PI*f);shake=f<.12?(1-f/.12)*3:0}
+ else if(t<T(30)) ang=22*eo(P(t,E(25),E(25)+.4));
+ else if(t<T(33)) ang=mix(22,38,eo(P(t,T(30),T(32))));
+ else ang=38*(1-eo(P(t,T(33),T(33)+.12)));
+ if(t>=T(32)-.05)n=101;
+ $('cnt').textContent=n;
+ const big=t>=T(32)-.05;const pop=eb(P(t,T(32)-.05,T(32)+.3));
+ $('cnt').style.color=big?'#6AA8FF':hex('#C9D3E6','#5d6888',P(t,T(26),T(26)+.4));
+ $('cnt').style.transform=big?`scale(${1+.18*(1-pop)+.06})`:'none';
+ $('cntl').textContent=big?'GOLPE':'GOLPES';
+ $('hammer').setAttribute('transform',`translate(780,330) rotate(${41.6+ang})`);
+ const sx=shake*(Math.sin(t*90)>0?1:-1);
+ const sep=eo(P(t,T(34),E(35)+.35));
+ $('hL').setAttribute('transform',`translate(${sx-34*sep},${8*sep}) rotate(${-4*sep} 260 560)`);
+ $('hR').setAttribute('transform',`translate(${sx+34*sep},${8*sep}) rotate(${4*sep} 540 560)`);
+ $('seam').setAttribute('transform',`translate(${sx},0)`);$('seam').setAttribute('opacity',1-P(t,T(34),T(34)+.1));
+ const ck=eo(P(t,T(33)+.06,T(33)+.6));$('crack').setAttribute('stroke-dashoffset',100-100*ck);$('crack').setAttribute('opacity',1-.85*P(t,T(34)+.1,E(35)+.35));
+ const lu=P(t,T(27)-.1,E(29)+.1);$('lupa').setAttribute('opacity',Math.min(P(t,T(27)-.1,T(27)+.15),1-P(t,E(29)-.1,E(29)+.15)));$('lupa').setAttribute('transform',`translate(${mix(200,560,(1-Math.cos(Math.PI*lu))/2)},${330-60*Math.sin(Math.PI*lu)})`);
+ const dim=1-.6*eo(P(t,T(30)-.1,T(30)+.3));['l4a','l4b','l5'].forEach(id=>$(id).style.opacity=dim);
+ // D
+ MKS.forEach((m,i)=>{const s=T(36)-.35+i*.006,q=eo(P(t,s,s+.25));m.style.transform=`scaleY(${q})`;const s2=T(43)+i*((E(46)-T(43)-.2)/100);const b=P(t,s2,s2+.2);m.style.background=b>0?hex('#26335a','#6AA8FF',b):'#26335a';m.style.boxShadow=b>.5?`0 0 ${8*b}px rgba(106,168,255,.5)`:'none'});
+ const q101=eb(P(t,T(42)-.05,T(42)+.3));m101.style.transform=`scaleY(${cl(q101)})`;m101.style.opacity=P(t,T(42)-.05,T(42)+.05);m101.style.boxShadow=`0 0 ${24*P(t,T(42),T(42)+.4)}px rgba(244,247,251,.6)`;
+ l101.style.opacity=eo(P(t,T(42)+.1,T(42)+.4));
+ fade('cred',T(46)-.2,10,.6);
+};
+document.fonts.ready.then(()=>Promise.all([...document.images].map(i=>i.complete?1:new Promise(r=>{i.onload=r;i.onerror=r})))).then(()=>{frame(0);window.ready=true});
+</script></body></html>
