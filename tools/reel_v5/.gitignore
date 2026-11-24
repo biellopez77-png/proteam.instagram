@@ -1,1 +1,4 @@
 node_modules/
+piezas/*/img/
+piezas/*/hoja.png
+piezas/*/spec.resolved.json
