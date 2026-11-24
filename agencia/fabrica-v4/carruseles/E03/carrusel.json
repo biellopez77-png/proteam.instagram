@@ -1,0 +1,91 @@
+{
+ "numero": "Nº 00",
+ "seccion": "El silbato",
+ "formato": "carrusel",
+ "laminas": [
+  {
+   "tipo": "palabra",
+   "palabra": "SÁBADO",
+   "foto": "OBJETO_GENERAL_FOTO_002",
+   "fig": "Fig. 1 — Dos silbatos. Uno de reserva.",
+   "hora": "Faltan diez minutos",
+   "serif": "Y ya está todo pensado.",
+   "size": 230,
+   "left": 40
+  },
+  {
+   "tipo": "dentro",
+   "palabra": "90'",
+   "foto": "OBJETO_GENERAL_FOTO_001",
+   "serif": "es lo que se ve.",
+   "cap": "Lo que no se ve\ndura toda la semana.",
+   "size": 520,
+   "top": 380
+  },
+  {
+   "tipo": "figuras",
+   "letras": "ANTES",
+   "figs": [
+    {
+     "foto": "OBJETO_CONOS_EJERCICIO_FOTO_001",
+     "lab": "Fig. 2 — Los conos\ndel ejercicio."
+    },
+    {
+     "foto": "STAFF_PIZARRA_TIEMPO_MUERTO_FOTO_001",
+     "lab": "Fig. 3 — La pizarra."
+    },
+    {
+     "foto": "STAFF_TRABAJO_FOTO_003",
+     "lab": "Fig. 4 — Notas\nen la mesa."
+    }
+   ],
+   "size": 240,
+   "left": 40
+  },
+  {
+   "tipo": "frase",
+   "foto": "OBJETO_BALON_LINEA_FOTO_001",
+   "pos": "58% 50%",
+   "pre": "Hoy se juega",
+   "serif": "lo que se preparó\nentre semana.",
+   "uv": true,
+   "size": 112,
+   "uvW": 720
+  },
+  {
+   "tipo": "frase",
+   "foto": "OBJETO_GUANTES_CONO_FOTO_001",
+   "pos": "50% 50%",
+   "pre": "Cuando suena el silbato,",
+   "serif": "ya no se\nprepara nada.",
+   "size": 128
+  },
+  {
+   "tipo": "portada",
+   "l1": "NOVENTA",
+   "serif": "minutos",
+   "l2": "Y UNA SEMANA.",
+   "fotos": [
+    "OBJETO_GENERAL_FOTO_002",
+    "OBJETO_GENERAL_FOTO_001",
+    "OBJETO_BALONES_CARRO_FOTO_001"
+   ],
+   "cap": "Lo que cabe en un sábado",
+   "size": 128
+  },
+  {
+   "tipo": "final",
+   "cap": "Para llevarte",
+   "serif": "El sábado se juega",
+   "big": "EL JUEVES.",
+   "bigLines": 1,
+   "size": 170,
+   "lista": [
+    "Cierra el plan antes del día de partido.",
+    "Prepara el material la víspera.",
+    "Y el sábado, mira el partido."
+   ],
+   "firma": "para el que lo prepara."
+  }
+ ]
+}
