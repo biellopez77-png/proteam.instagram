@@ -1045,5 +1045,22 @@
   },
   "added": "2026-11-24T20:40:00+01:00",
   "nota": "v7 photo story; vídeo final mezclado en Higgsfield (música/SFX Epidemic Sound). Copia sin audio en tools/reel_v7/bielsa/video3_mudo.mp4"
+ },
+ {
+  "id": "v7-peor-verano-2003",
+  "kind": "reel",
+  "files": [
+   "https://d2ol7oe51mr4n9.cloudfront.net/user_3M2z7lIyzIPYtjNHcxRWFNk6wi7/73210ea1-d4b1-4bfb-8aaf-4e15a2b71a04.mp4"
+  ],
+  "caption": "Tres semanas sin meter un tiro fuera de la zona. Le pasó a Stephen Curry con 15 años.\n\nVerano de 2003, Charlotte. Tiraba desde abajo, como una catapulta, y su padre, Dell, le hizo subir el balón por encima de la cabeza. Curry lo contó después: estuvo así de mal mes y medio. «El peor verano de mi vida». Hoy nadie ha metido más triples en la NBA.\n\nPara tu equipo: cuando corrijas el tiro a un jugador, va a fallar más durante un tiempo. Avísale antes. Y esas semanas, no cuentes canastas: cuenta cuántas veces el balón sube bien.\n\n¿Has cambiado alguna vez el tiro a un jugador? ¿Cuánto tardó en volver a meterla?\n\nEstamos terminando la app de ProTeam. Síguenos para no perderte nada: muy pronto, novedades.\n\nFuentes: Sports Illustrated, The Ringer, ESPN, NBA.com, CBS Sports. Fotos (Wikimedia Commons): Michael Barera (CC BY-SA 4.0) y Diario de Madrid (CC BY 4.0). Siluetas y pizarras: recreación. Música y efectos: Epidemic Sound.\n\n#entrenadores #baloncesto #baloncestobase #tiro #stephencurry #formacion",
+  "state": "revisión",
+  "ig": {
+   "status": "pendiente"
+  },
+  "tiktok": {
+   "status": "pendiente"
+  },
+  "added": "2026-11-24T21:45:00+01:00",
+  "nota": "v7 historia con fotos (montaje de v6-peor-verano-2003, voz recortada a 21 s). Música y SFX Epidemic Sound mezclados en Higgsfield. Copia sin audio en tools/reel_v7/peor-verano-2003/video_mudo.mp4"
  }
 ]
