@@ -1,206 +1,227 @@
 <title>Recorrido inicial ProTeam</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Instrument+Serif:ital@1&display=swap">
 <style>
-/* Maqueta: barra de control arriba; lienzo (móvil 375 o escritorio) con el recorrido de 5 tramos; notas confirmado/propuesta debajo. */
+/* Sistema v4 (Biel, 23/11): paleta real de la app en modo oscuro. Recorrido de 5 tramos (Club, Carta, Insignia, Equipo, Semana) y entrada a la app.
+   La luz señala lo activo: el tramo actual de la raya, el bloque del Club, la opción elegida y el campo con foco.
+   Ultravioleta: una vez por pantalla y solo en el rayo del verificado o en el acceso al Club (ver la nota «Ultravioleta» abajo). */
 :root{
-  --paper:#ffffff; --paper-2:#f6f6f3; --ink:#0d0f14; --ink-2:#4a4f5a; --pencil:#8b8f97; --line:#e3e3de;
-  --blue:#2f6bff; --blue-soft:#e9efff; --blue-ink:#1d4fd8; --warn:#b4231b; --warn-soft:#fbecea; --ok:#1d7a4a;
-  --stage:#ecebe6;
-  --display:"Instrument Serif", Georgia, "Times New Roman", serif;
-  --body:"Manrope", system-ui, -apple-system, "Segoe UI", sans-serif;
-  --r:14px;
+  --bg:#02050F; --s1:#060C19; --s2:#0C1323; --s3:#121B30;
+  --blue:#636DFF; --blue-2:#4469FA; --elec:#6AA8FF; --ice:#B9E0FF; --uv:#8B5CF6;
+  --white:#F4F7FB; --text-2:#A3AEC4; --text-3:#6F7A91;
+  --line:rgba(185,224,255,.09); --line-2:rgba(185,224,255,.16);
+  --err:#FF9B8F; --err-bg:rgba(255,155,143,.08); --warn:#E9C27A; --warn-bg:rgba(233,194,122,.10);
+  --sans:"Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --serif:"Instrument Serif", Georgia, serif;
+  color-scheme:dark;
 }
-@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
-  --paper:#12151c; --paper-2:#171b23; --ink:#f2f1ec; --ink-2:#b9bcc4; --pencil:#8d929c; --line:#2a2f3a;
-  --blue:#5b8bff; --blue-soft:#1b2540; --blue-ink:#8eb0ff; --warn:#ff8a80; --warn-soft:#3a1d1c; --ok:#5fd39a; --stage:#0b0d12; color-scheme:dark}}
-:root[data-theme="dark"]{
-  --paper:#12151c; --paper-2:#171b23; --ink:#f2f1ec; --ink-2:#b9bcc4; --pencil:#8d929c; --line:#2a2f3a;
-  --blue:#5b8bff; --blue-soft:#1b2540; --blue-ink:#8eb0ff; --warn:#ff8a80; --warn-soft:#3a1d1c; --ok:#5fd39a; --stage:#0b0d12; color-scheme:dark}
 *{box-sizing:border-box}
 [hidden]{display:none!important}
-@media (max-width:600px){.bar{position:static}}
-body{background:var(--stage);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.55;-webkit-font-smoothing:antialiased}
+html,body{background:var(--bg)}
+body{margin:0;color:var(--white);font-family:var(--sans);font-size:15px;line-height:1.55;-webkit-font-smoothing:antialiased}
 button,input,select{font:inherit;color:inherit}
 button{cursor:pointer}
-:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
-body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--paper)}
+:focus-visible{outline:2px solid var(--elec);outline-offset:2px}
+code{font-size:12px;color:var(--ice);background:var(--s2);padding:1px 5px;border-radius:5px;word-break:break-word}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--s1)}
 
 /* Barra de control */
-.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--paper);border-bottom:1px solid var(--line);
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--s1);border-bottom:1px solid var(--line);
   padding-block:10px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
-.bar-in{max-width:1180px;margin:0 auto;display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center}
-.bar h1{font:400 22px/1 var(--display);margin:0;margin-right:auto;white-space:nowrap}
-.bar h1 i{color:var(--blue)}
+@media (max-width:600px){.bar{position:static}}
+.bar-in{max-width:1180px;margin:0 auto;display:flex;flex-wrap:wrap;gap:10px 16px;align-items:flex-end}
+.bar h1{font-size:15px;font-weight:800;margin:0 auto 6px 0;letter-spacing:-.01em;white-space:nowrap}
+.bar h1 i{font-style:normal;color:var(--text-3);font-weight:600}
 .ctl{display:flex;flex-direction:column;gap:3px;min-width:0}
-.ctl>span{font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--pencil);font-weight:700}
-.seg{display:flex;flex-wrap:wrap;gap:2px;background:var(--paper-2);border:1px solid var(--line);border-radius:9px;padding:2px}
-.seg button{border:0;background:transparent;padding:5px 10px;border-radius:7px;font-size:12.5px;font-weight:600;color:var(--ink-2)}
-.seg button[aria-pressed="true"]{background:var(--paper);color:var(--ink);box-shadow:0 1px 2px rgba(0,0,0,.08)}
-select.sel{font:600 12.5px var(--body);background:var(--paper-2);border:1px solid var(--line);border-radius:9px;padding:6px 8px;color:var(--ink);max-width:100%}
-.chk{display:flex;gap:6px;align-items:center;font-size:12.5px;font-weight:600;color:var(--ink-2)}
+.ctl>span{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--text-3);font-weight:700}
+.seg{display:flex;flex-wrap:wrap;gap:2px;background:var(--bg);border:1px solid var(--line);border-radius:9px;padding:2px}
+.seg button{border:0;background:transparent;padding:5px 10px;border-radius:7px;font-size:12.5px;font-weight:600;color:var(--text-2)}
+.seg button[aria-pressed="true"]{background:var(--s3);color:var(--white)}
+select.sel{font-size:12.5px;font-weight:600;background:var(--bg);border:1px solid var(--line);border-radius:9px;padding:6px 8px;max-width:100%}
+.chk{display:flex;gap:6px;align-items:center;font-size:12.5px;font-weight:600;color:var(--text-2);padding-bottom:5px}
 
 /* Lienzo */
 .stage{padding-block:28px 40px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
-.frame{margin:0 auto;background:var(--paper);border:1px solid var(--line);overflow:hidden;position:relative}
-.frame.mobile{max-width:375px;border-radius:34px;box-shadow:0 0 0 8px var(--ink),0 18px 50px rgba(0,0,0,.18);min-height:740px}
-.frame.desktop{max-width:1180px;border-radius:12px;box-shadow:0 18px 50px rgba(0,0,0,.10);min-height:680px}
-.urlbar{display:flex;align-items:center;gap:8px;padding:9px 14px;border-bottom:1px solid var(--line);font-size:12px;color:var(--pencil);background:var(--paper-2)}
-.urlbar b{font-weight:600;color:var(--ink-2)}
-.dots{display:flex;gap:5px}.dots i{width:9px;height:9px;border-radius:50%;background:var(--line)}
+.frame{margin:0 auto;background:var(--bg);border:1px solid var(--line-2);overflow:hidden;position:relative}
+.frame.mobile{max-width:375px;border-radius:34px;box-shadow:0 0 0 8px #0B0F1A,0 24px 60px rgba(0,0,0,.6);min-height:740px}
+.frame.desktop{max-width:1180px;border-radius:12px;box-shadow:0 24px 60px rgba(0,0,0,.5);min-height:680px}
+.urlbar{display:flex;align-items:center;gap:8px;padding:9px 14px;border-bottom:1px solid var(--line);font-size:12px;color:var(--text-3);background:var(--s1)}
+.urlbar b{font-weight:600;color:var(--text-2)}
+.dots{display:flex;gap:5px}.dots i{width:9px;height:9px;border-radius:50%;background:var(--line-2)}
 
-.show-prop [data-prop]{outline:1.5px dashed var(--blue);outline-offset:4px;border-radius:6px;position:relative}
-.show-prop [data-prop]::after{content:"Propuesta";position:absolute;top:-11px;right:6px;background:var(--blue);color:#fff;font:700 9.5px/1 var(--body);letter-spacing:.06em;text-transform:uppercase;padding:3px 6px;border-radius:4px;z-index:2}
+.show-prop [data-prop]{outline:1.5px dashed rgba(106,168,255,.7);outline-offset:4px;border-radius:6px;position:relative}
+.show-prop [data-prop]::after{content:"Propuesta";position:absolute;top:-11px;right:6px;background:var(--elec);color:var(--bg);font-weight:800;font-size:9.5px;line-height:1;letter-spacing:.06em;text-transform:uppercase;padding:3px 6px;border-radius:4px;z-index:2;pointer-events:none}
 
 /* Recorrido */
 .flow{max-width:560px;margin:0 auto;padding:18px 20px 36px;display:flex;flex-direction:column;gap:18px;min-height:690px}
 .desktop .flow{padding:40px 24px 56px;max-width:600px}
 .top{display:flex;align-items:center;gap:10px;min-height:40px}
-.back{width:40px;height:40px;border-radius:50%;border:1px solid var(--line);background:var(--paper);display:grid;place-items:center;flex:none}
-.back[hidden]{display:none}
+.back{width:40px;height:40px;border-radius:50%;border:1px solid var(--line-2);background:var(--s1);display:grid;place-items:center;flex:none;color:var(--text-2)}
+/* Raya: el tramo actual es lo único con luz */
 .trail{flex:1;display:grid;grid-template-columns:repeat(5,1fr);gap:4px;list-style:none;margin:0;padding:0}
-.trail li{font-size:10.5px;font-weight:700;letter-spacing:.04em;color:var(--pencil);border-top:2px solid var(--line);padding-top:6px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.trail li.done{color:var(--ink);border-color:var(--ink)}
-.trail li.now{color:var(--blue);border-color:var(--blue)}
+.trail li{font-size:10.5px;font-weight:700;letter-spacing:.04em;color:var(--text-3);border-top:2px solid var(--line-2);padding-top:6px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.trail li.done{color:var(--text-2);border-color:var(--text-2)}
+.trail li.now{color:var(--white);border-color:var(--ice);box-shadow:0 -6px 12px -6px rgba(185,224,255,.7)}
 .trail li.off{opacity:.35;text-decoration:line-through}
-.skip{font-size:13px;font-weight:600;color:var(--ink-2);background:none;border:0;padding:8px 0;min-height:40px}
-.kicker{font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;font-weight:800;color:var(--blue);margin:0}
-.h{font:400 38px/1.04 var(--display);margin:6px 0 0;letter-spacing:-.01em;text-wrap:balance}
-.h em{color:var(--blue)}
-.desktop .h{font-size:48px}
-.lead{margin:10px 0 0;color:var(--ink-2);font-size:15px;max-width:52ch}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:10px;border:1px solid transparent;padding:12px 18px;font-weight:700;font-size:14.5px;min-height:48px}
-.btn-p{background:var(--ink);color:var(--paper)}
-.btn-b{background:var(--blue);color:#fff}
-.btn-o{background:transparent;border-color:var(--line);color:var(--ink)}
-.btn-l{background:none;border:0;color:var(--blue);font-weight:700;padding:10px 0;min-height:44px}
-.btn:disabled{opacity:.45;cursor:not-allowed}
+.skip{font-size:13px;font-weight:600;color:var(--text-2);background:none;border:0;padding:8px 0;min-height:40px}
+.kicker{font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;font-weight:800;color:var(--elec);margin:0}
+.h{font-size:32px;font-weight:800;line-height:1.06;margin:6px 0 0;letter-spacing:-.03em;text-wrap:balance}
+.h em{font-style:normal;color:var(--ice)}
+.desktop .h{font-size:42px}
+.lead{margin:10px 0 0;color:var(--text-2);font-size:15px;max-width:52ch}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:12px;border:1px solid transparent;padding:12px 18px;font-weight:700;font-size:14.5px;min-height:48px}
+.btn-p,.btn-b{background:var(--blue);color:#fff;box-shadow:0 10px 28px -12px rgba(99,109,255,.8)}
+.btn-uv{background:var(--uv);color:#fff;box-shadow:0 10px 30px -10px rgba(139,92,246,.9)}
+.btn-o{background:transparent;border-color:var(--line-2);color:var(--white)}
+.btn-l{background:none;border:0;color:var(--elec);font-weight:700;padding:10px 0;min-height:44px}
+.btn:disabled{opacity:.45;cursor:not-allowed;box-shadow:none}
 .actions{display:flex;flex-direction:column;gap:6px;margin-top:auto;padding-top:8px}
 .desktop .actions{flex-direction:row;align-items:center;gap:14px}
 .desktop .actions .btn{min-width:200px}
-.fine{font-size:12.5px;color:var(--pencil);margin:0}
-.msg{font-size:13px;border-radius:9px;padding:10px 12px;display:flex;gap:8px;align-items:flex-start}
-.msg.err{background:var(--warn-soft);color:var(--warn)}
-.msg.info{background:var(--blue-soft);color:var(--blue-ink)}
+.fine{font-size:12.5px;color:var(--text-3);margin:0}
+.msg{font-size:13px;border-radius:12px;padding:11px 13px;display:flex;gap:10px;align-items:flex-start}
+.msg.err{background:var(--err-bg);border:1px solid rgba(255,155,143,.18);color:var(--err)}
+.msg.warn{background:var(--warn-bg);border:1px solid rgba(233,194,122,.18);color:var(--warn)}
 .msg b{font-weight:700}
-.pencil{font:italic 400 18px/1.3 var(--display);color:var(--ink-2)}
-.ul{position:relative;white-space:nowrap}
-.ul svg{position:absolute;left:-2px;right:-2px;bottom:-6px;width:calc(100% + 4px);height:10px;overflow:visible}
-.ul svg path{fill:none;stroke:var(--blue);stroke-width:2;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:1;animation:draw .7s .25s ease forwards}
-@keyframes draw{to{stroke-dashoffset:0}}
+.msg .obj{flex:none;margin-top:-2px}
+.lit{position:relative;white-space:nowrap}
+.lit::after{content:"";position:absolute;left:0;right:0;bottom:-4px;height:2px;border-radius:2px;background:var(--ice);box-shadow:0 0 10px 1px rgba(185,224,255,.55);transform-origin:left;animation:litin .7s .25s ease both}
+@keyframes litin{from{transform:scaleX(0)}to{transform:none}}
 .enter{animation:enter .35s ease both}
 @keyframes enter{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
-@media (prefers-reduced-motion:reduce){.enter,.ul svg path,.pop{animation:none!important;stroke-dashoffset:0}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.sigsvg path{stroke-dashoffset:0!important}}
+.obj-cap{font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--text-3);margin:2px 0 0}
 
-/* 1 · Ventajas */
-.perks{list-style:none;margin:6px 0 0;padding:0}
+/* 1 · Club: el bloque iluminado desde arriba */
+.club{position:relative;border:1px solid var(--line-2);border-radius:18px;padding:6px 16px;overflow:hidden;
+  background:radial-gradient(120% 60% at 50% -15%,rgba(106,168,255,.18),rgba(99,109,255,.04) 50%,transparent 75%),var(--s2)}
+.club::before{content:"";position:absolute;left:14%;right:14%;top:0;height:1px;background:linear-gradient(90deg,transparent,var(--ice),transparent);opacity:.75}
+.perks{list-style:none;margin:0;padding:0}
 .perks li{display:grid;grid-template-columns:22px 1fr;gap:12px;padding:14px 0;border-top:1px solid var(--line)}
-.perks li:last-child{border-bottom:1px solid var(--line)}
+.perks li:first-child{border-top:0}
 .perks svg{margin-top:3px}
 .perks b{display:block;font-size:15px}
-.perks span{display:block;font-size:13.5px;color:var(--ink-2)}
-.perks li.soon b,.perks li.soon svg{color:var(--pencil)}
+.perks span{display:block;font-size:13.5px;color:var(--text-2)}
+.perks .dot{width:7px;height:7px;border-radius:50%;background:var(--elec);margin:8px 0 0 6px;box-shadow:0 0 8px 1px rgba(106,168,255,.5)}
+.perks li.soon b{color:var(--text-3)}
+.perks li.soon .dot{background:none;border:1.4px solid var(--text-3);box-shadow:none}
 
-/* 2 · Carta */
-.letter{border:1px solid var(--line);border-radius:4px;padding:26px 22px 20px;background:var(--paper);position:relative;box-shadow:0 1px 0 var(--line),0 12px 30px -18px rgba(13,15,20,.35)}
+/* 2 · Carta: la hoja es lo único iluminado */
+.letter{border:1px solid var(--line-2);border-radius:10px;padding:26px 22px 20px;position:relative;overflow:hidden;
+  background:radial-gradient(110% 50% at 50% -10%,rgba(185,224,255,.10),transparent 70%),var(--s1);box-shadow:0 30px 60px -30px rgba(0,0,0,.9)}
+.letter::before{content:"";position:absolute;left:10%;right:10%;top:0;height:1px;background:linear-gradient(90deg,transparent,var(--ice),transparent);opacity:.6}
 .letter .head{display:flex;align-items:center;gap:14px}
-.letter h2{font:400 28px/1.1 var(--display);margin:0;text-wrap:balance}
-.letter p{margin:14px 0 0;font-size:15px;line-height:1.75}
+.letter h2{font-size:23px;font-weight:800;line-height:1.15;margin:0;letter-spacing:-.02em;text-wrap:balance}
+.letter h2 .nm{font-family:var(--serif);font-style:italic;font-weight:400;font-size:1.2em;letter-spacing:0}
+.letter p{margin:14px 0 0;font-size:15px;line-height:1.75;color:#D9E0EC}
 .letter .sign{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;margin-top:14px}
-.letter .sign small{font:italic 400 15px var(--display);color:var(--ink-2)}
-.sigsvg{width:140px;height:64px}
-.sigsvg path{fill:none;stroke:var(--ink);stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:1;stroke-dashoffset:1;animation:draw 1.8s .3s ease forwards}
+.letter .sign small{font-size:13px;font-weight:600;color:var(--text-2)}
+.sigsvg{width:140px;height:64px;display:block;filter:drop-shadow(0 0 4px rgba(106,168,255,.45))}
+.sigsvg path{fill:none;stroke:var(--elec);stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:1;stroke-dashoffset:1;animation:draw 1.8s .3s ease forwards}
 .sigsvg path.tail{animation-delay:1.9s;animation-duration:.6s}
-.numtag{font-size:11px;font-weight:800;letter-spacing:.14em;color:var(--blue);text-transform:uppercase}
+@keyframes draw{to{stroke-dashoffset:0}}
+.numtag{font-size:11px;font-weight:800;letter-spacing:.14em;color:var(--ice);text-transform:uppercase;margin:0 0 2px}
 
 /* 3 · Insignia */
 .pop{animation:pop .6s cubic-bezier(.2,1.25,.4,1) both}
 @keyframes pop{from{transform:scale(.6) rotate(-12deg);opacity:0}to{transform:none;opacity:1}}
 .steps{list-style:none;padding:0;margin:0;display:grid;gap:12px}
-.steps li{display:flex;gap:12px;font-size:14px}
-.steps li b{flex:none;width:26px;height:26px;border-radius:50%;border:1.5px solid var(--ink);display:grid;place-items:center;font-size:12px}
-.share{display:flex;gap:16px;align-items:center;padding:14px;background:var(--paper-2);border-radius:12px}
-.share .img{width:78px;aspect-ratio:9/16;border-radius:8px;flex:none;background:var(--ink);display:grid;place-items:center;max-width:100%}
+.steps li{display:flex;gap:12px;font-size:14px;color:var(--text-2)}
+.steps li b{flex:none;width:26px;height:26px;border-radius:50%;border:1.4px solid var(--line-2);display:grid;place-items:center;font-size:12px;color:var(--text-2)}
+.steps li.on{color:var(--white)}
+.steps li.on b{border-color:var(--ice);color:var(--white);box-shadow:0 0 10px 1px rgba(185,224,255,.45)}
+.share{display:flex;gap:16px;align-items:center;padding:14px;background:var(--s1);border:1px solid var(--line);border-radius:14px}
+.share .img{width:78px;aspect-ratio:9/16;border-radius:8px;flex:none;display:grid;place-items:center;max-width:100%;border:1px solid var(--line-2);
+  background:radial-gradient(80% 45% at 50% 30%,rgba(185,224,255,.22),transparent 70%),#02050F}
 .share .btns{display:flex;flex-direction:column;gap:8px;flex:1;min-width:0}
 .share .btn{min-height:42px;padding:9px 12px;font-size:13.5px}
 .field label{display:block;font-size:13px;font-weight:700;margin-bottom:6px}
-.inwrap{display:flex;align-items:center;border:1px solid var(--line);border-radius:10px;background:var(--paper);padding-left:12px}
-.inwrap span{color:var(--pencil);font-weight:700}
+.inwrap{display:flex;align-items:center;border:1px solid var(--line-2);border-radius:12px;background:var(--bg);padding-left:12px}
+.inwrap span{color:var(--text-3);font-weight:700}
 .inwrap input{flex:1;min-width:0;border:0;background:transparent;padding:12px 12px 12px 4px;outline:none}
-.inwrap:focus-within{border-color:var(--blue);box-shadow:0 0 0 3px var(--blue-soft)}
-.state{display:flex;gap:14px;align-items:center;padding:16px;border:1px solid var(--line);border-radius:12px}
+.inwrap:focus-within{border-color:var(--elec);box-shadow:0 0 0 3px rgba(106,168,255,.18),0 0 18px -4px rgba(106,168,255,.6)}
+.state{display:flex;gap:14px;align-items:center;padding:16px;border:1px solid var(--line);border-radius:14px;background:var(--s1)}
+.state.lit-box{border-color:var(--line-2);background:radial-gradient(120% 70% at 50% -20%,rgba(106,168,255,.16),transparent 70%),var(--s2)}
 .state b{display:block}
-.state span{font-size:13.5px;color:var(--ink-2)}
+.state span{font-size:13.5px;color:var(--text-2)}
+.state .btn{margin-top:10px;min-height:42px;padding:9px 14px;font-size:13.5px}
 
 /* 4 · Equipo (onboarding existente) */
-.offer{border-top:1px solid color-mix(in srgb,var(--blue) 40%,transparent);border-bottom:1px solid color-mix(in srgb,var(--blue) 40%,transparent);background:var(--blue-soft);padding:16px}
-.offer b{display:block}
-.offer p{margin:4px 0 0;font-size:13.5px;color:var(--ink-2)}
-.opt{width:100%;text-align:left;background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:16px;display:flex;gap:14px;align-items:flex-start}
-.opt:hover{border-color:var(--ink)}
-.opt .ic{width:38px;height:38px;border-radius:10px;background:var(--ink);color:var(--paper);display:grid;place-items:center;flex:none}
-.opt b{display:block}
-.opt span{display:block;font-size:13.5px;color:var(--ink-2);margin-top:2px}
-.opt[aria-pressed="true"]{border-color:var(--blue);box-shadow:0 0 0 3px var(--blue-soft)}
-.list{display:grid;gap:10px}
+.offer{position:relative;border:1px solid var(--line-2);border-radius:18px;padding:18px 16px 16px;overflow:hidden;
+  background:radial-gradient(120% 70% at 50% -20%,rgba(106,168,255,.20),rgba(99,109,255,.05) 50%,transparent 75%),var(--s2)}
+.offer::before{content:"";position:absolute;left:14%;right:14%;top:0;height:1px;background:linear-gradient(90deg,transparent,var(--ice),transparent);opacity:.75}
+.offer b{display:block;font-size:16px}
+.offer p{margin:4px 0 0;font-size:13.5px;color:var(--text-2)}
+.list{display:grid;gap:0;border-top:1px solid var(--line)}
+.opt{width:100%;text-align:left;background:none;border:0;border-bottom:1px solid var(--line);padding:15px 4px;display:flex;gap:14px;align-items:flex-start}
+.opt:hover{background:linear-gradient(90deg,rgba(106,168,255,.07),transparent 70%)}
+.opt:hover b{color:var(--ice)}
+.opt .ic{width:36px;height:36px;border-radius:10px;background:var(--s2);color:var(--elec);display:grid;place-items:center;flex:none}
+.opt b{display:block;font-size:15px}
+.opt span{display:block;font-size:13.5px;color:var(--text-2);margin-top:2px}
+.list .btn-l{justify-self:start;margin-top:6px}
 .form{display:grid;gap:14px}
 .form label{display:grid;gap:5px;font-size:13px;font-weight:700}
-.form input{border:1px solid var(--line);border-radius:10px;padding:11px 12px;background:var(--paper);font-weight:500;min-width:0}
-.form input:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 3px var(--blue-soft)}
-.chip{display:flex;justify-content:space-between;align-items:center;background:var(--paper-2);border-radius:10px;padding:10px 14px;font-size:14px;font-weight:600}
-.chip button{background:none;border:0;color:var(--blue);font-weight:700}
-.code{font:800 26px/1 var(--body);letter-spacing:.18em;text-align:center;padding:18px;border:1.5px dashed var(--ink);border-radius:12px}
-.copy{font-size:13px;font-weight:700;color:var(--blue);background:none;border:0;padding:8px}
+.form input,#jc{border:1px solid var(--line-2);border-radius:12px;padding:11px 12px;background:var(--bg);font-weight:500;min-width:0;min-height:46px}
+.form input:focus,#jc:focus{outline:none;border-color:var(--elec);box-shadow:0 0 0 3px rgba(106,168,255,.18),0 0 18px -4px rgba(106,168,255,.6)}
+.chip{display:flex;justify-content:space-between;align-items:center;background:var(--s1);border:1px solid var(--line);border-radius:12px;padding:10px 14px;font-size:14px;font-weight:600}
+.chip button{background:none;border:0;color:var(--elec);font-weight:700}
+.code{font-weight:800;font-size:26px;line-height:1;letter-spacing:.18em;text-align:center;padding:20px;border:1px solid var(--line-2);border-radius:14px;color:var(--white);
+  background:radial-gradient(90% 80% at 50% -10%,rgba(185,224,255,.16),transparent 70%),var(--s2);text-shadow:0 0 14px rgba(185,224,255,.35)}
+.copy{font-size:13px;font-weight:700;color:var(--elec);background:none;border:0;padding:8px}
+.done-h{margin:0;font-size:28px;font-weight:800;letter-spacing:-.02em}
 
-/* 5 · Semana */
+/* 5 · Semana: la opción elegida lleva la luz */
 .weeks{display:grid;grid-template-columns:1fr 1fr;gap:8px}
-.week{border:1px solid var(--line);border-radius:12px;padding:12px;text-align:left;background:var(--paper)}
+.week,.tpl{border:1px solid var(--line);border-radius:12px;padding:12px;text-align:left;background:var(--s1)}
 .week b{display:block;font-size:14px}
-.week span{font-size:12.5px;color:var(--ink-2);font-variant-numeric:tabular-nums}
-.week[aria-pressed="true"]{border-color:var(--blue);box-shadow:0 0 0 3px var(--blue-soft)}
+.week span{font-size:12.5px;color:var(--text-2);font-variant-numeric:tabular-nums}
+.week[aria-pressed="true"],.tpl[aria-pressed="true"]{border-color:rgba(185,224,255,.45);background:radial-gradient(120% 90% at 50% -30%,rgba(106,168,255,.18),transparent 70%),var(--s2);box-shadow:0 0 22px -8px rgba(106,168,255,.6)}
 .tpls{display:grid;gap:8px}
-.tpl{display:grid;grid-template-columns:auto 1fr;gap:4px 12px;align-items:center;text-align:left;border:1px solid var(--line);border-radius:12px;padding:12px 14px;background:var(--paper)}
-.tpl i{grid-row:span 2;width:10px;height:36px;border-radius:5px}
+.tpl{display:grid;grid-template-columns:auto 1fr;gap:4px 12px;align-items:center;padding:12px 14px}
+.tpl i{grid-row:span 2;width:4px;height:34px;border-radius:3px;background:var(--line-2)}
+.tpl[aria-pressed="true"] i{background:var(--ice);box-shadow:0 0 10px 1px rgba(185,224,255,.6)}
 .tpl b{font-size:14px}
-.tpl span{font-size:12.5px;color:var(--ink-2)}
-.tpl[aria-pressed="true"]{border-color:var(--blue);box-shadow:0 0 0 3px var(--blue-soft)}
-.days{display:grid;grid-template-columns:repeat(7,1fr);gap:4px;margin-top:4px}
-.days div{text-align:center;font-size:11px;color:var(--pencil);padding:8px 0;border-radius:8px;background:var(--paper-2);font-variant-numeric:tabular-nums}
-.days div b{display:block;font-size:14px;color:var(--ink)}
-.days div.md{background:var(--ink);color:var(--paper)}
-.days div.md b{color:var(--paper)}
-.sec-label{font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--pencil);margin:0 0 8px}
+.tpl span{font-size:12.5px;color:var(--text-2)}
+.days{display:grid;grid-template-columns:repeat(7,1fr);gap:4px;margin-top:6px}
+.days div{text-align:center;font-size:11px;color:var(--text-3);padding:8px 0;border-radius:8px;background:var(--s1);border:1px solid var(--line);font-variant-numeric:tabular-nums}
+.days div b{display:block;font-size:14px;color:var(--text-2)}
+.days div.md{background:var(--s3);border-color:rgba(185,224,255,.4);color:var(--ice);box-shadow:0 0 14px -4px rgba(185,224,255,.6)}
+.days div.md b{color:var(--white)}
+.sec-label{font-size:10.5px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--text-3);margin:0 0 8px}
 
 /* 6 · App */
 .home{display:grid;gap:14px}
 .home .hello{display:flex;justify-content:space-between;align-items:center;gap:10px}
-.home h2{font:700 24px/1.1 var(--body);margin:0;letter-spacing:-.01em}
-.home .date{font-size:12px;color:var(--ink-2);margin-top:4px}
-.round{width:44px;height:44px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;background:var(--paper)}
+.home h2{font-size:24px;font-weight:800;line-height:1.1;margin:0;letter-spacing:-.02em}
+.home .date{font-size:12px;color:var(--text-2);margin:4px 0 0}
+.round{width:44px;height:44px;border-radius:50%;border:1px solid var(--line-2);display:grid;place-items:center;background:var(--s1);color:var(--text-2)}
 .round.p{background:var(--blue);color:#fff;border-color:var(--blue)}
-.panel{border:1px solid var(--line);border-radius:16px;padding:16px}
+.panel{border:1px solid var(--line);border-radius:16px;padding:16px;background:var(--s1)}
 .panel h3{margin:0 0 6px;font-size:17px}
 .task{display:flex;gap:12px;align-items:center;padding:10px 0;border-top:1px solid var(--line);font-size:14px}
 .task:first-of-type{border-top:0}
-.task i{width:8px;height:8px;border-radius:50%;background:var(--blue);flex:none}
-.toast{position:absolute;left:50%;bottom:22px;transform:translateX(-50%);background:var(--ink);color:var(--paper);font-size:13.5px;font-weight:600;padding:10px 16px;border-radius:10px;z-index:4;white-space:nowrap;box-shadow:0 8px 20px rgba(0,0,0,.2)}
-.toast.err{background:var(--warn);color:#fff}
-.skel{background:linear-gradient(90deg,var(--paper-2),var(--line),var(--paper-2));background-size:200% 100%;animation:sk 1.4s linear infinite;border-radius:8px}
+.task i{width:7px;height:7px;border-radius:50%;background:var(--elec);flex:none;box-shadow:0 0 8px 1px rgba(106,168,255,.5)}
+.toast{position:absolute;left:50%;bottom:22px;transform:translateX(-50%);background:var(--s3);border:1px solid var(--line-2);color:var(--white);font-size:13.5px;font-weight:600;padding:10px 16px;border-radius:12px;z-index:4;white-space:nowrap;box-shadow:0 12px 30px rgba(0,0,0,.5);max-width:calc(100% - 32px);overflow:hidden;text-overflow:ellipsis}
+.toast.err{color:var(--err);border-color:rgba(255,155,143,.3)}
+.skel{background:linear-gradient(90deg,var(--s2),var(--s3),var(--s2));background-size:200% 100%;animation:sk 1.4s linear infinite;border-radius:8px}
 @keyframes sk{to{background-position:-200% 0}}
 
 /* Notas */
 .notes{max-width:1180px;margin:30px auto 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:16px}
-.note{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:18px 20px;min-width:0}
-.note h3{margin:0 0 8px;font:400 22px var(--display)}
-.note ul{margin:0;padding-left:18px;font-size:13.5px;color:var(--ink-2);display:grid;gap:5px}
-.note b{color:var(--ink)}
-.note.prop h3{color:var(--blue)}
+.note{background:var(--s1);border:1px solid var(--line);border-radius:14px;padding:18px 20px;min-width:0}
+.note h3{margin:0 0 8px;font-size:16px;font-weight:800}
+.note ul{margin:0;padding-left:18px;font-size:13.5px;color:var(--text-2);display:grid;gap:5px}
+.note b{color:var(--white)}
+.note.prop h3{color:var(--elec)}
+.note.uv h3{color:#B9A2FF}
 </style>
 
 <header class="bar"><div class="bar-in">
-  <h1>Recorrido <i>inicial</i></h1>
-  <label class="ctl"><span>Pantalla</span><div class="seg" id="dev"><button aria-pressed="true" data-v="mobile">Móvil</button><button aria-pressed="false" data-v="desktop">Escritorio</button></div></label>
+  <h1>Recorrido inicial <i>· v4</i></h1>
+  <div class="ctl"><span>Pantalla</span><div class="seg" id="dev"><button aria-pressed="true" data-v="mobile">Móvil</button><button aria-pressed="false" data-v="desktop">Escritorio</button></div></div>
+  <div class="ctl"><span>Fechas</span><div class="seg" id="dates"><button aria-pressed="true" data-v="v4">10/12 · 11/12 (por confirmar)</button><button aria-pressed="false" data-v="code">27/11 · 28/11 (código hoy)</button></div></div>
   <label class="ctl"><span>Quién entra</span><select class="sel" id="who"><option value="founder">Apuntado a la lista de espera</option><option value="other">Sin lista de espera</option></select></label>
   <label class="ctl"><span>Tramo</span><select class="sel" id="jump"></select></label>
   <label class="ctl"><span>Insignia</span><select class="sel" id="bdg"><option value="none">Sin solicitar</option><option value="requested">En revisión</option><option value="rejected">Rechazada</option><option value="verified">Verificada (Nº 011)</option></select></label>
@@ -216,7 +237,7 @@ select.sel{font:600 12.5px var(--body);background:var(--paper-2);border:1px soli
 
   <section class="notes">
     <div class="note"><h3>Confirmado (se conserva)</h3><ul>
-      <li><b>Ventajas</b>: solo las de CLUB_FUNDADOR.md que se pueden decir: insignia con tu número, 3 meses gratis (lista de espera), una persona del equipo te acompaña, votas en lo que construimos. Las invitaciones, «muy pronto», como en la portada.</li>
+      <li><b>Ventajas</b>: solo las de CLUB_FUNDADOR.md que se pueden decir: insignia con tu número, 3 meses gratis (lista de espera, hasta el cierre), una persona del equipo te acompaña, votas en lo que construimos. Las invitaciones, «muy pronto», como en la portada.</li>
       <li><b>Carta</b>: texto, firma animada y «Biel · creador de ProTeam» de <code>FounderWelcomeDialog</code>, sin cambios. El nombre de Biel solo aquí.</li>
       <li><b>Insignia</b>: el flujo del PR #1 tal cual: 3 pasos, imagen, Compartir (si hay <code>navigator.share</code>) y Descargar, @, «Ya la he compartido», verificación manual, rayo.</li>
       <li><b>Equipo</b>: el onboarding actual entero: oferta del primer equipo, Unirme con código, Crear equipo (deporte → modalidad → datos → código), Canjear código de activación.</li>
@@ -230,6 +251,21 @@ select.sel{font:600 12.5px var(--body);background:var(--paper-2);border:1px soli
       <li>Tras crear el equipo, botón «Planificar mi primera semana» en vez de ir directo al panel.</li>
       <li>«Tu primera semana»: elige semana (esta o la siguiente) y plantilla; la app crea la temporada, el bloque y la semana con los flujos de hoy.</li>
       <li>Estados de error y de carga en cada guardado; aviso de entrada en la app.</li>
+    </ul></div>
+    <div class="note prop"><h3>Rehecho en v4 (propuesta de piel, 24/11)</h3><ul>
+      <li>Paleta oscura de la app: fondo <code>#02050F</code>, superficies <code>#060C19</code>/<code>#0C1323</code>, Plus Jakarta Sans. Mismos tramos, botones, textos y estados que la versión anterior.</li>
+      <li><b>La luz señala lo activo</b>: el tramo actual de la raya (filo hielo con halo), el bloque del Club y la oferta del primer equipo iluminados desde arriba, el paso que toca de la insignia, la semana y la plantilla elegidas y el campo con foco. Lo demás, en penumbra.</li>
+      <li>Carta: la hoja en <code>#060C19</code> como lo único iluminado, nombre en Instrument Serif cursiva con línea de luz hielo y firma en azul eléctrico (igual que el prototipo de la carta).</li>
+      <li>Plantillas de semana sin colores propios: una barra que se enciende al elegirla (antes azul, gris, negro y verde).</li>
+      <li>Errores en coral suave con un <b>móvil boca abajo</b> (dibujo provisional); nada de rojo.</li>
+      <li><b>Fechas</b>: con 10/12 · 11/12 (por confirmar, RELANZAMIENTO.md) cambian «antes del 10 de diciembre a las 23:59», la entrada del viernes 11 de diciembre y las semanas (7–13 dic / 14–20 dic). El código sigue en 27/11 · 28/11.</li>
+    </ul></div>
+    <div class="note uv"><h3>Ultravioleta (una vez por pantalla)</h3><ul>
+      <li><b>Club</b>: el rayo de «Insignia de fundador con tu número».</li>
+      <li><b>Carta</b>: verificada, el rayo del membrete; sin verificar, la insignia apagada y «Conseguir mi insignia».</li>
+      <li><b>Insignia</b>: sin pedir o rechazada, el rayo dentro de la imagen para compartir; verificada, el rayo de la insignia. En revisión, ninguno.</li>
+      <li><b>Equipo</b> y <b>Semana</b>: ninguno (no hay rayo ni acceso al Club).</li>
+      <li><b>App</b>: solo con la insignia verificada, el rayo del bloque del Club.</li>
     </ul></div>
   </section>
 </main>
@@ -245,7 +281,7 @@ const STEPS = [
   { id: "equipo", label: "Equipo" },
   { id: "semana", label: "Semana" },
 ];
-const S = { step: "club", who: "founder", sim: "ok", device: "mobile",
+const S = { step: "club", who: "founder", sim: "ok", device: "mobile", dates: "v4",
   badge: "none", handle: "", sending: false, sendErr: false,
   team: { view: "menu", path: null, sport: null, variant: null, name: "Infantil A", category: "Infantil", season: "2026-27", code: null, creating: false, err: false, joinCode: "", joinPreview: false },
   week: { which: "next", tpl: "carrega", creating: false, err: false, skipped: false },
@@ -256,7 +292,8 @@ const ICON = {
   back: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>',
   key: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="8" cy="15" r="4"/><path d="M11 12l9-9M16 7l3 3"/></svg>',
   board: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4h6v3H9zM9 12h6M9 16h4"/></svg>',
-  gift: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true" style="color:var(--blue);flex:none"><rect x="3" y="8" width="18" height="4"/><path d="M5 12v9h14v-9M12 8v13M12 8S10 3 7.5 4.5 9 8 12 8zm0 0s2-5 4.5-3.5S15 8 12 8z"/></svg>',
+  gift: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true" style="color:var(--ice);flex:none"><rect x="3" y="8" width="18" height="4"/><path d="M5 12v9h14v-9M12 8v13M12 8S10 3 7.5 4.5 9 8 12 8zm0 0s2-5 4.5-3.5S15 8 12 8z"/></svg>',
+  field: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="1"/><path d="M12 6v12"/><circle cx="12" cy="12" r="2.4"/></svg>',
   cal: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>',
   plus: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>',
   share: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 3v13M7 8l5-5 5 5M5 14v6h14v-6"/></svg>',
@@ -265,11 +302,18 @@ const ICON = {
   clock: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true" style="flex:none;margin-top:2px"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>',
 };
 const ROSETTE = (() => { const p = []; for (let i = 0; i < 24; i++) { const a = Math.PI * i / 12 - Math.PI / 2, r = i % 2 ? 88 : 100; p.push((110 + r * Math.cos(a)).toFixed(1) + "," + (110 + r * Math.sin(a)).toFixed(1)); } return p.join(" "); })();
-function badge(size, { muted = false, number = null, pop = false } = {}) {
-  const fill = muted ? "var(--pencil)" : "var(--blue)";
-  return `<svg width="${size}" height="${size}" viewBox="0 0 220 220" class="${pop ? "pop" : ""}" style="flex:none" role="img" aria-label="Insignia del Club Fundador"><polygon points="${ROSETTE}" fill="${fill}" opacity="${muted ? .35 : 1}"/><circle cx="110" cy="110" r="70" fill="none" stroke="#fff" stroke-opacity=".35" stroke-width="2"/><path d="M122 52L78 120h30l-12 48 46-70h-30l10-46z" fill="#fff" stroke="#fff" stroke-width="6" stroke-linejoin="round"/>${number ? `<text x="110" y="196" text-anchor="middle" font-weight="800" font-size="22" fill="#fff" font-family="Manrope,sans-serif">${number}</text>` : ""}</svg>`;
+/* Insignia v4: apagada (gris en penumbra) o encendida (roseta azul); el rayo va en ultravioleta con filo blanco solo cuando es el momento de la pantalla (uv) */
+let _bid = 0;
+function badge(size, { muted = false, number = null, pop = false, uv = false } = {}) {
+  const id = "bg" + (++_bid);
+  if (muted) return `<svg width="${size}" height="${size}" viewBox="0 0 220 220" style="flex:none" role="img" aria-label="Insignia del Club Fundador, sin verificar"><polygon points="${ROSETTE}" fill="#6F7A91" opacity=".28"/><path d="M122 52L78 120h30l-12 48 46-70h-30l10-46z" fill="#060C19"/></svg>`;
+  const bolt = uv ? `<path d="M122 52L78 120h30l-12 48 46-70h-30l10-46z" fill="#8B5CF6" stroke="#fff" stroke-width="7" stroke-linejoin="round" paint-order="stroke"/>` : `<path d="M122 52L78 120h30l-12 48 46-70h-30l10-46z" fill="#F4F7FB"/>`;
+  return `<svg width="${size}" height="${size}" viewBox="0 0 220 220" class="${pop ? "pop" : ""}" style="flex:none;filter:drop-shadow(0 0 14px rgba(106,168,255,.35))" role="img" aria-label="Insignia del Club Fundador"><defs><linearGradient id="${id}" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6AA8FF"/><stop offset="1" stop-color="#4469FA"/></linearGradient></defs><polygon points="${ROSETTE}" fill="url(#${id})"/><circle cx="110" cy="110" r="70" fill="none" stroke="#B9E0FF" stroke-opacity=".45" stroke-width="2"/>${bolt}${number ? `<text x="110" y="196" text-anchor="middle" font-weight="800" font-size="22" fill="#fff" font-family="Plus Jakarta Sans,sans-serif">${number}</text>` : ""}</svg>`;
 }
-const UL = '<svg viewBox="0 0 100 10" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M2 7 C 25 3, 55 9, 98 4"/></svg>';
+/* Objeto real (dibujo provisional hasta tener foto propia o con licencia): móvil boca abajo */
+const PHONE_DOWN = '<svg class="obj" width="54" height="42" viewBox="0 0 74 58" aria-hidden="true"><ellipse cx="37" cy="50" rx="34" ry="5" fill="#000" opacity=".5"/><rect x="8" y="20" width="58" height="26" rx="6" fill="#0C1323" stroke="#B9E0FF" stroke-opacity=".25"/><rect x="14" y="25" width="10" height="10" rx="3" fill="#121B30" stroke="#B9E0FF" stroke-opacity=".2"/><circle cx="19" cy="30" r="2.4" fill="#02050F"/><path d="M10 46h54" stroke="#6AA8FF" stroke-width="1.5" opacity=".5"/></svg>';
+const errMsg = (html) => `<div class="msg err" role="alert" data-prop>${PHONE_DOWN}<span>${html}<span class="obj-cap" style="display:block">Dibujo provisional</span></span></div>`;
+const V4 = () => S.dates === "v4";
 const SIG = '<svg viewBox="0 0 170 80" class="sigsvg" aria-hidden="true"><path pathLength="1" d="M18 62 C22 44 26 26 30 12 C42 9 52 18 41 29 C35 35 27 35 31 33 C47 30 57 42 45 54 C37 62 25 64 18 60 C32 58 44 52 52 46 C54 52 52 58 58 58 C66 58 74 50 72 44 C70 38 62 42 62 50 C62 60 74 62 84 54 C94 46 102 26 98 16 C94 8 88 20 88 34 C88 50 92 60 100 58 C108 56 116 50 124 46"/><path pathLength="1" d="M55 37 l1.5 1.5"/><path pathLength="1" class="tail" d="M14 71 C60 66 118 68 152 61"/></svg>';
 
 const visibleSteps = () => STEPS.filter(s => S.who === "founder" || !s.founder);
@@ -289,39 +333,39 @@ function top() {
 const V = {};
 V.club = () => `${top()}
 <div class="enter"><p class="kicker">Ya estás dentro</p>
-<h2 class="h">Bienvenido al <span class="ul"><em>Club Fundador</em>${UL}</span></h2>
+<h2 class="h">Bienvenido al <span class="lit"><em>Club Fundador</em></span></h2>
 <p class="lead">Estás en ProTeam desde el principio. Esto es lo que tienes por haberte apuntado a la lista de espera.</p></div>
-<ul class="perks enter">
-  <li>${ICON.bolt.replace('fill="currentColor"', 'fill="var(--blue)"')}<div><b>Insignia de fundador con tu número</b><span>Verificada y numerada. Ningún número se repite. Se consigue compartiendo una historia: te lo explicamos en un momento.</span></div></li>
-  <li>${ICON.bolt.replace('fill="currentColor"', 'fill="var(--blue)"')}<div><b>3 meses gratis</b><span>Para tu primer equipo, por apuntarte antes del 27 de noviembre a las 23:59.</span></div></li>
-  <li>${ICON.bolt.replace('fill="currentColor"', 'fill="var(--blue)"')}<div><b>Una persona del equipo te acompaña</b><span>Soporte de tú a tú durante los tres primeros meses.</span></div></li>
-  <li>${ICON.bolt.replace('fill="currentColor"', 'fill="var(--blue)"')}<div><b>Votas en lo que construimos</b><span>Encuestas y votaciones solo para fundadores.</span></div></li>
-  <li class="soon">${ICON.bolt}<div><b>Invitaciones para tus amigos</b><span>Muy pronto te contamos cómo funcionan.</span></div></li>
-</ul>
+<div class="club enter"><ul class="perks">
+  <li><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 2 5 13.5h6L9.5 22 19 9.5h-6L13.5 2z" fill="#8B5CF6" stroke="#fff" stroke-width="1.4" stroke-linejoin="round" paint-order="stroke"/></svg><div><b>Insignia de fundador con tu número</b><span>Verificada y numerada. Ningún número se repite. Se consigue compartiendo una historia: te lo explicamos en un momento.</span></div></li>
+  <li><i class="dot"></i><div><b>3 meses gratis</b><span>Para tu primer equipo, por apuntarte antes del ${V4() ? "10 de diciembre" : "27 de noviembre"} a las 23:59.</span></div></li>
+  <li><i class="dot"></i><div><b>Una persona del equipo te acompaña</b><span>Soporte de tú a tú durante los tres primeros meses.</span></div></li>
+  <li><i class="dot"></i><div><b>Votas en lo que construimos</b><span>Encuestas y votaciones solo para fundadores.</span></div></li>
+  <li class="soon"><i class="dot"></i><div><b>Invitaciones para tus amigos</b><span>Muy pronto te contamos cómo funcionan.</span></div></li>
+</ul></div>
 <div class="actions"><button class="btn btn-p" data-a="next">Seguir</button><p class="fine">Son cuatro pasos más. Puedes dejar cualquiera para luego, menos crear tu equipo.</p></div>`;
 
 V.carta = () => `${top()}
 <article class="letter enter" aria-labelledby="lt">
-  <div class="head">${badge(64, { muted: S.badge !== "verified", number: S.badge === "verified" ? "Nº 011" : null })}<div><p class="numtag">${S.badge === "verified" ? "Fundador Nº 011" : "Club Fundador"}</p><h2 id="lt">¡Bienvenido al Club Fundador, Marta!</h2></div></div>
+  <div class="head">${badge(56, { muted: S.badge !== "verified", uv: S.badge === "verified" })}<div><p class="numtag">${S.badge === "verified" ? "Fundador Nº 011" : "Club Fundador"}</p><h2 id="lt">¡Bienvenido al Club Fundador, <span class="nm lit">Marta</span>!</h2></div></div>
   <p>Soy Biel, creador de ProTeam. Gracias por estar aquí desde el principio.</p>
   <p>ProTeam nace en el banquillo y queremos que crezca contigo: con lo que uses, con lo que eches de menos y con lo que nos cuentes.</p>
   <p>Tu confianza es lo que da sentido a todo esto. Gracias por formar parte de este camino.</p>
   <p>Nos vemos dentro de ProTeam.</p>
   <div class="sign"><div>${SIG}<small>Biel · creador de ProTeam</small></div></div>
 </article>
-<div class="actions"><button class="btn btn-p" data-a="next">${S.badge === "verified" ? "Seguir" : "Conseguir mi insignia"}</button><p class="fine" data-prop>Podrás volver a leerla desde tu perfil, en «Ver mi carta de bienvenida».</p></div>`;
+<div class="actions">${S.badge === "verified" ? `<button class="btn btn-p" data-a="next">Seguir</button>` : `<button class="btn btn-uv" data-a="next">Conseguir mi insignia</button>`}<p class="fine" data-prop>Podrás volver a leerla desde tu perfil, en «Ver mi carta de bienvenida».</p></div>`;
 
 V.insignia = () => {
   const b = S.badge;
   let body;
-  if (b === "verified") body = `<div class="state enter">${badge(72, { number: "Nº 011", pop: true })}<div><b>Insignia verificada</b><span>Fundador Nº 011. Gracias por estar desde el principio.</span></div></div>`;
+  if (b === "verified") body = `<div class="state lit-box enter">${badge(72, { number: "Nº 011", pop: true, uv: true })}<div><b>Insignia verificada</b><span>Fundador Nº 011. Gracias por estar desde el principio.</span></div></div>`;
   else if (b === "requested") body = `<div class="state enter">${badge(64, { muted: true })}<div><b>Estamos revisando tu historia</b><span>Solicitud enviada como @${S.handle || "marta.entrena"}. Te avisaremos cuando esté verificada. Mientras, sigue: no hace falta esperar.</span></div></div>
     <button class="btn-l" data-a="editbadge">Actualizar solicitud</button>`;
-  else body = `${b === "rejected" ? `<div class="msg err">${ICON.alert}<span><b>No hemos encontrado tu historia con la mención.</b> Revisa que la historia esté publicada y nos mencione, y vuelve a enviarla.</span></div>` : ""}
-  <ol class="steps"><li><b>1</b><span>Descarga tu imagen o compártela directamente.</span></li><li><b>2</b><span>Súbela a tu historia de Instagram y menciona a @app.proteam. Sin la mención no cuenta.</span></li><li><b>3</b><span>Escribe tu usuario de Instagram y envíalo. Revisamos tu historia a mano y verificamos tu insignia.</span></li></ol>
-  <div class="share"><div class="img" aria-label="Imagen para compartir: «¡Ya estoy dentro!» con la insignia del Club Fundador" role="img">${badge(46)}</div><div class="btns"><button class="btn btn-b" data-a="toastShare">${ICON.share} Compartir</button><button class="btn btn-o" data-a="toastDown">${ICON.down} Descargar imagen</button></div></div>
+  else body = `${b === "rejected" ? `<div class="msg warn">${ICON.alert}<span><b>No hemos encontrado tu historia con la mención.</b> Revisa que la historia esté publicada y nos mencione, y vuelve a enviarla.</span></div>` : ""}
+  <ol class="steps" aria-label="Pasos"><li class="${S.handle ? "" : "on"}"><b>1</b><span>Descarga tu imagen o compártela directamente.</span></li><li><b>2</b><span>Súbela a tu historia de Instagram y menciona a @app.proteam. Sin la mención no cuenta.</span></li><li class="${S.handle ? "on" : ""}"><b>3</b><span>Escribe tu usuario de Instagram y envíalo. Revisamos tu historia a mano y verificamos tu insignia.</span></li></ol>
+  <div class="share"><div class="img" aria-label="Imagen para compartir: «¡Ya estoy dentro!» con la insignia del Club Fundador" role="img">${badge(46, { uv: true })}</div><div class="btns"><button class="btn btn-b" data-a="toastShare">${ICON.share} Compartir</button><button class="btn btn-o" data-a="toastDown">${ICON.down} Descargar imagen</button></div></div>
   <form class="field" id="hf"><label for="handle">Tu usuario de Instagram</label><div class="inwrap"><span>@</span><input id="handle" autocomplete="off" placeholder="tu.usuario" value="${S.handle}"></div>
-  ${S.sendErr ? `<div class="msg err" style="margin-top:10px">${ICON.alert}<span>No se ha podido enviar. Inténtalo de nuevo.</span></div>` : ""}
+  ${S.sendErr ? `<div style="margin-top:10px">${errMsg("No se ha podido enviar. Inténtalo de nuevo.")}</div>` : ""}
   <p class="fine" style="margin-top:8px">Pulsar «Compartir» no verifica la insignia: siempre comprobamos la historia.</p>
   <button class="btn btn-p" style="width:100%;margin-top:12px" ${S.sending ? "disabled" : ""}>${S.sending ? "Enviando…" : "Ya la he compartido"}</button></form>`;
   return `${top()}
@@ -340,21 +384,21 @@ V.equipo = () => {
   let body;
   if (t.view === "menu") body = `
     ${founder ? `<div class="offer"><div style="display:flex;gap:12px">${ICON.gift}<div><b>3 meses gratis para tu primer equipo</b><p>Crea tu primer equipo y disfruta de acceso completo durante tres meses, sin pagar al crearlo.</p></div></div><button class="btn btn-p" style="width:100%;margin-top:14px" data-a="tview" data-v="sport">Crear mi primer equipo</button></div>` : ""}
-    <div class="list"><button class="opt" data-a="tview" data-v="join"><span class="ic">${ICON.key}</span><span><b>Unirme con código</b><span>Introduce el código que te ha dado tu club o entrenador. Si requiere aprobación, la revisarán.</span></span></button>
+    <div class="list"${founder ? "" : ' style="margin-top:4px"'}><button class="opt" data-a="tview" data-v="join"><span class="ic">${ICON.key}</span><span><b>Unirme con código</b><span>Introduce el código que te ha dado tu club o entrenador. Si requiere aprobación, la revisarán.</span></span></button>
     <button class="opt" data-a="tview" data-v="sport"><span class="ic">${ICON.board}</span><span><b>Crear equipo</b><span>Crea tu equipo, invita a los jugadores y elige después el plan mensual o anual.</span></span></button>
     <button class="btn-l" data-a="toastAct">Canjear código de activación</button></div>`;
-  else if (t.view === "sport") body = `<p style="margin:0;font-weight:700;font-size:18px">¿Qué deporte practica tu equipo?</p><p class="fine" style="color:var(--ink-2)">Elige el deporte antes de crear el equipo. Podrás cambiarlo después desde la configuración.</p>
-    <div class="list">${SPORTS.map(s => `<button class="opt" data-a="sport" data-v="${s[0]}"><span class="ic">${ICON.bolt}</span><span><b>${s[1]}</b><span>${s[2]}</span></span></button>`).join("")}</div><button class="skip" data-a="tview" data-v="menu">Volver</button>`;
-  else if (t.view === "variant") body = `<p style="margin:0;font-weight:700;font-size:18px">¿Qué modalidad juega el equipo?</p><p class="fine" style="color:var(--ink-2)">La modalidad define el campo, las posiciones, las alineaciones y las estadísticas de todo el equipo.</p>
-    <div class="list">${VARIANTS.map(s => `<button class="opt" data-a="variant" data-v="${s[0]}"><span class="ic">${ICON.bolt}</span><span><b>${s[1]}</b><span>${s[2]}</span></span></button>`).join("")}</div><button class="skip" data-a="tview" data-v="sport">Volver</button>`;
+  else if (t.view === "sport") body = `<p style="margin:0;font-weight:700;font-size:18px">¿Qué deporte practica tu equipo?</p><p class="fine" style="color:var(--text-2)">Elige el deporte antes de crear el equipo. Podrás cambiarlo después desde la configuración.</p>
+    <div class="list">${SPORTS.map(s => `<button class="opt" data-a="sport" data-v="${s[0]}"><span class="ic">${ICON.field}</span><span><b>${s[1]}</b><span>${s[2]}</span></span></button>`).join("")}</div><button class="skip" data-a="tview" data-v="menu">Volver</button>`;
+  else if (t.view === "variant") body = `<p style="margin:0;font-weight:700;font-size:18px">¿Qué modalidad juega el equipo?</p><p class="fine" style="color:var(--text-2)">La modalidad define el campo, las posiciones, las alineaciones y las estadísticas de todo el equipo.</p>
+    <div class="list">${VARIANTS.map(s => `<button class="opt" data-a="variant" data-v="${s[0]}"><span class="ic">${ICON.field}</span><span><b>${s[1]}</b><span>${s[2]}</span></span></button>`).join("")}</div><button class="skip" data-a="tview" data-v="sport">Volver</button>`;
   else if (t.view === "create") body = `<form class="form" id="tf"><p style="margin:0;font-weight:700;font-size:18px">Crear equipo</p>
     <div class="chip"><span>${sportName()}</span><button type="button" data-a="tview" data-v="sport">Cambiar</button></div>
     <label for="tn">Nombre del equipo<input id="tn" required value="${t.name}"></label>
     <label for="tc">Categoría<input id="tc" placeholder="Cadete, Juvenil…" value="${t.category}"></label>
     <label for="ts">Temporada<input id="ts" required value="${t.season}"></label>
-    ${t.err ? `<div class="msg err">${ICON.alert}<span>No se ha podido crear el equipo. Revisa tu conexión y vuelve a intentarlo; no se ha guardado nada.</span></div>` : ""}
+    ${t.err ? errMsg("No se ha podido crear el equipo. Revisa tu conexión y vuelve a intentarlo; no se ha guardado nada.") : ""}
     <button class="btn btn-p" ${t.creating ? "disabled" : ""}>${t.creating ? "Creando…" : "Crear equipo"}</button><button type="button" class="skip" data-a="tview" data-v="menu">Volver</button></form>`;
-  else if (t.view === "created") body = `<div class="enter" style="display:grid;gap:14px;text-align:center"><p style="margin:0;font:400 30px/1.1 var(--display)">Equipo creado</p><p class="fine" style="color:var(--ink-2)">${t.name} · ${sportName()} · ${t.season}</p><p style="margin:0;font-size:14px">Comparte este código con tus jugadores:</p><div class="code">EQUIP-7K2M</div><button class="copy" data-a="toastCopy" data-prop>Copiar código</button></div>`;
+  else if (t.view === "created") body = `<div class="enter" style="display:grid;gap:14px;text-align:center"><p class="done-h">Equipo creado</p><p class="fine" style="color:var(--text-2)">${t.name} · ${sportName()} · ${t.season}</p><p style="margin:0;font-size:14px">Comparte este código con tus jugadores:</p><div class="code">EQUIP-7K2M</div><button class="copy" data-a="toastCopy" data-prop>Copiar código</button></div>`;
   else if (t.view === "join") body = `<div class="form"><p style="margin:0;font-weight:700;font-size:18px">Código de equipo</p>
     <input id="jc" aria-label="Código de equipo" placeholder="EQUIP-XXXX" value="${t.joinCode}" style="text-align:center;font-weight:800;letter-spacing:.18em;font-size:18px;text-transform:uppercase">
     ${t.joinPreview ? `<div class="chip" style="display:block"><b>Cadete B · Balonmano</b><div class="fine">CB Gavà · 2026-27</div></div><button class="btn btn-p" data-a="joined">Entrar en el equipo</button>` : `<button class="btn btn-p" data-a="joincheck">Comprobar código</button>`}
@@ -364,8 +408,11 @@ V.equipo = () => {
   return `${top()}${head}${body}${actions}`;
 };
 
-const TPL = [["carrega", "Semana de carga", "Volumen alto", "var(--blue)"], ["descarrega", "Semana de descarga", "Reducir carga y recuperar", "var(--pencil)"], ["competicio", "Semana competitiva", "Preparar el partido", "var(--ink)"], ["recuperacio", "Recuperación", "Descanso activo", "var(--ok)"]];
-const WEEKS = { this: { t: "Esta semana", r: "23 – 29 nov", d: [23, 24, 25, 26, 27, 28, 29] }, next: { t: "La que viene", r: "30 nov – 6 dic", d: [30, 1, 2, 3, 4, 5, 6] } };
+const TPL = [["carrega", "Semana de carga", "Volumen alto"], ["descarrega", "Semana de descarga", "Reducir carga y recuperar"], ["competicio", "Semana competitiva", "Preparar el partido"], ["recuperacio", "Recuperación", "Descanso activo"]];
+const WEEKS_BY = {
+  v4: { this: { t: "Esta semana", r: "7 – 13 dic", d: [7, 8, 9, 10, 11, 12, 13] }, next: { t: "La que viene", r: "14 – 20 dic", d: [14, 15, 16, 17, 18, 19, 20] } },
+  code: { this: { t: "Esta semana", r: "23 – 29 nov", d: [23, 24, 25, 26, 27, 28, 29] }, next: { t: "La que viene", r: "30 nov – 6 dic", d: [30, 1, 2, 3, 4, 5, 6] } } };
+let WEEKS = WEEKS_BY.v4;
 V.semana = () => {
   const w = S.week, wk = WEEKS[w.which], tp = TPL.find(x => x[0] === w.tpl);
   return `${top()}
@@ -374,8 +421,8 @@ V.semana = () => {
   <div data-prop><p class="sec-label">Semana</p><div class="weeks">${Object.entries(WEEKS).map(([k, v]) => `<button class="week" aria-pressed="${w.which === k}" data-a="wk" data-v="${k}"><b>${v.t}</b><span>${v.r}</span></button>`).join("")}</div>
   <div class="days" aria-label="Días de la semana">${["L", "M", "X", "J", "V", "S", "D"].map((d, i) => `<div class="${w.tpl === "competicio" && i === 5 ? "md" : ""}">${d}<b>${wk.d[i]}</b></div>`).join("")}</div>
   ${w.tpl === "competicio" ? `<p class="fine" style="margin-top:6px">El partido lo añades después desde Partidos; la semana se ordena a su alrededor.</p>` : ""}</div>
-  <div><p class="sec-label">Plantilla</p><div class="tpls">${TPL.map(x => `<button class="tpl" aria-pressed="${w.tpl === x[0]}" data-a="tpl" data-v="${x[0]}"><i style="background:${x[3]}"></i><b>${x[1]}</b><span>${x[2]}</span></button>`).join("")}</div></div>
-  ${w.err ? `<div class="msg err">${ICON.alert}<span>No hemos podido crear tu semana. Tu equipo sí está guardado. Vuelve a intentarlo o hazlo luego desde Planificación.</span></div>` : ""}
+  <div><p class="sec-label">Plantilla</p><div class="tpls">${TPL.map(x => `<button class="tpl" aria-pressed="${w.tpl === x[0]}" data-a="tpl" data-v="${x[0]}"><i></i><b>${x[1]}</b><span>${x[2]}</span></button>`).join("")}</div></div>
+  ${w.err ? errMsg("No hemos podido crear tu semana. Tu equipo sí está guardado. Vuelve a intentarlo o hazlo luego desde Planificación.") : ""}
   <div class="actions"><button class="btn btn-p" data-a="mkweek" ${w.creating ? "disabled" : ""}>${w.creating ? "Creando tu semana…" : `Crear «Semana 1» · ${tp[1].toLowerCase()}`}</button><button class="skip" data-a="skipweek">Ahora no, entrar en la app</button></div>`;
 };
 
@@ -384,8 +431,8 @@ V.app = () => {
   const slow = S.sim === "slow" && !S._loaded;
   if (slow) setTimeout(() => { S._loaded = true; render(); }, 1600);
   return `<div class="home enter">
-  <div class="hello"><div><h2>Hola, Marta</h2><p class="date">sábado, 28 de noviembre${has ? " · Semana 1" : ""}</p></div><div style="display:flex;gap:8px"><span class="round" aria-label="Calendario">${ICON.cal}</span><span class="round p" aria-label="Nueva sesión">${ICON.plus}</span></div></div>
-  ${S.who === "founder" ? `<div class="state" data-prop>${badge(40, { muted: S.badge !== "verified", number: S.badge === "verified" ? "Nº 011" : null })}<div><b>${S.badge === "verified" ? "Eres del Club Fundador" : S.badge === "requested" ? "Estamos revisando tu historia" : "Consigue tu insignia del Club Fundador"}</b><span>${S.badge === "verified" ? "Fundador Nº 011." : S.badge === "requested" ? "Te avisaremos cuando esté verificada." : "Comparte una historia, menciónanos y entra en el Club Fundador."}</span></div></div>` : ""}
+  <div class="hello"><div><h2>Hola, Marta</h2><p class="date">${V4() ? "viernes, 11 de diciembre" : "sábado, 28 de noviembre"}${has ? " · Semana 1" : ""}</p></div><div style="display:flex;gap:8px"><span class="round" aria-label="Calendario">${ICON.cal}</span><span class="round p" aria-label="Nueva sesión">${ICON.plus}</span></div></div>
+  ${S.who === "founder" ? `<div class="state lit-box" data-prop>${badge(40, { muted: S.badge !== "verified", uv: S.badge === "verified" })}<div><b>${S.badge === "verified" ? "Eres del Club Fundador" : S.badge === "requested" ? "Estamos revisando tu historia" : "Consigue tu insignia del Club Fundador"}</b><span>${S.badge === "verified" ? "Fundador Nº 011." : S.badge === "requested" ? "Te avisaremos cuando esté verificada." : "Comparte una historia, menciónanos y entra en el Club Fundador."}</span></div></div>` : ""}
   <div class="panel"><p class="sec-label">Semana</p>${slow ? `<div class="skel" style="height:44px"></div>` : has ? `<b>Semana 1 · ${tp[1]}</b><p class="fine" style="margin-top:2px">${wk.r} · ${tp[2]}</p>` : `<b>Sin microciclo</b><p class="fine" style="margin-top:2px">Esta semana no está planificada.</p><button class="btn btn-o" style="margin-top:10px">Crear semana</button>`}</div>
   <div class="panel"><h3>Tu día</h3><p class="sec-label" style="margin-top:10px">Pendiente · Hoy</p>${slow ? `<div class="skel" style="height:60px"></div>` : `<div class="task"><i></i>Invita a tus jugadores con el código EQUIP-7K2M</div><div class="task"><i></i>Añade la primera sesión de la semana</div>`}</div>
   <div class="panel"><p class="sec-label">Próximo partido</p><b>—</b><p class="fine">Sin datos próximos</p></div>
@@ -430,6 +477,8 @@ flow.addEventListener("click", e => {
 
 $("#dev").addEventListener("click", e => { const b = e.target.closest("button"); if (!b) return; S.device = b.dataset.v;
   [...$("#dev").children].forEach(x => x.setAttribute("aria-pressed", x === b)); frame.className = "frame " + S.device; $("#url").hidden = S.device !== "desktop"; frame.classList.toggle("show-prop", $("#prop").checked); });
+$("#dates").addEventListener("click", e => { const b = e.target.closest("button"); if (!b) return; S.dates = b.dataset.v; WEEKS = WEEKS_BY[S.dates];
+  [...$("#dates").children].forEach(x => x.setAttribute("aria-pressed", x === b)); render(); });
 $("#who").addEventListener("change", e => { S.who = e.target.value; S.team.view = "menu"; go(S.who === "founder" ? "club" : "equipo"); });
 $("#jump").addEventListener("change", e => { S._loaded = false; go(e.target.value); });
 $("#sim").addEventListener("change", e => { S.sim = e.target.value; S.team.err = S.week.err = S.sendErr = false; S._loaded = false; render(); });

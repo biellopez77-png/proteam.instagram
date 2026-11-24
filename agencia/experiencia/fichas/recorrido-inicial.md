@@ -1,8 +1,27 @@
 # Ficha · Recorrido inicial: ventajas → carta → insignia → equipo → primera semana → app
 
 **Agente:** Irene (P1) · **Fecha:** 22/11/2026 · **Tarea:** `exp-recorrido-inicial` (prioridad normal, prototipo para el 2/12)
-**Prototipo navegable:** https://claude.ai/artifact/R8Hw32rspoh6zaaxkFnRdN (móvil 375 y escritorio; selectores «Quién entra», «Tramo», «Insignia», «Simular: todo bien / error al guardar / carga lenta»; casilla «Marcar lo propuesto»). Copia local: `agencia/experiencia/prototipos/recorrido-inicial.html`.
+**Prototipo navegable:** https://claude.ai/artifact/R8Hw32rspoh6zaaxkFnRdN (versión 2, v4; móvil 375 y escritorio; selector «Fechas»; selectores «Quién entra», «Tramo», «Insignia», «Simular: todo bien / error al guardar / carga lenta»; casilla «Marcar lo propuesto»). Copia local: `agencia/experiencia/prototipos/recorrido-inicial.html`.
 **Base leída:** rama `revision/club-fundador` de proteamapp (commit 5c7a6bd): `routes/_authenticated/onboarding.tsx`, `components/founder/*`, `lib/founder.ts`, `components/planning/create-cycle-dialog.tsx`, `components/planning/tree.tsx` (`EmptyPlanningState`), `routes/_authenticated/coach.planning.index.tsx`, `components/planning/assistant-home.tsx`, `lib/public-account.functions.ts`.
+
+## 0. Rehecho en v4 (24/11, sistema v4 de Biel del 23/11) · tarea `irene-v4-paleta` (8/10)
+
+**Prototipo:** el mismo enlace, versión 2 (v4). Mismos tramos, botones, funciones, textos y estados que la versión anterior; cambia la piel. Lo de los apartados siguientes sigue vigente salvo lo que se dice aquí (la «raya de progreso a lápiz» y la sombra de papel quedan sustituidas por esto).
+
+**Confirmado (no cambia):** las ventajas de CLUB_FUNDADOR.md, las palabras de Biel y la firma `FounderSignature`, el flujo de la insignia del PR #1, `onboarding.tsx` entero (oferta, unirse, crear, canjear), las 4 plantillas de `create-cycle-dialog.tsx` y la bienvenida diaria (`AssistantHome`). Rama `revision/club-fundador`, commit 5c7a6bd, sin cambios desde la versión anterior.
+
+**Propuesto en v4:**
+- **Paleta oscura de la app:** fondo #02050F, superficies #060C19 / #0C1323, Plus Jakarta Sans en todo (títulos en 800). Instrument Serif cursiva solo en el nombre de la carta, como en el prototipo de la carta.
+- **La luz señala lo activo:** en la raya, el tramo actual lleva filo hielo (#B9E0FF) con halo y los hechos quedan en gris; el bloque de ventajas del Club y la oferta del primer equipo, iluminados desde arriba en #0C1323; en la insignia se enciende el paso que toca (1 con el campo vacío, 3 al escribir el @); la semana, la plantilla y el día de partido elegidos llevan halo; el campo con foco, halo azul eléctrico. Las opciones (unirse, crear, deportes) quedan en penumbra y se encienden al pasar.
+- **Plantillas de semana sin colores propios:** antes azul, gris, negro y verde; ahora una barra que se enciende al elegir. Los deportes llevan un campo en línea en vez del rayo, para que el rayo sea solo del verificado.
+- **Ultravioleta, una vez por pantalla:** Club: el rayo de «Insignia de fundador con tu número». Carta: verificada, el rayo del membrete; sin verificar, insignia apagada y «Conseguir mi insignia». Insignia: sin pedir o rechazada, el rayo dentro de la imagen para compartir; verificada, el rayo de la insignia; en revisión, ninguno. Equipo y Semana: ninguno. App: solo con la insignia verificada, el rayo del bloque del Club.
+- **Errores sin rojo:** coral suave con un **móvil boca abajo** (dibujo provisional) en «No se ha podido enviar», «No se ha podido crear el equipo» y «No hemos podido crear tu semana». El rechazo de la insignia pasa a ámbar suave (es un aviso, no un fallo). Carga lenta con esqueletos en #0C1323 → #121B30.
+- **Fechas** (selector en la barra): con 10/12 · 11/12 (por confirmar, RELANZAMIENTO.md) el Club dice «por apuntarte antes del 10 de diciembre a las 23:59», la app entra el «viernes, 11 de diciembre» y las semanas son 7–13 dic / 14–20 dic; con el código de hoy, 27/11, «sábado, 28 de noviembre» y 23–29 nov / 30 nov–6 dic. Es el único texto que cambia.
+
+**Dudas nuevas para Biel (v4):**
+8. ¿Ultravioleta en el rayo de la primera ventaja del Club o en ningún sitio de ese tramo? Propongo el rayo: es lo que se consigue en ese recorrido.
+9. Con la apertura el viernes 11/12, «Esta semana» (7–13 dic) ya va por el viernes: ¿mostramos solo «La que viene»? (Sustituye a la duda 4.)
+10. Objetos: el móvil boca abajo es un dibujo provisional. ¿Foto propia o con licencia (`banco/fotos`) o dibujo?
 
 ## 1. Qué se conserva (sin tocar funciones)
 - **Ventajas:** solo lo que CLUB_FUNDADOR.md permite decir: «Insignia de fundador con tu número», «3 meses gratis» (lista de espera, hasta el 27/11 23:59), «Una persona del equipo te acompaña», «Votas en lo que construimos». Invitaciones: «Muy pronto te contamos cómo funcionan.» (mismo texto que la portada). Sin precio fundador, sin detalles de tickets, sin número de apuntados.
