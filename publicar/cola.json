@@ -508,7 +508,9 @@
    "at": "2026-11-24T10:43:38.670466+01:00"
   },
   "tiktok": {
-   "status": "pendiente"
+   "status": "programada",
+   "via": "metricool",
+   "when": "2026-11-24T19:00:00+01:00"
   },
   "added": "2026-11-24T10:28:11.949304+01:00"
  },
@@ -525,7 +527,9 @@
    "when": "2026-11-26T20:30:00+01:00"
   },
   "tiktok": {
-   "status": "pendiente"
+   "status": "programada",
+   "via": "metricool",
+   "when": "2026-11-26T20:30:00+01:00"
   },
   "added": "2026-11-24T10:28:12.580313+01:00"
  },
@@ -542,7 +546,9 @@
    "when": "2026-11-27T20:30:00+01:00"
   },
   "tiktok": {
-   "status": "pendiente"
+   "status": "programada",
+   "via": "metricool",
+   "when": "2026-11-27T20:30:00+01:00"
   },
   "added": "2026-11-24T10:28:12.640748+01:00"
  },
@@ -559,7 +565,9 @@
    "when": "2026-11-28T20:30:00+01:00"
   },
   "tiktok": {
-   "status": "pendiente"
+   "status": "programada",
+   "via": "metricool",
+   "when": "2026-11-28T20:30:00+01:00"
   },
   "added": "2026-11-24T10:28:12.694015+01:00"
  },
@@ -648,7 +656,9 @@
    "when": "2026-11-24T20:30:00+01:00"
   },
   "tiktok": {
-   "status": "pendiente"
+   "status": "programada",
+   "via": "metricool",
+   "when": "2026-11-24T20:30:00+01:00"
   },
   "added": "2026-11-24T14:21:55.601338+01:00"
  },
@@ -665,7 +675,9 @@
    "when": "2026-11-25T13:30:00+01:00"
   },
   "tiktok": {
-   "status": "pendiente"
+   "status": "programada",
+   "via": "metricool",
+   "when": "2026-11-25T13:30:00+01:00"
   },
   "added": "2026-11-24T14:21:55.640288+01:00"
  },
@@ -682,7 +694,9 @@
    "when": "2026-11-25T20:30:00+01:00"
   },
   "tiktok": {
-   "status": "pendiente"
+   "status": "programada",
+   "via": "metricool",
+   "when": "2026-11-25T20:30:00+01:00"
   },
   "added": "2026-11-24T14:21:55.679844+01:00"
  },
@@ -699,7 +713,9 @@
    "when": "2026-11-26T13:30:00+01:00"
   },
   "tiktok": {
-   "status": "pendiente"
+   "status": "programada",
+   "via": "metricool",
+   "when": "2026-11-26T13:30:00+01:00"
   },
   "added": "2026-11-24T14:21:55.719308+01:00"
  },
@@ -716,7 +732,9 @@
    "when": "2026-11-27T13:30:00+01:00"
   },
   "tiktok": {
-   "status": "pendiente"
+   "status": "programada",
+   "via": "metricool",
+   "when": "2026-11-27T13:30:00+01:00"
   },
   "added": "2026-11-24T16:51:38.047618+01:00"
  },
@@ -733,7 +751,9 @@
    "when": "2026-11-28T13:30:00+01:00"
   },
   "tiktok": {
-   "status": "pendiente"
+   "status": "programada",
+   "via": "metricool",
+   "when": "2026-11-28T13:30:00+01:00"
   },
   "added": "2026-11-24T17:50:41.850714+01:00"
  },
@@ -750,7 +770,9 @@
    "when": "2026-11-29T13:30:00+01:00"
   },
   "tiktok": {
-   "status": "pendiente"
+   "status": "programada",
+   "via": "metricool",
+   "when": "2026-11-29T13:30:00+01:00"
   },
   "added": "2026-11-24T17:50:41.926482+01:00"
  },
@@ -767,7 +789,9 @@
    "when": "2026-11-29T20:30:00+01:00"
   },
   "tiktok": {
-   "status": "pendiente"
+   "status": "programada",
+   "via": "metricool",
+   "when": "2026-11-29T20:30:00+01:00"
   },
   "added": "2026-11-24T17:50:42.002169+01:00"
  },
@@ -784,7 +808,9 @@
    "when": "2026-11-30T13:30:00+01:00"
   },
   "tiktok": {
-   "status": "pendiente"
+   "status": "programada",
+   "via": "metricool",
+   "when": "2026-11-30T13:30:00+01:00"
   },
   "added": "2026-11-24T17:50:42.079229+01:00"
  },
@@ -801,7 +827,9 @@
    "when": "2026-11-30T20:30:00+01:00"
   },
   "tiktok": {
-   "status": "pendiente"
+   "status": "programada",
+   "via": "metricool",
+   "when": "2026-11-30T20:30:00+01:00"
   },
   "added": "2026-11-24T17:50:42.153472+01:00"
  },
@@ -818,7 +846,9 @@
    "when": "2026-12-01T13:30:00+01:00"
   },
   "tiktok": {
-   "status": "pendiente"
+   "status": "programada",
+   "via": "metricool",
+   "when": "2026-12-01T13:30:00+01:00"
   },
   "added": "2026-11-24T17:50:42.224331+01:00"
  },
@@ -835,7 +865,9 @@
    "when": "2026-12-01T20:30:00+01:00"
   },
   "tiktok": {
-   "status": "pendiente"
+   "status": "programada",
+   "via": "metricool",
+   "when": "2026-12-01T20:30:00+01:00"
   },
   "added": "2026-11-24T17:50:42.295667+01:00"
  },
@@ -852,7 +884,9 @@
    "when": "2026-12-02T13:30:00+01:00"
   },
   "tiktok": {
-   "status": "pendiente"
+   "status": "programada",
+   "via": "metricool",
+   "when": "2026-12-02T13:30:00+01:00"
   },
   "added": "2026-11-24T17:50:42.371037+01:00"
  },
@@ -869,7 +903,9 @@
    "when": "2026-12-02T20:30:00+01:00"
   },
   "tiktok": {
-   "status": "pendiente"
+   "status": "programada",
+   "via": "metricool",
+   "when": "2026-12-02T20:30:00+01:00"
   },
   "added": "2026-11-24T17:50:42.443131+01:00"
  },
@@ -886,7 +922,9 @@
    "when": "2026-12-03T13:30:00+01:00"
   },
   "tiktok": {
-   "status": "pendiente"
+   "status": "programada",
+   "via": "metricool",
+   "when": "2026-12-03T13:30:00+01:00"
   },
   "added": "2026-11-24T17:50:42.517583+01:00"
  },
@@ -903,7 +941,9 @@
    "when": "2026-12-03T20:30:00+01:00"
   },
   "tiktok": {
-   "status": "pendiente"
+   "status": "programada",
+   "via": "metricool",
+   "when": "2026-12-03T20:30:00+01:00"
   },
   "added": "2026-11-24T17:50:42.593474+01:00"
  },
@@ -920,7 +960,9 @@
    "when": "2026-12-04T13:30:00+01:00"
   },
   "tiktok": {
-   "status": "pendiente"
+   "status": "programada",
+   "via": "metricool",
+   "when": "2026-12-04T13:30:00+01:00"
   },
   "added": "2026-11-24T17:50:42.666482+01:00"
  },
@@ -937,7 +979,9 @@
    "when": "2026-12-04T20:30:00+01:00"
   },
   "tiktok": {
-   "status": "pendiente"
+   "status": "programada",
+   "via": "metricool",
+   "when": "2026-12-04T20:30:00+01:00"
   },
   "added": "2026-11-24T17:50:42.738606+01:00"
  },
@@ -954,7 +998,9 @@
    "when": "2026-12-05T13:30:00+01:00"
   },
   "tiktok": {
-   "status": "pendiente"
+   "status": "programada",
+   "via": "metricool",
+   "when": "2026-12-05T13:30:00+01:00"
   },
   "added": "2026-11-24T17:50:42.826845+01:00"
  },
@@ -971,7 +1017,9 @@
    "when": "2026-12-05T20:30:00+01:00"
   },
   "tiktok": {
-   "status": "pendiente"
+   "status": "programada",
+   "via": "metricool",
+   "when": "2026-12-05T20:30:00+01:00"
   },
   "added": "2026-11-24T17:50:42.901275+01:00"
  }
