@@ -1,0 +1,52 @@
+{
+ "titulo": "Pruebas",
+ "fase": "Prueba social · mié 9/12",
+ "tono": 54,
+ "paginas": [
+  {
+   "tipo": "palabra",
+   "d": 2.5,
+   "palabra": "PRUEBAS",
+   "size": 220,
+   "left": 36,
+   "cruce": 30,
+   "foto": "OBJETO_GENERAL_FOTO_002",
+   "fig": "Fig. 1 — Nada de esto es un dibujo",
+   "hora": "Capturas reales · ProTeam"
+  },
+  {
+   "tipo": "reticula",
+   "d": 3.4,
+   "letras": "Nº 1\nNº 2\nNº 3",
+   "labSize": 40,
+   "figs": [
+    {"foto": "PRODUCTO_PLANIFICACION_CAPTURA_001", "lab": "Prueba nº 1 —\nLa temporada,\npor semanas"},
+    {"foto": "PRODUCTO_RPE_CAPTURA_002", "lab": "Prueba nº 2 —\nEl RPE de\ncada jugador"},
+    {"foto": "PRODUCTO_TESTS_CAPTURA_001", "lab": "Prueba nº 3 —\nLos tests\nfísicos"}
+   ]
+  },
+  {
+   "tipo": "captura",
+   "d": 3.0,
+   "foto": "PRODUCTO_INICIO_CAPTURA_001",
+   "fig": "Prueba nº 4 — Lo primero al abrirla",
+   "serif": "Tu día, tarea a tarea."
+  },
+  {
+   "tipo": "frase",
+   "d": 3.6,
+   "foto": "ENTRENADOR_BANDA_CONCENTRADO_FOTO_001",
+   "pre": "No te pedimos que nos creas.",
+   "preSize": 42,
+   "serif": "Te la\nenseñamos.",
+   "uv": true,
+   "size": 140,
+   "uvTop": 1475
+  },
+  {
+   "tipo": "cierre",
+   "d": 1.9,
+   "serif": "para el que quiere verlo antes de creerlo."
+  }
+ ]
+}
