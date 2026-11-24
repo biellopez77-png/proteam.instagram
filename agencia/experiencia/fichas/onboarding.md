@@ -1,7 +1,7 @@
 # Ficha · Onboarding (crear o unirse a un equipo): la puerta del día de apertura
 
 **Agente:** Irene (P1) · **Fecha:** 23/11/2026, rehecha en v4 el 23/11 · **Tareas:** `exp-onboarding`, `irene-v4-paleta` (abierta por Irene, prioridad alta: no había tareas P1 pendientes ni comentarios de Biel o Álex en las 8 entregas; el onboarding es un entregable del PLAN que el recorrido inicial dejaba «tal cual»)
-**Prototipo navegable:** https://claude.ai/artifact/L2T7StVAojsJDH2sNbXh6H (versión 2, sistema v4; móvil 375 y escritorio; selectores «Versión: Propuesta / Actual (hoy)», «Fechas: 10/12 · 11/12 (por confirmar) / 27/11 · 28/11 (código hoy)», «Cuándo llega: antes del cierre de la lista / desde la apertura», «Quién: primer equipo / ya tiene equipo», «Simular: todo bien / carga lenta / error del servidor / código no válido / unirse pide aprobación»; casilla «Marcar lo propuesto»). Copia local: `agencia/experiencia/prototipos/onboarding.html`.
+**Prototipo navegable:** https://claude.ai/artifact/L2T7StVAojsJDH2sNbXh6H (versión 3 del 24/11 con la propuesta P2 «Cuenta sin equipo», selectores nuevos «Pantalla: /onboarding / Mi cuenta (web)» y «Cuenta sin equipo (P2): Club apagado / Sin bloque»; versión 2, sistema v4; móvil 375 y escritorio; selectores «Versión: Propuesta / Actual (hoy)», «Fechas: 10/12 · 11/12 (por confirmar) / 27/11 · 28/11 (código hoy)», «Cuándo llega: antes del cierre de la lista / desde la apertura», «Quién: primer equipo / ya tiene equipo», «Simular: todo bien / carga lenta / error del servidor / código no válido / unirse pide aprobación»; casilla «Marcar lo propuesto»). Copia local: `agencia/experiencia/prototipos/onboarding.html`.
 **Base leída:** rama `revision/club-fundador` de proteamapp (5c7a6bd): `src/routes/_authenticated/onboarding.tsx` (`OnboardingPage`, `JoinWithCode`, `SportPicker`, `VariantPicker`, `CreateTeam`, `RedeemLicense`, `Field`), `lib/teams.functions.ts`, `lib/teams.ts` (`ROLE_SHORT`), `lib/activation-codes.functions.ts`, `lib/public-account.functions.ts` (`eligibleForFirstTeamOffer`), `lib/sport-config/*.ts`, `lib/blackout-friday.ts` (`BLACKOUT_FRIDAY_END`), `lib/i18n/dict/es.json`, migración `20261118000500_prueba_1_mes_tras_lista.sql`.
 
 **Por qué ahora:** sin equipo no se entra en la app, así que el día de apertura (28/11 en el código; 11/12 por confirmar) todo entrenador nuevo pasa por esta pantalla. Hoy tiene tres problemas que se notan el Día 0:
@@ -33,6 +33,36 @@ Manda `agencia/sistema-v4/IDENTIDAD.md` y el apartado «La misma dirección en l
 - Con 10/12 · 11/12: «Cuándo llega» pasa a «Antes del 10/12 23:59» / «Desde el 11/12»; la línea de la oferta dice «Cuentan desde el 11 de diciembre.»; el fin de prueba de ejemplo pasa a «11 de marzo de 2027» (3 meses desde la apertura) o «11 de enero de 2027» (1 mes, equipo creado el día de apertura).
 - Con 27/11 · 28/11 (lo que hay hoy en el código y en la migración del 18/11): «Cuentan desde el 28 de noviembre.», 28/02/2027 y 28/12/2026, como en la versión v3.
 - El corte lo deciden `BLACKOUT_FRIDAY_END` (pantalla) y la migración `20261118000500_prueba_1_mes_tras_lista.sql` (base de datos). **Si se mueve la fecha hay que moverla en los dos sitios a la vez**, o la pantalla y la base de datos volverán a decir cosas distintas (ver duda 6). No lo toco: va por PR del equipo técnico.
+
+## 0b. Cuenta sin equipo: «Te falta un paso para guardar tu sitio» (24/11, propuesta P2 de Samuel · tarea `t-20261124-p1-cuenta-sin-equipo`)
+
+**Por qué:** en el embudo del 24/11 (`reports/embudo-2026-11-24.md`), 9 de 33 cuentas (27 %) dieron su correo y no crearon el equipo, así que no están en la lista. Es la gente que ya tenemos y la más fácil de recuperar.
+
+**Confirmado (código, rama `revision/club-fundador`, 5c7a6bd):**
+- Una cuenta sin equipo llega a **`/onboarding`**: es el `destination` de `getPublicAccountSummary` con 0 equipos (`lib/public-account.functions.ts`), y `/teams` sin equipos redirige aquí (`routes/_authenticated/teams.tsx`). Desde la web llega también a **«Mi cuenta»** (`components/public-account-panel.tsx`), que hoy le enseña la oferta, «Todavía no perteneces a ningún equipo.» y «Crear o unirme a un equipo». Coincide con la analítica de Samuel; R1 puede confirmarlo con datos si hace falta.
+- Sin equipo no hay lista: la portada ya lo dice («Crea tu cuenta y tu equipo. Entras en la lista de espera.», `routes/index.tsx`) y la pantalla de espera (`AccessGateScreen`, con el bloque del Club `FounderSection`) solo sale dentro de `/coach`, que exige equipo. **Hoy una cuenta sin equipo no ve el Club en ningún sitio.**
+- La insignia apagada ya existe: `FounderBadge` con `muted` (gris al 35 %, rayo blanco).
+
+**Propuesto (marcado en el prototipo):**
+| Dónde | Qué |
+|---|---|
+| `/onboarding`, menú, con la lista abierta y `eligibleForFirstTeamOffer` | El bloque de la oferta pasa a ser el del **Club apagado**: insignia en gris (como está diseñada), «Te falta un paso para guardar tu sitio», dos puntos «Cuenta · Equipo» con «Cuenta» hecho y la luz hielo (con un pulso lento) en «Equipo», debajo la oferta de siempre en pequeño («3 meses gratis para tu primer equipo», el texto actual y «Cuentan desde el {día de apertura}.») y **un solo botón «Crear mi equipo»**, que hace lo mismo que hoy «Crear mi primer equipo» (va a elegir deporte). Las tres vías de abajo no cambian. |
+| Éxito al crear el equipo | Bajo «Copiar código», la insignia **se enciende** (de gris a azul de la app, 1,1 s; quieta con «reducir movimiento») junto a «Ya estás en la lista de espera» (texto que ya existe en la pantalla de espera). El peto se queda. |
+| «Mi cuenta» en la web | El mismo bloque del Club apagado en lugar del bloque de la oferta, con «Crear mi equipo» → `/onboarding`. Se conservan «Tus equipos», «Todavía no perteneces a ningún equipo.», «¿Quieres crear tu equipo?», «Crear o unirme a un equipo», «Entrar en la aplicación» y «Cerrar sesión». |
+| Cuándo no sale | Desde la apertura (ya no hay lista: vuelve la oferta de 1 mes de la versión v4), con «Ya tiene equipo», mientras carga (esqueleto) y si falla la carga (el móvil boca abajo con el aviso de siempre). |
+
+- **Luz:** en el menú el bloque sigue siendo lo único iluminado; dentro, la insignia está apagada y la luz cae en el paso que falta y en el botón. Al crear, la luz pasa a la insignia.
+- **Ultravioleta:** ninguno. La insignia aún no está pedida ni verificada; el ultravioleta llega después, en la pantalla de espera («Conseguir mi insignia»), como en la ficha `espera-y-portada-club-fundador.md`.
+- **Estados en el prototipo:** menú (lista abierta / desde la apertura), crear → éxito con la insignia encendida, «Mi cuenta» sin equipo y con equipo, carga lenta, error del servidor; vacío = la propia cuenta sin equipos. Móvil 375 y escritorio.
+- **Textos nuevos:** «Te falta un paso para guardar tu sitio» · «Cuenta» · «Equipo» · «Crear mi equipo» (los tres primeros, con su traducción en los 7 idiomas de `lib/i18n/dict/`). Reutilizados: «Ya estás en la lista de espera» y todos los de la oferta.
+- **Componentes:** `routes/_authenticated/onboarding.tsx` (bloque de la oferta y éxito de `CreateTeam`), `components/public-account-panel.tsx` (bloque `eligibleForFirstTeamOffer`), `components/founder/founder-badge.tsx` (solo se usa, con `muted`). El corte «lista abierta» es el mismo `BLACKOUT_FRIDAY_END` de la duda 1. **Sin cambios** en servidor, base de datos ni flujos.
+- **Cómo se mide (Samuel):** cuentas sin equipo (hoy 9) y cuántas crean el equipo después; el clic en «Crear mi equipo» lo mediría R1.
+
+**Dudas para Biel (P2):**
+8. ¿Sale el Club apagado a quien tiene cuenta y no equipo? Es propuesta de Samuel; decides tú.
+9. Botón: «Crear mi equipo» (Samuel) o «Crear mi primer equipo» (el de hoy).
+10. ¿Lo ve también quien viene a **unirse** con un código (un jugador o un ayudante)? Hoy `eligibleForFirstTeamOffer` no distingue: lo vería cualquiera sin equipo. Si no, haría falta saber a qué viene antes de enseñarlo.
+11. ¿Va también en «Mi cuenta» de la web o solo en `/onboarding`?
 
 ## 1. Qué se conserva (sin tocar)
 - **Las cuatro vías y su orden:** bloque de oferta con «Crear mi primer equipo» (solo si `eligibleForFirstTeamOffer`), «Unirme con código», «Crear equipo», «Canjear código de activación».
@@ -85,4 +115,4 @@ Manda `agencia/sistema-v4/IDENTIDAD.md` y el apartado «La misma dirección en l
 7. **(v4) Objetos reales.** El peto con el código y el móvil boca abajo son ilustraciones provisionales. ¿Foto propia de Pau (biblioteca v4) o se quedan como dibujo sencillo en la app por peso y rendimiento?
 
 ## 6. Fuera a propósito
-Precio, tarjeta y condiciones de pago; Club Fundador e insignia (viven en el recorrido inicial y en Configuración); número de apuntados; el nombre de Biel.
+Precio, tarjeta y condiciones de pago; el Club Fundador más allá del bloque apagado de la propuesta P2 (la insignia se pide en la pantalla de espera); número de apuntados; el nombre de Biel.
