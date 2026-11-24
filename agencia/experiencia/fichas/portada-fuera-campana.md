@@ -1,8 +1,37 @@
-# Ficha · Portada nueva fuera de campaña (desde el 28/11)
+# Ficha · Portada nueva fuera de campaña (desde la apertura: 11/12 por confirmar; 28/11 en el código)
 
-**Agente:** Irene (P1) · **Fecha:** 23/11/2026 · **Tarea:** `exp-portada-fuera-campana` (PLAN, primer mes 28/11–28/12: «portada nueva fuera de campaña»)
-**Prototipo navegable:** https://claude.ai/artifact/26ZvVrWTpTMkTF6svpgW7H (móvil 375 y escritorio; versión propuesta y actual para comparar; estados: portada, primer fotograma antes de cargar, registro abierto, campos vacíos, creando cuenta, error, revisa tu correo; casilla «Marcar lo propuesto»). Fuente: `agencia/experiencia/prototipos/portada-fuera-campana.html`.
+**Agente:** Irene (P1) · **Fecha:** 23/11/2026 (v4: 24/11/2026) · **Tarea:** `exp-portada-fuera-campana` (PLAN, primer mes 28/11–28/12: «portada nueva fuera de campaña»)
+**Prototipo navegable:** https://claude.ai/artifact/26ZvVrWTpTMkTF6svpgW7H (versión 3, v4; selector «Fechas: 10/12 · 11/12 (por confirmar) / 27/11 · 28/11 (código hoy)»; móvil 375 y escritorio; versión propuesta y actual para comparar; estados: portada, primer fotograma antes de cargar, registro abierto, campos vacíos, creando cuenta, error, revisa tu correo; casilla «Marcar lo propuesto»). Fuente: `agencia/experiencia/prototipos/portada-fuera-campana.html`.
 **Base (proteamapp, rama `revision/club-fundador`):** `src/routes/index.tsx` (rama `campaign = false`), `components/landing/blackout-friday.tsx` (`AuthButtons`, `useBlackoutRemaining`), `components/landing/app-mockups.tsx`, `components/founder/founder-landing.tsx`, `components/auth-overlay.tsx`, `components/public-header.tsx`, `components/public-footer.tsx`, `lib/blackout-friday.ts`.
+
+## 0. Rehecho en v4 (24/11, sistema v4 de Biel del 23/11) · tarea `irene-v4-paleta` (10/10)
+
+**Prototipo:** el mismo enlace, versión 3 (v4). Mismas funciones, textos, estados y registro que la versión anterior; cambia la piel. Lo de los apartados siguientes sigue vigente salvo lo que se dice aquí: el titular en Instrument Serif con trazo azul a lápiz, la semana «a lápiz», la nota a mano «el martes, la más larga» (Caveat), los dorsales en serif y la línea de lápiz entre pasos quedan sustituidos por esto.
+
+**Confirmado (sistema v4 y apartado «La misma dirección en la web y la app»):**
+- Fondo `#02050F`; tarjetas, pantallas de ejemplo y panel de registro en `#060C19`/`#0C1323`; azules `#636DFF` (botón principal), `#6AA8FF` (antetítulos, foco), `#B9E0FF` (lo encendido); blanco como texto y luz.
+- Plus Jakarta Sans en todo (sin Instrument Serif ni Caveat en esta pantalla: una fuente menos que cargar).
+- Ultravioleta `#8B5CF6` una vez: el rayo de la insignia del bloque cerrado del Club (el acceso al Club), con filo blanco. Ninguno en el registro, en el primer fotograma ni en la versión actual.
+- Sin rojo: el error del registro en coral suave; el aviso de la versión actual, en ámbar suave.
+
+**Propuesto (cómo se aplica aquí):**
+| Elemento | v4 |
+|---|---|
+| Secciones | Cada sección entra en penumbra y **se enciende al entrar en pantalla** (luz desde arriba y línea de luz hielo en el borde superior; un solo movimiento por sección, `IntersectionObserver`). Con «reducir movimiento», todas encendidas desde el principio. |
+| Titular | Mismo texto. Plus Jakarta 800, recortado (−0,035 em). **Un haz azul eléctrico recorre una vez «en un solo sitio»** (1,4 s) y deja debajo una línea de luz hielo. Sin animaciones en bucle. |
+| Bloque de portada | Único sitio con **grano muy fino** (ruido SVG al 7 %, sin imagen externa). |
+| Semana de ejemplo | Deja de ser un dibujo a lápiz: es una pantalla de la app bajo un foco (`#060C19`, filo hielo arriba). **Solo el martes lleva luz** (barra hielo con halo); el resto en azul apagado y el sábado de partido con un aro. Se quita la nota a mano. Sigue marcada «Ejemplo». |
+| Funciones | Las 3 maquetas en `#060C19` con un solo elemento encendido cada una (semana 14, carga «Media», «12 tiros a puerta»). |
+| Pasos | Números 1-2-3 en un aro con filo, en azul eléctrico; sin dorsales en serif. |
+| Club cerrado | Insignia oscura con doble aro y el **rayo en ultravioleta**; «ya están dentro» en hielo; «¿Eres fundador? Entra y mira tu insignia» como enlace hielo (44 px de alto). |
+| Registro | El panel `#060C19` iluminado desde arriba es lo único con luz; la portada detrás, en penumbra con desenfoque. Pestaña activa con línea azul eléctrico; campo con foco con halo. Mismo panel que en «Registro y entrada». |
+| Objetos | Móvil boca abajo en «No hemos podido crear tu cuenta.» y móvil boca arriba con el aviso en «Revisa tu correo» (ilustraciones provisionales hasta tener foto propia o con licencia). |
+| Primer fotograma | La misma maqueta con huecos en `#0C1323`, sin texto de campaña ni luces. |
+| Fechas | Selector: con 10/12 · 11/12 (por confirmar), la portada vale desde el viernes 11/12 a las 00:00 y el Club dice «que se cerró el 10 de diciembre»; con el código, 28/11 y «27 de noviembre». En «Actual (hoy)», el primer fotograma enseña «Blackout Friday» con la fecha de cierre que toque. |
+
+**Rendimiento:** sin imágenes externas, una sola familia de letra, una animación de entrada en el titular y transiciones de opacidad al hacer scroll. Nada en bucle.
+
+**Textos:** ninguno cambia salvo la fecha del bloque del Club («que se cerró el 10 de diciembre», por confirmar). Se quita la nota decorativa «el martes, la más larga».
 
 ## 1. Qué se conserva (sin tocar)
 - Todos los textos de la rama fuera de campaña: «Hecho en el banquillo, no en una oficina.», «La app para entrenadores de fútbol, baloncesto y balonmano. Prueba 1 mes gratis.», «Empieza tu mes de prueba», «Iniciar sesión», «Empieza hoy».
@@ -52,3 +81,6 @@ Precio o importes (ni el fundador ni el normal), número de apuntados o de funda
 4. ¿Enlaces a deportes en el hero o solo en el pie?
 5. ¿La portada nueva entra el 28/11 a las 00:00 o durante el primer mes? (Los arreglos del primer fotograma y de la descripción convendría tenerlos el 28/11 sí o sí.)
 6. ¿El mes de prueba empieza al añadir la tarjeta? Si no es así, se quita la línea bajo «Crear cuenta».
+7. (v4) ¿Las secciones se encienden al hacer scroll o se ven todas encendidas desde el principio?
+8. (v4) ¿Ultravioleta en el rayo de la insignia del Club cerrado, o portada pública sin ultravioleta?
+9. (v4) ¿Foto propia o dibujo para los móviles del registro? Y la fecha del bloque del Club depende de que confirmes el 10/12 · 11/12 (hay que mover `BLACKOUT_FRIDAY_END` y el corte de la migración del 18/11 a la vez).
