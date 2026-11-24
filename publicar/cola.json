@@ -1022,5 +1022,26 @@
    "when": "2026-12-05T20:30:00+01:00"
   },
   "added": "2026-11-24T17:50:42.901275+01:00"
+ },
+ {
+  "id": "v7-bielsa",
+  "kind": "reel",
+  "files": [
+   "https://d2ol7oe51mr4n9.cloudfront.net/user_3M2z7lIyzIPYtjNHcxRWFNk6wi7/c6a106df-1535-40ca-addc-fb962369f950.mp4"
+  ],
+  "caption": "Le acusaron de espiar. Y respondió con un PowerPoint.\n\nLeeds, 16 de enero de 2019. Bielsa convocó una rueda de prensa de 70 minutos y proyectó su análisis del Derby County: 51 partidos vistos, unas cuatro horas de trabajo por cada uno.\n\nNo era una manía. Era su método.\n\n¿Cuántas horas le dedicas tú a preparar al rival?\n\nEstamos terminando la app de ProTeam. Síguenos para no perderte nada: muy pronto, novedades.\n\nFuentes: Yorkshire Evening Post, Sky Sports. Fotos (Wikimedia Commons): Newell's Old Boys (CC BY 3.0), Alejandro Vásquez Núñez (CC BY 2.0), Mathieu from Marseille (CC BY-SA 2.0). Música y efectos: Epidemic Sound.\n\n#entrenadores #fútbolbase #bielsa #análisistáctico #baloncesto #balonmano",
+  "state": "aprobada",
+  "ig": {
+   "status": "pendiente",
+   "when": "2026-11-25T18:00:00+01:00"
+  },
+  "tiktok": {
+   "status": "programada",
+   "via": "metricool",
+   "when": "2026-11-25T18:00:00+01:00",
+   "metricoolId": 440791811
+  },
+  "added": "2026-11-24T20:40:00+01:00",
+  "nota": "v7 photo story; vídeo final mezclado en Higgsfield (música/SFX Epidemic Sound). Copia sin audio en tools/reel_v7/bielsa/video3_mudo.mp4"
  }
 ]

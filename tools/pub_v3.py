@@ -61,7 +61,7 @@ def cmd(a):
     elif a[0] == 'due':
         if not on(): print('[]'); return
         out = [{'id': i['id'], 'kind': i['kind'], 'caption': i['caption'],
-                'urls': [CDN + f for f in i['files']], 'raw': [RAW + f for f in i['files']]}
+                'urls': [f if f.startswith('http') else CDN + f for f in i['files']], 'raw': [f if f.startswith('http') else RAW + f for f in i['files']]}
                for i in sorted(q, key=lambda i: i['ig'].get('when', '9'))
                if i['state'] == 'aprobada' and i['ig']['status'] == 'pendiente'
                and datetime.fromisoformat(i['ig']['when']) <= now()]
