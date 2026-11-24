@@ -502,8 +502,10 @@
   "caption": "Convocatorias, minutos, cargas, notas. Todo a mano, en una libreta llena de flechas.\n\nProTeam lo junta en un solo sitio. Hecha para entrenadores de fútbol, baloncesto y balonmano.\n\n¿Tú dónde lo apuntas todo ahora mismo?\n\nFotos: Giallone · CC BY-SA 3.0 | Steffen Prößdorf · John Martinez Pavliga · Cpl. Anthony C. Ramsey Jr. · CC BY-SA 4.0 / CC BY 2.0 / DP | Jonathan Hutchins · CC BY-SA 2.0\nCapturas reales de ProTeam (datos de ejemplo).\n#entrenadores #fútbol #baloncesto #balonmano",
   "state": "aprobada",
   "ig": {
-   "status": "pendiente",
-   "when": "2026-11-24T10:45:00+01:00"
+   "status": "publicada",
+   "when": "2026-11-24T10:45:00+01:00",
+   "ref": "18105090134532971",
+   "at": "2026-11-24T10:43:38.670466+01:00"
   },
   "tiktok": {
    "status": "pendiente"
@@ -560,5 +562,73 @@
    "status": "pendiente"
   },
   "added": "2026-11-24T10:28:12.694015+01:00"
+ },
+ {
+  "id": "v4-X02",
+  "kind": "reel",
+  "files": [
+   "publicar/media/v4-X02.mp4"
+  ],
+  "caption": "Un toque por acción. Tocas al jugador en la pista, eliges qué ha hecho (tiro, pérdida, 1×1) y desde dónde.\n\nAl pitar el final, el marcador por partes y la eficacia ya están hechos.\n\n¿Quién te apunta las estadísticas en los partidos?\n\nFotos: Steffen Prößdorf · CC BY-SA 4.0 | Infrogmation · CC BY-SA 4.0\nCapturas reales de ProTeam (datos de ejemplo).\n#balonmano #entrenadores #estadísticas",
+  "state": "aprobada",
+  "ig": {
+   "status": "pendiente",
+   "when": "2026-11-24T20:30:00+01:00"
+  },
+  "tiktok": {
+   "status": "pendiente"
+  },
+  "added": "2026-11-24T10:47:39.314808+01:00"
+ },
+ {
+  "id": "v4-X03",
+  "kind": "reel",
+  "files": [
+   "publicar/media/v4-X03.mp4"
+  ],
+  "caption": "Después del partido: el informe por partes y la cronología, cada acción con su minuto.\n\nY el lunes entrenas lo que de verdad pasó, no lo que recuerdas.\n\n¿Repasas el partido el domingo o el lunes?\n\nFotos: Steffen Prößdorf · CC BY-SA 4.0 | John Martinez Pavliga · CC BY 2.0\nCapturas reales de ProTeam (datos de ejemplo).\n#entrenadores #balonmano #análisis",
+  "state": "aprobada",
+  "ig": {
+   "status": "pendiente",
+   "when": "2026-11-25T20:30:00+01:00"
+  },
+  "tiktok": {
+   "status": "pendiente"
+  },
+  "added": "2026-11-24T10:47:39.581530+01:00"
+ },
+ {
+  "id": "v4-X04",
+  "kind": "reel",
+  "files": [
+   "publicar/media/v4-X04.mp4"
+  ],
+  "caption": "Una pregunta al acabar: del 1 al 10, ¿cuánto te ha costado? Esfuerzo × minutos = la carga de cada jugador (RPE de sesión).\n\nCon los tests físicos en el mismo sitio, sabes quién llega fresco al sábado.\n\n¿Mides la carga de tu equipo?\n\nFotos: MC3 Brennan Knaresboro · DP\nCapturas reales de ProTeam (datos de ejemplo).\n#preparaciónfísica #entrenadores #RPE",
+  "state": "aprobada",
+  "ig": {
+   "status": "pendiente",
+   "when": "2026-11-26T13:30:00+01:00"
+  },
+  "tiktok": {
+   "status": "pendiente"
+  },
+  "added": "2026-11-24T10:47:39.636744+01:00"
+ },
+ {
+  "id": "v4-X05",
+  "kind": "reel",
+  "files": [
+   "publicar/media/v4-X05.mp4"
+  ],
+  "caption": "La temporada, semana a semana. Cada semana con su objetivo, sus sesiones y su partido. Rutinas y calendario en el mismo sitio.\n\nCada entreno sabe para qué partido es.\n\n¿Planificas por semanas o sesión a sesión?\n\nFotos: Sgt. Aaron Kaczur · DP | Jonathan Hutchins · CC BY-SA 2.0\nCapturas reales de ProTeam (datos de ejemplo).\n#planificación #entrenadores #temporada",
+  "state": "aprobada",
+  "ig": {
+   "status": "pendiente",
+   "when": "2026-11-25T13:30:00+01:00"
+  },
+  "tiktok": {
+   "status": "pendiente"
+  },
+  "added": "2026-11-24T10:47:39.688671+01:00"
  }
 ]

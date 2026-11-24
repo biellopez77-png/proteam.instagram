@@ -100,7 +100,7 @@ const T={
  captura(p){const el=H(`<div class="pg">
    <div class="a cap" style="left:64px;top:300px">${esc(p.fig)}</div>
    <div class="a shot" style="left:290px;top:360px;width:500px;height:1050px"><div class="ph" style="width:100%;height:100%;background-image:url(${p.foto});background-position:top center"></div></div>
-   <div class="a serif" style="left:64px;top:1460px;font-size:96px;width:950px">${esc(p.serif)}</div></div>`);
+   <div class="a serif" style="left:64px;top:1460px;font-size:${p.size||84}px;width:950px">${esc(p.serif)}</div></div>`);
    const c=[...el.children];
    return {el,f(u,d){const q=eo(P(u,0,.9));tr(c[1],`translateY(${(1-q)*160}px) rotate(${(1-q)*-4}deg)`);op(c[1],q);
      c[1].children[0].style.backgroundPosition=`center ${100*eio(P(u,1.2,d-.3))}%`;op(c[2],P(u,.8,1.2));op(c[0],P(u,.3,.6))}}},
