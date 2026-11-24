@@ -1,5 +1,42 @@
 # Crítica de vídeo E02 · «De noche»
 
+## Segunda vuelta · **87/100 · APROBADO → listo**
+
+Andrés (05) · 24/11 · criterio v4 (Biel, 24/11) · vídeo `tools/reel_v5/piezas/E02/final.mp4` (1080×1920, 25 fps, 14,20 s, HEAD b9cda7f) · spec `piezas/E02/spec.json` · fase: Calentamiento · vie 27/11.
+Método: un fotograma por segundo a 360 px de ancho (móvil) + fotogramas sueltos a 540 px; muestreo a 10 fps para el violeta; sonido en ventanas de 0,1 s (RMS/pico) con ffmpeg + numpy y EBU R128; licencias contra `banco/INVENTARIO.csv`.
+
+| Criterio | Peso | Nota | Por qué |
+|---|---|---|---|
+| Idea editorial clara | 25 | 21 | La idea se entiende de un vistazo: DE NOCHE → FRÍO, y ahí sigue → conos, cronómetro, pizarra → «alguien sigue pensando en el sábado» → «algo se está encendiendo». «17:50 · Se va la luz» ya no contradice la foto. Resta: la Fig. 1 sigue siendo de día con nubes blancas; la noche solo la cuenta el texto. |
+| Legibilidad en móvil | 20 | 17 | DE NOCHE entero de 0,0 a 2,6 s; FRÍO, «y ahí sigue.», «Con lluvia. Con seis. Con los que vengan. Otra vez.», pies de la retícula, entradilla «Y cuando se apagan los focos,» y cierre: todo se lee a 360 px. Nada cortado ni pisado. Restan: el pie de la Fig. 3 se dobla 0,3 s con el desenfoque (≈6,0 s) y el folio «p. 05» se pierde sobre el cielo claro (8,1–11,5 s). |
+| Ritmo y sonido | 15 | 13 | Pico −4,1 dBFS (12,47 s), sin saturar; −15,7 LUFS. Papel/obturador +5–6 dB sobre el zumbido en cada corte (1,0 · 2,6 · 5,1 · 6,1 · 6,9 s). Silencio digital 7,4–8,0 s (0,6 s) antes de la frase. Acorde UV de −18 a −10 dB (+8). Resolución en el cierre (12,2–13,2 s, −10 dB) y caída limpia a −75 dB a 14,1 s; ya no acaba en negro mudo. Restan: zumbido a −18 (pedía −20) y el acorde se queda 2 dB corto. |
+| Encaje de fase | 15 | 12 | Calentamiento puro: ni app, ni fecha, ni explicación; «algo se está encendiendo» es la frase de la fase. Resta: el territorio 8 pide espacios a oscuras y una luz; aquí solo la grada al atardecer con focos (p. 05) se acerca. |
+| Identidad | 15 | 14 | Duotono azul, grano, Jakarta 800 / Instrument Serif / Plex Mono, folios p. 01 → pp. 03–04 → p. 05 y créditos reales. **Un solo ultravioleta** (subrayado de «el sábado», 10,0–11,7 s, ≥1 s quieto). La línea del cierre es azul. No parece plantilla. Resta: folio de la p. 05 tapado por la foto. |
+| Verdad | 10 | 10 | Sin cifras, precio ni apuntados. Fotos con licencia verificada: campo (CC BY-SA 2.0), balón (CC BY 2.0), conos/cronómetro (CC BY 4.0 / DP), pizarra (DP, US Navy; entrenador de un equipo de la Armada, no famoso), grada (CC BY 3.0). La foto de la persona conocida ha salido. |
+| **Total** | 100 | **87** | |
+
+### Suspensos directos
+3D: no · texto cortado o pisado: no · más de un ultravioleta: no (solo 10,0–11,7 s) · datos inventados/precio/apuntados: no · famosos o fotos sin licencia: no · plantilla genérica: no.
+
+### Marcas de tiempo
+- **0,0–2,6 · p. 01** DE NOCHE entero sobre el campo; «Fig. 1 — Un campo cualquiera» y «Noviembre · 17:50 · Se va la luz» en tinta, legibles.
+- **2,6 · corte a FRÍO**: golpe a −6 dBFS, ya sin saturar.
+- **2,7–5,0 · p. 02** FRÍO con el balón dentro (se distingue el balón y la cal), «y ahí sigue.», pie de cuatro frases legible.
+- **5,0–7,4 · pp. 03–04** retícula: conos → cronómetro (parada ~0,5 s con pie legible) → pizarra con empuje. ≈6,0 s el pie de la Fig. 3 se dobla con el desenfoque.
+- **7,4–8,0 · silencio** de 0,6 s. Funciona.
+- **8,1–11,7 · p. 05** grada con focos; entradilla en mono 44 legible; serif en dos líneas; subrayado violeta 10,0–11,7.
+- **11,7–12,1 · paso de página**; **12,1–14,2 · cierre** «ProTeam / algo se está encendiendo.» con línea azul; audio resuelve y cae.
+
+### Correcciones opcionales (no bloquean; para Marta si hay hueco)
+1. p. 1 `foto`: si Pau consigue una foto de campo con focos encendidos o de noche (territorio 8), cambiarla; es lo que falta para subir idea y fase.
+2. p. 5 (`paginas[3]`, tipo `frase`): el folio se come con el cielo; probar `"pos"` más baja o que el motor ponga el folio en tinta sobre fondo claro.
+3. Motor: zumbido a −20 dBFS y acorde UV a +10 dB, como dice MOTOR.md.
+4. Subir `media/v4-E02.mp4` y `.jpg` al panel (el vídeo del panel sigue siendo la versión suspendida).
+
+---
+
+## Primera vuelta (69/100, suspenso) — se conserva como referencia
+
 Andrés (05) · 24/11 · criterio v4 (Biel, 24/11) · vídeo `tools/reel_v5/piezas/E02/final.mp4` (1080×1920, 25 fps, 13,48 s) · spec `piezas/E02/spec.json` · fase del spec: Calentamiento · vie 27/11.
 Método: un fotograma por segundo a 360 px de ancho (móvil) y cuatro por segundo en hoja de 180 px; muestreo a 10 fps para el violeta; sonido en ventanas de 0,1 s (RMS) con ffmpeg + numpy; licencias contra `banco/INVENTARIO.csv`.
 
