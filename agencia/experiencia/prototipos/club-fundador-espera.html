@@ -30,6 +30,7 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .bar h1{font-size:15px;font-weight:800;margin:0;margin-right:auto;letter-spacing:-.01em;white-space:nowrap}
 .bar h1 span{color:var(--text-3);font-weight:600}
 .ctl{display:flex;flex-direction:column;gap:3px;min-width:0}
+.ctl[hidden]{display:none}
 .ctl>span{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--text-3);font-weight:700}
 .seg{display:flex;flex-wrap:wrap;gap:2px;background:var(--bg);border:1px solid var(--line);border-radius:9px;padding:2px}
 .seg button{border:0;background:transparent;padding:5px 10px;border-radius:7px;font-size:12.5px;font-weight:600;color:var(--text-2)}
@@ -216,6 +217,37 @@ code{font-size:12px;color:var(--ice);background:var(--s2);padding:1px 5px;border
 .cur .two{display:flex;flex-direction:column;gap:10px}
 .skl-line{height:16px;margin:10px 0 0}
 
+/* === Sobres del día 0 (propuesta P3 de Samuel, 24/11) === */
+.env-sec{border:1px solid var(--line);border-radius:var(--r);padding:20px;background:var(--s1)}
+.env-sec h2{margin:0;font-size:18px;font-weight:800;letter-spacing:-.01em;text-wrap:balance}
+.env-sec .lead{margin:6px 0 0;font-size:13.5px;color:var(--text-2)}
+.envs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:16px}
+.desktop .envs{gap:16px}
+.env{background:transparent;border:1px solid transparent;padding:12px 4px 10px;border-radius:12px;display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center;color:var(--text-3);min-width:0}
+.env svg{width:100%;max-width:92px;height:auto;opacity:.5}
+.desktop .env svg{max-width:120px}
+.env b{font-size:12.5px;font-weight:700;line-height:1.25}
+.env small{font-size:11px;line-height:1.3}
+/* Abierto = lo activo: luz desde arriba y filo hielo */
+.env.open{background:radial-gradient(100% 80% at 50% 0%,rgba(106,168,255,.20),rgba(99,109,255,.05) 55%,transparent 80%),var(--s2);border-color:var(--line-2);color:var(--white);box-shadow:inset 0 1px 0 rgba(185,224,255,.45)}
+.env.open svg{opacity:1}
+.env.open small{color:var(--ice)}
+/* El siguiente: solo un filo de luz, sigue cerrado */
+.env.next svg{opacity:.8}
+.env.next small{color:var(--text-2)}
+.env-next{margin:14px 0 0;padding-top:12px;border-top:1px solid var(--line);font-size:13px;color:var(--text-2);display:flex;flex-wrap:wrap;gap:4px 10px;align-items:baseline}
+.env-next strong{color:var(--white);font-weight:700}
+.env-next small{font-size:12px;color:var(--text-3)}
+.tpl{list-style:none;margin:16px 0 0;padding:0;display:grid;gap:8px}
+.tpl li{display:grid;grid-template-columns:4px 1fr;gap:4px 12px;padding:12px;border-radius:12px;background:var(--s2);border:1px solid var(--line);color:var(--text-2);font-size:13px}
+.tpl li i{grid-row:1/3;border-radius:2px;background:var(--line-2)}
+.tpl li b{color:var(--white);font-size:14px}
+.tpl li.on{border-color:var(--line-2);box-shadow:inset 0 1px 0 rgba(185,224,255,.35)}
+.tpl li.on i{background:var(--elec);box-shadow:0 0 10px var(--elec)}
+.envnote{margin-top:0;padding:16px 18px;border:1px dashed var(--line-2);border-radius:var(--r);font-size:13.5px;color:var(--text-2)}
+.env-open-anim .flap{transform-origin:50% 30%;animation:flap .7s ease-out both}
+@keyframes flap{from{transform:scaleY(-1)}to{transform:none}}
+
 /* Notas */
 .notes{max-width:1180px;margin:30px auto 0;display:grid;gap:16px}
 @media (min-width:860px){.notes{grid-template-columns:1fr 1fr}}
@@ -231,7 +263,9 @@ code{font-size:12px;color:var(--ice);background:var(--s2);padding:1px 5px;border
   <div class="bar-in">
     <h1>Club Fundador <span>· prototipo v4</span></h1>
     <div class="ctl"><span>Pantalla</span><div class="seg" id="segScreen">
-      <button data-v="espera" aria-pressed="true">Espera (app)</button><button data-v="portada" aria-pressed="false">Portada (web)</button><button data-v="cabecera" aria-pressed="false">Cabecera móvil (web)</button></div></div>
+      <button data-v="espera" aria-pressed="true">Espera (app)</button><button data-v="portada" aria-pressed="false">Portada (web)</button><button data-v="cabecera" aria-pressed="false">Cabecera móvil (web)</button><button data-v="sobres" aria-pressed="false">Sobres del día 0 (app)</button></div></div>
+    <div class="ctl" id="ctlIns" hidden><span>Insignia</span><div class="seg" id="segIns">
+      <button data-v="none" aria-pressed="true">Sin pedir</button><button data-v="verified" aria-pressed="false">Verificada</button></div></div>
     <div class="ctl" id="ctlHero" hidden><span>Cabecera</span><div class="seg" id="segVer">
       <button data-v="prop" aria-pressed="true">Propuesta</button><button data-v="cur" aria-pressed="false">Actual (hoy)</button></div></div>
     <div class="ctl" id="ctlBtn" hidden><span>Botón y oferta</span><select class="sel" id="selBtn" aria-label="Botón y oferta">
@@ -276,6 +310,7 @@ code{font-size:12px;color:var(--ice);background:var(--s2);padding:1px 5px;border
         <li>Estados de carga y de error (hoy no existen); el error lleva un objeto real (móvil boca abajo) en vez de un icono.</li>
         <li>Portada: frase de misterio y botón de registro dentro del bloque.</li>
         <li><b>Cabecera móvil (24/11, propuesta P1 de Samuel):</b> en la primera pantalla del móvil solo la fecha de cierre, «Lo que hay dentro se abre al día siguiente.» y un único botón en blanco (la luz); «Iniciar sesión» sube a la barra de arriba; la cuenta atrás baja, en penumbra; el Club y las ventajas bajan. Sin ultravioleta en esa primera pantalla. Línea discontinua: dónde acaba la primera pantalla (aprox.). Primer fotograma: la frase, la fecha y el botón ya vienen en el HTML; solo la cuenta atrás espera a cargar, con su hueco reservado (hoy es igual).</li>
+        <li><b>Sobres del día 0 (24/11, propuesta P3 de Samuel):</b> en la espera, entre el Club y la cuenta atrás, tres sobres cerrados con lo que ya está aprobado: 1 «Tu insignia» (martes 1/12), 2 «Tu primera semana» (martes 8/12) y 3 «Tu carta» (viernes 11/12, al entrar). Los abiertos son lo activo y llevan la luz; el siguiente, solo un filo; el resto, en penumbra. Se abren por fecha, sin servidor ni base de datos. «Te avisamos por correo» depende de que Lucía lo envíe. Solo con la apertura el 11/12: con el 28/11 no queda ninguna semana. Sin ultravioleta nuevo: sigue en el Club.</li>
         <li>No aparecen: precio fundador (sin importe ni Stripe), detalles de los tickets (sin construir), número de apuntados.</li>
       </ul>
     </div>
@@ -284,12 +319,15 @@ code{font-size:12px;color:var(--ice);background:var(--s2);padding:1px 5px;border
 
 <script>
 (function(){
-  var S={ver:"prop",btn:"a",fold:"553",heroErr:false,screen:"espera",view:"mobile",state:"none",dates:"new",sheet:false,letter:false,handle:"",fieldErr:"",sendErr:false,toast:""};
+  var S={ins:"none",envAnim:0,ver:"prop",btn:"a",fold:"553",heroErr:false,screen:"espera",view:"mobile",state:"none",dates:"new",sheet:false,letter:false,handle:"",fieldErr:"",sendErr:false,toast:""};
   var STATES={
     espera:[["loading","Cargando"],["none","Sin solicitar"],["requested","En revisión"],["rejected","Rechazada"],["verified","Verificada, sin número"],["verified_n","Verificada, Nº 011"],["error","Error al cargar"]],
     cabecera:[["normal","Primera pantalla"],["first","Primer fotograma (antes de cargar)"],["error","Error al abrir el registro"]],
-    portada:[["campaign","Campaña abierta"],["closed","Lista cerrada"],["off","Fuera de campaña (vacío)"]]
+    portada:[["campaign","Campaña abierta"],["closed","Lista cerrada"],["off","Fuera de campaña (vacío)"]],
+    sobres:[["s0","Hoy: ningún sobre abierto (vacío)"],["s1","Mar 1/12: abierto el 1.º"],["s2","Mar 8/12: abiertos 1.º y 2.º"],["loading","Cargando"],["error","Error al abrir el sobre"],["cur","Actual (hoy, sin sobres)"]]
   };
+  // Sobres: solo lo aprobado (CLUB_FUNDADOR.md y recorrido inicial). Se abren por fecha (hora de Madrid).
+  var ENV=[{n:1,t:"Tu insignia",date:"martes 1 de diciembre",short:"mar 1 dic"},{n:2,t:"Tu primera semana",date:"martes 8 de diciembre",short:"mar 8 dic"},{n:3,t:"Tu carta",date:"viernes 11 de diciembre",short:"vie 11 dic, al entrar",door:true}];
   var D={
     "new":{closeDay:"jueves",open:"11 de diciembre",openShort:"El 11",close:"10 de diciembre",closeT:Date.parse("2026-12-10T23:00:00Z")},
     "old":{closeDay:"viernes",open:"28 de noviembre",openShort:"El 28",close:"27 de noviembre",closeT:Date.parse("2026-11-27T23:00:00Z")}
@@ -339,8 +377,37 @@ code{font-size:12px;color:var(--ice);background:var(--s2);padding:1px 5px;border
     var num=S.state==="verified_n"?"Nº 011":null;
     return '<div class="scrim" data-act="close"><div class="sheet" role="dialog" aria-modal="true" aria-labelledby="lt"><button class="x" data-act="close" aria-label="Cerrar">×</button><div style="text-align:center">'+badge(88,{pop:true,num:num,uv:true,label:"Insignia del Club Fundador"})+(num?'<p class="kicker" style="margin-top:6px">Fundador '+num+'</p>':'')+'</div><h3 id="lt" style="text-align:center;margin-top:8px;padding-right:0">¡Bienvenido al Club Fundador, Marc!</h3><div class="letter" style="margin-top:14px"><p>Soy Biel, creador de ProTeam. Gracias por estar aquí desde el principio.</p><p>ProTeam nace en el banquillo y queremos que crezca contigo: con lo que uses, con lo que eches de menos y con lo que nos cuentes.</p><p>Tu confianza es lo que da sentido a todo esto. Gracias por formar parte de este camino.</p><p>Nos vemos dentro de ProTeam.</p><p class="sign">Biel</p><p class="fine" style="margin-top:0">Biel · creador de ProTeam</p></div><button class="btn btn-p" data-act="close" style="width:100%;margin-top:10px">Entrar</button><p class="fine">Texto actual de founder-welcome.tsx (dentro de la app). Su diseño final va en el recorrido inicial.</p></div></div>'}
 
-  function espera(){
-    return '<div class="app"><section class="card welcome" role="status"><h2>Bienvenido al vestuario, Marc.</h2><p>Gracias por apuntarte. Somos entrenadores de base y hemos hecho ProTeam para quitarte horas de papeleo. '+dt(d().openShort)+' te abrimos la puerta.</p><p class="sig">— El equipo de ProTeam, entrenadores como tú</p></section>'+clubBlock()+'<section class="card wait"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#6AA8FF" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 22h14M5 2h14M17 22v-4.2a2 2 0 0 0-.6-1.4L12 12l-4.4 4.4a2 2 0 0 0-.6 1.4V22M7 2v4.2a2 2 0 0 0 .6 1.4L12 12l4.4-4.4A2 2 0 0 0 17 6.2V2"/></svg><h1>Ya estás en la lista de espera</h1><p>Tu prueba gratuita de 3 meses empieza el '+dt(d().open)+' a las 00:00. Ese día añadirás tu tarjeta para entrar; no se cobrará nada hasta que acaben los 3 meses y podrás cancelar antes.</p><div class="timer" role="timer" id="tm">'+timerHTML()+'</div></section></div>'}
+  function envSVG(e,open,next){gid++;
+    var edge=open?"#B9E0FF":next?"#B9E0FF":"#B9E0FF",eo=open?.55:next?.5:.18;
+    var beam=open?'<defs><radialGradient id="eb'+gid+'" cx="50%" cy="0%" r="80%"><stop offset="0" stop-color="#B9E0FF" stop-opacity=".35"/><stop offset="1" stop-color="#B9E0FF" stop-opacity="0"/></radialGradient></defs><rect x="0" y="0" width="120" height="96" fill="url(#eb'+gid+')"/>':'';
+    var body='<rect x="10" y="34" width="100" height="56" rx="6" fill="#0C1323" stroke="'+edge+'" stroke-opacity="'+eo+'"/>';
+    if(open) return '<svg viewBox="0 0 120 96" aria-hidden="true">'+beam+'<path class="flap" d="M10 40 L60 6 L110 40 Z" fill="#121B30" stroke="#B9E0FF" stroke-opacity=".4"/><rect x="22" y="18" width="76" height="50" rx="4" fill="#F4F7FB"/><path d="M32 32h44M32 41h36M32 50h40" stroke="#02050F" stroke-opacity=".25" stroke-width="3" stroke-linecap="round"/>'+body+'<path d="M10 40 L60 72 L110 40" fill="none" stroke="#B9E0FF" stroke-opacity=".35"/></svg>';
+    return '<svg viewBox="0 0 120 96" aria-hidden="true"><ellipse cx="60" cy="92" rx="46" ry="3" fill="#000" opacity=".5"/>'+body+'<path d="M10 36 L60 70 L110 36" fill="#121B30" stroke="'+edge+'" stroke-opacity="'+eo+'"/><circle cx="60" cy="66" r="9" fill="#060C19" stroke="'+edge+'" stroke-opacity="'+eo+'"/><text x="60" y="70.5" text-anchor="middle" font-size="12" font-weight="800" fill="'+(next?"#B9E0FF":"#6F7A91")+'" font-family="Plus Jakarta Sans,sans-serif">'+e.n+'</text></svg>'}
+  function sobresSec(){
+    if(S.dates==="old") return '<section class="envnote" data-prop><p class="kicker">Lo que se abre el día 0</p>Con las fechas del código (apertura el sábado 28/11) no queda ninguna semana para abrir sobres: la propuesta solo tiene sentido con la apertura el viernes 11/12. Con el 28/11 la espera se queda como hoy.</section>';
+    var st=S.state,head='<p class="kicker">Lo que se abre el día 0</p><h2 id="et">Lo que hay dentro, sobre a sobre.</h2><p class="lead">Cada semana se abre uno. El último, el día que entras.</p>';
+    if(st==="loading") return '<section class="env-sec" aria-busy="true" aria-label="Cargando los sobres" data-prop>'+head+'<div class="envs">'+[1,2,3].map(function(){return'<div class="skel" style="height:108px;border-radius:12px"></div>'}).join("")+'</div></section>';
+    if(st==="error") return '<section class="env-sec" data-prop aria-labelledby="et">'+head+'<div class="obj" style="margin-top:16px">'+PHONE+'<p style="margin:0;font-weight:700">No hemos podido abrir el sobre</p></div><div class="msg err" role="alert">Revisa tu conexión y vuelve a intentarlo. Lo que había dentro sigue ahí.</div><button class="btn btn-o" data-act="retry-env" style="margin-top:14px;width:100%">Reintentar</button><p class="obj-cap">Ilustración provisional: foto propia de un móvil boca abajo sobre la mesa del banquillo.</p></section>';
+    var opened=st==="s1"?1:st==="s2"?2:0;
+    var row=ENV.map(function(e,i){var open=i<opened,next=i===opened,anim=open&&S.envAnim===e.n;
+      var lab=open?'<b>'+e.t+'</b><small>Abierto · tócalo</small>':'<b>Sobre '+e.n+'</b><small>'+(e.door?"Se abre el "+e.short:"Se abre el "+e.short)+'</small>';
+      return '<button class="env'+(open?" open":"")+(next?" next":"")+(anim?" env-open-anim":"")+'" data-act="env" data-n="'+e.n+'" aria-label="'+(open?"Sobre "+e.n+": "+e.t+". Abierto.":"Sobre "+e.n+", cerrado. Se abre el "+e.date+".")+'">'+envSVG(e,open,next)+lab+'</button>'}).join("");
+    var nx=ENV[opened],nextTxt=nx.door?'El último se abre el <strong>viernes 11 de diciembre</strong>, cuando entres.':(opened===0?'El primer sobre se abre el <strong>'+nx.date+'</strong>.':'Próximo sobre: <strong>'+nx.date+'</strong>.');
+    return '<section class="env-sec" data-prop aria-labelledby="et">'+head+'<div class="envs">'+row+'</div><p class="env-next"><span>'+nextTxt+'</span>'+(nx.door?'':'<small>Te avisamos por correo.</small>')+'</p></section>'}
+  function envSheet(n){
+    if(n===1){var st=S.ins,ver=st==="verified";
+      var body=ver?'<div style="text-align:center;margin-top:16px">'+badge(88,{uv:true,label:"Insignia del Club Fundador verificada"})+'</div><p class="sub" style="text-align:center">Ya es tuya. Tu número llegará muy pronto.</p><button class="btn btn-o" data-act="close" style="width:100%;margin-top:16px">Cerrar</button>'
+        :st==="requested"?'<div style="text-align:center;margin-top:16px">'+badge(88,{muted:true})+'</div><p class="sub" style="text-align:center">Estamos revisando tu historia.</p><button class="btn btn-o" data-act="close" style="width:100%;margin-top:16px">Cerrar</button>'
+        :'<div style="text-align:center;margin-top:16px">'+badge(88,{})+'</div><p class="sub">No hace falta esperar al día 0: se consigue ya, desde esta pantalla, compartiendo una historia.</p><button class="btn btn-uv" data-act="env-badge" style="width:100%;margin-top:16px">'+BOLT+' Conseguir mi insignia</button>';
+      return '<div class="scrim" data-act="close"><div class="sheet" role="dialog" aria-modal="true" aria-labelledby="es"><button class="x" data-act="close" aria-label="Cerrar">×</button><p class="kicker">Sobre 1</p><h3 id="es">Tu insignia</h3><p class="sub">La insignia del Club Fundador: verificada y con tu número. Ninguno se repite.</p>'+body+'</div></div>'}
+    var T=[["Semana de carga","Volumen alto"],["Semana de descarga","Reducir carga y recuperar"],["Semana competitiva","Preparar el partido"],["Semana de recuperación","Descanso activo"]];
+    return '<div class="scrim" data-act="close"><div class="sheet" role="dialog" aria-modal="true" aria-labelledby="es"><button class="x" data-act="close" aria-label="Cerrar">×</button><p class="kicker">Sobre 2</p><h3 id="es">Tu primera semana</h3><p class="sub">Planifica una semana. Solo una. El '+d().open.replace(" de diciembre","")+' eliges cuándo empieza y qué tipo de semana es. Después la llenas de sesiones desde la app.</p><ul class="tpl">'+T.map(function(t,i){return'<li'+(i===0?' class="on"':'')+'><i></i><b>'+t[0]+'</b><span>'+t[1]+'</span></li>'}).join("")+'</ul><p class="fine">Las 4 plantillas de semana que ya tiene la app (Planificación).</p><button class="btn btn-o" data-act="close" style="width:100%;margin-top:14px">Cerrar</button></div></div>'}
+  function sobres(){
+    if(S.state==="cur"){var k=S.state;S.state=S.ins;var h=espera();S.state=k;return h}
+    var k2=S.state;S.state=S.ins;var club=clubBlock();S.state=k2;
+    return espera(club+sobresSec())}
+  function espera(mid){
+    return '<div class="app"><section class="card welcome" role="status"><h2>Bienvenido al vestuario, Marc.</h2><p>Gracias por apuntarte. Somos entrenadores de base y hemos hecho ProTeam para quitarte horas de papeleo. '+dt(d().openShort)+' te abrimos la puerta.</p><p class="sig">— El equipo de ProTeam, entrenadores como tú</p></section>'+(mid||clubBlock())+'<section class="card wait"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#6AA8FF" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 22h14M5 2h14M17 22v-4.2a2 2 0 0 0-.6-1.4L12 12l-4.4 4.4a2 2 0 0 0-.6 1.4V22M7 2v4.2a2 2 0 0 0 .6 1.4L12 12l4.4-4.4A2 2 0 0 0 17 6.2V2"/></svg><h1>Ya estás en la lista de espera</h1><p>Tu prueba gratuita de 3 meses empieza el '+dt(d().open)+' a las 00:00. Ese día añadirás tu tarjeta para entrar; no se cobrará nada hasta que acaben los 3 meses y podrás cancelar antes.</p><div class="timer" role="timer" id="tm">'+timerHTML()+'</div></section></div>'}
 
   function portada(){
     var st=S.state;
@@ -371,11 +438,12 @@ code{font-size:12px;color:var(--ice);background:var(--s2);padding:1px 5px;border
 
   function render(){
     var f=frame;f.className="frame "+S.view+(document.getElementById("chkProp").checked?" show-prop":"");
-    var url=S.screen==="espera"?"app · lista de espera":S.screen==="cabecera"?"proteam · portada, primera pantalla":"proteam · portada (campaña)";
+    var url=S.screen==="espera"||S.screen==="sobres"?"app · lista de espera":S.screen==="cabecera"?"proteam · portada, primera pantalla":"proteam · portada (campaña)";
     var html=(S.view==="desktop"?'<div class="urlbar"><span class="dots"><i></i><i></i><i></i></span><b>'+url+'</b></div>':'');
-    html+=S.screen==="espera"?espera():S.screen==="cabecera"?cabecera():portada();
+    html+=S.screen==="sobres"?sobres():S.screen==="espera"?espera():S.screen==="cabecera"?cabecera():portada();
     if(S.sheet) html+=sheetHTML();
     if(S.letter) html+=letterHTML();
+    if(S.env) html+=envSheet(S.env);
     if(S.toast) html+='<div class="toast" role="status">'+S.toast+'</div>';
     f.innerHTML=html;
     var inp=document.getElementById("founder-handle");
@@ -387,22 +455,25 @@ code{font-size:12px;color:var(--ice);background:var(--s2);padding:1px 5px;border
   var tt;function toast(m){S.toast=m;render();clearTimeout(tt);tt=setTimeout(function(){S.toast="";render()},2600)}
   function submit(){var c=norm(S.handle);if(!c){S.fieldErr="Escribe tu usuario de Instagram, sin espacios.";render();return}
     if(c==="error"){S.sendErr=true;render();return}
-    S.handle=c;S.state="requested";S.sheet=false;fillStates();toast("¡Recibido! Revisamos tu historia y te avisamos.")}
+    S.handle=c;if(S.screen==="sobres"){S.ins="requested"}else{S.state="requested"}S.sheet=false;fillStates();toast("¡Recibido! Revisamos tu historia y te avisamos.")}
   frame.addEventListener("click",function(e){var t=e.target.closest("[data-act]");if(!t)return;var a=t.dataset.act;
     if(a==="sheet"){S.sheet=true;S.fieldErr="";S.sendErr=false;render()}
     else if(a==="letter"){S.letter=true;render()}
-    else if(a==="close"){if(t.classList.contains("scrim")&&e.target!==t)return;S.sheet=false;S.letter=false;render()}
+    else if(a==="close"){if(t.classList.contains("scrim")&&e.target!==t)return;S.sheet=false;S.letter=false;S.env=0;render()}
+    else if(a==="env"){var n=+t.dataset.n,op=S.state==="s1"?1:S.state==="s2"?2:0;if(n<=op){S.env=n;render()}else{var e2=ENV[n-1];toast(e2.door?"Este sobre se abre el viernes 11, cuando entres.":"Este sobre se abre el "+e2.date+".")}}
+    else if(a==="env-badge"){S.env=0;S.sheet=true;S.fieldErr="";S.sendErr=false;render()}
+    else if(a==="retry-env"){S.state="loading";fillStates();render();setTimeout(function(){S.state="s1";fillStates();render()},900)}
     else if(a==="retry"){S.state="loading";fillStates();render();setTimeout(function(){S.state="none";fillStates();render()},900)}
     else if(a==="share")toast("Se abre el menú de compartir del móvil");
     else if(a==="download")toast("Se descarga proteam-club-fundador.jpg");
     else if(a==="toast"){e.preventDefault();toast(t.dataset.msg)}
     else if(a==="register"){if(S.state==="error"){S.heroErr=true;render();return}S.heroErr=false;toast("Abre el registro actual (AuthOverlay, «Crear cuenta»)")}});
-  document.addEventListener("keydown",function(e){if(e.key==="Escape"&&(S.sheet||S.letter)){S.sheet=S.letter=false;render()}});
-  document.getElementById("selState").addEventListener("change",function(e){S.state=e.target.value;S.heroErr=false;S.sheet=S.letter=false;render()});
+  document.addEventListener("keydown",function(e){if(e.key==="Escape"&&(S.sheet||S.letter||S.env)){S.sheet=S.letter=false;S.env=0;render()}});
+  document.getElementById("selState").addEventListener("change",function(e){var prev=S.state;S.state=e.target.value;S.heroErr=false;S.sheet=S.letter=false;S.env=0;S.envAnim=(S.screen==="sobres"&&(S.state==="s1"||S.state==="s2")&&prev!==S.state)?(S.state==="s1"?1:2):0;render()});
   function seg(id,key){var el=document.getElementById(id);el.addEventListener("click",function(e){var b=e.target.closest("button");if(!b)return;S[key]=b.dataset.v;[].forEach.call(el.children,function(x){x.setAttribute("aria-pressed",x===b)});
-    if(key==="screen"){S.state=S.screen==="espera"?"none":S.screen==="cabecera"?"normal":"campaign";S.sheet=S.letter=false;S.heroErr=false;fillStates();heroCtl()}render()})}
-  function heroCtl(){var on=S.screen==="cabecera";["ctlHero","ctlBtn","ctlFold"].forEach(function(id){document.getElementById(id).hidden=!on})}
-  seg("segScreen","screen");seg("segView","view");seg("segDates","dates");seg("segVer","ver");seg("segFold","fold");
+    if(key==="screen"){S.state=S.screen==="espera"?"none":S.screen==="cabecera"?"normal":S.screen==="sobres"?"s1":"campaign";S.sheet=S.letter=false;S.env=0;S.envAnim=0;S.heroErr=false;fillStates();heroCtl()}render()})}
+  function heroCtl(){var on=S.screen==="cabecera";["ctlHero","ctlBtn","ctlFold"].forEach(function(id){document.getElementById(id).hidden=!on});document.getElementById("ctlIns").hidden=S.screen!=="sobres"}
+  seg("segScreen","screen");seg("segView","view");seg("segDates","dates");seg("segVer","ver");seg("segFold","fold");seg("segIns","ins");
   document.getElementById("selBtn").addEventListener("change",function(e){S.btn=e.target.value;render()});
   document.getElementById("chkProp").addEventListener("change",render);
   if(window.matchMedia&&matchMedia("(min-width:900px)").matches){S.view="desktop";[].forEach.call(document.getElementById("segView").children,function(x){x.setAttribute("aria-pressed",x.dataset.v==="desktop")})}

@@ -1,7 +1,7 @@
 # Ficha · Pantalla de espera y portada: bloque del Club Fundador
 
-**Agente:** Irene (P1) · **Fecha:** 22/11/2026, rehecha en v4 el 23/11, cabecera móvil el 24/11 · **Tareas:** `exp-espera-club`, `irene-v4-paleta`, `t-20261124-p1-portada-movil`
-**Prototipo navegable:** https://claude.ai/artifact/DHjcLazBbp559Dfp5sbVZh (versión 3, sistema v4; pantallas «Espera (app)», «Portada (web)» y «Cabecera móvil (web)»; móvil 375 y escritorio; selector de estados; selector de fechas; casilla «Marcar lo propuesto»)
+**Agente:** Irene (P1) · **Fecha:** 22/11/2026, rehecha en v4 el 23/11, cabecera móvil y sobres del día 0 el 24/11 · **Tareas:** `exp-espera-club`, `irene-v4-paleta`, `t-20261124-p1-portada-movil`, `t-20261124-p1-sobres-dia0`
+**Prototipo navegable:** https://claude.ai/artifact/DHjcLazBbp559Dfp5sbVZh (versión 4, sistema v4; pantallas «Espera (app)», «Portada (web)», «Cabecera móvil (web)» y «Sobres del día 0 (app)»; móvil 375 y escritorio; selector de estados; selector de fechas; casilla «Marcar lo propuesto»)
 **Fuente del prototipo:** `agencia/experiencia/prototipos/club-fundador-espera.html`
 **Base:** rama `revision/club-fundador` de proteamapp (PR #1): `access-gate-screen.tsx`, `founder/founder-section.tsx`, `founder/founder-landing.tsx`, `founder/founder-badge.tsx`, `founder/founder-welcome.tsx`, `lib/founder.ts`, `routes/index.tsx`.
 
@@ -56,6 +56,34 @@ Origen: `reports/embudo-2026-11-24.md` (apartado 3, P1). Datos de Samuel: el 82 
 **Cómo se mide (Samuel):** cuentas nuevas ÷ visitantes de la portada cada martes y viernes, frente al 11 %. Hoy la web no registra el clic en el botón (apartado 4 del informe): si Biel quiere medir el clic, es una tarea para R1, no de diseño.
 
 **Lo que no aparece:** número de apuntados, escasez o plazas, precio, nombre de Biel.
+
+## 0c. Sobres del día 0 en la pantalla de espera (24/11, propuesta P3 de Samuel)
+Origen: `reports/embudo-2026-11-24.md` (apartado 3, P3). Datos de Samuel: desde el 20/11 no entra nadie (sin Instagram), y ninguno de los 23 equipos de la lista tiene más de un miembro: es gente que se apuntó y no ha vuelto. La propuesta da un motivo para volver a la espera sin enseñar ninguna cifra. Base en código: `src/components/access-gate-screen.tsx` (rama `revision/club-fundador`, commit 5c7a6bd): bienvenida → cuenta atrás → `FounderSection`. En el prototipo: pantalla «Sobres del día 0 (app)», con selector de estado y de insignia (sin pedir / verificada).
+
+**Confirmado (no cambia):** todo lo de la espera (bienvenida, bloque del Club con su flujo y sus estados, cuenta atrás y sus textos). Lo que va dentro de cada sobre ya existe o ya está aprobado: la insignia verificada y numerada (CLUB_FUNDADOR.md, ventaja 1, PR #1), las 4 plantillas de semana de `create-cycle-dialog.tsx` y la carta de bienvenida (ventaja 7, PR #1; en el plan, paso 2 del recorrido inicial).
+
+| Elemento | Propuesta | Estado |
+|---|---|---|
+| Dónde | Sección nueva entre el bloque del Club y la cuenta atrás: «Lo que se abre el día 0» · «Lo que hay dentro, sobre a sobre.» · «Cada semana se abre uno. El último, el día que entras.» | Propuesta |
+| Sobre 1 · «Tu insignia» | Se abre el **martes 1/12**. Dentro: la insignia del Club Fundador «verificada y con tu número. Ninguno se repite.» y «No hace falta esperar al día 0: se consigue ya, desde esta pantalla, compartiendo una historia.» → «Conseguir mi insignia» abre la ventana de siempre. Con la insignia en revisión: «Estamos revisando tu historia.»; verificada: «Ya es tuya. Tu número llegará muy pronto.» | Propuesta (contenido aprobado) |
+| Sobre 2 · «Tu primera semana» | Se abre el **martes 8/12** (festivo). Dentro: «Planifica una semana. Solo una. El 11 eliges cuándo empieza y qué tipo de semana es. Después la llenas de sesiones desde la app.» y las 4 plantillas que ya existen (Semana de carga · Volumen alto; Semana de descarga · Reducir carga y recuperar; Semana competitiva · Preparar el partido; Semana de recuperación · Descanso activo) | Propuesta. Las plantillas existen; el paso «Tu primera semana» al entrar es propuesta del recorrido inicial (sin aprobar) |
+| Sobre 3 · «Tu carta» | Se abre el **viernes 11/12, al entrar** (no se abre en la espera: es el paso «Carta» del recorrido inicial). Cerrado, al tocarlo: «Este sobre se abre el viernes 11, cuando entres.» | Propuesta |
+| Línea de abajo | «El primer sobre se abre el martes 1 de diciembre.» → «Próximo sobre: martes 8 de diciembre.» → «El último se abre el viernes 11 de diciembre, cuando entres.» + «Te avisamos por correo.» (solo si Lucía envía el aviso) | Propuesta |
+| Luz | Los sobres abiertos son lo activo: luz desde arriba, filo hielo y la hoja blanca asomando. El siguiente, solo un filo de luz y su número; los demás, en penumbra. El bloque del Club sigue siendo el más iluminado | Propuesta |
+| Ultravioleta | Ninguno nuevo en la pantalla: sigue en el Club («Conseguir mi insignia» o el rayo verificado). Dentro del sobre 1 (ventana aparte), «Conseguir mi insignia» o el rayo verificado | Propuesta |
+| Objetos reales | Sobres cerrados (sello con su número, no con el rayo: el rayo es solo del verificado); móvil boca abajo en el error. Ilustraciones provisionales | Propuesta |
+| Movimiento | Al llegar el día de un sobre, la solapa se abre una vez (0,7 s); nada con «reducir movimiento» | Propuesta |
+| Cómo se abren | Por fecha, en el navegador (hora de Madrid), con una lista fija de tres fechas. Sin servidor, base de datos ni migración | Propuesta |
+
+**Estados del prototipo:** *Hoy (vacío)*: los tres cerrados y «El primer sobre se abre el martes 1 de diciembre.» · *Mar 1/12* y *mar 8/12*: uno y dos abiertos · *Cargando*: tres esqueletos (solo si la fecha viniera del servidor; con la fecha del navegador no hace falta) · *Error al abrir el sobre*: móvil boca abajo, «No hemos podido abrir el sobre» + «Revisa tu conexión y vuelve a intentarlo. Lo que había dentro sigue ahí.» + «Reintentar» · *Actual (hoy, sin sobres)*. Con las fechas del código (apertura el 28/11) la sección no sale: no queda ninguna semana; la propuesta depende de que Biel confirme el 11/12.
+
+**Textos nuevos (para `t()`):** «Lo que se abre el día 0» · «Lo que hay dentro, sobre a sobre.» · «Cada semana se abre uno. El último, el día que entras.» · «Sobre {0}» · «Tu insignia» · «Tu primera semana» · «Tu carta» · «Se abre el {0}» · «Abierto · tócalo» · «El primer sobre se abre el {0}.» · «Próximo sobre: {0}.» · «El último se abre el viernes 11 de diciembre, cuando entres.» · «Te avisamos por correo.» · «Este sobre se abre el {0}.» · «Este sobre se abre el viernes 11, cuando entres.» · «La insignia del Club Fundador: verificada y con tu número. Ninguno se repite.» · «No hace falta esperar al día 0: se consigue ya, desde esta pantalla, compartiendo una historia.» · «Ya es tuya. Tu número llegará muy pronto.» · «Planifica una semana. Solo una.» (ya existe en el recorrido inicial) · «El 11 eliges cuándo empieza y qué tipo de semana es. Después la llenas de sesiones desde la app.» · «No hemos podido abrir el sobre» · «Revisa tu conexión y vuelve a intentarlo. Lo que había dentro sigue ahí.». Los nombres de las plantillas están hoy en catalán sin `t()` en `create-cycle-dialog.tsx` (ya anotado en `recorrido-inicial.md`).
+
+**Componentes:** `access-gate-screen.tsx` (colocar la sección entre `FounderSection` y la cuenta atrás) y un componente nuevo `founder/day-zero-envelopes.tsx` con las tres fechas y sus contenidos; el sobre 1 reutiliza `FounderBadge` y abre el mismo diálogo de `FounderSection`. Sin cambios en `lib/founder.ts`, RPC ni base de datos.
+
+**Dependencias (no son de diseño):** el aviso por correo de cada sobre es de Lucía (borrador, con el OK de Biel); medir las vueltas los días de sobre (visitas directas y desde Gmail) es de Samuel; construirlo, por PR de R1–R4.
+
+**Lo que no aparece:** número de apuntados, escasez o plazas, precio, detalles de los tickets, nombre de Biel (la carta va cerrada; dentro de la app sí lo lleva, como hoy).
 
 ## 1. Qué se conserva (sin tocar)
 - Flujo completo de la insignia: botón → ventana con 3 pasos → imagen `public/club-fundador/compartir.jpg` → «Compartir» (solo si `navigator.share` existe) y «Descargar imagen» → campo de usuario de Instagram → «Ya la he compartido» / «Actualizar solicitud» → RPC `request_founder_badge`.
@@ -117,3 +145,7 @@ Origen: `reports/embudo-2026-11-24.md` (apartado 3, P1). Datos de Samuel: el 82 
 8. ¿Botón «Apúntate a la lista de espera» (el actual) o «Entrar en la lista»?
 9. ¿Sin la línea de «3 meses gratis» en la primera pantalla, o la dejamos bajo el botón? (Sin ella, la oferta aparece más abajo, en el Club.)
 10. ¿Se deja de llamar «Blackout Friday» a la campaña ahora que el cierre es el 10/12? La cabecera nueva no lo nombra; la descripción para Google y la etiqueta de la cuenta atrás todavía sí.
+11. **Sobres del día 0 (24/11):** ¿salen en la espera, entre el Club y la cuenta atrás? Solo tienen sentido con la apertura el 11/12.
+12. ¿Este orden y estas fechas: 1 «Tu insignia» (mar 1/12), 2 «Tu primera semana» (mar 8/12, festivo) y 3 «Tu carta» (vie 11/12, al entrar)? ¿O el 8/12 pasa al miércoles 9?
+13. El sobre 2 enseña el paso «Tu primera semana» del recorrido inicial, que aún no está aprobado: ¿lo enseñamos ya o cambiamos su contenido?
+14. ¿Lucía avisa por correo de cada sobre? Si no, se quita «Te avisamos por correo.».
