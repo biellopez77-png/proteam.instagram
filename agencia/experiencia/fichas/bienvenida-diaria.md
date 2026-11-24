@@ -1,8 +1,28 @@
 # Ficha · Bienvenida diaria nueva, igual de rápida
 
-**Agente:** Irene (P1) · **Fecha:** 23/11/2026 · **Tarea:** `exp-bienvenida-diaria` (prioridad normal, prototipo para el 9/12)
-**Prototipo navegable:** https://claude.ai/artifact/X763axsDEFo2W8dd26FYaL (móvil 375 y escritorio; selectores «Versión: Nueva / Actual (hoy)», «Día», «Datos: bien / carga lenta / error», «Insignia», «Apertura: primera del día / vuelve tras 30 min»; casilla «Marcar lo propuesto»; botón «Repetir entrada»). Copia local: `agencia/experiencia/prototipos/bienvenida-diaria.html`.
+**Agente:** Irene (P1) · **Fecha:** 23/11/2026 (v4: 24/11/2026) · **Tarea:** `exp-bienvenida-diaria` (prioridad normal, prototipo para el 9/12)
+**Prototipo navegable:** https://claude.ai/artifact/X763axsDEFo2W8dd26FYaL (versión 2, v4; móvil 375 y escritorio; selector «Fechas: apertura 11/12 (por confirmar) / 28/11 (código hoy)»; selectores «Versión: Nueva / Actual (hoy)», «Día», «Datos: bien / carga lenta / error», «Insignia», «Apertura: primera del día / vuelve tras 30 min»; casilla «Marcar lo propuesto»; botón «Repetir entrada»). Copia local: `agencia/experiencia/prototipos/bienvenida-diaria.html`.
 **Base leída:** proteamapp `main` (488db5e): `components/home/home-intro.tsx` (`HomeIntro`, `INTRO_PHRASES`, `INTRO_TIMING`, `useHomeIntro`), `components/planning/assistant-home.tsx` (`AssistantHome`, `finishIntro`, `TargetLink`, `DismissMenu`), `lib/assistant.functions.ts`, `lib/assistant-model.ts`, `lib/i18n/dict/es.json`. Rama `revision/club-fundador` (5c7a6bd): `components/founder/founder-badge.tsx`, `lib/founder.ts`.
+
+## 0. Rehecho en v4 (24/11, sistema v4 de Biel del 23/11) · tarea `irene-v4-paleta` (9/10)
+
+**Prototipo:** el mismo enlace, versión 2 (v4). Mismas acciones, funciones, textos, estados y tiempos que la versión anterior; cambia la piel. Lo de los apartados siguientes sigue vigente salvo lo que se dice aquí (el «saludo editorial estilo v3» en Instrument Serif, la fecha «a lápiz», el trazo azul a lápiz y la marca a lápiz del vacío quedan sustituidos por esto).
+
+**Confirmado (no cambia):** `HomeIntro`, `INTRO_PHRASES`, `useHomeIntro` y `AssistantHome` en proteamapp `main` 488db5e (sin cambios desde la versión anterior); `FounderBadge` y `founderNumberLabel` en `revision/club-fundador` 5c7a6bd. Calendario, Nueva sesión, «Pendiente · Hoy» con su menú y «Ver todo ({n})», los textos existentes y la regla de cuándo sale.
+
+**Propuesto en v4:**
+- **Paleta oscura de la app:** fondo #02050F, superficies #060C19 / #0C1323, Plus Jakarta Sans en todo («Hola, Marta.» en 800, 44 px en móvil y 68 px en escritorio). Sin Instrument Serif en esta pantalla: no hay una palabra que lo pida y la frase del día va en texto secundario.
+- **La luz señala lo activo:** «Pendiente · Hoy» es lo único iluminado desde arriba (#0C1323 con filo hielo arriba y se enciende en 0,6 s); dentro, solo la primera tarea lleva el icono encendido con halo, las demás en penumbra con la hora en azul eléctrico como hoy. El saludo queda en la sala; el resto del inicio (semana, Tu día, Próximo partido) en penumbra al 50 %. «Nueva sesión» en azul ProTeam #636DFF; Calendario con contorno.
+- **Línea de luz bajo el nombre:** sustituye al trazo azul a lápiz; recta, hielo con halo, se enciende en 0,45 s a los 0,42 s, igual que el trazo. En la vuelta tras 30 min, sin animación.
+- **Objetos reales en los estados** (dibujos provisionales, como en los demás prototipos): «Nada pendiente hoy. A entrenar.» con una **libreta cerrada bajo el foco**; «No se han podido cargar las prioridades.» con un **móvil boca abajo** en coral suave (sin rojo); sin microciclo, una **pizarra en blanco** junto a «Crear semana».
+- **Ultravioleta, una vez por pantalla:** verificada, el rayo de la píldora «Club Fundador · Nº 011» con filo blanco; sin solicitar, la píldora entera «Consigue tu insignia del Club Fundador» (es el acceso al Club). En revisión, sin lista y en la versión actual, ninguno.
+- **Versión actual (hoy)** reconstruida en el modo oscuro de la app para comparar en igualdad: misma capa, tiempos (≈4 s hasta las tareas) y «Omitir» a los 0,8 s.
+- **Fechas** (selector en la barra): el día de ejemplo es el primer lunes con la app abierta: «Lunes 14 de diciembre» con la apertura del viernes 11/12 (por confirmar, RELANZAMIENTO.md) o «Lunes 30 de noviembre» con la del código (28/11). Los datos de ejemplo siguen esa fecha (Semana 3, «Después: Planificar Semana 4 · jueves 17/3», partido el sábado 19/5, sesión «Lunes · transiciones»). Ningún texto de la app cambia.
+
+**Dudas nuevas para Biel (v4):**
+7. La entrega del 9/12 del PLAN caía en el primer mes; con la apertura el 11/12 llega antes de abrir. ¿Entra ya el 11/12 o se queda para después?
+8. ¿Ultravioleta en «Consigue tu insignia» dentro del inicio, o solo en el rayo de la verificada? (Misma duda que en el Club en la app.)
+9. Objetos: libreta, móvil y pizarra son dibujos provisionales. ¿Foto propia o con licencia (`banco/fotos`) o dibujo?
 
 ## 1. Diagnóstico (lo que hay hoy)
 - Al abrir la app sale `HomeIntro`, una capa a pantalla completa encima del inicio: brillo → frase al azar palabra a palabra (desde 0,4 s) → «Hola, {nombre}» (2,6 s) → sube y encoge (3,4 s) → «Tareas pendientes» y las tareas una a una (desde ≈3,95 s) → «Ir al inicio» hace zoom hacia «Pendiente · Hoy». «Omitir» aparece a los 0,8 s. Si no hay nada pendiente: «Todo al día ✓» y se va sola a los ≈5 s.
