@@ -16,7 +16,7 @@ def mapc(m):
         return pre+'#B9E0FF'   # rojos, amarillos, verdes → hielo
     if l>.88: return pre+('#02050F' if 'background' in pre and ('html' in m.string[max(0,m.start()-80):m.start()] or '#st' in m.string[max(0,m.start()-80):m.start()]) else '#0C1323' if 'background' in pre or 'fill' in pre else '#F4F7FB')
     if l<.18: return pre+('#F4F7FB' if not ('background' in pre) else '#000')
-    return pre+'#8f9bb8'
+    return pre+('#0C1323' if 'background' in pre else '#8f9bb8')
 s=re.sub(r'((?:background|color|fill|stroke|border[^:;]*|text-shadow|box-shadow)\s*[:=]\s*"?[^;"#]*?)(#[0-9a-fA-F]{6}\b|#[0-9a-fA-F]{3}\b)',mapc,s)
 # sombras de halo claras en textos → oscuras
 s=re.sub(r'text-shadow:[^;}]*',lambda m:'text-shadow:0 0 12px #02050F,0 0 30px #02050F,0 0 46px #02050F' if '#0C1323' in m.group(0) or '#F4F7FB' in m.group(0) else m.group(0),s)
@@ -26,6 +26,7 @@ img{filter:url(#duo)!important}#grain{opacity:.16!important;mix-blend-mode:scree
 s=s.replace('</head>',css+'</head>',1) if '</head>' in s else s.replace('<body>','<body>'+css,1)
 # filtros de imagen puestos por script: añadir duotono delante
 s=re.sub(r"(\.style\.filter\s*=\s*`)(grayscale)",r"\1url(#duo) \2",s)
-s=re.sub(r"rgba\(2[3-5]\d, ?2[3-5]\d, ?2[2-5]\d, ?([.\d]+)\)",r"rgba(12,19,35,\1)",s)
+s=re.sub(r"rgba\(2[2-5]\d, ?2[2-5]\d, ?2[1-5]\d, ?",r"rgba(12,19,35,",s)
+s=re.sub(r"(style\.background\s*=[^;\n]*)",lambda m:re.sub(r"'#[0-9a-fA-F]{3,6}'",lambda k:"'#0C1323'" if k.group(0).lower() not in("'#636dff'","'#6aa8ff'","'#8b5cf6'") else k.group(0),m.group(1)),s)
 s=s.replace("'#121212'","'#636DFF'").replace("'#17150f'","'#F4F7FB'").replace("'#111'","'#F4F7FB'")
 open(out,'w').write(s); print('ok',out)

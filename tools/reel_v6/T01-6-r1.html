@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8">
+<!-- T01-6-r1 «Nuestro error» · a partir de la plantilla a3.html (planos fijos; la cámara solo se mueve al cambiar de zona) -->
+<style>
+@font-face{font-family:M;font-weight:800;src:url(/tools/reel_v5/node_modules/@fontsource/plus-jakarta-sans/files/plus-jakarta-sans-latin-800-normal.woff2)}
+@font-face{font-family:M;font-weight:700;src:url(/tools/reel_v5/node_modules/@fontsource/plus-jakarta-sans/files/plus-jakarta-sans-latin-700-normal.woff2)}
+@font-face{font-family:M;font-weight:500;src:url(/tools/reel_v5/node_modules/@fontsource/plus-jakarta-sans/files/plus-jakarta-sans-latin-500-normal.woff2)}
+@font-face{font-family:S;font-style:italic;font-weight:400;src:url(/tools/fonts/instrument-serif-latin-400-italic.woff2)}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#02050F}
+#st{position:absolute;inset:0;overflow:hidden;background:#02050F}
+#world{position:absolute;left:0;top:0;transform-origin:0 0}
+.o{position:absolute;left:0;top:0;transform-origin:50% 50%}
+.frame{background:#0C1323;padding:14px;box-shadow:0 18px 50px rgba(20,18,12,.10)}
+.frame img{display:block;width:100%;height:100%;object-fit:cover}
+.num{position:absolute;font-family:M;font-weight:800;letter-spacing:-.05em;color:#F4F7FB;white-space:nowrap;line-height:1}
+.hand{position:absolute;font-family:S;font-style:italic;white-space:nowrap}
+.sm{position:absolute;font-family:M;font-weight:500;font-size:22px;color:#8f9bb8;white-space:nowrap}
+.card{background:#0C1323;box-shadow:0 18px 50px rgba(20,18,12,.10);border:2px solid #F4F7FB}
+#cap{position:absolute;left:90px;right:90px;top:1330px;text-align:center;font-family:M;font-weight:800;font-size:58px;line-height:1.12;letter-spacing:-.03em;color:#F4F7FB;padding:18px 26px;border-radius:22px}
+#cap em{font-family:S;font-style:italic;font-weight:400;font-size:1.14em;letter-spacing:0}
+#ink{position:absolute;inset:0;background:#000;opacity:0;pointer-events:none}
+#mid{position:absolute;left:110px;right:110px;top:600px;text-align:center;opacity:0}
+#mid .c{position:absolute;left:0;right:0;top:-80px;height:640px;background:#0C1323;border-radius:6px;box-shadow:0 0 120px rgba(12,19,35,.18)}
+#mid .a{position:relative;margin-top:60px;font-family:S;font-style:italic;font-size:110px;line-height:1.04;color:#F4F7FB}
+#mid .b{position:relative;margin-top:44px;font-family:M;font-weight:700;font-size:28px;letter-spacing:.14em;text-transform:uppercase;color:#8f9bb8}
+</style><style>html,body,#st{background:#02050F!important}#st{background:radial-gradient(ellipse at 50% 40%,#0C1323 0%,#02050F 72%)!important}
+img{filter:url(#duo)!important}#grain{opacity:.16!important;mix-blend-mode:screen}</style>
+<svg width="0" height="0" style="position:absolute"><filter id="duo" color-interpolation-filters="sRGB"><feColorMatrix type="matrix" values=".33 .33 .33 0 0 .33 .33 .33 0 0 .33 .33 .33 0 0 0 0 0 1 0"/><feComponentTransfer><feFuncR type="table" tableValues="0.008 0.18 0.416 0.957"/><feFuncG type="table" tableValues="0.02 0.235 0.659 0.969"/><feFuncB type="table" tableValues="0.059 0.667 1 0.984"/></feComponentTransfer></filter></svg></head><body><div id="st">
+<div id="world">
+  <!-- Q · tarjeta con la cita -->
+  <div class="o card" id="Q" style="width:780px;height:560px">
+    <div style="position:absolute;left:56px;right:56px;top:52px;font-family:M;font-weight:500;font-size:27px;line-height:1.35;color:#8f9bb8">«Le dimos el papel cuando el juego ya estaba en marcha.</div>
+    <div style="position:absolute;left:56px;right:40px;top:150px;font-family:S;font-style:italic;font-size:104px;line-height:1.02;color:#F4F7FB">Ese fue<br>nuestro error.»</div>
+    <div style="position:absolute;left:56px;top:452px;font-family:M;font-weight:700;font-size:25px;letter-spacing:.06em;color:#F4F7FB">JÜRGEN KLOPP · <span style="color:#8f9bb8">FourFourTwo, 12/1/2017</span></div>
+    <div id="tape" style="position:absolute;left:40px;top:432px;width:640px;height:72px;background:#8f9bb8;box-shadow:0 4px 12px rgba(0,0,0,.08)"></div>
+  </div>
+  <!-- ST · Sturridge (CC BY 2.0) + el papel -->
+  <div class="o frame" id="ST" style="width:540px;height:720px"><img id="STi" src="/tools/reel_v4/T01-6-r1/img/sturridge.jpg" style="object-position:22% 40%"></div>
+  <div class="sm" id="STc">Daniel Sturridge (2013) · foto: Kevin Walsh, CC BY 2.0</div>
+  <div class="o" id="PA" style="width:240px;height:170px;background:#0C1323;box-shadow:0 10px 26px rgba(0,0,0,.12)">
+    <div style="margin:34px 26px;height:4px;background:#8f9bb8;box-shadow:0 22px 0 #8f9bb8,0 44px 0 #cfcabd,0 66px 0 #cfcabd"></div></div>
+  <div class="hand" id="PAt" style="font-size:64px;color:#6AA8FF">un papel</div>
+  <svg class="o" id="BALL" width="70" height="70" viewBox="0 0 70 70"><circle cx="35" cy="35" r="30" fill="#0C1323" stroke="#F4F7FB" stroke-width="3"/>
+    <path d="M35 17 L48 27 L43 43 L27 43 L22 27Z" fill="#F4F7FB"/><path d="M35 17 L35 5 M48 27 L62 22 M43 43 L52 57 M27 43 L18 57 M22 27 L8 22" stroke="#F4F7FB" stroke-width="3"/></svg>
+  <div class="hand" id="BALt" style="font-size:64px;color:#F4F7FB">balón en juego</div>
+  <!-- SM · St Mary's (CC BY-SA 4.0) + marcador -->
+  <div class="o frame" id="SM" style="width:820px;height:600px"><img id="SMi" src="/tools/reel_v4/T01-6-r1/img/stmarys.jpg"></div>
+  <div class="sm" id="SMc">St Mary's, Southampton · foto: Dan Kerins, CC BY-SA 4.0</div>
+  <div class="o card" id="SC" style="width:700px;height:330px">
+    <div id="d17" style="position:absolute;left:0;right:0;top:34px;text-align:center;font-family:M;font-weight:800;font-size:30px;letter-spacing:.16em;color:#8f9bb8">11 · 1 · 2017</div>
+    <div id="cup" style="position:absolute;left:0;right:0;top:84px;text-align:center;font-family:S;font-style:italic;font-size:54px;color:#F4F7FB">Copa de la Liga · semifinal</div>
+    <div id="scr" style="position:absolute;left:0;right:0;top:178px;text-align:center;font-family:M;font-weight:800;font-size:50px;letter-spacing:-.03em;color:#F4F7FB">Southampton 1 <span style="color:#8f9bb8">·</span> Liverpool 0</div>
+  </div>
+  <!-- K · el papel de Klopp: 3-5-2 -->
+  <div class="o" id="K" style="width:900px;height:700px">
+    <div class="hand" id="Kn" style="left:40px;top:60px;font-size:110px;color:#F4F7FB">Klopp</div>
+    <svg style="position:absolute;left:0;top:0;overflow:visible" width="900" height="700"><path id="Ka" d="M300 170 C 420 170 470 220 500 300" fill="none" stroke="#6AA8FF" stroke-width="9" stroke-linecap="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/>
+      <path id="Kh" d="M478 270 L500 302 L520 266" fill="none" stroke="#6AA8FF" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" opacity="0"/></svg>
+    <div id="Kp" style="position:absolute;left:300px;top:330px;width:440px;height:300px;background:#0C1323;box-shadow:0 14px 34px rgba(0,0,0,.12);transform-origin:50% 0">
+      <div class="num" id="K352" style="left:0;right:0;top:80px;text-align:center;font-size:150px">3-5-2</div></div>
+  </div>
+  <!-- PZ · pizarra de fútbol 11 (cálida: el pasado) -->
+  <svg class="o" id="PZ" width="900" height="1300" viewBox="0 0 900 1300" style="overflow:visible">
+    <rect x="0" y="0" width="900" height="1300" rx="10" fill="#0C1323"/>
+    <g fill="none" stroke="#8f9bb8" stroke-width="4" opacity=".75">
+      <rect x="40" y="40" width="820" height="1220"/><path d="M40 650 H860"/><circle cx="450" cy="650" r="100"/>
+      <rect x="230" y="40" width="440" height="180"/><rect x="230" y="1080" width="440" height="180"/><rect x="380" y="1260" width="140" height="14" stroke-width="7"/><rect x="380" y="26" width="140" height="14" stroke-width="7"/></g>
+    <g id="arrs" fill="none" stroke="#6AA8FF" stroke-width="6" stroke-linecap="round"></g>
+    <g id="pl"></g>
+    <rect id="p15" x="0" y="0" width="34" height="44" fill="#0C1323" stroke="#F4F7FB" stroke-width="2.5"/>
+    <text id="lLu" font-family="S" font-style="italic" font-size="58" fill="#6AA8FF" opacity="0">Lucas</text>
+    <text id="lEm" font-family="S" font-style="italic" font-size="58" fill="#6AA8FF" opacity="0">Emre</text>
+    <g id="pb"><circle r="17" fill="#0C1323" stroke="#F4F7FB" stroke-width="3"/><circle r="6" fill="#F4F7FB"/></g>
+  </svg>
+  <!-- F · tu campo (frío: hoy) -->
+  <svg class="o" id="F" width="760" height="1040" viewBox="0 0 760 1040" style="overflow:visible">
+    <rect x="0" y="0" width="760" height="1040" rx="10" fill="#0C1323"/>
+    <g fill="none" stroke="#8f9bb8" stroke-width="4" opacity=".8">
+      <rect x="40" y="40" width="680" height="960"/><path d="M40 520 H720"/><circle cx="380" cy="520" r="80"/>
+      <rect x="230" y="860" width="300" height="140"/><rect x="320" y="1000" width="120" height="14" stroke-width="7"/></g>
+    <path id="hole" d="M560 560 L720 560 L720 860 L560 860 Z" fill="none" stroke="#8f9bb8" stroke-width="4" stroke-dasharray="14 12" opacity="0"/>
+    <g id="fd" fill="#8f9bb8"><circle cx="230" cy="800" r="30"/><circle cx="380" cy="830" r="30"/><circle cx="530" cy="800" r="30"/><circle cx="380" cy="960" r="30"/></g>
+    <g id="lat"><circle r="32" fill="#8f9bb8"/><text y="13" text-anchor="middle" font-family="M" font-weight="800" font-size="36" fill="#0C1323">2</text></g>
+    <path id="gtr" d="M520 120 C 650 330 690 560 640 760 C 600 900 480 960 395 1004" fill="none" stroke="#B9E0FF" stroke-width="8" stroke-linecap="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/>
+    <text id="gol" x="380" y="-40" text-anchor="middle" font-family="S" font-style="italic" font-size="96" fill="#B9E0FF" opacity="0">gol en contra</text>
+  </svg>
+  <!-- LB · libreta del jueves (solución: blanco y azul) -->
+  <div class="o card" id="LB" style="width:720px;height:940px">
+    <div class="hand" style="left:60px;top:50px;font-size:92px;color:#6AA8FF">Jueves · plan B</div>
+    <div class="sm" style="right:40px;top:40px;font-weight:800;letter-spacing:.12em;font-size:20px">EJEMPLO</div>
+    <svg style="position:absolute;left:0;top:0" width="720" height="940">
+      <g stroke="#8f9bb8" stroke-width="3"><path id="r1" d="M60 330 H660" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/><path id="r2" d="M60 500 H660" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/><path id="r3" d="M60 670 H660" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/></g></svg>
+    <div class="hand w" id="w1" style="left:70px;top:236px;font-size:82px;color:#F4F7FB;overflow:hidden">baja: <span style="color:#6AA8FF">el 6</span></div>
+    <div class="hand w" id="w2" style="left:70px;top:406px;font-size:82px;color:#F4F7FB;overflow:hidden">sube: <span style="color:#6AA8FF">el 3</span></div>
+    <div class="hand w" id="w3" style="left:70px;top:576px;font-size:82px;color:#F4F7FB;overflow:hidden">avisa: <span style="color:#6AA8FF">el 4</span></div>
+    <svg id="pen" style="position:absolute;left:0;top:0;overflow:visible" width="40" height="300"><g transform="rotate(28)"><rect x="-9" y="-260" width="18" height="230" fill="#B9E0FF" stroke="#F4F7FB" stroke-width="2"/><path d="M-9 -30 L0 0 L9 -30Z" fill="#B9E0FF" stroke="#F4F7FB" stroke-width="2"/><path d="M-3 -10 L0 0 L3 -10Z" fill="#F4F7FB"/></g></svg>
+  </div>
+  <!-- CL · diez minutos, el sábado, una pausa -->
+  <div class="o" id="CL" style="width:760px;height:760px">
+    <svg style="position:absolute;left:40px;top:40px" width="330" height="330" viewBox="0 0 300 300"><circle cx="150" cy="150" r="128" fill="#0C1323" stroke="#F4F7FB" stroke-width="5"/>
+      <path id="arc" d="M150 22 A128 128 0 1 1 149.9 22" fill="none" stroke="#6AA8FF" stroke-width="10" stroke-linecap="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/>
+      <text x="150" y="172" text-anchor="middle" font-family="M" font-weight="800" font-size="72" fill="#F4F7FB">10'</text></svg>
+    <div class="hand" id="ens" style="left:70px;top:390px;font-size:70px;color:#F4F7FB">de ensayo</div>
+    <svg id="cono" style="position:absolute;left:470px;top:110px" width="200" height="240" viewBox="0 0 200 240"><path d="M100 10 L160 200 L40 200Z" fill="#0C1323" stroke="#F4F7FB" stroke-width="5" stroke-linejoin="round"/><path d="M78 80 L122 80 M66 130 L134 130" stroke="#6AA8FF" stroke-width="12"/><rect x="14" y="196" width="172" height="20" rx="4" fill="#0C1323" stroke="#F4F7FB" stroke-width="5"/></svg>
+    <div class="hand" id="sab" style="left:420px;top:390px;font-size:70px;color:#6AA8FF">sábado</div>
+    <svg id="out" style="position:absolute;left:380px;top:500px;overflow:visible" width="360" height="200"><path d="M10 160 H350" stroke="#F4F7FB" stroke-width="4"/><path id="otr" d="M20 60 C 120 60 200 80 300 190" fill="none" stroke="#6AA8FF" stroke-width="5" stroke-dasharray="10 10" stroke-linecap="round" opacity="0"/>
+      <g id="ob"><circle r="22" fill="#0C1323" stroke="#F4F7FB" stroke-width="3"/><circle r="8" fill="#F4F7FB"/></g><text x="350" y="150" text-anchor="end" font-family="M" font-weight="700" font-size="24" fill="#8f9bb8">banda</text></svg>
+  </div>
+  <div class="o" id="BU" style="width:420px;height:220px">
+    <svg style="position:absolute;left:0;top:0" width="420" height="220"><path d="M30 20 H390 Q410 20 410 40 V140 Q410 160 390 160 H140 L80 210 L96 160 H30 Q10 160 10 140 V40 Q10 20 30 20Z" fill="#6AA8FF"/></svg>
+    <div class="num" style="left:0;right:0;top:48px;text-align:center;font-size:72px;color:#F4F7FB">¡Plan B!</div></div>
+  <!-- marca -->
+  <div class="o" id="B" style="width:900px;height:500px;text-align:center">
+    <div class="num" style="position:static;font-size:170px;margin-top:120px">Pro<span style="color:#6AA8FF">Team</span></div>
+    <div style="margin-top:30px;font-family:M;font-weight:500;font-size:38px;color:#8f9bb8">la app del entrenador · enlace en la bio</div>
+  </div>
+</div>
+<div id="cap"></div>
+<div id="ink"></div>
+<div id="mid"><div class="c"></div><div class="a"></div><div class="b"></div></div>
+</div>
+<script src="/tools/reel_v4/T01-6-r1/times.js"></script>
+<script>
+const $=id=>document.getElementById(id), W=window.WORDS;
+const at=(w,n=1)=>{let c=0;for(const x of W)if(x[0]===w&&++c===n)return x[1];throw 'no '+w};
+const cl=(x,a=0,b=1)=>Math.min(b,Math.max(a,x)), r=(t,a,b)=>cl((t-a)/(b-a));
+const io=x=>x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2, eo=x=>1-Math.pow(1-x,3), lerp=(a,b,k)=>a+(b-a)*k;
+const T={dice:at('dice'),klopp:at('klopp'),y1:at('y'),papel:at('papel'),y2:at('y',2),balon:at('balon'),enero:at('enero'),semi:at('semifinal'),
+ liv:at('liverpool'),pierde:at('pierde'),klopp2:at('klopp',2),cambia:at('cambia'),lucas:at('lucas'),emre:at('emre'),ext:at('extremos'),del:at('delanteros'),
+ pero:at('pero'),uno:at('uno'),y5:at('y',5),cont:at('contarselo'),diez:at('diez'),marcha:at('marcha'),mientras:at('mientras'),reloj:at('reloj'),corre:at('corre'),
+ hasta:at('hasta'),quiza:at('quiza'),tarde:at('tarde'),ahora:at('ahora'),cambias:at('cambias'),y7:at('y',7),lateral:at('lateral'),subiendo:at('subiendo'),
+ gol:at('gol'),contra:at('contra'),por:at('por'),jueves:at('jueves'),tres2:at('tres',2),q1:at('quien'),q2:at('quien',2),q3:at('quien',3),avisa:at('avisa'),
+ diez2:at('diez',2),ensayo:at('ensayo'),sabado:at('sabado'),pausa:at('pausa'),una2:at('una',2),palabra:at('palabra'),apunt:at('apuntalo'),para:at('para'),
+ ese2:at('ese',2),END:window.VEND+.25};
+// zonas del mundo
+const QP=[0,0], STP=[1500,0], PAP=[1980,-170], SMP=[3000,-120], SCP=[3000,760], KP=[450,1700], PZP=[450,3450], FP=[1900,3450], LBP=[0,5200], CLP=[1050,5200], BUP=[1180,4720], BP=[2700,5200];
+const CUT1=T.corre+.75, CUT2=T.contra+.75;
+// cámara: planos FIJOS; solo se mueve al cambiar de zona (0,6 s, entrada y salida suaves)
+const SH=[ // [inicio del movimiento, cx, cy, zoom]
+ [0,QP[0],QP[1]+20,1.3],
+ [T.dice-.3,QP[0]-40,QP[1]+190,2.0],                 // detalle: la firma
+ [T.y1-.25,STP[0]+200,STP[1]-60,.98],                  // general: Sturridge y el papel
+ [T.papel-.3,PAP[0],PAP[1]+10,2.0],                    // detalle: el papel
+ [T.y2-.2,STP[0]+480,STP[1]+520,1.5],                 // el balón rueda
+ [T.enero-.35,SMP[0],SMP[1]+40,1.18],                  // St Mary's
+ [T.liv-.4,SCP[0],SCP[1],1.5],                         // marcador
+ [T.klopp2-.35,KP[0],KP[1]+60,1.15],                   // Klopp · 3-5-2
+ [T.lucas-.4,PZP[0],PZP[1]-60,.98],                    // pizarra
+ [T.pero-.3,PZP[0]+100,PZP[1]-170,2.0],                // el 15 con el papel
+ [T.y5-.25,PZP[0],PZP[1]-60,.98],                      // a otros diez
+ [CUT1,FP[0],FP[1]-40,1.02],                           // (bajo el negro) tu campo
+ [T.y7-.3,FP[0]+170,FP[1]-110,1.55],                   // la banda
+ [T.gol-.35,FP[0]+80,FP[1]+300,1.7],                   // el gol
+ [CUT2,LBP[0],LBP[1]-20,1.18],                         // (bajo el negro) la libreta
+ [T.tres2-.35,LBP[0]+20,LBP[1]+80,1.6],                // las tres líneas
+ [T.diez2-.35,CLP[0],CLP[1],1.2],                      // diez minutos, sábado
+ [T.una2-.3,LBP[0]+540,LBP[1]-60,.56],                 // tablero entero
+ [T.apunt-.3,BP[0],BP[1],1.0],                         // ProTeam
+ [T.para-.05,QP[0],QP[1]+20,1.3]];                     // vuelta al primer encuadre
+const CUTS=new Set([CUT1,CUT2]);
+function cam(t){let i=0;while(i+1<SH.length&&SH[i+1][0]<=t)i++;const s=SH[i];
+ if(i===0||CUTS.has(s[0]))return [s[1],s[2],s[3],0];
+ const p=SH[i-1],D=.62,k=r(t,s[0],s[0]+D),e=io(k);
+ const lz=lerp(Math.log(p[3]),Math.log(s[3]),e)-.12*Math.sin(Math.PI*k)*(Math.hypot(s[1]-p[1],s[2]-p[2])>600?1:0);
+ return [lerp(p[1],s[1],e),lerp(p[2],s[2],e),Math.exp(lz),k>0&&k<1?Math.sin(Math.PI*k):0]}
+const sz=el=>[el.offsetWidth||+el.getAttribute('width'),el.offsetHeight||+el.getAttribute('height')];
+function place(el,x,y,rot=0,sc=1){const [w,h]=sz(el);el.style.transform=`translate(${x-w/2}px,${y-h/2}px) rotate(${rot}deg) scale(${sc})`}
+function put(el,x,y,a=1){el.style.left=x+'px';el.style.top=y+'px';el.style.opacity=a}
+// pizarra: del 4-4-2 al 3-5-2 (sin números salvo el 15)
+const A=[[450,1210],[150,1000],[350,1030],[550,1030],[750,1000],[150,760],[350,790],[550,790],[750,760],[350,520],[560,520]];
+const B=[[450,1210],[110,690],[250,1020],[650,1020],[790,690],[290,720],[450,1060],[450,790],[610,720],[350,470],[560,470]];
+const PL=[];{const g=$('pl');A.forEach((p,i)=>{const e=document.createElementNS('http://www.w3.org/2000/svg','g');
+ e.innerHTML=`<circle r="34" fill="#B9E0FF"/>`+(i===10?`<text y="13" text-anchor="middle" font-family="M" font-weight="800" font-size="34" fill="#0C1323">15</text>`:'');g.appendChild(e);PL.push(e)})}
+const AR=[];{const g=$('arrs');for(let i=0;i<10;i++){const p=document.createElementNS('http://www.w3.org/2000/svg','path');p.setAttribute('pathLength',100);p.setAttribute('stroke-dasharray','100 100');p.setAttribute('stroke-dashoffset',100);g.appendChild(p);AR.push(p)}}
+const REACH=[1,.45,1,.5,1,.4,1,.55,.35,1]; // algunas flechas no llegan
+const CAPS=[[T.y1,T.enero-.2,'Todo empieza con un papel<br><em>y el balón en juego.</em>'],[T.enero,T.klopp2-.2,'Enero de 2017.<br><em>Semifinal de Copa.</em>'],
+ [T.klopp2,T.lucas-.25,'Klopp <em>lo cambia todo.</em>'],[T.lucas,T.pero-.2,'Lucas atrás, Emre en el centro.<br><em>Dos extremos, dos delanteros.</em>'],
+ [T.pero,T.y5-.15,'Pero el papel <em>lo lleva uno.</em>'],[T.y5,T.mientras-.15,'Y tiene que contárselo<br><em>a otros diez.</em>'],[T.mientras,T.corre+.3,'Mientras el rival sigue jugando<br><em>y el reloj corre.</em>'],
+ [T.ahora,T.y7-.15,'Ahora <em>tú.</em>'],[T.y7,T.gol-.2,'Tu lateral<br><em>sigue subiendo solo.</em>'],[T.gol,T.contra+.35,'Gol <em>en contra.</em>'],
+ [T.por+.35,T.tres2-.2,'El cambio de dibujo<br><em>se prepara el jueves.</em>'],[T.tres2,T.q1-.15,'Tres líneas.'],[T.q1,T.diez2-.2,'Quién baja, quién sube,<br><em>quién avisa.</em>'],
+ [T.diez2,T.una2-.2,'Diez minutos de ensayo.<br><em>El sábado, una pausa.</em>'],[T.una2,T.apunt-.2,'Una <em>palabra.</em>'],[T.para+.1,T.ese2-.35,'Para que nadie tenga que decir…']];
+window.frame=function(t){
+  const [cx,cy,z,mv]=cam(t);
+  const wd=$('world');wd.style.transform=`translate(540px,760px) scale(${z}) translate(${-cx}px,${-cy}px)`;
+  wd.style.filter=mv>.35?`blur(${(2.6*(mv-.35)/.65).toFixed(2)}px)`:'none';
+  // Q: la firma se destapa con «Klopp»; la cinta vuelve cuando la cámara está lejos (final circular)
+  place($('Q'),QP[0],QP[1],-.8);
+  const tp=t<30?io(r(t,T.klopp-.15,T.klopp+.35)):0;$('tape').style.transform=`translateX(${700*tp}px) rotate(${-2+3*tp}deg)`;$('tape').style.opacity=1-tp;
+  // Sturridge (cálido) y el papel
+  place($('ST'),STP[0],STP[1],0);$('STi').style.filter='sepia(.28) saturate(.85)';put($('STc'),STP[0]-270,STP[1]+380,1);
+  place($('PA'),PAP[0],PAP[1],-6,1);$('PA').style.opacity=r(t,T.y1-.4,T.y1);
+  put($('PAt'),PAP[0]-110,PAP[1]+90,eo(r(t,T.papel-.05,T.papel+.35)));
+  // balón: rueda por debajo de la foto
+  const bk=io(r(t,T.y2-.1,T.enero+.1));const bx=lerp(STP[0]+60,STP[0]+760,bk);place($('BALL'),bx,STP[1]+470,bk*620);$('BALL').style.opacity=r(t,T.y1,T.y1+.3);
+  put($('BALt'),STP[0]+180,STP[1]+540,eo(r(t,T.balon-.05,T.balon+.35)));
+  // St Mary's y marcador
+  place($('SM'),SMP[0],SMP[1]);$('SMi').style.filter='sepia(.3) saturate(.8)';put($('SMc'),SMP[0]-410,SMP[1]+312,1);
+  place($('SC'),SCP[0],SCP[1]+18);$('d17').style.opacity=r(t,T.enero,T.enero+.4);$('cup').style.opacity=r(t,T.semi,T.semi+.4);$('scr').style.opacity=r(t,T.pierde-.1,T.pierde+.3);
+  // Klopp y el papel que se despliega
+  place($('K'),KP[0],KP[1]);$('Kn').style.opacity=r(t,T.klopp2-.1,T.klopp2+.3);
+  $('Ka').setAttribute('stroke-dashoffset',100-100*io(r(t,T.klopp2+.15,T.cambia+.2)));$('Kh').setAttribute('opacity',r(t,T.cambia+.1,T.cambia+.3));
+  const uf=io(r(t,T.cambia,T.cambia+.6));$('Kp').style.transform=`scaleY(${lerp(.18,1,uf)})`;$('K352').style.opacity=r(t,T.cambia+.3,T.cambia+.7);
+  // pizarra
+  place($('PZ'),PZP[0],PZP[1]);
+  const tk=[T.lucas,T.emre,T.ext,T.del];
+  PL.forEach((e,i)=>{const s=i===6?T.lucas:i===7?T.emre:(i===1||i===4)?T.ext:(i>=9)?T.del:T.lucas+.25;const k=io(r(t,s-.1,s+.6));
+   const p=[lerp(A[i][0],B[i][0],k),lerp(A[i][1],B[i][1],k)];e.setAttribute('transform',`translate(${p[0]},${p[1]})`);e._p=p});
+  const p15=PL[10]._p;$('p15').setAttribute('x',p15[0]+30);$('p15').setAttribute('y',p15[1]-56);$('p15').setAttribute('transform',`rotate(-8 ${p15[0]+47} ${p15[1]-34})`);
+  $('p15').setAttribute('opacity',r(t,T.pero+.1,T.pero+.4));
+  $('lLu').setAttribute('x',B[6][0]+46);$('lLu').setAttribute('y',B[6][1]+18);$('lLu').setAttribute('opacity',r(t,T.lucas,T.lucas+.35)*(1-r(t,T.pero-.3,T.pero)));
+  $('lEm').setAttribute('x',B[7][0]+46);$('lEm').setAttribute('y',B[7][1]+18);$('lEm').setAttribute('opacity',r(t,T.emre,T.emre+.35)*(1-r(t,T.pero-.3,T.pero)));
+  const a0=T.cont-.05,a1=T.marcha;AR.forEach((p,i)=>{const q=PL[i]._p;const s=a0+(a1-a0)*i/10;const ex=lerp(p15[0],q[0],.82),ey=lerp(p15[1],q[1],.82);
+   p.setAttribute('d',`M${p15[0]} ${p15[1]} Q ${(p15[0]+ex)/2+40} ${(p15[1]+ey)/2} ${ex} ${ey}`);p.setAttribute('stroke-dashoffset',100-100*REACH[i]*eo(r(t,s,s+.35)));p.setAttribute('opacity',(REACH[i]<1?.55:1)*(t>s?1:0))});
+  // balón en juego por la pizarra
+  const u=Math.max(0,t-T.y5);$('pb').setAttribute('transform',`translate(${450+300*Math.sin(u*.9)},${640+260*Math.sin(u*.55+.6)})`);$('pb').setAttribute('opacity',r(t,T.y5-.2,T.y5+.2));
+  // tu campo (frío)
+  place($('F'),FP[0],FP[1]);
+const ls=io(r(t,T.lateral-.1,T.subiendo+.8));
+  $('lat').setAttribute('transform',`translate(${lerp(640,650,ls)},${lerp(780,300,ls)})`);
+  $('hole').setAttribute('opacity',r(t,T.subiendo,T.subiendo+.4));
+  $('gtr').setAttribute('stroke-dashoffset',100-100*io(r(t,T.gol-.1,T.contra+.2)));$('gol').setAttribute('opacity',0);
+  // libreta
+  place($('LB'),LBP[0],LBP[1],-.6);
+  ['r1','r2','r3'].forEach((id,i)=>$(id).setAttribute('stroke-dashoffset',100-100*io(r(t,T.tres2+i*.15,T.tres2+.4+i*.15))));
+  const WR=[[T.q1,T.q2-.05],[T.q2,T.q3-.05],[T.q3,T.avisa+.45]];let pen=null;
+  WR.forEach(([s,e],i)=>{const k=r(t,s,e);const el=$('w'+(i+1));el.style.clipPath=`inset(-20px ${100-100*k}% -30px -10px)`;if(k>0&&k<1)pen=[70+el.offsetWidth*k,236+170*i+90]});
+  if(!pen){const k=r(t,T.avisa+.45,T.avisa+.9);pen=[70+$('w3').offsetWidth+40*k,576+90+40*k]}
+  $('pen').style.transform=`translate(${pen[0]}px,${pen[1]-300}px)`;$('pen').style.opacity=r(t,T.q1-.35,T.q1-.05)*(1-r(t,T.diez2-.3,T.diez2));
+  // diez minutos · sábado · una pausa
+  place($('CL'),CLP[0],CLP[1]);$('arc').setAttribute('stroke-dashoffset',100-100*io(r(t,T.diez2,T.ensayo+.6)));
+  $('ens').style.opacity=r(t,T.ensayo-.1,T.ensayo+.3);$('sab').style.opacity=r(t,T.sabado-.1,T.sabado+.3);$('cono').style.opacity=r(t,T.diez2,T.diez2+.3);
+  const ok=io(r(t,T.sabado+.2,T.pausa+.5));$('ob').setAttribute('transform',`translate(${lerp(20,300,ok)},${lerp(60,190,ok)-60*Math.sin(Math.PI*ok)*0})`);$('otr').setAttribute('opacity',ok>0?.8:0);
+  $('out').style.opacity=r(t,T.sabado,T.sabado+.3);
+  place($('BU'),BUP[0],BUP[1],-3,lerp(.85,1,eo(r(t,T.palabra-.1,T.palabra+.3))));$('BU').style.opacity=r(t,T.palabra-.1,T.palabra+.25);
+  place($('B'),BP[0],BP[1]);
+  // rótulo
+  let html='',a=0;for(const [s,e,h] of CAPS)if(t>=s-.2&&t<e+.25){html=h;a=Math.min(r(t,s-.2,s+.15),1-r(t,e-.05,e+.25))}
+  const cp=$('cap');cp.style.background='rgba(12,19,35,.94)';if(cp.dataset.h!==html){cp.innerHTML=html;cp.dataset.h=html}
+  cp.style.opacity=a;cp.style.transform=`translateY(${(1-a)*12}px)`;
+  // giros: negro (Klopp lo reconoce) y negro → blanco (la solución)
+  const k1=r(t,T.corre+.25,T.corre+.7)*(1-r(t,T.ahora-.3,T.ahora+.1));
+  const k2=r(t,T.contra+.3,T.contra+.7)*(1-r(t,CUT2+.05,T.por+.35));
+  $('ink').style.opacity=Math.max(k1,k2);
+  const md=$('mid');let ma=0;
+  if(k1>0){md.querySelector('.a').innerHTML='«Quizá fue<br>un poco tarde.»';md.querySelector('.b').textContent='Jürgen Klopp · FourFourTwo';
+   ma=r(t,T.hasta,T.hasta+.5)*(1-r(t,T.ahora-.45,T.ahora-.1));md.querySelector('.a').style.opacity=r(t,T.quiza-.1,T.quiza+.35);md.querySelector('.b').style.opacity=r(t,T.quiza+.2,T.quiza+.6)}
+  md.style.opacity=ma;
+};
+Promise.all([...document.images].map(i=>i.decode().catch(()=>{}))).then(()=>document.fonts.ready).then(()=>{frame(0);window.ready=true});
+</script></body></html>

@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8">
+<!-- T01-5-r3 «El penalti» (fútbol). Plantilla a3.html: planos fijos, la cámara solo se mueve al cambiar de zona. Todo dibujado (sin fotos, sin caras, sin escudos). Escena en segunda persona: «tres minutos» y «cuatro» son de la escena (EJEMPLO). -->
+<style>
+@font-face{font-family:M;font-weight:800;src:url(/tools/reel_v5/node_modules/@fontsource/plus-jakarta-sans/files/plus-jakarta-sans-latin-800-normal.woff2)}
+@font-face{font-family:M;font-weight:700;src:url(/tools/reel_v5/node_modules/@fontsource/plus-jakarta-sans/files/plus-jakarta-sans-latin-700-normal.woff2)}
+@font-face{font-family:M;font-weight:500;src:url(/tools/reel_v5/node_modules/@fontsource/plus-jakarta-sans/files/plus-jakarta-sans-latin-500-normal.woff2)}
+@font-face{font-family:S;font-style:italic;font-weight:400;src:url(/tools/fonts/instrument-serif-latin-400-italic.woff2)}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#02050F}
+#st{position:absolute;inset:0;overflow:hidden;background:#02050F}
+#world{position:absolute;left:0;top:0;transform-origin:0 0}
+.o{position:absolute;left:0;top:0;transform-origin:50% 50%}
+.paper{background:#0C1323;box-shadow:0 18px 50px rgba(20,18,12,.10)}
+.board{background:#0C1323;border:10px solid #8f9bb8;border-radius:10px;box-shadow:0 18px 50px rgba(20,18,12,.10)}
+.num{position:absolute;font-family:M;font-weight:800;letter-spacing:-.05em;color:#F4F7FB;white-space:nowrap;line-height:1}
+.big{font-family:S;font-style:italic;line-height:1;text-align:center;white-space:nowrap}
+.lab{position:absolute;font-family:M;font-weight:800;letter-spacing:.14em;color:#F4F7FB;white-space:nowrap}
+#cap{position:absolute;left:90px;right:90px;top:1330px;text-align:center;font-family:M;font-weight:800;font-size:58px;line-height:1.12;letter-spacing:-.03em;color:#F4F7FB;padding:18px 26px;border-radius:22px;background:rgba(12,19,35,.94)}
+#cap em{font-family:S;font-style:italic;font-weight:400;font-size:1.14em;letter-spacing:0}
+#cap .b{color:#6AA8FF}#cap .r{color:#B9E0FF}
+#cap.dk{background:rgba(14,14,16,0);color:#F4F7FB}
+#hook{position:absolute;left:70px;right:70px;top:120px;text-align:center;font-family:M;font-weight:800;font-size:84px;line-height:1.04;letter-spacing:-.05em;color:#F4F7FB}
+#gr{position:absolute;inset:0;pointer-events:none;mix-blend-mode:multiply;opacity:0}
+#ink{position:absolute;inset:0;background:#000;opacity:0;pointer-events:none}
+#rc{position:absolute;left:340px;top:560px;opacity:0;pointer-events:none}
+</style><style>html,body,#st{background:#02050F!important}#st{background:radial-gradient(ellipse at 50% 40%,#0C1323 0%,#02050F 72%)!important}
+img{filter:url(#duo)!important}#grain{opacity:.16!important;mix-blend-mode:screen}</style>
+<svg width="0" height="0" style="position:absolute"><filter id="duo" color-interpolation-filters="sRGB"><feColorMatrix type="matrix" values=".33 .33 .33 0 0 .33 .33 .33 0 0 .33 .33 .33 0 0 0 0 0 1 0"/><feComponentTransfer><feFuncR type="table" tableValues="0.008 0.18 0.416 0.957"/><feFuncG type="table" tableValues="0.02 0.235 0.659 0.969"/><feFuncB type="table" tableValues="0.059 0.667 1 0.984"/></feComponentTransfer></filter></svg></head><body><div id="st">
+<div id="world">
+  <!-- 1 · el punto de penalti (P) -->
+  <svg class="o" id="PP" width="1800" height="1400" viewBox="0 0 1800 1400">
+    <rect width="1800" height="1400" fill="#8f9bb8"/>
+    <g fill="none" stroke="#F4F7FB" stroke-width="10"><path d="M0 480 H1800"/><path d="M780 480 A 300 300 0 0 0 1020 480"/><path d="M0 920 H1800"/><path d="M0 1140 H1800"/></g>
+    <circle cx="900" cy="700" r="15" fill="#0C1323"/>
+    <circle cx="900" cy="700" r="120" fill="none" stroke="#B9E0FF" stroke-width="9" stroke-linecap="round" transform="rotate(-80 900 700)"/>
+  </svg>
+  <!-- 2 · el reloj del vestuario (R) -->
+  <svg class="o" id="RL" width="520" height="560" viewBox="0 0 520 560" style="overflow:visible">
+    <circle cx="260" cy="260" r="232" fill="#0C1323" stroke="#F4F7FB" stroke-width="10"/>
+    <g id="ticks" stroke="#F4F7FB" stroke-linecap="round"></g>
+    <line x1="260" y1="260" x2="260" y2="150" stroke="#F4F7FB" stroke-width="16" stroke-linecap="round" transform="rotate(-60 260 260)"/>
+    <line id="rlM" x1="260" y1="260" x2="260" y2="70" stroke="#F4F7FB" stroke-width="10" stroke-linecap="round"/>
+    <circle cx="260" cy="260" r="14" fill="#F4F7FB"/>
+    <text x="260" y="545" font-family="M" font-weight="800" font-size="30" text-anchor="middle" fill="#8f9bb8" letter-spacing="6">DESCANSO</text></svg>
+  <!-- 3 · el campo (C) y el silbato -->
+  <svg class="o" id="CF" width="760" height="1100" viewBox="0 0 760 1100" style="overflow:visible">
+    <rect width="760" height="1100" fill="#0C1323"/>
+    <rect id="cfR" x="600" y="0" width="160" height="1100" fill="#B9E0FF" opacity="0"/>
+    <g fill="none" stroke="#F4F7FB" stroke-width="4" opacity=".55"><rect width="760" height="1100"/><path d="M0 550 H760"/><circle cx="380" cy="550" r="90"/>
+      <rect x="170" y="940" width="420" height="160"/><rect x="280" y="1050" width="200" height="50"/><rect x="170" y="0" width="420" height="160"/></g>
+    <circle cx="380" cy="990" r="6" fill="#F4F7FB" opacity=".55"/>
+    <g id="cfA" fill="none" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"></g></svg>
+  <svg class="o" id="WH" width="340" height="240" viewBox="0 0 340 240" style="overflow:visible">
+    <path d="M60 90 H250 V60 H300 V140 H250 A 90 90 0 1 1 60 90 Z" fill="#0C1323" stroke="#F4F7FB" stroke-width="7" stroke-linejoin="round"/>
+    <circle cx="140" cy="150" r="34" fill="none" stroke="#F4F7FB" stroke-width="5"/>
+    <path d="M300 100 C 330 100 330 40 300 30 C 270 20 250 50 262 60" fill="none" stroke="#F4F7FB" stroke-width="5" stroke-linecap="round"/></svg>
+  <div class="o big" id="F4" style="width:500px;height:560px;font-size:560px;color:#F4F7FB">4</div>
+  <svg class="o" id="F4u" width="360" height="40" viewBox="0 0 360 40" style="overflow:visible"><path id="f4u" d="M10 24 C 100 14 240 30 350 16" fill="none" stroke="#F4F7FB" stroke-width="8" stroke-linecap="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/></svg>
+  <!-- 4 · la puerta del vestuario (D) y las siluetas -->
+  <div class="o" id="DR" style="width:560px;height:960px;background:#0C1323;border:14px solid #8f9bb8;border-radius:6px">
+    <div style="position:absolute;right:40px;top:470px;width:26px;height:70px;border-radius:13px;background:#8f9bb8"></div>
+    <div class="lab" style="left:0;right:0;top:120px;text-align:center;font-size:30px;color:#8f9bb8">VESTUARIO</div></div>
+  <div class="o" id="SC" style="width:460px;height:200px;background:#000;border-radius:20px;box-shadow:0 18px 50px rgba(20,18,12,.16)">
+    <div class="lab" style="left:0;right:0;top:24px;text-align:center;font-size:24px;color:#8f9bb8">INFANTIL · F11</div>
+    <div class="num" style="left:0;right:0;top:66px;text-align:center;font-size:110px;color:#F4F7FB">1 - 1</div></div>
+  <svg class="o" id="S1" width="260" height="600" viewBox="0 0 260 600"><g fill="#8f9bb8"><circle cx="130" cy="80" r="62"/><path d="M30 600 L30 262 Q30 160 130 160 Q230 160 230 262 L230 600 Z"/></g></svg>
+  <svg class="o" id="BB" width="340" height="220" viewBox="0 0 340 220" style="overflow:visible">
+    <path d="M40 20 H300 Q330 20 330 50 V140 Q330 170 300 170 H140 L90 214 L100 170 H40 Q10 170 10 140 V50 Q10 20 40 20 Z" fill="#0C1323" stroke="#F4F7FB" stroke-width="6" stroke-linejoin="round"/>
+    <text x="170" y="122" font-family="M" font-weight="800" font-size="78" text-anchor="middle" fill="#F4F7FB" letter-spacing="6">¡#<tspan fill="#B9E0FF">!</tspan>?</text></svg>
+  <div class="o board" id="MB" style="width:640px;height:420px">
+    <svg width="620" height="400" viewBox="0 0 620 400" style="position:absolute;left:0;top:0"><g fill="none" stroke="#8f9bb8" stroke-width="4"><rect x="30" y="30" width="560" height="340"/><path d="M310 30 V370"/><circle cx="310" cy="200" r="54"/></g></svg></div>
+  <svg class="o" id="S2" width="260" height="600" viewBox="0 0 260 600"><g fill="#8f9bb8"><circle cx="130" cy="80" r="62"/><path d="M30 600 L30 262 Q30 160 130 160 Q230 160 230 262 L230 600 Z"/></g></svg>
+  <!-- 5 · la pizarra del vestuario (Pz) y once pares de botas -->
+  <div class="o board" id="PZ" style="width:1500px;height:900px">
+    <svg width="1480" height="880" viewBox="0 0 1480 880" style="position:absolute;left:0;top:0;overflow:visible">
+      <circle cx="330" cy="420" r="10" fill="#8f9bb8"/>
+      <path id="pzC" d="M330 250 C 450 250 500 340 500 420 C 500 520 420 590 330 590 C 220 590 160 510 160 420 C 160 320 230 252 340 248" fill="none" stroke="#B9E0FF" stroke-width="12" stroke-linecap="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/>
+      <text x="1440" y="850" font-family="S" font-style="italic" font-size="52" fill="#8f9bb8" text-anchor="end">vestuario</text></svg></div>
+  <div class="o" id="BT" style="width:1500px;height:120px"></div>
+  <!-- 6 · la solución: la banda limpia (B), la hoja (H), el dorsal (J), la flecha de ellos (K) -->
+  <svg class="o" id="BF" width="760" height="1100" viewBox="0 0 760 1100" style="overflow:visible">
+    <rect width="760" height="1100" fill="#0C1323"/>
+    <rect id="bfB" x="600" y="0" width="160" height="1100" fill="#6AA8FF" opacity="0"/>
+    <g fill="none" stroke="#6AA8FF" stroke-width="4" opacity=".45"><rect width="760" height="1100"/><path d="M0 550 H760"/><circle cx="380" cy="550" r="90"/>
+      <rect x="170" y="940" width="420" height="160"/><rect x="280" y="1050" width="200" height="50"/><rect x="170" y="0" width="420" height="160"/></g></svg>
+  <div class="o paper" id="HJ" style="width:760px;height:1000px;background:#0C1323">
+    <svg width="760" height="1000" viewBox="0 0 760 1000" style="position:absolute;left:0;top:0;overflow:visible">
+      <text x="50" y="86" font-family="M" font-weight="800" font-size="26" letter-spacing="4" fill="#8f9bb8">CAMINO DEL VESTUARIO</text>
+      <g id="rows"></g>
+      <g id="arb" opacity="0"><text x="640" y="930" font-family="S" font-style="italic" font-size="40" fill="#8f9bb8" text-anchor="middle">árbitro</text>
+        <path id="arbC" d="M640 860 C 712 860 735 900 735 918 C 735 950 700 972 640 972 C 580 972 545 950 545 918 C 545 888 575 860 645 858" fill="none" stroke="#B9E0FF" stroke-width="5" stroke-linecap="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/></g>
+    </svg></div>
+  <svg class="o" id="PC" width="40" height="300" viewBox="0 0 40 300" style="overflow:visible">
+    <path d="M20 300 L6 252 L34 252 Z" fill="#B9E0FF" stroke="#F4F7FB" stroke-width="3" stroke-linejoin="round"/><path d="M20 300 L15 284 L25 284 Z" fill="#F4F7FB"/>
+    <rect x="6" y="40" width="28" height="212" fill="#B9E0FF" stroke="#F4F7FB" stroke-width="3"/><rect x="6" y="10" width="28" height="32" rx="4" fill="#B9E0FF" stroke="#F4F7FB" stroke-width="3"/></svg>
+  <svg class="o" id="JS" width="460" height="460" viewBox="0 0 460 460" style="overflow:visible">
+    <path d="M150 30 Q230 70 310 30 L440 100 L395 200 L345 180 L345 440 H115 V180 L65 200 L20 100 Z" fill="#0C1323" stroke="#F4F7FB" stroke-width="7" stroke-linejoin="round"/>
+    <text id="js2" x="230" y="370" font-family="M" font-weight="800" font-size="210" text-anchor="middle" fill="#6AA8FF" letter-spacing="-8">2</text></svg>
+  <div class="o paper" id="KC" style="width:560px;height:640px;background:#0C1323">
+    <svg width="560" height="640" viewBox="0 0 560 640" style="position:absolute;left:0;top:0;overflow:visible">
+      <rect x="430" y="40" width="90" height="560" fill="#6AA8FF" opacity=".12"/>
+      <g fill="none" stroke="#8f9bb8" stroke-width="4"><rect x="40" y="40" width="480" height="560"/><path d="M40 600 H520"/><path d="M40 320 H520"/><circle cx="280" cy="320" r="60"/></g>
+      <path id="kcA" d="M260 470 C 300 360 390 260 470 150" fill="none" stroke="#F4F7FB" stroke-width="10" stroke-linecap="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/>
+      <path id="kcH" d="M440 150 L472 146 L466 180" fill="none" stroke="#F4F7FB" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" opacity="0"/>
+      <text x="70" y="580" font-family="M" font-weight="800" font-size="26" letter-spacing="4" fill="#8f9bb8">ELLOS</text></svg></div>
+  <!-- marca -->
+  <div class="o" id="B" style="width:900px;height:500px;text-align:center">
+    <div class="num" style="position:static;font-size:170px;margin-top:120px">Pro<span style="color:#6AA8FF">Team</span></div>
+    <div style="margin-top:30px;font-family:M;font-weight:500;font-size:38px;color:#8f9bb8">la app del entrenador · enlace en la bio</div></div>
+</div>
+<div id="gr"></div>
+<div id="hook">¿En qué gastas el descanso?</div>
+<div id="ink"></div>
+<svg id="rc" width="400" height="400" viewBox="0 0 400 400"><circle cx="200" cy="200" r="10" fill="#8f9bb8"/><circle cx="200" cy="200" r="150" fill="none" stroke="#B9E0FF" stroke-width="12" stroke-linecap="round"/></svg>
+<div id="cap"></div>
+</div>
+<script src="/tools/reel_v4/T01-5-r3/times.js"></script>
+<script>
+const $=id=>document.getElementById(id), W=window.WORDS, NS='http://www.w3.org/2000/svg';
+const at=(w,n=1)=>{let c=0;for(const x of W)if(x[0]===w&&++c===n)return x[1];throw 'no '+w+n};
+const cl=(x,a=0,b=1)=>Math.min(b,Math.max(a,x)), r=(t,a,b)=>cl((t-a)/(b-a));
+const io=x=>x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2, eo=x=>1-Math.pow(1-x,3), lerp=(a,b,k)=>a+(b-a)*k;
+const T={tres:at('tres'),eso:at('eso'),ni:at('ni'),estan:at('estan'),infantil:at('infantil'),once1:at('once'),tu:at('tu'),segundo:at('segundo'),sangre:at('sangre'),porque1:at('porque'),
+ tu2:at('tu',2),porque2:at('porque',2),arbitro:at('arbitro'),vuestra:at('vuestra'),banda2:at('banda',2),ahi:at('ahi'),llegado:at('llegado'),cuatro:at('cuatro'),veces:at('veces'),cuatro2:at('cuatro',2),
+ cuando:at('cuando'),contar:at('contar'),once2:at('once',2),nadie:at('nadie'),penalti2:at('penalti',2),cambiar:at('cambiar'),banda3:at('banda',3),antes:at('antes'),tres3:at('tres',3),
+ conteste:at('conteste'),donde2:at('donde',2),quien:at('quien'),cambiado:at('cambiado'),arbitro2:at('arbitro',2),fin:at('final'),apunt:at('apuntalo'),porque3:at('porque',3),pitar:at('pitar'),END:window.VEND+.25};
+// zonas del mundo
+const P=[0,0], R=[1500,0], C=[0,1700], WS=[-680,1700], F=[1150,1700], D=[2700,0], D2=[3550,0], PZ=[2750,1700], B2=[1100,4300], H=[0,4300], J=[2050,4300], K=[2950,4300], BP=[0,6000];
+const CUTB=T.penalti2+.3;
+// cámara: planos FIJOS; solo se mueve al cambiar de zona (0,6 s, entrada y salida suaves)
+const SH=[ // [inicio del movimiento, cx, cy, zoom, duración]
+ [0,P[0],P[1]+40,2.2],
+ [T.tres-.3,R[0],R[1]+40,1.55,.7],
+ [T.eso-.3,R[0]+20,R[1]-90,2.3],
+ [T.ni-.35,C[0],C[1]+10,.95,.8],
+ [T.estan-.35,C[0]+180,C[1]-120,1.45],
+ [T.infantil-.35,D[0],D[1]-120,1.0,.8],
+ [T.once1-.3,D[0],D[1]-520,1.7],
+ [T.segundo-.35,D[0],D[1]-40,1.25],
+ [T.tu2-.35,D2[0],D2[1]-40,1.3],
+ [T.porque2-.35,C[0]-230,C[1]+20,.75,.8],
+ [T.ahi-.4,C[0]+230,C[1]-60,1.7],
+ [T.cuatro2-.35,F[0],F[1]-20,1.55],
+ [T.cuando-.4,PZ[0],PZ[1]+160,.62,.75],
+ [T.nadie-.35,PZ[0]+380,PZ[1]-60,1.15],
+ [CUTB,B2[0],B2[1]+10,.95],
+ [T.antes-.35,H[0]-60,H[1]-250,1.45],
+ [T.donde2-.5,B2[0]+230,B2[1]-80,1.5],
+ [T.quien-.35,J[0],J[1]-20,1.45],
+ [T.cambiado-.55,K[0],K[1]-20,1.35],
+ [T.arbitro2-.6,H[0],H[1]+20,.95,.9],
+ [T.apunt-.35,BP[0],BP[1],1.0],
+ [T.porque3+.05,P[0],P[1]+40,2.2,.9]];
+const CUTS=new Set([CUTB]);
+function cam(t){let i=0;while(i+1<SH.length&&SH[i+1][0]<=t)i++;const s=SH[i];
+ if(i===0||CUTS.has(s[0]))return [s[1],s[2],s[3],0];
+ const p=SH[i-1],Dd=s[4]||.62,k=r(t,s[0],s[0]+Dd),e=io(k);
+ const lz=lerp(Math.log(p[3]),Math.log(s[3]),e)-.12*Math.sin(Math.PI*k)*(Math.hypot(s[1]-p[1],s[2]-p[2])>600?1:0);
+ return [lerp(p[1],s[1],e),lerp(p[2],s[2],e),Math.exp(lz),k>0&&k<1?Math.sin(Math.PI*k):0]}
+const sz=el=>[el.offsetWidth||+el.getAttribute('width'),el.offsetHeight||+el.getAttribute('height')];
+function place(el,x,y,rot=0,sc=1){const [w,h]=sz(el);el.style.transform=`translate(${x-w/2}px,${y-h/2}px) rotate(${rot}deg) scale(${sc})`}
+const drawK=(el,k)=>{el.setAttribute('stroke-dashoffset',100-100*k);el.style.visibility=k>0?'visible':'hidden'};
+const draw=(el,a,b,f=io)=>drawK(el,f(r(window._t,a,b)));
+const mk=(tag,at,par)=>{const e=document.createElementNS(NS,tag);for(const k in at)e.setAttribute(k,at[k]);par.appendChild(e);return e};
+// marcas del reloj
+for(let i=0;i<12;i++){const a=i*30*Math.PI/180;mk('line',{x1:260+200*Math.sin(a),y1:260-200*Math.cos(a),x2:260+(i%3?184:168)*Math.sin(a),y2:260-(i%3?184:168)*Math.cos(a),'stroke-width':i%3?5:9},$('ticks'))}
+// cuatro llegadas por vuestra banda derecha (grises y luego rojas)
+const ARR=[];[[650,110,700,330,690,560,610,830],[700,250,740,450,700,680,590,900],[620,380,690,560,680,740,560,930],[690,520,740,700,680,860,540,960]].forEach(([x0,y0,a,b,c,d,x1,y1])=>{
+ const p=mk('path',{d:`M${x0} ${y0} C ${a} ${b} ${c} ${d} ${x1} ${y1}`,pathLength:100,'stroke-dasharray':100,'stroke-dashoffset':100,stroke:'#8f9bb8'},$('cfA'));
+ const ang=Math.atan2(y1-d,x1-c)*180/Math.PI-90;
+ const h=mk('path',{d:'M-20 -28 L0 0 L20 -28',transform:`translate(${x1} ${y1}) rotate(${ang})`,stroke:'#8f9bb8',opacity:0},$('cfA'));ARR.push([p,h])});
+// once pares de botas (sin caras)
+const BOOT='<path d="M8 10 H40 V52 Q40 62 52 64 L74 68 Q86 72 86 84 V92 H8 Z" fill="#F4F7FB"/><path d="M14 92 v8 M34 92 v8 M56 92 v8 M76 92 v8" stroke="#F4F7FB" stroke-width="6"/>';
+const BTS=[];{const c=$('BT');for(let i=0;i<11;i++){const s=document.createElementNS(NS,'svg');s.setAttribute('width',112);s.setAttribute('height',104);s.setAttribute('viewBox','0 0 200 104');
+ s.style.cssText=`position:absolute;left:${i*134+12}px;top:8px`;s.innerHTML=BOOT+'<g transform="translate(96 0)">'+BOOT+'</g>';c.appendChild(s);BTS.push(s)}}
+// la hoja: tres números, tres preguntas, tres respuestas (EJEMPLO)
+const ROWS=[];{const g=$('rows');[['¿Por dónde os hacen daño?','banda derecha'],['¿Quién ya no llega?','el 2'],['¿Qué han cambiado ellos?','abren a banda']].forEach(([q,a],i)=>{
+ const y=230+i*240;const n=mk('text',{x:50,y:y+40,'font-family':'M','font-weight':800,'font-size':120,fill:'#6AA8FF',opacity:0},g);n.textContent=i+1;
+ const qq=mk('text',{x:170,y:y-10,'font-family':'S','font-style':'italic','font-size':52,fill:'#F4F7FB',opacity:0},g);qq.textContent=q;
+ const aa=mk('text',{x:170,y:y+70,'font-family':'S','font-style':'italic','font-size':60,fill:'#6AA8FF',opacity:0},g);aa.textContent='→ '+a;
+ mk('path',{d:`M170 ${y+100} H700`,stroke:'#F4F7FB','stroke-width':3},g);ROWS.push([n,qq,aa])})}
+const QT=[T.donde2-.2,T.quien-.15,T.cambiado-.3], NT=[T.tres3-.05,T.tres3+.15,T.tres3+.35], AT=[T.arbitro2-.05,T.arbitro2+.25,T.arbitro2+.55];
+const CAPS=[[.35,T.tres-.15,'El penalti <em>que no os pitaron.</em>'],[T.tres,T.ni-.2,'3 minutos, <em>de eso.</em>'],[T.ni-.1,T.infantil-.15,'Y ni una palabra <em>de por dónde os llegan.</em>'],
+ [T.infantil,T.tu-.15,'Infantil, F11. <em>1 a 1.</em>'],[T.tu,T.porque1-.15,'Tu segundo llega <em>con la sangre caliente.</em>'],[T.porque1,T.tu2-.2,'Lo ha visto <em>desde 3 metros.</em>'],
+ [T.tu2,T.porque2-.15,'<em>Y tú le escuchas.</em>'],[T.porque2,T.vuestra-.2,'Es más fácil hablar <em>del árbitro…</em>'],[T.vuestra-.1,T.ahi-.35,'…que de <span class="r">vuestra banda derecha.</span>'],
+ [T.ahi-.3,T.cuatro2-.15,'Por ahí os han llegado <em>4 veces.</em>'],[T.cuatro2,T.cuando-.2,'<em>Cuatro.</em>'],[T.cuando-.1,T.once2-.15,'Hablas al equipo <em>con un enfado…</em>'],
+ [T.once2-.1,T.nadie-.15,'…y once jugadores <em>lo copian.</em>'],[T.nadie,T.penalti2-.3,'<em>Nadie toca la táctica.</em>'],[T.penalti2-.1,T.banda3-.3,'El penalti <em>no se puede cambiar.</em>'],
+ [T.banda3,T.antes-.15,'<span class="b">La banda, sí.</span>'],[T.antes,T.conteste-.2,'Antes del partido, <em>3 preguntas.</em>'],[T.conteste-.1,T.donde2-.35,'Que te las conteste <em>camino del vestuario.</em>'],
+ [T.donde2-.25,T.quien-.15,'1. <em>¿Por dónde os hacen daño?</em>'],[T.quien,T.cambiado-.4,'2. <em>¿Quién ya no llega?</em>'],[T.cambiado-.35,T.arbitro2-.45,'3. <em>¿Qué han cambiado ellos?</em>'],
+ [T.arbitro2-.35,T.apunt-.15,'Y lo del árbitro, <em>al final.</em>'],[T.apunt,T.porque3-.15,'Apúntalo en la app de ProTeam.'],[T.porque3+.05,T.END-.45,'Aquel penalti <em>no os lo pita nadie.</em>']];
+window.frame=function(t){window._t=t;
+  const [cx,cy,z,mv]=cam(t);
+  const wd=$('world');wd.style.transform=`translate(540px,760px) scale(${z}) translate(${-cx}px,${-cy}px)`;
+  wd.style.filter=mv>.35?`blur(${(2.6*(mv-.35)/.65).toFixed(2)}px)`:'none';
+  const late=t>=T.apunt+.7, Lt=x=>late?0:x; // final circular: todo vuelve al estado inicial mientras la cámara está en la marca
+  // 1 · punto de penalti
+  place($('PP'),P[0],P[1]);
+  // 2 · reloj: avanzan tres minutos
+  place($('RL'),R[0],R[1]);$('rlM').setAttribute('transform',`rotate(${Lt(18*io(r(t,T.tres,T.eso+.5)))} 260 260)`);
+  // 3 · campo y silbato
+  place($('CF'),C[0],C[1]);place($('WH'),WS[0],WS[1]-60,-8);
+  ARR.forEach(([p,h],i)=>{const k=Lt(io(r(t,T.ni+i*.35,T.ni+.6+i*.35)));drawK(p,k);h.setAttribute('opacity',k>.96?1:0);
+   const red=Lt(r(t,[T.llegado-.1,T.cuatro,T.veces-.05,T.veces+.25][i],[T.llegado-.1,T.cuatro,T.veces-.05,T.veces+.25][i]+.25));
+   const col=red>.5?'#d23a2a':'#9aa1a8';p.setAttribute('stroke',col);h.setAttribute('stroke',col)});
+  $('cfR').setAttribute('opacity',Lt(.10*r(t,T.banda2-.1,T.banda2+.4)*(1-r(t,T.cuando-.4,T.cuando))));
+  const fk=io(r(t,T.banda2-.25,T.banda2+.35)), wsOn=t>T.porque2-.6&&t<T.ahi+.5;
+  $('WH').style.filter=`blur(${(8*fk).toFixed(2)}px)`;$('WH').style.opacity=Lt(1-.6*fk);
+  $('CF').style.filter=wsOn?`blur(${(6*(1-fk)).toFixed(2)}px)`:'none';
+  place($('F4'),F[0],F[1]-80);$('F4').style.opacity=Lt(eo(r(t,T.cuatro2-.15,T.cuatro2+.25)));
+  place($('F4u'),F[0],F[1]+200);draw($('f4u'),T.cuatro2+.15,T.cuatro2+.6);if(late)drawK($('f4u'),0);
+  // 4 · puerta, marcador y siluetas
+  place($('DR'),D[0],D[1]+40);place($('SC'),D[0],D[1]-540);
+  const s1=Lt(eo(r(t,T.segundo-.2,T.segundo+.5)));place($('S1'),D[0]+30+140*(1-s1),D[1]+210);$('S1').style.opacity=s1;
+  place($('BB'),D[0]+170,D[1]-200);$('BB').style.opacity=Lt(eo(r(t,T.sangre-.15,T.sangre+.25)));
+  place($('MB'),D2[0],D2[1]-170);place($('S2'),D2[0]-60,D2[1]+210);
+  // 5 · pizarra y botas
+  place($('PZ'),PZ[0],PZ[1]);draw($('pzC'),T.contar-.35,T.contar+.35);if(late)drawK($('pzC'),0);
+  place($('BT'),PZ[0],PZ[1]+540);BTS.forEach((s,i)=>{const k=Lt(eo(r(t,T.once2-.2+i*.06,T.once2+.1+i*.06)));s.style.opacity=k;s.style.transform=`translateY(${16*(1-k)}px)`});
+  // 6 · solución
+  place($('BF'),B2[0],B2[1]);$('bfB').setAttribute('opacity',Lt(.16*r(t,T.donde2-.1,T.donde2+.4)));
+  place($('HJ'),H[0],H[1],-1.2);
+  ROWS.forEach(([n,q,a],i)=>{n.setAttribute('opacity',Lt(r(t,NT[i],NT[i]+.25)));q.setAttribute('opacity',Lt(r(t,QT[i],QT[i]+.3)));a.setAttribute('opacity',Lt(r(t,AT[i],AT[i]+.3)))});
+  $('arb').setAttribute('opacity',Lt(r(t,T.fin-.2,T.fin+.1)));draw($('arbC'),T.fin,T.fin+.45);if(late)drawK($('arbC'),0);
+  const pc=$('PC');pc.style.opacity=Lt(r(t,T.antes-.3,T.antes)*(1-r(t,T.donde2-.6,T.donde2-.3)));
+  const ni=Math.min(2,Math.floor(cl((t-T.tres3+.05)/.2,0,2.99)));place(pc,H[0]-380+200+14*Math.sin(t*7),H[1]-500+(230+ni*240)+90,200);
+  place($('JS'),J[0],J[1]);$('js2').setAttribute('opacity',Lt(r(t,T.quien,T.quien+.3)));
+  place($('KC'),K[0],K[1],1);draw($('kcA'),T.cambiado-.2,T.cambiado+.4);$('kcH').setAttribute('opacity',Lt(r(t,T.cambiado+.35,T.cambiado+.5)));if(late)drawK($('kcA'),0);
+  place($('B'),BP[0],BP[1]);
+  // color por escena: el problema en frío
+  const g=$('gr');if(t>=T.infantil-.45&&t<CUTB){g.style.background='#0C1323';g.style.opacity=.5*r(t,T.infantil-.45,T.infantil+.15)}else g.style.opacity=0;
+  $('hook').style.opacity=t<20?1-r(t,T.tres-.35,T.tres-.05):r(t,T.pitar-.3,T.pitar+.2);
+  // giro: fundido a negro; el círculo rojo se queda solo y se apaga; de negro a blanco en «La banda, sí»
+  const ink=r(t,T.penalti2-.45,T.penalti2-.05)*(1-r(t,T.banda3-.35,T.banda3+.1));$('ink').style.opacity=ink;
+  $('rc').style.opacity=r(t,T.penalti2-.1,T.penalti2+.25)*(1-r(t,T.cambiar,T.cambiar+.6));
+  // rótulo
+  let html='',a=0;for(const [s,e,h] of CAPS)if(t>=s-.2&&t<e+.25){html=h;a=Math.min(r(t,s-.2,s+.15),1-r(t,e-.05,e+.25))}
+  const cp=$('cp')||$('cap');if(cp.dataset.h!==html){cp.innerHTML=html;cp.dataset.h=html}
+  cp.className=ink>.5?'dk':'';
+  cp.style.opacity=a;cp.style.transform=`translateY(${(1-a)*12}px)`;
+};
+Promise.all([...document.images].map(i=>i.decode().catch(()=>{}))).then(()=>document.fonts.ready).then(()=>{frame(0);window.ready=true});
+</script></body></html>

@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8">
+<!-- T01-1-r3 «Trece mil para siete» (fútbol). Plantilla a3.html: planos fijos, la cámara solo se mueve al cambiar de zona.
+     Fotos reales: papel de Lehmann (Andreas Köpke, dominio público) y Jens Lehmann (ronmacphotos, CC BY 2.0). El resto, dibujado. Fuente: FIFA, 6/7/2016. -->
+<style>
+@font-face{font-family:M;font-weight:800;src:url(/tools/reel_v5/node_modules/@fontsource/plus-jakarta-sans/files/plus-jakarta-sans-latin-800-normal.woff2)}
+@font-face{font-family:M;font-weight:700;src:url(/tools/reel_v5/node_modules/@fontsource/plus-jakarta-sans/files/plus-jakarta-sans-latin-700-normal.woff2)}
+@font-face{font-family:M;font-weight:500;src:url(/tools/reel_v5/node_modules/@fontsource/plus-jakarta-sans/files/plus-jakarta-sans-latin-500-normal.woff2)}
+@font-face{font-family:S;font-style:italic;font-weight:400;src:url(/tools/fonts/instrument-serif-latin-400-italic.woff2)}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#02050F}
+#st{position:absolute;inset:0;overflow:hidden;background:#02050F}
+#world{position:absolute;left:0;top:0;transform-origin:0 0;will-change:transform}
+.o{position:absolute;left:0;top:0;transform-origin:50% 50%}
+.paper{background:#0C1323;box-shadow:0 18px 50px rgba(20,18,12,.10)}
+.frame{background:#0C1323;padding:14px;box-shadow:0 18px 50px rgba(20,18,12,.10)}
+.frame img{display:block;width:100%;height:100%;object-fit:cover}
+.board{background:#0C1323;border:10px solid #8f9bb8;border-radius:10px;box-shadow:0 18px 50px rgba(20,18,12,.10)}
+.num{position:absolute;font-family:M;font-weight:800;letter-spacing:-.05em;color:#F4F7FB;white-space:nowrap;line-height:1}
+.hand{position:absolute;font-family:S;font-style:italic;white-space:nowrap;line-height:1}
+.lab{position:absolute;font-family:M;font-weight:800;letter-spacing:.14em;color:#F4F7FB;white-space:nowrap}
+#cap{position:absolute;left:90px;right:90px;top:1330px;text-align:center;font-family:M;font-weight:800;font-size:58px;line-height:1.12;letter-spacing:-.03em;color:#F4F7FB;padding:18px 26px;border-radius:22px;background:rgba(12,19,35,.94)}
+#cap em{font-family:S;font-style:italic;font-weight:400;font-size:1.14em;letter-spacing:0}
+#cap .b{color:#6AA8FF}
+#gr,#gr2{position:absolute;inset:0;pointer-events:none;mix-blend-mode:multiply;opacity:0}
+#ink{position:absolute;inset:0;background:#000;opacity:0;pointer-events:none}
+#title{position:absolute;left:0;right:0;top:300px;text-align:center;font-family:M;font-weight:800;font-size:118px;line-height:1.02;letter-spacing:-.05em;color:#F4F7FB;display:none}
+#title em{font-family:S;font-style:italic;font-weight:400;letter-spacing:0;color:#6AA8FF}
+</style><style>html,body,#st{background:#02050F!important}#st{background:radial-gradient(ellipse at 50% 40%,#0C1323 0%,#02050F 72%)!important}
+img{filter:url(#duo)!important}#grain{opacity:.16!important;mix-blend-mode:screen}</style>
+<svg width="0" height="0" style="position:absolute"><filter id="duo" color-interpolation-filters="sRGB"><feColorMatrix type="matrix" values=".33 .33 .33 0 0 .33 .33 .33 0 0 .33 .33 .33 0 0 0 0 0 1 0"/><feComponentTransfer><feFuncR type="table" tableValues="0.008 0.18 0.416 0.957"/><feFuncG type="table" tableValues="0.02 0.235 0.659 0.969"/><feFuncB type="table" tableValues="0.059 0.667 1 0.984"/></feComponentTransfer></filter></svg></head><body><div id="st">
+<div id="world">
+  <!-- Z · la torre de 13.000 fichas, el número al pie y el papel pequeñísimo -->
+  <svg class="o" id="TW" width="420" height="2700" viewBox="0 0 420 2700" style="overflow:visible"><g id="twc"></g></svg>
+  <div class="o num" id="N13" style="width:700px;height:200px;font-size:200px;text-align:center">13.000</div>
+  <div class="o frame" id="ZP" style="width:220px;height:284px;padding:8px"><img src="/tools/reel_v2/img/papel.jpg"></div>
+  <!-- L · Lehmann, camisetas sin escudo, 4-2 y 2006 -->
+  <div class="o frame" id="LH" style="width:380px;height:600px;padding-bottom:70px">
+    <img src="/tools/reel_v2/img/lehmann.jpg" style="object-position:50% 25%">
+    <div class="hand" style="left:0;right:0;bottom:16px;text-align:center;font-size:46px;color:#8f9bb8">Jens Lehmann</div></div>
+  <svg class="o" id="SW" width="230" height="230" viewBox="0 0 360 360">
+    <path d="M120 20 L60 40 L10 110 L60 150 L80 130 L80 340 L280 340 L280 130 L300 150 L350 110 L300 40 L240 20 C 225 55 135 55 120 20Z" fill="#0C1323" stroke="#F4F7FB" stroke-width="5"/>
+    <path d="M120 20 C 135 55 225 55 240 20" fill="none" stroke="#F4F7FB" stroke-width="10"/></svg>
+  <svg class="o" id="SA" width="230" height="230" viewBox="0 0 360 360">
+    <defs><clipPath id="cs"><path d="M120 20 L60 40 L10 110 L60 150 L80 130 L80 340 L280 340 L280 130 L300 150 L350 110 L300 40 L240 20 C 225 55 135 55 120 20Z"/></clipPath></defs>
+    <g clip-path="url(#cs)"><rect width="360" height="360" fill="#0C1323"/><g fill="#6AA8FF"><rect x="40" width="40" height="360"/><rect x="120" width="40" height="360"/><rect x="200" width="40" height="360"/><rect x="280" width="40" height="360"/></g></g>
+    <path d="M120 20 L60 40 L10 110 L60 150 L80 130 L80 340 L280 340 L280 130 L300 150 L350 110 L300 40 L240 20 C 225 55 135 55 120 20Z" fill="none" stroke="#F4F7FB" stroke-width="5"/></svg>
+  <div class="o num" id="SC" style="width:420px;height:150px;font-size:150px;text-align:center">4 – 2</div>
+  <div class="o num" id="Y6" style="width:600px;height:190px;font-size:190px;text-align:center;color:#8f9bb8">2006</div>
+  <!-- P · el papel grande; el nombre, fuera -->
+  <div class="o frame" id="PG" style="width:640px;height:826px"><img src="/tools/reel_v2/img/papel.jpg">
+    <div id="HLS" style="position:absolute;left:0;top:0;width:100%;height:100%"></div></div>
+  <div class="o paper" id="CB" style="width:520px;height:150px">
+    <div class="hand" id="cbw" style="left:0;right:0;top:30px;text-align:center;font-size:100px;color:#8f9bb8;clip-path:inset(0 100% 0 0)">Cambiasso</div></div>
+  <!-- T · el televisor con el partido del Inter -->
+  <svg class="o" id="TV" width="760" height="640" viewBox="0 0 760 640" style="overflow:visible">
+    <rect x="10" y="10" width="740" height="540" rx="34" fill="#0C1323" stroke="#F4F7FB" stroke-width="8"/>
+    <rect x="60" y="56" width="640" height="448" rx="12" fill="#0C1323" stroke="#F4F7FB" stroke-width="4"/>
+    <path d="M300 600 L340 552 M460 600 L420 552 M260 604 H500" stroke="#F4F7FB" stroke-width="8" stroke-linecap="round"/>
+    <g fill="none" stroke="#8f9bb8" stroke-width="4"><path d="M120 120 H640 M240 120 V250 H520 V120 M320 120 V170 H440 V120"/><path d="M300 250 A80 60 0 0 0 460 250"/></g>
+    <rect x="300" y="96" width="160" height="26" fill="none" stroke="#F4F7FB" stroke-width="5"/>
+    <circle cx="380" cy="214" r="6" fill="#F4F7FB"/>
+    <g id="gk"><rect x="364" y="100" width="32" height="20" rx="6" fill="#8f9bb8"/></g>
+    <path id="tva" d="M380 214 C 380 180 350 140 322 112" fill="none" stroke="#6AA8FF" stroke-width="7" stroke-linecap="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/>
+    <path id="tvh" d="M322 112 l 4 22 M322 112 l 21 6" stroke="#6AA8FF" stroke-width="7" stroke-linecap="round" opacity="0"/>
+    <rect x="84" y="78" width="148" height="40" rx="6" fill="#F4F7FB"/><text x="158" y="106" text-anchor="middle" font-family="M" font-weight="800" font-size="22" letter-spacing="2" fill="#0C1323">INT · VIL</text>
+  </svg>
+  <!-- C · el calendario de liga -->
+  <div class="o board" id="CA" style="width:920px;height:860px">
+    <svg width="900" height="840" viewBox="0 0 900 840" style="position:absolute;left:0;top:0;overflow:visible">
+      <text x="40" y="78" font-family="M" font-weight="800" font-size="26" letter-spacing="4" fill="#8f9bb8">1.ª VUELTA</text>
+      <text x="40" y="418" font-family="M" font-weight="800" font-size="26" letter-spacing="4" fill="#8f9bb8">2.ª VUELTA</text>
+      <g id="boxes"></g><g id="xs"></g><g id="fills"></g>
+      <path id="thr" d="M350 300 C 360 380 160 360 130 450" fill="none" stroke="#6AA8FF" stroke-width="7" stroke-linecap="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/>
+      <g id="fly"><rect x="-70" y="-50" width="140" height="100" rx="6" fill="#0C1323" stroke="#F4F7FB" stroke-width="3"/><path d="M-50 -18 H40 M-50 6 H30 M-50 30 H44" stroke="#8f9bb8" stroke-width="4" stroke-linecap="round"/><path d="M-50 6 H30" stroke="#6AA8FF" stroke-width="4" stroke-linecap="round"/></g>
+    </svg></div>
+  <!-- O · lo que recuerdas: marcador, lluvia, silbato; y la banda en blanco -->
+  <div class="o paper" id="O1" style="width:300px;height:240px"><div class="num" style="left:0;right:0;top:56px;text-align:center;font-size:120px">0 – 2</div></div>
+  <svg class="o" id="O2" width="240" height="300" viewBox="0 0 240 300"><path d="M120 20 C 150 90 200 140 200 200 A80 80 0 0 1 40 200 C 40 140 90 90 120 20Z" fill="#0C1323" stroke="#F4F7FB" stroke-width="7" stroke-linejoin="round"/><path d="M80 200 A42 42 0 0 0 112 240" fill="none" stroke="#8f9bb8" stroke-width="7" stroke-linecap="round"/></svg>
+  <svg class="o" id="O3" width="300" height="220" viewBox="-110 -110 220 160"><path d="M-62 -4 A44 44 0 1 0 2 -30 L 70 -30 L 70 -4 Z" fill="#0C1323" stroke="#F4F7FB" stroke-width="7" stroke-linejoin="round"/><circle cx="-26" cy="8" r="12" fill="#F4F7FB"/></svg>
+  <svg class="o" id="OP" width="600" height="820" viewBox="0 0 600 820" style="overflow:visible">
+    <rect x="20" y="20" width="560" height="780" fill="#0C1323" stroke="#8f9bb8" stroke-width="5"/>
+    <g fill="none" stroke="#8f9bb8" stroke-width="5"><path d="M20 410 H580"/><circle cx="300" cy="410" r="70"/><rect x="170" y="20" width="260" height="110"/><rect x="170" y="690" width="260" height="110"/></g>
+    <g fill="none" stroke-width="5" stroke-dasharray="14 12"><rect id="bl" x="34" y="34" width="110" height="752" stroke="#F4F7FB"/><rect id="br" x="456" y="34" width="110" height="752" stroke="#F4F7FB"/></g>
+    <text id="q1" x="89" y="440" text-anchor="middle" font-family="S" font-style="italic" font-size="110" fill="#8f9bb8">?</text>
+    <text id="q2" x="511" y="440" text-anchor="middle" font-family="S" font-style="italic" font-size="110" fill="#8f9bb8">?</text></svg>
+  <!-- V · desde la banda: el extremo a tres metros; la hoja vacía -->
+  <svg class="o" id="PV" width="1000" height="900" viewBox="0 0 1000 900" style="overflow:visible">
+    <path d="M330 60 H670 L1000 760 H0 Z" fill="#0C1323" stroke="#8f9bb8" stroke-width="5"/>
+    <g fill="none" stroke="#8f9bb8" stroke-width="4"><path d="M165 410 H835"/><ellipse cx="500" cy="410" rx="150" ry="46"/><path d="M420 60 L405 130 H595 L580 60"/></g>
+    <path d="M0 790 H1000" stroke="#8f9bb8" stroke-width="22" stroke-linecap="round"/>
+    <g id="ext"><circle cx="760" cy="640" r="40" fill="#F4F7FB"/><circle cx="760" cy="586" r="20" fill="#F4F7FB"/></g>
+    <g id="dim" opacity="0"><path d="M520 780 L740 660" stroke="#6AA8FF" stroke-width="5" stroke-dasharray="10 9"/><text x="600" y="690" font-family="M" font-weight="800" font-size="46" fill="#6AA8FF">3 m</text></g>
+  </svg>
+  <div class="o num" id="N90" style="width:300px;height:130px;font-size:130px;text-align:center;color:#8f9bb8">90′</div>
+  <div class="o paper" id="BS" style="width:460px;height:600px">
+    <div class="lab" style="left:40px;top:40px;font-size:24px;color:#8f9bb8">RIVAL</div>
+    <svg width="460" height="600" style="position:absolute;left:0;top:0"><g stroke="#F4F7FB" stroke-width="3"><path d="M40 170 H420 M40 270 H420 M40 370 H420 M40 470 H420"/></g></svg></div>
+  <!-- S · la torre se reduce a una ficha -->
+  <svg class="o" id="SS" width="520" height="900" viewBox="0 0 520 900" style="overflow:visible"><g id="ssc"></g></svg>
+  <!-- F · la ficha: tres líneas -->
+  <div class="o paper" id="FC" style="width:760px;height:760px">
+    <div class="lab" style="left:50px;top:48px;font-size:26px;color:#8f9bb8">RIVAL · PRIMERA VUELTA</div>
+    <svg width="760" height="760" style="position:absolute;left:0;top:0;overflow:visible"><g stroke="#F4F7FB" stroke-width="3"><path d="M50 250 H710 M50 420 H710 M50 590 H710"/></g>
+      <path id="fcu" d="M100 442 C 300 434 500 438 700 430" fill="none" stroke="#6AA8FF" stroke-width="10" stroke-linecap="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/></svg>
+    <div class="num" id="fn1" style="left:54px;top:170px;font-size:40px;color:#8f9bb8;opacity:0">1</div><div class="hand" id="fw1" style="left:104px;top:166px;font-size:56px;color:#F4F7FB;clip-path:inset(0 100% 0 0)">el peligroso: su 11, zurdo</div>
+    <div class="num" id="fn2" style="left:54px;top:340px;font-size:40px;color:#6AA8FF;opacity:0">2</div><div class="hand" id="fw2" style="left:104px;top:336px;font-size:56px;color:#F4F7FB;clip-path:inset(0 100% 0 0)">la banda: por la izquierda</div>
+    <div class="num" id="fn3" style="left:54px;top:510px;font-size:40px;color:#8f9bb8;opacity:0">3</div><div class="hand" id="fw3" style="left:104px;top:506px;font-size:56px;color:#F4F7FB;clip-path:inset(0 100% 0 0)">balón parado: córner corto</div>
+  </div>
+  <svg class="o" id="PC" width="40" height="300" viewBox="0 0 40 300" style="overflow:visible">
+    <g><path d="M20 300 L6 252 L34 252 Z" fill="#B9E0FF" stroke="#F4F7FB" stroke-width="3" stroke-linejoin="round"/><path d="M20 300 L15 284 L25 284 Z" fill="#F4F7FB"/>
+      <rect x="6" y="40" width="28" height="212" fill="#B9E0FF" stroke="#F4F7FB" stroke-width="3"/><rect x="6" y="10" width="28" height="32" rx="4" fill="#B9E0FF" stroke="#F4F7FB" stroke-width="3"/></g></svg>
+  <!-- marca -->
+  <div class="o" id="B" style="width:900px;height:500px;text-align:center">
+    <div class="num" style="position:static;font-size:170px;margin-top:120px">Pro<span style="color:#6AA8FF">Team</span></div>
+    <div style="margin-top:30px;font-family:M;font-weight:500;font-size:38px;color:#8f9bb8">la app del entrenador · enlace en la bio</div>
+  </div>
+</div>
+<div id="gr" style="background:#8f9bb8"></div><div id="gr2" style="background:#0C1323"></div>
+<div id="title">Trece mil<br><em>para siete</em></div>
+<div id="cap"></div>
+<div id="ink"></div>
+</div>
+<script src="/tools/reel_v4/T01-1-r3/times.js"></script>
+<script>
+const $=id=>document.getElementById(id), W=window.WORDS, NS='http://www.w3.org/2000/svg';
+const at=(w,n=1)=>{let c=0;for(const x of W)if(x[0]===w&&++c===n)return x[1];throw 'no '+w+n};
+const cl=(x,a=0,b=1)=>Math.min(b,Math.max(a,x)), r=(t,a,b)=>cl((t-a)/(b-a));
+const io=x=>x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2, eo=x=>1-Math.pow(1-x,3), lerp=(a,b,k)=>a+(b-a)*k;
+const T={penaltis:at('penaltis'),para:at('para'),siete:at('siete'),lehmann:at('lehmann'),argentina:at('argentina'),dos:at('dos'),el:at('el'),falta:at('falta'),parar:at('parar'),
+ no:at('no'),estaba:at('estaba'),lo:at('lo'),paro:at('paro'),inter:at('inter'),que2:at('que',2),visto:at('visto'),ahora:at('ahora'),tu1:at('tu'),enero:at('enero'),octubre:at('octubre'),
+ que4:at('que',4),hizo2:at('hizo',2),acuerdas:at('acuerdas'),resultado:at('resultado'),llovia:at('llovia'),arbitro:at('arbitro'),pero:at('pero'),banda:at('banda'),goles:at('goles'),
+ viste:at('viste'),noventa:at('noventa'),tres:at('tres'),extremo:at('extremo'),ni:at('ni'),tu2:at('tu',2),primera:at('primera'),al:at('al'),peligroso:at('peligroso'),
+ banda2:at('banda',2),balon:at('balon'),parado:at('parado'),leelas:at('leelas'),vuelta2:at('vuelta',2),apunt:at('apuntalo'),porque:at('porque'),trece2:at('trece',2),tu3:at('tu',3),END:window.VEND+.25};
+// zonas del mundo
+const Z=[-3000,0],L=[0,0],P=[1500,0],TVZ=[3000,0],C=[4500,0],O=[6000,0],V=[7500,0],S=[9000,0],F=[10500,0],BP=[12000,0];
+const CUT=T.tu2-.2;
+// cámara: planos FIJOS; solo se mueve al cambiar de zona (0,6 s, entrada y salida suaves)
+const FIRST=[0,Z[0],Z[1]+250,1.45];
+const SH=[ // [inicio del movimiento, cx, cy, zoom, duración]
+ FIRST,
+ [T.penaltis-.05,Z[0],Z[1]-1250,1.0],
+ [T.para-.2,Z[0]+260,Z[1]-150,.5,.7],
+ [T.siete-.25,Z[0]+700,Z[1]+330,2.1],
+ [T.lehmann-.35,L[0]-200,L[1]-40,1.25,.7],
+ [T.argentina-.3,L[0]+245,L[1]-20,1.45],
+ [T.dos-.3,L[0]+20,L[1]+110,.92],
+ [T.el-.35,P[0],P[1]+60,.98,.7],
+ [T.falta-.25,P[0]+170,P[1]+470,1.7],
+ [T.no-.3,P[0],P[1]+60,.98],
+ [T.lo-.35,TVZ[0],TVZ[1]-20,1.1,.7],
+ [T.inter-.3,TVZ[0],TVZ[1]-90,1.55],
+ [T.ahora-.4,C[0],C[1],1.0,.75],
+ [T.que4-.3,C[0]-110,C[1]-225,3.0,.7],
+ [T.acuerdas-.35,O[0]-470,O[1]-200,1.9,.7],
+ [T.llovia-.3,O[0],O[1]-200,1.9],
+ [T.arbitro-.3,O[0]+470,O[1]-200,1.9],
+ [T.pero-.25,O[0],O[1]+880,1.05,.7],
+ [T.viste-.35,V[0],V[1],1.0,.7],
+ [T.extremo-.3,V[0]+120,V[1]+120,1.35],
+ [CUT,S[0],S[1]-60,1.0],
+ [T.al-.35,F[0],F[1]+20,1.0],
+ [T.leelas-.35,C[0],C[1],1.0,.75],
+ [T.apunt-.35,BP[0],BP[1],1.0],
+ [T.porque+.05,...FIRST.slice(1),.95]];
+const CUTS=new Set([CUT]);
+function cam(t){let i=0;while(i+1<SH.length&&SH[i+1][0]<=t)i++;const s=SH[i];
+ if(i===0||CUTS.has(s[0]))return [s[1],s[2],s[3],0];
+ const p=SH[i-1],Dd=s[4]||.62,k=r(t,s[0],s[0]+Dd),e=io(k);
+ const lz=lerp(Math.log(p[3]),Math.log(s[3]),e)-.12*Math.sin(Math.PI*k)*(Math.hypot(s[1]-p[1],s[2]-p[2])>600?1:0);
+ return [lerp(p[1],s[1],e),lerp(p[2],s[2],e),Math.exp(lz),k>0&&k<1?Math.sin(Math.PI*k):0]}
+const sz=el=>[el.offsetWidth||+el.getAttribute('width'),el.offsetHeight||+el.getAttribute('height')];
+function place(el,x,y,rot=0,sc=1){const [w,h]=sz(el);el.style.transform=`translate(${x-w/2}px,${y-h/2}px) rotate(${rot}deg) scale(${sc})`}
+const drawK=(el,k)=>{el.setAttribute('stroke-dashoffset',100-100*k);el.style.visibility=k>0?'visible':'hidden'};
+const draw=(el,a,b,f=io)=>drawK(el,f(r(window._t,a,b)));
+const mk=(tag,a,par)=>{const e=document.createElementNS(NS,tag);for(const k in a)e.setAttribute(k,a[k]);par.appendChild(e);return e};
+// torre de fichas (estática: el primer y el último fotograma son iguales)
+{const g=$('twc');let s=11;const rnd=()=>{s=(s*9301+49297)%233280;return s/233280};
+ for(let i=0;i<96;i++){const y=2640-i*27.5,x=60+(rnd()-.5)*26,rot=(rnd()-.5)*3;
+  mk('rect',{x,y:y-24,width:300,height:24,rx:3,fill:i%7===3?'#0C1323':'#fff',stroke:'#8f9bb8','stroke-width':2.2,transform:`rotate(${rot.toFixed(2)} ${x+150} ${y-12})`},g);
+  if(i%4===0)mk('path',{d:`M${x+24} ${y-12} H${x+150+rnd()*90}`,stroke:'#8f9bb8','stroke-width':3,'stroke-linecap':'round',transform:`rotate(${rot.toFixed(2)} ${x+150} ${y-12})`},g)}}
+// siete renglones del papel real (imagen 1080×1395 → marco 612 px)
+const HL=[];{const f=612/1080;[355,465,650,750,965,1070,1165].forEach(y=>{const d=document.createElement('div');
+ d.style.cssText=`position:absolute;left:22px;width:596px;top:${14+y*f-28}px;height:56px;border-radius:10px;background:#6AA8FF;opacity:0`;$('HLS').appendChild(d);HL.push(d)})}
+// calendario: 4 + 4 casillas
+const MON=['SEP','OCT','NOV','DIC','ENE','FEB','MAR','ABR'],BX=[];
+MON.forEach((m,i)=>{const x=40+(i%4)*215,y=i<4?110:450;BX.push([x,y]);
+ mk('rect',{x,y,width:180,height:190,rx:8,fill:'#0C1323',stroke:'#F4F7FB','stroke-width':4},$('boxes'));
+ const tx=mk('text',{x:x+16,y:y+38,'font-family':'M','font-weight':800,'font-size':24,'letter-spacing':2,fill:'#8f9bb8'},$('boxes'));tx.textContent=m});
+const XS=[];[0,1,2,3].forEach(i=>{const [x,y]=BX[i];const p=mk('path',{d:`M${x+10} ${y+29} H${x+80}`,fill:'none',stroke:'#8f9bb8','stroke-width':6,'stroke-linecap':'round',pathLength:100,'stroke-dasharray':100,'stroke-dashoffset':100},$('xs'));XS.push(p)});
+const FL=[];[5,6,7].forEach(i=>{const [x,y]=BX[i];const g=mk('g',{opacity:0},$('fills'));
+ mk('rect',{x:x+20,y:y+55,width:140,height:100,rx:6,fill:'#0C1323',stroke:'#F4F7FB','stroke-width':3},g);
+ mk('path',{d:`M${x+40} ${y+87} H${x+130} M${x+40} ${y+111} H${x+120} M${x+40} ${y+135} H${x+134}`,stroke:'#8f9bb8','stroke-width':4,'stroke-linecap':'round'},g);FL.push(g)});
+// torre pequeña de la solución → una ficha
+const SC=[];{const g=$('ssc');for(let i=0;i<12;i++){const y=760-i*52;const e=mk('g',{},g);
+ mk('rect',{x:50,y:y-40,width:420,height:40,rx:4,fill:'#0C1323',stroke:'#8f9bb8','stroke-width':4},e);mk('path',{d:`M80 ${y-20} H${200+(i*37)%120}`,stroke:'#8f9bb8','stroke-width':4,'stroke-linecap':'round'},e);SC.push(e)}}
+const CAPS=[[.25,T.para-.15,'13.000 penaltis.'],[T.para,T.lehmann-.15,'Para un papel de <em>siete nombres.</em>'],
+ [T.lehmann,T.el-.2,'Lehmann contra Argentina, <em>2006.</em>'],[T.el,T.lo-.15,'El que más necesitaba <em>no estaba en él.</em>'],
+ [T.lo,T.ahora-.25,'Lo paró con <em>un partido del Inter.</em>'],[T.ahora,T.enero-.15,'<em>Ahora tú.</em>'],
+ [T.enero,T.que4-.15,'En enero, contra <em>el que te ganó en octubre.</em>'],[T.que4,T.acuerdas-.15,'<em>¿Qué te hizo?</em>'],
+ [T.acuerdas,T.pero-.15,'El resultado, la lluvia, <em>el árbitro…</em>'],[T.pero,T.viste-.15,'…pero no <em>por qué banda.</em>'],
+ [T.viste,T.ni-.15,'90 minutos, <em>a tres metros.</em>'],[T.ni,CUT-.45,'<em>Ni una línea.</em>'],
+ [T.tu2,T.al-.15,'Tu base de datos: <em>la primera vuelta.</em>'],[T.al,T.leelas-.15,'Tres líneas: <em>peligroso, banda, balón parado.</em>'],
+ [T.leelas,T.apunt-.15,'<em>Léelas en la vuelta.</em>'],[T.apunt,T.porque-.15,'Apúntalo en la app.'],
+ [T.porque+.05,T.tu3-.12,'Alemania: <em>13.000 penaltis.</em>'],[T.tu3-.05,T.END-.45,'Tú: <em>la primera vuelta.</em>']];
+window.frame=function(t){window._t=t;
+  const [cx,cy,z,mv]=cam(t);
+  const wd=$('world');wd.style.transform=`translate(540px,760px) scale(${z}) translate(${-cx}px,${-cy}px)`;
+  wd.style.filter=mv>.35?`blur(${(2.6*(mv-.35)/.65).toFixed(2)}px)`:'none';
+  // Z · torre, número y papel (todo quieto)
+  place($('TW'),Z[0],Z[1]-1150);place($('N13'),Z[0],Z[1]+340);place($('ZP'),Z[0]+700,Z[1]+330,3);
+  // L · Lehmann (blanco y negro → color al nombrarlo), camisetas, 4-2, 2006
+  place($('LH'),L[0]-200,L[1]-60,-2);place($('SW'),L[0]+130,L[1]-150,-3);place($('SA'),L[0]+365,L[1]-150,3);
+  place($('SC'),L[0]+245,L[1]+110);place($('Y6'),L[0]+20,L[1]+420);
+  $('LH').querySelector('img').style.filter=`url(#duo) grayscale(${1-r(t,T.lehmann-.1,T.lehmann+.6)})`;
+  $('SW').style.opacity=r(t,T.argentina-.35,T.argentina-.05);$('SA').style.opacity=r(t,T.argentina-.2,T.argentina+.1);$('SC').style.opacity=r(t,T.argentina+.05,T.argentina+.35);
+  $('Y6').style.opacity=r(t,T.dos-.15,T.dos+.2);
+  // P · el papel grande: los siete renglones, y Cambiasso escrito fuera
+  place($('PG'),P[0]-60,P[1]-80,-1);place($('CB'),P[0]+170,P[1]+470,4);
+  $('CB').style.opacity=eo(r(t,T.falta-.3,T.falta));
+  $('cbw').style.clipPath=`inset(0 ${(100-100*r(t,T.falta-.05,T.parar+.3)).toFixed(1)}% 0 0)`;
+  HL.forEach((d,i)=>{const a=T.no-.05+i*.08;d.style.opacity=.22*r(t,a,a+.12)});
+  // T · televisor: la flecha al lado y el portero que se tira
+  place($('TV'),TVZ[0],TVZ[1]);draw($('tva'),T.que2-.1,T.visto+.2);$('tvh').setAttribute('opacity',r(t,T.visto+.1,T.visto+.25));
+  const gk=io(r(t,T.visto,T.visto+.45));$('gk').setAttribute('transform',`translate(${-60*gk} 0) rotate(${-25*gk} 380 110)`);
+  // C · calendario: primera vuelta tachada, hilo de octubre a enero; al final, la ficha en enero y las demás se llenan
+  place($('CA'),C[0],C[1]);
+  XS.forEach((p,i)=>draw(p,T.ahora-.1+i*.14,T.ahora+.2+i*.14));
+  draw($('thr'),T.enero-.05,T.octubre+.4);
+  const fk=io(r(t,T.leelas-.05,T.leelas+.55));$('fly').setAttribute('transform',`translate(${lerp(450,130,fk)} ${lerp(-260,555,fk)}) rotate(${lerp(-14,0,fk)})`);
+  $('fly').setAttribute('opacity',r(t,T.leelas-.25,T.leelas));
+  FL.forEach((g,i)=>g.setAttribute('opacity',r(t,T.vuelta2-.15+i*.12,T.vuelta2+.05+i*.12)));
+  // O · objetos y el campo con las bandas en blanco
+  place($('O1'),O[0]-470,O[1]-200,-2);place($('O2'),O[0],O[1]-200);place($('O3'),O[0]+470,O[1]-200);place($('OP'),O[0],O[1]+900);
+  $('O1').style.opacity=r(t,T.resultado-.25,T.resultado+.05);$('O2').style.opacity=r(t,T.llovia-.25,T.llovia+.05);$('O3').style.opacity=r(t,T.arbitro-.25,T.arbitro+.05);
+  const qq=r(t,T.banda-.1,T.banda+.25);$('q1').setAttribute('opacity',qq);$('q2').setAttribute('opacity',qq);
+  // V · desde la banda: 90′, el extremo, 3 m; luego la hoja vacía y el campo se desenfoca
+  place($('PV'),V[0],V[1]+20);place($('N90'),V[0]-300,V[1]-360);
+  $('N90').style.opacity=r(t,T.noventa-.2,T.noventa+.15);$('dim').setAttribute('opacity',r(t,T.tres-.1,T.tres+.25));
+  const bs=io(r(t,T.ni-.2,T.ni+.35));place($('BS'),V[0]+120,lerp(V[1]+700,V[1]+120,bs),lerp(6,-2,bs));$('BS').style.opacity=r(t,T.ni-.2,T.ni+.05);
+  const bl=r(t,T.ni-.1,T.ni+.4);$('PV').style.filter=bl>0?`blur(${(7*bl).toFixed(2)}px)`:'none';$('N90').style.filter=$('PV').style.filter;
+  // S · la torre pequeña se reduce a una sola ficha
+  place($('SS'),S[0],S[1]-150);
+  const ck=io(r(t,T.primera-.1,T.primera+.6));SC.forEach((e,i)=>{e.setAttribute('transform',`translate(0 ${(i*52*ck).toFixed(1)})`);e.setAttribute('opacity',i===0?1:1-r(ck,.6,1))});
+  // F · la ficha: tres renglones
+  place($('FC'),F[0],F[1]+60,-1);
+  const lines=[[T.peligroso-.05,T.banda2-.15],[T.banda2-.1,T.balon-.12],[T.balon-.08,T.parado+.45]];let tip=null;
+  lines.forEach(([a,b],i)=>{const k=r(t,a,b);$('fw'+(i+1)).style.clipPath=`inset(0 ${(100-100*k).toFixed(1)}% 0 0)`;$('fn'+(i+1)).style.opacity=r(t,a-.15,a+.05);if(k>0&&k<1)tip=[104+600*k,166+i*170+70]});
+  draw($('fcu'),T.parado+.3,T.parado+.8);
+  const pk=r(t,T.peligroso-.4,T.peligroso-.1)*(1-r(t,T.parado+.5,T.parado+.8));$('PC').style.opacity=pk;
+  if(!tip)tip=t<T.banda2?[104,236]:t<T.balon?[704,406]:[704,576];
+  if(t<T.peligroso)tip=[104,236];
+  place($('PC'),F[0]-380+tip[0]+6,F[1]+60-380+tip[1]-150,18);
+  place($('B'),BP[0],BP[1]);
+  // color por escena: 2006 en sepia suave, tu temporada en frío, solución en blanco; principio y final, neutros
+  const sep=r(t,T.para-.2,T.para+.5)*(1-r(t,T.ahora-.4,T.ahora+.3));
+  const cold=t<CUT?r(t,T.ahora-.4,T.ahora+.3):0;
+  $('gr').style.opacity=.42*sep;$('gr2').style.opacity=.55*cold;
+  // rótulo
+  let html='',a=0;for(const [s,e,h] of CAPS)if(t>=s-.2&&t<e+.25){html=h;a=Math.min(r(t,s-.2,s+.15),1-r(t,e-.05,e+.25))}
+  const cp=$('cap');if(cp.dataset.h!==html){cp.innerHTML=html;cp.dataset.h=html}
+  cp.style.opacity=a;cp.style.transform=`translateY(${(1-a)*12}px)`;
+  // giro: fundido a negro y salida a blanco
+  $('ink').style.opacity=r(t,CUT-.35,CUT-.03)*(1-r(t,CUT+.03,CUT+.4));
+};
+window.cover=function(t){frame(t);$('TW').style.visibility='hidden';$('title').style.display='block';$('cap').style.opacity=0};
+Promise.all([...document.images].map(i=>i.decode().catch(()=>{}))).then(()=>document.fonts.ready).then(()=>{frame(0);window.ready=true});
+</script></body></html>

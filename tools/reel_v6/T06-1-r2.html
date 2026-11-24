@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8">
+<!-- T06-1-r2 «Dos palabras» (fútbol, cadete). Plantilla a3.html: planos fijos, la cámara solo se mueve al cambiar de zona. Dibujado a mano en SVG + una foto real CC BY 2.0 (Ferguson, Austin Osuide). Escena de ejemplo. Marta A, 23/11. -->
+<style>
+@font-face{font-family:M;font-weight:800;src:url(/tools/reel_v5/node_modules/@fontsource/plus-jakarta-sans/files/plus-jakarta-sans-latin-800-normal.woff2)}
+@font-face{font-family:M;font-weight:700;src:url(/tools/reel_v5/node_modules/@fontsource/plus-jakarta-sans/files/plus-jakarta-sans-latin-700-normal.woff2)}
+@font-face{font-family:M;font-weight:500;src:url(/tools/reel_v5/node_modules/@fontsource/plus-jakarta-sans/files/plus-jakarta-sans-latin-500-normal.woff2)}
+@font-face{font-family:S;font-style:italic;font-weight:400;src:url(/tools/fonts/instrument-serif-latin-400-italic.woff2)}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#02050F}
+#st{position:absolute;inset:0;overflow:hidden;background:#02050F}
+#world{position:absolute;left:0;top:0;transform-origin:0 0;will-change:transform}
+.o{position:absolute;left:0;top:0;transform-origin:50% 50%}
+.paper{background:#0C1323;box-shadow:0 18px 50px rgba(20,18,12,.10)}
+.frame{background:#0C1323;padding:14px;box-shadow:0 18px 50px rgba(20,18,12,.10)}
+.frame img{display:block;width:100%;height:100%;object-fit:cover}
+.num{position:absolute;font-family:M;font-weight:800;letter-spacing:-.05em;color:#F4F7FB;white-space:nowrap;line-height:1}
+.hand{position:absolute;font-family:S;font-style:italic;white-space:nowrap;line-height:1}
+.lab{position:absolute;font-family:M;font-weight:800;letter-spacing:.14em;color:#F4F7FB;white-space:nowrap}
+#cap{position:absolute;left:90px;right:90px;top:1330px;text-align:center;font-family:M;font-weight:800;font-size:58px;line-height:1.12;letter-spacing:-.03em;color:#F4F7FB;padding:18px 26px;border-radius:22px;background:rgba(12,19,35,.94)}
+#cap em{font-family:S;font-style:italic;font-weight:400;font-size:1.14em;letter-spacing:0}
+#hook{position:absolute;left:0;right:0;top:110px;text-align:center;font-family:M;font-weight:800;font-size:92px;letter-spacing:-.05em;color:#F4F7FB}
+#hook em{font-family:S;font-style:italic;font-weight:400;letter-spacing:0;color:#6AA8FF}
+#gr{position:absolute;inset:0;pointer-events:none;mix-blend-mode:multiply;opacity:0;background:#0C1323}
+#ink{position:absolute;inset:0;background:#000;opacity:0;pointer-events:none}
+.card{background:#0C1323;border:6px solid #F4F7FB;border-radius:20px}
+</style><style>html,body,#st{background:#02050F!important}#st{background:radial-gradient(ellipse at 50% 40%,#0C1323 0%,#02050F 72%)!important}
+img{filter:url(#duo)!important}#grain{opacity:.16!important;mix-blend-mode:screen}</style>
+<svg width="0" height="0" style="position:absolute"><filter id="duo" color-interpolation-filters="sRGB"><feColorMatrix type="matrix" values=".33 .33 .33 0 0 .33 .33 .33 0 0 .33 .33 .33 0 0 0 0 0 1 0"/><feComponentTransfer><feFuncR type="table" tableValues="0.008 0.18 0.416 0.957"/><feFuncG type="table" tableValues="0.02 0.235 0.659 0.969"/><feFuncB type="table" tableValues="0.059 0.667 1 0.984"/></feComponentTransfer></filter></svg></head><body><div id="st">
+<div id="world">
+  <!-- 1 · libreta + tarjeta con dos huecos -->
+  <div class="o paper" id="NB" style="width:1000px;height:760px;background:repeating-linear-gradient(#0C1323 0 58px,#e6ebf2 58px 61px)"></div>
+  <svg class="o" id="CD" width="760" height="440" viewBox="0 0 760 440" style="overflow:visible"></svg>
+  <!-- 2 · foto real de Ferguson (sepia suave) -->
+  <div class="o frame" id="PH" style="width:400px;height:520px"><img src="/tools/reel_v4/T06-1-r2/img/ferguson.jpg" style="object-position:50% 25%;filter:sepia(.45) saturate(.8) contrast(.96)"></div>
+  <!-- 3 · recorte dibujado HBR -->
+  <div class="o paper" id="HB" style="width:620px;height:240px;border:3px dashed #8f9bb8">
+    <div class="lab" style="left:0;right:0;top:40px;text-align:center;font-size:30px;letter-spacing:.2em">HARVARD BUSINESS REVIEW</div>
+    <div class="hand" style="left:0;right:0;top:100px;text-align:center;font-size:84px;color:#8f9bb8">octubre <span id="y13">2013</span></div>
+    <svg style="position:absolute;left:0;top:0;overflow:visible" width="620" height="240"><path id="ul13" d="M372 196 C 420 192 470 198 512 192" fill="none" stroke="#6AA8FF" stroke-width="7" stroke-linecap="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/></svg></div>
+  <svg class="o" id="TH" width="10" height="10" style="overflow:visible"><path id="thp" d="" fill="none" stroke="#8f9bb8" stroke-width="3" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/></svg>
+  <!-- 4 · campo cenital (cadete) y marcador -->
+  <div class="o paper" id="SB" style="width:560px;height:200px;border:5px solid #F4F7FB;border-radius:18px">
+    <div class="lab" style="left:28px;top:20px;font-size:19px;color:#8f9bb8">CADETE · 2.ª PARTE</div><div class="lab" style="right:28px;top:20px;font-size:17px;color:#8f9bb8">EJEMPLO</div>
+    <div class="num" style="left:0;right:0;top:66px;text-align:center;font-size:110px">1-1 · 70′</div></div>
+  <svg class="o" id="PI" width="600" height="900" viewBox="0 0 600 900" style="overflow:visible"></svg>
+  <!-- 5 · la grada quieta -->
+  <svg class="o" id="GR" width="1000" height="700" viewBox="0 0 1000 700" style="overflow:visible"></svg>
+  <!-- 6 · pizarra del vestuario -->
+  <svg class="o" id="PZ" width="900" height="640" viewBox="0 0 900 640" style="overflow:visible"></svg>
+  <!-- 7 · percha con el 2 -->
+  <svg class="o" id="PC" width="800" height="900" viewBox="0 0 800 900" style="overflow:visible"></svg>
+  <!-- 8 · en negro: la banda vacía y el sábado siguiente -->
+  <div class="o" id="DK" style="width:2600px;height:2800px;background:#000"></div>
+  <svg class="o" id="DS" width="600" height="900" viewBox="0 0 600 900" style="overflow:visible"></svg>
+  <!-- 9 · solución: la tarjeta con «Bien hecho» -->
+  <svg class="o" id="QC" width="760" height="440" viewBox="0 0 760 440" style="overflow:visible"></svg>
+  <div class="o" id="QT" style="width:760px;height:170px;text-align:center">
+    <div class="hand" style="position:static;font-size:76px;color:#8f9bb8">“Well done.”</div>
+    <div class="lab" style="position:static;margin-top:18px;font-size:20px;color:#8f9bb8">SIR ALEX FERGUSON · HBR, 2013</div></div>
+  <!-- 10 · libreta de la banda -->
+  <div class="o paper" id="LB" style="width:800px;height:900px"></div>
+  <svg class="o" id="PN" width="40" height="300" viewBox="0 0 40 300" style="overflow:visible">
+    <path d="M20 300 L6 252 L34 252 Z" fill="#B9E0FF" stroke="#F4F7FB" stroke-width="3" stroke-linejoin="round"/><path d="M20 300 L15 284 L25 284 Z" fill="#F4F7FB"/>
+    <rect x="6" y="40" width="28" height="212" fill="#B9E0FF" stroke="#F4F7FB" stroke-width="3"/><rect x="6" y="10" width="28" height="32" rx="4" fill="#B9E0FF" stroke="#F4F7FB" stroke-width="3"/></svg>
+  <!-- marca -->
+  <div class="o" id="B" style="width:900px;height:500px;text-align:center">
+    <div class="num" style="position:static;font-size:170px;margin-top:120px">Pro<span style="color:#6AA8FF">Team</span></div>
+    <div style="margin-top:30px;font-family:M;font-weight:500;font-size:38px;color:#8f9bb8">la app del entrenador · enlace en la bio</div>
+  </div>
+</div>
+<div id="gr"></div>
+<div id="hook">Dos <em>palabras</em></div>
+<div id="cap"></div>
+<div id="ink"></div>
+</div>
+<script src="/tools/reel_v4/T06-1-r2/times.js"></script>
+<script>
+const $=id=>document.getElementById(id), W=window.WORDS, NS='http://www.w3.org/2000/svg';
+const at=(w,n=1)=>{let c=0;for(const x of W)if(x[0]===w&&++c===n)return x[1];throw 'no '+w+n};
+const cl=(x,a=0,b=1)=>Math.min(b,Math.max(a,x)), r=(t,a,b)=>cl((t-a)/(b-a));
+const io=x=>x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2, eo=x=>1-Math.pow(1-x,3), lerp=(a,b,k)=>a+(b-a)*k;
+const T={fg:at('ferguson'),mej:at('mejores'),casi:at('casi'),sir:at('sir'),harv:at('harvard'),d13:at('dos',2),trece:at('trece'),cad:at('cadete'),corre:at('corre'),
+ cuar:at('cuarenta'),corta:at('corta'),ca1:at('contraataque'),nad2:at('nadie',2),vest:at('vestuario'),gol:at('gol'),pen:at('penalti'),camb:at('cambio'),
+ carr:at('carrera'),nada:at('nada'),apr:at('aprende'),lo2:at('lo',2),sab:at('sabado'),queda:at('queda'),ca2:at('contraataque',2),banda1:at('banda'),no4:at('no',4),
+ fg3:at('ferguson',3),bien:at('bien'),hecho:at('hecho'),no6:at('no',6),sup:at('superlativos'),banda2:at('banda',2),apunta:at('apunta'),min3:at('minuto',3),
+ acabar:at('acabar'),min4:at('minuto',4),banda3:at('banda',3),bien2:at('bien',2),apunt:at('apuntalo'),porque:at('porque'),END:window.VEND+.25};
+// zonas del mundo
+const CDz=[0,0], PHp=[760,-30], HBp=[380,520], PIz=[0,2400], GRz=[1600,2400], PZz=[3200,2400], PCz=[4800,2400], DKz=[2400,4800], QCz=[4600,4800], LBz=[6200,4800], BP=[7800,4800];
+const CUT1=T.lo2-.25, CUT2=T.fg3-.2;
+const L0=[520,250], L1=[540,660];          // lateral (local, campo 600×900): arriba → corta abajo
+const BL=[[430,330],[470,450],[520,560],[545,655]]; // balón del contraataque
+// cámara: planos FIJOS; solo se mueve al cambiar de zona (0,6 s, entrada y salida suaves)
+const S0=[0,CDz[0],CDz[1]+40,1.25];
+const SH=[ // [inicio, cx, cy, zoom, duración]
+ S0,
+ [T.fg-.3,380,-10,.68],
+ [T.mej-.3,PHp[0],PHp[1]-10,1.3],
+ [T.casi-.3,CDz[0],CDz[1]+30,1.6],
+ [T.sir-.3,380,150,.6,.7],
+ [T.harv-.3,HBp[0],HBp[1]-20,1.3],
+ [T.d13-.3,HBp[0]+110,HBp[1]+30,2.0],
+ [T.cad-.45,PIz[0],PIz[1]-130,.85,.75],
+ [T.cuar-.3,PIz[0]+200,PIz[1]+200,1.2],
+ [T.nad2-.35,GRz[0],GRz[1],1.0,.7],
+ [T.vest-.35,PZz[0],PZz[1]+20,.95,.7],
+ [T.carr-.35,PZz[0]-230,PZz[1]+200,1.9],
+ [T.apr-.3,PCz[0],PCz[1]-20,1.0,.7],
+ [CUT1,DKz[0]+220,DKz[1]-40,1.25],
+ [T.sab-.3,DKz[0],DKz[1]-120,.85,.7],
+ [T.queda-.3,DKz[0]+220,DKz[1]-200,1.5],
+ [T.ca2-.3,DKz[0]+180,DKz[1]+20,1.05],
+ [CUT2,QCz[0],QCz[1]-40,1.1],
+ [T.no6-.3,QCz[0],QCz[1]+20,1.3],
+ [T.banda2-.35,LBz[0],LBz[1],.95,.7],
+ [T.acabar-.3,LBz[0],LBz[1],1.7],
+ [T.apunt-.35,BP[0],BP[1],1.0],
+ [T.porque+.05,S0[1],S0[2],S0[3],.95]];
+const CUTS=new Set([CUT1,CUT2]);
+function cam(t){let i=0;while(i+1<SH.length&&SH[i+1][0]<=t)i++;const s=SH[i];
+ if(i===0||CUTS.has(s[0]))return [s[1],s[2],s[3],0];
+ const p=SH[i-1],Dd=s[4]||.62,k=r(t,s[0],s[0]+Dd),e=io(k);
+ const lz=lerp(Math.log(p[3]),Math.log(s[3]),e)-.12*Math.sin(Math.PI*k)*(Math.hypot(s[1]-p[1],s[2]-p[2])>600?1:0);
+ return [lerp(p[1],s[1],e),lerp(p[2],s[2],e),Math.exp(lz),k>0&&k<1?Math.sin(Math.PI*k):0]}
+const sz=el=>[el.offsetWidth||+el.getAttribute('width'),el.offsetHeight||+el.getAttribute('height')];
+function place(el,x,y,rot=0,sc=1){const [w,h]=sz(el);el.style.transform=`translate(${x-w/2}px,${y-h/2}px) rotate(${rot}deg) scale(${sc})`}
+const drawK=(el,k)=>{el.setAttribute('stroke-dashoffset',100-100*k);el.style.visibility=k>0?'visible':'hidden'};
+const mk=(tag,a,par)=>{const e=document.createElementNS(NS,tag);for(const k in a)e.setAttribute(k,a[k]);par.appendChild(e);return e};
+const txt=(par,x,y,s,size,fill='#8f9bb8',anchor='middle',font='M')=>{const e=mk('text',{x,y,'font-family':font,'font-weight':font==='M'?800:400,'font-style':font==='S'?'italic':'normal','font-size':size,'letter-spacing':font==='M'?4:0,fill,'text-anchor':anchor},par);e.textContent=s;return e};
+// tarjeta con dos huecos a lápiz (se usa en el gancho, en la solución y en el final)
+function card(s,blue){mk('rect',{x:0,y:0,width:760,height:440,rx:20,fill:'#0C1323',stroke:'#F4F7FB','stroke-width':6},s);
+ mk('path',{d:'M90 300 C 160 296 250 303 330 298',fill:'none',stroke:'#8f9bb8','stroke-width':6,'stroke-linecap':'round'},s);
+ mk('path',{d:'M420 299 C 500 303 590 296 670 301',fill:'none',stroke:'#8f9bb8','stroke-width':6,'stroke-linecap':'round'},s);}
+card($('CD'));
+// campo cenital (propio): líneas, jugadores neutros, el lateral (2) y la flecha
+function pitch(s,dark){const ln=dark?'#3a3d45':'#636DFF',bg=dark?'#16171b':'#f2f4f1',g=dark?'#4a4d55':'#9aa1a8';
+ mk('rect',{x:0,y:0,width:600,height:900,fill:bg,stroke:ln,'stroke-width':6},s);
+ mk('path',{d:'M0 450 H600 M150 0 V130 H450 V0 M150 900 V770 H450 V900',fill:'none',stroke:ln,'stroke-width':4},s);
+ mk('circle',{cx:300,cy:450,r:75,fill:'none',stroke:ln,'stroke-width':4},s);
+ const P=[];[[150,260,g],[300,200,g],[230,420,g],[380,500,g],[120,560,g],[300,740,g],[420,360,'#c9564a'],[300,330,'#c9564a'],[200,320,'#c9564a']].forEach(([x,y,f])=>P.push([mk('circle',{cx:x,cy:y,r:17,fill:f},s),x,y]));
+ return P}
+const PIs={};{const s=$('PI');PIs.P=pitch(s,false);
+ PIs.run=mk('path',{d:`M${L0[0]} ${L0[1]+30} C 575 380 575 520 ${L1[0]} ${L1[1]-30}`,fill:'none',stroke:'#6AA8FF','stroke-width':8,'stroke-linecap':'round',pathLength:100,'stroke-dasharray':100,'stroke-dashoffset':100},s);
+ PIs.red=mk('path',{d:`M${BL[0][0]} ${BL[0][1]} L${BL[3][0]-10} ${BL[3][1]-15}`,fill:'none',stroke:'#B9E0FF','stroke-width':7,'stroke-linecap':'round','stroke-dasharray':'3 16',opacity:0},s);
+ PIs.ball=mk('circle',{cx:BL[0][0],cy:BL[0][1],r:11,fill:'#0C1323',stroke:'#F4F7FB','stroke-width':4,opacity:0},s);
+ const lg=mk('g',{},s);mk('circle',{cx:0,cy:0,r:26,fill:'#6AA8FF'},lg);mk('text',{x:0,y:12,'font-family':'M','font-weight':800,'font-size':32,fill:'#0C1323','text-anchor':'middle'},lg).textContent='2';PIs.lat=lg;
+ PIs.m40=txt(s,612,470,'40 m',34,'#2f6bff','start','S');PIs.m40.setAttribute('opacity',0);
+ txt(s,590,890,'EJEMPLO',16,'#9aa1a8','end');}
+// grada dibujada, quieta
+{const s=$('GR');mk('rect',{x:-300,y:-200,width:1600,height:1100,fill:'#0C1323'},s);
+ for(let row=0;row<4;row++){mk('rect',{x:-40,y:90+row*130,width:1080,height:14,fill:'#8f9bb8'},s);
+  for(let i=0;i<11;i++){const x=10+i*96+(row%2)*48,y=70+row*130;mk('circle',{cx:x,cy:y-30,r:20,fill:'#8f9bb8'},s);mk('path',{d:`M${x-26} ${y+10} Q${x} ${y-24} ${x+26} ${y+10} Z`,fill:'#8f9bb8'},s)}}
+ mk('rect',{x:-60,y:610,width:1120,height:12,fill:'#F4F7FB'},s);mk('rect',{x:-300,y:622,width:1600,height:300,fill:'#0C1323'},s);}
+// pizarra del vestuario: tres flechas rojas y la carrera del lateral en un rincón
+const PZs={};{const s=$('PZ');mk('rect',{x:0,y:0,width:900,height:640,rx:16,fill:'#0C1323',stroke:'#F4F7FB','stroke-width':10},s);
+ mk('path',{d:'M450 30 V610 M30 30 H870 V610 H30 Z',fill:'none',stroke:'#0C1323','stroke-width':4},s);mk('circle',{cx:450,cy:320,r:70,fill:'none',stroke:'#0C1323','stroke-width':4},s);
+ PZs.ar=[['gol','M600 120 C 680 170 700 240 760 300',780,250],['penalti','M520 420 C 600 400 660 430 720 470',700,540],['cambio','M300 120 C 360 90 420 110 470 160',300,90]].map(([l,d,x,y])=>{const g=mk('g',{},s);
+  const p=mk('path',{d,fill:'none',stroke:'#B9E0FF','stroke-width':9,'stroke-linecap':'round',pathLength:100,'stroke-dasharray':100,'stroke-dashoffset':100},g);
+  const tx=txt(g,x,y,l,54,'#d23a2a','middle','S');tx.setAttribute('opacity',0);return [p,tx]});
+ const cg=mk('g',{},s);PZs.corner=cg;
+ mk('path',{d:'M80 380 C 70 450 75 520 95 575',fill:'none',stroke:'#6AA8FF','stroke-width':7,'stroke-linecap':'round'},cg);mk('path',{d:'M80 568 L95 590 L108 566',fill:'none',stroke:'#6AA8FF','stroke-width':7,'stroke-linecap':'round','stroke-linejoin':'round'},cg);
+ txt(cg,130,400,'2',40,'#2f6bff','start');txt(s,880,630,'EJEMPLO',15,'#9aa1a8','end');}
+// percha con la camiseta del 2
+{const s=$('PC');mk('rect',{x:-300,y:-300,width:1400,height:1500,fill:'#0C1323'},s);mk('rect',{x:-300,y:760,width:1400,height:40,fill:'#8f9bb8'},s);
+ mk('rect',{x:-100,y:120,width:1000,height:18,rx:6,fill:'#8f9bb8'},s);
+ mk('path',{d:'M400 128 V170 Q400 190 385 200',fill:'none',stroke:'#F4F7FB','stroke-width':8,'stroke-linecap':'round'},s);
+ mk('path',{d:'M260 250 L400 196 L540 250',fill:'none',stroke:'#F4F7FB','stroke-width':7,'stroke-linejoin':'round'},s);
+ mk('path',{d:'M262 252 L180 330 L240 400 L280 360 L285 700 L515 700 L520 360 L560 400 L620 330 L538 252 Q400 300 262 252 Z',fill:'#0C1323',stroke:'#F4F7FB','stroke-width':6,'stroke-linejoin':'round'},s);
+ mk('text',{x:400,y:590,'font-family':'M','font-weight':800,'font-size':230,fill:'#F4F7FB','text-anchor':'middle','letter-spacing':-6},s).textContent='2';
+ txt(s,780,740,'EJEMPLO',16,'#9aa1a8','end');}
+// en negro: campo oscuro y luz sobre la banda
+const DS={};{const s=$('DS');DS.P=pitch(s,true);
+ DS.spot=mk('ellipse',{cx:560,cy:300,rx:120,ry:300,fill:'#0C1323',opacity:0},s);s.insertBefore(DS.spot,s.firstChild.nextSibling);
+ DS.red=mk('path',{d:'M420 200 C 520 300 575 420 560 640',fill:'none',stroke:'#B9E0FF','stroke-width':8,'stroke-linecap':'round',pathLength:100,'stroke-dasharray':100,'stroke-dashoffset':100},s);
+ DS.ball=mk('circle',{cx:420,cy:200,r:11,fill:'#0C1323',opacity:0},s);
+ const lg=mk('g',{transform:`translate(${L0[0]-120} ${L0[1]-90})`},s);mk('circle',{cx:0,cy:0,r:26,fill:'#6AA8FF'},lg);mk('text',{x:0,y:12,'font-family':'M','font-weight':800,'font-size':32,fill:'#0C1323','text-anchor':'middle'},lg).textContent='2';DS.lat=lg;}
+// solución: la misma tarjeta, ahora con «Bien hecho»
+{const s=$('QC');card(s);
+ const w=mk('text',{id:'bh',x:380,y:282,'font-family':'S','font-style':'italic','font-size':150,fill:'#6AA8FF','text-anchor':'middle'},s);w.textContent='Bien  hecho';
+ mk('path',{id:'bhu',d:'M110 330 C 300 318 470 336 650 324',fill:'none',stroke:'#6AA8FF','stroke-width':10,'stroke-linecap':'round',pathLength:100,'stroke-dasharray':100,'stroke-dashoffset':100},s);}
+// libreta de la banda: lo bueno de cada uno, con su minuto (EJEMPLO)
+const LN=[['2','70′','cierra banda'],['8','12′','presión'],['5','34′','despeje'],['10','58′','pase atrás']];
+{const h=$('LB');h.innerHTML=`<div class="lab" style="left:50px;top:48px;font-size:22px;color:#8f9bb8">LO BUENO · CON SU MINUTO</div><div class="lab" style="right:50px;top:50px;font-size:16px;color:#8f9bb8">EJEMPLO</div>
+ <div style="position:absolute;left:50px;right:50px;top:96px;height:3px;background:#0C1323"></div>`+
+ LN.map(([d,m,a],i)=>`<div id="ln${i}" style="position:absolute;left:50px;top:${150+i*170}px;height:140px;width:720px;white-space:nowrap;line-height:140px">
+  <span style="font-family:M;font-weight:800;font-size:84px;letter-spacing:-.04em">${d}</span><span style="font-family:S;font-style:italic;font-size:84px;color:#6AA8FF">&nbsp;· ${m}</span><span style="font-family:S;font-style:italic;font-size:84px;color:#F4F7FB">&nbsp;· ${a}</span></div>`).join('')+
+ `<svg style="position:absolute;left:0;top:0;overflow:visible" width="800" height="900"><path id="rcl" d="" fill="none" stroke="#6AA8FF" stroke-width="9" stroke-linecap="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/></svg>`}
+const CAPS=[[T.fg-.05,T.casi-.12,'Ferguson: <em>las mejores que se han inventado.</em>'],[T.casi,T.sir-.12,'Casi nunca <em>las dices.</em>'],
+ [T.sir,T.cad-.4,'Sir Alex Ferguson. <em>HBR, 2013.</em>'],[T.cad,T.corre-.12,'Cadete, <em>minuto 70.</em>'],[T.corre,T.ca1-.12,'Tu lateral corre <em>40 metros atrás…</em>'],
+ [T.ca1,T.nad2-.15,'…y corta un contraataque <em>que nadie vio.</em>'],[T.nad2,T.vest-.15,'<em>Nadie aplaude.</em>'],
+ [T.vest,T.carr-.4,'En el vestuario: <em>gol, penalti, cambio.</em>'],[T.carr-.3,T.apr-.12,'De su carrera, <em>nada.</em>'],
+ [T.apr,CUT1-.35,'Y aprende <em>lo que no querías enseñarle.</em>'],[CUT1+.2,T.sab-.12,'<em>Lo que no se nombra, deja de hacerse.</em>','d'],
+ [T.sab,T.queda-.12,'El sábado siguiente, <em>minuto 70…</em>','d'],[T.queda,T.no4-.12,'…se queda arriba <em>mirando.</em>','d'],[T.no4,CUT2-.4,'<em>No se lo dijiste.</em>','d'],
+ [CUT2+.2,T.bien-.12,'Ferguson: <em>nada mejor que oír…</em>'],[T.bien,T.no6-.12,'<em>«Bien hecho».</em>'],[T.no6,T.banda2-.15,'Sin <em>superlativos.</em>'],
+ [T.banda2,T.acabar-.12,'En la banda, apunta lo bueno <em>con su minuto.</em>'],[T.acabar,T.min4-.12,'Al acabar, <em>con su nombre:</em>'],
+ [T.min4,T.apunt-.12,'«Minuto 70, la banda. <em>Bien hecho.</em>»'],[T.apunt,T.porque-.12,'Apúntalo en la app de ProTeam.'],[T.porque,T.END-.7,'Porque solo son <em>dos palabras.</em>']];
+window.frame=function(t){
+  const [cx,cy,z,mv]=cam(t);
+  const wd=$('world');wd.style.transform=`translate(540px,760px) scale(${z}) translate(${-cx}px,${-cy}px)`;
+  wd.style.filter=mv>.35?`blur(${(2.6*(mv-.35)/.65).toFixed(2)}px)`:'none';
+  // 1 · tarjeta, foto, recorte e hilo
+  place($('NB'),CDz[0]+40,CDz[1]+40,-2);place($('CD'),CDz[0],CDz[1],-1);
+  place($('PH'),PHp[0],PHp[1],3);const hk=1-r(t,T.porque-.3,T.porque);$('PH').style.opacity=r(t,T.fg-.35,T.fg+.1)*hk;
+  place($('HB'),HBp[0],HBp[1],-1.5);$('HB').style.opacity=r(t,T.sir-.35,T.sir+.1)*hk;$('TH').style.opacity=hk;
+  drawK($('thp'),io(r(t,T.sir,T.sir+.7)));drawK($('ul13'),io(r(t,T.d13,T.trece+.35)));
+  // 2 · campo
+  place($('SB'),PIz[0],PIz[1]-570);place($('PI'),PIz[0],PIz[1]);
+  PIs.P.forEach(([c,x,y],i)=>{const a=t*1.0+i*1.9;c.setAttribute('cx',(x+10*Math.sin(a)).toFixed(1));c.setAttribute('cy',(y+7*Math.cos(a*.8+i)).toFixed(1))});
+  const run=io(r(t,T.corre-.05,T.corta+.1));drawK(PIs.run,run);
+  PIs.lat.setAttribute('transform',`translate(${lerp(L0[0],L1[0],run)} ${lerp(L0[1],L1[1],run)})`);
+  PIs.m40.setAttribute('opacity',r(t,T.cuar-.1,T.cuar+.3));
+  const kb=r(t,T.corre,T.corta+.1),bi=Math.min(2,Math.floor(kb*3)),bk=cl(kb*3-bi),bx=lerp(BL[bi][0],BL[bi+1][0],bk),by=lerp(BL[bi][1],BL[bi+1][1],bk);
+  PIs.ball.setAttribute('cx',bx);PIs.ball.setAttribute('cy',by);PIs.ball.setAttribute('opacity',r(t,T.corre-.3,T.corre));PIs.red.setAttribute('opacity',r(t,T.corre-.3,T.corre)*.9);
+  // 3 · grada, pizarra y percha
+  place($('GR'),GRz[0],GRz[1]+30);
+  place($('PZ'),PZz[0],PZz[1]);[T.gol,T.pen,T.camb].forEach((w,i)=>{const [p,tx]=PZs.ar[i];drawK(p,io(r(t,w-.15,w+.45)));tx.setAttribute('opacity',r(t,w,w+.3))});
+  PZs.corner.setAttribute('opacity',1-.82*io(r(t,T.nada-.1,T.nada+.6)));
+  place($('PC'),PCz[0],PCz[1]+60);
+  // 4 · negro: luz sobre la banda vacía; el sábado siguiente se queda arriba
+  const dv=t>CUT1-.6&&t<CUT2+.6;['DK','DS'].forEach(k=>$(k).style.visibility=dv?'visible':'hidden');
+  place($('DK'),DKz[0],DKz[1]);place($('DS'),DKz[0],DKz[1]);
+  const sp=io(r(t,CUT1+.1,CUT1+.9)),wide=io(r(t,T.sab-.3,T.sab+.5)),off=io(r(t,T.no4-.2,T.no4+.5));
+  DS.spot.setAttribute('rx',lerp(120,420,wide));DS.spot.setAttribute('ry',lerp(300,520,wide));DS.spot.setAttribute('cx',lerp(560,330,wide));DS.spot.setAttribute('cy',lerp(300,450,wide));
+  DS.spot.setAttribute('opacity',((.16*sp)*(1-off)).toFixed(3));
+  const shw=r(t,T.sab-.2,T.sab+.4)*(1-off);DS.lat.setAttribute('opacity',shw);DS.P.forEach(([c])=>c.setAttribute('opacity',shw));
+  drawK(DS.red,io(r(t,T.ca2-.1,T.banda1+.3)));DS.red.setAttribute('opacity',1-off);
+  const kr=io(r(t,T.ca2-.1,T.banda1+.3));DS.ball.setAttribute('opacity',r(t,T.ca2-.3,T.ca2)*(1-off));
+  {const p=DS.red,L=p.getTotalLength(),pt=p.getPointAtLength(L*kr);DS.ball.setAttribute('cx',pt.x);DS.ball.setAttribute('cy',pt.y)}
+  // 5 · solución
+  place($('QC'),QCz[0],QCz[1]);place($('QT'),QCz[0],QCz[1]-360);$('QT').style.opacity=r(t,CUT2+.2,CUT2+.7);
+  $('bh').style.clipPath=`inset(-20% ${(100-100*io(r(t,T.bien-.05,T.hecho+.45))).toFixed(1)}% -20% -2%)`;drawK($('bhu'),io(r(t,T.sup-.1,T.sup+.5)));
+  // 6 · libreta: se escriben las líneas, se rodea la del 2
+  place($('LB'),LBz[0],LBz[1]);
+  const w0=T.apunta-.1,w1=T.min3+.5;for(let i=0;i<4;i++){const s=w0+(w1-w0)*i/4,e=w0+(w1-w0)*(i+1)/4-.05;$('ln'+i).style.clipPath=`inset(-10% ${(100-100*io(r(t,s,e))).toFixed(1)}% -10% -2%)`}
+  for(let i=1;i<4;i++)$('ln'+i).style.opacity=1-.8*io(r(t,T.acabar-.3,T.acabar+.3));
+  drawK($('rcl'),io(r(t,T.min4-.1,T.banda3+.3)));
+  const pc=$('PN'),kk=r(t,w0,w1),row=Math.min(3,Math.floor(kk*4)),kp=io(cl(kk*4-row));
+  pc.style.opacity=r(t,w0-.3,w0)*(1-r(t,w1,w1+.3));
+  place(pc,LBz[0]-400+60+kp*620,LBz[1]-450+150+row*170-60+6*Math.sin(t*40),18);
+  place($('B'),BP[0],BP[1]);
+  // color: frío del campo al giro 2
+  $('gr').style.opacity=t<CUT2?.5*r(t,T.cad-.3,T.cad+.3):0;
+  $('hook').style.opacity=t<10?1-r(t,T.fg-.4,T.fg-.1):r(t,T.porque+.6,T.porque+1.0);
+  // rótulo
+  let html='',a=0,dk=0;for(const [s,e,h,d] of CAPS)if(t>=s-.2&&t<e+.25){const aa=Math.min(r(t,s-.2,s+.15),1-r(t,e-.05,e+.25));if(aa>=a&&(aa>0||!html)){html=h;a=aa;dk=d?1:0}}
+  const cp=$('cap');if(cp.dataset.h!==html){cp.innerHTML=html;cp.dataset.h=html}
+  cp.style.opacity=a;cp.style.transform=`translateY(${(1-a)*12}px)`;cp.style.background=dk?'none':'rgba(12,19,35,.94)';cp.style.color=dk?'#F4F7FB':'#636DFF';
+  // giros: fundido a negro antes de «Lo que no se nombra»; de negro a blanco en «Ferguson: no hay nada mejor»
+  $('ink').style.opacity=Math.max(r(t,CUT1-.35,CUT1-.03)*(1-r(t,CUT1+.03,CUT1+.45)), r(t,CUT2-.3,CUT2-.03)*(1-r(t,CUT2+.03,CUT2+.5)));
+};
+Promise.all([...document.images].map(i=>i.decode().catch(()=>{}))).then(()=>document.fonts.ready).then(()=>{
+ // hilo de lápiz: del recorte a la foto (coordenadas del mundo, svg TH en el origen)
+ place($('TH'),5,5);$('thp').setAttribute('d',`M${HBp[0]+180} ${HBp[1]-125} C ${HBp[0]+300} ${HBp[1]-200} ${PHp[0]-40} ${PHp[1]+330} ${PHp[0]+20} ${PHp[1]+262}`);
+ // círculo de la línea del 2 y plano de la cámara sobre ella
+ const ln=$('ln0'),wd=[...ln.children].reduce((s,c)=>s+c.offsetWidth,0),x=50+wd/2,y=150+70,a=wd/2+60,b=86;
+ $('rcl').setAttribute('d',`M${x+10} ${y-b} C ${x+a*1.08} ${y-b} ${x+a*1.04} ${y+b} ${x} ${y+b} C ${x-a*1.08} ${y+b} ${x-a*1.04} ${y-b*.9} ${x+30} ${y-b-8}`);
+ const sh=SH.find(e=>e[0]===T.acabar-.3);sh[1]=LBz[0]-400+x;sh[2]=LBz[1]-450+y+60;sh[3]=Math.min(1.7,900/(wd+120));
+ frame(0);window.ready=true});
+</script></body></html>

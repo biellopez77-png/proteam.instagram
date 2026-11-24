@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8">
+<!-- T01-2-r1 «La pizarra que se olvidó de uno» (fútbol). Plantilla a3.html: planos fijos, la cámara solo se mueve al cambiar de zona.
+     Foto real: estadio Olímpico Atatürk (Myrat, CC BY-SA 3.0, Wikimedia Commons). El resto, dibujado. Fuentes: LFC.com y Balls.ie. -->
+<style>
+@font-face{font-family:M;font-weight:800;src:url(/tools/reel_v5/node_modules/@fontsource/plus-jakarta-sans/files/plus-jakarta-sans-latin-800-normal.woff2)}
+@font-face{font-family:M;font-weight:700;src:url(/tools/reel_v5/node_modules/@fontsource/plus-jakarta-sans/files/plus-jakarta-sans-latin-700-normal.woff2)}
+@font-face{font-family:M;font-weight:500;src:url(/tools/reel_v5/node_modules/@fontsource/plus-jakarta-sans/files/plus-jakarta-sans-latin-500-normal.woff2)}
+@font-face{font-family:S;font-style:italic;font-weight:400;src:url(/tools/fonts/instrument-serif-latin-400-italic.woff2)}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#02050F}
+#st{position:absolute;inset:0;overflow:hidden;background:#02050F}
+#world{position:absolute;left:0;top:0;transform-origin:0 0}
+.o{position:absolute;left:0;top:0;transform-origin:50% 50%}
+.paper{background:#0C1323;box-shadow:0 18px 50px rgba(20,18,12,.10)}
+.frame{background:#0C1323;padding:14px;box-shadow:0 18px 50px rgba(20,18,12,.10)}
+.frame img{display:block;width:100%;height:100%;object-fit:cover}
+.num{position:absolute;font-family:M;font-weight:800;letter-spacing:-.05em;color:#F4F7FB;white-space:nowrap;line-height:1}
+.hand{position:absolute;font-family:S;font-style:italic;white-space:nowrap;line-height:1}
+.lab{position:absolute;font-family:M;font-weight:800;letter-spacing:.14em;color:#F4F7FB;white-space:nowrap}
+#cap{position:absolute;left:90px;right:90px;top:1330px;text-align:center;font-family:M;font-weight:800;font-size:58px;line-height:1.12;letter-spacing:-.03em;color:#F4F7FB;padding:18px 26px;border-radius:22px;background:rgba(12,19,35,.94)}
+#cap em{font-family:S;font-style:italic;font-weight:400;font-size:1.14em;letter-spacing:0}
+#cap .b{color:#6AA8FF}
+#gr,#gr2{position:absolute;inset:0;pointer-events:none;mix-blend-mode:multiply;opacity:0}
+#ink{position:absolute;inset:0;background:#000;opacity:0;pointer-events:none}
+#wh{position:absolute;inset:0;background:#0C1323;opacity:0;pointer-events:none}
+#title{position:absolute;left:0;right:0;top:250px;text-align:center;font-family:M;font-weight:800;font-size:112px;line-height:1.02;letter-spacing:-.05em;color:#F4F7FB;display:none}
+#title em{font-family:S;font-style:italic;font-weight:400;letter-spacing:0;color:#6AA8FF}
+</style><style>html,body,#st{background:#02050F!important}#st{background:radial-gradient(ellipse at 50% 40%,#0C1323 0%,#02050F 72%)!important}
+img{filter:url(#duo)!important}#grain{opacity:.16!important;mix-blend-mode:screen}</style>
+<svg width="0" height="0" style="position:absolute"><filter id="duo" color-interpolation-filters="sRGB"><feColorMatrix type="matrix" values=".33 .33 .33 0 0 .33 .33 .33 0 0 .33 .33 .33 0 0 0 0 0 1 0"/><feComponentTransfer><feFuncR type="table" tableValues="0.008 0.18 0.416 0.957"/><feFuncG type="table" tableValues="0.02 0.235 0.659 0.969"/><feFuncB type="table" tableValues="0.059 0.667 1 0.984"/></feComponentTransfer></filter></svg></head><body><div id="st">
+<div id="world">
+  <!-- A · la pizarra de Estambul: diez imanes y un hueco; la copa y 2005 -->
+  <svg class="o" id="BA" width="760" height="540" viewBox="0 0 760 540" style="overflow:visible">
+    <rect x="0" y="0" width="760" height="540" rx="12" fill="#0C1323" stroke="#8f9bb8" stroke-width="12"/>
+    <g fill="none" stroke="#F4F7FB" stroke-width="4"><rect x="40" y="36" width="680" height="468"/><path d="M40 270 H720"/><circle cx="380" cy="270" r="62"/><rect x="250" y="36" width="260" height="76"/><rect x="250" y="428" width="260" height="76"/></g>
+    <g id="mags"></g>
+    <circle id="hole" cx="630" cy="200" r="34" fill="none" stroke="#6AA8FF" stroke-width="5" stroke-dasharray="11 9"/>
+  </svg>
+  <svg class="o" id="CUP" width="240" height="300" viewBox="0 0 240 300">
+    <path d="M70 30 H170 C170 120 150 160 120 170 C90 160 70 120 70 30Z" fill="#0C1323" stroke="#F4F7FB" stroke-width="6" stroke-linejoin="round"/>
+    <path d="M70 50 C10 40 10 130 82 128 M170 50 C230 40 230 130 158 128" fill="none" stroke="#F4F7FB" stroke-width="6" stroke-linecap="round"/>
+    <path d="M120 170 V220 M80 250 H160 L150 220 H90 Z" fill="#0C1323" stroke="#F4F7FB" stroke-width="6" stroke-linejoin="round"/></svg>
+  <div class="o num" id="Y5" style="width:300px;height:110px;font-size:100px;text-align:center;color:#8f9bb8">2005</div>
+  <!-- M · el marcador del descanso -->
+  <div class="o paper" id="MK" style="width:1000px;height:320px">
+    <div class="lab" style="left:0;right:0;top:40px;text-align:center;font-size:24px;color:#8f9bb8">DESCANSO</div>
+    <div class="lab" style="left:50px;top:154px;font-size:34px">MILAN</div>
+    <div class="num" style="left:0;right:0;top:110px;text-align:center;font-size:150px">3 – 0</div>
+    <div class="lab" style="right:44px;top:154px;font-size:34px">LIVERPOOL</div>
+    <svg width="1000" height="320" style="position:absolute;left:0;top:0;overflow:visible"><path id="strike" d="M350 196 C 450 180 550 186 660 168" fill="none" stroke="#6AA8FF" stroke-width="12" stroke-linecap="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/></svg></div>
+  <!-- E · Estambul: la foto del estadio y el reloj 15:00 -->
+  <div class="o frame" id="EF" style="width:760px;height:508px"><img src="/banco/fotos/estambul_grada.jpg" style="object-position:50% 0%"></div>
+  <div class="o paper" id="CK" style="width:340px;height:200px"><div class="num" style="left:0;right:0;top:50px;text-align:center;font-size:110px">15:00</div></div>
+  <!-- K · tu pizarra de base, en frío -->
+  <svg class="o" id="BK" width="720" height="520" viewBox="0 0 720 520" style="overflow:visible">
+    <rect x="0" y="0" width="720" height="520" rx="12" fill="#0C1323" stroke="#8f9bb8" stroke-width="12"/>
+    <g id="kw" fill="none" stroke="#8f9bb8" stroke-width="7" stroke-linecap="round" stroke-dasharray="26 7 14 9">
+      <path d="M80 110 L70 170 H112 M100 100 V196"/><path d="M140 150 H170"/><path d="M220 110 L210 170 H252 M240 100 V196"/><path d="M280 150 H310"/><path d="M340 120 C 360 96 400 110 380 140 L 336 190 H 392"/>
+      <path d="M470 120 C 460 96 500 92 498 120 C 496 138 480 140 480 160 M480 186 V190"/>
+      <path d="M86 300 C 120 286 170 320 220 296 C 260 280 300 330 350 300"/><path d="M420 290 C 450 320 480 270 520 300"/><path d="M110 400 L 330 420"/><path d="M400 390 C 440 380 470 430 560 404"/>
+    </g>
+    <rect id="wipe" x="14" y="14" width="0" height="492" fill="#0C1323"/>
+  </svg>
+  <!-- CH · la silla vacía -->
+  <svg class="o" id="CH" width="520" height="560" viewBox="0 0 520 560" style="overflow:visible">
+    <path d="M10 120 C 120 30 400 30 510 120" fill="none" stroke="#8f9bb8" stroke-width="6"/><path d="M10 120 V520 M510 120 V520" stroke="#8f9bb8" stroke-width="6"/>
+    <g fill="none" stroke="#F4F7FB" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M190 200 V380 M330 200 V380 M190 220 H330 M190 270 H330"/><path d="M170 380 H350 L340 400 H180 Z"/><path d="M190 400 L 170 520 M330 400 L 350 520 M210 400 L 300 520"/></g></svg>
+  <!-- Q · rotulador, la mano del segundo, doce botellas -->
+  <svg class="o" id="QM" width="420" height="160" viewBox="0 0 420 160" style="overflow:visible">
+    <g transform="rotate(-12 210 80)"><rect x="40" y="56" width="260" height="56" rx="12" fill="#0C1323" stroke="#F4F7FB" stroke-width="6"/><path d="M300 64 L350 74 V94 L300 104 Z" fill="#0C1323" stroke="#F4F7FB" stroke-width="6" stroke-linejoin="round"/><rect x="40" y="56" width="70" height="56" rx="12" fill="#8f9bb8"/></g>
+    <path id="dry" d="M40 150 C 120 136 200 160 280 140 C 330 128 370 150 410 140" fill="none" stroke="#8f9bb8" stroke-width="9" stroke-linecap="round" stroke-dasharray="18 14 6 16" opacity="0"/></svg>
+  <svg class="o" id="QH" width="300" height="360" viewBox="0 0 300 360" style="overflow:visible">
+    <path d="M110 340 V170 C110 150 140 150 140 170 V60 C140 40 170 40 170 60 V150 M170 70 C170 50 200 50 200 70 V160 M200 90 C200 70 230 70 230 90 V200 C230 280 190 340 150 340 Z M110 210 C 80 170 50 190 70 220 L 110 280" fill="#0C1323" stroke="#F4F7FB" stroke-width="7" stroke-linejoin="round" stroke-linecap="round"/>
+    <text id="qq" x="250" y="60" font-family="S" font-style="italic" font-size="120" fill="#8f9bb8" opacity="0">?</text></svg>
+  <svg class="o" id="QB" width="840" height="220" viewBox="0 0 840 220"><g id="bots"></g></svg>
+  <!-- N · la libreta del viernes y la pizarra completa -->
+  <div class="o paper" id="NB" style="width:720px;height:900px">
+    <svg width="720" height="900" style="position:absolute;left:0;top:0;overflow:visible"><g stroke="#F4F7FB" stroke-width="3"><path d="M50 300 H670 M50 440 H670 M50 580 H670 M50 720 H670"/></g>
+      <path id="nbu" d="M70 236 C 200 228 330 232 460 222" fill="none" stroke="#6AA8FF" stroke-width="12" stroke-linecap="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/></svg>
+    <div class="hand" id="pb" style="left:70px;top:90px;font-size:150px;color:#F4F7FB;clip-path:inset(0 100% 0 0)">Plan B</div>
+    <div class="lab" id="vi" style="right:50px;top:60px;font-size:26px;color:#8f9bb8;opacity:0">VIERNES</div>
+    <div class="hand" id="nl1" style="left:60px;top:338px;font-size:66px;color:#F4F7FB;clip-path:inset(0 100% 0 0)">Si perdemos → 3 atrás</div>
+    <div class="hand" id="nl2" style="left:60px;top:478px;font-size:66px;color:#F4F7FB;clip-path:inset(0 100% 0 0)">sale ____ · entra ____</div>
+  </div>
+  <svg class="o" id="PC" width="40" height="300" viewBox="0 0 40 300" style="overflow:visible">
+    <g><path d="M20 300 L6 252 L34 252 Z" fill="#B9E0FF" stroke="#F4F7FB" stroke-width="3" stroke-linejoin="round"/><path d="M20 300 L15 284 L25 284 Z" fill="#F4F7FB"/>
+      <rect x="6" y="40" width="28" height="212" fill="#B9E0FF" stroke="#F4F7FB" stroke-width="3"/><rect x="6" y="10" width="28" height="32" rx="4" fill="#B9E0FF" stroke="#F4F7FB" stroke-width="3"/></g></svg>
+  <svg class="o" id="BN" width="560" height="400" viewBox="0 0 760 540" style="overflow:visible">
+    <rect x="0" y="0" width="760" height="540" rx="12" fill="#0C1323" stroke="#8f9bb8" stroke-width="12"/>
+    <g fill="none" stroke="#F4F7FB" stroke-width="4"><rect x="40" y="36" width="680" height="468"/><path d="M40 270 H720"/><circle cx="380" cy="270" r="62"/></g>
+    <g id="mags2"></g><circle id="m11" cx="630" cy="200" r="30" fill="#6AA8FF"/></svg>
+  <!-- marca -->
+  <div class="o" id="B" style="width:900px;height:500px;text-align:center">
+    <div class="num" style="position:static;font-size:170px;margin-top:120px">Pro<span style="color:#6AA8FF">Team</span></div>
+    <div style="margin-top:30px;font-family:M;font-weight:500;font-size:38px;color:#8f9bb8">la app del entrenador · enlace en la bio</div>
+  </div>
+</div>
+<div id="gr" style="background:#8f9bb8"></div><div id="gr2" style="background:#0C1323"></div>
+<div id="title">La pizarra<br><em>que se olvidó de uno</em></div>
+<div id="cap"></div>
+<div id="ink"></div><div id="wh"></div>
+</div>
+<script src="/tools/reel_v4/T01-2-r1/times.js"></script>
+<script>
+const $=id=>document.getElementById(id), W=window.WORDS, NS='http://www.w3.org/2000/svg';
+const at=(w,n=1)=>{let c=0;for(const x of W)if(x[0]===w&&++c===n)return x[1];throw 'no '+w+n};
+const cl=(x,a=0,b=1)=>Math.min(b,Math.max(a,x)), r=(t,a,b)=>cl((t-a)/(b-a));
+const io=x=>x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2, eo=x=>1-Math.pow(1-x,3), lerp=(a,b,k)=>a+(b-a)*k;
+const T={en:at('en'),final:at('final'),champions:at('champions'),y:at('y'),tres:at('tres'),cero:at('cero'),estambul:at('estambul'),quince:at('quince'),benitez:at('benitez'),
+ tres2:at('tres',2),hamann:at('hamann'),finnan:at('finnan'),once:at('once'),hueco:at('hueco'),asi2:at('asi',2),y3:at('y',3),tienes2:at('tienes',2),pinta:at('pinta'),
+ segundo:at('segundo'),quitas:at('quitas'),doce:at('doce'),mirandote:at('mirandote'),lo:at('lo'),olvida:at('olvida'),plan:at('plan'),viernes:at('viernes'),una2:at('una',2),
+ si:at('si'),cambio:at('cambio'),sale:at('sale'),entra:at('entra'),en3:at('en',3),eliges:at('eliges'),apunt:at('apuntalo'),porque:at('porque'),no_:at('no',5),END:window.VEND+.25};
+// zonas del mundo
+const A=[0,0],MZ=[1500,0],E=[3000,0],K=[4500,0],CHZ=[6000,0],Q=[7500,0],N=[9000,0],BP=[10500,0];
+const CUT=T.asi2-.15, CUT2=T.plan-.22;
+// cámara: planos FIJOS; solo se mueve al cambiar de zona (0,6 s, entrada y salida suaves)
+const HOLE=[A[0]-130-380+630,A[1]-270+200];
+const FIRST=[0,HOLE[0],HOLE[1]+40,2.3];
+const SH=[ // [inicio del movimiento, cx, cy, zoom, duración]
+ FIRST,
+ [T.en-.12,A[0]-20,A[1]+40,1.0,.75],
+ [T.y-.25,MZ[0],MZ[1],1.05,.7],
+ [T.tres-.35,MZ[0],MZ[1]+20,1.75],
+ [T.estambul-.35,E[0],E[1]-90,1.2,.7],
+ [T.quince-.3,E[0]+230,E[1]+400,1.7],
+ [T.benitez-.35,A[0]-130,A[1]+30,1.25,.75],
+ [T.once-.3,HOLE[0]-40,HOLE[1]+40,1.9],
+ [CUT,K[0],K[1]-10,1.2],
+ [T.y3-.3,CHZ[0],CHZ[1]+20,1.3,.7],
+ [T.tienes2-.3,Q[0]-260,Q[1]-280,1.9,.7],
+ [T.segundo-.35,Q[0]+270,Q[1]-280,1.9],
+ [T.doce-.35,Q[0],Q[1]+730,1.25],
+ [T.lo-.35,K[0],K[1]-10,1.2,.75],
+ [CUT2,N[0]-200,N[1]-300,1.5],
+ [T.una2-.3,N[0]-200,N[1]-40,1.15],
+ [T.en3-.35,N[0]+130,N[1]+20,.78,.7],
+ [T.apunt-.35,BP[0],BP[1],1.0],
+ [T.porque+.05,...FIRST.slice(1),.95]];
+const CUTS=new Set([CUT,CUT2]);
+function cam(t){let i=0;while(i+1<SH.length&&SH[i+1][0]<=t)i++;const s=SH[i];
+ if(i===0||CUTS.has(s[0]))return [s[1],s[2],s[3],0];
+ const p=SH[i-1],Dd=s[4]||.62,k=r(t,s[0],s[0]+Dd),e=io(k);
+ const lz=lerp(Math.log(p[3]),Math.log(s[3]),e)-.12*Math.sin(Math.PI*k)*(Math.hypot(s[1]-p[1],s[2]-p[2])>600?1:0);
+ return [lerp(p[1],s[1],e),lerp(p[2],s[2],e),Math.exp(lz),k>0&&k<1?Math.sin(Math.PI*k):0]}
+const sz=el=>[el.offsetWidth||+el.getAttribute('width'),el.offsetHeight||+el.getAttribute('height')];
+function place(el,x,y,rot=0,sc=1){const [w,h]=sz(el);el.style.transform=`translate(${x-w/2}px,${y-h/2}px) rotate(${rot}deg) scale(${sc})`}
+const drawK=(el,k)=>{el.setAttribute('stroke-dashoffset',100-100*k);el.style.visibility=k>0?'visible':'hidden'};
+const draw=(el,a,b,f=io)=>drawK(el,f(r(window._t,a,b)));
+const mk=(tag,a,par)=>{const e=document.createElementNS(NS,tag);for(const k in a)e.setAttribute(k,a[k]);par.appendChild(e);return e};
+// imanes de la pizarra de Estambul: [x0,y0, x1,y1 (tres atrás), etiqueta]
+const MG=[[380,480],[130,400,200,400],[290,400,380,410],[470,400,560,400],[630,400,630,400,'FINNAN'],[130,200],[290,200],[470,200],[300,100],[460,100]];
+const MGE=MG.map(m=>{const g=mk('g',{},$('mags'));mk('circle',{cx:0,cy:0,r:30,fill:'#F4F7FB'},g);
+ if(m[4]){const tx=mk('text',{x:0,y:58,'text-anchor':'middle','font-family':'M','font-weight':800,'font-size':20,'letter-spacing':2,fill:'#8f9bb8',class:'tag'},g);tx.textContent=m[4]}return g});
+const HM=mk('g',{},$('mags'));mk('circle',{cx:0,cy:0,r:30,fill:'#F4F7FB'},HM);{const tx=mk('text',{x:0,y:58,'text-anchor':'middle','font-family':'M','font-weight':800,'font-size':20,'letter-spacing':2,fill:'#8f9bb8'},HM);tx.textContent='HAMANN'}
+// pizarra completa de la solución: diez imanes en su sitio (el undécimo, azul, entra al elegir)
+[[380,480],[200,400],[380,410],[560,400],[130,200],[290,200],[470,200],[380,300],[300,100],[460,100]].forEach(([x,y])=>mk('circle',{cx:x,cy:y,r:30,fill:'#F4F7FB'},$('mags2')));
+// doce botellas
+const BT=[];for(let i=0;i<12;i++){const g=mk('g',{transform:`translate(${30+i*68} 20)`},$('bots'));
+ mk('path',{d:'M18 0 H34 V26 C 50 34 52 50 52 64 V178 C 52 190 46 196 36 196 H16 C 6 196 0 190 0 178 V64 C 0 50 2 34 18 26 Z',fill:'#0C1323',stroke:'#8f9bb8','stroke-width':4,'stroke-linejoin':'round'},g);
+ mk('rect',{x:4,y:92,width:44,height:36,fill:'#0C1323'},g);BT.push(g)}
+const CAPS=[[.2,T.en-.12,'<em>Faltaba un jugador.</em>'],[T.en,T.y-.12,'En una final de <em>Champions.</em>'],
+ [T.y,T.estambul-.15,'Y aun así, <em>remontaron un 3 – 0.</em>'],[T.estambul,T.benitez-.15,'Estambul: <em>quince minutos.</em>'],
+ [T.benitez,T.hamann-.2,'Benítez: <em>tres atrás.</em>'],[T.hamann,T.once-.15,'Hamann <em>por Finnan.</em>'],[T.once,CUT-.4,'Y en la pizarra, <em>un hueco.</em>'],
+ [T.asi2,T.y3-.12,'Así de fácil <em>se escribe mal.</em>'],[T.y3,T.tienes2-.15,'Y tú <em>no tienes analistas.</em>'],
+ [T.tienes2,T.segundo-.2,'Un rotulador <em>que no pinta.</em>'],[T.segundo,T.doce-.15,'Tu segundo: <em>¿a quién quitas?</em>'],
+ [T.doce,T.lo-.15,'Doce chavales <em>mirándote.</em>'],[T.lo,CUT2-.4,'Lo que no escribes, <em>se olvida.</em>'],
+ [T.plan,T.una2-.15,'<span class=b>Plan B.</span> <em>El viernes.</em>'],[T.una2,T.en3-.15,'Una línea: <em>quién sale, quién entra.</em>'],
+ [T.en3,T.apunt-.15,'En el descanso, <em>solo eliges.</em>'],[T.apunt,T.porque-.15,'Apúntalo en la app.'],
+ [T.porque+.05,T.END-.45,'En la pizarra, <em>no puede faltar nadie.</em>']];
+window.frame=function(t){window._t=t;
+  const [cx,cy,z,mv]=cam(t);
+  const wd=$('world');wd.style.transform=`translate(540px,760px) scale(${z}) translate(${-cx}px,${-cy}px)`;
+  wd.style.filter=mv>.35?`blur(${(2.6*(mv-.35)/.65).toFixed(2)}px)`:'none';
+  // A · pizarra de Estambul (vuelve a su estado inicial cuando la cámara está en la marca)
+  place($('BA'),A[0]-130,A[1]);place($('CUP'),A[0]+390,A[1]-70);place($('Y5'),A[0]+390,A[1]+150);
+  const live=t<T.apunt;
+  const cupOut=1-r(t,T.benitez-.45,T.benitez-.15);$('CUP').style.opacity=live?r(t,T.champions-.3,T.champions)*cupOut:0;$('Y5').style.opacity=live?r(t,T.champions-.1,T.champions+.2)*cupOut:0;
+  const k3=live?io(r(t,T.tres2-.15,T.tres2+.45)):0, kh=live?io(r(t,T.hamann-.25,T.hamann+.35)):0, kf=live?io(r(t,T.finnan-.2,T.finnan+.45)):0;
+  MG.forEach((m,i)=>{let x=m[0],y=m[1];if(m.length>2){x=lerp(m[0],m[2],k3);y=lerp(m[1],m[3],k3)}if(m[4]==='FINNAN'){x=lerp(x,840,kf);y=lerp(y,450,kf)}
+   MGE[i].setAttribute('transform',`translate(${x} ${y})`);if(m[4]==='FINNAN')MGE[i].setAttribute('opacity',1-r(kf,.55,1))});
+  const tg=live?r(t,T.benitez,T.benitez+.3):0;MGE[4].querySelector('text').setAttribute('opacity',tg);
+  HM.setAttribute('transform',`translate(${lerp(860,380,kh)} ${lerp(330,300,kh)})`);HM.setAttribute('opacity',r(kh,0,.35));
+  const red=live?r(t,T.hueco-.5,T.hueco-.2):0;
+  $('hole').setAttribute('stroke',red>.5?'#d23a2a':'#2f6bff');$('hole').setAttribute('fill',`rgba(210,58,42,${(.16*red).toFixed(3)})`);$('hole').setAttribute('stroke-dasharray',red>0?'none':'11 9');
+  // M · marcador: el lápiz azul tacha el 3-0
+  place($('MK'),MZ[0],MZ[1]);draw($('strike'),T.cero+.05,T.cero+.5);
+  // E · la foto (cálida) y el reloj
+  place($('EF'),E[0],E[1]-90,-1.5);place($('CK'),E[0]+230,E[1]+400,2);$('CK').style.opacity=r(t,T.quince-.3,T.quince);
+  // K · tu pizarra, en frío; al «olvida» se borra de un trazo
+  place($('BK'),K[0],K[1]-10);$('wipe').setAttribute('width',(692*io(r(t,T.olvida-.15,T.olvida+.55))).toFixed(1));
+  if(t>T.plan)$('wipe').setAttribute('width',0);
+  // CH · la silla
+  place($('CH'),CHZ[0],CHZ[1]+20);
+  // Q · rotulador, mano, botellas
+  place($('QM'),Q[0]-260,Q[1]-280);place($('QH'),Q[0]+270,Q[1]-280);place($('QB'),Q[0],Q[1]+480);
+  $('dry').setAttribute('opacity',r(t,T.pinta-.2,T.pinta+.15));$('qq').setAttribute('opacity',r(t,T.quitas-.2,T.quitas+.1));
+  BT.forEach((g,i)=>g.setAttribute('opacity',(t<T.doce-.6?1:r(t,T.doce-.35+i*.035,T.doce-.2+i*.035))));
+  // N · libreta del viernes
+  place($('NB'),N[0]-200,N[1]+60,-1);place($('BN'),N[0]+460,N[1]+40,3);
+  $('pb').style.clipPath=`inset(0 ${(100-100*r(t,T.plan-.05,T.plan+.55)).toFixed(1)}% 0 0)`;draw($('nbu'),T.plan+.45,T.plan+.85);
+  $('vi').style.opacity=r(t,T.viernes-.15,T.viernes+.15);
+  const lines=[[T.si-.05,T.cambio+.3],[T.sale-.1,T.entra+.45]];let tip=null;
+  lines.forEach(([a,b],i)=>{const k=r(t,a,b);$('nl'+(i+1)).style.clipPath=`inset(0 ${(100-100*k).toFixed(1)}% 0 0)`;if(k>0&&k<1)tip=[60+600*k,338+i*140+60]});
+  if(!tip)tip=t<T.si?[60,398]:t<T.sale?[660,398]:[660,538];
+  const pk=r(t,T.una2-.2,T.una2+.1)*(1-r(t,T.entra+.5,T.entra+.8));$('PC').style.opacity=pk;
+  place($('PC'),N[0]-200-360+tip[0]+6,N[1]+60-450+tip[1]-150,18);
+  $('m11').setAttribute('opacity',r(t,T.eliges-.2,T.eliges+.1));$('m11').setAttribute('transform',`translate(0 ${(-60*(1-eo(r(t,T.eliges-.2,T.eliges+.3)))).toFixed(1)})`);
+  place($('B'),BP[0],BP[1]);
+  // color por escena: 2005 en sepia suave, tu descanso en frío, solución en blanco; principio y final, neutros
+  $('gr').style.opacity=.40*r(t,T.en-.1,T.en+.6)*(t<CUT?1:0);
+  $('gr2').style.opacity=.55*(t>=CUT&&t<CUT2?1:0);
+  // rótulo
+  let html='',a=0;for(const [s,e,h] of CAPS)if(t>=s-.2&&t<e+.25){html=h;a=Math.min(r(t,s-.2,s+.15),1-r(t,e-.05,e+.25))}
+  const cp=$('cap');if(cp.dataset.h!==html){cp.innerHTML=html;cp.dataset.h=html}
+  cp.style.opacity=a;cp.style.transform=`translateY(${(1-a)*12}px)`;
+  // giros: fundido a negro (al presente) y fundido a blanco (a la solución)
+  $('ink').style.opacity=r(t,CUT-.3,CUT-.03)*(1-r(t,CUT+.03,CUT+.4));
+  $('wh').style.opacity=r(t,CUT2-.35,CUT2-.03)*(1-r(t,CUT2+.03,CUT2+.4));
+};
+window.cover=function(t){frame(t);const wd=$('world');wd.style.transform='translate(0px,330px) '+wd.style.transform;$('title').style.display='block';$('cap').style.opacity=0};
+Promise.all([...document.images].map(i=>i.decode().catch(()=>{}))).then(()=>document.fonts.ready).then(()=>{frame(0);window.ready=true});
+</script></body></html>

@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8">
+<!-- T01-4-r3 «Gol, palo, árbitro» (fútbol). Plantilla a3.html: planos fijos, la cámara solo se mueve al cambiar de zona. Todo dibujado (sin fotos ni caras). Dato: Laird y Waters (2008), IJPAS 8(1), 76-84 (8 entrenadores titulados, podían tomar notas, 59,2 % de recuerdo correcto). -->
+<style>
+@font-face{font-family:M;font-weight:800;src:url(/tools/reel_v5/node_modules/@fontsource/plus-jakarta-sans/files/plus-jakarta-sans-latin-800-normal.woff2)}
+@font-face{font-family:M;font-weight:700;src:url(/tools/reel_v5/node_modules/@fontsource/plus-jakarta-sans/files/plus-jakarta-sans-latin-700-normal.woff2)}
+@font-face{font-family:M;font-weight:500;src:url(/tools/reel_v5/node_modules/@fontsource/plus-jakarta-sans/files/plus-jakarta-sans-latin-500-normal.woff2)}
+@font-face{font-family:S;font-style:italic;font-weight:400;src:url(/tools/fonts/instrument-serif-latin-400-italic.woff2)}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#02050F}
+#st{position:absolute;inset:0;overflow:hidden;background:#02050F}
+#world{position:absolute;left:0;top:0;transform-origin:0 0;will-change:transform}
+.o{position:absolute;left:0;top:0;transform-origin:50% 50%}
+.paper{background:#0C1323;box-shadow:0 18px 50px rgba(20,18,12,.10)}
+.board{background:#0C1323;border:10px solid #8f9bb8;border-radius:10px;box-shadow:0 18px 50px rgba(20,18,12,.10)}
+.num{position:absolute;font-family:M;font-weight:800;letter-spacing:-.05em;color:#F4F7FB;white-space:nowrap;line-height:1}
+.big{font-family:S;font-style:italic;line-height:1;text-align:center;white-space:nowrap}
+.hand{position:absolute;font-family:S;font-style:italic;white-space:nowrap;line-height:1}
+.lab{position:absolute;font-family:M;font-weight:800;letter-spacing:.14em;color:#F4F7FB;white-space:nowrap}
+#cap{position:absolute;left:90px;right:90px;top:1330px;text-align:center;font-family:M;font-weight:800;font-size:58px;line-height:1.12;letter-spacing:-.03em;color:#F4F7FB;padding:18px 26px;border-radius:22px;background:rgba(12,19,35,.94)}
+#cap em{font-family:S;font-style:italic;font-weight:400;font-size:1.14em;letter-spacing:0}
+#cap .b{color:#6AA8FF}#cap .r{color:#B9E0FF}
+#hook{position:absolute;left:0;right:0;top:130px;text-align:center;font-family:M;font-weight:800;font-size:92px;letter-spacing:-.05em;color:#F4F7FB}
+#gr{position:absolute;inset:0;pointer-events:none;mix-blend-mode:multiply;opacity:0}
+#ink{position:absolute;inset:0;background:#000;opacity:0;pointer-events:none}
+</style><style>html,body,#st{background:#02050F!important}#st{background:radial-gradient(ellipse at 50% 40%,#0C1323 0%,#02050F 72%)!important}
+img{filter:url(#duo)!important}#grain{opacity:.16!important;mix-blend-mode:screen}</style>
+<svg width="0" height="0" style="position:absolute"><filter id="duo" color-interpolation-filters="sRGB"><feColorMatrix type="matrix" values=".33 .33 .33 0 0 .33 .33 .33 0 0 .33 .33 .33 0 0 0 0 0 1 0"/><feComponentTransfer><feFuncR type="table" tableValues="0.008 0.18 0.416 0.957"/><feFuncG type="table" tableValues="0.02 0.235 0.659 0.969"/><feFuncB type="table" tableValues="0.059 0.667 1 0.984"/></feComponentTransfer></filter></svg></head><body><div id="st">
+<div id="world">
+  <!-- 1 · el banquillo y la libreta (L) -->
+  <div class="o" id="BQ" style="width:1900px;height:760px;background:#0C1323;border-radius:18px;box-shadow:0 18px 50px rgba(20,18,12,.10)">
+    <div style="position:absolute;left:0;right:0;top:250px;height:6px;background:#0C1323"></div><div style="position:absolute;left:0;right:0;top:505px;height:6px;background:#0C1323"></div>
+    <div class="lab" style="left:60px;top:680px;font-size:26px;color:#8f9bb8">BANQUILLO</div></div>
+  <div class="o paper" id="NB" style="width:700px;height:900px;background:#0C1323">
+    <svg width="700" height="900" viewBox="0 0 700 900" style="position:absolute;left:0;top:0">
+      <defs><filter id="wb" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="14"/></filter></defs>
+      <g stroke="#F4F7FB" stroke-width="3"><path d="M40 150 H660 M40 230 H660 M40 310 H660 M40 390 H660 M40 470 H660 M40 550 H660 M40 630 H660 M40 710 H660 M40 790 H660"/></g>
+      <path d="M110 60 V860" stroke="#8f9bb8" stroke-width="3"/>
+      <g fill="#8f9bb8">
+        <circle cx="120" cy="24" r="10"/><circle cx="200" cy="24" r="10"/><circle cx="280" cy="24" r="10"/><circle cx="360" cy="24" r="10"/><circle cx="440" cy="24" r="10"/><circle cx="520" cy="24" r="10"/><circle cx="600" cy="24" r="10"/></g>
+      <g fill="#8f9bb8" opacity=".22" filter="url(#wb)"><path d="M470 140 C 560 110 640 170 620 240 C 600 300 520 290 480 260 C 430 230 420 160 470 140 Z"/><path d="M120 600 C 200 560 300 610 290 690 C 280 760 160 770 120 720 C 90 680 80 620 120 600 Z"/><ellipse cx="470" cy="770" rx="60" ry="40"/></g>
+      <g font-family="S" font-style="italic" fill="#8f9bb8" opacity=".92">
+        <text x="150" y="220" font-size="118" transform="rotate(-4 150 220)">Gol.</text>
+        <text x="200" y="345" font-size="118" transform="rotate(3 200 345)">Palo.</text>
+        <text x="140" y="470" font-size="118" transform="rotate(-2 140 470)">Árbitro.</text></g>
+    </svg></div>
+  <svg class="o" id="CK" width="320" height="200" viewBox="0 0 320 200" style="overflow:visible">
+    <rect x="10" y="30" width="300" height="160" rx="26" fill="#0C1323" stroke="#F4F7FB" stroke-width="6"/><rect x="130" y="4" width="60" height="26" rx="6" fill="#F4F7FB"/>
+    <text x="160" y="138" font-family="M" font-weight="800" font-size="92" text-anchor="middle" fill="#F4F7FB" letter-spacing="-3" id="ckT">15:00</text>
+    <text x="160" y="232" font-family="M" font-weight="800" font-size="24" text-anchor="middle" fill="#8f9bb8" letter-spacing="4">DESCANSO</text></svg>
+  <svg class="o" id="PB" width="60" height="420" viewBox="0 0 60 420" style="overflow:visible">
+    <rect x="12" y="40" width="36" height="360" fill="#B9E0FF" stroke="#F4F7FB" stroke-width="3"/><rect x="12" y="8" width="36" height="34" rx="5" fill="#B9E0FF" stroke="#F4F7FB" stroke-width="3"/>
+    <path d="M12 400 L18 412 L42 412 L48 400 Z" fill="#B9E0FF" stroke="#F4F7FB" stroke-width="3" stroke-linejoin="round"/><rect x="24" y="410" width="12" height="5" fill="#8f9bb8"/></svg>
+  <!-- 2 · el estudio (E) -->
+  <div class="o" id="CO" style="width:860px;height:150px"></div>
+  <div class="o paper" id="FI" style="width:760px;height:260px;background:#0C1323;border:2px solid #F4F7FB">
+    <div class="lab" style="left:44px;top:36px;font-size:24px;color:#8f9bb8">ESTUDIO · 2008</div>
+    <div class="hand" style="left:44px;top:82px;font-size:92px;color:#F4F7FB">Laird y Waters</div>
+    <div class="lab" style="left:44px;top:196px;font-size:22px;color:#8f9bb8">IJPAS · 8 ENTRENADORES TITULADOS</div></div>
+  <div class="o big" id="n59" style="width:520px;height:300px;font-size:280px;color:#6AA8FF">59 %</div>
+  <svg class="o" id="U59" width="460" height="40" viewBox="0 0 460 40" style="overflow:visible"><path id="u59" d="M10 24 C 120 14 300 30 450 16" fill="none" stroke="#6AA8FF" stroke-width="9" stroke-linecap="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/></svg>
+  <div class="o paper" id="NS" style="width:300px;height:380px;background:#0C1323">
+    <svg width="300" height="380" viewBox="0 0 300 380" style="position:absolute;left:0;top:0">
+      <g stroke="#F4F7FB" stroke-width="3"><path d="M24 90 H276 M24 140 H276 M24 190 H276 M24 240 H276 M24 290 H276 M24 340 H276"/></g>
+      <g fill="#8f9bb8"><circle cx="60" cy="18" r="7"/><circle cx="120" cy="18" r="7"/><circle cx="180" cy="18" r="7"/><circle cx="240" cy="18" r="7"/></g>
+      <path id="nsw" d="M40 125 C 60 105 80 130 100 112 S 140 128 160 110 M40 175 C 70 160 90 180 120 165" fill="none" stroke="#8f9bb8" stroke-width="5" stroke-linecap="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/></svg></div>
+  <div class="o" id="DT" style="width:900px;height:380px"></div>
+  <!-- 3 · lo que sorprende y lo que se repite (G) -->
+  <svg class="o" id="GF" width="760" height="1000" viewBox="0 0 760 1000" style="overflow:visible">
+    <rect x="0" y="0" width="760" height="1000" fill="#0C1323"/>
+    <g fill="none" stroke="#F4F7FB" stroke-width="4" opacity=".6"><rect x="0" y="0" width="760" height="1000"/><path d="M0 500 H760"/><circle cx="380" cy="500" r="90"/>
+      <rect x="170" y="840" width="420" height="160"/><rect x="280" y="950" width="200" height="50"/></g>
+    <g id="gfA" fill="none" stroke="#B9E0FF" stroke-width="7" stroke-linecap="round"></g></svg>
+  <div class="o big" id="GOL" style="width:600px;height:360px;font-size:360px;color:#F4F7FB">Gol</div>
+  <!-- 4 · la pizarra del vestuario (V) y el marcador -->
+  <div class="o board" id="PZ" style="width:900px;height:1100px">
+    <svg width="880" height="1080" viewBox="0 0 880 1080" style="position:absolute;left:0;top:0;overflow:visible">
+      <rect id="pzR" x="40" y="60" width="180" height="960" fill="#B9E0FF" opacity="0"/>
+      <g fill="none" stroke="#8f9bb8" stroke-width="5"><rect x="40" y="60" width="800" height="960"/><path d="M40 540 H840"/><circle cx="440" cy="540" r="100"/>
+        <rect x="230" y="860" width="420" height="160"/><rect x="230" y="60" width="420" height="160"/></g>
+      <g id="pzA" fill="none" stroke="#B9E0FF" stroke-width="7" stroke-linecap="round"></g>
+      <g id="pzW" opacity="0"><text x="800" y="150" font-family="S" font-style="italic" font-size="78" fill="#8f9bb8" text-anchor="end">árbitro</text>
+        <path id="pzU" d="M560 170 C 640 160 720 178 800 165" fill="none" stroke="#8f9bb8" stroke-width="5" stroke-linecap="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/></g>
+      <text x="840" y="1060" font-family="S" font-style="italic" font-size="56" fill="#8f9bb8" text-anchor="end">vestuario</text>
+    </svg></div>
+  <div class="o" id="MC" style="width:640px;height:240px;background:#000;border-radius:22px;box-shadow:0 18px 50px rgba(20,18,12,.16)">
+    <div class="lab" style="left:0;right:0;top:30px;text-align:center;font-size:26px;color:#8f9bb8">2.ª PARTE</div>
+    <div class="num" id="mcT" style="left:0;right:0;top:80px;text-align:center;font-size:130px;color:#F4F7FB">45:00</div></div>
+  <!-- 5 · la hoja preparada (S) -->
+  <div class="o paper" id="HJ" style="width:760px;height:1000px;background:#0C1323">
+    <svg width="760" height="1000" viewBox="0 0 760 1000" style="position:absolute;left:0;top:0;overflow:visible">
+      <text x="50" y="80" font-family="M" font-weight="800" font-size="26" letter-spacing="4" fill="#8f9bb8">1.ª PARTE</text>
+      <g id="phr" opacity="0"><text x="50" y="140" font-family="S" font-style="italic" font-size="44" fill="#8f9bb8">el 7 no baja a def…</text>
+        <path id="phx" d="M44 126 L380 126" stroke="#8f9bb8" stroke-width="5" stroke-linecap="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/></g>
+      <g id="bxs"></g>
+      <g id="tal" fill="none" stroke="#F4F7FB" stroke-width="7" stroke-linecap="round"></g>
+    </svg></div>
+  <svg class="o" id="PC" width="40" height="300" viewBox="0 0 40 300" style="overflow:visible">
+    <path d="M20 300 L6 252 L34 252 Z" fill="#B9E0FF" stroke="#F4F7FB" stroke-width="3" stroke-linejoin="round"/><path d="M20 300 L15 284 L25 284 Z" fill="#F4F7FB"/>
+    <rect x="6" y="40" width="28" height="212" fill="#B9E0FF" stroke="#F4F7FB" stroke-width="3"/><rect x="6" y="10" width="28" height="32" rx="4" fill="#B9E0FF" stroke="#F4F7FB" stroke-width="3"/></svg>
+  <!-- marca -->
+  <div class="o" id="B" style="width:900px;height:500px;text-align:center">
+    <div class="num" style="position:static;font-size:170px;margin-top:120px">Pro<span style="color:#6AA8FF">Team</span></div>
+    <div style="margin-top:30px;font-family:M;font-weight:500;font-size:38px;color:#8f9bb8">la app del entrenador · enlace en la bio</div></div>
+</div>
+<div id="gr"></div>
+<div id="hook">Tu libreta del descanso</div>
+<div id="cap"></div>
+<div id="ink"></div>
+</div>
+<script src="/tools/reel_v4/T01-4-r3/times.js"></script>
+<script>
+const $=id=>document.getElementById(id), W=window.WORDS, NS='http://www.w3.org/2000/svg';
+const at=(w,n=1)=>{let c=0;for(const x of W)if(x[0]===w&&++c===n)return x[1];throw 'no '+w+n};
+const cl=(x,a=0,b=1)=>Math.min(b,Math.max(a,x)), r=(t,a,b)=>cl((t-a)/(b-a));
+const io=x=>x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2, eo=x=>1-Math.pow(1-x,3), lerp=(a,b,k)=>a+(b-a)*k;
+const T={es:at('es'),tienes:at('tienes'),quince:at('quince'),le:at('le'),ocho:at('ocho'),estudio:at('estudio'),recordaron:at('recordaron'),cincuenta:at('cincuenta'),importante:at('importante'),
+ podian:at('podian'),apuntar:at('apuntar'),cuatro:at('cuatro'),fuera:at('fuera'),no1:at('no'),apuntas:at('apuntas'),no2:at('no',2),vestuario:at('vestuario'),arbitro2:at('arbitro',2),
+ mientras:at('mientras'),izquierda:at('izquierda'),centrado:at('centrado'),cinco:at('cinco'),sigue:at('sigue'),segunda:at('segunda'),tu2:at('tu',2),preparala:at('preparala'),
+ casa:at('casa'),seis:at('seis'),perdidas:at('perdidas'),centros:at('centros'),tiros:at('tiros'),balon:at('balon'),portero:at('portero'),banda2:at('banda',2),campo:at('campo'),rayas:at('rayas'),
+ descanso:at('descanso'),llena:at('llena'),apunt:at('apuntalo'),porque:at('porque'),arbitro3:at('arbitro',3),plan:at('plan'),END:window.VEND+.25};
+// zonas del mundo
+const L=[0,0], E=[2400,0], G=[0,3300], V=[1500,3400], S=[5000,0], BP=[6600,0];
+const CUT1=T.preparala-.15;
+// cámara: planos FIJOS; solo se mueve al cambiar de zona (0,6 s, entrada y salida suaves)
+const SH=[ // [inicio del movimiento, cx, cy, zoom, duración]
+ [0,L[0]-10,L[1]-170,1.6],
+ [T.es-.3,L[0]+170,L[1]+40,.62,.8],
+ [T.tienes-.3,L[0]+640,L[1]-260,1.7],
+ [T.le-.3,E[0],E[1]-180,1.0,.75],
+ [T.podian-.35,E[0]+760,E[1]-180,1.6],
+ [T.cuatro-.4,E[0],E[1]+1000,1.05,.7],
+ [T.no1-.4,L[0],L[1]+20,.95,.8],
+ [T.apuntas-.35,G[0],G[1],1.0,.7],
+ [T.vestuario-.35,V[0],V[1]+120,.88,.7],
+ [T.segunda-.35,V[0],V[1]-900,1.45],
+ [T.tu2-.4,L[0]-20,L[1]-40,1.15,.8],
+ [CUT1,S[0],S[1]+10,.98],
+ [T.seis-.35,S[0],S[1]+20,1.1],
+ [T.campo-.35,S[0],S[1]-260,1.6],
+ [T.descanso-.35,S[0],S[1]-60,1.15],
+ [T.apunt-.35,BP[0],BP[1],1.0],
+ [T.porque+.05,L[0]-10,L[1]-170,1.6,.9]];
+const CUTS=new Set([CUT1]);
+function cam(t){let i=0;while(i+1<SH.length&&SH[i+1][0]<=t)i++;const s=SH[i];
+ if(i===0||CUTS.has(s[0]))return [s[1],s[2],s[3],0];
+ const p=SH[i-1],Dd=s[4]||.62,k=r(t,s[0],s[0]+Dd),e=io(k);
+ const lz=lerp(Math.log(p[3]),Math.log(s[3]),e)-.12*Math.sin(Math.PI*k)*(Math.hypot(s[1]-p[1],s[2]-p[2])>600?1:0);
+ return [lerp(p[1],s[1],e),lerp(p[2],s[2],e),Math.exp(lz),k>0&&k<1?Math.sin(Math.PI*k):0]}
+const sz=el=>[el.offsetWidth||+el.getAttribute('width'),el.offsetHeight||+el.getAttribute('height')];
+function place(el,x,y,rot=0,sc=1){const [w,h]=sz(el);el.style.transform=`translate(${x-w/2}px,${y-h/2}px) rotate(${rot}deg) scale(${sc})`}
+const drawK=(el,k)=>{el.setAttribute('stroke-dashoffset',100-100*k);el.style.visibility=k>0?'visible':'hidden'};
+const draw=(el,a,b,f=io)=>drawK(el,f(r(window._t,a,b)));
+const mk=(tag,at,par)=>{const e=document.createElementNS(NS,tag);for(const k in at)e.setAttribute(k,at[k]);par.appendChild(e);return e};
+// ocho entrenadores (pictogramas, sin caras)
+{const c=$('CO');for(let i=0;i<8;i++){const s=document.createElementNS(NS,'svg');s.setAttribute('width',80);s.setAttribute('height',140);s.style.cssText=`position:absolute;left:${i*108}px;top:0`;
+ s.innerHTML='<circle cx="40" cy="30" r="22" fill="#F4F7FB"/><path d="M8 140 L8 96 Q8 62 40 62 Q72 62 72 96 L72 140 Z" fill="#F4F7FB"/>';c.appendChild(s)}}
+const COS=[...$('CO').children];
+// diez puntos: cuatro se apagan
+const DOTS=[];{const c=$('DT');for(let i=0;i<10;i++){const d=document.createElement('div');const x=(i%5)*180+90,y=Math.floor(i/5)*190+95;
+ d.style.cssText=`position:absolute;left:${x-62}px;top:${y-62}px;width:124px;height:124px;border-radius:50%;background:#000`;c.appendChild(d);DOTS.push(d)}}
+const OFF=[1,4,6,8];
+// cinco centros por la misma banda (campo pequeño y pizarra)
+const GA=[],PA=[];
+{[[40,380,330,860],[52,430,300,880],[34,480,360,850],[46,330,280,870],[38,530,340,900]].forEach(([x1,y1,x2,y2])=>{
+  GA.push(mk('path',{d:`M${x1} ${y1} C ${x1+130} ${y1+60} ${x2-90} ${y2-180} ${x2} ${y2}`,pathLength:100,'stroke-dasharray':100,'stroke-dashoffset':100},$('gfA')))});
+ [[110,560,400,890],[124,610,370,910],[100,660,430,880],[118,500,350,900],[106,720,410,930]].forEach(([x1,y1,x2,y2])=>{
+  PA.push(mk('path',{d:`M${x1} ${y1} C ${x1+150} ${y1+60} ${x2-100} ${y2-200} ${x2} ${y2}`,pathLength:100,'stroke-dasharray':100,'stroke-dashoffset':100},$('pzA')))})}
+// seis casillas
+const BX=[];{const g=$('bxs');const names=['PÉRDIDAS','CENTROS','TIROS','BALÓN PARADO','PORTERO','BANDA'];
+ names.forEach((n,i)=>{const x=i%2?390:50,y=180+Math.floor(i/2)*270;const gg=mk('g',{opacity:0},g);
+  const f=mk('rect',{x,y,width:320,height:230,rx:10,fill:'#6AA8FF',opacity:0},gg);
+  const rc=mk('rect',{x,y,width:320,height:230,rx:10,fill:'none',stroke:'#6AA8FF','stroke-width':5,pathLength:100,'stroke-dasharray':100,'stroke-dashoffset':100},gg);
+  const tx=mk('text',{x:x+22,y:y+50,'font-family':'M','font-weight':800,'font-size':n.length>9?24:28,'letter-spacing':3,fill:'#F4F7FB'},gg);tx.textContent=n;BX.push([gg,rc,f,tx])})}
+// rayas: seis en «centros», tres en «pérdidas»
+const TL=[];{const g=$('tal');const L2=[[430,250,430,370],[462,250,462,370],[494,250,494,370],[526,250,526,370],[412,350,546,272],[580,250,580,370],
+ [92,250,92,370],[124,250,124,370],[156,250,156,370]];
+ L2.forEach(([a,b,c,d])=>TL.push([mk('path',{d:`M${a} ${b} L${c} ${d}`,pathLength:100,'stroke-dasharray':100,'stroke-dashoffset':100},g),c,d]))}
+const TS=[0,1,2,3,4,5,6,7,8].map(i=>T.rayas-.15+i*.13);
+const CAPS=[[.35,T.es-.15,'Gol. Palo. <em>Árbitro.</em>'],[T.es,T.tienes-.15,'Todo lo que pone <em>tu libreta.</em>'],[T.tienes,T.le-.15,'Y tienes <em>15 minutos.</em>'],
+ [T.le,T.estudio-.15,'8 entrenadores <em>titulados.</em>'],[T.estudio-.1,T.recordaron-.15,'Un estudio <em>de 2008.</em>'],[T.recordaron,T.podian-.4,'Recordaron <em>el</em> <span class="b">59 %</span>.'],
+ [T.podian-.3,T.cuatro-.2,'<em>Y podían apuntar.</em>'],[T.cuatro,T.no1-.2,'4 de cada 10, <span class="r">fuera.</span>'],[T.no1,T.apuntas-.15,'<em>No es la libreta.</em>'],
+ [T.apuntas,T.no2-.15,'Apuntas <em>lo que sorprende…</em>'],[T.no2,T.vestuario-.15,'…no <em>lo que se repite.</em>'],[T.vestuario,T.mientras-.15,'Hablas <em>del árbitro…</em>'],
+ [T.mientras,T.segunda-.2,'…y tu banda izquierda <em>sigue igual.</em>'],[T.segunda,T.tu2-.2,'La 2.ª parte <em>empieza igual.</em>'],[T.tu2,CUT1-.4,'<em>¿Tu libreta del sábado?</em>'],
+ [T.preparala+.05,T.casa-.2,'<em>Prepárala antes.</em>'],[T.casa-.1,T.perdidas-.15,'En casa, <em>6 casillas.</em>'],[T.perdidas-.1,T.balon-.15,'Pérdidas, centros, <em>tiros…</em>'],
+ [T.balon-.1,T.campo-.2,'Balón parado, portero, <em>banda.</em>'],[T.campo-.1,T.descanso-.2,'En el campo, <em>rayas.</em>'],[T.descanso-.1,T.apunt-.15,'Lees la más llena <em>antes de hablar.</em>'],
+ [T.apunt,T.porque-.15,'Apúntalo en la app.'],[T.porque+.05,T.END-.45,'Gol, palo, árbitro… <em>no es un plan.</em>']];
+window.frame=function(t){window._t=t;
+  const [cx,cy,z,mv]=cam(t);
+  const wd=$('world');wd.style.transform=`translate(540px,760px) scale(${z}) translate(${-cx}px,${-cy}px)`;
+  wd.style.filter=mv>.35?`blur(${(2.6*(mv-.35)/.65).toFixed(2)}px)`:'none';
+  const late=t>=T.apunt+.7; // todo vuelve a su estado inicial para el final circular (la cámara está en la marca)
+  const Lt=x=>late?0:x;
+  // 1 · banquillo, libreta y reloj
+  place($('BQ'),L[0]+260,L[1]+40);place($('NB'),L[0],L[1],-2);
+  place($('CK'),L[0]+640,L[1]-280,3);
+  const ck=r(t,T.quince+.1,T.le);const sec=late?0:Math.floor(ck*4);$('ckT').textContent=sec?`14:${String(60-sec).padStart(2,'0')}`:'15:00';
+  $('CK').style.opacity=1-r(t,T.no1-.4,T.no1)*(1-r(t,T.apunt,T.apunt+.5));
+  place($('PB'),L[0]+180,L[1]+300,-62);$('PB').style.opacity=Lt(r(t,T.tu2-.2,T.tu2+.25));
+  // 2 · estudio
+  place($('CO'),E[0],E[1]-640);COS.forEach((s,i)=>{const k=Lt(eo(r(t,T.ocho-.15+i*.08,T.ocho+.15+i*.08)));s.style.opacity=k;s.style.transform=`translateY(${20*(1-k)}px)`});
+  place($('FI'),E[0],E[1]-340,-1);$('FI').style.opacity=Lt(eo(r(t,T.estudio-.25,T.estudio+.25)));
+  place($('n59'),E[0],E[1]+60);$('n59').style.opacity=Lt(r(t,T.cincuenta-.2,T.cincuenta+.25));
+  place($('U59'),E[0],E[1]+215);draw($('u59'),T.importante-.1,T.importante+.5);if(late)drawK($('u59'),0);
+  place($('NS'),E[0]+760,E[1]-180,4);draw($('nsw'),T.podian,T.apuntar+.4);if(late)drawK($('nsw'),0);
+  place($('DT'),E[0],E[1]+1000);DOTS.forEach((d,i)=>{const on=r(t,T.cuatro-.25+i*.04,T.cuatro+i*.04);
+   const off=OFF.includes(i)?r(t,T.fuera-.25+OFF.indexOf(i)*.1,T.fuera+.15+OFF.indexOf(i)*.1):0;d.style.opacity=Lt(on*(1-.88*off))});
+  // 3 · lo que sorprende y lo que se repite (cambio de foco)
+  place($('GF'),G[0],G[1]);const fk=io(r(t,T.no2-.25,T.no2+.35));
+  $('GF').style.filter=`blur(${(7*(1-fk)).toFixed(2)}px)`;$('GF').style.opacity=.55+.45*fk;
+  GA.forEach((p,i)=>draw(p,T.apuntas+.1+i*.12,T.apuntas+.5+i*.12));
+  place($('GOL'),G[0],G[1]-60);$('GOL').style.filter=`blur(${(9*fk).toFixed(2)}px)`;$('GOL').style.opacity=1-.75*fk;
+  // 4 · pizarra y marcador
+  place($('PZ'),V[0],V[1]);$('pzW').setAttribute('opacity',r(t,T.arbitro2-.2,T.arbitro2+.15));draw($('pzU'),T.arbitro2+.05,T.arbitro2+.5);
+  $('pzR').setAttribute('opacity',.16*r(t,T.izquierda-.2,T.izquierda+.4));
+  PA.forEach((p,i)=>draw(p,T.centrado-.1+i*.15,T.centrado+.3+i*.15));
+  place($('MC'),V[0],V[1]-940);$('mcT').style.opacity=r(t,T.segunda-.1,T.segunda+.3);
+  // 5 · hoja
+  place($('HJ'),S[0],S[1],-1.2);
+  $('phr').setAttribute('opacity',r(t,T.campo-.4,T.campo-.1));draw($('phx'),T.campo+.05,T.campo+.4);
+  const bt=[T.perdidas,T.centros,T.tiros,T.balon,T.portero,T.banda2];
+  BX.forEach(([g,rc,f,tx],i)=>{const a=T.seis-.15+i*.1;g.setAttribute('opacity',r(t,a-.1,a+.1));drawK(rc,io(r(t,a,a+.45)));
+   const b=bt[i]-.2;tx.setAttribute('opacity',r(t,b-.1,b+.2));rc.setAttribute('stroke',t<b?'#c9cdd2':'#2f6bff');
+   f.setAttribute('opacity',i===1?.14*r(t,T.llena-.25,T.llena+.2):0)});
+  let px=null;TL.forEach(([p,ex,ey],i)=>{const k=io(r(t,TS[i],TS[i]+.12));drawK(p,k);if(k>0&&(k<1||t<TS[i]+.25))px=[ex,ey]});
+  const pc=$('PC');pc.style.opacity=r(t,T.rayas-.45,T.rayas-.2)*(1-r(t,T.descanso-.2,T.descanso+.1));
+  const tip=px||[430,370];place(pc,S[0]-380+tip[0]+6,S[1]-500+tip[1]-150,18);
+  place($('B'),BP[0],BP[1]);
+  // color por escena: el problema en frío
+  const g=$('gr');if(t>=T.cuatro-.45&&t<CUT1){g.style.background='#0C1323';g.style.opacity=.55*r(t,T.cuatro-.45,T.cuatro+.15)}else g.style.opacity=0;
+  $('hook').style.opacity=t<20?1-r(t,T.es-.35,T.es-.05):r(t,T.plan-.3,T.plan+.2);
+  // rótulo
+  let html='',a=0;for(const [s,e,h] of CAPS)if(t>=s-.2&&t<e+.25){html=h;a=Math.min(r(t,s-.2,s+.15),1-r(t,e-.05,e+.25))}
+  const cp=$('cap');if(cp.dataset.h!==html){cp.innerHTML=html;cp.dataset.h=html}
+  cp.style.opacity=a;cp.style.transform=`translateY(${(1-a)*12}px)`;
+  // giro: fundido a negro y salida a la hoja en blanco
+  $('ink').style.opacity=r(t,CUT1-.35,CUT1-.03)*(1-r(t,CUT1+.03,CUT1+.4));
+};
+Promise.all([...document.images].map(i=>i.decode().catch(()=>{}))).then(()=>document.fonts.ready).then(()=>{frame(0);window.ready=true});
+</script></body></html>

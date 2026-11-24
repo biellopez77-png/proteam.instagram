@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8">
+<!-- T06-2-r3 «Primer balón: pasos» · balonmano · a partir de la plantilla a3.html (planos fijos, la cámara solo se mueve al cambiar de zona) -->
+<style>
+@font-face{font-family:M;font-weight:800;src:url(/tools/reel_v5/node_modules/@fontsource/plus-jakarta-sans/files/plus-jakarta-sans-latin-800-normal.woff2)}
+@font-face{font-family:M;font-weight:700;src:url(/tools/reel_v5/node_modules/@fontsource/plus-jakarta-sans/files/plus-jakarta-sans-latin-700-normal.woff2)}
+@font-face{font-family:M;font-weight:500;src:url(/tools/reel_v5/node_modules/@fontsource/plus-jakarta-sans/files/plus-jakarta-sans-latin-500-normal.woff2)}
+@font-face{font-family:S;font-style:italic;font-weight:400;src:url(/tools/fonts/instrument-serif-latin-400-italic.woff2)}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#02050F}
+#st{position:absolute;inset:0;overflow:hidden;background:#02050F}
+#world{position:absolute;left:0;top:0;transform-origin:0 0}
+.o{position:absolute;left:0;top:0;transform-origin:50% 50%;overflow:visible}
+#cap{position:absolute;left:90px;right:90px;top:1330px;text-align:center;font-family:M;font-weight:800;font-size:58px;line-height:1.12;letter-spacing:-.03em;color:#F4F7FB;padding:18px 26px;border-radius:22px}
+#cap em{font-family:S;font-style:italic;font-weight:400;font-size:1.14em;letter-spacing:0}
+#ink{position:absolute;inset:0;background:#000;opacity:0;pointer-events:none}
+#mid{position:absolute;left:80px;right:80px;top:560px;text-align:center;color:#F4F7FB;opacity:0;font-family:S;font-style:italic;font-size:120px;line-height:1.04}
+#sheet{position:absolute;left:420px;top:900px;width:240px;height:310px;background:#0C1323;opacity:0;box-shadow:0 0 90px 30px rgba(12,19,35,.22)}
+</style><style>html,body,#st{background:#02050F!important}#st{background:radial-gradient(ellipse at 50% 40%,#0C1323 0%,#02050F 72%)!important}
+img{filter:url(#duo)!important}#grain{opacity:.16!important;mix-blend-mode:screen}</style>
+<svg width="0" height="0" style="position:absolute"><filter id="duo" color-interpolation-filters="sRGB"><feColorMatrix type="matrix" values=".33 .33 .33 0 0 .33 .33 .33 0 0 .33 .33 .33 0 0 0 0 0 1 0"/><feComponentTransfer><feFuncR type="table" tableValues="0.008 0.18 0.416 0.957"/><feFuncG type="table" tableValues="0.02 0.235 0.659 0.969"/><feFuncB type="table" tableValues="0.059 0.667 1 0.984"/></feComponentTransfer></filter></svg></head><body><div id="st">
+<div id="world">
+  <!-- fondos fríos del problema -->
+  <div class="o" id="cold" style="width:4200px;height:1500px;background:#0C1323"></div>
+  <svg class="o" id="CL" width="700" height="360" viewBox="0 0 700 360"></svg>
+  <svg class="o" id="FT" width="900" height="900" viewBox="0 0 900 900"></svg>
+  <svg class="o" id="LS" width="1000" height="800" viewBox="0 0 1000 800"></svg>
+  <svg class="o" id="GN" width="1300" height="1100" viewBox="0 0 1300 1100"></svg>
+  <svg class="o" id="SC" width="900" height="560" viewBox="0 0 900 560"></svg>
+  <svg class="o" id="BN" width="1000" height="1100" viewBox="0 0 1000 1100"></svg>
+  <svg class="o" id="TB" width="1000" height="900" viewBox="0 0 1000 900"></svg>
+  <svg class="o" id="BK" width="1500" height="700" viewBox="0 0 1500 700"></svg>
+  <svg class="o" id="HJ" width="2000" height="1100" viewBox="0 0 2000 1100"></svg>
+  <div class="o" id="B" style="width:900px;height:500px;text-align:center">
+    <div style="font-family:M;font-weight:800;letter-spacing:-.05em;color:#F4F7FB;font-size:170px;margin-top:120px;line-height:1">Pro<span style="color:#6AA8FF">Team</span></div>
+    <div style="margin-top:30px;font-family:M;font-weight:500;font-size:38px;color:#8f9bb8">la app del entrenador · enlace en la bio</div>
+  </div>
+</div>
+<div id="cap"></div>
+<div id="ink"></div>
+<div id="sheet"></div>
+<div id="mid">Que no esté fuera.</div>
+</div>
+<script src="/tools/reel_v4/T06-2-r3/times.js"></script>
+<script>
+const $=id=>document.getElementById(id), W=window.WORDS, NS='http://www.w3.org/2000/svg';
+const at=(w,n=1)=>{let c=0;for(const x of W)if(x[0]===w&&++c===n)return x[1];throw 'no '+w+n};
+const cl=(x,a=0,b=1)=>Math.min(b,Math.max(a,x)), r=(t,a,b)=>cl((t-a)/(b-a));
+const io=x=>x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2, eo=x=>1-Math.pow(1-x,3), lerp=(a,b,k)=>a+(b-a)*k;
+const T={entra:at('entra'),primer:at('primer'),pasos:at('pasos'),seg:at('segundo'),pierde:at('pierde'),y1:at('y'),sentar:at('sentar'),antes:at('antes'),min2:at('minuto',2),cinco:at('cinco'),
+ juv:at('juvenil'),segunda:at('segunda'),escapa:at('escapa'),llevaba:at('llevaba'),frio:at('frio'),sin:at('sin'),parar:at('parar'),asi:at('asi'),problema:at('problema'),vale:at('vale'),
+ y4:at('y',4),pero:at('pero'),nivel:at('nivel'),le2:at('le',2),fuera1:at('fuera'),tu2:at('tu',2),lleno:at('lleno'),ojos:at('ojos'),y5:at('y',5),nadie:at('nadie'),mirar1:at('mirar'),
+ que4:at('que',4),este:at('este'),antes2:at('antes',2),dale:at('dale'),pivote:at('pivote'),rival:at('rival'),y6:at('y',6),apunte:at('apunte'),una2:at('una',2),sola:at('sola'),
+ entrara:at('entrara'),apunt:at('apuntalo'),para:at('para'),pasos2:at('pasos',2),END:window.VEND+.25};
+// zonas del mundo
+const CLz=[0,0], FTz=[1500,0], LSz=[3000,0], GNz=[1500,1750], SCz=[3150,1750], BNz=[0,3900], TBz=[1700,3900], BKz=[3500,3900], HJz=[0,5900], Bz=[-1800,1700];
+const CUT=T.este+.25;   // en negro: de la fila del banquillo a la hoja
+const S0=[0,CLz[0],CLz[1]+10,1.3];
+const SH=[ // [inicio del movimiento, cx, cy, zoom, duración]
+ S0,
+ [T.primer-.3,FTz[0],FTz[1]+60,1.3],
+ [T.seg-.12,LSz[0],LSz[1],1.0],
+ [T.y1-.25,GNz[0],GNz[1]+40,.78,.7],
+ [T.min2-.35,GNz[0]-330,GNz[1]-330,1.35],
+ [T.juv-.3,SCz[0],SCz[1],1.05,.7],
+ [T.segunda-.3,SCz[0],SCz[1]+150,1.5],
+ [T.llevaba-.35,BNz[0],BNz[1]+40,.95,.7],
+ [T.asi-.3,BNz[0],BNz[1]+120,1.45],
+ [T.problema-.35,TBz[0]-210,TBz[1],1.35],
+ [T.y4-.25,TBz[0]+210,TBz[1],1.35],
+ [T.pero-.25,TBz[0],TBz[1]+20,.95],
+ [T.tu2-.35,BKz[0]-430,BKz[1]+20,1.3,.7],
+ [T.lleno-.2,BKz[0]+430,BKz[1]+20,1.3,.9],
+ [T.y5-.2,BKz[0],BKz[1]+40,.8],
+ [CUT,HJz[0]-20,HJz[1]+60,1.55],
+ [T.entrara-.35,HJz[0]+420,HJz[1]+20,.62,.8],
+ [T.apunt-.35,Bz[0],Bz[1],1.0,.7],
+ [T.para-.05,S0[1],S0[2],S0[3],.95]];
+const CUTS=new Set([CUT]);
+function cam(t){let i=0;while(i+1<SH.length&&SH[i+1][0]<=t)i++;const s=SH[i];
+ if(i===0||CUTS.has(s[0]))return [s[1],s[2],s[3],0];
+ const p=SH[i-1],Dd=s[4]||.62,k=r(t,s[0],s[0]+Dd),e=io(k);
+ const lz=lerp(Math.log(p[3]),Math.log(s[3]),e)-.12*Math.sin(Math.PI*k)*(Math.hypot(s[1]-p[1],s[2]-p[2])>600?1:0);
+ return [lerp(p[1],s[1],e),lerp(p[2],s[2],e),Math.exp(lz),k>0&&k<1?Math.sin(Math.PI*k):0]}
+const sz=el=>[el.offsetWidth||+el.getAttribute('width'),el.offsetHeight||+el.getAttribute('height')];
+function place(el,x,y,rot=0,sc=1){const [w,h]=sz(el);el.style.transform=`translate(${x-w/2}px,${y-h/2}px) rotate(${rot}deg) scale(${sc})`}
+const mk=(tag,a,par)=>{const e=document.createElementNS(NS,tag);for(const k in a)e.setAttribute(k,a[k]);par.appendChild(e);return e};
+const txt=(par,x,y,s,size,fill='#F4F7FB',anchor='middle',font='M',wt=800)=>{const e=mk('text',{x,y,'font-family':font,'font-weight':font==='M'?wt:400,'font-style':font==='S'?'italic':'normal','font-size':size,fill,'text-anchor':anchor},par);e.textContent=s;return e};
+const pen=(par,d,c='#636DFF',w=5,extra={})=>mk('path',Object.assign({d,fill:'none',stroke:c,'stroke-width':w,'stroke-linecap':'round','stroke-linejoin':'round',pathLength:100,'stroke-dasharray':100,'stroke-dashoffset':0},extra),par);
+const drawK=(el,k)=>{el.setAttribute('stroke-dashoffset',100-100*k);el.style.visibility=k>0?'visible':'hidden'};
+const SHIRT='M120 20 L60 40 L10 110 L60 150 L80 130 L80 340 L280 340 L280 130 L300 150 L350 110 L300 40 L240 20 C 225 55 135 55 120 20Z';
+function ballG(par,x,y,rr=34){const g=mk('g',{transform:`translate(${x} ${y})`},par);mk('circle',{cx:0,cy:0,r:rr,fill:'#0C1323',stroke:'#F4F7FB','stroke-width':4},g);
+ mk('path',{d:`M${-rr} 0 C ${-rr*.4} ${-rr*.5} ${rr*.4} ${-rr*.5} ${rr} 0 M0 ${-rr} C ${-rr*.5} ${-rr*.3} ${-rr*.5} ${rr*.3} 0 ${rr}`,fill:'none',stroke:'#F4F7FB','stroke-width':3},g);return g}
+function sil(par,x,y,s=1,fill='#8f9bb8'){const g=mk('g',{transform:`translate(${x} ${y}) scale(${s})`},par);
+ mk('circle',{cx:0,cy:-150,r:52,fill},g);mk('path',{d:'M-120 60 C -120 -40 -80 -90 0 -92 C 80 -90 120 -40 120 60 Z',fill},g);return g}
+function court(par,x,y,w,h,ln='#636DFF'){const g=mk('g',{transform:`translate(${x} ${y})`},par);
+ mk('rect',{x:0,y:0,width:w,height:h,fill:'#0C1323',stroke:ln,'stroke-width':5},g);mk('path',{d:`M${w/2} 0 V${h}`,fill:'none',stroke:ln,'stroke-width':3},g);
+ const a=h*.3;mk('path',{d:`M0 ${h/2-a} A ${a} ${a} 0 0 1 0 ${h/2+a} M${w} ${h/2-a} A ${a} ${a} 0 0 0 ${w} ${h/2+a}`,fill:'none',stroke:ln,'stroke-width':3},g);
+ mk('path',{d:`M0 ${h/2-a*1.5} A ${a*1.5} ${a*1.5} 0 0 1 0 ${h/2+a*1.5} M${w} ${h/2-a*1.5} A ${a*1.5} ${a*1.5} 0 0 0 ${w} ${h/2+a*1.5}`,fill:'none',stroke:ln,'stroke-width':2.5,'stroke-dasharray':'10 10'},g);return g}
+// 1 · reloj a lápiz
+const CLs={};{const s=$('CL');mk('rect',{x:20,y:20,width:660,height:320,rx:36,fill:'#0C1323',stroke:'#F4F7FB','stroke-width':6},s);
+ mk('path',{d:'M60 70 H130 M570 70 H640',stroke:'#8f9bb8','stroke-width':5,'stroke-linecap':'round'},s);
+ CLs.t=txt(s,350,262,'40:00',220,'#636DFF','middle','M',800);CLs.t.setAttribute('letter-spacing',-8);}
+// 2 · balón y pasos en la pista
+const FTs={};{const s=$('FT');mk('rect',{x:0,y:0,width:900,height:900,fill:'#0C1323'},s);
+ mk('path',{d:'M-40 760 C 260 640 640 640 940 760',fill:'none',stroke:'#F4F7FB','stroke-width':5,opacity:.55},s);
+ mk('path',{d:'M-40 860 C 260 740 640 740 940 860',fill:'none',stroke:'#F4F7FB','stroke-width':4,'stroke-dasharray':'16 14',opacity:.4},s);
+ FTs.ball=ballG(s,450,170,52);
+ const P=[[300,620,-12,'1'],[520,470,10,'2'],[330,300,-8,'3']];
+ FTs.f=P.map(([x,y,a,n])=>{const g=mk('g',{transform:`translate(${x} ${y}) rotate(${a})`,opacity:0},s);
+  mk('path',{d:'M-34 -70 C -40 -110 30 -118 34 -70 C 38 -30 26 0 20 20 C 14 40 -14 40 -20 20 C -26 0 -30 -40 -34 -70 Z',fill:'#F4F7FB',opacity:.82},g);
+  mk('ellipse',{cx:0,cy:66,rx:24,ry:30,fill:'#F4F7FB',opacity:.82},g);
+  const tt=txt(g,78,10,n,74,'#d23a2a','middle','S');return g});}
+// 3 · lo pierde: el balón va a una camiseta rival genérica
+const LSs={};{const s=$('LS');
+ const g1=mk('g',{transform:'translate(70 240) scale(1)'},s);mk('path',{d:SHIRT,fill:'#0C1323',stroke:'#F4F7FB','stroke-width':5},g1);txt(g1,180,250,'11',110,'#636DFF');
+ const g2=mk('g',{transform:'translate(590 240)'},s);mk('path',{d:SHIRT,fill:'#0C1323',stroke:'#F4F7FB','stroke-width':5},g2);
+ mk('rect',{x:80,y:200,width:200,height:16,fill:'#B9E0FF'},g2);
+ LSs.arc=pen(s,'M330 330 C 460 150 600 150 740 300','#d23a2a',6,{'stroke-dasharray':'6 14',opacity:0});
+ LSs.ball=ballG(s,330,330,30);txt(s,960,780,'EJEMPLO',18,'#9aa1a8','end','M',800);}
+// 4 · general: reloj, pista y banco
+const GNs={};{const s=$('GN');court(s,150,380,1000,500);
+ mk('rect',{x:420,y:930,width:460,height:44,rx:10,fill:'#0C1323',stroke:'#F4F7FB','stroke-width':5},s);txt(s,650,1040,'BANQUILLO',26,'#77736b');
+ mk('rect',{x:20,y:20,width:340,height:170,rx:22,fill:'#0C1323',stroke:'#F4F7FB','stroke-width':5},s);GNs.t=txt(s,190,142,'40:00',110,'#636DFF');GNs.t.setAttribute('letter-spacing',-4);
+ const dots=[[420,520],[520,700],[640,600],[760,470],[860,690]];GNs.d=dots.map(([x,y])=>mk('circle',{cx:x,cy:y,r:16,fill:'#8f9bb8'},s));
+ GNs.me=mk('circle',{cx:560,cy:560,r:20,fill:'#F4F7FB'},s);
+ GNs.arr=pen(s,'M560 590 C 560 760 600 860 640 915','#636DFF',6);mk('path',{d:'M618 900 L642 922 L652 892',fill:'none',stroke:'#F4F7FB','stroke-width':6,'stroke-linecap':'round','stroke-linejoin':'round',id:'gnh',opacity:0},s);}
+// 5 · marcador (EJEMPLO)
+const SCs={};{const s=$('SC');mk('rect',{x:20,y:20,width:860,height:400,rx:28,fill:'#0C1323',stroke:'#F4F7FB','stroke-width':6},s);
+ txt(s,230,110,'LOCAL',30,'#77736b');txt(s,670,110,'RIVAL',30,'#77736b');
+ txt(s,230,300,'19',190);txt(s,450,290,'–',150);SCs.v=txt(s,670,300,'22',190);
+ txt(s,450,500,'2ª PARTE · JUVENIL · LIGA',32,'#55524c');txt(s,880,548,'EJEMPLO',18,'#9aa1a8','end');}
+// 6 · de espaldas en el banquillo, la pista desenfocada al fondo
+const BNs={};{const s=$('BN');const df=mk('defs',{},s);const f=mk('filter',{id:'bl',x:'-20%',y:'-20%',width:'140%',height:'140%'},df);BNs.blur=mk('feGaussianBlur',{stdDeviation:10},f);
+ const bg=mk('g',{filter:'url(#bl)'},s);mk('rect',{x:-200,y:60,width:1400,height:520,fill:'#0C1323'},bg);court(bg,40,140,920,380,'#8f97a1');
+ BNs.p=[[250,300],[420,420],[560,250],[700,380],[820,300],[480,330]].map(([x,y],i)=>[mk('circle',{cx:x,cy:y,r:18,fill:i<3?'#8f9bb8':'#b58a85'},bg),x,y]);
+ mk('rect',{x:-200,y:740,width:1400,height:26,fill:'#8f9bb8'},s);mk('rect',{x:-200,y:766,width:1400,height:400,fill:'#0C1323'},s);
+ BNs.me=sil(s,500,760,1.25);BNs.q=txt(s,640,470,'?',140,'#55524c','middle','S');}
+// 7 · tablero con dos notas
+const TBs={};{const s=$('TB');mk('rect',{x:20,y:20,width:960,height:860,rx:18,fill:'#0C1323',stroke:'#F4F7FB','stroke-width':8},s);
+ const df=mk('defs',{},s);const f=mk('filter',{id:'bl2',x:'-20%',y:'-20%',width:'140%',height:'140%'},df);TBs.blur=mk('feGaussianBlur',{stdDeviation:9},f);
+ TBs.c=mk('g',{filter:'url(#bl2)',opacity:0},s);court(TBs.c,260,320,480,260,'#55524c');
+ const note=(x,y,rot,str,font)=>{const g=mk('g',{transform:`translate(${x} ${y}) rotate(${rot})`},s);
+  mk('rect',{x:-170,y:-120,width:340,height:240,fill:'#0C1323',filter:'',stroke:'#8f9bb8','stroke-width':2},g);mk('circle',{cx:0,cy:-100,r:9,fill:'#B9E0FF'},g);
+  font==='S'?txt(g,0,30,str,92,'#636DFF','middle','S'):txt(g,0,28,str,64,'#3a3d45','middle','M',500);return g};
+ TBs.n1=note(290,450,-4,'No valgo','S');TBs.n2=note(710,450,3,'No vale','M');txt(s,970,868,'EJEMPLO',16,'#9aa1a8','end');}
+// 8 · el banquillo lleno de ojos
+const BKs={};{const s=$('BK');mk('rect',{x:-200,y:440,width:1900,height:30,fill:'#8f9bb8'},s);mk('rect',{x:-200,y:470,width:1900,height:300,fill:'#0C1323'},s);
+ BKs.s=[0,1,2,3,4,5].map(i=>{const x=130+i*248,g=sil(s,x,440,.95);
+  const e=mk('g',{},s);mk('ellipse',{cx:x,cy:170,rx:26,ry:15,fill:'#0C1323'},e);mk('circle',{cx:x,cy:170,r:8,fill:'#F4F7FB'},e);return [g,e]});}
+// 9 · la hoja del partido, la pista y el banco
+const HJs={};{const s=$('HJ');
+ mk('rect',{x:40,y:110,width:680,height:880,fill:'#0C1323',filter:''},s);mk('rect',{x:40,y:110,width:680,height:880,fill:'none',stroke:'#8f9bb8','stroke-width':3},s);
+ txt(s,90,180,'PARTIDO · BANQUILLO',26,'#636DFF','start');txt(s,690,180,'EJEMPLO',18,'#9aa1a8','end');
+ [['4',300],['7',420],['11',540],['15',660]].forEach(([n,y])=>{txt(s,100,y,n,64,'#636DFF','start');mk('path',{d:`M190 ${y+8} H660`,stroke:'#F4F7FB','stroke-width':3},s)});
+ HJs.cp=mk('clipPath',{id:'wr'},mk('defs',{},s));HJs.cr=mk('rect',{x:200,y:440,width:0,height:140},HJs.cp);
+ HJs.w=txt(s,205,546,'pivote rival',96,'#636DFF','start','S');HJs.w.setAttribute('clip-path','url(#wr)');
+ HJs.ul=pen(s,'M200 568 C 330 560 470 572 610 562','#2f6bff',9);
+ HJs.tl=[0,1,2,3,4].map(j=>pen(s,j===4?'M210 760 L370 690':`M${230+j*38} 680 L${236+j*38} 780`,'#222',6));
+ // pista y banco a la derecha (se ven al alejarse)
+ const cg=court(s,900,150,1000,500);
+ HJs.d=[[1150,300,'#9aa1a8'],[1300,480,'#9aa1a8'],[1450,360,'#9aa1a8'],[1640,250,'#c9564a'],[1700,420,'#c9564a'],[1560,520,'#c9564a']].map(([x,y,f])=>[mk('circle',{cx:x,cy:y,r:18,fill:f},s),x,y]);
+ HJs.pv=mk('circle',{cx:1780,cy:400,r:24,fill:'#B9E0FF'},s);
+ mk('rect',{x:1120,y:780,width:560,height:40,rx:10,fill:'#0C1323',stroke:'#F4F7FB','stroke-width':5},s);sil(s,1400,780,.5,'#3a3d45');txt(s,1400,880,'BANQUILLO',26,'#77736b');
+ HJs.arr=pen(s,'M640 560 C 900 560 1100 640 1260 760','#2f6bff',8);HJs.ar2=pen(s,'M1430 740 C 1560 640 1680 520 1760 430','#2f6bff',8,{'stroke-dasharray':'3 4'});
+}
+const CAPS=[[T.entra+.22,T.primer-.15,'Entra en el <em>minuto 40.</em>'],[T.primer,T.seg-.12,'Primer balón: <em>pasos.</em>'],[T.seg,T.y1-.12,'Segundo: <em>lo pierde.</em>'],
+ [T.y1,T.juv-.15,'Y lo vuelves a sentar <em>antes del 45.</em>'],[T.juv,T.llevaba-.15,'Juvenil, liga. <em>El partido se escapa.</em>'],
+ [T.llevaba,T.sin-.12,'40 minutos sentado. <em>Frío.</em>'],[T.sin,T.asi-.12,'Sin saber qué pasaba <em>en la defensa.</em>'],[T.asi,T.problema-.25,'Así no se entra.'],
+ [T.problema-.1,T.y4-.12,'Ahora piensa <em>que no vale.</em>'],[T.y4,T.pero-.12,'<em>Y tú también.</em>'],[T.pero,T.le2-.12,'No le faltaba <em>nivel.</em>'],
+ [T.le2,T.tu2-.15,'Le faltaba estar dentro <em>mientras estaba fuera.</em>'],[T.tu2,T.y5-.12,'Tu banquillo está <em>lleno de ojos.</em>'],[T.y5,T.mirar1+.25,'Y nadie les dice <em>adónde mirar.</em>'],
+ [T.antes2+.15,T.pivote-.12,'Antes del partido, <em>una cosa que mirar.</em>'],[T.pivote,T.una2-.12,'El pivote rival. <em>Y que lo apunte.</em>'],[T.una2,T.entrara-.12,'<em>Una sola.</em>'],
+ [T.entrara,T.apunt-.15,'Entrará <em>sabiéndolo.</em>'],[T.apunt,T.para-.12,'Apúntalo en la app de ProTeam.'],[T.para,T.END-.75,'Para que el primer balón <em>no sean pasos.</em>']];
+window.frame=function(t){
+  const [cx,cy,z,mv]=cam(t);
+  const wd=$('world');wd.style.transform=`translate(540px,760px) scale(${z}) translate(${-cx}px,${-cy}px)`;
+  wd.style.filter=mv>.35?`blur(${(2.6*(mv-.35)/.65).toFixed(2)}px)`:'none';
+  place($('cold'),2000,3900);
+  // 1 · reloj (siempre 40:00: el final vuelve aquí)
+  place($('CL'),CLz[0],CLz[1]);
+  // 2 · pasos
+  place($('FT'),FTz[0],FTz[1]);
+  const kb=io(r(t,T.primer-.2,T.pasos+.3));FTs.ball.setAttribute('transform',`translate(${lerp(450,600,kb)} ${lerp(170,150,kb)})`);
+  FTs.f.forEach((g,i)=>g.setAttribute('opacity',eo(r(t,T.pasos-.55+i*.2,T.pasos-.35+i*.2))));
+  // 3 · pérdida
+  place($('LS'),LSz[0],LSz[1]);const kl=io(r(t,T.pierde-.25,T.pierde+.45));
+  const bx=lerp(330,740,kl),by=330-4*170*kl*(1-kl)+(lerp(330,300,kl)-330);LSs.ball.setAttribute('transform',`translate(${bx} ${by})`);
+  LSs.arc.setAttribute('opacity',.85*r(t,T.pierde-.3,T.pierde));
+  // 4 · general: el reloj corre de 40 a 44 y vuelve al banco
+  place($('GN'),GNz[0],GNz[1]);const mm=40+Math.floor(4*cl(r(t,T.antes-.1,T.cinco+.1))*0.999+(t>=T.cinco+.1?1:0));GNs.t.textContent=Math.min(44,mm)+':00';
+  const ka=io(r(t,T.sentar-.2,T.antes+.4));drawK(GNs.arr,ka);$('gnh').setAttribute('opacity',r(t,T.antes+.2,T.antes+.4));
+  GNs.me.setAttribute('cx',lerp(560,640,io(r(t,T.antes,T.min2))));GNs.me.setAttribute('cy',lerp(560,915,io(r(t,T.antes,T.min2))));
+  GNs.d.forEach((c,i)=>{const a=t*1.1+i*1.7;c.setAttribute('transform',`translate(${(10*Math.sin(a)).toFixed(1)} ${(7*Math.cos(a*.8)).toFixed(1)})`)});
+  // 5 · marcador
+  place($('SC'),SCz[0],SCz[1]);SCs.v.textContent=t>=T.escapa?'23':'22';
+  // 6 · banquillo
+  place($('BN'),BNz[0],BNz[1]);BNs.p.forEach(([c,x,y],i)=>{const a=t*1.2+i*2.1;c.setAttribute('cx',(x+26*Math.sin(a)).toFixed(1));c.setAttribute('cy',(y+14*Math.cos(a*.7)).toFixed(1))});
+  BNs.q.setAttribute('opacity',.8*r(t,T.sin,T.sin+.4)*(1-r(t,T.asi-.3,T.asi)));
+  // 7 · notas
+  place($('TB'),TBz[0],TBz[1]);TBs.n1.setAttribute('opacity',r(t,T.problema+.1,T.problema+.45));TBs.n2.setAttribute('opacity',r(t,T.y4,T.y4+.35));
+  const ap=io(r(t,T.pero+.3,T.nivel+.4));TBs.n1.setAttribute('transform',`translate(${lerp(290,200,ap)} ${lerp(450,230,ap)}) rotate(${lerp(-4,-9,ap)}) scale(${lerp(1,.72,ap)})`);
+  TBs.n2.setAttribute('transform',`translate(${lerp(710,800,ap)} ${lerp(450,230,ap)}) rotate(${lerp(3,8,ap)}) scale(${lerp(1,.72,ap)})`);
+  TBs.c.setAttribute('opacity',ap);TBs.blur.setAttribute('stdDeviation',(9*(1-io(r(t,T.le2,T.fuera1)))).toFixed(2));
+  // 8 · fila de ojos: se apagan uno a uno
+  place($('BK'),BKz[0],BKz[1]);BKs.s.forEach(([g,e],i)=>{const on=r(t,T.tu2-.3+i*.18,T.tu2+i*.18),off=r(t,T.nadie+i*.17,T.nadie+.3+i*.17);e.setAttribute('opacity',on*(1-off));g.setAttribute('opacity',1-.6*off)});
+  // 9 · hoja
+  place($('HJ'),HJz[0]+580,HJz[1]);
+  HJs.cr.setAttribute('width',420*io(r(t,T.pivote-.05,T.rival+.45)));drawK(HJs.ul,io(r(t,T.una2-.05,T.sola+.3)));
+  const t0=T.y6,t1=T.apunte+.5;HJs.tl.forEach((p,j)=>{const s=t0+(t1-t0)*j/5;drawK(p,eo(r(t,s,s+.2)))});
+  HJs.d.forEach(([c,x,y],i)=>{const a=t*1.1+i*1.9;c.setAttribute('cx',(x+22*Math.sin(a)).toFixed(1));c.setAttribute('cy',(y+12*Math.cos(a*.8)).toFixed(1))});
+  HJs.pv.setAttribute('cy',(400+30*Math.sin(t*.9)).toFixed(1));
+  drawK(HJs.arr,io(r(t,T.entrara+.1,T.entrara+.8)));drawK(HJs.ar2,io(r(t,T.entrara+.6,T.apunt-.2)));
+  place($('B'),Bz[0],Bz[1]);
+  // rótulo
+  let html='',a=0;for(const [s,e,h] of CAPS)if(t>=s-.2&&t<e+.25){html=h;a=Math.min(r(t,s-.2,s+.15),1-r(t,e-.05,e+.25))}
+  const cp=$('cap');if(cp.dataset.h!==html){cp.innerHTML=html;cp.dataset.h=html}
+  cp.style.opacity=a;cp.style.transform=`translateY(${(1-a)*12}px)`;
+  // giros: a negro tras «adónde mirar» (giro 1) y de negro a blanco en «Antes del partido» (giro 2)
+  const k=r(t,T.mirar1+.15,T.mirar1+.6)*(1-r(t,T.antes2-.3,T.antes2+.25));$('ink').style.opacity=k;
+  const ma=r(t,T.que4-.1,T.que4+.3)*(1-r(t,T.antes2-.45,T.antes2-.1));$('mid').style.opacity=ma;
+  $('sheet').style.opacity=.92*r(t,T.mirar1+.5,T.que4+.2)*(1-r(t,T.antes2-.45,T.antes2-.1));
+};
+Promise.all([...document.images].map(i=>i.decode().catch(()=>{}))).then(()=>document.fonts.ready).then(()=>{frame(0);window.ready=true});
+</script></body></html>
