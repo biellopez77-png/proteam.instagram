@@ -60,3 +60,9 @@ Fuentes: UEFA, Wikipedia, RSSSF. Foto: JRR007 (CC BY-SA 3.0), vía Wikimedia Com
 
 ## Id
 `v6-nueve-hidegkuti-1953`
+
+## Montaje (Marta B, 02 · 24/11)
+- Voz grabada sin la última frase («Apúntalo en la app de ProTeam»), por la norma de Biel del 24/11: el vídeo acaba en «…y otro tapa su sitio» y pega el cierre común (`tools/reel_v6/cierre.sh`). «1953» se escribió en letras para que Mateo lo lea «mil novecientos cincuenta y tres».
+- La toma salió de 44,2 s; se aceleró ×1,08 (40,9 s de voz + 5,6 s de cierre).
+- La pizarra final ya no se convierte en wordmark: se queda la tarjeta «Antes del partido» (EJEMPLO) y entra el cierre común.
+- Archivos: `tools/reel_v6/v6-nueve-hidegkuti-1953.html`, `tools/reel_v6/v6-nueve-hidegkuti-1953/` (times.js, voz.wav, sfx.wav, final.mp4, publicar.mp4, cover.jpg, CREDITOS.md), `tools/reel_v6/sfx_v6-nueve-hidegkuti-1953.py`.
