@@ -178,6 +178,44 @@ select.sel{font-size:12.5px;font-weight:600;background:var(--bg);border:1px soli
 .off p{max-width:46ch;margin:10px auto 0;color:var(--text-2);font-size:14px}
 code{font-size:12px;color:var(--ice);background:var(--s2);padding:1px 5px;border-radius:5px}
 
+
+/* === Cabecera de la portada en el móvil (propuesta P1 de Samuel, 24/11) === */
+.hero{position:relative;overflow:hidden;background:var(--bg)}
+.h-strip{display:flex;justify-content:space-between;align-items:center;padding:14px 18px;border-bottom:1px solid var(--line)}
+.h-strip b{font-weight:800;font-size:16px;letter-spacing:-.02em}
+.h-strip a{font-size:13.5px;font-weight:700;color:var(--ice);text-decoration:none;padding:8px 2px}
+.h-main{position:relative;padding:44px 22px 30px;background:radial-gradient(85% 55% at 50% 0%,rgba(106,168,255,.20),rgba(99,109,255,.05) 50%,transparent 75%)}
+.desktop .h-main{padding:96px 48px 56px;text-align:center}
+.h-main::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.07;mix-blend-mode:screen;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='120' height='120' filter='url(%23n)'/%3E%3C/svg%3E")}
+.h-note{margin:0;font-size:13px;color:var(--text-3);font-weight:600}
+.h-title{margin:14px 0 0;font-size:34px;line-height:1.08;font-weight:800;letter-spacing:-.03em;text-wrap:balance;max-width:16ch}
+.desktop .h-title{font-size:60px;margin-inline:auto;max-width:18ch}
+.h-title .lit{color:var(--ice);background:linear-gradient(90deg,var(--ice) 0 40%,#fff 50%,var(--ice) 60% 100%);background-size:250% 100%;background-position:100% 0;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:beam 1.4s .3s ease-out both;text-shadow:none}
+@keyframes beam{from{background-position:100% 0}to{background-position:0 0}}
+.h-myst{margin:14px 0 0;font-size:17px;line-height:1.45;color:var(--text-2);max-width:30ch}
+.desktop .h-myst{margin-inline:auto;font-size:20px}
+.h-cta{margin-top:28px;display:flex;flex-direction:column;gap:10px}
+.desktop .h-cta{align-items:center}
+.h-cta .btn{width:100%;min-height:54px;font-size:16px}
+.desktop .h-cta .btn{width:auto;padding-inline:28px}
+.h-cta small{font-size:12.5px;color:var(--text-3)}
+.h-dim{padding:22px 18px 28px;text-align:center;border-top:1px solid var(--line);opacity:.55}
+.h-dim p{margin:0 0 10px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:800;color:var(--text-3)}
+.h-dim .timer{margin-top:0}
+.h-dim .timer b{font-size:24px;color:var(--text-2)}
+.fold{position:absolute;left:0;right:0;border-top:1.5px dashed var(--ice);z-index:2;pointer-events:none}
+.fold span{position:absolute;right:8px;top:-20px;background:var(--ice);color:var(--bg);font-size:9.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;padding:3px 6px;border-radius:4px}
+.desktop .fold{display:none}
+.cur .sport-word{font-weight:800;font-size:40px;letter-spacing:-.03em;text-align:center;margin:0}
+.cur{padding:56px 18px 36px;text-align:center}
+.cur .bn{margin:6px 0 0;color:var(--text-2);font:italic 400 19px var(--voice)}
+.cur h1{font-size:36px;margin:16px 0 0;font-weight:700}
+.cur p.d{color:var(--text-2);font-size:15px;margin:14px auto 0;max-width:34ch}
+.cur .timer{max-width:none;margin:36px 0}
+.cur .timer b{font-size:46px}
+.cur .two{display:flex;flex-direction:column;gap:10px}
+.skl-line{height:16px;margin:10px 0 0}
+
 /* Notas */
 .notes{max-width:1180px;margin:30px auto 0;display:grid;gap:16px}
 @media (min-width:860px){.notes{grid-template-columns:1fr 1fr}}
@@ -193,7 +231,13 @@ code{font-size:12px;color:var(--ice);background:var(--s2);padding:1px 5px;border
   <div class="bar-in">
     <h1>Club Fundador <span>· prototipo v4</span></h1>
     <div class="ctl"><span>Pantalla</span><div class="seg" id="segScreen">
-      <button data-v="espera" aria-pressed="true">Espera (app)</button><button data-v="portada" aria-pressed="false">Portada (web)</button></div></div>
+      <button data-v="espera" aria-pressed="true">Espera (app)</button><button data-v="portada" aria-pressed="false">Portada (web)</button><button data-v="cabecera" aria-pressed="false">Cabecera móvil (web)</button></div></div>
+    <div class="ctl" id="ctlHero" hidden><span>Cabecera</span><div class="seg" id="segVer">
+      <button data-v="prop" aria-pressed="true">Propuesta</button><button data-v="cur" aria-pressed="false">Actual (hoy)</button></div></div>
+    <div class="ctl" id="ctlBtn" hidden><span>Botón y oferta</span><select class="sel" id="selBtn" aria-label="Botón y oferta">
+      <option value="a">«Apúntate a la lista de espera», sin oferta</option><option value="b">«Entrar en la lista», sin oferta</option><option value="c">«Apúntate…» + 3 meses gratis</option></select></div>
+    <div class="ctl" id="ctlFold" hidden><span>Alto del móvil</span><div class="seg" id="segFold">
+      <button data-v="553" aria-pressed="true">Móvil pequeño</button><button data-v="664" aria-pressed="false">Móvil grande</button></div></div>
     <div class="ctl"><span>Estado</span><select class="sel" id="selState" aria-label="Estado"></select></div>
     <div class="ctl"><span>Fechas</span><div class="seg" id="segDates">
       <button data-v="new" aria-pressed="true">10/12 y 11/12 (por confirmar)</button><button data-v="old" aria-pressed="false">27/11 y 28/11 (código)</button></div></div>
@@ -231,6 +275,7 @@ code{font-size:12px;color:var(--ice);background:var(--s2);padding:1px 5px;border
         <li>Barra de 3 pasos (Compartida → En revisión → Verificada), con la luz en el paso actual.</li>
         <li>Estados de carga y de error (hoy no existen); el error lleva un objeto real (móvil boca abajo) en vez de un icono.</li>
         <li>Portada: frase de misterio y botón de registro dentro del bloque.</li>
+        <li><b>Cabecera móvil (24/11, propuesta P1 de Samuel):</b> en la primera pantalla del móvil solo la fecha de cierre, «Lo que hay dentro se abre al día siguiente.» y un único botón en blanco (la luz); «Iniciar sesión» sube a la barra de arriba; la cuenta atrás baja, en penumbra; el Club y las ventajas bajan. Sin ultravioleta en esa primera pantalla. Línea discontinua: dónde acaba la primera pantalla (aprox.). Primer fotograma: la frase, la fecha y el botón ya vienen en el HTML; solo la cuenta atrás espera a cargar, con su hueco reservado (hoy es igual).</li>
         <li>No aparecen: precio fundador (sin importe ni Stripe), detalles de los tickets (sin construir), número de apuntados.</li>
       </ul>
     </div>
@@ -239,14 +284,15 @@ code{font-size:12px;color:var(--ice);background:var(--s2);padding:1px 5px;border
 
 <script>
 (function(){
-  var S={screen:"espera",view:"mobile",state:"none",dates:"new",sheet:false,letter:false,handle:"",fieldErr:"",sendErr:false,toast:""};
+  var S={ver:"prop",btn:"a",fold:"553",heroErr:false,screen:"espera",view:"mobile",state:"none",dates:"new",sheet:false,letter:false,handle:"",fieldErr:"",sendErr:false,toast:""};
   var STATES={
     espera:[["loading","Cargando"],["none","Sin solicitar"],["requested","En revisión"],["rejected","Rechazada"],["verified","Verificada, sin número"],["verified_n","Verificada, Nº 011"],["error","Error al cargar"]],
+    cabecera:[["normal","Primera pantalla"],["first","Primer fotograma (antes de cargar)"],["error","Error al abrir el registro"]],
     portada:[["campaign","Campaña abierta"],["closed","Lista cerrada"],["off","Fuera de campaña (vacío)"]]
   };
   var D={
-    "new":{open:"11 de diciembre",openShort:"El 11",close:"10 de diciembre",closeT:Date.parse("2026-12-10T23:00:00Z")},
-    "old":{open:"28 de noviembre",openShort:"El 28",close:"27 de noviembre",closeT:Date.parse("2026-11-27T23:00:00Z")}
+    "new":{closeDay:"jueves",open:"11 de diciembre",openShort:"El 11",close:"10 de diciembre",closeT:Date.parse("2026-12-10T23:00:00Z")},
+    "old":{closeDay:"viernes",open:"28 de noviembre",openShort:"El 28",close:"27 de noviembre",closeT:Date.parse("2026-11-27T23:00:00Z")}
   };
   function d(){return D[S.dates]}
   function dt(s){return '<span data-date>'+s+'</span>'}
@@ -306,11 +352,28 @@ code{font-size:12px;color:var(--ice);background:var(--s2);padding:1px 5px;border
     var cta=st==="closed"?'<div class="closed" data-prop>La lista de espera se cerró el '+dt(d().close)+'. Si ya estás dentro, entra con tu cuenta para conseguir tu insignia.</div>':'<div class="fcta" data-prop><button class="btn btn-w" data-act="toast" data-msg="Abre el registro actual (AuthButtons)">Apuntarme a la lista de espera</button><small>3 meses gratis si te apuntas antes del '+dt(d().close)+' a las 23:59.</small></div>';
     return '<div class="web">'+head+'<section class="fsec" aria-labelledby="flt"><div class="fgrid"><div>'+badge(S.view==="desktop"?120:96,{uv:true})+'<h2 class="fh" id="flt">Club <em>Fundador</em></h2><p class="fp">Los primeros entrenadores de ProTeam no son unos usuarios más: tienen su insignia numerada, un trato de tú a tú y voz en lo que construimos.</p><p class="fnote">Tu insignia se consigue desde la lista de espera, compartiendo una historia.</p></div><div style="min-width:0">'+list+'<div class="myst" data-prop>'+badge(48,{})+'<p><strong>No contamos cuántos somos.</strong>Cada insignia lleva su número y ninguno se repite.</p></div>'+cta+'</div></div></section>'+foot+'</div>'}
 
+
+  // Cabecera de la portada en el móvil: una frase, la fecha, un botón (P1 de Samuel). Sin ultravioleta: aquí lo activo es el botón, en blanco (luz).
+  function cabecera(){
+    var st=S.state,first=st==="first",mob=S.view==="mobile";
+    var fold=mob?'<div class="fold" style="top:'+S.fold+'px"><span>Fin de la primera pantalla · '+(S.fold==="553"?"375×667, Safari":"390×844, Safari")+' (aprox.)</span></div>':'';
+    if(S.ver==="cur"){
+      return '<div class="hero"><div class="cur"><p class="sport-word">ProTeam</p><p class="bn">Hecho en el banquillo, no en una oficina.</p><h1>Blackout Friday</h1><p class="d">Apúntate a la lista de espera antes del '+dt(d().close)+' y consigue 3 meses gratis.</p><div class="timer" role="timer" id="tm">'+timerHTML()+'</div><div class="two"><button class="btn btn-p" data-act="toast" data-msg="Abre el registro (AuthOverlay)">Apúntate a la lista de espera →</button><button class="btn btn-o" data-act="toast" data-msg="Abre «Iniciar sesión» (AuthOverlay)">Iniciar sesión</button></div></div><div class="ghost">… «Prepara. Compite. Mejora.», funciones, «Así funciona la oferta», Club Fundador, «Quedan» …</div>'+fold+'</div>';
+    }
+    var label=S.btn==="b"?"Entrar en la lista":"Apúntate a la lista de espera";
+    var offer=S.btn==="c"?'<small data-prop>3 meses gratis si te apuntas antes del '+dt(d().close)+' a las 23:59.</small>':'';
+    var title='<h1 class="h-title" data-prop>La lista se cierra el <span class="lit">'+d().closeDay+' '+dt(d().close)+'</span>.</h1><p class="h-myst" data-prop>Lo que hay dentro se abre al día siguiente.</p>';
+    var err=S.heroErr||st==="error"?'<div class="msg err" role="alert" data-prop>'+PHONE.replace('width="74" height="58"','width="46" height="36"')+'<span>No hemos podido abrir el registro. Revisa tu conexión y vuelve a intentarlo.</span></div>':'';
+    var cta='<div class="h-cta"><button class="btn btn-w" data-act="register">'+label+' →</button>'+offer+err+'</div>';
+    var timer=first?'<div class="timer" aria-hidden="true" style="visibility:hidden">'+timerHTML()+'</div>':'<div class="timer" role="timer" id="tm">'+timerHTML()+'</div>';
+    return '<div class="hero"><div class="h-strip"><b>ProTeam</b><a href="#" data-act="toast" data-msg="Abre «Iniciar sesión» (AuthOverlay)">Iniciar sesión</a></div><section class="h-main" aria-labelledby="ht"><p class="h-note">Hecho en el banquillo, no en una oficina.</p>'+title.replace('class="h-title"','class="h-title" id="ht"')+cta+'</section><div class="h-dim" data-prop><p>Quedan</p>'+timer+'</div><div class="ghost">… baja el resto: Club Fundador (con el rayo en ultravioleta), funciones, «Así funciona la oferta» …</div>'+fold+'</div>';
+  }
+
   function render(){
     var f=frame;f.className="frame "+S.view+(document.getElementById("chkProp").checked?" show-prop":"");
-    var url=S.screen==="espera"?"app · lista de espera":"proteam · portada (campaña)";
+    var url=S.screen==="espera"?"app · lista de espera":S.screen==="cabecera"?"proteam · portada, primera pantalla":"proteam · portada (campaña)";
     var html=(S.view==="desktop"?'<div class="urlbar"><span class="dots"><i></i><i></i><i></i></span><b>'+url+'</b></div>':'');
-    html+=S.screen==="espera"?espera():portada();
+    html+=S.screen==="espera"?espera():S.screen==="cabecera"?cabecera():portada();
     if(S.sheet) html+=sheetHTML();
     if(S.letter) html+=letterHTML();
     if(S.toast) html+='<div class="toast" role="status">'+S.toast+'</div>';
@@ -332,12 +395,15 @@ code{font-size:12px;color:var(--ice);background:var(--s2);padding:1px 5px;border
     else if(a==="retry"){S.state="loading";fillStates();render();setTimeout(function(){S.state="none";fillStates();render()},900)}
     else if(a==="share")toast("Se abre el menú de compartir del móvil");
     else if(a==="download")toast("Se descarga proteam-club-fundador.jpg");
-    else if(a==="toast")toast(t.dataset.msg)});
+    else if(a==="toast"){e.preventDefault();toast(t.dataset.msg)}
+    else if(a==="register"){if(S.state==="error"){S.heroErr=true;render();return}S.heroErr=false;toast("Abre el registro actual (AuthOverlay, «Crear cuenta»)")}});
   document.addEventListener("keydown",function(e){if(e.key==="Escape"&&(S.sheet||S.letter)){S.sheet=S.letter=false;render()}});
-  document.getElementById("selState").addEventListener("change",function(e){S.state=e.target.value;S.sheet=S.letter=false;render()});
+  document.getElementById("selState").addEventListener("change",function(e){S.state=e.target.value;S.heroErr=false;S.sheet=S.letter=false;render()});
   function seg(id,key){var el=document.getElementById(id);el.addEventListener("click",function(e){var b=e.target.closest("button");if(!b)return;S[key]=b.dataset.v;[].forEach.call(el.children,function(x){x.setAttribute("aria-pressed",x===b)});
-    if(key==="screen"){S.state=S.screen==="espera"?"none":"campaign";S.sheet=S.letter=false;fillStates()}render()})}
-  seg("segScreen","screen");seg("segView","view");seg("segDates","dates");
+    if(key==="screen"){S.state=S.screen==="espera"?"none":S.screen==="cabecera"?"normal":"campaign";S.sheet=S.letter=false;S.heroErr=false;fillStates();heroCtl()}render()})}
+  function heroCtl(){var on=S.screen==="cabecera";["ctlHero","ctlBtn","ctlFold"].forEach(function(id){document.getElementById(id).hidden=!on})}
+  seg("segScreen","screen");seg("segView","view");seg("segDates","dates");seg("segVer","ver");seg("segFold","fold");
+  document.getElementById("selBtn").addEventListener("change",function(e){S.btn=e.target.value;render()});
   document.getElementById("chkProp").addEventListener("change",render);
   if(window.matchMedia&&matchMedia("(min-width:900px)").matches){S.view="desktop";[].forEach.call(document.getElementById("segView").children,function(x){x.setAttribute("aria-pressed",x.dataset.v==="desktop")})}
   fillStates();render();

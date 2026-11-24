@@ -1,7 +1,7 @@
 # Ficha · Pantalla de espera y portada: bloque del Club Fundador
 
-**Agente:** Irene (P1) · **Fecha:** 22/11/2026, rehecha en v4 el 23/11 · **Tareas:** `exp-espera-club`, `irene-v4-paleta`
-**Prototipo navegable:** https://claude.ai/artifact/DHjcLazBbp559Dfp5sbVZh (versión 2, sistema v4; móvil 375 y escritorio; selector de estados; selector de fechas; casilla «Marcar lo propuesto»)
+**Agente:** Irene (P1) · **Fecha:** 22/11/2026, rehecha en v4 el 23/11, cabecera móvil el 24/11 · **Tareas:** `exp-espera-club`, `irene-v4-paleta`, `t-20261124-p1-portada-movil`
+**Prototipo navegable:** https://claude.ai/artifact/DHjcLazBbp559Dfp5sbVZh (versión 3, sistema v4; pantallas «Espera (app)», «Portada (web)» y «Cabecera móvil (web)»; móvil 375 y escritorio; selector de estados; selector de fechas; casilla «Marcar lo propuesto»)
 **Fuente del prototipo:** `agencia/experiencia/prototipos/club-fundador-espera.html`
 **Base:** rama `revision/club-fundador` de proteamapp (PR #1): `access-gate-screen.tsx`, `founder/founder-section.tsx`, `founder/founder-landing.tsx`, `founder/founder-badge.tsx`, `founder/founder-welcome.tsx`, `lib/founder.ts`, `routes/index.tsx`.
 
@@ -23,6 +23,39 @@ Manda `agencia/sistema-v4/IDENTIDAD.md` y el apartado «La misma dirección en l
 **Fechas (supuesto por confirmar, RELANZAMIENTO.md):** el prototipo enseña por defecto lista hasta el **jueves 10/12 a las 23:59** y apertura el **viernes 11/12**, con un selector para ver las del código actual (27/11 y 28/11). Textos que cambian si Biel lo confirma: «El 11 te abrimos la puerta.» · «Tu prueba gratuita de 3 meses empieza el 11 de diciembre a las 00:00.» · ventaja «Empiezan el 11 de diciembre.» · «3 meses gratis si te apuntas antes del 10 de diciembre a las 23:59.» · «La lista de espera se cerró el 10 de diciembre.» · cuenta atrás al 11/12 00:00. En código: `access-gate-screen.tsx`, `founder-landing.tsx`, `BLACKOUT_FRIDAY_END` y la migración de prueba (por PR, no lo toco).
 
 **Arreglo del prototipo:** en la versión 2 los botones dentro de la ventana (cerrar, compartir, descargar) ya responden; en la 1 la ventana bloqueaba los clics.
+
+## 0b. Cabecera de la portada en el móvil (24/11, propuesta P1 de Samuel)
+Origen: `reports/embudo-2026-11-24.md` (apartado 3, P1). Datos de Samuel: el 82 % de las visitas de la semana entraron desde el móvil (245 de 298) y 298 visitantes dieron 33 cuentas (11 %). Base en código: `src/routes/index.tsx` (sección `sport-hero`) y `landing/blackout-friday.tsx` (`AuthButtons`, `BlackoutCountdown`). En el prototipo: pantalla «Cabecera móvil (web)», con «Propuesta» y «Actual (hoy)» y una línea discontinua donde acaba la primera pantalla (aprox.: 375×667 y 390×844 con las barras de Safari).
+
+**Lo que se ve hoy en la primera pantalla del móvil (código):** «ProTeam» grande, «Hecho en el banquillo, no en una oficina.», «Blackout Friday», la frase de la oferta, la cuenta atrás gigante (text-5xl) y dos botones. En un móvil pequeño, «Iniciar sesión» queda en el borde y la cuenta atrás ocupa el centro: es lo que más pesa y no es una acción.
+
+| Elemento | Propuesta | Estado |
+|---|---|---|
+| Barra de arriba | «ProTeam» a la izquierda y «Iniciar sesión» a la derecha (mismo enlace `?auth=login`) | Propuesta: «Iniciar sesión» sale de la pareja de botones para que quede uno solo |
+| Línea pequeña | «Hecho en el banquillo, no en una oficina.» (texto actual) | Se conserva |
+| Titular | «La lista se cierra el **jueves 10 de diciembre**.» La fecha en azul hielo; un haz recorre la fecha una vez (1,4 s; nada con «reducir movimiento») | Propuesta. Sustituye a «Blackout Friday» en la cabecera |
+| Frase de misterio | «Lo que hay dentro se abre al día siguiente.» (de Samuel) | Propuesta |
+| Botón | Uno solo, en blanco (la luz = lo activo), a todo el ancho, 54 px de alto. Texto: «Apúntate a la lista de espera» (el actual) o «Entrar en la lista» (Samuel); selector en el prototipo | Propuesta, decide Biel |
+| Oferta | Sin línea de oferta en la primera pantalla (Samuel). Opción en el selector: «3 meses gratis si te apuntas antes del 10 de diciembre a las 23:59.» (texto ya aprobado del bloque del Club) | Decide Biel |
+| Cuenta atrás | Debajo, con «Quedan», más pequeña y en penumbra (55 %); en un móvil pequeño queda fuera de la primera pantalla | Propuesta |
+| Club Fundador y funciones | Bajan sin cambios (el Club con su rayo en ultravioleta) | Se conservan |
+| Ultravioleta | Ninguno en la primera pantalla: lo activo es el botón y va en blanco. El ultravioleta sigue en el rayo del Club, más abajo | Propuesta |
+| Textura | Grano muy fino solo en el bloque de cabecera (documento de dirección, «La misma dirección en la web y la app») | Propuesta |
+| Escritorio | Misma cabecera centrada (titular a 60 px); la cuenta atrás asoma debajo | Propuesta |
+
+**Estados del prototipo:**
+- *Primera pantalla*: lo de arriba.
+- *Primer fotograma (antes de cargar)*: la frase, la fecha y el botón ya vienen en el HTML (no dependen de la hora), así que se ven desde el primer instante; solo la cuenta atrás espera, con su hueco reservado para que nada salte (como hoy).
+- *Error al abrir el registro*: si falla, mensaje dentro de la cabecera con el móvil boca abajo (objeto real provisional) en coral suave: «No hemos podido abrir el registro. Revisa tu conexión y vuelve a intentarlo.» Texto nuevo.
+- *Vacío / lista cerrada*: desde el cierre la portada pasa a la rama fuera de campaña (`campaign=false`), que es otra ficha (`portada-fuera-campana.md`); esta cabecera no se ve.
+
+**Textos nuevos (para `t()`):** «La lista se cierra el jueves 10 de diciembre.» · «Lo que hay dentro se abre al día siguiente.» · (opcional) «Entrar en la lista» · «No hemos podido abrir el registro. Revisa tu conexión y vuelve a intentarlo.». Con las fechas del código serían «…el viernes 27 de noviembre.» (el 27/11/2026 es viernes; el 10/12/2026, jueves).
+
+**Componentes:** `src/routes/index.tsx` (sección `sport-hero`: orden, titular, un botón; la cuenta atrás baja), `landing/blackout-friday.tsx` (`AuthButtons` con variante de un botón, o el botón suelto; `BlackoutCountdown` con tamaño «sm» en penumbra), la cabecera pública para «Iniciar sesión». Sin cambios en registro, funciones de servidor ni base de datos. El `head.description` («Blackout Friday…») ya está anotado en `portada-fuera-campana.md`.
+
+**Cómo se mide (Samuel):** cuentas nuevas ÷ visitantes de la portada cada martes y viernes, frente al 11 %. Hoy la web no registra el clic en el botón (apartado 4 del informe): si Biel quiere medir el clic, es una tarea para R1, no de diseño.
+
+**Lo que no aparece:** número de apuntados, escasez o plazas, precio, nombre de Biel.
 
 ## 1. Qué se conserva (sin tocar)
 - Flujo completo de la insignia: botón → ventana con 3 pasos → imagen `public/club-fundador/compartir.jpg` → «Compartir» (solo si `navigator.share` existe) y «Descargar imagen» → campo de usuario de Instagram → «Ya la he compartido» / «Actualizar solicitud» → RPC `request_founder_badge`.
@@ -80,3 +113,7 @@ Manda `agencia/sistema-v4/IDENTIDAD.md` y el apartado «La misma dirección en l
 4. ¿Botón de registro dentro del bloque del Club en la portada, o solo los que ya hay arriba y abajo?
 5. Hueco «Nº ___»: ¿cuándo empiezan a asignarse números (y los del 1 al 10)? Mientras no haya, los verificados verán «Aquí aparecerá tu número cuando lo asignemos.».
 6. ¿Quién verifica mientras tanto? (hoy, tú).
+7. **Cabecera móvil (24/11):** ¿una sola frase con la fecha y un solo botón en la primera pantalla del móvil, con «Iniciar sesión» arriba y la cuenta atrás debajo en penumbra?
+8. ¿Botón «Apúntate a la lista de espera» (el actual) o «Entrar en la lista»?
+9. ¿Sin la línea de «3 meses gratis» en la primera pantalla, o la dejamos bajo el botón? (Sin ella, la oferta aparece más abajo, en el Club.)
+10. ¿Se deja de llamar «Blackout Friday» a la campaña ahora que el cierre es el 10/12? La cabecera nueva no lo nombra; la descripción para Google y la etiqueta de la cuenta atrás todavía sí.
