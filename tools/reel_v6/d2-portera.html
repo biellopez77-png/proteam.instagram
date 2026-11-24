@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8">
+<style>
+@font-face{font-family:M;font-weight:800;src:url(/tools/reel_v5/node_modules/@fontsource/plus-jakarta-sans/files/plus-jakarta-sans-latin-800-normal.woff2)}
+@font-face{font-family:M;font-weight:700;src:url(/tools/reel_v5/node_modules/@fontsource/plus-jakarta-sans/files/plus-jakarta-sans-latin-700-normal.woff2)}
+@font-face{font-family:M;font-weight:500;src:url(/tools/reel_v5/node_modules/@fontsource/plus-jakarta-sans/files/plus-jakarta-sans-latin-500-normal.woff2)}
+@font-face{font-family:S;font-style:italic;font-weight:400;src:url(/tools/fonts/instrument-serif-latin-400-italic.woff2)}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#02050F}
+#st{position:absolute;inset:0;overflow:hidden;background:#02050F}
+#world{position:absolute;left:0;top:0;transform-origin:0 0;will-change:transform}
+.o{position:absolute;left:0;top:0;transform-origin:50% 50%}
+.card{background:#0C1323;box-shadow:0 18px 50px rgba(20,18,12,.10)}
+.frame{background:#0C1323;padding:14px;box-shadow:0 18px 50px rgba(20,18,12,.10)}
+.frame img{display:block;width:100%;height:100%;object-fit:cover}
+.lab{font-family:M;font-weight:800;font-size:25px;letter-spacing:.14em;color:#8f9bb8}
+.num{position:absolute;font-family:M;font-weight:800;letter-spacing:-.05em;color:#F4F7FB;white-space:nowrap;line-height:1}
+.hand{position:absolute;font-family:S;font-style:italic;white-space:nowrap;line-height:1}
+#cap{position:absolute;left:90px;right:90px;top:1330px;text-align:center;font-family:M;font-weight:800;font-size:58px;line-height:1.12;letter-spacing:-.03em;color:#F4F7FB;padding:18px 26px;border-radius:22px}
+#cap em{font-family:S;font-style:italic;font-weight:400;font-size:1.14em;letter-spacing:0}
+#ink{position:absolute;inset:0;background:#000;opacity:0;pointer-events:none}
+#mid{position:absolute;left:70px;right:70px;top:640px;text-align:center;color:#F4F7FB;opacity:0}
+#mid .a{font-family:S;font-style:italic;font-size:108px;line-height:1.06}
+</style><style>html,body,#st{background:#02050F!important}#st{background:radial-gradient(ellipse at 50% 40%,#0C1323 0%,#02050F 72%)!important}
+img{filter:url(#duo)!important}#grain{opacity:.16!important;mix-blend-mode:screen}</style>
+<svg width="0" height="0" style="position:absolute"><filter id="duo" color-interpolation-filters="sRGB"><feColorMatrix type="matrix" values=".33 .33 .33 0 0 .33 .33 .33 0 0 .33 .33 .33 0 0 0 0 0 1 0"/><feComponentTransfer><feFuncR type="table" tableValues="0.008 0.18 0.416 0.957"/><feFuncG type="table" tableValues="0.02 0.235 0.659 0.969"/><feFuncB type="table" tableValues="0.059 0.667 1 0.984"/></feComponentTransfer></filter></svg></head><body><div id="st">
+<div id="world">
+  <!-- gancho: 12 y 20 (escena de ejemplo) -->
+  <div class="o card" id="HK" style="width:960px;height:520px">
+    <div class="lab" style="position:absolute;left:0;right:0;top:44px;text-align:center">SÁBADO · EJEMPLO</div>
+    <div class="num" style="left:0;width:480px;top:130px;text-align:center;font-size:230px">12</div>
+    <div class="num" style="left:480px;width:480px;top:130px;text-align:center;font-size:230px;color:#B9E0FF">20</div>
+    <div style="position:absolute;left:479px;top:140px;width:2px;height:280px;background:#8f9bb8"></div>
+    <div class="lab" style="position:absolute;left:0;width:480px;top:392px;text-align:center;font-size:30px;color:#F4F7FB">PARADAS</div>
+    <div class="lab" style="position:absolute;left:480px;width:480px;top:392px;text-align:center;font-size:30px;color:#F4F7FB">GOLES</div>
+  </div>
+  <!-- la portera (foto real) -->
+  <div class="o frame" id="PH" style="width:900px;height:600px"><img id="PHi" src="/tools/reel_v4/d2-portera/img/portera.jpg"></div>
+  <!-- marcador -->
+  <div class="o card" id="MK" style="width:860px;height:520px">
+    <div class="lab" style="position:absolute;left:0;right:0;top:46px;text-align:center">SÁBADO · INFANTIL · EJEMPLO</div>
+    <div class="num" style="left:130px;width:240px;top:120px;text-align:center;font-size:170px">14</div>
+    <div class="num" style="left:380px;width:100px;top:120px;text-align:center;font-size:170px;color:#8f9bb8">–</div>
+    <div class="num" style="left:490px;width:240px;top:120px;text-align:center;font-size:170px">20</div>
+    <div class="lab" style="position:absolute;left:130px;width:240px;top:310px;text-align:center;font-size:22px">VOSOTRAS</div>
+    <div class="lab" style="position:absolute;left:490px;width:240px;top:310px;text-align:center;font-size:22px">RIVAL</div>
+    <div class="hand" id="m6" style="left:0;right:0;top:380px;text-align:center;font-size:84px;color:#B9E0FF">−6</div>
+  </div>
+  <!-- en el vestuario (foto real, fría) -->
+  <div class="o frame" id="VS" style="width:560px;height:760px"><img src="/tools/reel_v4/d2-portera/img/portera.jpg" style="object-position:50% 40%;filter:grayscale(.85) contrast(.95) brightness(.97)"></div>
+  <!-- el veinte -->
+  <div class="o frame" id="TP" style="width:420px;height:560px"><img id="TPi" src="/tools/reel_v4/d2-portera/img/portera.jpg" style="object-position:50% 40%;filter:grayscale(1)"></div>
+  <div class="num" id="b20" style="font-size:520px;color:#B9E0FF;transform-origin:50% 50%">20</div>
+  <!-- le tiraron (foto real) -->
+  <div class="o frame" id="LZ" style="width:900px;height:600px"><img src="/tools/reel_v4/d2-portera/img/lanzadora.jpg" style="filter:saturate(.75)"></div>
+  <!-- la portería -->
+  <svg class="o" id="GO" width="900" height="780" viewBox="0 0 900 780" style="overflow:visible">
+    <rect x="0" y="0" width="900" height="780" fill="#0C1323" style="filter:drop-shadow(0 18px 40px rgba(20,18,12,.10))"/>
+    <text x="60" y="80" font-family="M" font-weight="800" font-size="25" letter-spacing="3.5" fill="#8f9bb8">TIROS A PORTERÍA · EJEMPLO</text>
+    <g stroke="#F4F7FB" stroke-width="2" id="net"></g>
+    <path d="M90 650 L90 170 L810 170 L810 650" fill="none" stroke="#F4F7FB" stroke-width="14" stroke-linejoin="round"/>
+    <line x1="40" y1="650" x2="860" y2="650" stroke="#8f9bb8" stroke-width="3"/>
+    <g id="marks"></g>
+    <text id="t32" x="450" y="730" text-anchor="middle" font-family="M" font-weight="800" font-size="48" fill="#F4F7FB">32 tiros</text>
+  </svg>
+  <!-- la cuenta -->
+  <div class="o card" id="CU" style="width:900px;height:780px">
+    <div class="lab" style="position:absolute;left:0;right:0;top:52px;text-align:center">PORCENTAJE DE PARADAS</div>
+    <div class="lab" id="fm" style="position:absolute;left:0;right:0;top:100px;text-align:center;font-size:22px;letter-spacing:.06em;color:#8f9bb8">paradas ÷ tiros</div>
+    <div class="num" id="k12" style="left:160px;top:180px;font-size:190px">12</div>
+    <div class="num" id="k32" style="left:420px;top:180px;font-size:190px;color:#8f9bb8">/ 32</div>
+    <div class="num" id="kp" style="left:0;right:0;top:420px;text-align:center;font-size:200px;color:#6AA8FF">37,5 %</div>
+    <div class="hand" id="ka" style="left:0;right:0;top:650px;text-align:center;font-size:74px;color:#6AA8FF">su mejor del año</div>
+  </div>
+  <!-- la hoja: tiros y paradas -->
+  <svg class="o" id="SH" width="900" height="1080" viewBox="0 0 900 1080" style="overflow:visible">
+    <rect x="0" y="0" width="900" height="1080" fill="#0C1323" style="filter:drop-shadow(0 18px 40px rgba(20,18,12,.10))"/>
+    <text x="450" y="80" text-anchor="middle" font-family="M" font-weight="800" font-size="25" letter-spacing="3.5" fill="#8f9bb8">PARTIDO · EJEMPLO</text>
+    <g font-family="M" font-weight="800" font-size="50" fill="#F4F7FB" text-anchor="middle"><text x="225" y="190">TIROS</text><text x="675" y="190">PARADAS</text></g>
+    <line x1="450" y1="130" x2="450" y2="980" stroke="#8f9bb8" stroke-width="3"/>
+    <line x1="60" y1="225" x2="840" y2="225" stroke="#8f9bb8" stroke-width="3"/>
+    <g id="tal" fill="none" stroke="#F4F7FB" stroke-width="7" stroke-linecap="round"></g>
+    <g font-family="M" font-weight="800" font-size="120" text-anchor="middle"><text id="tt" x="225" y="930" fill="#F4F7FB">32</text><text id="tp" x="675" y="930" fill="#6AA8FF">12</text></g>
+  </svg>
+  <!-- jornada a jornada -->
+  <svg class="o" id="CH" width="900" height="820" viewBox="0 0 900 820" style="overflow:visible">
+    <rect x="0" y="0" width="900" height="820" fill="#0C1323" style="filter:drop-shadow(0 18px 40px rgba(20,18,12,.10))"/>
+    <text x="60" y="80" font-family="M" font-weight="800" font-size="25" letter-spacing="3.5" fill="#8f9bb8">% DE PARADAS · EJEMPLO</text>
+    <line x1="50" y1="700" x2="850" y2="700" stroke="#8f9bb8" stroke-width="2"/>
+    <g id="cbars"></g>
+    <text id="cv" x="800" y="0" text-anchor="middle" font-family="M" font-weight="800" font-size="40" fill="#6AA8FF">37,5 %</text>
+  </svg>
+  <div class="hand" id="ln" style="font-size:62px;color:#6AA8FF">el lunes, a ella primero</div>
+  <!-- el veinte era mentira -->
+  <div class="o card" id="Z20" style="width:860px;height:620px">
+    <div class="num" style="left:0;right:0;top:110px;text-align:center;font-size:300px">20</div>
+    <div class="lab" style="position:absolute;left:0;right:0;top:440px;text-align:center;font-size:30px;color:#F4F7FB">GOLES</div>
+    <svg style="position:absolute;left:0;top:0;overflow:visible" width="860" height="620" viewBox="0 0 860 620"><path id="zs" d="M230 270 C 380 250 500 262 640 238" fill="none" stroke="#6AA8FF" stroke-width="18" stroke-linecap="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/></svg>
+    <div class="hand" id="zp" style="left:0;right:0;top:505px;text-align:center;font-size:72px;color:#6AA8FF">12 de 32 · 37,5 %</div>
+  </div>
+  <!-- marca -->
+  <div class="o" id="B" style="width:900px;height:500px;text-align:center">
+    <div class="num" style="position:static;font-size:170px;margin-top:120px">Pro<span style="color:#6AA8FF">Team</span></div>
+    <div style="margin-top:30px;font-family:M;font-weight:500;font-size:38px;color:#8f9bb8">la app del entrenador · enlace en la bio</div>
+  </div>
+</div>
+<div id="cap"></div>
+<div id="ink"></div>
+<div id="mid"><div class="a">Y la semana que viene,<br>con la cabeza baja.</div></div>
+</div>
+<script src="/tools/reel_v4/d2-portera/times.js"></script>
+<script>
+const $=id=>document.getElementById(id), W=window.WORDS, NS='http://www.w3.org/2000/svg';
+const at=(w,n=1)=>{let c=0;for(const x of W)if(x[0]===w&&++c===n)return x[1];throw 'no '+w};
+const cl=(x,a=0,b=1)=>Math.min(b,Math.max(a,x)), r=(t,a,b)=>cl((t-a)/(b-a));
+const io=x=>x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2, eo=x=>1-Math.pow(1-x,3), lerp=(a,b,k)=>a+(b-a)*k;
+const T={le:at('le'),y1:at('y'),mejor:at('mejor'),temp:at('temporada'),sab:at('sabado'),seis:at('seis'),vest:at('vestuario'),tu:at('tu'),v2:at('veinte',2),ella:at('ella'),tamb:at('tambien'),
+ lo:at('lo'),tiraron:at('tiraron'),tr1:at('treinta'),dos1:at('dos'),veces:at('veces'),doce2:at('doce',2),tr2:at('treinta',2),porc:at('porcentaje'),ano:at('ano'),ys:at('y',6),
+ cuenta:at('cuenta'),tiros:at('tiros'),goles:at('goles'),cada:at('cada'),calc:at('calculo'),lunes:at('lunes'),ensenas:at('ensenas'),el6:at('el',6),v3:at('veinte',3),era:at('era'),mentira:at('mentira'),
+ mand:at('mandaselo'),apunt:at('apuntalo'),porque:at('porque'),END:window.VEND+.25};
+// zonas del tablero
+const HK=[0,0], PH=[1400,0], MK=[2800,0], VS=[4100,0], T20=[0,2100], LZ=[1400,2100], GO=[2800,2100], CU=[4200,2100], SH=[0,4300], CH=[1400,4300], Z2=[2800,4300], B=[4200,4300], PE=[5600,4300];
+const CUT1=T.cuenta-.15;
+const SH_=[ // [inicio del movimiento, cx, cy, zoom] · planos fijos, se mueve solo al cambiar de zona
+ [0,HK[0]-240,HK[1]+20,1.9],
+ [T.le-.3,HK[0]+240,HK[1]+20,1.9],
+ [T.y1-.3,PH[0],PH[1],1.08],
+ [T.temp-.35,PH[0]+40,PH[1]-70,1.75],
+ [T.sab-.35,MK[0],MK[1]-10,1.15],
+ [T.vest-.35,VS[0],VS[1]-30,1.3],
+ [T.tu-.35,T20[0],T20[1]-20,1.1],
+ [T.lo-.3,LZ[0],LZ[1],1.08],
+ [T.tr1-.4,GO[0],GO[1]-10,1.08],
+ [T.doce2-.35,CU[0],CU[1]-120,1.15],
+ [T.porc-.3,CU[0],CU[1]+120,1.35],
+ [CUT1,SH[0],SH[1]-40,1.0],
+ [T.cada-.3,CH[0],CH[1]-20,1.08],
+ [T.lunes-.3,CH[0]+120,CH[1]-100,1.3],
+ [T.el6-.35,Z2[0],Z2[1]-10,1.15],
+ [T.apunt-.35,B[0],B[1],1.0],
+ [T.porque+.1,PE[0]-240,PE[1]+20,1.9]];
+const CUTS=new Set([CUT1]);
+function cam(t){let i=0;while(i+1<SH_.length&&SH_[i+1][0]<=t)i++;const s=SH_[i];
+ if(i===0||CUTS.has(s[0]))return [s[1],s[2],s[3],0];
+ const p=SH_[i-1],D=.62,k=r(t,s[0],s[0]+D),e=io(k);
+ const lz=lerp(Math.log(p[3]),Math.log(s[3]),e)-.12*Math.sin(Math.PI*k)*(Math.hypot(s[1]-p[1],s[2]-p[2])>600?1:0);
+ return [lerp(p[1],s[1],e),lerp(p[2],s[2],e),Math.exp(lz),k>0&&k<1?Math.sin(Math.PI*k):0]}
+const sz=el=>[el.offsetWidth||+el.getAttribute('width'),el.offsetHeight||+el.getAttribute('height')];
+function place(el,x,y,rot=0,sc=1){const [w,h]=sz(el);el.style.transform=`translate(${x-w/2}px,${y-h/2}px) rotate(${rot}deg) scale(${sc})`}
+function put(el,x,y,a=1){el.style.left=x+'px';el.style.top=y+'px';el.style.opacity=a}
+const dash=(id,k)=>{const e=typeof id==='string'?$(id):id;e.setAttribute('stroke-dashoffset',100-100*k);e.style.visibility=k>0.002?'visible':'hidden'};
+const mk=(tag,at,par)=>{const e=document.createElementNS(NS,tag);for(const k in at)e.setAttribute(k,at[k]);par.appendChild(e);return e};
+// red de la portería y 32 tiros (20 goles en rojo, 12 paradas en azul), posiciones fijas
+{const g=$('net');for(let x=150;x<810;x+=60)mk('line',{x1:x,y1:178,x2:x,y2:648},g);for(let y=230;y<650;y+=60)mk('line',{x1:98,y1:y,x2:802,y2:y},g)}
+let sd=11;const rnd=()=>(sd=(sd*16807)%2147483647)/2147483647;
+const MR=[];{const g=$('marks');const kinds=[];for(let i=0;i<32;i++)kinds.push(i%8===2||i%8===5||i%8===7?1:0);
+ // 12 paradas exactas
+ let c=kinds.reduce((a,b)=>a+b,0);for(let i=0;c<12;i++)if(!kinds[i]){kinds[i]=1;c++}
+ for(let i=0;i<32;i++){const x=130+rnd()*640,y=210+rnd()*400;const s=kinds[i];
+  const e=s?mk('circle',{cx:x,cy:y,r:17,fill:'none',stroke:'#6AA8FF','stroke-width':6},g):mk('circle',{cx:x,cy:y,r:13,fill:'#B9E0FF'},g);MR.push(e)}}
+// palotes: 32 tiros y 12 paradas
+const TL=[];{const g=$('tal');const grp=(n,x0,col)=>{for(let i=0;i<n;i++){const gi=Math.floor(i/5),j=i%5,ox=x0+(gi%3)*125,oy=270+Math.floor(gi/3)*150;
+  const d=j<4?`M${ox+j*22} ${oy} L${ox+j*22} ${oy+100}`:`M${ox-14} ${oy+78} L${ox+80} ${oy+22}`;
+  const e=mk('path',{d,pathLength:100,'stroke-dasharray':100,'stroke-dashoffset':100},g);if(col)e.setAttribute('stroke',col);TL.push([e,col?1:0,i,n])}};
+ grp(32,62,null);grp(12,512,'#2f6bff')}
+// barras por jornada
+const CV=[31,28,33,26,30,29,32,27,37.5],CB=[];
+{const g=$('cbars');CV.forEach((v,i)=>{const x=100+i*87.5;const rc=mk('rect',{x:x-28,width:56,fill:i===8?'#6AA8FF':'#636DFF'},g);
+  const tx=mk('text',{x,y:745,'text-anchor':'middle','font-family':'M','font-weight':700,'font-size':24,fill:'#8f9bb8'},g);tx.textContent='J'+(i+1);CB.push([rc,v,i])})}
+const CAPS=[[.25,T.le-.25,'Paró <em>doce.</em>'],[T.le,T.y1-.2,'Le marcaron <em>veinte.</em>'],[T.y1,T.sab-.3,'Y fue su <em>mejor partido.</em>','bg'],
+ [T.sab,T.vest-.3,'Sábado.<br><em>Perdéis de seis.</em>'],[T.vest-.1,T.tu-.3,'En el vestuario,<br><em>nadie la mira.</em>'],[T.tu,T.lo-.3,'Tú ves el veinte.<br><em>Ella también.</em>'],
+ [T.lo,T.doce2-.3,'Le tiraron<br><em>treinta y dos veces.</em>'],[T.doce2,T.ys-.45,'Su mejor porcentaje<br><em>del año.</em>','bg'],
+ [T.cuenta+.1,T.cada-.25,'Cuenta tiros,<br><em>no goles.</em>','bg'],[T.cada,T.lunes-.25,'Cada partido,<br><em>el mismo cálculo.</em>'],[T.lunes,T.el6-.3,'Y el lunes, a ella<br><em>antes que a nadie.</em>','bg'],
+ [T.el6,T.mand-.25,'El veinte<br><em>era mentira.</em>'],[T.mand,T.apunt-.4,'Mándaselo<br><em>a tu portera.</em>'],[T.porque+.3,T.END-.6,'Paró doce<br><em>y fue su mejor partido.</em>']];
+window.frame=function(t){
+  const [cx,cy,z,mv]=cam(t);
+  const wd=$('world');wd.style.transform=`translate(540px,760px) scale(${z}) translate(${-cx}px,${-cy}px)`;
+  wd.style.filter=mv>.35?`blur(${(2.6*(mv-.35)/.65).toFixed(2)}px)`:'none';
+  // gancho: al principio en HK; en la parte final, junto a la marca (PE), para el final circular
+  const pre=t<CUT1;place($('HK'),pre?HK[0]:PE[0],pre?HK[1]:PE[1]);
+  // portera: blanco y negro → color en «mejor»
+  place($('PH'),PH[0],PH[1],-1);$('PHi').style.filter=`url(#duo) grayscale(${1-io(r(t,T.mejor-.1,T.mejor+.7))})`;
+  // marcador
+  place($('MK'),MK[0],MK[1]);const k6=eo(r(t,T.seis-.05,T.seis+.35));$('m6').style.opacity=k6;$('m6').style.filter=k6<1?`blur(${(1-k6)*5}px)`:'none';
+  place($('VS'),VS[0],VS[1],1);
+  // el veinte crece y tapa la foto (cambio de foco)
+  const kg=io(r(t,T.v2-.1,T.tamb+.3));place($('TP'),T20[0]-170,T20[1]-60,-1.5);$('TPi').style.filter=`url(#duo) grayscale(1) blur(${(kg*7).toFixed(2)}px)`;
+  const b=$('b20');const [bw,bh]=sz(b);b.style.left=(T20[0]+110-bw/2)+'px';b.style.top=(T20[1]+40-bh/2)+'px';b.style.transform=`scale(${.72+.5*kg})`;b.style.opacity=.35+.65*r(t,T.tu,T.v2);
+  place($('LZ'),LZ[0],LZ[1],1);
+  // portería: 32 tiros
+  place($('GO'),GO[0],GO[1]);MR.forEach((e,i)=>{const s=T.tr1+i*(T.veces+.35-T.tr1)/32;const k=eo(r(t,s,s+.18));e.setAttribute('opacity',k)});
+  $('t32').setAttribute('opacity',r(t,T.dos1,T.dos1+.35));
+  // la cuenta
+  place($('CU'),CU[0],CU[1]);
+  const ap=(id,s)=>{const k=eo(r(t,s-.05,s+.3));$(id).style.opacity=k;$(id).style.transform=`translateY(${(1-k)*14}px)`;$(id).style.filter=k<1?`blur(${(1-k)*5}px)`:'none'};
+  ap('k12',T.doce2);ap('k32',T.tr2);ap('fm',T.tr2+.3);ap('kp',T.porc);ap('ka',T.ano);
+  // hoja
+  place($('SH'),SH[0],SH[1]);
+  TL.forEach(([e,p,i,n])=>{const a=p?T.goles-.2:T.tiros-.1,bb=p?T.goles+.55:T.goles+.3;const s=a+(bb-a)*i/n;dash(e,io(r(t,s,s+.12)))});
+  $('tt').setAttribute('opacity',r(t,T.goles+.35,T.goles+.65));$('tp').setAttribute('opacity',r(t,T.goles+.55,T.goles+.85));
+  // jornadas
+  place($('CH'),CH[0],CH[1]);
+  CB.forEach(([rc,v,i])=>{const s=T.cada+i*.17;const h=v*12*io(r(t,s,s+.5));rc.setAttribute('y',700-h);rc.setAttribute('height',h)});
+  $('cv').setAttribute('y',700-37.5*12-22);$('cv').setAttribute('opacity',r(t,T.lunes-.1,T.lunes+.3));
+  put($('ln'),CH[0]-280,CH[1]-260,r(t,T.ensenas-.1,T.ensenas+.35));
+  // el veinte era mentira
+  place($('Z20'),Z2[0],Z2[1]);dash('zs',io(r(t,T.mentira-.05,T.mentira+.5)));$('zp').style.opacity=r(t,T.mentira+.45,T.mentira+.85);
+  place($('B'),B[0],B[1]);
+  // rótulo
+  let html='',a=0,bg=0;for(const [s,e,h,bb] of CAPS)if(t>=s-.2&&t<e+.25){html=h;bg=bb?1:0;a=Math.min(r(t,s-.2,s+.15),1-r(t,e-.05,e+.25))}
+  const cp=$('cap');cp.style.background=bg?'rgba(12,19,35,.94)':'none';
+  if(cp.dataset.h!==html){cp.innerHTML=html;cp.dataset.h=html}
+  cp.style.opacity=a;cp.style.transform=`translateY(${(1-a)*12}px)`;
+  // tinta: un solo giro (la cabeza baja) y vuelta a blanco en la solución
+  const k1=r(t,T.ys-.35,T.ys+.05)*(1-r(t,CUT1+.05,T.cuenta+.45));
+  $('ink').style.opacity=k1;$('mid').style.opacity=r(t,T.ys,T.ys+.3)*(1-r(t,CUT1-.3,CUT1+.02));
+  return new Promise(res=>requestAnimationFrame(()=>requestAnimationFrame(res)));
+};
+Promise.all([...document.images].map(i=>i.decode().catch(()=>{}))).then(()=>document.fonts.ready).then(()=>{frame(0);window.ready=true});
+</script></body></html>
