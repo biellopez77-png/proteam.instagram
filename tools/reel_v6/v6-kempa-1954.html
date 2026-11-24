@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8">
+<!-- v6-kempa-1954 «El segundo intento» · explicativo v6 · balonmano · Marta B (02) -->
+<style>
+@font-face{font-family:M;font-weight:800;src:url(/tools/reel_v5/node_modules/@fontsource/plus-jakarta-sans/files/plus-jakarta-sans-latin-800-normal.woff2)}
+@font-face{font-family:M;font-weight:700;src:url(/tools/reel_v5/node_modules/@fontsource/plus-jakarta-sans/files/plus-jakarta-sans-latin-700-normal.woff2)}
+@font-face{font-family:M;font-weight:500;src:url(/tools/reel_v5/node_modules/@fontsource/plus-jakarta-sans/files/plus-jakarta-sans-latin-500-normal.woff2)}
+@font-face{font-family:S;font-style:italic;font-weight:400;src:url(/tools/fonts/instrument-serif-latin-400-italic.woff2)}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#02050F}
+#st{position:absolute;inset:0;overflow:hidden;background:#02050F}
+#world{position:absolute;left:0;top:0;transform-origin:0 0;will-change:transform}
+.o{position:absolute;left:0;top:0;transform-origin:50% 50%}
+.card{background:#0C1323;border:1px solid #1d2947;box-shadow:0 30px 90px rgba(0,0,0,.6),0 0 80px rgba(99,109,255,.12)}
+.frame{background:#0C1323;padding:14px;border:1px solid #1d2947;box-shadow:0 30px 90px rgba(0,0,0,.6),0 0 80px rgba(99,109,255,.12);overflow:hidden}
+.frame .in{position:absolute;left:14px;top:14px;width:calc(100% - 28px);height:calc(100% - 28px);overflow:hidden}
+.frame img{position:absolute;left:0;top:0;width:100%;height:100%;object-fit:cover}
+.lab{position:absolute;font-family:M;font-weight:700;font-size:22px;letter-spacing:.16em;text-transform:uppercase;color:#8f9bb8;white-space:nowrap}
+.num{position:absolute;font-family:M;font-weight:800;letter-spacing:-.05em;color:#F4F7FB;white-space:nowrap;line-height:1}
+.big{position:absolute;font-family:S;font-style:italic;font-weight:400;color:#F4F7FB;white-space:nowrap;line-height:1}
+#cap{position:absolute;left:90px;right:90px;top:1590px;text-align:center;font-family:M;font-weight:700;font-size:50px;line-height:1.16;letter-spacing:-.02em;color:#F4F7FB;text-shadow:0 0 12px #02050F,0 0 30px #02050F,0 0 46px #02050F}
+#cap em{font-family:S;font-style:italic;font-weight:400;font-size:1.16em;letter-spacing:0}
+#cap b{color:#6AA8FF;font-weight:800}
+#sweep{position:absolute;top:0;bottom:0;width:900px;left:-900px;background:linear-gradient(90deg,rgba(106,168,255,0),rgba(185,224,255,.55),rgba(106,168,255,0));mix-blend-mode:screen;pointer-events:none;opacity:0}
+#grain{position:absolute;inset:0;opacity:.16;mix-blend-mode:screen;pointer-events:none;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='300'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}
+.tag{position:absolute;font-family:M;font-weight:700;font-size:22px;letter-spacing:.16em;color:#02050F;background:#B9E0FF;border-radius:30px;padding:8px 18px}
+.pill{position:absolute;font-family:M;font-weight:700;font-size:30px;letter-spacing:.08em;text-transform:uppercase;color:#02050F;background:#B9E0FF;border-radius:50px;padding:14px 30px;white-space:nowrap}
+</style></head><body><div id="st">
+<div id="world">
+  <!-- 1 · la entrada (recreación, sin logos) -->
+  <div class="o card" id="TK" style="width:800px;height:440px;border-radius:14px">
+    <svg style="position:absolute;left:0;top:0;overflow:visible" width="800" height="440">
+      <rect x="18" y="18" width="764" height="404" rx="8" fill="none" stroke="#26335a" stroke-width="2"/>
+      <path d="M590 0 L590 440" stroke="#26335a" stroke-width="3" stroke-dasharray="10 10"/>
+      <circle cx="590" cy="0" r="22" fill="#02050F"/><circle cx="590" cy="440" r="22" fill="#02050F"/>
+      <text x="50" y="74" font-family="M" font-weight="700" font-size="22" letter-spacing="5" fill="#8f9bb8">ENTRADA · BALONMANO</text>
+      <text x="690" y="220" text-anchor="middle" font-family="M" font-weight="700" font-size="20" letter-spacing="5" fill="#8f9bb8" transform="rotate(-90 690 220)">RECREACIÓN</text>
+      <g id="stamp" opacity="0"><rect x="330" y="300" width="230" height="78" rx="6" fill="none" stroke="#6AA8FF" stroke-width="4"/>
+        <text x="445" y="350" text-anchor="middle" font-family="M" font-weight="800" font-size="30" letter-spacing="3" fill="#6AA8FF">24·3·1954</text></g>
+    </svg>
+    <div class="num" id="YR" style="left:46px;top:110px;font-size:190px">1900</div>
+    <div class="lab" id="KA" style="left:50px;top:330px;font-size:34px;color:#F4F7FB;opacity:0">Karlsruhe</div>
+  </div>
+  <div class="num" id="AL" style="font-size:132px;opacity:0">ALEMANIA</div>
+  <div class="big" id="CO" style="font-size:96px;opacity:0;color:#8f9bb8">contra</div>
+  <div class="num" id="SU" style="font-size:132px;opacity:0">SUECIA</div>
+  <div class="pill" id="CM" style="opacity:0">Suecia · campeona del mundo</div>
+
+  <!-- 2 · la pista -->
+  <svg class="o" id="CT" width="960" height="880" viewBox="0 0 960 880" style="overflow:visible">
+    <defs><clipPath id="half"><rect x="80" y="-60" width="800" height="920"/></clipPath>
+      <clipPath id="kw"><rect id="kwr" x="0" y="0" width="0" height="880"/></clipPath></defs>
+    <g id="court">
+      <path id="pf" d="M80 860 L80 60 L880 60 L880 860 Z" fill="none" stroke="#26335a" stroke-width="5" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/>
+      <path id="a6" d="M180 60 A240 240 0 0 0 420 300 L540 300 A240 240 0 0 0 780 60" fill="none" stroke="#F4F7FB" stroke-width="5" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/>
+      <g clip-path="url(#half)"><path id="a9" d="M60 60 A360 360 0 0 0 420 420 L540 420 A360 360 0 0 0 900 60" fill="none" stroke="#8f9bb8" stroke-width="4" stroke-dasharray="16 14" opacity="0"/></g>
+      <g id="goal" opacity="0">
+        <path d="M420 60 L420 18 L540 18 L540 60" fill="none" stroke="#F4F7FB" stroke-width="7" stroke-linejoin="round"/>
+        <path id="net1" d="M420 30 Q480 30 540 30" fill="none" stroke="#8f9bb8" stroke-width="2"/>
+        <path id="net2" d="M420 44 Q480 44 540 44" fill="none" stroke="#8f9bb8" stroke-width="2"/>
+        <path id="net3" d="M450 18 L450 60 M480 18 L480 60 M510 18 L510 60" fill="none" stroke="#8f9bb8" stroke-width="2"/>
+      </g>
+      <text id="six" x="700" y="345" font-family="M" font-weight="700" font-size="22" letter-spacing="4" fill="#B9E0FF" opacity="0">EN EL AIRE, SÍ</text>
+      <g id="defs"></g>
+      <g id="hand" opacity="0"><path d="M392 345 L392 300" stroke="#8f9bb8" stroke-width="7" stroke-linecap="round"/><circle cx="392" cy="294" r="9" fill="#8f9bb8"/></g>
+      <g id="hgt" opacity="0"><path d="M352 352 L352 282 M342 352 L362 352 M342 282 L362 282" stroke="#8f9bb8" stroke-width="3"/><text x="340" y="272" text-anchor="end" font-family="M" font-weight="700" font-size="20" letter-spacing="3" fill="#8f9bb8">ALTURA</text></g>
+      <path id="arc1" d="M220 600 Q 300 430 388 312" fill="none" stroke="#8f9bb8" stroke-width="7" stroke-linecap="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/>
+      <g id="x1" opacity="0" stroke="#F4F7FB" stroke-width="7" stroke-linecap="round"><path d="M410 300 L440 330 M440 300 L410 330"/></g>
+      <text id="l1" x="200" y="420" text-anchor="end" font-family="M" font-weight="700" font-size="24" letter-spacing="4" fill="#8f9bb8" opacity="0">1.º INTENTO</text>
+      <path id="arc2" d="M220 600 Q 300 40 470 238" fill="none" stroke="#8B5CF6" stroke-width="9" stroke-linecap="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100" style="filter:drop-shadow(0 0 16px rgba(139,92,246,.8))"/>
+      <text id="l2" x="262" y="190" text-anchor="end" font-family="M" font-weight="700" font-size="24" letter-spacing="4" fill="#B9E0FF" opacity="0">2.º INTENTO</text>
+      <path id="jump" d="M482 330 L472 244" fill="none" stroke="#B9E0FF" stroke-width="4" stroke-dasharray="6 9" opacity="0"/>
+      <path id="shot" d="M472 238 L492 46" fill="none" stroke="#F4F7FB" stroke-width="5" stroke-linecap="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/>
+      <ellipse id="shd" cx="0" cy="0" rx="20" ry="7" fill="#000" opacity="0"/>
+      <g id="kem" opacity="0"><circle r="24" fill="#6AA8FF"/><text x="0" y="-40" text-anchor="middle" font-family="M" font-weight="700" font-size="24" letter-spacing="4" fill="#6AA8FF">KEMPA</text></g>
+      <g id="sin" opacity="0"><circle r="22" fill="#B9E0FF"/><text id="sinl" x="34" y="8" font-family="M" font-weight="700" font-size="24" letter-spacing="4" fill="#B9E0FF">SINGER · 19</text></g>
+      <circle id="ball" r="11" fill="#F4F7FB" opacity="0"/>
+    </g>
+    <path id="route" d="M220 600 Q 300 40 470 238 L492 46" fill="none" stroke="#6AA8FF" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/>
+  </svg>
+  <div class="num" id="N2" style="font-size:230px;opacity:0;color:#6AA8FF">2</div>
+  <div class="big" id="KW" style="font-size:220px;opacity:0;clip-path:inset(0 100% 0 0)">el Kempa</div>
+  <div class="o frame" id="FJ" style="width:860px;height:520px">
+    <div class="in"><img id="fj" src="/banco/fotos/PROTEAM_JUGADOR_LANZAMIENTO_FOTO_002.jpg" style="filter:url(#duo) brightness(.95) contrast(1.06);object-position:70% 30%"></div>
+    <div class="num" id="N19" style="right:36px;bottom:30px;font-size:150px;text-shadow:0 0 30px #02050F">0</div>
+    <div class="lab" id="N19l" style="right:44px;bottom:180px;color:#B9E0FF;font-size:26px">años</div>
+  </div>
+
+  <!-- 3 · Göppingen -->
+  <div class="o frame" id="FC" style="width:960px;height:680px">
+    <div class="in"><img id="fc" src="/banco/fotos/PROTEAM_ENTRENADOR_CHARLA_EQUIPO_FOTO_001.jpg" style="filter:url(#duo) brightness(.95) contrast(1.06);transform-origin:49% 50%"></div>
+  </div>
+  <div class="lab" id="GO" style="font-size:30px;color:#B9E0FF;opacity:0">Göppingen · los entrenos</div>
+  <div class="big" id="QT" style="font-size:132px;opacity:0">«lo probaban todo»</div>
+  <div class="lab" id="QS" style="font-size:24px;opacity:0;text-transform:none;letter-spacing:.06em">Bernhard Kempa, <i style="font-family:S;font-size:30px;letter-spacing:0;font-weight:400">Ball ist Trumpf</i>, 2002</div>
+  <!-- el martes -->
+  <div class="lab" id="TM" style="font-size:24px;color:#8f9bb8;opacity:0">este martes</div>
+  <div class="num" id="CK" style="font-size:120px;opacity:0">0′</div>
+  <svg class="o" id="BAR" width="440" height="16" viewBox="0 0 440 16" style="opacity:0"><rect width="440" height="16" rx="8" fill="#1d2947"/><rect id="barf" width="0" height="16" rx="8" fill="#6AA8FF"/></svg>
+  <div class="o card" id="PZ" style="width:960px;height:800px;border-radius:12px">
+    <div class="tag" style="right:30px;top:-58px">EJEMPLO</div>
+    <svg style="position:absolute;left:0;top:0;overflow:visible" width="960" height="800" viewBox="0 0 960 800">
+      <g fill="none" stroke="#26335a" stroke-width="4">
+        <path id="bp" d="M60 60 L900 60" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/>
+        <path id="b6" d="M210 60 A220 220 0 0 0 430 280 L530 280 A220 220 0 0 0 750 60" stroke="#8f9bb8" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/>
+      </g>
+      <path d="M430 60 L430 30 L530 30 L530 60" fill="none" stroke="#F4F7FB" stroke-width="6" id="bg" opacity="0"/>
+      <g id="pairs"></g>
+    </svg>
+    <div class="lab" style="left:40px;bottom:30px">6 parejas · 1 jugada cada una</div>
+  </div>
+  <!-- 4 · pizarra del vestuario -->
+  <div class="o card" id="VB" style="width:940px;height:980px;border-radius:12px">
+    <div class="tag" style="right:30px;top:-58px">EJEMPLO</div>
+    <div class="lab" style="left:60px;top:60px;font-size:26px">Jugadas del equipo</div>
+    <svg style="position:absolute;left:0;top:0" width="940" height="980"><path d="M60 110 L880 110" stroke="#26335a" stroke-width="3"/>
+      <g id="vic" fill="none" stroke="#6AA8FF" stroke-width="6" stroke-linecap="round"></g></svg>
+    <div class="big" id="V1" style="left:250px;top:190px;font-size:120px;clip-path:inset(0 100% 0 0)">la Lucía</div>
+    <div class="big" id="V2" style="left:250px;top:450px;font-size:120px;clip-path:inset(0 100% 0 0)">la de Hugo</div>
+    <div class="big" id="V3" style="left:250px;top:710px;font-size:120px;clip-path:inset(0 100% 0 0)">la Martina</div>
+  </div>
+</div>
+<svg width="0" height="0" style="position:absolute"><filter id="duo" color-interpolation-filters="sRGB"><feColorMatrix type="matrix" values=".33 .33 .33 0 0 .33 .33 .33 0 0 .33 .33 .33 0 0 0 0 0 1 0"/><feComponentTransfer><feFuncR type="table" tableValues="0.008 0.18 0.416 0.957"/><feFuncG type="table" tableValues="0.02 0.235 0.659 0.969"/><feFuncB type="table" tableValues="0.059 0.667 1 0.984"/></feComponentTransfer></filter></svg>
+<div id="folio" style="position:absolute;left:64px;right:64px;top:70px;display:flex;justify-content:space-between;font-family:M;font-weight:500;font-size:24px;letter-spacing:.16em;color:#8f9bb8;text-transform:uppercase;z-index:30"><span>ProTeam — Historias · Balonmano</span><span id="fpg">p. 01</span></div>
+<div id="cred" style="position:absolute;left:64px;right:64px;bottom:60px;font-family:M;font-weight:500;font-size:18px;letter-spacing:.08em;color:#5d6888;text-transform:uppercase;z-index:30"></div>
+<div id="cap"></div>
+<div id="sweep"></div>
+<div id="grain"></div>
+</div>
+<script src="/tools/reel_v4/v6-kempa-1954/times.js"></script>
+<script>
+const $=id=>document.getElementById(id), W=window.WORDS;
+const at=(w,n=1)=>{let c=0;for(const x of W)if(x[0]===w&&++c===n)return x[1];throw 'no '+w+n};
+const cl=(x,a=0,b=1)=>Math.min(b,Math.max(a,x));
+const r=(t,a,b)=>cl((t-a)/(b-a));
+const io=x=>x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2;
+const eo=x=>1-Math.pow(1-x,3);
+const bo=x=>{const n=7.5625,d=2.75;if(x<1/d)return n*x*x;if(x<2/d)return n*(x-=1.5/d)*x+.75;if(x<2.5/d)return n*(x-=2.25/d)*x+.9375;return n*(x-=2.625/d)*x+.984375};
+const lerp=(a,b,k)=>a+(b-a)*k;
+const pulse=(t,a)=>{const k=r(t,a,a+.35);return k>0&&k<1?1+.12*Math.sin(Math.PI*k):1};
+function track(K){return t=>{
+  if(t<=K[0][0])return K[0].slice(1); const n=K.length; if(t>=K[n-1][0])return K[n-1].slice(1);
+  let i=0;while(K[i+1][0]<t)i++;
+  const p1=K[i],p2=K[i+1], s=io((t-p1[0])/(p2[0]-p1[0]));
+  return [lerp(p1[1],p2[1],s),lerp(p1[2],p2[2],s),Math.exp(lerp(Math.log(p1[3]),Math.log(p2[3]),s))]}}
+const T={mil:at('mil'),cuatro:at('cuatro'),karl:at('karlsruhe'),alemania:at('alemania'),suecia:at('suecia'),campeona:at('campeona'),bern:at('bernhard'),levanta:at('levanta'),encima:at('encima'),area:at('area'),
+ el2:at('el',3),intento:at('intento'),mal:at('mal'),calcula:at('calcula'),altura:at('altura'),suecos:at('suecos'),el3:at('el',4),segundo:at('segundo'),no:at('no'),
+ horst:at('horst'),dieci:at('diecinueve'),salta:at('salta'),coge:at('coge'),lanza:at('lanza'),caer:at('caer'),gol:at('gol'),hoy:at('hoy'),paso:at('paso'),el6:at('el',7),kempa2:at('kempa',2),
+ salio:at('salio'),gopp:at('goppingen'),segun:at('segun'),lo:at('lo'),todo:at('todo'),este:at('este'),diez:at('diez'),minutos:at('minutos'),parejas:at('parejas'),una:at('una'),inventada:at('inventada'),
+ si:at('si'),falla:at('falla'),otra:at('otra'),vez:at('vez'),la5:at('la',5),funcione:at('funcione'),nombre2:at('nombre',2),invento:at('invento'),VEND:window.VEND};
+T.END=T.VEND+1.0; window.DUR=T.END;
+const CY=1800, EY=3600, VY=5400;
+const CAM=track([[0,0,0,1.04],[T.alemania-.2,0,0,1.0],[T.bern-.35,0,0,1.0],[T.bern+.2,0,CY,1.0],[T.el2-.1,0,CY,1.0],[T.suecos,0,CY-20,1.04],[T.el3,0,CY,1.0],[T.horst-.1,0,CY,1.0],
+ [T.gol-.05,0,CY,1.02],[T.gol+.25,0,CY,1.0],[T.salio-.35,0,CY,1.0],[T.salio+.15,0,EY,1.0],[T.este-.1,0,EY,1.03],[T.este+.4,0,EY,1.0],[T.la5-.3,0,EY,1.0],[T.la5+.15,0,VY,1.0],[T.END,0,VY-20,1.06]]);
+function place(el,x,y,rot=0,sc=1){el.style.transform=`translate(${x-(el.offsetWidth||+el.getAttribute("width"))/2}px,${y-(el.offsetHeight||+el.getAttribute("height"))/2}px) rotate(${rot}deg) scale(${sc})`}
+const NS='http://www.w3.org/2000/svg';
+function mk(g,tag,attrs){const e=document.createElementNS(NS,tag);for(const k in attrs)e.setAttribute(k,attrs[k]);g.appendChild(e);return e}
+const draw=(el,a,b,t)=>el.setAttribute('stroke-dashoffset',100-100*io(r(t,a,b)));
+// defensores (gris)
+const DF=[[178,196],[268,300],[392,352],[566,352],[692,300],[782,196]].map(p=>{const c=mk($('defs'),'circle',{cx:p[0],cy:p[1],r:20,fill:'#3a4566',stroke:'#8f9bb8','stroke-width':3,opacity:0});return {c,p}});
+// trayectorias útiles
+const A2=$('arc2'), A2L=A2.getTotalLength();
+const qpt=(k)=>{const p=A2.getPointAtLength(A2L*k);return [p.x,p.y]};
+// parejas del martes
+const PP=[[150,520,'M0 0 C 60 -90 140 -60 170 -160'],[330,600,'M0 0 L 90 -120 L 30 -230'],[500,520,'M0 0 C -60 -120 60 -160 0 -260'],[660,600,'M0 0 Q 120 -80 60 -220'],[800,500,'M0 0 L -80 -60 L -40 -200'],[420,700,'M0 0 C 80 -40 120 -140 40 -200']];
+const PR=PP.map((q,i)=>{const g=mk($('pairs'),'g',{transform:`translate(${q[0]} ${q[1]})`,opacity:0});
+  const p=mk(g,'path',{d:q[2],fill:'none',stroke:'#6AA8FF','stroke-width':6,'stroke-linecap':'round',pathLength:100,'stroke-dasharray':100,'stroke-dashoffset':100});
+  mk(g,'circle',{r:16,fill:'#6AA8FF'}); const L=p.getTotalLength(), e=p.getPointAtLength(L); mk(g,'circle',{cx:e.x,cy:e.y,r:16,fill:'#B9E0FF'});
+  const x=mk(g,'path',{d:`M${e.x+26} ${e.y-14} l24 24 m0 -24 l-24 24`,stroke:'#F4F7FB','stroke-width':6,'stroke-linecap':'round',opacity:0});
+  const ok=mk(g,'path',{d:`M${e.x+24} ${e.y} l10 12 l22 -26`,stroke:'#B9E0FF','stroke-width':6,fill:'none','stroke-linecap':'round',opacity:0});
+  return {g,p,x,ok}});
+// iconos de la pizarra del vestuario
+['M80 300 C 120 220 160 260 200 190','M80 560 L 140 480 L 110 420 L 200 380','M80 830 C 140 800 100 720 200 690'].forEach(d=>mk($('vic'),'path',{d,pathLength:100,'stroke-dasharray':100,'stroke-dashoffset':100}));
+const VI=[...$('vic').children];
+const CAPS=[[-1,T.alemania-.2,'<b>24 de marzo de 1954.</b> Karlsruhe.'],
+ [T.alemania-.1,T.bern-.2,'Alemania contra Suecia, <em>la campeona del mundo.</em>'],
+ [T.bern-.1,T.el2-.2,'Bernhard Kempa levanta el balón <em>por encima de la defensa,</em> hacia el área.'],
+ [T.el2-.1,T.el3-.2,'El primer intento sale mal: <em>calcula mal la altura de los suecos.</em>'],
+ [T.el3-.1,T.horst-.15,'<b>El segundo, no.</b>'],
+ [T.horst-.1,T.gol-.25,'Horst Singer, <b>19 años</b>, salta al área, la coge en el aire <em>y lanza antes de caer.</em>'],
+ [T.gol-.05,T.hoy-.15,'<b>Gol.</b>'],
+ [T.hoy-.1,T.salio-.2,'Hoy esa jugada lleva el nombre del que pasó: <em>el Kempa.</em>'],
+ [T.salio-.1,T.este-.2,'Salió del entreno de Göppingen, donde, según Kempa, <em>lo probaban todo.</em>'],
+ [T.este-.1,T.si-.2,'Este martes: <b>10 minutos</b>, por parejas, <em>una jugada inventada.</em>'],
+ [T.si-.1,T.la5-.15,'Si falla, <em>otra vez.</em>'],
+ [T.la5-.1,T.END+1,'La que funcione, <em>con el nombre de quien la inventó.</em>']];
+window.frame=function(t){
+  const [cx,cy,z]=CAM(t); $('world').style.transform=`translate(540px,960px) scale(${z}) translate(${-cx}px,${-cy}px)`;
+  // 1 · entrada
+  const tkMove=io(r(t,T.alemania-.2,T.alemania+.4)), s1Out=r(t,T.bern-.4,T.bern-.1);
+  place($('TK'),0,lerp(-230,-120,eo(r(t,0,.7)))+lerp(0,-330,tkMove),lerp(-9,-3,eo(r(t,0,.7)))+lerp(0,-2,tkMove),lerp(1.08,1,eo(r(t,0,.7)))*lerp(1,.78,tkMove));
+  const yk=io(r(t,T.mil,T.cuatro+.2)); $('YR').textContent=Math.round(lerp(1900,1954,yk)); $('YR').style.color=yk>=1?'#6AA8FF':'#F4F7FB';
+  $('YR').style.transform=`scale(${pulse(t,T.cuatro+.2)})`; $('YR').style.transformOrigin='0 50%';
+  $('KA').style.opacity=r(t,T.karl-.05,T.karl+.2);
+  const st=r(t,T.karl+.1,T.karl+.35); $('stamp').setAttribute('opacity',st>0?1:0); $('stamp').setAttribute('transform',`rotate(-6 445 339) translate(445 339) scale(${lerp(1.6,1,eo(st))}) translate(-445 -339)`);
+  const al=r(t,T.alemania-.1,T.alemania+.25), su=r(t,T.suecia-.1,T.suecia+.25);
+  place($('AL'),lerp(-60,0,eo(al)),110); $('AL').style.opacity=al;
+  place($('CO'),0,245); $('CO').style.opacity=r(t,T.alemania+.3,T.alemania+.6);
+  place($('SU'),lerp(60,0,eo(su)),380,0,pulse(t,T.campeona)); $('SU').style.opacity=su; $('SU').style.color=t>T.campeona?'#B9E0FF':'#F4F7FB';
+  const cm=r(t,T.campeona-.05,T.campeona+.3); place($('CM'),0,lerp(560,530,eo(cm))); $('CM').style.opacity=cm;
+  // 2 · pista
+  const ctUp=io(r(t,T.horst-.2,T.horst+.5)), ctBack=io(r(t,T.hoy-.2,T.hoy+.4));
+  const ctY=lerp(CY-60,CY+200,ctUp*(1-ctBack)), ctS=lerp(1,.74,ctUp*(1-ctBack));
+  place($('CT'),0,ctY,0,ctS); $('CT').style.opacity=r(t,T.bern-.3,T.bern)*(1-r(t,T.salio-.3,T.salio+.1));
+  draw($('pf'),T.bern-.2,T.bern+.6,t); draw($('a6'),T.bern,T.levanta+.2,t);
+  $('a9').setAttribute('opacity',r(t,T.levanta-.1,T.levanta+.4)); $('goal').setAttribute('opacity',r(t,T.bern+.1,T.bern+.4));
+  const fade1=1-.75*r(t,T.hoy,T.hoy+.4);
+  $('court').setAttribute('opacity',fade1);
+  DF.forEach((d,i)=>{const a=T.levanta+.1+i*.08; d.c.setAttribute('opacity',r(t,a,a+.15)); d.c.setAttribute('cy',d.p[1]+lerp(-30,0,eo(r(t,a,a+.3))))});
+  const kp=r(t,T.bern+.3,T.bern+.6); $('kem').setAttribute('opacity',kp); $('kem').setAttribute('transform',`translate(220 600) scale(${pulse(t,T.kempa2)*pulse(t,T.paso)})`);
+  // 1.er intento
+  const e1=r(t,T.calcula,T.calcula+.5);
+  $('arc1').setAttribute('stroke-dashoffset',e1>0?100*io(e1):100-100*io(r(t,T.el2,T.mal+.1)));
+  $('hand').setAttribute('opacity',r(t,T.mal-.1,T.mal+.05)*(1-r(t,T.el3-.2,T.el3)));
+  $('x1').setAttribute('opacity',r(t,T.mal+.1,T.mal+.25)*(1-r(t,T.el3-.2,T.el3)));
+  $('l1').setAttribute('opacity',r(t,T.intento,T.intento+.3)*(1-r(t,T.el3-.2,T.el3)));
+  const hg=r(t,T.altura-.1,T.altura+.3); $('hgt').setAttribute('opacity',hg*(1-r(t,T.el3-.2,T.el3))); $('hgt').setAttribute('transform',`translate(0 ${lerp(30,0,eo(hg))})`);
+  // 2.º intento (ultravioleta, única vez)
+  draw(A2,T.segundo-.1,T.no+.35,t); A2.setAttribute('opacity',1-r(t,T.hoy-.1,T.hoy+.3));
+  $('l2').setAttribute('opacity',r(t,T.segundo,T.segundo+.3)*(1-r(t,T.horst-.2,T.horst+.1)));
+  const n2=r(t,T.el3-.05,T.el3+.2); place($('N2'),300,CY-470,0,pulse(t,T.no)); $('N2').style.opacity=n2*(1-r(t,T.horst-.25,T.horst));
+  // Singer
+  const sIn=r(t,T.horst-.1,T.horst+.2), run=io(r(t,T.horst+.1,T.salta)), fly=io(r(t,T.salta,T.coge)), land=r(t,T.caer,T.caer+.45);
+  let sx=lerp(580,482,run), sy=lerp(660,330,run); sx=lerp(sx,472,fly); sy=lerp(sy,244,fly);
+  const air=Math.sin(Math.PI*r(t,T.salta,T.caer+.45));
+  $('sin').setAttribute('opacity',sIn); $('sin').setAttribute('transform',`translate(${sx} ${sy-26*air}) scale(${1+.35*air})`);
+  $('sinl').setAttribute('opacity',1-r(t,T.salta-.2,T.salta));
+  $('shd').setAttribute('opacity',.55*sIn*fade1); $('shd').setAttribute('cx',sx); $('shd').setAttribute('cy',sy+24); $('shd').setAttribute('rx',20-6*air);
+  $('jump').setAttribute('opacity',r(t,T.salta,T.salta+.3)*(1-r(t,T.hoy-.2,T.hoy)));
+  const blink=t>T.salta&&t<T.caer+.5?(Math.sin((t-T.salta)*14)>0?1:0):0;
+  $('a6').setAttribute('stroke',blink?'#B9E0FF':'#F4F7FB'); $('a6').setAttribute('stroke-width',blink?8:5);
+  $('six').setAttribute('opacity',r(t,T.salta+.1,T.salta+.4)*(1-r(t,T.gol-.1,T.gol+.2)));
+  // balón: viaja por el arco y luego al gol
+  const bk=io(r(t,T.salta-.6,T.coge)), sh=io(r(t,T.lanza,T.lanza+.35));
+  let bx,by; if(t<T.lanza){[bx,by]=qpt(bk)} else {bx=lerp(472,492,sh);by=lerp(238,46,sh)}
+  if(t>=T.gol){const g=eo(r(t,T.gol,T.gol+.25));by=46-14*g}
+  $('ball').setAttribute('cx',bx); $('ball').setAttribute('cy',by); $('ball').setAttribute('opacity',r(t,T.salta-.6,T.salta-.45)*(1-r(t,T.hoy-.1,T.hoy+.2)));
+  draw($('shot'),T.lanza,T.lanza+.35,t); $('shot').setAttribute('opacity',1-r(t,T.hoy-.1,T.hoy+.2));
+  const ng=eo(r(t,T.gol,T.gol+.3))*(1-.4*r(t,T.gol+.6,T.hoy));
+  $('net1').setAttribute('d',`M420 30 Q480 ${30-34*ng} 540 30`); $('net2').setAttribute('d',`M420 44 Q480 ${44-30*ng} 540 44`);
+  // foto Singer
+  const fjIn=eo(r(t,T.horst-.1,T.horst+.5)), fjOut=io(r(t,T.hoy-.2,T.hoy+.3));
+  place($('FJ'),0,lerp(CY+700,CY-520,fjIn)+lerp(0,-900,fjOut)); $('FJ').style.opacity=r(t,T.horst-.1,T.horst+.1)*(1-fjOut);
+  $('fj').style.transform=`scale(${lerp(1.15,1.02,r(t,T.horst,T.hoy))})`;
+  const nk=r(t,T.dieci-.05,T.dieci+.5); $('N19').textContent=Math.round(19*io(nk)); $('N19').style.opacity=r(t,T.dieci-.1,T.dieci); $('N19').style.color=nk>=1?'#6AA8FF':'#F4F7FB';
+  $('N19').style.transform=`scale(${pulse(t,T.dieci+.5)})`; $('N19l').style.opacity=r(t,T.dieci+.3,T.dieci+.6);
+  // firma: la jugada se convierte en «el Kempa»
+  const rt=r(t,T.hoy+.1,T.paso+.2), rtOut=r(t,T.el6-.1,T.el6+.3);
+  $('route').setAttribute('stroke-dashoffset',100-100*io(rt)); $('route').setAttribute('opacity',1-rtOut);
+  const kw=io(r(t,T.el6-.05,T.kempa2+.45)); $('KW').style.clipPath=`inset(-20% ${100-100*kw}% -20% 0)`;
+  place($('KW'),0,CY-60,-3,pulse(t,T.kempa2+.5)); $('KW').style.opacity=t>T.el6-.1?1-r(t,T.salio-.3,T.salio):0;
+  // 3 · Göppingen
+  const fcIn=eo(r(t,T.salio-.2,T.salio+.4)), fcSm=io(r(t,T.este-.15,T.este+.45));
+  place($('FC'),lerp(0,-255,fcSm),lerp(EY-170,EY-575,fcSm)+lerp(120,0,fcIn),lerp(2,0,fcIn)+lerp(0,-2,fcSm),lerp(1,.44,fcSm)); $('FC').style.opacity=r(t,T.salio-.2,T.salio+.1)*(1-r(t,T.la5-.3,T.la5));
+  $('fc').style.transform=`scale(${lerp(2.3,2.12,r(t,T.salio,T.este))})`;
+  place($('GO'),0,EY-560); $('GO').style.opacity=r(t,T.gopp-.1,T.gopp+.25)*(1-r(t,T.este-.3,T.este));
+  const qt=r(t,T.lo-.1,T.lo+.3), qOut=r(t,T.este-.3,T.este);
+  place($('QT'),0,lerp(EY+300,EY+270,eo(qt))); $('QT').style.opacity=qt*(1-qOut);
+  place($('QS'),0,EY+400); $('QS').style.opacity=r(t,T.todo,T.todo+.3)*(1-qOut);
+  // martes: cronómetro y parejas
+  const tmIn=r(t,T.este+.1,T.este+.4), tmOut=r(t,T.la5-.3,T.la5);
+  place($('TM'),255,EY-720); $('TM').style.opacity=tmIn*(1-tmOut);
+  const ck=io(r(t,T.diez-.1,T.minutos+.5)); $('CK').textContent=Math.round(ck*10)+'′'; place($('CK'),255,EY-610,0,pulse(t,T.minutos+.5)); $('CK').style.opacity=tmIn*(1-tmOut); $('CK').style.color=ck>=1?'#6AA8FF':'#F4F7FB';
+  place($('BAR'),255,EY-500); $('BAR').style.opacity=tmIn*(1-tmOut); $('barf').setAttribute('width',440*ck);
+  const pz=eo(r(t,T.este+.2,T.este+.7)); place($('PZ'),0,EY+150+60*(1-pz),lerp(-2,0,pz),1); $('PZ').style.opacity=pz*(1-tmOut);
+  draw($('bp'),T.este+.3,T.este+.8,t); draw($('b6'),T.este+.4,T.este+1.0,t); $('bg').setAttribute('opacity',r(t,T.este+.5,T.este+.8));
+  PR.forEach((q,i)=>{const a=T.parejas-.1+i*.08; q.g.setAttribute('opacity',r(t,a,a+.15));
+    if(i===2){const fl=r(t,T.falla,T.falla+.15), er=r(t,T.otra,T.otra+.3), re=r(t,T.otra+.35,T.vez+.2);
+      let off=100-100*io(r(t,T.una,T.inventada+.3)); if(er>0)off=100*io(er); if(re>0)off=100-100*io(re);
+      q.p.setAttribute('stroke-dashoffset',off); q.p.setAttribute('stroke',fl>0&&re<=0?'#8f9bb8':'#6AA8FF');
+      q.x.setAttribute('opacity',fl*(1-er)); q.ok.setAttribute('opacity',r(t,T.vez+.1,T.vez+.3));
+      q.g.setAttribute('transform',`translate(${PP[i][0]} ${PP[i][1]}) scale(${pulse(t,T.vez+.15)})`)}
+    else draw(q.p,T.una+i*.05,T.inventada+.3+i*.05,t)});
+  // 4 · pizarra del vestuario
+  const vb=eo(r(t,T.la5-.2,T.la5+.3)); place($('VB'),0,VY-40+50*(1-vb),lerp(2,0,vb)); $('VB').style.opacity=vb;
+  [[T.funcione-.1,T.funcione+.5],[T.nombre2-.2,T.nombre2+.4],[T.invento-.4,T.invento+.12]].forEach((w,i)=>{
+    const k=io(r(t,w[0],w[1])); $('V'+(i+1)).style.clipPath=`inset(-20% ${100-100*k}% -20% 0)`; draw(VI[i],w[0]-.1,w[1]-.1,t)});
+  // folio, créditos
+  $('fpg').textContent=t<T.bern-.3?'p. 01':t<T.salio-.2?'p. 02':t<T.la5-.2?'p. 03':'p. 04';
+  $('cred').textContent=t<T.horst-.1?'Ilustración: ProTeam · Entrada y pista: recreación · Datos: DHB, handball-world':
+    (t<T.hoy-.1?'Foto actual, no de 1954: Steffen Prößdorf (CC BY-SA 4.0) · Wikimedia Commons':
+    (t<T.salio-.2?'Datos: DHB (2025), handball-world · Kempa, Monsieur Handball (2007)':
+    (t<T.la5-.2?'Foto actual: Oskar Oltéus (CC BY-SA 4.0) · Wikimedia Commons · Pizarra: ejemplo':'Pizarra: ejemplo · Datos: DHB, handball-world, Kempa (2002 y 2007)')));
+  // rótulo
+  let html='',a=0; for(const [s,e,h] of CAPS)if(t>=s-.2&&t<e+.25){html=h;a=Math.min(r(t,s-.2,s+.15),1-r(t,e-.05,e+.25))}
+  const cp=$('cap'); if(cp.dataset.h!==html){cp.innerHTML=html;cp.dataset.h=html}
+  cp.style.opacity=a; cp.style.filter=`blur(${(1-a)*8}px)`; cp.style.transform=`translateY(${(1-a)*14}px)`;
+  let sw=r(t,T.bern-.4,T.bern+.25); if(!(sw>0&&sw<1))sw=r(t,T.salio-.4,T.salio+.25); if(!(sw>0&&sw<1))sw=r(t,T.la5-.35,T.la5+.25);
+  $('sweep').style.opacity=sw>0&&sw<1?1:0; $('sweep').style.left=lerp(-900,1080,io(sw))+'px';
+};
+Promise.all([...document.images].map(i=>i.decode().catch(()=>{}))).then(()=>document.fonts.ready).then(()=>{frame(0);window.ready=true});
+</script></body></html>
