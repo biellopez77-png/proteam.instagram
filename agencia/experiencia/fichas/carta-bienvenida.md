@@ -4,6 +4,26 @@
 **Fecha:** 23/11 · Irene (P1) · Primer mes (el 28/11 la carta ya funciona tal cual; esto la mejora sin cambiar su lógica).
 **Base:** rama `revision/club-fundador` de proteamapp: `src/components/founder/founder-welcome.tsx`, `founder-badge.tsx` (`FounderBadge`, `FounderSignature`), `founder-section.tsx`, `src/lib/founder.ts` (`shouldShowFounderWelcome`, `founderNumberLabel`), `src/styles.css` (`.founder-signature`, `.founder-pop`), migración `20261120010000_club_fundador.sql` (`welcome_seen_at`, `mark_founder_welcome_seen`).
 
+## 0. Rehecha en v4 (24/11, sistema v4 de Biel del 23/11) · tarea `irene-v4-paleta` (7/10)
+
+**Prototipo:** el mismo enlace, versión 2 (v4). Mismas funciones, mismos textos y mismos estados que la versión v3; cambia la piel. Lo de los apartados siguientes sigue vigente salvo lo que se dice aquí (el «Instrument Serif para el título», el «lápiz azul» y la «sombra de papel» de la tabla quedan sustituidos por esto).
+
+**Confirmado (no cambia):** las palabras de Biel, la firma `FounderSignature` (trazo y tiempos), cuándo se abre (`shouldShowFounderWelcome`), `mark_founder_welcome_seen` al cerrar, el número solo cuando está asignado y el nombre de `user_metadata.name`. El código de hoy (PR #1) sigue sin cambios; la vista «Actual» ahora lo enseña en el tema oscuro de la app.
+
+**Propuesto en v4:**
+- **Sala a oscuras y una lámpara:** la app detrás en penumbra (#02050F con velo); la hoja en #060C19 es lo único iluminado, con la luz desde arriba (degradado hielo muy suave y un filo de luz en el borde superior). Móvil: pantalla completa; escritorio: 560 px, radio 10 px.
+- **La luz señala lo activo dentro de la hoja:** el nombre subrayado con una línea de luz hielo (#B9E0FF) y la firma dibujada en azul eléctrico (#6AA8FF) con un halo leve; mismos tiempos y la misma quietud con `prefers-reduced-motion`. El margen de libreta pasa a una línea de luz muy tenue.
+- **Ultravioleta una vez por pantalla:** el rayo de la insignia del membrete (40 px, roseta azul y rayo #8B5CF6 con filo blanco). «Entrar» va en azul ProTeam #636DFF; «Cerrar» (releer) en contorno. En «sin verificar», la insignia queda apagada y el ultravioleta pasa a «Conseguir mi insignia» (el acceso al Club, como en la pestaña). En carga y error, ninguno.
+- **Tipografía:** Plus Jakarta Sans en todo (título en 800); Instrument Serif cursiva solo en el nombre, como única voz. «Biel · creador de ProTeam» pasa a Plus Jakarta Sans 600.
+- **Objetos reales en estados:** error al cargar con un **móvil boca abajo**; sin verificar con un **sobre cerrado** bajo una luz baja. Dibujos provisionales hasta tener foto propia o con licencia.
+- Avisos sin rojo: el aviso simulado de «Error al guardar» va en superficie #121B30; el fundador sigue sin ver ningún aviso.
+- **Fechas:** la carta no depende del relanzamiento; la fecha de la carta es `reviewed_at`. El ejemplo «24 de noviembre de 2026» vale con las fechas nuevas (lista hasta el jue 10/12, apertura el vie 11/12, por confirmar), porque se verifica durante la lista.
+- Corregido un fallo del prototipo v3: en escritorio, los estados de error y vacío salían fuera de la hoja.
+
+**Dudas nuevas para Biel (v4):**
+6. ¿El ultravioleta en el rayo del membrete o en la firma? Propongo el rayo (es la regla de la app: el rayo del verificado) y la firma en azul eléctrico.
+7. Objetos: el móvil boca abajo y el sobre son dibujos provisionales. ¿Foto propia o con licencia (`banco/fotos`) o dibujo?
+
 **Por qué ahora:** la carta es la ventaja 7 del Club (CLUB_FUNDADOR.md) y es el único sitio donde aparece Biel. Las fichas del recorrido inicial, del verificado y del Club en la app la dejan «tal cual» y remiten aquí su diseño. Hoy es un diálogo genérico: en un móvil de 375 px la insignia de 96 px y el título empujan la firma y «Entrar» bajo el pliegue, y al releerla desde Configuración el botón sigue diciendo «Entrar».
 
 ## Se conserva (confirmado, PR #1)
