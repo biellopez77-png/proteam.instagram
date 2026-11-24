@@ -1,0 +1,24 @@
+{
+ "numero": "Nº 00",
+ "seccion": "En directo desde el campo 3",
+ "formato": "story",
+ "laminas": [
+  {
+   "tipo": "pregunta",
+   "foto": "INSTALACION_CAMPO_ENTRENAMIENTO_FOTO_001",
+   "cap": "Una pregunta",
+   "big": "¿QUÉ MINUTO",
+   "bigLines": 1,
+   "serif": "de tu entreno\nretransmitirías?",
+   "size": 150
+  },
+  {
+   "tipo": "encuesta",
+   "pre": "Encuesta",
+   "big": "TU ENTRENO,",
+   "serif": "¿lo apuntas\no lo recuerdas?",
+   "foto": "OBJETO_CONOS_EJERCICIO_FOTO_001",
+   "size": 150
+  }
+ ]
+}
