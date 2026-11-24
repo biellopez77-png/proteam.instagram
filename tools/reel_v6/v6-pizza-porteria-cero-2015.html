@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8">
+<!-- v6-pizza-porteria-cero-2015 «La pizza os la hacéis vosotros» · explicativo v6 · fútbol · Marta A (02) -->
+<style>
+@font-face{font-family:M;font-weight:800;src:url(/tools/reel_v5/node_modules/@fontsource/plus-jakarta-sans/files/plus-jakarta-sans-latin-800-normal.woff2)}
+@font-face{font-family:M;font-weight:700;src:url(/tools/reel_v5/node_modules/@fontsource/plus-jakarta-sans/files/plus-jakarta-sans-latin-700-normal.woff2)}
+@font-face{font-family:M;font-weight:500;src:url(/tools/reel_v5/node_modules/@fontsource/plus-jakarta-sans/files/plus-jakarta-sans-latin-500-normal.woff2)}
+@font-face{font-family:S;font-style:italic;font-weight:400;src:url(/tools/fonts/instrument-serif-latin-400-italic.woff2)}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#02050F}
+#st{position:absolute;inset:0;overflow:hidden;background:#02050F}
+#world{position:absolute;left:0;top:0;transform-origin:0 0;will-change:transform}
+.o{position:absolute;left:0;top:0;transform-origin:50% 50%}
+.card{background:#0C1323;border:1px solid #1d2947;box-shadow:0 30px 90px rgba(0,0,0,.6),0 0 80px rgba(99,109,255,.12)}
+.frame{background:#0C1323;padding:14px;border:1px solid #1d2947;box-shadow:0 30px 90px rgba(0,0,0,.6),0 0 80px rgba(99,109,255,.12);overflow:hidden}
+.frame img{position:absolute;left:14px;top:14px;width:calc(100% - 28px);height:calc(100% - 28px);object-fit:cover}
+.lab{position:absolute;font-family:M;font-weight:700;font-size:22px;letter-spacing:.16em;text-transform:uppercase;color:#8f9bb8;white-space:nowrap}
+.num{position:absolute;font-family:M;font-weight:800;letter-spacing:-.05em;color:#F4F7FB;white-space:nowrap;line-height:1}
+.big{position:absolute;font-family:S;font-style:italic;font-weight:400;color:#F4F7FB;white-space:nowrap;line-height:1}
+#cap{position:absolute;left:90px;right:90px;top:1590px;text-align:center;font-family:M;font-weight:700;font-size:50px;line-height:1.16;letter-spacing:-.02em;color:#F4F7FB;text-shadow:0 0 12px #02050F,0 0 30px #02050F,0 0 46px #02050F}
+#cap em{font-family:S;font-style:italic;font-weight:400;font-size:1.16em;letter-spacing:0}
+#cap b{color:#6AA8FF;font-weight:800}
+#sweep{position:absolute;top:0;bottom:0;width:900px;left:-900px;background:linear-gradient(90deg,rgba(106,168,255,0),rgba(185,224,255,.55),rgba(106,168,255,0));mix-blend-mode:screen;pointer-events:none;opacity:0}
+#grain{position:absolute;inset:0;opacity:.16;mix-blend-mode:screen;pointer-events:none;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='300'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}
+.tag{position:absolute;font-family:M;font-weight:700;font-size:22px;letter-spacing:.16em;color:#02050F;background:#B9E0FF;border-radius:30px;padding:8px 18px}
+</style></head><body><div id="st">
+<div id="world">
+  <!-- 1 · nueve jornadas -->
+  <div class="num" id="CN" style="font-size:260px;opacity:0">0</div>
+  <div class="lab" id="CNl" style="font-size:30px;color:#B9E0FF;opacity:0">jornadas encajando</div>
+  <svg class="o" id="ROW" width="960" height="170" viewBox="0 0 960 170" style="overflow:visible"><g id="rowg"></g></svg>
+  <div class="lab" id="LC" style="font-size:30px;color:#F4F7FB;opacity:0">Leicester City · Premier League · 2015-16</div>
+  <div class="lab" id="LR" style="font-size:26px;color:#B9E0FF;opacity:0">Claudio Ranieri · entrenador</div>
+  <!-- caja de pizza -->
+  <svg class="o" id="BX" width="560" height="560" viewBox="-280 -280 560 560" style="overflow:visible">
+    <g id="base">
+      <rect x="-230" y="0" width="460" height="300" rx="8" fill="#0C1323" stroke="#F4F7FB" stroke-width="5"/>
+      <rect x="-210" y="18" width="420" height="264" rx="6" fill="none" stroke="#26335a" stroke-width="3"/>
+      <circle cx="0" cy="150" r="118" fill="none" stroke="#B9E0FF" stroke-width="4"/>
+      <circle cx="0" cy="150" r="96" fill="none" stroke="#6AA8FF" stroke-width="2" stroke-dasharray="6 9"/>
+      <path d="M0 32 L0 268 M-102 91 L102 209 M-102 209 L102 91" stroke="#B9E0FF" stroke-width="2.5" opacity=".7"/>
+    </g>
+    <g id="lid">
+      <g id="lidOut"><rect x="-230" y="0" width="460" height="300" rx="8" fill="#0C1323" stroke="#F4F7FB" stroke-width="5"/>
+        <rect x="-200" y="30" width="400" height="240" rx="6" fill="none" stroke="#26335a" stroke-width="3"/>
+        <path d="M-60 150 L60 150" stroke="#8f9bb8" stroke-width="4" stroke-linecap="round"/></g>
+      <g id="lidIn" opacity="0"><rect x="-230" y="0" width="460" height="300" rx="8" fill="#0a1020" stroke="#F4F7FB" stroke-width="5"/>
+        <path id="zero" d="M0 45 C 62 45 80 95 80 150 C 80 208 60 255 0 255 C -60 255 -80 208 -80 150 C -80 95 -62 45 2 48" fill="none" stroke="#F4F7FB" stroke-width="16" stroke-linecap="round" filter="url(#chalk)" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/></g>
+    </g>
+  </svg>
+  <!-- 1–0 -->
+  <div class="num" id="SC" style="font-size:250px;opacity:0"><span id="s1">1</span><span id="sd" style="color:#8f9bb8"> – </span><span id="s0">0</span></div>
+  <div class="lab" id="SCl" style="font-size:24px;opacity:0;width:760px;display:flex;justify-content:space-between"><span>Leicester</span><span>Crystal Palace</span></div>
+  <div class="lab" id="DT" style="font-size:32px;color:#B9E0FF;opacity:0">24·10·2015 · King Power Stadium</div>
+  <!-- 2 · cocina -->
+  <div class="big" id="VO" style="font-size:150px;opacity:0;text-align:center;line-height:.95">os la hacéis<br>vosotros</div>
+  <svg class="o" id="KT" width="960" height="720" viewBox="0 0 960 720" style="overflow:visible">
+    <rect x="0" y="0" width="960" height="720" rx="16" fill="#0C1323" stroke="#1d2947" stroke-width="2"/>
+    <path id="tab" d="M60 640 L180 170 L780 170 L900 640 Z" fill="none" stroke="#26335a" stroke-width="5" stroke-linejoin="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/>
+    <ellipse id="dough" cx="480" cy="410" rx="110" ry="70" fill="#0C1323" stroke="#F4F7FB" stroke-width="5"/>
+    <path id="sauce" d="M480 410 m0 0 c 20 0 26 -18 12 -30 c -24 -18 -60 4 -54 34 c 8 40 70 46 98 14 c 30 -36 4 -92 -52 -96 c -64 -4 -116 44 -100 104 c 14 50 74 72 130 54" fill="none" stroke="#6AA8FF" stroke-width="7" stroke-linecap="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/>
+    <g id="cheese" fill="#B9E0FF"></g>
+    <g id="hL" fill="none" stroke="#F4F7FB" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><path d="M-130 70 L-30 30 C -10 22 0 34 -6 46 L-20 70 C -10 72 4 84 -6 96 L-120 120"/><path d="M-30 30 L-4 22 M-24 48 L8 44 M-20 70 L10 70"/></g>
+    <g id="hR" fill="none" stroke="#F4F7FB" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><path d="M130 70 L30 30 C 10 22 0 34 6 46 L20 70 C 10 72 -4 84 6 96 L120 120"/><path d="M30 30 L4 22 M24 48 L-8 44 M20 70 L-10 70"/></g>
+    <g id="bowls" fill="none" stroke="#8f9bb8" stroke-width="4"><path d="M220 230 C 220 270 300 270 300 230 Z"/><circle cx="700" cy="245" r="34"/><circle cx="700" cy="245" r="20" stroke="#6AA8FF"/></g>
+    <text x="480" y="80" text-anchor="middle" font-family="M" font-weight="700" font-size="22" letter-spacing="5" fill="#8f9bb8">MASA · TOMATE · QUESO</text>
+    <text id="rec" x="900" y="690" text-anchor="end" font-family="M" font-weight="700" font-size="20" letter-spacing="4" fill="#8f9bb8">RECREACIÓN</text>
+  </svg>
+  <!-- doce ceros -->
+  <div class="num" id="DZ" style="font-size:260px;opacity:0">0</div>
+  <div class="lab" id="DZl" style="font-size:30px;color:#B9E0FF;opacity:0">porterías a cero más</div>
+  <svg class="o" id="ROW2" width="936" height="110" viewBox="0 0 936 110" style="overflow:visible"><g id="row2g"></g></svg>
+  <!-- premier -->
+  <div class="num" id="CP" style="font-size:150px;opacity:0;letter-spacing:-.02em">CAMPEÓN</div>
+  <div class="lab" id="CPl" style="font-size:34px;color:#B9E0FF;opacity:0">Premier League · mayo de 2016</div>
+  <!-- 3 · fotos -->
+  <div class="o frame" id="FS" style="width:1000px;height:750px">
+    <img id="fs" src="/banco/fotos/PROTEAM_STAFF_CHARLA_ENTRENAMIENTO_FOTO_001.jpg" style="filter:url(#duo) brightness(.95) contrast(1.06)">
+  </div>
+  <div class="o frame" id="FG" style="width:900px;height:780px">
+    <img id="fg" src="/banco/fotos/PROTEAM_OBJETO_GUANTES_CONO_FOTO_001.jpg" style="filter:url(#duo) brightness(.95) contrast(1.06)">
+    <svg style="position:absolute;left:0;top:0;overflow:visible" width="900" height="780"><circle id="hl" cx="430" cy="300" r="60" fill="none" stroke="#F4F7FB" stroke-width="8" opacity="0"/><circle id="hlr" cx="430" cy="300" r="60" fill="none" stroke="#F4F7FB" stroke-width="5" opacity="0"/><circle id="hld" cx="430" cy="300" r="14" fill="#F4F7FB" opacity="0"/></svg>
+  </div>
+  <div class="o frame" id="FC" style="width:1000px;height:600px">
+    <img id="fc" src="/banco/fotos/PROTEAM_INSTALACION_CAMPO_ENTRENAMIENTO_FOTO_001.jpg" style="filter:url(#duo) brightness(.95) contrast(1.06);object-position:30% 60%">
+  </div>
+  <!-- pizarra -->
+  <div class="o card" id="PZ" style="width:1000px;height:620px;border-radius:12px">
+    <div class="tag" style="right:30px;top:-58px">EJEMPLO</div>
+    <svg style="position:absolute;left:0;top:0;overflow:visible" width="1000" height="620">
+      <g fill="none" stroke="#26335a" stroke-width="4">
+        <rect id="pf" x="40" y="40" width="640" height="540" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/>
+        <path id="pa" d="M190 40 L190 170 L530 170 L530 40" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/>
+        <path id="pm" d="M40 580 L680 580 M270 580 C 270 500 450 500 450 580" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/>
+      </g>
+      <path id="goal" d="M300 40 L300 18 L420 18 L420 40" fill="none" stroke="#F4F7FB" stroke-width="7" stroke-linejoin="round" opacity="0"/>
+      <g id="pdots"></g>
+      <circle cx="840" cy="210" r="110" fill="none" stroke="#1d2947" stroke-width="10"/>
+      <circle id="clk" cx="840" cy="210" r="110" fill="none" stroke="#6AA8FF" stroke-width="10" stroke-linecap="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100" transform="rotate(-90 840 210)"/>
+      <text x="840" y="370" text-anchor="middle" font-family="M" font-weight="700" font-size="20" letter-spacing="4" fill="#8f9bb8">SIN GOLES EN</text>
+    </svg>
+    <div class="num" id="CK" style="left:740px;top:160px;width:200px;text-align:center;font-size:100px;opacity:0">0′</div>
+    <div class="lab" id="OK" style="left:690px;top:410px;width:300px;text-align:center;font-size:40px;color:#F4F7FB;letter-spacing:.06em;white-space:normal;line-height:1.25;opacity:0">0 goles<br>en 10′ <span style="color:#6AA8FF">✓</span></div>
+  </div>
+</div>
+<svg width="0" height="0" style="position:absolute"><filter id="duo" color-interpolation-filters="sRGB"><feColorMatrix type="matrix" values=".33 .33 .33 0 0 .33 .33 .33 0 0 .33 .33 .33 0 0 0 0 0 1 0"/><feComponentTransfer><feFuncR type="table" tableValues="0.008 0.18 0.416 0.957"/><feFuncG type="table" tableValues="0.02 0.235 0.659 0.969"/><feFuncB type="table" tableValues="0.059 0.667 1 0.984"/></feComponentTransfer></filter>
+<filter id="chalk"><feTurbulence type="fractalNoise" baseFrequency=".8" numOctaves="2" seed="3"/><feDisplacementMap in="SourceGraphic" scale="6"/></filter></svg>
+<div id="folio" style="position:absolute;left:64px;right:64px;top:70px;display:flex;justify-content:space-between;font-family:M;font-weight:500;font-size:24px;letter-spacing:.16em;color:#8f9bb8;text-transform:uppercase;z-index:30"><span>ProTeam — Historias · Fútbol</span><span id="fpg">p. 01</span></div>
+<div id="cred" style="position:absolute;left:64px;right:64px;bottom:60px;font-family:M;font-weight:500;font-size:18px;letter-spacing:.08em;color:#5d6888;text-transform:uppercase;z-index:30"></div>
+<div id="cap"></div>
+<div id="sweep"></div>
+<div id="grain"></div>
+</div>
+<script src="/tools/reel_v4/v6-pizza-porteria-cero-2015/times.js"></script>
+<script>
+const $=id=>document.getElementById(id), W=window.WORDS;
+const at=(w,n=1)=>{let c=0;for(const x of W)if(x[0]===w&&++c===n)return x[1];throw 'no '+w+n};
+const cl=(x,a=0,b=1)=>Math.min(b,Math.max(a,x));
+const r=(t,a,b)=>cl((t-a)/(b-a));
+const io=x=>x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2;
+const eo=x=>1-Math.pow(1-x,3);
+const bo=x=>{const n=7.5625,d=2.75;if(x<1/d)return n*x*x;if(x<2/d)return n*(x-=1.5/d)*x+.75;if(x<2.5/d)return n*(x-=2.25/d)*x+.9375;return n*(x-=2.625/d)*x+.984375};
+const lerp=(a,b,k)=>a+(b-a)*k;
+const pulse=(t,a)=>{const k=r(t,a,a+.35);return k>0&&k<1?1+.12*Math.sin(Math.PI*k):1};
+function track(K){return t=>{
+  if(t<=K[0][0])return K[0].slice(1); const n=K.length; if(t>=K[n-1][0])return K[n-1].slice(1);
+  let i=0;while(K[i+1][0]<t)i++;
+  const p1=K[i],p2=K[i+1], s=io((t-p1[0])/(p2[0]-p1[0]));
+  return [lerp(p1[1],p2[1],s),lerp(p1[2],p2[2],s),Math.exp(lerp(Math.log(p1[3]),Math.log(p2[3]),s))]}}
+const T={nueve:at('nueve'),goles:at('goles'),y1:at('y'),entren:at('entrenador'),leic:at('leicester'),ran:at('ranieri'),promesa:at('promesa'),si:at('si'),cero:at('cero'),os:at('os'),invito:at('invito'),pizza:at('pizza'),
+ jornada:at('jornada'),diez:at('diez'),uno:at('uno'),cero2:at('cero',2),crystal:at('crystal'),ran2:at('ranieri',2),cond:at('condicion'),la2:at('la',2),hac:at('haceis'),voso:at('vosotros'),
+ y2:at('y',2),metieron:at('metieron'),cocina:at('cocina'),despues:at('despues'),llegaron:at('llegaron'),docena:at('docena'),mas:at('mas'),y3:at('y',3),mayo:at('mayo'),premier:at('premier'),
+ no:at('no'),ganar:at('ganar'),les2:at('les',2),dependia:at('dependia'),este:at('este'),sabado:at('sabado'),elige:at('elige'),objetivo:at('objetivo'),uno2:at('uno',2),solo:at('solo'),que2:at('que',2),contar:at('contar'),
+ marquen:at('marquen'),diez2:at('diez',2),minutos:at('minutos'),y4:at('y',4),llega:at('llega'),celebra:at('celebra'),entre:at('entre'),VEND:window.VEND};
+T.END=T.VEND+1.0; window.DUR=T.END;
+const CY=1800, EY=3600;
+const CAM=track([[0,0,0,1.05],[T.y1-.1,0,0,1.0],[T.la2-.3,0,0,1.0],[T.la2+.2,0,CY,1.0],[T.y2-.15,0,CY,1.0],[T.cocina+.4,0,CY+40,1.1],[T.despues-.1,0,CY,1.0],
+ [T.no-.3,0,CY,1.0],[T.no+.15,0,EY,1.0],[T.elige-.1,0,EY,1.0],[T.asi=at('asi'),0,EY-20,1.05],[T.uno2-.2,0,EY,1.0],[T.END,0,EY+10,1.0]]);
+function place(el,x,y,rot=0,sc=1){el.style.transform=`translate(${x-(el.offsetWidth||+el.getAttribute("width"))/2}px,${y-(el.offsetHeight||+el.getAttribute("height"))/2}px) rotate(${rot}deg) scale(${sc})`}
+const NS='http://www.w3.org/2000/svg';
+function mk(g,tag,attrs){const e=document.createElementNS(NS,tag);for(const k in attrs)e.setAttribute(k,attrs[k]);g.appendChild(e);return e}
+const draw=(el,a,b,t)=>el.setAttribute('stroke-dashoffset',100-100*io(r(t,a,b)));
+// fila de jornadas: J1..J9 con gol en contra, J10 limpia
+const BOX=[];
+for(let i=0;i<10;i++){const g=mk($('rowg'),'g',{});const x=i*96;
+  const rc=mk(g,'rect',{x:x+6,y:30,width:84,height:120,rx:8,fill:'#0C1323',stroke:'#26335a','stroke-width':3});
+  const tx=mk(g,'text',{x:x+48,y:18,'text-anchor':'middle','font-family':'M','font-weight':700,'font-size':20,'letter-spacing':2,fill:'#8f9bb8'});tx.textContent='J'+(i+1);
+  const ball=mk(g,'circle',{cx:x+48,cy:100,r:16,fill:'#F4F7FB',opacity:0});
+  let z=null; if(i===9){z=mk(g,'text',{x:x+48,y:118,'text-anchor':'middle','font-family':'M','font-weight':800,'font-size':56,fill:'#02050F',opacity:0});z.textContent='0'}
+  BOX.push({g,rc,ball,z,x})}
+// doce ceros tras J10
+const Z12=[];
+for(let i=0;i<13;i++){const g=mk($('row2g'),'g',{opacity:0});const x=i*72;
+  const rc=mk(g,'rect',{x:x+4,y:10,width:64,height:90,rx:6,fill:i===0?'#6AA8FF':'#0C1323',stroke:i===0?'#6AA8FF':'#26335a','stroke-width':3});
+  const tx=mk(g,'text',{x:x+36,y:72,'text-anchor':'middle','font-family':'M','font-weight':800,'font-size':40,fill:i===0?'#02050F':'#26335a'});tx.textContent='0';
+  Z12.push({g,rc,tx})}
+const lab10=mk($('row2g'),'text',{x:36,y:-6,'text-anchor':'middle','font-family':'M','font-weight':700,'font-size':18,'letter-spacing':2,fill:'#8f9bb8'});lab10.textContent='J10';
+// queso
+for(let i=0;i<22;i++){const a=i*2.4, rr=18+((i*37)%80); mk($('cheese'),'rect',{x:480+Math.cos(a)*rr*1.5-6,y:410+Math.sin(a)*rr*.9-4,width:12,height:8,rx:2,opacity:0,transform:`rotate(${i*31} ${480+Math.cos(a)*rr*1.5} ${410+Math.sin(a)*rr*.9})`})}
+const CH=[...$('cheese').children];
+// pizarra: portero + 4 defensas + 6
+const PD=[[360,70,1],[180,230,0],[300,230,0],[420,230,0],[540,230,0],[220,360,2],[360,340,2],[500,360,2],[180,470,2],[360,480,2],[540,470,2]];
+const PG=PD.map((p,i)=>{const g=mk($('pdots'),'g',{opacity:0});mk(g,'circle',{r:p[2]===0?24:20,fill:p[2]===0?'#6AA8FF':p[2]===1?'#B9E0FF':'#F4F7FB'});return {g,p}});
+const CAPS=[[-1,T.y1-.2,'<b>Nueve jornadas</b> encajando goles.'],
+ [T.y1-.1,T.si-.25,'El entrenador del Leicester, Claudio Ranieri, <em>hizo una promesa:</em>'],
+ [T.si-.1,T.jornada-.2,'Si dejáis la portería a cero, <em>os invito a pizza.</em>'],
+ [T.jornada-.1,T.ran2-.2,'Jornada diez: <b>1-0</b> al Crystal Palace.'],
+ [T.ran2-.1,T.la2-.3,'Ranieri cumplió, <em>con una condición:</em>'],
+ [T.y2-.1,T.despues-.2,'Y se metieron todos <em>en la cocina.</em>'],
+ [T.despues-.1,T.y3-.12,'Después, <b>una docena</b> de porterías a cero más.'],
+ [T.y3-.02,T.no-.25,'Y en mayo, <em>la Premier.</em>'],
+ [T.no-.1,T.este-.25,'No les pidió ganar. Les pidió algo que <em>dependía de todos.</em>'],
+ [T.este-.1,T.uno2-.25,'Este sábado, <em>elige un objetivo así.</em>'],
+ [T.uno2-.1,T.y4-.2,'Uno solo, que se pueda contar: <em>que no nos marquen en los diez primeros minutos.</em>'],
+ [T.y4-.1,T.END+1,'Y si llega, <em>se celebra entre todos.</em>']];
+window.frame=function(t){
+  const [cx,cy,z]=CAM(t); $('world').style.transform=`translate(540px,960px) scale(${z}) translate(${-cx}px,${-cy}px)`;
+  // 1 · nueve jornadas
+  const up=io(r(t,T.y1-.1,T.y1+.6)), rowOut=r(t,T.la2-.4,T.la2-.1);
+  place($('ROW'),0,lerp(120,-520,up),0,lerp(1,.78,up)); $('ROW').style.opacity=r(t,-.2,.05)*(1-rowOut);
+  let nb=0;
+  BOX.forEach((b,i)=>{ if(i<9){const t0=.05+i*(T.goles+.3-.05)/9; const k=bo(r(t,t0,t0+.4)); if(t>=t0+.25)nb++;
+      b.ball.setAttribute('opacity',r(t,t0,t0+.06)); b.ball.setAttribute('cy',lerp(-60,100,k)); b.g.setAttribute('opacity',r(t,t0-.15,t0));
+      b.rc.setAttribute('stroke',t>=t0+.25?'#8f9bb8':'#26335a')}
+    else{const a=r(t,T.jornada-.1,T.jornada+.2), lit=r(t,T.diez,T.diez+.3); b.g.setAttribute('opacity',a); b.rc.setAttribute('fill',lit>0?'#6AA8FF':'#0C1323'); b.rc.setAttribute('stroke',lit>0?'#6AA8FF':'#26335a'); b.z.setAttribute('opacity',lit);
+      b.g.style.transform=`translateY(${lerp(-30,0,eo(a))}px)`}});
+  $('rowg').setAttribute('transform',`translate(${lerp(48,0,io(r(t,T.jornada-.2,T.jornada+.3)))} 0)`);
+  $('CN').textContent=nb; place($('CN'),0,-330,0,pulse(t,T.goles+.2)); $('CN').style.opacity=r(t,0,.15)*(1-r(t,T.y1-.2,T.y1+.2));
+  $('CN').style.color=nb===9?'#6AA8FF':'#F4F7FB';
+  place($('CNl'),0,-150); $('CNl').style.opacity=r(t,.6,1.0)*(1-r(t,T.y1-.2,T.y1+.2));
+  const lcOut=r(t,T.si-.3,T.si);
+  place($('LC'),0,-40,0,1.05); $('LC').style.opacity=r(t,T.leic-.2,T.leic+.2)*(1-lcOut);
+  place($('LR'),0,40,0,1.15); $('LR').style.opacity=r(t,T.ran-.1,T.ran+.3)*(1-lcOut);
+  // caja
+  const bxIn=eo(r(t,T.si-.25,T.si+.6)), bxOut=io(r(t,T.jornada-.3,T.jornada+.2));
+  place($('BX'),lerp(0,0,bxIn),lerp(60,-40,bxOut)+90,lerp(-28,0,bxIn)+lerp(0,6,bxOut),lerp(.7,1.15,bxIn)*lerp(1,.6,bxOut)); $('BX').style.opacity=r(t,T.si-.25,T.si)*(1-bxOut);
+  const op=io(r(t,T.cero-.05,T.cero+.5)), s=lerp(1,-.82,op);
+  $('lid').setAttribute('transform',`scale(1 ${s.toFixed(3)})`); $('lidOut').setAttribute('opacity',s>0?1:0); $('lidIn').setAttribute('opacity',s<=0?1:0);
+  draw($('zero'),T.os-.05,T.invito+.25,t);
+  // 1–0
+  const scIn=r(t,T.uno-.15,T.uno+.05), scOut=r(t,T.la2-.4,T.la2-.1);
+  place($('SC'),0,110,0,pulse(t,T.uno)); $('SC').style.opacity=scIn*(1-scOut);
+  const z0=r(t,T.cero2-.05,T.cero2+.15); $('sd').style.opacity=z0; $('s0').style.opacity=z0;
+  const fix=r(t,T.cero2+.2,T.cero2+.5); $('s0').style.color=fix>0?'#8B5CF6':'#F4F7FB'; $('s0').style.textShadow=fix>0?`0 0 ${50*fix}px rgba(139,92,246,.85)`:'none';
+  $('s1').style.color='#F4F7FB';
+  place($('SCl'),0,270); $('SCl').style.opacity=r(t,T.crystal-.1,T.crystal+.2)*(1-scOut);
+  place($('DT'),0,-300); $('DT').style.opacity=r(t,T.jornada,T.jornada+.4)*(1-scOut);
+  // 2 · os la hacéis vosotros
+  const voIn=r(t,T.la2-.1,T.la2+.3), voOut=r(t,T.y2-.3,T.y2);
+  place($('VO'),0,CY-60,0,lerp(.94,1,eo(voIn))); $('VO').style.opacity=voIn*(1-voOut);
+  // cocina
+  const kIn=r(t,T.y2-.25,T.y2+.1), kOut=r(t,T.despues-.3,T.despues);
+  place($('KT'),0,CY+20); $('KT').style.opacity=kIn*(1-kOut);
+  draw($('tab'),T.y2-.2,T.y2+.5,t);
+  const st=io(r(t,T.metieron,T.cocina+.6)); $('dough').setAttribute('rx',lerp(70,230,st)); $('dough').setAttribute('ry',lerp(50,140,st));
+  $('hL').setAttribute('transform',`translate(${lerp(410,250,st)+Math.sin(t*9)*6} ${lerp(380,370,st)})`); $('hR').setAttribute('transform',`translate(${lerp(550,710,st)-Math.sin(t*9)*6} ${lerp(380,370,st)})`);
+  $('hL').setAttribute('opacity',r(t,T.y2,T.y2+.2)*(1-r(t,T.cocina+.1,T.cocina+.4))); $('hR').setAttribute('opacity',r(t,T.y2,T.y2+.2)*(1-r(t,T.cocina+.1,T.cocina+.4)));
+  draw($('sauce'),T.cocina-.1,T.cocina+.6,t); $('sauce').setAttribute('opacity',1);
+  CH.forEach((c,i)=>c.setAttribute('opacity',r(t,T.cocina+.25+i*.025,T.cocina+.35+i*.025)));
+  $('bowls').setAttribute('opacity',r(t,T.y2,T.y2+.3)*(1-st*.5));
+  // doce ceros
+  const dzIn=r(t,T.despues-.25,T.despues+.05), cut=t>=T.y3-.06?0:1;
+  let nz=0; Z12.forEach((d,i)=>{ if(i===0){d.g.setAttribute('opacity',dzIn);return}
+    const t0=T.llegaron+(i-1)*(T.mas+.1-T.llegaron)/12; const k=r(t,t0,t0+.15); if(t>=t0+.1)nz++;
+    d.g.setAttribute('opacity',dzIn); d.rc.setAttribute('stroke',k>0?'#B9E0FF':'#26335a'); d.tx.setAttribute('fill',k>0?'#B9E0FF':'#26335a');
+    d.g.style.transform=`translateY(${-10*Math.sin(Math.PI*k)}px)`});
+  lab10.setAttribute('opacity',1);
+  place($('ROW2'),0,CY+90); $('ROW2').style.opacity=cut*dzIn;
+  $('DZ').textContent=nz; place($('DZ'),0,CY-260,0,pulse(t,T.mas+.1)); $('DZ').style.opacity=dzIn*cut; $('DZ').style.color=nz===12?'#6AA8FF':'#F4F7FB';
+  place($('DZl'),0,CY-80); $('DZl').style.opacity=r(t,T.docena,T.docena+.3)*cut;
+  // premier
+  const cpIn=t>=T.y3-.06?1:0, cpOut=r(t,T.no-.35,T.no-.05);
+  place($('CP'),0,CY-60,0,1+.03*r(t,T.premier,T.no)); $('CP').style.opacity=cpIn*(1-cpOut);
+  place($('CPl'),0,CY+90); $('CPl').style.opacity=cpIn*r(t,T.mayo-.1,T.mayo+.2)*(1-cpOut);
+  // 3 · fotos
+  const fsIn=eo(r(t,T.no-.25,T.no+.4)), fsOut=io(r(t,T.este-.3,T.este+.3));
+  place($('FS'),lerp(1100,0,fsIn)+lerp(0,-1100,fsOut),EY-40); $('FS').style.opacity=r(t,T.no-.25,T.no)*(1-fsOut);
+  $('fs').style.transform=`scale(${lerp(1.12,1.0,r(t,T.no,T.este))})`;
+  const fgIn=eo(r(t,T.este-.3,T.este+.35)), fgOut=r(t,T.uno2-.25,T.uno2+.1);
+  place($('FG'),lerp(1100,0,fgIn),EY-40,0,lerp(1,.96,fgOut)); $('FG').style.opacity=r(t,T.este-.3,T.este)*(1-fgOut);
+  $('fg').style.transform=`scale(${lerp(1.1,1.0,r(t,T.este,T.uno2))})`;
+  $('hl').setAttribute('opacity',r(t,T.elige,T.elige+.2)); $('hld').setAttribute('opacity',r(t,T.elige,T.elige+.2));
+  const hp=((t-T.elige)%1.3+1.3)%1.3/1.3; $('hlr').setAttribute('r',60+50*hp); $('hlr').setAttribute('opacity',t>T.elige?.8*(1-hp):0);
+  const fcIn=r(t,T.uno2-.2,T.uno2+.15), fcUp=io(r(t,T.que2-.1,T.contar+.2));
+  place($('FC'),0,lerp(EY-40,EY-470,fcUp),0,lerp(1,.78,fcUp)); $('FC').style.opacity=fcIn;
+  $('fc').style.transform=`scale(${lerp(1.08,1.0,r(t,T.uno2,T.minutos))})`;
+  // pizarra
+  const pzIn=eo(r(t,T.contar-.2,T.contar+.3)); place($('PZ'),0,EY+230+50*(1-pzIn),lerp(-2,0,pzIn),.94); $('PZ').style.opacity=pzIn;
+  draw($('pf'),T.contar-.1,T.contar+.5,t); draw($('pa'),T.contar+.1,T.contar+.6,t); draw($('pm'),T.contar+.2,T.contar+.7,t);
+  $('goal').setAttribute('opacity',r(t,T.contar+.2,T.contar+.4));
+  const ck=r(t,T.marquen,T.minutos+.2); $('clk').setAttribute('stroke-dashoffset',100-100*ck); $('CK').textContent=Math.floor(ck*10+1e-6)+'′';
+  $('CK').style.opacity=r(t,T.marquen-.2,T.marquen); $('CK').style.color=ck>=1?'#6AA8FF':'#F4F7FB'; $('CK').style.transform=`scale(${pulse(t,T.minutos+.2)})`;
+  $('OK').style.opacity=r(t,T.llega,T.llega+.3);
+  const gat=io(r(t,T.celebra-.2,T.entre+.3)), sh=Math.sin((t-T.marquen)*1.6)*70*r(t,T.marquen,T.marquen+.4)*(1-gat);
+  PG.forEach((d,i)=>{const a=T.contar+.4+i*.05; let x=d.p[0], y=d.p[1];
+    if(d.p[2]===0)x+=sh; else if(d.p[2]===2)x+=sh*.6; else x+=sh*.4;
+    const ang=i/11*Math.PI*2, gx=360+Math.cos(ang)*56, gy=330+Math.sin(ang)*56;
+    x=lerp(x,gx,gat); y=lerp(y,gy,gat)+lerp(-30,0,eo(r(t,a,a+.3)));
+    d.g.setAttribute('transform',`translate(${x.toFixed(1)} ${y.toFixed(1)}) scale(${1+.15*Math.sin(Math.PI*r(t,T.entre+.3,T.entre+.8))})`); d.g.setAttribute('opacity',r(t,a,a+.15))});
+  // folio, créditos
+  $('fpg').textContent=t<T.la2-.3?'p. 01':t<T.no-.2?'p. 02':'p. 03';
+  $('cred').textContent=t<T.no-.2?'Ilustración: ProTeam · Marcadores, caja y cocina: recreación · Fuente: C. Ranieri, The Players’ Tribune':
+    (t<T.este-.1?'Foto: Froztbyte (CC BY-SA 3.0) · Wikimedia Commons':
+    (t<T.uno2-.1?'Foto: Walter Mains (dominio público) · Wikimedia Commons':'Foto: Jonathan Hutchins (CC BY-SA 2.0) · Wikimedia Commons · Pizarra: ejemplo'));
+  // rótulo
+  let html='',a=0; for(const [s,e,h] of CAPS)if(t>=s-.2&&t<e+.25){html=h;a=Math.min(r(t,s-.2,s+.15),1-r(t,e-.05,e+.25))}
+  if(t>=T.y3-.06&&t<T.y3+.1)a=1;
+  const cp=$('cap'); if(cp.dataset.h!==html){cp.innerHTML=html;cp.dataset.h=html}
+  cp.style.opacity=a; cp.style.filter=`blur(${(1-a)*8}px)`; cp.style.transform=`translateY(${(1-a)*14}px)`;
+  const sw=r(t,T.la2-.35,T.la2+.3); $('sweep').style.opacity=sw>0&&sw<1?1:0; $('sweep').style.left=lerp(-900,1080,io(sw))+'px';
+};
+Promise.all([...document.images].map(i=>i.decode().catch(()=>{}))).then(()=>document.fonts.ready).then(()=>{frame(0);window.ready=true});
+</script></body></html>
