@@ -14,3 +14,7 @@ Fotos (licencias comprobadas el 24/11/2026 en la API de Wikimedia Commons desde 
 Graduadas con tools/reel_v7/bielsa/grade.py (B/N, solo el azul; la portada en B/N). Calendario, tijeras, aro, red, escalera, fichas sin cara, marcador vacío, cartel de la final, reloj, canasta pequeña, marcador 54-52 y silueta: dibujados y rotulados «recreación». Sin caras de jugadores ni escudos.
 
 Ultravioleta #8B5CF6 una sola vez: «DE VERDAD».
+
+Música y efectos (Epidemic Sound, vía Higgsfield): «Musical, Loop, Soft Piano, Strings, Calm, Intro, Logo 01» y «… 03» (encadenadas con 1,4 s); «Swooshes, Whoosh, Soft, Clean»; «Objects, Book, Flip Page»; «Paper, Friction, Sheet, Laminated, Slide On Wooden Table»; «Objects, Misc, Scissors, Cut, Single 01»; «Tools, Misc, Step Ladder, Metal, Place Down»; «Objects, Writing, Whiteboard Marker, Writing 01»; «Paper, Handle, Newspaper, Pickup, Soft, Variations»; «Mechanical, Click, Switches, Button, Push, Small 02»; «Alarms, Buzzer, Wrong Answer Buzzer» (bocina, muy baja). Mezcla: mix.py (voz −19, música −31 con ducking; resultado voz −19,0, música −34,1, sfx −36,1, pico 0,89).
+
+Vídeo final: https://d2ol7oe51mr4n9.cloudfront.net/user_3M2z7lIyzIPYtjNHcxRWFNk6wi7/23908ce6-d1b7-4204-be3b-fd577f87685e.mp4 (27,9 s: 22,3 s de historia + cierre común; comprobado con whisper: se oyen las 54 palabras).
