@@ -1,1137 +1,1154 @@
 [
- {
-  "id": "a1-papel",
-  "kind": "reel",
-  "files": [
-   "publicar/media/a1-papel.mp4"
-  ],
-  "caption": "Lehmann tenía un papel en la media. Tu segundo puede tener una hoja con seis zonas.\n\n¿Qué apuntas tú en el descanso?\n\nFotos: Andreas Köpke (DP), ronmacphotos (CC BY 2.0)\n#entrenadores #futbolbase #fútbol #entrenamiento",
-  "state": "retirada",
-  "ig": {
-   "status": "pendiente"
-  },
-  "tiktok": {
-   "status": "pendiente"
-  },
-  "added": "2026-11-23T07:59:06.582636+01:00",
-  "nota": "Estilo v3 retirado (Biel, 23/11). No se publica."
- },
- {
-  "id": "b2-rpe-carrusel",
-  "kind": "carrusel",
-  "files": [
-   "publicar/media/b2-rpe-carrusel-1.jpg",
-   "publicar/media/b2-rpe-carrusel-2.jpg",
-   "publicar/media/b2-rpe-carrusel-3.jpg",
-   "publicar/media/b2-rpe-carrusel-4.jpg",
-   "publicar/media/b2-rpe-carrusel-5.jpg",
-   "publicar/media/b2-rpe-carrusel-6.jpg"
-  ],
-  "caption": "Al acabar cada entreno, una pregunta a cada jugador: del 1 al 10, ¿cuánto te ha costado? Multiplícalo por los minutos y tienes la carga del día. Tres semanas comparando jueves y sábados.\nGuárdalo y pásaselo a tu segundo.\n\nLas cifras de las láminas son un EJEMPLO.\nMétodo: RPE de sesión (Foster et al., 2001).\nFoto: Steffen Prößdorf (CC BY-SA 4.0)\n#entrenadores #baloncesto #entrenamiento",
-  "state": "retirada",
-  "ig": {
-   "status": "pendiente"
-  },
-  "tiktok": {
-   "status": "no"
-  },
-  "added": "2026-11-23T08:33:44.019547+01:00",
-  "nota": "Estilo v3 retirado (Biel, 23/11). No se publica."
- },
- {
-  "id": "b2-rpe-story1",
-  "kind": "story",
-  "files": [
-   "publicar/media/b2-rpe-story1.png"
-  ],
-  "caption": "Pregunta: ¿Qué día entrenas más fuerte? (sticker de pregunta a mano). Foto: DoD (DP).",
-  "state": "retirada",
-  "ig": {
-   "status": "pendiente"
-  },
-  "tiktok": {
-   "status": "no"
-  },
-  "added": "2026-11-23T08:33:44.052150+01:00",
-  "nota": "Estilo v3 retirado (Biel, 23/11). No se publica."
- },
- {
-  "id": "b2-rpe-story2",
-  "kind": "story",
-  "files": [
-   "publicar/media/b2-rpe-story2.png"
-  ],
-  "caption": "Encuesta: ¿Les preguntas cuánto les ha costado? Lo pregunto / Lo intuyo (sticker de encuesta a mano).",
-  "state": "retirada",
-  "ig": {
-   "status": "pendiente"
-  },
-  "tiktok": {
-   "status": "no"
-  },
-  "added": "2026-11-23T08:33:44.101096+01:00",
-  "nota": "Estilo v3 retirado (Biel, 23/11). No se publica."
- },
- {
-  "id": "T09-2-r1",
-  "kind": "reel",
-  "files": [
-   "publicar/media/T09-2-r1-1.mp4",
-   "publicar/media/T09-2-r1-2.jpg"
-  ],
-  "caption": "Si alguien de tu banquillo entra en el minuto 53, le has dejado siete minutos para todo un partido.\n\nNadie lo decide. Vas ganando, no tocas lo que funciona, y al que no sale no lo ve nadie. Antes del partido, apunta junto a cada dorsal los minutos mínimos. En el descanso, rodea al que siga en cero. Ese entra el primero.\n\n(Escena de ejemplo: marcador y dorsales no son de ningún equipo.)\n\n¿Cuántos minutos jugó tu último del banquillo el sábado?",
-  "state": "retirada",
-  "ig": {
-   "status": "pendiente"
-  },
-  "tiktok": {
-   "status": "pendiente"
-  },
-  "added": "2026-11-23T08:35:05.809926+01:00",
-  "nota": "Estilo v3 retirado (Biel, 23/11). No se publica."
- },
- {
-  "id": "T09-2-r2",
-  "kind": "reel",
-  "files": [
-   "publicar/media/T09-2-r2-1.mp4",
-   "publicar/media/T09-2-r2-2.jpg"
-  ],
-  "caption": "Si tu primer cambio es siempre el mismo dorsal, no lo estás eligiendo tú: lo elige la banda.\n\nEn caliente entra el que calienta más cerca. Los cambios se acaban y el catorce vuelve a casa con el peto limpio. En el descanso, escribe tus cambios con su minuto, empezando por el que no ha jugado. En el 53 miras la hoja, no la banda.\n\n(Escena de ejemplo: dorsales y marcadores no son de ningún equipo.)\n\n¿Tus cambios los decides en el descanso o en la banda?",
-  "state": "retirada",
-  "ig": {
-   "status": "pendiente"
-  },
-  "tiktok": {
-   "status": "pendiente"
-  },
-  "added": "2026-11-23T08:58:50.468321+01:00",
-  "nota": "Estilo v3 retirado (Biel, 23/11). No se publica."
- },
- {
-  "id": "T06-1-r2",
-  "kind": "reel",
-  "files": [
-   "publicar/media/T06-1-r2-1.mp4",
-   "publicar/media/T06-1-r2-2.jpg"
-  ],
-  "caption": "Hay dos palabras que tus jugadores casi nunca te oyen decir.\n\nTu lateral corre cuarenta metros hacia atrás y corta un contraataque. En el vestuario se habla del gol, del penalti y del cambio. De su carrera, nada. Ferguson lo contó en Harvard Business Review (2013): no hay nada mejor que oír «bien hecho», y sin superlativos. En la banda, apunta lo bueno de cada uno con su minuto y díselo al acabar con su nombre.\n\n(Escena de ejemplo. Foto de Ferguson: Austin Osuide, CC BY 2.0, Wikimedia Commons.)\n\n¿A quién de tu equipo le debes hoy un «bien hecho»?",
-  "state": "retirada",
-  "ig": {
-   "status": "pendiente"
-  },
-  "tiktok": {
-   "status": "pendiente"
-  },
-  "added": "2026-11-23T09:37:26.127235+01:00",
-  "nota": "Estilo v3 retirado (Biel, 23/11). No se publica."
- },
- {
-  "id": "T04-2-r3",
-  "kind": "reel",
-  "files": [
-   "publicar/media/T04-2-r3-1.mp4",
-   "publicar/media/T04-2-r3-2.jpg"
-  ],
-  "caption": "Apuntó hasta al portero rival en su botella. Esto es lo que puedes copiar con tu portero, aunque no tengas analista.\n\nEn la ida, cada penalti y cada falta del rival: dorsal y lado. En la vuelta, todo a una tira de cinta en la botella de tu portero. Y no solo el nueve: el que menos esperas también tira.\n\n(Final de la Eurocopa 2020, Wembley, 11/7/2021. Dorsales de base: ejemplo. Foto de Wembley: Ashley Martin, CC BY-SA 2.0, Wikimedia Commons.)\n\n¿Tu portero sabe algo del rival antes del sábado?",
-  "state": "retirada",
-  "ig": {
-   "status": "pendiente"
-  },
-  "tiktok": {
-   "status": "pendiente"
-  },
-  "added": "2026-11-23T10:02:48.397624+01:00",
-  "nota": "Estilo v3 retirado (Biel, 23/11). No se publica."
- },
- {
-  "id": "d2-portera-carrusel",
-  "kind": "carrusel",
-  "files": [
-   "publicar/media/d2-portera-carrusel-1.jpg",
-   "publicar/media/d2-portera-carrusel-2.jpg",
-   "publicar/media/d2-portera-carrusel-3.jpg",
-   "publicar/media/d2-portera-carrusel-4.jpg",
-   "publicar/media/d2-portera-carrusel-5.jpg",
-   "publicar/media/d2-portera-carrusel-6.jpg"
-  ],
-  "caption": "Le marcaron veinte. Y fue su mejor partido.\n\nPerdéis de seis y en el vestuario nadie la mira. Tú ves el 20; ella también.\n\n1. Durante el partido, una raya por parada y otra por gol.\n2. Paradas ÷ tiros: 12 de 32 es un 37,5 %.\n3. Cada partido, el mismo cálculo, para poder compararlo.\n4. El lunes, se lo enseñas a ella antes que a nadie.\n\nGuárdalo y pásaselo a tu segundo.\n\nEscena y cifras de ejemplo (no es un partido real).\nFotos: Steffen Prößdorf (CC BY-SA 4.0)\n\nLa app de ProTeam, para entrenadores de fútbol, baloncesto y balonmano. Enlace en la bio.",
-  "state": "retirada",
-  "ig": {
-   "status": "pendiente"
-  },
-  "tiktok": {
-   "status": "no"
-  },
-  "added": "2026-11-23T10:34:31.063742+01:00",
-  "nota": "Estilo v3 retirado (Biel, 23/11). No se publica."
- },
- {
-  "id": "d2-portera-story1",
-  "kind": "story",
-  "files": [
-   "publicar/media/d2-portera-story1.png"
-  ],
-  "caption": "¿Cuántos tiros paró tu portera el sábado?",
-  "state": "retirada",
-  "ig": {
-   "status": "pendiente"
-  },
-  "tiktok": {
-   "status": "no"
-  },
-  "added": "2026-11-23T10:34:31.099568+01:00",
-  "nota": "Estilo v3 retirado (Biel, 23/11). No se publica."
- },
- {
-  "id": "d2-portera-story2",
-  "kind": "story",
-  "files": [
-   "publicar/media/d2-portera-story2.png"
-  ],
-  "caption": "¿Qué cuentas de tu portera?",
-  "state": "retirada",
-  "ig": {
-   "status": "pendiente"
-  },
-  "tiktok": {
-   "status": "no"
-  },
-  "added": "2026-11-23T10:34:31.130705+01:00",
-  "nota": "Estilo v3 retirado (Biel, 23/11). No se publica."
- },
- {
-  "id": "T09-1-r1",
-  "kind": "reel",
-  "files": [
-   "publicar/media/T09-1-r1-1.mp4",
-   "publicar/media/T09-1-r1-2.jpg"
-  ],
-  "caption": "Tu primer cambio se decide en el minuto ocho, aunque lo hagas en el sesenta.\n\nCero a dos, los dos goles por tu banda izquierda. Lo raro es que en el minuto ocho su extremo ya había ganado tres carreras por ahí, y no lo apuntaste. En los primeros quince minutos, tres líneas: por dónde te atacan, qué duelo pierdes y quién va justo de piernas. Esa última línea es tu primer cambio.\n\n(Escena de ejemplo.)\n\n¿Por qué banda te atacaron el sábado?",
-  "state": "retirada",
-  "ig": {
-   "status": "pendiente"
-  },
-  "tiktok": {
-   "status": "pendiente"
-  },
-  "added": "2026-11-23T10:45:57.260880+01:00",
-  "nota": "Estilo v3 retirado (Biel, 23/11). No se publica."
- },
- {
-  "id": "T09-1-r2",
-  "kind": "reel",
-  "files": [
-   "publicar/media/T09-1-r2-1.mp4",
-   "publicar/media/T09-1-r2-2.jpg"
-  ],
-  "caption": "La roja del minuto setenta casi siempre empieza mucho antes.\n\nTu central se va expulsado con 1-1. La primera amarilla fue en el doce, en la otra punta, y en el descanso nadie se acordó. Antes del minuto quince, abre la hoja: amarillas con dorsal y minuto, su banda fuerte y quién no llega. Esa lista, y no el marcador, es la que lees en el descanso para hacer el primer cambio.\n\n(Escena de ejemplo. Regla 12 de la IFAB: segunda amarilla, expulsión.)\n\n¿Apuntas las amarillas de tu equipo durante el partido?",
-  "state": "retirada",
-  "ig": {
-   "status": "pendiente"
-  },
-  "tiktok": {
-   "status": "pendiente"
-  },
-  "added": "2026-11-23T11:03:21.054090+01:00",
-  "nota": "Estilo v3 retirado (Biel, 23/11). No se publica."
- },
- {
-  "id": "T09-1-r3",
-  "kind": "reel",
-  "files": [
-   "publicar/media/T09-1-r3-1.mp4",
-   "publicar/media/T09-1-r3-2.jpg"
-  ],
-  "caption": "Si algo se repite tres veces antes del minuto quince, ya no es casualidad.\n\nSu extremo le gana la espalda a tu lateral: una la salva el portero, otra se va fuera, y la tercera la ves venir desde el banquillo. Esperas, porque un cambio en el doce parece exagerado. Pauta para el banquillo: una raya cada vez que algo se repite, y a la tercera cambias algo, aunque vayas cero a cero.\n\n(Escena de ejemplo. Foto: grassrootsgroundswell, CC BY 2.0, Wikimedia Commons.)\n\n¿Qué se te repitió el sábado antes del quince?",
-  "state": "retirada",
-  "ig": {
-   "status": "pendiente"
-  },
-  "tiktok": {
-   "status": "pendiente"
-  },
-  "added": "2026-11-23T11:31:57.975015+01:00",
-  "nota": "Estilo v3 retirado (Biel, 23/11). No se publica."
- },
- {
-  "id": "T01-5-r3",
-  "kind": "reel",
-  "files": [
-   "publicar/media/T01-5-r3-1.mp4",
-   "publicar/media/T01-5-r3-2.jpg"
-  ],
-  "caption": "Cómo sacar el descanso del penalti que no os pitaron y llevarlo a lo que sí puedes cambiar.\n\nEs más fácil hablar del árbitro que de la banda por la que os están llegando. Antes del partido, dale tres preguntas a tu segundo y que te las conteste camino del vestuario: por dónde os hacen daño, quién ya no llega, qué han cambiado ellos. Lo del árbitro, al final.\n\n(Escena de ejemplo: marcador y dorsales no son de ningún equipo.)\n\n¿Cuántos minutos del descanso se os van en el árbitro?",
-  "state": "retirada",
-  "ig": {
-   "status": "pendiente"
-  },
-  "tiktok": {
-   "status": "pendiente"
-  },
-  "added": "2026-11-23T12:05:29.229886+01:00",
-  "nota": "Estilo v3 retirado (Biel, 23/11). No se publica."
- },
- {
-  "id": "T01-5-r2",
-  "kind": "reel",
-  "files": [
-   "publicar/media/T01-5-r2-1.mp4",
-   "publicar/media/T01-5-r2-2.jpg"
-  ],
-  "caption": "La pregunta del descanso que casi nadie hace, y que te habría ahorrado dos goles.\n\nSu diez bajaba a recibir desde el minuto veinte. Tu segundo lo vio y lo apuntó, pero en el descanso le preguntaste por tarjetas y por cansancio. Antes del partido, cerrad tres preguntas, y la tercera siempre es la misma: ¿qué han cambiado ellos?\n\n(Escena de ejemplo: marcador, minutos y dorsales no son de ningún equipo.)\n\n¿En el descanso preguntas por el rival o solo por los tuyos?",
-  "state": "retirada",
-  "ig": {
-   "status": "pendiente"
-  },
-  "tiktok": {
-   "status": "pendiente"
-  },
-  "added": "2026-11-23T12:28:47.565206+01:00",
-  "nota": "Estilo v3 retirado (Biel, 23/11). No se publica."
- },
- {
-  "id": "T01-1-r2-carrusel",
-  "kind": "carrusel",
-  "files": [
-   "publicar/media/T01-1-r2-carrusel-1.jpg",
-   "publicar/media/T01-1-r2-carrusel-2.jpg",
-   "publicar/media/T01-1-r2-carrusel-3.jpg",
-   "publicar/media/T01-1-r2-carrusel-4.jpg",
-   "publicar/media/T01-1-r2-carrusel-5.jpg",
-   "publicar/media/T01-1-r2-carrusel-6.jpg",
-   "publicar/media/T01-1-r2-carrusel-7.jpg"
-  ],
-  "caption": "Entra al descanso con algo escrito. Tus jugadores te miran las manos.\n\nMundial 2006: Cambiasso no estaba en la lista de Lehmann. Según quien lo vio, miró el papel igual, se tomó su tiempo y se lo paró.\n\nDesde el minuto 35, tu segundo te escribe tres líneas: qué funciona, qué falla y un cambio. Las lees. Luego hablas.\n\nGuárdalo y pásaselo a tu segundo.\n\n(Fuente: FIFA, 6/7/2016. Papel de Lehmann: Andreas Köpke, dominio público. Las tres líneas de la lámina 5 son un ejemplo.)\n\n¿Qué es lo primero que dices al entrar al vestuario?",
-  "state": "retirada",
-  "ig": {
-   "status": "pendiente"
-  },
-  "tiktok": {
-   "status": "no"
-  },
-  "added": "2026-11-23T12:36:04.320909+01:00",
-  "nota": "Estilo v3 retirado (Biel, 23/11). No se publica."
- },
- {
-  "id": "T01-1-r2-story1",
-  "kind": "story",
-  "files": [
-   "publicar/media/T01-1-r2-story1.png"
-  ],
-  "caption": "¿Qué es lo primero que dices al entrar al vestuario? (sticker de pregunta a mano)",
-  "state": "retirada",
-  "ig": {
-   "status": "pendiente"
-  },
-  "tiktok": {
-   "status": "no"
-  },
-  "added": "2026-11-23T12:36:04.360583+01:00",
-  "nota": "Estilo v3 retirado (Biel, 23/11). No se publica."
- },
- {
-  "id": "T01-1-r2-story2",
-  "kind": "story",
-  "files": [
-   "publicar/media/T01-1-r2-story2.png"
-  ],
-  "caption": "En el descanso, ¿con qué entras? Con algo escrito / Con lo que me sale (sticker de encuesta a mano)",
-  "state": "retirada",
-  "ig": {
-   "status": "pendiente"
-  },
-  "tiktok": {
-   "status": "no"
-  },
-  "added": "2026-11-23T12:36:04.402032+01:00",
-  "nota": "Estilo v3 retirado (Biel, 23/11). No se publica."
- },
- {
-  "id": "T06-2-r3",
-  "kind": "reel",
-  "files": [
-   "publicar/media/T06-2-r3-1.mp4",
-   "publicar/media/T06-2-r3-2.jpg"
-  ],
-  "caption": "Lo que hace que el que sale del banquillo falle el primer balón, y cómo evitarlo antes del partido.\n\nCuarenta minutos sentado, frío, mirando el partido como un espectador. No le faltaba nivel: le faltaba estar dentro del partido mientras estaba fuera. Antes del partido, dale una cosa que mirar desde el banquillo (el pivote rival, por ejemplo) y que la apunte.\n\n(Escena de ejemplo: marcador y minutos no son de ningún equipo.)\n\n¿Le das tarea a tu banquillo o solo a los que juegan?",
-  "state": "retirada",
-  "ig": {
-   "status": "pendiente"
-  },
-  "tiktok": {
-   "status": "pendiente"
-  },
-  "added": "2026-11-23T13:02:54.153130+01:00",
-  "nota": "Estilo v3 retirado (Biel, 23/11). No se publica."
- },
- {
-  "id": "T01-6-r1",
-  "kind": "reel",
-  "files": [
-   "publicar/media/T01-6-r1-1.mp4",
-   "publicar/media/T01-6-r1-2.jpg"
-  ],
-  "caption": "Klopp cambió el sistema entero en mitad de una semifinal. Y luego dijo: «Ese fue nuestro error».\n\nLe dio un 3-5-2 en un papel a un solo jugador con el balón en juego, y él tuvo que explicárselo a otros diez. El cambio de dibujo no se inventa el sábado: el jueves, tres líneas (quién baja, quién sube, quién avisa), diez minutos de ensayo y una palabra en la primera pausa.\n\nFuentes: FourFourTwo y Sky Sports, enero de 2017. Fotos: Kevin Walsh (CC BY 2.0), Dan Kerins (CC BY-SA 4.0), Wikimedia Commons. El plan B de la libreta es un ejemplo.\n\n¿Tienes un plan B ensayado o lo improvisas en la banda?",
-  "state": "retirada",
-  "ig": {
-   "status": "pendiente"
-  },
-  "tiktok": {
-   "status": "pendiente"
-  },
-  "added": "2026-11-23T14:06:14.212896+01:00",
-  "nota": "Estilo v3 retirado (Biel, 23/11). No se publica."
- },
- {
-  "id": "T01-1-r3-carrusel",
-  "kind": "carrusel",
-  "files": [
-   "publicar/media/T01-1-r3-carrusel-1.jpg",
-   "publicar/media/T01-1-r3-carrusel-2.jpg",
-   "publicar/media/T01-1-r3-carrusel-3.jpg",
-   "publicar/media/T01-1-r3-carrusel-4.jpg",
-   "publicar/media/T01-1-r3-carrusel-5.jpg",
-   "publicar/media/T01-1-r3-carrusel-6.jpg"
-  ],
-  "caption": "Tu primera vuelta ya es una base de datos. Solo falta apuntarla.\n\nAl acabar cada partido, tres líneas del rival: el peligroso, la banda y el balón parado. Pon la ficha en la semana en que vuelves a jugar contra él y léela antes de preparar el partido.\n\nPara el papel de Lehmann en el Mundial 2006 se usó una base de 13.000 penaltis (FIFA, 6/7/2016). Tú ya has visto a cada rival una vez.\n\nGuárdalo y pásaselo a tu segundo.\n\n(Foto del papel: Wikimedia Commons, dominio público.)",
-  "state": "retirada",
-  "ig": {
-   "status": "pendiente"
-  },
-  "tiktok": {
-   "status": "no"
-  },
-  "added": "2026-11-23T14:37:52.606906+01:00",
-  "nota": "Estilo v3 retirado (Biel, 23/11). No se publica."
- },
- {
-  "id": "T01-1-r3-story1",
-  "kind": "story",
-  "files": [
-   "publicar/media/T01-1-r3-story1.png"
-  ],
-  "caption": "¿Contra quién vuelves a jugar este mes?",
-  "state": "retirada",
-  "ig": {
-   "status": "pendiente"
-  },
-  "tiktok": {
-   "status": "no"
-  },
-  "added": "2026-11-23T14:37:52.670041+01:00",
-  "nota": "Estilo v3 retirado (Biel, 23/11). No se publica."
- },
- {
-  "id": "T01-1-r3-story2",
-  "kind": "story",
-  "files": [
-   "publicar/media/T01-1-r3-story2.png"
-  ],
-  "caption": "Del rival de la ida, ¿qué tienes? Lo que recuerdo / Tres líneas apuntadas",
-  "state": "retirada",
-  "ig": {
-   "status": "pendiente"
-  },
-  "tiktok": {
-   "status": "no"
-  },
-  "added": "2026-11-23T14:37:52.716583+01:00",
-  "nota": "Estilo v3 retirado (Biel, 23/11). No se publica."
- },
- {
-  "id": "T06-2-r2",
-  "kind": "reel",
-  "files": [
-   "publicar/media/T06-2-r2-1.mp4",
-   "publicar/media/T06-2-r2-2.jpg"
-  ],
-  "caption": "Por qué tu suplente falla justo cuando le das minutos (y no es por nivel).\n\nToda la temporada con el peto rojo, haciendo de rival para que los blancos ensayen. Defiende lo que pides, ataca lo que pides, pero nunca lo suyo. Cuando por fin entra, hace algo que no ha entrenado nunca. Cambia los petos: cada martes, diez minutos con los blancos y una tarea clara.\n\n(Escena de ejemplo: dorsal, acta y tarea no son de ningún equipo.)\n\n¿En tu cinco contra cinco cambian alguna vez los petos?",
-  "state": "retirada",
-  "ig": {
-   "status": "pendiente"
-  },
-  "tiktok": {
-   "status": "pendiente"
-  },
-  "added": "2026-11-23T14:42:15.745140+01:00",
-  "nota": "Estilo v3 retirado (Biel, 23/11). No se publica."
- },
- {
-  "id": "T07-2-r2",
-  "kind": "reel",
-  "files": [
-   "publicar/media/T07-2-r2-1.mp4",
-   "publicar/media/T07-2-r2-2.jpg"
-  ],
-  "caption": "Si tu delantero mete todas el martes y ninguna el sábado, la culpa puede ser de la fila.\n\nEn la fila tira uno y esperan cinco, y nadie le aprieta. El sábado, lo primero que tiene encima es un defensa. Prueba el martes: quita la fila, dos 4 contra 4 con el mismo objetivo, porterías pequeñas y gol solo si llega de pase y tiro. Tú, fuera.\n\n(Escena de ejemplo: marcas y cuentas no son de ningún equipo.)\n\n¿Cuántos tienes esperando en la fila de tu ejercicio de tiro?",
-  "state": "retirada",
-  "ig": {
-   "status": "pendiente"
-  },
-  "tiktok": {
-   "status": "pendiente"
-  },
-  "added": "2026-11-23T15:04:25.401148+01:00",
-  "nota": "Estilo v3 retirado (Biel, 23/11). No se publica."
- },
- {
-  "id": "T07-2-r3",
-  "kind": "reel",
-  "files": [
-   "publicar/media/T07-2-r3-1.mp4",
-   "publicar/media/T07-2-r3-2.jpg"
-  ],
-  "caption": "Si tu central no ha pasado del medio en toda la temporada, está aprendiendo solo la mitad del fútbol.\n\nLe pusiste ahí porque el equipo encajaba menos, y funcionó. Pero nunca conduce, nunca regatea y nunca tira. Prueba un 4 contra 4 sin posiciones: si pierdes el balón defienden los cuatro, si lo recuperas atacan los cuatro, y el gol vale doble si han cruzado todos.\n\n(Escena de ejemplo: dorsales y marcador no son de ningún equipo.)\n\n¿Cuántos de tus jugadores no han pisado el otro campo este año?",
-  "state": "retirada",
-  "ig": {
-   "status": "pendiente"
-  },
-  "tiktok": {
-   "status": "pendiente"
-  },
-  "added": "2026-11-23T15:35:46.180923+01:00",
-  "nota": "Estilo v3 retirado (Biel, 23/11). No se publica."
- },
- {
-  "id": "v4-E05",
-  "kind": "reel",
-  "files": [
-   "publicar/media/v4-E05.mp4"
-  ],
-  "caption": "Convocatorias, minutos, cargas, notas. Todo a mano, en una libreta llena de flechas.\n\nProTeam lo junta en un solo sitio. Hecha para entrenadores de fútbol, baloncesto y balonmano.\n\n¿Tú dónde lo apuntas todo ahora mismo?\n\nFotos: Giallone · CC BY-SA 3.0 | Steffen Prößdorf · John Martinez Pavliga · Cpl. Anthony C. Ramsey Jr. · CC BY-SA 4.0 / CC BY 2.0 / DP | Jonathan Hutchins · CC BY-SA 2.0\nCapturas reales de ProTeam (datos de ejemplo).\n#entrenadores #fútbol #baloncesto #balonmano",
-  "state": "aprobada",
-  "ig": {
-   "status": "publicada",
-   "when": "2026-11-24T10:45:00+01:00",
-   "ref": "18105090134532971",
-   "at": "2026-11-24T10:43:38.670466+01:00"
-  },
-  "tiktok": {
-   "status": "programada",
-   "via": "metricool",
-   "when": "2026-11-24T19:00:00+01:00"
-  },
-  "added": "2026-11-24T10:28:11.949304+01:00"
- },
- {
-  "id": "v4-ED01",
-  "kind": "reel",
-  "files": [
-   "publicar/media/v4-ED01.mp4"
-  ],
-  "caption": "Martes, 19:42. Campo 3.\nNadie graba esto. Nadie lo aplaude.\nY es lo que decide el sábado.\n\n¿Qué es lo que nadie ve de tu semana?\n\nEstamos terminando algo para entrenadores. Síguenos para no perderte nada.\n\nFotos: Cpl. A. C. Ramsey Jr. (DoD, DP) | Walter Mains (DP) | Infrogmation, Matti Blume (CC BY-SA 4.0) | USARJ NCO Corps (CC BY 2.0)\n#entrenadores #fútbolbase #baloncesto",
-  "state": "aprobada",
-  "ig": {
-   "status": "pendiente",
-   "when": "2026-11-26T20:30:00+01:00"
-  },
-  "tiktok": {
-   "status": "programada",
-   "via": "metricool",
-   "when": "2026-11-26T20:30:00+01:00"
-  },
-  "added": "2026-11-24T10:28:12.580313+01:00"
- },
- {
-  "id": "v4-E02",
-  "kind": "reel",
-  "files": [
-   "publicar/media/v4-E02.mp4"
-  ],
-  "caption": "Noviembre. 18:30. Ya no hay luz.\nCon lluvia, con seis, con los que vengan: conos, cronómetro, pizarra.\n\nAlgo se está encendiendo.\n\nEstamos terminando algo para entrenadores. Síguenos para no perderte nada.\n\nFotos: Jonathan Hutchins · CC BY-SA 2.0 | U.S. Department of State · DP | Sgt. Aaron Kaczur · R. Henrik Nilsson · MC3 Brennan Knaresboro · DP / CC BY 4.0 | Zac allan · CC BY 3.0\n#entrenadores #fútbolbase",
-  "state": "aprobada",
-  "ig": {
-   "status": "pendiente",
-   "when": "2026-11-27T20:30:00+01:00"
-  },
-  "tiktok": {
-   "status": "programada",
-   "via": "metricool",
-   "when": "2026-11-27T20:30:00+01:00"
-  },
-  "added": "2026-11-24T10:28:12.640748+01:00"
- },
- {
-  "id": "v4-E03",
-  "kind": "reel",
-  "files": [
-   "publicar/media/v4-E03.mp4"
-  ],
-  "caption": "Lo que se ve dura noventa minutos.\nLo que no se ve dura toda la semana.\n\nHoy se juega lo que se preparó entre semana. ¿Cuánto te queda para el partido?\n\nEstamos terminando algo para entrenadores. Síguenos para no perderte nada.\n\nFotos: Infrogmation · CC BY-SA 4.0 | Giallone · Steffen Prößdorf · John Martinez Pavliga · CC BY-SA 3.0 / CC BY-SA 4.0 / CC BY 2.0 | USARJ NCO CORPS · CC BY 2.0\n#entrenadores #díadepartido",
-  "state": "aprobada",
-  "ig": {
-   "status": "pendiente",
-   "when": "2026-11-28T20:30:00+01:00"
-  },
-  "tiktok": {
-   "status": "programada",
-   "via": "metricool",
-   "when": "2026-11-28T20:30:00+01:00"
-  },
-  "added": "2026-11-24T10:28:12.694015+01:00"
- },
- {
-  "id": "v4-X02",
-  "kind": "reel",
-  "files": [
-   "publicar/media/v4-X02.mp4"
-  ],
-  "caption": "Un toque por acción. Tocas al jugador en la pista, eliges qué ha hecho (tiro, pérdida, 1×1) y desde dónde.\n\nAl pitar el final, el marcador por partes y la eficacia ya están hechos.\n\n¿Quién te apunta las estadísticas en los partidos?\n\nFotos: Steffen Prößdorf · CC BY-SA 4.0 | Infrogmation · CC BY-SA 4.0\nCapturas reales de ProTeam (datos de ejemplo).\n#balonmano #entrenadores #estadísticas",
-  "state": "retirada",
-  "ig": {
-   "status": "pendiente",
-   "when": "2026-11-24T20:30:00+01:00"
-  },
-  "tiktok": {
-   "status": "pendiente"
-  },
-  "added": "2026-11-24T10:47:39.314808+01:00",
-  "nota": "Biel 24/11: no es lo que pidió. Sustituir por explicativos tipo pizarra."
- },
- {
-  "id": "v4-X03",
-  "kind": "reel",
-  "files": [
-   "publicar/media/v4-X03.mp4"
-  ],
-  "caption": "Después del partido: el informe por partes y la cronología, cada acción con su minuto.\n\nY el lunes entrenas lo que de verdad pasó, no lo que recuerdas.\n\n¿Repasas el partido el domingo o el lunes?\n\nFotos: Steffen Prößdorf · CC BY-SA 4.0 | John Martinez Pavliga · CC BY 2.0\nCapturas reales de ProTeam (datos de ejemplo).\n#entrenadores #balonmano #análisis",
-  "state": "retirada",
-  "ig": {
-   "status": "pendiente",
-   "when": "2026-11-25T20:30:00+01:00"
-  },
-  "tiktok": {
-   "status": "pendiente"
-  },
-  "added": "2026-11-24T10:47:39.581530+01:00",
-  "nota": "Biel 24/11: no es lo que pidió. Sustituir por explicativos tipo pizarra."
- },
- {
-  "id": "v4-X04",
-  "kind": "reel",
-  "files": [
-   "publicar/media/v4-X04.mp4"
-  ],
-  "caption": "Una pregunta al acabar: del 1 al 10, ¿cuánto te ha costado? Esfuerzo × minutos = la carga de cada jugador (RPE de sesión).\n\nCon los tests físicos en el mismo sitio, sabes quién llega fresco al sábado.\n\n¿Mides la carga de tu equipo?\n\nFotos: MC3 Brennan Knaresboro · DP\nCapturas reales de ProTeam (datos de ejemplo).\n#preparaciónfísica #entrenadores #RPE",
-  "state": "retirada",
-  "ig": {
-   "status": "pendiente",
-   "when": "2026-11-26T13:30:00+01:00"
-  },
-  "tiktok": {
-   "status": "pendiente"
-  },
-  "added": "2026-11-24T10:47:39.636744+01:00",
-  "nota": "Biel 24/11: no es lo que pidió. Sustituir por explicativos tipo pizarra."
- },
- {
-  "id": "v4-X05",
-  "kind": "reel",
-  "files": [
-   "publicar/media/v4-X05.mp4"
-  ],
-  "caption": "La temporada, semana a semana. Cada semana con su objetivo, sus sesiones y su partido. Rutinas y calendario en el mismo sitio.\n\nCada entreno sabe para qué partido es.\n\n¿Planificas por semanas o sesión a sesión?\n\nFotos: Sgt. Aaron Kaczur · DP | Jonathan Hutchins · CC BY-SA 2.0\nCapturas reales de ProTeam (datos de ejemplo).\n#planificación #entrenadores #temporada",
-  "state": "retirada",
-  "ig": {
-   "status": "pendiente",
-   "when": "2026-11-25T13:30:00+01:00"
-  },
-  "tiktok": {
-   "status": "pendiente"
-  },
-  "added": "2026-11-24T10:47:39.688671+01:00",
-  "nota": "Biel 24/11: no es lo que pidió. Sustituir por explicativos tipo pizarra."
- },
- {
-  "id": "v6-a1",
-  "kind": "reel",
-  "files": [
-   "publicar/media/v6-a1.mp4"
-  ],
-  "caption": "Este papel se vendió por un millón de euros. Lo llevaba Jens Lehmann en la media en los penaltis del Mundial 2006 contra Argentina, y lo miraba antes de cada tiro.\n\nTu papel no vale un millón. Pero el sábado vale un partido: una hoja, seis zonas, una raya por cada gol. En el descanso, la zona con más rayas es tu ajuste.\n\n¿Qué apuntas tú en el descanso?\n\nEstamos terminando la app de ProTeam. Síguenos para no perderte nada: muy pronto, novedades.\n\nFotos: Andreas Köpke (DP), ronmacphotos (CC BY 2.0), Steffen Prößdorf (CC BY-SA 4.0). Cifras de la portera: ejemplo.\n#entrenadores #balonmano #fútbol #porteros",
-  "state": "aprobada",
-  "ig": {
-   "status": "publicada",
-   "when": "2026-11-24T20:30:00+01:00",
-   "ref": "17994605051859005",
-   "at": "2026-11-24T21:17:56.069798+01:00"
-  },
-  "tiktok": {
-   "status": "programada",
-   "via": "metricool",
-   "when": "2026-11-24T20:30:00+01:00"
-  },
-  "added": "2026-11-24T14:21:55.601338+01:00"
- },
- {
-  "id": "v6-d2",
-  "kind": "reel",
-  "files": [
-   "publicar/media/v6-d2.mp4"
-  ],
-  "caption": "Paró doce. Le marcaron veinte. Y fue el mejor partido de su temporada.\n\nLe tiraron 32 veces: 12 de 32 es su mejor porcentaje del año. Cuenta tiros, no goles. Cada partido, el mismo cálculo, y el lunes se lo enseñas a ella antes que a nadie.\n\nMándaselo a tu portera.\n\nEstamos terminando la app de ProTeam. Síguenos para no perderte nada: muy pronto, novedades.\n\nEscena y cifras de ejemplo (no es un partido real). Fotos: Steffen Prößdorf (CC BY-SA 4.0)\n#balonmano #porteras #entrenadores",
-  "state": "aprobada",
-  "ig": {
-   "status": "pendiente",
-   "when": "2026-11-25T13:30:00+01:00"
-  },
-  "tiktok": {
-   "status": "programada",
-   "via": "metricool",
-   "when": "2026-11-25T13:30:00+01:00"
-  },
-  "added": "2026-11-24T14:21:55.640288+01:00"
- },
- {
-  "id": "v6-b2",
-  "kind": "reel",
-  "files": [
-   "publicar/media/v6-b2.mp4"
-  ],
-  "caption": "Tu equipo perdió el sábado y lo podías saber desde el jueves.\n\nAl acabar cada entreno, una pregunta: del 1 al 10, ¿cuánto te ha costado? Multiplícalo por los minutos: 7 × 90 = 630, la carga del día. Tres semanas comparando jueves y sábados y sabrás quién llega roto.\n\nMándaselo a tu segundo.\n\nEstamos terminando la app de ProTeam. Síguenos para no perderte nada: muy pronto, novedades.\n\nCifras de ejemplo. Método: RPE de sesión (Foster et al., 2001). Fotos: Cpl. A. C. Ramsey Jr. (DoD, DP), Steffen Prößdorf (CC BY-SA 4.0)\n#baloncesto #entrenadores #preparaciónfísica",
-  "state": "aprobada",
-  "ig": {
-   "status": "pendiente",
-   "when": "2026-11-25T20:30:00+01:00"
-  },
-  "tiktok": {
-   "status": "programada",
-   "via": "metricool",
-   "when": "2026-11-25T20:30:00+01:00"
-  },
-  "added": "2026-11-24T14:21:55.679844+01:00"
- },
- {
-  "id": "v6-c3",
-  "kind": "reel",
-  "files": [
-   "publicar/media/v6-c3.mp4"
-  ],
-  "caption": "El parón de Navidad no dura tres semanas. Dura cuatro.\n\nVuelven después de Reyes con las piernas de agosto, el partido de esa semana ya cuenta y en el segundo entreno llega el primer tirón. Antes de irte, tres cosas: 10 minutos de tarea para los días de fiesta, la primera semana de enero como una pretemporada corta y apunta hoy lo que querrás repasar.\n\nGuárdalo para el último entreno.\n\nEstamos terminando la app de ProTeam. Síguenos para no perderte nada: muy pronto, novedades.\n\nCalendario y cifras de ejemplo. Fotos: NoahRiffe (CC BY 2.0), Kmreykjavik (CC BY-SA 4.0)\n#fútbol #entrenadores #fútbolbase",
-  "state": "aprobada",
-  "ig": {
-   "status": "pendiente",
-   "when": "2026-11-26T13:30:00+01:00"
-  },
-  "tiktok": {
-   "status": "programada",
-   "via": "metricool",
-   "when": "2026-11-26T13:30:00+01:00"
-  },
-  "added": "2026-11-24T14:21:55.719308+01:00"
- },
- {
-  "id": "v6-e1",
-  "kind": "reel",
-  "files": [
-   "publicar/media/v6-e1.mp4"
-  ],
-  "caption": "Este martes no puedes ir al entreno. Le pasas el equipo a tu segundo y a los cinco minutos te escribe: «¿Qué toca hoy?».\n\nTodo lo que sabes de tu equipo está en tu cabeza: quién vuelve de lesión, qué trabajasteis el jueves, quién lleva tres semanas sin jugar. Y lo que no está apuntado, el martes no existe.\n\n¿Tu segundo sabría qué toca?\n\nEstamos terminando la app de ProTeam. Síguenos para no perderte nada: muy pronto, novedades.\n\nFotos: Zephyris (CC BY-SA 3.0), Warren LeMay (CC0)\n#entrenadores #fútbolbase #baloncesto #balonmano",
-  "state": "aprobada",
-  "ig": {
-   "status": "pendiente",
-   "when": "2026-11-27T13:30:00+01:00"
-  },
-  "tiktok": {
-   "status": "programada",
-   "via": "metricool",
-   "when": "2026-11-27T13:30:00+01:00"
-  },
-  "added": "2026-11-24T16:51:38.047618+01:00"
- },
- {
-  "id": "v6-T09-2-r2",
-  "kind": "reel",
-  "files": [
-   "publicar/media/v6-T09-2-r2.mp4"
-  ],
-  "caption": "En caliente entra el que calienta más cerca. Los cambios se acaban y el catorce vuelve a casa con el peto limpio. En el descanso, escribe tus cambios con su minuto, empezando por el que no ha jugado. En el 53 miras la hoja, no la banda.\n\n(Escena de ejemplo: dorsales y marcadores no son de ningún equipo.)\n\n¿Tus cambios los decides en el descanso o en la banda?\n\nEstamos terminando la app de ProTeam. Síguenos para no perderte nada: muy pronto, novedades.\n\n#entrenadores #fútbolbase #baloncesto #balonmano",
-  "state": "aprobada",
-  "ig": {
-   "status": "pendiente",
-   "when": "2026-11-28T13:30:00+01:00"
-  },
-  "tiktok": {
-   "status": "programada",
-   "via": "metricool",
-   "when": "2026-11-28T13:30:00+01:00"
-  },
-  "added": "2026-11-24T17:50:41.850714+01:00"
- },
- {
-  "id": "v6-T05-1-r3",
-  "kind": "reel",
-  "files": [
-   "publicar/media/v6-T05-1-r3.mp4"
-  ],
-  "caption": "Si apuntaste algo el sábado y perdiste igual, no lo tires todavía. Esto le pasó al equipo de «Moneyball».\n\n(Fuentes: MLB.com; Sports Illustrated, 2017.)\n\n¿Qué dejaste de apuntar después de un mal sábado?\n\nEstamos terminando la app de ProTeam. Síguenos para no perderte nada: muy pronto, novedades.\n\n#entrenadores #fútbolbase #baloncesto #balonmano",
-  "state": "aprobada",
-  "ig": {
-   "status": "pendiente",
-   "when": "2026-11-29T13:30:00+01:00"
-  },
-  "tiktok": {
-   "status": "programada",
-   "via": "metricool",
-   "when": "2026-11-29T13:30:00+01:00"
-  },
-  "added": "2026-11-24T17:50:41.926482+01:00"
- },
- {
-  "id": "v6-T04-2-r3",
-  "kind": "reel",
-  "files": [
-   "publicar/media/v6-T04-2-r3.mp4"
-  ],
-  "caption": "Apuntó hasta al portero rival en su botella. Esto es lo que puedes copiar con tu portero, aunque no tengas analista.\n\nEn la ida, cada penalti y cada falta del rival: dorsal y lado. En la vuelta, todo a una tira de cinta en la botella de tu portero. Y no solo el nueve: el que menos esperas también tira.\n\n¿Tu portero sabe algo del rival antes del sábado?\n\nEstamos terminando la app de ProTeam. Síguenos para no perderte nada: muy pronto, novedades.\n\n#entrenadores #fútbolbase #baloncesto #balonmano",
-  "state": "aprobada",
-  "ig": {
-   "status": "pendiente",
-   "when": "2026-11-29T20:30:00+01:00"
-  },
-  "tiktok": {
-   "status": "programada",
-   "via": "metricool",
-   "when": "2026-11-29T20:30:00+01:00"
-  },
-  "added": "2026-11-24T17:50:42.002169+01:00"
- },
- {
-  "id": "v6-T02-2-r3",
-  "kind": "reel",
-  "files": [
-   "publicar/media/v6-T02-2-r3.mp4"
-  ],
-  "caption": "Si el viernes acabas entrenando noventa minutos, el problema empezó el martes.\n\nMartes, balón suave y corregir jugando. Miércoles, lo duro. Viernes, corto. En un equipo de la Premier estudiado en 2016, el día más suave era la víspera.\n\n¿Cuánto os dura el entreno del viernes?\n\nEstamos terminando la app de ProTeam. Síguenos para no perderte nada: muy pronto, novedades.\n\n#entrenadores #fútbolbase #baloncesto #balonmano",
-  "state": "aprobada",
-  "ig": {
-   "status": "pendiente",
-   "when": "2026-11-30T13:30:00+01:00"
-  },
-  "tiktok": {
-   "status": "programada",
-   "via": "metricool",
-   "when": "2026-11-30T13:30:00+01:00"
-  },
-  "added": "2026-11-24T17:50:42.079229+01:00"
- },
- {
-  "id": "v6-T06-2-r3",
-  "kind": "reel",
-  "files": [
-   "publicar/media/v6-T06-2-r3.mp4"
-  ],
-  "caption": "Entra en el minuto 40. Primer balón: pasos. Segundo: lo pierde. Y lo vuelves a sentar antes del 45.\n\nNo le faltaba nivel. Le faltaba estar dentro del partido mientras estaba fuera. Antes del partido, dale una cosa que mirar desde el banquillo (el pivote rival, por ejemplo) y que la apunte. Entrará sabiéndolo.\n\n¿Qué les pides a los que empiezan en el banquillo?\n\n(Escena de ejemplo.)\n\nEstamos terminando la app de ProTeam. Síguenos para no perderte nada: muy pronto, novedades.\n\n#entrenadores #balonmano #baloncesto #fútbolbase\n",
-  "state": "aprobada",
-  "ig": {
-   "status": "pendiente",
-   "when": "2026-11-30T20:30:00+01:00"
-  },
-  "tiktok": {
-   "status": "programada",
-   "via": "metricool",
-   "when": "2026-11-30T20:30:00+01:00"
-  },
-  "added": "2026-11-24T17:50:42.153472+01:00"
- },
- {
-  "id": "v6-T07-2-r3",
-  "kind": "reel",
-  "files": [
-   "publicar/media/v6-T07-2-r3.mp4"
-  ],
-  "caption": "Si tu central no ha pasado del medio en toda la temporada, está aprendiendo solo la mitad del fútbol.\n\nLe pusiste ahí porque el equipo encajaba menos, y funcionó. Pero nunca conduce, nunca regatea y nunca tira. Prueba un 4 contra 4 sin posiciones: si pierdes el balón defienden los cuatro, si lo recuperas atacan los cuatro, y el gol vale doble si han cruzado todos.\n\n(Escena de ejemplo: dorsales y marcador no son de ningún equipo.)\n\n¿Cuántos de tus jugadores no han pisado el otro campo este año?\n\nEstamos terminando la app de ProTeam. Síguenos para no perderte nada: muy pronto, novedades.\n\n#entrenadores #fútbolbase #baloncesto #balonmano",
-  "state": "aprobada",
-  "ig": {
-   "status": "pendiente",
-   "when": "2026-12-01T13:30:00+01:00"
-  },
-  "tiktok": {
-   "status": "programada",
-   "via": "metricool",
-   "when": "2026-12-01T13:30:00+01:00"
-  },
-  "added": "2026-11-24T17:50:42.224331+01:00"
- },
- {
-  "id": "v6-T01-4-r3",
-  "kind": "reel",
-  "files": [
-   "publicar/media/v6-T01-4-r3.mp4"
-  ],
-  "caption": "Tener libreta no basta. Prepárala antes y en el descanso sabrás qué cambiar.\n\nEn un estudio con ocho entrenadores titulados, que podían tomar notas, recordaron de media el 59 % de lo importante de un primer tiempo.\n\nEn casa, seis casillas. En el campo, solo rayas. En el descanso, lees la más llena antes de hablar.\n\n(Laird y Waters, 2008, IJPAS.)\n\n¿Qué pone tu libreta del último partido?\n\nEstamos terminando la app de ProTeam. Síguenos para no perderte nada: muy pronto, novedades.\n\n#entrenadores #fútbolbase #baloncesto #balonmano",
-  "state": "aprobada",
-  "ig": {
-   "status": "pendiente",
-   "when": "2026-12-01T20:30:00+01:00"
-  },
-  "tiktok": {
-   "status": "programada",
-   "via": "metricool",
-   "when": "2026-12-01T20:30:00+01:00"
-  },
-  "added": "2026-11-24T17:50:42.295667+01:00"
- },
- {
-  "id": "v6-T09-1-r3",
-  "kind": "reel",
-  "files": [
-   "publicar/media/v6-T09-1-r3.mp4"
-  ],
-  "caption": "Si algo se repite tres veces antes del minuto quince, ya no es casualidad.\n\n(Escena de ejemplo.)\n\n¿Qué se te repitió el sábado antes del quince?\n\nEstamos terminando la app de ProTeam. Síguenos para no perderte nada: muy pronto, novedades.\n\n#entrenadores #fútbolbase #baloncesto #balonmano",
-  "state": "aprobada",
-  "ig": {
-   "status": "pendiente",
-   "when": "2026-12-02T13:30:00+01:00"
-  },
-  "tiktok": {
-   "status": "programada",
-   "via": "metricool",
-   "when": "2026-12-02T13:30:00+01:00"
-  },
-  "added": "2026-11-24T17:50:42.371037+01:00"
- },
- {
-  "id": "v6-T05-2-r3",
-  "kind": "reel",
-  "files": [
-   "publicar/media/v6-T05-2-r3.mp4"
-  ],
-  "caption": "Si pierdes 1-3 y los tres goles empiezan en tu área, entrenar tiros el martes no lo arregla.\n\nEl acta solo dice 1-3. No dice dónde perdiste la pelota. Tres columnas en la libreta: tiros en contra, pérdidas en tu campo y balones parados en contra. Una raya por acción. Si gana la de pérdidas, el martes toca salida con tres apoyos. Lo que no cuentas, no lo entrenas.\n\n(Escena de ejemplo: las cifras no son de ningún equipo.)\n\n¿Tu equipo sale jugando desde el portero?\n\nEstamos terminando la app de ProTeam. Síguenos para no perderte nada: muy pronto, novedades.\n\n#entrenadores #fútbolbase #baloncesto #balonmano",
-  "state": "aprobada",
-  "ig": {
-   "status": "pendiente",
-   "when": "2026-12-02T20:30:00+01:00"
-  },
-  "tiktok": {
-   "status": "programada",
-   "via": "metricool",
-   "when": "2026-12-02T20:30:00+01:00"
-  },
-  "added": "2026-11-24T17:50:42.443131+01:00"
- },
- {
-  "id": "v6-T06-1-r2",
-  "kind": "reel",
-  "files": [
-   "publicar/media/v6-T06-1-r2.mp4"
-  ],
-  "caption": "Hay dos palabras que tus jugadores casi nunca te oyen decir.\n\n(Escena de ejemplo.)\n\n¿A quién de tu equipo le debes hoy un «bien hecho»?\n\nEstamos terminando la app de ProTeam. Síguenos para no perderte nada: muy pronto, novedades.\n\n#entrenadores #fútbolbase #baloncesto #balonmano",
-  "state": "aprobada",
-  "ig": {
-   "status": "pendiente",
-   "when": "2026-12-03T13:30:00+01:00"
-  },
-  "tiktok": {
-   "status": "programada",
-   "via": "metricool",
-   "when": "2026-12-03T13:30:00+01:00"
-  },
-  "added": "2026-11-24T17:50:42.517583+01:00"
- },
- {
-  "id": "v6-T01-3-r3",
-  "kind": "reel",
-  "files": [
-   "publicar/media/v6-T01-3-r3.mp4"
-  ],
-  "caption": "La primera posesión del tercer cuarto se decide en el vestuario. Así se prepara en el descanso.\n\nLlegas con cinco jugadas nuevas, la hoja de estadística y un base que pregunta qué hace si le encierran. Cuando llegas a lo importante, ya están llamando.\n\nEn el descanso no se inventa: se elige. La respuesta a la trampa (quién ayuda y adónde va el balón) y la primera posesión, decidida.\n\n(Descanso de quince minutos: reglamento FIBA, art. 8.4.)\n\n¿Tú llevas la primera posesión del tercer cuarto decidida?\n\nEstamos terminando la app de ProTeam. Síguenos para no perderte nada: muy pronto, novedades.\n\n#entrenadores #fútbolbase #baloncesto #balonmano",
-  "state": "aprobada",
-  "ig": {
-   "status": "pendiente",
-   "when": "2026-12-03T20:30:00+01:00"
-  },
-  "tiktok": {
-   "status": "programada",
-   "via": "metricool",
-   "when": "2026-12-03T20:30:00+01:00"
-  },
-  "added": "2026-11-24T17:50:42.593474+01:00"
- },
- {
-  "id": "v6-T01-5-r3",
-  "kind": "reel",
-  "files": [
-   "publicar/media/v6-T01-5-r3.mp4"
-  ],
-  "caption": "El penalti que no os pitaron: tres minutos de eso y ni una palabra de por dónde os están llegando.\n\nEs más fácil hablar del árbitro que de la banda que os está costando el partido. Antes del partido, dale a tu segundo tres preguntas para el camino del vestuario: ¿por dónde nos hacen daño?, ¿quién ya no llega?, ¿qué han cambiado ellos? Lo del árbitro, al final.\n\n¿De qué hablas primero en el descanso?\n\n(Escena de ejemplo.)\n\nEstamos terminando la app de ProTeam. Síguenos para no perderte nada: muy pronto, novedades.\n\n#entrenadores #fútbolbase #fútbol\n",
-  "state": "aprobada",
-  "ig": {
-   "status": "pendiente",
-   "when": "2026-12-04T13:30:00+01:00"
-  },
-  "tiktok": {
-   "status": "programada",
-   "via": "metricool",
-   "when": "2026-12-04T13:30:00+01:00"
-  },
-  "added": "2026-11-24T17:50:42.666482+01:00"
- },
- {
-  "id": "v6-T01-2-r1",
-  "kind": "reel",
-  "files": [
-   "publicar/media/v6-T01-2-r1.mp4"
-  ],
-  "caption": "La pizarra de la remontada de Estambul tenía un hueco. Y te enseña a preparar tu descanso.\n\nAl descanso de la final de 2005, el Liverpool perdía 3-0. En quince minutos se cambió el sistema y el once corregido de la pizarra se olvidaba de un jugador (lo cuenta Balls.ie; más detalles en LFC.com).\n\n¿Tú llevas el plan B escrito o lo improvisas?\n\nEstamos terminando la app de ProTeam. Síguenos para no perderte nada: muy pronto, novedades.\n\n#entrenadores #fútbolbase #baloncesto #balonmano",
-  "state": "aprobada",
-  "ig": {
-   "status": "pendiente",
-   "when": "2026-12-04T20:30:00+01:00"
-  },
-  "tiktok": {
-   "status": "programada",
-   "via": "metricool",
-   "when": "2026-12-04T20:30:00+01:00"
-  },
-  "added": "2026-11-24T17:50:42.738606+01:00"
- },
- {
-  "id": "v6-T01-6-r1",
-  "kind": "reel",
-  "files": [
-   "publicar/media/v6-T01-6-r1.mp4"
-  ],
-  "caption": "Klopp cambió el sistema entero en mitad de una semifinal. Y luego dijo: «Ese fue nuestro error».\n\nFuentes: FourFourTwo y Sky Sports, enero de 2017.\n\n¿Tienes un plan B ensayado o lo improvisas en la banda?\n\nEstamos terminando la app de ProTeam. Síguenos para no perderte nada: muy pronto, novedades.\n\n#entrenadores #fútbolbase #baloncesto #balonmano",
-  "state": "aprobada",
-  "ig": {
-   "status": "pendiente",
-   "when": "2026-12-05T13:30:00+01:00"
-  },
-  "tiktok": {
-   "status": "programada",
-   "via": "metricool",
-   "when": "2026-12-05T13:30:00+01:00"
-  },
-  "added": "2026-11-24T17:50:42.826845+01:00"
- },
- {
-  "id": "v6-T01-1-r3",
-  "kind": "reel",
-  "files": [
-   "publicar/media/v6-T01-1-r3.mp4"
-  ],
-  "caption": "Tu primera vuelta ya es una base de datos. Solo falta apuntarla.\n\nPara el papel de Lehmann en el Mundial 2006 se usó una base de 13.000 penaltis. Aun así, el que más le hizo falta parar, Cambiasso, no estaba en la lista: se lo paró por un partido del Inter que había visto.\n\nTú ya has visto a cada rival una vez. Al acabar, tres líneas: el peligroso, la banda y el balón parado. Las lees la semana que vuelves a jugar contra él.\n\n(Fuente: FIFA, 6/7/2016. Foto: ronmacphotos, CC BY 2.0.)\n\n¿Contra quién vuelves a jugar este mes?\n\nEstamos terminando la app de ProTeam. Síguenos para no perderte nada: muy pronto, novedades.\n\n#entrenadores #fútbolbase #baloncesto #balonmano",
-  "state": "aprobada",
-  "ig": {
-   "status": "pendiente",
-   "when": "2026-12-05T20:30:00+01:00"
-  },
-  "tiktok": {
-   "status": "programada",
-   "via": "metricool",
-   "when": "2026-12-05T20:30:00+01:00"
-  },
-  "added": "2026-11-24T17:50:42.901275+01:00"
- },
- {
-  "id": "v7-bielsa",
-  "kind": "reel",
-  "files": [
-   "https://d2ol7oe51mr4n9.cloudfront.net/user_3M2z7lIyzIPYtjNHcxRWFNk6wi7/c6a106df-1535-40ca-addc-fb962369f950.mp4"
-  ],
-  "caption": "Le acusaron de espiar. Y respondió con un PowerPoint.\n\nLeeds, 16 de enero de 2019. Bielsa convocó una rueda de prensa de 70 minutos y proyectó su análisis del Derby County: 51 partidos vistos, unas cuatro horas de trabajo por cada uno.\n\nNo era una manía. Era su método.\n\n¿Cuántas horas le dedicas tú a preparar al rival?\n\nEstamos terminando la app de ProTeam. Síguenos para no perderte nada: muy pronto, novedades.\n\nFuentes: Yorkshire Evening Post, Sky Sports. Fotos (Wikimedia Commons): Newell's Old Boys (CC BY 3.0), Alejandro Vásquez Núñez (CC BY 2.0), Mathieu from Marseille (CC BY-SA 2.0). Música y efectos: Epidemic Sound.\n\n#entrenadores #fútbolbase #bielsa #análisistáctico #baloncesto #balonmano",
-  "state": "aprobada",
-  "ig": {
-   "status": "pendiente",
-   "when": "2026-11-25T18:00:00+01:00"
-  },
-  "tiktok": {
-   "status": "programada",
-   "via": "metricool",
-   "when": "2026-11-25T18:00:00+01:00",
-   "metricoolId": 440791811
-  },
-  "added": "2026-11-24T20:40:00+01:00",
-  "nota": "v7 photo story; vídeo final mezclado en Higgsfield (música/SFX Epidemic Sound). Copia sin audio en tools/reel_v7/bielsa/video3_mudo.mp4"
- },
- {
-  "id": "v7-peor-verano-2003",
-  "kind": "reel",
-  "files": [
-   "https://d2ol7oe51mr4n9.cloudfront.net/user_3M2z7lIyzIPYtjNHcxRWFNk6wi7/73210ea1-d4b1-4bfb-8aaf-4e15a2b71a04.mp4"
-  ],
-  "caption": "Tres semanas sin meter un tiro fuera de la zona. Le pasó a Stephen Curry con 15 años.\n\nVerano de 2003, Charlotte. Tiraba desde abajo, como una catapulta, y su padre, Dell, le hizo subir el balón por encima de la cabeza. Curry lo contó después: estuvo así de mal mes y medio. «El peor verano de mi vida». Hoy nadie ha metido más triples en la NBA.\n\nPara tu equipo: cuando corrijas el tiro a un jugador, va a fallar más durante un tiempo. Avísale antes. Y esas semanas, no cuentes canastas: cuenta cuántas veces el balón sube bien.\n\n¿Has cambiado alguna vez el tiro a un jugador? ¿Cuánto tardó en volver a meterla?\n\nEstamos terminando la app de ProTeam. Síguenos para no perderte nada: muy pronto, novedades.\n\nFuentes: Sports Illustrated, The Ringer, ESPN, NBA.com, CBS Sports. Fotos (Wikimedia Commons): Michael Barera (CC BY-SA 4.0) y Diario de Madrid (CC BY 4.0). Siluetas y pizarras: recreación. Música y efectos: Epidemic Sound.\n\n#entrenadores #baloncesto #baloncestobase #tiro #stephencurry #formacion",
-  "state": "aprobada",
-  "ig": {
-   "status": "pendiente",
-   "when": "2026-11-26T18:00:00+01:00"
-  },
-  "tiktok": {
-   "status": "pendiente"
-  },
-  "added": "2026-11-24T21:45:00+01:00",
-  "nota": "v7 historia con fotos (montaje de v6-peor-verano-2003, voz recortada a 21 s). Música y SFX Epidemic Sound mezclados en Higgsfield. Copia sin audio en tools/reel_v7/peor-verano-2003/video_mudo.mp4"
- },
- {
-  "id": "v7-boot-room-anfield",
-  "kind": "reel",
-  "files": [
-   "https://d2ol7oe51mr4n9.cloudfront.net/user_3M2z7lIyzIPYtjNHcxRWFNk6wi7/ce012177-15b6-4ec0-8433-e060bbaced1f.mp4"
-  ],
-  "caption": "El cuarto más famoso de Anfield guardaba botas.\n\nEn el Boot Room del Liverpool cabían unas seis personas, entre cajas de cerveza. Allí se reunía el cuerpo técnico desde la llegada de Bill Shankly en 1959. Según Kenny Dalglish, cada día escribían en libros grandes quién había entrenado y quién estaba lesionado. Los guardaban Ronnie Moran y Joe Fagan, y cuando el equipo pasaba un mal momento, los abrían: la «Boot Room bible» (This Is Anfield; Liverpool FC).\n\nY tú, ¿qué escribes después de cada entreno?\n\nEstamos terminando la app de ProTeam. Síguenos para no perderte nada: muy pronto, novedades.\n\nFuentes: This Is Anfield, Liverpool FC, Wikipedia. Fotos: Rodhullandemu (CC BY-SA 4.0) y Eskil Malmberg (dominio público), vía Wikimedia Commons. Cuarto, libro y cajas: recreación.\nMúsica y efectos: Epidemic Sound\n\n#entrenador #entrenadordefutbol #futbolbase #fútbol #historiadelfutbol #Liverpool #BootRoom #metodologia #ProTeam",
-  "state": "aprobada",
-  "ig": {
-   "status": "pendiente",
-   "when": "2026-11-27T18:00:00+01:00"
-  },
-  "tiktok": {
-   "status": "pendiente"
-  },
-  "added": "2026-11-24T22:20:00+01:00",
-  "nota": "v7 historia con fotos (guion de Dani A). Voz 21 s (ElevenLabs eleven_v4, Mateo). Música y SFX Epidemic Sound mezclados en Higgsfield (tools/reel_v7/boot-room-anfield/mix.py). Montaje: Marta B (02)."
- },
- {
-  "id": "v7-golpe-ciento-uno-spurs",
-  "kind": "reel",
-  "files": [
-   "https://d2ol7oe51mr4n9.cloudfront.net/user_3M2z7lIyzIPYtjNHcxRWFNk6wi7/f035264d-d401-4da8-9621-306021b0c5c3.mp4"
-  ],
-  "caption": "Los Spurs colgaron la misma frase en cinco idiomas.\n\nEn el pasillo del vestuario de los San Antonio Spurs estaba en español, francés, portugués y latín, y en inglés junto a la taquilla de Tim Duncan (Bleacher Report, 2014). Es de Jacob Riis (1901): un cantero golpea su piedra quizá cien veces sin una grieta, y al golpe ciento uno se parte en dos. Gregg Popovich la convirtió en el lema del equipo desde los noventa (CBS Sports, 2013; Grind City Media, 2019).\n\n¿Cuál es el golpe ciento uno que tu equipo todavía no ha dado?\n\nEstamos terminando la app de ProTeam. Síguenos para no perderte nada: muy pronto, novedades.\n\nFuentes: Bleacher Report, CBS Sports, Grind City Media; J. A. Riis, «The Making of an American» (1901). Fotos: Keith Allison y Mike (CC BY-SA 2.0), J. W. Chapman-Taylor y Library of Congress (dominio público), vía Wikimedia Commons. Taquillas, cartelas, piedra y contador: recreación.\nMúsica y efectos: Epidemic Sound\n\n#entrenador #entrenadordebaloncesto #baloncesto #basket #NBA #Spurs #Popovich #constancia #metodologia #ProTeam",
-  "state": "aprobada",
-  "ig": {
-   "status": "pendiente",
-   "when": "2026-11-28T18:00:00+01:00"
-  },
-  "tiktok": {
-   "status": "pendiente"
-  },
-  "added": "2026-11-24T22:40:00+01:00",
-  "nota": "v7 historia con fotos (guion de Dani B). Voz 17,6 s (ElevenLabs eleven_v4, Mateo). Música y SFX Epidemic Sound mezclados en Higgsfield (tools/reel_v7/v7-golpe-ciento-uno-spurs/mix.py). Montaje: Marta A (02)."
- },
- {
-  "id": "v7-jinete-sacchi",
-  "kind": "reel",
-  "files": [
-   "https://d2ol7oe51mr4n9.cloudfront.net/user_3M2z7lIyzIPYtjNHcxRWFNk6wi7/094a2436-4f77-496a-8ed2-5719cdfc7fe3.mp4"
-  ],
-  "caption": "Arrigo Sacchi vendía zapatos antes de ganar dos Copas de Europa.\n\nNunca fue futbolista profesional y trabajó años en el negocio de zapatos de su padre. En la Copa de Italia 1986-87, su Parma, recién subido a la Serie B, ganó dos veces al Milan, y en 1987 Berlusconi lo fichó. Cuando la prensa le reprochó que no había sido jugador, respondió: «No sabía que, para ser jinete, antes había que ser caballo» (FIFA; Wikipedia). Con el Milan ganó la Copa de Europa en 1989 y en 1990.\n\n¿Te han dicho alguna vez que para entrenar hay que haber jugado?\n\nEstamos terminando la app de ProTeam. Síguenos para no perderte nada: muy pronto, novedades.\n\nFuentes: FIFA, Wikipedia, The Set Pieces. Fotos: Elena Torre (CC BY-SA 2.0), Vincenzo.togni (CC BY-SA 4.0), Vasil Evlogiev (CC BY-SA 4.0) y postal de Fusignano (dominio público), vía Wikimedia Commons. Zapatos, fichas, cuadro y portadas: recreación.\nMúsica y efectos: Epidemic Sound\n\n#entrenador #entrenadordefutbol #futbolbase #fútbol #historiadelfutbol #Sacchi #Milan #metodologia #ProTeam",
-  "state": "revisión",
-  "ig": {
-   "status": "pendiente"
-  },
-  "tiktok": {
-   "status": "pendiente"
-  },
-  "added": "2026-11-24T23:10:00+01:00",
-  "nota": "v7 historia con fotos (guion de Dani A). Voz 21,7 s (ElevenLabs eleven_v4, Mateo, 1 toma). Música y SFX Epidemic Sound mezclados en Higgsfield (tools/reel_v7/v7-jinete-sacchi/mix.py). Montaje: Marta B (02)."
- },
- {
-  "id": "v7-red-valvano-1983",
-  "kind": "reel",
-  "files": [
-   "https://d2ol7oe51mr4n9.cloudfront.net/user_3M2z7lIyzIPYtjNHcxRWFNk6wi7/23908ce6-d1b7-4204-be3b-fd577f87685e.mp4"
-  ],
-  "caption": "Jim Valvano hizo que su equipo cortara la red antes de ganar nada.\n\nAl empezar la temporada, el entrenador de NC State llevó unas tijeras al entrenamiento: sus jugadores subieron a la escalera, cortaron la red y celebraron como si ya fueran campeones (V Foundation, a partir del documental «Survive and Advance» de ESPN; testimonio de Thurl Bailey en LDS Living). En la final de la NCAA del 4 de abril de 1983, contra el Houston de Olajuwon y Drexler, número uno con 26 victorias seguidas, Lorenzo Charles machacó sobre la bocina: 54-52. Y volvieron a cortar la red, esta vez de verdad (The News & Observer).\n\n¿Tu equipo ha ensayado alguna vez cómo celebraría ganar?\n\nEstamos terminando la app de ProTeam. Síguenos para no perderte nada: muy pronto, novedades.\n\nFuentes: V Foundation, The News & Observer, LDS Living, Wikipedia. Fotos: Duke Chronicle (incluida una de Jonathan Wroblewski) y Greenstrat, dominio público, vía Wikimedia Commons. Tijeras, escalera, aro y marcador: recreación.\nMúsica y efectos: Epidemic Sound\n\n#entrenador #entrenadordebaloncesto #baloncesto #basket #NCAA #Valvano #historiadelbaloncesto #mentalidad #ProTeam",
-  "state": "revisión",
-  "ig": {
-   "status": "pendiente"
-  },
-  "tiktok": {
-   "status": "pendiente"
-  },
-  "added": "2026-11-24T23:45:00+01:00",
-  "nota": "v7 historia con fotos (guion de Dani B). Voz 22,0 s (ElevenLabs eleven_v4, Mateo, 1 toma, 54 palabras). Música y SFX Epidemic Sound mezclados en Higgsfield (tools/reel_v7/v7-red-valvano-1983/mix.py). Montaje: Marta A (02)."
- }
+  {
+    "id": "a1-papel",
+    "kind": "reel",
+    "files": [
+      "publicar/media/a1-papel.mp4"
+    ],
+    "caption": "Lehmann tenía un papel en la media. Tu segundo puede tener una hoja con seis zonas.\n\n¿Qué apuntas tú en el descanso?\n\nFotos: Andreas Köpke (DP), ronmacphotos (CC BY 2.0)\n#entrenadores #futbolbase #fútbol #entrenamiento",
+    "state": "retirada",
+    "ig": {
+      "status": "pendiente"
+    },
+    "tiktok": {
+      "status": "pendiente"
+    },
+    "added": "2026-11-23T07:59:06.582636+01:00",
+    "nota": "Estilo v3 retirado (Biel, 23/11). No se publica."
+  },
+  {
+    "id": "b2-rpe-carrusel",
+    "kind": "carrusel",
+    "files": [
+      "publicar/media/b2-rpe-carrusel-1.jpg",
+      "publicar/media/b2-rpe-carrusel-2.jpg",
+      "publicar/media/b2-rpe-carrusel-3.jpg",
+      "publicar/media/b2-rpe-carrusel-4.jpg",
+      "publicar/media/b2-rpe-carrusel-5.jpg",
+      "publicar/media/b2-rpe-carrusel-6.jpg"
+    ],
+    "caption": "Al acabar cada entreno, una pregunta a cada jugador: del 1 al 10, ¿cuánto te ha costado? Multiplícalo por los minutos y tienes la carga del día. Tres semanas comparando jueves y sábados.\nGuárdalo y pásaselo a tu segundo.\n\nLas cifras de las láminas son un EJEMPLO.\nMétodo: RPE de sesión (Foster et al., 2001).\nFoto: Steffen Prößdorf (CC BY-SA 4.0)\n#entrenadores #baloncesto #entrenamiento",
+    "state": "retirada",
+    "ig": {
+      "status": "pendiente"
+    },
+    "tiktok": {
+      "status": "no"
+    },
+    "added": "2026-11-23T08:33:44.019547+01:00",
+    "nota": "Estilo v3 retirado (Biel, 23/11). No se publica."
+  },
+  {
+    "id": "b2-rpe-story1",
+    "kind": "story",
+    "files": [
+      "publicar/media/b2-rpe-story1.png"
+    ],
+    "caption": "Pregunta: ¿Qué día entrenas más fuerte? (sticker de pregunta a mano). Foto: DoD (DP).",
+    "state": "retirada",
+    "ig": {
+      "status": "pendiente"
+    },
+    "tiktok": {
+      "status": "no"
+    },
+    "added": "2026-11-23T08:33:44.052150+01:00",
+    "nota": "Estilo v3 retirado (Biel, 23/11). No se publica."
+  },
+  {
+    "id": "b2-rpe-story2",
+    "kind": "story",
+    "files": [
+      "publicar/media/b2-rpe-story2.png"
+    ],
+    "caption": "Encuesta: ¿Les preguntas cuánto les ha costado? Lo pregunto / Lo intuyo (sticker de encuesta a mano).",
+    "state": "retirada",
+    "ig": {
+      "status": "pendiente"
+    },
+    "tiktok": {
+      "status": "no"
+    },
+    "added": "2026-11-23T08:33:44.101096+01:00",
+    "nota": "Estilo v3 retirado (Biel, 23/11). No se publica."
+  },
+  {
+    "id": "T09-2-r1",
+    "kind": "reel",
+    "files": [
+      "publicar/media/T09-2-r1-1.mp4",
+      "publicar/media/T09-2-r1-2.jpg"
+    ],
+    "caption": "Si alguien de tu banquillo entra en el minuto 53, le has dejado siete minutos para todo un partido.\n\nNadie lo decide. Vas ganando, no tocas lo que funciona, y al que no sale no lo ve nadie. Antes del partido, apunta junto a cada dorsal los minutos mínimos. En el descanso, rodea al que siga en cero. Ese entra el primero.\n\n(Escena de ejemplo: marcador y dorsales no son de ningún equipo.)\n\n¿Cuántos minutos jugó tu último del banquillo el sábado?",
+    "state": "retirada",
+    "ig": {
+      "status": "pendiente"
+    },
+    "tiktok": {
+      "status": "pendiente"
+    },
+    "added": "2026-11-23T08:35:05.809926+01:00",
+    "nota": "Estilo v3 retirado (Biel, 23/11). No se publica."
+  },
+  {
+    "id": "T09-2-r2",
+    "kind": "reel",
+    "files": [
+      "publicar/media/T09-2-r2-1.mp4",
+      "publicar/media/T09-2-r2-2.jpg"
+    ],
+    "caption": "Si tu primer cambio es siempre el mismo dorsal, no lo estás eligiendo tú: lo elige la banda.\n\nEn caliente entra el que calienta más cerca. Los cambios se acaban y el catorce vuelve a casa con el peto limpio. En el descanso, escribe tus cambios con su minuto, empezando por el que no ha jugado. En el 53 miras la hoja, no la banda.\n\n(Escena de ejemplo: dorsales y marcadores no son de ningún equipo.)\n\n¿Tus cambios los decides en el descanso o en la banda?",
+    "state": "retirada",
+    "ig": {
+      "status": "pendiente"
+    },
+    "tiktok": {
+      "status": "pendiente"
+    },
+    "added": "2026-11-23T08:58:50.468321+01:00",
+    "nota": "Estilo v3 retirado (Biel, 23/11). No se publica."
+  },
+  {
+    "id": "T06-1-r2",
+    "kind": "reel",
+    "files": [
+      "publicar/media/T06-1-r2-1.mp4",
+      "publicar/media/T06-1-r2-2.jpg"
+    ],
+    "caption": "Hay dos palabras que tus jugadores casi nunca te oyen decir.\n\nTu lateral corre cuarenta metros hacia atrás y corta un contraataque. En el vestuario se habla del gol, del penalti y del cambio. De su carrera, nada. Ferguson lo contó en Harvard Business Review (2013): no hay nada mejor que oír «bien hecho», y sin superlativos. En la banda, apunta lo bueno de cada uno con su minuto y díselo al acabar con su nombre.\n\n(Escena de ejemplo. Foto de Ferguson: Austin Osuide, CC BY 2.0, Wikimedia Commons.)\n\n¿A quién de tu equipo le debes hoy un «bien hecho»?",
+    "state": "retirada",
+    "ig": {
+      "status": "pendiente"
+    },
+    "tiktok": {
+      "status": "pendiente"
+    },
+    "added": "2026-11-23T09:37:26.127235+01:00",
+    "nota": "Estilo v3 retirado (Biel, 23/11). No se publica."
+  },
+  {
+    "id": "T04-2-r3",
+    "kind": "reel",
+    "files": [
+      "publicar/media/T04-2-r3-1.mp4",
+      "publicar/media/T04-2-r3-2.jpg"
+    ],
+    "caption": "Apuntó hasta al portero rival en su botella. Esto es lo que puedes copiar con tu portero, aunque no tengas analista.\n\nEn la ida, cada penalti y cada falta del rival: dorsal y lado. En la vuelta, todo a una tira de cinta en la botella de tu portero. Y no solo el nueve: el que menos esperas también tira.\n\n(Final de la Eurocopa 2020, Wembley, 11/7/2021. Dorsales de base: ejemplo. Foto de Wembley: Ashley Martin, CC BY-SA 2.0, Wikimedia Commons.)\n\n¿Tu portero sabe algo del rival antes del sábado?",
+    "state": "retirada",
+    "ig": {
+      "status": "pendiente"
+    },
+    "tiktok": {
+      "status": "pendiente"
+    },
+    "added": "2026-11-23T10:02:48.397624+01:00",
+    "nota": "Estilo v3 retirado (Biel, 23/11). No se publica."
+  },
+  {
+    "id": "d2-portera-carrusel",
+    "kind": "carrusel",
+    "files": [
+      "publicar/media/d2-portera-carrusel-1.jpg",
+      "publicar/media/d2-portera-carrusel-2.jpg",
+      "publicar/media/d2-portera-carrusel-3.jpg",
+      "publicar/media/d2-portera-carrusel-4.jpg",
+      "publicar/media/d2-portera-carrusel-5.jpg",
+      "publicar/media/d2-portera-carrusel-6.jpg"
+    ],
+    "caption": "Le marcaron veinte. Y fue su mejor partido.\n\nPerdéis de seis y en el vestuario nadie la mira. Tú ves el 20; ella también.\n\n1. Durante el partido, una raya por parada y otra por gol.\n2. Paradas ÷ tiros: 12 de 32 es un 37,5 %.\n3. Cada partido, el mismo cálculo, para poder compararlo.\n4. El lunes, se lo enseñas a ella antes que a nadie.\n\nGuárdalo y pásaselo a tu segundo.\n\nEscena y cifras de ejemplo (no es un partido real).\nFotos: Steffen Prößdorf (CC BY-SA 4.0)\n\nLa app de ProTeam, para entrenadores de fútbol, baloncesto y balonmano. Enlace en la bio.",
+    "state": "retirada",
+    "ig": {
+      "status": "pendiente"
+    },
+    "tiktok": {
+      "status": "no"
+    },
+    "added": "2026-11-23T10:34:31.063742+01:00",
+    "nota": "Estilo v3 retirado (Biel, 23/11). No se publica."
+  },
+  {
+    "id": "d2-portera-story1",
+    "kind": "story",
+    "files": [
+      "publicar/media/d2-portera-story1.png"
+    ],
+    "caption": "¿Cuántos tiros paró tu portera el sábado?",
+    "state": "retirada",
+    "ig": {
+      "status": "pendiente"
+    },
+    "tiktok": {
+      "status": "no"
+    },
+    "added": "2026-11-23T10:34:31.099568+01:00",
+    "nota": "Estilo v3 retirado (Biel, 23/11). No se publica."
+  },
+  {
+    "id": "d2-portera-story2",
+    "kind": "story",
+    "files": [
+      "publicar/media/d2-portera-story2.png"
+    ],
+    "caption": "¿Qué cuentas de tu portera?",
+    "state": "retirada",
+    "ig": {
+      "status": "pendiente"
+    },
+    "tiktok": {
+      "status": "no"
+    },
+    "added": "2026-11-23T10:34:31.130705+01:00",
+    "nota": "Estilo v3 retirado (Biel, 23/11). No se publica."
+  },
+  {
+    "id": "T09-1-r1",
+    "kind": "reel",
+    "files": [
+      "publicar/media/T09-1-r1-1.mp4",
+      "publicar/media/T09-1-r1-2.jpg"
+    ],
+    "caption": "Tu primer cambio se decide en el minuto ocho, aunque lo hagas en el sesenta.\n\nCero a dos, los dos goles por tu banda izquierda. Lo raro es que en el minuto ocho su extremo ya había ganado tres carreras por ahí, y no lo apuntaste. En los primeros quince minutos, tres líneas: por dónde te atacan, qué duelo pierdes y quién va justo de piernas. Esa última línea es tu primer cambio.\n\n(Escena de ejemplo.)\n\n¿Por qué banda te atacaron el sábado?",
+    "state": "retirada",
+    "ig": {
+      "status": "pendiente"
+    },
+    "tiktok": {
+      "status": "pendiente"
+    },
+    "added": "2026-11-23T10:45:57.260880+01:00",
+    "nota": "Estilo v3 retirado (Biel, 23/11). No se publica."
+  },
+  {
+    "id": "T09-1-r2",
+    "kind": "reel",
+    "files": [
+      "publicar/media/T09-1-r2-1.mp4",
+      "publicar/media/T09-1-r2-2.jpg"
+    ],
+    "caption": "La roja del minuto setenta casi siempre empieza mucho antes.\n\nTu central se va expulsado con 1-1. La primera amarilla fue en el doce, en la otra punta, y en el descanso nadie se acordó. Antes del minuto quince, abre la hoja: amarillas con dorsal y minuto, su banda fuerte y quién no llega. Esa lista, y no el marcador, es la que lees en el descanso para hacer el primer cambio.\n\n(Escena de ejemplo. Regla 12 de la IFAB: segunda amarilla, expulsión.)\n\n¿Apuntas las amarillas de tu equipo durante el partido?",
+    "state": "retirada",
+    "ig": {
+      "status": "pendiente"
+    },
+    "tiktok": {
+      "status": "pendiente"
+    },
+    "added": "2026-11-23T11:03:21.054090+01:00",
+    "nota": "Estilo v3 retirado (Biel, 23/11). No se publica."
+  },
+  {
+    "id": "T09-1-r3",
+    "kind": "reel",
+    "files": [
+      "publicar/media/T09-1-r3-1.mp4",
+      "publicar/media/T09-1-r3-2.jpg"
+    ],
+    "caption": "Si algo se repite tres veces antes del minuto quince, ya no es casualidad.\n\nSu extremo le gana la espalda a tu lateral: una la salva el portero, otra se va fuera, y la tercera la ves venir desde el banquillo. Esperas, porque un cambio en el doce parece exagerado. Pauta para el banquillo: una raya cada vez que algo se repite, y a la tercera cambias algo, aunque vayas cero a cero.\n\n(Escena de ejemplo. Foto: grassrootsgroundswell, CC BY 2.0, Wikimedia Commons.)\n\n¿Qué se te repitió el sábado antes del quince?",
+    "state": "retirada",
+    "ig": {
+      "status": "pendiente"
+    },
+    "tiktok": {
+      "status": "pendiente"
+    },
+    "added": "2026-11-23T11:31:57.975015+01:00",
+    "nota": "Estilo v3 retirado (Biel, 23/11). No se publica."
+  },
+  {
+    "id": "T01-5-r3",
+    "kind": "reel",
+    "files": [
+      "publicar/media/T01-5-r3-1.mp4",
+      "publicar/media/T01-5-r3-2.jpg"
+    ],
+    "caption": "Cómo sacar el descanso del penalti que no os pitaron y llevarlo a lo que sí puedes cambiar.\n\nEs más fácil hablar del árbitro que de la banda por la que os están llegando. Antes del partido, dale tres preguntas a tu segundo y que te las conteste camino del vestuario: por dónde os hacen daño, quién ya no llega, qué han cambiado ellos. Lo del árbitro, al final.\n\n(Escena de ejemplo: marcador y dorsales no son de ningún equipo.)\n\n¿Cuántos minutos del descanso se os van en el árbitro?",
+    "state": "retirada",
+    "ig": {
+      "status": "pendiente"
+    },
+    "tiktok": {
+      "status": "pendiente"
+    },
+    "added": "2026-11-23T12:05:29.229886+01:00",
+    "nota": "Estilo v3 retirado (Biel, 23/11). No se publica."
+  },
+  {
+    "id": "T01-5-r2",
+    "kind": "reel",
+    "files": [
+      "publicar/media/T01-5-r2-1.mp4",
+      "publicar/media/T01-5-r2-2.jpg"
+    ],
+    "caption": "La pregunta del descanso que casi nadie hace, y que te habría ahorrado dos goles.\n\nSu diez bajaba a recibir desde el minuto veinte. Tu segundo lo vio y lo apuntó, pero en el descanso le preguntaste por tarjetas y por cansancio. Antes del partido, cerrad tres preguntas, y la tercera siempre es la misma: ¿qué han cambiado ellos?\n\n(Escena de ejemplo: marcador, minutos y dorsales no son de ningún equipo.)\n\n¿En el descanso preguntas por el rival o solo por los tuyos?",
+    "state": "retirada",
+    "ig": {
+      "status": "pendiente"
+    },
+    "tiktok": {
+      "status": "pendiente"
+    },
+    "added": "2026-11-23T12:28:47.565206+01:00",
+    "nota": "Estilo v3 retirado (Biel, 23/11). No se publica."
+  },
+  {
+    "id": "T01-1-r2-carrusel",
+    "kind": "carrusel",
+    "files": [
+      "publicar/media/T01-1-r2-carrusel-1.jpg",
+      "publicar/media/T01-1-r2-carrusel-2.jpg",
+      "publicar/media/T01-1-r2-carrusel-3.jpg",
+      "publicar/media/T01-1-r2-carrusel-4.jpg",
+      "publicar/media/T01-1-r2-carrusel-5.jpg",
+      "publicar/media/T01-1-r2-carrusel-6.jpg",
+      "publicar/media/T01-1-r2-carrusel-7.jpg"
+    ],
+    "caption": "Entra al descanso con algo escrito. Tus jugadores te miran las manos.\n\nMundial 2006: Cambiasso no estaba en la lista de Lehmann. Según quien lo vio, miró el papel igual, se tomó su tiempo y se lo paró.\n\nDesde el minuto 35, tu segundo te escribe tres líneas: qué funciona, qué falla y un cambio. Las lees. Luego hablas.\n\nGuárdalo y pásaselo a tu segundo.\n\n(Fuente: FIFA, 6/7/2016. Papel de Lehmann: Andreas Köpke, dominio público. Las tres líneas de la lámina 5 son un ejemplo.)\n\n¿Qué es lo primero que dices al entrar al vestuario?",
+    "state": "retirada",
+    "ig": {
+      "status": "pendiente"
+    },
+    "tiktok": {
+      "status": "no"
+    },
+    "added": "2026-11-23T12:36:04.320909+01:00",
+    "nota": "Estilo v3 retirado (Biel, 23/11). No se publica."
+  },
+  {
+    "id": "T01-1-r2-story1",
+    "kind": "story",
+    "files": [
+      "publicar/media/T01-1-r2-story1.png"
+    ],
+    "caption": "¿Qué es lo primero que dices al entrar al vestuario? (sticker de pregunta a mano)",
+    "state": "retirada",
+    "ig": {
+      "status": "pendiente"
+    },
+    "tiktok": {
+      "status": "no"
+    },
+    "added": "2026-11-23T12:36:04.360583+01:00",
+    "nota": "Estilo v3 retirado (Biel, 23/11). No se publica."
+  },
+  {
+    "id": "T01-1-r2-story2",
+    "kind": "story",
+    "files": [
+      "publicar/media/T01-1-r2-story2.png"
+    ],
+    "caption": "En el descanso, ¿con qué entras? Con algo escrito / Con lo que me sale (sticker de encuesta a mano)",
+    "state": "retirada",
+    "ig": {
+      "status": "pendiente"
+    },
+    "tiktok": {
+      "status": "no"
+    },
+    "added": "2026-11-23T12:36:04.402032+01:00",
+    "nota": "Estilo v3 retirado (Biel, 23/11). No se publica."
+  },
+  {
+    "id": "T06-2-r3",
+    "kind": "reel",
+    "files": [
+      "publicar/media/T06-2-r3-1.mp4",
+      "publicar/media/T06-2-r3-2.jpg"
+    ],
+    "caption": "Lo que hace que el que sale del banquillo falle el primer balón, y cómo evitarlo antes del partido.\n\nCuarenta minutos sentado, frío, mirando el partido como un espectador. No le faltaba nivel: le faltaba estar dentro del partido mientras estaba fuera. Antes del partido, dale una cosa que mirar desde el banquillo (el pivote rival, por ejemplo) y que la apunte.\n\n(Escena de ejemplo: marcador y minutos no son de ningún equipo.)\n\n¿Le das tarea a tu banquillo o solo a los que juegan?",
+    "state": "retirada",
+    "ig": {
+      "status": "pendiente"
+    },
+    "tiktok": {
+      "status": "pendiente"
+    },
+    "added": "2026-11-23T13:02:54.153130+01:00",
+    "nota": "Estilo v3 retirado (Biel, 23/11). No se publica."
+  },
+  {
+    "id": "T01-6-r1",
+    "kind": "reel",
+    "files": [
+      "publicar/media/T01-6-r1-1.mp4",
+      "publicar/media/T01-6-r1-2.jpg"
+    ],
+    "caption": "Klopp cambió el sistema entero en mitad de una semifinal. Y luego dijo: «Ese fue nuestro error».\n\nLe dio un 3-5-2 en un papel a un solo jugador con el balón en juego, y él tuvo que explicárselo a otros diez. El cambio de dibujo no se inventa el sábado: el jueves, tres líneas (quién baja, quién sube, quién avisa), diez minutos de ensayo y una palabra en la primera pausa.\n\nFuentes: FourFourTwo y Sky Sports, enero de 2017. Fotos: Kevin Walsh (CC BY 2.0), Dan Kerins (CC BY-SA 4.0), Wikimedia Commons. El plan B de la libreta es un ejemplo.\n\n¿Tienes un plan B ensayado o lo improvisas en la banda?",
+    "state": "retirada",
+    "ig": {
+      "status": "pendiente"
+    },
+    "tiktok": {
+      "status": "pendiente"
+    },
+    "added": "2026-11-23T14:06:14.212896+01:00",
+    "nota": "Estilo v3 retirado (Biel, 23/11). No se publica."
+  },
+  {
+    "id": "T01-1-r3-carrusel",
+    "kind": "carrusel",
+    "files": [
+      "publicar/media/T01-1-r3-carrusel-1.jpg",
+      "publicar/media/T01-1-r3-carrusel-2.jpg",
+      "publicar/media/T01-1-r3-carrusel-3.jpg",
+      "publicar/media/T01-1-r3-carrusel-4.jpg",
+      "publicar/media/T01-1-r3-carrusel-5.jpg",
+      "publicar/media/T01-1-r3-carrusel-6.jpg"
+    ],
+    "caption": "Tu primera vuelta ya es una base de datos. Solo falta apuntarla.\n\nAl acabar cada partido, tres líneas del rival: el peligroso, la banda y el balón parado. Pon la ficha en la semana en que vuelves a jugar contra él y léela antes de preparar el partido.\n\nPara el papel de Lehmann en el Mundial 2006 se usó una base de 13.000 penaltis (FIFA, 6/7/2016). Tú ya has visto a cada rival una vez.\n\nGuárdalo y pásaselo a tu segundo.\n\n(Foto del papel: Wikimedia Commons, dominio público.)",
+    "state": "retirada",
+    "ig": {
+      "status": "pendiente"
+    },
+    "tiktok": {
+      "status": "no"
+    },
+    "added": "2026-11-23T14:37:52.606906+01:00",
+    "nota": "Estilo v3 retirado (Biel, 23/11). No se publica."
+  },
+  {
+    "id": "T01-1-r3-story1",
+    "kind": "story",
+    "files": [
+      "publicar/media/T01-1-r3-story1.png"
+    ],
+    "caption": "¿Contra quién vuelves a jugar este mes?",
+    "state": "retirada",
+    "ig": {
+      "status": "pendiente"
+    },
+    "tiktok": {
+      "status": "no"
+    },
+    "added": "2026-11-23T14:37:52.670041+01:00",
+    "nota": "Estilo v3 retirado (Biel, 23/11). No se publica."
+  },
+  {
+    "id": "T01-1-r3-story2",
+    "kind": "story",
+    "files": [
+      "publicar/media/T01-1-r3-story2.png"
+    ],
+    "caption": "Del rival de la ida, ¿qué tienes? Lo que recuerdo / Tres líneas apuntadas",
+    "state": "retirada",
+    "ig": {
+      "status": "pendiente"
+    },
+    "tiktok": {
+      "status": "no"
+    },
+    "added": "2026-11-23T14:37:52.716583+01:00",
+    "nota": "Estilo v3 retirado (Biel, 23/11). No se publica."
+  },
+  {
+    "id": "T06-2-r2",
+    "kind": "reel",
+    "files": [
+      "publicar/media/T06-2-r2-1.mp4",
+      "publicar/media/T06-2-r2-2.jpg"
+    ],
+    "caption": "Por qué tu suplente falla justo cuando le das minutos (y no es por nivel).\n\nToda la temporada con el peto rojo, haciendo de rival para que los blancos ensayen. Defiende lo que pides, ataca lo que pides, pero nunca lo suyo. Cuando por fin entra, hace algo que no ha entrenado nunca. Cambia los petos: cada martes, diez minutos con los blancos y una tarea clara.\n\n(Escena de ejemplo: dorsal, acta y tarea no son de ningún equipo.)\n\n¿En tu cinco contra cinco cambian alguna vez los petos?",
+    "state": "retirada",
+    "ig": {
+      "status": "pendiente"
+    },
+    "tiktok": {
+      "status": "pendiente"
+    },
+    "added": "2026-11-23T14:42:15.745140+01:00",
+    "nota": "Estilo v3 retirado (Biel, 23/11). No se publica."
+  },
+  {
+    "id": "T07-2-r2",
+    "kind": "reel",
+    "files": [
+      "publicar/media/T07-2-r2-1.mp4",
+      "publicar/media/T07-2-r2-2.jpg"
+    ],
+    "caption": "Si tu delantero mete todas el martes y ninguna el sábado, la culpa puede ser de la fila.\n\nEn la fila tira uno y esperan cinco, y nadie le aprieta. El sábado, lo primero que tiene encima es un defensa. Prueba el martes: quita la fila, dos 4 contra 4 con el mismo objetivo, porterías pequeñas y gol solo si llega de pase y tiro. Tú, fuera.\n\n(Escena de ejemplo: marcas y cuentas no son de ningún equipo.)\n\n¿Cuántos tienes esperando en la fila de tu ejercicio de tiro?",
+    "state": "retirada",
+    "ig": {
+      "status": "pendiente"
+    },
+    "tiktok": {
+      "status": "pendiente"
+    },
+    "added": "2026-11-23T15:04:25.401148+01:00",
+    "nota": "Estilo v3 retirado (Biel, 23/11). No se publica."
+  },
+  {
+    "id": "T07-2-r3",
+    "kind": "reel",
+    "files": [
+      "publicar/media/T07-2-r3-1.mp4",
+      "publicar/media/T07-2-r3-2.jpg"
+    ],
+    "caption": "Si tu central no ha pasado del medio en toda la temporada, está aprendiendo solo la mitad del fútbol.\n\nLe pusiste ahí porque el equipo encajaba menos, y funcionó. Pero nunca conduce, nunca regatea y nunca tira. Prueba un 4 contra 4 sin posiciones: si pierdes el balón defienden los cuatro, si lo recuperas atacan los cuatro, y el gol vale doble si han cruzado todos.\n\n(Escena de ejemplo: dorsales y marcador no son de ningún equipo.)\n\n¿Cuántos de tus jugadores no han pisado el otro campo este año?",
+    "state": "retirada",
+    "ig": {
+      "status": "pendiente"
+    },
+    "tiktok": {
+      "status": "pendiente"
+    },
+    "added": "2026-11-23T15:35:46.180923+01:00",
+    "nota": "Estilo v3 retirado (Biel, 23/11). No se publica."
+  },
+  {
+    "id": "v4-E05",
+    "kind": "reel",
+    "files": [
+      "publicar/media/v4-E05.mp4"
+    ],
+    "caption": "Convocatorias, minutos, cargas, notas. Todo a mano, en una libreta llena de flechas.\n\nProTeam lo junta en un solo sitio. Hecha para entrenadores de fútbol, baloncesto y balonmano.\n\n¿Tú dónde lo apuntas todo ahora mismo?\n\nFotos: Giallone · CC BY-SA 3.0 | Steffen Prößdorf · John Martinez Pavliga · Cpl. Anthony C. Ramsey Jr. · CC BY-SA 4.0 / CC BY 2.0 / DP | Jonathan Hutchins · CC BY-SA 2.0\nCapturas reales de ProTeam (datos de ejemplo).\n#entrenadores #fútbol #baloncesto #balonmano",
+    "state": "aprobada",
+    "ig": {
+      "status": "publicada",
+      "when": "2026-11-24T10:45:00+01:00",
+      "ref": "18105090134532971",
+      "at": "2026-11-24T10:43:38.670466+01:00"
+    },
+    "tiktok": {
+      "status": "programada",
+      "via": "metricool",
+      "when": "2026-11-24T19:00:00+01:00"
+    },
+    "added": "2026-11-24T10:28:11.949304+01:00"
+  },
+  {
+    "id": "v4-ED01",
+    "kind": "reel",
+    "files": [
+      "publicar/media/v4-ED01.mp4"
+    ],
+    "caption": "Martes, 19:42. Campo 3.\nNadie graba esto. Nadie lo aplaude.\nY es lo que decide el sábado.\n\n¿Qué es lo que nadie ve de tu semana?\n\nEstamos terminando algo para entrenadores. Síguenos para no perderte nada.\n\nFotos: Cpl. A. C. Ramsey Jr. (DoD, DP) | Walter Mains (DP) | Infrogmation, Matti Blume (CC BY-SA 4.0) | USARJ NCO Corps (CC BY 2.0)\n#entrenadores #fútbolbase #baloncesto",
+    "state": "aprobada",
+    "ig": {
+      "status": "pendiente",
+      "when": "2026-11-26T20:30:00+01:00"
+    },
+    "tiktok": {
+      "status": "programada",
+      "via": "metricool",
+      "when": "2026-11-26T20:30:00+01:00"
+    },
+    "added": "2026-11-24T10:28:12.580313+01:00"
+  },
+  {
+    "id": "v4-E02",
+    "kind": "reel",
+    "files": [
+      "publicar/media/v4-E02.mp4"
+    ],
+    "caption": "Noviembre. 18:30. Ya no hay luz.\nCon lluvia, con seis, con los que vengan: conos, cronómetro, pizarra.\n\nAlgo se está encendiendo.\n\nEstamos terminando algo para entrenadores. Síguenos para no perderte nada.\n\nFotos: Jonathan Hutchins · CC BY-SA 2.0 | U.S. Department of State · DP | Sgt. Aaron Kaczur · R. Henrik Nilsson · MC3 Brennan Knaresboro · DP / CC BY 4.0 | Zac allan · CC BY 3.0\n#entrenadores #fútbolbase",
+    "state": "aprobada",
+    "ig": {
+      "status": "pendiente",
+      "when": "2026-11-27T20:30:00+01:00"
+    },
+    "tiktok": {
+      "status": "programada",
+      "via": "metricool",
+      "when": "2026-11-27T20:30:00+01:00"
+    },
+    "added": "2026-11-24T10:28:12.640748+01:00"
+  },
+  {
+    "id": "v4-E03",
+    "kind": "reel",
+    "files": [
+      "publicar/media/v4-E03.mp4"
+    ],
+    "caption": "Lo que se ve dura noventa minutos.\nLo que no se ve dura toda la semana.\n\nHoy se juega lo que se preparó entre semana. ¿Cuánto te queda para el partido?\n\nEstamos terminando algo para entrenadores. Síguenos para no perderte nada.\n\nFotos: Infrogmation · CC BY-SA 4.0 | Giallone · Steffen Prößdorf · John Martinez Pavliga · CC BY-SA 3.0 / CC BY-SA 4.0 / CC BY 2.0 | USARJ NCO CORPS · CC BY 2.0\n#entrenadores #díadepartido",
+    "state": "aprobada",
+    "ig": {
+      "status": "pendiente",
+      "when": "2026-11-28T20:30:00+01:00"
+    },
+    "tiktok": {
+      "status": "programada",
+      "via": "metricool",
+      "when": "2026-11-28T20:30:00+01:00"
+    },
+    "added": "2026-11-24T10:28:12.694015+01:00"
+  },
+  {
+    "id": "v4-X02",
+    "kind": "reel",
+    "files": [
+      "publicar/media/v4-X02.mp4"
+    ],
+    "caption": "Un toque por acción. Tocas al jugador en la pista, eliges qué ha hecho (tiro, pérdida, 1×1) y desde dónde.\n\nAl pitar el final, el marcador por partes y la eficacia ya están hechos.\n\n¿Quién te apunta las estadísticas en los partidos?\n\nFotos: Steffen Prößdorf · CC BY-SA 4.0 | Infrogmation · CC BY-SA 4.0\nCapturas reales de ProTeam (datos de ejemplo).\n#balonmano #entrenadores #estadísticas",
+    "state": "retirada",
+    "ig": {
+      "status": "pendiente",
+      "when": "2026-11-24T20:30:00+01:00"
+    },
+    "tiktok": {
+      "status": "pendiente"
+    },
+    "added": "2026-11-24T10:47:39.314808+01:00",
+    "nota": "Biel 24/11: no es lo que pidió. Sustituir por explicativos tipo pizarra."
+  },
+  {
+    "id": "v4-X03",
+    "kind": "reel",
+    "files": [
+      "publicar/media/v4-X03.mp4"
+    ],
+    "caption": "Después del partido: el informe por partes y la cronología, cada acción con su minuto.\n\nY el lunes entrenas lo que de verdad pasó, no lo que recuerdas.\n\n¿Repasas el partido el domingo o el lunes?\n\nFotos: Steffen Prößdorf · CC BY-SA 4.0 | John Martinez Pavliga · CC BY 2.0\nCapturas reales de ProTeam (datos de ejemplo).\n#entrenadores #balonmano #análisis",
+    "state": "retirada",
+    "ig": {
+      "status": "pendiente",
+      "when": "2026-11-25T20:30:00+01:00"
+    },
+    "tiktok": {
+      "status": "pendiente"
+    },
+    "added": "2026-11-24T10:47:39.581530+01:00",
+    "nota": "Biel 24/11: no es lo que pidió. Sustituir por explicativos tipo pizarra."
+  },
+  {
+    "id": "v4-X04",
+    "kind": "reel",
+    "files": [
+      "publicar/media/v4-X04.mp4"
+    ],
+    "caption": "Una pregunta al acabar: del 1 al 10, ¿cuánto te ha costado? Esfuerzo × minutos = la carga de cada jugador (RPE de sesión).\n\nCon los tests físicos en el mismo sitio, sabes quién llega fresco al sábado.\n\n¿Mides la carga de tu equipo?\n\nFotos: MC3 Brennan Knaresboro · DP\nCapturas reales de ProTeam (datos de ejemplo).\n#preparaciónfísica #entrenadores #RPE",
+    "state": "retirada",
+    "ig": {
+      "status": "pendiente",
+      "when": "2026-11-26T13:30:00+01:00"
+    },
+    "tiktok": {
+      "status": "pendiente"
+    },
+    "added": "2026-11-24T10:47:39.636744+01:00",
+    "nota": "Biel 24/11: no es lo que pidió. Sustituir por explicativos tipo pizarra."
+  },
+  {
+    "id": "v4-X05",
+    "kind": "reel",
+    "files": [
+      "publicar/media/v4-X05.mp4"
+    ],
+    "caption": "La temporada, semana a semana. Cada semana con su objetivo, sus sesiones y su partido. Rutinas y calendario en el mismo sitio.\n\nCada entreno sabe para qué partido es.\n\n¿Planificas por semanas o sesión a sesión?\n\nFotos: Sgt. Aaron Kaczur · DP | Jonathan Hutchins · CC BY-SA 2.0\nCapturas reales de ProTeam (datos de ejemplo).\n#planificación #entrenadores #temporada",
+    "state": "retirada",
+    "ig": {
+      "status": "pendiente",
+      "when": "2026-11-25T13:30:00+01:00"
+    },
+    "tiktok": {
+      "status": "pendiente"
+    },
+    "added": "2026-11-24T10:47:39.688671+01:00",
+    "nota": "Biel 24/11: no es lo que pidió. Sustituir por explicativos tipo pizarra."
+  },
+  {
+    "id": "v6-a1",
+    "kind": "reel",
+    "files": [
+      "publicar/media/v6-a1.mp4"
+    ],
+    "caption": "Este papel se vendió por un millón de euros. Lo llevaba Jens Lehmann en la media en los penaltis del Mundial 2006 contra Argentina, y lo miraba antes de cada tiro.\n\nTu papel no vale un millón. Pero el sábado vale un partido: una hoja, seis zonas, una raya por cada gol. En el descanso, la zona con más rayas es tu ajuste.\n\n¿Qué apuntas tú en el descanso?\n\nEstamos terminando la app de ProTeam. Síguenos para no perderte nada: muy pronto, novedades.\n\nFotos: Andreas Köpke (DP), ronmacphotos (CC BY 2.0), Steffen Prößdorf (CC BY-SA 4.0). Cifras de la portera: ejemplo.\n#entrenadores #balonmano #fútbol #porteros",
+    "state": "aprobada",
+    "ig": {
+      "status": "publicada",
+      "when": "2026-11-24T20:30:00+01:00",
+      "ref": "17994605051859005",
+      "at": "2026-11-24T21:17:56.069798+01:00"
+    },
+    "tiktok": {
+      "status": "programada",
+      "via": "metricool",
+      "when": "2026-11-24T20:30:00+01:00"
+    },
+    "added": "2026-11-24T14:21:55.601338+01:00"
+  },
+  {
+    "id": "v6-d2",
+    "kind": "reel",
+    "files": [
+      "publicar/media/v6-d2.mp4"
+    ],
+    "caption": "Paró doce. Le marcaron veinte. Y fue el mejor partido de su temporada.\n\nLe tiraron 32 veces: 12 de 32 es su mejor porcentaje del año. Cuenta tiros, no goles. Cada partido, el mismo cálculo, y el lunes se lo enseñas a ella antes que a nadie.\n\nMándaselo a tu portera.\n\nEstamos terminando la app de ProTeam. Síguenos para no perderte nada: muy pronto, novedades.\n\nEscena y cifras de ejemplo (no es un partido real). Fotos: Steffen Prößdorf (CC BY-SA 4.0)\n#balonmano #porteras #entrenadores",
+    "state": "aprobada",
+    "ig": {
+      "status": "pendiente",
+      "when": "2026-11-25T13:30:00+01:00"
+    },
+    "tiktok": {
+      "status": "programada",
+      "via": "metricool",
+      "when": "2026-11-25T13:30:00+01:00"
+    },
+    "added": "2026-11-24T14:21:55.640288+01:00"
+  },
+  {
+    "id": "v6-b2",
+    "kind": "reel",
+    "files": [
+      "publicar/media/v6-b2.mp4"
+    ],
+    "caption": "Tu equipo perdió el sábado y lo podías saber desde el jueves.\n\nAl acabar cada entreno, una pregunta: del 1 al 10, ¿cuánto te ha costado? Multiplícalo por los minutos: 7 × 90 = 630, la carga del día. Tres semanas comparando jueves y sábados y sabrás quién llega roto.\n\nMándaselo a tu segundo.\n\nEstamos terminando la app de ProTeam. Síguenos para no perderte nada: muy pronto, novedades.\n\nCifras de ejemplo. Método: RPE de sesión (Foster et al., 2001). Fotos: Cpl. A. C. Ramsey Jr. (DoD, DP), Steffen Prößdorf (CC BY-SA 4.0)\n#baloncesto #entrenadores #preparaciónfísica",
+    "state": "aprobada",
+    "ig": {
+      "status": "pendiente",
+      "when": "2026-11-25T20:30:00+01:00"
+    },
+    "tiktok": {
+      "status": "programada",
+      "via": "metricool",
+      "when": "2026-11-25T20:30:00+01:00"
+    },
+    "added": "2026-11-24T14:21:55.679844+01:00"
+  },
+  {
+    "id": "v6-c3",
+    "kind": "reel",
+    "files": [
+      "publicar/media/v6-c3.mp4"
+    ],
+    "caption": "El parón de Navidad no dura tres semanas. Dura cuatro.\n\nVuelven después de Reyes con las piernas de agosto, el partido de esa semana ya cuenta y en el segundo entreno llega el primer tirón. Antes de irte, tres cosas: 10 minutos de tarea para los días de fiesta, la primera semana de enero como una pretemporada corta y apunta hoy lo que querrás repasar.\n\nGuárdalo para el último entreno.\n\nEstamos terminando la app de ProTeam. Síguenos para no perderte nada: muy pronto, novedades.\n\nCalendario y cifras de ejemplo. Fotos: NoahRiffe (CC BY 2.0), Kmreykjavik (CC BY-SA 4.0)\n#fútbol #entrenadores #fútbolbase",
+    "state": "aprobada",
+    "ig": {
+      "status": "pendiente",
+      "when": "2026-11-26T13:30:00+01:00"
+    },
+    "tiktok": {
+      "status": "programada",
+      "via": "metricool",
+      "when": "2026-11-26T13:30:00+01:00"
+    },
+    "added": "2026-11-24T14:21:55.719308+01:00"
+  },
+  {
+    "id": "v6-e1",
+    "kind": "reel",
+    "files": [
+      "publicar/media/v6-e1.mp4"
+    ],
+    "caption": "Este martes no puedes ir al entreno. Le pasas el equipo a tu segundo y a los cinco minutos te escribe: «¿Qué toca hoy?».\n\nTodo lo que sabes de tu equipo está en tu cabeza: quién vuelve de lesión, qué trabajasteis el jueves, quién lleva tres semanas sin jugar. Y lo que no está apuntado, el martes no existe.\n\n¿Tu segundo sabría qué toca?\n\nEstamos terminando la app de ProTeam. Síguenos para no perderte nada: muy pronto, novedades.\n\nFotos: Zephyris (CC BY-SA 3.0), Warren LeMay (CC0)\n#entrenadores #fútbolbase #baloncesto #balonmano",
+    "state": "aprobada",
+    "ig": {
+      "status": "pendiente",
+      "when": "2026-11-27T13:30:00+01:00"
+    },
+    "tiktok": {
+      "status": "programada",
+      "via": "metricool",
+      "when": "2026-11-27T13:30:00+01:00"
+    },
+    "added": "2026-11-24T16:51:38.047618+01:00"
+  },
+  {
+    "id": "v6-T09-2-r2",
+    "kind": "reel",
+    "files": [
+      "publicar/media/v6-T09-2-r2.mp4"
+    ],
+    "caption": "En caliente entra el que calienta más cerca. Los cambios se acaban y el catorce vuelve a casa con el peto limpio. En el descanso, escribe tus cambios con su minuto, empezando por el que no ha jugado. En el 53 miras la hoja, no la banda.\n\n(Escena de ejemplo: dorsales y marcadores no son de ningún equipo.)\n\n¿Tus cambios los decides en el descanso o en la banda?\n\nEstamos terminando la app de ProTeam. Síguenos para no perderte nada: muy pronto, novedades.\n\n#entrenadores #fútbolbase #baloncesto #balonmano",
+    "state": "aprobada",
+    "ig": {
+      "status": "pendiente",
+      "when": "2026-11-28T13:30:00+01:00"
+    },
+    "tiktok": {
+      "status": "programada",
+      "via": "metricool",
+      "when": "2026-11-28T13:30:00+01:00"
+    },
+    "added": "2026-11-24T17:50:41.850714+01:00"
+  },
+  {
+    "id": "v6-T05-1-r3",
+    "kind": "reel",
+    "files": [
+      "publicar/media/v6-T05-1-r3.mp4"
+    ],
+    "caption": "Si apuntaste algo el sábado y perdiste igual, no lo tires todavía. Esto le pasó al equipo de «Moneyball».\n\n(Fuentes: MLB.com; Sports Illustrated, 2017.)\n\n¿Qué dejaste de apuntar después de un mal sábado?\n\nEstamos terminando la app de ProTeam. Síguenos para no perderte nada: muy pronto, novedades.\n\n#entrenadores #fútbolbase #baloncesto #balonmano",
+    "state": "aprobada",
+    "ig": {
+      "status": "pendiente",
+      "when": "2026-11-29T13:30:00+01:00"
+    },
+    "tiktok": {
+      "status": "programada",
+      "via": "metricool",
+      "when": "2026-11-29T13:30:00+01:00"
+    },
+    "added": "2026-11-24T17:50:41.926482+01:00"
+  },
+  {
+    "id": "v6-T04-2-r3",
+    "kind": "reel",
+    "files": [
+      "publicar/media/v6-T04-2-r3.mp4"
+    ],
+    "caption": "Apuntó hasta al portero rival en su botella. Esto es lo que puedes copiar con tu portero, aunque no tengas analista.\n\nEn la ida, cada penalti y cada falta del rival: dorsal y lado. En la vuelta, todo a una tira de cinta en la botella de tu portero. Y no solo el nueve: el que menos esperas también tira.\n\n¿Tu portero sabe algo del rival antes del sábado?\n\nEstamos terminando la app de ProTeam. Síguenos para no perderte nada: muy pronto, novedades.\n\n#entrenadores #fútbolbase #baloncesto #balonmano",
+    "state": "aprobada",
+    "ig": {
+      "status": "pendiente",
+      "when": "2026-11-29T20:30:00+01:00"
+    },
+    "tiktok": {
+      "status": "programada",
+      "via": "metricool",
+      "when": "2026-11-29T20:30:00+01:00"
+    },
+    "added": "2026-11-24T17:50:42.002169+01:00"
+  },
+  {
+    "id": "v6-T02-2-r3",
+    "kind": "reel",
+    "files": [
+      "publicar/media/v6-T02-2-r3.mp4"
+    ],
+    "caption": "Si el viernes acabas entrenando noventa minutos, el problema empezó el martes.\n\nMartes, balón suave y corregir jugando. Miércoles, lo duro. Viernes, corto. En un equipo de la Premier estudiado en 2016, el día más suave era la víspera.\n\n¿Cuánto os dura el entreno del viernes?\n\nEstamos terminando la app de ProTeam. Síguenos para no perderte nada: muy pronto, novedades.\n\n#entrenadores #fútbolbase #baloncesto #balonmano",
+    "state": "aprobada",
+    "ig": {
+      "status": "pendiente",
+      "when": "2026-11-30T13:30:00+01:00"
+    },
+    "tiktok": {
+      "status": "programada",
+      "via": "metricool",
+      "when": "2026-11-30T13:30:00+01:00"
+    },
+    "added": "2026-11-24T17:50:42.079229+01:00"
+  },
+  {
+    "id": "v6-T06-2-r3",
+    "kind": "reel",
+    "files": [
+      "publicar/media/v6-T06-2-r3.mp4"
+    ],
+    "caption": "Entra en el minuto 40. Primer balón: pasos. Segundo: lo pierde. Y lo vuelves a sentar antes del 45.\n\nNo le faltaba nivel. Le faltaba estar dentro del partido mientras estaba fuera. Antes del partido, dale una cosa que mirar desde el banquillo (el pivote rival, por ejemplo) y que la apunte. Entrará sabiéndolo.\n\n¿Qué les pides a los que empiezan en el banquillo?\n\n(Escena de ejemplo.)\n\nEstamos terminando la app de ProTeam. Síguenos para no perderte nada: muy pronto, novedades.\n\n#entrenadores #balonmano #baloncesto #fútbolbase\n",
+    "state": "aprobada",
+    "ig": {
+      "status": "pendiente",
+      "when": "2026-11-30T20:30:00+01:00"
+    },
+    "tiktok": {
+      "status": "programada",
+      "via": "metricool",
+      "when": "2026-11-30T20:30:00+01:00"
+    },
+    "added": "2026-11-24T17:50:42.153472+01:00"
+  },
+  {
+    "id": "v6-T07-2-r3",
+    "kind": "reel",
+    "files": [
+      "publicar/media/v6-T07-2-r3.mp4"
+    ],
+    "caption": "Si tu central no ha pasado del medio en toda la temporada, está aprendiendo solo la mitad del fútbol.\n\nLe pusiste ahí porque el equipo encajaba menos, y funcionó. Pero nunca conduce, nunca regatea y nunca tira. Prueba un 4 contra 4 sin posiciones: si pierdes el balón defienden los cuatro, si lo recuperas atacan los cuatro, y el gol vale doble si han cruzado todos.\n\n(Escena de ejemplo: dorsales y marcador no son de ningún equipo.)\n\n¿Cuántos de tus jugadores no han pisado el otro campo este año?\n\nEstamos terminando la app de ProTeam. Síguenos para no perderte nada: muy pronto, novedades.\n\n#entrenadores #fútbolbase #baloncesto #balonmano",
+    "state": "aprobada",
+    "ig": {
+      "status": "pendiente",
+      "when": "2026-12-01T13:30:00+01:00"
+    },
+    "tiktok": {
+      "status": "programada",
+      "via": "metricool",
+      "when": "2026-12-01T13:30:00+01:00"
+    },
+    "added": "2026-11-24T17:50:42.224331+01:00"
+  },
+  {
+    "id": "v6-T01-4-r3",
+    "kind": "reel",
+    "files": [
+      "publicar/media/v6-T01-4-r3.mp4"
+    ],
+    "caption": "Tener libreta no basta. Prepárala antes y en el descanso sabrás qué cambiar.\n\nEn un estudio con ocho entrenadores titulados, que podían tomar notas, recordaron de media el 59 % de lo importante de un primer tiempo.\n\nEn casa, seis casillas. En el campo, solo rayas. En el descanso, lees la más llena antes de hablar.\n\n(Laird y Waters, 2008, IJPAS.)\n\n¿Qué pone tu libreta del último partido?\n\nEstamos terminando la app de ProTeam. Síguenos para no perderte nada: muy pronto, novedades.\n\n#entrenadores #fútbolbase #baloncesto #balonmano",
+    "state": "aprobada",
+    "ig": {
+      "status": "pendiente",
+      "when": "2026-12-01T20:30:00+01:00"
+    },
+    "tiktok": {
+      "status": "programada",
+      "via": "metricool",
+      "when": "2026-12-01T20:30:00+01:00"
+    },
+    "added": "2026-11-24T17:50:42.295667+01:00"
+  },
+  {
+    "id": "v6-T09-1-r3",
+    "kind": "reel",
+    "files": [
+      "publicar/media/v6-T09-1-r3.mp4"
+    ],
+    "caption": "Si algo se repite tres veces antes del minuto quince, ya no es casualidad.\n\n(Escena de ejemplo.)\n\n¿Qué se te repitió el sábado antes del quince?\n\nEstamos terminando la app de ProTeam. Síguenos para no perderte nada: muy pronto, novedades.\n\n#entrenadores #fútbolbase #baloncesto #balonmano",
+    "state": "aprobada",
+    "ig": {
+      "status": "pendiente",
+      "when": "2026-12-02T13:30:00+01:00"
+    },
+    "tiktok": {
+      "status": "programada",
+      "via": "metricool",
+      "when": "2026-12-02T13:30:00+01:00"
+    },
+    "added": "2026-11-24T17:50:42.371037+01:00"
+  },
+  {
+    "id": "v6-T05-2-r3",
+    "kind": "reel",
+    "files": [
+      "publicar/media/v6-T05-2-r3.mp4"
+    ],
+    "caption": "Si pierdes 1-3 y los tres goles empiezan en tu área, entrenar tiros el martes no lo arregla.\n\nEl acta solo dice 1-3. No dice dónde perdiste la pelota. Tres columnas en la libreta: tiros en contra, pérdidas en tu campo y balones parados en contra. Una raya por acción. Si gana la de pérdidas, el martes toca salida con tres apoyos. Lo que no cuentas, no lo entrenas.\n\n(Escena de ejemplo: las cifras no son de ningún equipo.)\n\n¿Tu equipo sale jugando desde el portero?\n\nEstamos terminando la app de ProTeam. Síguenos para no perderte nada: muy pronto, novedades.\n\n#entrenadores #fútbolbase #baloncesto #balonmano",
+    "state": "aprobada",
+    "ig": {
+      "status": "pendiente",
+      "when": "2026-12-02T20:30:00+01:00"
+    },
+    "tiktok": {
+      "status": "programada",
+      "via": "metricool",
+      "when": "2026-12-02T20:30:00+01:00"
+    },
+    "added": "2026-11-24T17:50:42.443131+01:00"
+  },
+  {
+    "id": "v6-T06-1-r2",
+    "kind": "reel",
+    "files": [
+      "publicar/media/v6-T06-1-r2.mp4"
+    ],
+    "caption": "Hay dos palabras que tus jugadores casi nunca te oyen decir.\n\n(Escena de ejemplo.)\n\n¿A quién de tu equipo le debes hoy un «bien hecho»?\n\nEstamos terminando la app de ProTeam. Síguenos para no perderte nada: muy pronto, novedades.\n\n#entrenadores #fútbolbase #baloncesto #balonmano",
+    "state": "aprobada",
+    "ig": {
+      "status": "pendiente",
+      "when": "2026-12-03T13:30:00+01:00"
+    },
+    "tiktok": {
+      "status": "programada",
+      "via": "metricool",
+      "when": "2026-12-03T13:30:00+01:00"
+    },
+    "added": "2026-11-24T17:50:42.517583+01:00"
+  },
+  {
+    "id": "v6-T01-3-r3",
+    "kind": "reel",
+    "files": [
+      "publicar/media/v6-T01-3-r3.mp4"
+    ],
+    "caption": "La primera posesión del tercer cuarto se decide en el vestuario. Así se prepara en el descanso.\n\nLlegas con cinco jugadas nuevas, la hoja de estadística y un base que pregunta qué hace si le encierran. Cuando llegas a lo importante, ya están llamando.\n\nEn el descanso no se inventa: se elige. La respuesta a la trampa (quién ayuda y adónde va el balón) y la primera posesión, decidida.\n\n(Descanso de quince minutos: reglamento FIBA, art. 8.4.)\n\n¿Tú llevas la primera posesión del tercer cuarto decidida?\n\nEstamos terminando la app de ProTeam. Síguenos para no perderte nada: muy pronto, novedades.\n\n#entrenadores #fútbolbase #baloncesto #balonmano",
+    "state": "aprobada",
+    "ig": {
+      "status": "pendiente",
+      "when": "2026-12-03T20:30:00+01:00"
+    },
+    "tiktok": {
+      "status": "programada",
+      "via": "metricool",
+      "when": "2026-12-03T20:30:00+01:00"
+    },
+    "added": "2026-11-24T17:50:42.593474+01:00"
+  },
+  {
+    "id": "v6-T01-5-r3",
+    "kind": "reel",
+    "files": [
+      "publicar/media/v6-T01-5-r3.mp4"
+    ],
+    "caption": "El penalti que no os pitaron: tres minutos de eso y ni una palabra de por dónde os están llegando.\n\nEs más fácil hablar del árbitro que de la banda que os está costando el partido. Antes del partido, dale a tu segundo tres preguntas para el camino del vestuario: ¿por dónde nos hacen daño?, ¿quién ya no llega?, ¿qué han cambiado ellos? Lo del árbitro, al final.\n\n¿De qué hablas primero en el descanso?\n\n(Escena de ejemplo.)\n\nEstamos terminando la app de ProTeam. Síguenos para no perderte nada: muy pronto, novedades.\n\n#entrenadores #fútbolbase #fútbol\n",
+    "state": "aprobada",
+    "ig": {
+      "status": "pendiente",
+      "when": "2026-12-04T13:30:00+01:00"
+    },
+    "tiktok": {
+      "status": "programada",
+      "via": "metricool",
+      "when": "2026-12-04T13:30:00+01:00"
+    },
+    "added": "2026-11-24T17:50:42.666482+01:00"
+  },
+  {
+    "id": "v6-T01-2-r1",
+    "kind": "reel",
+    "files": [
+      "publicar/media/v6-T01-2-r1.mp4"
+    ],
+    "caption": "La pizarra de la remontada de Estambul tenía un hueco. Y te enseña a preparar tu descanso.\n\nAl descanso de la final de 2005, el Liverpool perdía 3-0. En quince minutos se cambió el sistema y el once corregido de la pizarra se olvidaba de un jugador (lo cuenta Balls.ie; más detalles en LFC.com).\n\n¿Tú llevas el plan B escrito o lo improvisas?\n\nEstamos terminando la app de ProTeam. Síguenos para no perderte nada: muy pronto, novedades.\n\n#entrenadores #fútbolbase #baloncesto #balonmano",
+    "state": "aprobada",
+    "ig": {
+      "status": "pendiente",
+      "when": "2026-12-04T20:30:00+01:00"
+    },
+    "tiktok": {
+      "status": "programada",
+      "via": "metricool",
+      "when": "2026-12-04T20:30:00+01:00"
+    },
+    "added": "2026-11-24T17:50:42.738606+01:00"
+  },
+  {
+    "id": "v6-T01-6-r1",
+    "kind": "reel",
+    "files": [
+      "publicar/media/v6-T01-6-r1.mp4"
+    ],
+    "caption": "Klopp cambió el sistema entero en mitad de una semifinal. Y luego dijo: «Ese fue nuestro error».\n\nFuentes: FourFourTwo y Sky Sports, enero de 2017.\n\n¿Tienes un plan B ensayado o lo improvisas en la banda?\n\nEstamos terminando la app de ProTeam. Síguenos para no perderte nada: muy pronto, novedades.\n\n#entrenadores #fútbolbase #baloncesto #balonmano",
+    "state": "aprobada",
+    "ig": {
+      "status": "pendiente",
+      "when": "2026-12-05T13:30:00+01:00"
+    },
+    "tiktok": {
+      "status": "programada",
+      "via": "metricool",
+      "when": "2026-12-05T13:30:00+01:00"
+    },
+    "added": "2026-11-24T17:50:42.826845+01:00"
+  },
+  {
+    "id": "v6-T01-1-r3",
+    "kind": "reel",
+    "files": [
+      "publicar/media/v6-T01-1-r3.mp4"
+    ],
+    "caption": "Tu primera vuelta ya es una base de datos. Solo falta apuntarla.\n\nPara el papel de Lehmann en el Mundial 2006 se usó una base de 13.000 penaltis. Aun así, el que más le hizo falta parar, Cambiasso, no estaba en la lista: se lo paró por un partido del Inter que había visto.\n\nTú ya has visto a cada rival una vez. Al acabar, tres líneas: el peligroso, la banda y el balón parado. Las lees la semana que vuelves a jugar contra él.\n\n(Fuente: FIFA, 6/7/2016. Foto: ronmacphotos, CC BY 2.0.)\n\n¿Contra quién vuelves a jugar este mes?\n\nEstamos terminando la app de ProTeam. Síguenos para no perderte nada: muy pronto, novedades.\n\n#entrenadores #fútbolbase #baloncesto #balonmano",
+    "state": "aprobada",
+    "ig": {
+      "status": "pendiente",
+      "when": "2026-12-05T20:30:00+01:00"
+    },
+    "tiktok": {
+      "status": "programada",
+      "via": "metricool",
+      "when": "2026-12-05T20:30:00+01:00"
+    },
+    "added": "2026-11-24T17:50:42.901275+01:00"
+  },
+  {
+    "id": "v7-bielsa",
+    "kind": "reel",
+    "files": [
+      "https://d2ol7oe51mr4n9.cloudfront.net/user_3M2z7lIyzIPYtjNHcxRWFNk6wi7/c6a106df-1535-40ca-addc-fb962369f950.mp4"
+    ],
+    "caption": "Le acusaron de espiar. Y respondió con un PowerPoint.\n\nLeeds, 16 de enero de 2019. Bielsa convocó una rueda de prensa de 70 minutos y proyectó su análisis del Derby County: 51 partidos vistos, unas cuatro horas de trabajo por cada uno.\n\nNo era una manía. Era su método.\n\n¿Cuántas horas le dedicas tú a preparar al rival?\n\nEstamos terminando la app de ProTeam. Síguenos para no perderte nada: muy pronto, novedades.\n\nFuentes: Yorkshire Evening Post, Sky Sports. Fotos (Wikimedia Commons): Newell's Old Boys (CC BY 3.0), Alejandro Vásquez Núñez (CC BY 2.0), Mathieu from Marseille (CC BY-SA 2.0). Música y efectos: Epidemic Sound.\n\n#entrenadores #fútbolbase #bielsa #análisistáctico #baloncesto #balonmano",
+    "state": "aprobada",
+    "ig": {
+      "status": "pendiente",
+      "when": "2026-11-25T18:00:00+01:00"
+    },
+    "tiktok": {
+      "status": "programada",
+      "via": "metricool",
+      "when": "2026-11-25T18:00:00+01:00",
+      "metricoolId": 440791811
+    },
+    "added": "2026-11-24T20:40:00+01:00",
+    "nota": "v7 photo story; vídeo final mezclado en Higgsfield (música/SFX Epidemic Sound). Copia sin audio en tools/reel_v7/bielsa/video3_mudo.mp4"
+  },
+  {
+    "id": "v7-peor-verano-2003",
+    "kind": "reel",
+    "files": [
+      "https://d2ol7oe51mr4n9.cloudfront.net/user_3M2z7lIyzIPYtjNHcxRWFNk6wi7/73210ea1-d4b1-4bfb-8aaf-4e15a2b71a04.mp4"
+    ],
+    "caption": "Tres semanas sin meter un tiro fuera de la zona. Le pasó a Stephen Curry con 15 años.\n\nVerano de 2003, Charlotte. Tiraba desde abajo, como una catapulta, y su padre, Dell, le hizo subir el balón por encima de la cabeza. Curry lo contó después: estuvo así de mal mes y medio. «El peor verano de mi vida». Hoy nadie ha metido más triples en la NBA.\n\nPara tu equipo: cuando corrijas el tiro a un jugador, va a fallar más durante un tiempo. Avísale antes. Y esas semanas, no cuentes canastas: cuenta cuántas veces el balón sube bien.\n\n¿Has cambiado alguna vez el tiro a un jugador? ¿Cuánto tardó en volver a meterla?\n\nEstamos terminando la app de ProTeam. Síguenos para no perderte nada: muy pronto, novedades.\n\nFuentes: Sports Illustrated, The Ringer, ESPN, NBA.com, CBS Sports. Fotos (Wikimedia Commons): Michael Barera (CC BY-SA 4.0) y Diario de Madrid (CC BY 4.0). Siluetas y pizarras: recreación. Música y efectos: Epidemic Sound.\n\n#entrenadores #baloncesto #baloncestobase #tiro #stephencurry #formacion",
+    "state": "aprobada",
+    "ig": {
+      "status": "pendiente",
+      "when": "2026-11-26T18:00:00+01:00"
+    },
+    "tiktok": {
+      "status": "pendiente"
+    },
+    "added": "2026-11-24T21:45:00+01:00",
+    "nota": "v7 historia con fotos (montaje de v6-peor-verano-2003, voz recortada a 21 s). Música y SFX Epidemic Sound mezclados en Higgsfield. Copia sin audio en tools/reel_v7/peor-verano-2003/video_mudo.mp4"
+  },
+  {
+    "id": "v7-boot-room-anfield",
+    "kind": "reel",
+    "files": [
+      "https://d2ol7oe51mr4n9.cloudfront.net/user_3M2z7lIyzIPYtjNHcxRWFNk6wi7/ce012177-15b6-4ec0-8433-e060bbaced1f.mp4"
+    ],
+    "caption": "El cuarto más famoso de Anfield guardaba botas.\n\nEn el Boot Room del Liverpool cabían unas seis personas, entre cajas de cerveza. Allí se reunía el cuerpo técnico desde la llegada de Bill Shankly en 1959. Según Kenny Dalglish, cada día escribían en libros grandes quién había entrenado y quién estaba lesionado. Los guardaban Ronnie Moran y Joe Fagan, y cuando el equipo pasaba un mal momento, los abrían: la «Boot Room bible» (This Is Anfield; Liverpool FC).\n\nY tú, ¿qué escribes después de cada entreno?\n\nEstamos terminando la app de ProTeam. Síguenos para no perderte nada: muy pronto, novedades.\n\nFuentes: This Is Anfield, Liverpool FC, Wikipedia. Fotos: Rodhullandemu (CC BY-SA 4.0) y Eskil Malmberg (dominio público), vía Wikimedia Commons. Cuarto, libro y cajas: recreación.\nMúsica y efectos: Epidemic Sound\n\n#entrenador #entrenadordefutbol #futbolbase #fútbol #historiadelfutbol #Liverpool #BootRoom #metodologia #ProTeam",
+    "state": "aprobada",
+    "ig": {
+      "status": "pendiente",
+      "when": "2026-11-27T18:00:00+01:00"
+    },
+    "tiktok": {
+      "status": "pendiente"
+    },
+    "added": "2026-11-24T22:20:00+01:00",
+    "nota": "v7 historia con fotos (guion de Dani A). Voz 21 s (ElevenLabs eleven_v4, Mateo). Música y SFX Epidemic Sound mezclados en Higgsfield (tools/reel_v7/boot-room-anfield/mix.py). Montaje: Marta B (02)."
+  },
+  {
+    "id": "v7-golpe-ciento-uno-spurs",
+    "kind": "reel",
+    "files": [
+      "https://d2ol7oe51mr4n9.cloudfront.net/user_3M2z7lIyzIPYtjNHcxRWFNk6wi7/f035264d-d401-4da8-9621-306021b0c5c3.mp4"
+    ],
+    "caption": "Los Spurs colgaron la misma frase en cinco idiomas.\n\nEn el pasillo del vestuario de los San Antonio Spurs estaba en español, francés, portugués y latín, y en inglés junto a la taquilla de Tim Duncan (Bleacher Report, 2014). Es de Jacob Riis (1901): un cantero golpea su piedra quizá cien veces sin una grieta, y al golpe ciento uno se parte en dos. Gregg Popovich la convirtió en el lema del equipo desde los noventa (CBS Sports, 2013; Grind City Media, 2019).\n\n¿Cuál es el golpe ciento uno que tu equipo todavía no ha dado?\n\nEstamos terminando la app de ProTeam. Síguenos para no perderte nada: muy pronto, novedades.\n\nFuentes: Bleacher Report, CBS Sports, Grind City Media; J. A. Riis, «The Making of an American» (1901). Fotos: Keith Allison y Mike (CC BY-SA 2.0), J. W. Chapman-Taylor y Library of Congress (dominio público), vía Wikimedia Commons. Taquillas, cartelas, piedra y contador: recreación.\nMúsica y efectos: Epidemic Sound\n\n#entrenador #entrenadordebaloncesto #baloncesto #basket #NBA #Spurs #Popovich #constancia #metodologia #ProTeam",
+    "state": "aprobada",
+    "ig": {
+      "status": "pendiente",
+      "when": "2026-11-28T18:00:00+01:00"
+    },
+    "tiktok": {
+      "status": "pendiente"
+    },
+    "added": "2026-11-24T22:40:00+01:00",
+    "nota": "v7 historia con fotos (guion de Dani B). Voz 17,6 s (ElevenLabs eleven_v4, Mateo). Música y SFX Epidemic Sound mezclados en Higgsfield (tools/reel_v7/v7-golpe-ciento-uno-spurs/mix.py). Montaje: Marta A (02)."
+  },
+  {
+    "id": "v7-jinete-sacchi",
+    "kind": "reel",
+    "files": [
+      "https://d2ol7oe51mr4n9.cloudfront.net/user_3M2z7lIyzIPYtjNHcxRWFNk6wi7/094a2436-4f77-496a-8ed2-5719cdfc7fe3.mp4"
+    ],
+    "caption": "Arrigo Sacchi vendía zapatos antes de ganar dos Copas de Europa.\n\nNunca fue futbolista profesional y trabajó años en el negocio de zapatos de su padre. En la Copa de Italia 1986-87, su Parma, recién subido a la Serie B, ganó dos veces al Milan, y en 1987 Berlusconi lo fichó. Cuando la prensa le reprochó que no había sido jugador, respondió: «No sabía que, para ser jinete, antes había que ser caballo» (FIFA; Wikipedia). Con el Milan ganó la Copa de Europa en 1989 y en 1990.\n\n¿Te han dicho alguna vez que para entrenar hay que haber jugado?\n\nEstamos terminando la app de ProTeam. Síguenos para no perderte nada: muy pronto, novedades.\n\nFuentes: FIFA, Wikipedia, The Set Pieces. Fotos: Elena Torre (CC BY-SA 2.0), Vincenzo.togni (CC BY-SA 4.0), Vasil Evlogiev (CC BY-SA 4.0) y postal de Fusignano (dominio público), vía Wikimedia Commons. Zapatos, fichas, cuadro y portadas: recreación.\nMúsica y efectos: Epidemic Sound\n\n#entrenador #entrenadordefutbol #futbolbase #fútbol #historiadelfutbol #Sacchi #Milan #metodologia #ProTeam",
+    "state": "revisión",
+    "ig": {
+      "status": "pendiente"
+    },
+    "tiktok": {
+      "status": "pendiente"
+    },
+    "added": "2026-11-24T23:10:00+01:00",
+    "nota": "v7 historia con fotos (guion de Dani A). Voz 21,7 s (ElevenLabs eleven_v4, Mateo, 1 toma). Música y SFX Epidemic Sound mezclados en Higgsfield (tools/reel_v7/v7-jinete-sacchi/mix.py). Montaje: Marta B (02)."
+  },
+  {
+    "id": "v7-red-valvano-1983",
+    "kind": "reel",
+    "files": [
+      "https://d2ol7oe51mr4n9.cloudfront.net/user_3M2z7lIyzIPYtjNHcxRWFNk6wi7/23908ce6-d1b7-4204-be3b-fd577f87685e.mp4"
+    ],
+    "caption": "Jim Valvano hizo que su equipo cortara la red antes de ganar nada.\n\nAl empezar la temporada, el entrenador de NC State llevó unas tijeras al entrenamiento: sus jugadores subieron a la escalera, cortaron la red y celebraron como si ya fueran campeones (V Foundation, a partir del documental «Survive and Advance» de ESPN; testimonio de Thurl Bailey en LDS Living). En la final de la NCAA del 4 de abril de 1983, contra el Houston de Olajuwon y Drexler, número uno con 26 victorias seguidas, Lorenzo Charles machacó sobre la bocina: 54-52. Y volvieron a cortar la red, esta vez de verdad (The News & Observer).\n\n¿Tu equipo ha ensayado alguna vez cómo celebraría ganar?\n\nEstamos terminando la app de ProTeam. Síguenos para no perderte nada: muy pronto, novedades.\n\nFuentes: V Foundation, The News & Observer, LDS Living, Wikipedia. Fotos: Duke Chronicle (incluida una de Jonathan Wroblewski) y Greenstrat, dominio público, vía Wikimedia Commons. Tijeras, escalera, aro y marcador: recreación.\nMúsica y efectos: Epidemic Sound\n\n#entrenador #entrenadordebaloncesto #baloncesto #basket #NCAA #Valvano #historiadelbaloncesto #mentalidad #ProTeam",
+    "state": "revisión",
+    "ig": {
+      "status": "pendiente"
+    },
+    "tiktok": {
+      "status": "pendiente"
+    },
+    "added": "2026-11-24T23:45:00+01:00",
+    "nota": "v7 historia con fotos (guion de Dani B). Voz 22,0 s (ElevenLabs eleven_v4, Mateo, 1 toma, 54 palabras). Música y SFX Epidemic Sound mezclados en Higgsfield (tools/reel_v7/v7-red-valvano-1983/mix.py). Montaje: Marta A (02)."
+  },
+  {
+    "id": "v7-parada-arsenal-chapman",
+    "kind": "reel",
+    "files": [
+      "https://d2ol7oe51mr4n9.cloudfront.net/user_3M2z7lIyzIPYtjNHcxRWFNk6wi7/a2b77a54-7051-4185-b960-0003f005ebd3.mp4"
+    ],
+    "caption": "Un entrenador consiguió que el metro de Londres cambiara de nombre.\n\nLa parada junto al estadio del Arsenal se llamaba Gillespie Road. Herbert Chapman, su entrenador, presionó durante meses: «¿Quién ha oído hablar de Gillespie Road? Aquí todo es Arsenal» (Arsenal.com). El 31 de octubre de 1932 la estación pasó a llamarse Arsenal, y las baldosas del andén todavía conservan el nombre antiguo (Wikipedia; English Heritage).\n\n¿Qué haces tú para que tu equipo empiece a sentirse equipo antes de pisar el campo?\n\nEstamos terminando la app de ProTeam. Síguenos para no perderte nada: muy pronto, novedades.\n\nFuentes: Arsenal.com, Wikipedia, English Heritage. Fotos: retrato de Herbert Chapman (dominio público), Qwghlm (CC BY-SA 3.0), Christopher Hilton (CC BY-SA 2.0) y Sunil060902 (CC BY-SA 3.0), vía Wikimedia Commons. Plano, cartas, billete, mapa y cartel: recreación.\nMúsica y efectos: Epidemic Sound\n\n#entrenador #entrenadordefutbol #futbolbase #fútbol #historiadelfutbol #Arsenal #HerbertChapman #identidad #ProTeam",
+    "state": "revisión",
+    "ig": {
+      "status": "pendiente"
+    },
+    "tiktok": {
+      "status": "pendiente"
+    },
+    "added": "2026-11-25T00:05:00+01:00",
+    "nota": "v7 historia con fotos (guion de Dani A, agencia/fabrica-v7/guiones/v7-parada-arsenal-chapman.md); montaje Marta B; tools/reel_v7/v7-parada-arsenal-chapman/. 28,9 s (23,3 s de historia + cierre común)."
+  }
 ]

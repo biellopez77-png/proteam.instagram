@@ -15,3 +15,7 @@ Recortes y B/N con solo el azul (tools/reel_v7/bielsa/grade.py) = obras derivada
 Dibujados y rotulados «recreación»: plano de calles con estadio y círculo genérico (sin logotipo oficial), cartas, calendario, billete, mapa de línea y cartel. Sin escudo del Arsenal.
 
 Ultravioleta #8B5CF6 una sola vez: «CAMPO».
+
+Música y efectos (Epidemic Sound, vía Higgsfield): «Musical, Loop, Orchestra, Piano, Choir, Sentimental» (una sola pista, primeros 29 s; distinta de la del último v7); «Swooshes, Whoosh, Soft, Clean»; «Paper, Friction, Sheet, Laminated, Slide On Wooden Table»; «Objects, Writing, Whiteboard Marker, Writing 01»; «Trains, Subway, Metro, Subway Pass Distant 02» (metro lejano y eco de andén, muy bajos); «Paper, Impact, Paper, Bill, Letter, Put Down On Pile Of Others»; «Objects, Book, Flip Page»; «Office Supplies, Rubber Stamp, Document 01»; «Metal, Impact, License Plate, Down On Surface». Mezcla: mix.py (voz −19, música −31 con ducking; resultado voz −19,0, música −33,4, sfx −34,7, pico 0,90).
+
+Vídeo final: https://d2ol7oe51mr4n9.cloudfront.net/user_3M2z7lIyzIPYtjNHcxRWFNk6wi7/a2b77a54-7051-4185-b960-0003f005ebd3.mp4 (28,9 s: 23,3 s de historia + cierre común; comprobado con whisper: se oyen las 55 palabras).
