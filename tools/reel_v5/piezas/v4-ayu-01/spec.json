@@ -1,0 +1,24 @@
+{
+ "titulo": "La pizarra en blanco",
+ "fase": "Ayuda y conexión · mar 8/12",
+ "tono": 54,
+ "paginas": [
+  {"tipo": "palabra", "d": 2.5, "palabra": "PIZARRA", "size": 190, "left": 36, "cruce": 30,
+   "foto": "STAFF_PIZARRA_TIEMPO_MUERTO_FOTO_001",
+   "fig": "Fig. 1 — Hoy la escribís vosotros", "hora": "Martes · Sin entreno"},
+  {"tipo": "reticula", "d": 3.3, "letras": "LUN\nMIÉ\nSÁB",
+   "figs": [
+    {"foto": "STAFF_TRABAJO_FOTO_003", "lab": "Fig. 2 — Planificar la semana"},
+    {"foto": "STAFF_TRABAJO_FOTO_007", "lab": "Fig. 3 — Apuntar los minutos"},
+    {"foto": "OBJETO_GENERAL_FOTO_001", "lab": "Fig. 4 — Cerrar la convocatoria"}
+   ]},
+  {"tipo": "frase", "d": 3.6, "foto": "ENTRENADOR_TIEMPO_MUERTO_PIZARRA_FOTO_001",
+   "pre": "Una pregunta:", "preSize": 44,
+   "serif": "¿qué te quita\nmás tiempo?", "uv": true, "size": 130, "uvTop": 1475},
+  {"tipo": "dentro", "d": 2.6, "palabra": "TU TURNO", "size": 200,
+   "foto": "EQUIPO_PINA_CENITAL_FOTO_001",
+   "serif": "la tiza es tuya.", "capSize": 40,
+   "cap": "Contesta en comentarios.\nCon una línea basta."},
+  {"tipo": "cierre", "d": 1.9, "serif": "para el que tiene algo que contar."}
+ ]
+}
