@@ -1,0 +1,61 @@
+{
+ "titulo": "Visto",
+ "fase": "Problema · mié 2/12",
+ "tono": 48,
+ "paginas": [
+  {
+   "tipo": "palabra",
+   "d": 2.5,
+   "palabra": "VISTO",
+   "foto": "ENTRENADOR_BANDA_FOTO_001",
+   "fig": "Fig. 1 — La convocatoria, en el grupo",
+   "hora": "Jueves · 22:10 · Nadie contesta",
+   "size": 240,
+   "left": 40,
+   "cruce": 36,
+   "capSize": 36
+  },
+  {
+   "tipo": "portada",
+   "d": 2.8,
+   "l1": "¿QUIÉN",
+   "serif": "viene el",
+   "l2": "SÁBADO?",
+   "fotos": [
+    "JUGADOR_DISPARO_FOTO_001",
+    "JUGADOR_REGATE_FOTO_001",
+    "EQUIPO_PINA_FOTO_002"
+   ],
+   "cap": "Uno pregunta la hora. Otro, si hay peto. El resto, visto.",
+   "size": 150,
+   "capSize": 38
+  },
+  {
+   "tipo": "dentro",
+   "d": 2.6,
+   "palabra": "VIERNES",
+   "size": 225,
+   "foto": "STAFF_TRABAJO_FOTO_007",
+   "serif": "y aún preguntas.",
+   "cap": "Un audio. Una llamada.\nOtro mensaje al grupo.",
+   "capSize": 40
+  },
+  {
+   "tipo": "frase",
+   "d": 3.6,
+   "foto": "INSTALACION_ESTADIO_PEQUENO_VACIO_FOTO_001",
+   "pos": "50% 50%",
+   "pre": "La convocatoria no se pierde.",
+   "serif": "Se ahoga en\nel grupo.",
+   "uv": true,
+   "size": 130,
+   "uvTop": 1475,
+   "preSize": 42
+  },
+  {
+   "tipo": "cierre",
+   "d": 2.1,
+   "serif": "para el que convoca cada semana."
+  }
+ ]
+}
