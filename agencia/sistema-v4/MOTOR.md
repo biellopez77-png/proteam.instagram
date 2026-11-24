@@ -32,3 +32,18 @@
 
 ## Reglas de texto
 Español de España, frases cortas, nada de precio, nunca cifras de apuntados, nada inventado, sin el nombre de Biel. Calentamiento (26–28/11): ni app ni fecha.
+
+## Láminas: carruseles y Stories (Clara, 24/11)
+Las láminas son páginas de la misma revista que el reel: mismos colores, fuentes, duotono, grano, folio arriba («ProTeam — Nº 00 · p. 0X») y crédito de la foto abajo.
+1. Fuentes en `agencia/fabrica-v4/carruseles/<ID>/`: `carrusel.json` (1080×1350) y `stories.json` (1080×1920), `{"numero","seccion","formato":"carrusel"|"story","laminas":[…]}`.
+2. Tipos (`tools/reel_v5/motor/lamina.html`):
+   - `palabra` {palabra, foto, fig, hora, serif?, size, left} — lámina 1: palabra gigante recortada sobre la foto.
+   - `dentro` {palabra, foto, serif, cap, size, top} — la foto dentro de las letras.
+   - `figuras` {letras, figs:[3×{foto, lab}]} — retícula de tres figuras con pie.
+   - `frase` {foto, pre, serif, uv?, size, pos, uvW} — foto a sangre + frase serif. **`uv:true` en una sola lámina** (el script lo comprueba).
+   - `portada` {l1, serif, l2, fotos:[3], cap, size} — titular a doble página.
+   - `final` {cap, serif, big, bigLines, lista:[…], firma} — qué se lleva el entrenador.
+   - `pregunta` {foto, cap, big, serif, size} — Story: pregunta escrita como titular.
+   - `encuesta` {pre, big, serif, foto?, size} — Story: titular arriba y hueco limpio para pegar el sticker a mano.
+3. Render: `python3 tools/reel_v5/motor/lamina.py <ID> --hoja` → `png/<ID>-c1.png…`, `-s1.png`, `-s2.png` y `hoja.png` (todas a 360 px de ancho, tamaño móvil). Mira la hoja antes de subir: palabras que no se leen, texto que se pisa, folio tapado por la foto.
+4. Máximo 5–8 palabras grandes por lámina. Mismas reglas de texto y de licencias que el reel.
