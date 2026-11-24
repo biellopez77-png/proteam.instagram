@@ -8,7 +8,7 @@
 - Tipografía: **Plus Jakarta Sans 800** gigante y recortada (la palabra cruza la página o lleva la foto dentro de las letras); **Instrument Serif cursiva** para la frase que importa; IBM Plex Mono para pies y folios.
 - Cámara 2D: paneo por la retícula con rampa de velocidad, desenfoque al cambiar de plano, empuje hacia la figura, paso de página antes del cierre.
 - **Ultravioleta (#8B5CF6) una sola vez por pieza**: el subrayado de la frase clave, tras un silencio.
-- Sonido sintetizado (sin licencias): zumbido grave, papel en cada corte, obturador en cada foto, silencio antes de la frase, acorde en el ultravioleta, resolución en el cierre.
+- Sonido sintetizado (sin licencias): zumbido grave, papel en cada corte, obturador en cada foto, silencio antes de la frase, acorde en el ultravioleta, resolución en el cierre. Mezcla (24/11, notas de Andrés): zumbido ≈ −20 dBFS, papel/obturador ≈ +6 dB, silencio de 0,7 s antes de la frase, acorde UV ≈ +10 dB, techo −6 dBFS tras AAC y caída final a −50 dB.
 - 13–16 s, 5 páginas. Cierre: «ProTeam» + una línea serif.
 
 ## Cómo se hace
@@ -18,9 +18,9 @@
  "paginas":[{"tipo":"palabra","d":2.5,"palabra":"DOMINGO","foto":"OBJETO_GENERAL_FOTO_001","fig":"Fig. 1 — …","hora":"23:40"}, …]}
 ```
 2. Tipos de página:
-   - `palabra` {palabra, foto, fig, hora, size?, left?, cruce?} — palabra gigante que cruza con foto detrás. `cruce` (px) fija el recorrido y `left` el arranque: úsalos para que la palabra se lea **entera** en algún momento (DOMINGO: size 196, left 36, cruce 30). El destello del cruce es azul: el ultravioleta solo va en la frase.
+   - `palabra` {palabra, foto, fig, hora, size?, left?, cruce?} — palabra gigante que cruza con foto detrás. `cruce` (px) fija el recorrido y `left` el arranque: úsalos para que la palabra se lea **entera** en algún momento (DOMINGO: size 196, left 36, cruce 30). El destello del cruce es azul: el ultravioleta solo va en la frase. `capSize` (p. ej. 36) pone el pie de foto y la hora en tinta y legibles en móvil.
    - `dentro` {palabra, foto, serif, cap, size?, capSize?} — la foto dentro de las letras + frase serif. `capSize` (p. ej. 40) pone el pie en tinta y legible en móvil.
-   - `reticula` {figs:[3×{foto, lab}], letras?, labSize?} — paneo con rampa por tres figuras. `labSize` (p. ej. 40) pone los pies grandes, en tinta y con saltos de línea, para cuando el dato va en el pie.
+   - `reticula` {figs:[3×{foto, lab}], letras?, labSize?} — paneo con rampa por tres figuras. `labSize` (p. ej. 40) pone los pies grandes, en tinta y con saltos de línea, para cuando el dato va en el pie; con `labSize` la cámara se para ~0,5 s en la figura central para que su pie se lea. Los pies solo aparecen cuando caben enteros en la página y se apagan al empujar (nunca se ven cortados). Las `letras` de fondo, mejor no: con el desenfoque se doblan.
    - `frase` {foto, pre, serif, uv, size?, uvTop?, pos?, preSize?} — foto a sangre + frase serif; `uv:true` en UNA página. `preSize` (≥40) agranda la entradilla y la sube sola. Deja ≥1 s de ultravioleta quieto antes del paso de página (d ≥ 3,5).
    - `cifra` {num, pre, serif, cap, size?} — número o fecha enorme. **Solo datos reales.**
    - `captura` {foto: PRODUCTO_…_CAPTURA_…, fig, serif} — captura real de la app como figura.

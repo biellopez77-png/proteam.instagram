@@ -50,24 +50,31 @@ f = np.fft.rfft(nz); fr = np.fft.rfftfreq(n, 1 / sr); f[(fr < 800) | (fr > 6000)
 def env(t0, at, de):
     x = t - t0; y = np.zeros(n); m = x >= 0; xm = x[m]; y[m] = np.where(xm < at, xm / at, np.exp(-np.minimum((xm - at) / de, 50))); return y
 root = spec.get('tono', 55.0)
-gate = np.clip(t / 1.0, 0, 1) * np.clip((T - t) / .6, 0, 1)
+# Mezcla (Andrés, 24/11): zumbido de referencia ≈ −20 dBFS; papel/obturador ≈ +6 dB sobre él; silencio ≥0,6 s antes de la frase;
+# acorde del ultravioleta ≈ +10 dB; resolución en el cierre y caída a −40 dB; ningún golpe por encima de −6 dBFS.
+gate = np.clip(t / 1.0, 0, 1)
+mute = np.ones(n)
 t0 = 0
 for i, p in enumerate(spec['paginas']):
     d = p['d']
-    if i: a += nz * env(t0 - .08, .06, .22 if p['tipo'] != 'cierre' else .45) * .22
+    if i: a += nz * env(t0 - .08, .006, .14) * (.3 if p['tipo'] != 'cierre' else .12)
     if p['tipo'] in ('palabra', 'reticula', 'portada', 'captura'):
         for k in ([.3, 1.0] if p['tipo'] == 'palabra' else [.1, d * .35, d * .6] if p['tipo'] == 'reticula' else [.75, .9, 1.05]):
-            a += np.sin(2 * np.pi * 2400 * t) * env(t0 + k, .001, .012) * .16 + nz * env(t0 + k, .001, .02) * .1
-    if p['tipo'] in ('dentro', 'cifra'): a += np.sin(2 * np.pi * 45 * t * (1 + .5 * env(t0, .001, .08))) * env(t0, .003, .35) * .45
+            a += np.sin(2 * np.pi * 2400 * t) * env(t0 + k, .001, .04) * .3 + nz * env(t0 + k, .001, .05) * .28
+    if p['tipo'] in ('dentro', 'cifra'): a += np.sin(2 * np.pi * 45 * t * (1 + .5 * env(t0, .001, .08))) * env(t0, .003, .35) * .16
     if p['tipo'] == 'frase':
-        gate *= np.where((t > t0 - .5) & (t < t0 + .6), np.clip(np.abs(t - t0) / .55, 0, 1) ** 3, 1)
+        mute *= np.where((t > t0 - .8) & (t < t0 - .1), 0.004, 1)
+        gate *= np.where(t < t0 - .8, 1, np.where(t < t0 - .1, 0, np.clip((t - t0 + .1) / .7, 0, 1) ** 1.5))
         if p.get('uv'):
-            for fq in [261.6, 329.6, 392.0, 523.3]: a += np.sin(2 * np.pi * fq * t) * np.clip((t - t0 - 1.4) / .7, 0, 1) * np.exp(-np.clip(t - t0 - 2.1, 0, None) / 1.2) * .045
+            for fq in [261.6, 329.6, 392.0, 523.3]: a += np.sin(2 * np.pi * fq * t) * np.clip((t - t0 - 1.4) / .5, 0, 1) * np.exp(-np.clip(t - t0 - 2.1, 0, None) / 1.4) * .115
     if p['tipo'] == 'cierre':
-        for fq in [2 * root, 3 * root, 4 * root, 6 * root]: a += np.sin(2 * np.pi * fq * t) * env(t0 + .1, .4, 1.4) * .06
+        for j, fq in enumerate([2 * root, 3 * root, 4 * root, 6 * root]): a += np.sin(2 * np.pi * fq * t) * env(t0 + .25, .35, 1.3) * (.13 if j < 2 else .08)
     t0 += d
 a += (np.sin(2 * np.pi * root * t) * .5 + np.sin(2 * np.pi * root * 1.498 * t) * .25 + np.sin(2 * np.pi * root * 2.005 * t) * .12) * .1 * gate
-a = np.tanh(a * 1.6) / 1.6; a /= np.abs(a).max() * 1.12; st = np.stack([a, np.roll(a, 24)], 1)
+a *= mute
+a = .45 * np.tanh(a * 2.25 / .45)                  # techo −7 dBFS (−6 tras AAC)
+a *= np.clip((T - .05 - t) / .9, 0, 1) ** 2        # caída final hasta el silencio
+st = np.stack([a, np.roll(a, 24)], 1)
 w = wave.open(f'{PZ}/sonido.wav', 'wb'); w.setnchannels(2); w.setsampwidth(2); w.setframerate(sr); w.writeframes((st * 32767).astype('<i2').tobytes()); w.close()
 page = f'tools/reel_v5/motor/motor.html?spec=../piezas/{ID}/spec.resolved.json'
 os.chdir(f'{R}/tools/blackout')
