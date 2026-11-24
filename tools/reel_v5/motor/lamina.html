@@ -67,6 +67,14 @@ const T={
    <div class="a cap" style="left:64px;top:${st-52}px;color:var(--ice)">${esc(p.pre)}</div>
    <div class="a serif" style="left:64px;top:${st}px;font-size:${p.size||128}px;width:960px">${esc(p.serif)}</div>
    ${p.uv?`<div class="uvline" style="left:64px;top:${p.uvTop||st+(p.size||128)*2.1}px;width:${p.uvW||680}px"></div>`:''}</div>`},
+ // Captura real de la app en un marco de móvil, sin duotono, con pie y frase. {foto (…_CAPTURA_…), fig, big, serif, size}
+ captura(p,h){const y=h>1500?300:150,ph=h>1500?1100:820,pw=Math.round(ph*.49);
+   return `<div class="a" style="inset:0">
+   <div class="a cap" style="left:64px;top:${y}px">${esc(p.fig)}</div>
+   <div class="a" style="left:64px;top:${y+60}px;width:${pw}px;height:${ph}px;border-radius:34px;overflow:hidden;border:2px solid #1d2947;box-shadow:0 0 90px rgba(99,109,255,.28);background:url(${p.foto}) top center/cover"></div>
+   ${p.big?`<div class="a big" style="left:${64+pw+44}px;top:${y+80}px;font-size:${p.size||120}px">${esc(p.big)}</div>`:''}
+   <div class="a serif" style="left:${64+pw+44}px;right:56px;top:${y+80+(p.big?(p.size||120)*(p.bigLines||1)*.86+40:0)}px;font-size:${p.serifSize||76}px">${esc(p.serif)}</div>
+   ${p.nota?`<div class="a cap" style="left:${64+pw+44}px;right:56px;top:${y+ph-90}px;font-size:22px">${esc(p.nota)}</div>`:''}</div>`},
  // Titular a doble página con tres fotos. {l1, serif, l2, fotos:[3], cap, size}
  portada(p,h){const y=h>1500?380:200,s=p.size||176;
    return `<div class="a" style="inset:0"><div class="rule" style="top:${y-60}px"></div>

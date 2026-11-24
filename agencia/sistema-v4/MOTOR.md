@@ -42,6 +42,7 @@ Las láminas son páginas de la misma revista que el reel: mismos colores, fuent
    - `figuras` {letras, figs:[3×{foto, lab}]} — retícula de tres figuras con pie.
    - `frase` {foto, pre, serif, uv?, size, pos, uvW} — foto a sangre + frase serif. **`uv:true` en una sola lámina** (el script lo comprueba).
    - `portada` {l1, serif, l2, fotos:[3], cap, size} — titular a doble página.
+   - `captura` {foto (…_CAPTURA_…), fig, big, bigLines, serif, size, nota?} — captura real de la app en marco de móvil, sin duotono, titular a la derecha (añadido 24/11 para E05).
    - `final` {cap, serif, big, bigLines, lista:[…], firma} — qué se lleva el entrenador.
    - `pregunta` {foto, cap, big, serif, size} — Story: pregunta escrita como titular.
    - `encuesta` {pre, big, serif, foto?, size} — Story: titular arriba y hueco limpio para pegar el sticker a mano.
