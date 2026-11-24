@@ -1,0 +1,59 @@
+{
+ "titulo": "Cuatro jornadas, no una",
+ "fase": "Nutrición · vie 4/12",
+ "tono": 52,
+ "paginas": [
+  {
+   "tipo": "palabra",
+   "d": 2.5,
+   "palabra": "0 MIN.",
+   "foto": "STAFF_BANQUILLO_FOTO_001",
+   "fig": "Expediente — El dorsal que no salió",
+   "hora": "Sábado · Convocado, no juega"
+  },
+  {
+   "tipo": "reticula",
+   "d": 3.3,
+   "letras": "J1\nJ2\nJ3",
+   "figs": [
+    {
+     "foto": "OBJETO_GUANTES_CONO_FOTO_001",
+     "lab": "J1 — Entrena toda la semana"
+    },
+    {
+     "foto": "OBJETO_BALON_LINEA_FOTO_001",
+     "lab": "J2 — Calienta y se sienta"
+    },
+    {
+     "foto": "OBJETO_GENERAL_FOTO_001",
+     "lab": "J3 — Otra vez sin minutos"
+    }
+   ]
+  },
+  {
+   "tipo": "dentro",
+   "d": 2.6,
+   "palabra": "CUATRO",
+   "size": 225,
+   "foto": "STAFF_PIZARRA_JUGADA_FOTO_001",
+   "serif": "jornadas, no una.",
+   "cap": "Antes de convocar, mira los minutos\nde las cuatro últimas."
+  },
+  {
+   "tipo": "frase",
+   "d": 3.2,
+   "foto": "INSTALACION_ESTADIO_PEQUENO_VACIO_FOTO_001",
+   "pre": "El que no juega",
+   "serif": "también lleva\nla cuenta.",
+   "uv": true,
+   "size": 130,
+   "uvTop": 1475,
+   "pos": "50% 50%"
+  },
+  {
+   "tipo": "cierre",
+   "d": 1.9,
+   "serif": "para el que reparte los minutos."
+  }
+ ]
+}
