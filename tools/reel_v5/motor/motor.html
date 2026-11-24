@@ -59,9 +59,9 @@ const T={
    const [bg,w,s,c]=el.children;
    return {el,f(u,d){const k=u/d;tr(w,`scale(${1.18-.14*eo(k)})`);w.style.transformOrigin='30% 50%';w.style.backgroundPosition=`${30+20*k}% 55%`;
      op(s,P(u,.5,.9));tr(s,`translateY(${30*(1-eo(P(u,.5,1)))}px)`);op(c,P(u,.9,1.3));tr(bg,`translateY(${-80*k}px)`)}}},
- // Retícula de figuras que la cámara recorre con rampa y empuje final. {figs:[{foto,lab}], letras}
+ // Retícula de figuras que la cámara recorre con rampa y empuje final. {figs:[{foto,lab}], letras, labSize? (pie grande en tinta, admite \n)}
  reticula(p){const W=[620,900,1000],Hh=[860,660,680],X=[120,860,2120],Y=[520,700,880];
-   let inner=p.figs.map((f,i)=>`<div class="a" style="left:${X[i]}px;top:${Y[i]}px;width:${W[i]}px;height:${Hh[i]}px"><div class="ph" style="width:100%;height:100%;background-image:url(${f.foto})"></div><div class="lab">${esc(f.lab)}</div></div>`).join('');
+   let inner=p.figs.map((f,i)=>`<div class="a" style="left:${X[i]}px;top:${Y[i]}px;width:${W[i]}px;height:${Hh[i]}px"><div class="ph" style="width:100%;height:100%;background-image:url(${f.foto})"></div><div class="lab"${p.labSize?` style="font-size:${p.labSize}px;color:var(--ink);white-space:pre-line;line-height:1.35"`:''}>${esc(f.lab)}</div></div>`).join('');
    if(p.letras) inner+=`<div class="a big" style="left:1880px;top:560px;font-size:150px;color:#1a2440">${esc(p.letras)}</div>`;
    const el=H(`<div class="pg"><div class="a" style="left:0;top:0;width:3300px;height:1920px">${inner}</div></div>`);const row=el.children[0];
    return {el,f(u,d){const pan=ramp(P(u,.1,d-1.0)),push=eio(P(u,d-1.1,d));tr(row,`translateX(${-2120*pan}px)`);el.style.transformOrigin='62% 58%';

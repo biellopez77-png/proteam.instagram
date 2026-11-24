@@ -20,7 +20,7 @@
 2. Tipos de página:
    - `palabra` {palabra, foto, fig, hora, size?} — palabra gigante que cruza con foto detrás.
    - `dentro` {palabra, foto, serif, cap, size?} — la foto dentro de las letras + frase serif.
-   - `reticula` {figs:[3×{foto, lab}], letras?} — paneo con rampa por tres figuras.
+   - `reticula` {figs:[3×{foto, lab}], letras?, labSize?} — paneo con rampa por tres figuras. `labSize` (p. ej. 40) pone los pies grandes, en tinta y con saltos de línea, para cuando el dato va en el pie.
    - `frase` {foto, pre, serif, uv, size?, uvTop?, pos?} — foto a sangre + frase serif; `uv:true` en UNA página.
    - `cifra` {num, pre, serif, cap, size?} — número o fecha enorme. **Solo datos reales.**
    - `captura` {foto: PRODUCTO_…_CAPTURA_…, fig, serif} — captura real de la app como figura.

@@ -23,22 +23,23 @@
   },
   {
    "tipo": "reticula",
-   "d": 3.3,
+   "d": 4.0,
    "letras": "MAR\nJUE\nVIE",
    "figs": [
     {
      "foto": "ENTRENADOR_ENTRENADORA_INDICA_FOTO_001",
-     "lab": "Martes — 90 min · RPE 7 · 630"
+     "lab": "Martes · 90 min\nRPE 7 → 630"
     },
     {
      "foto": "STAFF_CHARLA_ENTRENAMIENTO_FOTO_001",
-     "lab": "Jueves — 75 min · RPE 8 · 600"
+     "lab": "Jueves · 75 min\nRPE 8 → 600"
     },
     {
      "foto": "OBJETO_GENERAL_FOTO_002",
-     "lab": "Viernes — 45 min · RPE 4 · 180"
+     "lab": "Viernes · 45 min\nRPE 4 → 180"
     }
-   ]
+   ],
+   "labSize": 40
   },
   {
    "tipo": "frase",
