@@ -5,18 +5,18 @@
  "laminas": [
   {
    "tipo": "palabra",
-   "palabra": "NOCHE",
+   "palabra": "DE NOCHE",
    "foto": "INSTALACION_CAMPO_ENTRENAMIENTO_FOTO_001",
    "fig": "Fig. 1 — Un campo cualquiera",
-   "hora": "18:30 · Ya no hay luz",
-   "serif": "De noche, y el entreno, igual.",
-   "size": 300,
-   "left": -12
+   "hora": "Noviembre · 17:50 · Se va la luz",
+   "serif": "Y el entreno, igual.",
+   "size": 190,
+   "left": 40
   },
   {
    "tipo": "dentro",
    "palabra": "FRÍO",
-   "foto": "ENTRENADOR_ENTRENADORA_INDICA_FOTO_001",
+   "foto": "OBJETO_BALON_LINEA_FOTO_001",
    "serif": "y ahí sigue.",
    "cap": "Con lluvia. Con seis.\nCon los que vengan.",
    "size": 400,
@@ -66,7 +66,7 @@
    "serif": "nadie",
    "l2": "MIRA.",
    "fotos": [
-    "ENTRENADOR_ENTRENADORA_INDICA_FOTO_001",
+    "OBJETO_BALON_LINEA_FOTO_001",
     "OBJETO_CONOS_EJERCICIO_FOTO_001",
     "INSTALACION_CAMPO_ENTRENAMIENTO_FOTO_001"
    ],
