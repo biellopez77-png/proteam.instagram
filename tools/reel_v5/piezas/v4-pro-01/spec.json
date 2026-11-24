@@ -3,18 +3,62 @@
  "fase": "Problema · mié 2/12",
  "tono": 50,
  "paginas": [
-  {"tipo": "palabra", "d": 2.5, "palabra": "DOMINGO", "foto": "OBJETO_GENERAL_FOTO_001",
-   "fig": "Fig. 1 — El partido acabó a las doce", "hora": "23:40 · La semana aún no ha cerrado"},
-  {"tipo": "reticula", "d": 3.3, "letras": "AQUÍ\nALLÍ\nY ALLÁ",
+  {
+   "tipo": "palabra",
+   "d": 2.5,
+   "palabra": "DOMINGO",
+   "foto": "OBJETO_GENERAL_FOTO_001",
+   "fig": "Fig. 1 — El partido acabó a las doce",
+   "hora": "23:40 · La semana aún no ha cerrado",
+   "size": 196,
+   "left": 36,
+   "cruce": 30
+  },
+  {
+   "tipo": "reticula",
+   "d": 3.3,
    "figs": [
-    {"foto": "STAFF_TRABAJO_FOTO_007", "lab": "Fig. 2 — Los cambios, en la libreta"},
-    {"foto": "STAFF_TRABAJO_FOTO_003", "lab": "Fig. 3 — Las notas, en la mesa"},
-    {"foto": "STAFF_PIZARRA_JUGADA_FOTO_001", "lab": "Fig. 4 — La jugada, ya borrada"}
-   ]},
-  {"tipo": "dentro", "d": 2.5, "palabra": "RUIDO", "size": 300, "foto": "STAFF_BANQUILLO_ASISTENTES_FOTO_001",
-   "serif": "en la cabeza.", "cap": "Quién jugó cuánto. Quién no vino.\nQué se dijo en el descanso."},
-  {"tipo": "frase", "d": 3.2, "foto": "OBJETO_BALONES_CARRO_FOTO_001", "pos": "45% 50%",
-   "pre": "Todo está apuntado.", "serif": "Nada está en\nel mismo sitio.", "uv": true, "size": 124, "uvTop": 1475},
-  {"tipo": "cierre", "d": 1.9, "serif": "para el que lo apunta todo."}
+    {
+     "foto": "STAFF_TRABAJO_FOTO_007",
+     "lab": "Fig. 2 — Los cambios,\nen la libreta"
+    },
+    {
+     "foto": "STAFF_TRABAJO_FOTO_003",
+     "lab": "Fig. 3 — Las notas,\nen la mesa"
+    },
+    {
+     "foto": "STAFF_PIZARRA_JUGADA_FOTO_001",
+     "lab": "Fig. 4 — La jugada,\nya borrada"
+    }
+   ],
+   "labSize": 40
+  },
+  {
+   "tipo": "dentro",
+   "d": 2.5,
+   "palabra": "RUIDO",
+   "size": 300,
+   "foto": "STAFF_BANQUILLO_ASISTENTES_FOTO_001",
+   "serif": "en la cabeza.",
+   "cap": "Quién jugó cuánto. Quién no vino.\nQué se dijo en el descanso.",
+   "capSize": 40
+  },
+  {
+   "tipo": "frase",
+   "d": 3.6,
+   "foto": "OBJETO_BALONES_CARRO_FOTO_001",
+   "pos": "45% 50%",
+   "pre": "Todo está apuntado.",
+   "serif": "Nada está en\nel mismo sitio.",
+   "uv": true,
+   "size": 124,
+   "uvTop": 1475,
+   "preSize": 42
+  },
+  {
+   "tipo": "cierre",
+   "d": 2.1,
+   "serif": "para el que lo apunta todo."
+  }
  ]
 }

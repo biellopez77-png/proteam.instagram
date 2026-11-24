@@ -44,18 +44,20 @@ const T={
  // Palabra gigante que cruza la página con una foto detrás. {palabra, foto, fig, hora, top}
  palabra(p){const el=H(`<div class="pg">
    <div class="a ph" style="left:120px;top:560px;width:840px;height:560px;background-image:url(${p.foto})"></div>
-   <div class="a cap" style="left:120px;top:500px">${esc(p.fig)}</div>
+   <div class="a cap" style="left:120px;top:500px;z-index:2">${esc(p.fig)}</div>
    <div class="a big" style="top:1010px;font-size:${p.size||430}px">${esc(p.palabra)}</div>
    <div class="a cap" style="left:64px;top:1420px;color:var(--ice)">${esc(p.hora)}</div></div>`);
    const [ph,,w,h]=el.children;
-   return {el,f(u,d){const k=u/d;tr(ph,`translateY(${-60*k}px) scale(${1.04+.05*k})`);w.style.left=(140-Math.max(420,w.offsetWidth-940)*eo(k))+'px';
-     w.style.textShadow=(u>d*.62&&u<d*.62+.15)?'6px 0 0 rgba(139,92,246,.7),-6px 0 0 rgba(106,168,255,.6)':'none';op(h,P(u,.6,.9))}}},
+   // cruce (px, opcional): recorrido de la palabra; left (px, opcional): posición inicial. El destello es azul: el ultravioleta solo va en la frase.
+   ph.style.transformOrigin='50% 0';
+   return {el,f(u,d){const k=u/d;tr(ph,`translateY(${20*k}px) scale(${1+.05*k})`);w.style.left=((p.left??140)-(p.cruce??Math.max(420,w.offsetWidth-940))*eo(k))+'px';
+     w.style.textShadow=(u>d*.62&&u<d*.62+.15)?'6px 0 0 rgba(185,224,255,.55),-6px 0 0 rgba(106,168,255,.6)':'none';op(h,P(u,.6,.9))}}},
  // Palabra con la foto dentro de las letras + frase serif. {palabra, foto, serif, cap}
  dentro(p){const el=H(`<div class="pg">
    <div class="a" style="inset:0;background:url(${p.foto}) center/cover;opacity:.08;filter:contrast(1.4)"></div>
    <div class="a big" style="left:40px;top:700px;font-size:${p.size||345}px;background:url(${p.foto}) 40% 55%/1500px auto;-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-stroke:2px rgba(185,224,255,.55)">${esc(p.palabra)}</div>
    <div class="a serif" style="left:110px;top:1080px;font-size:120px">${esc(p.serif)}</div>
-   <div class="a cap" style="left:110px;top:1300px;width:860px">${esc(p.cap)}</div></div>`);
+   <div class="a cap" style="left:110px;top:1300px;width:860px${p.capSize?`;font-size:${p.capSize}px;color:var(--ink);letter-spacing:.04em;line-height:1.4`:''}">${esc(p.cap)}</div></div>`);
    const [bg,w,s,c]=el.children;
    return {el,f(u,d){const k=u/d;tr(w,`scale(${1.18-.14*eo(k)})`);w.style.transformOrigin='30% 50%';w.style.backgroundPosition=`${30+20*k}% 55%`;
      op(s,P(u,.5,.9));tr(s,`translateY(${30*(1-eo(P(u,.5,1)))}px)`);op(c,P(u,.9,1.3));tr(bg,`translateY(${-80*k}px)`)}}},
@@ -69,8 +71,8 @@ const T={
  // Foto a sangre + frase serif; ultravioleta opcional (una vez por pieza). {foto, pre, serif, uv}
  frase(p){const el=H(`<div class="pg">
    <div class="a ph" style="inset:0;background-image:url(${p.foto});background-size:auto 1920px;background-position:${p.pos||'50% 50%'}"></div>
-   <div class="a" style="inset:0;background:linear-gradient(180deg,rgba(2,5,15,.2) 25%,rgba(2,5,15,.93) 68%)"></div>
-   <div class="a cap" style="left:64px;top:1150px;color:var(--ice)">${esc(p.pre)}</div>
+   <div class="a" style="inset:0;background:linear-gradient(180deg,rgba(2,5,15,.7) 0,rgba(2,5,15,.2) 12%,rgba(2,5,15,.2) 25%,rgba(2,5,15,.93) 68%)"></div>
+   <div class="a cap" style="left:64px;top:${p.preSize?1190-p.preSize*1.3:1150}px;color:var(--ice)${p.preSize?`;font-size:${p.preSize}px;letter-spacing:.06em`:''}">${esc(p.pre)}</div>
    <div class="a serif" style="left:64px;top:1200px;font-size:${p.size||128}px;width:960px">${esc(p.serif)}</div>
    <div class="a" style="left:64px;top:${p.uvTop||1490}px;height:12px;width:0;background:var(--uv);box-shadow:0 0 40px 6px rgba(139,92,246,.55)"></div></div>`);
    const [ph,,pre,s,uv]=el.children;

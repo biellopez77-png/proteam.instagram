@@ -18,10 +18,10 @@
  "paginas":[{"tipo":"palabra","d":2.5,"palabra":"DOMINGO","foto":"OBJETO_GENERAL_FOTO_001","fig":"Fig. 1 — …","hora":"23:40"}, …]}
 ```
 2. Tipos de página:
-   - `palabra` {palabra, foto, fig, hora, size?} — palabra gigante que cruza con foto detrás.
-   - `dentro` {palabra, foto, serif, cap, size?} — la foto dentro de las letras + frase serif.
+   - `palabra` {palabra, foto, fig, hora, size?, left?, cruce?} — palabra gigante que cruza con foto detrás. `cruce` (px) fija el recorrido y `left` el arranque: úsalos para que la palabra se lea **entera** en algún momento (DOMINGO: size 196, left 36, cruce 30). El destello del cruce es azul: el ultravioleta solo va en la frase.
+   - `dentro` {palabra, foto, serif, cap, size?, capSize?} — la foto dentro de las letras + frase serif. `capSize` (p. ej. 40) pone el pie en tinta y legible en móvil.
    - `reticula` {figs:[3×{foto, lab}], letras?, labSize?} — paneo con rampa por tres figuras. `labSize` (p. ej. 40) pone los pies grandes, en tinta y con saltos de línea, para cuando el dato va en el pie.
-   - `frase` {foto, pre, serif, uv, size?, uvTop?, pos?} — foto a sangre + frase serif; `uv:true` en UNA página.
+   - `frase` {foto, pre, serif, uv, size?, uvTop?, pos?, preSize?} — foto a sangre + frase serif; `uv:true` en UNA página. `preSize` (≥40) agranda la entradilla y la sube sola. Deja ≥1 s de ultravioleta quieto antes del paso de página (d ≥ 3,5).
    - `cifra` {num, pre, serif, cap, size?} — número o fecha enorme. **Solo datos reales.**
    - `captura` {foto: PRODUCTO_…_CAPTURA_…, fig, serif} — captura real de la app como figura.
    - `portada` {l1, serif, l2, fotos:[3], cap, size?} — titular a doble página.
