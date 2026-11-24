@@ -1,0 +1,206 @@
+<!doctype html><html><head><meta charset="utf-8">
+<!-- v7 · Los carteles del vestuario (Helenio Herrera, Inter 1960-1968). Un solo plano sobre una pared grande; cada cosa que dice la voz se anima en su palabra. Base: tools/reel_v7/bielsa/reel3.html y v7-red-valvano-1983 -->
+<style>
+@font-face{font-family:S;src:url(fonts/instrument-serif-latin-400-normal.woff2)}
+@font-face{font-family:SI;src:url(fonts/instrument-serif-latin-400-italic.woff2)}
+@font-face{font-family:J;font-weight:500;src:url(fonts/plus-jakarta-sans-latin-500-normal.woff2)}
+@font-face{font-family:J;font-weight:700;src:url(fonts/plus-jakarta-sans-latin-700-normal.woff2)}
+@font-face{font-family:J;font-weight:800;src:url(fonts/plus-jakarta-sans-latin-800-normal.woff2)}
+@font-face{font-family:J;font-weight:800;font-style:italic;src:url(fonts/plus-jakarta-sans-latin-800-italic.woff2)}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#02050F}
+#cam{position:absolute;left:0;top:0;width:2600px;height:6400px;transform-origin:0 0;background:url(wall2.jpg)}
+.a{position:absolute}
+.serif{font-family:S;color:#F4F7FB;white-space:nowrap;line-height:1}
+.bold{font-family:J;font-weight:800;color:#F4F7FB;white-space:nowrap;letter-spacing:-.02em;line-height:1}
+.acc{font-family:J;font-weight:800;font-style:italic;color:#6AA8FF}
+.it{font-family:SI;color:#B9E0FF}
+.w{display:inline-block;margin-right:.24em}
+.c{text-align:center}
+.panel{background:#0C1323;border:1px solid #26335a;box-shadow:0 40px 90px rgba(0,0,0,.6)}
+.mat{background:#E9EEF6;padding:20px 20px 58px;border:6px solid #0b0f1a;box-shadow:0 30px 70px rgba(0,0,0,.6)}
+.mat small{position:absolute;left:24px;right:18px;bottom:12px;font:500 15px J;color:#5d6888;letter-spacing:.04em;line-height:1.3}
+.paper{background:#E9EEF6;box-shadow:0 34px 80px rgba(0,0,0,.65);border-radius:4px}
+.ink{font-family:J;font-weight:800;color:#0b0f1a;white-space:nowrap;letter-spacing:-.01em;line-height:1}
+.ink .w{margin-right:.22em}
+.pin{position:absolute;width:34px;height:34px;border-radius:50%;background:radial-gradient(circle at 35% 35%,#B9E0FF,#636DFF 55%,#2b3480);box-shadow:0 6px 10px rgba(0,0,0,.5)}
+.rec{font:500 15px J;color:#5d6888;letter-spacing:.14em;line-height:1.6}
+.recl{font:500 15px J;color:#5d6888;letter-spacing:.16em}
+.k{font:700 20px J;color:#8f9bb8;letter-spacing:.14em}
+#grain{position:absolute;inset:0;width:1080px;height:1920px;mix-blend-mode:screen;opacity:.09;pointer-events:none;image-rendering:pixelated}
+svg .dr{fill:none;stroke-linecap:round;stroke-linejoin:round}
+</style></head><body><div id="cam">
+
+<!-- 1 · Helenio Herrera entrenaba al Inter de Milán -->
+<div class="a bold c" id="l1" style="left:0;width:1080px;top:250px;font-size:100px"></div>
+<div class="a mat" id="printH" style="left:200px;top:420px;width:680px;opacity:0"><img src="img/p1_g.jpg" style="display:block;width:100%"><small>HELENIO HERRERA EN EL BANQUILLO DE SAN SIRO, h. 1961 · FOTO: GINO BEGOTTI, DOMINIO PÚBLICO</small></div>
+<div class="a panel" id="tagH" style="left:560px;top:1150px;width:400px;padding:18px 24px;border-radius:12px;opacity:0">
+ <div style="font:800 30px J;color:#F4F7FB">HELENIO HERRERA</div>
+ <div class="k" style="margin-top:8px;font-size:18px">ENTRENADOR · 1960–1968</div>
+</div>
+<div class="a serif c" id="l2" style="left:0;width:1080px;top:1400px;font-size:70px"></div>
+<div class="a bold c" id="l3" style="left:0;width:1080px;top:1490px;font-size:124px;color:#6AA8FF"></div>
+
+<!-- 2 y 3 · el vestuario: dos carteles (recreación) -->
+<svg class="a" id="tiles" style="left:1160px;top:380px;opacity:0" width="1080" height="2560" viewBox="0 0 1080 2560">
+ <defs><pattern id="tp" width="120" height="120" patternUnits="userSpaceOnUse"><rect width="120" height="120" fill="none" stroke="rgba(185,224,255,.07)" stroke-width="3"/></pattern>
+ <linearGradient id="tf" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".06" stop-color="#fff" stop-opacity="1"/><stop offset=".94" stop-color="#fff" stop-opacity="1"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+ <mask id="tm"><rect width="1080" height="2560" fill="url(#tf)"/></mask></defs>
+ <rect width="1080" height="2560" fill="url(#tp)" mask="url(#tm)"/>
+</svg>
+<div class="a serif c" id="l4" style="left:1160px;width:1080px;top:190px;font-size:66px"></div>
+<div class="a serif c" id="l5" style="left:1160px;width:1080px;top:272px;font-size:66px"></div>
+<div class="a paper" id="c1" style="left:1290px;top:470px;width:820px;height:560px;opacity:0">
+ <div class="recl" style="position:absolute;left:34px;top:26px">VESTUARIO · RECREACIÓN</div>
+ <div class="ink" id="c1a" style="position:absolute;left:0;width:820px;text-align:center;top:180px;font-size:64px"></div>
+ <div class="ink" id="c1b" style="position:absolute;left:0;width:820px;text-align:center;top:290px;font-size:64px"></div>
+ <div id="c1u" style="position:absolute;left:250px;top:390px;width:320px;height:10px;border-radius:5px;background:#636DFF;transform-origin:0 50%;transform:scaleX(0)"></div>
+</div>
+<div class="pin" id="pin1" style="left:1683px;top:488px;opacity:0"></div>
+<div class="a serif c" id="l6" style="left:1160px;width:1080px;top:1090px;font-size:64px"></div>
+<svg class="a" id="rack" style="left:1260px;top:1190px;opacity:0" width="880" height="300" viewBox="0 0 880 300">
+ <path class="dr" d="M20 30 L860 30" stroke="#8f9bb8" stroke-width="8"/>
+ <g id="shirts" stroke="#B9E0FF" stroke-width="4" class="dr"></g>
+ <text x="870" y="292" text-anchor="end" font-family="J" font-weight="500" font-size="15" fill="#5d6888" letter-spacing="2.5">RECREACIÓN · SIN ESCUDOS</text>
+</svg>
+<div class="a serif c" id="l7" style="left:1160px;width:1080px;top:1560px;font-size:66px"></div>
+<div class="a paper" id="c2" style="left:1330px;top:1680px;width:740px;height:1020px;opacity:0">
+ <div class="recl" style="position:absolute;left:34px;top:26px">VESTUARIO · RECREACIÓN</div>
+ <svg id="plus" style="position:absolute;left:560px;top:40px" width="140" height="140" viewBox="0 0 140 140"><path id="plusP" class="dr" d="M70 20 L70 120 M20 70 L120 70" stroke="#636DFF" stroke-width="16" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/></svg>
+ <div class="ink" id="r1" style="position:absolute;left:84px;top:200px;font-size:62px"></div>
+ <div class="ink" id="r2" style="position:absolute;left:30px;top:320px;font-size:62px"></div>
+ <div class="ink" id="r3" style="position:absolute;left:30px;top:440px;font-size:62px"></div>
+ <div class="ink" id="r4" style="position:absolute;left:30px;top:560px;font-size:62px"></div>
+ <div id="rule" style="position:absolute;left:30px;top:668px;width:640px;height:8px;border-radius:4px;background:#0b0f1a;transform-origin:0 50%;transform:scaleX(0)"></div>
+ <div class="ink" id="r5" style="position:absolute;left:30px;top:720px;font-size:70px"></div>
+ <svg id="stamp" style="position:absolute;left:520px;top:820px;opacity:0" width="150" height="170" viewBox="0 0 150 170">
+  <defs><clipPath id="sh"><path d="M10 12 L140 12 L140 80 C140 125 105 150 75 162 C45 150 10 125 10 80 Z"/></clipPath></defs>
+  <g clip-path="url(#sh)"><rect x="0" y="0" width="50" height="170" fill="#3f8a5c"/><rect x="50" y="0" width="50" height="170" fill="#E9EEF6"/><rect x="100" y="0" width="50" height="170" fill="#b8434a"/></g>
+  <path d="M10 12 L140 12 L140 80 C140 125 105 150 75 162 C45 150 10 125 10 80 Z" fill="none" stroke="#0b0f1a" stroke-width="6"/>
+ </svg>
+ <div class="recl" style="position:absolute;left:34px;bottom:24px;font-size:13px">ESCUDO GENÉRICO, NO OFICIAL</div>
+</div>
+<div class="pin" id="pin2" style="left:1683px;top:1696px;opacity:0"></div>
+
+<!-- 4 · todos los veían -->
+<div class="a paper" id="m1" style="left:110px;top:2080px;width:260px;height:180px;opacity:0;transform:rotate(-3deg)"><div style="position:absolute;left:22px;top:60px;width:200px;height:12px;border-radius:6px;background:#9aa6bd"></div><div style="position:absolute;left:22px;top:90px;width:150px;height:12px;border-radius:6px;background:#9aa6bd"></div></div>
+<div class="a paper" id="m2" style="left:710px;top:2060px;width:240px;height:300px;opacity:0;transform:rotate(2.5deg)"><div style="position:absolute;left:22px;top:60px;width:140px;height:12px;border-radius:6px;background:#9aa6bd"></div><div style="position:absolute;left:22px;top:100px;width:170px;height:12px;border-radius:6px;background:#9aa6bd"></div><div style="position:absolute;left:22px;top:140px;width:120px;height:12px;border-radius:6px;background:#9aa6bd"></div><div style="position:absolute;left:22px;top:200px;width:160px;height:12px;border-radius:6px;background:#9aa6bd"></div></div>
+<div class="a mat" id="printT" style="left:40px;top:2240px;width:1000px;opacity:0"><img src="img/p2_g.jpg" style="display:block;width:100%"><small>HERRERA CON SUS JUGADORES EN EL ENTRENAMIENTO, h. 1961 · AUTOR DESCONOCIDO, DOMINIO PÚBLICO</small></div>
+<div class="a serif c" id="l8" style="left:0;width:1080px;top:2980px;font-size:84px"></div>
+
+<!-- 5 · dos Copas de Europa seguidas: 1964 y 1965 -->
+<div class="a serif c" id="l9" style="left:1160px;width:1080px;top:2930px;font-size:66px"></div>
+<div class="a serif c" id="l10" style="left:1160px;width:1080px;top:3012px;font-size:66px"></div>
+<div class="a mat" id="printC" style="left:1220px;top:3130px;width:540px;opacity:0"><img src="img/p3_g.jpg" style="display:block;width:100%"><small>INTER 1965-66 CON SUS TROFEOS · AUTOR DESCONOCIDO, D. P.</small></div>
+<div class="a" id="cutF" style="left:1800px;top:3100px;width:360px;opacity:0"><img src="img/p4_cut_g.png" style="display:block;width:100%;filter:drop-shadow(0 26px 30px rgba(0,0,0,.6))"><div class="rec" style="margin-top:6px;font-size:13px;line-height:1.4">FACCHETTI Y HERRERA, 1964-65<br>AUTOR DESCONOCIDO, D. P.</div></div>
+<svg class="a" id="cups" style="left:1240px;top:3640px;opacity:0" width="920" height="560" viewBox="0 0 920 560">
+ <g id="cup1" transform="translate(120,20)" class="dr" stroke-width="9"><path d="M60 40 L200 40 C200 150 170 200 130 210 C90 200 60 150 60 40 Z M60 62 C-4 62 -4 172 86 182 M200 62 C264 62 264 172 174 182 M130 210 L130 282 M92 282 L168 282 L182 326 L78 326 Z"/></g>
+ <g id="cup2" transform="translate(540,20)" class="dr" stroke-width="9"><path d="M60 40 L200 40 C200 150 170 200 130 210 C90 200 60 150 60 40 Z M60 62 C-4 62 -4 172 86 182 M200 62 C264 62 264 172 174 182 M130 210 L130 282 M92 282 L168 282 L182 326 L78 326 Z"/></g>
+ <text id="y1" x="250" y="460" text-anchor="middle" font-family="J" font-weight="800" font-size="104" fill="#F4F7FB" opacity="0" letter-spacing="-2">1964</text>
+ <text id="y2" x="670" y="460" text-anchor="middle" font-family="J" font-weight="800" font-size="104" fill="#F4F7FB" opacity="0" letter-spacing="-2">1964</text>
+ <text x="910" y="548" text-anchor="end" font-family="J" font-weight="500" font-size="15" fill="#5d6888" letter-spacing="2.5">COPAS: RECREACIÓN</text>
+</svg>
+
+<!-- 6 · la idea: lo que pides, cuélgalo donde se vea -->
+<svg class="a" id="tiles2" style="left:0;top:4300px" width="1080" height="1200" viewBox="0 0 1080 1200">
+ <defs><linearGradient id="tf2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".12" stop-color="#fff" stop-opacity="1"/><stop offset=".88" stop-color="#fff" stop-opacity="1"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+ <mask id="tm2"><rect width="1080" height="1200" fill="url(#tf2)"/></mask></defs>
+ <rect width="1080" height="1200" fill="url(#tp)" mask="url(#tm2)"/>
+</svg>
+<div class="a serif c" id="l11" style="left:0;width:1080px;top:4280px;font-size:78px"></div>
+<div class="a paper" id="s1" style="left:90px;top:4440px;width:300px;height:220px;transform:rotate(-2deg)"><div class="ink" style="position:absolute;left:0;width:300px;text-align:center;top:78px;font-size:21px;line-height:1.35">QUIEN NO LO DA TODO,<br>NO DA NADA.</div></div>
+<div class="a paper" id="s2" style="left:720px;top:4420px;width:270px;height:340px;transform:rotate(2deg)"><div class="ink" style="position:absolute;left:30px;top:70px;font-size:21px;line-height:1.5">CLASE<br>+ PREPARACIÓN<br>+ ATLETISMO<br>+ INTELIGENCIA<br>= SCUDETTO</div></div>
+<div class="a recl" id="s3" style="left:90px;top:4700px">RECREACIÓN</div>
+<div class="a paper" id="c3" style="left:270px;top:4820px;width:540px;height:400px;opacity:0"></div>
+<div class="pin" id="pin3" style="left:523px;top:4836px;opacity:0"></div>
+<div class="a serif c" id="l12" style="left:0;width:1080px;top:5330px;font-size:70px"></div>
+<div class="a serif c" id="l13" style="left:0;width:1080px;top:5416px;font-size:70px"></div>
+<div class="a bold c" id="uv" style="left:0;width:1080px;top:5510px;font-size:210px;color:#8B5CF6;opacity:0">VEA.</div>
+<div class="a rec c" id="cred" style="left:0;width:1080px;top:5800px;font-size:15px;opacity:0">FOTOS: GINO BEGOTTI Y AUTORES DESCONOCIDOS · DOMINIO PÚBLICO (ITALIA), VÍA WIKIMEDIA COMMONS<br>VESTUARIO, CARTELES Y COPAS: RECREACIÓN</div>
+
+</div>
+<canvas id="grain" width="360" height="640"></canvas>
+<script src="gsap.min.js"></script>
+<script src="words.js"></script>
+<script>
+const $=i=>document.getElementById(i), cl=x=>Math.min(1,Math.max(0,x)), P=(t,a,b)=>cl((t-a)/(b-a)), eo=x=>1-Math.pow(1-x,3), eio=x=>x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2, eb=x=>{const c=1.5;return 1+(c+1)*Math.pow(x-1,3)+c*Math.pow(x-1,2)};
+const W=window.WORDS, T=k=>W[k][1], E=k=>W[k][2];
+const NS='http://www.w3.org/2000/svg', mk=(tag,at,par)=>{const e=document.createElementNS(NS,tag);for(const k in at)e.setAttribute(k,at[k]);par&&par.appendChild(e);return e};
+const L=[];
+function line(id,tokens){const el=$(id);for(const [txt,k,cls,st,off] of tokens){const s=document.createElement('span');s.className='w '+(cls||'');s.textContent=txt;if(st)s.style.cssText=st;el.appendChild(s);L.push([s,T(k)+(off||0)])}}
+line('l1',[['HELENIO',0],['HERRERA',1]]);
+line('l2',[['entrenaba',2],['al',3]]);
+line('l3',[['INTER',4],['DE',5],['MILÁN',6]]);
+line('l4',[['En',7],['el',8],['vestuario',9,'it']]);
+line('l5',[['colgó',10],['carteles.',11,'acc']]);
+line('l6',[['Uno',12],['decía:',13,'it']]);
+line('c1a',[['QUIEN',14],['NO',15],['LO',16],['DA',17],['TODO,',18]]);
+line('c1b',[['NO',19],['DA',20],['NADA.',21]]);
+line('l7',[['Otro',22],['era',23],['una',24],['suma:',25,'it']]);
+line('r1',[['CLASE',26]]);
+line('r2',[['+',27,'','color:#636DFF'],['PREPARACIÓN',28]]);
+line('r3',[['+',29,'','color:#636DFF'],['ATLETISMO',30]]);
+line('r4',[['+',31,'','color:#636DFF'],['INTELIGENCIA',32]]);
+line('r5',[['=',33,'','color:#636DFF'],['SCUDETTO',35]]);
+line('l8',[['Todos',36],['los',37],['veían.',38,'it']]);
+line('l9',[['Ganó',39],['dos',40],['Copas',41,'acc'],['de',42,'acc'],['Europa',43,'acc']]);
+line('l10',[['seguidas:',44,'it']]);
+line('l11',[['La',48],['idea...',49,'it']]);
+line('l12',[['lo',50],['que',51],['pides,',52,'acc']]);
+line('l13',[['cuélgalo',53],['donde',54],['se',55]]);
+// camisetas lisas en el perchero
+for(let i=0;i<5;i++){const x=90+i*170,g=mk('g',{transform:`translate(${x},30)`},$('shirts'));mk('path',{d:'M0 0 L0 22 M-14 34 L-40 40 L-62 84 L-40 96 L-30 78 L-30 200 L30 200 L30 78 L40 96 L62 84 L40 40 L14 34 C8 46 -8 46 -14 34'},g)}
+// ----- cámara: un solo plano -----
+const cam={cx:540,cy:760,z:1.08};const tl=gsap.timeline({paused:true});
+const fly=(t,cx,cy,z,d=.9)=>{tl.to(cam,{cx,cy,duration:d,ease:'power2.inOut'},t);tl.to(cam,{keyframes:[{z:z*0.9,duration:d*.5,ease:'sine.out'},{z,duration:d*.5,ease:'sine.inOut'}]},t)};
+tl.set(cam,{cx:540,cy:760,z:1.08},0).to(cam,{z:1.04,cy:880,duration:2.05,ease:'sine.out'},0);
+fly(2.05,1700,830,1.0); tl.to(cam,{z:1.02,cy:900,duration:4.55,ease:'sine.out'},2.95);
+fly(7.45,1700,2200,1.0); tl.to(cam,{z:1.02,cy:2270,duration:6.0,ease:'sine.inOut'},8.35);
+fly(14.3,520,2570,1.06); tl.to(cam,{z:1.1,cx:600,cy:2610,duration:1.5,ease:'sine.out'},15.2);
+fly(15.78,1700,3650,1.0); tl.to(cam,{z:1.02,cy:3710,duration:4.2,ease:'sine.out'},16.68);
+fly(20.95,540,5000,1.0); tl.to(cam,{z:1.03,cy:5060,duration:3.8,ease:'sine.out'},21.85);
+// grano
+const g=$('grain').getContext('2d'),gi=g.createImageData(360,640);let sd=1;const RN=()=>(sd=(sd*16807)%2147483647)/2147483647;
+function camAt(t){tl.seek(t,false);return [cam.cx,cam.cy,cam.z]}
+const fade=(id,t0,dy=40,d=.45)=>{const p=eo(P(window._t,t0,t0+d));const e=$(id);e.style.opacity=p;e.style.transform=`translateY(${(1-p)*dy}px)`;return p};
+const mix=(a,b,p)=>a+(b-a)*p, hex=(c1,c2,p)=>{const f=c=>[1,3,5].map(i=>parseInt(c.substr(i,2),16));const A=f(c1),B=f(c2);return `rgb(${A.map((v,i)=>Math.round(mix(v,B[i],p))).join(',')})`};
+function drop(id,pin,t0,rot,dy=-120){const p=eo(P(window._t,t0,t0+.45));const e=$(id);e.style.opacity=p;e.style.transform=`translateY(${(1-p)*dy}px) rotate(${rot+(1-p)*4}deg)`;
+ if(pin){const q=P(window._t,t0+.38,t0+.55);$(pin).style.opacity=q;$(pin).style.transform=`scale(${1.6-.6*eo(q)})`}}
+window.frame=function(t){window._t=t;
+ sd=1+Math.floor(t*30)*7919;const d=gi.data;for(let i=0;i<d.length;i+=4){const v=RN()*255;d[i]=v*.8;d[i+1]=v*.85;d[i+2]=v;d[i+3]=255}g.putImageData(gi,0,0);
+ const p0=camAt(Math.max(0,t-1/30)),p1=camAt(t);const sp=Math.hypot(p1[0]-p0[0],p1[1]-p0[1]);
+ $('cam').style.transform=`translate(540px,960px) scale(${p1[2]}) translate(${-p1[0]}px,${-p1[1]}px)`;
+ $('cam').style.filter=sp>14?`blur(${Math.min(4,(sp-14)/30).toFixed(2)}px)`:'none';
+ for(const [s,t1] of L){const t0=t1<.3?t1-.4:t1;const p=eo(P(t,t0-.04,t0+.36));s.style.opacity=p;s.style.transform=`translateX(${(1-p)*24}px)`;s.style.filter=p<1?`blur(${(1-p)*6}px)`:'none'}
+ // 1
+ const ph=eo(P(t,-.45,.25));$('printH').style.opacity=ph;$('printH').style.transform=`rotate(${-1.5-(1-ph)*3}deg) translateY(${(1-ph)*50}px)`;
+ const tg=eo(P(t,T(1)-.05,T(1)+.35));$('tagH').style.opacity=tg;$('tagH').style.transform=`rotate(2deg) translateX(${(1-tg)*40}px)`;
+ // 2
+ $('tiles').style.opacity=eo(P(t,2.2,2.9));
+ drop('c1','pin1',T(11)-.1,-1.2);
+ const ul=eo(P(t,T(21)-.05,E(21)+.15));$('c1u').style.transform=`scaleX(${ul})`;
+ const rk=eo(P(t,T(12)-.25,T(12)+.25));$('rack').style.opacity=rk;$('rack').style.transform=`translateY(${(1-rk)*30}px)`;
+ // 3
+ drop('c2','pin2',T(22)-.2,.8);
+ $('plusP').setAttribute('stroke-dashoffset',100-100*eio(P(t,T(25)-.05,E(25)+.1)));
+ $('rule').style.transform=`scaleX(${eio(P(t,T(33)-.05,T(34)+.2))})`;
+ const st=P(t,T(35)+.25,T(35)+.55);$('stamp').style.opacity=st>0?1:0;$('stamp').style.transform=`rotate(-8deg) scale(${st<1?1.5-.5*eo(st):1})`;
+ // 4
+ const pt=eo(P(t,T(36)-.45,T(36)+.05));$('printT').style.opacity=pt;$('printT').style.transform=`rotate(${-.8-(1-pt)*2}deg) translateY(${(1-pt)*50}px)`;
+ for(const [id,r,k] of [['m1',-3,0],['m2',2.5,.12]]){const q=eo(P(t,T(36)-.6+k,T(36)-.15+k));$(id).style.opacity=q*.85;$(id).style.transform=`rotate(${r}deg) translateY(${(1-q)*-30}px)`}
+ // 5
+ const pc=eo(P(t,T(39)-.3,T(39)+.2));$('printC').style.opacity=pc;$('printC').style.transform=`rotate(${-2-(1-pc)*3}deg) translateY(${(1-pc)*50}px)`;
+ const cu=eo(P(t,T(40)-.1,T(40)+.3));$('cups').style.opacity=cu;$('cups').style.transform=`translateY(${(1-cu)*40}px)`;
+ const k1=eo(P(t,T(41)-.05,T(41)+.4)),k2=eo(P(t,T(44)-.05,T(44)+.4));
+ $('cup1').setAttribute('stroke',hex('#3a4770','#B9E0FF',k1));$('cup2').setAttribute('stroke',hex('#3a4770','#B9E0FF',k2));
+ $('cup1').style.filter=k1>0?`drop-shadow(0 0 ${14*k1}px rgba(106,168,255,.45))`:'none';$('cup2').style.filter=k2>0?`drop-shadow(0 0 ${14*k2}px rgba(106,168,255,.45))`:'none';
+ const y1=P(t,T(45)-.1,T(45)+.3);$('y1').setAttribute('opacity',eo(y1));$('y1').textContent=1960+Math.round(4*eo(P(t,T(45)-.1,T(45)+.45)));
+ const y2=P(t,T(47)-.2,T(47)+.15);$('y2').setAttribute('opacity',eo(y2));$('y2').textContent=t<T(47)-.04?'1964':'1965';$('y2').setAttribute('fill',hex('#F4F7FB','#6AA8FF',eo(P(t,T(47)-.04,T(47)+.3))));
+ const cf=eo(P(t,T(45)-.2,T(45)+.3));$('cutF').style.opacity=cf;$('cutF').style.transform=`translateX(${(1-cf)*40}px)`;
+ // 6
+ const c3=P(window._t,T(53)-.15,T(53)+.3);drop('c3','pin3',T(53)-.15,0);
+ const uq=P(t,T(56)-.05,T(56)+.32);$('uv').style.opacity=eo(uq);$('uv').style.filter=uq<1?`blur(${(1-uq)*6}px)`:'drop-shadow(0 0 18px rgba(139,92,246,.55))';$('uv').style.transform=`scale(${.94+.06*eo(uq)})`;
+ fade('cred',T(52),10,.6);
+};
+document.fonts.ready.then(()=>Promise.all([...document.images].map(i=>i.complete?1:new Promise(r=>{i.onload=r;i.onerror=r})))).then(()=>{frame(0);window.ready=true});
+</script></body></html>
