@@ -14,3 +14,5 @@ Graduadas con tools/reel_v7/bielsa/grade.py (cut.py). Banderines, calcetín, arr
 Ultravioleta #8B5CF6 una sola vez: la palabra «PEQUEÑO» del remate.
 
 Música y efectos (Epidemic Sound, vía Higgsfield): «Musical, Loop, Soft Piano, Strings, Calm, Intro, Logo 03» (encadenada consigo misma con fundidos de 1,4 s; distinta a las de los v7 anteriores); «Swooshes, Whoosh, Soft, Clean»; «Sheet, Laminated, Slide On Wooden Table 04»; «Paper, Friction, Sheet, Laminated, Slide On Wooden Table» (los diez banderines); «Communications, Camera, Analogue Film Camera, Shutter Clicks 01»; «Office Supplies, Rubber Stamp, Document 01»; «Objects, Writing, Pen, Marker, Write, Short, Small»; «Clocks, Tick, Classic, Soft, Loop 02»; «Cloth, Handle, Put On Socks 02» (el calcetín que se estira). Mezcla: mix.py (voz −19, música −31 con ducking).
+
+Vídeo final: https://d2ol7oe51mr4n9.cloudfront.net/user_3M2z7lIyzIPYtjNHcxRWFNk6wi7/3cfaa437-9941-491c-a7e6-f0d94d61bb81.mp4 (27,8 s: 22,2 s de historia + cierre común; comprobado con whisper: se oyen las 48 palabras; −16,1 LUFS, −1,0 dBTP).
