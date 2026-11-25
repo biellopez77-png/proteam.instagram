@@ -1220,5 +1220,22 @@
   },
   "added": "2026-11-25T02:12:00+01:00",
   "nota": "v7 historia con fotos (guion de Dani B, agencia/fabrica-v7/guiones/v7-sexto-hombre-auerbach.md); montaje Marta B; tools/reel_v7/v7-sexto-hombre-auerbach/. 27,1 s (21,5 s de historia + cierre común)."
+ },
+ {
+  "id": "v7-sistema-lobanovski",
+  "kind": "reel",
+  "files": [
+   "https://d2ol7oe51mr4n9.cloudfront.net/user_3M2z7lIyzIPYtjNHcxRWFNk6wi7/24f62949-25f5-4c28-9d4d-c6fdcc2983c0.mp4"
+  ],
+  "caption": "Un ingeniero térmico y un estadístico se conocieron en una fiesta. Y cambiaron el fútbol.\n\nValeri Lobanovski estudió ingeniería térmica en el Politécnico de Kiev. En una fiesta conoció al estadístico Anatoli Zelentsov y, juntos, empezaron a contar los tiros, los pases, las entradas y los errores de cada jugador (The Guardian; Engelsberg Ideas). Para Lobanovski, un partido era un sistema de 22 elementos, dos de once, y un equipo bien unido rendía más que la suma de sus piezas. Con el Dinamo de Kiev ganó las Recopas de 1975 y 1986, las dos por 3-0.\n\n¿Qué cuentas tú de tus jugadores después de cada partido?\n\nEstamos terminando la app de ProTeam. Síguenos para no perderte nada: muy pronto, novedades.\n\nFuentes: The Guardian (Jonathan Wilson; Barney Ronay), Engelsberg Ideas, Breaking the Lines, UEFA.com, Wikipedia. Fotos: Rob Croes y Rob Mieremet / Anefo, Nationaal Archief (CC0), vía Wikimedia Commons. Radiador, hoja de registro, campo y pizarra: recreación.\nMúsica y efectos: Epidemic Sound\n\n#entrenador #entrenadordefutbol #futbolbase #fútbol #historiadelfutbol #Lobanovski #DinamoDeKiev #análisis #estadística #ProTeam",
+  "state": "revisión",
+  "ig": {
+   "status": "pendiente"
+  },
+  "tiktok": {
+   "status": "pendiente"
+  },
+  "added": "2026-11-25T02:35:00+01:00",
+  "nota": "v7 historia con fotos (guion de Dani A, agencia/fabrica-v7/guiones/v7-sistema-lobanovski.md); montaje Marta A; tools/reel_v7/v7-sistema-lobanovski/ (28,1 s: 22,4 s de historia + cierre común). Pendiente de auditoría de Andrés (05)."
  }
 ]
