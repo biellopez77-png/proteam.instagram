@@ -1185,5 +1185,22 @@
   },
   "added": "2026-11-25T01:15:00+01:00",
   "nota": "v7 historia con fotos (guion de Dani B, agencia/fabrica-v7/guiones/v7-libros-phil-jackson.md); montaje Marta B; tools/reel_v7/v7-libros-phil-jackson/. 26,1 s (20,5 s de historia + cierre común)."
+ },
+ {
+  "id": "v7-puno-krzyzewski",
+  "kind": "reel",
+  "files": [
+   "https://d2ol7oe51mr4n9.cloudfront.net/user_3M2z7lIyzIPYtjNHcxRWFNk6wi7/ebce8a77-e757-46b0-8daf-c7917a455e22.mp4"
+  ],
+  "caption": "Mike Krzyzewski no veía cinco jugadores. Veía una mano.\n\nEn su libro «Leading with the Heart», el entrenador de Duke escribe que mira a su equipo «como los cinco dedos de una mano». Lo que los cierra en un puño son cinco palabras: comunicación, confianza, responsabilidad colectiva, cuidado y orgullo (Forbes; Duke Department of Medicine, 2025). Y avisa: cinco con talento que no juegan como equipo pueden ser más débiles que cinco con menos talento que sí.\n\n¿Cuál de esos cinco dedos le falta hoy a tu equipo?\n\nEstamos terminando la app de ProTeam. Síguenos para no perderte nada: muy pronto, novedades.\n\nFuentes: Forbes (Carmine Gallo), Duke Department of Medicine, Duke Fuqua; M. Krzyzewski, «Leading with the Heart» (2000). Fotos: Bryan Horowitz (CC BY-SA 2.0), Ahodges7 (CC BY-SA 3.0) y Lance Moritz / The Chronicle (dominio público), vía Wikimedia Commons. Pista, mano y puño: recreación.\nMúsica y efectos: Epidemic Sound\n\n#entrenador #entrenadordebaloncesto #baloncesto #basket #NCAA #CoachK #Krzyzewski #trabajoenequipo #liderazgo #ProTeam",
+  "state": "revisión",
+  "ig": {
+   "status": "pendiente"
+  },
+  "tiktok": {
+   "status": "pendiente"
+  },
+  "added": "2026-11-25T01:45:00+01:00",
+  "nota": "v7 historia con fotos (guion de Dani B). Voz 21,6 s (ElevenLabs eleven_v4, Mateo, 1 toma). Música y SFX Epidemic Sound mezclados en Higgsfield (tools/reel_v7/v7-puno-krzyzewski/mix.py). Montaje: Marta A (02)."
  }
 ]
