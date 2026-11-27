@@ -1,0 +1,247 @@
+<!doctype html><html><head><meta charset="utf-8">
+<!-- v7 · Un equipo no se ficha (Guy Roux y el Auxerre, 1961-2005). Un solo plano sobre una pared grande; cada cosa que dice la voz se anima en su palabra. Base: tools/reel_v7/wooden/reel.html y v7-ubuntu-rivers-2008 -->
+<style>
+@font-face{font-family:S;src:url(fonts/instrument-serif-latin-400-normal.woff2)}
+@font-face{font-family:SI;src:url(fonts/instrument-serif-latin-400-italic.woff2)}
+@font-face{font-family:J;font-weight:500;src:url(fonts/plus-jakarta-sans-latin-500-normal.woff2)}
+@font-face{font-family:J;font-weight:700;src:url(fonts/plus-jakarta-sans-latin-700-normal.woff2)}
+@font-face{font-family:J;font-weight:800;src:url(fonts/plus-jakarta-sans-latin-800-normal.woff2)}
+@font-face{font-family:J;font-weight:800;font-style:italic;src:url(fonts/plus-jakarta-sans-latin-800-italic.woff2)}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#02050F}
+#cam{position:absolute;left:0;top:0;width:2600px;height:6400px;transform-origin:0 0;background:url(wall2.jpg)}
+.a{position:absolute}
+.serif{font-family:S;color:#F4F7FB;white-space:nowrap;line-height:1}
+.bold{font-family:J;font-weight:800;color:#F4F7FB;white-space:nowrap;letter-spacing:-.02em;line-height:1}
+.acc{font-family:J;font-weight:800;font-style:italic;color:#6AA8FF}
+.it{font-family:SI;color:#B9E0FF}
+.w{display:inline-block;margin-right:.24em}
+.c{text-align:center}
+.panel{background:#0C1323;border:1px solid #26335a;box-shadow:0 40px 90px rgba(0,0,0,.6)}
+.mat{background:#E9EEF6;padding:18px 18px 56px;border:6px solid #0b0f1a;box-shadow:0 30px 70px rgba(0,0,0,.6)}
+.mat img{display:block;width:100%}
+.mat small{position:absolute;left:22px;right:16px;bottom:12px;font:500 16px J;color:#5d6888;letter-spacing:.04em;line-height:1.3}
+.rec{font:500 17px J;color:#5d6888;letter-spacing:.08em;line-height:1.6}
+.recl{font:500 14px J;color:#5d6888;letter-spacing:.16em}
+.k{font:700 18px J;color:#8f9bb8;letter-spacing:.14em}
+#grain{position:absolute;inset:0;width:1080px;height:1920px;mix-blend-mode:screen;opacity:.09;pointer-events:none;image-rendering:pixelated}
+svg .dr{fill:none;stroke-linecap:round;stroke-linejoin:round}
+</style></head><body><div id="cam">
+
+<!-- 1 · 1961: el Auxerre en Regional (estadio + escalera de cuatro peldaños) -->
+<div class="a serif c" id="l0" style="left:0;width:1080px;top:180px;font-size:96px"></div>
+<div class="a serif c" id="l0b" style="left:0;width:1080px;top:296px;font-size:68px"></div>
+<div class="a mat" id="stad" style="left:110px;top:410px;width:860px;opacity:0"><img src="img/stadium_g.jpg"><small>ESTADIO ABBÉ-DESCHAMPS, AUXERRE (FOTO ACTUAL) · VICENTE AUXERRE, CC BY-SA 3.0</small></div>
+<div class="a panel" id="tagA" style="left:600px;top:880px;width:400px;height:128px;border-radius:12px;padding:18px 24px;opacity:0;transform-origin:50% 50%">
+ <div class="k" style="font-size:15px">FICHA · AJ AUXERRE</div>
+ <div id="tA" style="font:800 34px J;color:#F4F7FB;margin-top:10px;white-space:nowrap;letter-spacing:.04em"></div>
+</div>
+<svg class="a" id="st1" style="left:140px;top:1090px;opacity:0" width="800" height="660" viewBox="0 0 800 660"></svg>
+<div class="a bold c" id="cnt" style="left:0;width:1080px;top:1800px;font-size:92px;opacity:0"><span id="cY">1961</span></div>
+<div class="a serif c" id="l2" style="left:0;width:1080px;top:1930px;font-size:76px"></div>
+
+<!-- 2 · Guy Roux, entrenador-jugador -->
+<div class="a serif c" id="l1" style="left:1160px;width:1080px;top:180px;font-size:66px"></div>
+<div class="a bold c" id="l1b" style="left:1160px;width:1080px;top:270px;font-size:118px"></div>
+<div class="a mat" id="roux1" style="left:1230px;top:450px;width:540px;opacity:0"><img src="img/roux2003_g.jpg"><small>GUY ROUX EN AUXERRE, 2003 · BADAJI_ARPILURE, CC BY-SA 3.0</small></div>
+<svg class="a" id="whis" style="left:1830px;top:500px" width="360" height="320" viewBox="0 0 360 320"></svg>
+<svg class="a" id="boots" style="left:1810px;top:860px" width="400" height="300" viewBox="0 0 400 300"></svg>
+<div class="a recl" id="drawL" style="left:1850px;top:1170px;opacity:0">SILBATO Y BOTAS: DIBUJO</div>
+<div class="a panel" id="tagR" style="left:1230px;top:1300px;width:960px;height:150px;border-radius:12px;padding:22px 30px;opacity:0">
+ <div class="k" style="font-size:16px">FICHA · AJ AUXERRE · 1961</div>
+ <div id="tR" style="font:800 46px J;color:#F4F7FB;margin-top:16px;white-space:nowrap;letter-spacing:.03em"></div>
+</div>
+
+<!-- 4 · la cantera y Cantona -->
+<div class="a serif c" id="l3" style="left:1160px;width:1080px;top:1990px;font-size:82px"></div>
+<div class="a panel" id="board" style="left:1210px;top:2110px;width:980px;height:520px;border-radius:16px;opacity:0">
+ <div class="recl" style="position:absolute;right:24px;top:18px">PIZARRA · DIBUJO</div>
+ <svg id="bsv" style="position:absolute;left:0;top:0" width="980" height="520" viewBox="0 0 980 520"></svg>
+</div>
+<div class="a serif c" id="l3b" style="left:1160px;width:1080px;top:2690px;font-size:68px"></div>
+<div class="a mat" id="cant" style="left:1260px;top:2810px;width:470px;opacity:0"><img src="img/cantona_g.jpg"><small>ERIC CANTONA EN CANNES, 2009 · GEORGES BIARD, CC BY-SA 3.0</small></div>
+<div class="a panel" id="tagC" style="left:1770px;top:3080px;width:420px;height:200px;border-radius:12px;padding:20px 26px;opacity:0">
+ <div class="k" style="font-size:15px">FICHA</div>
+ <div style="font:800 40px J;color:#F4F7FB;margin-top:14px;white-space:nowrap;letter-spacing:.02em">ERIC CANTONA</div>
+ <div id="tC" style="font:700 22px J;color:#6AA8FF;margin-top:14px;white-space:nowrap;letter-spacing:.1em"></div>
+</div>
+
+<!-- 5 · 1996: Liga y Copa -->
+<div class="a serif c" id="l4" style="left:0;width:1080px;top:2470px;font-size:100px"></div>
+<div class="a serif c" id="l4b" style="left:0;width:1080px;top:2590px;font-size:82px"></div>
+<svg class="a" id="tro" style="left:140px;top:2730px" width="800" height="640" viewBox="0 0 800 640"></svg>
+<div class="a bold c" id="lc" style="left:0;width:1080px;top:3420px;font-size:84px;opacity:0">1996 · LIGA <span style="color:#6AA8FF">+</span> COPA</div>
+<div class="a recl c" id="troL" style="left:0;width:1080px;top:3540px;opacity:0">TROFEOS: DIBUJO</div>
+
+<!-- 6 · 44 años en el mismo banquillo -->
+<div class="a serif c" id="l5" style="left:1160px;width:1080px;top:3930px;font-size:80px"></div>
+<div class="a panel" id="cal" style="left:1230px;top:4060px;width:560px;height:580px;border-radius:14px;opacity:0;overflow:hidden">
+ <div style="height:96px;background:#141d33;border-bottom:1px solid #26335a;position:relative">
+  <div style="position:absolute;left:120px;top:30px;width:26px;height:26px;border-radius:50%;background:#02050F"></div>
+  <div style="position:absolute;right:120px;top:30px;width:26px;height:26px;border-radius:50%;background:#02050F"></div>
+  <div class="k" style="position:absolute;left:0;right:0;top:36px;text-align:center;font-size:15px">TEMPORADA</div>
+ </div>
+ <div id="calY" class="bold c" style="position:absolute;left:0;right:0;top:190px;font-size:190px;color:#F4F7FB">1961</div>
+ <div id="calF" class="bold c" style="position:absolute;left:0;right:0;top:96px;height:484px;padding-top:94px;font-size:190px;color:#F4F7FB;background:#0C1323;transform-origin:50% 0;opacity:0">1961</div>
+ <div class="recl c" style="position:absolute;left:0;right:0;bottom:22px">CALENDARIO: DIBUJO</div>
+</div>
+<div class="a mat" id="roux2" style="left:1840px;top:4080px;width:340px;opacity:0;padding-bottom:84px"><img src="img/roux2008_g.jpg"><small>GUY ROUX EN 2008 · NICOLAS RICHOFFER, CC BY-SA 4.0</small></div>
+<div class="a bold c" id="big44" style="left:1160px;width:1080px;top:4720px;font-size:170px;opacity:0">44 AÑOS</div>
+<svg class="a" id="bench" style="left:1260px;top:4930px" width="900" height="340" viewBox="0 0 900 340"></svg>
+<div class="a serif c" id="l5b" style="left:1160px;width:1080px;top:5320px;font-size:76px"></div>
+
+<!-- 7 · La idea... un equipo no se ficha: se construye -->
+<div class="a serif c" id="l6" style="left:0;width:1080px;top:4560px;font-size:84px"></div>
+<div class="a bold c" id="q1" style="left:0;width:1080px;top:4700px;font-size:104px"></div>
+<div class="a bold c" id="q2" style="left:0;width:1080px;top:4830px;font-size:104px"></div>
+<svg class="a" id="strk" style="left:0;top:4830px" width="1080" height="110"><path id="strP" class="dr" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100" d="" stroke="#B9E0FF" stroke-width="11"/></svg>
+<div class="a bold c" id="q3" style="left:0;width:1080px;top:4960px;font-size:104px"></div>
+<svg class="a" id="st2" style="left:190px;top:5170px;opacity:0" width="700" height="560" viewBox="0 0 700 560"></svg>
+<div class="a rec c" id="cred" style="left:0;width:1080px;top:5790px;font-size:18px;opacity:0">FOTOS (MODIFICADAS): VICENTE AUXERRE Y BADAJI_ARPILURE (CC BY-SA 3.0),<br>GEORGES BIARD (CC BY-SA 3.0) Y NICOLAS RICHOFFER (CC BY-SA 4.0), VÍA WIKIMEDIA COMMONS<br>ESCALERA, PIZARRA, SILBATO, BOTAS, TROFEOS, CALENDARIO Y BANQUILLO: DIBUJO</div>
+
+</div>
+<canvas id="grain" width="360" height="640"></canvas>
+<script src="gsap.min.js"></script>
+<script src="words.js"></script>
+<script>
+const $=i=>document.getElementById(i), cl=x=>Math.min(1,Math.max(0,x)), P=(t,a,b)=>cl((t-a)/(b-a)), eo=x=>1-Math.pow(1-x,3), eio=x=>x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2;
+const W=window.WORDS, T=k=>W[k][1], E=k=>W[k][2];
+const NS='http://www.w3.org/2000/svg', mk=(tag,at,par)=>{const e=document.createElementNS(NS,tag);for(const k in at)e.setAttribute(k,at[k]);par&&par.appendChild(e);return e};
+const L=[];
+function line(id,tokens){const el=$(id);for(const [txt,k,cls,st,off] of tokens){const s=document.createElement('span');s.className='w '+(cls||'');s.textContent=txt;if(st)s.style.cssText=st;el.appendChild(s);L.push([s,T(k)+(off||0)])}}
+line('l0',[['En',0],['1961,',1,'acc']]);
+line('l0b',[['el',2],['Auxerre',3,'it'],['jugaba',4],['en',5],['Regional.',6,'acc']]);
+line('l1',[['Lo',7],['cogió',8],['un',9],['entrenador-jugador:',10,'it']]);
+line('l1b',[['GUY',12],['ROUX.',13,'','color:#6AA8FF']]);
+line('l2',[['En',14],['1980',15,'acc'],['lo',16],['subió',17],['a',18],['Primera.',19,'it']]);
+line('l3',[['Abrió',20],['una',21],['cantera,',22,'it']]);
+line('l3b',[['y',23],['de',24],['allí',25],['salió',26],['Eric',27,'acc'],['Cantona.',28,'acc']]);
+line('l4',[['En',29],['1996',30,'acc']]);
+line('l4b',[['ganó',31],['Liga',32,'it'],['y',33],['Copa.',34,'it']]);
+line('l5',[['Cuarenta',35],['y',35,'','',.22],['cuatro',35,'','',.3],['años',36]]);
+line('l5b',[['en',37],['el',38],['mismo',39],['banquillo.',40,'it']]);
+line('l6',[['La',41],['idea…',42,'it']]);
+line('q1',[['UN',43],['EQUIPO',44]]);
+line('q2',[['NO',45],['SE',46],['FICHA:',47]]);
+line('q3',[['SE',48],['CONSTRUYE.',49]]);
+// escalera: 4 peldaños (4.º nivel → Primera)
+function stair(svg,w,h,labels){const H=+svg.getAttribute('height'),out=[];
+ labels.forEach((lb,i)=>{const g=mk('g',{},svg);const x=i*w,y=H-(i+1)*h;
+  const r=mk('rect',{x:x+3,y,width:w-6,height:(i+1)*h-3,rx:8,fill:'#0C1323',stroke:'#26335a','stroke-width':3},g);
+  const tr=mk('path',{class:'dr',d:`M${x+8} ${y} L${x+w-8} ${y}`,stroke:'#26335a','stroke-width':7},g);
+  const tx=mk('text',{x:x+w/2,y:y+56,'text-anchor':'middle','font-family':'J','font-weight':800,'font-size':lb[2]||(lb[1]?30:34),fill:'#5d6888','letter-spacing':1.5},g);tx.textContent=lb[0];
+  let t2=null;if(lb[1]){t2=mk('text',{x:x+w/2,y:y+92,'text-anchor':'middle','font-family':'J','font-weight':700,'font-size':19,fill:'#5d6888','letter-spacing':2},g);t2.textContent=lb[1]}
+  out.push({r,tr,tx,t2,cx:x+w/2,cy:y-32})});
+ mk('text',{x:+svg.getAttribute('width')-4,y:22,'text-anchor':'end','font-family':'J','font-weight':500,'font-size':14,fill:'#5d6888','letter-spacing':2.5},svg).textContent='ESCALERA: DIBUJO';
+ const chip=mk('circle',{cx:0,cy:0,r:30,fill:'#6AA8FF',stroke:'#B9E0FF','stroke-width':3,opacity:0},svg);
+ return {steps:out,chip}}
+const S1=stair($('st1'),200,145,[['4.º NIVEL','REGIONAL'],['3.º',''],['2.º',''],['PRIMERA','']]);
+const S2=stair($('st2'),175,115,[['REGIONAL','',24],['',''],['',''],['PRIMERA','',24]]);
+// silbato y botas (dibujo a línea)
+const WH=$('whis'),BT=$('boots');const drawn=[];
+const dp=(par,d,sw,col)=>{const p=mk('path',{class:'dr',d,stroke:col||'#B9E0FF','stroke-width':sw||5,pathLength:100,'stroke-dasharray':100,'stroke-dashoffset':100},par);return p};
+const wh=[dp(WH,'M40 40 C110 110 150 150 190 160'),dp(WH,'M150 170 L300 170 Q330 170 330 200 L330 230 Q330 262 298 262 L220 262 Q150 262 150 210 Z',6,'#F4F7FB'),dp(WH,'M290 170 L290 130 L330 130 L330 170',5,'#F4F7FB'),dp(WH,'M210 214 m-22 0 a22 22 0 1 0 44 0 a22 22 0 1 0 -44 0',4,'#6AA8FF')];
+const bootD=(ox,oy)=>`M${ox+20} ${oy+10} L${ox+20} ${oy+100} Q${ox+20} ${oy+118} ${ox+40} ${oy+118} L${ox+200} ${oy+118} Q${ox+230} ${oy+118} ${ox+230} ${oy+96} Q${ox+228} ${oy+78} ${ox+190} ${oy+70} L${ox+110} ${oy+52} L${ox+92} ${oy+10} Z`;
+const bt=[dp(BT,bootD(20,40),6,'#F4F7FB'),dp(BT,bootD(130,150),6,'#F4F7FB'),dp(BT,'M60 130 l0 16 M100 130 l0 16 M150 130 l0 16 M210 130 l0 16 M170 240 l0 16 M210 240 l0 16 M260 240 l0 16 M320 240 l0 16',5,'#6AA8FF'),dp(BT,'M50 70 L100 66 M52 90 L104 86 M160 180 L210 176 M162 200 L214 196',4,'#6AA8FF')];
+// pizarra: corro de conos y cinco chapas
+const B=$('bsv'),bc=[490,270];const cones=[];for(let i=0;i<8;i++){const a=i/8*Math.PI*2;const x=bc[0]+Math.cos(a)*200,y=bc[1]+Math.sin(a)*170;
+ cones.push(mk('path',{d:`M${x-18} ${y+16} L${x} ${y-20} L${x+18} ${y+16} Z`,fill:'none',stroke:'#B9E0FF','stroke-width':4,'stroke-linejoin':'round',opacity:0},B))}
+const chipsB=[];const cp=[[430,210],[550,220],[490,290],[420,320],[565,330]];for(let i=0;i<5;i++)chipsB.push(mk('circle',{cx:0,cy:0,r:24,fill:'#636DFF',stroke:'#B9E0FF','stroke-width':2},B));
+const exitA=mk('path',{class:'dr',d:`M${bc[0]} ${bc[1]+50} C${bc[0]+10} ${bc[1]+150} ${bc[0]-40} ${bc[1]+200} ${bc[0]-60} 500`,stroke:'#6AA8FF','stroke-width':5,pathLength:100,'stroke-dasharray':'4 6',opacity:0},B);
+// trofeos (genéricos)
+const TR=$('tro');const tro=[];
+[[220,'LIGA'],[580,'COPA']].forEach(([x,lb],j)=>{const g=mk('g',{},TR);const y=80;
+ const ps=[`M${x-110} ${y} L${x+110} ${y} C${x+110} ${y+150} ${x+60} ${y+220} ${x} ${y+225} C${x-60} ${y+220} ${x-110} ${y+150} ${x-110} ${y} Z`,
+  `M${x-108} ${y+30} C${x-180} ${y+30} ${x-180} ${y+130} ${x-80} ${y+150}`,`M${x+108} ${y+30} C${x+180} ${y+30} ${x+180} ${y+130} ${x+80} ${y+150}`,
+  `M${x-22} ${y+225} L${x-22} ${y+300} L${x+22} ${y+300} L${x+22} ${y+225}`,`M${x-90} ${y+300} L${x+90} ${y+300} L${x+90} ${y+360} L${x-90} ${y+360} Z`];
+ const paths=ps.map(d=>mk('path',{class:'dr',d,stroke:'#26335a','stroke-width':6,pathLength:100,'stroke-dasharray':100,'stroke-dashoffset':100},g));
+ const lab=mk('text',{x,y:y+440,'text-anchor':'middle','font-family':'J','font-weight':800,'font-size':40,fill:'#5d6888','letter-spacing':5,opacity:0},TR);lab.textContent=lb;
+ tro.push({g,paths,lab})});
+// banquillo
+const BE=$('bench');const bench=[dp(BE,'M60 60 L840 60',8,'#F4F7FB'),dp(BE,'M60 110 L840 110',8,'#F4F7FB'),dp(BE,'M40 190 L860 190 L860 220 L40 220 Z',7,'#F4F7FB'),
+ dp(BE,'M100 30 L100 300 M800 30 L800 300 M150 220 L150 300 M750 220 L750 300',7,'#8f9bb8')];
+mk('text',{x:896,y:330,'text-anchor':'end','font-family':'J','font-weight':500,'font-size':14,fill:'#5d6888','letter-spacing':2.5},BE).textContent='BANQUILLO: DIBUJO';
+// ----- cámara: un solo plano -----
+const cam={cx:540,cy:960,z:1.06};const tl=gsap.timeline({paused:true});
+const fly=(t,cx,cy,z,d=.9)=>{tl.to(cam,{cx,cy,duration:d,ease:'power2.inOut'},t);tl.to(cam,{keyframes:[{z:z*0.9,duration:d*.5,ease:'sine.out'},{z,duration:d*.5,ease:'sine.inOut'}]},t)};
+tl.set(cam,{cx:540,cy:960,z:1.06},0).to(cam,{z:1.02,cy:990,duration:3.25,ease:'sine.out'},0);
+fly(3.25,1700,940,1.0); tl.to(cam,{z:1.02,cy:980,duration:2.0,ease:'sine.out'},4.15);
+fly(6.18,540,1320,1.0); tl.to(cam,{z:1.02,cy:1340,duration:1.7,ease:'sine.out'},7.08);
+fly(8.85,1700,2720,1.0); tl.to(cam,{z:1.0,cy:2860,duration:2.5,ease:'sine.inOut'},9.75);
+fly(12.27,540,3000,1.0); tl.to(cam,{z:1.02,cy:3030,duration:2.0,ease:'sine.out'},13.17);
+fly(15.3,1700,4720,1.0); tl.to(cam,{z:1.0,cy:4780,duration:1.9,ease:'sine.out'},16.2);
+fly(18.08,540,5400,1.0); tl.to(cam,{z:1.0,cy:5420,duration:2.6,ease:'sine.out'},18.98);
+tl.to(cam,{z:0.95,cy:5440,duration:1.2,ease:'sine.inOut'},21.6);
+// grano
+const g=$('grain').getContext('2d'),gi=g.createImageData(360,640);let sd=1;const RN=()=>(sd=(sd*16807)%2147483647)/2147483647;
+function camAt(t){tl.seek(t,false);return [cam.cx,cam.cy,cam.z]}
+const fade=(id,t0,dy=40,d=.45)=>{const p=eo(P(window._t,t0,t0+d));const e=$(id);e.style.opacity=p;e.style.transform=`translateY(${(1-p)*dy}px)`;return p};
+const mix=(a,b,p)=>a+(b-a)*p;
+const typ=(id,txt,t,a,b)=>{const n=Math.round(txt.length*P(t,a,b));$(id).textContent=txt.slice(0,n)};
+function eb(x){const c=1.5;return 1+(c+1)*Math.pow(x-1,3)+c*Math.pow(x-1,2)}
+const draw=(p,v)=>p.setAttribute('stroke-dashoffset',100-100*v);
+function litStep(s,v){s.r.setAttribute('stroke',v>.5?'#6AA8FF':'#26335a');s.r.setAttribute('fill',v>.5?'#101a33':'#0C1323');s.tr.setAttribute('stroke',v>.5?'#6AA8FF':'#26335a');s.tx.setAttribute('fill',v>.5?'#F4F7FB':'#5d6888');if(s.t2)s.t2.setAttribute('fill',v>.5?'#B9E0FF':'#5d6888')}
+function hop(chip,a,b,p){const q=eio(p);chip.setAttribute('cx',mix(a.cx,b.cx,q));chip.setAttribute('cy',mix(a.cy,b.cy,q)-90*Math.sin(Math.PI*p))}
+window.frame=function(t){window._t=t;
+ sd=1+Math.floor(t*30)*7919;const d=gi.data;for(let i=0;i<d.length;i+=4){const v=RN()*255;d[i]=v*.8;d[i+1]=v*.85;d[i+2]=v;d[i+3]=255}g.putImageData(gi,0,0);
+ const p0=camAt(Math.max(0,t-1/30)),p1=camAt(t);const sp=Math.hypot(p1[0]-p0[0],p1[1]-p0[1]);
+ $('cam').style.transform=`translate(540px,960px) scale(${p1[2]}) translate(${-p1[0]}px,${-p1[1]}px)`;
+ $('cam').style.filter=sp>14?`blur(${Math.min(4,(sp-14)/30).toFixed(2)}px)`:'none';
+ for(const [s,t1] of L){const t0=t1<.3?t1-.4:t1;const p=eo(P(t,t0-.04,t0+.36));s.style.opacity=p;s.style.transform=`translateX(${(1-p)*24}px)`;s.style.filter=p<1?`blur(${(1-p)*6}px)`:'none'}
+ // 1 · estadio, ficha y escalera; la ficha azul cae en «Regional»
+ const ps=eo(P(t,T(3)-.45,T(3)+.2));$('stad').style.opacity=ps;$('stad').style.transform=`translateY(${(1-ps)*50}px) rotate(${-1.2*ps}deg)`;
+ const pa=P(t,T(4)-.05,T(4)+.35);$('tagA').style.opacity=eo(pa);$('tagA').style.transform=`translateY(${(1-eo(pa))*24}px) rotate(${2*eo(pa)}deg)`;typ('tA','AUXERRE · 1961',t,T(4),T(5)+.2);
+ const s1=eo(P(t,T(5)-.2,T(5)+.25));$('st1').style.opacity=s1;$('st1').style.transform=`translateY(${(1-s1)*30}px)`;
+ const c1=S1.chip,st=S1.steps;
+ const dr=P(t,T(6)-.05,T(6)+.3);c1.setAttribute('opacity',eo(P(t,T(6)-.05,T(6)+.1)));
+ litStep(st[0],P(t,T(6),T(6)+.1)*(1-P(t,T(16)+.2,T(16)+.3)));
+ if(t<T(16)){c1.setAttribute('cx',st[0].cx);c1.setAttribute('cy',st[0].cy-(1-eo(dr))*160)}
+ else if(t<T(17)){hop(c1,st[0],st[1],P(t,T(16),T(16)+.32))}
+ else if(t<T(19)-.05){hop(c1,st[1],st[2],P(t,T(17),T(17)+.32))}
+ else hop(c1,st[2],st[3],P(t,T(19)-.05,T(19)+.27));
+ litStep(st[1],P(t,T(16)+.25,T(16)+.3)*(1-P(t,T(17)+.2,T(17)+.3)));litStep(st[2],P(t,T(17)+.25,T(17)+.3)*(1-P(t,T(19)+.15,T(19)+.25)));
+ litStep(st[3],P(t,T(19)+.2,T(19)+.28));
+ const glow=P(t,T(19)+.2,T(19)+.6);st[3].r.style.filter=glow>0?`drop-shadow(0 0 ${22*eo(glow)}px rgba(106,168,255,.55))`:'none';
+ fade('cnt',T(15)-.3,20,.4);$('cY').textContent=Math.round(mix(1961,1980,eio(P(t,T(15),E(19)))));
+ // 2 · Guy Roux: polaroid, silbato (entrenador) y botas (jugador)
+ const pr=eo(P(t,T(8)-.35,T(8)+.25));$('roux1').style.opacity=pr;$('roux1').style.transform=`translateY(${(1-pr)*50}px) rotate(${-2*pr}deg)`;
+ wh.forEach((p,i)=>draw(p,eio(P(t,T(10)+i*.08,T(10)+.45+i*.08))));
+ bt.forEach((p,i)=>draw(p,eio(P(t,T(11)+i*.08,T(11)+.45+i*.08))));
+ fade('drawL',T(11)+.2,8,.4);
+ fade('tagR',T(12)-.15,24,.4);typ('tR','GUY ROUX · ENTRENADOR Y JUGADOR',t,T(12),E(13)+.6);
+ // 4 · pizarra: conos y cinco chapas; una sale hacia la foto de Cantona
+ const pbd=eo(P(t,T(20)-.3,T(20)+.2));$('board').style.opacity=pbd;$('board').style.transform=`translateY(${(1-pbd)*30}px)`;
+ cones.forEach((c,i)=>c.setAttribute('opacity',eo(P(t,T(21)+i*.04,T(21)+.2+i*.04))));
+ const ex=eio(P(t,T(26)-.1,T(27)+.2));
+ chipsB.forEach((c,i)=>{const q=eo(P(t,T(22)+i*.09,T(22)+.5+i*.09));let x=mix(-40,cp[i][0],q),y=cp[i][1];
+  if(i===2){x=mix(x,bc[0]-60,ex);y=mix(y,470,ex);c.setAttribute('fill',ex>.4?'#6AA8FF':'#636DFF');c.setAttribute('r',24+8*Math.sin(Math.PI*Math.min(1,ex*1.2)))}
+  c.setAttribute('cx',x);c.setAttribute('cy',y);c.setAttribute('opacity',q)});
+ exitA.setAttribute('opacity',.8*eo(P(t,T(25),T(26)))*(1-.5*P(t,T(28),E(28))));
+ const pc=eo(P(t,T(27)-.3,T(27)+.3));$('cant').style.opacity=pc;$('cant').style.transform=`translateY(${(1-pc)*60}px) rotate(${1.6*pc}deg)`;
+ fade('tagC',T(28)-.05,24,.4);typ('tC','CANTERA DEL AUXERRE',t,T(28)+.1,E(28)+.5);
+ // 5 · trofeos: se dibujan en «ganó» y se encienden en «Liga» y «Copa»
+ tro.forEach((o,j)=>{o.paths.forEach((p,i)=>draw(p,eio(P(t,T(31)-.1+j*.15+i*.06,T(31)+.4+j*.15+i*.06))));
+  const on=P(t,T(j?34:32)-.05,T(j?34:32)+.3);o.paths.forEach(p=>{p.setAttribute('stroke',on>.2?'#6AA8FF':'#26335a')});
+  o.g.style.filter=on>0?`drop-shadow(0 0 ${26*eo(on)}px rgba(106,168,255,.5))`:'none';o.lab.setAttribute('opacity',eo(on));o.lab.setAttribute('fill',on>.3?'#F4F7FB':'#5d6888')});
+ fade('lc',E(34)-.05,20,.45);fade('troL',E(34)+.1,8,.4);
+ // 6 · calendario 1961 → 2005, «44 AÑOS», Guy Roux en 2008 y el banquillo
+ const pcal=eo(P(t,T(35)-.45,T(35)+.05));$('cal').style.opacity=pcal;$('cal').style.transform=`translateY(${(1-pcal)*40}px)`;
+ const fl=P(t,T(35),T(36)+.25),yr=Math.round(mix(1961,2005,eio(fl)));$('calY').textContent=yr;
+ const sub=(eio(fl)*44)%1;$('calF').textContent=Math.max(1961,yr-1);$('calF').style.opacity=fl>0&&fl<1?1-sub:0;$('calF').style.transform=`rotateX(${-90*sub}deg)`;
+ $('calY').style.color=fl>=1?'#6AA8FF':'#F4F7FB';
+ const pr2=eo(P(t,T(35)-.2,T(35)+.3));$('roux2').style.opacity=pr2;$('roux2').style.transform=`translateY(${(1-pr2)*40}px) rotate(${1.5*pr2}deg)`;
+ const p44=P(t,T(36)+.1,T(36)+.45);$('big44').style.opacity=eo(p44);$('big44').style.transform=`scale(${1.18-.18*eb(p44)})`;
+ bench.forEach((p,i)=>draw(p,eio(P(t,T(39)+i*.07,T(40)+.3+i*.07))));
+ // 7 · «FICHA» tachada; «SE CONSTRUYE» en ultravioleta (única vez); los peldaños se marcan uno a uno
+ const s2=eo(P(t,T(42)-.2,T(42)+.3));$('st2').style.opacity=s2;$('st2').style.transform=`translateY(${(1-s2)*30}px)`;
+ S2.chip.setAttribute('opacity',s2);S2.chip.setAttribute('cx',S2.steps[3].cx);S2.chip.setAttribute('cy',S2.steps[3].cy);
+ S2.steps.forEach((s,i)=>litStep(s,P(t,T(48)+i*.22,T(48)+i*.22+.08)));
+ draw($('strP'),eio(P(t,E(47)-.12,E(47)+.25)));
+ const uv=P(t,T(49)-.05,T(49)+.3);const col=`rgb(${Math.round(mix(244,139,uv))},${Math.round(mix(247,92,uv))},${Math.round(mix(251,246,uv))})`;
+ const cs=$('q3').children[1];cs.style.color=col;cs.style.textShadow=uv>.3?`0 0 ${30*uv}px rgba(139,92,246,.55)`:'none';
+ fade('cred',T(48),10,.6);
+};
+function setupStrike(){const q=$('q2'),f=q.children[2];const x0=q.offsetLeft+f.offsetLeft-6,x1=x0+f.offsetWidth-f.offsetWidth*.12+12,y=60;
+ $('strP').setAttribute('d',`M${x0} ${y+6} C${x0+(x1-x0)*.35} ${y-8} ${x0+(x1-x0)*.7} ${y+10} ${x1} ${y-4}`)}
+document.fonts.ready.then(()=>{setupStrike()}).then(()=>Promise.all([...document.images].map(i=>i.complete?1:new Promise(r=>{i.onload=r;i.onerror=r})))).then(()=>{frame(0);window.ready=true});
+</script></body></html>
