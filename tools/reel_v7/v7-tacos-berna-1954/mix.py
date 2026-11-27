@@ -5,7 +5,7 @@ La voz se abre en cinco silencios para que quepan los viajes de cámara: 0,4 s e
 0,5 s en 8,85 («llovió... Fritz»), 0,4 s en 13,11 («campo... Y sus botas») y 0,5 s en 17,61 («largos... Alemania»); words.json ya lleva esos desplazamientos.
 Remontaje (27/11, crítica de Andrés): el remate «CÓMO LLEGAS.» se queda quieto hasta 26,0 s (antes 25,1), el marcador suena al entrar con «Mundial» y las tablillas
 suenan al aparecer; el cierre es el audio de tools/reel_v6/outro/outro2.mp4 desde su inicio, a la vez que el fundido de 0,5 s del vídeo.
-python3 mix.py voz.mp3 outro2.mp4 out.wav   (necesita words.json)"""
+python3 mix.py voz.mp3 outro2.mp4 sting.mp3 out.wav   (necesita words.json; sting = Epidemic «Musical, Loop, Logo, Calm, Piano 01», como en v7-diez-a-tres-brooks-1980)"""
 import sys, json, subprocess, numpy as np
 SR = 48000; OUT = 26.0; DUR = OUT + 4.0   # la voz acaba en 24,9 s; a 26,0 empieza el fundido de 0,5 s al cierre (outro2, 4 s)
 CUTS = [(2.42, .4), (6.76, .4), (8.85, .5), (13.11, .4), (17.61, .5)]
@@ -60,7 +60,8 @@ cuts = [0.0] + [c for c, _ in CUTS] + [len(V) / SR]; sh = 0.0
 for k in range(len(cuts) - 1):
     put(vox, V[int(cuts[k] * SR):int(cuts[k + 1] * SR)], cuts[k] + sh)
     if k < len(CUTS): sh += CUTS[k][1]
-put(vox, np.repeat(ld(sys.argv[2], 1), 2, 1), OUT)                  # audio del cierre outro2, desde su inicio
+put(vox, ld(sys.argv[2]), OUT, dur=4.0)                              # audio del cierre outro2 desde su inicio (su voz empieza a los 0,3 s)
+sti = np.zeros((N, 2)); put(sti, ld(sys.argv[3]), OUT, .22, dur=4.0, fi=.3, fo=1.2)   # sting de piano bajo
 e = np.abs(vox[:, 0]); hop = 480; ev = np.array([e[i:i + hop].max() for i in range(0, N, hop)])
 ev = np.minimum(1, ev / (np.percentile(ev[ev > 0], 90) + 1e-9)); sm = np.zeros_like(ev)
 for i in range(1, len(ev)): a = .45 if ev[i] > sm[i - 1] else .05; sm[i] = sm[i - 1] + a * (ev[i] - sm[i - 1])
@@ -68,8 +69,8 @@ duck = np.interp(np.arange(N), np.arange(len(sm)) * hop, 1 - .42 * sm)[:, None]
 R = lambda x: 20 * np.log10(np.sqrt((x[:int(OUT * SR)] ** 2).mean()) + 1e-12)
 vg = 10 ** ((-19 - R(vox)) / 20); vox *= vg
 mg = 10 ** ((-31 - R(mus)) / 20); mus *= mg
-mix = vox + mus * duck + sfx * vg
+mix = vox + mus * duck + sfx * vg + sti * vg
 mix /= max(1, np.abs(mix).max() / .9)
-fo = int((DUR - .8) * SR); mix[fo:] *= np.linspace(1, 0, N - fo)[:, None]
+fo = int((DUR - .6) * SR); mix[fo:] *= np.linspace(1, 0, N - fo)[:, None]
 print('voz %.1f  música %.1f  sfx %.1f  pico %.2f' % (R(vox), R(mus * duck), R(sfx * vg), np.abs(mix).max()))
-subprocess.run(['ffmpeg', '-v', 'error', '-y', '-f', 'f32le', '-ar', str(SR), '-ac', '2', '-i', '-', sys.argv[3]], input=mix.astype(np.float32).tobytes(), check=True)
+subprocess.run(['ffmpeg', '-v', 'error', '-y', '-f', 'f32le', '-ar', str(SR), '-ac', '2', '-i', '-', sys.argv[4]], input=mix.astype(np.float32).tobytes(), check=True)

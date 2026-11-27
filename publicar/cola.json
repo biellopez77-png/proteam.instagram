@@ -1519,7 +1519,7 @@
   "id": "v7-tacos-berna-1954",
   "kind": "reel",
   "files": [
-   "https://d2ol7oe51mr4n9.cloudfront.net/user_3M2z7lIyzIPYtjNHcxRWFNk6wi7/46f1605e-6069-4cf1-b90f-29339b23bb9c.mp4"
+   "https://d2ol7oe51mr4n9.cloudfront.net/user_3M2z7lIyzIPYtjNHcxRWFNk6wi7/b8db7439-9591-4d6d-ab2b-5114a3a2d304.mp4"
   ],
   "caption": "Cuatro años sin perder. Y en la final, llovió.\n\nHungría llegó a la final del Mundial de 1954 sin perder desde 1950 y tras ganar 8-3 a Alemania en la fase de grupos. En Berna llovió: Fritz Walter, el capitán alemán, rendía mejor cuanto peor estaba el campo, y en sus botas cambiaron los tacos de rosca por otros más largos. Alemania ganó 3-2 (The Irish Times; DPMA, Oficina Alemana de Patentes; Museo Alemán del Fútbol).\n\n¿Preparas a tu equipo para el campo que habrá o para el que te gustaría tener?\n\n¿Te ha servido? Dale like y síguenos para más vídeos como este.\n\nFuentes: The Irish Times, DPMA, Deutsches Fußballmuseum. Fotos: Comet Photo AG, Zúrich (CC BY-SA 4.0) y Sandstein (CC BY 3.0), vía Wikimedia Commons. Bota, tacos, marcador y calendario: recreación.\nMúsica y efectos: Epidemic Sound\n\n#entrenador #entrenadordefutbol #fútbol #futbolbase #historiadelfutbol #Mundial1954 #MilagrodeBerna #FritzWalter #preparación #ProTeam",
   "state": "revisión",
@@ -1530,11 +1530,13 @@
    "status": "pendiente"
   },
   "added": "2026-11-27T03:04:00+01:00",
-  "nota": "v7 historia con fotos (final del Mundial 1954, tacos de rosca). Guion: agencia/fabrica-v7/guiones/v7-tacos-berna-1954.md (Dani A). Montaje: Marta B (02). Créditos: tools/reel_v7/v7-tacos-berna-1954/CREDITOS.md",
+  "nota": "v7 historia con fotos (final del Mundial 1954, tacos de rosca). Guion: agencia/fabrica-v7/guiones/v7-tacos-berna-1954.md (Dani A). Montaje: Marta B (02). Créditos: tools/reel_v7/v7-tacos-berna-1954/CREDITOS.md · Remontaje 27/11 (Marta A) tras la auditoría 83/100: TRES A DOS dentro del cuadro, remate quieto hasta 26,0 s, reloj sin el 2-3, marcador con «Mundial», créditos a 17 px; cierre outro2 con su audio. 30,0 s.",
   "files_old": [
-   "https://d2ol7oe51mr4n9.cloudfront.net/user_3M2z7lIyzIPYtjNHcxRWFNk6wi7/015b942e-cd29-485c-8b4d-e75d19cfa1b4.mp4"
+   "https://d2ol7oe51mr4n9.cloudfront.net/user_3M2z7lIyzIPYtjNHcxRWFNk6wi7/015b942e-cd29-485c-8b4d-e75d19cfa1b4.mp4",
+   "https://d2ol7oe51mr4n9.cloudfront.net/user_3M2z7lIyzIPYtjNHcxRWFNk6wi7/46f1605e-6069-4cf1-b90f-29339b23bb9c.mp4"
   ],
-  "cierre": "outro2"
+  "cierre": "outro2",
+  "updated": "2026-11-27T11:45:00+01:00"
  },
  {
   "id": "v7-uno-por-ciento-riley",
