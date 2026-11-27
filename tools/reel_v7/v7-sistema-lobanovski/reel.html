@@ -199,7 +199,7 @@ fly(6.55,1700,3000,1.04); tl.to(cam,{z:1.01,cy:3030,duration:3.65,ease:'sine.out
 fly(11.1,540,3000,1.03); tl.to(cam,{z:1.0,cy:3020,duration:3.35,ease:'sine.out'},12.0);
 fly(15.35,540,5040,1.04); tl.to(cam,{z:1.01,cy:5070,duration:2.95,ease:'sine.out'},16.25);
 // se queda en los trofeos durante la pausa de «Recopas...» y viaja en el último tramo: llega con «Porque»
-fly(19.2,1700,5040,1.04); tl.to(cam,{z:1.0,cy:5060,duration:3.85,ease:'sine.out'},20.1);
+fly(19.2,1700,5040,1.04); tl.to(cam,{z:1.0,cy:5060,duration:2.2,ease:'sine.out'},20.1);   // r3: la cámara se para a 22,3 s y el remate queda quieto hasta el fundido a negro
 const g=$('grain').getContext('2d'),gi=g.createImageData(360,640);let sd=1;const RN=()=>(sd=(sd*16807)%2147483647)/2147483647;
 function camAt(t){tl.seek(t,false);return [cam.cx,cam.cy,cam.z]}
 window.frame=function(t){window._t=t;
@@ -247,12 +247,13 @@ window.frame=function(t){window._t=t;
  ['cup1','cup2'].forEach((id,i)=>{const t0=T(45)+i*.3-.1;const el=$(id);draw(el.querySelector('.cA'),eo(P(t,t0,t0+.45)));draw(el.querySelector('.cB'),eo(P(t,t0+.15,t0+.6)));draw(el.querySelector('.cC'),eo(P(t,t0+.25,t0+.7)))});
  [['sc1',T(46)],['sc2',T(46)+.35]].forEach(([id,t0])=>{const q=P(t,t0,t0+.2);$(id).style.opacity=q>0?1:0;$(id).style.transform=`rotate(${id=='sc1'?-2:2}deg) scale(${1.4-.4*eo(q)})`});
  // 6 · pizarra: EQUIPO > SUMA (el «>» en ultravioleta, única vez)
- CH2.forEach((c,i)=>{const q=eo(P(t,T(49)-.1+i*.03,T(49)+.2+i*.03));c.setAttribute('opacity',q)});
+ // r3: la red de EQUIPO empieza a dibujarse con «Porque», sin marco vacío
+ CH2.forEach((c,i)=>{const q=eo(P(t,T(47)-.1+i*.04,T(47)+.2+i*.04));c.setAttribute('opacity',q)});
  const grow=eio(P(t,T(51)-.05,T(51)+.45));$('chips2').setAttribute('transform',`translate(230,420) scale(${1+.12*grow}) translate(-230,-420)`);$('net2').setAttribute('transform',`translate(230,420) scale(${1+.12*grow}) translate(-230,-420)`);
- draw($('net2'),eio(P(t,T(49)+.1,T(50)+.4)));
+ draw($('net2'),eio(P(t,T(47)+.35,T(50)+.3)));
  draw($('gt'),eo(P(t,T(51)-.05,T(51)+.35)));$('gt').style.filter=`drop-shadow(0 0 ${14*P(t,T(51)+.2,T(51)+.6)}px rgba(139,92,246,.6))`;
  ON.forEach((o,i)=>{o.setAttribute('opacity',eo(P(t,T(53)+i*.045,T(53)+i*.045+.2)))});draw($('plus'),P(t,T(53)+.1,E(54)+.1));
- $('tE').setAttribute('opacity',eo(P(t,T(49),T(49)+.35)));$('tS').setAttribute('opacity',eo(P(t,T(54),T(54)+.35)));
+ $('tE').setAttribute('opacity',eo(P(t,T(48),T(48)+.35)));$('tS').setAttribute('opacity',eo(P(t,T(54),T(54)+.35)));
  $('cred').style.opacity=eo(P(t,T(55),T(55)+.5));
 };
 document.fonts.ready.then(()=>Promise.all([...document.images].map(i=>i.complete?1:new Promise(r=>{i.onload=r;i.onerror=r})))).then(()=>{frame(0);window.ready=true});
