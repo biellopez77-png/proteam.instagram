@@ -1,0 +1,9 @@
+{
+ "numero": "Nº 00",
+ "seccion": "La salida de noviembre",
+ "formato": "story",
+ "laminas": [
+  {"tipo": "pregunta", "foto": "OBJETO_GUANTES_CONO_FOTO_001", "pos": "50% 50%", "cap": "Antes del parón de Navidad", "big": "¿QUÉ TE\nFUNCIONÓ?", "bigLines": 2, "serif": "Tres cosas de este otoño, con su ajuste.", "size": 160, "serifSize": 90, "lh": 1.0},
+  {"tipo": "encuesta", "pre": "Lo que salía en noviembre", "big": "ENERO:", "serif": "¿lo tienes apuntado\no te lo sabes de memoria?", "foto": "ENTRENADOR_ENTRENADORA_INDICA_FOTO_001", "size": 220, "serifSize": 96}
+ ]
+}

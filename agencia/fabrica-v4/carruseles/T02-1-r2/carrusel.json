@@ -1,0 +1,17 @@
+{
+ "numero": "Nº 00",
+ "seccion": "La salida de noviembre",
+ "formato": "carrusel",
+ "laminas": [
+  {"tipo": "palabra", "palabra": "ENERO", "foto": "OBJETO_GUANTES_CONO_FOTO_001", "fig": "Fig. 1 — Primer martes después de Reyes", "hora": "Fútbol base", "serif": "Y la salida ya no sale.", "size": 290, "left": 30},
+  {"tipo": "figuras", "letras": "NOV.", "figs": [
+    {"foto": "STAFF_CHARLA_ENTRENAMIENTO_FOTO_001", "lab": "Fig. 2 — Noviembre.\nLa salida de tres sale."},
+    {"foto": "INSTALACION_CAMPO_ENTRENAMIENTO_FOTO_001", "lab": "Fig. 3 — Tres semanas\nsin campo."},
+    {"foto": "ENTRENADOR_ENTRENADORA_INDICA_FOTO_001", "lab": "Fig. 4 — Enero.\nNadie se coloca."}], "size": 300, "left": 40},
+  {"tipo": "portada", "l1": "LA EXPLICAS", "serif": "otra vez,", "l2": "DESDE CERO.", "fotos": ["ENTRENADOR_ENTRENADORA_INDICA_FOTO_001", "OBJETO_BALON_LINEA_FOTO_001", "INSTALACION_CANTERA_ATLETICO_FOTO_001"], "cap": "Centrales pegados al portero. El pivote, escondido.", "size": 140},
+  {"tipo": "frase", "foto": "STAFF_TRABAJO_FOTO_007", "pos": "55% 35%", "pre": "¿Qué ajuste la hizo salir?", "serif": "No estaba\nescrito.", "uv": true, "size": 150, "uvW": 560},
+  {"tipo": "dentro", "palabra": "CINCO", "foto": "STAFF_CHARLA_ENTRENAMIENTO_FOTO_001", "serif": "minutos.", "cap": "En el último entreno de diciembre,\nantes de irte.", "size": 300, "top": 400, "serifSize": 130},
+  {"tipo": "final", "cap": "Para llevarte · ejemplo de salida de tres", "serif": "Lo que funcionaba,", "big": "CON SU AJUSTE.", "bigLines": 1, "size": 120, "lista": ["Centrales abiertos.", "Pivote al lado del balón.", "Portero espera."], "firma": "enero empieza por ahí."},
+  {"tipo": "cierre", "foto": "INSTALACION_CAMPO_ENTRENAMIENTO_FOTO_001", "pos": "50% 50%", "pre": "Fin de la página", "serif": "¿Te ha servido?", "big": "DALE LIKE", "resto": "y síguenos para más contenido\ncomo este.", "size": 200, "serifSize": 120}
+ ]
+}
