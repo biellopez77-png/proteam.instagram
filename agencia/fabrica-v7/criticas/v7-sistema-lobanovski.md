@@ -1,42 +1,52 @@
-# Crítica · v7-sistema-lobanovski «Veintidós piezas» (historia con fotos)
+# Crítica · v7-sistema-lobanovski «Veintidós piezas» · r2
 
-**Andrés (05) · 27/11/2026 · Nota: 80/100 → NO APROBADO. Vuelve a montaje.**
+**Andrés (05) · 27/11/2026 · Nota: 74/100 → NO APROBADO. Vuelve a montaje.**
 
-Material revisado: `tools/reel_v7/v7-sistema-lobanovski/video_mudo.mp4` (56 fotogramas, uno cada 0,5 s, a 270 px de ancho, y recortes a 540 px donde hacía falta), `reel.html`, `mix.py`, `CREDITOS.md` y el vídeo final de cloudfront (`24f62949-…mp4`, 28,1 s), descargado y analizado en el sandbox de Higgsfield.
+Material revisado: el vídeo de la cola (`publicar/cola.json` → `ba0ddccd-625e-4931-877f-5d7365248851.mp4`, **26,0 s**), descargado en el sandbox de Higgsfield. Lo he mirado en fotogramas cada 0,5 s y he hecho capturas más finas entre 18,6 y 25,5 s. También lo he transcrito con faster-whisper small y he medido niveles cada 0,1 s.
+Ojo: el vídeo de la tarea (`284685c0-…`, en `files_old`) no es el de la cola. Además, el `video_mudo.mp4` del repo (28,07 s) es antiguo: todavía acaba con el cierre retirado («Estamos terminando la app. Síguenos para no perderte nada. Muy pronto, novedades»).
 
-## Comprobaciones duras
-- **Voz entera:** faster-whisper small oye las 58 palabras de la historia: «Valeriy Lobanovsky estudió ingeniería térmica. En una fiesta conoció a un estadístico, Anatoly Zelenshov. Juntos contaron cada tiro, cada pase y cada error de sus jugadores. Para él, el fútbol eran 22 piezas, dos sistemas de 11. Con esas cifras, el dínamo de Kiev ganó dos recopas. Porque un equipo vale más que la suma de sus 11.» «Zelentsov» se oye «Zelenshov»: se entiende. El cierre común se oye entero (22,7–26,4 s).
-- **Niveles:** −18,4 LUFS integrados, true peak −1,0 dBFS. La voz va entre −19 y −21 dB RMS, y las pausas de solo música, entre −30 y −35 dB: la voz va unos 12–13 dB por encima, como pide el formato. El pico de muestra (−1,1 dBFS a 8,97 s) es el arranque de «cada», no un efecto. Los efectos no asoman.
-- **Pausa del remate:** `mix.py` abre la voz 0,5 s en 19,25 s y `words.js` ya lleva el desplazamiento: «Porque» suena a 19,84 s y entra en pantalla a 20,0 s. Cuadra.
-- **Destellos:** ninguno. Los viajes no tienen saltos de luz.
-- **Fotos:** las 3 son CC0 (Nationaal Archief / Anefo, comprobadas el 25/11). No se insinúa apoyo de nadie, y no salen escudos del Dinamo ni logos de la UEFA. Zelentsov va como tarjeta dibujada, sin cara. Bien.
-- **Música:** real, de Epidemic («Soft Piano, Strings, Calm, Logo 02/03»).
-- Sin precios, fechas de lanzamiento, cifras de apuntados ni el nombre de Biel.
+## Lo que se ha corregido desde la r1 (80/100)
+- **EQUIPO > SUMA:** ahora sí. La red y «EQUIPO» van a la izquierda, el «>» ultravioleta en medio y los unos y «SUMA» a la derecha (21,3–22,0 s). Corrección bloqueante resuelta.
+- **Contador:** mientras cuenta solo salen las cifras («7», «21»), y «22 PIEZAS:» aparece al llegar a 22. Bien.
+- **Rótulo de los trofeos:** entra con los trofeos (18,6 s). Bien.
+- **Márgenes y créditos del pie:** bien.
+- **Cierre outro2:** el audio dice «Dale like y síguenos para más vídeos como este» (22,32–25,14 s) y en pantalla se lee «¿Te ha servido? · Dale like y síguenos · para más vídeos como este». No se menciona la app ni en la voz ni en la pantalla.
+- **Caption de la cola:** termina con el cierre nuevo, sin app ni enlace. Bien.
+
+## Lo que suspende (bloqueante)
+1. **Falta la última palabra de la historia.** Whisper oye «…vale más que la suma de sus…» (último tramo, 22,06–22,32 s), y el nivel se hunde hasta −46 dB a 22,2 s. Justo después entra «Dale like…», a 22,32 s. **El «once» del remate no suena.** Al recortar de 28,1 a 26,0 s, el cierre se ha comido la última palabra, y es la palabra que cierra la idea («la suma de sus once»).
+2. **La frase de la pizarra no llega a leerse entera.** A 22,0 s, «de» apenas empieza a aparecer, y a 22,3 s «de sus *once*.» ya sale apagado dentro del fundido. El remate no se queda nunca quieto y completo. En la r1 pedí lo contrario: que la frase se viera entera y quieta antes de irse.
+3. **El logo se solapa con la pizarra.** A 22,3 s, «ProTeam» aparece en grande encima de la red de EQUIPO y del «>» (fundido cruzado, no fundido a negro). Es texto solapado, y por eso suspende aunque sea medio segundo. En Rangnick, Reep, Villas-Boas y Dean Smith ya se monta así: fundido a negro de 0,5 s y luego outro2.
+
+## Otros puntos
+- **Pizarra vacía (19,7–20,2 s):** la cámara llega a un marco vacío mientras suena «Porque un». Es medio segundo muerto: que la red de EQUIPO empiece a dibujarse con «Porque», o que la cámara llegue unos 0,3 s más tarde.
+- **Niveles:** −18,8 LUFS y pico de −1,3 dBFS. La voz va entre −17 y −20 dB y las pausas de solo música, entre −30 y −35 dB. Bien.
+- **Repo desfasado:** `video_mudo.mp4` y `CREDITOS.md` no recogen la r2 ni el cierre outro2. Hay que subir el mudo nuevo y apuntar la versión de la cola.
+- **Panel:** el caption del post todavía terminaba con «Estamos terminando la app de ProTeam…» y el vídeo era el `284685c0`. Lo he puesto igual que la cola (caption con el cierre nuevo y vídeo `ba0ddccd`) para que nadie publique la versión vieja.
 
 ## Verdad y fuentes
-La voz está bien sostenida por fuentes: ingeniería térmica (Wilson/The Guardian, Engelsberg, Breaking the Lines), la fiesta con Zelentsov (Wilson, Engelsberg), tiros, pases y errores contados (Engelsberg), 22 elementos en dos subsistemas de 11 (Wilson; Breaking the Lines), las Recopas de 1975 y 1986, las dos por 3-0 (Wikipedia, UEFA), y la idea final (Wilson).
-**Pero la pizarra final dice lo contrario que la voz.** En `reel.html` la «SUMA» está a la izquierda (x=210), el «EQUIPO» a la derecha (x=770) y el trazo `#gt` es `M440 300 L540 380 L440 460`, o sea, un «>» que abre hacia la izquierda. En pantalla se lee «SUMA > EQUIPO» (21,0–22,4 s), justo cuando la voz dice «un equipo vale más que la suma». El guion pide «EQUIPO > SUMA». Es el remate y el único ultravioleta del vídeo: es lo que se queda en la cabeza.
+Las mismas que en la r1, y todas se sostienen: ingeniería térmica, la fiesta con Zelentsov, los tiros, pases y errores, los 22 elementos en dos sistemas de 11 y las Recopas de 1975 y 1986, las dos por 3-0. Las fotos son CC0 (Anefo, Nationaal Archief). No hay precios, fechas, cifras de apuntados ni el nombre de Biel. La música es real, de Epidemic.
 
 ## Nota por apartados
 | apartado | nota | por qué |
 |---|---|---|
-| Historia real y gancho | 16/20 | Buena historia (un ingeniero térmico y un estadístico en una fiesta), pero el gancho arranca con el nombre y tarda 3 s en sorprender. |
-| Cada cosa que dice la voz se anima en su momento | 16/20 | Muy bien: el termómetro que sube en «térmica», las copas que chocan en «fiesta», la tarjeta que se escribe letra a letra en «Zelentsov», un palote por palabra en TIRO · PASE · ERROR, 22 fichas y la red de 11 en «dos sistemas de once», trofeos 1975 y 1986 en «dos Recopas». Lo flojo: el contador se lee como «7», «14 PIEZAS:» y «21 PIEZAS:» (13,0–13,9 s) mientras la voz ya dice «piezas»; el rótulo «TROFEOS GENÉRICOS: RECREACIÓN» está a la vista desde 16,0 s, antes que los trofeos (18,1 s). |
-| Transiciones | 13/15 | Viajes suaves en las pausas y sin destellos. En 19,3–19,8 s la cámara llega a una pizarra vacía y se queda ahí medio segundo. |
-| Sonido | 13/15 | Voz confiada y clara, música suave a ~12 dB y efectos discretos. Pico −1,0 dBTP; el arranque de «cada» (8,97 s) es lo único que sobresale. |
-| Verdad y fuentes | 10/15 | Todo con fuente, pero el signo de la pizarra invierte la idea final. |
-| Estética | 12/15 | La paleta, las tipografías y las fotos están bien. La segunda línea de la frase final crece alineada a la izquierda pegada al borde («vale», «vale más», 20,4–21,4 s, a ~10 px del borde) y luego salta al centro. El retrato inicial y la foto de la tribuna (0,0 y 7,0–7,5 s) quedan casi a sangre por la izquierda. Los créditos del pie, ilegibles en el móvil. |
-| **Total** | **80/100** | |
+| Historia real y gancho | 16/20 | Igual que en la r1. El gancho arranca con el nombre. |
+| Cada cosa que dice la voz se anima en su momento | 15/20 | Contador y trofeos arreglados, pero la pizarra está vacía en «Porque un» y el remate no llega a mostrarse entero. |
+| Transiciones | 10/15 | La pizarra pasa a outro2 con un fundido cruzado y el logo queda encima de la red. |
+| Sonido | 8/15 | El «once» final está cortado, y el cierre entra sin respiro (0 s entre «sus» y «Dale»). |
+| Verdad y fuentes | 13/15 | El signo ya está bien, pero la frase final queda incompleta («la suma de sus…»). |
+| Estética | 12/15 | Paleta, fotos y márgenes bien. Pierde puntos por el logo solapado. |
+| **Total** | **74/100** | Suspende por texto solapado y por el remate cortado. |
 
 ## Correcciones (para Marta, 02)
-1. **(Bloqueante) Signo de la pizarra.** Que se lea «EQUIPO > SUMA». O cambias el trazo `#gt` a `M540 300 L440 380 L540 460` («<» entre SUMA y EQUIPO), o intercambias las x de `tS` (770) y `tE` (210) y mueves la red y los unos de sitio. Prefiero lo segundo: EQUIPO a la izquierda, «>» ultravioleta, SUMA a la derecha, como dice la voz.
-2. **Segunda línea de la frase final (20,4–22,4 s).** Que crezca centrada desde el principio, igual que la primera, con al menos 60 px de margen a cada lado, y sin salto al centro al completarse.
-3. **Contador de las 22 fichas (13,0–13,9 s).** Que «PIEZAS:» no aparezca hasta que el contador llegue a 22. Mientras cuenta, solo el número.
-4. **Rótulo de recreación de los trofeos.** Que entre con los trofeos (18,1 s), no a 16,0 s.
-5. **Pausa de 19,3–19,8 s.** Que la cámara se quede en los trofeos durante la pausa de «Recopas...» (como pide el guion) y viaje a la pizarra en el último tramo, para llegar con «Porque», no antes.
-6. **Márgenes de las fotos.** El retrato del primer fotograma y la foto de la tribuna a ≥ 40 px del borde izquierdo.
-7. (Mejora) Créditos del pie a ≥ 17 px, como en el remontaje de Auerbach.
+1. **(Bloqueante) Que vuelva el «once».** Deja entera la voz de la historia, de 0 a ~22,9 s (en la r1, «once» acababa hacia 22,8–22,9 s con la apertura de 0,5 s). Después, 0,3–0,6 s de silencio solo con música y, a continuación, outro2. La duración total quedará en unos 27,5–28 s.
+2. **(Bloqueante) Remate entero y quieto.** «Porque un equipo / vale más que la *suma* de sus *once*.» entero, con la pizarra EQUIPO > SUMA completa, quieto al menos 0,8 s después de que suene «once». Luego, apagado.
+3. **(Bloqueante) Fundido a negro de 0,5 s antes de outro2,** como en Rangnick r2: que el logo de ProTeam no aparezca nunca encima de la pizarra.
+4. Que la red de EQUIPO empiece a dibujarse con «Porque» (20,16 s), o que la cámara llegue a la pizarra unos 0,3 s más tarde, para que no se vea un marco vacío.
+5. Sube el `video_mudo.mp4` nuevo, con outro2, y anota en `CREDITOS.md` la r3 y la URL de la cola. El caption de la cola ya está bien: no lo toques.
+6. Comprueba con whisper que se oigan las 58 palabras, «once» incluido, y luego «Dale like y síguenos para más vídeos como este».
 
-El audio está bien: se puede reutilizar tal cual (voz, música, efectos y la apertura de 0,5 s), siempre que los tiempos de pantalla no cambien.
+Todo lo demás está aprobado: voz, música, efectos, fotos, contador, trofeos y pizarra EQUIPO > SUMA. En la r3 solo miraré el tramo de 19,5 s al final y haré un repaso rápido completo.
 
-Cuando esté montado, vuelvo a auditar solo lo cambiado más un repaso completo de fotogramas.
+---
+*Crítica anterior (r1, 80/100): en el historial de git de este archivo.*
