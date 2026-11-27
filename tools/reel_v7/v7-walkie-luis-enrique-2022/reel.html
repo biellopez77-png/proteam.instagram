@@ -1,0 +1,268 @@
+<!doctype html><html><head><meta charset="utf-8">
+<!-- v7 · «La voz del míster» (Luis Enrique, Las Rozas, sept. 2022: andamio, walkie-talkie y un altavoz en cada chaleco).
+     Un solo plano sobre una pared grande; cada cosa que dice la voz se anima en su palabra.
+     Base: tools/reel_v7/wooden/reel.html y v7-lenguaje-corporal-auriemma. Transiciones: viajes 0,9 s power2.inOut,
+     zoom ×0,9 como mínimo, desenfoque ≤ 4 px, sin destellos (agencia/sistema-v7/FORMATO.md). -->
+<style>
+@font-face{font-family:S;src:url(fonts/instrument-serif-latin-400-normal.woff2)}
+@font-face{font-family:SI;src:url(fonts/instrument-serif-latin-400-italic.woff2)}
+@font-face{font-family:J;font-weight:500;src:url(fonts/plus-jakarta-sans-latin-500-normal.woff2)}
+@font-face{font-family:J;font-weight:700;src:url(fonts/plus-jakarta-sans-latin-700-normal.woff2)}
+@font-face{font-family:J;font-weight:800;src:url(fonts/plus-jakarta-sans-latin-800-normal.woff2)}
+@font-face{font-family:J;font-weight:800;font-style:italic;src:url(fonts/plus-jakarta-sans-latin-800-italic.woff2)}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#02050F}
+#cam{position:absolute;left:0;top:0;width:2320px;height:5840px;transform-origin:0 0;background:#02050F url(wall2.jpg) 0 0/2372px 5840px no-repeat}
+.sc{position:absolute;width:1080px;height:1920px}
+.a{position:absolute}
+.serif{font-family:S;color:#F4F7FB;white-space:nowrap;line-height:1}
+.bold{font-family:J;font-weight:800;color:#F4F7FB;white-space:nowrap;letter-spacing:-.02em;line-height:1}
+.acc{font-family:J;font-weight:800;font-style:italic;color:#6AA8FF}
+.strong{font-family:J;font-weight:800;color:#F4F7FB;letter-spacing:-.02em}
+.uv{font-family:J;font-weight:800;color:#8B5CF6;letter-spacing:-.02em}
+.w{display:inline-block;margin-right:.24em}
+.c{left:0;width:1080px;text-align:center}
+.panel{background:#0C1323;border:1px solid #26335a;border-radius:18px;box-shadow:0 40px 90px rgba(0,0,0,.6)}
+.mat{background:#E9EEF6;padding:16px 16px 70px;border:6px solid #0b0f1a;box-shadow:0 30px 70px rgba(0,0,0,.6)}
+.mat small{position:absolute;left:20px;right:16px;bottom:12px;font:500 14px J;color:#5d6888;letter-spacing:.06em;line-height:1.35}
+.arc{background:#E9E4D6;box-shadow:0 30px 70px rgba(0,0,0,.6)}
+.k{font:700 22px J;color:#8f9bb8;letter-spacing:.16em;white-space:nowrap}
+.rec{font:500 17px J;color:#5d6888;letter-spacing:.16em;white-space:nowrap}
+.cred{font:500 17px J,'DejaVu Sans',sans-serif;color:#5d6888;letter-spacing:.04em;line-height:1.5}
+.tag{position:absolute;font:800 20px J;letter-spacing:.2em;color:#02050F;background:#B9E0FF;padding:6px 12px;border-radius:6px;white-space:nowrap}
+.dr{fill:none;stroke-linecap:round;stroke-linejoin:round}
+#grain{position:absolute;inset:0;width:1080px;height:1920px;mix-blend-mode:screen;opacity:.09;pointer-events:none;image-rendering:pixelated}
+</style></head><body><div id="cam">
+
+<!-- A · Septiembre de 2022. (540,960) -->
+<div class="sc" style="left:0;top:0">
+ <div class="a serif c" id="l0a" style="top:250px;font-size:104px"></div>
+ <div class="a arc" id="cal" style="left:250px;top:470px;width:580px;height:700px;border-radius:6px;overflow:hidden">
+  <div style="height:150px;background:#636DFF;color:#F4F7FB;font:800 52px J;letter-spacing:.14em;text-align:center;line-height:150px">SEPTIEMBRE</div>
+  <div class="bold" style="color:#0b0f1a;font-size:190px;text-align:center;margin-top:34px;letter-spacing:-.04em">2022</div>
+  <svg style="position:absolute;left:40px;top:430px" width="500" height="240" viewBox="0 0 500 240" id="days"></svg>
+  <div class="rec" style="position:absolute;right:14px;bottom:8px;font-size:12px">RECREACIÓN</div>
+ </div>
+ <div class="a panel" id="pressA" style="left:150px;top:1290px;width:780px;padding:30px 36px">
+  <div class="k" style="font-size:17px">PRENSA · SELECCIÓN ESPAÑOLA</div>
+  <div class="bold" style="margin-top:16px;font-size:44px">LIGA DE NACIONES</div>
+  <div class="bold" style="margin-top:10px;font-size:34px;color:#6AA8FF">CONVOCATORIA</div>
+ </div>
+</div>
+
+<!-- B · España entrena en Las Rozas. (1700,960) -->
+<div class="sc" style="left:1160px;top:0">
+ <div class="a serif c" id="l1a" style="top:200px;font-size:100px"></div>
+ <div class="a serif c" id="l1b" style="top:320px;font-size:100px"></div>
+ <div class="a mat" id="matB" style="left:110px;top:500px;width:860px;padding-bottom:74px">
+  <img src="img/ciudad_g.jpg" style="display:block;width:100%">
+  <small style="bottom:36px;font:800 22px J;color:#0b0f1a;letter-spacing:.12em">LAS ROZAS · CIUDAD DEL FÚTBOL</small>
+  <small style="bottom:10px;font-size:12px">FOTO: ROBERTO · CC BY-SA 3.0 (MODIFICADA)</small>
+ </div>
+ <svg class="a" id="pitch" style="left:110px;top:1290px" width="860" height="460" viewBox="0 0 860 460">
+  <g class="dr" stroke="#6AA8FF" stroke-width="5">
+   <path id="p1" d="M20 440 L20 20 L840 20 L840 440 Z" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/>
+   <path id="p2" d="M20 440 L840 440" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/>
+   <path id="p3" d="M300 20 L300 150 L560 150 L560 20 M430 440 m-110 0 a110 110 0 0 1 220 0" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/>
+  </g>
+  <g id="cones"></g>
+ </svg>
+ <div class="a rec c" id="recB" style="top:1780px">CAMPO Y CONOS: DIBUJO</div>
+</div>
+
+<!-- C · Luis Enrique lo mira desde un andamio, con un walkie-talkie. (1700,2880) -->
+<div class="sc" style="left:1160px;top:1920px">
+ <div class="a serif c" id="l2a" style="top:150px;font-size:90px"></div>
+ <div class="a serif c" id="l2b" style="top:255px;font-size:90px"></div>
+ <div class="a serif c" id="l2c" style="top:360px;font-size:90px"></div>
+ <svg class="a" id="tower" style="left:70px;top:520px" width="420" height="1240" viewBox="0 0 420 1240"><g class="dr" stroke="#B9E0FF" stroke-width="9" id="tw"></g></svg>
+ <div class="a panel" id="pressC" style="left:470px;top:560px;width:540px;padding:20px 20px 112px;overflow:hidden">
+  <div style="position:relative;height:470px;overflow:hidden;border-radius:8px;background:linear-gradient(#16213b,#0C1323)">
+   <img src="img/le_g.png" style="position:absolute;left:0;top:10px;width:100%;-webkit-mask-image:linear-gradient(#000 82%,transparent)">
+  </div>
+  <div class="k" style="position:absolute;left:24px;bottom:78px;font-size:15px">FICHA</div>
+  <div id="pressName" class="bold" style="position:absolute;left:24px;bottom:38px;font-size:30px"></div>
+  <div class="cred" style="position:absolute;left:24px;bottom:12px;font-size:12px;white-space:nowrap">FOTO: LLUÍS FROM SABADELL · CC BY 2.0 (MODIFICADA)</div>
+ </div>
+ <div class="a" id="wk" style="left:700px;top:1290px;width:230px;height:480px">
+  <svg class="a" id="waves" style="left:-136px;top:-142px" width="380" height="260" viewBox="0 0 380 260">
+   <g class="dr" stroke="#6AA8FF" stroke-width="8">
+    <path id="wv1" d="M150 150 A45 45 0 0 1 240 150" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/>
+    <path id="wv2" d="M110 150 A85 85 0 0 1 280 150" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/>
+    <path id="wv3" d="M70 150 A125 125 0 0 1 320 150" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/>
+   </g>
+  </svg>
+  <img src="img/walkie_g.png" style="position:absolute;left:0;top:0;height:460px;filter:drop-shadow(0 30px 40px rgba(0,0,0,.7))">
+  <div class="cred" style="position:absolute;left:-90px;top:472px;font-size:11px;white-space:nowrap;text-align:center;width:410px">RECREACIÓN · FOTO: ВАРВАРА КАМИНСКАЯ · CC BY-SA 4.0 (MOD.)</div>
+ </div>
+ <div class="a rec" id="recC" style="left:90px;top:1790px">ANDAMIO: RECREACIÓN</div>
+</div>
+
+<!-- D · Cada jugador lleva un altavoz en el chaleco. «Vais a oír la voz del míster.» (540,2880) -->
+<div class="sc" style="left:0;top:1920px">
+ <div class="a serif c" id="l3a" style="top:170px;font-size:96px"></div>
+ <div class="a serif c" id="l3b" style="top:285px;font-size:96px"></div>
+ <svg class="a" id="vests" style="left:60px;top:450px" width="960" height="560" viewBox="0 0 960 560"></svg>
+ <div class="a rec c" id="recD" style="top:1015px">CHALECOS: RECREACIÓN</div>
+ <div class="a panel" id="bubble" style="left:80px;top:1110px;width:920px;height:470px;padding:40px 50px">
+  <div class="k" style="font-size:17px">POR LA RADIO</div>
+  <div id="q1" class="serif" style="margin-top:34px;font-size:92px"></div>
+  <div id="q2" class="serif" style="margin-top:22px;font-size:92px"></div>
+  <div id="sig" style="margin-top:34px;font:500 26px J;color:#8f9bb8;white-space:nowrap">— L. Enrique, sept. 2022</div>
+  <svg class="a" style="left:740px;top:-110px" width="120" height="116" viewBox="0 0 120 116"><path d="M20 116 L70 0 L100 116 Z" fill="#0C1323" stroke="#26335a" stroke-width="1"/></svg>
+ </div>
+</div>
+
+<!-- E · Corrige a Koke, a Morata, a Gavi, en pleno ejercicio. Sin dejarse la garganta. (1700,4800) -->
+<div class="sc" style="left:1160px;top:3840px">
+ <div class="a serif c" id="l4a" style="top:140px;font-size:90px"></div>
+ <div class="a serif c" id="l4b" style="top:245px;font-size:90px"></div>
+ <div class="a" id="board" style="left:90px;top:390px;width:900px;height:860px;border-radius:18px;background:#0a1a1c;border:14px solid #1a2440;box-shadow:0 40px 90px rgba(0,0,0,.6)">
+  <svg style="position:absolute;left:0;top:0" width="872" height="832" viewBox="0 0 872 832" id="bsvg">
+   <g class="dr" stroke="#E8F0F5" stroke-width="4" opacity=".35"><rect x="30" y="30" width="812" height="772"/><path d="M30 416 L842 416"/><circle cx="436" cy="416" r="90"/><rect x="266" y="30" width="340" height="130"/><rect x="266" y="672" width="340" height="130"/></g>
+   <g id="team" opacity="0"></g>
+   <g class="dr" stroke="#6AA8FF" stroke-width="7">
+    <path id="ar1" d="M200 560 Q250 520 330 520" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/>
+    <path id="ar2" d="M560 300 Q560 230 610 180" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/>
+    <path id="ar3" d="M640 560 Q560 500 470 450" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/>
+   </g>
+  </svg>
+  <div class="a" id="ck" style="width:150px;height:56px;border-radius:28px;background:#636DFF;color:#F4F7FB;font:800 22px J;letter-spacing:.12em;text-align:center;line-height:56px;box-shadow:0 14px 30px rgba(0,0,0,.5)">KOKE</div>
+  <div class="a" id="cm" style="width:170px;height:56px;border-radius:28px;background:#636DFF;color:#F4F7FB;font:800 22px J;letter-spacing:.12em;text-align:center;line-height:56px;box-shadow:0 14px 30px rgba(0,0,0,.5)">MORATA</div>
+  <div class="a" id="cg" style="width:150px;height:56px;border-radius:28px;background:#636DFF;color:#F4F7FB;font:800 22px J;letter-spacing:.12em;text-align:center;line-height:56px;box-shadow:0 14px 30px rgba(0,0,0,.5)">GAVI</div>
+  <div class="rec" style="position:absolute;right:18px;bottom:10px;font-size:13px">PIZARRA: RECREACIÓN</div>
+ </div>
+ <div class="a serif c" id="l4c" style="top:1330px;font-size:90px"></div>
+ <svg class="a" id="mega" style="left:380px;top:1450px" width="320" height="220" viewBox="0 0 320 220">
+  <g class="dr" stroke="#B9E0FF" stroke-width="9"><path d="M40 80 L40 140 L90 140 L230 200 L230 20 L90 80 Z"/><path d="M90 140 L110 200 L140 200 L125 152"/><path d="M262 70 Q285 110 262 150"/></g>
+  <path id="megaX" class="dr" d="M20 200 L300 20" stroke="#E5484D" stroke-opacity=".85" stroke-width="14" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/>
+ </svg>
+ <div class="a cred c" id="qE" style="top:1700px;font-size:26px;color:#8f9bb8">«así no me dejo la garganta»</div>
+ <div class="a rec c" id="recE" style="top:1760px">MEGÁFONO: DIBUJO</div>
+</div>
+
+<!-- F · La corrección que sirve llega en el momento... y sin gritar. (540,4800) -->
+<div class="sc" style="left:0;top:3840px">
+ <div class="a serif c" id="l5a" style="top:260px;font-size:100px"></div>
+ <div class="a serif c" id="l5b" style="top:385px;font-size:100px"></div>
+ <div class="a c" id="l5c" style="top:510px;font-size:112px;white-space:nowrap;line-height:1"></div>
+ <svg class="a" id="clock" style="left:470px;top:680px" width="140" height="140" viewBox="0 0 140 140">
+  <circle cx="70" cy="70" r="58" fill="#0C1323" stroke="#6AA8FF" stroke-width="6"/>
+  <g stroke="#6AA8FF" stroke-width="3" opacity=".6" id="ticks"></g>
+  <line id="hand" x1="70" y1="70" x2="70" y2="22" stroke="#F4F7FB" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="70" cy="70" r="6" fill="#F4F7FB"/>
+ </svg>
+ <div class="a c" id="l5d" style="top:900px;font-size:150px;white-space:nowrap;line-height:1"></div>
+ <svg class="a" id="calm" style="left:140px;top:1130px" width="800" height="520" viewBox="0 0 800 520">
+  <g class="dr" stroke="#B9E0FF" stroke-width="5" opacity=".55" id="tw2"></g>
+  <g id="dots2"></g>
+ </svg>
+ <div class="a cred c" id="credF" style="top:1700px;font-size:15px;opacity:0;left:60px;width:960px">Fotos: Lluís from Sabadell (CC BY 2.0) · Roberto (CC BY-SA 3.0) · Варвара Каминская (CC BY-SA 4.0), modificadas, vía Wikimedia Commons.<br>Andamio, chalecos, pizarra y megáfono: recreación.</div>
+</div>
+
+</div>
+<canvas id="grain" width="360" height="640"></canvas>
+<script src="gsap.min.js"></script>
+<script src="words.js"></script>
+<script>
+const $=i=>document.getElementById(i), cl=x=>Math.min(1,Math.max(0,x)), P=(t,a,b)=>cl((t-a)/(b-a)), eo=x=>1-Math.pow(1-x,3), es=x=>x*x*(3-2*x);
+const W=window.WORDS, T=k=>W[k][1], E=k=>W[k][2];
+const PUN={2:'.',7:'.',14:',',17:'.',25:'.',32:'.»',33:'',35:',',37:',',39:',',42:'.',46:'.',54:'...',57:'.'};
+const DISP={0:'Septiembre',3:'España',6:'Las',8:'Luis',17:'WALKIE-TALKIE',18:'Cada',26:'«Vais',32:'MÍSTER',33:'Corrige',35:'Koke',39:'Gavi',43:'Sin',47:'La',52:'EN',53:'EL',54:'MOMENTO',55:'y',56:'SIN',57:'GRITAR'};
+const L=[];
+function line(id,ks,acc=[],cls='acc'){const el=$(id);for(const k of ks){const s=document.createElement('span');s.className='w'+(acc.includes(k)?' '+cls:'');s.textContent=(DISP[k]||W[k][0])+(PUN[k]||'');el.appendChild(s);L.push([s,T(k)])}}
+line('l0a',[0,1,2],[2]);
+line('l1a',[3,4]); line('l1b',[5,6,7],[7]);
+line('l2a',[8,9,10,11]); line('l2b',[12,13,14],[14]); line('l2c',[15,16,17],[17],'strong');
+line('l3a',[18,19,20]); line('l3b',[21,22,23,24,25],[22]);
+line('q1',[26,27,28]); line('q2',[29,30,31,32],[32],'strong');
+line('l4a',[33,34,35,36,37],[35,37]); line('l4b',[38,39,40,41,42],[39]);
+line('l4c',[43,44,45,46],[46]);
+line('l5a',[47,48,49,50]); line('l5b',[51]); line('l5c',[52,53,54],[52,53,54],'uv');
+line('l5d',[55,56,57],[56,57],'strong');
+$('l5d').querySelector('.w').className='w serif';
+// ----- cámara: un solo plano -----
+const cam={cx:540,cy:960,z:1.0}, tl=gsap.timeline({paused:true});
+const fly=(t,cx,cy,z,d=.9)=>{tl.to(cam,{cx,cy,duration:d,ease:'power2.inOut'},t);tl.to(cam,{keyframes:[{z:z*0.9,duration:d*.5,ease:'sine.out'},{z,duration:d*.5,ease:'sine.inOut'}]},t)};
+tl.set(cam,{cx:540,cy:930,z:1.05},0).to(cam,{z:1.0,cy:960,duration:1.5,ease:'sine.out'},0);
+fly(1.5,1700,960,1.0); tl.to(cam,{z:1.03,duration:1.2,ease:'sine.out'},2.4);
+fly(3.55,1700,2900,1.0); tl.to(cam,{z:1.02,cy:2870,duration:2.7,ease:'sine.out'},4.45);
+fly(7.2,540,2880,1.0); tl.to(cam,{z:1.03,duration:3.7,ease:'sine.out'},8.1);
+fly(11.85,1700,4800,1.0); tl.to(cam,{z:1.03,duration:4.8,ease:'sine.out'},12.75);
+fly(17.6,540,4800,1.0); tl.to(cam,{z:.95,cy:4820,duration:2.0,ease:'sine.out'},18.5);
+tl.to(cam,{z:.93,cy:4830,duration:2.0,ease:'sine.out'},20.6);
+function camAt(t){tl.seek(t,false);return [cam.cx,cam.cy,cam.z]}
+// ----- elementos dibujados -----
+const NS='http://www.w3.org/2000/svg', mk=(tag,at,par)=>{const e=document.createElementNS(NS,tag);for(const k in at)e.setAttribute(k,at[k]);par.appendChild(e);return e};
+// calendario: cuadrícula de días
+for(let i=0;i<30;i++){const x=(i%7)*70+10,y=Math.floor(i/7)*48;const tx=mk('text',{x:x+20,y:y+30,'text-anchor':'middle',style:'font:700 24px J;fill:'+(i==19?'#636DFF':'#5d6888')},$('days'));tx.textContent=String(i+1)}
+// conos (8) sobre el campo
+const CO=[];[[160,300],[260,300],[360,300],[460,300],[560,300],[660,300],[200,380],[640,380]].forEach(([x,y])=>{const g=mk('g',{opacity:0},$('cones'));mk('path',{d:`M${x-18} ${y+14} L${x} ${y-22} L${x+18} ${y+14} Z`,fill:'#6AA8FF',stroke:'#B9E0FF','stroke-width':2},g);CO.push(g)});
+// torre de andamio: 5 tramos de abajo arriba + plataforma
+const TW=[],H=1240,tier=210;
+for(let i=0;i<5;i++){const y0=H-20-i*tier,y1=y0-tier;const g=mk('g',{},$('tw'));
+ mk('path',{d:`M60 ${y0} L60 ${y1} M360 ${y0} L360 ${y1} M60 ${y1} L360 ${y1} M60 ${y0} L360 ${y1}`,pathLength:100,'stroke-dasharray':100,'stroke-dashoffset':100},g);TW.push(g)}
+const plat=mk('path',{d:`M20 ${H-20-5*tier} L400 ${H-20-5*tier} M30 ${H-20-5*tier} L30 ${H-20-5*tier-70} L390 ${H-20-5*tier-70} L390 ${H-20-5*tier}`,pathLength:100,'stroke-dasharray':100,'stroke-dashoffset':100},$('tw'));
+// once chalecos (6 + 5), vistos por la espalda, con un punto (altavoz)
+const VD=[];
+for(let i=0;i<11;i++){const r=i<6?0:1,c=r?i-6:i,x=(r?95:15)+c*155,y=r*280+10;const g=mk('g',{opacity:0},$('vests'));
+ mk('path',{d:`M${x+30} ${y} L${x+50} ${y} Q${x+70} ${y+34} ${x+90} ${y} L${x+110} ${y} L${x+140} ${y+40} L${x+120} ${y+70} L${x+120} ${y+240} L${x+20} ${y+240} L${x+20} ${y+70} L${x} ${y+40} Z`,fill:'#0C1323',stroke:'#636DFF','stroke-width':4,'stroke-linejoin':'round'},g);
+ const d=mk('circle',{cx:x+70,cy:y+110,r:16,fill:'#26335a'},g);const hl=mk('circle',{cx:x+70,cy:y+110,r:30,fill:'#6AA8FF',opacity:0},g);VD.push([g,d,hl])}
+// pizarra: compañeros tenues
+[[150,700],[340,650],[520,650],[720,700],[300,560],[560,300],[436,250],[250,380],[640,380]].forEach(([x,y])=>mk('circle',{cx:x,cy:y,r:14,fill:'#E8F0F5',opacity:.35},$('team')));
+// reloj: marcas
+for(let i=0;i<12;i++){const a=i*Math.PI/6;mk('line',{x1:70+46*Math.sin(a),y1:70-46*Math.cos(a),x2:70+52*Math.sin(a),y2:70-52*Math.cos(a)},$('ticks'))}
+// escena final: torre pequeña y once puntos azules en calma
+for(let i=0;i<4;i++){const y0=500-i*100;mk('path',{d:`M40 ${y0} L40 ${y0-100} M180 ${y0} L180 ${y0-100} M40 ${y0-100} L180 ${y0-100} M40 ${y0} L180 ${y0-100}`},$('tw2'))}
+mk('path',{d:'M20 100 L200 100 M25 100 L25 60 L195 60 L195 100'},$('tw2'));
+const DT=[];for(let i=0;i<11;i++){const x=300+(i%6)*85+(i>=6?42:0),y=i<6?300:400;DT.push(mk('circle',{cx:x,cy:y,r:14,fill:'#6AA8FF',opacity:0},$('dots2')))}
+// grano
+const g=$('grain').getContext('2d'),gi=g.createImageData(360,640);let sd=1;const R=()=>(sd=(sd*16807)%2147483647)/2147483647;
+let t=0;
+const inn=(el,t0,dy=40,d=.5)=>{const p=eo(P(t,t0,t0+d));el.style.opacity=p;el.style.transform=`translateY(${(1-p)*dy}px)`;return p};
+const dash=(el,a,b)=>(typeof el=='string'?$(el):el).setAttribute('stroke-dashoffset',100-100*eo(P(t,a,b)));
+const chipAt=(id,t0,x0,y0,x1,y1,a,b)=>{const el=$(id),p=eo(P(t,t0-.08,t0+.25)),m=es(P(t,a,b));el.style.opacity=p;el.style.left=(x0+(x1-x0)*m)+'px';el.style.top=(y0+(y1-y0)*m-(1-p)*30)+'px'};
+window.frame=function(tt){t=tt;
+ sd=1+Math.floor(t*30)*7919;const dd=gi.data;for(let i=0;i<dd.length;i+=4){const v=R()*255;dd[i]=v*.8;dd[i+1]=v*.85;dd[i+2]=v;dd[i+3]=255}g.putImageData(gi,0,0);
+ const p0=camAt(Math.max(0,t-1/30)),p1=camAt(t),sp=Math.hypot(p1[0]-p0[0],p1[1]-p0[1]);
+ $('cam').style.transform=`translate(540px,960px) scale(${p1[2]}) translate(${-p1[0]}px,${-p1[1]}px)`;
+ $('cam').style.filter=sp>40?`blur(${Math.min(4,(sp-40)/30)}px)`:'none';
+ for(const [s,t0] of L){const p=eo(P(t,t0-.04,t0+.32));s.style.opacity=p;s.style.transform=`translateX(${(1-p)*28}px)`;s.style.filter=`blur(${(1-p)*6}px)`}
+ // A · hoja de calendario que cae y se posa; ficha de prensa
+ const pc=P(t,0,.7);$('cal').style.opacity=cl(pc*3);$('cal').style.transform=`translateY(${(1-eo(pc))*-120}px) rotate(${-3+(1-eo(pc))*-6}deg)`;
+ inn($('pressA'),T(2),40,.45);
+ // B · polaroid de Las Rozas; el campo se dibuja encima y caen los conos
+ const pb=P(t,1.95,2.45);$('matB').style.opacity=cl(pb*2);$('matB').style.transform=`translateY(${(1-eo(pb))*40}px) rotate(${-2+(1-eo(pb))*-3}deg)`;
+ dash('p1',T(5)-.1,T(5)+.5);dash('p2',T(6),T(6)+.4);dash('p3',T(7),E(7)+.2);
+ CO.forEach((c,i)=>{const t0=T(7)+i*.06,p=eo(P(t,t0,t0+.22));c.setAttribute('opacity',p);c.setAttribute('transform',`translate(0 ${(1-p)*-20})`)});
+ $('recB').style.opacity=P(t,3.0,3.4);
+ // C · ficha de Luis Enrique que sube con la torre; walkie con tres arcos
+ const pp=P(t,T(8)-.2,T(8)+.3);const up=es(P(t,T(12)-.1,E(14)+.4));
+ $('pressC').style.opacity=cl(pp*2);$('pressC').style.transform=`translateY(${(1-eo(pp))*50+(1-up)*360}px) rotate(${-1.5+(1-eo(pp))*-2}deg)`;
+ const nm='L. ENRIQUE · SELECCIONADOR';$('pressName').textContent=nm.slice(0,Math.round(nm.length*P(t,T(8),E(11)+.2)));
+ TW.forEach((g2,i)=>{const a=T(12)-.1+i*.16;g2.firstChild.setAttribute('stroke-dashoffset',100-100*eo(P(t,a,a+.3)))});
+ dash(plat,E(14)-.05,E(14)+.35);$('recC').style.opacity=P(t,E(14),E(14)+.4);
+ const pw=P(t,T(17)-.12,T(17)+.4);$('wk').style.opacity=cl(pw*2);$('wk').style.transform=`translateX(${(1-eo(pw))*80}px) rotate(${(1-eo(pw))*14-4}deg)`;
+ dash('wv1',T(17)+.25,T(17)+.5);dash('wv2',T(17)+.4,T(17)+.65);dash('wv3',T(17)+.55,T(17)+.8);
+ // D · once chalecos; el punto del altavoz se enciende de izquierda a derecha; bocadillo de radio
+ VD.forEach(([g2,d,hl],i)=>{const t0=T(18)-.05+i*.05,p=eo(P(t,t0,t0+.3));g2.setAttribute('opacity',p);g2.setAttribute('transform',`translate(0 ${(1-p)*24})`);
+  const on=P(t,T(22)+i*.075,T(22)+i*.075+.15);d.setAttribute('fill',on>0?'#6AA8FF':'#26335a');hl.setAttribute('opacity',on*.25)});
+ $('recD').style.opacity=P(t,8.6,9.0);
+ inn($('bubble'),T(26)-.35,40,.45);$('sig').style.opacity=P(t,E(32),E(32)+.35);
+ // E · pizarra: tres fichas se mueven según su flecha
+ inn($('board'),12.4,40,.5);$('team').setAttribute('opacity',P(t,12.5,12.9));
+ chipAt('ck',T(35),125,532,265,492,T(35)+.2,E(35)+.35);dash('ar1',T(35)+.05,T(35)+.4);
+ chipAt('cm',T(37),475,272,525,152,T(37)+.2,E(37)+.35);dash('ar2',T(37)+.05,T(37)+.4);
+ chipAt('cg',T(39),565,532,395,422,T(39)+.2,E(39)+.5);dash('ar3',T(39)+.05,T(39)+.4);
+ // megáfono que se tacha
+ inn($('mega'),T(43)-.1,30,.4);dash('megaX',T(46)-.05,T(46)+.35);
+ $('qE').style.opacity=P(t,E(46)-.05,E(46)+.35);$('recE').style.opacity=P(t,E(46),E(46)+.4)*.9;
+ // F · reloj que marca un solo segundo; calma final
+ $('clock').style.opacity=P(t,T(52)-.1,T(52)+.25);
+ const sec=es(P(t,T(54)+.05,T(54)+.2));$('hand').setAttribute('transform',`rotate(${sec*6} 70 70)`);
+ $('calm').style.opacity=P(t,T(56)-.1,T(56)+.5)*.9;
+ DT.forEach((d,i)=>d.setAttribute('opacity',P(t,T(56)+i*.04,T(56)+i*.04+.2)*.85));
+ $('credF').style.opacity=P(t,E(57)-.1,E(57)+.4)*.9;
+};
+document.fonts.ready.then(()=>Promise.all([...document.images].map(i=>i.complete?1:new Promise(r=>{i.onload=r;i.onerror=r})))).then(()=>{frame(0);window.ready=true});
+</script></body></html>
