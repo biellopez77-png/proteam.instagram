@@ -64,16 +64,15 @@ svg .dr{fill:none;stroke-linecap:round;stroke-linejoin:round}
 
 <!-- 3 · «El baloncesto no se puede entrenar. Solo se juega». Allen no le hizo caso -->
 <div class="sc" style="left:1160px;top:2050px">
- <div class="a panel" id="card" style="left:60px;top:300px;width:960px;height:900px;border-radius:18px;opacity:0;padding:70px 60px 0">
-  <div class="k" style="font-size:18px">«</div>
+ <div class="a panel" id="card" style="left:60px;top:300px;width:960px;height:1000px;border-radius:18px;opacity:0;padding:95px 60px 0">
   <div class="serif" id="q1" style="font-size:118px;margin-top:10px"></div>
   <div class="serif" id="q2" style="font-size:118px;margin-top:14px"></div>
   <div class="serif" id="q3" style="font-size:118px;margin-top:14px"></div>
-  <div class="bold" id="q4" style="font-size:104px;margin-top:56px;color:#6AA8FF"></div>
+  <div class="bold" id="q4" style="font-size:88px;margin-top:62px;color:#6AA8FF"></div>
   <svg class="a" style="left:56px;top:690px;overflow:visible" width="840" height="40" viewBox="0 0 840 40"><path id="und" class="dr" d="M6 22 Q 260 8 520 18 T 830 12" stroke="#B9E0FF" stroke-width="8"/></svg>
   <div class="rec" style="position:absolute;left:60px;bottom:30px;font-size:13px">CITA SEGÚN UNIVERSITY DAILY KANSAN Y ENCYCLOPEDIA.COM</div>
  </div>
- <div class="a" id="stamp" style="left:610px;top:330px;opacity:0;padding:6px 40px;border:10px solid #B4505A;border-radius:16px;font:800 170px J;color:#D98A92;letter-spacing:.06em;background:rgba(2,5,15,.55);white-space:nowrap;line-height:1.05">NO</div>
+ <div class="a" id="stamp" style="left:630px;top:1060px;opacity:0;padding:4px 34px;border:9px solid #B4505A;border-radius:14px;font:800 120px J;color:#D98A92;letter-spacing:.06em;background:rgba(2,5,15,.55);white-space:nowrap;line-height:1.05">NO</div>
  <div class="a serif c" id="s1" style="left:0;width:1080px;top:1330px;font-size:100px"></div>
  <div class="a bold c" id="s2" style="left:0;width:1080px;top:1450px;font-size:190px"></div>
 </div>
@@ -163,7 +162,7 @@ svg .dr{fill:none;stroke-linecap:round;stroke-linejoin:round}
 const $=i=>document.getElementById(i), cl=x=>Math.min(1,Math.max(0,x)), P=(t,a,b)=>cl((t-a)/(b-a)), eo=x=>1-Math.pow(1-x,3), eio=x=>x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2;
 const W=window.WORDS, T=k=>W[k][1], E=k=>W[k][2];
 const NS='http://www.w3.org/2000/svg', mk=(tag,at,par)=>{const e=document.createElementNS(NS,tag);for(const k in at)e.setAttribute(k,at[k]);par&&par.appendChild(e);return e};
-const OUT=24.5;
+const OUT=25.4;
 const L=[];   // [span, aparece, desaparece]
 function line(id,tokens,gone){const el=$(id);for(const [txt,k,cls,st] of tokens){const s=document.createElement('span');s.className='w '+(cls||'');s.textContent=txt;if(st)s.style.cssText=st;el.appendChild(s);L.push([s,T(k),gone||99])}}
 line('l1',[['James',0],['Naismith',1,'it']]);
@@ -218,15 +217,15 @@ window.frame=function(t){window._t=t;
  const ta=eo(P(t,T(1)-.05,T(1)+.35));$('tag1').style.opacity=ta;$('tag1').style.transform=`rotate(-3deg) translateX(${(1-ta)*-40}px)`;
  const rp=eio(P(t,T(2)-.1,T(2)+.5));$('p2').style.opacity=cl(rp*1.8);$('p2').style.transform=`translateX(${((1-rp)*260).toFixed(1)}px) rotate(${(4-2*rp).toFixed(2)}deg)`;
  // 2 · el profesor y el alumno, unidos por una línea
- const th=eo(P(t,T(5)-.5,T(5)));$('thumb').style.opacity=th;$('thumb').style.transform=`rotate(-2deg) translateY(${(1-th)*40}px)`;
+ const th=eo(P(t,F[0]+.2,F[0]+.65));$('thumb').style.opacity=th;$('thumb').style.transform=`rotate(-2deg) translateY(${(1-th)*40}px)`;
  draw($('link'),eio(P(t,T(8)-.05,T(8)+.4)));
- const p3=eo(P(t,T(9)-.45,T(9)+.05));$('p3').style.opacity=p3;$('p3').style.transform=`rotate(${1.5+(1-p3)*3}deg) translateY(${(1-p3)*50}px)`;
+ const p3=eo(P(t,F[0]+.4,F[0]+.9));$('p3').style.opacity=p3;$('p3').style.transform=`rotate(${1.5+(1-p3)*3}deg) translateY(${(1-p3)*50}px)`;
  const t2=eo(P(t,T(10)-.05,T(10)+.35));$('tag2').style.opacity=t2;$('tag2').style.transform=`rotate(2deg) translateX(${(1-t2)*40}px)`;
  // 3 · la cita en tarjeta; subrayado; sello «NO»; la tarjeta se aparta
- const cd=eo(P(t,F[1]+.4,F[1]+.9));const aw=eio(P(t,T(25),E(26)+.1));
+ const cd=eo(P(t,F[1]+.4,F[1]+.9))*(1-eo(P(t,F[2]-.15,F[2]+.3)));const aw=eio(P(t,T(25),E(26)+.1));
  $('card').style.opacity=cd*(1-.45*aw);$('card').style.transform=`translateY(${(1-cd)*40}px) translateX(${(-40*aw).toFixed(1)}px) rotate(${(-3.5*aw).toFixed(2)}deg)`;
  draw($('und'),eio(P(t,E(21)-.1,E(21)+.3)));
- const st=P(t,T(23)-.06,T(23)+.14);$('stamp').style.opacity=st>0?(1-.25*aw):0;$('stamp').style.transform=`translateX(${(-40*aw).toFixed(1)}px) rotate(${-9-3.5*aw}deg) scale(${1.5-.5*eo(st)})`;
+ const st=P(t,T(23)-.06,T(23)+.14);$('stamp').style.opacity=st>0?(1-.25*aw)*(1-eo(P(t,F[2]-.15,F[2]+.3))):0;$('stamp').style.transform=`translateX(${(-40*aw).toFixed(1)}px) rotate(${-9-3.5*aw}deg) scale(${1.5-.5*eo(st)})`;
  // 4 · banquillo con 50 marcas y contador; 746 victorias con fichas apiladas
  fade('bench',t,F[2]+.4,30);
  draw($('bk'),1);
