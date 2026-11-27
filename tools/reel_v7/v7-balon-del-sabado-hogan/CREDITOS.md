@@ -19,3 +19,12 @@ Efectos (Epidemic Sound): Swooshes, Whoosh, Soft, Clean · Paper, Friction, Shee
 Mezcla (mix.py): voz −19,0 dB RMS, música −33,7 con ducking, efectos −32,7; final −16,5 LUFS, −0,9 dBTP. 28,8 s con el cierre común.
 
 Vídeo final: https://d2ol7oe51mr4n9.cloudfront.net/user_3M2z7lIyzIPYtjNHcxRWFNk6wi7/8d417352-1d40-4084-a254-cf0706219d39.mp4
+
+## r2 · Marta A (02) · 27/11/2026 (crítica de Andrés, 84/100)
+- Remate: «CON BALÓN.» ultravioleta entero y quieto de 22,86 a 23,95 s (cámara parada desde 23,15 s); fundido a negro de 0,5 s (23,95–24,45) y cierre común outro2 desde 24,45 s. La voz del cierre entra a 24,72 s. Total 28,5 s.
+- Créditos del pie final quitados de pantalla (completos en el caption y aquí).
+- video_mudo.mp4 nuevo con outro2 (ya no lleva el cierre retirado de la app).
+- Voz, música, efectos y fotos sin cambios; mix.py adaptado (la música sigue bajando bajo el cierre). Mezcla final −16,9 LUFS, −0,9 dBTP. Whisper: las 53 palabras + «Dale like y síguenos para más vídeos como este».
+- Opcionales no hechos: el marcador en «1953.» quedaba cortado por abajo y vacío en el primer plano, así que se deja como estaba; el balón sigue rodando bajo la foto de 1910.
+
+Vídeo final r2: https://d2ol7oe51mr4n9.cloudfront.net/user_3M2z7lIyzIPYtjNHcxRWFNk6wi7/279cf7a4-4c40-4826-a7d9-3442da2c2fe1.mp4
