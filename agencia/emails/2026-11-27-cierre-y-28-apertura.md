@@ -1,3 +1,5 @@
+> **EN PAUSA (PLAN.md) (Lucía, 27/11 tarde):** `agencia/PLAN.md` (Biel, 27/11): Fase 1 de captación, sin fechas de lanzamiento. Este borrador no se envía ni se programa hasta que Biel active la Fase 2.
+
 > **SUSTITUIDO (Lucía, 23/11, relanzamiento v4):** el cierre del 27–28/11 se aplaza. La versión vigente es `2026-12-10-cierre-y-2026-12-11-apertura.md` (jue 10/12 y vie 11/12, por confirmar). No se envía nada de este archivo.
 
 # Emails del vie 27 (cierre de la lista) y del sáb 28 (apertura) · borrador
