@@ -1,0 +1,288 @@
+<!doctype html><html><head><meta charset="utf-8">
+<!-- v7 · Los tacos de Berna (final del Mundial 1954). Un solo plano sobre una pared grande; cada cosa que dice la voz se anima en su palabra. Base: tools/reel_v7/bielsa/reel3.html y v7-tres-filas-summitt -->
+<style>
+@font-face{font-family:S;src:url(fonts/instrument-serif-latin-400-normal.woff2)}
+@font-face{font-family:SI;src:url(fonts/instrument-serif-latin-400-italic.woff2)}
+@font-face{font-family:J;font-weight:500;src:url(fonts/plus-jakarta-sans-latin-500-normal.woff2)}
+@font-face{font-family:J;font-weight:700;src:url(fonts/plus-jakarta-sans-latin-700-normal.woff2)}
+@font-face{font-family:J;font-weight:800;src:url(fonts/plus-jakarta-sans-latin-800-normal.woff2)}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#02050F}
+#cam{position:absolute;left:0;top:0;width:2600px;height:6400px;transform-origin:0 0;background:url(wall2.jpg)}
+.a{position:absolute}
+.sc{position:absolute;width:1080px;height:1920px}
+.serif{font-family:S;color:#F4F7FB;white-space:nowrap;line-height:1}
+.bold{font-family:J;font-weight:800;color:#F4F7FB;white-space:nowrap;letter-spacing:-.02em;line-height:1}
+.it{font-family:SI;color:#B9E0FF}
+.w{display:inline-block;margin-right:.24em}
+.c{text-align:center}
+.panel{background:#0C1323;border:1px solid #26335a;box-shadow:0 40px 90px rgba(0,0,0,.6)}
+.mat{background:#E9EEF6;padding:18px 18px 56px;border:6px solid #0b0f1a;box-shadow:0 30px 70px rgba(0,0,0,.6)}
+.mat small{position:absolute;left:22px;right:16px;bottom:10px;font:500 14px J;color:#5d6888;letter-spacing:.04em;line-height:1.3}
+.rec{font:500 15px J;color:#5d6888;letter-spacing:.14em;line-height:1.6}
+.k{font:700 20px J;color:#8f9bb8;letter-spacing:.14em}
+.lab{font-family:J;font-weight:500;font-size:14px;fill:#5d6888;letter-spacing:2.5px}
+.pk{font-family:J;font-weight:800;color:#6AA8FF;letter-spacing:-.02em}
+#grain,#rain{position:absolute;inset:0;width:1080px;height:1920px;pointer-events:none}
+#grain{mix-blend-mode:screen;opacity:.09;image-rendering:pixelated}
+svg .dr{fill:none;stroke-linecap:round;stroke-linejoin:round}
+</style></head><body><div id="cam">
+
+<!-- 1 · Hungría llevaba cuatro años sin perder -->
+<div class="sc" style="left:0;top:0">
+ <div class="a serif c" id="l1" style="left:0;width:1080px;top:170px;font-size:96px"></div>
+ <div class="a bold c" id="l2" style="left:0;width:1080px;top:295px;font-size:132px;color:#6AA8FF"></div>
+ <div class="a serif c" id="l3" style="left:0;width:1080px;top:465px;font-size:84px"></div>
+ <div class="a" id="p1" style="left:40px;top:610px;width:500px;opacity:0"><img src="img/p1_cut_g.png" style="display:block;width:100%;filter:drop-shadow(0 30px 40px rgba(0,0,0,.65))"></div>
+ <div class="a panel" id="tag1" style="left:50px;top:1270px;width:480px;padding:16px 22px;border-radius:12px;opacity:0">
+  <div style="font:800 32px J;color:#F4F7FB">HUNGRÍA · 1950–1954</div>
+  <div class="k" style="margin-top:8px;font-size:17px">FINAL DE BERNA · MIN. 6, 1-0</div>
+  <div class="rec" style="margin-top:4px;font-size:12px">4/7/1954 · COMET PHOTO AG, ZÚRICH · CC BY-SA 4.0</div>
+ </div>
+ <svg class="a" id="cal" style="left:590px;top:640px;opacity:0" width="440" height="560" viewBox="0 0 440 560">
+  <rect x="3" y="40" width="434" height="510" rx="14" fill="#0C1323" stroke="#26335a" stroke-width="3"/>
+  <rect x="3" y="40" width="434" height="96" rx="14" fill="#636DFF"/>
+  <text x="220" y="104" text-anchor="middle" font-family="J" font-weight="700" font-size="30" fill="#F4F7FB" letter-spacing="6">HUNGRÍA</text>
+  <g fill="none" stroke="#B9E0FF" stroke-width="7" stroke-linecap="round"><path d="M100 18 V64"/><path d="M220 18 V64"/><path d="M340 18 V64"/></g>
+  <text id="yr" x="220" y="380" text-anchor="middle" font-family="J" font-weight="800" font-size="150" fill="#F4F7FB" letter-spacing="-4">1950</text>
+  <g id="flap"><rect x="10" y="140" width="420" height="400" rx="10" fill="#111a30" stroke="#26335a" stroke-width="2"/>
+   <text id="yr2" x="220" y="380" text-anchor="middle" font-family="J" font-weight="800" font-size="150" fill="#8f9bb8" letter-spacing="-4">1950</text></g>
+  <text x="438" y="556" text-anchor="end" class="lab" style="font-size:12px">CALENDARIO: RECREACIÓN</text>
+ </svg>
+ <div class="a panel" id="loss" style="left:590px;top:1240px;width:440px;height:200px;border-radius:14px;opacity:0;text-align:center">
+  <div id="zero" style="font:800 120px J;color:#6AA8FF;line-height:1;margin-top:18px;letter-spacing:-.03em">0</div>
+  <div class="k" style="margin-top:4px;font-size:24px;color:#B9E0FF">DERROTAS</div>
+ </div>
+</div>
+
+<!-- 2 · En el Mundial del 54 había goleado a Alemania: ocho a tres -->
+<div class="sc" style="left:1160px;top:0">
+ <div class="a serif c" id="b1" style="left:0;width:1080px;top:170px;font-size:96px"></div>
+ <div class="a serif c" id="b2" style="left:0;width:1080px;top:285px;font-size:96px"></div>
+ <svg class="a" id="sb1" style="left:90px;top:450px;opacity:0" width="900" height="420" viewBox="0 0 900 420"></svg>
+ <svg class="a" id="chips" style="left:90px;top:900px" width="900" height="360" viewBox="0 0 900 360">
+  <text x="225" y="295" text-anchor="middle" font-family="J" font-weight="700" font-size="22" fill="#8f9bb8" letter-spacing="4" id="chl" opacity="0">HUNGRÍA</text>
+  <text x="675" y="295" text-anchor="middle" font-family="J" font-weight="700" font-size="22" fill="#8f9bb8" letter-spacing="4" id="chr" opacity="0">ALEMANIA</text>
+  <g id="chg"></g>
+ </svg>
+ <div class="a bold c" id="b3" style="left:0;width:1080px;top:1320px;font-size:210px;color:#6AA8FF"></div>
+</div>
+
+<!-- 3 · En la final de Berna, llovió -->
+<div class="sc" style="left:1160px;top:2000px">
+ <div class="a mat" id="p2" style="left:170px;top:200px;width:740px;opacity:0"><img src="img/p2_g.jpg" style="display:block;width:100%">
+  <svg class="a" id="drops" style="left:18px;top:18px" width="692" height="700" viewBox="0 0 692 700"></svg>
+  <small>EL RELOJ DE LA FINAL · WANKDORF, BERNA · HOY, MEMORIAL · SANDSTEIN · CC BY 3.0</small></div>
+ <div class="a serif c" id="c1" style="left:0;width:1080px;top:1220px;font-size:100px"></div>
+ <div class="a bold c" id="c2" style="left:0;width:1080px;top:1345px;font-size:220px;color:#6AA8FF"></div>
+</div>
+
+<!-- 4 · Fritz Walter, su capitán, jugaba mejor cuanto peor estaba el campo -->
+<div class="sc" style="left:0;top:2300px">
+ <div class="a serif c" id="d1" style="left:0;width:1080px;top:150px;font-size:92px"></div>
+ <div class="a mat" id="p3" style="left:40px;top:290px;width:1000px;opacity:0"><img src="img/p3_g.jpg" style="display:block;width:100%">
+  <svg class="a" style="left:18px;top:18px;overflow:visible" width="952" height="497" viewBox="0 0 952 497"><path id="ring" class="dr" d="M75 236 C 130 230 132 330 80 352 C 30 370 12 300 26 262 C 38 232 66 226 92 232" stroke="#6AA8FF" stroke-width="7"/></svg>
+  <small>FINAL, MIN. 2 · FRITZ WALTER, AL FONDO · COMET PHOTO AG, ZÚRICH · CC BY-SA 4.0</small></div>
+ <div class="a panel" id="tag3" style="left:70px;top:895px;width:520px;padding:14px 20px;border-radius:12px;opacity:0">
+  <div style="font:800 30px J;color:#F4F7FB">RFA · FRITZ WALTER</div>
+  <div class="k" style="margin-top:6px;font-size:17px">CAPITÁN</div>
+ </div>
+ <svg class="a" id="bars" style="left:90px;top:1030px;opacity:0" width="900" height="290" viewBox="0 0 900 290">
+  <rect x="3" y="3" width="894" height="282" rx="14" fill="#0C1323" stroke="#26335a" stroke-width="3"/>
+  <text x="40" y="70" font-family="J" font-weight="700" font-size="22" fill="#8f9bb8" letter-spacing="3">CAMPO</text>
+  <text id="cst" x="860" y="70" text-anchor="end" font-family="J" font-weight="700" font-size="22" fill="#8f9bb8" letter-spacing="3">SECO</text>
+  <rect x="40" y="88" width="820" height="40" rx="20" fill="#1a2440"/>
+  <rect id="barC" x="40" y="88" width="820" height="40" rx="20" fill="#6AA8FF"/>
+  <text x="40" y="190" font-family="J" font-weight="700" font-size="22" fill="#8f9bb8" letter-spacing="3">FRITZ WALTER</text>
+  <rect x="40" y="208" width="820" height="40" rx="20" fill="#1a2440"/>
+  <rect id="barW" x="40" y="208" width="250" height="40" rx="20" fill="#636DFF"/>
+  <text x="896" y="282" text-anchor="end" class="lab" style="font-size:11px">ESQUEMA</text>
+ </svg>
+ <div class="a serif c" id="d2" style="left:0;width:1080px;top:1350px;font-size:88px"></div>
+ <div class="a serif c" id="d3" style="left:0;width:1080px;top:1450px;font-size:88px"></div>
+</div>
+
+<!-- 5 · Y sus botas llevaban tacos de rosca: los cambiaron por unos más largos -->
+<div class="sc" style="left:1160px;top:4100px">
+ <div class="a serif c" id="e1" style="left:0;width:1080px;top:150px;font-size:92px"></div>
+ <div class="a bold c" id="e2" style="left:0;width:1080px;top:262px;font-size:100px;color:#6AA8FF"></div>
+ <svg class="a" id="boot" style="left:60px;top:420px;opacity:0" width="960" height="880" viewBox="0 0 960 880">
+  <rect x="3" y="3" width="954" height="850" rx="16" fill="#0C1323" stroke="#26335a" stroke-width="3"/>
+  <g transform="translate(60 30)">
+   <path id="sole" class="dr" d="M180 20 C 290 20 340 120 340 260 C 340 380 300 440 290 520 C 280 600 300 680 280 740 C 260 795 100 795 80 740 C 60 680 80 600 70 520 C 60 440 20 380 20 260 C 20 120 70 20 180 20 Z" stroke="#B9E0FF" stroke-width="6" fill="#111a30"/>
+   <path class="dr" d="M70 470 Q180 440 290 470" stroke="#3a4770" stroke-width="5"/>
+   <g id="studs"></g>
+  </g>
+  <g transform="translate(520 0)" id="side">
+   <text x="190" y="80" text-anchor="middle" font-family="J" font-weight="700" font-size="22" fill="#8f9bb8" letter-spacing="3">UN TACO, DE LADO</text>
+   <rect x="20" y="150" width="340" height="44" rx="6" fill="#1a2440" stroke="#3a4770" stroke-width="3"/>
+   <text x="190" y="180" text-anchor="middle" font-family="J" font-weight="700" font-size="16" fill="#5d6888" letter-spacing="3">SUELA</text>
+   <g id="thread" stroke="#B9E0FF" stroke-width="4" fill="none"></g>
+   <path id="stud" d="" fill="#636DFF" stroke="#B9E0FF" stroke-width="4" stroke-linejoin="round"/>
+   <g id="ruler"></g>
+   <path id="tip" class="dr" d="" stroke="#6AA8FF" stroke-width="3" stroke-dasharray="8 8"/>
+   <text id="slab" x="150" y="620" text-anchor="middle" font-family="J" font-weight="800" font-size="34" fill="#F4F7FB" letter-spacing="2">TACO CORTO</text>
+  </g>
+  <text x="954" y="876" text-anchor="end" class="lab" style="font-size:12px">BOTA Y TACOS: RECREACIÓN</text>
+ </svg>
+ <div class="a serif c" id="e3" style="left:0;width:1080px;top:1370px;font-size:92px"></div>
+ <div class="a bold c" id="e4" style="left:0;width:1080px;top:1480px;font-size:150px;color:#6AA8FF"></div>
+</div>
+
+<!-- 6 · Alemania ganó tres a dos... No eliges el campo. Eliges cómo llegas -->
+<div class="sc" style="left:0;top:4300px">
+ <div class="a serif c" id="f1" style="left:0;width:1080px;top:200px;font-size:100px"></div>
+ <svg class="a" id="sb2" style="left:90px;top:360px;opacity:0" width="900" height="420" viewBox="0 0 900 420"></svg>
+ <div class="a bold c" id="f2" style="left:0;width:1080px;top:860px;font-size:150px;color:#6AA8FF"></div>
+ <svg class="a" id="fin" style="left:40px;top:260px;opacity:0" width="1000" height="520" viewBox="0 0 1000 520">
+  <g transform="translate(40 120)">
+   <path d="M20 120 C 20 60 60 40 110 40 L 150 40 C 170 70 200 90 250 100 C 285 106 300 125 296 150 L 20 150 Z" fill="#111a30" stroke="#B9E0FF" stroke-width="5" stroke-linejoin="round"/>
+   <path class="dr" d="M120 52 L170 80 M112 66 L160 92 M104 80 L150 104" stroke="#3a4770" stroke-width="4"/>
+   <g fill="#636DFF" stroke="#B9E0FF" stroke-width="3"><path d="M40 150 L46 196 H62 L68 150 Z"/><path d="M96 150 L102 196 H118 L124 150 Z"/><path d="M196 150 L202 196 H218 L224 150 Z"/><path d="M250 150 L256 196 H272 L278 150 Z"/></g>
+  </g>
+  <g id="mud" transform="translate(600 40)">
+   <rect x="0" y="0" width="360" height="440" rx="6" fill="#0C1323" stroke="#B9E0FF" stroke-width="5"/>
+   <path class="dr" d="M0 220 H360" stroke="#B9E0FF" stroke-width="4"/>
+   <circle cx="180" cy="220" r="50" fill="none" stroke="#B9E0FF" stroke-width="4"/>
+   <path class="dr" d="M110 0 V70 H250 V0 M110 440 V370 H250 V440" stroke="#636DFF" stroke-width="4"/>
+   <g fill="#1f2b4d" opacity=".95"><ellipse cx="90" cy="150" rx="60" ry="22"/><ellipse cx="250" cy="300" rx="72" ry="26"/><ellipse cx="170" cy="400" rx="54" ry="18"/><ellipse cx="290" cy="120" rx="40" ry="14"/><ellipse cx="70" cy="330" rx="38" ry="14"/></g>
+  </g>
+  <path id="arr2" class="dr" d="M380 260 H560 M528 228 L564 260 L528 292" stroke="#6AA8FF" stroke-width="8"/>
+ </svg>
+ <div class="a serif c" id="g1" style="left:0;width:1080px;top:880px;font-size:100px"></div>
+ <div class="a serif c" id="g2" style="left:0;width:1080px;top:1010px;font-size:100px"></div>
+ <div class="a bold c" id="g3" style="left:0;width:1080px;top:1135px;font-size:128px"></div>
+ <div class="a rec c" id="cred" style="left:0;width:1080px;top:1360px;font-size:14px;opacity:0">FOTOS: COMET PHOTO AG, ZÚRICH (CC BY-SA 4.0); SANDSTEIN (CC BY 3.0), VÍA WIKIMEDIA COMMONS<br>BOTA, TACOS, MARCADOR Y CALENDARIO: RECREACIÓN</div>
+</div>
+
+</div>
+<canvas id="rain" width="1080" height="1920"></canvas>
+<canvas id="grain" width="360" height="640"></canvas>
+<script src="gsap.min.js"></script>
+<script src="words.js"></script>
+<script>
+const $=i=>document.getElementById(i), cl=x=>Math.min(1,Math.max(0,x)), P=(t,a,b)=>cl((t-a)/(b-a)), eo=x=>1-Math.pow(1-x,3), eio=x=>x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2;
+const W=window.WORDS, T=k=>W[k][1], E=k=>W[k][2];
+const NS='http://www.w3.org/2000/svg', mk=(tag,at,par)=>{const e=document.createElementNS(NS,tag);for(const k in at)e.setAttribute(k,at[k]);par&&par.appendChild(e);return e};
+const OUT=25.1;
+const L=[];   // [span, aparece, desaparece]
+function line(id,tokens,gone){const el=$(id);for(const [txt,k,cls,st] of tokens){const s=document.createElement('span');s.className='w '+(cls||'');s.textContent=txt;if(st)s.style.cssText=st;el.appendChild(s);L.push([s,T(k),gone||99])}}
+line('l1',[['Hungría',0,'it'],['llevaba',1]]);
+line('l2',[['CUATRO',2],['AÑOS',3]]);
+line('l3',[['sin',4],['perder.',5,'it']]);
+line('b1',[['En',6],['el',7],['Mundial',8],['del',9],['54',10,'it']]);
+line('b2',[['había',11],['goleado',12],['a',13],['Alemania:',14,'it']]);
+line('b3',[['8',15,'','margin-right:0'],['–3',16]]);
+line('c1',[['En',17],['la',18],['final',19],['de',20],['Berna,',21,'it']]);
+line('c2',[['LLOVIÓ.',22]]);
+line('d1',[['Fritz',23,'it'],['Walter,',24,'it'],['su',25],['capitán,',26]]);
+line('d2',[['jugaba',27],['mejor',28],['cuanto',29]]);
+line('d3',[['PEOR',30,'pk','font-size:130px'],['estaba',31],['el',32],['campo.',33,'it']]);
+line('e1',[['Y',34],['sus',35],['botas',36],['llevaban',37]]);
+line('e2',[['TACOS',38],['DE',39],['ROSCA:',40]]);
+line('e3',[['los',41],['cambiaron',42],['por',43],['unos',44]]);
+line('e4',[['MÁS',45],['LARGOS.',46]]);
+const G=T(51)-.15;   // en el remate se apartan el marcador y el 3-2
+line('f1',[['Alemania',47,'it'],['ganó',48]],G);
+line('f2',[['TRES',49],['A',50],['DOS...',50]],G);
+line('g1',[['No',51],['eliges',52],['el',53],['campo.',54,'it']]);
+line('g2',[['Eliges',55]]);
+line('g3',[['CÓMO',56],['LLEGAS.',57]]);
+const UVS=L.filter(x=>x[0].parentNode.id==='g3').map(x=>x[0]);
+const draw=(el,p)=>{const n=el.getTotalLength?el.getTotalLength():1000;el.style.strokeDasharray=n;el.style.strokeDashoffset=n*(1-p)};
+const mix=(a,b,p)=>a+(b-a)*p, hex=(c1,c2,p)=>{const f=c=>[1,3,5].map(i=>parseInt(c.substr(i,2),16));const A=f(c1),B=f(c2);return `rgb(${A.map((v,i)=>Math.round(mix(v,B[i],p))).join(',')})`};
+// marcador de tablillas (genérico, sin marcas)
+function board(id,left,right){const s=$(id);
+ mk('rect',{x:3,y:3,width:894,height:400,rx:16,fill:'#0C1323',stroke:'#26335a','stroke-width':3},s);
+ mk('rect',{x:3,y:3,width:894,height:70,rx:16,fill:'#636DFF'},s);
+ const tt=mk('text',{x:450,y:50,'text-anchor':'middle','font-family':'J','font-weight':700,'font-size':26,fill:'#F4F7FB','letter-spacing':6},s);tt.textContent='MUNDIAL 1954';
+ const D=[];[[60,left],[600,right]].forEach(([x,name],i)=>{
+  const lb=mk('text',{x:x+120,y:370,'text-anchor':'middle','font-family':'J','font-weight':700,'font-size':30,fill:'#8f9bb8','letter-spacing':5},s);lb.textContent=name;
+  const g=mk('g',{},s);mk('rect',{x:x,y:105,width:240,height:220,rx:10,fill:'#E9EEF6'},g);
+  const tx=mk('text',{x:x+120,y:283,'text-anchor':'middle','font-family':'J','font-weight':800,'font-size':190,fill:'#0b0f1a'},g);tx.textContent='–';
+  mk('path',{d:`M${x} 215 H${x+240}`,stroke:'#0C1323','stroke-width':4},s);D.push([g,tx,x])});
+ const dash=mk('text',{x:450,y:265,'text-anchor':'middle','font-family':'J','font-weight':800,'font-size':110,fill:'#B9E0FF'},s);dash.textContent='–';
+ mk('text',{x:896,y:416,'text-anchor':'end',class:'lab',style:'font-size:12px'},s).textContent='MARCADOR: RECREACIÓN';
+ return D}
+const SB1=board('sb1','HUNGRÍA','ALEMANIA'), SB2=board('sb2','ALEMANIA','HUNGRÍA');
+function flip(d,t,t0,val){const [g,tx,x]=d;const q=P(t,t0,t0+.32);tx.textContent=q>=.5?val:'–';const sy=Math.abs(Math.cos(q*Math.PI));g.setAttribute('transform',`translate(0 215) scale(1 ${sy.toFixed(3)}) translate(0 -215)`)}
+// fichas: ocho de Hungría, tres de Alemania
+const CH=[];for(let i=0;i<8;i++){const g=mk('g',{opacity:0},$('chg'));const x=90+(i%4)*90,y=i<4?90:200;mk('circle',{cx:0,cy:0,r:36,fill:'#636DFF',stroke:'#B9E0FF','stroke-width':4},g);mk('circle',{cx:0,cy:0,r:22,fill:'none',stroke:'#B9E0FF','stroke-width':2,opacity:.6},g);CH.push([g,x,y,T(15)-.05+i*.04])}
+for(let i=0;i<3;i++){const g=mk('g',{opacity:0},$('chg'));const x=585+i*90,y=145;mk('circle',{cx:0,cy:0,r:36,fill:'#1a2440',stroke:'#8f9bb8','stroke-width':4},g);mk('circle',{cx:0,cy:0,r:22,fill:'none',stroke:'#8f9bb8','stroke-width':2,opacity:.6},g);CH.push([g,x,y,T(16)+.12+i*.07])}
+// gotas en el cristal de la polaroid
+let sd2=7;const R2=()=>(sd2=(sd2*16807)%2147483647)/2147483647;const DR=[];
+for(let i=0;i<26;i++){const x=20+R2()*650,y=20+R2()*660,r=4+R2()*9;const g=mk('g',{opacity:0},$('drops'));mk('ellipse',{cx:x,cy:y,rx:r*.8,ry:r,fill:'rgba(185,224,255,.18)',stroke:'rgba(233,238,246,.55)','stroke-width':1.5},g);mk('circle',{cx:x-r*.25,cy:y-r*.35,r:r*.22,fill:'rgba(255,255,255,.7)'},g);DR.push([g,T(22)+R2()*1.1])}
+// tacos de la suela: cuatro delante y dos en el talón
+const SP=[[110,170],[250,170],[100,360],[260,360],[120,650],[240,650]];const ST=[];
+SP.forEach(([x,y],i)=>{const o=mk('g',{opacity:0},$('studs'));mk('circle',{cx:0,cy:0,r:32,fill:'#1a2440',stroke:'#8f9bb8','stroke-width':4},o);const sl=mk('path',{d:'M-14 0 H14',stroke:'#8f9bb8','stroke-width':5,'stroke-linecap':'round'},o);
+ const n=mk('g',{opacity:0},$('studs'));mk('circle',{cx:0,cy:0,r:40,fill:'#636DFF',stroke:'#B9E0FF','stroke-width':4},n);mk('circle',{cx:0,cy:0,r:25,fill:'none',stroke:'#B9E0FF','stroke-width':3},n);mk('circle',{cx:0,cy:0,r:10,fill:'#B9E0FF'},n);
+ ST.push({o,n,sl,x,y,t1:T(38)+i*.13,t2:T(42)+i*.09,t3:T(45)+i*.08})});
+// taco de lado: rosca, cuerpo y regla
+for(let i=0;i<4;i++)mk('path',{d:`M150 ${200+i*12} L230 ${206+i*12}`},$('thread'));
+for(let i=0;i<=10;i++){const y=196+i*30;mk('path',{d:`M300 ${y} H${i%5?318:330}`,stroke:'#8f9bb8','stroke-width':3},$('ruler'))}
+mk('path',{d:'M300 196 V496',stroke:'#8f9bb8','stroke-width':3},$('ruler'));
+// ----- cámara: un solo plano -----
+const cam={cx:540,cy:960,z:1.06};const tl=gsap.timeline({paused:true});
+const fly=(t,cx,cy,z,d=.9)=>{tl.to(cam,{cx,cy,duration:d,ease:'power2.inOut'},t);tl.to(cam,{keyframes:[{z:z*0.9,duration:d*.5,ease:'sine.out'},{z,duration:d*.5,ease:'sine.inOut'}]},t)};
+tl.set(cam,{cx:540,cy:960,z:1.06},0).to(cam,{z:1.02,cy:985,duration:2.2,ease:'sine.out'},0);
+fly(2.2,1700,960,1.04);   tl.to(cam,{z:1.0,cy:985,duration:3.82,ease:'sine.out'},3.1);
+fly(6.92,1700,2960,1.04); tl.to(cam,{z:1.0,cy:2985,duration:1.64,ease:'sine.out'},7.82);
+fly(9.46,540,3260,1.04);  tl.to(cam,{z:1.0,cy:3285,duration:3.82,ease:'sine.out'},10.36);
+fly(14.18,1700,5060,1.04);tl.to(cam,{z:1.0,cy:5085,duration:4.06,ease:'sine.out'},15.08);
+fly(19.14,540,5260,1.04); tl.to(cam,{z:1.0,cy:5280,duration:5.2,ease:'sine.out'},20.04);
+const g=$('grain').getContext('2d'),gi=g.createImageData(360,640);let sd=1;const RN=()=>(sd=(sd*16807)%2147483647)/2147483647;
+const rc=$('rain').getContext('2d');const RD=[];{let s=11;const r=()=>(s=(s*16807)%2147483647)/2147483647;for(let i=0;i<110;i++)RD.push([r()*1400-200,r()*2100,1500+r()*900,40+r()*60,.4+r()*.6])}
+function rainAt(t){const on=eo(P(t,T(22)-.2,T(22)+.4));const lv=t<E(22)+.5?1:t<19.14?mix(1,.42,P(t,E(22)+.5,10.4)):mix(.42,.75,P(t,19.14,20.0));return on*lv*(1-eo(P(t,T(51)-.1,T(51)+.9)))}
+function camAt(t){tl.seek(t,false);return [cam.cx,cam.cy,cam.z]}
+window.frame=function(t){window._t=t;
+ sd=1+Math.floor(t*30)*7919;const d=gi.data;for(let i=0;i<d.length;i+=4){const v=RN()*255;d[i]=v*.8;d[i+1]=v*.85;d[i+2]=v;d[i+3]=255}g.putImageData(gi,0,0);
+ const p0=camAt(Math.max(0,t-1/30)),p1=camAt(t);const sp=Math.hypot(p1[0]-p0[0],p1[1]-p0[1]);
+ $('cam').style.transform=`translate(540px,960px) scale(${p1[2]}) translate(${-p1[0]}px,${-p1[1]}px)`;
+ $('cam').style.filter=sp>14?`blur(${Math.min(4,(sp-14)/30).toFixed(2)}px)`:'none';
+ for(const [s,t1,t2] of L){const t0=t1<.3?t1-.4:t1;const p=eo(P(t,t0-.04,t0+.36))*(1-eo(P(t,t2,t2+.3)));s.style.opacity=p;s.style.transform=`translateX(${(1-p)*24}px)`;s.style.filter=p<1?`blur(${(1-p)*6}px)`:'none'}
+ // lluvia fina dibujada (pantalla), de «llovió» al remate
+ rc.clearRect(0,0,1080,1920);const ra=rainAt(t);if(ra>.01){rc.lineCap='round';rc.lineWidth=2;for(const [x0,y0,v,len,a] of RD){const y=((y0+t*v)%2200)-150,x=x0+y*.22;rc.strokeStyle=`rgba(185,224,255,${(.32*a*ra).toFixed(3)})`;rc.beginPath();rc.moveTo(x,y);rc.lineTo(x+len*.22,y+len);rc.stroke()}}
+ // 1 · los húngaros celebran, ficha, calendario que pasa cuatro hojas y 0 derrotas
+ const pa=eo(P(t,-.45,.15));$('p1').style.opacity=pa;$('p1').style.transform=`translateY(${(1-pa)*50}px)`;
+ const ta=eo(P(t,.2,.6));$('tag1').style.opacity=ta;$('tag1').style.transform=`rotate(-2deg) translateX(${(1-ta)*-40}px)`;
+ const ca=eo(P(t,-.3,T(2)-.1));$('cal').style.opacity=ca;$('cal').style.transform=`translateY(${(1-ca)*30}px)`;
+ const yq=P(t,T(2),E(3)+.1)*4, yi=Math.min(4,Math.floor(yq)), fr=yi<4?yq-yi:0;
+ $('yr').textContent=1950+Math.min(4,yi+(fr>.5?1:0));$('yr').setAttribute('fill',hex('#F4F7FB','#6AA8FF',Math.min(1,yq/4)));
+ $('yr2').textContent=1950+yi;$('flap').setAttribute('opacity',yq>0&&yi<4?1:0);$('flap').setAttribute('transform',`translate(0 140) scale(1 ${Math.abs(Math.cos(fr*Math.PI/2)).toFixed(3)}) translate(0 -140)`);
+ if(yq<=0){$('flap').setAttribute('opacity',0)}
+ const lo=eo(P(t,T(4)-.1,T(4)+.3));$('loss').style.opacity=lo;$('loss').style.transform=`translateY(${(1-lo)*30}px)`;
+ // 2 · marcador HUN 8 – 3 RFA y fichas
+ const s1=eo(P(t,2.9,3.4));$('sb1').style.opacity=s1;$('sb1').style.transform=`translateY(${(1-s1)*30}px)`;
+ flip(SB1[0],t,T(15)-.12,'8');flip(SB1[1],t,T(16)+.05,'3');
+ const chl=eo(P(t,T(15)-.1,T(15)+.3));$('chl').setAttribute('opacity',chl);$('chr').setAttribute('opacity',eo(P(t,T(16)+.05,T(16)+.4)));
+ CH.forEach(([c,x,y,t0])=>{const q=eo(P(t,t0,t0+.35));c.setAttribute('opacity',q);c.setAttribute('transform',`translate(${x} ${(y-60*(1-q)).toFixed(1)})`)});
+ // 3 · el reloj de la final en polaroid; lluvia y gotas en el cristal
+ const p2=eo(P(t,7.3,7.85));$('p2').style.opacity=p2;$('p2').style.transform=`rotate(${-1.5-(1-p2)*3}deg) translateY(${(1-p2)*50}px)`;
+ DR.forEach(([d,t0])=>d.setAttribute('opacity',eo(P(t,t0,t0+.25))));
+ // 4 · jugada de la final; círculo sobre Walter; barras campo y Walter
+ const p3=eo(P(t,9.9,10.45));$('p3').style.opacity=p3;$('p3').style.transform=`rotate(${1-(1-p3)*3}deg) translateY(${(1-p3)*50}px)`;
+ draw($('ring'),eio(P(t,T(23)+.05,E(24)+.1)));
+ const t3=eo(P(t,T(25),T(25)+.4));$('tag3').style.opacity=t3;$('tag3').style.transform=`rotate(-2deg) translateX(${(1-t3)*-40}px)`;
+ const ba=eo(P(t,T(27)-.4,T(27)));$('bars').style.opacity=ba;$('bars').style.transform=`translateY(${(1-ba)*30}px)`;
+ const bc=eio(P(t,T(30),E(33)));$('barC').setAttribute('width',(820*(1-.82*bc)).toFixed(1));$('barC').setAttribute('fill',hex('#6AA8FF','#3a4770',bc));$('cst').textContent=bc>.5?'EMBARRADO':'SECO';
+ const bw=eio(P(t,T(28),E(33)));$('barW').setAttribute('width',(250+570*bw).toFixed(1));$('barW').setAttribute('fill',hex('#636DFF','#6AA8FF',bw));
+ // 5 · suela con seis tacos de rosca; salen los cortos y entran los largos; el taco de lado crece
+ const bo=eo(P(t,14.6,15.1));$('boot').style.opacity=bo;$('boot').style.transform=`translateY(${(1-bo)*30}px)`;
+ draw($('sole'),eio(P(t,14.7,T(36)+.3)));
+ ST.forEach(s=>{const a=eo(P(t,s.t1,s.t1+.25)),out=eo(P(t,s.t2,s.t2+.3)),inn=eo(P(t,s.t3,s.t3+.3));
+  s.o.setAttribute('opacity',a*(1-out));s.o.setAttribute('transform',`translate(${s.x} ${s.y}) rotate(${(-200*(1-a)+260*out).toFixed(1)}) scale(${(1-.5*out).toFixed(3)})`);
+  s.n.setAttribute('opacity',inn);s.n.setAttribute('transform',`translate(${s.x} ${s.y}) rotate(${(-240*(1-inn)).toFixed(1)}) scale(${(.6+.4*inn).toFixed(3)})`)});
+ const sv=eo(P(t,T(38)-.1,T(38)+.3));$('side').setAttribute('opacity',sv);
+ const lg=eio(P(t,T(45),E(46)));const h=80+130*lg;$('stud').setAttribute('d',`M140 194 H240 L${222-6*lg} ${194+h} H${158+6*lg} Z`);
+ $('tip').setAttribute('d',`M${230-6*lg} ${194+h} H300`);$('slab').textContent=lg>.5?'TACO LARGO':'TACO CORTO';$('slab').setAttribute('y',(194+h+70).toFixed(0));$('slab').setAttribute('fill',hex('#F4F7FB','#6AA8FF',lg));
+ // 6 · el marcador vuelve: RFA 3 – 2 HUN; en el remate, bota y campo unidos por una flecha
+ const gone=eo(P(t,G,G+.4));
+ const s2=eo(P(t,19.6,20.1));$('sb2').style.opacity=s2*(1-gone);$('sb2').style.transform=`translateY(${(1-s2)*30-40*gone}px)`;
+ flip(SB2[0],t,T(49)-.1,'3');flip(SB2[1],t,T(50)-.02,'2');
+ const fi=eo(P(t,T(51)+.1,T(51)+.6));$('fin').style.opacity=fi;$('fin').style.transform=`translateY(${(1-fi)*30}px)`;
+ draw($('arr2'),eio(P(t,T(55)-.1,T(55)+.4)));
+ const uv=eo(P(t,T(56)+.1,T(56)+.6));UVS.forEach(s=>{s.style.color=hex('#F4F7FB','#8B5CF6',uv);s.style.textShadow=`0 0 ${(40*uv).toFixed(1)}px rgba(139,92,246,${(.55*uv).toFixed(2)})`});
+ $('cred').style.opacity=eo(P(t,T(51)+.5,T(51)+1));
+};
+document.fonts.ready.then(()=>Promise.all([...document.images].map(i=>i.complete?1:new Promise(r=>{i.onload=r;i.onerror=r})))).then(()=>{frame(0);window.ready=true});
+</script></body></html>
