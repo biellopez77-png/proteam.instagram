@@ -248,6 +248,38 @@ code{font-size:12px;color:var(--ice);background:var(--s2);padding:1px 5px;border
 .env-open-anim .flap{transform-origin:50% 30%;animation:flap .7s ease-out both}
 @keyframes flap{from{transform:scaleY(-1)}to{transform:none}}
 
+/* === Banquillo (propuesta P4 de Samuel, 27/11) === */
+.bench{background:var(--s1)}
+.bench h2{margin:0;font-size:18px;font-weight:800;letter-spacing:-.01em;text-wrap:balance}
+.bench .lead{margin:6px 0 0;font-size:13.5px;color:var(--text-2)}
+.seats{list-style:none;margin:16px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.desktop .seats{gap:14px}
+.seat{border-radius:12px;border:1px solid var(--line);padding:10px 6px 10px;display:flex;flex-direction:column;align-items:center;gap:4px;text-align:center;min-width:0;color:var(--text-3);background:transparent;transition:background .6s ease,border-color .6s ease,color .6s ease}
+.seat svg{width:100%;max-width:74px;height:auto;opacity:.45;transition:opacity .6s ease}
+.seat b{font-size:12.5px;font-weight:700;line-height:1.25;overflow-wrap:anywhere}
+.seat small{font-size:11px;line-height:1.3}
+/* Sitio ocupado = encendido: luz desde arriba y filo hielo */
+.seat.on{background:radial-gradient(100% 80% at 50% 0%,rgba(106,168,255,.20),rgba(99,109,255,.05) 55%,transparent 80%),var(--s2);border-color:var(--line-2);color:var(--white);box-shadow:inset 0 1px 0 rgba(185,224,255,.45)}
+.seat.on svg{opacity:1}
+.seat.on small{color:var(--ice)}
+/* Pide entrar: solo el filo, aún no está dentro */
+.seat.ask{border-color:rgba(185,224,255,.28);color:var(--text-2);box-shadow:inset 0 1px 0 rgba(185,224,255,.25)}
+.seat.ask svg{opacity:.75}
+.seat.ask small{color:var(--ice)}
+.seat-in{animation:seatIn .9s ease-out both}
+@keyframes seatIn{0%{box-shadow:inset 0 1px 0 rgba(185,224,255,0),0 0 0 0 rgba(106,168,255,0)}50%{box-shadow:inset 0 1px 0 rgba(185,224,255,.6),0 0 24px 0 rgba(106,168,255,.35)}100%{box-shadow:inset 0 1px 0 rgba(185,224,255,.45),0 0 0 0 rgba(106,168,255,0)}}
+.ask-row{margin-top:14px;padding:12px;border-radius:12px;background:var(--s2);border:1px solid var(--line-2);display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.ask-row p{margin:0;font-size:13.5px;flex:1 1 180px;color:var(--text-2)}
+.ask-row p strong{color:var(--white)}
+.ask-row .acts{display:flex;gap:8px}
+.ask-row .btn{min-height:40px;padding:8px 14px;font-size:13.5px;margin:0}
+.bench .btn.inv{margin-top:16px;width:100%}
+.desktop .bench .btn.inv{width:auto}
+.codebox{margin-top:18px;padding:16px;border-radius:14px;border:1px solid var(--line-2);background:radial-gradient(100% 90% at 50% 0%,rgba(106,168,255,.16),transparent 70%),var(--bg);text-align:center}
+.codebox .lab{font-size:10.5px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--text-3)}
+.codebox .code{display:block;margin-top:8px;font-size:17px;font-weight:800;letter-spacing:.03em;white-space:nowrap;font-variant-numeric:tabular-nums;color:var(--white);text-shadow:0 0 18px rgba(185,224,255,.35);overflow:hidden;text-overflow:ellipsis}
+.desktop .codebox .code{font-size:22px;letter-spacing:.06em}
+
 /* Notas */
 .notes{max-width:1180px;margin:30px auto 0;display:grid;gap:16px}
 @media (min-width:860px){.notes{grid-template-columns:1fr 1fr}}
@@ -263,7 +295,7 @@ code{font-size:12px;color:var(--ice);background:var(--s2);padding:1px 5px;border
   <div class="bar-in">
     <h1>Club Fundador <span>· prototipo v4</span></h1>
     <div class="ctl"><span>Pantalla</span><div class="seg" id="segScreen">
-      <button data-v="espera" aria-pressed="true">Espera (app)</button><button data-v="portada" aria-pressed="false">Portada (web)</button><button data-v="cabecera" aria-pressed="false">Cabecera móvil (web)</button><button data-v="sobres" aria-pressed="false">Sobres del día 0 (app)</button></div></div>
+      <button data-v="espera" aria-pressed="true">Espera (app)</button><button data-v="portada" aria-pressed="false">Portada (web)</button><button data-v="cabecera" aria-pressed="false">Cabecera móvil (web)</button><button data-v="sobres" aria-pressed="false">Sobres del día 0 (app)</button><button data-v="banquillo" aria-pressed="false">Banquillo (app)</button></div></div>
     <div class="ctl" id="ctlIns" hidden><span>Insignia</span><div class="seg" id="segIns">
       <button data-v="none" aria-pressed="true">Sin pedir</button><button data-v="verified" aria-pressed="false">Verificada</button></div></div>
     <div class="ctl" id="ctlHero" hidden><span>Cabecera</span><div class="seg" id="segVer">
@@ -311,6 +343,7 @@ code{font-size:12px;color:var(--ice);background:var(--s2);padding:1px 5px;border
         <li>Portada: frase de misterio y botón de registro dentro del bloque.</li>
         <li><b>Cabecera móvil (24/11, propuesta P1 de Samuel):</b> en la primera pantalla del móvil solo la fecha de cierre, «Lo que hay dentro se abre al día siguiente.» y un único botón en blanco (la luz); «Iniciar sesión» sube a la barra de arriba; la cuenta atrás baja, en penumbra; el Club y las ventajas bajan. Sin ultravioleta en esa primera pantalla. Línea discontinua: dónde acaba la primera pantalla (aprox.). Primer fotograma: la frase, la fecha y el botón ya vienen en el HTML; solo la cuenta atrás espera a cargar, con su hueco reservado (hoy es igual).</li>
         <li><b>Sobres del día 0 (24/11, propuesta P3 de Samuel):</b> en la espera, entre el Club y la cuenta atrás, tres sobres cerrados con lo que ya está aprobado: 1 «Tu insignia» (martes 1/12), 2 «Tu primera semana» (martes 8/12) y 3 «Tu carta» (viernes 11/12, al entrar). Los abiertos son lo activo y llevan la luz; el siguiente, solo un filo; el resto, en penumbra. Se abren por fecha, sin servidor ni base de datos. «Te avisamos por correo» depende de que Lucía lo envíe. Solo con la apertura el 11/12: con el 28/11 no queda ninguna semana. Sin ultravioleta nuevo: sigue en el Club.</li>
+        <li><b>Banquillo (27/11, propuesta P4 de Samuel):</b> en la espera, bajo el Club, una tarjeta con tres sitios del banquillo: el tuyo encendido y «2.º entrenador/a» y «Preparador/a físico/a» en penumbra. «Tu banquillo no está completo.» · «Tu banquillo entra contigo el día 0.» y un solo botón, «Invitar a mi cuerpo técnico», que crea el código de staff que ya existe en /coach/admin («Nou codi per a staff»: 2.º entrenador/a, preparador/a físico/a, delegado/a y fisioterapeuta, con aprobación). Quien pide entrar sale con un filo de luz y «Aceptar / Rechazar» (la aprobación que ya existe); al aceptar, su sitio se enciende. Solo para el administrador del equipo; quien entra ve «Estás en el banquillo de…» sin botón. Nunca el total de la lista. Sin ventajas nuevas ni ultravioleta nuevo.</li>
         <li>No aparecen: precio fundador (sin importe ni Stripe), detalles de los tickets (sin construir), número de apuntados.</li>
       </ul>
     </div>
@@ -324,6 +357,7 @@ code{font-size:12px;color:var(--ice);background:var(--s2);padding:1px 5px;border
     espera:[["loading","Cargando"],["none","Sin solicitar"],["requested","En revisión"],["rejected","Rechazada"],["verified","Verificada, sin número"],["verified_n","Verificada, Nº 011"],["error","Error al cargar"]],
     cabecera:[["normal","Primera pantalla"],["first","Primer fotograma (antes de cargar)"],["error","Error al abrir el registro"]],
     portada:[["campaign","Campaña abierta"],["closed","Lista cerrada"],["off","Fuera de campaña (vacío)"]],
+    banquillo:[["empty","Solo tú (vacío)"],["code","Código ya creado"],["pending","Laura pide entrar"],["one","Un sitio encendido"],["full","Banquillo completo"],["invitee","Lo que ve quien entra (2.º entrenador)"],["loading","Cargando"],["error","Error al cargar el banquillo"],["errcode","Error al crear el código"],["erraccept","Error al aceptar"],["cur","Actual (hoy, sin banquillo)"]],
     sobres:[["s0","Hoy: ningún sobre abierto (vacío)"],["s1","Mar 1/12: abierto el 1.º"],["s2","Mar 8/12: abiertos 1.º y 2.º"],["loading","Cargando"],["error","Error al abrir el sobre"],["cur","Actual (hoy, sin sobres)"]]
   };
   // Sobres: solo lo aprobado (CLUB_FUNDADOR.md y recorrido inicial). Se abren por fecha (hora de Madrid).
@@ -402,6 +436,37 @@ code{font-size:12px;color:var(--ice);background:var(--s2);padding:1px 5px;border
       return '<div class="scrim" data-act="close"><div class="sheet" role="dialog" aria-modal="true" aria-labelledby="es"><button class="x" data-act="close" aria-label="Cerrar">×</button><p class="kicker">Sobre 1</p><h3 id="es">Tu insignia</h3><p class="sub">La insignia del Club Fundador: verificada y con tu número. Ninguno se repite.</p>'+body+'</div></div>'}
     var T=[["Semana de carga","Volumen alto"],["Semana de descarga","Reducir carga y recuperar"],["Semana competitiva","Preparar el partido"],["Semana de recuperación","Descanso activo"]];
     return '<div class="scrim" data-act="close"><div class="sheet" role="dialog" aria-modal="true" aria-labelledby="es"><button class="x" data-act="close" aria-label="Cerrar">×</button><p class="kicker">Sobre 2</p><h3 id="es">Tu primera semana</h3><p class="sub">Planifica una semana. Solo una. El '+d().open.replace(" de diciembre","")+' eliges cuándo empieza y qué tipo de semana es. Después la llenas de sesiones desde la app.</p><ul class="tpl">'+T.map(function(t,i){return'<li'+(i===0?' class="on"':'')+'><i></i><b>'+t[0]+'</b><span>'+t[1]+'</span></li>'}).join("")+'</ul><p class="fine">Las 4 plantillas de semana que ya tiene la app (Planificación).</p><button class="btn btn-o" data-act="close" style="width:100%;margin-top:14px">Cerrar</button></div></div>'}
+
+  // Banquillo (P4 de Samuel). Solo tu equipo: nunca el total de la lista. Código de staff = el «Nou codi per a staff» que ya existe en /coach/admin.
+  var TEAM="Cadete A",STAFF_CODE="CADETEA-7K2Q9M-XR4T8P";
+  var B={codeMade:false,codeLoading:false,codeErr:false,justIn:""};
+  function seatSVG(on){gid++;
+    var beam=on?'<defs><radialGradient id="sb'+gid+'" cx="50%" cy="0%" r="85%"><stop offset="0" stop-color="#B9E0FF" stop-opacity=".38"/><stop offset="1" stop-color="#B9E0FF" stop-opacity="0"/></radialGradient></defs><path d="M22 0h36l18 64H4z" fill="url(#sb'+gid+')"/>':'';
+    var e=on?"#B9E0FF":"#6F7A91",eo=on?.55:.35;
+    return '<svg viewBox="0 0 80 64" aria-hidden="true">'+beam+'<ellipse cx="40" cy="60" rx="30" ry="3" fill="#000" opacity=".5"/><rect x="16" y="10" width="48" height="26" rx="6" fill="#0C1323" stroke="'+e+'" stroke-opacity="'+eo+'"/><rect x="12" y="36" width="56" height="9" rx="3" fill="#121B30" stroke="'+e+'" stroke-opacity="'+eo+'"/><path d="M20 45v12M60 45v12" stroke="'+e+'" stroke-opacity="'+eo+'" stroke-width="3" stroke-linecap="round"/>'+(on?'<path d="M24 11h32" stroke="#B9E0FF" stroke-width="1.5" opacity=".8"/>':'')+'</svg>'}
+  function seat(name,role,cls,anim){return '<li class="seat'+(cls?" "+cls:"")+(anim?" seat-in":"")+'">'+seatSVG(cls==="on")+'<b>'+name+'</b><small>'+role+'</small></li>'}
+  function benchSec(){
+    var st=S.state,head='<p class="kicker">Tu banquillo</p>';
+    if(st==="loading") return '<section class="card bench" aria-busy="true" aria-label="Cargando tu banquillo" data-prop>'+head+'<div class="skel" style="height:20px;width:70%"></div><ul class="seats">'+[1,2,3].map(function(){return'<li class="skel" style="height:104px;border-radius:12px"></li>'}).join("")+'</ul></section>';
+    if(st==="error") return '<section class="card bench" data-prop>'+head+'<div class="obj">'+PHONE+'<h2>No hemos podido cargar tu banquillo</h2></div><div class="msg err" role="alert">Revisa tu conexión y vuelve a intentarlo. Quien ya estaba dentro sigue dentro.</div><button class="btn btn-o inv" data-act="retry-bench">Reintentar</button><p class="obj-cap">Ilustración provisional: foto propia de un móvil boca abajo sobre la mesa del banquillo.</p></section>';
+    if(st==="invitee") return '<section class="card bench" data-prop aria-labelledby="bt">'+head+'<h2 id="bt">Estás en el banquillo de '+TEAM+'.</h2><p class="lead">Entráis juntos el día 0.</p><ul class="seats">'+seat("Marc","Entrenador/a principal","on")+seat("Tú","2.º entrenador/a","on")+seat("Sitio libre","Preparador/a físico/a","")+'</ul></section>';
+    var pend=st==="pending"||st==="erraccept",one=st==="one",full=st==="full";
+    var s2=one||full?seat("Laura","2.º entrenador/a","on",B.justIn==="Laura"):pend?seat("Laura","Pide entrar","ask"):seat("Sitio libre","2.º entrenador/a","");
+    var s3=full?seat("Jordi","Preparador/a físico/a","on",B.justIn==="Jordi"):seat("Sitio libre","Preparador/a físico/a","");
+    var title=full?"Tu banquillo está completo.":"Tu banquillo no está completo.";
+    var lead=full||one?"Entráis juntos el día 0.":"Tu banquillo entra contigo el día 0.";
+    var ask=pend?'<div class="ask-row" role="status"><p><strong>Laura</strong> quiere entrar como 2.º entrenador/a.</p><div class="acts"><button class="btn btn-p" data-act="accept">Aceptar</button><button class="btn btn-o" data-act="reject">Rechazar</button></div>'+(st==="erraccept"?'<div class="msg err" role="alert" style="flex-basis:100%;margin-top:0">No hemos podido aceptar su entrada. Inténtalo de nuevo.</div>':'')+'</div>':'';
+    return '<section class="card bench" data-prop aria-labelledby="bt">'+head+'<h2 id="bt">'+title+'</h2><p class="lead">'+lead+'</p><ul class="seats">'+seat("Tú","Entrenador/a principal","on")+s2+s3+'</ul>'+ask+'<button class="btn btn-o inv" data-act="invite">Invitar a mi cuerpo técnico</button><p class="fine">Solo lo ve tu equipo.</p></section>'}
+  function inviteSheet(){
+    var body;
+    if(B.codeLoading) body='<div class="codebox" aria-busy="true"><span class="lab">Código para tu cuerpo técnico</span><div class="skel" style="height:26px;width:80%;margin:10px auto 0"></div></div>';
+    else if(B.codeErr) body='<div class="codebox"><div class="obj" style="justify-content:center">'+PHONE.replace('width="74" height="58"','width="56" height="44"')+'</div></div><div class="msg err" role="alert">No hemos podido crear el código. Revisa tu conexión y vuelve a intentarlo.</div><button class="btn btn-o" data-act="retry-code" style="width:100%;margin-top:14px">Reintentar</button>';
+    else body='<div class="codebox"><span class="lab">Código para tu cuerpo técnico</span><span class="code">'+STAFF_CODE+'</span></div><div class="row"><button class="btn btn-p" data-act="share-code">Compartir</button><button class="btn btn-o" data-act="copy-code">Copiar código</button></div>';
+    return '<div class="scrim" data-act="close"><div class="sheet" role="dialog" aria-modal="true" aria-labelledby="ih"><button class="x" data-act="close" aria-label="Cerrar">×</button><p class="kicker">Tu banquillo</p><h3 id="ih">Invita a tu cuerpo técnico</h3><p class="sub">Comparte este código con tu 2.º entrenador/a o tu preparador/a físico/a. Entra en el equipo cuando tú lo aceptes.</p>'+body+'<ol class="steps"><li><b>1</b><span>Comparte el código.</span></li><li><b>2</b><span>Crea su cuenta en ProTeam y elige «Unirme con código».</span></li><li><b>3</b><span>Tú aceptas su entrada desde esta pantalla.</span></li></ol><div class="note">Este código es solo para el cuerpo técnico (2.º entrenador/a, preparador/a físico/a, delegado/a o fisioterapeuta). El de tus jugadores es otro.</div></div></div>'}
+  function banquillo(){
+    if(S.state==="cur"){var k=S.state;S.state="none";var h=espera();S.state=k;return h}
+    var k2=S.state;S.state="none";var club=clubBlock();S.state=k2;
+    return espera(club+benchSec())}
   function sobres(){
     if(S.state==="cur"){var k=S.state;S.state=S.ins;var h=espera();S.state=k;return h}
     var k2=S.state;S.state=S.ins;var club=clubBlock();S.state=k2;
@@ -438,12 +503,13 @@ code{font-size:12px;color:var(--ice);background:var(--s2);padding:1px 5px;border
 
   function render(){
     var f=frame;f.className="frame "+S.view+(document.getElementById("chkProp").checked?" show-prop":"");
-    var url=S.screen==="espera"||S.screen==="sobres"?"app · lista de espera":S.screen==="cabecera"?"proteam · portada, primera pantalla":"proteam · portada (campaña)";
+    var url=S.screen==="espera"||S.screen==="sobres"||S.screen==="banquillo"?"app · lista de espera":S.screen==="cabecera"?"proteam · portada, primera pantalla":"proteam · portada (campaña)";
     var html=(S.view==="desktop"?'<div class="urlbar"><span class="dots"><i></i><i></i><i></i></span><b>'+url+'</b></div>':'');
-    html+=S.screen==="sobres"?sobres():S.screen==="espera"?espera():S.screen==="cabecera"?cabecera():portada();
+    html+=S.screen==="banquillo"?banquillo():S.screen==="sobres"?sobres():S.screen==="espera"?espera():S.screen==="cabecera"?cabecera():portada();
     if(S.sheet) html+=sheetHTML();
     if(S.letter) html+=letterHTML();
     if(S.env) html+=envSheet(S.env);
+    if(S.inv) html+=inviteSheet();
     if(S.toast) html+='<div class="toast" role="status">'+S.toast+'</div>';
     f.innerHTML=html;
     var inp=document.getElementById("founder-handle");
@@ -459,7 +525,14 @@ code{font-size:12px;color:var(--ice);background:var(--s2);padding:1px 5px;border
   frame.addEventListener("click",function(e){var t=e.target.closest("[data-act]");if(!t)return;var a=t.dataset.act;
     if(a==="sheet"){S.sheet=true;S.fieldErr="";S.sendErr=false;render()}
     else if(a==="letter"){S.letter=true;render()}
-    else if(a==="close"){if(t.classList.contains("scrim")&&e.target!==t)return;S.sheet=false;S.letter=false;S.env=0;render()}
+    else if(a==="close"){if(t.classList.contains("scrim")&&e.target!==t)return;S.sheet=false;S.letter=false;S.env=0;S.inv=false;render()}
+    else if(a==="invite"){S.inv=true;B.codeErr=false;if(S.state==="errcode"){B.codeErr=true;render();return}if(B.codeMade||S.state==="code"){B.codeLoading=false;render();return}B.codeLoading=true;render();setTimeout(function(){B.codeLoading=false;B.codeMade=true;render()},700)}
+    else if(a==="retry-code"){B.codeErr=false;B.codeLoading=true;render();setTimeout(function(){B.codeLoading=false;B.codeMade=true;S.state="code";fillStates();render()},700)}
+    else if(a==="share-code")toast("Se abre el menú de compartir del móvil");
+    else if(a==="copy-code")toast("Código copiado");
+    else if(a==="accept"){if(S.state==="erraccept"){toast("Prueba sin el estado «Error al aceptar»");return}B.justIn="Laura";S.state="one";fillStates();toast("Laura ya está en tu banquillo.");setTimeout(function(){B.justIn=""},1200)}
+    else if(a==="reject"){S.state="empty";fillStates();toast("Solicitud rechazada.")}
+    else if(a==="retry-bench"){S.state="loading";fillStates();render();setTimeout(function(){S.state="empty";fillStates();render()},900)}
     else if(a==="env"){var n=+t.dataset.n,op=S.state==="s1"?1:S.state==="s2"?2:0;if(n<=op){S.env=n;render()}else{var e2=ENV[n-1];toast(e2.door?"Este sobre se abre el viernes 11, cuando entres.":"Este sobre se abre el "+e2.date+".")}}
     else if(a==="env-badge"){S.env=0;S.sheet=true;S.fieldErr="";S.sendErr=false;render()}
     else if(a==="retry-env"){S.state="loading";fillStates();render();setTimeout(function(){S.state="s1";fillStates();render()},900)}
@@ -468,10 +541,10 @@ code{font-size:12px;color:var(--ice);background:var(--s2);padding:1px 5px;border
     else if(a==="download")toast("Se descarga proteam-club-fundador.jpg");
     else if(a==="toast"){e.preventDefault();toast(t.dataset.msg)}
     else if(a==="register"){if(S.state==="error"){S.heroErr=true;render();return}S.heroErr=false;toast("Abre el registro actual (AuthOverlay, «Crear cuenta»)")}});
-  document.addEventListener("keydown",function(e){if(e.key==="Escape"&&(S.sheet||S.letter||S.env)){S.sheet=S.letter=false;S.env=0;render()}});
-  document.getElementById("selState").addEventListener("change",function(e){var prev=S.state;S.state=e.target.value;S.heroErr=false;S.sheet=S.letter=false;S.env=0;S.envAnim=(S.screen==="sobres"&&(S.state==="s1"||S.state==="s2")&&prev!==S.state)?(S.state==="s1"?1:2):0;render()});
+  document.addEventListener("keydown",function(e){if(e.key==="Escape"&&(S.sheet||S.letter||S.env||S.inv)){S.sheet=S.letter=false;S.env=0;S.inv=false;render()}});
+  document.getElementById("selState").addEventListener("change",function(e){var prev=S.state;S.state=e.target.value;S.heroErr=false;S.sheet=S.letter=false;S.env=0;S.inv=false;B.justIn="";B.codeMade=S.state==="code"||S.state==="pending"||S.state==="one"||S.state==="full"||S.state==="erraccept";S.envAnim=(S.screen==="sobres"&&(S.state==="s1"||S.state==="s2")&&prev!==S.state)?(S.state==="s1"?1:2):0;render()});
   function seg(id,key){var el=document.getElementById(id);el.addEventListener("click",function(e){var b=e.target.closest("button");if(!b)return;S[key]=b.dataset.v;[].forEach.call(el.children,function(x){x.setAttribute("aria-pressed",x===b)});
-    if(key==="screen"){S.state=S.screen==="espera"?"none":S.screen==="cabecera"?"normal":S.screen==="sobres"?"s1":"campaign";S.sheet=S.letter=false;S.env=0;S.envAnim=0;S.heroErr=false;fillStates();heroCtl()}render()})}
+    if(key==="screen"){S.state=S.screen==="espera"?"none":S.screen==="cabecera"?"normal":S.screen==="sobres"?"s1":S.screen==="banquillo"?"empty":"campaign";S.sheet=S.letter=false;S.env=0;S.inv=false;S.envAnim=0;S.heroErr=false;fillStates();heroCtl()}render()})}
   function heroCtl(){var on=S.screen==="cabecera";["ctlHero","ctlBtn","ctlFold"].forEach(function(id){document.getElementById(id).hidden=!on});document.getElementById("ctlIns").hidden=S.screen!=="sobres"}
   seg("segScreen","screen");seg("segView","view");seg("segDates","dates");seg("segVer","ver");seg("segFold","fold");seg("segIns","ins");
   document.getElementById("selBtn").addEventListener("change",function(e){S.btn=e.target.value;render()});

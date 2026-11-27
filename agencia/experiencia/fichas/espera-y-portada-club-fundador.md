@@ -1,7 +1,7 @@
 # Ficha · Pantalla de espera y portada: bloque del Club Fundador
 
-**Agente:** Irene (P1) · **Fecha:** 22/11/2026, rehecha en v4 el 23/11, cabecera móvil y sobres del día 0 el 24/11 · **Tareas:** `exp-espera-club`, `irene-v4-paleta`, `t-20261124-p1-portada-movil`, `t-20261124-p1-sobres-dia0`
-**Prototipo navegable:** https://claude.ai/artifact/DHjcLazBbp559Dfp5sbVZh (versión 4, sistema v4; pantallas «Espera (app)», «Portada (web)», «Cabecera móvil (web)» y «Sobres del día 0 (app)»; móvil 375 y escritorio; selector de estados; selector de fechas; casilla «Marcar lo propuesto»)
+**Agente:** Irene (P1) · **Fecha:** 22/11/2026, rehecha en v4 el 23/11, cabecera móvil y sobres del día 0 el 24/11, banquillo el 27/11 · **Tareas:** `exp-espera-club`, `irene-v4-paleta`, `t-20261124-p1-portada-movil`, `t-20261124-p1-sobres-dia0`, `t-20261127-p1-banquillo`
+**Prototipo navegable:** https://claude.ai/artifact/DHjcLazBbp559Dfp5sbVZh (versión 5, sistema v4; pantallas «Espera (app)», «Portada (web)», «Cabecera móvil (web)», «Sobres del día 0 (app)» y «Banquillo (app)»; móvil 375 y escritorio; selector de estados; selector de fechas; casilla «Marcar lo propuesto»)
 **Fuente del prototipo:** `agencia/experiencia/prototipos/club-fundador-espera.html`
 **Base:** rama `revision/club-fundador` de proteamapp (PR #1): `access-gate-screen.tsx`, `founder/founder-section.tsx`, `founder/founder-landing.tsx`, `founder/founder-badge.tsx`, `founder/founder-welcome.tsx`, `lib/founder.ts`, `routes/index.tsx`.
 
@@ -85,6 +85,37 @@ Origen: `reports/embudo-2026-11-24.md` (apartado 3, P3). Datos de Samuel: desde 
 
 **Lo que no aparece:** número de apuntados, escasez o plazas, precio, detalles de los tickets, nombre de Biel (la carta va cerrada; dentro de la app sí lo lleva, como hoy).
 
+## 0d. «Tu banquillo no está completo» en la pantalla de espera (27/11, propuesta P4 de Samuel)
+Origen: `reports/embudo-2026-11-27.md` (P4). Dato de Samuel: 0 de 24 equipos de la lista tienen más de un miembro y desde el 20/11 no entra nadie de fuera. La propuesta pide a quien ya está dentro que traiga a su cuerpo técnico, usando lo que ya existe para unirse a un equipo. En el prototipo: pantalla «Banquillo (app)», con selector de estado.
+
+**Confirmado en el código (proteamapp, `main` 49f42a9 y rama `revision/club-fundador` 5c7a6bd):**
+- Al crear el equipo ya se genera un código (`create_team_with_offer`, migración `20261118000500`), pero **solo sirve para jugadores** (`allowed_roles = ['player']`). Con ese código no puede entrar un 2.º entrenador como staff: no vale para esta tarjeta.
+- Ya existe el «código de staff»: en `/coach/admin` → Códigos, el botón «Nou codi per a staff» llama a `createInviteCode` con `allowed_roles = [assistant_coach, fitness_coach, delegate, physio]` y `requires_approval = true` (solo el administrador del equipo).
+- Quien lo usa entra por `/onboarding` → «Unirme con código» (`previewTeamCode` + `joinTeamWithCode`), elige su rol y queda **pendiente**; el administrador acepta o rechaza con `resolveJoinRequest` (lista con `listJoinRequests`).
+- **Bloqueo hoy:** todo `/coach` (también `/coach/admin`) queda detrás de la pantalla de espera (`coach.tsx` → `AccessGateScreen`) hasta el día 0. Antes de abrir, el administrador no puede crear el código de staff ni aceptar a nadie desde la app.
+- Qué ve quien entra antes de abrir: si es staff, al aceptar le lleva a `/coach` → la misma pantalla de espera (es la misma organización; `isAdmin` = falso). Esa pantalla ya enseña el Club a todo el que la ve (`FounderSection` sin condición).
+- Aparte (para R1, no es de diseño): un **jugador** que entra con el código del equipo antes de abrir va a `/app`, que no tiene la pantalla de espera: entra en la app del jugador antes del día 0.
+
+| Elemento | Propuesta | Estado |
+|---|---|---|
+| Dónde | Tarjeta nueva bajo el bloque del Club (antes de los sobres, si salen, y de la cuenta atrás). Solo para el administrador del equipo (`isAdmin`) | Propuesta |
+| Textos | «Tu banquillo» · «Tu banquillo no está completo.» · «Tu banquillo entra contigo el día 0.»; con alguien dentro: «Entráis juntos el día 0.»; con los tres sitios: «Tu banquillo está completo.» · «Solo lo ve tu equipo.» | Propuesta |
+| Sitios | Tres sitios del banquillo (objeto real, ilustración provisional): «Tú · Entrenador/a principal» encendido; «Sitio libre · 2.º entrenador/a» y «Sitio libre · Preparador/a físico/a» en penumbra. Delegado/a y fisioterapeuta también pueden entrar con el código (ocupan el sitio libre que toque; duda 18) | Propuesta |
+| Botón | Uno solo, «Invitar a mi cuerpo técnico» (contorno, no compite con el Club). Abre una ventana con el código de staff; la primera vez lo crea (`createInviteCode` con los mismos parámetros que «Nou codi per a staff»), después enseña el mismo | Propuesta (función existente) |
+| Ventana | «Invita a tu cuerpo técnico» · «Comparte este código con tu 2.º entrenador/a o tu preparador/a físico/a. Entra en el equipo cuando tú lo aceptes.» · «Código para tu cuerpo técnico» · «Compartir» (menú del móvil) y «Copiar código» · pasos «Comparte el código.» / «Crea su cuenta en ProTeam y elige «Unirme con código».» / «Tú aceptas su entrada desde esta pantalla.» · «Este código es solo para el cuerpo técnico (2.º entrenador/a, preparador/a físico/a, delegado/a o fisioterapeuta). El de tus jugadores es otro.» | Propuesta |
+| Pide entrar | Su sitio pasa a filo de luz con «Laura · Pide entrar» y debajo «**Laura** quiere entrar como 2.º entrenador/a.» con «Aceptar» y «Rechazar» (`resolveJoinRequest`). Al aceptar, su sitio se enciende (0,9 s, nada con «reducir movimiento») y aviso «Laura ya está en tu banquillo.»; al rechazar, «Solicitud rechazada.» | Propuesta (función existente) |
+| Quien entra | Ve la misma espera con «Estás en el banquillo de {equipo}.» · «Entráis juntos el día 0.», los sitios ocupados encendidos (él como «Tú») y sin botón | Propuesta |
+| Luz y ultravioleta | Los sitios ocupados son lo activo (luz desde arriba y filo hielo); los libres, en penumbra; el que pide entrar, solo el filo. El Club sigue siendo el bloque más iluminado. Ningún ultravioleta nuevo: sigue en el Club | Propuesta |
+| Cifras | Nunca el total de la lista ni de equipos: solo las personas de tu banquillo, con su nombre. Sin ventajas nuevas | Regla |
+
+**Estados del prototipo:** *Solo tú (vacío)* · *Código ya creado* · *Laura pide entrar* · *Un sitio encendido* · *Banquillo completo* · *Lo que ve quien entra* · *Cargando* (tres esqueletos) · *Error al cargar el banquillo* (móvil boca abajo, «No hemos podido cargar tu banquillo» + «Revisa tu conexión y vuelve a intentarlo. Quien ya estaba dentro sigue dentro.» + «Reintentar») · *Error al crear el código* (en la ventana: «No hemos podido crear el código. Revisa tu conexión y vuelve a intentarlo.» + «Reintentar») · *Error al aceptar* («No hemos podido aceptar su entrada. Inténtalo de nuevo.») · *Actual (hoy, sin banquillo)*. Funciona igual con las dos fechas (10–11/12 o 27–28/11).
+
+**Textos nuevos (para `t()`):** los de las filas de arriba. Los roles usan los nombres de `ROLE_LABELS` traducidos (hoy en catalán: «Entrenador/a assistent», «Preparador/a físic/a»); en el prototipo, «2.º entrenador/a» y «Preparador/a físico/a» (duda 17). Los mensajes de error de `loadCode` («Aquest codi no és vàlid.», etc.) están en catalán fijo: anotado para R4.
+
+**Componentes:** `access-gate-screen.tsx` (colocar la tarjeta tras `FounderSection` cuando `isAdmin`) y un componente nuevo `founder/bench-card.tsx` que usa `listTeamMembers`, `listInviteCodes`/`createInviteCode`, `listJoinRequests` y `resolveJoinRequest`. Necesita el `teamId` del equipo (hoy la pantalla de espera solo recibe `organizationId`). Sin funciones de servidor, tablas ni migraciones nuevas. Construirlo, por PR de R1–R4.
+
+**Medir (Samuel):** equipos de la lista con más de un miembro antes y después; clics en «Invitar a mi cuerpo técnico», códigos de staff creados y solicitudes aceptadas.
+
 ## 1. Qué se conserva (sin tocar)
 - Flujo completo de la insignia: botón → ventana con 3 pasos → imagen `public/club-fundador/compartir.jpg` → «Compartir» (solo si `navigator.share` existe) y «Descargar imagen» → campo de usuario de Instagram → «Ya la he compartido» / «Actualizar solicitud» → RPC `request_founder_badge`.
 - Estados `requested`, `verified`, `rejected` y sus textos actuales; normalización del @ (`normalizeInstagramHandle`); toast «¡Recibido! Revisamos tu historia y te avisamos.».
@@ -149,3 +180,8 @@ Origen: `reports/embudo-2026-11-24.md` (apartado 3, P3). Datos de Samuel: desde 
 12. ¿Este orden y estas fechas: 1 «Tu insignia» (mar 1/12), 2 «Tu primera semana» (mar 8/12, festivo) y 3 «Tu carta» (vie 11/12, al entrar)? ¿O el 8/12 pasa al miércoles 9?
 13. El sobre 2 enseña el paso «Tu primera semana» del recorrido inicial, que aún no está aprobado: ¿lo enseñamos ya o cambiamos su contenido?
 14. ¿Lucía avisa por correo de cada sobre? Si no, se quita «Te avisamos por correo.».
+15. **Banquillo (27/11):** ¿sale la tarjeta «Tu banquillo no está completo» bajo el Club, solo para el administrador del equipo?
+16. El código del equipo que ya existe solo vale para jugadores. ¿Usamos el código de staff (el de «Nou codi per a staff», con aprobación) y dejamos que el administrador lo cree y acepte desde la espera? Sin eso, nadie del cuerpo técnico puede entrar antes del día 0.
+17. Nombres de los sitios: ¿«2.º entrenador/a» y «Preparador/a físico/a», o los de la app («Entrenador/a asistente», «Preparador/a físico/a»)?
+18. ¿Delegado/a y fisioterapeuta también caben en el banquillo (el código lo permite) o la tarjeta solo invita a 2.º entrenador/a y preparador/a?
+19. ¿El cuerpo técnico que entra antes de abrir también puede conseguir su insignia del Club, o la tarjeta debe decir que el Club es solo de quien se apuntó?
