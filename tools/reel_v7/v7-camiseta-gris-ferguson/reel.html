@@ -190,12 +190,12 @@ const BW=[505,205];
 // ----- cámara: un solo plano -----
 const cam={cx:540,cy:960,z:1.06};const tl=gsap.timeline({paused:true});
 const fly=(t,cx,cy,z,d=.9)=>{tl.to(cam,{cx,cy,duration:d,ease:'power2.inOut'},t);tl.to(cam,{keyframes:[{z:z*0.9,duration:d*.5,ease:'sine.out'},{z,duration:d*.5,ease:'sine.inOut'}]},t)};
-const F=[5.4,10.84,15.8,20.34], OUT=24.1;
+const F=[5.4,10.84,15.8,20.34], OUT=24.9;   // r2: el remate queda quieto hasta 24,9 s y luego fundido a negro de 0,5 s
 tl.set(cam,{cx:540,cy:800,z:1.07},0).to(cam,{z:1.02,cy:985,duration:F[0],ease:'sine.out'},0);
 fly(F[0],1700,960,1.04); tl.to(cam,{z:1.0,cy:985,duration:F[1]-F[0]-.9,ease:'sine.out'},F[0]+.9);
 fly(F[1],1700,3010,1.04); tl.to(cam,{z:1.0,cy:3035,duration:F[2]-F[1]-.9,ease:'sine.out'},F[1]+.9);
 fly(F[2],540,3260,1.04); tl.to(cam,{z:1.0,cy:3285,duration:F[3]-F[2]-.9,ease:'sine.out'},F[2]+.9);
-fly(F[3],1700,5360,1.04); tl.to(cam,{z:1.0,cy:5380,duration:3.5,ease:'sine.out'},F[3]+.9);
+fly(F[3],1700,5360,1.04); tl.to(cam,{z:1.0,cy:5380,duration:2.26,ease:'sine.out'},F[3]+.9);   // r2: la cámara se para a 23,5 s
 const g=$('grain').getContext('2d'),gi=g.createImageData(360,640);let sd=1;const RN=()=>(sd=(sd*16807)%2147483647)/2147483647;
 function camAt(t){tl.seek(t,false);return [cam.cx,cam.cy,cam.z]}
 const fade=(id,t,a,dy=30,rot=0)=>{const p=eo(P(t,a,a+.5));const e=$(id);e.style.opacity=p;e.style.transform=`translateY(${(1-p)*dy}px) rotate(${rot}deg)`;return p};
@@ -244,8 +244,8 @@ window.frame=function(t){window._t=t;
  $('mateR').setAttribute('opacity',eo(P(t,T(55),T(55)+.3)));
  $('eye').setAttribute('opacity',eo(P(t,T(56),T(56)+.3)));
  const gz=$('gaze');const gl=gz.getTotalLength();const gp=eio(P(t,T(56),E(59)));gz.setAttribute('opacity',gp>0?1:0);gz.style.strokeDasharray=`18 14`;gz.setAttribute('d',`M250 700 L${(250+490*gp).toFixed(1)} ${(700-470*gp).toFixed(1)}`);
- const bp=eio(P(t,E(59)+.05,E(59)+.6));tr($('ball'),mix(282,708,bp),mix(690,248,bp));
- const uv=eo(P(t,T(59)+.1,T(59)+.6));UV.style.color=hex('#F4F7FB','#8B5CF6',uv);UV.style.textShadow=`0 0 ${(40*uv).toFixed(1)}px rgba(139,92,246,${(.55*uv).toFixed(2)})`;
+ const bp=eio(P(t,E(59)+.02,E(59)+.4));tr($('ball'),mix(282,708,bp),mix(690,248,bp));
+ const uv=eo(P(t,T(59),T(59)+.4));UV.style.color=hex('#F4F7FB','#8B5CF6',uv);UV.style.textShadow=`0 0 ${(40*uv).toFixed(1)}px rgba(139,92,246,${(.55*uv).toFixed(2)})`;
  $('cred').style.opacity=eo(P(t,T(52),T(52)+.5));
 };
 document.fonts.ready.then(()=>Promise.all([...document.images].map(i=>i.complete?1:new Promise(r=>{i.onload=r;i.onerror=r})))).then(()=>{frame(0);window.ready=true});

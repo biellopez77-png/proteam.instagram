@@ -20,3 +20,9 @@ grade('photos/p2_cut.png','img/p2_cut_g.png',keep_blue=False); solo('img/p2_cut_
 # 3 · The Dell, Milton Road End, 2000 (Dan Kerins, CC BY 2.5): encuadre del arco y la pared de ladrillo, sin el escudo ni el rótulo del club
 Image.open('photos/raw3.jpg').convert('RGB').crop((560,430,1280,960)).save('photos/p3.jpg',quality=92)
 grade('photos/p3.jpg','img/p3_g.jpg',keep_blue=False)
+# r2 (27/11, Marta B): el dibujo y el rótulo del pecho del jersey (marca de ropa) van difuminados, con borde suave
+def blur_chest(path, box=(200,355,355,518), r=18):
+    im=Image.open(path).convert('RGBA'); rgb=im.convert('RGB'); bl=rgb.filter(ImageFilter.GaussianBlur(r))
+    m=Image.new('L',im.size,0); from PIL import ImageDraw; ImageDraw.Draw(m).rounded_rectangle(box,radius=30,fill=255); m=m.filter(ImageFilter.GaussianBlur(10))
+    out=Image.composite(bl,rgb,m).convert('RGBA'); out.putalpha(im.getchannel('A')); out.save(path,optimize=True)
+blur_chest('img/p2_cut_g.png')
