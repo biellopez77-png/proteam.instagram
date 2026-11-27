@@ -1,3 +1,44 @@
+# Crítica · v7-sexto-hombre-auerbach «El sexto no es el sexto mejor» · r2
+
+**Andrés (05) · 27/11/2026 · Nota: 84/100 → NO APROBADO. Vuelve a montaje** (se queda a un punto: lo que falla es el final).
+
+Material revisado: el vídeo **de la cola** (`publicar/cola.json` → `e7db5b4a-…mp4`, 25,0 s, cierre outro2), descargado y analizado en el sandbox de Higgsfield (fotogramas cada 0,5 s y cada 0,1 s en el final, faster-whisper small con marcas por palabra, niveles cada 0,5 s y EBU R128). También el `video_mudo.mp4` del repo y el vídeo de la tarea (`12c26708-…mp4`): **esos dos llevan todavía el cierre retirado** («Estamos terminando la app de ProTeam. Síguenos para no perderte nada»); no deben usarse en ningún sitio.
+
+## Comprobaciones duras (vídeo de la cola)
+- **Voz entera:** whisper oye toda la historia: «Red Auerbach (lo escribe «Reddauerback») tenía uno de sus mejores jugadores en el banquillo. Frank Ramsey no salía de titular. Cuando los titulares se cansaban, entraba él, fresco, a correr. Con Ramsey, los Celtics ganaron siete anillos. El premio al mejor suplente de la NBA lleva el nombre de su sucesor, John Havlicek (lo escribe «Havlitek»). El sexto hombre no es el sexto mejor.» Cierre: «Dale like y síguenos para más vídeos como este» (21,42–24,14 s). **No se dice «app» en ningún momento.**
+- **Niveles:** −16,9 LUFS integrados; pico −1,0 dBFS. Voz entre −16 y −20 dB RMS (por 0,5 s); los huecos de solo música, entre −33 y −35 dB (3,5 / 6,0 / 10,0 / 13,0 s): música unos 15 dB bajo la voz. El cierre, a −23/−26 dB con el sting.
+- **Cierre en pantalla:** «ProTeam · ¿Te ha servido? · Dale like y síguenos · para más vídeos como este». Correcto.
+- **Caption de la cola:** acaba con «¿Te ha servido? Dale like y síguenos para más vídeos como este.» Sin app. El del panel aún llevaba el cierre de la app y el vídeo viejo: **corregido hoy** (vídeo de la cola y caption de la cola).
+- **Correcciones de r1:** las 6 están hechas. «23» dentro de la ficha y «RAMSEY» debajo; el rótulo «TROFEO GENÉRICO: RECREACIÓN» encima del trofeo y visible toda la escena; reloj grande junto a las fichas y barras que bajan; viaje de 10,0–10,5 s con las escenas anteriores apagadas; foto de Auerbach entera a 0,0 s; créditos más grandes.
+- Fotos de dominio público (Commons), sin logotipos ni nadie que respalde nada; música Epidemic real; sin precios, fechas, cifras de apuntados ni el nombre de Biel.
+
+## Lo que falla: el remate no se ve
+- «mejor.» se dice entre 20,98 y 21,18 s. En pantalla, «sexto mejor.» termina de escribirse a ~21,0 s y **a 21,1 s ya entra el logo «ProTeam» encima del «6»** (fotogramas cada 0,1 s de 20,6 a 21,6 s): el remate completo no llega a estar ni 0,2 s limpio y quieto, y durante el fundido el logo y la frase se pisan (texto solapado de 21,1 a 21,4 s).
+- La voz del cierre entra a 21,42 s, 0,24 s después de «mejor»: la última idea no respira.
+- Es el mismo fallo que hoy se le marcó a Rangnick, y la frase final es la tesis del vídeo.
+
+## Nota por apartados
+| apartado | nota | por qué |
+|---|---|---|
+| Historia real y gancho | 17/20 | Buen gancho y buen giro (el premio lleva el nombre del sucesor). |
+| Cada cosa que dice la voz se anima en su momento | 18/20 | Ahora «se cansaban» se ve (reloj y barras). Todo entra con su palabra. |
+| Transiciones | 11/15 | Viajes suaves y sin destellos; el de 10,0 s ya no arrastra texto viejo. Pero el fundido al cierre empieza encima del remate. |
+| Sonido | 13/15 | Voz clara y confiada, música suave unos 15 dB debajo, efectos bajos. El cierre entra pegado a «mejor» (0,24 s). |
+| Verdad y fuentes | 14/15 | Todo con fuente (NESN, NYT vía Pulse, NBC Sports Boston, NBA). |
+| Estética | 11/15 | Los textos de r1 están arreglados, pero el logo «ProTeam» se monta sobre el «6» y la frase final durante el fundido. |
+| **Total** | **84/100** | |
+
+## Correcciones (para Marta, 02)
+1. **Remate entero y quieto ≥ 1 s.** «El sexto hombre / no es el sexto mejor.» con el «6» ultravioleta, completo y con la cámara parada desde que acaba «mejor» (21,18 s) hasta ~22,2 s. Solo después, el fundido de 0,5 s al cierre (como en el r2 de Phog Allen).
+2. **Fundido sin solapes.** Que el logo «ProTeam» del cierre no aparezca mientras el remate sigue en pantalla: primero se apaga el remate (a fondo) y luego entra el cierre, o fundido de 0,5 s que empiece después del punto 1.
+3. **Audio:** la misma voz, la misma música y los mismos efectos; retrasa el audio de outro2 y el sting para que la voz del cierre entre ~0,3 s después del inicio del fundido (≈ 1,2–1,3 s después de «mejor»). Mantén −16/−17 LUFS y pico ≤ −1,0 dBTP.
+4. **Repo:** sube el `video_mudo.mp4` nuevo, con outro2 (el que hay en `tools/reel_v7/v7-sexto-hombre-auerbach/` lleva todavía el cierre de la app). Nuevo vídeo a cloudfront y `files` de `publicar/cola.json` (sigue en «revisión»). Actualiza también el vídeo del panel.
+5. Después, nueva tarea «Auditar v7 v7-sexto-hombre-auerbach».
+
+---
+
+## Crítica anterior (r1)
+
 # Crítica · v7-sexto-hombre-auerbach «El sexto no es el sexto mejor» (historia con fotos)
 
 **Andrés (05) · 27/11/2026 · Nota: 82/100 → NO APROBADO. Vuelve a montaje** (además, cae en un suspenso automático: hay texto solapado y texto que se sale de su ficha).
