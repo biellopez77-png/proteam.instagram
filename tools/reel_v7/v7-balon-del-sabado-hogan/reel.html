@@ -123,7 +123,7 @@ svg .dr{fill:none;stroke-linecap:round;stroke-linejoin:round}
 <div class="a bold c" id="l12" style="left:0;width:1080px;top:5040px;font-size:132px"></div>
 <div class="a serif c" id="l13" style="left:0;width:1080px;top:5230px;font-size:80px"></div>
 <div class="a bold c" id="uv" style="left:0;width:1080px;top:5340px;font-size:150px"></div>
-<div class="a rec c" id="cred" style="left:0;width:1080px;top:5600px;font-size:17px;opacity:0">FOTOS: AUTOR DESCONOCIDO (DOMINIO PÚBLICO; NATIONAL FOOTBALL MUSEUM<br>Y SPAARNESTAD PHOTO), MAGYAR POSTA (DOMINIO PÚBLICO), TIBOR ERKY-NAGY /<br>FORTEPAN (CC BY-SA 3.0), DR NEIL CLIFTON (CC BY-SA 2.0), VÍA WIKIMEDIA COMMONS ·<br>MARCADOR, ARMARIO, BALÓN Y CAMPO: RECREACIÓN</div>
+<!-- r2: créditos fuera de pantalla (completos en el caption y en CREDITOS.md) -->
 
 </div>
 <canvas id="grain" width="360" height="640"></canvas>
@@ -155,7 +155,7 @@ line('l12',[['CON',48],['BALÓN,',49]]);
 line('l13',[['entrena',50,'it']]);
 line('uv',[['CON',51,'','color:#8B5CF6'],['BALÓN.',52,'','color:#8B5CF6']]);
 // ----- cámara: un solo plano -----
-const OUT=23.2;
+const OUT=23.95;   // r2: «CON BALÓN.» entero y quieto ≥1,0 s tras «balón.» (22,86 s); fundido a negro 23,95–24,45 y luego outro2
 const cam={cx:540,cy:760,z:1.05};const tl=gsap.timeline({paused:true});
 const fly=(t,cx,cy,z,d=.9)=>{tl.to(cam,{cx,cy,duration:d,ease:'power2.inOut'},t);tl.to(cam,{keyframes:[{z:z*0.9,duration:d*.5,ease:'sine.out'},{z,duration:d*.5,ease:'sine.inOut'}]},t)};
 tl.set(cam,{cx:540,cy:760,z:1.05},0).to(cam,{z:1.0,cy:800,duration:1.15,ease:'sine.inOut'},0);
@@ -164,7 +164,7 @@ fly(5.2,1700,860,1.0); tl.to(cam,{z:1.02,cy:890,duration:2.05,ease:'sine.out'},6
 fly(8.15,1700,2150,1.0); tl.to(cam,{z:1.02,cy:2420,duration:3.25,ease:'sine.inOut'},9.05);
 fly(12.3,540,3630,1.0); tl.to(cam,{z:1.02,cy:3670,duration:2.45,ease:'sine.out'},13.2);
 fly(15.68,1700,4300,1.0); tl.to(cam,{z:1.0,cy:4420,duration:2.87,ease:'sine.inOut'},16.58);
-fly(19.45,540,5280,1.0); tl.to(cam,{z:1.03,cy:5300,duration:4.6,ease:'sine.out'},20.35);
+fly(19.45,540,5280,1.0); tl.to(cam,{z:1.03,cy:5300,duration:2.8,ease:'sine.out'},20.35);   // r2: cámara parada desde 23,15 s; el remate queda quieto hasta el fundido
 // grano
 const g=$('grain').getContext('2d'),gi=g.createImageData(360,640);let sd=1;const RN=()=>(sd=(sd*16807)%2147483647)/2147483647;
 function camAt(t){tl.seek(t,false);return [cam.cx,cam.cy,cam.z]}
@@ -214,7 +214,6 @@ window.frame=function(t){window._t=t;
  const t2=eo(P(t,T(46)-.1,T(46)+.3));$('tag2').style.opacity=t2;$('tag2').style.transform=`rotate(${4+(1-t2)*6}deg) translateY(${(1-t2)*30}px)`;
  $('strP').setAttribute('stroke-dashoffset',100-100*eio(P(t,T(50)-.05,T(50)+.4)));
  const uq=P(t,T(52),T(52)+.4);$('uv').style.filter=uq>=1?'drop-shadow(0 0 18px rgba(139,92,246,.55))':'none';
- $('cred').style.opacity=eo(P(t,T(47),T(47)+.6));
 };
 document.fonts.ready.then(()=>Promise.all([...document.images].map(i=>i.complete?1:new Promise(r=>{i.onload=r;i.onerror=r})))).then(()=>{frame(0);window.ready=true});
 </script></body></html>
