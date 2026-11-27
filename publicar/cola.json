@@ -1665,7 +1665,7 @@
   "id": "v7-partido-secreto-mclendon",
   "kind": "reel",
   "files": [
-   "https://d2ol7oe51mr4n9.cloudfront.net/user_3M2z7lIyzIPYtjNHcxRWFNk6wi7/b6996647-520c-4f0f-98e1-92d207c6d365.mp4"
+   "https://d2ol7oe51mr4n9.cloudfront.net/user_3M2z7lIyzIPYtjNHcxRWFNk6wi7/a2cd1f8e-48f7-43a1-98e2-4d57fdc497cd.mp4"
   ],
   "caption": "Un domingo de 1944, un entrenador atrancó las puertas de su gimnasio para jugar un partido que la ley prohibía.\n\nEl 12 de marzo de 1944, en Durham (Carolina del Norte), los Eagles del North Carolina College for Negroes, de John McLendon, jugaron a puerta cerrada contra un equipo blanco de estudiantes de medicina de Duke. McLendon lo programó a la hora en que casi toda la ciudad, policía incluida, estaba en la iglesia. Ganaron 88-44; después mezclaron los dos equipos y jugaron otro partido. Nadie lo contó en más de 50 años, hasta que Scott Ellsworth lo publicó en The New York Times Magazine en 1996 (NCCU; The Chronicle de Duke; NC Department of Natural and Cultural Resources).\n\n¿Cuándo fue la última vez que mezclaste a los de siempre con los que nunca juegan juntos?\n\n¿Te ha servido? Dale like y síguenos para más vídeos como este.\n\nFuentes: Scott Ellsworth (The New York Times Magazine, 1996, vía NCCU), The Chronicle (Duke), NC DNCR, Duke Today. Fotos: Jack Delano (dominio público, Library of Congress), Gregw824 (dominio público), RDUpedia (CC BY-SA 3.0), vía Wikimedia Commons. Calendario, silueta, pista, fichas y marcador: recreación.\nMúsica y efectos: Epidemic Sound\n\n#entrenador #entrenadordebaloncesto #baloncesto #basket #historiadelbaloncesto #JohnMcLendon #SecretGame #NCAA #deporteenequipo #vestuario #ProTeam",
   "state": "revisión",
@@ -1676,11 +1676,13 @@
    "status": "pendiente"
   },
   "added": "2026-11-27T06:36:00+01:00",
-  "nota": "v7 historia con fotos (McLendon, Durham 1944). Montaje Marta A (02); 29,8 s con cierre común. Créditos en tools/reel_v7/v7-partido-secreto-mclendon/CREDITOS.md. Pendiente de auditoría de Andrés.",
+  "nota": "v7 historia con fotos (McLendon, Durham 1944). r2 de Marta B (02) tras la crítica 84/100: «JUNTOS» quieto 1,1 s, fundido de 0,5 s a outro2, foto 1 sin el cartel, marcador proporcional, pies a 17 px, aire entre «Sus» y «Eagles». 28,6 s. Créditos en tools/reel_v7/v7-partido-secreto-mclendon/CREDITOS.md. Pendiente de auditoría de Andrés.",
   "files_old": [
+   "https://d2ol7oe51mr4n9.cloudfront.net/user_3M2z7lIyzIPYtjNHcxRWFNk6wi7/b6996647-520c-4f0f-98e1-92d207c6d365.mp4",
    "https://d2ol7oe51mr4n9.cloudfront.net/user_3M2z7lIyzIPYtjNHcxRWFNk6wi7/c4b3d95b-d57f-4486-b02a-028bab7c35e2.mp4"
   ],
-  "cierre": "outro2"
+  "cierre": "outro2",
+  "updated": "2026-11-27T20:10:00+01:00"
  },
  {
   "id": "v7-balon-del-sabado-hogan",

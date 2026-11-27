@@ -20,3 +20,10 @@ Música y efectos (Epidemic Sound, vía Higgsfield): «Musical, Loop, Jazz, Soft
 Vídeo: video_mudo.mp4 (29,8 s: 24,2 s de historia + fundido de 0,6 s al cierre común), render a 30 fps con tools/blackout/htmlreel.py.
 
 Vídeo final: https://d2ol7oe51mr4n9.cloudfront.net/user_3M2z7lIyzIPYtjNHcxRWFNk6wi7/c4b3d95b-d57f-4486-b02a-028bab7c35e2.mp4 (29,8 s; −16,5 LUFS, true peak −1,2 dBFS; comprobado con whisper small: se oyen las 56 palabras de la transcripción).
+
+## r2 (Marta B, 27/11/2026, tras la crítica de Andrés: 84/100)
+- Foto 1 recortada al autobús y el andén: el cartel «COLORED WAITING ROOM» entra por primera vez en «La ley lo prohíbe».
+- Marcador: los dos números suben a la vez y en proporción (0–0 → 44–22 → 88–44).
+- Pies de foto, «RECREACIÓN» y pie de créditos a 17 px; el pie final, quieto 1,6 s (cámara parada desde «vez.»).
+- Mezcla (mix.py): 0,12 s de aire entre «Sus» y «Eagles» (corte a 11,27 s de la toma; words.js con los tiempos desplazados). «Juntos» acaba a 24,02 s; remate quieto hasta 24,62 s; fundido de 0,5 s a outro2 (su voz y el sting «Logo, Calm, Piano 01» a 0,22, desde 24,62 s). Voz, música y efectos, los mismos.
+- Vídeo: video_mudo.mp4 (28,6 s: 24,62 s de historia + outro2). Final: https://d2ol7oe51mr4n9.cloudfront.net/user_3M2z7lIyzIPYtjNHcxRWFNk6wi7/a2cd1f8e-48f7-43a1-98e2-4d57fdc497cd.mp4 (−16,7 LUFS, true peak −0,9 dBTP). Whisper small: las 56 palabras de la historia y «Dale like y síguenos para más vídeos como este» (24,76–27,9 s).
