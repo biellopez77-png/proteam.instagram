@@ -1,0 +1,21 @@
+# v7-cadena-gimnasio-carter · «La cadena del gimnasio» (historia con fotos)
+Guion: agencia/fabrica-v7/guiones/v7-cadena-gimnasio-carter.md (Dani B). Montaje v7: Marta B (02), 27/11/2026.
+
+Voz (22,32 s, texto del guion sin cambios): «Richmond, California. Enero del noventa y nueve. Su equipo va trece a cero. Ken Carter pone una cadena en la puerta del gimnasio y un cartel: os espero en la biblioteca. Quince de sus cuarenta y cinco jugadores no cumplen el contrato firmado: deberes, puntualidad, primera fila en clase. Pierde dos partidos y el invicto... Pero el contrato se cumple.»
+ElevenLabs eleven_v4, voz Mateo (gpMzl7dbkfC9dIxAqQZT), una toma (412 créditos). Tiempos por palabra: faster-whisper small (words.json / words.js), comprobados con silencedetect. Están todas las palabras (whisper escribe «99», «13 -0», «15», «45»: se oyen en letra). La pausa del «...» antes de «Pero» es de 0,45 s.
+
+Datos y fuentes: NPR (11/01/1999), George Fox Journal (invierno 2005), Contemporary Black Biography (Gale, vía Encyclopedia.com), Christianity Today (2005); ver el guion. La frase del cartel es paráfrasis y va sin comillas.
+
+Fotos (Wikimedia Commons, descargadas el 27/11/2026 desde el sandbox de Higgsfield; licencias comprobadas por Dani B en el guion):
+- Richmond High School 2.jpg (18/06/2023) — Mx. Granger — CC0 — recortada y graduada en B/N con el azul (grade.py); en ficha de prensa «RICHMOND HIGH · CALIFORNIA», rotulada «HOY».
+- Coach Carter at an interview in 2014- 2014-08-21 16-05.jpg (2014) — TropicAces — CC BY-SA 3.0 — recorte de cabeza y hombros, logotipos de los micrófonos difuminados, B/N; enmarcada (el recorte con rembg no queda limpio porque los micrófonos van delante), con tarjeta «KEN CARTER · ENTRENADOR · FOTO DE 2014». Marcada «modificada».
+- Old door locked.jpg (20/06/2019) — Annatsach — CC BY-SA 4.0 — B/N, rotulada «ILUSTRACIÓN» (no es la puerta de Richmond); en «cadena» la cámara de la foto se acerca a la cadena y se dibuja un marco. Marcada «modificada».
+- Reservas no usadas. Sin imágenes de la película.
+Preparación: cut.py. Calendario «ENERO 1999», marcador de tiza 13–0, cartel «OS ESPERO EN LA BIBLIOTECA», libros, 45 fichas, contrato con tres casillas y firma, dos fichas de partido tachadas y sello «SE CUMPLE»: dibujados y rotulados «recreación».
+
+Cambio respecto al guion: «Pierde dos partidos y el invicto...» vuelve al marcador de la escena 13–0 (la cifra se agrieta y se apaga, y debajo se tachan dos fichas de partido) y el sello cae sobre el contrato de la escena de los jugadores. Ultravioleta #8B5CF6 una sola vez: sello «SE CUMPLE».
+
+Música y efectos (Epidemic Sound, vía Higgsfield): «Musical, Loop, Calm Piano, Dreamy, Intro 01», «… 02», «… 03» y «… 04» (misma serie, encadenadas con fundidos de 1,4 s; distinta de la del último v7, que usó «Soft Piano, Strings, Calm, Intro, Logo»); «Swooshes, Whoosh, Soft, Clean»; «Paper, Friction, Sheet, Laminated, Slide On Wooden Table»; «Paper, Handle, Notepad, Page Turn, Single»; «Objects, Writing, Chalk Strokes»; «Objects, Writing, Chalk Stick, Single Stroke On Chalk Board 01»; «Chains, Handle, Padlock, Movement»; «Objects, Tape, Masking Tape, Pull»; «Objects, Writing, Marker On Paper, Writing 02»; «Objects, Book, Books, Small Pile, Down On Table 01»; «Draughts, Game Piece, Place Down Onto Board Square 02»; «Objects, Writing, Pen, Ballpoint Pen, Write On Paper, Very Short»; «Objects, Writing, Pen On Paper, Tick»; «Clocks, Tick, Wooden Wall Clock, Ticking»; «Office Supplies, Rubber Stamp, Document 01»; en el cierre, «Musical, Loop, Logo, Calm, Piano 01» bajo (0,22). Mezcla: mix.py (voz −19, música −31 con ducking; resultado voz −19,0, música −33,6, sfx −37,6, pico 0,90); final −16,6 LUFS, −1,0 dBFS de pico.
+
+Vídeo final: https://d2ol7oe51mr4n9.cloudfront.net/user_3M2z7lIyzIPYtjNHcxRWFNk6wi7/f519f727-285f-4779-ba3b-a106db5b6e42.mp4 (26,4 s: historia hasta 22,9 s, 0,58 s después de la voz, con fundido de 0,5 s desde 22,40 s al cierre común tools/reel_v6/outro/outro2.mp4, sin app). Comprobado con whisper small: se oye la voz entera y «Dale like y síguenos para más vídeos como este».
+Caption: la del guion; el bloque de fuentes y los hashtags van antes para que termine con «¿Te ha servido? Dale like y síguenos para más vídeos como este.».

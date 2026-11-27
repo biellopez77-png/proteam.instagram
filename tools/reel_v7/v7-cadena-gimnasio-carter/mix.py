@@ -43,7 +43,7 @@ put(sfx, BK, T(27) + .05, .07)                               # libros
 for i in range(5): put(sfx, PC, T(31) - .1 + i * .09, .035)  # 45 fichas
 for i in range(4): put(sfx, PC, T(33) + i * .28, .022)       # se apagan
 put(sfx, SL, T(36) - .1, .05)                                # contrato
-put(sfx, PN, T(37) - .02, .05, dur=.55, fi=.02, fo=.15)      # firma
+put(sfx, PN, T(37) - .02, .05, off=.75, dur=.55, fi=.02, fo=.15)      # firma
 for k in (38, 39, 40): put(sfx, TK, T(k) - .02, .06, dur=.4, fo=.1)   # tres marcas
 put(sfx, CL, T(39), .03, dur=.9, fi=.05, fo=.3)              # tic de reloj suave en «puntualidad»
 put(sfx, SL, T(45) - .05, .04)                               # fichas de partido
