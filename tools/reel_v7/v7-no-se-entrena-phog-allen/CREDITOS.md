@@ -16,6 +16,8 @@ Ultravioleta #8B5CF6 una sola vez: «ENSEÑARLO».
 
 Música y efectos (Epidemic Sound, vía Higgsfield): «Musical, Loop, Calm Piano, Dreamy, Intro 04» (encadenada consigo misma con fundidos de 1,4 s; distinta a las de los v7 anteriores); «Swooshes, Whoosh, Soft, Clean»; «Sheet, Laminated, Slide On Wooden Table 04»; «Communications, Camera, Analogue Film Camera, Shutter Clicks 02»; «Office Supplies, Rubber Stamp, Document 01» (NO); «Objects, Writing, Pen, Marker, Write, Short, Small»; «Objects, Writing, Pencil On Paper, Letter H» (50 marcas); «Games, MIsc, Poker Chips, Single, Drop On Table» (746); «Whistles, Mechanical, Sport, Referee Whistle, 10 Metres Distance» (dos silbatos lejanos); «Sports, Court, Basketball, Indoor, Ball Bounce, Soft 01»; «Objects, Writing, Marker On Whiteboard». Mezcla: mix.py (voz −19, música −31 con ducking).
 
-Render: htmlreel (30 fps) y fundido de 0,6 s al cierre común en 24,5 s.
+Render: htmlreel (30 fps) y fundido de 0,5 s al cierre común (outro2.mp4) en 25,4 s; «enseñarlo» queda 1,05 s quieto tras la última sílaba. Cierre: audio de outro2.mp4 + sting «Logo, Calm, Piano 01» bajo.
 
 Vídeo final: https://d2ol7oe51mr4n9.cloudfront.net/user_3M2z7lIyzIPYtjNHcxRWFNk6wi7/d01bc15a-1617-456b-a9f6-f7ff3547f94c.mp4 (30,1 s: 24,5 s de historia + cierre común; comprobado con whisper: se oyen las 55 palabras; −16,5 LUFS, −0,9 dBTP).
+
+Remontaje 27/11 (crítica de Andrés, 79/100): vídeo final https://d2ol7oe51mr4n9.cloudfront.net/user_3M2z7lIyzIPYtjNHcxRWFNk6wi7/75a9bcd1-6608-4a23-88b2-0564ba9e797e.mp4 (29,4 s: 25,4 s de historia + cierre común outro2). Whisper oye las 55 palabras, «Dean Smith» incluido, y «enseñarlo» entero (acaba en 24,38 s; la voz del cierre entra a 25,66 s). Foto 1 sin cambiar (la de Commons es dominio público; la reserva de Springfield queda como mejora opcional).

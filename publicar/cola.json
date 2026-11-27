@@ -1586,7 +1586,7 @@
   "id": "v7-no-se-entrena-phog-allen",
   "kind": "reel",
   "files": [
-   "https://d2ol7oe51mr4n9.cloudfront.net/user_3M2z7lIyzIPYtjNHcxRWFNk6wi7/9ac69641-3a8d-4250-80ef-8a499e484568.mp4"
+   "https://d2ol7oe51mr4n9.cloudfront.net/user_3M2z7lIyzIPYtjNHcxRWFNk6wi7/75a9bcd1-6608-4a23-88b2-0564ba9e797e.mp4"
   ],
   "caption": "El inventor del baloncesto le dijo a su alumno que el baloncesto no se podía entrenar.\n\nJames Naismith entrenó a Phog Allen en Kansas. Cuando a Allen le ofrecieron dirigir un equipo, Naismith le soltó: «You can't coach basketball, you just play it» (University Daily Kansan; Encyclopedia.com). Allen no le hizo caso: 50 temporadas y 746 victorias en universidad (Kansas Historical Society), y por sus manos pasaron Adolph Rupp y Dean Smith. Britannica le llama «el padre del entrenamiento de baloncesto».\n\n¿Qué cosa de tu equipo crees que «solo se juega» y en realidad se puede enseñar?\n\n¿Te ha servido? Dale like y síguenos para más vídeos como este.\n\nFuentes: University Daily Kansan (2018), Encyclopedia.com, Kansas Historical Society (Kansapedia), Britannica, KU Memorial Union. Fotos: dominio público (autor desconocido; James Naismith; Squires Studio), vía Wikimedia Commons. Banco, contador, pizarra y fichas: recreación.\nMúsica y efectos: Epidemic Sound\n\n#entrenador #entrenadordebaloncesto #baloncesto #basket #NCAA #PhogAllen #Naismith #historiadelbaloncesto #formacion #ProTeam",
   "state": "revisión",
@@ -1597,11 +1597,13 @@
    "status": "pendiente"
   },
   "added": "2026-11-27T04:47:00+01:00",
-  "nota": "v7 historia con fotos (Phog Allen y Naismith). Guion: agencia/fabrica-v7/guiones/v7-no-se-entrena-phog-allen.md (Dani B). Montaje: Marta A (02), tools/reel_v7/v7-no-se-entrena-phog-allen/. Pendiente de auditoría de Andrés.",
+  "nota": "v7 historia con fotos (Phog Allen y Naismith). Guion: agencia/fabrica-v7/guiones/v7-no-se-entrena-phog-allen.md (Dani B). Montaje: Marta A (02). Remontaje 27/11 tras crítica 79/100 (remate quieto 1,05 s, sello y cita sin solapes, comilla fuera, viaje 2,6–3,2 s con foto de Allen, tarjeta apagada antes del banco, «Dean Smith» con +1,5 dB). Pendiente de nueva auditoría de Andrés.",
   "files_old": [
-   "https://d2ol7oe51mr4n9.cloudfront.net/user_3M2z7lIyzIPYtjNHcxRWFNk6wi7/d01bc15a-1617-456b-a9f6-f7ff3547f94c.mp4"
+   "https://d2ol7oe51mr4n9.cloudfront.net/user_3M2z7lIyzIPYtjNHcxRWFNk6wi7/d01bc15a-1617-456b-a9f6-f7ff3547f94c.mp4",
+   "https://d2ol7oe51mr4n9.cloudfront.net/user_3M2z7lIyzIPYtjNHcxRWFNk6wi7/9ac69641-3a8d-4250-80ef-8a499e484568.mp4"
   ],
-  "cierre": "outro2"
+  "cierre": "outro2",
+  "updated": "2026-11-27T13:40:00+01:00"
  },
  {
   "id": "v7-contar-rivales-rangnick",
