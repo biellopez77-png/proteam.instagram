@@ -119,17 +119,17 @@ svg .dr{fill:none;stroke-linecap:round;stroke-linejoin:round}
 const $=i=>document.getElementById(i), cl=x=>Math.min(1,Math.max(0,x)), P=(t,a,b)=>cl((t-a)/(b-a)), eo=x=>1-Math.pow(1-x,3), eio=x=>x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2;
 const W=window.WORDS, T=k=>W[k][1], E=k=>W[k][2];
 const NS='http://www.w3.org/2000/svg', mk=(tag,at,par)=>{const e=document.createElementNS(NS,tag);for(const k in at)e.setAttribute(k,at[k]);par&&par.appendChild(e);return e};
-const OUT=20.4;
+const OUT=21.3;
 const L=[];
 function line(id,tokens,gone){const el=$(id);for(const [txt,k,cls,st] of tokens){const s=document.createElement('span');s.className='w '+(cls||'');s.textContent=txt;if(st)s.style.cssText=st;el.appendChild(s);L.push([s,T(k),gone||99])}}
-line('a1',[['Ralf',0],['Rangnick',1,'it']]);
-line('a2',[['JUEGA',2],['Y',3],['ENTRENA',4]]);
+line('a1',[['Ralf',0],['Rangnick',1,'it']],4.2);
+line('a2',[['JUEGA',2],['Y',3],['ENTRENA',4]],4.2);
 line('a3',[['en',5],['el',6],['club',7],['de',8],['su',9],['ciudad,',10,'it']]);
 line('a4',[['el',11],['Viktoria',12,'it'],['Backnang.',13,'it']]);
 line('b1',[['Un',14],['amistoso',15,'it'],['contra',16],['el',17]]);
 line('b2',[['DINAMO',18],['DE',19],['KIEV',20]]);
 line('b3',[['de',21],['Lobanovski.',22,'it']]);
-const G1=T(35)-.12, G2=T(37)-.12, G3=T(39)-.12;
+const G1=T(35)-.12, G2=T(37)-.42, G3=T(39)-.12;
 line('c1',[['En',23],['un',24],['saque',25],['de',26],['banda,',27,'it']],G3);
 line('c2',[['se',28],['para',29],['a',30]],G1);
 line('c3',[['CONTAR',31]],G1);
@@ -172,7 +172,7 @@ const F=[4.45,7.85,17.12];
 tl.set(cam,{cx:540,cy:960,z:1.06},0).to(cam,{z:1.02,cy:985,duration:F[0],ease:'sine.out'},0);
 fly(F[0],1700,960,1.04); tl.to(cam,{z:1.0,cy:985,duration:F[1]-F[0]-.9,ease:'sine.out'},F[0]+.9);
 fly(F[1],1700,3010,1.04); tl.to(cam,{z:1.0,cy:3035,duration:F[2]-F[1]-.9,ease:'sine.out'},F[1]+.9);
-fly(F[2],540,3260,1.04); tl.to(cam,{z:1.0,cy:3280,duration:3.5,ease:'sine.out'},F[2]+.9);
+fly(F[2],540,3260,1.04); tl.to(cam,{z:1.0,cy:3280,duration:19.9-(F[2]+.9),ease:'sine.out'},F[2]+.9);   // cámara parada desde 19,9 s
 const g=$('grain').getContext('2d'),gi=g.createImageData(360,640);let sd=1;const RN=()=>(sd=(sd*16807)%2147483647)/2147483647;
 function camAt(t){tl.seek(t,false);return [cam.cx,cam.cy,cam.z]}
 const fade=(id,t,a,dy=30,rot=0)=>{const p=eo(P(t,a,a+.5));const e=$(id);e.style.opacity=p;e.style.transform=`translateY(${(1-p)*dy}px) rotate(${rot}deg)`;return p};
@@ -190,9 +190,9 @@ window.frame=function(t){window._t=t;
  const bk=eo(P(t,T(7)-.3,T(7)+.2));$('p2').style.opacity=bk;$('p2').style.transform=`rotate(${2+(1-bk)*3}deg) translateY(${(1-bk)*50}px)`;
  const pn=P(t,T(12),T(12)+.3);$('pinh').setAttribute('transform',`translate(0 ${(-90*(1-eo(pn))).toFixed(1)})`);$('pinh').setAttribute('opacity',pn>0?cl(pn*3):0);
  $('minif').setAttribute('opacity',eo(P(t,T(13),T(13)+.35)));
- // 2 · AMISTOSO; el Dinamo como recorte de periódico; Lobanovski en ficha
+ // 2 · el Dinamo entra durante el viaje (sin encuadre vacío); AMISTOSO; el Dinamo como recorte de periódico; Lobanovski en ficha
  stamp('s3',t,T(15),5);
- const p4=eo(P(t,T(18)-.35,T(18)+.15));$('p4').style.opacity=p4;$('p4').style.transform=`rotate(${-2-(1-p4)*3}deg) translateY(${(1-p4)*50}px)`;
+ const p4=eo(P(t,F[0]+.3,F[0]+.85));$('p4').style.opacity=p4;$('p4').style.transform=`rotate(${-2-(1-p4)*3}deg) translateY(${(1-p4)*50}px)`;
  const p3=eo(P(t,T(21)-.25,T(21)+.25));$('p3').style.opacity=p3;$('p3').style.transform=`rotate(${2+(1-p3)*3}deg) translateX(${(1-p3)*60}px)`;
  // 3 · campo: el balón sale por la banda, se congela el juego y se cuenta a los rivales
  fade('field',t,F[1]+.4,30);
@@ -212,7 +212,7 @@ window.frame=function(t){window._t=t;
  $('cn').textContent=n+q;$('cn').style.color=t>=T(38)?'#6AA8FF':q?'#8f9bb8':'#F4F7FB';
  const ri=t>=T(38)?10:(t>=c0&&t<T(35))?ORD[Math.min(9,Math.max(0,k-1))]:-1;
  if(ri>=0&&t<T(39)){const [x,y]=RV[ri];tr($('ring'),x,y);$('ring').setAttribute('opacity',1)}else $('ring').setAttribute('opacity',0);
- GH.forEach((gh,i)=>{const a=i<2?T(35)+i*.12:T(36);gh.setAttribute('opacity',eo(P(t,a,a+.25))*(1-eo(P(t,T(37),T(38)))))});
+ GH.forEach((gh,i)=>{const a=i<2?T(35)+i*.12:T(36);gh.setAttribute('opacity',eo(P(t,a,a+.25))*(1-eo(P(t,G2,G2+.3))))});
  draw($('press'),eio(P(t,T(42),E(45))));
  const ct=eo(P(t,T(40),T(40)+.4));$('c9').style.color=hex('#F4F7FB','#6AA8FF',ct);
  // 4 · once flechas que llegan a la vez; «A LA VEZ» en ultravioleta (única vez)
