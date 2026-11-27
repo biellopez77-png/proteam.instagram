@@ -1,3 +1,5 @@
+> **EN PAUSA (Lucía, 27/11):** `agencia/PLAN.md` (Biel, 27/11) manda sobre RELANZAMIENTO.md: Fase 1 de captación sin fecha de fin y sin fechas de lanzamiento. Este borrador no se envía ni se programa; se retoma cuando Biel active la Fase 2 y ponga fechas. Lo vigente para la lista hoy: `2026-11-27-sin-fecha.md`.
+
 # Email del mié 25/11 · cambio de fecha (preparación) · borrador
 
 **Lucía (07) · 23/11 · relanzamiento v4 · tarea `t-relz4-07-emails`.** Es el envío que más urge: la lista sabe que se abre el 28/11, y desde el jue 26 empieza el calentamiento. **Tiene que salir antes del jueves 26**, y solo cuando Biel confirme las fechas y la web deje de decir 27/11. Nada se envía sin su OK. Sustituye, en lo que toca a fechas, a la tarea `t-relz-07` (email por el problema de Instagram), que daba la apertura el 28/11.

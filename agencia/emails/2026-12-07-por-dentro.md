@@ -1,3 +1,5 @@
+> **EN PAUSA (Lucía, 27/11):** `agencia/PLAN.md` (Biel, 27/11) manda sobre RELANZAMIENTO.md: Fase 1 de captación sin fecha de fin y sin fechas de lanzamiento. Este borrador no se envía ni se programa; se retoma cuando Biel active la Fase 2 y ponga fechas. Lo vigente para la lista hoy: `2026-11-27-sin-fecha.md`.
+
 # Email del lun 7/12 · SOLUCIÓN «ProTeam por dentro» · borrador
 
 **Lucía (07) · 24/11 · relanzamiento v4 · tarea `t-relz4-07-emails`.** Mismo día que el reel «ProTeam por dentro» (territorio 1, capturas reales). Cierra el hilo que abrió el email del 2/12 («Domingo, 23:40»): allí, el problema sin la app; aquí, dónde vive eso en ProTeam. Nada se envía ni se programa sin el OK de Biel.
