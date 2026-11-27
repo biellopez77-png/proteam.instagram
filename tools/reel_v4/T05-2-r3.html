@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8">
+<!-- T05-2-r3 «Los tres empiezan en tu área» (fútbol). Plantilla a3.html: planos fijos, la cámara solo se mueve al cambiar de zona. Todo dibujado (sin IA, sin caras, sin escudos). Marta A, 23/11. -->
+<style>
+@font-face{font-family:M;font-weight:800;src:url(/tools/fonts/manrope-latin-800-normal.woff2)}
+@font-face{font-family:M;font-weight:700;src:url(/tools/fonts/manrope-latin-700-normal.woff2)}
+@font-face{font-family:M;font-weight:500;src:url(/tools/fonts/manrope-latin-500-normal.woff2)}
+@font-face{font-family:S;font-style:italic;font-weight:400;src:url(/tools/fonts/instrument-serif-latin-400-italic.woff2)}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#fbfaf7}
+#st{position:absolute;inset:0;overflow:hidden;background:#fbfaf7}
+#world{position:absolute;left:0;top:0;transform-origin:0 0;will-change:transform}
+.o{position:absolute;left:0;top:0;transform-origin:50% 50%}
+.paper{background:#fff;box-shadow:0 18px 50px rgba(20,18,12,.10)}
+.num{position:absolute;font-family:M;font-weight:800;letter-spacing:-.05em;color:#121212;white-space:nowrap;line-height:1}
+.hand{position:absolute;font-family:S;font-style:italic;white-space:nowrap;line-height:1}
+.lab{position:absolute;font-family:M;font-weight:800;letter-spacing:.14em;color:#121212;white-space:nowrap}
+#cap{position:absolute;left:90px;right:90px;top:1330px;text-align:center;font-family:M;font-weight:800;font-size:58px;line-height:1.12;letter-spacing:-.03em;color:#121212;padding:18px 26px;border-radius:22px;background:rgba(251,250,247,.94)}
+#cap em{font-family:S;font-style:italic;font-weight:400;font-size:1.14em;letter-spacing:0}
+#hook{position:absolute;left:0;right:0;top:120px;text-align:center;font-family:M;font-weight:800;font-size:88px;line-height:1.05;letter-spacing:-.05em;color:#121212}
+#hook em{font-family:S;font-style:italic;font-weight:400;letter-spacing:0;color:#2f6bff}
+#gr{position:absolute;inset:0;pointer-events:none;mix-blend-mode:multiply;opacity:0}
+#ink{position:absolute;inset:0;background:#0e0e10;opacity:0;pointer-events:none}
+</style></head><body><div id="st">
+<div id="world">
+  <!-- 1 · marcador (SC) -->
+  <div class="o paper" id="SC" style="width:640px;height:380px;border-radius:14px;border:6px solid #121212">
+    <div class="lab" style="left:40px;top:34px;font-size:22px;color:#77736b">TU EQUIPO</div>
+    <div class="lab" style="right:40px;top:34px;font-size:22px;color:#77736b">RIVAL</div>
+    <div class="num" style="left:0;right:0;top:92px;text-align:center;font-size:230px">1<span style="color:#9aa1a8">-</span>3</div>
+    <div class="lab" style="left:0;right:0;top:332px;text-align:center;font-size:18px;color:#9aa1a8">EJEMPLO</div>
+  </div>
+  <!-- 2 · campo cenital (FD): tu portería abajo -->
+  <svg class="o" id="FD" width="980" height="1380" viewBox="-490 -690 980 1380" style="overflow:visible">
+    <rect x="-490" y="-690" width="980" height="1380" fill="#eef1ec"/>
+    <g fill="none" stroke="#121212" stroke-width="5" stroke-linejoin="round">
+      <rect x="-450" y="-650" width="900" height="1300"/>
+      <path d="M-450 0 H450"/><circle cx="0" cy="0" r="120"/>
+      <rect x="-300" y="435" width="600" height="215"/><rect x="-140" y="575" width="280" height="75"/>
+      <rect x="-300" y="-650" width="600" height="215"/><rect x="-140" y="-650" width="280" height="75"/>
+      <path d="M-55 650 V680 H55 V650" stroke-width="7"/><path d="M-55 -650 V-680 H55 V-650" stroke-width="7"/>
+      <path d="M-100 435 A120 120 0 0 0 100 435"/><path d="M-100 -435 A120 120 0 0 1 100 -435"/>
+    </g>
+    <text x="430" y="-615" font-family="M" font-weight="800" font-size="20" letter-spacing="3" fill="#9aa1a8" text-anchor="end">EJEMPLO</text>
+    <text x="0" y="410" font-family="M" font-weight="800" font-size="22" letter-spacing="5" fill="#77736b" text-anchor="middle" id="FDl">TU ÁREA</text>
+    <g id="arw" fill="none" stroke="#d23a2a" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"></g>
+    <g id="ply"></g>
+  </svg>
+  <div class="o" id="SPOT" style="width:760px;height:430px;border-radius:50%;box-shadow:0 0 0 4000px rgba(14,14,16,.55)"></div>
+  <!-- 3 · contexto (CT, cálido): campo de tierra y banquillo -->
+  <svg class="o" id="CTs" width="900" height="1000" viewBox="0 0 900 1000" style="overflow:visible">
+    <rect x="0" y="0" width="900" height="640" rx="6" fill="#e6d3b0"/>
+    <g fill="none" stroke="#fbf6ec" stroke-width="7" opacity=".85"><path d="M60 60 H840 V640 M60 60 V640"/><path d="M60 350 H840"/><circle cx="450" cy="350" r="95"/></g>
+    <g stroke="#b99a6a" stroke-width="3" opacity=".6"><path d="M150 180 l30 6 M600 120 l24 -4 M700 480 l30 5 M260 520 l22 -6 M420 250 l26 4"/></g>
+    <rect x="0" y="640" width="900" height="360" fill="#f4efe4"/>
+    <g fill="none" stroke="#121212" stroke-width="5" stroke-linejoin="round">
+      <path d="M150 730 H750 V860 H150 Z" fill="#fff"/><path d="M150 730 L190 690 H710 L750 730"/>
+      <rect x="200" y="800" width="500" height="28" rx="6" fill="#f4efe4"/><path d="M230 828 V900 M670 828 V900"/>
+    </g>
+    <g id="BALL" transform="translate(760 930)"><circle r="34" fill="#fff" stroke="#121212" stroke-width="5"/><path d="M0 -14 L13 -4 L8 12 H-8 L-13 -4 Z" fill="#121212"/></g>
+  </svg>
+  <div class="o lab" id="CTa" style="width:900px;height:40px;font-size:30px;color:#77736b;text-align:center">CADETE · DOMINGO</div>
+  <div class="o hand" id="CTb" style="width:900px;height:90px;font-size:84px;color:#121212;text-align:center">campo de tierra</div>
+  <!-- 4 · el acta (AC, frío) -->
+  <div class="o paper" id="AC" style="width:700px;height:860px">
+    <div class="lab" style="left:46px;top:46px;font-size:26px">ACTA DEL PARTIDO</div>
+    <div class="lab" style="right:46px;top:50px;font-size:18px;color:#9aa1a8">EJEMPLO</div>
+    <div class="lab" style="left:46px;top:110px;font-size:20px;color:#77736b">CADETE · DOMINGO</div>
+    <svg width="700" height="860" viewBox="0 0 700 860" style="position:absolute;left:0;top:0"><g stroke="#e3e6ea" stroke-width="4"><path d="M46 170 H654 M46 560 H654 M46 640 H654 M46 720 H654 M46 800 H654"/></g>
+      <text x="120" y="250" font-family="M" font-weight="800" font-size="22" letter-spacing="3" fill="#9aa1a8">LOCAL</text><text x="580" y="250" font-family="M" font-weight="800" font-size="22" letter-spacing="3" fill="#9aa1a8" text-anchor="end">VISITANTE</text></svg>
+    <div class="hand" id="ACn" style="left:0;right:0;top:280px;text-align:center;font-size:240px;color:#121212">1 – 3</div>
+  </div>
+  <!-- 5 · el martes (MT, frío) -->
+  <div class="o paper" id="MT" style="width:700px;height:480px">
+    <div class="lab" style="left:46px;top:44px;font-size:26px">MARTES</div><div class="lab" style="right:46px;top:48px;font-size:18px;color:#9aa1a8">EJEMPLO</div>
+    <div class="hand" id="MTt" style="left:46px;top:150px;font-size:110px;color:#121212">finalización</div>
+    <svg width="700" height="480" viewBox="0 0 700 480" style="position:absolute;left:0;top:0"><g fill="none" stroke="#121212" stroke-width="5"><path d="M240 430 V350 H460 V430"/></g>
+      <g fill="#121212"><circle cx="300" cy="420" r="9"/><circle cx="350" cy="400" r="9"/><circle cx="410" cy="416" r="9"/></g></svg>
+  </div>
+  <!-- 6 · en negro (QZ): el marcador y la libreta que se enciende -->
+  <div class="o" id="QZ" style="width:1600px;height:2600px;background:#0e0e10"></div>
+  <div class="o num" id="QN" style="width:700px;height:300px;font-size:300px;color:#4a4d53;text-align:center">1-3</div>
+  <div class="o" id="QG" style="width:900px;height:700px;border-radius:50%;background:radial-gradient(closest-side,rgba(255,244,214,.55),rgba(255,244,214,0))"></div>
+  <div class="o paper" id="QL" style="width:440px;height:320px;border-radius:6px">
+    <svg width="440" height="320" viewBox="0 0 440 320" style="position:absolute;left:0;top:0"><g stroke="#c9ccd1" stroke-width="3"><path d="M146 30 V290 M293 30 V290 M30 80 H410"/></g></svg>
+  </div>
+  <!-- 7 · solución (SO): la libreta con tres columnas y la hoja del martes -->
+  <div class="o paper" id="SL" style="width:860px;height:760px">
+    <div class="lab" style="right:44px;top:30px;font-size:18px;color:#9aa1a8">EJEMPLO</div>
+    <svg width="860" height="760" viewBox="0 0 860 760" style="position:absolute;left:0;top:0;overflow:visible">
+      <g stroke="#e3e6ea" stroke-width="3"><path d="M296 70 V720 M573 70 V720 M40 210 H820"/></g>
+      <g id="slg" stroke="#121212" stroke-width="7" stroke-linecap="round" fill="none"></g>
+      <ellipse id="slc" cx="434" cy="420" rx="150" ry="320" fill="none" stroke="#2f6bff" stroke-width="8" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100" transform="rotate(-3 434 420)"/>
+    </svg>
+    <div class="lab sh" style="left:20px;width:270px;top:96px;font-size:30px;line-height:1.2;text-align:center;white-space:normal">TIROS<br>EN CONTRA</div>
+    <div class="lab sh" style="left:296px;width:277px;top:96px;font-size:30px;line-height:1.2;text-align:center;white-space:normal">PÉRDIDAS<br>EN TU CAMPO</div>
+    <div class="lab sh" style="left:573px;width:270px;top:96px;font-size:30px;line-height:1.2;text-align:center;white-space:normal">BALONES PARADOS<br>EN CONTRA</div>
+  </div>
+  <div class="o paper" id="MS" style="width:860px;height:420px">
+    <div class="lab" style="left:44px;top:36px;font-size:26px">MARTES</div><div class="lab" style="right:44px;top:40px;font-size:18px;color:#9aa1a8">EJEMPLO</div>
+    <div class="hand" style="left:44px;top:110px;font-size:80px;color:#9aa1a8">finalización</div>
+    <svg width="860" height="420" viewBox="0 0 860 420" style="position:absolute;left:0;top:0;overflow:visible">
+      <path id="msx" d="M40 160 C 180 150 320 156 450 146" fill="none" stroke="#121212" stroke-width="8" stroke-linecap="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/>
+      <g fill="none" stroke="#121212" stroke-width="5"><path d="M580 380 V330 H780 V380"/><path d="M540 380 H820" stroke="#c9ccd1"/></g>
+      <circle cx="680" cy="350" r="16" fill="#9aa1a8" stroke="#121212" stroke-width="4"/>
+      <g id="msd" fill="#2f6bff"><circle cx="580" cy="170" r="18"/><circle cx="680" cy="110" r="18"/><circle cx="780" cy="170" r="18"/></g>
+    </svg>
+    <div class="hand" id="MSt" style="left:44px;top:250px;font-size:84px;color:#2f6bff">salida · 3 apoyos</div>
+  </div>
+  <svg class="o" id="PC" width="40" height="300" viewBox="0 0 40 300" style="overflow:visible">
+    <g><path d="M20 300 L6 252 L34 252 Z" fill="#e9c99a" stroke="#121212" stroke-width="3" stroke-linejoin="round"/><path d="M20 300 L15 284 L25 284 Z" fill="#121212"/>
+      <rect x="6" y="40" width="28" height="212" fill="#f2c94c" stroke="#121212" stroke-width="3"/><rect x="6" y="10" width="28" height="32" rx="4" fill="#e8a0a0" stroke="#121212" stroke-width="3"/></g></svg>
+  <!-- marca -->
+  <div class="o" id="B" style="width:900px;height:500px;text-align:center">
+    <div class="num" style="position:static;font-size:170px;margin-top:120px">Pro<span style="color:#2f6bff">Team</span></div>
+    <div style="margin-top:30px;font-family:M;font-weight:500;font-size:38px;color:#77736b">la app del entrenador · enlace en la bio</div>
+  </div>
+</div>
+<div id="gr"></div>
+<div id="hook">Los tres empiezan<br><em>en tu área</em></div>
+<div id="cap"></div>
+<div id="ink"></div>
+</div>
+<script src="/tools/reel_v4/T05-2-r3/times.js"></script>
+<script>
+const $=id=>document.getElementById(id), W=window.WORDS, NS='http://www.w3.org/2000/svg';
+const at=(w,n=1)=>{let c=0;for(const x of W)if(x[0]===w&&++c===n)return x[1];throw 'no '+w+n};
+const cl=(x,a=0,b=1)=>Math.min(b,Math.max(a,x)), r=(t,a,b)=>cl((t-a)/(b-a));
+const io=x=>x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2, eo=x=>1-Math.pow(1-x,3), lerp=(a,b,k)=>a+(b-a)*k;
+const T={y:at('y'),flechas:at('flechas'),tu:at('tu'),area:at('area'),cadete:at('cadete'),domingo:at('domingo'),campo:at('campo'),tu2:at('tu',2),jugando:at('jugando'),y2:at('y',2),rival:at('rival'),sabe:at('sabe'),
+ primer:at('primer'),perdido:at('perdido'),gol:at('gol'),segundo:at('segundo'),gol2:at('gol',2),y3:at('y',3),tercero:at('tercero'),nadie:at('nadie'),pelota:at('pelota'),porque:at('porque'),consigna:at('consigna'),
+ en:at('en'),acta:at('acta'),uno2:at('uno',2),tres3:at('tres',3),y4:at('y',4),martes:at('martes'),tiros:at('tiros'),como:at('como'),otra:at('otra'),el6:at('el',6),marcador:at('marcador'),perdiste:at('perdiste'),
+ tu3:at('tu',3),si2:at('si',2),tres4:at('tres',4),columnas:at('columnas'),tiros2:at('tiros',2),contra:at('contra'),perdidas:at('perdidas'),balones:at('balones'),contra2:at('contra',2),
+ una:at('una'),raya:at('raya'),accion:at('accion'),si3:at('si',3),gana:at('gana'),perdidas2:at('perdidas',2),martes2:at('martes',2),salida:at('salida'),tres5:at('tres',5),apoyos:at('apoyos'),
+ apunt:at('apuntalo'),porque2:at('porque',2),flechas2:at('flechas',2),tienen:at('tienen'),el8:at('el',8),origen:at('origen'),END:window.VEND+.25};
+// zonas
+const SCp=[0,-900], FD=[0,800], CT=[2400,0], AC=[-2400,0], MT=[-2400,1500], QZ=[-2400,-2400], SO=[0,3100], MSp=[0,3750], BP=[2400,3300];
+const CUT1=T.el6-.12, CUT2=T.tres4-.12;
+// cámara: planos FIJOS; solo se mueve al cambiar de zona (0,6 s, entrada y salida suaves)
+const S0=[0,SCp[0],SCp[1]+40,1.45];
+const GEN=[FD[0],FD[1]+100,.9];
+const SH=[ // [inicio, cx, cy, zoom, duración]
+ S0,
+ [T.y-.3,...GEN,.8],
+ [T.tu-.3,FD[0],FD[1]+500,1.55,.6],
+ [T.cadete-.35,CT[0],CT[1]-60,1.0,.75],
+ [T.campo-.3,CT[0]+60,CT[1]+260,1.35],
+ [T.tu2-.35,FD[0],FD[1]+380,1.05,.75],
+ [T.primer-.3,FD[0]-110,FD[1]+470,1.3],
+ [T.segundo-.3,FD[0]+110,FD[1]+470,1.3],
+ [T.y3-.3,FD[0],FD[1]+450,1.45],
+ [T.porque-.3,FD[0],FD[1]+430,1.7],
+ [T.en-.35,AC[0],AC[1]-20,1.08,.75],
+ [T.y4-.3,MT[0],MT[1]+20,1.15],
+ [T.como-.35,FD[0],FD[1]-500,1.3,.8],
+ [CUT1,QZ[0],QZ[1]-80,1.0],
+ [T.tu3-.3,QZ[0],QZ[1]+380,1.35],
+ [CUT2,SO[0],SO[1]-40,1.05],
+ [T.una-.3,SO[0]+4,SO[1]+60,1.45],
+ [T.si3-.3,SO[0],3440,.75],
+ [T.apunt+.15,BP[0],BP[1],1.0,.8],
+ [T.porque2-.1,...GEN,.85],
+ [T.el8-.05,S0[1],S0[2],S0[3],.85]];
+const CUTS=new Set([CUT1,CUT2]);
+function cam(t){let i=0;while(i+1<SH.length&&SH[i+1][0]<=t)i++;const s=SH[i];
+ if(i===0||CUTS.has(s[0]))return [s[1],s[2],s[3],0];
+ const p=SH[i-1],Dd=s[4]||.62,k=r(t,s[0],s[0]+Dd),e=io(k);
+ const lz=lerp(Math.log(p[3]),Math.log(s[3]),e)-.12*Math.sin(Math.PI*k)*(Math.hypot(s[1]-p[1],s[2]-p[2])>600?1:0);
+ return [lerp(p[1],s[1],e),lerp(p[2],s[2],e),Math.exp(lz),k>0&&k<1?Math.sin(Math.PI*k):0]}
+const sz=el=>[el.offsetWidth||+el.getAttribute('width'),el.offsetHeight||+el.getAttribute('height')];
+function place(el,x,y,rot=0,sc=1){const [w,h]=sz(el);el.style.transform=`translate(${x-w/2}px,${y-h/2}px) rotate(${rot}deg) scale(${sc})`}
+const drawK=(el,k)=>{el.setAttribute('stroke-dashoffset',100-100*k);el.style.visibility=k>0?'visible':'hidden'};
+const mk=(tag,a,par)=>{const e=document.createElementNS(NS,tag);for(const k in a)e.setAttribute(k,a[k]);par.appendChild(e);return e};
+const pth=(par,d,w)=>mk('path',{d,pathLength:100,'stroke-dasharray':100,'stroke-dashoffset':100,...(w?{'stroke-width':w}:{})},par);
+// flechas rojas: nacen en tu área y acaban en tu portería (coordenadas del campo, centro 0,0)
+const ARW=[['M-210 470 C -190 560 -90 610 -24 640','M-52 618 L-24 640 L-58 650'],['M220 480 C 190 560 100 615 26 640','M54 618 L26 640 L60 650'],['M-30 445 C 20 520 10 590 0 638','M-22 612 L0 638 L18 610']]
+ .map(([a,h])=>[pth($('arw'),a),pth($('arw'),h)]);
+// jugadores: portero con balón, cuatro tuyos (blancos) y tres rivales (negros) que se acercan
+const tok=(fill,stroke)=>{const g=mk('g',{},$('ply'));mk('circle',{r:26,fill,stroke,'stroke-width':5},g);return g};
+const GK=tok('#9aa1a8','#121212');{const b=mk('g',{},GK);mk('circle',{cx:34,cy:-20,r:13,fill:'#fff',stroke:'#121212','stroke-width':4},b)}
+const OWN=[[-235,520],[235,525],[-120,385],[120,380]].map(p=>[tok('#fff','#121212'),p]);
+const RIV=[[[-260,180],[-185,455]],[[0,120],[-20,405]],[[260,180],[195,470]]].map(p=>[tok('#121212','#121212'),p]);
+const mv=(g,x,y)=>g.setAttribute('transform',`translate(${x} ${y})`);
+// libreta: rayas (EJEMPLO): tiros 3, pérdidas 6, balones parados 1
+const RAYS=[[],[],[]];{const g=$('slg');const n=[3,6,1],cx=[158,434,708];
+ n.forEach((m,c)=>{for(let k=0;k<m;k++){const y=270+Math.floor(k/5)*120,x=cx[c]-70+(k%5)*36;
+  RAYS[c].push(k%5===4?pth(g,`M${cx[c]-86} ${y+82} L${cx[c]+86} ${y+6}`):pth(g,`M${x} ${y} V${y+90}`))}})}
+const SHd=[...document.querySelectorAll('#SL .sh')];
+const CAPS=[[T.y,T.tu-.15,'Tres flechas, <em>el mismo sitio.</em>'],[T.tu,T.cadete-.45,'<em>Tu área.</em>'],[T.cadete,T.tu2-.2,'Cadete, domingo, <em>tierra.</em>'],
+ [T.tu2,T.y2-.1,'Quiere salir <em>jugando desde atrás…</em>'],[T.y2,T.primer-.15,'…y el rival <em>lo sabe.</em>'],[T.primer,T.segundo-.15,'Primera pérdida: <em>gol.</em>'],
+ [T.segundo,T.y3-.2,'Segunda: <em>gol.</em>'],[T.y3,T.porque-.1,'Nadie pide <em>la pelota.</em>'],[T.porque,T.en-.2,'Los dos primeros <em>pesan.</em>'],
+ [T.en,T.y4-.1,'En el acta, <em>1-3.</em>'],[T.y4,T.como-.15,'Y el martes, <em>tiros.</em>'],[T.como,CUT1-.35,'Como si fuera <em>la otra área.</em>'],
+ [CUT1+.25,T.tu3-.2,'El marcador <em>no lo sabe.</em>'],[T.tu3,CUT2-.3,'<em>Tú sí.</em>'],[CUT2+.15,T.una-.15,'Tres columnas.'],[T.una,T.si3-.15,'Una raya <em>por acción.</em>'],
+ [T.si3,T.martes2-.1,'¿Ganan las pérdidas?'],[T.martes2,T.apunt-.15,'Martes: <em>salida con 3 apoyos.</em>'],[T.apunt,T.porque2-.15,'Apúntalo en la app.'],[T.porque2,T.END-.45,'<em>El mismo origen.</em>']];
+window.frame=function(t){
+  const [cx,cy,z,mvv]=cam(t);
+  const wd=$('world');wd.style.transform=`translate(540px,760px) scale(${z}) translate(${-cx}px,${-cy}px)`;
+  wd.style.filter=mvv>.35?`blur(${(2.6*(mvv-.35)/.65).toFixed(2)}px)`:'none';
+  // 1 · marcador
+  place($('SC'),SCp[0],SCp[1]);
+  // 2 · campo
+  place($('FD'),FD[0],FD[1]);
+  const shock=t<T.cadete+.3;
+  ARW.forEach(([a,h],i)=>{let k;
+   if(shock)k=io(r(t,T.flechas-.1+i*.3,T.flechas+.45+i*.3));
+   else if(t<T.tu2)k=0;
+   else k=io([r(t,T.perdido,T.gol+.15),r(t,T.segundo+.35,T.gol2+.15),r(t,T.tercero,T.pelota)][i]);
+   drawK(a,k);drawK(h,r(k,.85,1))});
+  // jugadores: solo en el planteamiento del problema (no en el gancho ni en el final)
+  const pv=t>=T.tu2-.4&&t<T.porque2-.3?1:0, ap=eo(r(t,T.y2,T.sabe+.3));
+  $('ply').style.opacity=pv;
+  mv(GK,0,600);const gq=r(t,T.nadie-.1,T.nadie+.5);OWN.forEach(([g,p])=>{mv(g,p[0],p[1]);g.firstChild.setAttribute('stroke',gq>0?`rgb(${18+183*gq|0},${18+186*gq|0},${18+191*gq|0})`:'#121212')});
+  RIV.forEach(([g,[a,b]])=>mv(g,lerp(a[0],b[0],ap),lerp(a[1],b[1],ap)));
+  $('FDl').style.opacity=1-pv;
+  // foco sobre tu área
+  place($('SPOT'),FD[0],FD[1]+520);$('SPOT').style.opacity=r(t,T.area-.2,T.area+.3)*(1-r(t,T.cadete-.35,T.cadete+.1));
+  // 3 · contexto
+  place($('CTs'),CT[0],CT[1]+120);place($('CTa'),CT[0],CT[1]-470);$('CTa').style.opacity=r(t,T.cadete-.1,T.cadete+.3);
+  const cb=r(t,T.campo-.1,T.campo+.55);place($('CTb'),CT[0],CT[1]-360);$('CTb').style.clipPath=`inset(0 ${(100-100*cb).toFixed(1)}% 0 0)`;
+  // 4 · acta
+  place($('AC'),AC[0],AC[1],1.5);const ac=r(t,T.acta-.1,T.uno2+.3);$('ACn').style.clipPath=`inset(0 ${(100-100*ac).toFixed(1)}% 0 0)`;
+  // 5 · martes
+  place($('MT'),MT[0],MT[1],-1.5);const mt=r(t,T.martes-.1,T.martes+.6);$('MTt').style.clipPath=`inset(0 ${(100-100*mt).toFixed(1)}% 0 0)`;
+  // 6 · en negro
+  place($('QZ'),QZ[0],QZ[1]);place($('QN'),QZ[0],QZ[1]-200);
+  const lit=io(r(t,T.tu3-.1,T.si2+.2));place($('QL'),QZ[0],QZ[1]+380,-3);$('QL').style.opacity=.12+.88*lit;
+  place($('QG'),QZ[0],QZ[1]+380);$('QG').style.opacity=lit;$('QN').style.opacity=1-.6*lit;
+  // 7 · solución
+  place($('SL'),SO[0],SO[1]);place($('MS'),MSp[0],MSp[1],1);
+  [T.tiros2,T.perdidas,T.balones].forEach((s,i)=>{const k=r(t,s-.15,s+.45);SHd[i].style.clipPath=`inset(0 ${(100-100*k).toFixed(1)}% 0 0)`});
+  RAYS[0].forEach((p,k)=>drawK(p,io(r(t,T.contra+.05+k*.12,T.contra+.17+k*.12))));
+  RAYS[2].forEach((p,k)=>drawK(p,io(r(t,T.contra2+.05,T.contra2+.2))));
+  const r0=T.una-.05,r1=T.accion+.35;RAYS[1].forEach((p,k)=>{const s=r0+k*(r1-r0)/6;drawK(p,io(r(t,s,s+.14)))});
+  drawK($('slc'),io(r(t,T.gana-.1,T.perdidas2+.35)));
+  drawK($('msx'),io(r(t,T.martes2-.1,T.martes2+.35)));
+  const ms=r(t,T.salida-.1,T.apoyos+.2);$('MSt').style.clipPath=`inset(0 ${(100-100*ms).toFixed(1)}% 0 0)`;
+  [...$('msd').children].forEach((c,i)=>{const k=eo(r(t,T.tres5-.1+i*.15,T.tres5+.2+i*.15));c.style.opacity=k});
+  // lápiz: escribe los títulos y las rayas
+  const pa=CUT2+.2,pb=T.accion+.5;const pc=$('PC');pc.style.opacity=r(t,pa-.2,pa+.1)*(1-r(t,pb,pb+.3));
+  let px,py;if(t<T.perdidas-.15){const k=r(t,T.tiros2-.15,T.tiros2+.45);px=-270+k*90;py=-300}
+   else if(t<T.balones-.15){const k=r(t,T.perdidas-.15,T.perdidas+.45);px=-10+k*110;py=-300}
+   else if(t<T.una-.05){const k=r(t,T.balones-.15,T.balones+.45);px=230+k*120;py=-300+150*r(t,T.contra2,T.contra2+.2)}
+   else{const k=r(t,r0,r1);px=-80+k*170;py=-60+40*Math.sin(k*30)}
+  place(pc,SO[0]+px+20,SO[1]+py-130,18);
+  place($('B'),BP[0],BP[1]);
+  // color por escena: cálido en el contexto, frío del problema al giro 1, blanco con azul en la solución
+  const g=$('gr');const warm=t>=T.cadete-.6&&t<T.tu2-.1, cold=t>=T.tu2-.1&&t<CUT1;
+  g.style.background=warm?'#f3e3c4':'#d9e3f0';
+  g.style.opacity=warm?.55*r(t,T.cadete-.6,T.cadete)*(1-r(t,T.tu2-.45,T.tu2-.1)):cold?.5*r(t,T.tu2-.1,T.tu2+.35):0;
+  $('hook').style.opacity=t<5?1-r(t,T.y-.35,T.y-.05):r(t,T.el8+.55,T.el8+.95);
+  // rótulo
+  let html='',a=0;for(const [s,e,h] of CAPS)if(t>=s-.2&&t<e+.25){const aa=Math.min(r(t,s-.2,s+.15),1-r(t,e-.05,e+.25));if(aa>=a&&(aa>0||!html)){html=h;a=aa}}
+  const cp=$('cap');if(cp.dataset.h!==html){cp.innerHTML=html;cp.dataset.h=html}
+  cp.style.opacity=a;cp.style.transform=`translateY(${(1-a)*12}px)`;
+  // giros: fundido a negro antes de «El marcador…»; de negro a blanco en «Tres columnas»
+  $('ink').style.opacity=Math.max(r(t,CUT1-.35,CUT1-.03)*(1-r(t,CUT1+.03,CUT1+.45)), r(t,CUT2-.3,CUT2-.03)*(1-r(t,CUT2+.03,CUT2+.5)));
+};
+Promise.all([...document.images].map(i=>i.decode().catch(()=>{}))).then(()=>document.fonts.ready).then(()=>{frame(0);window.ready=true});
+</script></body></html>

@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8">
+<!-- v6-saque-banda-liverpool «El entrenador de los saques de banda» · explicativo v6 · fútbol · Marta B (02) -->
+<style>
+@font-face{font-family:M;font-weight:800;src:url(/tools/reel_v5/node_modules/@fontsource/plus-jakarta-sans/files/plus-jakarta-sans-latin-800-normal.woff2)}
+@font-face{font-family:M;font-weight:700;src:url(/tools/reel_v5/node_modules/@fontsource/plus-jakarta-sans/files/plus-jakarta-sans-latin-700-normal.woff2)}
+@font-face{font-family:M;font-weight:500;src:url(/tools/reel_v5/node_modules/@fontsource/plus-jakarta-sans/files/plus-jakarta-sans-latin-500-normal.woff2)}
+@font-face{font-family:S;font-style:italic;font-weight:400;src:url(/tools/fonts/instrument-serif-latin-400-italic.woff2)}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#02050F}
+#st{position:absolute;inset:0;overflow:hidden;background:#02050F}
+#world{position:absolute;left:0;top:0;transform-origin:0 0;will-change:transform}
+.o{position:absolute;left:0;top:0;transform-origin:50% 50%}
+.card{background:#0C1323;border:1px solid #1d2947;box-shadow:0 30px 90px rgba(0,0,0,.6),0 0 80px rgba(99,109,255,.12)}
+.frame{background:#0C1323;padding:14px;border:1px solid #1d2947;box-shadow:0 30px 90px rgba(0,0,0,.6),0 0 80px rgba(99,109,255,.12);overflow:hidden}
+.frame img{position:absolute;left:14px;top:14px;width:calc(100% - 28px);height:calc(100% - 28px);object-fit:cover}
+.lab{position:absolute;font-family:M;font-weight:700;font-size:22px;letter-spacing:.16em;text-transform:uppercase;color:#8f9bb8;white-space:nowrap}
+.num{position:absolute;font-family:M;font-weight:800;letter-spacing:-.05em;color:#F4F7FB;white-space:nowrap;line-height:1}
+.trow{position:absolute;left:40px;right:40px;height:30px}
+.trow .p{position:absolute;left:0;top:2px;width:52px;text-align:right;font-family:M;font-weight:700;font-size:22px;color:#5d6888}
+.trow .g{position:absolute;left:76px;right:0;top:6px;height:18px;border-radius:9px;background:#1a2440}
+#hi{position:absolute;left:30px;right:30px;height:38px;border-radius:19px;background:#6AA8FF;box-shadow:0 0 40px rgba(106,168,255,.45)}
+#hi .p{position:absolute;left:10px;top:5px;width:52px;text-align:right;font-family:M;font-weight:800;font-size:24px;color:#02050F}
+#hi .t{position:absolute;left:86px;top:6px;font-family:M;font-weight:800;font-size:20px;letter-spacing:.14em;color:#02050F}
+.bar{position:absolute;left:250px;height:54px;border-radius:0 8px 8px 0}
+#cap{position:absolute;left:90px;right:90px;top:1590px;text-align:center;font-family:M;font-weight:700;font-size:50px;line-height:1.16;letter-spacing:-.02em;color:#F4F7FB;text-shadow:0 0 12px #02050F,0 0 30px #02050F,0 0 46px #02050F}
+#cap em{font-family:S;font-style:italic;font-weight:400;font-size:1.16em;letter-spacing:0}
+#cap b{color:#6AA8FF;font-weight:800}
+#sweep{position:absolute;top:0;bottom:0;width:900px;left:-900px;background:linear-gradient(90deg,rgba(106,168,255,0),rgba(185,224,255,.55),rgba(106,168,255,0));mix-blend-mode:screen;pointer-events:none;opacity:0}
+#white{position:absolute;inset:0;background:#02050F;opacity:0;pointer-events:none}
+#cta{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;opacity:0}
+#cta .w{font-family:M;font-weight:800;font-size:110px;letter-spacing:-.05em;color:#F4F7FB}
+#cta .w span{color:#636DFF}
+#cta .s{margin-top:26px;font-family:M;font-weight:500;font-size:36px;color:#8f9bb8}
+#grain{position:absolute;inset:0;opacity:.16;mix-blend-mode:screen;pointer-events:none;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='300'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}
+</style></head><body><div id="st">
+<div id="world">
+  <!-- 1 · balón en la línea (foto) -->
+  <div class="o frame" id="P" style="width:940px;height:700px">
+    <img id="p1" src="/banco/fotos/PROTEAM_OBJETO_BALON_LINEA_FOTO_001.jpg" style="filter:url(#duo) brightness(.92) contrast(1.08);object-position:50% 45%">
+    <svg style="position:absolute;left:14px;top:14px;overflow:visible" width="912" height="672">
+      <path id="pl" d="M-10 150 L922 132" fill="none" stroke="#B9E0FF" stroke-width="5" stroke-linecap="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/>
+      <g fill="none" stroke="#F4F7FB" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+        <path id="hL" d="M300 420 C 280 330 300 250 350 210 L 372 186 M352 208 L 368 170 M340 222 L 344 182" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/>
+        <path id="hR" d="M620 420 C 640 330 620 250 570 210 L 548 186 M568 208 L 552 170 M580 222 L 576 182" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/>
+      </g>
+    </svg>
+    <div class="lab" id="pt" style="left:40px;top:40px;color:#02050F;background:#B9E0FF;border-radius:30px;padding:8px 18px;opacity:0">Saques de banda · bajo presión</div>
+  </div>
+  <!-- 2 · la tabla: 20 filas, sin escudos ni nombres -->
+  <div class="o card" id="T" style="width:900px;height:1180px;border-radius:14px">
+    <div class="lab" id="Tl" style="left:40px;top:40px;color:#F4F7FB;font-size:24px">Saques de banda bajo presión</div>
+    <div class="lab" style="left:40px;top:122px;font-size:22px">2017-18</div>
+    <div class="bar" id="ba1" style="top:106px;background:#3a4668;width:0"></div>
+    <div class="num" id="bn1" style="top:110px;font-size:50px">0 %</div>
+    <div class="lab" id="by2" style="left:40px;top:208px;font-size:22px;color:#F4F7FB;opacity:0">2018-19</div>
+    <div class="bar" id="ba2" style="top:192px;background:#8B5CF6;width:0;box-shadow:0 0 50px rgba(139,92,246,.55)"></div>
+    <div class="num" id="bn2" style="top:196px;font-size:50px;color:#F4F7FB;opacity:0">0 %</div>
+    <div class="lab" id="Ts" style="left:40px;top:286px;font-size:18px;color:#5d6888">Fuente: Tifo Football, vía Liverpool FC · Premier League</div>
+    <div id="rows" style="position:absolute;left:0;right:0;top:340px;height:800px"></div>
+    <div class="num" id="rk" style="right:40px;top:38px;font-size:30px;color:#6AA8FF;letter-spacing:0">18.º / 20</div>
+  </div>
+  <!-- 3 · la ficha -->
+  <div class="o card" id="G" style="width:860px;height:560px;border-radius:18px">
+    <div class="lab" style="left:56px;top:56px">Ficha de staff</div>
+    <div style="position:absolute;left:56px;top:110px;width:120px;height:120px;border-radius:50%;background:#1a2440;border:2px solid #26335a"></div>
+    <svg style="position:absolute;left:56px;top:110px" width="120" height="120"><circle cx="60" cy="48" r="22" fill="#3a4668"/><path d="M22 106 C 30 78 90 78 98 106" fill="#3a4668"/></svg>
+    <div class="num" style="left:56px;top:280px;font-size:64px;letter-spacing:-.03em">THOMAS<br>GRØNNEMARK</div>
+    <div class="lab" style="left:56px;top:430px;font-size:26px;color:#B9E0FF">Entrenador de saques de banda</div>
+    <div class="lab" style="left:56px;top:476px;font-size:22px">Dinamarca</div>
+  </div>
+  <div class="num" id="y18" style="font-size:300px">2018</div>
+  <!-- 4 · la banda: saque largo tachado y luego la pizarra -->
+  <svg class="o" id="L" width="1000" height="1000" viewBox="0 0 1000 1000" style="overflow:visible">
+    <rect x="0" y="0" width="1000" height="1000" rx="12" fill="#0C1323" stroke="#1d2947"/>
+    <g fill="none" stroke="#F4F7FB" stroke-linecap="round" stroke-width="5" opacity=".8">
+      <path id="l0" d="M90 960 L90 60 L960 60" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/>
+      <path id="l1" d="M440 60 L440 360 L960 360" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/>
+      <path id="l2" d="M690 60 L690 160 L960 160" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/>
+      <path id="l3" d="M90 90 A30 30 0 0 0 120 60" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/>
+    </g>
+    <text x="110" y="990" font-family="M" font-weight="700" font-size="22" letter-spacing="3.5" fill="#8f9bb8" id="lt" opacity="0">LÍNEA DE BANDA</text>
+    <path id="lg" d="M90 720 C 260 200 560 140 700 250" fill="none" stroke="#6AA8FF" stroke-width="8" stroke-linecap="round" stroke-dasharray="18 14" opacity="0"/>
+    <g id="lx" stroke="#F4F7FB" stroke-width="12" stroke-linecap="round"><path id="x1" d="M300 210 L520 430" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/><path id="x2" d="M520 210 L300 430" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/></g>
+    <text id="lp" x="560" y="470" font-family="M" font-weight="800" font-size="64" fill="#B9E0FF" opacity="0">2–3 %</text>
+    <text id="lps" x="560" y="510" font-family="M" font-weight="700" font-size="20" letter-spacing="3" fill="#8f9bb8" opacity="0">DEL TRABAJO</text>
+    <!-- pizarra -->
+    <g id="arr" fill="none" stroke-linecap="round" stroke-width="7"></g>
+    <g id="pz"></g>
+    <g id="tags" font-family="M" font-weight="800" font-size="40" letter-spacing="2"></g>
+  </svg>
+  <!-- 5 · tu equipo: foto, hoja, ejercicio -->
+  <div class="o frame" id="F" style="width:940px;height:640px">
+    <img id="f1" src="/banco/fotos/PROTEAM_EQUIPO_ENTRENAMIENTO_PETOS_FOTO_001.jpg" style="filter:url(#duo) brightness(.92) contrast(1.08);object-position:50% 50%">
+  </div>
+  <svg class="o" id="D" width="900" height="620" viewBox="0 0 900 620" style="overflow:visible">
+    <rect x="0" y="0" width="900" height="620" rx="10" fill="#0C1323" stroke="#1d2947"/>
+    <path d="M110 40 L110 580" stroke="#F4F7FB" stroke-width="5" stroke-linecap="round" opacity=".8"/>
+    <rect x="110" y="110" width="520" height="400" fill="none" stroke="#8f9bb8" stroke-width="3" stroke-dasharray="14 12" opacity=".7"/>
+    <text x="140" y="70" font-family="M" font-weight="700" font-size="22" letter-spacing="3.5" fill="#8f9bb8">SAQUES · 2 QUE SE DESMARCAN</text>
+    <g id="darr" fill="none" stroke-linecap="round" stroke-width="6"></g>
+    <g id="dz"></g>
+  </svg>
+  <div class="o card" id="clk" style="width:250px;height:120px;border-radius:18px;border-color:#26335a;display:flex;align-items:center;justify-content:center"><div class="num" id="clkn" style="position:static;font-size:76px;color:#6AA8FF;text-shadow:0 0 24px rgba(106,168,255,.6)">10:00</div></div>
+  <div class="o card" id="H" style="width:900px;height:560px;border-radius:8px">
+    <div style="position:absolute;left:52px;top:40px;font-family:M;font-weight:800;font-size:28px;letter-spacing:.14em;color:#F4F7FB">SAQUES DE BANDA · SÁBADO</div>
+    <div id="ej" style="position:absolute;right:52px;top:34px;font-family:M;font-weight:700;font-size:22px;letter-spacing:.16em;color:#02050F;background:#B9E0FF;border-radius:30px;padding:8px 18px;opacity:0">EJEMPLO</div>
+    <div class="lab" style="left:52px;top:130px;color:#B9E0FF;font-size:26px">Conservado</div>
+    <div class="lab" style="left:482px;top:130px;color:#B9E0FF;font-size:26px">Perdido</div>
+    <div style="position:absolute;left:450px;top:120px;width:2px;height:400px;background:#1d2947"></div>
+    <div style="position:absolute;left:40px;right:40px;top:186px;height:2px;background:#1d2947"></div>
+    <div class="num q" style="left:180px;top:260px;font-family:S;font-style:italic;font-weight:400;font-size:150px;color:#6AA8FF;opacity:0">?</div>
+    <div class="num q" style="left:610px;top:260px;font-family:S;font-style:italic;font-weight:400;font-size:150px;color:#6AA8FF;opacity:0">?</div>
+    <div class="num" id="hn1" style="left:52px;top:420px;font-size:90px;opacity:0">7</div>
+    <div class="num" id="hn2" style="left:482px;top:420px;font-size:90px;opacity:0;color:#6AA8FF">9</div>
+    <svg style="position:absolute;left:0;top:0;overflow:visible" width="900" height="560"><g id="tal" stroke="#F4F7FB" stroke-width="7" stroke-linecap="round" fill="none"></g></svg>
+  </div>
+</div>
+<svg width="0" height="0" style="position:absolute"><filter id="duo" color-interpolation-filters="sRGB"><feColorMatrix type="matrix" values=".33 .33 .33 0 0 .33 .33 .33 0 0 .33 .33 .33 0 0 0 0 0 1 0"/><feComponentTransfer><feFuncR type="table" tableValues="0.008 0.18 0.416 0.957"/><feFuncG type="table" tableValues="0.02 0.235 0.659 0.969"/><feFuncB type="table" tableValues="0.059 0.667 1 0.984"/></feComponentTransfer></filter></svg>
+<div id="folio" style="position:absolute;left:64px;right:64px;top:70px;display:flex;justify-content:space-between;font-family:M;font-weight:500;font-size:24px;letter-spacing:.16em;color:#8f9bb8;text-transform:uppercase;z-index:30"><span>ProTeam — Historias · Fútbol</span><span id="fpg">p. 01</span></div>
+<div id="cred" style="position:absolute;left:64px;right:64px;bottom:60px;font-family:M;font-weight:500;font-size:18px;letter-spacing:.08em;color:#5d6888;text-transform:uppercase;z-index:30"></div>
+<div id="cap"></div>
+<div id="sweep"></div>
+<div id="white"></div>
+<div id="cta"><div class="w">Pro<span>Team</span></div><div class="s">Apúntalo en la app · enlace en la bio</div></div>
+<div id="grain"></div>
+</div>
+<script src="/tools/reel_v6/v6-saque-banda-liverpool/times.js"></script>
+<script>
+const $=id=>document.getElementById(id), W=window.WORDS;
+const at=(w,n=1)=>{let c=0;for(const x of W)if(x[0]===w&&++c===n)return x[1];throw 'no '+w};
+const cl=(x,a=0,b=1)=>Math.min(b,Math.max(a,x));
+const r=(t,a,b)=>cl((t-a)/(b-a));
+const io=x=>x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2;
+const eo=x=>1-Math.pow(1-x,3);
+const lerp=(a,b,k)=>a+(b-a)*k;
+const pct=v=>v.toFixed(1).replace('.',',')+' %';
+function track(K){return t=>{
+  if(t<=K[0][0])return K[0].slice(1); const n=K.length; if(t>=K[n-1][0])return K[n-1].slice(1);
+  let i=0;while(K[i+1][0]<t)i++;
+  const p0=K[Math.max(0,i-1)],p1=K[i],p2=K[i+1],p3=K[Math.min(n-1,i+2)], h=p2[0]-p1[0], s=io((t-p1[0])/h)*.5+((t-p1[0])/h)*.5;
+  const out=[];
+  for(let j=1;j<4;j++){const f=j===3?Math.log:(v=>v);
+    const y0=f(p0[j]),y1=f(p1[j]),y2=f(p2[j]),y3=f(p3[j]);
+    const m1=0, m2=0; // sin pendientes: cada tramo arranca y frena (sin rebotes)
+    const s2=s*s,s3=s2*s, v=(2*s3-3*s2+1)*y1+(s3-2*s2+s)*m1+(-2*s3+3*s2)*y2+(s3-s2)*m2;
+    out.push(j===3?Math.exp(v):v)}
+  return out}}
+const T={presion:at('presion'),temporada:at('temporada'),puesto:at('puesto'),dieciocho:at('dieciocho'),premier:at('premier'),verano:at('verano'),y18:at('2018'),
+ klopp:at('klopp'),danes:at('danes'),thomas:at('thomas'),entrenador:at('entrenador'),ano:at('ano'),conservaban:at('conservaban'),sesenta:at('sesenta'),veces:at('veces'),
+ primeros:at('primeros'),premier2:at('premier',2),casi:at('casi'),largo:at('largo'),trabajo2:at('trabajo',2),rapido:at('rapido'),cuando1:at('cuando'),ya:at('ya'),
+ cuando2:at('cuando',2),esperar:at('esperar'),como:at('como'),mueven:at('mueven'),reciben:at('reciben'),piensa:at('piensa'),cuantos:at('cuantos'),partido:at('partido'),
+ este:at('este'),sabado:at('sabado'),cuente:at('cuente'),conservado:at('conservado'),perdido:at('perdido'),martes:at('martes'),diez:at('diez'),dos:at('dos'),
+ desmarcan:at('desmarcan'),apunt:at('apuntalo'),VEND:window.VEND};
+T.END=T.VEND+1.6; window.DUR=T.END;
+const TY=1500, GY=3000, LY=4400, FY=5880, HY=6620;
+const CA=track([[0,0,30,1.14],[2.6,0,50,1.02],[T.temporada-.15,0,60,1.0],[T.temporada+.45,0,TY+150,.92],[T.premier+.4,0,TY+170,.94],
+ [T.verano-.1,0,TY+180,.95],[T.verano+.5,0,GY+120,1.0],[T.ano-.35,0,GY+140,1.03],[T.ano+.25,0,TY+150,.92],[T.premier2+.6,0,TY+165,.94]]);
+const CB=track([[T.casi-.5,0,TY+165,.94],[T.casi,0,LY+110,.95],[T.trabajo2-.1,0,LY+120,.97],[T.rapido+.3,-170,LY+150,1.18],[T.reciben+.6,-160,LY+160,1.2]]);
+const CC=track([[T.piensa-.3,-160,LY+160,1.2],[T.piensa+.15,0,FY+110,1.02],[T.cuantos-.1,0,FY+120,1.0],[T.cuantos+.5,0,6330,.86],[T.este-.1,0,6340,.86],
+ [T.este+.5,0,HY+110,1.06],[T.martes,0,HY+110,1.08],[T.martes+.5,0,HY+110,1.04],[T.END,0,HY+110,1.06]]);
+function cam(t){return t<T.casi-.5?CA(t):t<T.piensa-.3?CB(t):CC(t)}
+function place(el,x,y,rot=0,sc=1){el.style.transform=`translate(${x-(el.offsetWidth||+el.getAttribute("width"))/2}px,${y-(el.offsetHeight||+el.getAttribute("height"))/2}px) rotate(${rot}deg) scale(${sc})`}
+const NS='http://www.w3.org/2000/svg';
+function mk(g,tag,attrs){const e=document.createElementNS(NS,tag);for(const k in attrs)e.setAttribute(k,attrs[k]);g.appendChild(e);return e}
+const draw=(el,a,b,t)=>el.setAttribute('stroke-dashoffset',100-100*io(r(t,a,b)));
+// tabla: 20 filas
+const RH=40, ROWS=[]; for(let i=1;i<=20;i++){if(i===18)continue;const d=document.createElement('div');d.className='trow';d.innerHTML=`<div class="p">${i}</div><div class="g" style="right:${(i*37)%160}px"></div>`;$('rows').appendChild(d);ROWS.push([i,d])}
+const hi=document.createElement('div');hi.id='hi';hi.innerHTML='<div class="p" id="hip">18</div><div class="t">LIVERPOOL</div>';$('rows').appendChild(hi);
+// pizarra de la banda
+const PZ={s:[90,700,'#F4F7FB',22],a:[280,560,'#6AA8FF',24],b:[260,840,'#6AA8FF',24],r1:[340,500,'#5d6888',22],r2:[330,880,'#5d6888',22]};
+const pz={};for(const k in PZ){const [x,y,c,rad]=PZ[k];pz[k]=mk($('pz'),'circle',{cx:x,cy:y,r:rad,fill:c,opacity:0})}
+const AR={ya:mk($('arr'),'path',{d:'M112 690 L250 575',stroke:'#6AA8FF','pathLength':100,'stroke-dasharray':100,'stroke-dashoffset':100}),
+ run1:mk($('arr'),'path',{d:'M270 840 C 340 800 420 760 470 700',stroke:'#B9E0FF','stroke-dasharray':'14 12',opacity:0}),
+ run2:mk($('arr'),'path',{d:'M290 570 C 240 620 200 660 190 720',stroke:'#B9E0FF','stroke-dasharray':'14 12',opacity:0}),
+ pas:mk($('arr'),'path',{d:'M112 705 L170 722',stroke:'#6AA8FF','pathLength':100,'stroke-dasharray':100,'stroke-dashoffset':100})};
+const TG={ya:mk($('tags'),'text',{x:300,y:520,fill:'#6AA8FF',opacity:0}),es:mk($('tags'),'text',{x:150,y:470,fill:'#B9E0FF',opacity:0})};TG.ya.textContent='YA';TG.es.textContent='⧗ ESPERA';
+// ejercicio del martes
+const DZ={s:[110,310,'#F4F7FB',20],a:[300,220,'#6AA8FF',22],b:[300,400,'#6AA8FF',22],r1:[360,250,'#5d6888',20],r2:[360,370,'#5d6888',20]};
+const dz={};for(const k in DZ){const [x,y,c,rad]=DZ[k];dz[k]=mk($('dz'),'circle',{cx:x,cy:y,r:rad,fill:c})}
+const dpas=mk($('darr'),'path',{d:'M130 312 L230 360',stroke:'#6AA8FF','pathLength':100,'stroke-dasharray':100,'stroke-dashoffset':100});
+// rayas: 7 conservado, 9 perdido
+const STR=[];{const g=$('tal');[[7,52],[9,482]].forEach(([n,x00])=>{const y=250;for(let j=0;j<n;j++){const grp=Math.floor(j/5),q=j%5,x0=x00+40+grp*170;
+ const p=mk(g,'path',{d:q===4?`M${x0-12} ${y+58} L${x0+100} ${y+12}`:`M${x0+q*26} ${y} L${x0+q*26+3} ${y+70}`,pathLength:100,'stroke-dasharray':100,'stroke-dashoffset':100});STR.push(p)}})}
+const CAPS=[[-1,T.presion+.45,'Liverpool perdía <b>más de la mitad</b> de sus saques de banda <em>bajo presión.</em>'],
+ [T.temporada-.05,T.verano-.15,'Temporada 2017-18: <b>puesto 18 de 20</b> <em>en la Premier.</em>'],
+ [T.verano-.1,T.entrenador-.12,'Verano de 2018: Klopp llama <em>a un danés.</em>'],
+ [T.entrenador-.08,T.ano-.15,'Thomas Grønnemark: <em>entrenador solo de saques de banda.</em>'],
+ [T.ano-.1,T.primeros-.12,'Un año después: <b>68,4 %</b> <em>conservados.</em>'],
+ [T.primeros-.08,T.casi-.35,'<em>Primeros</em> de la Premier.'],
+ [T.casi-.1,T.trabajo2-.12,'Casi no trabajó <em>el saque largo.</em>'],
+ [T.trabajo2-.05,T.cuando1-.1,'Trabajó el rápido <em>y el inteligente.</em>'],
+ [T.cuando1-.05,T.cuando2-.1,'Cuándo sacar <b>ya</b>…'],
+ [T.cuando2-.05,T.como-.15,'…cuándo <b>esperar</b>…'],
+ [T.como-.1,T.piensa-.2,'…y cómo se mueven <em>los que reciben.</em>'],
+ [T.piensa,T.cuantos-.1,'Piensa en <em>tu equipo.</em>'],
+ [T.cuantos,T.este-.12,'¿Cuántos saques de banda <em>perdéis por partido?</em>'],
+ [T.este,T.martes-.12,'Este sábado, que tu segundo cuente: <b>conservado</b> <em>o</em> <b>perdido.</b>'],
+ [T.martes,T.apunt-.3,'Martes: <b>10 minutos</b> de saques <em>con dos que se desmarcan.</em>']];
+window.frame=function(t){
+  const [cx,cy,z]=cam(t); $('world').style.transform=`translate(540px,960px) scale(${z}) translate(${-cx}px,${-cy}px)`;
+  // 1 · foto del balón
+  place($('P'),0,0,0,1); const pout=r(t,T.temporada-.1,T.temporada+.35); $('P').style.opacity=1-pout;
+  $('P').style.transform+=` translateY(${-260*io(pout)}px)`;
+  $('p1').style.transform=`scale(${lerp(1.0,1.12,r(t,0,T.temporada))})`;
+  draw($('pl'),.3,1.4,t); draw($('hL'),1.0,1.9,t); draw($('hR'),1.15,2.05,t); $('pt').style.opacity=r(t,1.9,2.3);
+  // 2 · tabla
+  const tin=r(t,T.temporada,T.temporada+.4), tout1=r(t,T.verano-.1,T.verano+.35), tback=r(t,T.ano-.4,T.ano), tout2=r(t,T.casi-.5,T.casi-.05);
+  const tOp=t<T.verano+.5?tin*(1-tout1):tback*(1-tout2); place($('T'),0,TY); $('T').style.opacity=tOp;
+  // filas caen una a una
+  const up=io(r(t,T.primeros-.2,T.premier2+.3));
+  ROWS.forEach(([i,d],k)=>{const slot=i<18?i+up:i; const f=eo(r(t,T.temporada+.1+k*.05,T.temporada+.4+k*.05));
+    d.style.top=((slot-1)*RH-30*(1-f))+'px'; d.style.opacity=f*(i<18?1:1)});
+  const hf=eo(r(t,T.dieciocho-.15,T.dieciocho+.25)); hi.style.top=(lerp(17,0,up)*RH-4)+'px'; hi.style.opacity=hf;
+  hi.style.transform=`scaleX(${lerp(.96,1,hf)})`; $('hip').textContent=up>.98?'1':(up>.02?Math.round(lerp(18,1,up)):'18');
+  $('rk').textContent=up>.5?'1.º / 20':'18.º / 20'; $('rk').style.opacity=r(t,T.dieciocho,T.dieciocho+.3);
+  const k1=eo(r(t,T.temporada+.3,T.puesto+.4)); $('ba1').style.width=(45.4*4.6*k1)+'px'; $('bn1').textContent=pct(45.4*k1); $('bn1').style.left=(250+45.4*4.6*k1+20)+'px';
+  const k2=eo(r(t,T.sesenta-.2,T.veces)); const v2=lerp(45.4,68.4,k2);
+  $('ba2').style.width=(t<T.ano?0:v2*4.6*r(t,T.ano,T.ano+.3))+'px'; $('bn2').textContent=pct(t<T.sesenta-.2?45.4:v2); $('bn2').style.left=(250+v2*4.6*r(t,T.ano,T.ano+.3)+20)+'px';
+  $('bn2').style.opacity=$('by2').style.opacity=r(t,T.ano,T.ano+.3);
+  $('Ts').style.opacity=r(t,T.puesto,T.puesto+.5);
+  // 3 · 2018 y la ficha
+  const yi=eo(r(t,T.y18-.1,T.y18+.3)), ys=io(r(t,T.klopp-.1,T.danes+.1)), gOut=r(t,T.ano-.45,T.ano-.05);
+  const y18=$('y18'); y18.style.opacity=yi*(1-gOut); place(y18,lerp(0,290,ys),lerp(GY-80,GY-390,ys),0,lerp(1,.32,ys)*lerp(.9,1,yi));
+  y18.style.color=ys>.5?'#6AA8FF':'#F4F7FB';
+  const gi=eo(r(t,T.klopp+.1,T.danes+.2)); place($('G'),lerp(1100,0,gi),GY+90,lerp(8,-1.5,gi)); $('G').style.opacity=r(t,T.klopp,T.klopp+.15)*(1-gOut);
+  // 4 · la banda
+  const lin=r(t,T.casi-.4,T.casi), lout=r(t,T.piensa-.4,T.piensa); place($('L'),0,LY); $('L').style.opacity=lin*(1-lout);
+  ['l0','l1','l2','l3'].forEach((id,i)=>draw($(id),T.casi-.4+i*.12,T.casi+.3+i*.12,t)); $('lt').setAttribute('opacity',r(t,T.casi+.2,T.casi+.6));
+  const lg=r(t,T.casi+.1,T.trabajo2-.6), lgo=1-r(t,T.trabajo2-.1,T.trabajo2+.3);
+  $('lg').setAttribute('opacity',lg>0?lgo:0); $('lg').style.clipPath=`inset(0 ${100-100*io(lg)}% 0 0)`;
+  draw($('x1'),T.largo-.05,T.largo+.25,t); draw($('x2'),T.largo+.15,T.largo+.45,t); $('lx').setAttribute('opacity',lgo);
+  $('lp').setAttribute('opacity',r(t,T.largo+.3,T.largo+.6)*lgo); $('lps').setAttribute('opacity',r(t,T.largo+.4,T.largo+.7)*lgo);
+  // pizarra: sacador, 2 azules, 2 grises
+  const pin=r(t,T.trabajo2+.1,T.rapido+.2);
+  Object.values(pz).forEach((e,i)=>e.setAttribute('opacity',r(t,T.trabajo2+.1+i*.08,T.trabajo2+.35+i*.08)));
+  // fase 1 · YA: el azul A está libre
+  const f1=1-r(t,T.cuando2-.2,T.cuando2+.1); draw(AR.ya,T.cuando1+.1,T.ya,t); AR.ya.setAttribute('opacity',f1); TG.ya.setAttribute('opacity',r(t,T.ya-.15,T.ya+.1)*f1);
+  // fase 2 · ESPERA: los rivales cierran a los dos
+  const f2=io(r(t,T.cuando2-.1,T.esperar+.2)), f3=io(r(t,T.mueven-.2,T.reciben+.3));
+  const pos={a:[280,560],b:[260,840],r1:[lerp(420,300,f2),lerp(620,555,f2)],r2:[lerp(420,300,f2),lerp(780,845,f2)]};
+  // fase 3 · B arrastra a su rival hacia dentro; A cae a la banda y recibe
+  pos.b=[lerp(260,470,f3),lerp(840,700,f3)]; pos.r2=[lerp(pos.r2[0],505,f3),lerp(pos.r2[1],735,f3)];
+  pos.a=[lerp(280,190,f3),lerp(560,720,f3)]; pos.r1=[lerp(pos.r1[0],345,f3),lerp(pos.r1[1],520,f3)];
+  for(const k of ['a','b','r1','r2']){pz[k].setAttribute('cx',pos[k][0]);pz[k].setAttribute('cy',pos[k][1])}
+  TG.es.setAttribute('opacity',r(t,T.esperar-.2,T.esperar+.1)*(1-r(t,T.como-.2,T.como+.1)));
+  AR.run1.setAttribute('opacity',.9*r(t,T.mueven-.3,T.mueven)); AR.run2.setAttribute('opacity',.9*r(t,T.mueven-.1,T.mueven+.2));
+  draw(AR.pas,T.reciben-.1,T.reciben+.4,t);
+  // 5 · foto de entrenamiento, hoja, ejercicio
+  const fo=r(t,T.piensa-.25,T.piensa+.1), fout=r(t,T.este-.2,T.este+.3); place($('F'),0,FY); $('F').style.opacity=fo*(1-fout);
+  $('f1').style.transform=`scale(${lerp(1.1,1.0,r(t,T.piensa,T.este))})`;
+  const hin=eo(r(t,T.cuantos+.05,T.cuantos+.6)), fold=io(r(t,T.martes-.1,T.martes+.5));
+  const H=$('H'); place(H,0,HY+60*(1-hin)); H.style.transform+=` scaleY(${1-fold})`; H.style.transformOrigin='50% 0'; H.style.opacity=hin*(1-r(t,T.martes+.3,T.martes+.55));
+  $('ej').style.opacity=r(t,T.este,T.este+.4);
+  document.querySelectorAll('#H .q').forEach((q,i)=>q.style.opacity=r(t,T.partido-.3+i*.1,T.partido+.1+i*.1)*(1-r(t,T.este+.4,T.este+.7)));
+  const s0=T.cuente-.2,s1=T.perdido+.3; STR.forEach((p,k)=>{const s=s0+(s1-s0)*k/STR.length;p.setAttribute('stroke-dashoffset',100-100*eo(r(t,s,s+.12)))});
+  $('hn1').style.opacity=r(t,T.conservado,T.conservado+.3); $('hn2').style.opacity=r(t,T.perdido,T.perdido+.3);
+  // ejercicio: los azules se cruzan, uno se libra y recibe
+  const di=r(t,T.martes,T.martes+.4); place($('D'),0,HY); $('D').style.opacity=di;
+  const c=io(r(t,T.diez,T.dos)), c2=io(r(t,T.dos,T.desmarcan+.3));
+  const da=[lerp(300,260,c),lerp(220,420,c)], db=[lerp(300,430,c),lerp(400,200,c)];
+  const dr1=[lerp(360,420,c),lerp(250,250,c)], dr2=[lerp(360,370,c),lerp(370,420,c)];
+  da[0]=lerp(da[0],230,c2); da[1]=lerp(da[1],360,c2);
+  for(const [k,p] of [['a',da],['b',db],['r1',dr1],['r2',dr2]]){dz[k].setAttribute('cx',p[0]);dz[k].setAttribute('cy',p[1])}
+  draw(dpas,T.desmarcan,T.desmarcan+.4,t);
+  place($('clk'),300,HY-390); $('clk').style.opacity=r(t,T.martes+.2,T.martes+.5);
+  const secs=Math.max(0,Math.round(600-(t>T.diez?(t-T.diez)*1:0))); $('clkn').textContent=Math.floor(secs/60)+':'+String(secs%60).padStart(2,'0');
+  // folio, créditos
+  $('fpg').textContent=t<T.casi-.4?'p. 01':t<T.piensa-.3?'p. 02':'p. 03';
+  $('cred').textContent=t<T.temporada?'Foto: USARJ NCO Corps (CC BY 2.0) · Wikimedia Commons':t<T.casi-.4?'Datos: Tifo Football vía Liverpool FC · Irish Times · Evening Standard':t<T.piensa-.3?'Ilustración: ProTeam · Fuente: Liverpool FC':(t<T.este?'Foto: Kmreykjavik (CC BY-SA 4.0) · Wikimedia Commons':'Ilustración: ProTeam · Cifras de ejemplo');
+  $('folio').style.opacity=$('cred').style.opacity=1-r(t,T.apunt-.4,T.apunt-.1);
+  // rótulo
+  let html='',a=0; for(const [s,e,h] of CAPS)if(t>=s-.2&&t<e+.25){html=h;a=Math.min(r(t,s-.2,s+.15),1-r(t,e-.05,e+.25))}
+  const cp=$('cap'); if(cp.dataset.h!==html){cp.innerHTML=html;cp.dataset.h=html}
+  cp.style.opacity=a; cp.style.filter=`blur(${(1-a)*8}px)`; cp.style.transform=`translateY(${(1-a)*14}px)`;
+  const sw=r(t,T.piensa-.45,T.piensa+.2); $('sweep').style.opacity=sw>0&&sw<1?1:0; $('sweep').style.left=lerp(-900,1080,io(sw))+'px';
+  $('white').style.opacity=r(t,T.apunt-.35,T.apunt+.25); $('cta').style.opacity=r(t,T.apunt,T.apunt+.5);
+  $('cta').style.transform=`scale(${lerp(1.04,1,eo(r(t,T.apunt,T.END)))})`;
+};
+Promise.all([...document.images].map(i=>i.decode().catch(()=>{}))).then(()=>document.fonts.ready).then(()=>{frame(0);window.ready=true});
+</script></body></html>

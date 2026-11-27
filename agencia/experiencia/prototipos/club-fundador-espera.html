@@ -1,0 +1,483 @@
+<title>Club Fundador · espera y portada</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Instrument+Serif:ital@1&display=swap">
+<style>
+/* Sistema v4 (Biel, 23/11): paleta real de la app en modo oscuro. La luz señala lo activo; el ultravioleta aparece una sola vez por pantalla. */
+:root{
+  --bg:#02050F; --s1:#060C19; --s2:#0C1323; --s3:#121B30;
+  --blue:#636DFF; --blue-2:#4469FA; --elec:#6AA8FF; --ice:#B9E0FF;
+  --white:#F4F7FB; --text-2:#A3AEC4; --text-3:#6F7A91;
+  --line:rgba(185,224,255,.09); --line-2:rgba(185,224,255,.16);
+  --uv:#8B5CF6; --uv-glow:rgba(139,92,246,.45);
+  --err:#FF9B8F; --err-bg:rgba(255,155,143,.08);
+  --sans:"Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --voice:"Instrument Serif", Georgia, serif;
+  --r:16px; color-scheme:dark;
+}
+*{box-sizing:border-box}
+html,body{background:var(--bg)}
+body{margin:0;color:var(--white);font-family:var(--sans);font-size:15px;line-height:1.55;-webkit-font-smoothing:antialiased}
+button,input,select{font:inherit;color:inherit}
+button{cursor:pointer}
+:focus-visible{outline:2px solid var(--elec);outline-offset:2px}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--s1)}
+
+/* Barra de control (fuera del prototipo) */
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--s1);border-bottom:1px solid var(--line);
+  padding-block:10px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.bar-in{max-width:1180px;margin:0 auto;display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center}
+.bar h1{font-size:15px;font-weight:800;margin:0;margin-right:auto;letter-spacing:-.01em;white-space:nowrap}
+.bar h1 span{color:var(--text-3);font-weight:600}
+.ctl{display:flex;flex-direction:column;gap:3px;min-width:0}
+.ctl[hidden]{display:none}
+.ctl>span{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--text-3);font-weight:700}
+.seg{display:flex;flex-wrap:wrap;gap:2px;background:var(--bg);border:1px solid var(--line);border-radius:9px;padding:2px}
+.seg button{border:0;background:transparent;padding:5px 10px;border-radius:7px;font-size:12.5px;font-weight:600;color:var(--text-2)}
+.seg button[aria-pressed="true"]{background:var(--s3);color:var(--white)}
+select.sel{font-size:12.5px;font-weight:600;background:var(--bg);border:1px solid var(--line);border-radius:9px;padding:6px 8px;max-width:100%}
+.chk{display:flex;gap:6px;align-items:center;font-size:12.5px;font-weight:600;color:var(--text-2)}
+
+/* Lienzo */
+.stage{padding-block:28px 40px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.frame{margin:0 auto;background:var(--bg);border:1px solid var(--line-2);overflow:hidden;position:relative}
+.frame.mobile{max-width:375px;border-radius:34px;box-shadow:0 0 0 8px #0B0F1A,0 24px 60px rgba(0,0,0,.6);min-height:740px}
+.frame.desktop{max-width:1180px;border-radius:12px;box-shadow:0 24px 60px rgba(0,0,0,.5)}
+.urlbar{display:flex;align-items:center;gap:8px;padding:9px 14px;border-bottom:1px solid var(--line);font-size:12px;color:var(--text-3);background:var(--s1)}
+.urlbar b{font-weight:600;color:var(--text-2)}
+.dots{display:flex;gap:5px}.dots i{width:9px;height:9px;border-radius:50%;background:var(--line-2)}
+
+/* Lo propuesto, marcado */
+.show-prop [data-prop]{outline:1.5px dashed var(--ice);outline-offset:4px;border-radius:8px;position:relative}
+.show-prop [data-prop]::after{content:"Propuesta";position:absolute;top:-10px;right:6px;background:var(--ice);color:var(--bg);font-size:9.5px;font-weight:800;line-height:1;letter-spacing:.06em;text-transform:uppercase;padding:3px 6px;border-radius:4px}
+.show-prop [data-date]{box-shadow:inset 0 -2px 0 var(--elec)}
+
+/* === Pantalla de espera (app) === */
+.app{padding:22px 18px 40px;display:flex;flex-direction:column;gap:14px;max-width:720px;margin:0 auto}
+.desktop .app{padding:48px 24px 64px;gap:18px}
+.card{border:1px solid var(--line);border-radius:var(--r);padding:20px;background:var(--s1)}
+.welcome h2{margin:0;font-size:18px;font-weight:700;letter-spacing:-.01em}
+.welcome p{margin:8px 0 0;color:var(--text-2);font-size:14px}
+.welcome .sig{color:var(--text-3);font-size:13px;margin-top:10px}
+/* La cuenta atrás queda en penumbra: no es lo activo */
+.wait{text-align:center;background:var(--s1)}
+.wait h1{font-size:19px;margin:10px 0 0;font-weight:700;letter-spacing:-.01em;text-wrap:balance}
+.wait p{color:var(--text-2);font-size:13.5px;max-width:470px;margin:8px auto 0}
+.timer{display:grid;grid-template-columns:repeat(4,1fr);max-width:380px;margin:20px auto 0}
+.timer div+div{border-left:1px solid var(--line)}
+.timer b{display:block;font-size:28px;font-weight:700;font-variant-numeric:tabular-nums;letter-spacing:-.02em;color:var(--white)}
+.desktop .timer b{font-size:40px}
+.timer span{font-size:11px;color:var(--text-3)}
+
+/* Bloque del Club: es lo activo, así que es lo único iluminado (haz desde arriba) */
+.club{border:1px solid var(--line-2);border-radius:var(--r);padding:22px 20px 20px;background:
+  radial-gradient(120% 70% at 50% -10%,rgba(106,168,255,.20),rgba(99,109,255,.06) 45%,transparent 70%),var(--s2);position:relative;overflow:hidden}
+.club::before{content:"";position:absolute;left:12%;right:12%;top:0;height:1px;background:linear-gradient(90deg,transparent,var(--ice),transparent);opacity:.7}
+.club.dim{background:var(--s2)}
+.club.dim::before{display:none}
+.club-top{display:flex;gap:16px;align-items:center}
+.club h2{margin:0;font-size:22px;font-weight:800;line-height:1.15;letter-spacing:-.02em;text-wrap:balance}
+.club h2 em{font-style:normal;color:var(--ice)}
+.club .lead{margin:10px 0 0;font-size:14px;color:var(--text-2)}
+.kicker{font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;font-weight:800;color:var(--elec);margin:0 0 6px}
+.slot{margin-top:18px;display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 10px;padding:14px 14px 12px;border-radius:12px;background:rgba(2,5,15,.6);border:1px solid var(--line)}
+.slot .lab{font-size:10.5px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--text-3)}
+.slot .num{font-size:26px;font-weight:800;line-height:1;min-width:92px;letter-spacing:-.01em;font-variant-numeric:tabular-nums;color:var(--white);text-shadow:0 0 18px rgba(185,224,255,.45)}
+.slot .num.blank{color:transparent;text-shadow:none;border-bottom:2px dashed var(--line-2);height:22px}
+.slot small{font-size:12.5px;color:var(--text-2);flex-basis:100%;line-height:1.4;margin-top:6px}
+.desktop .slot small{flex-basis:auto;margin:0 0 0 auto;text-align:right}
+.track{list-style:none;margin:18px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:6px}
+.track li{font-size:11.5px;font-weight:700;color:var(--text-3);padding-top:9px;border-top:2px solid var(--line-2);display:flex;gap:5px;align-items:center}
+.track li.done{color:var(--white);border-color:var(--blue)}
+.track li.now{color:var(--ice);border-color:var(--elec);box-shadow:0 -6px 14px -8px var(--elec)}
+.track li.bad{color:var(--err);border-color:var(--err)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:12px;border:1px solid transparent;padding:12px 18px;font-weight:700;font-size:14.5px;min-height:46px}
+.btn-p{background:var(--blue);color:#fff}
+.btn-w{background:var(--white);color:var(--bg)}
+.btn-o{background:transparent;border-color:var(--line-2);color:var(--white)}
+.btn-uv{background:var(--uv);color:#fff;box-shadow:0 0 0 1px rgba(255,255,255,.08) inset,0 10px 30px -10px var(--uv-glow)}
+.btn:disabled{opacity:.4;cursor:not-allowed}
+.club .btn{margin-top:18px;width:100%}
+.desktop .club .btn{width:auto}
+.fine{font-size:12px;color:var(--text-3);margin:10px 0 0}
+.msg{margin-top:14px;font-size:13px;border-radius:10px;padding:10px 12px;display:flex;gap:8px;align-items:flex-start}
+.msg.err{background:var(--err-bg);color:var(--err);border:1px solid rgba(255,155,143,.18)}
+.skel{background:linear-gradient(90deg,var(--s2),var(--s3),var(--s2));background-size:200% 100%;animation:sk 1.4s linear infinite;border-radius:8px}
+@keyframes sk{to{background-position:-200% 0}}
+
+/* Objeto real en estados vacíos y de error (ilustración provisional hasta tener la foto propia o con licencia) */
+.obj{display:flex;gap:14px;align-items:center}
+.obj svg{flex:none}
+.obj-cap{font-size:10.5px;color:var(--text-3);margin-top:8px}
+
+/* Insignia */
+.badge{flex:none;display:block}
+.badge.uv{filter:drop-shadow(0 0 14px var(--uv-glow))}
+.pop{animation:pop .6s cubic-bezier(.2,1.25,.4,1) both}
+@keyframes pop{from{transform:scale(.6) rotate(-12deg);opacity:0}to{transform:none;opacity:1}}
+
+/* Hoja (diálogo) */
+.scrim{position:absolute;inset:0;background:rgba(2,5,15,.72);display:flex;align-items:flex-end;justify-content:center;z-index:3}
+.desktop .scrim{align-items:center;position:fixed}
+.sheet{background:var(--s1);border:1px solid var(--line-2);border-bottom:0;width:100%;max-width:520px;max-height:92%;overflow:auto;border-radius:22px 22px 0 0;padding:22px 20px 24px;position:relative}
+.desktop .sheet{border-radius:18px;border-bottom:1px solid var(--line-2);max-height:90vh}
+.sheet h3{margin:0;font-size:21px;font-weight:800;letter-spacing:-.02em;padding-right:40px}
+.sheet .sub{margin:6px 0 0;color:var(--text-2);font-size:13.5px}
+.x{position:absolute;top:12px;right:12px;width:36px;height:36px;border-radius:50%;border:1px solid var(--line-2);background:var(--s2);font-size:18px;line-height:1}
+.steps{list-style:none;padding:0;margin:18px 0 0;display:grid;gap:12px}
+.steps li{display:flex;gap:12px;font-size:14px;color:var(--text-2)}
+.steps li b{flex:none;width:26px;height:26px;border-radius:50%;background:var(--blue);color:#fff;display:grid;place-items:center;font-size:12px}
+.story{margin:18px auto 0;width:132px;aspect-ratio:9/16;max-width:100%;border-radius:14px;border:1px solid var(--line-2);background:radial-gradient(90% 50% at 50% 30%,rgba(106,168,255,.22),transparent 70%),var(--bg);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;padding:12px;text-align:center}
+.story p{margin:0;font-weight:800;font-size:14px;line-height:1.15}
+.story small{font-size:9px;color:var(--text-2)}
+.row{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-top:14px}
+.field{margin-top:18px;display:grid;gap:6px}
+.field label{font-size:13px;font-weight:700}
+.inp{display:flex;align-items:center;gap:6px;border:1px solid var(--line-2);border-radius:12px;padding:0 12px;background:var(--bg)}
+.inp:focus-within{border-color:var(--elec);box-shadow:0 0 0 3px rgba(106,168,255,.15)}
+.inp.bad{border-color:var(--err)}
+.inp span{color:var(--text-3);font-weight:700}
+.inp input{border:0;outline:0;background:transparent;height:46px;flex:1;min-width:0}
+.field .btn{width:100%}
+.help{font-size:12px;color:var(--err)}
+.note{margin-top:14px;font-size:12px;color:var(--text-2);background:var(--s2);border-radius:10px;padding:9px 12px}
+
+/* Carta */
+.letter{font-size:14.5px;line-height:1.7;color:var(--text-2)}
+.letter p{margin:0 0 10px}
+.letter .sign{font:italic 400 30px var(--voice);color:var(--ice);margin:6px 0 0}
+
+.toast{position:absolute;left:50%;bottom:22px;transform:translateX(-50%);background:var(--white);color:var(--bg);padding:10px 14px;border-radius:12px;font-size:13px;font-weight:700;z-index:4;white-space:nowrap;max-width:92%;overflow:hidden;text-overflow:ellipsis}
+
+/* === Portada (web) === */
+.w-strip{padding:14px 22px;display:flex;justify-content:space-between;align-items:center;gap:12px;border-bottom:1px solid var(--line);font-size:12px;color:var(--text-3)}
+.w-strip b{font-weight:800;font-size:15px;letter-spacing:-.02em;color:var(--white);flex:none}
+.ghost{padding:26px 22px;color:var(--text-3);font-size:12.5px;text-align:center;border-top:1px solid var(--line);background:var(--s1)}
+.fsec{padding:56px 22px 60px;position:relative;overflow:hidden;background:radial-gradient(70% 45% at 22% 0%,rgba(106,168,255,.14),transparent 70%)}
+.desktop .fsec{padding:96px 48px 104px}
+.fgrid{max-width:1040px;margin:0 auto;display:grid;gap:40px;position:relative}
+.desktop .fgrid{grid-template-columns:5fr 7fr;gap:72px;align-items:start}
+.fh{font-size:44px;font-weight:800;line-height:1;margin:18px 0 0;letter-spacing:-.03em}
+.desktop .fh{font-size:68px}
+.fh em{font:italic 400 1.08em var(--voice);letter-spacing:0;color:var(--ice)}
+.fp{color:var(--text-2);margin:16px 0 0;max-width:42ch}
+.fnote{margin-top:18px;padding-left:14px;border-left:2px solid var(--elec);font-size:13.5px;color:var(--text-2)}
+.ben{list-style:none;margin:0;padding:0;border-top:1px solid var(--line-2)}
+.ben li{display:grid;grid-template-columns:30px 1fr;gap:4px 14px;padding:18px 0;border-bottom:1px solid var(--line)}
+.ben .n{color:var(--elec);padding-top:2px}
+.ben h3{margin:0;font-size:16px;font-weight:700}
+.ben p{grid-column:2;margin:0;font-size:14px;color:var(--text-2)}
+.ben li.soon{border-bottom:1px dashed var(--line-2)}
+.ben li.soon h3{color:var(--text-2)}
+.myst{margin-top:28px;padding:18px;border-radius:var(--r);background:var(--s2);border:1px solid var(--line);display:flex;gap:16px;align-items:center}
+.myst p{margin:0;font-size:14px;color:var(--text-2)}
+.myst strong{display:block;font-size:18px;font-weight:800;color:var(--white);margin-bottom:4px;letter-spacing:-.01em}
+.fcta{margin-top:26px;display:flex;flex-direction:column;gap:8px;align-items:flex-start}
+.fcta small{color:var(--text-3);font-size:12.5px}
+.closed{padding:18px;border:1px dashed var(--line-2);border-radius:var(--r);color:var(--text-2);font-size:14px;margin-top:26px}
+.off{padding:64px 22px;text-align:center}
+.off p{max-width:46ch;margin:10px auto 0;color:var(--text-2);font-size:14px}
+code{font-size:12px;color:var(--ice);background:var(--s2);padding:1px 5px;border-radius:5px}
+
+
+/* === Cabecera de la portada en el móvil (propuesta P1 de Samuel, 24/11) === */
+.hero{position:relative;overflow:hidden;background:var(--bg)}
+.h-strip{display:flex;justify-content:space-between;align-items:center;padding:14px 18px;border-bottom:1px solid var(--line)}
+.h-strip b{font-weight:800;font-size:16px;letter-spacing:-.02em}
+.h-strip a{font-size:13.5px;font-weight:700;color:var(--ice);text-decoration:none;padding:8px 2px}
+.h-main{position:relative;padding:44px 22px 30px;background:radial-gradient(85% 55% at 50% 0%,rgba(106,168,255,.20),rgba(99,109,255,.05) 50%,transparent 75%)}
+.desktop .h-main{padding:96px 48px 56px;text-align:center}
+.h-main::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.07;mix-blend-mode:screen;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='120' height='120' filter='url(%23n)'/%3E%3C/svg%3E")}
+.h-note{margin:0;font-size:13px;color:var(--text-3);font-weight:600}
+.h-title{margin:14px 0 0;font-size:34px;line-height:1.08;font-weight:800;letter-spacing:-.03em;text-wrap:balance;max-width:16ch}
+.desktop .h-title{font-size:60px;margin-inline:auto;max-width:18ch}
+.h-title .lit{color:var(--ice);background:linear-gradient(90deg,var(--ice) 0 40%,#fff 50%,var(--ice) 60% 100%);background-size:250% 100%;background-position:100% 0;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:beam 1.4s .3s ease-out both;text-shadow:none}
+@keyframes beam{from{background-position:100% 0}to{background-position:0 0}}
+.h-myst{margin:14px 0 0;font-size:17px;line-height:1.45;color:var(--text-2);max-width:30ch}
+.desktop .h-myst{margin-inline:auto;font-size:20px}
+.h-cta{margin-top:28px;display:flex;flex-direction:column;gap:10px}
+.desktop .h-cta{align-items:center}
+.h-cta .btn{width:100%;min-height:54px;font-size:16px}
+.desktop .h-cta .btn{width:auto;padding-inline:28px}
+.h-cta small{font-size:12.5px;color:var(--text-3)}
+.h-dim{padding:22px 18px 28px;text-align:center;border-top:1px solid var(--line);opacity:.55}
+.h-dim p{margin:0 0 10px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:800;color:var(--text-3)}
+.h-dim .timer{margin-top:0}
+.h-dim .timer b{font-size:24px;color:var(--text-2)}
+.fold{position:absolute;left:0;right:0;border-top:1.5px dashed var(--ice);z-index:2;pointer-events:none}
+.fold span{position:absolute;right:8px;top:-20px;background:var(--ice);color:var(--bg);font-size:9.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;padding:3px 6px;border-radius:4px}
+.desktop .fold{display:none}
+.cur .sport-word{font-weight:800;font-size:40px;letter-spacing:-.03em;text-align:center;margin:0}
+.cur{padding:56px 18px 36px;text-align:center}
+.cur .bn{margin:6px 0 0;color:var(--text-2);font:italic 400 19px var(--voice)}
+.cur h1{font-size:36px;margin:16px 0 0;font-weight:700}
+.cur p.d{color:var(--text-2);font-size:15px;margin:14px auto 0;max-width:34ch}
+.cur .timer{max-width:none;margin:36px 0}
+.cur .timer b{font-size:46px}
+.cur .two{display:flex;flex-direction:column;gap:10px}
+.skl-line{height:16px;margin:10px 0 0}
+
+/* === Sobres del día 0 (propuesta P3 de Samuel, 24/11) === */
+.env-sec{border:1px solid var(--line);border-radius:var(--r);padding:20px;background:var(--s1)}
+.env-sec h2{margin:0;font-size:18px;font-weight:800;letter-spacing:-.01em;text-wrap:balance}
+.env-sec .lead{margin:6px 0 0;font-size:13.5px;color:var(--text-2)}
+.envs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:16px}
+.desktop .envs{gap:16px}
+.env{background:transparent;border:1px solid transparent;padding:12px 4px 10px;border-radius:12px;display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center;color:var(--text-3);min-width:0}
+.env svg{width:100%;max-width:92px;height:auto;opacity:.5}
+.desktop .env svg{max-width:120px}
+.env b{font-size:12.5px;font-weight:700;line-height:1.25}
+.env small{font-size:11px;line-height:1.3}
+/* Abierto = lo activo: luz desde arriba y filo hielo */
+.env.open{background:radial-gradient(100% 80% at 50% 0%,rgba(106,168,255,.20),rgba(99,109,255,.05) 55%,transparent 80%),var(--s2);border-color:var(--line-2);color:var(--white);box-shadow:inset 0 1px 0 rgba(185,224,255,.45)}
+.env.open svg{opacity:1}
+.env.open small{color:var(--ice)}
+/* El siguiente: solo un filo de luz, sigue cerrado */
+.env.next svg{opacity:.8}
+.env.next small{color:var(--text-2)}
+.env-next{margin:14px 0 0;padding-top:12px;border-top:1px solid var(--line);font-size:13px;color:var(--text-2);display:flex;flex-wrap:wrap;gap:4px 10px;align-items:baseline}
+.env-next strong{color:var(--white);font-weight:700}
+.env-next small{font-size:12px;color:var(--text-3)}
+.tpl{list-style:none;margin:16px 0 0;padding:0;display:grid;gap:8px}
+.tpl li{display:grid;grid-template-columns:4px 1fr;gap:4px 12px;padding:12px;border-radius:12px;background:var(--s2);border:1px solid var(--line);color:var(--text-2);font-size:13px}
+.tpl li i{grid-row:1/3;border-radius:2px;background:var(--line-2)}
+.tpl li b{color:var(--white);font-size:14px}
+.tpl li.on{border-color:var(--line-2);box-shadow:inset 0 1px 0 rgba(185,224,255,.35)}
+.tpl li.on i{background:var(--elec);box-shadow:0 0 10px var(--elec)}
+.envnote{margin-top:0;padding:16px 18px;border:1px dashed var(--line-2);border-radius:var(--r);font-size:13.5px;color:var(--text-2)}
+.env-open-anim .flap{transform-origin:50% 30%;animation:flap .7s ease-out both}
+@keyframes flap{from{transform:scaleY(-1)}to{transform:none}}
+
+/* Notas */
+.notes{max-width:1180px;margin:30px auto 0;display:grid;gap:16px}
+@media (min-width:860px){.notes{grid-template-columns:1fr 1fr}}
+.nbox{background:var(--s1);border:1px solid var(--line);border-radius:14px;padding:18px 20px;min-width:0}
+.nbox h2{margin:0 0 8px;font-size:15px;font-weight:800}
+.nbox ul{margin:0;padding-left:18px;font-size:13.5px;color:var(--text-2);display:grid;gap:5px}
+.nbox.prop h2{color:var(--ice)}
+.nbox.wide{grid-column:1/-1}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+
+<header class="bar">
+  <div class="bar-in">
+    <h1>Club Fundador <span>· prototipo v4</span></h1>
+    <div class="ctl"><span>Pantalla</span><div class="seg" id="segScreen">
+      <button data-v="espera" aria-pressed="true">Espera (app)</button><button data-v="portada" aria-pressed="false">Portada (web)</button><button data-v="cabecera" aria-pressed="false">Cabecera móvil (web)</button><button data-v="sobres" aria-pressed="false">Sobres del día 0 (app)</button></div></div>
+    <div class="ctl" id="ctlIns" hidden><span>Insignia</span><div class="seg" id="segIns">
+      <button data-v="none" aria-pressed="true">Sin pedir</button><button data-v="verified" aria-pressed="false">Verificada</button></div></div>
+    <div class="ctl" id="ctlHero" hidden><span>Cabecera</span><div class="seg" id="segVer">
+      <button data-v="prop" aria-pressed="true">Propuesta</button><button data-v="cur" aria-pressed="false">Actual (hoy)</button></div></div>
+    <div class="ctl" id="ctlBtn" hidden><span>Botón y oferta</span><select class="sel" id="selBtn" aria-label="Botón y oferta">
+      <option value="a">«Apúntate a la lista de espera», sin oferta</option><option value="b">«Entrar en la lista», sin oferta</option><option value="c">«Apúntate…» + 3 meses gratis</option></select></div>
+    <div class="ctl" id="ctlFold" hidden><span>Alto del móvil</span><div class="seg" id="segFold">
+      <button data-v="553" aria-pressed="true">Móvil pequeño</button><button data-v="664" aria-pressed="false">Móvil grande</button></div></div>
+    <div class="ctl"><span>Estado</span><select class="sel" id="selState" aria-label="Estado"></select></div>
+    <div class="ctl"><span>Fechas</span><div class="seg" id="segDates">
+      <button data-v="new" aria-pressed="true">10/12 y 11/12 (por confirmar)</button><button data-v="old" aria-pressed="false">27/11 y 28/11 (código)</button></div></div>
+    <div class="ctl"><span>Vista</span><div class="seg" id="segView">
+      <button data-v="mobile" aria-pressed="true">Móvil 375</button><button data-v="desktop" aria-pressed="false">Escritorio</button></div></div>
+    <label class="chk"><input type="checkbox" id="chkProp"> Marcar lo propuesto</label>
+  </div>
+</header>
+
+<div class="stage">
+  <div class="frame mobile" id="frame"></div>
+
+  <section class="notes">
+    <div class="nbox">
+      <h2>Confirmado (CLUB_FUNDADOR.md y código de la rama revision/club-fundador)</h2>
+      <ul>
+        <li>Insignia verificada y numerada, con rayo. Números únicos; nadie tiene número todavía.</li>
+        <li>3 meses gratis para quien entra por la lista de espera. Hoy el código dice hasta el 27/11 a las 23:59 y apertura el 28/11 a las 00:00.</li>
+        <li>Soporte de tú a tú: «Una persona del equipo te acompaña».</li>
+        <li>Votaciones: «Votas en lo que construimos», sin prometer que cada voto cambia la app.</li>
+        <li>Carta de bienvenida con nombre y número; se abre una vez al verificar.</li>
+        <li>Verificación manual: pulsar «Compartir» no verifica nada.</li>
+        <li>Se conservan todos los textos, botones, flujos y estados de founder-section.tsx y founder-landing.tsx.</li>
+        <li>Paleta, tipografía y reglas de luz: sistema v4 (agencia/sistema-v4/IDENTIDAD.md).</li>
+      </ul>
+    </div>
+    <div class="nbox prop">
+      <h2>Propuesta (pendiente de Biel)</h2>
+      <ul>
+        <li><b>Fechas nuevas (supuesto por confirmar):</b> lista hasta el jueves 10/12 a las 23:59 y apertura el viernes 11/12. El selector «Fechas» enseña las dos versiones; con «Marcar lo propuesto» se subrayan los textos que cambian.</li>
+        <li>Luz: el bloque del Club es lo único iluminado (haz desde arriba); bienvenida y cuenta atrás quedan en penumbra.</li>
+        <li>Ultravioleta una vez por pantalla: el botón «Conseguir mi insignia» (acceso al Club) mientras no está verificada; el rayo de la insignia cuando ya lo está. En la portada, el rayo de la insignia grande.</li>
+        <li>Hueco del número «Fundador Nº ___» que se enciende al asignarlo. Expectación sin contar apuntados.</li>
+        <li>Orden de la espera: bienvenida → Club → cuenta atrás (hoy el Club va al final).</li>
+        <li>Barra de 3 pasos (Compartida → En revisión → Verificada), con la luz en el paso actual.</li>
+        <li>Estados de carga y de error (hoy no existen); el error lleva un objeto real (móvil boca abajo) en vez de un icono.</li>
+        <li>Portada: frase de misterio y botón de registro dentro del bloque.</li>
+        <li><b>Cabecera móvil (24/11, propuesta P1 de Samuel):</b> en la primera pantalla del móvil solo la fecha de cierre, «Lo que hay dentro se abre al día siguiente.» y un único botón en blanco (la luz); «Iniciar sesión» sube a la barra de arriba; la cuenta atrás baja, en penumbra; el Club y las ventajas bajan. Sin ultravioleta en esa primera pantalla. Línea discontinua: dónde acaba la primera pantalla (aprox.). Primer fotograma: la frase, la fecha y el botón ya vienen en el HTML; solo la cuenta atrás espera a cargar, con su hueco reservado (hoy es igual).</li>
+        <li><b>Sobres del día 0 (24/11, propuesta P3 de Samuel):</b> en la espera, entre el Club y la cuenta atrás, tres sobres cerrados con lo que ya está aprobado: 1 «Tu insignia» (martes 1/12), 2 «Tu primera semana» (martes 8/12) y 3 «Tu carta» (viernes 11/12, al entrar). Los abiertos son lo activo y llevan la luz; el siguiente, solo un filo; el resto, en penumbra. Se abren por fecha, sin servidor ni base de datos. «Te avisamos por correo» depende de que Lucía lo envíe. Solo con la apertura el 11/12: con el 28/11 no queda ninguna semana. Sin ultravioleta nuevo: sigue en el Club.</li>
+        <li>No aparecen: precio fundador (sin importe ni Stripe), detalles de los tickets (sin construir), número de apuntados.</li>
+      </ul>
+    </div>
+  </section>
+</div>
+
+<script>
+(function(){
+  var S={ins:"none",envAnim:0,ver:"prop",btn:"a",fold:"553",heroErr:false,screen:"espera",view:"mobile",state:"none",dates:"new",sheet:false,letter:false,handle:"",fieldErr:"",sendErr:false,toast:""};
+  var STATES={
+    espera:[["loading","Cargando"],["none","Sin solicitar"],["requested","En revisión"],["rejected","Rechazada"],["verified","Verificada, sin número"],["verified_n","Verificada, Nº 011"],["error","Error al cargar"]],
+    cabecera:[["normal","Primera pantalla"],["first","Primer fotograma (antes de cargar)"],["error","Error al abrir el registro"]],
+    portada:[["campaign","Campaña abierta"],["closed","Lista cerrada"],["off","Fuera de campaña (vacío)"]],
+    sobres:[["s0","Hoy: ningún sobre abierto (vacío)"],["s1","Mar 1/12: abierto el 1.º"],["s2","Mar 8/12: abiertos 1.º y 2.º"],["loading","Cargando"],["error","Error al abrir el sobre"],["cur","Actual (hoy, sin sobres)"]]
+  };
+  // Sobres: solo lo aprobado (CLUB_FUNDADOR.md y recorrido inicial). Se abren por fecha (hora de Madrid).
+  var ENV=[{n:1,t:"Tu insignia",date:"martes 1 de diciembre",short:"mar 1 dic"},{n:2,t:"Tu primera semana",date:"martes 8 de diciembre",short:"mar 8 dic"},{n:3,t:"Tu carta",date:"viernes 11 de diciembre",short:"vie 11 dic, al entrar",door:true}];
+  var D={
+    "new":{closeDay:"jueves",open:"11 de diciembre",openShort:"El 11",close:"10 de diciembre",closeT:Date.parse("2026-12-10T23:00:00Z")},
+    "old":{closeDay:"viernes",open:"28 de noviembre",openShort:"El 28",close:"27 de noviembre",closeT:Date.parse("2026-11-27T23:00:00Z")}
+  };
+  function d(){return D[S.dates]}
+  function dt(s){return '<span data-date>'+s+'</span>'}
+  var IG="app.proteam";
+  var frame=document.getElementById("frame");
+  function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
+
+  // Roseta con rayo: misma geometría que founder-badge.tsx. Colores v4: azul ProTeam → noche; rayo blanco o ultravioleta.
+  var pts=[];for(var i=0;i<24;i++){var a=Math.PI*i/12-Math.PI/2,r=i%2===0?100:88;pts.push((110+r*Math.cos(a)).toFixed(1)+","+(110+r*Math.sin(a)).toFixed(1))}
+  var ROS=pts.join(" ");var gid=0;
+  function badge(size,opt){opt=opt||{};gid++;var muted=opt.muted,c1=muted?"#6F7A91":"#636DFF",c2=muted?"#6F7A91":"#16205A",bolt=opt.uv?"#8B5CF6":"#FFFFFF";
+    return '<svg class="badge'+(opt.pop?" pop":"")+(opt.uv?" uv":"")+'" width="'+size+'" height="'+size+'" viewBox="0 0 220 220" '+(opt.label?'role="img" aria-label="'+opt.label+'"':'aria-hidden="true"')+'><defs><linearGradient id="g'+gid+'" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="'+c1+'"/><stop offset="1" stop-color="'+c2+'"/></linearGradient></defs><polygon points="'+ROS+'" fill="url(#g'+gid+')" opacity="'+(muted?.35:1)+'"/><circle cx="110" cy="110" r="70" fill="none" stroke="#B9E0FF" stroke-opacity=".35" stroke-width="2"/>'+(opt.uv?'<circle cx="110" cy="110" r="58" fill="#F4F7FB"/>':'')+'<path d="M122 52L78 120h30l-12 48 46-70h-30l10-46z" fill="'+bolt+'" stroke="'+bolt+'" stroke-width="6" stroke-linejoin="round"/>'+(opt.num?'<text x="110" y="196" text-anchor="middle" font-weight="800" font-size="22" fill="#fff" font-family="Plus Jakarta Sans,sans-serif">'+opt.num+'</text>':'')+'</svg>'}
+  var BOLT='<svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true" style="vertical-align:-2px"><path d="M14 2L5 14h6l-2 8 9-12h-6l2-8z" fill="currentColor"/></svg>';
+  // Objeto real (provisional): móvil boca abajo sobre la mesa, con el borde de la pantalla encendido
+  var PHONE='<svg width="74" height="58" viewBox="0 0 74 58" aria-hidden="true"><ellipse cx="37" cy="50" rx="34" ry="5" fill="#000" opacity=".5"/><rect x="8" y="20" width="58" height="26" rx="6" fill="#0C1323" stroke="#B9E0FF" stroke-opacity=".25"/><rect x="14" y="25" width="10" height="10" rx="3" fill="#121B30" stroke="#B9E0FF" stroke-opacity=".2"/><circle cx="19" cy="30" r="2.4" fill="#02050F"/><path d="M10 46h54" stroke="#6AA8FF" stroke-width="1.5" opacity=".8"/><path d="M14 47.5h46" stroke="#6AA8FF" stroke-width="5" opacity=".12"/></svg>';
+  var NOTEBOOK='<svg width="120" height="92" viewBox="0 0 120 92" aria-hidden="true"><defs><radialGradient id="beam" cx="50%" cy="0%" r="90%"><stop offset="0" stop-color="#B9E0FF" stop-opacity=".35"/><stop offset="1" stop-color="#B9E0FF" stop-opacity="0"/></radialGradient></defs><path d="M40 0h40l30 92H10z" fill="url(#beam)"/><ellipse cx="60" cy="84" rx="44" ry="5" fill="#000" opacity=".55"/><rect x="26" y="34" width="68" height="48" rx="4" fill="#0C1323" stroke="#B9E0FF" stroke-opacity=".3"/><path d="M30 34v48" stroke="#636DFF" stroke-width="3"/><path d="M40 48h44M40 57h36M40 66h40" stroke="#A3AEC4" stroke-opacity=".35" stroke-width="1.5"/><rect x="76" y="30" width="8" height="54" rx="2" fill="#121B30" transform="rotate(14 80 57)" stroke="#B9E0FF" stroke-opacity=".25"/></svg>';
+
+  function remaining(target){var s=Math.max(0,Math.floor((target-Date.now())/1000));return[Math.floor(s/86400),Math.floor(s/3600)%24,Math.floor(s/60)%60,s%60]}
+  function timerHTML(){var v=remaining(d().closeT+1000),L=["Días","Horas","Minutos","Segundos"];return v.map(function(x,i){return'<div><b>'+String(x).padStart(2,"0")+'</b><span>'+L[i]+'</span></div>'}).join("")}
+
+  function track(st){
+    var a=st==="none"?["now","",""]:st==="requested"?["done","now",""]:st==="rejected"?["done","bad",""]:["done","done","done"];
+    var t2=st==="rejected"?"Sin encontrar":"En revisión";
+    return '<ol class="track" data-prop aria-label="Estado de tu insignia"><li class="'+a[0]+'">Compartida</li><li class="'+a[1]+'">'+t2+'</li><li class="'+a[2]+'">Verificada '+BOLT+'</li></ol>'}
+
+  function clubBlock(){
+    var st=S.state;
+    if(st==="loading") return '<section class="club dim" aria-busy="true" aria-label="Cargando tu insignia" data-prop><div class="club-top"><div class="skel" style="width:64px;height:64px;border-radius:50%"></div><div style="flex:1;display:grid;gap:8px"><div class="skel" style="height:22px;width:80%"></div><div class="skel" style="height:14px;width:60%"></div></div></div><div class="skel" style="height:46px;margin-top:18px"></div></section>';
+    if(st==="error") return '<section class="club dim" data-prop><p class="kicker">Club Fundador</p><div class="obj">'+PHONE+'<h2>No hemos podido cargar tu insignia</h2></div><div class="msg err" role="alert">Revisa tu conexión y vuelve a intentarlo. Tu solicitud, si la enviaste, sigue guardada.</div><button class="btn btn-p" data-act="retry">Reintentar</button><p class="obj-cap">Ilustración provisional: foto propia de un móvil boca abajo sobre la mesa del banquillo.</p></section>';
+    var ver=st==="verified"||st==="verified_n",num=st==="verified_n"?"Nº 011":null;
+    var title=ver?'Eres del <em>Club Fundador</em>':'Consigue tu insignia del <em>Club Fundador</em>';
+    var lead=ver?(num?"Fundador "+num+". Gracias por estar desde el principio.":"Insignia verificada. Tu número llegará muy pronto."):st==="requested"?"Estamos revisando tu historia.":st==="rejected"?"No hemos encontrado tu historia con la mención. Puedes volver a intentarlo.":"Comparte una historia, menciónanos y entra en el Club Fundador.";
+    var slot='<div class="slot" data-prop><span class="lab">Fundador</span><span class="num'+(num?"":" blank")+'">'+(num||"")+'</span><small>'+(num?"Tu número. Ninguno se repite.":ver?"Aquí aparecerá tu número cuando lo asignemos.":"Cada insignia lleva su número. Ninguno se repite.")+'</small></div>';
+    // Ultravioleta: el acceso al Club (botón) si no está verificada; el rayo de la insignia si ya lo está. Nunca los dos.
+    var btn=ver?'<button class="btn btn-o" data-act="letter">Ver mi carta de bienvenida</button>':st==="requested"?'<button class="btn btn-o" data-act="sheet">Ver mi solicitud</button>':'<button class="btn btn-uv" data-act="sheet">'+BOLT+' Conseguir mi insignia</button>';
+    return '<section class="club" aria-labelledby="ft"><div class="club-top">'+badge(64,{muted:!ver,pop:ver,num:num,uv:ver})+'<div style="min-width:0"><p class="kicker">Club Fundador</p><h2 id="ft">'+title+'</h2></div></div><p class="lead">'+lead+'</p>'+slot+track(st==="verified_n"?"verified":st)+btn+(ver?'':'<p class="fine">Pulsar «Compartir» no verifica la insignia: siempre comprobamos la historia.</p>')+'</section>'}
+
+  function sheetHTML(){
+    var st=S.state,req=st==="requested";
+    var status=req?'<div class="note" role="status">Solicitud enviada. Te avisaremos cuando esté verificada.</div>':st==="rejected"?'<div class="note" role="status" style="color:var(--err)">Revisa que la historia esté publicada y nos mencione, y vuelve a enviarla.</div>':'<div class="note" role="status">Pulsar «Compartir» no verifica la insignia: siempre comprobamos la historia.</div>';
+    return '<div class="scrim" data-act="close"><div class="sheet" role="dialog" aria-modal="true" aria-labelledby="sh"><button class="x" data-act="close" aria-label="Cerrar">×</button><h3 id="sh">Tu insignia del Club Fundador</h3><p class="sub">Una insignia verificada y numerada para quienes están en ProTeam desde el principio.</p><ol class="steps"><li><b>1</b><span>Descarga tu imagen o compártela directamente.</span></li><li><b>2</b><span>Súbela a tu historia de Instagram y menciona a @'+IG+'. Sin la mención no cuenta.</span></li><li><b>3</b><span>Escribe tu usuario de Instagram y envíalo. Revisamos tu historia a mano y verificamos tu insignia.</span></li></ol><div class="story" role="img" aria-label="Imagen para compartir: «¡Ya estoy dentro!» con la insignia del Club Fundador">'+badge(64,{})+'<p>¡Ya estoy dentro!</p><small>Club Fundador · @'+IG+'</small></div><div class="row"><button class="btn btn-p" data-act="share">Compartir</button><button class="btn btn-o" data-act="download">Descargar imagen</button></div><form class="field" id="f"><label for="founder-handle">Tu usuario de Instagram</label><div class="inp'+(S.fieldErr?" bad":"")+'"><span>@</span><input id="founder-handle" autocomplete="off" autocapitalize="none" spellcheck="false" maxlength="60" placeholder="tuusuario" value="'+esc(S.handle)+'"></div>'+(S.fieldErr?'<div class="help" role="alert">'+S.fieldErr+'</div>':'')+(S.sendErr?'<div class="msg err" role="alert">No se ha podido enviar. Inténtalo de nuevo.</div>':'')+'<button class="btn btn-w" type="submit" id="sub"'+(S.handle.trim()?"":" disabled")+'>'+(req?"Actualizar solicitud":"Ya la he compartido")+'</button><p class="fine" style="text-align:center">Prueba a escribir «error» para ver el fallo de envío.</p></form>'+status+'</div></div>'}
+
+  function letterHTML(){
+    var num=S.state==="verified_n"?"Nº 011":null;
+    return '<div class="scrim" data-act="close"><div class="sheet" role="dialog" aria-modal="true" aria-labelledby="lt"><button class="x" data-act="close" aria-label="Cerrar">×</button><div style="text-align:center">'+badge(88,{pop:true,num:num,uv:true,label:"Insignia del Club Fundador"})+(num?'<p class="kicker" style="margin-top:6px">Fundador '+num+'</p>':'')+'</div><h3 id="lt" style="text-align:center;margin-top:8px;padding-right:0">¡Bienvenido al Club Fundador, Marc!</h3><div class="letter" style="margin-top:14px"><p>Soy Biel, creador de ProTeam. Gracias por estar aquí desde el principio.</p><p>ProTeam nace en el banquillo y queremos que crezca contigo: con lo que uses, con lo que eches de menos y con lo que nos cuentes.</p><p>Tu confianza es lo que da sentido a todo esto. Gracias por formar parte de este camino.</p><p>Nos vemos dentro de ProTeam.</p><p class="sign">Biel</p><p class="fine" style="margin-top:0">Biel · creador de ProTeam</p></div><button class="btn btn-p" data-act="close" style="width:100%;margin-top:10px">Entrar</button><p class="fine">Texto actual de founder-welcome.tsx (dentro de la app). Su diseño final va en el recorrido inicial.</p></div></div>'}
+
+  function envSVG(e,open,next){gid++;
+    var edge=open?"#B9E0FF":next?"#B9E0FF":"#B9E0FF",eo=open?.55:next?.5:.18;
+    var beam=open?'<defs><radialGradient id="eb'+gid+'" cx="50%" cy="0%" r="80%"><stop offset="0" stop-color="#B9E0FF" stop-opacity=".35"/><stop offset="1" stop-color="#B9E0FF" stop-opacity="0"/></radialGradient></defs><rect x="0" y="0" width="120" height="96" fill="url(#eb'+gid+')"/>':'';
+    var body='<rect x="10" y="34" width="100" height="56" rx="6" fill="#0C1323" stroke="'+edge+'" stroke-opacity="'+eo+'"/>';
+    if(open) return '<svg viewBox="0 0 120 96" aria-hidden="true">'+beam+'<path class="flap" d="M10 40 L60 6 L110 40 Z" fill="#121B30" stroke="#B9E0FF" stroke-opacity=".4"/><rect x="22" y="18" width="76" height="50" rx="4" fill="#F4F7FB"/><path d="M32 32h44M32 41h36M32 50h40" stroke="#02050F" stroke-opacity=".25" stroke-width="3" stroke-linecap="round"/>'+body+'<path d="M10 40 L60 72 L110 40" fill="none" stroke="#B9E0FF" stroke-opacity=".35"/></svg>';
+    return '<svg viewBox="0 0 120 96" aria-hidden="true"><ellipse cx="60" cy="92" rx="46" ry="3" fill="#000" opacity=".5"/>'+body+'<path d="M10 36 L60 70 L110 36" fill="#121B30" stroke="'+edge+'" stroke-opacity="'+eo+'"/><circle cx="60" cy="66" r="9" fill="#060C19" stroke="'+edge+'" stroke-opacity="'+eo+'"/><text x="60" y="70.5" text-anchor="middle" font-size="12" font-weight="800" fill="'+(next?"#B9E0FF":"#6F7A91")+'" font-family="Plus Jakarta Sans,sans-serif">'+e.n+'</text></svg>'}
+  function sobresSec(){
+    if(S.dates==="old") return '<section class="envnote" data-prop><p class="kicker">Lo que se abre el día 0</p>Con las fechas del código (apertura el sábado 28/11) no queda ninguna semana para abrir sobres: la propuesta solo tiene sentido con la apertura el viernes 11/12. Con el 28/11 la espera se queda como hoy.</section>';
+    var st=S.state,head='<p class="kicker">Lo que se abre el día 0</p><h2 id="et">Lo que hay dentro, sobre a sobre.</h2><p class="lead">Cada semana se abre uno. El último, el día que entras.</p>';
+    if(st==="loading") return '<section class="env-sec" aria-busy="true" aria-label="Cargando los sobres" data-prop>'+head+'<div class="envs">'+[1,2,3].map(function(){return'<div class="skel" style="height:108px;border-radius:12px"></div>'}).join("")+'</div></section>';
+    if(st==="error") return '<section class="env-sec" data-prop aria-labelledby="et">'+head+'<div class="obj" style="margin-top:16px">'+PHONE+'<p style="margin:0;font-weight:700">No hemos podido abrir el sobre</p></div><div class="msg err" role="alert">Revisa tu conexión y vuelve a intentarlo. Lo que había dentro sigue ahí.</div><button class="btn btn-o" data-act="retry-env" style="margin-top:14px;width:100%">Reintentar</button><p class="obj-cap">Ilustración provisional: foto propia de un móvil boca abajo sobre la mesa del banquillo.</p></section>';
+    var opened=st==="s1"?1:st==="s2"?2:0;
+    var row=ENV.map(function(e,i){var open=i<opened,next=i===opened,anim=open&&S.envAnim===e.n;
+      var lab=open?'<b>'+e.t+'</b><small>Abierto · tócalo</small>':'<b>Sobre '+e.n+'</b><small>'+(e.door?"Se abre el "+e.short:"Se abre el "+e.short)+'</small>';
+      return '<button class="env'+(open?" open":"")+(next?" next":"")+(anim?" env-open-anim":"")+'" data-act="env" data-n="'+e.n+'" aria-label="'+(open?"Sobre "+e.n+": "+e.t+". Abierto.":"Sobre "+e.n+", cerrado. Se abre el "+e.date+".")+'">'+envSVG(e,open,next)+lab+'</button>'}).join("");
+    var nx=ENV[opened],nextTxt=nx.door?'El último se abre el <strong>viernes 11 de diciembre</strong>, cuando entres.':(opened===0?'El primer sobre se abre el <strong>'+nx.date+'</strong>.':'Próximo sobre: <strong>'+nx.date+'</strong>.');
+    return '<section class="env-sec" data-prop aria-labelledby="et">'+head+'<div class="envs">'+row+'</div><p class="env-next"><span>'+nextTxt+'</span>'+(nx.door?'':'<small>Te avisamos por correo.</small>')+'</p></section>'}
+  function envSheet(n){
+    if(n===1){var st=S.ins,ver=st==="verified";
+      var body=ver?'<div style="text-align:center;margin-top:16px">'+badge(88,{uv:true,label:"Insignia del Club Fundador verificada"})+'</div><p class="sub" style="text-align:center">Ya es tuya. Tu número llegará muy pronto.</p><button class="btn btn-o" data-act="close" style="width:100%;margin-top:16px">Cerrar</button>'
+        :st==="requested"?'<div style="text-align:center;margin-top:16px">'+badge(88,{muted:true})+'</div><p class="sub" style="text-align:center">Estamos revisando tu historia.</p><button class="btn btn-o" data-act="close" style="width:100%;margin-top:16px">Cerrar</button>'
+        :'<div style="text-align:center;margin-top:16px">'+badge(88,{})+'</div><p class="sub">No hace falta esperar al día 0: se consigue ya, desde esta pantalla, compartiendo una historia.</p><button class="btn btn-uv" data-act="env-badge" style="width:100%;margin-top:16px">'+BOLT+' Conseguir mi insignia</button>';
+      return '<div class="scrim" data-act="close"><div class="sheet" role="dialog" aria-modal="true" aria-labelledby="es"><button class="x" data-act="close" aria-label="Cerrar">×</button><p class="kicker">Sobre 1</p><h3 id="es">Tu insignia</h3><p class="sub">La insignia del Club Fundador: verificada y con tu número. Ninguno se repite.</p>'+body+'</div></div>'}
+    var T=[["Semana de carga","Volumen alto"],["Semana de descarga","Reducir carga y recuperar"],["Semana competitiva","Preparar el partido"],["Semana de recuperación","Descanso activo"]];
+    return '<div class="scrim" data-act="close"><div class="sheet" role="dialog" aria-modal="true" aria-labelledby="es"><button class="x" data-act="close" aria-label="Cerrar">×</button><p class="kicker">Sobre 2</p><h3 id="es">Tu primera semana</h3><p class="sub">Planifica una semana. Solo una. El '+d().open.replace(" de diciembre","")+' eliges cuándo empieza y qué tipo de semana es. Después la llenas de sesiones desde la app.</p><ul class="tpl">'+T.map(function(t,i){return'<li'+(i===0?' class="on"':'')+'><i></i><b>'+t[0]+'</b><span>'+t[1]+'</span></li>'}).join("")+'</ul><p class="fine">Las 4 plantillas de semana que ya tiene la app (Planificación).</p><button class="btn btn-o" data-act="close" style="width:100%;margin-top:14px">Cerrar</button></div></div>'}
+  function sobres(){
+    if(S.state==="cur"){var k=S.state;S.state=S.ins;var h=espera();S.state=k;return h}
+    var k2=S.state;S.state=S.ins;var club=clubBlock();S.state=k2;
+    return espera(club+sobresSec())}
+  function espera(mid){
+    return '<div class="app"><section class="card welcome" role="status"><h2>Bienvenido al vestuario, Marc.</h2><p>Gracias por apuntarte. Somos entrenadores de base y hemos hecho ProTeam para quitarte horas de papeleo. '+dt(d().openShort)+' te abrimos la puerta.</p><p class="sig">— El equipo de ProTeam, entrenadores como tú</p></section>'+(mid||clubBlock())+'<section class="card wait"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#6AA8FF" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 22h14M5 2h14M17 22v-4.2a2 2 0 0 0-.6-1.4L12 12l-4.4 4.4a2 2 0 0 0-.6 1.4V22M7 2v4.2a2 2 0 0 0 .6 1.4L12 12l4.4-4.4A2 2 0 0 0 17 6.2V2"/></svg><h1>Ya estás en la lista de espera</h1><p>Tu prueba gratuita de 3 meses empieza el '+dt(d().open)+' a las 00:00. Ese día añadirás tu tarjeta para entrar; no se cobrará nada hasta que acaben los 3 meses y podrás cancelar antes.</p><div class="timer" role="timer" id="tm">'+timerHTML()+'</div></section></div>'}
+
+  function portada(){
+    var st=S.state;
+    var head='<div class="w-strip"><b>ProTeam</b><span>… portada actual: cabecera de campaña, cuenta atrás, funciones, «Así funciona la oferta» …</span></div>';
+    var foot='<div class="ghost">… sigue la portada actual: «Quedan», cuenta atrás y botones de registro …</div>';
+    if(st==="off") return '<div class="web">'+head+'<div class="off">'+NOTEBOOK+'<p class="kicker" style="margin-top:14px">Fuera de campaña</p><p>Con la campaña cerrada el bloque del Club no se muestra, igual que hoy (<code>campaign &amp;&amp; &lt;FounderLandingSection /&gt;</code>). La portada nueva fuera de campaña es otra entrega.</p><p class="obj-cap">Ilustración provisional: foto propia de una libreta de banquillo bajo un foco.</p></div>'+foot+'</div>';
+    var benefits=[["3 meses gratis","Para quien entra por la lista de espera. Empiezan el "+dt(d().open)+"."],["Soporte de tú a tú","Una persona del equipo te acompaña durante la prueba."],["Tu voz en ProTeam","Votaciones y consultas para fundadores sobre lo que construimos."],["Carta de bienvenida","Personal, con tu nombre y tu número de fundador."]];
+    var list='<ul class="ben">'+benefits.map(function(b){return'<li><span class="n">'+BOLT+'</span><h3>'+b[0]+'</h3><p>'+b[1]+'</p></li>'}).join("")+'<li class="soon"><span class="n" style="color:var(--text-3)">…</span><h3>Invitaciones para tus amigos</h3><p>Muy pronto te contamos cómo funcionan.</p></li></ul>';
+    var cta=st==="closed"?'<div class="closed" data-prop>La lista de espera se cerró el '+dt(d().close)+'. Si ya estás dentro, entra con tu cuenta para conseguir tu insignia.</div>':'<div class="fcta" data-prop><button class="btn btn-w" data-act="toast" data-msg="Abre el registro actual (AuthButtons)">Apuntarme a la lista de espera</button><small>3 meses gratis si te apuntas antes del '+dt(d().close)+' a las 23:59.</small></div>';
+    return '<div class="web">'+head+'<section class="fsec" aria-labelledby="flt"><div class="fgrid"><div>'+badge(S.view==="desktop"?120:96,{uv:true})+'<h2 class="fh" id="flt">Club <em>Fundador</em></h2><p class="fp">Los primeros entrenadores de ProTeam no son unos usuarios más: tienen su insignia numerada, un trato de tú a tú y voz en lo que construimos.</p><p class="fnote">Tu insignia se consigue desde la lista de espera, compartiendo una historia.</p></div><div style="min-width:0">'+list+'<div class="myst" data-prop>'+badge(48,{})+'<p><strong>No contamos cuántos somos.</strong>Cada insignia lleva su número y ninguno se repite.</p></div>'+cta+'</div></div></section>'+foot+'</div>'}
+
+
+  // Cabecera de la portada en el móvil: una frase, la fecha, un botón (P1 de Samuel). Sin ultravioleta: aquí lo activo es el botón, en blanco (luz).
+  function cabecera(){
+    var st=S.state,first=st==="first",mob=S.view==="mobile";
+    var fold=mob?'<div class="fold" style="top:'+S.fold+'px"><span>Fin de la primera pantalla · '+(S.fold==="553"?"375×667, Safari":"390×844, Safari")+' (aprox.)</span></div>':'';
+    if(S.ver==="cur"){
+      return '<div class="hero"><div class="cur"><p class="sport-word">ProTeam</p><p class="bn">Hecho en el banquillo, no en una oficina.</p><h1>Blackout Friday</h1><p class="d">Apúntate a la lista de espera antes del '+dt(d().close)+' y consigue 3 meses gratis.</p><div class="timer" role="timer" id="tm">'+timerHTML()+'</div><div class="two"><button class="btn btn-p" data-act="toast" data-msg="Abre el registro (AuthOverlay)">Apúntate a la lista de espera →</button><button class="btn btn-o" data-act="toast" data-msg="Abre «Iniciar sesión» (AuthOverlay)">Iniciar sesión</button></div></div><div class="ghost">… «Prepara. Compite. Mejora.», funciones, «Así funciona la oferta», Club Fundador, «Quedan» …</div>'+fold+'</div>';
+    }
+    var label=S.btn==="b"?"Entrar en la lista":"Apúntate a la lista de espera";
+    var offer=S.btn==="c"?'<small data-prop>3 meses gratis si te apuntas antes del '+dt(d().close)+' a las 23:59.</small>':'';
+    var title='<h1 class="h-title" data-prop>La lista se cierra el <span class="lit">'+d().closeDay+' '+dt(d().close)+'</span>.</h1><p class="h-myst" data-prop>Lo que hay dentro se abre al día siguiente.</p>';
+    var err=S.heroErr||st==="error"?'<div class="msg err" role="alert" data-prop>'+PHONE.replace('width="74" height="58"','width="46" height="36"')+'<span>No hemos podido abrir el registro. Revisa tu conexión y vuelve a intentarlo.</span></div>':'';
+    var cta='<div class="h-cta"><button class="btn btn-w" data-act="register">'+label+' →</button>'+offer+err+'</div>';
+    var timer=first?'<div class="timer" aria-hidden="true" style="visibility:hidden">'+timerHTML()+'</div>':'<div class="timer" role="timer" id="tm">'+timerHTML()+'</div>';
+    return '<div class="hero"><div class="h-strip"><b>ProTeam</b><a href="#" data-act="toast" data-msg="Abre «Iniciar sesión» (AuthOverlay)">Iniciar sesión</a></div><section class="h-main" aria-labelledby="ht"><p class="h-note">Hecho en el banquillo, no en una oficina.</p>'+title.replace('class="h-title"','class="h-title" id="ht"')+cta+'</section><div class="h-dim" data-prop><p>Quedan</p>'+timer+'</div><div class="ghost">… baja el resto: Club Fundador (con el rayo en ultravioleta), funciones, «Así funciona la oferta» …</div>'+fold+'</div>';
+  }
+
+  function render(){
+    var f=frame;f.className="frame "+S.view+(document.getElementById("chkProp").checked?" show-prop":"");
+    var url=S.screen==="espera"||S.screen==="sobres"?"app · lista de espera":S.screen==="cabecera"?"proteam · portada, primera pantalla":"proteam · portada (campaña)";
+    var html=(S.view==="desktop"?'<div class="urlbar"><span class="dots"><i></i><i></i><i></i></span><b>'+url+'</b></div>':'');
+    html+=S.screen==="sobres"?sobres():S.screen==="espera"?espera():S.screen==="cabecera"?cabecera():portada();
+    if(S.sheet) html+=sheetHTML();
+    if(S.letter) html+=letterHTML();
+    if(S.env) html+=envSheet(S.env);
+    if(S.toast) html+='<div class="toast" role="status">'+S.toast+'</div>';
+    f.innerHTML=html;
+    var inp=document.getElementById("founder-handle");
+    if(inp){inp.addEventListener("input",function(){S.handle=inp.value;S.fieldErr="";S.sendErr=false;var b=document.getElementById("sub");if(b)b.disabled=!inp.value.trim();var bx=inp.parentNode;bx.classList.remove("bad");var h=bx.nextElementSibling;if(h&&h.classList.contains("help"))h.remove()});
+      document.getElementById("f").addEventListener("submit",function(e){e.preventDefault();submit()});}
+  }
+  function fillStates(){var sel=document.getElementById("selState");sel.innerHTML=STATES[S.screen].map(function(s){return'<option value="'+s[0]+'"'+(s[0]===S.state?" selected":"")+'>'+s[1]+'</option>'}).join("")}
+  function norm(h){h=h.trim().replace(/^@/,"").replace(/^https?:\/\/(www\.)?instagram\.com\//i,"").replace(/\/.*$/,"").toLowerCase();return/^[a-z0-9._]{1,30}$/.test(h)?h:null}
+  var tt;function toast(m){S.toast=m;render();clearTimeout(tt);tt=setTimeout(function(){S.toast="";render()},2600)}
+  function submit(){var c=norm(S.handle);if(!c){S.fieldErr="Escribe tu usuario de Instagram, sin espacios.";render();return}
+    if(c==="error"){S.sendErr=true;render();return}
+    S.handle=c;if(S.screen==="sobres"){S.ins="requested"}else{S.state="requested"}S.sheet=false;fillStates();toast("¡Recibido! Revisamos tu historia y te avisamos.")}
+  frame.addEventListener("click",function(e){var t=e.target.closest("[data-act]");if(!t)return;var a=t.dataset.act;
+    if(a==="sheet"){S.sheet=true;S.fieldErr="";S.sendErr=false;render()}
+    else if(a==="letter"){S.letter=true;render()}
+    else if(a==="close"){if(t.classList.contains("scrim")&&e.target!==t)return;S.sheet=false;S.letter=false;S.env=0;render()}
+    else if(a==="env"){var n=+t.dataset.n,op=S.state==="s1"?1:S.state==="s2"?2:0;if(n<=op){S.env=n;render()}else{var e2=ENV[n-1];toast(e2.door?"Este sobre se abre el viernes 11, cuando entres.":"Este sobre se abre el "+e2.date+".")}}
+    else if(a==="env-badge"){S.env=0;S.sheet=true;S.fieldErr="";S.sendErr=false;render()}
+    else if(a==="retry-env"){S.state="loading";fillStates();render();setTimeout(function(){S.state="s1";fillStates();render()},900)}
+    else if(a==="retry"){S.state="loading";fillStates();render();setTimeout(function(){S.state="none";fillStates();render()},900)}
+    else if(a==="share")toast("Se abre el menú de compartir del móvil");
+    else if(a==="download")toast("Se descarga proteam-club-fundador.jpg");
+    else if(a==="toast"){e.preventDefault();toast(t.dataset.msg)}
+    else if(a==="register"){if(S.state==="error"){S.heroErr=true;render();return}S.heroErr=false;toast("Abre el registro actual (AuthOverlay, «Crear cuenta»)")}});
+  document.addEventListener("keydown",function(e){if(e.key==="Escape"&&(S.sheet||S.letter||S.env)){S.sheet=S.letter=false;S.env=0;render()}});
+  document.getElementById("selState").addEventListener("change",function(e){var prev=S.state;S.state=e.target.value;S.heroErr=false;S.sheet=S.letter=false;S.env=0;S.envAnim=(S.screen==="sobres"&&(S.state==="s1"||S.state==="s2")&&prev!==S.state)?(S.state==="s1"?1:2):0;render()});
+  function seg(id,key){var el=document.getElementById(id);el.addEventListener("click",function(e){var b=e.target.closest("button");if(!b)return;S[key]=b.dataset.v;[].forEach.call(el.children,function(x){x.setAttribute("aria-pressed",x===b)});
+    if(key==="screen"){S.state=S.screen==="espera"?"none":S.screen==="cabecera"?"normal":S.screen==="sobres"?"s1":"campaign";S.sheet=S.letter=false;S.env=0;S.envAnim=0;S.heroErr=false;fillStates();heroCtl()}render()})}
+  function heroCtl(){var on=S.screen==="cabecera";["ctlHero","ctlBtn","ctlFold"].forEach(function(id){document.getElementById(id).hidden=!on});document.getElementById("ctlIns").hidden=S.screen!=="sobres"}
+  seg("segScreen","screen");seg("segView","view");seg("segDates","dates");seg("segVer","ver");seg("segFold","fold");seg("segIns","ins");
+  document.getElementById("selBtn").addEventListener("change",function(e){S.btn=e.target.value;render()});
+  document.getElementById("chkProp").addEventListener("change",render);
+  if(window.matchMedia&&matchMedia("(min-width:900px)").matches){S.view="desktop";[].forEach.call(document.getElementById("segView").children,function(x){x.setAttribute("aria-pressed",x.dataset.v==="desktop")})}
+  fillStates();render();
+  setInterval(function(){var tm=document.getElementById("tm");if(tm)tm.innerHTML=timerHTML()},1000);
+})();
+</script>

@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8">
+<!-- T03-2-r1 «Tres sábados, el mismo cuarto» (baloncesto). Plantilla a3.html: planos fijos, la cámara solo se mueve al cambiar de zona. Todo dibujado (sin fotos ni caras). Marta B, 23/11. -->
+<style>
+@font-face{font-family:M;font-weight:800;src:url(/tools/fonts/manrope-latin-800-normal.woff2)}
+@font-face{font-family:M;font-weight:700;src:url(/tools/fonts/manrope-latin-700-normal.woff2)}
+@font-face{font-family:M;font-weight:500;src:url(/tools/fonts/manrope-latin-500-normal.woff2)}
+@font-face{font-family:S;font-style:italic;font-weight:400;src:url(/tools/fonts/instrument-serif-latin-400-italic.woff2)}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#fbfaf7}
+#st{position:absolute;inset:0;overflow:hidden;background:#fbfaf7}
+#world{position:absolute;left:0;top:0;transform-origin:0 0;will-change:transform}
+.o{position:absolute;left:0;top:0;transform-origin:50% 50%}
+.paper{background:#fff;box-shadow:0 18px 50px rgba(20,18,12,.10)}
+.board{background:#fdfdfc;border:12px solid #d9dcdf;border-radius:12px;box-shadow:0 18px 50px rgba(20,18,12,.10)}
+.num{position:absolute;font-family:M;font-weight:800;letter-spacing:-.05em;color:#121212;white-space:nowrap;line-height:1}
+.hand{position:absolute;font-family:S;font-style:italic;white-space:nowrap;line-height:1}
+.lab{position:absolute;font-family:M;font-weight:800;letter-spacing:.14em;color:#121212;white-space:nowrap}
+#cap{position:absolute;left:90px;right:90px;top:1330px;text-align:center;font-family:M;font-weight:800;font-size:58px;line-height:1.12;letter-spacing:-.03em;color:#121212;padding:18px 26px;border-radius:22px;background:rgba(251,250,247,.94)}
+#cap em{font-family:S;font-style:italic;font-weight:400;font-size:1.14em;letter-spacing:0}
+#hook{position:absolute;left:0;right:0;top:110px;text-align:center;font-family:M;font-weight:800;font-size:92px;letter-spacing:-.05em;color:#121212}
+#hook em{font-family:S;font-style:italic;font-weight:400;letter-spacing:0;color:#2f6bff}
+#gr{position:absolute;inset:0;pointer-events:none;mix-blend-mode:multiply;opacity:0;background:#d9e3f0}
+#ink{position:absolute;inset:0;background:#0e0e10;opacity:0;pointer-events:none}
+#cork{background:#e6d6bb;border-radius:18px;box-shadow:inset 0 0 0 10px #d6c19f}
+.sc{background:#fff;box-shadow:0 14px 34px rgba(20,18,12,.16);border-radius:6px}
+.sc .h{position:absolute;left:0;right:0;top:22px;text-align:center;font-family:M;font-weight:800;font-size:30px;letter-spacing:.12em;color:#121212}
+.sc .e{position:absolute;left:0;right:0;top:62px;text-align:center;font-family:M;font-weight:800;font-size:16px;letter-spacing:.2em;color:#9aa1a8}
+.sc .row{position:absolute;left:16px;right:16px;height:72px;border-radius:10px}
+.sc .row b{position:absolute;left:14px;top:20px;font-family:M;font-weight:800;font-size:26px;letter-spacing:.06em;color:#77736b}
+.sc .row i{position:absolute;right:14px;top:14px;font-family:M;font-style:normal;font-weight:800;font-size:40px;letter-spacing:-.03em;color:#121212}
+.sc .row.f{border-top:3px solid #121212;border-radius:0}
+.pin{position:absolute;width:26px;height:26px;border-radius:50%;background:#2f6bff;box-shadow:0 3px 6px rgba(0,0,0,.25)}
+.stamp{font-family:M;font-weight:800;font-size:74px;letter-spacing:.08em;color:#d23a2a;border:8px solid #d23a2a;border-radius:14px;padding:6px 26px;white-space:nowrap;background:rgba(255,255,255,.55)}
+.chart{background:#fff;box-shadow:0 18px 50px rgba(20,18,12,.10)}
+.chart .h{position:absolute;left:30px;top:24px;font-family:M;font-weight:800;font-size:24px;letter-spacing:.14em;color:#77736b}
+.chart .e{position:absolute;right:30px;top:24px;font-family:M;font-weight:800;font-size:20px;letter-spacing:.14em;color:#9aa1a8}
+.lu{background:#fff;box-shadow:0 14px 34px rgba(20,18,12,.12)}
+.lu .h{position:absolute;left:0;right:0;top:20px;text-align:center;font-family:M;font-weight:800;font-size:26px;letter-spacing:.12em;color:#77736b}
+</style></head><body><div id="st">
+<div id="world">
+  <!-- 1 · el corcho con los tres marcadores (EJEMPLO) -->
+  <div class="o" id="cork" style="width:1120px;height:760px"></div>
+  <div class="o sc" id="M1" style="width:300px;height:560px"></div>
+  <div class="o sc" id="M2" style="width:300px;height:560px"></div>
+  <div class="o sc" id="M3" style="width:300px;height:560px"></div>
+  <svg class="o" id="CIR" width="300" height="140" viewBox="0 0 300 140" style="overflow:visible">
+    <path id="cc" d="M150 18 C250 14 292 50 286 76 C280 110 210 126 140 124 C60 122 8 104 12 70 C16 36 80 16 170 22" fill="none" stroke="#d23a2a" stroke-width="7" stroke-linecap="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/></svg>
+  <!-- 2 · media pista al descanso -->
+  <svg class="o" id="PI" width="900" height="1000" viewBox="0 0 900 1000" style="overflow:visible">
+    <rect x="0" y="0" width="900" height="1000" fill="#fff" style="filter:drop-shadow(0 18px 40px rgba(20,18,12,.10))"/>
+    <rect x="140" y="30" width="620" height="150" rx="14" fill="#fff" stroke="#121212" stroke-width="5"/>
+    <text x="450" y="78" font-family="M" font-weight="800" font-size="26" letter-spacing="5" fill="#77736b" text-anchor="middle">DESCANSO · EJEMPLO</text>
+    <text id="sc0" x="450" y="158" font-family="M" font-weight="800" font-size="76" letter-spacing="-3" fill="#121212" text-anchor="middle">26 – 26</text>
+    <g fill="none" stroke="#c9ccd1" stroke-width="5"><rect x="60" y="220" width="780" height="740"/><rect x="330" y="220" width="240" height="300"/><circle cx="450" cy="520" r="90"/>
+      <path d="M110 220 V330 A345 345 0 0 0 790 330 V220"/><path d="M60 960 H840"/></g>
+    <circle cx="450" cy="262" r="20" fill="none" stroke="#9aa1a8" stroke-width="5"/><path d="M400 238 H500" stroke="#9aa1a8" stroke-width="6"/>
+    <g id="tk"></g>
+  </svg>
+  <!-- 3 · la charla del descanso -->
+  <div class="o paper" id="CH" style="width:780px;height:820px">
+    <div class="lab" style="left:52px;top:50px;font-size:28px;color:#77736b">CHARLA DEL DESCANSO</div>
+    <div class="hand" id="c1" style="left:60px;top:170px;font-size:96px;color:#121212">Más intensidad</div>
+    <div class="hand" id="c2" style="left:60px;top:340px;font-size:96px;color:#121212">Corta: un minuto</div>
+    <div class="hand" id="c3" style="left:60px;top:510px;font-size:104px;color:#121212">¡¡A muerte!!</div>
+    <div id="k1" style="position:absolute;left:50px;top:228px;height:7px;background:#121212;border-radius:4px"></div>
+    <div id="k2" style="position:absolute;left:50px;top:398px;height:7px;background:#121212;border-radius:4px"></div>
+    <div id="k3" style="position:absolute;left:50px;top:570px;height:7px;background:#121212;border-radius:4px"></div>
+  </div>
+  <div class="o stamp" id="ST1">DESCARTADO</div>
+  <!-- 4 · tres quintetos distintos -->
+  <div class="o lu" id="L1" style="width:300px;height:420px"><div class="h">SÁBADO 1</div><svg width="300" height="420" viewBox="0 0 300 420" style="position:absolute;left:0;top:0"><g class="ct"></g></svg></div>
+  <div class="o lu" id="L2" style="width:300px;height:420px"><div class="h">SÁBADO 2</div><svg width="300" height="420" viewBox="0 0 300 420" style="position:absolute;left:0;top:0"><g class="ct"></g></svg></div>
+  <div class="o lu" id="L3" style="width:300px;height:420px"><div class="h">SÁBADO 3</div><svg width="300" height="420" viewBox="0 0 300 420" style="position:absolute;left:0;top:0"><g class="ct"></g></svg></div>
+  <svg class="o" id="TH" width="1000" height="300" viewBox="0 0 1000 300" style="overflow:visible">
+    <path id="th" d="M150 40 C230 210 330 220 420 120 C470 70 520 180 560 230" fill="none" stroke="#d23a2a" stroke-width="6" stroke-linecap="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/></svg>
+  <!-- 5 · la pizarra del banquillo -->
+  <div class="o board" id="PZ" style="width:880px;height:1000px">
+    <div class="lab" style="left:40px;top:34px;font-size:26px;color:#77736b">TIEMPO MUERTO · 3C</div>
+    <svg width="856" height="976" viewBox="0 0 856 976" style="position:absolute;left:0;top:0;overflow:visible">
+      <g fill="none" stroke="#c9ccd1" stroke-width="4"><rect x="60" y="90" width="736" height="440"/><rect x="308" y="90" width="240" height="190"/><path d="M110 90 V170 A320 320 0 0 0 746 170 V90"/></g>
+      <g fill="none" stroke="#2f6bff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round">
+        <path id="a1" d="M200 470 C220 360 260 300 330 250 M300 250 L332 248 L318 278" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/>
+        <path id="a2" d="M430 480 V300 M408 326 L430 296 L452 326" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/>
+        <path id="a3" d="M660 470 C640 360 600 300 530 250 M560 250 L528 248 L542 278" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/></g>
+    </svg>
+    <div class="hand" id="qp" style="left:60px;top:600px;font-size:70px;color:#77736b">Les falta…</div>
+    <div class="num" id="HB" style="left:60px;top:700px;font-size:170px;color:#d23a2a">HAMBRE</div>
+    <svg width="856" height="976" viewBox="0 0 856 976" style="position:absolute;left:0;top:0;overflow:visible">
+      <path id="u1" d="M64 885 C300 870 520 878 700 872" fill="none" stroke="#d23a2a" stroke-width="9" stroke-linecap="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/>
+      <path id="u2" d="M80 915 C310 903 500 910 680 905" fill="none" stroke="#d23a2a" stroke-width="7" stroke-linecap="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/></svg>
+  </div>
+  <div class="o stamp" id="ST2">DESCARTADO</div>
+  <!-- 6 · la semana entera -->
+  <div class="o paper" id="CA" style="width:900px;height:980px">
+    <svg width="900" height="980" viewBox="0 0 900 980" style="position:absolute;left:0;top:0;overflow:visible">
+      <text x="50" y="92" font-family="M" font-weight="800" font-size="54" letter-spacing="-2" fill="#121212">La semana</text>
+      <text x="850" y="88" font-family="M" font-weight="800" font-size="22" letter-spacing="4" fill="#9aa1a8" text-anchor="end">EJEMPLO</text>
+      <g id="cg"></g><g id="thb" fill="none" stroke="#2f6bff" stroke-width="6" stroke-linecap="round"></g><g id="tg"></g></svg>
+    <div class="hand" id="jt" style="left:0;right:0;top:470px;text-align:center;font-size:62px;color:#2f6bff">el más largo · el más duro</div>
+  </div>
+  <!-- 7 · solución: 1–10 × minutos -->
+  <div class="o paper" id="SC" style="width:860px;height:900px">
+    <div class="lab" style="left:56px;top:52px;font-size:26px;color:#77736b">AL ACABAR · 1–10</div><div class="lab" style="right:56px;top:52px;font-size:22px;color:#9aa1a8">EJEMPLO</div>
+    <div class="num" id="big" style="left:0;right:0;top:150px;text-align:center;font-size:200px">1–10</div>
+    <svg width="860" height="900" viewBox="0 0 860 900" style="position:absolute;left:0;top:0;overflow:visible">
+      <g id="dots" font-family="M" font-weight="800" font-size="40" text-anchor="middle"></g>
+      <path id="r8" d="M574 562 L648 468" fill="none" stroke="#2f6bff" stroke-width="10" stroke-linecap="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/>
+    </svg>
+    <div class="hand" id="xm" style="left:0;right:0;top:640px;text-align:center;font-size:130px;color:#2f6bff">8 × 90</div>
+  </div>
+  <svg class="o" id="PC" width="40" height="300" viewBox="0 0 40 300" style="overflow:visible">
+    <g><path d="M20 300 L6 252 L34 252 Z" fill="#e9c99a" stroke="#121212" stroke-width="3" stroke-linejoin="round"/><path d="M20 300 L15 284 L25 284 Z" fill="#121212"/>
+      <rect x="6" y="40" width="28" height="212" fill="#f2c94c" stroke="#121212" stroke-width="3"/><rect x="6" y="10" width="28" height="32" rx="4" fill="#e8a0a0" stroke="#121212" stroke-width="3"/></g></svg>
+  <!-- 8 · gráfica de la semana -->
+  <div class="o chart" id="GR" style="width:860px;height:820px"><div class="h">CARGA · ESFUERZO × MINUTOS</div><div class="e">EJEMPLO</div>
+    <svg width="860" height="820" viewBox="0 0 860 820" style="position:absolute;left:0;top:0"><path d="M60 700 H800" stroke="#c9ccd1" stroke-width="4"/><g id="bars"></g><rect id="blk" width="80" height="120" rx="6" fill="#d23a2a"/></svg></div>
+  <!-- 9 · el sábado, compara -->
+  <div class="o sc" id="SB" style="width:560px;height:760px;border:4px solid #2f6bff">
+    <div class="h" style="top:40px;color:#2f6bff">PRÓXIMO SÁBADO</div><div class="e" style="top:84px">EJEMPLO</div>
+    <div class="row" style="top:150px;background:#eef3ff"><b style="font-size:34px;top:18px">3C</b><i style="color:#9aa1a8">— : —</i></div>
+    <div class="hand" id="cmp" style="left:0;right:0;top:300px;text-align:center;font-size:130px;color:#2f6bff">Compara.</div>
+    <div class="lab" style="left:0;right:0;top:520px;text-align:center;font-size:24px;color:#77736b">CON LA HOJA DEL JUEVES</div>
+  </div>
+  <!-- marca -->
+  <div class="o" id="B" style="width:900px;height:500px;text-align:center">
+    <div class="num" style="position:static;font-size:170px;margin-top:120px">Pro<span style="color:#2f6bff">Team</span></div>
+    <div style="margin-top:30px;font-family:M;font-weight:500;font-size:38px;color:#77736b">la app del entrenador · enlace en la bio</div>
+  </div>
+</div>
+<div id="gr"></div>
+<div id="hook">Tres <em>sábados</em></div>
+<div id="cap"></div>
+<div id="ink"></div>
+</div>
+<script src="/tools/reel_v4/T03-2-r1/times.js"></script>
+<script>
+const $=id=>document.getElementById(id), W=window.WORDS, NS='http://www.w3.org/2000/svg';
+const at=(w,n=1)=>{let c=0;for(const x of W)if(x[0]===w&&++c===n)return x[1];throw 'no '+w+n};
+const cl=(x,a=0,b=1)=>Math.min(b,Math.max(a,x)), r=(t,a,b)=>cl((t-a)/(b-a));
+const io=x=>x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2, eo=x=>1-Math.pow(1-x,3), lerp=(a,b,k)=>a+(b-a)*k;
+const T={sabados:at('sabados'),y1:at('y'),tres2:at('tres',2),perdieron:at('perdieron'),cuarto1:at('cuarto'),el1:at('el',2),tercero:at('tercero'),tu:at('tu'),cadete:at('cadete'),igualado:at('igualado'),
+ asi:at('asi'),tocas:at('tocas'),mundo:at('mundo'),charla:at('charla'),acortas:at('acortas'),gritas:at('gritas'),mas:at('mas'),no:at('no'),nada:at('nada'),miras:at('miras'),quinteto:at('quinteto'),sabado1:at('sabado'),
+ y3:at('y',3),pides:at('pides'),repetir:at('repetir'),tampoco:at('tampoco'),y4:at('y',4),piensa:at('piensa'),falta:at('falta'),hambre:at('hambre'),hasta:at('hasta'),semana:at('semana'),
+ jueves1:at('jueves'),al2:at('al',2),uno:at('uno'),duro:at('duro'),por:at('por'),minutos:at('minutos'),jueves2:at('jueves',2),recortalo:at('recortalo'),martes:at('martes'),
+ y6:at('y',6),compara:at('compara'),apunt:at('apuntalo'),porque:at('porque'),se:at('se',2),END:window.VEND+.25};
+// zonas del mundo
+const MZ=[0,0], M1=[-340,20], M2=[0,20], M3=[340,20], P=[1400,0], C=[2600,0], R=[3800,0], Z=[5000,0], K=[1400,1900], S=[0,5000], GR=[1100,5000], SB=[2150,5000], BP=[-1700,5000];
+const CUT1=T.hasta+.2, CUT2=T.al2-.12;
+// cámara: planos FIJOS; solo se mueve al cambiar de zona (0,6 s, entrada y salida suaves)
+const SH=[ // [inicio del movimiento, cx, cy, zoom, duración]
+ [0,M1[0],M1[1]-30,1.7],
+ [T.sabados+.25,M2[0],M2[1]-30,1.7,.55],
+ [T.tres2-.2,MZ[0],MZ[1],1.0,.6],
+ [T.el1-.25,M3[0],M3[1]+40,2.6,.6],
+ [T.tu-.3,P[0],P[1],1.1,.7],
+ [T.asi-.3,C[0],C[1],1.15,.7],
+ [T.miras-.3,R[0],R[1],1.0,.7],
+ [T.y3-.3,Z[0],Z[1]-60,1.05,.7],
+ [T.y4-.3,Z[0]-40,Z[1]+400,1.4,.6],
+ [CUT1,K[0],K[1],.98],
+ [T.jueves1-.3,K[0]+80,K[1]+120,1.25,.55],
+ [CUT2,S[0],S[1]-120,1.05],
+ [T.uno-.3,S[0],S[1]+80,1.25],
+ [T.jueves2-.35,GR[0],GR[1],1.1,.7],
+ [T.y6-.3,1075,5000,.36,.85],
+ [T.apunt+.1,BP[0],BP[1],1.0,.8],
+ [T.porque+.05,M1[0],M1[1]-30,1.7,.9]];
+const CUTS=new Set([CUT1,CUT2]);
+function cam(t){let i=0;while(i+1<SH.length&&SH[i+1][0]<=t)i++;const s=SH[i];
+ if(i===0||CUTS.has(s[0]))return [s[1],s[2],s[3],0];
+ const p=SH[i-1],Dd=s[4]||.62,k=r(t,s[0],s[0]+Dd),e=io(k);
+ const lz=lerp(Math.log(p[3]),Math.log(s[3]),e)-.12*Math.sin(Math.PI*k)*(Math.hypot(s[1]-p[1],s[2]-p[2])>600?1:0);
+ return [lerp(p[1],s[1],e),lerp(p[2],s[2],e),Math.exp(lz),k>0&&k<1?Math.sin(Math.PI*k):0]}
+const sz=el=>[el.offsetWidth||+el.getAttribute('width'),el.offsetHeight||+el.getAttribute('height')];
+function place(el,x,y,rot=0,sc=1){const [w,h]=sz(el);el.style.transform=`translate(${x-w/2}px,${y-h/2}px) rotate(${rot}deg) scale(${sc})`}
+const drawK=(el,k)=>{el.setAttribute('stroke-dashoffset',100-100*k);el.style.visibility=k>0?'visible':'hidden'};
+const mk=(tag,a,par)=>{const e=document.createElementNS(NS,tag);for(const k in a)e.setAttribute(k,a[k]);par.appendChild(e);return e};
+const wipe=(el,k)=>{el.style.clipPath=`inset(-20px ${(100-100*k).toFixed(1)}% -20px -20px)`;el.style.visibility=k>0?'visible':'hidden'};
+// marcadores (EJEMPLO): igualados al descanso, perdidos en el tercer cuarto
+const SCO=[['SÁBADO 1',['14–13','12–13','6–17','13–12'],'45–55'],['SÁBADO 2',['12–14','15–13','7–16','14–13'],'48–56'],['SÁBADO 3',['15–12','11–14','5–15','12–11'],'43–52']];
+const R3=[];['M1','M2','M3'].forEach((id,j)=>{const el=$(id),[h,q,f]=SCO[j];
+  el.innerHTML=`<div class="pin" style="left:137px;top:-10px"></div><div class="h">${h}</div><div class="e">EJEMPLO</div>`+
+   q.map((v,i)=>`<div class="row" style="top:${110+i*84}px"><b>${i+1}C</b><i>${v}</i></div>`).join('')+`<div class="row f" style="top:462px"><b>FINAL</b><i>${f}</i></div>`;
+  R3.push(el.querySelectorAll('.row')[2])});
+// media pista: cinco fichas
+const TK=[[250,470],[650,470],[450,640],[300,800],[600,800]].map(([x,y])=>{const g=mk('g',{opacity:0},$('tk'));mk('circle',{cx:x,cy:y,r:38,fill:'#2f6bff'},g);return g});
+// quintetos distintos
+const LP=[[[90,170],[210,170],[150,250],[90,330],[210,330]],[[150,150],[70,230],[230,230],[110,340],[190,340]],[[80,160],[220,200],[150,230],[150,330],[230,330]]];
+const LT=[];['L1','L2','L3'].forEach((id,j)=>{const g=$(id).querySelector('.ct');
+  mk('path',{d:'M20 80 H280 V400 H20 Z M100 80 V190 H200 V80',fill:'none',stroke:'#c9ccd1','stroke-width':3},g);
+  LP[j].forEach(([x,y])=>LT.push([j,mk('circle',{cx:x,cy:y,r:20,fill:'#2f6bff',opacity:0},g)]))});
+// semana: lunes a sábado, con el jueves
+const DAYS=['L','M','X','J','V','S'], DX=i=>60+132*i;
+const DB=[];{const g=$('cg');DAYS.forEach((d,i)=>{
+  DB.push(mk('rect',{x:DX(i),y:150,width:110,height:280,rx:14,fill:'#fff',stroke:'#121212','stroke-width':5},g));
+  mk('text',{x:DX(i)+55,y:310,'font-family':'M','font-weight':800,'font-size':64,fill:'#121212','text-anchor':'middle'},g).textContent=d});
+ mk('text',{x:DX(5)+55,y:400,'font-family':'M','font-weight':800,'font-size':18,'letter-spacing':2,fill:'#77736b','text-anchor':'middle'},g).textContent='PARTIDO';}
+const TG=[];{const g=$('tg');[0,1,2].forEach(i=>{const x=170+i*230,c=mk('g',{opacity:0},g);mk('rect',{x,y:760,width:170,height:120,rx:14,fill:'#fbeceb',stroke:'#d23a2a','stroke-width':5},c);
+  mk('text',{x:x+85,y:840,'font-family':'M','font-weight':800,'font-size':52,fill:'#d23a2a','text-anchor':'middle'},c).textContent='3C';
+  mk('text',{x:x+85,y:910,'font-family':'M','font-weight':800,'font-size':18,'letter-spacing':2,fill:'#77736b','text-anchor':'middle'},c).textContent='SÁBADO '+(i+1);TG.push(c)})}
+const TB=[0,1,2].map(i=>mk('path',{d:`M${DX(3)+55} 432 C${DX(3)+55} 600 ${255+i*230} 620 ${255+i*230} 758`,pathLength:100,'stroke-dasharray':100,'stroke-dashoffset':100},$('thb')));
+// escala 1–10
+const DOT=[];{const g=$('dots');for(let i=1;i<=10;i++){const x=88+(i-1)*76,c=mk('g',{opacity:0},g);mk('circle',{cx:x,cy:520,r:32,fill:'#fff',stroke:'#2f6bff','stroke-width':4},c);mk('text',{x,y:534,fill:'#2f6bff'},c).textContent=i;DOT.push(c)}}
+// gráfica: el jueves sobresale; lo duro pasa al martes
+const BH=[260,300,330,440,150,0], BX=i=>95+i*118, BARS=[];{const g=$('bars');DAYS.forEach((d,i)=>{const x=BX(i);
+  mk('text',{x:x+40,y:750,'font-family':'M','font-weight':800,'font-size':32,fill:'#9aa1a8','text-anchor':'middle'},g).textContent=d;
+  BARS.push(mk('rect',{x,y:700-BH[i],width:80,height:BH[i],rx:6,fill:i===3?'#d23a2a':'#c9d6f5'},g))});
+ mk('text',{x:BX(5)+40,y:680,'font-family':'M','font-weight':800,'font-size':20,'letter-spacing':2,fill:'#77736b','text-anchor':'middle'},g).textContent='PARTIDO';}
+const CAPS=[[T.y1,T.el1-.15,'Y los tres, <em>en el mismo cuarto.</em>'],[T.el1,T.tu-.2,'<em>El tercero.</em>'],[T.tu,T.asi-.2,'Tu cadete, <em>igualado al descanso.</em>'],
+ [T.asi,T.charla-.25,'Tocas lo primero <em>que tienes a mano.</em>'],[T.charla-.1,T.no-.2,'Cambias la charla. <em>La gritas más.</em>'],[T.no,T.miras-.2,'<em>No cambia nada.</em>'],[T.miras,T.y3-.2,'El quinteto <em>cambia cada sábado.</em>'],
+ [T.y3,T.tampoco-.2,'Tiempo muerto: <em>repetir el descanso.</em>'],[T.tampoco,T.y4-.15,'<em>Tampoco.</em>'],[T.y4,T.falta-.2,'Lo que piensa <em>todo el banquillo:</em>'],
+ [T.falta,CUT1-.35,'«Les falta <em>hambre.»</em>'],[CUT1+.25,T.jueves1-.15,'Mira la <em>semana entera.</em>'],[T.jueves1-.1,CUT2-.35,'<em>El jueves.</em>'],
+ [CUT2+.2,T.por-.15,'Al acabar, <em>del 1 al 10.</em>'],[T.por,T.jueves2-.15,'<em>Por minutos.</em>'],[T.jueves2,T.recortalo-.15,'¿El jueves, <em>el más alto?</em>'],
+ [T.recortalo,T.y6-.15,'Recórtalo. <em>Lo duro, al martes.</em>'],[T.y6,T.apunt-.15,'Y el sábado, <em>compara.</em>'],[T.apunt,T.porque-.15,'Apúntalo en la app.'],
+ [T.porque,T.se-.15,'Porque el tercer cuarto…'],[T.se-.1,T.END-.45,'<em>…se entrena el jueves.</em>']];
+const COVER=location.search.includes('cover');
+if(COVER){const h=document.getElementById('hook');h.innerHTML='Tres sábados,<br><em>el mismo cuarto</em>';h.style.fontSize='118px';h.style.lineHeight='1.02';h.style.top='90px'}
+window.frame=function(t){
+  const [cx,cy,z,mv]=cam(t);
+  const wd=$('world');wd.style.transform=`translate(540px,760px) scale(${z}) translate(${-cx}px,${-cy}px)`;
+  wd.style.filter=mv>.35?`blur(${(2.6*(mv-.35)/.65).toFixed(2)}px)`:'none';
+  // 1 · corcho y marcadores: el 3C se enciende en rojo; se apaga cuando la cámara ya está lejos (final circular)
+  place($('cork'),MZ[0],MZ[1]+10);place($('M1'),M1[0],M1[1],-1.2);place($('M2'),M2[0],M2[1],.6);place($('M3'),M3[0],M3[1],-.4);
+  const off=1-r(t,T.apunt,T.apunt+.4);
+  R3.forEach((el,i)=>{const k=eo(r(t,T.perdieron-.1+i*.22,T.perdieron+.25+i*.22))*off;el.style.background=`rgba(210,58,42,${(.14*k).toFixed(3)})`;
+    el.querySelector('b').style.color=k>.5?'#d23a2a':'#77736b';el.querySelector('i').style.color=k>.5?'#d23a2a':'#121212'});
+  place($('CIR'),M3[0]+2,M3[1]+40,-.4);drawK($('cc'),io(r(t,T.tercero-.05,T.tercero+.6))*(off>0?1:0));
+  // 2 · media pista
+  place($('PI'),P[0],P[1]);TK.forEach((g,i)=>g.setAttribute('opacity',eo(r(t,T.cadete-.15+i*.1,T.cadete+.1+i*.1))));
+  $('sc0').setAttribute('opacity',eo(r(t,T.igualado-.2,T.igualado+.2)).toFixed(3));
+  // 3 · charla: tres versiones, las tres tachadas, y el sello
+  place($('CH'),C[0],C[1],-1);
+  [['c1',T.tocas],['c2',T.acortas-.25],['c3',T.gritas-.2]].forEach(([id,s])=>wipe($(id),io(r(t,s,s+.5))));
+  [['k1',T.acortas-.4,560],['k2',T.gritas-.35,620],['k3',T.mas+.1,560]].forEach(([id,s,w])=>{$(id).style.width=(w*io(r(t,s,s+.35)))+'px'});
+  const s1=eo(r(t,T.no-.1,T.no+.3));place($('ST1'),C[0]+40,C[1]+60,-12,1.25-.25*s1);$('ST1').style.opacity=s1;
+  // 4 · quintetos y hilo que no une
+  place($('L1'),R[0]-340,R[1],-1);place($('L2'),R[0],R[1]+20,1);place($('L3'),R[0]+340,R[1]-10,-.5);
+  LT.forEach(([j,c],n)=>c.setAttribute('opacity',eo(r(t,T.rotaciones0=T.miras+.1+j*.4+(n%5)*.06,T.miras+.35+j*.4+(n%5)*.06))));
+  place($('TH'),R[0]-170,R[1]+340);drawK($('th'),io(r(t,T.quinteto,T.sabado1+.3)));
+  // 5 · pizarra: las mismas tres flechas, sello, y «hambre»
+  place($('PZ'),Z[0],Z[1]+60);
+  ['a1','a2','a3'].forEach((id,i)=>drawK($(id),io(r(t,T.pides-.1+i*.35,T.pides+.3+i*.35))));
+  const s2=eo(r(t,T.tampoco-.1,T.tampoco+.3));place($('ST2'),Z[0]+60,Z[1]-265,6,1.25-.25*s2);$('ST2').style.opacity=s2;
+  wipe($('qp'),io(r(t,T.mundo-.1,T.mundo+.5)));wipe($('HB'),io(r(t,T.falta-.35,T.hambre)));
+  drawK($('u1'),io(r(t,T.hambre,T.hambre+.25)));drawK($('u2'),io(r(t,T.hambre+.2,T.hambre+.45)));
+  // 6 · la semana: el jueves se ilumina y el hilo azul llega a los tres 3C
+  place($('CA'),K[0],K[1]+150);
+  TG.forEach((g,i)=>g.setAttribute('opacity',eo(r(t,T.semana-.2+i*.15,T.semana+.15+i*.15))));
+  const jl=eo(r(t,T.jueves1-.1,T.jueves1+.3));DB[3].setAttribute('fill',`rgba(47,107,255,${(.16*jl).toFixed(3)})`);DB[3].setAttribute('stroke',jl>.5?'#2f6bff':'#121212');
+  wipe($('jt'),io(r(t,T.jueves1+.05,T.jueves1+.5)));TB.forEach((p,i)=>drawK(p,io(r(t,T.jueves1+.15+i*.08,T.jueves1+.55+i*.08))));
+  // 7 · solución
+  place($('SC'),S[0],S[1]);
+  $('big').style.opacity=1-.75*r(t,T.uno-.2,T.uno+.2);
+  DOT.forEach((d,i)=>d.setAttribute('opacity',eo(r(t,T.uno-.2+i*.07,T.uno+.05+i*.07))));
+  drawK($('r8'),io(r(t,T.duro-.05,T.duro+.3)));
+  const xm=r(t,T.por-.05,T.minutos+.5);$('xm').style.clipPath=`inset(0 ${(100-100*xm).toFixed(1)}% 0 0)`;
+  const pc=$('PC');pc.style.opacity=r(t,T.duro-.35,T.duro-.1)*(1-r(t,T.minutos+.5,T.minutos+.8));
+  const kr=io(r(t,T.duro-.05,T.duro+.3));
+  const tp=t<T.por-.1?[S[0]-430+648-14*kr,S[1]-450+468+80*(1-kr)]:[S[0]-430+250+360*xm,S[1]-450+760];
+  place(pc,tp[0]+6,tp[1]-150,18);
+  // 8 · gráfica: el bloque rojo del jueves se desliza al martes
+  place($('GR'),GR[0],GR[1]);
+  const lift=io(r(t,T.recortalo-.1,T.recortalo+.35)), slide=io(r(t,T.duro2=T.recortalo+.5,T.martes+.2));
+  const blk=$('blk'),bx=lerp(BX(3),BX(1),slide),by0=700-BH[3]-120,by1=700-BH[1]-120,by=lerp(by0,by1,slide)-40*Math.sin(Math.PI*slide)-10*lift*(1-slide);
+  blk.setAttribute('x',bx);blk.setAttribute('y',by);BARS[3].setAttribute('fill',lift>.5?'#c9d6f5':'#d23a2a');const hj=lerp(BH[3],330,io(r(t,T.recortalo+.3,T.recortalo+.8)));BARS[3].setAttribute('height',hj);BARS[3].setAttribute('y',700-hj);
+  // 9 · el sábado
+  place($('SB'),SB[0],SB[1],.8);wipe($('cmp'),io(r(t,T.compara-.1,T.compara+.45)));
+  place($('B'),BP[0],BP[1]);
+  // color por escena: problema y semana, en frío
+  $('gr').style.opacity=t<CUT2?.4*r(t,T.asi-.4,T.asi+.2):0;
+  $('hook').style.opacity=COVER?1:(t<10?1-r(t,T.y1-.35,T.y1-.05):r(t,T.porque+.6,T.porque+1.0));
+  let html='',a=0;if(!COVER)for(const [s,e,h] of CAPS)if(t>=s-.2&&t<e+.25){const aa=Math.min(r(t,s-.2,s+.15),1-r(t,e-.05,e+.25));if(aa>=a&&(aa>0||!html)){html=h;a=aa}}
+  const cp=$('cap');if(cp.dataset.h!==html){cp.innerHTML=html;cp.dataset.h=html}
+  cp.style.opacity=a;cp.style.transform=`translateY(${(1-a)*12}px)`;
+  // giros: a negro al mirar la semana; de negro a blanco en la solución
+  $('ink').style.opacity=Math.max(r(t,CUT1-.35,CUT1-.03)*(1-r(t,CUT1+.03,CUT1+.45)), r(t,CUT2-.3,CUT2-.03)*(1-r(t,CUT2+.03,CUT2+.4)));
+};
+Promise.all([...document.images].map(i=>i.decode().catch(()=>{}))).then(()=>document.fonts.ready).then(()=>{frame(0);window.ready=true});
+</script></body></html>

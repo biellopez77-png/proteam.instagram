@@ -1,0 +1,157 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>html,body{margin:0;background:#000;overflow:hidden}canvas{display:block}</style>
+<script type="importmap">{"imports":{"three":"/tools/wurtz/node_modules/three/build/three.module.js","three/addons/":"/tools/wurtz/node_modules/three/examples/jsm/"}}</script>
+</head><body>
+<script type="module">
+// Dispositivos 3D de ProTeam: móvil (tipo iPhone de titanio) y portátil (tipo MacBook), con la pantalla
+// como textura real (fotograma de una grabación de pantalla). Medidas en metros, proporciones reales.
+//   window.setScreen('phone'|'laptop', url) -> promesa;  window.pose({...}) -> pinta un fotograma
+import * as THREE from 'three';
+import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
+import { RoundedBoxGeometry } from 'three/addons/geometries/RoundedBoxGeometry.js';
+const Q = new URLSearchParams(location.search), W = +Q.get('w') || 1080, H = +Q.get('h') || 1920;
+const R = new THREE.WebGLRenderer({ antialias: true, preserveDrawingBuffer: true, alpha: false });
+R.setPixelRatio(1); R.setSize(W, H); R.outputEncoding = THREE.sRGBEncoding;
+R.toneMapping = THREE.ACESFilmicToneMapping; R.toneMappingExposure = 1.0; R.shadowMap.enabled = false;
+document.body.prepend(R.domElement);
+const S = new THREE.Scene(); S.background = new THREE.Color(Q.get('bg') || '#000');
+const pm = new THREE.PMREMGenerator(R); S.environment = pm.fromScene(new RoomEnvironment(), .03).texture;
+const C = new THREE.PerspectiveCamera(26, W / H, .005, 20);
+
+// ---------- utilidades
+function rrShape(w, h, r, cx = 0, cy = 0) {
+  const s = new THREE.Shape(), x = cx - w / 2, y = cy - h / 2;
+  s.moveTo(x + r, y); s.lineTo(x + w - r, y); s.absarc(x + w - r, y + r, r, -Math.PI / 2, 0, false);
+  s.lineTo(x + w, y + h - r); s.absarc(x + w - r, y + h - r, r, 0, Math.PI / 2, false);
+  s.lineTo(x + r, y + h); s.absarc(x + r, y + h - r, r, Math.PI / 2, Math.PI, false);
+  s.lineTo(x, y + r); s.absarc(x + r, y + r, r, Math.PI, Math.PI * 1.5, false); return s;
+}
+// rectángulo con radio solo arriba (pantalla del portátil)
+function rrTop(w, h, r) {
+  const s = new THREE.Shape(), x = -w / 2, y = -h / 2;
+  s.moveTo(x, y); s.lineTo(x + w, y); s.lineTo(x + w, y + h - r); s.absarc(x + w - r, y + h - r, r, 0, Math.PI / 2, false);
+  s.lineTo(x + r, y + h); s.absarc(x + r, y + h - r, r, Math.PI / 2, Math.PI, false); s.lineTo(x, y); return s;
+}
+function slab(shape, depth, bevel, segs = 6) {
+  const g = new THREE.ExtrudeGeometry(shape, { depth, bevelEnabled: bevel > 0, bevelThickness: bevel, bevelSize: bevel, bevelSegments: segs, curveSegments: 48 });
+  g.translate(0, 0, -depth / 2); return g;
+}
+function flatUV(g, w, h) {  // UV 0..1 a partir de la posición (para ShapeGeometry)
+  const p = g.attributes.position, uv = g.attributes.uv;
+  for (let i = 0; i < p.count; i++) uv.setXY(i, p.getX(i) / w + .5, p.getY(i) / h + .5);
+  uv.needsUpdate = true; return g;
+}
+const texLoader = new THREE.TextureLoader();
+function screenMat() { const m = new THREE.MeshBasicMaterial({ color: '#000', toneMapped: false }); return m; }
+
+// ---------- materiales
+const TI = { natural: '#8f8d88', black: '#2d2e31', blue: '#3b4656', white: '#d8d6d0' }[Q.get('ti') || 'black'];
+const titanium = new THREE.MeshPhysicalMaterial({ color: TI, metalness: 1, roughness: .32, envMapIntensity: 1.25, clearcoat: .3, clearcoatRoughness: .4 });
+const glassBlack = new THREE.MeshPhysicalMaterial({ color: '#020203', metalness: 0, roughness: .08, clearcoat: 1, clearcoatRoughness: .05, envMapIntensity: .35 });
+const backGlass = new THREE.MeshPhysicalMaterial({ color: TI, metalness: .25, roughness: .55, envMapIntensity: .8 });
+const lensGlass = new THREE.MeshPhysicalMaterial({ color: '#0b0d12', metalness: .2, roughness: .05, clearcoat: 1, envMapIntensity: 1.4 });
+const alu = new THREE.MeshPhysicalMaterial({ color: '#1a1b1e', metalness: .55, roughness: .55, envMapIntensity: .3, clearcoat: .15 });
+const keyMat = new THREE.MeshStandardMaterial({ color: '#050506', metalness: 0, roughness: .85, envMapIntensity: .2 });
+
+// ---------- MÓVIL (≈ 71,5 × 146,6 × 8,25 mm; radio de esquina 11,6 mm; marco 1,5 mm)
+const P = { w: .0715, h: .1466, d: .0072, r: .0116, bezel: .0016 };
+const phone = new THREE.Group(); S.add(phone);
+{
+  const bev = .00062;
+  const body = new THREE.Mesh(slab(rrShape(P.w - 2 * bev, P.h - 2 * bev, P.r - bev), P.d - 2 * bev, bev, 8), titanium); phone.add(body);
+  // cristal frontal: casi todo el frente, enrasado con el marco
+  const fg = new THREE.Mesh(slab(rrShape(P.w - .0011, P.h - .0011, P.r - .0006), .0006, .00025, 4), glassBlack); fg.position.z = P.d / 2 + .00005; phone.add(fg);
+  // pantalla (mismo radio que la curva del aparato, menos el marco)
+  const sw = P.w - 2 * P.bezel - .0011, sh = P.h - 2 * P.bezel - .0011, sr = P.r - P.bezel - .0004;
+  P.sw = sw; P.sh = sh;
+  const sg = flatUV(new THREE.ShapeGeometry(rrShape(sw, sh, sr), 48), sw, sh);
+  P.screen = new THREE.Mesh(sg, screenMat()); P.screen.position.z = P.d / 2 + .00085; phone.add(P.screen);
+  // isla
+  const isl = new THREE.Mesh(new THREE.ShapeGeometry(rrShape(.0126, .0037, .00185), 24), new THREE.MeshBasicMaterial({ color: '#000' }));
+  isl.position.set(0, sh / 2 - .0035, P.d / 2 + .0009); phone.add(isl);
+  // cristal trasero
+  const bg = new THREE.Mesh(slab(rrShape(P.w - .0011, P.h - .0011, P.r - .0006), .0005, .0002, 4), backGlass); bg.position.z = -P.d / 2 - .00005; phone.add(bg);
+  // módulo de cámaras
+  const cam = new THREE.Group(); cam.position.set(P.w / 2 - .0215, P.h / 2 - .0215, -P.d / 2 - .0004); phone.add(cam);
+  const plate = new THREE.Mesh(slab(rrShape(.035, .035, .0085), .0013, .0005, 6), backGlass); plate.position.z = -.0006; cam.add(plate);
+  [[-.0082, .0082], [-.0082, -.0082], [.0085, 0]].forEach(([x, y]) => {
+    const ring = new THREE.Mesh(new THREE.CylinderGeometry(.0068, .0068, .0022, 48), titanium); ring.rotation.x = Math.PI / 2; ring.position.set(x, y, -.0018); cam.add(ring);
+    const lens = new THREE.Mesh(new THREE.CylinderGeometry(.0056, .0056, .0006, 48), lensGlass); lens.rotation.x = Math.PI / 2; lens.position.set(x, y, -.0030); cam.add(lens);
+  });
+  const fl = new THREE.Mesh(new THREE.CylinderGeometry(.0022, .0022, .0005, 24), new THREE.MeshStandardMaterial({ color: '#e8e2d0', roughness: .3 })); fl.rotation.x = Math.PI / 2; fl.position.set(.0085, .0115, -.0016); cam.add(fl);
+  // botones laterales (redondeados)
+  const btn = (x, y, l) => { const b = new THREE.Mesh(new RoundedBoxGeometry(.0013, l, .0028, 4, .0006), titanium); b.position.set(x, y, 0); phone.add(b); };
+  btn(P.w / 2 + .0003, .03, .016); btn(-P.w / 2 - .0003, .036, .0058); btn(-P.w / 2 - .0003, .02, .01); btn(-P.w / 2 - .0003, .006, .01);
+  btn(P.w / 2 + .0003, -.022, .0085);
+}
+
+// ---------- PORTÁTIL (≈ 304 × 215 mm; base 11 mm; tapa 5 mm)
+const L = { w: .304, d: .215, base: .0105, lid: .0048, r: .012 };
+const laptop = new THREE.Group(); S.add(laptop);
+{
+  const base = new THREE.Mesh(slab(rrShape(L.w, L.d, L.r), L.base - .002, .001, 6), alu); base.rotation.x = -Math.PI / 2; base.position.y = L.base / 2; laptop.add(base);
+  // teclado
+  const kb = new THREE.Group(); kb.position.set(0, L.base + .0001, -.022); laptop.add(kb);
+  const well = new THREE.Mesh(new THREE.ShapeGeometry(rrShape(.276, .118, .004), 12), new THREE.MeshStandardMaterial({ color: '#141416', roughness: .8 })); well.rotation.x = -Math.PI / 2; kb.add(well);
+  const KW = .264, ku = KW / 14, kg = .0016, z0 = -.118 / 2 + .006;
+  const key = (x, z, w, h) => { const k = new THREE.Mesh(new RoundedBoxGeometry(w - kg, .0011, h - kg, 2, .0005), keyMat); k.position.set(-KW / 2 + x + w / 2, .0006, z0 + z + h / 2); kb.add(k); };
+  for (let i = 0; i < 14; i++) key(i * ku, 0, ku, ku * .6);                       // fila de funciones
+  for (let r = 0; r < 4; r++) {                                                         // 4 filas de letras
+    const first = [1, 1.5, 1.8, 2.3][r], last = [1.5, 1, 1.8, 2.3][r], n = 14 - Math.round(first + last - 2);
+    const mid = (KW - (first + last) * ku) / (n - 2); let x = 0;
+    for (let i = 0; i < n; i++) { const w = i === 0 ? first * ku : i === n - 1 ? last * ku : mid; key(x, ku * .6 + r * ku, w, ku); x += w; }
+  }
+  { const z = ku * .6 + 4 * ku; let x = 0; [1, 1, 1, 1.25, 5.3, 1.25, 1].forEach((u) => { key(x, z, u * ku, ku); x += u * ku; });
+    const ax = x; key(ax + ku, z + ku / 2, ku, ku / 2); key(ax, z + ku / 2, ku, ku / 2); key(ax + 2 * ku - .0001, z + ku / 2, KW - ax - 2 * ku, ku / 2); key(ax + ku, z, ku, ku / 2); }
+  // trackpad
+  const tp = new THREE.Mesh(new THREE.ShapeGeometry(rrShape(.13, .08, .006), 16), new THREE.MeshPhysicalMaterial({ color: '#141518', metalness: .2, roughness: .5, clearcoat: .4, envMapIntensity: .25 }));
+  tp.rotation.x = -Math.PI / 2; tp.position.set(0, L.base + .00015, .062); laptop.add(tp);
+  // tapa con bisagra en el borde trasero
+  L.hinge = new THREE.Group(); L.hinge.position.set(0, L.base, -L.d / 2 + .004); laptop.add(L.hinge);
+  const lidG = new THREE.Group(); L.hinge.add(lidG);
+  const lid = new THREE.Mesh(slab(rrShape(L.w, L.d - .004, L.r), L.lid - .0016, .0008, 6), alu); lid.position.set(0, (L.d - .004) / 2, -L.lid / 2); lidG.add(lid);
+  const bez = new THREE.Mesh(new THREE.ShapeGeometry(rrShape(L.w - .002, L.d - .006, L.r - .001), 32), glassBlack); bez.position.set(0, (L.d - .004) / 2, .0001); lidG.add(bez);
+  const sw = .2875, sh = sw / 1.546, sr = .0065;
+  L.sw = sw; L.sh = sh;
+  const sg = flatUV(new THREE.ShapeGeometry(rrTop(sw, sh, sr), 32), sw, sh);
+  L.screen = new THREE.Mesh(sg, screenMat()); L.screen.position.set(0, (L.d - .004) - .006 - sh / 2, .0003); lidG.add(L.screen);
+  const notch = new THREE.Mesh(new THREE.ShapeGeometry(rrShape(.032, .007, .0025), 16), new THREE.MeshBasicMaterial({ color: '#000' })); notch.position.set(0, (L.d - .004) - .006, .0004); lidG.add(notch);
+  L.lidG = lidG;
+}
+
+// ---------- luces
+const key = new THREE.DirectionalLight('#ffffff', .9); key.position.set(-1.2, 1.6, 2); S.add(key);
+const rimA = new THREE.DirectionalLight('#4f7bff', 2.4); rimA.position.set(2.2, .6, -1.2); S.add(rimA);
+const rimB = new THREE.DirectionalLight('#9fb4ff', 1.1); rimB.position.set(-2.2, -.6, -1.2); S.add(rimB);
+const top = new THREE.SpotLight('#ffffff', .35, 0, .5, .8); top.position.set(0, 2.5, .8); S.add(top);
+
+// ---------- API
+const cache = {};
+window.setScreen = (dev, url) => new Promise((ok, ko) => {
+  const m = (dev === 'laptop' ? L : P).screen.material;
+  const done = (t) => { m.map = t; m.color.set('#fff'); m.needsUpdate = true; ok(); };
+  if (cache[url]) return done(cache[url]);
+  texLoader.load(url, (t) => { t.encoding = THREE.sRGBEncoding; t.anisotropy = 8; cache[url] = t; done(t); }, undefined, ko);
+});
+// pose: mode 'phone' | 'laptop' | 'both'; t en segundos; spin = velocidad de giro (rad/s); cam = distancia relativa
+window.pose = (o = {}) => {
+  const t = o.t || 0, mode = o.mode || 'phone';
+  phone.visible = mode !== 'laptop'; laptop.visible = mode !== 'phone';
+  const spin = o.spin ?? .12, sway = Math.sin(t * spin) * (o.amp ?? .32);
+  if (mode === 'phone') {
+    phone.position.set(0, 0, 0); phone.rotation.set((o.rx ?? -.06) + Math.sin(t * .37) * .025, (o.ry0 ?? -.25) + sway, (o.rz ?? .015));
+    const dist = (o.dist ?? .56); C.position.set(0, .004, dist); C.lookAt(0, 0, 0);
+  } else if (mode === 'laptop') {
+    laptop.position.set(0, -.07, 0); laptop.rotation.set(0, (o.ry0 ?? -.42) + sway, 0);
+    L.lidG.rotation.x = Math.PI / 2 - (o.open ?? 1.85);
+    const dist = (o.dist ?? 1.02); C.position.set(0, .2, dist); C.lookAt(0, .02, 0);
+  } else {
+    laptop.position.set(-.05, -.07, 0); laptop.rotation.set(0, -.28 + sway * .5, 0); L.lidG.rotation.x = Math.PI / 2 - 1.85;
+    phone.position.set(.06, -.02, .2); phone.rotation.set(-.08, -.32 + sway * .5, .04);
+    C.position.set(.0, .14, 1.05); C.lookAt(.0, .0, 0);
+  }
+  R.render(S, C); return true;
+};
+window.ready = true;
+</script></body></html>

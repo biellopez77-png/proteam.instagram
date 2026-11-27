@@ -1,0 +1,1940 @@
+{
+ "meta": {
+  "contenedor": "mov,mp4,m4a,3gp,3g2,mj2",
+  "duracion_s": 35.9,
+  "tamano_bytes": 6988958,
+  "bitrate_kbps": 1557,
+  "ancho": 1080,
+  "alto": 1920,
+  "relacion": "9:16",
+  "fps": 30.0,
+  "fotogramas_declarados": 1077,
+  "codec_video": "h264",
+  "pix_fmt": "yuv420p",
+  "pistas_audio": [
+   {
+    "codec": "aac",
+    "canales": 2,
+    "hz": 48000,
+    "bitrate_kbps": 198
+   }
+  ],
+  "etiquetas": {
+   "major_brand": "isom",
+   "minor_version": "512",
+   "compatible_brands": "isomiso2avc1mp41",
+   "encoder": "Lavf60.16.100"
+  },
+  "id": "u64",
+  "fotogramas_leidos": 1077,
+  "sha256": "ebffee12c8a94d16ce5d3a09aa77ec5cae70cba55e2fd48bed31827281c4a35c",
+  "archivo": "reels/u64-cinco-fuera.mp4",
+  "fuente": "",
+  "marca": "proteam",
+  "tipo": "propio",
+  "formato": "reel",
+  "tema": "Cinco jugadores fuera, cuatro días (Deportivo, fútbol)",
+  "analizado": "2026-11-20 03:04"
+ },
+ "montaje": {
+  "cortes_duros": 5,
+  "transiciones_o_movimientos_fuertes": 0,
+  "planos": 6,
+  "duracion_media_plano_s": 5.98,
+  "plano_mas_largo_s": 15.867,
+  "plano_mas_corto_s": 2.133,
+  "cortes_por_10s": 1.39,
+  "tramos_estaticos": [
+   {
+    "desde": 5.87,
+    "hasta": 8.57,
+    "duracion_s": 2.7
+   },
+   {
+    "desde": 8.7,
+    "hasta": 10.3,
+    "duracion_s": 1.6
+   },
+   {
+    "desde": 10.37,
+    "hasta": 14.9,
+    "duracion_s": 4.53
+   },
+   {
+    "desde": 17.83,
+    "hasta": 21.33,
+    "duracion_s": 3.5
+   },
+   {
+    "desde": 32.03,
+    "hasta": 33.67,
+    "duracion_s": 1.63
+   },
+   {
+    "desde": 34.13,
+    "hasta": 35.87,
+    "duracion_s": 1.73
+   }
+  ],
+  "nota": "Detección automática por histograma y diferencia de imagen sobre TODOS los fotogramas. Un motion graphic continuo cuenta como un solo plano; un cambio de fondo brusco dentro de una animación puede contarse como corte. Confirmar en las láminas."
+ },
+ "cortes": [
+  {
+   "fotograma": 169,
+   "t": 5.633,
+   "tipo": "corte",
+   "fuerza": 0.708
+  },
+  {
+   "fotograma": 257,
+   "t": 8.567,
+   "tipo": "corte",
+   "fuerza": 0.958
+  },
+  {
+   "fotograma": 733,
+   "t": 24.433,
+   "tipo": "corte",
+   "fuerza": 0.968
+  },
+  {
+   "fotograma": 828,
+   "t": 27.6,
+   "tipo": "corte",
+   "fuerza": 0.94
+  },
+  {
+   "fotograma": 1013,
+   "t": 33.767,
+   "tipo": "corte",
+   "fuerza": 0.982
+  }
+ ],
+ "escenas": [
+  {
+   "escena": 1,
+   "desde_fotograma": 0,
+   "hasta_fotograma": 168,
+   "desde": 0.0,
+   "hasta": 5.633,
+   "duracion_s": 5.633,
+   "movimiento_medio": 0.0068,
+   "luz_media": 0.261,
+   "saturacion_media": 0.248
+  },
+  {
+   "escena": 2,
+   "desde_fotograma": 169,
+   "hasta_fotograma": 256,
+   "desde": 5.633,
+   "hasta": 8.567,
+   "duracion_s": 2.933,
+   "movimiento_medio": 0.003,
+   "luz_media": 0.092,
+   "saturacion_media": 0.34
+  },
+  {
+   "escena": 3,
+   "desde_fotograma": 257,
+   "hasta_fotograma": 732,
+   "desde": 8.567,
+   "hasta": 24.433,
+   "duracion_s": 15.867,
+   "movimiento_medio": 0.0038,
+   "luz_media": 0.93,
+   "saturacion_media": 0.036
+  },
+  {
+   "escena": 4,
+   "desde_fotograma": 733,
+   "hasta_fotograma": 827,
+   "desde": 24.433,
+   "hasta": 27.6,
+   "duracion_s": 3.167,
+   "movimiento_medio": 0.0166,
+   "luz_media": 0.195,
+   "saturacion_media": 0.26
+  },
+  {
+   "escena": 5,
+   "desde_fotograma": 828,
+   "hasta_fotograma": 1012,
+   "desde": 27.6,
+   "hasta": 33.767,
+   "duracion_s": 6.167,
+   "movimiento_medio": 0.0035,
+   "luz_media": 0.09,
+   "saturacion_media": 0.36
+  },
+  {
+   "escena": 6,
+   "desde_fotograma": 1013,
+   "hasta_fotograma": 1076,
+   "desde": 33.767,
+   "hasta": 35.9,
+   "duracion_s": 2.133,
+   "movimiento_medio": 0.0173,
+   "luz_media": 0.901,
+   "saturacion_media": 0.047
+  }
+ ],
+ "laminas": [
+  {
+   "lamina": "general_001.jpg",
+   "fotogramas": [
+    0,
+    5,
+    10,
+    15,
+    20,
+    25,
+    45,
+    84,
+    90,
+    135,
+    168,
+    169,
+    212,
+    256,
+    257,
+    302,
+    347,
+    392
+   ],
+   "desde": 0.0,
+   "hasta": 13.067,
+   "modo": "general"
+  },
+  {
+   "lamina": "general_002.jpg",
+   "fotogramas": [
+    437,
+    482,
+    494,
+    527,
+    572,
+    617,
+    662,
+    707,
+    732,
+    733,
+    778,
+    780,
+    823,
+    827,
+    828,
+    873,
+    918,
+    920
+   ],
+   "desde": 14.567,
+   "hasta": 30.667,
+   "modo": "general"
+  },
+  {
+   "lamina": "general_003.jpg",
+   "fotogramas": [
+    963,
+    1008,
+    1012,
+    1013,
+    1044,
+    1076
+   ],
+   "desde": 32.1,
+   "hasta": 35.867,
+   "modo": "general"
+  },
+  {
+   "lamina": "detalle_001.jpg",
+   "fotogramas": [
+    0,
+    8,
+    16,
+    24,
+    32,
+    40,
+    48,
+    56,
+    64,
+    72,
+    80,
+    88,
+    96,
+    104,
+    112,
+    120,
+    128,
+    136,
+    144,
+    152,
+    160,
+    168,
+    169,
+    176
+   ],
+   "desde": 0.0,
+   "hasta": 5.867,
+   "modo": "detalle"
+  },
+  {
+   "lamina": "detalle_002.jpg",
+   "fotogramas": [
+    184,
+    192,
+    200,
+    208,
+    216,
+    224,
+    232,
+    240,
+    248,
+    256,
+    257,
+    264,
+    272,
+    280,
+    288,
+    296,
+    304,
+    312,
+    320,
+    328,
+    336,
+    344,
+    352,
+    360
+   ],
+   "desde": 6.133,
+   "hasta": 12.0,
+   "modo": "detalle"
+  },
+  {
+   "lamina": "detalle_003.jpg",
+   "fotogramas": [
+    368,
+    376,
+    384,
+    392,
+    400,
+    408,
+    416,
+    424,
+    432,
+    440,
+    448,
+    456,
+    464,
+    472,
+    480,
+    488,
+    496,
+    504,
+    512,
+    520,
+    528,
+    536,
+    544,
+    552
+   ],
+   "desde": 12.267,
+   "hasta": 18.4,
+   "modo": "detalle"
+  },
+  {
+   "lamina": "detalle_004.jpg",
+   "fotogramas": [
+    560,
+    568,
+    576,
+    584,
+    592,
+    600,
+    608,
+    616,
+    624,
+    632,
+    640,
+    648,
+    656,
+    664,
+    672,
+    680,
+    688,
+    696,
+    704,
+    712,
+    720,
+    728,
+    732,
+    733
+   ],
+   "desde": 18.667,
+   "hasta": 24.433,
+   "modo": "detalle"
+  },
+  {
+   "lamina": "detalle_005.jpg",
+   "fotogramas": [
+    736,
+    744,
+    752,
+    760,
+    768,
+    776,
+    784,
+    792,
+    800,
+    808,
+    816,
+    824,
+    827,
+    828,
+    832,
+    840,
+    848,
+    856,
+    864,
+    872,
+    880,
+    888,
+    896,
+    904
+   ],
+   "desde": 24.533,
+   "hasta": 30.133,
+   "modo": "detalle"
+  },
+  {
+   "lamina": "detalle_006.jpg",
+   "fotogramas": [
+    912,
+    920,
+    928,
+    936,
+    944,
+    952,
+    960,
+    968,
+    976,
+    984,
+    992,
+    1000,
+    1008,
+    1012,
+    1013,
+    1016,
+    1024,
+    1032,
+    1040,
+    1048,
+    1056,
+    1064,
+    1072
+   ],
+   "desde": 30.4,
+   "hasta": 35.733,
+   "modo": "detalle"
+  }
+ ],
+ "texto_en_pantalla": {
+  "idioma": "spa+eng",
+  "nota": "OCR automático sobre los fotogramas muestreados: puede fallar con tipografía fina, texto animado o sobre foto. La exposición es aproximada (resolución = intervalo de muestreo). Verificar siempre en las láminas.",
+  "por_fotograma": [
+   {
+    "fotograma": 0,
+    "t": 0.0,
+    "texto": "LA SEMANA DEL DEPOR vO FUERA DIAS"
+   },
+   {
+    "fotograma": 5,
+    "t": 0.167,
+    "texto": "LA SEMANA DEL DEPOR VO FUERA DIAS"
+   },
+   {
+    "fotograma": 8,
+    "t": 0.267,
+    "texto": "LA SEMANA DEL DEPOR VO FUERA"
+   },
+   {
+    "fotograma": 10,
+    "t": 0.333,
+    "texto": "LA SEMANA DEL DEPOR VO FUERA"
+   },
+   {
+    "fotograma": 15,
+    "t": 0.5,
+    "texto": "LA SEMANA DEL DEPOR vO FUERA"
+   },
+   {
+    "fotograma": 16,
+    "t": 0.533,
+    "texto": "LA SEMANA DEL DEPOR vO FUERA"
+   },
+   {
+    "fotograma": 20,
+    "t": 0.667,
+    "texto": "LA SEMANA DEL DEPOR VO FUERA DIAS"
+   },
+   {
+    "fotograma": 24,
+    "t": 0.8,
+    "texto": "LA SEMANA DEL DEPOR VO FUERA DIAS"
+   },
+   {
+    "fotograma": 25,
+    "t": 0.833,
+    "texto": "LA SEMANA DEL DEPOR VO FUERA DIAS"
+   },
+   {
+    "fotograma": 32,
+    "t": 1.067,
+    "texto": "LA SEMANA DEL DEPOR vO FUERA DIAS"
+   },
+   {
+    "fotograma": 40,
+    "t": 1.333,
+    "texto": "LA SEMANA DEL DEPOR vo FUERA DIAS"
+   },
+   {
+    "fotograma": 45,
+    "t": 1.5,
+    "texto": "FUERA DIAS"
+   },
+   {
+    "fotograma": 48,
+    "t": 1.6,
+    "texto": "LA SEMANA DEL DEPOR vo FUERA DIAS"
+   },
+   {
+    "fotograma": 56,
+    "t": 1.867,
+    "texto": "LA SEMANA DEL DEPOR vO FUERA DIAS"
+   },
+   {
+    "fotograma": 64,
+    "t": 2.133,
+    "texto": "LA SEMANA DEL DEPOR VO FUERA 4DIAS"
+   },
+   {
+    "fotograma": 72,
+    "t": 2.4,
+    "texto": "FUERA DIAS"
+   },
+   {
+    "fotograma": 80,
+    "t": 2.667,
+    "texto": "LA SEMANA DEL DEPOR vo FUERA"
+   },
+   {
+    "fotograma": 84,
+    "t": 2.8,
+    "texto": "LA SEMANA DEL DEPOR vo FUERA DIAS"
+   },
+   {
+    "fotograma": 88,
+    "t": 2.933,
+    "texto": "LA SEMANA DEL DEPOR vo FUERA DIAS"
+   },
+   {
+    "fotograma": 90,
+    "t": 3.0,
+    "texto": "FUERA DIAS"
+   },
+   {
+    "fotograma": 96,
+    "t": 3.2,
+    "texto": "LA SEMANA DEL DEPOR vO FUERA DIAS"
+   },
+   {
+    "fotograma": 104,
+    "t": 3.467,
+    "texto": "LA SEMANA DEL DEPOR VO FUERA DIAS"
+   },
+   {
+    "fotograma": 112,
+    "t": 3.733,
+    "texto": "LA SEMANA DEL DEPOR vO FUERA DIAS"
+   },
+   {
+    "fotograma": 120,
+    "t": 4.0,
+    "texto": "LA SEMANA DEL DEPOR VO FUERA DIAS"
+   },
+   {
+    "fotograma": 128,
+    "t": 4.267,
+    "texto": "LA SEMANA DEL DEPOR VO FUERA DIAS"
+   },
+   {
+    "fotograma": 135,
+    "t": 4.5,
+    "texto": "LA SEMANA DEL DEPOR VO FUERA DIAS"
+   },
+   {
+    "fotograma": 136,
+    "t": 4.533,
+    "texto": "LA SEMANA DEL DEPOR vO FUERA DIAS"
+   },
+   {
+    "fotograma": 144,
+    "t": 4.8,
+    "texto": "FUERA DIAS"
+   },
+   {
+    "fotograma": 152,
+    "t": 5.067,
+    "texto": "LA SEMANA DEL DEPOR vO FUERA"
+   },
+   {
+    "fotograma": 160,
+    "t": 5.333,
+    "texto": "FUERA 4DÍAS"
+   },
+   {
+    "fotograma": 168,
+    "t": 5.6,
+    "texto": "FUERA DÍAS"
+   },
+   {
+    "fotograma": 169,
+    "t": 5.633,
+    "texto": "LD de Tit"
+   },
+   {
+    "fotograma": 176,
+    "t": 5.867,
+    "texto": "LA SEMANA DEL DEPORTIVO VUELVEN DE SUS SELECCIONES MAR MIÉ JUE VIE SÁB"
+   },
+   {
+    "fotograma": 184,
+    "t": 6.133,
+    "texto": "LA SEMANA DEL DEPORTIVO VUELVEN DE SUS SELECCIONES MAR MIÉ JUE VIE SÁB"
+   },
+   {
+    "fotograma": 192,
+    "t": 6.4,
+    "texto": "LA SEMANA DEL DEPORTIVO VUELVEN DE SUS SELECCIONES MAR MIÉ JUE VIE SÁB"
+   },
+   {
+    "fotograma": 200,
+    "t": 6.667,
+    "texto": "LA SEMANA DEL DEPORTIVO VUELVEN DE SUS SELECCIONES MAR MIÉ JUE VIE SÁB ee"
+   },
+   {
+    "fotograma": 208,
+    "t": 6.933,
+    "texto": "LA SEMANA DEL DEPORTIVO VUELVEN DE SUS SELECCIONES MAR MIÉ JUE VIE SÁB"
+   },
+   {
+    "fotograma": 212,
+    "t": 7.067,
+    "texto": "LA SEMANA DEL DEPORTIVO VUELVEN DE SUS SELECCIONES MAR MIÉ JUE VIE SÁB 00590"
+   },
+   {
+    "fotograma": 216,
+    "t": 7.2,
+    "texto": "LA SEMANA DEL DEPORTIVO VUELVEN DE SUS SELECCIONES MAR MIÉ JUE VIE SÁB 000"
+   },
+   {
+    "fotograma": 224,
+    "t": 7.467,
+    "texto": "LA SEMANA DEL DEPORTIVO VUELVEN DE SUS SELECCIONES MAR MIÉ JUE VIE SÁB 009090"
+   },
+   {
+    "fotograma": 232,
+    "t": 7.733,
+    "texto": "LA SEMANA DEL DEPORTIVO VUELVEN DE SUS SELECCIONES MAR MIÉ JUE VIE SÁB 009090"
+   },
+   {
+    "fotograma": 240,
+    "t": 8.0,
+    "texto": "LA SEMANA DEL DEPORTIVO VUELVEN DE SUS SELECCIONES MAR MIÉ JUE VIE SÁB 00000 14:00"
+   },
+   {
+    "fotograma": 248,
+    "t": 8.267,
+    "texto": "LA SEMANA DEL DEPORTIVO VUELVEN DE SUS SELECCIONES MAR MIÉ JUE VIE SÁB 00000 14:00"
+   },
+   {
+    "fotograma": 256,
+    "t": 8.533,
+    "texto": "LA SEMANA DEL DEPORTIVO VUELVEN DE SUS SELECCIONES MAR MIÉ JUE VIE SÁB 00000 14:00"
+   },
+   {
+    "fotograma": 257,
+    "t": 8.567,
+    "texto": "MAR MIÉ JUE VIE SÁB"
+   },
+   {
+    "fotograma": 264,
+    "t": 8.8,
+    "texto": "TÚ NO TIENES INTERNACIONALES MAR MIÉ JUE VIE SÁB"
+   },
+   {
+    "fotograma": 272,
+    "t": 9.067,
+    "texto": "TÚ NO TIENES INTERNACIONALES MAR MIÉ JUE VIE SÁB eee eee 000 eee 000 eee eee eee 000 eee 000 eee eee eee eee eee eee 00.0 000 eee eee"
+   },
+   {
+    "fotograma": 280,
+    "t": 9.333,
+    "texto": "TÚ NO TIENES INTERNACIONALES MAR MIÉ JUE VIE SÁB eee 00.0 00.0 000 000 eee eee eee 000 000 000 eee 000 00.0 eee eee eee 00.0 eee 00.00 00.0 000 00.0 eee 000 eee 000"
+   },
+   {
+    "fotograma": 288,
+    "t": 9.6,
+    "texto": "TÚ NO TIENES INTERNACIONALES MAR MIÉ JUE VIE SÁB 000 eee 000 000 eee 000 eee eee eee 000 000 eee 000 eee eee 000 eee 000 00.0 eee 000 000 eee eee 000"
+   },
+   {
+    "fotograma": 296,
+    "t": 9.867,
+    "texto": "TÚ NO TIENES INTERNACIONALES MAR MIÉ JUE VIE SÁB eee eee eee 00.0 000 eee eee eee 00.0 000 00.0 00.0 eee 000 000 000 000 000 eee"
+   },
+   {
+    "fotograma": 302,
+    "t": 10.067,
+    "texto": "TÚ NO TIENES INTERNACIONALES MAR MIÉ JUE VIE SÁB 000 000 000 899 eee 0:50 eee 000 eee eee eee eee 00.0 000 eee 00.0 ece eee 000 eee 000 000 eee"
+   },
+   {
+    "fotograma": 304,
+    "t": 10.133,
+    "texto": "TÚ NO TIENES INTERNACIONALES MAR MIÉ JUE VIE SÁB 000 000 eee 000 000 000 000 00.0 eee eee 000 eee 000 000 000 eee 00.0 eee 000 000 eee"
+   },
+   {
+    "fotograma": 312,
+    "t": 10.4,
+    "texto": "la tuya. 000 MAR 00.0 MIÉ JUE eee VIE 000 SÁB eee eee 000 000 eee 000 eee eee eee eee 00.0 eee eee 00.00 00.0. 000 00.0"
+   },
+   {
+    "fotograma": 320,
+    "t": 10.667,
+    "texto": "la tuya. MAR 000 MIÉ JUE 00.0 VIE eee SAB 000 000 000 00.0 eee 00.0 eee ee 00.0 00.0 000 000 eee 00.0 000"
+   },
+   {
+    "fotograma": 328,
+    "t": 10.933,
+    "texto": "la tuya. MIE JUE 000 VIE 000 SÁB eee 000 000 000 eee eee eee 00 000 eee 00.0 000 000"
+   },
+   {
+    "fotograma": 336,
+    "t": 11.2,
+    "texto": "la tuya. ee MAR MIÉ JUE 00.0. VIE SAB eee eee eee ee eee ee 00.0. oo eee ¡00 eee eee 00 00.0. 00.0."
+   },
+   {
+    "fotograma": 344,
+    "t": 11.467,
+    "texto": "MIÉ la tuya. JUE VIE SÁB eee eee eee 00.0 00.0 ee 00.0 eee oo 000 ee 00.0. eee 00.0 00.0 examen"
+   },
+   {
+    "fotograma": 347,
+    "t": 11.567,
+    "texto": "la tuya. 00 MAR 00.0 MIÉ JUE 00.0 VIE SAB 00.00 00.0 000 000 00.0 eee 00 eee eee ee examen"
+   },
+   {
+    "fotograma": 352,
+    "t": 11.733,
+    "texto": "MIÉ la tuya. JUE VIE SÁB 000 00.00 eee eee ee 000 000 eee 00: eee eee 000 examen"
+   },
+   {
+    "fotograma": 360,
+    "t": 12.0,
+    "texto": "la tuya. MIE JUE eee VIE SÁB 00.0 eee ee 00.00 ee eee :00 eee 00.0 eee 000 eee examen"
+   },
+   {
+    "fotograma": 368,
+    "t": 12.267,
+    "texto": "la tuya. eee MIE JUE 000 VIE eee SAB eee eee ee eee ee eee eee ee eee ee 000 eee eee 000 eee examen"
+   },
+   {
+    "fotograma": 376,
+    "t": 12.533,
+    "texto": "la tuya. 000 MIÉ JUE eee VIE SÁB eee 00.0 ee 000 ee 00.0 eee eee :00 00.0 00.00 examen"
+   },
+   {
+    "fotograma": 384,
+    "t": 12.8,
+    "texto": "MAR MIÉ la tuya. JUE VIE SÁB 00.0 eee 000| 00.0. 00.0 000 000 eee 00 eee 000| eee 00.0 ee; eee 000 examen"
+   },
+   {
+    "fotograma": 392,
+    "t": 13.067,
+    "texto": "la tuya. MIÉ JUE SAB 000 eee eee 000 000 00 ee 00.00 eee 000 examen solo hoy"
+   },
+   {
+    "fotograma": 400,
+    "t": 13.333,
+    "texto": "la tuya. MIÉ JUE SAB 000 000 eee ee eee ee eee 00.0 000 examen solo hoy"
+   },
+   {
+    "fotograma": 408,
+    "t": 13.6,
+    "texto": "MIÉ la tuya. JUE SÁB 000 00.0 eee 00 000 LA] eee 00.0 00.0 examen solo hoy"
+   },
+   {
+    "fotograma": 416,
+    "t": 13.867,
+    "texto": "MAR MIÉ la tuya JUE VIE SÁB ee 000 eee 00.0 000 00 ee 000 eee ee 000 eee 000 examen solo hoy"
+   },
+   {
+    "fotograma": 424,
+    "t": 14.133,
+    "texto": "MIÉ la tuya. JUE SÁB eee 000 eee ee 000 ee 000 00 00. ee 000 000 000 examen solo hoy"
+   },
+   {
+    "fotograma": 432,
+    "t": 14.4,
+    "texto": "MIÉ la tuya. JUE SÁB eee 000 000 ee 00.0 ee 000 000 000 examen solo hoy"
+   },
+   {
+    "fotograma": 437,
+    "t": 14.567,
+    "texto": "MAR MIÉ la tuya. JUE SAB ee 000 eee 000 eee ee eee 00 eee ee 000 000 eee 000 examen solo hoy"
+   },
+   {
+    "fotograma": 440,
+    "t": 14.667,
+    "texto": "MAR MIÉ la tuya JUE SAB ee 000 000 000 00.0 000 00 000 ee 000 000 000 examen solo hoy"
+   },
+   {
+    "fotograma": 448,
+    "t": 14.933,
+    "texto": "MAR MIÉ JUE VIE SÁB 990 000 eee 000 eee eee 00.0 0900 eee 000 eee es. 00.0 eee eee eee eee eee eee"
+   },
+   {
+    "fotograma": 456,
+    "t": 15.2,
+    "texto": "MAR 00.0 MIÉ eee JUE eee VIE 000 SÁB eee eee eee eee 000 00.0 eee 00.0 00.0. eee 000 000 000 000 eee eee eee 00.0 00.0 eee 00.00 000 COMO"
+   },
+   {
+    "fotograma": 464,
+    "t": 15.467,
+    "texto": "MAR 00.0. 00.0 JUE 00.0. VIE she eee 00.0 00.0 eee eee 00.0 000 00.0 eee eee eee 00.0 COMO SI VINIERAN"
+   },
+   {
+    "fotograma": 472,
+    "t": 15.733,
+    "texto": "MAR 00.0. MIÉ 00.0 JUE 00.0. VIE eee eee 00.0 00.0 eee 009 00.0 00.0 00.0 eee 00.0 eee COMO"
+   },
+   {
+    "fotograma": 480,
+    "t": 16.0,
+    "texto": "MAR MIÉ JUE VIE SÁB 00.0. 00.0 000 eee eee eee 00.0 eee 00.0 00.0. 00.0 eee 00.0 000 000 00.0 COMO SI VINIERAN todos."
+   },
+   {
+    "fotograma": 482,
+    "t": 16.067,
+    "texto": "MAR MIÉ JUE VIE SÁB 00.0. 00.0 000 eee eee eee 00.0 eee 00.0 00.0. 00.0 eee 00.0 000 000 00.0 COMO SI VINIERAN todos."
+   },
+   {
+    "fotograma": 488,
+    "t": 16.267,
+    "texto": "MAR MIÉ JUE VIE SÁB 00.0 00.00 00.0 00.0 eee 00.0 00.0 00.0 00.0 eee eee 000 COMO SI VINIERAN todos."
+   },
+   {
+    "fotograma": 494,
+    "t": 16.467,
+    "texto": "MAR MIÉ JUE VIE SÁB 00.0. 000 eee eee eee 00.0. eee 00.0 00.0. 00.0 eee 00.0 000 00.0 COMO SI VINIERAN todos."
+   },
+   {
+    "fotograma": 496,
+    "t": 16.533,
+    "texto": "MAR MIÉ JUE VIE SÁB 00.0. 00.0 000 eee eee 00.0 eee 00.0 00.0. 00.0 eee 00.0 000 000 00.0 COMO SI VINIERAN todos."
+   },
+   {
+    "fotograma": 504,
+    "t": 16.8,
+    "texto": "ANTES DE ESCRIBIR LA SEMANA"
+   },
+   {
+    "fotograma": 512,
+    "t": 17.067,
+    "texto": "ANTES DE ESCRIBIR LA SEMANA"
+   },
+   {
+    "fotograma": 520,
+    "t": 17.333,
+    "texto": "ANTES DE ESCRIBIR LA SEMANA"
+   },
+   {
+    "fotograma": 527,
+    "t": 17.567,
+    "texto": "ANTES DE ESCRIBIR LA SEMANA"
+   },
+   {
+    "fotograma": 528,
+    "t": 17.6,
+    "texto": "ANTES DE ESCRIBIR LA SEMANA"
+   },
+   {
+    "fotograma": 536,
+    "t": 17.867,
+    "texto": "ANTES DE ESCRIBIR LA SEMANA Quién viene cada día."
+   },
+   {
+    "fotograma": 544,
+    "t": 18.133,
+    "texto": "ANTES DE ESCRIBIR LA SEMANA Quién viene cada día."
+   },
+   {
+    "fotograma": 552,
+    "t": 18.4,
+    "texto": "ANTES DE ESCRIBIR LA SEMANA Quién viene cada día."
+   },
+   {
+    "fotograma": 560,
+    "t": 18.667,
+    "texto": "ANTES DE ESCRIBIR LA SEMANA Quién viene cada dia."
+   },
+   {
+    "fotograma": 568,
+    "t": 18.933,
+    "texto": "ANTES DE ESCRIBIR LA SEMANA Quién viene cada día."
+   },
+   {
+    "fotograma": 572,
+    "t": 19.067,
+    "texto": "ANTES DE ESCRIBIR LA SEMANA Quién viene cada día."
+   },
+   {
+    "fotograma": 576,
+    "t": 19.2,
+    "texto": "ANTES DE ESCRIBIR LA SEMANA Quién viene cada día."
+   },
+   {
+    "fotograma": 584,
+    "t": 19.467,
+    "texto": "ANTES DE ESCRIBIR LA SEMANA Quién viene cada día."
+   },
+   {
+    "fotograma": 592,
+    "t": 19.733,
+    "texto": "ANTES DE ESCRIBIR LA SEMANA Quién viene cada día."
+   },
+   {
+    "fotograma": 600,
+    "t": 20.0,
+    "texto": "ANTES DE ESCRIBIR LA SEMANA Quién viene cada día."
+   },
+   {
+    "fotograma": 608,
+    "t": 20.267,
+    "texto": "ANTES DE ESCRIBIR LA SEMANA Quién viene cada día."
+   },
+   {
+    "fotograma": 616,
+    "t": 20.533,
+    "texto": "ANTES DE ESCRIBIR LA SEMANA Quién viene cada día."
+   },
+   {
+    "fotograma": 617,
+    "t": 20.567,
+    "texto": "ANTES DE ESCRIBIR LA SEMANA Quién viene cada día."
+   },
+   {
+    "fotograma": 624,
+    "t": 20.8,
+    "texto": "ANTES DE ESCRIBIR LA SEMANA Quién viene cada día."
+   },
+   {
+    "fotograma": 632,
+    "t": 21.067,
+    "texto": "ANTES DE ESCRIBIR LA SEMANA Quién viene cada día."
+   },
+   {
+    "fotograma": 640,
+    "t": 21.333,
+    "texto": "ANTES DE ESCRIBIR LA SEMANA Quién viene cada día. Lo detodos,"
+   },
+   {
+    "fotograma": 648,
+    "t": 21.6,
+    "texto": "ANTES DE ESCRIBIR LA SEMANA Quién viene cada día. Lo de todos, el día que más"
+   },
+   {
+    "fotograma": 656,
+    "t": 21.867,
+    "texto": "ANTES DE ESCRIBIR LA SEMANA Quién viene cada día. Lo detodos, el día que más"
+   },
+   {
+    "fotograma": 662,
+    "t": 22.067,
+    "texto": "ANTES DE ESCRIBIR LA SEMANA Quién viene cada día. Lo de todos, el día que más"
+   },
+   {
+    "fotograma": 664,
+    "t": 22.133,
+    "texto": "ANTES DE ESCRIBIR LA SEMANA Quién viene cada día. Lo detodos, el día que más sois."
+   },
+   {
+    "fotograma": 672,
+    "t": 22.4,
+    "texto": "ANTES DE ESCRIBIR LA SEMANA Quién viene cada día. Lo de todos, el día que más sois"
+   },
+   {
+    "fotograma": 680,
+    "t": 22.667,
+    "texto": "ANTES DE ESCRIBIR LA SEMANA Quién viene cada día. Lo de todos, el día que más sois."
+   },
+   {
+    "fotograma": 688,
+    "t": 22.933,
+    "texto": "ANTES DE ESCRIBIR LA SEMANA Quién viene cada día. Lo de todos, el día que más sois."
+   },
+   {
+    "fotograma": 696,
+    "t": 23.2,
+    "texto": "ANTES DE ESCRIBIR LA SEMANA Quién viene cada día. Lo de todos, el día que más sois."
+   },
+   {
+    "fotograma": 704,
+    "t": 23.467,
+    "texto": "ANTES DE ESCRIBIR LA SEMANA Quién viene cada día. Lo de todos, el día que más sois."
+   },
+   {
+    "fotograma": 707,
+    "t": 23.567,
+    "texto": "ANTES DE ESCRIBIR LA SEMANA Quién viene cada día. Lo de todos, el dia que más sois."
+   },
+   {
+    "fotograma": 712,
+    "t": 23.733,
+    "texto": "ANTES DE ESCRIBIR LA SEMANA Quién viene cada día. Lo el día que más sois"
+   },
+   {
+    "fotograma": 720,
+    "t": 24.0,
+    "texto": "ANTES DE ESCRIBIR LA SEMANA Quién viene cada día. Lo de todos, el día que más sois."
+   },
+   {
+    "fotograma": 728,
+    "t": 24.267,
+    "texto": "ANTES DE ESCRIBIR LA SEMANA Quién viene cada día. Lodetodos, el día que más"
+   },
+   {
+    "fotograma": 732,
+    "t": 24.4,
+    "texto": "ANTES DE ESCRIBIR LA SEMANA Quién viene cada día. Lo todos, el día que más sois."
+   },
+   {
+    "fotograma": 733,
+    "t": 24.433,
+    "texto": "ANCA MÁSTIL"
+   },
+   {
+    "fotograma": 736,
+    "t": 24.533,
+    "texto": "me om MASTIL ES"
+   },
+   {
+    "fotograma": 744,
+    "t": 24.8,
+    "texto": "me TU STA Tit Se ii"
+   },
+   {
+    "fotograma": 752,
+    "t": 25.067,
+    "texto": "TO TU ST MASTIL"
+   },
+   {
+    "fotograma": 760,
+    "t": 25.333,
+    "texto": "LON lad"
+   },
+   {
+    "fotograma": 768,
+    "t": 25.6,
+    "texto": "RE TOM TU S17 STit"
+   },
+   {
+    "fotograma": 776,
+    "t": 25.867,
+    "texto": "TU TA FF cE"
+   },
+   {
+    "fotograma": 778,
+    "t": 25.933,
+    "texto": "cE TOP TU FF Das"
+   },
+   {
+    "fotograma": 780,
+    "t": 26.0,
+    "texto": "TO TU AL oe"
+   },
+   {
+    "fotograma": 784,
+    "t": 26.133,
+    "texto": "TU FF NUE _MASTIL"
+   },
+   {
+    "fotograma": 792,
+    "t": 26.4,
+    "texto": "ST QUE estáistodos."
+   },
+   {
+    "fotograma": 800,
+    "t": 26.667,
+    "texto": "¿QU 2c"
+   },
+   {
+    "fotograma": 808,
+    "t": 26.933,
+    "texto": "estais todos"
+   },
+   {
+    "fotograma": 816,
+    "t": 27.2,
+    "texto": "RETO PAR QUE estáis todos"
+   },
+   {
+    "fotograma": 823,
+    "t": 27.433,
+    "texto": "AR ¿QUÉ DÍA estáis"
+   },
+   {
+    "fotograma": 824,
+    "t": 27.467,
+    "texto": "RET estáis todos?"
+   },
+   {
+    "fotograma": 827,
+    "t": 27.567,
+    "texto": ""
+   },
+   {
+    "fotograma": 828,
+    "t": 27.6,
+    "texto": ""
+   },
+   {
+    "fotograma": 832,
+    "t": 27.733,
+    "texto": "ABRE EL SÁBADO"
+   },
+   {
+    "fotograma": 840,
+    "t": 28.0,
+    "texto": "28 NOV"
+   },
+   {
+    "fotograma": 848,
+    "t": 28.267,
+    "texto": "28 NOV"
+   },
+   {
+    "fotograma": 856,
+    "t": 28.533,
+    "texto": "28 NOV"
+   },
+   {
+    "fotograma": 864,
+    "t": 28.8,
+    "texto": "28 NOV"
+   },
+   {
+    "fotograma": 872,
+    "t": 29.067,
+    "texto": "28 NOV"
+   },
+   {
+    "fotograma": 873,
+    "t": 29.1,
+    "texto": "28 NOV"
+   },
+   {
+    "fotograma": 880,
+    "t": 29.333,
+    "texto": "28 NOV"
+   },
+   {
+    "fotograma": 888,
+    "t": 29.6,
+    "texto": "ABRE EL SÁBADO 28 NOV LA APP DE PROTEAM"
+   },
+   {
+    "fotograma": 896,
+    "t": 29.867,
+    "texto": "ABRE EL SÁBADO 28 NOV LA APP DE PROTEAM"
+   },
+   {
+    "fotograma": 904,
+    "t": 30.133,
+    "texto": "ABRE EL SÁBADO 28 NOV LA APP DE PROTEAM"
+   },
+   {
+    "fotograma": 912,
+    "t": 30.4,
+    "texto": "ABRE EL SÁBADO 28 NOV LA APP DE PROTEAM"
+   },
+   {
+    "fotograma": 918,
+    "t": 30.6,
+    "texto": "LISTA DE ESPERA"
+   },
+   {
+    "fotograma": 920,
+    "t": 30.667,
+    "texto": "LISTA DE ESPERA 07 06 29 59"
+   },
+   {
+    "fotograma": 928,
+    "t": 30.933,
+    "texto": "LISTA DE ESPERA 07 06 29 52 DÍAS HORAS SEG entrenado|"
+   },
+   {
+    "fotograma": 936,
+    "t": 31.2,
+    "texto": "LISTA DE ESPERA 02 07 06 DÍAS HORAS SEG entrenador@miclub.es"
+   },
+   {
+    "fotograma": 944,
+    "t": 31.467,
+    "texto": "LISTA DE ESPERA 07 04 45 DÍAS HORAS SEG entrenador@miclub.es|"
+   },
+   {
+    "fotograma": 952,
+    "t": 31.733,
+    "texto": "LISTA DE ESPERA 19 o7 01 DÍAS HORAS SEG entrenador@miclub.es"
+   },
+   {
+    "fotograma": 960,
+    "t": 32.0,
+    "texto": "LISTA DE ESPERA 06 19 06 DÍAS HORAS SEG entrenador@miclub.es"
+   },
+   {
+    "fotograma": 963,
+    "t": 32.1,
+    "texto": "LISTA DE ESPERA 15 51 52 06 DÍAS HORAS MIN SEG entrenador@miclub.es"
+   },
+   {
+    "fotograma": 968,
+    "t": 32.267,
+    "texto": "LISTA DE ESPERA 06 09 22 DÍAS HORAS SEG entrenador@miclub.es"
+   },
+   {
+    "fotograma": 976,
+    "t": 32.533,
+    "texto": "LISTA DE ESPERA 05 18 27 DÍAS HORAS SEG entrenadoremiclub.es"
+   },
+   {
+    "fotograma": 984,
+    "t": 32.8,
+    "texto": "LISTA DE ESPERA 04 21 37 DÍAS HORAS MIN SEG entrenador@miclub.es CE"
+   },
+   {
+    "fotograma": 992,
+    "t": 33.067,
+    "texto": "LISTA DE ESPERA 03 19 15 DÍAS HORAS MIN SEG entrenador@miclub.es"
+   },
+   {
+    "fotograma": 1000,
+    "t": 33.333,
+    "texto": "LISTA DE ESPERA o2 08 36 DÍAS HORAS SEG entrenador@miclub.es"
+   },
+   {
+    "fotograma": 1008,
+    "t": 33.6,
+    "texto": "LISTA DE ESPERA 14 01 00 DÍAS HORAS SEG entrenador@miclub.es"
+   },
+   {
+    "fotograma": 1012,
+    "t": 33.733,
+    "texto": "LISTA DE ESPERA 00 00 OO 00 DIAS HORAS MIN SEG entrenador@miclub.es"
+   },
+   {
+    "fotograma": 1013,
+    "t": 33.767,
+    "texto": "qe"
+   },
+   {
+    "fotograma": 1016,
+    "t": 33.867,
+    "texto": "LISTA: SE CIERRA EL"
+   },
+   {
+    "fotograma": 1024,
+    "t": 34.133,
+    "texto": "LISTA: SE CIERRA EL 27 NOV meses gratis."
+   },
+   {
+    "fotograma": 1032,
+    "t": 34.4,
+    "texto": "LISTA: SE CIERRA EL 27 NOV meses gratis."
+   },
+   {
+    "fotograma": 1040,
+    "t": 34.667,
+    "texto": "LISTA: SE CIERRA EL 27 NOV meses gratis."
+   },
+   {
+    "fotograma": 1044,
+    "t": 34.8,
+    "texto": "LISTA: SE CIERRA EL 27 NOV meses"
+   },
+   {
+    "fotograma": 1048,
+    "t": 34.933,
+    "texto": "LISTA: SE CIERRA EL 27 NOV Meses gratis."
+   },
+   {
+    "fotograma": 1056,
+    "t": 35.2,
+    "texto": "LISTA: SE CIERRA EL 27 NOV meses gratis."
+   },
+   {
+    "fotograma": 1064,
+    "t": 35.467,
+    "texto": "LISTA: SE CIERRA EL 27 NOV meses gratis."
+   },
+   {
+    "fotograma": 1072,
+    "t": 35.733,
+    "texto": "LISTA: SE CIERRA EL 27 NOV meses gratis."
+   },
+   {
+    "fotograma": 1076,
+    "t": 35.867,
+    "texto": "LISTA: SE CIERRA EL 27 NOV meses gratis."
+   }
+  ],
+  "bloques": [
+   {
+    "desde": 0.0,
+    "hasta": 1.333,
+    "texto": "LA SEMANA DEL DEPOR vO FUERA DIAS",
+    "palabras": 7
+   },
+   {
+    "desde": 1.6,
+    "hasta": 2.133,
+    "texto": "LA SEMANA DEL DEPOR VO FUERA 4DIAS",
+    "palabras": 7
+   },
+   {
+    "desde": 2.667,
+    "hasta": 2.933,
+    "texto": "LA SEMANA DEL DEPOR vo FUERA DIAS",
+    "palabras": 7
+   },
+   {
+    "desde": 3.2,
+    "hasta": 4.533,
+    "texto": "LA SEMANA DEL DEPOR vO FUERA DIAS",
+    "palabras": 7
+   },
+   {
+    "desde": 5.067,
+    "hasta": 5.067,
+    "texto": "LA SEMANA DEL DEPOR vO FUERA",
+    "palabras": 6
+   },
+   {
+    "desde": 5.867,
+    "hasta": 8.533,
+    "texto": "LA SEMANA DEL DEPORTIVO VUELVEN DE SUS SELECCIONES MAR MIÉ JUE VIE SÁB 00000 14:00",
+    "palabras": 15
+   },
+   {
+    "desde": 8.567,
+    "hasta": 8.567,
+    "texto": "MAR MIÉ JUE VIE SÁB",
+    "palabras": 5
+   },
+   {
+    "desde": 8.8,
+    "hasta": 10.133,
+    "texto": "TÚ NO TIENES INTERNACIONALES MAR MIÉ JUE VIE SÁB eee 00.0 00.0 000 000 eee eee eee 000 000 000 eee 000 00.0 eee eee eee 00.0 eee 00.00 00.0 000 00.0 eee 000 eee 000",
+    "palabras": 36
+   },
+   {
+    "desde": 10.4,
+    "hasta": 10.4,
+    "texto": "la tuya. 000 MAR 00.0 MIÉ JUE eee VIE 000 SÁB eee eee 000 000 eee 000 eee eee eee eee 00.0 eee eee 00.00 00.0. 000 00.0",
+    "palabras": 28
+   },
+   {
+    "desde": 10.667,
+    "hasta": 10.667,
+    "texto": "la tuya. MAR 000 MIÉ JUE 00.0 VIE eee SAB 000 000 000 00.0 eee 00.0 eee ee 00.0 00.0 000 000 eee 00.0 000",
+    "palabras": 25
+   },
+   {
+    "desde": 10.933,
+    "hasta": 10.933,
+    "texto": "la tuya. MIE JUE 000 VIE 000 SÁB eee 000 000 000 eee eee eee 00 000 eee 00.0 000 000",
+    "palabras": 21
+   },
+   {
+    "desde": 11.2,
+    "hasta": 11.2,
+    "texto": "la tuya. ee MAR MIÉ JUE 00.0. VIE SAB eee eee eee ee eee ee 00.0. oo eee ¡00 eee eee 00 00.0. 00.0.",
+    "palabras": 24
+   },
+   {
+    "desde": 11.467,
+    "hasta": 11.467,
+    "texto": "MIÉ la tuya. JUE VIE SÁB eee eee eee 00.0 00.0 ee 00.0 eee oo 000 ee 00.0. eee 00.0 00.0 examen",
+    "palabras": 22
+   },
+   {
+    "desde": 11.567,
+    "hasta": 11.567,
+    "texto": "la tuya. 00 MAR 00.0 MIÉ JUE 00.0 VIE SAB 00.00 00.0 000 000 00.0 eee 00 eee eee ee examen",
+    "palabras": 21
+   },
+   {
+    "desde": 11.733,
+    "hasta": 11.733,
+    "texto": "MIÉ la tuya. JUE VIE SÁB 000 00.00 eee eee ee 000 000 eee 00: eee eee 000 examen",
+    "palabras": 19
+   },
+   {
+    "desde": 12.0,
+    "hasta": 12.0,
+    "texto": "la tuya. MIE JUE eee VIE SÁB 00.0 eee ee 00.00 ee eee :00 eee 00.0 eee 000 eee examen",
+    "palabras": 20
+   },
+   {
+    "desde": 12.267,
+    "hasta": 12.267,
+    "texto": "la tuya. eee MIE JUE 000 VIE eee SAB eee eee ee eee ee eee eee ee eee ee 000 eee eee 000 eee examen",
+    "palabras": 25
+   },
+   {
+    "desde": 12.533,
+    "hasta": 12.533,
+    "texto": "la tuya. 000 MIÉ JUE eee VIE SÁB eee 00.0 ee 000 ee 00.0 eee eee :00 00.0 00.00 examen",
+    "palabras": 20
+   },
+   {
+    "desde": 12.8,
+    "hasta": 12.8,
+    "texto": "MAR MIÉ la tuya. JUE VIE SÁB 00.0 eee 000| 00.0. 00.0 000 000 eee 00 eee 000| eee 00.0 ee; eee 000 examen",
+    "palabras": 24
+   },
+   {
+    "desde": 13.067,
+    "hasta": 13.333,
+    "texto": "la tuya. MIÉ JUE SAB 000 eee eee 000 000 00 ee 00.00 eee 000 examen solo hoy",
+    "palabras": 18
+   },
+   {
+    "desde": 13.6,
+    "hasta": 13.6,
+    "texto": "MIÉ la tuya. JUE SÁB 000 00.0 eee 00 000 LA] eee 00.0 00.0 examen solo hoy",
+    "palabras": 17
+   },
+   {
+    "desde": 13.867,
+    "hasta": 13.867,
+    "texto": "MAR MIÉ la tuya JUE VIE SÁB ee 000 eee 00.0 000 00 ee 000 eee ee 000 eee 000 examen solo hoy",
+    "palabras": 23
+   },
+   {
+    "desde": 14.133,
+    "hasta": 14.4,
+    "texto": "MIÉ la tuya. JUE SÁB eee 000 eee ee 000 ee 000 00 00. ee 000 000 000 examen solo hoy",
+    "palabras": 21
+   },
+   {
+    "desde": 14.567,
+    "hasta": 14.667,
+    "texto": "MAR MIÉ la tuya. JUE SAB ee 000 eee 000 eee ee eee 00 eee ee 000 000 eee 000 examen solo hoy",
+    "palabras": 23
+   },
+   {
+    "desde": 14.933,
+    "hasta": 14.933,
+    "texto": "MAR MIÉ JUE VIE SÁB 990 000 eee 000 eee eee 00.0 0900 eee 000 eee es. 00.0 eee eee eee eee eee eee",
+    "palabras": 24
+   },
+   {
+    "desde": 15.2,
+    "hasta": 15.2,
+    "texto": "MAR 00.0 MIÉ eee JUE eee VIE 000 SÁB eee eee eee eee 000 00.0 eee 00.0 00.0. eee 000 000 000 000 eee eee eee 00.0 00.0 eee 00.00 000 COMO",
+    "palabras": 32
+   },
+   {
+    "desde": 15.467,
+    "hasta": 15.467,
+    "texto": "MAR 00.0. 00.0 JUE 00.0. VIE she eee 00.0 00.0 eee eee 00.0 000 00.0 eee eee eee 00.0 COMO SI VINIERAN",
+    "palabras": 22
+   },
+   {
+    "desde": 15.733,
+    "hasta": 15.733,
+    "texto": "MAR 00.0. MIÉ 00.0 JUE 00.0. VIE eee eee 00.0 00.0 eee 009 00.0 00.0 00.0 eee 00.0 eee COMO",
+    "palabras": 20
+   },
+   {
+    "desde": 16.0,
+    "hasta": 16.533,
+    "texto": "MAR MIÉ JUE VIE SÁB 00.0. 00.0 000 eee eee eee 00.0 eee 00.0 00.0. 00.0 eee 00.0 000 000 00.0 COMO SI VINIERAN todos.",
+    "palabras": 25
+   },
+   {
+    "desde": 16.8,
+    "hasta": 24.4,
+    "texto": "ANTES DE ESCRIBIR LA SEMANA Quién viene cada día. Lo de todos, el día que más sois.",
+    "palabras": 17
+   },
+   {
+    "desde": 24.8,
+    "hasta": 24.8,
+    "texto": "me TU STA Tit Se ii",
+    "palabras": 6
+   },
+   {
+    "desde": 25.6,
+    "hasta": 25.6,
+    "texto": "RE TOM TU S17 STit",
+    "palabras": 5
+   },
+   {
+    "desde": 25.933,
+    "hasta": 25.933,
+    "texto": "cE TOP TU FF Das",
+    "palabras": 5
+   },
+   {
+    "desde": 27.2,
+    "hasta": 27.2,
+    "texto": "RETO PAR QUE estáis todos",
+    "palabras": 5
+   },
+   {
+    "desde": 28.0,
+    "hasta": 29.333,
+    "texto": "28 NOV",
+    "palabras": 2
+   },
+   {
+    "desde": 29.6,
+    "hasta": 30.4,
+    "texto": "ABRE EL SÁBADO 28 NOV LA APP DE PROTEAM",
+    "palabras": 9
+   },
+   {
+    "desde": 30.6,
+    "hasta": 33.733,
+    "texto": "LISTA DE ESPERA 15 51 52 06 DÍAS HORAS MIN SEG entrenador@miclub.es",
+    "palabras": 12
+   },
+   {
+    "desde": 33.867,
+    "hasta": 35.867,
+    "texto": "LISTA: SE CIERRA EL 27 NOV meses gratis.",
+    "palabras": 8
+   }
+  ]
+ },
+ "audio": {
+  "tiene_audio": true,
+  "wav": "intel/videos/u64/audio_16k.wav",
+  "volumen_integrado_lufs": "-14.38",
+  "pico_real_db": "-0.03",
+  "rango_lra": "1.80",
+  "silencios": [
+   {
+    "desde": 8.27,
+    "hasta": 8.58
+   }
+  ],
+  "subidas_bruscas_s": [
+   1.8,
+   2.4,
+   3.9,
+   5.6,
+   7.4,
+   8.5,
+   10.4,
+   13.8,
+   15.1,
+   17.6,
+   18.3,
+   19.1,
+   19.8,
+   21.2,
+   24.5,
+   25.9,
+   27.7,
+   30.6,
+   31.8,
+   33.8
+  ],
+  "energia_db_cada_0_1s": [
+   -19.0,
+   -19.3,
+   -12.7,
+   -22.1,
+   -13.7,
+   -18.1,
+   -16.1,
+   -16.9,
+   -13.6,
+   -14.6,
+   -25.2,
+   -19.5,
+   -23.8,
+   -26.2,
+   -29.8,
+   -26.5,
+   -29.0,
+   -22.1,
+   -15.4,
+   -9.9,
+   -14.6,
+   -15.2,
+   -14.0,
+   -24.1,
+   -12.1,
+   -18.5,
+   -15.8,
+   -16.8,
+   -14.6,
+   -18.8,
+   -18.1,
+   -25.6,
+   -24.3,
+   -27.0,
+   -25.9,
+   -28.1,
+   -25.9,
+   -28.6,
+   -26.9,
+   -15.2,
+   -15.7,
+   -23.3,
+   -20.8,
+   -16.1,
+   -16.5,
+   -16.3,
+   -16.0,
+   -13.6,
+   -14.7,
+   -14.7,
+   -19.0,
+   -28.8,
+   -31.9,
+   -30.7,
+   -35.2,
+   -31.0,
+   -22.0,
+   -13.5,
+   -19.9,
+   -14.4,
+   -19.5,
+   -15.6,
+   -14.6,
+   -15.5,
+   -15.7,
+   -15.8,
+   -15.5,
+   -19.5,
+   -19.0,
+   -16.0,
+   -21.0,
+   -26.9,
+   -34.2,
+   -22.6,
+   -18.7,
+   -15.8,
+   -15.8,
+   -17.2,
+   -20.6,
+   -14.6,
+   -17.8,
+   -31.7,
+   -37.1,
+   -61.5,
+   -81.6,
+   -24.3,
+   -15.2,
+   -16.5,
+   -14.1,
+   -16.3,
+   -12.4,
+   -13.6,
+   -18.6,
+   -13.3,
+   -16.1,
+   -18.9,
+   -19.3,
+   -20.7,
+   -21.9,
+   -26.6,
+   -26.3,
+   -26.5,
+   -28.4,
+   -28.5,
+   -12.1,
+   -16.3,
+   -17.0,
+   -14.0,
+   -18.6,
+   -17.0,
+   -24.9,
+   -14.8,
+   -13.9,
+   -16.8,
+   -13.1,
+   -13.3,
+   -16.7,
+   -18.1,
+   -15.3,
+   -27.7,
+   -24.9,
+   -15.9,
+   -15.0,
+   -21.7,
+   -14.6,
+   -22.4,
+   -14.0,
+   -14.3,
+   -14.5,
+   -19.1,
+   -18.9,
+   -22.7,
+   -25.3,
+   -27.3,
+   -25.8,
+   -29.3,
+   -27.7,
+   -30.1,
+   -17.6,
+   -12.6,
+   -21.9,
+   -21.7,
+   -18.8,
+   -16.0,
+   -14.9,
+   -18.7,
+   -19.2,
+   -19.8,
+   -13.0,
+   -23.0,
+   -28.7,
+   -11.4,
+   -14.8,
+   -20.3,
+   -14.7,
+   -15.0,
+   -11.9,
+   -14.8,
+   -20.6,
+   -22.6,
+   -25.4,
+   -24.7,
+   -26.2,
+   -25.8,
+   -26.6,
+   -27.0,
+   -23.0,
+   -16.0,
+   -12.1,
+   -16.7,
+   -20.2,
+   -16.0,
+   -26.6,
+   -31.1,
+   -28.5,
+   -32.1,
+   -14.1,
+   -20.1,
+   -13.6,
+   -16.4,
+   -14.3,
+   -29.5,
+   -22.6,
+   -15.6,
+   -18.1,
+   -15.0,
+   -15.8,
+   -13.7,
+   -15.8,
+   -16.6,
+   -26.0,
+   -13.8,
+   -23.5,
+   -16.5,
+   -20.6,
+   -16.1,
+   -26.1,
+   -23.9,
+   -13.4,
+   -14.1,
+   -18.0,
+   -13.0,
+   -17.2,
+   -20.3,
+   -12.3,
+   -17.2,
+   -22.7,
+   -27.1,
+   -28.2,
+   -30.0,
+   -29.7,
+   -32.1,
+   -19.4,
+   -10.6,
+   -13.1,
+   -15.2,
+   -14.7,
+   -17.9,
+   -19.5,
+   -20.7,
+   -13.9,
+   -14.9,
+   -17.2,
+   -20.7,
+   -24.2,
+   -24.8,
+   -25.0,
+   -25.3,
+   -21.9,
+   -15.3,
+   -23.3,
+   -15.9,
+   -14.0,
+   -18.1,
+   -16.3,
+   -16.6,
+   -14.3,
+   -22.0,
+   -25.1,
+   -26.0,
+   -30.0,
+   -27.3,
+   -31.6,
+   -29.1,
+   -31.2,
+   -12.5,
+   -18.2,
+   -18.6,
+   -15.1,
+   -12.7,
+   -17.8,
+   -16.4,
+   -18.5,
+   -23.0,
+   -23.1,
+   -22.6,
+   -23.0,
+   -26.3,
+   -24.4,
+   -13.7,
+   -19.9,
+   -17.5,
+   -18.4,
+   -19.8,
+   -13.7,
+   -14.9,
+   -15.3,
+   -16.8,
+   -14.8,
+   -22.6,
+   -27.9,
+   -27.7,
+   -30.2,
+   -28.4,
+   -30.6,
+   -29.5,
+   -19.3,
+   -14.8,
+   -22.1,
+   -12.3,
+   -13.1,
+   -16.5,
+   -16.5,
+   -19.4,
+   -22.9,
+   -14.4,
+   -18.9,
+   -15.2,
+   -16.5,
+   -18.0,
+   -11.7,
+   -16.8,
+   -15.0,
+   -14.4,
+   -11.3,
+   -23.9,
+   -21.8,
+   -14.0,
+   -16.3,
+   -14.1,
+   -20.6,
+   -21.7,
+   -25.7,
+   -30.0,
+   -28.1,
+   -22.2,
+   -14.2,
+   -16.7,
+   -18.3,
+   -16.4,
+   -14.7,
+   -15.3,
+   -16.6,
+   -14.8,
+   -18.0,
+   -17.5,
+   -18.8,
+   -29.1,
+   -14.7,
+   -14.5,
+   -19.3,
+   -14.3,
+   -15.8,
+   -15.2,
+   -16.5,
+   -20.3,
+   -20.8,
+   -13.2,
+   -16.1,
+   -16.5,
+   -14.1,
+   -14.1,
+   -14.7,
+   -22.9,
+   -26.0,
+   -27.0,
+   -28.0,
+   -23.5,
+   -12.7,
+   -14.2,
+   -19.1,
+   -12.1,
+   -14.7,
+   -17.5,
+   -16.7,
+   -16.6,
+   -19.7,
+   -32.0,
+   -28.3,
+   -31.0,
+   -33.6,
+   -37.0,
+   -37.5,
+   -40.0,
+   -41.8,
+   -35.5,
+   -38.7,
+   -40.7
+  ],
+  "transcripcion": "transcripcion.json (tools/reel64/voz.tsv)",
+  "nota": "Esto son medidas. Entonación, claridad de la locución, timbre o si hay música NO se pueden afirmar sin escuchar o transcribir."
+ },
+ "vistas": [
+  "detalle_001.jpg",
+  "detalle_002.jpg",
+  "detalle_003.jpg",
+  "detalle_004.jpg",
+  "detalle_005.jpg",
+  "detalle_006.jpg",
+  "general_001.jpg",
+  "general_002.jpg",
+  "general_003.jpg"
+ ],
+ "orden": "python3 tools/video_intel.py analyze reels/u64-cinco-fuera.mp4 --id u64 --tema Cinco jugadores fuera, cuatro días (Deportivo, fútbol) --modo detalle"
+}

@@ -1,0 +1,29 @@
+{
+ "numero": "Nº 00",
+ "seccion": "Cuatro jornadas, no una",
+ "formato": "carrusel",
+ "laminas": [
+  {"tipo": "palabra", "palabra": "0 MIN.", "foto": "STAFF_BANQUILLO_FOTO_001",
+   "fig": "Expediente — El dorsal que no salió", "hora": "Sábado · Convocado, no juega",
+   "serif": "Un partido sin minutos\nes una decisión.", "serifSize": 78, "size": 330, "left": 40},
+  {"tipo": "figuras", "letras": "J1 J2 J3", "size": 200, "left": 40, "figs": [
+    {"foto": "OBJETO_GUANTES_CONO_FOTO_001", "lab": "J1 — Entrena\ntoda la semana."},
+    {"foto": "OBJETO_BALON_LINEA_FOTO_001", "lab": "J2 — Calienta\ny se sienta."},
+    {"foto": "OBJETO_GENERAL_FOTO_001", "lab": "J3 — Otra vez\nsin minutos."}]},
+  {"tipo": "frase", "foto": "STAFF_BANQUILLO_ASISTENTES_FOTO_001", "pos": "50% 40%",
+   "pre": "Tres seguidos", "serif": "ya son\nun mensaje.", "size": 136},
+  {"tipo": "frase", "foto": "INSTALACION_ESTADIO_PEQUENO_VACIO_FOTO_001", "pos": "50% 50%",
+   "pre": "El que no juega", "serif": "también lleva\nla cuenta.", "uv": true, "size": 128, "uvW": 720},
+  {"tipo": "dentro", "palabra": "CUATRO", "foto": "STAFF_PIZARRA_JUGADA_FOTO_001", "size": 250, "top": 380,
+   "serif": "jornadas, no una.", "serifSize": 110,
+   "cap": "Si solo miras el último partido,\nno lo ves."},
+  {"tipo": "portada", "l1": "LA ÚLTIMA", "serif": "no cuenta", "l2": "TODO.", "size": 150,
+   "fotos": ["OBJETO_GUANTES_CONO_FOTO_001", "OBJETO_BALON_LINEA_FOTO_001", "OBJETO_GENERAL_FOTO_001"],
+   "cap": "J1 · J2 · J3 · y la que viene"},
+  {"tipo": "final", "cap": "Para llevarte", "serif": "Antes de cerrar", "big": "LA LISTA.", "size": 170,
+   "lista": ["Mira los minutos de las cuatro últimas jornadas.",
+             "No solo los de la última.",
+             "Si alguien lleva tres sin salir, decídelo a sabiendas."],
+   "serifSize": 96, "firma": "para el que reparte los minutos."}
+ ]
+}

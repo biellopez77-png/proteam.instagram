@@ -1,0 +1,1920 @@
+{
+ "meta": {
+  "contenedor": "mov,mp4,m4a,3gp,3g2,mj2",
+  "duracion_s": 31.533,
+  "tamano_bytes": 8150091,
+  "bitrate_kbps": 2068,
+  "ancho": 1080,
+  "alto": 1920,
+  "relacion": "9:16",
+  "fps": 30.0,
+  "fotogramas_declarados": 946,
+  "codec_video": "h264",
+  "pix_fmt": "yuv420p",
+  "pistas_audio": [
+   {
+    "codec": "aac",
+    "canales": 1,
+    "hz": 48000,
+    "bitrate_kbps": 209
+   }
+  ],
+  "etiquetas": {
+   "major_brand": "isom",
+   "minor_version": "512",
+   "compatible_brands": "isomiso2avc1mp41",
+   "encoder": "Lavf60.16.100"
+  },
+  "id": "u49",
+  "fotogramas_leidos": 946,
+  "sha256": "0707956b59a5b472d1b74510d81b91a256d42b4ee199246577c1f8dbe28bc764",
+  "archivo": "reels/u49-minuto-setenta.mp4",
+  "fuente": "",
+  "marca": "proteam",
+  "tipo": "propio",
+  "formato": "reel",
+  "tema": "impacto: tres banquillos, una fecha (28 nov)",
+  "analizado": "2026-11-17 21:56"
+ },
+ "montaje": {
+  "cortes_duros": 9,
+  "transiciones_o_movimientos_fuertes": 0,
+  "planos": 10,
+  "duracion_media_plano_s": 3.15,
+  "plano_mas_largo_s": 5.667,
+  "plano_mas_corto_s": 0.3,
+  "cortes_por_10s": 2.85,
+  "tramos_estaticos": [
+   {
+    "desde": 1.73,
+    "hasta": 3.5,
+    "duracion_s": 1.77
+   },
+   {
+    "desde": 4.87,
+    "hasta": 8.53,
+    "duracion_s": 3.67
+   },
+   {
+    "desde": 11.0,
+    "hasta": 14.13,
+    "duracion_s": 3.13
+   },
+   {
+    "desde": 19.7,
+    "hasta": 21.3,
+    "duracion_s": 1.6
+   },
+   {
+    "desde": 29.7,
+    "hasta": 31.5,
+    "duracion_s": 1.8
+   }
+  ],
+  "nota": "Detección automática por histograma y diferencia de imagen sobre TODOS los fotogramas. Un motion graphic continuo cuenta como un solo plano; un cambio de fondo brusco dentro de una animación puede contarse como corte. Confirmar en las láminas."
+ },
+ "cortes": [
+  {
+   "fotograma": 140,
+   "t": 4.667,
+   "tipo": "corte",
+   "fuerza": 0.558
+  },
+  {
+   "fotograma": 294,
+   "t": 9.8,
+   "tipo": "corte",
+   "fuerza": 0.607
+  },
+  {
+   "fotograma": 464,
+   "t": 15.467,
+   "tipo": "corte",
+   "fuerza": 0.819
+  },
+  {
+   "fotograma": 538,
+   "t": 17.933,
+   "tipo": "corte",
+   "fuerza": 0.94
+  },
+  {
+   "fotograma": 547,
+   "t": 18.233,
+   "tipo": "corte",
+   "fuerza": 0.994
+  },
+  {
+   "fotograma": 675,
+   "t": 22.5,
+   "tipo": "corte",
+   "fuerza": 0.957
+  },
+  {
+   "fotograma": 721,
+   "t": 24.033,
+   "tipo": "corte",
+   "fuerza": 0.987
+  },
+  {
+   "fotograma": 805,
+   "t": 26.833,
+   "tipo": "corte",
+   "fuerza": 0.936
+  },
+  {
+   "fotograma": 881,
+   "t": 29.367,
+   "tipo": "corte",
+   "fuerza": 0.856
+  }
+ ],
+ "escenas": [
+  {
+   "escena": 1,
+   "desde_fotograma": 0,
+   "hasta_fotograma": 139,
+   "desde": 0.0,
+   "hasta": 4.667,
+   "duracion_s": 4.667,
+   "movimiento_medio": 0.0015,
+   "luz_media": 0.19,
+   "saturacion_media": 0.372
+  },
+  {
+   "escena": 2,
+   "desde_fotograma": 140,
+   "hasta_fotograma": 293,
+   "desde": 4.667,
+   "hasta": 9.8,
+   "duracion_s": 5.133,
+   "movimiento_medio": 0.0025,
+   "luz_media": 0.137,
+   "saturacion_media": 0.482
+  },
+  {
+   "escena": 3,
+   "desde_fotograma": 294,
+   "hasta_fotograma": 463,
+   "desde": 9.8,
+   "hasta": 15.467,
+   "duracion_s": 5.667,
+   "movimiento_medio": 0.0025,
+   "luz_media": 0.199,
+   "saturacion_media": 0.242
+  },
+  {
+   "escena": 4,
+   "desde_fotograma": 464,
+   "hasta_fotograma": 537,
+   "desde": 15.467,
+   "hasta": 17.933,
+   "duracion_s": 2.467,
+   "movimiento_medio": 0.0172,
+   "luz_media": 0.14,
+   "saturacion_media": 0.344
+  },
+  {
+   "escena": 5,
+   "desde_fotograma": 538,
+   "hasta_fotograma": 546,
+   "desde": 17.933,
+   "hasta": 18.233,
+   "duracion_s": 0.3,
+   "movimiento_medio": 0.0117,
+   "luz_media": 0.071,
+   "saturacion_media": 0.313
+  },
+  {
+   "escena": 6,
+   "desde_fotograma": 547,
+   "hasta_fotograma": 674,
+   "desde": 18.233,
+   "hasta": 22.5,
+   "duracion_s": 4.267,
+   "movimiento_medio": 0.0087,
+   "luz_media": 0.913,
+   "saturacion_media": 0.036
+  },
+  {
+   "escena": 7,
+   "desde_fotograma": 675,
+   "hasta_fotograma": 720,
+   "desde": 22.5,
+   "hasta": 24.033,
+   "duracion_s": 1.533,
+   "movimiento_medio": 0.0197,
+   "luz_media": 0.096,
+   "saturacion_media": 0.304
+  },
+  {
+   "escena": 8,
+   "desde_fotograma": 721,
+   "hasta_fotograma": 804,
+   "desde": 24.033,
+   "hasta": 26.833,
+   "duracion_s": 2.8,
+   "movimiento_medio": 0.0084,
+   "luz_media": 0.098,
+   "saturacion_media": 0.343
+  },
+  {
+   "escena": 9,
+   "desde_fotograma": 805,
+   "hasta_fotograma": 880,
+   "desde": 26.833,
+   "hasta": 29.367,
+   "duracion_s": 2.533,
+   "movimiento_medio": 0.0047,
+   "luz_media": 0.091,
+   "saturacion_media": 0.406
+  },
+  {
+   "escena": 10,
+   "desde_fotograma": 881,
+   "hasta_fotograma": 945,
+   "desde": 29.367,
+   "hasta": 31.533,
+   "duracion_s": 2.167,
+   "movimiento_medio": 0.0051,
+   "luz_media": 0.131,
+   "saturacion_media": 0.392
+  }
+ ],
+ "laminas": [
+  {
+   "lamina": "general_001.jpg",
+   "fotogramas": [
+    0,
+    5,
+    10,
+    15,
+    20,
+    25,
+    45,
+    69,
+    90,
+    135,
+    139,
+    140,
+    185,
+    216,
+    230,
+    275,
+    293,
+    294
+   ],
+   "desde": 0.0,
+   "hasta": 9.8,
+   "modo": "general"
+  },
+  {
+   "lamina": "general_002.jpg",
+   "fotogramas": [
+    339,
+    378,
+    384,
+    429,
+    463,
+    464,
+    500,
+    537,
+    538,
+    542,
+    546,
+    547,
+    592,
+    610,
+    637,
+    674,
+    675,
+    697
+   ],
+   "desde": 11.3,
+   "hasta": 23.233,
+   "modo": "general"
+  },
+  {
+   "lamina": "general_003.jpg",
+   "fotogramas": [
+    720,
+    721,
+    762,
+    804,
+    805,
+    842,
+    880,
+    881,
+    913,
+    945
+   ],
+   "desde": 24.0,
+   "hasta": 31.5,
+   "modo": "general"
+  },
+  {
+   "lamina": "detalle_001.jpg",
+   "fotogramas": [
+    0,
+    8,
+    16,
+    24,
+    32,
+    40,
+    48,
+    56,
+    64,
+    72,
+    80,
+    88,
+    96,
+    104,
+    112,
+    120,
+    128,
+    136,
+    139,
+    140,
+    144,
+    152,
+    160,
+    168
+   ],
+   "desde": 0.0,
+   "hasta": 5.6,
+   "modo": "detalle"
+  },
+  {
+   "lamina": "detalle_002.jpg",
+   "fotogramas": [
+    176,
+    184,
+    192,
+    200,
+    208,
+    216,
+    224,
+    232,
+    240,
+    248,
+    256,
+    264,
+    272,
+    280,
+    288,
+    293,
+    294,
+    296,
+    304,
+    312,
+    320,
+    328,
+    336,
+    344
+   ],
+   "desde": 5.867,
+   "hasta": 11.467,
+   "modo": "detalle"
+  },
+  {
+   "lamina": "detalle_003.jpg",
+   "fotogramas": [
+    352,
+    360,
+    368,
+    376,
+    384,
+    392,
+    400,
+    408,
+    416,
+    424,
+    432,
+    440,
+    448,
+    456,
+    463,
+    464,
+    472,
+    480,
+    488,
+    496,
+    504,
+    512,
+    520,
+    528
+   ],
+   "desde": 11.733,
+   "hasta": 17.6,
+   "modo": "detalle"
+  },
+  {
+   "lamina": "detalle_004.jpg",
+   "fotogramas": [
+    536,
+    537,
+    538,
+    544,
+    546,
+    547,
+    552,
+    560,
+    568,
+    576,
+    584,
+    592,
+    600,
+    608,
+    616,
+    624,
+    632,
+    640,
+    648,
+    656,
+    664,
+    672,
+    674,
+    675
+   ],
+   "desde": 17.867,
+   "hasta": 22.5,
+   "modo": "detalle"
+  },
+  {
+   "lamina": "detalle_005.jpg",
+   "fotogramas": [
+    680,
+    688,
+    696,
+    704,
+    712,
+    720,
+    721,
+    728,
+    736,
+    744,
+    752,
+    760,
+    768,
+    776,
+    784,
+    792,
+    800,
+    804,
+    805,
+    808,
+    816,
+    824,
+    832,
+    840
+   ],
+   "desde": 22.667,
+   "hasta": 28.0,
+   "modo": "detalle"
+  },
+  {
+   "lamina": "detalle_006.jpg",
+   "fotogramas": [
+    848,
+    856,
+    864,
+    872,
+    880,
+    881,
+    888,
+    896,
+    904,
+    912,
+    920,
+    928,
+    936,
+    944
+   ],
+   "desde": 28.267,
+   "hasta": 31.467,
+   "modo": "detalle"
+  }
+ ],
+ "texto_en_pantalla": {
+  "idioma": "spa+eng",
+  "nota": "OCR automático sobre los fotogramas muestreados: puede fallar con tipografía fina, texto animado o sobre foto. La exposición es aproximada (resolución = intervalo de muestreo). Verificar siempre en las láminas.",
+  "por_fotograma": [
+   {
+    "fotograma": 0,
+    "t": 0.0,
+    "texto": ""
+   },
+   {
+    "fotograma": 5,
+    "t": 0.167,
+    "texto": ""
+   },
+   {
+    "fotograma": 8,
+    "t": 0.267,
+    "texto": ""
+   },
+   {
+    "fotograma": 10,
+    "t": 0.333,
+    "texto": ""
+   },
+   {
+    "fotograma": 15,
+    "t": 0.5,
+    "texto": ""
+   },
+   {
+    "fotograma": 16,
+    "t": 0.533,
+    "texto": "702"
+   },
+   {
+    "fotograma": 20,
+    "t": 0.667,
+    "texto": ""
+   },
+   {
+    "fotograma": 24,
+    "t": 0.8,
+    "texto": ""
+   },
+   {
+    "fotograma": 25,
+    "t": 0.833,
+    "texto": ""
+   },
+   {
+    "fotograma": 32,
+    "t": 1.067,
+    "texto": ""
+   },
+   {
+    "fotograma": 40,
+    "t": 1.333,
+    "texto": ""
+   },
+   {
+    "fotograma": 45,
+    "t": 1.5,
+    "texto": ""
+   },
+   {
+    "fotograma": 48,
+    "t": 1.6,
+    "texto": "102"
+   },
+   {
+    "fotograma": 56,
+    "t": 1.867,
+    "texto": ""
+   },
+   {
+    "fotograma": 64,
+    "t": 2.133,
+    "texto": "N7 one"
+   },
+   {
+    "fotograma": 69,
+    "t": 2.3,
+    "texto": "N7 ose"
+   },
+   {
+    "fotograma": 72,
+    "t": 2.4,
+    "texto": "N7"
+   },
+   {
+    "fotograma": 80,
+    "t": 2.667,
+    "texto": "N7 El MINUTOS JUGADOS"
+   },
+   {
+    "fotograma": 88,
+    "t": 2.933,
+    "texto": "N7 MINUTOS JUGADOS"
+   },
+   {
+    "fotograma": 90,
+    "t": 3.0,
+    "texto": "N7 MINUTOS JUGADOS"
+   },
+   {
+    "fotograma": 96,
+    "t": 3.2,
+    "texto": "N7 losdel MINUTOS JUGADOS"
+   },
+   {
+    "fotograma": 104,
+    "t": 3.467,
+    "texto": "N7 MINUTOS JUGADOS"
+   },
+   {
+    "fotograma": 112,
+    "t": 3.733,
+    "texto": "N7 MINUTOS JUGADOS NO LO SABES."
+   },
+   {
+    "fotograma": 120,
+    "t": 4.0,
+    "texto": "MINUTOS JUGADOS NOLO SABES."
+   },
+   {
+    "fotograma": 128,
+    "t": 4.267,
+    "texto": "MINUTOS JUGADOS NOLO SABES."
+   },
+   {
+    "fotograma": 135,
+    "t": 4.5,
+    "texto": "N7 MINUTOS JUGADOS NO LO SABES."
+   },
+   {
+    "fotograma": 136,
+    "t": 4.533,
+    "texto": "MINUTOS JUGADOS NO LO SABES."
+   },
+   {
+    "fotograma": 139,
+    "t": 4.633,
+    "texto": "N7 MINUTOS JUGADOS NO LO SABES."
+   },
+   {
+    "fotograma": 140,
+    "t": 4.667,
+    "texto": "ULTIMO CUARTO"
+   },
+   {
+    "fotograma": 144,
+    "t": 4.8,
+    "texto": "ARTO"
+   },
+   {
+    "fotograma": 152,
+    "t": 5.067,
+    "texto": "RTO"
+   },
+   {
+    "fotograma": 160,
+    "t": 5.333,
+    "texto": "RTO Sty"
+   },
+   {
+    "fotograma": 168,
+    "t": 5.6,
+    "texto": "CUARTO Sty"
+   },
+   {
+    "fotograma": 176,
+    "t": 5.867,
+    "texto": "¿ÚLTIMO"
+   },
+   {
+    "fotograma": 184,
+    "t": 6.133,
+    "texto": "RTO™ Sty DESCANSOS"
+   },
+   {
+    "fotograma": 185,
+    "t": 6.167,
+    "texto": "DESCANSOS"
+   },
+   {
+    "fotograma": 192,
+    "t": 6.4,
+    "texto": "RTO DESCANSOS"
+   },
+   {
+    "fotograma": 200,
+    "t": 6.667,
+    "texto": "RTO Sty DESCANSOS"
+   },
+   {
+    "fotograma": 208,
+    "t": 6.933,
+    "texto": "RTO DESCANSOS"
+   },
+   {
+    "fotograma": 216,
+    "t": 7.2,
+    "texto": "RTO ity DESCANSOS"
+   },
+   {
+    "fotograma": 224,
+    "t": 7.467,
+    "texto": "¿ÚLTIMO CUARTO DESCANSOS"
+   },
+   {
+    "fotograma": 230,
+    "t": 7.667,
+    "texto": "CUARTO Ly DESCANSOS"
+   },
+   {
+    "fotograma": 232,
+    "t": 7.733,
+    "texto": "CUARTO Sty DESCANSOS"
+   },
+   {
+    "fotograma": 240,
+    "t": 8.0,
+    "texto": "CUARTO Ty DESCANSOS"
+   },
+   {
+    "fotograma": 248,
+    "t": 8.267,
+    "texto": "ÚLTIMO CUARTO Sty DESCANSOS"
+   },
+   {
+    "fotograma": 256,
+    "t": 8.533,
+    "texto": "ARTO DESCANSOS"
+   },
+   {
+    "fotograma": 264,
+    "t": 8.8,
+    "texto": "ARTO DESCANSOS"
+   },
+   {
+    "fotograma": 272,
+    "t": 9.067,
+    "texto": "MO CUARTO DESCANSOS"
+   },
+   {
+    "fotograma": 275,
+    "t": 9.167,
+    "texto": "ÚLTIMO CUARTO ity DESCANSOS"
+   },
+   {
+    "fotograma": 280,
+    "t": 9.333,
+    "texto": "¿ÚLTIMO CUARTO DESCANSOS"
+   },
+   {
+    "fotograma": 288,
+    "t": 9.6,
+    "texto": "ARTO DESCANSOS"
+   },
+   {
+    "fotograma": 293,
+    "t": 9.767,
+    "texto": "ARTO ES DESCANSOS"
+   },
+   {
+    "fotograma": 294,
+    "t": 9.8,
+    "texto": "¿DESCANSO El] FAL"
+   },
+   {
+    "fotograma": 296,
+    "t": 9.867,
+    "texto": "¿DESCANSO FAL Mia"
+   },
+   {
+    "fotograma": 304,
+    "t": 10.133,
+    "texto": "YE AN dl FAL"
+   },
+   {
+    "fotograma": 312,
+    "t": 10.4,
+    "texto": "pro, NW FA"
+   },
+   {
+    "fotograma": 320,
+    "t": 10.667,
+    "texto": "FA"
+   },
+   {
+    "fotograma": 328,
+    "t": 10.933,
+    "texto": "Da POR GOLES ENCAJADO, 25"
+   },
+   {
+    "fotograma": 336,
+    "t": 11.2,
+    "texto": "DES af CANSO EN ay Dem GOLES ENCAJADOS 25"
+   },
+   {
+    "fotograma": 339,
+    "t": 11.3,
+    "texto": "DESCANSO ay GOLES ENCAJADOS"
+   },
+   {
+    "fotograma": 344,
+    "t": 11.467,
+    "texto": "DESCANSO ay GOLES ENCAJADOS 314 25"
+   },
+   {
+    "fotograma": 352,
+    "t": 11.733,
+    "texto": "DESCANSO Ne ll GOLES ENCAJADOS 14 Di 25"
+   },
+   {
+    "fotograma": 360,
+    "t": 12.0,
+    "texto": "DESCANSO ll GOLES ENCAJADOS 14 25"
+   },
+   {
+    "fotograma": 368,
+    "t": 12.267,
+    "texto": "DESCANSO bam YA GOLES ENCAJADOS Ww 14 ai 25"
+   },
+   {
+    "fotograma": 376,
+    "t": 12.533,
+    "texto": "_DESCANSO AA GOLES ENCAJADOS Ww 14 25"
+   },
+   {
+    "fotograma": 378,
+    "t": 12.6,
+    "texto": "DESCANSO GOLES ENCAJADOS MAS 14 25"
+   },
+   {
+    "fotograma": 384,
+    "t": 12.8,
+    "texto": "ESCANSO NW ll ‘aa GOLES ENCAJADOS 14"
+   },
+   {
+    "fotograma": 392,
+    "t": 13.067,
+    "texto": "DESCANSO 14 Pp"
+   },
+   {
+    "fotograma": 400,
+    "t": 13.333,
+    "texto": "DESCANSO id bam 14 ma"
+   },
+   {
+    "fotograma": 408,
+    "t": 13.6,
+    "texto": "DESCANSO ES bm 14"
+   },
+   {
+    "fotograma": 416,
+    "t": 13.867,
+    "texto": "DESCANSO bam MAA, 14"
+   },
+   {
+    "fotograma": 424,
+    "t": 14.133,
+    "texto": "DESCANSO pra, fi 14 Nadie las ha contado."
+   },
+   {
+    "fotograma": 429,
+    "t": 14.3,
+    "texto": "DESCANSO NS pa 14 Nadie las ha contado."
+   },
+   {
+    "fotograma": 432,
+    "t": 14.4,
+    "texto": "_DESCANSO bam 14 Vadie las ha contado"
+   },
+   {
+    "fotograma": 440,
+    "t": 14.667,
+    "texto": "DESCANSO Pa aa 14 Vadie las ha contado"
+   },
+   {
+    "fotograma": 448,
+    "t": 14.933,
+    "texto": "DESCANSO if. 14 Nadie las ha contado"
+   },
+   {
+    "fotograma": 456,
+    "t": 15.2,
+    "texto": "DESCANSO 14 ag Vadie las ha contado"
+   },
+   {
+    "fotograma": 463,
+    "t": 15.433,
+    "texto": "DESCANSO 14 Vadie las ha contado"
+   },
+   {
+    "fotograma": 464,
+    "t": 15.467,
+    "texto": ""
+   },
+   {
+    "fotograma": 472,
+    "t": 15.733,
+    "texto": "vos \\om NQ LOS"
+   },
+   {
+    "fotograma": 480,
+    "t": 16.0,
+    "texto": "\\om RES BANGUILLOS. la"
+   },
+   {
+    "fotograma": 488,
+    "t": 16.267,
+    "texto": "we RES BANG ILLOS. Val"
+   },
+   {
+    "fotograma": 496,
+    "t": 16.533,
+    "texto": "RES BANGUILLOS. yal"
+   },
+   {
+    "fotograma": 500,
+    "t": 16.667,
+    "texto": "Waz RES BANQUILLOS."
+   },
+   {
+    "fotograma": 504,
+    "t": 16.8,
+    "texto": "RES ILLOS. Ll ag"
+   },
+   {
+    "fotograma": 512,
+    "t": 17.067,
+    "texto": "BAN ILLOS. bado. eN"
+   },
+   {
+    "fotograma": 520,
+    "t": 17.333,
+    "texto": "RES BANQUILLOS. ibado."
+   },
+   {
+    "fotograma": 528,
+    "t": 17.6,
+    "texto": "RES BANQUILLOS. ibado."
+   },
+   {
+    "fotograma": 536,
+    "t": 17.867,
+    "texto": "rs ES BANQUILLOS. ibado. gk"
+   },
+   {
+    "fotograma": 537,
+    "t": 17.9,
+    "texto": "rs RES BANQUILLOS. ibado. ex ña"
+   },
+   {
+    "fotograma": 538,
+    "t": 17.933,
+    "texto": "‘aa,"
+   },
+   {
+    "fotograma": 542,
+    "t": 18.067,
+    "texto": ""
+   },
+   {
+    "fotograma": 544,
+    "t": 18.133,
+    "texto": ""
+   },
+   {
+    "fotograma": 546,
+    "t": 18.2,
+    "texto": ""
+   },
+   {
+    "fotograma": 547,
+    "t": 18.233,
+    "texto": "APUNTA OTRO 10 12 13 14 15 16 12 20 21 22 23 24 25 26 27 28 29 30"
+   },
+   {
+    "fotograma": 552,
+    "t": 18.4,
+    "texto": "APUNTA OTRO 10 11 12 13 14 15 16 17 20 21 22 23 24 25 26 27 28 29 30"
+   },
+   {
+    "fotograma": 560,
+    "t": 18.667,
+    "texto": "APUNTA OTRO 10 11 12 13 14 15 16 17 21 22 23 24 25 26 27 28 29 30"
+   },
+   {
+    "fotograma": 568,
+    "t": 18.933,
+    "texto": "APUNTA OTRO 10 11 12 13 14 15 21 16 17 22 24 25 26 27 28 29 30"
+   },
+   {
+    "fotograma": 576,
+    "t": 19.2,
+    "texto": "APUNTA OTRO 10 11 12 13 14 15 21 16 17 22 27 28 29 30"
+   },
+   {
+    "fotograma": 584,
+    "t": 19.467,
+    "texto": "APUNTA OTRO 10 11 12 13 14 15 22 18) 30"
+   },
+   {
+    "fotograma": 592,
+    "t": 19.733,
+    "texto": "APUNTA OTRO 10 11 12 13 14 15 18) (28))28 30 SAB 28 NOV"
+   },
+   {
+    "fotograma": 600,
+    "t": 20.0,
+    "texto": "APUNTA OTRO 10 11 12 13 14 15 18) 30 SAB 28 NOV"
+   },
+   {
+    "fotograma": 608,
+    "t": 20.267,
+    "texto": "APUNTA OTRO 10 11 12 13 14 15 18) 30 SAB 28 NOV"
+   },
+   {
+    "fotograma": 610,
+    "t": 20.333,
+    "texto": "APUNTA OTRO 10 11 12 13 14 15 18 30 SAB 28 NOV"
+   },
+   {
+    "fotograma": 616,
+    "t": 20.533,
+    "texto": "APUNTA OTRO 10 11 12 13 14 15 18) 30 SAB 28 NOV"
+   },
+   {
+    "fotograma": 624,
+    "t": 20.8,
+    "texto": "APUNTA OTRO 10 11 12 13 14 15 30 SAB 28 NOV"
+   },
+   {
+    "fotograma": 632,
+    "t": 21.067,
+    "texto": "APUNTA OTRO 10 11 12 13 14 15 18) 30 SAB 28 NOV"
+   },
+   {
+    "fotograma": 637,
+    "t": 21.233,
+    "texto": "APUNTA OTRO 10 11 12 13 14 15 30 SAB 28 NOV"
+   },
+   {
+    "fotograma": 640,
+    "t": 21.333,
+    "texto": "APUNTA OTRO 10 11 12 13 14 15 18) 30 SAB 28 NOV abre ProTeam."
+   },
+   {
+    "fotograma": 648,
+    "t": 21.6,
+    "texto": "APUNTA OTRO 10 11 12 13 14 15 30 (28))2s SAB 28 NOV abre ProTeam."
+   },
+   {
+    "fotograma": 656,
+    "t": 21.867,
+    "texto": "APUNTA OTRO 10 11 12 13 14 15 18) 30 SAB 28 NOV abre ProTeam."
+   },
+   {
+    "fotograma": 664,
+    "t": 22.133,
+    "texto": "APUNTA OTRO 10 11 12 13 14 15 18) 30 SAB 28 NOV abre ProTeam."
+   },
+   {
+    "fotograma": 672,
+    "t": 22.4,
+    "texto": "APUNTA OTRO 10 12 13 14 15 18) 30 SAB 28 NOV abre ProTeam."
+   },
+   {
+    "fotograma": 674,
+    "t": 22.467,
+    "texto": "APUNTA OTRO 10 11 12 13 14 15 18) 30 SAB 28 NOV abre ProTeam."
+   },
+   {
+    "fotograma": 675,
+    "t": 22.5,
+    "texto": ""
+   },
+   {
+    "fotograma": 680,
+    "t": 22.667,
+    "texto": "QUEDAN"
+   },
+   {
+    "fotograma": 688,
+    "t": 22.933,
+    "texto": "QUEDAN"
+   },
+   {
+    "fotograma": 696,
+    "t": 23.2,
+    "texto": "QUEDAN 10"
+   },
+   {
+    "fotograma": 697,
+    "t": 23.233,
+    "texto": "QUEDAN 10"
+   },
+   {
+    "fotograma": 704,
+    "t": 23.467,
+    "texto": "QUEDAN LAS"
+   },
+   {
+    "fotograma": 712,
+    "t": 23.733,
+    "texto": "QUEDAN 10"
+   },
+   {
+    "fotograma": 720,
+    "t": 24.0,
+    "texto": "QUEDAN 10 MAS."
+   },
+   {
+    "fotograma": 721,
+    "t": 24.033,
+    "texto": "RETO PARA TU STAFF"
+   },
+   {
+    "fotograma": 728,
+    "t": 24.267,
+    "texto": "Man elo tu segundo"
+   },
+   {
+    "fotograma": 736,
+    "t": 24.533,
+    "texto": "PARA TU FF Man segundo: ES Val Ma"
+   },
+   {
+    "fotograma": 744,
+    "t": 24.8,
+    "texto": "PARA TU FF Man lo segundo MW qe Wer Vall lA"
+   },
+   {
+    "fotograma": 752,
+    "t": 25.067,
+    "texto": "PARA TU Man lo segundo «dl val"
+   },
+   {
+    "fotograma": 760,
+    "t": 25.333,
+    "texto": "PARA TU FF Man lo segundo Vall fi"
+   },
+   {
+    "fotograma": 762,
+    "t": 25.4,
+    "texto": "PARA TU FF Man lo atu segundo 74 the Val ti"
+   },
+   {
+    "fotograma": 768,
+    "t": 25.6,
+    "texto": "RETO PARA TU STAFF Mándaselo tu segundo: ¿Cuál de los"
+   },
+   {
+    "fotograma": 776,
+    "t": 25.867,
+    "texto": "RETO PARA TU STAFF Mándaselo tu segundo: ¿Cuál de los"
+   },
+   {
+    "fotograma": 784,
+    "t": 26.133,
+    "texto": "RETO PARA TU STAFF Mándaselo tu segundo: ¿Cuál de los tres"
+   },
+   {
+    "fotograma": 792,
+    "t": 26.4,
+    "texto": "RETO PARA TU STAFF Mándaselo tu segundo: ¿Cuál de los tres 8018’"
+   },
+   {
+    "fotograma": 800,
+    "t": 26.667,
+    "texto": "RETO PARA TU STAFF Mándaselo tu segundo: ¿Cuál de los tres 8018’"
+   },
+   {
+    "fotograma": 804,
+    "t": 26.8,
+    "texto": "RETO PARA TU STAFF Mándaselo tu segundo: ¿Cuál de los tres 8018’"
+   },
+   {
+    "fotograma": 805,
+    "t": 26.833,
+    "texto": ""
+   },
+   {
+    "fotograma": 808,
+    "t": 26.933,
+    "texto": "LISTA DE ESPERA 09 14 29 59"
+   },
+   {
+    "fotograma": 816,
+    "t": 27.2,
+    "texto": "LISTA DE ESPERA 09 14 29 30 DÍAS HORAS SEG entrenado"
+   },
+   {
+    "fotograma": 824,
+    "t": 27.467,
+    "texto": "LISTA DE ESPERA 08 09 13 DÍAS HORAS Mi SEG entrenador@miclub.es|"
+   },
+   {
+    "fotograma": 832,
+    "t": 27.733,
+    "texto": "LISTA DE ESPERA 09 09 20 04 DÍAS HORAS SEG entrenador@miclub.es"
+   },
+   {
+    "fotograma": 840,
+    "t": 28.0,
+    "texto": "LISTA DE ESPERA 08 23 00 42 DÍAS HORAS MIN SEG entrenador@miclub.es"
+   },
+   {
+    "fotograma": 842,
+    "t": 28.067,
+    "texto": "LISTA DE ESPERA 08 19 18 bias HORAS SEG entrenador@miclub.es"
+   },
+   {
+    "fotograma": 848,
+    "t": 28.267,
+    "texto": "LISTA DE ESPERA 32 og 05 DÍAS HORAS SEG entrenador@miclub.es"
+   },
+   {
+    "fotograma": 856,
+    "t": 28.533,
+    "texto": "LISTA DE ESPERA 06 21 29 53 bias HORAS MIN SEG entrenador@miclub.es (55"
+   },
+   {
+    "fotograma": 864,
+    "t": 28.8,
+    "texto": "LISTA DE ESPERA 29 05 00 DÍAS HORAS MIN SEG entrenador@miclub.es"
+   },
+   {
+    "fotograma": 872,
+    "t": 29.067,
+    "texto": "LISTA DE ESPERA 11 29 02 DÍAS HORAS SEG entrenador@miclub.es CE"
+   },
+   {
+    "fotograma": 880,
+    "t": 29.333,
+    "texto": "LISTA DE ESPERA 00 00 OO 00 Dias HORAS MIN SEG entrenador@miclub.es CE"
+   },
+   {
+    "fotograma": 881,
+    "t": 29.367,
+    "texto": "es Weg ¡ea"
+   },
+   {
+    "fotograma": 888,
+    "t": 29.6,
+    "texto": "MESES HASTA EL 27 NOV"
+   },
+   {
+    "fotograma": 896,
+    "t": 29.867,
+    "texto": "MESES HASTA EL 27 NOV"
+   },
+   {
+    "fotograma": 904,
+    "t": 30.133,
+    "texto": "meses gratis. HASTA EL 27 NOV"
+   },
+   {
+    "fotograma": 912,
+    "t": 30.4,
+    "texto": "MESES HASTA EL 27 NOV"
+   },
+   {
+    "fotograma": 913,
+    "t": 30.433,
+    "texto": "MESES gratis. HASTA EL 27 NOV"
+   },
+   {
+    "fotograma": 920,
+    "t": 30.667,
+    "texto": "MESES HASTA EL 27 NOV"
+   },
+   {
+    "fotograma": 928,
+    "t": 30.933,
+    "texto": "MESES Sratis, HASTA EL 27 NOV"
+   },
+   {
+    "fotograma": 936,
+    "t": 31.2,
+    "texto": "meses gratis. HASTA EL 27 NOV"
+   },
+   {
+    "fotograma": 944,
+    "t": 31.467,
+    "texto": "MESES gratis. HASTA EL 27 NOV"
+   },
+   {
+    "fotograma": 945,
+    "t": 31.5,
+    "texto": "meses HASTA EL 27 NOV"
+   }
+  ],
+  "bloques": [
+   {
+    "desde": 2.933,
+    "hasta": 3.0,
+    "texto": "N7 MINUTOS JUGADOS",
+    "palabras": 3
+   },
+   {
+    "desde": 3.467,
+    "hasta": 3.733,
+    "texto": "N7 MINUTOS JUGADOS NO LO SABES.",
+    "palabras": 6
+   },
+   {
+    "desde": 4.0,
+    "hasta": 4.267,
+    "texto": "MINUTOS JUGADOS NOLO SABES.",
+    "palabras": 4
+   },
+   {
+    "desde": 4.5,
+    "hasta": 4.5,
+    "texto": "N7 MINUTOS JUGADOS NO LO SABES.",
+    "palabras": 6
+   },
+   {
+    "desde": 4.533,
+    "hasta": 4.533,
+    "texto": "MINUTOS JUGADOS NO LO SABES.",
+    "palabras": 5
+   },
+   {
+    "desde": 4.633,
+    "hasta": 4.633,
+    "texto": "N7 MINUTOS JUGADOS NO LO SABES.",
+    "palabras": 6
+   },
+   {
+    "desde": 8.533,
+    "hasta": 8.8,
+    "texto": "ARTO DESCANSOS",
+    "palabras": 2
+   },
+   {
+    "desde": 9.167,
+    "hasta": 9.333,
+    "texto": "ÚLTIMO CUARTO ity DESCANSOS",
+    "palabras": 4
+   },
+   {
+    "desde": 10.933,
+    "hasta": 10.933,
+    "texto": "Da POR GOLES ENCAJADO, 25",
+    "palabras": 5
+   },
+   {
+    "desde": 11.2,
+    "hasta": 11.2,
+    "texto": "DES af CANSO EN ay Dem GOLES ENCAJADOS 25",
+    "palabras": 9
+   },
+   {
+    "desde": 11.3,
+    "hasta": 11.467,
+    "texto": "DESCANSO ay GOLES ENCAJADOS 314 25",
+    "palabras": 6
+   },
+   {
+    "desde": 11.733,
+    "hasta": 11.733,
+    "texto": "DESCANSO Ne ll GOLES ENCAJADOS 14 Di 25",
+    "palabras": 8
+   },
+   {
+    "desde": 12.0,
+    "hasta": 12.0,
+    "texto": "DESCANSO ll GOLES ENCAJADOS 14 25",
+    "palabras": 6
+   },
+   {
+    "desde": 12.267,
+    "hasta": 12.267,
+    "texto": "DESCANSO bam YA GOLES ENCAJADOS Ww 14 ai 25",
+    "palabras": 9
+   },
+   {
+    "desde": 12.533,
+    "hasta": 12.533,
+    "texto": "_DESCANSO AA GOLES ENCAJADOS Ww 14 25",
+    "palabras": 7
+   },
+   {
+    "desde": 12.6,
+    "hasta": 12.6,
+    "texto": "DESCANSO GOLES ENCAJADOS MAS 14 25",
+    "palabras": 6
+   },
+   {
+    "desde": 12.8,
+    "hasta": 12.8,
+    "texto": "ESCANSO NW ll ‘aa GOLES ENCAJADOS 14",
+    "palabras": 7
+   },
+   {
+    "desde": 13.333,
+    "hasta": 13.333,
+    "texto": "DESCANSO id bam 14 ma",
+    "palabras": 5
+   },
+   {
+    "desde": 14.133,
+    "hasta": 14.133,
+    "texto": "DESCANSO pra, fi 14 Nadie las ha contado.",
+    "palabras": 8
+   },
+   {
+    "desde": 14.3,
+    "hasta": 14.3,
+    "texto": "DESCANSO NS pa 14 Nadie las ha contado.",
+    "palabras": 8
+   },
+   {
+    "desde": 14.4,
+    "hasta": 14.4,
+    "texto": "_DESCANSO bam 14 Vadie las ha contado",
+    "palabras": 7
+   },
+   {
+    "desde": 14.667,
+    "hasta": 14.667,
+    "texto": "DESCANSO Pa aa 14 Vadie las ha contado",
+    "palabras": 8
+   },
+   {
+    "desde": 14.933,
+    "hasta": 14.933,
+    "texto": "DESCANSO if. 14 Nadie las ha contado",
+    "palabras": 7
+   },
+   {
+    "desde": 15.2,
+    "hasta": 15.2,
+    "texto": "DESCANSO 14 ag Vadie las ha contado",
+    "palabras": 7
+   },
+   {
+    "desde": 15.433,
+    "hasta": 15.433,
+    "texto": "DESCANSO 14 Vadie las ha contado",
+    "palabras": 6
+   },
+   {
+    "desde": 16.267,
+    "hasta": 16.267,
+    "texto": "we RES BANG ILLOS. Val",
+    "palabras": 5
+   },
+   {
+    "desde": 17.333,
+    "hasta": 17.6,
+    "texto": "RES BANQUILLOS. ibado.",
+    "palabras": 3
+   },
+   {
+    "desde": 17.867,
+    "hasta": 17.867,
+    "texto": "rs ES BANQUILLOS. ibado. gk",
+    "palabras": 5
+   },
+   {
+    "desde": 17.9,
+    "hasta": 17.9,
+    "texto": "rs RES BANQUILLOS. ibado. ex ña",
+    "palabras": 6
+   },
+   {
+    "desde": 18.233,
+    "hasta": 22.467,
+    "texto": "APUNTA OTRO 10 11 12 13 14 15 16 17 20 21 22 23 24 25 26 27 28 29 30",
+    "palabras": 21
+   },
+   {
+    "desde": 22.667,
+    "hasta": 22.933,
+    "texto": "QUEDAN",
+    "palabras": 1
+   },
+   {
+    "desde": 23.2,
+    "hasta": 23.233,
+    "texto": "QUEDAN 10",
+    "palabras": 2
+   },
+   {
+    "desde": 24.533,
+    "hasta": 24.533,
+    "texto": "PARA TU FF Man segundo: ES Val Ma",
+    "palabras": 8
+   },
+   {
+    "desde": 24.8,
+    "hasta": 24.8,
+    "texto": "PARA TU FF Man lo segundo MW qe Wer Vall lA",
+    "palabras": 11
+   },
+   {
+    "desde": 25.067,
+    "hasta": 25.067,
+    "texto": "PARA TU Man lo segundo «dl val",
+    "palabras": 7
+   },
+   {
+    "desde": 25.333,
+    "hasta": 25.4,
+    "texto": "PARA TU FF Man lo atu segundo 74 the Val ti",
+    "palabras": 11
+   },
+   {
+    "desde": 25.6,
+    "hasta": 26.8,
+    "texto": "RETO PARA TU STAFF Mándaselo tu segundo: ¿Cuál de los tres 8018’",
+    "palabras": 12
+   },
+   {
+    "desde": 26.933,
+    "hasta": 29.333,
+    "texto": "LISTA DE ESPERA 06 21 29 53 bias HORAS MIN SEG entrenador@miclub.es (55",
+    "palabras": 13
+   },
+   {
+    "desde": 29.6,
+    "hasta": 29.867,
+    "texto": "MESES HASTA EL 27 NOV",
+    "palabras": 5
+   },
+   {
+    "desde": 30.133,
+    "hasta": 30.133,
+    "texto": "meses gratis. HASTA EL 27 NOV",
+    "palabras": 6
+   },
+   {
+    "desde": 30.4,
+    "hasta": 30.4,
+    "texto": "MESES HASTA EL 27 NOV",
+    "palabras": 5
+   },
+   {
+    "desde": 30.433,
+    "hasta": 30.433,
+    "texto": "MESES gratis. HASTA EL 27 NOV",
+    "palabras": 6
+   },
+   {
+    "desde": 30.667,
+    "hasta": 30.667,
+    "texto": "MESES HASTA EL 27 NOV",
+    "palabras": 5
+   },
+   {
+    "desde": 30.933,
+    "hasta": 30.933,
+    "texto": "MESES Sratis, HASTA EL 27 NOV",
+    "palabras": 6
+   },
+   {
+    "desde": 31.2,
+    "hasta": 31.467,
+    "texto": "meses gratis. HASTA EL 27 NOV",
+    "palabras": 6
+   },
+   {
+    "desde": 31.5,
+    "hasta": 31.5,
+    "texto": "meses HASTA EL 27 NOV",
+    "palabras": 5
+   }
+  ]
+ },
+ "audio": {
+  "tiene_audio": true,
+  "wav": "intel/videos/u49/audio_16k.wav",
+  "volumen_integrado_lufs": "-15.21",
+  "pico_real_db": "0.08",
+  "rango_lra": "1.90",
+  "silencios": [],
+  "subidas_bruscas_s": [
+   1.5,
+   3.4,
+   4.6,
+   5.0,
+   5.8,
+   9.9,
+   10.9,
+   14.1,
+   15.5,
+   16.7,
+   19.0,
+   20.9,
+   22.6,
+   24.1,
+   25.5,
+   26.9,
+   27.5
+  ],
+  "energia_db_cada_0_1s": [
+   -17.2,
+   -9.9,
+   -10.8,
+   -9.6,
+   -12.4,
+   -14.9,
+   -11.5,
+   -14.1,
+   -19.2,
+   -28.8,
+   -27.6,
+   -37.0,
+   -33.0,
+   -49.2,
+   -38.5,
+   -15.9,
+   -11.8,
+   -17.9,
+   -16.7,
+   -10.8,
+   -10.8,
+   -16.4,
+   -12.5,
+   -12.0,
+   -11.9,
+   -12.4,
+   -12.7,
+   -15.3,
+   -27.9,
+   -27.0,
+   -35.1,
+   -37.0,
+   -40.8,
+   -31.7,
+   -14.4,
+   -9.8,
+   -12.8,
+   -14.3,
+   -20.6,
+   -14.6,
+   -15.4,
+   -23.8,
+   -28.0,
+   -36.4,
+   -37.6,
+   -32.5,
+   -19.5,
+   -7.3,
+   -24.1,
+   -11.5,
+   -11.8,
+   -15.4,
+   -12.7,
+   -32.3,
+   -26.6,
+   -32.6,
+   -35.0,
+   -38.8,
+   -16.5,
+   -11.8,
+   -9.9,
+   -16.6,
+   -10.8,
+   -11.1,
+   -15.7,
+   -14.0,
+   -16.3,
+   -12.8,
+   -15.6,
+   -11.9,
+   -12.9,
+   -12.1,
+   -19.1,
+   -11.8,
+   -12.8,
+   -13.1,
+   -17.2,
+   -17.5,
+   -17.2,
+   -19.1,
+   -19.5,
+   -20.6,
+   -21.4,
+   -20.9,
+   -15.6,
+   -12.7,
+   -10.5,
+   -19.1,
+   -10.2,
+   -13.5,
+   -15.2,
+   -18.4,
+   -19.7,
+   -20.0,
+   -22.3,
+   -23.5,
+   -26.4,
+   -25.2,
+   -18.6,
+   -12.3,
+   -15.2,
+   -14.0,
+   -15.4,
+   -18.8,
+   -19.6,
+   -20.1,
+   -21.9,
+   -23.0,
+   -23.4,
+   -11.0,
+   -11.7,
+   -19.1,
+   -10.8,
+   -11.3,
+   -12.7,
+   -13.4,
+   -17.9,
+   -15.9,
+   -14.7,
+   -21.0,
+   -9.0,
+   -17.9,
+   -14.4,
+   -13.5,
+   -17.4,
+   -22.0,
+   -22.6,
+   -23.8,
+   -26.3,
+   -24.8,
+   -17.8,
+   -14.3,
+   -17.8,
+   -15.0,
+   -11.6,
+   -15.7,
+   -19.1,
+   -25.0,
+   -25.8,
+   -25.3,
+   -17.5,
+   -8.5,
+   -12.1,
+   -14.9,
+   -15.4,
+   -18.2,
+   -14.3,
+   -21.0,
+   -24.3,
+   -13.9,
+   -20.2,
+   -28.7,
+   -28.3,
+   -30.7,
+   -31.0,
+   -12.5,
+   -12.2,
+   -13.1,
+   -10.3,
+   -18.1,
+   -19.5,
+   -22.6,
+   -22.0,
+   -21.9,
+   -21.7,
+   -22.3,
+   -23.1,
+   -11.1,
+   -11.4,
+   -10.5,
+   -17.1,
+   -12.4,
+   -15.6,
+   -12.5,
+   -21.1,
+   -22.6,
+   -23.0,
+   -22.8,
+   -23.6,
+   -13.3,
+   -17.5,
+   -10.6,
+   -12.3,
+   -15.0,
+   -23.3,
+   -22.6,
+   -25.2,
+   -26.4,
+   -26.5,
+   -23.2,
+   -12.2,
+   -11.7,
+   -12.9,
+   -13.9,
+   -13.4,
+   -11.9,
+   -18.6,
+   -15.1,
+   -12.0,
+   -20.3,
+   -13.0,
+   -11.9,
+   -13.1,
+   -15.5,
+   -23.1,
+   -24.4,
+   -25.6,
+   -27.3,
+   -27.5,
+   -12.9,
+   -16.2,
+   -12.1,
+   -13.1,
+   -10.8,
+   -15.5,
+   -25.4,
+   -15.0,
+   -13.9,
+   -12.0,
+   -13.2,
+   -17.3,
+   -24.1,
+   -27.3,
+   -30.4,
+   -32.6,
+   -26.9,
+   -11.1,
+   -15.0,
+   -12.3,
+   -11.6,
+   -12.8,
+   -9.5,
+   -16.2,
+   -20.8,
+   -12.4,
+   -24.1,
+   -27.1,
+   -24.8,
+   -25.1,
+   -25.0,
+   -21.6,
+   -10.2,
+   -12.8,
+   -13.6,
+   -15.7,
+   -10.7,
+   -10.3,
+   -14.5,
+   -15.5,
+   -15.8,
+   -21.0,
+   -22.3,
+   -23.9,
+   -25.3,
+   -26.0,
+   -12.5,
+   -12.7,
+   -16.1,
+   -14.5,
+   -22.1,
+   -11.6,
+   -14.0,
+   -18.4,
+   -21.8,
+   -25.3,
+   -25.1,
+   -26.8,
+   -25.6,
+   -22.8,
+   -12.2,
+   -13.8,
+   -11.9,
+   -13.2,
+   -13.0,
+   -28.1,
+   -10.2,
+   -13.3,
+   -16.1,
+   -10.9,
+   -13.8,
+   -12.3,
+   -15.0,
+   -17.0,
+   -20.5,
+   -9.6,
+   -15.7,
+   -14.5,
+   -11.3,
+   -11.3,
+   -13.7,
+   -20.4,
+   -20.8,
+   -22.3,
+   -18.1,
+   -13.5,
+   -12.7,
+   -14.1,
+   -11.3,
+   -9.8,
+   -16.2,
+   -10.6,
+   -18.4,
+   -13.9,
+   -19.4,
+   -22.4,
+   -23.6,
+   -25.1,
+   -29.5,
+   -30.5,
+   -30.8,
+   -31.9,
+   -34.3,
+   -36.8,
+   -39.8,
+   -46.0
+  ],
+  "transcripcion": "transcripcion.json (tools/reel49/voz.tsv)",
+  "nota": "Esto son medidas. Entonación, claridad de la locución, timbre o si hay música NO se pueden afirmar sin escuchar o transcribir."
+ },
+ "vistas": [],
+ "orden": "python3 tools/video_intel.py analyze reels/u49-minuto-setenta.mp4 --id u49 --tema impacto: tres banquillos, una fecha (28 nov) --modo detalle"
+}

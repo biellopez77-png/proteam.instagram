@@ -1,0 +1,303 @@
+{
+ "w": 1080,
+ "h": 1920,
+ "d": "15",
+ "dur": 26.0,
+ "on": true,
+ "vel": 1.0,
+ "cut": 11.8,
+ "trans": 1.9,
+ "pose": {
+  "ry0": -0.24,
+  "y": -0.014,
+  "far": 0.47
+ },
+ "dev": [
+  [
+   0,
+   "tv"
+  ],
+  [
+   4.3,
+   "tvblack",
+   0.8
+  ],
+  [
+   8.3,
+   "tv",
+   0.8
+  ]
+ ],
+ "layers": [
+  {
+   "t0": 0,
+   "t1": 4.5,
+   "type": "osd",
+   "ch": "CH 15",
+   "mode": "PLAY ▶"
+  },
+  {
+   "t0": 0.5,
+   "t1": 4.5,
+   "type": "text",
+   "valign": "flex-start",
+   "pad": "300px 90px",
+   "gap": 16,
+   "lines": [
+    {
+     "text": "AVISO DEL SISTEMA",
+     "font": "VT",
+     "size": 72,
+     "color": "#3dffa8",
+     "glow": "0 0 10px rgba(61,255,168,.7)",
+     "at": 0.1,
+     "cps": 30
+    },
+    {
+     "text": " ",
+     "size": 40
+    },
+    {
+     "text": "TU ANÁLISIS",
+     "size": 150,
+     "at": 0.8,
+     "cps": 16
+    },
+    {
+     "text": "SIGUE EN",
+     "size": 150,
+     "at": 1.5,
+     "cps": 16
+    },
+    {
+     "text": "1995.",
+     "size": 150,
+     "at": 2.1,
+     "cps": 12,
+     "cursor": true
+    }
+   ]
+  },
+  {
+   "t0": 4.4,
+   "t1": 8.5,
+   "type": "text",
+   "valign": "flex-start",
+   "pad": "300px 90px",
+   "gap": 22,
+   "lines": [
+    {
+     "text": "C:\\> ANALISIS.EXE",
+     "font": "VT",
+     "size": 84,
+     "color": "#52ff8f",
+     "glow": "0 0 10px rgba(80,255,140,.7)",
+     "at": 0.2,
+     "cps": 18
+    },
+    {
+     "text": " ",
+     "size": 30
+    },
+    {
+     "text": "LIBRETA.DOC ..... OBSOLETO",
+     "font": "VT",
+     "size": 64,
+     "color": "#52ff8f",
+     "glow": "0 0 10px rgba(80,255,140,.6)",
+     "at": 1.2,
+     "cps": 40
+    },
+    {
+     "text": "EXCEL_97.XLS .... OBSOLETO",
+     "font": "VT",
+     "size": 64,
+     "color": "#52ff8f",
+     "glow": "0 0 10px rgba(80,255,140,.6)",
+     "at": 2.0,
+     "cps": 40
+    },
+    {
+     "text": "VHS_PARTIDO ..... OBSOLETO",
+     "font": "VT",
+     "size": 64,
+     "color": "#52ff8f",
+     "glow": "0 0 10px rgba(80,255,140,.6)",
+     "at": 2.8,
+     "cps": 40
+    },
+    {
+     "text": "C:\\> _",
+     "font": "VT",
+     "size": 84,
+     "color": "#52ff8f",
+     "glow": "0 0 10px rgba(80,255,140,.7)",
+     "at": 3.5,
+     "cps": 20
+    }
+   ]
+  },
+  {
+   "t0": 8.4,
+   "t1": 12.4,
+   "type": "osd",
+   "ch": "CH 15",
+   "mode": "⟳ UPDATE",
+   "blink": true
+  },
+  {
+   "t0": 8.5,
+   "t1": 12.4,
+   "type": "text",
+   "valign": "flex-start",
+   "pad": "300px 90px",
+   "gap": 16,
+   "lines": [
+    {
+     "text": "ACTUALIZACIÓN",
+     "size": 104,
+     "at": 0.1,
+     "cps": 26
+    },
+    {
+     "text": "DISPONIBLE",
+     "size": 104,
+     "at": 0.6,
+     "cps": 24
+    },
+    {
+     "text": " ",
+     "size": 40
+    },
+    {
+     "text": "PROTEAM 2026",
+     "font": "VT",
+     "size": 80,
+     "at": 1.1,
+     "cps": 30
+    },
+    {
+     "text": "¿INSTALAR? [SÍ]",
+     "font": "VT",
+     "size": 80,
+     "at": 1.5,
+     "cps": 30
+    }
+   ]
+  },
+  {
+   "t0": 8.5,
+   "t1": 12.4,
+   "type": "bar",
+   "at": 1.8,
+   "len": 1.4,
+   "bottom": 330
+  }
+ ],
+ "app": [
+  [
+   11.8,
+   "mo-week",
+   0.02,
+   0.15
+  ],
+  [
+   14.4,
+   "reg-3",
+   0.42,
+   0.5
+  ],
+  [
+   16.6,
+   "res-0",
+   0.1,
+   0.4
+  ],
+  [
+   18.8,
+   "fF",
+   0,
+   0.15
+  ],
+  [
+   21.0,
+   "mo-home",
+   0,
+   0.05
+  ]
+ ],
+ "words": [
+  [
+   13.4,
+   14.4,
+   "<div class=\"a\" style=\"left:0;right:0;top:150px;text-align:center;font-family:IT;font-weight:900;font-size:112px;letter-spacing:-.04em;color:#fff;line-height:1\">Actualizado.</div>"
+  ],
+  [
+   14.5,
+   16.6,
+   "<div class=\"a\" style=\"left:0;right:0;top:150px;text-align:center;font-family:IT;font-weight:900;font-size:112px;letter-spacing:-.04em;color:#fff;line-height:1\">Cada tiro.</div>"
+  ],
+  [
+   16.7,
+   18.8,
+   "<div class=\"a\" style=\"left:0;right:0;top:150px;text-align:center;font-family:IT;font-weight:900;font-size:112px;letter-spacing:-.04em;color:#fff;line-height:1\">Cada parcial.</div>"
+  ],
+  [
+   18.9,
+   21.0,
+   "<div class=\"a\" style=\"left:0;right:0;top:150px;text-align:center;font-family:IT;font-weight:900;font-size:112px;letter-spacing:-.04em;color:#fff;line-height:1\">Cada minuto.</div>"
+  ],
+  [
+   21.1,
+   26.0,
+   "<div class=\"a\" style=\"left:0;right:0;top:150px;text-align:center;font-family:IT;font-weight:900;font-size:112px;letter-spacing:-.04em;color:#fff;line-height:1\">6 meses gratis.</div><div class=\"a\" style=\"left:0;right:0;top:285px;text-align:center;font-family:VT;font-size:54px;letter-spacing:.06em;color:#3dffa8\">SOLO HASTA EL 27 · PRO-TEAM.APP</div>"
+  ]
+ ],
+ "audio": {
+  "cut": 11.8,
+  "old": [
+   "Honky-Tonk Villain.mp3",
+   0
+  ],
+  "new": [
+   "Thugs.mp3",
+   138.5
+  ],
+  "old_vol": 0.5,
+  "new_vol": 0.75
+ },
+ "lineas": [
+  [
+   0.8,
+   "Aviso del sistema. Tu análisis sigue en mil novecientos noventa y cinco."
+  ],
+  [
+   4.9,
+   "Libreta, Excel y una cinta de vídeo. Todo obsoleto."
+  ],
+  [
+   9.0,
+   "Actualización disponible."
+  ],
+  [
+   12.3,
+   "ProTim."
+  ],
+  [
+   14.6,
+   "Registra cada tiro, en directo."
+  ],
+  [
+   16.8,
+   "Analiza cada parcial."
+  ],
+  [
+   19.0,
+   "Controla la carga de cada jugador."
+  ],
+  [
+   21.3,
+   "Seis meses gratis para tu primer equipo. Solo hasta el veintisiete."
+  ]
+ ]
+}

@@ -1,0 +1,918 @@
+{
+ "meta": {
+  "contenedor": "mov,mp4,m4a,3gp,3g2,mj2",
+  "duracion_s": 13.4,
+  "tamano_bytes": 2782312,
+  "bitrate_kbps": 1661,
+  "ancho": 1080,
+  "alto": 1920,
+  "relacion": "9:16",
+  "fps": 30.0,
+  "fotogramas_declarados": 402,
+  "codec_video": "h264",
+  "pix_fmt": "yuv420p",
+  "pistas_audio": [
+   {
+    "codec": "aac",
+    "canales": 2,
+    "hz": 48000,
+    "bitrate_kbps": 210
+   }
+  ],
+  "etiquetas": {
+   "major_brand": "isom",
+   "minor_version": "512",
+   "compatible_brands": "isomiso2avc1mp41",
+   "encoder": "Lavf60.16.100"
+  },
+  "id": "u17",
+  "fotogramas_leidos": 402,
+  "sha256": "6f7fa95522bdd975435811f6b278033dd2b49321e64dbbc57a827482700c7b54",
+  "archivo": "reels/u17-defensa-zona-minibasket.mp4",
+  "fuente": "",
+  "marca": "proteam",
+  "tipo": "propio",
+  "formato": "reel",
+  "tema": "Reel de datos: defensa en zona prohibida en minibasket (JEEB Barcelona)",
+  "analizado": "2026-11-16 14:49"
+ },
+ "montaje": {
+  "cortes_duros": 4,
+  "transiciones_o_movimientos_fuertes": 0,
+  "planos": 5,
+  "duracion_media_plano_s": 2.68,
+  "plano_mas_largo_s": 3.5,
+  "plano_mas_corto_s": 2.3,
+  "cortes_por_10s": 2.99,
+  "tramos_estaticos": [
+   {
+    "desde": 3.53,
+    "hasta": 5.1,
+    "duracion_s": 1.57
+   },
+   {
+    "desde": 5.57,
+    "hasta": 7.23,
+    "duracion_s": 1.67
+   },
+   {
+    "desde": 11.73,
+    "hasta": 13.37,
+    "duracion_s": 1.63
+   }
+  ],
+  "nota": "Detección automática por histograma y diferencia de imagen sobre TODOS los fotogramas. Un motion graphic continuo cuenta como un solo plano; un cambio de fondo brusco dentro de una animación puede contarse como corte. Confirmar en las láminas."
+ },
+ "cortes": [
+  {
+   "fotograma": 76,
+   "t": 2.533,
+   "tipo": "corte",
+   "fuerza": 0.481
+  },
+  {
+   "fotograma": 156,
+   "t": 5.2,
+   "tipo": "corte",
+   "fuerza": 1.0
+  },
+  {
+   "fotograma": 261,
+   "t": 8.7,
+   "tipo": "corte",
+   "fuerza": 1.0
+  },
+  {
+   "fotograma": 330,
+   "t": 11.0,
+   "tipo": "corte",
+   "fuerza": 0.925
+  }
+ ],
+ "escenas": [
+  {
+   "escena": 1,
+   "desde_fotograma": 0,
+   "hasta_fotograma": 75,
+   "desde": 0.0,
+   "hasta": 2.533,
+   "duracion_s": 2.533,
+   "movimiento_medio": 0.003,
+   "luz_media": 0.261,
+   "saturacion_media": 0.25
+  },
+  {
+   "escena": 2,
+   "desde_fotograma": 76,
+   "hasta_fotograma": 155,
+   "desde": 2.533,
+   "hasta": 5.2,
+   "duracion_s": 2.667,
+   "movimiento_medio": 0.0045,
+   "luz_media": 0.102,
+   "saturacion_media": 0.305
+  },
+  {
+   "escena": 3,
+   "desde_fotograma": 156,
+   "hasta_fotograma": 260,
+   "desde": 5.2,
+   "hasta": 8.7,
+   "duracion_s": 3.5,
+   "movimiento_medio": 0.0108,
+   "luz_media": 0.932,
+   "saturacion_media": 0.027
+  },
+  {
+   "escena": 4,
+   "desde_fotograma": 261,
+   "hasta_fotograma": 329,
+   "desde": 8.7,
+   "hasta": 11.0,
+   "duracion_s": 2.3,
+   "movimiento_medio": 0.0161,
+   "luz_media": 0.117,
+   "saturacion_media": 0.251
+  },
+  {
+   "escena": 5,
+   "desde_fotograma": 330,
+   "hasta_fotograma": 401,
+   "desde": 11.0,
+   "hasta": 13.4,
+   "duracion_s": 2.4,
+   "movimiento_medio": 0.0032,
+   "luz_media": 0.091,
+   "saturacion_media": 0.309
+  }
+ ],
+ "laminas": [
+  {
+   "lamina": "general_001.jpg",
+   "fotogramas": [
+    0,
+    5,
+    10,
+    15,
+    20,
+    25,
+    37,
+    75,
+    76,
+    115,
+    155,
+    156,
+    201,
+    208,
+    246,
+    260,
+    261,
+    295
+   ],
+   "desde": 0.0,
+   "hasta": 9.833,
+   "modo": "general"
+  },
+  {
+   "lamina": "general_002.jpg",
+   "fotogramas": [
+    329,
+    330,
+    365,
+    401
+   ],
+   "desde": 10.967,
+   "hasta": 13.367,
+   "modo": "general"
+  },
+  {
+   "lamina": "detalle_001.jpg",
+   "fotogramas": [
+    0,
+    8,
+    16,
+    24,
+    32,
+    40,
+    48,
+    56,
+    64,
+    72,
+    75,
+    76,
+    80,
+    88,
+    96,
+    104,
+    112,
+    120,
+    128,
+    136,
+    144,
+    152,
+    155,
+    156
+   ],
+   "desde": 0.0,
+   "hasta": 5.2,
+   "modo": "detalle"
+  },
+  {
+   "lamina": "detalle_002.jpg",
+   "fotogramas": [
+    160,
+    168,
+    176,
+    184,
+    192,
+    200,
+    208,
+    216,
+    224,
+    232,
+    240,
+    248,
+    256,
+    260,
+    261,
+    264,
+    272,
+    280,
+    288,
+    296,
+    304,
+    312,
+    320,
+    328
+   ],
+   "desde": 5.333,
+   "hasta": 10.933,
+   "modo": "detalle"
+  },
+  {
+   "lamina": "detalle_003.jpg",
+   "fotogramas": [
+    329,
+    330,
+    336,
+    344,
+    352,
+    360,
+    368,
+    376,
+    384,
+    392,
+    400
+   ],
+   "desde": 10.967,
+   "hasta": 13.333,
+   "modo": "detalle"
+  }
+ ],
+ "texto_en_pantalla": {
+  "idioma": "spa+eng",
+  "nota": "OCR automático sobre los fotogramas muestreados: puede fallar con tipografía fina, texto animado o sobre foto. La exposición es aproximada (resolución = intervalo de muestreo). Verificar siempre en las láminas.",
+  "por_fotograma": [
+   {
+    "fotograma": 0,
+    "t": 0.0,
+    "texto": "BALONC INIBASKE DAS NDES ZC NF"
+   },
+   {
+    "fotograma": 5,
+    "t": 0.167,
+    "texto": "BALONCES MI SKET Fl NDES NZ"
+   },
+   {
+    "fotograma": 8,
+    "t": 0.267,
+    "texto": "BAL MI SKET Fl IDES AD ZON"
+   },
+   {
+    "fotograma": 10,
+    "t": 0.333,
+    "texto": "BALONC MI SKET Fl NDES ZON"
+   },
+   {
+    "fotograma": 15,
+    "t": 0.5,
+    "texto": "BALONC MI SKET DEF] NDES"
+   },
+   {
+    "fotograma": 16,
+    "t": 0.533,
+    "texto": "BALONCE SK DEF] NDES ZC NA?"
+   },
+   {
+    "fotograma": 20,
+    "t": 0.667,
+    "texto": "BAL TO: MI SKET Fl NDES ZON"
+   },
+   {
+    "fotograma": 24,
+    "t": 0.8,
+    "texto": "BALONCESTO MI SKET ar” Fl NDES ZONA?"
+   },
+   {
+    "fotograma": 25,
+    "t": 0.833,
+    "texto": "BALONCESTO: MI SKET di Fl NDES ZONA?"
+   },
+   {
+    "fotograma": 32,
+    "t": 1.067,
+    "texto": "BALONC SKET ax NDES ONA"
+   },
+   {
+    "fotograma": 37,
+    "t": 1.233,
+    "texto": "BAL MI SK ET NDES ONA"
+   },
+   {
+    "fotograma": 40,
+    "t": 1.333,
+    "texto": "BALONC SKET Fl NDES ZO"
+   },
+   {
+    "fotograma": 48,
+    "t": 1.6,
+    "texto": "BALONC MI SKET NDES AD"
+   },
+   {
+    "fotograma": 56,
+    "t": 1.867,
+    "texto": "BALO MI SK DE NDES"
+   },
+   {
+    "fotograma": 64,
+    "t": 2.133,
+    "texto": "BALONG SK ET NDES NZONA"
+   },
+   {
+    "fotograma": 72,
+    "t": 2.4,
+    "texto": "SK ET NDES"
+   },
+   {
+    "fotograma": 75,
+    "t": 2.5,
+    "texto": "BAL MI SK ET JE NDES AD"
+   },
+   {
+    "fotograma": 76,
+    "t": 2.533,
+    "texto": "BA DEF] DES ZONA?"
+   },
+   {
+    "fotograma": 80,
+    "t": 2.667,
+    "texto": "FN RARCFIONA"
+   },
+   {
+    "fotograma": 88,
+    "t": 2.933,
+    "texto": "EN BARCELONA,"
+   },
+   {
+    "fotograma": 96,
+    "t": 3.2,
+    "texto": "EN BARCELONA,"
+   },
+   {
+    "fotograma": 104,
+    "t": 3.467,
+    "texto": "EN BARCELONA, no Se puede."
+   },
+   {
+    "fotograma": 112,
+    "t": 3.733,
+    "texto": "EN BARCELONA, no se puede."
+   },
+   {
+    "fotograma": 115,
+    "t": 3.833,
+    "texto": "EN BARCELONA, no se puede."
+   },
+   {
+    "fotograma": 120,
+    "t": 4.0,
+    "texto": "EN BARCELONA, no se puede."
+   },
+   {
+    "fotograma": 128,
+    "t": 4.267,
+    "texto": "EN BARCELONA, no se puede."
+   },
+   {
+    "fotograma": 136,
+    "t": 4.533,
+    "texto": "EN BARCELONA, no se puede."
+   },
+   {
+    "fotograma": 144,
+    "t": 4.8,
+    "texto": "EN BARCELONA, no se puede."
+   },
+   {
+    "fotograma": 152,
+    "t": 5.067,
+    "texto": "EN BARCELONA, no se puede."
+   },
+   {
+    "fotograma": 155,
+    "t": 5.167,
+    "texto": "EN BARCELONA, nose puede."
+   },
+   {
+    "fotograma": 156,
+    "t": 5.2,
+    "texto": "Jocs ESPORTIUS Reglament de ESCOLARS DE BARCELONA quet 2023-24 art,"
+   },
+   {
+    "fotograma": 160,
+    "t": 5.333,
+    "texto": "LO DICE EL REGLAMENTO JOCS ESPORTIUS ESCOLARS DE BARCELONA Reglament de minibásquet 2023-24 art."
+   },
+   {
+    "fotograma": 168,
+    "t": 5.6,
+    "texto": "LO DICE EL REGLAMENTO JOCS ESPORTIUS ESCOLARS DE BARCELONA Reglament de minibasquet 2023-24 art. «No és permes realitzar cap tipus de defensa en zona.»"
+   },
+   {
+    "fotograma": 176,
+    "t": 5.867,
+    "texto": "LO DICE EL REGLAMENTO JOCS ESPORTIUS ESCOLARS DE BARCELONA Reglament de minibasquet 2023-24 art. «No és permes realitzar cap tipus de defensa en zona.»"
+   },
+   {
+    "fotograma": 184,
+    "t": 6.133,
+    "texto": "LO DICE EL REGLAMENTO JOCS ESPORTIUS ESCOLARS DE BARCELONA Reglament de minibasquet 2023-24 art. «No és permes realitzar cap tipus de defensa en zona.» No se permite ningún tipo de defensa en zona."
+   },
+   {
+    "fotograma": 192,
+    "t": 6.4,
+    "texto": "LO DICE EL REGLAMENTO JOCS ESPORTIUS ESCOLARS DE BARCELONA Reglament de minibasquet 2023-24 art. «No és permes realitzar cap tipus de defensa en zona.» No se permite ningún tipo de defensa en zona."
+   },
+   {
+    "fotograma": 200,
+    "t": 6.667,
+    "texto": "LO DICE EL REGLAMENTO JOCS ESPORTIUS ESCOLARS DE BARCELONA Reglament de minibasquet 2023-24 art. «No és permes realitzar cap tipus de defensa en zona.» zona. No se permite ningún tipo de defensa en VEZ aviso al entrenador"
+   },
+   {
+    "fotograma": 201,
+    "t": 6.7,
+    "texto": "LO DICE EL REGLAMENTO JOCS ESPORTIUS ESCOLARS DE BARCELONA Reglament de minibásquet 2023-24 art. «No és permes realitzar cap tipus de defensa en zona.» zona. No se permite ningún tipo de defensa en VEZ aviso al entrenador"
+   },
+   {
+    "fotograma": 208,
+    "t": 6.933,
+    "texto": "LO DICE EL REGLAMENTO JOCS ESPORTIUS ESCOLARS DE BARCELONA Reglament de minibásquet 2023-24 art. «No és permes realitzar cap tipus de defensa en zona.» No se permite ningún tipo de defensa en ona VEZ aviso al entrenador"
+   },
+   {
+    "fotograma": 216,
+    "t": 7.2,
+    "texto": "LO DICE EL REGLAMENTO JOCS ESPORTIUS ESCOLARS DE BARCELONA Reglament de minibasquet 2023-24 art. «No és permes realitzar cap tipus de defensa en zona.» No se permite ningún tipo de defensa en zona VEZ aviso al entrenador Si SIGUE 2tiros libres saque de banda"
+   },
+   {
+    "fotograma": 224,
+    "t": 7.467,
+    "texto": "LO DICE EL REGLAMENTO JOCS ESPORTIUS ESCOLARS DE BARCELONA Reglament de minibasquet 2023-24 art. «No és permes realitzar cap tipus de defensa en zona.» No se permite ningún tipo de defensa en zona VEZ aviso al entrenador SI SIGUE 2tiros libres saque de banda"
+   },
+   {
+    "fotograma": 232,
+    "t": 7.733,
+    "texto": "LO DICE EL REGLAMENTO JOCS ESPORTIUS ESCOLARS DE BARCELONA Reglament de minibásquet 2023-24 art. «No és permes realitzar cap tipus de defensa en zona.» No se permite ningún tipo de defensa en zona. VEZ aviso al entrenador SI SIGUE 2tiros libres saque de banda"
+   },
+   {
+    "fotograma": 240,
+    "t": 8.0,
+    "texto": "LO DICE EL REGLAMENTO JOCS ESPORTIUS ESCOLARS DE BARCELONA Reglament de minibasquet 2023-24 art. «No és permes realitzar cap tipus de defensa en zona.» No se permite ningún tipo de defensa en zona. VEZ aviso al entrenador SI SIGUE 2tiros libres saque de banda"
+   },
+   {
+    "fotograma": 246,
+    "t": 8.2,
+    "texto": "LO DICE EL REGLAMENTO JOCS ESPORTIUS ESCOLARS DE BARCELONA Reglament de minibasquet 2023-24 art. «No és permes realitzar cap tipus de defensa en zona.» No se permite ningún tipo de defensa en zona aviso al entrenador SI SIGUE 2tiros libres saque de banda"
+   },
+   {
+    "fotograma": 248,
+    "t": 8.267,
+    "texto": "LO DICE EL REGLAMENTO JOCS ESPORTIUS ESCOLARS DE BARCELONA Reglament de minibasquet 2023-24 art. «No és permes realitzar cap tipus de defensa en zona.» No se permite ningún tipo de defensa en zona VEZ aviso al entrenador SI SIGUE 2tiros libres saque de banda"
+   },
+   {
+    "fotograma": 256,
+    "t": 8.533,
+    "texto": "LO DICE EL REGLAMENTO JOCS ESPORTIUS ESCOLARS DE BARCELONA Reglament de minibasquet 2023-24 art. «No és permes realitzar cap tipus de defensa en zona.» No se permite ningún tipo de defensa en zona VEZ aviso al entrenador SI SIGUE 2tiros libres saque de banda"
+   },
+   {
+    "fotograma": 260,
+    "t": 8.667,
+    "texto": "LO DICE EL REGLAMENTO JOCS ESPORTIUS ESCOLARS DE BARCELONA Reglament de minibasquet 2023-24 «No és permes realitzar cap tipus de defensa en zona.» No se permite ningún tipo de defensa en zona VEZ aviso al entrenador SI SIGUE 2tiros libres saque de banda"
+   },
+   {
+    "fotograma": 261,
+    "t": 8.7,
+    "texto": ""
+   },
+   {
+    "fotograma": 264,
+    "t": 8.8,
+    "texto": ""
+   },
+   {
+    "fotograma": 272,
+    "t": 9.067,
+    "texto": "RETO PARA TU STAFF ¿Cuántos de los tuyos al aue bota?"
+   },
+   {
+    "fotograma": 280,
+    "t": 9.333,
+    "texto": "RETO PARA TU STAFF ¿Cuántos de los tuyos al que bota?"
+   },
+   {
+    "fotograma": 288,
+    "t": 9.6,
+    "texto": "RETO PARA TU STAFF ¿Cuántos de los tuyos al que bota?"
+   },
+   {
+    "fotograma": 295,
+    "t": 9.833,
+    "texto": "RETO PARA TU STAFF ¿Cuántos de los tuyos al que bota?"
+   },
+   {
+    "fotograma": 296,
+    "t": 9.867,
+    "texto": "RETO PARA TU STAFF ¿Cuántos de los tuyos al que bota? Envíaselo tu seaundo"
+   },
+   {
+    "fotograma": 304,
+    "t": 10.133,
+    "texto": "RETO PARA TU STAFF ¿Cuántos de los tuyos al que bota? Envíaselo tu segundo."
+   },
+   {
+    "fotograma": 312,
+    "t": 10.4,
+    "texto": "RETO PARA TU STAFF ¿Cuántos de los tuyos al que bota? Envíaselo tu segundo."
+   },
+   {
+    "fotograma": 320,
+    "t": 10.667,
+    "texto": "RETO PARA TU STAFF ¿Cuántos de los tuyos al que bota? Envíaselo tu segundo."
+   },
+   {
+    "fotograma": 328,
+    "t": 10.933,
+    "texto": "RETO PARA TU STAFF ¿Cuántos de los tuyos defiendens0/os al que bota? Envíaselo tu segundo."
+   },
+   {
+    "fotograma": 329,
+    "t": 10.967,
+    "texto": "RETO PARA TU STAFF ¿Cuántos de los tuyos al que bota? Envíaselo tu segundo."
+   },
+   {
+    "fotograma": 330,
+    "t": 11.0,
+    "texto": "coll"
+   },
+   {
+    "fotograma": 336,
+    "t": 11.2,
+    "texto": "LISTA DE ESPERA DE LA APP DE PROTEAM HASTA EL 27 NOV"
+   },
+   {
+    "fotograma": 344,
+    "t": 11.467,
+    "texto": "LISTA DE ESPERA DE LA APP DE PROTEAM HASTA NOV"
+   },
+   {
+    "fotograma": 352,
+    "t": 11.733,
+    "texto": "LISTA DE ESPERA DE LA APP DE PROTEAM HASTA EL27 NOV meses gratis."
+   },
+   {
+    "fotograma": 360,
+    "t": 12.0,
+    "texto": "LISTA DE ESPERA DE LA APP DE PROTEAM HASTA NOV meses gratis. Comenta tu deporte, categoria dias."
+   },
+   {
+    "fotograma": 365,
+    "t": 12.167,
+    "texto": "LISTA DE ESPERA DE LA APP DE PROTEAM HASTA NOV meses gratis. Comenta tu deporte, categoria dias."
+   },
+   {
+    "fotograma": 368,
+    "t": 12.267,
+    "texto": "LISTA DE ESPERA DE LA APP DE PROTEAM HASTA NOV meses gratis. Comenta tu deporte, categoria dias."
+   },
+   {
+    "fotograma": 376,
+    "t": 12.533,
+    "texto": "LISTA DE ESPERA DE LA APP DE PROTEAM HASTA NOV meses gratis. Comenta tu deporte, categoría días."
+   },
+   {
+    "fotograma": 384,
+    "t": 12.8,
+    "texto": "LISTA DE ESPERA DE LA APP DE PROTEAM HASTA NOV meses gratis. Comenta tu deporte, categoría días."
+   },
+   {
+    "fotograma": 392,
+    "t": 13.067,
+    "texto": "LISTA DE ESPERA DE LA APP DE PROTEAM HASTA NOV meses gratis. Comenta tu deporte, categoria dias."
+   },
+   {
+    "fotograma": 400,
+    "t": 13.333,
+    "texto": "LISTA DE ESPERA DE LA APP DE PROTEAM HASTA NOV meses gratis. Comenta tu deporte, categoria dias."
+   },
+   {
+    "fotograma": 401,
+    "t": 13.367,
+    "texto": "LISTA DE ESPERA DE LA APP DE PROTEAM HASTA NOV meses gratis. Comenta tu deporte, categoria dias."
+   }
+  ],
+  "bloques": [
+   {
+    "desde": 0.0,
+    "hasta": 0.0,
+    "texto": "BALONC INIBASKE DAS NDES ZC NF",
+    "palabras": 6
+   },
+   {
+    "desde": 0.167,
+    "hasta": 0.167,
+    "texto": "BALONCES MI SKET Fl NDES NZ",
+    "palabras": 6
+   },
+   {
+    "desde": 0.267,
+    "hasta": 0.267,
+    "texto": "BAL MI SKET Fl IDES AD ZON",
+    "palabras": 7
+   },
+   {
+    "desde": 0.333,
+    "hasta": 0.5,
+    "texto": "BALONC MI SKET Fl NDES ZON",
+    "palabras": 6
+   },
+   {
+    "desde": 0.533,
+    "hasta": 0.533,
+    "texto": "BALONCE SK DEF] NDES ZC NA?",
+    "palabras": 6
+   },
+   {
+    "desde": 0.667,
+    "hasta": 0.667,
+    "texto": "BAL TO: MI SKET Fl NDES ZON",
+    "palabras": 7
+   },
+   {
+    "desde": 0.8,
+    "hasta": 0.833,
+    "texto": "BALONCESTO MI SKET ar” Fl NDES ZONA?",
+    "palabras": 7
+   },
+   {
+    "desde": 1.067,
+    "hasta": 1.067,
+    "texto": "BALONC SKET ax NDES ONA",
+    "palabras": 5
+   },
+   {
+    "desde": 1.233,
+    "hasta": 1.233,
+    "texto": "BAL MI SK ET NDES ONA",
+    "palabras": 6
+   },
+   {
+    "desde": 1.333,
+    "hasta": 1.333,
+    "texto": "BALONC SKET Fl NDES ZO",
+    "palabras": 5
+   },
+   {
+    "desde": 1.6,
+    "hasta": 1.6,
+    "texto": "BALONC MI SKET NDES AD",
+    "palabras": 5
+   },
+   {
+    "desde": 1.867,
+    "hasta": 1.867,
+    "texto": "BALO MI SK DE NDES",
+    "palabras": 5
+   },
+   {
+    "desde": 2.133,
+    "hasta": 2.133,
+    "texto": "BALONG SK ET NDES NZONA",
+    "palabras": 5
+   },
+   {
+    "desde": 2.5,
+    "hasta": 2.5,
+    "texto": "BAL MI SK ET JE NDES AD",
+    "palabras": 7
+   },
+   {
+    "desde": 2.933,
+    "hasta": 3.2,
+    "texto": "EN BARCELONA,",
+    "palabras": 2
+   },
+   {
+    "desde": 3.467,
+    "hasta": 5.167,
+    "texto": "EN BARCELONA, no Se puede.",
+    "palabras": 5
+   },
+   {
+    "desde": 5.2,
+    "hasta": 5.2,
+    "texto": "Jocs ESPORTIUS Reglament de ESCOLARS DE BARCELONA quet 2023-24 art,",
+    "palabras": 10
+   },
+   {
+    "desde": 5.333,
+    "hasta": 8.667,
+    "texto": "LO DICE EL REGLAMENTO JOCS ESPORTIUS ESCOLARS DE BARCELONA Reglament de minibásquet 2023-24 art. «No és permes realitzar cap tipus de defensa en zona.» No se permite ningún tipo de defensa en zona. VEZ aviso al entrenador SI SIGUE 2tiros libres saque de banda",
+    "palabras": 44
+   },
+   {
+    "desde": 9.067,
+    "hasta": 10.967,
+    "texto": "RETO PARA TU STAFF ¿Cuántos de los tuyos defiendens0/os al que bota? Envíaselo tu segundo.",
+    "palabras": 15
+   },
+   {
+    "desde": 11.2,
+    "hasta": 13.367,
+    "texto": "LISTA DE ESPERA DE LA APP DE PROTEAM HASTA NOV meses gratis. Comenta tu deporte, categoria dias.",
+    "palabras": 17
+   }
+  ]
+ },
+ "audio": {
+  "tiene_audio": true,
+  "wav": "intel/videos/u17/audio_16k.wav",
+  "volumen_integrado_lufs": "-19.28",
+  "pico_real_db": "-2.98",
+  "rango_lra": "4.30",
+  "silencios": [],
+  "subidas_bruscas_s": [
+   2.6,
+   5.1,
+   5.9,
+   8.4,
+   9.3,
+   11.8,
+   12.7
+  ],
+  "energia_db_cada_0_1s": [
+   -24.7,
+   -44.3,
+   -39.7,
+   -37.4,
+   -34.8,
+   -33.0,
+   -31.4,
+   -30.4,
+   -29.9,
+   -29.7,
+   -29.6,
+   -29.5,
+   -30.2,
+   -29.6,
+   -29.8,
+   -29.7,
+   -30.3,
+   -31.0,
+   -32.9,
+   -34.0,
+   -35.2,
+   -35.7,
+   -35.6,
+   -35.4,
+   -38.0,
+   -45.8,
+   -9.2,
+   -11.3,
+   -13.0,
+   -14.0,
+   -15.0,
+   -15.9,
+   -16.7,
+   -17.4,
+   -18.0,
+   -18.8,
+   -19.7,
+   -20.8,
+   -16.8,
+   -17.9,
+   -24.1,
+   -27.6,
+   -30.3,
+   -33.7,
+   -33.3,
+   -33.1,
+   -33.4,
+   -33.1,
+   -33.4,
+   -32.6,
+   -33.1,
+   -15.4,
+   -21.0,
+   -24.5,
+   -28.4,
+   -34.8,
+   -34.3,
+   -33.2,
+   -32.3,
+   -15.6,
+   -12.2,
+   -15.4,
+   -16.8,
+   -17.5,
+   -18.3,
+   -19.5,
+   -20.3,
+   -21.1,
+   -21.7,
+   -23.2,
+   -23.9,
+   -24.5,
+   -13.8,
+   -19.8,
+   -26.2,
+   -29.8,
+   -31.2,
+   -31.1,
+   -31.4,
+   -30.9,
+   -30.7,
+   -30.7,
+   -31.2,
+   -30.6,
+   -17.2,
+   -14.6,
+   -22.3,
+   -28.8,
+   -30.9,
+   -32.0,
+   -32.8,
+   -31.4,
+   -31.1,
+   -9.7,
+   -13.9,
+   -15.7,
+   -16.2,
+   -17.4,
+   -18.2,
+   -19.0,
+   -19.9,
+   -20.0,
+   -21.6,
+   -22.6,
+   -23.4,
+   -16.5,
+   -14.8,
+   -22.0,
+   -27.6,
+   -30.4,
+   -30.1,
+   -28.7,
+   -29.8,
+   -30.6,
+   -30.6,
+   -30.3,
+   -30.8,
+   -30.8,
+   -13.8,
+   -17.6,
+   -25.2,
+   -31.2,
+   -34.6,
+   -34.5,
+   -34.0,
+   -33.7,
+   -22.6,
+   -18.5,
+   -20.4,
+   -23.6,
+   -26.8,
+   -30.7,
+   -35.7,
+   -44.4
+  ],
+  "transcripcion": "PENDIENTE: no hay transcriptor local. Usa la herramienta de transcripción de ElevenLabs con audio_16k.wav, o el guion/voz.tsv si es un Reel propio, y guarda el resultado en transcripcion.json.",
+  "nota": "Esto son medidas. Entonación, claridad de la locución, timbre o si hay música NO se pueden afirmar sin escuchar o transcribir."
+ },
+ "vistas": [
+  "detalle_001.jpg",
+  "detalle_002.jpg",
+  "detalle_003.jpg",
+  "general_001.jpg",
+  "general_002.jpg"
+ ],
+ "orden": "python3 tools/video_intel.py analyze reels/u17-defensa-zona-minibasket.mp4 --id u17 --tema Reel de datos: defensa en zona prohibida en minibasket (JEEB Barcelona) --modo detalle"
+}

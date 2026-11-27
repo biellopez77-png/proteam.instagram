@@ -1,0 +1,24 @@
+{
+ "numero": "Nº 00",
+ "seccion": "La libreta",
+ "formato": "story",
+ "laminas": [
+  {
+   "tipo": "pregunta",
+   "foto": "STAFF_TRABAJO_FOTO_007",
+   "cap": "Una pregunta",
+   "big": "¿DÓNDE",
+   "bigLines": 1,
+   "serif": "apuntas\ntu semana?",
+   "size": 200
+  },
+  {
+   "tipo": "encuesta",
+   "pre": "Encuesta",
+   "big": "TU SEMANA,",
+   "serif": "¿libreta\no móvil?",
+   "foto": "OBJETO_BALONES_CARRO_FOTO_001",
+   "size": 150
+  }
+ ]
+}

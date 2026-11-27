@@ -1,0 +1,175 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face{font-family:IT;font-weight:900;src:url(../fonts/inter-tight-latin-900-normal.woff2)}
+@font-face{font-family:IT;font-weight:700;src:url(../fonts/inter-tight-latin-700-normal.woff2)}
+@font-face{font-family:VT;src:url(../fonts/vt323-latin-400-normal.woff2)}
+html,body{margin:0;background:#000;overflow:hidden}
+canvas{position:absolute;left:0;top:0;display:block}
+</style>
+<script type="importmap">{"imports":{"three":"/tools/wurtz/node_modules/three/build/three.module.js","three/addons/":"/tools/wurtz/node_modules/three/examples/jsm/"}}</script>
+</head><body>
+<script type="module">
+// R1 · «La pastilla». Todo en un solo reloj: window.frame(t) pinta el fotograma t (segundos).
+import * as THREE from 'three';
+import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
+import { RoundedBoxGeometry } from 'three/addons/geometries/RoundedBoxGeometry.js';
+import { buildPhone } from './dev3d.js';
+const W = 1080, H = 1920;
+const R = new THREE.WebGLRenderer({ antialias: true, preserveDrawingBuffer: true, alpha: true });
+R.setPixelRatio(1); R.setSize(W, H); R.outputEncoding = THREE.sRGBEncoding; R.toneMapping = THREE.ACESFilmicToneMapping;
+R.setClearColor(0x000000, 0);
+const c2 = document.createElement('canvas'); c2.width = W; c2.height = H; const g = c2.getContext('2d');   // fondo (Matrix, tele)
+const c3 = document.createElement('canvas'); c3.width = W; c3.height = H; const o = c3.getContext('2d');   // textos y efectos encima
+document.body.append(c2, R.domElement, c3);
+const S = new THREE.Scene(); const pm = new THREE.PMREMGenerator(R); S.environment = pm.fromScene(new RoomEnvironment(), .03).texture;
+const C = new THREE.PerspectiveCamera(26, W / H, .005, 20);
+S.add(Object.assign(new THREE.DirectionalLight('#fff', .9), { position: new THREE.Vector3(-1.2, 1.6, 2) }));
+const rimA = new THREE.DirectionalLight('#4f7bff', 2.4); rimA.position.set(2.2, .6, -1.2); S.add(rimA);
+const rimB = new THREE.DirectionalLight('#9fb4ff', 1.1); rimB.position.set(-2.2, -.6, -1.2); S.add(rimB);
+const rimG = new THREE.DirectionalLight('#3dff8f', 0); rimG.position.set(0, 1, -1); S.add(rimG);
+
+// ---------- pastillas
+const pillGeo = new THREE.CapsuleGeometry(.018, .036, 24, 48);
+const mkPill = (col) => { const m = new THREE.Mesh(pillGeo, new THREE.MeshPhysicalMaterial({ color: col, roughness: .12, metalness: 0, clearcoat: 1, clearcoatRoughness: .05, envMapIntensity: 1.4, sheen: .3 })); S.add(m); return m; };
+const blue = mkPill('#1f3cff'), red = mkPill('#e8102a');
+
+// ---------- móvil con pantalla viva (canvas)
+const { group: phone, P } = buildPhone(THREE, RoundedBoxGeometry); S.add(phone);
+const scr = document.createElement('canvas'); scr.width = 1112; scr.height = 2410; const sg = scr.getContext('2d');
+const scrTex = new THREE.CanvasTexture(scr); scrTex.encoding = THREE.sRGBEncoding; scrTex.anisotropy = 8;
+P.screen.material.map = scrTex; P.screen.material.color.set('#fff'); P.screen.material.needsUpdate = true;
+const IM = {}; const load = (k) => new Promise((ok) => { const i = new Image(); i.onload = () => { IM[k] = i; ok(); }; i.src = `/tools/app/${k}.jpg`; });
+// flujo real de la app: [tiempo, pantalla, toque (u,v) o null]
+const FLOW = [[0, 'reg-0', null], [.35, 'reg-0', [.773, .705]], [.75, 'reg-1', null], [1.15, 'reg-1', [.5, .684]], [1.55, 'reg-2', null],
+  [1.95, 'reg-2', [.64, .66]], [2.3, 'reg-3', null], [2.75, 'reg-3', [.58, .73]], [3.1, 'reg-4', null], [3.5, 'reg-4', [.31, .85]], [3.85, 'reg-5', null]];
+function paintScreen(tt) {
+  let cur = FLOW[0], prev = null;
+  for (const f of FLOW) if (f[0] <= tt) { if (f[1] !== cur[1]) prev = cur; cur = f; }
+  const base = FLOW.filter((f) => f[0] <= tt && !f[2]).pop() || FLOW[0];
+  const before = FLOW.filter((f) => f[0] < base[0] && !f[2]).pop();
+  sg.globalAlpha = 1; sg.drawImage(IM[base[1]], 0, 0, 1112, 2410);
+  const k = Math.min(1, (tt - base[0]) / .14);           // transición corta como en la app
+  if (before && k < 1) { sg.globalAlpha = 1 - k; sg.drawImage(IM[before[1]], 0, 0, 1112, 2410); sg.globalAlpha = 1; }
+  for (const f of FLOW) if (f[2] && tt >= f[0] && tt < f[0] + .45) {     // onda del dedo
+    const u = (tt - f[0]) / .45, x = f[2][0] * 1112, y = f[2][1] * 2410;
+    sg.fillStyle = `rgba(20,30,60,${.28 * (1 - u)})`; sg.beginPath(); sg.arc(x, y, 60 + 110 * u, 0, Math.PI * 2); sg.fill();
+    sg.fillStyle = `rgba(255,255,255,${.55 * (1 - u)})`; sg.beginPath(); sg.arc(x, y, 46, 0, Math.PI * 2); sg.fill();
+  }
+  if (tt > 3.85) {  // marcador actualizado: destello en el 27
+    const u = Math.min(1, (tt - 3.85) / .6); sg.strokeStyle = `rgba(47,107,255,${1 - u})`; sg.lineWidth = 10; sg.beginPath(); sg.roundRect(300, 115, 520, 150, 30); sg.stroke();
+  }
+  scrTex.needsUpdate = true;
+}
+
+// ---------- utilidades 2D
+const rnd = (i) => { const x = Math.sin(i * 127.1 + 311.7) * 43758.5453; return x - Math.floor(x); };
+const ease = (x) => x < 0 ? 0 : x > 1 ? 1 : x * x * (3 - 2 * x);
+const seg = (t, a, b) => ease((t - a) / (b - a));
+const GL = 'アイウエオカキクケコサシスセソタチツテトナニヌネノ0123456789ABCDEFΣΔ1995';
+function matrix(ctx, t, alpha = 1, tint = '#3dff8f', size = 34) {
+  const cols = Math.ceil(W / (size * .62));
+  ctx.font = `${size}px VT`; ctx.textAlign = 'center';
+  for (let c = 0; c < cols; c++) {
+    const sp = 5 + rnd(c) * 9, off = rnd(c + 99) * 60, len = 10 + Math.floor(rnd(c + 7) * 22);
+    const head = ((t * sp + off) % (H / size + len + 10)) - 2, x = c * size * .62 + size * .3;
+    for (let k = 0; k < len; k++) {
+      const row = Math.floor(head) - k; if (row < 0 || row * size > H + size) continue;
+      const ch = GL[Math.floor(rnd(c * 31 + row * 7 + Math.floor(t * 8 + rnd(c) * 5)) * GL.length)];
+      const a = (k === 0 ? 1 : (1 - k / len) * .75) * alpha;
+      ctx.fillStyle = k === 0 ? `rgba(220,255,230,${a})` : tint; ctx.globalAlpha = k === 0 ? 1 : a; ctx.fillText(ch, x, row * size);
+    }
+  }
+  ctx.globalAlpha = 1;
+}
+function big(ctx, lines, y, size, col = '#fff', glow = 'rgba(61,255,143,.55)', jitter = 0) {
+  ctx.font = `900 ${size}px IT`; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+  lines.forEach((l, i) => {
+    const yy = y + (i - (lines.length - 1) / 2) * size * 1.0, jx = jitter * (rnd(i + Math.floor(jitter * 1e4)) - .5) * 24;
+    ctx.shadowColor = glow; ctx.shadowBlur = 40; ctx.fillStyle = col;
+    ctx.save(); ctx.translate(W / 2 + jx, yy); ctx.scale(1, 1); ctx.fillText(l, 0, 0); ctx.restore();
+  });
+  ctx.shadowBlur = 0;
+}
+function plate(ctx, y, h, a) { const gr = ctx.createLinearGradient(0, y - h, 0, y + h); gr.addColorStop(0, 'rgba(0,0,0,0)'); gr.addColorStop(.5, `rgba(0,0,0,${a})`); gr.addColorStop(1, 'rgba(0,0,0,0)'); ctx.fillStyle = gr; ctx.fillRect(0, y - h, W, 2 * h); }
+function scan(ctx, a) { ctx.fillStyle = `rgba(0,0,0,${a})`; for (let y = 0; y < H; y += 4) ctx.fillRect(0, y, W, 2); }
+function crt(ctx, t, x, y, w, h) {   // tele de tubo con lista de «tu sistema»
+  ctx.save(); ctx.fillStyle = '#0b0b0d'; ctx.beginPath(); ctx.roundRect(x - 30, y - 30, w + 60, h + 60, 56); ctx.fill();
+  const gr = ctx.createRadialGradient(x + w / 2, y + h / 2, 40, x + w / 2, y + h / 2, w * .75); gr.addColorStop(0, '#2747ff'); gr.addColorStop(1, '#0d1fa8');
+  ctx.fillStyle = gr; ctx.beginPath(); ctx.roundRect(x, y, w, h, 46); ctx.fill(); ctx.clip();
+  ctx.font = '50px VT'; ctx.textAlign = 'left'; ctx.textBaseline = 'top'; ctx.fillStyle = '#fff'; ctx.shadowColor = 'rgba(255,255,255,.7)'; ctx.shadowBlur = 10;
+  ctx.fillText('CH 95', x + 40, y + 30); ctx.textAlign = 'right'; ctx.fillText('PLAY ▶', x + w - 40, y + 30); ctx.textAlign = 'left';
+  const L = ['> LIBRETA_STATS.txt', '> PARTIDO_J9.VHS   3h12', '> CARGA_FINAL_v3.xls', '> CALCULADORA.exe', '> ERROR: 23:47, LUNES'];
+  L.forEach((l, i) => { const k = seg(t, .25 + i * .32, .45 + i * .32); if (k <= 0) return; ctx.globalAlpha = k; ctx.fillStyle = i === 4 ? '#ff5468' : '#9dffc2'; ctx.fillText(l.slice(0, Math.ceil(l.length * Math.min(1, k * 1.6))), x + 40, y + 120 + i * 66); });
+  ctx.globalAlpha = 1; ctx.shadowBlur = 0; scan(ctx, .22); ctx.restore();
+}
+function glitch(ctx, t, amt) {   // franjas desplazadas + separación RGB sobre lo ya pintado
+  if (amt <= 0) return; const src = ctx.getImageData(0, 0, W, H);
+  for (let i = 0; i < 18; i++) { const y = Math.floor(rnd(i + Math.floor(t * 30)) * H), h = 20 + rnd(i * 3) * 90, dx = (rnd(i * 7 + Math.floor(t * 30)) - .5) * 160 * amt; ctx.putImageData(src, dx, 0, 0, y, W, h); }
+  ctx.globalCompositeOperation = 'screen'; ctx.fillStyle = `rgba(255,0,40,${.25 * amt})`; ctx.fillRect(0, 0, W, H); ctx.globalCompositeOperation = 'source-over';
+}
+
+// ---------- el fotograma
+window.frame = (t) => {
+  g.clearRect(0, 0, W, H); o.clearRect(0, 0, W, H); g.fillStyle = '#000'; g.fillRect(0, 0, W, H);
+  phone.visible = blue.visible = red.visible = false; let use3d = false;
+  // A · 0–3.2 Matrix + gancho (se lee desde el fotograma 0)
+  if (t < 6.4) {
+    const zoom = 1 + seg(t, 3, 6.4) * .25; g.save(); g.translate(W / 2, H / 2); g.scale(zoom, zoom); g.translate(-W / 2, -H / 2);
+    matrix(g, t + 3, t < 3.2 ? 1 : 1 - seg(t, 5.6, 6.4)); g.restore();
+  }
+  if (t < 3.2) { plate(o, H * .47, 330, .75); big(o, ['TU ANÁLISIS', 'ES DE 1995'], H * .47, 150, '#fff', 'rgba(61,255,143,.6)', (Math.floor(t * 4) % 3 === 0) ? .4 : 0); }
+  // B · 3.2–6.4 la tele con tu sistema
+  if (t >= 3.2 && t < 6.4) {
+    const k = seg(t, 3.2, 3.6), x = 90, w = W - 180, h = 560, y = H * .52;
+    o.globalAlpha = k; crt(o, t - 3.2, x, y, w, h); o.globalAlpha = 1;
+    plate(o, H * .33, 200, .8); big(o, ['Y NO LO SABES.'], H * .33, 132);
+  }
+  // C · 6.4–9.6 las pastillas
+  if (t >= 6.4 && t < 9.8) {
+    use3d = true; blue.visible = red.visible = true; matrix(g, t + 3, .18);
+    const u = t - 6.4, come = seg(u, 0, .7), choose = seg(t, 8.7, 9.6);
+    blue.position.set(-.046 - (1 - come) * .1, -.005 + Math.sin(u * 2) * .003 - choose * .09, 0); blue.rotation.set(.3 + u * .4, u * .6, .9 + Math.sin(u) * .2);
+    red.position.set(.046 + (1 - come) * .1 - choose * .046, .005 + Math.sin(u * 2 + 1) * .003, choose * .23); red.rotation.set(.2 + u * .5, -u * .5, -.9 + choose * .9);
+    (blue.material.opacity = 1 - choose); blue.material.transparent = true;
+    C.position.set(0, 0, .42); C.lookAt(0, 0, 0); C.fov = 26; C.updateProjectionMatrix();
+    rimG.intensity = 1.2;
+    if (t < 8.9) {
+      plate(o, H * .2, 170, .7); big(o, ['¿AZUL O ROJA?'], H * .2, 136, '#fff', 'rgba(255,40,70,.5)');
+      o.font = '64px VT'; o.textAlign = 'center'; o.globalAlpha = come; o.fillStyle = '#7f9bff'; o.fillText('1995', W * .27, H * .64); o.fillStyle = '#ff5468'; o.fillText('2026', W * .73, H * .64); o.globalAlpha = 1;
+    }
+  }
+  // D · 9.6–10.1 glitch al rojo
+  // E · 10.0–14.6 el móvil con la app funcionando
+  if (t >= 9.9 && t < 14.8) {
+    use3d = true; phone.visible = true; rimG.intensity = 0;
+    const u = t - 9.9; phone.position.set(0, -.008, 0); phone.rotation.set(-.05 + Math.sin(u * .5) * .02, -.32 + u * .07, .02);
+    const d = .62 - seg(u, 0, 4.6) * .1; C.position.set(0, .004, d); C.lookAt(0, -.004, 0);
+    paintScreen(Math.max(0, u - .25));
+    o.globalAlpha = seg(t, 10.0, 10.3); big(o, ['Despierta,', 'entrenador.'], H * .12, 104, '#fff', 'rgba(47,107,255,.6)');
+    o.font = '46px VT'; o.textAlign = 'center'; o.fillStyle = '#3dff8f'; o.fillText('REGISTRO EN DIRECTO · DATOS DE EJEMPLO', W / 2, H * .93); o.globalAlpha = 1;
+  }
+  if (use3d) R.render(S, C); else R.clear();
+  // F · 14.6–16.6 cierre con la oferta
+  if (t >= 14.6) {
+    const k = seg(t, 14.6, 14.95); o.fillStyle = `rgba(0,0,0,${k})`; o.fillRect(0, 0, W, H); o.globalAlpha = k;
+    matrix(o, t + 3, .12, '#2f6bff');
+    big(o, ['PROTEAM'], H * .3, 120, '#fff', 'rgba(47,107,255,.7)');
+    big(o, ['6 MESES', 'GRATIS'], H * .47, 170, '#3dff8f', 'rgba(61,255,143,.6)');
+    o.font = '54px VT'; o.textAlign = 'center'; o.fillStyle = '#fff';
+    ['PRIMER EQUIPO · CUENTAS NUEVAS', 'SIN TARJETA · HASTA EL 27 NOV, 23:59'].forEach((l, i) => o.fillText(l, W / 2, H * .62 + i * 66));
+    o.font = '900 84px IT'; o.fillStyle = '#2f6bff'; o.shadowColor = 'rgba(47,107,255,.7)'; o.shadowBlur = 30; o.fillText('PRO-TEAM.APP', W / 2, H * .76); o.shadowBlur = 0; o.globalAlpha = 1;
+  }
+  // glitches de corte (sobre todo lo pintado: se aplican al canvas de arriba copiando el fondo)
+  const gA = Math.max(t > 3.05 && t < 3.3 ? 1 - Math.abs(t - 3.18) / .13 : 0, t > 6.25 && t < 6.5 ? 1 - Math.abs(t - 6.37) / .13 : 0, t > 9.5 && t < 10.1 ? 1 - Math.abs(t - 9.8) / .3 : 0, t > 14.5 && t < 14.75 ? 1 - Math.abs(t - 14.62) / .13 : 0);
+  if (gA > 0) {
+    o.drawImage(c2, 0, 0); o.drawImage(R.domElement, 0, 0);
+    if (t > 9.5 && t < 10.1) { o.fillStyle = `rgba(232,16,42,${.85 * gA})`; o.fillRect(0, 0, W, H); }
+    glitch(o, t, gA);
+  }
+  return true;
+};
+await Promise.all(['reg-0', 'reg-1', 'reg-2', 'reg-3', 'reg-4', 'reg-5'].map(load));
+await document.fonts.load('900 100px IT'); await document.fonts.load('40px VT');
+window.ready = true;
+</script></body></html>

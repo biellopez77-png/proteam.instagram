@@ -1,0 +1,1853 @@
+{
+ "meta": {
+  "contenedor": "mov,mp4,m4a,3gp,3g2,mj2",
+  "duracion_s": 29.0,
+  "tamano_bytes": 7243179,
+  "bitrate_kbps": 1998,
+  "ancho": 1080,
+  "alto": 1920,
+  "relacion": "9:16",
+  "fps": 30.0,
+  "fotogramas_declarados": 870,
+  "codec_video": "h264",
+  "pix_fmt": "yuv420p",
+  "pistas_audio": [
+   {
+    "codec": "aac",
+    "canales": 2,
+    "hz": 48000,
+    "bitrate_kbps": 204
+   }
+  ],
+  "etiquetas": {
+   "major_brand": "isom",
+   "minor_version": "512",
+   "compatible_brands": "isomiso2avc1mp41",
+   "encoder": "Lavf60.16.100"
+  },
+  "id": "u59",
+  "fotogramas_leidos": 870,
+  "sha256": "f007fa1e757d7081f798363d45d8e825fb3255624d89346415e1b73fc21365a7",
+  "archivo": "reels/u59-diez-dias.mp4",
+  "fuente": "",
+  "marca": "proteam",
+  "tipo": "propio",
+  "formato": "reel",
+  "tema": "Impacto: diez días = cinco entrenos y dos partidos (balonmano)",
+  "analizado": "2026-11-18 06:10"
+ },
+ "montaje": {
+  "cortes_duros": 6,
+  "transiciones_o_movimientos_fuertes": 0,
+  "planos": 7,
+  "duracion_media_plano_s": 4.14,
+  "plano_mas_largo_s": 7.467,
+  "plano_mas_corto_s": 2.1,
+  "cortes_por_10s": 2.07,
+  "tramos_estaticos": [
+   {
+    "desde": 27.23,
+    "hasta": 28.97,
+    "duracion_s": 1.73
+   }
+  ],
+  "nota": "Detección automática por histograma y diferencia de imagen sobre TODOS los fotogramas. Un motion graphic continuo cuenta como un solo plano; un cambio de fondo brusco dentro de una animación puede contarse como corte. Confirmar en las láminas."
+ },
+ "cortes": [
+  {
+   "fotograma": 224,
+   "t": 7.467,
+   "tipo": "corte",
+   "fuerza": 0.358
+  },
+  {
+   "fotograma": 387,
+   "t": 12.9,
+   "tipo": "corte",
+   "fuerza": 0.409
+  },
+  {
+   "fotograma": 488,
+   "t": 16.267,
+   "tipo": "corte",
+   "fuerza": 0.91
+  },
+  {
+   "fotograma": 582,
+   "t": 19.4,
+   "tipo": "corte",
+   "fuerza": 0.378
+  },
+  {
+   "fotograma": 723,
+   "t": 24.1,
+   "tipo": "corte",
+   "fuerza": 0.936
+  },
+  {
+   "fotograma": 807,
+   "t": 26.9,
+   "tipo": "corte",
+   "fuerza": 0.88
+  }
+ ],
+ "escenas": [
+  {
+   "escena": 1,
+   "desde_fotograma": 0,
+   "hasta_fotograma": 223,
+   "desde": 0.0,
+   "hasta": 7.467,
+   "duracion_s": 7.467,
+   "movimiento_medio": 0.0025,
+   "luz_media": 0.178,
+   "saturacion_media": 0.481
+  },
+  {
+   "escena": 2,
+   "desde_fotograma": 224,
+   "hasta_fotograma": 386,
+   "desde": 7.467,
+   "hasta": 12.9,
+   "duracion_s": 5.433,
+   "movimiento_medio": 0.0058,
+   "luz_media": 0.14,
+   "saturacion_media": 0.518
+  },
+  {
+   "escena": 3,
+   "desde_fotograma": 387,
+   "hasta_fotograma": 487,
+   "desde": 12.9,
+   "hasta": 16.267,
+   "duracion_s": 3.367,
+   "movimiento_medio": 0.0085,
+   "luz_media": 0.231,
+   "saturacion_media": 0.641
+  },
+  {
+   "escena": 4,
+   "desde_fotograma": 488,
+   "hasta_fotograma": 581,
+   "desde": 16.267,
+   "hasta": 19.4,
+   "duracion_s": 3.133,
+   "movimiento_medio": 0.0043,
+   "luz_media": 0.117,
+   "saturacion_media": 0.49
+  },
+  {
+   "escena": 5,
+   "desde_fotograma": 582,
+   "hasta_fotograma": 722,
+   "desde": 19.4,
+   "hasta": 24.1,
+   "duracion_s": 4.7,
+   "movimiento_medio": 0.0033,
+   "luz_media": 0.143,
+   "saturacion_media": 0.504
+  },
+  {
+   "escena": 6,
+   "desde_fotograma": 723,
+   "hasta_fotograma": 806,
+   "desde": 24.1,
+   "hasta": 26.9,
+   "duracion_s": 2.8,
+   "movimiento_medio": 0.0047,
+   "luz_media": 0.09,
+   "saturacion_media": 0.404
+  },
+  {
+   "escena": 7,
+   "desde_fotograma": 807,
+   "hasta_fotograma": 869,
+   "desde": 26.9,
+   "hasta": 29.0,
+   "duracion_s": 2.1,
+   "movimiento_medio": 0.0052,
+   "luz_media": 0.107,
+   "saturacion_media": 0.508
+  }
+ ],
+ "laminas": [
+  {
+   "lamina": "general_001.jpg",
+   "fotogramas": [
+    0,
+    5,
+    10,
+    15,
+    20,
+    25,
+    45,
+    90,
+    111,
+    135,
+    180,
+    223,
+    224,
+    269,
+    305,
+    314,
+    359,
+    386
+   ],
+   "desde": 0.0,
+   "hasta": 12.867,
+   "modo": "general"
+  },
+  {
+   "lamina": "general_002.jpg",
+   "fotogramas": [
+    387,
+    432,
+    437,
+    477,
+    487,
+    488,
+    533,
+    534,
+    578,
+    581,
+    582,
+    627,
+    652,
+    672,
+    717,
+    722,
+    723,
+    764
+   ],
+   "desde": 12.9,
+   "hasta": 25.467,
+   "modo": "general"
+  },
+  {
+   "lamina": "general_003.jpg",
+   "fotogramas": [
+    806,
+    807,
+    838,
+    869
+   ],
+   "desde": 26.867,
+   "hasta": 28.967,
+   "modo": "general"
+  },
+  {
+   "lamina": "detalle_001.jpg",
+   "fotogramas": [
+    0,
+    8,
+    16,
+    24,
+    32,
+    40,
+    48,
+    56,
+    64,
+    72,
+    80,
+    88,
+    96,
+    104,
+    112,
+    120,
+    128,
+    136,
+    144,
+    152,
+    160,
+    168,
+    176,
+    184
+   ],
+   "desde": 0.0,
+   "hasta": 6.133,
+   "modo": "detalle"
+  },
+  {
+   "lamina": "detalle_002.jpg",
+   "fotogramas": [
+    192,
+    200,
+    208,
+    216,
+    223,
+    224,
+    232,
+    240,
+    248,
+    256,
+    264,
+    272,
+    280,
+    288,
+    296,
+    304,
+    312,
+    320,
+    328,
+    336,
+    344,
+    352,
+    360,
+    368
+   ],
+   "desde": 6.4,
+   "hasta": 12.267,
+   "modo": "detalle"
+  },
+  {
+   "lamina": "detalle_003.jpg",
+   "fotogramas": [
+    376,
+    384,
+    386,
+    387,
+    392,
+    400,
+    408,
+    416,
+    424,
+    432,
+    440,
+    448,
+    456,
+    464,
+    472,
+    480,
+    487,
+    488,
+    496,
+    504,
+    512,
+    520,
+    528,
+    536
+   ],
+   "desde": 12.533,
+   "hasta": 17.867,
+   "modo": "detalle"
+  },
+  {
+   "lamina": "detalle_004.jpg",
+   "fotogramas": [
+    544,
+    552,
+    560,
+    568,
+    576,
+    581,
+    582,
+    584,
+    592,
+    600,
+    608,
+    616,
+    624,
+    632,
+    640,
+    648,
+    656,
+    664,
+    672,
+    680,
+    688,
+    696,
+    704,
+    712
+   ],
+   "desde": 18.133,
+   "hasta": 23.733,
+   "modo": "detalle"
+  },
+  {
+   "lamina": "detalle_005.jpg",
+   "fotogramas": [
+    720,
+    722,
+    723,
+    728,
+    736,
+    744,
+    752,
+    760,
+    768,
+    776,
+    784,
+    792,
+    800,
+    806,
+    807,
+    808,
+    816,
+    824,
+    832,
+    840,
+    848,
+    856,
+    864
+   ],
+   "desde": 24.0,
+   "hasta": 28.8,
+   "modo": "detalle"
+  }
+ ],
+ "texto_en_pantalla": {
+  "idioma": "spa+eng",
+  "nota": "OCR automático sobre los fotogramas muestreados: puede fallar con tipografía fina, texto animado o sobre foto. La exposición es aproximada (resolución = intervalo de muestreo). Verificar siempre en las láminas.",
+  "por_fotograma": [
+   {
+    "fotograma": 0,
+    "t": 0.0,
+    "texto": "10 DIAS"
+   },
+   {
+    "fotograma": 5,
+    "t": 0.167,
+    "texto": "ONMANO 10DÍAS"
+   },
+   {
+    "fotograma": 8,
+    "t": 0.267,
+    "texto": "ONMANO pr"
+   },
+   {
+    "fotograma": 10,
+    "t": 0.333,
+    "texto": "ONMANO"
+   },
+   {
+    "fotograma": 15,
+    "t": 0.5,
+    "texto": "ODÍAS"
+   },
+   {
+    "fotograma": 16,
+    "t": 0.533,
+    "texto": "yl"
+   },
+   {
+    "fotograma": 20,
+    "t": 0.667,
+    "texto": "1O'DIAS"
+   },
+   {
+    "fotograma": 24,
+    "t": 0.8,
+    "texto": "18 19"
+   },
+   {
+    "fotograma": 25,
+    "t": 0.833,
+    "texto": "ONMANO 10DIAS 18 19 20"
+   },
+   {
+    "fotograma": 32,
+    "t": 1.067,
+    "texto": "10D IAS 18 19 20 21 22 23 24 25 26"
+   },
+   {
+    "fotograma": 40,
+    "t": 1.333,
+    "texto": "opias 18 19 20 21 22123 26 27 28"
+   },
+   {
+    "fotograma": 45,
+    "t": 1.5,
+    "texto": "fon ODÍAS 18 19 20 21 22 23 25 27 28"
+   },
+   {
+    "fotograma": 48,
+    "t": 1.6,
+    "texto": "opias 18 19 20 21 22 23 24 25 27 28"
+   },
+   {
+    "fotograma": 56,
+    "t": 1.867,
+    "texto": "AS ODÍAS 18 21 22 23 24 25 26 27 28"
+   },
+   {
+    "fotograma": 64,
+    "t": 2.133,
+    "texto": "ODIAS ff 18 19 20 21 22 23 24 25 27 28"
+   },
+   {
+    "fotograma": 72,
+    "t": 2.4,
+    "texto": "ODÍAS 18 21 22 23 2425 27 28"
+   },
+   {
+    "fotograma": 80,
+    "t": 2.667,
+    "texto": "ODÍAS 24 ff 18 20 21 22 23 24 25 26 27 28"
+   },
+   {
+    "fotograma": 88,
+    "t": 2.933,
+    "texto": "ODÍAS 19°) 20 21 22 1123 25 26 27 28"
+   },
+   {
+    "fotograma": 90,
+    "t": 3.0,
+    "texto": "ODÍAS 24 20 21 22 23 25 25 26 27 28"
+   },
+   {
+    "fotograma": 96,
+    "t": 3.2,
+    "texto": "fe 18 Ej 20 21 22 23 24 25 26 27 28"
+   },
+   {
+    "fotograma": 104,
+    "t": 3.467,
+    "texto": "1QDÍAS 18 191 20 Ej 22 1123 24 27 28"
+   },
+   {
+    "fotograma": 111,
+    "t": 3.7,
+    "texto": "DOM 18 191 20 21 24 (125126 27 28"
+   },
+   {
+    "fotograma": 112,
+    "t": 3.733,
+    "texto": "DO 18 20 21 24 25 26 27 28"
+   },
+   {
+    "fotograma": 120,
+    "t": 4.0,
+    "texto": "GUA 18 19 21 22 24 25 26 27 28"
+   },
+   {
+    "fotograma": 128,
+    "t": 4.267,
+    "texto": "BALONMANO EN GE 18 19 20 21 22 23 Ej 25 26 27 28"
+   },
+   {
+    "fotograma": 135,
+    "t": 4.5,
+    "texto": "ODÍAS Pro 18 191 20 21 22 23 JUE 24 25 28"
+   },
+   {
+    "fotograma": 136,
+    "t": 4.533,
+    "texto": "10 DIAS 18 19 20 21 22 23 JUE 24 25 28"
+   },
+   {
+    "fotograma": 144,
+    "t": 4.8,
+    "texto": "\"BALONMANO TA 18 19/20 21 22 28 24 25 26"
+   },
+   {
+    "fotograma": 152,
+    "t": 5.067,
+    "texto": "10 DIAS 18 19.1 20 21 22 23 24 25 26 27 28"
+   },
+   {
+    "fotograma": 160,
+    "t": 5.333,
+    "texto": "10DIAS 2234 MIÉ VIE DOM 18 19 20 21 22 23 ENTRENO ENTRENO 27 28"
+   },
+   {
+    "fotograma": 168,
+    "t": 5.6,
+    "texto": "10 DIAS NOS: 108 ES MIÉ VIE LUN ENTRENO. 18 19 20 21 ENTRENO 22 23 ENTRENO MIÉ VIE 24 25 26 27 28 ENTRENO ENTRENO"
+   },
+   {
+    "fotograma": 176,
+    "t": 5.867,
+    "texto": "10DIAS 10S MIE VIE LUN ENTRENO: 18 19 20 21 ENTRENO 22 23 ENTRENO VIE 25 26 27 28 ENTRENO ENTRENO"
+   },
+   {
+    "fotograma": 180,
+    "t": 6.0,
+    "texto": "10 DÍAS OS MIÉ VIE LUN ENTRENO: 18 19 20 21 22 23 ENTRENO MIÉ VIE 25 26 27 28 ENTRENO. ENTRENO"
+   },
+   {
+    "fotograma": 184,
+    "t": 6.133,
+    "texto": "10 DIAS MOS: LOS EN ES MIE VIE LUN ENTRENO 18 19 20 21 RENO. 22 23 ENTRENO 2h 25 26 27 28 ENTRENO: ENTRENO"
+   },
+   {
+    "fotograma": 192,
+    "t": 6.4,
+    "texto": "10 DIAS pa 108 MIÉ VIE LUN ENTRENO. 18 19 20 ENTRENO 22 23 ENTRENO MIÉ VIE SAB 25 26 27 28 ENTRENO ENTRENO"
+   },
+   {
+    "fotograma": 200,
+    "t": 6.667,
+    "texto": "10 DIAS en ES MIÉ VIE LUN ENTRENO 18 19 20 ENTRENO El 22 23 ENTRENO VIE 2h 25 26 27 ENTRENO: ENTRENO 28"
+   },
+   {
+    "fotograma": 208,
+    "t": 6.933,
+    "texto": "BALONMANO 5S dos MIE VIE LUN ENTRENO. 18 19 20 ENTRENO 22 23 ENTRENO MIÉ VIE 25 26 27 ENTRENO ENTRENO"
+   },
+   {
+    "fotograma": 216,
+    "t": 7.2,
+    "texto": "BALONMANO 10 DIAS pc hy OS fd MIE VIE LUN ENTRENO 18 19 20 ENTRENO 22 23 ENTRENO VIE 2h 25 26 27 ENTRENO: ENTRENO PARTIDO"
+   },
+   {
+    "fotograma": 223,
+    "t": 7.433,
+    "texto": "10 DIAS TA MIÉ VIE LUN ENTRENO. 18 19 20 ENTRENO 22 23 ENTRENO MIÉ VIE 25 26 27 ENTRENO ENTRENO"
+   },
+   {
+    "fotograma": 224,
+    "t": 7.467,
+    "texto": "MIE VIE LUN ENTRENO 18 19 20 22 23 MIÉ VIE 24 25 26 27 ENTRENO ENTRENO PARTIDO"
+   },
+   {
+    "fotograma": 232,
+    "t": 7.733,
+    "texto": "SESIONES MIÉ MIE OM LUN ENTRENO 18 19 20 ENTRENO 22 ENTRENO as MIE VIE 2h 26 27 ENTRENO ENTRENO"
+   },
+   {
+    "fotograma": 240,
+    "t": 8.0,
+    "texto": "SESIONES MIE VIE LUN ENTRENO 18 19 20 22 23 ENTRENO MIE VIE 24 26 27 ENTRENO ENTRENO El"
+   },
+   {
+    "fotograma": 248,
+    "t": 8.267,
+    "texto": "SESIONES MIE VIE LUN ENTRENO 18 19 ENTRENO 20 PARTIDO 22 1,23 ENTRENO MAR MIÉ VIE 24 25 26 27 PARTIDO ENTRENO"
+   },
+   {
+    "fotograma": 256,
+    "t": 8.533,
+    "texto": "SESIONES MIE JUE VIE LUN ENTRENO 19 PARTIDO MIÉ vie 2h 25 26 27 ENTRENO"
+   },
+   {
+    "fotograma": 264,
+    "t": 8.8,
+    "texto": "SESIONES MIÉ UE VIE bor LUN ENTRENO 18 19 ENTRENO 20 PARTIDO 22 ENTRENO MIÉ vIE 25 26 ENTRENO 27"
+   },
+   {
+    "fotograma": 269,
+    "t": 8.967,
+    "texto": "SESIONES MIÉ UE LUN ENTRENO 18 19 ENTRENO. PARTI 22 23 ENTRENO mie VIE 2b 25 26"
+   },
+   {
+    "fotograma": 272,
+    "t": 9.067,
+    "texto": "SESIONES MIE UE VIE OM LUN ENTRENO 18 19 ENTRENO. PARTIDO 22 ENTRENO MIÉ VIE 24 25 26 27 PARTIDO ENTRENO"
+   },
+   {
+    "fotograma": 280,
+    "t": 9.333,
+    "texto": "SESIONES DOM 22 PARTIDO MAR MIÉ VIE 24 25 26 27 ENTRENO ENTRENO"
+   },
+   {
+    "fotograma": 288,
+    "t": 9.6,
+    "texto": "om SESIONES dememor 19 21 22 24 26"
+   },
+   {
+    "fotograma": 296,
+    "t": 9.867,
+    "texto": "SESIONES de.memoria"
+   },
+   {
+    "fotograma": 304,
+    "t": 10.133,
+    "texto": "oom SESIONES de Memoria."
+   },
+   {
+    "fotograma": 305,
+    "t": 10.167,
+    "texto": "SESIONES dememoria. 22"
+   },
+   {
+    "fotograma": 312,
+    "t": 10.4,
+    "texto": "SESIONES dememoria. SE 24 28 PARTIDOS"
+   },
+   {
+    "fotograma": 314,
+    "t": 10.467,
+    "texto": "We SESIONES 21 -2-28 if PARTIDOS"
+   },
+   {
+    "fotograma": 320,
+    "t": 10.667,
+    "texto": "SESIONES de memoria. PARTIDO 19 22 PARTIDOS"
+   },
+   {
+    "fotograma": 328,
+    "t": 10.933,
+    "texto": "\"Wo, SESIONES de Memoria. SBE 22 26 20 PARTIDOS"
+   },
+   {
+    "fotograma": 336,
+    "t": 11.2,
+    "texto": "SESIONES de memoria. 21 2-28 PARTIDOS"
+   },
+   {
+    "fotograma": 344,
+    "t": 11.467,
+    "texto": "SESIONES dle memoria. iW PARTIDOS"
+   },
+   {
+    "fotograma": 352,
+    "t": 11.733,
+    "texto": "SESIONES de memoria. 21 HG PARTIDOS"
+   },
+   {
+    "fotograma": 359,
+    "t": 11.967,
+    "texto": "he SESIONES de memoria. 28 PARTIDO hi: PARTIDOS"
+   },
+   {
+    "fotograma": 360,
+    "t": 12.0,
+    "texto": "bre SESIONES de, memoria. 22 ia PARTIDOS"
+   },
+   {
+    "fotograma": 368,
+    "t": 12.267,
+    "texto": "SESIONES de memoria. 28 PARTIDOS de cabeza."
+   },
+   {
+    "fotograma": 376,
+    "t": 12.533,
+    "texto": "SESIONES de memoria, BE 22 BE PARTIDOS cabeza."
+   },
+   {
+    "fotograma": 384,
+    "t": 12.8,
+    "texto": "SESIONES de memoria. BE 26 PARTIDOS “de cabeza."
+   },
+   {
+    "fotograma": 386,
+    "t": 12.867,
+    "texto": "SESIONES de memoria. BR BE PARTIDOS cabeza."
+   },
+   {
+    "fotograma": 387,
+    "t": 12.9,
+    "texto": "2s PARTIDOS de cabeza."
+   },
+   {
+    "fotograma": 392,
+    "t": 13.067,
+    "texto": "EL SÁBADO BB 2s PARTIDOS de cabeza."
+   },
+   {
+    "fotograma": 400,
+    "t": 13.333,
+    "texto": "JUE 19 MAR 24"
+   },
+   {
+    "fotograma": 408,
+    "t": 13.6,
+    "texto": "SAB 28"
+   },
+   {
+    "fotograma": 416,
+    "t": 13.867,
+    "texto": "SAB 28"
+   },
+   {
+    "fotograma": 424,
+    "t": 14.133,
+    "texto": "SAB 28"
+   },
+   {
+    "fotograma": 432,
+    "t": 14.4,
+    "texto": "SAB 28"
+   },
+   {
+    "fotograma": 437,
+    "t": 14.567,
+    "texto": "SAB 28"
+   },
+   {
+    "fotograma": 440,
+    "t": 14.667,
+    "texto": "SAB 28"
+   },
+   {
+    "fotograma": 448,
+    "t": 14.933,
+    "texto": "SAB 28"
+   },
+   {
+    "fotograma": 456,
+    "t": 15.2,
+    "texto": ""
+   },
+   {
+    "fotograma": 464,
+    "t": 15.467,
+    "texto": ""
+   },
+   {
+    "fotograma": 472,
+    "t": 15.733,
+    "texto": "SAB 28"
+   },
+   {
+    "fotograma": 477,
+    "t": 15.9,
+    "texto": ""
+   },
+   {
+    "fotograma": 480,
+    "t": 16.0,
+    "texto": ""
+   },
+   {
+    "fotograma": 487,
+    "t": 16.233,
+    "texto": ""
+   },
+   {
+    "fotograma": 488,
+    "t": 16.267,
+    "texto": "SAB 28 NOV abreProleam."
+   },
+   {
+    "fotograma": 496,
+    "t": 16.533,
+    "texto": "SAB 28 NOV abre"
+   },
+   {
+    "fotograma": 504,
+    "t": 16.8,
+    "texto": "SAB 28 NOV abre Proleam."
+   },
+   {
+    "fotograma": 512,
+    "t": 17.067,
+    "texto": "SAB 28 NOV abre Proleam."
+   },
+   {
+    "fotograma": 520,
+    "t": 17.333,
+    "texto": "SAB 28 NOV abre FÚTBOL"
+   },
+   {
+    "fotograma": 528,
+    "t": 17.6,
+    "texto": "SAB 28 NOV abre Proleam. FÚTBOL"
+   },
+   {
+    "fotograma": 533,
+    "t": 17.767,
+    "texto": "SAB 28 NOV Proleam. FÚTBOL"
+   },
+   {
+    "fotograma": 534,
+    "t": 17.8,
+    "texto": "SAB 28 NOV Proleam. FÚTBOL"
+   },
+   {
+    "fotograma": 536,
+    "t": 17.867,
+    "texto": "SAB 28 NOV FÚTBOL BALONCESTO"
+   },
+   {
+    "fotograma": 544,
+    "t": 18.133,
+    "texto": "SAB 28 NOV FÚTBOL BALONCESTO"
+   },
+   {
+    "fotograma": 552,
+    "t": 18.4,
+    "texto": "SAB 28 NOV abre Proleam. FÚTBOL BALONCESTO"
+   },
+   {
+    "fotograma": 560,
+    "t": 18.667,
+    "texto": "SAB 28 NOV abre Proleam. FÚTBOL BALONCESTO BALONMANO"
+   },
+   {
+    "fotograma": 568,
+    "t": 18.933,
+    "texto": "SAB 28 NOV FÚTBOL BALONCESTO BALONMANO"
+   },
+   {
+    "fotograma": 576,
+    "t": 19.2,
+    "texto": "SAB 28 NOV abre Proleam. FÚTBOL BALONCESTO BALONMANO"
+   },
+   {
+    "fotograma": 578,
+    "t": 19.267,
+    "texto": "SAB 28 NOV abre Proleam. FÚTBOL BALONCESTO BALONMANO"
+   },
+   {
+    "fotograma": 581,
+    "t": 19.367,
+    "texto": "SAB 28 NOV abre Proleam. FÚTBOL BALONCESTO BALONMANO"
+   },
+   {
+    "fotograma": 582,
+    "t": 19.4,
+    "texto": "20 21122"
+   },
+   {
+    "fotograma": 584,
+    "t": 19.467,
+    "texto": "RE US JUE vIE SAB LUN 19 20 21.22 23 MAR"
+   },
+   {
+    "fotograma": 592,
+    "t": 19.733,
+    "texto": "TU STAFF MANDASELO 18 19 21 22 23 ENTRENO 24 25126 27 28"
+   },
+   {
+    "fotograma": 600,
+    "t": 20.0,
+    "texto": "TU STAFF MANDASELO ENTRENO. 18 19 20 21 ENTRENO: 22 23 25 26 27 28 ENTRENO. ENTRE!"
+   },
+   {
+    "fotograma": 608,
+    "t": 20.267,
+    "texto": "RETO PARA TU STAFF MANDASELO atu Segundo 18 19 20 21 ENTRENO. 22 23 25 26 27 28"
+   },
+   {
+    "fotograma": 616,
+    "t": 20.533,
+    "texto": "RETO PARA TU STAFF MANDASELO segundo 18 19 20 21 ENTRENO: 22 23 2h 25 26 27 28 ENTRENO:"
+   },
+   {
+    "fotograma": 624,
+    "t": 20.8,
+    "texto": "PARA TU STAFF MANDASELO atu segundo 18 19 20 21 ENTRENO. 22 23 2h 25 26 27 28 ENTRENO:"
+   },
+   {
+    "fotograma": 627,
+    "t": 20.9,
+    "texto": "TU STAFF MANDASELO segundo ENTRENO. 18 19 20 21 ENTRENO: 22 23 25 26 27 28 ENTRENO: tanaic"
+   },
+   {
+    "fotograma": 632,
+    "t": 21.067,
+    "texto": "TU STAFF MANDASELO segundo ENTRENO. 18 19 20 21 22 23 2h 25 26 27 28 ENTRENO teneis"
+   },
+   {
+    "fotograma": 640,
+    "t": 21.333,
+    "texto": "TU STAFF MANDASELO atu segundo ENTRENO: 18 19 20 21 22 23 2h 25 26 27 28 ¿Cuántos teneis"
+   },
+   {
+    "fotograma": 648,
+    "t": 21.6,
+    "texto": "TU STAFF MANDASELO atu segundo ENTRENO. 18 19 20 21 ENTRENO. 22 23 2h 25 26 27 28 ¿Cuántos teneis"
+   },
+   {
+    "fotograma": 652,
+    "t": 21.733,
+    "texto": "TU STAFF MANDASELO agtu segundo. ENTRENO 18 21 22 23 ENTRENO 24 254 26 27 28 ¿Cuántos tenéis"
+   },
+   {
+    "fotograma": 656,
+    "t": 21.867,
+    "texto": "TU STAFF MANDASELO agtu segundo. 215 ¿Cuántos tenéis"
+   },
+   {
+    "fotograma": 664,
+    "t": 22.133,
+    "texto": "TU STAFF MANDASELO segundo. “15 ¿Cuántos tenéis"
+   },
+   {
+    "fotograma": 672,
+    "t": 22.4,
+    "texto": "TU STAFF MANDASELO agtu segundo. 215 ¿Cuántos tenéis"
+   },
+   {
+    "fotograma": 680,
+    "t": 22.667,
+    "texto": "TU STAFF MANDASELO agtu segundo. 915 ¿Cuántos tenéis"
+   },
+   {
+    "fotograma": 688,
+    "t": 22.933,
+    "texto": "RETO PARA TU STAFF MANDASELO agtu segundo “15 ¿Cuántos tenéis"
+   },
+   {
+    "fotograma": 696,
+    "t": 23.2,
+    "texto": "RETO PARA TU STAFF MANDASELO segundo. 915 ¿Cuántos tenéis va escritos?"
+   },
+   {
+    "fotograma": 704,
+    "t": 23.467,
+    "texto": "RETO PARA TU STAFF MANDASELO agtu segundo. 915 ¿Cuántos tenéis va escritos?"
+   },
+   {
+    "fotograma": 712,
+    "t": 23.733,
+    "texto": "RETO PARA TU STAFF MANDASELO agtu segundo. “15 ¿Cuántos tenéis va escritos?"
+   },
+   {
+    "fotograma": 717,
+    "t": 23.9,
+    "texto": "RETO PARA TU STAFF MANDASELO agtu segundo. “15 ¿Cuántos tenéis va escritos?"
+   },
+   {
+    "fotograma": 720,
+    "t": 24.0,
+    "texto": "RETO PARA TU STAFF MANDASELO agtu segundo. 915 ¿Cuántos tenéis va escritos?"
+   },
+   {
+    "fotograma": 722,
+    "t": 24.067,
+    "texto": "RETO PARA TU STAFF MANDASELO agtu segundo. 915 ¿Cuántos tenéis va escritos?"
+   },
+   {
+    "fotograma": 723,
+    "t": 24.1,
+    "texto": ""
+   },
+   {
+    "fotograma": 728,
+    "t": 24.267,
+    "texto": "LISTA DE ESPERA Unirme la lista de espera"
+   },
+   {
+    "fotograma": 736,
+    "t": 24.533,
+    "texto": "LISTA DE ESPERA 06 09 12 bias HORAS MIN SEG entrenadoremiclu"
+   },
+   {
+    "fotograma": 744,
+    "t": 24.8,
+    "texto": "LISTA DE ESPERA 29 09 11 bias HORAS SEG entrenador@miclub.es|"
+   },
+   {
+    "fotograma": 752,
+    "t": 25.067,
+    "texto": "LISTA DE ESPERA 31 09 bias HORAS SEG entrenador@miclub.es"
+   },
+   {
+    "fotograma": 760,
+    "t": 25.333,
+    "texto": "LISTA DE ESPERA 08 22 47 46 DÍAS HORAS MIN SEG entrenador@miclub.es"
+   },
+   {
+    "fotograma": 764,
+    "t": 25.467,
+    "texto": "LISTA DE ESPERA 31 08 DÍAS HORAS BE SEG entrenador@miclub.es"
+   },
+   {
+    "fotograma": 768,
+    "t": 25.6,
+    "texto": "LISTA DE ESPERA 48 og 07 DÍAS HORAS SEG entrenador@miclub.es"
+   },
+   {
+    "fotograma": 776,
+    "t": 25.867,
+    "texto": "LISTA DE ESPERA o7 07 11 DÍAS HORAS SEG CE"
+   },
+   {
+    "fotograma": 784,
+    "t": 26.133,
+    "texto": "LISTA DE ESPERA 05 22 00 27 DÍAS HORAS MIN SEG entrenador@miclub.es CE"
+   },
+   {
+    "fotograma": 792,
+    "t": 26.4,
+    "texto": "LISTA DE ESPERA 03 23 56 11 bias HORAS MIN SEG entrenador@miclub.es CE"
+   },
+   {
+    "fotograma": 800,
+    "t": 26.667,
+    "texto": "LISTA DE ESPERA 01 11 51 56 DÍAS HORAS MIN SEG entrenador@miclub.es CE"
+   },
+   {
+    "fotograma": 806,
+    "t": 26.867,
+    "texto": "LISTA DE ESPERA 00 00 OO 00 DÍAS HORAS MIN SEO entrenador@miclub.es CE"
+   },
+   {
+    "fotograma": 807,
+    "t": 26.9,
+    "texto": "Wa"
+   },
+   {
+    "fotograma": 808,
+    "t": 26.933,
+    "texto": "El De"
+   },
+   {
+    "fotograma": 816,
+    "t": 27.2,
+    "texto": "meses gratis. HASTA EL 27 NOV"
+   },
+   {
+    "fotograma": 824,
+    "t": 27.467,
+    "texto": "meses HASTA NOV"
+   },
+   {
+    "fotograma": 832,
+    "t": 27.733,
+    "texto": "meses gratis. HASTA EL 27 NOV"
+   },
+   {
+    "fotograma": 838,
+    "t": 27.933,
+    "texto": "Meses gratis. HASTA EL 27 NOV"
+   },
+   {
+    "fotograma": 840,
+    "t": 28.0,
+    "texto": "meses gratis. HASTA NOV"
+   },
+   {
+    "fotograma": 848,
+    "t": 28.267,
+    "texto": "meses gratis. HASTAEL NOV"
+   },
+   {
+    "fotograma": 856,
+    "t": 28.533,
+    "texto": "meses gratis. HASTA EL 27 NOV"
+   },
+   {
+    "fotograma": 864,
+    "t": 28.8,
+    "texto": "meses HASTAEL NOV"
+   },
+   {
+    "fotograma": 869,
+    "t": 28.967,
+    "texto": "Meses gratis. HASTA EL 27 NOV"
+   }
+  ],
+  "bloques": [
+   {
+    "desde": 0.833,
+    "hasta": 0.833,
+    "texto": "ONMANO 10DIAS 18 19 20",
+    "palabras": 5
+   },
+   {
+    "desde": 1.067,
+    "hasta": 1.067,
+    "texto": "10D IAS 18 19 20 21 22 23 24 25 26",
+    "palabras": 11
+   },
+   {
+    "desde": 1.333,
+    "hasta": 1.333,
+    "texto": "opias 18 19 20 21 22123 26 27 28",
+    "palabras": 9
+   },
+   {
+    "desde": 1.5,
+    "hasta": 1.5,
+    "texto": "fon ODÍAS 18 19 20 21 22 23 25 27 28",
+    "palabras": 11
+   },
+   {
+    "desde": 1.6,
+    "hasta": 1.6,
+    "texto": "opias 18 19 20 21 22 23 24 25 27 28",
+    "palabras": 11
+   },
+   {
+    "desde": 1.867,
+    "hasta": 1.867,
+    "texto": "AS ODÍAS 18 21 22 23 24 25 26 27 28",
+    "palabras": 11
+   },
+   {
+    "desde": 2.133,
+    "hasta": 2.133,
+    "texto": "ODIAS ff 18 19 20 21 22 23 24 25 27 28",
+    "palabras": 12
+   },
+   {
+    "desde": 2.4,
+    "hasta": 2.4,
+    "texto": "ODÍAS 18 21 22 23 2425 27 28",
+    "palabras": 8
+   },
+   {
+    "desde": 2.667,
+    "hasta": 2.667,
+    "texto": "ODÍAS 24 ff 18 20 21 22 23 24 25 26 27 28",
+    "palabras": 13
+   },
+   {
+    "desde": 2.933,
+    "hasta": 2.933,
+    "texto": "ODÍAS 19°) 20 21 22 1123 25 26 27 28",
+    "palabras": 10
+   },
+   {
+    "desde": 3.0,
+    "hasta": 3.0,
+    "texto": "ODÍAS 24 20 21 22 23 25 25 26 27 28",
+    "palabras": 11
+   },
+   {
+    "desde": 3.2,
+    "hasta": 3.2,
+    "texto": "fe 18 Ej 20 21 22 23 24 25 26 27 28",
+    "palabras": 12
+   },
+   {
+    "desde": 3.467,
+    "hasta": 3.467,
+    "texto": "1QDÍAS 18 191 20 Ej 22 1123 24 27 28",
+    "palabras": 10
+   },
+   {
+    "desde": 3.7,
+    "hasta": 3.7,
+    "texto": "DOM 18 191 20 21 24 (125126 27 28",
+    "palabras": 9
+   },
+   {
+    "desde": 3.733,
+    "hasta": 3.733,
+    "texto": "DO 18 20 21 24 25 26 27 28",
+    "palabras": 9
+   },
+   {
+    "desde": 4.0,
+    "hasta": 4.0,
+    "texto": "GUA 18 19 21 22 24 25 26 27 28",
+    "palabras": 10
+   },
+   {
+    "desde": 4.267,
+    "hasta": 4.267,
+    "texto": "BALONMANO EN GE 18 19 20 21 22 23 Ej 25 26 27 28",
+    "palabras": 14
+   },
+   {
+    "desde": 4.5,
+    "hasta": 4.5,
+    "texto": "ODÍAS Pro 18 191 20 21 22 23 JUE 24 25 28",
+    "palabras": 12
+   },
+   {
+    "desde": 4.533,
+    "hasta": 4.533,
+    "texto": "10 DIAS 18 19 20 21 22 23 JUE 24 25 28",
+    "palabras": 12
+   },
+   {
+    "desde": 4.8,
+    "hasta": 4.8,
+    "texto": "\"BALONMANO TA 18 19/20 21 22 28 24 25 26",
+    "palabras": 10
+   },
+   {
+    "desde": 5.067,
+    "hasta": 5.067,
+    "texto": "10 DIAS 18 19.1 20 21 22 23 24 25 26 27 28",
+    "palabras": 13
+   },
+   {
+    "desde": 5.333,
+    "hasta": 5.333,
+    "texto": "10DIAS 2234 MIÉ VIE DOM 18 19 20 21 22 23 ENTRENO ENTRENO 27 28",
+    "palabras": 15
+   },
+   {
+    "desde": 5.6,
+    "hasta": 5.6,
+    "texto": "10 DIAS NOS: 108 ES MIÉ VIE LUN ENTRENO. 18 19 20 21 ENTRENO 22 23 ENTRENO MIÉ VIE 24 25 26 27 28 ENTRENO ENTRENO",
+    "palabras": 26
+   },
+   {
+    "desde": 5.867,
+    "hasta": 5.867,
+    "texto": "10DIAS 10S MIE VIE LUN ENTRENO: 18 19 20 21 ENTRENO 22 23 ENTRENO VIE 25 26 27 28 ENTRENO ENTRENO",
+    "palabras": 21
+   },
+   {
+    "desde": 6.0,
+    "hasta": 6.0,
+    "texto": "10 DÍAS OS MIÉ VIE LUN ENTRENO: 18 19 20 21 22 23 ENTRENO MIÉ VIE 25 26 27 28 ENTRENO. ENTRENO",
+    "palabras": 22
+   },
+   {
+    "desde": 6.133,
+    "hasta": 6.133,
+    "texto": "10 DIAS MOS: LOS EN ES MIE VIE LUN ENTRENO 18 19 20 21 RENO. 22 23 ENTRENO 2h 25 26 27 28 ENTRENO: ENTRENO",
+    "palabras": 25
+   },
+   {
+    "desde": 6.4,
+    "hasta": 6.4,
+    "texto": "10 DIAS pa 108 MIÉ VIE LUN ENTRENO. 18 19 20 ENTRENO 22 23 ENTRENO MIÉ VIE SAB 25 26 27 28 ENTRENO ENTRENO",
+    "palabras": 24
+   },
+   {
+    "desde": 6.667,
+    "hasta": 6.667,
+    "texto": "10 DIAS en ES MIÉ VIE LUN ENTRENO 18 19 20 ENTRENO El 22 23 ENTRENO VIE 2h 25 26 27 ENTRENO: ENTRENO 28",
+    "palabras": 24
+   },
+   {
+    "desde": 6.933,
+    "hasta": 6.933,
+    "texto": "BALONMANO 5S dos MIE VIE LUN ENTRENO. 18 19 20 ENTRENO 22 23 ENTRENO MIÉ VIE 25 26 27 ENTRENO ENTRENO",
+    "palabras": 21
+   },
+   {
+    "desde": 7.2,
+    "hasta": 7.2,
+    "texto": "BALONMANO 10 DIAS pc hy OS fd MIE VIE LUN ENTRENO 18 19 20 ENTRENO 22 23 ENTRENO VIE 2h 25 26 27 ENTRENO: ENTRENO PARTIDO",
+    "palabras": 26
+   },
+   {
+    "desde": 7.433,
+    "hasta": 7.433,
+    "texto": "10 DIAS TA MIÉ VIE LUN ENTRENO. 18 19 20 ENTRENO 22 23 ENTRENO MIÉ VIE 25 26 27 ENTRENO ENTRENO",
+    "palabras": 21
+   },
+   {
+    "desde": 7.467,
+    "hasta": 7.467,
+    "texto": "MIE VIE LUN ENTRENO 18 19 20 22 23 MIÉ VIE 24 25 26 27 ENTRENO ENTRENO PARTIDO",
+    "palabras": 18
+   },
+   {
+    "desde": 7.733,
+    "hasta": 7.733,
+    "texto": "SESIONES MIÉ MIE OM LUN ENTRENO 18 19 20 ENTRENO 22 ENTRENO as MIE VIE 2h 26 27 ENTRENO ENTRENO",
+    "palabras": 20
+   },
+   {
+    "desde": 8.0,
+    "hasta": 8.267,
+    "texto": "SESIONES MIE VIE LUN ENTRENO 18 19 ENTRENO 20 PARTIDO 22 1,23 ENTRENO MAR MIÉ VIE 24 25 26 27 PARTIDO ENTRENO",
+    "palabras": 22
+   },
+   {
+    "desde": 8.533,
+    "hasta": 8.533,
+    "texto": "SESIONES MIE JUE VIE LUN ENTRENO 19 PARTIDO MIÉ vie 2h 25 26 27 ENTRENO",
+    "palabras": 15
+   },
+   {
+    "desde": 8.8,
+    "hasta": 8.967,
+    "texto": "SESIONES MIÉ UE VIE bor LUN ENTRENO 18 19 ENTRENO 20 PARTIDO 22 ENTRENO MIÉ vIE 25 26 ENTRENO 27",
+    "palabras": 20
+   },
+   {
+    "desde": 9.067,
+    "hasta": 9.067,
+    "texto": "SESIONES MIE UE VIE OM LUN ENTRENO 18 19 ENTRENO. PARTIDO 22 ENTRENO MIÉ VIE 24 25 26 27 PARTIDO ENTRENO",
+    "palabras": 21
+   },
+   {
+    "desde": 9.333,
+    "hasta": 9.333,
+    "texto": "SESIONES DOM 22 PARTIDO MAR MIÉ VIE 24 25 26 27 ENTRENO ENTRENO",
+    "palabras": 13
+   },
+   {
+    "desde": 9.6,
+    "hasta": 9.6,
+    "texto": "om SESIONES dememor 19 21 22 24 26",
+    "palabras": 8
+   },
+   {
+    "desde": 10.167,
+    "hasta": 10.4,
+    "texto": "SESIONES dememoria. SE 24 28 PARTIDOS",
+    "palabras": 6
+   },
+   {
+    "desde": 10.467,
+    "hasta": 10.467,
+    "texto": "We SESIONES 21 -2-28 if PARTIDOS",
+    "palabras": 6
+   },
+   {
+    "desde": 10.667,
+    "hasta": 10.667,
+    "texto": "SESIONES de memoria. PARTIDO 19 22 PARTIDOS",
+    "palabras": 7
+   },
+   {
+    "desde": 10.933,
+    "hasta": 10.933,
+    "texto": "\"Wo, SESIONES de Memoria. SBE 22 26 20 PARTIDOS",
+    "palabras": 9
+   },
+   {
+    "desde": 11.2,
+    "hasta": 11.2,
+    "texto": "SESIONES de memoria. 21 2-28 PARTIDOS",
+    "palabras": 6
+   },
+   {
+    "desde": 11.467,
+    "hasta": 11.467,
+    "texto": "SESIONES dle memoria. iW PARTIDOS",
+    "palabras": 5
+   },
+   {
+    "desde": 11.733,
+    "hasta": 11.733,
+    "texto": "SESIONES de memoria. 21 HG PARTIDOS",
+    "palabras": 6
+   },
+   {
+    "desde": 11.967,
+    "hasta": 11.967,
+    "texto": "he SESIONES de memoria. 28 PARTIDO hi: PARTIDOS",
+    "palabras": 8
+   },
+   {
+    "desde": 12.0,
+    "hasta": 12.0,
+    "texto": "bre SESIONES de, memoria. 22 ia PARTIDOS",
+    "palabras": 7
+   },
+   {
+    "desde": 12.267,
+    "hasta": 12.867,
+    "texto": "SESIONES de memoria. BE 26 PARTIDOS “de cabeza.",
+    "palabras": 8
+   },
+   {
+    "desde": 13.067,
+    "hasta": 13.067,
+    "texto": "EL SÁBADO BB 2s PARTIDOS de cabeza.",
+    "palabras": 7
+   },
+   {
+    "desde": 13.6,
+    "hasta": 15.733,
+    "texto": "SAB 28",
+    "palabras": 2
+   },
+   {
+    "desde": 16.267,
+    "hasta": 17.6,
+    "texto": "SAB 28 NOV abre Proleam. FÚTBOL",
+    "palabras": 6
+   },
+   {
+    "desde": 17.767,
+    "hasta": 17.8,
+    "texto": "SAB 28 NOV Proleam. FÚTBOL",
+    "palabras": 5
+   },
+   {
+    "desde": 17.867,
+    "hasta": 18.133,
+    "texto": "SAB 28 NOV FÚTBOL BALONCESTO",
+    "palabras": 5
+   },
+   {
+    "desde": 18.4,
+    "hasta": 18.667,
+    "texto": "SAB 28 NOV abre Proleam. FÚTBOL BALONCESTO BALONMANO",
+    "palabras": 8
+   },
+   {
+    "desde": 18.933,
+    "hasta": 18.933,
+    "texto": "SAB 28 NOV FÚTBOL BALONCESTO BALONMANO",
+    "palabras": 6
+   },
+   {
+    "desde": 19.2,
+    "hasta": 19.367,
+    "texto": "SAB 28 NOV abre Proleam. FÚTBOL BALONCESTO BALONMANO",
+    "palabras": 8
+   },
+   {
+    "desde": 19.467,
+    "hasta": 19.467,
+    "texto": "RE US JUE vIE SAB LUN 19 20 21.22 23 MAR",
+    "palabras": 11
+   },
+   {
+    "desde": 19.733,
+    "hasta": 20.0,
+    "texto": "TU STAFF MANDASELO ENTRENO. 18 19 20 21 ENTRENO: 22 23 25 26 27 28 ENTRENO. ENTRE!",
+    "palabras": 17
+   },
+   {
+    "desde": 20.267,
+    "hasta": 20.533,
+    "texto": "RETO PARA TU STAFF MANDASELO segundo 18 19 20 21 ENTRENO: 22 23 2h 25 26 27 28 ENTRENO:",
+    "palabras": 19
+   },
+   {
+    "desde": 20.8,
+    "hasta": 20.8,
+    "texto": "PARA TU STAFF MANDASELO atu segundo 18 19 20 21 ENTRENO. 22 23 2h 25 26 27 28 ENTRENO:",
+    "palabras": 19
+   },
+   {
+    "desde": 20.9,
+    "hasta": 22.667,
+    "texto": "TU STAFF MANDASELO atu segundo ENTRENO. 18 19 20 21 ENTRENO. 22 23 2h 25 26 27 28 ¿Cuántos teneis",
+    "palabras": 20
+   },
+   {
+    "desde": 22.933,
+    "hasta": 24.067,
+    "texto": "RETO PARA TU STAFF MANDASELO agtu segundo. 915 ¿Cuántos tenéis va escritos?",
+    "palabras": 12
+   },
+   {
+    "desde": 24.267,
+    "hasta": 26.867,
+    "texto": "LISTA DE ESPERA 05 22 00 27 DÍAS HORAS MIN SEG entrenador@miclub.es CE",
+    "palabras": 13
+   },
+   {
+    "desde": 27.2,
+    "hasta": 27.2,
+    "texto": "meses gratis. HASTA EL 27 NOV",
+    "palabras": 6
+   },
+   {
+    "desde": 27.733,
+    "hasta": 28.533,
+    "texto": "meses gratis. HASTA EL 27 NOV",
+    "palabras": 6
+   },
+   {
+    "desde": 28.967,
+    "hasta": 28.967,
+    "texto": "Meses gratis. HASTA EL 27 NOV",
+    "palabras": 6
+   }
+  ]
+ },
+ "audio": {
+  "tiene_audio": true,
+  "wav": "intel/videos/u59/audio_16k.wav",
+  "volumen_integrado_lufs": "-13.99",
+  "pico_real_db": "0.13",
+  "rango_lra": "2.30",
+  "silencios": [
+   {
+    "desde": 28.31,
+    "hasta": 29.01
+   }
+  ],
+  "subidas_bruscas_s": [
+   0.6,
+   1.4,
+   2.9,
+   3.6,
+   4.9,
+   6.2,
+   7.5,
+   8.4,
+   10.1,
+   11.8,
+   12.9,
+   19.4,
+   20.9,
+   26.9
+  ],
+  "energia_db_cada_0_1s": [
+   -18.7,
+   -17.2,
+   -12.6,
+   -11.7,
+   -29.3,
+   -20.6,
+   -13.7,
+   -26.1,
+   -29.9,
+   -28.9,
+   -30.4,
+   -35.3,
+   -36.2,
+   -33.7,
+   -14.3,
+   -15.5,
+   -11.9,
+   -15.8,
+   -19.2,
+   -16.5,
+   -15.7,
+   -17.5,
+   -21.0,
+   -18.1,
+   -12.9,
+   -14.7,
+   -20.1,
+   -36.7,
+   -25.2,
+   -13.0,
+   -16.0,
+   -15.5,
+   -15.9,
+   -16.1,
+   -22.8,
+   -27.9,
+   -12.6,
+   -17.0,
+   -19.8,
+   -19.8,
+   -26.6,
+   -25.9,
+   -17.0,
+   -18.8,
+   -14.8,
+   -15.2,
+   -17.9,
+   -33.3,
+   -27.7,
+   -14.1,
+   -18.1,
+   -30.1,
+   -18.7,
+   -18.8,
+   -15.9,
+   -15.7,
+   -19.3,
+   -15.4,
+   -16.7,
+   -17.4,
+   -27.9,
+   -22.1,
+   -15.8,
+   -13.3,
+   -18.0,
+   -20.0,
+   -24.7,
+   -24.0,
+   -26.8,
+   -27.3,
+   -29.0,
+   -31.0,
+   -30.3,
+   -31.1,
+   -34.3,
+   -17.2,
+   -15.6,
+   -19.7,
+   -16.7,
+   -16.8,
+   -15.0,
+   -13.2,
+   -16.0,
+   -28.2,
+   -14.1,
+   -15.5,
+   -18.9,
+   -15.5,
+   -18.7,
+   -15.8,
+   -17.5,
+   -13.4,
+   -20.7,
+   -17.4,
+   -18.1,
+   -21.0,
+   -27.8,
+   -28.3,
+   -32.8,
+   -38.5,
+   -42.0,
+   -23.6,
+   -16.6,
+   -16.2,
+   -13.5,
+   -16.3,
+   -13.1,
+   -15.8,
+   -14.7,
+   -26.5,
+   -15.5,
+   -19.8,
+   -14.7,
+   -15.7,
+   -13.8,
+   -14.7,
+   -21.6,
+   -31.6,
+   -13.7,
+   -19.1,
+   -19.4,
+   -19.3,
+   -14.7,
+   -29.2,
+   -30.5,
+   -37.6,
+   -37.8,
+   -38.1,
+   -38.9,
+   -14.8,
+   -18.1,
+   -15.3,
+   -14.0,
+   -15.2,
+   -14.3,
+   -12.7,
+   -19.3,
+   -15.2,
+   -15.7,
+   -15.0,
+   -15.6,
+   -15.6,
+   -17.0,
+   -12.7,
+   -16.0,
+   -13.1,
+   -18.6,
+   -17.8,
+   -12.6,
+   -15.4,
+   -15.1,
+   -13.2,
+   -12.8,
+   -21.1,
+   -12.8,
+   -18.7,
+   -14.6,
+   -16.4,
+   -17.1,
+   -22.7,
+   -23.9,
+   -23.6,
+   -14.7,
+   -16.3,
+   -16.0,
+   -19.9,
+   -16.3,
+   -18.5,
+   -15.1,
+   -15.5,
+   -17.3,
+   -22.9,
+   -17.8,
+   -12.3,
+   -20.7,
+   -14.4,
+   -19.0,
+   -18.9,
+   -15.5,
+   -22.6,
+   -24.0,
+   -13.3,
+   -22.7,
+   -15.4,
+   -13.0,
+   -11.9,
+   -13.4,
+   -11.2,
+   -14.7,
+   -20.3,
+   -24.8,
+   -25.2,
+   -24.9,
+   -21.3,
+   -12.2,
+   -16.2,
+   -15.8,
+   -15.9,
+   -13.4,
+   -12.8,
+   -16.9,
+   -17.9,
+   -17.1,
+   -23.5,
+   -24.5,
+   -24.4,
+   -24.9,
+   -25.0,
+   -25.3,
+   -12.8,
+   -18.9,
+   -14.1,
+   -21.3,
+   -12.7,
+   -20.6,
+   -15.3,
+   -21.5,
+   -16.1,
+   -15.7,
+   -18.1,
+   -13.1,
+   -19.5,
+   -14.9,
+   -15.2,
+   -16.8,
+   -24.2,
+   -14.2,
+   -12.6,
+   -14.4,
+   -19.4,
+   -12.2,
+   -15.5,
+   -24.2,
+   -22.2,
+   -24.4,
+   -21.7,
+   -24.3,
+   -26.1,
+   -25.8,
+   -25.7,
+   -25.4,
+   -16.4,
+   -14.6,
+   -22.7,
+   -13.7,
+   -14.5,
+   -17.2,
+   -16.3,
+   -13.1,
+   -13.3,
+   -19.9,
+   -12.6,
+   -14.7,
+   -14.1,
+   -15.0,
+   -21.1,
+   -18.9,
+   -14.6,
+   -16.4,
+   -16.1,
+   -13.5,
+   -13.6,
+   -14.9,
+   -16.4,
+   -24.4,
+   -24.6,
+   -26.3,
+   -26.5,
+   -25.2,
+   -11.7,
+   -15.5,
+   -16.1,
+   -11.0,
+   -13.8,
+   -15.3,
+   -18.1,
+   -19.0,
+   -19.8,
+   -31.1,
+   -29.8,
+   -32.0,
+   -35.8,
+   -47.4,
+   -51.0,
+   -54.2,
+   -58.8,
+   -62.8,
+   -67.6,
+   -72.7,
+   -82.5
+  ],
+  "transcripcion": "transcripcion.json (tools/reel59/voz.tsv)",
+  "nota": "Esto son medidas. Entonación, claridad de la locución, timbre o si hay música NO se pueden afirmar sin escuchar o transcribir."
+ },
+ "vistas": [],
+ "orden": "python3 tools/video_intel.py analyze reels/u59-diez-dias.mp4 --id u59 --tema Impacto: diez días = cinco entrenos y dos partidos (balonmano) --modo detalle"
+}

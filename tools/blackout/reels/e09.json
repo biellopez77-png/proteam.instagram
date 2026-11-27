@@ -1,0 +1,126 @@
+{
+ "retro": "ep",
+ "d": "9",
+ "dur": 21.78,
+ "voz_sid": 29,
+ "vel": 1.0,
+ "clunks": [],
+ "dark_at": 99,
+ "estatica": [
+  [
+   0,
+   0.6
+  ],
+  [
+   0.6,
+   0.6799999999999999
+  ],
+  [
+   7.686166666666666,
+   7.766166666666666
+  ]
+ ],
+ "apagado": [
+  10.111166666666666
+ ],
+ "zumbido": [
+  0.6,
+  10.111166666666666
+ ],
+ "musica": {
+  "bpm": 104,
+  "vol": 0.4,
+  "desde": 10.61,
+  "duck": 0.5
+ },
+ "lineas": [
+  [
+   0.8,
+   "¿Cuánto ha jugado? ¿Y a qué esfuerzo? Cincuenta y dos por ocho. Saca la calculadora."
+  ],
+  [
+   7.89,
+   "La carga no se adivina."
+  ],
+  [
+   10.81,
+   "ProTim calcula la carga de cada jugador: minutos por esfuerzo, igual que en los entrenos."
+  ],
+  [
+   16.48,
+   "Seis meses gratis para tu primer equipo. Solo hasta el veintisiete."
+  ]
+ ],
+ "ep": {
+  "scenes": [
+   {
+    "type": "static",
+    "t0": 0
+   },
+   {
+    "type": "lcd",
+    "top": "CASIO · CARGA",
+    "lines": [
+     [
+      0.2,
+      "52 x 8"
+     ],
+     [
+      1.4,
+      "= ?"
+     ]
+    ],
+    "sub": "¿Cuánto ha jugado?<br>¿Seguro?",
+    "subAt": 2.2,
+    "t0": 0.6
+   },
+   {
+    "type": "blue",
+    "lines": [
+     [
+      0,
+      "LA CARGA"
+     ],
+     [
+      0.5,
+      "NO SE"
+     ],
+     [
+      0.9,
+      "ADIVINA.",
+      190,
+      900
+     ]
+    ],
+    "t0": 7.69
+   },
+   {
+    "type": "off",
+    "t0": 10.11
+   },
+   {
+    "type": "future",
+    "sub": "Minutos × RPE.",
+    "shots": [
+     [
+      0,
+      "fF",
+      "RPE y carga del partido.",
+      0.02
+     ],
+     [
+      2.6,
+      "fF",
+      "Jugador a jugador.",
+      0.3
+     ]
+    ],
+    "t0": 10.61
+   },
+   {
+    "type": "cierre",
+    "t0": 16.28
+   }
+  ]
+ }
+}

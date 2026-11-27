@@ -1,0 +1,11 @@
+{
+ "numero": "Nº 00",
+ "seccion": "Domingo, 23:40",
+ "formato": "story",
+ "laminas": [
+  {"tipo": "pregunta", "foto": "OBJETO_GENERAL_FOTO_001", "cap": "Una pregunta",
+   "big": "DOMINGO,", "bigLines": 1, "serif": "¿a qué hora\ncierras la semana?", "size": 200},
+  {"tipo": "encuesta", "pre": "Encuesta", "big": "LO DEL SÁBADO,",
+   "serif": "¿en un sitio\no en varios?", "foto": "STAFF_TRABAJO_FOTO_007", "size": 130}
+ ]
+}

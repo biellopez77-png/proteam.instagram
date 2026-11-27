@@ -1,0 +1,11 @@
+{
+ "numero": "Nº 00",
+ "seccion": "La víspera",
+ "formato": "story",
+ "laminas": [
+  {"tipo": "pregunta", "foto": "OBJETO_GENERAL_FOTO_001", "cap": "Una pregunta",
+   "big": "EL DÍA\nANTES,", "bigLines": 2, "serif": "¿cuánto dura\ntu entreno?", "size": 170},
+  {"tipo": "encuesta", "pre": "Encuesta", "big": "LA\nVÍSPERA,", "serif": "¿se repasa\no se prueba algo?",
+   "foto": "OBJETO_CONOS_EJERCICIO_FOTO_001", "size": 160, "bigLines": 2}
+ ]
+}

@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8">
+<!-- T02-1-r1 «La cuarta semana» (fútbol). Plantilla a3.html: planos fijos, la cámara solo se mueve al cambiar de zona. Dibujado + dos fotos de Commons (turrón CC BY 4.0, balón CC BY 2.0). Marta A, 23/11. -->
+<style>
+@font-face{font-family:M;font-weight:800;src:url(/tools/fonts/manrope-latin-800-normal.woff2)}
+@font-face{font-family:M;font-weight:700;src:url(/tools/fonts/manrope-latin-700-normal.woff2)}
+@font-face{font-family:M;font-weight:500;src:url(/tools/fonts/manrope-latin-500-normal.woff2)}
+@font-face{font-family:S;font-style:italic;font-weight:400;src:url(/tools/fonts/instrument-serif-latin-400-italic.woff2)}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#fbfaf7}
+#st{position:absolute;inset:0;overflow:hidden;background:#fbfaf7}
+#world{position:absolute;left:0;top:0;transform-origin:0 0}
+.o{position:absolute;left:0;top:0;transform-origin:50% 50%}
+.paper{background:#fff;box-shadow:0 18px 50px rgba(20,18,12,.10)}
+.frame{background:#fff;padding:16px;box-shadow:0 18px 50px rgba(20,18,12,.12)}
+.frame img{display:block;width:100%;height:100%;object-fit:cover}
+.num{position:absolute;font-family:M;font-weight:800;letter-spacing:-.05em;color:#121212;white-space:nowrap;line-height:1}
+.hand{position:absolute;font-family:S;font-style:italic;white-space:nowrap;line-height:1}
+.lab{position:absolute;font-family:M;font-weight:800;letter-spacing:.14em;color:#121212;white-space:nowrap}
+#cap{position:absolute;left:90px;right:90px;top:1330px;text-align:center;font-family:M;font-weight:800;font-size:58px;line-height:1.12;letter-spacing:-.03em;color:#121212;padding:18px 26px;border-radius:22px;background:rgba(251,250,247,.94)}
+#cap em{font-family:S;font-style:italic;font-weight:400;font-size:1.14em;letter-spacing:0}
+#gr{position:absolute;inset:0;pointer-events:none;mix-blend-mode:multiply;opacity:0;background:#d9e3f0}
+#wa{position:absolute;inset:0;pointer-events:none;mix-blend-mode:multiply;opacity:0;background:#f1dcc0}
+#ink{position:absolute;inset:0;background:#0e0e10;opacity:0;pointer-events:none}
+#wh{position:absolute;inset:0;background:#fbfaf7;opacity:0;pointer-events:none}
+.cell{position:absolute;border:3px solid #d5d8dc;border-radius:12px;background:#fff}
+.cell .d{position:absolute;left:12px;top:10px;font-family:M;font-weight:700;font-size:24px;color:#9aa1a8}
+.dh{position:absolute;text-align:center;font-family:M;font-weight:800;font-size:26px;letter-spacing:.12em;color:#77736b;width:120px}
+</style></head><body><div id="st">
+<div id="world">
+  <!-- el calendario del parón (CAL) -->
+  <div class="o paper" id="CAL" style="width:1000px;height:1300px">
+    <div class="lab" style="left:46px;top:62px;font-size:30px;color:#77736b">PARÓN DE NAVIDAD</div>
+    <div class="hand" style="left:46px;top:112px;font-size:92px;color:#121212">Diciembre – enero</div>
+    <div class="lab" style="right:46px;top:66px;font-size:22px;color:#9aa1a8;letter-spacing:.3em">EJEMPLO</div>
+    <div id="dhs"></div><div id="rows"></div>
+    <svg id="cals" style="position:absolute;left:0;top:0;overflow:visible" width="1000" height="1300">
+      <g id="strikes" stroke="#121212" stroke-width="8" stroke-linecap="round" fill="none" opacity=".82">
+        <path d="M40 418 C 260 404 520 428 960 408"/><path d="M42 640 C 300 650 640 626 958 634"/><path d="M40 858 C 330 846 610 868 960 852"/></g>
+      <path id="ring4" d="M500 950 C 820 950 985 990 985 1066 C 985 1150 760 1178 500 1176 C 220 1176 18 1148 18 1064 C 18 986 200 954 520 956" fill="none" stroke="#2f6bff" stroke-width="8" stroke-linecap="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/>
+    </svg>
+    <svg id="pencil" style="position:absolute;left:860px;top:810px;transform:rotate(-28deg);transform-origin:0 50%" width="330" height="44" viewBox="0 0 330 44"><path d="M0 22 L44 6 L44 38 Z" fill="#e8d3b0"/><path d="M0 22 L14 17 L14 27 Z" fill="#121212"/><rect x="44" y="6" width="250" height="32" fill="#2f6bff"/><rect x="294" y="6" width="34" height="32" rx="4" fill="#d5d8dc"/></svg>
+  </div>
+  <!-- nota de la tarea (solución), a la izquierda de la cuarta fila -->
+  <div class="o paper" id="NT" style="width:470px;height:360px;opacity:0">
+    <div style="position:absolute;left:170px;top:-18px;width:130px;height:40px;background:rgba(47,107,255,.35);transform:rotate(-4deg)"></div>
+    <div class="lab" style="left:44px;top:56px;font-size:28px;color:#2f6bff">TAREA</div>
+    <div class="num" style="left:40px;top:116px;font-size:96px">10′ · 3 DÍAS</div>
+    <div class="hand" style="left:44px;top:250px;font-size:64px;color:#77736b">antes de irte</div>
+  </div>
+  <!-- la pizarra (PIZ) y la nota de agosto (AGO) -->
+  <div class="o" id="PIZ" style="width:720px;height:480px;background:#1e1f22;border-radius:16px;box-shadow:0 18px 50px rgba(20,18,12,.18)">
+    <div style="position:absolute;inset:16px;border:2px solid rgba(255,255,255,.08);border-radius:10px"></div>
+    <div class="lab" style="left:50px;top:52px;font-size:26px;color:#8d8a84">MARTES</div>
+    <div class="hand" id="apr" style="left:60px;top:150px;font-size:200px;color:#f4f2ec;opacity:.92">apretar</div>
+  </div>
+  <div class="o paper" id="AGO" style="width:440px;height:330px">
+    <div class="lab" style="left:40px;top:44px;font-size:24px;color:#9aa1a8">PIERNAS DE</div>
+    <div class="num" style="left:36px;top:110px;font-size:104px">AGOSTO</div>
+    <div class="hand" style="left:40px;top:240px;font-size:52px;color:#77736b">si no cargas</div>
+  </div>
+  <svg class="o" id="BD" width="2600" height="1600" style="overflow:visible">
+    <path id="s1" d="M 1700 700 C 1540 800 1260 1060 1105 1222" fill="none" stroke="#d23a2a" stroke-width="7" stroke-linecap="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/>
+    <path id="s2" d="M 1150 1230 C 1400 1320 1650 1300 1830 1250" fill="none" stroke="#d23a2a" stroke-width="7" stroke-linecap="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/>
+    <circle id="pin1" cx="1700" cy="700" r="12" fill="#d23a2a" opacity="0"/><circle id="pin2" cx="1830" cy="1250" r="12" fill="#d23a2a" opacity="0"/>
+  </svg>
+  <!-- semana 1 de enero (ENE) -->
+  <div class="o paper" id="ENE" style="width:1000px;height:400px">
+    <div class="lab" style="left:46px;top:46px;font-size:28px;color:#77736b">ENERO · PRIMERA SEMANA DE VUELTA</div>
+    <div id="ecells"></div>
+  </div>
+  <!-- el recuerdo de diciembre (PH): balón y turrón -->
+  <div class="o" id="PH" style="width:1100px;height:1300px">
+    <div class="frame" id="FB" style="position:absolute;left:40px;top:120px;width:700px;height:500px;transform:rotate(-2.5deg)"><img src="/tools/reel_v4/T02-1-r1/balon.jpg"></div>
+    <div class="frame" id="FT" style="position:absolute;left:380px;top:560px;width:640px;height:500px;transform:rotate(3deg)"><img src="/tools/reel_v4/T02-1-r1/turron.jpg"></div>
+    <div class="hand" style="left:60px;top:20px;font-size:76px;color:#77736b">Último entreno · diciembre</div>
+    <div class="hand" id="rey" style="left:60px;top:1110px;font-size:84px;color:#121212">hasta después de Reyes</div>
+  </div>
+  <!-- primer martes de enero: el rondo (FD) -->
+  <svg class="o" id="FD" width="1000" height="1300" viewBox="0 0 1000 1300" style="overflow:visible">
+    <rect x="0" y="0" width="1000" height="1300" fill="#fff"/>
+    <g fill="none" stroke="#121212" stroke-width="3.5" opacity=".55">
+      <rect x="40" y="40" width="920" height="1220"/><path d="M40 650 H960"/><circle cx="500" cy="650" r="130"/>
+      <rect x="250" y="40" width="500" height="200"/><rect x="250" y="1060" width="500" height="200"/></g>
+    <circle cx="500" cy="650" r="300" fill="none" stroke="#2f6bff" stroke-width="4" stroke-dasharray="10 12" opacity=".5"/>
+    <g id="ring"></g><g id="mid"></g>
+    <g id="rb"><circle r="20" fill="#fff" stroke="#121212" stroke-width="4"/><path d="M-7 -6 L7 -6 L9 6 L0 11 L-9 6 Z" fill="#121212"/></g>
+    <text x="40" y="-34" font-family="M" font-weight="800" font-size="40" letter-spacing="5" fill="#77736b">PRIMER MARTES · ENERO</text>
+  </svg>
+  <!-- cada enero (STK), sobre negro -->
+  <div class="o" id="STK" style="width:2600px;height:3400px;background:#0e0e10">
+    <div id="stack"></div>
+  </div>
+  <!-- la ficha del estudio (FI) -->
+  <div class="o paper" id="FI" style="width:1000px;height:1000px">
+    <div class="lab" style="left:60px;top:60px;font-size:26px;color:#9aa1a8">JOO, 2018 · PLOS ONE</div>
+    <div class="hand" style="left:60px;top:112px;font-size:84px;color:#121212">20 semiprofesionales</div>
+    <div class="lab" style="left:60px;top:262px;font-size:28px;color:#77736b">SPRINTS REPETIDOS</div>
+    <div style="position:absolute;left:60px;right:60px;top:398px;border-top:4px dashed #2f6bff"></div>
+    <div class="lab" style="right:60px;top:356px;font-size:20px;color:#2f6bff">NIVEL DE ANTES</div>
+    <div id="bars"></div>
+    <div class="lab" style="left:60px;top:930px;font-size:20px;color:#9aa1a8;letter-spacing:.3em">ESQUEMA</div>
+  </div>
+  <div class="o" id="B" style="width:900px;height:500px;text-align:center">
+    <div class="num" style="position:static;font-size:170px;margin-top:120px">Pro<span style="color:#2f6bff">Team</span></div>
+    <div style="margin-top:30px;font-family:M;font-weight:500;font-size:38px;color:#77736b">la app del entrenador · enlace en la bio</div>
+  </div>
+</div>
+<div id="gr"></div>
+<div id="wa"></div>
+<div id="cap"></div>
+<div id="ink"></div>
+<div id="wh"></div>
+<div id="cov" style="position:absolute;left:60px;right:60px;top:1150px;text-align:center;font-family:M;font-weight:800;font-size:112px;line-height:1.02;letter-spacing:-.04em;color:#121212;display:none;background:rgba(251,250,247,.94);border-radius:28px;padding:30px 0">No dura tres.<br><span style="font-family:S;font-style:italic;font-weight:400;font-size:1.14em;letter-spacing:0;color:#2f6bff">Dura cuatro.</span></div>
+</div>
+<script src="/tools/reel_v4/T02-1-r1/times.js"></script>
+<script>
+const $=id=>document.getElementById(id), W=window.WORDS, NS='http://www.w3.org/2000/svg';
+const at=(w,n=1)=>{let c=0;for(const x of W)if(x[0]===w&&++c===n)return x[1];throw 'no '+w+n};
+const cl=(x,a=0,b=1)=>Math.min(b,Math.max(a,x)), r=(t,a,b)=>cl((t-a)/(b-a));
+const io=x=>x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2, eo=x=>1-Math.pow(1-x,3), lerp=(a,b,k)=>a+(b-a)*k;
+const T={no:at('no'),dura2:at('dura',2),cuatro:at('cuatro'),ultimo:at('ultimo'),partidillo:at('partidillo'),turron:at('turron'),hasta:at('hasta'),reyes:at('reyes'),
+ primer:at('primer'),en1:at('en'),rondo:at('rondo'),llegan:at('llegan'),piensas:at('piensas'),apretar:at('apretar'),pero:at('pero'),dom1:at('domingo'),liga:at('liga'),
+ si1:at('si'),cargas1:at('cargas'),juegas:at('juegas'),mie1:at('miercoles'),si2:at('si',2),agosto:at('agosto'),softly:at('softly'),y2:at('y',2),
+ un:at('un'),dos:at('dos'),bajaron:at('bajaron'),y3:at('y',3),recup:at('recuperarlos'),tres2:at('tres',2),por:at('por'),cuarta:at('cuarta'),antes:at('antes'),
+ diez:at('diez'),tres3:at('tres',3),y4:at('y',4),pretemp:at('pretemporada'),el6:at('el',6),martes3:at('martes',3),balon:at('balon'),lo:at('lo'),mie2:at('miercoles',2),
+ apunt:at('apuntalo'),porque:at('porque'),END:window.VEND+.25};
+// zonas (centros)
+const CAL=[0,0], NT=[-790,425], PIZ=[1350,-260], AGO=[1360,470], BD=[600,0], ENE=[0,1380], PH=[2900,0], FD=[0,3500], STK=[2900,3500], FI=[0,6000], BP=[1800,6000];
+const cx=j=>-394+132*j, ry=i=>-235+220*i; // centro de casilla del calendario (mundo)
+const fi=(x,y)=>[FI[0]-500+x,FI[1]-500+y], ph=(x,y)=>[PH[0]-550+x,PH[1]-650+y];
+const CUT1=T.softly-.1, CUT2=T.un-.15;
+const FIRST=[0,0,-60,1.08];
+const SH=[ // [inicio del movimiento, cx, cy, zoom, duración]
+ FIRST,                                                 // el calendario: tres semanas tachadas
+ [T.no-.1,250,150,1.9,.6],                              // detalle: el lápiz y la tercera raya
+ [T.dura2-.12,0,ry(3),1.08,.6],                         // la cuarta fila aparece
+ [T.ultimo-.2,...ph(550,600),.9,.7],                    // diciembre, en cálido: las dos fotos
+ [T.partidillo-.12,...ph(390,370),1.45,.6],             // el balón
+ [T.turron-.1,...ph(700,810),1.5,.55],                  // el turrón
+ [T.reyes-.12,...ph(550,720),.92,.6],                   // alejarse: hasta después de Reyes
+ [T.primer-.2,FD[0],FD[1],.82,.7],                      // paso a frío: el rondo, general
+ [T.rondo-.15,FD[0],FD[1]-20,1.2,.55],                  // llegan tarde
+ [T.piensas-.15,PIZ[0],PIZ[1]+30,1.3,.7],               // la pizarra
+ [T.pero-.12,cx(6),ry(3),1.7,.65],                      // el domingo de la cuarta fila
+ [T.si1-.15,BD[0],120,.46,.7],                          // alejarse: el tablero
+ [T.si2-.12,1000,300,.72,.6],                           // hacia agosto
+ [CUT1,STK[0],STK[1],.86],                              // giro 1: a negro · cada enero
+ [CUT1+.6,STK[0],STK[1],1.0,2.6],                       // acercamiento lento
+ [CUT2,...fi(500,200),1.4],                             // giro 2: de negro a blanco · la ficha
+ [T.dos-.15,...fi(500,560),1.0,.6],                     // la gráfica
+ [T.y3-.1,...fi(700,620),1.35,.6],                      // seguir la barra
+ [T.por-.2,0,120,.9,.7],                                // vuelta al calendario: la cuarta fila
+ [T.diez-.12,NT[0],NT[1],1.45,.6],                      // la nota
+ [T.y4-.1,ENE[0],ENE[1],1.0,.6],                        // enero, pretemporada corta
+ [T.el6-.1,cx(1),ENE[1]+40,1.8,.55],                    // martes, balón
+ [T.lo-.1,cx(2),ENE[1]+40,1.8,.5],                      // lo fuerte, el miércoles
+ [T.apunt-.05,BP[0],BP[1],1.0,.7],
+ [T.porque+.02,...FIRST.slice(1),.75]];                 // vuelta al primer encuadre
+const CUTS=new Set([CUT1,CUT2]);
+function cam(t){let i=0;while(i+1<SH.length&&SH[i+1][0]<=t)i++;const s=SH[i];
+ if(i===0||CUTS.has(s[0]))return [s[1],s[2],s[3],0];
+ const p=SH[i-1],Dd=s[4]||.62,k=r(t,s[0],s[0]+Dd),e=io(k);
+ const far=Math.hypot(s[1]-p[1],s[2]-p[2])>600;
+ const lz=lerp(Math.log(p[3]),Math.log(s[3]),e)-.12*Math.sin(Math.PI*k)*(far?1:0);
+ return [lerp(p[1],s[1],e),lerp(p[2],s[2],e),Math.exp(lz),far&&k>0&&k<1?Math.sin(Math.PI*k):0]}
+const sz=el=>[el.offsetWidth||+el.getAttribute('width'),el.offsetHeight||+el.getAttribute('height')];
+function place(el,x,y,rot=0,sc=1){const [w,h]=sz(el);el.style.transform=`translate(${x-w/2}px,${y-h/2}px) rotate(${rot}deg) scale(${sc})`}
+const drawK=(el,k)=>{el.setAttribute('stroke-dashoffset',100-100*k);el.style.visibility=k>0?'visible':'hidden'};
+const mk=(tag,a,par)=>{const e=document.createElementNS(NS,tag);for(const k in a)e.setAttribute(k,a[k]);par.appendChild(e);return e};
+const ball='<svg width="64" height="64" viewBox="-40 -40 80 80"><circle r="34" fill="#fff" stroke="#121212" stroke-width="6"/><path d="M-12 -10 L12 -10 L16 10 L0 20 L-16 10 Z" fill="#121212"/></svg>';
+// calendario: cabeceras, cuatro filas de semanas
+const DN=['L','M','X','J','V','S','D'];
+DN.forEach((d,j)=>{const h=document.createElement('div');h.className='dh';h.style.cssText=`left:${46+j*132}px;top:262px`;h.textContent=d;$('dhs').appendChild(h)});
+const DAYS=[[22,23,24,25,26,27,28],[29,30,31,1,2,3,4],[5,6,7,8,9,10,11],[12,13,14,15,16,17,18]], ROWS=[], C4=[];
+DAYS.forEach((row,i)=>{const g=document.createElement('div');g.style.cssText=`position:absolute;left:0;top:${320+i*220}px;width:1000px;height:190px`;
+ row.forEach((n,j)=>{const c=document.createElement('div');c.className='cell';c.style.cssText=`left:${46+j*132}px;top:0;width:120px;height:190px`;
+  c.innerHTML=`<div class="d">${n}</div>`;g.appendChild(c);if(i===3)C4.push(c)});$('rows').appendChild(g);ROWS.push(g)});
+C4[6].insertAdjacentHTML('beforeend',`<div id="lg" style="position:absolute;left:0;right:0;top:56px;text-align:center;opacity:0">${ball}<div class="lab" style="position:static;font-size:20px;color:#2f6bff;margin-top:8px;letter-spacing:.1em">LIGA</div></div>`);
+C4[1].insertAdjacentHTML('beforeend',`<div id="vu" style="position:absolute;left:0;right:0;top:80px;text-align:center;opacity:0"><div class="lab" style="position:static;font-size:19px;color:#77736b;letter-spacing:.06em">VUELTA</div></div>`);
+// semana de enero
+const EC=[];DN.forEach((d,j)=>{const c=document.createElement('div');c.className='cell';c.style.cssText=`left:${46+j*132}px;top:110px;width:120px;height:250px`;
+ c.innerHTML=`<div class="dh" style="left:-3px;top:18px;width:120px">${d}</div>`;$('ecells').appendChild(c);EC.push(c)});
+EC[1].insertAdjacentHTML('beforeend',`<div id="eb" style="position:absolute;left:0;right:0;top:84px;text-align:center;opacity:0"><svg width="84" height="84" viewBox="0 0 84 84"><circle cx="42" cy="42" r="30" fill="none" stroke="#2f6bff" stroke-width="3" stroke-dasharray="6 7"/><g fill="#2f6bff"><circle cx="42" cy="12" r="7"/><circle cx="71" cy="33" r="7"/><circle cx="60" cy="66" r="7"/><circle cx="24" cy="66" r="7"/><circle cx="13" cy="33" r="7"/></g><circle id="ebl" cx="42" cy="42" r="6" fill="#fff" stroke="#121212" stroke-width="2.5"/></svg><div class="lab" style="position:static;font-size:19px;color:#2f6bff;letter-spacing:.06em;margin-top:6px">BALÓN</div></div>`);
+EC[2].insertAdjacentHTML('beforeend',`<div id="ef" style="position:absolute;left:0;right:0;top:120px;text-align:center;opacity:0"><div class="lab" style="position:static;font-size:21px;color:#fff;letter-spacing:.04em">FUERTE</div></div>`);
+EC[6].insertAdjacentHTML('beforeend',`<div style="position:absolute;left:0;right:0;top:84px;text-align:center">${ball}<div class="lab" style="position:static;font-size:20px;color:#2f6bff;margin-top:8px;letter-spacing:.1em">LIGA</div></div>`);
+// rondo: cinco fichas en el círculo, dos dentro que llegan tarde
+const RC=[];for(let i=0;i<5;i++){const a=-Math.PI/2+i*2*Math.PI/5;RC.push([500+300*Math.cos(a),650+300*Math.sin(a)]);mk('circle',{cx:RC[i][0],cy:RC[i][1],r:26,fill:'#2f6bff'},$('ring'))}
+const MD=[mk('circle',{r:26,fill:'#fff',stroke:'#2f6bff','stroke-width':7},$('mid')),mk('circle',{r:26,fill:'#fff',stroke:'#2f6bff','stroke-width':7},$('mid'))];
+const PASS=[0,2,4,1,3,0,2,4,1,3,0,2,4,1,3];
+function bpos(t){const s=Math.max(0,t-(T.primer+.4))/.62, i=Math.floor(s), k=io(s-i); const a=RC[PASS[i%15]], b=RC[PASS[(i+1)%15]];
+ return t<T.primer+.4?RC[0]:[lerp(a[0],b[0],k),lerp(a[1],b[1],k)]}
+// cada enero: cuatro calendarios apilados
+const STO=[[-60,-260,-5],[30,-90,3],[-30,90,-2],[40,260,2]];
+STO.forEach(([x,y,a],i)=>{const c=document.createElement('div');c.className='paper';c.style.cssText=`position:absolute;left:${1300-300+x}px;top:${1700-200+y}px;width:600px;height:400px;transform:rotate(${a}deg);background:#f4f3ef`;
+ let g='';for(let k=0;k<21;k++)g+=`<div style="position:absolute;left:${40+(k%7)*76}px;top:${170+Math.floor(k/7)*68}px;width:64px;height:56px;border:3px solid #d5d8dc;border-radius:8px"></div>`;
+ c.innerHTML=`<div class="num" style="left:40px;top:44px;font-size:76px">ENERO</div>${g}<svg style="position:absolute;left:0;top:0;overflow:visible" width="600" height="400"><path class="ec" d="M190 40 C 300 46 314 110 220 138 C 120 160 18 140 22 92 C 26 46 120 28 214 44" fill="none" stroke="#2f6bff" stroke-width="7" stroke-linecap="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/></svg>`;
+ $('stack').appendChild(c)});
+const EL=[...document.querySelectorAll('.ec')];
+// la ficha: barras por semana
+const BH=[340,282,238,262,300,340], BL=['ANTES','PARADO','PARADO','VUELTA','VUELTA','VUELTA'], BC=['#121212','#9aa1a8','#9aa1a8','#2f6bff','#2f6bff','#2f6bff'], BARS=[];
+BH.forEach((h,i)=>{const b=document.createElement('div');b.style.cssText=`position:absolute;left:${80+i*144}px;top:400px;width:116px;height:340px;background:${BC[i]};border-radius:10px 10px 0 0;transform-origin:50% 100%`;
+ $('bars').appendChild(b);BARS.push(b);$('bars').insertAdjacentHTML('beforeend',`<div class="lab" style="left:${80+i*144}px;top:768px;width:116px;text-align:center;font-size:17px;color:#77736b;letter-spacing:.04em">${BL[i]}</div>`)});
+$('bars').insertAdjacentHTML('beforeend',`<div style="position:absolute;left:60px;right:60px;top:740px;border-top:4px solid #121212"></div>
+ <div class="hand" style="left:224px;top:820px;width:260px;text-align:center;font-size:52px;color:#77736b">2 semanas</div><div class="hand" style="left:512px;top:820px;width:404px;text-align:center;font-size:52px;color:#2f6bff">3 semanas</div>`);
+const CAPS=[[.2,T.no-.1,'El parón de Navidad…'],[T.no,T.dura2-.1,'…no dura <em>tres semanas.</em>'],[T.dura2,T.ultimo-.15,'<em>Dura cuatro.</em>'],
+ [T.ultimo,T.partidillo-.1,'Último entreno <em>de diciembre.</em>'],[T.partidillo,T.hasta-.1,'Partidillo, <em>turrón…</em>'],[T.hasta,T.primer-.15,'…y hasta <em>después de Reyes.</em>'],
+ [T.primer,T.en1-.1,'Primer martes <em>de enero.</em>'],[T.en1,T.piensas-.12,'En el rondo, <em>llegan tarde a todo.</em>'],[T.piensas,T.pero-.1,'Piensas en <em>apretar.</em>'],
+ [T.pero,T.si1-.12,'Pero el domingo <em>ya hay liga.</em>'],[T.si1,T.juegas-.1,'Si cargas fuerte <em>el martes…</em>'],[T.juegas,T.si2-.1,'…el domingo, <em>piernas de miércoles.</em>'],
+ [T.si2,CUT1-.35,'Si no cargas, <em>piernas de agosto.</em>'],[CUT1+.25,T.y2-.1,'Te pasa <em>cada enero.</em>'],[T.y2,CUT2-.4,'Y cada enero, <em>con la misma prisa.</em>'],
+ [CUT2+.2,T.dos-.12,'Un estudio <em>con semiprofesionales.</em>'],[T.dos,T.y3-.1,'Dos semanas parados: <em>bajaron sus sprints repetidos.</em>'],[T.y3,T.por-.15,'Y recuperarlos <em>costó tres.</em>'],
+ [T.por,T.diez-.1,'Por eso la cuarta semana <em>se prepara antes de irte.</em>'],[T.diez,T.y4-.1,'Diez minutos, <em>tres días.</em>'],[T.y4,T.el6-.1,'Enero, como <em>una pretemporada corta.</em>'],
+ [T.el6,T.lo-.08,'El martes, <em>balón.</em>'],[T.lo,T.apunt-.12,'Lo fuerte, <em>el miércoles.</em>'],[T.apunt,T.porque-.12,'Apúntalo en la app.'],[T.porque,T.END-.75,'Porque el parón <em>no dura tres semanas.</em>']];
+window.frame=function(t){
+  const [cx0,cy0,z,mv]=cam(t);
+  const wd=$('world');wd.style.transform=`translate(540px,760px) scale(${z}) translate(${-cx0}px,${-cy0}px)`;
+  wd.style.filter=mv>.35?`blur(${(2.6*(mv-.35)/.65).toFixed(2)}px)`:'none';
+  // color: diciembre cálido; enero (problema) frío hasta el giro 2; la solución en blanco con azul
+  $('wa').style.opacity=(.38*r(t,T.ultimo-.3,T.ultimo+.3)*(1-r(t,T.primer-.2,T.primer+.5))).toFixed(3);
+  $('gr').style.opacity=(.4*(t<CUT2?r(t,T.primer-.2,T.primer+.5):0)).toFixed(3);
+  const fin=t>T.porque-.1; // en el final, el calendario vuelve a quedar como al principio
+  // calendario
+  place($('CAL'),CAL[0],CAL[1]);
+  const k4=fin?0:eo(r(t,T.dura2-.15,T.dura2+.3));ROWS[3].style.opacity=k4;ROWS[3].style.transform=`translateY(${(24*(1-k4)).toFixed(1)}px)`;
+  drawK($('ring4'),fin?0:io(r(t,T.cuatro-.1,T.cuatro+.6)));
+  $('lg').style.opacity=fin?0:eo(r(t,T.dom1-.2,T.dom1+.25));
+  $('vu').style.opacity=fin?0:eo(r(t,T.por-.1,T.cuarta+.2));
+  const kl=fin?0:r(t,T.cuarta-.15,T.cuarta+.4);ROWS[3].style.filter=kl>0?`drop-shadow(0 ${(18*eo(kl)).toFixed(1)}px ${(26*eo(kl)).toFixed(1)}px rgba(20,18,12,${(.16*eo(kl)).toFixed(3)}))`:'none';
+  if(kl>0)ROWS[3].style.transform=`translateY(${(-26*eo(kl)).toFixed(1)}px) scale(${(1+.03*eo(kl)).toFixed(4)})`;
+  C4.forEach((c,j)=>{c.style.borderColor=kl>.4?'#2f6bff':'#d5d8dc'});
+  // nota de la tarea
+  const kn=fin?0:r(t,T.diez-.35,T.diez+.05);place($('NT'),NT[0],NT[1]+30*(1-eo(kn)),-3);$('NT').style.opacity=eo(kn);
+  // pizarra, agosto, hilos
+  place($('PIZ'),PIZ[0],PIZ[1],1.5);place($('AGO'),AGO[0],AGO[1],-2);place($('BD'),BD[0],BD[1]);
+  $('apr').style.clipPath=`inset(-40px ${(100-100*r(t,T.piensas+.05,T.apretar+.55)).toFixed(1)}% -60px -10px)`;
+  const gone=fin||t>CUT2;const ks1=gone?0:io(r(t,T.cargas1-.1,T.juegas+.4)), ks2=gone?0:io(r(t,T.si2,T.agosto+.2));
+  drawK($('s1'),ks1);drawK($('s2'),ks2);$('pin1').setAttribute('opacity',ks1>0?1:0);$('pin2').setAttribute('opacity',ks2>.98?1:0);
+  // enero
+  place($('ENE'),ENE[0],ENE[1]);$('ENE').style.opacity=fin?0:eo(r(t,T.diez+.2,T.y4-.1));
+  const km=r(t,T.martes3-.15,T.martes3+.3);EC[1].style.background=km>0?`rgba(222,232,255,${km})`:'#fff';EC[1].style.borderColor=km>.5?'#9fb8ff':'#d5d8dc';
+  $('eb').style.opacity=eo(r(t,T.balon-.25,T.balon+.2));
+  {const a=-Math.PI/2+Math.max(0,t-T.balon)*3;$('ebl').setAttribute('cx',42+30*Math.cos(a));$('ebl').setAttribute('cy',42+30*Math.sin(a))}
+  const kf=r(t,T.mie2-.35,T.mie2+.1);EC[2].style.background=kf>0?`rgba(47,107,255,${eo(kf)})`:'#fff';EC[2].style.borderColor=kf>.5?'#2f6bff':'#d5d8dc';$('ef').style.opacity=eo(kf);
+  // diciembre
+  place($('PH'),PH[0],PH[1]);
+  $('rey').style.clipPath=`inset(-30px ${(100-100*r(t,T.hasta-.1,T.reyes+.5)).toFixed(1)}% -40px -10px)`;
+  // rondo: el balón pasa, los de dentro llegan tarde
+  place($('FD'),FD[0],FD[1]);
+  const b=bpos(t);$('rb').setAttribute('transform',`translate(${b[0].toFixed(1)} ${b[1].toFixed(1)})`);
+  MD.forEach((m,i)=>{const d=bpos(t-.9-i*.25), p=[lerp(500,d[0],.55)+(i?40:-40),lerp(650,d[1],.55)];m.setAttribute('cx',p[0].toFixed(1));m.setAttribute('cy',p[1].toFixed(1))});
+  // cada enero
+  place($('STK'),STK[0],STK[1]);
+  EL.forEach((e,i)=>drawK(e,io(r(t,CUT1+.3+i*.55,CUT1+.9+i*.55))));
+  // la ficha
+  place($('FI'),FI[0],FI[1]);
+  BARS.forEach((bb,i)=>{let h=340;
+    if(i===1||i===2)h=lerp(340,BH[i],eo(r(t,T.bajaron-.1+(i-1)*.35,T.bajaron+.4+(i-1)*.35)));
+    if(i>=3)h=lerp(BH[2],BH[i],eo(r(t,T.recup-.1+(i-3)*.45,T.recup+.45+(i-3)*.45)));
+    bb.style.top=(740-h)+'px';bb.style.height=h+'px';
+    if(i>=3)bb.style.opacity=eo(r(t,T.y3-.2+(i-3)*.45,T.y3+.2+(i-3)*.45))});
+  place($('B'),BP[0],BP[1]);
+  // rótulo
+  let html='',a=0;for(const [s,e,h] of CAPS)if(t>=s-.2&&t<e+.25){const aa=Math.min(r(t,s-.2,s+.15),1-r(t,e-.05,e+.25));if(aa>=a&&(aa>0||!html)){html=h;a=aa}}
+  const cp=$('cap');if(cp.dataset.h!==html){cp.innerHTML=html;cp.dataset.h=html}
+  cp.style.opacity=(a*a).toFixed(3);cp.style.transform=`translateY(${(1-a)*12}px)`;
+  // giros: a negro antes de «Te pasa cada enero» (giro 1); de negro a blanco antes del estudio (giro 2)
+  $('ink').style.opacity=Math.max(r(t,CUT1-.35,CUT1-.03)*(1-r(t,CUT1+.03,CUT1+.45)),r(t,CUT2-.9,CUT2-.55)*(1-r(t,CUT2-.5,CUT2-.03)));
+  $('wh').style.opacity=r(t,CUT2-.5,CUT2-.03)*(1-r(t,CUT2+.03,CUT2+.5));
+};
+window.cover=function(){frame(T.cuatro+.62);$('cap').style.display='none';$('cov').style.display='block';
+  $('world').style.transform=`translate(540px,560px) scale(.84) translate(0px,${-40}px)`;$('world').style.filter='none'};
+Promise.all([...document.images].map(i=>i.decode().catch(()=>{}))).then(()=>document.fonts.ready).then(()=>{frame(0);window.ready=true});
+</script></body></html>

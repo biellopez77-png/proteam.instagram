@@ -1,0 +1,89 @@
+{
+ "origen": "tools/reel72/voz.tsv",
+ "tipo": "locución generada con tiempos por palabra (exacta, no reconocida por oído)",
+ "palabras": 8,
+ "primera_palabra_s": 0.06,
+ "ultima_palabra_s": 16.54,
+ "ritmo_palabras_por_s": 0.49,
+ "frases": [
+  {
+   "desde": 0.06,
+   "hasta": 1.1,
+   "texto": "Once en el campo.",
+   "palabras_por_s": 0.96
+  },
+  {
+   "desde": 1.42,
+   "hasta": 2.62,
+   "texto": "Cinco en la pista.",
+   "palabras_por_s": 0.83
+  },
+  {
+   "desde": 2.78,
+   "hasta": 4.06,
+   "texto": "Siete en la de balonmano.",
+   "palabras_por_s": 0.78
+  },
+  {
+   "desde": 4.38,
+   "hasta": 9.5,
+   "texto": "Tres deportes, y el mismo lunes: la semana, la convocatoria, los minutos.",
+   "palabras_por_s": 0.39
+  },
+  {
+   "desde": 9.58,
+   "hasta": 12.38,
+   "texto": "Por eso la app de ProTeam es para los tres.",
+   "palabras_por_s": 0.36
+  },
+  {
+   "desde": 12.54,
+   "hasta": 16.54,
+   "texto": "Lista de espera hasta el veintisiete de noviembre: tres meses gratis.",
+   "palabras_por_s": 0.5
+  }
+ ],
+ "pausas": [],
+ "por_palabra": [
+  {
+   "desde": 0.06,
+   "hasta": 1.1,
+   "palabra": "Once en el campo."
+  },
+  {
+   "desde": 1.42,
+   "hasta": 2.62,
+   "palabra": "Cinco en la pista."
+  },
+  {
+   "desde": 2.78,
+   "hasta": 4.06,
+   "palabra": "Siete en la de balonmano."
+  },
+  {
+   "desde": 4.38,
+   "hasta": 6.54,
+   "palabra": "Tres deportes, y el mismo lunes:"
+  },
+  {
+   "desde": 6.58,
+   "hasta": 9.5,
+   "palabra": "la semana, la convocatoria, los minutos."
+  },
+  {
+   "desde": 9.58,
+   "hasta": 12.38,
+   "palabra": "Por eso la app de ProTeam es para los tres."
+  },
+  {
+   "desde": 12.54,
+   "hasta": 15.02,
+   "palabra": "Lista de espera hasta el veintisiete de noviembre:"
+  },
+  {
+   "desde": 15.14,
+   "hasta": 16.54,
+   "palabra": "tres meses gratis."
+  }
+ ]
+}

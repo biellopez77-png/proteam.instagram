@@ -1,0 +1,142 @@
+{
+ "retro": "ep",
+ "d": "7",
+ "dur": 20.6,
+ "voz_sid": 29,
+ "vel": 1.0,
+ "clunks": [],
+ "dark_at": 99,
+ "estatica": [
+  [
+   0,
+   0.6
+  ],
+  [
+   0.6,
+   0.6799999999999999
+  ],
+  [
+   6.533625,
+   6.613625
+  ]
+ ],
+ "apagado": [
+  9.316958333333332
+ ],
+ "zumbido": [
+  0.6,
+  9.316958333333332
+ ],
+ "musica": {
+  "bpm": 104,
+  "vol": 0.4,
+  "desde": 9.82,
+  "duck": 0.5
+ },
+ "lineas": [
+  [
+   0.8,
+   "Lunes, lo de siempre. Jueves, ya veremos. Así no se planifica una semana."
+  ],
+  [
+   6.73,
+   "La semana no se planifica sola."
+  ],
+  [
+   10.02,
+   "En ProTim planificas la semana y la ves en el calendario del equipo, mes a mes."
+  ],
+  [
+   15.3,
+   "Seis meses gratis para tu primer equipo. Solo hasta el veintisiete."
+  ]
+ ],
+ "ep": {
+  "scenes": [
+   {
+    "type": "static",
+    "t0": 0
+   },
+   {
+    "type": "teletext",
+    "pag": 300,
+    "title": "PROGRAMACIÓN",
+    "band": "#a00",
+    "lines": [
+     [
+      0.2,
+      "LUN ... ¿?",
+      "#fff"
+     ],
+     [
+      0.5,
+      "MAR ... LO DE SIEMPRE",
+      "#fff"
+     ],
+     [
+      0.8,
+      "JUE ... YA VEREMOS",
+      "#0ff"
+     ],
+     [
+      1.1,
+      "SÁB ... PARTIDO (¿HORA?)",
+      "#ff0"
+     ]
+    ],
+    "t0": 0.6
+   },
+   {
+    "type": "blue",
+    "lines": [
+     [
+      0,
+      "LA SEMANA"
+     ],
+     [
+      0.5,
+      "NO SE"
+     ],
+     [
+      0.9,
+      "PLANIFICA"
+     ],
+     [
+      1.3,
+      "SOLA.",
+      190,
+      1040
+     ]
+    ],
+    "t0": 6.53
+   },
+   {
+    "type": "off",
+    "t0": 9.32
+   },
+   {
+    "type": "future",
+    "sub": "Todo, en el calendario.",
+    "shots": [
+     [
+      0,
+      "mo-week",
+      "Tu semana.",
+      0.1
+     ],
+     [
+      2.2,
+      "mo-cal",
+      "El mes entero.",
+      0.15
+     ]
+    ],
+    "t0": 9.82
+   },
+   {
+    "type": "cierre",
+    "t0": 15.1
+   }
+  ]
+ }
+}

@@ -1,0 +1,121 @@
+{
+ "retro": "ep",
+ "d": "2",
+ "dur": 21.04,
+ "voz_sid": 29,
+ "vel": 1.0,
+ "clunks": [],
+ "dark_at": 99,
+ "estatica": [
+  [
+   0,
+   0.6
+  ],
+  [
+   0.6,
+   0.6799999999999999
+  ],
+  [
+   12.592500000000001,
+   12.672500000000001
+  ]
+ ],
+ "apagado": [],
+ "zumbido": [
+  0.6,
+  21.0425
+ ],
+ "musica": {
+  "bpm": 104,
+  "vol": 0.4,
+  "desde": 0,
+  "duck": 0.5
+ },
+ "lineas": [
+  [
+   0.8,
+   "¿Hace falta tarjeta? No. ¿Deportes? Fútbol, baloncesto y balonmano. ¿Para quién? Para el primer equipo de una cuenta nueva. ¿Hasta cuándo? El viernes veintisiete, a medianoche."
+  ],
+  [
+   12.79,
+   "Sin tarjeta. Sin excusas."
+  ],
+  [
+   15.74,
+   "Seis meses gratis para tu primer equipo. Solo hasta el veintisiete."
+  ]
+ ],
+ "ep": {
+  "scenes": [
+   {
+    "type": "static",
+    "t0": 0
+   },
+   {
+    "type": "teletext",
+    "pag": 888,
+    "title": "PREGUNTAS",
+    "size": 60,
+    "lines": [
+     [
+      0.3,
+      "¿TARJETA? ......... NO",
+      "#fff"
+     ],
+     [
+      1.6,
+      "¿DEPORTES? FÚTBOL,",
+      "#0ff"
+     ],
+     [
+      1.6,
+      "  BALONCESTO, BALONMANO",
+      "#0ff"
+     ],
+     [
+      3.6,
+      "¿QUIÉN? TU PRIMER EQUIPO",
+      "#ff0"
+     ],
+     [
+      3.6,
+      "  (CUENTA NUEVA)",
+      "#ff0"
+     ],
+     [
+      5.6,
+      "¿HASTA? VIE 27 · 23:59",
+      "#f0f"
+     ]
+    ],
+    "t0": 0.6
+   },
+   {
+    "type": "blue",
+    "lines": [
+     [
+      0,
+      "SIN TARJETA."
+     ],
+     [
+      0.6,
+      "SIN",
+      150,
+      790
+     ],
+     [
+      0.9,
+      "EXCUSAS.",
+      150,
+      930
+     ]
+    ],
+    "t0": 12.59
+   },
+   {
+    "type": "cierre",
+    "t0": 15.54
+   }
+  ]
+ }
+}

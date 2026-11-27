@@ -1,0 +1,909 @@
+{
+ "meta": {
+  "contenedor": "mov,mp4,m4a,3gp,3g2,mj2",
+  "duracion_s": 13.5,
+  "tamano_bytes": 2989238,
+  "bitrate_kbps": 1771,
+  "ancho": 1080,
+  "alto": 1920,
+  "relacion": "9:16",
+  "fps": 30.0,
+  "fotogramas_declarados": 405,
+  "codec_video": "h264",
+  "pix_fmt": "yuv420p",
+  "pistas_audio": [
+   {
+    "codec": "aac",
+    "canales": 2,
+    "hz": 48000,
+    "bitrate_kbps": 198
+   }
+  ],
+  "etiquetas": {
+   "major_brand": "isom",
+   "minor_version": "512",
+   "compatible_brands": "isomiso2avc1mp41",
+   "encoder": "Lavf60.16.100"
+  },
+  "id": "u27",
+  "fotogramas_leidos": 405,
+  "sha256": "9ef00f75a9e79b56d35786db836e5e731804a28e9b330687a3f90db4e829f58c",
+  "archivo": "reels/u27-rpe-noventa-seis.mp4",
+  "fuente": "",
+  "marca": "proteam",
+  "tipo": "propio",
+  "formato": "reel",
+  "tema": "carga RPE de sesión: 90 a RPE 6 frente a 60 a RPE 8",
+  "analizado": "2026-11-16 17:58"
+ },
+ "montaje": {
+  "cortes_duros": 3,
+  "transiciones_o_movimientos_fuertes": 0,
+  "planos": 4,
+  "duracion_media_plano_s": 3.37,
+  "plano_mas_largo_s": 3.9,
+  "plano_mas_corto_s": 2.933,
+  "cortes_por_10s": 2.22,
+  "tramos_estaticos": [],
+  "nota": "Detección automática por histograma y diferencia de imagen sobre TODOS los fotogramas. Un motion graphic continuo cuenta como un solo plano; un cambio de fondo brusco dentro de una animación puede contarse como corte. Confirmar en las láminas."
+ },
+ "cortes": [
+  {
+   "fotograma": 88,
+   "t": 2.933,
+   "tipo": "corte",
+   "fuerza": 0.494
+  },
+  {
+   "fotograma": 191,
+   "t": 6.367,
+   "tipo": "corte",
+   "fuerza": 0.907
+  },
+  {
+   "fotograma": 288,
+   "t": 9.6,
+   "tipo": "corte",
+   "fuerza": 0.607
+  }
+ ],
+ "escenas": [
+  {
+   "escena": 1,
+   "desde_fotograma": 0,
+   "hasta_fotograma": 87,
+   "desde": 0.0,
+   "hasta": 2.933,
+   "duracion_s": 2.933,
+   "movimiento_medio": 0.004,
+   "luz_media": 0.239,
+   "saturacion_media": 0.269
+  },
+  {
+   "escena": 2,
+   "desde_fotograma": 88,
+   "hasta_fotograma": 190,
+   "desde": 2.933,
+   "hasta": 6.367,
+   "duracion_s": 3.433,
+   "movimiento_medio": 0.0123,
+   "luz_media": 0.894,
+   "saturacion_media": 0.054
+  },
+  {
+   "escena": 3,
+   "desde_fotograma": 191,
+   "hasta_fotograma": 287,
+   "desde": 6.367,
+   "hasta": 9.6,
+   "duracion_s": 3.233,
+   "movimiento_medio": 0.0174,
+   "luz_media": 0.323,
+   "saturacion_media": 0.235
+  },
+  {
+   "escena": 4,
+   "desde_fotograma": 288,
+   "hasta_fotograma": 404,
+   "desde": 9.6,
+   "hasta": 13.5,
+   "duracion_s": 3.9,
+   "movimiento_medio": 0.0062,
+   "luz_media": 0.174,
+   "saturacion_media": 0.412
+  }
+ ],
+ "laminas": [
+  {
+   "lamina": "general_001.jpg",
+   "fotogramas": [
+    0,
+    5,
+    10,
+    15,
+    20,
+    25,
+    43,
+    87,
+    88,
+    133,
+    139,
+    178,
+    190,
+    191,
+    236,
+    239,
+    281,
+    287
+   ],
+   "desde": 0.0,
+   "hasta": 9.567,
+   "modo": "general"
+  },
+  {
+   "lamina": "general_002.jpg",
+   "fotogramas": [
+    288,
+    333,
+    346,
+    378,
+    404
+   ],
+   "desde": 9.6,
+   "hasta": 13.467,
+   "modo": "general"
+  },
+  {
+   "lamina": "detalle_001.jpg",
+   "fotogramas": [
+    0,
+    8,
+    16,
+    24,
+    32,
+    40,
+    48,
+    56,
+    64,
+    72,
+    80,
+    87,
+    88,
+    96,
+    104,
+    112,
+    120,
+    128,
+    136,
+    144,
+    152,
+    160,
+    168,
+    176
+   ],
+   "desde": 0.0,
+   "hasta": 5.867,
+   "modo": "detalle"
+  },
+  {
+   "lamina": "detalle_002.jpg",
+   "fotogramas": [
+    184,
+    190,
+    191,
+    192,
+    200,
+    208,
+    216,
+    224,
+    232,
+    240,
+    248,
+    256,
+    264,
+    272,
+    280,
+    287,
+    288,
+    296,
+    304,
+    312,
+    320,
+    328,
+    336,
+    344
+   ],
+   "desde": 6.133,
+   "hasta": 11.467,
+   "modo": "detalle"
+  },
+  {
+   "lamina": "detalle_003.jpg",
+   "fotogramas": [
+    352,
+    360,
+    368,
+    376,
+    384,
+    392,
+    400
+   ],
+   "desde": 11.733,
+   "hasta": 13.333,
+   "modo": "detalle"
+  }
+ ],
+ "texto_en_pantalla": {
+  "idioma": "spa+eng",
+  "nota": "OCR automático sobre los fotogramas muestreados: puede fallar con tipografía fina, texto animado o sobre foto. La exposición es aproximada (resolución = intervalo de muestreo). Verificar siempre en las láminas.",
+  "por_fotograma": [
+   {
+    "fotograma": 0,
+    "t": 0.0,
+    "texto": "eee ab YU ES"
+   },
+   {
+    "fotograma": 5,
+    "t": 0.167,
+    "texto": "DM de Bib) AS que we"
+   },
+   {
+    "fotograma": 8,
+    "t": 0.267,
+    "texto": "3x ham Bib) At)’ \"QU RPE"
+   },
+   {
+    "fotograma": 10,
+    "t": 0.333,
+    "texto": "wee 17 md At)’ \"QU 10 RPE"
+   },
+   {
+    "fotograma": 15,
+    "t": 0.5,
+    "texto": "id At)’ \"OU RPE"
+   },
+   {
+    "fotograma": 16,
+    "t": 0.533,
+    "texto": "ak At)’ RPE"
+   },
+   {
+    "fotograma": 20,
+    "t": 0.667,
+    "texto": "lo 10 RP Ap."
+   },
+   {
+    "fotograma": 24,
+    "t": 0.8,
+    "texto": "de RPE"
+   },
+   {
+    "fotograma": 25,
+    "t": 0.833,
+    "texto": "de"
+   },
+   {
+    "fotograma": 32,
+    "t": 1.067,
+    "texto": "BN ham RPE"
+   },
+   {
+    "fotograma": 40,
+    "t": 1.333,
+    "texto": "BN ak 2PE"
+   },
+   {
+    "fotograma": 43,
+    "t": 1.433,
+    "texto": "at AÑ RPE 60"
+   },
+   {
+    "fotograma": 48,
+    "t": 1.6,
+    "texto": "DN han de 2PE JU"
+   },
+   {
+    "fotograma": 56,
+    "t": 1.867,
+    "texto": "den 17) sand seas ok RPE AS"
+   },
+   {
+    "fotograma": 64,
+    "t": 2.133,
+    "texto": "3x TP"
+   },
+   {
+    "fotograma": 72,
+    "t": 2.4,
+    "texto": "BN 3X id ak RPE"
+   },
+   {
+    "fotograma": 80,
+    "t": 2.667,
+    "texto": "BN be ak IN"
+   },
+   {
+    "fotograma": 87,
+    "t": 2.9,
+    "texto": "don, Es de le le"
+   },
+   {
+    "fotograma": 88,
+    "t": 2.933,
+    "texto": "BN ak"
+   },
+   {
+    "fotograma": 96,
+    "t": 3.2,
+    "texto": "CARGA MINUTOS ESFUERZO (1-10)"
+   },
+   {
+    "fotograma": 104,
+    "t": 3.467,
+    "texto": "CARGA MINUTOS ESFUERZO (1-10) Método RPE de sesión Foster et al., 2001"
+   },
+   {
+    "fotograma": 112,
+    "t": 3.733,
+    "texto": "CARGA MINUTOS ESFUERZO (1-10) 90'x6 Método RPE de sesión Foster et al., 2001"
+   },
+   {
+    "fotograma": 120,
+    "t": 4.0,
+    "texto": "CARGA MINUTOS ESFUERZO (1-10) 90'x6 437 Método RPE de Fost al., 2001"
+   },
+   {
+    "fotograma": 128,
+    "t": 4.267,
+    "texto": "CARGA MINUTOS ESFUERZO (1-10) 90'x6 539 60'x8 867 Método Foster 2001"
+   },
+   {
+    "fotograma": 133,
+    "t": 4.433,
+    "texto": "CARGA MINUTOS ESFUERZO (1-10) 90'x6 540 60'x8 405"
+   },
+   {
+    "fotograma": 136,
+    "t": 4.533,
+    "texto": "CARGA MINUTOS ESFUERZO (1-10) 90'x6 540 60'x8 461"
+   },
+   {
+    "fotograma": 139,
+    "t": 4.633,
+    "texto": "CARGA MINUTOS ESFUERZO (1-10) 90'x6 540 60'x8 477"
+   },
+   {
+    "fotograma": 144,
+    "t": 4.8,
+    "texto": "CARGA MINUTOS ESFUERZO (1-10) 90'x6 540 60'x8 480"
+   },
+   {
+    "fotograma": 152,
+    "t": 5.067,
+    "texto": "CARGA MINUTOS ESFUERZO (1-10) 90'x6 540 60'x8 480 al MÁS"
+   },
+   {
+    "fotograma": 160,
+    "t": 5.333,
+    "texto": "CARGA MINUTOS ESFUERZO (1-10) 90'x6 540 60'x8 480 el «suave» cargó más."
+   },
+   {
+    "fotograma": 168,
+    "t": 5.6,
+    "texto": "CARGA MINUTOS ESFUERZO (1-10) 90'x6 540 60'x8 480 el «suave» cargó más."
+   },
+   {
+    "fotograma": 176,
+    "t": 5.867,
+    "texto": "CARGA MINUTOS ESFUERZO (1-10) 90'x6 540 60'x8 480 el «suave» cargó más."
+   },
+   {
+    "fotograma": 178,
+    "t": 5.933,
+    "texto": "CARGA MINUTOS ESFUERZO (1-10) 90'x6 540 60'x8 480 el «suave» cargó más."
+   },
+   {
+    "fotograma": 184,
+    "t": 6.133,
+    "texto": "CARGA MINUTOS ESFUERZO (1-10) 90'x6 540 60'x8 480 el «suave» cargó más."
+   },
+   {
+    "fotograma": 190,
+    "t": 6.333,
+    "texto": "GAS INUTOS ESFUERZO 10) 90'x6 540 60'x8 450 CATE Más"
+   },
+   {
+    "fotograma": 191,
+    "t": 6.367,
+    "texto": "depa 68 1743 as 34"
+   },
+   {
+    "fotograma": 192,
+    "t": 6.4,
+    "texto": "JA ADD NE 68 1743 vos"
+   },
+   {
+    "fotograma": 200,
+    "t": 6.667,
+    "texto": "LA APP DE Proleam partido 1743"
+   },
+   {
+    "fotograma": 208,
+    "t": 6.933,
+    "texto": "LA APP DE Proleam RPE 68 1743"
+   },
+   {
+    "fotograma": 216,
+    "t": 7.2,
+    "texto": "LA APP DE Proleam RPE 68 1743"
+   },
+   {
+    "fotograma": 224,
+    "t": 7.467,
+    "texto": "LA APP DE ProTeam RPE de 68 1743"
+   },
+   {
+    "fotograma": 232,
+    "t": 7.733,
+    "texto": "LA APP DE lea 1743 lo calcula por jugador."
+   },
+   {
+    "fotograma": 236,
+    "t": 7.867,
+    "texto": "LA APP DE 1743 lo calcula por jugador."
+   },
+   {
+    "fotograma": 239,
+    "t": 7.967,
+    "texto": "LA APP DE 1743 lo calcula por jugador."
+   },
+   {
+    "fotograma": 240,
+    "t": 8.0,
+    "texto": "compe 1743 lo calcula por jugador."
+   },
+   {
+    "fotograma": 248,
+    "t": 8.267,
+    "texto": "1743 343 40 lo calcula por jugador."
+   },
+   {
+    "fotograma": 256,
+    "t": 8.533,
+    "texto": "1743 nL 378 Pol Vidi 343 246 lo calcula por jugador."
+   },
+   {
+    "fotograma": 264,
+    "t": 8.8,
+    "texto": "1743 41 378 343 AlexP 340 lo calcula por jugador."
+   },
+   {
+    "fotograma": 272,
+    "t": 9.067,
+    "texto": "1743 16 343 lo calcula por jugador."
+   },
+   {
+    "fotograma": 280,
+    "t": 9.333,
+    "texto": "1743 16 378 343 246 lo calcula por jugador."
+   },
+   {
+    "fotograma": 281,
+    "t": 9.367,
+    "texto": "1743 #11 Leo Navarro 37 343 360 lo calcula por jugador."
+   },
+   {
+    "fotograma": 287,
+    "t": 9.567,
+    "texto": "1743 60 lo calcula por jugador."
+   },
+   {
+    "fotograma": 288,
+    "t": 9.6,
+    "texto": "1743 378 60 lo calcula"
+   },
+   {
+    "fotograma": 296,
+    "t": 9.867,
+    "texto": "VA ar ETO TU STA 33 aa es CAMPIONS"
+   },
+   {
+    "fotograma": 304,
+    "t": 10.133,
+    "texto": "RETO PARA TU STAFF ¿Qué RPE tuvo"
+   },
+   {
+    "fotograma": 312,
+    "t": 10.4,
+    "texto": "RETO PARA TU STAFF ¿Qué RPE tuvo"
+   },
+   {
+    "fotograma": 320,
+    "t": 10.667,
+    "texto": "RETO PARA TU STAFF ¿Qué RPE tuvo tu último entreno?"
+   },
+   {
+    "fotograma": 328,
+    "t": 10.933,
+    "texto": "RETO PARA TU STAFF ¿Qué RPE tuvo tu último entreno?"
+   },
+   {
+    "fotograma": 333,
+    "t": 11.1,
+    "texto": "RETO PARA TU STAFF ¿Qué RPE tuvo tu último entreno?"
+   },
+   {
+    "fotograma": 336,
+    "t": 11.2,
+    "texto": "RETO PARA TU STAFF ¿Qué RPE tuvo tu último entreno?"
+   },
+   {
+    "fotograma": 344,
+    "t": 11.467,
+    "texto": "RETO PARA TU STAFF ¿Qué RPE tuvo tu último entreno?"
+   },
+   {
+    "fotograma": 346,
+    "t": 11.533,
+    "texto": "RETO PARA TU STAFF ¿Qué RPE tuvo tu último entreno? STA NE ECDEDA UASTA El 27"
+   },
+   {
+    "fotograma": 352,
+    "t": 11.733,
+    "texto": "RETO PARA TU STAFF ¿Qué RPE tuvo tu último entreno? LISTA DE ESPERA HASTA EL 27 NOV"
+   },
+   {
+    "fotograma": 360,
+    "t": 12.0,
+    "texto": "RETO PARA TU STAFF ¿Qué RPE tuvo tu último entreno? LISTA DE ESPERA HASTA EL 27 NOV"
+   },
+   {
+    "fotograma": 368,
+    "t": 12.267,
+    "texto": "RETO PARA TU STAFF ¿Qué RPE tuvo tu último entreno? LISTA DE ESPERA HASTA EL 27 NOV gratis."
+   },
+   {
+    "fotograma": 376,
+    "t": 12.533,
+    "texto": "RETO PARA TU STAFF ¿Qué RPE tuvo tu último entreno? LISTA DE ESPERA HASTA EL 27 NOV gratis."
+   },
+   {
+    "fotograma": 378,
+    "t": 12.6,
+    "texto": "RETO PARA TU STAFF ¿Qué RPE tuvo tu último entreno? LISTA DE ESPERA HASTA EL 27 NOV ÍMESes"
+   },
+   {
+    "fotograma": 384,
+    "t": 12.8,
+    "texto": "RETO PARA TU STAFF ¿Qué RPE tuvo tu último entreno? LISTA DE ESPERA HASTA EL 27 NOV gratis."
+   },
+   {
+    "fotograma": 392,
+    "t": 13.067,
+    "texto": "RETO PARA TU STAFF ¿Qué RPE tuvo tu último entreno? LISTA DE ESPERA HASTA EL 27 NOV"
+   },
+   {
+    "fotograma": 400,
+    "t": 13.333,
+    "texto": "RETO PARA TU STAFF ¿Qué RPE tuvo tu último entreno? LISTA DE ESPERA HASTA EL 27 NOV"
+   },
+   {
+    "fotograma": 404,
+    "t": 13.467,
+    "texto": "RETO PARA TU STAFF ¿Qué RPE tuvo tu último entreno? LISTA DE ESPERA HASTA EL 27 NOV"
+   }
+  ],
+  "bloques": [
+   {
+    "desde": 0.167,
+    "hasta": 0.167,
+    "texto": "DM de Bib) AS que we",
+    "palabras": 6
+   },
+   {
+    "desde": 0.267,
+    "hasta": 0.267,
+    "texto": "3x ham Bib) At)’ \"QU RPE",
+    "palabras": 6
+   },
+   {
+    "desde": 0.333,
+    "hasta": 0.333,
+    "texto": "wee 17 md At)’ \"QU 10 RPE",
+    "palabras": 7
+   },
+   {
+    "desde": 1.6,
+    "hasta": 1.6,
+    "texto": "DN han de 2PE JU",
+    "palabras": 5
+   },
+   {
+    "desde": 1.867,
+    "hasta": 1.867,
+    "texto": "den 17) sand seas ok RPE AS",
+    "palabras": 7
+   },
+   {
+    "desde": 2.4,
+    "hasta": 2.4,
+    "texto": "BN 3X id ak RPE",
+    "palabras": 5
+   },
+   {
+    "desde": 2.9,
+    "hasta": 2.9,
+    "texto": "don, Es de le le",
+    "palabras": 5
+   },
+   {
+    "desde": 3.2,
+    "hasta": 6.133,
+    "texto": "CARGA MINUTOS ESFUERZO (1-10) 90'x6 Método RPE de sesión Foster et al., 2001",
+    "palabras": 13
+   },
+   {
+    "desde": 6.333,
+    "hasta": 6.333,
+    "texto": "GAS INUTOS ESFUERZO 10) 90'x6 540 60'x8 450 CATE Más",
+    "palabras": 10
+   },
+   {
+    "desde": 6.367,
+    "hasta": 6.367,
+    "texto": "depa 68 1743 as 34",
+    "palabras": 5
+   },
+   {
+    "desde": 6.4,
+    "hasta": 6.4,
+    "texto": "JA ADD NE 68 1743 vos",
+    "palabras": 6
+   },
+   {
+    "desde": 6.667,
+    "hasta": 7.2,
+    "texto": "LA APP DE Proleam partido 1743",
+    "palabras": 6
+   },
+   {
+    "desde": 7.467,
+    "hasta": 7.467,
+    "texto": "LA APP DE ProTeam RPE de 68 1743",
+    "palabras": 8
+   },
+   {
+    "desde": 7.733,
+    "hasta": 7.733,
+    "texto": "LA APP DE lea 1743 lo calcula por jugador.",
+    "palabras": 9
+   },
+   {
+    "desde": 7.867,
+    "hasta": 7.967,
+    "texto": "LA APP DE 1743 lo calcula por jugador.",
+    "palabras": 8
+   },
+   {
+    "desde": 8.0,
+    "hasta": 8.0,
+    "texto": "compe 1743 lo calcula por jugador.",
+    "palabras": 6
+   },
+   {
+    "desde": 8.267,
+    "hasta": 8.267,
+    "texto": "1743 343 40 lo calcula por jugador.",
+    "palabras": 7
+   },
+   {
+    "desde": 8.533,
+    "hasta": 8.533,
+    "texto": "1743 nL 378 Pol Vidi 343 246 lo calcula por jugador.",
+    "palabras": 11
+   },
+   {
+    "desde": 8.8,
+    "hasta": 8.8,
+    "texto": "1743 41 378 343 AlexP 340 lo calcula por jugador.",
+    "palabras": 10
+   },
+   {
+    "desde": 9.067,
+    "hasta": 9.067,
+    "texto": "1743 16 343 lo calcula por jugador.",
+    "palabras": 7
+   },
+   {
+    "desde": 9.333,
+    "hasta": 9.333,
+    "texto": "1743 16 378 343 246 lo calcula por jugador.",
+    "palabras": 9
+   },
+   {
+    "desde": 9.367,
+    "hasta": 9.367,
+    "texto": "1743 #11 Leo Navarro 37 343 360 lo calcula por jugador.",
+    "palabras": 11
+   },
+   {
+    "desde": 9.567,
+    "hasta": 9.567,
+    "texto": "1743 60 lo calcula por jugador.",
+    "palabras": 6
+   },
+   {
+    "desde": 9.6,
+    "hasta": 9.6,
+    "texto": "1743 378 60 lo calcula",
+    "palabras": 5
+   },
+   {
+    "desde": 9.867,
+    "hasta": 9.867,
+    "texto": "VA ar ETO TU STA 33 aa es CAMPIONS",
+    "palabras": 9
+   },
+   {
+    "desde": 10.133,
+    "hasta": 13.467,
+    "texto": "RETO PARA TU STAFF ¿Qué RPE tuvo tu último entreno? LISTA DE ESPERA HASTA EL 27 NOV gratis.",
+    "palabras": 18
+   }
+  ]
+ },
+ "audio": {
+  "tiene_audio": true,
+  "wav": "intel/videos/u27/audio_16k.wav",
+  "volumen_integrado_lufs": "-14.09",
+  "pico_real_db": "-0.13",
+  "rango_lra": "2.60",
+  "silencios": [],
+  "subidas_bruscas_s": [],
+  "energia_db_cada_0_1s": [
+   -9.9,
+   -14.8,
+   -15.6,
+   -16.0,
+   -15.7,
+   -16.5,
+   -15.4,
+   -16.5,
+   -14.7,
+   -17.3,
+   -16.6,
+   -16.6,
+   -13.2,
+   -9.9,
+   -17.4,
+   -15.9,
+   -16.3,
+   -14.8,
+   -16.5,
+   -15.4,
+   -16.7,
+   -15.1,
+   -16.7,
+   -15.6,
+   -16.8,
+   -14.8,
+   -17.3,
+   -16.8,
+   -17.0,
+   -16.4,
+   -17.1,
+   -16.2,
+   -17.2,
+   -14.6,
+   -9.1,
+   -13.9,
+   -12.4,
+   -12.7,
+   -12.5,
+   -12.8,
+   -9.9,
+   -12.6,
+   -13.2,
+   -13.6,
+   -13.3,
+   -13.3,
+   -11.2,
+   -11.3,
+   -14.0,
+   -13.6,
+   -12.9,
+   -12.9,
+   -13.4,
+   -13.3,
+   -13.3,
+   -10.3,
+   -14.8,
+   -13.9,
+   -13.9,
+   -13.4,
+   -14.1,
+   -13.8,
+   -13.9,
+   -13.5,
+   -13.5,
+   -13.2,
+   -13.6,
+   -12.2,
+   -11.7,
+   -19.5,
+   -18.2,
+   -17.8,
+   -17.8,
+   -18.3,
+   -17.6,
+   -18.7,
+   -15.8,
+   -19.0,
+   -18.5,
+   -18.5,
+   -11.5,
+   -14.1,
+   -17.8,
+   -18.8,
+   -16.8,
+   -17.8,
+   -17.4,
+   -18.2,
+   -17.2,
+   -18.2,
+   -18.0,
+   -17.7,
+   -19.1,
+   -15.8,
+   -18.6,
+   -18.9,
+   -18.9,
+   -17.5,
+   -19.0,
+   -17.6,
+   -18.8,
+   -11.7,
+   -11.9,
+   -14.1,
+   -13.5,
+   -12.9,
+   -13.6,
+   -12.1,
+   -10.3,
+   -15.0,
+   -13.7,
+   -13.9,
+   -13.5,
+   -13.5,
+   -10.1,
+   -13.2,
+   -13.8,
+   -13.6,
+   -12.2,
+   -14.6,
+   -13.3,
+   -13.5,
+   -11.6,
+   -11.5,
+   -15.7,
+   -15.4,
+   -15.9,
+   -17.8,
+   -18.4,
+   -17.1,
+   -24.5,
+   -20.7,
+   -27.8,
+   -33.5,
+   -44.2
+  ],
+  "transcripcion": "PENDIENTE: no hay transcriptor local. Usa la herramienta de transcripción de ElevenLabs con audio_16k.wav, o el guion/voz.tsv si es un Reel propio, y guarda el resultado en transcripcion.json.",
+  "nota": "Esto son medidas. Entonación, claridad de la locución, timbre o si hay música NO se pueden afirmar sin escuchar o transcribir."
+ },
+ "vistas": [
+  "detalle_001.jpg",
+  "detalle_002.jpg",
+  "detalle_003.jpg"
+ ],
+ "orden": "python3 tools/video_intel.py analyze reels/u27-rpe-noventa-seis.mp4 --id u27 --tema carga RPE de sesión: 90 a RPE 6 frente a 60 a RPE 8 --modo detalle"
+}

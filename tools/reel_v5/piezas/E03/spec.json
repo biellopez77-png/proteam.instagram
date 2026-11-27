@@ -1,0 +1,58 @@
+{
+ "titulo": "El silbato",
+ "fase": "Calentamiento · sáb 28/11",
+ "tono": 52,
+ "paginas": [
+  {
+   "tipo": "palabra",
+   "d": 2.5,
+   "palabra": "SÁBADO",
+   "foto": "OBJETO_GENERAL_FOTO_002",
+   "fig": "Fig. 1 — Dos silbatos. Uno de reserva.",
+   "hora": "Faltan diez minutos"
+  },
+  {
+   "tipo": "cifra",
+   "d": 2.5,
+   "num": "90'",
+   "pre": "Lo que se ve",
+   "serif": "dura noventa minutos.",
+   "cap": "Lo que no se ve\ndura toda la semana."
+  },
+  {
+   "tipo": "reticula",
+   "d": 3.3,
+   "letras": "LUNES\nMARTES\nJUEVES",
+   "figs": [
+    {
+     "foto": "STAFF_TRABAJO_FOTO_007",
+     "lab": "Fig. 2 — La libreta del tiempo muerto"
+    },
+    {
+     "foto": "STAFF_TRABAJO_FOTO_003",
+     "lab": "Fig. 3 — Notas en la mesa"
+    },
+    {
+     "foto": "STAFF_PIZARRA_JUGADA_FOTO_001",
+     "lab": "Fig. 4 — La jugada, otra vez"
+    }
+   ]
+  },
+  {
+   "tipo": "frase",
+   "d": 3.1,
+   "foto": "OBJETO_BALON_LINEA_FOTO_001",
+   "pos": "58% 50%",
+   "pre": "Hoy se juega",
+   "serif": "lo que se preparó\nentre semana.",
+   "uv": true,
+   "size": 122,
+   "uvTop": 1475
+  },
+  {
+   "tipo": "cierre",
+   "d": 1.9,
+   "serif": "para el que lo prepara."
+  }
+ ]
+}

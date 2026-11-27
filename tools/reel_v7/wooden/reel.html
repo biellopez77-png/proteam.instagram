@@ -1,0 +1,171 @@
+<!doctype html><html><head><meta charset="utf-8">
+<!-- v7 · Wooden y los calcetines. Un solo plano sobre la pared; cada cosa que dice la voz se anima en su palabra.
+     Transiciones según agencia/sistema-v7/FORMATO.md: viajes 0,9 s power2.inOut, zoom ×0,9, blur ≤ 4 px, sin destellos. -->
+<style>
+@font-face{font-family:S;src:url(fonts/instrument-serif-latin-400-normal.woff2)}
+@font-face{font-family:SI;src:url(fonts/instrument-serif-latin-400-italic.woff2)}
+@font-face{font-family:J;font-weight:500;src:url(fonts/plus-jakarta-sans-latin-500-normal.woff2)}
+@font-face{font-family:J;font-weight:700;src:url(fonts/plus-jakarta-sans-latin-700-normal.woff2)}
+@font-face{font-family:J;font-weight:800;src:url(fonts/plus-jakarta-sans-latin-800-normal.woff2)}
+@font-face{font-family:J;font-weight:800;font-style:italic;src:url(fonts/plus-jakarta-sans-latin-800-italic.woff2)}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#02050F}
+#cam{position:absolute;left:0;top:0;width:2600px;height:6400px;transform-origin:0 0;background:url(wall2.jpg)}
+.a{position:absolute}
+.serif{font-family:S;color:#F4F7FB;white-space:nowrap;line-height:1}
+.bold{font-family:J;font-weight:800;color:#F4F7FB;white-space:nowrap;letter-spacing:-.02em;line-height:1}
+.acc{font-family:J;font-weight:800;font-style:italic;color:#6AA8FF}
+.w{display:inline-block;margin-right:.24em}
+.mat{background:#E9EEF6;padding:22px;border:6px solid #0b0f1a;box-shadow:0 30px 70px rgba(0,0,0,.6)}
+.mat img{display:block;width:100%}
+.panel{background:#0C1323;border:1px solid #26335a;border-radius:22px;box-shadow:0 40px 90px rgba(0,0,0,.6)}
+.box{position:absolute;border:3px dashed #8B5CF6}
+.box i{position:absolute;width:16px;height:16px;background:#02050F;border:3px solid #8B5CF6}
+.lab{font:800 22px J;letter-spacing:.16em;color:#8f9bb8}
+.cred{font:500 17px J;color:#5d6888;letter-spacing:.04em}
+.tile{position:absolute;width:190px;height:140px;border-radius:16px;background:#0C1323;border:2px solid #26335a}
+.tile span{position:absolute;left:18px;top:14px;font:700 28px J;color:#5d6888}
+.tile svg{position:absolute;right:16px;bottom:14px}
+#grain{position:absolute;inset:0;width:1080px;height:1920px;mix-blend-mode:screen;opacity:.10;pointer-events:none;image-rendering:pixelated}
+</style></head><body><div id="cam">
+
+<!-- A · Primer día en UCLA -->
+<div class="a mat" id="printA" style="left:210px;top:690px;width:660px"><img src="img/sc1960_g.png" style="height:800px;object-fit:cover;object-position:60% 30%"></div>
+<div class="a cred" style="left:210px;top:1560px" id="credA">UCLA, anuario Southern Campus 1960 · dominio público</div>
+<div class="a serif" id="l1" style="left:0;width:1080px;text-align:center;top:1620px;font-size:64px"></div>
+<div class="a bold" id="l1b" style="left:0;width:1080px;text-align:center;top:1700px;font-size:120px"></div>
+
+<!-- B · Los mejores jugadores del país… y los calcetines -->
+<div class="a serif" id="l2a" style="left:1190px;top:470px;font-size:60px"></div>
+<div class="a bold" id="l2b" style="left:1190px;top:550px;font-size:62px"></div>
+<div class="a mat" id="printB" style="left:1270px;top:680px;width:904px"><img src="img/group_g.png"></div>
+<div class="a cred" style="left:1270px;top:1900px" id="credB">Los Angeles Times · UCLA Library · CC BY 4.0</div>
+<div class="box" id="boxB" style="left:1326px;top:1594px;width:500px;height:206px;opacity:0"><i style="left:-10px;top:-10px"></i><i style="right:-10px;top:-10px"></i><i style="left:-10px;bottom:-10px"></i><i style="right:-10px;bottom:-10px"></i></div>
+<div class="a bold" id="l2c" style="left:1290px;top:1950px;font-size:58px"></div>
+
+<!-- C · Sin una arruga  ·  D · Los cordones, bien apretados -->
+<div class="a bold" id="l3" style="left:90px;top:2440px;font-size:84px"></div>
+<svg class="a" id="sock" style="left:170px;top:2560px" width="420" height="520" viewBox="0 0 420 520">
+ <path d="M120 20 H270 V300 Q272 340 310 356 L370 384 Q410 404 400 448 Q390 490 336 490 H150 Q104 490 102 440 L118 300 Z" fill="#0C1323" stroke="#B9E0FF" stroke-width="5" stroke-linejoin="round"/>
+ <g stroke="#26335a" stroke-width="4"><line x1="130" y1="44" x2="260" y2="44"/><line x1="130" y1="62" x2="260" y2="62"/><line x1="130" y1="80" x2="260" y2="80"/></g>
+ <g id="wr" fill="none" stroke="#6AA8FF" stroke-width="5" stroke-linecap="round"></g>
+ <rect id="swipe" x="104" y="0" width="300" height="26" rx="13" fill="#B9E0FF" opacity="0"/>
+</svg>
+<div class="a" id="l4a" style="left:90px;top:3160px"><div class="serif" id="l4" style="font-size:66px"></div></div>
+<div class="a bold" id="l4b" style="left:90px;top:3240px;font-size:84px"></div>
+<svg class="a" id="shoe" style="left:300px;top:3370px" width="700" height="380" viewBox="0 0 700 380">
+ <path d="M40 300 L60 140 Q70 90 120 86 L260 70 Q300 66 330 100 L420 190 Q470 230 560 236 Q650 244 660 300 Z" fill="#0C1323" stroke="#B9E0FF" stroke-width="5" stroke-linejoin="round"/>
+ <rect x="30" y="296" width="640" height="46" rx="20" fill="#E9EEF6"/>
+ <path d="M520 236 Q640 238 660 296" fill="none" stroke="#26335a" stroke-width="5"/>
+ <g id="eye" fill="#02050F" stroke="#6AA8FF" stroke-width="3"></g>
+ <g id="lace" fill="none" stroke="#F4F7FB" stroke-width="6" stroke-linecap="round"></g>
+</svg>
+
+<!-- E · arruga → ampolla → entreno perdido -->
+<div class="a panel" id="c1" style="left:1380px;top:2960px;width:640px;height:190px">
+ <svg class="a" style="left:40px;top:50px" width="120" height="90" viewBox="0 0 120 90"><path d="M5 45 Q20 20 35 45 T65 45 T95 45 T120 45" fill="none" stroke="#6AA8FF" stroke-width="7" stroke-linecap="round"/></svg>
+ <div class="a lab" style="left:190px;top:46px">1</div><div class="a bold" id="c1t" style="left:190px;top:84px;font-size:64px">Una arruga</div></div>
+<svg class="a" id="ar1" style="left:1660px;top:3160px" width="80" height="150" viewBox="0 0 80 150"><path d="M40 6 V128 M18 104 L40 132 L62 104" fill="none" stroke="#6AA8FF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/></svg>
+<div class="a panel" id="c2" style="left:1380px;top:3320px;width:640px;height:190px">
+ <svg class="a" style="left:50px;top:40px" width="110" height="110" viewBox="0 0 110 110"><circle cx="55" cy="55" r="42" fill="none" stroke="#6AA8FF" stroke-width="7"/><circle cx="55" cy="55" r="20" fill="#6AA8FF" opacity=".35"/><path d="M38 40 Q46 30 58 32" stroke="#F4F7FB" stroke-width="5" fill="none" stroke-linecap="round"/></svg>
+ <div class="a lab" style="left:190px;top:46px">2</div><div class="a bold" id="c2t" style="left:190px;top:84px;font-size:64px">Una ampolla</div></div>
+<svg class="a" id="ar2" style="left:1660px;top:3520px" width="80" height="150" viewBox="0 0 80 150"><path d="M40 6 V128 M18 104 L40 132 L62 104" fill="none" stroke="#6AA8FF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/></svg>
+<div class="a panel" id="c3" style="left:1380px;top:3680px;width:640px;height:330px">
+ <div class="a lab" style="left:40px;top:34px">3 · LA SEMANA</div>
+ <div class="a bold" id="c3t" style="left:40px;top:72px;font-size:64px">Un entreno perdido</div>
+ <div id="days" class="a" style="left:40px;top:176px;width:560px;height:110px"></div>
+</div>
+
+<!-- F · 10 títulos en 12 años -->
+<div class="a bold" id="cnt" style="left:0;width:1080px;text-align:center;top:4380px;font-size:280px;letter-spacing:-.05em">0</div>
+<div class="a serif" id="l6" style="left:0;width:1080px;text-align:center;top:4680px;font-size:72px"></div>
+<div class="a" id="grid" style="left:130px;top:4810px;width:830px;height:490px"></div>
+<div class="a cred" style="left:130px;top:5330px">Títulos NCAA de UCLA con Wooden, 1964–1975</div>
+
+<!-- G · Todo empezaba por los pies -->
+<div class="a serif" id="l7a" style="left:1230px;top:4920px;font-size:76px"></div>
+<div class="a bold" id="l7b" style="left:1230px;top:5010px;font-size:116px"></div>
+<img class="a" id="por" src="img/bnw_cut_g.png" style="left:1290px;top:5230px;width:840px;filter:drop-shadow(0 30px 40px rgba(0,0,0,.55))">
+<div class="a" style="left:1200px;top:5950px;width:1100px;height:400px;background:linear-gradient(transparent,#02050F 60%)"></div>
+<div class="a" id="name" style="left:1260px;top:6080px;font-family:SI;font-size:92px;color:#6AA8FF;white-space:nowrap"></div>
+<div class="a cred" id="credG" style="left:1266px;top:6190px">UCLA, 1948–1975 · foto: anuario de UCLA, dominio público</div>
+
+</div>
+<canvas id="grain" width="360" height="640"></canvas>
+<script src="gsap.min.js"></script>
+<script src="words.js"></script>
+<script>
+const $=i=>document.getElementById(i), cl=x=>Math.min(1,Math.max(0,x)), P=(t,a,b)=>cl((t-a)/(b-a)), eo=x=>1-Math.pow(1-x,3), es=x=>x*x*(3-2*x);
+const W=window.WORDS, T=k=>W[k][1];
+const L=[];
+function line(id,ks,acc=[]){const el=$(id);for(const k of ks){const s=document.createElement('span');s.className='w'+(acc.includes(k)?' acc':'');s.textContent=W[k][0];el.appendChild(s);L.push([s,T(k)])}}
+line('l1',[0,1,2,3]); line('l1b',[4,5],[5]);
+line('l2a',[6,7,8,9,10]); line('l2b',[11,12,13,14,15]); line('l2c',[16,17,18,19],[19]);
+line('l3',[20,21,22],[22]); line('l4',[23,24]); line('l4b',[25,26],[26]);
+line('l6',[39,40,41,42]);
+line('l7a',[43,44]); line('l7b',[45,46,47],[47]);
+// nombre: letra a letra al final
+const NAME='John Wooden', NT=18.85;
+// ----- cámara: un solo plano (FORMATO v7) -----
+const cam={cx:540,cy:1200,z:1.0}, tl=gsap.timeline({paused:true});
+const fly=(t,cx,cy,z,d=.9)=>{tl.to(cam,{cx,cy,duration:d,ease:'power2.inOut'},t);tl.to(cam,{keyframes:[{z:z*0.9,duration:d*.5,ease:'sine.out'},{z,duration:d*.5,ease:'sine.inOut'}]},t)};
+tl.set(cam,{cx:540,cy:1200,z:1.0},0).to(cam,{z:1.08,cy:1230,duration:2.3,ease:'sine.out'},0);
+fly(2.38,1700,1260,1.0); tl.to(cam,{z:1.05,duration:2.9,ease:'sine.out'},3.28);
+tl.to(cam,{cx:1640,cy:1700,z:1.2,duration:1.1,ease:'power2.inOut'},6.2);
+fly(7.62,560,2920,1.0); tl.to(cam,{cy:3260,z:1.04,duration:2.45,ease:'sine.inOut'},8.55);
+fly(11.02,1700,3460,1.0); tl.to(cam,{z:1.05,duration:3.0,ease:'sine.out'},11.95);
+fly(15.06,540,5060,1.0); tl.to(cam,{z:1.06,duration:1.9,ease:'sine.out'},15.96);
+fly(17.02,1700,5640,1.0); tl.to(cam,{z:1.1,cy:5700,duration:2.8,ease:'sine.inOut'},17.95);
+// ----- elementos -----
+const wr=$('wr'), WR=[[150,330],[150,370],[160,410],[200,446]];
+WR.forEach(()=>{const p=document.createElementNS('http://www.w3.org/2000/svg','path');wr.appendChild(p)});
+const EY=[[300,112],[340,138],[380,164],[420,190],[460,214]];
+EY.forEach(([x,y])=>{const c=document.createElementNS('http://www.w3.org/2000/svg','circle');c.setAttribute('cx',x-40);c.setAttribute('cy',y-14);c.setAttribute('r',9);$('eye').appendChild(c);const d=document.createElementNS('http://www.w3.org/2000/svg','circle');d.setAttribute('cx',x+40);d.setAttribute('cy',y-34);d.setAttribute('r',9);$('eye').appendChild(d)});
+const LA=[];for(let i=0;i<EY.length;i++){const [x,y]=EY[i];const p=document.createElementNS('http://www.w3.org/2000/svg','path');p.dataset.i=i;p.setAttribute('pathLength',100);p.setAttribute('stroke-dasharray',100);$('lace').appendChild(p);LA.push(p)}
+const DAYS=['L','M','X','J','V','S','D'];DAYS.forEach((d,i)=>{const c=document.createElement('div');c.style.cssText=`position:absolute;left:${i*80}px;top:0;width:68px;height:100px;border-radius:12px;background:${i==1?'#1a2440':'#0f1830'};border:2px solid #26335a;font:800 30px J;color:#8f9bb8;text-align:center;padding-top:30px`;c.textContent=d;c.id='d'+i;$('days').appendChild(c)});
+$('d1').innerHTML='M<svg style="position:absolute;left:4px;top:8px" width="60" height="84" viewBox="0 0 60 84"><path id="x1" d="M8 10 L52 74" stroke="#6AA8FF" stroke-width="7" stroke-linecap="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/><path id="x2" d="M52 10 L8 74" stroke="#6AA8FF" stroke-width="7" stroke-linecap="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/></svg>';
+const YEARS=[1964,1965,1966,1967,1968,1969,1970,1971,1972,1973,1974,1975], WON=new Set([1964,1965,1967,1968,1969,1970,1971,1972,1973,1975]);
+const tiles=YEARS.map((y,i)=>{const d=document.createElement('div');d.className='tile';d.style.left=(i%4)*212+'px';d.style.top=Math.floor(i/4)*172+'px';d.innerHTML=`<span>${y}</span>`+(WON.has(y)?'<svg width="54" height="54" viewBox="0 0 54 54"><path d="M14 8h26v12a13 13 0 0 1-26 0z M27 33v8 M17 46h20 M14 12H6a8 8 0 0 0 8 10 M40 12h8a8 8 0 0 1-8 10" fill="none" stroke="#6AA8FF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>':'');$('grid').appendChild(d);return d});
+const won=tiles.filter((d,i)=>WON.has(YEARS[i]));
+// grano
+const g=$('grain').getContext('2d'),gi=g.createImageData(360,640);let sd=1;const R=()=>(sd=(sd*16807)%2147483647)/2147483647;
+function camAt(t){tl.seek(t,false);return [cam.cx,cam.cy,cam.z]}
+const inn=(el,t0,dy=40,d=.5)=>{const p=eo(P(t,t0,t0+d));el.style.opacity=p;el.style.transform=`translateY(${(1-p)*dy}px)`;return p};
+let t=0;
+window.frame=function(tt){t=tt;
+ sd=1+Math.floor(t*30)*7919;const dd=gi.data;for(let i=0;i<dd.length;i+=4){const v=R()*255;dd[i]=v*.8;dd[i+1]=v*.85;dd[i+2]=v;dd[i+3]=255}g.putImageData(gi,0,0);
+ const p0=camAt(Math.max(0,t-1/30)),p1=camAt(t),sp=Math.hypot(p1[0]-p0[0],p1[1]-p0[1]);
+ $('cam').style.transform=`translate(540px,960px) scale(${p1[2]}) translate(${-p1[0]}px,${-p1[1]}px)`;
+ $('cam').style.filter=sp>14?`blur(${Math.min(4,(sp-14)/30)}px)`:'none';
+ for(const [s,t0] of L){const p=eo(P(t,t0-.04,t0+.32));s.style.opacity=p;s.style.transform=`translateX(${(1-p)*28}px)`;s.style.filter=`blur(${(1-p)*6}px)`}
+ // A
+ const pa=inn($('printA'),0,50,.6);$('printA').style.transform+=` rotate(${(1-pa)*-3}deg)`; inn($('credA'),.4,10);
+ // B
+ const pb=inn($('printB'),2.7,70,.6);$('printB').style.transform+=` rotate(${(1-pb)*2}deg)`; inn($('credB'),3.2,10);
+ const bx=P(t,T(19)-.05,T(19)+.3);$('boxB').style.opacity=bx>0?1:0;$('boxB').style.clipPath=`inset(0 ${100-eo(bx)*100}% 0 0)`;
+ // C · calcetín: las arrugas se alisan en «arruga»
+ inn($('sock'),7.95,50,.6);
+ const flat=es(P(t,T(22)-.1,T(22)+.55)), sw=P(t,T(22)-.15,T(22)+.6);
+ [...wr.children].forEach((p,i)=>{const [x,y]=WR[i];const A=12*(1-flat);let d=`M${x} ${y}`;for(let k=1;k<=6;k++){d+=` Q${x+k*30-15} ${y+(k%2?-A:A)} ${x+k*30} ${y}`}p.setAttribute('d',d);p.style.opacity=.9*(1-flat*.85)});
+ $('swipe').setAttribute('y',300+sw*170);$('swipe').setAttribute('opacity',sw>0&&sw<1?.18*Math.sin(sw*Math.PI):0);
+ // D · zapatilla: cordones que se dibujan y se aprietan
+ inn($('shoe'),T(23)-.1,50,.6);
+ const tight=es(P(t,T(26),T(26)+.4));
+ LA.forEach((p,i)=>{const [x,y]=EY[i];const s=40-10*tight;p.setAttribute('d',`M${x-s} ${y-14} L${x+s} ${y-34} M${x+s} ${y-14} L${x-s} ${y-34}`);const q=eo(P(t,T(24)+i*.14,T(24)+.3+i*.14));p.setAttribute('stroke-dashoffset',100-100*q);p.setAttribute('stroke',tight>.5?'#6AA8FF':'#F4F7FB')});
+ // E
+ inn($('c1'),T(27)-.1,40); inn($('c2'),T(31)-.15,40); inn($('c3'),T(35)-.15,40);
+ $('ar1').querySelector('path').setAttribute('stroke-dashoffset',100-100*eo(P(t,T(29),T(29)+.4)));
+ $('ar2').querySelector('path').setAttribute('stroke-dashoffset',100-100*eo(P(t,T(32),T(32)+.4)));
+ $('x1').setAttribute('stroke-dashoffset',100-100*eo(P(t,T(37),T(37)+.2)));$('x2').setAttribute('stroke-dashoffset',100-100*eo(P(t,T(37)+.14,T(37)+.34)));
+ $('d1').style.borderColor=t>T(37)?'#6AA8FF':'#26335a';
+ // F
+ const gin=P(t,15.3,15.8);$('grid').style.opacity=eo(gin);$('grid').style.transform=`translateY(${(1-eo(gin))*40}px)`;
+ let n=0;won.forEach((d,i)=>{const ti=T(38)+i*.1;const on=t>=ti;if(on)n++;const q=eo(P(t,ti,ti+.25));d.style.borderColor=q>0?'#6AA8FF':'#26335a';d.style.background=`rgba(${12+38*q},${19+40*q},${35+70*q},1)`;const sv=d.querySelector('svg');sv.style.opacity=q;d.querySelector('span').style.color=q>0?'#F4F7FB':'#5d6888'});
+ $('cnt').textContent=n;$('cnt').style.opacity=P(t,T(38)-.1,T(38)+.1);
+ // G
+ const pg=inn($('por'),17.4,60,.7);
+ const nl=Math.floor(cl((t-NT)/.6)*NAME.length);$('name').textContent=NAME.slice(0,nl);
+ $('credG').style.opacity=P(t,19.3,19.6);
+};
+document.fonts.ready.then(()=>Promise.all([...document.images].map(i=>i.complete?1:new Promise(r=>{i.onload=r;i.onerror=r})))).then(()=>{frame(0);window.ready=true});
+</script></body></html>

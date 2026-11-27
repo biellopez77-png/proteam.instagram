@@ -1,0 +1,1871 @@
+{
+ "meta": {
+  "contenedor": "mov,mp4,m4a,3gp,3g2,mj2",
+  "duracion_s": 28.433,
+  "tamano_bytes": 5871860,
+  "bitrate_kbps": 1652,
+  "ancho": 1080,
+  "alto": 1920,
+  "relacion": "9:16",
+  "fps": 30.0,
+  "fotogramas_declarados": 853,
+  "codec_video": "h264",
+  "pix_fmt": "yuv420p",
+  "pistas_audio": [
+   {
+    "codec": "aac",
+    "canales": 1,
+    "hz": 48000,
+    "bitrate_kbps": 211
+   }
+  ],
+  "etiquetas": {
+   "major_brand": "isom",
+   "minor_version": "512",
+   "compatible_brands": "isomiso2avc1mp41",
+   "encoder": "Lavf60.16.100"
+  },
+  "id": "u09",
+  "fotogramas_leidos": 853,
+  "sha256": "bdd9daa68d4e5af15b6b91528a983138a41a00e2c0b533f584afb8bd6cd54fb3",
+  "archivo": "reels/u09-los-ultimos-doce.mp4",
+  "fuente": "",
+  "marca": "proteam",
+  "tipo": "propio",
+  "formato": "reel",
+  "tema": "minutos obligatorios en infantiles: cuándo, no cuántos (balonmano)",
+  "analizado": "2026-11-16 20:54"
+ },
+ "montaje": {
+  "cortes_duros": 8,
+  "transiciones_o_movimientos_fuertes": 0,
+  "planos": 9,
+  "duracion_media_plano_s": 3.16,
+  "plano_mas_largo_s": 7.167,
+  "plano_mas_corto_s": 0.967,
+  "cortes_por_10s": 2.81,
+  "tramos_estaticos": [
+   {
+    "desde": 8.07,
+    "hasta": 9.73,
+    "duracion_s": 1.67
+   },
+   {
+    "desde": 10.93,
+    "hasta": 12.5,
+    "duracion_s": 1.57
+   },
+   {
+    "desde": 16.43,
+    "hasta": 18.23,
+    "duracion_s": 1.8
+   }
+  ],
+  "nota": "Detección automática por histograma y diferencia de imagen sobre TODOS los fotogramas. Un motion graphic continuo cuenta como un solo plano; un cambio de fondo brusco dentro de una animación puede contarse como corte. Confirmar en las láminas."
+ },
+ "cortes": [
+  {
+   "fotograma": 100,
+   "t": 3.333,
+   "tipo": "corte",
+   "fuerza": 0.614
+  },
+  {
+   "fotograma": 188,
+   "t": 6.267,
+   "tipo": "corte",
+   "fuerza": 0.887
+  },
+  {
+   "fotograma": 295,
+   "t": 9.833,
+   "tipo": "corte",
+   "fuerza": 0.918
+  },
+  {
+   "fotograma": 404,
+   "t": 13.467,
+   "tipo": "corte",
+   "fuerza": 0.742
+  },
+  {
+   "fotograma": 619,
+   "t": 20.633,
+   "tipo": "corte",
+   "fuerza": 0.498
+  },
+  {
+   "fotograma": 669,
+   "t": 22.3,
+   "tipo": "corte",
+   "fuerza": 0.924
+  },
+  {
+   "fotograma": 698,
+   "t": 23.267,
+   "tipo": "corte",
+   "fuerza": 0.948
+  },
+  {
+   "fotograma": 745,
+   "t": 24.833,
+   "tipo": "corte",
+   "fuerza": 0.936
+  }
+ ],
+ "escenas": [
+  {
+   "escena": 1,
+   "desde_fotograma": 0,
+   "hasta_fotograma": 99,
+   "desde": 0.0,
+   "hasta": 3.333,
+   "duracion_s": 3.333,
+   "movimiento_medio": 0.0042,
+   "luz_media": 0.291,
+   "saturacion_media": 0.443
+  },
+  {
+   "escena": 2,
+   "desde_fotograma": 100,
+   "hasta_fotograma": 187,
+   "desde": 3.333,
+   "hasta": 6.267,
+   "duracion_s": 2.933,
+   "movimiento_medio": 0.0072,
+   "luz_media": 0.102,
+   "saturacion_media": 0.322
+  },
+  {
+   "escena": 3,
+   "desde_fotograma": 188,
+   "hasta_fotograma": 294,
+   "desde": 6.267,
+   "hasta": 9.833,
+   "duracion_s": 3.567,
+   "movimiento_medio": 0.004,
+   "luz_media": 0.129,
+   "saturacion_media": 0.561
+  },
+  {
+   "escena": 4,
+   "desde_fotograma": 295,
+   "hasta_fotograma": 403,
+   "desde": 9.833,
+   "hasta": 13.467,
+   "duracion_s": 3.633,
+   "movimiento_medio": 0.0105,
+   "luz_media": 0.554,
+   "saturacion_media": 0.161
+  },
+  {
+   "escena": 5,
+   "desde_fotograma": 404,
+   "hasta_fotograma": 618,
+   "desde": 13.467,
+   "hasta": 20.633,
+   "duracion_s": 7.167,
+   "movimiento_medio": 0.0076,
+   "luz_media": 0.309,
+   "saturacion_media": 0.236
+  },
+  {
+   "escena": 6,
+   "desde_fotograma": 619,
+   "hasta_fotograma": 668,
+   "desde": 20.633,
+   "hasta": 22.3,
+   "duracion_s": 1.667,
+   "movimiento_medio": 0.0096,
+   "luz_media": 0.094,
+   "saturacion_media": 0.397
+  },
+  {
+   "escena": 7,
+   "desde_fotograma": 669,
+   "hasta_fotograma": 697,
+   "desde": 22.3,
+   "hasta": 23.267,
+   "duracion_s": 0.967,
+   "movimiento_medio": 0.0204,
+   "luz_media": 0.318,
+   "saturacion_media": 0.235
+  },
+  {
+   "escena": 8,
+   "desde_fotograma": 698,
+   "hasta_fotograma": 744,
+   "desde": 23.267,
+   "hasta": 24.833,
+   "duracion_s": 1.567,
+   "movimiento_medio": 0.008,
+   "luz_media": 0.025,
+   "saturacion_media": 0.026
+  },
+  {
+   "escena": 9,
+   "desde_fotograma": 745,
+   "hasta_fotograma": 852,
+   "desde": 24.833,
+   "hasta": 28.433,
+   "duracion_s": 3.6,
+   "movimiento_medio": 0.0039,
+   "luz_media": 0.192,
+   "saturacion_media": 0.474
+  }
+ ],
+ "laminas": [
+  {
+   "lamina": "general_001.jpg",
+   "fotogramas": [
+    0,
+    5,
+    10,
+    15,
+    20,
+    25,
+    45,
+    49,
+    90,
+    99,
+    100,
+    143,
+    187,
+    188,
+    233,
+    241,
+    278,
+    294
+   ],
+   "desde": 0.0,
+   "hasta": 9.8,
+   "modo": "general"
+  },
+  {
+   "lamina": "general_002.jpg",
+   "fotogramas": [
+    295,
+    340,
+    349,
+    385,
+    403,
+    404,
+    449,
+    494,
+    511,
+    539,
+    584,
+    618,
+    619,
+    643,
+    668,
+    669,
+    683,
+    697
+   ],
+   "desde": 9.833,
+   "hasta": 23.233,
+   "modo": "general"
+  },
+  {
+   "lamina": "general_003.jpg",
+   "fotogramas": [
+    698,
+    721,
+    744,
+    745,
+    790,
+    798,
+    835,
+    852
+   ],
+   "desde": 23.267,
+   "hasta": 28.4,
+   "modo": "general"
+  },
+  {
+   "lamina": "detalle_001.jpg",
+   "fotogramas": [
+    0,
+    8,
+    16,
+    24,
+    32,
+    40,
+    48,
+    56,
+    64,
+    72,
+    80,
+    88,
+    96,
+    99,
+    100,
+    104,
+    112,
+    120,
+    128,
+    136,
+    144,
+    152,
+    160,
+    168
+   ],
+   "desde": 0.0,
+   "hasta": 5.6,
+   "modo": "detalle"
+  },
+  {
+   "lamina": "detalle_002.jpg",
+   "fotogramas": [
+    176,
+    184,
+    187,
+    188,
+    192,
+    200,
+    208,
+    216,
+    224,
+    232,
+    240,
+    248,
+    256,
+    264,
+    272,
+    280,
+    288,
+    294,
+    295,
+    296,
+    304,
+    312,
+    320,
+    328
+   ],
+   "desde": 5.867,
+   "hasta": 10.933,
+   "modo": "detalle"
+  },
+  {
+   "lamina": "detalle_003.jpg",
+   "fotogramas": [
+    336,
+    344,
+    352,
+    360,
+    368,
+    376,
+    384,
+    392,
+    400,
+    403,
+    404,
+    408,
+    416,
+    424,
+    432,
+    440,
+    448,
+    456,
+    464,
+    472,
+    480,
+    488,
+    496,
+    504
+   ],
+   "desde": 11.2,
+   "hasta": 16.8,
+   "modo": "detalle"
+  },
+  {
+   "lamina": "detalle_004.jpg",
+   "fotogramas": [
+    512,
+    520,
+    528,
+    536,
+    544,
+    552,
+    560,
+    568,
+    576,
+    584,
+    592,
+    600,
+    608,
+    616,
+    618,
+    619,
+    624,
+    632,
+    640,
+    648,
+    656,
+    664,
+    668,
+    669
+   ],
+   "desde": 17.067,
+   "hasta": 22.3,
+   "modo": "detalle"
+  },
+  {
+   "lamina": "detalle_005.jpg",
+   "fotogramas": [
+    672,
+    680,
+    688,
+    696,
+    697,
+    698,
+    704,
+    712,
+    720,
+    728,
+    736,
+    744,
+    745,
+    752,
+    760,
+    768,
+    776,
+    784,
+    792,
+    800,
+    808,
+    816,
+    824,
+    832
+   ],
+   "desde": 22.4,
+   "hasta": 27.733,
+   "modo": "detalle"
+  },
+  {
+   "lamina": "detalle_006.jpg",
+   "fotogramas": [
+    840,
+    848
+   ],
+   "desde": 28.0,
+   "hasta": 28.267,
+   "modo": "detalle"
+  }
+ ],
+ "texto_en_pantalla": {
+  "idioma": "spa+eng",
+  "nota": "OCR automático sobre los fotogramas muestreados: puede fallar con tipografía fina, texto animado o sobre foto. La exposición es aproximada (resolución = intervalo de muestreo). Verificar siempre en las láminas.",
+  "por_fotograma": [
+   {
+    "fotograma": 0,
+    "t": 0.0,
+    "texto": "SUS INUTO Infantil: Juegos de Euskadi 12 min por jugador del act."
+   },
+   {
+    "fotograma": 5,
+    "t": 0.167,
+    "texto": "INUTO 12 min por jugador del acta Juegos Euskadi:"
+   },
+   {
+    "fotograma": 8,
+    "t": 0.267,
+    "texto": "MINU AS 12 min por jugador del acta Infantil Juegos Euskadi;"
+   },
+   {
+    "fotograma": 10,
+    "t": 0.333,
+    "texto": "MINU TO 12 min por jugador del acta Infantil Juegos Euskad"
+   },
+   {
+    "fotograma": 15,
+    "t": 0.5,
+    "texto": "LA MINU TO 12 min por jugador del acta Infantil. Juegos"
+   },
+   {
+    "fotograma": 16,
+    "t": 0.533,
+    "texto": "53) MINU TO 12 min por jugador del acta Infantil. Juegos Euska Ah"
+   },
+   {
+    "fotograma": 20,
+    "t": 0.667,
+    "texto": "he, MINU TO 12 min por jugador del acta Infantil Juegos Euska"
+   },
+   {
+    "fotograma": 24,
+    "t": 0.8,
+    "texto": "MINU TO 12 min por jugador del acta Infantil: Juegos IN"
+   },
+   {
+    "fotograma": 25,
+    "t": 0.833,
+    "texto": "INUTO 12 min por jugador del acta Infantil. Juegos Euska"
+   },
+   {
+    "fotograma": 32,
+    "t": 1.067,
+    "texto": "MINU 12 min por jugador del acta Infantil. Juegos Euska"
+   },
+   {
+    "fotograma": 40,
+    "t": 1.333,
+    "texto": "MINU TO 12 min por jugador del acta Infantil. Juegos"
+   },
+   {
+    "fotograma": 45,
+    "t": 1.5,
+    "texto": "MINU TO de 12 min por jugador del acta Infantil. Juegos in IN"
+   },
+   {
+    "fotograma": 48,
+    "t": 1.6,
+    "texto": "MINU ÓN 12 min por jugador del acta Infantil. Juegos Euské"
+   },
+   {
+    "fotograma": 49,
+    "t": 1.633,
+    "texto": "MINU TO 12 min por jugador del acta Infantil. Juegos"
+   },
+   {
+    "fotograma": 56,
+    "t": 1.867,
+    "texto": "12 MINUTOS."
+   },
+   {
+    "fotograma": 64,
+    "t": 2.133,
+    "texto": "12 MINUTOS."
+   },
+   {
+    "fotograma": 72,
+    "t": 2.4,
+    "texto": "12 MINUTOS."
+   },
+   {
+    "fotograma": 80,
+    "t": 2.667,
+    "texto": "12 MINUTOS."
+   },
+   {
+    "fotograma": 88,
+    "t": 2.933,
+    "texto": "12 MINUTOS."
+   },
+   {
+    "fotograma": 90,
+    "t": 3.0,
+    "texto": "12 MINUTOS."
+   },
+   {
+    "fotograma": 96,
+    "t": 3.2,
+    "texto": "SUS 12 MINUTOS. laré"
+   },
+   {
+    "fotograma": 99,
+    "t": 3.3,
+    "texto": "SUS 12 MINUTOS."
+   },
+   {
+    "fotograma": 100,
+    "t": 3.333,
+    "texto": "12 MINUTOS."
+   },
+   {
+    "fotograma": 104,
+    "t": 3.467,
+    "texto": "PARTE PARTE"
+   },
+   {
+    "fotograma": 112,
+    "t": 3.733,
+    "texto": "PARTE PARTE"
+   },
+   {
+    "fotograma": 120,
+    "t": 4.0,
+    "texto": "PARTE PARTE"
+   },
+   {
+    "fotograma": 128,
+    "t": 4.267,
+    "texto": "PARTE PARTE"
+   },
+   {
+    "fotograma": 136,
+    "t": 4.533,
+    "texto": "YAESTÁ DECIDIDO. 12-5 PARTE PARTE"
+   },
+   {
+    "fotograma": 143,
+    "t": 4.767,
+    "texto": "YAESTÁ DECIDIDO. 18-8 PARTE PARTE"
+   },
+   {
+    "fotograma": 144,
+    "t": 4.8,
+    "texto": "YAESTÁ DECIDIDO. 19-9 PARTE PARTE"
+   },
+   {
+    "fotograma": 152,
+    "t": 5.067,
+    "texto": "YAESTÁ DECIDIDO. 23-10 PARTE PARTE"
+   },
+   {
+    "fotograma": 160,
+    "t": 5.333,
+    "texto": "YAESTÁ DECIDIDO. 24-11 PARTE PARTE"
+   },
+   {
+    "fotograma": 168,
+    "t": 5.6,
+    "texto": "YAESTÁ DECIDIDO. No pesa nada. 24-11 PARTE"
+   },
+   {
+    "fotograma": 176,
+    "t": 5.867,
+    "texto": "YAESTÁ DECIDIDO. No pesa nada. 24-11 PARTE"
+   },
+   {
+    "fotograma": 184,
+    "t": 6.133,
+    "texto": "YAESTÁ DECIDIDO. No pesa nada. 24-11 PARTE"
+   },
+   {
+    "fotograma": 187,
+    "t": 6.233,
+    "texto": "YAESTÁ DECIDIDO. No pesa nada. 24-11 PARTE"
+   },
+   {
+    "fotograma": 188,
+    "t": 6.267,
+    "texto": "Juegos Olimpicos de Londres 2012"
+   },
+   {
+    "fotograma": 192,
+    "t": 6.4,
+    "texto": "CUMPLES LA NORMA."
+   },
+   {
+    "fotograma": 200,
+    "t": 6.667,
+    "texto": "CUMPLES LA NORMA."
+   },
+   {
+    "fotograma": 208,
+    "t": 6.933,
+    "texto": "CUMPLES LA NORMA."
+   },
+   {
+    "fotograma": 216,
+    "t": 7.2,
+    "texto": "CUMPLES LA NORMA."
+   },
+   {
+    "fotograma": 224,
+    "t": 7.467,
+    "texto": "CUMPLES LA NORMA. El aprende que Juegos Olimpicos de Londres 2012"
+   },
+   {
+    "fotograma": 232,
+    "t": 7.733,
+    "texto": "CUMPLES LA NORMA. Él aprende que España Juegos Olímpicos de Londres 2012"
+   },
+   {
+    "fotograma": 233,
+    "t": 7.767,
+    "texto": "CUMPLES LA NORMA. Él aprende que España Juegos Olimpicos de Londres 2012"
+   },
+   {
+    "fotograma": 240,
+    "t": 8.0,
+    "texto": "CUMPLES LA NORMA.-% Él aprende que sus minutos no cuentan España Juegos Olimpicos de Londres 2012"
+   },
+   {
+    "fotograma": 241,
+    "t": 8.033,
+    "texto": "CUMPLES LA NORMA.-% Él aprende que sus minutos no cuentan España Juegos Olimpicos de Londres 2012"
+   },
+   {
+    "fotograma": 248,
+    "t": 8.267,
+    "texto": "CUMPLES LA NORMA.-% Él aprende que sus minutos no cuentan Juegos Olimpicos de Londres 2012"
+   },
+   {
+    "fotograma": 256,
+    "t": 8.533,
+    "texto": "CUMPLES LA NORMA.-% Él aprende que sus minutos no cuentan España Juegos Olimpicos de Londres 2012"
+   },
+   {
+    "fotograma": 264,
+    "t": 8.8,
+    "texto": "CUMPLES LA NORMA.-% Él aprende que sus minutos no cuentan España Juegos Olimpicos de Londres 2012"
+   },
+   {
+    "fotograma": 272,
+    "t": 9.067,
+    "texto": "CUMPLES LA Él aprende que sus minutos no cuentan España Juegos Olimpicos de Londres 2012"
+   },
+   {
+    "fotograma": 278,
+    "t": 9.267,
+    "texto": "CUMPLES LA NORMA.-% Él aprende que sus minutos no cuentan España Juegos Olimpicos de Londres 2012"
+   },
+   {
+    "fotograma": 280,
+    "t": 9.333,
+    "texto": "CUMPLES LA NORMA.-% Él aprende que sus minutos no cuentan España Juegos Olimpicos de Londres 2012"
+   },
+   {
+    "fotograma": 288,
+    "t": 9.6,
+    "texto": "NORMA.-% Él aprende que sus minutos no cuentan España Juegos Olimpicos de Londres 2012"
+   },
+   {
+    "fotograma": 294,
+    "t": 9.8,
+    "texto": "Él aprende que sus minutos no cuentan España Juegos Olímpicos de Londres 2012"
+   },
+   {
+    "fotograma": 295,
+    "t": 9.833,
+    "texto": "PARTE PARTE"
+   },
+   {
+    "fotograma": 296,
+    "t": 9.867,
+    "texto": "PARTE PARTE"
+   },
+   {
+    "fotograma": 304,
+    "t": 10.133,
+    "texto": "PARTE"
+   },
+   {
+    "fotograma": 312,
+    "t": 10.4,
+    "texto": "PARTE PARTE"
+   },
+   {
+    "fotograma": 320,
+    "t": 10.667,
+    "texto": "PARTE PARTE"
+   },
+   {
+    "fotograma": 328,
+    "t": 10.933,
+    "texto": "Sus 12', antes del descanso no jido"
+   },
+   {
+    "fotograma": 336,
+    "t": 11.2,
+    "texto": "Sus 12', antes del descanso no uando ecidido"
+   },
+   {
+    "fotograma": 340,
+    "t": 11.333,
+    "texto": "Sus 12', antes del descanso no cuando ya ha ecidido"
+   },
+   {
+    "fotograma": 344,
+    "t": 11.467,
+    "texto": "Sus 12', antes del descanso no cuando ya Ha ecidido"
+   },
+   {
+    "fotograma": 349,
+    "t": 11.633,
+    "texto": "Sus 12', antes del descanso no cuando se ha decidido"
+   },
+   {
+    "fotograma": 352,
+    "t": 11.733,
+    "texto": "Sus 12', antes del descanso no cuando ha decidido"
+   },
+   {
+    "fotograma": 360,
+    "t": 12.0,
+    "texto": "Sus 12', antes del descanso no cuando ya se na decidido"
+   },
+   {
+    "fotograma": 368,
+    "t": 12.267,
+    "texto": "Sus 12', antes del descanso uando decidido"
+   },
+   {
+    "fotograma": 376,
+    "t": 12.533,
+    "texto": "Sus 12', antes del descanso no cuando ase ha decidido Con el marcador vivo"
+   },
+   {
+    "fotograma": 384,
+    "t": 12.8,
+    "texto": "Sus 12', antes del descanso no cuando asehac Jecidido Con el marcador vivo aUN pes que"
+   },
+   {
+    "fotograma": 385,
+    "t": 12.833,
+    "texto": "Sus 12', antes del descanso no cuando ecidido dido Con el marcador vivo ju ido aun pes"
+   },
+   {
+    "fotograma": 392,
+    "t": 13.067,
+    "texto": "Sus 12', antes del descanso no cuando ya se ha decidido Con el marcador vivo que 100 aun pes"
+   },
+   {
+    "fotograma": 400,
+    "t": 13.333,
+    "texto": "Sus 12', antes del descanso no cuando ya se ha decidido Con el marcador vivo que el partido aun pese El segundo lleva el reloj tun en que nt"
+   },
+   {
+    "fotograma": 403,
+    "t": 13.433,
+    "texto": "Sus 12', antes del descanso no cuando ya ha decidido Con el marcador vivo que el partido aun pese El segundo lleva el reloj tú no tienes que ontario"
+   },
+   {
+    "fotograma": 404,
+    "t": 13.467,
+    "texto": "Sus 12', antes del descanso no cuando ha decidido Con el marcador vivo aun pes que elf El segundo lleva el reloj tu no tiene que"
+   },
+   {
+    "fotograma": 408,
+    "t": 13.6,
+    "texto": "MÁNDASFIO Til we 26-17 10 14 20 23 ha puta"
+   },
+   {
+    "fotograma": 416,
+    "t": 13.867,
+    "texto": "MANDASELO TU SEGUNDO LLEVE 26-17 10 12 14 v7 20 23 dor de"
+   },
+   {
+    "fotograma": 424,
+    "t": 14.133,
+    "texto": "MANDASELO TU SEGUNDO ME ul eve el rel 26-17 10 14 20 23 60 Partido en directo: el lleva"
+   },
+   {
+    "fotograma": 432,
+    "t": 14.4,
+    "texto": "MANDASELO TU SEGUNDO que ME ul MO el reloj. 26-17 12 14 17 20 23 40 Partido en directo: el lleva"
+   },
+   {
+    "fotograma": 440,
+    "t": 14.667,
+    "texto": "MANDASELO TU SEGUNDO que LLEVE Cl al 12 AlexF 20 na un jugador de la pista Partido en directo: el lleva"
+   },
+   {
+    "fotograma": 448,
+    "t": 14.933,
+    "texto": "MANDASELO TU SEGUNDO pue LLEVE Cl al 12 Ae 20 un jugador de la pista Partido en directo: el lleva"
+   },
+   {
+    "fotograma": 449,
+    "t": 14.967,
+    "texto": "MANDASELO TU SEGUNDO pue LLEVE Cl al 12 Ae 20 un jugador dela pista Partido en directo: el lleva"
+   },
+   {
+    "fotograma": 456,
+    "t": 15.2,
+    "texto": "MÁNDASELO TU SEGUNDO Ue Leve Cl al Ve LU} Competición Ribes 26 17 Rival ES Resumen 12 15-10"
+   },
+   {
+    "fotograma": 464,
+    "t": 15.467,
+    "texto": "MÁNDASELO TU SEGUNDO 10 lle VE que LU} Competición Ribes 26-17 Rival Resumen 12 15-10 min Informe parte"
+   },
+   {
+    "fotograma": 472,
+    "t": 15.733,
+    "texto": "MÁNDASELO TU 17 if partido Informe parte: sin min"
+   },
+   {
+    "fotograma": 480,
+    "t": 16.0,
+    "texto": "MÁNDASELO TU SEGUNDO 17 if Ue aque Defensa ela Jugadores Tramos momentos de in min Informe parte:"
+   },
+   {
+    "fotograma": 488,
+    "t": 16.267,
+    "texto": "COMENTA aA mina Semana 9n15 min"
+   },
+   {
+    "fotograma": 494,
+    "t": 16.467,
+    "texto": "COMENTA CATEGORÍA DÍAS Semana"
+   },
+   {
+    "fotograma": 496,
+    "t": 16.533,
+    "texto": "COMENTA CATEGORÍA DÍAS Semana"
+   },
+   {
+    "fotograma": 504,
+    "t": 16.8,
+    "texto": "COMENTA CATEGORÍA DÍAS Semana"
+   },
+   {
+    "fotograma": 511,
+    "t": 17.033,
+    "texto": "COMENTA CATEGORÍA DÍAS Semana"
+   },
+   {
+    "fotograma": 512,
+    "t": 17.067,
+    "texto": "COMENTA CATEGORÍA DÍAS Semana"
+   },
+   {
+    "fotograma": 520,
+    "t": 17.333,
+    "texto": "COMENTA CATEGORÍA DÍAS Semana"
+   },
+   {
+    "fotograma": 528,
+    "t": 17.6,
+    "texto": "COMENTA CATEGORÍA DÍAS Semana"
+   },
+   {
+    "fotograma": 536,
+    "t": 17.867,
+    "texto": "COMENTA CATEGORÍA DÍAS Semana"
+   },
+   {
+    "fotograma": 539,
+    "t": 17.967,
+    "texto": "COMENTA CATEGORÍA DÍAS Semana"
+   },
+   {
+    "fotograma": 544,
+    "t": 18.133,
+    "texto": "COMENTA CATEGORÍA DÍAS Semana"
+   },
+   {
+    "fotograma": 552,
+    "t": 18.4,
+    "texto": "COMENTA Prarificación RÍA DÍAS Semana eparo la seman"
+   },
+   {
+    "fotograma": 560,
+    "t": 18.667,
+    "texto": "COMENTA CATEGORÍA DÍAS Semana la semana"
+   },
+   {
+    "fotograma": 568,
+    "t": 18.933,
+    "texto": "COMENTA CATEGORÍA DÍAS Semana La SEMANA"
+   },
+   {
+    "fotograma": 576,
+    "t": 19.2,
+    "texto": "COMENTA CATEGORÍA DÍAS Semana La SEMANA"
+   },
+   {
+    "fotograma": 584,
+    "t": 19.467,
+    "texto": "COMENTA CATEGORÍA DÍAS Semana en la ann de"
+   },
+   {
+    "fotograma": 592,
+    "t": 19.733,
+    "texto": "COMENTA CATEGORÍA DÍAS Semana en la app de ProTeam."
+   },
+   {
+    "fotograma": 600,
+    "t": 20.0,
+    "texto": "COMENTA CATEGORÍA DÍAS Semana en la app de ProTeam."
+   },
+   {
+    "fotograma": 608,
+    "t": 20.267,
+    "texto": "COMENTA CATEGORÍA DÍAS Semana en la app de ProTeam."
+   },
+   {
+    "fotograma": 616,
+    "t": 20.533,
+    "texto": "COMENTA CATEGORÍA DÍAS Semana en la app de ProTeam."
+   },
+   {
+    "fotograma": 618,
+    "t": 20.6,
+    "texto": "COMENTA CATEGORÍA DÍAS Semana en la app de ProTeam."
+   },
+   {
+    "fotograma": 619,
+    "t": 20.633,
+    "texto": "COMENTA GO CATE RÍA DÍAS Semana en la app de ProTeam."
+   },
+   {
+    "fotograma": 624,
+    "t": 20.8,
+    "texto": "LISTA DE ESPERA 10 12 29 59"
+   },
+   {
+    "fotograma": 632,
+    "t": 21.067,
+    "texto": "LISTA DE ESPERA 17 HORAS 12 29 SEG"
+   },
+   {
+    "fotograma": 640,
+    "t": 21.333,
+    "texto": "LISTA DE ESPERA 10 08 00 30 DÍAS HORAS SEG"
+   },
+   {
+    "fotograma": 643,
+    "t": 21.433,
+    "texto": "LISTA DE ESPERA 10 02 05 33 DÍAS HORAS SEG entrenador@miclub.es"
+   },
+   {
+    "fotograma": 648,
+    "t": 21.6,
+    "texto": "LISTA DE ESPERA 09 05 DÍAS HORAS SEG entrenador@miclub.es"
+   },
+   {
+    "fotograma": 656,
+    "t": 21.867,
+    "texto": "LISTA DE ESPERA 06 17 42 08 DÍAS HORAS MIN SEG entrenador@miclub.es"
+   },
+   {
+    "fotograma": 664,
+    "t": 22.133,
+    "texto": "LISTA DE ESPERA 01 21 20 47 DÍAS HORAS MIN SEG entrenadoremiclub.es tE"
+   },
+   {
+    "fotograma": 668,
+    "t": 22.267,
+    "texto": "LISTA DE ESPERA 00 00 00 00 DIAS HORAS MIN SEG entrenador@miclub.es"
+   },
+   {
+    "fotograma": 669,
+    "t": 22.3,
+    "texto": "ye AN FINALA HB"
+   },
+   {
+    "fotograma": 672,
+    "t": 22.4,
+    "texto": "ye Do yA STAE EN HB"
+   },
+   {
+    "fotograma": 680,
+    "t": 22.667,
+    "texto": "ve he Ad HASTAEL 127 NOV une FINALA, HE"
+   },
+   {
+    "fotograma": 683,
+    "t": 22.767,
+    "texto": "dy ne bs HASTAE :27NO"
+   },
+   {
+    "fotograma": 688,
+    "t": 22.933,
+    "texto": "ho HASTAE ie OV ur 149 Jf WX: FINALA, it 1E"
+   },
+   {
+    "fotograma": 696,
+    "t": 23.2,
+    "texto": "he poa yo HASTAEL 27 NO HE"
+   },
+   {
+    "fotograma": 697,
+    "t": 23.233,
+    "texto": "he ve aX ps HASTAEL NOV"
+   },
+   {
+    "fotograma": 698,
+    "t": 23.267,
+    "texto": "al en"
+   },
+   {
+    "fotograma": 704,
+    "t": 23.467,
+    "texto": "meses gratis."
+   },
+   {
+    "fotograma": 712,
+    "t": 23.733,
+    "texto": "meses gratis."
+   },
+   {
+    "fotograma": 720,
+    "t": 24.0,
+    "texto": "meses gratis."
+   },
+   {
+    "fotograma": 721,
+    "t": 24.033,
+    "texto": "meses gratis."
+   },
+   {
+    "fotograma": 728,
+    "t": 24.267,
+    "texto": "JI meses gratis."
+   },
+   {
+    "fotograma": 736,
+    "t": 24.533,
+    "texto": "meses gratis."
+   },
+   {
+    "fotograma": 744,
+    "t": 24.8,
+    "texto": "meses gratis."
+   },
+   {
+    "fotograma": 745,
+    "t": 24.833,
+    "texto": "Wo. pRivata IN"
+   },
+   {
+    "fotograma": 752,
+    "t": 25.067,
+    "texto": "PR EGUNDO privata it 50 IS"
+   },
+   {
+    "fotograma": 760,
+    "t": 25.333,
+    "texto": "UNTALE AT EGUNDO privata"
+   },
+   {
+    "fotograma": 768,
+    "t": 25.6,
+    "texto": "UNTALE SEGUNDO Sp privaTA"
+   },
+   {
+    "fotograma": 776,
+    "t": 25.867,
+    "texto": "UNTALE AT EGUNDO SR le?"
+   },
+   {
+    "fotograma": 784,
+    "t": 26.133,
+    "texto": "TU EGUNDO ES)"
+   },
+   {
+    "fotograma": 790,
+    "t": 26.333,
+    "texto": "UNTALE EGUNDO and"
+   },
+   {
+    "fotograma": 792,
+    "t": 26.4,
+    "texto": "de EGUNDO andc"
+   },
+   {
+    "fotograma": 798,
+    "t": 26.6,
+    "texto": "Br JNTALE TU EGUNDO andc"
+   },
+   {
+    "fotograma": 800,
+    "t": 26.667,
+    "texto": "JNTALE TU EGUNDO andc IN"
+   },
+   {
+    "fotograma": 808,
+    "t": 26.933,
+    "texto": "JNTALE TU EGUNDO anda ro el ultimo el sábado?"
+   },
+   {
+    "fotograma": 816,
+    "t": 27.2,
+    "texto": "JNTALE TU SEGUNDO anda el último el sábado?"
+   },
+   {
+    "fotograma": 824,
+    "t": 27.467,
+    "texto": "PR ATU EGUNDO ¿Cuándo el"
+   },
+   {
+    "fotograma": 832,
+    "t": 27.733,
+    "texto": "NTALE TU EGUNDO ando el Limo el,"
+   },
+   {
+    "fotograma": 835,
+    "t": 27.833,
+    "texto": "GUNTALE TU EGUNDO ando ntro el elsábado?"
+   },
+   {
+    "fotograma": 840,
+    "t": 28.0,
+    "texto": "GUNTALE EGUNDO anda el imo el"
+   },
+   {
+    "fotograma": 848,
+    "t": 28.267,
+    "texto": "NTALE TU SEGUNDO anda el"
+   },
+   {
+    "fotograma": 852,
+    "t": 28.4,
+    "texto": "UNTALE TU SEGUNDO"
+   }
+  ],
+  "bloques": [
+   {
+    "desde": 0.0,
+    "hasta": 0.0,
+    "texto": "SUS INUTO Infantil: Juegos de Euskadi 12 min por jugador del act.",
+    "palabras": 12
+   },
+   {
+    "desde": 0.167,
+    "hasta": 0.167,
+    "texto": "INUTO 12 min por jugador del acta Juegos Euskadi:",
+    "palabras": 9
+   },
+   {
+    "desde": 0.267,
+    "hasta": 0.267,
+    "texto": "MINU AS 12 min por jugador del acta Infantil Juegos Euskadi;",
+    "palabras": 11
+   },
+   {
+    "desde": 0.333,
+    "hasta": 0.333,
+    "texto": "MINU TO 12 min por jugador del acta Infantil Juegos Euskad",
+    "palabras": 11
+   },
+   {
+    "desde": 0.5,
+    "hasta": 0.5,
+    "texto": "LA MINU TO 12 min por jugador del acta Infantil. Juegos",
+    "palabras": 11
+   },
+   {
+    "desde": 0.533,
+    "hasta": 0.533,
+    "texto": "53) MINU TO 12 min por jugador del acta Infantil. Juegos Euska Ah",
+    "palabras": 13
+   },
+   {
+    "desde": 0.667,
+    "hasta": 0.667,
+    "texto": "he, MINU TO 12 min por jugador del acta Infantil Juegos Euska",
+    "palabras": 12
+   },
+   {
+    "desde": 0.8,
+    "hasta": 0.8,
+    "texto": "MINU TO 12 min por jugador del acta Infantil: Juegos IN",
+    "palabras": 11
+   },
+   {
+    "desde": 0.833,
+    "hasta": 0.833,
+    "texto": "INUTO 12 min por jugador del acta Infantil. Juegos Euska",
+    "palabras": 10
+   },
+   {
+    "desde": 1.067,
+    "hasta": 1.067,
+    "texto": "MINU 12 min por jugador del acta Infantil. Juegos Euska",
+    "palabras": 10
+   },
+   {
+    "desde": 1.333,
+    "hasta": 1.333,
+    "texto": "MINU TO 12 min por jugador del acta Infantil. Juegos",
+    "palabras": 10
+   },
+   {
+    "desde": 1.5,
+    "hasta": 1.5,
+    "texto": "MINU TO de 12 min por jugador del acta Infantil. Juegos in IN",
+    "palabras": 13
+   },
+   {
+    "desde": 1.6,
+    "hasta": 1.6,
+    "texto": "MINU ÓN 12 min por jugador del acta Infantil. Juegos Euské",
+    "palabras": 11
+   },
+   {
+    "desde": 1.633,
+    "hasta": 1.633,
+    "texto": "MINU TO 12 min por jugador del acta Infantil. Juegos",
+    "palabras": 10
+   },
+   {
+    "desde": 1.867,
+    "hasta": 3.0,
+    "texto": "12 MINUTOS.",
+    "palabras": 2
+   },
+   {
+    "desde": 3.2,
+    "hasta": 3.3,
+    "texto": "SUS 12 MINUTOS. laré",
+    "palabras": 4
+   },
+   {
+    "desde": 3.467,
+    "hasta": 4.267,
+    "texto": "PARTE PARTE",
+    "palabras": 2
+   },
+   {
+    "desde": 4.533,
+    "hasta": 6.233,
+    "texto": "YAESTÁ DECIDIDO. No pesa nada. 24-11 PARTE",
+    "palabras": 7
+   },
+   {
+    "desde": 6.267,
+    "hasta": 6.267,
+    "texto": "Juegos Olimpicos de Londres 2012",
+    "palabras": 5
+   },
+   {
+    "desde": 6.4,
+    "hasta": 8.8,
+    "texto": "CUMPLES LA NORMA.-% Él aprende que sus minutos no cuentan España Juegos Olimpicos de Londres 2012",
+    "palabras": 16
+   },
+   {
+    "desde": 9.067,
+    "hasta": 9.067,
+    "texto": "CUMPLES LA Él aprende que sus minutos no cuentan España Juegos Olimpicos de Londres 2012",
+    "palabras": 15
+   },
+   {
+    "desde": 9.267,
+    "hasta": 9.333,
+    "texto": "CUMPLES LA NORMA.-% Él aprende que sus minutos no cuentan España Juegos Olimpicos de Londres 2012",
+    "palabras": 16
+   },
+   {
+    "desde": 9.6,
+    "hasta": 9.6,
+    "texto": "NORMA.-% Él aprende que sus minutos no cuentan España Juegos Olimpicos de Londres 2012",
+    "palabras": 14
+   },
+   {
+    "desde": 9.8,
+    "hasta": 9.8,
+    "texto": "Él aprende que sus minutos no cuentan España Juegos Olímpicos de Londres 2012",
+    "palabras": 13
+   },
+   {
+    "desde": 9.833,
+    "hasta": 9.867,
+    "texto": "PARTE PARTE",
+    "palabras": 2
+   },
+   {
+    "desde": 10.4,
+    "hasta": 10.667,
+    "texto": "PARTE PARTE",
+    "palabras": 2
+   },
+   {
+    "desde": 10.933,
+    "hasta": 13.467,
+    "texto": "Sus 12', antes del descanso no cuando ya ha decidido Con el marcador vivo que el partido aun pese El segundo lleva el reloj tú no tienes que ontario",
+    "palabras": 29
+   },
+   {
+    "desde": 13.6,
+    "hasta": 13.6,
+    "texto": "MÁNDASFIO Til we 26-17 10 14 20 23 ha puta",
+    "palabras": 10
+   },
+   {
+    "desde": 13.867,
+    "hasta": 14.967,
+    "texto": "MANDASELO TU SEGUNDO que LLEVE Cl al 12 AlexF 20 na un jugador de la pista Partido en directo: el lleva",
+    "palabras": 21
+   },
+   {
+    "desde": 15.2,
+    "hasta": 15.467,
+    "texto": "MÁNDASELO TU SEGUNDO 10 lle VE que LU} Competición Ribes 26-17 Rival Resumen 12 15-10 min Informe parte",
+    "palabras": 18
+   },
+   {
+    "desde": 15.733,
+    "hasta": 15.733,
+    "texto": "MÁNDASELO TU 17 if partido Informe parte: sin min",
+    "palabras": 9
+   },
+   {
+    "desde": 16.0,
+    "hasta": 16.0,
+    "texto": "MÁNDASELO TU SEGUNDO 17 if Ue aque Defensa ela Jugadores Tramos momentos de in min Informe parte:",
+    "palabras": 17
+   },
+   {
+    "desde": 16.267,
+    "hasta": 16.267,
+    "texto": "COMENTA aA mina Semana 9n15 min",
+    "palabras": 6
+   },
+   {
+    "desde": 16.467,
+    "hasta": 18.133,
+    "texto": "COMENTA CATEGORÍA DÍAS Semana",
+    "palabras": 4
+   },
+   {
+    "desde": 18.4,
+    "hasta": 18.4,
+    "texto": "COMENTA Prarificación RÍA DÍAS Semana eparo la seman",
+    "palabras": 8
+   },
+   {
+    "desde": 18.667,
+    "hasta": 20.6,
+    "texto": "COMENTA CATEGORÍA DÍAS Semana en la app de ProTeam.",
+    "palabras": 9
+   },
+   {
+    "desde": 20.633,
+    "hasta": 20.633,
+    "texto": "COMENTA GO CATE RÍA DÍAS Semana en la app de ProTeam.",
+    "palabras": 11
+   },
+   {
+    "desde": 20.8,
+    "hasta": 22.267,
+    "texto": "LISTA DE ESPERA 01 21 20 47 DÍAS HORAS MIN SEG entrenadoremiclub.es tE",
+    "palabras": 13
+   },
+   {
+    "desde": 22.4,
+    "hasta": 22.4,
+    "texto": "ye Do yA STAE EN HB",
+    "palabras": 6
+   },
+   {
+    "desde": 22.667,
+    "hasta": 22.667,
+    "texto": "ve he Ad HASTAEL 127 NOV une FINALA, HE",
+    "palabras": 9
+   },
+   {
+    "desde": 22.767,
+    "hasta": 22.767,
+    "texto": "dy ne bs HASTAE :27NO",
+    "palabras": 5
+   },
+   {
+    "desde": 22.933,
+    "hasta": 22.933,
+    "texto": "ho HASTAE ie OV ur 149 Jf WX: FINALA, it 1E",
+    "palabras": 11
+   },
+   {
+    "desde": 23.2,
+    "hasta": 23.2,
+    "texto": "he poa yo HASTAEL 27 NO HE",
+    "palabras": 7
+   },
+   {
+    "desde": 23.233,
+    "hasta": 23.233,
+    "texto": "he ve aX ps HASTAEL NOV",
+    "palabras": 6
+   },
+   {
+    "desde": 23.467,
+    "hasta": 24.033,
+    "texto": "meses gratis.",
+    "palabras": 2
+   },
+   {
+    "desde": 24.533,
+    "hasta": 24.8,
+    "texto": "meses gratis.",
+    "palabras": 2
+   },
+   {
+    "desde": 25.067,
+    "hasta": 25.067,
+    "texto": "PR EGUNDO privata it 50 IS",
+    "palabras": 6
+   },
+   {
+    "desde": 25.867,
+    "hasta": 25.867,
+    "texto": "UNTALE AT EGUNDO SR le?",
+    "palabras": 5
+   },
+   {
+    "desde": 26.6,
+    "hasta": 26.6,
+    "texto": "Br JNTALE TU EGUNDO andc",
+    "palabras": 5
+   },
+   {
+    "desde": 26.667,
+    "hasta": 26.933,
+    "texto": "JNTALE TU EGUNDO anda ro el ultimo el sábado?",
+    "palabras": 9
+   },
+   {
+    "desde": 27.2,
+    "hasta": 27.2,
+    "texto": "JNTALE TU SEGUNDO anda el último el sábado?",
+    "palabras": 8
+   },
+   {
+    "desde": 27.467,
+    "hasta": 27.467,
+    "texto": "PR ATU EGUNDO ¿Cuándo el",
+    "palabras": 5
+   },
+   {
+    "desde": 27.733,
+    "hasta": 27.733,
+    "texto": "NTALE TU EGUNDO ando el Limo el,",
+    "palabras": 7
+   },
+   {
+    "desde": 27.833,
+    "hasta": 27.833,
+    "texto": "GUNTALE TU EGUNDO ando ntro el elsábado?",
+    "palabras": 7
+   },
+   {
+    "desde": 28.0,
+    "hasta": 28.0,
+    "texto": "GUNTALE EGUNDO anda el imo el",
+    "palabras": 6
+   },
+   {
+    "desde": 28.267,
+    "hasta": 28.267,
+    "texto": "NTALE TU SEGUNDO anda el",
+    "palabras": 5
+   }
+  ]
+ },
+ "audio": {
+  "tiene_audio": true,
+  "wav": "intel/videos/u09/audio_16k.wav",
+  "volumen_integrado_lufs": "-14.83",
+  "pico_real_db": "0.04",
+  "rango_lra": "1.80",
+  "silencios": [
+   {
+    "desde": 28.02,
+    "hasta": 28.42
+   }
+  ],
+  "subidas_bruscas_s": [
+   0.2,
+   1.7,
+   3.5,
+   6.3,
+   7.4,
+   9.9,
+   12.3,
+   13.6,
+   15.0,
+   16.2,
+   18.2,
+   20.0,
+   20.8,
+   24.9,
+   26.4
+  ],
+  "energia_db_cada_0_1s": [
+   -18.5,
+   -23.4,
+   -8.2,
+   -14.5,
+   -15.8,
+   -11.4,
+   -15.9,
+   -10.7,
+   -14.6,
+   -11.9,
+   -16.4,
+   -26.9,
+   -27.4,
+   -29.4,
+   -31.6,
+   -42.4,
+   -41.1,
+   -20.2,
+   -10.7,
+   -12.1,
+   -16.0,
+   -13.0,
+   -12.3,
+   -21.8,
+   -10.5,
+   -12.9,
+   -10.8,
+   -15.7,
+   -20.7,
+   -22.0,
+   -23.9,
+   -24.6,
+   -25.0,
+   -23.0,
+   -18.4,
+   -10.0,
+   -9.7,
+   -12.9,
+   -15.8,
+   -17.4,
+   -14.2,
+   -19.1,
+   -10.6,
+   -14.9,
+   -11.9,
+   -13.5,
+   -15.6,
+   -16.3,
+   -12.7,
+   -9.5,
+   -12.6,
+   -11.1,
+   -11.2,
+   -18.6,
+   -14.7,
+   -20.3,
+   -20.5,
+   -23.3,
+   -19.7,
+   -18.9,
+   -24.5,
+   -24.6,
+   -24.9,
+   -9.1,
+   -14.8,
+   -12.4,
+   -11.5,
+   -11.3,
+   -12.4,
+   -12.5,
+   -21.2,
+   -23.5,
+   -24.8,
+   -24.4,
+   -10.4,
+   -14.4,
+   -24.5,
+   -12.9,
+   -13.2,
+   -10.7,
+   -14.4,
+   -14.1,
+   -15.6,
+   -14.9,
+   -12.8,
+   -11.5,
+   -15.0,
+   -14.8,
+   -11.2,
+   -9.6,
+   -14.3,
+   -19.9,
+   -17.0,
+   -22.1,
+   -24.4,
+   -24.8,
+   -25.3,
+   -25.6,
+   -25.5,
+   -11.9,
+   -13.8,
+   -15.7,
+   -11.0,
+   -13.5,
+   -14.0,
+   -24.1,
+   -18.2,
+   -12.4,
+   -19.8,
+   -11.5,
+   -16.7,
+   -10.9,
+   -13.4,
+   -11.4,
+   -12.5,
+   -16.4,
+   -17.8,
+   -18.1,
+   -22.6,
+   -23.5,
+   -24.1,
+   -25.8,
+   -21.6,
+   -10.9,
+   -13.3,
+   -13.0,
+   -14.7,
+   -20.7,
+   -14.8,
+   -9.9,
+   -13.6,
+   -14.9,
+   -20.7,
+   -22.9,
+   -25.0,
+   -25.2,
+   -10.8,
+   -12.6,
+   -12.0,
+   -12.7,
+   -10.7,
+   -13.0,
+   -14.7,
+   -16.8,
+   -21.1,
+   -23.4,
+   -17.3,
+   -22.6,
+   -24.8,
+   -15.7,
+   -12.0,
+   -9.4,
+   -15.6,
+   -11.6,
+   -12.7,
+   -14.3,
+   -17.6,
+   -20.8,
+   -22.7,
+   -18.9,
+   -25.6,
+   -25.8,
+   -10.7,
+   -12.3,
+   -16.0,
+   -12.7,
+   -13.9,
+   -12.3,
+   -14.7,
+   -18.8,
+   -14.4,
+   -13.3,
+   -11.6,
+   -17.0,
+   -11.3,
+   -19.2,
+   -13.0,
+   -23.2,
+   -25.2,
+   -18.5,
+   -20.7,
+   -25.8,
+   -11.8,
+   -17.9,
+   -13.0,
+   -12.8,
+   -12.6,
+   -11.1,
+   -14.1,
+   -17.1,
+   -12.4,
+   -12.5,
+   -11.3,
+   -11.0,
+   -16.2,
+   -13.8,
+   -12.5,
+   -21.3,
+   -11.3,
+   -23.6,
+   -11.1,
+   -15.2,
+   -13.5,
+   -15.7,
+   -23.4,
+   -24.6,
+   -25.1,
+   -20.8,
+   -11.7,
+   -14.4,
+   -11.9,
+   -13.7,
+   -13.7,
+   -15.1,
+   -10.7,
+   -11.8,
+   -16.5,
+   -10.8,
+   -14.3,
+   -12.3,
+   -16.1,
+   -18.8,
+   -17.0,
+   -11.3,
+   -12.4,
+   -12.1,
+   -10.9,
+   -11.5,
+   -13.7,
+   -22.3,
+   -22.2,
+   -17.9,
+   -17.2,
+   -12.3,
+   -10.8,
+   -15.5,
+   -11.0,
+   -9.7,
+   -15.8,
+   -12.7,
+   -19.0,
+   -13.4,
+   -19.0,
+   -22.8,
+   -23.5,
+   -23.4,
+   -17.1,
+   -23.3,
+   -14.9,
+   -10.7,
+   -14.2,
+   -16.1,
+   -11.3,
+   -10.1,
+   -17.0,
+   -14.4,
+   -17.3,
+   -20.5,
+   -17.4,
+   -20.9,
+   -24.6,
+   -25.5,
+   -26.0,
+   -15.0,
+   -12.6,
+   -14.4,
+   -14.6,
+   -13.4,
+   -8.5,
+   -11.0,
+   -11.2,
+   -14.5,
+   -11.6,
+   -13.6,
+   -22.0,
+   -21.1,
+   -27.8,
+   -28.9,
+   -38.6,
+   -33.5,
+   -41.2,
+   -45.7,
+   -50.3,
+   -53.9
+  ],
+  "transcripcion": "transcripcion.json (tools/reel09/voz.tsv)",
+  "nota": "Esto son medidas. Entonación, claridad de la locución, timbre o si hay música NO se pueden afirmar sin escuchar o transcribir."
+ },
+ "vistas": [
+  "detalle_001.jpg",
+  "detalle_002.jpg",
+  "detalle_003.jpg",
+  "detalle_004.jpg",
+  "detalle_005.jpg",
+  "detalle_006.jpg",
+  "general_001.jpg",
+  "general_002.jpg",
+  "general_003.jpg"
+ ],
+ "orden": "python3 tools/video_intel.py analyze reels/u09-los-ultimos-doce.mp4 --id u09 --tema minutos obligatorios en infantiles: cuándo, no cuántos (balonmano) --modo detalle"
+}

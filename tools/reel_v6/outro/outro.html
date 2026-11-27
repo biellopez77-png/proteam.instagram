@@ -1,0 +1,32 @@
+<!doctype html><html><head><meta charset="utf-8">
+<!-- Cierre común de los explicativos (Biel, 24/11): estamos terminando la app, síguenos. -->
+<style>
+@font-face{font-family:J;font-weight:800;src:url(/tools/reel_v5/node_modules/@fontsource/plus-jakarta-sans/files/plus-jakarta-sans-latin-800-normal.woff2)}
+@font-face{font-family:J;font-weight:500;src:url(/tools/reel_v5/node_modules/@fontsource/plus-jakarta-sans/files/plus-jakarta-sans-latin-500-normal.woff2)}
+@font-face{font-family:S;font-style:italic;src:url(/tools/fonts/instrument-serif-latin-400-italic.woff2)}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#02050F;color:#F4F7FB}
+#st{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 45%,#0C1323 0%,#02050F 70%)}
+.c{position:absolute;left:0;right:0;text-align:center;opacity:0}
+#w{top:720px;font:800 150px J;letter-spacing:-.05em}#w span{color:#636DFF}
+#l1{top:930px;font-family:S;font-style:italic;font-size:82px;color:#F4F7FB}
+#l2{top:1040px;font:800 54px J;letter-spacing:-.02em;color:#B9E0FF}
+#ln{position:absolute;top:1150px;left:540px;height:4px;width:0;background:#636DFF}
+#l3{top:1190px;font:500 26px J;letter-spacing:.22em;text-transform:uppercase;color:#8f9bb8}
+#g{position:absolute;inset:0;width:1080px;height:1920px;mix-blend-mode:screen;opacity:.15;image-rendering:pixelated}
+</style></head><body><div id="st"></div>
+<div class="c" id="w">Pro<span>Team</span></div>
+<div class="c" id="l1">Estamos terminando la app.</div>
+<div class="c" id="l2">Síguenos para no perderte nada.</div>
+<div id="ln"></div>
+<div class="c" id="l3">Muy pronto, novedades</div>
+<canvas id="g" width="360" height="640"></canvas>
+<script>
+const $=i=>document.getElementById(i),cl=(x)=>Math.min(1,Math.max(0,x)),P=(t,a,b)=>cl((t-a)/(b-a)),eo=x=>1-Math.pow(1-x,3);
+const g=$('g').getContext('2d'),im=g.createImageData(360,640);let sd=1;const R=()=>(sd=(sd*16807)%2147483647)/2147483647;
+function show(id,t,a){const k=eo(P(t,a,a+.45));$(id).style.opacity=k;$(id).style.transform=`translateY(${(1-k)*24}px)`;$(id).style.filter=`blur(${(1-k)*6}px)`}
+window.frame=t=>{sd=1+Math.floor(t*25)*7919;const d=im.data;for(let i=0;i<d.length;i+=4){const v=R()*255;d[i]=v*.8;d[i+1]=v*.85;d[i+2]=v;d[i+3]=255}g.putImageData(im,0,0);
+ $('st').style.opacity=P(t,0,.3);show('w',t,.1);show('l1',t,.35);show('l2',t,2.5);show('l3',t,3.6);
+ const q=eo(P(t,3.3,3.9));$('ln').style.width=240*q+'px';$('ln').style.left=(540-120*q)+'px'};
+document.fonts.ready.then(()=>{frame(0);window.ready=true});
+</script></body></html>

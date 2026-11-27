@@ -1,0 +1,18 @@
+{
+ "titulo": "Díselo antes",
+ "fase": "Nutrición · sáb 5/12",
+ "tono": 56,
+ "paginas": [
+  {"tipo": "palabra", "d": 2.5, "palabra": "FUERA", "foto": "STAFF_BANQUILLO_ASISTENTES_FOTO_001",
+   "fig": "Expediente — La lista del viernes", "hora": "Uno no va convocado", "size": 250, "left": 50, "cruce": 36, "capSize": 36},
+  {"tipo": "reticula", "d": 3.8, "labSize": 40, "figs": [
+    {"foto": "ENTRENADOR_INSTRUCCIONES_FOTO_001", "lab": "Antes de colgar la lista\ndíselo a él"},
+    {"foto": "ENTRENADOR_BANDA_INDICA_FOTO_001", "lab": "En persona\nno por el grupo"},
+    {"foto": "ENTRENADOR_ABRAZO_FOTO_001", "lab": "Con un motivo\ny una tarea"}]},
+  {"tipo": "dentro", "d": 2.8, "palabra": "MOTIVO", "size": 225, "foto": "STAFF_PIZARRA_TIEMPO_MUERTO_FOTO_001",
+   "serif": "y una tarea.", "cap": "«No vas» se olvida.\n«Esta semana, trabaja esto»\nse entrena.", "capSize": 40},
+  {"tipo": "frase", "d": 3.6, "foto": "ENTRENADOR_BANDA_PENSATIVO_FOTO_001", "pre": "Si se entera por el grupo",
+   "serif": "lo que oye\nno es tu motivo.", "uv": true, "size": 124, "uvTop": 1475, "pos": "50% 40%", "preSize": 44},
+  {"tipo": "cierre", "d": 2.0, "serif": "para el que hace la lista."}
+ ]
+}

@@ -1,0 +1,154 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face{font-family:M;font-weight:500;src:url(../fonts/manrope-latin-500-normal.woff2)}
+@font-face{font-family:M;font-weight:700;src:url(../fonts/manrope-latin-700-normal.woff2)}
+@font-face{font-family:M;font-weight:800;src:url(../fonts/manrope-latin-800-normal.woff2)}
+@font-face{font-family:Mono;font-weight:500;src:url(../fonts/ibm-plex-mono-latin-500-normal.woff2)}
+@font-face{font-family:Serif;font-style:italic;src:url(../fonts/instrument-serif-latin-400-italic.woff2)}
+:root{--ink:#050608;--blue:#3d8bff;--cyan:#5ee1ff;--red:#ff2d4a;--white:#f4f6fa}
+*{box-sizing:border-box;margin:0}
+body{background:#000;font-family:M,sans-serif;color:var(--white)}
+.ab{position:relative;overflow:hidden;background:var(--ink)}
+.grain:after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.13;mix-blend-mode:overlay;
+ background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.neon{color:#fff;text-shadow:0 0 6px #fff,0 0 18px var(--blue),0 0 42px var(--blue),0 0 90px var(--blue)}
+.neonR{color:#fff;text-shadow:0 0 6px #fff,0 0 18px var(--red),0 0 42px var(--red),0 0 90px var(--red)}
+.tag{font-family:Mono;font-size:26px;letter-spacing:.32em;text-transform:uppercase;color:#8e96a6}
+.mark{display:flex;align-items:center;gap:14px;font-weight:800;font-size:30px;letter-spacing:-.01em}
+.mark img{width:46px;height:46px}
+.hidden{display:none}
+</style></head>
+<body>
+
+<!-- 1 · Portada de Reel · lanzamiento -->
+<div id="p1" class="ab grain hidden" style="width:1080px;height:1920px">
+  <svg width="1080" height="1920" style="position:absolute;inset:0">
+    <defs>
+      <radialGradient id="g1" cx="50%" cy="46%" r="60%"><stop offset="0" stop-color="#0d1a33"/><stop offset=".6" stop-color="#05070c"/><stop offset="1" stop-color="#020203"/></radialGradient>
+      <filter id="glow"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    </defs>
+    <rect width="1080" height="1920" fill="url(#g1)"/>
+    <!-- pista táctica en neón -->
+    <g transform="translate(140 520)" stroke="#3d8bff" fill="none" stroke-width="4" filter="url(#glow)" opacity=".55">
+      <rect x="0" y="0" width="800" height="1100" rx="10"/>
+      <line x1="0" y1="550" x2="800" y2="550"/>
+      <circle cx="400" cy="550" r="110"/>
+      <path d="M220 0 A180 180 0 0 0 580 0"/><path d="M220 1100 A180 180 0 0 1 580 1100"/>
+    </g>
+    <g filter="url(#glow)" stroke="#5ee1ff" stroke-width="6" fill="none" stroke-linecap="round" opacity=".9">
+      <path d="M300 1440 C 330 1250, 520 1260, 560 1080" stroke-dasharray="18 16"/>
+      <path d="M760 1380 C 720 1220, 640 1150, 600 1010"/>
+      <path d="M592 1030 l 6 -36 l 22 30" />
+    </g>
+    <g font-family="M" font-weight="800" font-size="46" fill="#5ee1ff" filter="url(#glow)">
+      <text x="276" y="1470">✕</text><text x="742" y="1410">✕</text><text x="470" y="1300">○</text>
+    </g>
+  </svg>
+  <div style="position:absolute;top:120px;left:80px" class="tag">ProTeam · Blackout Friday</div>
+  <div class="neon" style="position:absolute;top:560px;width:100%;text-align:center;font-weight:800;font-size:640px;line-height:1;letter-spacing:-.06em">15</div>
+  <div style="position:absolute;top:1230px;width:100%;text-align:center;font-family:Mono;font-size:34px;letter-spacing:.4em;color:#9fb7e6">DÍAS PARA EL APAGÓN</div>
+  <div style="position:absolute;bottom:260px;width:100%;text-align:center;font-weight:800;font-size:120px;letter-spacing:-.04em">Se va la luz.</div>
+  <div style="position:absolute;bottom:190px;width:100%;text-align:center;font-family:Serif;font-style:italic;font-size:54px;color:#9fb7e6">el caos, no.</div>
+  <div class="mark" style="position:absolute;bottom:80px;left:50%;transform:translateX(-50%)"><img src="../proteam-mark.webp">ProTeam</div>
+</div>
+
+<!-- 2 · Post bodegón · silbato -->
+<div id="p2" class="ab grain hidden" style="width:1080px;height:1350px">
+  <svg width="1080" height="1350" style="position:absolute;inset:0">
+    <defs>
+      <radialGradient id="floor" cx="50%" cy="72%" r="42%"><stop offset="0" stop-color="#1b2a48"/><stop offset=".55" stop-color="#0a0f1a"/><stop offset="1" stop-color="#030406"/></radialGradient>
+      <linearGradient id="beam" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9cc4ff" stop-opacity=".0"/><stop offset=".25" stop-color="#7fb0ff" stop-opacity=".16"/><stop offset="1" stop-color="#3d8bff" stop-opacity=".02"/></linearGradient>
+      <linearGradient id="metal" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f6f9ff"/><stop offset=".18" stop-color="#b9c4d6"/><stop offset=".45" stop-color="#4b5566"/><stop offset=".62" stop-color="#1b2029"/><stop offset=".85" stop-color="#5d6a80"/><stop offset="1" stop-color="#202631"/></linearGradient>
+      <linearGradient id="metal2" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#2a313d"/><stop offset=".5" stop-color="#cfd8e6"/><stop offset="1" stop-color="#2a313d"/></linearGradient>
+      <radialGradient id="shadow" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#000" stop-opacity=".85"/><stop offset="1" stop-color="#000" stop-opacity="0"/></radialGradient>
+      <filter id="blur8"><feGaussianBlur stdDeviation="8"/></filter>
+      <filter id="blur30"><feGaussianBlur stdDeviation="30"/></filter>
+    </defs>
+    <rect width="1080" height="1350" fill="#030406"/>
+    <ellipse cx="540" cy="930" rx="520" ry="230" fill="url(#floor)"/>
+    <path d="M430 -20 L650 -20 L900 1000 L180 1000 Z" fill="url(#beam)" filter="url(#blur30)"/>
+    <!-- sombra -->
+    <ellipse cx="560" cy="955" rx="260" ry="34" fill="url(#shadow)"/>
+    <!-- cordón -->
+    <path d="M330 900 C 220 940, 120 870, 170 800 C 220 735, 330 760, 300 840" fill="none" stroke="#1a3e88" stroke-width="16" stroke-linecap="round"/>
+    <path d="M330 900 C 220 940, 120 870, 170 800 C 220 735, 330 760, 300 840" fill="none" stroke="#5c8fe8" stroke-width="4" stroke-linecap="round" opacity=".6"/>
+    <!-- silbato -->
+    <g transform="translate(330 760)">
+      <rect x="0" y="62" width="250" height="96" rx="14" fill="url(#metal)"/>
+      <circle cx="300" cy="120" r="108" fill="url(#metal)"/>
+      <ellipse cx="270" cy="62" rx="70" ry="16" fill="#e9f0ff" opacity=".55" filter="url(#blur8)"/>
+      <rect x="120" y="40" width="70" height="32" rx="6" fill="#0b0e13"/>
+      <rect x="-26" y="78" width="40" height="64" rx="10" fill="url(#metal2)"/>
+      <circle cx="-30" cy="110" r="18" fill="none" stroke="url(#metal2)" stroke-width="10"/>
+      <path d="M210 70 C 260 30, 360 30, 395 80" stroke="#ffffff" stroke-width="5" fill="none" opacity=".75" filter="url(#blur8)"/>
+    </g>
+    <!-- borde de luz -->
+    <rect x="0" y="0" width="1080" height="1350" fill="none" stroke="#3d8bff" stroke-opacity=".0"/>
+  </svg>
+  <div style="position:absolute;top:84px;left:80px" class="tag">Blackout Friday · 27.11</div>
+  <div style="position:absolute;top:150px;left:80px;right:80px;font-weight:800;font-size:104px;line-height:.98;letter-spacing:-.045em">Apaga el caos.<br><span class="neon">Enciende tu equipo.</span></div>
+  <div style="position:absolute;bottom:80px;left:80px;right:80px;display:flex;justify-content:space-between;align-items:flex-end">
+    <div class="mark"><img src="../proteam-mark.webp">ProTeam</div>
+    <div style="font-family:Mono;font-size:26px;letter-spacing:.2em;color:#9fb7e6;text-align:right">6 MESES GRATIS<br>HASTA EL 27 · 23:59</div>
+  </div>
+</div>
+
+<!-- 3 · Reel · el Excel se apaga -->
+<div id="p3" class="ab grain hidden" style="width:1080px;height:1920px;background:#020203">
+  <div id="xl" style="position:absolute;left:60px;top:300px;width:960px;display:grid;grid-template-columns:repeat(6,1fr);gap:4px;transform:perspective(1400px) rotateX(18deg) rotateZ(-4deg)"></div>
+  <div style="position:absolute;top:120px;left:80px" class="tag">Reel · 7 s · sin voz</div>
+  <div style="position:absolute;bottom:330px;left:80px;right:80px;font-weight:800;font-size:112px;line-height:.98;letter-spacing:-.045em">43 Excels.<br><span style="color:#5a6272">0 respuestas.</span></div>
+  <div class="neon" style="position:absolute;bottom:200px;left:80px;font-weight:800;font-size:64px;letter-spacing:-.03em">Apágalos.</div>
+  <div class="mark" style="position:absolute;bottom:90px;left:80px"><img src="../proteam-mark.webp">ProTeam</div>
+</div>
+
+<!-- 4 · Post · último día -->
+<div id="p4" class="ab grain hidden" style="width:1080px;height:1350px;background:radial-gradient(70% 55% at 50% 45%,#3a0611 0%,#120206 55%,#050102 100%)">
+  <div style="position:absolute;top:84px;left:80px;color:#ff8a9b" class="tag">Último día · Blackout Friday</div>
+  <div class="neonR" style="position:absolute;top:210px;width:100%;text-align:center;font-family:Mono;font-weight:500;font-size:190px;letter-spacing:-.02em">23:59:59</div>
+  <div style="position:absolute;top:470px;width:100%;text-align:center;font-family:Mono;font-size:28px;letter-spacing:.5em;color:#ff8a9b">HORAS · MIN · SEG</div>
+  <div style="position:absolute;top:640px;left:80px;right:80px;text-align:center;font-weight:800;font-size:118px;line-height:.96;letter-spacing:-.045em">6 meses gratis.<br><span style="color:#ff5c72">Hoy se apagan.</span></div>
+  <div style="position:absolute;top:1000px;width:100%;text-align:center;font-family:Serif;font-style:italic;font-size:52px;color:#ffc2cb">después, vuelve la luz normal.</div>
+  <div class="mark" style="position:absolute;bottom:80px;left:50%;transform:translateX(-50%)"><img src="../proteam-mark.webp">ProTeam</div>
+</div>
+
+<!-- 5 · Landing -->
+<div id="p5" class="ab grain hidden" style="width:1440px;height:900px;background:radial-gradient(60% 70% at 70% 40%,#0c1a36 0%,#05070c 60%,#020203 100%)">
+  <div style="position:absolute;top:0;left:0;right:0;height:84px;display:flex;align-items:center;justify-content:space-between;padding:0 64px;border-bottom:1px solid #141a26">
+    <div class="mark" style="font-size:24px"><img src="../proteam-mark.webp" style="width:34px;height:34px">ProTeam</div>
+    <div style="display:flex;gap:36px;font-weight:500;font-size:17px;color:#9aa3b5"><span>Funciones</span><span>Para clubes</span><span>Precios</span><span style="color:#fff;border:1px solid #3d8bff;padding:9px 18px;border-radius:999px;box-shadow:0 0 18px #3d8bff66">Entrar</span></div>
+  </div>
+  <div style="position:absolute;top:150px;left:64px;font-size:16px" class="tag"><span style="color:#ff2d4a">●</span>&nbsp; Blackout Friday · hasta el 27 nov, 23:59</div>
+  <div style="position:absolute;top:196px;left:64px;width:820px;font-weight:800;font-size:76px;line-height:.98;letter-spacing:-.045em">Apaga el caos.<br><span class="neon">Enciende tu equipo.</span></div>
+  <div style="position:absolute;top:380px;left:64px;width:560px;font-size:21px;line-height:1.5;color:#aab3c4">Planifica, convoca y sigue a tu plantilla desde un solo sitio. Crea tu primer equipo antes del Black Friday y úsalo <b style="color:#fff">6 meses gratis</b>.</div>
+  <div style="position:absolute;top:510px;left:64px;display:flex;gap:14px">
+    <div id="cd" style="display:flex;gap:14px"></div>
+  </div>
+  <div style="position:absolute;top:680px;left:64px;display:flex;gap:18px;align-items:center">
+    <span style="background:#3d8bff;color:#fff;font-weight:800;font-size:20px;padding:18px 30px;border-radius:999px;box-shadow:0 0 30px #3d8bffaa">Empieza gratis →</span>
+    <span style="color:#7d8698;font-size:16px">Sin tarjeta. Después, vuelve a 3 meses.</span>
+  </div>
+  <div style="position:absolute;right:120px;top:140px;width:330px;height:680px;border-radius:46px;background:#0a0c10;border:2px solid #232a36;box-shadow:0 0 0 8px #0d1016,0 0 80px #3d8bff55;overflow:hidden;transform:rotate(4deg)">
+    <img src="../app/mo-week.jpg" style="width:100%;height:100%;object-fit:cover;object-position:top;filter:brightness(.92)">
+  </div>
+</div>
+
+<script>
+const p = new URLSearchParams(location.search).get('p') || '1';
+document.getElementById('p' + p).classList.remove('hidden');
+// Excel apagándose
+const xl = document.getElementById('xl');
+if (xl) { const words = ['Jugador','Lun','Mar','Mié','Jue','Vie','Pau','✓','✓','—','✓','?','Nico','✓','—','✓','?','✓','Marc','?','✓','✓','—','✓','Leo','✓','✓','?','✓','—','Iker','—','✓','✓','?','✓','Hugo','✓','?','✓','✓','✓','Dani','?','✓','—','✓','?','Álex','✓','—','✓','?','✓','Raúl','✓','✓','—','✓','?','Joan','?','✓','✓','—','✓'];
+  words.forEach((w, i) => { const c = document.createElement('div'); const r = Math.floor(i / 6), k = i % 6;
+    const off = (r * 7 + k * 13) % 10 < 6 && r > 0; c.textContent = w;
+    c.style.cssText = `height:84px;display:flex;align-items:center;justify-content:${k?'center':'flex-start'};padding:0 14px;font-family:Mono;font-size:26px;` +
+      (r === 0 ? 'background:#1b6e3c;color:#d9ffe6;' : off ? 'background:#07080a;color:#15181e;border:1px solid #0d0f13;' : 'background:#e9f2ea;color:#1c2a1f;box-shadow:0 0 22px #ffffff22;');
+    xl.appendChild(c); }); }
+// cuenta atrás de la landing
+const cd = document.getElementById('cd');
+if (cd) [['15','días'],['07','horas'],['42','min'],['18','seg']].forEach(([n, l]) => { const b = document.createElement('div');
+  b.style.cssText = 'width:112px;height:120px;border:1px solid #233150;border-radius:16px;background:#070b14;display:flex;flex-direction:column;align-items:center;justify-content:center;box-shadow:inset 0 0 30px #3d8bff22';
+  b.innerHTML = `<div class="neon" style="font-family:Mono;font-size:56px;line-height:1">${n}</div><div style="font-family:Mono;font-size:13px;letter-spacing:.3em;color:#7d8698;margin-top:8px;text-transform:uppercase">${l}</div>`; cd.appendChild(b); });
+</script>
+</body></html>

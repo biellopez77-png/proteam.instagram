@@ -1,0 +1,18 @@
+{
+ "titulo": "La víspera",
+ "fase": "Nutrición · vie 4/12",
+ "tono": 52,
+ "paginas": [
+  {"tipo": "palabra", "d": 2.5, "palabra": "VÍSPERA", "foto": "OBJETO_GENERAL_FOTO_002",
+   "fig": "Fig. 1 — El entreno del viernes", "hora": "Partido: sábado", "size": 196, "left": 36, "cruce": 30, "capSize": 36},
+  {"tipo": "reticula", "d": 3.8, "labSize": 40, "figs": [
+    {"foto": "OBJETO_CONOS_EJERCICIO_FOTO_001", "lab": "Tres días antes\nla sesión que más pesa"},
+    {"foto": "STAFF_CHARLA_ENTRENAMIENTO_FOTO_001", "lab": "Dos días antes\nbaja el volumen"},
+    {"foto": "OBJETO_GENERAL_FOTO_001", "lab": "La víspera\ncorto y rápido"}]},
+  {"tipo": "dentro", "d": 2.8, "palabra": "CORTO", "size": 250, "foto": "JUGADOR_CARRERA_FOTO_001",
+   "serif": "y con chispa.", "cap": "Poco volumen, acciones vivas.\nBalón parado.\nNada que no sepan ya.", "capSize": 40},
+  {"tipo": "frase", "d": 3.6, "foto": "EQUIPO_PINA_CAMPO_FOTO_001", "pre": "No es para mejorar",
+   "serif": "se entrena\npara llegar.", "uv": true, "size": 130, "uvTop": 1475, "pos": "50% 50%", "preSize": 44},
+  {"tipo": "cierre", "d": 2.0, "serif": "para el que prepara el sábado."}
+ ]
+}

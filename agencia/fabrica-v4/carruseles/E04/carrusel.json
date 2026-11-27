@@ -1,0 +1,91 @@
+{
+ "numero": "Nº 00",
+ "seccion": "En directo desde el campo 3",
+ "formato": "carrusel",
+ "laminas": [
+  {
+   "tipo": "palabra",
+   "palabra": "EN DIRECTO",
+   "foto": "INSTALACION_CAMPO_ENTRENAMIENTO_FOTO_001",
+   "fig": "Fig. 1 — Campo 3 · martes · 19:42",
+   "hora": "Sin cámaras. Sin público.",
+   "serif": "Y aquí se decide el sábado.",
+   "size": 200,
+   "left": 40
+  },
+  {
+   "tipo": "figuras",
+   "letras": "NADIE LO NARRA",
+   "figs": [
+    {
+     "foto": "STAFF_CHARLA_ENTRENAMIENTO_FOTO_001",
+     "lab": "Min. 12 — Corrige\nla altura de la línea."
+    },
+    {
+     "foto": "OBJETO_CONOS_EJERCICIO_FOTO_001",
+     "lab": "Min. 27 — Se repite\nhasta que sale."
+    },
+    {
+     "foto": "OBJETO_GENERAL_FOTO_001",
+     "lab": "Min. 40 — Último\ncambio de ritmo."
+    }
+   ],
+   "size": 122,
+   "left": 36
+  },
+  {
+   "tipo": "dentro",
+   "palabra": "27'",
+   "foto": "OBJETO_CONOS_EJERCICIO_FOTO_001",
+   "serif": "otra vez. Y otra.",
+   "cap": "Ninguna repetición\nsale en la tele.",
+   "size": 520,
+   "top": 380
+  },
+  {
+   "tipo": "frase",
+   "foto": "EQUIPO_PINA_CENITAL_FOTO_001",
+   "pos": "50% 50%",
+   "pre": "Lo que pasa aquí",
+   "serif": "decide lo que\npasa el sábado.",
+   "uv": true,
+   "size": 118,
+   "uvW": 760
+  },
+  {
+   "tipo": "frase",
+   "foto": "OBJETO_BALONES_CARRO_FOTO_001",
+   "pos": "50% 50%",
+   "pre": "El sábado lo ve todo el mundo.",
+   "serif": "El martes,\nsolo tú.",
+   "size": 136
+  },
+  {
+   "tipo": "portada",
+   "l1": "EL MARTES",
+   "serif": "también es",
+   "l2": "UNA FINAL.",
+   "fotos": [
+    "INSTALACION_CAMPO_ENTRENAMIENTO_FOTO_001",
+    "OBJETO_CONOS_EJERCICIO_FOTO_001",
+    "OBJETO_GENERAL_FOTO_001"
+   ],
+   "cap": "Campo 3 · entreno",
+   "size": 140
+  },
+  {
+   "tipo": "final",
+   "cap": "Para llevarte",
+   "serif": "Retransmite",
+   "big": "TU MARTES.",
+   "bigLines": 1,
+   "size": 170,
+   "lista": [
+    "Apunta qué corregiste y en qué minuto.",
+    "Repite lo que no salió, no lo que salió.",
+    "El sábado, mira si se nota."
+   ],
+   "firma": "para el que lo prepara."
+  }
+ ]
+}

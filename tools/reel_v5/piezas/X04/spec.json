@@ -1,0 +1,45 @@
+{
+ "titulo": "La carga, con una pregunta",
+ "fase": "Explicativo",
+ "tono": 58,
+ "paginas": [
+  {
+   "tipo": "cifra",
+   "d": 2.6,
+   "num": "1–10",
+   "size": 330,
+   "pre": "Una pregunta al acabar",
+   "serif": "¿cuánto te ha costado?",
+   "cap": "El esfuerzo percibido\nde cada jugador (RPE)."
+  },
+  {
+   "tipo": "captura",
+   "d": 3.0,
+   "foto": "PRODUCTO_RPE_CAPTURA_002",
+   "fig": "Fig. 1 — RPE de partido",
+   "serif": "Esfuerzo × minutos = carga."
+  },
+  {
+   "tipo": "captura",
+   "d": 3.0,
+   "foto": "PRODUCTO_TESTS_CAPTURA_001",
+   "fig": "Fig. 2 — Tests físicos",
+   "serif": "Y los tests, en el mismo sitio."
+  },
+  {
+   "tipo": "frase",
+   "d": 3.0,
+   "foto": "OBJETO_BALONES_CARRO_FOTO_001",
+   "pre": "Así sabes",
+   "serif": "quién llega fresco\nal sábado.",
+   "uv": true,
+   "size": 124,
+   "uvTop": 1475
+  },
+  {
+   "tipo": "cierre",
+   "d": 1.9,
+   "serif": "para el que lo prepara."
+  }
+ ]
+}

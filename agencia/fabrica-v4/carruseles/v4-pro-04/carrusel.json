@@ -1,0 +1,28 @@
+{
+ "numero": "Nº 00",
+ "seccion": "Borrado",
+ "formato": "carrusel",
+ "laminas": [
+  {"tipo": "palabra", "palabra": "MARTES", "foto": "OBJETO_CONOS_EJERCICIO_FOTO_001",
+   "fig": "Fig. 1 — El ejercicio de los conos", "hora": "19:40 · Sale a la primera",
+   "serif": "Y dentro de un mes, ¿dónde está?", "size": 230, "left": 36},
+  {"tipo": "figuras", "letras": "UNA NOCHE",
+   "figs": [
+    {"foto": "STAFF_CHARLA_ENTRENAMIENTO_FOTO_001", "lab": "Fig. 2 — 19:40.\nSe explica una vez."},
+    {"foto": "EQUIPO_ENTRENAMIENTO_PETOS_FOTO_001", "lab": "Fig. 3 — 19:55.\nLo entienden todos."},
+    {"foto": "OBJETO_BALONES_CARRO_FOTO_001", "lab": "Fig. 4 — 21:00.\nSe recoge todo."}
+   ], "size": 150, "left": 36},
+  {"tipo": "dentro", "palabra": "BORRADO", "foto": "STAFF_PIZARRA_TIEMPO_MUERTO_FOTO_001",
+   "serif": "con el borrador.", "cap": "Las distancias. Los tiempos.\nQué cambiaste a mitad.",
+   "size": 190, "top": 440, "serifSize": 100},
+  {"tipo": "frase", "foto": "OBJETO_GUANTES_CONO_FOTO_001", "pos": "50% 50%",
+   "pre": "Tres semanas después", "serif": "lo vuelves\na inventar.", "uv": true, "size": 130, "uvW": 620},
+  {"tipo": "portada", "l1": "SALIÓ BIEN.", "serif": "y aun así", "l2": "NO QUEDA.",
+   "fotos": ["INSTALACION_CAMPO_ENTRENAMIENTO_FOTO_001", "OBJETO_GENERAL_FOTO_001", "OBJETO_BALONES_CARRO_FOTO_001"],
+   "cap": "Lo que funciona también se borra.", "size": 128},
+  {"tipo": "final", "cap": "Para llevarte", "serif": "Antes de borrar la pizarra,",
+   "big": "TRES DATOS.", "bigLines": 1, "size": 120,
+   "lista": ["Las distancias.", "Los tiempos.", "Qué cambiaste a mitad."],
+   "firma": "para el que no quiere empezar de cero."}
+ ]
+}

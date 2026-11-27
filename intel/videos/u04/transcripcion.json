@@ -1,0 +1,438 @@
+{
+ "origen": "tools/reel04/voz.tsv",
+ "tipo": "locución generada con tiempos por palabra (exacta, no reconocida por oído)",
+ "palabras": 70,
+ "primera_palabra_s": 0.12,
+ "ultima_palabra_s": 23.702,
+ "ritmo_palabras_por_s": 2.97,
+ "frases": [
+  {
+   "desde": 0.12,
+   "hasta": 2.938,
+   "texto": "Tu mejor entreno de la temporada no lo podrías repetir.",
+   "palabras_por_s": 3.55
+  },
+  {
+   "desde": 3.265,
+   "hasta": 3.938,
+   "texto": "No lo apuntaste.",
+   "palabras_por_s": 4.46
+  },
+  {
+   "desde": 4.375,
+   "hasta": 6.12,
+   "texto": "Aquel día de octubre todo encajó.",
+   "palabras_por_s": 3.44
+  },
+  {
+   "desde": 6.447,
+   "hasta": 8.865,
+   "texto": "El ejercicio, los tiempos, las parejas.",
+   "palabras_por_s": 2.48
+  },
+  {
+   "desde": 9.32,
+   "hasta": 11.12,
+   "texto": "Hoy solo te queda una sensación.",
+   "palabras_por_s": 3.33
+  },
+  {
+   "desde": 11.538,
+   "hasta": 13.302,
+   "texto": "Y las sensaciones no se repiten.",
+   "palabras_por_s": 3.4
+  },
+  {
+   "desde": 13.847,
+   "hasta": 17.284,
+   "texto": "La app de ProTeam guarda tus sesiones y ejercicios en una biblioteca.",
+   "palabras_por_s": 3.49
+  },
+  {
+   "desde": 17.611,
+   "hasta": 18.811,
+   "texto": "La abres y lo repites.",
+   "palabras_por_s": 4.17
+  },
+  {
+   "desde": 18.942,
+   "hasta": 23.702,
+   "texto": "Únete a la lista de espera antes del 28 de noviembre y consigue tres meses gratis.",
+   "palabras_por_s": 3.36
+  }
+ ],
+ "pausas": [
+  {
+   "desde": 3.938,
+   "hasta": 4.375,
+   "duracion_s": 0.44
+  },
+  {
+   "desde": 8.865,
+   "hasta": 9.32,
+   "duracion_s": 0.46
+  },
+  {
+   "desde": 11.12,
+   "hasta": 11.538,
+   "duracion_s": 0.42
+  },
+  {
+   "desde": 13.302,
+   "hasta": 13.847,
+   "duracion_s": 0.54
+  }
+ ],
+ "por_palabra": [
+  {
+   "desde": 0.12,
+   "hasta": 0.229,
+   "palabra": "Tu"
+  },
+  {
+   "desde": 0.229,
+   "hasta": 0.447,
+   "palabra": "mejor"
+  },
+  {
+   "desde": 0.447,
+   "hasta": 0.902,
+   "palabra": "entreno"
+  },
+  {
+   "desde": 0.902,
+   "hasta": 0.975,
+   "palabra": "de"
+  },
+  {
+   "desde": 0.975,
+   "hasta": 1.065,
+   "palabra": "la"
+  },
+  {
+   "desde": 1.065,
+   "hasta": 1.465,
+   "palabra": "temporada"
+  },
+  {
+   "desde": 1.465,
+   "hasta": 1.902,
+   "palabra": "no"
+  },
+  {
+   "desde": 1.902,
+   "hasta": 2.011,
+   "palabra": "lo"
+  },
+  {
+   "desde": 2.011,
+   "hasta": 2.429,
+   "palabra": "podrías"
+  },
+  {
+   "desde": 2.429,
+   "hasta": 2.938,
+   "palabra": "repetir."
+  },
+  {
+   "desde": 3.265,
+   "hasta": 3.411,
+   "palabra": "No"
+  },
+  {
+   "desde": 3.411,
+   "hasta": 3.502,
+   "palabra": "lo"
+  },
+  {
+   "desde": 3.502,
+   "hasta": 3.938,
+   "palabra": "apuntaste."
+  },
+  {
+   "desde": 4.375,
+   "hasta": 4.665,
+   "palabra": "Aquel"
+  },
+  {
+   "desde": 4.665,
+   "hasta": 4.811,
+   "palabra": "día"
+  },
+  {
+   "desde": 4.811,
+   "hasta": 4.938,
+   "palabra": "de"
+  },
+  {
+   "desde": 4.938,
+   "hasta": 5.32,
+   "palabra": "octubre"
+  },
+  {
+   "desde": 5.32,
+   "hasta": 5.629,
+   "palabra": "todo"
+  },
+  {
+   "desde": 5.629,
+   "hasta": 6.12,
+   "palabra": "encajó."
+  },
+  {
+   "desde": 6.447,
+   "hasta": 6.556,
+   "palabra": "El"
+  },
+  {
+   "desde": 6.556,
+   "hasta": 7.156,
+   "palabra": "ejercicio,"
+  },
+  {
+   "desde": 7.393,
+   "hasta": 7.484,
+   "palabra": "los"
+  },
+  {
+   "desde": 7.484,
+   "hasta": 8.065,
+   "palabra": "tiempos,"
+  },
+  {
+   "desde": 8.32,
+   "hasta": 8.429,
+   "palabra": "las"
+  },
+  {
+   "desde": 8.429,
+   "hasta": 8.865,
+   "palabra": "parejas."
+  },
+  {
+   "desde": 9.32,
+   "hasta": 9.447,
+   "palabra": "Hoy"
+  },
+  {
+   "desde": 9.447,
+   "hasta": 9.92,
+   "palabra": "solo"
+  },
+  {
+   "desde": 9.92,
+   "hasta": 10.102,
+   "palabra": "te"
+  },
+  {
+   "desde": 10.102,
+   "hasta": 10.32,
+   "palabra": "queda"
+  },
+  {
+   "desde": 10.32,
+   "hasta": 10.575,
+   "palabra": "una"
+  },
+  {
+   "desde": 10.575,
+   "hasta": 11.12,
+   "palabra": "sensación."
+  },
+  {
+   "desde": 11.538,
+   "hasta": 11.647,
+   "palabra": "Y"
+  },
+  {
+   "desde": 11.647,
+   "hasta": 11.775,
+   "palabra": "las"
+  },
+  {
+   "desde": 11.775,
+   "hasta": 12.302,
+   "palabra": "sensaciones"
+  },
+  {
+   "desde": 12.302,
+   "hasta": 12.738,
+   "palabra": "no"
+  },
+  {
+   "desde": 12.738,
+   "hasta": 12.92,
+   "palabra": "se"
+  },
+  {
+   "desde": 12.92,
+   "hasta": 13.302,
+   "palabra": "repiten."
+  },
+  {
+   "desde": 13.847,
+   "hasta": 14.047,
+   "palabra": "La"
+  },
+  {
+   "desde": 14.047,
+   "hasta": 14.229,
+   "palabra": "app"
+  },
+  {
+   "desde": 14.229,
+   "hasta": 14.338,
+   "palabra": "de"
+  },
+  {
+   "desde": 14.338,
+   "hasta": 14.72,
+   "palabra": "ProTeam"
+  },
+  {
+   "desde": 14.72,
+   "hasta": 15.175,
+   "palabra": "guarda"
+  },
+  {
+   "desde": 15.175,
+   "hasta": 15.32,
+   "palabra": "tus"
+  },
+  {
+   "desde": 15.32,
+   "hasta": 15.702,
+   "palabra": "sesiones"
+  },
+  {
+   "desde": 15.702,
+   "hasta": 15.847,
+   "palabra": "y"
+  },
+  {
+   "desde": 15.847,
+   "hasta": 16.32,
+   "palabra": "ejercicios"
+  },
+  {
+   "desde": 16.32,
+   "hasta": 16.538,
+   "palabra": "en"
+  },
+  {
+   "desde": 16.538,
+   "hasta": 16.702,
+   "palabra": "una"
+  },
+  {
+   "desde": 16.702,
+   "hasta": 17.284,
+   "palabra": "biblioteca."
+  },
+  {
+   "desde": 17.611,
+   "hasta": 17.738,
+   "palabra": "La"
+  },
+  {
+   "desde": 17.738,
+   "hasta": 18.065,
+   "palabra": "abres"
+  },
+  {
+   "desde": 18.065,
+   "hasta": 18.32,
+   "palabra": "y"
+  },
+  {
+   "desde": 18.32,
+   "hasta": 18.429,
+   "palabra": "lo"
+  },
+  {
+   "desde": 18.429,
+   "hasta": 18.811,
+   "palabra": "repites."
+  },
+  {
+   "desde": 18.942,
+   "hasta": 19.262,
+   "palabra": "Únete"
+  },
+  {
+   "desde": 19.262,
+   "hasta": 19.362,
+   "palabra": "a"
+  },
+  {
+   "desde": 19.362,
+   "hasta": 19.442,
+   "palabra": "la"
+  },
+  {
+   "desde": 19.442,
+   "hasta": 19.662,
+   "palabra": "lista"
+  },
+  {
+   "desde": 19.662,
+   "hasta": 19.842,
+   "palabra": "de"
+  },
+  {
+   "desde": 19.842,
+   "hasta": 20.082,
+   "palabra": "espera"
+  },
+  {
+   "desde": 20.082,
+   "hasta": 20.402,
+   "palabra": "antes"
+  },
+  {
+   "desde": 20.402,
+   "hasta": 20.622,
+   "palabra": "del"
+  },
+  {
+   "desde": 20.622,
+   "hasta": 20.942,
+   "palabra": "28"
+  },
+  {
+   "desde": 20.942,
+   "hasta": 21.262,
+   "palabra": "de"
+  },
+  {
+   "desde": 21.262,
+   "hasta": 21.702,
+   "palabra": "noviembre"
+  },
+  {
+   "desde": 21.702,
+   "hasta": 21.922,
+   "palabra": "y"
+  },
+  {
+   "desde": 21.922,
+   "hasta": 22.362,
+   "palabra": "consigue"
+  },
+  {
+   "desde": 22.362,
+   "hasta": 22.722,
+   "palabra": "tres"
+  },
+  {
+   "desde": 22.722,
+   "hasta": 23.062,
+   "palabra": "meses"
+  },
+  {
+   "desde": 23.062,
+   "hasta": 23.702,
+   "palabra": "gratis."
+  }
+ ]
+}

@@ -1,0 +1,65 @@
+{
+ "titulo": "Borrado",
+ "fase": "Problema · jue 3/12",
+ "tono": 50,
+ "paginas": [
+  {
+   "tipo": "palabra",
+   "d": 2.5,
+   "palabra": "MARTES",
+   "foto": "OBJETO_CONOS_EJERCICIO_FOTO_001",
+   "fig": "Fig. 1 — El ejercicio de los conos",
+   "hora": "19:40 · Sale a la primera",
+   "size": 210,
+   "left": 36,
+   "cruce": 30,
+   "capSize": 36
+  },
+  {
+   "tipo": "reticula",
+   "d": 3.4,
+   "figs": [
+    {
+     "foto": "STAFF_CHARLA_ENTRENAMIENTO_FOTO_001",
+     "lab": "19:40\nSe explica una vez"
+    },
+    {
+     "foto": "EQUIPO_ENTRENAMIENTO_PETOS_FOTO_001",
+     "lab": "19:55\nLo entienden todos"
+    },
+    {
+     "foto": "OBJETO_BALONES_CARRO_FOTO_001",
+     "lab": "21:00\nSe recoge todo"
+    }
+   ],
+   "labSize": 40
+  },
+  {
+   "tipo": "dentro",
+   "d": 2.6,
+   "palabra": "BORRADO",
+   "size": 190,
+   "foto": "STAFF_PIZARRA_TIEMPO_MUERTO_FOTO_001",
+   "serif": "con el borrador.",
+   "cap": "Las distancias. Los tiempos.\nQué cambiaste a mitad.",
+   "capSize": 40
+  },
+  {
+   "tipo": "frase",
+   "d": 3.6,
+   "foto": "OBJETO_GUANTES_CONO_FOTO_001",
+   "pos": "50% 50%",
+   "pre": "Tres semanas después",
+   "serif": "lo vuelves\na inventar.",
+   "uv": true,
+   "size": 130,
+   "uvTop": 1475,
+   "preSize": 44
+  },
+  {
+   "tipo": "cierre",
+   "d": 2.2,
+   "serif": "para el que no quiere empezar de cero."
+  }
+ ]
+}

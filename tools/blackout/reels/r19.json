@@ -1,0 +1,91 @@
+{
+ "w": 1080,
+ "h": 1920,
+ "d": "0",
+ "dur": 14.22,
+ "on": true,
+ "vel": 1.0,
+ "voice": {
+  "sid": 16,
+  "lang": "en-us"
+ },
+ "cut": 3.72,
+ "trans": 1.9,
+ "pose": {
+  "ry0": -0.24,
+  "y": -0.01,
+  "far": 0.5
+ },
+ "dev": [
+  [
+   0,
+   "tvblack",
+   0.7
+  ]
+ ],
+ "layers": [
+  {
+   "t0": 0.5,
+   "t1": 3.92,
+   "type": "js",
+   "code": "BOX(30,H*.12,W-60,120,'',TX(0,0,72,'THE OLD SCHOOL VS\\nTHE NEW GENERATION.',{font:'IT'})) + BOX(30,H*.34,W*.46,H*.4,'background:#1f3cff;border-radius:30px/50px;box-shadow:0 0 40px #1f3cff', TX(30,40,48,TYPE('PAPER\\nVHS\\nEXCEL 97\\nMEMORY',u,10))) + BOX(W*.52,H*.34,W*.46,H*.4,'background:#f4f5f7;border-radius:30px;overflow:hidden', '<img src=\"../app/res-0.jpg\" style=\"width:100%;margin-top:-20%\">') + TX(W*.5-40,H*.5,90,'VS',{font:'IT',color:'#ffd34d'})",
+   "fi": 0.3
+  }
+ ],
+ "app": [
+  [
+   3.72,
+   "res-0",
+   0.1,
+   0.35
+  ],
+  [
+   7.02,
+   "fF",
+   0,
+   0.15
+  ]
+ ],
+ "words": [
+  [
+   5.12,
+   7.02,
+   "<div class=\"a\" style=\"left:60px;right:60px;top:130px;text-align:center;font-family:IT;font-weight:900;font-size:96px;letter-spacing:-.04em;color:#fff;line-height:1.02\">The game has<br>moved on.</div>"
+  ],
+  [
+   9.52,
+   14.22,
+   "<div class=\"a\" style=\"left:60px;right:60px;top:130px;text-align:center;font-family:IT;font-weight:900;font-size:96px;letter-spacing:-.04em;color:#fff;line-height:1.02\">Join the new<br>generation.</div><div class=\"a\" style=\"left:40px;right:40px;bottom:120px;text-align:center;font-family:VT;font-size:48px;letter-spacing:.05em;color:#3dffa8;line-height:1.15\">BLACK FRIDAY · 6 MONTHS FREE<br>FIRST TEAM · NO CARD · UNTIL 27 NOV 23:59</div>"
+  ]
+ ],
+ "audio": {
+  "cut": 3.72,
+  "old": [
+   "Clowns.mp3",
+   30
+  ],
+  "new": [
+   "Thugs.mp3",
+   138.5
+  ],
+  "old_vol": 0.55,
+  "new_vol": 0.75
+ },
+ "lineas": [
+  [
+   0.8,
+   "The old school versus the new generation.",
+   16
+  ],
+  [
+   5.22,
+   "The game has moved on.",
+   16
+  ],
+  [
+   9.62,
+   "Join the new generation.",
+   16
+  ]
+ ]
+}

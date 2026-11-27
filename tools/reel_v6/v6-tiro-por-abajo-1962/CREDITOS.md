@@ -1,0 +1,10 @@
+# v6-tiro-por-abajo-1962 · «Veintiocho de treinta y dos» · créditos
+
+- Voz: Mateo (ElevenLabs, gpMzl7dbkfC9dIxAqQZT), eleven_v4, 1 toma (603 créditos), texto del guion palabra por palabra (con indicaciones de tono [incrédulo] y [cercano, tranquilo], que no se oyen); 36,9 s sin acelerar. Tiempos por palabra: Scribe (tools/reel_v4/v6-tiro-por-abajo-1962/times.js).
+- Sonido: efectos sintetizados con numpy (tools/reel_v6/sfx_v6-tiro-por-abajo-1962.py), mezcla normalizada a −14,5 LUFS objetivo (−16 LUFS medido en publicar.mp4). Sin música.
+- Fotos (Wikimedia Commons / dominio público, en duotono): PROTEAM_PARTIDO_TIRO_LIBRE_NBA_FOTO_001 · Michael Barera · CC BY-SA 4.0 — PROTEAM_OBJETO_BALONES_CARRO_FOTO_001 · Cpl. Anthony C. Ramsey Jr. (DoD) · dominio público — PROTEAM_STAFF_BANQUILLO_ASISTENTES_FOTO_001 · Arbor to SJ · CC BY-SA 4.0 (enlaces en el guion).
+- Dibujado (ProTeam, «recreación»): hoja de anotación sin escudos con 28/32 que cuenta, «2·3·1962 · Hershey, Pensilvania · Warriors 169 – Knicks 147», 100 que cuenta; silueta sin cara que tira por abajo a dos manos y entra, y después por arriba con el arco cortado; libro liso sin título que se abre («parecía ridículo» en cursiva); gráfica de tiros libres: 61 % 1961-62 en ultravioleta (única vez), barra de carrera que baja de 61 a 51, Rick Barry 90 %; halo sobre un balón del carro; hoja «Libres · metidos / tirados» con 5 dorsales rotulada EJEMPLO (4/10, 6/10, 2/10, 5/10, 7/10), el 9 rodeado, martes 5/10 y barras 2 → 5.
+- Corrección sobre el guion: la tabla pedía «una barra por temporada» con la de 1961-62 por encima; no tenemos verificados los porcentajes de las otras temporadas, así que la gráfica solo lleva las tres cifras de la voz (61 · 51 · 90). Nada inventado.
+- Cierre común: tools/reel_v6/outro/outro.mp4 (cierre.sh v6-tiro-por-abajo-1962 36.95). publicar.mp4 dura 42,6 s.
+- Panel: media/v6-tiro-por-abajo-1962.mp4 es publicar.mp4 recomprimido a 2,2 Mb/s (13,4 MB) por el límite de 15 MB por archivo.
+- Datos: NBA.com, History.com, NPR, Complex (ver guion).

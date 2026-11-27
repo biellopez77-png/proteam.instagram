@@ -1,0 +1,1507 @@
+{
+ "meta": {
+  "contenedor": "mov,mp4,m4a,3gp,3g2,mj2",
+  "duracion_s": 24.433,
+  "tamano_bytes": 5968007,
+  "bitrate_kbps": 1954,
+  "ancho": 1080,
+  "alto": 1920,
+  "relacion": "9:16",
+  "fps": 30.0,
+  "fotogramas_declarados": 733,
+  "codec_video": "h264",
+  "pix_fmt": "yuv420p",
+  "pistas_audio": [
+   {
+    "codec": "aac",
+    "canales": 2,
+    "hz": 48000,
+    "bitrate_kbps": 202
+   }
+  ],
+  "etiquetas": {
+   "major_brand": "isom",
+   "minor_version": "512",
+   "compatible_brands": "isomiso2avc1mp41",
+   "encoder": "Lavf60.16.100"
+  },
+  "id": "u04",
+  "fotogramas_leidos": 733,
+  "sha256": "f19a309399340ecd5d6c5c5960dcc55949c47e7cb96db1d35834b1ac418b00eb",
+  "archivo": "reels/u04-mejor-entreno.mp4",
+  "fuente": "queue.json u04",
+  "marca": "proteam",
+  "tipo": "propio",
+  "formato": "reel",
+  "tema": "Tu mejor entreno no lo podrías repetir (v2, correcciones de la auditoría)",
+  "analizado": "2026-11-16 10:49"
+ },
+ "montaje": {
+  "cortes_duros": 7,
+  "transiciones_o_movimientos_fuertes": 0,
+  "planos": 8,
+  "duracion_media_plano_s": 3.05,
+  "plano_mas_largo_s": 7.467,
+  "plano_mas_corto_s": 1.133,
+  "cortes_por_10s": 2.86,
+  "tramos_estaticos": [
+   {
+    "desde": 6.63,
+    "hasta": 9.3,
+    "duracion_s": 2.67
+   },
+   {
+    "desde": 22.53,
+    "hasta": 24.4,
+    "duracion_s": 1.87
+   }
+  ],
+  "nota": "Detección automática por histograma y diferencia de imagen sobre TODOS los fotogramas. Un motion graphic continuo cuenta como un solo plano; un cambio de fondo brusco dentro de una animación puede contarse como corte. Confirmar en las láminas."
+ },
+ "cortes": [
+  {
+   "fotograma": 95,
+   "t": 3.167,
+   "tipo": "corte",
+   "fuerza": 0.355
+  },
+  {
+   "fotograma": 129,
+   "t": 4.3,
+   "tipo": "corte",
+   "fuerza": 0.501
+  },
+  {
+   "fotograma": 192,
+   "t": 6.4,
+   "tipo": "corte",
+   "fuerza": 0.355
+  },
+  {
+   "fotograma": 416,
+   "t": 13.867,
+   "tipo": "corte",
+   "fuerza": 0.855
+  },
+  {
+   "fotograma": 563,
+   "t": 18.767,
+   "tipo": "corte",
+   "fuerza": 0.568
+  },
+  {
+   "fotograma": 628,
+   "t": 20.933,
+   "tipo": "corte",
+   "fuerza": 0.824
+  },
+  {
+   "fotograma": 668,
+   "t": 22.267,
+   "tipo": "corte",
+   "fuerza": 0.935
+  }
+ ],
+ "escenas": [
+  {
+   "escena": 1,
+   "desde_fotograma": 0,
+   "hasta_fotograma": 94,
+   "desde": 0.0,
+   "hasta": 3.167,
+   "duracion_s": 3.167,
+   "movimiento_medio": 0.0068,
+   "luz_media": 0.259,
+   "saturacion_media": 0.256
+  },
+  {
+   "escena": 2,
+   "desde_fotograma": 95,
+   "hasta_fotograma": 128,
+   "desde": 3.167,
+   "hasta": 4.3,
+   "duracion_s": 1.133,
+   "movimiento_medio": 0.0198,
+   "luz_media": 0.342,
+   "saturacion_media": 0.232
+  },
+  {
+   "escena": 3,
+   "desde_fotograma": 129,
+   "hasta_fotograma": 191,
+   "desde": 4.3,
+   "hasta": 6.4,
+   "duracion_s": 2.1,
+   "movimiento_medio": 0.0105,
+   "luz_media": 0.167,
+   "saturacion_media": 0.382
+  },
+  {
+   "escena": 4,
+   "desde_fotograma": 192,
+   "hasta_fotograma": 415,
+   "desde": 6.4,
+   "hasta": 13.867,
+   "duracion_s": 7.467,
+   "movimiento_medio": 0.0063,
+   "luz_media": 0.617,
+   "saturacion_media": 0.176
+  },
+  {
+   "escena": 5,
+   "desde_fotograma": 416,
+   "hasta_fotograma": 562,
+   "desde": 13.867,
+   "hasta": 18.767,
+   "duracion_s": 4.9,
+   "movimiento_medio": 0.0161,
+   "luz_media": 0.427,
+   "saturacion_media": 0.2
+  },
+  {
+   "escena": 6,
+   "desde_fotograma": 563,
+   "hasta_fotograma": 627,
+   "desde": 18.767,
+   "hasta": 20.933,
+   "duracion_s": 2.167,
+   "movimiento_medio": 0.01,
+   "luz_media": 0.1,
+   "saturacion_media": 0.392
+  },
+  {
+   "escena": 7,
+   "desde_fotograma": 628,
+   "hasta_fotograma": 667,
+   "desde": 20.933,
+   "hasta": 22.267,
+   "duracion_s": 1.333,
+   "movimiento_medio": 0.0081,
+   "luz_media": 0.186,
+   "saturacion_media": 0.333
+  },
+  {
+   "escena": 8,
+   "desde_fotograma": 668,
+   "hasta_fotograma": 732,
+   "desde": 22.267,
+   "hasta": 24.433,
+   "duracion_s": 2.167,
+   "movimiento_medio": 0.0046,
+   "luz_media": 0.026,
+   "saturacion_media": 0.027
+  }
+ ],
+ "laminas": [
+  {
+   "lamina": "general_001.jpg",
+   "fotogramas": [
+    0,
+    5,
+    10,
+    15,
+    20,
+    25,
+    45,
+    47,
+    90,
+    94,
+    95,
+    111,
+    128,
+    129,
+    160,
+    191,
+    192,
+    237
+   ],
+   "desde": 0.0,
+   "hasta": 7.9,
+   "modo": "general"
+  },
+  {
+   "lamina": "general_002.jpg",
+   "fotogramas": [
+    282,
+    303,
+    327,
+    372,
+    415,
+    416,
+    461,
+    489,
+    506,
+    551,
+    562,
+    563,
+    595,
+    627,
+    628,
+    647,
+    667,
+    668
+   ],
+   "desde": 9.4,
+   "hasta": 22.267,
+   "modo": "general"
+  },
+  {
+   "lamina": "general_003.jpg",
+   "fotogramas": [
+    700,
+    732
+   ],
+   "desde": 23.333,
+   "hasta": 24.4,
+   "modo": "general"
+  },
+  {
+   "lamina": "detalle_001.jpg",
+   "fotogramas": [
+    0,
+    8,
+    16,
+    24,
+    32,
+    40,
+    48,
+    56,
+    64,
+    72,
+    80,
+    88,
+    94,
+    95,
+    96,
+    104,
+    112,
+    120,
+    128,
+    129,
+    136,
+    144,
+    152,
+    160
+   ],
+   "desde": 0.0,
+   "hasta": 5.333,
+   "modo": "detalle"
+  },
+  {
+   "lamina": "detalle_002.jpg",
+   "fotogramas": [
+    168,
+    176,
+    184,
+    191,
+    192,
+    200,
+    208,
+    216,
+    224,
+    232,
+    240,
+    248,
+    256,
+    264,
+    272,
+    280,
+    288,
+    296,
+    304,
+    312,
+    320,
+    328,
+    336,
+    344
+   ],
+   "desde": 5.6,
+   "hasta": 11.467,
+   "modo": "detalle"
+  },
+  {
+   "lamina": "detalle_003.jpg",
+   "fotogramas": [
+    352,
+    360,
+    368,
+    376,
+    384,
+    392,
+    400,
+    408,
+    415,
+    416,
+    424,
+    432,
+    440,
+    448,
+    456,
+    464,
+    472,
+    480,
+    488,
+    496,
+    504,
+    512,
+    520,
+    528
+   ],
+   "desde": 11.733,
+   "hasta": 17.6,
+   "modo": "detalle"
+  },
+  {
+   "lamina": "detalle_004.jpg",
+   "fotogramas": [
+    536,
+    544,
+    552,
+    560,
+    562,
+    563,
+    568,
+    576,
+    584,
+    592,
+    600,
+    608,
+    616,
+    624,
+    627,
+    628,
+    632,
+    640,
+    648,
+    656,
+    664,
+    667,
+    668,
+    672
+   ],
+   "desde": 17.867,
+   "hasta": 22.4,
+   "modo": "detalle"
+  },
+  {
+   "lamina": "detalle_005.jpg",
+   "fotogramas": [
+    680,
+    688,
+    696,
+    704,
+    712,
+    720,
+    728
+   ],
+   "desde": 22.667,
+   "hasta": 24.267,
+   "modo": "detalle"
+  }
+ ],
+ "texto_en_pantalla": {
+  "idioma": "spa+eng",
+  "nota": "OCR automático sobre los fotogramas muestreados: puede fallar con tipografía fina, texto animado o sobre foto. La exposición es aproximada (resolución = intervalo de muestreo). Verificar siempre en las láminas.",
+  "por_fotograma": [
+   {
+    "fotograma": 0,
+    "t": 0.0,
+    "texto": "MEJO \"ENTREN Uy"
+   },
+   {
+    "fotograma": 5,
+    "t": 0.167,
+    "texto": "NS MEJOR ENTRENO"
+   },
+   {
+    "fotograma": 8,
+    "t": 0.267,
+    "texto": "NS MEJOR ENTRENC"
+   },
+   {
+    "fotograma": 10,
+    "t": 0.333,
+    "texto": "MEJOR ENTRENO Uy lo"
+   },
+   {
+    "fotograma": 15,
+    "t": 0.5,
+    "texto": "\"UMEJO ENTRENO"
+   },
+   {
+    "fotograma": 16,
+    "t": 0.533,
+    "texto": "ENTRENO renen"
+   },
+   {
+    "fotograma": 20,
+    "t": 0.667,
+    "texto": "ENTRENO nO podrias"
+   },
+   {
+    "fotograma": 24,
+    "t": 0.8,
+    "texto": "TU MEJOR ENTRENO nO podrias repetir."
+   },
+   {
+    "fotograma": 25,
+    "t": 0.833,
+    "texto": "TU MEJOR ENTRENO NO podrias repetir."
+   },
+   {
+    "fotograma": 32,
+    "t": 1.067,
+    "texto": "TU MEJOR ENTRENO nO repetir."
+   },
+   {
+    "fotograma": 40,
+    "t": 1.333,
+    "texto": "TU MEJOR ENTRENO nO lo.podrias repetir."
+   },
+   {
+    "fotograma": 45,
+    "t": 1.5,
+    "texto": "TU MEJOR ENTRENO NO lo.podrias repetir."
+   },
+   {
+    "fotograma": 47,
+    "t": 1.567,
+    "texto": "TU MEJOR ENTRENO n0 lo.podrias repetir."
+   },
+   {
+    "fotograma": 48,
+    "t": 1.6,
+    "texto": "TU MEJOR ENTRENO n0 lo.podrias repetir."
+   },
+   {
+    "fotograma": 56,
+    "t": 1.867,
+    "texto": "ENTRENO lo.podrias repetir."
+   },
+   {
+    "fotograma": 64,
+    "t": 2.133,
+    "texto": "TUMEJOR ENTRENO nO repetir."
+   },
+   {
+    "fotograma": 72,
+    "t": 2.4,
+    "texto": "TUMEJOR ENTRENO no lo:podrias repeltr."
+   },
+   {
+    "fotograma": 80,
+    "t": 2.667,
+    "texto": "TUMEJOR ENTRENO no"
+   },
+   {
+    "fotograma": 88,
+    "t": 2.933,
+    "texto": "TUMEJOR ENTRENO nO lo:podrias repeltr."
+   },
+   {
+    "fotograma": 90,
+    "t": 3.0,
+    "texto": "TUMEJOR ENTRENO nO repetir."
+   },
+   {
+    "fotograma": 94,
+    "t": 3.133,
+    "texto": "TUMEJOR ENTRENO nolo podrias"
+   },
+   {
+    "fotograma": 95,
+    "t": 3.167,
+    "texto": "TUMEJOR ENTRENO no"
+   },
+   {
+    "fotograma": 96,
+    "t": 3.2,
+    "texto": "SE 10"
+   },
+   {
+    "fotograma": 104,
+    "t": 3.467,
+    "texto": "APUNTASTE."
+   },
+   {
+    "fotograma": 111,
+    "t": 3.7,
+    "texto": "NO LO APUNTASTE."
+   },
+   {
+    "fotograma": 112,
+    "t": 3.733,
+    "texto": "NO LO APUNTASTE."
+   },
+   {
+    "fotograma": 120,
+    "t": 4.0,
+    "texto": "NO LO APUNTASTE."
+   },
+   {
+    "fotograma": 128,
+    "t": 4.267,
+    "texto": "NO LO APUNTASTE."
+   },
+   {
+    "fotograma": 129,
+    "t": 4.3,
+    "texto": "NO LO APUNTASTE."
+   },
+   {
+    "fotograma": 136,
+    "t": 4.533,
+    "texto": "UN DÍA DE"
+   },
+   {
+    "fotograma": 144,
+    "t": 4.8,
+    "texto": "UN DÍA DE OCTUBRE Poy"
+   },
+   {
+    "fotograma": 152,
+    "t": 5.067,
+    "texto": "UN DÍA DE OCTUBRE por"
+   },
+   {
+    "fotograma": 160,
+    "t": 5.333,
+    "texto": "UN DÍA DE OCTUBRE MEN todo encajo."
+   },
+   {
+    "fotograma": 168,
+    "t": 5.6,
+    "texto": "UN DÍA DE OCTUBRE si todo encajo."
+   },
+   {
+    "fotograma": 176,
+    "t": 5.867,
+    "texto": "UN DÍA DE OCTUBRE por todo encajo."
+   },
+   {
+    "fotograma": 184,
+    "t": 6.133,
+    "texto": "UN DÍA DE OCTUBRE todo encajo."
+   },
+   {
+    "fotograma": 191,
+    "t": 6.367,
+    "texto": "UN DÍA DE OCTUBRE"
+   },
+   {
+    "fotograma": 192,
+    "t": 6.4,
+    "texto": "UN DÍA DE OCTUBRE APUNTA DESPUÉS DE CADA ENTRENO"
+   },
+   {
+    "fotograma": 200,
+    "t": 6.667,
+    "texto": "UN DÍA DE OCTUBRE ay Su APUNTA DESPUÉS DE CADA ENTRENO Ejercicio Tiempos"
+   },
+   {
+    "fotograma": 208,
+    "t": 6.933,
+    "texto": "UN DÍA DE OCTUBRE ¡EMO APUNTA DESPUES DE CADA ENTRENO Ejercicio Tiempos Parejas"
+   },
+   {
+    "fotograma": 216,
+    "t": 7.2,
+    "texto": "UN DIA DE OCTUBRE ay SU AP APUNTA DESPUES DE CADA ENTRENO Ejercicio Tiempos Parejas"
+   },
+   {
+    "fotograma": 224,
+    "t": 7.467,
+    "texto": "UN DIA DE OCTUBRE “ey Su APUNTA DESPUES DE CADA ENTRENO Ejercicio Tiempos Parejas"
+   },
+   {
+    "fotograma": 232,
+    "t": 7.733,
+    "texto": "UN DÍA DE OCTUBRE APUNTA DESPUÉS DE CADA ENTRENO Ejercicio Tiempos Parejas"
+   },
+   {
+    "fotograma": 237,
+    "t": 7.9,
+    "texto": "UN DÍA DE OCTUBRE of APUNTA DESPUES DE CADA ENTRENO Ejercicio Tiempos Parejas"
+   },
+   {
+    "fotograma": 240,
+    "t": 8.0,
+    "texto": "UN DÍA DE OCTUBRE APUNTA DESPUÉS DE CADA ENTRENO Ejercicio Tiempos Parejas"
+   },
+   {
+    "fotograma": 248,
+    "t": 8.267,
+    "texto": "UN DÍA DE OCTUBRE rn Ds APUNTA DESPUES DE CADA ENTRENO Ejercicio Tiempos Parejas"
+   },
+   {
+    "fotograma": 256,
+    "t": 8.533,
+    "texto": "UN DÍA DE APUNTA DESPUES DE CADA ENTRENO Ejercicio Tiempos Parejas"
+   },
+   {
+    "fotograma": 264,
+    "t": 8.8,
+    "texto": "UN DÍA DE OCTUBRE AP pa APUNTA DESPUÉS DE CADA ENTRENO Ejercicio Tiempos Parejas"
+   },
+   {
+    "fotograma": 272,
+    "t": 9.067,
+    "texto": "UN DÍA DE OCTUBRE ay 04x6' APUNTA DESPUÉS DE CADA ENTRENO Ejercicio Tiempos Parejas"
+   },
+   {
+    "fotograma": 280,
+    "t": 9.333,
+    "texto": "04x6' APUNTA DESPUÉS DE CADA ENTRENO Ejercicio Tiempos Parejas"
+   },
+   {
+    "fotograma": 282,
+    "t": 9.4,
+    "texto": "La ad} 04x6' APUNTA DESPUÉS DE CADA ENTRENO Ejercicio Tiempos Parejas"
+   },
+   {
+    "fotograma": 288,
+    "t": 9.6,
+    "texto": "AP 04x6' APUNTA DESPUÉS DE CADA ENTRENO Ejercicio Tiempos Parejas"
+   },
+   {
+    "fotograma": 296,
+    "t": 9.867,
+    "texto": "AL"
+   },
+   {
+    "fotograma": 303,
+    "t": 10.1,
+    "texto": "AC UN"
+   },
+   {
+    "fotograma": 304,
+    "t": 10.133,
+    "texto": "QU UNA"
+   },
+   {
+    "fotograma": 312,
+    "t": 10.4,
+    "texto": "es QU"
+   },
+   {
+    "fotograma": 320,
+    "t": 10.667,
+    "texto": "UE sensación."
+   },
+   {
+    "fotograma": 327,
+    "t": 10.9,
+    "texto": "sensación."
+   },
+   {
+    "fotograma": 328,
+    "t": 10.933,
+    "texto": "sensación."
+   },
+   {
+    "fotograma": 336,
+    "t": 11.2,
+    "texto": "sensación."
+   },
+   {
+    "fotograma": 344,
+    "t": 11.467,
+    "texto": "sensación."
+   },
+   {
+    "fotograma": 352,
+    "t": 11.733,
+    "texto": "sensación."
+   },
+   {
+    "fotograma": 360,
+    "t": 12.0,
+    "texto": "sensación."
+   },
+   {
+    "fotograma": 368,
+    "t": 12.267,
+    "texto": "sensación. NOSE"
+   },
+   {
+    "fotograma": 372,
+    "t": 12.4,
+    "texto": "sensación. NOSE REPITEN."
+   },
+   {
+    "fotograma": 376,
+    "t": 12.533,
+    "texto": "sensación. NOSE REPITEN."
+   },
+   {
+    "fotograma": 384,
+    "t": 12.8,
+    "texto": "sensación. NOSE REPITEN."
+   },
+   {
+    "fotograma": 392,
+    "t": 13.067,
+    "texto": "sensación. NOSE REPITEN."
+   },
+   {
+    "fotograma": 400,
+    "t": 13.333,
+    "texto": "sensación. NOSE REPITEN."
+   },
+   {
+    "fotograma": 408,
+    "t": 13.6,
+    "texto": "sensación. NOSE REPITEN."
+   },
+   {
+    "fotograma": 415,
+    "t": 13.833,
+    "texto": "sensación. NOSE REPITEN."
+   },
+   {
+    "fotograma": 416,
+    "t": 13.867,
+    "texto": "Rutinas Fun gen"
+   },
+   {
+    "fotograma": 424,
+    "t": 14.133,
+    "texto": "LA APP DE Proleam Rutina:"
+   },
+   {
+    "fotograma": 432,
+    "t": 14.4,
+    "texto": "LA APP DE Proleam Rutinas"
+   },
+   {
+    "fotograma": 440,
+    "t": 14.667,
+    "texto": "LA APP DE Proleam fi Rutinas Pr"
+   },
+   {
+    "fotograma": 448,
+    "t": 14.933,
+    "texto": "Fuerza general pretemporada Prevención de isquios tobillo 10 Potencia saltos"
+   },
+   {
+    "fotograma": 456,
+    "t": 15.2,
+    "texto": "Fuerza general pretemporada ar 3z Prevención de isquios tobillo ar"
+   },
+   {
+    "fotograma": 461,
+    "t": 15.367,
+    "texto": "Fuerza general pretemporada Prevención de isquios tobillo"
+   },
+   {
+    "fotograma": 464,
+    "t": 15.467,
+    "texto": "Fuerza general pretemporada PE Prevención de isquios tobillo"
+   },
+   {
+    "fotograma": 472,
+    "t": 15.733,
+    "texto": "Fuerza general pretemporada Prevención de isquios tobillo Zt"
+   },
+   {
+    "fotograma": 480,
+    "t": 16.0,
+    "texto": "Fuerza general pretemporada 33 Prevención de isquios tobillo"
+   },
+   {
+    "fotograma": 488,
+    "t": 16.267,
+    "texto": "Rutinas Fuerza general pretemporada Prevención de isquios tobillo GE"
+   },
+   {
+    "fotograma": 489,
+    "t": 16.3,
+    "texto": "1a: Fuerza general pretemporada Editar 33 Prevención de isquios tobillo"
+   },
+   {
+    "fotograma": 496,
+    "t": 16.533,
+    "texto": "BIBLIOTECA 1a Rutinas Fuerza general pretemporada Editar Prevención de isquios tobillo Edi"
+   },
+   {
+    "fotograma": 504,
+    "t": 16.8,
+    "texto": "BIBLIOTECA Fuerza general pretemporada 32 Prevención de isquios tobillo Editar"
+   },
+   {
+    "fotograma": 506,
+    "t": 16.867,
+    "texto": "BIBLIOTECA Fuerza general pretemporada 32 Prevención de isquios tobillo Edi"
+   },
+   {
+    "fotograma": 512,
+    "t": 17.067,
+    "texto": "BIBLIOTECA Rutinas Fuerza general pretemporada Editar Prevención de isquios tobillo Edi"
+   },
+   {
+    "fotograma": 520,
+    "t": 17.333,
+    "texto": "BIBLIOTECA Rutinas Fuerza general pretemporada ditar Prevención de isquios tobillo Edi"
+   },
+   {
+    "fotograma": 528,
+    "t": 17.6,
+    "texto": "Rutinas Fuerza general pretemporada Editar Prevención de isquios tobillo Editar"
+   },
+   {
+    "fotograma": 536,
+    "t": 17.867,
+    "texto": "PON Ft Planificación Aa Añadir Semana 11 Semana tipo comp Semana de pretemporada Preten ads"
+   },
+   {
+    "fotograma": 544,
+    "t": 18.133,
+    "texto": "if 20 NA PLANTILLA SEMAN ES Aplicara nana Gestion Semana tipo LU MA Ju de pretemporada Mi MA Ju vl"
+   },
+   {
+    "fotograma": 551,
+    "t": 18.367,
+    "texto": "if lo MANA Semana AN EMANAL ES Gestion tipo competición LU MA serene de pretemporada Mi LU MA JU vl"
+   },
+   {
+    "fotograma": 552,
+    "t": 18.4,
+    "texto": "Ll es lo Semana 11 NTIL ES Aplicara esta semana tipo competición MA de pretemporada LU MA Mi"
+   },
+   {
+    "fotograma": 560,
+    "t": 18.667,
+    "texto": "la abres lo repites. NTILLAS ÉS esta semana Gestior tipo competición MA Semana de pretempora Mi MA"
+   },
+   {
+    "fotograma": 562,
+    "t": 18.733,
+    "texto": "la abres LL EM ES Aplicar sta semana Gestior tipo competición Semana de pretemporada MA Mi"
+   },
+   {
+    "fotograma": 563,
+    "t": 18.767,
+    "texto": "LO? ites. ey lo TIL An ES Apl estasemana Gestior tipo competición MA Semana de pretemporada MA Mi JU"
+   },
+   {
+    "fotograma": 568,
+    "t": 18.933,
+    "texto": "ESPERA"
+   },
+   {
+    "fotograma": 576,
+    "t": 19.2,
+    "texto": "LISTA DE ESPERA 11 03 29 59 HORAS Mi ent"
+   },
+   {
+    "fotograma": 584,
+    "t": 19.467,
+    "texto": "LISTA DE ESPERA 11 02 38 DÍAS HORAS SEG entrenador@miclub.es|"
+   },
+   {
+    "fotograma": 592,
+    "t": 19.733,
+    "texto": "LISTA DE ESPERA 17 56 10 DÍAS HORAS SEG entrenador@miclub.es"
+   },
+   {
+    "fotograma": 595,
+    "t": 19.833,
+    "texto": "LISTA DE ESPERA 11 13 10 DÍAS HORAS SEG entrenador@miclub.es"
+   },
+   {
+    "fotograma": 600,
+    "t": 20.0,
+    "texto": "LISTA DE ESPERA 09 19 13 16 DÍAS HORAS MIN SEG entrenador@miclub.es"
+   },
+   {
+    "fotograma": 608,
+    "t": 20.267,
+    "texto": "LISTA DE ESPERA 07 23 12 08 DÍAS HORAS MIN SEG entrenadoremiclub.es"
+   },
+   {
+    "fotograma": 616,
+    "t": 20.533,
+    "texto": "LISTA DE ESPERA 04 22 43 56 DÍAS HORAS MIN SEG entrenador@miclub.es CE"
+   },
+   {
+    "fotograma": 624,
+    "t": 20.8,
+    "texto": "LISTA DE ESPERA 00 10 43 05 DIAS HORAS MIN SEG entrenador@miclub.es"
+   },
+   {
+    "fotograma": 627,
+    "t": 20.9,
+    "texto": "LISTA DE ESPERA 00 00 00 00 DÍAS HORAS SEG entrenador@miclub.es"
+   },
+   {
+    "fotograma": 628,
+    "t": 20.933,
+    "texto": "14"
+   },
+   {
+    "fotograma": 632,
+    "t": 21.067,
+    "texto": "hasta el"
+   },
+   {
+    "fotograma": 640,
+    "t": 21.333,
+    "texto": "ES hasta el"
+   },
+   {
+    "fotograma": 647,
+    "t": 21.567,
+    "texto": "hasta el 811"
+   },
+   {
+    "fotograma": 648,
+    "t": 21.6,
+    "texto": "hasta el ic"
+   },
+   {
+    "fotograma": 656,
+    "t": 21.867,
+    "texto": "hasta el 81"
+   },
+   {
+    "fotograma": 664,
+    "t": 22.133,
+    "texto": "hasta el"
+   },
+   {
+    "fotograma": 667,
+    "t": 22.233,
+    "texto": "hasta el"
+   },
+   {
+    "fotograma": 668,
+    "t": 22.267,
+    "texto": "ae"
+   },
+   {
+    "fotograma": 672,
+    "t": 22.4,
+    "texto": "meses gratis."
+   },
+   {
+    "fotograma": 680,
+    "t": 22.667,
+    "texto": "meses gratis."
+   },
+   {
+    "fotograma": 688,
+    "t": 22.933,
+    "texto": "meses gratis."
+   },
+   {
+    "fotograma": 696,
+    "t": 23.2,
+    "texto": "meses gratis."
+   },
+   {
+    "fotograma": 700,
+    "t": 23.333,
+    "texto": "meses gratis."
+   },
+   {
+    "fotograma": 704,
+    "t": 23.467,
+    "texto": "meses gratis."
+   },
+   {
+    "fotograma": 712,
+    "t": 23.733,
+    "texto": "meses gratis."
+   },
+   {
+    "fotograma": 720,
+    "t": 24.0,
+    "texto": "meses gratis."
+   },
+   {
+    "fotograma": 728,
+    "t": 24.267,
+    "texto": "meses gratis."
+   },
+   {
+    "fotograma": 732,
+    "t": 24.4,
+    "texto": "meses gratis."
+   }
+  ],
+  "bloques": [
+   {
+    "desde": 0.167,
+    "hasta": 0.267,
+    "texto": "NS MEJOR ENTRENO",
+    "palabras": 3
+   },
+   {
+    "desde": 0.8,
+    "hasta": 1.6,
+    "texto": "TU MEJOR ENTRENO nO lo.podrias repetir.",
+    "palabras": 6
+   },
+   {
+    "desde": 2.133,
+    "hasta": 3.167,
+    "texto": "TUMEJOR ENTRENO no lo:podrias repeltr.",
+    "palabras": 5
+   },
+   {
+    "desde": 3.7,
+    "hasta": 4.3,
+    "texto": "NO LO APUNTASTE.",
+    "palabras": 3
+   },
+   {
+    "desde": 4.8,
+    "hasta": 6.933,
+    "texto": "UN DÍA DE OCTUBRE ¡EMO APUNTA DESPUES DE CADA ENTRENO Ejercicio Tiempos Parejas",
+    "palabras": 13
+   },
+   {
+    "desde": 7.2,
+    "hasta": 7.467,
+    "texto": "UN DIA DE OCTUBRE ay SU AP APUNTA DESPUES DE CADA ENTRENO Ejercicio Tiempos Parejas",
+    "palabras": 15
+   },
+   {
+    "desde": 7.733,
+    "hasta": 8.267,
+    "texto": "UN DÍA DE OCTUBRE rn Ds APUNTA DESPUES DE CADA ENTRENO Ejercicio Tiempos Parejas",
+    "palabras": 14
+   },
+   {
+    "desde": 8.533,
+    "hasta": 8.533,
+    "texto": "UN DÍA DE APUNTA DESPUES DE CADA ENTRENO Ejercicio Tiempos Parejas",
+    "palabras": 11
+   },
+   {
+    "desde": 8.8,
+    "hasta": 9.067,
+    "texto": "UN DÍA DE OCTUBRE ay 04x6' APUNTA DESPUÉS DE CADA ENTRENO Ejercicio Tiempos Parejas",
+    "palabras": 14
+   },
+   {
+    "desde": 9.333,
+    "hasta": 9.333,
+    "texto": "04x6' APUNTA DESPUÉS DE CADA ENTRENO Ejercicio Tiempos Parejas",
+    "palabras": 9
+   },
+   {
+    "desde": 9.4,
+    "hasta": 9.4,
+    "texto": "La ad} 04x6' APUNTA DESPUÉS DE CADA ENTRENO Ejercicio Tiempos Parejas",
+    "palabras": 11
+   },
+   {
+    "desde": 9.6,
+    "hasta": 9.6,
+    "texto": "AP 04x6' APUNTA DESPUÉS DE CADA ENTRENO Ejercicio Tiempos Parejas",
+    "palabras": 10
+   },
+   {
+    "desde": 10.9,
+    "hasta": 12.0,
+    "texto": "sensación.",
+    "palabras": 1
+   },
+   {
+    "desde": 12.267,
+    "hasta": 13.833,
+    "texto": "sensación. NOSE REPITEN.",
+    "palabras": 3
+   },
+   {
+    "desde": 14.133,
+    "hasta": 14.667,
+    "texto": "LA APP DE Proleam fi Rutinas Pr",
+    "palabras": 7
+   },
+   {
+    "desde": 14.933,
+    "hasta": 16.0,
+    "texto": "Fuerza general pretemporada Prevención de isquios tobillo 10 Potencia saltos",
+    "palabras": 10
+   },
+   {
+    "desde": 16.267,
+    "hasta": 16.267,
+    "texto": "Rutinas Fuerza general pretemporada Prevención de isquios tobillo GE",
+    "palabras": 9
+   },
+   {
+    "desde": 16.3,
+    "hasta": 16.3,
+    "texto": "1a: Fuerza general pretemporada Editar 33 Prevención de isquios tobillo",
+    "palabras": 10
+   },
+   {
+    "desde": 16.533,
+    "hasta": 16.533,
+    "texto": "BIBLIOTECA 1a Rutinas Fuerza general pretemporada Editar Prevención de isquios tobillo Edi",
+    "palabras": 12
+   },
+   {
+    "desde": 16.8,
+    "hasta": 16.867,
+    "texto": "BIBLIOTECA Fuerza general pretemporada 32 Prevención de isquios tobillo Editar",
+    "palabras": 10
+   },
+   {
+    "desde": 17.067,
+    "hasta": 17.333,
+    "texto": "BIBLIOTECA Rutinas Fuerza general pretemporada Editar Prevención de isquios tobillo Edi",
+    "palabras": 11
+   },
+   {
+    "desde": 17.6,
+    "hasta": 17.6,
+    "texto": "Rutinas Fuerza general pretemporada Editar Prevención de isquios tobillo Editar",
+    "palabras": 10
+   },
+   {
+    "desde": 17.867,
+    "hasta": 17.867,
+    "texto": "PON Ft Planificación Aa Añadir Semana 11 Semana tipo comp Semana de pretemporada Preten ads",
+    "palabras": 15
+   },
+   {
+    "desde": 18.133,
+    "hasta": 18.133,
+    "texto": "if 20 NA PLANTILLA SEMAN ES Aplicara nana Gestion Semana tipo LU MA Ju de pretemporada Mi MA Ju vl",
+    "palabras": 20
+   },
+   {
+    "desde": 18.367,
+    "hasta": 18.367,
+    "texto": "if lo MANA Semana AN EMANAL ES Gestion tipo competición LU MA serene de pretemporada Mi LU MA JU vl",
+    "palabras": 20
+   },
+   {
+    "desde": 18.4,
+    "hasta": 18.4,
+    "texto": "Ll es lo Semana 11 NTIL ES Aplicara esta semana tipo competición MA de pretemporada LU MA Mi",
+    "palabras": 18
+   },
+   {
+    "desde": 18.667,
+    "hasta": 18.667,
+    "texto": "la abres lo repites. NTILLAS ÉS esta semana Gestior tipo competición MA Semana de pretempora Mi MA",
+    "palabras": 17
+   },
+   {
+    "desde": 18.733,
+    "hasta": 18.733,
+    "texto": "la abres LL EM ES Aplicar sta semana Gestior tipo competición Semana de pretemporada MA Mi",
+    "palabras": 16
+   },
+   {
+    "desde": 18.767,
+    "hasta": 18.767,
+    "texto": "LO? ites. ey lo TIL An ES Apl estasemana Gestior tipo competición MA Semana de pretemporada MA Mi JU",
+    "palabras": 19
+   },
+   {
+    "desde": 19.2,
+    "hasta": 20.9,
+    "texto": "LISTA DE ESPERA 04 22 43 56 DÍAS HORAS MIN SEG entrenador@miclub.es CE",
+    "palabras": 13
+   },
+   {
+    "desde": 22.133,
+    "hasta": 22.233,
+    "texto": "hasta el",
+    "palabras": 2
+   },
+   {
+    "desde": 22.4,
+    "hasta": 24.4,
+    "texto": "meses gratis.",
+    "palabras": 2
+   }
+  ]
+ },
+ "audio": {
+  "tiene_audio": true,
+  "wav": "intel/videos/u04/audio_16k.wav",
+  "volumen_integrado_lufs": "-14.59",
+  "pico_real_db": "-1.84",
+  "rango_lra": "3.80",
+  "silencios": [],
+  "subidas_bruscas_s": [
+   1.7,
+   3.3,
+   4.4,
+   5.1,
+   5.5,
+   6.8,
+   7.7,
+   8.6,
+   9.3,
+   9.8,
+   14.0
+  ],
+  "energia_db_cada_0_1s": [
+   -21.5,
+   -15.8,
+   -13.9,
+   -17.0,
+   -12.8,
+   -14.6,
+   -18.1,
+   -15.4,
+   -19.4,
+   -18.5,
+   -18.1,
+   -15.6,
+   -16.8,
+   -17.2,
+   -15.6,
+   -15.7,
+   -25.5,
+   -11.9,
+   -13.8,
+   -15.2,
+   -16.5,
+   -17.0,
+   -18.3,
+   -16.7,
+   -21.2,
+   -21.0,
+   -24.1,
+   -29.6,
+   -28.7,
+   -35.2,
+   -26.9,
+   -30.5,
+   -32.1,
+   -13.7,
+   -14.2,
+   -14.8,
+   -15.6,
+   -18.8,
+   -18.9,
+   -25.5,
+   -30.3,
+   -31.7,
+   -33.8,
+   -27.6,
+   -17.6,
+   -16.8,
+   -14.8,
+   -15.8,
+   -17.0,
+   -14.9,
+   -32.0,
+   -14.4,
+   -17.8,
+   -19.8,
+   -33.3,
+   -13.1,
+   -16.4,
+   -19.3,
+   -27.2,
+   -24.6,
+   -26.5,
+   -29.4,
+   -32.2,
+   -32.5,
+   -23.3,
+   -26.8,
+   -29.2,
+   -32.5,
+   -17.7,
+   -17.7,
+   -20.2,
+   -15.3,
+   -19.2,
+   -24.4,
+   -27.5,
+   -28.0,
+   -17.3,
+   -14.0,
+   -19.4,
+   -15.8,
+   -17.5,
+   -27.1,
+   -30.6,
+   -23.0,
+   -30.2,
+   -24.0,
+   -15.8,
+   -24.4,
+   -16.6,
+   -24.3,
+   -39.9,
+   -45.4,
+   -52.2,
+   -12.4,
+   -13.5,
+   -27.0,
+   -46.0,
+   -32.0,
+   -14.4,
+   -14.5,
+   -17.6,
+   -20.2,
+   -15.7,
+   -13.9,
+   -13.5,
+   -12.9,
+   -16.3,
+   -19.9,
+   -23.7,
+   -24.2,
+   -23.9,
+   -24.9,
+   -25.5,
+   -25.8,
+   -24.5,
+   -25.3,
+   -15.6,
+   -14.6,
+   -18.4,
+   -16.1,
+   -16.4,
+   -14.3,
+   -14.7,
+   -18.0,
+   -21.6,
+   -16.0,
+   -14.2,
+   -15.3,
+   -25.7,
+   -21.8,
+   -25.1,
+   -22.8,
+   -25.6,
+   -21.7,
+   -26.2,
+   -26.1,
+   -26.1,
+   -23.3,
+   -25.0,
+   -15.3,
+   -12.8,
+   -14.4,
+   -21.6,
+   -14.6,
+   -18.7,
+   -20.1,
+   -13.5,
+   -18.4,
+   -20.0,
+   -13.6,
+   -14.9,
+   -16.1,
+   -15.8,
+   -19.7,
+   -17.3,
+   -15.1,
+   -15.6,
+   -16.4,
+   -15.3,
+   -21.1,
+   -21.7,
+   -17.9,
+   -23.3,
+   -15.6,
+   -15.2,
+   -12.8,
+   -11.6,
+   -17.4,
+   -17.6,
+   -18.4,
+   -21.7,
+   -20.5,
+   -26.3,
+   -22.1,
+   -28.5,
+   -26.7,
+   -23.6,
+   -19.9,
+   -18.0,
+   -15.4,
+   -21.8,
+   -23.8,
+   -19.3,
+   -15.1,
+   -12.1,
+   -14.3,
+   -16.5,
+   -25.8,
+   -25.2,
+   -16.6,
+   -13.6,
+   -15.4,
+   -14.4,
+   -16.8,
+   -17.7,
+   -13.0,
+   -18.9,
+   -15.6,
+   -17.5,
+   -24.3,
+   -12.9,
+   -14.0,
+   -14.9,
+   -18.7,
+   -13.8,
+   -14.7,
+   -16.6,
+   -14.9,
+   -21.8,
+   -13.2,
+   -15.7,
+   -14.6,
+   -14.8,
+   -20.0,
+   -14.3,
+   -16.7,
+   -12.6,
+   -15.5,
+   -15.6,
+   -18.5,
+   -13.3,
+   -18.2,
+   -16.5,
+   -14.3,
+   -20.2,
+   -15.1,
+   -12.3,
+   -20.2,
+   -12.4,
+   -14.2,
+   -16.4,
+   -17.4,
+   -14.9,
+   -16.7,
+   -21.4,
+   -25.2,
+   -21.9,
+   -26.4,
+   -23.2,
+   -28.7,
+   -27.3,
+   -33.3,
+   -39.3,
+   -45.4
+  ],
+  "transcripcion": "transcripcion.json (tools/reel04/voz.tsv)",
+  "nota": "Esto son medidas. Entonación, claridad de la locución, timbre o si hay música NO se pueden afirmar sin escuchar o transcribir."
+ },
+ "vistas": [
+  "detalle_001.jpg",
+  "detalle_002.jpg",
+  "detalle_003.jpg",
+  "detalle_004.jpg",
+  "detalle_005.jpg",
+  "general_001.jpg",
+  "general_002.jpg",
+  "general_003.jpg"
+ ],
+ "orden": "python3 tools/video_intel.py analyze reels/u04-mejor-entreno.mp4 --id u04 --tema Tu mejor entreno no lo podrías repetir (v2, correcciones de la auditoría) --fuente queue.json u04 --modo detalle"
+}

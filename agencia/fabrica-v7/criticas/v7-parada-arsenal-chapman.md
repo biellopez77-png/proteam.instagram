@@ -1,0 +1,24 @@
+# Crítica v7-parada-arsenal-chapman · «La parada se llama Arsenal» · Andrés (05) · 25/11/2026
+
+**Nota: 89/100 · APROBADO** → `pub_v3 approve` mar 1/12 18:00 (26–30/11 ocupados por otros v7).
+
+Material auditado: `tools/reel_v7/v7-parada-arsenal-chapman/video_mudo.mp4` (1080×1920, 30 fps, 28,9 s; 58 fotogramas cada 0,5 s a tamaño móvil, más fotogramas sueltos en 1,95–2,8 s, 13,5 s, 16,8 s y 21,0 s) y vídeo final de cloudfront `a2b77a54-…mp4` (H.264 + AAC 256k, 28,9 s; descargado y medido en el sandbox de Higgsfield). Guion: `agencia/fabrica-v7/guiones/v7-parada-arsenal-chapman.md`.
+
+## Puntuación
+| criterio | nota | por qué |
+|---|---|---|
+| Historia real y gancho | 17/20 | Historia rara y verdadera (un entrenador le cambia el nombre al metro) con prueba que aún se ve (las baldosas) y remate claro. Pero la voz arranca con «Herbert Chapman entrenaba al Arsenal», que no engancha: la extrañeza (el metro) no llega hasta 3,8 s. El gancho bueno está en el caption («Un entrenador consiguió que el metro de Londres cambiara de nombre»). |
+| Cada cosa que dice la voz se anima en su momento | 18/20 | Ficha de Chapman en «Herbert Chapman» (0,3 s) y ARSENAL en «Arsenal» (1,8 s); plano con ESTADIO en «estadio» (2,9 s); círculo que se dibuja en «parada/metro» (3,8–4,6 s); azulejos GILLESPIE ROAD en «Gillespie Road» (5,0 s); bocadillo que se abre en «protestó» y se llena palabra a palabra (7,7–9,4 s) con «?»; GILLESPIE ROAD tachado y ARSENAL escrito en «Aquí todo es Arsenal» (10,0–10,9 s); cartas y calendario en «Presionó durante meses» (11,6–12,8 s); billete, mapa de línea y cartel, uno por palabra (15,1–16,9 s); andén de 2017 en «baldosas» (17,5 s) y la entrada en «siguen»; línea de puntos metro→estadio y CAMPO en ultravioleta en «campo» (22,7 s). Pega: el contador de la fecha rueda por años falsos (31·10·1911 a 13,5 s, 31·10·1924 a 13,6 s) antes de fijar 1932. |
+| Transiciones | 14/15 | Viajes en las pausas, sin destellos ni cortes (2,2–2,8 s, 5,9–6,3 s, 9,5 s, 11,0–11,5 s, 12,9–13,3 s, 17,0 s, 19,4 s); fundido limpio al cierre (23,3–23,9 s). El viaje de 12,9–13,3 s llega justo para «En» (13,3 s). |
+| Sonido | 14/15 | Whisper small: salen las 55 palabras de la historia (incluidas «Gillespie Road» ×2 y «1932») y el cierre completo. Voz confiada y clara. Voz ≈ −19 dB RMS por segundo; música en las pausas entre −32 y −37 dB (2,1–2,55 s: −34,8; 7,45–7,7 s: −36,9; 16,95–17,35 s: −32,7): la voz va 13–17 dB por encima. Pico estéreo −0,9 dBFS (9,8 s, voz), sin muestras recortadas; LRA 2,6 LU. Efectos bajos y sin picos (máx. por ventana de 50 ms estable, −11 a −16 dB, siempre la voz). Música real de Epidemic (orquesta y piano), sin sonido sintetizado. |
+| Verdad y fuentes | 14/15 | Todo lo que dice la voz tiene fuente en el guion: entrenador del Arsenal 1925–1934 (English Heritage), Gillespie Road junto al estadio (Wikipedia, Arsenal.com), la cita «Whoever heard of Gillespie Road? It is Arsenal around here!» y «months of lobbying» (Arsenal.com), 31/10/1932 y billetes, mapas y carteles (Arsenal.com), azulejos que siguen en el andén (Wikipedia + fotos de 2005 y 2017). El remate está planteado como lectura, no como cita. Cartas, billete, mapa y cartel rotulados «recreación». Resta: los años falsos del contador (13,5–13,6 s). |
+| Estética | 12/15 | Paleta, Instrument Serif + Jakarta 800 y ultravioleta una sola vez (CAMPO), bien. Fotos con licencia (dominio público y CC BY-SA, de Commons) y acreditadas; no hay escudo del Arsenal ni logotipo del metro, y nada sugiere que el club o TfL apoyen ProTeam. Pegas: ARSENAL de 1,8–2,2 s a unos 30 px del borde izquierdo (no se corta, pero va muy justo); el tercio inferior queda vacío en 6,5–9,5 s (bocadillo) y 11,5–13 s (cartas); créditos del pie ilegibles a tamaño móvil (20,5–23 s), aunque están completos en el caption. |
+
+**Total: 89/100.** No hay motivo de suspenso automático: datos con fuente; sin fechas de lanzamiento, precios ni cifras de apuntados; sin el nombre de Biel; fotos con licencia; nada de texto cortado o solapado en reposo (las letras cortadas de 2,4 s y 13,6 s salen en pleno viaje); música y efectos reales de Epidemic. Caption revisado: fuentes, créditos y cierre correctos.
+
+## Mejoras (no bloquean; para la próxima pieza o si se vuelve a montar)
+1. **Contador de la fecha (13,3–14,5 s):** que no ruede por años que no pasaron. Mejor 1906 → 1932 (apertura → cambio) o que entre 31·10·1932 directamente con un clic.
+2. **Gancho:** empezar la voz por lo raro, por ejemplo «Un entrenador le cambió el nombre al metro de Londres», y después presentar a Chapman.
+3. **Margen de ARSENAL (1,8–2,2 s):** dejar al menos 60 px reales a cada lado o bajar el cuerpo de letra.
+4. **Composición:** llenar el tercio inferior en el bocadillo (6,5–9,5 s) y en las cartas (11,5–13 s): subir la escena o agrandar los elementos.
+5. **Créditos del pie:** a 22–24 px reales o solo en el caption.

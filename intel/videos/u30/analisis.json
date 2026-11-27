@@ -1,0 +1,1540 @@
+{
+ "meta": {
+  "contenedor": "mov,mp4,m4a,3gp,3g2,mj2",
+  "duracion_s": 28.267,
+  "tamano_bytes": 6250884,
+  "bitrate_kbps": 1769,
+  "ancho": 1080,
+  "alto": 1920,
+  "relacion": "9:16",
+  "fps": 30.0,
+  "fotogramas_declarados": 848,
+  "codec_video": "h264",
+  "pix_fmt": "yuv420p",
+  "pistas_audio": [
+   {
+    "codec": "aac",
+    "canales": 2,
+    "hz": 48000,
+    "bitrate_kbps": 192
+   }
+  ],
+  "etiquetas": {
+   "major_brand": "isom",
+   "minor_version": "512",
+   "compatible_brands": "isomiso2avc1mp41",
+   "encoder": "Lavf60.16.100"
+  },
+  "id": "u30",
+  "fotogramas_leidos": 848,
+  "sha256": "3f739cacb181d647ca30d7db2fa106113911896348456cdf758521ad77deee5e",
+  "archivo": "reels/u30-por-dentro-presion-alta.mp4",
+  "fuente": "",
+  "marca": "proteam",
+  "tipo": "propio",
+  "formato": "reel",
+  "tema": "ProTeam por dentro: la frase de arriba (fútbol)",
+  "analizado": "2026-11-17 16:56"
+ },
+ "montaje": {
+  "cortes_duros": 6,
+  "transiciones_o_movimientos_fuertes": 0,
+  "planos": 7,
+  "duracion_media_plano_s": 4.04,
+  "plano_mas_largo_s": 6.667,
+  "plano_mas_corto_s": 1.933,
+  "cortes_por_10s": 2.12,
+  "tramos_estaticos": [
+   {
+    "desde": 0.0,
+    "hasta": 1.73,
+    "duracion_s": 1.73
+   },
+   {
+    "desde": 10.77,
+    "hasta": 12.7,
+    "duracion_s": 1.93
+   },
+   {
+    "desde": 13.17,
+    "hasta": 15.27,
+    "duracion_s": 2.1
+   }
+  ],
+  "nota": "Detección automática por histograma y diferencia de imagen sobre TODOS los fotogramas. Un motion graphic continuo cuenta como un solo plano; un cambio de fondo brusco dentro de una animación puede contarse como corte. Confirmar en las láminas."
+ },
+ "cortes": [
+  {
+   "fotograma": 181,
+   "t": 6.033,
+   "tipo": "corte",
+   "fuerza": 0.322
+  },
+  {
+   "fotograma": 381,
+   "t": 12.7,
+   "tipo": "corte",
+   "fuerza": 0.415
+  },
+  {
+   "fotograma": 498,
+   "t": 16.6,
+   "tipo": "corte",
+   "fuerza": 1.0
+  },
+  {
+   "fotograma": 622,
+   "t": 20.733,
+   "tipo": "corte",
+   "fuerza": 0.489
+  },
+  {
+   "fotograma": 713,
+   "t": 23.767,
+   "tipo": "corte",
+   "fuerza": 0.93
+  },
+  {
+   "fotograma": 790,
+   "t": 26.333,
+   "tipo": "corte",
+   "fuerza": 0.809
+  }
+ ],
+ "escenas": [
+  {
+   "escena": 1,
+   "desde_fotograma": 0,
+   "hasta_fotograma": 180,
+   "desde": 0.0,
+   "hasta": 6.033,
+   "duracion_s": 6.033,
+   "movimiento_medio": 0.0026,
+   "luz_media": 0.158,
+   "saturacion_media": 0.376
+  },
+  {
+   "escena": 2,
+   "desde_fotograma": 181,
+   "hasta_fotograma": 380,
+   "desde": 6.033,
+   "hasta": 12.7,
+   "duracion_s": 6.667,
+   "movimiento_medio": 0.0108,
+   "luz_media": 0.657,
+   "saturacion_media": 0.136
+  },
+  {
+   "escena": 3,
+   "desde_fotograma": 381,
+   "hasta_fotograma": 497,
+   "desde": 12.7,
+   "hasta": 16.6,
+   "duracion_s": 3.9,
+   "movimiento_medio": 0.0138,
+   "luz_media": 0.899,
+   "saturacion_media": 0.046
+  },
+  {
+   "escena": 4,
+   "desde_fotograma": 498,
+   "hasta_fotograma": 621,
+   "desde": 16.6,
+   "hasta": 20.733,
+   "duracion_s": 4.133,
+   "movimiento_medio": 0.0089,
+   "luz_media": 0.085,
+   "saturacion_media": 0.381
+  },
+  {
+   "escena": 5,
+   "desde_fotograma": 622,
+   "hasta_fotograma": 712,
+   "desde": 20.733,
+   "hasta": 23.767,
+   "duracion_s": 3.033,
+   "movimiento_medio": 0.0035,
+   "luz_media": 0.178,
+   "saturacion_media": 0.28
+  },
+  {
+   "escena": 6,
+   "desde_fotograma": 713,
+   "hasta_fotograma": 789,
+   "desde": 23.767,
+   "hasta": 26.333,
+   "duracion_s": 2.567,
+   "movimiento_medio": 0.005,
+   "luz_media": 0.091,
+   "saturacion_media": 0.406
+  },
+  {
+   "escena": 7,
+   "desde_fotograma": 790,
+   "hasta_fotograma": 847,
+   "desde": 26.333,
+   "hasta": 28.267,
+   "duracion_s": 1.933,
+   "movimiento_medio": 0.0077,
+   "luz_media": 0.148,
+   "saturacion_media": 0.382
+  }
+ ],
+ "laminas": [
+  {
+   "lamina": "general_001.jpg",
+   "fotogramas": [
+    0,
+    5,
+    10,
+    15,
+    20,
+    25,
+    45,
+    90,
+    135,
+    180,
+    181,
+    226,
+    271,
+    280,
+    316,
+    361,
+    380,
+    381
+   ],
+   "desde": 0.0,
+   "hasta": 12.7,
+   "modo": "general"
+  },
+  {
+   "lamina": "general_002.jpg",
+   "fotogramas": [
+    426,
+    439,
+    471,
+    497,
+    498,
+    543,
+    559,
+    588,
+    621,
+    622,
+    667,
+    712,
+    713,
+    751,
+    789,
+    790,
+    818,
+    847
+   ],
+   "desde": 14.2,
+   "hasta": 28.233,
+   "modo": "general"
+  },
+  {
+   "lamina": "detalle_001.jpg",
+   "fotogramas": [
+    0,
+    8,
+    16,
+    24,
+    32,
+    40,
+    48,
+    56,
+    64,
+    72,
+    80,
+    88,
+    96,
+    104,
+    112,
+    120,
+    128,
+    136,
+    144,
+    152,
+    160,
+    168,
+    176,
+    180
+   ],
+   "desde": 0.0,
+   "hasta": 6.0,
+   "modo": "detalle"
+  },
+  {
+   "lamina": "detalle_002.jpg",
+   "fotogramas": [
+    181,
+    184,
+    192,
+    200,
+    208,
+    216,
+    224,
+    232,
+    240,
+    248,
+    256,
+    264,
+    272,
+    280,
+    288,
+    296,
+    304,
+    312,
+    320,
+    328,
+    336,
+    344,
+    352,
+    360
+   ],
+   "desde": 6.033,
+   "hasta": 12.0,
+   "modo": "detalle"
+  },
+  {
+   "lamina": "detalle_003.jpg",
+   "fotogramas": [
+    368,
+    376,
+    380,
+    381,
+    384,
+    392,
+    400,
+    408,
+    416,
+    424,
+    432,
+    440,
+    448,
+    456,
+    464,
+    472,
+    480,
+    488,
+    496,
+    497,
+    498,
+    504,
+    512,
+    520
+   ],
+   "desde": 12.267,
+   "hasta": 17.333,
+   "modo": "detalle"
+  },
+  {
+   "lamina": "detalle_004.jpg",
+   "fotogramas": [
+    528,
+    536,
+    544,
+    552,
+    560,
+    568,
+    576,
+    584,
+    592,
+    600,
+    608,
+    616,
+    621,
+    622,
+    624,
+    632,
+    640,
+    648,
+    656,
+    664,
+    672,
+    680,
+    688,
+    696
+   ],
+   "desde": 17.6,
+   "hasta": 23.2,
+   "modo": "detalle"
+  },
+  {
+   "lamina": "detalle_005.jpg",
+   "fotogramas": [
+    704,
+    712,
+    713,
+    720,
+    728,
+    736,
+    744,
+    752,
+    760,
+    768,
+    776,
+    784,
+    789,
+    790,
+    792,
+    800,
+    808,
+    816,
+    824,
+    832,
+    840
+   ],
+   "desde": 23.467,
+   "hasta": 28.0,
+   "modo": "detalle"
+  }
+ ],
+ "texto_en_pantalla": {
+  "idioma": "spa+eng",
+  "nota": "OCR automático sobre los fotogramas muestreados: puede fallar con tipografía fina, texto animado o sobre foto. La exposición es aproximada (resolución = intervalo de muestreo). Verificar siempre en las láminas.",
+  "por_fotograma": [
+   {
+    "fotograma": 0,
+    "t": 0.0,
+    "texto": "EL PARTIDO DEL SÁBADO Sábado: ALTA Martes: rondo. Jueves: físico. 42"
+   },
+   {
+    "fotograma": 5,
+    "t": 0.167,
+    "texto": "EL PARTIDO DEL SÁBADO Sábado: ALTA Martes: rondo. Júéves: físico. fa"
+   },
+   {
+    "fotograma": 8,
+    "t": 0.267,
+    "texto": "EL PARTIDO DEL SÁBADO Sábado: Martes: rondo. Jueves: físico."
+   },
+   {
+    "fotograma": 10,
+    "t": 0.333,
+    "texto": "EL PARTIDO DEL SÁBADO Sábado: ALTA Martes: rondo. Jueves: fisico. 42 he"
+   },
+   {
+    "fotograma": 15,
+    "t": 0.5,
+    "texto": "EL PARTIDO DEL SÁBADO Sábado: PRESION ALTA Martes: rondo. Jueves: fisico."
+   },
+   {
+    "fotograma": 16,
+    "t": 0.533,
+    "texto": "EL PARTIDO DEL SÁBADO Sábado: ALTA Martes: rondo. Jueves: físico. 42"
+   },
+   {
+    "fotograma": 20,
+    "t": 0.667,
+    "texto": "EL PARTIDO DEL SÁBADO Sábado: Martes: rondo. Jueves:"
+   },
+   {
+    "fotograma": 24,
+    "t": 0.8,
+    "texto": "EL PARTIDO DEL SÁBADO Sábado: PRESION ALTA Martes: rondo. Jueves: físico. ES"
+   },
+   {
+    "fotograma": 25,
+    "t": 0.833,
+    "texto": "EL PARTIDO DEL SÁBADO Sábado: PRESION ALTA Martes: rondo. Jueves: físico fa"
+   },
+   {
+    "fotograma": 32,
+    "t": 1.067,
+    "texto": "EL PARTIDO DEL SÁBADO Sábado: ALTA Martes: rondo. Jueves:"
+   },
+   {
+    "fotograma": 40,
+    "t": 1.333,
+    "texto": "EL PARTIDO DEL SÁBADO Sábado: Martes: rondo. Jueves:"
+   },
+   {
+    "fotograma": 45,
+    "t": 1.5,
+    "texto": "EL PARTIDO DEL SÁBADO Sábado: Martes: rondo. Jueves: ia ME"
+   },
+   {
+    "fotograma": 48,
+    "t": 1.6,
+    "texto": "EL PARTIDO DEL SÁBADO Sábado: PRESION ALTA Martes: rondo. Jueves: fisico. fa"
+   },
+   {
+    "fotograma": 56,
+    "t": 1.867,
+    "texto": "EL PARTIDO DEL SÁBADO Sábado: ALTA Martes: rondo. físico."
+   },
+   {
+    "fotograma": 64,
+    "t": 2.133,
+    "texto": "EL PARTIDO DEL SÁBADO Sábado: Martes: rondo. físico."
+   },
+   {
+    "fotograma": 72,
+    "t": 2.4,
+    "texto": "EL PARTIDO DEL SÁBADO Sábado: PRESION ALTA Martes: rondo. fisico."
+   },
+   {
+    "fotograma": 80,
+    "t": 2.667,
+    "texto": "EL PARTIDO DEL SÁBADO Sábado: Martes: rondo. fisico."
+   },
+   {
+    "fotograma": 88,
+    "t": 2.933,
+    "texto": "EL PARTIDO DEL SÁBADO Sábado: Martes: rondo. fisico. Ma"
+   },
+   {
+    "fotograma": 90,
+    "t": 3.0,
+    "texto": "EL PARTIDO DEL SÁBADO Sábado: Martes: rondo. fisico. Ma"
+   },
+   {
+    "fotograma": 96,
+    "t": 3.2,
+    "texto": "EL PARTIDO DEL SÁBADO Sábado: PRESIÓN ALTA Martes: rondo. ae"
+   },
+   {
+    "fotograma": 104,
+    "t": 3.467,
+    "texto": "EL PARTIDO DEL SÁBADO Sábado: PRESIÓN ALTA Martes: rondo. Jueves: físico."
+   },
+   {
+    "fotograma": 112,
+    "t": 3.733,
+    "texto": "EL PARTIDO DEL SÁBADO Sábado: PRESIÓN ALTA Martes: rondo."
+   },
+   {
+    "fotograma": 120,
+    "t": 4.0,
+    "texto": "EL PARTIDO DEL SÁBADO Sábado: PRESIÓN ALTA Martes: rondo. Jueves: 14"
+   },
+   {
+    "fotograma": 128,
+    "t": 4.267,
+    "texto": "EL PARTIDO DEL SÁBADO Sábado: PRESIÓN ALTA Martes: rondo. Jueves: fis"
+   },
+   {
+    "fotograma": 135,
+    "t": 4.5,
+    "texto": "EL PARTIDO DEL SÁBADO Sábado: PRESION ALTA Martes: rondo. Jueves: físico."
+   },
+   {
+    "fotograma": 136,
+    "t": 4.533,
+    "texto": "EL PARTIDO DEL SABADO Sabado PRESION ALTA Martes: rondo Jueves: físico"
+   },
+   {
+    "fotograma": 144,
+    "t": 4.8,
+    "texto": "EL PARTIDO DEL SÁBADO Sábado: PRESIÓN ALTA Martes: fisico. he NI ón?"
+   },
+   {
+    "fotograma": 152,
+    "t": 5.067,
+    "texto": "EL PARTIDO DEL SÁBADO Sabado PRESION ALTA Martes: Jueves:"
+   },
+   {
+    "fotograma": 160,
+    "t": 5.333,
+    "texto": "EL PARTIDO DEL SÁBADO Sabado PRESION ALTA Martes: Jueves: ¿Yla pres"
+   },
+   {
+    "fotograma": 168,
+    "t": 5.6,
+    "texto": "EL PARTIDO DEL SÁBADO Sabado PRESION ALTA Martes: Jueves: ty aA ¿Yla pres"
+   },
+   {
+    "fotograma": 176,
+    "t": 5.867,
+    "texto": "EL PARTIDO DEL SÁBADO Sabado PRESION ALTA Martes: Jueves: la pres"
+   },
+   {
+    "fotograma": 180,
+    "t": 6.0,
+    "texto": "EL PARTIDO DEL SÁBADO Sabado PRESION ALTA Martes: Jueves: ¿Ylapres"
+   },
+   {
+    "fotograma": 181,
+    "t": 6.033,
+    "texto": "EL PARTIDO DEL SÁBADO Sabado PRESION ALTA Martes: Jueves: 74 esió"
+   },
+   {
+    "fotograma": 184,
+    "t": 6.133,
+    "texto": "Semana Planificación Semana 67"
+   },
+   {
+    "fotograma": 192,
+    "t": 6.4,
+    "texto": "PLANIFICACIÓN CAPTURA REAL Semana Planificación Semana Semana Preparar el partido del sábado: presión alta salida por fuera Hoy Editar semana Informe PDF 9h15 min"
+   },
+   {
+    "fotograma": 200,
+    "t": 6.667,
+    "texto": "PLANIFICACIÓN CAPTURA REAL Semana Planificación Semana Semana Preparar el partido del sábado: presión alta salida por fuera Hoy Editar semana informe PDF 9h15"
+   },
+   {
+    "fotograma": 208,
+    "t": 6.933,
+    "texto": "PLANIFICACIÓN CAPTURA REAL Semana Planificación eman Semana Preparar el partido del sábado: presión alta salida por fuera Hoy Editar semana informe PDF 9h15"
+   },
+   {
+    "fotograma": 216,
+    "t": 7.2,
+    "texto": "PLANIFICACIÓN CAPTURA REAL Semana Planificación eman Semana Preparar el partido del sábado: presión alta salida por fuera Hoy Editar semana informe PDF 9h15"
+   },
+   {
+    "fotograma": 224,
+    "t": 7.467,
+    "texto": "PLANIFICACIÓN CAPTURA REAL Una frase arriba Planificación Semana Semana Preparar el partido del sábado: presión alta salida po: fuera Hoy Editar semana Informe PDF 9h15 min"
+   },
+   {
+    "fotograma": 226,
+    "t": 7.533,
+    "texto": "PLANIFICACIÓN CAPTURA REAL Una frase arriba Planificación Sem ana Semana Preparar el partido del sábado: presión alta salida por fuera Hoy Editar seman. informe PDF 9h15 min"
+   },
+   {
+    "fotograma": 232,
+    "t": 7.733,
+    "texto": "PLANIFICACIÓN CAPTURA REAL Una frase arriba Planificación Semana ar el pat di sábado: presión alta salida por Hoy 9h15 min"
+   },
+   {
+    "fotograma": 240,
+    "t": 8.0,
+    "texto": "PLANIFICACIÓN CAPTURA REAL Una frase arriba Planificación Semana ar el pat abado: pi po Hoy Editar sema 9h15 min"
+   },
+   {
+    "fotograma": 248,
+    "t": 8.267,
+    "texto": "PLANIFICACIÓN CAPTURA REAL Una frase arriba Planificación Semana ar el pat abado: pi po Hoy Editar sema 9h15 min"
+   },
+   {
+    "fotograma": 256,
+    "t": 8.533,
+    "texto": "PLANIFICACIÓN CAPTURA REAL Una frase arriba Planificación Semana ar el pat abado: pi po Hoy Editar sema 9h15 min"
+   },
+   {
+    "fotograma": 264,
+    "t": 8.8,
+    "texto": "PLANIFICACIÓN CAPTURA REAL Una frase arriba Planificación Semana ar el pat abado: pi po Hoy Editar sema 9h15 min"
+   },
+   {
+    "fotograma": 271,
+    "t": 9.033,
+    "texto": "PLANIFICACIÓN CAPTURA REAL Una frase arriba Planificación Semana ar el pat abado: pi po Hoy Editar sema 9h15 min"
+   },
+   {
+    "fotograma": 272,
+    "t": 9.067,
+    "texto": "PLANIFICACIÓN CAPTURA REAL Una frase arriba Planificación Semana ara! sábado: presión alta salid: Hoy Edit. 9h15 min"
+   },
+   {
+    "fotograma": 280,
+    "t": 9.333,
+    "texto": "PLANIFICACIÓN CAPTURA REAL Una frase arriba cio com mporace Semana Semana Preparar el partido dels. ado: presión salida por Hoy Editar semana informe PDF 9h15 min"
+   },
+   {
+    "fotograma": 288,
+    "t": 9.6,
+    "texto": "PLANIFICACIÓN CAPTURA REAL Una frase arriba Semana Preparar el partido del sábado: presión alta salida por uera Hoy Editar semana Informe PDF min"
+   },
+   {
+    "fotograma": 296,
+    "t": 9.867,
+    "texto": "PLANIFICACIÓN CAPTURA REAL Una frase arriba Semana Preparar el partido del sábado: presión alta salida por uera Hoy Editar semana Informe PDF min"
+   },
+   {
+    "fotograma": 304,
+    "t": 10.133,
+    "texto": "PLANIFICACIÓN CAPTURA REAL Una frase arriba Semana Preparar el partido del sábado: presión alta salida por uera Hoy Editar semana 185] Informe PDF min"
+   },
+   {
+    "fotograma": 312,
+    "t": 10.4,
+    "texto": "PLANIFICACIÓN CAPTURA REAL Una frase arriba Semana Preparar el partido del sábado: presión alta salida por uera Hoy Editar semana 185] Informe PDF min"
+   },
+   {
+    "fotograma": 316,
+    "t": 10.533,
+    "texto": "PLANIFICACIÓN CAPTURA REAL Una frase arriba Semana Preparar el partido del sábado: presión alta salida por uera Hoy Editar semana 185] Informe PDF min"
+   },
+   {
+    "fotograma": 320,
+    "t": 10.667,
+    "texto": "PLANIFICACIÓN CAPTURA REAL Una frase arriba Semana Hoy Editar semana 185] Informe PDF min"
+   },
+   {
+    "fotograma": 328,
+    "t": 10.933,
+    "texto": "PLANIFICACIÓN CAPTURA REAL Semana Preparar el partido del sábado: presión alta salida por fuera Hoy Editar semana Informe PDF 9h15 min"
+   },
+   {
+    "fotograma": 336,
+    "t": 11.2,
+    "texto": "PLANIFICACIÓN CAPTURA REAL Semana Preparar el partido del sábado: presión alta salida por fuera Hoy Editar semana Informe PDF 9h15 min"
+   },
+   {
+    "fotograma": 344,
+    "t": 11.467,
+    "texto": "PLANIFICACIÓN CAPTURA REAL Semana Preparar el partido del sábado: presión alta salida por fuera Hoy Editar semana Informe PDF 9h15 min"
+   },
+   {
+    "fotograma": 352,
+    "t": 11.733,
+    "texto": "PLANIFICACIÓN CAPTURA REAL Semana Preparar el partido del sábado: presión alta salida por fuera Hoy Editar semana Informe PDF 9h15 min"
+   },
+   {
+    "fotograma": 360,
+    "t": 12.0,
+    "texto": "PLANIFICACIÓN CAPTURA REAL Semana Preparar el partido del sábado: presión alta salida por fuera Hoy Editar semana Informe PDF 9h15 min"
+   },
+   {
+    "fotograma": 361,
+    "t": 12.033,
+    "texto": "PLANIFICACIÓN CAPTURA REAL Semana Preparar el partido del sábado: presión alta salida por fuera Hoy Editar semana Informe PDF 9h15 min"
+   },
+   {
+    "fotograma": 368,
+    "t": 12.267,
+    "texto": "PLANIFICACIÓN CAPTURA REAL Semana Preparar el partido del sábado: presión alta salida por fuera Hoy Editar semana Informe PDF 9h15 min"
+   },
+   {
+    "fotograma": 376,
+    "t": 12.533,
+    "texto": "PLANIFICACIÓN CAPTURA REAL Semana Preparar el partido del sábado: presión alta salida por fuera Hoy Editar semana Informe PDF 9h15 min"
+   },
+   {
+    "fotograma": 380,
+    "t": 12.667,
+    "texto": "PLANIFICACIÓN CAPTURA REAL Semana Preparar el partido del sábado: presión alta salida por fuera Hoy Editar semana Informe PDF 9h15 min"
+   },
+   {
+    "fotograma": 381,
+    "t": 12.7,
+    "texto": "PLANIFICACIÓN CAPTURA REAL emana Semana ompe Preparar el partido del sábado: presión alta salida por fuera Hoy Editar semana Informe PDF 9h 15 min"
+   },
+   {
+    "fotograma": 384,
+    "t": 12.8,
+    "texto": "Planificación Terr ada Semana Semana Pr parar el partido del sábado presión alta salida por uera Hoy Editar semana Informe PDF min"
+   },
+   {
+    "fotograma": 392,
+    "t": 13.067,
+    "texto": "GUÁRDALO PARA EL DOMINGO Una frase arriba. presión alta salida por fuera LUN MAR MIÉ JUE VIE"
+   },
+   {
+    "fotograma": 400,
+    "t": 13.333,
+    "texto": "GUÁRDALO PARA EL DOMINGO Una frase arriba. presión alta salida por fuera LUN MAR MIÉ JUE VIE"
+   },
+   {
+    "fotograma": 408,
+    "t": 13.6,
+    "texto": "GUÁRDALO PARA EL DOMINGO Una frase arriba. presión alta salida por fuera LUN MAR MIÉ JUE VIE"
+   },
+   {
+    "fotograma": 416,
+    "t": 13.867,
+    "texto": "GUÁRDALO PARA EL DOMINGO Una frase arriba. presión alta salida por fuera LUN MAR MIÉ JUE VIE"
+   },
+   {
+    "fotograma": 424,
+    "t": 14.133,
+    "texto": "GUÁRDALO PARA EL DOMINGO Una frase arriba. presión alta salida por fuera LUN MAR MIÉ JUE VIE"
+   },
+   {
+    "fotograma": 426,
+    "t": 14.2,
+    "texto": "GUÁRDALO PARA EL DOMINGO Una frase arriba. presión alta salida por fuera LUN MAR MIÉ JUE VIE"
+   },
+   {
+    "fotograma": 432,
+    "t": 14.4,
+    "texto": "GUÁRDALO PARA EL DOMINGO Una frase arriba. DE presión alta salida por fuera LUN MAR MIÉ JUE VIE"
+   },
+   {
+    "fotograma": 439,
+    "t": 14.633,
+    "texto": "GUÁRDALO PARA EL DOMINGO Una frase arriba. presión alta ysalida por fuera LUN MAR MIÉ JUE VIE"
+   },
+   {
+    "fotograma": 440,
+    "t": 14.667,
+    "texto": "GUÁRDALO PARA EL DOMINGO Una frase arriba. presión alta salida por fuera LUN MAR MIÉ JUE VIE"
+   },
+   {
+    "fotograma": 448,
+    "t": 14.933,
+    "texto": "GUÁRDALO PARA EL DOMINGO Una frase arriba. presión alta salida por fuera LUN MAR MIÉ JUE VIE"
+   },
+   {
+    "fotograma": 456,
+    "t": 15.2,
+    "texto": "GUÁRDALO PARA EL DOMINGO Una frase arriba. presión alta salida por fuera LUN MAR MIÉ JUE VIE"
+   },
+   {
+    "fotograma": 464,
+    "t": 15.467,
+    "texto": "GUÁRDALO PARA EL DOMINGO Una frase arriba. SEMANA OBJETIVO DEL SABADO presión alta salida por fuera LUN recuperar MIÉ fuerza JUE táctica VIE activación El martes, entrenarla"
+   },
+   {
+    "fotograma": 471,
+    "t": 15.7,
+    "texto": "GUARDALO PARA EL DOMINGO Una frase arriba SEMANA OBJETIVO DEL SABADO alta) por fuera LUN cuperar MAR presión tras pérdida MIÉ fuerza JUE tacti VIE acion El martes, entrenarla"
+   },
+   {
+    "fotograma": 472,
+    "t": 15.733,
+    "texto": "GUARDALO PARA EL DOMINGO Una frase arriba SEMANA OBJETIVO DEL SABADO alta) por fuera LUN ecuperar MAR presión tras pérdida MIÉ fuerza JUE tacti VIE ación El martes, entrenarla"
+   },
+   {
+    "fotograma": 480,
+    "t": 16.0,
+    "texto": "GUÁRDALO PARA EL DOMINGO Una frase arriba. presión alta salida por fuera LUN recuperar MAR presión tras pérdida MIÉ fuerza JUE táctica VIE activación El martes, entrenarla"
+   },
+   {
+    "fotograma": 488,
+    "t": 16.267,
+    "texto": "GUÁRDALO PARA EL DOMINGO Una frase arriba. SEMANA OBJETIVO DEL SABADO presión alta salida por fuera LUN recuperar MAR presión tras pérdida MIÉ fuerza JUE tactica VIE activación El martes, entrenarla"
+   },
+   {
+    "fotograma": 496,
+    "t": 16.533,
+    "texto": "GUÁRDALO PARA EL DOMINGO Una frase arriba. SEMANA OBJETIVO DEL SABADO presión alta salida por fuera LUN recuperar MAR presión tras pérdida MIÉ fuerza JUE VIE activación El martes, entrenarla"
+   },
+   {
+    "fotograma": 497,
+    "t": 16.567,
+    "texto": "GUÁRDALO PARA EL DOMINGO Una frase arriba. EMAN OB JETIVO DEL SABADO presión alla salida por LUN MAR presión tras pérdida fuerza MIÉ JUE VIE El martes"
+   },
+   {
+    "fotograma": 498,
+    "t": 16.6,
+    "texto": "EN 11%"
+   },
+   {
+    "fotograma": 504,
+    "t": 16.8,
+    "texto": "Comenta"
+   },
+   {
+    "fotograma": 512,
+    "t": 17.067,
+    "texto": "Comenta tu deporte"
+   },
+   {
+    "fotograma": 520,
+    "t": 17.333,
+    "texto": "Comenta tu deporte"
+   },
+   {
+    "fotograma": 528,
+    "t": 17.6,
+    "texto": "Comenta tu deporte"
+   },
+   {
+    "fotograma": 536,
+    "t": 17.867,
+    "texto": "Comenta tu deporte tu categoría"
+   },
+   {
+    "fotograma": 543,
+    "t": 18.1,
+    "texto": "Comenta tu deporte tu categoría"
+   },
+   {
+    "fotograma": 544,
+    "t": 18.133,
+    "texto": "Comenta tu deporte tu categoría"
+   },
+   {
+    "fotograma": 552,
+    "t": 18.4,
+    "texto": "Comenta tu deporte tu categoría"
+   },
+   {
+    "fotograma": 559,
+    "t": 18.633,
+    "texto": "Comenta tu deporte categoría tus dias"
+   },
+   {
+    "fotograma": 560,
+    "t": 18.667,
+    "texto": "Comenta tu deporte tu categoría tus días"
+   },
+   {
+    "fotograma": 568,
+    "t": 18.933,
+    "texto": "Comenta tu deporte _tu categoria tus dias"
+   },
+   {
+    "fotograma": 576,
+    "t": 19.2,
+    "texto": "Comenta tu deporte _tu categoria días le preparo"
+   },
+   {
+    "fotograma": 584,
+    "t": 19.467,
+    "texto": "Comenta tu deporte tu categoría tus días le preparo la primera semana"
+   },
+   {
+    "fotograma": 588,
+    "t": 19.6,
+    "texto": "Comenta tu deporte tu categoría tus días le preparo la primera semana"
+   },
+   {
+    "fotograma": 592,
+    "t": 19.733,
+    "texto": "Comenta tu deporte tu categoría tus días le preparo la primera semana"
+   },
+   {
+    "fotograma": 600,
+    "t": 20.0,
+    "texto": "Comenta tu deporte tu categoría tus días le preparo la primera semana"
+   },
+   {
+    "fotograma": 608,
+    "t": 20.267,
+    "texto": "Comenta tu deporte tu categoría tus días le preparo la primera semana"
+   },
+   {
+    "fotograma": 616,
+    "t": 20.533,
+    "texto": "Comenta tu deporte tu categoría tus días le preparo la primera semana"
+   },
+   {
+    "fotograma": 621,
+    "t": 20.7,
+    "texto": "Comenta tu deporte tu categoría tus días le preparo la primera semana"
+   },
+   {
+    "fotograma": 622,
+    "t": 20.733,
+    "texto": "Comenta tu deporte tu categoría tus le preparo la primera semana"
+   },
+   {
+    "fotograma": 624,
+    "t": 20.8,
+    "texto": "TE eb mta te dias MEF"
+   },
+   {
+    "fotograma": 632,
+    "t": 21.067,
+    "texto": "RETO PARA TU STAFF com,"
+   },
+   {
+    "fotograma": 640,
+    "t": 21.333,
+    "texto": "RETO PARA TU STAFF"
+   },
+   {
+    "fotograma": 648,
+    "t": 21.6,
+    "texto": "et RETO PARA TU STAFF"
+   },
+   {
+    "fotograma": 656,
+    "t": 21.867,
+    "texto": "de RETO PARA TU STAFF ¿Qué frase va arriba"
+   },
+   {
+    "fotograma": 664,
+    "t": 22.133,
+    "texto": "de RETO PARA TU STAFF ¿Qué frase va arriba"
+   },
+   {
+    "fotograma": 667,
+    "t": 22.233,
+    "texto": "ES aye RETO PARA TU STAFF ¿Qué frase arriba"
+   },
+   {
+    "fotograma": 672,
+    "t": 22.4,
+    "texto": "RETO PARA TU STAFF ¿Qué frase va arriba de esta seman."
+   },
+   {
+    "fotograma": 680,
+    "t": 22.667,
+    "texto": "ES RETO PARA TU STAFF ¿Qué frase va arriba de esta semana? 35"
+   },
+   {
+    "fotograma": 688,
+    "t": 22.933,
+    "texto": "RETO PARA TU STAFF ¿Qué frase arriba de esta semana?"
+   },
+   {
+    "fotograma": 696,
+    "t": 23.2,
+    "texto": "RETO PARA TU STAFF ¿Qué frase va arriba de esta semana?"
+   },
+   {
+    "fotograma": 704,
+    "t": 23.467,
+    "texto": "hr RETO PARA TU STAFF ¿Qué frase va arriba de esta semana?"
+   },
+   {
+    "fotograma": 712,
+    "t": 23.733,
+    "texto": ""
+   },
+   {
+    "fotograma": 713,
+    "t": 23.767,
+    "texto": "LISTA DE ESPERA"
+   },
+   {
+    "fotograma": 720,
+    "t": 24.0,
+    "texto": "LISTA DE ESPERA HORAS 14 29 59 Mi"
+   },
+   {
+    "fotograma": 728,
+    "t": 24.267,
+    "texto": "LISTA DE ESPERA 09 14 37 bias HORAS SEG entrenador@miclub.es|"
+   },
+   {
+    "fotograma": 736,
+    "t": 24.533,
+    "texto": "LISTA DE ESPERA 09 11 02 bias HORAS SEG entrenador@miclub.es"
+   },
+   {
+    "fotograma": 744,
+    "t": 24.8,
+    "texto": "LISTA DE ESPERA 09 04 40 29 bias HORAS SEG entrenador@miclub.es| Cir"
+   },
+   {
+    "fotograma": 751,
+    "t": 25.033,
+    "texto": "LISTA DE ESPERA 08 16 50 bias HORAS SEG entrenador@miclub.es"
+   },
+   {
+    "fotograma": 752,
+    "t": 25.067,
+    "texto": "LISTA DE ESPERA 14 10 08 bias HORAS MIN SEG entrenador@miclub.es"
+   },
+   {
+    "fotograma": 760,
+    "t": 25.333,
+    "texto": "LISTA DE ESPERA 14 17 07 bias HORAS MIN SEG entrenador@miclub.es"
+   },
+   {
+    "fotograma": 768,
+    "t": 25.6,
+    "texto": "LISTA DE ESPERA 06 02 22 59 bias HORAS SEG entrenador@miclub.es"
+   },
+   {
+    "fotograma": 776,
+    "t": 25.867,
+    "texto": "LISTA DE ESPERA 03 23 38 29 bias HORAS MIN SEG entrenador@miclub.es"
+   },
+   {
+    "fotograma": 784,
+    "t": 26.133,
+    "texto": "LISTA DE ESPERA 01 03 58 DÍAS HORAS SEG entrenador@miclub.es CE"
+   },
+   {
+    "fotograma": 789,
+    "t": 26.3,
+    "texto": "LISTA DE ESPERA 00 00 00 00 bias HORAS MIN SEG entrenador@miclub.es CE"
+   },
+   {
+    "fotograma": 790,
+    "t": 26.333,
+    "texto": "fe ot"
+   },
+   {
+    "fotograma": 792,
+    "t": 26.4,
+    "texto": "Lar JE AAA no ok AY ASTA ne ae AS IN"
+   },
+   {
+    "fotograma": 800,
+    "t": 26.667,
+    "texto": "meses HASTAEL NOV"
+   },
+   {
+    "fotograma": 808,
+    "t": 26.933,
+    "texto": "meses gratis. HASTA EL 27 NOV"
+   },
+   {
+    "fotograma": 816,
+    "t": 27.2,
+    "texto": "meses gratis. HASTA EL 27 NOV"
+   },
+   {
+    "fotograma": 818,
+    "t": 27.267,
+    "texto": "gratis. HASTA EL 27 NOV"
+   },
+   {
+    "fotograma": 824,
+    "t": 27.467,
+    "texto": "gratis. HASTA EL 27 NOV"
+   },
+   {
+    "fotograma": 832,
+    "t": 27.733,
+    "texto": "gratis. HASTA EL 27 NOV"
+   },
+   {
+    "fotograma": 840,
+    "t": 28.0,
+    "texto": "HASTA EL 27 NOV"
+   },
+   {
+    "fotograma": 847,
+    "t": 28.233,
+    "texto": "meses gratis. HASTA EL 27 NOV"
+   }
+  ],
+  "bloques": [
+   {
+    "desde": 0.0,
+    "hasta": 6.033,
+    "texto": "EL PARTIDO DEL SÁBADO Sábado: PRESION ALTA Martes: rondo. Jueves: físico. ES",
+    "palabras": 12
+   },
+   {
+    "desde": 6.4,
+    "hasta": 12.8,
+    "texto": "PLANIFICACIÓN CAPTURA REAL Una frase arriba Planificación Sem ana Semana Preparar el partido del sábado: presión alta salida por fuera Hoy Editar seman. informe PDF 9h15 min",
+    "palabras": 27
+   },
+   {
+    "desde": 13.067,
+    "hasta": 15.467,
+    "texto": "GUÁRDALO PARA EL DOMINGO Una frase arriba. SEMANA OBJETIVO DEL SABADO presión alta salida por fuera LUN recuperar MIÉ fuerza JUE táctica VIE activación El martes, entrenarla",
+    "palabras": 27
+   },
+   {
+    "desde": 15.7,
+    "hasta": 15.733,
+    "texto": "GUARDALO PARA EL DOMINGO Una frase arriba SEMANA OBJETIVO DEL SABADO alta) por fuera LUN ecuperar MAR presión tras pérdida MIÉ fuerza JUE tacti VIE ación El martes, entrenarla",
+    "palabras": 29
+   },
+   {
+    "desde": 16.0,
+    "hasta": 16.567,
+    "texto": "GUÁRDALO PARA EL DOMINGO Una frase arriba. SEMANA OBJETIVO DEL SABADO presión alta salida por fuera LUN recuperar MAR presión tras pérdida MIÉ fuerza JUE tactica VIE activación El martes, entrenarla",
+    "palabras": 31
+   },
+   {
+    "desde": 17.067,
+    "hasta": 20.733,
+    "texto": "Comenta tu deporte tu categoría tus días le preparo la primera semana",
+    "palabras": 12
+   },
+   {
+    "desde": 20.8,
+    "hasta": 20.8,
+    "texto": "TE eb mta te dias MEF",
+    "palabras": 6
+   },
+   {
+    "desde": 21.067,
+    "hasta": 21.333,
+    "texto": "RETO PARA TU STAFF com,",
+    "palabras": 5
+   },
+   {
+    "desde": 21.6,
+    "hasta": 21.6,
+    "texto": "et RETO PARA TU STAFF",
+    "palabras": 5
+   },
+   {
+    "desde": 21.867,
+    "hasta": 22.133,
+    "texto": "de RETO PARA TU STAFF ¿Qué frase va arriba",
+    "palabras": 9
+   },
+   {
+    "desde": 22.233,
+    "hasta": 22.233,
+    "texto": "ES aye RETO PARA TU STAFF ¿Qué frase arriba",
+    "palabras": 9
+   },
+   {
+    "desde": 22.4,
+    "hasta": 22.4,
+    "texto": "RETO PARA TU STAFF ¿Qué frase va arriba de esta seman.",
+    "palabras": 11
+   },
+   {
+    "desde": 22.667,
+    "hasta": 22.667,
+    "texto": "ES RETO PARA TU STAFF ¿Qué frase va arriba de esta semana? 35",
+    "palabras": 13
+   },
+   {
+    "desde": 22.933,
+    "hasta": 23.2,
+    "texto": "RETO PARA TU STAFF ¿Qué frase va arriba de esta semana?",
+    "palabras": 11
+   },
+   {
+    "desde": 23.467,
+    "hasta": 23.467,
+    "texto": "hr RETO PARA TU STAFF ¿Qué frase va arriba de esta semana?",
+    "palabras": 12
+   },
+   {
+    "desde": 23.767,
+    "hasta": 26.3,
+    "texto": "LISTA DE ESPERA 00 00 00 00 bias HORAS MIN SEG entrenador@miclub.es CE",
+    "palabras": 13
+   },
+   {
+    "desde": 26.4,
+    "hasta": 26.4,
+    "texto": "Lar JE AAA no ok AY ASTA ne ae AS IN",
+    "palabras": 11
+   },
+   {
+    "desde": 26.933,
+    "hasta": 27.2,
+    "texto": "meses gratis. HASTA EL 27 NOV",
+    "palabras": 6
+   },
+   {
+    "desde": 27.267,
+    "hasta": 27.733,
+    "texto": "gratis. HASTA EL 27 NOV",
+    "palabras": 5
+   },
+   {
+    "desde": 28.233,
+    "hasta": 28.233,
+    "texto": "meses gratis. HASTA EL 27 NOV",
+    "palabras": 6
+   }
+  ]
+ },
+ "audio": {
+  "tiene_audio": true,
+  "wav": "intel/videos/u30/audio_16k.wav",
+  "volumen_integrado_lufs": "-14.72",
+  "pico_real_db": "-2.71",
+  "rango_lra": "1.90",
+  "silencios": [
+   {
+    "desde": 14.91,
+    "hasta": 15.27
+   },
+   {
+    "desde": 27.75,
+    "hasta": 28.27
+   }
+  ],
+  "subidas_bruscas_s": [
+   1.7,
+   3.2,
+   6.2,
+   9.0,
+   11.6,
+   13.0,
+   13.7,
+   14.4,
+   15.2,
+   16.7,
+   20.9,
+   21.9,
+   23.8
+  ],
+  "energia_db_cada_0_1s": [
+   -18.7,
+   -22.1,
+   -13.0,
+   -19.5,
+   -24.2,
+   -25.8,
+   -27.2,
+   -15.5,
+   -16.1,
+   -18.3,
+   -11.4,
+   -14.2,
+   -16.3,
+   -28.3,
+   -27.5,
+   -37.7,
+   -36.5,
+   -18.2,
+   -12.5,
+   -19.0,
+   -28.0,
+   -32.2,
+   -28.1,
+   -21.4,
+   -18.4,
+   -14.8,
+   -16.8,
+   -24.1,
+   -28.9,
+   -32.7,
+   -41.7,
+   -29.8,
+   -12.0,
+   -16.6,
+   -19.8,
+   -22.4,
+   -23.3,
+   -24.6,
+   -16.2,
+   -22.5,
+   -27.5,
+   -24.5,
+   -22.0,
+   -23.7,
+   -24.8,
+   -14.6,
+   -17.5,
+   -19.6,
+   -16.4,
+   -14.6,
+   -17.5,
+   -16.1,
+   -22.1,
+   -16.2,
+   -21.0,
+   -17.5,
+   -17.1,
+   -22.8,
+   -23.8,
+   -25.7,
+   -25.8,
+   -28.6,
+   -15.0,
+   -15.8,
+   -12.8,
+   -20.5,
+   -14.9,
+   -18.2,
+   -13.9,
+   -16.4,
+   -14.1,
+   -20.2,
+   -19.8,
+   -13.8,
+   -20.3,
+   -13.5,
+   -15.7,
+   -18.4,
+   -15.7,
+   -14.7,
+   -15.8,
+   -17.3,
+   -17.9,
+   -16.8,
+   -17.3,
+   -15.7,
+   -22.2,
+   -32.9,
+   -30.6,
+   -38.3,
+   -16.6,
+   -14.6,
+   -17.8,
+   -16.3,
+   -14.4,
+   -15.7,
+   -17.2,
+   -20.0,
+   -16.7,
+   -19.6,
+   -17.0,
+   -15.4,
+   -21.2,
+   -15.4,
+   -22.9,
+   -24.7,
+   -26.2,
+   -18.7,
+   -20.9,
+   -20.2,
+   -13.6,
+   -15.1,
+   -16.6,
+   -14.4,
+   -14.8,
+   -31.0,
+   -15.5,
+   -20.9,
+   -19.2,
+   -18.1,
+   -17.0,
+   -18.5,
+   -16.1,
+   -18.5,
+   -17.4,
+   -23.3,
+   -25.4,
+   -25.9,
+   -27.4,
+   -21.2,
+   -12.1,
+   -17.9,
+   -15.6,
+   -18.6,
+   -28.9,
+   -44.5,
+   -50.4,
+   -18.9,
+   -13.4,
+   -17.7,
+   -15.0,
+   -24.8,
+   -15.9,
+   -30.3,
+   -14.6,
+   -16.8,
+   -17.9,
+   -16.9,
+   -15.1,
+   -44.8,
+   -55.3,
+   -54.0,
+   -19.5,
+   -15.1,
+   -17.2,
+   -14.5,
+   -22.3,
+   -15.0,
+   -14.4,
+   -12.9,
+   -17.7,
+   -16.7,
+   -26.5,
+   -29.3,
+   -33.5,
+   -33.1,
+   -36.4,
+   -13.4,
+   -14.9,
+   -16.5,
+   -17.0,
+   -13.7,
+   -18.2,
+   -15.5,
+   -18.5,
+   -27.9,
+   -21.1,
+   -24.1,
+   -15.4,
+   -17.4,
+   -18.1,
+   -17.9,
+   -16.3,
+   -17.4,
+   -24.8,
+   -23.0,
+   -17.7,
+   -14.2,
+   -14.0,
+   -16.1,
+   -25.0,
+   -14.1,
+   -16.9,
+   -17.5,
+   -15.8,
+   -16.9,
+   -17.4,
+   -15.9,
+   -15.5,
+   -18.3,
+   -19.5,
+   -14.4,
+   -19.9,
+   -19.3,
+   -16.4,
+   -21.2,
+   -24.2,
+   -26.5,
+   -30.1,
+   -15.6,
+   -14.6,
+   -16.1,
+   -17.0,
+   -16.0,
+   -13.6,
+   -13.7,
+   -13.8,
+   -30.8,
+   -24.8,
+   -18.2,
+   -20.8,
+   -17.4,
+   -20.3,
+   -16.8,
+   -13.4,
+   -16.2,
+   -16.4,
+   -14.5,
+   -16.7,
+   -15.2,
+   -18.1,
+   -14.3,
+   -15.2,
+   -17.1,
+   -29.3,
+   -30.2,
+   -29.4,
+   -21.9,
+   -14.6,
+   -16.2,
+   -18.4,
+   -15.8,
+   -14.3,
+   -19.2,
+   -15.4,
+   -14.1,
+   -14.0,
+   -20.6,
+   -13.5,
+   -16.6,
+   -15.6,
+   -17.4,
+   -22.5,
+   -21.7,
+   -16.1,
+   -15.6,
+   -16.6,
+   -15.2,
+   -13.8,
+   -15.8,
+   -20.2,
+   -25.0,
+   -23.8,
+   -21.4,
+   -13.6,
+   -14.3,
+   -23.0,
+   -13.4,
+   -12.5,
+   -16.2,
+   -18.0,
+   -17.5,
+   -18.9,
+   -21.1,
+   -37.7,
+   -33.2,
+   -34.1,
+   -39.2,
+   -64.8,
+   -65.3,
+   -71.2,
+   -75.9
+  ],
+  "transcripcion": "transcripcion.json (tools/reel30/voz.tsv)",
+  "nota": "Esto son medidas. Entonación, claridad de la locución, timbre o si hay música NO se pueden afirmar sin escuchar o transcribir."
+ },
+ "vistas": [
+  "detalle_005.jpg",
+  "general_002.jpg"
+ ],
+ "orden": "python3 tools/video_intel.py analyze reels/u30-por-dentro-presion-alta.mp4 --id u30 --tema ProTeam por dentro: la frase de arriba (fútbol) --modo detalle"
+}

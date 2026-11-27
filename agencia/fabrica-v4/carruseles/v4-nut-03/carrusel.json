@@ -1,0 +1,28 @@
+{
+ "numero": "Nº 00",
+ "seccion": "La víspera",
+ "formato": "carrusel",
+ "laminas": [
+  {"tipo": "palabra", "palabra": "VÍSPERA", "foto": "OBJETO_GENERAL_FOTO_002",
+   "fig": "Fig. 1 — El entreno del viernes", "hora": "Partido: sábado",
+   "serif": "¿Qué se entrena el día antes?", "size": 196, "left": 36},
+  {"tipo": "figuras", "letras": "LA SEMANA BAJA",
+   "figs": [
+    {"foto": "OBJETO_CONOS_EJERCICIO_FOTO_001", "lab": "Fig. 2 — Tres días antes.\nLa sesión que más pesa."},
+    {"foto": "STAFF_CHARLA_ENTRENAMIENTO_FOTO_001", "lab": "Fig. 3 — Dos días antes.\nBaja el volumen."},
+    {"foto": "OBJETO_GENERAL_FOTO_001", "lab": "Fig. 4 — La víspera.\nCorto y rápido."}
+   ], "size": 130, "left": 36},
+  {"tipo": "dentro", "palabra": "CORTO", "foto": "JUGADOR_CARRERA_FOTO_001",
+   "serif": "y con chispa.", "cap": "Poco volumen. Acciones vivas.\nBalón parado.",
+   "size": 250, "top": 420, "serifSize": 100},
+  {"tipo": "frase", "foto": "EQUIPO_PINA_CAMPO_FOTO_001", "pos": "50% 50%",
+   "pre": "No es para mejorar", "serif": "se entrena\npara llegar.", "uv": true, "size": 130, "uvW": 620},
+  {"tipo": "portada", "l1": "NADA NUEVO.", "serif": "el viernes,", "l2": "SE REPASA.",
+   "fotos": ["OBJETO_BALON_LINEA_FOTO_001", "OBJETO_GUANTES_CONO_FOTO_001", "OBJETO_CONOS_EJERCICIO_FOTO_001"],
+   "cap": "Lo que ya saben, a ritmo de partido.", "size": 128},
+  {"tipo": "final", "cap": "Para llevarte", "serif": "Para la víspera,",
+   "big": "TRES REGLAS.", "bigLines": 1, "size": 120,
+   "lista": ["Poco volumen.", "Acciones cortas y vivas.", "Nada que no sepan ya."],
+   "firma": "para el que prepara el sábado."}
+ ]
+}

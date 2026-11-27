@@ -1,0 +1,9 @@
+# E03 · Carrusel y Stories — para el panel
+Pendiente: el panel solo acepta archivos nuevos republicando su index.html (y eso no se toca desde los turnos). Subir `png/E03-c1…c7.png`, `E03-s1.png`, `E03-s2.png` a `media/v4-E03-c1.png…`, `media/v4-E03-s1.png`, `media/v4-E03-s2.png` y escribir:
+- `posts/v4-E03-carrusel` {type:"carrusel", title:"El silbato", tema:"v4 · Calentamiento · sáb 28/11", status:"listo", slides:[media/v4-E03-c1..c7.png], cover:"media/v4-E03-c1.png", agent:"Clara", order: el mayor + 1}
+  caption: «Lo que se ve dura noventa minutos.\nLo que no se ve dura toda la semana.\nCuando suena el silbato, ya no se prepara nada.»
+- `posts/v4-E03-story1` {type:"story", short:"Pregunta", title:"¿Qué día dejas cerrado el partido?", slides:[media/v4-E03-s1.png], status:"listo", tema:"v4 · Calentamiento · sáb 28/11", agent:"Clara"} — sticker de pregunta a mano.
+- `posts/v4-E03-story2` {type:"story", short:"Encuesta", title:"El silbato, ¿llevas uno de reserva?", slides:[media/v4-E03-s2.png], status:"listo", tema:"v4 · Calentamiento · sáb 28/11", agent:"Clara"} — sticker de encuesta a mano: «Siempre» / «Con uno vale».
+
+Láminas: 1 SÁBADO (dos silbatos, «Faltan diez minutos», «Y ya está todo pensado.») · 2 90' con el cronómetro dentro («es lo que se ve» / lo que no se ve dura toda la semana) · 3 ANTES (conos, pizarra, notas en la mesa) · 4 ultravioleta en «lo que se preparó entre semana» (balón en la línea, como el reel) · 5 Cuando suena el silbato, ya no se prepara nada (guantes y cono) · 6 NOVENTA minutos Y UNA SEMANA · 7 El sábado se juega EL JUEVES (cierra el plan antes del día de partido, prepara el material la víspera, y el sábado mira el partido).
+Fuera la Fig. 4 del reel (STAFF_PIZARRA_JUGADA_FOTO_001, persona conocida, crítica de Andrés). Sin app ni fecha (calentamiento). Revisado a tamaño móvil (hoja.png).

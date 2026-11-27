@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8">
+<style>
+@font-face{font-family:M;src:url(../fonts/manrope-latin-500-normal.woff2);font-weight:500}
+@font-face{font-family:M;src:url(../fonts/manrope-latin-700-normal.woff2);font-weight:700}
+@font-face{font-family:M;src:url(../fonts/manrope-latin-800-normal.woff2);font-weight:800}
+@font-face{font-family:S;src:url(../fonts/instrument-serif-latin-400-italic.woff2);font-style:italic}
+:root{--ink:#0d0f14;--paper:#f2f1ec;--blue:#2f6bff;--blue2:#4f86ff}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#333;font-family:M;-webkit-font-smoothing:antialiased}
+.s{width:1080px;height:1350px;position:relative;overflow:hidden;margin-bottom:20px}
+.dark{background:var(--ink);color:#f5f5f3}
+.paper{background:var(--paper);color:var(--ink)}
+.in{position:absolute;inset:90px;display:flex;flex-direction:column}
+.top{display:flex;justify-content:space-between;font-weight:700;font-size:24px;letter-spacing:.12em;text-transform:uppercase}
+.top>span{opacity:.55}.top>span.k{opacity:1}
+.k{font-weight:800;font-size:26px;letter-spacing:.14em;text-transform:uppercase;color:var(--blue)}
+.sr{font-family:S;font-style:italic;font-weight:400;color:var(--blue)}
+.dark .sr{color:var(--blue2)}
+h1,h2{font-weight:800;letter-spacing:-.02em;line-height:1.02}
+p.b{font-weight:500;font-size:36px;line-height:1.35}
+.dark p.b{color:#c9ccd4}.paper p.b{color:#3a3e48}
+.foot{margin-top:auto;display:flex;justify-content:space-between;align-items:flex-end;font-weight:700;font-size:24px;letter-spacing:.1em;text-transform:uppercase;opacity:.55}
+/* 1 */
+.notif{background:#1b1f29;border:1px solid #2a2f3b;border-radius:34px;padding:30px 36px;display:flex;gap:26px;align-items:center;margin-top:70px}
+.av{width:78px;height:78px;border-radius:22px;background:var(--blue);flex:none;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:34px;color:#fff}
+.nt{flex:1}.nt .h{display:flex;justify-content:space-between;font-weight:700;font-size:25px;color:#8d93a1}
+.nt .m{font-weight:700;font-size:34px;margin-top:6px}
+/* chat */
+.chat{display:flex;flex-direction:column;gap:22px;margin-top:56px}
+.day{font-weight:700;font-size:22px;letter-spacing:.12em;text-transform:uppercase;color:#8a8d95;margin-bottom:-10px}
+.bub{align-self:flex-start;background:#fff;border-radius:30px 30px 30px 8px;padding:22px 32px;font-weight:700;font-size:36px;box-shadow:0 2px 0 rgba(0,0,0,.06)}
+.bub small{display:block;font-weight:500;font-size:22px;color:#8a8d95;margin-bottom:4px}
+.bub.f2{opacity:.7}.bub.f3{opacity:.45}
+/* grid */
+.grid{display:grid;grid-template-columns:150px repeat(12,1fr);gap:9px;margin-top:60px;align-items:center}
+.grid .n{font-weight:700;font-size:22px;color:#6f7482;letter-spacing:.06em}
+.c{height:44px;border-radius:8px;background:#232834}
+.c.y{background:#3b4252}.c.q{background:transparent;border:2px dashed #3a4050;display:flex;align-items:center;justify-content:center;font-family:S;font-style:italic;color:var(--blue2);font-size:30px}
+/* list */
+.row{display:flex;align-items:center;gap:28px;padding:24px 0;border-top:2px solid #d9d7cf}
+.row:last-child{border-bottom:2px solid #d9d7cf}
+.dn{width:84px;height:84px;border-radius:50%;border:3px solid var(--ink);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:36px;flex:none}
+.row .t{font-weight:700;font-size:33px;flex:1}
+.tag{font-weight:700;font-size:20px;letter-spacing:.1em;text-transform:uppercase;color:var(--blue);border:2px solid var(--blue);border-radius:40px;padding:8px 16px;white-space:nowrap}
+/* form */
+.fr{display:grid;grid-template-columns:80px 1fr;gap:4px 20px;padding:22px 0;border-top:2px solid var(--ink)}
+.fr .no{font-weight:800;font-size:30px;color:var(--blue);padding-top:2px}
+.fr .l{font-weight:800;font-size:34px}
+.fr .e{grid-column:2;font-weight:500;font-size:26px;color:#6a6e78}
+.fr .e i{font-style:normal;display:inline-block;border-bottom:2px dotted #a7a8a6}
+</style></head><body>
+
+<!-- 1 HOOK -->
+<div class="s dark" id="s1"><div class="in">
+  <div class="top"><span>La realidad del entrenador</span><span>01 / 08</span></div>
+  <div class="notif"><div class="av">Tú</div><div class="nt"><div class="h"><span>Grupo · Cuerpo técnico</span><span>17:46</span></div><div class="m">Hoy no llego al entreno. Empezad sin mí.</div></div></div>
+  <h1 style="font-size:96px;margin-top:150px">Si mañana no puedes ir al entreno,</h1>
+  <div class="sr" style="font-size:128px;line-height:1;margin-top:18px">¿alguien sabría qué toca?</div>
+  <div class="foot"><span style="text-transform:none;letter-spacing:0;font-weight:500;font-size:30px;opacity:1;color:#8d93a1">Una reunión que se alarga.<br>Un hijo con fiebre. Un atasco.</span><span style="opacity:1;color:#f5f5f3;white-space:nowrap;margin-left:40px">Desliza →</span></div>
+</div></div>
+
+<!-- 2 SEÑAL 01 -->
+<div class="s paper" id="s2"><div class="in">
+  <div class="top"><span class="k">Señal 01</span><span>02 / 08</span></div>
+  <div class="chat">
+    <div class="day">Lunes</div><div class="bub"><small>Ayudante · 18:52</small>¿Qué hacemos hoy?</div>
+    <div class="day">Miércoles</div><div class="bub f2"><small>Ayudante · 18:49</small>¿Qué hacemos hoy?</div>
+    <div class="day">Jueves</div><div class="bub f3"><small>Ayudante · 18:55</small>¿Qué hacemos hoy?</div>
+  </div>
+  <h2 style="font-size:80px;margin-top:auto">Tu ayudante te lo pregunta <span class="sr" style="font-weight:400;font-size:96px">cada día.</span></h2>
+  <p class="b" style="margin-top:28px">No porque no sepa entrenar. Porque el plan de la semana solo existe en tu cabeza.</p>
+</div></div>
+
+<!-- 3 SEÑAL 02 -->
+<div class="s dark" id="s3"><div class="in">
+  <div class="top"><span class="k" style="color:var(--blue2)">Señal 02</span><span>03 / 08</span></div>
+  <div class="grid" id="g"></div>
+  <div style="font-weight:500;font-size:26px;color:#8d93a1;margin-top:26px">Tus últimos 12 entrenos. Los huecos los rellena tu memoria.</div>
+  <h2 style="font-size:80px;margin-top:auto">Sabes quién falta mucho.</h2>
+  <div class="sr" style="font-size:96px;line-height:1.02;margin-top:6px">No sabrías decir cuánto.</div>
+  <p class="b" style="margin-top:28px">La asistencia vive en tu memoria o en un grupo de WhatsApp con cientos de mensajes. Y con eso decides quién juega.</p>
+</div></div>
+
+<!-- 4 SEÑAL 03 -->
+<div class="s paper" id="s4"><div class="in">
+  <div class="top"><span class="k">Señal 03</span><span>04 / 08</span></div>
+  <h2 style="font-size:80px;margin-top:50px">Sabes qué le corriges a cada jugador.</h2>
+  <div class="sr" style="font-size:96px;line-height:1.02;margin-top:6px">¿Lo sabe alguien más?</div>
+  <div style="margin-top:50px">
+    <div class="row"><div class="dn">4</div><div class="t">Perfilarse antes de recibir</div><div class="tag">Solo en tu cabeza</div></div>
+    <div class="row"><div class="dn">7</div><div class="t">Atacar el espacio, no el balón</div><div class="tag">Solo en tu cabeza</div></div>
+    <div class="row"><div class="dn">9</div><div class="t">Fijar al central y descargar</div><div class="tag">Solo en tu cabeza</div></div>
+    <div class="row"><div class="dn">11</div><div class="t">Volver a tiempo tras pérdida</div><div class="tag">Solo en tu cabeza</div></div>
+  </div>
+  <p class="b" style="margin-top:auto">Si un día corrige otro, empieza de cero. Y el jugador oye dos mensajes distintos.</p>
+</div></div>
+
+<!-- 5 ORIGEN -->
+<div class="s dark" id="s5"><div class="in">
+  <div class="top"><span>Qué tienen en común</span><span>05 / 08</span></div>
+  <svg width="900" height="420" viewBox="0 0 900 420" style="margin-top:60px">
+    <g font-family="M" font-weight="700" font-size="30" fill="#c9ccd4">
+      <text x="0" y="60">El plan</text><text x="0" y="220">La asistencia</text><text x="0" y="380">Las correcciones</text>
+    </g>
+    <g stroke="#3a4050" stroke-width="3" fill="none">
+      <path d="M300 50 C 520 50, 560 210, 720 210"/><path d="M300 210 L 720 210"/><path d="M300 370 C 520 370, 560 210, 720 210"/>
+    </g>
+    <circle cx="760" cy="210" r="40" fill="#2f6bff"/>
+  </svg>
+  <h2 style="font-size:104px;margin-top:auto">Todo está en</h2>
+  <div class="sr" style="font-size:150px;line-height:.95">una sola cabeza.</div>
+  <p class="b" style="margin-top:34px">La tuya. Y una cabeza no se le puede pasar a nadie.</p>
+</div></div>
+
+<!-- 6 KERR -->
+<div class="s dark" id="s6">
+  <div style="position:absolute;right:0;top:0;width:560px;height:1350px;background:url(../../banco/fotos/PROTEAM_ENTRENADOR_REFERENTE_FOTO_008.jpg) 38% 0/auto 1350px no-repeat"></div>
+  <div style="position:absolute;right:0;top:0;width:560px;height:1350px;background:linear-gradient(90deg,var(--ink) 0%,rgba(13,15,20,.35) 30%,rgba(13,15,20,0) 55%)"></div>
+  <div class="in" style="right:auto;width:600px">
+    <div class="top"><span class="k" style="color:var(--blue2)">NBA · 2015-16</span><span>06 / 08</span></div>
+    <p class="b" style="margin-top:70px;color:#f5f5f3;font-weight:700;font-size:38px">Steve Kerr se pierde los 43 primeros partidos de la temporada tras dos operaciones de espalda.</p>
+    <p class="b" style="margin-top:28px">Dirige su ayudante, Luke Walton.</p>
+    <div style="font-weight:800;font-size:230px;letter-spacing:-.04em;line-height:1;margin-top:40px">39–4</div>
+    <div style="font-weight:700;font-size:26px;letter-spacing:.12em;text-transform:uppercase;color:#8d93a1;margin-top:6px">victorias · derrotas</div>
+    <p style="font-weight:700;font-size:36px;line-height:1.3;margin-top:auto">El equipo no dependía de que Kerr estuviera en la banda. <span class="sr" style="font-weight:400;font-size:44px">Dependía de lo que había dejado montado.</span></p>
+    <div style="font-weight:500;font-size:20px;color:#7d8290;margin-top:26px">Fuente: Associated Press (ABC7 News, 26/04/2016).</div>
+  </div>
+</div>
+
+<!-- 7 HOJA DE RELEVO -->
+<div class="s paper" id="s7"><div class="in">
+  <div class="top"><span class="k">Herramienta · guárdala</span><span>07 / 08</span></div>
+  <h2 style="font-size:92px;margin-top:40px">La hoja de <span class="sr" style="font-weight:400;font-size:112px">relevo.</span></h2>
+  <p class="b" style="margin-top:16px;font-size:32px">Una página que cualquiera de tu cuerpo técnico pueda leer en dos minutos antes del entreno.</p>
+  <div style="margin-top:70px">
+    <div class="fr"><div class="no">01</div><div class="l">Objetivo de la semana</div><div class="e">Ej.: <i>salir jugando ante presión alta</i></div></div>
+    <div class="fr"><div class="no">02</div><div class="l">La sesión de hoy, con tiempos</div><div class="e">Ej.: <i>rondo 4c2 · 12 min · partido condicionado · 20 min</i></div></div>
+    <div class="fr"><div class="no">03</div><div class="l">Quién no está y por qué</div><div class="e">Ej.: <i>Marc, examen · Leo, tobillo</i></div></div>
+    <div class="fr"><div class="no">04</div><div class="l">Qué dejó el último partido</div><div class="e">Ej.: <i>perdimos muchos balones en la salida</i></div></div>
+    <div class="fr" style="border-bottom:2px solid var(--ink)"><div class="no">05</div><div class="l">A quién vigilar</div><div class="e">Ej.: <i>Hugo viene de una semana muy cargada</i></div></div>
+  </div>
+  <p class="b" style="margin-top:auto;font-size:30px;font-weight:700;color:var(--ink)">Rellénala al planificar la semana. Si otro la entiende sin llamarte, funciona.</p>
+</div></div>
+
+<!-- 8 CIERRE -->
+<div class="s dark" id="s8"><div class="in">
+  <div class="top"><span>La realidad del entrenador</span><span>08 / 08</span></div>
+  <p class="b" style="margin-top:110px;font-size:40px;color:#8d93a1">Ser imprescindible no es el objetivo.</p>
+  <h2 style="font-size:100px;margin-top:30px">El objetivo es que tu equipo <span class="sr" style="font-weight:400;font-size:122px;white-space:nowrap">sepa qué toca</span> aunque no estés.</h2>
+  <div style="margin-top:auto;border:2px solid var(--blue);border-radius:30px;padding:36px 40px">
+    <div style="font-weight:800;font-size:40px;line-height:1.25">Mándaselo a tu segundo entrenador.<br>Y haced la prueba esta semana.</div>
+  </div>
+  <p style="font-weight:500;font-size:26px;color:#8d93a1;margin-top:34px;line-height:1.4">En la app de ProTeam, la temporada, cada sesión y cada partido quedan en un mismo sitio.</p>
+</div></div>
+
+<script>
+const g=document.getElementById('g');
+const names=['Dorsal 1','Dorsal 4','Dorsal 6','Dorsal 7','Dorsal 9','Dorsal 11','Dorsal 14'];
+const pat=['yyyyyyyyyyyy','yyyqqyyyqyyy','yyyyyyyyyyyy','yqyyqqyyyqyq','yyyyyyyqyyyy','qyyqyyqqyyyy','yyyyqyyyyyqy'];
+names.forEach((n,r)=>{const d=document.createElement('div');d.className='n';d.textContent=n;g.appendChild(d);
+ [...pat[r]].forEach(ch=>{const c=document.createElement('div');c.className='c '+ch;if(ch=='q')c.textContent='?';g.appendChild(c)})});
+</script>
+</body></html>

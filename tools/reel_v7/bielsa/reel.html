@@ -1,0 +1,154 @@
+<!doctype html><html><head><meta charset="utf-8">
+<!-- Historia con fotos (formato «photo story» de referencia), estética ProTeam. Cámara con GSAP en una sola línea de tiempo; palabras al fotograma en que se dicen. -->
+<style>
+@font-face{font-family:S;src:url(fonts/instrument-serif-latin-400-normal.woff2)}
+@font-face{font-family:SI;src:url(fonts/instrument-serif-latin-400-italic.woff2)}
+@font-face{font-family:J;font-weight:500;src:url(fonts/plus-jakarta-sans-latin-500-normal.woff2)}
+@font-face{font-family:J;font-weight:700;src:url(fonts/plus-jakarta-sans-latin-700-normal.woff2)}
+@font-face{font-family:J;font-weight:800;src:url(fonts/plus-jakarta-sans-latin-800-normal.woff2)}
+@font-face{font-family:J;font-weight:800;font-style:italic;src:url(fonts/plus-jakarta-sans-latin-800-italic.woff2)}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#02050F}
+#view{position:absolute;inset:0;overflow:hidden}
+#wall{position:absolute;left:-660px;top:-740px;width:2400px;height:3400px;background:url(wall.jpg);transform-origin:0 0}
+#cam{position:absolute;left:0;top:0;width:1080px;height:1920px;transform-origin:0 0}
+.sc{position:absolute;left:0;top:0;width:1080px;height:1920px;display:none}
+.a{position:absolute}
+.cut{filter:drop-shadow(0 30px 40px rgba(0,0,0,.55))}
+.serif{font-family:S;color:#F4F7FB;white-space:nowrap;line-height:1}
+.bold{font-family:J;font-weight:800;color:#F4F7FB;white-space:nowrap;letter-spacing:-.02em;line-height:1}
+.acc{font-family:J;font-weight:800;font-style:italic;color:#6AA8FF}
+.w{display:inline-block;margin-right:.24em;will-change:transform,filter,opacity}
+#box{position:absolute;border:3px dashed #8B5CF6;opacity:0}
+#box i{position:absolute;width:16px;height:16px;background:#02050F;border:3px solid #8B5CF6}
+.card{border-radius:26px;overflow:hidden;box-shadow:0 40px 90px rgba(0,0,0,.6),0 0 0 1px rgba(185,224,255,.08)}
+.mat{background:#E9EEF6;padding:34px;border:6px solid #0b0f1a;box-shadow:0 30px 70px rgba(0,0,0,.6)}
+.cross{position:absolute;width:70px;height:70px}
+.cross:before,.cross:after{content:'';position:absolute;background:rgba(185,224,255,.45)}
+.cross:before{left:34px;top:0;width:2px;height:70px}.cross:after{top:34px;left:0;height:2px;width:70px}
+.paper{position:absolute;background:#c9d2e0;box-shadow:0 10px 30px rgba(0,0,0,.5)}
+#grain{position:absolute;inset:0;width:1080px;height:1920px;mix-blend-mode:screen;opacity:.10;pointer-events:none;image-rendering:pixelated}
+</style></head><body><div id="view"><div id="wall"></div><div id="cam">
+
+<!-- B1 retrato + «espiar» + glide -->
+<div class="sc" id="s1">
+ <img class="a cut" src="img/portrait_cut_g.png" style="left:110px;top:1125px;width:860px">
+ <div class="a serif" id="l1" style="left:0;width:1080px;top:880px;text-align:center;font-size:44px"></div>
+ <div class="a bold" id="b1" style="left:0;width:1080px;top:948px;text-align:center;font-size:150px;color:#C9D3E6"></div>
+ <div id="box"><i style="left:-10px;top:-10px"></i><i style="right:-10px;top:-10px"></i><i style="left:-10px;bottom:-10px"></i><i style="right:-10px;bottom:-10px"></i></div>
+ <div class="a serif" id="l2a" style="left:900px;top:1330px;font-size:46px"></div>
+ <div class="a bold" id="l2b" style="left:900px;top:1392px;font-size:52px"></div>
+</div>
+
+<!-- B2 segunda pose -->
+<div class="sc" id="s2">
+ <img class="a cut" src="img/pose2_cut_g.png" style="left:110px;top:640px;width:960px">
+ <div class="a serif" id="l3a" style="left:0;width:1080px;text-align:center;top:330px;font-size:60px"></div>
+ <div class="a bold" id="l3b" style="left:0;width:1080px;text-align:center;top:410px;font-size:70px"></div>
+</div>
+
+<!-- B3 tarjeta -->
+<div class="sc" id="s3">
+ <div class="a serif" id="l4a" style="left:0;width:1080px;text-align:center;top:430px;font-size:56px"></div>
+ <div class="a bold" id="l4b" style="left:0;width:1080px;text-align:center;top:500px;font-size:96px"></div>
+ <div class="a" id="cardw" style="left:130px;top:680px;width:820px">
+  <div class="card"><img src="img/card_g.png" style="display:block;width:820px"></div>
+  <div class="serif" style="text-align:center;margin-top:42px;font-size:40px">Leeds · 16 de enero de 2019</div>
+  <div id="quote" style="font-family:SI;color:#B9E0FF;text-align:center;font-size:30px;line-height:1.45;margin-top:18px">
+   <div class="ql">«Vimos los 51 partidos del Derby County.</div><div class="ql">El análisis de cada partido</div><div class="ql">lleva cuatro horas de trabajo.»</div></div>
+ </div>
+</div>
+
+<!-- B4 cuerpo entero + retrato enmarcado -->
+<div class="sc" id="s4">
+ <div class="a" id="fr4" style="left:520px;top:560px;width:430px;padding:12px;background:#0C1323;border:2px solid #26335a;box-shadow:0 30px 70px rgba(0,0,0,.6)"><img src="img/portrait_g.png" style="display:block;width:100%"></div>
+ <img class="a cut" id="full" src="img/full_cut_g.png" style="left:430px;top:930px;width:860px">
+ <div class="a serif" id="l5a" style="left:70px;top:1180px;font-size:46px"></div>
+ <div class="a bold" id="l5b" style="left:70px;top:1244px;font-size:58px"></div>
+</div>
+
+<!-- B5 lámina enmarcada -->
+<div class="sc" id="s5">
+ <div class="cross" style="left:880px;top:300px"></div><div class="cross" style="left:120px;top:1600px"></div>
+ <div class="a mat" style="left:250px;top:380px;width:580px"><img src="img/profile_g.png" style="display:block;width:100%;height:760px;object-fit:cover;object-position:50% 25%"></div>
+ <div class="a serif" id="l6a" style="left:0;width:1080px;text-align:center;top:1340px;font-size:84px"></div>
+ <div class="a bold" id="l6b" style="left:0;width:1080px;text-align:center;top:1440px;font-size:110px"></div>
+</div>
+
+<!-- B6 portada -->
+<div class="sc" id="s6">
+ <div class="paper" style="left:150px;top:600px;width:780px;height:1040px;transform:rotate(-4deg);background:#aab4c6"></div>
+ <div class="paper" style="left:170px;top:590px;width:770px;height:1030px;transform:rotate(3deg);background:#bcc5d4"></div>
+ <div class="a" id="cover" style="left:160px;top:580px;width:760px;height:1030px;background:#0b0f1a;overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,.7);transform:rotate(-1deg)">
+  <img src="img/pose2_g.png" style="position:absolute;left:-40px;top:150px;width:820px"><div style="position:absolute;left:0;right:0;bottom:0;height:320px;background:linear-gradient(transparent,#0b0f1a 70%)"></div>
+  <div style="position:absolute;left:0;right:0;top:26px;text-align:center;font-family:S;font-size:132px;color:#F4F7FB;letter-spacing:.04em">BANQUILLO</div>
+  <div style="position:absolute;left:0;right:0;top:180px;text-align:center;font-family:J;font-weight:800;font-size:44px;letter-spacing:.32em;color:#F4F7FB">EL MÉTODO</div>
+  <div style="position:absolute;left:36px;bottom:60px;font-family:J;font-weight:700;font-size:20px;line-height:1.5;color:#F4F7FB;letter-spacing:.04em">51 PARTIDOS<br>4 HORAS CADA UNO<br><span style="color:#6AA8FF">LEEDS, ENERO DE 2019</span></div>
+  <div style="position:absolute;right:30px;bottom:56px;font-family:S;font-size:22px;color:#B9E0FF;text-align:right">Nº 01<br>Historias de banquillo</div>
+ </div>
+ <div class="a bold" id="l7a" style="left:70px;top:330px;font-size:46px;font-weight:700"></div>
+ <div class="a" id="l7b" style="left:70px;top:392px;font-size:54px;white-space:nowrap"></div>
+</div>
+
+</div></div>
+<canvas id="grain" width="360" height="640"></canvas>
+<script src="gsap.min.js"></script>
+<script src="words.js"></script>
+<script>
+const $=i=>document.getElementById(i), cl=x=>Math.min(1,Math.max(0,x)), P=(t,a,b)=>cl((t-a)/(b-a)), eo=x=>1-Math.pow(1-x,3);
+const W=window.WORDS; let wi=0;
+// rellena una línea: tokens [texto, clase]; tiempos = siguientes palabras de la voz
+function line(id,tokens){const el=$(id);const out=[];for(const [txt,cls,tt] of tokens){const s=document.createElement('span');s.className='w '+(cls||'');s.textContent=txt;el.appendChild(s);const t0=tt!==undefined?tt:W[wi++][1];out.push([s,t0])}return out}
+const L=[];
+L.push(...line('l1',[['Le'],['acusaron'],['de']]));
+const SP=W[wi++][1]; // «espiar»
+L.push(...line('l2a',[['Y'],['él'],['respondió']])); L.push(...line('l2b',[['con'],['un'],['PowerPoint.','acc']]));
+L.push(...line('l3a',[['51'],['partidos']])); L.push(...line('l3b',[['del'],['rival,'],['analizados.','acc']]));
+L.push(...line('l4a',[['4'],['horas'],['por'],['cada']])); L.push(...line('l4b',[['partido.']]));
+L.push(...line('l5a',[['No'],['era'],['una'],['manía,']])); L.push(...line('l5b',[['era'],['su'],['método.','acc']]));
+L.push(...line('l6a',[['Y'],['le'],['llamaron']])); L.push(...line('l6b',[['El'],['Loco.']]));
+L.push(...line('l7a',[['Cada'],['banquillo'],['aún']]));
+{const tE=W[wi++][1];L.push(...line('l7b',[['estudia','',tE],['a','',W[wi][1]-.05]]));}
+{const el=$('l7b');for(const n of ['Marcelo','Bielsa.']){const s=document.createElement('span');s.className='w';s.style.cssText="font-family:SI;font-size:78px;color:#6AA8FF;-webkit-text-stroke:1.2px #6AA8FF";s.textContent=n;el.appendChild(s);L.push([s,W[wi++][1]])}}
+document.querySelectorAll('#l7b .w:not([style])').forEach(s=>{s.style.fontFamily='J';s.style.fontWeight=700;s.style.color='#F4F7FB'});
+// escenas
+const CUT=[0,4.30,7.24,9.42,12.04,13.98,99];
+// cámara (cx,cy,z) con GSAP
+const cam={cx:540,cy:1300,z:1.0};const tl=gsap.timeline({paused:true});
+tl.set(cam,{cx:540,cy:1330,z:1.02},0)
+ .to(cam,{cx:540,cy:1180,z:1.12,duration:.8,ease:'sine.inOut'},0)
+ .to(cam,{cx:540,cy:1020,z:1.42,duration:.75,ease:'power2.inOut'},SP-.05)
+ .to(cam,{cx:1010,cy:1370,z:1.32,duration:.6,ease:'power2.inOut'},1.62)
+ .to(cam,{cx:1060,cy:1380,z:1.42,duration:1.95,ease:'none'},2.22)
+ .set(cam,{cx:540,cy:960,z:1.0},CUT[1]).to(cam,{cx:560,cy:930,z:1.09,duration:2.9,ease:'sine.inOut'},CUT[1])
+ .set(cam,{cx:540,cy:960,z:1.0},CUT[2]).to(cam,{cx:540,cy:930,z:1.07,duration:2.1,ease:'sine.inOut'},CUT[2])
+ .set(cam,{cx:600,cy:1000,z:1.0},CUT[3]).to(cam,{cx:540,cy:980,z:1.08,duration:2.6,ease:'sine.inOut'},CUT[3])
+ .set(cam,{cx:540,cy:960,z:1.0},CUT[4]).to(cam,{cx:540,cy:990,z:1.1,duration:1.9,ease:'sine.inOut'},CUT[4])
+ .set(cam,{cx:540,cy:980,z:1.0},CUT[5]).to(cam,{cx:540,cy:1000,z:1.12,duration:3.6,ease:'sine.inOut'},CUT[5]);
+// selección de «espiar»
+const B1=$('b1');B1.textContent='espiar';
+const g=$('grain').getContext('2d'),gi=g.createImageData(360,640);let sd=1;const R=()=>(sd=(sd*16807)%2147483647)/2147483647;
+let boxSet=false;
+window.frame=function(t){
+ sd=1+Math.floor(t*30)*7919;const d=gi.data;for(let i=0;i<d.length;i+=4){const v=R()*255;d[i]=v*.8;d[i+1]=v*.85;d[i+2]=v;d[i+3]=255}g.putImageData(gi,0,0);
+ tl.seek(t,false);
+ $('cam').style.transform=`translate(540px,960px) scale(${cam.z}) translate(${-cam.cx}px,${-cam.cy}px)`;
+ $('wall').style.transform=`translate(${(540-cam.cx)*.35}px,${(960-cam.cy)*.35}px) scale(${1+(cam.z-1)*.3})`;
+ for(let k=0;k<6;k++){$('s'+(k+1)).style.display=(t>=CUT[k]&&t<CUT[k+1])?'block':'none'}
+ // palabras: desenfoque a nítido desde la derecha, en el fotograma en que se dicen
+ for(const [s,t0] of L){const p=eo(P(t,t0-.02,t0+.26));s.style.opacity=p;s.style.transform=`translateX(${(1-p)*42}px)`;s.style.filter=`blur(${(1-p)*10}px)`}
+ // gran palabra: letra a letra dentro de la caja
+ const k=P(t,SP-.02,SP+.3);B1.textContent='espiar'.slice(0,Math.ceil(6*k));B1.style.opacity=k>0?1:0;
+ const bx=$('box');if(k>0){if(!boxSet){B1.textContent='espiar';const r=B1.getBoundingClientRect();boxSet=true}
+   const w=430,h=150;bx.style.left=(540-w/2)+'px';bx.style.top=(948-10)+'px';bx.style.width=w*Math.min(1,.55+k)+'px';bx.style.height=h+'px';bx.style.opacity=1}else bx.style.opacity=0;
+ // tarjeta: entra enfocando, cita línea a línea, sale con desenfoque lateral
+ const ce=eo(P(t,CUT[2],CUT[2]+.45)),cx=eo(P(t,CUT[3]-.22,CUT[3]));
+ $('cardw').style.filter=`blur(${(1-ce)*14}px)`;$('cardw').style.opacity=ce;
+ $('cardw').style.transform=`translateX(${-cx*1300}px) scaleX(${1+cx*.25})`;if(cx>0)$('cardw').style.filter=`blur(${cx*30}px)`;
+ document.querySelectorAll('.ql').forEach((q,i)=>{const a=P(t,CUT[2]+.6+i*.42,CUT[2]+.95+i*.42);q.style.clipPath=`inset(0 ${100-a*100}% 0 0)`});
+ // B4: el retrato enmarcado entra un poco antes que el cuerpo entero
+ const f4=eo(P(t,CUT[3],CUT[3]+.4));$('fr4').style.transform=`translateY(${(1-f4)*-40}px)`;$('fr4').style.opacity=f4;
+ const fu=eo(P(t,CUT[3]+.12,CUT[3]+.55));$('full').style.transform=`translateX(${(1-fu)*80}px)`;$('full').style.opacity=fu;
+};
+document.fonts.ready.then(()=>Promise.all([...document.images].map(i=>i.complete?1:new Promise(r=>{i.onload=r;i.onerror=r})))).then(()=>{frame(0);window.ready=true});
+</script></body></html>

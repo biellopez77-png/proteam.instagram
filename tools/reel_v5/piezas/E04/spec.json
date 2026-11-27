@@ -1,0 +1,58 @@
+{
+ "titulo": "En directo desde el campo 3",
+ "fase": "Impacto · dom 29/11",
+ "tono": 55,
+ "paginas": [
+  {
+   "tipo": "palabra",
+   "d": 2.5,
+   "palabra": "EN DIRECTO",
+   "foto": "INSTALACION_CAMPO_ENTRENAMIENTO_FOTO_001",
+   "fig": "Campo 3 · martes · 19:42",
+   "hora": "Sin cámaras. Sin público."
+  },
+  {
+   "tipo": "reticula",
+   "d": 3.4,
+   "letras": "NADIE\nLO\nNARRA",
+   "figs": [
+    {
+     "foto": "ENTRENADOR_ENTRENADORA_INDICA_FOTO_001",
+     "lab": "Min. 12 — Corrige la altura de la línea"
+    },
+    {
+     "foto": "OBJETO_CONOS_EJERCICIO_FOTO_001",
+     "lab": "Min. 27 — Se repite hasta que sale"
+    },
+    {
+     "foto": "OBJETO_GENERAL_FOTO_001",
+     "lab": "Min. 40 — Último cambio de ritmo"
+    }
+   ]
+  },
+  {
+   "tipo": "frase",
+   "d": 3.0,
+   "foto": "EQUIPO_PINA_CENITAL_FOTO_001",
+   "pre": "Lo que pasa aquí",
+   "serif": "decide lo que\npasa el sábado.",
+   "uv": true,
+   "size": 124,
+   "uvTop": 1475
+  },
+  {
+   "tipo": "cifra",
+   "d": 2.6,
+   "num": "11.12",
+   "size": 330,
+   "pre": "Apunta la fecha",
+   "serif": "abre ProTeam.",
+   "cap": "Fútbol · Baloncesto · Balonmano"
+  },
+  {
+   "tipo": "cierre",
+   "d": 1.9,
+   "serif": "para el que lo prepara."
+  }
+ ]
+}

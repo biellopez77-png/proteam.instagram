@@ -1,0 +1,155 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face{font-family:J;src:url(../node_modules/@fontsource/plus-jakarta-sans/files/plus-jakarta-sans-latin-800-normal.woff2);font-weight:800}
+@font-face{font-family:J;src:url(../node_modules/@fontsource/plus-jakarta-sans/files/plus-jakarta-sans-latin-400-normal.woff2);font-weight:400}
+@font-face{font-family:S;src:url(../../fonts/instrument-serif-latin-400-italic.woff2);font-style:italic}
+@font-face{font-family:M;src:url(../../fonts/ibm-plex-mono-latin-400-normal.woff2)}
+:root{--bg:#02050F;--card:#0C1323;--blue:#636DFF;--elec:#6AA8FF;--ice:#B9E0FF;--ink:#F4F7FB;--uv:#8B5CF6;--mut:#8f9bb8}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;background:var(--bg);overflow:hidden;color:var(--ink);font-family:J}
+.abs{position:absolute}
+#stage{position:absolute;inset:0;overflow:hidden}
+.scene{position:absolute;inset:0;opacity:0;will-change:transform,opacity}
+.folio{position:absolute;left:64px;right:64px;top:70px;display:flex;justify-content:space-between;font:400 26px M;letter-spacing:.14em;color:var(--mut);text-transform:uppercase;z-index:20}
+.foot{position:absolute;left:64px;right:64px;bottom:70px;display:flex;justify-content:space-between;font:400 19px M;letter-spacing:.08em;color:#5d6888;text-transform:uppercase;z-index:20}
+.rule{position:absolute;left:64px;right:64px;height:2px;background:#1d2947}
+.cap{font:400 26px M;letter-spacing:.1em;text-transform:uppercase;color:var(--mut)}
+.serif{font-family:S;font-style:italic;font-weight:400}
+.big{font-weight:800;letter-spacing:-.05em;word-spacing:.12em;line-height:.8;white-space:nowrap}
+.photo{background-size:cover;background-position:center;overflow:hidden}
+.fig{position:absolute}
+.fig .ph{width:100%;height:100%;background-size:cover;background-position:center}
+.fig .lab{margin-top:18px;font:400 22px M;letter-spacing:.12em;color:var(--mut);text-transform:uppercase}
+#grain{position:absolute;inset:0;width:1080px;height:1920px;z-index:50;mix-blend-mode:screen;opacity:.16;pointer-events:none;image-rendering:pixelated}
+#vig{position:absolute;inset:0;z-index:49;background:radial-gradient(ellipse at 50% 45%,transparent 55%,rgba(2,5,15,.75) 100%)}
+#flash{position:absolute;inset:0;z-index:48;background:var(--bg);opacity:0}
+</style></head><body>
+<div id="stage">
+
+<!-- S1 MARTES -->
+<div class="scene" id="s1">
+  <div class="abs photo" id="s1p" style="left:120px;top:560px;width:840px;height:560px;background-image:url(img/balones.jpg)"></div>
+  <div class="abs big" id="s1t" style="top:1010px;font-size:430px;color:var(--ink)">MARTES</div>
+  <div class="abs cap" style="left:120px;top:500px">Fig. 1 — Carro de balones</div>
+  <div class="abs cap" id="s1c" style="left:64px;top:1420px;color:var(--ice)">19:42 · Campo 3</div>
+</div>
+
+<!-- S2 NADIE -->
+<div class="scene" id="s2">
+  <div class="abs" id="s2ht" style="left:0;top:0;width:1080px;height:1920px;background:url(img/guantes_ht.png) center/cover;opacity:.10"></div>
+  <div class="abs big" id="s2t" style="left:40px;top:700px;font-size:345px;background:url(img/guantes.jpg) 40% 55%/1500px auto;-webkit-background-clip:text;background-clip:text;color:transparent">NADIE</div>
+  <div class="abs serif" id="s2s" style="left:110px;top:1140px;font-size:120px;color:var(--ink)">mira.</div>
+  <div class="abs cap" style="left:110px;top:1330px;width:700px;line-height:1.6">Nadie graba esto.<br>Nadie lo aplaude.</div>
+</div>
+
+<!-- S3 GRID -->
+<div class="scene" id="s3">
+  <div class="abs" id="s3row" style="left:0;top:0;width:3300px;height:1920px">
+    <div class="fig" style="left:120px;top:520px;width:620px;height:860px"><div class="ph" style="background-image:url(img/silbatos.jpg)"></div><div class="lab">Fig. 2 — Dos silbatos. Uno de reserva.</div></div>
+    <div class="fig" style="left:860px;top:700px;width:900px;height:660px"><div class="ph" style="background-image:url(img/vestuario.jpg)"></div><div class="lab">Fig. 3 — Vestuario, 18:55</div></div>
+    <div class="abs big" style="left:1880px;top:560px;font-size:150px;color:#1a2440">LISTA<br>CONVO<br>CADOS</div>
+    <div class="fig" id="f4" style="left:2120px;top:880px;width:1000px;height:680px"><div class="ph" id="f4ph" style="background-image:url(img/balon.jpg)"></div><div class="lab">Fig. 4 — La línea de cal</div></div>
+  </div>
+</div>
+
+<!-- S4 SERIF + UV -->
+<div class="scene" id="s4">
+  <div class="abs photo" id="s4p" style="inset:0;background-image:url(img/balon.jpg);background-position:58% 50%;background-size:auto 1920px"></div>
+  <div class="abs" style="inset:0;background:linear-gradient(180deg,rgba(2,5,15,.15) 30%,rgba(2,5,15,.92) 70%)"></div>
+  <div class="abs cap" style="left:64px;top:1180px;color:var(--ice)">Todo esto es</div>
+  <div class="abs serif" id="s4s" style="left:64px;top:1230px;font-size:132px;line-height:1.02;width:960px">lo que decide<br>el sábado.</div>
+  <div class="abs" id="uv" style="left:64px;top:1515px;height:12px;width:0;background:var(--uv);box-shadow:0 0 40px 6px rgba(139,92,246,.55)"></div>
+</div>
+
+<!-- S5 SPREAD -->
+<div class="scene" id="s5">
+  <div class="rule" style="top:300px"></div>
+  <div class="abs big" id="s5a" style="left:64px;top:420px;font-size:176px">EL TRABAJO</div>
+  <div class="abs serif" id="s5b" style="left:64px;top:610px;font-size:180px;color:var(--ice)">que no</div>
+  <div class="abs big" id="s5c" style="left:64px;top:820px;font-size:176px">SE VE.</div>
+  <div class="abs photo" id="s5p1" style="left:64px;top:1180px;width:300px;height:380px;background-image:url(img/silbatos.jpg)"></div>
+  <div class="abs photo" id="s5p2" style="left:390px;top:1180px;width:300px;height:380px;background-image:url(img/vestuario.jpg)"></div>
+  <div class="abs photo" id="s5p3" style="left:716px;top:1180px;width:300px;height:380px;background-image:url(img/balones.jpg)"></div>
+  <div class="rule" style="top:1620px"></div>
+  <div class="abs cap" style="left:64px;top:1650px">Lo que pasa entre partido y partido</div>
+</div>
+
+<!-- S6 CIERRE -->
+<div class="scene" id="s6">
+  <div class="abs" id="s6w" style="left:0;right:0;top:820px;text-align:center;font:800 140px J;letter-spacing:-.05em">ProTeam</div>
+  <div class="abs serif" id="s6s" style="left:0;right:0;top:1000px;text-align:center;font-size:70px;color:var(--ice)">para el que lo prepara.</div>
+  <div class="abs" id="s6l" style="left:440px;top:1120px;height:4px;width:200px;background:var(--blue)"></div>
+</div>
+
+<!-- page turn -->
+<div class="abs" id="turn" style="top:0;bottom:0;width:1300px;left:1200px;background:var(--card);z-index:30;box-shadow:-60px 0 80px rgba(0,0,0,.6)"></div>
+
+<div class="folio" id="folio"><span>ProTeam — Nº 00</span><span id="fpage">p. 01</span></div>
+<div class="foot" id="foot"><span id="fcred">Foto: dominio público</span><span>Entrenadores</span></div>
+</div>
+<div id="vig"></div><div id="flash"></div>
+<canvas id="grain" width="360" height="640"></canvas>
+<script>
+const $=id=>document.getElementById(id);
+const cl=(x,a=0,b=1)=>Math.min(b,Math.max(a,x));
+const p=(t,a,b)=>cl((t-a)/(b-a));
+const eo=x=>1-Math.pow(1-x,3), ei=x=>x*x*x, eio=x=>x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2;
+const ramp=x=>x<.5?Math.pow(2*x,4)/2:1-Math.pow(2-2*x,4)/2; // speed ramp
+function show(id,t,a,b,fi=.25,fo=.25){const o=Math.min(p(t,a,a+fi),1-p(t,b-fo,b));$(id).style.opacity=(t<a||t>b)?0:o;return p(t,a,b)}
+const g=$('grain').getContext('2d'),img=g.createImageData(360,640);
+let seed=1;const rnd=()=>(seed=(seed*16807)%2147483647)/2147483647;
+function grain(t){seed=1+Math.floor(t*25)*7919;const d=img.data;for(let i=0;i<d.length;i+=4){const v=rnd()*255;d[i]=v*.8;d[i+1]=v*.85;d[i+2]=v;d[i+3]=255}g.putImageData(img,0,0)}
+const creds=[[0,'Foto: Cpl. A. C. Ramsey Jr. (DoD) · DP'],[2.4,'Foto: Walter Mains · DP'],[4.7,'Fotos: Infrogmation · Matti Blume · CC BY-SA 4.0'],[7.7,'Foto: USARJ NCO Corps · CC BY 2.0'],[10.8,'Fotos: Infrogmation · M. Blume (CC BY-SA 4.0) · DP'],[13.4,'']];
+window.frame=function(t){
+  grain(t);
+  // S1 0–2.4
+  let k=show('s1',t,0,2.5,.3,.2);
+  $('s1p').style.transform=`translateY(${-60*k}px) scale(${1.04+.05*k})`;
+  $('s1t').style.left=(140-420*eo(k))+'px';
+  $('s1t').style.textShadow=(t>1.6&&t<1.75)?'6px 0 0 rgba(139,92,246,.7),-6px 0 0 rgba(106,168,255,.6)':'none';
+  $('s1c').style.opacity=p(t,.8,1.1);
+  // S2 2.4–4.8
+  k=show('s2',t,2.4,4.8,.15,.2);
+  $('s2t').style.transform=`scale(${1.18-.14*eo(k)})`;$('s2t').style.transformOrigin='30% 50%';
+  $('s2t').style.backgroundPosition=`${30+20*k}% 55%`;
+  $('s2s').style.opacity=p(t,3.0,3.4);$('s2s').style.transform=`translateY(${30*(1-eo(p(t,3.0,3.5)))}px)`;
+  $('s2ht').style.transform=`translateY(${-80*k}px)`;
+  // S3 4.7–7.6 pan with ramp, then push into fig 4
+  k=show('s3',t,4.7,8.0,.2,.35);
+  const pan=ramp(p(t,4.8,7.0));
+  const push=eio(p(t,6.9,8.0));
+  $('s3row').style.transform=`translateX(${-2120*pan}px)`;
+  $('stage').style.filter='none';
+  const s3=$('s3');s3.style.transformOrigin='62% 58%';s3.style.transform=`scale(${1+1.4*push})`;
+  s3.style.filter=`blur(${(t>4.7&&t<8)?(6*Math.sin(Math.PI*p(t,5.7,6.3))+10*push):0}px)`;
+  // S4 7.6–10.9 serif + UV
+  k=show('s4',t,7.7,10.9,.5,.25);
+  $('s4p').style.transform=`scale(${1.15-.08*k})`;
+  $('s4p').style.filter=`blur(${10*(1-eo(p(t,7.7,8.6)))}px)`;
+  $('s4s').style.opacity=p(t,8.4,8.9);$('s4s').style.transform=`translateY(${40*(1-eo(p(t,8.4,9.0)))}px)`;
+  $('uv').style.width=(680*eio(p(t,9.1,9.8)))+'px';
+  // S5 10.8–13.2 spread pull back
+  k=show('s5',t,10.8,13.3,.2,.1);
+  const pb=eo(p(t,10.8,12.4));
+  $('s5').style.transform=`scale(${1.5-.5*pb})`;$('s5').style.transformOrigin='30% 30%';
+  ['s5a','s5b','s5c'].forEach((id,i)=>{const q=eo(p(t,10.9+i*.18,11.5+i*.18));$(id).style.opacity=q;$(id).style.transform=`translateX(${(1-q)*-60}px)`});
+  ['s5p1','s5p2','s5p3'].forEach((id,i)=>{const q=eo(p(t,11.5+i*.15,12.1+i*.15));$(id).style.opacity=q;$(id).style.transform=`translateY(${(1-q)*50}px)`});
+  // page turn 13.0–13.7
+  const tu=eio(p(t,13.0,13.75));$('turn').style.left=(1200-2600*tu)+'px';
+  // S6 13.5–15
+  k=show('s6',t,13.45,15.2,.3,.01);
+  $('s6w').style.opacity=p(t,13.6,14.0);$('s6s').style.opacity=p(t,14.0,14.4);
+  $('s6l').style.width=(200*eo(p(t,14.2,14.7)))+'px';$('s6l').style.left=(540-100*eo(p(t,14.2,14.7)))+'px';
+  // folio
+  const pg=t<2.4?'p. 01':t<4.7?'p. 07':t<7.7?'pp. 12–13':t<10.8?'p. 19':t<13.4?'p. 24':'';
+  $('fpage').textContent=pg;
+  let c='';for(const [a,s] of creds) if(t>=a) c=s; $('fcred').textContent=c;
+  const fo=1-p(t,13.0,13.4);$('folio').style.opacity=fo;$('foot').style.opacity=fo;
+  $('flash').style.opacity=t<.25?1-p(t,0,.25):0;
+};
+document.fonts.ready.then(()=>Promise.all([...document.querySelectorAll('[style*=url]')].map(()=>0))).then(()=>{
+  const urls=['img/balones.jpg','img/silbatos.jpg','img/guantes.jpg','img/balon.jpg','img/vestuario.jpg','img/guantes_ht.png'];
+  return Promise.all(urls.map(u=>new Promise(r=>{const i=new Image();i.onload=r;i.onerror=r;i.src=u})));
+}).then(()=>{frame(0);window.ready=true});
+</script></body></html>

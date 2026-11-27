@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8">
+<style>
+@font-face{font-family:M;font-weight:800;src:url(/tools/fonts/manrope-latin-800-normal.woff2)}
+@font-face{font-family:M;font-weight:700;src:url(/tools/fonts/manrope-latin-700-normal.woff2)}
+@font-face{font-family:M;font-weight:500;src:url(/tools/fonts/manrope-latin-500-normal.woff2)}
+@font-face{font-family:S;font-style:italic;font-weight:400;src:url(/tools/fonts/instrument-serif-latin-400-italic.woff2)}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#000}
+#st{position:absolute;inset:0;overflow:hidden;background:#000}
+.L{position:absolute;inset:0;display:none}
+.ph{position:absolute;overflow:hidden;background:#111;display:none;will-change:transform}
+.ph img{position:absolute;left:0;top:0;width:100%;height:100%;object-fit:cover}
+.ph .sh{position:absolute;inset:0;pointer-events:none}
+.ph.ol{box-shadow:0 30px 60px rgba(0,0,0,.55)}
+.tx{position:absolute;left:0;width:1080px;text-align:center;white-space:nowrap;display:none;color:#fff}
+.M8{font-family:M;font-weight:800;letter-spacing:-.045em}
+.M7{font-family:M;font-weight:700}
+.M5{font-family:M;font-weight:500}
+.S{font-family:S;font-style:italic;font-weight:400;letter-spacing:-.01em}
+.blue{color:#4f86ff}
+.mask{display:inline-block;overflow:hidden;vertical-align:bottom;padding:0 .04em}
+.mask>span{display:inline-block}
+.kick{font-family:M;font-weight:700;font-size:40px;letter-spacing:.16em;color:#c9cfdb}
+.uline{position:absolute;left:0;right:0;height:10px;background:#2f6bff;transform-origin:0 50%;border-radius:2px}
+.shadow{text-shadow:0 4px 30px rgba(0,0,0,.75),0 2px 6px rgba(0,0,0,.5)}
+#grain{position:absolute;inset:-50%;opacity:.05;pointer-events:none;mix-blend-mode:screen;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}
+#sysL{background:#0d0f14}
+.node{position:absolute;border:2px solid #2a3040;background:#121620;border-radius:16px;display:none;font-family:M;font-weight:700;color:#aab2c3;font-size:24px;letter-spacing:.12em;text-align:center}
+.node b{position:absolute;left:0;right:0;bottom:16px}
+.node i{position:absolute;left:18px;top:16px;width:12px;height:12px;border-radius:50%;background:#2f6bff}
+.r{position:absolute;display:none;border-radius:10px;background:#151922;border:2px solid #232937;overflow:hidden}
+.r.on{background:#1b2b55;border-color:#2f6bff}
+.r span{position:absolute;left:12px;top:8px;font-family:M;font-weight:700;font-size:20px;color:#6d7588}
+.phone{position:absolute;width:500px;height:1080px;border-radius:64px;background:#0b0d12;border:3px solid #2a3040;padding:16px;display:none;box-shadow:0 40px 90px rgba(0,0,0,.6)}
+.phone .scr{position:relative;width:100%;height:100%;border-radius:50px;overflow:hidden;background:#f6f6f4}
+.phone .scr img{position:absolute;left:0;top:0;width:100%;display:block}
+/* web (modo oscuro, como pro-team.app) */
+#web{background:#0d0f14;font-family:M}
+#wp{position:absolute;left:70px;top:0;width:940px}
+.pill{display:inline-flex;align-items:center;gap:16px;border:2px solid #262b36;border-radius:999px;padding:16px 28px;font-weight:700;font-size:30px;letter-spacing:.12em;color:#c9cfdb}
+.dot{width:16px;height:16px;border-radius:50%;background:#2f6bff;position:relative}
+.dot i{position:absolute;inset:0;border-radius:50%;border:3px solid #2f6bff}
+.h1x{margin-top:44px;font-weight:800;font-size:104px;line-height:.98;letter-spacing:-.05em;color:#f2f1ec}
+.h1x .it{color:#4f86ff;font-size:120px}
+.cd{display:flex;gap:20px;margin-top:60px}
+.cd div{flex:1;background:#151922;border:2px solid #1f2430;border-radius:24px;padding:26px 0 20px;text-align:center}
+.cd b{display:block;font-weight:800;font-size:96px;color:#f2f1ec;letter-spacing:-.03em;font-variant-numeric:tabular-nums}
+.cd span{font-weight:700;font-size:22px;color:#7d8597;letter-spacing:.14em}
+#fld{margin-top:56px;height:150px;border-radius:28px;border:3px solid #262b36;background:#11141b;display:flex;align-items:center;padding:0 44px;font-weight:500;font-size:50px;color:#f2f1ec;position:relative}
+#fld .ph2{color:#5d6475}
+#btn{margin-top:26px;height:160px;border-radius:28px;background:#2f6bff;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:52px;letter-spacing:-.02em;position:relative;overflow:hidden;margin-left:auto;margin-right:auto}
+#rip{position:absolute;width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,.35);display:none}
+#spin{width:70px;height:70px;border-radius:50%;border:7px solid rgba(255,255,255,.3);border-top-color:#fff;display:none}
+#ok{display:none;align-items:center;gap:22px}
+#okc{width:84px;height:84px}
+#cur{position:absolute;width:70px;height:70px;display:none;filter:drop-shadow(0 8px 14px rgba(0,0,0,.6))}
+#note{margin-top:36px;text-align:center;font-weight:500;font-size:36px;color:#7d8597}
+#web{z-index:5}
+.caret{display:inline-block;width:4px;height:58px;background:#2f6bff;vertical-align:-10px;margin-left:4px}
+.ph.clip{border:14px solid #fbfaf6;box-shadow:0 18px 40px rgba(0,0,0,.25)}
+.ink{color:#0d0f14!important;text-shadow:none!important}
+.strike{position:absolute;left:-4%;right:-4%;top:52%;height:16px;background:#2f6bff;transform-origin:0 50%;border-radius:3px}
+.vb .node{background:#fbfaf6;border-color:#d6d2c6;color:#0d0f14}
+.vb .node div{background:#e4e0d4!important}
+
+.mk{position:absolute;width:66px;height:66px;margin:-33px 0 0 -33px;border-radius:50%;background:#2f6bff;border:5px solid #dfe7ff;display:none;box-shadow:0 8px 22px rgba(47,107,255,.45)}
+.att{position:absolute;width:54px;height:54px;margin:-27px 0 0 -27px;border-radius:50%;background:#f2f1ec;display:none;box-shadow:0 0 0 10px rgba(242,241,236,.15),0 0 30px rgba(242,241,236,.5)}
+</style></head><body>
+<div id="st">
+  <div class="L" id="sysL"></div>
+  <div class="L" id="paper" style="background:#f2f1ec;z-index:0"></div>
+  <div id="phs" style="position:absolute;inset:0;z-index:1;isolation:isolate"></div>
+  <div id="cards" style="position:absolute;inset:0;z-index:2"></div>
+  <div id="phones" style="position:absolute;inset:0;z-index:4"></div>
+  <div class="L" id="web"><div id="wp">
+    <div class="pill"><span class="dot"><i id="ping"></i></span>LISTA DE ESPERA</div>
+    <div class="cd"><div><b id="cd1">09</b><span>DÍAS</span></div><div><b id="cd2">12</b><span>HORAS</span></div><div><b id="cd3">29</b><span>MIN</span></div><div><b id="cd4">59</b><span>SEG</span></div></div>
+    <div id="fld"><span id="fldt"><span class="ph2">Tu email</span></span><span class="caret" id="fc" style="opacity:0"></span></div>
+    <div id="btn"><div id="rip"></div><span id="btt">Unirme a la lista de espera</span><div id="spin"></div>
+      <div id="ok"><svg id="okc" viewBox="0 0 84 84"><circle cx="42" cy="42" r="38" fill="none" stroke="#fff" stroke-width="6" stroke-dasharray="239" stroke-dashoffset="239" id="okr"/><path d="M26 43l11 11 21-23" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="60" stroke-dashoffset="60" id="okp"/></svg><span>Estás dentro</span></div></div>
+  </div>
+  <svg id="cur" viewBox="0 0 24 24"><path d="M4 2 L4 20 L9 15.5 L12.5 22 L15.5 20.6 L12.2 14.2 L19 14 Z" fill="#fff" stroke="#0d0f14" stroke-width="1.3" stroke-linejoin="round"/></svg></div>
+  <div id="txt" style="position:absolute;inset:0;z-index:6"></div>
+  <div id="grain"></div>
+</div>
+<script src="/tools/reel33/times.js"></script>
+<script>
+const T = window.TIMES; window.DUR = T.END;
+const clamp = (x, a = 0, b = 1) => Math.max(a, Math.min(b, x));
+const seg = (t, a, b) => clamp((t - a) / (b - a));
+const E = { out: p => 1 - Math.pow(1 - p, 3), out5: p => 1 - Math.pow(1 - p, 5), in: p => p * p * p, io: p => p < .5 ? 4 * p * p * p : 1 - Math.pow(-2 * p + 2, 3) / 2 };
+const $ = id => document.getElementById(id);
+const show = (el, v) => { el.style.display = v ? (el._d || 'block') : 'none'; };
+const IMG = n => `/tools/reel33/img/${n}.jpg`;
+const mk = (tag, css, html, parent) => { const d = document.createElement(tag); if (css) d.style.cssText = css; if (html != null) d.innerHTML = html; (parent || $('txt')).appendChild(d); return d; };
+function ph(src, pos = '50% 30%') {
+  const d = document.createElement('div'); d.className = 'ph';
+  const i = document.createElement('img'); i.src = IMG(src); i.style.objectPosition = pos; d.appendChild(i);
+  const s = document.createElement('div'); s.className = 'sh'; d.appendChild(s); d._img = i; d._sh = s;
+  $('phs').appendChild(d); return d;
+}
+function place(el, o = {}) {
+  el.style.left = '0px'; el.style.top = '0px'; el.style.width = '1080px'; el.style.height = '1920px';
+  el.style.opacity = o.op == null ? 1 : o.op; el.style.zIndex = o.z || 1;
+  el._img.style.transformOrigin = o.org || '50% 50%';
+  el._img.style.transform = `scale(${o.is || 1.06}) translate(${o.ix || 0}px,${o.iy || 0}px)`;
+  el._sh.style.background = o.grad || `rgba(0,0,0,${o.dark || 0})`;
+}
+function tx(html, y, cls, size) { const d = document.createElement('div'); d.className = 'tx ' + cls; d.style.top = y + 'px'; d.style.fontSize = size + 'px'; d.innerHTML = html; $('txt').appendChild(d); return d; }
+function reveal(el, p) { el.querySelectorAll('.mask>span').forEach((s, i, a) => { const q = E.out5(clamp(p * (1 + .25 * (a.length - 1)) - .25 * i)); s.style.transform = `translateY(${(1 - q) * 110}%)`; }); }
+const M = s => `<span class="mask"><span>${s}</span></span>`;
+
+
+// ── 1 · GANCHO: Dika Mem armando el brazo · «Brazo arriba: 4 PASES.» legible desde el fotograma 0 ──
+const MEM = ph('mem', '50% 20%');
+const k1 = tx(`<div class="kick" style="color:#e6e8ee">BALONMANO · JUEGO PASIVO</div>`, 980, 'shadow', 40);
+const h1 = tx('Brazo arriba:', 1040, 'M8 shadow', 112);
+const h2 = tx('<span class="blue">4 PASES.</span>', 1170, 'M8 shadow', 230);
+const h3 = tx(M('<span class="S">y a tirar.</span>'), 1430, 'shadow', 110);
+function hook(t) {
+  const b = T.s2, v = t < b; [MEM, k1, h1, h2, h3].forEach(e => show(e, v)); if (!v) return;
+  const k = t >= T.tir ? 1 : 0;
+  place(MEM, { is: [1.04, 1.22][k] + .04 * seg(t, 0, b), org: ['50% 30%', '55% 22%'][k], grad: 'linear-gradient(180deg,rgba(0,0,0,.4) 0%,rgba(0,0,0,0) 20%,rgba(0,0,0,.08) 40%,rgba(0,0,0,.75) 50%,rgba(0,0,0,.9) 70%,rgba(0,0,0,.94) 100%)' });
+  h2.style.transform = `scale(${1 + .04 * Math.exp(-Math.pow((t - T.tir) / .15, 2))})`;
+  show(h3, t >= T.tir - .05); reveal(h3, seg(t, T.tir - .05, T.tir + .3));
+  const out = seg(t, b - .1, b); [MEM, k1, h1, h2, h3].forEach(e => e.style.opacity = 1 - out);
+}
+
+// ── 2 · EL DATO: hasta 2022 eran 6 → 4 en el golpe; cuatro pases que se cuentan y el tiro ──
+const dK = tx(`<div class="kick">${M('REGLAS IHF · DESDE EL 1/7/2022')}</div>`, 470, '', 40);
+const dA = tx(M('Hasta 2022 eran'), 530, 'M8', 96);
+const dA2 = tx('Desde 2022, solo', 530, 'M8', 96);
+const SIX = mk('div', 'position:absolute;left:0;width:1080px;top:650px;text-align:center;font-family:M;font-weight:800;font-size:420px;line-height:1;letter-spacing:-.05em;color:#f2f1ec;display:none', '<span style="position:relative;display:inline-block">6<i class="strike" style="display:block;top:50%;height:22px;transform:scaleX(0)"></i></span>');
+const FOUR = mk('div', 'position:absolute;left:0;width:1080px;top:650px;text-align:center;font-family:M;font-weight:800;font-size:420px;line-height:1;letter-spacing:-.05em;color:#4f86ff;display:none', '4');
+const dB = tx(M('<span class="S blue">pases, como máximo.</span>'), 1100, '', 104);
+const DOTS = [1, 2, 3, 4].map(i => mk('div', `position:absolute;left:${120 + (i - 1) * 170}px;top:1290px;width:130px;height:130px;border-radius:50%;border:4px solid #2a3040;background:#151922;font-family:M;font-weight:800;font-size:60px;color:#6d7588;line-height:122px;text-align:center;display:none`, i));
+const SHOT = mk('div', 'position:absolute;left:800px;top:1290px;width:180px;height:130px;border-radius:65px;border:4px solid #2a3040;background:#151922;font-family:M;font-weight:800;font-size:44px;letter-spacing:.06em;color:#6d7588;line-height:122px;text-align:center;display:none', 'TIRO');
+const dS = tx(`<div class="M5" style="font-size:36px;color:#9aa2b3">Fuente: IHF · de 6 a 4 pases tras el aviso</div>`, 1500, '', 36);
+function dato(t) {
+  const a = T.s2, b = T.s3, v = t >= a && t < b; [dK, dA, dA2, SIX, FOUR, dB, ...DOTS, SHOT, dS].forEach(e => show(e, v)); if (!v) return;
+  show($('sysL'), true); reveal(dK, seg(t, a, a + .3)); reveal(dA, seg(t, a + .05, a + .4));
+  const D = T.drop, s = E.out5(seg(t, D - .55, D - .2));
+  SIX.querySelector('.strike').style.transform = `scaleX(${s})`;
+  const six = t < D; show(SIX, six); show(FOUR, !six); show(dA, six); show(dA2, !six);
+  SIX.style.opacity = six ? E.out(seg(t, a + .1, a + .4)) : 0; SIX.style.transform = `scale(${1 + .08 * E.io(seg(t, a, D)) - .03 * s})`; dA.style.transform = `scale(${1 + .03 * seg(t, a, D)})`;
+  FOUR.style.transform = `scale(${1 + .12 * Math.exp(-Math.pow((t - D - .06) / .14, 2))})`;
+  show(dB, t >= D + .15); reveal(dB, seg(t, D + .15, D + .45));
+  DOTS.forEach((d, i) => { const ti = D + .5 + .38 * i, on = t >= ti; d.style.opacity = E.out(seg(t, D + .3, D + .6));
+    d.style.background = on ? '#2f6bff' : '#151922'; d.style.borderColor = on ? '#4f86ff' : '#2a3040'; d.style.color = on ? '#fff' : '#6d7588';
+    d.style.transform = `scale(${1 + .1 * Math.exp(-Math.pow((t - ti - .05) / .1, 2))})`; });
+  const ts = D + .5 + .38 * 4, so = t >= ts; SHOT.style.opacity = E.out(seg(t, D + .3, D + .6));
+  SHOT.style.background = so ? '#f2f1ec' : '#151922'; SHOT.style.color = so ? '#0d0f14' : '#6d7588'; SHOT.style.borderColor = so ? '#f2f1ec' : '#2a3040';
+  SHOT.style.transform = `scale(${1 + .1 * Math.exp(-Math.pow((t - ts - .05) / .1, 2))})`;
+  dS.style.opacity = E.out(seg(t, D + .2, D + .5));
+  const out = seg(t, b - .12, b); [dK, dA2, dB, ...DOTS, SHOT, dS, FOUR].forEach(e => e.style.opacity = Math.min(+(e.style.opacity || 1), 1 - out));
+}
+
+// ── 3 · LA APP: el pasivo pitado se apunta como Pérdida y el lunes está en la Cronología (capturas reales) ──
+const PW = 580, PX = 250, PY = 560, SW = PW - 26, SH = Math.round(SW * 2410 / 1112), PH = SH + 26;
+const PHN = mk('div', `position:absolute;left:${PX}px;top:${PY}px;width:${PW}px;height:${PH}px;border-radius:62px;background:#0b0d12;border:3px solid #2a3040;padding:10px;display:none;box-shadow:0 40px 90px rgba(0,0,0,.6);transform-origin:0 0;will-change:transform`, '<div id="scr" style="position:relative;width:100%;height:100%;border-radius:50px;overflow:hidden;background:#f6f6f4"></div>', $('phones'));
+const SC1 = mk('img', 'position:absolute;left:0;top:0;width:100%;height:100%', null, $('scr')); SC1.src = IMG('accion');
+const SC2 = mk('img', 'position:absolute;left:0;top:0;width:100%;height:100%;display:none', null, $('scr')); SC2.src = IMG('crono');
+const HL = mk('div', 'position:absolute;border:6px solid #2f6bff;border-radius:16px;display:none;z-index:6;box-shadow:0 0 0 10px rgba(47,107,255,.2)', '', $('scr'));
+const BAND = mk('div', 'position:absolute;left:0;top:0;width:1080px;height:540px;background:linear-gradient(#0d0f14 84%,rgba(13,15,20,0));display:none');
+const aK = tx(`<div class="kick">${M('EN LA APP DE PROTEAM · CAPTURA REAL')}</div>`, 280, '', 40);
+const A1 = tx('<span class="M8">Pasivo pitado</span> <span class="S blue" style="font-size:104px">= pérdida.</span>', 336, 'M8', 92);
+const A2 = tx('<span class="M8">El lunes,</span> <span class="S blue" style="font-size:100px">en la cronología.</span>', 340, 'M8', 84);
+const K = { a: [1, .5, .62, 1180], p: [1.55, .5, .775, 1120], c: [1.6, .5, .855, 1100] };
+function box(el, x0, y0, x1, y1) { el.style.left = x0 * SW + 'px'; el.style.top = y0 * SH + 'px'; el.style.width = (x1 - x0) * SW + 'px'; el.style.height = (y1 - y0) * SH + 'px'; }
+function app(t) {
+  const a = T.s3, m = T.m, b = T.s4, v = t >= a && t < b;
+  [PHN, BAND, aK, A1, A2, HL].forEach(e => show(e, false)); if (!v) return;
+  show($('sysL'), true); [PHN, BAND, aK].forEach(e => show(e, true)); reveal(aK, seg(t, a, a + .3));
+  const p = E.out5(seg(t, a, a + .4)), out = seg(t, b - .12, b);
+  let P, q, Q;
+  if (t < m) { P = K.a; Q = K.p; q = E.out5(seg(t, a + .05, a + .45)); } else { P = K.c; Q = K.c; q = 0; }
+  const L = i => P[i] + (Q[i] - P[i]) * q, s = L(0), lx = 13 + L(1) * SW, ly = 13 + L(2) * SH;
+  const x = 540 - PX - s * lx, y = L(3) - PY - s * ly;
+  PHN.style.transform = `translate(${x}px,${y + (1 - p) * 900}px) scale(${s})`; PHN.style.opacity = 1 - out;
+  const first = t < m; show(SC1, first); show(SC2, !first);
+  if (first) { show(A1, true); const r = E.out5(seg(t, a + .15, a + .45)); A1.style.opacity = r; A1.style.transform = `translateY(${(1 - r) * 26}px)`;
+    show(HL, t >= a + .28); box(HL, .06, .728, .94, .818); HL.style.opacity = E.out(seg(t, a + .28, a + .45));
+    HL.style.transform = `scale(${1 + .04 * Math.exp(-Math.pow((t - a - .4) / .15, 2))})`; }
+  else { show(A2, true); const r = E.out5(seg(t, m, m + .3)); A2.style.opacity = r; A2.style.transform = `translateY(${(1 - r) * 26}px)`;
+    show(HL, t >= m + .05); box(HL, .02, .833, .98, .876); HL.style.opacity = E.out(seg(t, m + .05, m + .2)); HL.style.transform = 'none'; }
+  [BAND, aK, A1, A2].forEach(e => e.style.opacity = Math.min(+e.style.opacity || 1, 1 - out));
+}
+
+// ── 4 · RETO PARA EL STAFF: la selección española en corro + campaña ──
+const ESP = ph('espana', '50% 50%');
+const rK = tx(`<div class="kick" style="color:#e6e8ee">${M('RETO PARA TU STAFF')}</div>`, 880, 'shadow', 40);
+const r1 = tx(M('¿Cuántos balones perdisteis'), 940, 'M8 shadow', 74);
+const r2 = tx(M('<span class="S" style="color:#9db8ff">por pasivo el sábado?</span>'), 1036, 'shadow', 108);
+const rC = tx(`<div class="M7" style="font-size:44px;color:#fff">Comenta tu deporte, categoría y días</div>`, 1236, 'shadow', 44);
+function reto(t) {
+  const a = T.s4, v = t >= a && t < T.camp - .05; [ESP, rK, r1, r2, rC].forEach(e => show(e, v)); if (!v) return;
+  place(ESP, { is: 1.0 + .06 * seg(t, a, T.END), org: '42% 30%', grad: 'linear-gradient(180deg,rgba(0,0,0,.45) 0%,rgba(0,0,0,0) 20%,rgba(0,0,0,.1) 36%,rgba(0,0,0,.78) 46%,rgba(0,0,0,.92) 64%,rgba(0,0,0,.95) 100%)', z: 3 });
+  ESP._img.style.objectPosition = '42% 50%';
+  reveal(rK, seg(t, a, a + .3)); reveal(r1, seg(t, a + .15, a + .5)); reveal(r2, seg(t, a + .5, a + .85));
+  rC.style.opacity = E.out(seg(t, a + .9, a + 1.2));
+  const fo = 1 - seg(t, T.camp - .17, T.camp - .05); [rK, r1, r2].forEach(e => e.style.opacity = fo); rC.style.opacity = Math.min(+rC.style.opacity, fo);
+}
+
+// ── 5 · CIERRE (v3, 17/11, encargo de Andrés): la entrada en la lista de espera con el contador (misma animación de u28 v3, u30 y u09) ──
+// el contador sale de lo que falta de verdad cuando se publica (mié 18/11 11:30 → vie 27/11 23:59:59 = 9 d 12 h 29 min 59 s)
+let rs = 11; const rnd = () => (rs = (rs * 16807) % 2147483647) / 2147483647;
+const W = { web: T.camp - .05 }; W.tap = W.web + 1.15; W.ok = W.tap + .22; W.gal = T.gra - .1;
+const PT = Array.from({ length: 22 }, () => { const o = document.createElement('div'); const a = rnd() * Math.PI * 2, r = 160 + rnd() * 260;
+  o.style.cssText = `position:absolute;left:0;top:0;width:${10 + rnd() * 10}px;height:${10 + rnd() * 10}px;border-radius:50%;background:${rnd() < .7 ? '#2f6bff' : '#f2f1ec'};display:none;margin-left:${470 + 70}px;margin-top:0px`;
+  o._dx = Math.cos(a) * r; o._dy = Math.sin(a) * r * .7; $('web').appendChild(o); return o; });
+const GA = ph('mem', '50% 20%');
+const tHE = tx('<span class="mask"><span>HASTA EL</span></span>', 1130, 'M8 shadow', 70);
+const t28 = tx('<span class="mask"><span>27 NOV</span></span>', 1220, 'M8 shadow', 230);
+const t3M = tx('<span class="mask"><span class="S blue">3 meses gratis.</span></span>', 800, 'shadow', 180);
+function webcta(t) {
+  const wv = t >= W.web && t < W.gal; show($('web'), wv);
+  if (wv) {
+    const p = E.out5(seg(t, W.web, W.web + .4));
+    $('wp').style.top = (470 + (1 - p) * 120) + 'px'; $('wp').style.opacity = p;
+    [...$('wp').children].forEach((c, i) => { const q = E.out(seg(t, W.web + i * .04, W.web + .28 + i * .04)); c.style.opacity = q; c.style.transform = `translateY(${(1 - q) * 40}px)`; });
+    const pg = (t * 1.4) % 1; $('ping').style.transform = `scale(${1 + pg * 1.6})`; $('ping').style.opacity = 1 - pg;
+    const total0 = ((9 * 24 + 12) * 60 + 29) * 60 + 59 - Math.floor(t - W.web);
+    const acc = E.in(seg(t, W.web + .3, W.gal - .08)); const rem = Math.max(0, Math.round(total0 * (1 - acc)));
+    const dd = Math.floor(rem / 86400), hh = Math.floor(rem % 86400 / 3600), mm = Math.floor(rem % 3600 / 60), ss = rem % 60;
+    [['cd1', dd], ['cd2', hh], ['cd3', mm], ['cd4', ss]].forEach(([id, v]) => { const el = $(id); const nv = String(v).padStart(2, '0'); if (el.textContent !== nv) { el._ch = t; el.textContent = nv; } el.style.color = rem === 0 ? '#4f86ff' : '#f2f1ec';
+      const q = E.out(seg(t, el._ch || -9, (el._ch || -9) + .18)); el.style.transform = `translateY(${(1 - q) * -22}px)`; el.style.opacity = .35 + .65 * q; });
+    PT.forEach((o, i) => { const q = seg(t, W.ok + .15, W.ok + .85); o.style.display = q > 0 && q < 1 ? 'block' : 'none'; if (q > 0 && q < 1) { const e = E.out(q); o.style.transform = `translate(${o._dx * e}px,${o._dy * e + 120 * q * q}px) scale(${1 - q})`; o.style.opacity = 1 - q; } });
+    const z = seg(t, W.gal - .12, W.gal); $('wp').querySelector('.cd').style.transform = `scale(${1 + .05 * Math.sin(z * Math.PI)})`;
+    const fl = $('fld'), bt = $('btn'), wp = $('wp'); const top = parseFloat(wp.style.top);
+    const fy = top + fl.offsetTop + 75, by = top + bt.offsetTop + 80;
+    const P = [[W.web + .08, 980, 1800], [W.web + .22, 760, fy + 10], [W.web + .5, 740, fy + 14], [W.tap - .12, 560, by + 12], [W.tap - .02, 562, by + 14], [W.gal, 562, by + 14]];
+    let x = P[0][1], y = P[0][2];
+    for (let i = 0; i < P.length - 1; i++) if (t >= P[i][0]) { const k = E.io(seg(t, P[i][0], P[i + 1][0])); x = P[i][1] + (P[i + 1][1] - P[i][1]) * k; y = P[i][2] + (P[i + 1][2] - P[i][2]) * k; }
+    const cu = $('cur'); show(cu, t > W.web + .08 && t < W.ok + .2); cu.style.left = x + 'px'; cu.style.top = y + 'px';
+    const click = Math.max(Math.exp(-Math.pow((t - (W.web + .24)) / .06, 2)), Math.exp(-Math.pow((t - W.tap) / .06, 2)));
+    cu.style.transform = `scale(${1 - .2 * click})`; cu.style.opacity = 1 - seg(t, W.ok, W.ok + .2);
+    const focus = t > W.web + .24;
+    fl.style.borderColor = focus ? '#2f6bff' : '#262b36'; fl.style.boxShadow = focus ? `0 0 0 ${(8 + 3 * Math.sin(t * 6)) * E.out(seg(t, W.web + .24, W.web + .37))}px rgba(47,107,255,.22)` : 'none';
+    const em = 'entrenador@miclub.es'; const tp = seg(t, W.web + .26, W.web + .5); const ne = Math.floor(em.length * clamp(tp + .06 * Math.sin(tp * 19)));
+    $('fldt').innerHTML = ne ? em.slice(0, ne) : (focus ? '' : '<span class="ph2">Tu email</span>');
+    $('fc').style.opacity = focus && t < W.tap ? (Math.floor(t * 4) % 2 ? 1 : .15) : 0;
+    if (t > W.tap) { fl.style.borderColor = '#262b36'; fl.style.boxShadow = 'none'; }
+    const press = Math.exp(-Math.pow((t - W.tap) / .08, 2)); const hov = E.out(seg(t, W.tap - .35, W.tap - .1));
+    const doneP = E.out5(seg(t, W.ok, W.ok + .45));
+    bt.style.transform = `scale(${1 - .05 * press + .025 * hov * (t < W.tap ? 1 : 0)})`; bt.style.boxShadow = `0 0 ${60 * hov * (t < W.ok ? 1 : 0) + 50 * Math.exp(-Math.pow((t - W.ok - .3) / .25, 2))}px rgba(47,107,255,.6)`;
+    bt.style.width = (940 - (940 - 560) * doneP) + 'px'; bt.style.borderRadius = (28 + 52 * doneP) + 'px';
+    PT.forEach(o => { o.style.left = '0px'; o.style.top = (top + bt.offsetTop + 70) + 'px'; });
+    const rip = $('rip'); const rp = seg(t, W.tap, W.tap + .5); show(rip, rp > 0 && rp < 1);
+    rip.style.left = (560 - 70 - 20) + 'px'; rip.style.top = '60px'; rip.style.transform = `scale(${1 + rp * 40})`; rip.style.opacity = .9 * (1 - rp);
+    const busy = t >= W.tap + .1 && t < W.ok;
+    $('btt').style.display = t < W.tap + .1 ? 'inline' : 'none'; $('spin').style.display = busy ? 'block' : 'none'; $('spin').style.transform = `rotate(${t * 900}deg)`;
+    $('ok').style.display = t >= W.ok ? 'flex' : 'none';
+    $('okr').setAttribute('stroke-dashoffset', 239 * (1 - E.out(seg(t, W.ok + .05, W.ok + .4))));
+    $('okp').setAttribute('stroke-dashoffset', 60 * (1 - E.out(seg(t, W.ok + .25, W.ok + .55))));
+    bt.style.background = '#2f6bff';
+  }
+  const g0 = W.gal, v = t >= g0; show(GA, v); if (v) place(GA, { is: 1.2 - .08 * seg(t, g0, T.END), org: '50% 20%', dark: .66, z: 2 });
+  show(tHE, v); show(t28, t >= g0 + .1); show(t3M, v); reveal(tHE, seg(t, g0, g0 + .3)); reveal(t28, seg(t, g0 + .1, g0 + .45));
+  reveal(t3M, seg(t, T.gra - .05, T.gra + .3)); t3M.style.transform = `scale(${1 + .05 * seg(t, T.gra, T.END)})`;
+  if (v) show($('web'), false);
+}
+
+window.frame = t => {
+  show($('sysL'), false); show($('paper'), false);
+  hook(t); dato(t); app(t); reto(t); webcta(t);
+  $('grain').style.transform = `translate(${(Math.floor(t * 24) * 37) % 200 - 100}px,${(Math.floor(t * 24) * 53) % 200 - 100}px)`;
+};
+document.fonts.ready.then(() => Promise.all([...document.images].map(i => i.complete ? 1 : new Promise(r => { i.onload = i.onerror = r; })))).then(() => setTimeout(() => { window.frame(0); window.ready = true; }, 300));
+</script></body></html>

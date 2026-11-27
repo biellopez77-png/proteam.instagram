@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8">
+<!-- T01-5-r2 «Diez baja» (fútbol). Plantilla a3.html: planos fijos, la cámara solo se mueve al cambiar de zona. Todo dibujado (sin fotos, sin caras, sin escudos). Escena en segunda persona: minutos, marcador, dorsales y notas son de la escena (EJEMPLO). -->
+<style>
+@font-face{font-family:M;font-weight:800;src:url(/tools/fonts/manrope-latin-800-normal.woff2)}
+@font-face{font-family:M;font-weight:700;src:url(/tools/fonts/manrope-latin-700-normal.woff2)}
+@font-face{font-family:M;font-weight:500;src:url(/tools/fonts/manrope-latin-500-normal.woff2)}
+@font-face{font-family:S;font-style:italic;font-weight:400;src:url(/tools/fonts/instrument-serif-latin-400-italic.woff2)}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#fbfaf7}
+#st{position:absolute;inset:0;overflow:hidden;background:#fbfaf7}
+#world{position:absolute;left:0;top:0;transform-origin:0 0}
+.o{position:absolute;left:0;top:0;transform-origin:50% 50%}
+.paper{background:#fff;box-shadow:0 18px 50px rgba(20,18,12,.10)}
+.board{background:#fdfdfc;border:10px solid #d9dcdf;border-radius:10px;box-shadow:0 18px 50px rgba(20,18,12,.10)}
+.num{position:absolute;font-family:M;font-weight:800;letter-spacing:-.05em;color:#121212;white-space:nowrap;line-height:1}
+.lab{position:absolute;font-family:M;font-weight:800;letter-spacing:.14em;color:#121212;white-space:nowrap}
+#cap{position:absolute;left:90px;right:90px;top:1330px;text-align:center;font-family:M;font-weight:800;font-size:58px;line-height:1.12;letter-spacing:-.03em;color:#121212;padding:18px 26px;border-radius:22px;background:rgba(251,250,247,.94)}
+#cap em{font-family:S;font-style:italic;font-weight:400;font-size:1.14em;letter-spacing:0}
+#cap .b{color:#2f6bff}#cap .r{color:#d23a2a}
+#cap.dk{background:rgba(14,14,16,0);color:#f4f3ef}
+#hook{position:absolute;left:70px;right:70px;top:120px;text-align:center;font-family:M;font-weight:800;font-size:84px;line-height:1.04;letter-spacing:-.05em;color:#121212}
+#gr,#gs{position:absolute;inset:0;pointer-events:none;mix-blend-mode:multiply;opacity:0}#gr{background:#d9e3f0}#gs{background:#efe2c8}
+#ink{position:absolute;inset:0;background:#0e0e10;opacity:0;pointer-events:none}
+#lt{position:absolute;left:290px;top:460px;opacity:0;pointer-events:none}
+</style></head><body><div id="st">
+<div id="world">
+  <!-- 1 · la hoja del segundo con «Diez baja» en la esquina (H1) -->
+  <div class="o paper" id="H1" style="width:760px;height:1000px">
+    <svg width="760" height="1000" viewBox="0 0 760 1000" style="position:absolute;left:0;top:0;overflow:visible">
+      <text x="50" y="86" font-family="M" font-weight="800" font-size="26" letter-spacing="4" fill="#77736b">NOTAS · 1.ª PARTE</text>
+      <text x="710" y="86" font-family="M" font-weight="700" font-size="20" letter-spacing="3" fill="#b3aea4" text-anchor="end">EJEMPLO</text>
+      <g stroke="#e6e9ee" stroke-width="3"><path d="M50 200 H710"/><path d="M50 300 H710"/><path d="M50 400 H710"/><path d="M50 500 H710"/><path d="M50 600 H710"/><path d="M50 700 H710"/><path d="M50 800 H710"/></g>
+      <text x="40" y="958" font-family="S" font-style="italic" font-size="22" fill="#9aa1a8">min 20</text>
+      <text x="705" y="935" font-family="S" font-style="italic" font-size="60" fill="#3b3d42" text-anchor="end" transform="rotate(-4 600 920)">Diez baja</text>
+    </svg></div>
+  <!-- 2 · el reloj del partido y el marcador (R) -->
+  <div class="o" id="CK" style="width:620px;height:300px;background:#141518;border-radius:24px;box-shadow:0 18px 50px rgba(20,18,12,.16)">
+    <div class="lab" style="left:0;right:0;top:26px;text-align:center;font-size:24px;color:#9aa1a8">MINUTO · EJEMPLO</div>
+    <div class="num" id="ck20" style="left:0;right:0;top:86px;text-align:center;font-size:160px;color:#f4f3ef">20:00</div>
+    <div class="num" id="ck60" style="left:0;right:0;top:86px;text-align:center;font-size:160px;color:#f4f3ef;opacity:0">60:00</div></div>
+  <div class="o" id="SC" style="width:460px;height:210px;background:#fff;border-radius:20px;border:6px solid #121212">
+    <div class="lab" style="left:0;right:0;top:22px;text-align:center;font-size:22px;color:#77736b">VOSOTROS · ELLOS · EJEMPLO</div>
+    <div class="num" style="left:0;right:0;top:68px;text-align:center;font-size:116px">1 - <span style="color:#d23a2a">3</span></div></div>
+  <!-- 3 · el campo (C): vuestras líneas y su 10 -->
+  <svg class="o" id="CF" width="760" height="1100" viewBox="0 0 760 1100" style="overflow:visible">
+    <rect width="760" height="1100" fill="#fff"/>
+    <g fill="none" stroke="#121212" stroke-width="4" opacity=".5"><rect width="760" height="1100"/><path d="M0 550 H760"/><circle cx="380" cy="550" r="90"/>
+      <rect x="170" y="940" width="420" height="160"/><rect x="280" y="1050" width="200" height="50"/><rect x="170" y="0" width="420" height="160"/></g>
+    <rect id="gap" x="60" y="690" width="640" height="110" fill="#d23a2a" opacity="0"/>
+    <g id="lines" fill="#3a3d42"></g>
+    <g id="ten" transform="translate(380 880)">
+      <path d="M-34 -40 Q0 -26 34 -40 L64 -18 L50 10 L36 4 V48 H-36 V4 L-50 10 L-64 -18 Z" fill="#fff" stroke="#121212" stroke-width="5" stroke-linejoin="round"/>
+      <text x="0" y="36" font-family="M" font-weight="800" font-size="44" text-anchor="middle" fill="#d23a2a" letter-spacing="-2">10</text></g>
+    <path id="tenA" d="M380 840 C 380 800 384 780 386 760" fill="none" stroke="#d23a2a" stroke-width="6" stroke-linecap="round" stroke-dasharray="4 14" opacity="0"/>
+  </svg>
+  <!-- 4 · la banda: tu segundo, de espaldas, con la hoja (BD) -->
+  <svg class="o" id="BD" width="760" height="1100" viewBox="0 0 760 1100" style="overflow:visible">
+    <rect width="760" height="1100" fill="#e3ebe0"/><path d="M500 0 V1100" stroke="#fff" stroke-width="12"/>
+    <g id="s1" fill="#3a3d42"><circle cx="300" cy="400" r="66"/><path d="M190 1100 L190 590 Q190 480 300 480 Q410 480 410 590 L410 1100 Z"/></g>
+    <g id="s1h" transform="translate(420 640) rotate(8)"><rect x="0" y="0" width="120" height="160" fill="#fff" stroke="#121212" stroke-width="4"/>
+      <path d="M18 40 H100 M18 70 H100 M18 100 H80" stroke="#c9ced6" stroke-width="4"/><path d="M56 138 H104" stroke="#3b3d42" stroke-width="5" stroke-linecap="round"/></g>
+  </svg>
+  <!-- 5 · el descanso: tus preguntas y sus respuestas (BQ) -->
+  <svg class="o" id="Q1" width="460" height="210" viewBox="0 0 460 210" style="overflow:visible">
+    <path d="M40 20 H420 Q450 20 450 50 V140 Q450 170 420 170 H140 L90 206 L100 170 H40 Q10 170 10 140 V50 Q10 20 40 20 Z" fill="#fff" stroke="#121212" stroke-width="6" stroke-linejoin="round"/>
+    <text x="230" y="118" font-family="S" font-style="italic" font-size="72" text-anchor="middle" fill="#121212">¿Tarjetas?</text></svg>
+  <svg class="o" id="Q2" width="460" height="210" viewBox="0 0 460 210" style="overflow:visible">
+    <path d="M40 20 H420 Q450 20 450 50 V140 Q450 170 420 170 H140 L90 206 L100 170 H40 Q10 170 10 140 V50 Q10 20 40 20 Z" fill="#fff" stroke="#121212" stroke-width="6" stroke-linejoin="round"/>
+    <text x="230" y="118" font-family="S" font-style="italic" font-size="72" text-anchor="middle" fill="#121212">¿Cansados?</text></svg>
+  <svg class="o" id="A1" width="400" height="210" viewBox="0 0 400 210" style="overflow:visible">
+    <path d="M40 20 H360 Q390 20 390 50 V140 Q390 170 360 170 H300 L310 206 L260 170 H40 Q10 170 10 140 V50 Q10 20 40 20 Z" fill="#eef0f3" stroke="#77736b" stroke-width="5" stroke-linejoin="round"/>
+    <text x="200" y="118" font-family="S" font-style="italic" font-size="70" text-anchor="middle" fill="#3b3d42">Ninguna.</text></svg>
+  <svg class="o" id="A2" width="400" height="210" viewBox="0 0 400 210" style="overflow:visible">
+    <path d="M40 20 H360 Q390 20 390 50 V140 Q390 170 360 170 H300 L310 206 L260 170 H40 Q10 170 10 140 V50 Q10 20 40 20 Z" fill="#eef0f3" stroke="#77736b" stroke-width="5" stroke-linejoin="round"/>
+    <text x="200" y="118" font-family="S" font-style="italic" font-size="70" text-anchor="middle" fill="#3b3d42">El 8.</text></svg>
+  <!-- 6 · el bolsillo del chándal (BL) -->
+  <div class="o" id="TK" style="width:720px;height:1000px;background:#2b3550;border-radius:40px 40px 0 0">
+    <div style="position:absolute;left:356px;top:0;width:8px;height:1000px;background:#1d2438"></div></div>
+  <div class="o paper" id="FS" style="width:220px;height:300px;background:#fff;border:3px solid #d9dcdf">
+    <svg width="214" height="294" viewBox="0 0 214 294" style="position:absolute;left:0;top:0"><path d="M20 60 H194 M20 110 H194 M20 160 H194 M20 210 H150" stroke="#e1e5ea" stroke-width="5"/>
+      <text x="196" y="270" font-family="S" font-style="italic" font-size="30" fill="#3b3d42" text-anchor="end">Diez baja</text></svg></div>
+  <div class="o" id="PK" style="width:380px;height:300px;background:#323d5c;border-top:8px solid #1d2438;border-radius:0 0 40px 40px;box-shadow:0 -6px 18px rgba(0,0,0,.18)">
+    <div class="lab" style="left:0;right:0;top:120px;text-align:center;font-size:22px;color:#6c7796">BOLSILLO</div></div>
+  <!-- 7 · banquillo y pizarra, y el hilo que no llega (BP) -->
+  <svg class="o" id="BN" width="760" height="520" viewBox="0 0 760 520" style="overflow:visible">
+    <path d="M40 120 Q380 20 720 120 V160 H40 Z" fill="#cfd6df" stroke="#121212" stroke-width="5" stroke-linejoin="round"/>
+    <path d="M70 160 V420 M690 160 V420" stroke="#121212" stroke-width="6"/>
+    <rect x="80" y="330" width="600" height="40" rx="10" fill="#e9e3d8" stroke="#121212" stroke-width="5"/>
+    <path d="M110 370 V430 M650 370 V430" stroke="#121212" stroke-width="6"/>
+    <text x="380" y="500" font-family="M" font-weight="800" font-size="28" letter-spacing="6" text-anchor="middle" fill="#77736b">BANQUILLO</text></svg>
+  <div class="o board" id="PZ" style="width:640px;height:440px">
+    <svg width="620" height="420" viewBox="0 0 620 420" style="position:absolute;left:0;top:0;overflow:visible"><g fill="none" stroke="#c4c9ce" stroke-width="4"><rect x="30" y="30" width="560" height="360"/><path d="M310 30 V390"/><circle cx="310" cy="210" r="56"/></g>
+      <text x="590" y="460" font-family="S" font-style="italic" font-size="44" fill="#9aa1a8" text-anchor="end">pizarra</text>
+      <text id="pzT" x="440" y="150" font-family="S" font-style="italic" font-size="56" fill="#2f6bff" text-anchor="middle" opacity="0">su 10 baja</text>
+      <path id="pzA" d="M440 190 V300 M410 268 L440 302 L470 268" fill="none" stroke="#2f6bff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" opacity="0"/></svg></div>
+  <svg class="o" id="TH" width="1400" height="400" viewBox="0 0 1400 400" style="overflow:visible">
+    <path id="th1" d="M120 300 C 340 400 560 160 780 240" fill="none" stroke="#77736b" stroke-width="6" stroke-linecap="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/>
+    <circle id="th1e" cx="780" cy="240" r="10" fill="#77736b" opacity="0"/></svg>
+  <!-- 8 · la solución: la hoja limpia con tres preguntas (H2), y la pizarra que ahora sí recibe (PZ2) -->
+  <div class="o paper" id="H2" style="width:760px;height:1000px">
+    <svg width="760" height="1000" viewBox="0 0 760 1000" style="position:absolute;left:0;top:0;overflow:visible">
+      <text x="50" y="86" font-family="M" font-weight="800" font-size="26" letter-spacing="4" fill="#77736b">ANTES DEL PARTIDO</text>
+      <text x="710" y="86" font-family="M" font-weight="700" font-size="20" letter-spacing="3" fill="#b3aea4" text-anchor="end">EJEMPLO</text>
+      <g id="rows"></g>
+      <path id="u3" d="M170 722 C 330 714 520 728 690 716" fill="none" stroke="#2f6bff" stroke-width="7" stroke-linecap="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/>
+    </svg></div>
+  <div class="o board" id="PZ2" style="width:600px;height:420px">
+    <svg width="580" height="400" viewBox="0 0 580 400" style="position:absolute;left:0;top:0;overflow:visible"><g fill="none" stroke="#c4c9ce" stroke-width="4"><rect x="30" y="30" width="520" height="340"/><path d="M290 30 V370"/><circle cx="290" cy="200" r="52"/></g>
+      <text id="p2T" x="410" y="140" font-family="S" font-style="italic" font-size="52" fill="#2f6bff" text-anchor="middle" opacity="0">su 10 baja</text>
+      <path id="p2A" d="M410 176 V286 M380 254 L410 288 L440 254" fill="none" stroke="#2f6bff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" opacity="0"/>
+      <text x="550" y="440" font-family="S" font-style="italic" font-size="40" fill="#9aa1a8" text-anchor="end">pizarra</text></svg></div>
+  <svg class="o" id="TH2" width="1200" height="700" viewBox="0 0 1200 700" style="overflow:visible">
+    <path id="th2" d="M190 640 C 360 680 470 330 700 260" fill="none" stroke="#2f6bff" stroke-width="7" stroke-linecap="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/>
+    <circle id="th2e" cx="700" cy="260" r="12" fill="#2f6bff" opacity="0"/></svg>
+  <svg class="o" id="PC" width="40" height="300" viewBox="0 0 40 300" style="overflow:visible">
+    <path d="M20 300 L6 252 L34 252 Z" fill="#e9c99a" stroke="#121212" stroke-width="3" stroke-linejoin="round"/><path d="M20 300 L15 284 L25 284 Z" fill="#121212"/>
+    <rect x="6" y="40" width="28" height="212" fill="#f2c94c" stroke="#121212" stroke-width="3"/><rect x="6" y="10" width="28" height="32" rx="4" fill="#e8a0a0" stroke="#121212" stroke-width="3"/></svg>
+  <!-- marca -->
+  <div class="o" id="B" style="width:900px;height:500px;text-align:center">
+    <div class="num" style="position:static;font-size:170px;margin-top:120px">Pro<span style="color:#2f6bff">Team</span></div>
+    <div style="margin-top:30px;font-family:M;font-weight:500;font-size:38px;color:#77736b">la app del entrenador · enlace en la bio</div></div>
+</div>
+<div id="gr"></div><div id="gs"></div>
+<div id="hook">Dos palabras que nadie leyó.</div>
+<div id="ink"></div>
+<svg id="lt" width="500" height="560" viewBox="0 0 500 560"><defs><radialGradient id="lg"><stop offset="0" stop-color="#fff" stop-opacity=".22"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient></defs>
+  <circle cx="250" cy="280" r="250" fill="url(#lg)"/>
+  <rect x="190" y="150" width="120" height="110" fill="#fff"/><path d="M210 190 H290 M210 220 H270" stroke="#d7dbe0" stroke-width="5"/>
+  <rect x="130" y="240" width="240" height="190" rx="22" fill="#323d5c"/><rect x="130" y="240" width="240" height="10" fill="#1d2438"/></svg>
+<div id="cap"></div>
+</div>
+<script src="/tools/reel_v4/T01-5-r2/times.js"></script>
+<script>
+const $=id=>document.getElementById(id), W=window.WORDS, NS='http://www.w3.org/2000/svg';
+const at=(w,n=1)=>{let c=0;for(const x of W)if(x[0]===w&&++c===n)return x[1];throw 'no '+w+n};
+const cl=(x,a=0,b=1)=>Math.min(b,Math.max(a,x)), r=(t,a,b)=>cl((t-a)/(b-a));
+const io=x=>x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2, eo=x=>1-Math.pow(1-x,3), lerp=(a,b,k)=>a+(b-a)*k;
+const T={dos:at('dos'),esquina:at('esquina'),hoja:at('hoja'),nadie:at('nadie'),escritas:at('escritas'),veinte:at('veinte'),sesenta:at('sesenta'),cuando:at('cuando'),perdiendo:at('perdiendo'),
+ futbol:at('futbol'),juvenil:at('juvenil'),su:at('su'),arriba:at('arriba'),bajar:at('bajar'),entre:at('entre'),donde:at('donde'),seguia:at('seguia'),tu:at('tu'),segundo:at('segundo'),vio:at('vio'),banda:at('banda'),
+ pero:at('pero'),tarjetas:at('tarjetas'),cansancio:at('cansancio'),contesto:at('contesto'),solo:at('solo'),hoja2:at('hoja',2),doblada:at('doblada'),bolsillo:at('bolsillo'),respuesta:at('respuesta'),dentro:at('dentro'),
+ llego:at('llego'),banquillo:at('banquillo'),metro:at('metro'),pero2:at('pero',2),pizarra:at('pizarra'),escondio:at('escondio'),nadie3:at('nadie',3),pidio:at('pidio'),antes:at('antes'),tres:at('tres'),tercera:at('tercera'),
+ misma:at('misma'),cambiado:at('cambiado'),otras:at('otras'),donde2:at('donde',2),quien:at('quien'),una:at('una',2),linea:at('linea'),respuesta2:at('respuesta',2),apunt:at('apuntalo'),porque:at('porque'),
+ pizarra2:at('pizarra',2),bolsillo2:at('bolsillo',2),END:window.VEND+.25};
+// zonas del mundo
+const H1=[0,0], CK=[1500,-120], SC=[1500,520], C=[0,1950], BD=[1150,1950], BQ=[2300,1950], BL=[3400,1950], BP=[1700,3900], H2=[0,6400], P2=[910,6350], BR=[0,8600];
+const CORNER=[H1[0]+180,H1[1]+400];
+const CUTB=T.nadie3-.15;
+// cámara: planos FIJOS; solo se mueve al cambiar de zona (0,6 s, entrada y salida suaves)
+const SH=[ // [inicio del movimiento, cx, cy, zoom, duración]
+ [0,CORNER[0],CORNER[1],2.6],
+ [T.dos-.25,H1[0]+120,H1[1]+250,1.45,.7],
+ [T.hoja-.3,H1[0],H1[1]+20,.95,.65],
+ [T.escritas-.35,CK[0],CK[1]+60,1.35,.75],
+ [T.sesenta-.3,CK[0],CK[1]+10,1.65],
+ [T.perdiendo-.4,SC[0],SC[1],1.7],
+ [T.futbol-.4,C[0],C[1]+10,.95,.8],
+ [T.su-.35,C[0]+20,C[1]+120,1.75],
+ [T.tu-.35,BD[0]+40,BD[1]-60,1.2],
+ [T.pero-.35,BQ[0],BQ[1]+150,1.25],
+ [T.solo-.4,BQ[0]+180,BQ[1]+330,1.75],
+ [T.hoja2-.4,BL[0],BL[1]-180,1.1,.7],
+ [T.dentro-.5,BL[0],BL[1]+20,1.55],
+ [T.llego-.4,BP[0]+60,BP[1]-40,.6,.8],
+ [CUTB,H2[0],H2[1],.95],
+ [T.antes-.3,H2[0]-20,H2[1]+190,1.55],
+ [T.otras-.35,H2[0]-20,H2[1]-60,1.4],
+ [T.una-.4,410,H2[1]+20,.68,.8],
+ [T.apunt-.35,BR[0],BR[1],1.0],
+ [T.porque+.05,CORNER[0],CORNER[1],2.6,.95]];
+const CUTS=new Set([CUTB]);
+function cam(t){let i=0;while(i+1<SH.length&&SH[i+1][0]<=t)i++;const s=SH[i];
+ if(i===0||CUTS.has(s[0]))return [s[1],s[2],s[3],0];
+ const p=SH[i-1],Dd=s[4]||.62,k=r(t,s[0],s[0]+Dd),e=io(k);
+ const lz=lerp(Math.log(p[3]),Math.log(s[3]),e)-.12*Math.sin(Math.PI*k)*(Math.hypot(s[1]-p[1],s[2]-p[2])>600?1:0);
+ return [lerp(p[1],s[1],e),lerp(p[2],s[2],e),Math.exp(lz),k>0&&k<1?Math.sin(Math.PI*k):0]}
+const sz=el=>[el.offsetWidth||+el.getAttribute('width'),el.offsetHeight||+el.getAttribute('height')];
+function place(el,x,y,rot=0,sc=1,sy=1){const [w,h]=sz(el);el.style.transform=`translate(${x-w/2}px,${y-h/2}px) rotate(${rot}deg) scale(${sc},${sc*sy})`}
+const drawK=(el,k)=>{el.setAttribute('stroke-dashoffset',100-100*k);el.style.visibility=k>0?'visible':'hidden'};
+const draw=(el,a,b,f=io)=>drawK(el,f(r(window._t,a,b)));
+const mk=(tag,at,par)=>{const e=document.createElementNS(NS,tag);for(const k in at)e.setAttribute(k,at[k]);par.appendChild(e);return e};
+// vuestras dos líneas (medio y defensa), sin caras
+[[150,520],[290,510],[470,510],[610,520],[140,820],[290,830],[470,830],[620,820]].forEach(([x,y])=>mk('circle',{cx:x,cy:y,r:24},$('lines')));
+// la hoja buena: tres números, tres preguntas, tres respuestas (EJEMPLO)
+const ROWS=[];{const g=$('rows');[['¿Por dónde os hacen daño?','por dentro'],['¿Quién no llega?','el 8'],['¿Qué han cambiado ellos?','su 10 baja']].forEach(([q,a],i)=>{
+ const y=230+i*240;const n=mk('text',{x:50,y:y+40,'font-family':'M','font-weight':800,'font-size':120,fill:'#2f6bff',opacity:0},g);n.textContent=i+1;
+ const qq=mk('text',{x:170,y:y-10,'font-family':'S','font-style':'italic','font-size':52,fill:'#121212',opacity:0},g);qq.textContent=q;
+ const aa=mk('text',{x:170,y:y+70,'font-family':'S','font-style':'italic','font-size':60,fill:'#2f6bff',opacity:0},g);aa.textContent='→ '+a;
+ mk('path',{d:`M170 ${y+100} H700`,stroke:'#dbe4ee','stroke-width':3},g);ROWS.push([n,qq,aa])})}
+const NT=[T.tres-.05,T.tres+.15,T.tres+.35], QT=[T.donde2-.25,T.quien-.2,T.misma-.1], AT=[T.una-.15,T.una+.1,T.linea-.05];
+const CAPS=[[.3,T.dos-.2,'<em>«Diez baja».</em>'],[T.dos-.1,T.nadie-.15,'Dos palabras <em>en una esquina…</em>'],[T.nadie-.1,T.escritas-.25,'…que <em>nadie leyó.</em>'],
+ [T.escritas-.15,T.sesenta-.3,'Escritas <em>en el minuto 20.</em>'],[T.sesenta-.25,T.cuando-.1,'Leídas <em>en el 60.</em>'],[T.cuando,T.futbol-.3,'<em>Cuando ya ibais</em> <span class="r">perdiendo.</span>'],
+ [T.futbol-.2,T.su-.25,'Fútbol 11. <em>Juvenil.</em>'],[T.su-.15,T.entre-.2,'Su 10 <em>dejó de esperar arriba…</em>'],[T.entre-.15,T.tu-.25,'…y bajó <span class="r">entre líneas.</span>'],
+ [T.tu-.15,T.pero-.25,'Tu segundo <em>lo vio enseguida.</em>'],[T.pero-.15,T.contesto-.3,'Pero tú preguntaste <em>por tarjetas y cansancio.</em>'],[T.contesto-.25,T.solo-.3,'<em>Él contestó a eso.</em>'],
+ [T.solo-.2,T.hoja2-.35,'<em>Solo a eso.</em>'],[T.hoja2-.25,T.respuesta-.2,'La hoja, <em>doblada en su bolsillo…</em>'],[T.respuesta-.15,T.llego-.3,'…con la respuesta <em>que te faltaba.</em>'],
+ [T.llego-.2,T.pero2-.15,'Llegó a tu banquillo, <em>a un metro…</em>'],[T.pero2-.1,T.escondio-.45,'…pero <span class="r">no a la pizarra.</span>'],[T.escondio-.4,T.nadie3-.25,'<em>No se escondió.</em>'],
+ [T.nadie3-.15,T.antes-.25,'<span class="b">Nadie lo pidió.</span>'],[T.antes-.15,T.tercera-.25,'Antes del partido, <em>3 preguntas.</em>'],[T.tercera-.2,T.otras-.25,'3. <em>¿Qué han cambiado ellos?</em>'],
+ [T.otras-.2,T.quien-.25,'1. <em>¿Por dónde os hacen daño?</em>'],[T.quien-.2,T.una-.25,'2. <em>¿Quién no llega?</em>'],[T.una-.2,T.apunt-.2,'Una línea <em>por respuesta.</em>'],
+ [T.apunt-.1,T.porque-.1,'Apúntalo en la app de ProTeam.'],[T.porque+.05,T.END-.45,'«Diez baja», <em>en la pizarra.</em> <span class="b">No en un bolsillo.</span>']];
+window.frame=function(t){window._t=t;
+  const [cx,cy,z,mv]=cam(t);
+  const wd=$('world');wd.style.transform=`translate(540px,760px) scale(${z}) translate(${-cx}px,${-cy}px)`;
+  wd.style.filter=mv>.35?`blur(${(2.6*(mv-.35)/.65).toFixed(2)}px)`:'none';
+  const late=t>=T.apunt+.7, Lt=x=>late?0:x; // final circular: todo vuelve al estado inicial mientras la cámara está en la marca
+  // 1 · la hoja con «Diez baja»
+  place($('H1'),H1[0],H1[1],-1.2);
+  // 2 · reloj 20:00 → 60:00 y marcador
+  place($('CK'),CK[0],CK[1]);const k6=Lt(io(r(t,T.sesenta-.15,T.sesenta+.35)));$('ck20').style.opacity=1-k6;$('ck60').style.opacity=k6;
+  $('ck20').style.transform=`translateY(${-30*k6}px)`;$('ck60').style.transform=`translateY(${30*(1-k6)}px)`;
+  place($('SC'),SC[0],SC[1]);$('SC').style.opacity=Lt(eo(r(t,T.cuando-.1,T.cuando+.35)));
+  // 3 · campo: su 10 baja entre líneas
+  place($('CF'),C[0],C[1]);const kt=Lt(io(r(t,T.bajar-.1,T.entre+.5)));$('ten').setAttribute('transform',`translate(${380+6*kt} ${880-150*kt})`);
+  $('ten').setAttribute('opacity',Lt(r(t,T.su-.3,T.su+.1)));
+  $('tenA').setAttribute('opacity',Lt(.8*r(t,T.bajar,T.bajar+.3)));
+  $('gap').setAttribute('opacity',Lt(.14*r(t,T.donde-.1,T.donde+.4)));
+  // 4 · la banda
+  place($('BD'),BD[0],BD[1]);const ks=Lt(eo(r(t,T.segundo-.25,T.segundo+.45)));$('s1').setAttribute('transform',`translate(${60*(1-ks)} 0)`);$('s1').setAttribute('opacity',ks);
+  $('s1h').setAttribute('opacity',Lt(r(t,T.vio-.1,T.vio+.25)));
+  // 5 · preguntas y respuestas
+  const qd=1-.6*Lt(r(t,T.solo-.2,T.solo+.3));
+  place($('Q1'),BQ[0]-150,BQ[1]-330);$('Q1').style.opacity=Lt(eo(r(t,T.pero+.3,T.pero+.7)))*qd;
+  place($('Q2'),BQ[0]-150,BQ[1]-60);$('Q2').style.opacity=Lt(eo(r(t,T.tarjetas+.1,T.tarjetas+.5)))*qd;
+  place($('A1'),BQ[0]+180,BQ[1]+200);$('A1').style.opacity=Lt(eo(r(t,T.contesto-.15,T.contesto+.25)));
+  place($('A2'),BQ[0]+180,BQ[1]+440);$('A2').style.opacity=Lt(eo(r(t,T.contesto+.2,T.contesto+.6)));
+  // 6 · el bolsillo: la hoja se dobla y entra
+  place($('TK'),BL[0],BL[1]+200);
+  const kd=Lt(io(r(t,T.doblada-.15,T.doblada+.35))), ki=Lt(io(r(t,T.bolsillo-.15,T.bolsillo+.55)));
+  place($('FS'),BL[0],BL[1]-260+330*ki,-4+4*kd,1,1-.48*kd);$('FS').style.opacity=Lt(r(t,T.hoja2-.35,T.hoja2));
+  place($('PK'),BL[0],BL[1]+180);
+  // 7 · banquillo, pizarra y el hilo que no llega
+  place($('BN'),BP[0]-380,BP[1]+80);place($('PZ'),BP[0]+620,BP[1]-60);place($('TH'),BP[0]+90,BP[1]-40);
+  draw($('th1'),T.metro-.2,T.pizarra-.2);if(late)drawK($('th1'),0);$('th1e').setAttribute('opacity',Lt(r(t,T.pizarra-.25,T.pizarra-.1)));
+  // 8 · solución
+  place($('H2'),H2[0],H2[1],-1);
+  ROWS.forEach(([n,q,a],i)=>{n.setAttribute('opacity',Lt(r(t,NT[i],NT[i]+.25)));q.setAttribute('opacity',Lt(r(t,QT[i],QT[i]+.3)));a.setAttribute('opacity',Lt(r(t,AT[i],AT[i]+.3)))});
+  draw($('u3'),T.cambiado-.1,T.cambiado+.45);if(late)drawK($('u3'),0);
+  place($('PZ2'),P2[0],P2[1]);place($('TH2'),H2[0]+500,H2[1]+0);
+  draw($('th2'),T.linea-.15,T.respuesta2-.3);if(late)drawK($('th2'),0);$('th2e').setAttribute('opacity',Lt(r(t,T.respuesta2-.35,T.respuesta2-.2)));
+  $('p2T').setAttribute('opacity',Lt(r(t,T.respuesta2-.3,T.respuesta2)));$('p2A').setAttribute('opacity',Lt(r(t,T.respuesta2-.15,T.respuesta2+.1)));
+  const pc=$('PC');pc.style.opacity=Lt(r(t,T.antes-.3,T.antes)*(1-r(t,T.una-.5,T.una-.2)));
+  const row=t<T.otras?2:(t<T.quien-.2?0:1);place(pc,H2[0]-380+200+14*Math.sin(t*7),H2[1]-500+(230+row*240)+90,200);
+  place($('B'),BR[0],BR[1]);
+  // color por escena: recuerdo del minuto 20 en sepia suave; problema en frío
+  const sk=r(t,T.su-.45,T.su+.05)*(1-r(t,T.tu-.2,T.tu+.3)), ck=(t<CUTB?r(t,T.futbol-.45,T.futbol+.15):0)*(1-sk);
+  $('gr').style.opacity=.5*ck;$('gs').style.opacity=.55*sk;
+  $('hook').style.opacity=t<20?1-r(t,T.dos-.45,T.dos-.15):r(t,T.pizarra2-.3,T.pizarra2+.2);
+  // giro: fundido a negro en «No se escondió»; luz sobre el bolsillo; de negro a blanco en «Nadie lo pidió»
+  const ink=r(t,T.escondio-.75,T.escondio-.3)*(1-r(t,T.nadie3-.3,T.nadie3+.15));$('ink').style.opacity=ink;
+  $('lt').style.opacity=r(t,T.escondio-.25,T.escondio+.2)*(1-r(t,T.nadie3-.4,T.nadie3-.15));
+  // rótulo
+  let html='',a=0;for(const [s,e,h] of CAPS)if(t>=s-.2&&t<e+.25){const aa=Math.min(r(t,s-.2,s+.15),1-r(t,e-.05,e+.25));if(aa>a||!html){html=h;a=aa}}
+  const cp=$('cap');if(cp.dataset.h!==html){cp.innerHTML=html;cp.dataset.h=html}
+  cp.className=ink>.5?'dk':'';
+  cp.style.opacity=a;cp.style.transform=`translateY(${(1-a)*12}px)`;
+};
+Promise.all([...document.images].map(i=>i.decode().catch(()=>{}))).then(()=>document.fonts.ready).then(()=>{frame(0);window.ready=true});
+</script></body></html>

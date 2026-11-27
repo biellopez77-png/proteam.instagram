@@ -1,0 +1,544 @@
+<title>Onboarding ProTeam</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+<style>
+/* Sistema v4 (Biel, 23/11): paleta real de la app en modo oscuro. /onboarding, la puerta del día de apertura.
+   Lo activo lleva la luz: el bloque de la oferta (si toca), el paso actual, la fila o el rol elegido y el campo con foco.
+   Ultravioleta: ninguno en esta pantalla (no hay rayo del verificado ni acceso al Club). */
+:root{
+  --bg:#02050F; --s1:#060C19; --s2:#0C1323; --s3:#121B30;
+  --blue:#636DFF; --blue-2:#4469FA; --elec:#6AA8FF; --ice:#B9E0FF;
+  --white:#F4F7FB; --text-2:#A3AEC4; --text-3:#6F7A91;
+  --line:rgba(185,224,255,.09); --line-2:rgba(185,224,255,.16);
+  --err:#FF9B8F; --err-bg:rgba(255,155,143,.08);
+  --cat:#E9C27A; --cat-bg:rgba(233,194,122,.12);
+  --sans:"Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --r:16px; color-scheme:dark;
+}
+*{box-sizing:border-box}
+html,body{background:var(--bg)}
+body{margin:0;color:var(--white);font-family:var(--sans);font-size:15px;line-height:1.55;-webkit-font-smoothing:antialiased}
+button,input,select{font:inherit;color:inherit}
+button{cursor:pointer}
+:focus-visible{outline:2px solid var(--elec);outline-offset:2px}
+@media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}}
+code{font-size:12px;color:var(--ice);background:var(--s2);padding:1px 5px;border-radius:5px;word-break:break-word}
+
+/* Barra de control */
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--s1)}
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--s1);border-bottom:1px solid var(--line);
+  padding-block:10px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.bar-in{max-width:1180px;margin:0 auto;display:flex;flex-wrap:wrap;gap:10px 16px;align-items:flex-end}
+.bar h1{font-size:15px;font-weight:800;margin:0 auto 6px 0;letter-spacing:-.01em;white-space:nowrap}
+.bar h1 i{font-style:normal;color:var(--text-3);font-weight:600}
+.ctl{display:flex;flex-direction:column;gap:3px;min-width:0}
+.ctl>span{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--text-3);font-weight:700}
+.seg{display:flex;flex-wrap:wrap;gap:2px;background:var(--bg);border:1px solid var(--line);border-radius:9px;padding:2px}
+.seg button{border:0;background:transparent;padding:5px 10px;border-radius:7px;font-size:12.5px;font-weight:600;color:var(--text-2)}
+.seg button[aria-pressed="true"]{background:var(--s3);color:var(--white)}
+select.sel{font-size:12.5px;font-weight:600;background:var(--bg);border:1px solid var(--line);border-radius:9px;padding:6px 8px;max-width:100%}
+.chk{display:flex;gap:6px;align-items:center;font-size:12.5px;font-weight:600;color:var(--text-2);padding-bottom:5px}
+
+/* Lienzo */
+.stage{padding-block:28px 24px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.frame{margin:0 auto;background:var(--bg);border:1px solid var(--line-2);overflow:hidden;position:relative}
+.frame.mobile{max-width:375px;border-radius:34px;box-shadow:0 0 0 8px #0B0F1A,0 24px 60px rgba(0,0,0,.6);height:760px}
+.frame.desktop{max-width:1180px;border-radius:12px;box-shadow:0 24px 60px rgba(0,0,0,.5);height:760px}
+.urlbar{display:flex;align-items:center;gap:8px;padding:9px 14px;border-bottom:1px solid var(--line);font-size:12px;color:var(--text-3);background:var(--s1)}
+.urlbar b{font-weight:600;color:var(--text-2)}
+.dots{display:flex;gap:5px}.dots i{width:9px;height:9px;border-radius:50%;background:var(--line-2)}
+.mobile .urlbar{display:none}
+.app{position:absolute;inset:0;overflow-y:auto}
+.desktop .app{top:37px}
+.scr{max-width:448px;margin:0 auto;padding:40px 20px 60px}
+.desktop .scr{padding-top:64px}
+.brand{font-weight:800;font-size:15px;letter-spacing:-.01em;color:var(--text-2);margin-bottom:26px}
+.brand i{color:var(--elec);font-style:normal}
+
+/* Propuesta resaltada */
+.show-prop [data-prop]{outline:1.5px dashed rgba(106,168,255,.7);outline-offset:4px;border-radius:6px;position:relative}
+.show-prop [data-prop]::after{content:"Propuesta";position:absolute;top:-11px;right:6px;background:var(--elec);color:var(--bg);font-weight:800;font-size:9.5px;line-height:1;letter-spacing:.06em;text-transform:uppercase;padding:3px 6px;border-radius:4px;z-index:2;pointer-events:none}
+
+/* Tipos */
+.h1{font-size:34px;font-weight:800;line-height:1.05;margin:0;letter-spacing:-.03em}
+.lead{margin:10px 0 0;color:var(--text-2)}
+.h2{font-size:24px;font-weight:800;line-height:1.15;letter-spacing:-.02em;margin:0;text-wrap:balance}
+.eyebrow{font-size:10.5px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--elec)}
+.muted{color:var(--text-2);margin:4px 0 0;font-size:14px}
+.foot{font-size:12.5px;color:var(--text-3);margin:0}
+
+/* Botones */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:7px;border-radius:12px;padding:10px 16px;font-weight:700;font-size:14.5px;border:1px solid transparent;min-height:46px;width:100%}
+.btn svg{width:16px;height:16px;flex:none}
+.btn-p{background:var(--blue);color:#fff;box-shadow:0 10px 28px -12px rgba(99,109,255,.8)}
+.btn-p[disabled]{opacity:.45;cursor:not-allowed;box-shadow:none}
+.btn-o{background:transparent;border-color:var(--line-2);color:var(--white)}
+.btn-g{background:transparent;color:var(--text-2);min-height:44px;font-weight:600}
+.spin{width:15px;height:15px;border-radius:50%;border:2px solid rgba(255,255,255,.35);border-top-color:#fff;animation:sp .8s linear infinite}
+@keyframes sp{to{transform:rotate(360deg)}}
+
+/* Oferta: lo activo de la pantalla, iluminado desde arriba */
+.offer{position:relative;margin-top:26px;padding:20px 18px 16px;border:1px solid var(--line-2);border-radius:18px;display:grid;gap:6px;overflow:hidden;
+  background:radial-gradient(120% 70% at 50% -20%,rgba(106,168,255,.20),rgba(99,109,255,.05) 50%,transparent 75%),var(--s2)}
+.offer::before{content:"";position:absolute;left:14%;right:14%;top:0;height:1px;background:linear-gradient(90deg,transparent,var(--ice),transparent);opacity:.75}
+.offer .big{font-size:30px;font-weight:800;line-height:1.05;letter-spacing:-.03em}
+.offer .big em{font-style:normal;color:var(--ice)}
+.offer p{margin:0;color:var(--text-2);font-size:14px}
+.offer .when{font-size:13px;font-weight:700;color:var(--ice);display:flex;gap:8px;align-items:center}
+.offer .when::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--ice);box-shadow:0 0 8px 1px rgba(185,224,255,.6);flex:none}
+.offer .btn{margin-top:8px}
+.skel{display:grid;gap:10px;margin-top:26px;padding:20px 18px;border:1px solid var(--line);border-radius:18px;background:var(--s1)}
+.skel i{display:block;height:14px;border-radius:6px;background:var(--s3);animation:sh 1.1s ease-in-out infinite alternate}
+@keyframes sh{to{opacity:.4}}
+.soft{margin-top:22px;font-size:13px;color:var(--text-2);background:var(--s1);border:1px solid var(--line);border-radius:14px;padding:12px 14px;display:grid;grid-template-columns:auto 1fr;gap:12px;align-items:center}
+.soft svg{display:block}
+
+/* Opciones: filas en penumbra; al pasar, se encienden */
+.opts{margin-top:28px;border-top:1px solid var(--line)}
+.opt{display:grid;grid-template-columns:36px 1fr 16px;gap:14px;align-items:center;width:100%;text-align:left;background:none;border:0;border-bottom:1px solid var(--line);padding:16px 4px;border-radius:0}
+.opt:hover{background:linear-gradient(90deg,rgba(106,168,255,.07),transparent 70%)}
+.opt:hover .t{color:var(--ice)}
+.opt .ico{width:36px;height:36px;display:grid;place-items:center;color:var(--elec);background:var(--s2);border-radius:10px}
+.opt svg{stroke:currentColor;fill:none;stroke-width:1.6}
+.opt .ico svg{width:20px;height:20px}
+.opt .t{display:block;font-weight:800;font-size:15.5px}
+.opt .s{display:block;font-size:13.5px;color:var(--text-2);margin-top:2px}
+.opt .chev{width:16px;height:16px;color:var(--text-3)}
+.linkb{display:block;margin:14px auto 0;background:none;border:0;color:var(--elec);font-weight:700;font-size:14px;min-height:44px}
+
+/* Pasos: el actual lleva la luz */
+.steps{display:flex;align-items:center;gap:8px;font-size:12px;font-weight:700;color:var(--text-3);margin:0 0 18px}
+.steps span{display:flex;align-items:center;gap:6px}
+.steps span::before{content:"";width:7px;height:7px;border-radius:50%;border:1.4px solid var(--text-3)}
+.steps .past{color:var(--text-2)}
+.steps .past::before{background:var(--text-2);border-color:var(--text-2)}
+.steps .on{color:var(--white)}
+.steps .on::before{background:var(--ice);border-color:var(--ice);box-shadow:0 0 8px 1px rgba(185,224,255,.65)}
+.steps i{width:18px;height:1px;background:var(--line-2);flex:none}
+
+/* Deportes: el campo a escala, en líneas de luz tenue */
+.sports{margin-top:18px;border-top:1px solid var(--line)}
+.sport{display:grid;grid-template-columns:64px 1fr;gap:14px;align-items:center;width:100%;text-align:left;background:none;border:0;border-bottom:1px solid var(--line);padding:14px 4px}
+.sport:hover{background:linear-gradient(90deg,rgba(106,168,255,.07),transparent 70%)}
+.sport:hover b{color:var(--ice)}
+.sport:hover .court rect,.sport:hover .court line,.sport:hover .court circle,.sport:hover .court path{stroke:var(--elec)}
+.sport b{display:block;font-size:16px;font-weight:800}
+.sport span{display:block;font-size:13.5px;color:var(--text-2)}
+.court{width:64px;height:44px;display:grid;place-items:center}
+.court svg{max-width:64px;max-height:44px}
+.court rect,.court line,.court circle,.court path{fill:none;stroke:var(--text-3);stroke-width:1.2}
+
+/* Formularios */
+.panel{margin-top:22px;display:grid;gap:16px}
+.chip{display:flex;align-items:center;justify-content:space-between;gap:10px;background:var(--s1);border:1px solid var(--line);border-radius:12px;padding:10px 12px;font-size:14px;font-weight:600}
+.chip .court rect,.chip .court line,.chip .court circle,.chip .court path{stroke:var(--elec)}
+.chip button{border:0;background:none;color:var(--elec);font-weight:700;font-size:14px;min-height:36px}
+label.f{display:grid;gap:6px}
+label.f>span{font-size:13px;font-weight:700}
+label.f small{font-weight:500;color:var(--text-3)}
+.inp{width:100%;min-height:46px;border:1px solid var(--line-2);border-radius:12px;padding:10px 12px;background:var(--bg);font-size:15px}
+.inp:focus{outline:0;border-color:var(--elec);box-shadow:0 0 0 3px rgba(106,168,255,.15)}
+.inp.bad{border-color:var(--err)}
+.inp.code{text-align:center;letter-spacing:.14em;font-weight:800;font-size:18px;text-transform:uppercase}
+.fe{font-size:13px;color:var(--err);margin:-4px 0 0}
+.alert{display:grid;gap:3px;background:var(--err-bg);border:1px solid rgba(255,155,143,.18);color:var(--err);border-radius:12px;padding:11px 13px;font-size:13.5px}
+.alert b{font-weight:800}
+.alert span{color:var(--text-2)}
+.alert svg{display:block;margin-bottom:6px}
+.team{border:1px solid var(--line-2);border-radius:14px;padding:14px 16px;background:radial-gradient(120% 80% at 50% -30%,rgba(106,168,255,.14),transparent 70%),var(--s1)}
+.team b{font-size:16px}
+.team p{margin:2px 0 0;color:var(--text-2);font-size:13.5px}
+.roles{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.roles button{min-height:44px;border:1px solid var(--line-2);border-radius:12px;background:var(--bg);font-weight:700;font-size:14px;color:var(--text-2)}
+.roles button[aria-pressed="true"]{border-color:var(--elec);color:var(--white);background:rgba(106,168,255,.10);box-shadow:0 0 0 3px rgba(106,168,255,.12),0 0 18px -4px rgba(106,168,255,.6)}
+.legend{font-size:10.5px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--text-3);margin-bottom:6px}
+
+/* Éxito: el peto con el código, bajo su foco */
+.done{text-align:center;display:grid;gap:14px;justify-items:center;margin-top:8px}
+.objw{margin:0}
+.objw svg{display:block;margin:0 auto}
+.obj-cap{font-size:10.5px;color:var(--text-3);margin:4px 0 0}
+.bigcode{font-weight:800;font-size:24px;line-height:1;letter-spacing:.12em;padding:14px 16px;border-radius:14px;border:1px solid rgba(185,224,255,.3);background:var(--s1);color:var(--white);
+  box-shadow:0 0 0 4px rgba(185,224,255,.05),0 0 28px -6px rgba(185,224,255,.45);word-break:break-all;max-width:100%}
+.trial{display:flex;gap:10px;align-items:center;background:rgba(185,224,255,.07);border:1px solid rgba(185,224,255,.22);color:var(--ice);border-radius:12px;padding:10px 12px;font-weight:700;font-size:14px;text-align:left;margin:0}
+.trial::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--ice);box-shadow:0 0 10px 2px rgba(185,224,255,.6);flex:none}
+
+/* P2 · Cuenta sin equipo: el bloque del Club apagado; la luz cae sobre el paso que falta */
+.club{position:relative;margin-top:26px;padding:20px 18px 16px;border:1px solid var(--line-2);border-radius:18px;display:grid;gap:12px;
+  background:radial-gradient(120% 70% at 50% -20%,rgba(106,168,255,.16),rgba(99,109,255,.04) 50%,transparent 75%),var(--s2)}
+.club::before{content:"";position:absolute;left:14%;right:14%;top:0;height:1px;background:linear-gradient(90deg,transparent,var(--ice),transparent);opacity:.6}
+.club-h{display:grid;grid-template-columns:56px 1fr;gap:14px;align-items:center}
+.club-h svg{display:block}
+.club-t{font-size:20px;font-weight:800;line-height:1.15;letter-spacing:-.02em;margin:0;text-wrap:balance}
+.gap{display:flex;align-items:center;gap:8px;font-size:12px;font-weight:700;color:var(--text-3);margin-top:6px}
+.gap span{display:flex;align-items:center;gap:6px}
+.gap span::before{content:"";width:7px;height:7px;border-radius:50%;border:1.4px solid var(--text-3)}
+.gap .ok{color:var(--text-2)}.gap .ok::before{background:var(--text-2);border-color:var(--text-2)}
+.gap .on{color:var(--white)}
+.gap .on::before{background:var(--ice);border-color:var(--ice);box-shadow:0 0 8px 1px rgba(185,224,255,.65);animation:pl 1.8s ease-in-out infinite alternate}
+@keyframes pl{to{box-shadow:0 0 2px 0 rgba(185,224,255,.3)}}
+.gap i{width:18px;height:1px;background:var(--line-2);flex:none}
+.club-o{border-top:1px solid var(--line);padding-top:12px;display:grid;gap:4px}
+.club-o b{font-size:15px;font-weight:800}.club-o b em{font-style:normal;color:var(--ice)}
+.club-o p{margin:0;color:var(--text-2);font-size:13.5px}
+.club-o .when{font-size:12.5px;font-weight:700;color:var(--ice)}
+/* Al crear el equipo, la insignia se enciende (azul, sin ultravioleta: aún no está verificada) */
+.lit{display:grid;grid-template-columns:44px 1fr;gap:12px;align-items:center;text-align:left;width:100%;border:1px solid rgba(185,224,255,.22);border-radius:14px;padding:10px 12px;background:radial-gradient(120% 120% at 0% 50%,rgba(106,168,255,.14),transparent 70%),var(--s1)}
+.lit b{font-weight:800;font-size:14.5px}
+.lit .bdg{animation:on 1.1s ease-out both}
+@keyframes on{0%{filter:grayscale(1) brightness(.6)}60%{filter:grayscale(0) brightness(1.35) drop-shadow(0 0 10px rgba(185,224,255,.7))}100%{filter:none}}
+/* Mi cuenta (web), sin equipo */
+.acc{background:var(--bg);border:1px solid var(--line-2);border-radius:16px;padding:22px 18px;text-align:center;box-shadow:0 24px 60px rgba(0,0,0,.5)}
+.acc .lab{font-size:10.5px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--text-3)}
+.acc h2{font-size:20px;font-weight:800;margin:4px 0 0}
+.acc .club,.acc .offer{text-align:left}
+.acc-sec{text-align:left;margin-top:22px}
+.acc-sec h3{font-size:15px;font-weight:800;margin:0 0 8px}
+.dash{margin-top:10px;border:1px dashed var(--line-2);border-radius:12px;padding:12px;text-align:left}
+.dash b{display:block;font-size:14px}.dash p{margin:2px 0 0;font-size:12.5px;color:var(--text-2)}
+.dash .btn{min-height:40px;font-size:13.5px;margin-top:10px}
+
+/* Toast */
+.toast{position:absolute;left:50%;bottom:24px;transform:translateX(-50%);background:var(--s3);border:1px solid var(--line-2);color:var(--white);font-size:13.5px;font-weight:600;padding:10px 14px;border-radius:12px;max-width:calc(100% - 32px);z-index:5;box-shadow:0 12px 30px rgba(0,0,0,.5)}
+
+/* Versión actual (hoy), en la misma paleta oscura para comparar estructura y textos, no estilo */
+.now .scr{padding-top:48px}
+.now .h1{font-size:30px;font-weight:700;line-height:1.1;letter-spacing:-.01em}
+.now .card{background:var(--s1);border:1px solid var(--line);border-radius:18px;padding:20px}
+.now .nowopt{display:flex;gap:16px;align-items:flex-start;width:100%;text-align:left;background:var(--s1);border:1px solid var(--line);border-radius:18px;padding:20px;margin-top:12px}
+.now .sq{width:40px;height:40px;border-radius:12px;background:var(--blue);display:grid;place-items:center;flex:none}
+.now .sq svg{width:20px;height:20px;stroke:#fff;fill:none;stroke-width:1.8}
+.now .nowopt b{display:block;font-weight:800}
+.now .nowopt span{display:block;font-size:13.5px;color:var(--text-2);margin-top:2px}
+.now .gift{margin-top:24px;border-block:1px solid rgba(99,109,255,.4);background:rgba(99,109,255,.10);padding:20px 16px}
+.cat{background:var(--cat-bg);color:var(--cat);border-radius:4px;padding:0 3px}
+
+/* Notas */
+.sec{padding-block:6px 48px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.wrap{max-width:1180px;margin:0 auto}
+.sec h2{font-size:20px;font-weight:800;letter-spacing:-.01em;margin:0 0 14px}
+.notes{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:16px}
+.note{background:var(--s1);border:1px solid var(--line);border-radius:var(--r);padding:18px 20px;min-width:0}
+.note h3{margin:0 0 8px;font-size:14px;font-weight:800}
+.note ul{margin:0;padding-left:18px;display:grid;gap:6px;font-size:13.5px;color:var(--text-2)}
+.note b{color:var(--white)}
+</style>
+
+<header class="bar"><div class="bar-in">
+  <h1>Onboarding <i>· la puerta de la apertura · v4</i></h1>
+  <div class="ctl"><span>Pantalla</span><div class="seg" id="v-scr"><button data-v="onb" aria-pressed="true">/onboarding</button><button data-v="acc">Mi cuenta (web)</button></div></div>
+  <div class="ctl"><span>Vista</span><div class="seg" id="v-view"><button data-v="mobile" aria-pressed="true">Móvil 375</button><button data-v="desktop">Escritorio</button></div></div>
+  <div class="ctl"><span>Versión</span><div class="seg" id="v-ver"><button data-v="new" aria-pressed="true">Propuesta</button><button data-v="now">Actual (hoy)</button></div></div>
+  <div class="ctl"><span>Fechas</span><div class="seg" id="v-dates"><button data-v="v4" aria-pressed="true">10/12 · 11/12 (por confirmar)</button><button data-v="code">27/11 · 28/11 (código hoy)</button></div></div>
+  <div class="ctl"><span>Cuándo llega</span><div class="seg" id="v-date"><button data-v="wait" aria-pressed="true" id="d-wait">Antes del 10/12 23:59</button><button data-v="open" id="d-open">Desde el 11/12</button></div></div>
+  <div class="ctl"><span>Quién</span><div class="seg" id="v-who"><button data-v="first" aria-pressed="true">Primer equipo</button><button data-v="has">Ya tiene equipo</button></div></div>
+  <div class="ctl"><span>Cuenta sin equipo (P2)</span><div class="seg" id="v-club"><button data-v="on" aria-pressed="true">Club apagado (propuesta)</button><button data-v="off">Sin bloque (v4 anterior)</button></div></div>
+  <div class="ctl"><label class="ctl" for="v-sim"><span>Simular</span></label>
+    <select class="sel" id="v-sim">
+      <option value="ok" selected>Todo bien</option>
+      <option value="slow">Carga lenta</option>
+      <option value="error">Error del servidor</option>
+      <option value="badcode">Código no válido</option>
+      <option value="approval">Unirse pide aprobación</option>
+    </select></div>
+  <label class="chk" for="v-prop"><input type="checkbox" id="v-prop" checked> Marcar lo propuesto</label>
+</div></header>
+
+<div class="stage"><div class="frame mobile" id="frame">
+  <div class="urlbar"><span class="dots"><i></i><i></i><i></i></span><b>proteam.app</b><span id="urlp">/onboarding</span></div>
+  <div class="app" id="app"></div>
+</div></div>
+
+<section class="sec"><div class="wrap">
+  <h2>Lo que hay que saber antes de mirar</h2>
+  <div class="notes">
+    <div class="note"><h3>Sistema v4</h3><ul>
+      <li>Fondo <code>#02050F</code>, filas y tarjetas en <code>#060C19</code>, oferta en <code>#0C1323</code>: los tokens del tema <code>.dark</code> de la app.</li>
+      <li>La luz señala lo activo: el bloque de la oferta (lo único iluminado del menú), el paso actual, la fila al pasar, el rol elegido, el campo con foco y el código del equipo creado.</li>
+      <li>Plus Jakarta Sans en todo; sin voz serif ni trazos a lápiz (el v3 queda retirado).</li>
+      <li>Sin ultravioleta: aquí no hay rayo del verificado ni acceso al Club.</li>
+      <li>Objetos reales (ilustraciones provisionales): un peto con el código del equipo al crearlo y un móvil boca abajo cuando falla la conexión. Errores en coral suave, sin rojo ni verde.</li>
+    </ul></div>
+    <div class="note"><h3>Nuevo 24/11 · Cuenta sin equipo (propuesta P2 de Samuel)</h3><ul>
+      <li><b>El dato:</b> 9 de 33 cuentas (27 %) dieron su correo y no crearon el equipo, así que no están en la lista (embudo del 24/11). La portada ya lo dice: «Crea tu cuenta y tu equipo. Entras en la lista de espera.»</li>
+      <li><b>Dónde llegan (confirmado en el código):</b> a <code>/onboarding</code> (<code>destination</code> de <code>getPublicAccountSummary</code> con 0 equipos; <code>/teams</code> sin equipos también redirige aquí) y, desde la web, a «Mi cuenta». Hoy el Club no aparece en ninguna de las dos: solo vive en la pantalla de espera, que exige equipo.</li>
+      <li><b>Propuesta:</b> mientras la lista está abierta, el bloque de la oferta pasa a ser el del Club <b>apagado</b> (la insignia en gris, como en <code>founder-badge.tsx</code>) con «Te falta un paso para guardar tu sitio», «Cuenta · Equipo» con la luz en el paso que falta, la oferta de siempre y un solo botón «Crear mi equipo». Al crear el equipo, la insignia se enciende en azul con «Ya estás en la lista de espera» (texto que ya existe). Prueba «Pantalla: Mi cuenta (web)».</li>
+      <li><b>Sin ultravioleta</b> aquí: la insignia aún no está pedida ni verificada; el ultravioleta llega en la pantalla de espera («Conseguir mi insignia»). Desde la apertura o con «Ya tiene equipo», no sale.</li>
+    </ul></div>
+    <div class="note"><h3>Por qué ahora</h3><ul>
+      <li>Todo entrenador nuevo pasa por aquí el día de apertura: sin equipo no se entra en la app.</li>
+      <li>Pon «Cuándo llega» en «Desde…» con «Actual (hoy)»: el bloque sigue diciendo «3 meses gratis», pero la base de datos da 1 mes a quien crea su primer equipo después del cierre de la lista.</li>
+      <li>En «Actual (hoy)», lo marcado en ámbar sale en catalán a un entrenador en español: el deporte, la modalidad, el formulario, el éxito y «Handbol».</li>
+    </ul></div>
+    <div class="note"><h3>Confirmado / propuesto / por confirmar</h3><ul>
+      <li><b>Confirmado</b> (código y migración del 18/11): 3 meses para el primer equipo creado antes del cierre de la lista y 1 mes de prueba después; las 4 vías (oferta, unirse, crear, canjear) y sus funciones de servidor; la fecha de fin de prueba que ya devuelve <code>createTeam</code>.</li>
+      <li><b>Por confirmar</b> (RELANZAMIENTO.md): que el cierre pase al jueves 10/12 a las 23:59 y la apertura al viernes 11/12. El código y la migración siguen en 27/11 23:59 y 28/11; las fechas de fin de prueba con 10/12 · 11/12 son el cálculo si se mueven.</li>
+      <li><b>Propuesto</b> (marcado): textos en español, oferta según la fecha, pasos, campos con ayuda, errores dentro del formulario, «Copiar código» y la fecha de fin de prueba en el éxito.</li>
+      <li><b>Fuera a propósito:</b> precio, tarjeta y número de apuntados.</li>
+    </ul></div>
+  </div>
+</div></section>
+
+<script>
+const S={view:"mobile",ver:"new",dates:"v4",date:"wait",who:"first",sim:"ok",prop:true,club:"on",scr:"onb",
+  step:"menu",sport:null,summary:"ok",code:"",preview:false,role:null,pending:false,busy:false,err:null,
+  form:{name:"",category:"",season:"2026-27"},touched:false,created:null,act:{code:"",name:"",category:"",season:"2026-27"},toast:null};
+const N=()=>S.ver==="new";
+const P=()=>N()?"data-prop":"";
+const cat=t=>`<span class="cat">${t}</span>`;
+const SP={
+  football:{n:"Fútbol",d:"Campo de 105 × 68 m, dos partes de 45' y once jugadores.",w:105,h:68,var:true},
+  basketball:{n:"Baloncesto",d:"Cancha de 28 × 15 m, cuatro cuartos de 10' y cinco jugadores.",w:28,h:15},
+  handball:{n:"Balonmano",nNow:"Handbol",d:"Pista de 40 × 20 m, dos partes y siete jugadores en pista.",dNow:"Pista de 40 × 20 m, dues parts i set jugadors a pista.",w:40,h:20},
+  football7:{n:"Fútbol 7",d:"Campo de 65 × 45 m, siete jugadores y partes configurables.",w:65,h:45}
+};
+function court(k,W=60){const s=SP[k],H=Math.round(W*s.h/s.w);
+  return `<svg viewBox="-1 -1 ${W+2} ${H+2}" width="${W}" height="${H}" aria-hidden="true"><rect x="0" y="0" width="${W}" height="${H}" rx="1"/><line x1="${W/2}" y1="0" x2="${W/2}" y2="${H}"/><circle cx="${W/2}" cy="${H/2}" r="${Math.min(5,H/4)}"/>${k==="basketball"?`<path d="M0 ${H/2-5} a6 6 0 0 1 0 10 M${W} ${H/2-5} a6 6 0 0 0 0 10"/>`:k==="handball"?`<path d="M0 ${H/2-9} a9 9 0 0 1 0 18 M${W} ${H/2-9} a9 9 0 0 0 0 18"/>`:`<rect x="0" y="${H/2-H/5}" width="${W/9}" height="${H*2/5}"/><rect x="${W-W/9}" y="${H/2-H/5}" width="${W/9}" height="${H*2/5}"/>`}</svg>`;}
+const ICO={
+  key:'<circle cx="8" cy="15" r="4"/><path d="M11 12l9-9M17 6l3 3M14 9l2 2"/>',
+  board:'<rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4V3h6v1M9 10h6M9 14h6M9 18h3"/>',
+  chev:'<path d="M6 3l5 5-5 5"/>'};
+const svg=(k,cls="",vb="0 0 24 24")=>`<svg class="${cls}" viewBox="${vb}" aria-hidden="true">${ICO[k]}</svg>`;
+const sep=`<i aria-hidden="true"></i>`;
+/* Objetos reales: ilustraciones provisionales; en producto, foto propia o con licencia (biblioteca v4) */
+const PHONE_DOWN=(w=72)=>`<svg width="${w}" height="${Math.round(w*58/74)}" viewBox="0 0 74 58" aria-hidden="true"><ellipse cx="37" cy="50" rx="34" ry="5" fill="#000" opacity=".5"/><rect x="8" y="20" width="58" height="26" rx="6" fill="#0C1323" stroke="#B9E0FF" stroke-opacity=".25"/><rect x="14" y="25" width="10" height="10" rx="3" fill="#121B30" stroke="#B9E0FF" stroke-opacity=".2"/><circle cx="19" cy="30" r="2.4" fill="#02050F"/><path d="M10 46h54" stroke="#6AA8FF" stroke-width="1.5" opacity=".5"/></svg>`;
+const BIB=()=>`<div class="objw" ${'${P()}'}><svg width="132" height="104" viewBox="0 0 132 104" aria-hidden="true"><defs><radialGradient id="spot" cx="50%" cy="35%" r="60%"><stop offset="0" stop-color="#B9E0FF" stop-opacity=".28"/><stop offset=".6" stop-color="#6AA8FF" stop-opacity=".06"/><stop offset="1" stop-color="#6AA8FF" stop-opacity="0"/></radialGradient></defs><ellipse cx="66" cy="50" rx="64" ry="50" fill="url(#spot)"/><ellipse cx="66" cy="96" rx="44" ry="5" fill="#000" opacity=".55"/><path d="M40 16 L54 10 Q66 20 78 10 L92 16 L100 34 L90 38 L90 90 L42 90 L42 38 L32 34 Z" fill="#636DFF" stroke="#B9E0FF" stroke-opacity=".45" stroke-width="1"/><path d="M54 10 Q66 22 78 10" fill="none" stroke="#02050F" stroke-opacity=".5" stroke-width="2"/><path d="M42 38 L42 90 M90 38 L90 90" stroke="#02050F" stroke-opacity=".35" stroke-width="5"/><text x="66" y="66" text-anchor="middle" font-family="Plus Jakarta Sans, sans-serif" font-weight="800" font-size="22" fill="#F4F7FB">1</text></svg><p class="obj-cap">Ilustración provisional: foto propia de un peto bajo el foco del pabellón.</p></div>`;
+const eligible=()=>S.who==="first";
+/* P2: solo en la propuesta, con la lista abierta (antes del cierre) y para quien aún no tiene equipo */
+const clubOn=()=>N()&&S.club==="on"&&eligible()&&S.date==="wait";
+const ROS=(()=>{const p=[];for(let i=0;i<24;i++){const a=Math.PI*i/12-Math.PI/2,r=i%2?88:100;p.push((110+r*Math.cos(a)).toFixed(1)+","+(110+r*Math.sin(a)).toFixed(1));}return p.join(" ");})();
+/* Insignia del Club tal como está en founder-badge.tsx: apagada = gris al 35 %; encendida = azul de la app */
+const BADGE=(size,muted,id)=>`<svg class="bdg" width="${size}" height="${size}" viewBox="0 0 220 220" aria-hidden="true"><defs><linearGradient id="${id}" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="${muted?"#6F7A91":"#636DFF"}"/><stop offset="1" stop-color="${muted?"#6F7A91":"#2A2F8F"}"/></linearGradient></defs><polygon points="${ROS}" fill="url(#${id})" opacity="${muted?.35:1}"/><circle cx="110" cy="110" r="70" fill="none" stroke="#fff" stroke-opacity=".35" stroke-width="2"/><path d="M122 52L78 120h30l-12 48 46-70h-30l10-46z" fill="#fff" stroke="#fff" stroke-width="6" stroke-linejoin="round" opacity="${muted?.55:1}"/></svg>`;
+function clubBlock(btn){
+  return `<div class="club" ${P()}>
+    <div class="club-h">${BADGE(56,true,"bg-off")}<div><p class="club-t">Te falta un paso para guardar tu sitio</p>
+      <div class="gap" aria-label="Te falta el paso 2 de 2"><span class="ok">Cuenta</span><i aria-hidden="true"></i><span class="on">Equipo</span></div></div></div>
+    <div class="club-o"><b><em>3 meses gratis</em> para tu primer equipo</b><p>Crea tu primer equipo y disfruta de acceso completo durante tres meses, sin pagar al crearlo.</p><span class="when">Cuentan desde el ${openDay()}.</span></div>
+    ${btn}
+  </div>`;
+}
+const offer3=()=>S.date==="wait";
+const V4=()=>S.dates==="v4";
+/* Fin de prueba: 3 meses contados desde la apertura (lista) o 1 mes desde que se crea el equipo (ejemplo: creado el día de apertura). */
+const trialEnd=()=>V4()?(offer3()?"11 de marzo de 2027":"11 de enero de 2027"):(offer3()?"28 de febrero de 2027":"28 de diciembre de 2026");
+const openDay=()=>V4()?"11 de diciembre":"28 de noviembre";
+
+/* ---------- Propuesta ---------- */
+function steps(cur){
+  const list=SP[S.sport]?.var||S.step==="variant"||(S.sport==="football7")?["Deporte","Modalidad","Datos"]:["Deporte","Datos"];
+  const idx=list.indexOf(cur);
+  return `<div class="steps" ${P()} aria-label="Paso ${idx+1} de ${list.length}">${list.map((l,i)=>`<span class="${i<idx?"past":i===idx?"on":""}">${l}</span>`).join(sep)}</div>`;
+}
+function offerBlock(){
+  if(!eligible()) return "";
+  if(clubOn()&&S.summary==="ok") return clubBlock(S.step==="menu"?`<button class="btn btn-p" data-go="sport">Crear mi equipo</button>`:"");
+  if(S.summary==="loading") return `<div class="skel" ${P()} aria-label="Cargando"><i style="width:40%"></i><i style="width:70%"></i><i style="width:55%"></i></div>`;
+  if(S.summary==="error") return `<div class="soft" ${P()} role="status">${PHONE_DOWN(56)}<span>No hemos podido comprobar tu oferta ahora. Puedes crear el equipo igualmente: la oferta se aplica sola al crearlo.</span></div>`;
+  const b=offer3()
+    ?`<span class="eyebrow">Para tu primer equipo</span><div class="big"><em>3 meses</em> gratis</div><p>Crea tu primer equipo y disfruta de acceso completo durante tres meses, sin pagar al crearlo.</p><span class="when" ${P()}>Cuentan desde el ${openDay()}.</span>`
+    :`<span class="eyebrow">Para tu primer equipo</span><div class="big" ${P()}><em>1 mes</em> gratis</div><p ${P()}>Crea tu primer equipo y prueba la app completa durante un mes, sin pagar al crearlo.</p>`;
+  return `<div class="offer">${b}${S.step==="menu"?`<button class="btn btn-p" data-go="sport">Crear mi primer equipo</button>`:""}</div>`;
+}
+function menuNew(){
+  return `<h1 class="h1">Empezamos</h1>
+  <p class="lead">Para entrar en la app necesitas formar parte de un equipo.</p>
+  ${offerBlock()}
+  <div class="opts">
+    <button class="opt" data-go="code"><span class="ico">${svg("key")}</span><span><span class="t">Unirme con código</span><span class="s">Introduce el código que te ha dado tu club o entrenador. Si requiere aprobación, la revisarán.</span></span>${svg("chev","chev","0 0 16 16")}</button>
+    <button class="opt" data-go="sport"><span class="ico">${svg("board")}</span><span><span class="t">Crear equipo</span><span class="s">Crea tu equipo, invita a los jugadores y elige después el plan mensual o anual.</span></span>${svg("chev","chev","0 0 16 16")}</button>
+  </div>
+  <button class="linkb" data-go="activation">Canjear código de activación</button>`;
+}
+function sportNew(){
+  return `${steps("Deporte")}<h2 class="h2" ${P()}>¿Qué deporte practica tu equipo?</h2>
+  <p class="muted">Elige el deporte antes de crear el equipo. Podrás cambiarlo después desde la configuración.</p>
+  <div class="sports">${["football","basketball","handball"].map(k=>`<button class="sport" data-sport="${k}"><span class="court">${court(k)}</span><span><b>${SP[k].n}</b><span>${SP[k].d}</span></span></button>`).join("")}</div>
+  <button class="btn btn-g" data-go="menu" style="margin-top:10px">Volver</button>`;
+}
+function variantNew(){
+  return `${steps("Modalidad")}<h2 class="h2" ${P()}>¿Qué modalidad juega el equipo?</h2>
+  <p class="muted">La modalidad define el campo, las posiciones, las alineaciones y las estadísticas de todo el equipo.</p>
+  <div class="sports">${["football","football7"].map(k=>`<button class="sport" data-variant="${k}"><span class="court">${court(k)}</span><span><b>${SP[k].n}</b><span>${SP[k].d}</span></span></button>`).join("")}</div>
+  <button class="btn btn-g" data-go="sport" style="margin-top:10px">Volver</button>`;
+}
+function fieldsErr(){const f=S.form,e={};if(!f.name.trim())e.name="Escribe el nombre del equipo.";if(!/^\d{4}-\d{2}$/.test(f.season.trim()))e.season="Escribe la temporada como 2026-27.";return e;}
+function createNew(){
+  if(S.created) return successNew();
+  const e=S.touched?fieldsErr():{};const f=S.form;
+  return `${steps("Datos")}<h2 class="h2">Crear equipo</h2>
+  <form class="panel" id="fc" novalidate>
+    <div class="chip"><span style="display:flex;gap:10px;align-items:center"><span class="court" style="width:36px;height:26px">${court(S.sport||"football",34)}</span>${SP[S.sport||"football"].n}</span><button type="button" data-go="sport">Cambiar</button></div>
+    <label class="f" for="c-name"><span>Nombre del equipo</span><input class="inp ${e.name?"bad":""}" id="c-name" value="${esc(f.name)}" placeholder="Alevín B" autocomplete="off" aria-invalid="${!!e.name}"></label>${e.name?`<p class="fe" ${P()}>${e.name}</p>`:""}
+    <label class="f" for="c-cat"><span>Categoría <small>· opcional</small></span><input class="inp" id="c-cat" value="${esc(f.category)}" placeholder="Cadete, Juvenil…" autocomplete="off"></label>
+    <label class="f" for="c-season"><span>Temporada</span><input class="inp ${e.season?"bad":""}" id="c-season" value="${esc(f.season)}" inputmode="numeric" aria-invalid="${!!e.season}"></label>${e.season?`<p class="fe" ${P()}>${e.season}</p>`:""}
+    ${S.err?`<div class="alert" role="alert" ${P()}>${PHONE_DOWN()}<b>No se ha podido crear el equipo.</b><span>Revisa tu conexión y vuelve a intentarlo; no se ha guardado nada.</span></div>`:""}
+    <button class="btn btn-p" type="submit" ${S.busy?"disabled":""}>${S.busy?`<span class="spin"></span>Creando…`:"Crear equipo"}</button>
+    <button class="btn btn-g" type="button" data-go="menu">Volver</button>
+  </form>`;
+}
+function successNew(){
+  const code=S.created;
+  return `<div class="done">
+    <span class="eyebrow">${esc(S.form.name)} · ${SP[S.sport].n}</span>
+    ${BIB()}
+    <h2 class="h1">Equipo creado</h2>
+    <p class="muted" style="margin:0">Comparte este código con tus jugadores:</p>
+    <div class="bigcode">${code}</div>
+    <button class="btn btn-o" data-copy style="width:auto" ${P()}>Copiar código</button>
+    ${clubOn()?`<div class="lit" ${P()} role="status">${BADGE(44,false,"bg-on")}<b>Ya estás en la lista de espera</b></div>`:""}
+    ${eligible()?`<p class="trial" ${P()}>Tu prueba gratis dura hasta el ${trialEnd()}.</p>`:""}
+    <button class="btn btn-p" data-toast="Entrando en el panel…">Entrar al panel</button>
+    <p class="foot">Podrás ver el código cuando quieras en Configuración → Equipo.</p>
+  </div>`;
+}
+function codeNew(){
+  if(S.pending) return `<div class="done" style="text-align:left;justify-items:start">
+    <h2 class="h2">Solicitud enviada</h2><p class="muted">El equipo revisará tu solicitud. Cuando la aprueben podrás entrar desde «Mis equipos».</p>
+    <button class="btn btn-p" data-toast="Abriendo Mis equipos…">Ir a mis equipos</button><button class="btn btn-g" data-reset>Volver</button></div>`;
+  const ok=S.code.replace(/\s/g,"").length>=4;
+  return `<h2 class="h2">Código de equipo</h2>
+  <p class="muted" ${P()}>Lo encuentras en el mensaje que te ha enviado tu club o tu entrenador.</p>
+  <form class="panel" id="fj" novalidate>
+    <label class="f" for="j-code"><span class="eyebrow" style="font-size:10.5px">Código</span><input class="inp code" id="j-code" value="${esc(S.code)}" placeholder="ALEVINB-4F7A21C9" autocomplete="off" aria-label="Código de equipo"></label>
+    ${S.err?`<div class="alert" role="alert" ${P()}>${S.err.startsWith("Este código")?"":PHONE_DOWN()}<b>${S.err}</b><span>${S.err.startsWith("Este código")?"Revisa las letras y los números o pide el código otra vez.":"Vuelve a intentarlo en un momento."}</span></div>`:""}
+    ${S.preview?`<div class="team"><b>Infantil A</b><p>Fútbol · Infantil · 2026-27</p></div>
+      <fieldset style="border:0;padding:0;margin:0"><legend class="legend">Entro como</legend><div class="roles">${[["player","Jugador"],["head_coach","Entrenador"],["assistant_coach","Asistente"],["delegate","Delegado"]].map(([r,l])=>`<button type="button" data-role="${r}" aria-pressed="${S.role===r}" ${r==="assistant_coach"?P():""}>${l}</button>`).join("")}</div></fieldset>
+      <button class="btn btn-p" type="button" data-join ${S.busy||!S.role?"disabled":""}>${S.busy?`<span class="spin"></span>Entrando…`:"Entrar en el equipo"}</button>`
+      :`<button class="btn btn-p" type="submit" ${S.busy||!ok?"disabled":""}>${S.busy?`<span class="spin"></span>Comprobando…`:"Comprobar código"}</button>
+      ${!ok?`<p class="foot" ${P()}>Escribe al menos 4 caracteres para comprobarlo.</p>`:""}`}
+    <button class="btn btn-g" type="button" data-reset>Volver</button>
+  </form>`;
+}
+function activationNew(){
+  const a=S.act;
+  return `<h2 class="h2">Canjear código de activación</h2>
+  <p class="muted" ${P()}>Si tu club te ha dado un código de licencia, escríbelo aquí.</p>
+  <form class="panel" id="fa" novalidate>
+    <label class="f" for="a-code"><span>Código</span><input class="inp code" id="a-code" value="${esc(a.code)}" placeholder="PT-XXXX-XXXX-XXXX" autocomplete="off"></label>
+    <label class="f" for="a-name"><span>Nombre del equipo, si el código permite crearlo</span><input class="inp" id="a-name" value="${esc(a.name)}" autocomplete="off"></label>
+    <label class="f" for="a-cat"><span>Categoría</span><input class="inp" id="a-cat" value="${esc(a.category)}" autocomplete="off"></label>
+    <label class="f" for="a-season"><span>Temporada</span><input class="inp" id="a-season" value="${esc(a.season)}"></label>
+    ${S.err?`<div class="alert" role="alert" ${P()}><b>No se ha podido validar el código.</b><span>Revisa que esté bien escrito; si sigue fallando, pide uno nuevo a tu club.</span></div>`:""}
+    <button class="btn btn-p" type="submit" ${S.busy?"disabled":""}>${S.busy?`<span class="spin"></span>Validando…`:"Activar licencia"}</button>
+    <button class="btn btn-g" type="button" data-go="menu">Volver</button>
+  </form>`;
+}
+
+/* ---------- Actual (hoy) ---------- */
+function nowScreen(){
+  const head=`<h1 class="h1">Empezamos</h1><p class="muted">Para entrar en la app necesitas formar parte de un equipo.</p>`;
+  const gift=eligible()&&S.summary==="ok"?`<div class="gift"><b>3 meses gratis para tu primer equipo</b><p class="muted">Crea tu primer equipo y disfruta de acceso completo durante tres meses, sin pagar al crearlo.</p>${S.step==="menu"?`<button class="btn btn-p" data-go="sport" style="margin-top:14px">Crear mi primer equipo</button>`:""}</div>`:"";
+  let body="";
+  if(S.step==="menu") body=`<div style="margin-top:28px"><button class="nowopt" data-go="code"><span class="sq">${svg("key")}</span><span><b>Unirme con código</b><span>Introduce el código que te ha dado tu club o entrenador. Si requiere aprobación, la revisarán.</span></span></button>
+    <button class="nowopt" data-go="sport"><span class="sq">${svg("board")}</span><span><b>Crear equipo</b><span>Crea tu equipo, invita a los jugadores y elige después el plan mensual o anual.</span></span></button>
+    <button class="linkb" data-go="activation">Canjear código de activación</button></div>`;
+  if(S.step==="sport") body=`<div style="margin-top:28px"><b style="font-size:18px">${cat("Quin esport practica el teu equip?")}</b><p class="muted">${cat("Tria l'esport abans de crear l'equip. Podràs canviar-ho després des de la configuració.")}</p>
+    ${["football","basketball","handball"].map(k=>`<button class="nowopt" data-sport="${k}"><span class="sq"></span><span><b>${k==="handball"?cat(SP[k].nNow):SP[k].n}</b><span>${k==="handball"?cat(SP[k].dNow):SP[k].d}</span></span></button>`).join("")}
+    <button class="btn btn-g" data-go="menu">${cat("Tornar")}</button></div>`;
+  if(S.step==="variant") body=`<div style="margin-top:28px"><b style="font-size:18px">${cat("Quina modalitat juga l'equip?")}</b><p class="muted">${cat("La modalitat defineix el camp, les posicions, les alineacions i les estadístiques de tot l'equip.")}</p>
+    ${["football","football7"].map(k=>`<button class="nowopt" data-variant="${k}"><span class="sq"></span><span><b>${SP[k].n}</b><span>${SP[k].d}</span></span></button>`).join("")}
+    <button class="btn btn-g" data-go="sport">${cat("Tornar")}</button></div>`;
+  if(S.step==="create") body=S.created?`<div class="card" style="margin-top:28px;text-align:center;display:grid;gap:10px"><b style="font-size:18px">${cat("Equip creat")}</b><p class="muted">${cat("Comparteix aquest codi amb els teus jugadors:")}</p><b style="font-size:24px;letter-spacing:.12em">${S.created}</b><button class="btn btn-p" data-toast="Entrando en el panel…">${cat("Entrar al panell")}</button></div>`
+    :`<form class="card panel" id="fc" novalidate style="margin-top:28px"><b>${cat("Crear equip")}</b><div class="chip"><span>${S.sport==="handball"?cat("Handbol"):SP[S.sport||"football"].n}</span><button type="button" data-go="sport">${cat("Canviar")}</button></div>
+      <label class="f" for="c-name"><span>${cat("Nom de l'equip")}</span><input class="inp" id="c-name" value="${esc(S.form.name)}"></label>
+      <label class="f" for="c-cat"><span>${cat("Categoria")}</span><input class="inp" id="c-cat" value="${esc(S.form.category)}" placeholder="Cadet, Juvenil…"></label>
+      <label class="f" for="c-season"><span>${cat("Temporada")}</span><input class="inp" id="c-season" value="${esc(S.form.season)}"></label>
+      <button class="btn btn-p" type="submit" ${S.busy?"disabled":""}>${S.busy?cat("Creant…"):cat("Crear equip")}</button><button class="btn btn-g" type="button" data-go="menu">${cat("Tornar")}</button></form>`;
+  if(S.step==="code") body=S.pending?`<div class="card" style="margin-top:28px;text-align:center"><b>Solicitud enviada</b><p class="muted">El equipo revisará tu solicitud. Cuando la aprueben podrás entrar desde «Mis equipos».</p><button class="btn btn-p" data-toast="Abriendo Mis equipos…">Ir a mis equipos</button><button class="btn btn-g" data-reset>Volver</button></div>`
+    :`<form class="card panel" id="fj" style="margin-top:28px" novalidate><b>Código de equipo</b><input class="inp code" id="j-code" value="${esc(S.code)}" placeholder="EQUIP-XXXX" aria-label="Código de equipo">
+      ${S.preview?`<div class="team"><b>Infantil A</b><p>Fútbol · Infantil · 2026-27</p></div><div class="legend">Entro como</div><div class="roles">${[["player","Jugador"],["head_coach","Entrenador"],["assistant_coach","Assistent"],["delegate","Delegado"]].map(([r,l])=>`<button type="button" data-role="${r}" aria-pressed="${S.role===r}">${r==="assistant_coach"?cat(l):l}</button>`).join("")}</div><button class="btn btn-p" type="button" data-join ${!S.role||S.busy?"disabled":""}>${S.busy?"Entrando…":"Entrar en el equipo"}</button>`
+      :`<button class="btn btn-p" type="submit" ${S.busy||S.code.length<4?"disabled":""}>${S.busy?"Comprobando…":"Comprobar código"}</button>`}
+      <button class="btn btn-g" type="button" data-reset>Volver</button></form>`;
+  if(S.step==="activation") body=`<form class="card panel" id="fa" style="margin-top:28px" novalidate><b>Canjear código de activación</b>
+      <label class="f" for="a-code"><span>Código</span><input class="inp" id="a-code" value="${esc(S.act.code)}" placeholder="PT-XXXX-XXXX-XXXX"></label>
+      <label class="f" for="a-name"><span>Nombre del equipo, si el código permite crearlo</span><input class="inp" id="a-name" value="${esc(S.act.name)}"></label>
+      <label class="f" for="a-cat"><span>Categoría</span><input class="inp" id="a-cat" value="${esc(S.act.category)}"></label>
+      <label class="f" for="a-season"><span>Temporada</span><input class="inp" id="a-season" value="${esc(S.act.season)}"></label>
+      <button class="btn btn-p" type="submit" ${S.busy?"disabled":""}>${S.busy?"Validando…":"Activar licencia"}</button><button class="btn btn-g" type="button" data-go="menu">Volver</button></form>`;
+  return head+gift+body;
+}
+
+/* ---------- Mi cuenta (web): panel de public-account-panel.tsx para quien no tiene equipo ---------- */
+function accountScreen(){
+  const first=eligible();
+  let top="";
+  if(S.summary==="loading") return `<div class="acc"><span class="lab">ProTeam</span><h2>Tu cuenta</h2><p class="muted" style="margin-top:24px">Cargando tu espacio…</p></div>`;
+  if(S.summary==="error") return `<div class="acc"><span class="lab">ProTeam</span><h2>Tu cuenta</h2><div class="soft" ${N()?P():""} style="text-align:left">${PHONE_DOWN(56)}<span>No se ha podido cargar la cuenta.</span></div></div>`;
+  if(first){
+    if(clubOn()) top=clubBlock(`<button class="btn btn-p" data-acc-go>Crear mi equipo</button>`);
+    else if(N()) top=offerBlock().replace('data-go="sport"',"data-acc-go");
+    else top=`<div class="offer" style="text-align:left"><b>3 meses gratis para tu primer equipo</b><p>Crea tu primer equipo y disfruta de acceso completo durante tres meses, sin pagar al crearlo.</p><button class="btn btn-p" data-acc-go>Crear mi primer equipo</button></div>`;
+  }
+  const teams=first?`<p class="muted">Todavía no perteneces a ningún equipo.</p><div class="dash"><b>¿Quieres crear tu equipo?</b><p>Crea tu equipo o únete con un código.</p><button class="btn btn-o" data-acc-go>Crear o unirme a un equipo</button></div>`
+    :`<div class="chip"><span>Infantil A<br><small style="color:var(--text-2);font-weight:500">Fútbol · Entrenador</small></span><button type="button" data-toast="Entrando en Infantil A…">Entrar</button></div>`;
+  return `<div class="acc"><span class="lab">ProTeam</span><h2>Tu cuenta</h2>${top}
+    <div class="acc-sec"><h3>Tus equipos</h3>${teams}</div>
+    <button class="btn btn-p" style="margin-top:20px" data-acc-go>Entrar en la aplicación</button>
+    <button class="btn btn-g" data-toast="Sesión cerrada">Cerrar sesión</button></div>`;
+}
+
+function page(){
+  if(S.scr==="acc") return `<div class="scr"><div class="brand">Pro<i>Team</i></div>${accountScreen()}</div>${S.toast?`<div class="toast" role="status">${S.toast}</div>`:""}`;
+  const inner=N()?({menu:menuNew,sport:sportNew,variant:variantNew,create:createNew,code:codeNew,activation:activationNew}[S.step])():nowScreen();
+  return `<div class="scr"><div class="brand">Pro<i>Team</i></div>${inner}</div>${S.toast?`<div class="toast" role="status">${S.toast}</div>`:""}`;
+}
+function esc(s){return String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));}
+
+const app=document.getElementById("app"),frame=document.getElementById("frame");
+function render(){
+  const f=document.activeElement&&app.contains(document.activeElement)?document.activeElement.id:null;
+  frame.className="frame "+S.view+(S.prop&&N()?" show-prop":"")+(N()?"":" now");
+  app.innerHTML=page();
+  document.getElementById("urlp").textContent=S.scr==="acc"?"/ · Mi cuenta":"/onboarding";
+  if(f){const el=document.getElementById(f);if(el&&el.tagName==="INPUT"){el.focus();const v=el.value;try{el.setSelectionRange(v.length,v.length);}catch(e){}}}
+}
+function toast(t){S.toast=t;render();clearTimeout(toast.t);toast.t=setTimeout(()=>{S.toast=null;render();},2600);}
+const delay=()=>S.sim==="slow"?2200:700;
+function loadSummary(){S.summary=S.sim==="slow"?"loading":S.sim==="error"?"error":"ok";render();if(S.sim==="slow")setTimeout(()=>{S.summary="ok";render();},1800);}
+function go(step){S.step=step;S.err=null;S.busy=false;if(step==="menu"){S.created=null;S.touched=false;}app.scrollTop=0;render();}
+
+app.addEventListener("click",e=>{
+  const ag=e.target.closest("[data-acc-go]");if(ag){S.scr="onb";[...document.getElementById("v-scr").children].forEach(x=>x.setAttribute("aria-pressed",x.dataset.v==="onb"));go("menu");toast("Abriendo /onboarding…");return;}
+  const g=e.target.closest("[data-go]");if(g){go(g.dataset.go);return;}
+  const sp=e.target.closest("[data-sport]");if(sp){S.sport=sp.dataset.sport;go(SP[S.sport].var?"variant":"create");return;}
+  const v=e.target.closest("[data-variant]");if(v){S.sport=v.dataset.variant;go("create");return;}
+  const r=e.target.closest("[data-role]");if(r){S.role=r.dataset.role;render();return;}
+  if(e.target.closest("[data-reset]")){S.code="";S.preview=false;S.role=null;S.pending=false;go("menu");return;}
+  if(e.target.closest("[data-join]")){S.busy=true;render();setTimeout(()=>{S.busy=false;
+      if(S.sim==="error"){S.err="No se ha podido entrar en el equipo.";toast(S.err);return;}
+      if(S.sim==="approval"){S.pending=true;render();return;}
+      toast("¡Ya estás en el equipo!");},delay());return;}
+  const c=e.target.closest("[data-copy]");if(c){const t=S.created;
+    const done=()=>toast("Código copiado");
+    try{navigator.clipboard.writeText(t).then(done,done);}catch(err){done();}return;}
+  const tt=e.target.closest("[data-toast]");if(tt){toast(tt.dataset.toast);}
+});
+app.addEventListener("input",e=>{const id=e.target.id,v=e.target.value;
+  if(id==="j-code"){S.code=v.toUpperCase();S.preview=false;S.role=null;S.err=null;const pos=e.target.selectionStart;render();const el=document.getElementById("j-code");if(el){el.focus();try{el.setSelectionRange(pos,pos);}catch(x){}}return;}
+  if(id==="c-name")S.form.name=v; if(id==="c-cat")S.form.category=v; if(id==="c-season")S.form.season=v;
+  if(id==="a-code")S.act.code=v.toUpperCase(); if(id==="a-name")S.act.name=v; if(id==="a-cat")S.act.category=v; if(id==="a-season")S.act.season=v;
+});
+app.addEventListener("submit",e=>{e.preventDefault();const id=e.target.id;
+  if(id==="fj"){S.busy=true;S.err=null;render();setTimeout(()=>{S.busy=false;
+      if(S.sim==="badcode"){S.err="Este código no es válido.";if(!N())toast(S.err);else render();return;}
+      if(S.sim==="error"){S.err="No hemos podido comprobar el código.";if(!N())toast("Error");else render();return;}
+      S.preview=true;S.role="player";render();},delay());}
+  if(id==="fc"){
+    if(N()){S.touched=true;if(Object.keys(fieldsErr()).length){render();return;}}
+    else if(!S.form.name.trim()){toast("Completa este campo.");return;}
+    S.busy=true;S.err=null;render();setTimeout(()=>{S.busy=false;
+      if(S.sim==="error"){if(N()){S.err=true;render();}else toast("No s'ha pogut crear l'equip.");return;}
+      const base=(S.form.name||"EQUIPO").normalize("NFD").replace(/[̀-ͯ]/g,"").replace(/[^a-z0-9]/gi,"").slice(0,12).toUpperCase();
+      S.created=base+"-4F7A21C9";toast(N()?"¡Equipo creado!":"¡Equipo creado!");},delay());}
+  if(id==="fa"){S.busy=true;S.err=null;render();setTimeout(()=>{S.busy=false;
+      if(S.sim==="error"||S.sim==="badcode"){if(N()){S.err=true;render();}else toast("No se ha podido validar el código.");return;}
+      toast("Licencia activada.");},delay());}
+});
+function seg(id,key,after){document.getElementById(id).addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;S[key]=b.dataset.v;[...e.currentTarget.children].forEach(x=>x.setAttribute("aria-pressed",x===b));if(after)after();render();});}
+function labels(){document.getElementById("d-wait").textContent=V4()?"Antes del 10/12 23:59":"Antes del 27/11 23:59";document.getElementById("d-open").textContent=V4()?"Desde el 11/12":"Desde el 28/11";}
+seg("v-dates","dates",labels);seg("v-view","view");seg("v-ver","ver",()=>{S.err=null;S.busy=false;});seg("v-date","date");seg("v-who","who");seg("v-club","club");seg("v-scr","scr",()=>{S.step="menu";S.created=null;});
+document.getElementById("v-sim").addEventListener("change",e=>{S.sim=e.target.value;S.err=null;S.pending=false;S.preview=false;loadSummary();});
+document.getElementById("v-prop").addEventListener("change",e=>{S.prop=e.target.checked;render();});
+render();
+</script>

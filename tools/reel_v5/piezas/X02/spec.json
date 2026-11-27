@@ -1,0 +1,52 @@
+{
+ "titulo": "El partido, en directo",
+ "fase": "Explicativo",
+ "tono": 55,
+ "paginas": [
+  {
+   "tipo": "dentro",
+   "d": 2.5,
+   "palabra": "UN TOQUE",
+   "size": 200,
+   "foto": "JUGADOR_LANZAMIENTO_FOTO_001",
+   "serif": "por acción.",
+   "cap": "Tocas al jugador en la pista.\nEliges qué ha hecho."
+  },
+  {
+   "tipo": "captura",
+   "d": 3.0,
+   "foto": "PRODUCTO_REGISTRO_ACCION_CAPTURA_001",
+   "fig": "Fig. 1 — Registrar en directo",
+   "serif": "Tiro, pérdida, 1×1."
+  },
+  {
+   "tipo": "captura",
+   "d": 3.0,
+   "foto": "PRODUCTO_REGISTRO_ACCION_CAPTURA_003",
+   "fig": "Fig. 2 — ¿Desde dónde?",
+   "serif": "La zona, en la pista."
+  },
+  {
+   "tipo": "captura",
+   "d": 3.0,
+   "foto": "PRODUCTO_RESULTADOS_CAPTURA_001",
+   "fig": "Fig. 3 — El resumen se hace solo",
+   "serif": "Marcador y eficacia, solos."
+  },
+  {
+   "tipo": "frase",
+   "d": 3.0,
+   "foto": "OBJETO_GENERAL_FOTO_002",
+   "pre": "Al pitar el final,",
+   "serif": "el partido ya\nestá apuntado.",
+   "uv": true,
+   "size": 122,
+   "uvTop": 1475
+  },
+  {
+   "tipo": "cierre",
+   "d": 1.9,
+   "serif": "para el que lo prepara."
+  }
+ ]
+}

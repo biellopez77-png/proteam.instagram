@@ -1,0 +1,223 @@
+{
+ "origen": "tools/reel57/voz.tsv",
+ "tipo": "locución generada con tiempos por palabra (exacta, no reconocida por oído)",
+ "palabras": 15,
+ "primera_palabra_s": 0.1,
+ "ultima_palabra_s": 35.42,
+ "ritmo_palabras_por_s": 0.42,
+ "frases": [
+  {
+   "desde": 0.1,
+   "hasta": 1.84,
+   "texto": "Fútbol siete, alevines.",
+   "palabras_por_s": 0.57
+  },
+  {
+   "desde": 2.36,
+   "hasta": 5.04,
+   "texto": "El balón largo a tu más rápido gana partidos.",
+   "palabras_por_s": 0.37
+  },
+  {
+   "desde": 5.4,
+   "hasta": 7.16,
+   "texto": "Los otros cinco ni la tocan.",
+   "palabras_por_s": 0.57
+  },
+  {
+   "desde": 7.5,
+   "hasta": 9.42,
+   "texto": "Hoy le saca dos metros a cualquiera.",
+   "palabras_por_s": 0.52
+  },
+  {
+   "desde": 9.88,
+   "hasta": 11.86,
+   "texto": "En cadetes, los demás también corren.",
+   "palabras_por_s": 0.51
+  },
+  {
+   "desde": 12.24,
+   "hasta": 12.78,
+   "texto": "Guárdatelo.",
+   "palabras_por_s": 1.85
+  },
+  {
+   "desde": 13.16,
+   "hasta": 15.2,
+   "texto": "El martes, diez minutos de partidillo.",
+   "palabras_por_s": 0.49
+  },
+  {
+   "desde": 15.48,
+   "hasta": 18.7,
+   "texto": "El portero saca en corto y el balón no sube de la cintura.",
+   "palabras_por_s": 0.31
+  },
+  {
+   "desde": 19.12,
+   "hasta": 19.96,
+   "texto": "Correr ya sabe.",
+   "palabras_por_s": 1.19
+  },
+  {
+   "desde": 20.34,
+   "hasta": 21.88,
+   "texto": "Ahora, que jueguen los siete.",
+   "palabras_por_s": 0.65
+  },
+  {
+   "desde": 22.32,
+   "hasta": 27.48,
+   "texto": "Pregúntale a tu segundo: en el último partido, ¿cuántos goles salieron de un balón largo al mismo?",
+   "palabras_por_s": 0.39
+  },
+  {
+   "desde": 28.02,
+   "hasta": 30.68,
+   "texto": "El sábado 28 abre la app de ProTeam.",
+   "palabras_por_s": 0.38
+  },
+  {
+   "desde": 31.0,
+   "hasta": 33.92,
+   "texto": "Apúntate a la lista de espera hasta el 27 de noviembre.",
+   "palabras_por_s": 0.34
+  },
+  {
+   "desde": 34.18,
+   "hasta": 35.42,
+   "texto": "Tres meses gratis",
+   "palabras_por_s": 0.81
+  }
+ ],
+ "pausas": [
+  {
+   "desde": 1.84,
+   "hasta": 2.36,
+   "duracion_s": 0.52
+  },
+  {
+   "desde": 5.04,
+   "hasta": 5.4,
+   "duracion_s": 0.36
+  },
+  {
+   "desde": 9.42,
+   "hasta": 9.88,
+   "duracion_s": 0.46
+  },
+  {
+   "desde": 11.86,
+   "hasta": 12.24,
+   "duracion_s": 0.38
+  },
+  {
+   "desde": 12.78,
+   "hasta": 13.16,
+   "duracion_s": 0.38
+  },
+  {
+   "desde": 18.7,
+   "hasta": 19.12,
+   "duracion_s": 0.42
+  },
+  {
+   "desde": 19.96,
+   "hasta": 20.34,
+   "duracion_s": 0.38
+  },
+  {
+   "desde": 21.88,
+   "hasta": 22.32,
+   "duracion_s": 0.44
+  },
+  {
+   "desde": 23.44,
+   "hasta": 23.84,
+   "duracion_s": 0.4
+  },
+  {
+   "desde": 27.48,
+   "hasta": 28.02,
+   "duracion_s": 0.54
+  }
+ ],
+ "por_palabra": [
+  {
+   "desde": 0.1,
+   "hasta": 1.84,
+   "palabra": "Fútbol siete, alevines."
+  },
+  {
+   "desde": 2.36,
+   "hasta": 5.04,
+   "palabra": "El balón largo a tu más rápido gana partidos."
+  },
+  {
+   "desde": 5.4,
+   "hasta": 7.16,
+   "palabra": "Los otros cinco ni la tocan."
+  },
+  {
+   "desde": 7.5,
+   "hasta": 9.42,
+   "palabra": "Hoy le saca dos metros a cualquiera."
+  },
+  {
+   "desde": 9.88,
+   "hasta": 11.86,
+   "palabra": "En cadetes, los demás también corren."
+  },
+  {
+   "desde": 12.24,
+   "hasta": 12.78,
+   "palabra": "Guárdatelo."
+  },
+  {
+   "desde": 13.16,
+   "hasta": 15.2,
+   "palabra": "El martes, diez minutos de partidillo."
+  },
+  {
+   "desde": 15.48,
+   "hasta": 18.7,
+   "palabra": "El portero saca en corto y el balón no sube de la cintura."
+  },
+  {
+   "desde": 19.12,
+   "hasta": 19.96,
+   "palabra": "Correr ya sabe."
+  },
+  {
+   "desde": 20.34,
+   "hasta": 21.88,
+   "palabra": "Ahora, que jueguen los siete."
+  },
+  {
+   "desde": 22.32,
+   "hasta": 23.44,
+   "palabra": "Pregúntale a tu segundo:"
+  },
+  {
+   "desde": 23.84,
+   "hasta": 27.48,
+   "palabra": "en el último partido, ¿cuántos goles salieron de un balón largo al mismo?"
+  },
+  {
+   "desde": 28.02,
+   "hasta": 30.68,
+   "palabra": "El sábado 28 abre la app de ProTeam."
+  },
+  {
+   "desde": 31.0,
+   "hasta": 33.92,
+   "palabra": "Apúntate a la lista de espera hasta el 27 de noviembre."
+  },
+  {
+   "desde": 34.18,
+   "hasta": 35.42,
+   "palabra": "Tres meses gratis"
+  }
+ ]
+}

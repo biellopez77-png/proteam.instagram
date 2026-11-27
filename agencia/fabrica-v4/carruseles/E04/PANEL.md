@@ -1,0 +1,9 @@
+# E04 · Carrusel y Stories — para el panel
+Pendiente: el panel solo acepta archivos nuevos republicando su index.html (y eso no se toca desde los turnos). Subir `png/E04-c1…c7.png`, `E04-s1.png`, `E04-s2.png` a `media/v4-E04-c1.png…`, `media/v4-E04-s1.png`, `media/v4-E04-s2.png` y escribir:
+- `posts/v4-E04-carrusel` {type:"carrusel", title:"En directo desde el campo 3", tema:"v4 · Impacto · dom 29/11", status:"listo", slides:[media/v4-E04-c1..c7.png], cover:"media/v4-E04-c1.png", agent:"Clara", order: el mayor + 1}
+  caption: «En directo desde el campo 3.\nSin cámaras. Sin público.\nLo que pasa aquí decide lo que pasa el sábado.\n\nApunta qué corregiste y en qué minuto.\n11.12 · ProTeam, para el que lo prepara.»
+- `posts/v4-E04-story1` {type:"story", short:"Pregunta", title:"¿Qué minuto de tu entreno retransmitirías?", slides:[media/v4-E04-s1.png], status:"listo", tema:"v4 · Impacto · dom 29/11", agent:"Clara"} — sticker de pregunta a mano.
+- `posts/v4-E04-story2` {type:"story", short:"Encuesta", title:"Tu entreno, ¿lo apuntas o lo recuerdas?", slides:[media/v4-E04-s2.png], status:"listo", tema:"v4 · Impacto · dom 29/11", agent:"Clara"} — sticker de encuesta a mano: «Lo apunto» / «Lo recuerdo».
+
+Láminas: 1 EN DIRECTO (campo de entrenamiento, «Sin cámaras. Sin público.», «Y aquí se decide el sábado.») · 2 NADIE LO NARRA (Min. 12 / 27 / 40, como el reel) · 3 27' con los conos dentro («otra vez. Y otra.») · 4 ultravioleta en «Lo que pasa aquí decide lo que pasa el sábado» (la piña, como el reel) · 5 El sábado lo ve todo el mundo. El martes, solo tú. · 6 EL MARTES también es UNA FINAL. · 7 Retransmite TU MARTES (apunta qué corregiste y en qué minuto; repite lo que no salió; el sábado, mira si se nota).
+Fuera ENTRENADOR_ENTRENADORA_INDICA_FOTO_001 del reel (persona conocida, misma regla que en v4-pro-04): la Fig. del Min. 12 es STAFF_CHARLA_ENTRENAMIENTO_FOTO_001. Sin precio ni cifras de apuntados. Revisado a tamaño móvil (hoja.png).

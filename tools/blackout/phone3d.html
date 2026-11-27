@@ -1,0 +1,57 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face{font-family:IT;font-weight:800;src:url(../fonts/inter-tight-latin-800-normal.woff2)}
+@font-face{font-family:IT;font-weight:900;src:url(../fonts/inter-tight-latin-900-normal.woff2)}
+@font-face{font-family:VT;src:url(../fonts/vt323-latin-400-normal.woff2)}
+html,body{margin:0;background:#000;overflow:hidden}canvas{display:block}
+#ov{position:absolute;inset:0;pointer-events:none}
+.a{position:absolute}
+</style>
+<script type="importmap">{"imports":{"three":"/tools/wurtz/node_modules/three/build/three.module.js","three/addons/":"/tools/wurtz/node_modules/three/examples/jsm/"}}</script>
+</head><body><div id="ov"></div>
+<script type="module">
+import * as THREE from 'three';
+import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
+import { RoundedBoxGeometry } from 'three/addons/geometries/RoundedBoxGeometry.js';
+// Móvil 3D que gira muy despacio sobre negro. La pantalla se pinta en Python (homografía), aquí solo el aparato.
+const Q = new URLSearchParams(location.search), W = +Q.get('w') || 1080, H = +Q.get('h') || 1920;
+const R = new THREE.WebGLRenderer({ antialias: true, preserveDrawingBuffer: true }); R.setPixelRatio(1); R.setSize(W, H);
+R.outputEncoding = THREE.sRGBEncoding; R.toneMapping = THREE.ACESFilmicToneMapping; R.toneMappingExposure = 1.0;
+document.body.prepend(R.domElement);
+const S = new THREE.Scene(); S.background = new THREE.Color('#000');
+const pm = new THREE.PMREMGenerator(R); S.environment = pm.fromScene(new RoomEnvironment(), .04).texture;
+const C = new THREE.PerspectiveCamera(30, W / H, .01, 20);
+const BW = .0716, BH = .1476, BD = .0082, SWd = .0656, SHd = .1416, SR = .0095;
+const phone = new THREE.Group(); S.add(phone);
+const body = new THREE.Mesh(new RoundedBoxGeometry(BW, BH, BD, 8, .0105), new THREE.MeshStandardMaterial({ color: '#3b3d42', metalness: .9, roughness: .28, envMapIntensity: 1.1 }));
+phone.add(body);
+const front = new THREE.Mesh(new RoundedBoxGeometry(BW - .0006, BH - .0006, .0012, 6, .0098), new THREE.MeshStandardMaterial({ color: '#030304', metalness: .2, roughness: .12, envMapIntensity: .8 }));
+front.position.z = BD / 2 - .0002; phone.add(front);
+// botones laterales
+const btnM = new THREE.MeshStandardMaterial({ color: '#45474d', metalness: .9, roughness: .3 });
+[[.024, .012], [.006, .012], [-.012, .012]].forEach(([y, l], i) => { const b = new THREE.Mesh(new THREE.BoxGeometry(.0012, l, .0025), btnM); b.position.set(i === 0 ? BW / 2 + .0004 : -BW / 2 - .0004, y, 0); phone.add(b); });
+// luces de borde (rim) azules y blanca suave, para que el canto brille sobre el negro
+const key = new THREE.DirectionalLight('#ffffff', 1.1); key.position.set(-1, 1.5, 2); S.add(key);
+const rim1 = new THREE.DirectionalLight('#5f86ff', 2.2); rim1.position.set(2, .5, -1); S.add(rim1);
+const rim2 = new THREE.DirectionalLight('#9fb6ff', 1.2); rim2.position.set(-2, -1, -1); S.add(rim2);
+const zf = BD / 2 + .0011;
+// contorno de la pantalla (rectángulo redondeado) en coordenadas locales
+const outline = []; const corners = [[SWd / 2 - SR, SHd / 2 - SR, 0], [-SWd / 2 + SR, SHd / 2 - SR, Math.PI / 2], [-SWd / 2 + SR, -SHd / 2 + SR, Math.PI], [SWd / 2 - SR, -SHd / 2 + SR, Math.PI * 1.5]];
+for (const [cx, cy, a0] of corners) for (let i = 0; i <= 8; i++) { const a = a0 + i / 8 * Math.PI / 2; outline.push(new THREE.Vector3(cx + Math.cos(a) * SR, cy + Math.sin(a) * SR, zf)); }
+const quad = [[-SWd / 2, SHd / 2], [SWd / 2, SHd / 2], [SWd / 2, -SHd / 2], [-SWd / 2, -SHd / 2]].map(([x, y]) => new THREE.Vector3(x, y, zf));
+const proj = (v) => { const p = v.clone().applyMatrix4(phone.matrixWorld).project(C); return [(p.x + 1) / 2 * W, (1 - p.y) / 2 * H]; };
+const ez = (x) => x < 0 ? 0 : x > 1 ? 1 : x * x * (3 - 2 * x);
+// pose(t): u = 0 → pantalla a pantalla completa; u = 1 → móvil entero girando despacio
+window.pose = (o) => { const u = ez(o.u ?? 1), t = o.t ?? 0;
+  const dNear = (SHd / 2) / Math.tan(THREE.MathUtils.degToRad(15)) * (W > H ? 1.0 : .985), dFar = o.far ?? (W > H ? .34 : .52);
+  const d = dNear + (dFar - dNear) * u;
+  phone.rotation.set(Math.sin(t * .35) * .06 * u + (o.rx ?? 0) * u, (o.ry0 ?? -.42) * u + Math.sin(t * .22) * .18 * u, Math.sin(t * .27) * .025 * u);
+  phone.position.set((o.x ?? 0) * u, (o.y ?? 0) * u, 0);
+  C.position.set(0, 0, d); C.lookAt(0, 0, 0); C.updateMatrixWorld(); phone.updateMatrixWorld(true);
+  R.render(S, C);
+  const ov = document.getElementById('ov'); ov.innerHTML = o.html ?? '';
+  return { quad: quad.map(proj), outline: outline.map(proj) }; };
+C.aspect = W / H; C.updateProjectionMatrix();
+window.READY = false; Promise.all([document.fonts.load('900 80px IT'), document.fonts.load('400 60px VT')]).then(() => { window.pose({ u: 1 }); window.READY = true; });
+</script></body></html>
