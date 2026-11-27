@@ -1,0 +1,11 @@
+{
+ "numero": "Nº 00",
+ "seccion": "Borrado",
+ "formato": "story",
+ "laminas": [
+  {"tipo": "pregunta", "foto": "OBJETO_CONOS_EJERCICIO_FOTO_001", "cap": "Una pregunta",
+   "big": "TU MEJOR\nEJERCICIO,", "bigLines": 2, "serif": "¿sabrías montarlo\nigual mañana?", "size": 160},
+  {"tipo": "encuesta", "pre": "Encuesta", "big": "LO QUE TE\nFUNCIONA,", "serif": "¿apuntado\no en la cabeza?",
+   "foto": "STAFF_PIZARRA_TIEMPO_MUERTO_FOTO_001", "size": 150, "bigLines": 2}
+ ]
+}
