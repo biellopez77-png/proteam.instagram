@@ -1,0 +1,22 @@
+# v7-senor-cinco-a-cero-hiddink · «Señor Cinco a Cero» (historia con fotos)
+Guion: agencia/fabrica-v7/guiones/v7-senor-cinco-a-cero-hiddink.md (Dani A). Montaje v7: Marta A (02), 27/11/2026.
+
+Voz (21,40 s, 59 palabras, texto del guion sin cambios): «Dos mil uno. Corea del Sur pierde cinco a cero con Francia. Y otro, con Chequia. La prensa llama a Guus Hiddink «Señor Cinco a Cero». Él cambia una regla: fuera los tratamientos de respeto; todos se llaman por su nombre. Y juegan los jóvenes más rápidos. En 2002, Corea llega a semifinales del Mundial... Los galones no juegan.»
+ElevenLabs eleven_v4, voz Mateo (gpMzl7dbkfC9dIxAqQZT), una toma (410 créditos). En el prompt, «dos mil dos» en letra y una etiqueta [slight irony] antes del mote. Tiempos por palabra: faster-whisper small (words.json / words.js); están todas las palabras (whisper escribe 2001, 5-0 y 2002 en cifra y «Gus» por «Guus»). Pausa del «...» antes del remate: 0,50 s.
+
+Datos y fuentes: The Irish Times (25/06/2002), Korea JoongAng Daily (05/07/2004), The Korea Times (02/05/2012), Al Jazeera (17/06/2014), SI (28/05/2018) (ver el guion). No se dice que la regla causara el resultado; ni lo del comedor ni cifras físicas.
+
+Fotos (Wikimedia Commons, descargadas el 27/11/2026 desde el sandbox de Higgsfield; autor y licencia comprobados en la API de Commons):
+- Guus Hiddink (1986).jpg — Bart Molendijk / Anefo — CC0 — recortada a cabeza y hombros (fuera el patrocinador y la marca de la chaqueta), rembg (u2net_human_seg) y graduada (B/N con el azul), en ficha de prensa «G. HIDDINK · SELECCIONADOR DE COREA, 2001» (la foto es de su etapa en el PSV; la ficha no da fecha de la foto en grande, el pie dice «1986»).
+- Park Ji-Sung 20080429.jpg — Aloba Øyvind Vik — CC BY-SA 3.0 — recortada a cara y cuello (fuera el logotipo de la chaqueta de al lado y la mano), enmarcada (el recorte con rembg no quedaba limpio) y graduada, en ficha «PARK JI-SUNG». Marcada «modificada».
+- Seoul Plaza 2002 FIFA World Cup.jpg (18/06/2002) — ijs — CC0 — franja inferior con la multitud (fuera los rótulos de los edificios), graduada, en polaroid «SEÚL · 18-06-2002».
+- 2002 FIFA 한일월드컵-시청 거리응원 (1).jpg — 정창익 기증 (정수미 수집) — KOGL tipo 1 (atribución) — franja inferior, pancarta y logotipo del círculo central difuminados, graduada y muy oscura de fondo en la última escena. Marcada «modificada».
+Preparación: cut.py.
+Dibujados y rotulados: hoja de calendario 2001 («dibujo»), marcador COREA 0–5 FRANCIA / 0–5 REP. CHECA con fichas («recreación»), sello «SEÑOR 5-0» («recreación del mote») y «오대영 · Oh Dae Young», pizarra «REGLA 1» con etiquetas VETERANO / SEÑOR / MAYOR tachadas («recreación»), once camisetas sin número ni escudo con los nombres JI-SUNG y YOUNG-PYO («dibujo»), cuadro octavos → cuartos → semifinales («dibujo»), brazalete de capitán («dibujo»). Sin escudos ni logotipos del Mundial.
+
+Ultravioleta #8B5CF6 una sola vez: «SEMIFINALES» (y el recuadro de Corea en semifinales del cuadro, que aparece con la misma palabra). Cierre: fundido de 0,5 s desde 22,00 s (0,6 s después de la voz) al cierre común tools/reel_v6/outro/outro2.mp4; la voz del cierre entra a 22,30 s.
+
+Música y efectos (Epidemic Sound, vía Higgsfield): «Musical, Loop, Logo, Orchestra, Epic, Dreamy, Suspense» (una sola pista de 32 s; distinta de las de los últimos v7); «Swooshes, Whoosh, Soft, Clean»; «Paper, Friction, Sheet, Laminated, Slide On Wooden Table»; «Objects, Packaging, Card, Greeting Card, Place Down On Wooden Surface 01»; «Games, MIsc, Poker Chips, Single, Set Down On Wooden Table»; «Page Turn 03»; «Communications, Camera, KMZ Zenit 12XP Camera, Shutter 01»; «Office Supplies, Rubber Stamp, Document 01»; «Objects, Writing, Marker On Whiteboard»; «Footsteps, Human, Sneakers, Grass, Sprint, Distant»; «Crowds, Sport, Stadium, Large, Football, Neutral Event, Cheering» (muy lejana); «Cloth, Impact, Drop On Floor»; en el cierre, «Musical, Loop, Logo, Calm, Piano 01» bajo (0,22). Mezcla: mix.py (voz −19,0, música −33,1 con ducking, sfx −38,0, pico 0,90); final −16,6 LUFS.
+
+Vídeo final: https://d2ol7oe51mr4n9.cloudfront.net/user_3M2z7lIyzIPYtjNHcxRWFNk6wi7/c75dcd1b-4a5e-490f-a414-fb46075a35de.mp4 (26,0 s: historia hasta 22,5 s con fundido desde 22,0 s al cierre outro2, sin app). Comprobado con whisper: se oye la voz entera y «Dale like y síguenos para más vídeos como este» (el «¿Te ha servido?» del cierre va en pantalla).
+Caption: la del guion; el bloque de fuentes y los hashtags van antes para que termine con «¿Te ha servido? Dale like y síguenos para más vídeos como este.».
