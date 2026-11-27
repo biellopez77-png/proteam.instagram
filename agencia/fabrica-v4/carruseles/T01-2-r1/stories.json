@@ -1,0 +1,11 @@
+{
+ "numero": "Nº 00",
+ "seccion": "El descanso",
+ "formato": "story",
+ "laminas": [
+  {"tipo": "pregunta", "foto": "STAFF_TRABAJO_FOTO_002", "pos": "50% 50%", "cap": "Antes del partido",
+   "big": "¿Y TU\nPLAN B?", "bigLines": 2, "serif": "escrito el viernes, no en el descanso.", "size": 180, "serifSize": 96, "lh": 1.0},
+  {"tipo": "encuesta", "pre": "En el descanso", "big": "PLAN B:", "serif": "¿lo llevas escrito\no lo improvisas?",
+   "foto": "STAFF_PIZARRA_JUGADA_FOTO_001", "size": 220, "serifSize": 100}
+ ]
+}
