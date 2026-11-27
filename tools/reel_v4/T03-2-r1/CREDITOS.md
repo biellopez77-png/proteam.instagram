@@ -1,9 +1,0 @@
-# Reel v4 · T03-2-r1 «Tres sábados, el mismo cuarto» (baloncesto, 23/11) · Marta B
-
-| recurso | qué es | autor | licencia |
-|---|---|---|---|
-| Corcho con tres marcadores de sábado (EJEMPLO: igualados al descanso y perdidos en el 3C), círculo rojo a lápiz, media pista al descanso con cinco fichas y 26–26 (EJEMPLO), «Charla del descanso» con tres versiones tachadas, sellos «DESCARTADO», tres quintetos distintos con el hilo rojo que no los une, pizarra de tiempo muerto con las tres flechas y «HAMBRE», semana de lunes a sábado con el jueves en azul y el hilo hasta los tres 3C, escala 1–10 con raya sobre el 8 y «8 × 90» (EJEMPLO), gráfica de carga con el bloque del jueves que pasa al martes (EJEMPLO), marcador del próximo sábado «Compara.», lápiz | Dibujados en HTML/SVG (`../T03-2-r1.html`), trazo propio, sin IA | ProTeam | Propios |
-
-Sin fotos, sin personas ni caras, sin equipos ni logotipos (la media pista se dibujó en SVG en lugar de kit3d, como en r2/r3). No se dice que el jueves cause la derrota: el hilo azul es una pista y el cierre es «compara». Método RPE de sesión solo nombrado: Foster et al. (2001), *J Strength Cond Res* 15(1):109-115; Haddad et al. (2017), *Front Neurosci* 11:612.
-Voz: Mateo (ElevenLabs, eleven_v4, 1 toma, 737 créditos, ×1,1). Tiempos: Scribe. Música: a3/m1.mp3 (reutilizada). Efectos: ../sfx_T03-2-r1.py (sintetizados). Mezcla: mezcla2.sh T03-2-r1 25.88 28.64 (silencios antes de «Hasta que miras la semana entera» y de «Al acabar»).
-Revisión: contacto cada 1,5 s y test de saltos sin picos aislados (0 picos; solo los dos fundidos a negro). Corregido antes de subir: el paso al marcador 3 saltaba en «en el mismo cuarto» (era el primer «el»), el gancho tapaba la chincheta del primer marcador, el detalle de la pizarra cortaba «Les falta…» y asomaba el sello, y «HAMBRE» se veía solo 0,3 s antes del fundido (giro 1 retrasado 0,3 s). Primer y último fotograma iguales (diferencia media 0,09).

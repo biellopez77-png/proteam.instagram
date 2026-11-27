@@ -1,9 +1,0 @@
-# Reel v4 · T03-2-r2 «Se queda corto» (baloncesto, 23/11) · Marta B
-
-| recurso | qué es | autor | licencia |
-|---|---|---|---|
-| Aro y tablero de frente con el balón que toca el aro por delante (trayectoria en rojo), tres hojas de tiro de media pista (3C con cuatro marcas rojas, 1C con marcas azules, sábado siguiente con las mismas marcas; EJEMPLO), carro de balones, silueta de tirador sin cara (brazos en gris, piernas en rojo suave), calendario-batería de lunes a sábado (EJEMPLO), pista de noche con el reloj 21:30 y las flechas de ida y vuelta, ficha del jueves en blanco con interrogante, escala 1–10 con raya sobre el 9 y «9 × 90» (EJEMPLO), gráfica de carga de la semana con el jueves que baja (EJEMPLO), ficha nueva del jueves «Tiro, ritmo, a casa.», lápiz | Dibujados en HTML/SVG (`../T03-2-r2.html`), trazo propio, sin IA | ProTeam | Propios |
-
-Sin fotos, sin personas ni caras, sin equipos ni logotipos. La pista de noche se dibujó en SVG en lugar de kit3d (más limpia y coherente con el resto). Que el tiro corto sea de piernas se plantea como pregunta. Método RPE de sesión solo nombrado: Foster et al. (2001), *J Strength Cond Res* 15(1):109-115; Haddad et al. (2017), *Front Neurosci* 11:612.
-Voz: Mateo (ElevenLabs, eleven_v4, 1 toma, 718 créditos, ×1,1). Tiempos: Scribe. Música: a3/m1.mp3 (reutilizada). Efectos: ../sfx_T03-2-r2.py (sintetizados). Mezcla: mezcla2.sh T03-2-r2 19.16 28.69 (silencios antes de «Sobre todo en ese jueves» y de «Al terminar, pregunta»).
-Revisión: contacto cada 1,5 s y test de saltos sin picos aislados. Corregido: la vuelta final cruzaba el fondo oscuro del jueves (parecía un destello negro: zona de noche movida a la derecha y solución más abajo), la marca asomaba en la vista del tablero entero, franja oscura bajo el calendario, el balón tocaba el tablero en vez del aro y el detalle de la escala cortaba el «1». Primer y último fotograma iguales (diferencia media 0,03).

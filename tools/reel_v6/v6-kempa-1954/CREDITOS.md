@@ -1,9 +1,0 @@
-# v6-kempa-1954 · «El segundo intento» · créditos
-
-- Voz: Mateo (ElevenLabs, gpMzl7dbkfC9dIxAqQZT), eleven_v4, 1 toma (630 créditos), texto del guion palabra por palabra (en el texto enviado: «Kárlsrue» y «Guépinguen» para la pronunciación; en pantalla, Karlsruhe y Göppingen); 42,3 s sin acelerar. Tiempos por palabra: Scribe (tools/reel_v4/v6-kempa-1954/times.js).
-- Sonido: efectos sintetizados con numpy (tools/reel_v6/sfx_v6-kempa-1954.py). Sin música. Mezcla normalizada a −14,5 LUFS, −1 dBTP.
-- Fotos (Wikimedia Commons, en duotono; actuales, no de 1954, y así se rotula): PROTEAM_JUGADOR_LANZAMIENTO_FOTO_002 · Steffen Prößdorf · CC BY-SA 4.0 — PROTEAM_ENTRENADOR_CHARLA_EQUIPO_FOTO_001 · Oskar Oltéus · CC BY-SA 4.0 (encuadre cerrado sobre el entrenador con el balón; fuera los rótulos de las camisetas). Enlaces en el guion.
-- Dibujado (ProTeam, «recreación»): entrada sin escudos ni logos con el año que cuenta 1900→1954 y sello «24·3·1954»; ALEMANIA contra SUECIA y «Suecia · campeona del mundo»; media pista (6 m, 9 m discontinua, portería) con seis defensores en gris y Kempa en azul; 1.er intento en gris cortado por una mano (✗, «altura»); 2.º intento en ultravioleta (única vez); Singer · 19 (contador 0→19) que entra al área, salta (trazo punteado), recibe y lanza; la red se hunde en «Gol»; la jugada se resume en una línea y se escribe «el Kempa»; «lo probaban todo» (Kempa, Ball ist Trumpf, 2002); cronómetro 0′→10′, seis parejas con su trazo, una falla (✗), se borra y se redibuja (✓); pizarra de vestuario rotulada EJEMPLO con «la Lucía», «la de Hugo», «la Martina».
-- Sin fotos ni caras de Kempa, Singer ni del partido de 1954.
-- Cierre común: tools/reel_v6/outro/outro.mp4 (cierre.sh v6-kempa-1954 42.37).
-- Datos: DHB (2020 y 2025), handball-world, de.wikipedia; Kempa, Ball ist Trumpf (2002) y Monsieur Handball (2007) (ver guion).

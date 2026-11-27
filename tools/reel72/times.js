@@ -1,1 +1,0 @@
-window.TIMES = {"once": 0.06, "eonce": 1.1, "cinco": 1.42, "ecinco": 2.62, "siete": 2.78, "esiete": 4.06, "tres": 4.38, "etres": 6.54, "sem": 6.58, "esem": 9.5, "por": 9.58, "epor": 12.38, "camp": 12.54, "ecamp": 15.02, "gra": 15.14, "egra": 16.54, "mismo": 5.66, "lunes": 5.94, "semana": 6.7, "conv": 7.5, "min": 8.7, "pt": 10.46, "tres2": 11.82, "v27": 13.5, "END": 17.16};
