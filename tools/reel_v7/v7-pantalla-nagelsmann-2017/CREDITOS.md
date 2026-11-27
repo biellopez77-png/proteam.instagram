@@ -1,0 +1,21 @@
+# v7-pantalla-nagelsmann-2017 · «Sin mover a nadie» (historia con fotos)
+Guion: agencia/fabrica-v7/guiones/v7-pantalla-nagelsmann-2017.md (Dani A). Montaje v7: Marta A (02), 27/11/2026.
+
+Voz (20,10 s, 58 palabras, texto del guion sin cambios): «Nagelsmann deja de jugar a los veinte: la rodilla no aguanta. Tuchel lo pone a espiar rivales. A los veintiocho entrena al Hoffenheim, el más joven de la historia de la Bundesliga. En 2017 levanta una pantalla de seis metros. Para la jugada y la enseña sin mover a nadie. Si lo ves desde tu sitio... lo entiendes.»
+ElevenLabs eleven_v4, voz Mateo (gpMzl7dbkfC9dIxAqQZT), una toma (386 créditos). En el prompt, «Náguelsman», «Tújel», «Jófenjaim» y «dos mil diecisiete», como pide el guion. Tiempos por palabra: faster-whisper small (words_raw.json → words.json / words.js); whisper small parte «entrena» en «entra en» (se unen en words.json) y escribe «Tugel»; whisper medium confirma el texto entero («entrena», «Tuchel», «Si lo ves desde tu sitio, lo entiendes»). Pausa del «...» antes del remate: 0,4 s.
+
+Datos y fuentes: The Irish Times (15/08/2017), Bundesliga.com (dos piezas) y TSG Hoffenheim (julio de 2017), ver el guion. No se dice el mote, ni cuánto tiempo se usó la pantalla, ni resultados.
+
+Fotos (Wikimedia Commons, descargadas el 27/11/2026 desde el sandbox de Higgsfield; autor y licencia según el guion, comprobados por Dani A en la API de Commons):
+- JulianNagelsmann.jpg (11/05/2019) — Silesia711 — CC BY-SA 4.0 — recortada con rembg (u2net_human_seg) de cintura para arriba, en B/N (sin azul: la camisa a rayas salía a manchas), en portada «BANQUILLO» con «28 · AÑOS · ENTRENADOR» y sin fecha de la foto. Sin escudo. Marcada «modificada».
+- Thomas Tuchel coach Mainz05 at away match in Leverkusen 2014.jpg — Schnederpelz — CC BY-SA 3.0 — el escudo del Mainz y el patrocinador del pecho se tapan con el tejido de al lado; recortada con rembg y graduada (B/N con el azul) en ficha «T. TUCHEL». Marcada «modificada».
+- Rhein-Neckar-Arena 2015.jpg (13/09/2015) — ACFlo — CC0 — recortada y graduada, polaroid «HOFFENHEIM · SU ESTADIO»; solo acompaña a «entrena al Hoffenheim», nunca a la pantalla.
+Preparación: cut.py.
+Dibujados y rotulados: ficha del jugador con botas y contador 0→20 y rodilla con venda («dibujo»), sello «FIN» en rojo apagado, visor REC, campo y carpeta «RIVAL» («recreación»), escalera de edades con la ficha 28 y «11/02/2016», pantalla de 6 m × 3 m que se levanta, tableta sin marca con pausa, campo cenital con once puntos y cuatro cámaras (torre de medio campo y detrás de cada portería) («recreación»), escena final con línea de mirada.
+
+Ultravioleta #8B5CF6 una sola vez: «DESDE TU SITIO...». Cierre: fundido a negro de 0,5 s desde 20,70 s (0,6 s después de la voz) al cierre común tools/reel_v6/outro/outro2.mp4; la voz del cierre entra a 21,0 s.
+
+Música y efectos (Epidemic Sound, vía Higgsfield): «Musical, Loop, Piano, Intro, Tv», encadenada consigo misma con un fundido de 1,4 s (distinta de la de los últimos v7: «Calm Piano, Dreamy, Intro 01–03», «Soft Piano, Strings, Calm, Intro, Logo»); «Swooshes, Whoosh, Soft, Clean»; «Paper, Friction, Sheet, Laminated, Slide On Wooden Table»; «Office Supplies, Rubber Stamp, Document 01»; «Communications, Camera, KMZ Zenit 12XP Camera, Shutter 03»; «Equipment, Sport, Boxing Hand Wraps, Wrap, Unwrap»; «Paper, Handle, Folder, Grab, Open, Movement, Rustle»; «Communications, Cellphone, Stylus Pen, Tap On Phone Or Tablet Screen»; «Metal, Impact, Metal Frame, Tube, Light Hits x5»; «Objects, Writing, Marker On Whiteboard»; «Games, Misc, Chips, Tokens, Plastic, Multiple, Down On Table»; en el cierre, «Musical, Loop, Logo, Calm, Piano 01» bajo (0,22). Mezcla: mix.py (voz −19,0, música −33,4 con ducking, sfx −39,6, pico 0,90); final −16,6 LUFS, −0,9 dBTP.
+
+Vídeo final: https://d2ol7oe51mr4n9.cloudfront.net/user_3M2z7lIyzIPYtjNHcxRWFNk6wi7/97c5f50b-5009-47e2-b92e-6195d81d47c8.mp4 (24,7 s: historia hasta 21,2 s con fundido desde 20,70 s al cierre outro2, sin app). Comprobado con whisper: se oye la voz entera y «Dale like y síguenos para más vídeos como este» (el «¿Te ha servido?» del cierre va en pantalla).
+Caption: la del guion; el bloque de fuentes y los hashtags van antes para que termine con «¿Te ha servido? Dale like y síguenos para más vídeos como este.».
