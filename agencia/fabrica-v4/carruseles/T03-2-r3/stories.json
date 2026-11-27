@@ -1,0 +1,12 @@
+{
+ "numero": "Nº 00",
+ "seccion": "El castigo del jueves",
+ "formato": "story",
+ "laminas": [
+  {"tipo": "pregunta", "foto": "STAFF_PIZARRA_JUGADA_FOTO_001", "pos": "50% 40%",
+   "cap": "Una pregunta", "big": "¿CÓMO\nACABARON?", "bigLines": 2,
+   "serif": "el último entreno\nantes del partido.", "size": 160, "serifSize": 96, "lh": 1.0},
+  {"tipo": "encuesta", "pre": "Encuesta", "big": "LO DURO,", "serif": "¿martes\no jueves?",
+   "foto": "OBJETO_BALONES_CARRO_FOTO_001", "size": 200, "serifSize": 110}
+ ]
+}
