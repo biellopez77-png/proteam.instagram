@@ -1,0 +1,268 @@
+<!doctype html><html><head><meta charset="utf-8">
+<!-- v7 · «Señor Cinco a Cero» (Hiddink y Corea del Sur, 2001-2002).
+     Un solo plano sobre una pared grande; cada cosa que dice la voz se anima en su palabra.
+     Base: tools/reel_v7/wooden/reel.html y v7-carta-villas-boas-robson. Transiciones: viajes 0,9 s power2.inOut,
+     zoom ×0,9 como mínimo, desenfoque ≤ 4 px, sin destellos (agencia/sistema-v7/FORMATO.md). -->
+<style>
+@font-face{font-family:S;src:url(fonts/instrument-serif-latin-400-normal.woff2)}
+@font-face{font-family:SI;src:url(fonts/instrument-serif-latin-400-italic.woff2)}
+@font-face{font-family:J;font-weight:500;src:url(fonts/plus-jakarta-sans-latin-500-normal.woff2)}
+@font-face{font-family:J;font-weight:700;src:url(fonts/plus-jakarta-sans-latin-700-normal.woff2)}
+@font-face{font-family:J;font-weight:800;src:url(fonts/plus-jakarta-sans-latin-800-normal.woff2)}
+@font-face{font-family:J;font-weight:800;font-style:italic;src:url(fonts/plus-jakarta-sans-latin-800-italic.woff2)}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#02050F}
+#cam{position:absolute;left:0;top:0;width:2320px;height:5840px;transform-origin:0 0;background:#02050F url(wall2.jpg) 0 0/2372px 5840px no-repeat}
+.sc{position:absolute;width:1080px;height:1920px}
+.a{position:absolute}
+.serif{font-family:S;color:#F4F7FB;white-space:nowrap;line-height:1}
+.bold{font-family:J;font-weight:800;color:#F4F7FB;white-space:nowrap;letter-spacing:-.02em;line-height:1}
+.acc{font-family:J;font-weight:800;font-style:italic;color:#6AA8FF}
+.strong{font-family:J;font-weight:800;color:#F4F7FB;letter-spacing:-.02em}
+.uv{font-family:J;font-weight:800;color:#8B5CF6;letter-spacing:-.02em}
+.w{display:inline-block;margin-right:.24em}
+.c{left:0;width:1080px;text-align:center}
+.panel{background:#0C1323;border:1px solid #26335a;border-radius:18px;box-shadow:0 40px 90px rgba(0,0,0,.6)}
+.mat{background:#E9EEF6;padding:16px 16px 70px;border:6px solid #0b0f1a;box-shadow:0 30px 70px rgba(0,0,0,.6)}
+.paper{background:#EDE8DA;box-shadow:0 30px 70px rgba(0,0,0,.6);border-radius:4px}
+.k{font:700 22px J;color:#8f9bb8;letter-spacing:.16em;white-space:nowrap}
+.rec{font:500 15px J;color:#5d6888;letter-spacing:.16em;white-space:nowrap}
+.cred{font:500 17px J,'DejaVu Sans',sans-serif;color:#7a86a8;letter-spacing:.04em;line-height:1.5}
+.chip{position:absolute;background:#E9E4D6;color:#0b0f1a;border-radius:12px;box-shadow:0 18px 36px rgba(0,0,0,.55);font:800 40px J;letter-spacing:.08em;text-align:center;white-space:nowrap}
+.stamp{position:absolute;border:7px solid #636DFF;color:#636DFF;border-radius:12px;font:800 58px J;letter-spacing:.12em;padding:10px 24px;white-space:nowrap;background:rgba(233,238,246,.08)}
+.dr{fill:none;stroke-linecap:round;stroke-linejoin:round}
+.tok{position:absolute;width:46px;height:46px;border-radius:50%;background:#B9E0FF;box-shadow:0 8px 16px rgba(0,0,0,.5);border:4px solid #6AA8FF}
+.row{position:absolute;left:0;width:900px;height:200px}
+.tm{position:absolute;top:30px;font:800 40px J;color:#F4F7FB;letter-spacing:.06em;white-space:nowrap}
+.sco{position:absolute;left:300px;width:300px;top:12px;text-align:center;font:800 84px J;color:#F4F7FB;letter-spacing:-.02em}
+#grain{position:absolute;inset:0;width:1080px;height:1920px;mix-blend-mode:screen;opacity:.09;pointer-events:none;image-rendering:pixelated}
+</style></head><body><div id="cam">
+
+<!-- A · Dos mil uno. Corea del Sur pierde cinco a cero con Francia. Y otro, con Chequia. (540,960→1010) -->
+<div class="sc" style="left:0;top:0">
+ <div class="a paper" id="cal" style="left:350px;top:230px;width:380px;height:400px;overflow:hidden">
+  <div style="height:96px;background:#636DFF"></div>
+  <div style="position:absolute;left:70px;top:-14px;width:240px;height:40px;display:flex;justify-content:space-between"><i style="width:18px;height:44px;background:#0b0f1a;border-radius:9px"></i><i style="width:18px;height:44px;background:#0b0f1a;border-radius:9px"></i></div>
+  <div id="calN" class="bold" style="position:absolute;left:0;width:380px;text-align:center;top:150px;font-size:150px;color:#0b0f1a">2001</div>
+  <div class="rec" style="position:absolute;right:14px;bottom:10px;font-size:12px">CALENDARIO: DIBUJO</div>
+ </div>
+ <div class="a serif c" id="l1a" style="top:720px;font-size:90px"></div>
+ <div class="a serif c" id="l1b" style="top:825px;font-size:90px"></div>
+ <div class="a panel" id="board" style="left:90px;top:980px;width:900px;height:560px;overflow:hidden">
+  <div class="row" id="r1" style="top:20px">
+   <div class="tm" style="left:40px">COREA</div><div class="sco">0–5</div><div class="tm" style="right:40px">FRANCIA</div>
+   <div id="tk1" style="position:absolute;left:560px;top:130px;width:300px;height:50px"></div>
+  </div>
+  <div style="position:absolute;left:40px;right:40px;top:262px;height:2px;background:#26335a"></div>
+  <div class="row" id="r2" style="top:290px;transform-origin:50% 0">
+   <div class="tm" style="left:40px">COREA</div><div class="sco">0–5</div><div class="tm" style="right:40px">REP. CHECA</div>
+   <div id="tk2" style="position:absolute;left:560px;top:130px;width:300px;height:50px"></div>
+  </div>
+  <div class="rec" style="position:absolute;right:16px;bottom:10px;font-size:12px">MARCADOR: RECREACIÓN</div>
+ </div>
+ <div class="a serif c" id="l2a" style="top:1610px;font-size:96px"></div>
+</div>
+
+<!-- B · La prensa llama a Guus Hiddink «Señor Cinco a Cero». (1700,960) -->
+<div class="sc" style="left:1160px;top:0">
+ <div class="a serif c" id="l3a" style="top:150px;font-size:96px"></div>
+ <div class="a c" id="l3b" style="top:260px;font-size:96px;white-space:nowrap;line-height:1"></div>
+ <div class="a panel" id="press" style="left:130px;top:420px;width:820px;height:860px;overflow:hidden">
+  <div style="position:absolute;left:20px;top:20px;width:780px;height:660px;overflow:hidden;border-radius:10px;background:linear-gradient(#1b2848,#0C1323)">
+   <img src="img/hiddink_g.png" style="position:absolute;left:105px;top:20px;width:570px">
+  </div>
+  <div class="k" style="position:absolute;left:34px;top:706px;font-size:16px">FICHA DE PRENSA</div>
+  <div class="bold" style="position:absolute;left:34px;top:738px;font-size:48px">G. HIDDINK</div>
+  <div class="bold" style="position:absolute;left:34px;top:796px;font-size:24px;color:#6AA8FF">SELECCIONADOR DE COREA, 2001</div>
+  <div class="cred" style="position:absolute;right:24px;top:712px;font-size:12px;white-space:nowrap">FOTO: BART MOLENDIJK / ANEFO · CC0 (1986)</div>
+ </div>
+ <div class="stamp" id="st" style="left:560px;top:1000px;opacity:0">SEÑOR 5-0</div>
+ <div class="a rec" id="stR" style="left:600px;top:1112px;font-size:12px;opacity:0">SELLO: RECREACIÓN DEL MOTE</div>
+ <div class="a c" id="l3c" style="top:1380px;font-size:128px;white-space:nowrap;line-height:1"></div>
+ <div class="a c" id="kr" style="top:1560px;font:700 44px 'Noto Sans CJK KR','Noto Sans CJK SC',J;color:#8f9bb8;letter-spacing:.06em;opacity:0">오대영 · «Oh Dae Young»</div>
+</div>
+
+<!-- C · Él cambia una regla: fuera los tratamientos de respeto; todos se llaman por su nombre. (1700,2880) -->
+<div class="sc" style="left:1160px;top:1920px">
+ <div class="a serif c" id="l4a" style="top:120px;font-size:96px"></div>
+ <div class="a" id="wb" style="left:110px;top:270px;width:860px;height:720px;background:#E9EEF6;border-radius:10px;border:10px solid #2a3350;box-shadow:0 40px 90px rgba(0,0,0,.6)">
+  <div id="rg" class="bold" style="position:absolute;left:44px;top:40px;font-size:76px;color:#1e2a4a;clip-path:inset(0 100% 0 0)">REGLA 1</div>
+  <svg style="position:absolute;left:40px;top:128px" width="420" height="20"><path id="rgU" class="dr" stroke="#636DFF" stroke-width="7" d="M4 10 Q200 16 400 8" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/></svg>
+  <div class="chip" id="g1" style="left:60px;top:200px;width:430px;height:100px;line-height:100px;opacity:0">VETERANO</div>
+  <div class="chip" id="g2" style="left:300px;top:340px;width:430px;height:100px;line-height:100px;opacity:0">SEÑOR</div>
+  <div class="chip" id="g3" style="left:120px;top:480px;width:430px;height:100px;line-height:100px;opacity:0">MAYOR</div>
+  <svg style="position:absolute;left:0;top:0" width="840" height="700">
+   <path id="x1" class="dr" stroke="#636DFF" stroke-width="9" d="M48 256 Q275 244 505 246" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/>
+   <path id="x2" class="dr" stroke="#636DFF" stroke-width="9" d="M288 394 Q515 384 745 388" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/>
+   <path id="x3" class="dr" stroke="#636DFF" stroke-width="9" d="M108 536 Q335 524 565 528" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/>
+  </svg>
+  <div class="rec" style="position:absolute;right:14px;bottom:8px;font-size:12px">PIZARRA Y ETIQUETAS: RECREACIÓN</div>
+ </div>
+ <div class="a serif c" id="l4b" style="top:1040px;font-size:72px"></div>
+ <div class="a" id="shirts" style="left:46px;top:1230px;width:988px;height:200px"></div>
+ <div class="a serif c" id="l4c" style="top:1500px;font-size:92px"></div>
+ <div class="a c" id="l4d" style="top:1610px;font-size:112px;white-space:nowrap;line-height:1"></div>
+ <div class="a rec c" id="recC" style="top:1760px;font-size:12px;opacity:0">DORSALES: DIBUJO</div>
+</div>
+
+<!-- D · Y juegan los jóvenes más rápidos. (540,2880) -->
+<div class="sc" style="left:0;top:1920px">
+ <div class="a serif c" id="l5a" style="top:170px;font-size:104px"></div>
+ <div class="a c" id="l5b" style="top:290px;font-size:104px;white-space:nowrap;line-height:1"></div>
+ <div class="a" id="trail" style="left:-200px;top:900px;width:900px;height:260px;background:linear-gradient(90deg,rgba(99,109,255,0),rgba(106,168,255,.35));filter:blur(18px);opacity:0"></div>
+ <div class="a panel" id="park" style="left:170px;top:470px;width:740px;height:1060px;overflow:hidden">
+  <img src="img/park_g.jpg" style="position:absolute;left:20px;top:20px;width:700px;border-radius:10px">
+  <div class="k" style="position:absolute;left:30px;top:900px;font-size:16px">FICHA</div>
+  <div class="bold" style="position:absolute;left:30px;top:930px;font-size:52px">PARK JI-SUNG</div>
+  <div class="cred" style="position:absolute;left:30px;top:996px;font-size:12px;white-space:nowrap">FOTO: ALOBA ØYVIND VIK · CC BY-SA 3.0 (MODIFICADA) · 2008</div>
+ </div>
+ <svg class="a" style="left:40px;top:1560px" width="1000" height="200" viewBox="0 0 1000 200">
+  <g class="dr" stroke="#6AA8FF" stroke-width="7">
+   <path id="sp1" d="M80 40 L920 40" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/>
+   <path id="sp2" d="M200 100 L920 100" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100" opacity=".7"/>
+   <path id="sp3" d="M340 160 L920 160" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100" opacity=".45"/>
+  </g>
+ </svg>
+</div>
+
+<!-- E · En 2002, Corea llega a semifinales del Mundial... (540,4800) -->
+<div class="sc" style="left:0;top:3840px">
+ <div class="a serif c" id="l6a" style="top:140px;font-size:92px"></div>
+ <div class="a mat" id="pol" style="left:90px;top:280px;width:900px;transform-origin:50% 50%">
+  <div style="overflow:hidden;width:856px;height:332px"><img id="plz" src="img/plaza_g.jpg" style="display:block;width:856px;transform-origin:50% 50%"></div>
+  <div style="position:absolute;left:24px;bottom:30px;font:800 26px J;color:#0b0f1a;letter-spacing:.14em">SEÚL · 18-06-2002</div>
+  <div style="position:absolute;right:20px;bottom:12px;font:500 12px J;color:#5d6888;letter-spacing:.06em">AFICIÓN EN LA PLAZA DE SEÚL · FOTO: IJS · CC0 (MODIFICADA)</div>
+ </div>
+ <div class="a panel" id="brk" style="left:90px;top:800px;width:900px;height:560px">
+  <div class="k" style="position:absolute;left:40px;top:34px;font-size:18px">OCTAVOS</div>
+  <div class="k" style="position:absolute;left:340px;top:34px;font-size:18px">CUARTOS</div>
+  <div class="k" id="kS" style="position:absolute;left:620px;top:34px;font-size:18px">SEMIFINALES</div>
+  <svg style="position:absolute;left:0;top:0" width="900" height="560" viewBox="0 0 900 560">
+   <g stroke="#26335a" stroke-width="4" fill="none">
+    <rect x="40" y="110" width="220" height="70" rx="8"/><rect x="40" y="380" width="220" height="70" rx="8"/>
+    <rect x="340" y="245" width="220" height="70" rx="8"/><rect x="620" y="245" width="240" height="70" rx="8"/>
+    <path d="M260 145 L300 145 L300 415 L260 415 M300 280 L340 280 M560 280 L620 280"/>
+   </g>
+   <g class="dr" stroke="#6AA8FF" stroke-width="8">
+    <path id="b1" d="M260 145 L300 145 L300 280 L340 280" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/>
+    <path id="b2" d="M560 280 L620 280" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/>
+   </g>
+  </svg>
+  <div id="c1" class="bold" style="position:absolute;left:40px;top:110px;width:220px;height:70px;line-height:70px;text-align:center;font-size:30px;border-radius:8px;background:#636DFF">COREA</div>
+  <div id="c2" class="bold" style="position:absolute;left:340px;top:245px;width:220px;height:70px;line-height:70px;text-align:center;font-size:30px;border-radius:8px;background:#636DFF;opacity:0">COREA</div>
+  <div id="c3" class="bold" style="position:absolute;left:620px;top:245px;width:240px;height:70px;line-height:70px;text-align:center;font-size:30px;border-radius:8px;border:4px solid #8B5CF6;background:rgba(139,92,246,.18);opacity:0">COREA</div>
+  <div class="rec" style="position:absolute;right:16px;bottom:10px;font-size:12px">CUADRO: DIBUJO</div>
+ </div>
+ <div class="a c" id="l6b" style="top:1430px;font-size:136px;white-space:nowrap;line-height:1"></div>
+ <div class="a serif c" id="l6c" style="top:1600px;font-size:96px"></div>
+</div>
+
+<!-- F · Los galones no juegan. (1700,4800) -->
+<div class="sc" style="left:1160px;top:3840px;overflow:hidden">
+ <img id="calle" src="img/calle_g.jpg" class="a" style="left:-860px;top:0;height:1920px;opacity:0;filter:brightness(.42)">
+ <div class="a" style="inset:0;background:radial-gradient(ellipse at 50% 45%,rgba(2,5,15,.15),rgba(2,5,15,.85) 75%)"></div>
+ <div class="a cred" id="credC" style="left:40px;top:60px;font-size:13px;opacity:0">AFICIÓN ANTE EL AYUNTAMIENTO DE SEÚL, 2002 · FOTO: 정창익 · KOGL TIPO 1 (MODIFICADA)</div>
+ <div class="a" id="arm" style="left:300px;top:380px;width:480px;height:180px;transform-origin:50% 50%;opacity:0">
+  <div style="position:absolute;inset:0;border-radius:30px;background:linear-gradient(#2a3350,#151c30);border:5px solid #B9E0FF;box-shadow:0 30px 60px rgba(0,0,0,.7)"></div>
+  <div class="bold" style="position:absolute;left:0;width:480px;text-align:center;top:30px;font-size:120px;color:#B9E0FF">C</div>
+  <div class="rec" style="position:absolute;left:0;width:480px;text-align:center;top:194px;font-size:12px">BRAZALETE: DIBUJO</div>
+ </div>
+ <div class="a serif c" id="l7a" style="top:880px;font-size:140px"></div>
+ <div class="a c" id="l7b" style="top:1050px;font-size:170px;white-space:nowrap;line-height:1"></div>
+ <div class="a cred c" id="credF" style="top:1660px;font-size:15px;opacity:0;left:50px;width:980px">Fotos: Bart Molendijk / Anefo (CC0) · Aloba Øyvind Vik (CC BY-SA 3.0) · ijs (CC0) · 정창익 (KOGL tipo 1), modificadas, vía Wikimedia Commons.<br>Calendario, marcador, sello, pizarra, cuadro y brazalete: recreación.</div>
+</div>
+
+</div>
+<canvas id="grain" width="360" height="640"></canvas>
+<script src="gsap.min.js"></script>
+<script src="words.js"></script>
+<script>
+const $=i=>document.getElementById(i), cl=x=>Math.min(1,Math.max(0,x)), P=(t,a,b)=>cl((t-a)/(b-a)), eo=x=>1-Math.pow(1-x,3), es=x=>x*x*(3-2*x);
+const W=window.WORDS, T=k=>W[k][1], E=k=>W[k][2];
+const PUN={8:'.',10:',',12:'.',25:':',30:';',36:'.',42:'.',44:',',50:'...',54:'.'};
+const DISP={5:'5-0',6:'',17:'Guus',19:'«Señor',20:'5-0»',21:'',26:'fuera',37:'Y',40:'JÓVENES',48:'SEMIFINALES',53:'NO',54:'JUEGAN'};
+const L=[];
+function line(id,ks,acc=[],cls='acc'){const el=$(id);for(const k of ks){const tx=(k in DISP)?DISP[k]:W[k][0];if(tx==='')continue;const s=document.createElement('span');s.className='w'+(acc.includes(k)?' '+cls:'');s.textContent=tx+(PUN[k]||'');el.appendChild(s);L.push([s,T(k)])}}
+line('l1a',[1,2,3,4],[1,2,3]); line('l1b',[5,6,7,8],[5],'strong');
+line('l2a',[9,10,11,12],[12]);
+line('l3a',[13,14,15,16]); line('l3b',[17,18],[17,18],'strong');
+line('l3c',[19,20,21],[20],'strong'); $('l3c').querySelector('.w').className='w serif';
+line('l4a',[22,23,24,25],[25]);
+line('l4b',[26,27,28,29,30]);
+line('l4c',[31,32,33]); line('l4d',[34,35,36],[35,36],'strong'); $('l4d').querySelector('.w').className='w serif';
+line('l5a',[37,38,39]); line('l5b',[40,41,42],[40],'strong'); $('l5b').querySelectorAll('.w')[1].className='w serif';$('l5b').querySelectorAll('.w')[2].className='w serif';
+line('l6a',[43,44,45,46,47],[44]);
+line('l6b',[48],[48],'uv');
+line('l6c',[49,50]);
+line('l7a',[51,52]);
+line('l7b',[53,54],[53,54],'strong');
+// ----- cámara: un solo plano -----
+const cam={cx:540,cy:960,z:1.0}, tl=gsap.timeline({paused:true});
+const fly=(t,cx,cy,z,d=.9)=>{tl.to(cam,{cx,cy,duration:d,ease:'power2.inOut'},t);tl.to(cam,{keyframes:[{z:z*0.9,duration:d*.5,ease:'sine.out'},{z,duration:d*.5,ease:'sine.inOut'}]},t)};
+tl.set(cam,{cx:540,cy:920,z:1.05},0).to(cam,{z:1.0,cy:960,duration:1.2,ease:'sine.out'},0);
+tl.to(cam,{cy:1000,z:1.02,duration:3.6,ease:'sine.inOut'},1.3);
+fly(4.95,1700,960,1.0); tl.to(cam,{z:1.03,duration:2.5,ease:'sine.out'},5.85);
+fly(8.45,1700,2880,1.0); tl.to(cam,{z:1.02,duration:4.4,ease:'sine.out'},9.35);
+fly(13.75,540,2880,1.0); tl.to(cam,{z:1.03,duration:1.5,ease:'sine.out'},14.65);
+fly(16.15,540,4800,1.0); tl.to(cam,{z:1.02,duration:2.2,ease:'sine.out'},17.05);
+fly(19.45,1700,4800,1.0); tl.to(cam,{z:.96,duration:2.8,ease:'sine.out'},20.35);
+function camAt(t){tl.seek(t,false);return [cam.cx,cam.cy,cam.z]}
+// ----- elementos dibujados -----
+const mkTok=(par)=>{const a=[];for(let i=0;i<5;i++){const d=document.createElement('div');d.className='tok';d.style.left=(i*56)+'px';d.style.top='0px';d.style.opacity=0;par.appendChild(d);a.push(d)}return a};
+const TK1=mkTok($('tk1')), TK2=mkTok($('tk2'));
+// once dorsales (camisetas dibujadas, sin número ni escudo)
+const SH=[], NM={2:'YOUNG-PYO',7:'JI-SUNG'};
+for(let i=0;i<11;i++){const d=document.createElement('div');d.style.cssText=`position:absolute;left:${i*90}px;top:60px;width:80px;height:100px;opacity:0`;
+ d.innerHTML=`<svg width="80" height="90" viewBox="0 0 80 90"><path d="M24 4 L8 12 L0 30 L14 36 L16 30 L16 86 L64 86 L64 30 L66 36 L80 30 L72 12 L56 4 Q40 16 24 4 Z" fill="${i==2||i==7?'#6AA8FF':'#2a3350'}" stroke="#B9E0FF" stroke-width="2"/></svg>`;
+ $('shirts').appendChild(d);SH.push(d);
+ if(NM[i]){const n=document.createElement('div');n.className='bold';n.textContent=NM[i];n.style.cssText=`position:absolute;left:${i*90+40}px;top:0;font-size:30px;color:#B9E0FF;transform:translateX(-50%);opacity:0`;n.id='nm'+i;$('shirts').appendChild(n)}}
+// grano
+const g=$('grain').getContext('2d'),gi=g.createImageData(360,640);let sd=1;const R=()=>(sd=(sd*16807)%2147483647)/2147483647;
+let t=0;
+const inn=(el,t0,dy=40,d=.5)=>{const p=eo(P(t,t0,t0+d));el.style.opacity=p;el.style.transform=`translateY(${(1-p)*dy}px)`;return p};
+const dash=(el,a,b)=>(typeof el=='string'?$(el):el).setAttribute('stroke-dashoffset',100-100*eo(P(t,a,b)));
+const drop=(el,t0)=>{const p=P(t,t0,t0+.22);el.style.opacity=cl(p*3);el.style.transform=`translateY(${(1-eo(p))*-70}px)`};
+window.frame=function(tt){t=tt;
+ sd=1+Math.floor(t*30)*7919;const dd=gi.data;for(let i=0;i<dd.length;i+=4){const v=R()*255;dd[i]=v*.8;dd[i+1]=v*.85;dd[i+2]=v;dd[i+3]=255}g.putImageData(gi,0,0);
+ const p0=camAt(Math.max(0,t-1/30)),p1=camAt(t),sp=Math.hypot(p1[0]-p0[0],p1[1]-p0[1]);
+ $('cam').style.transform=`translate(540px,960px) scale(${p1[2]}) translate(${-p1[0]}px,${-p1[1]}px)`;
+ $('cam').style.filter=sp>40?`blur(${Math.min(4,(sp-40)/30)}px)`:'none';
+ for(const [s,t0] of L){const p=eo(P(t,t0-.04,t0+.32));s.style.opacity=p;s.style.transform=`translateX(${(1-p)*28}px)`;s.style.filter=`blur(${(1-p)*6}px)`}
+ // A · la hoja de calendario cae y se posa; marcador 0–5 con cinco fichas; la segunda fila cae como una persiana
+ const pc=P(t,0,.6);$('cal').style.opacity=cl(pc*3);$('cal').style.transform=`translateY(${(1-eo(pc))*-120}px) rotate(${-3+(1-eo(pc))*-6}deg)`;
+ inn($('board'),T(1)-.2,40,.5);
+ $('r1').style.opacity=P(t,T(4)-.1,T(4)+.2);
+ TK1.forEach((d,i)=>drop(d,T(5)+i*.16));
+ const pr=P(t,T(9)-.05,T(10)+.15);$('r2').style.opacity=cl(pr*2);$('r2').style.transform=`scaleY(${es(pr)})`;
+ TK2.forEach((d,i)=>drop(d,T(11)-.1+i*.11));
+ // B · ficha de prensa con Hiddink; el sello cae en «Señor»; el mote en coreano debajo
+ inn($('press'),5.55,40,.5);
+ const ps=P(t,T(19)-.06,T(19)+.16);$('st').style.opacity=cl(ps*1.6);$('st').style.transform=`rotate(-8deg) scale(${1.35-.35*eo(ps)})`;
+ $('stR').style.opacity=P(t,T(20),T(20)+.4);
+ $('kr').style.opacity=P(t,T(21),T(21)+.4);
+ // C · pizarra: «REGLA 1» a rotulador; tres etiquetas que se tachan; once dorsales y dos nombres
+ inn($('wb'),9.0,40,.5);
+ $('rg').style.clipPath=`inset(0 ${100-100*P(t,T(25)-.1,E(25)+.1)}% 0 0)`; dash('rgU',E(25),E(25)+.3);
+ ['g1','g2','g3'].forEach((id,i)=>{const p=P(t,T(26)+i*.12,T(26)+i*.12+.3);$(id).style.opacity=cl(p*2);$(id).style.transform=`translateY(${(1-eo(p))*-30}px) rotate(${[-2,1.5,-1][i]}deg)`});
+ dash('x1',T(28),T(28)+.28);dash('x2',T(29)-.05,T(29)+.25);dash('x3',T(30),T(30)+.3);
+ SH.forEach((d,i)=>{const p=P(t,T(31)+i*.05,T(31)+i*.05+.3);d.style.opacity=cl(p*2);d.style.transform=`translateY(${(1-eo(p))*30}px)`});
+ for(const i of [2,7]){const p=P(t,T(36)-.15+(i==7?.1:0),T(36)+.2+(i==7?.1:0));$('nm'+i).style.opacity=p;$('nm'+i).style.transform=`translateX(-50%) translateY(${(1-eo(p))*16}px)`}
+ $('recC').style.opacity=P(t,T(36),T(36)+.4)*.9;
+ // D · la ficha de Park entra en carrera de izquierda a derecha con una estela azul; líneas de velocidad en «rápidos»
+ const pk=P(t,T(38)-.15,T(38)+.45);$('park').style.opacity=cl(pk*2);$('park').style.transform=`translateX(${(1-eo(pk))*-700}px) rotate(${(1-eo(pk))*-3}deg)`;
+ $('trail').style.opacity=.9*Math.sin(Math.PI*P(t,T(38)-.1,T(38)+.9));$('trail').style.transform=`translateX(${eo(P(t,T(38)-.1,T(38)+.6))*300}px)`;
+ dash('sp1',T(42)-.05,T(42)+.25);dash('sp2',T(42)+.05,T(42)+.35);dash('sp3',T(42)+.15,T(42)+.45);
+ // E · polaroid de la plaza que retrocede; el cuadro: Corea sube de octavos a cuartos a semifinales
+ const pp=P(t,16.95,17.5);$('pol').style.opacity=cl(pp*2);$('pol').style.transform=`translateY(${(1-eo(pp))*-60}px) rotate(${-1.5+(1-eo(pp))*-3}deg)`;
+ $('plz').style.transform=`scale(${1.18-.18*es(P(t,17.0,20.0))})`;
+ inn($('brk'),T(45)-.2,40,.45);
+ dash('b1',T(46),T(46)+.35); $('c2').style.opacity=P(t,T(47),T(47)+.25);
+ dash('b2',T(48)-.1,T(48)+.15); const pu=P(t,T(48),T(48)+.3);$('c3').style.opacity=pu;$('c3').style.transform=`scale(${1.12-.12*eo(pu)})`;
+ // F · afición en la calle, muy oscura; el brazalete de capitán cae al suelo; «LOS GALONES NO JUEGAN»
+ $('calle').style.opacity=P(t,19.6,20.4);$('calle').style.transform=`translateX(${-30*es(P(t,19.6,23))}px)`;
+ $('credC').style.opacity=P(t,20.2,20.6)*.8;
+ const pa=P(t,T(52)-.1,T(52)+.55);$('arm').style.opacity=cl(pa*3);$('arm').style.transform=`translateY(${(1-eo(pa))*-260 + 120*es(P(t,T(53),T(54)+.2))}px) rotate(${(1-eo(pa))*24+ -10*es(P(t,T(53),T(54)+.2))}deg)`;
+ $('credF').style.opacity=P(t,E(54)-.1,E(54)+.4)*.9;
+};
+document.fonts.ready.then(()=>Promise.all([...document.images].map(i=>i.complete?1:new Promise(r=>{i.onload=r;i.onerror=r})))).then(()=>{frame(0);window.ready=true});
+</script></body></html>
