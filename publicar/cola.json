@@ -542,10 +542,11 @@
    "publicar/media/v4-E02.mp4"
   ],
   "caption": "Noviembre. 18:30. Ya no hay luz.\nCon lluvia, con seis, con los que vengan: conos, cronómetro, pizarra.\n\nAlgo se está encendiendo.\n\nEstamos terminando algo para entrenadores. Síguenos para no perderte nada.\n\nFotos: Jonathan Hutchins · CC BY-SA 2.0 | U.S. Department of State · DP | Sgt. Aaron Kaczur · R. Henrik Nilsson · MC3 Brennan Knaresboro · DP / CC BY 4.0 | Zac allan · CC BY 3.0\n#entrenadores #fútbolbase",
-  "state": "aprobada",
+  "state": "retirada",
   "ig": {
-   "status": "pendiente",
-   "when": "2026-11-27T20:30:00+01:00"
+   "status": "retirada",
+   "when": "2026-11-27T20:30:00+01:00",
+   "motivo": "PLAN.md 27/11: teaser de lanzamiento, fuera de la fase 1"
   },
   "tiktok": {
    "status": "retirada",
@@ -563,10 +564,11 @@
    "publicar/media/v4-E03.mp4"
   ],
   "caption": "Lo que se ve dura noventa minutos.\nLo que no se ve dura toda la semana.\n\nHoy se juega lo que se preparó entre semana. ¿Cuánto te queda para el partido?\n\nEstamos terminando algo para entrenadores. Síguenos para no perderte nada.\n\nFotos: Infrogmation · CC BY-SA 4.0 | Giallone · Steffen Prößdorf · John Martinez Pavliga · CC BY-SA 3.0 / CC BY-SA 4.0 / CC BY 2.0 | USARJ NCO CORPS · CC BY 2.0\n#entrenadores #díadepartido",
-  "state": "aprobada",
+  "state": "retirada",
   "ig": {
-   "status": "pendiente",
-   "when": "2026-11-28T20:30:00+01:00"
+   "status": "retirada",
+   "when": "2026-11-28T20:30:00+01:00",
+   "motivo": "PLAN.md 27/11: teaser de lanzamiento, fuera de la fase 1"
   },
   "tiktok": {
    "status": "retirada",
