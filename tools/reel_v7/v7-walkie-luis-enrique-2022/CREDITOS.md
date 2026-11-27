@@ -1,0 +1,21 @@
+# v7-walkie-luis-enrique-2022 · «La voz del míster» (historia con fotos)
+Guion: agencia/fabrica-v7/guiones/v7-walkie-luis-enrique-2022.md (Dani A). Montaje v7: Marta A (02), 27/11/2026.
+
+Voz (21,44 s, 58 palabras, texto del guion sin cambios): «Septiembre de 2022. España entrena en Las Rozas. Luis Enrique lo mira desde un andamio, con un walkie-talkie. Cada jugador lleva un altavoz en el chaleco. «Vais a oír la voz del míster.» Corrige a Koke, a Morata, a Gavi, en pleno ejercicio. Sin dejarse la garganta. La corrección que sirve llega en el momento... y sin gritar.»
+ElevenLabs eleven_v4, voz Mateo (gpMzl7dbkfC9dIxAqQZT), una toma (396 créditos). En el prompt, «dos mil veintidós» y «uóki-tóki» para que se lean como pide el guion. Tiempos por palabra: faster-whisper small (words.json / words.js); están las 58 palabras (whisper small escribe «entra», «Andríguez», «Coque» y «Gaby»; whisper medium confirma «entrena» y «Luis Enrique»: se oyen como en el guion). Pausa del «...» antes del remate: unos 0,4 s. La cita pasa por un filtro de radio muy suave (mix.py).
+
+Datos y fuentes: EFE en El Heraldo (21/09/2022), OKDiario (23/09/2022 y 18/11/2022), Soccerway (ver el guion). No se dice la altura del andamio, ni cuántos jugadores llevaban altavoz, ni que fuera el primero.
+
+Fotos (Wikimedia Commons, descargadas el 27/11/2026 desde el sandbox de Higgsfield; autor y licencia según el guion, comprobados por Dani A en la API de Commons):
+- Luis Enrique 2014.jpg (18/08/2014) — Lluís from Sabadell (Barcelona), España — CC BY 2.0 — recortada con rembg (u2net_human_seg) de cintura para arriba y graduada (B/N con el azul) en ficha «L. ENRIQUE · SELECCIONADOR», sin fecha de la foto ni escudo. Marcada «modificada».
+- Ciudad del Fútbol.jpg (04/08/2011) — Roberto — CC BY-SA 3.0 — recortada y graduada, polaroid «LAS ROZAS · CIUDAD DEL FÚTBOL»; el escudo de la fachada va difuminado (sin escudos). Marcada «modificada».
+- Baofeng UV-5R transceiver.jpg (05/02/2018) — Варвара Каминская — CC BY-SA 4.0 — fondo blanco quitado por umbral y graduada; rotulada «recreación» (es un walkie cualquiera, no el que usó Luis Enrique). Marcada «modificada».
+Preparación: cut.py.
+Dibujados y rotulados: hoja de calendario («recreación»), campo y conos («dibujo»), torre de andamio («recreación»), once chalecos con el punto del altavoz («recreación»), pizarra con KOKE, MORATA y GAVI («recreación»), megáfono tachado («dibujo»), reloj y torre pequeña con once puntos.
+
+Ultravioleta #8B5CF6 una sola vez: «EN EL MOMENTO...». Cierre: fundido a negro de 0,5 s desde 22,04 s (0,6 s después de la voz) al cierre común tools/reel_v6/outro/outro2.mp4; la voz del cierre entra a 22,34 s.
+
+Música y efectos (Epidemic Sound, vía Higgsfield): «Musical, Loop, Calm Piano, Dreamy, Intro 01», «… Intro 02» y «… Intro 03», encadenadas con fundidos de 1,4 s (distintas de las de los últimos v7, «Soft Piano, Strings, Calm, Intro, Logo 01/02»); «Swooshes, Whoosh, Soft, Clean»; «Paper, Friction, Sheet, Laminated, Slide On Wooden Table»; «Communications, Camera, KMZ Zenit 12XP Camera, Shutter 03»; «Objects, Writing, Marker On Whiteboard»; «Objects, Misc, Traffic Cone, Drop On Road»; «Metal, Impact, Metal Frame, Tube, Light Hits x5»; «Communications, Transceiver, CB Radio, Talk Button, Press»; «Communications, Static, Walkie Talkie, Radio Interference 01»; «Cloth, Impact, Vest, High Visibility, Drop On Floor»; «Games, Misc, Chips, Tokens, Plastic, Multiple, Down On Table»; «Clocks, Tick, Clock, Classic»; en el cierre, «Musical, Loop, Logo, Calm, Piano 01» bajo (0,22). Mezcla: mix.py (voz −19,0, música −33,5 con ducking, sfx −37,5, pico 0,90); final −19,2 LUFS, −0,9 dBTP.
+
+Vídeo final: https://d2ol7oe51mr4n9.cloudfront.net/user_3M2z7lIyzIPYtjNHcxRWFNk6wi7/b940744c-b4ef-44a0-8b9c-898dd29ffb9d.mp4 (26,0 s: historia hasta 22,54 s con fundido desde 22,04 s al cierre outro2, sin app). Comprobado con whisper: se oye la voz entera y «Dale like y síguenos para más vídeos como este» (el «¿Te ha servido?» del cierre va en pantalla; el audio de outro2.mp4 no lo dice).
+Caption: la del guion; el bloque de fuentes y los hashtags van antes para que termine con «¿Te ha servido? Dale like y síguenos para más vídeos como este.».
