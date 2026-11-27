@@ -1,0 +1,20 @@
+# v7-esquinas-tuchel-mainz · «Le cortó las esquinas» (historia con fotos)
+Guion: agencia/fabrica-v7/guiones/v7-esquinas-tuchel-mainz.md (Dani A). Montaje v7: Marta B (02), 27/11/2026.
+
+Voz (19,28 s, 56 palabras, texto del guion sin cambios): «Thomas Tuchel le cortó las esquinas a su campo de entrenamiento. Era el Mainz, y él lo sabía: su equipo era inferior. Sin esquinas, nadie corre hacia el banderín; hay que ir en diagonal, hacia la portería. Y a sus defensas les dio pelotas de tenis, para no agarrar camisetas. No corrigió el hábito... cambió el campo.»
+ElevenLabs eleven_v4, voz Mateo (gpMzl7dbkfC9dIxAqQZT), una toma (378 créditos). Tiempos por palabra: faster-whisper small (words_raw.json → words.json / words.js): las 56 palabras están; whisper small escribe «Tomas Tujel» y «Mines» (se corrigen en words.json); whisper medium confirma «Thomas Tuchel» y «Era el Mainz». Pausa del «...» antes del remate: 0,42 s.
+
+Datos y fuentes: The Guardian (Jacob Steinberg, 27/05/2021; Raphael Honigstein) y SportBible citando a Honigstein, ver el guion. No se dice año, medidas ni resultados.
+
+Fotos (Wikimedia Commons; autor y licencia según el guion, comprobados por Dani A en la API de Commons):
+- Thomas Tuchel coach Mainz05 at away match in Leverkusen 2014.jpg — Schnederpelz — CC BY-SA 3.0 — se reutiliza el recorte ya preparado en tools/reel_v7/v7-pantalla-nagelsmann-2017 (escudo del Mainz y patrocinador tapados, rembg, B/N con el azul) en ficha «THOMAS TUCHEL» y en la ficha pequeña final. Marcada «modificada».
+- BruchwegPlatz2.jpg (13/08/2015) — AVespucci — CC BY-SA 3.0 — bajada el 27/11/2026 en el sandbox de Higgsfield, recortada en apaisado (con el banderín de córner) y graduada (B/N con el azul), en polaroid «CAMPO DE ENTRENAMIENTO DEL MAINZ · 2015» (rotulada con su año: es posterior a Tuchel y solo sitúa «el Mainz»). Marcada «modificada».
+Preparación: cut.py.
+Dibujados y rotulados («recreación» / «dibujo»): campo cenital al que unas tijeras le cortan las cuatro esquinas (caen como papel y queda un rombo), balanza MAINZ 05 / RIVALES que se inclina hacia los rivales, rombo con un jugador que corre al banderín y se corta en seco y banderín tachado, fichas azules con flechas en diagonal a la portería, dos defensas con una pelota de tenis en cada mano (caen y botan), camiseta con una mano que lleva la pelota y no la agarra, rombo final en calma.
+
+Ultravioleta #8B5CF6 una sola vez: «EL CAMPO.». Cierre: fundido de 0,5 s desde 19,88 s (0,6 s después de la voz) al cierre común tools/reel_v6/outro/outro2.mp4; la voz del cierre entra a 20,18 s.
+
+Música y efectos (Epidemic Sound, vía Higgsfield): «Musical, Loop, Orchestra, Piano, Choir, Sentimental» desde 2,0 s, una sola pieza sin cortes (distinta de las de los últimos v7: «Musical, Loop, Piano, Intro, Tv», «Calm Piano, Dreamy, Intro 01–03», «Soft Piano, Strings, Calm, Intro, Logo»); «Swooshes, Whoosh, Soft, Clean»; «Paper, Friction, Sheet, Laminated, Slide On Wooden Table»; «Communications, Camera, KMZ Zenit 12XP Camera, Shutter 03»; «Office Supplies, Scissors, Cut Paper, Close Up 04»; «Sports, Court, Tennis, Indoor, Hardcourt, Hard Ball Bounce, Bounce To Silent»; «Cloth, Movement, Soft Cloth, Wool, Fur, Fluffy, Short Movements 02»; «Objects, Writing, Marker On Whiteboard»; «Games, Misc, Chips, Tokens, Plastic, Multiple, Down On Table»; en el cierre, «Musical, Loop, Logo, Calm, Piano 01» bajo (0,22). Mezcla: mix.py (voz −19,0, música −33,5 con ducking, sfx −39,6, pico 0,90); final −17,4 LUFS, −0,8 dBTP.
+
+Vídeo final: https://d2ol7oe51mr4n9.cloudfront.net/user_3M2z7lIyzIPYtjNHcxRWFNk6wi7/57e0d373-379b-41cd-98cf-4057c5aeedd9.mp4 (23,9 s: historia hasta 20,38 s con fundido desde 19,88 s al cierre outro2, sin app). Comprobado con whisper: se oye la voz entera y «Dale like y síguenos para más vídeos como este» (el «¿Te ha servido?» del cierre va en pantalla).
+Caption: la del guion; el bloque de fuentes y los hashtags van antes para que termine con «¿Te ha servido? Dale like y síguenos para más vídeos como este.».
