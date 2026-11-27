@@ -55,7 +55,7 @@ En su libro «Leading with the Heart», el entrenador de Duke escribe que mira a
 
 ¿Cuál de esos cinco dedos le falta hoy a tu equipo?
 
-Estamos terminando la app de ProTeam. Síguenos para no perderte nada: muy pronto, novedades.
+¿Te ha servido? Dale like y síguenos para más vídeos como este.
 
 Fuentes: Forbes (Carmine Gallo), Duke Department of Medicine, Duke Fuqua; M. Krzyzewski, «Leading with the Heart» (2000). Fotos: Bryan Horowitz (CC BY-SA 2.0), Ahodges7 (CC BY-SA 3.0) y Lance Moritz / The Chronicle (dominio público), vía Wikimedia Commons. Pista, mano y puño: recreación.
 Música y efectos: Epidemic Sound

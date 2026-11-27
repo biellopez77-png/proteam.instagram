@@ -60,7 +60,7 @@ El 13 de abril de 1996, en The Dell, el Manchester United de Alex Ferguson perd�
 
 ¿Tus jugadores levantan la cabeza antes de pasarla, o pasan a donde creen que está el compañero?
 
-Estamos terminando la app de ProTeam. Síguenos para no perderte nada: muy pronto, novedades.
+¿Te ha servido? Dale like y síguenos para más vídeos como este.
 
 Fuentes: manutd.com (Gary Neville, 2019), Sports Illustrated (2018), ESPN, Sports Mole, Premier League. Fotos: Colin Smith (CC BY-SA 2.0), Øyvind Vik (dominio público), Dan Kerins (CC BY 2.5), vía Wikimedia Commons. Marcadores, camisetas, vestuario, tarjeta, grada y campo: recreación.
 Música y efectos: Epidemic Sound

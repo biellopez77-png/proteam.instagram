@@ -58,7 +58,7 @@ Al empezar la temporada, el entrenador de NC State llevó unas tijeras al entren
 
 ¿Tu equipo ha ensayado alguna vez cómo celebraría ganar?
 
-Estamos terminando la app de ProTeam. Síguenos para no perderte nada: muy pronto, novedades.
+¿Te ha servido? Dale like y síguenos para más vídeos como este.
 
 Fuentes: V Foundation, The News & Observer, LDS Living, Wikipedia. Fotos: Duke Chronicle (incluida una de Jonathan Wroblewski) y Greenstrat, dominio público, vía Wikimedia Commons. Tijeras, escalera, aro y marcador: recreación.
 Música y efectos: Epidemic Sound

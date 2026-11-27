@@ -56,7 +56,7 @@ Nunca fue futbolista profesional y trabajó años en el negocio de zapatos de su
 
 ¿Te han dicho alguna vez que para entrenar hay que haber jugado?
 
-Estamos terminando la app de ProTeam. Síguenos para no perderte nada: muy pronto, novedades.
+¿Te ha servido? Dale like y síguenos para más vídeos como este.
 
 Fuentes: FIFA, Wikipedia, The Set Pieces. Fotos: Elena Torre (CC BY-SA 2.0), Vincenzo.togni (CC BY-SA 4.0), Vasil Evlogiev (CC BY-SA 4.0) y postal de Fusignano (dominio público), vía Wikimedia Commons. Zapatos, fichas, cuadro y portadas: recreación.
 Música y efectos: Epidemic Sound

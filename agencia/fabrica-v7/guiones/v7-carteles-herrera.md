@@ -57,7 +57,7 @@ Helenio Herrera entrenó al Inter de 1960 a 1968. Sus consignas estaban clavadas
 
 Si mañana colgaras una sola frase en tu vestuario, ¿cuál sería?
 
-Estamos terminando la app de ProTeam. Síguenos para no perderte nada: muy pronto, novedades.
+¿Te ha servido? Dale like y síguenos para más vídeos como este.
 
 Fuentes: Inter.it, UEFA.com, Wikipedia. Fotos: Gino Begotti y autores desconocidos (dominio público), vía Wikimedia Commons. Vestuario, carteles y copas: recreación.
 Música y efectos: Epidemic Sound

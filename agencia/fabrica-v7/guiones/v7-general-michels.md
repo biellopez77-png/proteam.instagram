@@ -63,7 +63,7 @@ Rinus Michels fue profesor de gimnasia en la escuela Amman para niños sordos de
 
 ¿Cuántos de tus jugadores sabrían cubrir el hueco de un compañero mañana mismo?
 
-Estamos terminando la app de ProTeam. Síguenos para no perderte nada: muy pronto, novedades.
+¿Te ha servido? Dale like y síguenos para más vídeos como este.
 
 Fuentes: FIFA, UEFA.com, CNV Onderwijs, NOS, Wikipedia, Britannica. Fotos: Joost Evers, Eric Koch y Anefo, Nationaal Archief (CC0), vía Wikimedia Commons. Silbato, aula, clasificación y pizarra: recreación.
 Música y efectos: Epidemic Sound

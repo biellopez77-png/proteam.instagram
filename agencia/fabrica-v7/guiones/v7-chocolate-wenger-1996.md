@@ -58,7 +58,7 @@ En su primer partido con el Arsenal (Blackburn 0-2 Arsenal, 12 de octubre de 199
 
 ¿Qué costumbre de tu vestuario cambiarías aunque te la protestaran?
 
-Estamos terminando la app de ProTeam. Síguenos para no perderte nada: muy pronto, novedades.
+¿Te ha servido? Dale like y síguenos para más vídeos como este.
 
 Fuentes: arsenal.com, Daily Mirror, Yorkshire Post, ESPN, Premier League. Fotos: Ronnie Macdonald (CC BY 2.0), Gordon Flood (CC BY 2.0), Jeffery Martin (CC0), vía Wikimedia Commons. Vestuario, maletín, chocolatina, autobús, marcador y plato: recreación.
 Música y efectos: Epidemic Sound

@@ -53,7 +53,7 @@ Pat Summitt ganó ocho títulos de la NCAA con Tennessee, y exigía a sus jugado
 
 ¿Qué le exiges tú a tu equipo fuera de la pista?
 
-Estamos terminando la app de ProTeam. Síguenos para no perderte nada: muy pronto, novedades.
+¿Te ha servido? Dale like y síguenos para más vídeos como este.
 
 Fuentes: ABC News, Universidad de Tennessee (Our Tennessee, Volopedia), Encyclopedia.com. Fotos: aaronisnotcool (CC BY 2.0), TN 66 (CC0), Christina M. O'Connell / Ejército de EE. UU. (dominio público), vía Wikimedia Commons. Aula, trofeos y banquillo: recreación.
 Música y efectos: Epidemic Sound

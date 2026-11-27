@@ -60,7 +60,7 @@ En el torneo de la NCAA de 1996, la Princeton de Pete Carril ganó 43-41 a UCLA,
 
 ¿Cuál es la puerta de atrás de tu equipo cuando el rival es más fuerte?
 
-Estamos terminando la app de ProTeam. Síguenos para no perderte nada: muy pronto, novedades.
+¿Te ha servido? Dale like y síguenos para más vídeos como este.
 
 Fuentes: AP (The Spokesman-Review, 1996), Princeton Alumni Weekly (2011), Sports Illustrated (2022); P. Carril y D. White, «The Smart Take from the Strong». Fotos: David Keddie (CC BY-SA 4.0), Jonathan Schilling (CC BY-SA 4.0) y Joe Shlabotnik (CC BY 2.0), vía Wikimedia Commons. Pizarra, marcador y reloj: recreación.
 Música y efectos: Epidemic Sound

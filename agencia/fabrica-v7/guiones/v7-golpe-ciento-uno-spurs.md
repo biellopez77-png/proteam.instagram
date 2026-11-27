@@ -55,7 +55,7 @@ En el pasillo del vestuario de los San Antonio Spurs estaba en español, francé
 
 ¿Cuál es el golpe ciento uno que tu equipo todavía no ha dado?
 
-Estamos terminando la app de ProTeam. Síguenos para no perderte nada: muy pronto, novedades.
+¿Te ha servido? Dale like y síguenos para más vídeos como este.
 
 Fuentes: Bleacher Report, CBS Sports, Grind City Media; J. A. Riis, «The Making of an American» (1901). Foto: Keith Allison (CC BY-SA 2.0), vía Wikimedia Commons. Taquillas, cartelas, piedra y contador: recreación.
 Música y efectos: Epidemic Sound

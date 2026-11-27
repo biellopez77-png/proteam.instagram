@@ -57,7 +57,7 @@ John Wooden ganó diez títulos de la NCAA con UCLA, y el primer día dedicaba m
 
 ¿Qué es lo primero que enseñas tú el primer día?
 
-Estamos terminando la app de ProTeam. Síguenos para no perderte nada: muy pronto, novedades.
+¿Te ha servido? Dale like y síguenos para más vídeos como este.
 
 Fuentes: The Christian Science Monitor, VOA, UCLA Newsroom, NPR. Fotos: Associated Students UCLA y Malcolm W. Emmons (dominio público), Los Angeles Times (CC BY 4.0), vía Wikimedia Commons. Calcetín, reloj y banderines: recreación.
 Música y efectos: Epidemic Sound

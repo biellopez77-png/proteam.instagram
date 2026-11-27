@@ -58,7 +58,7 @@ En el Boot Room del Liverpool cabían unas seis personas, entre cajas de cerveza
 
 Y tú, ¿qué escribes después de cada entreno?
 
-Estamos terminando la app de ProTeam. Síguenos para no perderte nada: muy pronto, novedades.
+¿Te ha servido? Dale like y síguenos para más vídeos como este.
 
 Fuentes: This Is Anfield, Liverpool FC, Wikipedia. Fotos: Rodhullandemu (CC BY-SA 4.0) y Eskil Malmberg (dominio público), vía Wikimedia Commons. Cuarto, libro y cajas: recreación.
 Música y efectos: Epidemic Sound

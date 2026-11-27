@@ -54,7 +54,7 @@ El 25 de mayo de 1967, en Lisboa, el Celtic de Jock Stein remontó el penalti de
 
 Y tú, ¿cuántos de tu equipo han salido de tu propia cantera?
 
-Estamos terminando la app de ProTeam. Síguenos para no perderte nada: muy pronto, novedades.
+¿Te ha servido? Dale like y síguenos para más vídeos como este.
 
 Fuentes: UEFA, The Irish Times. Fotos: Anefo (CC0), Tagido (dominio público), Thomas Nugent (CC BY-SA 2.0) y Crowsus (CC BY-SA 4.0), vía Wikimedia Commons. Copa, marcador y mapa: recreación.
 Música y efectos: Epidemic Sound

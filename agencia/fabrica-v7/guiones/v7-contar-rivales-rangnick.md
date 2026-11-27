@@ -60,7 +60,7 @@ Ralf Rangnick era jugador-entrenador del Viktoria Backnang, el club de su ciudad
 
 ¿Tu equipo presiona con once o con dos?
 
-Estamos terminando la app de ProTeam. Síguenos para no perderte nada: muy pronto, novedades.
+¿Te ha servido? Dale like y síguenos para más vídeos como este.
 
 Fuentes: The Independent, GOAL, Sky Sports, Wikipedia. Fotos: Steffen Prößdorf (CC BY-SA 4.0), Jedesto (CC BY-SA 4.0), Rob Croes / Anefo (CC0), Anefo / Nationaal Archief (CC0), vía Wikimedia Commons. Campo, fichas, contador y saque de banda: recreación.
 Música y efectos: Epidemic Sound

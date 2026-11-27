@@ -59,7 +59,7 @@ Al empezar la temporada 2007-08, Doc Rivers llevó a los Celtics una palabra que
 
 ¿Qué grita tu equipo al romper el corrillo? ¿Y qué dice eso de vosotros?
 
-Estamos terminando la app de ProTeam. Síguenos para no perderte nada: muy pronto, novedades.
+¿Te ha servido? Dale like y síguenos para más vídeos como este.
 
 Fuentes: WBUR, Grantland, Sports Illustrated, The Washington Times. Fotos: shaka (CC BY-SA 2.0 IT, modificada), Benny Gool (dominio público), Paul Keleher (CC BY 2.0, modificada) y Joyce Boghosian / Casa Blanca (dominio público), vía Wikimedia Commons. Tabla, libro, corro y marcador: recreación.
 Música y efectos: Epidemic Sound

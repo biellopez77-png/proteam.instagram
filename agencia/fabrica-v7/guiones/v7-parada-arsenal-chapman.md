@@ -58,7 +58,7 @@ La parada junto al estadio del Arsenal se llamaba Gillespie Road. Herbert Chapma
 
 ¿Qué haces tú para que tu equipo empiece a sentirse equipo antes de pisar el campo?
 
-Estamos terminando la app de ProTeam. Síguenos para no perderte nada: muy pronto, novedades.
+¿Te ha servido? Dale like y síguenos para más vídeos como este.
 
 Fuentes: Arsenal.com, Wikipedia, English Heritage. Fotos: retrato de Herbert Chapman (dominio público), Qwghlm (CC BY-SA 3.0), Christopher Hilton (CC BY-SA 2.0) y Sunil060902 (CC BY-SA 3.0), vía Wikimedia Commons. Plano, cartas, billete, mapa y cartel: recreación.
 Música y efectos: Epidemic Sound

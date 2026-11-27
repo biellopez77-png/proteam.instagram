@@ -61,7 +61,7 @@ James Naismith entrenó a Phog Allen en Kansas. Cuando a Allen le ofrecieron dir
 
 ¿Qué cosa de tu equipo crees que «solo se juega» y en realidad se puede enseñar?
 
-Estamos terminando la app de ProTeam. Síguenos para no perderte nada: muy pronto, novedades.
+¿Te ha servido? Dale like y síguenos para más vídeos como este.
 
 Fuentes: University Daily Kansan (2018), Encyclopedia.com, Kansas Historical Society (Kansapedia), Britannica, KU Memorial Union. Fotos: dominio público (autor desconocido; James Naismith; Squires Studio), vía Wikimedia Commons. Banco, contador, pizarra y fichas: recreación.
 Música y efectos: Epidemic Sound

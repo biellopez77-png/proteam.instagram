@@ -59,7 +59,7 @@ El 20 de mayo de 1992, en Wembley, el Barça jugaba su tercera final de la Copa 
 
 ¿Qué les dices a tus jugadores justo antes del partido más importante del año?
 
-Estamos terminando la app de ProTeam. Síguenos para no perderte nada: muy pronto, novedades.
+¿Te ha servido? Dale like y síguenos para más vídeos como este.
 
 Fuentes: UEFA.com, The National (2020), CNN (2017), Goal.com (2020), FC Barcelona (2017). Fotos: Dan Uneken (CC0), Rob Croes / Anefo (CC0) y Dr Neil Clifton (CC BY-SA 2.0, modificada), vía Wikimedia Commons. Copa, campo, reloj, pizarra y marcador: recreación.
 Música y efectos: Epidemic Sound

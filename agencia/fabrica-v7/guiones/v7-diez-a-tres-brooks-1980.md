@@ -59,7 +59,7 @@ El 9 de febrero de 1980, en el Madison Square Garden, la URSS, que llevaba los c
 
 ¿Qué le dices a tu equipo después de una paliza, justo antes del partido que importa?
 
-Estamos terminando la app de ProTeam. Síguenos para no perderte nada: muy pronto, novedades.
+¿Te ha servido? Dale like y síguenos para más vídeos como este.
 
 Fuentes: History.com, Star Tribune, The Hockey News. Fotos: New York Rangers / NHL (dominio público), Aaron danielg (dominio público), Henry Zbyszynski (CC BY 2.0, modificada) y David Tenenbaum / AP (dominio público), vía Wikimedia Commons. Marquesina, medallas, marcador, calendario y recorte: recreación.
 Música y efectos: Epidemic Sound

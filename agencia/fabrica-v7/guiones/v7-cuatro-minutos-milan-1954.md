@@ -59,7 +59,7 @@ El 20 de marzo de 1954, Milan High School (Indiana) jugó la final estatal contr
 
 ¿Tu equipo sabe jugar un final sin prisa, o solo sabe correr?
 
-Estamos terminando la app de ProTeam. Síguenos para no perderte nada: muy pronto, novedades.
+¿Te ha servido? Dale like y síguenos para más vídeos como este.
 
 Fuentes: Wikipedia, Indiana Historical Bureau, WCPO (2024), Associated Press (2014). Fotos: Chris Flook (CC BY-SA 4.0), Phillips 66 (dominio público), Butler University Libraries (dominio público), Steve Shook / Groganphoto (CC BY 2.0), vía Wikimedia Commons. Contadores, marcador, cronómetro y balón: recreación.
 Música y efectos: Epidemic Sound

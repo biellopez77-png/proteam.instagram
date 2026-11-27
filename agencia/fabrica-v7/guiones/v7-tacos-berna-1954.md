@@ -57,7 +57,7 @@ Hungría llegó a la final del Mundial de 1954 sin perder desde 1950 y tras gana
 
 ¿Preparas a tu equipo para el campo que habrá o para el que te gustaría tener?
 
-Estamos terminando la app de ProTeam. Síguenos para no perderte nada: muy pronto, novedades.
+¿Te ha servido? Dale like y síguenos para más vídeos como este.
 
 Fuentes: The Irish Times, DPMA, Deutsches Fußballmuseum. Fotos: Comet Photo AG, Zúrich (CC BY-SA 4.0) y Sandstein (CC BY 3.0), vía Wikimedia Commons. Bota, tacos, marcador y calendario: recreación.
 Música y efectos: Epidemic Sound

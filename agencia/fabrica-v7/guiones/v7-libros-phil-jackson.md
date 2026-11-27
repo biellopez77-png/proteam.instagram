@@ -61,7 +61,7 @@ Al empezar un viaje largo, el entrenador de los Lakers repartía en el avión un
 
 ¿Qué sabes de cada uno de tus jugadores fuera de la pista?
 
-Estamos terminando la app de ProTeam. Síguenos para no perderte nada: muy pronto, novedades.
+¿Te ha servido? Dale like y síguenos para más vídeos como este.
 
 Fuentes: The Players' Tribune (Phil Jackson), TIME, NPR, Sports Illustrated. Fotos: Keith Allison (CC BY-SA 2.0) y Bigmoe797 (CC BY-SA 4.0), vía Wikimedia Commons; portadas de «Ecce Homo» (1908) y «Siddhartha» (1922), dominio público. Avión, libros, autobús y resumen: recreación.
 Música y efectos: Epidemic Sound

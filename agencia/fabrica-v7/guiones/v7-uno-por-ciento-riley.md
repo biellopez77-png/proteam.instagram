@@ -57,7 +57,7 @@ En el verano de 1986, tras caer en la final del Oeste, Pat Riley creó el progra
 
 ¿Qué mides tú de tus jugadores que no sale en el marcador?
 
-Estamos terminando la app de ProTeam. Síguenos para no perderte nada: muy pronto, novedades.
+¿Te ha servido? Dale like y síguenos para más vídeos como este.
 
 Fuentes: James Clear (*Atomic Habits*), Jackie MacMullan (*When the Game Was Ours*), Basketball Network, NBA.com. Fotos: Steve Lipofsky (CC BY 3.0 y CC BY-SA 3.0), Lacy Atkins y Joe Kennedy / Los Angeles Times (CC BY 4.0), vía Wikimedia Commons. Calendario, libreta y jugada: recreación.
 Música y efectos: Epidemic Sound

@@ -60,7 +60,7 @@ Red Auerbach guardaba a Frank Ramsey en el banquillo de los Celtics para sacarlo
 
 ¿Quién es tu sexto hombre, y sabe que no es el sexto mejor?
 
-Estamos terminando la app de ProTeam. Síguenos para no perderte nada: muy pronto, novedades.
+¿Te ha servido? Dale like y síguenos para más vídeos como este.
 
 Fuentes: NESN, The New York Times (vía Pulse), NBC Sports Boston, NBA, CBS Sports. Fotos: Jack O'Connell / The Sporting News y autores desconocidos (dominio público), vía Wikimedia Commons. Pizarra, anillos y trofeo: recreación.
 Música y efectos: Epidemic Sound

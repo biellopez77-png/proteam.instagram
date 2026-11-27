@@ -57,7 +57,7 @@ Guy Roux llegó al Auxerre en 1961 como entrenador-jugador, con el club en el f�
 
 ¿Qué estás construyendo tú en tu club que se vea dentro de diez años?
 
-Estamos terminando la app de ProTeam. Síguenos para no perderte nada: muy pronto, novedades.
+¿Te ha servido? Dale like y síguenos para más vídeos como este.
 
 Fuentes: UEFA.com, Wikipedia, Inside Futbol. Fotos (modificadas): Vicente Auxerre y BaDaJi_ArPiLuRe (CC BY-SA 3.0), Stan Wiechers (CC BY-SA 2.0) y Nicolas Richoffer (CC BY-SA 4.0), vía Wikimedia Commons. Escalera, pizarra y trofeos: dibujo.
 Música y efectos: Epidemic Sound

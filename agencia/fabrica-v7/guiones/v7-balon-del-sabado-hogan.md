@@ -58,7 +58,7 @@ En 1953, Hungría ganó 6-3 a Inglaterra en Wembley. Su seleccionador, Gusztáv 
 
 ¿Cuántos minutos de tu entrenamiento son con balón?
 
-Estamos terminando la app de ProTeam. Síguenos para no perderte nada: muy pronto, novedades.
+¿Te ha servido? Dale like y síguenos para más vídeos como este.
 
 Fuentes: The Irish Times (Frank McNally), These Football Times (Andrew Flint), Wikipedia. Fotos: autor desconocido (dominio público; National Football Museum y Spaarnestad Photo), Magyar Posta (dominio público), Tibor Erky-Nagy / Fortepan (CC BY-SA 3.0), Dr Neil Clifton (CC BY-SA 2.0), vía Wikimedia Commons. Marcador, armario, balón y campo: recreación.
 Música y efectos: Epidemic Sound

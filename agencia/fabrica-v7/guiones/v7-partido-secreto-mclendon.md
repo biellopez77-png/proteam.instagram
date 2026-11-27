@@ -59,7 +59,7 @@ El 12 de marzo de 1944, en Durham (Carolina del Norte), los Eagles del North Car
 
 ¿Cuándo fue la última vez que mezclaste a los de siempre con los que nunca juegan juntos?
 
-Estamos terminando la app de ProTeam. Síguenos para no perderte nada: muy pronto, novedades.
+¿Te ha servido? Dale like y síguenos para más vídeos como este.
 
 Fuentes: Scott Ellsworth (The New York Times Magazine, 1996, vía NCCU), The Chronicle (Duke), NC DNCR, Duke Today. Fotos: Jack Delano (dominio público, Library of Congress), Gregw824 (dominio público), RDUpedia (CC BY-SA 3.0), vía Wikimedia Commons. Calendario, silueta, pista, fichas y marcador: recreación.
 Música y efectos: Epidemic Sound

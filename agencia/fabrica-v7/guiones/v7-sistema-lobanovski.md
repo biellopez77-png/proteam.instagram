@@ -61,7 +61,7 @@ Valeri Lobanovski estudió ingeniería térmica en el Politécnico de Kiev. En u
 
 ¿Qué cuentas tú de tus jugadores después de cada partido?
 
-Estamos terminando la app de ProTeam. Síguenos para no perderte nada: muy pronto, novedades.
+¿Te ha servido? Dale like y síguenos para más vídeos como este.
 
 Fuentes: The Guardian (Jonathan Wilson; Barney Ronay), Engelsberg Ideas, Breaking the Lines, UEFA.com, Wikipedia. Fotos: Rob Croes y Rob Mieremet / Anefo, Nationaal Archief (CC0), vía Wikimedia Commons. Radiador, hoja de registro, campo y pizarra: recreación.
 Música y efectos: Epidemic Sound

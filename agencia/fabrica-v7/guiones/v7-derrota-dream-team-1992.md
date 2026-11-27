@@ -58,7 +58,7 @@ En 1992, preparando los Juegos en San Diego, el equipo de Jordan, Magic y Bird p
 
 Y tú, ¿has dejado alguna vez que tu equipo pierda para que aprenda?
 
-Estamos terminando la app de ProTeam. Síguenos para no perderte nada: muy pronto, novedades.
+¿Te ha servido? Dale like y síguenos para más vídeos como este.
 
 Fuentes: AP, Fox Sports, CBS Sports. Fotos: Ken Hackman (U.S. Air Force), Chad J. McNeeley (U.S. Navy) y William D. Moss (Department of Defense), dominio público; Keith Allison (CC BY-SA 2.0); vía Wikimedia Commons. Pase, marcador, banquillo y pizarra: recreación.
 Música y efectos: Epidemic Sound

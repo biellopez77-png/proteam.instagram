@@ -58,7 +58,7 @@ El Nottingham Forest de Brian Clough subió en 1977 con 52 puntos, de los ascens
 
 Y tú, ¿qué techo le has puesto a tu equipo sin darte cuenta?
 
-Estamos terminando la app de ProTeam. Síguenos para no perderte nada: muy pronto, novedades.
+¿Te ha servido? Dale like y síguenos para más vídeos como este.
 
 Fuentes: UEFA, FourFourTwo. Fotos: Hans van Dijk / Anefo (CC0), Alan Murray-Rust (CC BY-SA 2.0) y John Sutton (CC BY-SA 2.0), vía Wikimedia Commons. Copas, marcadores y tabla: recreación.
 Música y efectos: Epidemic Sound
