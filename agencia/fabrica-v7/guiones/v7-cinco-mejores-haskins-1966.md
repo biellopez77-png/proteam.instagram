@@ -12,8 +12,19 @@
 - NO decimos: amenazas o cartas posteriores, jugadas concretas (robos de Hill), la edad de Haskins ni nada sobre las intenciones de Rupp. Las fuentes leídas no lo sostienen o no hace falta.
 - «El quinteto se elige mirando la pista, no la grada» es la idea nuestra que cierra la historia, no una cita.
 
+## Revisión viral (27/11, `agencia/sistema-v7/GUION_VIRAL.md`)
+- **Distinción central:** elegir por la grada ≠ elegir por la pista.
+- **Hooks:**
+  1. (Sorpresa con dato) «Nunca se había visto en una final de la NCAA: cinco titulares negros.» ← elegido
+  2. (Error habitual) «Si eliges el quinteto pensando en la grada, ya has perdido algo.» ← reserva A/B
+  3. (Escena) «Kentucky sale con cinco blancos. Texas Western, con cinco negros.»
+- **Cambio:** la voz ya no empieza por «lugar, año»: abre con el gancho y el contexto va después. Mismos hechos y fuentes; ninguno nuevo.
+- **Escenas:** van en el orden de la voz. La escena del gancho (primera frase) se monta primero, con la foto o la palabra fuerte ya en el primer fotograma; el rótulo de lugar y fecha pasa a la segunda frase.
+- **Evaluación (44/50):** Gancho 4 · Promesa 4 · Desarrollo 5 · Ritmo 4 · Retención 4 · Originalidad 4 · Comprensión 5 · Valor 4 · Remate 5 · Coherencia 5.
+
 ## Voz (56 palabras, palabra por palabra)
-> Final de la NCAA, 1966. Kentucky, número uno, sale con cinco jugadores blancos. Don Haskins, de Texas Western, sale con cinco negros. Nunca se había hecho en una final. Él dijo: no pensé en eso. Puse a mis cinco mejores. Gana Texas Western, 72 a 65... El quinteto se elige mirando la pista, no la grada.
+
+> Nunca se había visto en una final de la NCAA: cinco titulares negros. 1966. Kentucky, número uno, sale con cinco blancos. Don Haskins, de Texas Western, con cinco negros. Él dijo: no pensé en eso. Puse a mis cinco mejores. Gana Texas Western, 72 a 65... El quinteto se elige mirando la pista, no la grada.
 
 Prompt ElevenLabs: `[confident, assured, steady storyteller tone, firm and calm]` + el texto, con «1966» escrito «mil novecientos sesenta y seis», «NCAA» como «ene ce a a» y «72 a 65» como «setenta y dos a sesenta y cinco». «Haskins» se lee «Jáskins»; «Western», «Uéstern»; «Kentucky», «Kentáki» (si la voz falla, escribirlo así en el prompt; en pantalla, siempre la grafía real). «Puse a mis cinco mejores» seco y lento, con un pequeño silencio antes. Pausa con «...» antes del remate. Ultravioleta #8B5CF6 una sola vez: en la palabra «PISTA».
 
@@ -52,7 +63,7 @@ Las fotos no implican que Haskins, Rupp, los jugadores, UTEP ni Kentucky apoyen 
 Nota para Marta: no hay en Commons foto con licencia clara de Don Haskins; su ficha se dibuja (silueta en línea, sin cara). La foto 2 es pequeña (301×415): usarla como ficha pequeña, no a pantalla completa. Nevil Shed no fue titular: va en el grupo como «del equipo», nunca rotulado como titular.
 
 ## Caption
-1966. Final de la NCAA. Un entrenador sacó cinco titulares que nadie había sacado nunca en una final.
+Nunca se había visto en una final de la NCAA: cinco titulares negros.
 
 Don Haskins, de Texas Western, salió con cinco jugadores negros contra el Kentucky de Adolph Rupp, número uno del país y con una plantilla toda blanca. Era la primera vez en una final de la NCAA. Ganó 72-65 y acabó la temporada 28-1. Su explicación: «No pensé en sacar a cinco chicos negros. Solo quería poner en la pista a mis cinco mejores» (UTEP; Sports Illustrated/AP, 2016).
 

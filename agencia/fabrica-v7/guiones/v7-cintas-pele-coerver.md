@@ -11,8 +11,19 @@
 - La idea: Wikipedia: «skill could not only be inherent with the young players but could also be passed on». SoccerWire: «skill was not simply innate, but could be taught». UEFA.com (fisio del Feyenoord, Gerard Meijer): «From the first day he was with us he taught the players technique». → Remate: «El regate no es solo un don: se enseña».
 - NO decimos: qué otros jugadores estudió además de Pelé (las fuentes no lo concretan); que inventara los regates (Ireland dice lo contrario); fechas exactas de cuándo empezó con las cintas; nombres de alumnos famosos ni que el método «fabricara» a nadie; que Cruyff apoyara el libro (solo aparece en la presentación).
 
-## Voz (58 palabras, palabra por palabra)
-> Mil novecientos setenta y cuatro. Wiel Coerver gana la Copa de la UEFA con el Feyenoord. Después se obsesiona con otra cosa: horas y horas de cintas de Pelé. Descompone cada regate en movimientos sueltos. En 1983 lo publica en un libro: plan de estudios para el futbolista ideal... El regate no es solo un don: se enseña.
+## Revisión viral (27/11, `agencia/sistema-v7/GUION_VIRAL.md`)
+- **Distinción central:** el regate como don ≠ el regate como método.
+- **Hooks:**
+  1. (Contradicción) «Ganó la Copa de la UEFA. Y después se obsesionó con las cintas de Pelé.» ← elegido
+  2. (Error habitual) ««Ese chaval regatea porque nació así». Un entrenador holandés pensó lo contrario.» ← reserva A/B
+  3. (Escena) «Horas y horas de cintas de Pelé, regate a regate.»
+- **Cambio:** la voz ya no empieza por «lugar, año»: abre con el gancho y el contexto va después. Mismos hechos y fuentes; ninguno nuevo.
+- **Escenas:** van en el orden de la voz. La escena del gancho (primera frase) se monta primero, con la foto o la palabra fuerte ya en el primer fotograma; el rótulo de lugar y fecha pasa a la segunda frase.
+- **Evaluación (43/50):** Gancho 4 · Promesa 4 · Desarrollo 4 · Ritmo 4 · Retención 4 · Originalidad 4 · Comprensión 5 · Valor 5 · Remate 4 · Coherencia 5.
+
+## Voz (54 palabras, palabra por palabra)
+
+> Ganó la Copa de la UEFA. Y después se obsesionó con las cintas de Pelé. Wiel Coerver, Feyenoord, 1974. Horas y horas de vídeo. Descompone cada regate en movimientos sueltos. En 1983 lo publica en un libro: un plan de estudios para el futbolista ideal... El regate no es solo un don: se enseña.
 
 Prompt ElevenLabs: `[confident, assured, steady storyteller tone, firm and calm]` + el texto. «Wiel Coerver» se lee «Vil Kúrver»; «Feyenoord», «Féyenord»; «1983», «mil novecientos ochenta y tres»; «UEFA», «uefa». Pausa con «...» antes de «El regate no es solo un don». Ultravioleta #8B5CF6 una sola vez: «SE ENSEÑA».
 
@@ -51,7 +62,7 @@ Las fotos no implican que Coerver, su familia, Pelé, Cruyff, Van Hanegem, el Fe
 Nota para Marta: no hay foto con licencia de las cintas, del televisor ni de la cubierta del libro: se dibujan y van rotuladas «recreación». En la foto 3 Coerver está en el centro: la ficha dice «W. COERVER · PRESENTACIÓN DEL LIBRO, 1983» y no se destaca a Cruyff. La pirámide de cuatro pisos resume la progresión que da Wikipedia (control del balón → pase y recepción → 1 contra 1 → finalización); no reproducir el archivo «Coerver pyramide.png» de Commons (logo de la marca). Descarga de Commons desde el sandbox de Higgsfield (desde nuestro contenedor la API da límite de peticiones).
 
 ## Caption
-Ganó una copa europea. Y después se encerró a ver cintas de Pelé.
+Ganó la Copa de la UEFA. Y después se obsesionó con las cintas de Pelé.
 
 En 1974, Wiel Coerver ganó la Copa de la UEFA con el Feyenoord contra el Tottenham (UEFA.com; NOS). Después analizó horas y horas de imágenes de grandes jugadores, con Pelé como inspiración, y codificó cada regate en movimientos que se pueden entrenar por pasos (Wikipedia; SoccerWire; Gary Ireland). En 1983 presentó su libro «Voetbal: leerplan voor de ideale voetballer», un plan de estudios para el futbolista ideal (Nationaal Archief).
 

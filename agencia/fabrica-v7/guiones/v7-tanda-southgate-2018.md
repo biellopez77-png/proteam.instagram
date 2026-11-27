@@ -12,8 +12,19 @@
 - «Lo que se entrena deja de ser lotería» es la idea que cerramos nosotros, no una cita: no se pone entre comillas ni se atribuye a Southgate.
 - NO decimos: lo de la botella de agua de Pickford ni lo de caminar desde el centro del campo (no lo pudimos leer en una fuente), quién falló o marcó cada penalti salvo lo que se ve, ni el resultado posterior del Mundial. Nada de Köpke ni de nombres alemanes.
 
-## Voz (53 palabras, palabra por palabra)
-> Euro 96. Gareth Southgate falla el penalti que elimina a Inglaterra. Veintidós años después, como seleccionador, entrena los penaltis con las piernas cansadas. Cada lanzador elige un sitio y confía en él. El portero le da el balón a cada uno. Mundial 2018: Inglaterra gana su primera tanda en un Mundial. Lo que se entrena... deja de ser lotería.
+## Revisión viral (27/11, `agencia/sistema-v7/GUION_VIRAL.md`)
+- **Distinción central:** suerte ≠ algo entrenado.
+- **Hooks:**
+  1. (Escena) «Falló el penalti que eliminó a Inglaterra en la Euro 96.» ← elegido
+  2. (Contradicción) «El que falló el penalti fue el que les enseñó a ganar la tanda.» ← reserva A/B
+  3. (Pregunta) «¿Entrenas los penaltis o los dejas a la suerte?»
+- **Cambio:** la voz ya no empieza por «lugar, año»: abre con el gancho y el contexto va después. Mismos hechos y fuentes; ninguno nuevo.
+- **Escenas:** van en el orden de la voz. La escena del gancho (primera frase) se monta primero, con la foto o la palabra fuerte ya en el primer fotograma; el rótulo de lugar y fecha pasa a la segunda frase.
+- **Evaluación (45/50):** Gancho 5 · Promesa 4 · Desarrollo 5 · Ritmo 4 · Retención 4 · Originalidad 4 · Comprensión 5 · Valor 4 · Remate 5 · Coherencia 5.
+
+## Voz (62 palabras, palabra por palabra)
+
+> Falló el penalti que eliminó a Inglaterra en la Euro 96. Veintidós años después, Gareth Southgate es el seleccionador. Entrena los penaltis con las piernas cansadas. Cada lanzador elige un sitio y confía en él. El portero le da el balón a cada uno. Mundial 2018: Inglaterra gana su primera tanda en un Mundial. Lo que se entrena... deja de ser lotería.
 
 Prompt ElevenLabs: `[confident, assured, steady storyteller tone, firm and calm]` + el texto. «Euro 96» se lee «Eurocopa del noventa y seis» si la voz lo lee raro (entonces cambiar también el rótulo, no la cifra). «2018», «dos mil dieciocho». «Southgate» en inglés, sin exagerar. Pausa con «...» antes de «deja de ser lotería». Ultravioleta #8B5CF6 una sola vez: «SE ENTRENA» en la última frase (ver tabla).
 
@@ -55,7 +66,7 @@ Las fotos no implican que Southgate, Pickford, Dier ni la selección inglesa apo
 Todas son CC BY-SA y se recortan y gradúan (obra derivada): se acredita autor y licencia en pantalla y en el caption. Commons no descarga desde nuestro contenedor: se baja en el sandbox de Higgsfield (Special:Redirect/file/… o thumb.php).
 
 ## Caption
-Falló el penalti que eliminó a su país. 22 años después, como seleccionador, convirtió los penaltis en un entrenamiento.
+Falló el penalti que eliminó a Inglaterra en la Euro 96.
 
 En la Euro 96, Gareth Southgate falló el penalti decisivo de la semifinal contra Alemania (UEFA). En 2018, ya seleccionador, Inglaterra llegaba con tres tandas perdidas de tres en los Mundiales. Su plan: penaltis con las piernas cansadas al final de los entrenamientos, cada lanzador con un sitio elegido y el portero, Pickford, dándole el balón a cada uno. Ganaron 4-3 a Colombia: su primera tanda ganada en un Mundial (Irish Times/The Guardian; ESPN).
 

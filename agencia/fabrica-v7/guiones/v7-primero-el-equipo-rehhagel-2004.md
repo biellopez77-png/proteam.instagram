@@ -13,6 +13,16 @@
 - Resultados: 2-1 a Portugal (anfitriona) en el partido inaugural; 1-0 a Francia en cuartos (Charisteas); 1-0 a Chequia en semifinales (Dellas, gol de plata, 105+1); 1-0 a Portugal en la final (Charisteas, 57'): UEFA.com; Sports Illustrated; Al Jazeera; The Irish Times.
 - NO decimos: la cuota de las casas de apuestas (las fuentes no coinciden: 150/1 en SI y UEFA, 250/1 en The Irish Times, 80/1 en Al Jazeera), que el gol de la final llegara de córner (no lo confirma ninguna fuente), ni frases de Rehhagel entre comillas como «moderno es lo que gana» (no está en nuestras fuentes).
 
+## Revisión viral (27/11, `agencia/sistema-v7/GUION_VIRAL.md`)
+- **Distinción central:** juntar a los mejores ≠ hacer un equipo.
+- **Hooks:**
+  1. (Sorpresa con dato) «Grecia nunca había ganado un partido en una Eurocopa ni en un Mundial.» ← elegido
+  2. (Decisión rara) «Su regla: la selección, antes que el club.» ← reserva A/B
+  3. (Contradicción) «Sin estrellas, ganó dos veces a Portugal en su propia Eurocopa.»
+- **Cambio:** ninguno en la voz: el gancho ya abre con el dato sorprendente.
+- **Escenas:** van en el orden de la voz. La escena del gancho (primera frase) se monta primero, con la foto o la palabra fuerte ya en el primer fotograma; el rótulo de lugar y fecha pasa a la segunda frase.
+- **Evaluación (42/50):** Gancho 5 · Promesa 4 · Desarrollo 4 · Ritmo 4 · Retención 4 · Originalidad 3 · Comprensión 5 · Valor 4 · Remate 4 · Coherencia 5.
+
 ## Voz (55 palabras, palabra por palabra)
 > Grecia nunca había ganado un partido en una Eurocopa ni en un Mundial. En 2001 llegó un alemán: Otto Rehhagel. Marcaje al hombre, orden atrás y balón parado. Y una regla: la selección, antes que el club. En 2004 ganó a Francia, a Chequia y dos veces a Portugal... Campeona de Europa. Primero, el equipo.
 

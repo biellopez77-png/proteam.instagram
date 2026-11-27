@@ -12,8 +12,19 @@
 - El remate («Tras una derrota, primero se junta al equipo») es la idea útil, no una cita de Popovich.
 - NO decimos: que perdieran el título esa noche (perdieron el sexto partido; el séptimo, después), lo que gastó, qué cenaron ni qué les dijo uno a uno; ni el dato de los 28,2 segundos (NBA.com lo da como inicio de la remontada, no lo usamos).
 
-## Voz (58 palabras, palabra por palabra)
-> Junio de 2013. Los Spurs están a cinco segundos del título. Ray Allen mete un triple y pierden el partido en la prórroga. Gregg Popovich grita: «¡Familia! Todos al restaurante». El de la celebración. Pide la cena y saluda a cada jugador en la puerta. Un año después, son campeones... Tras una derrota, primero se junta al equipo.
+## Revisión viral (27/11, `agencia/sistema-v7/GUION_VIRAL.md`)
+- **Distinción central:** perder ≠ dejar solo al equipo.
+- **Hooks:**
+  1. (Contradicción) «A cinco segundos del título, perdieron el partido. Y Popovich se los llevó a cenar.» ← elegido
+  2. (Escena) ««¡Familia! Todos al restaurante». Lo gritó después de perder la final.» ← reserva A/B
+  3. (Pregunta) «¿Qué haces con tu equipo la noche que lo pierde todo?»
+- **Cambio:** la voz ya no empieza por «lugar, año»: abre con el gancho y el contexto va después. Mismos hechos y fuentes; ninguno nuevo.
+- **Escenas:** van en el orden de la voz. La escena del gancho (primera frase) se monta primero, con la foto o la palabra fuerte ya en el primer fotograma; el rótulo de lugar y fecha pasa a la segunda frase.
+- **Evaluación (44/50):** Gancho 5 · Promesa 4 · Desarrollo 5 · Ritmo 4 · Retención 4 · Originalidad 4 · Comprensión 5 · Valor 4 · Remate 4 · Coherencia 5.
+
+## Voz (65 palabras, palabra por palabra)
+
+> A cinco segundos del título, perdieron el partido. Y Popovich se los llevó a cenar. Junio de 2013: Ray Allen mete un triple y los Spurs caen en la prórroga. Gregg Popovich grita: «¡Familia! Todos al restaurante». El de la celebración. Pide la cena y saluda a cada jugador en la puerta. Un año después, son campeones... Tras una derrota, primero se junta al equipo.
 
 Prompt ElevenLabs: `[confident, assured, steady storyteller tone, firm and calm]` + el texto. «2013» se lee «dos mil trece». «Spurs» se lee «spurs»; «Ray Allen» se lee «rei álen»; «Gregg Popovich» se lee «greg popóvich». «¡Familia!» con fuerza pero sin gritar de verdad (la voz no cambia de registro). Pausa con «...» antes del remate. Ultravioleta #8B5CF6 una sola vez: en «equipo» (última palabra).
 
@@ -51,7 +62,7 @@ No hay foto con licencia clara del restaurante ni del triple: se dibujan y van r
 Las fotos CC BY-SA se recortan y pasan a B/N con el azul (obra derivada, misma licencia): se acredita autor y licencia en pantalla y en el caption. La foto de la Casa Blanca no se recorta de forma que parezca un respaldo político ni a ProTeam: solo ilustra «campeones 2014». Calendario, marcador, pista, mesa, puerta y fichas: dibujados.
 
 ## Caption
-A cinco segundos del título, se le escapó. Esa noche, Popovich se llevó a su equipo a cenar.
+A cinco segundos del título, perdieron el partido. Y Popovich se los llevó a cenar.
 
 18 de junio de 2013: el triple de Ray Allen con 5,2 segundos y la prórroga dejan a los Spurs sin el título esa noche en Miami y obligan a un séptimo partido (NBA.com). Gregg Popovich tenía preparada la celebración en un restaurante. Según su asistente Brett Brown, su respuesta fue «¡Familia! Todos al restaurante». Pidió la cena y saludó a cada jugador en la puerta (ESPN, Baxter Holmes, 2019). Un año después, ganaron la final al mismo rival.
 

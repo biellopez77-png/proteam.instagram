@@ -12,8 +12,19 @@
 - Caption: DePaul ganó el NIT de 1945 con Mikan MVP (DePaul Athletics); la AP lo eligió mejor jugador de la primera mitad del siglo (Wikipedia). Frase de Meyer: «I was a slave driver, and he was a willing slave» (Sun-Times) — NO va en la voz ni en el caption (suena dura fuera de contexto).
 - NO decimos: cuántas horas ni cuántas repeticiones; ni que el ejercicio fuera de ganchos o de bandejas (las fuentes difieren: decimos «derecha, izquierda»); ni boxeo (solo una fuente habla del saco).
 
-## Voz (56 palabras, palabra por palabra)
-> 1942. Un chico de más de dos metros, con gafas gruesas, llega a DePaul. Es torpe. Su entrenador, Ray Meyer, lo pone a saltar a la comba. Le hace bailar. Y cada día, bajo el aro: derecha, izquierda, derecha, izquierda. Se llamaba George Mikan. Ganó siete títulos en nueve temporadas. El talento no se encuentra... se fabrica.
+## Revisión viral (27/11, `agencia/sistema-v7/GUION_VIRAL.md`)
+- **Distinción central:** encontrar el talento ≠ fabricarlo.
+- **Hooks:**
+  1. (Escena) «Era torpe, medía más de dos metros y llevaba gafas gruesas. Su entrenador lo puso a saltar a la comba.» ← elegido
+  2. (Decisión rara) «Para hacer un pívot, su entrenador le hizo bailar.» ← reserva A/B
+  3. (Sorpresa con dato) «El chico más torpe de DePaul acabó ganando siete títulos.»
+- **Cambio:** la voz ya no empieza por «lugar, año»: abre con el gancho y el contexto va después. Mismos hechos y fuentes; ninguno nuevo.
+- **Escenas:** van en el orden de la voz. La escena del gancho (primera frase) se monta primero, con la foto o la palabra fuerte ya en el primer fotograma; el rótulo de lugar y fecha pasa a la segunda frase.
+- **Evaluación (46/50):** Gancho 5 · Promesa 4 · Desarrollo 5 · Ritmo 5 · Retención 4 · Originalidad 4 · Comprensión 5 · Valor 4 · Remate 5 · Coherencia 5.
+
+## Voz (55 palabras, palabra por palabra)
+
+> Era torpe, medía más de dos metros y llevaba gafas gruesas. Su entrenador lo puso a saltar a la comba. DePaul, 1942. Ray Meyer también le hace bailar. Y cada día, bajo el aro: derecha, izquierda, derecha, izquierda. Se llamaba George Mikan. Ganó siete títulos en nueve temporadas. El talento no se encuentra... se fabrica.
 
 Prompt ElevenLabs: `[confident, assured, steady storyteller tone, firm and calm]` + el texto. «1942» se lee «mil novecientos cuarenta y dos»; «DePaul» se lee «di-pól»; «Meyer» se lee «máier»; «Mikan» se lee «máikan». Las cuatro palabras «derecha, izquierda…» con ritmo de bote, cada una con su pausa corta. Pausa con «...» antes del remate. Ultravioleta #8B5CF6 una sola vez: en «se fabrica».
 
@@ -57,7 +68,7 @@ Las fotos no implican que Mikan, Meyer, DePaul ni nadie apoye ProTeam.
 Alternativas: «Red Rolfe and Ray Meyer.jpg» (1942, dominio público) por si la de Meyer sale pequeña al recortar; «George Mikan 1948 Bowman.jpg» (cromo, dominio público). Silueta, regla, gafas, comba, pasos de baile, aro y trofeos: dibujados (no hay foto con licencia clara). Sin logos de DePaul, NBA ni Lakers.
 
 ## Caption
-Su entrenador lo puso a saltar a la comba. Acabó siendo el mejor jugador de medio siglo.
+Era torpe, medía más de dos metros y llevaba gafas gruesas. Su entrenador lo puso a saltar a la comba.
 
 En 1942, George Mikan llegó a DePaul con más de dos metros, gafas gruesas y fama de torpe. Ray Meyer lo hizo saltar a la comba, bailar para mejorar los pies y repetir cada día, bajo el aro, una mano y luego la otra: lo que hoy todos conocemos como «Mikan drill» (Sports Illustrated; Chicago Sun-Times; Wikipedia). Ganó el NIT de 1945 con DePaul y después siete títulos en nueve temporadas; la AP lo eligió mejor jugador de la primera mitad del siglo.
 

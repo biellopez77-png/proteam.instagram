@@ -15,8 +15,19 @@
 - Götze, sobre el Footbonaut: «I can only recommend it, it's something amazing» (Daily Post). Solo va en el caption.
 - NO decimos: la velocidad del balón (las fuentes no coinciden: 62 mph, 37–44 mph, 120 km/h), el precio, que mejorara tal o cual cifra, ni que el gol de Götze en la final de 2014 saliera de ahí (Bundesliga.com lo presenta como opinión: «there are those who feel»). Tampoco que fuera idea de Klopp (Daily Post: no se sabe qué papel tuvo).
 
-## Voz (59 palabras, palabra por palabra)
-> Dortmund, 2012. El equipo de Klopp entrena dentro de una jaula. Catorce por catorce metros y setenta y dos casillas. Una máquina dispara el balón, se enciende una casilla: controla y golpea. Klopp avisó: no marcarás veinte goles en vez de diez. Pero la técnica cambia de base. El primer control se entrena... con muchos balones y poco tiempo.
+## Revisión viral (27/11, `agencia/sistema-v7/GUION_VIRAL.md`)
+- **Distinción central:** más goles ≠ mejor técnica de base.
+- **Hooks:**
+  1. (Escena) «El Dortmund de Klopp entrenaba dentro de una jaula.» ← elegido
+  2. (Sorpresa con dato) «Setenta y dos casillas y una máquina que dispara balones.» ← reserva A/B
+  3. (Contradicción) «Klopp avisó: esto no te dará veinte goles en vez de diez.»
+- **Cambio:** la voz ya no empieza por «lugar, año»: abre con el gancho y el contexto va después. Mismos hechos y fuentes; ninguno nuevo.
+- **Escenas:** van en el orden de la voz. La escena del gancho (primera frase) se monta primero, con la foto o la palabra fuerte ya en el primer fotograma; el rótulo de lugar y fecha pasa a la segunda frase.
+- **Evaluación (44/50):** Gancho 5 · Promesa 4 · Desarrollo 4 · Ritmo 4 · Retención 4 · Originalidad 4 · Comprensión 5 · Valor 5 · Remate 4 · Coherencia 5.
+
+## Voz (58 palabras, palabra por palabra)
+
+> El Dortmund de Klopp entrenaba dentro de una jaula. 2012. Catorce por catorce metros y setenta y dos casillas. Una máquina dispara el balón, se enciende una casilla: controla y golpea. Klopp avisó: no marcarás veinte goles en vez de diez. Pero la técnica cambia de base. El primer control se entrena... con muchos balones y poco tiempo.
 
 Prompt ElevenLabs: `[confident, assured, steady storyteller tone, firm and calm]` + el texto. «2012» se lee «dos mil doce»; «Dortmund», «Dórtmund»; «Klopp», «Klop». Pausa con «...» antes de «con muchos balones». Ultravioleta #8B5CF6 una sola vez: «POCO TIEMPO».
 
@@ -56,7 +67,7 @@ Las fotos no implican que Klopp, Götze, el Borussia Dortmund ni el inventor apo
 Nota para Marta: la API de Commons estuvo limitada en este turno; si la descarga en Higgsfield falla, baja las fotos de una en una. La reserva de Götze (noviembre de 2013) ya es con el Bayern: úsala solo si la recortas sin camiseta reconocible.
 
 ## Caption
-El Dortmund de Klopp metió a sus jugadores en una jaula.
+El Dortmund de Klopp entrenaba dentro de una jaula.
 
 En 2012, el Borussia Dortmund empezó a entrenar con el Footbonaut, inventado en Berlín por Christian Güttler: un campo de 14 × 14 metros, 72 casillas en las paredes y ocho máquinas que lanzan balones. Sale un balón, se enciende una casilla y el jugador tiene que controlar y golpear ahí (BVB; Bundesliga.com; SHA Architekten). Klopp fue claro: no vas a marcar 20 goles en vez de 10, pero la formación técnica cambia de base (Ruhr Nachrichten, vía ingenieur.de). Götze: «Solo puedo recomendarlo» (Daily Post).
 

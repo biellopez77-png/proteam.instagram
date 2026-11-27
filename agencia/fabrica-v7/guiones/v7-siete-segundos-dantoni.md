@@ -11,8 +11,19 @@
 - Ni ellos se lo esperaban: «It surprised us. We didn't think we'd do all that. We were just trying to make the playoffs» (D'Antoni, ESPN, 2026).
 - NO decimos: que fuera una regla escrita ni que tirasen siempre en siete segundos (era un objetivo, una consigna); quién inventó el nombre «Seven Seconds or Less» (ninguna fuente lo fija); que ganasen el anillo (no lo ganaron); cifras de Nash no verificadas. La última frase («si tu idea cabe en un número…») es la lección del vídeo, no una cita de D'Antoni.
 
-## Voz (55 palabras, palabra por palabra)
-> Temporada 2004-05. Los Phoenix Suns vienen de ganar solo 29 partidos. Mike D'Antoni les da una consigna: tirar en los primeros siete segundos, antes de que la defensa se coloque. Steve Nash corre; la pelota vuela. Ganan 62 de 82. Ni ellos se lo esperaban... Si tu idea cabe en un número, tu equipo la recuerda.
+## Revisión viral (27/11, `agencia/sistema-v7/GUION_VIRAL.md`)
+- **Distinción central:** muchas consignas ≠ una idea que cabe en un número.
+- **Hooks:**
+  1. (Decisión rara) «Una sola consigna para todo el equipo: tirar en los primeros siete segundos.» ← elegido
+  2. (Sorpresa con dato) «De ganar 29 partidos a ganar 62, con una sola consigna.» ← reserva A/B
+  3. (Pregunta) «¿Tu idea de juego cabe en un número?»
+- **Cambio:** la voz ya no empieza por «lugar, año»: abre con el gancho y el contexto va después. Mismos hechos y fuentes; ninguno nuevo.
+- **Escenas:** van en el orden de la voz. La escena del gancho (primera frase) se monta primero, con la foto o la palabra fuerte ya en el primer fotograma; el rótulo de lugar y fecha pasa a la segunda frase.
+- **Evaluación (44/50):** Gancho 5 · Promesa 4 · Desarrollo 4 · Ritmo 4 · Retención 4 · Originalidad 4 · Comprensión 5 · Valor 4 · Remate 5 · Coherencia 5.
+
+## Voz (58 palabras, palabra por palabra)
+
+> Una sola consigna: tirar en los primeros siete segundos. Los Phoenix Suns venían de ganar solo 29 partidos. Temporada 2004-05: Mike D'Antoni les pide tirar antes de que la defensa se coloque. Steve Nash corre; la pelota vuela. Ganan 62 de 82. Ni ellos se lo esperaban... Si tu idea cabe en un número, tu equipo la recuerda.
 
 Prompt ElevenLabs: `[confident, assured, steady storyteller tone, firm and calm]` + el texto. «2004-05» se lee «dos mil cuatro, dos mil cinco»; «29», «veintinueve»; «62 de 82», «sesenta y dos de ochenta y dos». Nombres en inglés y sin exagerar: Phoenix Suns, Mike D'Antoni («dántoni»), Steve Nash. «Steve Nash corre; la pelota vuela» con algo más de ritmo. Pausa con «...» antes de «Si tu idea cabe en un número». Ultravioleta #8B5CF6 una sola vez: el «7» de la última escena.
 
@@ -52,7 +63,7 @@ Foto 3: la API de Commons cortó las consultas (429) antes de leer la ficha comp
 Las fotos CC BY-SA se recortan y gradúan (obra derivada): se acredita autor y licencia en pantalla y en el caption. Commons no descarga desde nuestro contenedor: se baja en el sandbox de Higgsfield (Special:Redirect/file/…).
 
 ## Caption
-Un equipo de 29 victorias recibió una sola consigna: tirar en los primeros siete segundos.
+Una sola consigna para todo el equipo: tirar en los primeros siete segundos.
 
 En 2004-05, Mike D'Antoni pidió a los Phoenix Suns buscar el tiro en los primeros segundos de la posesión, antes de que la defensa se colocara (ESPN, 2026; theScore). Venían de un 29-53; con Steve Nash acabaron 62-20, el mejor balance de la NBA (NBA.com; Wikipedia). D'Antoni lo reconoce: «Nos sorprendió. Solo queríamos llegar a playoffs» (ESPN, 2026).
 

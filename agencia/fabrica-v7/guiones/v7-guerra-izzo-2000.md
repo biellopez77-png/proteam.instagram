@@ -11,8 +11,19 @@
 - Contexto (caption, no voz): Michigan State lideró la Big Ten en rebote en cuatro de las cinco primeras temporadas de Izzo (ESPN, 2000).
 - NO decimos: que llevaran cascos todos los días (la guerra era diaria; las protecciones, ocasionales), que el ejercicio les diera el título, ni detalles del origen con el equipo de fútbol americano de la universidad (las fuentes no coinciden en el año). Tampoco que Izzo siga haciéndolo con protecciones.
 
-## Voz (55 palabras, palabra por palabra)
-> A mitad de temporada, los jugadores de Tom Izzo llegaron al entreno y encontraron cascos y hombreras de fútbol americano. Era baloncesto. Diez jugadores, un balón y una regla: no hay reglas. Lo llamaban «la guerra», y era a diario. Ese año, Michigan State fue campeona nacional. El rebote no es de centímetros... se entrena.
+## Revisión viral (27/11, `agencia/sistema-v7/GUION_VIRAL.md`)
+- **Distinción central:** rebotear por altura ≠ rebotear por hábito.
+- **Hooks:**
+  1. (Escena) «Llegaron al entreno de baloncesto y encontraron cascos y hombreras de fútbol americano.» ← elegido
+  2. (Decisión rara) «Diez jugadores, un balón y una regla: no hay reglas.» ← reserva A/B
+  3. (Contradicción) «El equipo que más reboteaba no era el más alto.»
+- **Cambio:** la voz ya no empieza por «lugar, año»: abre con el gancho y el contexto va después. Mismos hechos y fuentes; ninguno nuevo.
+- **Escenas:** van en el orden de la voz. La escena del gancho (primera frase) se monta primero, con la foto o la palabra fuerte ya en el primer fotograma; el rótulo de lugar y fecha pasa a la segunda frase.
+- **Evaluación (45/50):** Gancho 5 · Promesa 4 · Desarrollo 4 · Ritmo 5 · Retención 4 · Originalidad 4 · Comprensión 5 · Valor 4 · Remate 5 · Coherencia 5.
+
+## Voz (51 palabras, palabra por palabra)
+
+> Los jugadores de Tom Izzo llegaron al entreno y encontraron cascos y hombreras de fútbol americano. Era baloncesto. Diez jugadores, un balón y una regla: no hay reglas. Lo llamaban «la guerra», y era a diario. Ese año, Michigan State fue campeona nacional. El rebote no es de centímetros... se entrena.
 
 Prompt ElevenLabs: `[confident, assured, steady storyteller tone, firm and calm]` + el texto. «Tom Izzo» se lee «Tom Ízo»; «Michigan State», en inglés y sin exagerar. «Era baloncesto», corto y seco, con media pausa antes. Pausa con «...» antes de «se entrena». Ultravioleta #8B5CF6 una sola vez: «SE ENTRENA» en la última frase.
 
@@ -52,7 +63,7 @@ Las fotos no implican que Tom Izzo, Michigan State, la Marina ni ningún jugador
 Las fotos de dominio público se recortan y gradúan igual. Si se usa una reserva CC BY o CC BY-SA, se acredita autor y licencia («modificada») en pantalla y en el caption. Commons no descarga desde nuestro contenedor: se baja en el sandbox de Higgsfield (Special:Redirect/file/…, con User-Agent propio y pausas: Commons limita peticiones).
 
 ## Caption
-A mitad de temporada, sus jugadores llegaron al entreno de baloncesto y encontraron cascos y hombreras de fútbol americano.
+Llegaron al entreno de baloncesto y encontraron cascos y hombreras de fútbol americano.
 
 Tom Izzo tenía en Michigan State un ejercicio diario de rebote llamado «War» (la guerra): cinco contra cinco, un solo balón y, en sus palabras, «no hay reglas» (ESPN, 2000; Grantland, 2014). En la temporada 1999-2000, al ver al equipo relajado en el rebote, lo hicieron con protecciones de fútbol americano. Ese mismo año, Michigan State fue campeona nacional (MSU Athletics; Sports Illustrated).
 

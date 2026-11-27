@@ -13,8 +13,19 @@
 - NO decimos: la hora exacta según ESPN («one minute past midnight on the 14th», contradice al resto; usamos 12:03 de SI, NPR, UMD y Wikipedia), cifras de público, la distancia de la nota de AP (que SI dice que estaba mal) ni nada de los años siguientes.
 - «La temporada empieza el primer minuto que te dejan» es la idea nuestra que cierra la historia, no una cita.
 
-## Voz (59 palabras, palabra por palabra)
-> 15 de octubre de 1971. La NCAA deja empezar ese día. Lefty Driesell no espera a la mañana: a las doce y tres de la noche, su equipo corre una milla en el estadio. Sin focos: solo los faros de unos coches. Cientos de estudiantes miran. Nace la Midnight Madness... La temporada empieza el primer minuto que te dejan.
+## Revisión viral (27/11, `agencia/sistema-v7/GUION_VIRAL.md`)
+- **Distinción central:** esperar a la mañana ≠ empezar el primer minuto.
+- **Hooks:**
+  1. (Sorpresa con dato) «Su equipo empezó la temporada a las doce y tres de la noche.» ← elegido
+  2. (Escena) «Sin focos: solo los faros de unos coches. Y su equipo corriendo una milla.» ← reserva A/B
+  3. (Pregunta) «¿Cuándo empieza de verdad tu temporada?»
+- **Cambio:** la voz ya no empieza por «lugar, año»: abre con el gancho y el contexto va después. Mismos hechos y fuentes; ninguno nuevo.
+- **Escenas:** van en el orden de la voz. La escena del gancho (primera frase) se monta primero, con la foto o la palabra fuerte ya en el primer fotograma; el rótulo de lugar y fecha pasa a la segunda frase.
+- **Evaluación (43/50):** Gancho 5 · Promesa 4 · Desarrollo 4 · Ritmo 4 · Retención 4 · Originalidad 4 · Comprensión 5 · Valor 4 · Remate 4 · Coherencia 5.
+
+## Voz (64 palabras, palabra por palabra)
+
+> Su equipo empezó la temporada a las doce y tres de la noche. 15 de octubre de 1971: la NCAA deja empezar ese día. Lefty Driesell no espera a la mañana. Su equipo corre una milla en el estadio, sin focos: solo los faros de unos coches. Cientos de estudiantes miran. Nace la Midnight Madness... La temporada empieza el primer minuto que te dejan.
 
 Prompt ElevenLabs: `[confident, assured, steady storyteller tone, firm and calm]` + el texto, con «15 de octubre de 1971» escrito «quince de octubre de mil novecientos setenta y uno» y «NCAA» como «ene ce a a». «Lefty Driesell» se lee «Léfti Dráisel»; «Midnight Madness», «Mídnait Mádnes» (si la voz falla, escribirlo así en el prompt; en pantalla, siempre la grafía real). «Sin focos» seco, con un pequeño silencio después. Pausa con «...» antes del remate. Ultravioleta #8B5CF6 una sola vez: en la palabra «MINUTO».
 
@@ -54,7 +65,7 @@ Las fotos no implican que Driesell, la Universidad de Maryland ni la NCAA apoyen
 Nota para Marta: no hay foto de la carrera de 1971 con licencia clara (la de Maryland Today es «Courtesy of University Archives», sin licencia: no se usa). La pista, los faros y los jugadores se dibujan sobre la postal del estadio. La foto 2 es de c. 1975, no de la noche de 1971: rótulo pequeño «Byrd Stadium, c. 1975». La foto 3 es pequeña: como portada de tamaño medio, no a pantalla completa. El cronómetro es CC BY 4.0: va en los créditos con el nombre del autor y «modificada».
 
 ## Caption
-Maryland, 1971. Un entrenador no quiso esperar a la mañana para empezar la temporada.
+Su equipo empezó la temporada a las doce y tres de la noche.
 
 La NCAA no dejaba entrenar hasta el 15 de octubre. Lefty Driesell puso a su equipo a correr una milla a las 12:03 de esa noche, en la pista del estadio, con las luces apagadas y solo los faros de unos coches. Según Sports Illustrated, quien no bajaba de seis minutos tenía que repetirla otro día. Cientos de estudiantes fueron a mirar y de ahí nació la Midnight Madness. Driesell: «Solo quería adelantarme en los entrenamientos» (SI, 2014; NPR, 2024).
 

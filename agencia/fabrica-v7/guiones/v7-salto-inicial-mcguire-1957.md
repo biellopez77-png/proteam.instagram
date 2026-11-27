@@ -14,8 +14,19 @@
 - NO decimos: quién ganó el salto inicial (las fuentes leídas no lo dicen), que Kearns fuera «el más bajo» del equipo, ni una altura exacta de Chamberlain.
 - «Si no puedes ganar el salto, gana la cabeza» es la idea nuestra que cierra la historia, no una cita.
 
-## Voz (59 palabras, palabra por palabra)
-> Final de la NCAA, 1957. Kansas tiene a Wilt Chamberlain: más de dos metros diez. Para el salto inicial, Frank McGuire manda a Tommy Kearns: uno ochenta. Sabía que ese balón estaba perdido. Quería sorprenderles. Después, tres hombres siempre encima de Chamberlain. North Carolina gana en triple prórroga, por un punto... Si no puedes ganar el salto, gana la cabeza.
+## Revisión viral (27/11, `agencia/sistema-v7/GUION_VIRAL.md`)
+- **Distinción central:** ganar el salto ≠ ganar el partido.
+- **Hooks:**
+  1. (Decisión rara) «Contra un pívot de más de dos diez, mandó al salto a uno de uno ochenta.» ← elegido
+  2. (Contradicción) «Regaló el primer balón de la final a propósito.» ← reserva A/B
+  3. (Escena) «Wilt Chamberlain frente a Tommy Kearns, en el salto inicial.»
+- **Cambio:** la voz ya no empieza por «lugar, año»: abre con el gancho y el contexto va después. Mismos hechos y fuentes; ninguno nuevo.
+- **Escenas:** van en el orden de la voz. La escena del gancho (primera frase) se monta primero, con la foto o la palabra fuerte ya en el primer fotograma; el rótulo de lugar y fecha pasa a la segunda frase.
+- **Evaluación (45/50):** Gancho 5 · Promesa 4 · Desarrollo 5 · Ritmo 4 · Retención 4 · Originalidad 5 · Comprensión 5 · Valor 4 · Remate 4 · Coherencia 5.
+
+## Voz (65 palabras, palabra por palabra)
+
+> Contra un pívot de más de dos diez, mandó al salto a uno de uno ochenta. Final de la NCAA, 1957. Kansas tiene a Wilt Chamberlain. Frank McGuire manda a Tommy Kearns. Sabía que ese balón estaba perdido: quería sorprenderles. Después, tres hombres siempre encima de Chamberlain. North Carolina gana en triple prórroga, por un punto... Si no puedes ganar el salto, gana la cabeza.
 
 Prompt ElevenLabs: `[confident, assured, steady storyteller tone, firm and calm]` + el texto, con «1957» escrito «mil novecientos cincuenta y siete» y «NCAA» como «ene ce a a». «Chamberlain» se lee «Chéimberlein»; «McGuire», «Macguáier»; «Kearns», «Kerns» (si la voz falla, escribirlo así en el prompt; en pantalla, siempre la grafía real). «Uno ochenta» seco, con un pequeño silencio antes. Pausa con «...» antes del remate. Ultravioleta #8B5CF6 una sola vez: en la palabra «CABEZA».
 
@@ -55,7 +66,7 @@ Las fotos no implican que Chamberlain, McGuire, Kearns, North Carolina ni Kansas
 Nota para Marta: no hay en Commons foto con licencia clara de Chamberlain en Kansas ni del salto inicial de 1957; la foto 1 es de 1959 y lleva el rótulo «foto de 1959». El salto, la pista, las reglas de altura, la pizarra y el marcador se dibujan. La foto 4 es una página de programa: usar solo la foto del equipo y el titular, sin logotipos de la NCAA en grande.
 
 ## Caption
-Final de la NCAA de 1957. Contra un gigante de más de 2,10, el entrenador mandó al salto inicial a un base de 1,80.
+Contra un pívot de más de dos diez, mandó al salto a uno de uno ochenta.
 
 Frank McGuire, de North Carolina, sabía que el primer balón era de Wilt Chamberlain. Por eso envió a Tommy Kearns: «Sabíamos que no íbamos a ganar el salto, así que quizá podíamos sorprenderles» (KU Sports, 2007). Después defendió a Chamberlain con tres hombres encima. Chamberlain hizo 23 puntos, pero North Carolina ganó 54-53 en triple prórroga y cerró la temporada 32-0 (Lawrence Journal-World, 1957; Sports Illustrated, 1993).
 
