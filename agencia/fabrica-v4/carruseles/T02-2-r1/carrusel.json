@@ -1,0 +1,95 @@
+{
+ "numero": "Nº 00",
+ "seccion": "Nadie llega",
+ "formato": "carrusel",
+ "laminas": [
+  {
+   "tipo": "palabra",
+   "palabra": "NADIE",
+   "foto": "JUGADOR_CARRERA_FOTO_001",
+   "fig": "Fig. 1 — Miércoles. Presión alta.",
+   "hora": "MIÉ",
+   "serif": "Y nadie llega al balón.",
+   "size": 290,
+   "left": 30
+  },
+  {
+   "tipo": "figuras",
+   "letras": "D · M · X",
+   "figs": [
+    {
+     "foto": "JUGADOR_DUELO_FOTO_001",
+     "lab": "Fig. 2 — Domingo, 11:00.\nPartido."
+    },
+    {
+     "foto": "INSTALACION_CAMPO_ENTRENAMIENTO_FOTO_001",
+     "lab": "Fig. 3 — Martes, 19:00.\nVeinte vueltas."
+    },
+    {
+     "foto": "JUGADOR_CARRERA_FOTO_001",
+     "lab": "Fig. 4 — Miércoles.\nNadie llega."
+    }
+   ],
+   "size": 230,
+   "left": 40
+  },
+  {
+   "tipo": "portada",
+   "l1": "¿ACTITUD?",
+   "serif": "Y no cuadra:",
+   "l2": "EL LUNES, BIEN.",
+   "fotos": [
+    "STAFF_CHARLA_ENTRENAMIENTO_FOTO_001",
+    "INSTALACION_CAMPO_ENTRENAMIENTO_FOTO_001",
+    "JUGADOR_CARRERA_FOTO_001"
+   ],
+   "cap": "El lunes nadie se quejaba de nada.",
+   "size": 130
+  },
+  {
+   "tipo": "frase",
+   "foto": "STAFF_CHARLA_ENTRENAMIENTO_FOTO_001",
+   "pos": "50% 50%",
+   "pre": "El martes lo escribiste el domingo,",
+   "serif": "con el enfado\ntodavía puesto.",
+   "uv": true,
+   "size": 130,
+   "uvW": 560
+  },
+  {
+   "tipo": "dentro",
+   "palabra": "56 h",
+   "foto": "INSTALACION_CAMPO_ENTRENAMIENTO_FOTO_001",
+   "serif": "del partido al martes.",
+   "cap": "Ejemplo: domingo 11:00 → martes 19:00.\nCon futbolistas, a las 72 h aún no del todo\nrecuperados (Silva et al., 2018).",
+   "size": 330,
+   "top": 400,
+   "serifSize": 110
+  },
+  {
+   "tipo": "final",
+   "cap": "Para llevarte",
+   "serif": "Mismo ejercicio, otro día:",
+   "big": "CAMBIA\nEL ORDEN.",
+   "bigLines": 2,
+   "size": 150,
+   "lista": [
+    "Martes: balón y ritmo suave.",
+    "Miércoles: la presión de verdad.",
+    "Viernes: corto."
+   ],
+   "firma": "el miércoles también se entrena el martes."
+  },
+  {
+   "tipo": "cierre",
+   "foto": "EQUIPO_PINA_CAMPO_FOTO_001",
+   "pos": "50% 50%",
+   "pre": "Fin de la página",
+   "serif": "¿Te ha servido?",
+   "big": "DALE LIKE",
+   "resto": "y síguenos para más contenido\ncomo este.",
+   "size": 200,
+   "serifSize": 120
+  }
+ ]
+}
