@@ -129,7 +129,7 @@ svg .dr{fill:none;stroke-linecap:round;stroke-linejoin:round}
 const $=i=>document.getElementById(i), cl=x=>Math.min(1,Math.max(0,x)), P=(t,a,b)=>cl((t-a)/(b-a)), eo=x=>1-Math.pow(1-x,3), eio=x=>x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2;
 const W=window.WORDS, T=k=>W[k][1], E=k=>W[k][2];
 const NS='http://www.w3.org/2000/svg', mk=(tag,at,par)=>{const e=document.createElementNS(NS,tag);for(const k in at)e.setAttribute(k,at[k]);par&&par.appendChild(e);return e};
-const OUT=21.45;
+const OUT=22.5;   // r3: remate entero y quieto de 21,3 a 22,2 s; se apaga 22,2–22,5 y entra el fundido de 0,5 s a outro2
 const L=[];
 function line(id,tokens){const el=$(id);for(const [txt,k,cls,st] of tokens){const s=document.createElement('span');s.className='w '+(cls||'');s.textContent=txt;if(st)s.style.cssText=st;el.appendChild(s);L.push([s,T(k)])}}
 const SM='font-family:S;font-weight:400;font-size:84px;color:#F4F7FB';
@@ -174,7 +174,7 @@ fly(3.5,1700,940,1.0); tl.to(cam,{cy:1000,duration:1.9,ease:'sine.out'},4.4);
 tl.to(cam,{cy:1230,duration:1.9,ease:'sine.inOut'},6.3); tl.to(cam,{z:1.02,cy:1260,duration:1.7,ease:'sine.out'},8.2);
 fly(9.95,540,3020,1.0); tl.to(cam,{z:1.03,cy:3050,duration:2.2,ease:'sine.out'},10.85);
 fly(13.08,1700,2960,1.0); tl.to(cam,{z:1.02,cy:3000,duration:4.6,ease:'sine.out'},13.98);
-tl.to(cam,{z:1.05,cy:3020,duration:2.9,ease:'sine.out'},18.6);
+tl.to(cam,{z:1.05,cy:3020,duration:2.4,ease:'sine.out'},18.6);   // r3: la cámara se para a 21,0 s, antes de «mejor»
 // grano
 const g=$('grain').getContext('2d'),gi=g.createImageData(360,640);let sd=1;const RN=()=>(sd=(sd*16807)%2147483647)/2147483647;
 function camAt(t){tl.seek(t,false);return [cam.cx,cam.cy,cam.z]}
@@ -226,6 +226,8 @@ window.frame=function(t){window._t=t;
  const sx=eo(P(t,T(52)-.25,T(52)+.3));$('six').style.opacity=sx;$('six').style.transform=`translateY(${(1-sx)*60}px) scale(${.92+.08*sx})`;$('six').style.filter=sx<1?`blur(${(1-sx)*8}px)`:'none';
  const uv=eio(P(t,T(54)-.1,T(54)+.4));$('six').style.color=hex('#F4F7FB','#8B5CF6',uv);if(sx>=1)$('six').style.filter=uv>0?`drop-shadow(0 0 ${40*uv}px rgba(139,92,246,${.55*uv}))`:'none';
  const cr=eo(P(t,T(56),T(56)+.5));$('cred').style.opacity=cr;
+ // r3: el remate se apaga entero antes del cierre (22,2–22,5 s), sin pisarse con el logo
+ const fin=1-eio(P(t,OUT-.3,OUT));$('l18').style.opacity=fin;$('l19').style.opacity=fin;$('six').style.opacity=sx*fin;$('cred').style.opacity=cr*fin;
  // viaje 9,95 s: la escena 1 ya no se ve (se apaga fuera de cuadro) y la 2 se funde 0,3 s al salir
  const k1=1-P(t,6,6.2),B1={l1:1,l2:1,l3:1,l4:1,bench:1,printA:pa,tagA:ta,ram:rm,tagR:tr,star:eo(st)};for(const id in B1)$(id).style.opacity=B1[id]*k1;
  const off2=1-P(t,9.97,10.27);for(const id of ['l7','l8','l9','l10','l11','court'])$(id).style.opacity=(id==='court'?co:1)*off2;
