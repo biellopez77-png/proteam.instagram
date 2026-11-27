@@ -18,7 +18,7 @@ html,body{width:1080px;background:var(--bg);overflow:hidden;color:var(--ink);fon
 .rule{position:absolute;left:64px;right:64px;height:2px;background:#1d2947}
 .cap{font:400 26px M;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);line-height:1.6}
 .serif{font-family:S;font-style:italic;font-weight:400;line-height:1.02}
-.big{font-weight:800;letter-spacing:-.05em;word-spacing:.12em;line-height:.84;white-space:nowrap}
+.big{font-weight:800;letter-spacing:-.05em;word-spacing:.12em;line-height:var(--lh,.84);white-space:nowrap}
 .ph{background-size:cover;background-position:center}
 .lab{font:400 21px M;letter-spacing:.1em;color:var(--mut);text-transform:uppercase;margin-top:14px;line-height:1.5}
 .uvline{position:absolute;height:12px;background:var(--uv);box-shadow:0 0 40px 6px rgba(139,92,246,.55)}
@@ -93,13 +93,23 @@ const T={
      ${(p.lista||[]).map((t,i)=>`<div class="item"><span class="n">${String(i+1).padStart(2,'0')}</span><span class="t">${esc(t)}</span></div>`).join('')}
      <div style="border-top:2px solid #1d2947"></div></div>
    ${p.firma?`<div class="a" style="left:64px;bottom:120px;font:800 54px J;letter-spacing:-.04em">ProTeam <span class="serif" style="font-weight:400;font-size:46px;color:var(--ice);letter-spacing:0">${esc(p.firma)}</span></div>`:''}</div>`},
+ // Última lámina del carrusel (PLAN.md, Fase 1): «¿Te ha servido? Dale like y síguenos para más contenido como este».
+ // {foto?, pos?, pre, serif, big, resto, size, serifSize}
+ cierre(p,h){const y=h>1500?820:560,s=p.size||190,ss=p.serifSize||120;
+   return `<div class="a" style="inset:0">
+   ${p.foto?`<div class="a ph" style="left:0;right:0;top:0;height:${y-40}px;background-image:url(${p.foto});background-position:${p.pos||'50% 50%'}"></div>
+   <div class="a" style="left:0;right:0;top:0;height:${y-40}px;background:linear-gradient(180deg,rgba(2,5,15,.8) 0%,rgba(2,5,15,.2) 30%,rgba(2,5,15,1) 100%)"></div>`:''}
+   <div class="a cap" style="left:64px;top:${y-50}px;color:var(--ice)">${esc(p.pre)}</div>
+   <div class="a serif" style="left:64px;right:64px;top:${y}px;font-size:${ss}px">${esc(p.serif)}</div>
+   <div class="a big" style="left:52px;top:${y+ss*1.15}px;font-size:${s}px">${esc(p.big)}</div>
+   <div class="a serif" style="left:64px;right:64px;top:${y+ss*1.15+s*.86+40}px;font-size:${p.restoSize||70}px;color:var(--ice)">${esc(p.resto)}</div></div>`},
  // Story: pregunta escrita como titular. {foto, big, serif, cap, size}
  pregunta(p,h){return `<div class="a" style="inset:0">
    <div class="a ph" style="left:0;right:0;top:0;height:${h*.56}px;background-image:url(${p.foto});background-position:${p.pos||'50% 50%'}"></div>
    <div class="a" style="left:0;right:0;top:0;height:${h*.56}px;background:linear-gradient(180deg,rgba(2,5,15,.75) 0%,rgba(2,5,15,0) 25%,rgba(2,5,15,1) 100%)"></div>
    <div class="a cap" style="left:64px;top:${h*.5}px;color:var(--ice)">${esc(p.cap)}</div>
-   <div class="a big" style="left:${p.left??52}px;top:${h*.5+70}px;font-size:${p.size||190}px">${esc(p.big)}</div>
-   <div class="a serif" style="left:64px;right:64px;top:${h*.5+70+(p.size||190)*(p.bigLines||1)*.86+20}px;font-size:${p.serifSize||120}px">${esc(p.serif)}</div></div>`},
+   <div class="a big" style="--lh:${p.lh||.84};left:${p.left??52}px;top:${h*.5+70}px;font-size:${p.size||190}px">${esc(p.big)}</div>
+   <div class="a serif" style="left:64px;right:64px;top:${h*.5+70+(p.size||190)*(p.bigLines||1)*((p.lh||.84)+.02)+20}px;font-size:${p.serifSize||120}px">${esc(p.serif)}</div></div>`},
  // Story de encuesta: titular arriba y hueco limpio para pegar el sticker a mano. {pre, big, serif, foto, size}
  encuesta(p,h){return `<div class="a" style="inset:0">
    ${p.foto?`<div class="a ph" style="left:0;right:0;bottom:0;height:${h*.3}px;background-image:url(${p.foto});background-position:${p.pos||'50% 50%'}"></div><div class="a" style="left:0;right:0;bottom:0;height:${h*.3}px;background:linear-gradient(180deg,rgba(2,5,15,1) 0%,rgba(2,5,15,.25) 60%,rgba(2,5,15,.6) 100%)"></div>`:''}

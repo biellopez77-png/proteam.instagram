@@ -1,0 +1,28 @@
+{
+ "numero": "Nº 00",
+ "seccion": "El parón",
+ "formato": "story",
+ "laminas": [
+  {
+   "tipo": "pregunta",
+   "foto": "EQUIPO_ENTRENAMIENTO_PETOS_FOTO_001",
+   "pos": "50% 50%",
+   "cap": "Antes del parón de Navidad",
+   "big": "¿QUÉ LES\nDEJAS?",
+   "bigLines": 2,
+   "serif": "para los días de vacaciones.",
+   "size": 170,
+   "serifSize": 96,
+   "lh": 1.0
+  },
+  {
+   "tipo": "encuesta",
+   "pre": "La semana de vuelta",
+   "big": "ENERO:",
+   "serif": "¿cargas fuerte o\npretemporada corta?",
+   "foto": "EQUIPO_ENTRENAMIENTO_INVIERNO_BARCA_FOTO_001",
+   "size": 220,
+   "serifSize": 100
+  }
+ ]
+}

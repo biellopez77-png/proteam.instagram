@@ -4,7 +4,7 @@
 Fuentes en agencia/fabrica-v4/carruseles/<ID>/:
   carrusel.json {"numero":"Nº 00","seccion":"…","formato":"carrusel","laminas":[{"tipo":…}, …]}
   stories.json  {"numero":"Nº 00","seccion":"…","formato":"story","laminas":[…]}
-Tipos (ver lamina.html): palabra, dentro, figuras, frase (uv:true una vez por carrusel), portada, final, pregunta, encuesta.
+Tipos (ver lamina.html): palabra, dentro, figuras, frase (uv:true una vez por carrusel), portada, final, cierre, pregunta, encuesta.
 Fotos: nombre del banco sin 'PROTEAM_' ni '.jpg'. Duotono azul y créditos como en build.py (mismo inventario y mismas reglas de licencia).
 Salida: <ID>/png/<ID>-c1.png … y <ID>-s1.png, <ID>-s2.png."""
 import sys, os, json
