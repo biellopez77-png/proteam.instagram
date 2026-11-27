@@ -4,7 +4,7 @@ Música real (Epidemic: «Musical, Loop, Logo, Orchestra, Epic, Dreamy, Suspense
 Base: tools/reel_v7/wooden/mix.py y v7-techo-forest-clough/mix.py.
 python3 mix.py voz.mp3 outro2.mp4 out.wav   (necesita words.json con los tiempos de wt.py)"""
 import sys, json, subprocess, numpy as np
-SR = 48000; OUT = 24.58; DUR = OUT + 4.0   # la voz acaba en 23,98 s; a 24,58 empieza el fundido de 0,5 s al cierre (outro2, 4,0 s)
+SR = 48000; OUT = 25.1; DUR = OUT + 4.0   # la voz acaba en 23,98 s; remate quieto hasta 25,1 y fundido a negro de 0,5 s al cierre (xfade fadeblack; outro2, 4,0 s, desde 25,1)
 W = json.load(open('words.json')); T = lambda k: W[k][1]; E = lambda k: W[k][2]
 def ld(f, ch=2):
     r = subprocess.run(['ffmpeg', '-v', 'error', '-i', f, '-vn', '-ac', str(ch), '-ar', str(SR), '-f', 'f32le', '-'], capture_output=True).stdout

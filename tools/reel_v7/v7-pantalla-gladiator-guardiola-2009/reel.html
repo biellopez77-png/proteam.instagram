@@ -164,7 +164,7 @@ tl.to(cam,{cy:2990,z:1.0,duration:.9,ease:'power2.inOut'},9.2); tl.to(cam,{z:1.0
 tl.to(cam,{cy:3300,z:1.0,duration:1.0,ease:'power2.inOut'},15.85);
 tl.to(cam,{cy:3520,z:1.0,duration:.9,ease:'power2.inOut'},18.15);
 fly(19.6,1700,3060,1.0); tl.to(cam,{z:1.01,cy:3080,duration:.9,ease:'sine.out'},20.5);
-tl.to(cam,{cy:3440,z:1.0,duration:1.1,ease:'power2.inOut'},21.0); tl.to(cam,{z:.96,cy:3470,duration:3.6,ease:'sine.inOut'},22.1);
+tl.to(cam,{cy:3440,z:1.0,duration:1.1,ease:'power2.inOut'},21.0); tl.to(cam,{z:.97,cy:3460,duration:1.5,ease:'sine.inOut'},22.1);   // la cámara se para antes de «tú»: remate quieto ≥1 s antes del fundido a negro
 // grano
 const g=$('grain').getContext('2d'),gi=g.createImageData(360,640);let sd=1;const RN=()=>(sd=(sd*16807)%2147483647)/2147483647;
 function camAt(t){tl.seek(t,false);return [cam.cx,cam.cy,cam.z]}
