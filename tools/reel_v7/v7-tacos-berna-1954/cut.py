@@ -10,8 +10,8 @@ cut=lambda im: remove(im,session=S,alpha_matting=True,alpha_matting_foreground_t
 c=remove(Image.open('photos/raw1.jpg').convert('RGB'),session=S,alpha_matting=True,alpha_matting_foreground_threshold=200,alpha_matting_background_threshold=20,alpha_matting_erode_size=4); a=np.array(c)   # matting más suave: con el de serie se perdían las cabezas
 a[...,3]=np.where(a[...,3]<60,0,a[...,3])
 Image.fromarray(a).save('photos/p1_cut.png')
-# 2 · el reloj de la final (Sandstein, CC BY 3.0): en polaroid
-Image.open('photos/raw2.jpg').convert('RGB').save('photos/p2.jpg',quality=92)
+# 2 · el reloj de la final (Sandstein, CC BY 3.0): en polaroid, solo la mitad alta de la esfera (sin el 2/3, sin «Ungarn / Deutschland» y sin la esfera pequeña con la marca): recorte 875x570+110+28
+Image.open("photos/raw2.jpg").convert("RGB").crop((110,28,985,598)).save("photos/p2.jpg",quality=92)
 # 3 · minuto 2 de la final, Fritz Walter al fondo a la izquierda (Comet Photo AG, CC BY-SA 4.0): mitad baja, el campo
 Image.open('photos/raw3.jpg').convert('RGB').crop((0,430,1500,1213)).save('photos/p3.jpg',quality=92)
 for k in (2,3): grade(f'photos/p{k}.jpg',f'img/p{k}_g.jpg')
