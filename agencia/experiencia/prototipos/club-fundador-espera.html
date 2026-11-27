@@ -280,6 +280,25 @@ code{font-size:12px;color:var(--ice);background:var(--s2);padding:1px 5px;border
 .codebox .code{display:block;margin-top:8px;font-size:17px;font-weight:800;letter-spacing:.03em;white-space:nowrap;font-variant-numeric:tabular-nums;color:var(--white);text-shadow:0 0 18px rgba(185,224,255,.35);overflow:hidden;text-overflow:ellipsis}
 .desktop .codebox .code{font-size:22px;letter-spacing:.06em}
 
+/* === Foco de cierre (propuestas P5 y P6 de Samuel, 27/11) === */
+.foco{margin:0 auto;max-width:360px;text-align:center;padding:6px 0 4px}
+.foco svg{display:block;width:100%;max-width:240px;height:auto;margin:0 auto}
+.desktop .foco svg{max-width:300px}
+.foco .f-left{margin:6px 0 0;font-size:12px;font-weight:700;letter-spacing:.06em;color:var(--text-3);font-variant-numeric:tabular-nums}
+.foco .f-date{margin:8px 0 0;font-size:16px;font-weight:800;letter-spacing:-.01em;color:var(--white)}
+.foco .f-date span{color:var(--ice)}
+.foco .f-line{margin:6px auto 0;font-size:14px;color:var(--text-2);max-width:30ch}
+.foco.off .f-date{color:var(--text-2)}
+.f-zone{padding:22px 18px 30px;border-top:1px solid var(--line)}
+.desktop .f-zone{padding:40px 48px 56px}
+.f-cone{transition:opacity 1.2s ease}
+.f-sill{filter:drop-shadow(0 0 6px rgba(185,224,255,.9))}
+.f-blink{animation:fblink 2.4s ease-in-out infinite}
+@keyframes fblink{0%,100%{opacity:1}50%{opacity:.55}}
+.h-cta .p6{font-size:13px;color:var(--text-2);line-height:1.45}
+.h-cta .p6 b{color:var(--white);font-weight:700}
+.wait .foco{margin-top:14px}
+
 /* Notas */
 .notes{max-width:1180px;margin:30px auto 0;display:grid;gap:16px}
 @media (min-width:860px){.notes{grid-template-columns:1fr 1fr}}
@@ -295,7 +314,11 @@ code{font-size:12px;color:var(--ice);background:var(--s2);padding:1px 5px;border
   <div class="bar-in">
     <h1>Club Fundador <span>· prototipo v4</span></h1>
     <div class="ctl"><span>Pantalla</span><div class="seg" id="segScreen">
-      <button data-v="espera" aria-pressed="true">Espera (app)</button><button data-v="portada" aria-pressed="false">Portada (web)</button><button data-v="cabecera" aria-pressed="false">Cabecera móvil (web)</button><button data-v="sobres" aria-pressed="false">Sobres del día 0 (app)</button><button data-v="banquillo" aria-pressed="false">Banquillo (app)</button></div></div>
+      <button data-v="espera" aria-pressed="true">Espera (app)</button><button data-v="portada" aria-pressed="false">Portada (web)</button><button data-v="cabecera" aria-pressed="false">Cabecera móvil (web)</button><button data-v="sobres" aria-pressed="false">Sobres del día 0 (app)</button><button data-v="banquillo" aria-pressed="false">Banquillo (app)</button><button data-v="foco" aria-pressed="false">Foco de cierre (web y app)</button></div></div>
+    <div class="ctl" id="ctlWhere" hidden><span>Dónde</span><div class="seg" id="segWhere">
+      <button data-v="web" aria-pressed="true">Portada (web)</button><button data-v="app" aria-pressed="false">Espera (app)</button></div></div>
+    <div class="ctl" id="ctlP6" hidden><span>Línea bajo el botón</span><select class="sel" id="selP6" aria-label="Línea bajo el botón">
+      <option value="samuel">«…Después, 1.» (Samuel)</option><option value="mes">«…Después, 1 mes de prueba.»</option><option value="none">Sin línea (hoy)</option></select></div>
     <div class="ctl" id="ctlIns" hidden><span>Insignia</span><div class="seg" id="segIns">
       <button data-v="none" aria-pressed="true">Sin pedir</button><button data-v="verified" aria-pressed="false">Verificada</button></div></div>
     <div class="ctl" id="ctlHero" hidden><span>Cabecera</span><div class="seg" id="segVer">
@@ -344,6 +367,7 @@ code{font-size:12px;color:var(--ice);background:var(--s2);padding:1px 5px;border
         <li><b>Cabecera móvil (24/11, propuesta P1 de Samuel):</b> en la primera pantalla del móvil solo la fecha de cierre, «Lo que hay dentro se abre al día siguiente.» y un único botón en blanco (la luz); «Iniciar sesión» sube a la barra de arriba; la cuenta atrás baja, en penumbra; el Club y las ventajas bajan. Sin ultravioleta en esa primera pantalla. Línea discontinua: dónde acaba la primera pantalla (aprox.). Primer fotograma: la frase, la fecha y el botón ya vienen en el HTML; solo la cuenta atrás espera a cargar, con su hueco reservado (hoy es igual).</li>
         <li><b>Sobres del día 0 (24/11, propuesta P3 de Samuel):</b> en la espera, entre el Club y la cuenta atrás, tres sobres cerrados con lo que ya está aprobado: 1 «Tu insignia» (martes 1/12), 2 «Tu primera semana» (martes 8/12) y 3 «Tu carta» (viernes 11/12, al entrar). Los abiertos son lo activo y llevan la luz; el siguiente, solo un filo; el resto, en penumbra. Se abren por fecha, sin servidor ni base de datos. «Te avisamos por correo» depende de que Lucía lo envíe. Solo con la apertura el 11/12: con el 28/11 no queda ninguna semana. Sin ultravioleta nuevo: sigue en el Club.</li>
         <li><b>Banquillo (27/11, propuesta P4 de Samuel):</b> en la espera, bajo el Club, una tarjeta con tres sitios del banquillo: el tuyo encendido y «2.º entrenador/a» y «Preparador/a físico/a» en penumbra. «Tu banquillo no está completo.» · «Tu banquillo entra contigo el día 0.» y un solo botón, «Invitar a mi cuerpo técnico», que crea el código de staff que ya existe en /coach/admin («Nou codi per a staff»: 2.º entrenador/a, preparador/a físico/a, delegado/a y fisioterapeuta, con aprobación). Quien pide entrar sale con un filo de luz y «Aceptar / Rechazar» (la aprobación que ya existe); al aceptar, su sitio se enciende. Solo para el administrador del equipo; quien entra ve «Estás en el banquillo de…» sin botón. Nunca el total de la lista. Sin ventajas nuevas ni ultravioleta nuevo.</li>
+        <li><b>Foco de cierre (27/11, propuestas P5 y P6 de Samuel):</b> en la portada, la cuenta atrás deja de ser el número gigante y pasa a ser un foco sobre una puerta: cada día cae menos luz, con «Quedan N días» en pequeño, «Se cierra el jueves 10 de diciembre a las 23:59.» y «Cuando se apague, la lista se cierra.»; el último día solo queda el filo bajo la puerta; al cerrar, apagado. Bajo el botón, «Hasta el cierre, 3 meses gratis para tu primer equipo. Después, 1.» (dato del código: migración del 18/11, primer equipo; 3 meses en la lista, 1 mes de prueba después); variante «Después, 1 mes de prueba.». En la espera (app), quien ya está dentro espera la apertura, no el cierre: propuesta de Irene, la luz crece hasta encender la puerta («Cuando se encienda del todo, entras.»). Sin ultravioleta: sigue en el Club. Sin apuntados, precio ni plazas.</li>
         <li>No aparecen: precio fundador (sin importe ni Stripe), detalles de los tickets (sin construir), número de apuntados.</li>
       </ul>
     </div>
@@ -352,12 +376,14 @@ code{font-size:12px;color:var(--ice);background:var(--s2);padding:1px 5px;border
 
 <script>
 (function(){
-  var S={ins:"none",envAnim:0,ver:"prop",btn:"a",fold:"553",heroErr:false,screen:"espera",view:"mobile",state:"none",dates:"new",sheet:false,letter:false,handle:"",fieldErr:"",sendErr:false,toast:""};
+  var S={where:"web",p6:"samuel",ins:"none",envAnim:0,ver:"prop",btn:"a",fold:"553",heroErr:false,screen:"espera",view:"mobile",state:"none",dates:"new",sheet:false,letter:false,handle:"",fieldErr:"",sendErr:false,toast:""};
   var STATES={
     espera:[["loading","Cargando"],["none","Sin solicitar"],["requested","En revisión"],["rejected","Rechazada"],["verified","Verificada, sin número"],["verified_n","Verificada, Nº 011"],["error","Error al cargar"]],
     cabecera:[["normal","Primera pantalla"],["first","Primer fotograma (antes de cargar)"],["error","Error al abrir el registro"]],
     portada:[["campaign","Campaña abierta"],["closed","Lista cerrada"],["off","Fuera de campaña (vacío)"]],
     banquillo:[["empty","Solo tú (vacío)"],["code","Código ya creado"],["pending","Laura pide entrar"],["one","Un sitio encendido"],["full","Banquillo completo"],["invitee","Lo que ve quien entra (2.º entrenador)"],["loading","Cargando"],["error","Error al cargar el banquillo"],["errcode","Error al crear el código"],["erraccept","Error al aceptar"],["cur","Actual (hoy, sin banquillo)"]],
+    foco_web:[["live","Hoy (según la hora)"],["d13","Quedan 13 días"],["d7","Quedan 7 días"],["d1","Queda 1 día"],["last","Último día: solo el filo"],["closed","Lista cerrada: apagado"],["first","Primer fotograma (antes de cargar)"],["error","Error al abrir el registro"],["cur","Actual (hoy, cuenta atrás)"]],
+    foco_app:[["live","Hoy (según la hora)"],["d13","Faltan 13 días"],["d7","Faltan 7 días"],["d1","Falta 1 día"],["last","Último día: la puerta encendida"],["loading","Cargando la fecha"],["error","Error al cargar la fecha"],["cur","Actual (hoy, cuenta atrás)"]],
     sobres:[["s0","Hoy: ningún sobre abierto (vacío)"],["s1","Mar 1/12: abierto el 1.º"],["s2","Mar 8/12: abiertos 1.º y 2.º"],["loading","Cargando"],["error","Error al abrir el sobre"],["cur","Actual (hoy, sin sobres)"]]
   };
   // Sobres: solo lo aprobado (CLUB_FUNDADOR.md y recorrido inicial). Se abren por fecha (hora de Madrid).
@@ -501,11 +527,65 @@ code{font-size:12px;color:var(--ice);background:var(--s2);padding:1px 5px;border
     return '<div class="hero"><div class="h-strip"><b>ProTeam</b><a href="#" data-act="toast" data-msg="Abre «Iniciar sesión» (AuthOverlay)">Iniciar sesión</a></div><section class="h-main" aria-labelledby="ht"><p class="h-note">Hecho en el banquillo, no en una oficina.</p>'+title.replace('class="h-title"','class="h-title" id="ht"')+cta+'</section><div class="h-dim" data-prop><p>Quedan</p>'+timer+'</div><div class="ghost">… baja el resto: Club Fundador (con el rayo en ultravioleta), funciones, «Así funciona la oferta» …</div>'+fold+'</div>';
   }
 
+
+  // Foco de cierre (P5 de Samuel): la cuenta atrás pasa a ser un foco sobre la puerta.
+  // Portada: cada día hay menos luz; el último día solo queda el filo bajo la puerta; al cerrar, apagado.
+  // Espera (propuesta de Irene): quien ya está dentro espera la apertura, así que la luz crece hasta encender la puerta.
+  var START=Date.parse("2026-11-23T00:00:00+01:00"); // inicio del relanzamiento (RELANZAMIENTO.md)
+  function fDays(){var st=S.state;if(st==="d13")return 13;if(st==="d7")return 7;if(st==="d1")return 1;if(st==="last")return 0;
+    var ms=d().closeT-60000-Date.now();if(ms<=0)return -1;return Math.floor(ms/86400000)}
+  function doorSVG(k,mode){gid++;var id="fc"+gid;
+    // k: 0..1, cuánta luz cae sobre la puerta. mode: "beam" (cono + filo), "sill" (solo el filo), "off" (apagado), "full" (puerta encendida)
+    var w=26+92*k,op=(.10+.42*k).toFixed(2),cone="",pool="",sill="",lamp="#6F7A91";
+    if(mode==="beam"||mode==="full"){lamp="#F4F7FB";
+      cone='<path class="f-cone" d="M92 22 L108 22 L'+(100+w).toFixed(1)+' 150 L'+(100-w).toFixed(1)+' 150 Z" fill="url(#'+id+')" opacity="'+op+'"/>';
+      pool='<ellipse cx="100" cy="150" rx="'+(w+6).toFixed(1)+'" ry="7" fill="#B9E0FF" opacity="'+(.06+.22*k).toFixed(2)+'"/>'}
+    if(mode!=="off") sill='<path class="f-sill'+(mode==="sill"?" f-blink":"")+'" d="M74 145.5h52" stroke="#B9E0FF" stroke-width="'+(mode==="sill"?2.2:1.6)+'" stroke-linecap="round" opacity="'+(mode==="sill"?1:(.4+.5*k).toFixed(2))+'"/>';
+    var doorFill=mode==="full"?"#121B30":"#0C1323",edge=mode==="off"?.12:mode==="full"?.6:(.18+.4*k).toFixed(2);
+    var glow=mode==="full"?'<rect x="74" y="46" width="52" height="99" rx="2" fill="#6AA8FF" opacity=".16"/>':'';
+    return '<svg viewBox="0 0 200 160" aria-hidden="true"><defs><linearGradient id="'+id+'" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F4F7FB"/><stop offset=".35" stop-color="#B9E0FF" stop-opacity=".8"/><stop offset="1" stop-color="#6AA8FF" stop-opacity=".25"/></linearGradient></defs>'
+      +'<path d="M100 0v12" stroke="#121B30" stroke-width="2"/><path d="M88 12h24l-4 10H92z" fill="#121B30" stroke="#B9E0FF" stroke-opacity=".2"/><path d="M93 22h14" stroke="'+lamp+'" stroke-width="2" stroke-linecap="round" opacity="'+(mode==="off"||mode==="sill"?.35:1)+'"/>'
+      +cone+'<path d="M20 150h160" stroke="#B9E0FF" stroke-opacity=".08"/>'
+      +'<rect x="70" y="42" width="60" height="108" rx="3" fill="#060C19" stroke="#B9E0FF" stroke-opacity="'+edge+'"/><rect x="74" y="46" width="52" height="99" rx="2" fill="'+doorFill+'"/>'+glow
+      +'<rect x="84" y="58" width="32" height="14" rx="2" fill="none" stroke="#B9E0FF" stroke-opacity="'+(mode==="off"?.08:.2)+'"/><circle cx="118" cy="100" r="2.6" fill="#B9E0FF" opacity="'+(mode==="off"?.15:.5)+'"/>'
+      +pool+sill+'</svg>'}
+  function plural(n,one,many){return n===1?one:many}
+  function focoBlock(where){
+    var st=S.state,T=Math.max(1,(d().closeT-60000-START)/86400000),n=fDays();
+    if(where==="app"){
+      if(st==="loading") return '<div class="foco" aria-busy="true" aria-label="Cargando la fecha" data-prop><div class="skel" style="height:150px;width:200px;margin:0 auto;border-radius:12px"></div><div class="skel" style="height:16px;width:70%;margin:12px auto 0"></div></div>';
+      if(st==="error") return '<div class="foco off" data-prop>'+doorSVG(0,"off")+'<div class="msg err" role="alert" style="justify-content:center">No hemos podido cargar la fecha. Revisa tu conexión y vuelve a intentarlo.</div><button class="btn btn-o" data-act="retry-foco" style="margin-top:12px">Reintentar</button></div>';
+      var k=n<=0?1:Math.min(1,Math.max(.08,1-n/T)),mode=n<=0?"full":"beam";
+      var left=n<=0?"Último día":(plural(n,"Falta 1 día","Faltan "+n+" días"));
+      var line=n<=0?"Esta noche a las 00:00 se abre la puerta.":"Cada día hay más luz en la puerta. Cuando se encienda del todo, entras.";
+      return '<div class="foco" role="timer" aria-label="'+left+' para la apertura: viernes '+d().open+' a las 00:00" data-prop>'+doorSVG(k,mode)+'<p class="f-left">'+left.toUpperCase()+'</p><p class="f-date">Se abre el <span>'+(S.dates==="new"?"viernes":"sábado")+' '+dt(d().open)+'</span>.</p><p class="f-line">'+line+'</p></div>'}
+    // Portada
+    if(st==="closed") return '<div class="foco off" data-prop>'+doorSVG(0,"off")+'<p class="f-date">La lista se cerró el '+dt(d().close)+'.</p><p class="f-line">Desde aquí la portada pasa a la de fuera de campaña (otra ficha).</p></div>';
+    if(st==="first") return '<div class="foco" data-prop>'+doorSVG(0,"sill").replace('class="f-sill f-blink"','class="f-sill"')+'<p class="f-left" style="visibility:hidden">QUEDAN 00 DÍAS</p><p class="f-date">Se cierra el <span>'+d().closeDay+' '+dt(d().close)+'</span> a las 23:59.</p><p class="f-line">Cuando se apague, la lista se cierra.</p></div>';
+    var last=n<=0,k2=last?0:Math.min(1,Math.max(.06,n/T));
+    var left2=last?"Último día":plural(n,"Queda 1 día","Quedan "+n+" días");
+    return '<div class="foco" role="timer" aria-label="'+left2+' para el cierre de la lista: '+d().closeDay+' '+d().close+' a las 23:59" data-prop>'+doorSVG(k2,last?"sill":"beam")+'<p class="f-left">'+left2.toUpperCase()+'</p><p class="f-date">'+(last?'Se cierra <span>hoy</span> a las 23:59.':'Se cierra el <span>'+d().closeDay+' '+dt(d().close)+'</span> a las 23:59.')+'</p><p class="f-line">Cuando se apague, la lista se cierra.</p></div>'}
+  function p6Line(){
+    if(S.p6==="none") return "";
+    return '<small class="p6" data-prop>Hasta el cierre, <b>3 meses gratis</b> para tu primer equipo. '+(S.p6==="mes"?"Después, 1 mes de prueba.":"Después, 1.")+'</small>'}
+  function foco(){
+    var st=S.state;
+    if(S.where==="app"){
+      if(st==="cur") return espera();
+      var h=espera();return h.replace(/<div class="timer" role="timer" id="tm">[\s\S]*?<\/div><\/section><\/div>$/,focoBlock("app")+'</section></div>')}
+    if(st==="cur"){var k=S.ver;S.ver="cur";var h2=cabecera();S.ver=k;return h2}
+    var label=S.btn==="b"?"Entrar en la lista":"Apúntate a la lista de espera";
+    var err=st==="error"?'<div class="msg err" role="alert" data-prop>'+PHONE.replace('width="74" height="58"','width="46" height="36"')+'<span>No hemos podido abrir el registro. Revisa tu conexión y vuelve a intentarlo.</span></div>':'';
+    var open=st!=="closed";
+    var main=open?'<section class="h-main" aria-labelledby="ht"><p class="h-note">Hecho en el banquillo, no en una oficina.</p><h1 class="h-title" id="ht" data-prop>La lista se cierra el <span class="lit">'+d().closeDay+' '+dt(d().close)+'</span>.</h1><p class="h-myst" data-prop>Lo que hay dentro se abre al día siguiente.</p><div class="h-cta"><button class="btn btn-w" data-act="register">'+label+' →</button>'+p6Line()+err+'</div></section>'
+      :'<section class="h-main" aria-labelledby="ht"><p class="h-note">Hecho en el banquillo, no en una oficina.</p><h1 class="h-title" id="ht">La lista de espera se cerró.</h1><p class="h-myst">Si ya estás dentro, entra con tu cuenta.</p></section>';
+    return '<div class="hero"><div class="h-strip"><b>ProTeam</b><a href="#" data-act="toast" data-msg="Abre «Iniciar sesión» (AuthOverlay)">Iniciar sesión</a></div>'+main+'<div class="f-zone">'+focoBlock("web")+'</div><div class="ghost">… baja el resto: Club Fundador (con el rayo en ultravioleta), funciones, «Así funciona la oferta» …</div></div>'}
+
   function render(){
     var f=frame;f.className="frame "+S.view+(document.getElementById("chkProp").checked?" show-prop":"");
-    var url=S.screen==="espera"||S.screen==="sobres"||S.screen==="banquillo"?"app · lista de espera":S.screen==="cabecera"?"proteam · portada, primera pantalla":"proteam · portada (campaña)";
+    var url=S.screen==="foco"?(S.where==="app"?"app · lista de espera":"proteam · portada, primera pantalla"):S.screen==="espera"||S.screen==="sobres"||S.screen==="banquillo"?"app · lista de espera":S.screen==="cabecera"?"proteam · portada, primera pantalla":"proteam · portada (campaña)";
     var html=(S.view==="desktop"?'<div class="urlbar"><span class="dots"><i></i><i></i><i></i></span><b>'+url+'</b></div>':'');
-    html+=S.screen==="banquillo"?banquillo():S.screen==="sobres"?sobres():S.screen==="espera"?espera():S.screen==="cabecera"?cabecera():portada();
+    html+=S.screen==="foco"?foco():S.screen==="banquillo"?banquillo():S.screen==="sobres"?sobres():S.screen==="espera"?espera():S.screen==="cabecera"?cabecera():portada();
     if(S.sheet) html+=sheetHTML();
     if(S.letter) html+=letterHTML();
     if(S.env) html+=envSheet(S.env);
@@ -516,7 +596,7 @@ code{font-size:12px;color:var(--ice);background:var(--s2);padding:1px 5px;border
     if(inp){inp.addEventListener("input",function(){S.handle=inp.value;S.fieldErr="";S.sendErr=false;var b=document.getElementById("sub");if(b)b.disabled=!inp.value.trim();var bx=inp.parentNode;bx.classList.remove("bad");var h=bx.nextElementSibling;if(h&&h.classList.contains("help"))h.remove()});
       document.getElementById("f").addEventListener("submit",function(e){e.preventDefault();submit()});}
   }
-  function fillStates(){var sel=document.getElementById("selState");sel.innerHTML=STATES[S.screen].map(function(s){return'<option value="'+s[0]+'"'+(s[0]===S.state?" selected":"")+'>'+s[1]+'</option>'}).join("")}
+  function fillStates(){var sel=document.getElementById("selState");sel.innerHTML=STATES[S.screen==="foco"?"foco_"+S.where:S.screen].map(function(s){return'<option value="'+s[0]+'"'+(s[0]===S.state?" selected":"")+'>'+s[1]+'</option>'}).join("")}
   function norm(h){h=h.trim().replace(/^@/,"").replace(/^https?:\/\/(www\.)?instagram\.com\//i,"").replace(/\/.*$/,"").toLowerCase();return/^[a-z0-9._]{1,30}$/.test(h)?h:null}
   var tt;function toast(m){S.toast=m;render();clearTimeout(tt);tt=setTimeout(function(){S.toast="";render()},2600)}
   function submit(){var c=norm(S.handle);if(!c){S.fieldErr="Escribe tu usuario de Instagram, sin espacios.";render();return}
@@ -540,17 +620,22 @@ code{font-size:12px;color:var(--ice);background:var(--s2);padding:1px 5px;border
     else if(a==="share")toast("Se abre el menú de compartir del móvil");
     else if(a==="download")toast("Se descarga proteam-club-fundador.jpg");
     else if(a==="toast"){e.preventDefault();toast(t.dataset.msg)}
+    else if(a==="retry-foco"){S.state="loading";fillStates();render();setTimeout(function(){S.state="live";fillStates();render()},900)}
     else if(a==="register"){if(S.state==="error"){S.heroErr=true;render();return}S.heroErr=false;toast("Abre el registro actual (AuthOverlay, «Crear cuenta»)")}});
   document.addEventListener("keydown",function(e){if(e.key==="Escape"&&(S.sheet||S.letter||S.env||S.inv)){S.sheet=S.letter=false;S.env=0;S.inv=false;render()}});
   document.getElementById("selState").addEventListener("change",function(e){var prev=S.state;S.state=e.target.value;S.heroErr=false;S.sheet=S.letter=false;S.env=0;S.inv=false;B.justIn="";B.codeMade=S.state==="code"||S.state==="pending"||S.state==="one"||S.state==="full"||S.state==="erraccept";S.envAnim=(S.screen==="sobres"&&(S.state==="s1"||S.state==="s2")&&prev!==S.state)?(S.state==="s1"?1:2):0;render()});
   function seg(id,key){var el=document.getElementById(id);el.addEventListener("click",function(e){var b=e.target.closest("button");if(!b)return;S[key]=b.dataset.v;[].forEach.call(el.children,function(x){x.setAttribute("aria-pressed",x===b)});
-    if(key==="screen"){S.state=S.screen==="espera"?"none":S.screen==="cabecera"?"normal":S.screen==="sobres"?"s1":S.screen==="banquillo"?"empty":"campaign";S.sheet=S.letter=false;S.env=0;S.inv=false;S.envAnim=0;S.heroErr=false;fillStates();heroCtl()}render()})}
-  function heroCtl(){var on=S.screen==="cabecera";["ctlHero","ctlBtn","ctlFold"].forEach(function(id){document.getElementById(id).hidden=!on});document.getElementById("ctlIns").hidden=S.screen!=="sobres"}
-  seg("segScreen","screen");seg("segView","view");seg("segDates","dates");seg("segVer","ver");seg("segFold","fold");seg("segIns","ins");
+    if(key==="where"){S.state="live";S.heroErr=false;fillStates()}
+    if(key==="screen"){S.state=S.screen==="espera"?"none":S.screen==="cabecera"?"normal":S.screen==="sobres"?"s1":S.screen==="banquillo"?"empty":S.screen==="foco"?"live":"campaign";S.sheet=S.letter=false;S.env=0;S.inv=false;S.envAnim=0;S.heroErr=false;fillStates();heroCtl()}render()})}
+  function heroCtl(){var on=S.screen==="cabecera",fo=S.screen==="foco";["ctlHero","ctlFold"].forEach(function(id){document.getElementById(id).hidden=!on});document.getElementById("ctlBtn").hidden=!(on||(fo&&S.where==="web"));document.getElementById("ctlWhere").hidden=!fo;document.getElementById("ctlP6").hidden=!(fo&&S.where==="web");document.getElementById("ctlIns").hidden=S.screen!=="sobres"}
+  seg("segScreen","screen");seg("segView","view");seg("segDates","dates");seg("segVer","ver");seg("segFold","fold");seg("segIns","ins");seg("segWhere","where");
+  document.getElementById("segWhere").addEventListener("click",heroCtl);
+  document.getElementById("selP6").addEventListener("change",function(e){S.p6=e.target.value;render()});
   document.getElementById("selBtn").addEventListener("change",function(e){S.btn=e.target.value;render()});
   document.getElementById("chkProp").addEventListener("change",render);
   if(window.matchMedia&&matchMedia("(min-width:900px)").matches){S.view="desktop";[].forEach.call(document.getElementById("segView").children,function(x){x.setAttribute("aria-pressed",x.dataset.v==="desktop")})}
   fillStates();render();
   setInterval(function(){var tm=document.getElementById("tm");if(tm)tm.innerHTML=timerHTML()},1000);
+  setInterval(function(){if(S.screen==="foco"&&S.state==="live"&&!S.toast)render()},60000);
 })();
 </script>

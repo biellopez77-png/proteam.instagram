@@ -1,7 +1,7 @@
 # Ficha · Pantalla de espera y portada: bloque del Club Fundador
 
-**Agente:** Irene (P1) · **Fecha:** 22/11/2026, rehecha en v4 el 23/11, cabecera móvil y sobres del día 0 el 24/11, banquillo el 27/11 · **Tareas:** `exp-espera-club`, `irene-v4-paleta`, `t-20261124-p1-portada-movil`, `t-20261124-p1-sobres-dia0`, `t-20261127-p1-banquillo`
-**Prototipo navegable:** https://claude.ai/artifact/DHjcLazBbp559Dfp5sbVZh (versión 5, sistema v4; pantallas «Espera (app)», «Portada (web)», «Cabecera móvil (web)», «Sobres del día 0 (app)» y «Banquillo (app)»; móvil 375 y escritorio; selector de estados; selector de fechas; casilla «Marcar lo propuesto»)
+**Agente:** Irene (P1) · **Fecha:** 22/11/2026, rehecha en v4 el 23/11, cabecera móvil y sobres del día 0 el 24/11, banquillo y foco de cierre el 27/11 · **Tareas:** `exp-espera-club`, `irene-v4-paleta`, `t-20261124-p1-portada-movil`, `t-20261124-p1-sobres-dia0`, `t-20261127-p1-banquillo`, `t-20261127-p1-foco-cierre`
+**Prototipo navegable:** https://claude.ai/artifact/DHjcLazBbp559Dfp5sbVZh (versión 6, sistema v4; pantallas «Espera (app)», «Portada (web)», «Cabecera móvil (web)», «Sobres del día 0 (app)», «Banquillo (app)» y «Foco de cierre (web y app)»; móvil 375 y escritorio; selector de estados; selector de fechas; casilla «Marcar lo propuesto»)
 **Fuente del prototipo:** `agencia/experiencia/prototipos/club-fundador-espera.html`
 **Base:** rama `revision/club-fundador` de proteamapp (PR #1): `access-gate-screen.tsx`, `founder/founder-section.tsx`, `founder/founder-landing.tsx`, `founder/founder-badge.tsx`, `founder/founder-welcome.tsx`, `lib/founder.ts`, `routes/index.tsx`.
 
@@ -116,6 +116,36 @@ Origen: `reports/embudo-2026-11-27.md` (P4). Dato de Samuel: 0 de 24 equipos de 
 
 **Medir (Samuel):** equipos de la lista con más de un miembro antes y después; clics en «Invitar a mi cuerpo técnico», códigos de staff creados y solicitudes aceptadas.
 
+## 0e. Foco de cierre y la línea de lo que cambia al cerrar (27/11, propuestas P5 y P6 de Samuel)
+Origen: `reports/embudo-2026-11-27.md` (P5 y P6). Dato de Samuel: la cuenta atrás es hoy lo más grande de la primera pantalla y desde el 20/11 no ha movido a nadie. En el prototipo: pantalla «Foco de cierre (web y app)», con «Dónde» (portada o espera), «Línea bajo el botón», «Botón y oferta», selector de estado y de fechas.
+
+**Confirmado en el código (proteamapp `main` 49f42a9):**
+- Portada: `BlackoutCountdown` (`landing/blackout-friday.tsx`) cuenta hasta `BLACKOUT_FRIDAY_END` (`lib/blackout-friday.ts`, hoy 27/11 23:59) en `text-5xl`–`text-8xl`; se actualiza cada segundo en el navegador y no carga nada del servidor.
+- Espera: `access-gate-screen.tsx` cuenta hasta `startsAt` (la **apertura**, no el cierre), y solo aparece cuando llegan `now` y `startsAt`. Quien ve la espera ya está dentro: el cierre de la lista no le cambia nada.
+- P6: la migración `20261118000500_prueba_1_mes_tras_lista.sql` da 3 meses desde la apertura al **primer equipo** creado antes del cierre y, después, `now() + interval '1 month'` («1 mes de prueba», que es el texto que ya usa la portada fuera de campaña). CLUB_FUNDADOR.md, ventaja 2: «3 meses gratis», «Sí, tal cual».
+
+| Elemento | Propuesta | Estado |
+|---|---|---|
+| Portada: dónde | Sustituye a la cuenta atrás de números (en la cabecera móvil, el bloque «Quedan» en penumbra), bajo el botón. La cabecera (titular con la fecha, frase de misterio y un botón) no cambia | Propuesta |
+| Portada: el foco | Una puerta de vestuario bajo un foco (objeto real, ilustración provisional). Cada día cae menos luz: el cono se estrecha y se apaga en proporción a los días que quedan desde el inicio del relanzamiento (23/11) hasta el cierre. Debajo, en pequeño, «QUEDAN 13 DÍAS» / «QUEDA 1 DÍA»; «Se cierra el **jueves 10 de diciembre** a las 23:59.» y «Cuando se apague, la lista se cierra.» | Propuesta |
+| Portada: el último día | Sin cono: solo el filo de luz bajo la puerta, que respira (2,4 s; quieto con «reducir movimiento»). «ÚLTIMO DÍA» · «Se cierra **hoy** a las 23:59.» | Propuesta |
+| Portada: al cerrar | Foco apagado y «La lista se cerró el 10 de diciembre.»; en producto la portada pasa a la de fuera de campaña (`campaign=false`, otra ficha) | Propuesta |
+| P6: línea bajo el botón | «Hasta el cierre, **3 meses gratis** para tu primer equipo. Después, 1.» (Samuel). Variante en el selector: «…Después, 1 mes de prueba.» (más clara; usa el texto que la portada ya dice fuera de campaña). Sin precio, plazas ni cifras | Propuesta; depende de que Biel confirme 3 meses antes y 1 después con el cierre nuevo |
+| Espera (app) | **Cambio de Irene sobre P5:** como la espera cuenta hasta la apertura y quien la ve ya está dentro, la luz va al revés: cada día hay más luz en la puerta y el último día la puerta está encendida. «FALTAN 13 DÍAS» · «Se abre el **viernes 11 de diciembre**.» · «Cada día hay más luz en la puerta. Cuando se encienda del todo, entras.»; último día: «Esta noche a las 00:00 se abre la puerta.». Va dentro de la tarjeta «Ya estás en la lista de espera», en lugar de los números; los textos de esa tarjeta no cambian | Propuesta, decide Biel (duda 21) |
+| Luz y ultravioleta | La luz del foco es azul hielo y blanca, nunca ultravioleta; el ultravioleta sigue en el Club (una vez por pantalla). El titular conserva su haz | Propuesta |
+| Accesibilidad | El foco es decorativo (`aria-hidden`); el bloque lleva `role="timer"` con «Quedan 13 días para el cierre de la lista: jueves 10 de diciembre a las 23:59» y se actualiza una vez por minuto, no por segundo | Propuesta |
+| Rendimiento | Un SVG en línea de unos 2 kB que se calcula con la fecha del navegador (como hoy): sin imágenes, servidor ni base de datos. Una sola transición de 1,2 s en el cono | Propuesta |
+
+**Estados del prototipo:** portada: *Hoy (según la hora)* · *Quedan 13 días* · *Quedan 7 días* · *Queda 1 día* · *Último día: solo el filo* · *Lista cerrada: apagado* · *Primer fotograma (antes de cargar)* (puerta con el filo y la fecha, que ya vienen en el HTML; los días esperan con su hueco reservado) · *Error al abrir el registro* (el de la cabecera móvil, con el móvil boca abajo) · *Actual (hoy, cuenta atrás)*. Espera: *Hoy* · *Faltan 13 / 7 días* · *Falta 1 día* · *Último día: la puerta encendida* · *Cargando la fecha* (esqueleto, porque `startsAt` viene del servidor) · *Error al cargar la fecha* (puerta apagada, «No hemos podido cargar la fecha. Revisa tu conexión y vuelve a intentarlo.» + «Reintentar»; hoy, si falla, la cuenta atrás no sale y no se dice nada) · *Actual*. Con las fechas del código (27/11) hoy ya es el último día.
+
+**Textos nuevos (para `t()`):** «Quedan {0} días» · «Queda 1 día» · «Último día» · «Se cierra el {0} a las 23:59.» · «Se cierra hoy a las 23:59.» · «Cuando se apague, la lista se cierra.» · «La lista se cerró el {0}.» · «Hasta el cierre, 3 meses gratis para tu primer equipo. Después, 1.» (o «Después, 1 mes de prueba.») · «Faltan {0} días» · «Falta 1 día» · «Se abre el {0}.» · «Cada día hay más luz en la puerta. Cuando se encienda del todo, entras.» · «Esta noche a las 00:00 se abre la puerta.» · «No hemos podido cargar la fecha. Revisa tu conexión y vuelve a intentarlo.».
+
+**Componentes:** `landing/blackout-friday.tsx` (un `ClosingLight` nuevo junto a `BlackoutCountdown`, que recibe los días que quedan; la línea de P6 bajo `AuthButtons` solo en campaña), `src/routes/index.tsx` (cabecera), `access-gate-screen.tsx` (sustituir la rejilla de números por la versión de la espera, con estados de carga y error). El inicio del relanzamiento (23/11) sería una constante junto a `BLACKOUT_FRIDAY_END`. Sin servidor, tablas ni migraciones. Construirlo, por PR de R1–R4.
+
+**Medir (Samuel):** cuentas nuevas ÷ visitantes de la portada (hoy 11 %) y vueltas a la portada de quien ya tiene cuenta, cada martes y viernes.
+
+**Lo que no aparece:** número de apuntados, plazas, precio, nombre de Biel.
+
 ## 1. Qué se conserva (sin tocar)
 - Flujo completo de la insignia: botón → ventana con 3 pasos → imagen `public/club-fundador/compartir.jpg` → «Compartir» (solo si `navigator.share` existe) y «Descargar imagen» → campo de usuario de Instagram → «Ya la he compartido» / «Actualizar solicitud» → RPC `request_founder_badge`.
 - Estados `requested`, `verified`, `rejected` y sus textos actuales; normalización del @ (`normalizeInstagramHandle`); toast «¡Recibido! Revisamos tu historia y te avisamos.».
@@ -185,3 +215,7 @@ Origen: `reports/embudo-2026-11-27.md` (P4). Dato de Samuel: 0 de 24 equipos de 
 17. Nombres de los sitios: ¿«2.º entrenador/a» y «Preparador/a físico/a», o los de la app («Entrenador/a asistente», «Preparador/a físico/a»)?
 18. ¿Delegado/a y fisioterapeuta también caben en el banquillo (el código lo permite) o la tarjeta solo invita a 2.º entrenador/a y preparador/a?
 19. ¿El cuerpo técnico que entra antes de abrir también puede conseguir su insignia del Club, o la tarjeta debe decir que el Club es solo de quien se apuntó?
+20. **Foco de cierre (27/11):** ¿la cuenta atrás de números pasa a ser el foco sobre la puerta en la portada, con los días en pequeño?
+21. En la espera la cuenta atrás va a la apertura, no al cierre. ¿Te vale la luz al revés (la puerta se enciende) o la espera se queda con los números?
+22. ¿Confirmas que con el cierre nuevo sigue siendo 3 meses antes y 1 mes de prueba después? Sin eso la línea de P6 no sale.
+23. ¿«Después, 1.» (Samuel) o «Después, 1 mes de prueba.»?
