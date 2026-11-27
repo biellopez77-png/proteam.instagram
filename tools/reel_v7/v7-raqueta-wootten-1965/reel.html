@@ -1,0 +1,269 @@
+<!doctype html><html><head><meta charset="utf-8">
+<!-- v7 · La raqueta de Wootten (DeMatha - Power Memorial, 1965). Un solo plano sobre una pared grande; cada cosa que dice la voz se anima en su palabra.
+     Base: tools/reel_v7/wooden/reel.html y v7-red-valvano-1983. Transiciones según agencia/sistema-v7/FORMATO.md: viajes 0,9 s power2.inOut, zoom ×0,9, blur ≤ 4 px, sin destellos.
+     La voz lleva tres silencios abiertos (mix.py): 0,5 s en 11,35, 0,5 s en 13,82 y 0,4 s en 17,45 (tiempos de la toma original); words.js ya va desplazado. -->
+<style>
+@font-face{font-family:S;src:url(fonts/instrument-serif-latin-400-normal.woff2)}
+@font-face{font-family:SI;src:url(fonts/instrument-serif-latin-400-italic.woff2)}
+@font-face{font-family:J;font-weight:500;src:url(fonts/plus-jakarta-sans-latin-500-normal.woff2)}
+@font-face{font-family:J;font-weight:700;src:url(fonts/plus-jakarta-sans-latin-700-normal.woff2)}
+@font-face{font-family:J;font-weight:800;src:url(fonts/plus-jakarta-sans-latin-800-normal.woff2)}
+@font-face{font-family:J;font-weight:800;font-style:italic;src:url(fonts/plus-jakarta-sans-latin-800-italic.woff2)}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#02050F}
+#cam{position:absolute;left:0;top:0;width:2600px;height:6400px;transform-origin:0 0;background:url(wall2.jpg)}
+.a{position:absolute}
+.serif{font-family:S;color:#F4F7FB;white-space:nowrap;line-height:1}
+.bold{font-family:J;font-weight:800;color:#F4F7FB;white-space:nowrap;letter-spacing:-.02em;line-height:1}
+.acc{font-family:J;font-weight:800;font-style:italic;color:#6AA8FF}
+.it{font-family:SI;color:#B9E0FF}
+.w{display:inline-block;margin-right:.24em}
+.c{text-align:center}
+.panel{background:#0C1323;border:1px solid #26335a;box-shadow:0 40px 90px rgba(0,0,0,.6)}
+.mat{background:#E9EEF6;padding:20px 20px 62px;border:6px solid #0b0f1a;box-shadow:0 30px 70px rgba(0,0,0,.6)}
+.mat img{display:block;width:100%}
+.mat small{position:absolute;left:24px;right:18px;bottom:12px;font:500 15px J;color:#5d6888;letter-spacing:.04em;line-height:1.3}
+.k{font:700 20px J;color:#8f9bb8;letter-spacing:.14em}
+.recl{font:500 15px J;color:#5d6888;letter-spacing:.16em}
+.rec{font:500 15px J;color:#5d6888;letter-spacing:.12em;line-height:1.7}
+.chip{position:absolute;border-radius:10px;background:#0f1830;border:2px solid #26335a;font:800 22px J;color:#3a4770;text-align:center}
+#grain{position:absolute;inset:0;width:1080px;height:1920px;mix-blend-mode:screen;opacity:.09;pointer-events:none;image-rendering:pixelated}
+svg .dr{fill:none;stroke-linecap:round;stroke-linejoin:round}
+</style></head><body><div id="cam">
+
+<!-- 1 · En 1965, Power Memorial llevaba 71 partidos sin perder -->
+<div class="a serif c" id="l1" style="left:0;width:1080px;top:150px;font-size:76px"></div>
+<div class="a" id="card" style="left:110px;top:270px;width:860px;height:150px;background:#E9EEF6;border:6px solid #0b0f1a;box-shadow:0 30px 70px rgba(0,0,0,.6);opacity:0">
+ <div style="position:absolute;left:30px;top:22px;font:700 17px J;color:#5d6888;letter-spacing:.2em">FICHA · RECREACIÓN</div>
+ <div id="cardT" style="position:absolute;left:30px;top:58px;font:800 36px J;color:#141b2e;letter-spacing:.05em;white-space:nowrap"></div>
+</div>
+<div class="a serif c" id="l1b" style="left:0;width:1080px;top:480px;font-size:66px"></div>
+<div class="a bold c" id="cnt" style="left:0;width:1080px;top:580px;font-size:280px;letter-spacing:-.05em;color:#F4F7FB;opacity:0">0</div>
+<div class="a" id="grid" style="left:96px;top:900px;width:888px;height:444px;opacity:0"></div>
+<div class="a serif c" id="l1c" style="left:0;width:1080px;top:1400px;font-size:76px"></div>
+
+<!-- 2 · Tenía a Lew Alcindor: 2,18 -->
+<div class="a serif" id="l2a" style="left:1210px;top:170px;font-size:66px"></div>
+<div class="a bold" id="l2b" style="left:1210px;top:252px;font-size:96px"></div>
+<div class="a mat" id="printA" style="left:1196px;top:410px;width:660px;opacity:0"><img src="img/alc_g.jpg"><small>LEW ALCINDOR (LUEGO KAREEM ABDUL-JABBAR) · FOTO DE 1967, YA EN UCLA · NEW YORK WORLD-TELEGRAM AND THE SUN, D. P.</small></div>
+<svg class="a" id="ruler" style="left:1900px;top:330px;opacity:0" width="300" height="1180" viewBox="0 0 300 1180">
+ <rect x="40" y="20" width="110" height="1100" rx="8" fill="#E9EEF6" stroke="#0b0f1a" stroke-width="5"/>
+ <g id="ticks" stroke="#141b2e" stroke-width="3"></g>
+ <rect id="rfill" x="46" y="1114" width="98" height="0" fill="#6AA8FF" opacity=".55"/>
+ <g id="rmark" opacity="0"><line x1="20" y1="0" x2="190" y2="0" stroke="#6AA8FF" stroke-width="6" stroke-linecap="round"/><path d="M196 0 L214 -12 L214 12 Z" fill="#6AA8FF"/></g>
+ <text x="95" y="1170" text-anchor="middle" font-family="J" font-weight="500" font-size="15" fill="#5d6888" letter-spacing="2.5">RECREACIÓN</text>
+</svg>
+<div class="a bold c" id="h218" style="left:1160px;width:1080px;top:1560px;font-size:220px;letter-spacing:-.04em;opacity:0">2,18<span style="font-size:120px;color:#6AA8FF"> m</span></div>
+
+<!-- 3 · Morgan Wootten, entrenador de DeMatha -->
+<div class="a serif" id="l3a" style="left:90px;top:2140px;font-size:70px"></div>
+<div class="a bold" id="l3b" style="left:90px;top:2222px;font-size:130px"></div>
+<div class="a mat" id="printG" style="left:70px;top:2420px;width:660px;opacity:0"><img src="img/gym_g.jpg"><small>GIMNASIO MORGAN WOOTTEN, DeMATHA (HYATTSVILLE, MARYLAND), 2005 · FOTO: GLENN FITZPATRICK, CC BY 2.5, MODIFICADA</small></div>
+<div class="a panel" id="ficha" style="left:600px;top:2760px;width:420px;height:520px;border-radius:14px;overflow:hidden;opacity:0">
+ <svg class="a" style="left:0;top:0" width="420" height="330" viewBox="0 0 420 330">
+  <rect width="420" height="330" fill="#101a31"/>
+  <circle cx="210" cy="128" r="62" fill="#26335a"/>
+  <path d="M86 330 C92 240 140 206 210 206 C280 206 328 240 334 330 Z" fill="#26335a"/>
+  <text x="404" y="318" text-anchor="end" font-family="J" font-weight="500" font-size="13" fill="#5d6888" letter-spacing="2">SILUETA · SIN FOTO</text>
+ </svg>
+ <div style="position:absolute;left:0;right:0;top:330px;bottom:0;border-top:1px solid #26335a;padding:22px 26px">
+  <div style="font:800 34px J;color:#F4F7FB;letter-spacing:-.01em">MORGAN WOOTTEN</div>
+  <div class="k" style="margin-top:14px">DeMATHA · ENTRENADOR</div>
+  <div class="k" style="margin-top:10px;color:#6AA8FF">DESDE 1956</div>
+ </div>
+</div>
+<div class="a serif" id="l3c" style="left:90px;top:3360px;font-size:70px"></div>
+
+<!-- 4 · preparó el partido con una raqueta de tenis  (y el final) -->
+<div id="s4t">
+<div class="a serif" id="l4a" style="left:1220px;top:2150px;font-size:68px"></div>
+<div class="a serif" id="l4b" style="left:1220px;top:2234px;font-size:68px"></div>
+<div class="a bold" id="l4c" style="left:1214px;top:2320px;font-size:170px"></div>
+<div class="a serif" id="l4d" style="left:1820px;top:3260px;font-size:76px"></div>
+</div>
+<svg class="a" id="rack" style="left:1230px;top:2530px;overflow:visible" width="620" height="900" viewBox="0 0 620 900">
+ <g transform="rotate(-14 310 450)">
+  <ellipse id="rHead" class="dr" cx="310" cy="250" rx="190" ry="240" stroke="#F4F7FB" stroke-width="12" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/>
+  <ellipse id="rHead2" class="dr" cx="310" cy="250" rx="172" ry="222" stroke="#B9E0FF" stroke-width="4" opacity="0"/>
+  <g id="str" stroke="rgba(185,224,255,.55)" stroke-width="3"></g>
+  <path id="rThroat" class="dr" d="M200 452 Q280 520 290 600 M420 452 Q340 520 330 600" stroke="#F4F7FB" stroke-width="12" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/>
+  <path id="rHandle" class="dr" d="M290 600 L290 860 Q310 876 330 860 L330 600" stroke="#F4F7FB" stroke-width="12" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/>
+  <g id="grip" stroke="#6AA8FF" stroke-width="5" opacity="0"><line x1="292" y1="700" x2="328" y2="680"/><line x1="292" y1="740" x2="328" y2="720"/><line x1="292" y1="780" x2="328" y2="760"/><line x1="292" y1="820" x2="328" y2="800"/></g>
+ </g>
+</svg>
+<div class="a recl" id="rackR" style="left:1240px;top:3440px;opacity:0">RAQUETA DE MADERA · RECREACIÓN</div>
+<!-- final: la regla de 2,18 junto a la raqueta -->
+<svg class="a" id="ruler2" style="left:1960px;top:2470px;opacity:0" width="220" height="1000" viewBox="0 0 220 1000">
+ <rect x="30" y="10" width="90" height="960" rx="8" fill="#E9EEF6" stroke="#0b0f1a" stroke-width="5"/>
+ <g id="ticks2" stroke="#141b2e" stroke-width="3"></g>
+ <rect id="rfill2" x="35" y="965" width="80" height="0" fill="#6AA8FF" opacity=".55"/>
+ <g id="rmark2"><line x1="14" y1="0" x2="150" y2="0" stroke="#6AA8FF" stroke-width="5" stroke-linecap="round"/><text x="156" y="9" font-family="J" font-weight="800" font-size="26" fill="#6AA8FF">2,18</text></g>
+</svg>
+<div class="a serif c" id="l7a" style="left:1160px;width:1080px;top:3520px;font-size:66px"></div>
+<div class="a serif c" id="l7b" style="left:1160px;width:1080px;top:3610px;font-size:66px"></div>
+<div class="a bold c" id="uv" style="left:1160px;width:1080px;top:3700px;font-size:136px;color:#8B5CF6;opacity:0">MÁS GRANDE</div>
+<div class="a rec c" id="cred" style="left:1160px;width:1080px;top:3870px;font-size:14px;opacity:0">FOTOS: NEW YORK WORLD-TELEGRAM AND THE SUN / BIBLIOTECA DEL CONGRESO (D. P.) ·<br>GLENN FITZPATRICK (CC BY 2.5, MODIFICADA) · GREENSTRAT (D. P.), VÍA WIKIMEDIA COMMONS ·<br>MARCADOR, RAQUETA, REGLA Y PISTA: RECREACIÓN</div>
+
+<!-- 5 · en el entrenamiento, uno de sus altos defendía con ella en alto -->
+<div class="a serif" id="l5a" style="left:90px;top:4180px;font-size:68px"></div>
+<div class="a serif" id="l5b" style="left:90px;top:4264px;font-size:68px"></div>
+<svg class="a" id="court" style="left:60px;top:4370px;opacity:0" width="960" height="1080" viewBox="0 0 960 1080">
+ <line x1="20" y1="1000" x2="940" y2="1000" stroke="#B9E0FF" stroke-width="5" opacity=".7"/>
+ <g stroke="rgba(185,224,255,.18)" stroke-width="3"><line x1="60" y1="1000" x2="40" y2="1040"/><line x1="200" y1="1000" x2="180" y2="1040"/><line x1="340" y1="1000" x2="320" y2="1040"/><line x1="480" y1="1000" x2="460" y2="1040"/><line x1="620" y1="1000" x2="600" y2="1040"/><line x1="760" y1="1000" x2="740" y2="1040"/></g>
+ <!-- canasta a la derecha -->
+ <path class="dr" d="M930 1000 L930 300 L900 300" stroke="#8f9bb8" stroke-width="7"/>
+ <rect x="884" y="190" width="14" height="150" fill="#0C1323" stroke="#F4F7FB" stroke-width="5"/>
+ <path class="dr" d="M884 300 L820 300" stroke="#6AA8FF" stroke-width="7"/>
+ <path class="dr" d="M826 302 L834 352 M846 302 L848 352 M866 302 L862 352 M880 302 L874 352" stroke="rgba(244,247,251,.7)" stroke-width="3"/>
+ <!-- línea de altura -->
+ <g id="hline" opacity="0"><line id="hl" x1="20" y1="0" x2="800" y2="0" stroke="#6AA8FF" stroke-width="4" stroke-dasharray="16 12"/><text x="30" y="-16" font-family="J" font-weight="800" font-size="24" fill="#6AA8FF" letter-spacing="1.5">ALTURA DE ALCINDOR · 2,18 M</text></g>
+ <!-- tirador (izquierda) -->
+ <g id="shooter" stroke="#8f9bb8" stroke-width="9" class="dr" opacity="0">
+  <circle cx="150" cy="470" r="34"/><path d="M150 504 L150 720 M150 540 L196 470 L210 420 M150 540 L110 600 L130 650 M150 720 L120 860 L114 1000 M150 720 L186 860 L196 1000"/>
+ </g>
+ <!-- defensor alto (centro): 1 m = 300 px -->
+ <g id="defender" stroke="#F4F7FB" stroke-width="10" class="dr" opacity="0">
+  <circle cx="520" cy="450" r="36"/><path d="M520 486 L520 720 M520 720 L490 860 L486 1000 M520 720 L552 860 L560 1000"/>
+  <path id="armL" d="M520 520 L470 470 L450 400"/><path id="armR" d="M520 520 L572 470 L592 400"/>
+ </g>
+ <!-- raqueta en la mano -->
+ <g id="mini" opacity="0"><g id="miniT"><ellipse class="dr" cx="0" cy="-120" rx="58" ry="74" stroke="#B9E0FF" stroke-width="7"/><path class="dr" d="M-30 -56 Q-8 -30 -6 -6 M30 -56 Q8 -30 6 -6 M-6 -6 L-6 40 M6 -6 L6 40" stroke="#B9E0FF" stroke-width="7"/><g stroke="rgba(185,224,255,.45)" stroke-width="2"><line x1="-40" y1="-170" x2="-40" y2="-70"/><line x1="-20" y1="-188" x2="-20" y2="-52"/><line x1="0" y1="-194" x2="0" y2="-46"/><line x1="20" y1="-188" x2="20" y2="-52"/><line x1="40" y1="-170" x2="40" y2="-70"/><line x1="-52" y1="-150" x2="52" y2="-150"/><line x1="-58" y1="-120" x2="58" y2="-120"/><line x1="-52" y1="-90" x2="52" y2="-90"/></g></g></g>
+ <!-- el tiro, por encima -->
+ <path id="arc" class="dr" d="M210 420 Q520 -220 852 296" stroke="#F4F7FB" stroke-width="5" stroke-dasharray="4 14" opacity="0"/>
+ <g id="ball" opacity="0"><circle r="22" fill="#0C1323" stroke="#F4F7FB" stroke-width="4"/><path class="dr" d="M-22 0 L22 0 M0 -22 C-10 -8 -10 8 0 22 M0 -22 C10 -8 10 8 0 22" stroke="#F4F7FB" stroke-width="2.5"/></g>
+ <text x="940" y="1072" text-anchor="end" font-family="J" font-weight="500" font-size="15" fill="#5d6888" letter-spacing="2.5">PIZARRA · RECREACIÓN</text>
+</svg>
+<div class="a serif" id="l5c" style="left:90px;top:5480px;font-size:68px"></div>
+<div class="a bold" id="l5d" style="left:84px;top:5566px;font-size:150px"></div>
+
+<!-- 6 · Ganaron 46 a 43 -->
+<div class="a serif" id="l6" style="left:1220px;top:4170px;font-size:76px"></div>
+<div class="a mat" id="printC" style="left:1210px;top:4280px;width:980px;opacity:0"><img src="img/cole_g.jpg"><small>COLE FIELD HOUSE, UNIVERSIDAD DE MARYLAND, DONDE SE JUGÓ · FOTO (2007): GREENSTRAT, DOMINIO PÚBLICO</small></div>
+<div class="a panel" id="sb" style="left:1240px;top:4920px;width:920px;height:270px;border-radius:16px;padding:22px 40px;opacity:0">
+ <div style="display:flex;justify-content:space-between"><span class="k">1965 · FINAL DEL PARTIDO</span><span class="recl">MARCADOR · RECREACIÓN</span></div>
+ <div style="display:flex;justify-content:space-between;align-items:center;margin-top:26px;white-space:nowrap">
+  <span style="font:800 40px J;color:#F4F7FB;letter-spacing:.03em;width:240px">DeMATHA</span>
+  <span style="font:800 120px J;font-variant-numeric:tabular-nums;letter-spacing:-.02em;line-height:1"><span id="s1" style="color:#6AA8FF">0</span><span style="color:#3a4770"> – </span><span id="s2" style="color:#F4F7FB">0</span></span>
+  <span style="font:800 30px J;color:#8f9bb8;letter-spacing:.03em;width:240px;text-align:right;line-height:1.15">POWER<br>MEMORIAL</span>
+ </div>
+</div>
+<div class="a" id="grid2" style="left:1412px;top:5260px;width:576px;height:288px;opacity:0"></div>
+<div class="a k c" id="g2l" style="left:1160px;width:1080px;top:5580px;opacity:0">LA RACHA DE POWER MEMORIAL SE QUEDA EN 71</div>
+
+</div>
+<canvas id="grain" width="360" height="640"></canvas>
+<script src="gsap.min.js"></script>
+<script src="words.js"></script>
+<script>
+const $=i=>document.getElementById(i), cl=x=>Math.min(1,Math.max(0,x)), P=(t,a,b)=>cl((t-a)/(b-a)), eo=x=>1-Math.pow(1-x,3), eio=x=>x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2;
+const W=window.WORDS, T=k=>W[k][1], E=k=>W[k][2];
+const NS='http://www.w3.org/2000/svg', mk=(tag,at,par)=>{const e=document.createElementNS(NS,tag);for(const k in at)e.setAttribute(k,at[k]);par&&par.appendChild(e);return e};
+const L=[];
+function line(id,tokens){const el=$(id);for(const [txt,k,cls] of tokens){const s=document.createElement('span');s.className='w '+(cls||'');s.textContent=txt;el.appendChild(s);L.push([s,T(k)])}}
+line('l1',[['En',0],['1965,',1,'acc']]);
+line('l1b',[['Power',2],['Memorial',3],['llevaba',4]]);
+line('l1c',[['partidos',6],['sin',7],['perder.',8,'it']]);
+line('l2a',[['Tenía',9],['a',10]]);
+line('l2b',[['Lew',11],['Alcindor:',12,'acc']]);
+line('l3a',[['Morgan',16]]);
+line('l3b',[['Wootten,',17,'acc']]);
+line('l3c',[['entrenador',18],['de',19],['DeMatha,',20,'it']]);
+line('l4a',[['preparó',21],['el',22],['partido',23]]);
+line('l4b',[['con',24],['una',25]]);
+line('l4c',[['RAQUETA',26]]);
+line('l4d',[['de',27],['tenis:',28,'it']]);
+line('l5a',[['en',29],['el',30],['entrenamiento,',31,'it']]);
+line('l5b',[['uno',32],['de',33],['sus',34],['altos',35,'acc']]);
+line('l5c',[['defendía',36],['con',37],['ella',38]]);
+line('l5d',[['EN',39],['ALTO.',40]]);
+line('l6',[['Ganaron',41]]);
+line('l7a',[['Si',45],['el',46],['rival',47],['es',48],['más',49],['grande,',50,'it']]);
+line('l7b',[['entrena',51],['contra',52],['algo',53]]);
+// ----- 71 fichas (y la 72, en blanco) -----
+const chips=[];for(let i=0;i<71;i++){const d=document.createElement('div');d.className='chip';d.style.cssText=`left:${(i%12)*74}px;top:${Math.floor(i/12)*74}px;width:62px;height:62px;line-height:58px`;d.textContent='V';$('grid').appendChild(d);chips.push(d)}
+const chips2=[];for(let i=0;i<72;i++){const d=document.createElement('div');d.className='chip';d.style.cssText=`left:${(i%12)*48}px;top:${Math.floor(i/12)*48}px;width:40px;height:40px;border-radius:7px;`+(i<71?'background:#1d3566;border-color:#6AA8FF':'background:transparent;border:2px dashed #8f9bb8');$('grid2').appendChild(d);chips2.push(d)}
+// ----- reglas: 0 a 2,40 m -----
+function ticks(g,x0,x1,yb,yt,big){const n=24;for(let i=0;i<=n;i++){const y=yb-(yb-yt)*i/n,w=i%5==0?big:(i%5==0?big:big*.45);mk('line',{x1:x0,y1:y,x2:x0+w,y2:y},g);if(i%5==0&&i>0&&x1)mk('text',{x:x0+big+8,y:y+7,'font-family':'J','font-weight':700,'font-size':20,fill:'#5d6888',stroke:'none'},g).textContent=(i/10).toFixed(1).replace('.',',')}}
+ticks($('ticks'),46,1,1114,26,40); ticks($('ticks2'),35,0,965,15,32);
+const Y1=h=>1114-(1114-26)*h/2.4, Y2=h=>965-(965-15)*h/2.4;
+$('rmark2').setAttribute('transform',`translate(0,${Y2(2.18)})`);
+// cuerdas de la raqueta grande
+for(let i=-4;i<=4;i++){const x=310+i*36,hh=240*Math.sqrt(Math.max(0,1-(i*36/190)**2))-14;mk('line',{x1:x,y1:250-hh,x2:x,y2:250+hh},$('str'))}
+for(let j=-5;j<=5;j++){const y=250+j*38,ww=190*Math.sqrt(Math.max(0,1-(j*38/240)**2))-14;mk('line',{x1:310-ww,y1:y,x2:310+ww,y2:y},$('str'))}
+// ----- cámara: un solo plano -----
+const cam={cx:540,cy:960,z:1.06};const tl=gsap.timeline({paused:true});
+const fly=(t,cx,cy,z,d=.9)=>{tl.to(cam,{cx,cy,duration:d,ease:'power2.inOut'},t);tl.to(cam,{keyframes:[{z:z*0.9,duration:d*.5,ease:'sine.out'},{z,duration:d*.5,ease:'sine.inOut'}]},t)};
+tl.set(cam,{cx:540,cy:960,z:1.06},0).to(cam,{z:1.0,cy:1000,duration:5.1,ease:'sine.out'},0);
+fly(5.16,1700,980,1.0); tl.to(cam,{z:1.03,cy:1000,duration:3.2,ease:'sine.out'},6.06);
+fly(8.42,540,2860,1.0); tl.to(cam,{z:1.03,cy:2900,duration:1.9,ease:'sine.out'},9.32);
+fly(11.25,1700,2960,1.0); tl.to(cam,{z:1.04,cy:2980,duration:2.0,ease:'sine.out'},12.15);
+fly(14.2,540,5020,1.0); tl.to(cam,{z:1.03,cy:5060,duration:3.2,ease:'sine.out'},15.1);
+fly(18.24,1700,4990,1.0); tl.to(cam,{z:1.03,cy:5010,duration:1.9,ease:'sine.out'},19.14);
+fly(21.08,1700,3060,1.0); tl.to(cam,{z:1.04,cy:3080,duration:4.4,ease:'sine.out'},21.98);
+// grano
+const g=$('grain').getContext('2d'),gi=g.createImageData(360,640);let sd=1;const RN=()=>(sd=(sd*16807)%2147483647)/2147483647;
+function camAt(t){tl.seek(t,false);return [cam.cx,cam.cy,cam.z]}
+const inn=(id,t0,dy=40,d=.45,rot=0)=>{const p=eo(P(window._t,t0,t0+d));const e=$(id);e.style.opacity=p;e.style.transform=`translateY(${(1-p)*dy}px) rotate(${rot*(1-p)+(rot?rot*.4:0)}deg)`;return p};
+const CARD='POWER MEMORIAL · NUEVA YORK · 1965';
+window.frame=function(t){window._t=t;
+ sd=1+Math.floor(t*30)*7919;const d=gi.data;for(let i=0;i<d.length;i+=4){const v=RN()*255;d[i]=v*.8;d[i+1]=v*.85;d[i+2]=v;d[i+3]=255}g.putImageData(gi,0,0);
+ const p0=camAt(Math.max(0,t-1/30)),p1=camAt(t);const sp=Math.hypot(p1[0]-p0[0],p1[1]-p0[1]);
+ $('cam').style.transform=`translate(540px,960px) scale(${p1[2]}) translate(${-p1[0]}px,${-p1[1]}px)`;
+ $('cam').style.filter=sp>14?`blur(${Math.min(4,(sp-14)/30).toFixed(2)}px)`:'none';
+ for(const [s,t1] of L){const t0=t1<.3?t1-.3:t1;const p=eo(P(t,t0-.04,t0+.36));s.style.opacity=p;s.style.transform=`translateX(${(1-p)*24}px)`;s.style.filter=p<1?`blur(${(1-p)*6}px)`:'none'}
+ // 1 · ficha a máquina y 71 fichas
+ inn('card',T(2)-.25,30,.4);
+ const nc=Math.floor(cl((t-(T(2)+.05))/.95)*CARD.length);$('cardT').textContent=CARD.slice(0,nc);
+ const gp=eo(P(t,T(4)-.2,T(4)+.25));$('grid').style.opacity=gp;$('grid').style.transform=`translateY(${(1-gp)*30}px)`;
+ let n=0;chips.forEach((c,i)=>{const ti=T(5)-.05+i*.017;const q=eo(P(t,ti,ti+.2));if(t>=ti)n++;c.style.background=`rgb(${15+14*q},${24+29*q},${48+54*q})`;c.style.borderColor=q>0?'#6AA8FF':'#26335a';c.style.color=q>0?'#F4F7FB':'#3a4770'});
+ $('cnt').textContent=n;$('cnt').style.opacity=eo(P(t,T(5)-.15,T(5)+.1));
+ // 2 · Alcindor y la regla
+ const pa=eo(P(t,T(9)-.35,T(9)+.2));$('printA').style.opacity=pa;$('printA').style.transform=`rotate(${-2-(1-pa)*3}deg) translateY(${(1-pa)*60}px)`;
+ const ru=eo(P(t,T(11)-.1,T(11)+.3));$('ruler').style.opacity=ru;$('ruler').style.transform=`translateY(${(1-ru)*40}px)`;
+ const rf=eio(P(t,T(13)-.05,E(15)-.05)),hh=2.18*rf;$('rfill').setAttribute('y',Y1(hh));$('rfill').setAttribute('height',1114-Y1(hh));
+ $('rmark').setAttribute('transform',`translate(0,${Y1(hh)})`);$('rmark').setAttribute('opacity',ru*cl(rf*4));
+ const hq=P(t,T(13)-.04,T(13)+.36);$('h218').style.opacity=eo(hq);$('h218').style.filter=hq<1?`blur(${(1-eo(hq))*6}px)`:'none';
+ // 3 · DeMatha y la ficha sin foto
+ const pg=eo(P(t,T(16)-.45,T(16)+.15));$('printG').style.opacity=pg;$('printG').style.transform=`rotate(${-3+(1-pg)*-3}deg) translateY(${(1-pg)*60}px)`;
+ const fc=eo(P(t,T(18)-.15,T(18)+.3));$('ficha').style.opacity=fc;$('ficha').style.transform=`rotate(${2+(1-fc)*3}deg) translateY(${(1-fc)*50}px)`;
+ // 4 · la raqueta se dibuja sola
+ const r1=eo(P(t,T(26)-.15,T(26)+.55));$('rHead').setAttribute('stroke-dashoffset',100-100*r1);
+ $('rThroat').setAttribute('stroke-dashoffset',100-100*eo(P(t,T(26)+.3,T(26)+.7)));
+ $('rHandle').setAttribute('stroke-dashoffset',100-100*eo(P(t,T(26)+.5,T(28)+.1)));
+ const sq=P(t,T(27),T(28)+.2);$('str').setAttribute('opacity',eo(sq));$('rHead2').setAttribute('opacity',eo(sq)*.6);$('grip').setAttribute('opacity',eo(P(t,T(28),T(28)+.3)));
+ $('rackR').style.opacity=eo(P(t,T(28),T(28)+.4));
+ // final: fuera los textos de la escena 4; la raqueta sube por encima de la regla
+ const fin=eo(P(t,21.0,21.5));$('s4t').style.opacity=1-fin;
+ const up=eio(P(t,T(53)-.1,T(53)+.5));$('rack').style.transform=`translateY(${-70*up}px)`;
+ const r2=eo(P(t,T(45)-.2,T(45)+.3));$('ruler2').style.opacity=r2;$('ruler2').style.transform=`translateY(${(1-r2)*40}px)`;
+ const f2=eio(P(t,T(47),E(50))),h2=2.18*f2;$('rfill2').setAttribute('y',Y2(h2));$('rfill2').setAttribute('height',965-Y2(h2));$('rmark2').setAttribute('opacity',cl(f2*3));
+ const uq=P(t,T(54)-.05,T(54)+.32);$('uv').style.opacity=eo(uq);$('uv').style.filter=uq<1?`blur(${(1-uq)*6}px)`:'drop-shadow(0 0 18px rgba(139,92,246,.55))';$('uv').style.transform=`scale(${.94+.06*eo(uq)})`;
+ const cq=eo(P(t,T(51),T(51)+.6));$('cred').style.opacity=cq;
+ // 5 · la pizarra: el alto defiende con la raqueta en alto; el tiro pasa por encima
+ const ct=eo(P(t,T(29)-.4,T(29)+.1));$('court').style.opacity=ct;
+ $('shooter').setAttribute('opacity',eo(P(t,T(31),T(31)+.4)));
+ const df=eo(P(t,T(32)-.05,T(32)+.35));$('defender').setAttribute('opacity',df);
+ const grow=eio(P(t,T(35)-.05,T(35)+.35));$('defender').setAttribute('transform',`translate(520 1000) scale(${.9+.1*grow}) translate(-520 -1000)`);
+ const arm=eio(P(t,T(36),T(36)+.4)); // brazos arriba
+ const ax=(a,b)=>a+(b-a)*arm;
+ $('armL').setAttribute('d',`M520 520 L${ax(476,500)} ${ax(580,450)} L${ax(470,505)} ${ax(640,370)}`);
+ $('armR').setAttribute('d',`M520 520 L${ax(564,540)} ${ax(580,450)} L${ax(570,535)} ${ax(640,370)}`);
+ const mi=eo(P(t,T(38)-.05,T(38)+.25));$('mini').setAttribute('opacity',mi);
+ const lift=eio(P(t,T(39)-.05,T(40)+.15)), handY=ax(640,370)*1;
+ $('mini').setAttribute('transform',`translate(${ax(570,535)-15+15*lift} ${handY-4-30*lift}) rotate(${-8+8*lift})`);
+ const topY=handY-4-30*lift-194;
+ $('hline').setAttribute('opacity',eo(P(t,T(40)-.05,T(40)+.25)));$('hline').setAttribute('transform',`translate(0 ${1000-2.18*300})`);
+ $('hl').setAttribute('x2',20+780*eo(P(t,T(40)-.05,T(40)+.35)));
+ const aq=P(t,E(40)-.1,E(40)+.75);$('arc').setAttribute('opacity',aq>0?.9:0);$('arc').style.strokeDashoffset=0;
+ const tq=eio(aq),bx=(1-tq)*(1-tq)*210+2*(1-tq)*tq*520+tq*tq*852,by=(1-tq)*(1-tq)*420+2*(1-tq)*tq*-220+tq*tq*296;
+ $('ball').setAttribute('transform',`translate(${bx} ${by})`);$('ball').setAttribute('opacity',aq>0?1:0);
+ $('arc').setAttribute('stroke-dasharray',`4 14`);$('arc').style.clipPath=`inset(0 ${100-100*tq}% 0 0)`;
+ // 6 · 46-43 en el Cole Field House
+ const pc=eo(P(t,T(41)-.45,T(41)+.1));$('printC').style.opacity=pc;$('printC').style.transform=`rotate(${1.5+(1-pc)*3}deg) translateY(${(1-pc)*60}px)`;
+ const sb=eo(P(t,T(42)-.3,T(42)+.1));$('sb').style.opacity=sb;$('sb').style.transform=`translateY(${(1-sb)*40}px)`;
+ $('s1').textContent=Math.round(46*eo(P(t,T(42)-.05,E(42)-.1)));$('s2').textContent=Math.round(43*eo(P(t,T(44)-.05,E(44)-.1)));
+ const g2=eo(P(t,T(43)-.1,T(43)+.35));$('grid2').style.opacity=g2*.9;$('g2l').style.opacity=eo(P(t,T(44),T(44)+.4));
+ chips2[71].style.borderColor=`rgba(185,224,255,${.5+.5*Math.sin(t*6)**2})`;
+};
+document.fonts.ready.then(()=>Promise.all([...document.images].map(i=>i.complete?1:new Promise(r=>{i.onload=r;i.onerror=r})))).then(()=>{frame(0);window.ready=true});
+</script></body></html>
