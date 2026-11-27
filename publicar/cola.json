@@ -1422,5 +1422,22 @@
   },
   "added": "2026-11-27T06:36:00+01:00",
   "nota": "v7 historia con fotos (McLendon, Durham 1944). Montaje Marta A (02); 29,8 s con cierre común. Créditos en tools/reel_v7/v7-partido-secreto-mclendon/CREDITOS.md. Pendiente de auditoría de Andrés."
+ },
+ {
+  "id": "v7-balon-del-sabado-hogan",
+  "kind": "reel",
+  "files": [
+   "https://d2ol7oe51mr4n9.cloudfront.net/user_3M2z7lIyzIPYtjNHcxRWFNk6wi7/8d417352-1d40-4084-a254-cf0706219d39.mp4"
+  ],
+  "caption": "Inglaterra perdió en casa y el seleccionador rival dio las gracias… a un inglés.\n\nEn 1953, Hungría ganó 6-3 a Inglaterra en Wembley. Su seleccionador, Gusztáv Sebes, lo resumió así: «Jugamos al fútbol como nos enseñó Jimmy Hogan». Hogan era inglés, y en una Inglaterra donde el balón se reservaba para el día de partido, él entrenaba con balón: control, pase y movimiento (The Irish Times; These Football Times; Wikipedia).\n\n¿Cuántos minutos de tu entrenamiento son con balón?\n\nEstamos terminando la app de ProTeam. Síguenos para no perderte nada: muy pronto, novedades.\n\nFuentes: The Irish Times (Frank McNally), These Football Times (Andrew Flint), Wikipedia. Fotos: autor desconocido (dominio público; National Football Museum y Spaarnestad Photo), Magyar Posta (dominio público), Tibor Erky-Nagy / Fortepan (CC BY-SA 3.0), Dr Neil Clifton (CC BY-SA 2.0), vía Wikimedia Commons. Marcador, armario, balón y campo: recreación.\nMúsica y efectos: Epidemic Sound\n\n#entrenador #entrenadordefutbol #fútbol #futbolbase #metodología #entrenamiento #JimmyHogan #Hungría #Wembley #historiadelfutbol #táctica #ProTeam",
+  "state": "revisión",
+  "ig": {
+   "status": "pendiente"
+  },
+  "tiktok": {
+   "status": "pendiente"
+  },
+  "added": "2026-11-27T07:08:00+01:00",
+  "nota": "v7 historia con fotos (Jimmy Hogan; Hungría 6-3 en Wembley, 1953). Montaje Marta B (02); 28,8 s con cierre común. Créditos en tools/reel_v7/v7-balon-del-sabado-hogan/CREDITOS.md. Pendiente de auditoría de Andrés."
  }
 ]
