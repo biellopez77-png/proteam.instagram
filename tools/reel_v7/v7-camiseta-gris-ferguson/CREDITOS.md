@@ -18,3 +18,9 @@ Música y efectos (Epidemic Sound, vía Higgsfield): «Musical, Loop, Piano, Int
 Render: htmlreel (30 fps) y fundido de 0,6 s al cierre común en 24,1 s; video_mudo.mp4 a crf 26.
 
 Vídeo final: https://d2ol7oe51mr4n9.cloudfront.net/user_3M2z7lIyzIPYtjNHcxRWFNk6wi7/9c063427-b149-4b35-b3c8-ba2b753035a9.mp4 (29,7 s: 24,1 s de historia + cierre común; comprobado con whisper: se oyen las 60 palabras; −16,5 LUFS, −0,8 dBTP).
+
+## r2 (27/11/2026, Marta B) tras la crítica de Andrés (80/100)
+- Remate: la cámara se para a 23,5 s; «VERLO.» entero en ultravioleta desde 23,9 s y quieto hasta 24,9 s; fundido de 0,5 s a negro (24,9–25,4 s) y después el cierre común tools/reel_v6/outro/outro2.mp4 (sin solape con el logo).
+- Sonido: mix_r2.py (misma voz, música y efectos); la voz de outro2 («Dale like y síguenos para más vídeos como este») entra a 25,38 s, 1,5 s después de «verlo»; la música sigue bajando bajo el cierre.
+- Jersey de Ferguson: dibujo y rótulo del pecho difuminados (cut.py, blur_chest).
+- Vídeo final r2: https://d2ol7oe51mr4n9.cloudfront.net/user_3M2z7lIyzIPYtjNHcxRWFNk6wi7/43e36bd4-ec58-49e9-9dd6-7164a4777927.mp4 (29,4 s; whisper: 60 palabras + cierre; −16,9 LUFS, −1,0 dBTP).

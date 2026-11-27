@@ -1712,7 +1712,7 @@
   "id": "v7-camiseta-gris-ferguson",
   "kind": "reel",
   "files": [
-   "https://d2ol7oe51mr4n9.cloudfront.net/user_3M2z7lIyzIPYtjNHcxRWFNk6wi7/0dcd769c-7432-4b89-b0a9-bebf8d2d4663.mp4"
+   "https://d2ol7oe51mr4n9.cloudfront.net/user_3M2z7lIyzIPYtjNHcxRWFNk6wi7/43e36bd4-ec58-49e9-9dd6-7164a4777927.mp4"
   ],
   "caption": "Perdían 3-0 al descanso y el entrenador pidió… otra camiseta.\n\nEl 13 de abril de 1996, en The Dell, el Manchester United de Alex Ferguson perdía 3-0 contra el Southampton. Según Gary Neville, Ferguson entró en el vestuario y les mandó cambiarse: la camiseta gris fuera, la azul y blanca dentro. Su explicación: «A los jugadores no les gusta la gris. Les cuesta encontrarse». Neville cuenta que el club trabajaba con una especialista en visión, Gail Stephenson, que ya había avisado de que el gris se distingue peor entre el público. La segunda parte acabó 0-1 (Giggs), el partido 3-1, y United no volvió a ponerse la gris. Le Tissier lo llamó «la peor excusa que he oído para una derrota» (manutd.com; Sports Illustrated; ESPN; Sports Mole).\n\n¿Tus jugadores levantan la cabeza antes de pasarla, o pasan a donde creen que está el compañero?\n\n¿Te ha servido? Dale like y síguenos para más vídeos como este.\n\nFuentes: manutd.com (Gary Neville, 2019), Sports Illustrated (2018), ESPN, Sports Mole, Premier League. Fotos: Colin Smith (CC BY-SA 2.0), Øyvind Vik (dominio público), Dan Kerins (CC BY 2.5), vía Wikimedia Commons. Marcadores, camisetas, vestuario, tarjeta, grada y campo: recreación.\nMúsica y efectos: Epidemic Sound\n\n#entrenador #entrenadordefutbol #fútbol #futbolbase #historiadelfutbol #AlexFerguson #ManchesterUnited #Southampton #visión #pase #táctica #ProTeam",
   "state": "revisión",
@@ -1723,11 +1723,13 @@
    "status": "pendiente"
   },
   "added": "2026-11-27T08:14:00+01:00",
-  "nota": "v7 historia con fotos (Ferguson y la camiseta gris en The Dell, 1996). Guion: agencia/fabrica-v7/guiones/v7-camiseta-gris-ferguson.md (Dani A). Montaje: Marta B (02). Créditos: tools/reel_v7/v7-camiseta-gris-ferguson/CREDITOS.md",
+  "nota": "v7 historia con fotos (Ferguson y la camiseta gris en The Dell, 1996). Guion: agencia/fabrica-v7/guiones/v7-camiseta-gris-ferguson.md (Dani A). Montaje: Marta B (02). Créditos: tools/reel_v7/v7-camiseta-gris-ferguson/CREDITOS.md · r2 (27/11, Marta B): «VERLO.» entero y quieto hasta 24,9 s, fundido a negro de 0,5 s, outro2 a 25,4 s (voz «Dale like» a 25,38 s, 1,5 s después de «verlo»); jersey de Ferguson difuminado; 29,4 s, −16,9 LUFS.",
   "files_old": [
+   "https://d2ol7oe51mr4n9.cloudfront.net/user_3M2z7lIyzIPYtjNHcxRWFNk6wi7/0dcd769c-7432-4b89-b0a9-bebf8d2d4663.mp4",
    "https://d2ol7oe51mr4n9.cloudfront.net/user_3M2z7lIyzIPYtjNHcxRWFNk6wi7/9c063427-b149-4b35-b3c8-ba2b753035a9.mp4"
   ],
-  "cierre": "outro2"
+  "cierre": "outro2",
+  "updated": "2026-11-27T23:05:00+01:00"
  },
  {
   "id": "v7-derrota-dream-team-1992",
