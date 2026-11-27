@@ -777,7 +777,9 @@
   "tiktok": {
    "status": "programada",
    "via": "metricool",
-   "when": "2026-11-28T13:30:00+01:00"
+   "when": "2026-11-28T13:30:00+01:00",
+   "metricoolId": 444129532,
+   "media_ok": "outro2"
   },
   "added": "2026-11-24T17:50:41.850714+01:00",
   "files_old": [
@@ -800,7 +802,9 @@
   "tiktok": {
    "status": "programada",
    "via": "metricool",
-   "when": "2026-11-29T13:30:00+01:00"
+   "when": "2026-11-29T13:30:00+01:00",
+   "metricoolId": 444129824,
+   "media_ok": "outro2"
   },
   "added": "2026-11-24T17:50:41.926482+01:00",
   "files_old": [
@@ -823,7 +827,9 @@
   "tiktok": {
    "status": "programada",
    "via": "metricool",
-   "when": "2026-11-29T20:30:00+01:00"
+   "when": "2026-11-29T20:30:00+01:00",
+   "metricoolId": 444130174,
+   "media_ok": "outro2"
   },
   "added": "2026-11-24T17:50:42.002169+01:00",
   "files_old": [
@@ -846,7 +852,9 @@
   "tiktok": {
    "status": "programada",
    "via": "metricool",
-   "when": "2026-11-30T13:30:00+01:00"
+   "when": "2026-11-30T13:30:00+01:00",
+   "metricoolId": 444130272,
+   "media_ok": "outro2"
   },
   "added": "2026-11-24T17:50:42.079229+01:00",
   "files_old": [
@@ -869,7 +877,9 @@
   "tiktok": {
    "status": "programada",
    "via": "metricool",
-   "when": "2026-11-30T20:30:00+01:00"
+   "when": "2026-11-30T20:30:00+01:00",
+   "metricoolId": 444130732,
+   "media_ok": "outro2"
   },
   "added": "2026-11-24T17:50:42.153472+01:00",
   "files_old": [
@@ -892,7 +902,9 @@
   "tiktok": {
    "status": "programada",
    "via": "metricool",
-   "when": "2026-12-01T13:30:00+01:00"
+   "when": "2026-12-01T13:30:00+01:00",
+   "metricoolId": 444130858,
+   "media_ok": "outro2"
   },
   "added": "2026-11-24T17:50:42.224331+01:00",
   "files_old": [
@@ -915,7 +927,9 @@
   "tiktok": {
    "status": "programada",
    "via": "metricool",
-   "when": "2026-12-01T20:30:00+01:00"
+   "when": "2026-12-01T20:30:00+01:00",
+   "metricoolId": 444131123,
+   "media_ok": "outro2"
   },
   "added": "2026-11-24T17:50:42.295667+01:00",
   "files_old": [
@@ -938,7 +952,9 @@
   "tiktok": {
    "status": "programada",
    "via": "metricool",
-   "when": "2026-12-02T13:30:00+01:00"
+   "when": "2026-12-02T13:30:00+01:00",
+   "metricoolId": 444131237,
+   "media_ok": "outro2"
   },
   "added": "2026-11-24T17:50:42.371037+01:00",
   "files_old": [
@@ -961,7 +977,9 @@
   "tiktok": {
    "status": "programada",
    "via": "metricool",
-   "when": "2026-12-02T20:30:00+01:00"
+   "when": "2026-12-02T20:30:00+01:00",
+   "metricoolId": 444131468,
+   "media_ok": "outro2"
   },
   "added": "2026-11-24T17:50:42.443131+01:00",
   "files_old": [
@@ -984,7 +1002,9 @@
   "tiktok": {
    "status": "programada",
    "via": "metricool",
-   "when": "2026-12-03T13:30:00+01:00"
+   "when": "2026-12-03T13:30:00+01:00",
+   "metricoolId": 444131555,
+   "media_ok": "outro2"
   },
   "added": "2026-11-24T17:50:42.517583+01:00",
   "files_old": [
@@ -1007,7 +1027,9 @@
   "tiktok": {
    "status": "programada",
    "via": "metricool",
-   "when": "2026-12-03T20:30:00+01:00"
+   "when": "2026-12-03T20:30:00+01:00",
+   "metricoolId": 444131790,
+   "media_ok": "outro2"
   },
   "added": "2026-11-24T17:50:42.593474+01:00",
   "files_old": [
@@ -1030,7 +1052,9 @@
   "tiktok": {
    "status": "programada",
    "via": "metricool",
-   "when": "2026-12-04T13:30:00+01:00"
+   "when": "2026-12-04T13:30:00+01:00",
+   "metricoolId": 444131933,
+   "media_ok": "outro2"
   },
   "added": "2026-11-24T17:50:42.666482+01:00",
   "files_old": [
@@ -1053,7 +1077,9 @@
   "tiktok": {
    "status": "programada",
    "via": "metricool",
-   "when": "2026-12-04T20:30:00+01:00"
+   "when": "2026-12-04T20:30:00+01:00",
+   "metricoolId": 444132250,
+   "media_ok": "outro2"
   },
   "added": "2026-11-24T17:50:42.738606+01:00",
   "files_old": [
@@ -1076,7 +1102,9 @@
   "tiktok": {
    "status": "programada",
    "via": "metricool",
-   "when": "2026-12-05T13:30:00+01:00"
+   "when": "2026-12-05T13:30:00+01:00",
+   "metricoolId": 444132373,
+   "media_ok": "outro2"
   },
   "added": "2026-11-24T17:50:42.826845+01:00",
   "files_old": [
@@ -1099,7 +1127,9 @@
   "tiktok": {
    "status": "programada",
    "via": "metricool",
-   "when": "2026-12-05T20:30:00+01:00"
+   "when": "2026-12-05T20:30:00+01:00",
+   "metricoolId": 444132692,
+   "media_ok": "outro2"
   },
   "added": "2026-11-24T17:50:42.901275+01:00",
   "files_old": [
@@ -1174,7 +1204,8 @@
    "status": "programada",
    "via": "metricool",
    "when": "2026-11-27T18:00:00+01:00",
-   "metricoolId": 444111253
+   "metricoolId": 444129429,
+   "media_ok": "outro2"
   },
   "added": "2026-11-24T22:20:00+01:00",
   "nota": "v7 historia con fotos (guion de Dani A). Voz 21 s (ElevenLabs eleven_v4, Mateo). Música y SFX Epidemic Sound mezclados en Higgsfield (tools/reel_v7/boot-room-anfield/mix.py). Montaje: Marta B (02).",
@@ -1199,7 +1230,8 @@
    "status": "programada",
    "via": "metricool",
    "when": "2026-11-28T18:00:00+01:00",
-   "metricoolId": 444111288
+   "metricoolId": 444129693,
+   "media_ok": "outro2"
   },
   "added": "2026-11-24T22:40:00+01:00",
   "nota": "v7 historia con fotos (guion de Dani B). Voz 17,6 s (ElevenLabs eleven_v4, Mateo). Música y SFX Epidemic Sound mezclados en Higgsfield (tools/reel_v7/v7-golpe-ciento-uno-spurs/mix.py). Montaje: Marta A (02).",
@@ -1224,7 +1256,8 @@
    "status": "programada",
    "via": "metricool",
    "when": "2026-11-29T18:00:00+01:00",
-   "metricoolId": 444112022
+   "metricoolId": 444130053,
+   "media_ok": "outro2"
   },
   "added": "2026-11-24T23:10:00+01:00",
   "nota": "v7 historia con fotos (guion de Dani A). Voz 21,7 s (ElevenLabs eleven_v4, Mateo, 1 toma). Música y SFX Epidemic Sound mezclados en Higgsfield (tools/reel_v7/v7-jinete-sacchi/mix.py). Montaje: Marta B (02).",
@@ -1249,7 +1282,8 @@
    "status": "programada",
    "via": "metricool",
    "when": "2026-11-30T18:00:00+01:00",
-   "metricoolId": 444112065
+   "metricoolId": 444130444,
+   "media_ok": "outro2"
   },
   "added": "2026-11-24T23:45:00+01:00",
   "nota": "v7 historia con fotos (guion de Dani B). Voz 22,0 s (ElevenLabs eleven_v4, Mateo, 1 toma, 54 palabras). Música y SFX Epidemic Sound mezclados en Higgsfield (tools/reel_v7/v7-red-valvano-1983/mix.py). Montaje: Marta A (02).",
@@ -1274,7 +1308,8 @@
    "status": "programada",
    "via": "metricool",
    "when": "2026-12-01T18:00:00+01:00",
-   "metricoolId": 444112090
+   "metricoolId": 444130996,
+   "media_ok": "outro2"
   },
   "added": "2026-11-25T00:05:00+01:00",
   "nota": "v7 historia con fotos (guion de Dani A, agencia/fabrica-v7/guiones/v7-parada-arsenal-chapman.md); montaje Marta B; tools/reel_v7/v7-parada-arsenal-chapman/. 28,9 s (23,3 s de historia + cierre común).",
@@ -1299,7 +1334,8 @@
    "status": "programada",
    "via": "metricool",
    "when": "2026-12-02T18:00:00+01:00",
-   "metricoolId": 444112124
+   "metricoolId": 444131367,
+   "media_ok": "outro2"
   },
   "added": "2026-11-25T00:45:00+01:00",
   "nota": "v7 historia con fotos (guion de Dani A, agencia/fabrica-v7/guiones/v7-carteles-herrera.md); montaje Marta A; tools/reel_v7/v7-carteles-herrera/. 30,8 s (25,15 s de historia + cierre común).",
@@ -1324,7 +1360,8 @@
    "status": "programada",
    "via": "metricool",
    "when": "2026-12-04T18:00:00+01:00",
-   "metricoolId": 444112762
+   "metricoolId": 444132082,
+   "media_ok": "outro2"
   },
   "added": "2026-11-25T01:15:00+01:00",
   "nota": "v7 historia con fotos (guion de Dani B, agencia/fabrica-v7/guiones/v7-libros-phil-jackson.md); montaje Marta B; tools/reel_v7/v7-libros-phil-jackson/. 26,1 s (20,5 s de historia + cierre común).",
@@ -1350,7 +1387,8 @@
    "status": "programada",
    "via": "metricool",
    "when": "2026-12-03T18:00:00+01:00",
-   "metricoolId": 444112783
+   "metricoolId": 444131677,
+   "media_ok": "outro2"
   },
   "added": "2026-11-25T01:45:00+01:00",
   "nota": "v7 historia con fotos (guion de Dani B). Voz 21,6 s (ElevenLabs eleven_v4, Mateo, 1 toma). Música y SFX Epidemic Sound mezclados en Higgsfield (tools/reel_v7/v7-puno-krzyzewski/mix.py). Montaje: Marta A (02).",
@@ -1438,7 +1476,8 @@
    "status": "programada",
    "via": "metricool",
    "when": "2026-12-05T18:00:00+01:00",
-   "metricoolId": 444112813
+   "metricoolId": 444132536,
+   "media_ok": "outro2"
   },
   "added": "2026-11-25T03:45:05+01:00",
   "nota": "v7 historia con fotos (guion Dani B, agencia/fabrica-v7/guiones/v7-calcetin-wooden.md); montaje Marta A; tools/reel_v7/v7-calcetin-wooden/. 27,8 s (22,2 s de historia + cierre común). Crítica: agencia/fabrica-v7/criticas/v7-calcetin-wooden.md",
@@ -1464,7 +1503,8 @@
    "status": "programada",
    "via": "metricool",
    "when": "2026-12-06T18:00:00+01:00",
-   "metricoolId": 444112838
+   "metricoolId": 444132842,
+   "media_ok": "outro2"
   },
   "added": "2026-11-27T02:38:59+01:00",
   "nota": "v7 historia con fotos (Pat Summitt). Guion: agencia/fabrica-v7/guiones/v7-tres-filas-summitt.md (Dani B). Montaje: Marta A (02). Créditos: tools/reel_v7/v7-tres-filas-summitt/CREDITOS.md",
