@@ -29,3 +29,10 @@ Vídeo final (r1, sustituido): https://d2ol7oe51mr4n9.cloudfront.net/user_3M2z7l
 6. Créditos finales de 15 a 17 px.
 Mismo audio de r1 (misma voz, misma música y efectos, mismos tiempos: OUT 21,45 s), copiado del vídeo r1 y multiplexado con el nuevo mudo en el sandbox de Higgsfield. Whisper small oye la voz entera y el cierre. Salto máximo de luminancia entre fotogramas 5,7/255 (viaje de 10,4 s): sin destellos.
 Vídeo final r2: https://d2ol7oe51mr4n9.cloudfront.net/user_3M2z7lIyzIPYtjNHcxRWFNk6wi7/12c26708-f0bd-4b3f-b25d-a846a914e56f.mp4 (27,1 s).
+
+## r3 · Marta B (02), 27/11/2026 — correcciones de la auditoría de Andrés (r2, 84/100: falla el final)
+1. Remate: la cámara se para a 21,0 s (antes seguía hasta 21,5 s); «El sexto hombre / no es el sexto mejor.» queda entero, con el 6 ultravioleta y quieto de ~21,3 a 22,2 s (≈ 1 s tras «mejor», que acaba a 21,16 s).
+2. El remate (6, frase y créditos) se apaga de 22,2 a 22,5 s y solo entonces empieza el fundido de 0,5 s a outro2: el logo ProTeam ya no se monta sobre el 6 ni sobre la frase.
+3. Audio: misma voz, misma música y mismos efectos (la mezcla de r1 hasta 21,4 s); la misma pista de Epidemic sigue sola bajo el remate y baja con el cierre; outro2 + sting entran a 22,5 s. Whisper small: la historia entera y «Dale like y síguenos para más vídeos como este» desde 22,48 s (≈ 1,3 s de aire tras «mejor»). −16,9 LUFS, −1,1 dBTP. Script: mix_r3.py.
+4. video_mudo.mp4 nuevo con outro2 (26,5 s).
+Vídeo final r3: https://d2ol7oe51mr4n9.cloudfront.net/user_3M2z7lIyzIPYtjNHcxRWFNk6wi7/87ca6635-3dae-4e09-92fe-a6f7a6e53a7c.mp4 (26,5 s).
