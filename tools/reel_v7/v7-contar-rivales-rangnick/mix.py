@@ -1,11 +1,12 @@
 """Mezcla v7 · ¿Trece? ¿Catorce? (Rangnick y el Dinamo de Kiev de Lobanovski) (se ejecuta en el sandbox de Higgsfield, donde están los mp3 de Epidemic Sound).
 Música real (Epidemic: «Musical, Loop, Calm Piano, Dreamy, Intro 03», encadenada consigo misma con fundidos de 1,4 s; distinta a las de los v7 anteriores)
 + SFX reales bajos + voz (ElevenLabs, Mateo). Base: tools/reel_v7/bielsa/mix3.py y v7-uno-por-ciento-riley/mix.py.
+Remontaje 27/11 (crítica de Andrés, 78/100): «A LA VEZ» queda ≥1 s quieto tras «vez» (OUT 21,3); fundido a negro de 0,5 s y el cierre es el audio de outro2.mp4 (su voz entra a 21,6 s); la música va bajando bajo el cierre.
 La voz se abre 0,5 s en tres silencios para que quepan los viajes de cámara: 4,6 («Backnang... Un»), 7,5 («Lobanovski... En») y 16,3 («respirar... No», la pausa del remate);
 words.json ya lleva esos desplazamientos.
-python3 mix.py voz.mp3 tail.mp3 out.wav   (necesita words.json)"""
+python3 mix.py voz.mp3 outro2.mp4 out.wav   (necesita words.json)"""
 import sys, json, subprocess, numpy as np
-SR = 48000; OUT = 20.4; DUR = OUT + 5.61   # la voz acaba en 20,16 s; a 20,4 empieza el fundido de 0,6 s al cierre
+SR = 48000; OUT = 21.3; DUR = OUT + 4.0   # la voz acaba en 20,16 s; a 21,3 empieza el fundido a negro de 0,5 s al cierre (outro2.mp4, 4,0 s)
 CUTS = [(4.6, .5), (7.5, .5), (16.3, .5)]
 FLY = [4.45, 7.85, 17.12]
 W = json.load(open('words.json')); T = lambda k: W[k][1]; E = lambda k: W[k][2]
@@ -27,7 +28,8 @@ at = 0.0; k = 0
 while at < DUR:                                     # pasadas encadenadas con fundidos de 1,4 s
     put(mus, M, at, 1.0, fi=0 if k == 0 else 1.4, fo=1.4); at += LM - 1.4; k += 1
 tt = np.arange(N) / SR; env = np.ones(N)
-env *= 1 + .35 * np.clip((tt - (T(51) - .3)) / .4, 0, 1) * np.clip((OUT + 1.3 - tt) / .8, 0, 1)   # sube 1 s en el remate y baja al cierre
+env *= 1 + .35 * np.clip((tt - (T(51) - .3)) / .4, 0, 1) * np.clip((OUT + .3 - tt) / .6, 0, 1)   # sube en el remate y baja al cierre
+env *= 1 - .6 * np.clip((tt - OUT) / 2.5, 0, 1)   # bajo el cierre la música va bajando
 mus *= env[:, None]
 WH = pk(ld('whoosh.mp3')); SL = pk(on(ld('slide.mp3'))); PA = pk(on(ld('paper.mp3'))); SH = pk(on(ld('shutter.mp3'))); ST = pk(on(ld('stamp.mp3')))
 MK = pk(on(ld('marker.mp3'))); WB = pk(on(ld('wb.mp3'))); CH = pk(on(ld('chip.mp3'))); CK = pk(on(ld('click.mp3'))); BO = pk(on(ld('bounce.mp3')))
@@ -51,7 +53,7 @@ cuts = [0.0] + [c for c, _ in CUTS] + [len(V) / SR]; sh = 0.0
 for k in range(len(cuts) - 1):
     put(vox, V[int(cuts[k] * SR):int(cuts[k + 1] * SR)], cuts[k] + sh)
     if k < len(CUTS): sh += CUTS[k][1]
-put(vox, np.repeat(ld(sys.argv[2], 1), 2, 1), OUT + 0.3)
+put(vox, ld(sys.argv[2]), OUT, dur=4.0)   # audio del cierre outro2 («¿Te ha servido? Dale like y síguenos…», su voz entra a los 0,3 s)
 e = np.abs(vox[:, 0]); hop = 480; ev = np.array([e[i:i + hop].max() for i in range(0, N, hop)])
 ev = np.minimum(1, ev / (np.percentile(ev[ev > 0], 90) + 1e-9)); sm = np.zeros_like(ev)
 for i in range(1, len(ev)): a = .45 if ev[i] > sm[i - 1] else .05; sm[i] = sm[i - 1] + a * (ev[i] - sm[i - 1])
@@ -61,6 +63,6 @@ vg = 10 ** ((-19 - R(vox)) / 20); vox *= vg
 mg = 10 ** ((-31 - R(mus)) / 20); mus *= mg
 mix = vox + mus * duck + sfx * vg
 mix /= max(1, np.abs(mix).max() / .9)
-fo = int((DUR - .8) * SR); mix[fo:] *= np.linspace(1, 0, N - fo)[:, None]
+fo = int((DUR - .6) * SR); mix[fo:] *= np.linspace(1, 0, N - fo)[:, None]
 print('voz %.1f  música %.1f  sfx %.1f  pico %.2f' % (R(vox), R(mus * duck), R(sfx * vg), np.abs(mix).max()))
 subprocess.run(['ffmpeg', '-v', 'error', '-y', '-f', 'f32le', '-ar', str(SR), '-ac', '2', '-i', '-', sys.argv[3]], input=mix.astype(np.float32).tobytes(), check=True)
