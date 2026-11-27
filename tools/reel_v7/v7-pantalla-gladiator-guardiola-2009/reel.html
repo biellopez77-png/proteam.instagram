@@ -1,0 +1,222 @@
+<!doctype html><html><head><meta charset="utf-8">
+<!-- v7 · Siete minutos a oscuras (Guardiola, final de Roma 2009). Un solo plano sobre una pared grande; cada cosa que dice la voz se anima en su palabra. Base: tools/reel_v7/wooden/reel.html y v7-techo-forest-clough -->
+<style>
+@font-face{font-family:S;src:url(fonts/instrument-serif-latin-400-normal.woff2)}
+@font-face{font-family:SI;src:url(fonts/instrument-serif-latin-400-italic.woff2)}
+@font-face{font-family:J;font-weight:500;src:url(fonts/plus-jakarta-sans-latin-500-normal.woff2)}
+@font-face{font-family:J;font-weight:700;src:url(fonts/plus-jakarta-sans-latin-700-normal.woff2)}
+@font-face{font-family:J;font-weight:800;src:url(fonts/plus-jakarta-sans-latin-800-normal.woff2)}
+@font-face{font-family:J;font-weight:800;font-style:italic;src:url(fonts/plus-jakarta-sans-latin-800-italic.woff2)}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#02050F}
+#cam{position:absolute;left:0;top:0;width:2600px;height:6400px;transform-origin:0 0;background:url(wall2.jpg)}
+.a{position:absolute}
+.serif{font-family:S;color:#F4F7FB;white-space:nowrap;line-height:1}
+.bold{font-family:J;font-weight:800;color:#F4F7FB;white-space:nowrap;letter-spacing:-.02em;line-height:1}
+.acc{font-family:J;font-weight:800;font-style:italic;color:#6AA8FF}
+.it{font-family:SI;color:#B9E0FF}
+.w{display:inline-block;margin-right:.24em}
+.c{text-align:center}
+.panel{background:#0C1323;border:1px solid #26335a;box-shadow:0 40px 90px rgba(0,0,0,.6)}
+.mat{background:#E9EEF6;padding:20px 20px 62px;border:6px solid #0b0f1a;box-shadow:0 30px 70px rgba(0,0,0,.6)}
+.mat small{position:absolute;left:24px;right:18px;bottom:12px;font:500 17px J;color:#5d6888;letter-spacing:.04em;line-height:1.3}
+.rec{font:500 17px J;color:#5d6888;letter-spacing:.12em;line-height:1.6}
+.recl{font:500 17px J;color:#5d6888;letter-spacing:.16em}
+.k{font:700 20px J;color:#8f9bb8;letter-spacing:.14em}
+.cut{filter:drop-shadow(0 30px 40px rgba(0,0,0,.65))}
+#grain{position:absolute;inset:0;width:1080px;height:1920px;mix-blend-mode:screen;opacity:.09;pointer-events:none;image-rendering:pixelated}
+svg .dr{fill:none;stroke-linecap:round;stroke-linejoin:round}
+</style></head><body><div id="cam">
+
+<!-- 1 · Roma, 2009. Final de la Champions -->
+<div class="a serif c" id="l0" style="left:0;width:1080px;top:150px;font-size:96px"></div>
+<div class="a mat" id="pola" style="left:120px;top:300px;width:840px;opacity:0"><img src="img/olimpico_g.jpg" style="display:block;width:100%"><small>ROMA · ESTADIO OLÍMPICO · FOTO: GAÚCHO, CC BY-SA 3.0</small>
+ <div id="date" style="position:absolute;right:30px;bottom:66px;font:400 76px SI;color:#F4F7FB;text-shadow:0 4px 18px rgba(0,0,0,.8);transform:rotate(-4deg);white-space:nowrap"></div></div>
+<div class="a serif c" id="l1" style="left:0;width:1080px;top:1000px;font-size:80px"></div>
+<div class="a mat" id="fans" style="left:470px;top:1120px;width:520px;opacity:0"><img src="img/fans_g.jpg" style="display:block;width:100%"><small>AFICIÓN EN EL OLÍMPICO (2012) · FOTO: GARY DENHAM, CC BY-SA 2.0</small></div>
+<div class="a panel" id="press" style="left:70px;top:1300px;width:700px;height:200px;border-radius:12px;padding:22px 30px;opacity:0">
+ <div class="k" style="font-size:18px">FICHA · 27 DE MAYO DE 2009</div>
+ <div id="tP1" style="font:800 46px J;color:#6AA8FF;margin-top:14px;white-space:nowrap;letter-spacing:.04em"></div>
+ <div id="tP2" style="font:800 30px J;color:#F4F7FB;margin-top:10px;white-space:nowrap;letter-spacing:.02em"></div>
+</div>
+
+<!-- 2 · Guardiola corta el calentamiento antes de tiempo -->
+<div class="a serif c" id="l2" style="left:1160px;width:1080px;top:150px;font-size:72px"></div>
+<div class="a serif c" id="l2b" style="left:1160px;width:1080px;top:240px;font-size:72px"></div>
+<img class="a cut" id="pep" src="img/guardiola_g.png" style="left:1290px;top:360px;height:840px;opacity:0">
+<svg class="a" id="whistle" style="left:1800px;top:520px;opacity:0" width="340" height="300" viewBox="0 0 340 300">
+ <path id="wh1" class="dr" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100" d="M60 150 A70 70 0 1 0 190 120 L300 120 L300 80 L150 80" stroke="#F4F7FB" stroke-width="8"/>
+ <circle cx="130" cy="150" r="20" fill="none" stroke="#6AA8FF" stroke-width="6" id="wh2" opacity="0"/>
+ <path id="wv1" class="dr" d="M250 40 L280 10 M300 60 L330 45 M215 35 L222 5" stroke="#B9E0FF" stroke-width="6" opacity="0"/>
+ <text x="330" y="290" text-anchor="end" font-family="J" font-weight="500" font-size="17" fill="#5d6888" letter-spacing="2.5">RECREACIÓN</text>
+</svg>
+<div class="a panel" id="tagG" style="left:1240px;top:1150px;width:640px;height:110px;border-radius:12px;padding:18px 28px;opacity:0">
+ <div class="k" style="font-size:17px">FICHA · CAMP NOU, 2010</div>
+ <div id="tG" style="font:800 38px J;color:#F4F7FB;margin-top:10px;white-space:nowrap;letter-spacing:.02em"></div>
+</div>
+<div class="a panel" id="warm" style="left:1240px;top:1310px;width:920px;height:170px;border-radius:14px;padding:22px 30px;opacity:0">
+ <div style="display:flex;justify-content:space-between"><span class="k" style="font-size:18px">CALENTAMIENTO</span><span class="recl">RECREACIÓN</span></div>
+ <div style="position:absolute;left:30px;right:30px;top:86px;height:40px;border:3px dashed #26335a;border-radius:20px"></div>
+ <div id="bar" style="position:absolute;left:30px;top:86px;width:0;height:40px;background:linear-gradient(90deg,#636DFF,#6AA8FF);border-radius:20px"></div>
+ <div id="cutm" style="position:absolute;top:70px;width:8px;height:72px;background:#F4F7FB;border-radius:4px;opacity:0"></div>
+</div>
+<div class="a bold c" id="l2c" style="left:1160px;width:1080px;top:1560px;font-size:92px"></div>
+
+<!-- 3 · Vestuario a oscuras · la pantalla · él no aparece · vuelve la luz -->
+<div class="a" id="room" style="left:30px;top:2040px;width:1020px;height:2560px;border-radius:24px;background:linear-gradient(#0a1020,#070b16);border:1px solid #1c2747"></div>
+<svg class="a" id="lockers" style="left:30px;top:2040px" width="1020" height="2560" viewBox="0 0 1020 2560">
+ <g id="hooks"></g><g id="benches"></g>
+ <text x="990" y="2540" text-anchor="end" font-family="J" font-weight="500" font-size="17" fill="#5d6888" letter-spacing="2.5">VESTUARIO, PANTALLA Y FICHAS: RECREACIÓN</text>
+</svg>
+<div class="a" id="dark" style="left:30px;top:2040px;width:1020px;height:2560px;border-radius:24px;background:#01030a;opacity:0"></div>
+<div class="a" id="spill" style="left:30px;top:2300px;width:1020px;height:1300px;background:radial-gradient(ellipse at 50% 0%,rgba(106,168,255,.38),rgba(99,109,255,.12) 45%,transparent 72%);mix-blend-mode:screen;opacity:0"></div>
+<div class="a" id="screen" style="left:120px;top:2190px;width:840px;height:472px;border-radius:10px;border:4px solid #26335a;background:#03060f;overflow:hidden">
+ <div id="glow" style="position:absolute;inset:0;background:radial-gradient(ellipse at 50% 45%,#B9E0FF 0%,#6AA8FF 30%,#636DFF 65%,#1c2a6a 100%);opacity:0"></div>
+ <div id="sw" class="bold c" style="position:absolute;left:0;right:0;top:170px;font-size:112px;color:#F4F7FB;letter-spacing:.04em;text-shadow:0 6px 30px rgba(2,5,15,.55)"></div>
+ <div id="ctr" style="position:absolute;right:22px;top:16px;font:800 34px J;color:#F4F7FB;letter-spacing:.04em;opacity:0;text-shadow:0 2px 10px rgba(2,5,15,.5)">7:00</div>
+ <div id="row" style="position:absolute;left:44px;right:44px;bottom:24px;height:96px;display:flex;justify-content:space-between"></div>
+</div>
+<div class="a" id="gap" style="left:400px;top:2700px;width:170px;height:210px;border:4px dashed #8f9bb8;border-radius:12px;opacity:0">
+ <div class="k" style="position:absolute;left:0;right:0;bottom:-40px;text-align:center;font-size:17px">ENTRENADOR</div>
+</div>
+<img class="a" id="pepS" src="img/guardiola_g.png" style="left:600px;top:2690px;height:240px;opacity:0;filter:brightness(.32)">
+<div class="a serif c" id="l5" style="left:0;width:1080px;top:2975px;font-size:72px"></div>
+<div class="a serif c" id="l3" style="left:0;width:1080px;top:3490px;font-size:72px"></div>
+<div class="a serif c" id="l3b" style="left:0;width:1080px;top:3580px;font-size:64px"></div>
+<div class="a serif c" id="l4" style="left:0;width:1080px;top:2085px;font-size:66px;z-index:3"></div>
+<div class="a serif c" id="l6" style="left:0;width:1080px;top:3490px;font-size:72px"></div>
+<div class="a serif c" id="l6b" style="left:0;width:1080px;top:3580px;font-size:72px"></div>
+<div class="a panel" id="clock" style="left:330px;top:3700px;width:420px;height:150px;border-radius:14px;padding:18px 28px;opacity:0">
+ <div class="k" style="font-size:17px">PARA EL PARTIDO</div>
+ <div id="tc" style="font:800 64px J;color:#F4F7FB;margin-top:6px;letter-spacing:.02em">−10:00</div>
+</div>
+<svg class="a" id="bubble" style="left:300px;top:3880px" width="480" height="280" viewBox="0 0 480 280">
+ <path id="bb" class="dr" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100" d="M60 30 L420 30 Q450 30 450 60 L450 170 Q450 200 420 200 L170 200 L110 255 L120 200 L60 200 Q30 200 30 170 L30 60 Q30 30 60 30 Z" stroke="#F4F7FB" stroke-width="7"/>
+</svg>
+<div class="a serif c" id="l7" style="left:0;width:1080px;top:4180px;font-size:74px"></div>
+<div class="a rec c" id="l7n" style="left:0;width:1080px;top:4280px;opacity:0">«SIN DECIR UNA PALABRA MÁS» · EL PAÍS, 2009</div>
+
+<!-- 4 · Ganan dos a cero. La mejor charla... a veces no la das tú -->
+<div class="a serif c" id="l8" style="left:1160px;width:1080px;top:2140px;font-size:74px"></div>
+<div class="a panel" id="cover" style="left:1320px;top:2260px;width:760px;height:880px;border-radius:6px;padding:26px 30px;background:#E9EEF6;border:6px solid #0b0f1a;opacity:0">
+ <div style="display:flex;justify-content:space-between;align-items:baseline"><span style="font:800 64px J;color:#0b0f1a;letter-spacing:-.02em">LA FINAL</span><span style="font:700 18px J;color:#5d6888;letter-spacing:.14em">ROMA · 2009</span></div>
+ <div style="height:4px;background:#0b0f1a;margin:10px 0 16px"></div>
+ <img src="img/final_g.jpg" style="display:block;width:100%">
+ <div style="font:500 17px J;color:#5d6888;letter-spacing:.06em;margin-top:12px;line-height:1.35">GUARDIOLA TRAS LA FINAL, ROMA, 27/05/2009<br>FOTO: FUNNYDAE, CC BY 2.0</div>
+</div>
+<div class="a panel" id="score" style="left:1400px;top:3200px;width:600px;height:200px;border-radius:14px;padding:20px 30px;opacity:0">
+ <div style="display:flex;justify-content:space-between"><span class="k" style="font-size:17px">FINAL · ROMA</span><span class="recl">RECREACIÓN</span></div>
+ <div style="position:absolute;left:30px;top:70px;width:170px;text-align:center;font:800 22px J;color:#8f9bb8;letter-spacing:.08em">BARCELONA</div>
+ <div style="position:absolute;right:30px;top:70px;width:170px;text-align:center;font:800 22px J;color:#8f9bb8;letter-spacing:.08em">MAN. UNITED</div>
+ <div id="sA" style="position:absolute;left:30px;top:100px;width:170px;text-align:center;font:800 84px J;color:#F4F7FB">0</div>
+ <div style="position:absolute;left:0;right:0;top:100px;text-align:center;font:800 84px J;color:#5d6888">–</div>
+ <div style="position:absolute;right:30px;top:100px;width:170px;text-align:center;font:800 84px J;color:#F4F7FB">0</div>
+</div>
+<div class="a" id="calm" style="left:1230px;top:3470px;width:940px;height:520px;border-radius:12px;background:radial-gradient(ellipse at 50% 50%,rgba(106,168,255,.20),rgba(99,109,255,.07) 55%,transparent 75%);border:2px solid rgba(106,168,255,.18);opacity:0"></div>
+<div class="a serif c" id="q1" style="left:1160px;width:1080px;top:3540px;font-size:84px"></div>
+<div class="a serif c" id="q2" style="left:1160px;width:1080px;top:3670px;font-size:76px"></div>
+<div class="a bold c" id="q3" style="left:1160px;width:1080px;top:3780px;font-size:112px"></div>
+<div class="a rec c" id="cred" style="left:1160px;width:1080px;top:4050px;opacity:0">FOTOS: GAÚCHO (CC BY-SA 3.0) · GARY DENHAM (CC BY-SA 2.0) · OEMAR (CC BY 2.0) ·<br>FUNNYDAE (CC BY 2.0), VÍA WIKIMEDIA COMMONS · VESTUARIO, PANTALLA Y FICHAS: RECREACIÓN<br>FUENTES: BBC SPORT · EL PAÍS (VÍA IRISH EXAMINER), 2009</div>
+
+</div>
+<canvas id="grain" width="360" height="640"></canvas>
+<script src="gsap.min.js"></script>
+<script src="words.js"></script>
+<script>
+const $=i=>document.getElementById(i), cl=x=>Math.min(1,Math.max(0,x)), P=(t,a,b)=>cl((t-a)/(b-a)), eo=x=>1-Math.pow(1-x,3), eio=x=>x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2;
+const W=window.WORDS, T=k=>W[k][1], E=k=>W[k][2];
+const NS='http://www.w3.org/2000/svg', mk=(tag,at,par)=>{const e=document.createElementNS(NS,tag);for(const k in at)e.setAttribute(k,at[k]);par&&par.appendChild(e);return e};
+const L=[];
+function line(id,tokens){const el=$(id);for(const [txt,k,cls,st,off] of tokens){const s=document.createElement('span');s.className='w '+(cls||'');s.textContent=txt;if(st)s.style.cssText=st;el.appendChild(s);L.push([s,T(k)+(off||0)])}}
+line('l0',[['Roma,',0],['2009.',1,'acc']]);
+line('l1',[['Final',2],['de',3],['la',4],['Champions.',5,'it']]);
+line('l2',[['Guardiola',6,'acc'],['corta',8]]);
+line('l2b',[['el',9],['calentamiento',10,'it']]);
+line('l2c',[['ANTES',11],['DE',12],['TIEMPO.',13]]);
+line('l3',[['Vestuario',14],['a',15],['oscuras,',16,'it']]);
+line('l3b',[['diez',17],['minutos',18],['antes',19],['del',20],['partido.',21]]);
+line('l4',[['En',22],['la',23],['pantalla,',24,'it'],['siete',25,'acc'],['minutos:',26,'acc']]);
+line('l5',[['Él',35],['no',36],['aparece.',37,'it']]);
+line('l6',[['Vuelve',38],['la',39],['luz;',40,'it']]);
+line('l6b',[['algunos',41],['LLORAN.',42,'',"font-family:SI;font-size:108px;color:#B9E0FF;vertical-align:-6px"]]);
+line('l7',[['No',43],['dice',44],['nada',45],['más.',46,'it']]);
+line('l8',[['Ganan',47],['dos',48],['a',49],['cero.',49,'it',null,.12]]);
+line('q1',[['La',50],['mejor',51],['charla...',52,'it']]);
+line('q2',[['a',53],['veces',54]]);
+line('q3',[['NO',55],['LA',56],['DAS',57],['TÚ.',58]]);
+// perchas y bancos (líneas finas)
+(()=>{const h=$('hooks'),b=$('benches');const P2=[];
+ for(let i=0;i<8;i++){const x=110+i*114;P2.push(mk('path',{d:`M${x} 1050 L${x} 1078 Q${x} 1102 ${x+22} 1098`,class:'dr',stroke:'#8f9bb8','stroke-width':6,pathLength:100,'stroke-dasharray':100,'stroke-dashoffset':100},h))}
+ P2.push(mk('path',{d:'M70 1040 L950 1040',class:'dr',stroke:'#5d6888','stroke-width':6,pathLength:100,'stroke-dasharray':100,'stroke-dashoffset':100},h));
+ P2.push(mk('path',{d:'M90 1300 L930 1300 M90 1326 L930 1326 M150 1326 L150 1400 M500 1326 L500 1400 M870 1326 L870 1400',class:'dr',stroke:'#8f9bb8','stroke-width':6,pathLength:100,'stroke-dasharray':100,'stroke-dashoffset':100},b));
+ window.LK=P2})();
+// fichas-silueta con dorsales genéricos
+const ROW=[2,3,4,5,6,7,8,9,10,11].map(n=>{const e=document.createElement('div');e.style.cssText='width:64px;height:96px;border:3px solid #26335a;border-radius:8px;background:#0C1323;position:relative;overflow:hidden';
+ const s=mk('svg',{width:64,height:96,viewBox:'0 0 64 96',style:'position:absolute;left:-3px;top:-3px'},e);mk('circle',{cx:32,cy:30,r:13,fill:'#26335a'},s);mk('path',{d:'M10 92 Q12 52 32 50 Q52 52 54 92 Z',fill:'#26335a'},s);
+ const d=document.createElement('div');d.style.cssText='position:absolute;left:0;right:0;top:56px;text-align:center;font:800 22px J;color:#5d6888';d.textContent=n;e.appendChild(d);$('row').appendChild(e);return [e,s,d]});
+// ----- cámara: un solo plano -----
+const cam={cx:540,cy:930,z:1.05};const tl=gsap.timeline({paused:true});
+const fly=(t,cx,cy,z,d=.9)=>{tl.to(cam,{cx,cy,duration:d,ease:'power2.inOut'},t);tl.to(cam,{keyframes:[{z:z*0.9,duration:d*.5,ease:'sine.out'},{z,duration:d*.5,ease:'sine.inOut'}]},t)};
+tl.set(cam,{cx:540,cy:930,z:1.05},0).to(cam,{z:1.0,cy:960,duration:2.9,ease:'sine.out'},0);
+fly(2.92,1700,930,1.0); tl.to(cam,{z:1.02,cy:960,duration:2.1,ease:'sine.out'},3.82);
+fly(5.92,540,3330,1.0); tl.to(cam,{z:1.01,cy:3300,duration:2.4,ease:'sine.out'},6.82);
+tl.to(cam,{cy:2990,z:1.0,duration:.9,ease:'power2.inOut'},9.2); tl.to(cam,{z:1.02,cy:2970,duration:6.0,ease:'sine.inOut'},10.1);
+tl.to(cam,{cy:3300,z:1.0,duration:1.0,ease:'power2.inOut'},15.85);
+tl.to(cam,{cy:3520,z:1.0,duration:.9,ease:'power2.inOut'},18.15);
+fly(19.6,1700,3060,1.0); tl.to(cam,{z:1.01,cy:3080,duration:.9,ease:'sine.out'},20.5);
+tl.to(cam,{cy:3440,z:1.0,duration:1.1,ease:'power2.inOut'},21.0); tl.to(cam,{z:.96,cy:3470,duration:3.6,ease:'sine.inOut'},22.1);
+// grano
+const g=$('grain').getContext('2d'),gi=g.createImageData(360,640);let sd=1;const RN=()=>(sd=(sd*16807)%2147483647)/2147483647;
+function camAt(t){tl.seek(t,false);return [cam.cx,cam.cy,cam.z]}
+const fade=(id,t0,dy=40,d=.45)=>{const p=eo(P(window._t,t0,t0+d));const e=$(id);e.style.opacity=p;e.style.transform=`translateY(${(1-p)*dy}px)`;return p};
+const mix=(a,b,p)=>a+(b-a)*p;
+const typ=(id,txt,t,a,b)=>{const n=Math.round(txt.length*P(t,a,b));$(id).textContent=txt.slice(0,n)};
+function eb(x){const c=1.5;return 1+(c+1)*Math.pow(x-1,3)+c*Math.pow(x-1,2)}
+window.frame=function(t){window._t=t;
+ sd=1+Math.floor(t*30)*7919;const d=gi.data;for(let i=0;i<d.length;i+=4){const v=RN()*255;d[i]=v*.8;d[i+1]=v*.85;d[i+2]=v;d[i+3]=255}g.putImageData(gi,0,0);
+ const p0=camAt(Math.max(0,t-1/30)),p1=camAt(t);const sp=Math.hypot(p1[0]-p0[0],p1[1]-p0[1]);
+ $('cam').style.transform=`translate(540px,960px) scale(${p1[2]}) translate(${-p1[0]}px,${-p1[1]}px)`;
+ $('cam').style.filter=sp>14?`blur(${Math.min(4,(sp-14)/30).toFixed(2)}px)`:'none';
+ for(const [s,t1] of L){const t0=t1<.3?t1-.4:t1;const p=eo(P(t,t0-.04,t0+.36));s.style.opacity=p;s.style.transform=`translateX(${(1-p)*24}px)`;s.style.filter=p<1?`blur(${(1-p)*6}px)`:'none'}
+ // 1 · polaroid de Roma y fecha a mano; ficha de la final
+ const pp=eo(P(t,-.4,.35));$('pola').style.opacity=pp;$('pola').style.transform=`rotate(${-2-(1-pp)*3}deg) translateY(${(1-pp)*50}px)`;
+ typ('date','27·05·2009',t,T(1),E(1)+.2);
+ const pf=eo(P(t,T(2)-.2,T(2)+.3));$('fans').style.opacity=pf;$('fans').style.transform=`rotate(${3.5-(1-pf)*2}deg) translateY(${(1-pf)*40}px)`;
+ fade('press',T(3)-.1,30,.4);typ('tP1','FINAL',t,T(3),T(5));typ('tP2','BARCELONA – MANCHESTER UNITED',t,T(5)-.1,E(5)+.25);
+ // 2 · Guardiola, silbato y calentamiento cortado
+ const pg=eo(P(t,T(6)-.45,T(6)+.2));$('pep').style.opacity=pg;$('pep').style.transform=`translateY(${(1-pg)*50}px) scale(${.97+.03*pg})`;
+ fade('tagG',T(6)-.1,24,.4);typ('tG','P. GUARDIOLA · ENTRENADOR',t,T(6),E(7)+.4);
+ const pw=eo(P(t,T(8)-.15,T(8)+.2));$('whistle').style.opacity=pw;$('wh1').setAttribute('stroke-dashoffset',100-100*eio(P(t,T(8)-.1,E(8))));
+ $('wh2').setAttribute('opacity',P(t,E(8)-.1,E(8)+.1));$('wv1').setAttribute('opacity',P(t,T(8)+.1,T(8)+.2)*(1-P(t,E(8)+.3,E(8)+.7)));
+ fade('warm',T(9)-.2,30,.4);
+ const bw=860, cutx=.58; const fill=Math.min(cutx,.95*eio(P(t,T(10),T(11)+.5)));$('bar').style.width=(bw*fill)+'px';
+ const ct=P(t,T(11),T(11)+.2);$('cutm').style.left=(30+bw*cutx-4)+'px';$('cutm').style.opacity=ct;$('cutm').style.transform=`scaleY(${.4+.6*eb(ct)})`;
+ // 3 · vestuario: se dibuja, se oscurece; la pantalla se enciende
+ LK.forEach((p,i)=>p.setAttribute('stroke-dashoffset',100-100*eio(P(t,T(14)-.4+i*.06,T(14)+.5+i*.06))));
+ const dk=eio(P(t,T(16)-.1,E(16)+.1))*(1-eio(P(t,T(40)-.15,E(40)+.15)));$('dark').style.opacity=.62*dk;
+ fade('clock',T(17)-.1,24,.4);
+ const on=eio(P(t,T(24)-.1,E(24)+.1))*(1-eio(P(t,T(40)-.15,E(40)+.25)));
+ $('glow').style.opacity=on;$('screen').style.borderColor=on>.2?'#6AA8FF':'#26335a';$('screen').style.boxShadow=`0 0 ${120*on}px rgba(106,168,255,${.45*on})`;$('spill').style.opacity=on;
+ const cc=P(t,T(25)-.05,T(25)+.25);$('ctr').style.opacity=cc*(on>.05?1:on*20);
+ const rem=Math.max(0,420-Math.floor(Math.max(0,t-E(26))*1));$('ctr').textContent=`${Math.floor(rem/60)}:${String(rem%60).padStart(2,'0')}`;
+ typ('sw','GLADIATOR',t,T(27),E(27)+.1);$('sw').style.opacity=1-P(t,T(40)-.1,E(40)+.1);
+ ROW.forEach(([e,s,dg],i)=>{const a=T(30)+i*((E(34)-T(30))/10);const q=P(t,a,a+.18);const lit=q*(1-P(t,T(40)-.1,E(40)+.1)*.4);
+  e.style.borderColor=lit>.4?'#B9E0FF':'#26335a';e.style.background=lit>.4?'#1a2a5c':'#0C1323';s.querySelectorAll('circle,path').forEach(x=>x.setAttribute('fill',lit>.4?'#B9E0FF':'#26335a'));dg.style.color=lit>.4?'#0b0f1a':'#5d6888';e.style.transform=`translateY(${-8*Math.sin(Math.PI*q)}px)`});
+ const gp=P(t,T(35)-.15,T(35)+.25);$('gap').style.opacity=eo(gp);$('gap').style.transform=`scale(${1.08-.08*eo(gp)})`;
+ const ps=eo(P(t,T(36),E(37)));$('pepS').style.opacity=.85*ps;$('pepS').style.transform=`translateX(${(1-ps)*30}px)`;$('pepS').style.filter=`brightness(${mix(.32,.9,eio(P(t,T(40)-.1,E(40)+.2)))})`;
+ // vuelve la luz: la frase del vestuario deja sitio a la de la luz
+ const sw2=1-P(t,T(38)-.35,T(38)-.05);$('l3').style.opacity=sw2;$('l3b').style.opacity=sw2;$('clock').style.opacity=Math.min($('clock').style.opacity,1-P(t,T(43)-.6,T(43)-.2)*.6);
+ // no dice nada más: bocadillo vacío que se dibuja y se borra
+ const bd=eio(P(t,T(43)-.2,T(44)+.1)), be=eio(P(t,T(45),E(46)+.1));$('bb').setAttribute('stroke-dashoffset',100-100*bd+100*be);
+ fade('l7n',T(45)-.1,10,.5);
+ // 4 · portada de la final y marcador 0 → 1 → 2
+ const pc=eo(P(t,T(47)-.45,T(47)+.2));$('cover').style.opacity=pc;$('cover').style.transform=`rotate(${-1.5-(1-pc)*2}deg) translateY(${(1-pc)*60}px)`;
+ fade('score',T(48)-.3,30,.35);const s1=t>=T(48)+.05?(t>=T(48)+.3?2:1):0;$('sA').textContent=s1;
+ const pop=Math.max(P(t,T(48)+.05,T(48)+.25)*(1-P(t,T(48)+.25,T(48)+.3)),P(t,T(48)+.3,T(48)+.5));$('sA').style.transform=`scale(${s1?1.25-.25*eb(pop):1})`;$('sA').style.color=s1==2?'#6AA8FF':'#F4F7FB';
+ // remate: pantalla en calma detrás; «NO LA DAS TÚ» en ultravioleta (única vez)
+ const pm=eo(P(t,T(50)-.4,T(50)+.6));$('calm').style.opacity=pm;
+ const uv=P(t,T(55)-.05,T(55)+.3);[...$('q3').children].forEach(s=>{s.style.color=`rgb(${Math.round(mix(244,139,uv))},${Math.round(mix(247,92,uv))},${Math.round(mix(251,246,uv))})`;s.style.textShadow=uv>.3?`0 0 ${28*uv}px rgba(139,92,246,.55)`:'none'});
+ fade('cred',T(53)-.2,10,.6);
+};
+document.fonts.ready.then(()=>Promise.all([...document.images].map(i=>i.complete?1:new Promise(r=>{i.onload=r;i.onerror=r})))).then(()=>{frame(0);window.ready=true});
+</script></body></html>
