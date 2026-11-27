@@ -18,3 +18,5 @@ Ultravioleta #8B5CF6 una sola vez: «JUNTOS».
 Música y efectos (Epidemic Sound, vía Higgsfield): «Musical, Loop, Jazz, Soft, Piano» y «Musical, Loop, Jazz, Soft, Piano, Bass» (encadenadas con 1,4 s; distintas de las de los v7 anteriores); «Swooshes, Whoosh, Soft, Clean»; «Paper, Friction, Sheet, Laminated, Slide On Wooden Table»; «Objects, Book, Flip Page»; «Ambience, Town, Village, Distant Church Bells»; «Doors, Wood, Close, Then Bolt Lock»; «Games, Misc, Chips, Token, Plastic, Down On Table»; «Office Supplies, Rubber Stamp, Document 01»; «Mechanical, Click, Switches, Button, Push, Small 02»; «Games, MIsc, Poker Chips, Stack, Shuffle». Mezcla: mix.py (voz −19, música −31 con ducking; resultado voz −19,0, música −33,3, sfx −34,4, pico 0,90).
 
 Vídeo: video_mudo.mp4 (29,8 s: 24,2 s de historia + fundido de 0,6 s al cierre común), render a 30 fps con tools/blackout/htmlreel.py.
+
+Vídeo final: https://d2ol7oe51mr4n9.cloudfront.net/user_3M2z7lIyzIPYtjNHcxRWFNk6wi7/c4b3d95b-d57f-4486-b02a-028bab7c35e2.mp4 (29,8 s; −16,5 LUFS, true peak −1,2 dBFS; comprobado con whisper small: se oyen las 56 palabras de la transcripción).
