@@ -1,9 +1,11 @@
 """Mezcla v7 · Cuatro minutos sin tirar (Milan, Indiana, 1954) (se ejecuta en el sandbox de Higgsfield, donde están los mp3 de Epidemic Sound).
 Música real (Epidemic: «Musical, Loop, Orchestra, Piano, Choir, Sentimental», una sola pista sin cortes; distinta a las de los v7 anteriores)
 + SFX reales bajos + voz (ElevenLabs, Mateo). Base: tools/reel_v7/bielsa/mix3.py y v7-general-michels/mix.py.
-python3 mix.py voz.mp3 tail.mp3 out.wav   (necesita words.json)"""
+python3 mix.py voz.mp3 outro2.wav out.wav   (necesita words.json; outro2.wav = audio de tools/reel_v6/outro/outro2.mp4)
+Remontaje 27/11 (crítica de Andrés, 75/100): «esperar» recuperado (la toma la dice baja: +11 dB solo en esa palabra), ESPERAR quieto
+hasta 25,15 s, fundido de 0,5 s al cierre y la voz de outro2 desde ~25,6 s; viaje del gancho a 2,4 s."""
 import sys, json, subprocess, numpy as np
-SR = 48000; OUT = 24.4; DUR = OUT + 5.6   # la voz acaba en 24,26 s; a 24,4 empieza el fundido de 0,6 s al cierre
+SR = 48000; OUT = 25.15; ODL = 0.2; DUR = OUT + 4.0 + ODL   # «esperar» acaba en 24,26 s; a 25,15 empieza el fundido de 0,5 s a outro2 (su voz entra a 0,25 s de su inicio + ODL)
 W = json.load(open('words.json')); T = lambda k: W[k][1]; E = lambda k: W[k][2]
 def ld(f, ch=2):
     r = subprocess.run(['ffmpeg', '-v', 'error', '-i', f, '-ac', str(ch), '-ar', str(SR), '-f', 'f32le', '-'], capture_output=True).stdout
@@ -22,7 +24,7 @@ env *= 1 + .35 * np.clip((tt - (T(50) - .3)) / .4, 0, 1) * np.clip((OUT + 1.0 - 
 mus *= env[:, None]
 WH = pk(ld('whoosh.mp3')); SL = pk(ld('slide.mp3')); ST = pk(ld('stamp.mp3')); TK = pk(ld('tokens.mp3')); TH = pk(ld('thud.mp3'))
 CL = pk(ld('click.mp3')); BO = pk(ld('bounce.mp3')); NE = pk(ld('net.mp3')); CR = pk(ld('crowd.mp3')); TI = pk(ld('tick.mp3'))
-for f in [2.15, 9.6, 13.3, 17.85, 21.35]: put(sfx, WH, f - .2, .08, dur=1.4, fi=.05, fo=.4)   # aire en cada viaje
+for f in [2.4, 9.6, 13.3, 17.85, 21.35]: put(sfx, WH, f - .2, .08, dur=1.4, fi=.05, fo=.4)   # aire en cada viaje
 put(sfx, SL, 0.0, .06)                                   # ficha de Milan (hoy)
 put(sfx, SL, T(0) + .15, .04)                            # rótulo MILAN · INDIANA
 put(sfx, ST, T(1) + .02, .12)                            # sello «1954»
@@ -38,8 +40,10 @@ put(sfx, NE, T(46) + .78, .12, dur=1.6, fo=.5)           # red
 put(sfx, CL, T(47), .09, dur=.5, fo=.1)                  # 32
 put(sfx, SL, T(47) + .2, .05)                            # postal del equipo campeón
 put(sfx, CL, T(49), .08, dur=.5, fo=.1)                  # 30
-put(vox, np.repeat(ld(sys.argv[1], 1), 2, 1), 0.0)
-put(vox, np.repeat(ld(sys.argv[2], 1), 2, 1), OUT + 0.3)
+v = ld(sys.argv[1], 1)[:, 0]; tv = np.arange(len(v)) / SR
+v = v * (1 + (10 ** (11 / 20) - 1) * np.clip((tv - 23.90) / .06, 0, 1))   # «esperar» (23,94–24,5 s): la toma la dice 12-14 dB más baja que «saber»
+put(vox, np.repeat(v[:, None], 2, 1), 0.0)
+put(vox, np.repeat(ld(sys.argv[2], 1), 2, 1), OUT + ODL)   # cierre común outro2 (voz)
 e = np.abs(vox[:, 0]); hop = 480; ev = np.array([e[i:i + hop].max() for i in range(0, N, hop)])
 ev = np.minimum(1, ev / (np.percentile(ev[ev > 0], 90) + 1e-9)); sm = np.zeros_like(ev)
 for i in range(1, len(ev)): a = .45 if ev[i] > sm[i - 1] else .05; sm[i] = sm[i - 1] + a * (ev[i] - sm[i - 1])

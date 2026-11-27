@@ -70,13 +70,13 @@ svg .dr{fill:none;stroke-linecap:round;stroke-linejoin:round}
   <div style="font:800 36px J;color:#F4F7FB">BOBBY PLUMP</div>
   <div class="rec" style="margin-top:4px;font-size:13px">FOTO: PHILLIPS 66 · DOMINIO PÚBLICO</div>
  </div>
- <svg class="a" id="ballS" style="left:560px;top:640px" width="460" height="560" viewBox="0 0 460 560">
+ <svg class="a" id="ballS" style="left:270px;top:630px" width="460" height="560" viewBox="0 0 460 560">
   <ellipse id="shad" cx="230" cy="520" rx="130" ry="18" fill="#000" opacity="0"/>
   <g id="ball" opacity="0">
    <circle r="140" fill="#1a2550" stroke="#B9E0FF" stroke-width="7"/>
    <path class="dr" d="M-140 0 H140 M0 -140 V140 M-99 -99 Q-40 0 -99 99 M99 -99 Q40 0 99 99" stroke="#6AA8FF" stroke-width="6"/>
   </g>
-  <g id="pause" opacity="0"><rect x="186" y="20" width="26" height="80" rx="6" fill="#F4F7FB"/><rect x="248" y="20" width="26" height="80" rx="6" fill="#F4F7FB"/></g>
+  <g id="pause" opacity="0"><rect x="250" y="150" width="26" height="80" rx="6" fill="#F4F7FB"/><rect x="312" y="150" width="26" height="80" rx="6" fill="#F4F7FB"/></g>
   <text x="456" y="552" text-anchor="end" class="lab" style="font-size:12px">BALÓN: RECREACIÓN</text>
  </svg>
  <div class="a serif c" id="l7" style="left:0;width:1080px;top:1340px;font-size:80px"></div>
@@ -132,14 +132,14 @@ svg .dr{fill:none;stroke-linecap:round;stroke-linejoin:round}
 <!-- 6 · Ganar, a veces... es saber esperar -->
 <div class="sc" style="left:0;top:4300px">
  <div class="a serif c" id="l12" style="left:0;width:1080px;top:260px;font-size:108px"></div>
- <div class="a" id="light" style="left:140px;top:380px;width:800px;height:820px;opacity:0;background:radial-gradient(ellipse 50% 55% at 50% 62%,rgba(185,224,255,.22),rgba(99,109,255,.08) 55%,rgba(2,5,15,0) 75%)"></div>
+ <div class="a" id="light" style="left:140px;top:380px;width:800px;height:820px;opacity:0;background:radial-gradient(ellipse 50% 55% at 50% 62%,rgba(185,224,255,.22),rgba(106,168,255,.08) 55%,rgba(2,5,15,0) 75%)"></div>
  <svg class="a" id="still" style="left:340px;top:600px;opacity:0" width="400" height="460" viewBox="0 0 400 460">
   <ellipse cx="200" cy="420" rx="140" ry="20" fill="#000" opacity=".55"/>
   <g transform="translate(200 260)"><circle r="150" fill="#1a2550" stroke="#B9E0FF" stroke-width="7"/><path class="dr" d="M-150 0 H150 M0 -150 V150 M-106 -106 Q-43 0 -106 106 M106 -106 Q43 0 106 106" stroke="#6AA8FF" stroke-width="6"/></g>
  </svg>
  <div class="a serif c" id="l13" style="left:0;width:1080px;top:1180px;font-size:96px"></div>
  <div class="a bold c" id="l14" style="left:0;width:1080px;top:1290px;font-size:190px"></div>
- <div class="a rec c" id="cred" style="left:0;width:1080px;top:1560px;font-size:15px;opacity:0">FOTOS: CHRIS FLOOK (CC BY-SA 4.0), PHILLIPS 66 (DOMINIO PÚBLICO),<br>STEVE SHOOK / GROGANPHOTO (CC BY 2.0), VÍA WIKIMEDIA COMMONS<br>PUNTOS, MARCADOR, CRONÓMETRO, GRADA Y BALÓN: RECREACIÓN</div>
+ <div class="a rec c" id="cred" style="left:0;width:1080px;top:1560px;font-size:17px;opacity:0">FOTOS: CHRIS FLOOK (CC BY-SA 4.0), PHILLIPS 66 (DOMINIO PÚBLICO),<br>STEVE SHOOK / GROGANPHOTO (CC BY 2.0), VÍA WIKIMEDIA COMMONS<br>PUNTOS, MARCADOR, CRONÓMETRO, GRADA Y BALÓN: RECREACIÓN</div>
 </div>
 
 </div>
@@ -150,7 +150,7 @@ svg .dr{fill:none;stroke-linecap:round;stroke-linejoin:round}
 const $=i=>document.getElementById(i), cl=x=>Math.min(1,Math.max(0,x)), P=(t,a,b)=>cl((t-a)/(b-a)), eo=x=>1-Math.pow(1-x,3), eio=x=>x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2;
 const W=window.WORDS, T=k=>W[k][1], E=k=>W[k][2];
 const NS='http://www.w3.org/2000/svg', mk=(tag,at,par)=>{const e=document.createElementNS(NS,tag);for(const k in at)e.setAttribute(k,at[k]);par&&par.appendChild(e);return e};
-const OUT=24.4;
+const OUT=25.15;   // «esperar» acaba a 24,26 s: ESPERAR quieto ~0,9 s y fundido de 0,5 s al cierre desde 25,15
 const L=[];
 function line(id,tokens){const el=$(id);for(const [txt,k,cls,st] of tokens){const s=document.createElement('span');s.className='w '+(cls||'');s.textContent=txt;if(st)s.style.cssText=st;el.appendChild(s);L.push([s,T(k)])}}
 line('l1',[['Indiana,',0,'it'],['1954.',1]]);
@@ -176,19 +176,19 @@ const draw=(el,p)=>{const n=el.getTotalLength?el.getTotalLength():1000;el.style.
 const mix=(a,b,p)=>a+(b-a)*p;
 // 2 · 161 puntos (uno por alumno) y un bloque diez veces mayor
 const SD=[];for(let i=0;i<161;i++){const c=i%13,r=Math.floor(i/13);SD.push(mk('circle',{cx:60+c*20,cy:90+r*20,r:7,fill:'#B9E0FF',opacity:0},$('small')))}
-const big=$('big');for(let i=0;i<1610;i++){const c=i%46,r=Math.floor(i/46);mk('circle',{cx:350+c*13.2,cy:70+r*13.2,r:4.6,fill:'#636DFF'},big)}
+const big=$('big');for(let i=0;i<1610;i++){const c=i%46,r=Math.floor(i/46);mk('circle',{cx:350+c*13.2,cy:70+r*13.2,r:4.6,fill:'#6AA8FF'},big)}
 // 4 · grada: gradas en línea y público en puntos
 for(let r=0;r<6;r++)mk('path',{class:'dr',d:`M${20+r*14} ${380-r*60} H${980-r*14}`,stroke:'#26335a','stroke-width':4},$('tiers'));
-const CR=[];for(let r=0;r<6;r++)for(let c=0;c<44;c++){const x=40+r*14+c*((920-r*28)/43),y=360-r*60;CR.push([mk('circle',{cx:x.toFixed(1),cy:y,r:9,fill:r%2?'#3a4770':'#636DFF',opacity:0},$('crowd')),r,c])}
+const CR=[];for(let r=0;r<6;r++)for(let c=0;c<44;c++){const x=40+r*14+c*((920-r*28)/43),y=360-r*60;CR.push([mk('circle',{cx:x.toFixed(1),cy:y,r:9,fill:r%2?'#3a4770':'#6AA8FF',opacity:0},$('crowd')),r,c])}
 // ----- cámara: un solo plano -----
 const cam={cx:540,cy:960,z:1.06};const tl=gsap.timeline({paused:true});
 const fly=(t,cx,cy,z,d=.9)=>{tl.to(cam,{cx,cy,duration:d,ease:'power2.inOut'},t);tl.to(cam,{keyframes:[{z:z*0.9,duration:d*.5,ease:'sine.out'},{z,duration:d*.5,ease:'sine.inOut'}]},t)};
 tl.set(cam,{cx:540,cy:960,z:1.06},0).to(cam,{z:1.02,cy:985,duration:2.15,ease:'sine.out'},0);
-fly(2.15,1700,960,1.04); tl.to(cam,{z:1.0,cy:990,duration:6.55,ease:'sine.out'},3.05);
+fly(2.4,1700,960,1.04,.8); tl.to(cam,{z:1.0,cy:990,duration:6.4,ease:'sine.out'},3.2);
 fly(9.6,1700,3110,1.04); tl.to(cam,{z:1.0,cy:3135,duration:2.8,ease:'sine.out'},10.5);
 fly(13.3,540,3110,1.04); tl.to(cam,{z:1.01,cy:3120,duration:1.9,ease:'sine.out'},14.2); tl.to(cam,{z:1.0,cy:3175,duration:1.1,ease:'sine.inOut'},16.1);
 fly(17.85,1700,5260,1.04); tl.to(cam,{z:1.0,cy:5280,duration:2.7,ease:'sine.out'},18.75);
-fly(21.35,540,5260,1.04); tl.to(cam,{z:.98,cy:5250,duration:OUT+.6-22.25,ease:'sine.out'},22.25);
+fly(21.35,540,5260,1.04); tl.to(cam,{z:.98,cy:5250,duration:T(55)-22.25,ease:'sine.out'},22.25);
 const g=$('grain').getContext('2d'),gi=g.createImageData(360,640);let sd=1;const RN=()=>(sd=(sd*16807)%2147483647)/2147483647;
 function camAt(t){tl.seek(t,false);return [cam.cx,cam.cy,cam.z]}
 const arcD=p=>{if(p<=0)return '';const a=-Math.PI/2+p*2*Math.PI*.999,x=290+250*Math.cos(a),y=290+250*Math.sin(a);return `M290 40 A250 250 0 ${p>.5?1:0} 1 ${x.toFixed(1)} ${y.toFixed(1)}`};
@@ -204,11 +204,11 @@ window.frame=function(t){window._t=t;
  const stp=P(t,T(1)-.04,T(1)+.16);$('stamp').style.opacity=stp>0?1:0;$('stamp').style.transform=`rotate(-7deg) scale(${1.5-.5*eo(stp)})`;
  // 2 · contador 0 → 161, puntos que se rellenan, bloque ×10 que cae
  N161.textContent=String(Math.round(161*eio(P(t,T(5),E(5)+.1))));
- const dt=eo(P(t,T(5)-.35,T(5)+.05));$('dots').style.opacity=dt;$('dots').style.transform=`translateY(${(1-dt)*30}px)`;
+ const dt=eo(P(t,2.45,2.95));$('dots').style.opacity=dt;$('dots').style.transform=`translateY(${(1-dt)*30}px)`;
  SD.forEach((c,i)=>c.setAttribute('opacity',P(t,T(5)+i*.0075,T(5)+i*.0075+.12)));
  const bg=P(t,T(13)-.05,T(13)+.45),bge=bg<1?eio(bg):1,bo=Math.sin(Math.PI*P(t,T(13)+.4,T(13)+.75))*8;
  big.setAttribute('opacity',bg>0?1:0);big.setAttribute('transform',`translate(0,${(-560*(1-bge)+bo).toFixed(1)})`);
- const push=eio(P(t,T(13)+.3,T(13)+.7));$('small').setAttribute('transform',`translate(${(-14*push).toFixed(1)},0)`);$('sT').setAttribute('opacity',1-.4*push);
+ const push=eio(P(t,T(13)+.3,T(13)+.7));$('small').setAttribute('transform',`translate(${(-14*push).toFixed(1)},0)`);$('sT').setAttribute('opacity',(eo(P(t,T(5)+.6,E(5)+.1))*(1-.4*push)).toFixed(2));
  $('bT').setAttribute('opacity',eo(P(t,T(17)-.05,T(17)+.3)));
  // 3 · marcador del 4.º cuarto, Plump, balón que se queda
  const b1=eo(P(t,T(21)-.4,T(21)+.05));$('board').style.opacity=b1;$('board').style.transform=`translateY(${(1-b1)*30}px)`;
@@ -216,7 +216,7 @@ window.frame=function(t){window._t=t;
  const pp=eo(P(t,T(23)-.45,T(23)+.05));$('p2').style.opacity=pp;$('p2').style.transform=`translateY(${(1-pp)*50}px)`;
  const t2=eo(P(t,T(24)-.05,T(24)+.3));$('tag2').style.opacity=t2;$('tag2').style.transform=`rotate(-2deg) translateX(${(1-t2)*-40}px)`;
  const bd=P(t,T(25)-.1,T(25)+.5);let by=240;if(bd<1){const u=bd;by=u<.55?mix(-160,370,(u/.55)**2):370-120*Math.sin(Math.PI*(u-.55)/.45)}else by=370;
- if(bd>=1)by=370; $('ball').setAttribute('opacity',eo(P(t,T(25)-.1,T(25)+.1)));$('ball').setAttribute('transform',`translate(230,${by.toFixed(1)})`);$('shad').setAttribute('opacity',(.5*eo(P(t,T(25),T(25)+.5))).toFixed(2));
+ if(bd>=1)by=370; $('ball').setAttribute('opacity',eo(P(t,T(25)-.1,T(25)+.1)));$('ball').setAttribute('transform',`translate(230,${by.toFixed(1)}) scale(.8)`);$('shad').setAttribute('opacity',0);
  const pz=eo(P(t,T(29)-.05,T(29)+.3));$('pause').setAttribute('opacity',pz);$('pause').setAttribute('transform',`translate(0,${((1-pz)*-20).toFixed(1)})`);
  // 4 · cronómetro del balón retenido (cuenta hacia arriba hasta más de 4:00) y grada con 15.000
  const wa=eo(P(t,T(32)-.45,T(32)+.05));$('watch').style.opacity=wa;$('watch').style.transform=`translateY(${(1-wa)*30}px)`;
