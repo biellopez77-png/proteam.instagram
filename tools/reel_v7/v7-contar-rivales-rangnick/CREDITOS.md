@@ -19,3 +19,6 @@ Música y efectos (Epidemic Sound, vía Higgsfield): «Musical, Loop, Calm Piano
 Render: htmlreel (30 fps) y fundido de 0,6 s al cierre común en 20,4 s; video_mudo.mp4 a crf 26.
 
 Vídeo final: https://d2ol7oe51mr4n9.cloudfront.net/user_3M2z7lIyzIPYtjNHcxRWFNk6wi7/9db5fc13-4533-415d-898d-39c5d367ce09.mp4 (26,0 s: 20,4 s de historia + cierre común; comprobado con whisper: se oyen las 54 palabras; −16,3 LUFS, −1,0 dBTP).
+
+Remontaje 27/11 (crítica de Andrés, 78/100; Marta B): «A LA VEZ» entero y quieto desde 20,3 s, cámara parada desde 19,9 s; fundido a negro de 0,5 s al cierre común outro2 en 21,3 s (sin logo sobre el campo); la foto del Dinamo entra durante el viaje de 4,45 s (sin encuadre vacío) y «JUEGA Y ENTRENA» se apaga antes del viaje; «¿Trece? ¿Catorce?» se apagan antes de «SON ONCE». Voz, música, efectos, fotos y caption sin cambios; mix.py con OUT 21,3 y el audio de outro2.mp4, la música bajando bajo el cierre. video_mudo.mp4 nuevo (25,3 s, crf 26).
+Vídeo final: https://d2ol7oe51mr4n9.cloudfront.net/user_3M2z7lIyzIPYtjNHcxRWFNk6wi7/374ddf18-0507-43cb-a8b2-7fa105f0e2f8.mp4 (25,3 s: 21,3 s de historia + cierre común). Whisper oye las 54 palabras («vez» acaba en 20,16 s) y el cierre «Dale like y síguenos para más vídeos como este» desde 21,56 s; −16,8 LUFS, −1,0 dBTP.

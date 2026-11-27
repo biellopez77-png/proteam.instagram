@@ -1617,7 +1617,7 @@
   "id": "v7-contar-rivales-rangnick",
   "kind": "reel",
   "files": [
-   "https://d2ol7oe51mr4n9.cloudfront.net/user_3M2z7lIyzIPYtjNHcxRWFNk6wi7/27b74c02-ad3a-4885-83d6-94afa8138329.mp4"
+   "https://d2ol7oe51mr4n9.cloudfront.net/user_3M2z7lIyzIPYtjNHcxRWFNk6wi7/374ddf18-0507-43cb-a8b2-7fa105f0e2f8.mp4"
   ],
   "caption": "Un entrenador se paró en un saque de banda a contar a los rivales.\n\nRalf Rangnick era jugador-entrenador del Viktoria Backnang, el club de su ciudad, cuando jugaron un amistoso contra el Dinamo de Kiev de Valeri Lobanovski (1983, según The Independent y GOAL). «Tuve que pararme a contar a sus jugadores. ¿Tenían 13 o 14 en el campo?», contó. Eran once, pero fue el primer equipo que le presionó el balón sin darle respiro. Lo llamó su «epifanía futbolística» (The Independent; GOAL; Sky Sports).\n\n¿Tu equipo presiona con once o con dos?\n\n¿Te ha servido? Dale like y síguenos para más vídeos como este.\n\nFuentes: The Independent, GOAL, Sky Sports, Wikipedia. Fotos: Steffen Prößdorf (CC BY-SA 4.0), Jedesto (CC BY-SA 4.0), Rob Croes / Anefo (CC0), Anefo / Nationaal Archief (CC0), vía Wikimedia Commons. Campo, fichas, contador y saque de banda: recreación.\nMúsica y efectos: Epidemic Sound\n\n#entrenador #entrenadordefutbol #fútbol #futbolbase #presión #pressing #Rangnick #Lobanovski #DinamoDeKiev #historiadelfutbol #táctica #ProTeam",
   "state": "revisión",
@@ -1630,9 +1630,11 @@
   "added": "2026-11-27T05:13:00+01:00",
   "nota": "v7 historia con fotos (Rangnick cuenta a los rivales del Dinamo de Kiev de Lobanovski). Guion: agencia/fabrica-v7/guiones/v7-contar-rivales-rangnick.md (Dani A). Montaje: Marta B (02). Créditos: tools/reel_v7/v7-contar-rivales-rangnick/CREDITOS.md",
   "files_old": [
-   "https://d2ol7oe51mr4n9.cloudfront.net/user_3M2z7lIyzIPYtjNHcxRWFNk6wi7/9db5fc13-4533-415d-898d-39c5d367ce09.mp4"
+   "https://d2ol7oe51mr4n9.cloudfront.net/user_3M2z7lIyzIPYtjNHcxRWFNk6wi7/9db5fc13-4533-415d-898d-39c5d367ce09.mp4",
+   "https://d2ol7oe51mr4n9.cloudfront.net/user_3M2z7lIyzIPYtjNHcxRWFNk6wi7/27b74c02-ad3a-4885-83d6-94afa8138329.mp4"
   ],
-  "cierre": "outro2"
+  "cierre": "outro2",
+  "remontaje": "27/11 Marta B: crítica de Andrés 78/100 → A LA VEZ quieto ≥1 s, fundido a negro a outro2 (voz del cierre a 21,56 s), Dinamo entra durante el viaje, SON ONCE sin solape"
  },
  {
   "id": "v7-cuatro-minutos-milan-1954",
