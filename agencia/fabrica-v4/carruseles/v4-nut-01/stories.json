@@ -1,0 +1,13 @@
+{
+ "numero": "Nº 00",
+ "seccion": "Cuatro jornadas, no una",
+ "formato": "story",
+ "laminas": [
+  {"tipo": "pregunta", "foto": "STAFF_BANQUILLO_FOTO_001", "cap": "Una pregunta",
+   "big": "¿CUÁNTOS\nMINUTOS", "bigLines": 2, "size": 170,
+   "serif": "jugó tu último suplente\nen las cuatro últimas?", "serifSize": 92},
+  {"tipo": "encuesta", "pre": "Encuesta", "big": "ANTES DE\nCONVOCAR,", "bigLines": 2, "size": 150,
+   "serif": "¿miras la última\no las cuatro últimas?", "serifSize": 100,
+   "foto": "INSTALACION_ESTADIO_PEQUENO_VACIO_FOTO_001"}
+ ]
+}
