@@ -1,0 +1,22 @@
+# v7-guerra-izzo-2000 · «La guerra» (historia con fotos)
+Guion: agencia/fabrica-v7/guiones/v7-guerra-izzo-2000.md (Dani B). Montaje v7: Marta B (02), 28/11/2026.
+
+Voz (20,34 s, 51 palabras, texto de «## Voz» sin cambios): «Los jugadores de Tom Izzo llegaron al entreno y encontraron cascos y hombreras de fútbol americano. Era baloncesto. Diez jugadores, un balón y una regla: no hay reglas. Lo llamaban «la guerra», y era a diario. Ese año, Michigan State fue campeona nacional. El rebote no es de centímetros... se entrena.»
+ElevenLabs eleven_v4, voz Mateo (gpMzl7dbkfC9dIxAqQZT), prompt con «[confident, assured, steady storyteller tone, firm and calm]»; en el texto, «Tom Ízo» y «Míchigan Steit» para la pronunciación. Dos tomas de una (376 + 362 créditos): en la primera, whisper small y medium oían «balonfesto», así que se usa la segunda, donde se oyen las 51 palabras. Tiempos por palabra: faster-whisper small (words.json / words.js; «10» → «Diez»).
+
+Gancho (27/11): la foto de Izzo está entera en el fotograma 0; el rótulo de lugar y fecha («MICHIGAN STATE · TEMPORADA 1999–2000») entra con la segunda frase («Era baloncesto»). Remate «SE ENTRENA.» quieto 1,0 s con la cámara parada (20,34–21,34 s), fundido a NEGRO de 0,5 s (21,34–21,84 s) y outro2 desde negro; «Dale» entra a 22,09 s (1,75 s después de «entrena»).
+
+Datos y fuentes: ESPN (Jay Bilas, 2000), Grantland (2014), MSU Athletics (2020), Sports Illustrated (2000), The State News (2007) (ver el guion). Final NCAA 2000: Michigan State 89, Florida 76.
+
+Fotos (Wikimedia Commons, descargadas el 28/11/2026 desde el sandbox de Higgsfield; licencias comprobadas por Dani B en el guion):
+- Tom_Izzo_140507-D-HU462-339.jpg (7/5/2014, Pentágono) — Chairman of the Joint Chiefs of Staff (Departamento de Defensa de EE. UU.) — dominio público — recortada por encima de los logos de la camiseta y sin el atril; fondo (bandera) quitado con rembg (isnet-general-use); B/N. Ficha «TOM IZZO · ENTRENADOR».
+- US_Navy_111111-N-SB672-061_Tom_Izzo,_head_coach_of_the_Michigan_State_University_basketball_team,_instructs_his_players_during_a_practice_on_the_fl.jpg (11/11/2011) — U.S. Navy, MC2 Dylan McCord — dominio público — polaroid recortada a Izzo, «ENTRENO · 2011»; B/N, ningún escudo resaltado.
+- US_Navy_040309-N-3874J-008_Players_from_the_All-Navy_and_Marine_Corps_Women's_basketball_teams_fight_for_a_rebound.jpg (9/3/2004) — U.S. Navy, PH2 Daniel A. Jones — dominio público — en marco (el recorte de cinco jugadoras con rembg no queda limpio), rotulada «OTRO EQUIPO, OTRA ÉPOCA» y pie «Foto: U.S. Navy, 2004 (no es Michigan State)».
+Graduadas con tools/reel_v7/bielsa/grade.py (cut.py; las tres en B/N, sin azul). Banco, casco, hombreras, balón, pista con diez fichas, libreta, calendario, periódico, trofeo, aro y cinta métrica: dibujados (rotulados «recreación» en el pie y en el periódico). Sin escudos.
+
+Ultravioleta #8B5CF6 una sola vez: «SE ENTRENA.».
+
+Música y efectos (Epidemic Sound, vía Higgsfield): «Musical, Loop, Piano, Sentimental, Fast 01» (distinta de la del último v7, que usó «Orchestra, Piano, Choir, Sentimental»); «Swooshes, Whoosh, Soft, Clean»; «Communications, Camera, KMZ Zenit 12XP Camera, Shutter 02»; «Paper, Friction, Sheet, Laminated, Slide On Wooden Table»; «Equipment, Misc, Motorcycle Helmet, Put Down On Surface 01» y «Wood, Impact, Deep Thud» (casco y hombreras sobre el banco); «Sports, Court, Basketball, Indoor, Ball Bounce, Soft 01» (un bote); «Games, Board, Chess, Moving Random Chess Pieces» (fichas); «Objects, Writing, Marker On Paper, Writing 02»; «Office Supplies, Rubber Stamp, Document 01»; «Sports, Court, Gym, Shoe Squeaks» (corto); «Crowds, Applause, Light Applause, Small Audience, Short 03» (lejano); «Tools, Hand, Tape Measure, Retract, Medium Short»; en el cierre, «Musical, Loop, Logo, Calm, Piano 01» bajo (0,22). Mezcla: mix.py (voz −19, música −31 con ducking; resultado voz −19,0, música −33,5, sfx −37,1, pico 0,90); final −17,4 LUFS, −1,0 dBTP.
+
+Vídeo final: https://d2ol7oe51mr4n9.cloudfront.net/user_3M2z7lIyzIPYtjNHcxRWFNk6wi7/36b37a12-ec81-4f9c-86f4-5829c44108f1.mp4 (25,8 s: historia hasta 21,84 s y cierre sin app, tools/reel_v6/outro/outro2.mp4). Comprobado con whisper small: se oyen las 51 palabras y «Dale like y síguenos para más vídeos como este» («¿Te ha servido?» va en pantalla en outro2).
+Caption: la del guion, con «¿Te ha servido? Dale like y síguenos para más vídeos como este.» al final.
