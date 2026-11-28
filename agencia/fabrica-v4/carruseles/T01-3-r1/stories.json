@@ -1,0 +1,28 @@
+{
+ "numero": "Nº 00",
+ "seccion": "Minuto cuarenta y seis",
+ "formato": "story",
+ "laminas": [
+  {
+   "tipo": "pregunta",
+   "foto": "INSTALACION_VESTUARIO_FOTO_001",
+   "pos": "50% 50%",
+   "cap": "Tu último descanso",
+   "big": "¿CUÁNTAS\nCOSAS?",
+   "bigLines": 2,
+   "serif": "Cuenta las que dijiste. ¿Cuál iba primero?",
+   "size": 160,
+   "serifSize": 90,
+   "lh": 1.0
+  },
+  {
+   "tipo": "encuesta",
+   "pre": "Minuto 45, en el vestuario",
+   "big": "PRIMERO:",
+   "serif": "¿hablas tú\no dejas tres minutos?",
+   "foto": "STAFF_TRABAJO_FOTO_002",
+   "size": 190,
+   "serifSize": 96
+  }
+ ]
+}
