@@ -1,0 +1,243 @@
+<!doctype html><html><head><meta charset="utf-8">
+<!-- v7 · «Primero, el equipo» (Otto Rehhagel y Grecia, Euro 2004). Base: tools/reel_v7/wooden/reel.html y v7-siete-segundos-dantoni.
+     Un solo plano sobre la pared; cada cosa que dice la voz se anima en su palabra. Gancho primero (Revisión viral 27/11):
+     el primer fotograma ya tiene la ficha «GRECIA · FASES FINALES» con el «0» de victorias. Viajes 0,9 s power2.inOut, zoom ×0,9, blur ≤ 4 px, sin destellos.
+     Remate quieto desde 20,5 s; fundido a negro de 21,5 a 22,0 s y cierre común (outro2) desde 22,0 s. -->
+<style>
+@font-face{font-family:S;src:url(fonts/instrument-serif-latin-400-normal.woff2)}
+@font-face{font-family:SI;src:url(fonts/instrument-serif-latin-400-italic.woff2)}
+@font-face{font-family:J;font-weight:500;src:url(fonts/plus-jakarta-sans-latin-500-normal.woff2)}
+@font-face{font-family:J;font-weight:700;src:url(fonts/plus-jakarta-sans-latin-700-normal.woff2)}
+@font-face{font-family:J;font-weight:800;src:url(fonts/plus-jakarta-sans-latin-800-normal.woff2)}
+@font-face{font-family:J;font-weight:800;font-style:italic;src:url(fonts/plus-jakarta-sans-latin-800-italic.woff2)}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#02050F}
+#cam{position:absolute;left:0;top:0;width:2600px;height:6400px;transform-origin:0 0;background:url(wall2.jpg)}
+.a{position:absolute}
+.serif{font-family:S;color:#F4F7FB;white-space:nowrap;line-height:1}
+.bold{font-family:J;font-weight:800;color:#F4F7FB;white-space:nowrap;letter-spacing:-.02em;line-height:1}
+.acc{font-family:J;font-weight:800;font-style:italic;color:#6AA8FF}
+.uv{color:#8B5CF6}
+.w{display:inline-block;margin-right:.24em}
+.mat{background:#E9EEF6;padding:20px 20px 60px;border:5px solid #0b0f1a;box-shadow:0 30px 70px rgba(0,0,0,.6)}
+.mat img{display:block;width:100%}
+.mat .cap{position:absolute;left:22px;bottom:16px;font:700 20px J;color:#3b4660;letter-spacing:.08em;white-space:nowrap}
+.panel{background:#0C1323;border:1px solid #26335a;border-radius:22px;box-shadow:0 40px 90px rgba(0,0,0,.6)}
+.press{background:#E9EEF6;border-radius:6px;padding:14px 22px;box-shadow:0 20px 40px rgba(0,0,0,.5);font:800 30px J;color:#0b0f1a;letter-spacing:.06em;white-space:nowrap}
+.press small{display:block;font:700 18px J;color:#5d6888;letter-spacing:.14em;margin-bottom:6px}
+.lab{font:800 22px J;letter-spacing:.16em;color:#8f9bb8;white-space:nowrap}
+.cred{font:500 18px J;color:#6d789a;letter-spacing:.04em;white-space:nowrap}
+.row{position:absolute;left:40px;width:820px;height:96px;border-radius:12px;background:#111a30;border:2px solid #26335a}
+.row .n{position:absolute;left:28px;top:28px;font:800 38px J;color:#F4F7FB;letter-spacing:.02em}
+.zero{position:absolute;left:610px;top:6px;width:150px;text-align:center;font:800 80px J;color:#6AA8FF;opacity:0}
+.sb{position:absolute;width:900px;height:104px;border-radius:14px;background:#E9EEF6;box-shadow:0 20px 40px rgba(0,0,0,.5)}
+.sb small{position:absolute;left:28px;top:16px;font:700 18px J;color:#5d6888;letter-spacing:.16em}
+.sb b{position:absolute;left:28px;top:42px;font:800 44px J;color:#0b0f1a;letter-spacing:.02em;white-space:nowrap}
+.sb i{position:absolute;right:30px;top:24px;font:800 58px J;font-style:normal;color:#636DFF}
+.mini{position:absolute;width:380px;height:92px;border-radius:12px;background:#0C1323;border:2px solid #6AA8FF;box-shadow:0 20px 40px rgba(0,0,0,.6)}
+.mini small{position:absolute;left:22px;top:14px;font:700 18px J;color:#8f9bb8;letter-spacing:.14em}
+.mini b{position:absolute;left:22px;top:38px;font:800 40px J;color:#F4F7FB;white-space:nowrap}
+#grain{position:absolute;inset:0;width:1080px;height:1920px;mix-blend-mode:screen;opacity:.10;pointer-events:none;image-rendering:pixelated}
+</style></head><body><div id="cam">
+
+<!-- 1 · GANCHO · Grecia nunca había ganado un partido en una Eurocopa ni en un Mundial (la ficha y el «0» ya en el primer fotograma) -->
+<div class="a serif" id="l1a" style="left:90px;top:200px;font-size:80px"></div>
+<div class="a bold" id="l1b" style="left:90px;top:300px;font-size:128px"></div>
+<div class="a panel" id="card" style="left:90px;top:500px;width:900px;height:740px">
+ <div class="a lab" style="left:40px;top:36px">GRECIA · FASES FINALES · ARCHIVO</div>
+ <div class="a lab" style="left:40px;top:96px;font-size:18px;color:#5d6888">TORNEO</div>
+ <div class="a lab" style="left:620px;top:96px;font-size:18px;color:#5d6888">VICTORIAS</div>
+ <div class="row" id="r1" style="top:136px"><div class="n">EURO 1980</div><div class="zero" id="z1">0</div></div>
+ <div class="row" id="r2" style="top:250px"><div class="n">MUNDIAL 1994</div><div class="zero" id="z2">0</div></div>
+ <svg class="a" style="left:640px;top:350px" width="200" height="40" viewBox="0 0 200 40"><path id="ul" d="M10 24 Q100 12 190 22" fill="none" stroke="#6AA8FF" stroke-width="7" stroke-linecap="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/></svg>
+ <div class="a" style="left:40px;top:410px;width:820px;height:2px;background:#26335a"></div>
+ <div class="a lab" style="left:40px;top:450px">PARTIDOS GANADOS</div>
+ <div class="a bold" id="big0" style="left:40px;top:490px;font-size:220px;color:#6AA8FF;letter-spacing:-.05em">0</div>
+ <div class="a lab" style="left:420px;top:640px;font-size:18px;color:#5d6888">FICHA: RECREACIÓN</div>
+</div>
+<div class="a serif" id="l1c" style="left:90px;top:1320px;font-size:80px"></div>
+<div class="a serif" id="l1d" style="left:90px;top:1420px;font-size:80px"></div>
+<div class="a cred" id="credA" style="left:92px;top:1540px">UEFA.com · The Irish Times</div>
+
+<!-- 2 · En 2001 llegó un alemán: Otto Rehhagel -->
+<div class="a serif" id="l2a" style="left:1190px;top:200px;font-size:80px"></div>
+<div class="a panel" id="tick" style="left:1190px;top:320px;width:1000px;height:220px">
+ <div class="a lab" style="left:40px;top:30px">BILLETE · RECREACIÓN</div>
+ <div class="a bold" style="left:40px;top:84px;font-size:68px">ALEMANIA <span style="color:#6AA8FF">→</span> ATENAS</div>
+ <div class="a" style="left:760px;top:0;width:2px;height:220px;border-left:3px dashed #26335a"></div>
+ <div class="a" id="tst" style="left:790px;top:58px;padding:12px 18px;border:5px solid #6AA8FF;border-radius:10px;font:800 54px J;color:#6AA8FF;transform:rotate(-6deg);opacity:0">2001</div>
+</div>
+<img class="a" id="reh" src="img/rehhagel_g.png" style="left:1470px;top:590px;width:720px;filter:drop-shadow(0 30px 40px rgba(0,0,0,.55))">
+<div class="a press" id="preh" style="left:1200px;top:1420px"><small>SELECCIONADOR DE GRECIA · 2001–2010</small>OTTO REHHAGEL</div>
+<div class="a bold" id="l2b" style="left:1190px;top:1580px;font-size:120px"></div>
+<div class="a cred" id="credB" style="left:1192px;top:1730px">Foto: Jörg Zägel, 2010 · CC BY-SA 3.0</div>
+
+<!-- 3 · Marcaje al hombre, orden atrás y balón parado -->
+<div class="a bold" id="l3a" style="left:90px;top:1920px;font-size:88px"></div>
+<div class="a mat" id="pban" style="left:90px;top:2060px;width:470px;transform:rotate(-3deg)"><img src="img/banda_g.jpg"><div class="cap">EN LA BANDA · 2008</div></div>
+<div class="a serif" id="l3b" style="left:620px;top:2210px;font-size:76px"></div>
+<div class="a serif" id="l3c" style="left:620px;top:2310px;font-size:76px"></div>
+<div class="a serif" id="l3d" style="left:620px;top:2410px;font-size:76px"></div>
+<div class="a cred" id="credC" style="left:100px;top:2640px">Foto: Stelios Tsaousidis · dominio público</div>
+<svg class="a" id="board" style="left:90px;top:2700px" width="900" height="620" viewBox="0 0 900 620">
+ <rect x="2" y="2" width="896" height="616" rx="24" fill="#0C1323" stroke="#26335a" stroke-width="3"/>
+ <g fill="none" stroke="#3a4870" stroke-width="4"><path d="M40 40 H860 V580 H40 Z"/><path d="M40 310 H860"/><circle cx="450" cy="310" r="70"/>
+ <path d="M250 580 V460 H650 V580"/><path d="M350 580 V530 H550 V580"/></g>
+ <g id="links" stroke="#6AA8FF" stroke-width="4" stroke-linecap="round"></g>
+ <rect id="blk" x="170" y="402" width="560" height="96" rx="18" fill="none" stroke="#6AA8FF" stroke-width="6" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/>
+ <g id="grey"></g><g id="blue"></g>
+ <path id="arB" d="M830 70 Q700 330 480 500" fill="none" stroke="#B9E0FF" stroke-width="6" stroke-linecap="round" stroke-dasharray="14 12" opacity="0"/>
+ <circle id="bal" r="16" fill="#E9EEF6" stroke="#02050F" stroke-width="3" opacity="0"/>
+ <text x="60" y="566" font-family="J" font-weight="700" font-size="20" fill="#5d6888" letter-spacing="2">PIZARRA · RECREACIÓN</text>
+</svg>
+
+<!-- 4 · Y una regla: la selección, antes que el club -->
+<div class="a serif" id="l4a" style="left:1190px;top:2000px;font-size:80px"></div>
+<div class="a bold" id="l4b" style="left:1190px;top:2100px;font-size:118px"></div>
+<div class="a serif" id="l4c" style="left:1190px;top:2260px;font-size:80px"></div>
+<svg class="a" id="shirtc" style="left:1190px;top:2410px" width="1000" height="980" viewBox="0 0 1000 980">
+ <rect x="2" y="2" width="996" height="976" rx="24" fill="#0C1323" stroke="#26335a" stroke-width="3"/>
+ <g id="crests"></g>
+ <defs><clipPath id="sc"><path d="M330 230 L420 190 Q500 230 580 190 L670 230 L790 330 L730 430 L670 395 L670 820 L330 820 L330 395 L270 430 L210 330 Z"/></clipPath></defs>
+ <g id="shirt">
+  <path d="M330 230 L420 190 Q500 230 580 190 L670 230 L790 330 L730 430 L670 395 L670 820 L330 820 L330 395 L270 430 L210 330 Z" fill="#E9EEF6"/>
+  <g clip-path="url(#sc)" fill="#636DFF"><rect x="200" y="250" width="600" height="56"/><rect x="200" y="362" width="600" height="56"/><rect x="200" y="474" width="600" height="56"/><rect x="200" y="586" width="600" height="56"/><rect x="200" y="698" width="600" height="56"/></g>
+  <path d="M330 230 L420 190 Q500 230 580 190 L670 230 L790 330 L730 430 L670 395 L670 820 L330 820 L330 395 L270 430 L210 330 Z" fill="none" stroke="#02050F" stroke-width="6"/>
+  <path d="M420 190 Q500 260 580 190" fill="none" stroke="#02050F" stroke-width="6"/>
+ </g>
+ <text x="40" y="940" font-family="J" font-weight="700" font-size="20" fill="#5d6888" letter-spacing="2">CAMISETA Y ESCUDOS GENÉRICOS · RECREACIÓN</text>
+</svg>
+
+<!-- 5 · En 2004 ganó a Francia, a Chequia y dos veces a Portugal... -->
+<div class="a serif" id="l5a" style="left:90px;top:3580px;font-size:80px"></div>
+<div class="sb" id="sb1" style="left:90px;top:3700px"><small>CUARTOS · 2004</small><b>GRECIA – FRANCIA</b><i>1-0</i></div>
+<div class="sb" id="sb2" style="left:90px;top:3826px"><small>SEMIFINAL · 2004</small><b>GRECIA – CHEQUIA</b><i>1-0</i></div>
+<div class="a serif" id="l5b" style="left:90px;top:3980px;font-size:80px"></div>
+<div class="a mat" id="pfin" style="left:90px;top:4110px;width:900px;transform:rotate(1.2deg)"><img src="img/final_g.jpg"><div class="cap">LA FINAL · 2004</div></div>
+<div class="mini" id="m1" style="left:230px;top:4560px"><small>INAUGURAL</small><b>GRE – POR 2-1</b></div>
+<div class="mini" id="m2" style="left:630px;top:4560px"><small>FINAL</small><b>GRE – POR 1-0</b></div>
+<div class="a cred" id="credD" style="left:100px;top:4690px">Foto: Jarrett Campbell, 2004 · CC BY 2.0</div>
+
+<!-- 6 · Campeona de Europa -->
+<div class="a" id="cover" style="left:1230px;top:3630px;width:940px;height:1180px;background:#E9EEF6;border-radius:8px;box-shadow:0 40px 90px rgba(0,0,0,.6)">
+ <div class="a" style="left:0;top:0;width:940px;height:96px;background:#0b0f1a;border-radius:8px 8px 0 0"></div>
+ <div class="a" style="left:36px;top:30px;font:800 34px J;color:#F4F7FB;letter-spacing:.18em">ARCHIVO</div>
+ <div class="a" style="right:36px;top:36px;font:700 24px J;color:#B9E0FF;letter-spacing:.14em">4 JULIO 2004</div>
+ <div class="a" style="left:120px;top:140px;width:700px;border:5px solid #0b0f1a"><img src="img/charisteas_g.jpg" style="display:block;width:100%"></div>
+ <div class="a" style="left:122px;top:680px;font:700 18px J;color:#5d6888;letter-spacing:.08em">CHARISTEAS MARCA EL 1-0 DE LA FINAL</div>
+ <div class="a bold" id="l6a" style="left:60px;top:760px;font-size:132px;color:#0b0f1a"></div>
+ <div class="a bold" id="l6b" style="left:60px;top:900px;font-size:132px;color:#0b0f1a"></div>
+ <div class="a" style="left:62px;top:1110px;font:700 18px J;color:#5d6888;letter-spacing:.12em">PORTADA · RECREACIÓN</div>
+</div>
+<div class="a cred" id="credE" style="left:1240px;top:4840px">Foto: Fritz Duras, 2004 · CC BY-SA 3.0</div>
+
+<!-- 7 · REMATE · Primero, el equipo -->
+<svg class="a" id="board2" style="left:1190px;top:4950px" width="1000" height="640" viewBox="0 0 1000 640">
+ <rect x="2" y="2" width="996" height="636" rx="24" fill="#0C1323" stroke="#26335a" stroke-width="3"/>
+ <g fill="none" stroke="#3a4870" stroke-width="4"><path d="M40 40 H960 V600 H40 Z"/><path d="M500 40 V600"/><circle cx="500" cy="320" r="80"/></g>
+ <rect id="blk2" x="290" y="170" width="420" height="300" rx="40" fill="none" stroke="#6AA8FF" stroke-width="6" opacity="0"/>
+ <g id="eleven"></g>
+ <text x="60" y="580" font-family="J" font-weight="700" font-size="20" fill="#5d6888" letter-spacing="2">PIZARRA · RECREACIÓN</text>
+</svg>
+<div class="a serif" id="l7a" style="left:1190px;width:1000px;text-align:center;top:5670px;font-size:96px"></div>
+<div class="a bold" id="l7b" style="left:1190px;width:1000px;text-align:center;top:5800px;font-size:150px"></div>
+<div class="a cred" id="credF" style="left:1170px;width:1040px;text-align:center;top:6050px;line-height:1.5;white-space:normal;opacity:0">Fotos: Jörg Zägel (CC BY-SA 3.0), Stelios Tsaousidis (dominio público),<br>Jarrett Campbell (CC BY 2.0) y Fritz Duras (CC BY-SA 3.0), modificadas,<br>vía Wikimedia Commons. Fichas, billete, pizarra y camiseta: recreación.</div>
+
+</div>
+<canvas id="grain" width="360" height="640"></canvas>
+<script src="gsap.min.js"></script>
+<script src="words.js"></script>
+<script>
+const $=i=>document.getElementById(i), cl=x=>Math.min(1,Math.max(0,x)), P=(t,a,b)=>cl((t-a)/(b-a)), eo=x=>1-Math.pow(1-x,3), es=x=>x*x*(3-2*x);
+const W=window.WORDS, T=k=>W[k][1], E=k=>W[k][2], OUT=22.0;
+const L=[];
+function line(id,ks,acc=[],txt={},cls='acc'){const el=$(id);for(const k of ks){const s=document.createElement('span');s.className='w'+(acc.includes(k)?' '+cls:'');s.textContent=txt[k]||W[k][0];el.appendChild(s);L.push([s,T(k)])}}
+line('l1a',[0,1,2,3]); line('l1b',[4,5],[],{4:'UN',5:'PARTIDO'});
+line('l1c',[6,7,8],[8]); line('l1d',[9,10,11,12],[12]);
+line('l2a',[13,14,15,16,17],[14]); line('l2b',[18,19]);
+line('l3a',[20,21,22],[22]); line('l3b',[23,24]); line('l3c',[25,26]); line('l3d',[27]);
+line('l4a',[28,29,30]); line('l4b',[31,32],[32],{31:'LA',32:'SELECCIÓN,'}); line('l4c',[33,34,35,36]);
+line('l5a',[37,38,39],[38]); line('l5b',[44,45,46,47,48],[48]);
+line('l6a',[49],[],{49:'CAMPEONA'}); line('l6b',[50,51],[],{50:'DE',51:'EUROPA'});
+line('l7a',[52]); line('l7b',[53,54],[54],{53:'el',54:'EQUIPO.'},'uv');
+// ----- cámara: un solo plano -----
+const cam={cx:540,cy:930,z:1.0}, tl=gsap.timeline({paused:true});
+const fly=(t,cx,cy,z,d=.9)=>{tl.to(cam,{cx,cy,duration:d,ease:'power2.inOut'},t);tl.to(cam,{keyframes:[{z:z*0.9,duration:d*.5,ease:'sine.out'},{z,duration:d*.5,ease:'sine.inOut'}]},t)};
+tl.set(cam,{cx:540,cy:880,z:1.0},0).to(cam,{z:1.04,cy:910,duration:3.6,ease:'sine.out'},0);
+fly(3.75,1700,1000,1.0); tl.to(cam,{z:1.03,cy:1020,duration:2.6,ease:'sine.out'},4.65);
+fly(7.08,540,2620,1.0); tl.to(cam,{cy:2660,z:1.03,duration:2.2,ease:'sine.inOut'},7.98);
+fly(10.28,1700,2800,1.0); tl.to(cam,{cy:2840,z:1.03,duration:2.1,ease:'sine.out'},11.18);
+fly(13.33,540,4170,1.0); tl.to(cam,{cy:4210,z:1.03,duration:3.0,ease:'sine.out'},14.23);
+fly(17.38,1700,4230,1.0); tl.to(cam,{z:1.03,duration:.6,ease:'sine.out'},18.28);
+fly(18.92,1700,5450,1.0); tl.to(cam,{z:1.02,duration:.6,ease:'sine.out'},19.82);
+// ----- elementos -----
+const NS='http://www.w3.org/2000/svg', mk=(tag,at,par)=>{const e=document.createElementNS(NS,tag);for(const k in at)e.setAttribute(k,at[k]);par.appendChild(e);return e};
+// pizarra 1: diez azules (Grecia) y diez grises; cada azul se pega a su gris en «hombre»; la línea de atrás se alinea en «orden atrás»
+const GP=[[150,250],[300,230],[450,240],[600,230],[750,250],[200,380],[380,360],[520,370],[700,380],[450,140]];
+const BP0=[[130,330],[290,300],[460,320],[610,300],[770,330],[220,460],[360,440],[540,450],[680,460],[450,210]];
+const BP1=[[130,330],[290,300],[460,320],[610,300],[770,330],[220,450],[360,450],[540,450],[680,450],[450,210]];
+const BP2=[[130,330],[290,300],[460,320],[610,300],[770,330],[230,450],[370,450],[530,450],[670,450],[450,210]];
+const GR=GP.map(([x,y])=>mk('circle',{cx:x,cy:y,r:20,fill:'#3a4870',stroke:'#8f9bb8','stroke-width':4},$('grey')));
+const LK=GP.map(()=>mk('line',{opacity:0},$('links')));
+const BL=BP0.map(()=>mk('circle',{r:20,fill:'#636DFF',stroke:'#B9E0FF','stroke-width':4},$('blue')));
+// escudos genéricos (sin marcas reales)
+const crest=(x,y)=>{const g=mk('g',{},$('crests'));mk('path',{d:`M${x-80} ${y-90} H${x+80} V${y+10} Q${x+80} ${y+80} ${x} ${y+110} Q${x-80} ${y+80} ${x-80} ${y+10} Z`,fill:'#1d2846',stroke:'#8f9bb8','stroke-width':6},g);mk('path',{d:`M${x-50} ${y-20} L${x} ${y+30} L${x+50} ${y-20}`,fill:'none',stroke:'#8f9bb8','stroke-width':8},g);return g};
+const CR=[crest(300,330),crest(500,290),crest(700,330)];
+const CRX=[-190,0,190];
+// pizarra 2: once fichas que se juntan en un bloque
+const S0=[[110,110],[880,120],[150,500],[860,510],[300,80],[700,560],[90,320],[910,320],[420,540],[620,90],[250,300]];
+const S1=[[380,210],[500,210],[620,210],[350,320],[450,320],[550,320],[650,320],[380,430],[500,430],[620,430],[500,320]];
+S1[10]=[500,380];S1[4]=[440,300];S1[5]=[560,300];
+const EL=S0.map(()=>mk('circle',{r:26,fill:'#636DFF',stroke:'#B9E0FF','stroke-width':5},$('eleven')));
+// grano
+const g=$('grain').getContext('2d'),gi=g.createImageData(360,640);let sd=1;const R=()=>(sd=(sd*16807)%2147483647)/2147483647;
+function camAt(t){tl.seek(t,false);return [cam.cx,cam.cy,cam.z]}
+let t=0;
+const inn=(el,t0,dy=40,d=.5)=>{const p=eo(P(t,t0,t0+d));el.style.opacity=p;el.style.transform=`translateY(${(1-p)*dy}px)`+(el.dataset.r?` rotate(${el.dataset.r}deg)`:'');return p};
+$('pban').dataset.r=-3; $('pfin').dataset.r=1.2;
+const stamp=(el,t0,r=0)=>{const s=P(t,t0-.05,t0+.2);el.style.opacity=s>0?1:0;el.style.transform=`rotate(${r}deg) scale(${1.3-.3*eo(s)})`};
+window.frame=function(tt){t=tt;
+ sd=1+Math.floor(t*30)*7919;const dd=gi.data;for(let i=0;i<dd.length;i+=4){const v=R()*255;dd[i]=v*.8;dd[i+1]=v*.85;dd[i+2]=v;dd[i+3]=255}g.putImageData(gi,0,0);
+ const p0=camAt(Math.max(0,t-1/30)),p1=camAt(t),sp=Math.hypot(p1[0]-p0[0],p1[1]-p0[1]);
+ $('cam').style.transform=`translate(540px,960px) scale(${p1[2]}) translate(${-p1[0]}px,${-p1[1]}px)`;
+ $('cam').style.filter=sp>14?`blur(${Math.min(4,(sp-14)/30)}px)`:'none';
+ for(const [s,t0] of L){const p=t0<=0.05?1:eo(P(t,t0-.04,t0+.32));s.style.opacity=p;s.style.transform=`translateX(${(1-p)*28}px)`;s.style.filter=`blur(${(1-p)*6}px)`}
+ // 1 · la ficha y el «0» grande ya están en el fotograma 0; un «0» se estampa en cada fila (Eurocopa, Mundial); el rotulador subraya la columna
+ stamp($('z1'),T(8)); stamp($('z2'),T(12));
+ $('ul').setAttribute('stroke-dashoffset',100-100*eo(P(t,E(12)-.1,E(12)+.3)));
+ $('r1').style.borderColor=t>T(8)?'#6AA8FF':'#26335a'; $('r2').style.borderColor=t>T(12)?'#6AA8FF':'#26335a';
+ $('credA').style.opacity=P(t,1.0,1.4);
+ // 2 · billete y sello 2001; foto de Rehhagel y ficha de prensa
+ inn($('tick'),T(13)-.25,40,.5); stamp($('tst'),T(14)+.05,-6);
+ inn($('reh'),T(18)-.2,60,.6); inn($('preh'),T(19)-.05,20,.4); $('credB').style.opacity=P(t,T(19)+.3,T(19)+.6);
+ // 3 · foto en la banda; pizarra: marcaje, bloque atrás, balón parado
+ inn($('pban'),7.2,40,.5); $('credC').style.opacity=P(t,7.6,8.0);
+ inn($('board'),7.35,40,.5);
+ const mm=es(P(t,T(21),E(22)+.1)), ob=es(P(t,T(23),E(24)));
+ BL.forEach((c,i)=>{const [x0,y0]=BP0[i],[x1,y1]=BP1[i],[x2,y2]=BP2[i];let x=x0,y=y0;if(i>=5&&i<9){x=x0+(x2-x0)*ob;y=y0+(y2-y0)*ob}c.setAttribute('cx',x);c.setAttribute('cy',y);
+  const L2=LK[i];const q=P(t,T(21)+i*.03,T(21)+i*.03+.25);L2.setAttribute('x1',GP[i][0]);L2.setAttribute('y1',GP[i][1]);L2.setAttribute('x2',GP[i][0]+(x-GP[i][0])*q);L2.setAttribute('y2',GP[i][1]+(y-GP[i][1])*q);L2.setAttribute('opacity',q>0?.9:0)});
+ $('blk').setAttribute('stroke-dashoffset',100-100*eo(P(t,T(24)-.05,T(24)+.6)));
+ const ba=P(t,T(26)-.05,T(26)+.7); $('bal').setAttribute('opacity',ba>0?1:0); $('arB').setAttribute('opacity',ba>0?.9:0);
+ const be=es(ba), bx=(1-be)*(1-be)*830+2*(1-be)*be*700+be*be*480, by=(1-be)*(1-be)*70+2*(1-be)*be*330+be*be*500; $('bal').setAttribute('cx',bx); $('bal').setAttribute('cy',by);
+ $('arB').setAttribute('stroke-dashoffset',0); $('arB').style.clipPath=`inset(0 0 ${100-100*be}% 0)`;
+ // 4 · la regla: escudos detrás que se apartan y se difuminan; la camiseta delante en «selección»
+ inn($('shirtc'),10.45,40,.5);
+ const ap=es(P(t,T(33),E(36)+.2));
+ CR.forEach((c,i)=>{c.setAttribute('transform',`translate(${CRX[i]*ap*.85},${ap*-30})`);c.style.opacity=1-.75*ap;c.style.filter=`blur(${ap*5}px)`});
+ const sh=eo(P(t,T(32)-.1,T(32)+.45)); $('shirt').style.opacity=sh; $('shirt').setAttribute('transform',`translate(0,${(1-sh)*60+ap*40})`);
+ // 5 · marcadores que caen en cada país; foto de la final; dos marcadores contra Portugal
+ const drop=(el,t0)=>{const p=eo(P(t,t0-.12,t0+.35));el.style.opacity=p;el.style.transform=`translateY(${(1-p)*-70}px)`};
+ drop($('sb1'),T(41)); drop($('sb2'),T(43));
+ inn($('pfin'),T(44)-.1,40,.5); $('credD').style.opacity=P(t,T(46),T(46)+.4);
+ drop($('m1'),T(45)); drop($('m2'),T(46)+.1);
+ // 6 · portada; se apaga al bajar al remate
+ const pc=eo(P(t,17.55,18.05))*(1-P(t,18.95,19.4)); $('cover').style.opacity=pc; $('cover').style.transform=`translateY(${(1-eo(P(t,17.55,18.05)))*40}px)`;
+ $('credE').style.opacity=P(t,18.0,18.3)*(1-P(t,18.95,19.3));
+ // 7 · REMATE: once fichas se juntan en un bloque; «EQUIPO» en ultravioleta (única vez); quieto desde 20,5 s
+ const j=es(P(t,T(52)-.1,E(54)));
+ EL.forEach((c,i)=>{c.setAttribute('cx',S0[i][0]+(S1[i][0]-S0[i][0])*j);c.setAttribute('cy',S0[i][1]+(S1[i][1]-S0[i][1])*j)});
+ $('blk2').setAttribute('opacity',P(t,E(54)-.2,E(54)+.1));
+ $('credF').style.opacity=P(t,19.5,19.9);
+};
+document.fonts.ready.then(()=>Promise.all([...document.images].map(i=>i.complete?1:new Promise(r=>{i.onload=r;i.onerror=r})))).then(()=>{frame(0);window.ready=true});
+</script></body></html>
