@@ -1,0 +1,218 @@
+<!doctype html><html><head><meta charset="utf-8">
+<!-- v7 · «Las cintas de Pelé» (Wiel Coerver, Feyenoord 1974 → libro de 1983). Base: tools/reel_v7/wooden/reel.html y v7-siete-segundos-dantoni.
+     Un solo plano sobre la pared; cada cosa que dice la voz se anima en su palabra. Gancho primero (Revisión viral 27/11):
+     el primer fotograma ya tiene la foto de Coerver con la copa y «COPA DE LA UEFA». El rótulo «Wiel Coerver · Feyenoord · 1974» va en la segunda frase.
+     Viajes 0,9 s power2.inOut en las pausas (8,05 · 13,42 · 19,12 s), zoom ×0,9, blur ≤ 4 px, sin destellos.
+     Remate quieto desde 22,15 s; fundido a negro 23,4–23,9 s; después, outro2.mp4. -->
+<style>
+@font-face{font-family:S;src:url(fonts/instrument-serif-latin-400-normal.woff2)}
+@font-face{font-family:SI;src:url(fonts/instrument-serif-latin-400-italic.woff2)}
+@font-face{font-family:J;font-weight:500;src:url(fonts/plus-jakarta-sans-latin-500-normal.woff2)}
+@font-face{font-family:J;font-weight:700;src:url(fonts/plus-jakarta-sans-latin-700-normal.woff2)}
+@font-face{font-family:J;font-weight:800;src:url(fonts/plus-jakarta-sans-latin-800-normal.woff2)}
+@font-face{font-family:J;font-weight:800;font-style:italic;src:url(fonts/plus-jakarta-sans-latin-800-italic.woff2)}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#02050F}
+#cam{position:absolute;left:0;top:0;width:2600px;height:6400px;transform-origin:0 0;background:url(wall2.jpg)}
+.a{position:absolute}
+.serif{font-family:S;color:#F4F7FB;white-space:nowrap;line-height:1}
+.bold{font-family:J;font-weight:800;color:#F4F7FB;white-space:nowrap;letter-spacing:-.02em;line-height:1}
+.acc{font-family:J;font-weight:800;font-style:italic;color:#6AA8FF}
+.w{display:inline-block;margin-right:.24em}
+.mat{background:#E9EEF6;padding:20px 20px 60px;border:5px solid #0b0f1a;box-shadow:0 30px 70px rgba(0,0,0,.6)}
+.mat img{display:block;width:100%}
+.mat .cap{position:absolute;left:22px;bottom:16px;font:700 20px J;color:#3b4660;letter-spacing:.08em;white-space:nowrap}
+.panel{background:#0C1323;border:1px solid #26335a;border-radius:22px;box-shadow:0 40px 90px rgba(0,0,0,.6)}
+.press{background:#E9EEF6;border-radius:6px;padding:14px 22px;box-shadow:0 20px 40px rgba(0,0,0,.5);font:800 34px J;color:#0b0f1a;letter-spacing:.06em;white-space:nowrap}
+.press small{display:block;font:700 18px J;color:#5d6888;letter-spacing:.14em;margin-bottom:6px}
+.lab{font:800 22px J;letter-spacing:.16em;color:#8f9bb8;white-space:nowrap}
+.cred{font:500 17px J;color:#6b779a;letter-spacing:.04em;white-space:nowrap}
+.tape{position:absolute;left:20px;width:420px;height:58px;border-radius:8px;background:#151d33;border:2px solid #2c3a63}
+.tape:before{content:'';position:absolute;left:40px;top:12px;width:250px;height:30px;border-radius:4px;background:#E9EEF6}
+.tape:after{content:'VHS';position:absolute;right:22px;top:15px;font:800 22px J;color:#6AA8FF;letter-spacing:.1em}
+.card{position:absolute;top:0;width:230px;height:330px}
+.card .n{position:absolute;left:18px;top:12px;font:800 54px J;color:#6AA8FF}
+.card .t{position:absolute;left:0;width:230px;text-align:center;bottom:20px;font:800 24px J;color:#F4F7FB;letter-spacing:.1em}
+#grain{position:absolute;inset:0;width:1080px;height:1920px;mix-blend-mode:screen;opacity:.10;pointer-events:none;image-rendering:pixelated}
+#black{position:absolute;inset:0;background:#000;opacity:0}
+</style></head><body><div id="cam">
+
+<!-- A · GANCHO · Ganó la Copa de la UEFA (visible desde el primer fotograma) → las cintas de Pelé → Wiel Coerver, Feyenoord, 1974 -->
+<div class="a serif" id="l1" style="left:0;width:1080px;text-align:center;top:170px;font-size:70px"></div>
+<div class="a bold" id="l1b" style="left:0;width:1080px;text-align:center;top:255px;font-size:96px">COPA DE LA UEFA</div>
+<div class="a serif" id="l2a" style="left:0;width:1080px;text-align:center;top:170px;font-size:62px"></div>
+<div class="a bold" id="l2b" style="left:0;width:1080px;text-align:center;top:250px;font-size:96px"></div>
+<div class="a mat" id="pc" style="left:245px;top:420px;width:590px;transform-origin:0 0"><img src="img/coerver_g.jpg"><div class="cap">ROTTERDAM · 29 · 5 · 1974</div></div>
+<svg class="a" id="tv" style="left:500px;top:470px" width="550" height="560" viewBox="0 0 550 560">
+ <rect x="2" y="2" width="546" height="420" rx="30" fill="#0C1323" stroke="#26335a" stroke-width="3"/>
+ <rect x="26" y="26" width="414" height="324" rx="20" fill="#050a16" stroke="#1d2846" stroke-width="3"/>
+ <circle cx="490" cy="90" r="22" fill="#111a30" stroke="#3a4870" stroke-width="4"/><circle cx="490" cy="170" r="22" fill="#111a30" stroke="#3a4870" stroke-width="4"/>
+ <g stroke="#26335a" stroke-width="4"><path d="M465 240 H515"/><path d="M465 262 H515"/><path d="M465 284 H515"/><path d="M465 306 H515"/><path d="M465 328 H515"/></g>
+ <text x="30" y="395" font-family="J" font-weight="700" font-size="18" fill="#5d6888" letter-spacing="3">TELEVISOR · RECREACIÓN</text>
+ <rect x="2" y="440" width="546" height="110" rx="14" fill="#0C1323" stroke="#26335a" stroke-width="3"/>
+ <rect x="88" y="468" width="304" height="30" rx="5" fill="#02050F" stroke="#3a4870" stroke-width="3"/>
+ <circle id="led" cx="470" cy="483" r="8" fill="#1d2846"/>
+ <text x="420" y="532" font-family="J" font-weight="800" font-size="20" fill="#5d6888" letter-spacing="3">VÍDEO</text>
+</svg>
+<div class="a" id="slot" style="left:590px;top:953px;width:300px;height:230px;overflow:hidden">
+ <div class="a" id="cas" style="left:10px;top:40px;width:280px;height:170px;border-radius:10px;background:#151d33;border:3px solid #3a4870;opacity:0">
+  <div class="a" style="left:30px;top:18px;width:220px;height:46px;border-radius:4px;background:#E9EEF6"></div>
+  <div class="a" style="left:44px;top:28px;font:800 22px J;color:#0b0f1a;letter-spacing:.08em">PELÉ · 1960</div>
+  <div class="a" style="left:60px;top:90px;width:56px;height:56px;border-radius:50%;border:6px solid #3a4870"></div>
+  <div class="a" style="left:164px;top:90px;width:56px;height:56px;border-radius:50%;border:6px solid #3a4870"></div>
+ </div>
+</div>
+<div class="a" id="scr" style="left:528px;top:498px;width:410px;height:320px;border-radius:18px;overflow:hidden;opacity:0">
+ <img src="img/pele_g.jpg" style="position:absolute;left:-30px;top:-10px;width:470px;height:340px;object-fit:cover;object-position:60% 40%">
+ <div class="a" style="inset:0;background:repeating-linear-gradient(0deg,rgba(0,0,0,.22) 0 2px,rgba(0,0,0,0) 2px 5px)"></div>
+ <div class="a" id="bar" style="left:0;width:410px;height:46px;background:rgba(185,224,255,.07)"></div>
+ <div class="a" style="left:16px;top:12px;font:800 20px J;color:#B9E0FF;letter-spacing:.12em">▶ PLAY</div>
+</div>
+<div class="a cred" id="credP" style="left:500px;top:1040px">Pelé, 1960 · AFP/Scanpix · dominio público</div>
+<div class="a press" id="pco" style="left:40px;top:1160px"><small>ENTRENADOR DEL FEYENOORD</small>WIEL COERVER</div>
+<div class="a panel" id="cal" style="left:690px;top:1130px;width:320px;height:250px">
+ <div class="a" style="left:0;top:0;width:320px;height:64px;border-radius:22px 22px 0 0;background:#636DFF"></div>
+ <div class="a" style="left:66px;top:-14px;width:22px;height:40px;border-radius:8px;background:#B9E0FF"></div>
+ <div class="a" style="left:232px;top:-14px;width:22px;height:40px;border-radius:8px;background:#B9E0FF"></div>
+ <div class="a bold" style="left:0;width:320px;text-align:center;top:20px;font-size:26px;letter-spacing:.14em">TEMPORADA</div>
+ <div class="a bold" style="left:0;width:320px;text-align:center;top:104px;font-size:112px">1974</div>
+</div>
+<div class="a panel" id="score" style="left:40px;top:1440px;width:1000px;height:180px">
+ <div class="a lab" style="left:0;width:1000px;text-align:center;top:30px">FINAL DE LA COPA DE LA UEFA · GLOBAL</div>
+ <div class="a bold" style="left:0;width:1000px;text-align:center;top:82px;font-size:62px">FEYENOORD <span style="color:#6AA8FF">4 – 2</span> TOTTENHAM</div>
+</div>
+<div class="a cred" id="credA" style="left:40px;top:1650px">Foto: Rob Mieremet / Anefo (Nationaal Archief) · CC0 · marcador y calendario: recreación</div>
+
+<!-- B · Horas y horas de vídeo. Descompone cada regate en movimientos sueltos. -->
+<div class="a bold" id="l4a" style="left:1160px;width:1080px;text-align:center;top:170px;font-size:110px"></div>
+<div class="a serif" id="l4b" style="left:1160px;width:1080px;text-align:center;top:305px;font-size:70px"></div>
+<div class="a" id="stack" style="left:1210px;top:420px;width:460px;height:520px"></div>
+<div class="a panel" id="clk" style="left:1720px;top:420px;width:460px;height:520px">
+ <div class="a lab" style="left:0;width:460px;text-align:center;top:34px">HORAS</div>
+ <svg class="a" style="left:50px;top:90px" width="360" height="360" viewBox="0 0 360 360">
+  <circle cx="180" cy="180" r="150" fill="none" stroke="#1d2846" stroke-width="22"/>
+  <circle id="arc" cx="180" cy="180" r="150" fill="none" stroke="#6AA8FF" stroke-width="22" stroke-linecap="round" transform="rotate(-90 180 180)" pathLength="100" stroke-dasharray="0 100"/>
+  <line id="hand" x1="180" y1="180" x2="180" y2="70" stroke="#F4F7FB" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="180" cy="180" r="14" fill="#F4F7FB"/>
+ </svg>
+</div>
+<div class="a serif" id="l5a" style="left:1160px;width:1080px;text-align:center;top:1010px;font-size:66px"></div>
+<div class="a bold" id="l5b" style="left:1160px;width:1080px;text-align:center;top:1100px;font-size:76px"></div>
+<div class="a" id="strip" style="left:1205px;top:1240px;width:1010px;height:330px"></div>
+<div class="a cred" id="credB" style="left:1190px;top:1600px">Fotogramas dibujados: recreación</div>
+
+<!-- C · En 1983 lo publica en un libro: un plan de estudios para el futbolista ideal... -->
+<div class="a serif" id="l6a" style="left:0;width:1080px;text-align:center;top:2080px;font-size:70px"></div>
+<div class="a bold" id="l6b" style="left:0;width:1080px;text-align:center;top:2170px;font-size:104px"></div>
+<div class="a mat" id="pl" style="left:50px;top:2330px;width:610px"><img src="img/libro_g.jpg"><div class="cap">W. COERVER · PRESENTACIÓN DEL LIBRO, 1983</div></div>
+<div class="a" id="cov" style="left:700px;top:2320px;width:330px;height:470px;border-radius:8px;background:#0C1323;border:3px solid #3a4870;box-shadow:0 30px 60px rgba(0,0,0,.6);overflow:hidden">
+ <div class="a" style="left:0;top:0;width:24px;height:470px;background:#636DFF"></div>
+ <div class="a lab" style="left:48px;top:34px;font-size:18px;color:#B9E0FF">WIEL COERVER</div>
+ <div class="a bold" style="left:46px;top:72px;font-size:62px">VOETBAL</div>
+ <div class="a" style="left:48px;top:150px;font-family:SI;font-size:34px;color:#F4F7FB;line-height:1.08">leerplan voor<br>de ideale<br>voetballer</div>
+ <svg class="a" style="left:110px;top:290px" width="130" height="130" viewBox="0 0 130 130"><circle cx="65" cy="65" r="56" fill="#E9EEF6"/><path d="M65 38 L90 56 L80 86 H50 L40 56 Z" fill="#0C1323"/></svg>
+ <div class="a lab" style="left:48px;top:432px;font-size:15px">PORTADA · RECREACIÓN</div>
+</div>
+<div class="a cred" id="credC" style="left:56px;top:2810px">Foto: Rob Bogaerts / Anefo (Nationaal Archief) · CC0</div>
+<div class="a serif" id="l7a" style="left:0;width:1080px;text-align:center;top:2880px;font-size:68px"></div>
+<div class="a serif" id="l7b" style="left:0;width:1080px;text-align:center;top:2960px;font-size:68px"></div>
+<svg class="a" id="pyr" style="left:140px;top:3070px" width="800" height="540" viewBox="0 0 800 540">
+ <g id="tiers"></g>
+</svg>
+<div class="a cred" id="credD" style="left:0;width:1080px;text-align:center;top:3630px">Progresión del método, resumida · recreación</div>
+
+<!-- D · REMATE · El regate no es solo un don: se enseña. -->
+<div class="a" id="bgp" style="left:1160px;top:2330px;width:1080px;height:900px;overflow:hidden;opacity:.24;-webkit-mask-image:linear-gradient(180deg,transparent,#000 18%,#000 70%,transparent)">
+ <img src="img/pele_g.jpg" style="width:1080px;display:block"></div>
+<div class="a serif" id="l8a" style="left:1160px;width:1080px;text-align:center;top:2800px;font-size:74px"></div>
+<div class="a bold" id="l8b" style="left:1160px;width:1080px;text-align:center;top:2915px;font-size:140px;color:#8B5CF6"></div>
+<div class="a cred" id="credF" style="left:1160px;width:1080px;text-align:center;top:3560px;line-height:1.5;opacity:0">Fotos: Rob Mieremet / Anefo (CC0), AFP/Scanpix (dominio público) y Rob Bogaerts / Anefo (CC0),<br>vía Wikimedia Commons. Televisor, cintas, fotogramas, portada y pirámide: recreación.</div>
+
+</div>
+<canvas id="grain" width="360" height="640"></canvas>
+<div id="black"></div>
+<script src="gsap.min.js"></script>
+<script src="words.js"></script>
+<script>
+const $=i=>document.getElementById(i), cl=x=>Math.min(1,Math.max(0,x)), P=(t,a,b)=>cl((t-a)/(b-a)), eo=x=>1-Math.pow(1-x,3), es=x=>x*x*(3-2*x);
+const W=window.WORDS, T=k=>W[k][1], E=k=>W[k][2], END=23.9;
+const L=[];
+function line(id,ks,acc=[],txt={}){const el=$(id);for(const k of ks){const s=document.createElement('span');s.className='w'+(acc.includes(k)?' acc':'');s.textContent=txt[k]||W[k][0];el.appendChild(s);L.push([s,T(k)])}}
+line('l1',[0,1]);
+line('l2a',[6,7,8,9,10,11]); line('l2b',[12,13,14],[],{12:'CINTAS',13:'DE',14:'PELÉ'});
+line('l4a',[19,20,21],[],{19:'HORAS',20:'Y',21:'HORAS'}); line('l4b',[22,23]);
+line('l5a',[24,25,26,27]); line('l5b',[28,29],[],{28:'MOVIMIENTOS',29:'SUELTOS'});
+line('l6a',[30,31,32,33]); line('l6b',[34,35,36],[],{34:'EN',35:'UN',36:'LIBRO'});
+line('l7a',[37,38,39,40]); line('l7b',[41,42,43,44],[],{44:'ideal'});
+line('l8a',[45,46,47,48,49,50,51]); line('l8b',[52,53],[],{52:'SE',53:'ENSEÑA'});
+// ----- cámara: un solo plano -----
+const cam={cx:540,cy:960,z:1.0}, tl=gsap.timeline({paused:true});
+const fly=(t,cx,cy,z,d=.9)=>{tl.to(cam,{cx,cy,duration:d,ease:'power2.inOut'},t);tl.to(cam,{keyframes:[{z:z*0.9,duration:d*.5,ease:'sine.out'},{z,duration:d*.5,ease:'sine.inOut'}]},t)};
+tl.set(cam,{cx:540,cy:960,z:1.0},0).to(cam,{z:1.03,duration:8.0,ease:'sine.out'},0);
+fly(8.05,1700,900,1.0); tl.to(cam,{cy:1000,z:1.03,duration:4.4,ease:'sine.inOut'},8.95);
+fly(13.42,540,2900,1.0); tl.to(cam,{cy:2930,z:1.02,duration:4.8,ease:'sine.inOut'},14.32);
+fly(19.12,1700,3000,1.0); tl.to(cam,{z:1.02,duration:2.1,ease:'sine.out'},20.02); tl.set(cam,{},END);
+// ----- elementos -----
+const NS='http://www.w3.org/2000/svg', mk=(tag,at,par)=>{const e=document.createElementNS(NS,tag);for(const k in at)e.setAttribute(k,at[k]);par.appendChild(e);return e};
+// pila de cintas (crece de abajo arriba)
+const TP=[];for(let i=0;i<7;i++){const d=document.createElement('div');d.className='tape';d.style.top=(520-66*(i+1))+'px';d.style.transform=`rotate(${[-1.5,1,-.5,1.8,-1.2,.6,-2][i]}deg)`;$('stack').appendChild(d);TP.push(d)}
+// cuatro fotogramas dibujados: pisa, recorte, giro, salida
+const FR=[['PISA','M70 210 Q100 150 150 160','M150 205'],['RECORTE','M60 170 Q120 150 120 210','M120 210'],['GIRO','M75 200 A50 50 0 1 1 160 175','M160 175'],['SALIDA','M60 200 L170 140','M170 140']];
+const CD=FR.map(([t,arr],i)=>{const c=document.createElement('div');c.className='card panel';c.style.left=(i*250)+'px';
+ c.innerHTML=`<div class="n">${i+1}</div><svg style="position:absolute;left:0;top:40px" width="230" height="240" viewBox="0 0 230 240">
+ <path d="M20 230 H210" stroke="#3a4870" stroke-width="4"/>
+ <path d="M${[60,70,80,60][i]} 120 l25 0 l18 70 l40 6 l0 20 l-70 0 Z" fill="#26335a" stroke="#8f9bb8" stroke-width="3" transform="rotate(${[0,-12,8,-18][i]} 100 180)"/>
+ <circle cx="${[150,125,165,175][i]}" cy="${[205,210,175,140][i]}" r="20" fill="#E9EEF6"/>
+ <path d="${arr}" fill="none" stroke="#6AA8FF" stroke-width="6" stroke-linecap="round" stroke-dasharray="10 9"/></svg><div class="t">${t}</div>`;
+ $('strip').appendChild(c);return c});
+// pirámide de cuatro pisos: se rellena de abajo arriba
+const TI=[['CONTROL DEL BALÓN',0],['PASE Y RECEPCIÓN',1],['1 CONTRA 1',2],['FINALIZACIÓN',3]].map(([t,i])=>{
+ const y1=540-i*130, y0=y1-118, hw1=400-i*90, hw0=400-(i+1)*90+ (i==3?10:0);
+ const g=mk('g',{},$('tiers'));
+ const p=mk('path',{d:`M${400-hw1} ${y1} L${400+hw1} ${y1} L${400+hw0} ${y0} L${400-hw0} ${y0} Z`,fill:'#0C1323',stroke:'#26335a','stroke-width':3},g);
+ const f=mk('path',{d:`M${400-hw1} ${y1} L${400+hw1} ${y1} L${400+hw0} ${y0} L${400-hw0} ${y0} Z`,fill:'#636DFF',opacity:0},g);
+ const tx=mk('text',{x:400,y:y1-46,'text-anchor':'middle','font-family':'J','font-weight':800,'font-size':i==3?24:30,fill:'#F4F7FB','letter-spacing':2},g);tx.textContent=t;
+ return {g,f,tx}});
+// grano
+const g=$('grain').getContext('2d'),gi=g.createImageData(360,640);let sd=1;const R=()=>(sd=(sd*16807)%2147483647)/2147483647;
+function camAt(t){tl.seek(t,false);return [cam.cx,cam.cy,cam.z]}
+let t=0;
+const inn=(el,t0,dy=40,d=.5,rot=0)=>{const p=eo(P(t,t0,t0+d));el.style.opacity=p;el.style.transform=`translateY(${(1-p)*dy}px) rotate(${rot}deg)`;return p};
+window.frame=function(tt){t=tt;
+ sd=1+Math.floor(t*30)*7919;const dd=gi.data;for(let i=0;i<dd.length;i+=4){const v=R()*255;dd[i]=v*.8;dd[i+1]=v*.85;dd[i+2]=v;dd[i+3]=255}g.putImageData(gi,0,0);
+ const p0=camAt(Math.max(0,t-1/30)),p1=camAt(t),sp=Math.hypot(p1[0]-p0[0],p1[1]-p0[1]);
+ $('cam').style.transform=`translate(540px,960px) scale(${p1[2]}) translate(${-p1[0]}px,${-p1[1]}px)`;
+ $('cam').style.filter=sp>14?`blur(${Math.min(4,(sp-14)/30)}px)`:'none';
+ for(const [s,t0] of L){const p=eo(P(t,t0-.04,t0+.32));s.style.opacity=p;s.style.transform=`translateX(${(1-p)*28}px)`;s.style.filter=`blur(${(1-p)*6}px)`}
+ // A · foto y «COPA DE LA UEFA» ya en el fotograma 0 (se asientan sin aparecer de la nada); en «Y después» la foto se aparta y entra el televisor
+ const h0=es(P(t,0,.6)); $('l1b').style.transform=`scale(${1.04-.04*h0})`; $('l1b').style.color=t>T(2)?'#F4F7FB':'#E4EAF4';
+ const fa=1-P(t,1.5,1.85); $('l1').style.opacity=fa; $('l1b').style.opacity=fa;
+ const sl=es(P(t,T(6)-.12,T(6)+.55)); $('pc').style.transform=`translate(${(40-245)*sl}px,0) scale(${1-.28*sl}) rotate(${-4*sl}deg)`;
+ inn($('tv'),T(9)-.15,40,.5);
+ const ca=eo(P(t,T(11)-.1,T(11)+.3)), ci=es(P(t,T(12)-.05,T(12)+.55)); $('cas').style.opacity=ca; $('cas').style.top=(40+(1-ca)*30-230*ci)+'px';
+ $('led').setAttribute('fill',t>T(12)+.5?'#6AA8FF':'#1d2846');
+ const sc=P(t,T(14)-.15,T(14)+.35); $('scr').style.opacity=es(sc); $('bar').style.top=((t*120)%370-46)+'px';
+ $('scr').querySelector('img').style.transform=`scale(${1+.04*P(t,T(14),8.0)})`;
+ $('credP').style.opacity=P(t,T(14)+.3,T(14)+.7);
+ inn($('pco'),T(15)-.1,20,.45);
+ const pc=eo(P(t,T(18)-.15,T(18)+.45)); $('cal').style.opacity=pc; $('cal').style.transform=`translateY(${(1-pc)*-90}px) rotate(${(1-pc)*-6}deg)`;
+ inn($('score'),T(17)-.1,30,.5); $('credA').style.opacity=P(t,T(16),T(16)+.4);
+ // B · la pila de cintas crece y el reloj da vueltas
+ TP.forEach((d,i)=>{const q=eo(P(t,T(19)-.05+i*.2,T(19)+.2+i*.2));d.style.opacity=q;d.style.marginTop=(-(1-q)*40)+'px'});
+ inn($('clk'),T(19)-.2,30,.45);
+ const turns=3*es(P(t,T(19),E(23)+.2)); $('hand').setAttribute('transform',`rotate(${turns*360} 180 180)`);
+ $('arc').setAttribute('stroke-dasharray',turns>=3?'100 0':`${(turns%1)*100} 100`);
+ CD.forEach((c,i)=>{const t0=T(28)-.15+i*.16, q=eo(P(t,t0,t0+.45));c.style.opacity=q;c.style.transform=`translate(${(1-q)*-120}px,${(1-q)*30}px) rotate(${(1-q)*-8+[-1.5,1,-1,1.5][i]}deg)`});
+ $('credB').style.opacity=P(t,T(29),T(29)+.4);
+ // C · polaroid del libro, portada recreada que cae y pirámide que se llena de abajo arriba
+ inn($('pl'),14.15,40,.55,-3); $('credC').style.opacity=P(t,14.6,15.0);
+ const cv=eo(P(t,T(36)-.25,T(36)+.3)); $('cov').style.opacity=cv; $('cov').style.transform=`translateY(${(1-cv)*-80}px) rotate(${4-(1-cv)*6}deg)`;
+ inn($('pyr'),T(37)-.15,30,.45);
+ [T(38),T(40),T(43),T(44)].forEach((t0,i)=>{TI[i].f.setAttribute('opacity',.9*es(P(t,t0-.05,t0+.35)))});
+ $('credD').style.opacity=P(t,T(40),T(40)+.4);
+ // D · REMATE: «SE ENSEÑA» en ultravioleta (única vez); quieto desde 22,15 s
+ $('credF').style.opacity=P(t,20.6,21.0);
+ $('black').style.opacity=P(t,END-.5,END);
+};
+document.fonts.ready.then(()=>Promise.all([...document.images].map(i=>i.complete?1:new Promise(r=>{i.onload=r;i.onerror=r})))).then(()=>{frame(0);window.ready=true});
+</script></body></html>
