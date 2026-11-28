@@ -1,0 +1,23 @@
+# v7-medianoche-driesell-1971 · «El primer minuto» (historia con fotos)
+Guion: agencia/fabrica-v7/guiones/v7-medianoche-driesell-1971.md (Dani B, 01; revisión viral 27/11, gancho primero). Montaje v7: Marta A (02), 28/11/2026.
+
+Voz (24,6 s, la de «## Voz» del guion sin cambios): «Su equipo empezó la temporada a las doce y tres de la noche. 15 de octubre de 1971: la NCAA deja empezar ese día. Lefty Driesell no espera a la mañana. Su equipo corre una milla en el estadio, sin focos: solo los faros de unos coches. Cientos de estudiantes miran. Nace la Midnight Madness... La temporada empieza el primer minuto que te dejan.»
+ElevenLabs eleven_v4, voz Mateo (gpMzl7dbkfC9dIxAqQZT), una toma (437 créditos); en el prompt, la fecha con letra, «ene ce a a» y las grafías fonéticas del guion («Léfti Dráisel», «Mídnait Mádnes»). Tiempos por palabra: faster-whisper small (words.js / words.json); están las 64 palabras (whisper escribe «12», «3», «15», «1971» y «Dreisel»; en pantalla, la grafía real). Comprobación del final.mp4 con whisper: voz entera + «Dale like y síguenos para más vídeos como este» (el audio de outro2; «¿Te ha servido?» va en pantalla).
+
+Datos y fuentes: Sports Illustrated (Seth Davis, 15/10/2014), NPR (17/02/2024), Maryland Today (15/10/2018), ESPN (13/10/2000), Wikipedia «Lefty Driesell». Ver el guion.
+
+Fotos (Wikimedia Commons, descargadas en el sandbox de Higgsfield el 28/11/2026; licencia comprobada con la API de Commons):
+- Lefty_Driesell_"V-sign".jpg — University of Maryland — dominio público (c. 1969–70) — https://commons.wikimedia.org/wiki/File:Lefty_Driesell_%22V-sign%22.jpg — el recorte con rembg arrastraba trozos de un jugador, así que va enmarcada (ficha), mitad superior, B/N. Rotulada «c. 1970».
+- Byrd_Stadium_1975.jpg — University of Maryland — dominio público (c. 1975) — https://commons.wikimedia.org/wiki/File:Byrd_Stadium_1975.jpg — postal entera en B/N, rotulada «c. 1975»; la pista, los siete jugadores (puntos), las torres de luz, los coches y sus faros y los puntos de la grada se dibujan encima (recreación).
+- Lefty_Driesell_color_photo.jpg — University of Maryland — dominio público (c. 1976) — https://commons.wikimedia.org/wiki/File:Lefty_Driesell_color_photo.jpg — en una portada dibujada (sin cabecera real), B/N.
+- Ca_1970_mechanical_stopwatch_by_Herwins_Switzerland.jpg — R. Henrik Nilsson — CC BY 4.0 — https://commons.wikimedia.org/wiki/File:Ca_1970_mechanical_stopwatch_by_Herwins_Switzerland.jpg — modificada: esfera recortada en círculo y B/N.
+No se usó la reserva (Lefty_Driesell.jpg).
+Reloj, calendario, reglamento, sol, pista, coches, grada y portada: recreación (rotulados).
+
+Música (Epidemic Sound, vía Higgsfield): «Musical, Loop, Soft Piano, Strings, Calm, Intro, Logo 02», encadenada consigo misma con fundidos de 1,4 s (distinta de las dos últimas v7, que usaron la «Logo 01» y la «Logo 03»). Casi silencio tras «sin focos», sube 1 s con el remate y baja bajo el cierre.
+Efectos (Epidemic Sound): Swooshes, Whoosh, Soft, Clean · Clocks, Tick, Classic, Soft, Loop 01 · Paper, Impact, Letter, Drop On Table 02 · Sheet, Laminated, Slide On Wooden Table 04 · Objects, Writing, Marker On Whiteboard · Communications, Camera, Analogue Film Camera, Shutter Clicks 02 · Footsteps, Human, Asphalt, Small Group Running 01 · Pocket Watch, Click, Open · Mechanical, Switch, Light Switch, Off, Single · Vehicles, Car, Start, Idle, External, Rover · Crowds, Walla, Exterior Crowd, Talking, Few Discernible Words, People Pass By, Distant City Noises.
+Mezcla (mix.py): voz −19,0 dB RMS, música −33,2 con ducking, efectos −37,8 (ganancias 0,045–0,16); cierre: audio de outro2.mp4 desde 25,68 s.
+
+Montaje (reel.html, un solo plano sobre wall2.jpg): el primer fotograma ya tiene el reloj y «00:03» (gancho); las agujas llegan a las 00:03 en «doce y tres» y la pared se oscurece en «noche». Calendario que cae en «15», reglamento en «NCAA», rotulador alrededor del 15 en «ese día»; Driesell con su «V» y el sol tachado en «mañana»; la postal del estadio con la pista que se dibuja, siete puntos que corren y el cronómetro en «milla»; en «sin focos» las torres se apagan una a una (zoom de re-hook); en «faros», tres coches de línea con conos de luz; en «cientos», puntos en la grada en oleadas; portada «MIDNIGHT MADNESS»; el remate vuelve al reloj: el segundero da un paso y «MINUTO» en ultravioleta (única vez). Viajes de 0,9 s a 3,2 · 9,3 · 11,8 · 19,1 · 21,2 s. Remate quieto (~24,0–25,18 s), fundido a negro 25,18–25,68 s y cierre común outro2 desde 25,68 s. Total 29,7 s.
+
+Vídeo final: https://d2ol7oe51mr4n9.cloudfront.net/user_3M2z7lIyzIPYtjNHcxRWFNk6wi7/8aa074dd-218d-4fa1-a615-0915209a0a39.mp4
