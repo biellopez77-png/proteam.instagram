@@ -1,5 +1,33 @@
 # Crítica · v7-tacos-berna-1954 «Los tacos de Berna» (historia con fotos)
 
+## r3 · Andrés (05) · 28/11/2026 · Nota: 92/100 → APROBADO (martes 9/12/2026, 18:00)
+
+Material revisado: `tools/reel_v7/v7-tacos-berna-1954/video_mudo.mp4` (30,5 s; 61 fotogramas, uno cada 0,5 s, y fotogramas a tamaño móvil en 0,0 · 25,9 · 26,1 · 26,25 · 26,4 · 26,6 · 29,5 s) y el vídeo final de la cola (`50d01989-…mp4`, 30,5 s, 1080×1920), descargado y analizado en el sandbox de Higgsfield.
+
+### Comprobaciones duras
+- **Voz entera (faster-whisper small, palabra a palabra):** «Hungría llevaba cuatro años sin perder. En el Mundial del 54 había goleado a Alemania, 8 a 3. En la final de Berna, llovió. Fritz Walter, su capitán, jugaba mejor cuanto peor estaba el campo. Y sus botas llevaban tacos de rosca. Los cambiaron por unos más largos. Alemania ganó 3 a 2. No eliges el campo. Eliges cómo llegas.» Igual que «## Voz» del guion. «llegas» acaba a 24,92 s.
+- **Cierre nuevo:** voz «Dale like y síguenos para más vídeos como este» (26,44–29,68 s); en pantalla «¿Te ha servido? Dale like y síguenos · PARA MÁS VÍDEOS COMO ESTE». Caption con el cierre nuevo. Nada de app, producto, lista de espera, lanzamiento ni fechas (voz, pantalla y caption).
+- **Paso al cierre (el bloqueante de la r2): resuelto.** Remate entero y quieto hasta 26,0 s; 26,1 y 26,25 s solo el remate oscureciéndose; 26,4 s casi negro; 26,6 s solo el cierre. En ningún fotograma se ven a la vez el logo y el remate.
+- **Niveles:** −16,1 LUFS integrados, true peak −1,6 dBFS. Voz entre −13 y −21 dB RMS por segundo; pausas con música a −28/−29 dB (2, 14, 19, 25 s); el negro (26 s) a −22 dB; final −45 dB.
+- **Fotos y licencias:** Comet Photo AG (CC BY-SA 4.0) y Sandstein (CC BY 3.0), crédito en pie y caption. Música Epidemic. Sin precios, sin nombre de Biel, sin cifras de apuntados.
+- **Datos:** sin cambios desde la r2 (15/15 con The Irish Times, DPMA y Deutsches Fußballmuseum).
+
+### Nota por apartados
+| apartado | nota | por qué |
+|---|---|---|
+| Historia real y gancho | 18/20 | Fotograma 0 con la foto de Hungría, «Hungría» y el calendario 1950; «cuatro años sin perder» en 0–2 s. Remate citable. |
+| Cada cosa que dice la voz se anima en su momento | 17/20 | Todo entra en su palabra; el marcador ya entra al final del viaje (2,8 s). Sigue resta: tercio inferior vacío en 3,0–5,0 s y en el reloj (7,5–10,0 s). |
+| Transiciones | 14/15 | Viajes suaves y fundido a negro limpio al cierre. |
+| Sonido | 15/15 | Voz confiada y clara, música real suave por debajo, efectos bajos. «Dale» (26,44 s) entra con el cierre apareciendo. |
+| Verdad y fuentes | 15/15 | Todo con fuente. |
+| Estética | 13/15 | Paleta, tipografías y fotos bien; ultravioleta solo en CÓMO LLEGAS; nada cortado ni solapado. Resta el vacío de abajo en el arranque. |
+| **Total** | **92/100** | **Aprobado.** |
+
+### Para próximas piezas (no bloquea)
+- Llenar el tercio inferior cuando la escena es solo marcador o reloj (subir el objeto o poner el pie de dato debajo).
+
+---
+
 ## r2 · Andrés (05) · 28/11/2026 · Nota: 86/100 → NO APROBADO (suspenso automático: texto solapado en el paso al cierre). Vuelve a montaje.
 
 Material revisado: `tools/reel_v7/v7-tacos-berna-1954/video_mudo.mp4` (30,0 s; 60 fotogramas, uno cada 0,5 s, a 270 px, y fotogramas a tamaño móvil en 0,0 · 21,2 · 25,4 · 25,8 · 26,1 · 26,3 · 28,0 s) y el vídeo final de la cola (`b8db7439-…mp4`, 30,0 s), descargado y analizado en el sandbox de Higgsfield.
