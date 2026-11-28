@@ -1,0 +1,271 @@
+<!doctype html><html><head><meta charset="utf-8">
+<!-- v7 · «Alinea el momento» (Alf Ramsey, Geoff Hurst y Jimmy Greaves, Mundial de 1966). Base: tools/reel_v7/wooden/reel.html (vía v7-comba-mikan-1942).
+     Un solo plano sobre la pared; cada cosa que dice la voz se anima en su palabra. Gancho: el primer fotograma ya tiene «1966.» y el balón de la final.
+     Viajes 0,9 s power2.inOut, zoom ×0,9, blur ≤ 4 px, sin destellos; cada escena se apaga al empezar el viaje (nada sale cortado por el borde).
+     Remate quieto desde ~25,3 s; fundido a negro 26,3–26,8 s; outro2 desde 26,8 s. -->
+<style>
+@font-face{font-family:S;src:url(fonts/instrument-serif-latin-400-normal.woff2)}
+@font-face{font-family:J;font-weight:500;src:url(fonts/plus-jakarta-sans-latin-500-normal.woff2)}
+@font-face{font-family:J;font-weight:700;src:url(fonts/plus-jakarta-sans-latin-700-normal.woff2)}
+@font-face{font-family:J;font-weight:800;src:url(fonts/plus-jakarta-sans-latin-800-normal.woff2)}
+@font-face{font-family:J;font-weight:800;font-style:italic;src:url(fonts/plus-jakarta-sans-latin-800-italic.woff2)}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#02050F}
+#cam{position:absolute;left:0;top:0;width:2600px;height:6400px;transform-origin:0 0;background:url(wall2.jpg)}
+.a{position:absolute}
+.sc{position:absolute;left:0;top:0;width:2600px;height:6400px}
+.serif{font-family:S;color:#F4F7FB;white-space:nowrap;line-height:1}
+.bold{font-family:J;font-weight:800;color:#F4F7FB;white-space:nowrap;letter-spacing:-.02em;line-height:1}
+.acc{font-family:J;font-weight:800;font-style:italic;color:#6AA8FF}
+.uv{font-family:J;font-weight:800;font-style:italic;color:#8B5CF6}
+.w{display:inline-block;margin-right:.24em}
+.mat{background:#E9EEF6;padding:18px 18px 56px;border:5px solid #0b0f1a;box-shadow:0 30px 70px rgba(0,0,0,.6)}
+.mat img{display:block;width:100%}
+.mat .cap{position:absolute;left:22px;bottom:16px;font:700 20px J;color:#3b4660;letter-spacing:.08em;white-space:nowrap}
+.panel{background:#0C1323;border:1px solid #26335a;border-radius:22px;box-shadow:0 40px 90px rgba(0,0,0,.6)}
+.press{background:#E9EEF6;border-radius:6px;padding:14px 22px;box-shadow:0 20px 40px rgba(0,0,0,.5);font:800 30px J;color:#0b0f1a;letter-spacing:.06em;white-space:nowrap}
+.press small{display:block;font:700 18px J;color:#5d6888;letter-spacing:.14em;margin-bottom:6px}
+.lab{font:800 22px J;letter-spacing:.16em;color:#8f9bb8;white-space:nowrap}
+.cred{font:500 20px J;color:#7d88a8;letter-spacing:.03em;white-space:nowrap}
+#grain{position:absolute;inset:0;width:1080px;height:1920px;mix-blend-mode:screen;opacity:.10;pointer-events:none;image-rendering:pixelated}
+</style></head><body>
+<div id="cam">
+
+<!-- 1 · GANCHO · Mundial de 1966. (cámara en 540,960) -->
+<div class="sc" id="S1">
+ <div class="a serif" id="l1a" style="left:0;width:1080px;text-align:center;top:250px;font-size:88px"></div>
+ <div class="a bold" id="l1b" style="left:0;width:1080px;text-align:center;top:350px;font-size:270px"></div>
+ <div class="a" id="shad1" style="left:300px;top:1390px;width:480px;height:50px;border-radius:50%;background:radial-gradient(rgba(0,0,0,.65),rgba(0,0,0,0) 70%)"></div>
+ <img class="a" id="ball1" src="img/ball_g.png" style="left:250px;top:760px;width:600px">
+ <div class="a press" id="pball" style="left:0;top:1480px;transform:translateX(-50%) rotate(-2deg);margin-left:540px"><small>EL BALÓN DE LA FINAL</small>WEMBLEY · 30/07/1966</div>
+ <div class="a cred" style="left:0;width:1080px;text-align:center;top:1640px">Foto: Ben Sutherland · CC BY 2.0, vía Wikimedia Commons</div>
+</div>
+
+<!-- 2 · Jimmy Greaves es el goleador de Inglaterra: 43 goles en 54 partidos. (1700,960) -->
+<div class="sc" id="S2">
+ <div class="a serif" id="l2a" style="left:1160px;width:1080px;text-align:center;top:150px;font-size:72px"></div>
+ <div class="a bold" id="l2b" style="left:1160px;width:1080px;text-align:center;top:236px;font-size:132px"></div>
+ <div class="a serif" id="l2c" style="left:1160px;width:1080px;text-align:center;top:386px;font-size:72px"></div>
+ <div class="a mat" id="gre" style="left:1215px;top:520px;width:470px;transform:rotate(-1.5deg)"><img src="img/greaves_g.jpg"><div class="cap">ÁMSTERDAM · 1964</div></div>
+ <div class="a press" id="pgre" style="left:1250px;top:1196px;transform:rotate(-2deg)"><small>INGLATERRA</small>JIMMY GREAVES</div>
+ <div class="a panel" id="cnt" style="left:1722px;top:520px;width:470px;height:720px">
+  <div class="a bold" id="n43" style="left:0;width:470px;text-align:center;top:44px;font-size:170px;color:#6AA8FF">0</div>
+  <div class="a lab" style="left:0;width:470px;text-align:center;top:226px">GOLES</div>
+  <div class="a" id="grid" style="left:19px;top:290px;width:432px;height:288px"></div>
+  <div class="a lab" id="n54" style="left:0;width:470px;text-align:center;top:612px;font-size:30px;color:#B9E0FF">54 PARTIDOS</div>
+  <div class="a lab" style="left:0;width:470px;text-align:center;top:668px;font-size:16px;color:#5d6888">FICHAS · RECREACIÓN</div>
+ </div>
+ <div class="a bold" id="l2d" style="left:1160px;width:1080px;text-align:center;top:1320px;font-size:124px"></div>
+ <div class="a serif" id="l2e" style="left:1160px;width:1080px;text-align:center;top:1466px;font-size:80px"></div>
+ <div class="a cred" style="left:1160px;width:1080px;text-align:center;top:1640px">Foto: Jack de Nijs / Anefo (Nationaal Archief) · CC0, vía Wikimedia Commons</div>
+</div>
+
+<!-- 3 · En el tercer partido, se lesiona. (540,2900) -->
+<div class="sc" id="S3">
+ <div class="a serif" id="l3a" style="left:0;width:1080px;text-align:center;top:2130px;font-size:84px"></div>
+ <svg class="a" id="cal" style="left:70px;top:2270px" width="940" height="330" viewBox="0 0 940 330">
+  <g font-family="J" font-weight="800" text-anchor="middle">
+   <rect id="cb1" x="4" y="4" width="290" height="310" rx="20" fill="#0C1323" stroke="#26335a" stroke-width="4"/>
+   <rect id="cb2" x="324" y="4" width="290" height="310" rx="20" fill="#0C1323" stroke="#26335a" stroke-width="4"/>
+   <rect id="cb3" x="644" y="4" width="290" height="310" rx="20" fill="#0C1323" stroke="#26335a" stroke-width="4"/>
+   <g font-size="20" fill="#8f9bb8" letter-spacing="4"><text x="149" y="60">PARTIDO</text><text x="469" y="60">PARTIDO</text><text id="cl3" x="789" y="60">PARTIDO</text></g>
+   <g font-size="170"><text x="149" y="250" fill="#5d6888">1</text><text x="469" y="250" fill="#5d6888">2</text><text id="cn3" x="789" y="250" fill="#5d6888">3</text></g>
+  </g>
+ </svg>
+ <div class="a" id="stamp" style="left:704px;top:2376px;width:310px;text-align:center;font:800 56px J;letter-spacing:.08em;color:#B9E0FF;background:rgba(2,5,15,.92);border:6px solid #B9E0FF;box-shadow:0 14px 30px rgba(0,0,0,.6);border-radius:12px;padding:12px 0;transform:rotate(-12deg);opacity:0">LESIÓN</div>
+ <div class="a mat" id="gre3" style="left:330px;top:2660px;width:420px"><img src="img/greaves_g.jpg"><div class="cap">JIMMY GREAVES</div></div>
+ <div class="a bold" id="l3b" style="left:0;width:1080px;text-align:center;top:3320px;font-size:140px"></div>
+ <div class="a lab" style="left:0;width:1080px;text-align:center;top:3500px;font-size:18px;color:#5d6888">CALENDARIO Y SELLO · RECREACIÓN</div>
+</div>
+
+<!-- 4 · Entra Geoff Hurst, que debutó en febrero, y marca el gol de los cuartos. (1700,2900) -->
+<div class="sc" id="S4">
+ <div class="a serif" id="l4a" style="left:1160px;width:1080px;text-align:center;top:2100px;font-size:76px"></div>
+ <div class="a bold" id="l4b" style="left:1160px;width:1080px;text-align:center;top:2184px;font-size:116px"></div>
+ <div class="a mat" id="hur" style="left:1205px;top:2370px;width:500px;transform:rotate(1.5deg)"><img src="img/hurst_g.jpg"><div class="cap">UPTON PARK · 2008</div></div>
+ <div class="a press" id="pdeb" style="left:1440px;top:2400px;transform:rotate(7deg);border-left:10px solid #6AA8FF"><small>DEBUT CON INGLATERRA</small>FEB. 1966</div>
+ <div class="a panel" id="sb" style="left:1738px;top:2370px;width:452px;height:300px">
+  <div class="a lab" style="left:0;width:452px;text-align:center;top:30px">CUARTOS · 1966</div>
+  <div class="a bold" id="sc10" style="left:0;width:452px;text-align:center;top:90px;font-size:150px;color:#6AA8FF">1–0</div>
+ </div>
+ <svg class="a" id="goal" style="left:1738px;top:2700px" width="452" height="360" viewBox="0 0 452 360">
+  <rect x="2" y="2" width="448" height="356" rx="22" fill="#0C1323" stroke="#26335a" stroke-width="3"/>
+  <path d="M96 120 V40 H356 V120" fill="none" stroke="#8f9bb8" stroke-width="6"/>
+  <path d="M106 48 H346 M106 72 H346 M106 96 H346 M140 40 V120 M190 40 V120 M240 40 V120 M290 40 V120" stroke="#26335a" stroke-width="2"/>
+  <path d="M30 122 H422" stroke="#3a4870" stroke-width="4"/>
+  <path id="traj" d="M60 300 Q120 150 250 200 Q300 140 300 80" fill="none" stroke="#6AA8FF" stroke-width="5" stroke-dasharray="4 14" stroke-linecap="round" pathLength="100"/>
+  <circle id="gball" cx="60" cy="300" r="16" fill="#E9EEF6" stroke="#02050F" stroke-width="3"/>
+  <text x="24" y="342" font-family="J" font-weight="700" font-size="16" fill="#5d6888" letter-spacing="2">MARCADOR Y CABEZAZO · RECREACIÓN</text>
+ </svg>
+ <div class="a serif" id="l4c" style="left:1160px;width:1080px;text-align:center;top:3120px;font-size:66px"></div>
+ <div class="a serif" id="l4d" style="left:1160px;width:1080px;text-align:center;top:3210px;font-size:66px"></div>
+ <div class="a bold" id="l4e" style="left:1160px;width:1080px;text-align:center;top:3296px;font-size:124px"></div>
+ <div class="a cred" style="left:1160px;width:1080px;text-align:center;top:3480px">Foto: Keven Law · CC BY-SA 2.0, vía Wikimedia Commons (recortada y en B/N)</div>
+</div>
+
+<!-- 5 · Para la final, Greaves ya está sano. Alf Ramsey mantiene a Hurst. Hurst marca tres. (540,4840) -->
+<div class="sc" id="S5">
+ <div class="a serif" id="l5a" style="left:0;width:1080px;text-align:center;top:4060px;font-size:68px"></div>
+ <div class="a bold" id="l5b" style="left:0;width:1080px;text-align:center;top:4146px;font-size:120px"></div>
+ <div class="a serif" id="l5c" style="left:0;width:1080px;text-align:center;top:4060px;font-size:68px"></div>
+ <div class="a bold" id="l5d" style="left:0;width:1080px;text-align:center;top:4146px;font-size:120px"></div>
+ <div class="a serif" id="l5f" style="left:0;width:1080px;text-align:center;top:4278px;font-size:54px"></div>
+ <svg class="a panel" id="board" style="left:50px;top:4350px" width="610" height="960" viewBox="0 0 610 960">
+  <g fill="none" stroke="#3a4870" stroke-width="4">
+   <rect x="25" y="25" width="560" height="720" rx="6"/><path d="M25 385 H585"/><circle cx="305" cy="385" r="70"/>
+   <rect x="175" y="25" width="260" height="110"/><rect x="175" y="635" width="260" height="110"/>
+  </g>
+  <g id="slots" fill="none" stroke="#26335a" stroke-width="5"></g>
+  <path id="dash5" d="M305 150 L390 230" stroke="#8f9bb8" stroke-width="3" stroke-dasharray="8 8" fill="none"/>
+  <rect x="25" y="790" width="560" height="120" rx="14" fill="none" stroke="#26335a" stroke-width="3" stroke-dasharray="10 10"/>
+  <text x="45" y="822" font-family="J" font-weight="800" font-size="18" fill="#5d6888" letter-spacing="4">BANQUILLO</text>
+  <g id="balls5"></g>
+  <g id="cH"><rect x="-90" y="-30" width="180" height="60" rx="10" fill="#E9EEF6"/><text y="11" text-anchor="middle" font-family="J" font-weight="800" font-size="30" fill="#0b0f1a" letter-spacing="2">HURST</text></g>
+  <rect id="cHring" x="-98" y="-38" width="196" height="76" rx="14" fill="none" stroke="#6AA8FF" stroke-width="5" opacity="0"/>
+  <g id="cG"><rect id="cGr" x="-110" y="-30" width="220" height="60" rx="10" fill="#5d6888"/><text y="11" x="-12" text-anchor="middle" font-family="J" font-weight="800" font-size="30" fill="#0b0f1a" letter-spacing="2">GREAVES</text>
+   <path id="chk" d="M66 -2 L80 12 L100 -14" fill="none" stroke="#2f7d4f" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/></g>
+  <text x="30" y="945" font-family="J" font-weight="700" font-size="16" fill="#5d6888" letter-spacing="2">PIZARRA DE ALINEACIÓN · RECREACIÓN</text>
+ </svg>
+ <div class="a mat" id="ram" style="left:690px;top:4330px;width:345px;padding:14px 14px 48px;transform:rotate(1.5deg)"><img src="img/ramsey_g.jpg"><div class="cap" style="font-size:17px">SCHIPHOL · 1969</div></div>
+ <div class="a press" id="pram" style="left:700px;top:4860px;transform:rotate(-2deg)"><small>SELECCIONADOR</small>ALF RAMSEY</div>
+ <div class="a panel" id="fin" style="left:690px;top:5030px;width:345px;height:260px">
+  <div class="a lab" style="left:0;width:345px;text-align:center;top:30px">FINAL · WEMBLEY</div>
+  <div class="a bold" id="sc42" style="left:0;width:345px;text-align:center;top:84px;font-size:130px;color:#6AA8FF">4–2</div>
+ </div>
+ <div class="a bold" id="l5e" style="left:0;width:1080px;text-align:center;top:5350px;font-size:104px"></div>
+ <div class="a cred" style="left:0;width:1080px;text-align:center;top:5500px">Foto: Bert Verhoeff / Anefo (Nationaal Archief) · CC0, vía Wikimedia Commons</div>
+</div>
+
+<!-- 6 · Inglaterra, campeona... (1700,4840) -->
+<div class="sc" id="S6">
+ <div class="a bold" id="l6a" style="left:1160px;width:1080px;text-align:center;top:4130px;font-size:136px"></div>
+ <div class="a serif" id="l6b" style="left:1160px;width:1080px;text-align:center;top:4290px;font-size:96px"></div>
+ <svg class="a" id="cup" style="left:1450px;top:4450px" width="500" height="760" viewBox="0 0 500 760">
+  <g fill="none" stroke="#B9E0FF" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+   <path class="cl" pathLength="100" d="M250 40 C190 40 150 90 150 170 C150 260 200 330 250 350 C300 330 350 260 350 170 C350 90 310 40 250 40 Z"/>
+   <path class="cl" pathLength="100" d="M150 130 C80 120 70 230 160 260 M350 130 C420 120 430 230 340 260"/>
+   <path class="cl" pathLength="100" d="M222 350 C226 420 200 470 170 520 H330 C300 470 274 420 278 350"/>
+   <path class="cl" pathLength="100" d="M130 520 H370 V600 H130 Z"/>
+   <path class="cl" pathLength="100" d="M100 600 H400 V660 H100 Z"/>
+  </g>
+  <text x="250" y="730" text-anchor="middle" font-family="J" font-weight="700" font-size="16" fill="#5d6888" letter-spacing="2">COPA GENÉRICA · RECREACIÓN</text>
+ </svg>
+ <div class="a press" id="pwem" style="left:1700px;top:5250px;transform:translateX(-50%) rotate(-1.5deg)"><small>FINAL · 4–2 A ALEMANIA OCC. · PRÓRROGA</small>WEMBLEY · 30/07/1966</div>
+</div>
+
+<!-- 7 · REMATE · No alinees el nombre. Alinea el momento. (1120,5440) -->
+<div class="sc" id="S7">
+ <div class="a mat" id="g7" style="left:700px;top:4620px;width:320px;padding:12px 12px 12px;transform:rotate(-2deg)"><img src="img/greaves_g.jpg"></div>
+ <div class="a mat" id="h7" style="left:1220px;top:4630px;width:320px;padding:12px 12px 12px;transform:rotate(1.5deg)"><img src="img/hurst_g.jpg"></div>
+ <div class="a bold" id="ng7" style="left:660px;width:400px;text-align:center;top:5110px;font-size:64px">GREAVES</div>
+ <div class="a bold" id="nh7" style="left:1180px;width:400px;text-align:center;top:5110px;font-size:64px;color:#6AA8FF">HURST</div>
+ <svg class="a" style="left:690px;top:5100px" width="340" height="80" viewBox="0 0 340 80"><path id="strike" d="M10 46 L330 34" stroke="#F4F7FB" stroke-width="7" stroke-linecap="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/></svg>
+ <div class="a serif" id="l7a" style="left:580px;width:1080px;text-align:center;top:5260px;font-size:84px"></div>
+ <div class="a serif" id="l7b" style="left:580px;width:1080px;text-align:center;top:5400px;font-size:84px"></div>
+ <div class="a bold" id="l7c" style="left:580px;width:1080px;text-align:center;top:5494px;font-size:176px"></div>
+ <div class="a lab" id="lab7" style="left:580px;width:1080px;text-align:center;top:5730px;font-size:24px">MUNDIAL 1966 · FINAL 4–2 · TRES GOLES DE HURST</div>
+ <div class="a cred" id="cred7" style="left:620px;width:1000px;text-align:center;top:5960px;line-height:1.5;white-space:normal">Fotos: Jack de Nijs / Anefo y Bert Verhoeff / Anefo (CC0) · Keven Law (CC BY-SA 2.0) · Ben Sutherland (CC BY 2.0), vía Wikimedia Commons.<br>Marcadores, pizarra, calendario y copa: recreación.</div>
+</div>
+
+</div>
+<canvas id="grain" width="360" height="640"></canvas>
+<script src="gsap.min.js"></script>
+<script src="words.js"></script>
+<script>
+const $=i=>document.getElementById(i), cl=x=>Math.min(1,Math.max(0,x)), P=(t,a,b)=>cl((t-a)/(b-a)), eo=x=>1-Math.pow(1-x,3), es=x=>x*x*(3-2*x);
+const W=window.WORDS, T=k=>W[k][1], E=k=>W[k][2], OUT=26.8;
+const L=[];
+function line(id,ks,acc=[],txt={},cls='acc'){const el=$(id);for(const k of ks){const s=document.createElement('span');s.className='w'+(acc.includes(k)?' '+cls:'');s.textContent=txt[k]||W[k][0];el.appendChild(s);L.push([s,T(k)])}}
+line('l1a',[0,1]); line('l1b',[2],[],{2:'1966.'});
+L[0][1]=-.5; L[1][1]=-.5; L[2][1]=-.45;   // gancho: «Mundial de 1966.» ya está en el primer fotograma
+line('l2a',[3,4,5,6],[],{3:'Jimmy',4:'Greaves'}); line('l2b',[7],[7],{7:'GOLEADOR'}); line('l2c',[8,9],[],{9:'Inglaterra:'});
+line('l2d',[10,11],[10,11],{11:'GOLES'}); line('l2e',[12,13,14],[],{14:'partidos.'});
+line('l3a',[15,16,17,18],[],{18:'partido,'}); line('l3b',[19,20],[19,20],{19:'SE',20:'LESIONA.'});
+line('l4a',[21]); line('l4b',[22,23],[],{22:'GEOFF',23:'HURST,'}); line('l4c',[24,25,26,27],[],{27:'febrero,'});
+line('l4d',[28,29,30,31,32,33]); line('l4e',[34],[34],{34:'CUARTOS.'});
+line('l5a',[35,36,37,38,39,40],[],{37:'final,',38:'Greaves'}); line('l5b',[41],[41],{41:'SANO.'});
+line('l5c',[42,43]); line('l5d',[44],[44],{44:'MANTIENE'}); line('l5f',[45,46],[],{46:'Hurst.'});
+line('l5e',[47,48,49],[49],{47:'Hurst',49:'TRES.'});
+line('l6a',[50],[],{50:'INGLATERRA,'}); line('l6b',[51],[],{51:'campeona...'});
+line('l7a',[52,53,54,55],[],{53:'alinees',55:'nombre.'}); line('l7b',[56,57]); line('l7c',[58],[58],{58:'MOMENTO.'},'uv');
+// ----- cámara: un solo plano -----
+const cam={cx:540,cy:960,z:1.0}, tl=gsap.timeline({paused:true});
+const fly=(t,cx,cy,z,d=.9)=>{tl.to(cam,{cx,cy,duration:d,ease:'power2.inOut'},t);tl.to(cam,{keyframes:[{z:z*0.9,duration:d*.5,ease:'sine.out'},{z,duration:d*.5,ease:'sine.inOut'}]},t)};
+const FL=[1.98,7.62,10.12,14.55,20.35,22.28];
+tl.set(cam,{cx:540,cy:960,z:1.0},0).to(cam,{z:1.04,cy:975,duration:1.98,ease:'sine.out'},0);
+fly(FL[0],1700,960,1.0); tl.to(cam,{z:1.03,cy:975,duration:4.7,ease:'sine.out'},FL[0]+.9);
+fly(FL[1],540,2900,1.0); tl.to(cam,{z:1.03,duration:1.6,ease:'sine.out'},FL[1]+.9);
+fly(FL[2],1700,2900,1.0); tl.to(cam,{z:1.03,cy:2915,duration:3.5,ease:'sine.out'},FL[2]+.9);
+fly(FL[3],540,4840,1.0); tl.to(cam,{z:1.03,duration:4.9,ease:'sine.out'},FL[3]+.9);
+fly(FL[4],1700,4840,1.0); tl.to(cam,{z:1.03,duration:1.0,ease:'sine.out'},FL[4]+.9);
+fly(FL[5],1120,5440,1.0); tl.to(cam,{z:1.03,duration:1.8,ease:'sine.out'},FL[5]+.9);   // quieta desde 25,0 s
+// ----- elementos construidos -----
+const NS='http://www.w3.org/2000/svg', mk=(tag,at,par)=>{const e=document.createElementNS(NS,tag);for(const k in at)e.setAttribute(k,at[k]);par.appendChild(e);return e};
+const GR=[]; for(let i=0;i<54;i++){const d=document.createElement('div');d.className='a';d.style.cssText=`left:${(i%9)*48+6}px;top:${Math.floor(i/9)*48+6}px;width:36px;height:36px;border-radius:50%;border:3px solid #26335a`;$('grid').appendChild(d);
+ const c=document.createElement('div');c.className='a';c.style.cssText=`left:${(i%9)*48+9}px;top:${Math.floor(i/9)*48+9}px;width:30px;height:30px;border-radius:50%;background:#6AA8FF;opacity:0`;$('grid').appendChild(c);GR.push(c)}
+const SLOT=[[305,680],[90,560],[230,560],[380,560],[520,560],[90,400],[230,400],[380,400],[520,400],[200,240],[410,240]];
+SLOT.forEach(([x,y])=>mk('circle',{cx:x,cy:y,r:30},$('slots')));
+const B5=[0,1,2].map(i=>{const g=mk('g',{opacity:0},$('balls5'));mk('circle',{cx:350+i*60,cy:168,r:20,fill:'#E9EEF6',stroke:'#6AA8FF','stroke-width':4},g);mk('path',{d:`M${340+i*60} 160 l10 8 l10 -8 M${350+i*60} 168 v12`,stroke:'#02050F','stroke-width':3,fill:'none'},g);return g});
+const CL=[...document.querySelectorAll('#cup .cl')]; CL.forEach(p=>{p.setAttribute('stroke-dasharray',100)});
+// grano
+const g=$('grain').getContext('2d'),gi=g.createImageData(360,640);let sd=1;const R=()=>(sd=(sd*16807)%2147483647)/2147483647;
+function camAt(t){tl.seek(t,false);return [cam.cx,cam.cy,cam.z]}
+let t=0;
+const inn=(el,t0,dy=40,d=.5,rot=0,extra='')=>{const p=eo(P(t,t0,t0+d));el.style.opacity=p;el.style.transform=extra+`translateY(${(1-p)*dy}px)`+(rot?` rotate(${rot}deg)`:'');return p};
+// cada escena: aparece con la cámara llegando y se apaga al empezar el viaje siguiente (0,3 s)
+const SC=[['S1',-9,FL[0]],['S2',FL[0]+.5,FL[1]],['S3',FL[1]+.45,FL[2]],['S4',FL[2]+.5,FL[3]],['S5',FL[3]+.45,FL[4]],['S6',FL[4]+.45,FL[5]],['S7',FL[5]+.45,99]];
+window.frame=function(tt){t=tt;
+ sd=1+Math.floor(t*30)*7919;const dd=gi.data;for(let i=0;i<dd.length;i+=4){const v=R()*255;dd[i]=v*.8;dd[i+1]=v*.85;dd[i+2]=v;dd[i+3]=255}g.putImageData(gi,0,0);
+ const p0=camAt(Math.max(0,t-1/30)),p1=camAt(t),sp=Math.hypot(p1[0]-p0[0],p1[1]-p0[1]);
+ $('cam').style.transform=`translate(540px,960px) scale(${p1[2]}) translate(${-p1[0]}px,${-p1[1]}px)`;
+ $('cam').style.filter=sp>14?`blur(${Math.min(4,(sp-14)/30)}px)`:'none';
+ for(const [id,a,b] of SC){$(id).style.opacity=P(t,a-.3,a)*(1-P(t,b,b+.3));$(id).style.visibility=(t<a-.3||t>b+.3)?'hidden':'visible'}
+ for(const [s,t0] of L){const p=eo(P(t,t0-.04,t0+.32));s.style.opacity=p;s.style.transform=`translateX(${(1-p)*28}px)`;s.style.filter=`blur(${(1-p)*6}px)`}
+ // 1 · el balón de la final ya está en el fotograma 0 y rueda un palmo
+ const r1=eo(P(t,0,1.6)); $('ball1').style.transform=`translateX(${-90+90*r1}px) rotate(${-70+70*r1}deg)`; $('shad1').style.transform=`translateX(${-90+90*r1}px)`;
+ // 2 · Greaves en ficha; contador hasta 43 y 43 fichas en 54 huecos; «54 PARTIDOS» en «54»
+ const pg=eo(P(t,2.55,3.15)); $('gre').style.opacity=pg; $('gre').style.transform=`translateY(${(1-pg)*50}px) rotate(-1.5deg)`;
+ inn($('pgre'),3.0,20,.45,-2); inn($('cnt'),2.75,30,.5);
+ const k43=Math.round(43*es(P(t,T(10)-.05,T(10)+.85))); $('n43').textContent=k43;
+ GR.forEach((c,i)=>{const q=eo(P(t,T(10)-.05+i*.02,T(10)+.15+i*.02));c.style.opacity=i<43?q:0;c.style.transform=`translateY(${(1-q)*-24}px)`});
+ const q54=P(t,T(13)-.05,T(13)+.3); $('n54').style.opacity=.25+.75*q54; $('n54').style.transform=`scale(${1+.08*Math.sin(Math.PI*q54)})`;
+ // 3 · calendario 1·2·3; la tercera casilla se enciende en «tercer»; sello LESIÓN en «lesiona»; la ficha de Greaves se inclina y se apaga
+ const q3=P(t,T(17),T(17)+.3); $('cb3').setAttribute('stroke',q3>.5?'#6AA8FF':'#26335a'); $('cn3').setAttribute('fill',q3>.5?'#F4F7FB':'#5d6888');
+ inn($('cal'),FL[1]+.5,30,.5);
+ const st=P(t,T(20)-.18,T(20)+.02); $('stamp').style.opacity=st; $('stamp').style.transform=`rotate(-12deg) scale(${1.6-.6*eo(st)})`;
+ const pg3=eo(P(t,FL[1]+.6,FL[1]+1.1)), dk=es(P(t,T(20),T(20)+.45));
+ $('gre3').style.opacity=pg3*(1-.35*dk); $('gre3').style.transform=`translateY(${(1-pg3)*40}px) rotate(${-1+7*dk}deg)`; $('gre3').style.filter=`brightness(${1-.55*dk})`;
+ // 4 · Hurst en ficha; etiqueta del debut en «febrero»; 1–0 de cuartos y la trayectoria del cabezazo en «gol»
+ const ph=eo(P(t,FL[2]+.6,FL[2]+1.2)); $('hur').style.opacity=ph; $('hur').style.transform=`translateY(${(1-ph)*50}px) rotate(1.5deg)`;
+ inn($('pdeb'),T(27)-.08,-30,.35,7);
+ inn($('sb'),FL[2]+.75,30,.5); inn($('goal'),FL[2]+.85,30,.5);
+ const fl=P(t,T(34)-.1,T(34)+.35); $('sc10').style.transform=`perspective(600px) rotateX(${(1-eo(fl))*90}deg)`; $('sc10').style.opacity=fl>0?1:0;
+ const tr=es(P(t,T(31)-.1,T(31)+.6)); $('traj').setAttribute('stroke-dashoffset',100-100*tr); $('traj').setAttribute('stroke-dasharray',`${100*tr} 100`);
+ const pt=$('traj').getPointAtLength($('traj').getTotalLength()*tr); $('gball').setAttribute('cx',pt.x); $('gball').setAttribute('cy',pt.y);
+ // 5 · la ficha de Greaves recupera el color y el ✓ en «sano»; Ramsey en «Alf Ramsey»; en «mantiene» Hurst se queda y Greaves va al banquillo; tres balones y 4–2
+ const sw=P(t,17.12,17.36); $('l5a').style.opacity=1-sw; $('l5b').style.opacity=1-sw; $('l5c').style.opacity=t<17.1?0:1; $('l5d').style.opacity=t<17.1?0:1; $('l5f').style.opacity=t<17.1?0:1;
+ inn($('board'),FL[3]+.6,30,.5);
+ $('cH').setAttribute('transform','translate(410 240)'); $('cHring').setAttribute('transform','translate(410 240)');
+ const sn=P(t,T(41)-.05,T(41)+.3), mv=es(P(t,T(44)-.05,T(44)+.55));
+ $('cGr').setAttribute('fill',sn>.5?'#E9EEF6':'#5d6888'); $('chk').setAttribute('stroke-dashoffset',100-100*eo(sn));
+ const gx=305+(300-305)*mv, gy=140+(850-140)*mv; $('cG').setAttribute('transform',`translate(${gx} ${gy})`);
+ $('dash5').setAttribute('opacity',(1-mv)*P(t,FL[3]+.9,FL[3]+1.2));
+ $('cHring').setAttribute('opacity',eo(P(t,T(44),T(44)+.3)));
+ B5.forEach((b,i)=>{const q=eo(P(t,T(47)+i*.3,T(47)+i*.3+.25));b.setAttribute('opacity',q);b.setAttribute('transform',`translate(0 ${(1-q)*-20})`)});
+ const pr=eo(P(t,T(42)-.1,T(42)+.45)); $('ram').style.opacity=pr; $('ram').style.transform=`translateY(${(1-pr)*50}px) rotate(1.5deg)`;
+ inn($('pram'),T(43),20,.4,-2);
+ inn($('fin'),T(49)-.1,30,.4); const f42=P(t,T(49)-.05,T(49)+.35); $('sc42').style.transform=`perspective(600px) rotateX(${(1-eo(f42))*90}deg)`;
+ // 6 · la copa se dibuja en «campeona»; placa de Wembley
+ CL.forEach((p,i)=>{p.setAttribute('stroke-dashoffset',100-100*es(P(t,T(50)+.1+i*.15,T(50)+.6+i*.15)))});
+ inn($('pwem'),T(51)+.1,24,.45,-1.5,'translateX(-50%) ');
+ // 7 · REMATE: «GREAVES» se tacha en «nombre»; «MOMENTO.» en ultravioleta (única vez), Hurst se ilumina; todo quieto desde ~25,3 s
+ const p7=eo(P(t,FL[5]+.55,FL[5]+1.0)); $('g7').style.opacity=p7; $('h7').style.opacity=p7; $('ng7').style.opacity=p7; $('nh7').style.opacity=p7;
+ $('strike').setAttribute('stroke-dashoffset',100-100*eo(P(t,T(55)-.05,T(55)+.3)));
+ const dm=P(t,T(55)+.05,T(55)+.4); $('g7').style.filter=`brightness(${1-.45*dm})`; $('ng7').style.color=dm>.5?'#8f9bb8':'#F4F7FB';
+ const hm=eo(P(t,T(58)-.05,T(58)+.3)); $('h7').style.boxShadow=`0 30px 70px rgba(0,0,0,.6), 0 0 0 ${6*hm}px #6AA8FF`;
+ $('lab7').style.opacity=P(t,FL[5]+.9,FL[5]+1.3); $('cred7').style.opacity=P(t,FL[5]+1.0,FL[5]+1.4);
+ // fundido a negro antes del cierre común
+ document.body.style.opacity=1-P(t,OUT-.5,OUT);
+};
+document.fonts.ready.then(()=>Promise.all([...document.images].map(i=>i.complete?1:new Promise(r=>{i.onload=r;i.onerror=r})))).then(()=>{frame(0);window.ready=true});
+</script></body></html>
