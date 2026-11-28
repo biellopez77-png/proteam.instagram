@@ -1,5 +1,5 @@
 <!doctype html><html><head><meta charset="utf-8">
-<!-- v7 · Salid y disfrutad (Johan Cruyff antes de la final de Wembley, 20/5/1992; falta de Koeman en el 112, 1-0 a la Sampdoria). Un solo plano sobre una pared grande; cada cosa que dice la voz se anima en su palabra. Base: tools/reel_v7/wooden/reel.html y v7-diez-a-tres-brooks-1980 -->
+<!-- v7 · Salid y disfrutad (Johan Cruyff antes de la final de Wembley, 20/5/1992; falta de Koeman en el 112, 1-0 a la Sampdoria). Un solo plano sobre una pared grande; cada cosa que dice la voz se anima en su palabra. Base: tools/reel_v7/wooden/reel.html y v7-diez-a-tres-brooks-1980. r2 (28/11): gancho con las dos finales perdidas delante; «Wembley, 1992» pasa a la segunda frase -->
 <style>
 @font-face{font-family:S;src:url(fonts/instrument-serif-latin-400-normal.woff2)}
 @font-face{font-family:SI;src:url(fonts/instrument-serif-latin-400-italic.woff2)}
@@ -87,7 +87,7 @@ svg .dr{fill:none;stroke-linecap:round;stroke-linejoin:round}
 <div class="a panel" id="qc" style="left:1210px;top:3090px;width:980px;height:560px;border-radius:20px;opacity:0">
  <div class="k" style="position:absolute;left:44px;top:36px;font-size:17px">ANTES DE SALIR · J. CRUYFF</div>
  <div class="a serif" id="qs" style="left:44px;top:110px;font-size:120px"></div>
- <div class="a bold" id="qd" style="left:40px;top:250px;font-size:168px"></div>
+ <div class="a bold" id="qd" style="left:40px;top:262px;font-size:134px"></div>
  <div class="a" style="left:44px;top:460px;font:400 38px SI;color:#B9E0FF">— J. Cruyff, Wembley 1992</div>
  <div class="a recl" style="right:30px;bottom:22px;font-size:14px">TRADUCCIÓN (THE NATIONAL, CNN, GOAL)</div>
 </div>
@@ -128,8 +128,7 @@ svg .dr{fill:none;stroke-linecap:round;stroke-linejoin:round}
 <div class="a serif c" id="g1" style="left:0;width:1080px;top:4820px;font-size:104px"></div>
 <div class="a serif c" id="g2" style="left:0;width:1080px;top:4950px;font-size:96px"></div>
 <div class="a serif c" id="g3" style="left:0;width:1080px;top:5490px;font-size:110px"></div>
-<div class="a bold c" id="g4" style="left:0;width:1080px;top:5620px;font-size:172px"></div>
-<div class="a rec c" id="cred" style="left:0;width:1080px;top:5850px;font-size:17px;opacity:0">FOTOS: DAN UNEKEN (CC0) · ROB CROES / ANEFO (CC0)<br>DR NEIL CLIFTON (CC BY-SA 2.0) · VÍA WIKIMEDIA COMMONS<br>COPA, CAMPO, GRADA, RELOJ, PIZARRA Y MARCADOR: RECREACIÓN</div>
+<div class="a bold c" id="g4" style="left:0;width:1080px;top:5630px;font-size:146px"></div>
 
 </div>
 <canvas id="grain" width="360" height="640"></canvas>
@@ -142,10 +141,10 @@ const NS='http://www.w3.org/2000/svg', mk=(tag,at,par)=>{const e=document.create
 const mix=(a,b,p)=>a+(b-a)*p;
 const L=[];
 function line(id,tokens){const el=$(id);for(const [txt,k,cls,st,off] of tokens){const s=document.createElement('span');s.className='w '+(cls||'');s.textContent=txt;if(st)s.style.cssText=st;el.appendChild(s);L.push([s,T(k)+(off||0)])}}
-line('l0',[['Wembley,',0,'it']]);
-line('l1',[['El',2],['Barça',3,'acc'],['había',4],['perdido',5]]);
-line('l1b',[['sus',6],['dos',7,'acc'],['finales',8]]);
-line('l1c',[['de',9],['Copa',10,'it'],['de',11,'it'],['Europa.',12,'it']]);
+line('l0',[['Wembley,',11,'it']]);
+line('l1',[['El',0],['Barça',1,'acc'],['había',2],['perdido',3]]);
+line('l1b',[['sus',4],['dos',5,'acc'],['finales',6]]);
+line('l1c',[['de',7],['Copa',8,'it'],['de',9,'it'],['Europa.',10,'it']]);
 line('l2',[['Antes',13],['de',14],['salir,',15,'it']]);
 line('l3',[['Johan',16],['CRUYFF',17,'acc'],['los',18],['para.',19,'it']]);
 line('l4',[['«Estamos',20],['en',21],['Wembley.',22,'it']]);
@@ -168,8 +167,8 @@ const cupP=[mk('path',{class:'dr',d:'M120 40 L300 40 Q300 210 210 250 Q120 210 1
 mk('text',{x:420,y:424,'text-anchor':'end','font-family':'J','font-weight':500,'font-size':14,fill:'#5d6888','letter-spacing':2.5},C).textContent='RECREACIÓN';
 // líneas del campo y grada sobre la foto (912×489)
 const OV=$('ov');const fl=[];
-[[ 'M0 300 L912 300' ],[ 'M60 330 L912 360' ],[ 'M120 380 L912 430' ],[ 'M330 300 Q420 345 330 430' ],[ 'M560 300 L700 489' ]].forEach(([d],i)=>fl.push(mk('path',{class:'dr',d,stroke:'#B9E0FF','stroke-width':2.5,opacity:.85,pathLength:100,'stroke-dasharray':100,'stroke-dashoffset':100},OV)));
-const crowd=[];for(let r=0;r<3;r++)for(let i=0;i<46;i++){const x=150+i*16.5+(r%2)*8,y=150+r*14-(i/46)*10;crowd.push([mk('circle',{cx:x,cy:y,r:4.2,fill:'#B9E0FF',opacity:0},OV),i/46])}
+[[ 'M0 300 L912 300' ],[ 'M60 330 L912 360' ],[ 'M120 380 L912 430' ],[ 'M330 300 Q420 345 330 430' ],[ 'M560 300 L700 489' ]].forEach(([d],i)=>fl.push(mk('path',{class:'dr',d,stroke:'#DCEBFF','stroke-width':7,opacity:1,pathLength:100,'stroke-dasharray':100,'stroke-dashoffset':100},OV)));
+const crowd=[];for(let r=0;r<3;r++)for(let i=0;i<46;i++){const x=150+i*16.5+(r%2)*8,y=146+r*17-(i/46)*10;crowd.push([mk('circle',{cx:x,cy:y,r:6.5,fill:'#DCEBFF',opacity:0},OV),i/46])}
 // reloj: 90 + 22
 const K=$('clock');mk('circle',{cx:320,cy:320,r:250,fill:'#0C1323',stroke:'#26335a','stroke-width':3},K);
 for(let m=0;m<90;m+=5){const a=m/90*2*Math.PI-Math.PI/2,r1=m%15?228:212;mk('path',{d:`M${320+r1*Math.cos(a)} ${320+r1*Math.sin(a)} L${320+240*Math.cos(a)} ${320+240*Math.sin(a)}`,stroke:'#3a4870','stroke-width':m%15?3:6},K)}
@@ -184,15 +183,15 @@ const wall=[];for(let i=0;i<4;i++){const g=mk('g',{},B);mk('circle',{cx:0,cy:0,r
 const ball=mk('g',{},B);mk('circle',{cx:0,cy:0,r:15,fill:'#0a1a1f',stroke:'#F4F7FB','stroke-width':4},ball);
 const traj=mk('path',{class:'dr',d:'M330 500 Q120 330 172 58',stroke:'#6AA8FF','stroke-width':6,pathLength:100,'stroke-dasharray':'100','stroke-dashoffset':100},B);
 // ----- cámara: un solo plano -----
-const cam={cx:540,cy:810,z:1.06};const tl=gsap.timeline({paused:true});
+const cam={cx:1700,cy:790,z:1.03};const tl=gsap.timeline({paused:true});
 const fly=(t,cx,cy,z,d=.9)=>{tl.to(cam,{cx,cy,duration:d,ease:'power2.inOut'},t);tl.to(cam,{keyframes:[{z:z*0.9,duration:d*.5,ease:'sine.out'},{z,duration:d*.5,ease:'sine.inOut'}]},t)};
-tl.set(cam,{cx:540,cy:810,z:1.06},0).to(cam,{z:1.02,cy:840,duration:2.45,ease:'sine.out'},0);
-fly(2.45,1700,800,1.0); tl.to(cam,{cy:850,z:1.01,duration:2.5,ease:'sine.out'},3.35);
-fly(5.85,540,2700,1.0); tl.to(cam,{cy:2760,z:1.01,duration:2.05,ease:'sine.out'},6.75);
-fly(8.65,1700,2880,1.0); tl.to(cam,{cy:2960,z:1.0,duration:5.45,ease:'sine.inOut'},9.55);
-fly(15.0,540,4230,1.0); tl.to(cam,{cy:4250,z:1.01,duration:1.0,ease:'sine.out'},15.9);
-fly(16.85,1700,4500,1.0); tl.to(cam,{cy:4520,duration:1.3,ease:'sine.out'},17.75);
-fly(18.98,540,5300,1.0); tl.to(cam,{cy:5380,z:.97,duration:3.5,ease:'sine.inOut'},19.88);
+tl.set(cam,{cx:1700,cy:790,z:1.03},0).to(cam,{z:1.0,cy:830,duration:3.05,ease:'sine.out'},0);
+fly(3.05,540,810,1.02); tl.to(cam,{cy:840,z:1.01,duration:1.5,ease:'sine.out'},3.95);
+fly(5.5,540,2700,1.0); tl.to(cam,{cy:2760,z:1.01,duration:1.9,ease:'sine.out'},6.4);
+fly(8.3,1700,2880,1.0); tl.to(cam,{cy:2960,z:1.0,duration:5.35,ease:'sine.inOut'},9.2);
+fly(14.5,540,4230,1.0); tl.to(cam,{cy:4250,z:1.01,duration:.85,ease:'sine.out'},15.4);
+fly(16.25,1700,4500,1.0); tl.to(cam,{cy:4520,duration:1.25,ease:'sine.out'},17.15);
+fly(18.4,540,5300,1.0); tl.to(cam,{cy:5370,z:.97,duration:2.9,ease:'sine.inOut'},19.3);
 // grano
 const g=$('grain').getContext('2d'),gi=g.createImageData(360,640);let sd=1;const RN=()=>(sd=(sd*16807)%2147483647)/2147483647;
 function camAt(t){tl.seek(t,false);return [cam.cx,cam.cy,cam.z]}
@@ -207,16 +206,16 @@ window.frame=function(t){window._t=t;
  $('cam').style.filter=sp>14?`blur(${Math.min(4,(sp-14)/30).toFixed(2)}px)`:'none';
  for(const [s,t1] of L){const t0=t1<.3?t1-.4:t1;const p=eo(P(t,t0-.04,t0+.36));s.style.opacity=p;s.style.transform=`translateX(${(1-p)*24}px)`;s.style.filter=p<1?`blur(${(1-p)*6}px)`:'none'}
  // 1 · polaroid de Wembley, 1992 y ficha
- const pa=eo(P(t,-.4,.25));$('pol1').style.opacity=pa;$('pol1').style.transform=`translateY(${(1-pa)*40}px) rotate(${-2.2*pa}deg)`;
- const py=eo(P(t,T(1)-.04,T(1)+.4));$('y92').style.opacity=py;$('y92').style.transform=`translateY(${(1-py)*30}px)`;$('y92').style.filter=py<1?`blur(${(1-py)*6}px)`:'none';
- fade('tag1',E(1)-.25,18,.4);typ('tag1t','FINAL · COPA DE EUROPA · 20/05/1992',t,E(1)-.15,E(1)+.5);
+ const pa=eo(P(t,T(11)-.5,T(11)+.15));$('pol1').style.opacity=pa;$('pol1').style.transform=`translateY(${(1-pa)*40}px) rotate(${-2.2*pa}deg)`;
+ const py=eo(P(t,T(12)-.04,T(12)+.4));$('y92').style.opacity=py;$('y92').style.transform=`translateY(${(1-py)*30}px)`;$('y92').style.filter=py<1?`blur(${(1-py)*6}px)`:'none';
+ fade('tag1',T(12)+.15,18,.35);typ('tag1t','FINAL · COPA DE EUROPA · 20/05/1992',t,T(12)+.2,T(12)+.85);
  // 2 · FC Barcelona, dos finales tachadas, copa
- const fb=eo(P(t,T(3)-.1,T(3)+.3));$('fcb').style.opacity=fb;
- const c1=eo(P(t,T(6)-.15,T(6)+.3));$('f61').style.opacity=c1;$('f61').style.transform=`translateY(${(1-c1)*40}px) rotate(${-2*c1}deg)`;
- const c2=eo(P(t,T(7)-.05,T(7)+.35));$('f86').style.opacity=c2;$('f86').style.transform=`translateY(${(1-c2)*40}px) rotate(${1.5*c2}deg)`;
- draw($('x61a'),t,T(8),T(8)+.18);draw($('x61b'),t,T(8)+.2,T(8)+.38);
- draw($('x86a'),t,T(9),T(9)+.18);draw($('x86b'),t,T(9)+.2,T(10)+.1);
- cupP.forEach((p,i)=>draw(p,t,T(10)-.1+i*.12,T(10)+.5+i*.15));
+ const fb=eo(P(t,-.6,.1));$('fcb').style.opacity=fb;
+ const c1=eo(P(t,-.6,.1));$('f61').style.opacity=c1;$('f61').style.transform=`translateY(${(1-c1)*40}px) rotate(${-2*c1}deg)`;
+ const c2=eo(P(t,-.45,.25));$('f86').style.opacity=c2;$('f86').style.transform=`translateY(${(1-c2)*40}px) rotate(${1.5*c2}deg)`;
+ draw($('x61a'),t,T(3),T(3)+.18);draw($('x61b'),t,T(3)+.2,T(3)+.38);
+ draw($('x86a'),t,T(5),T(5)+.18);draw($('x86b'),t,T(5)+.2,T(5)+.4);
+ cupP.forEach((p,i)=>draw(p,t,T(8)-.1+i*.12,T(8)+.5+i*.15));
  // 3 · Cruyff y el «stop»
  const pc=eo(P(t,T(13)-.35,T(13)+.3));$('cruyff').style.opacity=pc;$('cruyff').style.transform=`translateY(${(1-pc)*50}px) rotate(${1.2*pc}deg)`;
  fade('tagC',T(16)-.1,24,.4);typ('tC','J. CRUYFF',t,T(16),E(17));
@@ -225,15 +224,15 @@ window.frame=function(t){window._t=t;
  // 4 · la cita sobre Wembley: líneas del campo, grada que se llena y tarjeta
  const p2=eo(P(t,T(20)-.45,T(20)+.2));$('pol2').style.opacity=p2;$('pol2').style.transform=`translateY(${(1-p2)*40}px) rotate(${.8*p2}deg)`;
  fl.forEach((p,i)=>draw(p,t,T(24)-.05+i*.1,T(24)+.45+i*.12));
- crowd.forEach(([c,f])=>{const q=P(t,T(28)+f*.95-.05,T(28)+f*.95+.12);c.setAttribute('opacity',(.9*q).toFixed(3))});
+ crowd.forEach(([c,f])=>{const q=P(t,T(28)+f*.95-.05,T(28)+f*.95+.12);c.setAttribute('opacity',q.toFixed(3))});
  const pq=eo(P(t,T(30)-.4,T(30)+.15));$('qc').style.opacity=pq;$('qc').style.transform=`translateY(${(1-pq)*40}px)`;
  const uv=P(t,T(32)-.05,T(32)+.35);const s=$('qd').children[0];s.style.color=`rgb(${Math.round(mix(244,139,uv))},${Math.round(mix(247,92,uv))},${Math.round(mix(251,246,uv))})`;s.style.textShadow=uv>.3?`0 0 ${30*uv}px rgba(139,92,246,.5)`:'none';
  // 5 · reloj 90 + 22 → 112'
- const ck=eo(P(t,T(33)-.45,T(33)));$('clock').style.opacity=ck;$('clock').style.transform=`scale(${.96+.04*ck})`;$('cn').style.opacity=ck;$('clr').style.opacity=ck*.9;
+ const ck=eo(P(t,T(33)-.45,T(33)))*(1-P(t,17.4,17.9));$('clock').style.opacity=ck;$('clock').style.transform=`scale(${.96+.04*ck})`;$('cn').style.opacity=ck;$('clr').style.opacity=ck*.9;
  const m1=eio(P(t,T(33)-.1,T(34)+.05)),m2=eio(P(t,T(34)+.05,E(34)+.05));
  arc1.setAttribute('stroke-dashoffset',100-100*m1);arc2.setAttribute('stroke-dashoffset',100-100*(22/90)*m2);
  const mins=90*m1+22*m2;$('cn').textContent=Math.round(mins)+"'";
- $('pro').style.opacity=eo(P(t,T(34)+.05,T(34)+.35));
+ $('pro').style.opacity=eo(P(t,T(34)+.05,T(34)+.35))*(1-P(t,17.4,17.9));
  // 6 · Koeman, pizarra y marcador
  const pk=eo(P(t,T(35)-.4,T(35)+.2));$('koe').style.opacity=pk;$('koe').style.transform=`translateY(${(1-pk)*40}px) rotate(${-1.4*pk}deg)`;
  const pb=eo(P(t,T(35)-.25,T(35)+.3));$('board').style.opacity=pb;$('board').style.transform=`translateY(${(1-pb)*40}px)`;
@@ -245,7 +244,6 @@ window.frame=function(t){window._t=t;
  const g1=P(t,T(38)-.05,T(38)+.25);$('sbB').textContent=g1>.4?'1':'0';$('sbB').style.transform=`perspective(900px) rotateX(${-60*Math.sin(Math.PI*g1)}deg) scale(${1+.08*Math.sin(Math.PI*g1)})`;$('sbB').style.color=g1>.4?'#6AA8FF':'#B9E0FF';
  // 7 · la tarjeta de la cita, ya en azul, detrás de la frase final
  const q2=eo(P(t,T(41)-.5,T(41)+.3));$('qc2').style.opacity=.32*q2;$('qc2').style.transform=`scale(${1.04-.04*q2}) rotate(${-1.5*q2}deg)`;
- fade('cred',T(52),10,.6);
 };
 document.fonts.ready.then(()=>Promise.all([...document.images].map(i=>i.complete?1:new Promise(r=>{i.onload=r;i.onerror=r})))).then(()=>{frame(0);window.ready=true});
 </script></body></html>
