@@ -1,0 +1,29 @@
+{
+ "numero": "Nº 00",
+ "seccion": "Se queda corto",
+ "formato": "story",
+ "laminas": [
+  {
+   "tipo": "pregunta",
+   "foto": "PARTIDO_TIRO_LIBRE_NBA_FOTO_001",
+   "pos": "15% 50%",
+   "cap": "Una pregunta",
+   "big": "¿CÓMO ES\nTU JUEVES?",
+   "bigLines": 2,
+   "serif": "el último entreno\nantes del partido.",
+   "size": 140,
+   "serifSize": 96,
+   "lh": 1.0
+  },
+  {
+   "tipo": "encuesta",
+   "pre": "Encuesta",
+   "big": "TODO CORTO\nEN EL 3C.",
+   "serif": "¿más series de tiro\no un jueves más corto?",
+   "foto": "JUGADOR_REBOTE_NBA_FOTO_002",
+   "size": 128,
+   "serifSize": 96,
+   "bigLines": 2
+  }
+ ]
+}

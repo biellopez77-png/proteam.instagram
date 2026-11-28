@@ -1,0 +1,95 @@
+{
+ "numero": "Nº 00",
+ "seccion": "Se queda corto",
+ "formato": "carrusel",
+ "laminas": [
+  {
+   "tipo": "palabra",
+   "palabra": "CORTO",
+   "foto": "JUGADOR_REBOTE_NBA_FOTO_002",
+   "fig": "Fig. 1 — Aro delantero. Otra vez.",
+   "hora": "3C",
+   "serif": "Cuatro seguidos.",
+   "size": 260,
+   "left": 30
+  },
+  {
+   "tipo": "figuras",
+   "letras": "1C · 3C",
+   "figs": [
+    {
+     "foto": "JUGADOR_BANDEJA_FOTO_001",
+     "lab": "Fig. 2 — Primer cuarto.\nNo falla."
+    },
+    {
+     "foto": "OBJETO_BALONES_CARRO_FOTO_001",
+     "lab": "Fig. 3 — El lunes,\nmás series de tiro."
+    },
+    {
+     "foto": "ENTRENADOR_TENSION_FOTO_001",
+     "lab": "Fig. 4 — El sábado,\notra vez corto."
+    }
+   ],
+   "size": 210,
+   "left": 40
+  },
+  {
+   "tipo": "portada",
+   "l1": "¿Y SI NO ES",
+   "serif": "puntería?",
+   "l2": "MIRA LAS PIERNAS.",
+   "fotos": [
+    "JUGADOR_BANDEJA_FOTO_001",
+    "ENTRENADOR_TIEMPO_MUERTO_AGACHADO_FOTO_001",
+    "JUGADOR_ACCION_FOTO_001"
+   ],
+   "cap": "Las piernas del sábado se cargan, o se guardan, entre semana.",
+   "size": 108
+  },
+  {
+   "tipo": "frase",
+   "foto": "JUGADOR_PENETRACION_FOTO_001",
+   "pos": "50% 45%",
+   "pre": "El jueves, cinco contra cinco",
+   "serif": "a todo\ncampo.",
+   "uv": true,
+   "size": 150,
+   "uvW": 420
+  },
+  {
+   "tipo": "dentro",
+   "palabra": "1–10",
+   "foto": "OBJETO_BALONES_CARRO_FOTO_001",
+   "serif": "× minutos.",
+   "cap": "Al acabar cada entreno: ¿cómo de duro?\nPor lo que ha durado. EJEMPLO: 9 × 90.",
+   "size": 340,
+   "top": 400,
+   "serifSize": 130
+  },
+  {
+   "tipo": "final",
+   "cap": "Para llevarte",
+   "serif": "Si el jueves es el pico,",
+   "big": "ACÓRTALO.",
+   "bigLines": 1,
+   "size": 150,
+   "lista": [
+    "Al acabar: del 1 al 10 × minutos.",
+    "El jueves: tiro, ritmo y a casa.",
+    "Antes de más series, mira la semana."
+   ],
+   "firma": "a veces el aro delantero se toca el jueves."
+  },
+  {
+   "tipo": "cierre",
+   "foto": "STAFF_BANQUILLO_ASISTENTES_FOTO_001",
+   "pos": "50% 40%",
+   "pre": "Fin de la página",
+   "serif": "¿Te ha servido?",
+   "big": "DALE LIKE",
+   "resto": "y síguenos para más contenido\ncomo este.",
+   "size": 200,
+   "serifSize": 120
+  }
+ ]
+}
