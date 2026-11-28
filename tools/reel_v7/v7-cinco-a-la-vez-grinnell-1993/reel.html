@@ -1,0 +1,267 @@
+<!doctype html><html><head><meta charset="utf-8">
+<!-- v7 · Cinco a la vez (David Arseneault, Grinnell College, desde 1993). Un solo plano sobre la pared; cada cosa que dice la voz se anima en su palabra.
+     Transiciones según agencia/sistema-v7/FORMATO.md: viajes 0,9 s power2.inOut, zoom ×0,9, blur ≤ 4 px, sin destellos. Base: tools/reel_v7/wooden/reel.html -->
+<style>
+@font-face{font-family:S;src:url(fonts/instrument-serif-latin-400-normal.woff2)}
+@font-face{font-family:J;font-weight:500;src:url(fonts/plus-jakarta-sans-latin-500-normal.woff2)}
+@font-face{font-family:J;font-weight:700;src:url(fonts/plus-jakarta-sans-latin-700-normal.woff2)}
+@font-face{font-family:J;font-weight:800;src:url(fonts/plus-jakarta-sans-latin-800-normal.woff2)}
+@font-face{font-family:J;font-weight:800;font-style:italic;src:url(fonts/plus-jakarta-sans-latin-800-italic.woff2)}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#02050F}
+#cam{position:absolute;left:0;top:0;width:2600px;height:7700px;transform-origin:0 0;background:#02050F url(wall2.jpg) no-repeat;background-size:2600px 7700px}
+.a{position:absolute}
+.serif{font-family:S;color:#F4F7FB;white-space:nowrap;line-height:1}
+.bold{font-family:J;font-weight:800;color:#F4F7FB;white-space:nowrap;letter-spacing:-.02em;line-height:1}
+.acc{font-family:J;font-weight:800;font-style:italic;color:#6AA8FF}
+.w{display:inline-block;margin-right:.24em}
+.mat{background:#E9EEF6;padding:20px;border:6px solid #0b0f1a;box-shadow:0 30px 70px rgba(0,0,0,.6)}
+.mat img{display:block;width:100%}
+.panel{background:#0C1323;border:1px solid #26335a;border-radius:22px;box-shadow:0 40px 90px rgba(0,0,0,.6)}
+.lab{font:800 24px J;letter-spacing:.16em;color:#8f9bb8;white-space:nowrap}
+.cred{font:500 19px J;color:#6d789a;letter-spacing:.03em;white-space:nowrap}
+.num{font:800 210px J;color:#F4F7FB;letter-spacing:-.05em;line-height:1}
+#grain{position:absolute;inset:0;width:1080px;height:1920px;mix-blend-mode:screen;opacity:.10;pointer-events:none;image-rendering:pixelated}
+#blk{position:absolute;inset:0;background:#000;opacity:0}
+</style></head><body><div id="cam">
+
+<!-- A · 5 a la vez, casi cada minuto (primer fotograma ya lleno) -->
+<div class="a bold" id="tA" style="left:0;width:1080px;text-align:center;top:190px;font-size:136px">5 A LA <span style="color:#6AA8FF">VEZ</span></div>
+<div class="a serif" id="l1" style="left:0;width:1080px;text-align:center;top:360px;font-size:62px"></div>
+<svg class="a" id="courtA" style="left:90px;top:500px" width="900" height="640" viewBox="0 0 900 640">
+ <rect x="10" y="10" width="880" height="460" rx="10" fill="#0C1323" stroke="#B9E0FF" stroke-width="5"/>
+ <g fill="none" stroke="#B9E0FF" stroke-width="4" opacity=".75">
+  <path d="M450 10 V470"/><circle cx="450" cy="240" r="62"/>
+  <rect x="10" y="160" width="180" height="160"/><rect x="710" y="160" width="180" height="160"/>
+  <path d="M10 40 H70 A215 215 0 0 1 70 440 H10"/><path d="M890 40 H830 A215 215 0 0 0 830 440 H890"/>
+ </g>
+ <rect x="60" y="540" width="780" height="70" rx="14" fill="#02050F" stroke="#26335a" stroke-width="4"/>
+ <text x="450" y="635" text-anchor="middle" font-family="J" font-weight="800" font-size="20" letter-spacing="5" fill="#8f9bb8">BANQUILLO</text>
+ <g id="chipsA"></g>
+</svg>
+<img class="a" id="watch" src="img/watch_cut_g.png" style="left:110px;top:1230px;width:330px">
+<svg class="a" id="ringS" style="left:110px;top:1230px" width="330" height="420" viewBox="0 0 330 420"><circle id="ring" cx="165" cy="242" r="150" fill="none" stroke="#6AA8FF" stroke-width="9" stroke-linecap="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100" transform="rotate(-90 165 242)"/></svg>
+<div class="a cred" id="credA" style="left:110px;top:1672px">Cronómetro · foto: R. Henrik Nilsson, CC BY 4.0, modificada</div>
+<div class="a serif" id="l1c" style="left:490px;top:1340px;font-size:66px"></div>
+<div class="a bold" id="l1d" style="left:490px;top:1430px;font-size:104px"></div>
+<div class="a cred" id="credA2" style="left:90px;top:1150px">pista y fichas: recreación</div>
+
+<!-- B · Grinnell, Iowa · Arseneault llega en 1989 -->
+<div class="a mat" id="printB" style="left:1240px;top:290px;width:920px"><img src="img/sign_g.png"></div>
+<div class="a cred" id="credB" style="left:1240px;top:752px">Grinnell College · foto: Mattsjc, CC BY 4.0, modificada</div>
+<div class="a lab" id="rotB" style="left:1240px;top:800px;color:#B9E0FF"></div>
+<div class="a panel" id="pressB" style="left:1240px;top:880px;width:920px;height:560px">
+ <div class="a lab" style="left:44px;top:40px">ENTRENADOR · FICHA</div>
+ <div class="a serif" id="l2a" style="left:44px;top:100px;font-size:60px"></div>
+ <div class="a bold" id="l2b" style="left:44px;top:180px;font-size:78px"></div>
+ <div class="a num" id="y89" style="left:44px;top:300px;color:#B9E0FF"></div>
+</div>
+
+<!-- B2 · 25 años sin una temporada ganadora -->
+<div class="a mat" id="printD" style="left:1240px;top:2000px;width:920px"><img src="img/drake_g.png"></div>
+<div class="a lab" id="labD" style="left:1240px;top:2625px;color:#B9E0FF">GRINNELL · 1925</div>
+<div class="a cred" id="credD" style="left:1240px;top:2664px">Drake–Grinnell · The Des Moines Register, 1925 · dominio público</div>
+<svg class="a" id="boxes" style="left:1240px;top:2730px" width="920" height="170" viewBox="0 0 920 170"><g id="bx"></g></svg>
+<div class="a bold" id="l3a" style="left:1240px;top:2950px;font-size:150px"></div>
+<div class="a serif" id="l3b" style="left:1240px;top:3130px;font-size:66px"></div>
+
+<!-- C · En 1993, tres quintetos -->
+<div class="a bold" id="l4a" style="left:0;width:1080px;text-align:center;top:1990px;font-size:150px"></div>
+<svg class="a" id="board" style="left:90px;top:2200px" width="900" height="880" viewBox="0 0 900 880">
+ <rect x="6" y="6" width="888" height="868" rx="18" fill="#E9EEF6" stroke="#0b0f1a" stroke-width="6"/>
+ <g id="cols"></g>
+ <path id="sh1" d="M250 300 Q315 250 380 300 M362 282 L382 302 L356 310" fill="none" stroke="#0b1530" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/>
+ <path id="sh2" d="M520 300 Q585 250 650 300 M632 282 L652 302 L626 310" fill="none" stroke="#0b1530" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/>
+ <path id="sh3" d="M720 800 Q450 870 180 800 M200 784 L178 802 L204 812" fill="none" stroke="#0b1530" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/>
+</svg>
+<div class="a serif" id="l4b" style="left:0;width:1080px;text-align:center;top:3120px;font-size:62px"></div>
+<div class="a bold" id="l4c" style="left:0;width:1080px;text-align:center;top:3200px;font-size:92px"></div>
+
+<!-- D/E · Presión a toda la pista y triples · Pero regala bandejas -->
+<div class="a serif" id="l5a" style="left:90px;top:3960px;font-size:66px"></div>
+<div class="a bold" id="l5b" style="left:90px;top:4040px;font-size:120px"></div>
+<svg class="a" id="courtD" style="left:90px;top:4220px" width="600" height="1000" viewBox="0 0 600 1000">
+ <rect x="10" y="10" width="580" height="980" rx="10" fill="#0C1323" stroke="#B9E0FF" stroke-width="5"/>
+ <g fill="none" stroke="#B9E0FF" stroke-width="4" opacity=".75">
+  <path d="M10 500 H590"/><circle cx="300" cy="500" r="62"/>
+  <rect x="210" y="10" width="180" height="200"/><rect x="210" y="790" width="180" height="200"/>
+  <path d="M50 10 V80 A250 250 0 0 0 550 80 V10"/>
+ </g>
+ <path id="arcB" d="M50 990 V920 A250 250 0 0 1 550 920 V990" fill="none" stroke="#B9E0FF" stroke-width="4" opacity=".75"/>
+ <path id="arcT" d="M50 10 V80 A250 250 0 0 0 550 80 V10" fill="none" stroke="#6AA8FF" stroke-width="10" opacity="0"/>
+ <ellipse cx="300" cy="50" rx="34" ry="10" fill="none" stroke="#F4F7FB" stroke-width="5"/>
+ <ellipse id="rimB" cx="300" cy="950" rx="34" ry="10" fill="none" stroke="#F4F7FB" stroke-width="5"/>
+ <g id="pressAr" fill="none" stroke="#6AA8FF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"></g>
+ <path id="shot" d="M430 330 Q380 110 300 52" fill="none" stroke="#F4F7FB" stroke-width="5" stroke-dasharray="4 12" stroke-linecap="round" opacity="0"/>
+ <path id="lay" d="M440 470 Q420 760 300 935 M312 905 L300 937 L284 912" fill="none" stroke="#8f9bb8" stroke-width="6" stroke-dasharray="14 10" stroke-linecap="round" stroke-linejoin="round" opacity="0"/>
+ <g id="chipsD"></g>
+</svg>
+<div class="a mat" id="printT" style="left:720px;top:4250px;width:300px"><img src="img/taylor_g.png"></div>
+<div class="a lab" id="labT" style="left:720px;top:5070px;color:#B9E0FF">GRINNELL · 2012</div>
+<div class="a cred" id="credT" style="left:720px;top:5108px">Jack Taylor tira un triple</div>
+<div class="a cred" id="credT2" style="left:720px;top:5134px">foto: Holyhill12, CC BY-SA 4.0</div>
+<div class="a" id="stamp" style="left:120px;top:4890px;padding:12px 22px;border:6px solid #B9E0FF;border-radius:12px;font:800 48px J;letter-spacing:.04em;color:#B9E0FF;white-space:nowrap;background:rgba(2,5,15,.55)">BANDEJA LIBRE</div>
+<div class="a serif" id="l6a" style="left:90px;top:5270px;font-size:66px"></div>
+<div class="a bold" id="l6b" style="left:90px;top:5350px;font-size:112px"></div>
+<div class="a bold" id="l6c" style="left:90px;top:5470px;font-size:112px"></div>
+<div class="a cred" id="credDD" style="left:720px;top:5180px">pista: recreación</div>
+
+<!-- F · Casi nadie pasa de veinte minutos -->
+<div class="a serif" id="l7a" style="left:1240px;top:3960px;font-size:66px"></div>
+<div class="a bold" id="l7b" style="left:1240px;top:4040px;font-size:130px"></div>
+<div class="a panel" id="minP" style="left:1240px;top:4250px;width:920px;height:1180px">
+ <svg class="a" style="left:0;top:0" width="920" height="1180" viewBox="0 0 920 1180"><g id="bars"></g>
+  <path id="line20" d="M520 70 V1140" stroke="#B9E0FF" stroke-width="4" stroke-dasharray="12 10"/>
+  <text id="t20" x="520" y="52" text-anchor="middle" font-family="J" font-weight="800" font-size="38" fill="#B9E0FF">20′</text>
+ </svg>
+</div>
+<div class="a cred" id="credF" style="left:1240px;top:5450px">minutos por partido · recreación</div>
+
+<!-- G · Máximos anotadores de su división · ganan su conferencia -->
+<div class="a serif" id="l8a" style="left:1240px;top:5880px;font-size:64px"></div>
+<div class="a serif" id="l8b" style="left:1240px;top:5960px;font-size:64px"></div>
+<div class="a panel" id="lead" style="left:1240px;top:6080px;width:920px;height:700px">
+ <div class="a lab" style="left:44px;top:36px">ANOTACIÓN · DIVISIÓN III</div>
+ <div id="rows"></div>
+</div>
+<svg class="a" id="troph" style="left:1250px;top:6840px" width="300" height="400" viewBox="0 0 300 400">
+ <g fill="none" stroke="#B9E0FF" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M80 40 H220 V130 Q220 230 150 240 Q80 230 80 130 Z" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/>
+  <path d="M80 70 Q20 70 30 130 Q40 180 90 185 M220 70 Q280 70 270 130 Q260 180 210 185" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/>
+  <path d="M150 240 V300 M100 300 H200 L215 360 H85 Z" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/>
+ </g>
+</svg>
+<div class="a lab" id="labG" style="left:1600px;top:6880px;color:#B9E0FF">MIDWEST CONFERENCE</div>
+<div class="a serif" id="l8c" style="left:1600px;top:6950px;font-size:64px"></div>
+<div class="a serif" id="l8d" style="left:1600px;top:7030px;font-size:64px"></div>
+<div class="a cred" id="credG" style="left:1240px;top:7260px">clasificación y trofeo: recreación</div>
+
+<!-- H · Repartir minutos no es bajar el nivel -->
+<svg class="a" id="chipsH" style="left:140px;top:6030px" width="800" height="300" viewBox="0 0 800 300"><g id="ch15"></g></svg>
+<div class="a bold" id="l9a" style="left:0;width:1080px;text-align:center;top:6400px;font-size:140px"></div>
+<div class="a bold" id="l9b" style="left:0;width:1080px;text-align:center;top:6560px;font-size:176px;color:#8B5CF6;letter-spacing:-.03em"></div>
+<div class="a serif" id="l9c" style="left:0;width:1080px;text-align:center;top:6790px;font-size:90px"></div>
+<div class="a cred" id="pie1" style="left:0;width:1080px;text-align:center;top:6980px">Fotos: Mattsjc (CC BY 4.0) · The Des Moines Register (dominio público)</div>
+<div class="a cred" id="pie2" style="left:0;width:1080px;text-align:center;top:7012px">Holyhill12 (CC BY-SA 4.0) · R. Henrik Nilsson (CC BY 4.0) · vía Wikimedia Commons, modificadas</div>
+<div class="a cred" id="pie3" style="left:0;width:1080px;text-align:center;top:7044px">Pista, pizarra, minutos, clasificación y trofeo: recreación</div>
+
+</div>
+<canvas id="grain" width="360" height="640"></canvas>
+<div id="blk"></div>
+<script src="gsap.min.js"></script>
+<script src="words.js"></script>
+<script>
+const $=i=>document.getElementById(i), cl=x=>Math.min(1,Math.max(0,x)), P=(t,a,b)=>cl((t-a)/(b-a)), eo=x=>1-Math.pow(1-x,3), es=x=>x*x*(3-2*x);
+const W=window.WORDS, T=k=>W[k][1];
+const NS='http://www.w3.org/2000/svg', mk=(tag,at,par)=>{const e=document.createElementNS(NS,tag);for(const k in at)e.setAttribute(k,at[k]);par&&par.appendChild(e);return e};
+const L=[];
+// palabra a palabra; txt sustituye la grafía de whisper cuando hace falta
+function line(id,ks,acc=[],txt={}){const el=$(id);for(const k of ks){const s=document.createElement('span');s.className='w'+(acc.includes(k)?' acc':'');s.textContent=txt[k]||W[k][0];el.appendChild(s);L.push([s,k==0?-1:T(k)])}}
+line('l1',[0,1,2,3,4],[],{4:'jugadores'});
+line('l1c',[8,9]); line('l1d',[10],[],{10:'MINUTO.'});
+line('rotB',[11,12],[],{11:'GRINNELL ·',12:'IOWA'});
+line('l2a',[13,14],[],{13:'Cuando'}); line('l2b',[15,16],[],{15:'DAVID',16:'ARSENEAULT'});
+line('y89',[18]);
+line('l3a',[20,21],[],{21:'AÑOS'}); line('l3b',[22,23,24,25],[],{25:'ganadora.'});
+line('l4a',[26,27],[],{26:'EN'});
+line('l4b',[28,29,30,31]); line('l4c',[32,33],[33],{32:'TRES',33:'QUINTETOS'});
+line('l5a',[34,35,36,37],[],{34:'Presión a'}); line('l5b',[38,39],[39],{38:'Y',39:'TRIPLES.'});
+line('l6a',[40],[],{40:'Pero'}); line('l6b',[41],[],{41:'REGALA'}); line('l6c',[42],[42],{42:'BANDEJAS.'});
+line('l7a',[43,44,45,46],[],{43:'Casi'}); line('l7b',[47,48],[48],{48:'MINUTOS.'});
+line('l8a',[49,50,51]); line('l8b',[52,53,54],[],{54:'división'});
+line('l8c',[55,56,57]); line('l8d',[58],[],{58:'conferencia…'});
+line('l9a',[59],[],{59:'REPARTIR'}); line('l9b',[60],[],{60:'MINUTOS'}); line('l9c',[61,62,63,64,65],[],{65:'nivel.'});
+// ----- cámara: un solo plano (FORMATO v7) -----
+const cam={cx:540,cy:920,z:1.0}, tl=gsap.timeline({paused:true});
+const fly=(t,cx,cy,z,d=.9)=>{tl.to(cam,{cx,cy,duration:d,ease:'power2.inOut'},t);tl.to(cam,{keyframes:[{z:z*0.9,duration:d*.5,ease:'sine.out'},{z,duration:d*.5,ease:'sine.inOut'}]},t)};
+tl.set(cam,{cx:540,cy:920,z:1.0},0).to(cam,{z:1.04,cy:900,duration:3.0,ease:'sine.out'},0);
+fly(3.05,1700,880,1.0); tl.to(cam,{cy:930,z:1.03,duration:2.95,ease:'sine.inOut'},3.95);
+fly(6.95,1700,2840,1.0); tl.to(cam,{cy:2880,z:1.03,duration:2.4,ease:'sine.out'},7.85);
+fly(10.25,540,2660,1.0); tl.to(cam,{cy:2690,z:1.03,duration:2.4,ease:'sine.out'},11.15);
+fly(13.55,540,4720,1.0); tl.to(cam,{cy:4740,z:1.02,duration:1.6,ease:'sine.out'},14.45);
+tl.to(cam,{cy:5000,z:1.08,duration:.8,ease:'power2.inOut'},16.1);   // re-hook: empuje hacia la canasta propia
+fly(17.08,1700,4720,1.0); tl.to(cam,{cy:4750,z:1.03,duration:.85,ease:'sine.out'},17.98);
+fly(18.85,1700,6580,1.0); tl.to(cam,{cy:6600,z:1.02,duration:2.3,ease:'sine.out'},19.75);   // quieta en la pausa
+fly(22.3,540,6540,1.0); tl.to(cam,{z:1.03,duration:1.5,ease:'sine.out'},23.2);              // quieta desde 24,7 hasta el fundido
+// ----- elementos -----
+const COL=['#6AA8FF','#B9E0FF','#636DFF'];
+const chip=(par,g,x,y,r=24)=>{const gg=mk('g',{},par);mk('circle',{cx:0,cy:0,r,fill:COL[g],stroke:'#02050F','stroke-width':4},gg);mk('text',{x:0,y:r*.36,'text-anchor':'middle','font-family':'J','font-weight':800,'font-size':r*1.0,fill:'#02050F'},gg).textContent=g+1;gg.setAttribute('transform',`translate(${x} ${y})`);return gg};
+// A: tres grupos; en «vez» el 1 sale y entra el 2; en «minuto» sale el 2 y entra el 3
+const onC=[[200,240],[320,120],[320,360],[160,110],[160,370]].map(([x,y])=>[x+90,y]);
+const seat=k=>[110+k*75,575];
+const A=[];for(let g=0;g<3;g++)for(let i=0;i<5;i++){const p0=g==0?onC[i]:seat(g==1?i:5+i), p1=g==0?seat(i):g==1?onC[i]:seat(5+i), p2=g==0?seat(i):g==1?seat(5+i):onC[i];A.push({el:chip($('chipsA'),g,...p0),p:[p0,p1,p2],g,i})}
+// C: pizarra con tres columnas de cinco
+const cols=$('cols');[0,1,2].forEach(g=>{mk('text',{x:180+g*270,y:110,'text-anchor':'middle','font-family':'J','font-weight':800,'font-size':64,fill:'#0b1530'},cols).textContent=g+1});
+const Cc=[];for(let g=0;g<3;g++)for(let i=0;i<5;i++)Cc.push({el:chip(cols,g,180+g*270,190+i*112,34),g,i});
+// D: cinco fichas que suben a presionar a toda la pista; la rival entra sola
+const dA=[[150,640],[300,600],[450,640],[220,780],[380,780]], dB=[[110,150],[300,250],[490,150],[190,360],[410,360]];
+const D=dA.map((p,i)=>({el:chip($('chipsD'),0,...p,28),a:p,b:dB[i]}));
+dA.forEach((p,i)=>mk('path',{d:`M${p[0]} ${p[1]-40} L${dB[i][0]} ${dB[i][1]+44} M${dB[i][0]-12} ${dB[i][1]+62} L${dB[i][0]} ${dB[i][1]+44} L${dB[i][0]+12} ${dB[i][1]+62}`,pathLength:100,'stroke-dasharray':100,'stroke-dashoffset':100},$('pressAr')));
+const riv=mk('g',{},$('chipsD'));mk('circle',{r:28,fill:'#02050F',stroke:'#8f9bb8','stroke-width':6},riv);
+// F: quince barras de minutos (recreación) que se paran antes del 20′
+const MIN=[18,16,19,15,17,20,14,18,16,19,15,17,13,18,16];const bars=$('bars'),BX=110,BW=820-110,X20=520;const F=[];
+MIN.forEach((m,i)=>{const y=110+i*70;chip(bars,Math.floor(i/5),60,y,22);mk('rect',{x:BX,y:y-14,width:BW,height:28,rx:14,fill:'#02050F',stroke:'#26335a','stroke-width':2},bars);F.push({r:mk('rect',{x:BX,y:y-14,width:0,height:28,rx:14,fill:COL[Math.floor(i/5)]},bars),w:(X20-BX)*m/20})});
+// G: clasificación; Grinnell sube del 5.º al 1.º
+const rows=$('rows');const G=[];for(let i=0;i<5;i++){const r=document.createElement('div');r.className='a';r.style.cssText=`left:44px;width:832px;height:96px;border-bottom:2px solid #26335a`;
+ const g=i==4;r.innerHTML=`<div class="a" style="left:0;top:22px;font:800 52px J;color:${g?'#F4F7FB':'#4c5878'}">${g?'GRINNELL':'— — —'}</div><div class="a" style="right:0;top:28px;width:${g?380:300-i*40}px;height:40px;border-radius:20px;background:${g?'#6AA8FF':'#26335a'}"></div>`;rows.appendChild(r);G.push(r)}
+const posN=document.createElement('div');posN.className='a';posN.style.cssText='right:44px;top:24px;font:800 30px J;color:#B9E0FF;letter-spacing:.1em';$('lead').appendChild(posN);
+// H: las quince fichas, todas
+const H=[];for(let i=0;i<15;i++)H.push(chip($('ch15'),Math.floor(i/5),80+(i%5)*160,50+Math.floor(i/5)*100,34));
+// grano
+const g=$('grain').getContext('2d'),gi=g.createImageData(360,640);let sd=1;const R=()=>(sd=(sd*16807)%2147483647)/2147483647;
+function camAt(t){tl.seek(t,false);return [cam.cx,cam.cy,cam.z]}
+let t=0;
+const inn=(el,t0,dy=40,d=.5)=>{const p=eo(P(t,t0,t0+d));el.style.opacity=p;el.style.transform=`translateY(${(1-p)*dy}px)`;return p};
+const fade=(el,t0,d=.4)=>{el.style.opacity=eo(P(t,t0,t0+d))};
+const draw=(el,t0,d=.4)=>el.setAttribute('stroke-dashoffset',100-100*eo(P(t,t0,t0+d)));
+const lerp=(a,b,p)=>[a[0]+(b[0]-a[0])*p,a[1]+(b[1]-a[1])*p];
+window.frame=function(tt){t=tt;
+ sd=1+Math.floor(t*30)*7919;const dd=gi.data;for(let i=0;i<dd.length;i+=4){const v=R()*255;dd[i]=v*.8;dd[i+1]=v*.85;dd[i+2]=v;dd[i+3]=255}g.putImageData(gi,0,0);
+ const p0=camAt(Math.max(0,t-1/30)),p1=camAt(t),sp=Math.hypot(p1[0]-p0[0],p1[1]-p0[1]);
+ $('cam').style.transform=`translate(540px,960px) scale(${p1[2]}) translate(${-p1[0]}px,${-p1[1]}px)`;
+ $('cam').style.filter=sp>14?`blur(${Math.min(4,(sp-14)/30)}px)`:'none';
+ for(const [s,t0] of L){const p=t0<0?1:eo(P(t,t0-.04,t0+.32));s.style.opacity=p;s.style.transform=`translateX(${(1-p)*28}px)`;s.style.filter=`blur(${(1-p)*6}px)`}
+ // A · cambio de cinco en «vez» y otra vez en «minuto»
+ const s1=es(P(t,T(7)-.1,T(7)+.55)), s2=es(P(t,T(10),T(10)+.6));
+ for(const c of A){const q=lerp(lerp(c.p[0],c.p[1],s1),c.p[2],s2);c.el.setAttribute('transform',`translate(${q[0]} ${q[1]})`)}
+ draw($('ring'),T(9),.85);   // el cronómetro ya está en el primer fotograma; la vuelta se dibuja en «cada minuto»
+ // B · postal y ficha de prensa (sin cara: solo el nombre)
+ const pb=inn($('printB'),3.35,60,.6);$('printB').style.transform+=` rotate(${(1-pb)*2-1}deg)`; fade($('credB'),3.7);
+ inn($('pressB'),T(13)-.2,40,.5);
+ // B2 · recorte de 1925; 25 casillas que se tachan
+ const pd=inn($('printD'),7.35,60,.6);$('printD').style.transform+=` rotate(${(1-pd)*-2+1}deg)`; fade($('labD'),7.6); fade($('credD'),7.8);
+ fade($('boxes'),T(19)-.1,.3);
+ BX_.forEach((x,i)=>draw(x,T(20)+i*.036,.16));
+ // C · pizarra: columnas que se llenan y flechas de turno
+ inn($('board'),10.95,40,.5);
+ Cc.forEach(c=>{const p=eo(P(t,T(28)+c.g*.28+c.i*.05,T(28)+c.g*.28+c.i*.05+.3));c.el.style.opacity=p});
+ draw($('sh1'),T(33),.35); draw($('sh2'),T(33)+.18,.35); draw($('sh3'),T(33)+.36,.45);
+ // D · presión a toda la pista; el arco de triple se enciende; Taylor
+ inn($('courtD'),14.2,40,.5); fade($('credDD'),14.6);
+ const pr=es(P(t,T(35),T(37)+.4));D.forEach(c=>{const q=lerp(c.a,c.b,pr);c.el.setAttribute('transform',`translate(${q[0]} ${q[1]})`)});
+ [...$('pressAr').children].forEach((p,i)=>{draw(p,T(34)+i*.06,.45);p.style.opacity=1-P(t,T(39)+.3,T(39)+.7)});
+ $('arcT').setAttribute('opacity',.9*eo(P(t,T(39),T(39)+.3))); $('shot').setAttribute('opacity',P(t,T(39),T(39)+.3));
+ const pt=inn($('printT'),T(39)-.1,60,.55);$('printT').style.transform+=` rotate(${(1-pt)*2+1.5}deg)`; fade($('labT'),T(39)+.2); fade($('credT'),T(39)+.3); fade($('credT2'),T(39)+.3);
+ // E · re-hook: la rival entra sola hasta el aro; sello
+ const rv=P(t,T(41),T(42)+.35), rq=rv<=0?[440,470]:[440+(300-440)*es(rv),470+(905-470)*es(rv)];
+ riv.setAttribute('transform',`translate(${rq[0]} ${rq[1]})`); riv.style.opacity=eo(P(t,T(40)-.05,T(40)+.25));
+ $('lay').setAttribute('opacity',.9*P(t,T(41),T(41)+.3));
+ $('rimB').setAttribute('stroke',t>T(42)+.3?'#B9E0FF':'#F4F7FB');
+ const st=P(t,T(42)+.1,T(42)+.35);$('stamp').style.opacity=st>0?1:0;$('stamp').style.transform=`rotate(-8deg) scale(${1.25-.25*es(st)})`;
+ // F · barras de minutos que se paran antes del 20′
+ inn($('minP'),17.8,40,.5); fade($('credF'),18.1);
+ F.forEach((f,i)=>{const p=eo(P(t,T(44)+i*.05,T(44)+i*.05+.55));f.r.setAttribute('width',f.w*p)});
+ $('line20').setAttribute('stroke-width',t>T(47)?6:4); $('t20').setAttribute('font-size',t>T(47)?44:38);
+ // G · Grinnell sube al 1.º; trofeo dibujado
+ inn($('lead'),19.55,40,.5);
+ const up=es(P(t,T(50),T(51)+.5));G.forEach((r,i)=>{const pos=i==4?4-4*up:i+up;r.style.top=(100+pos*115)+'px'});
+ posN.textContent=up<1?'':'1.º'; posN.style.opacity=P(t,T(51)+.5,T(51)+.8);
+ [...$('troph').querySelectorAll('path')].forEach((p,i)=>draw(p,T(56)+i*.15,.45)); fade($('labG'),T(56)+.1); fade($('credG'),T(56)+.4);
+ // H · las quince encendidas; «MINUTOS» en ultravioleta (única vez); quieto hasta el fundido
+ H.forEach((h,i)=>h.style.opacity=eo(P(t,22.75+i*.03,22.75+i*.03+.35)));
+ fade($('pie1'),23.5,.5); fade($('pie2'),23.6,.5); fade($('pie3'),23.7,.5);
+ $('blk').style.opacity=P(t,25.7,26.2);
+};
+const BX_=[];for(let i=0;i<25;i++){const r=Math.floor(i/13),c=i%13,x=c*70+6,y=r*80+12;mk('rect',{x,y,width:58,height:58,rx:8,fill:'none',stroke:'#26335a','stroke-width':4},$('bx'));BX_.push(mk('path',{d:`M${x+12} ${y+12} L${x+46} ${y+46} M${x+46} ${y+12} L${x+12} ${y+46}`,fill:'none',stroke:'#6AA8FF','stroke-width':6,'stroke-linecap':'round',pathLength:100,'stroke-dasharray':100,'stroke-dashoffset':100},$('bx')))}
+document.fonts.ready.then(()=>Promise.all([...document.images].map(i=>i.complete?1:new Promise(r=>{i.onload=r;i.onerror=r})))).then(()=>{frame(0);window.ready=true});
+</script></body></html>
