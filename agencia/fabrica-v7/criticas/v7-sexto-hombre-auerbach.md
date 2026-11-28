@@ -1,4 +1,41 @@
-# Crítica · v7-sexto-hombre-auerbach «El sexto no es el sexto mejor» · r2
+# Crítica · v7-sexto-hombre-auerbach «El sexto no es el sexto mejor» · r3
+
+**Andrés (05) · 28/11/2026 · Nota: 86/100 → NO APROBADO por un suspenso automático (texto cortado en la portada, 0,0–2,0 s). Vuelve a montaje** solo para eso: el final ya está bien, y el audio no se toca.
+
+Material revisado: el vídeo **de la cola** (`publicar/cola.json` → `87ca6635-…mp4`, 26,5 s), descargado y analizado en el sandbox de Higgsfield (faster-whisper small con marcas por palabra, niveles por segundo y por 0,5 s, EBU R128), y `tools/reel_v7/v7-sexto-hombre-auerbach/video_mudo.mp4` (53 fotogramas, uno cada 0,5 s, a tamaño móvil; recortes a 1080 px y fotogramas cada 0,2 s en 0–4 s).
+
+## Comprobaciones duras
+- **Voz entera:** «Reda Werbach [Red Auerbach] tenía uno de sus mejores jugadores en el banquillo. Frank Ramsey no salía de titular. Cuando los titulares se cansaban, entraba él, fresco, a correr. Con Ramsey, los Celtics ganaron siete anillos. El premio al mejor suplente de la NBA lleva el nombre de su sucesor, John Havlitek [Havlicek]. El sexto hombre no es el sexto mejor.» (0,00–21,18 s). Igual que la voz del guion; los nombres se entienden al oído.
+- **Cierre nuevo:** «Dale like y síguenos para más vídeos como este» (22,46–25,68 s). En pantalla: «ProTeam · ¿Te ha servido? · Dale like y síguenos · para más vídeos como este». **No se dice «app» ni hay producto, lista ni lanzamiento.**
+- **Niveles:** −16,9 LUFS integrados, true peak −1,1 dBFS. Voz −15/−20 dB por segundo; hueco del remate 21,5–22,0 s a −34/−38 dB (solo música); cierre −17/−21 dB. Música suave bajo la voz, efectos bajos.
+- **Caption de la cola y del panel:** idénticos; acaban con «¿Te ha servido? Dale like y síguenos para más vídeos como este.» antes de fuentes y etiquetas. Sin precios, fechas, cifras de apuntados ni nombre de Biel.
+- **Correcciones de r2:** hechas. «mejor.» acaba a 21,18 s; «El sexto hombre / no es el sexto mejor.» con el 6 ultravioleta está entero y quieto de ~21,2 a 22,3 s (fotogramas 21,0 / 21,5 / 22,0 / 22,3 s), se apaga y solo entonces entra el logo (22,5 s): ya no hay solape. «Dale» entra 1,28 s después de «mejor». Mudo nuevo con outro2 en el repo.
+
+## Lo que falla: texto cortado en el primer fotograma
+- De **0,0 a 2,0 s**, el rótulo «BANQUILLO: RECREACIÓN» (reel.html, línea 44, `x="575" text-anchor="end"`) asoma por el borde derecho, a la altura del tercio inferior (y ≈ 1050 px en 1080×1920), y **la «N» final queda fuera del encuadre**. Es pequeño, pero está en la portada, la escena de gancho, y además aparece antes de que exista el banquillo (que se dibuja con «banquillo», ~2,6 s). Es «texto cortado»: suspenso automático por regla, aunque el resto sume más de 85.
+
+## Nota por apartados
+| apartado | nota | por qué |
+|---|---|---|
+| Historia real y gancho | 17/20 | Foto de Auerbach entera en el fotograma 0 y buen giro (el premio lleva el nombre del sucesor). El gancho es la decisión, no un lugar y un año. |
+| Cada cosa que dice la voz se anima en su momento | 18/20 | Todo entra con su palabra: estrella en «mejores», banco en «banquillo», pizarra en «titular», reloj y barras en «se cansaban», estela en «fresco», anillos 1→7, trofeo, placa y foto en «Havlicek», 6 en «sexto». |
+| Transiciones | 14/15 | Viajes suaves, sin destellos ni texto viejo; final quieto → apagado → fundido a outro2 limpio. |
+| Sonido | 14/15 | Voz clara y confiada, música real suave, efectos bajos; el cierre ya respira (1,28 s). |
+| Verdad y fuentes | 14/15 | Sin cambios desde r2: NESN, NYT vía Pulse, NBC Sports Boston, NBA (13/12/2022). |
+| Estética | 9/15 | Paleta, tipos y ultravioleta único, bien; trofeo con su rótulo de recreación visible. Pero texto cortado en la portada. |
+| **Total** | **86/100** | **Suspenso automático: texto cortado (0,0–2,0 s).** |
+
+## Correcciones (para Marta, 02)
+1. **Rótulo «BANQUILLO: RECREACIÓN» (0,0–2,0 s):** que no asome cortado. Lo más limpio: que tenga `opacity:0` hasta que se dibuje el banco (con «banquillo», ~2,6 s) y que, cuando se vea, quepa entero en el encuadre (muévelo a la izquierda, p. ej. bajo el banco, o con `text-anchor="start"`). Comprueba los fotogramas 0,0–4,0 s cada 0,2 s: ningún texto tocando el borde.
+2. **Solo vídeo:** re-render del mudo y remux con **el mismo audio** del r3 (`87ca6635`; no remezcles). Duración y tiempos, idénticos.
+3. **Repo y cola:** `video_mudo.mp4` nuevo; nuevo vídeo a cloudfront; `files` de `publicar/cola.json` (r3 a `files_old`; sigue en «revisión») y vídeo del panel.
+4. Después, nueva tarea «Auditar v7 v7-sexto-hombre-auerbach». Con eso arreglado, la pieza pasa (86 sin el suspenso).
+
+---
+
+## Crítica anterior (r2)
+
+### Crítica · v7-sexto-hombre-auerbach «El sexto no es el sexto mejor» · r2
 
 **Andrés (05) · 27/11/2026 · Nota: 84/100 → NO APROBADO. Vuelve a montaje** (se queda a un punto: lo que falla es el final).
 
