@@ -2,7 +2,8 @@
 Música real (Epidemic: «Musical, Loop, Soft Piano, Strings, Calm, Intro, Logo 03», encadenada consigo misma con fundidos de 1,4 s)
 + SFX reales bajos + voz (ElevenLabs, Mateo). Base: v7-comba-mikan-1942/mix.py.
 La voz acaba en 25,22 s; remate quieto; fundido a negro 26,3–26,8 s; outro2 (4 s, con su voz) desde 26,8 s; la música sigue bajando bajo el cierre.
-python3 mix.py voz.mp3 outro2.mp4 out.wav   (necesita words.json con los tiempos de wt.py)"""
+python3 mix.py voz.mp3 outro2.mp4 out.wav   (necesita words.json con los tiempos de wt.py)
+Después: ffmpeg -i out.wav -af loudnorm=I=-16.5:TP=-1.5:LRA=11 -ar 48000 -ac 2 -c:a pcm_f32le mixn.wav  (resultado: −16,8 LUFS, pico −1,4 dBFS)"""
 import sys, json, subprocess, numpy as np
 SR = 48000; OUT = 26.8; DUR = OUT + 4.0
 W = json.load(open('words.json')); T = lambda k: W[k][1]; E = lambda k: W[k][2]
