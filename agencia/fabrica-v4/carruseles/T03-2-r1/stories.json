@@ -1,0 +1,12 @@
+{
+ "numero": "Nº 00",
+ "seccion": "Tres sábados, el mismo cuarto",
+ "formato": "story",
+ "laminas": [
+  {"tipo": "pregunta", "foto": "ENTRENADOR_TENSION_FOTO_001", "pos": "50% 40%",
+   "cap": "Una pregunta", "big": "¿QUÉ CUARTO\nPERDÉIS?", "bigLines": 2,
+   "serif": "siempre el mismo,\ncada sábado.", "size": 140, "serifSize": 96, "lh": 1.0},
+  {"tipo": "encuesta", "pre": "Encuesta", "big": "PIERDES EL 3C.", "serif": "¿tocas la charla\no la semana?",
+   "foto": "EQUIPO_PINA_FOTO_001", "size": 128, "serifSize": 100}
+ ]
+}
