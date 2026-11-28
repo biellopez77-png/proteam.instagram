@@ -20,3 +20,8 @@ Música y efectos (Epidemic Sound, vía Higgsfield): «Musical, Loop, Piano, Sen
 
 Vídeo final: https://d2ol7oe51mr4n9.cloudfront.net/user_3M2z7lIyzIPYtjNHcxRWFNk6wi7/b7b6249d-cd45-4921-9e13-6607c2a54b05.mp4 (28,6 s: historia hasta 25,12 s, 0,6 s después de la voz, con fundido de 0,5 s desde 24,62 s al cierre nuevo sin app, tools/reel_v6/outro/outro2.mp4). Comprobado con whisper small: se oyen las 57 palabras y «Dale like y síguenos para más vídeos como este» (el audio de outro2 no lleva «¿Te ha servido?» hablado: va en pantalla).
 Caption: la del guion (termina con «¿Te ha servido? Dale like y síguenos para más vídeos como este.»).
+
+## r2 (28/11, Marta A)
+Voz nueva (ElevenLabs eleven_v4, Mateo, una toma; 26,4 s, 58 palabras; whisper la oye entera y el final como afirmación). Fotos: las mismas de arriba.
+Música y efectos (Epidemic Sound, vía Higgsfield): «Musical, Loop, Soft Piano, Strings, Calm, Intro, Logo 01», «… Logo 03» y «… Logo 02» encadenadas con fundidos de 1,4 s (distintas de la r1 y del último v7); «Swooshes, Whoosh, Soft, Clean»; «Sheet, Laminated, Slide On Wooden Table 04»; «Communications, Camera, Analogue Film Camera, Shutter Clicks 02»; «Objects, Writing, Marker On Paper, Writing 02»; «Objects, Book, Flip Page»; «Objects, Jewelry, Metal Medal, Set Down On Table»; «Mechanical, Click, Metal Click, Close, Variations 02»; en el cierre, «Musical, Loop, Logo, Calm, Piano 01» bajo (0,22). Mezcla: mix.py (voz −19,0, música −33,0 con ducking, sfx −37,7, pico 0,90).
+Vídeo: https://d2ol7oe51mr4n9.cloudfront.net/user_3M2z7lIyzIPYtjNHcxRWFNk6wi7/fd5880fd-4393-45ac-af54-9f9f42c048d7.mp4

@@ -66,5 +66,10 @@ Música y efectos: Epidemic Sound
 
 #entrenador #entrenadordebaloncesto #entrenadordefutbol #balonmano #hockey #MiracleOnIce #HerbBrooks #mentalidad #deportedeequipo #ProTeam
 
+## Revisión viral (r2, 28/11; voz propuesta por Andrés en la crítica, mismos hechos y fuentes)
+> Perdieron 10 a 3 contra la URSS. Trece días después, les ganaron. Madison Square Garden, febrero de 1980: universitarios de Estados Unidos contra cuatro oros olímpicos seguidos. Su entrenador, Herb Brooks, lo había dicho antes: «Si nos golean, no nos vamos a desanimar». En Lake Placid, ganaron 4 a 3... Una paliza no decide nada. Lo que haces después, sí.
+
+Escenas en el orden de esta voz: marcador 3-10 y «10 A 3» encendidos en el fotograma 0 → calendario 9 → 22 (+13 días) y marcador pequeño 4-3 en «les ganaron» → marquesina, fecha y fichas → medallas → Brooks y la cita → Lake Placid y portada con el 4-3 → el 10-3 grande que se agrieta → Jim Craig detrás de «LO QUE HACES DESPUÉS, SÍ.» (quieto 1 s), negro y cierre.
+
 ## Id
 `v7-diez-a-tres-brooks-1980`
