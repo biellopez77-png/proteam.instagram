@@ -21,3 +21,11 @@ Música y efectos (Epidemic Sound, vía Higgsfield): «Musical, Loop, Orchestra,
 
 Vídeo final: https://d2ol7oe51mr4n9.cloudfront.net/user_3M2z7lIyzIPYtjNHcxRWFNk6wi7/8e7e13db-a56a-4c16-be1b-b100618609bc.mp4 (29,2 s: 23,6 s de historia + cierre común; comprobado con whisper: se oyen las 56 palabras).
 Caption: la del guion; solo se añaden «escalera, calendario» a la línea de recreaciones.
+
+## r2 · 28/11/2026 (Marta A, tras la crítica 76/100 de Andrés)
+- Gancho: «1977.» ya está entero en el primer fotograma (sin pared vacía).
+- Final: la cámara termina de alejarse a 22,7 s (antes de «semana», que acaba a 23,28 s); remate «Lo pone lo que entrenas cada semana.» entero y quieto hasta 24,3 s; fundido a NEGRO 24,3–24,8 s; outro2 desde 24,8 s (entra con fundido de 0,3 s desde negro). Sin fundido cruzado ni texto solapado.
+- Pie de créditos final quitado de la pantalla (los créditos van en el caption).
+- Pizarra L–D: los checks van debajo de cada letra, ya no la tapan.
+- Mezcla (mix.py): misma voz y mismos efectos; Epidemic descargado de nuevo para esta versión; la placa/1–0 usa «Objects, Container, Tin Box, Metal, Small, Lid, Put On 02» (la toma «Metal Lid, Small, Down On Table» ya no sale en el catálogo); el audio de outro2 entra a 24,8 s con el sting «Musical, Loop, Logo, Calm, Piano 01» (0,22). «Dale» empieza ~25,3 s (2 s después de «semana»). −17,3 LUFS, true peak −1,4 dBTP. Whisper (small): se oyen las 56 palabras y «Dale like y síguenos para más vídeos como este».
+- Vídeo final r2: https://d2ol7oe51mr4n9.cloudfront.net/user_3M2z7lIyzIPYtjNHcxRWFNk6wi7/32c81194-18ca-436d-9729-6d2d09d04d90.mp4 (28,8 s). Anterior: 3a37f267 (en files_old de la cola).
