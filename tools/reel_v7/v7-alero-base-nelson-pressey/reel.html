@@ -1,0 +1,240 @@
+<!doctype html><html><head><meta charset="utf-8">
+<!-- v7 · «Le dio el balón a un alero» (Don Nelson y Paul Pressey). Base: v7-cuatro-porterias-wein / wooden.
+     Un solo plano sobre la pared; cada cosa que dice la voz se anima en su palabra. Gancho: el primer fotograma ya tiene
+     «EL BALÓN, FUERA DEL BASE», la pizarra, las cinco fichas y el balón junto al «1»; en «quitó» la flecha sale hacia el «3»
+     y en «dio» el balón viaja hasta el alero. Viajes 0,9 s power2.inOut en las pausas, zoom ×0,9, blur ≤ 4 px, sin destellos;
+     cada escena se apaga al empezar su viaje (nada cortado por el borde). La voz acaba en 21,70 s; remate entero y quieto
+     de ~21,8 a 22,9 s (cámara parada desde 20,3 s); fundido a negro 22,9–23,4 s; outro2 desde 23,4 s. -->
+<style>
+@font-face{font-family:S;src:url(fonts/instrument-serif-latin-400-normal.woff2)}
+@font-face{font-family:SI;src:url(fonts/instrument-serif-latin-400-italic.woff2)}
+@font-face{font-family:J;font-weight:500;src:url(fonts/plus-jakarta-sans-latin-500-normal.woff2)}
+@font-face{font-family:J;font-weight:700;src:url(fonts/plus-jakarta-sans-latin-700-normal.woff2)}
+@font-face{font-family:J;font-weight:800;src:url(fonts/plus-jakarta-sans-latin-800-normal.woff2)}
+@font-face{font-family:J;font-weight:800;font-style:italic;src:url(fonts/plus-jakarta-sans-latin-800-italic.woff2)}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#02050F}
+#cam{position:absolute;left:0;top:0;width:2600px;height:6400px;transform-origin:0 0;background:url(wall2.jpg)}
+.a{position:absolute}
+.sc{position:absolute;left:0;top:0}
+.serif{font-family:S;color:#F4F7FB;white-space:nowrap;line-height:1}
+.bold{font-family:J;font-weight:800;color:#F4F7FB;white-space:nowrap;letter-spacing:-.02em;line-height:1}
+.acc{font-family:J;font-weight:800;font-style:italic;color:#6AA8FF}
+.w{display:inline-block;margin-right:.24em}
+.mat{background:#E9EEF6;padding:16px 16px 54px;border:5px solid #0b0f1a;box-shadow:0 30px 70px rgba(0,0,0,.6)}
+.mat img{display:block;width:100%}
+.mat .cap{position:absolute;left:20px;bottom:15px;font:700 19px J;color:#3b4660;letter-spacing:.08em;white-space:nowrap}
+.panel{background:#0C1323;border:1px solid #26335a;border-radius:22px;box-shadow:0 40px 90px rgba(0,0,0,.6)}
+.press{background:#E9EEF6;border-radius:6px;padding:14px 22px;box-shadow:0 20px 40px rgba(0,0,0,.5);font:800 34px J;color:#0b0f1a;letter-spacing:.06em;white-space:nowrap}
+.press small{display:block;font:700 18px J;color:#5d6888;letter-spacing:.14em;margin-bottom:6px}
+.lab{font:800 22px J;letter-spacing:.16em;color:#8f9bb8;white-space:nowrap}
+.cred{font:500 18px J;color:#7d88a6;letter-spacing:.04em;white-space:nowrap}
+.card{background:#E9EEF6;border-radius:8px;box-shadow:0 40px 80px rgba(0,0,0,.65);color:#0b0f1a}
+#grain{position:absolute;inset:0;width:1080px;height:1920px;mix-blend-mode:screen;opacity:.10;pointer-events:none;image-rendering:pixelated}
+#black{position:absolute;inset:0;background:#000;opacity:0}
+</style></head><body><div id="cam">
+
+<!-- A · GANCHO · Le quitó el balón a sus bases y se lo dio a un alero -->
+<div class="sc" id="sA">
+<div class="a bold" id="l1t" style="left:92px;top:118px;font-size:108px">EL BALÓN,</div>
+<div class="a bold" id="l1u" style="left:92px;top:240px;font-size:108px"></div>
+<div class="a panel" id="fA" style="left:90px;top:392px;width:900px;height:880px"></div>
+<div class="a bold" id="l1b" style="left:92px;top:1318px;font-size:128px"></div>
+</div>
+
+<!-- B · Don Nelson entrenaba a los Bucks a mediados de los ochenta -->
+<div class="sc" id="sB">
+<div class="a serif" id="l2a" style="left:1225px;top:140px;font-size:80px"></div>
+<div class="a serif" id="l2b" style="left:1225px;top:230px;font-size:80px"></div>
+<div class="a mat" id="mN" style="left:1230px;top:372px;width:430px;transform:rotate(-2deg)"><img src="img/nelson_g.jpg"><div class="cap">DON NELSON</div></div>
+<div class="a press" id="pN" style="left:1712px;top:392px;transform:rotate(2deg)"><small>ENTRENADOR</small>D. NELSON</div>
+<div class="a mat" id="mA" style="left:1690px;top:560px;width:460px;transform:rotate(3deg)"><img src="img/arena_g.jpg"><div class="cap" style="font-size:16px">EL PABELLÓN · MILWAUKEE, 2005</div></div>
+<div class="a bold" id="l2c" style="left:1225px;top:1085px;font-size:110px"></div>
+<div class="a bold" id="l2d" style="left:1225px;top:1210px;font-size:110px"></div>
+<div class="a cred" id="credB" style="left:1228px;top:1370px">Fotos: BrokenSphere (2009) · Sulfur (2005) · CC BY-SA 3.0</div>
+</div>
+
+<!-- C · Paul Pressey medía casi dos metros -->
+<div class="sc" id="sC">
+<div class="a serif" id="l3a" style="left:100px;top:2040px;font-size:80px"></div>
+<div class="a mat" id="mP" style="left:100px;top:2172px;width:500px;transform:rotate(-2deg)"><img src="img/pressey_g.jpg"><div class="cap">PAUL PRESSEY</div></div>
+<div class="a press" id="pP" style="left:640px;top:2190px;transform:rotate(2deg)"><small>ALERO</small>P. PRESSEY</div>
+<svg class="a" id="ruler" width="260" height="620" viewBox="0 0 260 620" style="left:690px;top:2330px;overflow:visible"></svg>
+<div class="a bold" id="l3b" style="left:100px;top:2960px;font-size:170px"></div>
+<div class="a cred" id="credC" style="left:104px;top:3170px">Foto: Larodman1 (2016) · CC BY-SA 4.0</div>
+</div>
+
+<!-- D · y ahora subía el balón. Sus bases, libres, anotaban -->
+<div class="sc" id="sD">
+<div class="a bold" id="l4a" style="left:1225px;top:2040px;font-size:96px"></div>
+<div class="a panel" id="fD" style="left:1250px;top:2200px;width:900px;height:1000px"></div>
+<div class="a bold" id="l4b" style="left:1225px;top:3250px;font-size:110px"></div>
+</div>
+
+<!-- E · RE-HOOK · ¿Y Pressey? Pasó de tres asistencias por partido a casi siete -->
+<div class="sc" id="sE">
+<div class="a bold" id="l5a" style="left:0;width:1080px;text-align:center;top:3950px;font-size:124px"></div>
+<div class="a mat" id="mH" style="left:90px;top:4140px;width:560px;transform:rotate(-2deg)"><img src="img/hoja_g.jpg">
+  <div class="a" id="hl" style="left:76px;top:86px;width:104px;height:27px;border:3px solid #636DFF;background:rgba(99,109,255,.22);border-radius:4px;opacity:0"></div>
+  <div class="cap" style="font-size:17px">HOJA DE ANOTACIÓN REAL · 1986</div></div>
+<div class="a card" id="cnt" style="left:615px;top:4330px;width:390px;height:500px;transform:rotate(2deg)">
+  <div class="a lab" style="left:30px;top:30px;color:#5d6888;font-size:16px">ASISTENCIAS POR PARTIDO</div>
+  <div class="a" id="num" style="left:0;width:390px;text-align:center;top:90px;font:800 150px J;letter-spacing:-.03em;white-space:nowrap">3,1</div>
+  <div class="a" id="yrs" style="left:0;width:390px;text-align:center;top:262px;font:700 22px J;color:#3b4660;letter-spacing:.08em;white-space:nowrap">1983-84</div>
+  <svg class="a" id="tally" width="330" height="140" viewBox="0 0 330 140" style="left:30px;top:320px"></svg>
+</div>
+<div class="a cred" id="credE" style="left:96px;top:4960px">Hoja: NBA · dominio público</div>
+</div>
+
+<!-- F · Después lo hicieron Pippen y Giannis... / G · REMATE · El base es una función, no una altura -->
+<div class="sc" id="sF">
+<div class="a serif" id="l6a" style="left:1225px;top:3960px;font-size:80px"></div>
+<div class="a mat" id="mPi" style="left:1232px;top:4110px;width:360px;transform:rotate(-3deg)"><img src="img/pippen_g.jpg"><div class="cap" style="font-size:17px">SCOTTIE PIPPEN · 1995</div></div>
+<img class="a" id="gI" src="img/giannis_g.png" style="left:1690px;top:4060px;width:480px;filter:drop-shadow(0 30px 40px rgba(0,0,0,.6))">
+<div class="a press" id="pG" style="left:1700px;top:4560px;transform:rotate(2deg);font-size:30px"><small>2018</small>G. ANTETOKOUNMPO</div>
+<svg class="a" id="arr" width="300" height="200" viewBox="0 0 300 200" style="left:1450px;top:4500px;overflow:visible"></svg>
+<div class="a bold" id="l6b" style="left:1225px;top:4730px;font-size:84px"></div>
+<div class="a cred" id="credF" style="left:1228px;top:4860px">Fotos: Steve Lipofsky · CC BY-SA 3.0 · Keith Allison · CC BY-SA 2.0</div>
+</div>
+<div class="sc" id="sG">
+<div class="a panel" id="fG" style="left:1250px;top:3990px;width:900px;height:560px"></div>
+<div class="a serif" id="l7a" style="left:1225px;top:4640px;font-size:100px"></div>
+<div class="a bold" id="l7b" style="left:1225px;top:4760px;font-size:176px"></div>
+<div class="a serif" id="l7c" style="left:1225px;top:4970px;font-size:100px"></div>
+</div>
+
+</div>
+<canvas id="grain" width="360" height="640"></canvas>
+<div id="black"></div>
+<script src="gsap.min.js"></script>
+<script src="words.js"></script>
+<script>
+const $=i=>document.getElementById(i), cl=x=>Math.min(1,Math.max(0,x)), P=(t,a,b)=>cl((t-a)/(b-a)), eo=x=>1-Math.pow(1-x,3), es=x=>x*x*(3-2*x), lerp=(a,b,k)=>a+(b-a)*k;
+const W=window.WORDS, T=k=>W[k][1], E=k=>W[k][2], OUT=22.9;
+const L=[];
+function line(id,ks,acc=[],txt={}){const el=$(id);for(const k of ks){const s=document.createElement('span');s.className='w'+(acc.includes(k)?' acc':'');s.textContent=txt[k]!==undefined?txt[k]:W[k][0];el.appendChild(s);L.push([s,T(k),id])}}
+line('l1u',[1,5,6],[],{1:'FUERA',5:'DEL',6:'BASE'}); line('l1b',[11,13],[13],{11:'AL',13:'ALERO'});
+line('l2a',[14,15,16]); line('l2b',[17,18,19]);
+line('l2c',[19],[],{19:'MILWAUKEE'}); line('l2d',[21,24],[24],{21:'AÑOS',24:'80'});
+line('l3a',[25,26,27]); line('l3b',[29],[],{29:'1,96 m'});
+line('l4a',[33,34,35],[],{33:'SUBÍA',34:'EL',35:'BALÓN'}); line('l4b',[37,38],[38],{37:'BASES',38:'LIBRES'});
+line('l5a',[40,41],[],{40:'¿Y',41:'PRESSEY?'});
+line('l6a',[51,52,53]); line('l6b',[54,55,56],[],{54:'PIPPEN',55:'·',56:'GIANNIS'});
+line('l7a',[57,58,59,60]); line('l7b',[61],[],{61:'FUNCIÓN,'}); line('l7c',[62,63,64],[],{64:'altura.'});
+for(const s of $('l7b').children)s.style.color='#8B5CF6';
+// ----- cámara: un solo plano -----
+const cam={cx:540,cy:960,z:1.0}, tl=gsap.timeline({paused:true});
+const fly=(t,cx,cy,z,d=.9)=>{tl.to(cam,{cx,cy,duration:d,ease:'power2.inOut'},t);tl.to(cam,{keyframes:[{z:z*0.9,duration:d*.5,ease:'sine.out'},{z,duration:d*.5,ease:'sine.inOut'}]},t)};
+const FL=[2.92,6.28,8.76,12.62,16.80];
+tl.set(cam,{cx:540,cy:960,z:1.0},0).to(cam,{z:1.03,cy:950,duration:2.9,ease:'sine.out'},0);
+fly(FL[0],1700,950,1.0); tl.to(cam,{z:1.03,cy:960,duration:2.4,ease:'sine.inOut'},FL[0]+.9);
+fly(FL[1],540,2880,1.0); tl.to(cam,{z:1.03,duration:1.55,ease:'sine.out'},FL[1]+.9);
+fly(FL[2],1700,2880,1.0); tl.to(cam,{z:1.03,duration:2.95,ease:'sine.out'},FL[2]+.9);
+fly(FL[3],540,4790,1.0); tl.to(cam,{z:1.03,duration:3.25,ease:'sine.out'},FL[3]+.9);
+fly(FL[4],1700,4800,1.0); tl.to(cam,{z:1.03,cy:4790,duration:2.6,ease:'sine.inOut'},FL[4]+.9);   // quieta desde 20,3 s
+// ----- dibujos -----
+const NS='http://www.w3.org/2000/svg', mk=(tag,at,par)=>{const e=document.createElementNS(NS,tag);for(const k in at)e.setAttribute(k,at[k]);par.appendChild(e);return e};
+const labIn=(host,txt,x,y)=>{const lb=document.createElement('div');lb.className='a lab';lb.style.cssText=`left:${x}px;top:${y}px;font-size:17px;color:#5d6888`;lb.textContent=txt;host.appendChild(lb);return lb};
+// media pista en planta (vertical): línea de fondo arriba, aro, zona, tiro libre, triple y medio campo abajo
+function court(host,w,h,y1){const svg=mk('svg',{width:w,height:h,viewBox:`0 0 ${w} ${h}`,style:'position:absolute;left:0;top:0;overflow:visible'},host);
+ const x0=70,x1=w-70,y0=60,cx=w/2,st={fill:'none',stroke:'#B9E0FF','stroke-width':4,opacity:.75};
+ mk('path',Object.assign({d:`M${x0} ${y1} V${y0} H${x1} V${y1}`},st),svg);
+ if(y1<h-40){mk('path',Object.assign({d:`M${x0} ${y1} H${x1}`},st),svg);mk('path',Object.assign({d:`M${cx-80} ${y1} A80 80 0 0 1 ${cx+80} ${y1}`},st),svg)}
+ mk('rect',Object.assign({x:cx-120,y:y0,width:240,height:280},st),svg);
+ mk('path',Object.assign({d:`M${cx-90} ${y0+280} A90 90 0 0 0 ${cx+90} ${y0+280}`},st),svg);
+ mk('path',Object.assign({d:`M${x0+40} ${y0} V${y0+120} A340 340 0 0 0 ${x1-40} ${y0+120} V${y0}`},st),svg);
+ mk('path',{d:`M${cx-45} ${y0+30} H${cx+45}`,stroke:'#E9EEF6','stroke-width':6},svg);
+ const hoop=mk('circle',{cx,cy:y0+58,r:22,fill:'none',stroke:'#E9EEF6','stroke-width':5},svg);
+ return {svg,hoop,cx,y0}}
+function tok(svg,x,y,n){const g=mk('g',{transform:`translate(${x} ${y})`},svg);
+ const c=mk('circle',{r:34,fill:'#E9EEF6',stroke:'#8f9bb8','stroke-width':6},g);
+ const tx=mk('text',{y:13,'text-anchor':'middle','font-family':'J','font-weight':800,'font-size':38,fill:'#0b0f1a'},g);tx.textContent=n;
+ return {g,c,tx,x,y}}
+const blue=(k,on)=>{k.c.setAttribute('fill',on?'#636DFF':'#E9EEF6');k.c.setAttribute('stroke',on?'#B9E0FF':'#8f9bb8');k.tx.setAttribute('fill',on?'#F4F7FB':'#0b0f1a');k.g.style.filter=on?'drop-shadow(0 0 12px rgba(106,168,255,.75))':'none'};
+const mv=(k,x,y,s=1)=>k.g.setAttribute('transform',`translate(${x} ${y}) scale(${s})`);
+function ball(svg,x,y,r=20){const g=mk('g',{transform:`translate(${x} ${y})`},svg);
+ mk('circle',{r,fill:'#E07A2E',stroke:'#0b0f1a','stroke-width':3},g);
+ mk('path',{d:`M${-r} 0 H${r} M0 ${-r} V${r}`,stroke:'#0b0f1a','stroke-width':2.5,fill:'none'},g);
+ mk('path',{d:`M${-r*.62} ${-r*.78} Q0 0 ${-r*.62} ${r*.78} M${r*.62} ${-r*.78} Q0 0 ${r*.62} ${r*.78}`,stroke:'#0b0f1a','stroke-width':2.5,fill:'none'},g);
+ return g}
+const arrowHead=(svg,col)=>{const h=mk('path',{d:'M-18 -12 L4 0 L-18 12',fill:'none',stroke:col,'stroke-width':7,'stroke-linecap':'round','stroke-linejoin':'round',opacity:0},svg);return h};
+function drawPath(p,head,k){const n=p.getTotalLength();p.style.strokeDasharray=n;p.style.strokeDashoffset=n*(1-k);
+ if(head){const a=p.getPointAtLength(n*k),b=p.getPointAtLength(Math.max(0,n*k-6));head.setAttribute('transform',`translate(${a.x} ${a.y}) rotate(${Math.atan2(a.y-b.y,a.x-b.x)*180/Math.PI})`);head.setAttribute('opacity',k>.05?1:0)}}
+// A · pizarra del gancho
+const CA=court($('fA'),900,880,840); labIn($('fA'),'PIZARRA · RECREACIÓN',44,845);
+const pA=mk('path',{d:'M450 660 Q690 690 700 520',fill:'none',stroke:'#6AA8FF','stroke-width':7,'stroke-linecap':'round'},CA.svg); const hA=arrowHead(CA.svg,'#6AA8FF');
+const A1=tok(CA.svg,450,720,'1'),A2=tok(CA.svg,190,540,'2'),A3=tok(CA.svg,710,470,'3'),A4=tok(CA.svg,320,250,'4'),A5=tok(CA.svg,590,250,'5');
+const bA=ball(CA.svg,498,688,22);
+// C · regla hasta 1,96 m (escala 0–2 m)
+const ru=$('ruler'); const RT=20,RB=580,RH=RB-RT;
+mk('rect',{x:40,y:RT,width:90,height:RH,fill:'#0C1323',stroke:'#B9E0FF','stroke-width':4,rx:6},ru);
+const fillR=mk('rect',{x:46,y:RB,width:78,height:0,fill:'#636DFF'},ru);
+for(let i=0;i<=20;i++){const y=RB-RH*i/20;mk('path',{d:`M40 ${y} H${i%5?62:84}`,stroke:'#B9E0FF','stroke-width':i%5?2:4},ru)}
+for(const [v,i] of [['0',0],['1 m',10],['2 m',20]]){const tt=mk('text',{x:146,y:RB-RH*i/20+8,'font-family':'J','font-weight':700,'font-size':22,fill:'#8f9bb8'},ru);tt.textContent=v}
+const mark=mk('g',{opacity:0},ru); const ym=RB-RH*.98; mk('path',{d:`M20 ${ym} H150`,stroke:'#E9EEF6','stroke-width':5},mark);
+const rl=document.createElement('div');rl.className='a lab';rl.style.cssText='left:806px;top:2932px;font-size:17px;color:#8f9bb8;opacity:0';rl.textContent='RECREACIÓN';$('sC').appendChild(rl);
+// D · pizarra: el alero sube el balón; los bases cortan sin balón
+const CD=court($('fD'),900,1000,820); labIn($('fD'),'PIZARRA · RECREACIÓN',44,965);
+const pD=mk('path',{d:'M520 930 L470 870 L540 810 L470 750 L540 690 L480 630 L500 590',fill:'none',stroke:'#6AA8FF','stroke-width':5,'stroke-linecap':'round','stroke-linejoin':'round'},CD.svg);
+const c1=mk('path',{d:'M300 600 Q150 450 150 190',fill:'none',stroke:'#E9EEF6','stroke-width':6,'stroke-linecap':'round'},CD.svg),h1=arrowHead(CD.svg,'#E9EEF6');
+const c2=mk('path',{d:'M640 640 Q790 450 760 190',fill:'none',stroke:'#E9EEF6','stroke-width':6,'stroke-linecap':'round'},CD.svg),h2=arrowHead(CD.svg,'#E9EEF6');
+const D1=tok(CD.svg,300,600,'1'),D2=tok(CD.svg,640,640,'2'),D4=tok(CD.svg,330,330,'4'),D5=tok(CD.svg,590,300,'5'),D3=tok(CD.svg,520,930,'3');
+const bD=ball(CD.svg,560,905,20);
+const plus=mk('text',{x:540,y:110,'font-family':'J','font-weight':800,'font-size':84,fill:'#6AA8FF',opacity:0},CD.svg);plus.textContent='+2';
+// E · siete marcas de lápiz (IIII tachado + II)
+const ty=$('tally'),TM=[];for(let i=0;i<7;i++){let d;if(i<4)d=`M${30+i*34} 20 L${26+i*34} 120`;else if(i==4)d='M10 100 L150 30';else d=`M${200+(i-5)*34} 20 L${196+(i-5)*34} 120`;TM.push(mk('path',{d,fill:'none',stroke:'#3b4660','stroke-width':7,'stroke-linecap':'round'},ty))}
+// F · flecha de rotulador de Pippen a Giannis
+const pF=mk('path',{d:'M20 40 Q140 160 260 60',fill:'none',stroke:'#6AA8FF','stroke-width':7,'stroke-linecap':'round'},$('arr')),hF=arrowHead($('arr'),'#6AA8FF');
+// G · vuelve la pizarra: el «3» con el balón
+const CG=court($('fG'),900,560,500); labIn($('fG'),'PIZARRA · RECREACIÓN',44,516);
+const G3=tok(CG.svg,450,420,'3'); blue(G3,true); const bG=ball(CG.svg,498,388,22);
+// grano
+const g=$('grain').getContext('2d'),gi=g.createImageData(360,640);let sd=1;const R=()=>(sd=(sd*16807)%2147483647)/2147483647;
+function camAt(t){tl.seek(t,false);return [cam.cx,cam.cy,cam.z]}
+let t=0;
+const inn=(el,t0,dy=40,d=.5,rot=0)=>{const p=eo(P(t,t0,t0+d));el.style.opacity=p;el.style.transform=`translateY(${(1-p)*dy}px) rotate(${rot}deg)`;return p};
+const off=(id,t0)=>{$(id).style.opacity=1-P(t,t0,t0+.3)};
+window.frame=function(tt){t=tt;
+ sd=1+Math.floor(t*30)*7919;const dd=gi.data;for(let i=0;i<dd.length;i+=4){const v=R()*255;dd[i]=v*.8;dd[i+1]=v*.85;dd[i+2]=v;dd[i+3]=255}g.putImageData(gi,0,0);
+ const p0=camAt(Math.max(0,t-1/30)),p1=camAt(t),sp=Math.hypot(p1[0]-p0[0],p1[1]-p0[1]);
+ $('cam').style.transform=`translate(540px,960px) scale(${p1[2]}) translate(${-p1[0]}px,${-p1[1]}px)`;
+ $('cam').style.filter=sp>14?`blur(${Math.min(4,(sp-14)/30)}px)`:'none';
+ for(const [s,t0] of L){if(t0<0.3){s.style.opacity=1;s.style.transform='none';s.style.filter='none';continue}const p=eo(P(t,t0-.04,t0+.32));s.style.opacity=p;s.style.transform=`translateX(${(1-p)*28}px)`;s.style.filter=`blur(${(1-p)*6}px)`}
+ // cada escena se apaga al empezar su viaje
+ off('sA',FL[0]); off('sB',FL[1]); off('sC',FL[2]); off('sD',FL[3]); off('sE',FL[4]);
+ // A · en «quitó» la flecha sale del «1» hacia el «3»; en «dio» el balón viaja por la flecha; en «alero» el «3» se enciende
+ drawPath(pA,hA,es(P(t,T(1),T(1)+.7)));
+ {const k=es(P(t,T(10)-.05,T(13)));const n=pA.getTotalLength(),q=pA.getPointAtLength(n*k),j=es(P(t,T(10)-.05,T(10)+.12));
+  bA.setAttribute('transform',`translate(${lerp(498,q.x+26,j)} ${lerp(688,q.y,j)}) rotate(${k*540})`)}
+ {const on=t>=T(13)-.02;blue(A3,on);mv(A3,710,470,1+.12*Math.sin(Math.PI*P(t,T(13)-.02,T(13)+.35)));A1.g.setAttribute('opacity',1-.45*P(t,T(1),T(1)+.5))}
+ // B · Nelson llega con la cámara; ficha en «Don Nelson»; el pabellón en «Bucks»; «MILWAUKEE · AÑOS 80»
+ inn($('mN'),FL[0]+.35,50,.5,-2); inn($('pN'),T(15)-.05,20,.4,2); inn($('mA'),T(19)-.1,40,.45,3); $('credB').style.opacity=P(t,4.2,4.6);
+ // C · Pressey y la regla que sube en «casi dos metros»
+ inn($('mP'),FL[1]+.35,50,.5,-2); inn($('pP'),T(26)-.05,20,.4,2);
+ {const k=es(P(t,T(27),T(30)));fillR.setAttribute('y',RB-RH*.98*k);fillR.setAttribute('height',RH*.98*k);mark.setAttribute('opacity',P(t,T(30)-.1,T(30)+.2));
+  ru.style.opacity=P(t,FL[1]+.4,FL[1]+.8);rl.style.opacity=P(t,FL[1]+.4,FL[1]+.8)} $('credC').style.opacity=P(t,7.2,7.6);
+ // D · en «subía» el «3» sube el balón por encima del medio campo (bote dibujado); los bases se encienden y cortan; «+2» en «anotaban»
+ inn($('fD'),FL[2]+.3,30,.45);
+ {const k=es(P(t,T(33),E(35)));drawPath(pD,null,k);const n=pD.getTotalLength(),q=pD.getPointAtLength(n*k);mv(D3,q.x,q.y);
+  const bb=Math.abs(Math.sin(k*Math.PI*6))*14;bD.setAttribute('transform',`translate(${q.x+40} ${q.y-25+bb})`);blue(D3,true)}
+ blue(D1,t>T(36)+.05);blue(D2,t>T(37));
+ {const k1=es(P(t,T(38)-.05,T(38)+.7)),k2=es(P(t,T(38)+.05,T(38)+.8));drawPath(c1,h1,k1);drawPath(c2,h2,k2);
+  const a=c1.getPointAtLength(c1.getTotalLength()*k1),b=c2.getPointAtLength(c2.getTotalLength()*k2);mv(D1,a.x,a.y);mv(D2,b.x,b.y)}
+ {const p=eo(P(t,T(39),T(39)+.35));plus.setAttribute('opacity',p);plus.setAttribute('transform',`translate(0 ${(1-p)*20})`);CD.hoop.setAttribute('stroke',t>T(39)?'#6AA8FF':'#E9EEF6')}
+ // E · re-hook: la hoja real; «PRESSEY» marcado en la hoja; contador 3,1 → 6,8 en «casi siete»; siete marcas
+ inn($('mH'),FL[3]+.3,50,.5,-2); $('hl').style.opacity=P(t,T(41),T(41)+.3); $('credE').style.opacity=P(t,13.8,14.2);
+ {const p=eo(P(t,T(44)-.1,T(44)+.35));$('cnt').style.opacity=p;$('cnt').style.transform=`translateY(${(1-p)*60}px) rotate(2deg)`}
+ {const k=es(P(t,T(49),E(50)));$('num').textContent=(3.1+3.7*k).toFixed(1).replace('.',',');$('num').style.color=k>=1?'#636DFF':'#0b0f1a';$('yrs').textContent=k>=1?'1983-84 → 1984-85':'1983-84'}
+ TM.forEach((m,i)=>drawPath(m,null,es(P(t,T(49)+i*.1,T(49)+i*.1+.12))));
+ // F · Pippen y Giannis entran en sus nombres; la misma flecha los une; se apartan en «El base»
+ const fo=1-P(t,T(57)-.15,T(57)+.25);
+ {const p=inn($('mPi'),T(54)-.1,40,.45,-3);$('mPi').style.opacity=p*fo}
+ {const p=eo(P(t,T(56)-.1,T(56)+.4));$('gI').style.opacity=p*fo;$('gI').style.transform=`translateY(${(1-p)*50}px)`;$('pG').style.opacity=P(t,T(56),T(56)+.3)*fo}
+ drawPath(pF,hF,es(P(t,T(55)-.05,T(56)+.2))); $('arr').style.opacity=fo;
+ $('l6a').style.opacity=fo; $('l6b').style.opacity=fo; $('credF').style.opacity=P(t,T(54)+.2,T(54)+.6)*fo;
+ // G · vuelve la pizarra con el «3» y el balón; «FUNCIÓN» en ultravioleta (única vez)
+ inn($('fG'),T(57)-.1,30,.45);
+ $('black').style.opacity=P(t,OUT,OUT+.5);
+};
+document.fonts.ready.then(()=>Promise.all([...document.images].map(i=>i.complete?1:new Promise(r=>{i.onload=r;i.onerror=r})))).then(()=>{frame(0);window.ready=true});
+</script></body></html>
