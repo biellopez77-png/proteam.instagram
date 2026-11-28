@@ -3,7 +3,7 @@ Música real (Epidemic: «Musical, Loop, Soft Piano, Strings, Calm, Intro, Logo�
 distinta de la del último v7) + SFX reales bajos + voz (ElevenLabs, Mateo). Base: tools/reel_v7/v7-salid-y-disfrutad-cruyff/mix.py.
 python3 mix.py voz.mp3 outro2.mp4 sting.mp3 out.wav   (r2: luego loudnorm −16,5 LUFS y limitador, pico ≤ −1,0 dBTP)   (necesita words.json; sting = Epidemic «Musical, Loop, Logo, Calm, Piano 01»)"""
 import sys, json, subprocess, numpy as np
-SR = 48000; OUT = 25.0; DUR = OUT + 4.0   # r2: la voz acaba en 24,04 s; remate quieto hasta 25,0; fundido a negro 25,0–25,5 y outro2.mp4 (4,0 s) desde 25,0 → «Dale» ≈ 25,3 s (1,3 s después de «defiende»)
+SR = 48000; OUT = 25.1; DUR = OUT + 4.0   # r2: la voz acaba en 24,04 s; remate quieto hasta 25,1; fundido a negro 25,1–25,6 y outro2.mp4 (4,0 s) desde 25,1 → «Dale» ≈ 25,3–25,4 s (≥ 1,3 s después de «defiende»)
 W = json.load(open('words.json')); T = lambda k: W[k][1]; E = lambda k: W[k][2]
 def ld(f, ch=2):
     r = subprocess.run(['ffmpeg', '-v', 'error', '-i', f, '-ac', str(ch), '-ar', str(SR), '-f', 'f32le', '-'], capture_output=True).stdout
