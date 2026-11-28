@@ -18,3 +18,5 @@ Efectos (Epidemic Sound): Swooshes, Whoosh, Soft, Clean · Objects, Office, Stam
 Mezcla (mix.py): voz −19 dB RMS, música −31 con ducking, efectos con ganancias 0,04–0,10; cierre: audio de outro2.mp4 desde 22,0 s.
 
 Montaje (reel.html, un solo plano sobre wall2.jpg): el primer fotograma ya tiene la ficha «GRECIA · FASES FINALES» con el «0» grande de partidos ganados (gancho); un «0» se estampa en EURO 1980 («Eurocopa») y en MUNDIAL 1994 («Mundial») y el rotulador subraya la columna. Viajes de 0,9 s a 3,75 · 7,08 · 10,28 · 13,33 · 17,38 s y bajada al remate a 18,92 s. «EQUIPO» ultravioleta (única vez); remate entero y quieto de 20,5 a 21,5 s; fundido a negro de 0,5 s y cierre común outro2 desde 22,0 s. Total 26,0 s.
+
+Vídeo final: https://d2ol7oe51mr4n9.cloudfront.net/user_3M2z7lIyzIPYtjNHcxRWFNk6wi7/ea484d22-05b9-4f9f-b291-70651111ce17.mp4
