@@ -1,10 +1,49 @@
 # Crítica · v7-contar-rivales-rangnick «¿Trece? ¿Catorce?» (historia con fotos)
 
+**Andrés (05) · 28/11/2026 · r2 · Nota: 87/100 → APROBADO. Programado para el 11/12/2026 a las 18:00.**
+
+Material revisado: el vídeo de la cola y del panel (`374ddf18-…mp4`, 25,3 s, 1080×1920, 30 fps), descargado en el sandbox de Higgsfield: 51 fotogramas cada 0,5 s a 216×384 (tamaño móvil) y fotogramas sueltos a 360×640 en 0,0 / 4,5 / 8,0 / 20,6 s; faster-whisper medium con tiempos por palabra; niveles RMS por segundo; EBU R128. También el `video_mudo.mp4` del repo (25,3 s, acaba en outro2) y el guion.
+
+## Comprobaciones duras
+- **Cierre:** outro2. «¿Te ha servido?» + «Dale like y síguenos / para más vídeos como este» en pantalla desde ~21,5 s; voz del cierre «Dale like y síguenos para más vídeos como este» 21,80–24,62 s. Sin «app», producto, lista de espera ni lanzamiento en voz, pantalla o caption.
+- **Caption (cola y panel, iguales):** acaba con «¿Te ha servido? Dale like y síguenos para más vídeos como este.» antes de fuentes, créditos y hashtags (mismo esquema que las piezas ya aprobadas). Sin precios, fechas de lanzamiento, cifras de apuntados ni el nombre de Biel.
+- **Voz entera (whisper medium):** «Ralf Ragnick juega y entrena en el club de su ciudad, el Victoria Backnang. Un amistoso contra el dínamo de Kiev de Lobanovski. En un saque de banda, se para a contar a los rivales. ¿13? ¿14? Son 11. Pero presionan el balón sin dejar respirar. No son más. Llegan todos a la vez.» = «## Voz» del guion palabra por palabra (las grafías de whisper no son de la voz). «vez» acaba en 20,40 s; «Dale» entra a 21,80 s (1,4 s de aire).
+- **Niveles:** −16,8 LUFS integrados, true peak −1,0 dBFS, LRA 3,7 LU. Voz −16,5 a −21 dB RMS por segundo; en las pausas (4 s, 11 s, 17 s, 20 s) −29,6 a −31,8 dB: música real (Epidemic) bajo la voz; efectos bajos. Silencio final en 25 s.
+- **Fotos:** las cuatro de Commons con licencia y acreditadas (pantalla y caption); Rangnick sin escudo ni patrocinador; nada sugiere que nadie apoye ProTeam.
+
+## Correcciones del r1, comprobadas
+1. Remate quieto: «A LA VEZ.» ultravioleta entero desde ~20,0 s y quieto hasta ~21,3 s con la cámara parada; luego negro y outro2 sin solape del logo con el campo. ✔
+2. Aire antes del cierre: 1,4 s entre «vez» y «Dale». ✔
+3. Viaje 4,5–5,3 s: ya no hay encuadre vacío; la foto del Dinamo entra durante el viaje y «JUEGA Y ENTRENA» se apaga antes. ✔
+4. «¿Trece? ¿Catorce?» desaparece antes de «SON» (13,5 s). ✔
+5. Gancho (opcional): no tocado (ver nota).
+6. `video_mudo.mp4` del repo nuevo, con outro2. ✔
+
+## Nota por apartados
+| apartado | nota | por qué |
+|---|---|---|
+| Historia real y gancho | 15/20 | Historia excelente y muy de entrenador, remate citable («No son más. Llegan todos a la vez.»). Pero sigue abriendo con nombre y biografía: fotograma 0 = «Ralf» + foto de Rangnick; lo raro (se para a contar rivales) llega a los 9 s. Tiene foto desde el primer fotograma, no es «Lugar, año.», pero no es un gancho de dato o decisión rara. |
+| Cada cosa que dice la voz se anima en su momento | 18/20 | JUEGA Y ENTRENA con los sellos, alfiler en Backnang, AMISTOSO, Dinamo y Lobanovski en ficha, campo con saque de banda, CONTAR con el contador 0→2→6→10, 13?/14? con fichas fantasma, 11 que se fija, PRESIONAN con el círculo, las once flechas y «A LA VEZ» entero y quieto. |
+| Transiciones | 13/15 | Viajes suaves y sin vacíos. Pegas menores: en el viaje de ~8,0 s la foto del Dinamo y Lobanovski asoman cortadas por arriba un instante; en 17,0–17,5 s el campo entra desde la izquierda con el borde fuera de cuadro (dentro de un viaje, aceptable). |
+| Sonido | 14/15 | Voz confiada y clara, música real suave, efectos bajos, cierre con aire. |
+| Verdad y fuentes | 14/15 | Todo con fuente (The Independent, GOAL, Sky Sports, Wikipedia); el año solo en el caption y con la discrepancia anotada en el guion; «Son once» y el remate van como idea, sin comillas. |
+| Estética | 13/15 | Paleta, tipografías y fotos bien; nada cortado en reposo. Pegas: a 8,0 s la ficha de Lobanovski tapa el final del crédito de la foto del Dinamo («…NATIONAAL ARCHIEF · CC»); el pie de créditos del remate es ilegible a tamaño móvil (los créditos están completos en el caption). |
+| **Total** | **87/100** | ≥ 85: aprobado. |
+
+## Para próximas piezas (no bloquea)
+- Gancho: abrir con la decisión rara («Se paró a contar a los rivales.») o un rótulo sobre el campo desde 0,0 s, y dejar el nombre para la segunda frase.
+- Que ninguna ficha pise el crédito de otra foto; pie de créditos de la última escena a ≥ 17 px o solo en el caption.
+
+---
+
+## Historial · crítica r1 (27/11/2026, 78/100)
+
+
 **Andrés (05) · 27/11/2026 · Nota: 78/100 → NO APROBADO. Vuelve a montaje.**
 
 Material revisado: el vídeo de la cola (`publicar/cola.json` → `27b74c02-…mp4`, 23,9 s, cierre outro2), descargado y analizado en el sandbox de Higgsfield (48 fotogramas cada 0,5 s a 270 px, tira de 19,0–20,6 s cada 0,2 s y fotograma a 540 px en 15,2 s; faster-whisper small con tiempos por palabra; niveles por segundo; EBU R128). También el `video_mudo.mp4` del repo (26,0 s), `mix.py`, `CREDITOS.md` y el guion. Ojo: el vídeo de la tarea (`9db5fc13`) y el `video_mudo.mp4` del repo llevan aún el cierre retirado («Estamos terminando la app»); lo que se publicaría es el de la cola, y es el que puntúo.
 
-## Comprobaciones duras
+### Comprobaciones duras
 - **Cierre:** el vídeo de la cola acaba en outro2: «¿Te ha servido?» en pantalla y la voz «Dale like y síguenos para más vídeos como este» (20,34–23,08 s). Ni «app» ni producto en la voz ni en la pantalla. Bien.
 - **Caption de la cola:** correcto, termina en «¿Te ha servido? Dale like y síguenos para más vídeos como este.» Sin enlace ni «app». **El post del panel seguía con el caption viejo** («Estamos terminando la app de ProTeam…») y con el vídeo `9db5fc13`: lo he corregido con el caption y el vídeo de la cola.
 - **Voz entera:** whisper oye toda la historia: «Ralph Ragnick juega y entra en el club de su ciudad, el Victoria Bucknang. Un amistoso contra el dínamo de Kiev de Lobanovsky. En un saque de banda, se para a contar a los rivales. 13, 14, son 11. Pero presionan el balón sin dejar respirar. No son más, llegan todos a la vez.» («entra» por «entrena», como ya anotó Marta; whisper medium oye «entrena».)
@@ -12,10 +51,10 @@ Material revisado: el vídeo de la cola (`publicar/cola.json` → `27b74c02-…m
 - **Fotos:** las cuatro de Commons con licencia (CC BY-SA 4.0 ×2, CC0 ×2), acreditadas; Rangnick sin escudo ni patrocinador; nada sugiere que nadie apoye ProTeam.
 - Sin precios, fechas de lanzamiento, cifras de apuntados ni el nombre de Biel.
 
-## Verdad y fuentes
+### Verdad y fuentes
 Todo con fuente en el guion: jugador-entrenador del Viktoria Backnang (The Independent, Wikipedia, Sky Sports); amistoso contra el Dinamo de Lobanovski (The Independent, GOAL, Sky Sports); contar en un saque de banda, «¿13 o 14?» (cita de Rangnick en The Independent); presión sin respiro (The Independent). «Son once» y el remate van como idea, sin comillas. El año (1983) solo en el caption, con sus fuentes (Wikipedia dice 1984: está anotado en el guion). Bien.
 
-## Nota por apartados
+### Nota por apartados
 | apartado | nota | por qué |
 |---|---|---|
 | Historia real y gancho | 16/20 | Anécdota muy buena y muy de entrenador. Pero el vídeo arranca con nombre y biografía («Ralf Rangnick juega y entrena…»): lo sorprendente (se para a contar rivales) no llega hasta los 9 s. |
@@ -26,7 +65,7 @@ Todo con fuente en el guion: jugador-entrenador del Viktoria Backnang (The Indep
 | Estética | 13/15 | Paleta, tipografías y fotos bien; campo y contador limpios y legibles a tamaño móvil. Pegas: solape del logo sobre el campo en el fundido final; en 15,0 s «SON» entra encima de «¿Catorce?» aún visible (fundido cruzado de 0,2 s). |
 | **Total** | **78/100** | Por debajo de 85. |
 
-## Correcciones (para Marta, 02)
+### Correcciones (para Marta, 02)
 1. **(Bloqueante) Remate quieto.** «A LA VEZ.» entero, encendido en ultravioleta y quieto al menos 1,0 s después de «vez» (la voz acaba en 20,10 s en el vídeo de la cola): la cámara parada desde ~19,9 s y el fundido de 0,5 s al cierre desde ~21,1 s, no antes. Que el logo ProTeam no aparezca hasta que el campo y «A LA VEZ» se hayan ido (sin solape).
 2. **(Bloqueante) Aire antes del cierre.** La voz de outro2 no puede entrar antes de ~0,6 s después de «vez». Con el punto 1, que entre con el fundido (≥ 21,1 s).
 3. **Viaje de 4,5–5,2 s.** Que no quede el encuadre vacío a 5,0 s: viaje más corto o la tarjeta AMISTOSO / la foto del Dinamo entrando durante el viaje (como en el remontaje de Phog Allen). Si «JUEGA Y ENTRENA» sale cortado por el borde en pleno viaje, que se apague antes.
