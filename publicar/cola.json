@@ -1533,7 +1533,10 @@
    "when": "2026-12-09T18:00:00+01:00"
   },
   "tiktok": {
-   "status": "pendiente"
+   "status": "programada",
+   "via": "metricool",
+   "when": "2026-12-09T18:00:00+01:00",
+   "metricoolId": "445274115"
   },
   "added": "2026-11-27T03:04:00+01:00",
   "nota": "v7 historia con fotos (final del Mundial 1954, tacos de rosca). Guion: agencia/fabrica-v7/guiones/v7-tacos-berna-1954.md (Dani A). Montaje: Marta B (02). Créditos: tools/reel_v7/v7-tacos-berna-1954/CREDITOS.md · Remontaje 27/11 (Marta A) tras la auditoría 83/100: TRES A DOS dentro del cuadro, remate quieto hasta 26,0 s, reloj sin el 2-3, marcador con «Mundial», créditos a 17 px; cierre outro2 con su audio. 30,0 s. · r3 28/11 (Marta A) tras la auditoría 86/100: fundido a NEGRO 26,0–26,5 s y outro2 desde negro a 26,5 (el logo ya no se monta sobre el remate); «Dale» a ~26,5–26,8 s; el marcador MUNDIAL 1954 entra al final del viaje (2,8 s). 30,5 s; −16,2 LUFS, −1,6 dBTP.",
@@ -1608,7 +1611,10 @@
    "when": "2026-12-10T18:00:00+01:00"
   },
   "tiktok": {
-   "status": "pendiente"
+   "status": "programada",
+   "via": "metricool",
+   "when": "2026-12-10T18:00:00+01:00",
+   "metricoolId": "445274141"
   },
   "added": "2026-11-27T04:47:00+01:00",
   "nota": "v7 historia con fotos (Phog Allen y Naismith). Guion: agencia/fabrica-v7/guiones/v7-no-se-entrena-phog-allen.md (Dani B). Montaje: Marta A (02). Remontaje 27/11 tras crítica 79/100 (remate quieto 1,05 s, sello y cita sin solapes, comilla fuera, viaje 2,6–3,2 s con foto de Allen, tarjeta apagada antes del banco, «Dean Smith» con +1,5 dB). Pendiente de nueva auditoría de Andrés.",
