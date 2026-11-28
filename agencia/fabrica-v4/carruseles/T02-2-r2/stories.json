@@ -1,0 +1,13 @@
+{
+ "numero": "Nº 00",
+ "seccion": "Dos relojes",
+ "formato": "story",
+ "laminas": [
+  {"tipo": "pregunta", "foto": "OBJETO_GUANTES_CONO_FOTO_001", "pos": "50% 50%",
+   "cap": "Una pregunta", "big": "¿CUÁNTAS\nHORAS HAY?", "bigLines": 2,
+   "serif": "entre vuestro partido\ny el primer entreno.", "size": 150, "serifSize": 96, "lh": 1.0},
+  {"tipo": "encuesta", "pre": "Encuesta", "big": "EL PRIMER\nENTRENO,",
+   "serif": "¿balón\no series?", "foto": "JUGADOR_CARRERA_FOTO_001",
+   "size": 170, "serifSize": 120, "bigLines": 2}
+ ]
+}

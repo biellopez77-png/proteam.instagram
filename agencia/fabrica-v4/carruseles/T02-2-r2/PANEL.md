@@ -1,0 +1,10 @@
+# T02-2-r2 · Carrusel y Stories — hechos, SIN subir al panel (28/11, Clara)
+- Reel de origen: «Dos relojes» (fútbol) · guion `agencia/fabrica/guiones/T02-2-r2.md` · reel `tools/reel_v4/T02-2-r2/final.mp4`.
+- PNG en `png/` (versión ligera, 128 colores, 3,6 MB): T02-2-r2-c1…c7.png, -s1.png, -s2.png. Hoja a tamaño móvil: `hoja.png` (revisada: «MAR · MIÉ · VIE» se cortaba → «3 DÍAS»; la foto de conos tenía canasta y se cambió por un entreno de fútbol con petos).
+- Subida bloqueada como en T01-3-r2 y T02-1-r2: el panel está lleno (256 MiB) y añadir media exige republicar index.html (no se toca). Posts escritos con status «pendiente de subir»: posts/T02-2-r2-carrusel (order 1121), -story1 (1122), -story2 (1123). Al subir `media/T02-2-r2-*.png`, pasar los tres a «listo».
+
+Ángulo distinto de T02-2-r1 («Nadie llega», cambia el orden): aquí, la cadena (martes duro → miércoles tarde → viernes largo) y el tercer reloj, «cuenta horas».
+Láminas: 1 MARTES sobre el entreno con petos («Fig. 1 — Domingo 11:00 · martes 19:00 (ejemplo)» · 56 h, *Y un error en medio.*) · 2 3 DÍAS: martes, series y lo más duro / miércoles, un paso tarde / viernes, de 60 a 90 min (ejemplo) · 3 ultravioleta: «Una cadena. Y no empieza el martes.» → *La empiezas tú, en el coche de vuelta.* · 4 72 H con el duelo dentro, *el tercer reloj.* (Silva et al., 2018) · 5 ANTES, BALÓN. *y después,* LO DURO. · 6 Para llevarte: *Antes de escribir el martes,* CUENTA HORAS. (partido + 72 = tercer reloj · antes, balón y ritmo suave · después, lo duro; el viernes, corto) · *entre dos relojes no cabe lo duro.* · 7 cierre «¿Te ha servido? DALE LIKE y síguenos para más contenido como este».
+Stories: «¿CUÁNTAS HORAS HAY? entre vuestro partido y el primer entreno» · encuesta «EL PRIMER ENTRENO, ¿balón o series?» (sticker a mano: «Balón» / «Series»).
+Fase 1 (PLAN.md 27/11): sin app (el CTA «Apúntalo en la app» del reel no pasa al carrusel), sin lanzamiento, sin precio, sin cifras de apuntados. Verdad: 56 h y 60/90 min son del ejemplo; no se dice que a las 72 h el cuerpo esté recuperado; el estudio es con futbolistas.
+Caption: `caption.txt`.
