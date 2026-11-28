@@ -1,0 +1,278 @@
+<!doctype html><html><head><meta charset="utf-8">
+<!-- v7 · «Dortmund y Bayern, misma casa» (Alemania en Campo Bahia, Mundial 2014: cuatro casas con clubes mezclados).
+     Un solo plano sobre una pared grande; cada cosa que dice la voz se anima en su palabra.
+     Base: tools/reel_v7/wooden/reel.html y v7-walkie-luis-enrique-2022. Transiciones: viajes 0,9 s power2.inOut,
+     zoom ×0,9 como mínimo, desenfoque ≤ 4 px, sin destellos (agencia/sistema-v7/FORMATO.md).
+     Gancho: el primer fotograma ya tiene la casa y la ficha de Großkreutz. Remate quieto desde 22,9 s; fundido a negro a 24,1 s. -->
+<style>
+@font-face{font-family:S;src:url(fonts/instrument-serif-latin-400-normal.woff2)}
+@font-face{font-family:SI;src:url(fonts/instrument-serif-latin-400-italic.woff2)}
+@font-face{font-family:J;font-weight:500;src:url(fonts/plus-jakarta-sans-latin-500-normal.woff2)}
+@font-face{font-family:J;font-weight:700;src:url(fonts/plus-jakarta-sans-latin-700-normal.woff2)}
+@font-face{font-family:J;font-weight:800;src:url(fonts/plus-jakarta-sans-latin-800-normal.woff2)}
+@font-face{font-family:J;font-weight:800;font-style:italic;src:url(fonts/plus-jakarta-sans-latin-800-italic.woff2)}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#02050F}
+#cam{position:absolute;left:0;top:0;width:2320px;height:5840px;transform-origin:0 0;background:#02050F url(wall2.jpg) 0 0/2372px 5840px no-repeat}
+.sc{position:absolute;width:1080px;height:1920px}
+.a{position:absolute}
+.serif{font-family:S;color:#F4F7FB;white-space:nowrap;line-height:1}
+.acc{font-family:J;font-weight:800;font-style:italic;color:#6AA8FF}
+.strong{font-family:J;font-weight:800;color:#F4F7FB;letter-spacing:-.02em}
+.uv{font-family:J;font-weight:800;color:#8B5CF6;letter-spacing:-.02em}
+.w{display:inline-block;margin-right:.24em}
+.c{left:0;width:1080px;text-align:center}
+.panel{background:#0C1323;border:1px solid #26335a;border-radius:18px;box-shadow:0 40px 90px rgba(0,0,0,.6)}
+.k{font:700 22px J;color:#8f9bb8;letter-spacing:.16em;white-space:nowrap}
+.rec{font:500 17px J;color:#5d6888;letter-spacing:.16em;white-space:nowrap}
+.cred{font:500 17px J,'DejaVu Sans',sans-serif;color:#5d6888;letter-spacing:.04em;line-height:1.5}
+.card{position:absolute;background:#0C1323;border:1px solid #26335a;border-radius:12px;box-shadow:0 24px 50px rgba(0,0,0,.65);overflow:hidden;text-align:center}
+.card .nm{font:800 19px J;color:#F4F7FB;letter-spacing:.08em;white-space:nowrap}
+.card .cb{font:700 15px J;color:#6AA8FF;letter-spacing:.18em;white-space:nowrap;margin-top:6px}
+.chip{position:absolute;height:44px;border-radius:22px;background:#636DFF;color:#F4F7FB;font:800 16px J;letter-spacing:.1em;line-height:44px;padding:0 16px;white-space:nowrap;box-shadow:0 12px 26px rgba(0,0,0,.5)}
+.dr{fill:none;stroke-linecap:round;stroke-linejoin:round}
+#grain{position:absolute;inset:0;width:1080px;height:1920px;mix-blend-mode:screen;opacity:.09;pointer-events:none;image-rendering:pixelated}
+</style></head><body><div id="cam">
+
+<!-- A · Un jugador del Dortmund compartió casa con dos del Bayern. Y con dos del Schalke. (540,960) -->
+<div class="sc" style="left:0;top:0">
+ <div class="a serif c" id="l0a" style="top:125px;font-size:82px"></div>
+ <div class="a serif c" id="l0b" style="top:225px;font-size:82px"></div>
+ <div class="a serif c" id="l0c" style="top:325px;font-size:82px"></div>
+ <svg class="a" id="house" style="left:90px;top:470px" width="900" height="1150" viewBox="0 0 900 1150">
+  <g class="dr" stroke="#B9E0FF" stroke-width="7">
+   <path d="M20 340 L450 50 L880 340"/>
+   <path d="M70 320 L70 1130 L830 1130 L830 320"/>
+   <path d="M690 230 L690 120 L760 120 L760 278"/>
+  </g>
+  <g class="dr" stroke="#6AA8FF" stroke-width="4" opacity=".75">
+   <rect x="130" y="390" width="250" height="300" rx="6"/><rect x="520" y="390" width="250" height="300" rx="6"/>
+   <rect x="330" y="640" width="240" height="490" rx="6"/>
+   <rect x="85" y="780" width="230" height="270" rx="6"/><rect x="585" y="780" width="230" height="270" rx="6"/>
+  </g>
+ </svg>
+ <!-- Großkreutz en la puerta -->
+ <div class="card" id="cG" style="left:410px;top:1100px;width:260px;height:450px">
+  <div style="height:325px;overflow:hidden"><img src="img/grosskreutz_g.jpg" style="width:100%;margin-top:-6px"></div>
+  <div class="nm" style="margin-top:16px">K. GROSSKREUTZ</div><div class="cb">DORTMUND</div>
+  <div class="cred" style="font-size:10px;margin-top:6px;letter-spacing:.04em">FOTO: AGÊNCIA BRASIL · CC BY 3.0 BR</div>
+ </div>
+ <!-- Bayern: Schweinsteiger (foto) y Müller (dibujada) en las ventanas de arriba -->
+ <img class="a" id="iS" src="img/schweinsteiger_g.png" style="left:150px;top:745px;height:430px;filter:drop-shadow(0 24px 30px rgba(0,0,0,.7))">
+ <div class="a k" id="tS" style="left:150px;top:1188px;font-size:15px;color:#B9E0FF">SCHWEINSTEIGER · BAYERN</div>
+ <div class="card" id="cM" style="left:620px;top:870px;width:240px;height:280px">
+  <svg width="240" height="190" viewBox="0 0 240 190"><circle cx="120" cy="78" r="40" fill="#26335a"/><path d="M40 190 Q40 128 120 128 Q200 128 200 190 Z" fill="#26335a"/></svg>
+  <div class="nm" style="margin-top:12px">MÜLLER</div><div class="cb">BAYERN</div>
+ </div>
+ <!-- Schalke: dos fichas dibujadas abajo -->
+ <div class="card" id="cH" style="left:190px;top:1268px;width:200px;height:258px">
+  <svg width="210" height="170" viewBox="0 0 210 170"><circle cx="105" cy="70" r="36" fill="#26335a"/><path d="M33 170 Q33 114 105 114 Q177 114 177 170 Z" fill="#26335a"/></svg>
+  <div class="nm" style="margin-top:12px;font-size:18px">HÖWEDES</div><div class="cb">SCHALKE</div>
+ </div>
+ <div class="card" id="cD" style="left:690px;top:1268px;width:200px;height:258px">
+  <svg width="210" height="170" viewBox="0 0 210 170"><circle cx="105" cy="70" r="36" fill="#26335a"/><path d="M33 170 Q33 114 105 114 Q177 114 177 170 Z" fill="#26335a"/></svg>
+  <div class="nm" style="margin-top:12px;font-size:18px">DRAXLER</div><div class="cb">SCHALKE</div>
+ </div>
+ <div class="a serif c" id="l0d" style="top:1660px;font-size:90px"></div>
+ <div class="a rec c" id="recA" style="top:1800px">CASA Y FICHAS: RECREACIÓN · FOTOS: AGÊNCIA BRASIL (CC BY 3.0 BR), MODIFICADAS</div>
+</div>
+
+<!-- B · Mundial de Brasil, 2014: Alemania no durmió en un hotel. (1700,960) -->
+<div class="sc" style="left:1160px;top:0">
+ <div class="a k c" id="placeB" style="top:330px;font-size:24px;color:#B9E0FF">BRASIL · JUNIO 2014</div>
+ <div class="a serif c" id="l1a" style="top:420px;font-size:96px"></div>
+ <div class="a serif c" id="l1b" style="top:540px;font-size:96px"></div>
+ <div class="a serif c" id="l1c" style="top:660px;font-size:96px"></div>
+ <div class="a panel" id="key" style="left:230px;top:860px;width:620px;height:380px;padding:36px 40px;border-radius:24px">
+  <div class="k" style="font-size:18px">TARJETA DE HABITACIÓN</div>
+  <div class="strong" style="margin-top:22px;font-size:84px;letter-spacing:.06em">HOTEL</div>
+  <div style="position:absolute;left:0;right:0;top:250px;height:46px;background:#1a2440"></div>
+  <div class="rec" style="position:absolute;right:20px;bottom:12px;font-size:13px">RECREACIÓN</div>
+ </div>
+ <svg class="a" id="stamp" style="left:600px;top:760px" width="300" height="300" viewBox="0 0 300 300">
+  <g transform="rotate(-14 150 150)"><circle cx="150" cy="150" r="118" fill="none" stroke="#E5484D" stroke-opacity=".9" stroke-width="12"/><circle cx="150" cy="150" r="96" fill="none" stroke="#E5484D" stroke-opacity=".6" stroke-width="4"/>
+  <text x="150" y="190" text-anchor="middle" style="font:800 120px J;fill:#E5484D;fill-opacity:.9;letter-spacing:.02em">NO</text></g>
+ </svg>
+ <div class="a strong c" id="noH" style="top:1390px;font-size:80px">SIN HOTEL</div>
+</div>
+
+<!-- C · Catorce casas junto a la playa; solo se llegaba en ferry. (1700,2880) -->
+<div class="sc" style="left:1160px;top:1920px">
+ <div class="a serif c" id="l2a" style="top:120px;font-size:120px"></div>
+ <div class="a serif c" id="l2b" style="top:270px;font-size:90px"></div>
+ <svg class="a" id="plan" style="left:60px;top:410px" width="960" height="1040" viewBox="0 0 960 1040">
+  <rect x="0" y="0" width="960" height="1040" rx="18" fill="#0C1323" stroke="#26335a"/>
+  <path d="M0 0 L120 0 Q150 200 120 420 Q95 640 130 860 L130 1040 L0 1040 Z" fill="#16213b"/>
+  <g class="dr" stroke="#6AA8FF" stroke-width="3" opacity=".5"><path d="M30 120 q20 -14 40 0 t40 0"/><path d="M24 330 q20 -14 40 0 t40 0"/><path d="M30 540 q20 -14 40 0 t40 0"/><path d="M24 750 q20 -14 40 0 t40 0"/></g>
+  <path d="M120 0 Q150 200 120 420 Q95 640 130 860" class="dr" stroke="#B9E0FF" stroke-width="5" stroke-dasharray="2 14" opacity=".8"/>
+  <text x="60" y="980" text-anchor="middle" style="font:700 18px J;fill:#8f9bb8;letter-spacing:.2em" transform="rotate(-90 60 980)">PLAYA</text>
+  <rect x="130" y="860" width="830" height="90" fill="#16213b"/>
+  <g class="dr" stroke="#6AA8FF" stroke-width="3" opacity=".5"><path d="M260 905 q20 -12 40 0 t40 0"/><path d="M560 905 q20 -12 40 0 t40 0"/><path d="M820 905 q20 -12 40 0 t40 0"/></g>
+  <text x="900" y="1000" text-anchor="end" style="font:700 18px J;fill:#8f9bb8;letter-spacing:.2em">CARRETERA</text>
+  <path d="M130 1010 L960 1010" class="dr" stroke="#5d6888" stroke-width="6"/>
+  <text x="900" y="845" text-anchor="end" style="font:700 18px J;fill:#8f9bb8;letter-spacing:.2em">RÍO</text>
+  <g id="center"><rect x="490" y="370" width="140" height="110" rx="10" fill="#26335a" stroke="#B9E0FF" stroke-width="4"/><rect x="510" y="500" width="100" height="50" rx="8" fill="#636DFF" opacity=".8"/></g>
+  <g id="houses"></g>
+  <path id="route" d="M720 1000 L720 830" class="dr" stroke="#F4F7FB" stroke-width="4" stroke-dasharray="3 14" opacity="0"/>
+  <g id="ferry"><rect x="-55" y="-26" width="110" height="52" rx="8" fill="#0C1323" stroke="#B9E0FF" stroke-width="5"/><rect x="-35" y="-12" width="30" height="24" rx="4" fill="#6AA8FF"/><rect x="5" y="-12" width="30" height="24" rx="4" fill="#6AA8FF"/></g>
+  <text x="150" y="1034" style="font:500 13px J;fill:#5d6888;letter-spacing:.16em">PLANO: RECREACIÓN</text>
+ </svg>
+ <div class="a panel" id="cnt" style="left:770px;top:440px;width:220px;padding:14px 20px;border-radius:12px;text-align:center">
+  <div class="k" style="font-size:14px">CASAS</div><div id="cntN" class="strong" style="font-size:64px;line-height:1.1">0</div>
+ </div>
+ <div class="a serif c" id="l2c" style="top:1500px;font-size:90px"></div>
+ <div class="a serif c" id="l2d" style="top:1610px;font-size:90px"></div>
+</div>
+
+<!-- D · Pero los grupos no los hizo el seleccionador. (540,2880) -->
+<div class="sc" style="left:0;top:1920px">
+ <div class="a serif c" id="l3a" style="top:170px;font-size:100px"></div>
+ <div class="a serif c" id="l3b" style="top:290px;font-size:100px"></div>
+ <div class="a c" id="l3c" style="top:410px;font-size:92px;white-space:nowrap;line-height:1"></div>
+ <svg class="a" id="chair" style="left:70px;top:640px" width="440" height="700" viewBox="0 0 440 700">
+  <g class="dr" stroke="#B9E0FF" stroke-width="9">
+   <path d="M90 60 L90 400 L360 400"/><path d="M90 400 L90 640 M360 400 L360 640"/><path d="M60 400 L390 400"/>
+   <path d="M90 60 Q90 30 120 30 L130 30"/>
+  </g>
+  <g transform="translate(250 345)"><path d="M-70 50 Q-70 -20 0 -20 Q70 -20 70 50 Z" fill="#26335a" stroke="#6AA8FF" stroke-width="5"/><path d="M60 50 L130 50 Q130 64 110 64 L-70 64 L-70 50" fill="#26335a" stroke="#6AA8FF" stroke-width="5"/></g>
+ </svg>
+ <div class="a panel" id="list" style="left:520px;top:630px;width:480px;height:720px;padding:34px 36px">
+  <div class="k" style="font-size:18px">HABITACIONES</div>
+  <div id="rows"></div>
+  <svg class="a" style="left:20px;top:110px" width="440" height="590" viewBox="0 0 440 590"><path id="lx1" class="dr" d="M30 30 L410 560" stroke="#E5484D" stroke-opacity=".85" stroke-width="14" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/><path id="lx2" class="dr" d="M410 30 L30 560" stroke="#E5484D" stroke-opacity=".85" stroke-width="14" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/></svg>
+ </div>
+ <div class="a rec c" id="recD" style="top:1420px">BANQUILLO Y LISTA: RECREACIÓN</div>
+</div>
+
+<!-- E · Los hicieron cuatro veteranos, mezclando clubes. (1700,4800) -->
+<div class="sc" id="scE" style="left:1160px;top:3840px">
+ <div class="a serif c" id="l4a" style="top:150px;font-size:100px"></div>
+ <div class="a c" id="l4b" style="top:270px;font-size:96px;white-space:nowrap;line-height:1"></div>
+ <svg class="a" id="row4" style="left:60px;top:470px" width="960" height="620" viewBox="0 0 960 620"></svg>
+ <div class="a k c" id="spr" style="top:430px;font-size:16px">CONSEJO DE JUGADORES</div>
+ <svg class="a" id="dotsv" style="left:60px;top:470px" width="960" height="1000" viewBox="0 0 960 1000"></svg>
+ <div class="a serif c" id="l4c" style="top:1520px;font-size:100px"></div>
+ <div class="a rec c" id="recE" style="top:1660px">CASAS Y PUNTOS: RECREACIÓN · UN PUNTO, UN JUGADOR</div>
+</div>
+
+<!-- F · Alemania ganó el Mundial. Coincidir en un vestuario... no es convivir. (540,4500 → 540,4880) -->
+<div class="sc" style="left:0;top:3840px">
+ <div class="a serif c" id="l5a" style="top:110px;font-size:100px"></div>
+ <div class="a c" id="l5b" style="top:225px;font-size:100px;white-space:nowrap;line-height:1"></div>
+ <div class="a" id="cover" style="left:90px;top:380px;width:900px;background:#E9EEF6;border:6px solid #0b0f1a;box-shadow:0 30px 70px rgba(0,0,0,.6)">
+  <div style="height:96px;background:#636DFF;color:#F4F7FB;font:800 52px J;letter-spacing:.16em;text-align:center;line-height:96px">CAMPEONES</div>
+  <img src="img/champions_g.jpg" style="display:block;width:100%">
+  <div style="padding:14px 20px 16px;display:flex;justify-content:space-between;align-items:baseline">
+   <div style="font:800 22px J;color:#0b0f1a;letter-spacing:.12em">MARACANÁ · 13/7/2014</div>
+   <div style="font:500 12px J;color:#5d6888;letter-spacing:.06em">FOTO: DANILO BORGES / PORTAL DA COPA · CC BY 3.0 (MOD.)</div>
+  </div>
+ </div>
+ <div class="a panel" id="score" style="left:190px;top:1020px;width:700px;padding:18px 30px;display:flex;justify-content:space-around;align-items:center">
+  <div style="text-align:center"><div class="k" style="font-size:14px">SEMIFINAL · BRASIL</div><div class="strong" style="font-size:66px;line-height:1.15">7-1</div></div>
+  <div style="width:2px;height:80px;background:#26335a"></div>
+  <div style="text-align:center"><div class="k" style="font-size:14px">FINAL · ARGENTINA</div><div class="strong" style="font-size:66px;line-height:1.15">1-0</div></div>
+ </div>
+ <div class="a serif c" id="l6a" style="top:1230px;font-size:110px"></div>
+ <div class="a serif c" id="l6b" style="top:1360px;font-size:90px"></div>
+ <div class="a serif c" id="l6c" style="top:1500px;font-size:96px"></div>
+ <div class="a c" id="l6d" style="top:1610px;font-size:150px;white-space:nowrap;line-height:1"></div>
+ <div class="a cred c" id="credF" style="top:1810px;font-size:17px;opacity:0;left:40px;width:1000px">Fotos: Danilo Borges/Portal da Copa (CC BY 3.0) y Agência Brasil/Marcello Casal Jr (CC BY 3.0 BR), modificadas, vía Wikimedia Commons.<br>Casas, ferry y fichas: recreación.</div>
+</div>
+
+</div>
+<canvas id="grain" width="360" height="640"></canvas>
+<script src="gsap.min.js"></script>
+<script src="words.js"></script>
+<script>
+const $=i=>document.getElementById(i), cl=x=>Math.min(1,Math.max(0,x)), P=(t,a,b)=>cl((t-a)/(b-a)), eo=x=>1-Math.pow(1-x,3), es=x=>x*x*(3-2*x);
+const W=window.WORDS, T=k=>W[k][1], E=k=>W[k][2];
+const PUN={9:'.',14:'.',17:',',18:':',24:'.',30:';',35:'.',43:'.',47:',',49:'.',53:'.',57:'...',60:'.'};
+const DISP={3:'DORTMUND',9:'BAYERN',10:'Y',14:'SCHALKE',24:'HOTEL',35:'FERRY',36:'Pero',43:'SELECCIONADOR',47:'VETERANOS',53:'MUNDIAL',60:'CONVIVIR'};
+const L=[];
+function line(id,ks,acc=[],cls='acc'){const el=$(id);for(const k of ks){const s=document.createElement('span');s.className='w'+(acc.includes(k)?' '+cls:'');s.textContent=(DISP[k]||W[k][0])+(PUN[k]||'');el.appendChild(s);L.push([s,T(k)])}}
+line('l0a',[0,1,2,3],[3]); line('l0b',[4,5]); line('l0c',[6,7,8,9],[9]); line('l0d',[10,11,12,13,14],[14]);
+line('l1a',[15,16,17,18]); line('l1b',[19,20,21]); line('l1c',[22,23,24],[24]);
+line('l2a',[25,26],[25],'strong'); line('l2b',[27,28,29,30]); line('l2c',[31,32,33]); line('l2d',[34,35],[35]);
+line('l3a',[36,37,38]); line('l3b',[39,40,41,42]); line('l3c',[43],[43],'strong');
+line('l4a',[44,45]); line('l4b',[46,47],[47]); line('l4c',[48,49]);
+line('l5a',[50,51]); line('l5b',[52,53],[53]);
+line('l6a',[54]); line('l6b',[55,56,57]); line('l6c',[58,59]); line('l6d',[60],[60],'uv');
+$('l3c').querySelector('.w').style.marginRight='0'; $('l6d').querySelector('.w').style.marginRight='0';
+['l4b','l5b'].forEach(i=>$(i).querySelector('.w').classList.add('serif'));
+// ----- cámara: un solo plano -----
+const cam={cx:540,cy:960,z:1.0}, tl=gsap.timeline({paused:true});
+const fly=(t,cx,cy,z,d=.9)=>{tl.to(cam,{cx,cy,duration:d,ease:'power2.inOut'},t);tl.to(cam,{keyframes:[{z:z*0.9,duration:d*.5,ease:'sine.out'},{z,duration:d*.5,ease:'sine.inOut'}]},t)};
+tl.set(cam,{cx:540,cy:940,z:1.04},0).to(cam,{z:1.0,cy:960,duration:1.6,ease:'sine.out'},0).to(cam,{z:1.02,duration:2.8,ease:'sine.out'},1.6);
+fly(4.45,1700,960,1.0); tl.to(cam,{z:1.03,duration:3.6,ease:'sine.out'},5.35);
+fly(9.15,1700,2880,1.0); tl.to(cam,{z:1.02,duration:2.7,ease:'sine.out'},10.05);
+fly(12.85,540,2880,1.0); tl.to(cam,{z:1.05,cy:2900,duration:1.6,ease:'sine.out'},13.75);
+fly(15.4,1700,4800,1.0); tl.to(cam,{z:1.02,duration:1.9,ease:'sine.out'},16.3);
+fly(18.25,540,4500,1.0); tl.to(cam,{z:1.02,duration:.8,ease:'sine.out'},19.15);
+tl.to(cam,{cy:4880,z:1.0,duration:.9,ease:'power2.inOut'},20.05);
+tl.to(cam,{z:.985,duration:1.7,ease:'sine.out'},20.95);
+function camAt(t){tl.seek(Math.min(t,22.65),false);return [cam.cx,cam.cy,cam.z]}
+// ----- elementos dibujados -----
+const NS='http://www.w3.org/2000/svg', mk=(tag,at,par)=>{const e=document.createElementNS(NS,tag);for(const k in at)e.setAttribute(k,at[k]);par.appendChild(e);return e};
+// C · 14 casas en anillo alrededor del edificio central
+const HS=[];for(let i=0;i<14;i++){const a=-Math.PI/2+i*2*Math.PI/14,x=560+300*Math.cos(a),y=450+300*Math.sin(a);const g=mk('g',{opacity:0},$('houses'));
+ mk('path',{d:`M${x-30} ${y-6} L${x} ${y-32} L${x+30} ${y-6} L${x+30} ${y+28} L${x-30} ${y+28} Z`,fill:'#0C1323',stroke:'#6AA8FF','stroke-width':4,'stroke-linejoin':'round'},g);HS.push(g)}
+// D · lista de habitaciones en blanco
+for(let i=0;i<4;i++){const r=document.createElement('div');r.style.cssText='margin-top:44px;font:700 24px J;color:#8f9bb8;letter-spacing:.14em;white-space:nowrap';r.innerHTML=`CASA ${i+1}<div style="margin-top:20px;height:3px;background:#26335a"></div><div style="margin-top:28px;height:3px;background:#26335a;width:70%"></div>`;$('rows').appendChild(r)}
+// E · cuatro casas en fila con su veterano; puntos de colores por club que se barajan
+const NAMES=['LAHM','SCHWEINSTEIGER','KLOSE','MERTESACKER'], HX=[120,360,600,840], H4=[], CH=[];
+HX.forEach((x,i)=>{const g=mk('g',{opacity:0},$('row4'));mk('path',{d:`M${x-100} 260 L${x} 150 L${x+100} 260 L${x+100} 560 L${x-100} 560 Z`,fill:'#0C1323',stroke:'#B9E0FF','stroke-width':6,'stroke-linejoin':'round'},g);H4.push(g);
+ const c=document.createElement('div');c.className='chip';c.textContent=NAMES[i];c.style.opacity=0;$('scE').appendChild(c);CH.push([c,x+60])});
+const COL=['#636DFF','#6AA8FF','#B9E0FF','#F4F7FB'], CLUB=['BAYERN','DORTMUND','SCHALKE','OTROS'], CN=[7,6,4,6];
+const DOTS=[];let idx=0;const grpX=[150,375,600,825];
+CN.forEach((n,c)=>{for(let j=0;j<n;j++){const sx=grpX[c]-36+(j%3)*36,sy=840+Math.floor(j/3)*36;DOTS.push({c,sx,sy,el:mk('circle',{cx:sx,cy:sy,r:13,fill:COL[c],opacity:0},$('dotsv'))})}});
+CLUB.forEach((n,c)=>{const t=mk('text',{x:grpX[c],y:960,'text-anchor':'middle',style:`font:700 17px J;fill:${COL[c]};letter-spacing:.16em`,opacity:0},$('dotsv'));t.textContent=n;DOTS.push({lab:t})});
+// reparto mezclado (ilustrativo): cada casa recibe puntos de varios clubes
+const ORDER=[0,7,13,17,1,8,14,18,2,9,15,19,3,10,16,20,4,11,21,5,12,22,6];let k2=0;
+ORDER.forEach((d,n)=>{const h=n%4,s=Math.floor(n/4);const o=DOTS[d];o.h=h;o.tx=HX[h]-44+(s%3)*44;o.ty=380+Math.floor(s/3)*60+(s%3==1?0:0)});
+// grano
+const g=$('grain').getContext('2d'),gi=g.createImageData(360,640);let sd=1;const R=()=>(sd=(sd*16807)%2147483647)/2147483647;
+let t=0;
+const inn=(el,t0,dy=40,d=.5)=>{const p=eo(P(t,t0,t0+d));el.style.opacity=p;el.style.transform=`translateY(${(1-p)*dy}px)`;return p};
+const dash=(el,a,b)=>(typeof el=='string'?$(el):el).setAttribute('stroke-dashoffset',100-100*eo(P(t,a,b)));
+window.frame=function(tt){t=tt;
+ sd=1+Math.floor(t*30)*7919;const dd=gi.data;for(let i=0;i<dd.length;i+=4){const v=R()*255;dd[i]=v*.8;dd[i+1]=v*.85;dd[i+2]=v;dd[i+3]=255}g.putImageData(gi,0,0);
+ const p0=camAt(Math.max(0,t-1/30)),p1=camAt(t),sp=Math.hypot(p1[0]-p0[0],p1[1]-p0[1]);
+ $('cam').style.transform=`translate(540px,960px) scale(${p1[2]}) translate(${-p1[0]}px,${-p1[1]}px)`;
+ $('cam').style.filter=sp>40?`blur(${Math.min(4,(sp-40)/30)}px)`:'none';
+ for(const [s,t0] of L){const p=eo(P(t,t0-.04,t0+.32));s.style.opacity=p;s.style.transform=`translateX(${(1-p)*28}px)`;s.style.filter=`blur(${(1-p)*6}px)`}
+ // A · la casa y Großkreutz ya están en el primer fotograma; Bayern entra por las ventanas; Schalke cae abajo
+ const pg=eo(P(t,0,.5));$('cG').style.transform=`translateY(${(1-pg)*18}px) rotate(${-1.5+(1-pg)*-1.5}deg)`;
+ const ps=P(t,T(9)-.12,T(9)+.4);$('iS').style.opacity=cl(ps*2);$('iS').style.transform=`translateY(${(1-eo(ps))*60}px) scale(${.94+.06*eo(ps)})`;$('tS').style.opacity=P(t,T(9)+.2,T(9)+.5);
+ const pm=P(t,T(9)+.05,T(9)+.5);$('cM').style.opacity=cl(pm*2);$('cM').style.transform=`translateY(${(1-eo(pm))*-50}px) rotate(${2-(1-eo(pm))*4}deg)`;
+ [['cH',T(12)],['cD',T(14)]].forEach(([id,t0],i)=>{const p=P(t,t0-.1,t0+.3);$(id).style.opacity=cl(p*2.5);$(id).style.transform=`translateY(${(1-eo(p))*-90}px) rotate(${(i?1:-1)*(2+(1-eo(p))*5)}deg)`});
+ $('recA').style.opacity=P(t,1.0,1.5)*.9;
+ // B · rótulo de lugar; tarjeta de hotel; sello «NO»
+ $('placeB').style.opacity=P(t,T(15)-.1,T(15)+.3);
+ const pk=P(t,5.05,5.6);$('key').style.opacity=cl(pk*2);$('key').style.transform=`translateY(${(1-eo(pk))*-80}px) rotate(${-4+(1-eo(pk))*-5}deg)`;
+ const st=P(t,T(24)-.05,T(24)+.2);$('stamp').style.opacity=st>0?cl(st*3):0;$('stamp').style.transform=`scale(${1.35-.35*eo(st)})`;
+ inn($('noH'),E(24)-.05,30,.4);
+ // C · contador de casas, las casas aparecen una a una; ferry cruza el río
+ inn($('plan'),9.75,30,.45);inn($('cnt'),9.9,20,.4);
+ HS.forEach((h,i)=>{const t0=T(25)+i*.06,p=eo(P(t,t0,t0+.2));h.setAttribute('opacity',p);h.setAttribute('transform',`translate(0 ${(1-p)*-14})`)});
+ $('cntN').textContent=Math.min(14,Math.max(0,Math.floor(P(t,T(25),T(25)+14*.06)*14+ (t>=T(25)?1:0)))) ;
+ $('route').setAttribute('opacity',P(t,T(35)-.15,T(35)+.15)*.8);
+ const fp=es(P(t,T(35)-.05,E(35)+.6));$('ferry').setAttribute('transform',`translate(720 ${1000-fp*170})`);$('ferry').setAttribute('opacity',P(t,10.6,11.0));
+ // D · re-hook: banquillo vacío con la gorra; lista de habitaciones tachada
+ inn($('chair'),13.55,40,.5);inn($('list'),13.7,40,.5);
+ dash('lx1',T(43)-.05,T(43)+.25);dash('lx2',T(43)+.2,T(43)+.5);
+ $('recD').style.opacity=P(t,14.2,14.6)*.9;
+ // E · cuatro casas; un veterano encima de cada una; puntos por club que se reparten mezclados
+ H4.forEach((h,i)=>{const p=eo(P(t,16.0+i*.08,16.4+i*.08));h.setAttribute('opacity',p);h.setAttribute('transform',`translate(0 ${(1-p)*30})`)});
+ $('spr').style.opacity=P(t,T(46),T(46)+.3);
+ CH.forEach(([c,x],i)=>{const t0=T(46)+.05+i*.2,p=eo(P(t,t0,t0+.3));c.style.opacity=p;c.style.left=(x-c.offsetWidth/2)+'px';c.style.top=(560-(1-p)*40)+'px'});
+ for(const o of DOTS){if(o.lab){o.lab.setAttribute('opacity',P(t,16.5,16.9)*(1-P(t,T(48)+.6,T(48)+1.0)));continue}
+  const ap=P(t,16.45+o.c*.08,16.75+o.c*.08);const t0=T(48)-.05+(ORDER.indexOf(DOTS.indexOf(o)))*.025,m=es(P(t,t0,t0+.45));
+  o.el.setAttribute('opacity',ap);o.el.setAttribute('cx',o.sx+(o.tx-o.sx)*m);o.el.setAttribute('cy',o.sy+(o.ty-o.sy)*m-Math.sin(m*Math.PI)*60)}
+ $('recE').style.opacity=P(t,16.6,17.0)*.9;
+ // F · portada de campeones y marcador; remate con la portada atenuada
+ const pc=P(t,18.85,19.4);$('cover').style.opacity=cl(pc*2)*(1-.6*P(t,20.2,21.0));$('cover').style.transform=`translateY(${(1-eo(pc))*50}px) rotate(${-1+(1-eo(pc))*-2}deg)`;
+ const sc=inn($('score'),T(53)-.1,30,.4);$('score').style.opacity=sc*(1-.6*P(t,20.2,21.0));
+ $('credF').style.opacity=P(t,21.0,21.4)*.95;
+};
+document.fonts.ready.then(()=>Promise.all([...document.images].map(i=>i.complete?1:new Promise(r=>{i.onload=r;i.onerror=r})))).then(()=>{frame(0);window.ready=true});
+</script></body></html>
