@@ -1823,7 +1823,7 @@
   "id": "v7-cuarenta-y-cuatro-roux",
   "kind": "reel",
   "files": [
-   "https://d2ol7oe51mr4n9.cloudfront.net/user_3M2z7lIyzIPYtjNHcxRWFNk6wi7/1565e42c-a41b-4d42-a955-941559021796.mp4"
+   "https://d2ol7oe51mr4n9.cloudfront.net/user_3M2z7lIyzIPYtjNHcxRWFNk6wi7/0da2e422-500e-4ae2-9d51-1b0d25cf0d44.mp4"
   ],
   "caption": "Cogió al equipo en Regional. Lo dejó 44 años después, con una Liga y cuatro Copas.\n\nGuy Roux llegó al Auxerre en 1961 como entrenador-jugador, con el club en el fútbol regional. Lo subió a Primera en 1980, abrió un centro de formación del que salieron jugadores como Eric Cantona y en 1996 ganó la Liga y la Copa de Francia. Se fue del banquillo en 2005 (UEFA.com; Wikipedia; Inside Futbol).\n\n¿Qué estás construyendo tú en tu club que se vea dentro de diez años?\n\n¿Te ha servido? Dale like y síguenos para más vídeos como este.\n\nFuentes: UEFA.com, Wikipedia, Inside Futbol. Fotos (modificadas): Vicente Auxerre, BaDaJi_ArPiLuRe y Georges Biard (CC BY-SA 3.0) y Nicolas Richoffer (CC BY-SA 4.0), vía Wikimedia Commons. Escalera, pizarra, trofeos, calendario y banquillo: dibujo.\nMúsica y efectos: Epidemic Sound\n\n#entrenador #entrenadordefutbol #futbolbase #fútbol #cantera #historiadelfutbol #GuyRoux #Auxerre #ProTeam",
   "state": "revisión",
@@ -1834,7 +1834,11 @@
    "status": "pendiente"
   },
   "added": "2026-11-27T10:45:00+01:00",
-  "nota": "v7 historia con fotos (Guy Roux y el Auxerre: de Regional a campeón, 44 años en el banquillo). Guion: agencia/fabrica-v7/guiones/v7-cuarenta-y-cuatro-roux.md (Dani A). Montaje: Marta A (02). 26,4 s (22,4 s de historia + cierre sin app, outro2). Foto de Cantona cambiada por la de Georges Biard (Cannes 2009): la del guion era una foto de una revista. Créditos: tools/reel_v7/v7-cuarenta-y-cuatro-roux/CREDITOS.md."
+  "nota": "v7 historia con fotos (Guy Roux y el Auxerre: de Regional a campeón, 44 años en el banquillo). Guion: agencia/fabrica-v7/guiones/v7-cuarenta-y-cuatro-roux.md (Dani A). Montaje: Marta A (02). 26,4 s (22,4 s de historia + cierre sin app, outro2). Foto de Cantona cambiada por la de Georges Biard (Cannes 2009): la del guion era una foto de una revista. Créditos: tools/reel_v7/v7-cuarenta-y-cuatro-roux/CREDITOS.md. · r2 (28/11, Marta A, crítica de Andrés 78/100): gancho desde el fotograma 0 (estadio, ficha AUXERRE · 1961, escalera con la ficha en REGIONAL y sello «44 AÑOS · MISMO BANQUILLO» que se apaga antes de «Lo cogió»), tercio inferior lleno, «44 AÑOS» en «Cuarenta», créditos a 21 px, remate quieto hasta 22,9 s y fundido a negro de 0,5 s antes de outro2. 27,4 s. Voz, música, fotos, datos y caption sin cambios.",
+  "files_old": [
+   "https://d2ol7oe51mr4n9.cloudfront.net/user_3M2z7lIyzIPYtjNHcxRWFNk6wi7/1565e42c-a41b-4d42-a955-941559021796.mp4"
+  ],
+  "cierre": "outro2"
  },
  {
   "id": "v7-diez-a-tres-brooks-1980",
