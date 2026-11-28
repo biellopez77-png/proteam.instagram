@@ -1,0 +1,28 @@
+{
+ "numero": "Nº 00",
+ "seccion": "Leer el partido",
+ "formato": "story",
+ "laminas": [
+  {
+   "tipo": "pregunta",
+   "foto": "ENTRENADOR_BANDA_PENSATIVO_FOTO_001",
+   "pos": "50% 50%",
+   "cap": "En el descanso",
+   "big": "¿QUÉ HAS\nOLVIDADO?",
+   "bigLines": 2,
+   "serif": "del primer tiempo de hoy.",
+   "size": 170,
+   "serifSize": 96,
+   "lh": 1.0
+  },
+  {
+   "tipo": "encuesta",
+   "pre": "En el descanso",
+   "big": "TÚ:",
+   "serif": "¿tiras de memoria\no de hoja?",
+   "foto": "INSTALACION_VESTUARIO_FOTO_001",
+   "size": 220,
+   "serifSize": 100
+  }
+ ]
+}

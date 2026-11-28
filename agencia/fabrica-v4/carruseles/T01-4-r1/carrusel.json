@@ -1,0 +1,95 @@
+{
+ "numero": "Nº 00",
+ "seccion": "Leer el partido",
+ "formato": "carrusel",
+ "laminas": [
+  {
+   "tipo": "palabra",
+   "palabra": "SEIS",
+   "foto": "ENTRENADOR_BANDA_PENSATIVO_FOTO_001",
+   "fig": "Fig. 1 — Un primer tiempo",
+   "hora": "Descanso · 45:00",
+   "serif": "de cada diez.",
+   "size": 330,
+   "left": 30
+  },
+  {
+   "tipo": "portada",
+   "l1": "OCHO",
+   "serif": "entrenadores",
+   "l2": "TITULADOS.",
+   "fotos": [
+    "ENTRENADOR_BANDA_CONCENTRADO_FOTO_001",
+    "STAFF_TRABAJO_FOTO_007",
+    "ENTRENADOR_BANDA_FOTO_009"
+   ],
+   "cap": "Vieron 45′ en vídeo y respondieron preguntas.\nDe media, acertaron seis de cada diez.",
+   "size": 150
+  },
+  {
+   "tipo": "dentro",
+   "palabra": "CUATRO",
+   "foto": "ENTRENADOR_BANDA_FOTO_011",
+   "serif": "se te escapan.",
+   "cap": "Recuerdas el gol.\nNo la banda que lo venía avisando.",
+   "size": 230,
+   "top": 400,
+   "serifSize": 130
+  },
+  {
+   "tipo": "frase",
+   "foto": "INSTALACION_VESTUARIO_FOTO_001",
+   "pos": "50% 50%",
+   "pre": "Quince minutos de vestuario",
+   "serif": "con medio\npartido.",
+   "uv": true,
+   "size": 150,
+   "uvW": 560
+  },
+  {
+   "tipo": "figuras",
+   "letras": "6 CASILLAS",
+   "figs": [
+    {
+     "foto": "ENTRENADOR_BANDA_FOTO_005",
+     "lab": "Fig. 2 — Pérdidas,\ncentros y tiros."
+    },
+    {
+     "foto": "JUGADOR_CORNER_FOTO_001",
+     "lab": "Fig. 3 — Balón parado."
+    },
+    {
+     "foto": "OBJETO_GUANTES_CONO_FOTO_001",
+     "lab": "Fig. 4 — Portero\ny una banda."
+    }
+   ],
+   "size": 170,
+   "left": 40
+  },
+  {
+   "tipo": "final",
+   "cap": "Para llevarte",
+   "serif": "No recuerdas:",
+   "big": "CUENTAS.",
+   "bigLines": 1,
+   "size": 170,
+   "lista": [
+    "Una hoja con seis casillas.",
+    "Una raya cada vez que pasa.",
+    "En el descanso, la más llena."
+   ],
+   "firma": "seis de diez no es un plan."
+  },
+  {
+   "tipo": "cierre",
+   "foto": "STAFF_TRABAJO_FOTO_007",
+   "pos": "50% 50%",
+   "pre": "Fin de la página",
+   "serif": "¿Te ha servido?",
+   "big": "DALE LIKE",
+   "resto": "y síguenos para más contenido\ncomo este.",
+   "size": 200,
+   "serifSize": 120
+  }
+ ]
+}

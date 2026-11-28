@@ -49,3 +49,4 @@ Las láminas son páginas de la misma revista que el reel: mismos colores, fuent
    - `encuesta` {pre, big, serif, foto?, size} — Story: titular arriba y hueco limpio para pegar el sticker a mano.
 3. Render: `python3 tools/reel_v5/motor/lamina.py <ID> --hoja` → `png/<ID>-c1.png…`, `-s1.png`, `-s2.png` y `hoja.png` (todas a 360 px de ancho, tamaño móvil). Mira la hoja antes de subir: palabras que no se leen, texto que se pisa, folio tapado por la foto.
 4. Máximo 5–8 palabras grandes por lámina. Mismas reglas de texto y de licencias que el reel.
+5. Fuentes de las láminas: `npm i` en `tools/reel_v5` antes de renderizar (si no, Plus Jakarta da 404 y sale otra letra). El panel admite 256 MiB por versión; desde el 28/11 está lleno (deploy 422) y no acepta láminas nuevas hasta que se libere espacio (Clara, T01-4-r1).
