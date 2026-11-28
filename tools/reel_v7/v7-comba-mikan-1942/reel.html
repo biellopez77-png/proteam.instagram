@@ -1,0 +1,258 @@
+<!doctype html><html><head><meta charset="utf-8">
+<!-- v7 · «La comba de Mikan» (Ray Meyer y George Mikan, DePaul, 1942). Base: tools/reel_v7/wooden/reel.html (vía v7-salto-inicial-mcguire-1957).
+     Un solo plano sobre la pared; cada cosa que dice la voz se anima en su palabra. Gancho primero (Revisión viral 27/11):
+     el primer fotograma ya tiene la silueta del chico de más de dos metros junto a su regla y el balón en la mano.
+     Viajes 0,9 s power2.inOut, zoom ×0,9, blur ≤ 4 px, sin destellos. Remate quieto desde ~24,3 s; fundido a negro 25,3–25,8 s; outro2 desde 25,8 s. -->
+<style>
+@font-face{font-family:S;src:url(fonts/instrument-serif-latin-400-normal.woff2)}
+@font-face{font-family:SI;src:url(fonts/instrument-serif-latin-400-italic.woff2)}
+@font-face{font-family:J;font-weight:500;src:url(fonts/plus-jakarta-sans-latin-500-normal.woff2)}
+@font-face{font-family:J;font-weight:700;src:url(fonts/plus-jakarta-sans-latin-700-normal.woff2)}
+@font-face{font-family:J;font-weight:800;src:url(fonts/plus-jakarta-sans-latin-800-normal.woff2)}
+@font-face{font-family:J;font-weight:800;font-style:italic;src:url(fonts/plus-jakarta-sans-latin-800-italic.woff2)}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#02050F}
+#cam{position:absolute;left:0;top:0;width:2600px;height:6400px;transform-origin:0 0;background:url(wall2.jpg)}
+.a{position:absolute}
+.serif{font-family:S;color:#F4F7FB;white-space:nowrap;line-height:1}
+.bold{font-family:J;font-weight:800;color:#F4F7FB;white-space:nowrap;letter-spacing:-.02em;line-height:1}
+.acc{font-family:J;font-weight:800;font-style:italic;color:#6AA8FF}
+.uv{color:#8B5CF6}
+.w{display:inline-block;margin-right:.24em}
+.mat{background:#E9EEF6;padding:18px 18px 56px;border:5px solid #0b0f1a;box-shadow:0 30px 70px rgba(0,0,0,.6)}
+.mat img{display:block;width:100%}
+.mat .cap{position:absolute;left:22px;bottom:16px;font:700 20px J;color:#3b4660;letter-spacing:.08em;white-space:nowrap}
+.panel{background:#0C1323;border:1px solid #26335a;border-radius:22px;box-shadow:0 40px 90px rgba(0,0,0,.6)}
+.press{background:#E9EEF6;border-radius:6px;padding:14px 22px;box-shadow:0 20px 40px rgba(0,0,0,.5);font:800 30px J;color:#0b0f1a;letter-spacing:.06em;white-space:nowrap}
+.press small{display:block;font:700 18px J;color:#5d6888;letter-spacing:.14em;margin-bottom:6px}
+.lab{font:800 22px J;letter-spacing:.16em;color:#8f9bb8;white-space:nowrap}
+.cred{font:500 17px J;color:#5d6888;letter-spacing:.04em;white-space:nowrap}
+#grain{position:absolute;inset:0;width:1080px;height:1920px;mix-blend-mode:screen;opacity:.10;pointer-events:none;image-rendering:pixelated}
+</style></head><body>
+<svg width="0" height="0" style="position:absolute"><defs>
+ <!-- silueta dibujada de un chico muy alto (recreación): cabeza arriba en y=598, suelo en y=1380 -->
+ <symbol id="fig" viewBox="0 0 1080 1920" width="1080" height="1920">
+  <g stroke="#24345f" stroke-linecap="round" fill="none">
+   <path d="M425 1000 L414 1366" stroke-width="44"/><path d="M497 1000 L508 1366" stroke-width="44"/>
+   <path d="M402 735 L338 1004" stroke-width="32"/><path d="M520 735 L584 1004" stroke-width="32"/>
+   <path d="M396 1368 H436 M486 1368 H530" stroke-width="26"/>
+  </g>
+  <rect x="384" y="712" width="154" height="310" rx="48" fill="#24345f"/>
+  <rect x="446" y="690" width="30" height="40" fill="#24345f"/>
+  <ellipse cx="461" cy="648" rx="44" ry="52" fill="#24345f"/>
+ </symbol>
+</defs></svg>
+<div id="cam">
+
+<!-- 1 · GANCHO · Era torpe, medía más de dos metros y llevaba gafas gruesas. Su entrenador lo puso a saltar a la comba. -->
+<div class="a serif" id="l1a" style="left:0;width:1080px;text-align:center;top:150px;font-size:76px"></div>
+<div class="a bold" id="l1b" style="left:0;width:1080px;text-align:center;top:232px;font-size:150px"></div>
+<div class="a serif" id="l1e" style="left:0;width:1080px;text-align:center;top:150px;font-size:62px"></div>
+<div class="a bold" id="l1f" style="left:0;width:1080px;text-align:center;top:228px;font-size:150px"></div>
+<svg class="a" id="s1" style="left:0;top:0" width="1080" height="1920" viewBox="0 0 1080 1920">
+ <path d="M60 1380 H1020" stroke="#3a4870" stroke-width="4"/>
+ <path id="ropeB" d="" fill="none" stroke="#B9E0FF" stroke-width="6" stroke-linecap="round" opacity="0"/>
+ <g id="figA"><use href="#fig"/>
+  <g id="glass" fill="none" stroke="#F4F7FB" stroke-width="8" stroke-linecap="round">
+   <path id="gl1" d="M428 646 a17 15 0 1 0 34 0 a17 15 0 1 0 -34 0" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/>
+   <path id="gl2" d="M466 646 a17 15 0 1 0 34 0 a17 15 0 1 0 -34 0" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/>
+   <path id="gl3" d="M462 644 h4" opacity="0"/>
+  </g>
+ </g>
+ <path id="ropeF" d="" fill="none" stroke="#B9E0FF" stroke-width="6" stroke-linecap="round" opacity="0"/>
+ <rect x="740" y="553" width="54" height="827" rx="10" fill="none" stroke="#3a4870" stroke-width="3" stroke-dasharray="10 10"/>
+ <rect id="bar" x="740" y="1380" width="54" height="0" rx="10" fill="#6AA8FF"/>
+ <g stroke="#8f9bb8" stroke-width="3"><path d="M724 1004 H740"/><path d="M724 628 H740"/></g>
+ <g font-family="J" font-weight="800" font-size="30" fill="#8f9bb8"><text x="810" y="1014">1 m</text><text id="t2m" x="810" y="638">2 m</text></g>
+ <line id="hl" x1="520" y1="598" x2="740" y2="598" stroke="#6AA8FF" stroke-width="3" stroke-dasharray="8 8" opacity="0"/>
+ <text id="tplus" x="810" y="590" font-family="J" font-weight="800" font-size="54" fill="#6AA8FF" opacity="0">+2 m</text>
+ <circle id="ball1" cx="602" cy="1000" r="26" fill="#E9EEF6" stroke="#02050F" stroke-width="4"/>
+ <text x="70" y="1420" font-family="J" font-weight="700" font-size="18" fill="#5d6888" letter-spacing="2">SILUETA, REGLA Y COMBA · RECREACIÓN</text>
+</svg>
+<div class="a serif" id="l1c" style="left:0;width:1080px;text-align:center;top:1440px;font-size:62px"></div>
+<div class="a serif" id="l1d" style="left:0;width:1080px;text-align:center;top:1516px;font-size:62px"></div>
+
+<!-- 2 · DePaul, 1942. -->
+<div class="a serif" id="l2a" style="left:1160px;width:1080px;text-align:center;top:220px;font-size:80px"></div>
+<div class="a bold" id="l2b" style="left:1160px;width:1080px;text-align:center;top:310px;font-size:210px"></div>
+<div class="a mat" id="dep" style="left:1250px;top:610px;width:900px"><img src="img/depaul_g.jpg"><div class="cap">DEPAUL · CAMPEONES DEL NIT, 1945</div></div>
+<div class="a press" id="pdep" style="left:1330px;top:1340px;transform:rotate(-2deg)"><small>LLEGA EN 1942</small>DEPAUL · CHICAGO</div>
+<div class="a cred" id="credB" style="left:1160px;width:1080px;text-align:center;top:1480px">Foto: DePaul 1945, autor desconocido · CC0, vía Wikimedia Commons</div>
+
+<!-- 3 · Ray Meyer también le hace bailar. -->
+<div class="a bold" id="l3a" style="left:0;width:1080px;text-align:center;top:2130px;font-size:104px"></div>
+<div class="a serif" id="l3b" style="left:0;width:1080px;text-align:center;top:2250px;font-size:76px"></div>
+<div class="a bold" id="l3c" style="left:0;width:1080px;text-align:center;top:2330px;font-size:130px"></div>
+<div class="a mat" id="mey" style="left:80px;top:2520px;width:560px;transform:rotate(-2deg)"><img src="img/meyer_g.jpg"><div class="cap">RAY MEYER</div></div>
+<div class="a press" id="pmey" style="left:100px;top:3060px"><small>ENTRENADOR · DEPAUL</small>RAY MEYER</div>
+<svg class="a" id="steps" style="left:670px;top:2520px" width="340" height="540" viewBox="0 0 340 540">
+ <rect x="2" y="2" width="336" height="536" rx="22" fill="#0C1323" stroke="#26335a" stroke-width="3"/>
+ <g id="feet"></g>
+ <text x="22" y="518" font-family="J" font-weight="700" font-size="16" fill="#5d6888" letter-spacing="2">PASOS DE BAILE · RECREACIÓN</text>
+</svg>
+<div class="a cred" id="credC" style="left:100px;top:3180px">Foto: DePaul University · dominio público, vía Wikimedia Commons</div>
+
+<!-- 4 · Y cada día, bajo el aro: derecha, izquierda, derecha, izquierda. -->
+<div class="a serif" id="l4a" style="left:1160px;width:1080px;text-align:center;top:2110px;font-size:78px"></div>
+<svg class="a" id="hoop" style="left:1200px;top:2250px" width="1000" height="860" viewBox="0 0 1000 860">
+ <rect x="2" y="2" width="996" height="856" rx="24" fill="#0C1323" stroke="#26335a" stroke-width="3"/>
+ <rect x="290" y="80" width="420" height="260" rx="8" fill="none" stroke="#8f9bb8" stroke-width="6"/>
+ <rect x="420" y="190" width="160" height="120" fill="none" stroke="#8f9bb8" stroke-width="5"/>
+ <path d="M500 340 V362" stroke="#8f9bb8" stroke-width="6"/>
+ <g id="net" fill="none" stroke="#B9E0FF" stroke-width="3" opacity=".8">
+  <path d="M410 372 L430 470 M440 375 L452 475 M470 377 L476 478 M500 378 L500 480 M530 377 L524 478 M560 375 L548 475 M590 372 L570 470"/>
+  <path d="M420 420 Q500 440 580 420 M430 465 Q500 485 570 465"/>
+ </g>
+ <ellipse cx="500" cy="372" rx="96" ry="18" fill="none" stroke="#6AA8FF" stroke-width="7"/>
+ <path d="M60 800 H940" stroke="#3a4870" stroke-width="4"/>
+ <g font-family="J" font-weight="800" text-anchor="middle">
+  <circle id="cI" cx="140" cy="660" r="58" fill="none" stroke="#26335a" stroke-width="5"/><text id="tI" x="140" y="680" font-size="56" fill="#5d6888">I</text>
+  <circle id="cD" cx="860" cy="660" r="58" fill="none" stroke="#26335a" stroke-width="5"/><text id="tD" x="860" y="680" font-size="56" fill="#5d6888">D</text>
+ </g>
+ <path id="arcI" d="M140 590 Q230 220 470 352" fill="none" stroke="#6AA8FF" stroke-width="5" stroke-dasharray="4 14" stroke-linecap="round" opacity="0"/>
+ <path id="arcD" d="M860 590 Q770 220 530 352" fill="none" stroke="#6AA8FF" stroke-width="5" stroke-dasharray="4 14" stroke-linecap="round" opacity="0"/>
+ <circle id="ball4" cx="860" cy="590" r="34" fill="#E9EEF6" stroke="#02050F" stroke-width="4" opacity="0"/>
+ <text x="760" y="70" font-family="J" font-weight="800" font-size="24" fill="#8f9bb8" letter-spacing="3" text-anchor="end">DÍA</text>
+ <text id="day" x="940" y="76" font-family="J" font-weight="800" font-size="48" fill="#6AA8FF" text-anchor="end">1</text>
+ <text x="40" y="836" font-family="J" font-weight="700" font-size="18" fill="#5d6888" letter-spacing="2">ARO Y TABLERO · RECREACIÓN</text>
+</svg>
+<div class="a bold" id="l4b" style="left:1160px;width:1080px;text-align:center;top:3170px;font-size:72px"></div>
+<div class="a bold" id="l4c" style="left:1160px;width:1080px;text-align:center;top:3260px;font-size:72px"></div>
+
+<!-- 5 · Se llamaba George Mikan. -->
+<div class="a serif" id="l5a" style="left:0;width:1080px;text-align:center;top:3730px;font-size:80px"></div>
+<div class="a bold" id="l5b" style="left:0;width:1080px;text-align:center;top:3820px;font-size:110px"></div>
+<div class="a mat" id="mik" style="left:290px;top:3990px;width:500px"><img src="img/mikan_g.jpg"><div class="cap">MADISON SQUARE GARDEN · 1944</div></div>
+<div class="a press" id="pmik" style="left:560px;top:4880px;transform:rotate(2deg)"><small>DEPAUL · #99</small>GEORGE MIKAN</div>
+<div class="a cred" id="credE" style="left:0;width:1080px;text-align:center;top:5030px">Foto: New York World-Telegram and the Sun · dominio público, vía Wikimedia Commons</div>
+
+<!-- 6 · Ganó siete títulos en nueve temporadas. -->
+<div class="a serif" id="l6a" style="left:1160px;width:1080px;text-align:center;top:3730px;font-size:80px"></div>
+<div class="a bold" id="l6b" style="left:1160px;width:1080px;text-align:center;top:3818px;font-size:104px"></div>
+<div class="a serif" id="l6c" style="left:1160px;width:1080px;text-align:center;top:3940px;font-size:80px"></div>
+<div class="a mat" id="lak" style="left:1230px;top:4070px;width:940px"><img src="img/lakers_g.jpg"><div class="cap">MINNEAPOLIS · 1950</div></div>
+<div class="a panel" id="slots" style="left:1190px;top:4700px;width:1020px;height:330px">
+ <div class="a lab" style="left:0;width:1020px;text-align:center;top:26px">NUEVE TEMPORADAS · RECREACIÓN</div>
+ <div class="a bold" id="cnt" style="left:0;width:1020px;text-align:center;top:206px;font-size:96px;color:#6AA8FF"></div>
+</div>
+<div class="a cred" id="credF" style="left:1160px;width:1080px;text-align:center;top:5055px">Foto: Minneapolis Lakers, 1950 · dominio público, vía Wikimedia Commons</div>
+
+<!-- 7 · REMATE · El talento no se encuentra... se fabrica. -->
+<svg class="a" id="s7" style="left:80px;top:4102px" width="1080" height="1920" viewBox="0 0 1080 1920"><use id="fig7" href="#fig"/></svg>
+<div class="a mat" id="mik7" style="left:345px;top:4660px;width:390px;padding:12px 12px 12px"><img src="img/mikan_g.jpg"></div>
+<div class="a serif" id="l7a" style="left:0;width:1080px;text-align:center;top:5600px;font-size:72px"></div>
+<div class="a bold" id="l7b" style="left:0;width:1080px;text-align:center;top:5690px;font-size:130px"></div>
+<div class="a cred" id="credG" style="left:60px;width:960px;text-align:center;top:5870px;line-height:1.45;opacity:0;white-space:normal">Fotos: New York World-Telegram &amp; Sun, DePaul University y Minneapolis Lakers 1950 (dominio público); DePaul 1945 (CC0), vía Wikimedia Commons.<br>Silueta, comba, pasos, aro y casillas: recreación.</div>
+
+</div>
+<canvas id="grain" width="360" height="640"></canvas>
+<script src="gsap.min.js"></script>
+<script src="words.js"></script>
+<script>
+const $=i=>document.getElementById(i), cl=x=>Math.min(1,Math.max(0,x)), P=(t,a,b)=>cl((t-a)/(b-a)), eo=x=>1-Math.pow(1-x,3), es=x=>x*x*(3-2*x);
+const W=window.WORDS, T=k=>W[k][1], E=k=>W[k][2], OUT=25.8;
+const L=[];
+function line(id,ks,acc=[],txt={},cls='acc'){const el=$(id);for(const k of ks){const s=document.createElement('span');s.className='w'+(acc.includes(k)?' '+cls:'');s.textContent=txt[k]||W[k][0];el.appendChild(s);L.push([s,T(k)])}}
+line('l1a',[0]); line('l1b',[1],[1],{1:'TORPE,'});
+L[0][1]=-.5; L[1][1]=-.45;   // gancho: «Era TORPE,» ya está en el primer fotograma
+line('l1c',[2,3,4,5,6],[5,6]); line('l1d',[7,8,9,10],[9,10],{9:'GAFAS',10:'GRUESAS.'});
+line('l1e',[11,12,13,14,15,16,17,18]); line('l1f',[19],[19],{19:'COMBA.'});
+line('l2a',[20],[],{20:'DePaul,'}); line('l2b',[21],[21],{21:'1942.'});
+line('l3a',[22,23],[],{22:'RAY',23:'MEYER'}); line('l3b',[24,25,26]); line('l3c',[27],[27],{27:'BAILAR.'});
+line('l4a',[28,29,30,31,32,33],[],{33:'aro:'});
+line('l4b',[34,35],[34,35],{34:'DERECHA,',35:'IZQUIERDA,'}); line('l4c',[36,37],[36,37],{36:'DERECHA,',37:'IZQUIERDA.'});
+line('l5a',[38,39],[],{38:'Se'}); line('l5b',[40,41],[],{40:'GEORGE',41:'MIKAN.'});
+line('l6a',[42]); line('l6b',[43,44],[43,44],{43:'SIETE',44:'TÍTULOS'}); line('l6c',[45,46,47],[],{47:'temporadas.'});
+line('l7a',[48,49,50,51,52],[],{52:'encuentra...'}); line('l7b',[53,54],[53,54],{53:'SE',54:'FABRICA.'},'uv');
+// ----- cámara: un solo plano -----
+const cam={cx:540,cy:960,z:1.0}, tl=gsap.timeline({paused:true});
+const fly=(t,cx,cy,z,d=.9)=>{tl.to(cam,{cx,cy,duration:d,ease:'power2.inOut'},t);tl.to(cam,{keyframes:[{z:z*0.9,duration:d*.5,ease:'sine.out'},{z,duration:d*.5,ease:'sine.inOut'}]},t)};
+tl.set(cam,{cx:540,cy:960,z:1.0},0).to(cam,{z:1.04,cy:975,duration:6.2,ease:'sine.out'},0);
+fly(6.25,1700,960,1.0); tl.to(cam,{z:1.04,duration:1.8,ease:'sine.out'},7.15);
+fly(9.0,540,2900,1.0); tl.to(cam,{z:1.04,cy:2920,duration:1.6,ease:'sine.out'},9.9);
+fly(11.55,1700,2900,1.0); tl.to(cam,{z:1.03,duration:4.3,ease:'sine.out'},12.45);
+fly(16.85,540,4520,1.0); tl.to(cam,{z:1.03,duration:.8,ease:'sine.out'},17.75);
+fly(18.55,1700,4500,1.0); tl.to(cam,{z:1.03,duration:1.6,ease:'sine.out'},19.45);
+fly(21.1,540,5440,1.0); tl.to(cam,{z:1.03,duration:1.9,ease:'sine.out'},22.0);
+// ----- elementos -----
+const NS='http://www.w3.org/2000/svg', mk=(tag,at,par)=>{const e=document.createElementNS(NS,tag);for(const k in at)e.setAttribute(k,at[k]);par.appendChild(e);return e};
+// pasos de baile (recreación): seis huellas numeradas
+const FT=[[110,410,'I'],[220,370,'D'],[110,270,'I'],[220,230,'D'],[110,120,'I'],[220,90,'D']].map(([x,y,s],i)=>{const g=mk('g',{opacity:0},$('feet'));
+ mk('ellipse',{cx:x,cy:y,rx:22,ry:40,fill:'#B9E0FF',opacity:.85},g); mk('circle',{cx:x+(s=='I'?-6:6),cy:y-52,r:9,fill:'#B9E0FF',opacity:.85},g);
+ const tx=mk('text',{x:x+(s=='I'?-48:48),y:y+10,'font-family':'J','font-weight':800,'font-size':26,fill:'#6AA8FF','text-anchor':'middle'},g); tx.textContent=i+1; return g});
+// casillas de las nueve temporadas; siete fichas de título (temporadas 1–4 y 6–8)
+const SL=[], WIN=[0,1,2,3,5,6,7];
+for(let i=0;i<9;i++){const d=document.createElement('div');d.className='a';d.style.cssText=`left:${54+i*104}px;top:86px;width:92px;height:92px;border-radius:14px;border:3px solid #26335a`;$('slots').appendChild(d);
+ const c=document.createElement('div');c.className='a';c.style.cssText=`left:${54+i*104+12}px;top:98px;width:68px;height:68px;border-radius:50%;background:#6AA8FF;box-shadow:0 8px 14px rgba(0,0,0,.5);opacity:0`;
+ c.innerHTML='<svg width="68" height="68" viewBox="0 0 68 68"><path d="M22 18 H46 V30 C46 38 40 42 34 42 C28 42 22 38 22 30 Z M34 42 V50 M25 52 H43" fill="none" stroke="#02050F" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M22 22 H16 C16 30 20 32 23 32 M46 22 H52 C52 30 48 32 45 32" fill="none" stroke="#02050F" stroke-width="3"/></svg>';
+ $('slots').appendChild(c); SL.push(c)}
+// grano
+const g=$('grain').getContext('2d'),gi=g.createImageData(360,640);let sd=1;const R=()=>(sd=(sd*16807)%2147483647)/2147483647;
+function camAt(t){tl.seek(t,false);return [cam.cx,cam.cy,cam.z]}
+let t=0;
+const inn=(el,t0,dy=40,d=.5,rot=0)=>{const p=eo(P(t,t0,t0+d));el.style.opacity=p;el.style.transform=`translateY(${(1-p)*dy}px)`+(rot?` rotate(${rot}deg)`:'');return p};
+const mul=(ids,k)=>ids.forEach(id=>{const v=$(id).style.opacity;$(id).style.opacity=(v===''?1:+v)*k});
+const base=['l1a','l1b','l1c','l1d','l5a','l5b'];
+window.frame=function(tt){t=tt;
+ base.forEach(id=>{$(id).style.opacity=''});
+ sd=1+Math.floor(t*30)*7919;const dd=gi.data;for(let i=0;i<dd.length;i+=4){const v=R()*255;dd[i]=v*.8;dd[i+1]=v*.85;dd[i+2]=v;dd[i+3]=255}g.putImageData(gi,0,0);
+ const p0=camAt(Math.max(0,t-1/30)),p1=camAt(t),sp=Math.hypot(p1[0]-p0[0],p1[1]-p0[1]);
+ $('cam').style.transform=`translate(540px,960px) scale(${p1[2]}) translate(${-p1[0]}px,${-p1[1]}px)`;
+ $('cam').style.filter=sp>14?`blur(${Math.min(4,(sp-14)/30)}px)`:'none';
+ for(const [s,t0] of L){const p=eo(P(t,t0-.04,t0+.32));s.style.opacity=p;s.style.transform=`translateX(${(1-p)*28}px)`;s.style.filter=`blur(${(1-p)*6}px)`}
+ // 1 · la silueta y el balón ya están en el fotograma 0; el balón se le escapa en «torpe»
+ const u=t-.25; let bx=602,by=1000;
+ if(u>0){bx=602+400*eo(P(t,.25,1.6)); if(u<.3)by=1000+354*(u/.3)**2; else if(u<.8){const v=(u-.3)/.5;by=1354-4*130*v*(1-v)} else if(u<1.1){const v=(u-.8)/.3;by=1354-4*36*v*(1-v)} else by=1354}
+ $('ball1').setAttribute('cx',bx); $('ball1').setAttribute('cy',by); $('ball1').setAttribute('opacity',1-P(t,1.3,1.7));
+ // la regla crece hasta 2 m en «dos metros» y un poco más («más de»)
+ const h=752*es(P(t,T(2),E(6)))+30*es(P(t,E(6),E(6)+.3)); $('bar').setAttribute('y',1380-h); $('bar').setAttribute('height',h);
+ $('hl').setAttribute('opacity',.9*P(t,E(6),E(6)+.3)); $('tplus').setAttribute('opacity',P(t,E(6)-.05,E(6)+.25));
+ // gafas gruesas: se dibujan en «gafas»
+ $('gl1').setAttribute('stroke-dashoffset',100-100*eo(P(t,T(9)-.05,T(9)+.3))); $('gl2').setAttribute('stroke-dashoffset',100-100*eo(P(t,T(9)+.1,T(9)+.45)));
+ $('gl3').setAttribute('opacity',P(t,T(9)+.3,T(9)+.4)); $('glass').setAttribute('stroke-width',8+3*es(P(t,T(10),T(10)+.3)));
+ // fuera las frases del primer bloque antes de «Su entrenador»
+ const o1=1-P(t,4.0,4.3); mul(['l1a','l1b','l1c','l1d'],o1);
+ // la comba gira desde «saltar» (golpes en el suelo a 5,725 · 6,175 · 6,625 s)
+ const ph=Math.max(0,t-T(16))*2*Math.PI/.45, ro=P(t,T(16)-.12,T(16)+.05)*(1-P(t,7.0,7.3));
+ const jy=-24*Math.exp(-Math.pow(((ph%(2*Math.PI))-Math.PI),2)*1.6)*(t>T(16)?1:0);
+ $('figA').setAttribute('transform',`translate(0 ${jy})`);
+ const cy=945-835*Math.cos(ph), d=`M338 ${1004+jy} Q461 ${cy+jy} 584 ${1004+jy}`, front=Math.sin(ph)>0;
+ $('ropeF').setAttribute('d',d); $('ropeB').setAttribute('d',d); $('ropeF').setAttribute('opacity',front?ro:0); $('ropeB').setAttribute('opacity',front?0:ro*.7);
+ // 2 · DePaul, 1942: la foto del equipo y el rótulo
+ const pp=eo(P(t,6.9,7.5)); $('dep').style.opacity=pp; $('dep').style.transform=`translateY(${(1-pp)*50}px) rotate(${-1.5+(1-pp)*-3}deg)`;
+ inn($('pdep'),T(21)+.1,24,.45,-2); $('credB').style.opacity=P(t,7.6,8.0);
+ // 3 · Ray Meyer en ficha; las huellas de baile aparecen una a una en «bailar»
+ const pm=eo(P(t,9.65,10.25)); $('mey').style.opacity=pm; $('mey').style.transform=`translateY(${(1-pm)*50}px) rotate(-2deg)`;
+ inn($('pmey'),T(23)-.05,20,.4); inn($('steps'),10.0,30,.5); $('credC').style.opacity=P(t,10.4,10.8);
+ FT.forEach((f,i)=>{const q=eo(P(t,T(27)-.05+i*.08,T(27)+.2+i*.08));f.setAttribute('opacity',q)});
+ // 4 · el aro; derecha/izquierda: el balón entra por un lado y por el otro en cada palabra; contador de días que avanza
+ inn($('hoop'),12.25,30,.5);
+ $('day').textContent=1+Math.max(0,Math.floor((t-12.5)*6));
+ let bo=0,bxx=860,byy=590,sw=0; ['cI','cD'].forEach(id=>{$(id).setAttribute('stroke','#26335a')}); ['tI','tD'].forEach(id=>$(id).setAttribute('fill','#5d6888'));
+ $('arcI').setAttribute('opacity',0); $('arcD').setAttribute('opacity',0);
+ for(const k of [34,35,36,37]){const s=(k%2==0)?'D':'I', x0=s=='D'?860:140, cxp=s=='D'?770:230, x1=s=='D'?530:470;
+  if(t>=T(k)-.05&&t<T(k)+.75){const q=P(t,T(k)-.05,T(k)+.33), q2=P(t,T(k)+.33,T(k)+.6);
+   $('c'+s).setAttribute('stroke','#6AA8FF'); $('t'+s).setAttribute('fill','#6AA8FF'); $('arc'+s).setAttribute('opacity',.7*(1-q2));
+   if(q<1){const a=q;bxx=(1-a)*(1-a)*x0+2*(1-a)*a*cxp+a*a*x1;byy=(1-a)*(1-a)*590+2*(1-a)*a*220+a*a*352} else {bxx=x1+(500-x1)*q2;byy=352+200*q2}
+   bo=1-P(t,T(k)+.55,T(k)+.7); sw=Math.sin(q2*Math.PI)}}
+ $('ball4').setAttribute('cx',bxx); $('ball4').setAttribute('cy',byy); $('ball4').setAttribute('opacity',bo*P(t,13.0,13.2));
+ $('net').setAttribute('transform',`translate(500 372) scale(${1-.12*sw} ${1+.14*sw}) translate(-500 -372)`);
+ // 5 · George Mikan: la foto en su marco y la ficha
+ const pk=eo(P(t,17.3,17.9)); $('mik').style.opacity=pk; $('mik').style.transform=`translateY(${(1-pk)*60}px) rotate(${1.5-(1-pk)*2}deg)`;
+ inn($('pmik'),T(41)-.05,20,.4,2); $('credE').style.opacity=P(t,T(41)+.3,T(41)+.6);
+ // 6 · siete fichas que caen en sus casillas en «siete títulos»; «/ 9» en «nueve»
+ const lp=eo(P(t,18.9,19.5)); $('lak').style.opacity=.55*lp; $('lak').style.transform=`translateY(${(1-lp)*40}px)`;
+ inn($('slots'),19.0,30,.5); $('credF').style.opacity=P(t,19.6,20.0);
+ let n=0; WIN.forEach((s,i)=>{const t0=T(43)+i*.12, q=eo(P(t,t0,t0+.25)); SL[s].style.opacity=q; SL[s].style.transform=`translateY(${(1-q)*-50}px)`; if(t>=t0+.12)n++});
+ $('cnt').textContent=n?(n+(t>=T(46)?' / 9':'')):'';
+ // al viajar al remate se apagan las escenas 5 y 6 (comparten altura de pared)
+ const o5=1-P(t,21.1,21.5); mul(['l5a','l5b','mik','pmik','credE'],o5);
+ // 7 · REMATE: la silueta del principio, quieta; en «se fabrica» se convierte en Mikan; «SE FABRICA.» en ultravioleta (única vez)
+ const fx=es(P(t,T(53)-.05,T(54)+.1)); $('s7').style.opacity=(1-fx)*P(t,21.4,21.9);
+ $('mik7').style.opacity=fx; $('mik7').style.transform=`scale(${.96+.04*fx})`;
+ $('credG').style.opacity=P(t,22.2,22.6);
+ // fundido a negro antes del cierre común
+ document.body.style.opacity=1-P(t,OUT-.5,OUT);
+};
+document.fonts.ready.then(()=>Promise.all([...document.images].map(i=>i.complete?1:new Promise(r=>{i.onload=r;i.onerror=r})))).then(()=>{frame(0);window.ready=true});
+</script></body></html>
