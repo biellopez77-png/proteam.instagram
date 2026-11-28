@@ -1,0 +1,11 @@
+{
+ "numero": "Nº 00",
+ "seccion": "Planificar la semana",
+ "formato": "story",
+ "laminas": [
+  {"tipo": "pregunta", "foto": "JUGADOR_DISPUTA_FOTO_001", "pos": "50% 40%", "cap": "Dos días antes del partido",
+   "big": "¿CUÁNTO DURA\nTU VIERNES?", "bigLines": 2, "serif": "el entreno, no el día.", "size": 124, "serifSize": 96, "lh": 1.0},
+  {"tipo": "encuesta", "pre": "Tu semana", "big": "LO DURO:", "serif": "¿martes\no miércoles?",
+   "foto": "OBJETO_CONOS_EJERCICIO_FOTO_001", "size": 190, "serifSize": 110}
+ ]
+}
