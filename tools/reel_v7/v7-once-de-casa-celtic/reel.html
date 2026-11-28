@@ -1,5 +1,5 @@
 <!doctype html><html><head><meta charset="utf-8">
-<!-- v7 · Los once de casa (Celtic de Jock Stein, Lisboa 1967). Un solo plano sobre una pared grande; cada cosa que dice la voz se anima en su palabra. Base: tools/reel_v7/wooden/reel.html y v7-ubuntu-rivers-2008 -->
+<!-- v7 · r2 (28/11, Marta A): gancho delante (los once a menos de 50 km en el fotograma 0), remate quieto y fundido a negro. Los once de casa (Celtic de Jock Stein, Lisboa 1967). Un solo plano sobre una pared grande; cada cosa que dice la voz se anima en su palabra. Base: tools/reel_v7/wooden/reel.html y v7-ubuntu-rivers-2008 -->
 <style>
 @font-face{font-family:S;src:url(fonts/instrument-serif-latin-400-normal.woff2)}
 @font-face{font-family:SI;src:url(fonts/instrument-serif-latin-400-italic.woff2)}
@@ -28,12 +28,34 @@ html,body{width:1080px;height:1920px;overflow:hidden;background:#02050F}
 .plate{position:absolute;top:18px;width:120px;height:150px;border-radius:10px;background:#141d33;border:3px solid #3a4870;font:800 112px/146px J;color:#F4F7FB;text-align:center}
 #grain{position:absolute;inset:0;width:1080px;height:1920px;mix-blend-mode:screen;opacity:.09;pointer-events:none;image-rendering:pixelated}
 svg .dr{fill:none;stroke-linecap:round;stroke-linejoin:round}
+#blk{position:absolute;inset:0;width:1080px;height:1920px;background:#000;opacity:0;pointer-events:none}
 </style></head><body><div id="cam">
 
-<!-- 1 · Lisboa, 1967: postal del Estádio Nacional con matasellos -->
-<div class="a serif c" id="l0" style="left:0;width:1080px;top:470px;font-size:118px"></div>
-<div class="a mat" id="post" style="left:110px;top:670px;width:860px;opacity:0"><img src="img/jamor_g.jpg" style="display:block;width:100%"><small>ESTÁDIO NACIONAL DO JAMOR, LISBOA (FOTO ACTUAL) · TAGIDO, DOMINIO PÚBLICO</small></div>
-<svg class="a" id="pmark" style="left:690px;top:570px;opacity:0" width="300" height="300" viewBox="0 0 300 300">
+<!-- 1 · GANCHO: el mapa ya está en el fotograma 0 (los once, a menos de 50 km) -->
+<div class="a serif c" id="l5" style="left:0;width:1080px;top:200px;font-size:96px"></div>
+<div class="a serif c" id="l5b" style="left:0;width:1080px;top:320px;font-size:72px"></div>
+<div class="a panel" id="map" style="left:90px;top:450px;width:900px;height:980px;border-radius:18px;overflow:hidden">
+ <svg id="mapS" width="900" height="980" viewBox="0 0 900 980"></svg>
+ <div class="a k" id="cnt" style="right:28px;top:22px;font-size:20px;color:#8f9bb8"><span id="cntN" style="font:800 64px J;color:#F4F7FB;letter-spacing:-.02em">11</span> TITULARES</div>
+ <div class="a recl" style="left:28px;bottom:18px;font-size:14px;line-height:1.6">MAPA: RECREACIÓN<br>CHINCHETAS DE EJEMPLO, NO UBICACIÓN EXACTA</div>
+</div>
+<div class="a mat" id="park" style="left:60px;top:1320px;width:400px;padding:12px 12px 44px;opacity:0"><img src="img/park_g.jpg" style="display:block;width:100%"><small style="font-size:13px;bottom:10px">CELTIC PARK · THOMAS NUGENT, CC BY-SA 2.0</small></div>
+
+<!-- 2 · Y ganaron la Copa de Europa -->
+<div class="a serif c" id="l1" style="left:1160px;width:1080px;top:250px;font-size:88px"></div>
+<div class="a serif c" id="l1b" style="left:1160px;width:1080px;top:360px;font-size:96px"></div>
+<svg class="a" id="cup" style="left:1440px;top:520px" width="520" height="815" viewBox="0 0 300 470">
+ <path id="cupP" class="dr" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100" stroke="#B9E0FF" stroke-width="5"
+  d="M80 40 L220 40 C220 150 200 230 150 262 C100 230 80 150 80 40 Z M150 262 L150 340 M110 340 L190 340 L205 380 L95 380 Z M70 380 L230 380 L230 430 L70 430 Z"/>
+ <path id="cupH" class="dr" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100" stroke="#B9E0FF" stroke-width="5"
+  d="M82 70 C10 40 -6 170 108 214 M218 70 C290 40 306 170 192 214"/>
+</svg>
+<div class="a recl c" id="cupL" style="left:1160px;width:1080px;top:1380px;font-size:15px;opacity:0">COPA: DIBUJO</div>
+
+<!-- 3 · Lisboa, 1967: postal + Jock Stein -->
+<div class="a serif c" id="l0" style="left:0;width:1080px;top:1960px;font-size:118px"></div>
+<div class="a mat" id="post" style="left:110px;top:2150px;width:860px;opacity:0"><img src="img/jamor_g.jpg" style="display:block;width:100%"><small>ESTÁDIO NACIONAL DO JAMOR, LISBOA (FOTO ACTUAL) · TAGIDO, DOMINIO PÚBLICO</small></div>
+<svg class="a" id="pmark" style="left:730px;top:2100px;opacity:0" width="300" height="300" viewBox="0 0 300 300">
  <defs><path id="pmc" d="M150 150 m-104 0 a104 104 0 1 1 208 0 a104 104 0 1 1 -208 0"/></defs>
  <circle cx="150" cy="150" r="128" fill="none" stroke="#B9E0FF" stroke-width="5"/>
  <circle cx="150" cy="150" r="80" fill="none" stroke="#B9E0FF" stroke-width="3"/>
@@ -41,75 +63,61 @@ svg .dr{fill:none;stroke-linecap:round;stroke-linejoin:round}
  <text x="150" y="140" text-anchor="middle" font-family="J" font-weight="800" font-size="40" fill="#B9E0FF">25 MAIO</text>
  <text x="150" y="182" text-anchor="middle" font-family="J" font-weight="800" font-size="34" fill="#B9E0FF" letter-spacing="3">1967</text>
 </svg>
-<div class="a recl c" id="pmL" style="left:0;width:1080px;top:1440px;font-size:15px;opacity:0">POSTAL Y MATASELLOS: RECREACIÓN</div>
+<img class="a cut" id="stein" src="img/stein_g.png" style="left:560px;top:2560px;width:470px;opacity:0">
+<div class="a panel" id="tagS" style="left:70px;top:2860px;width:460px;height:112px;border-radius:12px;padding:18px 26px;opacity:0">
+ <div class="k" style="font-size:15px">FICHA · CELTIC, 1965-1978</div>
+ <div id="tS" style="font:800 30px J;color:#F4F7FB;margin-top:12px;white-space:nowrap;letter-spacing:.04em"></div>
+</div>
+<div class="a rec" id="steinC" style="left:70px;width:480px;top:2995px;font-size:15px;opacity:0">JOCK STEIN EN 1971 · FOTO: ANEFO /<br>NATIONAAL ARCHIEF, CC0 · POSTAL: RECREACIÓN</div>
+<div class="a serif c" id="l3x" style="left:0;width:1080px;top:3110px;font-size:80px"></div>
 
-<!-- 2 · la copa, CELTIC e INTER -->
-<div class="a serif c" id="l1" style="left:1160px;width:1080px;top:200px;font-size:84px"></div>
-<div class="a serif c" id="l1b" style="left:1160px;width:1080px;top:300px;font-size:66px"></div>
-<svg class="a" id="cup" style="left:1550px;top:410px" width="300" height="470" viewBox="0 0 300 470">
- <path id="cupP" class="dr" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100" stroke="#B9E0FF" stroke-width="6"
-  d="M80 40 L220 40 C220 150 200 230 150 262 C100 230 80 150 80 40 Z M150 262 L150 340 M110 340 L190 340 L205 380 L95 380 Z M70 380 L230 380 L230 430 L70 430 Z"/>
- <path id="cupH" class="dr" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100" stroke="#B9E0FF" stroke-width="6"
-  d="M82 70 C10 40 -6 170 108 214 M218 70 C290 40 306 170 192 214"/>
- <text x="296" y="462" text-anchor="end" font-family="J" font-weight="500" font-size="14" fill="#5d6888" letter-spacing="2">COPA: DIBUJO</text>
-</svg>
-<div class="a card" id="cC" style="left:1210px;top:640px;width:280px;height:100px;opacity:0">CELTIC</div>
-<div class="a card" id="cI" style="left:1910px;top:640px;width:280px;height:100px;opacity:0">INTER</div>
-
-<!-- 3 · marcador de chapas: 0-1, 1-1, 2-1 -->
-<div class="a panel" id="sb" style="left:1240px;top:960px;width:920px;height:420px;border-radius:18px;opacity:0">
+<!-- 4 · marcador de chapas: 0-1, 1-1, 2-1 -->
+<div class="a serif c" id="l2" style="left:0;width:1080px;top:3520px;font-size:68px"></div>
+<div class="a serif c" id="l2b" style="left:0;width:1080px;top:3615px;font-size:68px"></div>
+<div class="a panel" id="sb" style="left:80px;top:3790px;width:920px;height:440px;border-radius:18px;opacity:0">
  <div style="position:absolute;left:30px;top:22px" class="k">FINAL · 25/05/1967</div>
- <div style="position:absolute;right:30px;top:24px;font-size:13px" class="recl">MARCADOR: RECREACIÓN</div>
+ <div style="position:absolute;right:30px;top:24px;font-size:14px" class="recl">MARCADOR: RECREACIÓN</div>
  <div style="position:absolute;left:30px;top:120px;width:860px;height:190px">
   <div style="position:absolute;left:0;top:70px;font:800 44px J;color:#F4F7FB;letter-spacing:.08em">CELTIC</div>
   <div class="plate" id="dL" style="left:250px"></div>
   <div style="position:absolute;left:400px;top:50px;font:800 80px J;color:#5d6888">–</div>
   <div class="plate" id="dR" style="left:490px"></div>
-  <div style="position:absolute;left:660px;top:70px;font:800 44px J;color:#F4F7FB;letter-spacing:.08em">INTER</div>
+  <div id="inT" style="position:absolute;left:660px;top:70px;font:800 44px J;color:#F4F7FB;letter-spacing:.08em">INTER</div>
  </div>
- <div style="position:absolute;left:30px;top:330px;display:flex;align-items:center;gap:16px" id="pen"><div id="penDot" style="width:30px;height:30px;border-radius:50%;background:#26335a"></div><span class="k" id="penT" style="font-size:19px;color:#5d6888">PENALTI</span></div>
- <div style="position:absolute;right:30px;top:316px;display:flex;align-items:center;gap:14px">
+ <div style="position:absolute;left:30px;top:350px;display:flex;align-items:center;gap:16px" id="pen"><div id="penDot" style="width:30px;height:30px;border-radius:50%;background:#26335a"></div><span class="k" id="penT" style="font-size:19px;color:#5d6888">PENALTI</span></div>
+ <div style="position:absolute;right:30px;top:336px;display:flex;align-items:center;gap:14px">
   <svg width="64" height="64" viewBox="0 0 64 64"><circle cx="32" cy="32" r="27" fill="none" stroke="#26335a" stroke-width="5"/><circle id="clk" cx="32" cy="32" r="27" fill="none" stroke="#6AA8FF" stroke-width="5" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100" transform="rotate(-90 32 32)"/></svg>
   <span id="minT" style="font:800 44px J;color:#F4F7FB;width:90px">0'</span>
  </div>
 </div>
-<div class="a serif c" id="l2" style="left:1160px;width:1080px;top:1520px;font-size:70px"></div>
-<div class="a serif c" id="l2b" style="left:1160px;width:1080px;top:1620px;font-size:80px"></div>
 
-<!-- 4 · Jock Stein, primero de Gran Bretaña -->
-<div class="a serif c" id="l3" style="left:1160px;width:1080px;top:2130px;font-size:84px"></div>
-<div class="a serif c" id="l3b" style="left:1160px;width:1080px;top:2230px;font-size:72px"></div>
-<img class="a cut" id="stein" src="img/stein_g.png" style="left:1230px;top:2400px;width:640px;opacity:0">
-<div class="a panel" id="tagS" style="left:1700px;top:2900px;width:440px;height:112px;border-radius:12px;padding:18px 26px;opacity:0">
- <div class="k" style="font-size:15px">FICHA · CELTIC, 1965-1978</div>
- <div id="tS" style="font:800 30px J;color:#F4F7FB;margin-top:12px;white-space:nowrap;letter-spacing:.04em"></div>
+<!-- 5 · el primer equipo británico -->
+<div class="a serif c" id="l3" style="left:1160px;width:1080px;top:2140px;font-size:88px"></div>
+<div class="a serif c" id="l3b" style="left:1160px;width:1080px;top:2250px;font-size:76px"></div>
+<div class="a card" id="cC" style="left:1330px;top:2480px;width:520px;height:150px;font-size:62px;line-height:150px;opacity:0">CELTIC</div>
+<svg class="a" id="st1" style="left:1800px;top:2420px;opacity:0" width="320" height="320" viewBox="0 0 300 300">
+ <defs><path id="stc" d="M150 150 m-104 0 a104 104 0 1 1 208 0 a104 104 0 1 1 -208 0"/></defs>
+ <circle cx="150" cy="150" r="132" fill="rgba(12,19,35,.85)" stroke="#6AA8FF" stroke-width="6"/>
+ <circle cx="150" cy="150" r="80" fill="none" stroke="#6AA8FF" stroke-width="3"/>
+ <text font-family="J" font-weight="800" font-size="22" fill="#6AA8FF" letter-spacing="3"><textPath href="#stc">CAMPEÓN DE EUROPA · GRAN BRETAÑA ·</textPath></text>
+ <text x="150" y="172" text-anchor="middle" font-family="J" font-weight="800" font-size="78" fill="#6AA8FF">1.º</text>
+</svg>
+<div class="a" id="gb" style="left:1220px;top:2820px;width:960px;height:120px">
+ <div id="gbT" class="c" style="font:400 74px SI;color:#B9E0FF;white-space:nowrap;opacity:0">primero de Gran Bretaña</div>
+ <svg style="position:absolute;left:0;top:80px" width="960" height="40"><path id="gbU" class="dr" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100" d="M160 20 C380 8 600 30 800 14" stroke="#636DFF" stroke-width="7"/></svg>
 </div>
-<div class="a" id="gb" style="left:1220px;top:3150px;width:960px;height:120px">
- <div id="gbT" class="c" style="font:400 70px SI;color:#B9E0FF;white-space:nowrap;opacity:0">primero de Gran Bretaña</div>
- <svg style="position:absolute;left:0;top:78px" width="960" height="40"><path id="gbU" class="dr" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100" d="M170 20 C380 8 600 30 790 14" stroke="#636DFF" stroke-width="7"/></svg>
-</div>
-<div class="a rec c" id="steinC" style="left:1160px;width:1080px;top:3320px;font-size:15px;opacity:0">JOCK STEIN EN 1971 · FOTO: ANEFO / NATIONAAL ARCHIEF, CC0</div>
-
-<!-- 5 · el mapa: once chinchetas a menos de 50 km -->
-<div class="a serif c" id="l4" style="left:0;width:1080px;top:2160px;font-size:74px"></div>
-<div class="a panel" id="map" style="left:90px;top:2290px;width:900px;height:980px;border-radius:18px;overflow:hidden;opacity:0">
- <svg id="mapS" width="900" height="980" viewBox="0 0 900 980"></svg>
- <div class="a k" id="cnt" style="right:28px;top:22px;font-size:20px;color:#8f9bb8;opacity:0"><span id="cntN" style="font:800 64px J;color:#F4F7FB;letter-spacing:-.02em">0</span> TITULARES</div>
- <div class="a recl" style="left:28px;bottom:18px;font-size:13px;line-height:1.6">MAPA: RECREACIÓN<br>CHINCHETAS DE EJEMPLO, NO UBICACIÓN EXACTA</div>
-</div>
-<div class="a mat" id="park" style="left:640px;top:3110px;width:380px;padding:12px 12px 44px;opacity:0"><img src="img/park_g.jpg" style="display:block;width:100%"><small style="font-size:12px;bottom:10px">CELTIC PARK · THOMAS NUGENT, CC BY-SA 2.0</small></div>
-<div class="a serif c" id="l5" style="left:0;width:1080px;top:3420px;font-size:72px"></div>
-<div class="a serif c" id="l5b" style="left:0;width:1080px;top:3520px;font-size:72px"></div>
+<div class="a recl c" id="gbL" style="left:1160px;width:1080px;top:3000px;font-size:15px;opacity:0">25 DE MAYO DE 1967 · SELLO: RECREACIÓN</div>
 
 <!-- 6 · Antes de buscar lejos, mira quién juega cerca -->
-<div class="a mat" id="lions" style="left:1210px;top:4120px;width:980px;opacity:0"><img src="img/lions_g.jpg" style="display:block;width:100%"><small>CELTIC PARK, GLASGOW · FOTO: CROWSUS, CC BY-SA 4.0 (MODIFICADA)</small></div>
+<div class="a mat" id="lions" style="left:1210px;top:4120px;width:980px;opacity:0"><img src="img/lions_b.jpg" style="display:block;width:100%"><small>CELTIC PARK, GLASGOW · FOTO: CROWSUS, CC BY-SA 4.0 (MODIFICADA)</small></div>
 <div class="a serif c" id="q0" style="left:1160px;width:1080px;top:4880px;font-size:84px"></div>
 <div class="a bold c" id="q1" style="left:1160px;width:1080px;top:5000px;font-size:120px"></div>
 <div class="a bold c" id="q2" style="left:1160px;width:1080px;top:5140px;font-size:120px"></div>
-<div class="a rec c" id="cred" style="left:1160px;width:1080px;top:5340px;font-size:17px;opacity:0">FOTOS: TAGIDO (DOMINIO PÚBLICO) · ANEFO (CC0)<br>THOMAS NUGENT (CC BY-SA 2.0) · CROWSUS (CC BY-SA 4.0)<br>VÍA WIKIMEDIA COMMONS · COPA, MARCADOR Y MAPA: RECREACIÓN</div>
+<div class="a rec c" id="cred" style="left:1160px;width:1080px;top:5340px;font-size:18px;opacity:0">FOTOS: TAGIDO (DOMINIO PÚBLICO) · ANEFO (CC0)<br>THOMAS NUGENT (CC BY-SA 2.0) · CROWSUS (CC BY-SA 4.0)<br>VÍA WIKIMEDIA COMMONS · COPA, MARCADOR Y MAPA: RECREACIÓN</div>
 
 </div>
 <canvas id="grain" width="360" height="640"></canvas>
+<div id="blk"></div>
 <script src="gsap.min.js"></script>
 <script src="words.js"></script>
 <script>
@@ -119,42 +127,44 @@ const NS='http://www.w3.org/2000/svg', mk=(tag,at,par)=>{const e=document.create
 const L=[];
 function line(id,tokens){const el=$(id);for(const [txt,k,cls,st,off] of tokens){const s=document.createElement('span');s.className='w '+(cls||'');s.textContent=txt;if(st)s.style.cssText=st;el.appendChild(s);L.push([s,T(k)+(off||0)])}}
 const BB="font-family:J;font-weight:800;color:#F4F7FB;letter-spacing:-.02em";
-line('l0',[['Lisboa,',0],['1967.',1,'acc']]);
-line('l1',[['El',2],['Celtic',3,'it'],['gana',4]]);
-line('l1b',[['la',5],['COPA',6,'acc'],['DE',7,'acc'],['EUROPA',8,'acc'],['al',9],['Inter.',10,'it']]);
-line('l2',[['Empieza',11],['perdiendo',12],['por',13],['un',14],['penalti',15,'it']]);
-line('l2b',[['y',16],['gana',17],['dos',18,'acc'],['a',19,'acc'],['uno.',19,'acc','',.18]]);
-line('l3',[['Es',20],['el',21],['primer',22],['equipo',23]]);
-line('l3b',[['británico',24,'it'],['que',25],['lo',26],['consigue.',27]]);
-line('l4',[['Pero',28],['el',29],['dato',30],['está',31],['en',32],['el',33],['mapa:',34,'it']]);
-line('l5',[['los',35],['once',36,'acc'],['de',37],['Jock Stein',38,'it'],['nacieron',39]]);
-line('l5b',[['a',40],['menos',41],['de',42],['50 km',43,'',BB],['de',45],['su',46],['estadio…',47]]);
-line('q0',[['Antes',48],['de',49],['buscar',50],['lejos,',51,'it']]);
-line('q1',[['MIRA',52],['QUIÉN',53]]);
-line('q2',[['JUEGA',54],['CERCA.',55,'acc']]);
-// ----- mapa dibujado (esquema, sin nombres de más) -----
+line('l5',[['Los',0],['ONCE',1,'acc'],['nacieron',2]]);
+line('l5b',[['a',3],['menos',4],['de',5],['50 km',6,'',BB],['de',8],['su',9],['estadio.',10]]);
+line('l1',[['Y',11],['ganaron',12],['la',13]]);
+line('l1b',[['COPA',14,'acc'],['DE',15,'acc'],['EUROPA.',16,'acc']]);
+line('l0',[['Lisboa,',17],['1967.',18,'acc']]);
+line('l3x',[['El',19],['Celtic',20,'it'],['de',21],['Jock Stein',22,'it']]);
+line('l2',[['empieza',23],['perdiendo',24],['con',25],['el',26],['Inter',27,'it']]);
+line('l2b',[['por',28],['un',29],['penalti',30,'it'],['y',31],['gana',32],['dos',33,'acc'],['a',34,'acc'],['uno.',34,'acc','',.18]]);
+line('l3',[['Es',35],['el',36],['primer',37],['equipo',38]]);
+line('l3b',[['británico',39,'it'],['que',40],['lo',41],['consigue…',42]]);
+line('q0',[['Antes',43],['de',44],['buscar',45],['lejos,',46,'it']]);
+line('q1',[['MIRA',47],['QUIÉN',48]]);
+line('q2',[['JUEGA',49],['CERCA.',50,'acc']]);
+// ----- mapa dibujado (esquema): ya está en el fotograma 0 -----
 const M=$('mapS');const C=[470,500],R=300;
-const sea=mk('path',{d:'M0 0 L250 0 C230 70 190 120 205 190 C220 250 170 300 140 350 C175 380 230 410 300 455 C230 470 180 520 150 600 C130 680 90 760 70 840 C50 900 30 950 0 980 Z',fill:'#0a1a3a',stroke:'#636DFF','stroke-width':3,opacity:0},M);
-const coast=mk('path',{class:'dr',d:'M250 0 C230 70 190 120 205 190 C220 250 170 300 140 350 C175 380 230 410 300 455 C230 470 180 520 150 600 C130 680 90 760 70 840 C50 900 30 950 0 980',stroke:'#6AA8FF','stroke-width':4,pathLength:100,'stroke-dasharray':100,'stroke-dashoffset':100},M);
-const river=mk('path',{class:'dr',d:'M300 455 C350 470 400 480 440 495 C480 510 520 505 570 530 C630 560 700 600 790 660 C830 690 870 720 900 760',stroke:'#636DFF','stroke-width':6,pathLength:100,'stroke-dasharray':100,'stroke-dashoffset':100},M);
-const rl=mk('text',{x:770,y:740,'font-family':'J','font-weight':500,'font-size':16,fill:'#636DFF','letter-spacing':3,transform:'rotate(32 770 740)',opacity:0},M);rl.textContent='RÍO CLYDE';
-const ring=mk('circle',{cx:C[0],cy:C[1],r:R,fill:'rgba(139,92,246,.06)',stroke:'#8B5CF6','stroke-width':5,pathLength:100,'stroke-dasharray':100,'stroke-dashoffset':100,transform:`rotate(-90 ${C[0]} ${C[1]})`},M);
+mk('path',{d:'M0 0 L250 0 C230 70 190 120 205 190 C220 250 170 300 140 350 C175 380 230 410 300 455 C230 470 180 520 150 600 C130 680 90 760 70 840 C50 900 30 950 0 980 Z',fill:'#0a1a3a',stroke:'#636DFF','stroke-width':3,opacity:.9},M);
+mk('path',{class:'dr',d:'M250 0 C230 70 190 120 205 190 C220 250 170 300 140 350 C175 380 230 410 300 455 C230 470 180 520 150 600 C130 680 90 760 70 840 C50 900 30 950 0 980',stroke:'#6AA8FF','stroke-width':4},M);
+mk('path',{class:'dr',d:'M300 455 C350 470 400 480 440 495 C480 510 520 505 570 530 C630 560 700 600 790 660 C830 690 870 720 900 760',stroke:'#636DFF','stroke-width':6},M);
+const rl=mk('text',{x:770,y:740,'font-family':'J','font-weight':500,'font-size':16,fill:'#636DFF','letter-spacing':3,transform:'rotate(32 770 740)'},M);rl.textContent='RÍO CLYDE';
+mk('circle',{cx:C[0],cy:C[1],r:R,fill:'rgba(99,109,255,.05)',stroke:'#636DFF','stroke-width':3,'stroke-dasharray':'10 12'},M);
+const ring=mk('circle',{cx:C[0],cy:C[1],r:R,fill:'none',stroke:'#8B5CF6','stroke-width':6,pathLength:100,'stroke-dasharray':100,'stroke-dashoffset':100,transform:`rotate(-90 ${C[0]} ${C[1]})`},M);
 const arm=mk('line',{x1:C[0],y1:C[1],x2:C[0],y2:C[1]-R,stroke:'#B9E0FF','stroke-width':4,'stroke-linecap':'round',opacity:0},M);
 const armT=mk('circle',{cx:C[0],cy:C[1]-R,r:9,fill:'#B9E0FF',opacity:0},M);
-const rad=mk('text',{x:C[0]+R-10,y:C[1]+R-20,'text-anchor':'end','font-family':'J','font-weight':800,'font-size':30,fill:'#8B5CF6',opacity:0},M);rad.textContent='radio 50 km';
-const pins=[[-120,-150],[90,-190],[200,-60],[-210,40],[30,-40],[150,120],[-60,170],[-160,-50],[230,170],[-30,250],[80,120]].map(([dx,dy],i)=>{const g=mk('g',{opacity:0},M);
+const rad=mk('text',{x:C[0]+R-10,y:C[1]+R+60,'text-anchor':'end','font-family':'J','font-weight':800,'font-size':30,fill:'#8B5CF6',opacity:0},M);rad.textContent='radio 50 km';
+const pins=[[-120,-150],[90,-190],[200,-60],[-210,40],[30,-40],[150,120],[-60,170],[-160,-50],[230,170],[-30,250],[80,120]].map(([dx,dy],i)=>{const g=mk('g',{},M);
  mk('ellipse',{cx:0,cy:4,rx:12,ry:5,fill:'rgba(0,0,0,.45)'},g);mk('line',{x1:0,y1:0,x2:0,y2:-26,stroke:'#B9E0FF','stroke-width':4},g);mk('circle',{cx:0,cy:-34,r:14,fill:'#6AA8FF',stroke:'#F4F7FB','stroke-width':3},g);return [g,C[0]+dx,C[1]+dy]});
-const dot=mk('g',{opacity:0},M);mk('circle',{cx:C[0],cy:C[1],r:16,fill:'#F4F7FB'},dot);mk('circle',{cx:C[0],cy:C[1],r:28,fill:'none',stroke:'#F4F7FB','stroke-width':3},dot);
+const dot=mk('g',{},M);mk('circle',{cx:C[0],cy:C[1],r:16,fill:'#F4F7FB'},dot);mk('circle',{cx:C[0],cy:C[1],r:28,fill:'none',stroke:'#F4F7FB','stroke-width':3},dot);
 const dl=mk('text',{x:C[0]+40,y:C[1]+10,'font-family':'J','font-weight':800,'font-size':30,fill:'#F4F7FB','letter-spacing':1},dot);dl.textContent='Celtic Park';
 // ----- cámara: un solo plano -----
-const cam={cx:540,cy:900,z:1.05};const tl=gsap.timeline({paused:true});
+const cam={cx:540,cy:880,z:1.0};const tl=gsap.timeline({paused:true});
 const fly=(t,cx,cy,z,d=.9)=>{tl.to(cam,{cx,cy,duration:d,ease:'power2.inOut'},t);tl.to(cam,{keyframes:[{z:z*0.9,duration:d*.5,ease:'sine.out'},{z,duration:d*.5,ease:'sine.inOut'}]},t)};
-tl.set(cam,{cx:540,cy:900,z:1.05},0).to(cam,{z:1.01,cy:910,duration:2.1,ease:'sine.out'},0);
-fly(2.12,1700,900,1.0); tl.to(cam,{z:1.0,cy:1020,duration:5.7,ease:'sine.inOut'},3.02);
-fly(8.74,1700,2720,1.0); tl.to(cam,{z:1.02,cy:2740,duration:2.1,ease:'sine.out'},9.64);
-fly(11.5,540,2940,1.0); tl.to(cam,{z:1.0,cy:2980,duration:5.2,ease:'sine.inOut'},12.4);
-fly(17.66,1700,4820,1.0); tl.to(cam,{z:1.0,cy:4840,duration:2.3,ease:'sine.out'},18.56);
-tl.to(cam,{z:0.93,cy:4800,duration:1.6,ease:'sine.inOut'},20.9);
+const F1=E(10)-.08, F2=E(16)+.12, F3=T(23)-.1, F4=E(34)+.02, F5=E(42)+.06;
+tl.set(cam,{cx:540,cy:880,z:1.0},0).to(cam,{z:1.03,cy:900,duration:F1,ease:'sine.out'},0);
+fly(F1,1700,840,1.0); tl.to(cam,{z:1.02,cy:860,duration:F2-F1-.9,ease:'sine.out'},F1+.9);
+fly(F2,540,2620,1.0); tl.to(cam,{z:1.02,cy:2640,duration:F3-F2-.9,ease:'sine.inOut'},F2+.9);
+fly(F3,540,3930,1.05); tl.to(cam,{z:1.07,cy:3945,duration:F4-F3-.9,ease:'sine.out'},F3+.9);
+fly(F4,1700,2570,1.08); tl.to(cam,{z:1.1,cy:2580,duration:F5-F4-.9,ease:'sine.out'},F4+.9);
+fly(F5,1700,4800,1.0); tl.to(cam,{z:1.015,cy:4820,duration:Math.max(.5,T(50)-F5-.9),ease:'sine.out'},F5+.9);
 // grano
 const g=$('grain').getContext('2d'),gi=g.createImageData(360,640);let sd=1;const RN=()=>(sd=(sd*16807)%2147483647)/2147483647;
 function camAt(t){tl.seek(t,false);return [cam.cx,cam.cy,cam.z]}
@@ -168,46 +178,40 @@ window.frame=function(t){window._t=t;
  sd=1+Math.floor(t*30)*7919;const d=gi.data;for(let i=0;i<d.length;i+=4){const v=RN()*255;d[i]=v*.8;d[i+1]=v*.85;d[i+2]=v;d[i+3]=255}g.putImageData(gi,0,0);
  const p0=camAt(Math.max(0,t-1/30)),p1=camAt(t);const sp=Math.hypot(p1[0]-p0[0],p1[1]-p0[1]);
  $('cam').style.transform=`translate(540px,960px) scale(${p1[2]}) translate(${-p1[0]}px,${-p1[1]}px)`;
- $('cam').style.filter=sp>14?`blur(${Math.min(4,(sp-14)/30).toFixed(2)}px)`:'none';
+ $('cam').style.filter=sp>18?`blur(${Math.min(4,(sp-18)/30).toFixed(2)}px)`:'none';
  for(const [s,t1] of L){const t0=t1<.3?t1-.4:t1;const p=eo(P(t,t0-.04,t0+.36));s.style.opacity=p;s.style.transform=`translateX(${(1-p)*24}px)`;s.style.filter=p<1?`blur(${(1-p)*6}px)`:'none'}
- // 1 · postal y matasellos
- const pp=eo(P(t,-.3,.35));$('post').style.opacity=pp;$('post').style.transform=`translateY(${(1-pp)*40}px) rotate(${-1.6*pp}deg)`;
- const pm=P(t,T(1)-.05,T(1)+.25);$('pmark').style.opacity=.92*eo(pm);$('pmark').style.transform=`scale(${1.35-.35*eb(pm)}) rotate(-12deg)`;
- fade('pmL',T(1)+.3,10,.4);
- // 2 · copa y fichas
- const cp=eio(P(t,T(6)-.15,E(8)));$('cupP').setAttribute('stroke-dashoffset',100-100*cp);$('cupH').setAttribute('stroke-dashoffset',100-100*eio(P(t,T(7),E(8)+.25)));
- $('cup').style.transform=`translateY(${(1-eo(P(t,T(6)-.15,T(6)+.4)))*40}px)`;
- const up=eio(P(t,T(19)-.05,T(19)+.4));
- const pc=eo(P(t,T(3)-.08,T(3)+.32));$('cC').style.opacity=pc;$('cC').style.transform=`translateY(${(1-pc)*30-44*up}px) rotate(${-2*(1-pc)}deg)`;
- $('cC').style.boxShadow=up>.05?`0 24px 50px rgba(0,0,0,.55),0 0 0 ${5*up}px #6AA8FF`:'0 24px 50px rgba(0,0,0,.55)';
- const pi=eo(P(t,T(10)-.08,T(10)+.32));$('cI').style.opacity=pi*(1-.35*up);$('cI').style.transform=`translateY(${(1-pi)*30}px) rotate(${2*(1-pi)}deg)`;
- // 3 · marcador
- fade('sb',T(11)-.3,30,.45);
- const sh=P(t,T(12)-.05,T(12)+.25);$('dL').style.opacity=eo(sh);$('dR').style.opacity=eo(sh);
- flip('dL',['0','1','2'],[T(18),T(19)],t);flip('dR',['1'],[],t);
- const pn=P(t,T(15)-.05,T(15)+.3);$('penDot').style.background=pn>.02?'#F4F7FB':'#26335a';$('penDot').style.boxShadow=`0 0 ${26*eo(pn)}px rgba(185,224,255,${.8*eo(pn)})`;$('penT').style.color=pn>.3?'#F4F7FB':'#5d6888';
- const ck=eio(P(t,T(12),T(15)+.2));$('clk').setAttribute('stroke-dashoffset',100-100*ck*7/90);$('minT').textContent=Math.round(7*ck)+"'";
- // 4 · Stein
- const ps=eo(P(t,T(20)-.45,T(20)+.15));$('stein').style.opacity=ps;$('stein').style.transform=`translateY(${(1-ps)*50}px) scale(${.97+.03*ps})`;
- fade('tagS',T(21),24,.4);typ('tS','JOCK STEIN · ENTRENADOR',t,T(21)+.1,T(23)+.2);
- fade('gbT',T(24)-.05,16,.4);$('gbU').setAttribute('stroke-dashoffset',100-100*eio(P(t,T(24)+.1,E(24)+.25)));
- fade('steinC',T(25),10,.4);
- // 5 · mapa
- const pmp=eo(P(t,T(30)-.2,T(30)+.3));$('map').style.opacity=pmp;$('map').style.transform=`translateY(${(1-pmp)*40}px)`;
- const mp=eio(P(t,T(34)-.2,T(34)+.9));coast.setAttribute('stroke-dashoffset',100-100*mp);sea.setAttribute('opacity',.9*mp);river.setAttribute('stroke-dashoffset',100-100*eio(P(t,T(34),T(34)+1.0)));rl.setAttribute('opacity',P(t,T(34)+.6,T(34)+1.0));
- const pd=eo(P(t,T(34)+.2,T(34)+.6));dot.setAttribute('opacity',pd);
- const pinT=i=>T(36)+i*((E(39)-T(36))/11);
- pins.forEach(([gq,x,y],i)=>{const q=P(t,pinT(i),pinT(i)+.22);gq.setAttribute('opacity',eo(q));gq.setAttribute('transform',`translate(${x},${y-(1-eio(q))*60}) scale(${1+.25*Math.sin(Math.PI*q)})`)});
- let n=0;pins.forEach((p,i)=>{if(t>=pinT(i)+.1)n++});$('cntN').textContent=n;fade('cnt',T(36)-.05,10,.3);
- const rc=eio(P(t,T(43)-.05,E(44)));ring.setAttribute('stroke-dashoffset',100-100*rc);
- const ao=P(t,T(43)-.15,T(43)+.05)*(1-P(t,E(44),E(44)+.3));const ang=rc*Math.PI*2-Math.PI/2;const ax=C[0]+Math.cos(ang)*R,ay=C[1]+Math.sin(ang)*R;
+ // 1 · mapa (ya dibujado): las chinchetas laten en «once», compás ultravioleta en «cincuenta kilómetros», foto del estadio en «estadio»
+ pins.forEach(([gq,x,y],i)=>{const a=T(1)+i*.04;const q=P(t,a,a+.3);gq.setAttribute('transform',`translate(${x},${y}) scale(${1+.3*Math.sin(Math.PI*q)})`)});
+ const cb=P(t,T(1),T(1)+.35);$('cntN').style.color=cb>0&&cb<1?'#B9E0FF':'#F4F7FB';$('cntN').style.display='inline-block';$('cntN').style.transform=`scale(${1+.25*Math.sin(Math.PI*cb)})`;
+ const rc=eio(P(t,T(6)-.05,E(7)));ring.setAttribute('stroke-dashoffset',100-100*rc);
+ const ao=P(t,T(6)-.15,T(6)+.05)*(1-P(t,E(7),E(7)+.3));const ang=rc*Math.PI*2-Math.PI/2;const ax=C[0]+Math.cos(ang)*R,ay=C[1]+Math.sin(ang)*R;
  arm.setAttribute('x2',ax);arm.setAttribute('y2',ay);arm.setAttribute('opacity',ao);armT.setAttribute('cx',ax);armT.setAttribute('cy',ay);armT.setAttribute('opacity',ao);
- rad.setAttribute('opacity',eo(P(t,E(44)-.1,E(44)+.3)));
- const uv=P(t,T(43)-.05,T(43)+.3);const s50=$('l5b').children[3];s50.style.color=`rgb(${Math.round(mix(244,139,uv))},${Math.round(mix(247,92,uv))},${Math.round(mix(251,246,uv))})`;s50.style.textShadow=uv>.3?`0 0 ${30*uv}px rgba(139,92,246,.55)`:'none';
- const pk=eo(P(t,T(47)-.1,T(47)+.35));$('park').style.opacity=pk;$('park').style.transform=`translateY(${(1-pk)*30}px) rotate(${3*pk}deg)`;
- // 6 · Celtic Park y la frase final
- const pl=eo(P(t,T(48)-.5,T(48)+.2));$('lions').style.opacity=pl;$('lions').style.transform=`translateY(${(1-pl)*40}px) scale(${1.03-.03*pl}) rotate(${-.8*pl}deg)`;
- fade('cred',T(54),10,.6);
+ rad.setAttribute('opacity',eo(P(t,E(7)-.2,E(7)+.2)));
+ const uv=P(t,T(6)-.05,T(6)+.3);const s50=$('l5b').children[3];s50.style.color=`rgb(${Math.round(mix(244,139,uv))},${Math.round(mix(247,92,uv))},${Math.round(mix(251,246,uv))})`;s50.style.textShadow=uv>.3?`0 0 ${30*uv}px rgba(139,92,246,.55)`:'none';
+ const pk=eo(P(t,T(10)-.1,T(10)+.35));$('park').style.opacity=pk;$('park').style.transform=`translateY(${(1-pk)*30}px) rotate(${-3*pk}deg)`;
+ // 2 · copa
+ const cp=eio(P(t,T(12)-.1,E(16)));$('cupP').setAttribute('stroke-dashoffset',100-100*cp);$('cupH').setAttribute('stroke-dashoffset',100-100*eio(P(t,T(14),E(16)+.25)));
+ $('cup').style.transform=`translateY(${(1-eo(P(t,T(12)-.1,T(12)+.4)))*40}px)`;fade('cupL',T(14),10,.4);
+ // 3 · postal, matasellos, Stein
+ const pp=eo(P(t,F2+.5,F2+1.0));$('post').style.opacity=pp;$('post').style.transform=`translateY(${(1-pp)*40}px) rotate(${-1.6*pp}deg)`;
+ const pm=P(t,T(18)-.05,T(18)+.25);$('pmark').style.opacity=.92*eo(pm);$('pmark').style.transform=`scale(${1.35-.35*eb(pm)}) rotate(-12deg)`;
+ const ps=eo(P(t,T(19)-.35,T(19)+.2));$('stein').style.opacity=ps;$('stein').style.transform=`translateY(${(1-ps)*50}px) scale(${.97+.03*ps})`;
+ fade('tagS',T(20),24,.4);typ('tS','JOCK STEIN · ENTRENADOR',t,T(21),E(22));fade('steinC',T(22),10,.4);
+ // 4 · marcador
+ fade('sb',F3+.15,30,.45);
+ const sh=P(t,T(24)-.05,T(24)+.25);$('dL').style.opacity=eo(sh);$('dR').style.opacity=eo(sh);
+ flip('dL',['0','1','2'],[T(33),T(34)],t);flip('dR',['1'],[],t);
+ const it=P(t,T(27)-.05,T(27)+.3);$('inT').style.color=it>.02?'#B9E0FF':'#F4F7FB';
+ const pn=P(t,T(30)-.05,T(30)+.3);$('penDot').style.background=pn>.02?'#F4F7FB':'#26335a';$('penDot').style.boxShadow=`0 0 ${26*eo(pn)}px rgba(185,224,255,${.8*eo(pn)})`;$('penT').style.color=pn>.3?'#F4F7FB':'#5d6888';
+ const ck=eio(P(t,T(24),T(30)+.2));$('clk').setAttribute('stroke-dashoffset',100-100*ck*7/90);$('minT').textContent=Math.round(7*ck)+"'";
+ // 5 · primer equipo británico
+ const pc=eo(P(t,T(37)-.1,T(37)+.3));$('cC').style.opacity=pc;$('cC').style.transform=`translateY(${(1-pc)*40}px) rotate(${-2*(1-pc)}deg)`;
+ const s1=P(t,T(39)-.05,T(39)+.25);$('st1').style.opacity=eo(s1);$('st1').style.transform=`scale(${1.35-.35*eb(s1)}) rotate(-10deg)`;
+ fade('gbT',T(40),16,.4);$('gbU').setAttribute('stroke-dashoffset',100-100*eio(P(t,T(41),E(42)+.2)));fade('gbL',T(42),10,.4);
+ // 6 · Celtic Park y la frase final (quieta ≥ 1 s), fundido a negro
+ const pl=eo(P(t,F5+.4,F5+1.0));$('lions').style.opacity=pl;$('lions').style.transform=`translateY(${(1-pl)*40}px) scale(${1.03-.03*pl}) rotate(${-.8*pl}deg)`;
+ fade('cred',T(47),10,.5);
+ $('blk').style.opacity=P(t,E(50)+1.1,E(50)+1.6);
 };
 document.fonts.ready.then(()=>Promise.all([...document.images].map(i=>i.complete?1:new Promise(r=>{i.onload=r;i.onerror=r})))).then(()=>{frame(0);window.ready=true});
 </script></body></html>

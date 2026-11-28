@@ -11,10 +11,12 @@
 - El remate («Antes de buscar lejos, mira quién juega cerca») es la idea útil, no un dato.
 - NO decimos: de qué pueblo era el más lejano (UEFA dice Largs, Irish Times dice Saltcoats: Bobby Lennox), ni «a 15 km» ni «a 10 millas» del resto (las fuentes no coinciden), ni frases de Shankly a Stein (no las hemos encontrado en dos fuentes serias).
 
-## Voz (58 palabras, palabra por palabra)
-> Lisboa, 1967. El Celtic gana la Copa de Europa al Inter. Empieza perdiendo por un penalti y gana dos a uno. Es el primer equipo británico que lo consigue. Pero el dato está en el mapa: los once de Jock Stein nacieron a menos de cincuenta kilómetros de su estadio... Antes de buscar lejos, mira quién juega cerca.
+## Voz (r2, 28/11: gancho delante, propuesta de Andrés en la crítica; 55 palabras)
+> Los once nacieron a menos de cincuenta kilómetros de su estadio. Y ganaron la Copa de Europa. Lisboa, 1967: el Celtic de Jock Stein empieza perdiendo con el Inter por un penalti, y gana dos a uno. Es el primer equipo británico que lo consigue... Antes de buscar lejos, mira quién juega cerca.
 
-Prompt ElevenLabs: `[confident, assured, steady storyteller tone, firm and calm]` + el texto. «1967» se lee «mil novecientos sesenta y siete»; «Jock Stein» se lee «yok stin». Pausa con «...» antes del remate. Ultravioleta #8B5CF6 una sola vez: en «cincuenta kilómetros».
+Prompt ElevenLabs: `[confident, assured, steady storyteller tone, firm and calm]` + el texto. «1967» se escribe «mil novecientos sesenta y siete» y «Jock Stein», «Yok Stin», en el prompt (whisper oye «Jockstein»). Pausa con «...» antes del remate. Ultravioleta #8B5CF6 una sola vez: en «cincuenta kilómetros».
+
+Orden de escenas en r2 (Marta A): 1) mapa ya dibujado en el fotograma 0 (Celtic Park, 11 chinchetas, contador 11, círculo de 50 km discontinuo; el compás ultravioleta lo traza en «cincuenta kilómetros»; foto pequeña de Celtic Park en «estadio»); 2) copa en «Copa de Europa»; 3) postal de Lisboa con matasellos y ficha de Jock Stein; 4) marcador 0–1 → 2–1; 5) ficha CELTIC con sello «1.º · Gran Bretaña»; 6) grada de Celtic Park (escudo y rótulo difuminados) y remate quieto ≥ 1 s, fundido a negro y cierre. La tabla de abajo es la de la primera versión.
 
 ## Escenas (un solo plano sobre la pared; viajes de 0,9 s en las pausas)
 | frase | qué se ve y qué se anima | efecto de sonido (Epidemic, real y bajo) |
