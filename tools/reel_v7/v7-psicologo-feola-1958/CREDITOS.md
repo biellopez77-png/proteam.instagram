@@ -16,3 +16,5 @@ Música y efectos (Epidemic Sound, desde Higgsfield): «Musical, Loop, Soft Pian
 Cierre: tools/reel_v6/outro/outro2.mp4 (su audio, «Dale like y síguenos para más vídeos como este»; «¿Te ha servido?» va en pantalla).
 
 Montaje: remate «CADA DÍA.» (ultravioleta, única vez) quieto de 28,8 a 29,85 s; fundido a negro 29,85–30,35 s; outro2 desde 30,35 s. Vídeo de 34,35 s.
+Vídeo final: https://d2ol7oe51mr4n9.cloudfront.net/user_3M2z7lIyzIPYtjNHcxRWFNk6wi7/7dc67057-541a-4f7a-99cc-1f11f2650c84.mp4
+Comprobación con whisper del vídeo final: se oye la voz entera y el cierre («Dale like y síguenos para más vídeos como este»).
