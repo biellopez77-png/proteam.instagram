@@ -17,3 +17,7 @@ Dibujados y rotulados (recreación): portada, dos estrellas, escoba (en la porta
 Ultravioleta #8B5CF6 una sola vez: «BARRER.». Remate quieto desde 24,4 s (cámara parada desde 23,9 s); fundido a negro de 0,5 s desde 25,5 s (1,04 s después de la voz) y cierre común tools/reel_v6/outro/outro2.mp4 desde negro (26,0 s).
 
 Música y efectos (Epidemic Sound, vía Higgsfield): «Musical, Loop, Orchestra, Piano, Choir, Sentimental» (una sola pista, sin cortes; distinta de la del último v7); «Swooshes, Whoosh, Soft, Clean»; «Paper, Friction, Sheet, Laminated, Slide On Wooden Table»; «Communications, Camera, KMZ Zenit 12XP Camera, Shutter 03»; «Office Supplies, Rubber Stamp, Document 01»; «Objects, Writing, Marker On Whiteboard»; «Objects, Household, Cleaning, Broom, Brush, Hard Bristled, Sweep Concrete Ground, Medium Strokes x4»; «Crowds, Sport, Stadium Crowd, Stadium Crowd Walla» (muy bajo); en el cierre, «Musical, Loop, Logo, Calm, Piano 01» bajo (0,22). Mezcla: mix.py.
+Mezcla final: voz −19,0, música −33,3 con ducking, sfx −37,1, pico 0,90; final −17,2 LUFS, −0,9 dBFS de pico.
+
+Vídeo final: https://d2ol7oe51mr4n9.cloudfront.net/user_3M2z7lIyzIPYtjNHcxRWFNk6wi7/e63ceed2-b26d-4d56-a967-aa5602daf42c.mp4 (30,0 s). Comprobado con whisper: se oye la voz entera y «Dale like y síguenos para más vídeos como este».
+Caption: la del guion; fuentes, créditos y hashtags van antes para que termine con «¿Te ha servido? Dale like y síguenos para más vídeos como este.».
