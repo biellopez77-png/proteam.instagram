@@ -20,3 +20,11 @@ Música y efectos (Epidemic Sound, vía Higgsfield): «Musical, Loop, Logo, Wind
 Render: htmlreel (30 fps) y fundido de 0,6 s al cierre común en 24,5 s; video_mudo.mp4 a crf 26.
 
 Vídeo final: https://d2ol7oe51mr4n9.cloudfront.net/user_3M2z7lIyzIPYtjNHcxRWFNk6wi7/ffba7f8d-ac30-46f0-9b6a-e670ea96f03c.mp4 (30,1 s: 24,5 s de historia + cierre común; comprobado con whisper: se oye la voz entera —«Bird» lo transcribe «Burt» con la música debajo; en la toma limpia sale «Bird»—; −16,5 LUFS, −0,8 dBTP).
+
+## r2 · 28/11/2026 · Marta A (02) — crítica de Andrés 77/100 (agencia/fabrica-v7/criticas/v7-derrota-dream-team-1992.md)
+- Remate: «A veces, la mejor / charla es una» y «DERROTA.» van fijos en pantalla sobre una franja oscura mientras la cámara se aleja (21,15–22,75 s) hasta ver toda la pared (pase, portada, Hill y marcador 62–54, Krzyzewski, Daly, banquillo); la cámara se para antes de «derrota». «DERROTA.» a 158 px: 789 px de ancho, 146 px del borde. Quieta desde que acaba la palabra (24,27 s) hasta 25,35 s; fundido a negro 25,35–25,85 s; outro2 desde 25,85 s (su voz «Dale like…» entra a ~26,0 s, ≥1,7 s tras «derrota»). El logo nunca coincide con texto del remate.
+- Apertura de +0,8 s: ya caía después de «Jordan» (whisper troceando la voz y el vídeo final: 16,4–17,15 s sin voz; 17,15 s «y no hizo ni un ajuste»). El whisper del archivo entero estira «no» hasta 16,74 s: es error de alineación, no un hueco.
+- Grant Hill: «PHOENIX 33», el logo del cuello y las letras del pantalón borrados (inpaint en img/p4_cut_g2.png; obra derivada, misma licencia CC BY-SA 2.0).
+- Pie de créditos a 17 px, en #8f9bb8, quieto de 23,2 a 25,35 s (≈2,2 s).
+- Mezcla (mix.py, misma voz, música y efectos): voz −19, música −31 con ducking, sigue más baja bajo el cierre; aire largo y suave en el alejamiento; volumen +1,8 dB con limitador → −16,4 LUFS, −1,6 dBTP. Whisper del final: las 51 palabras de la voz («Shashevski») + «Dale like y síguenos para más vídeos como este».
+- Vídeo r2: https://d2ol7oe51mr4n9.cloudfront.net/user_3M2z7lIyzIPYtjNHcxRWFNk6wi7/4ad5d462-af37-42c0-9f8d-ef6ee4401272.mp4 (29,9 s: 25,85 s de historia + 4 s de outro2). Anteriores en files_old de la cola: e667481a, ffba7f8d.

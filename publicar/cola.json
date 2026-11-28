@@ -1735,7 +1735,7 @@
   "id": "v7-derrota-dream-team-1992",
   "kind": "reel",
   "files": [
-   "https://d2ol7oe51mr4n9.cloudfront.net/user_3M2z7lIyzIPYtjNHcxRWFNk6wi7/e667481a-db1f-4bad-8321-cbf65919f7b2.mp4"
+   "https://d2ol7oe51mr4n9.cloudfront.net/user_3M2z7lIyzIPYtjNHcxRWFNk6wi7/4ad5d462-af37-42c0-9f8d-ef6ee4401272.mp4"
   ],
   "caption": "El Dream Team también perdió. Y quizá fue a propósito.\n\nEn 1992, preparando los Juegos en San Diego, el equipo de Jordan, Magic y Bird perdió un entrenamiento 62-54 contra universitarios como Grant Hill, Chris Webber y Bobby Hurley. Mike Krzyzewski, entonces ayudante, cuenta que Chuck Daly apenas sacó a Jordan y no hizo ajustes: quería que supieran que podían perder (AP; Fox Sports).\n\nY tú, ¿has dejado alguna vez que tu equipo pierda para que aprenda?\n\n¿Te ha servido? Dale like y síguenos para más vídeos como este.\n\nFuentes: AP, Fox Sports, CBS Sports. Fotos: Ken Hackman (U.S. Air Force), Chad J. McNeeley (U.S. Navy) y William D. Moss (Department of Defense), dominio público; Keith Allison (CC BY-SA 2.0); vía Wikimedia Commons. Pase, marcador, banquillo y pizarra: recreación.\nMúsica y efectos: Epidemic Sound\n\n#entrenador #entrenadordebaloncesto #baloncesto #basket #DreamTeam #ChuckDaly #historiadelbaloncesto #formacion #ProTeam",
   "state": "revisión",
@@ -1746,11 +1746,13 @@
    "status": "pendiente"
   },
   "added": "2026-11-27T08:52:00+01:00",
-  "nota": "v7 historia con fotos (la derrota del Dream Team en San Diego, 1992; versión de Krzyzewski). Guion: agencia/fabrica-v7/guiones/v7-derrota-dream-team-1992.md (Dani B). Montaje: Marta A (02). Créditos: tools/reel_v7/v7-derrota-dream-team-1992/CREDITOS.md",
+  "nota": "v7 historia con fotos (la derrota del Dream Team en San Diego, 1992; versión de Krzyzewski). Guion: agencia/fabrica-v7/guiones/v7-derrota-dream-team-1992.md (Dani B). Montaje: Marta A (02). Créditos: tools/reel_v7/v7-derrota-dream-team-1992/CREDITOS.md · r2 (28/11, Marta A): remate quieto ≥1 s, fundido a negro y outro2; alejamiento a toda la pared; Hill sin PHOENIX 33; créditos 17 px.",
   "files_old": [
+   "https://d2ol7oe51mr4n9.cloudfront.net/user_3M2z7lIyzIPYtjNHcxRWFNk6wi7/e667481a-db1f-4bad-8321-cbf65919f7b2.mp4",
    "https://d2ol7oe51mr4n9.cloudfront.net/user_3M2z7lIyzIPYtjNHcxRWFNk6wi7/ffba7f8d-ac30-46f0-9b6a-e670ea96f03c.mp4"
   ],
-  "cierre": "outro2"
+  "cierre": "outro2",
+  "remontado": "2026-11-28T02:45:00+01:00"
  },
  {
   "id": "v7-puerta-de-atras-carril",
