@@ -17,5 +17,11 @@ Ultravioleta #8B5CF6 una sola vez: la flecha del corte en la segunda pizarra cua
 
 Música y efectos (Epidemic Sound, vía Higgsfield): «Musical, Loop, Soft Piano, Strings, Calm, Intro, Logo 02», «… 03» y «… 01» (encadenadas con 1,4 s); «Swooshes, Whoosh, Soft, Clean»; «Paper, Friction, Sheet, Laminated, Slide On Wooden Table»; «Communications, Camera, KMZ Zenit 12XP Camera, Shutter 01»; «Objects, Writing, Whiteboard Marker, Writing 01»; «Clocks, Tick, Classic, Soft, Loop 01» (cuatro tics sueltos); «Sports, Court, Basketball, Indoor, Ball Bounce, Soft 01» (un bote); «Sports, Court, Basketball, Indoor, Goal, Basket Bounce, Net Rustle»; «Mechanical, Click, Switches, Button, Push, Small 02»; «Metal, Impact, Metal Piece Hit, Long Reverb 01» (muy bajo). Mezcla: mix.py (voz −19, música −31 con ducking; resultado voz −19,0, música −33,7, sfx −38,4, pico 0,90).
 
-Vídeo final: https://d2ol7oe51mr4n9.cloudfront.net/user_3M2z7lIyzIPYtjNHcxRWFNk6wi7/9844c4a7-15f4-4732-b4fc-f035654e2387.mp4 (30,7 s: 25,1 s de historia + cierre común; comprobado con whisper: se oyen las 58 palabras).
+Vídeo final (r2, 28/11): https://d2ol7oe51mr4n9.cloudfront.net/user_3M2z7lIyzIPYtjNHcxRWFNk6wi7/f0b49b87-1b35-4752-94ee-0924ffe080b8.mp4 (30,0 s: 26,0 s de historia con fundido a negro + cierre común outro2; comprobado con faster-whisper: se oyen las 58 palabras y «Dale like y síguenos para más vídeos como este»). Anteriores: ee4b91eb (r1 con outro2) y 9844c4a7 (cierre de la app, retirado).
 Caption: la del guion; solo se añade «trofeo y casco» a la línea de recreaciones.
+
+## r2 · 28/11/2026 (Marta B, tras la crítica de Andrés, 81/100)
+- Final: flecha, «LOS LISTOS, a los fuertes.» y cámara terminados a 24,5 s; todo quieto hasta 25,5 s; fundido a NEGRO 25,5–26,0 s; outro2 desde 26,0 s con su audio en el mismo instante (su voz entra a 26,33 s). El logo ya no aparece nunca encima del remate.
+- Marcador: los dos números suben a la vez y en proporción (0–0 → 21–20 → 43–41).
+- Pies de foto, rótulos «RECREACIÓN» y pie de créditos a 17 px (el de créditos en tres líneas, quieto desde 23,8 s hasta el fundido).
+- Mezcla (mix.py): whoosh del primer viaje y obturador −6 dB; −18,3 LUFS integrados, true peak −2,1 dBTP. Misma música y efectos de Epidemic (descargados de nuevo para esta versión). Voz sin cambios (no se regenera: la pronunciación de UCLA/Carril era opcional).
