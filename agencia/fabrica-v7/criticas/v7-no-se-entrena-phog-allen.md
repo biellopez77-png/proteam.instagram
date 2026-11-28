@@ -1,3 +1,44 @@
+# Crítica · v7-no-se-entrena-phog-allen «Solo se juega» · r2
+
+**Andrés (05) · 28/11/2026 · Nota: 90/100 → APROBADO. Programado para el jueves 10/12/2026 a las 18:00 (pub_v3 approve).**
+
+Material revisado: el vídeo de la cola y del panel (`75a9bcd1-…mp4`, 29,4 s), descargado en el sandbox de Higgsfield: 59 fotogramas cada 0,5 s a 270 px, recortes a 360 px en 2,8 / 3,0 / 9,6 / 10,6 / 11,6 / 24,9 s, faster-whisper medium con marcas por palabra y niveles por segundo. El repo es demasiado pesado para bajarlo entero en el turno: el `video_mudo.mp4` nuevo (commit 5d7d8ab) no lo he mirado aparte; puntúo el vídeo de la cola, que es el que se publica.
+
+## Comprobaciones duras
+- **Cierre outro2:** «¿Te ha servido? / Dale like y síguenos / para más vídeos como este» en pantalla desde ~25,4 s; whisper: «Dale like y síguenos para más vídeos como este» (25,94–28,80 s). Caption acaba con esa frase (antes de hashtags). Bien.
+- **Nada de app, producto, lista ni lanzamiento** en voz, pantalla o caption. Sin precios, sin Biel, sin cifras de apuntados.
+- **Voz entera (whisper):** «James Naismith inventó el baloncesto, y a su alumno, Fogg Allen, le dijo: El baloncesto no se puede entrenar, solo se juega. Allen no le hizo caso. 50 temporadas en un banquillo, 746 victorias. De sus equipos salieron Adolf Rapp y **Dean Smith**. El juego se juega, pero alguien tiene que **enseñarlo**.» Las 55 palabras del guion; «Fogg»/«Adolf Rapp» son grafía de whisper, la pronunciación es la buena.
+- **Niveles por segundo:** voz −16,6 a −21 dB RMS; huecos de música −27 a −28 dB; cierre −24 dB. −16,7 LUFS, true peak −0,9 dBFS. Música real (Epidemic), efectos bajos.
+- **Fotos:** las cuatro de Commons en dominio público, sin logos; Rupp y Smith en fichas dibujadas sin cara, rotuladas como recreación.
+
+## Correcciones del r1, una a una
+1. Remate: «enseñarlo» acaba a 24,56 s; «ENSEÑARLO.» ultravioleta, entero y quieto hasta ~25,4 s; fundido; voz del cierre a 25,94 s (1,4 s de aire). **Hecho.**
+2. Sello «NO» bajo el subrayado, en la parte vacía de la tarjeta, sin tapar texto (10,0–11,0 s). **Hecho.**
+3. «SOLO SE JUEGA.»» dentro de la tarjeta con margen. **Hecho.**
+4. Comilla suelta: ya no está. **Hecho.**
+5. Viaje 2,6–3,2 s: la ficha «PROFESOR» y la foto de Allen entran durante el viaje; el centro nunca queda vacío. **Hecho.**
+6. Tarjeta de la cita apagada antes de que entre el banco (11,5 s). **Hecho.**
+7. «Dean Smith»: whisper lo oye bien (19,80–20,52 s). **Hecho.**
+8. Mudo nuevo en el repo (5d7d8ab): según Marta; no comprobado por el peso del repo.
+9. Foto 1 sin cambiar (era opcional).
+
+## Nota por apartados
+| apartado | nota | por qué |
+|---|---|---|
+| Historia real y gancho | 16/20 | Fotograma 0 ya con la ficha de Naismith y «James»; «INVENTÓ» a 1,2 s. Historia muy buena, remate citable. Pero lo raro (el inventor dice que no se entrena) llega a los 5,5 s, no en 0–3 s. |
+| Cada cosa que dice la voz se anima en su momento | 19/20 | Todo en su palabra: INVENTÓ + reglas, línea profesor → alumno, cita palabra a palabra, sello NO, 50 palotes, contador 0→746 con fichas, «COACH F. C. ALLEN», fichas de Rupp y Smith, balón que bota, flecha a la pizarra, ENSEÑARLO en ultravioleta y quieto. |
+| Transiciones | 13/15 | Viajes de cámara suaves; el remate ya respira antes del fundido. En 3,5 s y 13,0 s el viaje deja texto medio fuera de cuadro un instante (es movimiento, no corte). |
+| Sonido | 14/15 | Voz confiada y clara, aire limpio antes del cierre, música real bajo la voz. |
+| Verdad y fuentes | 14/15 | Todo con fuente (Kansan, Encyclopedia.com, Kansapedia, Britannica); cita rotulada. Reserva: foto 1 con referencia Getty en Commons (dominio público). |
+| Estética | 14/15 | Paleta y tipografías de v7, nada cortado ni solapado en reposo; pies pequeños pero legibles. |
+| **Total** | **90/100** | |
+
+## Mejoras opcionales (no bloquean)
+- Para próximos guiones de este estilo: abrir con la frase rara («El inventor del baloncesto dijo que no se podía entrenar») y poner el nombre después.
+- Foto 1 → reserva de Springfield College (c. 1920) si se vuelve a montar.
+
+---
+
 # Crítica · v7-no-se-entrena-phog-allen «Solo se juega» (historia con fotos)
 
 **Andrés (05) · 27/11/2026 · Nota: 79/100 → NO APROBADO. Vuelve a montaje.**
