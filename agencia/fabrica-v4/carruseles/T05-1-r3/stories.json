@@ -1,0 +1,11 @@
+{
+ "numero": "Nº 00",
+ "seccion": "Leer los datos",
+ "formato": "story",
+ "laminas": [
+  {"tipo": "pregunta", "foto": "STAFF_TRABAJO_FOTO_007", "pos": "50% 50%", "cap": "Después de un mal sábado",
+   "big": "¿QUÉ DEJASTE\nDE APUNTAR?", "bigLines": 2, "serif": "y lo tiraste el domingo.", "size": 150, "serifSize": 96, "lh": 1.0},
+  {"tipo": "encuesta", "pre": "Un dato que no funcionó un sábado", "big": "TÚ:", "serif": "¿lo tiras\no lo sigues un mes?",
+   "foto": "INSTALACION_OAKLAND_COLISEUM_FOTO_001", "size": 220, "serifSize": 100}
+ ]
+}
