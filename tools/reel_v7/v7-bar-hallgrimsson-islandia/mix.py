@@ -1,9 +1,9 @@
 """Mezcla v7 · Quien conoce el plan (Heimir Hallgrímsson, Islandia) (se ejecuta en el sandbox de Higgsfield, donde están los mp3 de Epidemic Sound).
 Música real (Epidemic: «Musical, Loop, Soft Piano, Strings, Calm, Intro, Logo» 01 → 02 → 03, misma serie, encadenadas con fundidos de 1,4 s;
 distinta de la del último v7) + SFX reales bajos + voz (ElevenLabs, Mateo). Base: tools/reel_v7/v7-salid-y-disfrutad-cruyff/mix.py.
-python3 mix.py voz.mp3 outro2.mp4 sting.mp3 out.wav   (necesita words.json; sting = Epidemic «Musical, Loop, Logo, Calm, Piano 01»)"""
+python3 mix.py voz.mp3 outro2.mp4 sting.mp3 out.wav   (r2: luego loudnorm −16,5 LUFS y limitador, pico ≤ −1,0 dBTP)   (necesita words.json; sting = Epidemic «Musical, Loop, Logo, Calm, Piano 01»)"""
 import sys, json, subprocess, numpy as np
-SR = 48000; OUT = 24.10; DUR = OUT + 4.0   # la voz acaba en 24,04 s; el vídeo sigue hasta 24,60 y a 24,10 empieza el fundido de 0,5 s al cierre (outro2.mp4, 4,0 s)
+SR = 48000; OUT = 25.0; DUR = OUT + 4.0   # r2: la voz acaba en 24,04 s; remate quieto hasta 25,0; fundido a negro 25,0–25,5 y outro2.mp4 (4,0 s) desde 25,0 → «Dale» ≈ 25,3 s (1,3 s después de «defiende»)
 W = json.load(open('words.json')); T = lambda k: W[k][1]; E = lambda k: W[k][2]
 def ld(f, ch=2):
     r = subprocess.run(['ffmpeg', '-v', 'error', '-i', f, '-ac', str(ch), '-ar', str(SR), '-f', 'f32le', '-'], capture_output=True).stdout

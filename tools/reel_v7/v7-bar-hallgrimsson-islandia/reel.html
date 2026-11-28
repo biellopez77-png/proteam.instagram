@@ -159,11 +159,11 @@ svg .dr{fill:none;stroke-linecap:round;stroke-linejoin:round}
 <div class="sc" style="left:2320px;top:6000px">
  <div class="a serif c" id="l6a" style="top:250px;font-size:88px"></div>
  <svg class="a" id="map" style="left:140px;top:370px" width="800" height="560" viewBox="0 0 800 560">
-  <path id="isl" d="M40 120 L90 60 L150 40 L200 70 L185 110 L235 100 L262 132 L232 172 L172 182 L124 202 L162 232 L112 262 L142 300 L96 330 L42 334 L122 352 L172 344 L192 384 L150 420 L120 450 L80 472 L132 492 L222 472 L302 502 L402 532 L502 540 L582 512 L662 472 L722 422 L772 362 L792 292 L762 232 L782 172 L742 122 L682 92 L622 62 L562 52 L502 32 L442 62 L382 42 L332 72 L292 52 L262 82 L232 62 L200 70" fill="#0C1323" fill-opacity="0" stroke="#B9E0FF" stroke-width="5" stroke-linejoin="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/>
-  <circle id="rvk" cx="190" cy="430" r="11" fill="#6AA8FF" opacity="0"/>
-  <text id="rvkt" x="210" y="420" style="font:700 22px J;fill:#8f9bb8;letter-spacing:.12em" opacity="0">REIKIAVIK</text>
+  <path id="isl" d="M152 469 L201 467 L243 464 L271 464 L320 488 L404 538 L459 530 L515 480 L585 455 L627 431 L675 398 L717 373 L759 307 L777 274 L787 233 L791 191 L745 172 L703 145 L714 101 L721 46 L682 89 L648 79 L620 22 L578 59 L550 76 L526 101 L512 112 L487 89 L470 117 L473 158 L452 117 L424 79 L397 96 L376 155 L358 125 L330 89 L313 134 L299 175 L271 183 L243 150 L229 109 L201 76 L173 35 L146 46 L125 84 L104 101 L76 134 L55 167 L25 191 L69 205 L118 195 L166 183 L201 233 L173 266 L132 282 L65 304 L104 320 L159 310 L201 348 L177 370 L219 385 L201 393 L208 414 L180 419 L159 439 L152 469 Z" fill="#0C1323" fill-opacity="0" stroke="#B9E0FF" stroke-width="5" stroke-linejoin="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/>
+  <circle id="rvk" cx="208" cy="414" r="11" fill="#6AA8FF" opacity="0"/>
+  <text id="rvkt" x="232" y="404" style="font:700 22px J;fill:#8f9bb8;letter-spacing:.12em" opacity="0">REIKIAVIK</text>
  </svg>
- <div class="a bold c" id="cnt" style="top:960px;font-size:180px;letter-spacing:-.03em;opacity:0">≈ 0</div>
+ <div class="a bold c" id="cnt" style="top:975px;font-size:150px;letter-spacing:-.03em;opacity:0">≈ 0</div>
  <div class="a k c" id="hab" style="top:1160px;font-size:32px;color:#F4F7FB;letter-spacing:.3em;opacity:0">HABITANTES</div>
  <div class="a rec c" id="recF" style="top:1230px">MAPA: RECREACIÓN</div>
 </div>
@@ -214,7 +214,7 @@ fly(11.21,2860,4600,1.0); tl.to(cam,{z:1.02,duration:1.5,ease:'sine.out'},12.11)
 tl.to(cam,{cy:4970,duration:1.0,ease:'power2.inOut'},13.62);
 fly(15.27,2860,6740,1.0); tl.to(cam,{z:1.03,duration:2.2,ease:'sine.out'},16.17);
 fly(18.42,1700,6720,1.0); tl.to(cam,{z:1.03,duration:2.2,ease:'sine.out'},19.32);
-fly(21.5,1700,4860,1.0); tl.to(cam,{z:1.04,cy:4880,duration:2.2,ease:'sine.inOut'},22.4);
+fly(21.5,1700,4860,1.0); tl.to(cam,{z:1.04,cy:4880,duration:1.0,ease:'sine.out'},22.4);
 function camAt(t){tl.seek(t,false);return [cam.cx,cam.cy,cam.z]}
 // ----- elementos dibujados -----
 const NS='http://www.w3.org/2000/svg', mk=(tag,at,par)=>{const e=document.createElementNS(NS,tag);for(const k in at)e.setAttribute(k,at[k]);par.appendChild(e);return e};
@@ -246,11 +246,11 @@ window.frame=function(tt){t=tt;
  $('cam').style.filter=sp>40?`blur(${Math.min(4,(sp-40)/30)}px)`:'none';
  for(const [s,t0] of L){const p=eo(P(t,t0-.04,t0+.32));s.style.opacity=p;s.style.transform=`translateX(${(1-p)*28}px)`;s.style.filter=`blur(${(1-p)*6}px)`}
  // A · estadio y reloj que retrocede dos horas
- const pa=inn($('matA'),0,50,.6);$('matA').style.transform+=` rotate(${(1-pa)*-2}deg)`;
- inn($('clock'),.25,30,.5);
+ const pa=inn($('matA'),-.6,50,.6);$('matA').style.transform+=` rotate(${(1-pa)*-2}deg)`;
+ inn($('clock'),-.5,30,.5);
  const cb=es(P(t,.45,2.0));$('carc').setAttribute('stroke-dashoffset',100-100*cb);
  $('mh').setAttribute('transform',`rotate(${-720*cb} 150 150)`);$('hh').setAttribute('transform',`rotate(${-60*cb} 150 150)`);
- inn($('m2'),T(1)-.05,20,.4); inn($('m2l'),T(2),12,.4);
+ inn($('m2'),-.4,20,.4); inn($('m2l'),T(2),12,.4);
  // B · la puerta del bar se abre y entra luz cálida
  inn($('door'),2.6,50,.6); $('recB').style.opacity=P(t,3.0,3.4);
  const op=es(P(t,T(16)-.15,T(16)+.45));
@@ -261,7 +261,7 @@ window.frame=function(tt){t=tt;
  const pm=eo(P(t,T(20)-.12,T(20)+.3));$('mirror').style.opacity=pm;$('mirror').style.transform=`translateY(${(1-pm)*30}px) rotate(${(1-pm)*12}deg)`;
  const pc=eo(P(t,T(20),T(20)+.4));$('cita').style.opacity=pc;$('cita').style.transform=`translateY(${(1-pc)*36}px) rotate(${(1-pc)*4+2}deg)`;
  // D · pizarra: once fichas, sistema y plan
- inn($('board'),7.6,40,.6); $('recD').style.opacity=P(t,8.2,8.6);
+ inn($('board'),7.6,40,.6); $('recD').style.opacity=t<15?P(t,8.2,8.6)*(1-P(t,10.95,11.2)):P(t,22.4,22.9);
  sil.forEach((s,i)=>{const q=eo(P(t,T(25)-.1+i*.05,T(25)+.35+i*.05));s.setAttribute('opacity',q);s.setAttribute('transform',`translate(0 ${(1-q)*30})`)});
  chips.forEach((c,i)=>{const a=eo(P(t,T(27)-.05+i*.03,T(27)+.2+i*.03)), m=es(P(t,T(29)-.05+i*.02,T(29)+.45+i*.02));
   const x=ROW[i][0]+(F442[i][0]-ROW[i][0])*m, y=ROW[i][1]+(F442[i][1]-ROW[i][1])*m;c.setAttribute('transform',`translate(${x} ${y}) scale(${.6+.4*a})`);c.setAttribute('opacity',a)});
@@ -269,7 +269,7 @@ window.frame=function(tt){t=tt;
  // H · vuelta a la pizarra: las siluetas se funden con la grada
  const fin=es(P(t,T(59)-.1,T(59)+.7));
  $('grada').style.opacity=.55*fin;$('pitch').style.opacity=1-.55*fin;$('crowd').style.opacity=1-.35*fin;
- const dim=1-.5*es(P(t,21.6,22.3));$('l3a').style.opacity=dim;$('l3b').style.opacity=dim;
+ const dim=t<15?1-P(t,10.95,11.2):.5*P(t,22.4,22.9);$('l3a').style.opacity=dim;$('l3b').style.opacity=dim;
  $('credD').style.opacity=P(t,T(60),T(60)+.4)*.9;
  // E · puerta que se cierra, cerrojo, móvil tachado, sello
  inn($('door2'),11.55,40,.5); inn($('phone'),11.7,40,.5);
@@ -287,6 +287,7 @@ window.frame=function(tt){t=tt;
  const cn=P(t,T(45),E(45)-.1);$('cnt').style.opacity=P(t,T(45)-.1,T(45)+.1);
  $('cnt').textContent='≈ '+(Math.round(350000*eo(cn)/1000)*1000).toLocaleString('de-DE');
  inn($('hab'),T(46),16,.4); $('recF').style.opacity=P(t,17.2,17.6);
+ const off=1-P(t,18.3,18.55);for(const id of ['cnt','hab','recF'])$(id).style.opacity*=off;
  // G · marcador
  inn($('score'),18.75,40,.5); $('recG').style.opacity=P(t,19.3,19.7);
  inn($('e1'),T(49)-.05,16,.35); inn($('d1'),T(49)+.05,16,.35); inn($('e2'),T(49)+.2,16,.35);
