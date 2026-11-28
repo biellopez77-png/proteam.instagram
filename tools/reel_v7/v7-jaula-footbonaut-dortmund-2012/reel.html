@@ -1,0 +1,213 @@
+<!doctype html><html><head><meta charset="utf-8">
+<!-- v7 · «La jaula del primer control» (Borussia Dortmund, Footbonaut, 2012). Base: tools/reel_v7/wooden/reel.html (vía v7-medianoche-driesell-1971).
+     Un solo plano sobre la pared; cada cosa que dice la voz se anima en su palabra. Gancho primero (Revisión viral 27/11):
+     el primer fotograma ya tiene la foto de Klopp dentro de la jaula. Viajes 0,9 s power2.inOut, zoom ×0,9, blur ≤ 4 px, sin destellos.
+     La voz acaba en 21,62 s; remate quieto (~21,6–22,7 s); fundido a negro de 0,5 s (22,7–23,2 s) y cierre común outro2 desde 23,2 s. -->
+<style>
+@font-face{font-family:S;src:url(fonts/instrument-serif-latin-400-normal.woff2)}
+@font-face{font-family:SI;src:url(fonts/instrument-serif-latin-400-italic.woff2)}
+@font-face{font-family:J;font-weight:500;src:url(fonts/plus-jakarta-sans-latin-500-normal.woff2)}
+@font-face{font-family:J;font-weight:700;src:url(fonts/plus-jakarta-sans-latin-700-normal.woff2)}
+@font-face{font-family:J;font-weight:800;src:url(fonts/plus-jakarta-sans-latin-800-normal.woff2)}
+@font-face{font-family:J;font-weight:800;font-style:italic;src:url(fonts/plus-jakarta-sans-latin-800-italic.woff2)}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#02050F}
+#cam{position:absolute;left:0;top:0;width:2600px;height:6400px;transform-origin:0 0;background:url(wall2.jpg)}
+.a{position:absolute}
+.serif{font-family:S;color:#F4F7FB;white-space:nowrap;line-height:1}
+.bold{font-family:J;font-weight:800;color:#F4F7FB;white-space:nowrap;letter-spacing:-.02em;line-height:1}
+.w{display:inline-block;margin-right:.24em}
+.w.acc{font-family:J;font-weight:800;font-style:italic;color:#6AA8FF;letter-spacing:-.02em}
+.w.big{font-family:J;font-weight:800;color:#F4F7FB;letter-spacing:-.02em}
+.w.uv{font-family:J;font-weight:800;color:#8B5CF6;letter-spacing:-.02em}
+.w.ink{font-family:J;font-weight:800;color:#0b0f1a;letter-spacing:-.03em}
+.mat{background:#E9EEF6;padding:16px 16px 58px;border:5px solid #0b0f1a;box-shadow:0 30px 70px rgba(0,0,0,.6)}
+.mat img{display:block;width:100%}
+.mat .cap{position:absolute;left:20px;bottom:16px;font:700 22px J;color:#3b4660;letter-spacing:.1em;white-space:nowrap}
+.press{background:#E9EEF6;border-radius:6px;padding:14px 22px;box-shadow:0 20px 40px rgba(0,0,0,.5);font:800 32px J;color:#0b0f1a;letter-spacing:.06em;white-space:nowrap}
+.press small{display:block;font:700 18px J;color:#5d6888;letter-spacing:.14em;margin-bottom:6px}
+.lab{font:800 20px J;letter-spacing:.16em;color:#8f9bb8;white-space:nowrap}
+.cred{font:500 17px J;color:#5d6888;letter-spacing:.04em;white-space:nowrap}
+.paper{background:#E9EEF6;border-radius:8px;box-shadow:0 30px 60px rgba(0,0,0,.55)}
+.pq{font-family:S;color:#0b0f1a;white-space:nowrap;line-height:1}
+.blk{position:absolute;height:92px;border-radius:10px;background:#0C1323;border:3px solid #6AA8FF;box-shadow:0 18px 30px rgba(0,0,0,.5)}
+#grain{position:absolute;inset:0;width:1080px;height:1920px;mix-blend-mode:screen;opacity:.10;pointer-events:none;image-rendering:pixelated}
+</style></head><body><div id="cam">
+
+<!-- 1 · GANCHO · El Dortmund de Klopp entrenaba dentro de una jaula (Klopp y la jaula ya en el fotograma 0) -->
+<div class="a serif" id="l1a" style="left:0;width:1080px;text-align:center;top:190px;font-size:62px"></div>
+<div class="a serif" id="l1b" style="left:0;width:1080px;text-align:center;top:272px;font-size:62px;line-height:1.05"></div>
+<img class="a" id="kl" src="img/klopp_g.jpg" style="left:320px;top:660px;width:440px;border:4px solid #0b0f1a;box-shadow:0 30px 60px rgba(0,0,0,.6)">
+<svg class="a" id="cage" style="left:90px;top:440px" width="900" height="900" viewBox="0 0 900 900"><g id="bars" fill="none" stroke="#6AA8FF" stroke-width="4" stroke-linecap="round"></g></svg>
+<div class="a press" id="pkl" style="left:510px;top:1000px"><small>ENTRENADOR · DORTMUND</small>J. KLOPP</div>
+<div class="a lab" id="labJ" style="left:90px;top:1362px">JAULA · RECREACIÓN</div>
+<div class="a cred" id="credK" style="left:520px;width:470px;text-align:right;top:1364px">Foto: Christopher Neundorf (2010) · atribución</div>
+<!-- 2 · 2012 · polaroid del estadio -->
+<div class="a mat" id="pol" style="left:70px;top:1470px;width:600px"><img src="img/stadium_g.jpg"><div class="cap">DORTMUND · 2012</div></div>
+<div class="a bold" id="l2" style="left:700px;top:1640px;font-size:120px"></div>
+<div class="a cred" id="credS" style="left:76px;top:1890px">Foto: Moayad Abuawad (2018) · CC BY-SA 4.0 (modificada)</div>
+
+<!-- 3–4 · 7–8 · el campo visto desde arriba (14 × 14 m, 72 casillas); la máquina; controla y golpea; remate en el mismo sitio -->
+<div class="a serif" id="l3a" style="left:1300px;width:1080px;text-align:center;top:450px;font-size:66px"></div>
+<div class="a serif" id="l3b" style="left:1300px;width:1080px;text-align:center;top:545px;font-size:66px"></div>
+<div class="a serif" id="l4a" style="left:1300px;width:1080px;text-align:center;top:450px;font-size:62px"></div>
+<div class="a serif" id="l4b" style="left:1300px;width:1080px;text-align:center;top:545px;font-size:62px"></div>
+<div class="a serif" id="l7a" style="left:1300px;width:1080px;text-align:center;top:450px;font-size:66px"></div>
+<div class="a serif" id="l7b" style="left:1300px;width:1080px;text-align:center;top:545px;font-size:66px"></div>
+<svg class="a" id="field" style="left:1400px;top:660px" width="880" height="900" viewBox="-40 -20 880 900">
+ <rect x="0" y="0" width="800" height="800" rx="6" fill="#0C1323" stroke="#26335a" stroke-width="4"/>
+ <rect x="44" y="44" width="712" height="712" fill="#0a1120" stroke="#3a4870" stroke-width="3"/>
+ <g id="cells"></g>
+ <line x1="400" y1="44" x2="400" y2="756" stroke="#1d2949" stroke-width="2" stroke-dasharray="10 12"/><line x1="44" y1="400" x2="756" y2="400" stroke="#1d2949" stroke-width="2" stroke-dasharray="10 12"/>
+ <g id="dimB" fill="none" stroke="#B9E0FF" stroke-width="4" stroke-linecap="round"><path id="cB" d="M0 838 H800 M0 822 V854 M800 822 V854" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/></g>
+ <text id="tB" x="400" y="890" font-family="J" font-weight="800" font-size="38" fill="#B9E0FF" text-anchor="middle" opacity="0">14 m</text>
+ <g fill="none" stroke="#B9E0FF" stroke-width="4" stroke-linecap="round"><path id="cR" d="M836 0 V800 M820 0 H852 M820 800 H852" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/></g>
+ <text id="tR" x="0" y="0" font-family="J" font-weight="800" font-size="38" fill="#B9E0FF" text-anchor="middle" opacity="0" transform="translate(826 400) rotate(-90)">14 m</text>
+ <g id="trail"></g>
+ <path id="arrow" fill="none" stroke="#F4F7FB" stroke-width="5" stroke-linecap="round" stroke-dasharray="14 12" opacity="0"/>
+ <g id="player" opacity="0"><ellipse cx="400" cy="400" rx="62" ry="30" fill="#0C1323" stroke="#B9E0FF" stroke-width="5"/><circle cx="400" cy="400" r="24" fill="#B9E0FF"/></g>
+ <circle id="ring" cx="400" cy="452" r="20" fill="none" stroke="#6AA8FF" stroke-width="4" opacity="0"/>
+ <g id="balls"></g>
+ <circle id="ball" r="16" fill="#F4F7FB" stroke="#02050F" stroke-width="3" opacity="0"/>
+ <text id="cnt" x="400" y="470" font-family="J" font-weight="800" font-size="230" fill="#F4F7FB" text-anchor="middle" letter-spacing="-8" opacity="0">0</text>
+</svg>
+<div class="a lab" id="labF" style="left:1440px;top:1588px">VISTO DESDE ARRIBA · RECREACIÓN</div>
+<div class="a mat" id="mach" style="left:1330px;top:1640px;width:340px;transform:rotate(-2deg)"><img src="img/machine_g.jpg"><div class="cap" style="font-size:17px;letter-spacing:.06em">MÁQUINA DE LANZAR · TENIS · 1928</div></div>
+<div class="a cred" id="credM" style="left:1336px;top:2080px">Foto: Agence Rol (1928) · dominio público</div>
+<div class="a bold" id="lc1" style="left:1720px;top:1700px;font-size:96px"></div>
+<div class="a bold" id="lc2" style="left:1720px;top:1820px;font-size:96px"></div>
+<div class="a serif" id="l8a" style="left:1300px;width:1080px;text-align:center;top:1640px;font-size:92px"></div>
+<div class="a serif" id="l8b" style="left:1300px;width:1080px;text-align:center;top:1770px;font-size:92px"></div>
+<svg class="a" id="glass" style="left:1795px;top:1900px" width="90" height="140" viewBox="0 0 90 140"><g fill="none" stroke="#B9E0FF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 6 H80 M10 134 H80 M18 6 C18 50 72 50 72 70 C72 90 18 90 18 134 M72 6 C72 50 18 50 18 70 C18 90 72 90 72 134"/></g><path id="sand" d="M30 126 Q45 104 60 126 Z" fill="#8B5CF6"/></svg>
+<div class="a cred" id="credF" style="left:1340px;width:1000px;text-align:center;top:2110px;line-height:1.5;white-space:normal;opacity:0">Fotos: Moayad Abuawad (CC BY-SA 4.0), Christopher Neundorf (atribución), Michael Kranewitter (CC BY-SA 3.0), Agence Rol (dominio público), vía Wikimedia Commons.<br>Jaula, casillas, recorte y balones: recreación.</div>
+
+<!-- 5 · Klopp avisó: no marcarás veinte goles en vez de diez -->
+<div class="a serif" id="l5" style="left:0;width:1080px;text-align:center;top:2420px;font-size:70px"></div>
+<div class="a paper" id="clip" style="left:120px;top:2560px;width:840px;height:760px;transform:rotate(-1.5deg)">
+ <div class="a" style="left:40px;top:30px;font:700 18px J;color:#5d6888;letter-spacing:.16em">RECORTE · RECREACIÓN</div>
+ <div class="a" style="left:40px;top:64px;width:760px;height:2px;background:#b9c3d6"></div>
+ <div class="a pq" id="q1" style="left:60px;top:110px;font-size:88px"></div>
+ <div class="a pq" id="q2" style="left:60px;top:230px;font-size:88px"></div>
+ <div class="a pq" id="q3" style="left:60px;top:440px;font-size:88px"></div>
+ <svg class="a" id="strk" style="left:40px;top:220px" width="300" height="220" viewBox="0 0 300 220"><path id="sk" d="M14 170 L280 40" stroke="#636DFF" stroke-width="16" stroke-linecap="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/></svg>
+ <div class="a" id="sig" style="left:60px;top:672px;font:700 28px J;color:#3b4660;letter-spacing:.02em">— J. Klopp (Ruhr Nachrichten)</div>
+</div>
+<div class="a cred" id="credQ" style="left:0;width:1080px;text-align:center;top:3380px">Cita: Ruhr Nachrichten, vía ingenieur.de (2013)</div>
+
+<!-- 6 · Pero la técnica cambia de base -->
+<div class="a serif" id="l6" style="left:1300px;width:1080px;text-align:center;top:2440px;font-size:70px"></div>
+<img class="a" id="gz" src="img/gotze_g.png" style="left:1580px;top:2560px;width:520px;-webkit-mask-image:linear-gradient(#000 78%,transparent 99%);filter:drop-shadow(0 30px 40px rgba(0,0,0,.55))">
+<div class="a press" id="pgz" style="left:1430px;top:3080px"><small>JUGADOR · 2012</small>M. GÖTZE</div>
+<div class="blk" id="b3" style="left:1600px;top:3240px;width:480px"></div>
+<div class="blk" id="b2" style="left:1550px;top:3344px;width:580px"></div>
+<div class="blk" id="b1" style="left:1500px;top:3448px;width:680px"></div>
+<div class="a bold" id="l6b" style="left:1300px;width:1080px;text-align:center;top:3600px;font-size:150px"></div>
+<div class="a cred" id="credG" style="left:1300px;width:1080px;text-align:center;top:3800px">Foto: Michael Kranewitter (2012) · CC BY-SA 3.0 (modificada)</div>
+
+</div>
+<canvas id="grain" width="360" height="640"></canvas>
+<script src="gsap.min.js"></script>
+<script src="words.js"></script>
+<script>
+const $=i=>document.getElementById(i), cl=x=>Math.min(1,Math.max(0,x)), P=(t,a,b)=>cl((t-a)/(b-a)), eo=x=>1-Math.pow(1-x,3), es=x=>x*x*(3-2*x);
+const W=window.WORDS, T=k=>W[k][1], E=k=>W[k][2], OUT=23.2;
+const L=[];
+function line(id,ks,cls={},txt={}){const el=$(id);for(const k of ks){const s=document.createElement('span');s.className='w'+(cls[k]?' '+cls[k]:'');s.textContent=txt[k]||W[k][0];el.appendChild(s);L.push([s,T(k)])}return el}
+line('l1a',[0,1,2,3,4]); line('l1b',[5,6,7,8],{8:'acc'},{8:'JAULA.'}); $('l1b').lastChild.style.fontSize='104px';
+line('l2',[9],{9:'acc'},{9:'2012.'});
+line('l3a',[10,11,12,13],{10:'acc',12:'acc'}); line('l3b',[14,15,16],{15:'acc'},{16:'casillas.'});
+line('l4a',[17,18,19,20,21],{},{21:'balón,'}); line('l4b',[22,23,24,25],{},{25:'casilla:'});
+line('lc1',[26],{},{26:'CONTROLA'}); line('lc2',[27,28],{},{27:'Y',28:'GOLPEA.'});
+line('l5',[29,30],{},{29:'Klopp',30:'avisó:'});
+line('q1',[31,32],{},{31:'«No'}); line('q2',[33,34],{33:'ink'}); $('q2').firstChild.style.fontSize='190px'; line('q3',[35,36,37,38],{38:'ink'},{38:'10.»'}); $('q3').lastChild.style.fontSize='190px';
+line('l6',[39,40,41,42,43],{},{39:'Pero'}); line('l6b',[44],{44:'acc'},{44:'BASE.'});
+line('l7a',[45,46,47]); line('l7b',[48,49],{},{49:'entrena...'});
+line('l8a',[50,51,52],{51:'big',52:'big'},{51:'MUCHOS',52:'BALONES'}); line('l8b',[53,54,55],{54:'uv',55:'uv'},{54:'POCO',55:'TIEMPO.'});
+// ----- cámara: un solo plano -----
+const cam={cx:540,cy:960,z:1.0}, tl=gsap.timeline({paused:true});
+const fly=(t,cx,cy,z,d=.9)=>{tl.to(cam,{cx,cy,duration:d,ease:'power2.inOut'},t);tl.to(cam,{keyframes:[{z:z*0.9,duration:d*.5,ease:'sine.out'},{z,duration:d*.5,ease:'sine.inOut'}]},t)};
+tl.set(cam,{cx:540,cy:960,z:1.0},0).to(cam,{z:1.03,duration:2.4,ease:'sine.out'},0);
+tl.to(cam,{cy:1110,z:1.0,duration:.9,ease:'power2.inOut'},2.8);
+fly(3.72,1840,1350,1.0); tl.to(cam,{z:1.04,duration:7.3,ease:'sine.out'},4.62);
+fly(12.05,540,3150,1.0); tl.to(cam,{z:1.04,duration:2.6,ease:'sine.out'},12.95);
+fly(15.6,1840,3260,1.0); tl.to(cam,{z:1.03,duration:1.5,ease:'sine.out'},16.5);
+fly(17.68,1840,1350,1.0); tl.to(cam,{z:1.03,duration:2.8,ease:'sine.out'},18.58);
+// ----- dibujo -----
+const NS='http://www.w3.org/2000/svg', mk=(tag,at,par)=>{const e=document.createElementNS(NS,tag);for(const k in at)e.setAttribute(k,at[k]);par.appendChild(e);return e};
+// jaula: cuadrado visto desde dentro (cuatro paredes de rejilla)
+const BARS=[];const O=900,I0=210,I1=690;
+const addBar=(d)=>{BARS.push(mk('path',{d,pathLength:100,'stroke-dasharray':100,'stroke-dashoffset':100,opacity:.85},$('bars')))};
+addBar(`M0 0 H${O} V${O} H0 Z`); addBar(`M${I0} ${I0} H${I1} V${I1} H${I0} Z`);
+[[0,0,I0,I0],[O,0,I1,I0],[O,O,I1,I1],[0,O,I0,I1]].forEach(([a,b,c,d])=>addBar(`M${a} ${b} L${c} ${d}`));
+for(let k=1;k<6;k++){const xo=O*k/6, xi=I0+(I1-I0)*k/6; addBar(`M${xo} 0 L${xi} ${I0}`); addBar(`M${O} ${xo} L${I1} ${xi}`); addBar(`M${xo} ${O} L${xi} ${I1}`); addBar(`M0 ${xo} L${I0} ${xi}`)}
+for(const f of [.33,.66]){const a=I0*f,b=O-I0*f;addBar(`M${a} ${a} H${b} V${b} H${a} Z`)}
+// 72 casillas: 18 por pared
+const CELLS=[];const cw=712/18;
+for(let side=0;side<4;side++)for(let i=0;i<18;i++){let x,y,w,h;const u=44+i*cw;
+ if(side==0){x=u+2;y=4;w=cw-4;h=36}else if(side==1){x=760;y=u+2;w=36;h=cw-4}else if(side==2){x=756-(i+1)*cw+2;y=760;w=cw-4;h=36}else{x=4;y=756-(i+1)*cw+2;w=36;h=cw-4}
+ CELLS.push(mk('rect',{x,y,width:w,height:h,rx:5,fill:'#0f1830',stroke:'#26335a','stroke-width':2},$('cells')))}
+const TGT=CELLS[13], TX=+TGT.getAttribute('x')+(cw-4)/2, TY=22;   // la casilla que se enciende (pared de arriba)
+const ONE=CELLS[40];                                                // la casilla encendida del remate (pared de abajo)
+// balones del remate: salen de las cuatro paredes hacia el centro
+let s2=11;const R2=()=>(s2=(s2*16807)%2147483647)/2147483647;
+const BURST=[...Array(28)].map((_,i)=>{const side=i%4,u=60+R2()*680;const p=side==0?[u,40]:side==1?[760,u]:side==2?[u,760]:[40,u];
+ const a=R2()*Math.PI*2,r=40+R2()*150;return {c:mk('circle',{r:11,fill:'#F4F7FB',stroke:'#02050F','stroke-width':2.5,opacity:0},$('balls')),p,q:[400+Math.cos(a)*r,400+Math.sin(a)*r],t0:T(51)+i*.05}});
+const TR=[...Array(6)].map(()=>mk('circle',{r:12,fill:'#B9E0FF',opacity:0},$('trail')));
+// grano
+const g=$('grain').getContext('2d'),gi=g.createImageData(360,640);let sd=1;const R=()=>(sd=(sd*16807)%2147483647)/2147483647;
+function camAt(t){tl.seek(t,false);return [cam.cx,cam.cy,cam.z]}
+let t=0;
+const inn=(el,t0,dy=40,d=.5,rot=0)=>{const p=eo(P(t,t0,t0+d));el.style.opacity=p;el.style.transform=`translateY(${(1-p)*dy}px)`+(rot?` rotate(${rot}deg)`:'');return p};
+const lo=(ids,a,b)=>{ids.forEach(id=>{$(id).style.opacity=(+($(id).style.opacity||1))*(1-P(t,a,b))})};
+window.frame=function(tt){t=tt;
+ sd=1+Math.floor(t*30)*7919;const dd=gi.data;for(let i=0;i<dd.length;i+=4){const v=R()*255;dd[i]=v*.8;dd[i+1]=v*.85;dd[i+2]=v;dd[i+3]=255}g.putImageData(gi,0,0);
+ const p0=camAt(Math.max(0,t-1/30)),p1=camAt(t),sp=Math.hypot(p1[0]-p0[0],p1[1]-p0[1]);
+ $('cam').style.transform=`translate(540px,960px) scale(${p1[2]}) translate(${-p1[0]}px,${-p1[1]}px)`;
+ $('cam').style.filter=sp>14?`blur(${Math.min(4,(sp-14)/30)}px)`:'none';
+ for(const [s,t0] of L){const p=eo(P(t,t0-.04,t0+.32));s.style.opacity=p;s.style.transform=`translateX(${(1-p)*28}px)`;s.style.filter=`blur(${(1-p)*6}px)`}
+ // 1 · Klopp ya está en el fotograma 0; la jaula se dibuja barrote a barrote hasta «jaula»; la ficha tapa la cabeza del micro
+ const k=eo(P(t,0,.5)); $('kl').style.transform=`scale(${1.04-.04*k})`;
+ BARS.forEach((b,i)=>{const a=i<2?0:.15+(i-2)/(BARS.length-2)*1.9; b.setAttribute('stroke-dashoffset',100-100*es(P(t,a,a+.45)))});
+ $('bars').setAttribute('stroke',t>=T(8)?'#B9E0FF':'#6AA8FF'); $('bars').setAttribute('stroke-width',t>=T(8)?5:4);
+ $('pkl').style.opacity=1; $('labJ').style.opacity=P(t,T(8),T(8)+.3); $('credK').style.opacity=P(t,1.2,1.6);
+ // 2 · 2012: la polaroid se posa con un pequeño giro
+ const pp=inn($('pol'),3.05,60,.55); $('pol').style.transform+=` rotate(${-3+(1-pp)*-5}deg)`; $('credS').style.opacity=P(t,3.4,3.7);
+ // 3 · el campo: cotas en cada «14», 72 casillas en cascada y contador
+ const fin=P(t,4.2,4.7); $('field').style.opacity=eo(fin); $('field').style.transform=`translateY(${(1-eo(fin))*40}px)`; $('labF').style.opacity=P(t,4.6,5.0);
+ $('cB').setAttribute('stroke-dashoffset',100-100*es(P(t,T(10)-.05,T(10)+.4))); $('tB').setAttribute('opacity',P(t,T(10)+.1,T(10)+.35));
+ $('cR').setAttribute('stroke-dashoffset',100-100*es(P(t,T(12)-.05,T(12)+.4))); $('tR').setAttribute('opacity',P(t,T(12)+.1,T(12)+.35));
+ const c0=T(15)-.05, back=P(t,7.55,7.95), relit=P(t,18.3,18.7);
+ CELLS.forEach((c,i)=>{const q=eo(P(t,c0+i*.014,c0+i*.014+.2))*(1-back); let fill=`rgba(${15+91*q},${24+144*q},${48+207*q},1)`;let st=q>.5?'#B9E0FF':'#26335a';
+  if(c===TGT){const on=P(t,T(23),T(23)+.15)*(1-P(t,12.6,13.0));const hit=t>T(28)+.32&&t<T(28)+.62?.5+.5*Math.cos((t-T(28)-.32)*30):1;if(on>0){fill=`rgba(244,247,251,${.25+.75*on*hit})`;st='#F4F7FB'}}
+  if(c===ONE&&relit>0){fill=`rgba(244,247,251,${relit})`;st='#F4F7FB'}
+  c.setAttribute('fill',fill);c.setAttribute('stroke',st)});
+ const n=Math.round(72*es(P(t,c0,c0+1.0))); $('cnt').textContent=n; $('cnt').setAttribute('opacity',P(t,c0-.1,c0+.05)*(1-P(t,7.5,7.85)));
+ lo(['l3a','l3b'],7.5,7.8);
+ // 4 · la máquina (1928, tenis); el balón sale de la pared izquierda hacia el centro; la casilla se enciende; controla y golpea
+ const mi=inn($('mach'),T(18)-.1,40,.5,-2); $('credM').style.opacity=P(t,T(18)+.3,T(18)+.6);
+ $('player').setAttribute('opacity',P(t,T(17),T(17)+.3)*(1-P(t,12.4,12.7))+P(t,18.4,18.8));
+ const S0=[44,520], S1=[400,452], bf=P(t,T(19),E(21)), bp=es(bf);
+ let bx=S0[0]+(S1[0]-S0[0])*bp, by=S0[1]+(S1[1]-S0[1])*bp;
+ const kf=es(P(t,T(28),T(28)+.34)); if(kf>0){bx=S1[0]+(TX-S1[0])*kf;by=S1[1]+(TY+18-S1[1])*kf}
+ $('ball').setAttribute('cx',bx);$('ball').setAttribute('cy',by);$('ball').setAttribute('opacity',(bf>0?1:0)*(1-P(t,12.4,12.7)));
+ TR.forEach((c,i)=>{const lag=(i+1)*.035, u=es(P(t-lag,T(19),E(21))), u2=es(P(t-lag,T(28),T(28)+.34));let x=S0[0]+(S1[0]-S0[0])*u,y=S0[1]+(S1[1]-S0[1])*u;if(u2>0){x=S1[0]+(TX-S1[0])*u2;y=S1[1]+(TY+18-S1[1])*u2}
+  const moving=(bf>0&&bf<1)||(kf>0&&kf<1);c.setAttribute('cx',x);c.setAttribute('cy',y);c.setAttribute('r',11-i*1.4);c.setAttribute('opacity',moving?.22-.03*i:0)});
+ const rg=P(t,T(26),T(26)+.45); $('ring').setAttribute('opacity',rg>0&&rg<1?(1-rg)*.9:0); $('ring').setAttribute('r',18+rg*30);
+ $('arrow').setAttribute('d',`M${S1[0]} ${S1[1]} L${TX} ${TY+24}`); $('arrow').setAttribute('opacity',P(t,T(28)-.05,T(28)+.1)*(1-P(t,12.4,12.7))*.85);
+ lo(['l4a','l4b','lc1','lc2','mach','credM'],12.3,12.6);
+ // 5 · Klopp avisó: el recorte; el «20» se tacha al decir «diez»
+ inn($('clip'),12.75,50,.55,-1.5); $('credQ').style.opacity=P(t,14.0,14.4);
+ $('sk').setAttribute('stroke-dashoffset',100-100*es(P(t,E(38)-.05,E(38)+.3))); $('sig').style.opacity=P(t,E(38)+.1,E(38)+.4);
+ // 6 · Pero la técnica cambia de base: Götze y tres bloques que se apilan
+ inn($('gz'),15.95,60,.6); inn($('pgz'),16.2,20,.4); $('credG').style.opacity=P(t,16.6,16.9);
+ [['b1',T(42)-.05],['b2',T(42)+.32],['b3',T(44)-.12]].forEach(([id,a])=>{const q=P(t,a,a+.32),e=1-Math.pow(1-q,2),bo=Math.sin(q*Math.PI)*(1-q)*0;$(id).style.opacity=P(t,a,a+.08);$(id).style.transform=`translateY(${(1-e)*-120}px)`});
+ // 7 · El primer control se entrena…: el campo otra vez, quieto, con una sola casilla encendida
+ // 8 · con muchos balones y poco tiempo: ráfaga desde las cuatro paredes; reloj de arena que cae; quieto desde ~21,6 s
+ BURST.forEach(o=>{const q=P(t,o.t0,o.t0+.42),e=eo(q);o.c.setAttribute('cx',o.p[0]+(o.q[0]-o.p[0])*e);o.c.setAttribute('cy',o.p[1]+(o.q[1]-o.p[1])*e);o.c.setAttribute('opacity',q>0?.95:0)});
+ const gq=P(t,T(54)-.1,T(54)+.3),ge=1-Math.pow(1-gq,3); $('glass').style.opacity=P(t,T(54)-.1,T(54));$('glass').style.transform=`translateY(${(1-ge)*-90}px)`;
+ $('credF').style.opacity=P(t,19.6,20.0);
+ // fundido a negro antes del cierre común
+ document.body.style.opacity=1-P(t,OUT-.5,OUT);
+};
+document.fonts.ready.then(()=>Promise.all([...document.images].map(i=>i.complete?1:new Promise(r=>{i.onload=r;i.onerror=r})))).then(()=>{frame(0);window.ready=true});
+</script></body></html>
