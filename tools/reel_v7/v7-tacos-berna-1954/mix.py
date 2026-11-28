@@ -4,10 +4,10 @@ Música real (Epidemic: «Musical, Loop, Logo, Orchestra, Epic, Dreamy, Suspense
 La voz se abre en cinco silencios para que quepan los viajes de cámara: 0,4 s en 2,42 («perder... En»), 0,4 s en 6,76 («tres... En la final»),
 0,5 s en 8,85 («llovió... Fritz»), 0,4 s en 13,11 («campo... Y sus botas») y 0,5 s en 17,61 («largos... Alemania»); words.json ya lleva esos desplazamientos.
 Remontaje (27/11, crítica de Andrés): el remate «CÓMO LLEGAS.» se queda quieto hasta 26,0 s (antes 25,1), el marcador suena al entrar con «Mundial» y las tablillas
-suenan al aparecer; el cierre es el audio de tools/reel_v6/outro/outro2.mp4 desde su inicio, a la vez que el fundido de 0,5 s del vídeo.
+suenan al aparecer; el cierre (r3, 28/11: tras un fundido a negro de 0,5 s, desde 26,5 s) es el audio de tools/reel_v6/outro/outro2.mp4 desde su inicio, a la vez que el fundido de 0,5 s del vídeo.
 python3 mix.py voz.mp3 outro2.mp4 sting.mp3 out.wav   (necesita words.json; sting = Epidemic «Musical, Loop, Logo, Calm, Piano 01», como en v7-diez-a-tres-brooks-1980)"""
 import sys, json, subprocess, numpy as np
-SR = 48000; OUT = 26.0; DUR = OUT + 4.0   # la voz acaba en 24,9 s; a 26,0 empieza el fundido de 0,5 s al cierre (outro2, 4 s)
+SR = 48000; OUT = 26.0; OC = 26.5; DUR = OC + 4.0   # r3: fundido a negro 26,0–26,5 y outro2 desde 26,5 (su voz, «Dale», ~26,8 s); la voz acaba en 24,9 s; a 26,0 empieza el fundido de 0,5 s al cierre (outro2, 4 s)
 CUTS = [(2.42, .4), (6.76, .4), (8.85, .5), (13.11, .4), (17.61, .5)]
 W = json.load(open('words.json')); T = lambda k: W[k][1]; E = lambda k: W[k][2]
 def ld(f, ch=2):
@@ -25,7 +25,7 @@ def on(x):   # quita el silencio inicial: el golpe cae justo en su tiempo
     i = int(np.argmax(np.abs(x).max(1) > .08 * np.abs(x).max())); return x[max(0, i - 240):]
 put(mus, ld('mus.mp3'), 0.0, 1.0, fi=.3, fo=2.0)
 tt = np.arange(N) / SR; env = np.ones(N)
-env *= 1 + .35 * np.clip((tt - (T(51) - .3)) / .4, 0, 1) * np.clip((OUT + 1.3 - tt) / .8, 0, 1)   # sube 1 s en el remate y baja al cierre
+env *= 1 + .35 * np.clip((tt - (T(51) - .3)) / .4, 0, 1) * np.clip((OC + 1.3 - tt) / .8, 0, 1)   # sube 1 s en el remate y baja al cierre
 mus *= env[:, None]
 WH = pk(ld('whoosh.mp3')); SL = pk(on(ld('slide.mp3'))); PG = pk(on(ld('page.mp3'))); FL = pk(on(ld('flip.mp3'))); CP = pk(on(ld('chip.mp3')))
 SH = pk(on(ld('shutter.mp3'))); MK = pk(on(ld('marker.mp3'))); MD = pk(on(ld('mud.mp3'))); RT = pk(on(ld('ratchet.mp3'))); WR = pk(on(ld('wrench.mp3')))
@@ -34,7 +34,7 @@ for f in (2.2, 6.92, 9.46, 14.18, 19.14): put(sfx, WH, f - .3, .07, dur=1.4, fi=
 put(sfx, SL, 0.0, .06); put(sfx, SL, .2, .04)                       # los húngaros recortados y su ficha
 for k in range(4): put(sfx, PG, T(2) + (E(3) + .1 - T(2)) * k / 4, .05, dur=.5, fo=.15)   # el calendario pasa cuatro hojas
 put(sfx, SL, T(4) - .1, .03)                                         # «0 derrotas»
-put(sfx, SL, T(8) - .05, .04)                                        # marcador, con «Mundial»
+put(sfx, SL, 2.8, .04)                                               # r3: el marcador entra al final del viaje
 put(sfx, SL, T(14) - .1, .035)                                       # tablillas, con «Alemania»
 put(sfx, FL, T(15) - .12, .08, dur=.5, fo=.15); put(sfx, FL, T(16) + .05, .08, dur=.5, fo=.15)   # tablillas 8 y 3
 for i in range(8): put(sfx, CP, T(15) - .05 + i * .04 + .2, .03, dur=.35, fo=.1)   # ocho fichas
@@ -60,8 +60,8 @@ cuts = [0.0] + [c for c, _ in CUTS] + [len(V) / SR]; sh = 0.0
 for k in range(len(cuts) - 1):
     put(vox, V[int(cuts[k] * SR):int(cuts[k + 1] * SR)], cuts[k] + sh)
     if k < len(CUTS): sh += CUTS[k][1]
-put(vox, ld(sys.argv[2]), OUT, dur=4.0)                              # audio del cierre outro2 desde su inicio (su voz empieza a los 0,3 s)
-sti = np.zeros((N, 2)); put(sti, ld(sys.argv[3]), OUT, .22, dur=4.0, fi=.3, fo=1.2)   # sting de piano bajo
+put(vox, ld(sys.argv[2]), OC, dur=4.0)                               # audio del cierre outro2 desde su inicio (su voz empieza a los 0,3 s)
+sti = np.zeros((N, 2)); put(sti, ld(sys.argv[3]), OC, .22, dur=4.0, fi=.3, fo=1.2)   # sting de piano bajo
 e = np.abs(vox[:, 0]); hop = 480; ev = np.array([e[i:i + hop].max() for i in range(0, N, hop)])
 ev = np.minimum(1, ev / (np.percentile(ev[ev > 0], 90) + 1e-9)); sm = np.zeros_like(ev)
 for i in range(1, len(ev)): a = .45 if ev[i] > sm[i - 1] else .05; sm[i] = sm[i - 1] + a * (ev[i] - sm[i - 1])
