@@ -1,0 +1,237 @@
+<!doctype html><html><head><meta charset="utf-8">
+<!-- v7 · «La servilleta» (Carles Rexach y el fichaje de Messi, Barcelona, 14/12/2000). Base: v7-siete-segundos-dantoni / wooden.
+     Un solo plano sobre la pared; cada cosa que dice la voz se anima en su palabra. Gancho: el primer fotograma ya tiene la foto de Messi
+     y la servilleta doblada. Viajes 0,9 s power2.inOut, zoom ×0,9, blur ≤ 4 px, sin destellos.
+     Remate entero y quieto de 25,1 a 26,2 s; fundido a negro 26,2–26,7 s; cierre común outro2 desde 26,7 s. -->
+<style>
+@font-face{font-family:S;src:url(fonts/instrument-serif-latin-400-normal.woff2)}
+@font-face{font-family:SI;src:url(fonts/instrument-serif-latin-400-italic.woff2)}
+@font-face{font-family:J;font-weight:500;src:url(fonts/plus-jakarta-sans-latin-500-normal.woff2)}
+@font-face{font-family:J;font-weight:700;src:url(fonts/plus-jakarta-sans-latin-700-normal.woff2)}
+@font-face{font-family:J;font-weight:800;src:url(fonts/plus-jakarta-sans-latin-800-normal.woff2)}
+@font-face{font-family:J;font-weight:800;font-style:italic;src:url(fonts/plus-jakarta-sans-latin-800-italic.woff2)}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#02050F}
+#cam{position:absolute;left:0;top:0;width:2600px;height:6400px;transform-origin:0 0;background:url(wall2.jpg)}
+.a{position:absolute}
+.serif{font-family:S;color:#F4F7FB;white-space:nowrap;line-height:1}
+.bold{font-family:J;font-weight:800;color:#F4F7FB;white-space:nowrap;letter-spacing:-.02em;line-height:1}
+.acc{font-family:J;font-weight:800;font-style:italic;color:#6AA8FF}
+.w{display:inline-block;margin-right:.24em}
+.mat{background:#E9EEF6;padding:18px 18px 58px;border:5px solid #0b0f1a;box-shadow:0 30px 70px rgba(0,0,0,.6)}
+.mat img{display:block;width:100%}
+.mat .cap{position:absolute;left:22px;bottom:16px;font:700 20px J;color:#3b4660;letter-spacing:.08em;white-space:nowrap}
+.panel{background:#0C1323;border:1px solid #26335a;border-radius:22px;box-shadow:0 40px 90px rgba(0,0,0,.6)}
+.press{background:#E9EEF6;border-radius:6px;padding:14px 22px;box-shadow:0 20px 40px rgba(0,0,0,.5);font:800 30px J;color:#0b0f1a;letter-spacing:.06em;white-space:nowrap}
+.press small{display:block;font:700 18px J;color:#5d6888;letter-spacing:.14em;margin-bottom:6px}
+.lab{font:800 22px J;letter-spacing:.16em;color:#8f9bb8;white-space:nowrap}
+.cred{font:500 18px J;color:#6b7694;letter-spacing:.04em;white-space:nowrap}
+.card{position:absolute;width:230px;height:300px;border-radius:16px;background:#0C1323;border:2px solid #26335a;box-shadow:0 24px 50px rgba(0,0,0,.55)}
+.card i{position:absolute;left:26px;height:12px;border-radius:6px;background:#1d2846}
+.card b{position:absolute;left:0;width:100%;text-align:center;top:118px;font:800 130px J;color:#6AA8FF;line-height:1}
+#grain{position:absolute;inset:0;width:1080px;height:1920px;mix-blend-mode:screen;opacity:.10;pointer-events:none;image-rendering:pixelated}
+#black{position:absolute;inset:0;background:#000;opacity:0}
+</style></head><body><div id="cam">
+
+<!-- A · GANCHO · El fichaje de Messi empezó en una servilleta (foto y servilleta desde el fotograma 0) -->
+<div class="a serif" id="l1a" style="left:0;width:1080px;text-align:center;top:250px;font-size:84px"></div>
+<img class="a" id="messi" src="img/messi_g.png" style="left:30px;top:400px;width:540px;filter:drop-shadow(0 30px 40px rgba(0,0,0,.55))">
+<div class="a press" id="pmes" style="left:70px;top:1110px;transform:rotate(-2deg)"><small>FOTO DE 2005</small>LIONEL MESSI</div>
+<div class="a" id="nap1" style="left:600px;top:640px;width:420px;height:420px"></div>
+<div class="a serif" id="l1b" style="left:0;width:1080px;text-align:center;top:1300px;font-size:76px"></div>
+<div class="a bold" id="l1c" style="left:0;width:1080px;text-align:center;top:1400px;font-size:132px"></div>
+<div class="a cred" id="credA" style="left:0;width:1080px;text-align:center;top:1600px">Foto: Josep Tomàs, 2005 · CC BY-SA 4.0 · servilleta: recreación</div>
+
+<!-- B · Barcelona, diciembre de 2000; tenía trece años -->
+<div class="a lab" id="lbB" style="left:1190px;top:250px">BARCELONA · DIC. 2000</div>
+<div class="a serif" id="l2a" style="left:1190px;top:310px;font-size:72px"></div>
+<div class="a panel" id="ficha" style="left:1190px;top:450px;width:1010px;height:780px">
+ <div class="a lab" style="left:44px;top:40px">FICHA DE JUGADOR · RECREACIÓN</div>
+ <svg class="a" style="left:60px;top:110px" width="380" height="560" viewBox="0 0 380 560">
+  <rect x="2" y="2" width="376" height="556" rx="18" fill="#111a30" stroke="#26335a" stroke-width="3"/>
+  <circle cx="190" cy="210" r="86" fill="none" stroke="#3a4870" stroke-width="6"/>
+  <path d="M50 520 Q60 340 190 330 Q320 340 330 520" fill="none" stroke="#3a4870" stroke-width="6"/>
+ </svg>
+ <div class="a lab" style="left:480px;top:140px">EDAD</div>
+ <div class="a bold" id="n13" style="left:470px;top:190px;font-size:330px;letter-spacing:-.05em;color:#6AA8FF">13</div>
+ <div class="a" style="left:480px;top:560px;width:470px;height:14px;border-radius:7px;background:#1d2846"></div>
+ <div class="a" style="left:480px;top:600px;width:360px;height:14px;border-radius:7px;background:#1d2846"></div>
+ <div class="a" style="left:480px;top:640px;width:410px;height:14px;border-radius:7px;background:#1d2846"></div>
+</div>
+<div class="a serif" id="l2b" style="left:1190px;top:1300px;font-size:76px"></div>
+<div class="a bold" id="l2c" style="left:1190px;top:1390px;font-size:150px"></div>
+
+<!-- C · Desde septiembre el club dudaba: algunos no lo veían claro -->
+<div class="a serif" id="l3a" style="left:100px;top:2080px;font-size:80px"></div>
+<div class="a serif" id="l3b" style="left:100px;top:2175px;font-size:80px"></div>
+<div class="a panel" id="cal" style="left:140px;top:2320px;width:800px;height:560px;overflow:hidden">
+ <div class="a" style="left:0;top:0;width:800px;height:96px;background:#636DFF"></div>
+ <div class="a bold" style="left:0;width:800px;text-align:center;top:30px;font-size:36px;letter-spacing:.14em">2000</div>
+ <div class="a bold" id="mon" style="left:0;width:800px;text-align:center;top:190px;font-size:240px;letter-spacing:-.03em">SEP</div>
+ <div class="a" id="sheet" style="left:0;top:96px;width:800px;height:464px;background:#0C1323;opacity:0"></div>
+ <div class="a lab" style="left:0;width:800px;text-align:center;top:490px">CALENDARIO · RECREACIÓN</div>
+</div>
+<div class="a bold" id="arrow" style="left:140px;top:2900px;width:800px;text-align:center;font-size:56px;color:#8f9bb8;letter-spacing:.06em;opacity:0">SEP → DIC</div>
+<div id="cards1" class="a" style="left:110px;top:2990px;width:860px;height:320px"></div>
+<div class="a serif" id="l3c" style="left:110px;top:3350px;font-size:76px"></div>
+
+<!-- D · RE-HOOK · Pero Rexach pidió papel en un club de tenis -->
+<div class="a serif" id="l4a" style="left:1190px;top:2060px;font-size:84px"></div>
+<div class="a bold" id="l4b" style="left:1190px;top:2160px;font-size:140px"></div>
+<div class="a mat" id="prex" style="left:1210px;top:2390px;width:400px;transform:rotate(-3deg)"><img src="img/rexach_g.jpg"><div class="cap">CARLES REXACH · 2008</div></div>
+<div class="a press" id="prx" style="left:1200px;top:3010px"><small>SECRETARIO TÉCNICO DEL BARÇA EN 2000</small>CARLES REXACH</div>
+<div class="a cred" id="credD" style="left:1204px;top:3120px">Foto: Tuvu13, 2008 · CC BY 3.0</div>
+<svg class="a" id="table" style="left:1660px;top:2400px" width="560" height="580" viewBox="0 0 560 580">
+ <rect x="20" y="20" width="520" height="520" rx="26" fill="#0C1323" stroke="#26335a" stroke-width="3"/>
+ <circle cx="280" cy="280" r="220" fill="#111a30" stroke="#3a4870" stroke-width="5"/>
+ <circle cx="280" cy="280" r="200" fill="none" stroke="#1d2846" stroke-width="3" stroke-dasharray="10 10"/>
+ <g id="cups" opacity="0"><circle cx="170" cy="190" r="40" fill="#E9EEF6" stroke="#B9E0FF" stroke-width="4"/><circle cx="170" cy="190" r="26" fill="#3b2a20"/><path d="M208 182 h22 v18 h-22" fill="none" stroke="#E9EEF6" stroke-width="7"/>
+  <circle cx="380" cy="380" r="40" fill="#E9EEF6" stroke="#B9E0FF" stroke-width="4"/><circle cx="380" cy="380" r="26" fill="#3b2a20"/><path d="M342 372 h-22 v18 h22" fill="none" stroke="#E9EEF6" stroke-width="7"/></g>
+ <g id="racket" opacity="0" transform="rotate(-28 400 160)"><ellipse cx="400" cy="140" rx="70" ry="92" fill="none" stroke="#6AA8FF" stroke-width="9"/>
+  <g stroke="#3a4870" stroke-width="2.5"><path d="M352 100 H448 M340 130 H460 M340 160 H460 M352 190 H448 M372 60 V220 M400 50 V230 M428 60 V220"/></g>
+  <rect x="392" y="230" width="16" height="110" rx="6" fill="#6AA8FF"/></g>
+ <circle id="ballT" cx="120" cy="420" r="18" fill="#B9E0FF" opacity="0"/>
+ <text x="40" y="568" font-family="J" font-weight="700" font-size="19" fill="#5d6888" letter-spacing="2">CLUB DE TENIS · RECREACIÓN</text>
+</svg>
+<div class="a serif" id="l4c" style="left:1190px;top:3210px;font-size:76px"></div>
+
+<!-- E · Le dieron una servilleta  ·  F · Escribió que lo fichaba bajo su responsabilidad, pese a opiniones en contra -->
+<div class="a serif" id="l5a" style="left:1190px;top:3400px;font-size:76px"></div>
+<div class="a bold" id="l5b" style="left:1190px;top:3490px;font-size:124px"></div>
+<div class="a panel" id="cloth" style="left:1190px;top:3660px;width:1010px;height:960px;overflow:hidden">
+ <svg class="a" style="left:0;top:0" width="1010" height="960"><defs><pattern id="pt" width="80" height="80" patternUnits="userSpaceOnUse"><rect width="40" height="40" fill="#131c33"/><rect x="40" y="40" width="40" height="40" fill="#131c33"/></pattern></defs>
+ <rect width="1010" height="960" fill="url(#pt)" opacity=".8"/></svg>
+ <div class="a lab" style="left:36px;top:910px">MANTEL Y SERVILLETA · RECREACIÓN</div>
+</div>
+<div class="a" id="nap2" style="left:1405px;top:3740px;width:580px;height:580px"></div>
+<div id="cards2" class="a" style="left:1190px;top:3660px;width:1010px;height:960px"></div>
+<div class="a serif" id="l6a" style="left:1190px;top:4660px;font-size:66px"></div>
+<div class="a bold" id="l6b" style="left:1190px;top:4750px;font-size:92px"></div>
+<div class="a serif" id="l6c" style="left:1190px;top:4870px;font-size:66px"></div>
+
+<!-- G · En 2004 debutó con el primer equipo -->
+<div class="a bold" id="l7a" style="left:120px;top:3600px;font-size:150px"></div>
+<div class="a" id="cover" style="left:170px;top:3780px;width:740px;height:960px;background:#E9EEF6;border:5px solid #0b0f1a;box-shadow:0 30px 70px rgba(0,0,0,.6);overflow:hidden">
+ <div class="a" style="left:0;top:0;width:730px;height:120px;background:#0b0f1a"></div>
+ <div class="a bold" style="left:30px;top:30px;font-size:64px;letter-spacing:.02em">PRIMER EQUIPO</div>
+ <img class="a" src="img/messi_frame_g.jpg" style="left:18px;top:138px;width:694px;height:740px;object-fit:cover;object-position:50% 18%">
+ <div class="a" style="left:22px;top:896px;font:700 20px J;color:#3b4660;letter-spacing:.08em;white-space:nowrap">LIONEL MESSI · FOTO: 26/10/2005</div>
+</div>
+<div class="a serif" id="l7b" style="left:120px;top:4800px;font-size:72px"></div>
+<div class="a bold" id="l7c" style="left:120px;top:4890px;font-size:110px"></div>
+
+<!-- H · REMATE · Decidir es firmar... aunque sea en una servilleta (vuelve a la servilleta firmada) -->
+<div class="a serif" id="l8a" style="left:1190px;width:1010px;text-align:center;top:4700px;font-size:92px"></div>
+<div class="a serif" id="l8b" style="left:1190px;width:1010px;text-align:center;top:4830px;font-size:80px"></div>
+<div class="a bold" id="l8c" style="left:1190px;width:1010px;text-align:center;top:4930px;font-size:150px;color:#8B5CF6"></div>
+<div class="a cred" id="credF" style="left:1190px;width:1010px;text-align:center;top:5150px;line-height:1.45;white-space:normal;opacity:0">Fotos: Josep Tomàs (CC BY-SA 4.0) y Tuvu13 (CC BY 3.0), modificadas, vía Wikimedia Commons.<br>Servilleta, mesa, calendario y fichas: recreación.</div>
+
+</div>
+<canvas id="grain" width="360" height="640"></canvas>
+<div id="black"></div>
+<script src="gsap.min.js"></script>
+<script src="words.js"></script>
+<script>
+const $=i=>document.getElementById(i), cl=x=>Math.min(1,Math.max(0,x)), P=(t,a,b)=>cl((t-a)/(b-a)), eo=x=>1-Math.pow(1-x,3), es=x=>x*x*(3-2*x);
+const W=window.WORDS, T=k=>W[k][1], E=k=>W[k][2], OUT=26.2;
+const L=[];
+function line(id,ks,acc=[],txt={}){const el=$(id);for(const k of ks){const s=document.createElement('span');s.className='w'+(acc.includes(k)?' acc':'');s.textContent=txt[k]||W[k][0];el.appendChild(s);L.push([s,T(k),id])}}
+line('l1a',[0,1,2,3]); line('l1b',[4,5,6]); line('l1c',[7],[],{7:'SERVILLETA.'});
+line('l2a',[8,9,10,11],[],{8:'Barcelona,',11:'2000;'}); line('l2b',[12],[],{12:'tenía'}); line('l2c',[13,14],[13],{14:'AÑOS'});
+line('l3a',[15,16]); line('l3b',[17,18,19],[19],{19:'dudaba:'}); line('l3c',[20,21,22,23,24],[],{20:'algunos',24:'claro.'});
+line('l4a',[25,26],[],{26:'Rexach'}); line('l4b',[27,28],[],{27:'PIDIÓ',28:'PAPEL'}); line('l4c',[29,30,31,32,33],[],{33:'tenis.'});
+line('l5a',[34,35]); line('l5b',[36,37],[],{36:'UNA',37:'SERVILLETA.'});
+line('l6a',[38,39,40,41,42,43]); line('l6b',[44],[44],{44:'RESPONSABILIDAD,'}); line('l6c',[45,46,47,48,49],[],{49:'contra.'});
+line('l7a',[50,51],[51]); line('l7b',[52,53,54]); line('l7c',[55,56],[],{55:'PRIMER',56:'EQUIPO.'});
+line('l8a',[57,58,59],[],{59:'firmar...'}); line('l8b',[60,61,62,63]); line('l8c',[64],[],{64:'SERVILLETA.'});
+$('l8c').querySelector('span').style.color='#8B5CF6';
+// ----- cámara: un solo plano -----
+const cam={cx:540,cy:960,z:1.0}, tl=gsap.timeline({paused:true});
+const fly=(t,cx,cy,z,d=.9)=>{tl.to(cam,{cx,cy,duration:d,ease:'power2.inOut'},t);tl.to(cam,{keyframes:[{z:z*0.9,duration:d*.5,ease:'sine.out'},{z,duration:d*.5,ease:'sine.inOut'}]},t)};
+tl.set(cam,{cx:540,cy:960,z:1.0},0).to(cam,{z:1.04,cy:975,duration:2.7,ease:'sine.out'},0);
+fly(2.78,1700,960,1.0); tl.to(cam,{z:1.04,duration:2.9,ease:'sine.out'},3.68);
+fly(6.6,540,2850,1.0); tl.to(cam,{cy:2880,z:1.03,duration:2.9,ease:'sine.inOut'},7.5);
+fly(10.44,1700,2860,1.0); tl.to(cam,{z:1.04,duration:1.75,ease:'sine.out'},11.34);
+fly(13.12,1700,4240,1.0); tl.to(cam,{cy:4270,z:1.02,duration:4.9,ease:'sine.inOut'},14.02);
+fly(18.94,540,4400,1.0); tl.to(cam,{z:1.04,duration:1.7,ease:'sine.out'},19.84);
+fly(21.62,1700,4560,1.0); tl.to(cam,{z:1.03,duration:2.4,ease:'sine.out'},22.52);   // quieta desde 24,92 s
+// ----- servilletas (dibujadas) -----
+const NS='http://www.w3.org/2000/svg', mk=(tag,at,par)=>{const e=document.createElementNS(NS,tag);for(const k in at)e.setAttribute(k,at[k]);par.appendChild(e);return e};
+function napkin(host,sz,writing){
+  const s=mk('svg',{width:sz,height:sz,viewBox:'0 0 400 400'},host);
+  mk('path',{d:'M14 18 L386 10 L392 386 L10 392 Z',fill:'#EEEAE0',stroke:'#cfd6e4','stroke-width':2},s);
+  mk('path',{d:'M30 34 L370 28 L376 370 L26 376 Z',fill:'none',stroke:'#d6dbe6','stroke-width':2,'stroke-dasharray':'3 6'},s);
+  mk('path',{d:'M12 200 L390 198',stroke:'#B9E0FF','stroke-width':2.5,opacity:.9},s); mk('path',{d:'M200 12 L201 390',stroke:'#B9E0FF','stroke-width':2.5,opacity:.9},s);
+  const o={svg:s,lines:[],sig:[]};
+  if(writing){
+    const g=mk('g',{},s); let y=72;
+    for(let i=0;i<7;i++){let d=`M52 ${y}`;const len=i==6?180:270-(i%3)*30;for(let x=52;x<52+len;x+=14){d+=` Q${x+5} ${y-(i%2?9:12)} ${x+9} ${y} T${x+14} ${y}`}
+      o.lines.push(mk('path',{d,fill:'none',stroke:'#3d6fc4','stroke-width':3.2,'stroke-linecap':'round',pathLength:100,'stroke-dasharray':'0 100'},g)); y+=34}
+    const sg=[[60,330,'M60 330 q20 -40 34 -4 q10 26 26 -16 q12 -30 22 6 q8 22 30 -6'],[170,336,'M168 338 q18 -34 30 0 t28 -10 q10 -18 26 4 l20 -8'],[280,330,'M276 334 q10 -36 26 -6 q16 24 22 -12 q8 -18 26 10']];
+    sg.forEach(([,,d])=>o.sig.push(mk('path',{d,fill:'none',stroke:'#3d6fc4','stroke-width':3.6,'stroke-linecap':'round',pathLength:100,'stroke-dasharray':'0 100'},g)));
+    o.pen=mk('g',{opacity:0},s); mk('rect',{x:-6,y:-120,width:12,height:120,rx:5,fill:'#6AA8FF',transform:'rotate(28)'},o.pen); mk('path',{d:'M0 0 l-5 -14 l10 0 z',fill:'#0b0f1a',transform:'rotate(28)'},o.pen);
+  }
+  return o;
+}
+const N1=napkin($('nap1'),420,false), N2=napkin($('nap2'),580,true);
+// pliegue de la servilleta del gancho: medio doblada; se despliega en «servilleta»
+const flap=mk('path',{d:'M14 200 L390 198 L386 10 L14 18 Z',fill:'#e3dfd4',stroke:'#cfd6e4','stroke-width':2},N1.svg);
+// fichas con «?»
+function cards(host,pos){return pos.map(([x,y,r])=>{const d=document.createElement('div');d.className='card';d.style.left=x+'px';d.style.top=y+'px';d.dataset.r=r;
+  d.innerHTML='<i style="top:30px;width:150px"></i><i style="top:58px;width:110px"></i><b>?</b><i style="top:262px;width:170px"></i>';$(host).appendChild(d);return d})}
+const C1=cards('cards1',[[0,10,-3],[315,0,1],[630,10,3]]);
+const C2=cards('cards2',[[40,420,-8],[760,140,7],[740,600,-4]]);
+// grano
+const g=$('grain').getContext('2d'),gi=g.createImageData(360,640);let sd=1;const R=()=>(sd=(sd*16807)%2147483647)/2147483647;
+function camAt(t){tl.seek(t,false);return [cam.cx,cam.cy,cam.z]}
+let t=0;
+const inn=(el,t0,dy=40,d=.5,rot=0)=>{const p=eo(P(t,t0,t0+d));el.style.opacity=p;el.style.transform=`translateY(${(1-p)*dy}px) rotate(${rot}deg)`;return p};
+window.frame=function(tt){t=tt;
+ sd=1+Math.floor(t*30)*7919;const dd=gi.data;for(let i=0;i<dd.length;i+=4){const v=R()*255;dd[i]=v*.8;dd[i+1]=v*.85;dd[i+2]=v;dd[i+3]=255}g.putImageData(gi,0,0);
+ const p0=camAt(Math.max(0,t-1/30)),p1=camAt(t),sp=Math.hypot(p1[0]-p0[0],p1[1]-p0[1]);
+ $('cam').style.transform=`translate(540px,960px) scale(${p1[2]}) translate(${-p1[0]}px,${-p1[1]}px)`;
+ $('cam').style.filter=sp>14?`blur(${Math.min(4,(sp-14)/30)}px)`:'none';
+ for(const [s,t0] of L){if(t0<0.05){s.style.opacity=1;s.style.transform='none';s.style.filter='none';continue}const p=eo(P(t,t0-.04,t0+.32));s.style.opacity=p;s.style.transform=`translateX(${(1-p)*28}px)`;s.style.filter=`blur(${(1-p)*6}px)`}
+ // A · Messi y la servilleta doblada ya en el fotograma 0; en «servilleta» se despliega
+ const k1=es(P(t,T(7)-.05,T(7)+.55));
+ flap.setAttribute('transform',`translate(0 200) scale(1 ${Math.cos(Math.PI*k1)}) translate(0 -200)`); flap.setAttribute('opacity',k1>.5?Math.max(0,1-(k1-.5)*4):1);
+ $('nap1').style.transform=`rotate(${4-4*k1}deg) translateY(${-14*Math.sin(Math.PI*k1)}px)`;
+ $('pmes').style.opacity=1; $('credA').style.opacity=P(t,1.0,1.4);
+ // B · rótulo, ficha sin cara y el 13
+ $('lbB').style.opacity=P(t,T(8)-.1,T(8)+.3);
+ inn($('ficha'),3.2,40,.55);
+ const k13=eo(P(t,T(13)-.05,T(13)+.4)); $('n13').style.opacity=k13; $('n13').style.filter=`blur(${(1-k13)*8}px)`; $('n13').style.transform=`scale(${.9+.1*k13})`;
+ // C · calendario SEP → OCT → NOV → DIC; tres fichas con «?»
+ inn($('cal'),T(15)-.35,40,.45);
+ const ms=['SEP','OCT','NOV','DIC'], ts=[T(16),T(17)+.05,T(18)+.1,T(19)+.1]; let mi=0; ts.forEach((x,i)=>{if(t>=x)mi=i});
+ $('mon').textContent=ms[mi]; $('mon').style.color=mi==3?'#6AA8FF':'#F4F7FB';
+ let fl=0; ts.slice(1).forEach(x=>{const q=P(t,x-.18,x+.12); if(q>0&&q<1)fl=Math.max(fl,Math.sin(Math.PI*q))});
+ $('sheet').style.opacity=fl*.85; $('sheet').style.transform=`translateY(${-60*fl}px)`;
+ $('arrow').style.opacity=P(t,T(19),T(19)+.35);
+ C1.forEach((d,i)=>inn(d,T(20)-.05+i*.22,50,.4,+d.dataset.r));
+ // D · re-hook: Rexach en ficha, mesa del club de tenis
+ const pr=inn($('prex'),T(26)-.1,50,.5,-3); inn($('prx'),T(26)+.25,20,.4); $('credD').style.opacity=P(t,T(27),T(27)+.4);
+ inn($('table'),T(29)-.2,40,.5); $('cups').setAttribute('opacity',eo(P(t,T(31)-.05,T(31)+.3)));
+ const kr=eo(P(t,T(33)-.05,T(33)+.4)); $('racket').setAttribute('opacity',kr);
+ const kb=P(t,T(33),T(33)+.7); $('ballT').setAttribute('opacity',kb>0?1-P(t,T(33)+.9,T(33)+1.2):0); $('ballT').setAttribute('cy',420-Math.abs(Math.sin(Math.PI*2*kb))*60);
+ // E · el mantel ya está; la servilleta entra deslizándose
+ inn($('cloth'),12.9,30,.5);
+ const k2=eo(P(t,T(36)-.1,T(37)+.25)); $('nap2').style.opacity=k2; $('nap2').style.transform=`translate(${(1-k2)*-260}px,${(1-k2)*60}px) rotate(${(1-k2)*-10}deg)`;
+ // F · el bolígrafo escribe líneas ilegibles (recreación) y tres firmas; las fichas «?» aparecen y se apartan
+ const w0=T(38), w1=E(44); let px=null,py=null;
+ N2.lines.forEach((p,i)=>{const a=w0+i*(w1-w0)/7,b=a+(w1-w0)/7;const q=P(t,a,b);p.setAttribute('stroke-dasharray',`${q*100} 100`);p.setAttribute('opacity',q>0?1:0);if(q>0&&q<1){const L0=p.getTotalLength(),pt=p.getPointAtLength(L0*q);px=pt.x;py=pt.y}});
+ N2.sig.forEach((p,i)=>{const a=T(45)+i*.42,b=a+.38;const q=P(t,a,b);p.setAttribute('stroke-dasharray',`${q*100} 100`);p.setAttribute('opacity',q>0?1:0);if(q>0&&q<1){const L0=p.getTotalLength(),pt=p.getPointAtLength(L0*q);px=pt.x;py=pt.y}});
+ const pv=P(t,w0-.3,w0)*(1-P(t,T(45)+1.3,T(45)+1.6)); N2.pen.setAttribute('opacity',pv);
+ if(px!==null){N2.pen.setAttribute('transform',`translate(${px} ${py})`);N2.lx=px;N2.ly=py}else if(N2.lx!=null)N2.pen.setAttribute('transform',`translate(${N2.lx} ${N2.ly})`);else N2.pen.setAttribute('transform','translate(60 80)');
+ C2.forEach((d,i)=>{const a=eo(P(t,T(45)-.1+i*.1,T(45)+.25+i*.1)),o=es(P(t,T(48)+i*.08,T(49)+.35+i*.08));const dir=i==0?-1:1;
+  d.style.opacity=a*(1-o); d.style.transform=`translate(${dir*o*420}px,${(1-a)*-40}px) rotate(${+d.dataset.r+dir*o*14}deg) scale(.8)`});
+ // al bajar al remate se apagan las frases de F
+ const fF=1-P(t,21.62,22.0); ['l6a','l6b','l6c'].forEach(i=>$(i).style.opacity=fF);
+ // G · portada (foto de 2005) y «2004»
+ const kc=eo(P(t,T(50)-.25,T(50)+.3)); $('cover').style.opacity=kc; $('cover').style.transform=`translateY(${(1-kc)*50}px) rotate(${1.5*kc}deg)`;
+ // H · remate: servilleta firmada, quieta; «SERVILLETA.» ultravioleta (única vez)
+ $('credF').style.opacity=P(t,23.0,23.4);
+ $('black').style.opacity=P(t,OUT,OUT+.5);
+};
+document.fonts.ready.then(()=>Promise.all([...document.images].map(i=>i.complete?1:new Promise(r=>{i.onload=r;i.onerror=r})))).then(()=>{frame(0);window.ready=true});
+</script></body></html>
