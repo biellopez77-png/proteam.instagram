@@ -1,10 +1,10 @@
-"""Mezcla v7 · La libreta de Swindon (Charles Reep, County Ground, 1950) (se ejecuta en el sandbox de Higgsfield, donde están los mp3 de Epidemic Sound).
-Música real (Epidemic: «Musical, Loop, Orchestra, Piano, Choir, Sentimental», una sola pista sin costuras, desde el principio;
-distinta de la del último v7, que usó «Calm Piano, Dreamy, Intro» 01–04) + SFX reales bajos + voz (ElevenLabs, Mateo).
-Base: tools/reel_v7/v7-cadena-gimnasio-carter/mix.py.
+"""Mezcla v7 · La libreta de Swindon (Charles Reep, County Ground, 1950) · r2 (28/11): voz nueva que abre con «En la grada…».
+Se ejecuta en el sandbox de Higgsfield, donde están los mp3 de Epidemic Sound.
+Música real (Epidemic: «Musical, Loop, Orchestra, Piano, Choir, Sentimental», una sola pista sin costuras) + SFX reales bajos + voz (ElevenLabs, Mateo).
+Remate «la libreta, no.» acaba a 22,04 s; quieto hasta 22,95; fundido a negro hasta 23,45; outro2 desde negro (su «Dale» entra ~1,7 s después de «no»).
 python3 mix.py voz.mp3 outro2.mp4 sting.mp3 out.wav   (necesita words.json; sting = Epidemic «Musical, Loop, Logo, Calm, Piano 01»)"""
 import sys, json, subprocess, numpy as np
-SR = 48000; OUT = 22.65; DUR = OUT + 4.0   # la voz acaba en 22,05 s; a 22,65 empieza el fundido de 0,5 s al cierre (outro2.mp4, 4,0 s; su voz entra a 22,95)
+SR = 48000; OUT = 23.45; DUR = OUT + 4.0   # la voz acaba en 22,04 s; negro de 22,95 a 23,45; desde 23,45 el cierre (outro2.mp4, 4,0 s; su «Dale» entra a ~23,7)
 W = json.load(open('words.json')); T = lambda k: W[k][1]; E = lambda k: W[k][2]
 def ld(f, ch=2):
     r = subprocess.run(['ffmpeg', '-v', 'error', '-i', f, '-ac', str(ch), '-ar', str(SR), '-f', 'f32le', '-'], capture_output=True).stdout
@@ -22,23 +22,22 @@ put(mus, ld('mus.mp3'), 0.0, 1.0, off=.5, dur=DUR, fi=.4, fo=2.4)
 tt = np.arange(N) / SR; env = np.ones(N)
 env *= 1 + .3 * np.clip((tt - T(48)) / 1.0, 0, 1) * np.clip((OUT + .6 - tt) / .8, 0, 1)   # sube en «La memoria» y baja al cierre
 mus *= env[:, None]
-WH = pk(ld('whoosh.mp3')); SL = pk(ld('slide.mp3')); TY = pk(ld('type.mp3')); MK = pk(ld('marker.mp3')); WI = pk(ld('whistle.mp3'))
-PG = pk(ld('page.mp3')); PN = pk(ld('pencil.mp3')); SH = pk(ld('shutter.mp3')); PI = pk(ld('pile.mp3')); MG = pk(ld('mag.mp3'))
-for f in [2.35, 6.05, 9.55, 16.42, 19.08]: put(sfx, WH, f - .05, .07, dur=1.3, fi=.05, fo=.4)   # aire en cada viaje
-put(sfx, WH, 14.68, .035, dur=1.0, fi=.05, fo=.4)                                               # bajada corta a la ficha
-put(sfx, SL, .05, .06)                                       # postal del County Ground
-put(sfx, SL, 2.85, .04)                                      # grada
-put(sfx, TY, T(6) - .05, .05, dur=E(9) - T(6) + .1, fo=.15)  # ficha a máquina: CONTABLE · RAF
+WH = pk(ld('whoosh.mp3')); SL = pk(ld('slide.mp3')); MK = pk(ld('marker.mp3')); WI = pk(ld('whistle.mp3'))
+PG = pk(ld('page.mp3')); PN = pk(ld('pencil.mp3')); SH = pk(ld('shutter.mp3')); PI = pk(ld('pile.mp3'))
+for f in [3.25, 5.35, 9.5, 16.45, 19.05]: put(sfx, WH, f - .05, .07, dur=1.3, fi=.05, fo=.4)   # aire en cada viaje
+put(sfx, WH, 14.62, .035, dur=1.0, fi=.05, fo=.4)                                               # bajada corta a la ficha
+put(sfx, SL, T(10) - .45, .06)                               # postal del County Ground («Swindon, 1950»)
+put(sfx, SL, 5.95, .04)                                      # pizarra
 put(sfx, MK, T(14) - .05, .045, dur=1.2, fi=.02, fo=.2)      # flechas de ataque en la pizarra
 put(sfx, MK, T(18) - .04, .06, off=2.0, dur=.3, fi=.02, fo=.1); put(sfx, MK, T(20) - .04, .06, off=3.0, dur=.3, fi=.02, fo=.1)   # dos cruces
 put(sfx, WI, T(21) - .1, .035, dur=1.6, fi=.05, fo=.6)       # silbato lejano del descanso, muy bajo
-put(sfx, PG, T(24) - .05, .06)                               # la libreta entra
+put(sfx, PG, T(24) - .05, .06, dur=1.2, fo=.3)               # la libreta entra
 put(sfx, SL, T(29) - .15, .045)                              # hoja de notas
 put(sfx, PN, T(31) - .05, .06, off=1.0, dur=E(36) - T(31) + .1, fi=.03, fo=.2)   # lápiz que apunta
 put(sfx, SH, T(39) - .03, .08)                               # obturador: CHARLES REEP
-for i in range(0, 16, 3): put(sfx, PI, T(42) + i * .13, .035 + .004 * i)   # libretas que se apilan
-put(sfx, MG, E(47) - .1, .05)                                # la pila se asienta
-put(sfx, SL, 19.5, .045); put(sfx, PG, 19.75, .05)           # foto de hoy y libreta abierta
+for i in range(0, 16, 3): put(sfx, PI, 16.6 + i * .12, .035 + .004 * i)   # libretas que se apilan (desde «Acabó»)
+put(sfx, PI, E(47) - .1, .05)                                # la pila se asienta
+put(sfx, SL, 19.5, .045); put(sfx, PG, 19.75, .05, dur=1.0, fo=.3)   # foto de 2011 y libreta abierta
 put(vox, np.repeat(ld(sys.argv[1], 1), 2, 1), 0.0)
 put(vox, ld(sys.argv[2]), OUT, dur=4.0)                       # audio del cierre «¿Te ha servido? Dale like y síguenos…» (su voz empieza a los 0,3 s)
 put(sti, ld(sys.argv[3]), OUT, .22, dur=4.0, fi=.3, fo=1.2)   # sting de piano bajo
@@ -50,7 +49,7 @@ R = lambda x: 20 * np.log10(np.sqrt((x[:int(OUT * SR)] ** 2).mean()) + 1e-12)
 vg = 10 ** ((-19 - R(vox)) / 20); vox *= vg
 mg = 10 ** ((-31 - R(mus)) / 20); mus *= mg
 mix = vox + mus * duck + sfx * vg + sti * vg
-mix /= max(1, np.abs(mix).max() / .9)
+mix /= max(1, np.abs(mix).max() / .85)
 fo = int((DUR - .6) * SR); mix[fo:] *= np.linspace(1, 0, N - fo)[:, None]
 print('voz %.1f  música %.1f  sfx %.1f  pico %.2f' % (R(vox), R(mus * duck), R(sfx * vg), np.abs(mix).max()))
 subprocess.run(['ffmpeg', '-v', 'error', '-y', '-f', 'f32le', '-ar', str(SR), '-ac', '2', '-i', '-', sys.argv[4]], input=mix.astype(np.float32).tobytes(), check=True)
