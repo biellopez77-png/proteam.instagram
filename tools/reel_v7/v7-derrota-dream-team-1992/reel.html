@@ -70,7 +70,7 @@ svg .dr{fill:none;stroke-linecap:round;stroke-linejoin:round}
  <div class="a serif c" id="c1" style="left:0;width:1080px;top:140px;font-size:92px"></div>
  <div class="a serif c" id="c2" style="left:0;width:1080px;top:250px;font-size:92px"></div>
  <div class="a panel" id="p4" style="left:60px;top:390px;width:420px;height:600px;border-radius:6px;overflow:hidden;opacity:0;background:#0f1830">
-  <img src="img/p4_cut_g.png" style="position:absolute;left:105px;top:24px;height:560px">
+  <img src="img/p4_cut_g2.png" style="position:absolute;left:105px;top:24px;height:560px">
   <div style="position:absolute;left:0;right:0;bottom:0;height:200px;background:linear-gradient(transparent,rgba(2,5,15,.95))"></div>
   <div style="position:absolute;left:24px;bottom:84px;font:800 40px J;color:#F4F7FB">GRANT HILL</div>
   <div class="k" style="position:absolute;left:24px;bottom:54px;font-size:15px">UNO DE LOS UNIVERSITARIOS</div>
@@ -140,15 +140,14 @@ svg .dr{fill:none;stroke-linecap:round;stroke-linejoin:round}
  <div class="a serif c" id="e4" style="left:0;width:1080px;top:1440px;font-size:96px"></div>
 </div>
 
-<!-- 6 · A veces, la mejor charla es una derrota. -->
-<div class="sc" style="left:1160px;top:4400px">
- <div class="a serif c" id="f1" style="left:0;width:1080px;top:470px;font-size:120px"></div>
- <div class="a serif c" id="f2" style="left:0;width:1080px;top:620px;font-size:130px"></div>
- <div class="a serif c" id="f3" style="left:0;width:1080px;top:780px;font-size:130px"></div>
- <div class="a bold c" id="f4" style="left:0;width:1080px;top:950px;font-size:220px;color:#6AA8FF"></div>
- <div class="a rec c" id="cred" style="left:0;width:1080px;top:1560px;font-size:16px;opacity:0">FOTOS: KEN HACKMAN (USAF), CHAD J. McNEELEY (US NAVY), WILLIAM D. MOSS (DoD)<br>– DOMINIO PÚBLICO · KEITH ALLISON (CC BY-SA 2.0) · VÍA WIKIMEDIA COMMONS<br>PASE, MARCADOR, BANQUILLO Y PIZARRA: RECREACIÓN<br>FUENTES: AP, FOX SPORTS, CBS SPORTS</div>
 </div>
-
+<!-- 6 · A veces, la mejor charla es una derrota. La cámara se aleja y se ve toda la pared; la frase va encima, fija en pantalla -->
+<div id="dim" style="position:absolute;left:0;top:0;width:1080px;height:1920px;opacity:0;background:linear-gradient(to bottom,rgba(2,5,15,0) 0,rgba(2,5,15,0) 1090px,rgba(2,5,15,.95) 1215px,rgba(2,5,15,.97) 1920px)"></div>
+<div id="ov" style="position:absolute;left:0;top:0;width:1080px;height:1920px">
+ <div class="a serif c" id="f1" style="left:0;width:1080px;top:1232px;font-size:88px"></div>
+ <div class="a serif c" id="f2" style="left:0;width:1080px;top:1336px;font-size:88px"></div>
+ <div class="a bold c" id="f4" style="left:0;width:1080px;top:1455px;font-size:158px;color:#6AA8FF"><span id="f4in" style="display:inline-block"></span></div>
+ <div class="a rec c" id="cred" style="left:60px;width:960px;top:1668px;font-size:17px;color:#8f9bb8;letter-spacing:.08em;line-height:1.5;opacity:0">FOTOS: KEN HACKMAN (USAF), CHAD J. McNEELEY (US NAVY),<br>WILLIAM D. MOSS (DoD) – DOMINIO PÚBLICO · KEITH ALLISON (CC BY-SA 2.0)<br>VÍA WIKIMEDIA COMMONS · PASE, MARCADOR, BANQUILLO Y PIZARRA: RECREACIÓN<br>FUENTES: AP, FOX SPORTS, CBS SPORTS</div>
 </div>
 <canvas id="grain" width="360" height="640"></canvas>
 <script src="gsap.min.js"></script>
@@ -173,22 +172,22 @@ line('e1',[['y',31],['no',32],['hizo',33]]);
 line('e2',[['NI',34],['UN',35],['AJUSTE.',36]]);
 line('e3',[['Quería',37],['que',38],['supieran',39,'it']]);
 line('e4',[['que',40],['podían',41],['perder...',42,'it']]);
-line('f1',[['A',43],['veces,',44,'it']]);
-line('f2',[['la',45],['mejor',46],['charla',47,'it']]);
-line('f3',[['es',48],['una',49]]);
-line('f4',[['DERROTA.',50]]);
+line('f1',[['A',43],['veces,',44,'it'],['la',45],['mejor',46]]);
+line('f2',[['charla',47,'it'],['es',48],['una',49]]);
+line('f4in',[['DERROTA.',50,'','margin-right:0']]);
 const mix=(a,b,p)=>a+(b-a)*p, hex=(c1,c2,p)=>{const f=c=>[1,3,5].map(i=>parseInt(c.substr(i,2),16));const A=f(c1),B=f(c2);return `rgb(${A.map((v,i)=>Math.round(mix(v,B[i],p))).join(',')})`};
 const tr=(el,x,y,r=0,s=1)=>el.setAttribute('transform',`translate(${x.toFixed(1)} ${y.toFixed(1)}) rotate(${r.toFixed(1)}) scale(${s.toFixed(3)})`);
 // ----- cámara: un solo plano -----
 const cam={cx:540,cy:960,z:1.06};const tl=gsap.timeline({paused:true});
 const fly=(t,cx,cy,z,d=.9)=>{tl.to(cam,{cx,cy,duration:d,ease:'power2.inOut'},t);tl.to(cam,{keyframes:[{z:z*0.9,duration:d*.5,ease:'sine.out'},{z,duration:d*.5,ease:'sine.inOut'}]},t)};
-const F=[2.12,6.25,11.12,16.3,20.85], OUT=24.5;
+const F=[2.12,6.25,11.12,16.3,20.85], PB=21.15, OUT=25.35;   // OUT: empieza el fundido a negro (0,5 s); outro2 desde 25,85
 tl.set(cam,{cx:540,cy:800,z:1.07},0).to(cam,{z:1.02,cy:985,duration:F[0],ease:'sine.out'},0);
 fly(F[0],1700,960,1.04); tl.to(cam,{z:1.0,cy:985,duration:F[1]-F[0]-.9,ease:'sine.out'},F[0]+.9);
 fly(F[1],1700,3010,1.04); tl.to(cam,{z:1.0,cy:3035,duration:F[2]-F[1]-.9,ease:'sine.out'},F[1]+.9);
 fly(F[2],540,3260,1.04); tl.to(cam,{z:1.0,cy:3285,duration:F[3]-F[2]-.9,ease:'sine.out'},F[2]+.9);
 fly(F[3],540,5360,1.04); tl.to(cam,{z:1.0,cy:5385,duration:F[4]-F[3]-.9,ease:'sine.out'},F[3]+.9);
-fly(F[4],1700,5360,1.04); tl.to(cam,{z:.985,cy:5380,duration:3.5,ease:'sine.out'},F[4]+.9);
+// remate: la cámara se aleja hasta ver toda la pared (pase, portada, marcador, Hill, Krzyzewski, Daly) y se para antes de «derrota»
+tl.to(cam,{cx:1120,cy:2800,z:.32,duration:1.6,ease:'power2.inOut'},PB); tl.to(cam,{z:.312,duration:T(50)-PB-1.6-.15,ease:'sine.out'},PB+1.6);
 const g=$('grain').getContext('2d'),gi=g.createImageData(360,640);let sd=1;const RN=()=>(sd=(sd*16807)%2147483647)/2147483647;
 function camAt(t){tl.seek(t,false);return [cam.cx,cam.cy,cam.z]}
 const fade=(id,t,a,dy=30,rot=0)=>{const p=eo(P(t,a,a+.5));const e=$(id);e.style.opacity=p;e.style.transform=`translateY(${(1-p)*dy}px) rotate(${rot}deg)`;return p};
@@ -227,7 +226,7 @@ window.frame=function(t){window._t=t;
  $('mk').setAttribute('opacity',cl(ma*4)*cl(1-mo));
  $('wrect').setAttribute('width',(eio(P(t,T(41)-.05,E(42)+.35))*980).toFixed(1));
  // 6 · cierre
- $('cred').style.opacity=eo(P(t,T(45),T(45)+.5));
+ $('dim').style.opacity=eo(P(t,PB,PB+.6));$('cred').style.opacity=eo(P(t,T(45),T(45)+.5));
 };
 document.fonts.ready.then(()=>Promise.all([...document.images].map(i=>i.complete?1:new Promise(r=>{i.onload=r;i.onerror=r})))).then(()=>{frame(0);window.ready=true});
 </script></body></html>
