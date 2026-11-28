@@ -13,7 +13,7 @@ Fotos (Wikimedia Commons, descargadas en el sandbox de Higgsfield el 28/11/2026;
 - 1950_Minneapolis_Lakers.jpeg — autor desconocido — dominio público — https://commons.wikimedia.org/wiki/File:1950_Minneapolis_Lakers.jpeg — sin el pie impreso, al 55 % de fondo, B/N.
 Silueta, regla, gafas, comba, pasos de baile, aro y casillas de temporadas: dibujados, rotulados «recreación». Las siete fichas caen en las temporadas 1–4 y 6–8 de las nueve de Mikan (Wikipedia). No se usaron las reservas.
 
-Música (Epidemic Sound, vía Higgsfield): «Musical, Loop, Soft Piano, Strings, Calm, Intro, Logo 02», encadenada consigo misma con fundidos de 1,4 s (distinta de la del último v7, que usó la «Logo 03»). Sube 1 s con el remate y baja bajo el cierre.
+Música (Epidemic Sound, vía Higgsfield): «Musical, Loop, Soft Piano, Strings, Calm, Intro, Logo 02», encadenada consigo misma con fundidos de 1,4 s. Sube 1 s con el remate y baja bajo el cierre.
 Efectos (Epidemic Sound): Swooshes, Whoosh, Soft, Clean · Sheet, Laminated, Slide On Wooden Table 04 · Communications, Camera, Analogue Film Camera, Shutter Clicks 02 · Objects, Writing, Marker On Whiteboard · Sports, Court, Basketball, Indoor, Ball Bounce, Soft 01 · Games, Misc, Poker Chips, Single, Set Down On Wooden Table · Sports, Gym, Boxing, Jump Rope Exercise, Canvas, Slow · Sports, Court, Basketball, Indoor, Goal, Basket Bounce, Net Rustle · Footsteps, Human, Wood, Shoes, Turns, Scuff.
 Mezcla (mix.py): voz −19,0 dB RMS, música −33,2 con ducking, efectos −36,1 (ganancias 0,04–0,12); cierre: audio de outro2.mp4 desde 25,8 s.
 

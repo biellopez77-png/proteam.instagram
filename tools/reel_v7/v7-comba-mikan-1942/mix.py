@@ -1,6 +1,6 @@
 """Mezcla v7 · La comba de Mikan (Ray Meyer y George Mikan, DePaul, 1942) (se ejecuta en el sandbox de Higgsfield, donde están los mp3 de Epidemic Sound).
-Música real (Epidemic: «Musical, Loop, Soft Piano, Strings, Calm, Intro, Logo 02», encadenada consigo misma con fundidos de 1,4 s;
-distinta de la del último v7, que usó la «Logo 03») + SFX reales bajos + voz (ElevenLabs, Mateo). Base: v7-salto-inicial-mcguire-1957/mix.py.
+Música real (Epidemic: «Musical, Loop, Soft Piano, Strings, Calm, Intro, Logo 02», encadenada consigo misma con fundidos de 1,4 s)
++ SFX reales bajos + voz (ElevenLabs, Mateo). Base: v7-salto-inicial-mcguire-1957/mix.py.
 La voz acaba en 24,24 s; remate quieto; fundido a negro 25,3–25,8 s; outro2 (4 s, con su voz) desde 25,8 s; la música sigue bajando bajo el cierre.
 python3 mix.py voz.mp3 outro2.mp4 out.wav   (necesita words.json con los tiempos de wt.py)"""
 import sys, json, subprocess, numpy as np
