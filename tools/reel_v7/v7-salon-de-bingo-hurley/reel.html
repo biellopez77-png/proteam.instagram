@@ -1,0 +1,232 @@
+<!doctype html><html><head><meta charset="utf-8">
+<!-- v7 · «Un salón de bingo» (Bob Hurley, St. Anthony, Jersey City). Base: v7-plan-de-los-jugadores-onesta / wooden.
+     Un solo plano sobre la pared; cada cosa que dice la voz se anima en su palabra. Gancho: el primer fotograma ya tiene
+     «+20 TÍTULOS» y la vitrina de trofeos; los trofeos se encienden uno a uno. Viajes 0,9 s power2.inOut en las pausas,
+     zoom ×0,9, blur ≤ 4 px, sin destellos. La voz acaba en 22,88 s; remate entero y quieto de 22,98 a 23,95 s (cámara parada
+     desde 22,82 s); fundido a negro 23,95–24,45 s; outro2 desde 24,45 s. -->
+<style>
+@font-face{font-family:S;src:url(fonts/instrument-serif-latin-400-normal.woff2)}
+@font-face{font-family:SI;src:url(fonts/instrument-serif-latin-400-italic.woff2)}
+@font-face{font-family:J;font-weight:500;src:url(fonts/plus-jakarta-sans-latin-500-normal.woff2)}
+@font-face{font-family:J;font-weight:700;src:url(fonts/plus-jakarta-sans-latin-700-normal.woff2)}
+@font-face{font-family:J;font-weight:800;src:url(fonts/plus-jakarta-sans-latin-800-normal.woff2)}
+@font-face{font-family:J;font-weight:800;font-style:italic;src:url(fonts/plus-jakarta-sans-latin-800-italic.woff2)}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#02050F}
+#cam{position:absolute;left:0;top:0;width:2600px;height:6400px;transform-origin:0 0;background:url(wall2.jpg)}
+.a{position:absolute}
+.serif{font-family:S;color:#F4F7FB;white-space:nowrap;line-height:1}
+.bold{font-family:J;font-weight:800;color:#F4F7FB;white-space:nowrap;letter-spacing:-.02em;line-height:1}
+.acc{font-family:J;font-weight:800;font-style:italic;color:#6AA8FF}
+.w{display:inline-block;margin-right:.24em}
+.mat{background:#E9EEF6;padding:16px 16px 54px;border:5px solid #0b0f1a;box-shadow:0 30px 70px rgba(0,0,0,.6)}
+.mat img{display:block;width:100%}
+.mat .cap{position:absolute;left:20px;bottom:15px;font:700 19px J;color:#3b4660;letter-spacing:.08em;white-space:nowrap}
+.panel{background:#0C1323;border:1px solid #26335a;border-radius:22px;box-shadow:0 40px 90px rgba(0,0,0,.6)}
+.press{background:#E9EEF6;border-radius:6px;padding:14px 22px;box-shadow:0 20px 40px rgba(0,0,0,.5);font:800 34px J;color:#0b0f1a;letter-spacing:.06em;white-space:nowrap}
+.press small{display:block;font:700 18px J;color:#5d6888;letter-spacing:.14em;margin-bottom:6px}
+.lab{font:800 22px J;letter-spacing:.16em;color:#8f9bb8;white-space:nowrap}
+.cred{font:500 18px J;color:#6b7694;letter-spacing:.04em;white-space:nowrap}
+.tok{position:absolute;width:52px;height:52px;margin:-26px 0 0 -26px;border-radius:50%;background:#111a30;border:4px solid #B9E0FF;box-shadow:0 8px 18px rgba(0,0,0,.5)}
+.folder{background:#E9EEF6;border-radius:8px;box-shadow:0 40px 80px rgba(0,0,0,.65);color:#0b0f1a}
+.folder .tab{position:absolute;left:40px;top:-38px;width:230px;height:46px;background:#E9EEF6;border-radius:10px 10px 0 0}
+.folder .ln{position:absolute;left:48px;right:48px;height:3px;background:#c5cee0}
+#grain{position:absolute;inset:0;width:1080px;height:1920px;mix-blend-mode:screen;opacity:.10;pointer-events:none;image-rendering:pixelated}
+#black{position:absolute;inset:0;background:#000;opacity:0}
+</style></head><body><div id="cam">
+
+<!-- A · GANCHO · Ganó más de veinte títulos estatales sin tener nunca gimnasio propio -->
+<div class="a bold" id="l1t" style="left:0;width:1080px;text-align:center;top:150px;font-size:150px"><span id="n20" style="display:inline-block;color:#6AA8FF">+20</span> TÍTULOS</div>
+<div class="a serif" id="l1a" style="left:0;width:1080px;text-align:center;top:335px;font-size:84px"></div>
+<div class="a serif" id="l1b" style="left:0;width:1080px;text-align:center;top:430px;font-size:84px"></div>
+<div class="a panel" id="shelf" style="left:90px;top:560px;width:900px;height:470px"></div>
+<div class="a panel" id="gym" style="left:190px;top:1110px;width:700px;height:430px"></div>
+<div class="a bold" id="l1d" style="left:0;width:1080px;text-align:center;top:1600px;font-size:130px"></div>
+
+<!-- B · Bob Hurley entrenaba al St. Anthony, en Jersey City -->
+<div class="a lab" id="lbB" style="left:1230px;top:175px">JERSEY CITY · EE. UU.</div>
+<div class="a serif" id="l2a" style="left:1225px;top:225px;font-size:104px"></div>
+<div class="a mat" id="mSA" style="left:1700px;top:470px;width:470px;transform:rotate(4deg)"><img src="img/stanthony_g.jpg"><div class="cap">EL INSTITUTO · FOTO DE 2014</div></div>
+<div class="a mat" id="mBH" style="left:1235px;top:360px;width:520px;transform:rotate(-2deg)"><img src="img/hurley_g.jpg"><div class="cap">BOB HURLEY · ST. ANTHONY</div></div>
+<div class="a press" id="pBH" style="left:1700px;top:1010px;transform:rotate(-2deg)"><small>ENTRENADOR · 1972–2017</small>BOB HURLEY</div>
+<div class="a serif" id="l2b" style="left:1225px;top:1270px;font-size:84px"></div>
+<div class="a bold" id="l2c" style="left:1225px;top:1370px;font-size:132px"></div>
+<div class="a serif" id="l2d" style="left:1225px;top:1525px;font-size:84px"></div>
+<div class="a cred" id="credB" style="left:1228px;top:1655px">Fotos: Vault7424 y Jaylen123456789, 2014 · CC BY-SA 3.0</div>
+
+<!-- C · Practicaban en un salón de bingo. La pista era casi nueve metros más corta. Allí no jugaban partidos -->
+<div class="a serif" id="l3a" style="left:90px;top:2000px;font-size:84px"></div>
+<div class="a bold" id="l3b" style="left:90px;top:2100px;font-size:104px"></div>
+<div class="a mat" id="mWE" style="left:90px;top:2270px;width:560px;transform:rotate(-2deg)"><img src="img/whiteeagle_g.jpg"><div class="cap">WHITE EAGLE HALL · HOY</div></div>
+<div class="a mat" id="mBG" style="left:665px;top:2290px;width:310px;transform:rotate(6deg);padding:12px 12px 40px"><img src="img/bingo_g.jpg"><div class="cap" style="font-size:14px;left:14px;bottom:12px">CARTÓN DE BINGO</div>
+  <svg id="marks" width="286" height="440" style="position:absolute;left:12px;top:12px;overflow:visible"></svg></div>
+<div class="a panel" id="court" style="left:90px;top:2950px;width:900px;height:540px"></div>
+<div class="a bold" id="l3c" style="left:90px;top:3530px;font-size:120px"></div>
+<div class="a bold" id="l3d" style="left:90px;top:3670px;font-size:80px"></div>
+<div class="a cred" id="credC" style="left:92px;top:3775px">Fotos: Macaddct1984, 2023 (CC BY-SA 4.0) · Abbey Hendrickson (CC BY 2.0)</div>
+
+<!-- D · RE-HOOK · Y él, de día, era agente de libertad condicional -->
+<div class="a serif" id="l4a" style="left:1225px;top:2000px;font-size:96px"></div>
+<div class="a bold" id="l4b" style="left:1225px;top:2105px;font-size:150px"></div>
+<div class="a folder" id="fold" style="left:1235px;top:2340px;width:600px;height:740px;transform:rotate(-3deg)">
+  <div class="tab"></div>
+  <div class="a lab" style="left:48px;top:46px;color:#5d6888;font-size:20px">EXPEDIENTE · RECREACIÓN</div>
+  <div class="a" style="left:48px;top:96px;font:800 46px J;letter-spacing:.02em;line-height:1.08;white-space:nowrap">AGENTE DE<br>LIBERTAD<br>CONDICIONAL</div>
+  <div class="ln" style="top:300px"></div><div class="ln" style="top:350px;right:160px"></div><div class="ln" style="top:400px"></div><div class="ln" style="top:450px;right:220px"></div>
+  <div class="a" id="h8" style="left:48px;top:520px;font:800 64px J;color:#0b0f1a;white-space:nowrap;opacity:0;border:6px solid #0b0f1a;border-radius:10px;padding:8px 18px;transform:rotate(-4deg)">8 HORAS AL DÍA</div>
+  <div class="a lab" style="left:48px;top:680px;color:#5d6888;font-size:17px">SPORTS ILLUSTRATED, 1989</div>
+</div>
+<svg class="a" id="clock" width="280" height="280" viewBox="0 0 280 280" style="left:1900px;top:2370px;overflow:visible"></svg>
+<div class="a mat" id="mBH2" style="left:1880px;top:2720px;width:310px;transform:rotate(5deg);padding:10px 10px 36px"><img src="img/hurley_g.jpg"><div class="cap" style="font-size:13px;left:12px;bottom:11px">BOB HURLEY</div></div>
+<div class="a serif" id="l4c" style="left:1225px;top:3160px;font-size:80px"></div>
+<div class="a bold" id="l4d" style="left:1225px;top:3260px;font-size:120px"></div>
+<div class="a bold" id="l4e" style="left:1225px;top:3390px;font-size:120px"></div>
+
+<!-- E · Pero en 2010 entró en el Salón de la Fama -->
+<div class="a serif" id="l5a" style="left:0;width:1080px;text-align:center;top:3950px;font-size:92px"></div>
+<div class="a bold" id="yr" style="left:0;width:1080px;text-align:center;top:4045px;font-size:230px;color:#6AA8FF;letter-spacing:-.04em">1972</div>
+<div class="a mat" id="cov" style="left:160px;top:4330px;width:760px;transform:rotate(-1.5deg);padding:16px 16px 58px">
+  <div style="background:#0b0f1a;color:#E9EEF6;font:800 26px J;letter-spacing:.2em;padding:12px 18px;margin-bottom:12px;white-space:nowrap">BALONCESTO · SALÓN DE LA FAMA</div>
+  <img src="img/halloffame_g.jpg"><div class="cap">SPRINGFIELD, MASSACHUSETTS · FOTO DE 2011</div></div>
+<div class="a serif" id="l5b" style="left:0;width:1080px;text-align:center;top:5210px;font-size:84px"></div>
+<div class="a bold" id="l5c" style="left:0;width:1080px;text-align:center;top:5305px;font-size:96px"></div>
+<div class="a cred" id="credE" style="left:0;width:1080px;text-align:center;top:5430px">Foto: John Phelan, 2011 · CC BY 3.0</div>
+
+<!-- F · REMATE · El gimnasio no hace al equipo -->
+<div class="a panel" id="court2" style="left:1250px;top:3990px;width:900px;height:540px"></div>
+<div class="a serif" id="l6a" style="left:1225px;top:4620px;font-size:116px"></div>
+<div class="a bold" id="l6b" style="left:1225px;top:4765px;font-size:156px"></div>
+<div class="a bold" id="l6c" style="left:1225px;top:4935px;font-size:156px"></div>
+<div class="a cred" id="credF" style="left:1228px;width:940px;top:5150px;line-height:1.45;white-space:normal;opacity:0;font-size:17px">Fotos: Vault7424 y Jaylen123456789 (CC BY-SA 3.0), Macaddct1984 (CC BY-SA 4.0), John Phelan (CC BY 3.0) y Abbey Hendrickson (CC BY 2.0), modificadas, vía Wikimedia Commons. Trofeos, pistas, marcador y expediente: recreación.</div>
+
+</div>
+<canvas id="grain" width="360" height="640"></canvas>
+<div id="black"></div>
+<script src="gsap.min.js"></script>
+<script src="words.js"></script>
+<script>
+const $=i=>document.getElementById(i), cl=x=>Math.min(1,Math.max(0,x)), P=(t,a,b)=>cl((t-a)/(b-a)), eo=x=>1-Math.pow(1-x,3), es=x=>x*x*(3-2*x), lerp=(a,b,k)=>a+(b-a)*k;
+const W=window.WORDS, T=k=>W[k][1], E=k=>W[k][2], OUT=23.95;
+const L=[];
+function line(id,ks,acc=[],txt={}){const el=$(id);for(const k of ks){const s=document.createElement('span');s.className='w'+(acc.includes(k)?' acc':'');s.textContent=txt[k]!==undefined?txt[k]:W[k][0];el.appendChild(s);L.push([s,T(k),id])}}
+line('l1a',[0,1,2,3],[],{3:'veinte'}); line('l1b',[4,5]); line('l1d',[6,9],[],{6:'SIN',9:'GIMNASIO'});
+line('l2a',[11,12]); line('l2b',[13,14]); line('l2c',[15,16],[],{15:'ST.',16:'ANTHONY'}); line('l2d',[17,18,19]);
+line('l3a',[20,21,22]); line('l3b',[23,24,25],[],{23:'SALÓN',24:'DE',25:'BINGO.'});
+line('l3c',[30,31],[30],{30:'−9',31:'METROS'}); line('l3d',[36,37],[],{36:'0 PARTIDOS',37:'EN CASA'});
+line('l4a',[38,39]); line('l4b',[40,41],[],{40:'DE',41:'DÍA,'}); line('l4c',[42,43,44]); line('l4d',[45],[],{45:'LIBERTAD'}); line('l4e',[46],[],{46:'CONDICIONAL.'});
+line('l5a',[47,48]); line('l5b',[50,51,52]); line('l5c',[53,54,55,56],[],{53:'SALÓN',54:'DE',55:'LA',56:'FAMA.'});
+line('l6a',[57,58]); line('l6b',[59,60],[],{59:'NO',60:'HACE'}); line('l6c',[61,62],[],{61:'AL',62:'EQUIPO.'});
+$('l6c').lastChild.style.color='#8B5CF6';
+// ----- cámara: un solo plano -----
+const cam={cx:540,cy:960,z:1.0}, tl=gsap.timeline({paused:true});
+const fly=(t,cx,cy,z,d=.9)=>{tl.to(cam,{cx,cy,duration:d,ease:'power2.inOut'},t);tl.to(cam,{keyframes:[{z:z*0.9,duration:d*.5,ease:'sine.out'},{z,duration:d*.5,ease:'sine.inOut'}]},t)};
+tl.set(cam,{cx:540,cy:960,z:1.0},0).to(cam,{z:1.03,cy:950,duration:4.2,ease:'sine.out'},0);
+fly(4.22,1700,960,1.0); tl.to(cam,{z:1.04,duration:2.9,ease:'sine.out'},5.12);
+fly(8.0,540,2880,1.0); tl.to(cam,{z:1.02,cy:2900,duration:5.5,ease:'sine.inOut'},8.9);
+fly(14.45,1700,2880,1.0); tl.to(cam,{z:1.04,duration:2.4,ease:'sine.out'},15.35);
+fly(17.76,540,4800,1.0); tl.to(cam,{z:1.03,duration:2.0,ease:'sine.out'},18.66);
+fly(20.72,1700,4700,1.0); tl.to(cam,{z:1.03,duration:1.2,ease:'sine.out'},21.62);   // quieta desde 22,82 s
+// ----- dibujos -----
+const NS='http://www.w3.org/2000/svg', mk=(tag,at,par)=>{const e=document.createElementNS(NS,tag);for(const k in at)e.setAttribute(k,at[k]);par.appendChild(e);return e};
+const labIn=(host,txt,x,y)=>{const lb=document.createElement('div');lb.className='a lab';lb.style.cssText=`left:${x}px;top:${y}px;font-size:17px;color:#5d6888`;lb.textContent=txt;host.appendChild(lb);return lb};
+// A · vitrina: 20 trofeos (2 baldas de 10) que se encienden uno a uno
+const sh=mk('svg',{width:900,height:470,viewBox:'0 0 900 470',style:'position:absolute;left:0;top:0'},$('shelf'));
+const CUPS=[];
+for(let r=0;r<2;r++){mk('rect',{x:40,y:200+r*200,width:820,height:10,rx:3,fill:'#26335a'},sh);
+ for(let i=0;i<10;i++){const x=85+i*81,y=200+r*200;const g=mk('g',{transform:`translate(${x},${y})`},sh);
+  const p=mk('path',{d:'M-26 -150 H26 V-128 Q26 -92 6 -84 V-56 H18 V-44 H-18 V-56 H-6 V-84 Q-26 -92 -26 -128 Z M-26 -140 Q-44 -140 -40 -118 Q-36 -102 -20 -100 M26 -140 Q44 -140 40 -118 Q36 -102 20 -100',fill:'#111a30',stroke:'#3a4870','stroke-width':4,'stroke-linejoin':'round'},g);
+  const b=mk('rect',{x:-24,y:-44,width:48,height:44,rx:3,fill:'#111a30',stroke:'#3a4870','stroke-width':4},g);CUPS.push({g,p,b})}}
+labIn($('shelf'),'TROFEOS · RECREACIÓN',44,428);
+// A · pabellón propio, tachado
+const gy=mk('svg',{width:700,height:430,viewBox:'0 0 700 430',style:'position:absolute;left:0;top:0;overflow:visible'},$('gym'));
+const gst={fill:'none',stroke:'#B9E0FF','stroke-width':5,'stroke-linejoin':'round',opacity:.85};
+mk('path',Object.assign({d:'M110 350 V190 Q350 40 590 190 V350 Z'},gst),gy); mk('path',Object.assign({d:'M300 350 V260 H400 V350 M150 220 H550'},gst),gy);
+for(let i=0;i<5;i++)mk('rect',Object.assign({x:165+i*78,y:160+Math.abs(i-2)*-0,width:44,height:34,opacity:.5},gst),gy);
+mk('path',Object.assign({d:'M60 350 H640',opacity:.5},gst),gy);
+labIn($('gym'),'PABELLÓN PROPIO',44,388);
+const X1=mk('path',{d:'M140 90 L560 340',fill:'none',stroke:'#6AA8FF','stroke-width':16,'stroke-linecap':'round',pathLength:100,'stroke-dasharray':'0 100'},gy);
+const X2=mk('path',{d:'M560 80 L150 350',fill:'none',stroke:'#6AA8FF','stroke-width':16,'stroke-linecap':'round',pathLength:100,'stroke-dasharray':'0 100'},gy);
+// C · cartón de bingo: dos números marcados
+const MK=[[107-12,151-12],[215-12,283-12]].map(([x,y])=>mk('circle',{cx:x,cy:y,r:30,fill:'rgba(106,168,255,.55)',stroke:'#636DFF','stroke-width':4,opacity:0},$('marks')));
+// pistas de baloncesto en planta (28 × 15 m → 820 × 410 px)
+function bcourt(svg,len,st){const g=mk('g',{},svg);const s=len/820,y0=50,y1=460,ym=255,x0=40,x1=40+len;
+ const a=Object.assign({fill:'none','vector-effect':'non-scaling-stroke'},st);
+ mk('rect',Object.assign({x:x0,y:y0,width:len,height:410},a),g); mk('path',Object.assign({d:`M${(x0+x1)/2} ${y0} V${y1}`},a),g);
+ mk('circle',Object.assign({cx:(x0+x1)/2,cy:ym,r:53},a),g);
+ for(const side of [0,1]){const xb=side?x1:x0,d=side?-1:1;
+  mk('path',Object.assign({d:`M${xb} ${ym-71} H${xb+d*170*s} V${ym+71} H${xb}`},a),g);
+  mk('path',Object.assign({d:`M${xb} ${ym-198} H${xb+d*46*s} A198 198 0 0 ${side?0:1} ${xb+d*46*s} ${ym+198} H${xb}`},a),g);
+  mk('circle',Object.assign({cx:xb+d*46*s,cy:ym,r:9},a),g);}
+ return g}
+const cs=mk('svg',{width:900,height:540,viewBox:'0 0 900 540',style:'position:absolute;left:0;top:0;overflow:visible'},$('court'));
+bcourt(cs,820,{stroke:'#3a4870','stroke-width':3,'stroke-dasharray':'10 10'});
+const shortHost=mk('g',{},cs); let shortLen=-1;
+function setShort(len){if(Math.abs(len-shortLen)<.5)return;shortLen=len;while(shortHost.firstChild)shortHost.removeChild(shortHost.firstChild);bcourt(shortHost,len,{stroke:'#B9E0FF','stroke-width':4,opacity:.9})}
+const reg=labIn($('court'),'REGLAMENTARIA · 28 M',600,10); reg.style.color='#3a4870';
+labIn($('court'),'PISTA DEL SALÓN · RECREACIÓN',44,500);
+const cota=mk('g',{opacity:0},cs);
+mk('path',{d:'M601 482 H860 M601 470 V494 M860 470 V494',fill:'none',stroke:'#6AA8FF','stroke-width':4},cota);
+const ct=mk('text',{x:730,y:525,'text-anchor':'middle','font-family':'J','font-weight':800,'font-size':30,fill:'#6AA8FF'},cota);ct.textContent='−8,8 m';
+// marcador apagado
+const sb=mk('g',{opacity:0},cs);
+mk('rect',{x:200,y:180,width:240,height:150,rx:10,fill:'#060a16',stroke:'#3a4870','stroke-width':4},sb);
+const sbt=mk('text',{x:320,y:282,'text-anchor':'middle','font-family':'J','font-weight':800,'font-size':84,fill:"#26335a","letter-spacing":6},sb);sbt.textContent='0 – 0';
+const sbl=mk('text',{x:320,y:212,'text-anchor':'middle','font-family':'J','font-weight':800,'font-size':18,fill:'#3a4870','letter-spacing':3},sb);sbl.textContent='LOCAL · VISITANTE';
+// D · reloj de oficina
+const ck=$('clock');mk('circle',{cx:140,cy:140,r:128,fill:'#E9EEF6',stroke:'#0b0f1a','stroke-width':10},ck);
+for(let i=0;i<12;i++){const a=i*Math.PI/6;mk('path',{d:`M${140+100*Math.sin(a)} ${140-100*Math.cos(a)} L${140+115*Math.sin(a)} ${140-115*Math.cos(a)}`,stroke:'#0b0f1a','stroke-width':i%3?4:8},ck)}
+const hh=mk('path',{d:'M140 140 L140 82',stroke:'#0b0f1a','stroke-width':10,'stroke-linecap':'round'},ck);
+const mh=mk('path',{d:'M140 140 L140 50',stroke:'#636DFF','stroke-width':6,'stroke-linecap':'round'},ck);
+mk('circle',{cx:140,cy:140,r:9,fill:'#0b0f1a'},ck);
+// F · pista corta del remate con cinco fichas
+const cs2=mk('svg',{width:900,height:540,viewBox:'0 0 900 540',style:'position:absolute;left:0;top:0;overflow:visible'},$('court2'));
+bcourt(cs2,561,{stroke:'#B9E0FF','stroke-width':4,opacity:.9});
+labIn($('court2'),'LA PISTA CORTA · RECREACIÓN',44,500);
+function tok(host,x,y){const d=document.createElement('div');d.className='tok';d.style.left=x+'px';d.style.top=y+'px';host.appendChild(d);return d}
+const K5=[[150,140],[150,370],[280,255],[400,160],[420,350]].map(([x,y])=>tok($('court2'),x,y));
+// grano
+const g=$('grain').getContext('2d'),gi=g.createImageData(360,640);let sd=1;const R=()=>(sd=(sd*16807)%2147483647)/2147483647;
+function camAt(t){tl.seek(t,false);return [cam.cx,cam.cy,cam.z]}
+let t=0;
+const inn=(el,t0,dy=40,d=.5,rot=0)=>{const p=eo(P(t,t0,t0+d));el.style.opacity=p;el.style.transform=`translateY(${(1-p)*dy}px) rotate(${rot}deg)`;return p};
+const tokIn=(d,t0)=>{const p=eo(P(t,t0,t0+.3));d.style.opacity=p;d.style.transform=`translateY(${(1-p)*-24}px) scale(${.7+.3*p})`};
+window.frame=function(tt){t=tt;
+ sd=1+Math.floor(t*30)*7919;const dd=gi.data;for(let i=0;i<dd.length;i+=4){const v=R()*255;dd[i]=v*.8;dd[i+1]=v*.85;dd[i+2]=v;dd[i+3]=255}g.putImageData(gi,0,0);
+ const p0=camAt(Math.max(0,t-1/30)),p1=camAt(t),sp=Math.hypot(p1[0]-p0[0],p1[1]-p0[1]);
+ $('cam').style.transform=`translate(540px,960px) scale(${p1[2]}) translate(${-p1[0]}px,${-p1[1]}px)`;
+ $('cam').style.filter=sp>14?`blur(${Math.min(4,(sp-14)/30)}px)`:'none';
+ for(const [s,t0] of L){if(t0<0.3){s.style.opacity=1;s.style.transform='none';s.style.filter='none';continue}const p=eo(P(t,t0-.04,t0+.32));s.style.opacity=p;s.style.transform=`translateX(${(1-p)*28}px)`;s.style.filter=`blur(${(1-p)*6}px)`}
+ // A · «+20» late en «veinte»; los trofeos se encienden uno a uno; en «gimnasio» la cruz de rotulador
+ const kp=P(t,T(3)-.02,T(3)+.35); $('n20').style.transform=`scale(${1+.1*Math.sin(Math.PI*kp)})`;
+ CUPS.forEach((c,i)=>{const k=P(t,.35+i*.085,.5+i*.085)>.5;c.p.setAttribute('fill',k?'#B9E0FF':'#111a30');c.p.setAttribute('stroke',k?'#E9EEF6':'#3a4870');c.b.setAttribute('fill',k?'#6AA8FF':'#111a30');c.b.setAttribute('stroke',k?'#B9E0FF':'#3a4870');c.g.style.filter=k?'drop-shadow(0 0 10px rgba(106,168,255,.45))':'none'});
+ X1.setAttribute('stroke-dasharray',`${es(P(t,T(9)-.05,T(9)+.22))*100} 100`); X2.setAttribute('stroke-dasharray',`${es(P(t,T(9)+.2,T(9)+.47))*100} 100`);
+ // B · Hurley llega con la cámara; el instituto detrás en «St.»; ficha y lugar
+ inn($('mBH'),4.75,50,.5,-2); inn($('mSA'),T(15)-.15,40,.45,4); inn($('pBH'),T(13)-.05,20,.4,-2);
+ $('lbB').style.opacity=P(t,T(18)-.1,T(18)+.25); $('credB').style.opacity=P(t,5.4,5.8);
+ // C · el salón (con la cámara llegando), el cartón cae en «bingo» y se marcan dos números
+ inn($('mWE'),8.7,40,.5,-2);
+ {const p=eo(P(t,T(25)-.1,T(25)+.35));$('mBG').style.opacity=p;$('mBG').style.transform=`translateY(${(1-p)*-90}px) rotate(${6+(1-p)*10}deg)`}
+ MK.forEach((m,i)=>{const p=eo(P(t,T(25)+.3+i*.22,T(25)+.5+i*.22));m.setAttribute('opacity',p);m.setAttribute('r',30+(1-p)*16)});
+ $('credC').style.opacity=P(t,9.6,10.0);
+ // la pista: la reglamentaria y la del salón, que se encoge en «nueve»; cota −8,8 m
+ inn($('court'),T(26)-.25,30,.45);
+ setShort(lerp(820,561,es(P(t,T(30)-.05,T(30)+.8)))); cota.setAttribute('opacity',P(t,T(31),T(31)+.3));
+ // marcador que no se enciende
+ sb.setAttribute('opacity',eo(P(t,T(34)-.05,T(34)+.3)));
+ const fl=P(t,T(36),T(36)+.25)*(1-P(t,T(36)+.25,T(36)+.5)); sbt.setAttribute('fill',fl>.3?'#2a3658':'#1d2744');
+ // D · re-hook: el expediente entra de golpe; reloj que avanza; Hurley se desliza junto al expediente
+ {const p=eo(P(t,T(38)-.12,T(38)+.25));$('fold').style.opacity=P(t,T(38)-.12,T(38)+.05);$('fold').style.transform=`translateY(${(1-p)*-160}px) rotate(${-3-(1-p)*6}deg) scale(${1+(1-p)*.08})`}
+ inn($('clock'),T(40)-.2,30,.4);
+ const hrs=8*es(P(t,T(40),T(42)+.3)); mh.setAttribute('transform',`rotate(${hrs*360} 140 140)`); hh.setAttribute('transform',`rotate(${hrs*30} 140 140)`);
+ {const p=eo(P(t,T(41),T(41)+.3));$('h8').style.opacity=p;$('h8').style.transform=`rotate(-4deg) scale(${1.5-.5*p})`}
+ {const p=eo(P(t,T(43)-.1,T(43)+.4));$('mBH2').style.opacity=p;$('mBH2').style.transform=`translateX(${(1-p)*160}px) rotate(5deg)`}
+ // E · contador de año 1972 → 2010; portada
+ {const k=es(P(t,T(47),T(49)+.15));$('yr').textContent=Math.round(lerp(1972,2010,k));$('yr').style.opacity=P(t,18.0,18.3)}
+ inn($('cov'),18.45,40,.5,-1.5); $('credE').style.opacity=P(t,19.2,19.6);
+ // F · la pista corta y las fichas; el remate palabra a palabra y quieto
+ inn($('court2'),20.95,30,.5); K5.forEach((d,i)=>tokIn(d,T(57)+i*.07));
+ $('credF').style.opacity=P(t,21.3,21.7);
+ $('black').style.opacity=P(t,OUT,OUT+.5);
+};
+document.fonts.ready.then(()=>Promise.all([...document.images].map(i=>i.complete?1:new Promise(r=>{i.onload=r;i.onerror=r})))).then(()=>{frame(0);window.ready=true});
+</script></body></html>
