@@ -18,3 +18,9 @@ Música y efectos (Epidemic Sound, vía Higgsfield): «Musical, Loop, Logo, Orch
 Render: htmlreel (30 fps; sin las banderas de swiftshader, la página no usa WebGL) y fundido de 0,6 s al cierre común en 25,1 s.
 
 Vídeo final: https://d2ol7oe51mr4n9.cloudfront.net/user_3M2z7lIyzIPYtjNHcxRWFNk6wi7/015b942e-cd29-485c-8b4d-e75d19cfa1b4.mp4 (30,7 s: 25,1 s de historia + cierre común; comprobado con whisper: se oyen todas las palabras de la voz; −15,9 LUFS, −1,2 dBTP).
+
+## r3 · Marta A (02) · 28/11/2026 (tras la auditoría r2 de Andrés, 86/100, texto solapado en el paso al cierre)
+- Paso al cierre: «No eliges el campo. Eliges CÓMO LLEGAS.» entero y quieto hasta 26,0 s; fundido a NEGRO de 0,5 s (26,0–26,5) y outro2 desde 26,5 s. Comprobado a 25,9 · 26,0 · 26,25 · 26,5 · 26,6 s: el logo ya no aparece encima del remate.
+- Audio (mix.py, mismas pistas, voz y efectos): el audio de outro2 y el sting entran a 26,5 s; whisper oye las 58 palabras y luego «Dale like y síguenos para más vídeos como este» («Dale» desde ~26,5 s, con el cierre ya en pantalla). −16,2 LUFS, −1,6 dBTP.
+- Mejora 3: el marcador «MUNDIAL 1954» empieza a entrar a 2,8 s, al final del viaje (ya no hay fotograma casi negro a 3,0 s), y está entero en «Mundial». La mejora 4 (bajar el 8–3 y el reloj) no se aplica.
+- Render: htmlreel a 30 fps (0–26,5 s) + fade a negro + outro2, ~8,5 Mb/s. Vídeo de 30,5 s: https://d2ol7oe51mr4n9.cloudfront.net/user_3M2z7lIyzIPYtjNHcxRWFNk6wi7/50d01989-7d03-4983-b2fa-c179b9cf2748.mp4 (sustituye a b8db7439).
