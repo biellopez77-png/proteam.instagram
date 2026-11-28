@@ -1,0 +1,265 @@
+<!doctype html><html><head><meta charset="utf-8">
+<!-- v7 · Bajo la alfombra (Tony Bennett, Virginia, 2018–2019). Un solo plano sobre la pared; cada cosa que dice la voz se anima en su palabra.
+     Transiciones según agencia/sistema-v7/FORMATO.md: viajes 0,9 s power2.inOut, zoom ×0,9, blur ≤ 4 px, sin destellos. Base: tools/reel_v7/wooden/reel.html -->
+<style>
+@font-face{font-family:S;src:url(fonts/instrument-serif-latin-400-normal.woff2)}
+@font-face{font-family:SI;src:url(fonts/instrument-serif-latin-400-italic.woff2)}
+@font-face{font-family:J;font-weight:500;src:url(fonts/plus-jakarta-sans-latin-500-normal.woff2)}
+@font-face{font-family:J;font-weight:700;src:url(fonts/plus-jakarta-sans-latin-700-normal.woff2)}
+@font-face{font-family:J;font-weight:800;src:url(fonts/plus-jakarta-sans-latin-800-normal.woff2)}
+@font-face{font-family:J;font-weight:800;font-style:italic;src:url(fonts/plus-jakarta-sans-latin-800-italic.woff2)}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#02050F}
+#cam{position:absolute;left:0;top:0;width:2600px;height:7500px;transform-origin:0 0;background:#02050F url(wall2.jpg) no-repeat;background-size:2600px 7500px}
+.a{position:absolute}
+.serif{font-family:S;color:#F4F7FB;white-space:nowrap;line-height:1}
+.bold{font-family:J;font-weight:800;color:#F4F7FB;white-space:nowrap;letter-spacing:-.02em;line-height:1}
+.acc{font-family:J;font-weight:800;font-style:italic;color:#6AA8FF}
+.w{display:inline-block;margin-right:.24em}
+.mat{background:#E9EEF6;padding:20px;border:6px solid #0b0f1a;box-shadow:0 30px 70px rgba(0,0,0,.6)}
+.mat img{display:block;width:100%}
+.panel{background:#0C1323;border:1px solid #26335a;border-radius:22px;box-shadow:0 40px 90px rgba(0,0,0,.6)}
+.card{background:linear-gradient(#16213d,#0C1323);border:2px solid #26335a;border-radius:18px;box-shadow:0 30px 70px rgba(0,0,0,.6);overflow:hidden}
+.card img{position:absolute;left:50%;bottom:0;transform:translateX(-50%)}
+.lab{font:800 22px J;letter-spacing:.16em;color:#8f9bb8;white-space:nowrap}
+.cred{font:500 17px J;color:#5d6888;letter-spacing:.04em;white-space:nowrap}
+.num{font:800 250px J;color:#F4F7FB;letter-spacing:-.05em;line-height:1}
+.chip{position:absolute;width:250px;height:120px;border-radius:16px;background:#0C1323;border:3px solid #6AA8FF;box-shadow:0 20px 40px rgba(0,0,0,.6);font:800 64px J;color:#F4F7FB;text-align:center;line-height:114px;letter-spacing:-.02em}
+.row{position:absolute;left:40px;right:40px;height:130px;border-bottom:2px solid #26335a}
+.row .tm{position:absolute;left:0;top:30px;font:800 64px J;color:#F4F7FB;letter-spacing:.02em}
+.row .sc{position:absolute;right:0;top:12px;width:190px;height:104px;border-radius:12px;background:#02050F;border:2px solid #26335a;font:800 80px J;color:#B9E0FF;text-align:center;line-height:104px;overflow:hidden}
+#grain{position:absolute;inset:0;width:1080px;height:1920px;mix-blend-mode:screen;opacity:.10;pointer-events:none;image-rendering:pixelated}
+</style></head><body><div id="cam">
+
+<!-- A · 1 vs 16 (primer fotograma ya lleno) -->
+<div class="a serif" id="l1" style="left:0;width:1080px;text-align:center;top:250px;font-size:66px"></div>
+<div class="a serif" id="l1b" style="left:0;width:1080px;text-align:center;top:335px;font-size:66px"></div>
+<div class="a panel" id="s1" style="left:100px;top:500px;width:380px;height:470px">
+ <div class="a lab" style="left:34px;top:30px">CABEZA DE SERIE</div>
+ <div class="a num" id="n1" style="left:0;width:380px;text-align:center;top:120px">1</div>
+ <svg class="a" style="left:0;top:0" width="380" height="470" viewBox="0 0 380 470"><path id="crack" d="M210 70 L182 150 L222 196 L170 262 L206 318 L160 400 L176 470" fill="none" stroke="#F4F7FB" stroke-width="6" stroke-linejoin="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/><path id="crack2" d="M222 196 L280 214 M170 262 L118 248" fill="none" stroke="#F4F7FB" stroke-width="4" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/></svg>
+</div>
+<div class="a bold" id="vs" style="left:480px;width:120px;text-align:center;top:700px;font-size:56px;color:#8f9bb8">vs</div>
+<div class="a panel" id="s16" style="left:600px;top:500px;width:380px;height:470px">
+ <div class="a lab" style="left:34px;top:30px">CABEZA DE SERIE</div>
+ <div class="a num" style="left:0;width:380px;text-align:center;top:120px">16</div>
+</div>
+<svg class="a" id="brk" style="left:100px;top:970px" width="880" height="300" viewBox="0 0 880 300">
+ <path d="M190 0 V120 H690 V0" fill="none" stroke="#26335a" stroke-width="6"/>
+ <path id="win" d="M690 0 V120 H440 V260" fill="none" stroke="#6AA8FF" stroke-width="7" stroke-linecap="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/>
+ <path d="M440 120 V260" fill="none" stroke="#26335a" stroke-width="6" opacity=".6"/>
+</svg>
+<div class="a cred" id="credA" style="left:0;width:1080px;text-align:center;top:1270px">Torneo NCAA masculino · cuadro: recreación</div>
+
+<!-- B · Charlotte, marzo de 2018 · 74–54 -->
+<div class="a mat" id="printB" style="left:1250px;top:250px;width:900px"><img src="img/spectrum_g.png"></div>
+<div class="a cred" id="credB" style="left:1250px;top:930px">Spectrum Center, Charlotte · foto: Matthew D. Britt, CC BY 2.0</div>
+<div class="a lab" id="rotB" style="left:1250px;top:975px;color:#B9E0FF">CHARLOTTE · MARZO 2018</div>
+<div class="a serif" id="l2" style="left:1250px;top:1060px;font-size:70px"></div>
+<div class="a panel" id="score1" style="left:1250px;top:1180px;width:900px;height:360px">
+ <div class="row" style="top:30px"><div class="tm" id="t1">UMBC</div><div class="sc"><span id="sc1" style="display:block">0</span></div></div>
+ <div class="row" style="top:170px;border:0"><div class="tm" id="t2">VIRGINIA</div><div class="sc"><span id="sc2" style="display:block">0</span></div></div>
+</div>
+<div class="a cred" id="credB2" style="left:1250px;top:1560px">Primera ronda, 16 de marzo de 2018 · marcador: recreación</div>
+
+<!-- C · No bajo la alfombra -->
+<div class="a bold" id="l3a" style="left:110px;top:2070px;font-size:96px"></div>
+<div class="a bold" id="l3b" style="left:110px;top:2175px;font-size:96px"></div>
+<div class="a card" id="cardC" style="left:110px;top:2330px;width:520px;height:860px"><img src="img/bennett_cut_g.png" style="width:500px"></div>
+<div class="a lab" id="labC" style="left:110px;top:3210px">TONY BENNETT · VIRGINIA</div>
+<div class="a cred" id="credC" style="left:110px;top:3248px">Foto: Ben Lunsford, CC BY 4.0 (2014)</div>
+<svg class="a" id="rug" style="left:90px;top:3320px" width="900" height="300" viewBox="0 0 900 300">
+ <g id="fringeL" stroke="#6AA8FF" stroke-width="4" stroke-linecap="round"></g>
+ <path id="rugp" d="" fill="#0C1323" stroke="#B9E0FF" stroke-width="5" stroke-linejoin="round"/>
+ <path id="rugi" d="" fill="none" stroke="#636DFF" stroke-width="3" stroke-dasharray="14 10"/>
+</svg>
+<div class="chip" id="chipC" style="left:710px;top:2700px">74–54</div>
+
+<!-- D · Días después, come con su base: retocan el ataque -->
+<div class="a serif" id="l4a" style="left:1220px;top:2070px;font-size:70px"></div>
+<div class="a serif" id="l4b" style="left:1220px;top:2155px;font-size:70px"></div>
+<div class="a card" id="cardD" style="left:1220px;top:2280px;width:520px;height:760px"><img src="img/jerome_cut_g.png" style="width:500px"></div>
+<div class="a lab" id="labD" style="left:1220px;top:3055px">TY JEROME · BASE</div>
+<div class="a card" id="cardD2" style="left:1790px;top:2440px;width:370px;height:560px"><img src="img/bennett_cut_g.png" style="width:330px"></div>
+<div class="a lab" id="labD2" style="left:1790px;top:3015px">TONY BENNETT</div>
+<div class="a cred" id="credD" style="left:1220px;top:3092px">Foto: SneakinDeacon, CC BY-SA 2.0 (2019), modificada</div>
+<svg class="a" id="table" style="left:1220px;top:3130px" width="940" height="170" viewBox="0 0 940 170">
+ <path d="M30 60 H910 L880 110 H60 Z" fill="#0C1323" stroke="#B9E0FF" stroke-width="5" stroke-linejoin="round"/>
+ <path d="M90 110 V168 M850 110 V168" stroke="#B9E0FF" stroke-width="5"/>
+ <ellipse cx="300" cy="80" rx="96" ry="18" fill="#02050F" stroke="#6AA8FF" stroke-width="4"/><ellipse cx="300" cy="80" rx="54" ry="9" fill="none" stroke="#26335a" stroke-width="3"/>
+ <ellipse cx="640" cy="80" rx="96" ry="18" fill="#02050F" stroke="#6AA8FF" stroke-width="4"/><ellipse cx="640" cy="80" rx="54" ry="9" fill="none" stroke="#26335a" stroke-width="3"/>
+</svg>
+<svg class="a" id="board" style="left:1300px;top:3320px" width="780" height="300" viewBox="0 0 780 300">
+ <rect x="4" y="4" width="772" height="292" rx="16" fill="#E9EEF6" stroke="#0b0f1a" stroke-width="6"/>
+ <g fill="none" stroke="#9aa6c0" stroke-width="5" stroke-linecap="round"><circle cx="150" cy="200" r="16"/><circle cx="330" cy="110" r="16"/><circle cx="520" cy="210" r="16"/></g>
+ <path id="old1" d="M166 196 Q250 160 314 118" fill="none" stroke="#9aa6c0" stroke-width="5" stroke-dasharray="10 10"/>
+ <path id="ar1" d="M166 200 Q330 250 500 214 M480 196 L504 214 L478 232" fill="none" stroke="#636DFF" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/>
+ <path id="ar2" d="M346 104 Q560 60 680 150 M650 146 L682 152 L668 122" fill="none" stroke="#636DFF" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/>
+</svg>
+<div class="a bold" id="l4c" style="left:1220px;top:3655px;font-size:84px"></div>
+
+<!-- E · ¿Y a sus jugadores? · la charla -->
+<div class="a bold" id="l5a" style="left:0;width:1080px;text-align:center;top:3890px;font-size:112px"></div>
+<div class="a bold" id="l5b" style="left:0;width:1080px;text-align:center;top:4010px;font-size:112px"></div>
+<svg class="a" id="scr" style="left:140px;top:4180px" width="800" height="500" viewBox="0 0 800 500">
+ <rect x="6" y="6" width="788" height="450" rx="20" fill="#0b0f1a" stroke="#26335a" stroke-width="6"/>
+ <rect id="glow" x="26" y="26" width="748" height="410" rx="10" fill="url(#gg)" opacity="0"/>
+ <defs><radialGradient id="gg" cx=".5" cy=".45" r=".75"><stop offset="0" stop-color="#E7F2FF"/><stop offset=".6" stop-color="#9cc4ff"/><stop offset="1" stop-color="#4b5fae"/></radialGradient></defs>
+ <g id="spk" fill="none" stroke="#0b1530" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+  <circle cx="400" cy="170" r="48" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/>
+  <path d="M300 400 Q300 260 400 250 Q500 260 500 400" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/>
+  <path d="M470 300 L560 240" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/>
+ </g>
+ <ellipse id="spot" cx="400" cy="420" rx="180" ry="16" fill="#0b1530" opacity="0"/>
+ <path d="M340 456 L320 494 H480 L460 456" fill="#0b0f1a" stroke="#26335a" stroke-width="5"/>
+</svg>
+<div class="a cred" id="credE0" style="left:140px;top:4685px">charla · recreación</div>
+<div class="a mat" id="printE" style="left:110px;top:4740px;width:440px"><img src="img/assistants_g.png"></div>
+<div class="a lab" id="labE" style="left:110px;top:5490px">BANQUILLO · VIRGINIA, 2014</div>
+<div class="a cred" id="credE" style="left:110px;top:5528px">Foto: Ben Lunsford, CC BY 4.0, modificada</div>
+<div class="a serif" id="l5c" style="left:600px;top:4960px;font-size:58px"></div>
+<div class="a bold" id="l5d" style="left:600px;top:5040px;font-size:80px"></div>
+<div class="a serif" id="l5e" style="left:600px;top:5150px;font-size:58px"></div>
+
+<!-- F · Un año después: 85–77 -->
+<svg class="a" id="cal" style="left:1240px;top:3940px" width="420" height="460" viewBox="0 0 420 460">
+ <rect x="6" y="20" width="408" height="430" rx="18" fill="#E9EEF6" stroke="#0b0f1a" stroke-width="6"/>
+ <rect x="6" y="20" width="408" height="96" rx="18" fill="#636DFF"/><rect x="6" y="80" width="408" height="36" fill="#636DFF"/>
+ <circle cx="120" cy="20" r="12" fill="#0b0f1a"/><circle cx="300" cy="20" r="12" fill="#0b0f1a"/>
+ <text x="210" y="84" text-anchor="middle" font-family="J" font-weight="800" font-size="40" fill="#F4F7FB" letter-spacing="4">TEMPORADA</text>
+ <g id="y18"><text x="210" y="320" text-anchor="middle" font-family="J" font-weight="800" font-size="130" fill="#0b0f1a">2018</text></g>
+ <g id="y19" opacity="0"><text x="210" y="320" text-anchor="middle" font-family="J" font-weight="800" font-size="130" fill="#0b0f1a">2019</text></g>
+ <path id="sheet" d="" fill="#dfe6f2" stroke="#9aa6c0" stroke-width="3"/>
+</svg>
+<svg class="a" id="hoop" style="left:1760px;top:3940px" width="400" height="460" viewBox="0 0 400 460">
+ <rect x="40" y="10" width="320" height="200" rx="8" fill="none" stroke="#B9E0FF" stroke-width="6"/>
+ <rect x="140" y="90" width="120" height="90" fill="none" stroke="#B9E0FF" stroke-width="5"/>
+ <path d="M200 210 V240" stroke="#B9E0FF" stroke-width="6"/>
+ <ellipse cx="200" cy="250" rx="110" ry="18" fill="none" stroke="#6AA8FF" stroke-width="8"/>
+ <g id="netA" stroke="#F4F7FB" stroke-width="3" fill="none" opacity=".85"></g>
+ <g id="netB" stroke="#F4F7FB" stroke-width="3" fill="none" opacity=".85"></g>
+</svg>
+<div class="a lab" id="rotF" style="left:1240px;top:4430px;color:#B9E0FF">MINNEAPOLIS · 8/4/2019</div>
+<div class="a panel" id="score2" style="left:1240px;top:4490px;width:920px;height:400px">
+ <div class="row" style="top:30px"><div class="tm" id="t3">VIRGINIA</div><div class="sc"><span id="sc3" style="display:block">0</span></div></div>
+ <div class="row" style="top:170px;border:0"><div class="tm" id="t4" style="color:#8f9bb8">TEXAS TECH</div><div class="sc" style="color:#8f9bb8"><span id="sc4" style="display:block">0</span></div></div>
+ <div class="a lab" id="pro" style="left:40px;top:330px;color:#6AA8FF">FINAL · PRÓRROGA</div>
+</div>
+<div class="a bold" id="l6" style="left:1240px;top:4930px;font-size:116px"></div>
+<div class="a cred" id="credF" style="left:1240px;top:5070px">Final NCAA 2019 · marcador, calendario y red: recreación</div>
+
+<!-- G · Una derrota no se esconde. Se usa. -->
+<div class="a serif" id="l7a" style="left:0;width:1080px;text-align:center;top:5900px;font-size:92px"></div>
+<div class="a serif" id="l7b" style="left:0;width:1080px;text-align:center;top:6000px;font-size:92px"></div>
+<svg class="a" id="rug2" style="left:90px;top:6160px" width="900" height="300" viewBox="0 0 900 300">
+ <g id="fringe2" stroke="#6AA8FF" stroke-width="4" stroke-linecap="round"></g>
+ <path id="rug2p" d="" fill="#0C1323" stroke="#B9E0FF" stroke-width="5" stroke-linejoin="round"/>
+ <path id="rug2i" d="" fill="none" stroke="#636DFF" stroke-width="3" stroke-dasharray="14 10"/>
+</svg>
+<div class="chip" id="chipG" style="left:415px;top:6195px">74–54</div>
+<div class="a bold" id="l7c" style="left:0;width:1080px;text-align:center;top:6490px;font-size:200px;color:#8B5CF6;letter-spacing:-.03em"></div>
+<div class="a cred" id="pie1" style="left:0;width:1080px;text-align:center;top:6790px">Fotos: Ben Lunsford (CC BY 4.0) · SneakinDeacon (CC BY-SA 2.0) · Matthew D. Britt (CC BY 2.0)</div>
+<div class="a cred" id="pie2" style="left:0;width:1080px;text-align:center;top:6820px">vía Wikimedia Commons, modificadas · Cuadro, marcadores, alfombra, mesa, pantalla y calendario: recreación</div>
+
+</div>
+<canvas id="grain" width="360" height="640"></canvas>
+<script src="gsap.min.js"></script>
+<script src="words.js"></script>
+<script>
+const $=i=>document.getElementById(i), cl=x=>Math.min(1,Math.max(0,x)), P=(t,a,b)=>cl((t-a)/(b-a)), eo=x=>1-Math.pow(1-x,3), es=x=>x*x*(3-2*x);
+const W=window.WORDS, T=k=>W[k][1];
+const L=[];
+// palabra a palabra; txt sustituye la grafía de whisper cuando hace falta
+function line(id,ks,acc=[],txt={}){const el=$(id);for(const k of ks){const s=document.createElement('span');s.className='w'+(acc.includes(k)?' acc':'');s.textContent=txt[k]||W[k][0];el.appendChild(s);L.push([s,k==0?-1:T(k)])}}
+line('l1',[0,1,2,3,4]); line('l1b',[5,6,7],[],{7:'dieciséis.'});
+line('l2',[8,9,10],[],{10:'2018:'});
+line('l3a',[20,24],[],{20:'NO',24:'BAJO'}); line('l3b',[25,26],[26],{25:'LA',26:'ALFOMBRA'});
+line('l4a',[27,28],[],{28:'después,'}); line('l4b',[29,30,31,32],[],{32:'base:'});
+line('l4c',[33,34,35],[35],{33:'RETOCAN',34:'EL',35:'ATAQUE'});
+line('l5a',[36,37,38],[],{36:'¿Y',37:'A',38:'SUS'}); line('l5b',[39],[39],{39:'JUGADORES?'});
+line('l5c',[44,45,46]); line('l5d',[47],[47],{47:'HISTORIA'}); line('l5e',[48,49],[],{49:'crecer.'});
+line('l6',[57],[57],{57:'CAMPEONES'});
+line('l7a',[58,59]); line('l7b',[60,61,62],[],{62:'esconde.'});
+line('l7c',[63,64],[],{63:'SE',64:'USA.'});
+// ----- cámara: un solo plano (FORMATO v7) -----
+const cam={cx:540,cy:900,z:1.0}, tl=gsap.timeline({paused:true});
+const fly=(t,cx,cy,z,d=.9)=>{tl.to(cam,{cx,cy,duration:d,ease:'power2.inOut'},t);tl.to(cam,{keyframes:[{z:z*0.9,duration:d*.5,ease:'sine.out'},{z,duration:d*.5,ease:'sine.inOut'}]},t)};
+tl.set(cam,{cx:540,cy:900,z:1.0},0).to(cam,{z:1.06,cy:880,duration:2.7,ease:'sine.out'},0);
+fly(2.72,1700,1000,1.0); tl.to(cam,{cy:1080,z:1.04,duration:4.7,ease:'sine.inOut'},3.62);
+fly(8.38,540,2840,1.0); tl.to(cam,{cy:2880,z:1.04,duration:2.9,ease:'sine.out'},9.28);
+fly(11.32,1700,2860,1.0); tl.to(cam,{cy:2890,z:1.03,duration:3.1,ease:'sine.out'},12.22);
+fly(14.50,540,4480,1.12); tl.to(cam,{cx:540,cy:4890,z:1.0,duration:1.1,ease:'power2.inOut'},15.62); tl.to(cam,{z:1.04,duration:3.5,ease:'sine.out'},16.72);
+fly(19.32,1700,4700,1.0); tl.to(cam,{cy:4780,z:1.03,duration:2.6,ease:'sine.out'},20.22);
+fly(22.14,540,6420,1.0); tl.to(cam,{z:0.92,cy:6400,duration:1.25,ease:'sine.inOut'},23.15);
+// ----- elementos -----
+// alfombras (forma con flecos); lift levanta la esquina izquierda
+function rug(p,i,fr,lift){const L0=60,R0=840,Y0=120,Y1=260,sk=60;const ly=Y0-lift*70,lx=L0+sk+lift*10;
+ p.setAttribute('d',`M${lx} ${ly} L${R0} ${Y0} L${R0-sk} ${Y1} L${L0} ${Y1} Z`);
+ i.setAttribute('d',`M${lx+40} ${ly+20} L${R0-30} ${Y0+20} L${R0-sk-20} ${Y1-20} L${L0+40} ${Y1-20} Z`);
+ if(!fr.childNodes.length){for(let k=0;k<12;k++){const l=document.createElementNS('http://www.w3.org/2000/svg','line');fr.appendChild(l)}}
+ [...fr.childNodes].forEach((l,k)=>{const x=L0+k*(R0-sk-L0)/11;l.setAttribute('x1',x);l.setAttribute('y1',Y1);l.setAttribute('x2',x-6);l.setAttribute('y2',Y1+26)})}
+// red de canasta
+function net(g,x0,x1,y0,y1,n){for(let k=0;k<=n;k++){const p=document.createElementNS('http://www.w3.org/2000/svg','path');const a=x0+k*(x1-x0)/n,b=x0+30+k*(x1-x0-60)/n;p.setAttribute('d',`M${a} ${y0} L${b} ${y1}`);g.appendChild(p)}
+ for(let r=1;r<=3;r++){const p=document.createElementNS('http://www.w3.org/2000/svg','path');const yy=y0+r*(y1-y0)/3.2,sh=r*10;p.setAttribute('d',`M${x0+sh} ${yy} L${x1-sh} ${yy}`);g.appendChild(p)}}
+net($('netA'),95,200,252,380,4); net($('netB'),200,305,252,380,4);
+// grano
+const g=$('grain').getContext('2d'),gi=g.createImageData(360,640);let sd=1;const R=()=>(sd=(sd*16807)%2147483647)/2147483647;
+function camAt(t){tl.seek(t,false);return [cam.cx,cam.cy,cam.z]}
+const inn=(el,t0,dy=40,d=.5)=>{const p=eo(P(t,t0,t0+d));el.style.opacity=p;el.style.transform=`translateY(${(1-p)*dy}px)`;return p};
+const fade=(el,t0,d=.4)=>{el.style.opacity=eo(P(t,t0,t0+d))};
+const draw=(el,t0,d=.4)=>el.setAttribute('stroke-dashoffset',100-100*eo(P(t,t0,t0+d)));
+// marcador: el número sube contando hasta su valor en la palabra
+const count=(el,t0,v,d=.45)=>{const p=P(t,t0,t0+d);el.textContent=Math.round(es(p)*v)};
+let t=0;
+window.frame=function(tt){t=tt;
+ sd=1+Math.floor(t*30)*7919;const dd=gi.data;for(let i=0;i<dd.length;i+=4){const v=R()*255;dd[i]=v*.8;dd[i+1]=v*.85;dd[i+2]=v;dd[i+3]=255}g.putImageData(gi,0,0);
+ const p0=camAt(Math.max(0,t-1/30)),p1=camAt(t),sp=Math.hypot(p1[0]-p0[0],p1[1]-p0[1]);
+ $('cam').style.transform=`translate(540px,960px) scale(${p1[2]}) translate(${-p1[0]}px,${-p1[1]}px)`;
+ $('cam').style.filter=sp>14?`blur(${Math.min(4,(sp-14)/30)}px)`:'none';
+ for(const [s,t0] of L){const p=t0<0?1:eo(P(t,t0-.04,t0+.32));s.style.opacity=p;s.style.transform=`translateX(${(1-p)*28}px)`;s.style.filter=`blur(${(1-p)*6}px)`}
+ // A · el «1» se agrieta en «perdido»; la línea del 16 avanza en «dieciséis»
+ draw($('crack'),T(4)+.05,.35); draw($('crack2'),T(4)+.25,.3);
+ const ck=P(t,T(4)+.05,T(4)+.5);$('s1').style.transform=`rotate(${-2.2*es(ck)}deg) translateY(${10*es(ck)}px)`;$('n1').style.color=ck>0?`rgba(244,247,251,${1-.45*ck})`:'#F4F7FB';
+ draw($('win'),T(7),.5);
+ // B
+ const pb=inn($('printB'),2.95,60,.6);$('printB').style.transform+=` rotate(${(1-pb)*2}deg)`; fade($('credB'),3.3);
+ inn($('rotB'),T(8)-.05,14,.4);
+ inn($('score1'),T(11)-.25,40,.5); fade($('credB2'),T(11)+.2);
+ $('t1').style.opacity=eo(P(t,T(11),T(11)+.3)); $('t2').style.opacity=eo(P(t,T(14),T(14)+.3));
+ count($('sc1'),T(15),74,.55); count($('sc2'),T(17),54,.4);
+ $('sc1').parentNode.style.borderColor=t>T(15)+.5?'#6AA8FF':'#26335a';
+ // C · la ficha 74–54 va hacia la alfombra, frena en el borde y vuelve a la vista
+ const pc=inn($('cardC'),8.85,60,.6); fade($('labC'),9.2); fade($('credC'),9.4);
+ const pr=inn($('rug'),9.3,40,.5);
+ const lift=es(P(t,T(24),T(26)))*(1-es(P(t,T(26)+.45,T(26)+.9)));
+ rug($('rugp'),$('rugi'),$('fringeL'),lift);
+ const ci=eo(P(t,T(23)-.1,T(23)+.3)), down=es(P(t,T(24),T(26)+.3)), up=es(P(t,T(26)+.45,T(26)+1.0));
+ $('chipC').style.opacity=ci; $('chipC').style.transform=`translate(${-230*down+90*up}px,${560*down-330*up}px) rotate(${-8*down+8*up}deg)`;
+ $('chipC').style.borderColor=up>.5?'#B9E0FF':'#6AA8FF';
+ // D
+ inn($('cardD'),12.0,60,.6); fade($('labD'),12.3); fade($('credD'),12.5);
+ inn($('cardD2'),T(29)-.05,50,.5); fade($('labD2'),T(29)+.2);
+ inn($('table'),T(29)+.1,30,.5);
+ inn($('board'),T(32)-.1,40,.5);
+ $('old1').style.opacity=1-.75*P(t,T(33),T(33)+.4); draw($('ar1'),T(33),.45); draw($('ar2'),T(35),.45);
+ // E · re-hook: la pantalla se enciende; la charla aparece en «charla»
+ inn($('scr'),14.95,40,.5);
+ $('glow').setAttribute('opacity',.92*eo(P(t,T(39),T(39)+.35)));
+ const sk=[...$('spk').children];sk.forEach((p,i)=>draw(p,T(43)-.1+i*.14,.4));
+ $('spot').setAttribute('opacity',.35*P(t,T(43),T(43)+.4)); fade($('credE0'),T(43)+.1);
+ const pe=inn($('printE'),T(40)+.1,60,.6);$('printE').style.transform+=` rotate(${(1-pe)*-2}deg)`; fade($('labE'),T(40)+.4); fade($('credE'),T(40)+.6);
+ // F · la hoja pasa de 2018 a 2019; marcador 85–77; la red cae en «título»
+ inn($('cal'),19.95,40,.5); inn($('hoop'),20.1,40,.5); inn($('rotF'),20.3,14,.4);
+ const fl=P(t,T(52)+.05,T(52)+.55);
+ $('sheet').setAttribute('d',fl>0&&fl<1?`M6 ${116+330*es(fl)} H414 V450 H6 Z`:'');
+ $('y18').setAttribute('opacity',fl<.5?1:0); $('y19').setAttribute('opacity',fl>=.5?1:0);
+ inn($('score2'),T(53)-.15,40,.45); count($('sc3'),T(54),85,.5); count($('sc4'),T(54)+.1,77,.5); fade($('pro'),T(55));
+ const nf=P(t,T(57),T(57)+.9);$('netB').style.transform=`translate(${40*nf}px,${180*nf*nf}px) rotate(${25*nf}deg)`;$('netB').style.transformOrigin='200px 252px';$('netB').style.opacity=.85*(1-P(t,T(57)+.5,T(57)+.9));
+ fade($('credF'),T(57)+.2);
+ // G · la ficha queda encima de la alfombra; «SE USA» quieto hasta el fundido
+ inn($('rug2'),22.6,30,.5); rug($('rug2p'),$('rug2i'),$('fringe2'),0);
+ const pg=eo(P(t,T(59),T(59)+.45));$('chipG').style.opacity=pg;$('chipG').style.transform=`translateY(${(1-pg)*-60}px)`;
+ fade($('pie1'),23.6,.5); fade($('pie2'),23.7,.5);
+};
+document.fonts.ready.then(()=>Promise.all([...document.images].map(i=>i.complete?1:new Promise(r=>{i.onload=r;i.onerror=r})))).then(()=>{frame(0);window.ready=true});
+</script></body></html>
