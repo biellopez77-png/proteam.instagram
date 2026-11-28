@@ -31,7 +31,7 @@ put(sfx, cut(PA), 2.95, .10)                                            # postal
 put(sfx, cut(GE, off=.1, dur=.6, fo=.2), 6.82, .06)                     # marcador 74
 put(sfx, cut(GE, off=1.5, dur=.45, fo=.15), 7.90, .05)                  # marcador 54
 put(sfx, cut(PA), 8.85, .10)                                            # ficha de Bennett
-put(sfx, cut(CL, fi=.05, fo=.3), 10.54, .12)                            # la ficha va hacia la alfombra
+put(sfx, cut(CL, dur=.4, fi=.05, fo=.2), 10.50, .08)                    # la ficha va hacia la alfombra (corto: no tapa «alfombra»)
 put(sfx, cut(CL, off=.3, dur=.6, fo=.3), 11.35, .06)                    # y vuelve a la vista
 put(sfx, cut(PA), 12.0, .09); put(sfx, cut(PA), 12.19, .07)             # fichas de Jerome y Bennett
 put(sfx, cut(CU), 12.34, .08)                                           # mesa
