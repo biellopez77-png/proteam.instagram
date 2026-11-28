@@ -1,0 +1,221 @@
+<!doctype html><html><head><meta charset="utf-8">
+<!-- v7 · «El primer minuto» (Lefty Driesell, Maryland, 15/10/1971, origen de la Midnight Madness). Base: tools/reel_v7/wooden/reel.html (vía v7-salto-inicial-mcguire-1957).
+     Un solo plano sobre la pared; cada cosa que dice la voz se anima en su palabra. Gancho primero (Revisión viral 27/11):
+     el primer fotograma ya tiene el reloj y «00:03». Viajes 0,9 s power2.inOut, zoom ×0,9, blur ≤ 4 px, sin destellos.
+     La voz acaba en 24,58 s; remate quieto; fundido a negro de 0,5 s (25,18–25,68 s) y cierre común outro2 desde 25,68 s. -->
+<style>
+@font-face{font-family:S;src:url(fonts/instrument-serif-latin-400-normal.woff2)}
+@font-face{font-family:SI;src:url(fonts/instrument-serif-latin-400-italic.woff2)}
+@font-face{font-family:J;font-weight:500;src:url(fonts/plus-jakarta-sans-latin-500-normal.woff2)}
+@font-face{font-family:J;font-weight:700;src:url(fonts/plus-jakarta-sans-latin-700-normal.woff2)}
+@font-face{font-family:J;font-weight:800;src:url(fonts/plus-jakarta-sans-latin-800-normal.woff2)}
+@font-face{font-family:J;font-weight:800;font-style:italic;src:url(fonts/plus-jakarta-sans-latin-800-italic.woff2)}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#02050F}
+#cam{position:absolute;left:0;top:0;width:2600px;height:6400px;transform-origin:0 0;background:url(wall2.jpg)}
+.a{position:absolute}
+.serif{font-family:S;color:#F4F7FB;white-space:nowrap;line-height:1}
+.bold{font-family:J;font-weight:800;color:#F4F7FB;white-space:nowrap;letter-spacing:-.02em;line-height:1}
+.acc{font-family:J;font-weight:800;font-style:italic;color:#6AA8FF}
+.uv{color:#8B5CF6}
+.w{display:inline-block;margin-right:.24em}
+.mat{background:#E9EEF6;padding:18px 18px 56px;border:5px solid #0b0f1a;box-shadow:0 30px 70px rgba(0,0,0,.6)}
+.mat img{display:block;width:100%}
+.mat .cap{position:absolute;left:22px;bottom:16px;font:700 20px J;color:#3b4660;letter-spacing:.08em;white-space:nowrap}
+.panel{background:#0C1323;border:1px solid #26335a;border-radius:22px;box-shadow:0 40px 90px rgba(0,0,0,.6)}
+.press{background:#E9EEF6;border-radius:6px;padding:14px 22px;box-shadow:0 20px 40px rgba(0,0,0,.5);font:800 30px J;color:#0b0f1a;letter-spacing:.06em;white-space:nowrap}
+.press small{display:block;font:700 18px J;color:#5d6888;letter-spacing:.14em;margin-bottom:6px}
+.lab{font:800 22px J;letter-spacing:.16em;color:#8f9bb8;white-space:nowrap}
+.cred{font:500 17px J;color:#5d6888;letter-spacing:.04em;white-space:nowrap}
+.paper{background:#E9EEF6;border-radius:8px;box-shadow:0 30px 60px rgba(0,0,0,.55)}
+#grain{position:absolute;inset:0;width:1080px;height:1920px;mix-blend-mode:screen;opacity:.10;pointer-events:none;image-rendering:pixelated}
+</style></head><body><div id="cam">
+
+<!-- 1 · GANCHO · Su equipo empezó la temporada a las doce y tres de la noche (reloj y «00:03» ya en el fotograma 0) · 8 · REMATE en el mismo sitio -->
+<div class="a" id="night" style="left:1160px;top:1940px;width:1080px;height:1920px;background:radial-gradient(ellipse at 50% 42%,rgba(2,5,15,0) 0%,rgba(2,5,15,.75) 70%);opacity:0"></div>
+<div class="a serif" id="l1a" style="left:1160px;width:1080px;text-align:center;top:2090px;font-size:72px"></div>
+<svg class="a" id="clock" style="left:1360px;top:2250px" width="680" height="680" viewBox="-340 -340 680 680">
+ <circle r="318" fill="#0C1323" stroke="#26335a" stroke-width="4"/>
+ <circle r="300" fill="none" stroke="#3a4870" stroke-width="3"/>
+ <g id="ticks"></g>
+ <g font-family="J" font-weight="800" font-size="44" fill="#8f9bb8" text-anchor="middle"><text y="-222">12</text><text x="236" y="16">3</text><text y="252">6</text><text x="-236" y="16">9</text></g>
+ <line id="hH" x1="0" y1="24" x2="0" y2="-150" stroke="#E9EEF6" stroke-width="16" stroke-linecap="round"/>
+ <line id="hM" x1="0" y1="30" x2="0" y2="-245" stroke="#E9EEF6" stroke-width="10" stroke-linecap="round"/>
+ <line id="hS" x1="0" y1="40" x2="0" y2="-270" stroke="#6AA8FF" stroke-width="4" stroke-linecap="round"/>
+ <circle r="16" fill="#6AA8FF"/>
+</svg>
+<div class="a bold acc" id="big1" style="left:1160px;width:1080px;text-align:center;top:2990px;font-size:230px;letter-spacing:-.04em">00:03</div>
+<div class="a serif" id="l1c" style="left:1160px;width:1080px;text-align:center;top:3280px;font-size:76px"></div>
+<div class="a lab" id="labC" style="left:1160px;width:1080px;text-align:center;top:3400px">RELOJ · RECREACIÓN</div>
+<div class="a serif" id="l8a" style="left:1160px;width:1080px;text-align:center;top:2090px;font-size:72px"></div>
+<div class="a bold" id="l8b" style="left:1160px;width:1080px;text-align:center;top:2990px;font-size:230px"></div>
+<div class="a serif" id="l8c" style="left:1160px;width:1080px;text-align:center;top:3280px;font-size:84px"></div>
+<div class="a cred" id="credF" style="left:1200px;width:1000px;text-align:center;top:3480px;line-height:1.45;opacity:0;white-space:normal">Fotos: University of Maryland, dominio público; R. Henrik Nilsson, CC BY 4.0 (modificada), vía Wikimedia Commons.<br>Calendario, reglamento, reloj, pista, coches y portada: recreación.</div>
+
+<!-- 2 · 15 de octubre de 1971: la NCAA deja empezar ese día -->
+<div class="a serif" id="l2a" style="left:1160px;width:1080px;text-align:center;top:190px;font-size:76px"></div>
+<div class="a bold" id="l2b" style="left:1160px;width:1080px;text-align:center;top:280px;font-size:190px"></div>
+<div class="a paper" id="cal" style="left:1300px;top:540px;width:440px;height:540px;overflow:hidden">
+ <div style="height:110px;background:#6AA8FF;font:800 46px J;color:#02050F;text-align:center;line-height:110px;letter-spacing:.14em">OCTUBRE</div>
+ <div style="font:800 300px J;color:#0b0f1a;text-align:center;line-height:300px;letter-spacing:-.04em;margin-top:20px">15</div>
+ <div style="font:800 54px J;color:#3b4660;text-align:center;letter-spacing:.1em;margin-top:6px">1971</div>
+ <svg class="a" style="left:0;top:0" width="440" height="540"><ellipse id="calc" cx="220" cy="285" rx="185" ry="140" fill="none" stroke="#636DFF" stroke-width="9" stroke-linecap="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100" transform="rotate(-8 220 285)"/></svg>
+</div>
+<div class="a" id="pin" style="left:1508px;top:556px;width:26px;height:26px;border-radius:50%;background:#636DFF;box-shadow:0 6px 10px rgba(0,0,0,.5)"></div>
+<div class="a paper" id="rule" style="left:1610px;top:1130px;width:580px;padding:30px 34px">
+ <div style="font:700 18px J;color:#5d6888;letter-spacing:.16em">REGLAMENTO · RECREACIÓN</div>
+ <div style="height:2px;background:#b9c3d6;margin:14px 0 18px"></div>
+ <div style="font:700 28px J;color:#3b4660;letter-spacing:.04em">PRIMER DÍA DE ENTRENAMIENTO:</div>
+ <div style="font:800 54px J;color:#0b0f1a;letter-spacing:.02em;margin-top:8px">15 DE OCTUBRE</div>
+</div>
+<div class="a serif" id="l2c" style="left:1160px;width:1080px;text-align:center;top:1500px;font-size:72px"></div>
+
+<!-- 3 · Lefty Driesell no espera a la mañana -->
+<div class="a bold" id="l3a" style="left:0;width:1080px;text-align:center;top:150px;font-size:100px"></div>
+<div class="a serif" id="l3b" style="left:0;width:1080px;text-align:center;top:280px;font-size:76px"></div>
+<div class="a mat" id="mv" style="left:80px;top:420px;width:620px;transform:rotate(-2deg)"><img src="img/vsign_g.jpg"><div class="cap">MARYLAND · c. 1970</div></div>
+<div class="a press" id="pdr" style="left:110px;top:1250px"><small>ENTRENADOR · MARYLAND</small>LEFTY DRIESELL</div>
+<svg class="a" id="sun" style="left:740px;top:560px" width="300" height="340" viewBox="0 0 300 340">
+ <g fill="none" stroke="#B9E0FF" stroke-width="6" stroke-linecap="round"><circle cx="150" cy="150" r="58"/><g id="rays"></g></g>
+ <path id="strike" d="M40 260 L260 40" stroke="#6AA8FF" stroke-width="12" stroke-linecap="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/>
+ <text x="150" y="322" font-family="J" font-weight="800" font-size="26" fill="#8f9bb8" text-anchor="middle" letter-spacing="4">MAÑANA</text>
+</svg>
+<div class="a cred" id="credB" style="left:112px;top:1380px">Foto: University of Maryland (c. 1969–70) · dominio público</div>
+
+<!-- 4–6 · Su equipo corre una milla en el estadio, sin focos: solo los faros de unos coches. Cientos de estudiantes miran. -->
+<div class="a serif" id="l4a" style="left:0;width:1080px;text-align:center;top:2010px;font-size:76px"></div>
+<div class="a bold" id="l4b" style="left:0;width:1080px;text-align:center;top:2100px;font-size:100px"></div>
+<div class="a serif" id="l7s" style="left:0;width:1080px;text-align:center;top:2080px;font-size:72px"></div>
+<div class="a mat" id="stad" style="left:22px;top:2240px;width:1036px">
+ <img src="img/byrd_g.jpg">
+ <svg class="a" style="left:18px;top:18px" width="1000" height="886" viewBox="0 0 931 825">
+  <rect id="dark" width="931" height="825" fill="#02050F" opacity="0"/>
+  <g id="crowd"></g>
+  <path id="trk" fill="none" stroke="#6AA8FF" stroke-width="7" stroke-linejoin="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/>
+  <g id="cones"></g>
+  <g id="cars"></g>
+  <g id="towers"></g>
+  <g id="runners"></g>
+ </svg>
+ <div class="cap">BYRD STADIUM · c. 1975 · PISTA, JUGADORES Y COCHES: RECREACIÓN</div>
+</div>
+<div class="a" id="swb" style="left:770px;top:3240px;width:250px">
+ <img src="img/sw_g.png" style="width:250px;filter:drop-shadow(0 20px 30px rgba(0,0,0,.6))">
+ <div class="lab" style="position:absolute;left:-30px;width:310px;text-align:center;top:262px;font-size:18px">CRONÓMETRO · c. 1970</div>
+</div>
+<div class="a bold" id="l5a" style="left:0;width:1080px;text-align:center;top:3270px;font-size:120px"></div>
+<div class="a serif" id="l6a" style="left:0;width:1080px;text-align:center;top:3420px;font-size:72px"></div>
+<div class="a cred" id="credD" style="left:40px;width:1000px;text-align:center;top:3600px">Fotos: University of Maryland (c. 1975), dominio público · cronómetro: R. Henrik Nilsson, CC BY 4.0 (modificada)</div>
+
+<!-- 7 · Nace la Midnight Madness... -->
+<div class="a serif" id="l7a" style="left:0;width:1080px;text-align:center;top:3950px;font-size:80px"></div>
+<div class="a paper" id="cover" style="left:170px;top:4090px;width:740px;height:1110px;overflow:hidden">
+ <div style="position:absolute;left:30px;top:24px;font:700 20px J;color:#5d6888;letter-spacing:.18em">EDICIÓN ESPECIAL · PORTADA: RECREACIÓN</div>
+ <img src="img/color_g.jpg" style="position:absolute;left:30px;top:64px;width:680px">
+ <div class="bold" id="hl" style="position:absolute;left:0;width:740px;text-align:center;top:850px;font-size:112px;color:#0b0f1a;line-height:1.02;white-space:normal"></div>
+</div>
+<div class="a cred" id="credE" style="left:0;width:1080px;text-align:center;top:5240px">Foto: University of Maryland (c. 1976) · dominio público</div>
+
+</div>
+<canvas id="grain" width="360" height="640"></canvas>
+<script src="gsap.min.js"></script>
+<script src="words.js"></script>
+<script>
+const $=i=>document.getElementById(i), cl=x=>Math.min(1,Math.max(0,x)), P=(t,a,b)=>cl((t-a)/(b-a)), eo=x=>1-Math.pow(1-x,3), es=x=>x*x*(3-2*x);
+const W=window.WORDS, T=k=>W[k][1], E=k=>W[k][2], OUT=25.68;
+const L=[];
+function line(id,ks,acc=[],txt={},cls='acc'){const el=$(id);for(const k of ks){const s=document.createElement('span');s.className='w'+(acc.includes(k)?' '+cls:'');s.textContent=txt[k]||W[k][0];el.appendChild(s);L.push([s,T(k)])}}
+line('l1a',[0,1,2,3,4]); line('l1c',[5,6,7,8,9,10,11,12],[7,9],{7:'doce',9:'tres',12:'noche.'});
+line('l2a',[13,14,15,16],[],{16:'de'}); line('l2b',[17],[17],{17:'1971:'});
+line('l2c',[18,19,20,21,22,23],[19],{23:'día.'});
+line('l3a',[24,25],[],{24:'LEFTY',25:'DRIESELL'}); line('l3b',[26,27,28,29,30],[],{30:'mañana.'});
+line('l4a',[31,32,33,34,35]); line('l4b',[36,37,38],[],{36:'EN',37:'EL',38:'ESTADIO,'});
+line('l5a',[39,40],[39,40],{39:'SIN',40:'FOCOS:'}); line('l6a',[41,42,43,44,45,46],[43],{41:'solo',46:'coches.'});
+line('l7s',[47,48,49,50],[49],{50:'miran.'});
+line('l7a',[51,52]); line('hl',[53,54],[],{53:'MIDNIGHT',54:'MADNESS'});
+line('l8a',[55,56,57,58,59]); line('l8b',[60],[60],{60:'MINUTO'},'uv'); line('l8c',[61,62,63],[],{63:'dejan.'});
+// ----- cámara: un solo plano -----
+const cam={cx:1700,cy:2900,z:1.0}, tl=gsap.timeline({paused:true});
+const fly=(t,cx,cy,z,d=.9)=>{tl.to(cam,{cx,cy,duration:d,ease:'power2.inOut'},t);tl.to(cam,{keyframes:[{z:z*0.9,duration:d*.5,ease:'sine.out'},{z,duration:d*.5,ease:'sine.inOut'}]},t)};
+tl.set(cam,{cx:1700,cy:2900,z:1.0},0).to(cam,{z:1.04,cy:2880,duration:3.2,ease:'sine.out'},0);
+fly(3.2,1700,960,1.0); tl.to(cam,{z:1.04,cy:940,duration:6.0,ease:'sine.out'},4.1);
+fly(9.3,540,960,1.0); tl.to(cam,{z:1.04,duration:2.4,ease:'sine.out'},10.2);
+fly(11.8,540,2860,1.0); tl.to(cam,{z:1.02,duration:1.9,ease:'sine.out'},12.7);
+tl.to(cam,{z:1.07,cy:2810,duration:.8,ease:'sine.inOut'},14.62); tl.to(cam,{z:1.09,duration:3.6,ease:'sine.out'},15.42);
+fly(19.1,540,4720,1.0); tl.to(cam,{z:1.04,duration:2.2,ease:'sine.out'},20.0);
+fly(21.2,1700,2860,1.0); tl.to(cam,{z:1.03,duration:2.3,ease:'sine.out'},22.1);
+// ----- dibujo -----
+const NS='http://www.w3.org/2000/svg', mk=(tag,at,par)=>{const e=document.createElementNS(NS,tag);for(const k in at)e.setAttribute(k,at[k]);par.appendChild(e);return e};
+for(let i=0;i<60;i++){const a=i*6*Math.PI/180,r1=i%5?286:270;mk('line',{x1:Math.sin(a)*r1,y1:-Math.cos(a)*r1,x2:Math.sin(a)*298,y2:-Math.cos(a)*298,stroke:i%5?'#3a4870':'#8f9bb8','stroke-width':i%5?3:6},$('ticks'))}
+for(let i=0;i<8;i++){const a=i*Math.PI/4;mk('line',{x1:150+Math.cos(a)*80,y1:150+Math.sin(a)*80,x2:150+Math.cos(a)*118,y2:150+Math.sin(a)*118},$('rays'))}
+// pista: línea central de la pista de Byrd Stadium (coordenadas de la foto, 931×825), Catmull-Rom cerrada
+const TP=[[400,195],[500,183],[600,198],[632,240],[628,300],[608,390],[588,465],[555,522],[480,542],[400,540],[335,515],[305,462],[315,400],[345,320],[372,250]];
+let d='';const n=TP.length;for(let i=0;i<n;i++){const p0=TP[(i-1+n)%n],p1=TP[i],p2=TP[(i+1)%n],p3=TP[(i+2)%n];if(!i)d+=`M${p1[0]} ${p1[1]}`;
+ d+=` C${p1[0]+(p2[0]-p0[0])/6} ${p1[1]+(p2[1]-p0[1])/6} ${p2[0]-(p3[0]-p1[0])/6} ${p2[1]-(p3[1]-p1[1])/6} ${p2[0]} ${p2[1]}`}
+$('trk').setAttribute('d',d+'Z'); const TL=$('trk').getTotalLength();
+const RUN=[...Array(7)].map((_,i)=>mk('circle',{r:8,fill:'#B9E0FF',stroke:'#02050F','stroke-width':3,opacity:0},$('runners')));
+// torres de luz (dibujadas) en las cuatro esquinas de la grada
+const TW=[[215,205],[770,250],[150,560],[745,600]].map(([x,y])=>{const g=mk('g',{opacity:0},$('towers'));mk('line',{x1:x,y1:y,x2:x,y2:y+46,stroke:'#8f9bb8','stroke-width':4},g);
+ const h=mk('rect',{x:x-20,y:y-14,width:40,height:16,rx:3,fill:'#F4F7FB',stroke:'#02050F','stroke-width':2},g);const gl=mk('circle',{cx:x,cy:y-6,r:34,fill:'#E9EEF6',opacity:.35},g);return {g,h,gl}});
+// tres coches (líneas) en el fondo norte; sus faros alumbran la pista hacia el sur
+const defs=mk('defs',{},$('cones'));const lg=mk('linearGradient',{id:'cg',x1:0,y1:0,x2:0,y2:1},defs);mk('stop',{offset:0,'stop-color':'#B9E0FF','stop-opacity':.75},lg);mk('stop',{offset:1,'stop-color':'#B9E0FF','stop-opacity':0},lg);
+const CARS=[[440,150],[500,140],[560,150]].map(([x,y],i)=>{const g=mk('g',{opacity:0},$('cars'));mk('rect',{x:x-15,y:y-26,width:30,height:44,rx:8,fill:'#0C1323',stroke:'#B9E0FF','stroke-width':3},g);
+ mk('rect',{x:x-10,y:y-12,width:20,height:12,rx:2,fill:'none',stroke:'#6AA8FF','stroke-width':2},g);
+ const c=mk('path',{d:`M${x-9} ${y+18} L${x+9} ${y+18} L${x+95} ${y+330} L${x-95} ${y+330} Z`,fill:'url(#cg)',opacity:0},$('cones'));return {g,c,x,y}});
+// la grada: decenas de puntos alrededor de la pista (sin cifra)
+let sd2=7;const R2=()=>(sd2=(sd2*16807)%2147483647)/2147483647;const CR=[];
+while(CR.length<150){const a=R2()*Math.PI*2,k=1.32+R2()*.42,x=470+Math.cos(a)*175*k,y=365+Math.sin(a)*190*k;if(y<215||x<70||x>880||y>700)continue;
+ CR.push([mk('circle',{cx:x,cy:y,r:3.4,fill:'#B9E0FF',opacity:0},$('crowd')),Math.hypot(x-470,y-150)])}
+// grano
+const g=$('grain').getContext('2d'),gi=g.createImageData(360,640);let sd=1;const R=()=>(sd=(sd*16807)%2147483647)/2147483647;
+function camAt(t){tl.seek(t,false);return [cam.cx,cam.cy,cam.z]}
+let t=0;
+const inn=(el,t0,dy=40,d=.5,rot=0)=>{const p=eo(P(t,t0,t0+d));el.style.opacity=p;el.style.transform=`translateY(${(1-p)*dy}px)`+(rot?` rotate(${rot}deg)`:'');return p};
+const lo=(ids,a,b)=>{ids.forEach(id=>{$(id).style.opacity=1-P(t,a,b)})};
+const off=(ids,a,b)=>{const k=1-P(t,a,b);ids.forEach(id=>{$(id).style.opacity=(+$(id).style.opacity)*k})};
+window.frame=function(tt){t=tt;
+ sd=1+Math.floor(t*30)*7919;const dd=gi.data;for(let i=0;i<dd.length;i+=4){const v=R()*255;dd[i]=v*.8;dd[i+1]=v*.85;dd[i+2]=v;dd[i+3]=255}g.putImageData(gi,0,0);
+ const p0=camAt(Math.max(0,t-1/30)),p1=camAt(t),sp=Math.hypot(p1[0]-p0[0],p1[1]-p0[1]);
+ $('cam').style.transform=`translate(540px,960px) scale(${p1[2]}) translate(${-p1[0]}px,${-p1[1]}px)`;
+ $('cam').style.filter=sp>14?`blur(${Math.min(4,(sp-14)/30)}px)`:'none';
+ for(const [s,t0] of L){const p=eo(P(t,t0-.04,t0+.32));s.style.opacity=p;s.style.transform=`translateX(${(1-p)*28}px)`;s.style.filter=`blur(${(1-p)*6}px)`}
+ // 1 · reloj y «00:03» desde el fotograma 0; las agujas corren de las 23:57 a las 00:03 en «doce y tres»; la pared se oscurece en «noche»
+ const ck=es(P(t,T(7)-.1,E(9))), mins=-3+6*ck;
+ $('hM').setAttribute('transform',`rotate(${mins*6})`); $('hH').setAttribute('transform',`rotate(${mins*.5})`);
+ const sec=(t<T(60)?0:6*eo(P(t,T(60),T(60)+.12))); $('hS').setAttribute('transform',`rotate(${sec})`);
+ $('night').style.opacity=.9*P(t,T(12),E(12)+.3);
+ $('big1').style.opacity=1-P(t,20.9,21.0); $('labC').style.opacity=1-P(t,20.9,21.0);
+ lo(['l1a','l1c'],3.25,3.6);
+ // 2 · la hoja del calendario cae y queda clavada; el reglamento en «NCAA»; el rotulador rodea el 15 en «ese día»
+ const cp=P(t,T(13)-.05,T(13)+.55), ce=1-Math.pow(1-cp,3), bounce=Math.sin(cp*Math.PI*2.2)*(1-cp)*6;
+ $('cal').style.opacity=P(t,T(13)-.05,T(13)+.15); $('cal').style.transform=`translateY(${(1-ce)*-260}px) rotate(${-4+(1-ce)*-12+bounce}deg)`;
+ $('pin').style.opacity=P(t,T(13)+.5,T(13)+.6);
+ inn($('rule'),T(19)-.1,30,.45,2);
+ $('calc').setAttribute('stroke-dashoffset',100-100*es(P(t,T(22)-.05,E(23))));
+ // 3 · Driesell con su «V», ficha; el sol de la mañana se tacha en «mañana»
+ inn($('mv'),10.05,60,.55,-2); inn($('pdr'),T(25)-.05,20,.4); $('credB').style.opacity=P(t,T(25)+.3,T(25)+.6);
+ inn($('sun'),T(27)-.1,30,.45); $('strike').setAttribute('stroke-dashoffset',100-100*es(P(t,T(30),E(30)+.1)));
+ // 4 · la postal del estadio; la pista se dibuja en «milla»; siete puntos corren desde «corre»; cronómetro en «milla»
+ inn($('stad'),12.5,40,.55);
+ $('trk').setAttribute('stroke-dashoffset',100-100*es(P(t,T(35)-.1,E(38))));
+ const rv=P(t,T(33),T(33)+.3); RUN.forEach((c,i)=>{const u=((Math.max(0,t-T(33))*.055)+i*.012)%1,pt=$('trk').getPointAtLength(TL*u);c.setAttribute('cx',pt.x);c.setAttribute('cy',pt.y);c.setAttribute('opacity',rv)});
+ inn($('swb'),T(35)-.1,30,.45); off(['swb'],T(39)-.25,T(39)+.05);
+ lo(['l4a','l4b'],17.35,17.6);
+ // 5 · sin focos: las torres se apagan una a una y todo queda en negro azulado
+ TW.forEach((o,i)=>{const on=t<T(39)+.12*i+.05;o.g.setAttribute('opacity',P(t,12.9,13.3));o.h.setAttribute('fill',on?'#F4F7FB':'#3a4870');o.gl.setAttribute('opacity',on?.35:0)});
+ $('dark').setAttribute('opacity',.7*es(P(t,T(39),E(40))));
+ $('trk').setAttribute('opacity',1-.55*P(t,T(39),E(40))+.55*P(t,T(43),T(43)+.4));
+ // 6 · los faros: tres coches de línea y sus conos barren la pista
+ CARS.forEach((o,i)=>{o.g.setAttribute('opacity',P(t,T(41)+i*.1,T(41)+i*.1+.3));const on=P(t,T(43)+i*.08,T(43)+i*.08+.25);
+  const sw=Math.sin((t-T(43))*1.3+i*1.7)*7*(t>T(43));o.c.setAttribute('opacity',on*(.9+.1*Math.sin(t*9+i)));o.c.setAttribute('transform',`rotate(${(i-1)*14+sw} ${o.x} ${o.y+18})`)});
+ // 7 · cientos de estudiantes: puntos en la grada, en oleadas desde el fondo de los coches
+ CR.forEach(([c,dd])=>{c.setAttribute('opacity',.85*P(t,T(47)+dd/520,T(47)+dd/520+.3))});
+ // 8 · portada: «MIDNIGHT MADNESS» palabra a palabra; pausa quieta
+ inn($('cover'),19.85,50,.55,-2); $('credE').style.opacity=P(t,20.6,21.0);
+ // 9 · REMATE: vuelve el reloj de las 00:03; el segundero da un paso en «minuto» y «MINUTO» en ultravioleta (única vez); quieto desde ~24 s
+ $('credF').style.opacity=P(t,22.6,23.0);
+ // fundido a negro antes del cierre común
+ document.body.style.opacity=1-P(t,OUT-.5,OUT);
+};
+document.fonts.ready.then(()=>Promise.all([...document.images].map(i=>i.complete?1:new Promise(r=>{i.onload=r;i.onerror=r})))).then(()=>{frame(0);window.ready=true});
+</script></body></html>
