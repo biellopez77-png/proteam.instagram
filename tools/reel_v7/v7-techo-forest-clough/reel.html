@@ -94,12 +94,11 @@ svg .dr{fill:none;stroke-linecap:round;stroke-linejoin:round}
 <div class="a serif c" id="q1" style="left:0;width:1080px;top:4520px;font-size:74px"></div>
 <div class="a bold c" id="q2" style="left:0;width:1080px;top:4620px;font-size:170px"></div>
 <div class="a serif c" id="q3" style="left:0;width:1080px;top:4840px;font-size:72px"></div>
-<div class="a panel" id="week" style="left:110px;top:4950px;width:860px;height:190px;border-radius:16px;padding:20px 30px;opacity:0">
+<div class="a panel" id="week" style="left:110px;top:4950px;width:860px;height:240px;border-radius:16px;padding:20px 30px;opacity:0">
  <div style="display:flex;justify-content:space-between"><span class="k" style="font-size:16px">PIZARRA · SEMANA</span><span class="recl" style="font-size:13px">RECREACIÓN</span></div>
  <div id="days" style="display:flex;justify-content:space-between;margin-top:22px"></div>
 </div>
-<div class="a serif c" id="q4" style="left:0;width:1080px;top:5180px;font-size:76px"></div>
-<div class="a rec c" id="cred" style="left:0;width:1080px;top:5300px;font-size:15px;opacity:0">FOTOS: HANS VAN DIJK / ANEFO (CC0) · ALAN MURRAY-RUST (CC BY-SA 2.0) · JOHN SUTTON (CC BY-SA 2.0),<br>VÍA WIKIMEDIA COMMONS · COPAS, MARCADORES, ESCALERA Y TABLA: RECREACIÓN</div>
+<div class="a serif c" id="q4" style="left:0;width:1080px;top:5235px;font-size:76px"></div>
 
 </div>
 <canvas id="grain" width="360" height="640"></canvas>
@@ -111,7 +110,7 @@ const W=window.WORDS, T=k=>W[k][1], E=k=>W[k][2];
 const NS='http://www.w3.org/2000/svg', mk=(tag,at,par)=>{const e=document.createElementNS(NS,tag);for(const k in at)e.setAttribute(k,at[k]);par&&par.appendChild(e);return e};
 const L=[];
 function line(id,tokens){const el=$(id);for(const [txt,k,cls,st,off] of tokens){const s=document.createElement('span');s.className='w '+(cls||'');s.textContent=txt;if(st)s.style.cssText=st;el.appendChild(s);L.push([s,T(k)+(off||0)])}}
-line('l0',[['1977.',0]]);
+line('l0',[['1977.',0,'','',-0.98]]);   // gancho: «1977.» ya en el primer fotograma
 line('l1',[['El',1],['Nottingham',2,'acc'],['Forest',3,'acc']]);
 line('l1b',[['de',4],['Brian',5],['Clough',6,'it']]);
 line('l2',[['sube',7],['de',8],['Segunda',9,'it']]);
@@ -141,7 +140,7 @@ function cup(id,plate,score){const c=$(id);c.innerHTML=`<div style="display:flex
 const CA=cup('cupA','MÚNICH 1979','1–0'), CB=cup('cupB','MADRID 1980','1–0');
 // pizarra de la semana
 const DAYS=['L','M','X','J','V','S','D'];const dayEls=DAYS.map(d=>{const e=document.createElement('div');e.style.cssText='width:96px;height:96px;border:3px solid #26335a;border-radius:12px;position:relative;text-align:center;font:800 40px/90px J;color:#8f9bb8';e.textContent=d;
- const s=mk('svg',{width:96,height:96,viewBox:'0 0 96 96',style:'position:absolute;left:-3px;top:-3px'},e);const ck=mk('path',{d:'M22 50 L41 68 L76 28',class:'dr',stroke:'#6AA8FF','stroke-width':9,pathLength:100,'stroke-dasharray':100,'stroke-dashoffset':100},s);
+ const s=mk('svg',{width:48,height:48,viewBox:'0 0 96 96',style:'position:absolute;left:22px;top:102px'},e);const ck=mk('path',{d:'M22 50 L41 68 L76 28',class:'dr',stroke:'#6AA8FF','stroke-width':9,pathLength:100,'stroke-dasharray':100,'stroke-dashoffset':100},s);
  $('days').appendChild(e);return [e,ck]});
 // ----- cámara: un solo plano -----
 const cam={cx:540,cy:760,z:1.06};const tl=gsap.timeline({paused:true});
@@ -150,8 +149,8 @@ tl.set(cam,{cx:540,cy:760,z:1.06},0).to(cam,{z:1.02,cy:740,duration:1.3,ease:'si
 fly(1.3,1700,880,1.0); tl.to(cam,{z:1.02,cy:960,duration:4.0,ease:'sine.out'},2.2);
 fly(5.62,540,2400,1.0); tl.to(cam,{z:1.01,cy:2470,duration:3.4,ease:'sine.out'},6.52);
 fly(9.86,1700,2880,1.0); tl.to(cam,{z:1.0,cy:2960,duration:8.1,ease:'sine.inOut'},10.76);
-fly(18.98,540,4460,1.0); tl.to(cam,{z:1.0,cy:4560,duration:2.8,ease:'sine.inOut'},19.88);
-tl.to(cam,{z:0.92,cy:4680,duration:1.6,ease:'sine.inOut'},22.7);
+fly(18.98,540,4460,1.0); tl.to(cam,{z:1.0,cy:4560,duration:1.3,ease:'sine.inOut'},19.88);
+tl.to(cam,{z:0.92,cy:4700,duration:1.5,ease:'sine.inOut'},21.2);   // la cámara se para a 22,7 s, antes de «semana»: remate quieto hasta el negro
 // grano
 const g=$('grain').getContext('2d'),gi=g.createImageData(360,640);let sd=1;const RN=()=>(sd=(sd*16807)%2147483647)/2147483647;
 function camAt(t){tl.seek(t,false);return [cam.cx,cam.cy,cam.z]}
@@ -205,8 +204,7 @@ window.frame=function(t){window._t=t;
  const tw=$('q2').firstChild;tw.style.color=`rgb(${Math.round(mix(244,139,uv))},${Math.round(mix(247,92,uv))},${Math.round(mix(251,246,uv))})`;
  // la semana: L M X J V S D se marcan una a una
  fade('week',T(52)-.2,30,.4);
- dayEls.forEach(([e,ck],i)=>{const a=T(53)+i*.2;const q=eio(P(t,a,a+.22));ck.setAttribute('stroke-dashoffset',100-100*q);e.style.borderColor=q>0?'#636DFF':'#26335a';e.style.color=q>.5?'#F4F7FB':'#8f9bb8'});
- fade('cred',T(54),10,.6);
+ dayEls.forEach(([e,ck],i)=>{const a=T(53)+i*.15;const q=eio(P(t,a,a+.22));ck.setAttribute('stroke-dashoffset',100-100*q);e.style.borderColor=q>0?'#636DFF':'#26335a';e.style.color=q>.5?'#F4F7FB':'#8f9bb8'});
 };
 document.fonts.ready.then(()=>Promise.all([...document.images].map(i=>i.complete?1:new Promise(r=>{i.onload=r;i.onerror=r})))).then(()=>{frame(0);window.ready=true});
 </script></body></html>
