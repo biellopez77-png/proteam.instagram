@@ -41,7 +41,7 @@ svg .dr{fill:none;stroke-linecap:round;stroke-linejoin:round}
  <path id="bBack" class="dr" d="M30 20 L550 20" stroke="#B9E0FF" stroke-width="6"/>
  <path id="bLegs" class="dr" d="M60 104 L60 230 M520 104 L520 230 M200 104 L200 230 M380 104 L380 230" stroke="#8f9bb8" stroke-width="6"/>
  <path id="bGrain" class="dr" d="M60 87 L240 87 M300 87 L500 87" stroke="#6AA8FF" stroke-width="3" opacity=".6"/>
- <text x="575" y="255" text-anchor="end" font-family="J" font-weight="500" font-size="14" fill="#5d6888" letter-spacing="2.5">BANQUILLO: RECREACIÓN</text>
+ <text id="bLab" x="20" y="255" text-anchor="start" opacity="0" font-family="J" font-weight="500" font-size="14" fill="#5d6888" letter-spacing="2.5">BANQUILLO: RECREACIÓN</text>
 </svg>
 <div class="a" id="ram" style="left:620px;top:420px;width:400px;opacity:0"><img src="img/p2_cut_g.png" style="display:block;width:100%;filter:drop-shadow(0 30px 40px rgba(0,0,0,.65))"></div>
 <div class="a panel" id="tagR" style="left:650px;top:1090px;width:360px;padding:16px 22px;border-radius:12px;opacity:0">
@@ -194,7 +194,7 @@ window.frame=function(t){window._t=t;
  const tr=eo(P(t,T(7)-.05,T(7)+.35));$('tagR').style.opacity=tr;$('tagR').style.transform=`rotate(2deg) translate(${(1-tr)*40}px,0px)`;
  const st=P(t,T(8)-.05,T(8)+.3);$('star').style.opacity=eo(st);$('star').style.transform=`scale(${st<1?.4+.6*eo(st):1}) rotate(${(1-eo(st))*-40}deg)`;
  $('star').style.filter=st>=1?'drop-shadow(0 0 12px rgba(106,168,255,.7))':'none';
- const bq=P(t,T(9)-.2,T(11)+.1);draw($('bBack'),eo(P(bq,0,.35)));draw($('bSeat'),eo(P(bq,.15,.7)));draw($('bLegs'),eo(P(bq,.45,1)));$('bGrain').style.opacity=.6*P(bq,.7,1);
+ const bq=P(t,T(9)-.2,T(11)+.1);draw($('bBack'),eo(P(bq,0,.35)));draw($('bSeat'),eo(P(bq,.15,.7)));draw($('bLegs'),eo(P(bq,.45,1)));$('bGrain').style.opacity=.6*P(bq,.7,1);$('bLab').setAttribute('opacity',P(bq,.75,1));// r4: el rótulo solo aparece con el banco dibujado y cabe entero (text-anchor start)
  const up=1-eio(P(t,T(20),T(22)));$('l5').style.opacity=up;$('l6').style.opacity=up;
  // 2 · pizarra: cinco titulares, Ramsey en el banquillo; se cansan; entra fresco
  const co=eo(P(t,T(12)-.5,T(12)));$('court').style.opacity=co;$('court').style.transform=`translateY(${(1-co)*30}px)`;
@@ -229,8 +229,11 @@ window.frame=function(t){window._t=t;
  // r3: el remate se apaga entero antes del cierre (22,2–22,5 s), sin pisarse con el logo
  const fin=1-eio(P(t,OUT-.3,OUT));$('l18').style.opacity=fin;$('l19').style.opacity=fin;$('six').style.opacity=sx*fin;$('cred').style.opacity=cr*fin;
  // viaje 9,95 s: la escena 1 ya no se ve (se apaga fuera de cuadro) y la 2 se funde 0,3 s al salir
- const k1=1-P(t,6,6.2),B1={l1:1,l2:1,l3:1,l4:1,bench:1,printA:pa,tagA:ta,ram:rm,tagR:tr,star:eo(st)};for(const id in B1)$(id).style.opacity=B1[id]*k1;
+ const k1=1-P(t,3.55,3.8),   // r4: la escena 1 se apaga al empezar el viaje de 3,5 s (nada cortado por el borde)
+ B1={l1:1,l2:1,l3:1,l4:1,bench:1,printA:pa,tagA:ta,ram:rm,tagR:tr,star:eo(st)};for(const id in B1)$(id).style.opacity=B1[id]*k1;
  const off2=1-P(t,9.97,10.27);for(const id of ['l7','l8','l9','l10','l11','court'])$(id).style.opacity=(id==='court'?co:1)*off2;
+ // r4: la escena 3 se apaga al empezar el viaje de 13,08 s
+ const k3=1-P(t,13.1,13.35);for(const id of ['l12','l13','rings'])$(id).style.opacity=k3;$('printC').style.opacity=pc*k3;
  $('trLab').setAttribute('opacity',eo(P(t,T(36)-.1,T(36)+.3))*(1-away));
 };
 document.fonts.ready.then(()=>Promise.all([...document.images].map(i=>i.complete?1:new Promise(r=>{i.onload=r;i.onerror=r})))).then(()=>{frame(0);window.ready=true});
