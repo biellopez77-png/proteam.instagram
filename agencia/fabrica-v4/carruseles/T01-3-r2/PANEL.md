@@ -1,0 +1,9 @@
+# T01-3-r2 · Carrusel y Stories — hechos, SIN subir al panel (28/11, Clara)
+- Reel de origen: «El portero lo sabía» (balonmano) · guion `agencia/fabrica/guiones/T01-3-r2.md`.
+- PNG en `png/` (versión ligera, 128 colores, 3,8 MB en total): T01-3-r2-c1…c7.png, -s1.png, -s2.png. Hoja a tamaño móvil: `hoja.png` (revisada).
+- Subida bloqueada: el Artifact tool exige republicar index.html para añadir media (no se toca) y el panel está casi lleno. Posts ya escritos en el panel con status «pendiente de subir» y nota: posts/T01-3-r2-carrusel (order 1114), -story1 (1115), -story2 (1116). Al subir `media/T01-3-r2-*.png`, pasar los tres a «listo».
+
+Láminas: 1 EXTREMO sobre la lanzadora en plancha («Fig. 1 — Cinco goles por el mismo sitio» · 1.ª parte, *Y nadie pregunta por qué.*) · 2 6 m · 6 m: desde el banquillo ves el ataque / desde la portería se ve tu área / en el descanso hablas tú · 3 HABLAS TÚ. *y el portero* CALLA. (ataque estático, pérdidas, pivote; del área, nada) · 4 ultravioleta: «Cinco goles desde el extremo.» → *Tu portero lo sabía.* · 5 10′ con el banquillo dentro, *de descanso.* (IHF, Regla 2:1; los dos primeros, de agua) · 6 Para llevarte: antes de hablar tú, PREGUNTA. (dos minutos de agua · al portero: ¿por dónde nos entran? · después, una cosa, con nombre) · *tu portero ve lo que tú no ves.* · 7 cierre «¿Te ha servido? DALE LIKE y síguenos para más contenido como este».
+Stories: «¿POR DÓNDE OS ENTRAN? tu portero lo sabe. ¿Se lo preguntas?» · encuesta «EN EL DESCANSO, ¿hablas tú o preguntas?» (sticker a mano: «Hablo yo» / «Pregunto»).
+Fase 1 (PLAN.md 27/11): sin app (el CTA del reel original no se usa), sin lanzamiento, sin precio, sin cifras de apuntados. Escena en segunda persona, no un caso real. En balonmano el portero no lleva guantes: no se habla de guantes.
+Caption: `caption.txt`.

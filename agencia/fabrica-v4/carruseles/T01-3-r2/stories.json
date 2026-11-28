@@ -1,0 +1,29 @@
+{
+ "numero": "Nº 00",
+ "seccion": "El portero lo sabía",
+ "formato": "story",
+ "laminas": [
+  {
+   "tipo": "pregunta",
+   "foto": "JUGADOR_PORTERA_FOTO_001",
+   "pos": "50% 40%",
+   "cap": "Una pregunta",
+   "big": "¿POR DÓNDE\nOS ENTRAN?",
+   "bigLines": 2,
+   "serif": "tu portero lo sabe.\n¿Se lo preguntas?",
+   "size": 150,
+   "serifSize": 96,
+   "lh": 1.0
+  },
+  {
+   "tipo": "encuesta",
+   "pre": "Encuesta",
+   "big": "EN EL\nDESCANSO,",
+   "serif": "¿hablas tú\no preguntas?",
+   "foto": "ENTRENADOR_BANQUILLO_AGACHADO_FOTO_001",
+   "size": 170,
+   "serifSize": 120,
+   "bigLines": 2
+  }
+ ]
+}
